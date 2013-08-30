@@ -5,6 +5,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Medieval_Tech", "Medieval_T
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		2071-Assert|Win32 = 2071-Assert|Win32
+		2071-Assert-fast|Win32 = 2071-Assert-fast|Win32
+		2071-Debug|Win32 = 2071-Debug|Win32
 		Assert|Win32 = Assert|Win32
 		Assert-fast|Win32 = Assert-fast|Win32
 		Assert-upload|Win32 = Assert-upload|Win32
@@ -14,6 +17,12 @@ Global
 		Release-fast|Win32 = Release-fast|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3021AF0E-699D-4232-86F6-FC374A0C9957}.2071-Assert|Win32.ActiveCfg = Assert-2071|Win32
+		{3021AF0E-699D-4232-86F6-FC374A0C9957}.2071-Assert|Win32.Build.0 = Assert-2071|Win32
+		{3021AF0E-699D-4232-86F6-FC374A0C9957}.2071-Assert-fast|Win32.ActiveCfg = Assert-fast-2071|Win32
+		{3021AF0E-699D-4232-86F6-FC374A0C9957}.2071-Assert-fast|Win32.Build.0 = Assert-fast-2071|Win32
+		{3021AF0E-699D-4232-86F6-FC374A0C9957}.2071-Debug|Win32.ActiveCfg = 2071-Debug|Win32
+		{3021AF0E-699D-4232-86F6-FC374A0C9957}.2071-Debug|Win32.Build.0 = 2071-Debug|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Assert|Win32.ActiveCfg = Assert|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Assert|Win32.Build.0 = Assert|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Assert-fast|Win32.ActiveCfg = Assert-fast|Win32

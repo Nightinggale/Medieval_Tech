@@ -376,6 +376,30 @@ void CyEnumsPythonInterface()
 		;
 	python::enum_<YieldTypes>("YieldTypes")
 		.value("NO_YIELD", NO_YIELD)
+#ifdef COLONIZATION2071
+		.value("YIELD_FOOD", YIELD_FOOD)
+		.value("YIELD_LUMBER", YIELD_LUMBER)
+		.value("YIELD_SILVER", YIELD_SILVER)
+		.value("YIELD_COTTON", YIELD_COTTON)
+		.value("YIELD_FUR", YIELD_FUR)
+		.value("YIELD_SUGAR", YIELD_BARLEY)
+		.value("YIELD_TOBACCO", YIELD_GRAPES)
+		.value("YIELD_ORE", YIELD_ORE)
+		.value("YIELD_CLOTH", YIELD_CLOTH)
+		.value("YIELD_COATS", YIELD_COATS)
+		.value("YIELD_RUM", YIELD_ALE)
+		.value("YIELD_CIGARS", YIELD_WINE)
+		.value("YIELD_TOOLS", YIELD_TOOLS)
+		.value("YIELD_MUSKETS", YIELD_WEAPONS)
+		.value("YIELD_HORSES", YIELD_HORSES)
+		.value("YIELD_TRADE_GOODS", YIELD_TRADE_GOODS)
+		.value("YIELD_HAMMERS", YIELD_HAMMERS)
+		.value("YIELD_BELLS", YIELD_BELLS)
+		.value("YIELD_CROSSES", YIELD_CROSSES)
+		.value("YIELD_EDUCATION", YIELD_EDUCATION)
+		.value("YIELD_IDEAS", YIELD_IDEAS)
+		.value("NUM_YIELD_TYPES", NUM_YIELD_TYPES)
+#else // Medieval Tech
 		///TKs ME
 		.value("YIELD_FOOD", YIELD_FOOD)
 		.value("YIELD_GRAIN", YIELD_GRAIN)
@@ -418,6 +442,7 @@ void CyEnumsPythonInterface()
         .value("YIELD_GOLD", YIELD_GOLD)
 		///TKe
 		.value("NUM_YIELD_TYPES", NUM_YIELD_TYPES)
+#endif
 		;
 	python::enum_<EmphasizeTypes>("EmphasizeTypes")
 		.value("NO_EMPHASIZE", NO_EMPHASIZE)

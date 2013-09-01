@@ -46,29 +46,26 @@
 			<iEuropePriceThresholdMultiplier>200</iEuropePriceThresholdMultiplier>
 			<iNativePacifismPercent>100</iNativePacifismPercent>
 			<iMissionFailureThresholdPercent>100</iMissionFailureThresholdPercent>
-      <Goodies>
-        <GoodyType>GOODY_SCOUT</GoodyType>
-        <GoodyType>GOODY_SCOUT</GoodyType>
-        <GoodyType>GOODY_TREASURE</GoodyType>
-        <GoodyType>GOODY_TREASURE</GoodyType>
-        <GoodyType>GOODY_TREASURE</GoodyType>
-        <GoodyType>GOODY_RELIC</GoodyType>
-        <GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
-        <GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
-        <GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
-        <GoodyType>GOODY_FARMER</GoodyType>
-        <GoodyType>GOODY_RELIC</GoodyType>
-        <GoodyType>GOODY_TECH</GoodyType>
-        <GoodyType>GOODY_TECH</GoodyType>
-        <GoodyType>GOODY_TECH</GoodyType>
-        <GoodyType>GOODY_HIGH_GOLD</GoodyType>
-        <GoodyType>GOODY_HIGH_GOLD</GoodyType>
-        <GoodyType>GOODY_LOW_GOLD</GoodyType>
-        <GoodyType>GOODY_LOW_GOLD</GoodyType>
-        <GoodyType>GOODY_MAP</GoodyType>
-        <GoodyType>GOODY_EXPERIENCE</GoodyType>
-        <GoodyType>GOODY_HEALING</GoodyType>
-      </Goodies>
+			<Goodies>
+				<GoodyType>GOODY_TREASURE</GoodyType>
+				<GoodyType>GOODY_TREASURE</GoodyType>
+				<GoodyType>GOODY_RELIC</GoodyType>
+				<GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
+				<GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
+				<GoodyType>GOODY_HIGH_GOLD</GoodyType>
+				<GoodyType>GOODY_HIGH_GOLD</GoodyType>
+				<GoodyType>GOODY_RELIC</GoodyType>
+				<GoodyType>GOODY_TECH</GoodyType>
+				<GoodyType>GOODY_LOW_GOLD</GoodyType>
+				<GoodyType>GOODY_LOW_GOLD</GoodyType>
+				<GoodyType>GOODY_LOW_GOLD</GoodyType>
+				<GoodyType>GOODY_MAP</GoodyType>
+				<GoodyType>GOODY_MAP</GoodyType>
+				<GoodyType>GOODY_EXPERIENCE</GoodyType>
+				<GoodyType>GOODY_HEALING</GoodyType>
+				<GoodyType>GOODY_HOSTILE_WEAK</GoodyType>
+				<GoodyType>GOODY_HOSTILE_STRONG</GoodyType>
+			</Goodies>
 		</HandicapInfo>
 		<HandicapInfo>
 			<Type>HANDICAP_PIONEER</Type>
@@ -111,20 +108,15 @@
 			<iNativePacifismPercent>90</iNativePacifismPercent>
 			<iMissionFailureThresholdPercent>97</iMissionFailureThresholdPercent>
 			<Goodies>
-				<GoodyType>GOODY_SCOUT</GoodyType>
-				<GoodyType>GOODY_SCOUT</GoodyType>
 				<GoodyType>GOODY_TREASURE</GoodyType>
 				<GoodyType>GOODY_TREASURE</GoodyType>
 				<GoodyType>GOODY_RELIC</GoodyType>
 				<GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
 				<GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
-				<GoodyType>GOODY_FARMER</GoodyType>
 				<GoodyType>GOODY_HIGH_GOLD</GoodyType>
 				<GoodyType>GOODY_HIGH_GOLD</GoodyType>
 				<GoodyType>GOODY_RELIC</GoodyType>
-        <GoodyType>GOODY_TECH</GoodyType>
-        <GoodyType>GOODY_TECH</GoodyType>
-        <GoodyType>GOODY_TECH</GoodyType>
+				<GoodyType>GOODY_TECH</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
@@ -177,19 +169,15 @@
 			<iNativePacifismPercent>80</iNativePacifismPercent>
 			<iMissionFailureThresholdPercent>94</iMissionFailureThresholdPercent>
 			<Goodies>
-				<GoodyType>GOODY_SCOUT</GoodyType>
-				<GoodyType>GOODY_SCOUT</GoodyType>
 				<GoodyType>GOODY_TREASURE</GoodyType>
 				<GoodyType>GOODY_TREASURE</GoodyType>
 				<GoodyType>GOODY_RELIC</GoodyType>
-        <GoodyType>GOODY_FARMER</GoodyType>
 				<GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
 				<GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
 				<GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
 				<GoodyType>GOODY_HIGH_GOLD</GoodyType>
 				<GoodyType>GOODY_RELIC</GoodyType>
-        <GoodyType>GOODY_TECH</GoodyType>
-        <GoodyType>GOODY_TECH</GoodyType>
+			        <GoodyType>GOODY_TECH</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
@@ -246,7 +234,6 @@
 			<iNativePacifismPercent>70</iNativePacifismPercent>
 			<iMissionFailureThresholdPercent>91</iMissionFailureThresholdPercent>
 			<Goodies>
-				<GoodyType>GOODY_SCOUT</GoodyType>
 				<GoodyType>GOODY_TREASURE</GoodyType>
 				<GoodyType>GOODY_TREASURE</GoodyType>
 				<GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
@@ -255,8 +242,7 @@
 				<GoodyType>GOODY_HIGH_GOLD</GoodyType>
 				<GoodyType>GOODY_HIGH_GOLD</GoodyType>
 				<GoodyType>GOODY_RELIC</GoodyType>
-        <GoodyType>GOODY_FARMER</GoodyType>
-        <GoodyType>GOODY_TECH</GoodyType>
+        			<GoodyType>GOODY_TECH</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_MAP</GoodyType>
@@ -312,15 +298,13 @@
 			<iNativePacifismPercent>60</iNativePacifismPercent>
 			<iMissionFailureThresholdPercent>89</iMissionFailureThresholdPercent>
 			<Goodies>
-				<GoodyType>GOODY_SCOUT</GoodyType>
 				<GoodyType>GOODY_TREASURE</GoodyType>
 				<GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
 				<GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
 				<GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
 				<GoodyType>GOODY_HIGH_GOLD</GoodyType>
 				<GoodyType>GOODY_RELIC</GoodyType>
-        <GoodyType>GOODY_FARMER</GoodyType>
-        <GoodyType>GOODY_TECH</GoodyType>
+        			<GoodyType>GOODY_TECH</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
@@ -379,15 +363,13 @@
 			<iNativePacifismPercent>40</iNativePacifismPercent>
 			<iMissionFailureThresholdPercent>87</iMissionFailureThresholdPercent>
 			<Goodies>
-				<GoodyType>GOODY_SCOUT</GoodyType>
 				<GoodyType>GOODY_TREASURE</GoodyType>
 				<GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
 				<GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
 				<GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
 				<GoodyType>GOODY_HIGH_GOLD</GoodyType>
 				<GoodyType>GOODY_RELIC</GoodyType>
-        <GoodyType>GOODY_FARMER</GoodyType>
-        <GoodyType>GOODY_TECH</GoodyType>
+        			<GoodyType>GOODY_TECH</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
@@ -448,7 +430,6 @@
 			<iNativePacifismPercent>25</iNativePacifismPercent>
 			<iMissionFailureThresholdPercent>85</iMissionFailureThresholdPercent>
 			<Goodies>
-				<GoodyType>GOODY_SCOUT</GoodyType>
 				<GoodyType>GOODY_TREASURE</GoodyType>
 				<GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
 				<GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>

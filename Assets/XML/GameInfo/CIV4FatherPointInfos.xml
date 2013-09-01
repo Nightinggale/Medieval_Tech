@@ -42,16 +42,7 @@
 			<iMissionaryPoints>250</iMissionaryPoints>
 			<iEuropeTradeGoldPointPercent>0</iEuropeTradeGoldPointPercent>
 			<iNativeTradeGoldPointPercent>0</iNativeTradeGoldPointPercent>
-			<BuildingPoints>
-				<BuildingPoint>
-					<BuildingClass>BUILDINGCLASS_CHURCH</BuildingClass>
-					<iPoints>50</iPoints>
-				</BuildingPoint>
-				<BuildingPoint>
-					<BuildingClass>BUILDINGCLASS_CATHEDRAL</BuildingClass>
-					<iPoints>100</iPoints>
-				</BuildingPoint>
-			</BuildingPoints>
+			<BuildingPoints/>
 			<YieldPoints>
 				<YieldPoint>
 					<YieldType>YIELD_CROSSES</YieldType>
@@ -76,26 +67,8 @@
 			<iMissionaryPoints>0</iMissionaryPoints>
 			<iEuropeTradeGoldPointPercent>0</iEuropeTradeGoldPointPercent>
 			<iNativeTradeGoldPointPercent>0</iNativeTradeGoldPointPercent>
-			<BuildingPoints>
-				<BuildingPoint>
-					<BuildingClass>BUILDINGCLASS_NEWSPAPER</BuildingClass>
-					<iPoints>100</iPoints>
-				</BuildingPoint>
-				<BuildingPoint>
-					<BuildingClass>BUILDINGCLASS_INVENTORS_HOUSE</BuildingClass>
-					<iPoints>200</iPoints>
-				</BuildingPoint>
-				<BuildingPoint>
-					<BuildingClass>BUILDINGCLASS_INVENTORS_WORKSHOP</BuildingClass>
-					<iPoints>300</iPoints>
-				</BuildingPoint>
-			</BuildingPoints>
-      <YieldPoints>
-        <YieldPoint>
-          <YieldType>YIELD_IDEAS</YieldType>
-          <iPoints>5</iPoints>
-        </YieldPoint>
-      </YieldPoints>
+			<BuildingPoints/>
+			<YieldPoints/>
 			<iProductionConversionPoints>3</iProductionConversionPoints>
 		</FatherPointInfo>
 		<FatherPointInfo>
@@ -114,33 +87,8 @@
 			<iMissionaryPoints>0</iMissionaryPoints>
 			<iEuropeTradeGoldPointPercent>0</iEuropeTradeGoldPointPercent>
 			<iNativeTradeGoldPointPercent>0</iNativeTradeGoldPointPercent>
-			<BuildingPoints>
-				<BuildingPoint>
-					<BuildingClass>BUILDINGCLASS_STOCKADE</BuildingClass>
-					<iPoints>50</iPoints>
-				</BuildingPoint>
-				<BuildingPoint>
-					<BuildingClass>BUILDINGCLASS_FORT</BuildingClass>
-					<iPoints>100</iPoints>
-				</BuildingPoint>
-				<BuildingPoint>
-					<BuildingClass>BUILDINGCLASS_FORTRESS</BuildingClass>
-					<iPoints>150</iPoints>
-				</BuildingPoint>
-				<BuildingPoint>
-					<BuildingClass>BUILDINGCLASS_ARMORY</BuildingClass>
-					<iPoints>100</iPoints>
-				</BuildingPoint>
-				<BuildingPoint>
-					<BuildingClass>BUILDINGCLASS_MAGAZINE</BuildingClass>
-					<iPoints>200</iPoints>
-				</BuildingPoint>
-				<BuildingPoint>
-					<BuildingClass>BUILDINGCLASS_ARSENAL</BuildingClass>
-					<iPoints>300</iPoints>
-				</BuildingPoint>
-			</BuildingPoints>
-      <YieldPoints/>
+			<BuildingPoints/>
+			<YieldPoints/>
 			<iProductionConversionPoints>3</iProductionConversionPoints>
 		</FatherPointInfo>
 		<FatherPointInfo>
@@ -168,62 +116,30 @@
 			</YieldPoints>
 			<iProductionConversionPoints>3</iProductionConversionPoints>
 		</FatherPointInfo>
-    <FatherPointInfo>
-      <Type>FATHER_POINT_REAL_TRADE</Type>
-      <Description>TXT_KEY_FATHER_POINT_TRADE</Description>
-      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,4,6</Button>
-      <iFontButtonIndex>15</iFontButtonIndex>
-      <iLandTilePoints>0</iLandTilePoints>
-      <iWaterTilePoints>0</iWaterTilePoints>
-      <iMeetNativePoints>0</iMeetNativePoints>
-      <iScoutVillagePoints>50</iScoutVillagePoints>
-      <iGoodyPoints>0</iGoodyPoints>
-      <iExperiencePoints>0</iExperiencePoints>
-      <iConquerCityPoints>0</iConquerCityPoints>
-      <iRazeCityPoints>0</iRazeCityPoints>
-      <iMissionaryPoints>0</iMissionaryPoints>
-      <iEuropeTradeGoldPointPercent>30</iEuropeTradeGoldPointPercent>
-      <iNativeTradeGoldPointPercent>15</iNativeTradeGoldPointPercent>
-      <BuildingPoints>
-        <BuildingPoint>
-          <BuildingClass>BUILDINGCLASS_TRADING_POST</BuildingClass>
-          <iPoints>100</iPoints>
-        </BuildingPoint>
-        <BuildingPoint>
-          <BuildingClass>BUILDINGCLASS_WAREHOUSE</BuildingClass>
-          <iPoints>50</iPoints>
-        </BuildingPoint>
-        <BuildingPoint>
-          <BuildingClass>BUILDINGCLASS_WAREHOUSE_EXPANSION</BuildingClass>
-          <iPoints>50</iPoints>
-        </BuildingPoint>
-        <BuildingPoint>
-          <BuildingClass>BUILDINGCLASS_MARKET</BuildingClass>
-          <iPoints>100</iPoints>
-        </BuildingPoint>
-        <BuildingPoint>
-          <BuildingClass>BUILDINGCLASS_GUILDHALL</BuildingClass>
-          <iPoints>300</iPoints>
-        </BuildingPoint>
-        <BuildingPoint>
-          <BuildingClass>BUILDINGCLASS_THE_FAIR</BuildingClass>
-          <iPoints>400</iPoints>
-        </BuildingPoint>
-        <BuildingPoint>
-          <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
-          <iPoints>100</iPoints>
-        </BuildingPoint>
-        <BuildingPoint>
-          <BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
-          <iPoints>100</iPoints>
-        </BuildingPoint>
-        <BuildingPoint>
-          <BuildingClass>BUILDINGCLASS_SHIPYARD</BuildingClass>
-          <iPoints>100</iPoints>
-        </BuildingPoint>
-      </BuildingPoints>
-      <YieldPoints/>
-      <iProductionConversionPoints>0</iProductionConversionPoints>
-    </FatherPointInfo>
+		<FatherPointInfo>
+			<Type>FATHER_POINT_REAL_TRADE</Type>
+			<Description>TXT_KEY_FATHER_POINT_REAL_TRADE</Description>
+			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,6,6</Button>
+			<iFontButtonIndex>17</iFontButtonIndex>
+			<iLandTilePoints>0</iLandTilePoints>
+			<iWaterTilePoints>0</iWaterTilePoints>
+			<iMeetNativePoints>0</iMeetNativePoints>
+			<iScoutVillagePoints>0</iScoutVillagePoints>
+			<iGoodyPoints>0</iGoodyPoints>
+			<iExperiencePoints>0</iExperiencePoints>
+			<iConquerCityPoints>0</iConquerCityPoints>
+			<iRazeCityPoints>0</iRazeCityPoints>
+			<iMissionaryPoints>0</iMissionaryPoints>
+			<iEuropeTradeGoldPointPercent>0</iEuropeTradeGoldPointPercent>
+			<iNativeTradeGoldPointPercent>0</iNativeTradeGoldPointPercent>
+			<BuildingPoints/>
+			<YieldPoints>
+				<YieldPoint>
+					<YieldType>YIELD_BELLS</YieldType>
+					<iPoints>5</iPoints>
+				</YieldPoint>
+			</YieldPoints>
+			<iProductionConversionPoints>3</iProductionConversionPoints>
+		</FatherPointInfo>
 	</FatherPointInfos>
 </Civ4FatherPointInfos>

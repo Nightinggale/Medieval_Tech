@@ -205,28 +205,6 @@
 			<GoodyWeights/>
 		</GoodyInfo>
 		<GoodyInfo>
-			<Type>GOODY_SCOUT</Type>
-			<Description>TXT_KEY_UNIT_SCOUT</Description>
-			<Sound>AS2D_GOODY_XP</Sound>
-			<AnnounceText>TXT_KEY_GOODY_ANNOUNCE_SCOUT</AnnounceText>
-			<ChiefText>TXT_KEY_CHIEF_GOODY_SCOUT</ChiefText>
-			<iGold>0</iGold>
-			<iGoldRand1>0</iGoldRand1>
-			<iGoldRand2>0</iGoldRand2>
-			<iMapOffset>0</iMapOffset>
-			<iMapRange>0</iMapRange>
-			<iMapProb>0</iMapProb>
-			<iExperience>0</iExperience>
-			<iHealing>0</iHealing>
-			<iDamagePrereq>0</iDamagePrereq>
-			<bBad>0</bBad>
-			<bWar>0</bWar>
-			<UnitClass>NONE</UnitClass>
-			<TeachUnitClass>UNITCLASS_SCOUT</TeachUnitClass>
-			<iCityGoodyWeight>1000</iCityGoodyWeight>
-			<GoodyWeights/>
-		</GoodyInfo>
-		<GoodyInfo>
 			<Type>GOODY_BURIAL_GROUNDS</Type>
 			<Description>TXT_KEY_GOODY_BURIAL_GROUNDS</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
@@ -301,28 +279,6 @@
       <iCityGoodyWeight>1000</iCityGoodyWeight>
       <GoodyWeights/>
       <bGoodyTechs>1</bGoodyTechs>
-    </GoodyInfo>
-    <GoodyInfo>
-      <Type>GOODY_FARMER</Type>
-      <Description>Farmer</Description>
-      <Sound>AS2D_GOODY_HEAL</Sound>
-      <AnnounceText>TXT_KEY_FREE_UNIT_FARMER_GOODY_</AnnounceText>
-      <ChiefText>TXT_KEY_CHIEF_GOODY_GOLD</ChiefText>
-      <iGold>0</iGold>
-      <iGoldRand1>0</iGoldRand1>
-      <iGoldRand2>0</iGoldRand2>
-      <iMapOffset>0</iMapOffset>
-      <iMapRange>0</iMapRange>
-      <iMapProb>0</iMapProb>
-      <iExperience>0</iExperience>
-      <iHealing>0</iHealing>
-      <iDamagePrereq>0</iDamagePrereq>
-      <bBad>0</bBad>
-      <bWar>0</bWar>
-      <UnitClass>UNITCLASS_FARMER</UnitClass>
-      <TeachUnitClass>NONE</TeachUnitClass>
-      <iCityGoodyWeight>0</iCityGoodyWeight>
-      <GoodyWeights/>
     </GoodyInfo>
 	</GoodyInfos>
 </Civ4GoodyInfo>

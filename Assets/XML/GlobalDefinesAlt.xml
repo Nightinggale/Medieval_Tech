@@ -572,15 +572,15 @@
   </Define>
   <Define>
     <DefineName>DEFAULT_KNIGHT_PROFESSION_PROMOTION</DefineName>
-    <DefineTextVal>PROMOTION_DRAGOON</DefineTextVal>
+    <DefineTextVal>PROMOTION_COLONIST</DefineTextVal>
   </Define>
   <Define>
     <DefineName>DEFAULT_KNIGHT_PROMOTION</DefineName>
-    <DefineTextVal>PROMOTION_KNIGHT</DefineTextVal>
+    <DefineTextVal>PROMOTION_COLONIST</DefineTextVal>
   </Define>
   <Define>
     <DefineName>DEFAULT_NOBLEMAN_CLASS</DefineName>
-    <DefineTextVal>UNITCLASS_NOBLEMAN</DefineTextVal>
+    <DefineTextVal>UNITCLASS_COLONIST</DefineTextVal>
   </Define>
   <Define>
     <DefineName>DEFAULT_YIELD_ARMOR_TYPE</DefineName>

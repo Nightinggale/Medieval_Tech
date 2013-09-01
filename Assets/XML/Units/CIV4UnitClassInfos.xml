@@ -12,6 +12,21 @@
       <DefaultUnit>UNIT_RELIC</DefaultUnit>
     </UnitClassInfo>
     <UnitClassInfo>
+      <Type>UNITCLASS_NOBLEMAN</Type>
+      <Description>Nobleman</Description>
+      <DefaultUnit>UNIT_NOBLEMAN</DefaultUnit>
+    </UnitClassInfo>
+    <UnitClassInfo>
+      <Type>UNITCLASS_AI_PEDLER</Type>
+      <Description>AI_Pedler</Description>
+      <DefaultUnit>UNIT_AI_PEDLER</DefaultUnit>
+    </UnitClassInfo>
+    <UnitClassInfo>
+      <Type>UNITCLASS_PAGE</Type>
+      <Description>Page</Description>
+      <DefaultUnit>UNIT_PAGE</DefaultUnit>
+    </UnitClassInfo>
+    <UnitClassInfo>
       <Type>UNITCLASS_SLAVE</Type>
       <Description>Supply Train</Description>
       <DefaultUnit>UNIT_SLAVE</DefaultUnit>
@@ -30,6 +45,21 @@
 			<Type>UNITCLASS_COLONIST</Type>
 			<Description>TXT_KEY_UNIT_COLONIST</Description>
 			<DefaultUnit>UNIT_COLONIST</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_INDENTURED_SERVANT</Type>
+			<Description>TXT_KEY_UNIT_INDENTURED_SERVANT</Description>
+			<DefaultUnit>UNIT_INDENTURED_SERVANT</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_CRIMINAL</Type>
+			<Description>TXT_KEY_UNIT_CRIMINAL</Description>
+			<DefaultUnit>UNIT_CRIMINAL</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_INVENTOR</Type>
+			<Description>TXT_KEY_UNIT_INVENTOR</Description>
+			<DefaultUnit>UNIT_INVENTOR</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_CONVERTED_NATIVE</Type>

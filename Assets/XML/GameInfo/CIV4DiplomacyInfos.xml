@@ -34,310 +34,11 @@
 			<Responses>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_CHARLEMAGNE</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers/>
 					<DiplomacyText>
 						<Text>AI_DIPLO_FIRST_CONTACT_LEADER_CHARLEMAGNE_1</Text>
-					</DiplomacyText>
-				</Response>
-        <Response>
-          <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_GENGHIS</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
-          <Attitudes/>
-          <DiplomacyPowers/>
-          <DiplomacyText>
-            <Text>AI_DIPLO_FIRST_CONTACT_LEADER_CHARLEMAGNE_1</Text>
-          </DiplomacyText>
-        </Response>
-          <Response>
-            <Civilizations/>
-            <Leaders>
-              <Leader>
-                <LeaderType>LEADER_KUBLAI_KHAN</LeaderType>
-                <bLeaderType>1</bLeaderType>
-              </Leader>
-            </Leaders>
-            <Attitudes/>
-            <DiplomacyPowers/>
-            <DiplomacyText>
-              <Text>AI_DIPLO_FIRST_CONTACT_LEADER_CHARLEMAGNE_1</Text>
-            </DiplomacyText>
-          </Response>
-        <Response>
-          <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_MARGARETA</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
-          <Attitudes/>
-          <DiplomacyPowers/>
-          <DiplomacyText>
-            <Text>AI_DIPLO_FIRST_CONTACT_LEADER_CHARLEMAGNE_1</Text>
-          </DiplomacyText>
-        </Response>
-        <Response>
-          <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_RAGNAR</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
-          <Attitudes/>
-          <DiplomacyPowers/>
-          <DiplomacyText>
-            <Text>AI_DIPLO_FIRST_CONTACT_LEADER_CHARLEMAGNE_1</Text>
-          </DiplomacyText>
-        </Response>
-        <Response>
-          <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_HAROLD</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
-          <Attitudes/>
-          <DiplomacyPowers/>
-          <DiplomacyText>
-            <Text>AI_DIPLO_FIRST_CONTACT_LEADER_CHARLEMAGNE_1</Text>
-          </DiplomacyText>
-        </Response>
-        <Response>
-          <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_JUSTINIAN</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
-          <Attitudes/>
-          <DiplomacyPowers/>
-          <DiplomacyText>
-            <Text>AI_DIPLO_FIRST_CONTACT_LEADER_CHARLEMAGNE_1</Text>
-          </DiplomacyText>
-        </Response>
-        <Response>
-          <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_THEODORIC</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
-          <Attitudes/>
-          <DiplomacyPowers/>
-          <DiplomacyText>
-            <Text>AI_DIPLO_FIRST_CONTACT_LEADER_CHARLEMAGNE_1</Text>
-          </DiplomacyText>
-        </Response>
-        <Response>
-          <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_RECCARED</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
-          <Attitudes/>
-          <DiplomacyPowers/>
-          <DiplomacyText>
-            <Text>AI_DIPLO_FIRST_CONTACT_LEADER_CHARLEMAGNE_1</Text>
-          </DiplomacyText>
-        </Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_OFFA</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_FIRST_CONTACT_LEADER_OFFA_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_SALADIN</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_FIRST_CONTACT_LEADER_SALADIN_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_CLOVIS</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_FIRST_CONTACT_LEADER_CLOVIS_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ALMANSUR</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_FIRST_CONTACT_LEADER_ALMANSUR_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_WILLIAM</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_FIRST_CONTACT_LEADER_WILLIAM_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_GENSERIC</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_FIRST_CONTACT_LEADER_GENSERIC_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_MANSAMUSA</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_FIRST_CONTACT_LEADER_MANSAMUSA_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_GUNDOBAD</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_FIRST_CONTACT_LEADER_GUNDOBAD_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ARPAD</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_FIRST_CONTACT_LEADER_ARPAD_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_SAMO</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_FIRST_CONTACT_LEADER_SAMO_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ZIRI</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_FIRST_CONTACT_LEADER_ZIRI_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ALBOIN</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_FIRST_CONTACT_LEADER_ALBOIN_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ROLLO</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_FIRST_CONTACT_LEADER_ROLLO_1</Text>
 					</DiplomacyText>
 				</Response>
 			</Responses>
@@ -361,310 +62,11 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_CHARLEMAGNE</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers/>
 					<DiplomacyText>
 						<Text>AI_DIPLO_REFUSE_TO_TALK_LEADER_CHARLEMAGNE_1</Text>
-					</DiplomacyText>
-				</Response>
-        <Response>
-          <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_GENGHIS</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
-          <Attitudes/>
-          <DiplomacyPowers/>
-          <DiplomacyText>
-            <Text>AI_DIPLO_REFUSE_TO_TALK_LEADER_CHARLEMAGNE_1</Text>
-          </DiplomacyText>
-        </Response>
-        <Response>
-          <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_KUBLAI_KHAN</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
-          <Attitudes/>
-          <DiplomacyPowers/>
-          <DiplomacyText>
-            <Text>AI_DIPLO_REFUSE_TO_TALK_LEADER_CHARLEMAGNE_1</Text>
-          </DiplomacyText>
-        </Response>
-        <Response>
-          <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_MARGARETA</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
-          <Attitudes/>
-          <DiplomacyPowers/>
-          <DiplomacyText>
-            <Text>AI_DIPLO_REFUSE_TO_TALK_LEADER_CHARLEMAGNE_1</Text>
-          </DiplomacyText>
-        </Response>
-        <Response>
-          <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_RAGNAR</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
-          <Attitudes/>
-          <DiplomacyPowers/>
-          <DiplomacyText>
-            <Text>AI_DIPLO_REFUSE_TO_TALK_LEADER_CHARLEMAGNE_1</Text>
-          </DiplomacyText>
-        </Response>
-        <Response>
-          <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_HAROLD</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
-          <Attitudes/>
-          <DiplomacyPowers/>
-          <DiplomacyText>
-            <Text>AI_DIPLO_REFUSE_TO_TALK_LEADER_CHARLEMAGNE_1</Text>
-          </DiplomacyText>
-        </Response>
-        <Response>
-          <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_JUSTINIAN</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
-          <Attitudes/>
-          <DiplomacyPowers/>
-          <DiplomacyText>
-            <Text>AI_DIPLO_REFUSE_TO_TALK_LEADER_CHARLEMAGNE_1</Text>
-          </DiplomacyText>
-        </Response>
-        <Response>
-          <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_RECCARED</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
-          <Attitudes/>
-          <DiplomacyPowers/>
-          <DiplomacyText>
-            <Text>AI_DIPLO_REFUSE_TO_TALK_LEADER_CHARLEMAGNE_1</Text>
-          </DiplomacyText>
-        </Response>
-        <Response>
-          <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_THEODORIC</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
-          <Attitudes/>
-          <DiplomacyPowers/>
-          <DiplomacyText>
-            <Text>AI_DIPLO_REFUSE_TO_TALK_LEADER_CHARLEMAGNE_1</Text>
-          </DiplomacyText>
-        </Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_OFFA</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_REFUSE_TO_TALK_LEADER_OFFA_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_SALADIN</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_REFUSE_TO_TALK_LEADER_SALADIN_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_CLOVIS</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_REFUSE_TO_TALK_LEADER_CLOVIS_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ALMANSUR</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_REFUSE_TO_TALK_LEADER_ALMANSUR_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_WILLIAM</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_REFUSE_TO_TALK_LEADER_WILLIAM_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_GENSERIC</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_REFUSE_TO_TALK_LEADER_GENSERIC_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_MANSAMUSA</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_REFUSE_TO_TALK_LEADER_MANSAMUSA_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_GUNDOBAD</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_REFUSE_TO_TALK_LEADER_GUNDOBAD_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ARPAD</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_REFUSE_TO_TALK_LEADER_ARPAD_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_SAMO</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_REFUSE_TO_TALK_LEADER_SAMO_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ZIRI</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_REFUSE_TO_TALK_LEADER_ZIRI_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ALBOIN</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_REFUSE_TO_TALK_LEADER_ALBOIN_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ROLLO</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_REFUSE_TO_TALK_LEADER_ROLLO_1</Text>
 					</DiplomacyText>
 				</Response>
 			</Responses>
@@ -721,310 +123,11 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_CHARLEMAGNE</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers/>
 					<DiplomacyText>
 						<Text>AI_DIPLO_NO_PEACE_LEADER_CHARLEMAGNE_1</Text>
-					</DiplomacyText>
-				</Response>
-        <Response>
-          <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_GENGHIS</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
-          <Attitudes/>
-          <DiplomacyPowers/>
-          <DiplomacyText>
-            <Text>AI_DIPLO_NO_PEACE_LEADER_CHARLEMAGNE_1</Text>
-          </DiplomacyText>
-        </Response>
-        <Response>
-          <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_KUBLAI_KHAN</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
-          <Attitudes/>
-          <DiplomacyPowers/>
-          <DiplomacyText>
-            <Text>AI_DIPLO_NO_PEACE_LEADER_CHARLEMAGNE_1</Text>
-          </DiplomacyText>
-        </Response>
-        <Response>
-          <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_MARGARETA</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
-          <Attitudes/>
-          <DiplomacyPowers/>
-          <DiplomacyText>
-            <Text>AI_DIPLO_NO_PEACE_LEADER_CHARLEMAGNE_1</Text>
-          </DiplomacyText>
-        </Response>
-        <Response>
-          <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_RAGNAR</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
-          <Attitudes/>
-          <DiplomacyPowers/>
-          <DiplomacyText>
-            <Text>AI_DIPLO_NO_PEACE_LEADER_CHARLEMAGNE_1</Text>
-          </DiplomacyText>
-        </Response>
-        <Response>
-          <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_HAROLD</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
-          <Attitudes/>
-          <DiplomacyPowers/>
-          <DiplomacyText>
-            <Text>AI_DIPLO_NO_PEACE_LEADER_CHARLEMAGNE_1</Text>
-          </DiplomacyText>
-        </Response>
-        <Response>
-          <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_JUSTINIAN</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
-          <Attitudes/>
-          <DiplomacyPowers/>
-          <DiplomacyText>
-            <Text>AI_DIPLO_NO_PEACE_LEADER_CHARLEMAGNE_1</Text>
-          </DiplomacyText>
-        </Response>
-        <Response>
-          <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_THEODORIC</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
-          <Attitudes/>
-          <DiplomacyPowers/>
-          <DiplomacyText>
-            <Text>AI_DIPLO_NO_PEACE_LEADER_CHARLEMAGNE_1</Text>
-          </DiplomacyText>
-        </Response>
-        <Response>
-          <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_RECCARED</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
-          <Attitudes/>
-          <DiplomacyPowers/>
-          <DiplomacyText>
-            <Text>AI_DIPLO_NO_PEACE_LEADER_CHARLEMAGNE_1</Text>
-          </DiplomacyText>
-        </Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_OFFA</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_NO_PEACE_LEADER_OFFA_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_SALADIN</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_NO_PEACE_LEADER_SALADIN_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_CLOVIS</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_NO_PEACE_LEADER_CLOVIS_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ALMANSUR</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_NO_PEACE_LEADER_ALMANSUR_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_WILLIAM</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_NO_PEACE_LEADER_WILLIAM_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_GENSERIC</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_NO_PEACE_LEADER_GENSERIC_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_MANSAMUSA</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_NO_PEACE_LEADER_MANSAMUSA_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_GUNDOBAD</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_NO_PEACE_LEADER_GUNDOBAD_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ARPAD</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_NO_PEACE_LEADER_ARPAD_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_SAMO</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_NO_PEACE_LEADER_SAMO_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ZIRI</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_NO_PEACE_LEADER_ZIRI_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ALBOIN</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_NO_PEACE_LEADER_ALBOIN_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ROLLO</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_NO_PEACE_LEADER_ROLLO_1</Text>
 					</DiplomacyText>
 				</Response>
 			</Responses>
@@ -1034,36 +137,7 @@
 			<Responses>
 				<Response>
 					<Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_THE_BYZANTINE_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_NORMAN_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_ANGLO_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_OSTROGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_VISIGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_FRANK_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_CALIPH</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
 					<Attitudes>
 						<Attitude>
 							<AttitudeType>ATTITUDE_FRIENDLY</AttitudeType>
@@ -1100,16 +174,7 @@
 				</Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_VIKING_ADVISOR</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_MONGOL_ADVISOR</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+          <Leaders/>
           <Attitudes>
             <Attitude>
               <AttitudeType>ATTITUDE_FRIENDLY</AttitudeType>
@@ -1131,12 +196,7 @@
         </Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_CHARLEMAGNE</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes>
 						<Attitude>
 							<AttitudeType>ATTITUDE_FRIENDLY</AttitudeType>
@@ -1158,12 +218,7 @@
 				</Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_GENGHIS</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+          <Leaders/>
           <Attitudes>
             <Attitude>
               <AttitudeType>ATTITUDE_FRIENDLY</AttitudeType>
@@ -1185,12 +240,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_KUBLAI_KHAN</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+          <Leaders/>
           <Attitudes>
             <Attitude>
               <AttitudeType>ATTITUDE_FRIENDLY</AttitudeType>
@@ -1212,12 +262,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_MARGARETA</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes>
             <Attitude>
               <AttitudeType>ATTITUDE_FRIENDLY</AttitudeType>
@@ -1239,12 +284,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_RAGNAR</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes>
             <Attitude>
               <AttitudeType>ATTITUDE_FRIENDLY</AttitudeType>
@@ -1266,12 +306,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_HAROLD</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes>
             <Attitude>
               <AttitudeType>ATTITUDE_FRIENDLY</AttitudeType>
@@ -1293,12 +328,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_JUSTINIAN</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes>
             <Attitude>
               <AttitudeType>ATTITUDE_FRIENDLY</AttitudeType>
@@ -1320,12 +350,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_RECCARED</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes>
             <Attitude>
               <AttitudeType>ATTITUDE_FRIENDLY</AttitudeType>
@@ -1347,12 +372,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_THEODORIC</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes>
             <Attitude>
               <AttitudeType>ATTITUDE_FRIENDLY</AttitudeType>
@@ -1374,12 +394,7 @@
         </Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_OFFA</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes>
 						<Attitude>
 							<AttitudeType>ATTITUDE_FRIENDLY</AttitudeType>
@@ -1401,12 +416,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_SALADIN</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes>
 						<Attitude>
 							<AttitudeType>ATTITUDE_FRIENDLY</AttitudeType>
@@ -1428,12 +438,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_CLOVIS</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes>
 						<Attitude>
 							<AttitudeType>ATTITUDE_FRIENDLY</AttitudeType>
@@ -1455,12 +460,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ALMANSUR</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes>
 						<Attitude>
 							<AttitudeType>ATTITUDE_FRIENDLY</AttitudeType>
@@ -1482,12 +482,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_WILLIAM</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes>
 						<Attitude>
 							<AttitudeType>ATTITUDE_FRIENDLY</AttitudeType>
@@ -1509,12 +504,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_GENSERIC</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes>
 						<Attitude>
 							<AttitudeType>ATTITUDE_FRIENDLY</AttitudeType>
@@ -1536,12 +526,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_MANSAMUSA</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes>
 						<Attitude>
 							<AttitudeType>ATTITUDE_FRIENDLY</AttitudeType>
@@ -1563,12 +548,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_GUNDOBAD</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes>
 						<Attitude>
 							<AttitudeType>ATTITUDE_FRIENDLY</AttitudeType>
@@ -1590,12 +570,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ARPAD</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes>
 						<Attitude>
 							<AttitudeType>ATTITUDE_FRIENDLY</AttitudeType>
@@ -1617,12 +592,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_SAMO</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes>
 						<Attitude>
 							<AttitudeType>ATTITUDE_FRIENDLY</AttitudeType>
@@ -1644,12 +614,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ZIRI</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes>
 						<Attitude>
 							<AttitudeType>ATTITUDE_FRIENDLY</AttitudeType>
@@ -1671,12 +636,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ALBOIN</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes>
 						<Attitude>
 							<AttitudeType>ATTITUDE_FRIENDLY</AttitudeType>
@@ -1698,12 +658,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ROLLO</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes>
 						<Attitude>
 							<AttitudeType>ATTITUDE_FRIENDLY</AttitudeType>
@@ -1757,12 +712,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_CHARLEMAGNE</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes>
 						<Attitude>
 							<AttitudeType>ATTITUDE_ANNOYED</AttitudeType>
@@ -1780,12 +730,7 @@
 				</Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_GENGHIS</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes>
             <Attitude>
               <AttitudeType>ATTITUDE_ANNOYED</AttitudeType>
@@ -1803,12 +748,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_KUBLAI_KHAN</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes>
             <Attitude>
               <AttitudeType>ATTITUDE_ANNOYED</AttitudeType>
@@ -1826,12 +766,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_MARGARETA</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes>
             <Attitude>
               <AttitudeType>ATTITUDE_ANNOYED</AttitudeType>
@@ -1849,12 +784,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_RAGNAR</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes>
             <Attitude>
               <AttitudeType>ATTITUDE_ANNOYED</AttitudeType>
@@ -1872,12 +802,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_HAROLD</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes>
             <Attitude>
               <AttitudeType>ATTITUDE_ANNOYED</AttitudeType>
@@ -1895,12 +820,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_JUSTINIAN</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes>
             <Attitude>
               <AttitudeType>ATTITUDE_ANNOYED</AttitudeType>
@@ -1918,12 +838,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_THEODORIC</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes>
             <Attitude>
               <AttitudeType>ATTITUDE_ANNOYED</AttitudeType>
@@ -1941,12 +856,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_RECCARED</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+ 					<Leaders/>
           <Attitudes>
             <Attitude>
               <AttitudeType>ATTITUDE_ANNOYED</AttitudeType>
@@ -1964,12 +874,7 @@
         </Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_OFFA</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes>
 						<Attitude>
 							<AttitudeType>ATTITUDE_ANNOYED</AttitudeType>
@@ -1987,12 +892,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_SALADIN</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes>
 						<Attitude>
 							<AttitudeType>ATTITUDE_ANNOYED</AttitudeType>
@@ -2010,12 +910,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_CLOVIS</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes>
 						<Attitude>
 							<AttitudeType>ATTITUDE_ANNOYED</AttitudeType>
@@ -2033,12 +928,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_WILLIAM</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes>
 						<Attitude>
 							<AttitudeType>ATTITUDE_ANNOYED</AttitudeType>
@@ -2056,12 +946,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_GENSERIC</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes>
 						<Attitude>
 							<AttitudeType>ATTITUDE_ANNOYED</AttitudeType>
@@ -2079,12 +964,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_MANSAMUSA</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes>
 						<Attitude>
 							<AttitudeType>ATTITUDE_ANNOYED</AttitudeType>
@@ -2102,12 +982,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_GUNDOBAD</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes>
 						<Attitude>
 							<AttitudeType>ATTITUDE_ANNOYED</AttitudeType>
@@ -2125,12 +1000,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ARPAD</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes>
 						<Attitude>
 							<AttitudeType>ATTITUDE_ANNOYED</AttitudeType>
@@ -2148,12 +1018,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_SAMO</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes>
 						<Attitude>
 							<AttitudeType>ATTITUDE_ANNOYED</AttitudeType>
@@ -2171,12 +1036,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ZIRI</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes>
 						<Attitude>
 							<AttitudeType>ATTITUDE_ANNOYED</AttitudeType>
@@ -2194,12 +1054,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ALBOIN</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes>
 						<Attitude>
 							<AttitudeType>ATTITUDE_ANNOYED</AttitudeType>
@@ -2217,12 +1072,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ROLLO</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes>
 						<Attitude>
 							<AttitudeType>ATTITUDE_ANNOYED</AttitudeType>
@@ -3065,16 +1915,7 @@
 			<Responses>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_VIKING_ADVISOR</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_MONGOL_ADVISOR</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+          <Leaders/>
           <Attitudes/>
           <DiplomacyPowers/>
           <DiplomacyText>
@@ -3083,36 +1924,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_THE_BYZANTINE_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_NORMAN_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_ANGLO_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_OSTROGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_VISIGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_FRANK_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_CALIPH</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+          <Leaders/>
           <Attitudes/>
           <DiplomacyPowers/>
           <DiplomacyText>
@@ -3126,16 +1938,7 @@
 			<Responses>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_VIKING_ADVISOR</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_MONGOL_ADVISOR</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+          <Leaders/>
           <Attitudes/>
           <DiplomacyPowers/>
           <DiplomacyText>
@@ -3144,36 +1947,7 @@
         </Response>
 				<Response>
 					<Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_THE_BYZANTINE_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_NORMAN_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_ANGLO_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_OSTROGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_VISIGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_FRANK_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_CALIPH</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers/>
 					<DiplomacyText>
@@ -3187,16 +1961,7 @@
 			<Responses>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_VIKING_ADVISOR</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_MONGOL_ADVISOR</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+          <Leaders/>
           <Attitudes/>
           <DiplomacyPowers/>
           <DiplomacyText>
@@ -3205,36 +1970,7 @@
         </Response>
 				<Response>
 					<Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_THE_BYZANTINE_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_NORMAN_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_ANGLO_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_OSTROGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_VISIGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_FRANK_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_CALIPH</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers/>
 					<DiplomacyText>
@@ -3248,36 +1984,7 @@
 			<Responses>
 				<Response>
 					<Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_THE_BYZANTINE_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_NORMAN_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_ANGLO_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_OSTROGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_VISIGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_FRANK_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_CALIPH</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers/>
 					<DiplomacyText>
@@ -3291,36 +1998,7 @@
 			<Responses>
 				<Response>
 					<Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_THE_BYZANTINE_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_NORMAN_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_ANGLO_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_OSTROGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_VISIGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_FRANK_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_CALIPH</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers/>
 					<DiplomacyText>
@@ -3334,36 +2012,7 @@
 			<Responses>
 				<Response>
 					<Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_THE_BYZANTINE_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_NORMAN_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_ANGLO_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_OSTROGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_VISIGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_FRANK_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_CALIPH</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers/>
 					<DiplomacyText>
@@ -3377,36 +2026,7 @@
 			<Responses>
 				<Response>
 					<Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_THE_BYZANTINE_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_NORMAN_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_ANGLO_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_OSTROGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_VISIGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_FRANK_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_CALIPH</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers/>
 					<DiplomacyText>
@@ -3422,16 +2042,7 @@
 			<Responses>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_VIKING_ADVISOR</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_MONGOL_ADVISOR</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers/>
           <DiplomacyText>
@@ -3442,36 +2053,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_THE_BYZANTINE_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_NORMAN_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_ANGLO_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_OSTROGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_VISIGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_FRANK_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_CALIPH</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers/>
           <DiplomacyText>
@@ -3489,36 +2071,7 @@
 			<Responses>
 				<Response>
 					<Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_THE_BYZANTINE_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_NORMAN_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_ANGLO_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_OSTROGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_VISIGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_FRANK_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_CALIPH</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers/>
 					<DiplomacyText>
@@ -3532,32 +2085,7 @@
 			<Responses>
 				<Response>
 					<Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_THE_BYZANTINE_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_NORMAN_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_ANGLO_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_OSTROGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_VISIGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_FRANK_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers/>
 					<DiplomacyText>
@@ -3566,12 +2094,7 @@
 				</Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_CALIPH</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers/>
           <DiplomacyText>
@@ -3585,32 +2108,7 @@
       <Responses>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_THE_BYZANTINE_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_NORMAN_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_ANGLO_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_OSTROGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_VISIGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_FRANK_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers/>
           <DiplomacyText>
@@ -3619,12 +2117,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_CALIPH</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers/>
           <DiplomacyText>
@@ -3638,36 +2131,7 @@
 			<Responses>
 				<Response>
 					<Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_THE_BYZANTINE_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_NORMAN_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_ANGLO_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_OSTROGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_VISIGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_FRANK_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_CALIPH</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers/>
 					<DiplomacyText>
@@ -3681,36 +2145,7 @@
 			<Responses>
 				<Response>
 					<Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_THE_BYZANTINE_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_NORMAN_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_ANGLO_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_OSTROGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_VISIGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_FRANK_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_CALIPH</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers/>
 					<DiplomacyText>
@@ -3724,36 +2159,7 @@
       <Responses>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_THE_BYZANTINE_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_NORMAN_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_ANGLO_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_OSTROGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_VISIGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_FRANK_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_CALIPH</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers/>
           <DiplomacyText>
@@ -3767,36 +2173,7 @@
 			<Responses>
 				<Response>
 					<Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_THE_BYZANTINE_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_NORMAN_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_ANGLO_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_OSTROGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_VISIGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_FRANK_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_CALIPH</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers/>
 					<DiplomacyText>
@@ -3810,36 +2187,7 @@
 			<Responses>
 				<Response>
 					<Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_THE_BYZANTINE_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_NORMAN_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_ANGLO_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_OSTROGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_VISIGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_FRANK_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_CALIPH</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers/>
 					<DiplomacyText>
@@ -3853,36 +2201,7 @@
       <Responses>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_THE_BYZANTINE_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_NORMAN_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_ANGLO_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_OSTROGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_VISIGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_FRANK_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_CALIPH</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers/>
           <DiplomacyText>
@@ -3896,36 +2215,7 @@
       <Responses>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_THE_BYZANTINE_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_NORMAN_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_ANGLO_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_OSTROGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_VISIGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_FRANK_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_CALIPH</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers/>
           <DiplomacyText>
@@ -3943,16 +2233,7 @@
 			<Responses>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_VIKING_ADVISOR</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_MONGOL_ADVISOR</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers/>
           <DiplomacyText>
@@ -3961,36 +2242,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_THE_BYZANTINE_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_NORMAN_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_ANGLO_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_OSTROGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_VISIGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_FRANK_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_CALIPH</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers/>
           <DiplomacyText>
@@ -4018,16 +2270,7 @@
 			<Responses>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_VIKING_ADVISOR</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_MONGOL_ADVISOR</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers/>
           <DiplomacyText>
@@ -4036,36 +2279,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_THE_BYZANTINE_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_NORMAN_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_ANGLO_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_OSTROGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_VISIGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_FRANK_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_CALIPH</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers/>
           <DiplomacyText>
@@ -4525,12 +2739,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_CHARLEMAGNE</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -4544,12 +2753,7 @@
 				</Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_GENGHIS</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers>
             <DiplomacyPower>
@@ -4563,12 +2767,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_KUBLAI_KHAN</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers>
             <DiplomacyPower>
@@ -4582,12 +2781,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_MARGARETA</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers>
             <DiplomacyPower>
@@ -4601,12 +2795,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_RAGNAR</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers>
             <DiplomacyPower>
@@ -4620,12 +2809,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_HAROLD</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers>
             <DiplomacyPower>
@@ -4639,12 +2823,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_JUSTINIAN</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers>
             <DiplomacyPower>
@@ -4658,12 +2837,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_RECCARED</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers>
             <DiplomacyPower>
@@ -4677,12 +2851,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_THEODORIC</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers>
             <DiplomacyPower>
@@ -4696,12 +2865,7 @@
         </Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_OFFA</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -4715,12 +2879,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_SALADIN</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -4734,12 +2893,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_CLOVIS</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -4753,12 +2907,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ALMANSUR</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -4772,12 +2921,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_WILLIAM</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -4791,12 +2935,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_GENSERIC</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -4810,12 +2949,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_MANSAMUSA</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -4829,12 +2963,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_GUNDOBAD</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -4848,12 +2977,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ARPAD</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -4867,12 +2991,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_SAMO</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -4886,12 +3005,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ZIRI</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -4905,12 +3019,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ALBOIN</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -4924,12 +3033,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ROLLO</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -4962,12 +3066,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_CHARLEMAGNE</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -4981,12 +3080,7 @@
 				</Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_GENGHIS</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers>
             <DiplomacyPower>
@@ -5000,12 +3094,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_KUBLAI_KHAN</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers>
             <DiplomacyPower>
@@ -5019,12 +3108,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_MARGARETA</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers>
             <DiplomacyPower>
@@ -5038,12 +3122,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_RAGNAR</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers>
             <DiplomacyPower>
@@ -5057,12 +3136,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_HAROLD</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers>
             <DiplomacyPower>
@@ -5076,12 +3150,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_JUSTINIAN</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers>
             <DiplomacyPower>
@@ -5095,12 +3164,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_THEODORIC</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers>
             <DiplomacyPower>
@@ -5114,12 +3178,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_RECCARED</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers>
             <DiplomacyPower>
@@ -5133,12 +3192,7 @@
         </Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_OFFA</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -5152,12 +3206,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_SALADIN</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -5171,12 +3220,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_CLOVIS</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -5190,12 +3234,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ALMANSUR</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -5209,12 +3248,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_WILLIAM</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -5228,12 +3262,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_GENSERIC</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -5247,12 +3276,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_MANSAMUSA</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -5266,12 +3290,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_GUNDOBAD</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -5285,12 +3304,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ARPAD</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -5304,12 +3318,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_SAMO</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -5323,12 +3332,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ZIRI</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -5342,12 +3346,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ALBOIN</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -5361,12 +3360,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ROLLO</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -5400,12 +3394,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_CHARLEMAGNE</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -5419,12 +3408,7 @@
 				</Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_GENGHIS</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers>
             <DiplomacyPower>
@@ -5438,12 +3422,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_KUBLAI_KHAN</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers>
             <DiplomacyPower>
@@ -5457,12 +3436,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_MARGARETA</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers>
             <DiplomacyPower>
@@ -5476,12 +3450,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_RAGNAR</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers>
             <DiplomacyPower>
@@ -5495,12 +3464,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_HAROLD</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers>
             <DiplomacyPower>
@@ -5514,12 +3478,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_JUSTINIAN</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers>
             <DiplomacyPower>
@@ -5533,12 +3492,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_THEODORIC</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers>
             <DiplomacyPower>
@@ -5552,12 +3506,7 @@
         </Response>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_RECCARED</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers>
             <DiplomacyPower>
@@ -5571,12 +3520,7 @@
         </Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_OFFA</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -5590,12 +3534,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_SALADIN</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -5609,12 +3548,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_CLOVIS</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -5628,12 +3562,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ALMANSUR</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -5647,12 +3576,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_WILLIAM</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -5666,12 +3590,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_GENSERIC</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -5685,12 +3604,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_MANSAMUSA</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -5704,12 +3618,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_GUNDOBAD</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -5723,12 +3632,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ARPAD</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -5742,12 +3646,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_SAMO</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -5761,12 +3660,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ZIRI</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -5780,12 +3674,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ALBOIN</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -5799,12 +3688,7 @@
 				</Response>
 				<Response>
 					<Civilizations/>
-					<Leaders>
-						<Leader>
-							<LeaderType>LEADER_ROLLO</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers>
 						<DiplomacyPower>
@@ -6218,12 +4102,7 @@
       <Responses>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_ARPAD</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers/>
           <DiplomacyText>
@@ -6289,16 +4168,7 @@
 			<Responses>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_VIKING_ADVISOR</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_MONGOL_ADVISOR</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers/>
           <DiplomacyText>
@@ -6307,36 +4177,7 @@
         </Response>
 				<Response>
 					<Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_THE_BYZANTINE_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_NORMAN_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_ANGLO_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_OSTROGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_VISIGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_FRANK_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_CALIPH</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+ 					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers/>
 					<DiplomacyText>
@@ -6350,16 +4191,7 @@
 			<Responses>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_VIKING_ADVISOR</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_MONGOL_ADVISOR</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers/>
           <DiplomacyText>
@@ -6368,36 +4200,7 @@
         </Response>
 				<Response>
 					<Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_THE_BYZANTINE_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_NORMAN_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_ANGLO_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_OSTROGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_VISIGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_FRANK_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_CALIPH</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers/>
 					<DiplomacyText>
@@ -6411,16 +4214,7 @@
 			<Responses>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_VIKING_ADVISOR</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_MONGOL_ADVISOR</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers/>
           <DiplomacyText>
@@ -6429,36 +4223,7 @@
         </Response>
 				<Response>
 					<Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_THE_BYZANTINE_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_NORMAN_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_ANGLO_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_OSTROGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_VISIGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_FRANK_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_CALIPH</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers/>
 					<DiplomacyText>
@@ -6472,16 +4237,7 @@
 			<Responses>
         <Response>
           <Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_VIKING_ADVISOR</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_MONGOL_ADVISOR</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
           <Attitudes/>
           <DiplomacyPowers/>
           <DiplomacyText>
@@ -6490,36 +4246,7 @@
         </Response>
 				<Response>
 					<Civilizations/>
-          <Leaders>
-            <Leader>
-              <LeaderType>LEADER_THE_BYZANTINE_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_NORMAN_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_ANGLO_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_OSTROGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_VISIGOTH_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_THE_FRANK_POPE</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-            <Leader>
-              <LeaderType>LEADER_CALIPH</LeaderType>
-              <bLeaderType>1</bLeaderType>
-            </Leader>
-          </Leaders>
+					<Leaders/>
 					<Attitudes/>
 					<DiplomacyPowers/>
 					<DiplomacyText>

@@ -39,6 +39,39 @@
       <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,7,9</Button>
     </ProfessionInfo>
     <ProfessionInfo>
+      <Type>PROFESSION_HUNTSMAN</Type>
+      <Description>Huntsman</Description>
+      <Civilopedia>TXT_KEY_UNIT_COLONIST_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_PROFESSION_COLONIST_STRATEGY</Strategy>
+      <Help/>
+      <Combat>UNITCOMBAT_MELEE</Combat>
+      <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+      <SpecialBuilding>NONE</SpecialBuilding>
+      <bWorkPlot>0</bWorkPlot>
+      <bCitizen>0</bCitizen>
+      <bWater>0</bWater>
+      <bScout>0</bScout>
+      <bCityDefender>1</bCityDefender>
+      <bCanFound>1</bCanFound>
+      <bUnarmed>1</bUnarmed>
+      <bNoDefensiveBonus>0</bNoDefensiveBonus>
+      <iCombatChange>1</iCombatChange>
+      <iMovesChange>0</iMovesChange>
+      <iWorkRate>0</iWorkRate>
+      <iMissionaryRate>0</iMissionaryRate>
+      <iPower>0</iPower>
+      <iAsset>0</iAsset>
+      <YieldEquipedNums/>
+      <FreePromotions/>
+      <YieldsProduced>
+        <YieldType>NONE</YieldType>
+      </YieldsProduced>
+      <YieldsConsumed>
+        <YieldType>NONE</YieldType>
+      </YieldsConsumed>
+      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,7,9</Button>
+    </ProfessionInfo>
+    <ProfessionInfo>
       <Type>PROFESSION_MARAUDER</Type>
       <Description>Marauder</Description>
       <Civilopedia>TXT_KEY_UNIT_COLONIST_PEDIA</Civilopedia>

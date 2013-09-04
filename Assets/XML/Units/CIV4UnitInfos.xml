@@ -523,36 +523,7 @@
         </UnitAI>
       </UnitAIs>
       <NotUnitAIs/>
-      <Builds>
-        <Build>
-          <BuildType>BUILD_ROAD</BuildType>
-          <bBuild>1</bBuild>
-        </Build>
-        <Build>
-          <BuildType>BUILD_FARM</BuildType>
-          <bBuild>1</bBuild>
-        </Build>
-        <Build>
-          <BuildType>BUILD_MINE</BuildType>
-          <bBuild>1</bBuild>
-        </Build>
-        <Build>
-          <BuildType>BUILD_LODGE</BuildType>
-          <bBuild>1</bBuild>
-        </Build>
-        <Build>
-          <BuildType>BUILD_REMOVE_JUNGLE</BuildType>
-          <bBuild>1</bBuild>
-        </Build>
-        <Build>
-          <BuildType>BUILD_REMOVE_FOREST</BuildType>
-          <bBuild>1</bBuild>
-        </Build>
-        <Build>
-          <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
-          <bBuild>1</bBuild>
-        </Build>
-      </Builds>
+      <Builds/>
       <PrereqBuilding>NONE</PrereqBuilding>
       <PrereqOrBuildings/>
       <ProductionTraits/>
@@ -670,36 +641,7 @@
         </UnitAI>
       </UnitAIs>
       <NotUnitAIs/>
-      <Builds>
-        <Build>
-          <BuildType>BUILD_ROAD</BuildType>
-          <bBuild>1</bBuild>
-        </Build>
-        <Build>
-          <BuildType>BUILD_FARM</BuildType>
-          <bBuild>1</bBuild>
-        </Build>
-        <Build>
-          <BuildType>BUILD_MINE</BuildType>
-          <bBuild>1</bBuild>
-        </Build>
-        <Build>
-          <BuildType>BUILD_LODGE</BuildType>
-          <bBuild>1</bBuild>
-        </Build>
-        <Build>
-          <BuildType>BUILD_REMOVE_JUNGLE</BuildType>
-          <bBuild>1</bBuild>
-        </Build>
-        <Build>
-          <BuildType>BUILD_REMOVE_FOREST</BuildType>
-          <bBuild>1</bBuild>
-        </Build>
-        <Build>
-          <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
-          <bBuild>1</bBuild>
-        </Build>
-      </Builds>
+      <Builds/>
       <PrereqBuilding>NONE</PrereqBuilding>
       <PrereqOrBuildings/>
       <ProductionTraits/>
@@ -817,36 +759,7 @@
         </UnitAI>
       </UnitAIs>
       <NotUnitAIs/>
-      <Builds>
-        <Build>
-          <BuildType>BUILD_ROAD</BuildType>
-          <bBuild>1</bBuild>
-        </Build>
-        <Build>
-          <BuildType>BUILD_FARM</BuildType>
-          <bBuild>1</bBuild>
-        </Build>
-        <Build>
-          <BuildType>BUILD_MINE</BuildType>
-          <bBuild>1</bBuild>
-        </Build>
-        <Build>
-          <BuildType>BUILD_LODGE</BuildType>
-          <bBuild>1</bBuild>
-        </Build>
-        <Build>
-          <BuildType>BUILD_REMOVE_JUNGLE</BuildType>
-          <bBuild>1</bBuild>
-        </Build>
-        <Build>
-          <BuildType>BUILD_REMOVE_FOREST</BuildType>
-          <bBuild>1</bBuild>
-        </Build>
-        <Build>
-          <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
-          <bBuild>1</bBuild>
-        </Build>
-      </Builds>
+      <Builds/>
       <PrereqBuilding>NONE</PrereqBuilding>
       <PrereqOrBuildings/>
       <ProductionTraits/>
@@ -964,36 +877,7 @@
         </UnitAI>
       </UnitAIs>
       <NotUnitAIs/>
-      <Builds>
-        <Build>
-          <BuildType>BUILD_ROAD</BuildType>
-          <bBuild>1</bBuild>
-        </Build>
-        <Build>
-          <BuildType>BUILD_FARM</BuildType>
-          <bBuild>1</bBuild>
-        </Build>
-        <Build>
-          <BuildType>BUILD_MINE</BuildType>
-          <bBuild>1</bBuild>
-        </Build>
-        <Build>
-          <BuildType>BUILD_LODGE</BuildType>
-          <bBuild>1</bBuild>
-        </Build>
-        <Build>
-          <BuildType>BUILD_REMOVE_JUNGLE</BuildType>
-          <bBuild>1</bBuild>
-        </Build>
-        <Build>
-          <BuildType>BUILD_REMOVE_FOREST</BuildType>
-          <bBuild>1</bBuild>
-        </Build>
-        <Build>
-          <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
-          <bBuild>1</bBuild>
-        </Build>
-      </Builds>
+      <Builds/>
       <PrereqBuilding>NONE</PrereqBuilding>
       <PrereqOrBuildings/>
       <ProductionTraits/>
@@ -1642,32 +1526,9 @@
       <iMissionaryRateModifier>0</iMissionaryRateModifier>
       <TerrainImpassables/>
       <FeatureImpassables/>
-      <TerrainNatives>
-        <TerrainNative>
-          <TerrainType>TERRAIN_GRASS</TerrainType>
-          <bTerrainNative>1</bTerrainNative>
-        </TerrainNative>
-        <TerrainNative>
-          <TerrainType>TERRAIN_PLAINS</TerrainType>
-          <bTerrainNative>1</bTerrainNative>
-        </TerrainNative>
-      </TerrainNatives>
-      <FeatureNatives>
-        <FeatureNative>
-          <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
-          <bFeatureNative>1</bFeatureNative>
-        </FeatureNative>
-        <FeatureNative>
-          <FeatureType>FEATURE_FOREST</FeatureType>
-          <bFeatureNative>1</bFeatureNative>
-        </FeatureNative>
-      </FeatureNatives>
-      <BonusNatives>
-        <BonusNative>
-          <BonusType>BONUS_DEER</BonusType>
-          <bBonusNative>1</bBonusNative>
-        </BonusNative>
-      </BonusNatives>
+      <TerrainNatives/>
+      <FeatureNatives/>
+      <BonusNatives/>
       <EvasionBuildings/>
       <iCombat>2</iCombat>
       <iXPValueAttack>4</iXPValueAttack>
@@ -2218,76 +2079,7 @@
       <UnitClassDefenseMods/>
       <UnitCombatMods/>
       <DomainMods/>
-      <YieldModifiers>
-        <YieldModifier>
-          <YieldType>YIELD_CLOTH</YieldType>
-          <iYieldMod>-50</iYieldMod>
-        </YieldModifier>
-        <YieldModifier>
-          <YieldType>YIELD_GRAIN</YieldType>
-          <iYieldMod>-50</iYieldMod>
-        </YieldModifier>
-        <YieldModifier>
-          <YieldType>YIELD_COATS</YieldType>
-          <iYieldMod>-50</iYieldMod>
-        </YieldModifier>
-        <YieldModifier>
-          <YieldType>YIELD_ALE</YieldType>
-          <iYieldMod>-50</iYieldMod>
-        </YieldModifier>
-        <YieldModifier>
-          <YieldType>YIELD_WINE</YieldType>
-          <iYieldMod>-50</iYieldMod>
-        </YieldModifier>
-        <YieldModifier>
-          <YieldType>YIELD_TOOLS</YieldType>
-          <iYieldMod>-50</iYieldMod>
-        </YieldModifier>
-        <YieldModifier>
-          <YieldType>YIELD_WEAPONS</YieldType>
-          <iYieldMod>-50</iYieldMod>
-        </YieldModifier>
-        <YieldModifier>
-          <YieldType>YIELD_HORSES</YieldType>
-          <iYieldMod>-50</iYieldMod>
-        </YieldModifier>
-        <YieldModifier>
-          <YieldType>YIELD_LEATHER_ARMOR</YieldType>
-          <iYieldMod>-50</iYieldMod>
-        </YieldModifier>
-        <YieldModifier>
-          <YieldType>YIELD_SCALE_ARMOR</YieldType>
-          <iYieldMod>-50</iYieldMod>
-        </YieldModifier>
-        <YieldModifier>
-          <YieldType>YIELD_MAIL_ARMOR</YieldType>
-          <iYieldMod>-50</iYieldMod>
-        </YieldModifier>
-        <YieldModifier>
-          <YieldType>YIELD_PLATE_ARMOR</YieldType>
-          <iYieldMod>-50</iYieldMod>
-        </YieldModifier>
-        <YieldModifier>
-          <YieldType>YIELD_HAMMERS</YieldType>
-          <iYieldMod>-75</iYieldMod>
-        </YieldModifier>
-        <YieldModifier>
-          <YieldType>YIELD_BELLS</YieldType>
-          <iYieldMod>-75</iYieldMod>
-        </YieldModifier>
-        <YieldModifier>
-          <YieldType>YIELD_CROSSES</YieldType>
-          <iYieldMod>-75</iYieldMod>
-        </YieldModifier>
-        <YieldModifier>
-          <YieldType>YIELD_CULTURE</YieldType>
-          <iYieldMod>-75</iYieldMod>
-        </YieldModifier>
-        <YieldModifier>
-          <YieldType>YIELD_EDUCATION</YieldType>
-          <iYieldMod>-75</iYieldMod>
-        </YieldModifier>
-      </YieldModifiers>
+      <YieldModifiers/>
       <YieldChanges/>
       <BonusYieldChanges/>
       <bLandYieldChanges>1</bLandYieldChanges>

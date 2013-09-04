@@ -18,6 +18,12 @@
       <DefaultBuilding>BUILDING_MARKET</DefaultBuilding>
       <VictoryThresholds/>
     </BuildingClassInfo>
+    <BuildingClassInfo>
+      <Type>BUILDINGCLASS_THE_FAIR</Type>
+      <Description>TXT_KEY_BUILDING_THE_FAIR</Description>
+      <DefaultBuilding>BUILDING_THE_FAIR</DefaultBuilding>
+      <VictoryThresholds/>
+    </BuildingClassInfo>
 		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_WAREHOUSE</Type>
 			<Description>TXT_KEY_BUILDING_WAREHOUSE</Description>

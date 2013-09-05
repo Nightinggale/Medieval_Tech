@@ -7,8 +7,8 @@
 <Civ4YieldInfos xmlns="x-schema:CIV4TerrainSchema.xml">
 	<YieldInfos>
 		<YieldInfo>
-			<Type>YIELD_FOOD</Type>
-			<Description>Food</Description>
+			<Type>YIELD_NUTRIENTS</Type>
+			<Description>Nutrients</Description>
 			<Civilopedia>TXT_KEY_YIELD_FOOD_PEDIA</Civilopedia>
 			<bCargo>1</bCargo>
 			<iBuyPriceLow>0</iBuyPriceLow>
@@ -49,8 +49,8 @@
       </TradeScreenTypes>
 		</YieldInfo>
     <YieldInfo>
-      <Type>YIELD_GRAIN</Type>
-      <Description>Luxury Food</Description>
+      <Type>YIELD_BIONICS</Type>
+      <Description>Bionics</Description>
       <Civilopedia>TXT_KEY_YIELD_FOOD_PEDIA</Civilopedia>
       <bCargo>1</bCargo>
       <iBuyPriceLow>1</iBuyPriceLow>
@@ -92,8 +92,8 @@
       </TradeScreenTypes>
     </YieldInfo>
     <YieldInfo>
-      <Type>YIELD_CATTLE</Type>
-      <Description>Cattle</Description>
+      <Type>YIELD_MICROBES</Type>
+      <Description>Microbes</Description>
       <Civilopedia>TXT_KEY_BONUS_COW_PEDIA</Civilopedia>
       <bCargo>1</bCargo>
       <iBuyPriceLow>5</iBuyPriceLow>
@@ -134,8 +134,8 @@
       </TradeScreenTypes>
     </YieldInfo>
     <YieldInfo>
-      <Type>YIELD_SHEEP</Type>
-      <Description>Sheep</Description>
+      <Type>YIELD_HARD_CURRENCY</Type>
+      <Description>Hard Currency</Description>
       <Civilopedia>TXT_KEY_BONUS_SHEEP_PEDIA</Civilopedia>
       <bCargo>1</bCargo>
       <iBuyPriceLow>4</iBuyPriceLow>
@@ -176,8 +176,8 @@
       </TradeScreenTypes>
     </YieldInfo>
     <YieldInfo>
-      <Type>YIELD_WOOL</Type>
-      <Description>Wool</Description>
+      <Type>YIELD_CRYSTALLOIDS</Type>
+      <Description>Crystalloids</Description>
       <Civilopedia>????</Civilopedia>
       <bCargo>1</bCargo>
       <iBuyPriceLow>4</iBuyPriceLow>
@@ -220,8 +220,8 @@
       </TradeScreenTypes>
     </YieldInfo>
 		<YieldInfo>
-			<Type>YIELD_LUMBER</Type>
-			<Description>TXT_KEY_YIELD_LUMBER</Description>
+			<Type>YIELD_BIOPOLYMERS</Type>
+			<Description>Biopolymers</Description>
 			<Civilopedia>TXT_KEY_YIELD_LUMBER_PEDIA</Civilopedia>
 			<bCargo>1</bCargo>
 			<iBuyPriceLow>0</iBuyPriceLow>
@@ -262,8 +262,8 @@
       </TradeScreenTypes>
 		</YieldInfo>
     <YieldInfo>
-      <Type>YIELD_STONE</Type>
-      <Description>Stone</Description>
+      <Type>YIELD_SILICATES</Type>
+      <Description>Silicates</Description>
       <Civilopedia>TXT_KEY_YIELD_LUMBER_PEDIA</Civilopedia>
       <bCargo>1</bCargo>
       <iBuyPriceLow>3</iBuyPriceLow>
@@ -305,8 +305,8 @@
       </TradeScreenTypes>
     </YieldInfo>
 		<YieldInfo>
-			<Type>YIELD_SILVER</Type>
-			<Description>TXT_KEY_YIELD_SILVER</Description>
+			<Type>YIELD_PRECIOUS_METALS</Type>
+			<Description>Precious Metals</Description>
 			<Civilopedia>TXT_KEY_YIELD_SILVER_PEDIA</Civilopedia>
 			<bCargo>1</bCargo>
 			<iBuyPriceLow>19</iBuyPriceLow>
@@ -347,8 +347,8 @@
       </TradeScreenTypes>
 		</YieldInfo>
     <YieldInfo>
-      <Type>YIELD_SALT</Type>
-      <Description>Silk</Description>
+      <Type>YIELD_ELECTROLYTES</Type>
+      <Description>Electrolytes</Description>
       <Civilopedia>TXT_KEY_BONUS_SILK_PEDIA</Civilopedia>
       <bCargo>1</bCargo>
       <iBuyPriceLow>11</iBuyPriceLow>
@@ -390,8 +390,8 @@
       </TradeScreenTypes>
     </YieldInfo>
     <YieldInfo>
-      <Type>YIELD_SPICES</Type>
-      <Description>Spices</Description>
+      <Type>YIELD_ICE</Type>
+      <Description>Phase Ice</Description>
       <Civilopedia>TXT_KEY_BONUS_SPICES_PEDIA</Civilopedia>
       <bCargo>1</bCargo>
       <iBuyPriceLow>8</iBuyPriceLow>
@@ -434,8 +434,8 @@
       </TradeScreenTypes>
     </YieldInfo>
     <YieldInfo>
-      <Type>YIELD_FUR</Type>
-      <Description>Hides</Description>
+      <Type>YIELD_ISOTOPES</Type>
+      <Description>Isotopes</Description>
       <Civilopedia>TXT_KEY_YIELD_FUR_PEDIA</Civilopedia>
       <bCargo>1</bCargo>
       <iBuyPriceLow>4</iBuyPriceLow>
@@ -476,8 +476,8 @@
       </TradeScreenTypes>
     </YieldInfo>
 		<YieldInfo>
-			<Type>YIELD_COTTON</Type>
-			<Description>TXT_KEY_YIELD_COTTON</Description>
+			<Type>YIELD_URANIUM</Type>
+			<Description>Uranium</Description>
 			<Civilopedia>TXT_KEY_YIELD_COTTON_PEDIA</Civilopedia>
 			<bCargo>1</bCargo>
 			<iBuyPriceLow>3</iBuyPriceLow>
@@ -519,8 +519,8 @@
       </TradeScreenTypes>
 		</YieldInfo>
 		<YieldInfo>
-			<Type>YIELD_BARLEY</Type>
-			<Description>Barley</Description>
+			<Type>YIELD_PLUTONIUM</Type>
+			<Description>Plutonium</Description>
 			<Civilopedia>TXT_KEY_YIELD_SUGAR_PEDIA</Civilopedia>
 			<bCargo>1</bCargo>
 			<iBuyPriceLow>4</iBuyPriceLow>
@@ -561,8 +561,8 @@
       </TradeScreenTypes>
 		</YieldInfo>
 		<YieldInfo>
-			<Type>YIELD_GRAPES</Type>
-			<Description>Grapes</Description>
+			<Type>YIELD_RARE_EARTHS</Type>
+			<Description>Rare Earths</Description>
 			<Civilopedia>TXT_KEY_BONUS_WINE_PEDIA</Civilopedia>
 			<bCargo>1</bCargo>
 			<iBuyPriceLow>3</iBuyPriceLow>
@@ -603,8 +603,8 @@
       </TradeScreenTypes>
 		</YieldInfo>
 		<YieldInfo>
-			<Type>YIELD_ORE</Type>
-			<Description>TXT_KEY_YIELD_ORE</Description>
+			<Type>YIELD_BASE_METALS</Type>
+			<Description>Base Metals</Description>
 			<Civilopedia>TXT_KEY_YIELD_ORE_PEDIA</Civilopedia>
 			<bCargo>1</bCargo>
 			<iBuyPriceLow>2</iBuyPriceLow>
@@ -645,8 +645,8 @@
       </TradeScreenTypes>
 		</YieldInfo>
 		<YieldInfo>
-			<Type>YIELD_CLOTH</Type>
-			<Description>TXT_KEY_YIELD_CLOTH</Description>
+			<Type>YIELD_TISSUE_SAMPLES</Type>
+			<Description>Tissue Samples</Description>
 			<Civilopedia>TXT_KEY_YIELD_CLOTH_PEDIA</Civilopedia>
 			<bCargo>1</bCargo>
 			<iBuyPriceLow>8</iBuyPriceLow>
@@ -687,8 +687,8 @@
       </TradeScreenTypes>
 		</YieldInfo>
 		<YieldInfo>
-			<Type>YIELD_COATS</Type>
-			<Description>Coats</Description>
+			<Type>YIELD_NUCLEIC_ACIDS</Type>
+			<Description>Nucleic Acids</Description>
 			<Civilopedia>TXT_KEY_YIELD_COATS_PEDIA</Civilopedia>
 			<bCargo>1</bCargo>
 			<iBuyPriceLow>8</iBuyPriceLow>
@@ -729,8 +729,8 @@
       </TradeScreenTypes>
 		</YieldInfo>
 		<YieldInfo>
-			<Type>YIELD_ALE</Type>
-			<Description>Ale</Description>
+			<Type>YIELD_AMINO_ACIDS</Type>
+			<Description>Amino Acids</Description>
 			<Civilopedia>????</Civilopedia>
 			<bCargo>1</bCargo>
 			<iBuyPriceLow>8</iBuyPriceLow>
@@ -771,8 +771,8 @@
       </TradeScreenTypes>
 		</YieldInfo>
 		<YieldInfo>
-			<Type>YIELD_WINE</Type>
-			<Description>Wine</Description>
+			<Type>YIELD_OPIATES</Type>
+			<Description>Opiates</Description>
 			<Civilopedia>TXT_KEY_BONUS_WINE_PEDIA</Civilopedia>
 			<bCargo>1</bCargo>
 			<iBuyPriceLow>8</iBuyPriceLow>
@@ -814,7 +814,7 @@
 		</YieldInfo>
 		<YieldInfo>
 			<Type>YIELD_TOOLS</Type>
-			<Description>TXT_KEY_YIELD_TOOLS</Description>
+			<Description>Machine Tools</Description>
 			<Civilopedia>TXT_KEY_YIELD_TOOLS_PEDIA</Civilopedia>
 			<bCargo>1</bCargo>
 			<iBuyPriceLow>1</iBuyPriceLow>
@@ -846,7 +846,7 @@
 		</YieldInfo>
 		<YieldInfo>
 			<Type>YIELD_WEAPONS</Type>
-			<Description>Weapons</Description>
+			<Description>Firearms</Description>
 			<Civilopedia>????</Civilopedia>
 			<bCargo>1</bCargo>
 			<iBuyPriceLow>3</iBuyPriceLow>
@@ -888,8 +888,8 @@
       </TradeScreenTypes>
 		</YieldInfo>
 		<YieldInfo>
-			<Type>YIELD_HORSES</Type>
-			<Description>TXT_KEY_YIELD_HORSES</Description>
+			<Type>YIELD_ROBOTICS</Type>
+			<Description>Robotics</Description>
 			<Civilopedia>TXT_KEY_YIELD_HORSES_PEDIA</Civilopedia>
 			<bCargo>1</bCargo>
 			<iBuyPriceLow>4</iBuyPriceLow>
@@ -931,8 +931,8 @@
       </TradeScreenTypes>
 		</YieldInfo>
     <YieldInfo>
-      <Type>YIELD_LEATHER_ARMOR</Type>
-      <Description>Leather Armor</Description>
+      <Type>YIELD_XENOTOXINS</Type>
+      <Description>Xenotoxins</Description>
       <Civilopedia>????</Civilopedia>
       <bCargo>1</bCargo>
       <iBuyPriceLow>3</iBuyPriceLow>
@@ -965,8 +965,8 @@
       <bIsMilitary>1</bIsMilitary>
     </YieldInfo>
     <YieldInfo>
-      <Type>YIELD_SCALE_ARMOR</Type>
-      <Description>Scale Armor</Description>
+      <Type>YIELD_PEPTIDES</Type>
+      <Description>Peptides</Description>
       <Civilopedia>????</Civilopedia>
       <bCargo>1</bCargo>
       <iBuyPriceLow>4</iBuyPriceLow>
@@ -1010,8 +1010,8 @@
       </TradeScreenTypes>
     </YieldInfo>
     <YieldInfo>
-      <Type>YIELD_MAIL_ARMOR</Type>
-      <Description>Mail Armor</Description>
+      <Type>YIELD_BOTANICALS</Type>
+      <Description>Botanicals</Description>
       <Civilopedia>????</Civilopedia>
       <bCargo>1</bCargo>
       <iBuyPriceLow>5</iBuyPriceLow>
@@ -1055,8 +1055,8 @@
       </TradeScreenTypes>
     </YieldInfo>
     <YieldInfo>
-      <Type>YIELD_PLATE_ARMOR</Type>
-      <Description>Plate Armor</Description>
+      <Type>YIELD_HYDROCARBONS</Type>
+      <Description>Hydrocarbons</Description>
       <Civilopedia>????</Civilopedia>
       <bCargo>1</bCargo>
       <iBuyPriceLow>7</iBuyPriceLow>
@@ -1100,8 +1100,8 @@
       </TradeScreenTypes>
     </YieldInfo>
 		<YieldInfo>
-			<Type>YIELD_TRADE_GOODS</Type>
-			<Description>TXT_KEY_YIELD_TRADE_GOODS</Description>
+			<Type>YIELD_EARTH_GOODS</Type>
+			<Description>Earth Goods</Description>
 			<Civilopedia>TXT_KEY_YIELD_TRADE_GOODS_PEDIA</Civilopedia>
 			<bCargo>1</bCargo>
 			<iBuyPriceLow>1</iBuyPriceLow>
@@ -1133,7 +1133,7 @@
 		</YieldInfo>
 		<YieldInfo>
 			<Type>YIELD_HAMMERS</Type>
-			<Description>TXT_KEY_YIELD_HAMMERS</Description>
+			<Description>Industry</Description>
 			<Civilopedia>TXT_KEY_YIELD_HAMMERS_PEDIA</Civilopedia>
 			<bCargo>0</bCargo>
 			<iBuyPriceLow>0</iBuyPriceLow>
@@ -1165,7 +1165,7 @@
 		</YieldInfo>
 		<YieldInfo>
 			<Type>YIELD_BELLS</Type>
-			<Description>Fealty</Description>
+			<Description>Influence</Description>
 			<Civilopedia>????</Civilopedia>
 			<bCargo>0</bCargo>
 			<iBuyPriceLow>0</iBuyPriceLow>
@@ -1197,7 +1197,7 @@
 		</YieldInfo>
 		<YieldInfo>
 			<Type>YIELD_CROSSES</Type>
-			<Description>Religion</Description>
+			<Description>Propaganda</Description>
 			<Civilopedia>TXT_KEY_YIELD_CROSSES_PEDIA</Civilopedia>
 			<bCargo>0</bCargo>
 			<iBuyPriceLow>0</iBuyPriceLow>

@@ -96,53 +96,13 @@
 			<ArtDefineTag>ART_DEF_FEATURE_JUNGLE</ArtDefineTag>
 			<YieldChanges>
 				<YieldIntegerPair>
-					<YieldType>YIELD_LUMBER</YieldType>
+					<YieldType>YIELD_NUTRIENTS</YieldType>
 					<iValue>5</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_COTTON</YieldType>
-					<iValue>-2</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_WINE</YieldType>
-					<iValue>-2</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_BARLEY</YieldType>
-					<iValue>-2</iValue>
 				</YieldIntegerPair>
 			</YieldChanges>
 			<RiverYieldIncreases>
 				<YieldIntegerPair>
-					<YieldType>YIELD_FOOD</YieldType>
-					<iValue>1</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_COTTON</YieldType>
-					<iValue>1</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_WINE</YieldType>
-					<iValue>1</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_BARLEY</YieldType>
-					<iValue>1</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_FUR</YieldType>
-					<iValue>1</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_ORE</YieldType>
-					<iValue>1</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_LUMBER</YieldType>
-					<iValue>1</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_SILVER</YieldType>
+					<YieldType>YIELD_NUTRIENTS</YieldType>
 					<iValue>1</iValue>
 				</YieldIntegerPair>
 			</RiverYieldIncreases>
@@ -234,57 +194,13 @@
 			<ArtDefineTag>ART_DEF_FEATURE_FOREST</ArtDefineTag>
 			<YieldChanges>
 				<YieldIntegerPair>
-					<YieldType>YIELD_FOOD</YieldType>
-					<iValue>-2</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_FUR</YieldType>
-					<iValue>3</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_LUMBER</YieldType>
-					<iValue>6</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_COTTON</YieldType>
-					<iValue>-2</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_WINE</YieldType>
-					<iValue>-2</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_BARLEY</YieldType>
+					<YieldType>YIELD_NUTRIENTS</YieldType>
 					<iValue>-2</iValue>
 				</YieldIntegerPair>
 			</YieldChanges>
 			<RiverYieldIncreases>
 				<YieldIntegerPair>
-					<YieldType>YIELD_FOOD</YieldType>
-					<iValue>1</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_COTTON</YieldType>
-					<iValue>1</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_WINE</YieldType>
-					<iValue>1</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_FUR</YieldType>
-					<iValue>1</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_ORE</YieldType>
-					<iValue>1</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_LUMBER</YieldType>
-					<iValue>1</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_SILVER</YieldType>
+					<YieldType>YIELD_NUTRIENTS</YieldType>
 					<iValue>1</iValue>
 				</YieldIntegerPair>
 			</RiverYieldIncreases>
@@ -372,53 +288,13 @@
 			<ArtDefineTag>ART_DEF_FEATURE_LIGHT_FOREST</ArtDefineTag>
 			<YieldChanges>
 				<YieldIntegerPair>
-					<YieldType>YIELD_FOOD</YieldType>
+					<YieldType>YIELD_NUTRIENTS</YieldType>
 					<iValue>-1</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_COTTON</YieldType>
-					<iValue>-1</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_WINE</YieldType>
-					<iValue>-1</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_FUR</YieldType>
-					<iValue>2</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_LUMBER</YieldType>
-					<iValue>2</iValue>
 				</YieldIntegerPair>
 			</YieldChanges>
 			<RiverYieldIncreases>
 				<YieldIntegerPair>
-					<YieldType>YIELD_FOOD</YieldType>
-					<iValue>1</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_COTTON</YieldType>
-					<iValue>1</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_WINE</YieldType>
-					<iValue>1</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_FUR</YieldType>
-					<iValue>1</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_ORE</YieldType>
-					<iValue>1</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_LUMBER</YieldType>
-					<iValue>1</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_SILVER</YieldType>
+					<YieldType>YIELD_NUTRIENTS</YieldType>
 					<iValue>1</iValue>
 				</YieldIntegerPair>
 			</RiverYieldIncreases>

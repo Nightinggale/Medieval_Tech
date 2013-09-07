@@ -659,10 +659,6 @@
 				<YieldType>YIELD_HAMMERS</YieldType>
 		  			<iCost>10</iCost>
 				</YieldCost>
-				<YieldCost>
-				<YieldType>YIELD_LUMBER</YieldType>
-					<iCost>50</iCost>
-				</YieldCost>
 			</YieldCosts>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -732,10 +728,6 @@
 				<YieldCost>
 					<YieldType>YIELD_HAMMERS</YieldType>
 					<iCost>90</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_LUMBER</YieldType>
-					<iCost>50</iCost>
 				</YieldCost>
 			</YieldCosts>
 			<iHurryCostModifier>0</iHurryCostModifier>
@@ -815,10 +807,6 @@
 				<YieldCost>
 					<YieldType>YIELD_HAMMERS</YieldType>
 					<iCost>270</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_LUMBER</YieldType>
-					<iCost>100</iCost>
 				</YieldCost>
 			</YieldCosts>
 			<iHurryCostModifier>0</iHurryCostModifier>
@@ -919,12 +907,7 @@
 			<iYieldStorage>0</iYieldStorage>
 			<iOverflowSellPercent>0</iOverflowSellPercent>
 			<fVisibilityPriority>100.0</fVisibilityPriority>
-			<SeaPlotYieldChanges>
-				<SeaPlotYieldChange>
-					<YieldType>YIELD_FOOD</YieldType>
-					<iYieldChange>2</iYieldChange>
-				</SeaPlotYieldChange>
-			</SeaPlotYieldChanges>
+			<SeaPlotYieldChanges/>
 			<RiverPlotYieldChanges/>
 			<YieldChanges/>
 			<YieldModifiers/>
@@ -992,12 +975,7 @@
       <iYieldStorage>0</iYieldStorage>
       <iOverflowSellPercent>0</iOverflowSellPercent>
       <fVisibilityPriority>100.0</fVisibilityPriority>
-      <SeaPlotYieldChanges>
-        <SeaPlotYieldChange>
-          <YieldType>YIELD_FOOD</YieldType>
-          <iYieldChange>2</iYieldChange>
-        </SeaPlotYieldChange>
-      </SeaPlotYieldChanges>
+      <SeaPlotYieldChanges/>
       <RiverPlotYieldChanges/>
       <YieldChanges/>
       <YieldModifiers/>
@@ -1072,12 +1050,7 @@
 			<iYieldStorage>0</iYieldStorage>
 			<iOverflowSellPercent>0</iOverflowSellPercent>
 			<fVisibilityPriority>100.0</fVisibilityPriority>
-			<SeaPlotYieldChanges>
-				<SeaPlotYieldChange>
-					<YieldType>YIELD_FOOD</YieldType>
-					<iYieldChange>2</iYieldChange>
-				</SeaPlotYieldChange>
-			</SeaPlotYieldChanges>
+			<SeaPlotYieldChanges/>
 			<RiverPlotYieldChanges/>
 			<YieldChanges/>
 			<YieldModifiers/>
@@ -1155,12 +1128,7 @@
 			<iYieldStorage>0</iYieldStorage>
 			<iOverflowSellPercent>0</iOverflowSellPercent>
 			<fVisibilityPriority>100.0</fVisibilityPriority>
-			<SeaPlotYieldChanges>
-				<SeaPlotYieldChange>
-					<YieldType>YIELD_FOOD</YieldType>
-					<iYieldChange>2</iYieldChange>
-				</SeaPlotYieldChange>
-			</SeaPlotYieldChanges>
+			<SeaPlotYieldChanges/>
 			<RiverPlotYieldChanges/>
 			<YieldChanges/>
 			<YieldModifiers/>

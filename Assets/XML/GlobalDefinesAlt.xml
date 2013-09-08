@@ -288,7 +288,7 @@
   </Define>
   <Define>
     <DefineName>DEFAULT_FUEDALISM_TECH</DefineName>
-    <DefineTextVal>FUEDALISM</DefineTextVal>
+    <DefineTextVal>TRADING_GUILDS</DefineTextVal>
   </Define>
   <Define>
     <DefineName>COLONIAL_FORCED_PEACE_TURNS</DefineName>
@@ -472,7 +472,7 @@
   </Define>
   <Define>
     <DefineName>DEFAULT_TREASURE_YIELD</DefineName>
-    <DefineTextVal>YIELD_SILVER</DefineTextVal>
+    <DefineTextVal>YIELD_PRECIOUS_METALS</DefineTextVal>
   </Define>
   <Define>
     <DefineName>PILGRAM_OFFER_GOLD</DefineName>
@@ -584,7 +584,7 @@
   </Define>
   <Define>
     <DefineName>DEFAULT_YIELD_ARMOR_TYPE</DefineName>
-    <DefineTextVal>YIELD_SCALE_ARMOR</DefineTextVal>
+    <DefineTextVal>YIELD_NUTRIENTS</DefineTextVal>
   </Define>
   <Define>
     <DefineName>DEFAULT_GRAIN_GROWTH_UNIT_CLASS</DefineName>
@@ -623,7 +623,7 @@
   <!--Yield For Industrial Victory-->
   <Define>
     <DefineName>INDUSTRIAL_VICTORY_SINGLE_YIELD</DefineName>
-    <DefineTextVal>YIELD_CLOTH</DefineTextVal>
+    <DefineTextVal>YIELD_NUTRIENTS</DefineTextVal>
   </Define>
   <!--These are the Techs the natives get for free-->
   <Define>

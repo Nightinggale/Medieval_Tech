@@ -1371,7 +1371,7 @@
       <iAIWeight>0</iAIWeight>
       <YieldCosts>
         <YieldCost>
-          <YieldType>YIELD_FOOD</YieldType>
+          <YieldType>YIELD_NUTRIENTS</YieldType>
           <iCost>80</iCost>
         </YieldCost>
         <YieldCost>

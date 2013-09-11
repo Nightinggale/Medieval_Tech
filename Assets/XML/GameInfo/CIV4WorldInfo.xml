@@ -11,7 +11,7 @@
 			<Type>WORLDSIZE_TINY</Type>
 			<Description>TXT_KEY_WORLD_TINY</Description>
 			<Help>TXT_KEY_WORLD_TINY_HELP</Help>
-			<iDefaultPlayers>6</iDefaultPlayers>
+			<iDefaultPlayers>1</iDefaultPlayers>
 			<iDefaultNativePlayers>5</iDefaultNativePlayers>
 			<iUnitNameModifier>40</iUnitNameModifier>
 			<iTargetNumCities>4</iTargetNumCities>

@@ -7,28 +7,32 @@
 <Civ4FatherCategoryInfos xmlns="x-schema:CIV4BasicInfoSchema.xml">
 	<FatherCategoryInfos>
 		<FatherCategoryInfo>
-			<Type>FATHERCATEGORY_EXPLORATION</Type>
-			<Description>TXT_KEY_FATHERCATEGORY_EXPLORATION</Description>
+			<Type>FATHERCATEGORY_MEDIA</Type>
+			<Description>Media</Description>
 		</FatherCategoryInfo>
 		<FatherCategoryInfo>
-			<Type>FATHERCATEGORY_RELIGION</Type>
-			<Description>TXT_KEY_FATHERCATEGORY_RELIGION</Description>
+			<Type>FATHERCATEGORY_SCIENTIFIC</Type>
+			<Description>Scientific</Description>
 		</FatherCategoryInfo>
 		<FatherCategoryInfo>
-			<Type>FATHERCATEGORY_TRADE</Type>
-			<Description>TXT_KEY_FATHERCATEGORY_TRADE</Description>
+			<Type>FATHERCATEGORY_CORPORATE</Type>
+			<Description>Corporate</Description>
+		</FatherCategoryInfo>
+		<FatherCategoryInfo>
+			<Type>FATHERCATEGORY_CRIMINAL</Type>
+			<Description>Military</Description>
 		</FatherCategoryInfo>
 		<FatherCategoryInfo>
 			<Type>FATHERCATEGORY_MILITARY</Type>
-			<Description>TXT_KEY_FATHERCATEGORY_MILITARY</Description>
+			<Description>Military</Description>
 		</FatherCategoryInfo>
 		<FatherCategoryInfo>
 			<Type>FATHERCATEGORY_POLITICS</Type>
-			<Description>TXT_KEY_FATHERCATEGORY_POLITICS</Description>
+			<Description>Political</Description>
 		</FatherCategoryInfo>
-    <FatherCategoryInfo>
-      <Type>FATHERCATEGORY_REAL_TRADE</Type>
-      <Description>Trading</Description>
-    </FatherCategoryInfo>
+		<FatherCategoryInfo>
+			<Type>FATHERCATEGORY_REAL_TRADE</Type>
+			<Description>Progenitor Secrets</Description>
+		</FatherCategoryInfo>
 	</FatherCategoryInfos>
 </Civ4FatherCategoryInfos>

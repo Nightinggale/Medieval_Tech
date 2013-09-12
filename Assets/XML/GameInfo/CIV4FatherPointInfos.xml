@@ -7,15 +7,15 @@
 	<!-- Father Infos -->
 	<FatherPointInfos>
 		<FatherPointInfo>
-			<Type>FATHER_POINT_EXPLORATION</Type>
-			<Description>TXT_KEY_FATHER_POINT_EXPLORATION</Description>
+			<Type>FATHER_POINT_MEDIA</Type>
+			<Description>Media Prestige</Description>
 			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,5,6</Button>
 			<iFontButtonIndex>14</iFontButtonIndex>
-			<iLandTilePoints>5</iLandTilePoints>
-			<iWaterTilePoints>3</iWaterTilePoints>
-			<iMeetNativePoints>75</iMeetNativePoints>
-			<iScoutVillagePoints>0</iScoutVillagePoints>
-			<iGoodyPoints>125</iGoodyPoints>
+			<iLandTilePoints>3</iLandTilePoints>
+			<iWaterTilePoints>1</iWaterTilePoints>
+			<iMeetNativePoints>50</iMeetNativePoints>
+			<iScoutVillagePoints>25</iScoutVillagePoints>
+			<iGoodyPoints>100</iGoodyPoints>
 			<iExperiencePoints>0</iExperiencePoints>
 			<iConquerCityPoints>0</iConquerCityPoints>
 			<iRazeCityPoints>0</iRazeCityPoints>
@@ -23,37 +23,42 @@
 			<iEuropeTradeGoldPointPercent>0</iEuropeTradeGoldPointPercent>
 			<iNativeTradeGoldPointPercent>0</iNativeTradeGoldPointPercent>
 			<BuildingPoints/>
-			<YieldPoints/>
-			<iProductionConversionPoints>3</iProductionConversionPoints>
-		</FatherPointInfo>
-		<FatherPointInfo>
-			<Type>FATHER_POINT_RELIGION</Type>
-			<Description>TXT_KEY_FATHER_POINT_RELIGION</Description>
-			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,1,6</Button>
-			<iFontButtonIndex>16</iFontButtonIndex>
-			<iLandTilePoints>0</iLandTilePoints>
-			<iWaterTilePoints>0</iWaterTilePoints>
-			<iMeetNativePoints>0</iMeetNativePoints>
-			<iScoutVillagePoints>0</iScoutVillagePoints>
-			<iGoodyPoints>0</iGoodyPoints>
-			<iExperiencePoints>0</iExperiencePoints>
-			<iConquerCityPoints>0</iConquerCityPoints>
-			<iRazeCityPoints>0</iRazeCityPoints>
-			<iMissionaryPoints>250</iMissionaryPoints>
-			<iEuropeTradeGoldPointPercent>0</iEuropeTradeGoldPointPercent>
-			<iNativeTradeGoldPointPercent>0</iNativeTradeGoldPointPercent>
-			<BuildingPoints/>
 			<YieldPoints>
 				<YieldPoint>
 					<YieldType>YIELD_CROSSES</YieldType>
-					<iPoints>2</iPoints>
+					<iPoints>3</iPoints>
 				</YieldPoint>
 			</YieldPoints>
 			<iProductionConversionPoints>3</iProductionConversionPoints>
 		</FatherPointInfo>
 		<FatherPointInfo>
-			<Type>FATHER_POINT_TRADE</Type>
-			<Description>TXT_KEY_FATHER_POINT_TRADE</Description>
+			<Type>FATHER_POINT_SCIENTIFIC</Type>
+			<Description>Scientific Prestige</Description>
+			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,1,6</Button>
+			<iFontButtonIndex>16</iFontButtonIndex>
+			<iLandTilePoints>0</iLandTilePoints>
+			<iWaterTilePoints>0</iWaterTilePoints>
+			<iMeetNativePoints>25</iMeetNativePoints>
+			<iScoutVillagePoints>0</iScoutVillagePoints>
+			<iGoodyPoints>0</iGoodyPoints>
+			<iExperiencePoints>0</iExperiencePoints>
+			<iConquerCityPoints>0</iConquerCityPoints>
+			<iRazeCityPoints>0</iRazeCityPoints>
+			<iMissionaryPoints>50</iMissionaryPoints>
+			<iEuropeTradeGoldPointPercent>0</iEuropeTradeGoldPointPercent>
+			<iNativeTradeGoldPointPercent>0</iNativeTradeGoldPointPercent>
+			<BuildingPoints/>
+			<YieldPoints>
+				<YieldPoint>
+					<YieldType>YIELD_IDEAS</YieldType>
+					<iPoints>5</iPoints>
+				</YieldPoint>
+			</YieldPoints>
+			<iProductionConversionPoints>3</iProductionConversionPoints>
+		</FatherPointInfo>
+		<FatherPointInfo>
+			<Type>FATHER_POINT_CORPORATE</Type>
+			<Description>Corporate Prestige</Description>
 			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,4,6</Button>
 			<iFontButtonIndex>15</iFontButtonIndex>
 			<iLandTilePoints>0</iLandTilePoints>
@@ -65,15 +70,35 @@
 			<iConquerCityPoints>0</iConquerCityPoints>
 			<iRazeCityPoints>0</iRazeCityPoints>
 			<iMissionaryPoints>0</iMissionaryPoints>
+			<iEuropeTradeGoldPointPercent>4</iEuropeTradeGoldPointPercent>
+			<iNativeTradeGoldPointPercent>2</iNativeTradeGoldPointPercent>
+			<BuildingPoints/>
+			<YieldPoints/>
+			<iProductionConversionPoints>3</iProductionConversionPoints>
+		</FatherPointInfo>
+		<FatherPointInfo>
+			<Type>FATHER_POINT_CRIMINAL</Type>
+			<Description>Criminal Prestige</Description>
+			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,4,6</Button>
+			<iFontButtonIndex>15</iFontButtonIndex>
+			<iLandTilePoints>0</iLandTilePoints>
+			<iWaterTilePoints>0</iWaterTilePoints>
+			<iMeetNativePoints>0</iMeetNativePoints>
+			<iScoutVillagePoints>0</iScoutVillagePoints>
+			<iGoodyPoints>0</iGoodyPoints>
+			<iExperiencePoints>0</iExperiencePoints>
+			<iConquerCityPoints>0</iConquerCityPoints>
+			<iRazeCityPoints>400</iRazeCityPoints>
+			<iMissionaryPoints>0</iMissionaryPoints>
 			<iEuropeTradeGoldPointPercent>0</iEuropeTradeGoldPointPercent>
-			<iNativeTradeGoldPointPercent>0</iNativeTradeGoldPointPercent>
+			<iNativeTradeGoldPointPercent>2</iNativeTradeGoldPointPercent>
 			<BuildingPoints/>
 			<YieldPoints/>
 			<iProductionConversionPoints>3</iProductionConversionPoints>
 		</FatherPointInfo>
 		<FatherPointInfo>
 			<Type>FATHER_POINT_MILITARY</Type>
-			<Description>TXT_KEY_FATHER_POINT_MILITARY</Description>
+			<Description>Military Prestige</Description>
 			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,3,6</Button>
 			<iFontButtonIndex>18</iFontButtonIndex>
 			<iLandTilePoints>0</iLandTilePoints>
@@ -93,7 +118,7 @@
 		</FatherPointInfo>
 		<FatherPointInfo>
 			<Type>FATHER_POINT_POLITICAL</Type>
-			<Description>TXT_KEY_FATHER_POINT_POLITICAL</Description>
+			<Description>Political Prestige</Description>
 			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,2,6</Button>
 			<iFontButtonIndex>17</iFontButtonIndex>
 			<iLandTilePoints>0</iLandTilePoints>
@@ -118,7 +143,7 @@
 		</FatherPointInfo>
 		<FatherPointInfo>
 			<Type>FATHER_POINT_REAL_TRADE</Type>
-			<Description>TXT_KEY_FATHER_POINT_REAL_TRADE</Description>
+			<Description>Progenitor Secrets</Description>
 			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,6,6</Button>
 			<iFontButtonIndex>17</iFontButtonIndex>
 			<iLandTilePoints>0</iLandTilePoints>
@@ -133,12 +158,7 @@
 			<iEuropeTradeGoldPointPercent>0</iEuropeTradeGoldPointPercent>
 			<iNativeTradeGoldPointPercent>0</iNativeTradeGoldPointPercent>
 			<BuildingPoints/>
-			<YieldPoints>
-				<YieldPoint>
-					<YieldType>YIELD_BELLS</YieldType>
-					<iPoints>5</iPoints>
-				</YieldPoint>
-			</YieldPoints>
+			<YieldPoints/>
 			<iProductionConversionPoints>3</iProductionConversionPoints>
 		</FatherPointInfo>
 	</FatherPointInfos>

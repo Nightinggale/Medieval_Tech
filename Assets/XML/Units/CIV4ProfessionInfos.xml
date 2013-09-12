@@ -40,7 +40,77 @@
     </ProfessionInfo>
     <ProfessionInfo>
       <Type>PROFESSION_HUNTSMAN</Type>
-      <Description>Huntsman</Description>
+      <Description>Hunter</Description>
+      <Civilopedia>TXT_KEY_UNIT_COLONIST_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_PROFESSION_COLONIST_STRATEGY</Strategy>
+      <Help/>
+      <Combat>UNITCOMBAT_MELEE</Combat>
+      <DefaultUnitAI>UNITAI_HUNTSMAN</DefaultUnitAI>
+      <SpecialBuilding>NONE</SpecialBuilding>
+      <bWorkPlot>0</bWorkPlot>
+      <bCitizen>0</bCitizen>
+      <bWater>0</bWater>
+      <bScout>0</bScout>
+      <bCityDefender>1</bCityDefender>
+      <bCanFound>1</bCanFound>
+      <bUnarmed>1</bUnarmed>
+      <bNoDefensiveBonus>0</bNoDefensiveBonus>
+      <iCombatChange>1</iCombatChange>
+      <iMovesChange>0</iMovesChange>
+      <iWorkRate>0</iWorkRate>
+      <iMissionaryRate>0</iMissionaryRate>
+      <iPower>0</iPower>
+      <iAsset>0</iAsset>
+      <YieldEquipedNums/>
+      <FreePromotions/>
+      <YieldsProduced>
+        <YieldType>NONE</YieldType>
+      </YieldsProduced>
+      <YieldsConsumed>
+        <YieldType>NONE</YieldType>
+      </YieldsConsumed>
+      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,7,9</Button>
+    </ProfessionInfo>
+    <ProfessionInfo>
+      <Type>PROFESSION_PEDLER</Type>
+      <Description>Smuggler</Description>
+      <Civilopedia>TXT_KEY_PROFESSION_SOLDIER_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_PROFESSION_SOLDIER_STRATEGY</Strategy>
+      <Help/>
+      <bNativesInvalid>0</bNativesInvalid>
+      <bEuropeInvalid>1</bEuropeInvalid>
+      <bColonialInvalid>1</bColonialInvalid>
+      <Combat>UNITCOMBAT_MELEE</Combat>
+      <DefaultUnitAI>UNITAI_TRADER</DefaultUnitAI>
+      <SpecialBuilding>NONE</SpecialBuilding>
+      <bWorkPlot>0</bWorkPlot>
+      <bCitizen>0</bCitizen>
+      <bWater>0</bWater>
+      <bScout>0</bScout>
+      <bCityDefender>0</bCityDefender>
+      <bCanFound>0</bCanFound>
+      <bUnarmed>0</bUnarmed>
+      <bNoDefensiveBonus>0</bNoDefensiveBonus>
+      <iCombatChange>1</iCombatChange>
+      <iMovesChange>1</iMovesChange>
+      <iWorkRate>0</iWorkRate>
+      <iMissionaryRate>0</iMissionaryRate>
+      <iPower>100</iPower>
+      <iAsset>0</iAsset>
+      <CombatGearTypes/>
+      <YieldEquipedNums/>
+      <FreePromotions/>
+      <YieldsProduced>
+        <YieldType>NONE</YieldType>
+      </YieldsProduced>
+      <YieldsConsumed>
+        <YieldType>NONE</YieldType>
+      </YieldsConsumed>
+      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,2,10</Button>
+    </ProfessionInfo>
+    <ProfessionInfo>
+      <Type>PROFESSION_INVENTOR</Type>
+      <Description>Applied Research</Description>
       <Civilopedia>TXT_KEY_UNIT_COLONIST_PEDIA</Civilopedia>
       <Strategy>TXT_KEY_PROFESSION_COLONIST_STRATEGY</Strategy>
       <Help/>
@@ -73,7 +143,7 @@
     </ProfessionInfo>
     <ProfessionInfo>
       <Type>PROFESSION_MARAUDER</Type>
-      <Description>Marauder</Description>
+      <Description>Anarchist</Description>
       <Civilopedia>TXT_KEY_UNIT_COLONIST_PEDIA</Civilopedia>
       <Strategy>TXT_KEY_PROFESSION_COLONIST_STRATEGY</Strategy>
       <Help/>
@@ -103,85 +173,10 @@
         <YieldType>NONE</YieldType>
       </YieldsConsumed>
       <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,7,9</Button>
-    </ProfessionInfo>
-    <ProfessionInfo>
-      <Type>PROFESSION_INVENTOR</Type>
-      <Description>Inventor</Description>
-      <Civilopedia>TXT_KEY_UNIT_COLONIST_PEDIA</Civilopedia>
-      <Strategy>TXT_KEY_PROFESSION_COLONIST_STRATEGY</Strategy>
-      <Help/>
-      <Combat>UNITCOMBAT_MELEE</Combat>
-      <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-      <SpecialBuilding>NONE</SpecialBuilding>
-      <bWorkPlot>0</bWorkPlot>
-      <bCitizen>0</bCitizen>
-      <bWater>0</bWater>
-      <bScout>0</bScout>
-      <bCityDefender>1</bCityDefender>
-      <bCanFound>1</bCanFound>
-      <bUnarmed>1</bUnarmed>
-      <bNoDefensiveBonus>0</bNoDefensiveBonus>
-      <iCombatChange>1</iCombatChange>
-      <iMovesChange>0</iMovesChange>
-      <iWorkRate>0</iWorkRate>
-      <iMissionaryRate>0</iMissionaryRate>
-      <iPower>0</iPower>
-      <iAsset>0</iAsset>
-      <YieldEquipedNums/>
-      <FreePromotions/>
-      <YieldsProduced>
-        <YieldType>NONE</YieldType>
-      </YieldsProduced>
-      <YieldsConsumed>
-        <YieldType>NONE</YieldType>
-      </YieldsConsumed>
-      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,7,9</Button>
-    </ProfessionInfo>
-    <ProfessionInfo>
-      <Type>PROFESSION_PEDLER</Type>
-      <Description>Pedler</Description>
-      <Civilopedia>TXT_KEY_PROFESSION_SOLDIER_PEDIA</Civilopedia>
-      <Strategy>TXT_KEY_PROFESSION_SOLDIER_STRATEGY</Strategy>
-      <Help/>
-      <bNativesInvalid>0</bNativesInvalid>
-      <bEuropeInvalid>1</bEuropeInvalid>
-      <bColonialInvalid>1</bColonialInvalid>
-      <Combat>UNITCOMBAT_MELEE</Combat>
-      <DefaultUnitAI>UNITAI_MARAUDER</DefaultUnitAI>
-      <SpecialBuilding>NONE</SpecialBuilding>
-      <bWorkPlot>0</bWorkPlot>
-      <bCitizen>0</bCitizen>
-      <bWater>0</bWater>
-      <bScout>0</bScout>
-      <bCityDefender>0</bCityDefender>
-      <bCanFound>0</bCanFound>
-      <bUnarmed>0</bUnarmed>
-      <bNoDefensiveBonus>0</bNoDefensiveBonus>
-      <iCombatChange>1</iCombatChange>
-      <iMovesChange>1</iMovesChange>
-      <iWorkRate>0</iWorkRate>
-      <iMissionaryRate>0</iMissionaryRate>
-      <iPower>100</iPower>
-      <iAsset>0</iAsset>
-      <CombatGearTypes>
-        <CombatGearType>
-          <GearType>UNITARMOR_LEATHER</GearType>
-          <iAmount>1</iAmount>
-        </CombatGearType>
-      </CombatGearTypes>
-      <YieldEquipedNums/>
-      <FreePromotions/>
-      <YieldsProduced>
-        <YieldType>NONE</YieldType>
-      </YieldsProduced>
-      <YieldsConsumed>
-        <YieldType>NONE</YieldType>
-      </YieldsConsumed>
-      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,2,10</Button>
     </ProfessionInfo>
     <ProfessionInfo>
       <Type>PROFESSION_MARAUDER_SEA</Type>
-      <Description>Raiding Marauder</Description>
+      <Description>Space Pirate</Description>
       <Civilopedia>TXT_KEY_PROFESSION_SOLDIER_PEDIA</Civilopedia>
       <Strategy>TXT_KEY_PROFESSION_SOLDIER_STRATEGY</Strategy>
       <Help/>

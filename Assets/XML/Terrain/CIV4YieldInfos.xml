@@ -685,48 +685,7 @@
         </TradeScreenType>
       </TradeScreenTypes>
     </YieldInfo>
-		<YieldInfo>
-			<Type>YIELD_OPIATES</Type>
-			<Description>Opiates</Description>
-			<Civilopedia>TXT_KEY_BONUS_WINE_PEDIA</Civilopedia>
-			<bCargo>1</bCargo>
-			<iBuyPriceLow>8</iBuyPriceLow>
-			<iBuyPriceHigh>12</iBuyPriceHigh>
-			<iSellPriceDifference>1</iSellPriceDifference>
-			<iPriceChangeThreshold>800</iPriceChangeThreshold>
-			<iPriceCorrectionPercent>2</iPriceCorrectionPercent>
-			<iNativeBuyPrice>9</iNativeBuyPrice>
-			<iNativeSellPrice>-1</iNativeSellPrice>
-			<iNativeConsumptionPercent>25</iNativeConsumptionPercent>
-			<iNativeHappy>20</iNativeHappy>
-			<iHillsChange>0</iHillsChange>
-			<iPeakChange>0</iPeakChange>
-			<iLakeChange>0</iLakeChange>
-			<iCityChange>0</iCityChange>
-			<iMinCity>0</iMinCity>
-			<iAIWeightPercent>100</iAIWeightPercent>
-			<iAIBaseValue>0</iAIBaseValue>
-			<iNativeBaseValue>0</iNativeBaseValue>
-			<iPower>0</iPower>
-			<iAsset>1</iAsset>
-			<ColorType>COLOR_YIELD_FOOD</ColorType>
-			<UnitClass>UNITCLASS_WINE</UnitClass>
-			<iTextureIndex>-1</iTextureIndex>
-			<iWaterTextureIndex>-1</iWaterTextureIndex>
-      <Icon>Art/Buttons/Resources/Wine_Icon.dds</Icon>
-      <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,1,1</HighlightIcon>
-      <Button>Art/Buttons/Resources/Wine.dds</Button>
-      <TradeScreenTypes>
-        <TradeScreenType>
-          <TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
-          <iPricePercent>175</iPricePercent>
-        </TradeScreenType>
-        <TradeScreenType>
-          <TradeScreen>TRADE_SCREEN_SILK_ROAD</TradeScreen>
-          <iPricePercent>225</iPricePercent>
-        </TradeScreenType>
-      </TradeScreenTypes>
-		</YieldInfo>
+		
 <YieldInfo>
 			<Type>YIELD_DATACORES</Type>
 			<Description>Datacores</Description>
@@ -814,6 +773,48 @@
 <YieldInfo>
 			<Type>YIELD_ALIEN_SPECIMENS</Type>
 			<Description>Alien Specimens</Description>
+			<Civilopedia>TXT_KEY_BONUS_WINE_PEDIA</Civilopedia>
+			<bCargo>1</bCargo>
+			<iBuyPriceLow>8</iBuyPriceLow>
+			<iBuyPriceHigh>12</iBuyPriceHigh>
+			<iSellPriceDifference>1</iSellPriceDifference>
+			<iPriceChangeThreshold>800</iPriceChangeThreshold>
+			<iPriceCorrectionPercent>2</iPriceCorrectionPercent>
+			<iNativeBuyPrice>9</iNativeBuyPrice>
+			<iNativeSellPrice>-1</iNativeSellPrice>
+			<iNativeConsumptionPercent>25</iNativeConsumptionPercent>
+			<iNativeHappy>20</iNativeHappy>
+			<iHillsChange>0</iHillsChange>
+			<iPeakChange>0</iPeakChange>
+			<iLakeChange>0</iLakeChange>
+			<iCityChange>0</iCityChange>
+			<iMinCity>0</iMinCity>
+			<iAIWeightPercent>100</iAIWeightPercent>
+			<iAIBaseValue>0</iAIBaseValue>
+			<iNativeBaseValue>0</iNativeBaseValue>
+			<iPower>0</iPower>
+			<iAsset>1</iAsset>
+			<ColorType>COLOR_YIELD_FOOD</ColorType>
+			<UnitClass>UNITCLASS_WINE</UnitClass>
+			<iTextureIndex>-1</iTextureIndex>
+			<iWaterTextureIndex>-1</iWaterTextureIndex>
+      <Icon>Art/Buttons/Resources/Wine_Icon.dds</Icon>
+      <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,1,1</HighlightIcon>
+      <Button>Art/Buttons/Resources/Wine.dds</Button>
+      <TradeScreenTypes>
+        <TradeScreenType>
+          <TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
+          <iPricePercent>175</iPricePercent>
+        </TradeScreenType>
+        <TradeScreenType>
+          <TradeScreen>TRADE_SCREEN_SILK_ROAD</TradeScreen>
+          <iPricePercent>225</iPricePercent>
+        </TradeScreenType>
+      </TradeScreenTypes>
+		</YieldInfo>
+<YieldInfo>
+			<Type>YIELD_OPIATES</Type>
+			<Description>Opiates</Description>
 			<Civilopedia>TXT_KEY_BONUS_WINE_PEDIA</Civilopedia>
 			<bCargo>1</bCargo>
 			<iBuyPriceLow>8</iBuyPriceLow>
@@ -1101,7 +1102,7 @@
 		</YieldInfo>
 		<YieldInfo>
 			<Type>YIELD_WEAPONS</Type>
-			<Description>Firearms</Description>
+			<Description>Munitions</Description>
 			<Civilopedia>????</Civilopedia>
 			<bCargo>1</bCargo>
 			<iBuyPriceLow>3</iBuyPriceLow>

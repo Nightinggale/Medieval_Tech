@@ -35,7 +35,7 @@
       <FreePromotionUnitCombats/>
       <YieldModifiers>
         <YieldModifier>
-          <YieldType>YIELD_IDEAS</YieldType>
+          <YieldType>YIELD_RESEARCH</YieldType>
           <iYield>-50</iYield>
         </YieldModifier>
       </YieldModifiers>

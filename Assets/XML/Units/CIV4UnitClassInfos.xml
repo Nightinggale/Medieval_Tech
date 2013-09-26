@@ -5,221 +5,531 @@
 <!-- -->
 <!-- UnitClass Schema -->
 <Civ4UnitClassInfos xmlns="x-schema:CIV4UnitSchema.xml">
-	<UnitClassInfos>
-    <UnitClassInfo>
-      <Type>UNITCLASS_RELIC</Type>
-      <Description>Relic</Description>
-      <DefaultUnit>UNIT_RELIC</DefaultUnit>
-    </UnitClassInfo>
-    <UnitClassInfo>
-      <Type>UNITCLASS_NOBLEMAN</Type>
-      <Description>Nobleman</Description>
-      <DefaultUnit>UNIT_NOBLEMAN</DefaultUnit>
-    </UnitClassInfo>
-    <UnitClassInfo>
-      <Type>UNITCLASS_AI_PEDLER</Type>
-      <Description>AI_Pedler</Description>
-      <DefaultUnit>UNIT_AI_PEDLER</DefaultUnit>
-    </UnitClassInfo>
-    <UnitClassInfo>
-      <Type>UNITCLASS_PAGE</Type>
-      <Description>Page</Description>
-      <DefaultUnit>UNIT_PAGE</DefaultUnit>
-    </UnitClassInfo>
-    <UnitClassInfo>
-      <Type>UNITCLASS_SLAVE</Type>
-      <Description>Supply Train</Description>
-      <DefaultUnit>UNIT_SLAVE</DefaultUnit>
-    </UnitClassInfo>
-    <UnitClassInfo>
-      <Type>UNITCLASS_PILGRAM</Type>
-      <Description>Pilgram</Description>
-      <DefaultUnit>UNIT_PILGRAM</DefaultUnit>
-    </UnitClassInfo>
-    <UnitClassInfo>
-      <Type>UNITCLASS_MARAUDER</Type>
-      <Description>Marauder</Description>
-      <DefaultUnit>UNIT_MARAUDER</DefaultUnit>
-    </UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_COLONIST</Type>
-			<Description>TXT_KEY_UNIT_COLONIST</Description>
-			<DefaultUnit>UNIT_COLONIST</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_INDENTURED_SERVANT</Type>
-			<Description>TXT_KEY_UNIT_INDENTURED_SERVANT</Description>
-			<DefaultUnit>UNIT_INDENTURED_SERVANT</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_CRIMINAL</Type>
-			<Description>TXT_KEY_UNIT_CRIMINAL</Description>
-			<DefaultUnit>UNIT_CRIMINAL</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_INVENTOR</Type>
-			<Description>TXT_KEY_UNIT_INVENTOR</Description>
-			<DefaultUnit>UNIT_INVENTOR</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_CONVERTED_NATIVE</Type>
-			<Description>Converted Barbarian</Description>
-			<DefaultUnit>UNIT_CONVERTED_NATIVE</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_FOOD</Type>
-			<Description>TXT_KEY_UNIT_FOOD</Description>
-			<DefaultUnit>UNIT_FOOD</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_LUMBER</Type>
-			<Description>TXT_KEY_UNIT_LUMBER</Description>
-			<DefaultUnit>UNIT_LUMBER</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_SILVER</Type>
-			<Description>TXT_KEY_UNIT_SILVER</Description>
-			<DefaultUnit>UNIT_SILVER</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_COTTON</Type>
-			<Description>TXT_KEY_UNIT_COTTON</Description>
-			<DefaultUnit>UNIT_COTTON</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_FUR</Type>
-			<Description>Hides</Description>
-			<DefaultUnit>UNIT_FUR</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_SUGAR</Type>
-			<Description>Salt</Description>
-			<DefaultUnit>UNIT_SUGAR</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_ORE</Type>
-			<Description>TXT_KEY_UNIT_ORE</Description>
-			<DefaultUnit>UNIT_ORE</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_CLOTH</Type>
-			<Description>TXT_KEY_UNIT_CLOTH</Description>
-			<DefaultUnit>UNIT_CLOTH</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_COATS</Type>
-			<Description>TXT_KEY_UNIT_COATS</Description>
-			<DefaultUnit>UNIT_COATS</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_RUM</Type>
-			<Description>Ale</Description>
-			<DefaultUnit>UNIT_RUM</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_TOOLS</Type>
-			<Description>TXT_KEY_UNIT_TOOLS</Description>
-			<DefaultUnit>UNIT_TOOLS</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_MUSKETS</Type>
-			<Description>Weapons</Description>
-			<DefaultUnit>UNIT_MUSKETS</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_HORSES</Type>
-			<Description>TXT_KEY_UNIT_HORSES</Description>
-			<DefaultUnit>UNIT_HORSES</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_TRADE_GOODS</Type>
-			<Description>TXT_KEY_UNIT_TRADE_GOODS</Description>
-			<DefaultUnit>UNIT_TRADE_GOODS</DefaultUnit>
-		</UnitClassInfo>
-    <UnitClassInfo>
-      <Type>UNITCLASS_CATTLE</Type>
-      <Description>Cattle</Description>
-      <DefaultUnit>UNIT_CATTLE</DefaultUnit>
-    </UnitClassInfo>
-    <UnitClassInfo>
-      <Type>UNITCLASS_SHEEP</Type>
-      <Description>Sheep</Description>
-      <DefaultUnit>UNIT_SHEEP</DefaultUnit>
-    </UnitClassInfo>
-    <UnitClassInfo>
-      <Type>UNITCLASS_GRAIN</Type>
-      <Description>Luxury Food</Description>
-      <DefaultUnit>UNIT_GRAIN</DefaultUnit>
-    </UnitClassInfo>
-    <UnitClassInfo>
-      <Type>UNITCLASS_WOOL</Type>
-      <Description>Wool</Description>
-      <DefaultUnit>UNIT_WOOL</DefaultUnit>
-    </UnitClassInfo>
-    <UnitClassInfo>
-      <Type>UNITCLASS_STONE</Type>
-      <Description>Stone</Description>
-      <DefaultUnit>UNIT_STONE</DefaultUnit>
-    </UnitClassInfo>
-    <UnitClassInfo>
-      <Type>UNITCLASS_GOLD</Type>
-      <Description>Gold</Description>
-      <DefaultUnit>UNIT_GOLD</DefaultUnit>
-    </UnitClassInfo>
-    <UnitClassInfo>
-      <Type>UNITCLASS_SPICES</Type>
-      <Description>Spices</Description>
-      <DefaultUnit>UNIT_SPICES</DefaultUnit>
-    </UnitClassInfo>
-    <UnitClassInfo>
-      <Type>UNITCLASS_BARLEY</Type>
-      <Description>Barley</Description>
-      <DefaultUnit>UNIT_BARLEY</DefaultUnit>
-    </UnitClassInfo>
-    <UnitClassInfo>
-      <Type>UNITCLASS_GRAPES</Type>
-      <Description>Grapes</Description>
-      <DefaultUnit>UNIT_GRAPES</DefaultUnit>
-    </UnitClassInfo>
-    <UnitClassInfo>
-      <Type>UNITCLASS_WINE</Type>
-      <Description>Wine</Description>
-      <DefaultUnit>UNIT_WINE</DefaultUnit>
-    </UnitClassInfo>
-    <UnitClassInfo>
-      <Type>UNITCLASS_LEATHER</Type>
-      <Description>Leather</Description>
-      <DefaultUnit>UNIT_LEATHER</DefaultUnit>
-    </UnitClassInfo>
-    <UnitClassInfo>
-      <Type>UNITCLASS_LEATHER_ARMOR</Type>
-      <Description>Leather Armor</Description>
-      <DefaultUnit>UNIT_LEATHER_ARMOR</DefaultUnit>
-    </UnitClassInfo>
-    <UnitClassInfo>
-      <Type>UNITCLASS_SCALE_ARMOR</Type>
-      <Description>Scale Armor</Description>
-      <DefaultUnit>UNIT_SCALE_ARMOR</DefaultUnit>
-    </UnitClassInfo>
-    <UnitClassInfo>
-      <Type>UNITCLASS_MAIL_ARMOR</Type>
-      <Description>Mail Armor</Description>
-      <DefaultUnit>UNIT_MAIL_ARMOR</DefaultUnit>
-    </UnitClassInfo>
-    <UnitClassInfo>
-      <Type>UNITCLASS_PLATE_ARMOR</Type>
-      <Description>Plate Armor</Description>
-      <DefaultUnit>UNIT_PLATE_ARMOR</DefaultUnit>
-    </UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_TREASURE</Type>
-			<Description>TXT_KEY_UNIT_TREASURE</Description>
-			<DefaultUnit>UNIT_TREASURE</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_GREAT_GENERAL</Type>
-			<Description>TXT_KEY_UNIT_GREAT_GENERAL</Description>
-			<DefaultUnit>UNIT_GREAT_GENERAL</DefaultUnit>
-		</UnitClassInfo>
-	</UnitClassInfos>
+<UnitClassInfos>
+<UnitClassInfo>
+	<Type>UNITCLASS_EXPERT_AGRONOMIST</Type>
+	<Description>Expert Agronomist:Expert Agronomists</Description>
+	<DefaultUnit>UNIT_EXPERT_AGRONOMIST</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_EXPERT_FORESTER</Type>
+	<Description>Expert Forester:Expert Foresters</Description>
+	<DefaultUnit>UNIT_EXPERT_FORESTER</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_EXPERT_MINER</Type>
+	<Description>Expert Miner:Expert Miners</Description>
+	<DefaultUnit>UNIT_EXPERT_MINER</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_EXPERT_GEOLOGIST</Type>
+	<Description>Expert Geologist:Expert Geologists</Description>
+	<DefaultUnit>UNIT_EXPERT_GEOLOGIST</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_EXPERT_LAB_TECHNICIAN</Type>
+	<Description>Expert Lab Technician:Expert Lab Technicians</Description>
+	<DefaultUnit>UNIT_EXPERT_LAB_TECHNICIAN</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_INTREPID_ARCHAEOLOGIST</Type>
+	<Description>Intrepid Archaeologist:Intrepid Archaeologists</Description>
+	<DefaultUnit>UNIT_INTREPID_ARCHAEOLOGIST</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_EXPERT_XENOBOTANIST</Type>
+	<Description>Expert Xenobotanist:Expert Xenobotanists</Description>
+	<DefaultUnit>UNIT_EXPERT_XENOBOTANIST</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_EXPERT_DRILLER</Type>
+	<Description>Expert Driller:Expert Drillers</Description>
+	<DefaultUnit>UNIT_EXPERT_DRILLER</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_MASTER_MACHINIST</Type>
+	<Description>Master Machinist:Master Machinists</Description>
+	<DefaultUnit>UNIT_MASTER_MACHINIST</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_MECHANICAL_ENGINEER</Type>
+	<Description>Mechanical Engineer:Mechanical Engineers</Description>
+	<DefaultUnit>UNIT_MECHANICAL_ENGINEER</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_INFAMOUS_ARMS_DEALER</Type>
+	<Description>Infamous Arms Dealer:Infamous Arms Dealers</Description>
+	<DefaultUnit>UNIT_INFAMOUS_ARMS_DEALER</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_MASTER_METALLURGIST</Type>
+	<Description>Master Metallurgist:Master Metallurgists</Description>
+	<DefaultUnit>UNIT_MASTER_METALLURGIST</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_BRILLIANT_PHYSICIST</Type>
+	<Description>Brilliant Physicist:Brilliant Physicists</Description>
+	<DefaultUnit>UNIT_BRILLIANT_PHYSICIST</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_BRILLIANT_GENETICIST</Type>
+	<Description>Brilliant Geneticist:Brilliant Geneticists</Description>
+	<DefaultUnit>UNIT_BRILLIANT_GENETICIST</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_BRILLIANT_THEORIST</Type>
+	<Description>Brilliant Theorist:Brilliant Theorists</Description>
+	<DefaultUnit>UNIT_BRILLIANT_THEORIST</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_INFAMOUS_DRUGLORD</Type>
+	<Description>Infamous Druglord:Infamous Druglords</Description>
+	<DefaultUnit>UNIT_INFAMOUS_DRUGLORD</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_CHEMICAL_ENGINEER</Type>
+	<Description>Chemical Engineer:Chemical Engineers</Description>
+	<DefaultUnit>UNIT_CHEMICAL_ENGINEER</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_ELECTRICAL_ENGINEER</Type>
+	<Description>Electrical Engineer:Electrical Engineers</Description>
+	<DefaultUnit>UNIT_ELECTRICAL_ENGINEER</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_BRILLIANT_PHYSICIAN</Type>
+	<Description>Brilliant Physician:Brilliant Physicians</Description>
+	<DefaultUnit>UNIT_BRILLIANT_PHYSICIAN</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_INFAMOUS_SMUGGLER</Type>
+	<Description>Infamous Smuggler:Infamous Smugglers</Description>
+	<DefaultUnit>UNIT_INFAMOUS_SMUGGLER</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_CIVIL_ENGINEER</Type>
+	<Description>Civil Engineer:Civil Engineers</Description>
+	<DefaultUnit>UNIT_CIVIL_ENGINEER</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_FASCINATING_CELEBRITY</Type>
+	<Description>Fascinating Celebrity:Fascinating Celebritys</Description>
+	<DefaultUnit>UNIT_FASCINATING_CELEBRITY</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_ARTFUL_POLITICIAN</Type>
+	<Description>Artful Politician:Artful Politicians</Description>
+	<DefaultUnit>UNIT_ARTFUL_POLITICIAN</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_CONVICT</Type>
+	<Description>Convict:Convicts</Description>
+	<DefaultUnit>UNIT_CONVICT</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_PROLETARIAN</Type>
+	<Description>Proletarian:Proletarians</Description>
+	<DefaultUnit>UNIT_PROLETARIAN</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_UFO_CULTIST</Type>
+	<Description>UFO Cultist:UFO Cultists</Description>
+	<DefaultUnit>UNIT_UFO_CULTIST</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_ADDICT</Type>
+	<Description>Addict:Addicts</Description>
+	<DefaultUnit>UNIT_ADDICT</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_ANDROID</Type>
+	<Description>Android:Androids</Description>
+	<DefaultUnit>UNIT_ANDROID</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_COLONIST</Type>
+	<Description>Colonist:Colonists</Description>
+	<DefaultUnit>UNIT_COLONIST</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_EMINENT_ANTHROPOLOGIST</Type>
+	<Description>Eminent Anthropologist:Eminent Anthropologists</Description>
+	<DefaultUnit>UNIT_EMINENT_ANTHROPOLOGIST</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_HARDY_LABORER</Type>
+	<Description>Hardy Laborer:Hardy Laborers</Description>
+	<DefaultUnit>UNIT_HARDY_LABORER</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_INTREPID_EXPLORER</Type>
+	<Description>Intrepid Explorer:Intrepid Explorers</Description>
+	<DefaultUnit>UNIT_INTREPID_EXPLORER</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_VETERAN_SOLDIER</Type>
+	<Description>Veteran Soldier:Veteran Soldiers</Description>
+	<DefaultUnit>UNIT_VETERAN_SOLDIER</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_NUTRIENTS</Type>
+	<Description>Nutrients</Description>
+	<DefaultUnit>UNIT_NUTRIENTS</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_BIOPOLYMERS</Type>
+	<Description>Biopolymers</Description>
+	<DefaultUnit>UNIT_BIOPOLYMERS</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_SILICATES</Type>
+	<Description>Silicates</Description>
+	<DefaultUnit>UNIT_SILICATES</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_BASE_METALS</Type>
+	<Description>Base Metals</Description>
+	<DefaultUnit>UNIT_BASE_METALS</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_ACTINIDES</Type>
+	<Description>Actinides</Description>
+	<DefaultUnit>UNIT_ACTINIDES</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_ISOTOPES</Type>
+	<Description>Isotopes</Description>
+	<DefaultUnit>UNIT_ISOTOPES</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_RARE_EARTHS</Type>
+	<Description>Rare Earths</Description>
+	<DefaultUnit>UNIT_RARE_EARTHS</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_CRYSTALLOIDS</Type>
+	<Description>Crystalloids</Description>
+	<DefaultUnit>UNIT_CRYSTALLOIDS</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_NUCLEIC_ACIDS</Type>
+	<Description>Nucleic Acids</Description>
+	<DefaultUnit>UNIT_NUCLEIC_ACIDS</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_AMINO_ACIDS</Type>
+	<Description>Amino Acids</Description>
+	<DefaultUnit>UNIT_AMINO_ACIDS</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_TISSUE_SAMPLES</Type>
+	<Description>Tissue Samples</Description>
+	<DefaultUnit>UNIT_TISSUE_SAMPLES</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_MICROBES</Type>
+	<Description>Microbes</Description>
+	<DefaultUnit>UNIT_MICROBES</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_DATACORES</Type>
+	<Description>Datacores</Description>
+	<DefaultUnit>UNIT_DATACORES</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_PROGENITOR_ARTIFACTS</Type>
+	<Description>Progenitor Artifacts</Description>
+	<DefaultUnit>UNIT_PROGENITOR_ARTIFACTS</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_ALIEN_SPECIMENS</Type>
+	<Description>Alien Specimens</Description>
+	<DefaultUnit>UNIT_ALIEN_SPECIMENS</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_PRECIOUS_METALS</Type>
+	<Description>Precious Metals</Description>
+	<DefaultUnit>UNIT_PRECIOUS_METALS</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_OPIATES</Type>
+	<Description>Opiates</Description>
+	<DefaultUnit>UNIT_OPIATES</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_XENOTOXINS</Type>
+	<Description>Xenotoxins</Description>
+	<DefaultUnit>UNIT_XENOTOXINS</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_BOTANICALS</Type>
+	<Description>Botanicals</Description>
+	<DefaultUnit>UNIT_BOTANICALS</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_HYDROCARBONS</Type>
+	<Description>Hydrocarbons</Description>
+	<DefaultUnit>UNIT_HYDROCARBONS</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_CLATHRATES</Type>
+	<Description>Clathrates</Description>
+	<DefaultUnit>UNIT_CLATHRATES</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_CORE_SAMPLES</Type>
+	<Description>Core Samples</Description>
+	<DefaultUnit>UNIT_CORE_SAMPLES</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_MACHINE_TOOLS</Type>
+	<Description>Machine Tools</Description>
+	<DefaultUnit>UNIT_MACHINE_TOOLS</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_ROBOTICS</Type>
+	<Description>Robotics</Description>
+	<DefaultUnit>UNIT_ROBOTICS</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_MUNITIONS</Type>
+	<Description>Munitions</Description>
+	<DefaultUnit>UNIT_MUNITIONS</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_PHOTONICS</Type>
+	<Description>Photonics</Description>
+	<DefaultUnit>UNIT_PHOTONICS</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_PLASTEEL</Type>
+	<Description>Plasteel</Description>
+	<DefaultUnit>UNIT_PLASTEEL</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_DURALLOY</Type>
+	<Description>Duralloy</Description>
+	<DefaultUnit>UNIT_DURALLOY</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_CRYSTALLOY</Type>
+	<Description>Crystalloy</Description>
+	<DefaultUnit>UNIT_CRYSTALLOY</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_NUCLEONICS</Type>
+	<Description>Nucleonics</Description>
+	<DefaultUnit>UNIT_NUCLEONICS</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_FUSION_CORES</Type>
+	<Description>Fusion Cores</Description>
+	<DefaultUnit>UNIT_FUSION_CORES</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_SEMICONDUCTORS</Type>
+	<Description>Semiconductors</Description>
+	<DefaultUnit>UNIT_SEMICONDUCTORS</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_PLASMIDS</Type>
+	<Description>Plasmids</Description>
+	<DefaultUnit>UNIT_PLASMIDS</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_ENZYMES</Type>
+	<Description>Enzymes</Description>
+	<DefaultUnit>UNIT_ENZYMES</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_STEM_CELLS</Type>
+	<Description>Stem Cells</Description>
+	<DefaultUnit>UNIT_STEM_CELLS</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_STATE_SECRETS</Type>
+	<Description>State Secrets</Description>
+	<DefaultUnit>UNIT_STATE_SECRETS</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_PROGENITOR_TECH</Type>
+	<Description>Progenitor Tech</Description>
+	<DefaultUnit>UNIT_PROGENITOR_TECH</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_ALIEN_RELICS</Type>
+	<Description>Alien Relics</Description>
+	<DefaultUnit>UNIT_ALIEN_RELICS</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_NARCOTICS</Type>
+	<Description>Narcotics</Description>
+	<DefaultUnit>UNIT_NARCOTICS</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_BIOWEAPONS</Type>
+	<Description>Bioweapons</Description>
+	<DefaultUnit>UNIT_BIOWEAPONS</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_PHARMACEUTICALS</Type>
+	<Description>Pharmaceuticals</Description>
+	<DefaultUnit>UNIT_PHARMACEUTICALS</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_PETROCHEMICALS</Type>
+	<Description>Petrochemicals</Description>
+	<DefaultUnit>UNIT_PETROCHEMICALS</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_COLLOIDS</Type>
+	<Description>Colloids</Description>
+	<DefaultUnit>UNIT_COLLOIDS</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_CATALYSTS</Type>
+	<Description>Catalysts</Description>
+	<DefaultUnit>UNIT_CATALYSTS</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_HARD_CURRENCY</Type>
+	<Description>Hard Currency</Description>
+	<DefaultUnit>UNIT_HARD_CURRENCY</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_EARTH_GOODS</Type>
+	<Description>Earth Goods</Description>
+	<DefaultUnit>UNIT_EARTH_GOODS</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_CONTRABAND</Type>
+	<Description>Contraband</Description>
+	<DefaultUnit>UNIT_CONTRABAND</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_EARTHLING_SPECIMENS</Type>
+	<Description>Earthling Specimens</Description>
+	<DefaultUnit>UNIT_EARTHLING_SPECIMENS</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_CONVOY</Type>
+	<Description>Convoy:Convoys</Description>
+	<DefaultUnit>UNIT_CONVOY</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_CORVETTE</Type>
+	<Description>Corvette:Corvettes</Description>
+	<DefaultUnit>UNIT_CORVETTE</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_FRIGATE</Type>
+	<Description>Frigate:Frigates</Description>
+	<DefaultUnit>UNIT_FRIGATE</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_GUNBOAT</Type>
+	<Description>Gunboat:Gunboats</Description>
+	<DefaultUnit>UNIT_GUNBOAT</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_DESTROYER</Type>
+	<Description>Destroyer:Destroyers</Description>
+	<DefaultUnit>UNIT_DESTROYER</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_CRUISER</Type>
+	<Description>Cruiser:Cruisers</Description>
+	<DefaultUnit>UNIT_CRUISER</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_BATTLESHIP</Type>
+	<Description>Battleship:Battleships</Description>
+	<DefaultUnit>UNIT_BATTLESHIP</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_DREADNOUGHT</Type>
+	<Description>Dreadnought:Dreadnoughts</Description>
+	<DefaultUnit>UNIT_DREADNOUGHT</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_PROBE</Type>
+	<Description>Probe:Probes</Description>
+	<DefaultUnit>UNIT_PROBE</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_DROPSHIP</Type>
+	<Description>Dropship:Dropships</Description>
+	<DefaultUnit>UNIT_DROPSHIP</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_FREIGHTER</Type>
+	<Description>Freighter:Freighters</Description>
+	<DefaultUnit>UNIT_FREIGHTER</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_HEAVY_FREIGHTER</Type>
+	<Description>Heavy Freighter:Heavy Freighters</Description>
+	<DefaultUnit>UNIT_HEAVY_FREIGHTER</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_MINING_VESSEL</Type>
+	<Description>Mining Vessel:Mining Vessels</Description>
+	<DefaultUnit>UNIT_MINING_VESSEL</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_SCIENCE_VESSEL</Type>
+	<Description>Science Vessel:Science Vessels</Description>
+	<DefaultUnit>UNIT_SCIENCE_VESSEL</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_COLONY_SHIP</Type>
+	<Description>Colony Ship:Colony Ships</Description>
+	<DefaultUnit>UNIT_COLONY_SHIP</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_TREASURE</Type>
+	<Description>Treasure:Treasures</Description>
+	<DefaultUnit>UNIT_TREASURE</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_RELIC</Type>
+	<Description>Relic:Relics</Description>
+	<DefaultUnit>UNIT_RELIC</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_COLONIAL_GARRISON</Type>
+	<Description>Colonial Garrison:Colonial Garrisons</Description>
+	<DefaultUnit>UNIT_COLONIAL_GARRISON</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_KILLBOTS</Type>
+	<Description>Killbots:Killbotses</Description>
+	<DefaultUnit>UNIT_KILLBOTS</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_PROGENITOR_AI</Type>
+	<Description>Progenitor AI:Progenitor AIs</Description>
+	<DefaultUnit>UNIT_PROGENITOR_AI</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_ARACHNID</Type>
+	<Description>Arachnid:Arachnids</Description>
+	<DefaultUnit>UNIT_ARACHNID</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_SCORPION</Type>
+	<Description>Scorpion:Scorpions</Description>
+	<DefaultUnit>UNIT_SCORPION</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_AMOEBA</Type>
+	<Description>Amoeba:Amoebas</Description>
+	<DefaultUnit>UNIT_AMOEBA</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_ENIGMA_VIRION</Type>
+	<Description>Enigma Virion:Enigma Virions</Description>
+	<DefaultUnit>UNIT_ENIGMA_VIRION</DefaultUnit>
+</UnitClassInfo>
+</UnitClassInfos>
 </Civ4UnitClassInfos>

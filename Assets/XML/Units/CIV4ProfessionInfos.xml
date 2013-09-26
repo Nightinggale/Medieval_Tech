@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by EXTREME (Firaxis Games) -->
 <!-- Sid Meier's Civilization 4 -->
 <!-- Copyright Firaxis Games 2005 -->
@@ -6,166 +6,9 @@
 <Civ4ProfessionInfos xmlns="x-schema:CIV4UnitSchema.xml">
 <ProfessionInfos>
 <ProfessionInfo>
-	<Type>PROFESSION_COLONIST</Type>
-	<Description>Colonist</Description>
-	<Civilopedia>[BOLD]Nutrients[/BOLD] is a wonderful profession to have.</Civilopedia>
-	<Strategy></Strategy>
-	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>0</bWorkPlot>
-	<bCitizen>0</bCitizen>
-	<bWater>0</bWater>
-	<bScout>0</bScout>
-	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
-	<bUnarmed>1</bUnarmed>
-	<bNoDefensiveBonus>0</bNoDefensiveBonus>
-	<iCombatChange>0</iCombatChange>
-	<iMovesChange>0</iMovesChange>
-	<iWorkRate>0</iWorkRate>
-	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>0</iPower>
-	<iAsset>0</iAsset>
-	<YieldEquipedNums></YieldEquipedNums>
-	<FreePromotions></FreePromotions>
-	<YieldsProduced/>
-	<YieldsConsumed>
-		<YieldType>NONE</YieldType>
-	</YieldsConsumed>
-	<Button>,/Art/Buttons/Units/COLONIST.dds</Button>
-</ProfessionInfo>
-<ProfessionInfo>
-	<Type>PROFESSION_HUNTSMAN</Type>
-	<Description>Huntsman</Description>
-	<Civilopedia>[BOLD]Huntsman[/BOLD] is a wonderful profession to have.</Civilopedia>
-	<Strategy></Strategy>
-	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_HUNTSMAN</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>0</bWorkPlot>
-	<bCitizen>0</bCitizen>
-	<bWater>0</bWater>
-	<bScout>0</bScout>
-	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
-	<bUnarmed>0</bUnarmed>
-	<bNoDefensiveBonus>0</bNoDefensiveBonus>
-	<iCombatChange>1</iCombatChange>
-	<iMovesChange>0</iMovesChange>
-	<iWorkRate>0</iWorkRate>
-	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>0</iPower>
-	<iAsset>0</iAsset>
-	<YieldEquipedNums></YieldEquipedNums>
-	<FreePromotions></FreePromotions>
-	<YieldsProduced/>
-	<YieldsConsumed>
-		<YieldType>NONE</YieldType>
-	</YieldsConsumed>
-	<Button>,/Art/Buttons/Units/HUNTSMAN.dds</Button>
-</ProfessionInfo>
-<ProfessionInfo>
-	<Type>PROFESSION_PEDLER</Type>
-	<Description>Smuggler</Description>
-	<Civilopedia>[BOLD]Smuggler[/BOLD] is a wonderful profession to have.</Civilopedia>
-	<Strategy></Strategy>
-	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_TRADER</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>0</bWorkPlot>
-	<bCitizen>0</bCitizen>
-	<bWater>0</bWater>
-	<bScout>0</bScout>
-	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
-	<bUnarmed>1</bUnarmed>
-	<bNoDefensiveBonus>0</bNoDefensiveBonus>
-	<iCombatChange>0</iCombatChange>
-	<iMovesChange>0</iMovesChange>
-	<iWorkRate>0</iWorkRate>
-	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>0</iPower>
-	<iAsset>0</iAsset>
-	<YieldEquipedNums></YieldEquipedNums>
-	<FreePromotions></FreePromotions>
-	<YieldsProduced>
-		<YieldType>YIELD_NUTRIENTS</YieldType>
-	</YieldsProduced>
-	<YieldsConsumed>
-		<YieldType>NONE</YieldType>
-	</YieldsConsumed>
-	<Button>,/Art/Buttons/Units/SMUGGLER.dds</Button>
-</ProfessionInfo>
-<ProfessionInfo>
-	<Type>PROFESSION_MARAUDER</Type>
-	<Description>Terrorist</Description>
-	<Civilopedia>[BOLD]Terrorist[/BOLD] is a wonderful profession to have.</Civilopedia>
-	<Strategy></Strategy>
-	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_MARAUDER</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>0</bWorkPlot>
-	<bCitizen>0</bCitizen>
-	<bWater>0</bWater>
-	<bScout>0</bScout>
-	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
-	<bUnarmed>0</bUnarmed>
-	<bNoDefensiveBonus>0</bNoDefensiveBonus>
-	<iCombatChange>1</iCombatChange>
-	<iMovesChange>0</iMovesChange>
-	<iWorkRate>0</iWorkRate>
-	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>0</iPower>
-	<iAsset>0</iAsset>
-	<YieldEquipedNums></YieldEquipedNums>
-	<FreePromotions></FreePromotions>
-	<YieldsProduced/>
-	<YieldsConsumed>
-		<YieldType>NONE</YieldType>
-	</YieldsConsumed>
-	<Button>,/Art/Buttons/Units/TERRORIST.dds</Button>
-</ProfessionInfo>
-<ProfessionInfo>
-	<Type>PROFESSION_MARAUDER_SEA</Type>
-	<Description>Pirate</Description>
-	<Civilopedia>[BOLD]Pirate[/BOLD] is a wonderful profession to have.</Civilopedia>
-	<Strategy></Strategy>
-	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_MARAUDER</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>0</bWorkPlot>
-	<bCitizen>0</bCitizen>
-	<bWater>0</bWater>
-	<bScout>0</bScout>
-	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
-	<bUnarmed>0</bUnarmed>
-	<bNoDefensiveBonus>0</bNoDefensiveBonus>
-	<iCombatChange>0</iCombatChange>
-	<iMovesChange>0</iMovesChange>
-	<iWorkRate>0</iWorkRate>
-	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>0</iPower>
-	<iAsset>0</iAsset>
-	<YieldEquipedNums></YieldEquipedNums>
-	<FreePromotions></FreePromotions>
-	<YieldsProduced/>
-	<YieldsConsumed>
-		<YieldType>NONE</YieldType>
-	</YieldsConsumed>
-	<Button>,/Art/Buttons/Units/SMUGGLER.dds</Button>
-</ProfessionInfo>
-<ProfessionInfo>
 	<Type>PROFESSION_NUTRIENTS</Type>
-	<Description>Agriculture</Description>
-	<Civilopedia>[BOLD]Agriculture[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_NUTRIENTS</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_NUTRIENTS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
@@ -176,7 +19,7 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -184,21 +27,21 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_NUTRIENTS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>NONE</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/NUTRIENTS.dds</Button>
+	<Button>/Art/Buttons/Yields/NUTRIENTS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_BIOPOLYMERS</Type>
-	<Description>Biopolymer Harvesting</Description>
-	<Civilopedia>[BOLD]Biopolymer Harvesting[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_BIOPOLYMERS</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_BIOPOLYMERS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
@@ -209,7 +52,7 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -217,54 +60,21 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_BIOPOLYMERS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>NONE</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/BIOPOLYMERS.dds</Button>
-</ProfessionInfo>
-<ProfessionInfo>
-	<Type>PROFESSION_SILICATES</Type>
-	<Description>Silicate Mining</Description>
-	<Civilopedia>[BOLD]Silicate Mining[/BOLD] is a wonderful profession to have.</Civilopedia>
-	<Strategy></Strategy>
-	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>1</bWorkPlot>
-	<bCitizen>1</bCitizen>
-	<bWater>0</bWater>
-	<bScout>0</bScout>
-	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
-	<bUnarmed>1</bUnarmed>
-	<bNoDefensiveBonus>0</bNoDefensiveBonus>
-	<iCombatChange>0</iCombatChange>
-	<iMovesChange>0</iMovesChange>
-	<iWorkRate>0</iWorkRate>
-	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>0</iPower>
-	<iAsset>0</iAsset>
-	<YieldEquipedNums></YieldEquipedNums>
-	<FreePromotions></FreePromotions>
-	<YieldsProduced>
-		<YieldType>YIELD_SILICATES</YieldType>
-	</YieldsProduced>
-	<YieldsConsumed>
-		<YieldType>NONE</YieldType>
-	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/SILICATES.dds</Button>
+	<Button>/Art/Buttons/Yields/BIOPOLYMERS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_BASE_METALS</Type>
-	<Description>Base Metals Mining</Description>
-	<Civilopedia>[BOLD]Base Metals Mining[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_BASE_METALS</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_BASE_METALS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
@@ -275,7 +85,7 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -283,21 +93,54 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_BASE_METALS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>NONE</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/BASE_METALS.dds</Button>
+	<Button>/Art/Buttons/Yields/BASE_METALS.dds</Button>
+</ProfessionInfo>
+<ProfessionInfo>
+	<Type>PROFESSION_SILICATES</Type>
+	<Description>TXT_KEY_PROFESSION_SILICATES</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_SILICATES_PEDIA</Civilopedia>
+	<Strategy></Strategy>
+	<Help/>
+	<Combat>UNITCOMBAT_MELEE</Combat>
+	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<SpecialBuilding>NONE</SpecialBuilding>
+	<bWorkPlot>1</bWorkPlot>
+	<bCitizen>1</bCitizen>
+	<bWater>0</bWater>
+	<bScout>0</bScout>
+	<bCityDefender>0</bCityDefender>
+	<bCanFound>0</bCanFound>
+	<bUnarmed>1</bUnarmed>
+	<bNoDefensiveBonus>0</bNoDefensiveBonus>
+	<iCombatChange>0</iCombatChange>
+	<iMovesChange>0</iMovesChange>
+	<iWorkRate>0</iWorkRate>
+	<iMissionaryRate>0</iMissionaryRate>
+	<iPower>0</iPower>
+	<iAsset>1</iAsset>
+	<YieldEquipedNums></YieldEquipedNums>
+	<FreePromotions></FreePromotions>
+	<YieldsProduced>
+		<YieldType>YIELD_SILICATES</YieldType>
+	</YieldsProduced>
+	<YieldsConsumed>
+		<YieldType></YieldType>
+	</YieldsConsumed>
+	<Button>/Art/Buttons/Yields/SILICATES.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_PRECIOUS_METALS</Type>
-	<Description>Precious Metals Prospecting</Description>
-	<Civilopedia>[BOLD]Precious Metals Prospecting[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_PRECIOUS_METALS</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_PRECIOUS_METALS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
@@ -308,7 +151,7 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -316,54 +159,21 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_PRECIOUS_METALS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>NONE</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/PRECIOUS_METALS.dds</Button>
-</ProfessionInfo>
-<ProfessionInfo>
-	<Type>PROFESSION_HARD_CURRENCY</Type>
-	<Description>Investment Banking</Description>
-	<Civilopedia>[BOLD]Investment Banking[/BOLD] is a wonderful profession to have.</Civilopedia>
-	<Strategy></Strategy>
-	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>1</bWorkPlot>
-	<bCitizen>1</bCitizen>
-	<bWater>0</bWater>
-	<bScout>0</bScout>
-	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
-	<bUnarmed>1</bUnarmed>
-	<bNoDefensiveBonus>0</bNoDefensiveBonus>
-	<iCombatChange>0</iCombatChange>
-	<iMovesChange>0</iMovesChange>
-	<iWorkRate>0</iWorkRate>
-	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>0</iPower>
-	<iAsset>0</iAsset>
-	<YieldEquipedNums></YieldEquipedNums>
-	<FreePromotions></FreePromotions>
-	<YieldsProduced>
-		<YieldType>YIELD_HARD_CURRENCY</YieldType>
-	</YieldsProduced>
-	<YieldsConsumed>
-		<YieldType>YIELD_PRECIOUS_METALS</YieldType>
-	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/HARD_CURRENCY.dds</Button>
+	<Button>/Art/Buttons/Yields/PRECIOUS_METALS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_ACTINIDES</Type>
-	<Description>Actinide Extraction</Description>
-	<Civilopedia>[BOLD]Actinide Extraction[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_ACTINIDES</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_ACTINIDES_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
@@ -374,7 +184,7 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -382,21 +192,21 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_ACTINIDES</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>NONE</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/ACTINIDES.dds</Button>
+	<Button>/Art/Buttons/Yields/ACTINIDES.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_ISOTOPES</Type>
-	<Description>Isotope Extraction</Description>
-	<Civilopedia>[BOLD]Isotope Extraction[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_ISOTOPES</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_ISOTOPES_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
@@ -407,7 +217,7 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -415,21 +225,21 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_ISOTOPES</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>NONE</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/ISOTOPES.dds</Button>
+	<Button>/Art/Buttons/Yields/ISOTOPES.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_RARE_EARTHS</Type>
-	<Description>Rare Earth Extraction</Description>
-	<Civilopedia>[BOLD]Rare Earth Extraction[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_RARE_EARTHS</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_RARE_EARTHS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
@@ -440,7 +250,7 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -448,21 +258,21 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_RARE_EARTHS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>NONE</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/RARE_EARTHS.dds</Button>
+	<Button>/Art/Buttons/Yields/RARE_EARTHS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_CRYSTALLOIDS</Type>
-	<Description>Crystalloid Extraction</Description>
-	<Civilopedia>[BOLD]Crystalloid Extraction[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_CRYSTALLOIDS</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_CRYSTALLOIDS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
@@ -473,7 +283,7 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -481,21 +291,21 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_CRYSTALLOIDS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>NONE</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/CRYSTALLOIDS.dds</Button>
+	<Button>/Art/Buttons/Yields/CRYSTALLOIDS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_NUCLEIC_ACIDS</Type>
-	<Description>Nucleic Acid Culture</Description>
-	<Civilopedia>[BOLD]Nucleic Acid Culture[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_NUCLEIC_ACIDS</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_NUCLEIC_ACIDS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
@@ -506,7 +316,7 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -514,21 +324,21 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_NUCLEIC_ACIDS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>NONE</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/NUCLEIC_ACIDS.dds</Button>
+	<Button>/Art/Buttons/Yields/NUCLEIC_ACIDS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_AMINO_ACIDS</Type>
-	<Description>Amino Acid Culture</Description>
-	<Civilopedia>[BOLD]Amino Acid Culture[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_AMINO_ACIDS</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_AMINO_ACIDS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
@@ -539,7 +349,7 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -547,21 +357,21 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_AMINO_ACIDS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>NONE</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/AMINO_ACIDS.dds</Button>
+	<Button>/Art/Buttons/Yields/AMINO_ACIDS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_TISSUE_SAMPLES</Type>
-	<Description>Tissue Sample Culture</Description>
-	<Civilopedia>[BOLD]Tissue Sample Culture[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_TISSUE_SAMPLES</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_TISSUE_SAMPLES_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
@@ -572,7 +382,7 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -580,21 +390,21 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_TISSUE_SAMPLES</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>NONE</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/TISSUE_SAMPLES.dds</Button>
+	<Button>/Art/Buttons/Yields/TISSUE_SAMPLES.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_MICROBES</Type>
-	<Description>Microbial Culture</Description>
-	<Civilopedia>[BOLD]Microbial Culture[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_MICROBES</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_MICROBES_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
@@ -605,7 +415,7 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -613,21 +423,21 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_MICROBES</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>NONE</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/MICROBES.dds</Button>
+	<Button>/Art/Buttons/Yields/MICROBES.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_DATACORES</Type>
-	<Description>Datacore Excavation</Description>
-	<Civilopedia>[BOLD]Datacore Excavation[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_DATACORES</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_DATACORES_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
@@ -638,7 +448,7 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -646,21 +456,21 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_DATACORES</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>NONE</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/DATACORES.dds</Button>
+	<Button>/Art/Buttons/Yields/DATACORES.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
-	<Type>PROFESSION_ARTIFACTS</Type>
-	<Description>Artifact Excavation</Description>
-	<Civilopedia>[BOLD]Artifact Excavation[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Type>PROFESSION_PROGENITOR_ARTIFACTS</Type>
+	<Description>TXT_KEY_PROFESSION_PROGENITOR_ARTIFACTS</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_PROGENITOR_ARTIFACTS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
@@ -671,7 +481,7 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -679,21 +489,21 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
-		<YieldType>YIELD_ARTIFACTS</YieldType>
+		<YieldType>YIELD_PROGENITOR_ARTIFACTS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>NONE</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/ARTIFACTS.dds</Button>
+	<Button>/Art/Buttons/Yields/PROGENITOR_ARTIFACTS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_ALIEN_SPECIMENS</Type>
-	<Description>Alien Specimen Excavation</Description>
-	<Civilopedia>[BOLD]Alien Specimen Excavation[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_ALIEN_SPECIMENS</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_ALIEN_SPECIMENS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
@@ -704,7 +514,7 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -712,21 +522,21 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_ALIEN_SPECIMENS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>NONE</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/ALIEN_SPECIMENS.dds</Button>
+	<Button>/Art/Buttons/Yields/ALIEN_SPECIMENS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_OPIATES</Type>
-	<Description>Opiate Cultivation</Description>
-	<Civilopedia>[BOLD]Opiate Cultivation[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_OPIATES</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_OPIATES_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
@@ -737,7 +547,7 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -745,21 +555,21 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_OPIATES</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>NONE</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/OPIATES.dds</Button>
+	<Button>/Art/Buttons/Yields/OPIATES.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_XENOTOXINS</Type>
-	<Description>Xenotoxin Cultivation</Description>
-	<Civilopedia>[BOLD]Xenotoxin Cultivation[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_XENOTOXINS</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_XENOTOXINS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
@@ -770,7 +580,7 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -778,21 +588,21 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_XENOTOXINS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>NONE</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/XENOTOXINS.dds</Button>
+	<Button>/Art/Buttons/Yields/XENOTOXINS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_BOTANICALS</Type>
-	<Description>Botanical Cultivation</Description>
-	<Civilopedia>[BOLD]Botanical Cultivation[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_BOTANICALS</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_BOTANICALS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
@@ -803,7 +613,7 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -811,21 +621,21 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_BOTANICALS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>NONE</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/BOTANICALS.dds</Button>
+	<Button>/Art/Buttons/Yields/BOTANICALS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_HYDROCARBONS</Type>
-	<Description>Hydrocarbon Drilling</Description>
-	<Civilopedia>[BOLD]Hydrocarbon Drilling[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_HYDROCARBONS</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_HYDROCARBONS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
@@ -836,7 +646,7 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -844,21 +654,21 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_HYDROCARBONS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>NONE</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/HYDROCARBONS.dds</Button>
+	<Button>/Art/Buttons/Yields/HYDROCARBONS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_CLATHRATES</Type>
-	<Description>Clathrate Drilling</Description>
-	<Civilopedia>[BOLD]Clathrate Drilling[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_CLATHRATES</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_CLATHRATES_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
@@ -869,7 +679,7 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -877,21 +687,21 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_CLATHRATES</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>NONE</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/CLATHRATES.dds</Button>
+	<Button>/Art/Buttons/Yields/CLATHRATES.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_CORE_SAMPLES</Type>
-	<Description>Core Sample Drilling</Description>
-	<Civilopedia>[BOLD]Core Sample Drilling[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_CORE_SAMPLES</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_CORE_SAMPLES_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
@@ -902,7 +712,7 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -910,32 +720,32 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_CORE_SAMPLES</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>NONE</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/CORE_SAMPLES.dds</Button>
+	<Button>/Art/Buttons/Yields/CORE_SAMPLES.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
-	<Type>PROFESSION_TOOLS</Type>
-	<Description>Machine Tool Casting</Description>
-	<Civilopedia>[BOLD]Machine Tool Casting[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Type>PROFESSION_MACHINE_TOOLS</Type>
+	<Description>TXT_KEY_PROFESSION_MACHINE_TOOLS</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_MACHINE_TOOLS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>1</bWorkPlot>
+	<SpecialBuilding>SPECIALBUILDING_MACHINE_TOOLS</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -943,65 +753,32 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
-		<YieldType>YIELD_TOOLS</YieldType>
+		<YieldType>YIELD_MACHINE_TOOLS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>YIELD_BASE_METALS</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/TOOLS.dds</Button>
-</ProfessionInfo>
-<ProfessionInfo>
-	<Type>PROFESSION_WEAPONS</Type>
-	<Description>Munitions Manufacturing</Description>
-	<Civilopedia>[BOLD]Munitions Manufacturing[/BOLD] is a wonderful profession to have.</Civilopedia>
-	<Strategy></Strategy>
-	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>1</bWorkPlot>
-	<bCitizen>1</bCitizen>
-	<bWater>0</bWater>
-	<bScout>0</bScout>
-	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
-	<bUnarmed>1</bUnarmed>
-	<bNoDefensiveBonus>0</bNoDefensiveBonus>
-	<iCombatChange>0</iCombatChange>
-	<iMovesChange>0</iMovesChange>
-	<iWorkRate>0</iWorkRate>
-	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>0</iPower>
-	<iAsset>0</iAsset>
-	<YieldEquipedNums></YieldEquipedNums>
-	<FreePromotions></FreePromotions>
-	<YieldsProduced>
-		<YieldType>YIELD_WEAPONS</YieldType>
-	</YieldsProduced>
-	<YieldsConsumed>
-		<YieldType>YIELD_TOOLS</YieldType>
-	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/WEAPONS.dds</Button>
+	<Button>/Art/Buttons/Yields/MACHINE_TOOLS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_ROBOTICS</Type>
-	<Description>Robotics Manufacturing</Description>
-	<Civilopedia>[BOLD]Robotics Manufacturing[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_ROBOTICS</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_ROBOTICS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>1</bWorkPlot>
+	<SpecialBuilding>SPECIALBUILDING_ROBOTICS</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -1009,32 +786,32 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_ROBOTICS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>YIELD_TOOLS</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/ROBOTICS.dds</Button>
+	<Button>/Art/Buttons/Yields/ROBOTICS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
-	<Type>PROFESSION_PHOTONICS</Type>
-	<Description>Photonics Manufacturing</Description>
-	<Civilopedia>[BOLD]Photonics Manufacturing[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Type>PROFESSION_MUNITIONS</Type>
+	<Description>TXT_KEY_PROFESSION_MUNITIONS</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_MUNITIONS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>1</bWorkPlot>
+	<SpecialBuilding>SPECIALBUILDING_MUNITIONS</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -1042,32 +819,65 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
+	<YieldEquipedNums></YieldEquipedNums>
+	<FreePromotions></FreePromotions>
+	<YieldsProduced>
+		<YieldType>YIELD_MUNITIONS</YieldType>
+	</YieldsProduced>
+	<YieldsConsumed>
+		<YieldType></YieldType>
+	</YieldsConsumed>
+	<Button>/Art/Buttons/Yields/MUNITIONS.dds</Button>
+</ProfessionInfo>
+<ProfessionInfo>
+	<Type>PROFESSION_PHOTONICS</Type>
+	<Description>TXT_KEY_PROFESSION_PHOTONICS</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_PHOTONICS_PEDIA</Civilopedia>
+	<Strategy></Strategy>
+	<Help/>
+	<Combat>UNITCOMBAT_MELEE</Combat>
+	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<SpecialBuilding>SPECIALBUILDING_PHOTONICS</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
+	<bCitizen>1</bCitizen>
+	<bWater>0</bWater>
+	<bScout>0</bScout>
+	<bCityDefender>0</bCityDefender>
+	<bCanFound>0</bCanFound>
+	<bUnarmed>1</bUnarmed>
+	<bNoDefensiveBonus>0</bNoDefensiveBonus>
+	<iCombatChange>0</iCombatChange>
+	<iMovesChange>0</iMovesChange>
+	<iWorkRate>0</iWorkRate>
+	<iMissionaryRate>0</iMissionaryRate>
+	<iPower>0</iPower>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_PHOTONICS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>YIELD_CRYSTALLOIDS</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/PHOTONICS.dds</Button>
+	<Button>/Art/Buttons/Yields/PHOTONICS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_PLASTEEL</Type>
-	<Description>Plasteel Smelting</Description>
-	<Civilopedia>[BOLD]Plasteel Smelting[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_PLASTEEL</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_PLASTEEL_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>1</bWorkPlot>
+	<SpecialBuilding>SPECIALBUILDING_PLASTEEL</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -1075,33 +885,32 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_PLASTEEL</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>YIELD_BIOPOLYMERS</YieldType>
-		<YieldType>YIELD_BASE_METALS</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/PLASTEEL.dds</Button>
+	<Button>/Art/Buttons/Yields/PLASTEEL.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_DURALLOY</Type>
-	<Description>Duralloy Smelting</Description>
-	<Civilopedia>[BOLD]Duralloy Smelting[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_DURALLOY</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_DURALLOY_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>1</bWorkPlot>
+	<SpecialBuilding>SPECIALBUILDING_DURALLOY</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -1109,33 +918,32 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_DURALLOY</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>YIELD_BASE_METALS</YieldType>
-		<YieldType>YIELD_SILICATES</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/DURALLOY.dds</Button>
+	<Button>/Art/Buttons/Yields/DURALLOY.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_CRYSTALLOY</Type>
-	<Description>Crystalloy Smelting</Description>
-	<Civilopedia>[BOLD]Crystalloy Smelting[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_CRYSTALLOY</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_CRYSTALLOY_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>1</bWorkPlot>
+	<SpecialBuilding>SPECIALBUILDING_CRYSTALLOY</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -1143,33 +951,32 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_CRYSTALLOY</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>YIELD_PRECIOUS_METALS</YieldType>
-		<YieldType>YIELD_CRYSTALLOIDS</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/CRYSTALLOY.dds</Button>
+	<Button>/Art/Buttons/Yields/CRYSTALLOY.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_NUCLEONICS</Type>
-	<Description>Nucleonics Enrichment</Description>
-	<Civilopedia>[BOLD]Nucleonics Enrichment[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_NUCLEONICS</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_NUCLEONICS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>1</bWorkPlot>
+	<SpecialBuilding>SPECIALBUILDING_NUCLEONICS</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -1177,32 +984,32 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_NUCLEONICS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>YIELD_ISOTOPES</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/NUCLEONICS.dds</Button>
+	<Button>/Art/Buttons/Yields/NUCLEONICS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_FUSION_CORES</Type>
-	<Description>Fusion Core Enrichment</Description>
-	<Civilopedia>[BOLD]Fusion Core Enrichment[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_FUSION_CORES</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_FUSION_CORES_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>1</bWorkPlot>
+	<SpecialBuilding>SPECIALBUILDING_FUSION_CORES</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -1210,32 +1017,32 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_FUSION_CORES</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>YIELD_ACTINIDES</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/FUSION_CORES.dds</Button>
+	<Button>/Art/Buttons/Yields/FUSION_CORES.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_SEMICONDUCTORS</Type>
-	<Description>Semiconductor Fabrication</Description>
-	<Civilopedia>[BOLD]Semiconductor Fabrication[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_SEMICONDUCTORS</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_SEMICONDUCTORS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>1</bWorkPlot>
+	<SpecialBuilding>SPECIALBUILDING_SEMICONDUCTORS</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -1243,32 +1050,32 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_SEMICONDUCTORS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>NONE</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/SEMICONDUCTORS.dds</Button>
+	<Button>/Art/Buttons/Yields/SEMICONDUCTORS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_PLASMIDS</Type>
-	<Description>Plasmid Biosynthesis</Description>
-	<Civilopedia>[BOLD]Plasmid Biosynthesis[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_PLASMIDS</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_PLASMIDS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>1</bWorkPlot>
+	<SpecialBuilding>SPECIALBUILDING_PLASMIDS</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -1276,32 +1083,32 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_PLASMIDS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>YIELD_NUCLEIC_ACIDS</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/PLASMIDS.dds</Button>
+	<Button>/Art/Buttons/Yields/PLASMIDS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_ENZYMES</Type>
-	<Description>Enzyme Biosynthesis</Description>
-	<Civilopedia>[BOLD]Enzyme Biosynthesis[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_ENZYMES</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_ENZYMES_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>1</bWorkPlot>
+	<SpecialBuilding>SPECIALBUILDING_ENZYMES</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -1309,32 +1116,32 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_ENZYMES</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>YIELD_AMINO_ACIDS</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/ENZYMES.dds</Button>
+	<Button>/Art/Buttons/Yields/ENZYMES.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_STEM_CELLS</Type>
-	<Description>Stem Cell Dissection</Description>
-	<Civilopedia>[BOLD]Stem Cell Dissection[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_STEM_CELLS</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_STEM_CELLS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>1</bWorkPlot>
+	<SpecialBuilding>SPECIALBUILDING_STEM_CELLS</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -1342,32 +1149,32 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_STEM_CELLS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>YIELD_TISSUE_SAMPLES</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/STEM_CELLS.dds</Button>
+	<Button>/Art/Buttons/Yields/STEM_CELLS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_STATE_SECRETS</Type>
-	<Description>Datacore Analysis</Description>
-	<Civilopedia>[BOLD]Datacore Analysis[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_STATE_SECRETS</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_STATE_SECRETS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>1</bWorkPlot>
+	<SpecialBuilding>SPECIALBUILDING_STATE_SECRETS</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -1375,32 +1182,32 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_STATE_SECRETS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>YIELD_DATACORES</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/STATE_SECRETS.dds</Button>
+	<Button>/Art/Buttons/Yields/STATE_SECRETS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_PROGENITOR_TECH</Type>
-	<Description>Artifact Analysis</Description>
-	<Civilopedia>[BOLD]Progenitor Artifact Analysis[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_PROGENITOR_TECH</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_PROGENITOR_TECH_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>1</bWorkPlot>
+	<SpecialBuilding>SPECIALBUILDING_PROGENITOR_TECH</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -1408,32 +1215,32 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_PROGENITOR_TECH</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>YIELD_ARTIFACTS</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/PROGENITOR_TECH.dds</Button>
+	<Button>/Art/Buttons/Yields/PROGENITOR_TECH.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_ALIEN_RELICS</Type>
-	<Description>Alien Specimen Dissection</Description>
-	<Civilopedia>[BOLD]Alien Specimen Dissection[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_ALIEN_RELICS</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_ALIEN_RELICS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>1</bWorkPlot>
+	<SpecialBuilding>SPECIALBUILDING_ALIEN_RELICS</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -1441,32 +1248,32 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_ALIEN_RELICS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>YIELD_ALIEN_SPECIMENS</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/ALIEN_RELICS.dds</Button>
+	<Button>/Art/Buttons/Yields/ALIEN_RELICS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_NARCOTICS</Type>
-	<Description>Narcotic Distillation</Description>
-	<Civilopedia>[BOLD]Narcotic Distillation[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_NARCOTICS</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_NARCOTICS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>1</bWorkPlot>
+	<SpecialBuilding>SPECIALBUILDING_NARCOTICS</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -1474,32 +1281,32 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_NARCOTICS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>YIELD_OPIATES</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/NARCOTICS.dds</Button>
+	<Button>/Art/Buttons/Yields/NARCOTICS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_BIOWEAPONS</Type>
-	<Description>Bioweapon Distillation</Description>
-	<Civilopedia>[BOLD]Bioweapon Distillation[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_BIOWEAPONS</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_BIOWEAPONS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>1</bWorkPlot>
+	<SpecialBuilding>SPECIALBUILDING_BIOWEAPONS</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -1507,32 +1314,32 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_BIOWEAPONS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>YIELD_XENOTOXINS</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/BIOWEAPONS.dds</Button>
+	<Button>/Art/Buttons/Yields/BIOWEAPONS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_PHARMACEUTICALS</Type>
-	<Description>Pharmaceutical Synthesis</Description>
-	<Civilopedia>[BOLD]Pharmaceutical Synthesis[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_PHARMACEUTICALS</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_PHARMACEUTICALS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>1</bWorkPlot>
+	<SpecialBuilding>SPECIALBUILDING_PHARMACEUTICALS</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -1540,32 +1347,32 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_PHARMACEUTICALS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>YIELD_BOTANICALS</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/PHARMACEUTICALS.dds</Button>
+	<Button>/Art/Buttons/Yields/PHARMACEUTICALS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_PETROCHEMICALS</Type>
-	<Description>Petrochemical Refining</Description>
-	<Civilopedia>[BOLD]Petrochemical Refining[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_PETROCHEMICALS</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_PETROCHEMICALS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>1</bWorkPlot>
+	<SpecialBuilding>SPECIALBUILDING_PETROCHEMICALS</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -1573,32 +1380,32 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_PETROCHEMICALS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>YIELD_HYDROCARBONS</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/PETROCHEMICALS.dds</Button>
+	<Button>/Art/Buttons/Yields/PETROCHEMICALS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_COLLOIDS</Type>
-	<Description>Colloid Refining</Description>
-	<Civilopedia>[BOLD]Colloid Refining[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_COLLOIDS</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_COLLOIDS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>1</bWorkPlot>
+	<SpecialBuilding>SPECIALBUILDING_COLLOIDS</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -1606,32 +1413,32 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_COLLOIDS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>YIELD_CLATHRATES</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/COLLOIDS.dds</Button>
+	<Button>/Art/Buttons/Yields/COLLOIDS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_CATALYSTS</Type>
-	<Description>Catalyst Fabrication</Description>
-	<Civilopedia>[BOLD]Catalyst Fabrication[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_CATALYSTS</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_CATALYSTS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>1</bWorkPlot>
+	<SpecialBuilding>SPECIALBUILDING_CATALYSTS</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -1639,32 +1446,32 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_CATALYSTS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>YIELD_CORE_SAMPLES</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/CATALYSTS.dds</Button>
+	<Button>/Art/Buttons/Yields/CATALYSTS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
-	<Type>PROFESSION_EARTH_GOODS</Type>
-	<Description>Earth Goods Smuggling</Description>
-	<Civilopedia>[BOLD]Earth Goods Smuggling[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Type>PROFESSION_HARD_CURRENCY</Type>
+	<Description>TXT_KEY_PROFESSION_HARD_CURRENCY</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_HARD_CURRENCY_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>1</bWorkPlot>
+	<SpecialBuilding>SPECIALBUILDING_HARD_CURRENCY</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -1672,65 +1479,32 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
-		<YieldType>YIELD_EARTH_GOODS</YieldType>
-	</YieldsProduced>
-	<YieldsConsumed>
-		<YieldType>NONE</YieldType>
-	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/EARTH_GOODS.dds</Button>
-</ProfessionInfo>
-<ProfessionInfo>
-	<Type>PROFESSION_CONTRABAND</Type>
-	<Description>Contraband Smuggling</Description>
-	<Civilopedia>[BOLD]Contraband Smuggling[/BOLD] is a wonderful profession to have.</Civilopedia>
-	<Strategy></Strategy>
-	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>1</bWorkPlot>
-	<bCitizen>1</bCitizen>
-	<bWater>0</bWater>
-	<bScout>0</bScout>
-	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
-	<bUnarmed>1</bUnarmed>
-	<bNoDefensiveBonus>0</bNoDefensiveBonus>
-	<iCombatChange>0</iCombatChange>
-	<iMovesChange>0</iMovesChange>
-	<iWorkRate>0</iWorkRate>
-	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>0</iPower>
-	<iAsset>0</iAsset>
-	<YieldEquipedNums></YieldEquipedNums>
-	<FreePromotions></FreePromotions>
-	<YieldsProduced>
-		<YieldType>YIELD_CONTRABAND</YieldType>
-	</YieldsProduced>
-	<YieldsConsumed>
 		<YieldType>YIELD_HARD_CURRENCY</YieldType>
+	</YieldsProduced>
+	<YieldsConsumed>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/CONTRABAND.dds</Button>
+	<Button>/Art/Buttons/Yields/HARD_CURRENCY.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
-	<Type>PROFESSION_HAMMERS</Type>
-	<Description>Construction</Description>
-	<Civilopedia>[BOLD]Construction[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Type>PROFESSION_INDUSTRY</Type>
+	<Description>TXT_KEY_PROFESSION_INDUSTRY</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_INDUSTRY_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>1</bWorkPlot>
+	<SpecialBuilding>SPECIALBUILDING_INDUSTRY</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -1738,32 +1512,32 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
-		<YieldType>YIELD_HAMMERS</YieldType>
+		<YieldType>YIELD_INDUSTRY</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>YIELD_BIOPOLYMERS</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/HAMMERS.dds</Button>
+	<Button>/Art/Buttons/Yields/INDUSTRY.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
-	<Type>PROFESSION_BELLS</Type>
-	<Description>Public Administration</Description>
-	<Civilopedia>[BOLD]Public Administration[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Type>PROFESSION_MEDIA</Type>
+	<Description>TXT_KEY_PROFESSION_MEDIA</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_MEDIA_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>1</bWorkPlot>
+	<SpecialBuilding>SPECIALBUILDING_MEDIA</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -1771,32 +1545,32 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
-		<YieldType>YIELD_BELLS</YieldType>
+		<YieldType>YIELD_MEDIA</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>NONE</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/BELLS.dds</Button>
+	<Button>/Art/Buttons/Yields/MEDIA.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
-	<Type>PROFESSION_CROSSES</Type>
-	<Description>Mass Media</Description>
-	<Civilopedia>[BOLD]Mass Media[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Type>PROFESSION_LIBERTY</Type>
+	<Description>TXT_KEY_PROFESSION_LIBERTY</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_LIBERTY_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>1</bWorkPlot>
+	<SpecialBuilding>SPECIALBUILDING_LIBERTY</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -1804,32 +1578,32 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
-		<YieldType>YIELD_CROSSES</YieldType>
+		<YieldType>YIELD_LIBERTY</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>NONE</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/CROSSES.dds</Button>
+	<Button>/Art/Buttons/Yields/LIBERTY.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_EDUCATION</Type>
-	<Description>Education</Description>
-	<Civilopedia>[BOLD]Education[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Description>TXT_KEY_PROFESSION_EDUCATION</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_EDUCATION_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>1</bWorkPlot>
+	<SpecialBuilding>SPECIALBUILDING_EDUCATION</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -1837,32 +1611,32 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
 		<YieldType>YIELD_EDUCATION</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>NONE</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/EDUCATION.dds</Button>
+	<Button>/Art/Buttons/Yields/EDUCATION.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
-	<Type>PROFESSION_INVENTOR</Type>
-	<Description>Applied Research</Description>
-	<Civilopedia>[BOLD]Applied Research[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Type>PROFESSION_RESEARCH</Type>
+	<Description>TXT_KEY_PROFESSION_RESEARCH</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_RESEARCH_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>1</bWorkPlot>
+	<SpecialBuilding>SPECIALBUILDING_RESEARCH</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -1870,32 +1644,32 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
+	<iAsset>1</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
-		<YieldType>YIELD_IDEAS</YieldType>
+		<YieldType>YIELD_RESEARCH</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>NONE</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/IDEAS.dds</Button>
+	<Button>/Art/Buttons/Yields/RESEARCH.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
-	<Type>PROFESSION_ENERGY</Type>
-	<Description>Fossil Fuel Combustion</Description>
-	<Civilopedia>[BOLD]Energy[/BOLD] is a wonderful profession to have.</Civilopedia>
+	<Type>PROFESSION_EXPLORER</Type>
+	<Description>TXT_KEY_PROFESSION_EXPLORER</Description>
+	<Civilopedia>TXT_KEY_PEDIA_PROFESSION_EXPLORER</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
 	<Combat>UNITCOMBAT_MELEE</Combat>
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
-	<bWorkPlot>1</bWorkPlot>
+	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>1</bCanFound>
+	<bCanFound>0</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
@@ -1903,16 +1677,515 @@
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>0</iAsset>
-	<YieldEquipedNums></YieldEquipedNums>
+	<iAsset>1</iAsset>
+	<YieldEquipedNums>
+		<YieldEquipedNum>
+			<YieldType>YIELD_MUNITIONS</YieldType>
+			<iYieldAmount>50</iYieldAmount>
+		</YieldEquipedNum>
+	</YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
-		<YieldType>YIELD_ENERGY</YieldType>
+		<YieldType></YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType>YIELD_HYDROCARBONS</YieldType>
+		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>,/Art/Buttons/Yields/ENERGY.dds</Button>
+	<Button>/Art/Buttons/Yields/EXPLORER.dds</Button>
+</ProfessionInfo>
+<ProfessionInfo>
+	<Type>PROFESSION_LABORER</Type>
+	<Description>TXT_KEY_PROFESSION_LABORER</Description>
+	<Civilopedia>TXT_KEY_PEDIA_PROFESSION_LABORER</Civilopedia>
+	<Strategy></Strategy>
+	<Help/>
+	<Combat>UNITCOMBAT_MELEE</Combat>
+	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<SpecialBuilding>NONE</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
+	<bCitizen>1</bCitizen>
+	<bWater>0</bWater>
+	<bScout>0</bScout>
+	<bCityDefender>0</bCityDefender>
+	<bCanFound>0</bCanFound>
+	<bUnarmed>1</bUnarmed>
+	<bNoDefensiveBonus>0</bNoDefensiveBonus>
+	<iCombatChange>0</iCombatChange>
+	<iMovesChange>0</iMovesChange>
+	<iWorkRate>0</iWorkRate>
+	<iMissionaryRate>0</iMissionaryRate>
+	<iPower>0</iPower>
+	<iAsset>1</iAsset>
+	<YieldEquipedNums>
+		<YieldEquipedNum>
+			<YieldType>YIELD_MUNITIONS</YieldType>
+			<iYieldAmount>50</iYieldAmount>
+		</YieldEquipedNum>
+	</YieldEquipedNums>
+	<FreePromotions></FreePromotions>
+	<YieldsProduced>
+		<YieldType></YieldType>
+	</YieldsProduced>
+	<YieldsConsumed>
+		<YieldType></YieldType>
+	</YieldsConsumed>
+	<Button>/Art/Buttons/Yields/LABORER.dds</Button>
+</ProfessionInfo>
+<ProfessionInfo>
+	<Type>PROFESSION_MECHANIZED_LABORER</Type>
+	<Description>TXT_KEY_PROFESSION_MECHANIZED_LABORER</Description>
+	<Civilopedia>TXT_KEY_PEDIA_PROFESSION_MECHANIZED_LABORER</Civilopedia>
+	<Strategy></Strategy>
+	<Help/>
+	<Combat>UNITCOMBAT_MELEE</Combat>
+	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<SpecialBuilding>NONE</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
+	<bCitizen>1</bCitizen>
+	<bWater>0</bWater>
+	<bScout>0</bScout>
+	<bCityDefender>0</bCityDefender>
+	<bCanFound>0</bCanFound>
+	<bUnarmed>1</bUnarmed>
+	<bNoDefensiveBonus>0</bNoDefensiveBonus>
+	<iCombatChange>0</iCombatChange>
+	<iMovesChange>0</iMovesChange>
+	<iWorkRate>0</iWorkRate>
+	<iMissionaryRate>0</iMissionaryRate>
+	<iPower>0</iPower>
+	<iAsset>1</iAsset>
+	<YieldEquipedNums>
+		<YieldEquipedNum>
+			<YieldType>YIELD_MUNITIONS</YieldType>
+			<iYieldAmount>50</iYieldAmount>
+		</YieldEquipedNum>
+	</YieldEquipedNums>
+	<FreePromotions></FreePromotions>
+	<YieldsProduced>
+		<YieldType></YieldType>
+	</YieldsProduced>
+	<YieldsConsumed>
+		<YieldType></YieldType>
+	</YieldsConsumed>
+	<Button>/Art/Buttons/Yields/MECHANIZED_LABORER.dds</Button>
+</ProfessionInfo>
+<ProfessionInfo>
+	<Type>PROFESSION_HUNTER</Type>
+	<Description>TXT_KEY_PROFESSION_HUNTER</Description>
+	<Civilopedia>TXT_KEY_PEDIA_PROFESSION_HUNTER</Civilopedia>
+	<Strategy></Strategy>
+	<Help/>
+	<Combat>UNITCOMBAT_MELEE</Combat>
+	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<SpecialBuilding>NONE</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
+	<bCitizen>1</bCitizen>
+	<bWater>0</bWater>
+	<bScout>0</bScout>
+	<bCityDefender>0</bCityDefender>
+	<bCanFound>0</bCanFound>
+	<bUnarmed>1</bUnarmed>
+	<bNoDefensiveBonus>0</bNoDefensiveBonus>
+	<iCombatChange>0</iCombatChange>
+	<iMovesChange>0</iMovesChange>
+	<iWorkRate>0</iWorkRate>
+	<iMissionaryRate>0</iMissionaryRate>
+	<iPower>0</iPower>
+	<iAsset>1</iAsset>
+	<YieldEquipedNums>
+		<YieldEquipedNum>
+			<YieldType>YIELD_MUNITIONS</YieldType>
+			<iYieldAmount>50</iYieldAmount>
+		</YieldEquipedNum>
+	</YieldEquipedNums>
+	<FreePromotions></FreePromotions>
+	<YieldsProduced>
+		<YieldType></YieldType>
+	</YieldsProduced>
+	<YieldsConsumed>
+		<YieldType></YieldType>
+	</YieldsConsumed>
+	<Button>/Art/Buttons/Yields/HUNTER.dds</Button>
+</ProfessionInfo>
+<ProfessionInfo>
+	<Type>PROFESSION_TRADER</Type>
+	<Description>TXT_KEY_PROFESSION_TRADER</Description>
+	<Civilopedia>TXT_KEY_PEDIA_PROFESSION_TRADER</Civilopedia>
+	<Strategy></Strategy>
+	<Help/>
+	<Combat>UNITCOMBAT_MELEE</Combat>
+	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<SpecialBuilding>NONE</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
+	<bCitizen>1</bCitizen>
+	<bWater>0</bWater>
+	<bScout>0</bScout>
+	<bCityDefender>0</bCityDefender>
+	<bCanFound>0</bCanFound>
+	<bUnarmed>1</bUnarmed>
+	<bNoDefensiveBonus>0</bNoDefensiveBonus>
+	<iCombatChange>0</iCombatChange>
+	<iMovesChange>0</iMovesChange>
+	<iWorkRate>0</iWorkRate>
+	<iMissionaryRate>0</iMissionaryRate>
+	<iPower>0</iPower>
+	<iAsset>1</iAsset>
+	<YieldEquipedNums>
+		<YieldEquipedNum>
+			<YieldType>YIELD_MUNITIONS</YieldType>
+			<iYieldAmount>50</iYieldAmount>
+		</YieldEquipedNum>
+	</YieldEquipedNums>
+	<FreePromotions></FreePromotions>
+	<YieldsProduced>
+		<YieldType></YieldType>
+	</YieldsProduced>
+	<YieldsConsumed>
+		<YieldType></YieldType>
+	</YieldsConsumed>
+	<Button>/Art/Buttons/Yields/TRADER.dds</Button>
+</ProfessionInfo>
+<ProfessionInfo>
+	<Type>PROFESSION_ANTHROPOLOGIST</Type>
+	<Description>TXT_KEY_PROFESSION_ANTHROPOLOGIST</Description>
+	<Civilopedia>TXT_KEY_PEDIA_PROFESSION_ANTHROPOLOGIST</Civilopedia>
+	<Strategy></Strategy>
+	<Help/>
+	<Combat>UNITCOMBAT_MELEE</Combat>
+	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<SpecialBuilding>NONE</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
+	<bCitizen>1</bCitizen>
+	<bWater>0</bWater>
+	<bScout>0</bScout>
+	<bCityDefender>0</bCityDefender>
+	<bCanFound>0</bCanFound>
+	<bUnarmed>1</bUnarmed>
+	<bNoDefensiveBonus>0</bNoDefensiveBonus>
+	<iCombatChange>0</iCombatChange>
+	<iMovesChange>0</iMovesChange>
+	<iWorkRate>0</iWorkRate>
+	<iMissionaryRate>0</iMissionaryRate>
+	<iPower>0</iPower>
+	<iAsset>1</iAsset>
+	<YieldEquipedNums>
+		<YieldEquipedNum>
+			<YieldType>YIELD_MUNITIONS</YieldType>
+			<iYieldAmount>50</iYieldAmount>
+		</YieldEquipedNum>
+	</YieldEquipedNums>
+	<FreePromotions></FreePromotions>
+	<YieldsProduced>
+		<YieldType></YieldType>
+	</YieldsProduced>
+	<YieldsConsumed>
+		<YieldType></YieldType>
+	</YieldsConsumed>
+	<Button>/Art/Buttons/Yields/ANTHROPOLOGIST.dds</Button>
+</ProfessionInfo>
+<ProfessionInfo>
+	<Type>PROFESSION_EMISSARY</Type>
+	<Description>TXT_KEY_PROFESSION_EMISSARY</Description>
+	<Civilopedia>TXT_KEY_PEDIA_PROFESSION_EMISSARY</Civilopedia>
+	<Strategy></Strategy>
+	<Help/>
+	<Combat>UNITCOMBAT_MELEE</Combat>
+	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<SpecialBuilding>NONE</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
+	<bCitizen>1</bCitizen>
+	<bWater>0</bWater>
+	<bScout>0</bScout>
+	<bCityDefender>0</bCityDefender>
+	<bCanFound>0</bCanFound>
+	<bUnarmed>1</bUnarmed>
+	<bNoDefensiveBonus>0</bNoDefensiveBonus>
+	<iCombatChange>0</iCombatChange>
+	<iMovesChange>0</iMovesChange>
+	<iWorkRate>0</iWorkRate>
+	<iMissionaryRate>0</iMissionaryRate>
+	<iPower>0</iPower>
+	<iAsset>1</iAsset>
+	<YieldEquipedNums>
+		<YieldEquipedNum>
+			<YieldType>YIELD_MUNITIONS</YieldType>
+			<iYieldAmount>50</iYieldAmount>
+		</YieldEquipedNum>
+	</YieldEquipedNums>
+	<FreePromotions></FreePromotions>
+	<YieldsProduced>
+		<YieldType></YieldType>
+	</YieldsProduced>
+	<YieldsConsumed>
+		<YieldType></YieldType>
+	</YieldsConsumed>
+	<Button>/Art/Buttons/Yields/EMISSARY.dds</Button>
+</ProfessionInfo>
+<ProfessionInfo>
+	<Type>PROFESSION_MILITIA</Type>
+	<Description>TXT_KEY_PROFESSION_MILITIA</Description>
+	<Civilopedia>TXT_KEY_PEDIA_PROFESSION_MILITIA</Civilopedia>
+	<Strategy></Strategy>
+	<Help/>
+	<Combat>UNITCOMBAT_MELEE</Combat>
+	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<SpecialBuilding>NONE</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
+	<bCitizen>1</bCitizen>
+	<bWater>0</bWater>
+	<bScout>0</bScout>
+	<bCityDefender>0</bCityDefender>
+	<bCanFound>0</bCanFound>
+	<bUnarmed>1</bUnarmed>
+	<bNoDefensiveBonus>0</bNoDefensiveBonus>
+	<iCombatChange>0</iCombatChange>
+	<iMovesChange>0</iMovesChange>
+	<iWorkRate>0</iWorkRate>
+	<iMissionaryRate>0</iMissionaryRate>
+	<iPower>0</iPower>
+	<iAsset>1</iAsset>
+	<YieldEquipedNums>
+		<YieldEquipedNum>
+			<YieldType>YIELD_MUNITIONS</YieldType>
+			<iYieldAmount>50</iYieldAmount>
+		</YieldEquipedNum>
+	</YieldEquipedNums>
+	<FreePromotions></FreePromotions>
+	<YieldsProduced>
+		<YieldType></YieldType>
+	</YieldsProduced>
+	<YieldsConsumed>
+		<YieldType></YieldType>
+	</YieldsConsumed>
+	<Button>/Art/Buttons/Yields/MILITIA.dds</Button>
+</ProfessionInfo>
+<ProfessionInfo>
+	<Type>PROFESSION_INFANTRY</Type>
+	<Description>TXT_KEY_PROFESSION_INFANTRY</Description>
+	<Civilopedia>TXT_KEY_PEDIA_PROFESSION_INFANTRY</Civilopedia>
+	<Strategy></Strategy>
+	<Help/>
+	<Combat>UNITCOMBAT_MELEE</Combat>
+	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<SpecialBuilding>NONE</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
+	<bCitizen>1</bCitizen>
+	<bWater>0</bWater>
+	<bScout>0</bScout>
+	<bCityDefender>0</bCityDefender>
+	<bCanFound>0</bCanFound>
+	<bUnarmed>1</bUnarmed>
+	<bNoDefensiveBonus>0</bNoDefensiveBonus>
+	<iCombatChange>0</iCombatChange>
+	<iMovesChange>0</iMovesChange>
+	<iWorkRate>0</iWorkRate>
+	<iMissionaryRate>0</iMissionaryRate>
+	<iPower>0</iPower>
+	<iAsset>1</iAsset>
+	<YieldEquipedNums>
+		<YieldEquipedNum>
+			<YieldType>YIELD_MUNITIONS</YieldType>
+			<iYieldAmount>50</iYieldAmount>
+		</YieldEquipedNum>
+	</YieldEquipedNums>
+	<FreePromotions></FreePromotions>
+	<YieldsProduced>
+		<YieldType></YieldType>
+	</YieldsProduced>
+	<YieldsConsumed>
+		<YieldType></YieldType>
+	</YieldsConsumed>
+	<Button>/Art/Buttons/Yields/INFANTRY.dds</Button>
+</ProfessionInfo>
+<ProfessionInfo>
+	<Type>PROFESSION_SCOUT_MECHA</Type>
+	<Description>TXT_KEY_PROFESSION_SCOUT_MECHA</Description>
+	<Civilopedia>TXT_KEY_PEDIA_PROFESSION_SCOUT_MECHA</Civilopedia>
+	<Strategy></Strategy>
+	<Help/>
+	<Combat>UNITCOMBAT_MELEE</Combat>
+	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<SpecialBuilding>NONE</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
+	<bCitizen>1</bCitizen>
+	<bWater>0</bWater>
+	<bScout>0</bScout>
+	<bCityDefender>0</bCityDefender>
+	<bCanFound>0</bCanFound>
+	<bUnarmed>1</bUnarmed>
+	<bNoDefensiveBonus>0</bNoDefensiveBonus>
+	<iCombatChange>0</iCombatChange>
+	<iMovesChange>0</iMovesChange>
+	<iWorkRate>0</iWorkRate>
+	<iMissionaryRate>0</iMissionaryRate>
+	<iPower>0</iPower>
+	<iAsset>1</iAsset>
+	<YieldEquipedNums>
+		<YieldEquipedNum>
+			<YieldType>YIELD_MUNITIONS</YieldType>
+			<iYieldAmount>50</iYieldAmount>
+		</YieldEquipedNum>
+	</YieldEquipedNums>
+	<FreePromotions></FreePromotions>
+	<YieldsProduced>
+		<YieldType></YieldType>
+	</YieldsProduced>
+	<YieldsConsumed>
+		<YieldType></YieldType>
+	</YieldsConsumed>
+	<Button>/Art/Buttons/Yields/SCOUT_MECHA.dds</Button>
+</ProfessionInfo>
+<ProfessionInfo>
+	<Type>PROFESSION_TACTICAL_MECHA</Type>
+	<Description>TXT_KEY_PROFESSION_TACTICAL_MECHA</Description>
+	<Civilopedia>TXT_KEY_PEDIA_PROFESSION_TACTICAL_MECHA</Civilopedia>
+	<Strategy></Strategy>
+	<Help/>
+	<Combat>UNITCOMBAT_MELEE</Combat>
+	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<SpecialBuilding>NONE</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
+	<bCitizen>1</bCitizen>
+	<bWater>0</bWater>
+	<bScout>0</bScout>
+	<bCityDefender>0</bCityDefender>
+	<bCanFound>0</bCanFound>
+	<bUnarmed>1</bUnarmed>
+	<bNoDefensiveBonus>0</bNoDefensiveBonus>
+	<iCombatChange>0</iCombatChange>
+	<iMovesChange>0</iMovesChange>
+	<iWorkRate>0</iWorkRate>
+	<iMissionaryRate>0</iMissionaryRate>
+	<iPower>0</iPower>
+	<iAsset>1</iAsset>
+	<YieldEquipedNums>
+		<YieldEquipedNum>
+			<YieldType>YIELD_MUNITIONS</YieldType>
+			<iYieldAmount>50</iYieldAmount>
+		</YieldEquipedNum>
+	</YieldEquipedNums>
+	<FreePromotions></FreePromotions>
+	<YieldsProduced>
+		<YieldType></YieldType>
+	</YieldsProduced>
+	<YieldsConsumed>
+		<YieldType></YieldType>
+	</YieldsConsumed>
+	<Button>/Art/Buttons/Yields/TACTICAL_MECHA.dds</Button>
+</ProfessionInfo>
+<ProfessionInfo>
+	<Type>PROFESSION_HEAVY_MECHA</Type>
+	<Description>TXT_KEY_PROFESSION_HEAVY_MECHA</Description>
+	<Civilopedia>TXT_KEY_PEDIA_PROFESSION_HEAVY_MECHA</Civilopedia>
+	<Strategy></Strategy>
+	<Help/>
+	<Combat>UNITCOMBAT_MELEE</Combat>
+	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<SpecialBuilding>NONE</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
+	<bCitizen>1</bCitizen>
+	<bWater>0</bWater>
+	<bScout>0</bScout>
+	<bCityDefender>0</bCityDefender>
+	<bCanFound>0</bCanFound>
+	<bUnarmed>1</bUnarmed>
+	<bNoDefensiveBonus>0</bNoDefensiveBonus>
+	<iCombatChange>0</iCombatChange>
+	<iMovesChange>0</iMovesChange>
+	<iWorkRate>0</iWorkRate>
+	<iMissionaryRate>0</iMissionaryRate>
+	<iPower>0</iPower>
+	<iAsset>1</iAsset>
+	<YieldEquipedNums>
+		<YieldEquipedNum>
+			<YieldType>YIELD_MUNITIONS</YieldType>
+			<iYieldAmount>50</iYieldAmount>
+		</YieldEquipedNum>
+	</YieldEquipedNums>
+	<FreePromotions></FreePromotions>
+	<YieldsProduced>
+		<YieldType></YieldType>
+	</YieldsProduced>
+	<YieldsConsumed>
+		<YieldType></YieldType>
+	</YieldsConsumed>
+	<Button>/Art/Buttons/Yields/HEAVY_MECHA.dds</Button>
+</ProfessionInfo>
+<ProfessionInfo>
+	<Type>PROFESSION_TERRORIST</Type>
+	<Description>TXT_KEY_PROFESSION_TERRORIST</Description>
+	<Civilopedia>TXT_KEY_PEDIA_PROFESSION_TERRORIST</Civilopedia>
+	<Strategy></Strategy>
+	<Help/>
+	<Combat>UNITCOMBAT_MELEE</Combat>
+	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<SpecialBuilding>NONE</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
+	<bCitizen>1</bCitizen>
+	<bWater>0</bWater>
+	<bScout>0</bScout>
+	<bCityDefender>0</bCityDefender>
+	<bCanFound>0</bCanFound>
+	<bUnarmed>1</bUnarmed>
+	<bNoDefensiveBonus>0</bNoDefensiveBonus>
+	<iCombatChange>0</iCombatChange>
+	<iMovesChange>0</iMovesChange>
+	<iWorkRate>0</iWorkRate>
+	<iMissionaryRate>0</iMissionaryRate>
+	<iPower>0</iPower>
+	<iAsset>1</iAsset>
+	<YieldEquipedNums>
+		<YieldEquipedNum>
+			<YieldType>YIELD_MUNITIONS</YieldType>
+			<iYieldAmount>50</iYieldAmount>
+		</YieldEquipedNum>
+	</YieldEquipedNums>
+	<FreePromotions></FreePromotions>
+	<YieldsProduced>
+		<YieldType></YieldType>
+	</YieldsProduced>
+	<YieldsConsumed>
+		<YieldType></YieldType>
+	</YieldsConsumed>
+	<Button>/Art/Buttons/Yields/TERRORIST.dds</Button>
+</ProfessionInfo>
+<ProfessionInfo>
+	<Type>PROFESSION_PIRATE</Type>
+	<Description>TXT_KEY_PROFESSION_PIRATE</Description>
+	<Civilopedia>TXT_KEY_PEDIA_PROFESSION_PIRATE</Civilopedia>
+	<Strategy></Strategy>
+	<Help/>
+	<Combat>UNITCOMBAT_MELEE</Combat>
+	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<SpecialBuilding>NONE</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
+	<bCitizen>1</bCitizen>
+	<bWater>0</bWater>
+	<bScout>0</bScout>
+	<bCityDefender>0</bCityDefender>
+	<bCanFound>0</bCanFound>
+	<bUnarmed>1</bUnarmed>
+	<bNoDefensiveBonus>0</bNoDefensiveBonus>
+	<iCombatChange>0</iCombatChange>
+	<iMovesChange>0</iMovesChange>
+	<iWorkRate>0</iWorkRate>
+	<iMissionaryRate>0</iMissionaryRate>
+	<iPower>0</iPower>
+	<iAsset>1</iAsset>
+	<YieldEquipedNums>
+		<YieldEquipedNum>
+			<YieldType>YIELD_MUNITIONS</YieldType>
+			<iYieldAmount>50</iYieldAmount>
+		</YieldEquipedNum>
+	</YieldEquipedNums>
+	<FreePromotions></FreePromotions>
+	<YieldsProduced>
+		<YieldType></YieldType>
+	</YieldsProduced>
+	<YieldsConsumed>
+		<YieldType></YieldType>
+	</YieldsConsumed>
+	<Button>/Art/Buttons/Yields/PIRATE.dds</Button>
 </ProfessionInfo>
 </ProfessionInfos>
 </Civ4ProfessionInfos>

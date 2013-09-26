@@ -148,11 +148,11 @@
   </Define>
   <Define>
     <DefineName>DEFAULT_NATIVE_TRADE_PROFESSION</DefineName>
-    <DefineTextVal>PROFESSION_PEDLER</DefineTextVal>
+    <DefineTextVal>PROFESSION_TRADER</DefineTextVal>
   </Define>
   <Define>
     <DefineName>BUILDINGCLASS_TRAVEL_TO_FAIR</DefineName>
-    <DefineTextVal>BUILDINGCLASS_THE_FAIR</DefineTextVal>
+    <DefineTextVal>BUILDINGCLASS_MARKET3</DefineTextVal>
   </Define>
   <Define>
     <DefineName>FATHER_POINT_REAL_TRADE</DefineName>
@@ -160,7 +160,7 @@
   </Define>
   <Define>
     <DefineName>DEFAULT_MARUADER_SEA_PROFESSION</DefineName>
-    <DefineTextVal>PROFESSION_MARAUDER_SEA</DefineTextVal>
+    <DefineTextVal>PROFESSION_PIRATE</DefineTextVal>
   </Define>
   <Define>
     <DefineName>KNIGHT_RANSOM_MOD</DefineName>
@@ -200,7 +200,7 @@
   </Define>
   <Define>
     <DefineName>CAPTURED_LUXURY_FOOD_RANDOM_AMOUNT</DefineName>
-    <iDefineIntVal>20</iDefineIntVal>
+    <iDefineIntVal>0</iDefineIntVal>
   </Define>
   <Define>
     <DefineName>CAPTURED_CARGO_RANDOM_AMOUNT</DefineName>
@@ -376,7 +376,7 @@
   </Define>
   <Define>
     <DefineName>CULTURE_YIELD</DefineName>
-    <DefineTextVal>YIELD_CULTURE</DefineTextVal>
+    <DefineTextVal>YIELD_INFLUENCE</DefineTextVal>
   </Define>
   <Define>
     <DefineName>IMMIGRATION_THRESHOLD_INCREASE</DefineName>
@@ -388,15 +388,15 @@
   </Define>
   <Define>
     <DefineName>DEFAULT_CRIMINAL_CLASS</DefineName>
-    <DefineTextVal>UNITCLASS_CRIMINAL</DefineTextVal>
+    <DefineTextVal>UNITCLASS_CONVICT</DefineTextVal>
   </Define>
   <Define>
     <DefineName>DEFAULT_HUNTSMAN_PROFESSION</DefineName>
-    <DefineTextVal>PROFESSION_HUNTSMAN</DefineTextVal>
+    <DefineTextVal>PROFESSION_HUNTER</DefineTextVal>
   </Define>
   <Define>
     <DefineName>DEFAULT_INVENTOR_CLASS</DefineName>
-    <DefineTextVal>UNITCLASS_INVENTOR</DefineTextVal>
+    <DefineTextVal>UNITCLASS_VISIONARY_RESEARCHER</DefineTextVal>
   </Define>
   <Define>
     <DefineName>DEFAULT_RELIC_CLASS</DefineName>
@@ -404,7 +404,7 @@
   </Define>
   <Define>
     <DefineName>DEFAULT_SPECIALBUILDING_COURTHOUSE</DefineName>
-    <DefineTextVal>SPECIALBUILDING_COURTHOUSE</DefineTextVal>
+    <DefineTextVal>SPECIALBUILDING_FORT</DefineTextVal>
   </Define>
   <Define>
     <DefineName>MAX_TRAINED_EXPERIENCE</DefineName>
@@ -460,15 +460,15 @@
   </Define>
   <Define>
     <DefineName>DEFAULT_PILGRAM_CLASS</DefineName>
-    <DefineTextVal>UNITCLASS_PILGRAM</DefineTextVal>
+    <DefineTextVal>UNITCLASS_UFO_CULTIST</DefineTextVal>
   </Define>
   <Define>
     <DefineName>DEFAULT_MARAUDER_CLASS</DefineName>
-    <DefineTextVal>UNITCLASS_MARAUDER</DefineTextVal>
+    <DefineTextVal>UNITCLASS_KILLBOTS</DefineTextVal>
   </Define>
   <Define>
     <DefineName>DEFAULT_SLAVE_CLASS</DefineName>
-    <DefineTextVal>UNITCLASS_SLAVE</DefineTextVal>
+    <DefineTextVal>UNITCLASS_ANDROID</DefineTextVal>
   </Define>
   <Define>
     <DefineName>DEFAULT_TREASURE_YIELD</DefineName>
@@ -584,15 +584,15 @@
   </Define>
   <Define>
     <DefineName>DEFAULT_YIELD_ARMOR_TYPE</DefineName>
-    <DefineTextVal>YIELD_NUTRIENTS</DefineTextVal>
+    <DefineTextVal>YIELD_PLASTEEL</DefineTextVal>
   </Define>
   <Define>
     <DefineName>DEFAULT_GRAIN_GROWTH_UNIT_CLASS</DefineName>
-    <DefineTextVal>UNITCLASS_INDENTURED_SERVANT</DefineTextVal>
+    <DefineTextVal>UNITCLASS_PROLETARIAN</DefineTextVal>
   </Define>
   <Define>
     <DefineName>DEFAULT_NOBLE_GROWTH_UNIT_CLASS</DefineName>
-    <DefineTextVal>UNITCLASS_PAGE</DefineTextVal>
+    <DefineTextVal>UNITCLASS_COLONIST</DefineTextVal>
   </Define>
   <Define>
     <DefineName>UNITTACTIC_PARRY</DefineName>
@@ -623,7 +623,7 @@
   <!--Yield For Industrial Victory-->
   <Define>
     <DefineName>INDUSTRIAL_VICTORY_SINGLE_YIELD</DefineName>
-    <DefineTextVal>YIELD_NUTRIENTS</DefineTextVal>
+    <DefineTextVal>YIELD_PROGENITOR_TECH</DefineTextVal>
   </Define>
   <!--These are the Techs the natives get for free-->
   <Define>
@@ -640,7 +640,7 @@
   </Define>
   <Define>
     <DefineName>PROFESSION_INVENTOR</DefineName>
-    <DefineTextVal>PROFESSION_INVENTOR</DefineTextVal>
+    <DefineTextVal>PROFESSION_RESEARCH</DefineTextVal>
   </Define>
   <!--Leave this at 0, other wise tech tree want work right-->
   <Define>

@@ -5,90 +5,582 @@
 <!-- -->
 <!-- Building Class Infos -->
 <Civ4BuildingClassInfos xmlns="x-schema:CIV4BuildingsSchema.xml">
-	<BuildingClassInfos>
-    <BuildingClassInfo>
-      <Type>BUILDINGCLASS_TRADING_POST</Type>
-      <Description>Trading Post</Description>
-      <DefaultBuilding>BUILDING_TRADING_POST</DefaultBuilding>
-      <VictoryThresholds/>
-    </BuildingClassInfo>
-    <BuildingClassInfo>
-      <Type>BUILDINGCLASS_MARKET</Type>
-      <Description>TXT_KEY_BUILDING_WAREHOUSE</Description>
-      <DefaultBuilding>BUILDING_MARKET</DefaultBuilding>
-      <VictoryThresholds/>
-    </BuildingClassInfo>
-    <BuildingClassInfo>
-      <Type>BUILDINGCLASS_THE_FAIR</Type>
-      <Description>TXT_KEY_BUILDING_THE_FAIR</Description>
-      <DefaultBuilding>BUILDING_THE_FAIR</DefaultBuilding>
-      <VictoryThresholds/>
-    </BuildingClassInfo>
-		<BuildingClassInfo>
-			<Type>BUILDINGCLASS_WAREHOUSE</Type>
-			<Description>TXT_KEY_BUILDING_WAREHOUSE</Description>
-			<DefaultBuilding>BUILDING_WAREHOUSE</DefaultBuilding>
-			<VictoryThresholds/>
-		</BuildingClassInfo>
-		<BuildingClassInfo>
-			<Type>BUILDINGCLASS_WAREHOUSE_EXPANSION</Type>
-			<Description>TXT_KEY_BUILDING_WAREHOUSE_EXPANSION</Description>
-			<DefaultBuilding>BUILDING_WAREHOUSE_EXPANSION</DefaultBuilding>
-			<VictoryThresholds/>
-		</BuildingClassInfo>
-		<BuildingClassInfo>
-			<Type>BUILDINGCLASS_STOCKADE</Type>
-			<Description>TXT_KEY_BUILDING_STOCKADE</Description>
-			<DefaultBuilding>BUILDING_STOCKADE</DefaultBuilding>
-			<VictoryThresholds/>
-		</BuildingClassInfo>
-		<BuildingClassInfo>
-			<Type>BUILDINGCLASS_FORT</Type>
-			<Description>TXT_KEY_BUILDING_FORT</Description>
-			<DefaultBuilding>BUILDING_FORT</DefaultBuilding>
-			<VictoryThresholds/>
-		</BuildingClassInfo>
-		<BuildingClassInfo>
-			<Type>BUILDINGCLASS_FORTRESS</Type>
-			<Description>TXT_KEY_BUILDING_FORTRESS</Description>
-			<DefaultBuilding>BUILDING_FORTRESS</DefaultBuilding>
-			<VictoryThresholds/>
-		</BuildingClassInfo>
-		<BuildingClassInfo>
-			<Type>BUILDINGCLASS_DOCK</Type>
-			<Description>TXT_KEY_BUILDING_DOCK</Description>
-			<DefaultBuilding>BUILDING_DOCK</DefaultBuilding>
-			<VictoryThresholds/>
-		</BuildingClassInfo>
-		<BuildingClassInfo>
-			<Type>BUILDINGCLASS_DRYDOCK</Type>
-			<Description>TXT_KEY_BUILDING_DRYDOCK</Description>
-			<DefaultBuilding>BUILDING_DRYDOCK</DefaultBuilding>
-			<VictoryThresholds/>
-		</BuildingClassInfo>
-		<BuildingClassInfo>
-			<Type>BUILDINGCLASS_SHIPYARD</Type>
-			<Description>TXT_KEY_BUILDING_SHIPYARD</Description>
-			<DefaultBuilding>BUILDING_SHIPYARD</DefaultBuilding>
-			<VictoryThresholds/>
-		</BuildingClassInfo>
-		<BuildingClassInfo>
-			<Type>BUILDINGCLASS_TOWNHALL</Type>
-			<Description>TXT_KEY_BUILDING_TOWNHALL</Description>
-			<DefaultBuilding>BUILDING_TOWNHALL</DefaultBuilding>
-			<VictoryThresholds/>
-		</BuildingClassInfo>
-    <BuildingClassInfo>
-      <Type>BUILDINGCLASS_SHRINE</Type>
-      <Description>TXT_KEY_BUILDING_SHRINE</Description>
-      <DefaultBuilding>BUILDING_SHRINE</DefaultBuilding>
-      <VictoryThresholds/>
-    </BuildingClassInfo>
-		<BuildingClassInfo>
-			<Type>BUILDINGCLASS_BONUS</Type>
-			<Description>TXT_KEY_BUILDING_BONUS</Description>
-			<DefaultBuilding>BUILDING_BONUS_BANANA</DefaultBuilding>
-			<VictoryThresholds/>
-		</BuildingClassInfo>
-	</BuildingClassInfos>
+<BuildingClassInfos>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_MACHINE_TOOLS1</Type>
+	<Description>TXT_KEY_BUILDING_MACHINE_TOOLS1</Description>
+	<DefaultBuilding>BUILDING_MACHINE_TOOLS1</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_MACHINE_TOOLS2</Type>
+	<Description>TXT_KEY_BUILDING_MACHINE_TOOLS2</Description>
+	<DefaultBuilding>BUILDING_MACHINE_TOOLS2</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_MACHINE_TOOLS3</Type>
+	<Description>TXT_KEY_BUILDING_MACHINE_TOOLS3</Description>
+	<DefaultBuilding>BUILDING_MACHINE_TOOLS3</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_ROBOTICS1</Type>
+	<Description>TXT_KEY_BUILDING_ROBOTICS1</Description>
+	<DefaultBuilding>BUILDING_ROBOTICS1</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_ROBOTICS2</Type>
+	<Description>TXT_KEY_BUILDING_ROBOTICS2</Description>
+	<DefaultBuilding>BUILDING_ROBOTICS2</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_ROBOTICS3</Type>
+	<Description>TXT_KEY_BUILDING_ROBOTICS3</Description>
+	<DefaultBuilding>BUILDING_ROBOTICS3</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_MUNITIONS1</Type>
+	<Description>TXT_KEY_BUILDING_MUNITIONS1</Description>
+	<DefaultBuilding>BUILDING_MUNITIONS1</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_MUNITIONS2</Type>
+	<Description>TXT_KEY_BUILDING_MUNITIONS2</Description>
+	<DefaultBuilding>BUILDING_MUNITIONS2</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_MUNITIONS3</Type>
+	<Description>TXT_KEY_BUILDING_MUNITIONS3</Description>
+	<DefaultBuilding>BUILDING_MUNITIONS3</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_PHOTONICS1</Type>
+	<Description>TXT_KEY_BUILDING_PHOTONICS1</Description>
+	<DefaultBuilding>BUILDING_PHOTONICS1</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_PHOTONICS2</Type>
+	<Description>TXT_KEY_BUILDING_PHOTONICS2</Description>
+	<DefaultBuilding>BUILDING_PHOTONICS2</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_PHOTONICS3</Type>
+	<Description>TXT_KEY_BUILDING_PHOTONICS3</Description>
+	<DefaultBuilding>BUILDING_PHOTONICS3</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_HARD_CURRENCY1</Type>
+	<Description>TXT_KEY_BUILDING_HARD_CURRENCY1</Description>
+	<DefaultBuilding>BUILDING_HARD_CURRENCY1</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_HARD_CURRENCY2</Type>
+	<Description>TXT_KEY_BUILDING_HARD_CURRENCY2</Description>
+	<DefaultBuilding>BUILDING_HARD_CURRENCY2</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_HARD_CURRENCY3</Type>
+	<Description>TXT_KEY_BUILDING_HARD_CURRENCY3</Description>
+	<DefaultBuilding>BUILDING_HARD_CURRENCY3</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_PLASTEEL1</Type>
+	<Description>TXT_KEY_BUILDING_PLASTEEL1</Description>
+	<DefaultBuilding>BUILDING_PLASTEEL1</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_PLASTEEL2</Type>
+	<Description>TXT_KEY_BUILDING_PLASTEEL2</Description>
+	<DefaultBuilding>BUILDING_PLASTEEL2</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_PLASTEEL3</Type>
+	<Description>TXT_KEY_BUILDING_PLASTEEL3</Description>
+	<DefaultBuilding>BUILDING_PLASTEEL3</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_DURALLOY1</Type>
+	<Description>TXT_KEY_BUILDING_DURALLOY1</Description>
+	<DefaultBuilding>BUILDING_DURALLOY1</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_DURALLOY2</Type>
+	<Description>TXT_KEY_BUILDING_DURALLOY2</Description>
+	<DefaultBuilding>BUILDING_DURALLOY2</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_DURALLOY3</Type>
+	<Description>TXT_KEY_BUILDING_DURALLOY3</Description>
+	<DefaultBuilding>BUILDING_DURALLOY3</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_CRYSTALLOY1</Type>
+	<Description>TXT_KEY_BUILDING_CRYSTALLOY1</Description>
+	<DefaultBuilding>BUILDING_CRYSTALLOY1</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_CRYSTALLOY2</Type>
+	<Description>TXT_KEY_BUILDING_CRYSTALLOY2</Description>
+	<DefaultBuilding>BUILDING_CRYSTALLOY2</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_CRYSTALLOY3</Type>
+	<Description>TXT_KEY_BUILDING_CRYSTALLOY3</Description>
+	<DefaultBuilding>BUILDING_CRYSTALLOY3</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_NUCLEONICS1</Type>
+	<Description>TXT_KEY_BUILDING_NUCLEONICS1</Description>
+	<DefaultBuilding>BUILDING_NUCLEONICS1</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_NUCLEONICS2</Type>
+	<Description>TXT_KEY_BUILDING_NUCLEONICS2</Description>
+	<DefaultBuilding>BUILDING_NUCLEONICS2</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_NUCLEONICS3</Type>
+	<Description>TXT_KEY_BUILDING_NUCLEONICS3</Description>
+	<DefaultBuilding>BUILDING_NUCLEONICS3</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_FUSION_CORES1</Type>
+	<Description>TXT_KEY_BUILDING_FUSION_CORES1</Description>
+	<DefaultBuilding>BUILDING_FUSION_CORES1</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_FUSION_CORES2</Type>
+	<Description>TXT_KEY_BUILDING_FUSION_CORES2</Description>
+	<DefaultBuilding>BUILDING_FUSION_CORES2</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_FUSION_CORES3</Type>
+	<Description>TXT_KEY_BUILDING_FUSION_CORES3</Description>
+	<DefaultBuilding>BUILDING_FUSION_CORES3</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_SEMICONDUCTORS1</Type>
+	<Description>TXT_KEY_BUILDING_SEMICONDUCTORS1</Description>
+	<DefaultBuilding>BUILDING_SEMICONDUCTORS1</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_SEMICONDUCTORS2</Type>
+	<Description>TXT_KEY_BUILDING_SEMICONDUCTORS2</Description>
+	<DefaultBuilding>BUILDING_SEMICONDUCTORS2</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_SEMICONDUCTORS3</Type>
+	<Description>TXT_KEY_BUILDING_SEMICONDUCTORS3</Description>
+	<DefaultBuilding>BUILDING_SEMICONDUCTORS3</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_PLASMIDS1</Type>
+	<Description>TXT_KEY_BUILDING_PLASMIDS1</Description>
+	<DefaultBuilding>BUILDING_PLASMIDS1</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_PLASMIDS2</Type>
+	<Description>TXT_KEY_BUILDING_PLASMIDS2</Description>
+	<DefaultBuilding>BUILDING_PLASMIDS2</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_PLASMIDS3</Type>
+	<Description>TXT_KEY_BUILDING_PLASMIDS3</Description>
+	<DefaultBuilding>BUILDING_PLASMIDS3</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_ENZYMES1</Type>
+	<Description>TXT_KEY_BUILDING_ENZYMES1</Description>
+	<DefaultBuilding>BUILDING_ENZYMES1</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_ENZYMES2</Type>
+	<Description>TXT_KEY_BUILDING_ENZYMES2</Description>
+	<DefaultBuilding>BUILDING_ENZYMES2</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_ENZYMES3</Type>
+	<Description>TXT_KEY_BUILDING_ENZYMES3</Description>
+	<DefaultBuilding>BUILDING_ENZYMES3</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_STEM_CELLS1</Type>
+	<Description>TXT_KEY_BUILDING_STEM_CELLS1</Description>
+	<DefaultBuilding>BUILDING_STEM_CELLS1</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_STEM_CELLS2</Type>
+	<Description>TXT_KEY_BUILDING_STEM_CELLS2</Description>
+	<DefaultBuilding>BUILDING_STEM_CELLS2</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_STEM_CELLS3</Type>
+	<Description>TXT_KEY_BUILDING_STEM_CELLS3</Description>
+	<DefaultBuilding>BUILDING_STEM_CELLS3</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_STATE_SECRETS1</Type>
+	<Description>TXT_KEY_BUILDING_STATE_SECRETS1</Description>
+	<DefaultBuilding>BUILDING_STATE_SECRETS1</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_STATE_SECRETS2</Type>
+	<Description>TXT_KEY_BUILDING_STATE_SECRETS2</Description>
+	<DefaultBuilding>BUILDING_STATE_SECRETS2</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_STATE_SECRETS3</Type>
+	<Description>TXT_KEY_BUILDING_STATE_SECRETS3</Description>
+	<DefaultBuilding>BUILDING_STATE_SECRETS3</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_PROGENITOR_TECH1</Type>
+	<Description>TXT_KEY_BUILDING_PROGENITOR_TECH1</Description>
+	<DefaultBuilding>BUILDING_PROGENITOR_TECH1</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_PROGENITOR_TECH2</Type>
+	<Description>TXT_KEY_BUILDING_PROGENITOR_TECH2</Description>
+	<DefaultBuilding>BUILDING_PROGENITOR_TECH2</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_PROGENITOR_TECH3</Type>
+	<Description>TXT_KEY_BUILDING_PROGENITOR_TECH3</Description>
+	<DefaultBuilding>BUILDING_PROGENITOR_TECH3</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_ALIEN_RELICS1</Type>
+	<Description>TXT_KEY_BUILDING_ALIEN_RELICS1</Description>
+	<DefaultBuilding>BUILDING_ALIEN_RELICS1</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_ALIEN_RELICS2</Type>
+	<Description>TXT_KEY_BUILDING_ALIEN_RELICS2</Description>
+	<DefaultBuilding>BUILDING_ALIEN_RELICS2</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_ALIEN_RELICS3</Type>
+	<Description>TXT_KEY_BUILDING_ALIEN_RELICS3</Description>
+	<DefaultBuilding>BUILDING_ALIEN_RELICS3</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_NARCOTICS1</Type>
+	<Description>TXT_KEY_BUILDING_NARCOTICS1</Description>
+	<DefaultBuilding>BUILDING_NARCOTICS1</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_NARCOTICS2</Type>
+	<Description>TXT_KEY_BUILDING_NARCOTICS2</Description>
+	<DefaultBuilding>BUILDING_NARCOTICS2</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_NARCOTICS3</Type>
+	<Description>TXT_KEY_BUILDING_NARCOTICS3</Description>
+	<DefaultBuilding>BUILDING_NARCOTICS3</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_BIOWEAPONS1</Type>
+	<Description>TXT_KEY_BUILDING_BIOWEAPONS1</Description>
+	<DefaultBuilding>BUILDING_BIOWEAPONS1</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_BIOWEAPONS2</Type>
+	<Description>TXT_KEY_BUILDING_BIOWEAPONS2</Description>
+	<DefaultBuilding>BUILDING_BIOWEAPONS2</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_BIOWEAPONS3</Type>
+	<Description>TXT_KEY_BUILDING_BIOWEAPONS3</Description>
+	<DefaultBuilding>BUILDING_BIOWEAPONS3</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_PHARMACEUTICALS1</Type>
+	<Description>TXT_KEY_BUILDING_PHARMACEUTICALS1</Description>
+	<DefaultBuilding>BUILDING_PHARMACEUTICALS1</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_PHARMACEUTICALS2</Type>
+	<Description>TXT_KEY_BUILDING_PHARMACEUTICALS2</Description>
+	<DefaultBuilding>BUILDING_PHARMACEUTICALS2</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_PHARMACEUTICALS3</Type>
+	<Description>TXT_KEY_BUILDING_PHARMACEUTICALS3</Description>
+	<DefaultBuilding>BUILDING_PHARMACEUTICALS3</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_PETROCHEMICALS1</Type>
+	<Description>TXT_KEY_BUILDING_PETROCHEMICALS1</Description>
+	<DefaultBuilding>BUILDING_PETROCHEMICALS1</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_PETROCHEMICALS2</Type>
+	<Description>TXT_KEY_BUILDING_PETROCHEMICALS2</Description>
+	<DefaultBuilding>BUILDING_PETROCHEMICALS2</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_PETROCHEMICALS3</Type>
+	<Description>TXT_KEY_BUILDING_PETROCHEMICALS3</Description>
+	<DefaultBuilding>BUILDING_PETROCHEMICALS3</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_COLLOIDS1</Type>
+	<Description>TXT_KEY_BUILDING_COLLOIDS1</Description>
+	<DefaultBuilding>BUILDING_COLLOIDS1</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_COLLOIDS2</Type>
+	<Description>TXT_KEY_BUILDING_COLLOIDS2</Description>
+	<DefaultBuilding>BUILDING_COLLOIDS2</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_COLLOIDS3</Type>
+	<Description>TXT_KEY_BUILDING_COLLOIDS3</Description>
+	<DefaultBuilding>BUILDING_COLLOIDS3</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_CATALYSTS1</Type>
+	<Description>TXT_KEY_BUILDING_CATALYSTS1</Description>
+	<DefaultBuilding>BUILDING_CATALYSTS1</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_CATALYSTS2</Type>
+	<Description>TXT_KEY_BUILDING_CATALYSTS2</Description>
+	<DefaultBuilding>BUILDING_CATALYSTS2</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_CATALYSTS3</Type>
+	<Description>TXT_KEY_BUILDING_CATALYSTS3</Description>
+	<DefaultBuilding>BUILDING_CATALYSTS3</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_INDUSTRY1</Type>
+	<Description>TXT_KEY_BUILDING_INDUSTRY1</Description>
+	<DefaultBuilding>BUILDING_INDUSTRY1</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_INDUSTRY2</Type>
+	<Description>TXT_KEY_BUILDING_INDUSTRY2</Description>
+	<DefaultBuilding>BUILDING_INDUSTRY2</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_INDUSTRY3</Type>
+	<Description>TXT_KEY_BUILDING_INDUSTRY3</Description>
+	<DefaultBuilding>BUILDING_INDUSTRY3</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_MEDIA1</Type>
+	<Description>TXT_KEY_BUILDING_MEDIA1</Description>
+	<DefaultBuilding>BUILDING_MEDIA1</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_MEDIA2</Type>
+	<Description>TXT_KEY_BUILDING_MEDIA2</Description>
+	<DefaultBuilding>BUILDING_MEDIA2</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_MEDIA3</Type>
+	<Description>TXT_KEY_BUILDING_MEDIA3</Description>
+	<DefaultBuilding>BUILDING_MEDIA3</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_LIBERTY1</Type>
+	<Description>TXT_KEY_BUILDING_LIBERTY1</Description>
+	<DefaultBuilding>BUILDING_LIBERTY1</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_LIBERTY2</Type>
+	<Description>TXT_KEY_BUILDING_LIBERTY2</Description>
+	<DefaultBuilding>BUILDING_LIBERTY2</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_LIBERTY3</Type>
+	<Description>TXT_KEY_BUILDING_LIBERTY3</Description>
+	<DefaultBuilding>BUILDING_LIBERTY3</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_RESEARCH1</Type>
+	<Description>TXT_KEY_BUILDING_RESEARCH1</Description>
+	<DefaultBuilding>BUILDING_RESEARCH1</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_RESEARCH2</Type>
+	<Description>TXT_KEY_BUILDING_RESEARCH2</Description>
+	<DefaultBuilding>BUILDING_RESEARCH2</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_RESEARCH3</Type>
+	<Description>TXT_KEY_BUILDING_RESEARCH3</Description>
+	<DefaultBuilding>BUILDING_RESEARCH3</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_EDUCATION1</Type>
+	<Description>TXT_KEY_BUILDING_EDUCATION1</Description>
+	<DefaultBuilding>BUILDING_EDUCATION1</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_EDUCATION2</Type>
+	<Description>TXT_KEY_BUILDING_EDUCATION2</Description>
+	<DefaultBuilding>BUILDING_EDUCATION2</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_EDUCATION3</Type>
+	<Description>TXT_KEY_BUILDING_EDUCATION3</Description>
+	<DefaultBuilding>BUILDING_EDUCATION3</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_FORT1</Type>
+	<Description>TXT_KEY_BUILDING_FORT1</Description>
+	<DefaultBuilding>BUILDING_FORT1</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_FORT2</Type>
+	<Description>TXT_KEY_BUILDING_FORT2</Description>
+	<DefaultBuilding>BUILDING_FORT2</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_FORT3</Type>
+	<Description>TXT_KEY_BUILDING_FORT3</Description>
+	<DefaultBuilding>BUILDING_FORT3</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_DOCK1</Type>
+	<Description>TXT_KEY_BUILDING_DOCK1</Description>
+	<DefaultBuilding>BUILDING_DOCK1</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_DOCK2</Type>
+	<Description>TXT_KEY_BUILDING_DOCK2</Description>
+	<DefaultBuilding>BUILDING_DOCK2</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_DOCK3</Type>
+	<Description>TXT_KEY_BUILDING_DOCK3</Description>
+	<DefaultBuilding>BUILDING_DOCK3</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_WAREHOUSE1</Type>
+	<Description>TXT_KEY_BUILDING_WAREHOUSE1</Description>
+	<DefaultBuilding>BUILDING_WAREHOUSE1</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_WAREHOUSE2</Type>
+	<Description>TXT_KEY_BUILDING_WAREHOUSE2</Description>
+	<DefaultBuilding>BUILDING_WAREHOUSE2</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_WAREHOUSE3</Type>
+	<Description>TXT_KEY_BUILDING_WAREHOUSE3</Description>
+	<DefaultBuilding>BUILDING_WAREHOUSE3</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_MARKET1</Type>
+	<Description>TXT_KEY_BUILDING_MARKET1</Description>
+	<DefaultBuilding>BUILDING_MARKET1</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_MARKET2</Type>
+	<Description>TXT_KEY_BUILDING_MARKET2</Description>
+	<DefaultBuilding>BUILDING_MARKET2</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_MARKET3</Type>
+	<Description>TXT_KEY_BUILDING_MARKET3</Description>
+	<DefaultBuilding>BUILDING_MARKET3</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+</BuildingClassInfos>
 </Civ4BuildingClassInfos>

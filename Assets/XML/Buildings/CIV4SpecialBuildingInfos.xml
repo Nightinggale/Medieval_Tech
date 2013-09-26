@@ -5,254 +5,262 @@
 <!-- -->
 <!-- Special Building -->
 <Civ4SpecialBuildingInfos xmlns="x-schema:CIV4BuildingsSchema.xml">
-	<SpecialBuildingInfos>
-		<SpecialBuildingInfo>
-			<Type>SPECIALBUILDING_BELLS</Type>
-			<Description>TXT_KEY_SPECIALBUILDING_BELLS</Description>
-			<bValid>1</bValid>
-			<FontButtonIndex>29</FontButtonIndex>
-			<ProductionTraits/>
-			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
-		</SpecialBuildingInfo>
-		<SpecialBuildingInfo>
-			<Type>SPECIALBUILDING_HAMMERS</Type>
-			<Description>TXT_KEY_SPECIALBUILDING_HAMMERS</Description>
-			<bValid>1</bValid>
-			<FontButtonIndex>28</FontButtonIndex>
-			<ProductionTraits/>
-			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
-		</SpecialBuildingInfo>
-		<SpecialBuildingInfo>
-			<Type>SPECIALBUILDING_HIDES</Type>
-			<Description>TXT_KEY_SPECIALBUILDING_COATS</Description>
-			<bValid>1</bValid>
-			<FontButtonIndex>11</FontButtonIndex>
-			<ProductionTraits/>
-			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
-		</SpecialBuildingInfo>
-		<SpecialBuildingInfo>
-			<Type>SPECIALBUILDING_CLOTH</Type>
-			<Description>TXT_KEY_SPECIALBUILDING_CLOTH</Description>
-			<bValid>1</bValid>
-			<FontButtonIndex>16</FontButtonIndex>
-			<ProductionTraits/>
-			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
-		</SpecialBuildingInfo>
-		<SpecialBuildingInfo>
-			<Type>SPECIALBUILDING_RUM</Type>
-			<Description>TXT_KEY_SPECIALBUILDING_RUM</Description>
-			<bValid>1</bValid>
-			<FontButtonIndex>18</FontButtonIndex>
-			<ProductionTraits/>
-			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
-		</SpecialBuildingInfo>
-		<SpecialBuildingInfo>
-			<Type>SPECIALBUILDING_CIGARS</Type>
-			<Description>TXT_KEY_SPECIALBUILDING_CIGARS</Description>
-			<bValid>1</bValid>
-			<FontButtonIndex>19</FontButtonIndex>
-			<ProductionTraits/>
-			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
-		</SpecialBuildingInfo>
-		<SpecialBuildingInfo>
-			<Type>SPECIALBUILDING_TOOLS</Type>
-			<Description>TXT_KEY_SPECIALBUILDING_TOOLS</Description>
-			<bValid>1</bValid>
-			<FontButtonIndex>20</FontButtonIndex>
-			<ProductionTraits/>
-			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
-		</SpecialBuildingInfo>
-		<SpecialBuildingInfo>
-			<Type>SPECIALBUILDING_CROSSES</Type>
-			<Description>TXT_KEY_SPECIALBUILDING_CROSSES</Description>
-			<bValid>1</bValid>
-			<FontButtonIndex>30</FontButtonIndex>
-			<ProductionTraits/>
-			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
-		</SpecialBuildingInfo>
-		<SpecialBuildingInfo>
-			<Type>SPECIALBUILDING_MUSKETS</Type>
-			<Description>TXT_KEY_SPECIALBUILDING_MUSKETS</Description>
-			<bValid>1</bValid>
-			<FontButtonIndex>21</FontButtonIndex>
-			<ProductionTraits/>
-			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
-		</SpecialBuildingInfo>
-		<SpecialBuildingInfo>
-			<Type>SPECIALBUILDING_HORSES</Type>
-			<Description>TXT_KEY_SPECIALBUILDING_HORSES</Description>
-			<bValid>1</bValid>
-			<FontButtonIndex>22</FontButtonIndex>
-			<ProductionTraits/>
-			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
-		</SpecialBuildingInfo>
-		<SpecialBuildingInfo>
-			<Type>SPECIALBUILDING_DRAMA</Type>
-			<Description>Drama</Description>
-			<bValid>1</bValid>
-			<FontButtonIndex>33</FontButtonIndex>
-			<ProductionTraits/>
-			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
-		</SpecialBuildingInfo>
-		<SpecialBuildingInfo>
-			<Type>SPECIALBUILDING_INN</Type>
-			<Description>Inn</Description>
-			<bValid>1</bValid>
-			<FontButtonIndex>33</FontButtonIndex>
-			<ProductionTraits/>
-			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
-		</SpecialBuildingInfo>
-		<SpecialBuildingInfo>
-			<Type>SPECIALBUILDING_EDUCATION</Type>
-			<Description>TXT_KEY_SPECIALBUILDING_EDUCATION</Description>
-			<bValid>1</bValid>
-			<FontButtonIndex>31</FontButtonIndex>
-			<ProductionTraits/>
-			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
-		</SpecialBuildingInfo>
-    <SpecialBuildingInfo>
-      <Type>SPECIALBUILDING_COATS</Type>
-      <Description>TXT_KEY_SPECIALBUILDING_COATS</Description>
-      <bValid>1</bValid>
-      <FontButtonIndex>17</FontButtonIndex>
-      <ProductionTraits/>
-      <Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
-    </SpecialBuildingInfo>
-		<SpecialBuildingInfo>
-			<Type>SPECIALBUILDING_PRINT</Type>
-			<Description>TXT_KEY_SPECIALBUILDING_PRINT</Description>
-			<bValid>1</bValid>
-			<FontButtonIndex>29</FontButtonIndex>
-			<ProductionTraits/>
-			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
-		</SpecialBuildingInfo>
-    <SpecialBuildingInfo>
-      <Type>SPECIALBUILDING_IDEAS</Type>
-      <Description>TXT_KEY_SPECIALBUILDING_PRINT</Description>
-      <bValid>1</bValid>
-      <FontButtonIndex>32</FontButtonIndex>
-      <ProductionTraits/>
-      <Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
-    </SpecialBuildingInfo>
-    <SpecialBuildingInfo>
-      <Type>SPECIALBUILDING_BREAD</Type>
-      <Description>TXT_KEY_SPECIALBUILDING_BELLS</Description>
-      <bValid>1</bValid>
-      <FontButtonIndex>1</FontButtonIndex>
-      <ProductionTraits/>
-      <Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
-    </SpecialBuildingInfo>
-    <SpecialBuildingInfo>
-      <Type>SPECIALBUILDING_BUTCHER</Type>
-      <Description>TXT_KEY_SPECIALBUILDING_BELLS</Description>
-      <bValid>1</bValid>
-      <FontButtonIndex>1</FontButtonIndex>
-      <ProductionTraits/>
-      <Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
-    </SpecialBuildingInfo>
-    <SpecialBuildingInfo>
-      <Type>SPECIALBUILDING_ARMOR_1</Type>
-      <Description>TXT_KEY_SPECIALBUILDING_BELLS</Description>
-      <bValid>1</bValid>
-      <FontButtonIndex>24</FontButtonIndex>
-      <ProductionTraits/>
-      <Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
-    </SpecialBuildingInfo>
-    <SpecialBuildingInfo>
-      <Type>SPECIALBUILDING_COURTHOUSE</Type>
-      <Description>TXT_KEY_SPECIALBUILDING_BELLS</Description>
-      <bValid>1</bValid>
-      <FontButtonIndex>33</FontButtonIndex>
-      <ProductionTraits/>
-      <Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
-    </SpecialBuildingInfo>
-    <SpecialBuildingInfo>
-      <Type>SPECIALBUILDING_CANAL</Type>
-      <Description>TXT_KEY_SPECIALBUILDING_BELLS</Description>
-      <bValid>1</bValid>
-      <FontButtonIndex>35</FontButtonIndex>
-      <ProductionTraits/>
-      <Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
-    </SpecialBuildingInfo>
-    <SpecialBuildingInfo>
-      <Type>SPECIALBUILDING_WALL</Type>
-      <Description>TXT_KEY_SPECIALBUILDING_BELLS</Description>
-      <bValid>1</bValid>
-      <FontButtonIndex>35</FontButtonIndex>
-      <ProductionTraits/>
-      <Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
-    </SpecialBuildingInfo>
-    <SpecialBuildingInfo>
-      <Type>SPECIALBUILDING_MARKET_SHRINE</Type>
-      <Description>TXT_KEY_SPECIALBUILDING_BELLS</Description>
-      <bValid>1</bValid>
-      <FontButtonIndex>30</FontButtonIndex>
-      <ProductionTraits/>
-      <Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
-    </SpecialBuildingInfo>
-    <SpecialBuildingInfo>
-      <Type>SPECIALBUILDING_LIBRARY</Type>
-      <Description>TXT_KEY_SPECIALBUILDING_BELLS</Description>
-      <bValid>1</bValid>
-      <FontButtonIndex>32</FontButtonIndex>
-      <ProductionTraits/>
-      <Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
-    </SpecialBuildingInfo>
-    <SpecialBuildingInfo>
-      <Type>SPECIALBUILDING_GRANARY</Type>
-      <Description>TXT_KEY_SPECIALBUILDING_BELLS</Description>
-      <bValid>1</bValid>
-      <FontButtonIndex>0</FontButtonIndex>
-      <ProductionTraits/>
-      <Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
-    </SpecialBuildingInfo>
-    <SpecialBuildingInfo>
-      <Type>SPECIALBUILDING_DOCK</Type>
-      <Description>TXT_KEY_SPECIALBUILDING_BELLS</Description>
-      <bValid>1</bValid>
-      <FontButtonIndex>34</FontButtonIndex>
-      <ProductionTraits/>
-      <Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
-    </SpecialBuildingInfo>
-    <SpecialBuildingInfo>
-      <Type>SPECIALBUILDING_STOREHOUSE</Type>
-      <Description>TXT_KEY_SPECIALBUILDING_BELLS</Description>
-      <bValid>1</bValid>
-      <FontButtonIndex>27</FontButtonIndex>
-      <ProductionTraits/>
-      <Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
-    </SpecialBuildingInfo>
-    <SpecialBuildingInfo>
-      <Type>SPECIALBUILDING_WINDMILL</Type>
-      <Description>TXT_KEY_SPECIALBUILDING_BELLS</Description>
-      <bValid>1</bValid>
-      <FontButtonIndex>27</FontButtonIndex>
-      <ProductionTraits/>
-      <Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
-    </SpecialBuildingInfo>
-    <SpecialBuildingInfo>
-      <Type>SPECIALBUILDING_WATERWHEEL</Type>
-      <Description>TXT_KEY_SPECIALBUILDING_BELLS</Description>
-      <bValid>1</bValid>
-      <FontButtonIndex>27</FontButtonIndex>
-      <ProductionTraits/>
-      <Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
-    </SpecialBuildingInfo>
-    <SpecialBuildingInfo>
-      <Type>SPECIALBUILDING_SIEGE</Type>
-      <Description>TXT_KEY_SPECIALBUILDING_BELLS</Description>
-      <bValid>1</bValid>
-      <FontButtonIndex>27</FontButtonIndex>
-      <ProductionTraits/>
-      <Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
-    </SpecialBuildingInfo>
-    <SpecialBuildingInfo>
-      <Type>SPECIALBUILDING_BANK</Type>
-      <Description>TXT_KEY_SPECIALBUILDING_BELLS</Description>
-      <bValid>1</bValid>
-      <FontButtonIndex>9</FontButtonIndex>
-      <ProductionTraits/>
-      <Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
-    </SpecialBuildingInfo>
-  </SpecialBuildingInfos>
+<SpecialBuildingInfos>
+<SpecialBuildingInfo>
+	<Type>SPECIALBUILDING_MACHINE_TOOLS</Type>
+	<Description>TXT_KEY_YIELD_MACHINE_TOOLS</Description>
+	<bValid>1</bValid>
+	<FontButtonIndex>58</FontButtonIndex>
+	<ProductionTraits/>
+	<Button>,/Art/Buttons/Yields/MACHINE_TOOLS.dds</Button>
+</SpecialBuildingInfo>
+<SpecialBuildingInfo>
+	<Type>SPECIALBUILDING_ROBOTICS</Type>
+	<Description>TXT_KEY_YIELD_ROBOTICS</Description>
+	<bValid>1</bValid>
+	<FontButtonIndex>59</FontButtonIndex>
+	<ProductionTraits/>
+	<Button>,/Art/Buttons/Yields/ROBOTICS.dds</Button>
+</SpecialBuildingInfo>
+<SpecialBuildingInfo>
+	<Type>SPECIALBUILDING_MUNITIONS</Type>
+	<Description>TXT_KEY_YIELD_MUNITIONS</Description>
+	<bValid>1</bValid>
+	<FontButtonIndex>60</FontButtonIndex>
+	<ProductionTraits/>
+	<Button>,/Art/Buttons/Yields/MUNITIONS.dds</Button>
+</SpecialBuildingInfo>
+<SpecialBuildingInfo>
+	<Type>SPECIALBUILDING_PHOTONICS</Type>
+	<Description>TXT_KEY_YIELD_PHOTONICS</Description>
+	<bValid>1</bValid>
+	<FontButtonIndex>61</FontButtonIndex>
+	<ProductionTraits/>
+	<Button>,/Art/Buttons/Yields/PHOTONICS.dds</Button>
+</SpecialBuildingInfo>
+<SpecialBuildingInfo>
+	<Type>SPECIALBUILDING_HARD_CURRENCY</Type>
+	<Description>TXT_KEY_YIELD_HARD_CURRENCY</Description>
+	<bValid>1</bValid>
+	<FontButtonIndex>62</FontButtonIndex>
+	<ProductionTraits/>
+	<Button>,/Art/Buttons/Yields/HARD_CURRENCY.dds</Button>
+</SpecialBuildingInfo>
+<SpecialBuildingInfo>
+	<Type>SPECIALBUILDING_PLASTEEL</Type>
+	<Description>TXT_KEY_YIELD_PLASTEEL</Description>
+	<bValid>1</bValid>
+	<FontButtonIndex>63</FontButtonIndex>
+	<ProductionTraits/>
+	<Button>,/Art/Buttons/Yields/PLASTEEL.dds</Button>
+</SpecialBuildingInfo>
+<SpecialBuildingInfo>
+	<Type>SPECIALBUILDING_DURALLOY</Type>
+	<Description>TXT_KEY_YIELD_DURALLOY</Description>
+	<bValid>1</bValid>
+	<FontButtonIndex>64</FontButtonIndex>
+	<ProductionTraits/>
+	<Button>,/Art/Buttons/Yields/DURALLOY.dds</Button>
+</SpecialBuildingInfo>
+<SpecialBuildingInfo>
+	<Type>SPECIALBUILDING_CRYSTALLOY</Type>
+	<Description>TXT_KEY_YIELD_CRYSTALLOY</Description>
+	<bValid>1</bValid>
+	<FontButtonIndex>65</FontButtonIndex>
+	<ProductionTraits/>
+	<Button>,/Art/Buttons/Yields/CRYSTALLOY.dds</Button>
+</SpecialBuildingInfo>
+<SpecialBuildingInfo>
+	<Type>SPECIALBUILDING_NUCLEONICS</Type>
+	<Description>TXT_KEY_YIELD_NUCLEONICS</Description>
+	<bValid>1</bValid>
+	<FontButtonIndex>66</FontButtonIndex>
+	<ProductionTraits/>
+	<Button>,/Art/Buttons/Yields/NUCLEONICS.dds</Button>
+</SpecialBuildingInfo>
+<SpecialBuildingInfo>
+	<Type>SPECIALBUILDING_FUSION_CORES</Type>
+	<Description>TXT_KEY_YIELD_FUSION_CORES</Description>
+	<bValid>1</bValid>
+	<FontButtonIndex>67</FontButtonIndex>
+	<ProductionTraits/>
+	<Button>,/Art/Buttons/Yields/FUSION_CORES.dds</Button>
+</SpecialBuildingInfo>
+<SpecialBuildingInfo>
+	<Type>SPECIALBUILDING_SEMICONDUCTORS</Type>
+	<Description>TXT_KEY_YIELD_SEMICONDUCTORS</Description>
+	<bValid>1</bValid>
+	<FontButtonIndex>68</FontButtonIndex>
+	<ProductionTraits/>
+	<Button>,/Art/Buttons/Yields/SEMICONDUCTORS.dds</Button>
+</SpecialBuildingInfo>
+<SpecialBuildingInfo>
+	<Type>SPECIALBUILDING_PLASMIDS</Type>
+	<Description>TXT_KEY_YIELD_PLASMIDS</Description>
+	<bValid>1</bValid>
+	<FontButtonIndex>69</FontButtonIndex>
+	<ProductionTraits/>
+	<Button>,/Art/Buttons/Yields/PLASMIDS.dds</Button>
+</SpecialBuildingInfo>
+<SpecialBuildingInfo>
+	<Type>SPECIALBUILDING_ENZYMES</Type>
+	<Description>TXT_KEY_YIELD_ENZYMES</Description>
+	<bValid>1</bValid>
+	<FontButtonIndex>70</FontButtonIndex>
+	<ProductionTraits/>
+	<Button>,/Art/Buttons/Yields/ENZYMES.dds</Button>
+</SpecialBuildingInfo>
+<SpecialBuildingInfo>
+	<Type>SPECIALBUILDING_STEM_CELLS</Type>
+	<Description>TXT_KEY_YIELD_STEM_CELLS</Description>
+	<bValid>1</bValid>
+	<FontButtonIndex>71</FontButtonIndex>
+	<ProductionTraits/>
+	<Button>,/Art/Buttons/Yields/STEM_CELLS.dds</Button>
+</SpecialBuildingInfo>
+<SpecialBuildingInfo>
+	<Type>SPECIALBUILDING_STATE_SECRETS</Type>
+	<Description>TXT_KEY_YIELD_STATE_SECRETS</Description>
+	<bValid>1</bValid>
+	<FontButtonIndex>72</FontButtonIndex>
+	<ProductionTraits/>
+	<Button>,/Art/Buttons/Yields/STATE_SECRETS.dds</Button>
+</SpecialBuildingInfo>
+<SpecialBuildingInfo>
+	<Type>SPECIALBUILDING_PROGENITOR_TECH</Type>
+	<Description>TXT_KEY_YIELD_PROGENITOR_TECH</Description>
+	<bValid>1</bValid>
+	<FontButtonIndex>73</FontButtonIndex>
+	<ProductionTraits/>
+	<Button>,/Art/Buttons/Yields/PROGENITOR_TECH.dds</Button>
+</SpecialBuildingInfo>
+<SpecialBuildingInfo>
+	<Type>SPECIALBUILDING_ALIEN_RELICS</Type>
+	<Description>TXT_KEY_YIELD_ALIEN_RELICS</Description>
+	<bValid>1</bValid>
+	<FontButtonIndex>74</FontButtonIndex>
+	<ProductionTraits/>
+	<Button>,/Art/Buttons/Yields/ALIEN_RELICS.dds</Button>
+</SpecialBuildingInfo>
+<SpecialBuildingInfo>
+	<Type>SPECIALBUILDING_NARCOTICS</Type>
+	<Description>TXT_KEY_YIELD_NARCOTICS</Description>
+	<bValid>1</bValid>
+	<FontButtonIndex>75</FontButtonIndex>
+	<ProductionTraits/>
+	<Button>,/Art/Buttons/Yields/NARCOTICS.dds</Button>
+</SpecialBuildingInfo>
+<SpecialBuildingInfo>
+	<Type>SPECIALBUILDING_BIOWEAPONS</Type>
+	<Description>TXT_KEY_YIELD_BIOWEAPONS</Description>
+	<bValid>1</bValid>
+	<FontButtonIndex>76</FontButtonIndex>
+	<ProductionTraits/>
+	<Button>,/Art/Buttons/Yields/BIOWEAPONS.dds</Button>
+</SpecialBuildingInfo>
+<SpecialBuildingInfo>
+	<Type>SPECIALBUILDING_PHARMACEUTICALS</Type>
+	<Description>TXT_KEY_YIELD_PHARMACEUTICALS</Description>
+	<bValid>1</bValid>
+	<FontButtonIndex>77</FontButtonIndex>
+	<ProductionTraits/>
+	<Button>,/Art/Buttons/Yields/PHARMACEUTICALS.dds</Button>
+</SpecialBuildingInfo>
+<SpecialBuildingInfo>
+	<Type>SPECIALBUILDING_PETROCHEMICALS</Type>
+	<Description>TXT_KEY_YIELD_PETROCHEMICALS</Description>
+	<bValid>1</bValid>
+	<FontButtonIndex>78</FontButtonIndex>
+	<ProductionTraits/>
+	<Button>,/Art/Buttons/Yields/PETROCHEMICALS.dds</Button>
+</SpecialBuildingInfo>
+<SpecialBuildingInfo>
+	<Type>SPECIALBUILDING_COLLOIDS</Type>
+	<Description>TXT_KEY_YIELD_COLLOIDS</Description>
+	<bValid>1</bValid>
+	<FontButtonIndex>79</FontButtonIndex>
+	<ProductionTraits/>
+	<Button>,/Art/Buttons/Yields/COLLOIDS.dds</Button>
+</SpecialBuildingInfo>
+<SpecialBuildingInfo>
+	<Type>SPECIALBUILDING_CATALYSTS</Type>
+	<Description>TXT_KEY_YIELD_CATALYSTS</Description>
+	<bValid>1</bValid>
+	<FontButtonIndex>80</FontButtonIndex>
+	<ProductionTraits/>
+	<Button>,/Art/Buttons/Yields/CATALYSTS.dds</Button>
+</SpecialBuildingInfo>
+<SpecialBuildingInfo>
+	<Type>SPECIALBUILDING_INDUSTRY</Type>
+	<Description>TXT_KEY_YIELD_INDUSTRY</Description>
+	<bValid>1</bValid>
+	<FontButtonIndex>81</FontButtonIndex>
+	<ProductionTraits/>
+	<Button>,/Art/Buttons/Yields/INDUSTRY.dds</Button>
+</SpecialBuildingInfo>
+<SpecialBuildingInfo>
+	<Type>SPECIALBUILDING_MEDIA</Type>
+	<Description>TXT_KEY_YIELD_MEDIA</Description>
+	<bValid>1</bValid>
+	<FontButtonIndex>82</FontButtonIndex>
+	<ProductionTraits/>
+	<Button>,/Art/Buttons/Yields/MEDIA.dds</Button>
+</SpecialBuildingInfo>
+<SpecialBuildingInfo>
+	<Type>SPECIALBUILDING_LIBERTY</Type>
+	<Description>TXT_KEY_YIELD_LIBERTY</Description>
+	<bValid>1</bValid>
+	<FontButtonIndex>83</FontButtonIndex>
+	<ProductionTraits/>
+	<Button>,/Art/Buttons/Yields/LIBERTY.dds</Button>
+</SpecialBuildingInfo>
+<SpecialBuildingInfo>
+	<Type>SPECIALBUILDING_RESEARCH</Type>
+	<Description>TXT_KEY_YIELD_RESEARCH</Description>
+	<bValid>1</bValid>
+	<FontButtonIndex>84</FontButtonIndex>
+	<ProductionTraits/>
+	<Button>,/Art/Buttons/Yields/RESEARCH.dds</Button>
+</SpecialBuildingInfo>
+<SpecialBuildingInfo>
+	<Type>SPECIALBUILDING_EDUCATION</Type>
+	<Description>TXT_KEY_YIELD_EDUCATION</Description>
+	<bValid>1</bValid>
+	<FontButtonIndex>85</FontButtonIndex>
+	<ProductionTraits/>
+	<Button>,/Art/Buttons/Yields/EDUCATION.dds</Button>
+</SpecialBuildingInfo>
+<SpecialBuildingInfo>
+	<Type>SPECIALBUILDING_FORT</Type>
+	<Description>TXT_KEY_YIELD_FORT</Description>
+	<bValid>1</bValid>
+	<FontButtonIndex>86</FontButtonIndex>
+	<ProductionTraits/>
+	<Button>,/Art/Buttons/Yields/FORT.dds</Button>
+</SpecialBuildingInfo>
+<SpecialBuildingInfo>
+	<Type>SPECIALBUILDING_DOCK</Type>
+	<Description>TXT_KEY_YIELD_DOCK</Description>
+	<bValid>1</bValid>
+	<FontButtonIndex>87</FontButtonIndex>
+	<ProductionTraits/>
+	<Button>,/Art/Buttons/Yields/DOCK.dds</Button>
+</SpecialBuildingInfo>
+<SpecialBuildingInfo>
+	<Type>SPECIALBUILDING_WAREHOUSE</Type>
+	<Description>TXT_KEY_YIELD_WAREHOUSE</Description>
+	<bValid>1</bValid>
+	<FontButtonIndex>88</FontButtonIndex>
+	<ProductionTraits/>
+	<Button>,/Art/Buttons/Yields/WAREHOUSE.dds</Button>
+</SpecialBuildingInfo>
+<SpecialBuildingInfo>
+	<Type>SPECIALBUILDING_MARKET</Type>
+	<Description>TXT_KEY_YIELD_MARKET</Description>
+	<bValid>1</bValid>
+	<FontButtonIndex>89</FontButtonIndex>
+	<ProductionTraits/>
+	<Button>,/Art/Buttons/Yields/MARKET.dds</Button>
+</SpecialBuildingInfo>
+</SpecialBuildingInfos>
 </Civ4SpecialBuildingInfos>

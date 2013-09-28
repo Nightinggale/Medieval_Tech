@@ -18,7 +18,7 @@ def_noun "Mine"  => "Mines";
 
 # improvements, goodyhuts and improvement builds
 @builds = ('Farm','Mill','Quarry','Mine','Facility','Lab','Plantation','Rig');
-@goody = ('Alien Menhir','Abduction Site');
+@goody = ('Alien Menhir','Abduction Site','Land Worked','Water Worked','City Ruins');
 @improvements = (@builds,@goody);
 
 # arrays of professions: 1st item = description, 2nd item = yield produced, rest of items = yield inputs
@@ -83,8 +83,9 @@ def_noun "Mine"  => "Mines";
 #city production yields needing specialbuildings
 @cityyields = ("Machine Tools" , "Robotics" , "Munitions" , "Photonics" , "Hard Currency" , "Plasteel" , "Duralloy" , "Crystalloy" , "Nucleonics" , "Fusion Cores" , "Semiconductors" , "Plasmids" , "Enzymes" , "Stem Cells" , "State Secrets" , "Progenitor Tech" , "Alien Relics" , "Narcotics" , "Bioweapons" , "Pharmaceuticals" , "Petrochemicals" , "Colloids" , "Catalysts", "Industry" , "Media", "Liberty", "Research", "Education");
 #other specialbuildings
-@miscbuildings = ("Fort","Dock","Warehouse","Market");
-@allbuildings = (@cityyields,@miscbuildings);
+@miscbuildings = ("Fort","Dock","Warehouse","Market","Prison");
+@onetierbuildings = ("Shrine","Trading Post");
+@allbuildings = (@cityyields,@miscbuildings,@onetierbuildings);
 
 #From units
 # array of arrays for unit content: first element = specialist name, rest = specialist yields
@@ -99,7 +100,7 @@ def_noun "Mine"  => "Mines";
 	['Expert Driller','HYDROCARBONS','CLATHRATES','CORE_SAMPLES'],
 	['Master Machinist','MACHINE_TOOLS'],
 	['Mechanical Engineer','ROBOTICS'],
-	['Infamous Arms Dealer','WEAPONS','PHOTONICS'],
+	['Infamous Arms Dealer','MUNITIONS','PHOTONICS'],
 	['Master Metallurgist','PLASTEEL','DURALLOY','CRYSTALLOY'],
 	['Brilliant Physicist','NUCLEONICS','FUSION_CORES','SEMICONDUCTORS'],
 	['Brilliant Geneticist','PLASMIDS','ENZYMES','STEM_CELLS'],
@@ -112,6 +113,7 @@ def_noun "Mine"  => "Mines";
 	['Civil Engineer','INDUSTRY'],
 	['Fascinating Celebrity','MEDIA'],
 	['Artful Politician','LIBERTY'],
+	['Visionary Researcher','RESEARCH'],
 	['Convict','EDUCATION'],
 	['Proletarian','EDUCATION'],
 	['UFO Cultist','EDUCATION'],
@@ -124,7 +126,7 @@ def_noun "Mine"  => "Mines";
 	['Veteran Soldier','']
 	);
 # professions that "walk" on the map
-@walkprofs = ("Explorer", "Laborer", "Mechanized Laborer", "Hunter", "Trader", "Anthropologist", "Emissary", "Militia", "Infantry", "Scout Mecha", "Tactical Mecha", "Heavy Mecha", "Terrorist", "Pirate");
+@walkprofs = ("Colonist", "Explorer", "Laborer", "Mechanized Laborer", "Hunter", "Trader", "Anthropologist", "Emissary", "Militia", "Infantry", "Scout Mecha", "Tactical Mecha", "Heavy Mecha", "Terrorist", "Pirate");
 # military and other non-colonist units which don't take professions
 @miscunits = ("Convoy","Corvette","Frigate","Gunboat","Destroyer","Cruiser","Battleship","Dreadnought","Probe","Dropship","Freighter","Heavy Freighter","Mining Vessel","Science Vessel","Colony Ship","Treasure","Relic","Colonial Garrison");
 @beastunits = ("Killbots","Progenitor AI","Arachnid","Scorpion","Amoeba","Enigma Virion");
@@ -174,14 +176,19 @@ sub makeuclass
 # open XML for writing
 open (YI, '> ./xml/Terrain/CIV4YieldInfos.xml') or die "Can't write yields: $!";
 open (TEXT, '> ./xml/Text/CIV4GameText_2071.xml') or die "Can't write text: $!";
+open (EI, '> ./xml/GameInfo/CIV4EmphasizeInfo.xml') or die "Can't write yields: $!";
 print TEXT '<?xml version="1.0" encoding="ISO-8859-1"?>'."\n";
 print TEXT '<Civ4GameText xmlns="http://www.firaxis.com">'."\n";
 
-# generate yields XML
+# generate yieldinfos and emphasizeinfo XML
 print YI '<?xml version="1.0"?>'."\n";
 print YI '<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by EXTREME (Firaxis Games) -->'."\n";
 print YI '<!-- Sid Meier\'s Civilization 4 -->'."\n".'<!-- Copyright Firaxis Games 2005 -->'."\n".'<!-- -->'."\n";
 print YI '<Civ4YieldInfos xmlns="x-schema:CIV4TerrainSchema.xml">'."\n<YieldInfos>\n";
+print EI '<?xml version="1.0"?>'."\n";
+print EI '<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) Alex Mantzaris (Firaxis Games) -->'."\n";
+print EI '<!-- Sid Meier\'s Civilization 4 -->'."\n".'<!-- Copyright Firaxis Games 2005 -->'."\n".'<!-- -->'."\n".'<!-- Emphasize Infos -->'."\n";
+print EI '<Civ4EmphasizeInfo xmlns="x-schema:CIV4GameInfoSchema.xml">'."\n<EmphasizeInfos>\n";
 foreach $item (@allyields)
 	{
 	my $tag = $item;
@@ -192,7 +199,10 @@ foreach $item (@allyields)
 	print YI "<YieldInfo>\n";
 	print YI "\t<Type>YIELD_".$tag."</Type>\n";
 	print YI "\t<Description>TXT_KEY_YIELD_".$tag."</Description>\n";
+	&maketext('TXT_KEY_YIELD_'.$tag,$desc);
 	print YI "\t<Civilopedia>TXT_KEY_YIELD_".$tag."_PEDIA</Civilopedia>\n";
+	my $pedia = 'The many unique properties of alien materials, together with Earth\'s rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]'.$desc."[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.";
+	&maketext('TXT_KEY_YIELD_'.$tag.'_PEDIA',$pedia);
 	print YI "\t<bCargo>".$iscargo."</bCargo>\n";
 	print YI "\t<iBuyPriceLow>10</iBuyPriceLow>\n";
 	print YI "\t<iBuyPriceHigh>15</iBuyPriceHigh>\n";
@@ -221,9 +231,9 @@ foreach $item (@allyields)
 		}
 	print YI "\t<iTextureIndex>".$index."</iTextureIndex>\n";
 	print YI "\t<iWaterTextureIndex>20</iWaterTextureIndex>\n";
-	print YI "\t<Icon>/Art/Buttons/Yields/".$tag.".dds</Icon>\n";
-	print YI "\t<HighlightIcon>/Art/Buttons/Yields/".$tag.".dds</HighlightIcon>\n";
-	print YI "\t".'<Button>/Art/Buttons/Yields/'.$tag.'.dds</Button>'."\n";
+	print YI "\t<Icon>Art/Buttons/Yields/".$desc.".dds</Icon>\n";
+	print YI "\t<HighlightIcon>Art/Buttons/Yields/".$desc.".dds</HighlightIcon>\n";
+	print YI "\t".'<Button>Art/Buttons/Yields/'.$desc.'.dds</Button>'."\n";
 	print YI "\t<TradeScreenTypes>\n";
 	print YI "\t\t<TradeScreenType>\n";
 	print YI "\t\t\t<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>\n";
@@ -235,9 +245,45 @@ foreach $item (@allyields)
 	print YI "\t\t</TradeScreenType>\n";
 	print YI "\t</TradeScreenTypes>\n";
 	print YI "</YieldInfo>\n";
-	&maketext('TXT_KEY_YIELD_'.$tag,$desc);
-	$index++;
+	
+#	emphasize infos
+	print EI "<EmphasizeInfo>\n";
+	print EI "\t<Type>EMPHASIZE_".$tag."</Type>\n";
+	print EI "\t<Description>Emphasize ".$desc."</Description>\n";
+	print EI "\t<Button>Art/Interface/Buttons/Yields/".$tag.'.dds</Button>'."\n";
+	print EI "\t<bAvoidGrowth>0</bAvoidGrowth>\n";
+	print EI "\t<YieldModifiers>\n";
+	print EI "\t\t<YieldModifier>\n";
+	print EI "\t\t\t<YieldType>YIELD_".$tag."</YieldType>\n";
+	print EI "\t\t\t<iYield>1</iYield>\n";
+	print EI "\t\t</YieldModifier>\n";
+	print EI "\t</YieldModifiers>\n";
+	print EI "</EmphasizeInfo>\n";
+	print EI "<EmphasizeInfo>\n";
+	print EI "\t<Type>EMPHASIZE_NO_".$tag."</Type>\n";
+	print EI "\t<Description>Deemphasize ".$desc."</Description>\n";
+	print EI "\t<Button>Art/Interface/Buttons/Yields/".$tag.'.dds</Button>'."\n";
+	print EI "\t<bAvoidGrowth>0</bAvoidGrowth>\n";
+	print EI "\t<YieldModifiers>\n";
+	print EI "\t\t<YieldModifier>\n";
+	print EI "\t\t\t<YieldType>YIELD_".$tag."</YieldType>\n";
+	print EI "\t\t\t<iYield>-1</iYield>\n";
+	print EI "\t\t</YieldModifier>\n";
+	print EI "\t</YieldModifiers>\n";
+	print EI "</EmphasizeInfo>\n";
+	$index=1;
 	}
+# close files
+print EI "<EmphasizeInfo>\n";
+print EI "\t<Type>EMPHASIZE_AVOID_GROWTH</Type>\n";
+print EI "\t<Description>TXT_KEY_EMPHASIZE_AVOID_GROWTH</Description>\n";
+&maketext("TXT_KEY_EMPHASIZE_AVOID_GROWTH","Avoid Growth");
+print EI "\t<Button>Art/Interface/Buttons/Governor/Food.dds</Button>"."\n";
+print EI "\t<bAvoidGrowth>1</bAvoidGrowth>\n";
+print EI "\t<YieldModifiers/>\n";
+print EI "</EmphasizeInfo>\n";	
+print EI "</EmphasizeInfos>\n</Civ4EmphasizeInfo>\n";
+close EI;
 print YI "</YieldInfos>\n</Civ4YieldInfos>\n";
 close YI;
 
@@ -532,6 +578,8 @@ print ADB '<Civ4ArtDefines xmlns="x-schema:CIV4ArtDefinesSchema.xml">'."\n<Build
 # generate XML content
 foreach $item (@allbuildings)
 	{
+	if (grep {$_ eq $item} @onetierbuildings) {$isonetier = 1;} else {$isonetier = 0;}
+	if (grep {$_ eq $item} @miscbuildings) {$isnoyield = 1;} else {$isnoyield = 0;}
 	my $desc = $item;
 	$desc =~ tr/_/ /;
 	$desc =~ s/(\w+)/\u\L$1/g;
@@ -539,6 +587,7 @@ foreach $item (@allbuildings)
 	$item =~ tr/[a-z]/[A-Z]/;
 	$index++;
 	
+	if (not $isonetier) {
 	# specialbuilding for item
 	print SBI "<SpecialBuildingInfo>\n";	
 	print SBI "\t<Type>SPECIALBUILDING_".$item."</Type>\n";
@@ -548,9 +597,9 @@ foreach $item (@allbuildings)
 	print SBI "\t<ProductionTraits/>\n";
 	print SBI "\t".'<Button>,/Art/Buttons/Yields/'.$item.'.dds</Button>'."\n";
 	print SBI "</SpecialBuildingInfo>\n";
-
+	$tag = $item.'1';} else {$tag = $item;}
+	
 	# level 1
-	my $tag = $item.'1';
 	if ($tag=~/TOOLS/ or $tag=~/MUNITIONS/ or $tag=~/ROBOTICS/) {$suffix = 'Workshop';}
 	else {$suffix = 'Facility'};
 	my $bdesc = $desc.' '.$suffix;
@@ -559,8 +608,8 @@ foreach $item (@allbuildings)
 	print BI "<BuildingInfo>\n";	
 	print BI "\t<Type>BUILDING_".$tag."</Type>\n";
 	print BI "\t<BuildingClass>BUILDINGCLASS_".$tag."</BuildingClass>\n";
-	if (grep {$_ eq $bdesc} @miscbuildings) {
-		print BI "\t<SpecialBuildingType><SpecialBuildingType>\n";}
+	if ($isonetier) {
+		print BI "\t<SpecialBuildingType>NONE</SpecialBuildingType>\n";}
 		else{print BI "\t<SpecialBuildingType>SPECIALBUILDING_".$item."</SpecialBuildingType>\n";}
 	print BI "\t<iSpecialBuildingPriority>0</iSpecialBuildingPriority>\n";
 	print BI "\t<Description>TXT_KEY_BUILDING_".$tag."</Description>\n";
@@ -598,12 +647,6 @@ foreach $item (@allbuildings)
 	print BI "\t<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>\n";
 	print BI "\t<iProfessionOutput>3</iProfessionOutput>\n";
 	print BI "\t<iMaxWorkers>2</iMaxWorkers>\n";
-	print BI "\t<YieldDemands>\n";
-	print BI "\t\t<YieldDemand/>\n";
-	print BI "\t\t\t<iYieldType>\n";
-	print BI "\t\t\t<iYieldDemand/>\n";
-	print BI "\t\t</YieldDemand>\n";
-	print BI "\t</YieldDemands>\n";
 	print BI "\t<iMinAreaSize>-1</iMinAreaSize>\n";
 	print BI "\t<iConquestProb>0</iConquestProb>\n";
 	print BI "\t<iCitiesPrereq>0</iCitiesPrereq>\n";
@@ -627,7 +670,8 @@ foreach $item (@allbuildings)
 	print BI "\t<YieldChanges/>\n";
 	print BI "\t<YieldModifiers>\n";
 	print BI "\t\t<YieldModifier>\n";
-	print BI "\t\t\t<YieldType>YIELD_".$item."</YieldType>\n";	
+	if ($isnoyield or $isonetier) {print BI "\t\t\t<YieldType></YieldType>\n";}
+		else {print BI "\t\t\t<YieldType>YIELD_".$item."</YieldType>\n";}	
 	print BI "\t\t\t<iModifier>0</iModifier>\n";	
 	print BI "\t\t</YieldModifier>\n";
 	print BI "\t</YieldModifiers>\n";
@@ -660,6 +704,8 @@ foreach $item (@allbuildings)
 	print ADB "\t<Button>Art/Buttons/Buildings/".$tag.'.dds</Button>'."\n";
 	print ADB "</BuildingArtInfo>\n";
 
+	next if $isonetier;
+	
 	# level 2
 	my $tag = $item.'2';
 	if ($tag=~/TOOLS/ or $tag=~/MUNITIONS/ or $tag=~/ROBOTICS/) {$suffix = 'Plant';}
@@ -712,12 +758,6 @@ foreach $item (@allbuildings)
 	print BI "\t<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>\n";
 	print BI "\t<iProfessionOutput>6</iProfessionOutput>\n";
 	print BI "\t<iMaxWorkers>3</iMaxWorkers>\n";
-	print BI "\t<YieldDemands>\n";
-	print BI "\t\t<YieldDemand/>\n";
-	print BI "\t\t\t<iYieldType>\n";
-	print BI "\t\t\t<iYieldDemand/>\n";
-	print BI "\t\t</YieldDemand>\n";
-	print BI "\t</YieldDemands>\n";
 	print BI "\t<iMinAreaSize>-1</iMinAreaSize>\n";
 	print BI "\t<iConquestProb>0</iConquestProb>\n";
 	print BI "\t<iCitiesPrereq>0</iCitiesPrereq>\n";
@@ -741,8 +781,8 @@ foreach $item (@allbuildings)
 	print BI "\t<YieldChanges/>\n";
 	print BI "\t<YieldModifiers>\n";
 	print BI "\t\t<YieldModifier>\n";
-	print BI "\t\t\t<YieldType>YIELD_".$item."</YieldType>\n";	
-	print BI "\t\t\t<iModifier>25</iModifier>\n";	
+	if ($isnoyield) {print BI "\t\t\t<YieldType></YieldType>\n\t\t\t<iModifier>0</iModifier>\n";}
+		else {print BI "\t\t\t<YieldType>YIELD_".$item."</YieldType>\n\t\t\t<iModifier>25</iModifier>\n";}
 	print BI "\t\t</YieldModifier>\n";
 	print BI "\t</YieldModifiers>\n";
 	print BI "\t<ConstructSound/>\n";
@@ -781,7 +821,7 @@ foreach $item (@allbuildings)
 
 	# level 3
 	my $tag = $item.'3';
-	if ($tag=~/TOOLS/ or $tag=~/WEAPONS/ or $tag=~/ROBOTICS/ or $tag=~/SEMICONDUCTORS/) {$suffix = 'Foundry';}
+	if ($tag=~/TOOLS/ or $tag=~/MUNITIONS/ or $tag=~/ROBOTICS/ or $tag=~/SEMICONDUCTORS/) {$suffix = 'Foundry';}
 		elsif ($tag=~/PLASMIDS/ or $tag=~/ENZYMES/ or $tag=~/PROGENITOR_TECH/ or $tag=~/ALIEN_RELICS/ or $tag=~/STATE_SECRETS/ or $tag=~/MICROBES/) {$suffix = 'Institute';}
 		else {$suffix = 'Complex';}
 	my $bdesc = $desc.' '.$suffix;
@@ -835,12 +875,6 @@ foreach $item (@allbuildings)
 	print BI "\t<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>\n";
 	print BI "\t<iProfessionOutput>6</iProfessionOutput>\n";
 	print BI "\t<iMaxWorkers>5</iMaxWorkers>\n";
-	print BI "\t<YieldDemands>\n";
-	print BI "\t\t<YieldDemand/>\n";
-	print BI "\t\t\t<iYieldType>\n";
-	print BI "\t\t\t<iYieldDemand/>\n";
-	print BI "\t\t</YieldDemand>\n";
-	print BI "\t</YieldDemands>\n";
 	print BI "\t<iMinAreaSize>-1</iMinAreaSize>\n";
 	print BI "\t<iConquestProb>0</iConquestProb>\n";
 	print BI "\t<iCitiesPrereq>0</iCitiesPrereq>\n";
@@ -864,8 +898,8 @@ foreach $item (@allbuildings)
 	print BI "\t<YieldChanges/>\n";
 	print BI "\t<YieldModifiers>\n";
 	print BI "\t\t<YieldModifier>\n";
-	print BI "\t\t\t<YieldType>YIELD_".$item."</YieldType>\n";	
-	print BI "\t\t\t<iModifier>50</iModifier>\n";	
+	if ($isnoyield) {print BI "\t\t\t<YieldType></YieldType>\n\t\t\t<iModifier>0</iModifier>\n";}
+		else {print BI "\t\t\t<YieldType>YIELD_".$item."</YieldType>\n\t\t\t<iModifier>50</iModifier>\n";}
 	print BI "\t\t</YieldModifier>\n";
 	print BI "\t</YieldModifiers>\n";
 	print BI "\t<ConstructSound/>\n";
@@ -978,7 +1012,6 @@ foreach $item (@allspecialists)
 	$strategy = 'Build '.A($desc).' to increase our industrial power.';
 	print UI "\t<Strategy>TXT_KEY_UNIT_".$tag."_STRATEGY</Strategy>\n";
 	&maketext("TXT_KEY_UNIT_".$tag."_STRATEGY", $strategy);
-	print UI "\t<Strategy></Strategy>\n";
 	print UI "\t<bGraphicalOnly>0</bGraphicalOnly>\n";
 	print UI "\t<bNoBadGoodies>0</bNoBadGoodies>\n";
 	print UI "\t<bOnlyDefensive>0</bOnlyDefensive>\n";
@@ -1053,8 +1086,8 @@ foreach $item (@allspecialists)
 	print UI "\t<UnitClassDefenseMods/>\n";
 	print UI "\t<UnitCombatMods/>\n";
 	print UI "\t<DomainMods/>\n";
-	print UI "\t<YieldModifiers>\n";
 	if ($skills[0] =~ /\w+/) {
+		print UI "\t<YieldModifiers>\n";
 		foreach my $skill (@skills)
 			{
 			print UI "\t\t<YieldModifier>\n";
@@ -1062,8 +1095,9 @@ foreach $item (@allspecialists)
 			print UI "\t\t\t<iYieldMod>100</iYieldMod>\n";		
 			print UI "\t\t</YieldModifier>\n";
 			}
-		} else { print UI "\t\t<YieldModifier></YieldModifier>\n";}
-	print UI "\t</YieldModifiers>\n";
+		print UI "\t</YieldModifiers>\n";
+		}
+		else { print UI "\t<YieldModifiers/>\n";}
 	print UI "\t<YieldChanges/>\n";
 	print UI "\t<BonusYieldChanges/>\n";
 	print UI "\t<bLandYieldChanges>1</bLandYieldChanges>\n";
@@ -1078,7 +1112,6 @@ foreach $item (@allspecialists)
 	print UI "\t<iNativeLearnTime>-1</iNativeLearnTime>\n";
 	print UI "\t<iStudentWeight>1000</iStudentWeight>\n";
 	print UI "\t<iTeacherWeight>0</iTeacherWeight>\n";
-	print UI "\t<iTeachLevel>0</iTeachLevel>\n";	
 	print UI"\t<ProfessionMeshGroups>\n";
 	# for profession colonist, use artdef of this unittype
 	print UI"\t\t<UnitMeshGroups>\n";
@@ -1483,7 +1516,7 @@ foreach $item (@beastunits)
 	print UI "\t<Capture>NONE</Capture>\n";
 	print UI "\t<Combat>NONE</Combat>\n";
 	print UI "\t<Domain>DOMAIN_LAND</Domain>\n";
-	print UI "\t<DefaultUnitAI>UNITAI_COMBAT_LAND</DefaultUnitAI>\n";
+	print UI "\t<DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>\n";
 	print UI "\t<DefaultProfession>NONE</DefaultProfession>\n";
 	print UI "\t<Invisible>NONE</Invisible>\n";
 	print UI "\t<SeeInvisible>NONE</SeeInvisible>\n";
@@ -1517,7 +1550,7 @@ foreach $item (@beastunits)
 	print UI "\t<UnitClassUpgrades/>\n";
 	print UI "\t<UnitAIs>\n";
 	print UI "\t\t<UnitAI>\n";
-	print UI "\t\t\t<UnitAIType>UNITAI_COMBAT_LAND</UnitAIType>\n";
+	print UI "\t\t\t<UnitAIType>UNITAI_OFFENSIVE</UnitAIType>\n";
 	print UI "\t\t\t<bUnitAI>1</bUnitAI>\n";
 	print UI "\t\t</UnitAI>\n";
 	print UI "\t</UnitAIs>\n";

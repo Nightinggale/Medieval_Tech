@@ -33,9 +33,9 @@
 	<UnitClass>UNITCLASS_NUTRIENTS</UnitClass>
 	<iTextureIndex></iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/NUTRIENTS.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/NUTRIENTS.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/NUTRIENTS.dds</Button>
+	<Icon>Art/Buttons/Yields/Nutrients.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Nutrients.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Nutrients.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -75,9 +75,9 @@
 	<UnitClass>UNITCLASS_BIOPOLYMERS</UnitClass>
 	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/BIOPOLYMERS.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/BIOPOLYMERS.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/BIOPOLYMERS.dds</Button>
+	<Icon>Art/Buttons/Yields/Biopolymers.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Biopolymers.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Biopolymers.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -115,11 +115,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_SILICATES</UnitClass>
-	<iTextureIndex>2</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/SILICATES.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/SILICATES.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/SILICATES.dds</Button>
+	<Icon>Art/Buttons/Yields/Silicates.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Silicates.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Silicates.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -157,11 +157,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_BASE_METALS</UnitClass>
-	<iTextureIndex>3</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/BASE_METALS.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/BASE_METALS.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/BASE_METALS.dds</Button>
+	<Icon>Art/Buttons/Yields/Base Metals.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Base Metals.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Base Metals.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -199,11 +199,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_ACTINIDES</UnitClass>
-	<iTextureIndex>4</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/ACTINIDES.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/ACTINIDES.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/ACTINIDES.dds</Button>
+	<Icon>Art/Buttons/Yields/Actinides.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Actinides.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Actinides.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -241,11 +241,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_ISOTOPES</UnitClass>
-	<iTextureIndex>5</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/ISOTOPES.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/ISOTOPES.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/ISOTOPES.dds</Button>
+	<Icon>Art/Buttons/Yields/Isotopes.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Isotopes.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Isotopes.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -283,11 +283,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_RARE_EARTHS</UnitClass>
-	<iTextureIndex>6</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/RARE_EARTHS.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/RARE_EARTHS.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/RARE_EARTHS.dds</Button>
+	<Icon>Art/Buttons/Yields/Rare Earths.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Rare Earths.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Rare Earths.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -325,11 +325,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_CRYSTALLOIDS</UnitClass>
-	<iTextureIndex>7</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/CRYSTALLOIDS.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/CRYSTALLOIDS.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/CRYSTALLOIDS.dds</Button>
+	<Icon>Art/Buttons/Yields/Crystalloids.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Crystalloids.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Crystalloids.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -367,11 +367,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_NUCLEIC_ACIDS</UnitClass>
-	<iTextureIndex>8</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/NUCLEIC_ACIDS.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/NUCLEIC_ACIDS.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/NUCLEIC_ACIDS.dds</Button>
+	<Icon>Art/Buttons/Yields/Nucleic Acids.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Nucleic Acids.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Nucleic Acids.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -409,11 +409,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_AMINO_ACIDS</UnitClass>
-	<iTextureIndex>9</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/AMINO_ACIDS.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/AMINO_ACIDS.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/AMINO_ACIDS.dds</Button>
+	<Icon>Art/Buttons/Yields/Amino Acids.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Amino Acids.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Amino Acids.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -451,11 +451,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_TISSUE_SAMPLES</UnitClass>
-	<iTextureIndex>10</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/TISSUE_SAMPLES.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/TISSUE_SAMPLES.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/TISSUE_SAMPLES.dds</Button>
+	<Icon>Art/Buttons/Yields/Tissue Samples.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Tissue Samples.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Tissue Samples.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -493,11 +493,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_MICROBES</UnitClass>
-	<iTextureIndex>11</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/MICROBES.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/MICROBES.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/MICROBES.dds</Button>
+	<Icon>Art/Buttons/Yields/Microbes.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Microbes.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Microbes.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -535,11 +535,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_DATACORES</UnitClass>
-	<iTextureIndex>12</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/DATACORES.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/DATACORES.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/DATACORES.dds</Button>
+	<Icon>Art/Buttons/Yields/Datacores.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Datacores.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Datacores.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -577,11 +577,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_PROGENITOR_ARTIFACTS</UnitClass>
-	<iTextureIndex>13</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/PROGENITOR_ARTIFACTS.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/PROGENITOR_ARTIFACTS.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/PROGENITOR_ARTIFACTS.dds</Button>
+	<Icon>Art/Buttons/Yields/Progenitor Artifacts.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Progenitor Artifacts.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Progenitor Artifacts.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -619,11 +619,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_ALIEN_SPECIMENS</UnitClass>
-	<iTextureIndex>14</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/ALIEN_SPECIMENS.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/ALIEN_SPECIMENS.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/ALIEN_SPECIMENS.dds</Button>
+	<Icon>Art/Buttons/Yields/Alien Specimens.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Alien Specimens.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Alien Specimens.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -661,11 +661,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_PRECIOUS_METALS</UnitClass>
-	<iTextureIndex>15</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/PRECIOUS_METALS.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/PRECIOUS_METALS.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/PRECIOUS_METALS.dds</Button>
+	<Icon>Art/Buttons/Yields/Precious Metals.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Precious Metals.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Precious Metals.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -703,11 +703,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_OPIATES</UnitClass>
-	<iTextureIndex>16</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/OPIATES.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/OPIATES.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/OPIATES.dds</Button>
+	<Icon>Art/Buttons/Yields/Opiates.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Opiates.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Opiates.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -745,11 +745,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_XENOTOXINS</UnitClass>
-	<iTextureIndex>17</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/XENOTOXINS.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/XENOTOXINS.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/XENOTOXINS.dds</Button>
+	<Icon>Art/Buttons/Yields/Xenotoxins.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Xenotoxins.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Xenotoxins.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -787,11 +787,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_BOTANICALS</UnitClass>
-	<iTextureIndex>18</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/BOTANICALS.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/BOTANICALS.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/BOTANICALS.dds</Button>
+	<Icon>Art/Buttons/Yields/Botanicals.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Botanicals.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Botanicals.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -829,11 +829,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_HYDROCARBONS</UnitClass>
-	<iTextureIndex>19</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/HYDROCARBONS.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/HYDROCARBONS.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/HYDROCARBONS.dds</Button>
+	<Icon>Art/Buttons/Yields/Hydrocarbons.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Hydrocarbons.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Hydrocarbons.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -871,11 +871,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_CLATHRATES</UnitClass>
-	<iTextureIndex>20</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/CLATHRATES.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/CLATHRATES.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/CLATHRATES.dds</Button>
+	<Icon>Art/Buttons/Yields/Clathrates.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Clathrates.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Clathrates.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -913,11 +913,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_CORE_SAMPLES</UnitClass>
-	<iTextureIndex>21</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/CORE_SAMPLES.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/CORE_SAMPLES.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/CORE_SAMPLES.dds</Button>
+	<Icon>Art/Buttons/Yields/Core Samples.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Core Samples.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Core Samples.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -955,11 +955,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_MACHINE_TOOLS</UnitClass>
-	<iTextureIndex>22</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/MACHINE_TOOLS.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/MACHINE_TOOLS.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/MACHINE_TOOLS.dds</Button>
+	<Icon>Art/Buttons/Yields/Machine Tools.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Machine Tools.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Machine Tools.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -997,11 +997,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_ROBOTICS</UnitClass>
-	<iTextureIndex>23</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/ROBOTICS.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/ROBOTICS.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/ROBOTICS.dds</Button>
+	<Icon>Art/Buttons/Yields/Robotics.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Robotics.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Robotics.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -1039,11 +1039,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_MUNITIONS</UnitClass>
-	<iTextureIndex>24</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/MUNITIONS.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/MUNITIONS.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/MUNITIONS.dds</Button>
+	<Icon>Art/Buttons/Yields/Munitions.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Munitions.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Munitions.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -1081,11 +1081,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_PHOTONICS</UnitClass>
-	<iTextureIndex>25</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/PHOTONICS.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/PHOTONICS.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/PHOTONICS.dds</Button>
+	<Icon>Art/Buttons/Yields/Photonics.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Photonics.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Photonics.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -1123,11 +1123,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_PLASTEEL</UnitClass>
-	<iTextureIndex>26</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/PLASTEEL.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/PLASTEEL.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/PLASTEEL.dds</Button>
+	<Icon>Art/Buttons/Yields/Plasteel.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Plasteel.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Plasteel.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -1165,11 +1165,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_DURALLOY</UnitClass>
-	<iTextureIndex>27</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/DURALLOY.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/DURALLOY.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/DURALLOY.dds</Button>
+	<Icon>Art/Buttons/Yields/Duralloy.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Duralloy.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Duralloy.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -1207,11 +1207,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_CRYSTALLOY</UnitClass>
-	<iTextureIndex>28</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/CRYSTALLOY.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/CRYSTALLOY.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/CRYSTALLOY.dds</Button>
+	<Icon>Art/Buttons/Yields/Crystalloy.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Crystalloy.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Crystalloy.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -1249,11 +1249,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_NUCLEONICS</UnitClass>
-	<iTextureIndex>29</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/NUCLEONICS.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/NUCLEONICS.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/NUCLEONICS.dds</Button>
+	<Icon>Art/Buttons/Yields/Nucleonics.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Nucleonics.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Nucleonics.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -1291,11 +1291,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_FUSION_CORES</UnitClass>
-	<iTextureIndex>30</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/FUSION_CORES.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/FUSION_CORES.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/FUSION_CORES.dds</Button>
+	<Icon>Art/Buttons/Yields/Fusion Cores.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Fusion Cores.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Fusion Cores.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -1333,11 +1333,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_SEMICONDUCTORS</UnitClass>
-	<iTextureIndex>31</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/SEMICONDUCTORS.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/SEMICONDUCTORS.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/SEMICONDUCTORS.dds</Button>
+	<Icon>Art/Buttons/Yields/Semiconductors.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Semiconductors.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Semiconductors.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -1375,11 +1375,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_PLASMIDS</UnitClass>
-	<iTextureIndex>32</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/PLASMIDS.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/PLASMIDS.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/PLASMIDS.dds</Button>
+	<Icon>Art/Buttons/Yields/Plasmids.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Plasmids.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Plasmids.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -1417,11 +1417,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_ENZYMES</UnitClass>
-	<iTextureIndex>33</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/ENZYMES.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/ENZYMES.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/ENZYMES.dds</Button>
+	<Icon>Art/Buttons/Yields/Enzymes.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Enzymes.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Enzymes.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -1459,11 +1459,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_STEM_CELLS</UnitClass>
-	<iTextureIndex>34</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/STEM_CELLS.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/STEM_CELLS.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/STEM_CELLS.dds</Button>
+	<Icon>Art/Buttons/Yields/Stem Cells.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Stem Cells.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Stem Cells.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -1501,11 +1501,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_STATE_SECRETS</UnitClass>
-	<iTextureIndex>35</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/STATE_SECRETS.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/STATE_SECRETS.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/STATE_SECRETS.dds</Button>
+	<Icon>Art/Buttons/Yields/State Secrets.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/State Secrets.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/State Secrets.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -1543,11 +1543,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_PROGENITOR_TECH</UnitClass>
-	<iTextureIndex>36</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/PROGENITOR_TECH.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/PROGENITOR_TECH.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/PROGENITOR_TECH.dds</Button>
+	<Icon>Art/Buttons/Yields/Progenitor Tech.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Progenitor Tech.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Progenitor Tech.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -1585,11 +1585,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_ALIEN_RELICS</UnitClass>
-	<iTextureIndex>37</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/ALIEN_RELICS.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/ALIEN_RELICS.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/ALIEN_RELICS.dds</Button>
+	<Icon>Art/Buttons/Yields/Alien Relics.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Alien Relics.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Alien Relics.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -1627,11 +1627,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_NARCOTICS</UnitClass>
-	<iTextureIndex>38</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/NARCOTICS.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/NARCOTICS.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/NARCOTICS.dds</Button>
+	<Icon>Art/Buttons/Yields/Narcotics.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Narcotics.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Narcotics.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -1669,11 +1669,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_BIOWEAPONS</UnitClass>
-	<iTextureIndex>39</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/BIOWEAPONS.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/BIOWEAPONS.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/BIOWEAPONS.dds</Button>
+	<Icon>Art/Buttons/Yields/Bioweapons.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Bioweapons.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Bioweapons.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -1711,11 +1711,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_PHARMACEUTICALS</UnitClass>
-	<iTextureIndex>40</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/PHARMACEUTICALS.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/PHARMACEUTICALS.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/PHARMACEUTICALS.dds</Button>
+	<Icon>Art/Buttons/Yields/Pharmaceuticals.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Pharmaceuticals.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Pharmaceuticals.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -1753,11 +1753,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_PETROCHEMICALS</UnitClass>
-	<iTextureIndex>41</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/PETROCHEMICALS.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/PETROCHEMICALS.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/PETROCHEMICALS.dds</Button>
+	<Icon>Art/Buttons/Yields/Petrochemicals.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Petrochemicals.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Petrochemicals.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -1795,11 +1795,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_COLLOIDS</UnitClass>
-	<iTextureIndex>42</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/COLLOIDS.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/COLLOIDS.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/COLLOIDS.dds</Button>
+	<Icon>Art/Buttons/Yields/Colloids.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Colloids.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Colloids.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -1837,11 +1837,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_CATALYSTS</UnitClass>
-	<iTextureIndex>43</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/CATALYSTS.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/CATALYSTS.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/CATALYSTS.dds</Button>
+	<Icon>Art/Buttons/Yields/Catalysts.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Catalysts.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Catalysts.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -1879,11 +1879,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_HARD_CURRENCY</UnitClass>
-	<iTextureIndex>44</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/HARD_CURRENCY.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/HARD_CURRENCY.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/HARD_CURRENCY.dds</Button>
+	<Icon>Art/Buttons/Yields/Hard Currency.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Hard Currency.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Hard Currency.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -1921,11 +1921,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_EARTH_GOODS</UnitClass>
-	<iTextureIndex>45</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/EARTH_GOODS.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/EARTH_GOODS.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/EARTH_GOODS.dds</Button>
+	<Icon>Art/Buttons/Yields/Earth Goods.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Earth Goods.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Earth Goods.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -1963,11 +1963,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_CONTRABAND</UnitClass>
-	<iTextureIndex>46</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/CONTRABAND.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/CONTRABAND.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/CONTRABAND.dds</Button>
+	<Icon>Art/Buttons/Yields/Contraband.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Contraband.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Contraband.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -2005,11 +2005,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass>UNITCLASS_EARTHLING_SPECIMENS</UnitClass>
-	<iTextureIndex>47</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/EARTHLING_SPECIMENS.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/EARTHLING_SPECIMENS.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/EARTHLING_SPECIMENS.dds</Button>
+	<Icon>Art/Buttons/Yields/Earthling Specimens.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Earthling Specimens.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Earthling Specimens.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -2047,11 +2047,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass></UnitClass>
-	<iTextureIndex>48</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/INDUSTRY.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/INDUSTRY.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/INDUSTRY.dds</Button>
+	<Icon>Art/Buttons/Yields/Industry.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Industry.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Industry.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -2089,11 +2089,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass></UnitClass>
-	<iTextureIndex>49</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/MEDIA.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/MEDIA.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/MEDIA.dds</Button>
+	<Icon>Art/Buttons/Yields/Media.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Media.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Media.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -2131,11 +2131,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass></UnitClass>
-	<iTextureIndex>50</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/LIBERTY.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/LIBERTY.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/LIBERTY.dds</Button>
+	<Icon>Art/Buttons/Yields/Liberty.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Liberty.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Liberty.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -2173,11 +2173,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass></UnitClass>
-	<iTextureIndex>51</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/RESEARCH.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/RESEARCH.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/RESEARCH.dds</Button>
+	<Icon>Art/Buttons/Yields/Research.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Research.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Research.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -2215,11 +2215,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass></UnitClass>
-	<iTextureIndex>52</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/EDUCATION.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/EDUCATION.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/EDUCATION.dds</Button>
+	<Icon>Art/Buttons/Yields/Education.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Education.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Education.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -2257,11 +2257,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass></UnitClass>
-	<iTextureIndex>53</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/INFLUENCE.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/INFLUENCE.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/INFLUENCE.dds</Button>
+	<Icon>Art/Buttons/Yields/Influence.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Influence.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Influence.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -2299,11 +2299,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass></UnitClass>
-	<iTextureIndex>54</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/ENERGY.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/ENERGY.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/ENERGY.dds</Button>
+	<Icon>Art/Buttons/Yields/Energy.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Energy.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Energy.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -2341,11 +2341,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass></UnitClass>
-	<iTextureIndex>55</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/POLLUTANTS.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/POLLUTANTS.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/POLLUTANTS.dds</Button>
+	<Icon>Art/Buttons/Yields/Pollutants.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Pollutants.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Pollutants.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
@@ -2383,11 +2383,11 @@
 	<iAsset>1</iAsset>
 	<ColorType>COLOR_YIELD_FOOD</ColorType>
 	<UnitClass></UnitClass>
-	<iTextureIndex>56</iTextureIndex>
+	<iTextureIndex>1</iTextureIndex>
 	<iWaterTextureIndex>20</iWaterTextureIndex>
-	<Icon>/Art/Buttons/Yields/CREDITS.dds</Icon>
-	<HighlightIcon>/Art/Buttons/Yields/CREDITS.dds</HighlightIcon>
-	<Button>/Art/Buttons/Yields/CREDITS.dds</Button>
+	<Icon>Art/Buttons/Yields/Credits.dds</Icon>
+	<HighlightIcon>Art/Buttons/Yields/Credits.dds</HighlightIcon>
+	<Button>Art/Buttons/Yields/Credits.dds</Button>
 	<TradeScreenTypes>
 		<TradeScreenType>
 			<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>

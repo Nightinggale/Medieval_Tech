@@ -41,12 +41,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>3</iProfessionOutput>
 	<iMaxWorkers>2</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -126,12 +120,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>3</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -220,12 +208,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>5</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -306,12 +288,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>3</iProfessionOutput>
 	<iMaxWorkers>2</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -391,12 +367,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>3</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -485,12 +455,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>5</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -571,12 +535,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>3</iProfessionOutput>
 	<iMaxWorkers>2</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -656,12 +614,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>3</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -750,12 +702,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>5</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -836,12 +782,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>3</iProfessionOutput>
 	<iMaxWorkers>2</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -921,12 +861,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>3</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -1015,12 +949,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>5</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -1101,12 +1029,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>3</iProfessionOutput>
 	<iMaxWorkers>2</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -1186,12 +1108,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>3</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -1280,12 +1196,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>5</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -1366,12 +1276,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>3</iProfessionOutput>
 	<iMaxWorkers>2</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -1451,12 +1355,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>3</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -1545,12 +1443,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>5</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -1631,12 +1523,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>3</iProfessionOutput>
 	<iMaxWorkers>2</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -1716,12 +1602,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>3</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -1810,12 +1690,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>5</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -1896,12 +1770,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>3</iProfessionOutput>
 	<iMaxWorkers>2</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -1981,12 +1849,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>3</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -2075,12 +1937,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>5</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -2161,12 +2017,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>3</iProfessionOutput>
 	<iMaxWorkers>2</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -2246,12 +2096,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>3</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -2340,12 +2184,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>5</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -2426,12 +2264,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>3</iProfessionOutput>
 	<iMaxWorkers>2</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -2511,12 +2343,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>3</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -2605,12 +2431,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>5</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -2691,12 +2511,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>3</iProfessionOutput>
 	<iMaxWorkers>2</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -2776,12 +2590,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>3</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -2870,12 +2678,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>5</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -2956,12 +2758,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>3</iProfessionOutput>
 	<iMaxWorkers>2</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -3041,12 +2837,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>3</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -3135,12 +2925,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>5</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -3221,12 +3005,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>3</iProfessionOutput>
 	<iMaxWorkers>2</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -3306,12 +3084,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>3</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -3400,12 +3172,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>5</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -3486,12 +3252,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>3</iProfessionOutput>
 	<iMaxWorkers>2</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -3571,12 +3331,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>3</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -3665,12 +3419,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>5</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -3751,12 +3499,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>3</iProfessionOutput>
 	<iMaxWorkers>2</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -3836,12 +3578,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>3</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -3930,12 +3666,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>5</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -4016,12 +3746,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>3</iProfessionOutput>
 	<iMaxWorkers>2</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -4101,12 +3825,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>3</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -4195,12 +3913,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>5</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -4281,12 +3993,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>3</iProfessionOutput>
 	<iMaxWorkers>2</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -4366,12 +4072,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>3</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -4460,12 +4160,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>5</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -4546,12 +4240,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>3</iProfessionOutput>
 	<iMaxWorkers>2</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -4631,12 +4319,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>3</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -4725,12 +4407,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>5</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -4811,12 +4487,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>3</iProfessionOutput>
 	<iMaxWorkers>2</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -4896,12 +4566,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>3</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -4990,12 +4654,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>5</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -5076,12 +4734,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>3</iProfessionOutput>
 	<iMaxWorkers>2</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -5161,12 +4813,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>3</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -5255,12 +4901,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>5</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -5341,12 +4981,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>3</iProfessionOutput>
 	<iMaxWorkers>2</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -5426,12 +5060,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>3</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -5520,12 +5148,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>5</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -5606,12 +5228,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>3</iProfessionOutput>
 	<iMaxWorkers>2</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -5691,12 +5307,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>3</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -5785,12 +5395,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>5</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -5871,12 +5475,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>3</iProfessionOutput>
 	<iMaxWorkers>2</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -5956,12 +5554,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>3</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -6050,12 +5642,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>5</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -6136,12 +5722,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>3</iProfessionOutput>
 	<iMaxWorkers>2</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -6221,12 +5801,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>3</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -6315,12 +5889,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>5</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -6401,12 +5969,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>3</iProfessionOutput>
 	<iMaxWorkers>2</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -6486,12 +6048,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>3</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -6580,12 +6136,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>5</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -6666,12 +6216,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>3</iProfessionOutput>
 	<iMaxWorkers>2</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -6751,12 +6295,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>3</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -6845,12 +6383,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>5</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -6931,12 +6463,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>3</iProfessionOutput>
 	<iMaxWorkers>2</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -7016,12 +6542,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>3</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -7110,12 +6630,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>5</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -7196,12 +6710,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>3</iProfessionOutput>
 	<iMaxWorkers>2</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -7281,12 +6789,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>3</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -7375,12 +6877,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>5</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -7461,12 +6957,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>3</iProfessionOutput>
 	<iMaxWorkers>2</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -7490,7 +6980,7 @@
 	<YieldChanges/>
 	<YieldModifiers>
 		<YieldModifier>
-			<YieldType>YIELD_FORT</YieldType>
+			<YieldType></YieldType>
 			<iModifier>0</iModifier>
 		</YieldModifier>
 	</YieldModifiers>
@@ -7546,12 +7036,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>3</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -7575,8 +7059,8 @@
 	<YieldChanges/>
 	<YieldModifiers>
 		<YieldModifier>
-			<YieldType>YIELD_FORT</YieldType>
-			<iModifier>25</iModifier>
+			<YieldType></YieldType>
+			<iModifier>0</iModifier>
 		</YieldModifier>
 	</YieldModifiers>
 	<ConstructSound/>
@@ -7640,12 +7124,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>5</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -7669,8 +7147,8 @@
 	<YieldChanges/>
 	<YieldModifiers>
 		<YieldModifier>
-			<YieldType>YIELD_FORT</YieldType>
-			<iModifier>50</iModifier>
+			<YieldType></YieldType>
+			<iModifier>0</iModifier>
 		</YieldModifier>
 	</YieldModifiers>
 	<ConstructSound/>
@@ -7726,12 +7204,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>3</iProfessionOutput>
 	<iMaxWorkers>2</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -7755,7 +7227,7 @@
 	<YieldChanges/>
 	<YieldModifiers>
 		<YieldModifier>
-			<YieldType>YIELD_DOCK</YieldType>
+			<YieldType></YieldType>
 			<iModifier>0</iModifier>
 		</YieldModifier>
 	</YieldModifiers>
@@ -7811,12 +7283,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>3</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -7840,8 +7306,8 @@
 	<YieldChanges/>
 	<YieldModifiers>
 		<YieldModifier>
-			<YieldType>YIELD_DOCK</YieldType>
-			<iModifier>25</iModifier>
+			<YieldType></YieldType>
+			<iModifier>0</iModifier>
 		</YieldModifier>
 	</YieldModifiers>
 	<ConstructSound/>
@@ -7905,12 +7371,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>5</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -7934,8 +7394,8 @@
 	<YieldChanges/>
 	<YieldModifiers>
 		<YieldModifier>
-			<YieldType>YIELD_DOCK</YieldType>
-			<iModifier>50</iModifier>
+			<YieldType></YieldType>
+			<iModifier>0</iModifier>
 		</YieldModifier>
 	</YieldModifiers>
 	<ConstructSound/>
@@ -7991,12 +7451,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>3</iProfessionOutput>
 	<iMaxWorkers>2</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -8020,7 +7474,7 @@
 	<YieldChanges/>
 	<YieldModifiers>
 		<YieldModifier>
-			<YieldType>YIELD_WAREHOUSE</YieldType>
+			<YieldType></YieldType>
 			<iModifier>0</iModifier>
 		</YieldModifier>
 	</YieldModifiers>
@@ -8076,12 +7530,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>3</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -8105,8 +7553,8 @@
 	<YieldChanges/>
 	<YieldModifiers>
 		<YieldModifier>
-			<YieldType>YIELD_WAREHOUSE</YieldType>
-			<iModifier>25</iModifier>
+			<YieldType></YieldType>
+			<iModifier>0</iModifier>
 		</YieldModifier>
 	</YieldModifiers>
 	<ConstructSound/>
@@ -8170,12 +7618,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>5</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -8199,8 +7641,8 @@
 	<YieldChanges/>
 	<YieldModifiers>
 		<YieldModifier>
-			<YieldType>YIELD_WAREHOUSE</YieldType>
-			<iModifier>50</iModifier>
+			<YieldType></YieldType>
+			<iModifier>0</iModifier>
 		</YieldModifier>
 	</YieldModifiers>
 	<ConstructSound/>
@@ -8256,12 +7698,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>3</iProfessionOutput>
 	<iMaxWorkers>2</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -8285,7 +7721,7 @@
 	<YieldChanges/>
 	<YieldModifiers>
 		<YieldModifier>
-			<YieldType>YIELD_MARKET</YieldType>
+			<YieldType></YieldType>
 			<iModifier>0</iModifier>
 		</YieldModifier>
 	</YieldModifiers>
@@ -8341,12 +7777,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>3</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -8370,8 +7800,8 @@
 	<YieldChanges/>
 	<YieldModifiers>
 		<YieldModifier>
-			<YieldType>YIELD_MARKET</YieldType>
-			<iModifier>25</iModifier>
+			<YieldType></YieldType>
+			<iModifier>0</iModifier>
 		</YieldModifier>
 	</YieldModifiers>
 	<ConstructSound/>
@@ -8435,12 +7865,6 @@
 	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 	<iProfessionOutput>6</iProfessionOutput>
 	<iMaxWorkers>5</iMaxWorkers>
-	<YieldDemands>
-		<YieldDemand/>
-			<iYieldType>
-			<iYieldDemand/>
-		</YieldDemand>
-	</YieldDemands>
 	<iMinAreaSize>-1</iMinAreaSize>
 	<iConquestProb>0</iConquestProb>
 	<iCitiesPrereq>0</iCitiesPrereq>
@@ -8464,8 +7888,8 @@
 	<YieldChanges/>
 	<YieldModifiers>
 		<YieldModifier>
-			<YieldType>YIELD_MARKET</YieldType>
-			<iModifier>50</iModifier>
+			<YieldType></YieldType>
+			<iModifier>0</iModifier>
 		</YieldModifier>
 	</YieldModifiers>
 	<ConstructSound/>
@@ -8479,6 +7903,403 @@
 			<bNeededInCity>1</bNeededInCity>
 		</BuildingClassNeeded>
 	</BuildingClassNeededs>
+	<AutoSellsYields/>
+	<HotKey/>
+	<bAltDown>0</bAltDown>
+	<bShiftDown>0</bShiftDown>
+	<bCtrlDown>0</bCtrlDown>
+	<iHotKeyPriority>0</iHotKeyPriority>
+</BuildingInfo>
+<BuildingInfo>
+	<Type>BUILDING_PRISON1</Type>
+	<BuildingClass>BUILDINGCLASS_PRISON1</BuildingClass>
+	<SpecialBuildingType>SPECIALBUILDING_PRISON</SpecialBuildingType>
+	<iSpecialBuildingPriority>0</iSpecialBuildingPriority>
+	<Description>TXT_KEY_BUILDING_PRISON1</Description>
+	<Civilopedia>TXT_KEY_PEDIA_BUILDING_PRISON1</Civilopedia>
+	<Strategy>TXT_KEY_STRATEGY_BUILDING_PRISON1</Strategy>
+	<ArtDefineTag>ART_DEF_BUILDING_PRISON1</ArtDefineTag>
+	<MovieDefineTag>NONE</MovieDefineTag>
+	<VictoryPrereq>NONE</VictoryPrereq>
+	<FreeStartEra>NONE</FreeStartEra>
+	<MaxStartEra>NONE</MaxStartEra>
+	<iCityType/>
+	<ProductionTraits/>
+	<FreePromotion>NONE</FreePromotion>
+	<bGraphicalOnly>0</bGraphicalOnly>
+	<bWorksWater>0</bWorksWater>
+	<bWater>0</bWater>
+	<bRiver>0</bRiver>
+	<bCapital>0</bCapital>
+	<bNeverCapture>0</bNeverCapture>
+	<bCenterInCity>0</bCenterInCity>
+	<iAIWeight>0</iAIWeight>
+	<YieldCosts>
+		<YieldCost>
+			<YieldType>YIELD_INDUSTRY</YieldType>
+			<iCost>50</iCost>
+		</YieldCost>
+	</YieldCosts>
+	<iHurryCostModifier>0</iHurryCostModifier>
+	<iAdvancedStartCost>0</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iProfessionOutput>3</iProfessionOutput>
+	<iMaxWorkers>2</iMaxWorkers>
+	<iMinAreaSize>-1</iMinAreaSize>
+	<iConquestProb>0</iConquestProb>
+	<iCitiesPrereq>0</iCitiesPrereq>
+	<iTeamsPrereq>0</iTeamsPrereq>
+	<iLevelPrereq>0</iLevelPrereq>
+	<iMinLatitude>0</iMinLatitude>
+	<iMaxLatitude>90</iMaxLatitude>
+	<iExperience>0</iExperience>
+	<iFoodKept>0</iFoodKept>
+	<iHealRateChange>0</iHealRateChange>
+	<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+	<iDefense>0</iDefense>
+	<iBombardDefense>0</iBombardDefense>
+	<iAsset>50</iAsset>
+	<iPower>0</iPower>
+	<iYieldStorage>0</iYieldStorage>
+	<iOverflowSellPercent>0</iOverflowSellPercent>
+	<fVisibilityPriority>1.0</fVisibilityPriority>
+	<SeaPlotYieldChanges/>
+	<RiverPlotYieldChanges/>
+	<YieldChanges/>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType></YieldType>
+			<iModifier>0</iModifier>
+		</YieldModifier>
+	</YieldModifiers>
+	<ConstructSound/>
+	<UnitCombatFreeExperiences/>
+	<DomainFreeExperiences/>
+	<DomainProductionModifiers/>
+	<PrereqBuildingClasses/>
+	<BuildingClassNeededs/>
+	<AutoSellsYields/>
+	<HotKey/>
+	<bAltDown>0</bAltDown>
+	<bShiftDown>0</bShiftDown>
+	<bCtrlDown>0</bCtrlDown>
+	<iHotKeyPriority>0</iHotKeyPriority>
+</BuildingInfo>
+<BuildingInfo>
+	<Type>BUILDING_PRISON2</Type>
+	<BuildingClass>BUILDINGCLASS_PRISON2</BuildingClass>
+	<SpecialBuildingType>SPECIALBUILDING_PRISON</SpecialBuildingType>
+	<iSpecialBuildingPriority>1</iSpecialBuildingPriority>
+	<Description>TXT_KEY_BUILDING_PRISON2</Description>
+	<Civilopedia>TXT_KEY_PEDIA_BUILDING_PRISON2</Civilopedia>
+	<Strategy>TXT_KEY_STRATEGY_BUILDING_PRISON2</Strategy>
+	<ArtDefineTag>ART_DEF_BUILDING_PRISON2</ArtDefineTag>
+	<MovieDefineTag>NONE</MovieDefineTag>
+	<VictoryPrereq>NONE</VictoryPrereq>
+	<FreeStartEra>NONE</FreeStartEra>
+	<MaxStartEra>NONE</MaxStartEra>
+	<iCityType/>
+	<ProductionTraits/>
+	<FreePromotion>NONE</FreePromotion>
+	<bGraphicalOnly>0</bGraphicalOnly>
+	<bWorksWater>0</bWorksWater>
+	<bWater>0</bWater>
+	<bRiver>0</bRiver>
+	<bCapital>0</bCapital>
+	<bNeverCapture>0</bNeverCapture>
+	<bCenterInCity>0</bCenterInCity>
+	<iAIWeight>0</iAIWeight>
+	<YieldCosts>
+		<YieldCost>
+			<YieldType>YIELD_INDUSTRY</YieldType>
+			<iCost>100</iCost>
+		</YieldCost>
+		<YieldCost>
+			<YieldType>YIELD_MACHINE_TOOLS</YieldType>
+			<iCost>50</iCost>
+		</YieldCost>
+	</YieldCosts>
+	<iHurryCostModifier>0</iHurryCostModifier>
+	<iAdvancedStartCost>0</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iProfessionOutput>6</iProfessionOutput>
+	<iMaxWorkers>3</iMaxWorkers>
+	<iMinAreaSize>-1</iMinAreaSize>
+	<iConquestProb>0</iConquestProb>
+	<iCitiesPrereq>0</iCitiesPrereq>
+	<iTeamsPrereq>0</iTeamsPrereq>
+	<iLevelPrereq>0</iLevelPrereq>
+	<iMinLatitude>0</iMinLatitude>
+	<iMaxLatitude>90</iMaxLatitude>
+	<iExperience>0</iExperience>
+	<iFoodKept>0</iFoodKept>
+	<iHealRateChange>0</iHealRateChange>
+	<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+	<iDefense>0</iDefense>
+	<iBombardDefense>0</iBombardDefense>
+	<iAsset>100</iAsset>
+	<iPower>0</iPower>
+	<iYieldStorage>0</iYieldStorage>
+	<iOverflowSellPercent>0</iOverflowSellPercent>
+	<fVisibilityPriority>1.0</fVisibilityPriority>
+	<SeaPlotYieldChanges/>
+	<RiverPlotYieldChanges/>
+	<YieldChanges/>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType></YieldType>
+			<iModifier>0</iModifier>
+		</YieldModifier>
+	</YieldModifiers>
+	<ConstructSound/>
+	<UnitCombatFreeExperiences/>
+	<DomainFreeExperiences/>
+	<DomainProductionModifiers/>
+	<PrereqBuildingClasses/>
+	<BuildingClassNeededs>
+		<BuildingClassNeeded>
+			<BuildingClassType>BUILDINGCLASS_PRISON1</BuildingClassType>
+			<bNeededInCity>1</bNeededInCity>
+		</BuildingClassNeeded>
+	</BuildingClassNeededs>
+	<AutoSellsYields/>
+	<HotKey/>
+	<bAltDown>0</bAltDown>
+	<bShiftDown>0</bShiftDown>
+	<bCtrlDown>0</bCtrlDown>
+	<iHotKeyPriority>0</iHotKeyPriority>
+</BuildingInfo>
+<BuildingInfo>
+	<Type>BUILDING_PRISON3</Type>
+	<BuildingClass>BUILDINGCLASS_PRISON3</BuildingClass>
+	<SpecialBuildingType>SPECIALBUILDING_PRISON</SpecialBuildingType>
+	<iSpecialBuildingPriority>2</iSpecialBuildingPriority>
+	<Description>TXT_KEY_BUILDING_PRISON3</Description>
+	<Civilopedia>TXT_KEY_PEDIA_BUILDING_PRISON3</Civilopedia>
+	<Strategy>TXT_KEY_STRATEGY_BUILDING_PRISON3</Strategy>
+	<ArtDefineTag>ART_DEF_BUILDING_PRISON3</ArtDefineTag>
+	<MovieDefineTag>NONE</MovieDefineTag>
+	<VictoryPrereq>NONE</VictoryPrereq>
+	<FreeStartEra>NONE</FreeStartEra>
+	<MaxStartEra>NONE</MaxStartEra>
+	<iCityType/>
+	<ProductionTraits/>
+	<FreePromotion>NONE</FreePromotion>
+	<bGraphicalOnly>0</bGraphicalOnly>
+	<bWorksWater>0</bWorksWater>
+	<bWater>0</bWater>
+	<bRiver>0</bRiver>
+	<bCapital>0</bCapital>
+	<bNeverCapture>0</bNeverCapture>
+	<bCenterInCity>0</bCenterInCity>
+	<iAIWeight>0</iAIWeight>
+	<YieldCosts>
+		<YieldCost>
+			<YieldType>YIELD_INDUSTRY</YieldType>
+			<iCost>200</iCost>
+		</YieldCost>
+		<YieldCost>
+			<YieldType>YIELD_MACHINE_TOOLS</YieldType>
+			<iCost>100</iCost>
+		</YieldCost>
+		<YieldCost>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iCost>50</iCost>
+		</YieldCost>
+	</YieldCosts>
+	<iHurryCostModifier>0</iHurryCostModifier>
+	<iAdvancedStartCost>0</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iProfessionOutput>6</iProfessionOutput>
+	<iMaxWorkers>5</iMaxWorkers>
+	<iMinAreaSize>-1</iMinAreaSize>
+	<iConquestProb>0</iConquestProb>
+	<iCitiesPrereq>0</iCitiesPrereq>
+	<iTeamsPrereq>0</iTeamsPrereq>
+	<iLevelPrereq>0</iLevelPrereq>
+	<iMinLatitude>0</iMinLatitude>
+	<iMaxLatitude>90</iMaxLatitude>
+	<iExperience>0</iExperience>
+	<iFoodKept>0</iFoodKept>
+	<iHealRateChange>0</iHealRateChange>
+	<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+	<iDefense>0</iDefense>
+	<iBombardDefense>0</iBombardDefense>
+	<iAsset>200</iAsset>
+	<iPower>0</iPower>
+	<iYieldStorage>0</iYieldStorage>
+	<iOverflowSellPercent>0</iOverflowSellPercent>
+	<fVisibilityPriority>1.0</fVisibilityPriority>
+	<SeaPlotYieldChanges/>
+	<RiverPlotYieldChanges/>
+	<YieldChanges/>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType></YieldType>
+			<iModifier>0</iModifier>
+		</YieldModifier>
+	</YieldModifiers>
+	<ConstructSound/>
+	<UnitCombatFreeExperiences/>
+	<DomainFreeExperiences/>
+	<DomainProductionModifiers/>
+	<PrereqBuildingClasses/>
+	<BuildingClassNeededs>
+		<BuildingClassNeeded>
+			<BuildingClassType>BUILDINGCLASS_PRISON2</BuildingClassType>
+			<bNeededInCity>1</bNeededInCity>
+		</BuildingClassNeeded>
+	</BuildingClassNeededs>
+	<AutoSellsYields/>
+	<HotKey/>
+	<bAltDown>0</bAltDown>
+	<bShiftDown>0</bShiftDown>
+	<bCtrlDown>0</bCtrlDown>
+	<iHotKeyPriority>0</iHotKeyPriority>
+</BuildingInfo>
+<BuildingInfo>
+	<Type>BUILDING_SHRINE</Type>
+	<BuildingClass>BUILDINGCLASS_SHRINE</BuildingClass>
+	<SpecialBuildingType>NONE</SpecialBuildingType>
+	<iSpecialBuildingPriority>0</iSpecialBuildingPriority>
+	<Description>TXT_KEY_BUILDING_SHRINE</Description>
+	<Civilopedia>TXT_KEY_PEDIA_BUILDING_SHRINE</Civilopedia>
+	<Strategy>TXT_KEY_STRATEGY_BUILDING_SHRINE</Strategy>
+	<ArtDefineTag>ART_DEF_BUILDING_SHRINE</ArtDefineTag>
+	<MovieDefineTag>NONE</MovieDefineTag>
+	<VictoryPrereq>NONE</VictoryPrereq>
+	<FreeStartEra>NONE</FreeStartEra>
+	<MaxStartEra>NONE</MaxStartEra>
+	<iCityType/>
+	<ProductionTraits/>
+	<FreePromotion>NONE</FreePromotion>
+	<bGraphicalOnly>0</bGraphicalOnly>
+	<bWorksWater>0</bWorksWater>
+	<bWater>0</bWater>
+	<bRiver>0</bRiver>
+	<bCapital>0</bCapital>
+	<bNeverCapture>0</bNeverCapture>
+	<bCenterInCity>0</bCenterInCity>
+	<iAIWeight>0</iAIWeight>
+	<YieldCosts>
+		<YieldCost>
+			<YieldType>YIELD_INDUSTRY</YieldType>
+			<iCost>50</iCost>
+		</YieldCost>
+	</YieldCosts>
+	<iHurryCostModifier>0</iHurryCostModifier>
+	<iAdvancedStartCost>0</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iProfessionOutput>3</iProfessionOutput>
+	<iMaxWorkers>2</iMaxWorkers>
+	<iMinAreaSize>-1</iMinAreaSize>
+	<iConquestProb>0</iConquestProb>
+	<iCitiesPrereq>0</iCitiesPrereq>
+	<iTeamsPrereq>0</iTeamsPrereq>
+	<iLevelPrereq>0</iLevelPrereq>
+	<iMinLatitude>0</iMinLatitude>
+	<iMaxLatitude>90</iMaxLatitude>
+	<iExperience>0</iExperience>
+	<iFoodKept>0</iFoodKept>
+	<iHealRateChange>0</iHealRateChange>
+	<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+	<iDefense>0</iDefense>
+	<iBombardDefense>0</iBombardDefense>
+	<iAsset>50</iAsset>
+	<iPower>0</iPower>
+	<iYieldStorage>0</iYieldStorage>
+	<iOverflowSellPercent>0</iOverflowSellPercent>
+	<fVisibilityPriority>1.0</fVisibilityPriority>
+	<SeaPlotYieldChanges/>
+	<RiverPlotYieldChanges/>
+	<YieldChanges/>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType></YieldType>
+			<iModifier>0</iModifier>
+		</YieldModifier>
+	</YieldModifiers>
+	<ConstructSound/>
+	<UnitCombatFreeExperiences/>
+	<DomainFreeExperiences/>
+	<DomainProductionModifiers/>
+	<PrereqBuildingClasses/>
+	<BuildingClassNeededs/>
+	<AutoSellsYields/>
+	<HotKey/>
+	<bAltDown>0</bAltDown>
+	<bShiftDown>0</bShiftDown>
+	<bCtrlDown>0</bCtrlDown>
+	<iHotKeyPriority>0</iHotKeyPriority>
+</BuildingInfo>
+<BuildingInfo>
+	<Type>BUILDING_TRADING_POST</Type>
+	<BuildingClass>BUILDINGCLASS_TRADING_POST</BuildingClass>
+	<SpecialBuildingType>NONE</SpecialBuildingType>
+	<iSpecialBuildingPriority>0</iSpecialBuildingPriority>
+	<Description>TXT_KEY_BUILDING_TRADING_POST</Description>
+	<Civilopedia>TXT_KEY_PEDIA_BUILDING_TRADING_POST</Civilopedia>
+	<Strategy>TXT_KEY_STRATEGY_BUILDING_TRADING_POST</Strategy>
+	<ArtDefineTag>ART_DEF_BUILDING_TRADING_POST</ArtDefineTag>
+	<MovieDefineTag>NONE</MovieDefineTag>
+	<VictoryPrereq>NONE</VictoryPrereq>
+	<FreeStartEra>NONE</FreeStartEra>
+	<MaxStartEra>NONE</MaxStartEra>
+	<iCityType/>
+	<ProductionTraits/>
+	<FreePromotion>NONE</FreePromotion>
+	<bGraphicalOnly>0</bGraphicalOnly>
+	<bWorksWater>0</bWorksWater>
+	<bWater>0</bWater>
+	<bRiver>0</bRiver>
+	<bCapital>0</bCapital>
+	<bNeverCapture>0</bNeverCapture>
+	<bCenterInCity>0</bCenterInCity>
+	<iAIWeight>0</iAIWeight>
+	<YieldCosts>
+		<YieldCost>
+			<YieldType>YIELD_INDUSTRY</YieldType>
+			<iCost>50</iCost>
+		</YieldCost>
+	</YieldCosts>
+	<iHurryCostModifier>0</iHurryCostModifier>
+	<iAdvancedStartCost>0</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iProfessionOutput>3</iProfessionOutput>
+	<iMaxWorkers>2</iMaxWorkers>
+	<iMinAreaSize>-1</iMinAreaSize>
+	<iConquestProb>0</iConquestProb>
+	<iCitiesPrereq>0</iCitiesPrereq>
+	<iTeamsPrereq>0</iTeamsPrereq>
+	<iLevelPrereq>0</iLevelPrereq>
+	<iMinLatitude>0</iMinLatitude>
+	<iMaxLatitude>90</iMaxLatitude>
+	<iExperience>0</iExperience>
+	<iFoodKept>0</iFoodKept>
+	<iHealRateChange>0</iHealRateChange>
+	<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+	<iDefense>0</iDefense>
+	<iBombardDefense>0</iBombardDefense>
+	<iAsset>50</iAsset>
+	<iPower>0</iPower>
+	<iYieldStorage>0</iYieldStorage>
+	<iOverflowSellPercent>0</iOverflowSellPercent>
+	<fVisibilityPriority>1.0</fVisibilityPriority>
+	<SeaPlotYieldChanges/>
+	<RiverPlotYieldChanges/>
+	<YieldChanges/>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType></YieldType>
+			<iModifier>0</iModifier>
+		</YieldModifier>
+	</YieldModifiers>
+	<ConstructSound/>
+	<UnitCombatFreeExperiences/>
+	<DomainFreeExperiences/>
+	<DomainProductionModifiers/>
+	<PrereqBuildingClasses/>
+	<BuildingClassNeededs/>
 	<AutoSellsYields/>
 	<HotKey/>
 	<bAltDown>0</bAltDown>

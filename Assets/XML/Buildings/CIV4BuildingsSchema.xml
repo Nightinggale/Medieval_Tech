@@ -82,6 +82,7 @@
 	<ElementType name="iYieldChange" content="textOnly" dt:type="int"/>
 	<ElementType name="iProfessionOutput" content="textOnly" dt:type="int"/>
 	<ElementType name="iMaxWorkers" content="textOnly" dt:type="int"/>
+	<ElementType name="iYieldDemand" content="textOnly" dt:type="int"/>
 	<ElementType name="SeaPlotYieldChange" content="eltOnly">
 		<element type="YieldType"/>
 		<element type="iYieldChange"/>
@@ -124,6 +125,14 @@
   <ElementType name="MaxYieldModifiers" content="eltOnly">
     <element type="MaxYieldModifier" minOccurs="0"/>
   </ElementType>
+	<ElementType name="YieldDemand" content="eltOnly">
+		<element type="YieldType"/>
+		<element type="iYieldDemand"/>
+	</ElementType>
+	<ElementType name="YieldDemands" content="eltOnly">
+		<element type="YieldDemand" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="iMarketCap" content="textOnly" dt:type="int"/>
 	<ElementType name="ConstructSound" content="textOnly"/>
 	<ElementType name="iProductonModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="UnitCombatType" content="textOnly"/>
@@ -195,6 +204,7 @@
   <ElementType name="iIncreasesCityPopulation" content="textOnly" dt:type="int"/>
   <ElementType name="iRazedCityGoldIncrease" content="textOnly" dt:type="int"/>
   <ElementType name="iTrainingTimeMod" content="textOnly" dt:type="int"/>
+  <ElementType name="iTeachLevel" content="textOnly" dt:type="int"/>
   <ElementType name="iDetectsMarauders" content="textOnly" dt:type="int"/>
 	<ElementType name="HotKey" content="textOnly"/>
 	<ElementType name="bAltDown" content="textOnly" dt:type="boolean"/>
@@ -278,8 +288,11 @@
     <element type="iIncreasesCityPopulation" minOccurs="0"/>
     <element type="iRazedCityGoldIncrease" minOccurs="0"/>
     <element type="iTrainingTimeMod" minOccurs="0"/>
+	<element type="iTeachLevel" minOccurs="0"/>
     <element type="iDetectsMarauders" minOccurs="0"/>
     <element type="MaxYieldModifiers" minOccurs="0"/>
+	<element type="YieldDemands" minOccurs="0"/>
+	<element type="iMarketCap" minOccurs="0"/>
     <element type="ImmigrationUnits" minOccurs="0"/>
     <element type="AutoSellsYields" minOccurs="0"/>
     <element type="AutoSellYieldChange" minOccurs="0"/>

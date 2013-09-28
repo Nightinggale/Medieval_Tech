@@ -13,7 +13,7 @@
       <Description>Cattle</Description>
       <Civilopedia>TXT_KEY_BONUS_COW_PEDIA</Civilopedia>
       <ArtDefineTag>ART_DEF_BONUS_COW</ArtDefineTag>
-      <BuildingType>BUILDING_BONUS_DEER</BuildingType>
+      <BuildingType></BuildingType>
       <YieldChanges>
         <YieldIntegerPair>
           <YieldType>YIELD_NUTRIENTS</YieldType>

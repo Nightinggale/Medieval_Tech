@@ -522,11 +522,7 @@
       <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
       <YieldModifiers>
         <YieldModifier>
-          <YieldType>YIELD_CROSSES</YieldType>
-          <iYield>-50</iYield>
-        </YieldModifier>
-        <YieldModifier>
-          <YieldType>YIELD_BELLS</YieldType>
+          <YieldType>YIELD_MEDIA</YieldType>
           <iYield>-50</iYield>
         </YieldModifier>
       </YieldModifiers>
@@ -565,15 +561,7 @@
       <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
       <YieldModifiers>
         <YieldModifier>
-          <YieldType>YIELD_CROSSES</YieldType>
-          <iYield>-50</iYield>
-        </YieldModifier>
-        <YieldModifier>
-          <YieldType>YIELD_BELLS</YieldType>
-          <iYield>-50</iYield>
-        </YieldModifier>
-        <YieldModifier>
-          <YieldType>YIELD_IDEAS</YieldType>
+          <YieldType>YIELD_LIBERTY</YieldType>
           <iYield>-50</iYield>
         </YieldModifier>
       </YieldModifiers>
@@ -612,15 +600,7 @@
       <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
       <YieldModifiers>
         <YieldModifier>
-          <YieldType>YIELD_CROSSES</YieldType>
-          <iYield>-100</iYield>
-        </YieldModifier>
-        <YieldModifier>
-          <YieldType>YIELD_BELLS</YieldType>
-          <iYield>-50</iYield>
-        </YieldModifier>
-        <YieldModifier>
-          <YieldType>YIELD_IDEAS</YieldType>
+          <YieldType>YIELD_RESEARCH</YieldType>
           <iYield>-50</iYield>
         </YieldModifier>
       </YieldModifiers>

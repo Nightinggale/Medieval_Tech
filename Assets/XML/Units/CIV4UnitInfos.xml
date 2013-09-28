@@ -21,7 +21,6 @@
 	<Description>TXT_KEY_UNIT_EXPERT_AGRONOMIST</Description>
 	<Civilopedia>TXT_KEY_UNIT_EXPERT_AGRONOMIST_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_UNIT_EXPERT_AGRONOMIST_STRATEGY</Strategy>
-	<Strategy></Strategy>
 	<bGraphicalOnly>0</bGraphicalOnly>
 	<bNoBadGoodies>0</bNoBadGoodies>
 	<bOnlyDefensive>0</bOnlyDefensive>
@@ -140,7 +139,6 @@
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
-	<iTeachLevel>0</iTeachLevel>
 	<ProfessionMeshGroups>
 		<UnitMeshGroups>
 			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
@@ -151,6 +149,17 @@
 			<UnitMeshGroup>
 				<iRequired>1</iRequired>
 				<ArtDefineTag>ART_DEF_UNIT_EXPERT_AGRONOMIST</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
 			</UnitMeshGroup>
 		</UnitMeshGroups>
 		<UnitMeshGroups>
@@ -333,7 +342,6 @@
 	<Description>TXT_KEY_UNIT_EXPERT_FORESTER</Description>
 	<Civilopedia>TXT_KEY_UNIT_EXPERT_FORESTER_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_UNIT_EXPERT_FORESTER_STRATEGY</Strategy>
-	<Strategy></Strategy>
 	<bGraphicalOnly>0</bGraphicalOnly>
 	<bNoBadGoodies>0</bNoBadGoodies>
 	<bOnlyDefensive>0</bOnlyDefensive>
@@ -452,7 +460,6 @@
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
-	<iTeachLevel>0</iTeachLevel>
 	<ProfessionMeshGroups>
 		<UnitMeshGroups>
 			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
@@ -463,6 +470,17 @@
 			<UnitMeshGroup>
 				<iRequired>1</iRequired>
 				<ArtDefineTag>ART_DEF_UNIT_EXPERT_FORESTER</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
 			</UnitMeshGroup>
 		</UnitMeshGroups>
 		<UnitMeshGroups>
@@ -645,7 +663,6 @@
 	<Description>TXT_KEY_UNIT_EXPERT_MINER</Description>
 	<Civilopedia>TXT_KEY_UNIT_EXPERT_MINER_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_UNIT_EXPERT_MINER_STRATEGY</Strategy>
-	<Strategy></Strategy>
 	<bGraphicalOnly>0</bGraphicalOnly>
 	<bNoBadGoodies>0</bNoBadGoodies>
 	<bOnlyDefensive>0</bOnlyDefensive>
@@ -772,7 +789,6 @@
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
-	<iTeachLevel>0</iTeachLevel>
 	<ProfessionMeshGroups>
 		<UnitMeshGroups>
 			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
@@ -783,6 +799,17 @@
 			<UnitMeshGroup>
 				<iRequired>1</iRequired>
 				<ArtDefineTag>ART_DEF_UNIT_EXPERT_MINER</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
 			</UnitMeshGroup>
 		</UnitMeshGroups>
 		<UnitMeshGroups>
@@ -965,7 +992,6 @@
 	<Description>TXT_KEY_UNIT_EXPERT_GEOLOGIST</Description>
 	<Civilopedia>TXT_KEY_UNIT_EXPERT_GEOLOGIST_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_UNIT_EXPERT_GEOLOGIST_STRATEGY</Strategy>
-	<Strategy></Strategy>
 	<bGraphicalOnly>0</bGraphicalOnly>
 	<bNoBadGoodies>0</bNoBadGoodies>
 	<bOnlyDefensive>0</bOnlyDefensive>
@@ -1096,7 +1122,6 @@
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
-	<iTeachLevel>0</iTeachLevel>
 	<ProfessionMeshGroups>
 		<UnitMeshGroups>
 			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
@@ -1107,6 +1132,17 @@
 			<UnitMeshGroup>
 				<iRequired>1</iRequired>
 				<ArtDefineTag>ART_DEF_UNIT_EXPERT_GEOLOGIST</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
 			</UnitMeshGroup>
 		</UnitMeshGroups>
 		<UnitMeshGroups>
@@ -1289,7 +1325,6 @@
 	<Description>TXT_KEY_UNIT_EXPERT_LAB_TECHNICIAN</Description>
 	<Civilopedia>TXT_KEY_UNIT_EXPERT_LAB_TECHNICIAN_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_UNIT_EXPERT_LAB_TECHNICIAN_STRATEGY</Strategy>
-	<Strategy></Strategy>
 	<bGraphicalOnly>0</bGraphicalOnly>
 	<bNoBadGoodies>0</bNoBadGoodies>
 	<bOnlyDefensive>0</bOnlyDefensive>
@@ -1420,7 +1455,6 @@
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
-	<iTeachLevel>0</iTeachLevel>
 	<ProfessionMeshGroups>
 		<UnitMeshGroups>
 			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
@@ -1431,6 +1465,17 @@
 			<UnitMeshGroup>
 				<iRequired>1</iRequired>
 				<ArtDefineTag>ART_DEF_UNIT_EXPERT_LAB_TECHNICIAN</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
 			</UnitMeshGroup>
 		</UnitMeshGroups>
 		<UnitMeshGroups>
@@ -1613,7 +1658,6 @@
 	<Description>TXT_KEY_UNIT_INTREPID_ARCHAEOLOGIST</Description>
 	<Civilopedia>TXT_KEY_UNIT_INTREPID_ARCHAEOLOGIST_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_UNIT_INTREPID_ARCHAEOLOGIST_STRATEGY</Strategy>
-	<Strategy></Strategy>
 	<bGraphicalOnly>0</bGraphicalOnly>
 	<bNoBadGoodies>0</bNoBadGoodies>
 	<bOnlyDefensive>0</bOnlyDefensive>
@@ -1744,7 +1788,6 @@
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
-	<iTeachLevel>0</iTeachLevel>
 	<ProfessionMeshGroups>
 		<UnitMeshGroups>
 			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
@@ -1755,6 +1798,17 @@
 			<UnitMeshGroup>
 				<iRequired>1</iRequired>
 				<ArtDefineTag>ART_DEF_UNIT_INTREPID_ARCHAEOLOGIST</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
 			</UnitMeshGroup>
 		</UnitMeshGroups>
 		<UnitMeshGroups>
@@ -1937,7 +1991,6 @@
 	<Description>TXT_KEY_UNIT_EXPERT_XENOBOTANIST</Description>
 	<Civilopedia>TXT_KEY_UNIT_EXPERT_XENOBOTANIST_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_UNIT_EXPERT_XENOBOTANIST_STRATEGY</Strategy>
-	<Strategy></Strategy>
 	<bGraphicalOnly>0</bGraphicalOnly>
 	<bNoBadGoodies>0</bNoBadGoodies>
 	<bOnlyDefensive>0</bOnlyDefensive>
@@ -2068,7 +2121,6 @@
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
-	<iTeachLevel>0</iTeachLevel>
 	<ProfessionMeshGroups>
 		<UnitMeshGroups>
 			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
@@ -2079,6 +2131,17 @@
 			<UnitMeshGroup>
 				<iRequired>1</iRequired>
 				<ArtDefineTag>ART_DEF_UNIT_EXPERT_XENOBOTANIST</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
 			</UnitMeshGroup>
 		</UnitMeshGroups>
 		<UnitMeshGroups>
@@ -2261,7 +2324,6 @@
 	<Description>TXT_KEY_UNIT_EXPERT_DRILLER</Description>
 	<Civilopedia>TXT_KEY_UNIT_EXPERT_DRILLER_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_UNIT_EXPERT_DRILLER_STRATEGY</Strategy>
-	<Strategy></Strategy>
 	<bGraphicalOnly>0</bGraphicalOnly>
 	<bNoBadGoodies>0</bNoBadGoodies>
 	<bOnlyDefensive>0</bOnlyDefensive>
@@ -2388,7 +2450,6 @@
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
-	<iTeachLevel>0</iTeachLevel>
 	<ProfessionMeshGroups>
 		<UnitMeshGroups>
 			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
@@ -2399,6 +2460,17 @@
 			<UnitMeshGroup>
 				<iRequired>1</iRequired>
 				<ArtDefineTag>ART_DEF_UNIT_EXPERT_DRILLER</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
 			</UnitMeshGroup>
 		</UnitMeshGroups>
 		<UnitMeshGroups>
@@ -2581,7 +2653,6 @@
 	<Description>TXT_KEY_UNIT_MASTER_MACHINIST</Description>
 	<Civilopedia>TXT_KEY_UNIT_MASTER_MACHINIST_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_UNIT_MASTER_MACHINIST_STRATEGY</Strategy>
-	<Strategy></Strategy>
 	<bGraphicalOnly>0</bGraphicalOnly>
 	<bNoBadGoodies>0</bNoBadGoodies>
 	<bOnlyDefensive>0</bOnlyDefensive>
@@ -2700,7 +2771,6 @@
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
-	<iTeachLevel>0</iTeachLevel>
 	<ProfessionMeshGroups>
 		<UnitMeshGroups>
 			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
@@ -2711,6 +2781,17 @@
 			<UnitMeshGroup>
 				<iRequired>1</iRequired>
 				<ArtDefineTag>ART_DEF_UNIT_MASTER_MACHINIST</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
 			</UnitMeshGroup>
 		</UnitMeshGroups>
 		<UnitMeshGroups>
@@ -2893,7 +2974,6 @@
 	<Description>TXT_KEY_UNIT_MECHANICAL_ENGINEER</Description>
 	<Civilopedia>TXT_KEY_UNIT_MECHANICAL_ENGINEER_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_UNIT_MECHANICAL_ENGINEER_STRATEGY</Strategy>
-	<Strategy></Strategy>
 	<bGraphicalOnly>0</bGraphicalOnly>
 	<bNoBadGoodies>0</bNoBadGoodies>
 	<bOnlyDefensive>0</bOnlyDefensive>
@@ -3012,7 +3092,6 @@
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
-	<iTeachLevel>0</iTeachLevel>
 	<ProfessionMeshGroups>
 		<UnitMeshGroups>
 			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
@@ -3023,6 +3102,17 @@
 			<UnitMeshGroup>
 				<iRequired>1</iRequired>
 				<ArtDefineTag>ART_DEF_UNIT_MECHANICAL_ENGINEER</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
 			</UnitMeshGroup>
 		</UnitMeshGroups>
 		<UnitMeshGroups>
@@ -3205,7 +3295,6 @@
 	<Description>TXT_KEY_UNIT_INFAMOUS_ARMS_DEALER</Description>
 	<Civilopedia>TXT_KEY_UNIT_INFAMOUS_ARMS_DEALER_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_UNIT_INFAMOUS_ARMS_DEALER_STRATEGY</Strategy>
-	<Strategy></Strategy>
 	<bGraphicalOnly>0</bGraphicalOnly>
 	<bNoBadGoodies>0</bNoBadGoodies>
 	<bOnlyDefensive>0</bOnlyDefensive>
@@ -3306,7 +3395,7 @@
 	<DomainMods/>
 	<YieldModifiers>
 		<YieldModifier>
-			<YieldType>YIELD_WEAPONS</YieldType>
+			<YieldType>YIELD_MUNITIONS</YieldType>
 			<iYieldMod>100</iYieldMod>
 		</YieldModifier>
 		<YieldModifier>
@@ -3328,7 +3417,6 @@
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
-	<iTeachLevel>0</iTeachLevel>
 	<ProfessionMeshGroups>
 		<UnitMeshGroups>
 			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
@@ -3339,6 +3427,17 @@
 			<UnitMeshGroup>
 				<iRequired>1</iRequired>
 				<ArtDefineTag>ART_DEF_UNIT_INFAMOUS_ARMS_DEALER</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
 			</UnitMeshGroup>
 		</UnitMeshGroups>
 		<UnitMeshGroups>
@@ -3521,7 +3620,6 @@
 	<Description>TXT_KEY_UNIT_MASTER_METALLURGIST</Description>
 	<Civilopedia>TXT_KEY_UNIT_MASTER_METALLURGIST_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_UNIT_MASTER_METALLURGIST_STRATEGY</Strategy>
-	<Strategy></Strategy>
 	<bGraphicalOnly>0</bGraphicalOnly>
 	<bNoBadGoodies>0</bNoBadGoodies>
 	<bOnlyDefensive>0</bOnlyDefensive>
@@ -3648,7 +3746,6 @@
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
-	<iTeachLevel>0</iTeachLevel>
 	<ProfessionMeshGroups>
 		<UnitMeshGroups>
 			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
@@ -3659,6 +3756,17 @@
 			<UnitMeshGroup>
 				<iRequired>1</iRequired>
 				<ArtDefineTag>ART_DEF_UNIT_MASTER_METALLURGIST</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
 			</UnitMeshGroup>
 		</UnitMeshGroups>
 		<UnitMeshGroups>
@@ -3841,7 +3949,6 @@
 	<Description>TXT_KEY_UNIT_BRILLIANT_PHYSICIST</Description>
 	<Civilopedia>TXT_KEY_UNIT_BRILLIANT_PHYSICIST_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_UNIT_BRILLIANT_PHYSICIST_STRATEGY</Strategy>
-	<Strategy></Strategy>
 	<bGraphicalOnly>0</bGraphicalOnly>
 	<bNoBadGoodies>0</bNoBadGoodies>
 	<bOnlyDefensive>0</bOnlyDefensive>
@@ -3968,7 +4075,6 @@
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
-	<iTeachLevel>0</iTeachLevel>
 	<ProfessionMeshGroups>
 		<UnitMeshGroups>
 			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
@@ -3979,6 +4085,17 @@
 			<UnitMeshGroup>
 				<iRequired>1</iRequired>
 				<ArtDefineTag>ART_DEF_UNIT_BRILLIANT_PHYSICIST</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
 			</UnitMeshGroup>
 		</UnitMeshGroups>
 		<UnitMeshGroups>
@@ -4161,7 +4278,6 @@
 	<Description>TXT_KEY_UNIT_BRILLIANT_GENETICIST</Description>
 	<Civilopedia>TXT_KEY_UNIT_BRILLIANT_GENETICIST_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_UNIT_BRILLIANT_GENETICIST_STRATEGY</Strategy>
-	<Strategy></Strategy>
 	<bGraphicalOnly>0</bGraphicalOnly>
 	<bNoBadGoodies>0</bNoBadGoodies>
 	<bOnlyDefensive>0</bOnlyDefensive>
@@ -4288,7 +4404,6 @@
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
-	<iTeachLevel>0</iTeachLevel>
 	<ProfessionMeshGroups>
 		<UnitMeshGroups>
 			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
@@ -4299,6 +4414,17 @@
 			<UnitMeshGroup>
 				<iRequired>1</iRequired>
 				<ArtDefineTag>ART_DEF_UNIT_BRILLIANT_GENETICIST</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
 			</UnitMeshGroup>
 		</UnitMeshGroups>
 		<UnitMeshGroups>
@@ -4481,7 +4607,6 @@
 	<Description>TXT_KEY_UNIT_BRILLIANT_THEORIST</Description>
 	<Civilopedia>TXT_KEY_UNIT_BRILLIANT_THEORIST_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_UNIT_BRILLIANT_THEORIST_STRATEGY</Strategy>
-	<Strategy></Strategy>
 	<bGraphicalOnly>0</bGraphicalOnly>
 	<bNoBadGoodies>0</bNoBadGoodies>
 	<bOnlyDefensive>0</bOnlyDefensive>
@@ -4608,7 +4733,6 @@
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
-	<iTeachLevel>0</iTeachLevel>
 	<ProfessionMeshGroups>
 		<UnitMeshGroups>
 			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
@@ -4619,6 +4743,17 @@
 			<UnitMeshGroup>
 				<iRequired>1</iRequired>
 				<ArtDefineTag>ART_DEF_UNIT_BRILLIANT_THEORIST</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
 			</UnitMeshGroup>
 		</UnitMeshGroups>
 		<UnitMeshGroups>
@@ -4801,7 +4936,6 @@
 	<Description>TXT_KEY_UNIT_INFAMOUS_DRUGLORD</Description>
 	<Civilopedia>TXT_KEY_UNIT_INFAMOUS_DRUGLORD_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_UNIT_INFAMOUS_DRUGLORD_STRATEGY</Strategy>
-	<Strategy></Strategy>
 	<bGraphicalOnly>0</bGraphicalOnly>
 	<bNoBadGoodies>0</bNoBadGoodies>
 	<bOnlyDefensive>0</bOnlyDefensive>
@@ -4928,7 +5062,6 @@
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
-	<iTeachLevel>0</iTeachLevel>
 	<ProfessionMeshGroups>
 		<UnitMeshGroups>
 			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
@@ -4939,6 +5072,17 @@
 			<UnitMeshGroup>
 				<iRequired>1</iRequired>
 				<ArtDefineTag>ART_DEF_UNIT_INFAMOUS_DRUGLORD</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
 			</UnitMeshGroup>
 		</UnitMeshGroups>
 		<UnitMeshGroups>
@@ -5121,7 +5265,6 @@
 	<Description>TXT_KEY_UNIT_CHEMICAL_ENGINEER</Description>
 	<Civilopedia>TXT_KEY_UNIT_CHEMICAL_ENGINEER_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_UNIT_CHEMICAL_ENGINEER_STRATEGY</Strategy>
-	<Strategy></Strategy>
 	<bGraphicalOnly>0</bGraphicalOnly>
 	<bNoBadGoodies>0</bNoBadGoodies>
 	<bOnlyDefensive>0</bOnlyDefensive>
@@ -5248,7 +5391,6 @@
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
-	<iTeachLevel>0</iTeachLevel>
 	<ProfessionMeshGroups>
 		<UnitMeshGroups>
 			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
@@ -5259,6 +5401,17 @@
 			<UnitMeshGroup>
 				<iRequired>1</iRequired>
 				<ArtDefineTag>ART_DEF_UNIT_CHEMICAL_ENGINEER</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
 			</UnitMeshGroup>
 		</UnitMeshGroups>
 		<UnitMeshGroups>
@@ -5441,7 +5594,6 @@
 	<Description>TXT_KEY_UNIT_ELECTRICAL_ENGINEER</Description>
 	<Civilopedia>TXT_KEY_UNIT_ELECTRICAL_ENGINEER_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_UNIT_ELECTRICAL_ENGINEER_STRATEGY</Strategy>
-	<Strategy></Strategy>
 	<bGraphicalOnly>0</bGraphicalOnly>
 	<bNoBadGoodies>0</bNoBadGoodies>
 	<bOnlyDefensive>0</bOnlyDefensive>
@@ -5568,7 +5720,6 @@
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
-	<iTeachLevel>0</iTeachLevel>
 	<ProfessionMeshGroups>
 		<UnitMeshGroups>
 			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
@@ -5579,6 +5730,17 @@
 			<UnitMeshGroup>
 				<iRequired>1</iRequired>
 				<ArtDefineTag>ART_DEF_UNIT_ELECTRICAL_ENGINEER</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
 			</UnitMeshGroup>
 		</UnitMeshGroups>
 		<UnitMeshGroups>
@@ -5761,7 +5923,6 @@
 	<Description>TXT_KEY_UNIT_BRILLIANT_PHYSICIAN</Description>
 	<Civilopedia>TXT_KEY_UNIT_BRILLIANT_PHYSICIAN_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_UNIT_BRILLIANT_PHYSICIAN_STRATEGY</Strategy>
-	<Strategy></Strategy>
 	<bGraphicalOnly>0</bGraphicalOnly>
 	<bNoBadGoodies>0</bNoBadGoodies>
 	<bOnlyDefensive>0</bOnlyDefensive>
@@ -5888,7 +6049,6 @@
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
-	<iTeachLevel>0</iTeachLevel>
 	<ProfessionMeshGroups>
 		<UnitMeshGroups>
 			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
@@ -5899,6 +6059,17 @@
 			<UnitMeshGroup>
 				<iRequired>1</iRequired>
 				<ArtDefineTag>ART_DEF_UNIT_BRILLIANT_PHYSICIAN</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
 			</UnitMeshGroup>
 		</UnitMeshGroups>
 		<UnitMeshGroups>
@@ -6081,7 +6252,6 @@
 	<Description>TXT_KEY_UNIT_INFAMOUS_SMUGGLER</Description>
 	<Civilopedia>TXT_KEY_UNIT_INFAMOUS_SMUGGLER_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_UNIT_INFAMOUS_SMUGGLER_STRATEGY</Strategy>
-	<Strategy></Strategy>
 	<bGraphicalOnly>0</bGraphicalOnly>
 	<bNoBadGoodies>0</bNoBadGoodies>
 	<bOnlyDefensive>0</bOnlyDefensive>
@@ -6208,7 +6378,6 @@
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
-	<iTeachLevel>0</iTeachLevel>
 	<ProfessionMeshGroups>
 		<UnitMeshGroups>
 			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
@@ -6219,6 +6388,17 @@
 			<UnitMeshGroup>
 				<iRequired>1</iRequired>
 				<ArtDefineTag>ART_DEF_UNIT_INFAMOUS_SMUGGLER</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
 			</UnitMeshGroup>
 		</UnitMeshGroups>
 		<UnitMeshGroups>
@@ -6401,7 +6581,6 @@
 	<Description>TXT_KEY_UNIT_CIVIL_ENGINEER</Description>
 	<Civilopedia>TXT_KEY_UNIT_CIVIL_ENGINEER_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_UNIT_CIVIL_ENGINEER_STRATEGY</Strategy>
-	<Strategy></Strategy>
 	<bGraphicalOnly>0</bGraphicalOnly>
 	<bNoBadGoodies>0</bNoBadGoodies>
 	<bOnlyDefensive>0</bOnlyDefensive>
@@ -6520,7 +6699,6 @@
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
-	<iTeachLevel>0</iTeachLevel>
 	<ProfessionMeshGroups>
 		<UnitMeshGroups>
 			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
@@ -6531,6 +6709,17 @@
 			<UnitMeshGroup>
 				<iRequired>1</iRequired>
 				<ArtDefineTag>ART_DEF_UNIT_CIVIL_ENGINEER</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
 			</UnitMeshGroup>
 		</UnitMeshGroups>
 		<UnitMeshGroups>
@@ -6713,7 +6902,6 @@
 	<Description>TXT_KEY_UNIT_FASCINATING_CELEBRITY</Description>
 	<Civilopedia>TXT_KEY_UNIT_FASCINATING_CELEBRITY_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_UNIT_FASCINATING_CELEBRITY_STRATEGY</Strategy>
-	<Strategy></Strategy>
 	<bGraphicalOnly>0</bGraphicalOnly>
 	<bNoBadGoodies>0</bNoBadGoodies>
 	<bOnlyDefensive>0</bOnlyDefensive>
@@ -6832,7 +7020,6 @@
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
-	<iTeachLevel>0</iTeachLevel>
 	<ProfessionMeshGroups>
 		<UnitMeshGroups>
 			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
@@ -6843,6 +7030,17 @@
 			<UnitMeshGroup>
 				<iRequired>1</iRequired>
 				<ArtDefineTag>ART_DEF_UNIT_FASCINATING_CELEBRITY</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
 			</UnitMeshGroup>
 		</UnitMeshGroups>
 		<UnitMeshGroups>
@@ -7025,7 +7223,6 @@
 	<Description>TXT_KEY_UNIT_ARTFUL_POLITICIAN</Description>
 	<Civilopedia>TXT_KEY_UNIT_ARTFUL_POLITICIAN_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_UNIT_ARTFUL_POLITICIAN_STRATEGY</Strategy>
-	<Strategy></Strategy>
 	<bGraphicalOnly>0</bGraphicalOnly>
 	<bNoBadGoodies>0</bNoBadGoodies>
 	<bOnlyDefensive>0</bOnlyDefensive>
@@ -7144,7 +7341,6 @@
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
-	<iTeachLevel>0</iTeachLevel>
 	<ProfessionMeshGroups>
 		<UnitMeshGroups>
 			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
@@ -7155,6 +7351,338 @@
 			<UnitMeshGroup>
 				<iRequired>1</iRequired>
 				<ArtDefineTag>ART_DEF_UNIT_ARTFUL_POLITICIAN</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_EXPLORER</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_EXPLORER</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_LABORER</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_LABORER</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_MECHANIZED_LABORER</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_MECHANIZED_LABORER</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_HUNTER</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_HUNTER</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_TRADER</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_TRADER</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_ANTHROPOLOGIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_ANTHROPOLOGIST</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_EMISSARY</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_EMISSARY</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_MILITIA</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_MILITIA</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_INFANTRY</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_INFANTRY</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_SCOUT_MECHA</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_SCOUT_MECHA</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_TACTICAL_MECHA</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_TACTICAL_MECHA</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_HEAVY_MECHA</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_HEAVY_MECHA</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_TERRORIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_TERRORIST</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_PIRATE</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_PIRATE</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+	</ProfessionMeshGroups>
+	<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+	<HotKey/>
+	<bAltDown>0</bAltDown>
+	<bShiftDown>0</bShiftDown>
+	<bCtrlDown>0</bCtrlDown>
+	<iHotKeyPriority>0</iHotKeyPriority>
+	<FreePromotions/>
+	<LeaderPromotion>NONE</LeaderPromotion>
+	<iLeaderExperience>0</iLeaderExperience>
+</UnitInfo>
+<UnitInfo>
+	<Type>UNIT_VISIONARY_RESEARCHER</Type>
+	<Class>UNITCLASS_VISIONARY_RESEARCHER</Class>
+	<UniqueNames/>
+	<Special>NONE</Special>
+	<Capture>NONE</Capture>
+	<Combat>NONE</Combat>
+	<Domain>DOMAIN_LAND</Domain>
+	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+	<Invisible>NONE</Invisible>
+	<SeeInvisible>NONE</SeeInvisible>
+	<Description>TXT_KEY_UNIT_VISIONARY_RESEARCHER</Description>
+	<Civilopedia>TXT_KEY_UNIT_VISIONARY_RESEARCHER_PEDIA</Civilopedia>
+	<Strategy>TXT_KEY_UNIT_VISIONARY_RESEARCHER_STRATEGY</Strategy>
+	<bGraphicalOnly>0</bGraphicalOnly>
+	<bNoBadGoodies>0</bNoBadGoodies>
+	<bOnlyDefensive>0</bOnlyDefensive>
+	<bNoCapture>0</bNoCapture>
+	<bQuickCombat>0</bQuickCombat>
+	<bRivalTerritory>0</bRivalTerritory>
+	<bMilitaryProduction>0</bMilitaryProduction>
+	<bFound>0</bFound>
+	<bInvisible>0</bInvisible>
+	<bNoDefensiveBonus>0</bNoDefensiveBonus>
+	<bCanMoveImpassable>0</bCanMoveImpassable>
+	<bCanMoveAllTerrain>0</bCanMoveAllTerrain>
+	<bFlatMovementCost>0</bFlatMovementCost>
+	<bIgnoreTerrainCost>0</bIgnoreTerrainCost>
+	<bMechanized>0</bMechanized>
+	<bLineOfSight>0</bLineOfSight>
+	<bHiddenNationality>0</bHiddenNationality>
+	<bAlwaysHostile>0</bAlwaysHostile>
+	<bTreasure>0</bTreasure>
+	<UnitClassUpgrades/>
+	<UnitAIs>
+		<UnitAI>
+			<UnitAIType>UNITAI_COLONIST</UnitAIType>
+			<bUnitAI>1</bUnitAI>
+		</UnitAI>
+	</UnitAIs>
+	<NotUnitAIs/>
+	<Builds>
+		<Build>
+			<BuildType>BUILD_FARM</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_MILL</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_QUARRY</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_MINE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_FACILITY</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_LAB</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_PLANTATION</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_RIG</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+	</Builds>
+	<PrereqBuilding>NONE</PrereqBuilding>
+	<PrereqOrBuildings/>
+	<ProductionTraits/>
+	<iAIWeight>0</iAIWeight>
+	<YieldCosts/>
+	<iHurryCostModifier>0</iHurryCostModifier>
+	<iAdvancedStartCost>-1</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iEuropeCost>-800</iEuropeCost>
+	<iEuropeCostIncrease>0</iEuropeCostIncrease>
+	<iImmigrationWeight>100</iImmigrationWeight>
+	<iImmigrationWeightDecay>10</iImmigrationWeightDecay>
+	<iMinAreaSize>-1</iMinAreaSize>
+	<iMoves>1</iMoves>
+	<bCapturesCargo>0</bCapturesCargo>
+	<iWorkRate>0</iWorkRate>
+	<iWorkRateModifier>0</iWorkRateModifier>
+	<iMissionaryRateModifier>0</iMissionaryRateModifier>
+	<TerrainImpassables/>
+	<FeatureImpassables/>
+	<EvasionBuildings/>
+	<iCombat>0</iCombat>
+	<iXPValueAttack>4</iXPValueAttack>
+	<iXPValueDefense>2</iXPValueDefense>
+	<iWithdrawalProb>0</iWithdrawalProb>
+	<iCityAttack>0</iCityAttack>
+	<iCityDefense>0</iCityDefense>
+	<iHillsAttack>0</iHillsAttack>
+	<iHillsDefense>0</iHillsDefense>
+	<TerrainAttacks/>
+	<TerrainDefenses/>
+	<FeatureAttacks/>
+	<FeatureDefenses/>
+	<UnitClassAttackMods/>
+	<UnitClassDefenseMods/>
+	<UnitCombatMods/>
+	<DomainMods/>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_RESEARCH</YieldType>
+			<iYieldMod>100</iYieldMod>
+		</YieldModifier>
+	</YieldModifiers>
+	<YieldChanges/>
+	<BonusYieldChanges/>
+	<bLandYieldChanges>1</bLandYieldChanges>
+	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<iBombardRate>0</iBombardRate>
+	<SpecialCargo>NONE</SpecialCargo>
+	<DomainCargo>NONE</DomainCargo>
+	<iCargo>0</iCargo>
+	<iRequiredTransportSize>1</iRequiredTransportSize>
+	<iAsset>100</iAsset>
+	<iPower>5</iPower>
+	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iStudentWeight>1000</iStudentWeight>
+	<iTeacherWeight>0</iTeacherWeight>
+	<ProfessionMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_VISIONARY_RESEARCHER</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
 			</UnitMeshGroup>
 		</UnitMeshGroups>
 		<UnitMeshGroups>
@@ -7337,7 +7865,6 @@
 	<Description>TXT_KEY_UNIT_CONVICT</Description>
 	<Civilopedia>TXT_KEY_UNIT_CONVICT_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_UNIT_CONVICT_STRATEGY</Strategy>
-	<Strategy></Strategy>
 	<bGraphicalOnly>0</bGraphicalOnly>
 	<bNoBadGoodies>0</bNoBadGoodies>
 	<bOnlyDefensive>0</bOnlyDefensive>
@@ -7456,7 +7983,6 @@
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
-	<iTeachLevel>0</iTeachLevel>
 	<ProfessionMeshGroups>
 		<UnitMeshGroups>
 			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
@@ -7467,6 +7993,17 @@
 			<UnitMeshGroup>
 				<iRequired>1</iRequired>
 				<ArtDefineTag>ART_DEF_UNIT_CONVICT</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
 			</UnitMeshGroup>
 		</UnitMeshGroups>
 		<UnitMeshGroups>
@@ -7649,7 +8186,6 @@
 	<Description>TXT_KEY_UNIT_PROLETARIAN</Description>
 	<Civilopedia>TXT_KEY_UNIT_PROLETARIAN_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_UNIT_PROLETARIAN_STRATEGY</Strategy>
-	<Strategy></Strategy>
 	<bGraphicalOnly>0</bGraphicalOnly>
 	<bNoBadGoodies>0</bNoBadGoodies>
 	<bOnlyDefensive>0</bOnlyDefensive>
@@ -7768,7 +8304,6 @@
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
-	<iTeachLevel>0</iTeachLevel>
 	<ProfessionMeshGroups>
 		<UnitMeshGroups>
 			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
@@ -7779,6 +8314,17 @@
 			<UnitMeshGroup>
 				<iRequired>1</iRequired>
 				<ArtDefineTag>ART_DEF_UNIT_PROLETARIAN</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
 			</UnitMeshGroup>
 		</UnitMeshGroups>
 		<UnitMeshGroups>
@@ -7961,7 +8507,6 @@
 	<Description>TXT_KEY_UNIT_UFO_CULTIST</Description>
 	<Civilopedia>TXT_KEY_UNIT_UFO_CULTIST_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_UNIT_UFO_CULTIST_STRATEGY</Strategy>
-	<Strategy></Strategy>
 	<bGraphicalOnly>0</bGraphicalOnly>
 	<bNoBadGoodies>0</bNoBadGoodies>
 	<bOnlyDefensive>0</bOnlyDefensive>
@@ -8080,7 +8625,6 @@
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
-	<iTeachLevel>0</iTeachLevel>
 	<ProfessionMeshGroups>
 		<UnitMeshGroups>
 			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
@@ -8091,6 +8635,17 @@
 			<UnitMeshGroup>
 				<iRequired>1</iRequired>
 				<ArtDefineTag>ART_DEF_UNIT_UFO_CULTIST</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
 			</UnitMeshGroup>
 		</UnitMeshGroups>
 		<UnitMeshGroups>
@@ -8273,7 +8828,6 @@
 	<Description>TXT_KEY_UNIT_ADDICT</Description>
 	<Civilopedia>TXT_KEY_UNIT_ADDICT_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_UNIT_ADDICT_STRATEGY</Strategy>
-	<Strategy></Strategy>
 	<bGraphicalOnly>0</bGraphicalOnly>
 	<bNoBadGoodies>0</bNoBadGoodies>
 	<bOnlyDefensive>0</bOnlyDefensive>
@@ -8392,7 +8946,6 @@
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
-	<iTeachLevel>0</iTeachLevel>
 	<ProfessionMeshGroups>
 		<UnitMeshGroups>
 			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
@@ -8403,6 +8956,17 @@
 			<UnitMeshGroup>
 				<iRequired>1</iRequired>
 				<ArtDefineTag>ART_DEF_UNIT_ADDICT</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
 			</UnitMeshGroup>
 		</UnitMeshGroups>
 		<UnitMeshGroups>
@@ -8585,7 +9149,6 @@
 	<Description>TXT_KEY_UNIT_ANDROID</Description>
 	<Civilopedia>TXT_KEY_UNIT_ANDROID_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_UNIT_ANDROID_STRATEGY</Strategy>
-	<Strategy></Strategy>
 	<bGraphicalOnly>0</bGraphicalOnly>
 	<bNoBadGoodies>0</bNoBadGoodies>
 	<bOnlyDefensive>0</bOnlyDefensive>
@@ -8704,7 +9267,6 @@
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
-	<iTeachLevel>0</iTeachLevel>
 	<ProfessionMeshGroups>
 		<UnitMeshGroups>
 			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
@@ -8715,6 +9277,17 @@
 			<UnitMeshGroup>
 				<iRequired>1</iRequired>
 				<ArtDefineTag>ART_DEF_UNIT_ANDROID</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
 			</UnitMeshGroup>
 		</UnitMeshGroups>
 		<UnitMeshGroups>
@@ -8897,7 +9470,6 @@
 	<Description>TXT_KEY_UNIT_COLONIST</Description>
 	<Civilopedia>TXT_KEY_UNIT_COLONIST_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_UNIT_COLONIST_STRATEGY</Strategy>
-	<Strategy></Strategy>
 	<bGraphicalOnly>0</bGraphicalOnly>
 	<bNoBadGoodies>0</bNoBadGoodies>
 	<bOnlyDefensive>0</bOnlyDefensive>
@@ -8996,9 +9568,7 @@
 	<UnitClassDefenseMods/>
 	<UnitCombatMods/>
 	<DomainMods/>
-	<YieldModifiers>
-		<YieldModifier></YieldModifier>
-	</YieldModifiers>
+	<YieldModifiers/>
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
@@ -9013,8 +9583,18 @@
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
-	<iTeachLevel>0</iTeachLevel>
 	<ProfessionMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
 		<UnitMeshGroups>
 			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
 			<fMaxSpeed>1.75</fMaxSpeed>
@@ -9206,7 +9786,6 @@
 	<Description>TXT_KEY_UNIT_EMINENT_ANTHROPOLOGIST</Description>
 	<Civilopedia>TXT_KEY_UNIT_EMINENT_ANTHROPOLOGIST_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_UNIT_EMINENT_ANTHROPOLOGIST_STRATEGY</Strategy>
-	<Strategy></Strategy>
 	<bGraphicalOnly>0</bGraphicalOnly>
 	<bNoBadGoodies>0</bNoBadGoodies>
 	<bOnlyDefensive>0</bOnlyDefensive>
@@ -9305,9 +9884,7 @@
 	<UnitClassDefenseMods/>
 	<UnitCombatMods/>
 	<DomainMods/>
-	<YieldModifiers>
-		<YieldModifier></YieldModifier>
-	</YieldModifiers>
+	<YieldModifiers/>
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
@@ -9322,7 +9899,6 @@
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
-	<iTeachLevel>0</iTeachLevel>
 	<ProfessionMeshGroups>
 		<UnitMeshGroups>
 			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
@@ -9333,6 +9909,17 @@
 			<UnitMeshGroup>
 				<iRequired>1</iRequired>
 				<ArtDefineTag>ART_DEF_UNIT_EMINENT_ANTHROPOLOGIST</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
 			</UnitMeshGroup>
 		</UnitMeshGroups>
 		<UnitMeshGroups>
@@ -9515,7 +10102,6 @@
 	<Description>TXT_KEY_UNIT_HARDY_LABORER</Description>
 	<Civilopedia>TXT_KEY_UNIT_HARDY_LABORER_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_UNIT_HARDY_LABORER_STRATEGY</Strategy>
-	<Strategy></Strategy>
 	<bGraphicalOnly>0</bGraphicalOnly>
 	<bNoBadGoodies>0</bNoBadGoodies>
 	<bOnlyDefensive>0</bOnlyDefensive>
@@ -9634,7 +10220,6 @@
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
-	<iTeachLevel>0</iTeachLevel>
 	<ProfessionMeshGroups>
 		<UnitMeshGroups>
 			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
@@ -9645,6 +10230,17 @@
 			<UnitMeshGroup>
 				<iRequired>1</iRequired>
 				<ArtDefineTag>ART_DEF_UNIT_HARDY_LABORER</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
 			</UnitMeshGroup>
 		</UnitMeshGroups>
 		<UnitMeshGroups>
@@ -9827,7 +10423,6 @@
 	<Description>TXT_KEY_UNIT_INTREPID_EXPLORER</Description>
 	<Civilopedia>TXT_KEY_UNIT_INTREPID_EXPLORER_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_UNIT_INTREPID_EXPLORER_STRATEGY</Strategy>
-	<Strategy></Strategy>
 	<bGraphicalOnly>0</bGraphicalOnly>
 	<bNoBadGoodies>0</bNoBadGoodies>
 	<bOnlyDefensive>0</bOnlyDefensive>
@@ -9926,9 +10521,7 @@
 	<UnitClassDefenseMods/>
 	<UnitCombatMods/>
 	<DomainMods/>
-	<YieldModifiers>
-		<YieldModifier></YieldModifier>
-	</YieldModifiers>
+	<YieldModifiers/>
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
@@ -9943,7 +10536,6 @@
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
-	<iTeachLevel>0</iTeachLevel>
 	<ProfessionMeshGroups>
 		<UnitMeshGroups>
 			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
@@ -9954,6 +10546,17 @@
 			<UnitMeshGroup>
 				<iRequired>1</iRequired>
 				<ArtDefineTag>ART_DEF_UNIT_INTREPID_EXPLORER</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
 			</UnitMeshGroup>
 		</UnitMeshGroups>
 		<UnitMeshGroups>
@@ -10136,7 +10739,6 @@
 	<Description>TXT_KEY_UNIT_VETERAN_SOLDIER</Description>
 	<Civilopedia>TXT_KEY_UNIT_VETERAN_SOLDIER_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_UNIT_VETERAN_SOLDIER_STRATEGY</Strategy>
-	<Strategy></Strategy>
 	<bGraphicalOnly>0</bGraphicalOnly>
 	<bNoBadGoodies>0</bNoBadGoodies>
 	<bOnlyDefensive>0</bOnlyDefensive>
@@ -10235,9 +10837,7 @@
 	<UnitClassDefenseMods/>
 	<UnitCombatMods/>
 	<DomainMods/>
-	<YieldModifiers>
-		<YieldModifier></YieldModifier>
-	</YieldModifiers>
+	<YieldModifiers/>
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
@@ -10252,7 +10852,6 @@
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
-	<iTeachLevel>0</iTeachLevel>
 	<ProfessionMeshGroups>
 		<UnitMeshGroups>
 			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
@@ -10263,6 +10862,17 @@
 			<UnitMeshGroup>
 				<iRequired>1</iRequired>
 				<ArtDefineTag>ART_DEF_UNIT_VETERAN_SOLDIER</ArtDefineTag>
+			</UnitMeshGroup>
+		</UnitMeshGroups>
+		<UnitMeshGroups>
+			<ProfessionType>PROFESSION_COLONIST</ProfessionType>
+			<fMaxSpeed>1.75</fMaxSpeed>
+			<fPadTime>1</fPadTime>
+			<iMeleeWaveSize>4</iMeleeWaveSize>
+			<iRangedWaveSize>0</iRangedWaveSize>
+			<UnitMeshGroup>
+				<iRequired>1</iRequired>
+				<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
 			</UnitMeshGroup>
 		</UnitMeshGroups>
 		<UnitMeshGroups>
@@ -18226,7 +18836,7 @@
 	<Capture>NONE</Capture>
 	<Combat>NONE</Combat>
 	<Domain>DOMAIN_LAND</Domain>
-	<DefaultUnitAI>UNITAI_COMBAT_LAND</DefaultUnitAI>
+	<DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
 	<DefaultProfession>NONE</DefaultProfession>
 	<Invisible>NONE</Invisible>
 	<SeeInvisible>NONE</SeeInvisible>
@@ -18255,7 +18865,7 @@
 	<UnitClassUpgrades/>
 	<UnitAIs>
 		<UnitAI>
-			<UnitAIType>UNITAI_COMBAT_LAND</UnitAIType>
+			<UnitAIType>UNITAI_OFFENSIVE</UnitAIType>
 			<bUnitAI>1</bUnitAI>
 		</UnitAI>
 	</UnitAIs>
@@ -18344,7 +18954,7 @@
 	<Capture>NONE</Capture>
 	<Combat>NONE</Combat>
 	<Domain>DOMAIN_LAND</Domain>
-	<DefaultUnitAI>UNITAI_COMBAT_LAND</DefaultUnitAI>
+	<DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
 	<DefaultProfession>NONE</DefaultProfession>
 	<Invisible>NONE</Invisible>
 	<SeeInvisible>NONE</SeeInvisible>
@@ -18373,7 +18983,7 @@
 	<UnitClassUpgrades/>
 	<UnitAIs>
 		<UnitAI>
-			<UnitAIType>UNITAI_COMBAT_LAND</UnitAIType>
+			<UnitAIType>UNITAI_OFFENSIVE</UnitAIType>
 			<bUnitAI>1</bUnitAI>
 		</UnitAI>
 	</UnitAIs>
@@ -18462,7 +19072,7 @@
 	<Capture>NONE</Capture>
 	<Combat>NONE</Combat>
 	<Domain>DOMAIN_LAND</Domain>
-	<DefaultUnitAI>UNITAI_COMBAT_LAND</DefaultUnitAI>
+	<DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
 	<DefaultProfession>NONE</DefaultProfession>
 	<Invisible>NONE</Invisible>
 	<SeeInvisible>NONE</SeeInvisible>
@@ -18491,7 +19101,7 @@
 	<UnitClassUpgrades/>
 	<UnitAIs>
 		<UnitAI>
-			<UnitAIType>UNITAI_COMBAT_LAND</UnitAIType>
+			<UnitAIType>UNITAI_OFFENSIVE</UnitAIType>
 			<bUnitAI>1</bUnitAI>
 		</UnitAI>
 	</UnitAIs>
@@ -18580,7 +19190,7 @@
 	<Capture>NONE</Capture>
 	<Combat>NONE</Combat>
 	<Domain>DOMAIN_LAND</Domain>
-	<DefaultUnitAI>UNITAI_COMBAT_LAND</DefaultUnitAI>
+	<DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
 	<DefaultProfession>NONE</DefaultProfession>
 	<Invisible>NONE</Invisible>
 	<SeeInvisible>NONE</SeeInvisible>
@@ -18609,7 +19219,7 @@
 	<UnitClassUpgrades/>
 	<UnitAIs>
 		<UnitAI>
-			<UnitAIType>UNITAI_COMBAT_LAND</UnitAIType>
+			<UnitAIType>UNITAI_OFFENSIVE</UnitAIType>
 			<bUnitAI>1</bUnitAI>
 		</UnitAI>
 	</UnitAIs>
@@ -18698,7 +19308,7 @@
 	<Capture>NONE</Capture>
 	<Combat>NONE</Combat>
 	<Domain>DOMAIN_LAND</Domain>
-	<DefaultUnitAI>UNITAI_COMBAT_LAND</DefaultUnitAI>
+	<DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
 	<DefaultProfession>NONE</DefaultProfession>
 	<Invisible>NONE</Invisible>
 	<SeeInvisible>NONE</SeeInvisible>
@@ -18727,7 +19337,7 @@
 	<UnitClassUpgrades/>
 	<UnitAIs>
 		<UnitAI>
-			<UnitAIType>UNITAI_COMBAT_LAND</UnitAIType>
+			<UnitAIType>UNITAI_OFFENSIVE</UnitAIType>
 			<bUnitAI>1</bUnitAI>
 		</UnitAI>
 	</UnitAIs>
@@ -18816,7 +19426,7 @@
 	<Capture>NONE</Capture>
 	<Combat>NONE</Combat>
 	<Domain>DOMAIN_LAND</Domain>
-	<DefaultUnitAI>UNITAI_COMBAT_LAND</DefaultUnitAI>
+	<DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
 	<DefaultProfession>NONE</DefaultProfession>
 	<Invisible>NONE</Invisible>
 	<SeeInvisible>NONE</SeeInvisible>
@@ -18845,7 +19455,7 @@
 	<UnitClassUpgrades/>
 	<UnitAIs>
 		<UnitAI>
-			<UnitAIType>UNITAI_COMBAT_LAND</UnitAIType>
+			<UnitAIType>UNITAI_OFFENSIVE</UnitAIType>
 			<bUnitAI>1</bUnitAI>
 		</UnitAI>
 	</UnitAIs>

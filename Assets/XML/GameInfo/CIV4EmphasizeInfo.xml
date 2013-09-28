@@ -1,833 +1,1385 @@
 <?xml version="1.0"?>
-<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) Alex Mantzaris (Firaxis Games) -->
 <!-- Sid Meier's Civilization 4 -->
 <!-- Copyright Firaxis Games 2005 -->
 <!-- -->
 <!-- Emphasize Infos -->
 <Civ4EmphasizeInfo xmlns="x-schema:CIV4GameInfoSchema.xml">
-	<EmphasizeInfos>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NUTRIENTS</Type>
-			<Description>TXT_KEY_EMPHASIZE_NUTRIENTS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_NUTRIENTS</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_BIONICS</Type>
-			<Description>TXT_KEY_EMPHASIZE_BIONICS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_BIONICS</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_MICROBES</Type>
-			<Description>TXT_KEY_EMPHASIZE_MICROBES</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_MICROBES</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_HARD_CURRENCY</Type>
-			<Description>TXT_KEY_EMPHASIZE_HARD_CURRENCY</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_HARD_CURRENCY</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_CRYSTALLOIDS</Type>
-			<Description>TXT_KEY_EMPHASIZE_CRYSTALLOIDS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_CRYSTALLOIDS</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_BIOPOLYMERS</Type>
-			<Description>TXT_KEY_EMPHASIZE_BIOPOLYMERS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_BIOPOLYMERS</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_SILICATES</Type>
-			<Description>TXT_KEY_EMPHASIZE_SILICATES</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_SILICATES</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_PRECIOUS_METALS</Type>
-			<Description>TXT_KEY_EMPHASIZE_PRECIOUS_METALS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_PRECIOUS_METALS</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_ELECTROLYTES</Type>
-			<Description>TXT_KEY_EMPHASIZE_ELECTROLYTES</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_ELECTROLYTES</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_ICE</Type>
-			<Description>TXT_KEY_EMPHASIZE_ICE</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_ICE</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_ISOTOPES</Type>
-			<Description>TXT_KEY_EMPHASIZE_ISOTOPES</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_ISOTOPES</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_URANIUM</Type>
-			<Description>TXT_KEY_EMPHASIZE_URANIUM</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_URANIUM</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_PLUTONIUM</Type>
-			<Description>TXT_KEY_EMPHASIZE_PLUTONIUM</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_PLUTONIUM</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_RARE_EARTHS</Type>
-			<Description>TXT_KEY_EMPHASIZE_RARE_EARTHS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_RARE_EARTHS</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_BASE_METALS</Type>
-			<Description>TXT_KEY_EMPHASIZE_BASE_METALS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_BASE_METALS</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_TISSUE_SAMPLES</Type>
-			<Description>TXT_KEY_EMPHASIZE_TISSUE_SAMPLES</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_TISSUE_SAMPLES</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NUCLEIC_ACIDS</Type>
-			<Description>TXT_KEY_EMPHASIZE_NUCLEIC_ACIDS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_NUCLEIC_ACIDS</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_AMINO_ACIDS</Type>
-			<Description>TXT_KEY_EMPHASIZE_AMINO_ACIDS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_AMINO_ACIDS</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_OPIATES</Type>
-			<Description>TXT_KEY_EMPHASIZE_OPIATES</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_OPIATES</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_TOOLS</Type>
-			<Description>TXT_KEY_EMPHASIZE_TOOLS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_TOOLS</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_WEAPONS</Type>
-			<Description>TXT_KEY_EMPHASIZE_WEAPONS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_WEAPONS</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_ROBOTICS</Type>
-			<Description>TXT_KEY_EMPHASIZE_ROBOTICS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_ROBOTICS</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_XENOTOXINS</Type>
-			<Description>TXT_KEY_EMPHASIZE_XENOTOXINS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_XENOTOXINS</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_PEPTIDES</Type>
-			<Description>TXT_KEY_EMPHASIZE_PEPTIDES</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_PEPTIDES</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_BOTANICALS</Type>
-			<Description>TXT_KEY_EMPHASIZE_BOTANICALS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_BOTANICALS</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_HYDROCARBONS</Type>
-			<Description>TXT_KEY_EMPHASIZE_HYDROCARBONS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_HYDROCARBONS</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_EARTH_GOODS</Type>
-			<Description>TXT_KEY_EMPHASIZE_EARTH_GOODS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_EARTH_GOODS</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_HAMMERS</Type>
-			<Description>TXT_KEY_EMPHASIZE_HAMMERS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_HAMMERS</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_BELLS</Type>
-			<Description>TXT_KEY_EMPHASIZE_BELLS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_BELLS</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_CROSSES</Type>
-			<Description>TXT_KEY_EMPHASIZE_CROSSES</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_CROSSES</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_EDUCATION</Type>
-			<Description>TXT_KEY_EMPHASIZE_EDUCATION</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-						<YieldType>YIELD_EDUCATION</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_IDEAS</Type>
-			<Description>TXT_KEY_EMPHASIZE_IDEAS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_IDEAS</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_CULTURE</Type>
-			<Description>TXT_KEY_EMPHASIZE_CULTURE</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_CULTURE</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_GOLD</Type>
-			<Description>TXT_KEY_EMPHASIZE_GOLD</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_GOLD</YieldType>
-					<iYield>1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_NUTRIENTS</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_NUTRIENTS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_NUTRIENTS</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_BIONICS</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_BIONICS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_BIONICS</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_MICROBES</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_MICROBES</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_MICROBES</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_HARD_CURRENCY</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_HARD_CURRENCY</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_HARD_CURRENCY</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_CRYSTALLOIDS</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_CRYSTALLOIDS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_CRYSTALLOIDS</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_BIOPOLYMERS</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_BIOPOLYMERS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_BIOPOLYMERS</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_SILICATES</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_SILICATES</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_SILICATES</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_PRECIOUS_METALS</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_PRECIOUS_METALS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_PRECIOUS_METALS</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_ELECTROLYTES</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_ELECTROLYTES</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_ELECTROLYTES</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_ICE</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_ICE</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_ICE</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_ISOTOPES</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_ISOTOPES</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_ISOTOPES</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_URANIUM</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_URANIUM</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_URANIUM</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_PLUTONIUM</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_PLUTONIUM</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_PLUTONIUM</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_RARE_EARTHS</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_RARE_EARTHS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_RARE_EARTHS</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_BASE_METALS</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_BASE_METALS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_BASE_METALS</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_TISSUE_SAMPLES</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_TISSUE_SAMPLES</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_TISSUE_SAMPLES</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_NUCLEIC_ACIDS</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_NUCLEIC_ACIDS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_NUCLEIC_ACIDS</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_AMINO_ACIDS</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_AMINO_ACIDS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_AMINO_ACIDS</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_OPIATES</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_OPIATES</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_OPIATES</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_TOOLS</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_TOOLS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_TOOLS</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_WEAPONS</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_WEAPONS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_WEAPONS</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_ROBOTICS</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_ROBOTICS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_ROBOTICS</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_XENOTOXINS</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_XENOTOXINS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_XENOTOXINS</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_PEPTIDES</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_PEPTIDES</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_PEPTIDES</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_BOTANICALS</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_BOTANICALS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_BOTANICALS</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_HYDROCARBONS</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_HYDROCARBONS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_HYDROCARBONS</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_EARTH_GOODS</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_EARTH_GOODS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_EARTH_GOODS</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_HAMMERS</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_HAMMERS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_HAMMERS</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_BELLS</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_BELLS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_BELLS</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_CROSSES</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_CROSSES</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_CROSSES</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_EDUCATION</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_EDUCATION</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_EDUCATION</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_IDEAS</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_IDEAS</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_IDEAS</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_CULTURE</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_CULTURE</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_CULTURE</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_NO_GOLD</Type>
-			<Description>TXT_KEY_EMPHASIZE_NO_GOLD</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>0</bAvoidGrowth>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_GOLD</YieldType>
-					<iYield>-1</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-		</EmphasizeInfo>
-		<EmphasizeInfo>
-			<Type>EMPHASIZE_AVOID_GROWTH</Type>
-			<Description>TXT_KEY_EMPHASIZE_AVOID_GROWTH</Description>
-			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-			<bAvoidGrowth>1</bAvoidGrowth>
-			<YieldModifiers/>
-		</EmphasizeInfo>
-	</EmphasizeInfos>
+<EmphasizeInfos>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NUTRIENTS</Type>
+	<Description>Emphasize Nutrients</Description>
+	<Button>Art/Interface/Buttons/Yields/NUTRIENTS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_NUTRIENTS</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_NUTRIENTS</Type>
+	<Description>Deemphasize Nutrients</Description>
+	<Button>Art/Interface/Buttons/Yields/NUTRIENTS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_NUTRIENTS</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_BIOPOLYMERS</Type>
+	<Description>Emphasize Biopolymers</Description>
+	<Button>Art/Interface/Buttons/Yields/BIOPOLYMERS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_BIOPOLYMERS</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_BIOPOLYMERS</Type>
+	<Description>Deemphasize Biopolymers</Description>
+	<Button>Art/Interface/Buttons/Yields/BIOPOLYMERS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_BIOPOLYMERS</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_SILICATES</Type>
+	<Description>Emphasize Silicates</Description>
+	<Button>Art/Interface/Buttons/Yields/SILICATES.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_SILICATES</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_SILICATES</Type>
+	<Description>Deemphasize Silicates</Description>
+	<Button>Art/Interface/Buttons/Yields/SILICATES.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_SILICATES</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_BASE_METALS</Type>
+	<Description>Emphasize Base Metals</Description>
+	<Button>Art/Interface/Buttons/Yields/BASE_METALS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_BASE_METALS</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_BASE_METALS</Type>
+	<Description>Deemphasize Base Metals</Description>
+	<Button>Art/Interface/Buttons/Yields/BASE_METALS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_BASE_METALS</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_ACTINIDES</Type>
+	<Description>Emphasize Actinides</Description>
+	<Button>Art/Interface/Buttons/Yields/ACTINIDES.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_ACTINIDES</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_ACTINIDES</Type>
+	<Description>Deemphasize Actinides</Description>
+	<Button>Art/Interface/Buttons/Yields/ACTINIDES.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_ACTINIDES</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_ISOTOPES</Type>
+	<Description>Emphasize Isotopes</Description>
+	<Button>Art/Interface/Buttons/Yields/ISOTOPES.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_ISOTOPES</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_ISOTOPES</Type>
+	<Description>Deemphasize Isotopes</Description>
+	<Button>Art/Interface/Buttons/Yields/ISOTOPES.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_ISOTOPES</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_RARE_EARTHS</Type>
+	<Description>Emphasize Rare Earths</Description>
+	<Button>Art/Interface/Buttons/Yields/RARE_EARTHS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_RARE_EARTHS</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_RARE_EARTHS</Type>
+	<Description>Deemphasize Rare Earths</Description>
+	<Button>Art/Interface/Buttons/Yields/RARE_EARTHS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_RARE_EARTHS</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_CRYSTALLOIDS</Type>
+	<Description>Emphasize Crystalloids</Description>
+	<Button>Art/Interface/Buttons/Yields/CRYSTALLOIDS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_CRYSTALLOIDS</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_CRYSTALLOIDS</Type>
+	<Description>Deemphasize Crystalloids</Description>
+	<Button>Art/Interface/Buttons/Yields/CRYSTALLOIDS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_CRYSTALLOIDS</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NUCLEIC_ACIDS</Type>
+	<Description>Emphasize Nucleic Acids</Description>
+	<Button>Art/Interface/Buttons/Yields/NUCLEIC_ACIDS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_NUCLEIC_ACIDS</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_NUCLEIC_ACIDS</Type>
+	<Description>Deemphasize Nucleic Acids</Description>
+	<Button>Art/Interface/Buttons/Yields/NUCLEIC_ACIDS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_NUCLEIC_ACIDS</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_AMINO_ACIDS</Type>
+	<Description>Emphasize Amino Acids</Description>
+	<Button>Art/Interface/Buttons/Yields/AMINO_ACIDS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_AMINO_ACIDS</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_AMINO_ACIDS</Type>
+	<Description>Deemphasize Amino Acids</Description>
+	<Button>Art/Interface/Buttons/Yields/AMINO_ACIDS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_AMINO_ACIDS</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_TISSUE_SAMPLES</Type>
+	<Description>Emphasize Tissue Samples</Description>
+	<Button>Art/Interface/Buttons/Yields/TISSUE_SAMPLES.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_TISSUE_SAMPLES</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_TISSUE_SAMPLES</Type>
+	<Description>Deemphasize Tissue Samples</Description>
+	<Button>Art/Interface/Buttons/Yields/TISSUE_SAMPLES.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_TISSUE_SAMPLES</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_MICROBES</Type>
+	<Description>Emphasize Microbes</Description>
+	<Button>Art/Interface/Buttons/Yields/MICROBES.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_MICROBES</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_MICROBES</Type>
+	<Description>Deemphasize Microbes</Description>
+	<Button>Art/Interface/Buttons/Yields/MICROBES.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_MICROBES</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_DATACORES</Type>
+	<Description>Emphasize Datacores</Description>
+	<Button>Art/Interface/Buttons/Yields/DATACORES.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_DATACORES</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_DATACORES</Type>
+	<Description>Deemphasize Datacores</Description>
+	<Button>Art/Interface/Buttons/Yields/DATACORES.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_DATACORES</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_PROGENITOR_ARTIFACTS</Type>
+	<Description>Emphasize Progenitor Artifacts</Description>
+	<Button>Art/Interface/Buttons/Yields/PROGENITOR_ARTIFACTS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_PROGENITOR_ARTIFACTS</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_PROGENITOR_ARTIFACTS</Type>
+	<Description>Deemphasize Progenitor Artifacts</Description>
+	<Button>Art/Interface/Buttons/Yields/PROGENITOR_ARTIFACTS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_PROGENITOR_ARTIFACTS</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_ALIEN_SPECIMENS</Type>
+	<Description>Emphasize Alien Specimens</Description>
+	<Button>Art/Interface/Buttons/Yields/ALIEN_SPECIMENS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_ALIEN_SPECIMENS</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_ALIEN_SPECIMENS</Type>
+	<Description>Deemphasize Alien Specimens</Description>
+	<Button>Art/Interface/Buttons/Yields/ALIEN_SPECIMENS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_ALIEN_SPECIMENS</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_PRECIOUS_METALS</Type>
+	<Description>Emphasize Precious Metals</Description>
+	<Button>Art/Interface/Buttons/Yields/PRECIOUS_METALS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_PRECIOUS_METALS</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_PRECIOUS_METALS</Type>
+	<Description>Deemphasize Precious Metals</Description>
+	<Button>Art/Interface/Buttons/Yields/PRECIOUS_METALS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_PRECIOUS_METALS</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_OPIATES</Type>
+	<Description>Emphasize Opiates</Description>
+	<Button>Art/Interface/Buttons/Yields/OPIATES.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_OPIATES</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_OPIATES</Type>
+	<Description>Deemphasize Opiates</Description>
+	<Button>Art/Interface/Buttons/Yields/OPIATES.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_OPIATES</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_XENOTOXINS</Type>
+	<Description>Emphasize Xenotoxins</Description>
+	<Button>Art/Interface/Buttons/Yields/XENOTOXINS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_XENOTOXINS</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_XENOTOXINS</Type>
+	<Description>Deemphasize Xenotoxins</Description>
+	<Button>Art/Interface/Buttons/Yields/XENOTOXINS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_XENOTOXINS</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_BOTANICALS</Type>
+	<Description>Emphasize Botanicals</Description>
+	<Button>Art/Interface/Buttons/Yields/BOTANICALS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_BOTANICALS</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_BOTANICALS</Type>
+	<Description>Deemphasize Botanicals</Description>
+	<Button>Art/Interface/Buttons/Yields/BOTANICALS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_BOTANICALS</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_HYDROCARBONS</Type>
+	<Description>Emphasize Hydrocarbons</Description>
+	<Button>Art/Interface/Buttons/Yields/HYDROCARBONS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_HYDROCARBONS</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_HYDROCARBONS</Type>
+	<Description>Deemphasize Hydrocarbons</Description>
+	<Button>Art/Interface/Buttons/Yields/HYDROCARBONS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_HYDROCARBONS</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_CLATHRATES</Type>
+	<Description>Emphasize Clathrates</Description>
+	<Button>Art/Interface/Buttons/Yields/CLATHRATES.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_CLATHRATES</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_CLATHRATES</Type>
+	<Description>Deemphasize Clathrates</Description>
+	<Button>Art/Interface/Buttons/Yields/CLATHRATES.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_CLATHRATES</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_CORE_SAMPLES</Type>
+	<Description>Emphasize Core Samples</Description>
+	<Button>Art/Interface/Buttons/Yields/CORE_SAMPLES.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_CORE_SAMPLES</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_CORE_SAMPLES</Type>
+	<Description>Deemphasize Core Samples</Description>
+	<Button>Art/Interface/Buttons/Yields/CORE_SAMPLES.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_CORE_SAMPLES</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_MACHINE_TOOLS</Type>
+	<Description>Emphasize Machine Tools</Description>
+	<Button>Art/Interface/Buttons/Yields/MACHINE_TOOLS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_MACHINE_TOOLS</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_MACHINE_TOOLS</Type>
+	<Description>Deemphasize Machine Tools</Description>
+	<Button>Art/Interface/Buttons/Yields/MACHINE_TOOLS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_MACHINE_TOOLS</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_ROBOTICS</Type>
+	<Description>Emphasize Robotics</Description>
+	<Button>Art/Interface/Buttons/Yields/ROBOTICS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_ROBOTICS</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_ROBOTICS</Type>
+	<Description>Deemphasize Robotics</Description>
+	<Button>Art/Interface/Buttons/Yields/ROBOTICS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_ROBOTICS</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_MUNITIONS</Type>
+	<Description>Emphasize Munitions</Description>
+	<Button>Art/Interface/Buttons/Yields/MUNITIONS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_MUNITIONS</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_MUNITIONS</Type>
+	<Description>Deemphasize Munitions</Description>
+	<Button>Art/Interface/Buttons/Yields/MUNITIONS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_MUNITIONS</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_PHOTONICS</Type>
+	<Description>Emphasize Photonics</Description>
+	<Button>Art/Interface/Buttons/Yields/PHOTONICS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_PHOTONICS</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_PHOTONICS</Type>
+	<Description>Deemphasize Photonics</Description>
+	<Button>Art/Interface/Buttons/Yields/PHOTONICS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_PHOTONICS</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_PLASTEEL</Type>
+	<Description>Emphasize Plasteel</Description>
+	<Button>Art/Interface/Buttons/Yields/PLASTEEL.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_PLASTEEL</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_PLASTEEL</Type>
+	<Description>Deemphasize Plasteel</Description>
+	<Button>Art/Interface/Buttons/Yields/PLASTEEL.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_PLASTEEL</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_DURALLOY</Type>
+	<Description>Emphasize Duralloy</Description>
+	<Button>Art/Interface/Buttons/Yields/DURALLOY.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_DURALLOY</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_DURALLOY</Type>
+	<Description>Deemphasize Duralloy</Description>
+	<Button>Art/Interface/Buttons/Yields/DURALLOY.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_DURALLOY</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_CRYSTALLOY</Type>
+	<Description>Emphasize Crystalloy</Description>
+	<Button>Art/Interface/Buttons/Yields/CRYSTALLOY.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_CRYSTALLOY</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_CRYSTALLOY</Type>
+	<Description>Deemphasize Crystalloy</Description>
+	<Button>Art/Interface/Buttons/Yields/CRYSTALLOY.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_CRYSTALLOY</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NUCLEONICS</Type>
+	<Description>Emphasize Nucleonics</Description>
+	<Button>Art/Interface/Buttons/Yields/NUCLEONICS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_NUCLEONICS</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_NUCLEONICS</Type>
+	<Description>Deemphasize Nucleonics</Description>
+	<Button>Art/Interface/Buttons/Yields/NUCLEONICS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_NUCLEONICS</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_FUSION_CORES</Type>
+	<Description>Emphasize Fusion Cores</Description>
+	<Button>Art/Interface/Buttons/Yields/FUSION_CORES.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_FUSION_CORES</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_FUSION_CORES</Type>
+	<Description>Deemphasize Fusion Cores</Description>
+	<Button>Art/Interface/Buttons/Yields/FUSION_CORES.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_FUSION_CORES</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_SEMICONDUCTORS</Type>
+	<Description>Emphasize Semiconductors</Description>
+	<Button>Art/Interface/Buttons/Yields/SEMICONDUCTORS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_SEMICONDUCTORS</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_SEMICONDUCTORS</Type>
+	<Description>Deemphasize Semiconductors</Description>
+	<Button>Art/Interface/Buttons/Yields/SEMICONDUCTORS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_SEMICONDUCTORS</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_PLASMIDS</Type>
+	<Description>Emphasize Plasmids</Description>
+	<Button>Art/Interface/Buttons/Yields/PLASMIDS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_PLASMIDS</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_PLASMIDS</Type>
+	<Description>Deemphasize Plasmids</Description>
+	<Button>Art/Interface/Buttons/Yields/PLASMIDS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_PLASMIDS</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_ENZYMES</Type>
+	<Description>Emphasize Enzymes</Description>
+	<Button>Art/Interface/Buttons/Yields/ENZYMES.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_ENZYMES</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_ENZYMES</Type>
+	<Description>Deemphasize Enzymes</Description>
+	<Button>Art/Interface/Buttons/Yields/ENZYMES.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_ENZYMES</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_STEM_CELLS</Type>
+	<Description>Emphasize Stem Cells</Description>
+	<Button>Art/Interface/Buttons/Yields/STEM_CELLS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_STEM_CELLS</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_STEM_CELLS</Type>
+	<Description>Deemphasize Stem Cells</Description>
+	<Button>Art/Interface/Buttons/Yields/STEM_CELLS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_STEM_CELLS</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_STATE_SECRETS</Type>
+	<Description>Emphasize State Secrets</Description>
+	<Button>Art/Interface/Buttons/Yields/STATE_SECRETS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_STATE_SECRETS</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_STATE_SECRETS</Type>
+	<Description>Deemphasize State Secrets</Description>
+	<Button>Art/Interface/Buttons/Yields/STATE_SECRETS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_STATE_SECRETS</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_PROGENITOR_TECH</Type>
+	<Description>Emphasize Progenitor Tech</Description>
+	<Button>Art/Interface/Buttons/Yields/PROGENITOR_TECH.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_PROGENITOR_TECH</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_PROGENITOR_TECH</Type>
+	<Description>Deemphasize Progenitor Tech</Description>
+	<Button>Art/Interface/Buttons/Yields/PROGENITOR_TECH.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_PROGENITOR_TECH</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_ALIEN_RELICS</Type>
+	<Description>Emphasize Alien Relics</Description>
+	<Button>Art/Interface/Buttons/Yields/ALIEN_RELICS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_ALIEN_RELICS</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_ALIEN_RELICS</Type>
+	<Description>Deemphasize Alien Relics</Description>
+	<Button>Art/Interface/Buttons/Yields/ALIEN_RELICS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_ALIEN_RELICS</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NARCOTICS</Type>
+	<Description>Emphasize Narcotics</Description>
+	<Button>Art/Interface/Buttons/Yields/NARCOTICS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_NARCOTICS</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_NARCOTICS</Type>
+	<Description>Deemphasize Narcotics</Description>
+	<Button>Art/Interface/Buttons/Yields/NARCOTICS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_NARCOTICS</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_BIOWEAPONS</Type>
+	<Description>Emphasize Bioweapons</Description>
+	<Button>Art/Interface/Buttons/Yields/BIOWEAPONS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_BIOWEAPONS</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_BIOWEAPONS</Type>
+	<Description>Deemphasize Bioweapons</Description>
+	<Button>Art/Interface/Buttons/Yields/BIOWEAPONS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_BIOWEAPONS</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_PHARMACEUTICALS</Type>
+	<Description>Emphasize Pharmaceuticals</Description>
+	<Button>Art/Interface/Buttons/Yields/PHARMACEUTICALS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_PHARMACEUTICALS</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_PHARMACEUTICALS</Type>
+	<Description>Deemphasize Pharmaceuticals</Description>
+	<Button>Art/Interface/Buttons/Yields/PHARMACEUTICALS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_PHARMACEUTICALS</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_PETROCHEMICALS</Type>
+	<Description>Emphasize Petrochemicals</Description>
+	<Button>Art/Interface/Buttons/Yields/PETROCHEMICALS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_PETROCHEMICALS</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_PETROCHEMICALS</Type>
+	<Description>Deemphasize Petrochemicals</Description>
+	<Button>Art/Interface/Buttons/Yields/PETROCHEMICALS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_PETROCHEMICALS</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_COLLOIDS</Type>
+	<Description>Emphasize Colloids</Description>
+	<Button>Art/Interface/Buttons/Yields/COLLOIDS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_COLLOIDS</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_COLLOIDS</Type>
+	<Description>Deemphasize Colloids</Description>
+	<Button>Art/Interface/Buttons/Yields/COLLOIDS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_COLLOIDS</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_CATALYSTS</Type>
+	<Description>Emphasize Catalysts</Description>
+	<Button>Art/Interface/Buttons/Yields/CATALYSTS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_CATALYSTS</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_CATALYSTS</Type>
+	<Description>Deemphasize Catalysts</Description>
+	<Button>Art/Interface/Buttons/Yields/CATALYSTS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_CATALYSTS</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_HARD_CURRENCY</Type>
+	<Description>Emphasize Hard Currency</Description>
+	<Button>Art/Interface/Buttons/Yields/HARD_CURRENCY.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_HARD_CURRENCY</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_HARD_CURRENCY</Type>
+	<Description>Deemphasize Hard Currency</Description>
+	<Button>Art/Interface/Buttons/Yields/HARD_CURRENCY.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_HARD_CURRENCY</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_EARTH_GOODS</Type>
+	<Description>Emphasize Earth Goods</Description>
+	<Button>Art/Interface/Buttons/Yields/EARTH_GOODS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_EARTH_GOODS</Type>
+	<Description>Deemphasize Earth Goods</Description>
+	<Button>Art/Interface/Buttons/Yields/EARTH_GOODS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_CONTRABAND</Type>
+	<Description>Emphasize Contraband</Description>
+	<Button>Art/Interface/Buttons/Yields/CONTRABAND.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_CONTRABAND</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_CONTRABAND</Type>
+	<Description>Deemphasize Contraband</Description>
+	<Button>Art/Interface/Buttons/Yields/CONTRABAND.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_CONTRABAND</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_EARTHLING_SPECIMENS</Type>
+	<Description>Emphasize Earthling Specimens</Description>
+	<Button>Art/Interface/Buttons/Yields/EARTHLING_SPECIMENS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_EARTHLING_SPECIMENS</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_EARTHLING_SPECIMENS</Type>
+	<Description>Deemphasize Earthling Specimens</Description>
+	<Button>Art/Interface/Buttons/Yields/EARTHLING_SPECIMENS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_EARTHLING_SPECIMENS</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_INDUSTRY</Type>
+	<Description>Emphasize Industry</Description>
+	<Button>Art/Interface/Buttons/Yields/INDUSTRY.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_INDUSTRY</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_INDUSTRY</Type>
+	<Description>Deemphasize Industry</Description>
+	<Button>Art/Interface/Buttons/Yields/INDUSTRY.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_INDUSTRY</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_MEDIA</Type>
+	<Description>Emphasize Media</Description>
+	<Button>Art/Interface/Buttons/Yields/MEDIA.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_MEDIA</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_MEDIA</Type>
+	<Description>Deemphasize Media</Description>
+	<Button>Art/Interface/Buttons/Yields/MEDIA.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_MEDIA</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_LIBERTY</Type>
+	<Description>Emphasize Liberty</Description>
+	<Button>Art/Interface/Buttons/Yields/LIBERTY.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_LIBERTY</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_LIBERTY</Type>
+	<Description>Deemphasize Liberty</Description>
+	<Button>Art/Interface/Buttons/Yields/LIBERTY.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_LIBERTY</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_RESEARCH</Type>
+	<Description>Emphasize Research</Description>
+	<Button>Art/Interface/Buttons/Yields/RESEARCH.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_RESEARCH</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_RESEARCH</Type>
+	<Description>Deemphasize Research</Description>
+	<Button>Art/Interface/Buttons/Yields/RESEARCH.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_RESEARCH</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_EDUCATION</Type>
+	<Description>Emphasize Education</Description>
+	<Button>Art/Interface/Buttons/Yields/EDUCATION.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_EDUCATION</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_EDUCATION</Type>
+	<Description>Deemphasize Education</Description>
+	<Button>Art/Interface/Buttons/Yields/EDUCATION.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_EDUCATION</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_INFLUENCE</Type>
+	<Description>Emphasize Influence</Description>
+	<Button>Art/Interface/Buttons/Yields/INFLUENCE.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_INFLUENCE</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_INFLUENCE</Type>
+	<Description>Deemphasize Influence</Description>
+	<Button>Art/Interface/Buttons/Yields/INFLUENCE.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_INFLUENCE</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_ENERGY</Type>
+	<Description>Emphasize Energy</Description>
+	<Button>Art/Interface/Buttons/Yields/ENERGY.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_ENERGY</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_ENERGY</Type>
+	<Description>Deemphasize Energy</Description>
+	<Button>Art/Interface/Buttons/Yields/ENERGY.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_ENERGY</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_POLLUTANTS</Type>
+	<Description>Emphasize Pollutants</Description>
+	<Button>Art/Interface/Buttons/Yields/POLLUTANTS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_POLLUTANTS</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_POLLUTANTS</Type>
+	<Description>Deemphasize Pollutants</Description>
+	<Button>Art/Interface/Buttons/Yields/POLLUTANTS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_POLLUTANTS</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_CREDITS</Type>
+	<Description>Emphasize Credits</Description>
+	<Button>Art/Interface/Buttons/Yields/CREDITS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_CREDITS</YieldType>
+			<iYield>1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_NO_CREDITS</Type>
+	<Description>Deemphasize Credits</Description>
+	<Button>Art/Interface/Buttons/Yields/CREDITS.dds</Button>
+	<bAvoidGrowth>0</bAvoidGrowth>
+	<YieldModifiers>
+		<YieldModifier>
+			<YieldType>YIELD_CREDITS</YieldType>
+			<iYield>-1</iYield>
+		</YieldModifier>
+	</YieldModifiers>
+</EmphasizeInfo>
+<EmphasizeInfo>
+	<Type>EMPHASIZE_AVOID_GROWTH</Type>
+	<Description>TXT_KEY_EMPHASIZE_AVOID_GROWTH</Description>
+	<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+	<bAvoidGrowth>1</bAvoidGrowth>
+	<YieldModifiers/>
+</EmphasizeInfo>
+</EmphasizeInfos>
 </Civ4EmphasizeInfo>

@@ -108,6 +108,7 @@
 	<ElementType name="iNativeLearnTime" content="textOnly" dt:type="int"/>
 	<ElementType name="iStudentWeight" content="textOnly" dt:type="int"/>
 	<ElementType name="iTeacherWeight" content="textOnly" dt:type="int"/>
+	<ElementType name="iTeachLevel" content="textOnly" dt:type="int"/>
 	<!-- JAnimals Mod Start -->
 	<ElementType name="iAnimalPatrolWeight" content="textOnly" dt:type="int"/>
 	<ElementType name="iAnimalAttackWeight" content="textOnly" dt:type="int"/>
@@ -430,6 +431,14 @@
 	</ElementType>
 	<ElementType name="bLandYieldChanges" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bWaterYieldChanges" content="textOnly" dt:type="boolean"/>
+	<ElementType name="iYieldDemand" content="textOnly" dt:type="int"/>
+	<ElementType name="YieldDemand" content="eltOnly">
+		<element type="YieldType"/>
+		<element type="iYieldDemand"/>
+	</ElementType>
+	<ElementType name="YieldDemands" content="eltOnly">
+		<element type="YieldDemand" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
 	<!-- JAnimals Mod Start -->
 	<ElementType name="bAnimal" content="textOnly" dt:type="boolean"/>
 	<!-- JAnimals Mod End -->
@@ -527,6 +536,7 @@
 		<element type="BonusYieldChanges"/>
 		<element type="bLandYieldChanges"/>
 		<element type="bWaterYieldChanges"/>
+		<element type="YieldDemands" minOccurs="0"/>
 		<element type="iBombardRate"/>
 		<element type="SpecialCargo"/>
 		<element type="DomainCargo"/>
@@ -537,6 +547,7 @@
 		<element type="iNativeLearnTime"/>
 		<element type="iStudentWeight"/>
 		<element type="iTeacherWeight"/>
+		<element type="iTeachLevel" minOccurs="0"/>
 		<!-- JAnimals Mod Start -->
 		<element type="iAnimalPatrolWeight" minOccurs="0"/>
 		<element type="iAnimalAttackWeight" minOccurs="0"/>

@@ -10,1153 +10,1213 @@
 	<Type>ART_DEF_BUILDING_MACHINE_TOOLS1</Type>
 	<LSystem>LSYSTEM_1x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/MACHINE_TOOLS1.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/MACHINE_TOOLS/MACHINE_TOOLS1.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/MACHINE_TOOLS1.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_MACHINE_TOOLS2</Type>
 	<LSystem>LSYSTEM_2x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/MACHINE_TOOLS2.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/MACHINE_TOOLS/MACHINE_TOOLS2.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/MACHINE_TOOLS2.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_MACHINE_TOOLS3</Type>
 	<LSystem>LSYSTEM_2x2</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/MACHINE_TOOLS3.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/MACHINE_TOOLS/MACHINE_TOOLS3.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/MACHINE_TOOLS3.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_ROBOTICS1</Type>
 	<LSystem>LSYSTEM_1x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/ROBOTICS1.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/ROBOTICS/ROBOTICS1.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/ROBOTICS1.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_ROBOTICS2</Type>
 	<LSystem>LSYSTEM_2x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/ROBOTICS2.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/ROBOTICS/ROBOTICS2.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/ROBOTICS2.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_ROBOTICS3</Type>
 	<LSystem>LSYSTEM_2x2</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/ROBOTICS3.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/ROBOTICS/ROBOTICS3.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/ROBOTICS3.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_MUNITIONS1</Type>
 	<LSystem>LSYSTEM_1x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/MUNITIONS1.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/MUNITIONS/MUNITIONS1.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/MUNITIONS1.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_MUNITIONS2</Type>
 	<LSystem>LSYSTEM_2x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/MUNITIONS2.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/MUNITIONS/MUNITIONS2.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/MUNITIONS2.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_MUNITIONS3</Type>
 	<LSystem>LSYSTEM_2x2</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/MUNITIONS3.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/MUNITIONS/MUNITIONS3.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/MUNITIONS3.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_PHOTONICS1</Type>
 	<LSystem>LSYSTEM_1x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/PHOTONICS1.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/PHOTONICS/PHOTONICS1.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/PHOTONICS1.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_PHOTONICS2</Type>
 	<LSystem>LSYSTEM_2x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/PHOTONICS2.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/PHOTONICS/PHOTONICS2.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/PHOTONICS2.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_PHOTONICS3</Type>
 	<LSystem>LSYSTEM_2x2</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/PHOTONICS3.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/PHOTONICS/PHOTONICS3.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/PHOTONICS3.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_HARD_CURRENCY1</Type>
 	<LSystem>LSYSTEM_1x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/HARD_CURRENCY1.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/HARD_CURRENCY/HARD_CURRENCY1.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/HARD_CURRENCY1.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_HARD_CURRENCY2</Type>
 	<LSystem>LSYSTEM_2x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/HARD_CURRENCY2.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/HARD_CURRENCY/HARD_CURRENCY2.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/HARD_CURRENCY2.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_HARD_CURRENCY3</Type>
 	<LSystem>LSYSTEM_2x2</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/HARD_CURRENCY3.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/HARD_CURRENCY/HARD_CURRENCY3.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/HARD_CURRENCY3.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_PLASTEEL1</Type>
 	<LSystem>LSYSTEM_1x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/PLASTEEL1.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/PLASTEEL/PLASTEEL1.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/PLASTEEL1.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_PLASTEEL2</Type>
 	<LSystem>LSYSTEM_2x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/PLASTEEL2.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/PLASTEEL/PLASTEEL2.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/PLASTEEL2.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_PLASTEEL3</Type>
 	<LSystem>LSYSTEM_2x2</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/PLASTEEL3.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/PLASTEEL/PLASTEEL3.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/PLASTEEL3.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_DURALLOY1</Type>
 	<LSystem>LSYSTEM_1x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/DURALLOY1.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/DURALLOY/DURALLOY1.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/DURALLOY1.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_DURALLOY2</Type>
 	<LSystem>LSYSTEM_2x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/DURALLOY2.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/DURALLOY/DURALLOY2.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/DURALLOY2.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_DURALLOY3</Type>
 	<LSystem>LSYSTEM_2x2</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/DURALLOY3.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/DURALLOY/DURALLOY3.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/DURALLOY3.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_CRYSTALLOY1</Type>
 	<LSystem>LSYSTEM_1x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/CRYSTALLOY1.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/CRYSTALLOY/CRYSTALLOY1.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/CRYSTALLOY1.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_CRYSTALLOY2</Type>
 	<LSystem>LSYSTEM_2x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/CRYSTALLOY2.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/CRYSTALLOY/CRYSTALLOY2.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/CRYSTALLOY2.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_CRYSTALLOY3</Type>
 	<LSystem>LSYSTEM_2x2</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/CRYSTALLOY3.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/CRYSTALLOY/CRYSTALLOY3.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/CRYSTALLOY3.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_NUCLEONICS1</Type>
 	<LSystem>LSYSTEM_1x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/NUCLEONICS1.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/NUCLEONICS/NUCLEONICS1.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/NUCLEONICS1.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_NUCLEONICS2</Type>
 	<LSystem>LSYSTEM_2x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/NUCLEONICS2.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/NUCLEONICS/NUCLEONICS2.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/NUCLEONICS2.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_NUCLEONICS3</Type>
 	<LSystem>LSYSTEM_2x2</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/NUCLEONICS3.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/NUCLEONICS/NUCLEONICS3.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/NUCLEONICS3.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_FUSION_CORES1</Type>
 	<LSystem>LSYSTEM_1x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/FUSION_CORES1.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/FUSION_CORES/FUSION_CORES1.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/FUSION_CORES1.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_FUSION_CORES2</Type>
 	<LSystem>LSYSTEM_2x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/FUSION_CORES2.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/FUSION_CORES/FUSION_CORES2.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/FUSION_CORES2.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_FUSION_CORES3</Type>
 	<LSystem>LSYSTEM_2x2</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/FUSION_CORES3.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/FUSION_CORES/FUSION_CORES3.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/FUSION_CORES3.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_SEMICONDUCTORS1</Type>
 	<LSystem>LSYSTEM_1x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/SEMICONDUCTORS1.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/SEMICONDUCTORS/SEMICONDUCTORS1.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/SEMICONDUCTORS1.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_SEMICONDUCTORS2</Type>
 	<LSystem>LSYSTEM_2x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/SEMICONDUCTORS2.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/SEMICONDUCTORS/SEMICONDUCTORS2.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/SEMICONDUCTORS2.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_SEMICONDUCTORS3</Type>
 	<LSystem>LSYSTEM_2x2</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/SEMICONDUCTORS3.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/SEMICONDUCTORS/SEMICONDUCTORS3.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/SEMICONDUCTORS3.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_PLASMIDS1</Type>
 	<LSystem>LSYSTEM_1x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/PLASMIDS1.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/PLASMIDS/PLASMIDS1.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/PLASMIDS1.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_PLASMIDS2</Type>
 	<LSystem>LSYSTEM_2x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/PLASMIDS2.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/PLASMIDS/PLASMIDS2.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/PLASMIDS2.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_PLASMIDS3</Type>
 	<LSystem>LSYSTEM_2x2</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/PLASMIDS3.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/PLASMIDS/PLASMIDS3.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/PLASMIDS3.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_ENZYMES1</Type>
 	<LSystem>LSYSTEM_1x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/ENZYMES1.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/ENZYMES/ENZYMES1.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/ENZYMES1.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_ENZYMES2</Type>
 	<LSystem>LSYSTEM_2x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/ENZYMES2.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/ENZYMES/ENZYMES2.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/ENZYMES2.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_ENZYMES3</Type>
 	<LSystem>LSYSTEM_2x2</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/ENZYMES3.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/ENZYMES/ENZYMES3.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/ENZYMES3.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_STEM_CELLS1</Type>
 	<LSystem>LSYSTEM_1x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/STEM_CELLS1.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/STEM_CELLS/STEM_CELLS1.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/STEM_CELLS1.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_STEM_CELLS2</Type>
 	<LSystem>LSYSTEM_2x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/STEM_CELLS2.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/STEM_CELLS/STEM_CELLS2.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/STEM_CELLS2.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_STEM_CELLS3</Type>
 	<LSystem>LSYSTEM_2x2</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/STEM_CELLS3.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/STEM_CELLS/STEM_CELLS3.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/STEM_CELLS3.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_STATE_SECRETS1</Type>
 	<LSystem>LSYSTEM_1x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/STATE_SECRETS1.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/STATE_SECRETS/STATE_SECRETS1.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/STATE_SECRETS1.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_STATE_SECRETS2</Type>
 	<LSystem>LSYSTEM_2x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/STATE_SECRETS2.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/STATE_SECRETS/STATE_SECRETS2.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/STATE_SECRETS2.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_STATE_SECRETS3</Type>
 	<LSystem>LSYSTEM_2x2</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/STATE_SECRETS3.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/STATE_SECRETS/STATE_SECRETS3.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/STATE_SECRETS3.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_PROGENITOR_TECH1</Type>
 	<LSystem>LSYSTEM_1x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/PROGENITOR_TECH1.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/PROGENITOR_TECH/PROGENITOR_TECH1.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/PROGENITOR_TECH1.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_PROGENITOR_TECH2</Type>
 	<LSystem>LSYSTEM_2x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/PROGENITOR_TECH2.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/PROGENITOR_TECH/PROGENITOR_TECH2.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/PROGENITOR_TECH2.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_PROGENITOR_TECH3</Type>
 	<LSystem>LSYSTEM_2x2</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/PROGENITOR_TECH3.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/PROGENITOR_TECH/PROGENITOR_TECH3.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/PROGENITOR_TECH3.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_ALIEN_RELICS1</Type>
 	<LSystem>LSYSTEM_1x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/ALIEN_RELICS1.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/ALIEN_RELICS/ALIEN_RELICS1.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/ALIEN_RELICS1.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_ALIEN_RELICS2</Type>
 	<LSystem>LSYSTEM_2x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/ALIEN_RELICS2.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/ALIEN_RELICS/ALIEN_RELICS2.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/ALIEN_RELICS2.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_ALIEN_RELICS3</Type>
 	<LSystem>LSYSTEM_2x2</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/ALIEN_RELICS3.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/ALIEN_RELICS/ALIEN_RELICS3.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/ALIEN_RELICS3.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_NARCOTICS1</Type>
 	<LSystem>LSYSTEM_1x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/NARCOTICS1.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/NARCOTICS/NARCOTICS1.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/NARCOTICS1.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_NARCOTICS2</Type>
 	<LSystem>LSYSTEM_2x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/NARCOTICS2.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/NARCOTICS/NARCOTICS2.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/NARCOTICS2.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_NARCOTICS3</Type>
 	<LSystem>LSYSTEM_2x2</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/NARCOTICS3.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/NARCOTICS/NARCOTICS3.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/NARCOTICS3.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_BIOWEAPONS1</Type>
 	<LSystem>LSYSTEM_1x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/BIOWEAPONS1.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/BIOWEAPONS/BIOWEAPONS1.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/BIOWEAPONS1.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_BIOWEAPONS2</Type>
 	<LSystem>LSYSTEM_2x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/BIOWEAPONS2.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/BIOWEAPONS/BIOWEAPONS2.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/BIOWEAPONS2.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_BIOWEAPONS3</Type>
 	<LSystem>LSYSTEM_2x2</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/BIOWEAPONS3.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/BIOWEAPONS/BIOWEAPONS3.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/BIOWEAPONS3.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_PHARMACEUTICALS1</Type>
 	<LSystem>LSYSTEM_1x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/PHARMACEUTICALS1.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/PHARMACEUTICALS/PHARMACEUTICALS1.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/PHARMACEUTICALS1.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_PHARMACEUTICALS2</Type>
 	<LSystem>LSYSTEM_2x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/PHARMACEUTICALS2.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/PHARMACEUTICALS/PHARMACEUTICALS2.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/PHARMACEUTICALS2.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_PHARMACEUTICALS3</Type>
 	<LSystem>LSYSTEM_2x2</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/PHARMACEUTICALS3.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/PHARMACEUTICALS/PHARMACEUTICALS3.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/PHARMACEUTICALS3.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_PETROCHEMICALS1</Type>
 	<LSystem>LSYSTEM_1x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/PETROCHEMICALS1.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/PETROCHEMICALS/PETROCHEMICALS1.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/PETROCHEMICALS1.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_PETROCHEMICALS2</Type>
 	<LSystem>LSYSTEM_2x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/PETROCHEMICALS2.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/PETROCHEMICALS/PETROCHEMICALS2.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/PETROCHEMICALS2.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_PETROCHEMICALS3</Type>
 	<LSystem>LSYSTEM_2x2</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/PETROCHEMICALS3.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/PETROCHEMICALS/PETROCHEMICALS3.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/PETROCHEMICALS3.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_COLLOIDS1</Type>
 	<LSystem>LSYSTEM_1x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/COLLOIDS1.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/COLLOIDS/COLLOIDS1.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/COLLOIDS1.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_COLLOIDS2</Type>
 	<LSystem>LSYSTEM_2x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/COLLOIDS2.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/COLLOIDS/COLLOIDS2.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/COLLOIDS2.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_COLLOIDS3</Type>
 	<LSystem>LSYSTEM_2x2</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/COLLOIDS3.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/COLLOIDS/COLLOIDS3.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/COLLOIDS3.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_CATALYSTS1</Type>
 	<LSystem>LSYSTEM_1x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/CATALYSTS1.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/CATALYSTS/CATALYSTS1.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/CATALYSTS1.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_CATALYSTS2</Type>
 	<LSystem>LSYSTEM_2x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/CATALYSTS2.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/CATALYSTS/CATALYSTS2.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/CATALYSTS2.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_CATALYSTS3</Type>
 	<LSystem>LSYSTEM_2x2</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/CATALYSTS3.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/CATALYSTS/CATALYSTS3.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/CATALYSTS3.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_INDUSTRY1</Type>
 	<LSystem>LSYSTEM_1x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/INDUSTRY1.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/INDUSTRY/INDUSTRY1.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/INDUSTRY1.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_INDUSTRY2</Type>
 	<LSystem>LSYSTEM_2x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/INDUSTRY2.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/INDUSTRY/INDUSTRY2.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/INDUSTRY2.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_INDUSTRY3</Type>
 	<LSystem>LSYSTEM_2x2</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/INDUSTRY3.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/INDUSTRY/INDUSTRY3.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/INDUSTRY3.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_MEDIA1</Type>
 	<LSystem>LSYSTEM_1x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/MEDIA1.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/MEDIA/MEDIA1.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/MEDIA1.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_MEDIA2</Type>
 	<LSystem>LSYSTEM_2x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/MEDIA2.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/MEDIA/MEDIA2.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/MEDIA2.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_MEDIA3</Type>
 	<LSystem>LSYSTEM_2x2</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/MEDIA3.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/MEDIA/MEDIA3.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/MEDIA3.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_LIBERTY1</Type>
 	<LSystem>LSYSTEM_1x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/LIBERTY1.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/LIBERTY/LIBERTY1.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/LIBERTY1.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_LIBERTY2</Type>
 	<LSystem>LSYSTEM_2x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/LIBERTY2.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/LIBERTY/LIBERTY2.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/LIBERTY2.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_LIBERTY3</Type>
 	<LSystem>LSYSTEM_2x2</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/LIBERTY3.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/LIBERTY/LIBERTY3.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/LIBERTY3.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_RESEARCH1</Type>
 	<LSystem>LSYSTEM_1x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/RESEARCH1.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/RESEARCH/RESEARCH1.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/RESEARCH1.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_RESEARCH2</Type>
 	<LSystem>LSYSTEM_2x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/RESEARCH2.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/RESEARCH/RESEARCH2.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/RESEARCH2.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_RESEARCH3</Type>
 	<LSystem>LSYSTEM_2x2</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/RESEARCH3.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/RESEARCH/RESEARCH3.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/RESEARCH3.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_EDUCATION1</Type>
 	<LSystem>LSYSTEM_1x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/EDUCATION1.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/EDUCATION/EDUCATION1.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/EDUCATION1.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_EDUCATION2</Type>
 	<LSystem>LSYSTEM_2x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/EDUCATION2.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/EDUCATION/EDUCATION2.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/EDUCATION2.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_EDUCATION3</Type>
 	<LSystem>LSYSTEM_2x2</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/EDUCATION3.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/EDUCATION/EDUCATION3.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/EDUCATION3.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_FORT1</Type>
 	<LSystem>LSYSTEM_1x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/FORT1.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/FORT/FORT1.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/FORT1.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_FORT2</Type>
 	<LSystem>LSYSTEM_2x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/FORT2.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/FORT/FORT2.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/FORT2.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_FORT3</Type>
 	<LSystem>LSYSTEM_2x2</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/FORT3.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/FORT/FORT3.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/FORT3.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_DOCK1</Type>
 	<LSystem>LSYSTEM_1x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/DOCK1.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/DOCK/DOCK1.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/DOCK1.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_DOCK2</Type>
 	<LSystem>LSYSTEM_2x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/DOCK2.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/DOCK/DOCK2.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/DOCK2.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_DOCK3</Type>
 	<LSystem>LSYSTEM_2x2</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/DOCK3.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/DOCK/DOCK3.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/DOCK3.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_WAREHOUSE1</Type>
 	<LSystem>LSYSTEM_1x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/WAREHOUSE1.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/WAREHOUSE/WAREHOUSE1.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/WAREHOUSE1.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_WAREHOUSE2</Type>
 	<LSystem>LSYSTEM_2x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/WAREHOUSE2.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/WAREHOUSE/WAREHOUSE2.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/WAREHOUSE2.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_WAREHOUSE3</Type>
 	<LSystem>LSYSTEM_2x2</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/WAREHOUSE3.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/WAREHOUSE/WAREHOUSE3.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/WAREHOUSE3.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_MARKET1</Type>
 	<LSystem>LSYSTEM_1x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/MARKET1.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/MARKET/MARKET1.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/MARKET1.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_MARKET2</Type>
 	<LSystem>LSYSTEM_2x1</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/MARKET2.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/MARKET/MARKET2.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/MARKET2.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 <BuildingArtInfo>
 	<Type>ART_DEF_BUILDING_MARKET3</Type>
 	<LSystem>LSYSTEM_2x2</LSystem>
 	<bAnimated>0</bAnimated>
-	<CityTexture>Art/Buttons/Buildings/MARKET3.dds</CityTexture>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
 	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Buildings/MARKET/MARKET3.nif</NIF>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
 	<KFM/>
-	<Button>Art/Buttons/Buildings/MARKET3.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
+</BuildingArtInfo>
+<BuildingArtInfo>
+	<Type>ART_DEF_BUILDING_PRISON1</Type>
+	<LSystem>LSYSTEM_1x1</LSystem>
+	<bAnimated>0</bAnimated>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
+	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
+	<fScale>1.0</fScale>
+	<fInterfaceScale>0.5</fInterfaceScale>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
+	<KFM/>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
+</BuildingArtInfo>
+<BuildingArtInfo>
+	<Type>ART_DEF_BUILDING_PRISON2</Type>
+	<LSystem>LSYSTEM_2x1</LSystem>
+	<bAnimated>0</bAnimated>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
+	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
+	<fScale>1.0</fScale>
+	<fInterfaceScale>0.5</fInterfaceScale>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
+	<KFM/>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
+</BuildingArtInfo>
+<BuildingArtInfo>
+	<Type>ART_DEF_BUILDING_PRISON3</Type>
+	<LSystem>LSYSTEM_2x2</LSystem>
+	<bAnimated>0</bAnimated>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
+	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
+	<fScale>1.0</fScale>
+	<fInterfaceScale>0.5</fInterfaceScale>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
+	<KFM/>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
+</BuildingArtInfo>
+<BuildingArtInfo>
+	<Type>ART_DEF_BUILDING_SHRINE</Type>
+	<LSystem>LSYSTEM_1x1</LSystem>
+	<bAnimated>0</bAnimated>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
+	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
+	<fScale>1.0</fScale>
+	<fInterfaceScale>0.5</fInterfaceScale>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
+	<KFM/>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
+</BuildingArtInfo>
+<BuildingArtInfo>
+	<Type>ART_DEF_BUILDING_TRADING_POST</Type>
+	<LSystem>LSYSTEM_1x1</LSystem>
+	<bAnimated>0</bAnimated>
+	<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>
+	<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
+	<fScale>1.0</fScale>
+	<fInterfaceScale>0.5</fInterfaceScale>
+	<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>
+	<KFM/>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>
 </BuildingArtInfo>
 </BuildingArtInfos>
 </Civ4ArtDefines>

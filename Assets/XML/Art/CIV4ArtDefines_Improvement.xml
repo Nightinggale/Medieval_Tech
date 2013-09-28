@@ -11,90 +11,117 @@
 		<bExtraAnimations>0</bExtraAnimations>
 		<fScale>0.5</fScale>
 		<fInterfaceScale>0.8</fInterfaceScale>
-		<NIF>Art/Improvements/FARM/FARM.nif</NIF>
+	<NIF>Art/Structures/Improvements/Farm/farm_2x1_building.nif</NIF>
 		<KFM/>
-		<Button>Art/Buttons/Improvements/FARM.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,5,17</Button>
 	</ImprovementArtInfo>
 	<ImprovementArtInfo>
 		<Type>ART_DEF_IMPROVEMENT_MILL</Type>
 		<bExtraAnimations>0</bExtraAnimations>
 		<fScale>0.5</fScale>
 		<fInterfaceScale>0.8</fInterfaceScale>
-		<NIF>Art/Improvements/MILL/MILL.nif</NIF>
+	<NIF>Art/Structures/Improvements/Farm/farm_2x1_building.nif</NIF>
 		<KFM/>
-		<Button>Art/Buttons/Improvements/MILL.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,5,17</Button>
 	</ImprovementArtInfo>
 	<ImprovementArtInfo>
 		<Type>ART_DEF_IMPROVEMENT_QUARRY</Type>
 		<bExtraAnimations>0</bExtraAnimations>
 		<fScale>0.5</fScale>
 		<fInterfaceScale>0.8</fInterfaceScale>
-		<NIF>Art/Improvements/QUARRY/QUARRY.nif</NIF>
+	<NIF>Art/Structures/Improvements/Farm/farm_2x1_building.nif</NIF>
 		<KFM/>
-		<Button>Art/Buttons/Improvements/QUARRY.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,5,17</Button>
 	</ImprovementArtInfo>
 	<ImprovementArtInfo>
 		<Type>ART_DEF_IMPROVEMENT_MINE</Type>
 		<bExtraAnimations>0</bExtraAnimations>
 		<fScale>0.5</fScale>
 		<fInterfaceScale>0.8</fInterfaceScale>
-		<NIF>Art/Improvements/MINE/MINE.nif</NIF>
+	<NIF>Art/Structures/Improvements/Farm/farm_2x1_building.nif</NIF>
 		<KFM/>
-		<Button>Art/Buttons/Improvements/MINE.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,5,17</Button>
 	</ImprovementArtInfo>
 	<ImprovementArtInfo>
 		<Type>ART_DEF_IMPROVEMENT_FACILITY</Type>
 		<bExtraAnimations>0</bExtraAnimations>
 		<fScale>0.5</fScale>
 		<fInterfaceScale>0.8</fInterfaceScale>
-		<NIF>Art/Improvements/FACILITY/FACILITY.nif</NIF>
+	<NIF>Art/Structures/Improvements/Farm/farm_2x1_building.nif</NIF>
 		<KFM/>
-		<Button>Art/Buttons/Improvements/FACILITY.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,5,17</Button>
 	</ImprovementArtInfo>
 	<ImprovementArtInfo>
 		<Type>ART_DEF_IMPROVEMENT_LAB</Type>
 		<bExtraAnimations>0</bExtraAnimations>
 		<fScale>0.5</fScale>
 		<fInterfaceScale>0.8</fInterfaceScale>
-		<NIF>Art/Improvements/LAB/LAB.nif</NIF>
+	<NIF>Art/Structures/Improvements/Farm/farm_2x1_building.nif</NIF>
 		<KFM/>
-		<Button>Art/Buttons/Improvements/LAB.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,5,17</Button>
 	</ImprovementArtInfo>
 	<ImprovementArtInfo>
 		<Type>ART_DEF_IMPROVEMENT_PLANTATION</Type>
 		<bExtraAnimations>0</bExtraAnimations>
 		<fScale>0.5</fScale>
 		<fInterfaceScale>0.8</fInterfaceScale>
-		<NIF>Art/Improvements/PLANTATION/PLANTATION.nif</NIF>
+	<NIF>Art/Structures/Improvements/Farm/farm_2x1_building.nif</NIF>
 		<KFM/>
-		<Button>Art/Buttons/Improvements/PLANTATION.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,5,17</Button>
 	</ImprovementArtInfo>
 	<ImprovementArtInfo>
 		<Type>ART_DEF_IMPROVEMENT_RIG</Type>
 		<bExtraAnimations>0</bExtraAnimations>
 		<fScale>0.5</fScale>
 		<fInterfaceScale>0.8</fInterfaceScale>
-		<NIF>Art/Improvements/RIG/RIG.nif</NIF>
+	<NIF>Art/Structures/Improvements/Farm/farm_2x1_building.nif</NIF>
 		<KFM/>
-		<Button>Art/Buttons/Improvements/RIG.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,5,17</Button>
 	</ImprovementArtInfo>
 	<ImprovementArtInfo>
 		<Type>ART_DEF_IMPROVEMENT_ALIEN_MENHIR</Type>
 		<bExtraAnimations>0</bExtraAnimations>
 		<fScale>0.5</fScale>
 		<fInterfaceScale>0.8</fInterfaceScale>
-		<NIF>Art/Improvements/ALIEN_MENHIR/ALIEN_MENHIR.nif</NIF>
+	<NIF>Art/Structures/Improvements/Farm/farm_2x1_building.nif</NIF>
 		<KFM/>
-		<Button>Art/Buttons/Improvements/ALIEN_MENHIR.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,5,17</Button>
 	</ImprovementArtInfo>
 	<ImprovementArtInfo>
 		<Type>ART_DEF_IMPROVEMENT_ABDUCTION_SITE</Type>
 		<bExtraAnimations>0</bExtraAnimations>
 		<fScale>0.5</fScale>
 		<fInterfaceScale>0.8</fInterfaceScale>
-		<NIF>Art/Improvements/ABDUCTION_SITE/ABDUCTION_SITE.nif</NIF>
+	<NIF>Art/Structures/Improvements/Farm/farm_2x1_building.nif</NIF>
 		<KFM/>
-		<Button>Art/Buttons/Improvements/ABDUCTION_SITE.dds</Button>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,5,17</Button>
+	</ImprovementArtInfo>
+	<ImprovementArtInfo>
+		<Type>ART_DEF_IMPROVEMENT_LAND_WORKED</Type>
+		<bExtraAnimations>0</bExtraAnimations>
+		<fScale>0.5</fScale>
+		<fInterfaceScale>0.8</fInterfaceScale>
+	<NIF>Art/Structures/Improvements/Farm/farm_2x1_building.nif</NIF>
+		<KFM/>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,5,17</Button>
+	</ImprovementArtInfo>
+	<ImprovementArtInfo>
+		<Type>ART_DEF_IMPROVEMENT_WATER_WORKED</Type>
+		<bExtraAnimations>0</bExtraAnimations>
+		<fScale>0.5</fScale>
+		<fInterfaceScale>0.8</fInterfaceScale>
+	<NIF>Art/Structures/Improvements/Farm/farm_2x1_building.nif</NIF>
+		<KFM/>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,5,17</Button>
+	</ImprovementArtInfo>
+	<ImprovementArtInfo>
+		<Type>ART_DEF_IMPROVEMENT_CITY_RUINS</Type>
+		<bExtraAnimations>0</bExtraAnimations>
+		<fScale>0.5</fScale>
+		<fInterfaceScale>0.8</fInterfaceScale>
+	<NIF>Art/Structures/Improvements/Farm/farm_2x1_building.nif</NIF>
+		<KFM/>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,5,17</Button>
 	</ImprovementArtInfo>
 </ImprovementArtInfos>
 </Civ4ArtDefines>

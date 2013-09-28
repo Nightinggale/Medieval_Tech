@@ -582,5 +582,35 @@
 	<DefaultBuilding>BUILDING_MARKET3</DefaultBuilding>
 	<VictoryThresholds/>
 </BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_PRISON1</Type>
+	<Description>TXT_KEY_BUILDING_PRISON1</Description>
+	<DefaultBuilding>BUILDING_PRISON1</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_PRISON2</Type>
+	<Description>TXT_KEY_BUILDING_PRISON2</Description>
+	<DefaultBuilding>BUILDING_PRISON2</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_PRISON3</Type>
+	<Description>TXT_KEY_BUILDING_PRISON3</Description>
+	<DefaultBuilding>BUILDING_PRISON3</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_SHRINE</Type>
+	<Description>TXT_KEY_BUILDING_SHRINE</Description>
+	<DefaultBuilding>BUILDING_SHRINE</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
+<BuildingClassInfo>
+	<Type>BUILDINGCLASS_TRADING_POST</Type>
+	<Description>TXT_KEY_BUILDING_TRADING_POST</Description>
+	<DefaultBuilding>BUILDING_TRADING_POST</DefaultBuilding>
+	<VictoryThresholds/>
+</BuildingClassInfo>
 </BuildingClassInfos>
 </Civ4BuildingClassInfos>

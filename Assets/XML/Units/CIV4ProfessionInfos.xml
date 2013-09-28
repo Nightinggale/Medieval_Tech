@@ -1656,6 +1656,44 @@
 	<Button>/Art/Buttons/Yields/RESEARCH.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
+	<Type>PROFESSION_COLONIST</Type>
+	<Description>TXT_KEY_PROFESSION_COLONIST</Description>
+	<Civilopedia>TXT_KEY_PEDIA_PROFESSION_COLONIST</Civilopedia>
+	<Strategy></Strategy>
+	<Help/>
+	<Combat>UNITCOMBAT_MELEE</Combat>
+	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<SpecialBuilding>NONE</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
+	<bCitizen>1</bCitizen>
+	<bWater>0</bWater>
+	<bScout>0</bScout>
+	<bCityDefender>0</bCityDefender>
+	<bCanFound>0</bCanFound>
+	<bUnarmed>1</bUnarmed>
+	<bNoDefensiveBonus>0</bNoDefensiveBonus>
+	<iCombatChange>0</iCombatChange>
+	<iMovesChange>0</iMovesChange>
+	<iWorkRate>0</iWorkRate>
+	<iMissionaryRate>0</iMissionaryRate>
+	<iPower>0</iPower>
+	<iAsset>1</iAsset>
+	<YieldEquipedNums>
+		<YieldEquipedNum>
+			<YieldType>YIELD_MUNITIONS</YieldType>
+			<iYieldAmount>50</iYieldAmount>
+		</YieldEquipedNum>
+	</YieldEquipedNums>
+	<FreePromotions></FreePromotions>
+	<YieldsProduced>
+		<YieldType></YieldType>
+	</YieldsProduced>
+	<YieldsConsumed>
+		<YieldType></YieldType>
+	</YieldsConsumed>
+	<Button>/Art/Buttons/Yields/COLONIST.dds</Button>
+</ProfessionInfo>
+<ProfessionInfo>
 	<Type>PROFESSION_EXPLORER</Type>
 	<Description>TXT_KEY_PROFESSION_EXPLORER</Description>
 	<Civilopedia>TXT_KEY_PEDIA_PROFESSION_EXPLORER</Civilopedia>

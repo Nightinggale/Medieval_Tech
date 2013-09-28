@@ -25,7 +25,7 @@
 			<BuildingPoints/>
 			<YieldPoints>
 				<YieldPoint>
-					<YieldType>YIELD_CROSSES</YieldType>
+					<YieldType>YIELD_MEDIA</YieldType>
 					<iPoints>3</iPoints>
 				</YieldPoint>
 			</YieldPoints>
@@ -50,7 +50,7 @@
 			<BuildingPoints/>
 			<YieldPoints>
 				<YieldPoint>
-					<YieldType>YIELD_IDEAS</YieldType>
+					<YieldType>YIELD_RESEARCH</YieldType>
 					<iPoints>5</iPoints>
 				</YieldPoint>
 			</YieldPoints>
@@ -135,7 +135,7 @@
 			<BuildingPoints/>
 			<YieldPoints>
 				<YieldPoint>
-					<YieldType>YIELD_BELLS</YieldType>
+					<YieldType>YIELD_LIBERTY</YieldType>
 					<iPoints>5</iPoints>
 				</YieldPoint>
 			</YieldPoints>

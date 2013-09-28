@@ -9,12 +9,28 @@
 	<Spanish>Nutrients</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_YIELD_NUTRIENTS_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Nutrients[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Nutrients[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Nutrients[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Nutrients[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Nutrients[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_YIELD_BIOPOLYMERS</Tag>
 	<English>Biopolymers</English>
 	<French>Biopolymers</French>
 	<German>Biopolymers</German>
 	<Italian>Biopolymers</Italian>
 	<Spanish>Biopolymers</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_YIELD_BIOPOLYMERS_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Biopolymers[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Biopolymers[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Biopolymers[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Biopolymers[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Biopolymers[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_YIELD_SILICATES</Tag>
@@ -25,12 +41,28 @@
 	<Spanish>Silicates</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_YIELD_SILICATES_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Silicates[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Silicates[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Silicates[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Silicates[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Silicates[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_YIELD_BASE_METALS</Tag>
 	<English>Base Metals</English>
 	<French>Base Metals</French>
 	<German>Base Metals</German>
 	<Italian>Base Metals</Italian>
 	<Spanish>Base Metals</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_YIELD_BASE_METALS_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Base Metals[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Base Metals[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Base Metals[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Base Metals[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Base Metals[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_YIELD_ACTINIDES</Tag>
@@ -41,12 +73,28 @@
 	<Spanish>Actinides</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_YIELD_ACTINIDES_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Actinides[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Actinides[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Actinides[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Actinides[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Actinides[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_YIELD_ISOTOPES</Tag>
 	<English>Isotopes</English>
 	<French>Isotopes</French>
 	<German>Isotopes</German>
 	<Italian>Isotopes</Italian>
 	<Spanish>Isotopes</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_YIELD_ISOTOPES_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Isotopes[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Isotopes[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Isotopes[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Isotopes[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Isotopes[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_YIELD_RARE_EARTHS</Tag>
@@ -57,12 +105,28 @@
 	<Spanish>Rare Earths</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_YIELD_RARE_EARTHS_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Rare Earths[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Rare Earths[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Rare Earths[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Rare Earths[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Rare Earths[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_YIELD_CRYSTALLOIDS</Tag>
 	<English>Crystalloids</English>
 	<French>Crystalloids</French>
 	<German>Crystalloids</German>
 	<Italian>Crystalloids</Italian>
 	<Spanish>Crystalloids</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_YIELD_CRYSTALLOIDS_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Crystalloids[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Crystalloids[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Crystalloids[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Crystalloids[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Crystalloids[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_YIELD_NUCLEIC_ACIDS</Tag>
@@ -73,12 +137,28 @@
 	<Spanish>Nucleic Acids</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_YIELD_NUCLEIC_ACIDS_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Nucleic Acids[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Nucleic Acids[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Nucleic Acids[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Nucleic Acids[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Nucleic Acids[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_YIELD_AMINO_ACIDS</Tag>
 	<English>Amino Acids</English>
 	<French>Amino Acids</French>
 	<German>Amino Acids</German>
 	<Italian>Amino Acids</Italian>
 	<Spanish>Amino Acids</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_YIELD_AMINO_ACIDS_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Amino Acids[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Amino Acids[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Amino Acids[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Amino Acids[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Amino Acids[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_YIELD_TISSUE_SAMPLES</Tag>
@@ -89,12 +169,28 @@
 	<Spanish>Tissue Samples</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_YIELD_TISSUE_SAMPLES_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Tissue Samples[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Tissue Samples[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Tissue Samples[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Tissue Samples[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Tissue Samples[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_YIELD_MICROBES</Tag>
 	<English>Microbes</English>
 	<French>Microbes</French>
 	<German>Microbes</German>
 	<Italian>Microbes</Italian>
 	<Spanish>Microbes</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_YIELD_MICROBES_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Microbes[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Microbes[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Microbes[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Microbes[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Microbes[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_YIELD_DATACORES</Tag>
@@ -105,12 +201,28 @@
 	<Spanish>Datacores</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_YIELD_DATACORES_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Datacores[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Datacores[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Datacores[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Datacores[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Datacores[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_YIELD_PROGENITOR_ARTIFACTS</Tag>
 	<English>Progenitor Artifacts</English>
 	<French>Progenitor Artifacts</French>
 	<German>Progenitor Artifacts</German>
 	<Italian>Progenitor Artifacts</Italian>
 	<Spanish>Progenitor Artifacts</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_YIELD_PROGENITOR_ARTIFACTS_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Progenitor Artifacts[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Progenitor Artifacts[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Progenitor Artifacts[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Progenitor Artifacts[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Progenitor Artifacts[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_YIELD_ALIEN_SPECIMENS</Tag>
@@ -121,12 +233,28 @@
 	<Spanish>Alien Specimens</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_YIELD_ALIEN_SPECIMENS_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Alien Specimens[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Alien Specimens[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Alien Specimens[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Alien Specimens[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Alien Specimens[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_YIELD_PRECIOUS_METALS</Tag>
 	<English>Precious Metals</English>
 	<French>Precious Metals</French>
 	<German>Precious Metals</German>
 	<Italian>Precious Metals</Italian>
 	<Spanish>Precious Metals</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_YIELD_PRECIOUS_METALS_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Precious Metals[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Precious Metals[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Precious Metals[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Precious Metals[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Precious Metals[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_YIELD_OPIATES</Tag>
@@ -137,12 +265,28 @@
 	<Spanish>Opiates</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_YIELD_OPIATES_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Opiates[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Opiates[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Opiates[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Opiates[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Opiates[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_YIELD_XENOTOXINS</Tag>
 	<English>Xenotoxins</English>
 	<French>Xenotoxins</French>
 	<German>Xenotoxins</German>
 	<Italian>Xenotoxins</Italian>
 	<Spanish>Xenotoxins</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_YIELD_XENOTOXINS_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Xenotoxins[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Xenotoxins[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Xenotoxins[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Xenotoxins[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Xenotoxins[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_YIELD_BOTANICALS</Tag>
@@ -153,12 +297,28 @@
 	<Spanish>Botanicals</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_YIELD_BOTANICALS_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Botanicals[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Botanicals[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Botanicals[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Botanicals[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Botanicals[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_YIELD_HYDROCARBONS</Tag>
 	<English>Hydrocarbons</English>
 	<French>Hydrocarbons</French>
 	<German>Hydrocarbons</German>
 	<Italian>Hydrocarbons</Italian>
 	<Spanish>Hydrocarbons</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_YIELD_HYDROCARBONS_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Hydrocarbons[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Hydrocarbons[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Hydrocarbons[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Hydrocarbons[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Hydrocarbons[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_YIELD_CLATHRATES</Tag>
@@ -169,12 +329,28 @@
 	<Spanish>Clathrates</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_YIELD_CLATHRATES_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Clathrates[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Clathrates[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Clathrates[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Clathrates[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Clathrates[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_YIELD_CORE_SAMPLES</Tag>
 	<English>Core Samples</English>
 	<French>Core Samples</French>
 	<German>Core Samples</German>
 	<Italian>Core Samples</Italian>
 	<Spanish>Core Samples</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_YIELD_CORE_SAMPLES_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Core Samples[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Core Samples[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Core Samples[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Core Samples[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Core Samples[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_YIELD_MACHINE_TOOLS</Tag>
@@ -185,12 +361,28 @@
 	<Spanish>Machine Tools</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_YIELD_MACHINE_TOOLS_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Machine Tools[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Machine Tools[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Machine Tools[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Machine Tools[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Machine Tools[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_YIELD_ROBOTICS</Tag>
 	<English>Robotics</English>
 	<French>Robotics</French>
 	<German>Robotics</German>
 	<Italian>Robotics</Italian>
 	<Spanish>Robotics</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_YIELD_ROBOTICS_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Robotics[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Robotics[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Robotics[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Robotics[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Robotics[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_YIELD_MUNITIONS</Tag>
@@ -201,12 +393,28 @@
 	<Spanish>Munitions</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_YIELD_MUNITIONS_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Munitions[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Munitions[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Munitions[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Munitions[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Munitions[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_YIELD_PHOTONICS</Tag>
 	<English>Photonics</English>
 	<French>Photonics</French>
 	<German>Photonics</German>
 	<Italian>Photonics</Italian>
 	<Spanish>Photonics</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_YIELD_PHOTONICS_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Photonics[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Photonics[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Photonics[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Photonics[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Photonics[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_YIELD_PLASTEEL</Tag>
@@ -217,12 +425,28 @@
 	<Spanish>Plasteel</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_YIELD_PLASTEEL_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Plasteel[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Plasteel[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Plasteel[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Plasteel[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Plasteel[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_YIELD_DURALLOY</Tag>
 	<English>Duralloy</English>
 	<French>Duralloy</French>
 	<German>Duralloy</German>
 	<Italian>Duralloy</Italian>
 	<Spanish>Duralloy</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_YIELD_DURALLOY_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Duralloy[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Duralloy[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Duralloy[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Duralloy[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Duralloy[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_YIELD_CRYSTALLOY</Tag>
@@ -233,12 +457,28 @@
 	<Spanish>Crystalloy</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_YIELD_CRYSTALLOY_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Crystalloy[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Crystalloy[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Crystalloy[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Crystalloy[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Crystalloy[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_YIELD_NUCLEONICS</Tag>
 	<English>Nucleonics</English>
 	<French>Nucleonics</French>
 	<German>Nucleonics</German>
 	<Italian>Nucleonics</Italian>
 	<Spanish>Nucleonics</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_YIELD_NUCLEONICS_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Nucleonics[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Nucleonics[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Nucleonics[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Nucleonics[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Nucleonics[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_YIELD_FUSION_CORES</Tag>
@@ -249,12 +489,28 @@
 	<Spanish>Fusion Cores</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_YIELD_FUSION_CORES_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Fusion Cores[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Fusion Cores[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Fusion Cores[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Fusion Cores[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Fusion Cores[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_YIELD_SEMICONDUCTORS</Tag>
 	<English>Semiconductors</English>
 	<French>Semiconductors</French>
 	<German>Semiconductors</German>
 	<Italian>Semiconductors</Italian>
 	<Spanish>Semiconductors</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_YIELD_SEMICONDUCTORS_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Semiconductors[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Semiconductors[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Semiconductors[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Semiconductors[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Semiconductors[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_YIELD_PLASMIDS</Tag>
@@ -265,12 +521,28 @@
 	<Spanish>Plasmids</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_YIELD_PLASMIDS_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Plasmids[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Plasmids[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Plasmids[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Plasmids[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Plasmids[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_YIELD_ENZYMES</Tag>
 	<English>Enzymes</English>
 	<French>Enzymes</French>
 	<German>Enzymes</German>
 	<Italian>Enzymes</Italian>
 	<Spanish>Enzymes</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_YIELD_ENZYMES_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Enzymes[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Enzymes[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Enzymes[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Enzymes[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Enzymes[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_YIELD_STEM_CELLS</Tag>
@@ -281,12 +553,28 @@
 	<Spanish>Stem Cells</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_YIELD_STEM_CELLS_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Stem Cells[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Stem Cells[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Stem Cells[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Stem Cells[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Stem Cells[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_YIELD_STATE_SECRETS</Tag>
 	<English>State Secrets</English>
 	<French>State Secrets</French>
 	<German>State Secrets</German>
 	<Italian>State Secrets</Italian>
 	<Spanish>State Secrets</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_YIELD_STATE_SECRETS_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]State Secrets[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]State Secrets[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]State Secrets[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]State Secrets[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]State Secrets[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_YIELD_PROGENITOR_TECH</Tag>
@@ -297,12 +585,28 @@
 	<Spanish>Progenitor Tech</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_YIELD_PROGENITOR_TECH_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Progenitor Tech[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Progenitor Tech[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Progenitor Tech[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Progenitor Tech[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Progenitor Tech[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_YIELD_ALIEN_RELICS</Tag>
 	<English>Alien Relics</English>
 	<French>Alien Relics</French>
 	<German>Alien Relics</German>
 	<Italian>Alien Relics</Italian>
 	<Spanish>Alien Relics</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_YIELD_ALIEN_RELICS_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Alien Relics[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Alien Relics[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Alien Relics[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Alien Relics[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Alien Relics[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_YIELD_NARCOTICS</Tag>
@@ -313,12 +617,28 @@
 	<Spanish>Narcotics</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_YIELD_NARCOTICS_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Narcotics[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Narcotics[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Narcotics[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Narcotics[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Narcotics[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_YIELD_BIOWEAPONS</Tag>
 	<English>Bioweapons</English>
 	<French>Bioweapons</French>
 	<German>Bioweapons</German>
 	<Italian>Bioweapons</Italian>
 	<Spanish>Bioweapons</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_YIELD_BIOWEAPONS_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Bioweapons[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Bioweapons[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Bioweapons[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Bioweapons[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Bioweapons[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_YIELD_PHARMACEUTICALS</Tag>
@@ -329,12 +649,28 @@
 	<Spanish>Pharmaceuticals</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_YIELD_PHARMACEUTICALS_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Pharmaceuticals[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Pharmaceuticals[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Pharmaceuticals[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Pharmaceuticals[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Pharmaceuticals[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_YIELD_PETROCHEMICALS</Tag>
 	<English>Petrochemicals</English>
 	<French>Petrochemicals</French>
 	<German>Petrochemicals</German>
 	<Italian>Petrochemicals</Italian>
 	<Spanish>Petrochemicals</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_YIELD_PETROCHEMICALS_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Petrochemicals[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Petrochemicals[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Petrochemicals[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Petrochemicals[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Petrochemicals[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_YIELD_COLLOIDS</Tag>
@@ -345,12 +681,28 @@
 	<Spanish>Colloids</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_YIELD_COLLOIDS_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Colloids[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Colloids[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Colloids[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Colloids[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Colloids[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_YIELD_CATALYSTS</Tag>
 	<English>Catalysts</English>
 	<French>Catalysts</French>
 	<German>Catalysts</German>
 	<Italian>Catalysts</Italian>
 	<Spanish>Catalysts</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_YIELD_CATALYSTS_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Catalysts[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Catalysts[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Catalysts[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Catalysts[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Catalysts[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_YIELD_HARD_CURRENCY</Tag>
@@ -361,12 +713,28 @@
 	<Spanish>Hard Currency</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_YIELD_HARD_CURRENCY_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Hard Currency[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Hard Currency[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Hard Currency[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Hard Currency[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Hard Currency[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_YIELD_EARTH_GOODS</Tag>
 	<English>Earth Goods</English>
 	<French>Earth Goods</French>
 	<German>Earth Goods</German>
 	<Italian>Earth Goods</Italian>
 	<Spanish>Earth Goods</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_YIELD_EARTH_GOODS_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Earth Goods[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Earth Goods[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Earth Goods[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Earth Goods[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Earth Goods[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_YIELD_CONTRABAND</Tag>
@@ -377,12 +745,28 @@
 	<Spanish>Contraband</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_YIELD_CONTRABAND_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Contraband[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Contraband[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Contraband[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Contraband[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Contraband[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_YIELD_EARTHLING_SPECIMENS</Tag>
 	<English>Earthling Specimens</English>
 	<French>Earthling Specimens</French>
 	<German>Earthling Specimens</German>
 	<Italian>Earthling Specimens</Italian>
 	<Spanish>Earthling Specimens</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_YIELD_EARTHLING_SPECIMENS_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Earthling Specimens[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Earthling Specimens[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Earthling Specimens[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Earthling Specimens[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Earthling Specimens[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_YIELD_INDUSTRY</Tag>
@@ -393,12 +777,28 @@
 	<Spanish>Industry</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_YIELD_INDUSTRY_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Industry[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Industry[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Industry[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Industry[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Industry[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_YIELD_MEDIA</Tag>
 	<English>Media</English>
 	<French>Media</French>
 	<German>Media</German>
 	<Italian>Media</Italian>
 	<Spanish>Media</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_YIELD_MEDIA_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Media[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Media[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Media[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Media[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Media[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_YIELD_LIBERTY</Tag>
@@ -409,12 +809,28 @@
 	<Spanish>Liberty</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_YIELD_LIBERTY_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Liberty[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Liberty[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Liberty[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Liberty[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Liberty[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_YIELD_RESEARCH</Tag>
 	<English>Research</English>
 	<French>Research</French>
 	<German>Research</German>
 	<Italian>Research</Italian>
 	<Spanish>Research</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_YIELD_RESEARCH_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Research[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Research[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Research[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Research[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Research[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_YIELD_EDUCATION</Tag>
@@ -425,12 +841,28 @@
 	<Spanish>Education</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_YIELD_EDUCATION_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Education[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Education[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Education[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Education[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Education[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_YIELD_INFLUENCE</Tag>
 	<English>Influence</English>
 	<French>Influence</French>
 	<German>Influence</German>
 	<Italian>Influence</Italian>
 	<Spanish>Influence</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_YIELD_INFLUENCE_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Influence[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Influence[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Influence[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Influence[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Influence[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_YIELD_ENERGY</Tag>
@@ -441,6 +873,14 @@
 	<Spanish>Energy</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_YIELD_ENERGY_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Energy[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Energy[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Energy[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Energy[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Energy[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_YIELD_POLLUTANTS</Tag>
 	<English>Pollutants</English>
 	<French>Pollutants</French>
@@ -449,12 +889,36 @@
 	<Spanish>Pollutants</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_YIELD_POLLUTANTS_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Pollutants[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Pollutants[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Pollutants[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Pollutants[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Pollutants[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_YIELD_CREDITS</Tag>
 	<English>Credits</English>
 	<French>Credits</French>
 	<German>Credits</German>
 	<Italian>Credits</Italian>
 	<Spanish>Credits</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_YIELD_CREDITS_PEDIA</Tag>
+	<English>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Credits[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</English>
+	<French>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Credits[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</French>
+	<German>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Credits[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</German>
+	<Italian>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Credits[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Italian>
+	<Spanish>The many unique properties of alien materials, together with Earth's rapidly depleting resource base, made [COLOR_HIGHLIGHT_TEXT]Credits[COLOR_REVERT] from the New Worlds a scarce and valuable commodity which often became the source of conflict between Earthling colonists and the Alien Empires.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_EMPHASIZE_AVOID_GROWTH</Tag>
+	<English>Avoid Growth</English>
+	<French>Avoid Growth</French>
+	<German>Avoid Growth</German>
+	<Italian>Avoid Growth</Italian>
+	<Spanish>Avoid Growth</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_PROFESSION_NUTRIENTS</Tag>
@@ -1257,6 +1721,22 @@
 	<Spanish>[LINK=YIELD_RESEARCH]Research[\LINK]are produced from [LINK=YIELD_][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Applied Research[COLOR_REVERT] profession.</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_PROFESSION_COLONIST</Tag>
+	<English>Colonist</English>
+	<French>Colonist</French>
+	<German>Colonist</German>
+	<Italian>Colonist</Italian>
+	<Spanish>Colonist</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_PEDIA_PROFESSION_COLONIST</Tag>
+	<English>Colonists assigned to the [COLOR_HIGHLIGHT_TEXT]Colonist[COLOR_REVERT] profession are essential for expanding your influence across the hostile terrains of the New Worlds.</English>
+	<French>Colonists assigned to the [COLOR_HIGHLIGHT_TEXT]Colonist[COLOR_REVERT] profession are essential for expanding your influence across the hostile terrains of the New Worlds.</French>
+	<German>Colonists assigned to the [COLOR_HIGHLIGHT_TEXT]Colonist[COLOR_REVERT] profession are essential for expanding your influence across the hostile terrains of the New Worlds.</German>
+	<Italian>Colonists assigned to the [COLOR_HIGHLIGHT_TEXT]Colonist[COLOR_REVERT] profession are essential for expanding your influence across the hostile terrains of the New Worlds.</Italian>
+	<Spanish>Colonists assigned to the [COLOR_HIGHLIGHT_TEXT]Colonist[COLOR_REVERT] profession are essential for expanding your influence across the hostile terrains of the New Worlds.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_PROFESSION_EXPLORER</Tag>
 	<English>Explorer</English>
 	<French>Explorer</French>
@@ -1641,6 +2121,54 @@
 	<Spanish>Development of [COLOR_HIGHLIGHT_TEXT]Abduction Site:Abduction Sites[COLOR_REVERT] across the hostile wilderness of the New Worlds can provide an important strategic advantage.</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_IMPROVEMENT_LAND_WORKED</Tag>
+	<English>Land Worked:Land Workeds</English>
+	<French>Land Worked:Land Workeds</French>
+	<German>Land Worked:Land Workeds</German>
+	<Italian>Land Worked:Land Workeds</Italian>
+	<Spanish>Land Worked:Land Workeds</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_IMPROVEMENT_LAND_WORKED</Tag>
+	<English>Development of [COLOR_HIGHLIGHT_TEXT]Land Worked:Land Workeds[COLOR_REVERT] across the hostile wilderness of the New Worlds can provide an important strategic advantage.</English>
+	<French>Development of [COLOR_HIGHLIGHT_TEXT]Land Worked:Land Workeds[COLOR_REVERT] across the hostile wilderness of the New Worlds can provide an important strategic advantage.</French>
+	<German>Development of [COLOR_HIGHLIGHT_TEXT]Land Worked:Land Workeds[COLOR_REVERT] across the hostile wilderness of the New Worlds can provide an important strategic advantage.</German>
+	<Italian>Development of [COLOR_HIGHLIGHT_TEXT]Land Worked:Land Workeds[COLOR_REVERT] across the hostile wilderness of the New Worlds can provide an important strategic advantage.</Italian>
+	<Spanish>Development of [COLOR_HIGHLIGHT_TEXT]Land Worked:Land Workeds[COLOR_REVERT] across the hostile wilderness of the New Worlds can provide an important strategic advantage.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_IMPROVEMENT_WATER_WORKED</Tag>
+	<English>Water Worked:Water Workeds</English>
+	<French>Water Worked:Water Workeds</French>
+	<German>Water Worked:Water Workeds</German>
+	<Italian>Water Worked:Water Workeds</Italian>
+	<Spanish>Water Worked:Water Workeds</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_IMPROVEMENT_WATER_WORKED</Tag>
+	<English>Development of [COLOR_HIGHLIGHT_TEXT]Water Worked:Water Workeds[COLOR_REVERT] across the hostile wilderness of the New Worlds can provide an important strategic advantage.</English>
+	<French>Development of [COLOR_HIGHLIGHT_TEXT]Water Worked:Water Workeds[COLOR_REVERT] across the hostile wilderness of the New Worlds can provide an important strategic advantage.</French>
+	<German>Development of [COLOR_HIGHLIGHT_TEXT]Water Worked:Water Workeds[COLOR_REVERT] across the hostile wilderness of the New Worlds can provide an important strategic advantage.</German>
+	<Italian>Development of [COLOR_HIGHLIGHT_TEXT]Water Worked:Water Workeds[COLOR_REVERT] across the hostile wilderness of the New Worlds can provide an important strategic advantage.</Italian>
+	<Spanish>Development of [COLOR_HIGHLIGHT_TEXT]Water Worked:Water Workeds[COLOR_REVERT] across the hostile wilderness of the New Worlds can provide an important strategic advantage.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_IMPROVEMENT_CITY_RUINS</Tag>
+	<English>City Ruins:City Ruinses</English>
+	<French>City Ruins:City Ruinses</French>
+	<German>City Ruins:City Ruinses</German>
+	<Italian>City Ruins:City Ruinses</Italian>
+	<Spanish>City Ruins:City Ruinses</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_IMPROVEMENT_CITY_RUINS</Tag>
+	<English>Development of [COLOR_HIGHLIGHT_TEXT]City Ruins:City Ruinses[COLOR_REVERT] across the hostile wilderness of the New Worlds can provide an important strategic advantage.</English>
+	<French>Development of [COLOR_HIGHLIGHT_TEXT]City Ruins:City Ruinses[COLOR_REVERT] across the hostile wilderness of the New Worlds can provide an important strategic advantage.</French>
+	<German>Development of [COLOR_HIGHLIGHT_TEXT]City Ruins:City Ruinses[COLOR_REVERT] across the hostile wilderness of the New Worlds can provide an important strategic advantage.</German>
+	<Italian>Development of [COLOR_HIGHLIGHT_TEXT]City Ruins:City Ruinses[COLOR_REVERT] across the hostile wilderness of the New Worlds can provide an important strategic advantage.</Italian>
+	<Spanish>Development of [COLOR_HIGHLIGHT_TEXT]City Ruins:City Ruinses[COLOR_REVERT] across the hostile wilderness of the New Worlds can provide an important strategic advantage.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_BUILDING_MACHINE_TOOLS1</Tag>
 	<English>Machine Tools Workshop:Machine Tools Workshops</English>
 	<French>Machine Tools Workshop:Machine Tools Workshops</French>
@@ -1834,27 +2362,27 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_BUILDING_MUNITIONS3</Tag>
-	<English>Munitions Complex:Munitions Complexes</English>
-	<French>Munitions Complex:Munitions Complexes</French>
-	<German>Munitions Complex:Munitions Complexes</German>
-	<Italian>Munitions Complex:Munitions Complexes</Italian>
-	<Spanish>Munitions Complex:Munitions Complexes</Spanish>
+	<English>Munitions Foundry:Munitions Foundries</English>
+	<French>Munitions Foundry:Munitions Foundries</French>
+	<German>Munitions Foundry:Munitions Foundries</German>
+	<Italian>Munitions Foundry:Munitions Foundries</Italian>
+	<Spanish>Munitions Foundry:Munitions Foundries</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_PEDIA_BUILDING_MUNITIONS3</Tag>
-	<English>A [COLOR_BUILDING_TEXT]Munitions Complex[COLOR_REVERT] enables highly efficient large-scale production of [LINK=YIELD_MUNITIONS]Munitions[\LINK] by citizens working in the [LINK=PROFESSION_MUNITIONS]Munitions[\LINK] profession.[NEWLINE][PARAGRAPH:1]The growing technological sophistication and infrastructure of several Human colonies and Alien empires eventually enabled the construction of large Munitions Complexes which could produce '.Munitions.' far more efficiently than the aging industrial base of Earth.</English>
-	<French>A [COLOR_BUILDING_TEXT]Munitions Complex[COLOR_REVERT] enables highly efficient large-scale production of [LINK=YIELD_MUNITIONS]Munitions[\LINK] by citizens working in the [LINK=PROFESSION_MUNITIONS]Munitions[\LINK] profession.[NEWLINE][PARAGRAPH:1]The growing technological sophistication and infrastructure of several Human colonies and Alien empires eventually enabled the construction of large Munitions Complexes which could produce '.Munitions.' far more efficiently than the aging industrial base of Earth.</French>
-	<German>A [COLOR_BUILDING_TEXT]Munitions Complex[COLOR_REVERT] enables highly efficient large-scale production of [LINK=YIELD_MUNITIONS]Munitions[\LINK] by citizens working in the [LINK=PROFESSION_MUNITIONS]Munitions[\LINK] profession.[NEWLINE][PARAGRAPH:1]The growing technological sophistication and infrastructure of several Human colonies and Alien empires eventually enabled the construction of large Munitions Complexes which could produce '.Munitions.' far more efficiently than the aging industrial base of Earth.</German>
-	<Italian>A [COLOR_BUILDING_TEXT]Munitions Complex[COLOR_REVERT] enables highly efficient large-scale production of [LINK=YIELD_MUNITIONS]Munitions[\LINK] by citizens working in the [LINK=PROFESSION_MUNITIONS]Munitions[\LINK] profession.[NEWLINE][PARAGRAPH:1]The growing technological sophistication and infrastructure of several Human colonies and Alien empires eventually enabled the construction of large Munitions Complexes which could produce '.Munitions.' far more efficiently than the aging industrial base of Earth.</Italian>
-	<Spanish>A [COLOR_BUILDING_TEXT]Munitions Complex[COLOR_REVERT] enables highly efficient large-scale production of [LINK=YIELD_MUNITIONS]Munitions[\LINK] by citizens working in the [LINK=PROFESSION_MUNITIONS]Munitions[\LINK] profession.[NEWLINE][PARAGRAPH:1]The growing technological sophistication and infrastructure of several Human colonies and Alien empires eventually enabled the construction of large Munitions Complexes which could produce '.Munitions.' far more efficiently than the aging industrial base of Earth.</Spanish>
+	<English>A [COLOR_BUILDING_TEXT]Munitions Foundry[COLOR_REVERT] enables highly efficient large-scale production of [LINK=YIELD_MUNITIONS]Munitions[\LINK] by citizens working in the [LINK=PROFESSION_MUNITIONS]Munitions[\LINK] profession.[NEWLINE][PARAGRAPH:1]The growing technological sophistication and infrastructure of several Human colonies and Alien empires eventually enabled the construction of large Munitions Foundries which could produce '.Munitions.' far more efficiently than the aging industrial base of Earth.</English>
+	<French>A [COLOR_BUILDING_TEXT]Munitions Foundry[COLOR_REVERT] enables highly efficient large-scale production of [LINK=YIELD_MUNITIONS]Munitions[\LINK] by citizens working in the [LINK=PROFESSION_MUNITIONS]Munitions[\LINK] profession.[NEWLINE][PARAGRAPH:1]The growing technological sophistication and infrastructure of several Human colonies and Alien empires eventually enabled the construction of large Munitions Foundries which could produce '.Munitions.' far more efficiently than the aging industrial base of Earth.</French>
+	<German>A [COLOR_BUILDING_TEXT]Munitions Foundry[COLOR_REVERT] enables highly efficient large-scale production of [LINK=YIELD_MUNITIONS]Munitions[\LINK] by citizens working in the [LINK=PROFESSION_MUNITIONS]Munitions[\LINK] profession.[NEWLINE][PARAGRAPH:1]The growing technological sophistication and infrastructure of several Human colonies and Alien empires eventually enabled the construction of large Munitions Foundries which could produce '.Munitions.' far more efficiently than the aging industrial base of Earth.</German>
+	<Italian>A [COLOR_BUILDING_TEXT]Munitions Foundry[COLOR_REVERT] enables highly efficient large-scale production of [LINK=YIELD_MUNITIONS]Munitions[\LINK] by citizens working in the [LINK=PROFESSION_MUNITIONS]Munitions[\LINK] profession.[NEWLINE][PARAGRAPH:1]The growing technological sophistication and infrastructure of several Human colonies and Alien empires eventually enabled the construction of large Munitions Foundries which could produce '.Munitions.' far more efficiently than the aging industrial base of Earth.</Italian>
+	<Spanish>A [COLOR_BUILDING_TEXT]Munitions Foundry[COLOR_REVERT] enables highly efficient large-scale production of [LINK=YIELD_MUNITIONS]Munitions[\LINK] by citizens working in the [LINK=PROFESSION_MUNITIONS]Munitions[\LINK] profession.[NEWLINE][PARAGRAPH:1]The growing technological sophistication and infrastructure of several Human colonies and Alien empires eventually enabled the construction of large Munitions Foundries which could produce '.Munitions.' far more efficiently than the aging industrial base of Earth.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_STRATEGY_BUILDING_MUNITIONS3</Tag>
-	<English>Build a [COLOR_BUILDING_TEXT]Munitions Complex[COLOR_REVERT] to maximize production of [COLOR_HIGHLIGHT_TEXT]Munitions[COLOR_REVERT].</English>
-	<French>Build a [COLOR_BUILDING_TEXT]Munitions Complex[COLOR_REVERT] to maximize production of [COLOR_HIGHLIGHT_TEXT]Munitions[COLOR_REVERT].</French>
-	<German>Build a [COLOR_BUILDING_TEXT]Munitions Complex[COLOR_REVERT] to maximize production of [COLOR_HIGHLIGHT_TEXT]Munitions[COLOR_REVERT].</German>
-	<Italian>Build a [COLOR_BUILDING_TEXT]Munitions Complex[COLOR_REVERT] to maximize production of [COLOR_HIGHLIGHT_TEXT]Munitions[COLOR_REVERT].</Italian>
-	<Spanish>Build a [COLOR_BUILDING_TEXT]Munitions Complex[COLOR_REVERT] to maximize production of [COLOR_HIGHLIGHT_TEXT]Munitions[COLOR_REVERT].</Spanish>
+	<English>Build a [COLOR_BUILDING_TEXT]Munitions Foundry[COLOR_REVERT] to maximize production of [COLOR_HIGHLIGHT_TEXT]Munitions[COLOR_REVERT].</English>
+	<French>Build a [COLOR_BUILDING_TEXT]Munitions Foundry[COLOR_REVERT] to maximize production of [COLOR_HIGHLIGHT_TEXT]Munitions[COLOR_REVERT].</French>
+	<German>Build a [COLOR_BUILDING_TEXT]Munitions Foundry[COLOR_REVERT] to maximize production of [COLOR_HIGHLIGHT_TEXT]Munitions[COLOR_REVERT].</German>
+	<Italian>Build a [COLOR_BUILDING_TEXT]Munitions Foundry[COLOR_REVERT] to maximize production of [COLOR_HIGHLIGHT_TEXT]Munitions[COLOR_REVERT].</Italian>
+	<Spanish>Build a [COLOR_BUILDING_TEXT]Munitions Foundry[COLOR_REVERT] to maximize production of [COLOR_HIGHLIGHT_TEXT]Munitions[COLOR_REVERT].</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_BUILDING_PHOTONICS1</Tag>
@@ -2986,27 +3514,27 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_BUILDING_BIOWEAPONS3</Tag>
-	<English>Bioweapons Foundry:Bioweapons Foundries</English>
-	<French>Bioweapons Foundry:Bioweapons Foundries</French>
-	<German>Bioweapons Foundry:Bioweapons Foundries</German>
-	<Italian>Bioweapons Foundry:Bioweapons Foundries</Italian>
-	<Spanish>Bioweapons Foundry:Bioweapons Foundries</Spanish>
+	<English>Bioweapons Complex:Bioweapons Complexes</English>
+	<French>Bioweapons Complex:Bioweapons Complexes</French>
+	<German>Bioweapons Complex:Bioweapons Complexes</German>
+	<Italian>Bioweapons Complex:Bioweapons Complexes</Italian>
+	<Spanish>Bioweapons Complex:Bioweapons Complexes</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_PEDIA_BUILDING_BIOWEAPONS3</Tag>
-	<English>A [COLOR_BUILDING_TEXT]Bioweapons Foundry[COLOR_REVERT] enables highly efficient large-scale production of [LINK=YIELD_BIOWEAPONS]Bioweapons[\LINK] by citizens working in the [LINK=PROFESSION_BIOWEAPONS]Bioweapons[\LINK] profession.[NEWLINE][PARAGRAPH:1]The growing technological sophistication and infrastructure of several Human colonies and Alien empires eventually enabled the construction of large Bioweapons Foundries which could produce '.Bioweapons.' far more efficiently than the aging industrial base of Earth.</English>
-	<French>A [COLOR_BUILDING_TEXT]Bioweapons Foundry[COLOR_REVERT] enables highly efficient large-scale production of [LINK=YIELD_BIOWEAPONS]Bioweapons[\LINK] by citizens working in the [LINK=PROFESSION_BIOWEAPONS]Bioweapons[\LINK] profession.[NEWLINE][PARAGRAPH:1]The growing technological sophistication and infrastructure of several Human colonies and Alien empires eventually enabled the construction of large Bioweapons Foundries which could produce '.Bioweapons.' far more efficiently than the aging industrial base of Earth.</French>
-	<German>A [COLOR_BUILDING_TEXT]Bioweapons Foundry[COLOR_REVERT] enables highly efficient large-scale production of [LINK=YIELD_BIOWEAPONS]Bioweapons[\LINK] by citizens working in the [LINK=PROFESSION_BIOWEAPONS]Bioweapons[\LINK] profession.[NEWLINE][PARAGRAPH:1]The growing technological sophistication and infrastructure of several Human colonies and Alien empires eventually enabled the construction of large Bioweapons Foundries which could produce '.Bioweapons.' far more efficiently than the aging industrial base of Earth.</German>
-	<Italian>A [COLOR_BUILDING_TEXT]Bioweapons Foundry[COLOR_REVERT] enables highly efficient large-scale production of [LINK=YIELD_BIOWEAPONS]Bioweapons[\LINK] by citizens working in the [LINK=PROFESSION_BIOWEAPONS]Bioweapons[\LINK] profession.[NEWLINE][PARAGRAPH:1]The growing technological sophistication and infrastructure of several Human colonies and Alien empires eventually enabled the construction of large Bioweapons Foundries which could produce '.Bioweapons.' far more efficiently than the aging industrial base of Earth.</Italian>
-	<Spanish>A [COLOR_BUILDING_TEXT]Bioweapons Foundry[COLOR_REVERT] enables highly efficient large-scale production of [LINK=YIELD_BIOWEAPONS]Bioweapons[\LINK] by citizens working in the [LINK=PROFESSION_BIOWEAPONS]Bioweapons[\LINK] profession.[NEWLINE][PARAGRAPH:1]The growing technological sophistication and infrastructure of several Human colonies and Alien empires eventually enabled the construction of large Bioweapons Foundries which could produce '.Bioweapons.' far more efficiently than the aging industrial base of Earth.</Spanish>
+	<English>A [COLOR_BUILDING_TEXT]Bioweapons Complex[COLOR_REVERT] enables highly efficient large-scale production of [LINK=YIELD_BIOWEAPONS]Bioweapons[\LINK] by citizens working in the [LINK=PROFESSION_BIOWEAPONS]Bioweapons[\LINK] profession.[NEWLINE][PARAGRAPH:1]The growing technological sophistication and infrastructure of several Human colonies and Alien empires eventually enabled the construction of large Bioweapons Complexes which could produce '.Bioweapons.' far more efficiently than the aging industrial base of Earth.</English>
+	<French>A [COLOR_BUILDING_TEXT]Bioweapons Complex[COLOR_REVERT] enables highly efficient large-scale production of [LINK=YIELD_BIOWEAPONS]Bioweapons[\LINK] by citizens working in the [LINK=PROFESSION_BIOWEAPONS]Bioweapons[\LINK] profession.[NEWLINE][PARAGRAPH:1]The growing technological sophistication and infrastructure of several Human colonies and Alien empires eventually enabled the construction of large Bioweapons Complexes which could produce '.Bioweapons.' far more efficiently than the aging industrial base of Earth.</French>
+	<German>A [COLOR_BUILDING_TEXT]Bioweapons Complex[COLOR_REVERT] enables highly efficient large-scale production of [LINK=YIELD_BIOWEAPONS]Bioweapons[\LINK] by citizens working in the [LINK=PROFESSION_BIOWEAPONS]Bioweapons[\LINK] profession.[NEWLINE][PARAGRAPH:1]The growing technological sophistication and infrastructure of several Human colonies and Alien empires eventually enabled the construction of large Bioweapons Complexes which could produce '.Bioweapons.' far more efficiently than the aging industrial base of Earth.</German>
+	<Italian>A [COLOR_BUILDING_TEXT]Bioweapons Complex[COLOR_REVERT] enables highly efficient large-scale production of [LINK=YIELD_BIOWEAPONS]Bioweapons[\LINK] by citizens working in the [LINK=PROFESSION_BIOWEAPONS]Bioweapons[\LINK] profession.[NEWLINE][PARAGRAPH:1]The growing technological sophistication and infrastructure of several Human colonies and Alien empires eventually enabled the construction of large Bioweapons Complexes which could produce '.Bioweapons.' far more efficiently than the aging industrial base of Earth.</Italian>
+	<Spanish>A [COLOR_BUILDING_TEXT]Bioweapons Complex[COLOR_REVERT] enables highly efficient large-scale production of [LINK=YIELD_BIOWEAPONS]Bioweapons[\LINK] by citizens working in the [LINK=PROFESSION_BIOWEAPONS]Bioweapons[\LINK] profession.[NEWLINE][PARAGRAPH:1]The growing technological sophistication and infrastructure of several Human colonies and Alien empires eventually enabled the construction of large Bioweapons Complexes which could produce '.Bioweapons.' far more efficiently than the aging industrial base of Earth.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_STRATEGY_BUILDING_BIOWEAPONS3</Tag>
-	<English>Build a [COLOR_BUILDING_TEXT]Bioweapons Foundry[COLOR_REVERT] to maximize production of [COLOR_HIGHLIGHT_TEXT]Bioweapons[COLOR_REVERT].</English>
-	<French>Build a [COLOR_BUILDING_TEXT]Bioweapons Foundry[COLOR_REVERT] to maximize production of [COLOR_HIGHLIGHT_TEXT]Bioweapons[COLOR_REVERT].</French>
-	<German>Build a [COLOR_BUILDING_TEXT]Bioweapons Foundry[COLOR_REVERT] to maximize production of [COLOR_HIGHLIGHT_TEXT]Bioweapons[COLOR_REVERT].</German>
-	<Italian>Build a [COLOR_BUILDING_TEXT]Bioweapons Foundry[COLOR_REVERT] to maximize production of [COLOR_HIGHLIGHT_TEXT]Bioweapons[COLOR_REVERT].</Italian>
-	<Spanish>Build a [COLOR_BUILDING_TEXT]Bioweapons Foundry[COLOR_REVERT] to maximize production of [COLOR_HIGHLIGHT_TEXT]Bioweapons[COLOR_REVERT].</Spanish>
+	<English>Build a [COLOR_BUILDING_TEXT]Bioweapons Complex[COLOR_REVERT] to maximize production of [COLOR_HIGHLIGHT_TEXT]Bioweapons[COLOR_REVERT].</English>
+	<French>Build a [COLOR_BUILDING_TEXT]Bioweapons Complex[COLOR_REVERT] to maximize production of [COLOR_HIGHLIGHT_TEXT]Bioweapons[COLOR_REVERT].</French>
+	<German>Build a [COLOR_BUILDING_TEXT]Bioweapons Complex[COLOR_REVERT] to maximize production of [COLOR_HIGHLIGHT_TEXT]Bioweapons[COLOR_REVERT].</German>
+	<Italian>Build a [COLOR_BUILDING_TEXT]Bioweapons Complex[COLOR_REVERT] to maximize production of [COLOR_HIGHLIGHT_TEXT]Bioweapons[COLOR_REVERT].</Italian>
+	<Spanish>Build a [COLOR_BUILDING_TEXT]Bioweapons Complex[COLOR_REVERT] to maximize production of [COLOR_HIGHLIGHT_TEXT]Bioweapons[COLOR_REVERT].</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_BUILDING_PHARMACEUTICALS1</Tag>
@@ -3945,6 +4473,126 @@
 	<Spanish>Build a [COLOR_BUILDING_TEXT]Market Complex[COLOR_REVERT] to maximize production of [COLOR_HIGHLIGHT_TEXT]Market[COLOR_REVERT].</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_BUILDING_PRISON1</Tag>
+	<English>Prison Facility:Prison Facilities</English>
+	<French>Prison Facility:Prison Facilities</French>
+	<German>Prison Facility:Prison Facilities</German>
+	<Italian>Prison Facility:Prison Facilities</Italian>
+	<Spanish>Prison Facility:Prison Facilities</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_PEDIA_BUILDING_PRISON1</Tag>
+	<English>A [COLOR_BUILDING_TEXT]Prison Facility[COLOR_REVERT] allows basic production of [LINK=YIELD_PRISON]Prison[\LINK] by citizens working in the [LINK=PROFESSION_PRISON]Prison[\LINK] profession.[NEWLINE][PARAGRAPH:1]While the Earth superpowers initially maintained tight control over the complex and highly profitable production of Prison from raw materials imported from the New Worlds, development of the first small-scale Prison Facilities by Human colonists and Alien empires eventually began to challenge Earth's previously unassailable monopoly.</English>
+	<French>A [COLOR_BUILDING_TEXT]Prison Facility[COLOR_REVERT] allows basic production of [LINK=YIELD_PRISON]Prison[\LINK] by citizens working in the [LINK=PROFESSION_PRISON]Prison[\LINK] profession.[NEWLINE][PARAGRAPH:1]While the Earth superpowers initially maintained tight control over the complex and highly profitable production of Prison from raw materials imported from the New Worlds, development of the first small-scale Prison Facilities by Human colonists and Alien empires eventually began to challenge Earth's previously unassailable monopoly.</French>
+	<German>A [COLOR_BUILDING_TEXT]Prison Facility[COLOR_REVERT] allows basic production of [LINK=YIELD_PRISON]Prison[\LINK] by citizens working in the [LINK=PROFESSION_PRISON]Prison[\LINK] profession.[NEWLINE][PARAGRAPH:1]While the Earth superpowers initially maintained tight control over the complex and highly profitable production of Prison from raw materials imported from the New Worlds, development of the first small-scale Prison Facilities by Human colonists and Alien empires eventually began to challenge Earth's previously unassailable monopoly.</German>
+	<Italian>A [COLOR_BUILDING_TEXT]Prison Facility[COLOR_REVERT] allows basic production of [LINK=YIELD_PRISON]Prison[\LINK] by citizens working in the [LINK=PROFESSION_PRISON]Prison[\LINK] profession.[NEWLINE][PARAGRAPH:1]While the Earth superpowers initially maintained tight control over the complex and highly profitable production of Prison from raw materials imported from the New Worlds, development of the first small-scale Prison Facilities by Human colonists and Alien empires eventually began to challenge Earth's previously unassailable monopoly.</Italian>
+	<Spanish>A [COLOR_BUILDING_TEXT]Prison Facility[COLOR_REVERT] allows basic production of [LINK=YIELD_PRISON]Prison[\LINK] by citizens working in the [LINK=PROFESSION_PRISON]Prison[\LINK] profession.[NEWLINE][PARAGRAPH:1]While the Earth superpowers initially maintained tight control over the complex and highly profitable production of Prison from raw materials imported from the New Worlds, development of the first small-scale Prison Facilities by Human colonists and Alien empires eventually began to challenge Earth's previously unassailable monopoly.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_STRATEGY_BUILDING_PRISON1</Tag>
+	<English>Build a [COLOR_BUILDING_TEXT]Prison Facility[COLOR_REVERT] to allow basic production of [COLOR_HIGHLIGHT_TEXT]Prison[COLOR_REVERT].</English>
+	<French>Build a [COLOR_BUILDING_TEXT]Prison Facility[COLOR_REVERT] to allow basic production of [COLOR_HIGHLIGHT_TEXT]Prison[COLOR_REVERT].</French>
+	<German>Build a [COLOR_BUILDING_TEXT]Prison Facility[COLOR_REVERT] to allow basic production of [COLOR_HIGHLIGHT_TEXT]Prison[COLOR_REVERT].</German>
+	<Italian>Build a [COLOR_BUILDING_TEXT]Prison Facility[COLOR_REVERT] to allow basic production of [COLOR_HIGHLIGHT_TEXT]Prison[COLOR_REVERT].</Italian>
+	<Spanish>Build a [COLOR_BUILDING_TEXT]Prison Facility[COLOR_REVERT] to allow basic production of [COLOR_HIGHLIGHT_TEXT]Prison[COLOR_REVERT].</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BUILDING_PRISON2</Tag>
+	<English>Prison Lab:Prison Labs</English>
+	<French>Prison Lab:Prison Labs</French>
+	<German>Prison Lab:Prison Labs</German>
+	<Italian>Prison Lab:Prison Labs</Italian>
+	<Spanish>Prison Lab:Prison Labs</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_PEDIA_BUILDING_PRISON2</Tag>
+	<English>A [COLOR_BUILDING_TEXT]Prison Lab[COLOR_REVERT] enhances production of [LINK=YIELD_PRISON]Prison[\LINK] by citizens working in the [LINK=PROFESSION_PRISON]Prison[\LINK] profession.[NEWLINE][PARAGRAPH:1]By leveraging their growing industrial base to encompass the construction of Prison Labs, Human colonies and Alien empires became increasingly able to produce Prison more efficiently and on a larger scale, furthering their economic independence from the mercantilist industries of Earth.</English>
+	<French>A [COLOR_BUILDING_TEXT]Prison Lab[COLOR_REVERT] enhances production of [LINK=YIELD_PRISON]Prison[\LINK] by citizens working in the [LINK=PROFESSION_PRISON]Prison[\LINK] profession.[NEWLINE][PARAGRAPH:1]By leveraging their growing industrial base to encompass the construction of Prison Labs, Human colonies and Alien empires became increasingly able to produce Prison more efficiently and on a larger scale, furthering their economic independence from the mercantilist industries of Earth.</French>
+	<German>A [COLOR_BUILDING_TEXT]Prison Lab[COLOR_REVERT] enhances production of [LINK=YIELD_PRISON]Prison[\LINK] by citizens working in the [LINK=PROFESSION_PRISON]Prison[\LINK] profession.[NEWLINE][PARAGRAPH:1]By leveraging their growing industrial base to encompass the construction of Prison Labs, Human colonies and Alien empires became increasingly able to produce Prison more efficiently and on a larger scale, furthering their economic independence from the mercantilist industries of Earth.</German>
+	<Italian>A [COLOR_BUILDING_TEXT]Prison Lab[COLOR_REVERT] enhances production of [LINK=YIELD_PRISON]Prison[\LINK] by citizens working in the [LINK=PROFESSION_PRISON]Prison[\LINK] profession.[NEWLINE][PARAGRAPH:1]By leveraging their growing industrial base to encompass the construction of Prison Labs, Human colonies and Alien empires became increasingly able to produce Prison more efficiently and on a larger scale, furthering their economic independence from the mercantilist industries of Earth.</Italian>
+	<Spanish>A [COLOR_BUILDING_TEXT]Prison Lab[COLOR_REVERT] enhances production of [LINK=YIELD_PRISON]Prison[\LINK] by citizens working in the [LINK=PROFESSION_PRISON]Prison[\LINK] profession.[NEWLINE][PARAGRAPH:1]By leveraging their growing industrial base to encompass the construction of Prison Labs, Human colonies and Alien empires became increasingly able to produce Prison more efficiently and on a larger scale, furthering their economic independence from the mercantilist industries of Earth.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_STRATEGY_BUILDING_PRISON2</Tag>
+	<English>Build a [COLOR_BUILDING_TEXT]Prison Lab[COLOR_REVERT] to allow more efficient production of [COLOR_HIGHLIGHT_TEXT]Prison[COLOR_REVERT].</English>
+	<French>Build a [COLOR_BUILDING_TEXT]Prison Lab[COLOR_REVERT] to allow more efficient production of [COLOR_HIGHLIGHT_TEXT]Prison[COLOR_REVERT].</French>
+	<German>Build a [COLOR_BUILDING_TEXT]Prison Lab[COLOR_REVERT] to allow more efficient production of [COLOR_HIGHLIGHT_TEXT]Prison[COLOR_REVERT].</German>
+	<Italian>Build a [COLOR_BUILDING_TEXT]Prison Lab[COLOR_REVERT] to allow more efficient production of [COLOR_HIGHLIGHT_TEXT]Prison[COLOR_REVERT].</Italian>
+	<Spanish>Build a [COLOR_BUILDING_TEXT]Prison Lab[COLOR_REVERT] to allow more efficient production of [COLOR_HIGHLIGHT_TEXT]Prison[COLOR_REVERT].</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BUILDING_PRISON3</Tag>
+	<English>Prison Complex:Prison Complexes</English>
+	<French>Prison Complex:Prison Complexes</French>
+	<German>Prison Complex:Prison Complexes</German>
+	<Italian>Prison Complex:Prison Complexes</Italian>
+	<Spanish>Prison Complex:Prison Complexes</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_PEDIA_BUILDING_PRISON3</Tag>
+	<English>A [COLOR_BUILDING_TEXT]Prison Complex[COLOR_REVERT] enables highly efficient large-scale production of [LINK=YIELD_PRISON]Prison[\LINK] by citizens working in the [LINK=PROFESSION_PRISON]Prison[\LINK] profession.[NEWLINE][PARAGRAPH:1]The growing technological sophistication and infrastructure of several Human colonies and Alien empires eventually enabled the construction of large Prison Complexes which could produce '.Prison.' far more efficiently than the aging industrial base of Earth.</English>
+	<French>A [COLOR_BUILDING_TEXT]Prison Complex[COLOR_REVERT] enables highly efficient large-scale production of [LINK=YIELD_PRISON]Prison[\LINK] by citizens working in the [LINK=PROFESSION_PRISON]Prison[\LINK] profession.[NEWLINE][PARAGRAPH:1]The growing technological sophistication and infrastructure of several Human colonies and Alien empires eventually enabled the construction of large Prison Complexes which could produce '.Prison.' far more efficiently than the aging industrial base of Earth.</French>
+	<German>A [COLOR_BUILDING_TEXT]Prison Complex[COLOR_REVERT] enables highly efficient large-scale production of [LINK=YIELD_PRISON]Prison[\LINK] by citizens working in the [LINK=PROFESSION_PRISON]Prison[\LINK] profession.[NEWLINE][PARAGRAPH:1]The growing technological sophistication and infrastructure of several Human colonies and Alien empires eventually enabled the construction of large Prison Complexes which could produce '.Prison.' far more efficiently than the aging industrial base of Earth.</German>
+	<Italian>A [COLOR_BUILDING_TEXT]Prison Complex[COLOR_REVERT] enables highly efficient large-scale production of [LINK=YIELD_PRISON]Prison[\LINK] by citizens working in the [LINK=PROFESSION_PRISON]Prison[\LINK] profession.[NEWLINE][PARAGRAPH:1]The growing technological sophistication and infrastructure of several Human colonies and Alien empires eventually enabled the construction of large Prison Complexes which could produce '.Prison.' far more efficiently than the aging industrial base of Earth.</Italian>
+	<Spanish>A [COLOR_BUILDING_TEXT]Prison Complex[COLOR_REVERT] enables highly efficient large-scale production of [LINK=YIELD_PRISON]Prison[\LINK] by citizens working in the [LINK=PROFESSION_PRISON]Prison[\LINK] profession.[NEWLINE][PARAGRAPH:1]The growing technological sophistication and infrastructure of several Human colonies and Alien empires eventually enabled the construction of large Prison Complexes which could produce '.Prison.' far more efficiently than the aging industrial base of Earth.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_STRATEGY_BUILDING_PRISON3</Tag>
+	<English>Build a [COLOR_BUILDING_TEXT]Prison Complex[COLOR_REVERT] to maximize production of [COLOR_HIGHLIGHT_TEXT]Prison[COLOR_REVERT].</English>
+	<French>Build a [COLOR_BUILDING_TEXT]Prison Complex[COLOR_REVERT] to maximize production of [COLOR_HIGHLIGHT_TEXT]Prison[COLOR_REVERT].</French>
+	<German>Build a [COLOR_BUILDING_TEXT]Prison Complex[COLOR_REVERT] to maximize production of [COLOR_HIGHLIGHT_TEXT]Prison[COLOR_REVERT].</German>
+	<Italian>Build a [COLOR_BUILDING_TEXT]Prison Complex[COLOR_REVERT] to maximize production of [COLOR_HIGHLIGHT_TEXT]Prison[COLOR_REVERT].</Italian>
+	<Spanish>Build a [COLOR_BUILDING_TEXT]Prison Complex[COLOR_REVERT] to maximize production of [COLOR_HIGHLIGHT_TEXT]Prison[COLOR_REVERT].</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BUILDING_SHRINE</Tag>
+	<English>Shrine Facility:Shrine Facilities</English>
+	<French>Shrine Facility:Shrine Facilities</French>
+	<German>Shrine Facility:Shrine Facilities</German>
+	<Italian>Shrine Facility:Shrine Facilities</Italian>
+	<Spanish>Shrine Facility:Shrine Facilities</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_PEDIA_BUILDING_SHRINE</Tag>
+	<English>A [COLOR_BUILDING_TEXT]Shrine Facility[COLOR_REVERT] allows basic production of [LINK=YIELD_SHRINE]Shrine[\LINK] by citizens working in the [LINK=PROFESSION_SHRINE]Shrine[\LINK] profession.[NEWLINE][PARAGRAPH:1]While the Earth superpowers initially maintained tight control over the complex and highly profitable production of Shrine from raw materials imported from the New Worlds, development of the first small-scale Shrine Facilities by Human colonists and Alien empires eventually began to challenge Earth's previously unassailable monopoly.</English>
+	<French>A [COLOR_BUILDING_TEXT]Shrine Facility[COLOR_REVERT] allows basic production of [LINK=YIELD_SHRINE]Shrine[\LINK] by citizens working in the [LINK=PROFESSION_SHRINE]Shrine[\LINK] profession.[NEWLINE][PARAGRAPH:1]While the Earth superpowers initially maintained tight control over the complex and highly profitable production of Shrine from raw materials imported from the New Worlds, development of the first small-scale Shrine Facilities by Human colonists and Alien empires eventually began to challenge Earth's previously unassailable monopoly.</French>
+	<German>A [COLOR_BUILDING_TEXT]Shrine Facility[COLOR_REVERT] allows basic production of [LINK=YIELD_SHRINE]Shrine[\LINK] by citizens working in the [LINK=PROFESSION_SHRINE]Shrine[\LINK] profession.[NEWLINE][PARAGRAPH:1]While the Earth superpowers initially maintained tight control over the complex and highly profitable production of Shrine from raw materials imported from the New Worlds, development of the first small-scale Shrine Facilities by Human colonists and Alien empires eventually began to challenge Earth's previously unassailable monopoly.</German>
+	<Italian>A [COLOR_BUILDING_TEXT]Shrine Facility[COLOR_REVERT] allows basic production of [LINK=YIELD_SHRINE]Shrine[\LINK] by citizens working in the [LINK=PROFESSION_SHRINE]Shrine[\LINK] profession.[NEWLINE][PARAGRAPH:1]While the Earth superpowers initially maintained tight control over the complex and highly profitable production of Shrine from raw materials imported from the New Worlds, development of the first small-scale Shrine Facilities by Human colonists and Alien empires eventually began to challenge Earth's previously unassailable monopoly.</Italian>
+	<Spanish>A [COLOR_BUILDING_TEXT]Shrine Facility[COLOR_REVERT] allows basic production of [LINK=YIELD_SHRINE]Shrine[\LINK] by citizens working in the [LINK=PROFESSION_SHRINE]Shrine[\LINK] profession.[NEWLINE][PARAGRAPH:1]While the Earth superpowers initially maintained tight control over the complex and highly profitable production of Shrine from raw materials imported from the New Worlds, development of the first small-scale Shrine Facilities by Human colonists and Alien empires eventually began to challenge Earth's previously unassailable monopoly.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_STRATEGY_BUILDING_SHRINE</Tag>
+	<English>Build a [COLOR_BUILDING_TEXT]Shrine Facility[COLOR_REVERT] to allow basic production of [COLOR_HIGHLIGHT_TEXT]Shrine[COLOR_REVERT].</English>
+	<French>Build a [COLOR_BUILDING_TEXT]Shrine Facility[COLOR_REVERT] to allow basic production of [COLOR_HIGHLIGHT_TEXT]Shrine[COLOR_REVERT].</French>
+	<German>Build a [COLOR_BUILDING_TEXT]Shrine Facility[COLOR_REVERT] to allow basic production of [COLOR_HIGHLIGHT_TEXT]Shrine[COLOR_REVERT].</German>
+	<Italian>Build a [COLOR_BUILDING_TEXT]Shrine Facility[COLOR_REVERT] to allow basic production of [COLOR_HIGHLIGHT_TEXT]Shrine[COLOR_REVERT].</Italian>
+	<Spanish>Build a [COLOR_BUILDING_TEXT]Shrine Facility[COLOR_REVERT] to allow basic production of [COLOR_HIGHLIGHT_TEXT]Shrine[COLOR_REVERT].</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BUILDING_TRADING_POST</Tag>
+	<English>Trading Post Facility:Trading Post Facilities</English>
+	<French>Trading Post Facility:Trading Post Facilities</French>
+	<German>Trading Post Facility:Trading Post Facilities</German>
+	<Italian>Trading Post Facility:Trading Post Facilities</Italian>
+	<Spanish>Trading Post Facility:Trading Post Facilities</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_PEDIA_BUILDING_TRADING_POST</Tag>
+	<English>A [COLOR_BUILDING_TEXT]Trading Post Facility[COLOR_REVERT] allows basic production of [LINK=YIELD_TRADING_POST]Trading Post[\LINK] by citizens working in the [LINK=PROFESSION_TRADING_POST]Trading Post[\LINK] profession.[NEWLINE][PARAGRAPH:1]While the Earth superpowers initially maintained tight control over the complex and highly profitable production of Trading Post from raw materials imported from the New Worlds, development of the first small-scale Trading Post Facilities by Human colonists and Alien empires eventually began to challenge Earth's previously unassailable monopoly.</English>
+	<French>A [COLOR_BUILDING_TEXT]Trading Post Facility[COLOR_REVERT] allows basic production of [LINK=YIELD_TRADING_POST]Trading Post[\LINK] by citizens working in the [LINK=PROFESSION_TRADING_POST]Trading Post[\LINK] profession.[NEWLINE][PARAGRAPH:1]While the Earth superpowers initially maintained tight control over the complex and highly profitable production of Trading Post from raw materials imported from the New Worlds, development of the first small-scale Trading Post Facilities by Human colonists and Alien empires eventually began to challenge Earth's previously unassailable monopoly.</French>
+	<German>A [COLOR_BUILDING_TEXT]Trading Post Facility[COLOR_REVERT] allows basic production of [LINK=YIELD_TRADING_POST]Trading Post[\LINK] by citizens working in the [LINK=PROFESSION_TRADING_POST]Trading Post[\LINK] profession.[NEWLINE][PARAGRAPH:1]While the Earth superpowers initially maintained tight control over the complex and highly profitable production of Trading Post from raw materials imported from the New Worlds, development of the first small-scale Trading Post Facilities by Human colonists and Alien empires eventually began to challenge Earth's previously unassailable monopoly.</German>
+	<Italian>A [COLOR_BUILDING_TEXT]Trading Post Facility[COLOR_REVERT] allows basic production of [LINK=YIELD_TRADING_POST]Trading Post[\LINK] by citizens working in the [LINK=PROFESSION_TRADING_POST]Trading Post[\LINK] profession.[NEWLINE][PARAGRAPH:1]While the Earth superpowers initially maintained tight control over the complex and highly profitable production of Trading Post from raw materials imported from the New Worlds, development of the first small-scale Trading Post Facilities by Human colonists and Alien empires eventually began to challenge Earth's previously unassailable monopoly.</Italian>
+	<Spanish>A [COLOR_BUILDING_TEXT]Trading Post Facility[COLOR_REVERT] allows basic production of [LINK=YIELD_TRADING_POST]Trading Post[\LINK] by citizens working in the [LINK=PROFESSION_TRADING_POST]Trading Post[\LINK] profession.[NEWLINE][PARAGRAPH:1]While the Earth superpowers initially maintained tight control over the complex and highly profitable production of Trading Post from raw materials imported from the New Worlds, development of the first small-scale Trading Post Facilities by Human colonists and Alien empires eventually began to challenge Earth's previously unassailable monopoly.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_STRATEGY_BUILDING_TRADING_POST</Tag>
+	<English>Build a [COLOR_BUILDING_TEXT]Trading Post Facility[COLOR_REVERT] to allow basic production of [COLOR_HIGHLIGHT_TEXT]Trading Post[COLOR_REVERT].</English>
+	<French>Build a [COLOR_BUILDING_TEXT]Trading Post Facility[COLOR_REVERT] to allow basic production of [COLOR_HIGHLIGHT_TEXT]Trading Post[COLOR_REVERT].</French>
+	<German>Build a [COLOR_BUILDING_TEXT]Trading Post Facility[COLOR_REVERT] to allow basic production of [COLOR_HIGHLIGHT_TEXT]Trading Post[COLOR_REVERT].</German>
+	<Italian>Build a [COLOR_BUILDING_TEXT]Trading Post Facility[COLOR_REVERT] to allow basic production of [COLOR_HIGHLIGHT_TEXT]Trading Post[COLOR_REVERT].</Italian>
+	<Spanish>Build a [COLOR_BUILDING_TEXT]Trading Post Facility[COLOR_REVERT] to allow basic production of [COLOR_HIGHLIGHT_TEXT]Trading Post[COLOR_REVERT].</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_UNIT_EXPERT_AGRONOMIST</Tag>
 	<English>Expert Agronomist:Expert Agronomists</English>
 	<French>Expert Agronomist:Expert Agronomists</French>
@@ -4194,11 +4842,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_UNIT_INFAMOUS_ARMS_DEALER_PEDIA</Tag>
-	<English>An [BOLD]Infamous Arms Dealer[\BOLD] is significantly more efficient than other colonists in the production of [LINK=YIELD_WEAPONS]Weapons[\LINK], [LINK=YIELD_PHOTONICS]Photonics[\LINK], [NEWLINE][PARAGRAPH:1]The oppressive governments of Earth exerted tight control over offworld emigration, and saw it as a means to expel undesirables such as Convicts and Proletarians while retaining and exploiting the dwindling number of citizens with marketable technical and scientific skills. As economic and social conditions in the offworld colonies (and even some Alien civilizations) became more attractive than those on Earth, increasing numbers of remaining skilled and educated workers including Infamous Arms Dealers strove to circumvent these restrictions to seek their fortune among the stars.</English>
-	<French>An [BOLD]Infamous Arms Dealer[\BOLD] is significantly more efficient than other colonists in the production of [LINK=YIELD_WEAPONS]Weapons[\LINK], [LINK=YIELD_PHOTONICS]Photonics[\LINK], [NEWLINE][PARAGRAPH:1]The oppressive governments of Earth exerted tight control over offworld emigration, and saw it as a means to expel undesirables such as Convicts and Proletarians while retaining and exploiting the dwindling number of citizens with marketable technical and scientific skills. As economic and social conditions in the offworld colonies (and even some Alien civilizations) became more attractive than those on Earth, increasing numbers of remaining skilled and educated workers including Infamous Arms Dealers strove to circumvent these restrictions to seek their fortune among the stars.</French>
-	<German>An [BOLD]Infamous Arms Dealer[\BOLD] is significantly more efficient than other colonists in the production of [LINK=YIELD_WEAPONS]Weapons[\LINK], [LINK=YIELD_PHOTONICS]Photonics[\LINK], [NEWLINE][PARAGRAPH:1]The oppressive governments of Earth exerted tight control over offworld emigration, and saw it as a means to expel undesirables such as Convicts and Proletarians while retaining and exploiting the dwindling number of citizens with marketable technical and scientific skills. As economic and social conditions in the offworld colonies (and even some Alien civilizations) became more attractive than those on Earth, increasing numbers of remaining skilled and educated workers including Infamous Arms Dealers strove to circumvent these restrictions to seek their fortune among the stars.</German>
-	<Italian>An [BOLD]Infamous Arms Dealer[\BOLD] is significantly more efficient than other colonists in the production of [LINK=YIELD_WEAPONS]Weapons[\LINK], [LINK=YIELD_PHOTONICS]Photonics[\LINK], [NEWLINE][PARAGRAPH:1]The oppressive governments of Earth exerted tight control over offworld emigration, and saw it as a means to expel undesirables such as Convicts and Proletarians while retaining and exploiting the dwindling number of citizens with marketable technical and scientific skills. As economic and social conditions in the offworld colonies (and even some Alien civilizations) became more attractive than those on Earth, increasing numbers of remaining skilled and educated workers including Infamous Arms Dealers strove to circumvent these restrictions to seek their fortune among the stars.</Italian>
-	<Spanish>An [BOLD]Infamous Arms Dealer[\BOLD] is significantly more efficient than other colonists in the production of [LINK=YIELD_WEAPONS]Weapons[\LINK], [LINK=YIELD_PHOTONICS]Photonics[\LINK], [NEWLINE][PARAGRAPH:1]The oppressive governments of Earth exerted tight control over offworld emigration, and saw it as a means to expel undesirables such as Convicts and Proletarians while retaining and exploiting the dwindling number of citizens with marketable technical and scientific skills. As economic and social conditions in the offworld colonies (and even some Alien civilizations) became more attractive than those on Earth, increasing numbers of remaining skilled and educated workers including Infamous Arms Dealers strove to circumvent these restrictions to seek their fortune among the stars.</Spanish>
+	<English>An [BOLD]Infamous Arms Dealer[\BOLD] is significantly more efficient than other colonists in the production of [LINK=YIELD_MUNITIONS]Munitions[\LINK], [LINK=YIELD_PHOTONICS]Photonics[\LINK], [NEWLINE][PARAGRAPH:1]The oppressive governments of Earth exerted tight control over offworld emigration, and saw it as a means to expel undesirables such as Convicts and Proletarians while retaining and exploiting the dwindling number of citizens with marketable technical and scientific skills. As economic and social conditions in the offworld colonies (and even some Alien civilizations) became more attractive than those on Earth, increasing numbers of remaining skilled and educated workers including Infamous Arms Dealers strove to circumvent these restrictions to seek their fortune among the stars.</English>
+	<French>An [BOLD]Infamous Arms Dealer[\BOLD] is significantly more efficient than other colonists in the production of [LINK=YIELD_MUNITIONS]Munitions[\LINK], [LINK=YIELD_PHOTONICS]Photonics[\LINK], [NEWLINE][PARAGRAPH:1]The oppressive governments of Earth exerted tight control over offworld emigration, and saw it as a means to expel undesirables such as Convicts and Proletarians while retaining and exploiting the dwindling number of citizens with marketable technical and scientific skills. As economic and social conditions in the offworld colonies (and even some Alien civilizations) became more attractive than those on Earth, increasing numbers of remaining skilled and educated workers including Infamous Arms Dealers strove to circumvent these restrictions to seek their fortune among the stars.</French>
+	<German>An [BOLD]Infamous Arms Dealer[\BOLD] is significantly more efficient than other colonists in the production of [LINK=YIELD_MUNITIONS]Munitions[\LINK], [LINK=YIELD_PHOTONICS]Photonics[\LINK], [NEWLINE][PARAGRAPH:1]The oppressive governments of Earth exerted tight control over offworld emigration, and saw it as a means to expel undesirables such as Convicts and Proletarians while retaining and exploiting the dwindling number of citizens with marketable technical and scientific skills. As economic and social conditions in the offworld colonies (and even some Alien civilizations) became more attractive than those on Earth, increasing numbers of remaining skilled and educated workers including Infamous Arms Dealers strove to circumvent these restrictions to seek their fortune among the stars.</German>
+	<Italian>An [BOLD]Infamous Arms Dealer[\BOLD] is significantly more efficient than other colonists in the production of [LINK=YIELD_MUNITIONS]Munitions[\LINK], [LINK=YIELD_PHOTONICS]Photonics[\LINK], [NEWLINE][PARAGRAPH:1]The oppressive governments of Earth exerted tight control over offworld emigration, and saw it as a means to expel undesirables such as Convicts and Proletarians while retaining and exploiting the dwindling number of citizens with marketable technical and scientific skills. As economic and social conditions in the offworld colonies (and even some Alien civilizations) became more attractive than those on Earth, increasing numbers of remaining skilled and educated workers including Infamous Arms Dealers strove to circumvent these restrictions to seek their fortune among the stars.</Italian>
+	<Spanish>An [BOLD]Infamous Arms Dealer[\BOLD] is significantly more efficient than other colonists in the production of [LINK=YIELD_MUNITIONS]Munitions[\LINK], [LINK=YIELD_PHOTONICS]Photonics[\LINK], [NEWLINE][PARAGRAPH:1]The oppressive governments of Earth exerted tight control over offworld emigration, and saw it as a means to expel undesirables such as Convicts and Proletarians while retaining and exploiting the dwindling number of citizens with marketable technical and scientific skills. As economic and social conditions in the offworld colonies (and even some Alien civilizations) became more attractive than those on Earth, increasing numbers of remaining skilled and educated workers including Infamous Arms Dealers strove to circumvent these restrictions to seek their fortune among the stars.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_UNIT_INFAMOUS_ARMS_DEALER_STRATEGY</Tag>
@@ -4495,6 +5143,30 @@
 	<German>Build an Artful Politician to increase our industrial power.</German>
 	<Italian>Build an Artful Politician to increase our industrial power.</Italian>
 	<Spanish>Build an Artful Politician to increase our industrial power.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_UNIT_VISIONARY_RESEARCHER</Tag>
+	<English>Visionary Researcher:Visionary Researchers</English>
+	<French>Visionary Researcher:Visionary Researchers</French>
+	<German>Visionary Researcher:Visionary Researchers</German>
+	<Italian>Visionary Researcher:Visionary Researchers</Italian>
+	<Spanish>Visionary Researcher:Visionary Researchers</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_UNIT_VISIONARY_RESEARCHER_PEDIA</Tag>
+	<English>A [BOLD]Visionary Researcher[\BOLD] is significantly more efficient than other colonists in the production of [LINK=YIELD_RESEARCH]Research[\LINK], [NEWLINE][PARAGRAPH:1]The oppressive governments of Earth exerted tight control over offworld emigration, and saw it as a means to expel undesirables such as Convicts and Proletarians while retaining and exploiting the dwindling number of citizens with marketable technical and scientific skills. As economic and social conditions in the offworld colonies (and even some Alien civilizations) became more attractive than those on Earth, increasing numbers of remaining skilled and educated workers including Visionary Researchers strove to circumvent these restrictions to seek their fortune among the stars.</English>
+	<French>A [BOLD]Visionary Researcher[\BOLD] is significantly more efficient than other colonists in the production of [LINK=YIELD_RESEARCH]Research[\LINK], [NEWLINE][PARAGRAPH:1]The oppressive governments of Earth exerted tight control over offworld emigration, and saw it as a means to expel undesirables such as Convicts and Proletarians while retaining and exploiting the dwindling number of citizens with marketable technical and scientific skills. As economic and social conditions in the offworld colonies (and even some Alien civilizations) became more attractive than those on Earth, increasing numbers of remaining skilled and educated workers including Visionary Researchers strove to circumvent these restrictions to seek their fortune among the stars.</French>
+	<German>A [BOLD]Visionary Researcher[\BOLD] is significantly more efficient than other colonists in the production of [LINK=YIELD_RESEARCH]Research[\LINK], [NEWLINE][PARAGRAPH:1]The oppressive governments of Earth exerted tight control over offworld emigration, and saw it as a means to expel undesirables such as Convicts and Proletarians while retaining and exploiting the dwindling number of citizens with marketable technical and scientific skills. As economic and social conditions in the offworld colonies (and even some Alien civilizations) became more attractive than those on Earth, increasing numbers of remaining skilled and educated workers including Visionary Researchers strove to circumvent these restrictions to seek their fortune among the stars.</German>
+	<Italian>A [BOLD]Visionary Researcher[\BOLD] is significantly more efficient than other colonists in the production of [LINK=YIELD_RESEARCH]Research[\LINK], [NEWLINE][PARAGRAPH:1]The oppressive governments of Earth exerted tight control over offworld emigration, and saw it as a means to expel undesirables such as Convicts and Proletarians while retaining and exploiting the dwindling number of citizens with marketable technical and scientific skills. As economic and social conditions in the offworld colonies (and even some Alien civilizations) became more attractive than those on Earth, increasing numbers of remaining skilled and educated workers including Visionary Researchers strove to circumvent these restrictions to seek their fortune among the stars.</Italian>
+	<Spanish>A [BOLD]Visionary Researcher[\BOLD] is significantly more efficient than other colonists in the production of [LINK=YIELD_RESEARCH]Research[\LINK], [NEWLINE][PARAGRAPH:1]The oppressive governments of Earth exerted tight control over offworld emigration, and saw it as a means to expel undesirables such as Convicts and Proletarians while retaining and exploiting the dwindling number of citizens with marketable technical and scientific skills. As economic and social conditions in the offworld colonies (and even some Alien civilizations) became more attractive than those on Earth, increasing numbers of remaining skilled and educated workers including Visionary Researchers strove to circumvent these restrictions to seek their fortune among the stars.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_UNIT_VISIONARY_RESEARCHER_STRATEGY</Tag>
+	<English>Build a Visionary Researcher to increase our industrial power.</English>
+	<French>Build a Visionary Researcher to increase our industrial power.</French>
+	<German>Build a Visionary Researcher to increase our industrial power.</German>
+	<Italian>Build a Visionary Researcher to increase our industrial power.</Italian>
+	<Spanish>Build a Visionary Researcher to increase our industrial power.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_UNIT_CONVICT</Tag>

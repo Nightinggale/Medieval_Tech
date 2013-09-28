@@ -8,12 +8,12 @@
 <UnitArtInfos>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_EXPERT_AGRONOMIST</Type>
-	<Button>Art/Buttons/Units/EXPERT_AGRONOMIST.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/EXPERT_AGRONOMIST.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/EXPERT_AGRONOMIST/EXPERT_AGRONOMIST.nif</NIF>
-	<KFM>Art/Units/EXPERT_AGRONOMIST/EXPERT_AGRONOMIST.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -33,12 +33,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_EXPERT_FORESTER</Type>
-	<Button>Art/Buttons/Units/EXPERT_FORESTER.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/EXPERT_FORESTER.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/EXPERT_FORESTER/EXPERT_FORESTER.nif</NIF>
-	<KFM>Art/Units/EXPERT_FORESTER/EXPERT_FORESTER.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -58,12 +58,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_EXPERT_MINER</Type>
-	<Button>Art/Buttons/Units/EXPERT_MINER.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/EXPERT_MINER.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/EXPERT_MINER/EXPERT_MINER.nif</NIF>
-	<KFM>Art/Units/EXPERT_MINER/EXPERT_MINER.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -83,12 +83,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_EXPERT_GEOLOGIST</Type>
-	<Button>Art/Buttons/Units/EXPERT_GEOLOGIST.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/EXPERT_GEOLOGIST.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/EXPERT_GEOLOGIST/EXPERT_GEOLOGIST.nif</NIF>
-	<KFM>Art/Units/EXPERT_GEOLOGIST/EXPERT_GEOLOGIST.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -108,12 +108,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_EXPERT_LAB_TECHNICIAN</Type>
-	<Button>Art/Buttons/Units/EXPERT_LAB_TECHNICIAN.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/EXPERT_LAB_TECHNICIAN.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/EXPERT_LAB_TECHNICIAN/EXPERT_LAB_TECHNICIAN.nif</NIF>
-	<KFM>Art/Units/EXPERT_LAB_TECHNICIAN/EXPERT_LAB_TECHNICIAN.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -133,12 +133,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_INTREPID_ARCHAEOLOGIST</Type>
-	<Button>Art/Buttons/Units/INTREPID_ARCHAEOLOGIST.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/INTREPID_ARCHAEOLOGIST.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/INTREPID_ARCHAEOLOGIST/INTREPID_ARCHAEOLOGIST.nif</NIF>
-	<KFM>Art/Units/INTREPID_ARCHAEOLOGIST/INTREPID_ARCHAEOLOGIST.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -158,12 +158,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_EXPERT_XENOBOTANIST</Type>
-	<Button>Art/Buttons/Units/EXPERT_XENOBOTANIST.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/EXPERT_XENOBOTANIST.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/EXPERT_XENOBOTANIST/EXPERT_XENOBOTANIST.nif</NIF>
-	<KFM>Art/Units/EXPERT_XENOBOTANIST/EXPERT_XENOBOTANIST.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -183,12 +183,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_EXPERT_DRILLER</Type>
-	<Button>Art/Buttons/Units/EXPERT_DRILLER.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/EXPERT_DRILLER.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/EXPERT_DRILLER/EXPERT_DRILLER.nif</NIF>
-	<KFM>Art/Units/EXPERT_DRILLER/EXPERT_DRILLER.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -208,12 +208,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_MASTER_MACHINIST</Type>
-	<Button>Art/Buttons/Units/MASTER_MACHINIST.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/MASTER_MACHINIST.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/MASTER_MACHINIST/MASTER_MACHINIST.nif</NIF>
-	<KFM>Art/Units/MASTER_MACHINIST/MASTER_MACHINIST.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -233,12 +233,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_MECHANICAL_ENGINEER</Type>
-	<Button>Art/Buttons/Units/MECHANICAL_ENGINEER.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/MECHANICAL_ENGINEER.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/MECHANICAL_ENGINEER/MECHANICAL_ENGINEER.nif</NIF>
-	<KFM>Art/Units/MECHANICAL_ENGINEER/MECHANICAL_ENGINEER.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -258,12 +258,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_INFAMOUS_ARMS_DEALER</Type>
-	<Button>Art/Buttons/Units/INFAMOUS_ARMS_DEALER.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/INFAMOUS_ARMS_DEALER.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/INFAMOUS_ARMS_DEALER/INFAMOUS_ARMS_DEALER.nif</NIF>
-	<KFM>Art/Units/INFAMOUS_ARMS_DEALER/INFAMOUS_ARMS_DEALER.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -283,12 +283,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_MASTER_METALLURGIST</Type>
-	<Button>Art/Buttons/Units/MASTER_METALLURGIST.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/MASTER_METALLURGIST.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/MASTER_METALLURGIST/MASTER_METALLURGIST.nif</NIF>
-	<KFM>Art/Units/MASTER_METALLURGIST/MASTER_METALLURGIST.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -308,12 +308,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_BRILLIANT_PHYSICIST</Type>
-	<Button>Art/Buttons/Units/BRILLIANT_PHYSICIST.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/BRILLIANT_PHYSICIST.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/BRILLIANT_PHYSICIST/BRILLIANT_PHYSICIST.nif</NIF>
-	<KFM>Art/Units/BRILLIANT_PHYSICIST/BRILLIANT_PHYSICIST.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -333,12 +333,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_BRILLIANT_GENETICIST</Type>
-	<Button>Art/Buttons/Units/BRILLIANT_GENETICIST.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/BRILLIANT_GENETICIST.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/BRILLIANT_GENETICIST/BRILLIANT_GENETICIST.nif</NIF>
-	<KFM>Art/Units/BRILLIANT_GENETICIST/BRILLIANT_GENETICIST.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -358,12 +358,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_BRILLIANT_THEORIST</Type>
-	<Button>Art/Buttons/Units/BRILLIANT_THEORIST.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/BRILLIANT_THEORIST.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/BRILLIANT_THEORIST/BRILLIANT_THEORIST.nif</NIF>
-	<KFM>Art/Units/BRILLIANT_THEORIST/BRILLIANT_THEORIST.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -383,12 +383,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_INFAMOUS_DRUGLORD</Type>
-	<Button>Art/Buttons/Units/INFAMOUS_DRUGLORD.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/INFAMOUS_DRUGLORD.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/INFAMOUS_DRUGLORD/INFAMOUS_DRUGLORD.nif</NIF>
-	<KFM>Art/Units/INFAMOUS_DRUGLORD/INFAMOUS_DRUGLORD.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -408,12 +408,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_CHEMICAL_ENGINEER</Type>
-	<Button>Art/Buttons/Units/CHEMICAL_ENGINEER.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/CHEMICAL_ENGINEER.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/CHEMICAL_ENGINEER/CHEMICAL_ENGINEER.nif</NIF>
-	<KFM>Art/Units/CHEMICAL_ENGINEER/CHEMICAL_ENGINEER.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -433,12 +433,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_ELECTRICAL_ENGINEER</Type>
-	<Button>Art/Buttons/Units/ELECTRICAL_ENGINEER.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/ELECTRICAL_ENGINEER.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/ELECTRICAL_ENGINEER/ELECTRICAL_ENGINEER.nif</NIF>
-	<KFM>Art/Units/ELECTRICAL_ENGINEER/ELECTRICAL_ENGINEER.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -458,12 +458,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_BRILLIANT_PHYSICIAN</Type>
-	<Button>Art/Buttons/Units/BRILLIANT_PHYSICIAN.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/BRILLIANT_PHYSICIAN.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/BRILLIANT_PHYSICIAN/BRILLIANT_PHYSICIAN.nif</NIF>
-	<KFM>Art/Units/BRILLIANT_PHYSICIAN/BRILLIANT_PHYSICIAN.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -483,12 +483,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_INFAMOUS_SMUGGLER</Type>
-	<Button>Art/Buttons/Units/INFAMOUS_SMUGGLER.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/INFAMOUS_SMUGGLER.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/INFAMOUS_SMUGGLER/INFAMOUS_SMUGGLER.nif</NIF>
-	<KFM>Art/Units/INFAMOUS_SMUGGLER/INFAMOUS_SMUGGLER.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -508,12 +508,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_CIVIL_ENGINEER</Type>
-	<Button>Art/Buttons/Units/CIVIL_ENGINEER.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/CIVIL_ENGINEER.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/CIVIL_ENGINEER/CIVIL_ENGINEER.nif</NIF>
-	<KFM>Art/Units/CIVIL_ENGINEER/CIVIL_ENGINEER.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -533,12 +533,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_FASCINATING_CELEBRITY</Type>
-	<Button>Art/Buttons/Units/FASCINATING_CELEBRITY.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/FASCINATING_CELEBRITY.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/FASCINATING_CELEBRITY/FASCINATING_CELEBRITY.nif</NIF>
-	<KFM>Art/Units/FASCINATING_CELEBRITY/FASCINATING_CELEBRITY.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -558,12 +558,37 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_ARTFUL_POLITICIAN</Type>
-	<Button>Art/Buttons/Units/ARTFUL_POLITICIAN.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/ARTFUL_POLITICIAN.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/ARTFUL_POLITICIAN/ARTFUL_POLITICIAN.nif</NIF>
-	<KFM>Art/Units/ARTFUL_POLITICIAN/ARTFUL_POLITICIAN.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
+	<TrailDefinition>
+		<Texture>Art/Shared/wheeltread.dds</Texture>
+		<fWidth>1.2</fWidth>
+		<fLength>180.0</fLength>
+		<fTaper>0.0</fTaper>
+		<fFadeStartTime>0.2</fFadeStartTime>
+		<fFadeFalloff>0.35</fFadeFalloff>
+	</TrailDefinition>
+	<fBattleDistance>0</fBattleDistance>
+	<fRangedDeathTime>0</fRangedDeathTime>
+	<bActAsRanged>0</bActAsRanged>
+	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+	<AudioRunSounds>
+		<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+		<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+	</AudioRunSounds>
+</UnitArtInfo>
+<UnitArtInfo>
+	<Type>ART_DEF_UNIT_VISIONARY_RESEARCHER</Type>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
+	<fScale>1.0</fScale>
+	<fInterfaceScale>0.5</fInterfaceScale>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -583,12 +608,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_CONVICT</Type>
-	<Button>Art/Buttons/Units/CONVICT.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/CONVICT.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/CONVICT/CONVICT.nif</NIF>
-	<KFM>Art/Units/CONVICT/CONVICT.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -608,12 +633,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_PROLETARIAN</Type>
-	<Button>Art/Buttons/Units/PROLETARIAN.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/PROLETARIAN.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/PROLETARIAN/PROLETARIAN.nif</NIF>
-	<KFM>Art/Units/PROLETARIAN/PROLETARIAN.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -633,12 +658,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_UFO_CULTIST</Type>
-	<Button>Art/Buttons/Units/UFO_CULTIST.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/UFO_CULTIST.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/UFO_CULTIST/UFO_CULTIST.nif</NIF>
-	<KFM>Art/Units/UFO_CULTIST/UFO_CULTIST.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -658,12 +683,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_ADDICT</Type>
-	<Button>Art/Buttons/Units/ADDICT.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/ADDICT.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/ADDICT/ADDICT.nif</NIF>
-	<KFM>Art/Units/ADDICT/ADDICT.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -683,12 +708,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_ANDROID</Type>
-	<Button>Art/Buttons/Units/ANDROID.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/ANDROID.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/ANDROID/ANDROID.nif</NIF>
-	<KFM>Art/Units/ANDROID/ANDROID.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -708,12 +733,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_COLONIST</Type>
-	<Button>Art/Buttons/Units/COLONIST.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/COLONIST.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/COLONIST/COLONIST.nif</NIF>
-	<KFM>Art/Units/COLONIST/COLONIST.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -733,12 +758,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_EMINENT_ANTHROPOLOGIST</Type>
-	<Button>Art/Buttons/Units/EMINENT_ANTHROPOLOGIST.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/EMINENT_ANTHROPOLOGIST.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/EMINENT_ANTHROPOLOGIST/EMINENT_ANTHROPOLOGIST.nif</NIF>
-	<KFM>Art/Units/EMINENT_ANTHROPOLOGIST/EMINENT_ANTHROPOLOGIST.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -758,12 +783,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_HARDY_LABORER</Type>
-	<Button>Art/Buttons/Units/HARDY_LABORER.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/HARDY_LABORER.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/HARDY_LABORER/HARDY_LABORER.nif</NIF>
-	<KFM>Art/Units/HARDY_LABORER/HARDY_LABORER.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -783,12 +808,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_INTREPID_EXPLORER</Type>
-	<Button>Art/Buttons/Units/INTREPID_EXPLORER.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/INTREPID_EXPLORER.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/INTREPID_EXPLORER/INTREPID_EXPLORER.nif</NIF>
-	<KFM>Art/Units/INTREPID_EXPLORER/INTREPID_EXPLORER.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -808,12 +833,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_VETERAN_SOLDIER</Type>
-	<Button>Art/Buttons/Units/VETERAN_SOLDIER.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/VETERAN_SOLDIER.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/VETERAN_SOLDIER/VETERAN_SOLDIER.nif</NIF>
-	<KFM>Art/Units/VETERAN_SOLDIER/VETERAN_SOLDIER.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -833,12 +858,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_NUTRIENTS</Type>
-	<Button>Art/Buttons/Units/NUTRIENTS.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/NUTRIENTS.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/NUTRIENTS/NUTRIENTS.nif</NIF>
-	<KFM>Art/Units/NUTRIENTS/NUTRIENTS.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -858,12 +883,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_BIOPOLYMERS</Type>
-	<Button>Art/Buttons/Units/BIOPOLYMERS.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/BIOPOLYMERS.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/BIOPOLYMERS/BIOPOLYMERS.nif</NIF>
-	<KFM>Art/Units/BIOPOLYMERS/BIOPOLYMERS.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -883,12 +908,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_SILICATES</Type>
-	<Button>Art/Buttons/Units/SILICATES.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/SILICATES.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/SILICATES/SILICATES.nif</NIF>
-	<KFM>Art/Units/SILICATES/SILICATES.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -908,12 +933,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_BASE_METALS</Type>
-	<Button>Art/Buttons/Units/BASE_METALS.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/BASE_METALS.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/BASE_METALS/BASE_METALS.nif</NIF>
-	<KFM>Art/Units/BASE_METALS/BASE_METALS.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -933,12 +958,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_ACTINIDES</Type>
-	<Button>Art/Buttons/Units/ACTINIDES.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/ACTINIDES.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/ACTINIDES/ACTINIDES.nif</NIF>
-	<KFM>Art/Units/ACTINIDES/ACTINIDES.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -958,12 +983,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_ISOTOPES</Type>
-	<Button>Art/Buttons/Units/ISOTOPES.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/ISOTOPES.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/ISOTOPES/ISOTOPES.nif</NIF>
-	<KFM>Art/Units/ISOTOPES/ISOTOPES.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -983,12 +1008,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_RARE_EARTHS</Type>
-	<Button>Art/Buttons/Units/RARE_EARTHS.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/RARE_EARTHS.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/RARE_EARTHS/RARE_EARTHS.nif</NIF>
-	<KFM>Art/Units/RARE_EARTHS/RARE_EARTHS.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1008,12 +1033,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_CRYSTALLOIDS</Type>
-	<Button>Art/Buttons/Units/CRYSTALLOIDS.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/CRYSTALLOIDS.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/CRYSTALLOIDS/CRYSTALLOIDS.nif</NIF>
-	<KFM>Art/Units/CRYSTALLOIDS/CRYSTALLOIDS.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1033,12 +1058,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_NUCLEIC_ACIDS</Type>
-	<Button>Art/Buttons/Units/NUCLEIC_ACIDS.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/NUCLEIC_ACIDS.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/NUCLEIC_ACIDS/NUCLEIC_ACIDS.nif</NIF>
-	<KFM>Art/Units/NUCLEIC_ACIDS/NUCLEIC_ACIDS.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1058,12 +1083,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_AMINO_ACIDS</Type>
-	<Button>Art/Buttons/Units/AMINO_ACIDS.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/AMINO_ACIDS.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/AMINO_ACIDS/AMINO_ACIDS.nif</NIF>
-	<KFM>Art/Units/AMINO_ACIDS/AMINO_ACIDS.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1083,12 +1108,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_TISSUE_SAMPLES</Type>
-	<Button>Art/Buttons/Units/TISSUE_SAMPLES.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/TISSUE_SAMPLES.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/TISSUE_SAMPLES/TISSUE_SAMPLES.nif</NIF>
-	<KFM>Art/Units/TISSUE_SAMPLES/TISSUE_SAMPLES.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1108,12 +1133,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_MICROBES</Type>
-	<Button>Art/Buttons/Units/MICROBES.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/MICROBES.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/MICROBES/MICROBES.nif</NIF>
-	<KFM>Art/Units/MICROBES/MICROBES.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1133,12 +1158,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_DATACORES</Type>
-	<Button>Art/Buttons/Units/DATACORES.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/DATACORES.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/DATACORES/DATACORES.nif</NIF>
-	<KFM>Art/Units/DATACORES/DATACORES.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1158,12 +1183,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_PROGENITOR_ARTIFACTS</Type>
-	<Button>Art/Buttons/Units/PROGENITOR_ARTIFACTS.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/PROGENITOR_ARTIFACTS.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/PROGENITOR_ARTIFACTS/PROGENITOR_ARTIFACTS.nif</NIF>
-	<KFM>Art/Units/PROGENITOR_ARTIFACTS/PROGENITOR_ARTIFACTS.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1183,12 +1208,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_ALIEN_SPECIMENS</Type>
-	<Button>Art/Buttons/Units/ALIEN_SPECIMENS.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/ALIEN_SPECIMENS.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/ALIEN_SPECIMENS/ALIEN_SPECIMENS.nif</NIF>
-	<KFM>Art/Units/ALIEN_SPECIMENS/ALIEN_SPECIMENS.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1208,12 +1233,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_PRECIOUS_METALS</Type>
-	<Button>Art/Buttons/Units/PRECIOUS_METALS.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/PRECIOUS_METALS.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/PRECIOUS_METALS/PRECIOUS_METALS.nif</NIF>
-	<KFM>Art/Units/PRECIOUS_METALS/PRECIOUS_METALS.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1233,12 +1258,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_OPIATES</Type>
-	<Button>Art/Buttons/Units/OPIATES.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/OPIATES.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/OPIATES/OPIATES.nif</NIF>
-	<KFM>Art/Units/OPIATES/OPIATES.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1258,12 +1283,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_XENOTOXINS</Type>
-	<Button>Art/Buttons/Units/XENOTOXINS.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/XENOTOXINS.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/XENOTOXINS/XENOTOXINS.nif</NIF>
-	<KFM>Art/Units/XENOTOXINS/XENOTOXINS.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1283,12 +1308,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_BOTANICALS</Type>
-	<Button>Art/Buttons/Units/BOTANICALS.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/BOTANICALS.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/BOTANICALS/BOTANICALS.nif</NIF>
-	<KFM>Art/Units/BOTANICALS/BOTANICALS.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1308,12 +1333,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_HYDROCARBONS</Type>
-	<Button>Art/Buttons/Units/HYDROCARBONS.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/HYDROCARBONS.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/HYDROCARBONS/HYDROCARBONS.nif</NIF>
-	<KFM>Art/Units/HYDROCARBONS/HYDROCARBONS.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1333,12 +1358,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_CLATHRATES</Type>
-	<Button>Art/Buttons/Units/CLATHRATES.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/CLATHRATES.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/CLATHRATES/CLATHRATES.nif</NIF>
-	<KFM>Art/Units/CLATHRATES/CLATHRATES.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1358,12 +1383,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_CORE_SAMPLES</Type>
-	<Button>Art/Buttons/Units/CORE_SAMPLES.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/CORE_SAMPLES.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/CORE_SAMPLES/CORE_SAMPLES.nif</NIF>
-	<KFM>Art/Units/CORE_SAMPLES/CORE_SAMPLES.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1383,12 +1408,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_MACHINE_TOOLS</Type>
-	<Button>Art/Buttons/Units/MACHINE_TOOLS.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/MACHINE_TOOLS.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/MACHINE_TOOLS/MACHINE_TOOLS.nif</NIF>
-	<KFM>Art/Units/MACHINE_TOOLS/MACHINE_TOOLS.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1408,12 +1433,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_ROBOTICS</Type>
-	<Button>Art/Buttons/Units/ROBOTICS.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/ROBOTICS.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/ROBOTICS/ROBOTICS.nif</NIF>
-	<KFM>Art/Units/ROBOTICS/ROBOTICS.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1433,12 +1458,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_MUNITIONS</Type>
-	<Button>Art/Buttons/Units/MUNITIONS.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/MUNITIONS.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/MUNITIONS/MUNITIONS.nif</NIF>
-	<KFM>Art/Units/MUNITIONS/MUNITIONS.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1458,12 +1483,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_PHOTONICS</Type>
-	<Button>Art/Buttons/Units/PHOTONICS.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/PHOTONICS.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/PHOTONICS/PHOTONICS.nif</NIF>
-	<KFM>Art/Units/PHOTONICS/PHOTONICS.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1483,12 +1508,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_PLASTEEL</Type>
-	<Button>Art/Buttons/Units/PLASTEEL.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/PLASTEEL.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/PLASTEEL/PLASTEEL.nif</NIF>
-	<KFM>Art/Units/PLASTEEL/PLASTEEL.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1508,12 +1533,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_DURALLOY</Type>
-	<Button>Art/Buttons/Units/DURALLOY.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/DURALLOY.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/DURALLOY/DURALLOY.nif</NIF>
-	<KFM>Art/Units/DURALLOY/DURALLOY.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1533,12 +1558,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_CRYSTALLOY</Type>
-	<Button>Art/Buttons/Units/CRYSTALLOY.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/CRYSTALLOY.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/CRYSTALLOY/CRYSTALLOY.nif</NIF>
-	<KFM>Art/Units/CRYSTALLOY/CRYSTALLOY.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1558,12 +1583,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_NUCLEONICS</Type>
-	<Button>Art/Buttons/Units/NUCLEONICS.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/NUCLEONICS.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/NUCLEONICS/NUCLEONICS.nif</NIF>
-	<KFM>Art/Units/NUCLEONICS/NUCLEONICS.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1583,12 +1608,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_FUSION_CORES</Type>
-	<Button>Art/Buttons/Units/FUSION_CORES.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/FUSION_CORES.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/FUSION_CORES/FUSION_CORES.nif</NIF>
-	<KFM>Art/Units/FUSION_CORES/FUSION_CORES.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1608,12 +1633,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_SEMICONDUCTORS</Type>
-	<Button>Art/Buttons/Units/SEMICONDUCTORS.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/SEMICONDUCTORS.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/SEMICONDUCTORS/SEMICONDUCTORS.nif</NIF>
-	<KFM>Art/Units/SEMICONDUCTORS/SEMICONDUCTORS.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1633,12 +1658,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_PLASMIDS</Type>
-	<Button>Art/Buttons/Units/PLASMIDS.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/PLASMIDS.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/PLASMIDS/PLASMIDS.nif</NIF>
-	<KFM>Art/Units/PLASMIDS/PLASMIDS.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1658,12 +1683,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_ENZYMES</Type>
-	<Button>Art/Buttons/Units/ENZYMES.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/ENZYMES.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/ENZYMES/ENZYMES.nif</NIF>
-	<KFM>Art/Units/ENZYMES/ENZYMES.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1683,12 +1708,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_STEM_CELLS</Type>
-	<Button>Art/Buttons/Units/STEM_CELLS.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/STEM_CELLS.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/STEM_CELLS/STEM_CELLS.nif</NIF>
-	<KFM>Art/Units/STEM_CELLS/STEM_CELLS.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1708,12 +1733,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_STATE_SECRETS</Type>
-	<Button>Art/Buttons/Units/STATE_SECRETS.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/STATE_SECRETS.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/STATE_SECRETS/STATE_SECRETS.nif</NIF>
-	<KFM>Art/Units/STATE_SECRETS/STATE_SECRETS.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1733,12 +1758,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_PROGENITOR_TECH</Type>
-	<Button>Art/Buttons/Units/PROGENITOR_TECH.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/PROGENITOR_TECH.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/PROGENITOR_TECH/PROGENITOR_TECH.nif</NIF>
-	<KFM>Art/Units/PROGENITOR_TECH/PROGENITOR_TECH.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1758,12 +1783,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_ALIEN_RELICS</Type>
-	<Button>Art/Buttons/Units/ALIEN_RELICS.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/ALIEN_RELICS.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/ALIEN_RELICS/ALIEN_RELICS.nif</NIF>
-	<KFM>Art/Units/ALIEN_RELICS/ALIEN_RELICS.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1783,12 +1808,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_NARCOTICS</Type>
-	<Button>Art/Buttons/Units/NARCOTICS.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/NARCOTICS.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/NARCOTICS/NARCOTICS.nif</NIF>
-	<KFM>Art/Units/NARCOTICS/NARCOTICS.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1808,12 +1833,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_BIOWEAPONS</Type>
-	<Button>Art/Buttons/Units/BIOWEAPONS.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/BIOWEAPONS.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/BIOWEAPONS/BIOWEAPONS.nif</NIF>
-	<KFM>Art/Units/BIOWEAPONS/BIOWEAPONS.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1833,12 +1858,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_PHARMACEUTICALS</Type>
-	<Button>Art/Buttons/Units/PHARMACEUTICALS.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/PHARMACEUTICALS.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/PHARMACEUTICALS/PHARMACEUTICALS.nif</NIF>
-	<KFM>Art/Units/PHARMACEUTICALS/PHARMACEUTICALS.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1858,12 +1883,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_PETROCHEMICALS</Type>
-	<Button>Art/Buttons/Units/PETROCHEMICALS.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/PETROCHEMICALS.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/PETROCHEMICALS/PETROCHEMICALS.nif</NIF>
-	<KFM>Art/Units/PETROCHEMICALS/PETROCHEMICALS.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1883,12 +1908,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_COLLOIDS</Type>
-	<Button>Art/Buttons/Units/COLLOIDS.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/COLLOIDS.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/COLLOIDS/COLLOIDS.nif</NIF>
-	<KFM>Art/Units/COLLOIDS/COLLOIDS.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1908,12 +1933,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_CATALYSTS</Type>
-	<Button>Art/Buttons/Units/CATALYSTS.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/CATALYSTS.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/CATALYSTS/CATALYSTS.nif</NIF>
-	<KFM>Art/Units/CATALYSTS/CATALYSTS.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1933,12 +1958,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_HARD_CURRENCY</Type>
-	<Button>Art/Buttons/Units/HARD_CURRENCY.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/HARD_CURRENCY.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/HARD_CURRENCY/HARD_CURRENCY.nif</NIF>
-	<KFM>Art/Units/HARD_CURRENCY/HARD_CURRENCY.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1958,12 +1983,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_EARTH_GOODS</Type>
-	<Button>Art/Buttons/Units/EARTH_GOODS.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/EARTH_GOODS.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/EARTH_GOODS/EARTH_GOODS.nif</NIF>
-	<KFM>Art/Units/EARTH_GOODS/EARTH_GOODS.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -1983,12 +2008,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_CONTRABAND</Type>
-	<Button>Art/Buttons/Units/CONTRABAND.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/CONTRABAND.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/CONTRABAND/CONTRABAND.nif</NIF>
-	<KFM>Art/Units/CONTRABAND/CONTRABAND.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -2008,12 +2033,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_EARTHLING_SPECIMENS</Type>
-	<Button>Art/Buttons/Units/EARTHLING_SPECIMENS.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/EARTHLING_SPECIMENS.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/EARTHLING_SPECIMENS/EARTHLING_SPECIMENS.nif</NIF>
-	<KFM>Art/Units/EARTHLING_SPECIMENS/EARTHLING_SPECIMENS.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -2033,12 +2058,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_CONVOY</Type>
-	<Button>Art/Buttons/Units/CONVOY.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/CONVOY.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/CONVOY/CONVOY.nif</NIF>
-	<KFM>Art/Units/CONVOY/CONVOY.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -2058,12 +2083,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_CORVETTE</Type>
-	<Button>Art/Buttons/Units/CORVETTE.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/CORVETTE.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/CORVETTE/CORVETTE.nif</NIF>
-	<KFM>Art/Units/CORVETTE/CORVETTE.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -2083,12 +2108,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_FRIGATE</Type>
-	<Button>Art/Buttons/Units/FRIGATE.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/FRIGATE.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/FRIGATE/FRIGATE.nif</NIF>
-	<KFM>Art/Units/FRIGATE/FRIGATE.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -2108,12 +2133,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_GUNBOAT</Type>
-	<Button>Art/Buttons/Units/GUNBOAT.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/GUNBOAT.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/GUNBOAT/GUNBOAT.nif</NIF>
-	<KFM>Art/Units/GUNBOAT/GUNBOAT.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -2133,12 +2158,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_DESTROYER</Type>
-	<Button>Art/Buttons/Units/DESTROYER.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/DESTROYER.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/DESTROYER/DESTROYER.nif</NIF>
-	<KFM>Art/Units/DESTROYER/DESTROYER.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -2158,12 +2183,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_CRUISER</Type>
-	<Button>Art/Buttons/Units/CRUISER.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/CRUISER.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/CRUISER/CRUISER.nif</NIF>
-	<KFM>Art/Units/CRUISER/CRUISER.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -2183,12 +2208,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_BATTLESHIP</Type>
-	<Button>Art/Buttons/Units/BATTLESHIP.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/BATTLESHIP.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/BATTLESHIP/BATTLESHIP.nif</NIF>
-	<KFM>Art/Units/BATTLESHIP/BATTLESHIP.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -2208,12 +2233,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_DREADNOUGHT</Type>
-	<Button>Art/Buttons/Units/DREADNOUGHT.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/DREADNOUGHT.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/DREADNOUGHT/DREADNOUGHT.nif</NIF>
-	<KFM>Art/Units/DREADNOUGHT/DREADNOUGHT.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -2233,12 +2258,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_PROBE</Type>
-	<Button>Art/Buttons/Units/PROBE.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/PROBE.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/PROBE/PROBE.nif</NIF>
-	<KFM>Art/Units/PROBE/PROBE.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -2258,12 +2283,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_DROPSHIP</Type>
-	<Button>Art/Buttons/Units/DROPSHIP.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/DROPSHIP.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/DROPSHIP/DROPSHIP.nif</NIF>
-	<KFM>Art/Units/DROPSHIP/DROPSHIP.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -2283,12 +2308,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_FREIGHTER</Type>
-	<Button>Art/Buttons/Units/FREIGHTER.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/FREIGHTER.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/FREIGHTER/FREIGHTER.nif</NIF>
-	<KFM>Art/Units/FREIGHTER/FREIGHTER.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -2308,12 +2333,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_HEAVY_FREIGHTER</Type>
-	<Button>Art/Buttons/Units/HEAVY_FREIGHTER.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/HEAVY_FREIGHTER.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/HEAVY_FREIGHTER/HEAVY_FREIGHTER.nif</NIF>
-	<KFM>Art/Units/HEAVY_FREIGHTER/HEAVY_FREIGHTER.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -2333,12 +2358,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_MINING_VESSEL</Type>
-	<Button>Art/Buttons/Units/MINING_VESSEL.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/MINING_VESSEL.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/MINING_VESSEL/MINING_VESSEL.nif</NIF>
-	<KFM>Art/Units/MINING_VESSEL/MINING_VESSEL.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -2358,12 +2383,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_SCIENCE_VESSEL</Type>
-	<Button>Art/Buttons/Units/SCIENCE_VESSEL.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/SCIENCE_VESSEL.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/SCIENCE_VESSEL/SCIENCE_VESSEL.nif</NIF>
-	<KFM>Art/Units/SCIENCE_VESSEL/SCIENCE_VESSEL.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -2383,12 +2408,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_COLONY_SHIP</Type>
-	<Button>Art/Buttons/Units/COLONY_SHIP.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/COLONY_SHIP.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/COLONY_SHIP/COLONY_SHIP.nif</NIF>
-	<KFM>Art/Units/COLONY_SHIP/COLONY_SHIP.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -2408,12 +2433,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_TREASURE</Type>
-	<Button>Art/Buttons/Units/TREASURE.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/TREASURE.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/TREASURE/TREASURE.nif</NIF>
-	<KFM>Art/Units/TREASURE/TREASURE.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -2433,12 +2458,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_RELIC</Type>
-	<Button>Art/Buttons/Units/RELIC.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/RELIC.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/RELIC/RELIC.nif</NIF>
-	<KFM>Art/Units/RELIC/RELIC.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -2458,12 +2483,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_COLONIAL_GARRISON</Type>
-	<Button>Art/Buttons/Units/COLONIAL_GARRISON.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/COLONIAL_GARRISON.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/COLONIAL_GARRISON/COLONIAL_GARRISON.nif</NIF>
-	<KFM>Art/Units/COLONIAL_GARRISON/COLONIAL_GARRISON.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -2483,12 +2508,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_KILLBOTS</Type>
-	<Button>Art/Buttons/Units/KILLBOTS.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/KILLBOTS.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/KILLBOTS/KILLBOTS.nif</NIF>
-	<KFM>Art/Units/KILLBOTS/KILLBOTS.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -2508,12 +2533,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_PROGENITOR_AI</Type>
-	<Button>Art/Buttons/Units/PROGENITOR_AI.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/PROGENITOR_AI.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/PROGENITOR_AI/PROGENITOR_AI.nif</NIF>
-	<KFM>Art/Units/PROGENITOR_AI/PROGENITOR_AI.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -2533,12 +2558,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_ARACHNID</Type>
-	<Button>Art/Buttons/Units/ARACHNID.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/ARACHNID.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/ARACHNID/ARACHNID.nif</NIF>
-	<KFM>Art/Units/ARACHNID/ARACHNID.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -2558,12 +2583,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_SCORPION</Type>
-	<Button>Art/Buttons/Units/SCORPION.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/SCORPION.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/SCORPION/SCORPION.nif</NIF>
-	<KFM>Art/Units/SCORPION/SCORPION.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -2583,12 +2608,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_AMOEBA</Type>
-	<Button>Art/Buttons/Units/AMOEBA.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/AMOEBA.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/AMOEBA/AMOEBA.nif</NIF>
-	<KFM>Art/Units/AMOEBA/AMOEBA.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>
@@ -2608,12 +2633,12 @@
 </UnitArtInfo>
 <UnitArtInfo>
 	<Type>ART_DEF_UNIT_ENIGMA_VIRION</Type>
-	<Button>Art/Buttons/Units/ENIGMA_VIRION.dds</Button>
-	<FullLengthIcon>Art/Buttons/Units/Full/ENIGMA_VIRION.dds</FullLengthIcon>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>0.5</fInterfaceScale>
-	<NIF>Art/Units/ENIGMA_VIRION/ENIGMA_VIRION.nif</NIF>
-	<KFM>Art/Units/ENIGMA_VIRION/ENIGMA_VIRION.kfm</KFM>
+	<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
+	<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
 	<TrailDefinition>
 		<Texture>Art/Shared/wheeltread.dds</Texture>
 		<fWidth>1.2</fWidth>

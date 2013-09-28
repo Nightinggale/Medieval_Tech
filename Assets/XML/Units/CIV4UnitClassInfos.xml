@@ -122,6 +122,11 @@
 	<DefaultUnit>UNIT_ARTFUL_POLITICIAN</DefaultUnit>
 </UnitClassInfo>
 <UnitClassInfo>
+	<Type>UNITCLASS_VISIONARY_RESEARCHER</Type>
+	<Description>Visionary Researcher:Visionary Researchers</Description>
+	<DefaultUnit>UNIT_VISIONARY_RESEARCHER</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
 	<Type>UNITCLASS_CONVICT</Type>
 	<Description>Convict:Convicts</Description>
 	<DefaultUnit>UNIT_CONVICT</DefaultUnit>

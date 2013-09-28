@@ -42,27 +42,9 @@
           <FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
         </FreeUnitClass>
       </FreeUnitClasses>
-      <FreeBuildingClasses>
-        <FreeBuildingClass>
-          <BuildingClassType>BUILDINGCLASS_TOWNHALL</BuildingClassType>
-          <bFreeBuildingClass>1</bFreeBuildingClass>
-        </FreeBuildingClass>
-      </FreeBuildingClasses>
+      <FreeBuildingClasses/>
       <TeachUnitClasses/>
-      <FreeYields>
-        <FreeYield>
-          <YieldType>YIELD_BELLS</YieldType>
-          <iYield>1</iYield>
-        </FreeYield>
-        <FreeYield>
-          <YieldType>YIELD_CROSSES</YieldType>
-          <iYield>1</iYield>
-        </FreeYield>
-        <FreeYield>
-          <YieldType>YIELD_IDEAS</YieldType>
-          <iYield>1</iYield>
-        </FreeYield>
-      </FreeYields>
+      <FreeYields/>
       <CapturedCityUnitClass>NONE</CapturedCityUnitClass>
       <InitialCivics/>
       <Leaders>
@@ -112,27 +94,9 @@
           <FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
         </FreeUnitClass>
       </FreeUnitClasses>
-      <FreeBuildingClasses>
-        <FreeBuildingClass>
-          <BuildingClassType>BUILDINGCLASS_TOWNHALL</BuildingClassType>
-          <bFreeBuildingClass>1</bFreeBuildingClass>
-        </FreeBuildingClass>
-      </FreeBuildingClasses>
+      <FreeBuildingClasses/>
       <TeachUnitClasses/>
-      <FreeYields>
-        <FreeYield>
-          <YieldType>YIELD_BELLS</YieldType>
-          <iYield>1</iYield>
-        </FreeYield>
-        <FreeYield>
-          <YieldType>YIELD_CROSSES</YieldType>
-          <iYield>1</iYield>
-        </FreeYield>
-        <FreeYield>
-          <YieldType>YIELD_IDEAS</YieldType>
-          <iYield>1</iYield>
-        </FreeYield>
-      </FreeYields>
+      <FreeYields/>
       <CapturedCityUnitClass>NONE</CapturedCityUnitClass>
       <InitialCivics/>
       <Leaders>
@@ -182,27 +146,9 @@
           <FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
         </FreeUnitClass>
       </FreeUnitClasses>
-      <FreeBuildingClasses>
-        <FreeBuildingClass>
-          <BuildingClassType>BUILDINGCLASS_TOWNHALL</BuildingClassType>
-          <bFreeBuildingClass>1</bFreeBuildingClass>
-        </FreeBuildingClass>
-      </FreeBuildingClasses>
+      <FreeBuildingClasses/>
       <TeachUnitClasses/>
-      <FreeYields>
-        <FreeYield>
-          <YieldType>YIELD_BELLS</YieldType>
-          <iYield>1</iYield>
-        </FreeYield>
-        <FreeYield>
-          <YieldType>YIELD_CROSSES</YieldType>
-          <iYield>1</iYield>
-        </FreeYield>
-        <FreeYield>
-          <YieldType>YIELD_IDEAS</YieldType>
-          <iYield>1</iYield>
-        </FreeYield>
-      </FreeYields>
+      <FreeYields/>
       <CapturedCityUnitClass>NONE</CapturedCityUnitClass>
       <InitialCivics/>
       <Leaders>
@@ -252,27 +198,9 @@
           <FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
         </FreeUnitClass>
       </FreeUnitClasses>
-      <FreeBuildingClasses>
-        <FreeBuildingClass>
-          <BuildingClassType>BUILDINGCLASS_TOWNHALL</BuildingClassType>
-          <bFreeBuildingClass>1</bFreeBuildingClass>
-        </FreeBuildingClass>
-      </FreeBuildingClasses>
+      <FreeBuildingClasses/>
       <TeachUnitClasses/>
-      <FreeYields>
-        <FreeYield>
-          <YieldType>YIELD_BELLS</YieldType>
-          <iYield>1</iYield>
-        </FreeYield>
-        <FreeYield>
-          <YieldType>YIELD_CROSSES</YieldType>
-          <iYield>1</iYield>
-        </FreeYield>
-        <FreeYield>
-          <YieldType>YIELD_IDEAS</YieldType>
-          <iYield>1</iYield>
-        </FreeYield>
-      </FreeYields>
+      <FreeYields/>
       <CapturedCityUnitClass>NONE</CapturedCityUnitClass>
       <InitialCivics/>
       <Leaders>
@@ -387,7 +315,7 @@
       <FreeBuildingClasses/>
       <TeachUnitClasses/>
       <FreeYields/>
-      <CapturedCityUnitClass>UNITCLASS_CONVERTED_NATIVE</CapturedCityUnitClass>
+      <CapturedCityUnitClass/>
       <InitialCivics/>
       <Leaders>
         <Leader>

@@ -323,8 +323,8 @@ foreach $item (@prodprofs)
 	&maketext("TXT_KEY_PROFESSION_".$tag, $desc);
 	print PI "\t<Civilopedia>TXT_KEY_PROFESSION_".$tag."_PEDIA</Civilopedia>\n";
 	if ($isoutdoor)
-		{$pedia = '[LINK=YIELD_'.$tag.']'.$ydesc.'[\LINK]are harvested from map tiles by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]'.$desc."[COLOR_REVERT] profession.";}
-		else {$pedia = '[LINK=YIELD_'.$tag.']'.$ydesc.'[\LINK]are produced from [LINK='.$inputyield.']'.$inputyielddesc.'[\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]'.$desc."[COLOR_REVERT] profession.";}
+		{$pedia = '[LINK=YIELD_'.$tag.']'.$ydesc.'[\LINK] are harvested from map tiles by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]'.$desc."[COLOR_REVERT] profession.";}
+		else {$pedia = '[LINK=YIELD_'.$tag.']'.$ydesc.'[\LINK] are produced from [LINK='.$inputyield.']'.$inputyielddesc.'[\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]'.$desc."[COLOR_REVERT] profession.";}
 	&maketext('TXT_KEY_PROFESSION_'.$tag.'_PEDIA', $pedia);
 	print PI "\t<Strategy></Strategy>\n";
 	print PI "\t<Help/>\n";
@@ -412,6 +412,157 @@ foreach $desc (@walkprofs)
 	
 print PI "</ProfessionInfos>\n</Civ4ProfessionInfos>\n";
 close PI;
+
+# **TERRAINS**
+open (TI, '> ./xml/Terrain/CIV4TerrainInfos.xml') or die "Can't write terrains: $!";
+print TI '<?xml version="1.0" encoding="UTF-8"?>'."\n";
+print TI '<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Ed Piper (Firaxis Games) -->'."\n";
+print TI '<!-- Sid Meier\'s Civilization 4 -->'."\n".'<!-- Copyright Firaxis Games 2005 -->'."\n".'<!-- -->'."\n".'<!-- Terrain Infos -->'."\n";
+print TI '<Civ4TerrainInfos xmlns="x-schema:CIV4TerrainSchema.xml">'."\n<TerrainInfos>\n";
+
+# 1st arg = terrain name, 2nd = hash (yield=>production)
+sub maketerrain
+{
+my $tag = shift;
+$href = shift;
+my $desc = $tag;
+$desc =~ tr/_/ /;
+$desc =~ s/(\w+)/\u\L$1/g;
+print TI "<TerrainInfo>\n";
+print TI "\t<Type>TERRAIN_$tag</Type>\n";
+print TI "\t<Description>TXT_KEY_TERRAIN_$tag</Description>\n";
+&maketext("TXT_KEY_TERRAIN_$tag",$desc);
+$pedia = 'The expanses of [COLOR_HIGHLIGHT_TEXT]'.$desc.'[COLOR_REVERT] found across certain planets of the New Worlds are often rich in ';
+for my $yield ( keys (%$href) ) {
+	my $yielddesc = $yield;
+	$yielddesc =~ tr/_/ /;
+	$yielddesc =~ s/(\w+)/\u\L$1/g;
+	$pedia = $pedia.'[LINK=YIELD_'.$yield.']'.$yielddesc.'[\LINK], '; 
+	}
+print TI "\t<Civilopedia>TXT_KEY_TERRAIN_$tag_PEDIA</Civilopedia>\n";
+&maketext("TXT_KEY_TERRAIN_".$tag."_PEDIA",$pedia);
+print TI "\t<ArtDefineTag>ART_DEF_TERRAIN_$tag</ArtDefineTag>\n";
+print TI "\t<Yields>\n";
+for my $yield ( keys (%$href) ) {
+	$prod = $href->{$yield};
+	print TI "\t\t<YieldIntegerPair>\n";
+	print TI "\t\t\t<YieldType>YIELD_".$yield."</YieldType>\n";
+	print TI "\t\t\t<iValue>".$prod."</iValue>\n";
+	print TI "\t\t</YieldIntegerPair>\n";
+	}
+print TI "\t</Yields>\n";
+print TI "\t<RiverYieldIncreases>\n";
+print TI "\t\t<YieldIntegerPair>\n";
+print TI "\t\t\t<YieldType>YIELD_NUTRIENTS</YieldType>\n";
+print TI "\t\t\t<iValue>1</iValue>\n";
+print TI "\t\t</YieldIntegerPair>\n";
+print TI "\t</RiverYieldIncreases>\n";
+print TI "\t<bWater>0</bWater>\n";
+print TI "\t<bImpassable>0</bImpassable>\n";
+print TI "\t<bFound>1</bFound>\n";
+print TI "\t<bFoundCoast>0</bFoundCoast>\n";
+print TI "\t<iMovement>1</iMovement>\n";
+print TI "\t<iSeeFrom>1</iSeeFrom>\n";
+print TI "\t<iSeeThrough>1</iSeeThrough>\n";
+print TI "\t<iBuildModifier>0</iBuildModifier>\n";
+print TI "\t<iDefense>0</iDefense>\n";
+print TI "\t<Button>Art/Interface\Buttons\WorldBuilder\Terrain_Grass.dds</Button>\n";
+print TI "\t<FootstepSounds>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>FOOTSTEP_AUDIO_HUMAN</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_FOOT_UNIT</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>FOOTSTEP_AUDIO_HUMAN_LOW</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_FOOT_UNIT_LOW</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>FOOTSTEP_AUDIO_HORSE</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_HORSE_RUN</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>LOOPSTEP_WHEELS</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_CHARIOT_LOOP</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>ENDSTEP_WHEELS</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_CHARIOT_END</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>LOOPSTEP_WHEELS_2</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_WAR_CHARIOT_LOOP</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>ENDSTEP_WHEELS_2</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_WAR_CHARIOT_END</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>LOOPSTEP_OCEAN1</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_OCEAN_LOOP1</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>ENDSTEP_OCEAN1</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_OCEAN_END1</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>LOOPSTEP_OCEAN2</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_OCEAN_LOOP1</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>ENDSTEP_OCEAN2</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_OCEAN_END2</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>LOOPSTEP_IRONCLAD</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_IRONCLAD_RUN_LOOP</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>ENDSTEP_IRONCLAD</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_IRONCLAD_RUN_END</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>LOOPSTEP_TRANSPORT</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_TRANSPORT_RUN_LOOP</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>ENDSTEP_TRANSPORT</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_TRANSPORT_RUN_END</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>LOOPSTEP_ARTILLERY</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_ARTILLERY_RUN_LOOP</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>ENDSTEP_ARTILLERY</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_ARTILLERY_RUN_END</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>LOOPSTEP_WHEELS_3</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_TREBUCHET_RUN</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>ENDSTEP_WHEELS_3</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_TREBUCHET_STOP</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t</FootstepSounds>\n";
+print TI "\t<WorldSoundscapeAudioScript>ASSS_GRASSLAND_SELECT_AMB</WorldSoundscapeAudioScript>\n";
+print TI "\t<bGraphicalOnly>0</bGraphicalOnly>\n";
+print TI "</TerrainInfo>\n";
+}
+
+# make terrains
+&maketerrain('GRASS',{'NUTRIENTS'=>3,'NUCLEIC_ACIDS'=>1});
+&maketerrain('PLAINS',{'NUTRIENTS'=>2,'ACTINIDES'=>2});
+&maketerrain('DESERT',{'SILICATES'=>2,'BASE_METALS'=>2});
+&maketerrain('MARSH',{'NUTRIENTS'=>2,'OPIATES'=>2,'TISSUE_SAMPLES'=>1});
+&maketerrain('TUNDRA',{'NUTRIENTS'=>1,'DATACORES'=>3});
+&maketerrain('SNOW',{'NUTRIENTS'=>1,'PROGENITOR_ARTIFACTS'=>3});
+&maketerrain('COAST',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2});
+&maketerrain('OCEAN',{'NUTRIENTS'=>1,'CLATHRATES'=>2});
+&maketerrain('PEAK',{'NUTRIENTS'=>1,'PRECIOUS_METALS'=>1});
+&maketerrain('HILL',{'NUTRIENTS'=>1,'HYDROCARBONS'=>1});
+print TI "</TerrainInfos>\n</Civ4TerrainInfos>\n";
+close TI;
 
 # **IMPROVEMENTS**
 # generate XML for improvements and builds
@@ -588,23 +739,24 @@ foreach $item (@allbuildings)
 	$index++;
 	
 	if (not $isonetier) {
-	# specialbuilding for item
-	print SBI "<SpecialBuildingInfo>\n";	
-	print SBI "\t<Type>SPECIALBUILDING_".$item."</Type>\n";
-	print SBI "\t<Description>TXT_KEY_YIELD_".$item."</Description>\n";
-	print SBI "\t<bValid>1</bValid>\n";
-	print SBI "\t<FontButtonIndex>".$index."</FontButtonIndex>\n";
-	print SBI "\t<ProductionTraits/>\n";
-	print SBI "\t".'<Button>,/Art/Buttons/Yields/'.$item.'.dds</Button>'."\n";
-	print SBI "</SpecialBuildingInfo>\n";
-	$tag = $item.'1';} else {$tag = $item;}
-	
-	# level 1
-	if ($tag=~/TOOLS/ or $tag=~/MUNITIONS/ or $tag=~/ROBOTICS/) {$suffix = 'Workshop';}
-	else {$suffix = 'Facility'};
-	my $bdesc = $desc.' '.$suffix;
-	if (A($bdesc) =~ /^(\w+?) / ) {$article = $1;}
-	my $plural = $desc.' '.PL_N($suffix);
+	# make specialbuilding for item
+		print SBI "<SpecialBuildingInfo>\n";	
+		print SBI "\t<Type>SPECIALBUILDING_".$item."</Type>\n";
+		print SBI "\t<Description>TXT_KEY_YIELD_".$item."</Description>\n";
+		print SBI "\t<bValid>1</bValid>\n";
+		print SBI "\t<FontButtonIndex>".$index."</FontButtonIndex>\n";
+		print SBI "\t<ProductionTraits/>\n";
+		print SBI "\t".'<Button>,/Art/Buttons/Yields/'.$item.'.dds</Button>'."\n";
+		print SBI "</SpecialBuildingInfo>\n";
+	# make level 1 building
+		if ($tag=~/TOOLS/ or $tag=~/MUNITIONS/ or $tag=~/ROBOTICS/) {$suffix = 'Workshop';}
+		else {$suffix = 'Facility'};
+		my $bdesc = $desc.' '.$suffix;
+		if (A($bdesc) =~ /^(\w+?) / ) {$article = $1;}
+		my $plural = $desc.' '.PL_N($suffix);
+		$tag = $item.'1';}
+	else
+		{$tag = $item;}
 	print BI "<BuildingInfo>\n";	
 	print BI "\t<Type>BUILDING_".$tag."</Type>\n";
 	print BI "\t<BuildingClass>BUILDINGCLASS_".$tag."</BuildingClass>\n";
@@ -722,7 +874,7 @@ foreach $item (@allbuildings)
 	print BI "\t<Description>TXT_KEY_BUILDING_".$tag."</Description>\n";
 	&maketext("TXT_KEY_BUILDING_".$tag, $bdesc.':'.$plural);
 	print BI "\t<Civilopedia>TXT_KEY_PEDIA_BUILDING_".$tag."</Civilopedia>\n";
-	my $pedia = ucfirst($article).' [COLOR_BUILDING_TEXT]'.$bdesc.'[COLOR_REVERT] enhances production of [LINK=YIELD_'.$item.']'.$desc.'[\LINK] by citizens working in the [LINK=PROFESSION_'.$item.']'.$desc.'[\LINK] profession.[NEWLINE][PARAGRAPH:1]By leveraging their growing industrial base to encompass the construction of '.$plural.', Human colonies and Alien empires became increasingly able to produce '.$desc." more efficiently and on a larger scale, furthering their economic independence from the mercantilist industries of Earth.";
+	my $pedia = ucfirst($article).' [COLOR_BUILDING_TEXT]'.$bdesc.'[COLOR_REVERT] enhances production of [LINK=YIELD_'.$item.']'.$desc.'[\LINK] by citizens working in the [LINK=PROFESSION_'.$item.']'.$desc.'[\LINK] profession.[NEWLINE][PARAGRAPH:1]By leveraging their growing industrial base to enable the construction of '.$plural.', Human colonies and Alien empires became increasingly able to produce '.$desc." more efficiently and on a larger scale, furthering their economic independence from the mercantilist industries of Earth.";
 	&maketext("TXT_KEY_PEDIA_BUILDING_".$tag, $pedia);
 	print BI "\t<Strategy>TXT_KEY_STRATEGY_BUILDING_".$tag."</Strategy>\n";
 	my $strategy = "Build ".$article." [COLOR_BUILDING_TEXT]".$bdesc."[COLOR_REVERT] to allow more efficient production of [COLOR_HIGHLIGHT_TEXT]".$desc.'[COLOR_REVERT].';
@@ -835,7 +987,7 @@ foreach $item (@allbuildings)
 	print BI "\t<Description>TXT_KEY_BUILDING_".$tag."</Description>\n";
 	&maketext("TXT_KEY_BUILDING_".$tag, $bdesc.':'.$plural);
 	print BI "\t<Civilopedia>TXT_KEY_PEDIA_BUILDING_".$tag."</Civilopedia>\n";
-	my $pedia = ucfirst($article).' [COLOR_BUILDING_TEXT]'.$bdesc.'[COLOR_REVERT] enables highly efficient large-scale production of [LINK=YIELD_'.$item.']'.$desc.'[\LINK] by citizens working in the [LINK=PROFESSION_'.$item.']'.$desc.'[\LINK] profession.[NEWLINE][PARAGRAPH:1]The growing technological sophistication and infrastructure of several Human colonies and Alien empires eventually enabled the construction of large '.$plural." which could produce '.$desc.' far more efficiently than the aging industrial base of Earth.";
+	my $pedia = ucfirst($article).' [COLOR_BUILDING_TEXT]'.$bdesc.'[COLOR_REVERT] enables highly efficient large-scale production of [LINK=YIELD_'.$item.']'.$desc.'[\LINK] by citizens working in the [LINK=PROFESSION_'.$item.']'.$desc.'[\LINK] profession.[NEWLINE][PARAGRAPH:1]The growing technological sophistication and infrastructure of several Human colonies and Alien empires eventually enabled the construction of large '.$plural.' which could produce '.$desc.' far more efficiently than the aging industrial base of Earth.';
 	&maketext("TXT_KEY_PEDIA_BUILDING_".$tag, $pedia);
 	print BI "\t<Strategy>TXT_KEY_STRATEGY_BUILDING_".$tag."</Strategy>\n";
 	my $strategy = "Build ".$article." [COLOR_BUILDING_TEXT]".$bdesc."[COLOR_REVERT] to maximize production of [COLOR_HIGHLIGHT_TEXT]".$desc.'[COLOR_REVERT].';

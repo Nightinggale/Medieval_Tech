@@ -351,12 +351,12 @@ int getCombatOdds(CvUnit* pAttacker, CvUnit* pDefender)
 	FAssert((iAttackerStrength + iDefenderStrength) > 0);
 	FAssert((iAttackerFirepower + iDefenderFirepower) > 0);
 
-	int iDefenderOdds = ((GC.getCache_COMBAT_DIE_SIDES() * iDefenderStrength) / (iAttackerStrength + iDefenderStrength));
+	int iDefenderOdds = ((GC.getXMLval(XML_COMBAT_DIE_SIDES) * iDefenderStrength) / (iAttackerStrength + iDefenderStrength));
 	if (iDefenderOdds == 0)
 	{
 		return 1000;
 	}
-	int iAttackerOdds = GC.getCache_COMBAT_DIE_SIDES() - iDefenderOdds;
+	int iAttackerOdds = GC.getXMLval(XML_COMBAT_DIE_SIDES) - iDefenderOdds;
 	if (iAttackerOdds == 0)
 	{
 		return 0;
@@ -367,8 +367,8 @@ int getCombatOdds(CvUnit* pAttacker, CvUnit* pDefender)
 	// calculate damage done in one round
 	//////
 
-	int iDamageToAttacker = std::max(1,((GC.getCache_COMBAT_DAMAGE() * (iDefenderFirepower + iStrengthFactor)) / (iAttackerFirepower + iStrengthFactor)));
-	int iDamageToDefender = std::max(1,((GC.getCache_COMBAT_DAMAGE() * (iAttackerFirepower + iStrengthFactor)) / (iDefenderFirepower + iStrengthFactor)));
+	int iDamageToAttacker = std::max(1,((GC.getXMLval(XML_COMBAT_DAMAGE) * (iDefenderFirepower + iStrengthFactor)) / (iAttackerFirepower + iStrengthFactor)));
+	int iDamageToDefender = std::max(1,((GC.getXMLval(XML_COMBAT_DAMAGE) * (iAttackerFirepower + iStrengthFactor)) / (iDefenderFirepower + iStrengthFactor)));
 
 	// calculate needed rounds.
 	// Needed rounds = round_up(health/damage)
@@ -388,7 +388,7 @@ int getCombatOdds(CvUnit* pAttacker, CvUnit* pDefender)
 		// this needs to be in floating point math
 		//////
 
-		fOdds += ((float)getBinomialCoefficient(iMaxRounds, iI4)) * pow((((float)iAttackerOdds) / GC.getCache_COMBAT_DIE_SIDES()), iI4) * pow((1.0f - (((float)iAttackerOdds) / GC.getCache_COMBAT_DIE_SIDES())), (iMaxRounds - iI4));
+		fOdds += ((float)getBinomialCoefficient(iMaxRounds, iI4)) * pow((((float)iAttackerOdds) / GC.getXMLval(XML_COMBAT_DIE_SIDES)), iI4) * pow((1.0f - (((float)iAttackerOdds) / GC.getXMLval(XML_COMBAT_DIE_SIDES))), (iMaxRounds - iI4));
 	}
 
 	return ((int)(1000.0 * (fOdds + 0.0005f)));
@@ -1377,30 +1377,30 @@ int getTurnYearForGame(int iGameTurn, int iStartYear, CalendarTypes eCalendar, G
 {
     ///TKs Med
 	int iGameYear = iStartYear;
-    if (iGameTurn >= 1 && GC.getCache_USE_MEDIEVAL_CALENDER() > 0)
+    if (iGameTurn >= 1 && GC.getXMLval(XML_USE_MEDIEVAL_CALENDER) > 0)
     {
         //iGameTurn -= 1;
-        if (iGameTurn <= GC.getCache_CALENDER_YEAR_FIRST_CHANGE_TURN())
+        if (iGameTurn <= GC.getXMLval(XML_CALENDER_YEAR_FIRST_CHANGE_TURN))
         {
-            iGameYear += iGameTurn * GC.getCache_CALENDER_YEAR_FIRST_MULTIPLIER();
+            iGameYear += iGameTurn * GC.getXMLval(XML_CALENDER_YEAR_FIRST_MULTIPLIER);
         }
-        else if (iGameTurn <= GC.getCache_CALENDER_YEAR_FIRST_CHANGE_TURN() * 2)
+        else if (iGameTurn <= GC.getXMLval(XML_CALENDER_YEAR_FIRST_CHANGE_TURN) * 2)
         {
-            int iFirstIncrement = (GC.getCache_CALENDER_YEAR_FIRST_CHANGE_TURN() * GC.getCache_CALENDER_YEAR_FIRST_MULTIPLIER());
-            iGameYear +=  iFirstIncrement + ((iGameTurn - (GC.getCache_CALENDER_YEAR_FIRST_CHANGE_TURN())) * GC.getCache_CALENDER_YEAR_SECOND_MULTIPLIER());
+            int iFirstIncrement = (GC.getXMLval(XML_CALENDER_YEAR_FIRST_CHANGE_TURN) * GC.getXMLval(XML_CALENDER_YEAR_FIRST_MULTIPLIER));
+            iGameYear +=  iFirstIncrement + ((iGameTurn - (GC.getXMLval(XML_CALENDER_YEAR_FIRST_CHANGE_TURN))) * GC.getXMLval(XML_CALENDER_YEAR_SECOND_MULTIPLIER));
         }
-        else if (iGameTurn <= GC.getCache_CALENDER_YEAR_SECOND_CHANGE_TURN())
+        else if (iGameTurn <= GC.getXMLval(XML_CALENDER_YEAR_SECOND_CHANGE_TURN))
         {
-            int iFirstIncrement = (GC.getCache_CALENDER_YEAR_FIRST_CHANGE_TURN() * GC.getCache_CALENDER_YEAR_FIRST_MULTIPLIER());
-            int iSecondIncrement = (GC.getCache_CALENDER_YEAR_FIRST_CHANGE_TURN()) * GC.getCache_CALENDER_YEAR_SECOND_MULTIPLIER();
-            iGameYear += iFirstIncrement + iSecondIncrement + ((iGameTurn - (GC.getCache_CALENDER_YEAR_FIRST_CHANGE_TURN() * 2)) * GC.getCache_CALENDER_YEAR_THIRD_MULTIPLIER());
+            int iFirstIncrement = (GC.getXMLval(XML_CALENDER_YEAR_FIRST_CHANGE_TURN) * GC.getXMLval(XML_CALENDER_YEAR_FIRST_MULTIPLIER));
+            int iSecondIncrement = (GC.getXMLval(XML_CALENDER_YEAR_FIRST_CHANGE_TURN)) * GC.getXMLval(XML_CALENDER_YEAR_SECOND_MULTIPLIER);
+            iGameYear += iFirstIncrement + iSecondIncrement + ((iGameTurn - (GC.getXMLval(XML_CALENDER_YEAR_FIRST_CHANGE_TURN) * 2)) * GC.getXMLval(XML_CALENDER_YEAR_THIRD_MULTIPLIER));
         }
-        else if (iGameTurn > GC.getCache_CALENDER_YEAR_SECOND_CHANGE_TURN())
+        else if (iGameTurn > GC.getXMLval(XML_CALENDER_YEAR_SECOND_CHANGE_TURN))
         {
-            int iFirstIncrement = GC.getCache_CALENDER_YEAR_FIRST_CHANGE_TURN() * GC.getCache_CALENDER_YEAR_FIRST_MULTIPLIER();
-            int iSecondIncrement = GC.getCache_CALENDER_YEAR_FIRST_CHANGE_TURN() * GC.getCache_CALENDER_YEAR_SECOND_MULTIPLIER();
-            int iThirdIncrement = GC.getCache_CALENDER_YEAR_FIRST_CHANGE_TURN() * 2 * GC.getCache_CALENDER_YEAR_THIRD_MULTIPLIER();
-            iGameYear += iFirstIncrement + iSecondIncrement + iThirdIncrement + (iGameTurn - GC.getCache_CALENDER_YEAR_SECOND_CHANGE_TURN());
+            int iFirstIncrement = GC.getXMLval(XML_CALENDER_YEAR_FIRST_CHANGE_TURN) * GC.getXMLval(XML_CALENDER_YEAR_FIRST_MULTIPLIER);
+            int iSecondIncrement = GC.getXMLval(XML_CALENDER_YEAR_FIRST_CHANGE_TURN) * GC.getXMLval(XML_CALENDER_YEAR_SECOND_MULTIPLIER);
+            int iThirdIncrement = GC.getXMLval(XML_CALENDER_YEAR_FIRST_CHANGE_TURN) * 2 * GC.getXMLval(XML_CALENDER_YEAR_THIRD_MULTIPLIER);
+            iGameYear += iFirstIncrement + iSecondIncrement + iThirdIncrement + (iGameTurn - GC.getXMLval(XML_CALENDER_YEAR_SECOND_CHANGE_TURN));
             ++iGameYear;
         }
         return iGameYear;
@@ -1466,7 +1466,7 @@ int getTurnMonthForGame(int iGameTurn, int iStartYear, CalendarTypes eCalendar, 
 		break;
 
 	case CALENDAR_WEEKS:
-		iTurnMonth += iGameTurn / GC.getCache_WEEKS_PER_MONTHS();
+		iTurnMonth += iGameTurn / GC.getXMLval(XML_WEEKS_PER_MONTHS);
 		break;
 
 	default:

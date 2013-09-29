@@ -174,9 +174,9 @@ sub makeuclass
 ## ** YIELD / PROFESSION XML **
 
 # open XML for writing
-open (YI, '> ./xml/Terrain/CIV4YieldInfos.xml') or die "Can't write yields: $!";
-open (TEXT, '> ./xml/Text/CIV4GameText_2071.xml') or die "Can't write text: $!";
-open (EI, '> ./xml/GameInfo/CIV4EmphasizeInfo.xml') or die "Can't write yields: $!";
+open (YI, '> ../Assets/XML/Terrain/CIV4YieldInfos.xml') or die "Can't write yields: $!";
+open (TEXT, '> ../Assets/XML/Text/CIV4GameText_2071.xml') or die "Can't write text: $!";
+open (EI, '> ../Assets/XML/GameInfo/CIV4EmphasizeInfo.xml') or die "Can't write yields: $!";
 print TEXT '<?xml version="1.0" encoding="ISO-8859-1"?>'."\n";
 print TEXT '<Civ4GameText xmlns="http://www.firaxis.com">'."\n";
 
@@ -288,7 +288,7 @@ print YI "</YieldInfos>\n</Civ4YieldInfos>\n";
 close YI;
 
 # generate professioninfos XML
-open (PI, '> ./xml/Units/CIV4ProfessionInfos.xml') or die "Can't write profs: $!";
+open (PI, '> ../Assets/XML/Units/CIV4ProfessionInfos.xml') or die "Can't write profs: $!";
 print PI '<?xml version="1.0" encoding="UTF-8"?>'."\n";
 print PI '<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by EXTREME (Firaxis Games) -->'."\n";
 print PI '<!-- Sid Meier\'s Civilization 4 -->'."\n".'<!-- Copyright Firaxis Games 2005 -->'."\n".'<!-- -->'."\n";
@@ -414,7 +414,7 @@ print PI "</ProfessionInfos>\n</Civ4ProfessionInfos>\n";
 close PI;
 
 # **TERRAINS**
-open (TI, '> ./xml/Terrain/CIV4TerrainInfos.xml') or die "Can't write terrains: $!";
+open (TI, '> ../Assets/XML/Terrain/CIV4TerrainInfos.xml') or die "Can't write terrains: $!";
 print TI '<?xml version="1.0" encoding="UTF-8"?>'."\n";
 print TI '<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Ed Piper (Firaxis Games) -->'."\n";
 print TI '<!-- Sid Meier\'s Civilization 4 -->'."\n".'<!-- Copyright Firaxis Games 2005 -->'."\n".'<!-- -->'."\n".'<!-- Terrain Infos -->'."\n";
@@ -551,24 +551,146 @@ print TI "</TerrainInfo>\n";
 }
 
 # make terrains
-&maketerrain('GRASS',{'NUTRIENTS'=>3,'NUCLEIC_ACIDS'=>1});
+&maketerrain('GRASS',{'NUTRIENTS'=>3,'NUCLEIC_ACIDS'=>2});
 &maketerrain('PLAINS',{'NUTRIENTS'=>2,'ACTINIDES'=>2});
-&maketerrain('DESERT',{'SILICATES'=>2,'BASE_METALS'=>2});
-&maketerrain('MARSH',{'NUTRIENTS'=>2,'OPIATES'=>2,'TISSUE_SAMPLES'=>1});
-&maketerrain('TUNDRA',{'NUTRIENTS'=>1,'DATACORES'=>3});
-&maketerrain('SNOW',{'NUTRIENTS'=>1,'PROGENITOR_ARTIFACTS'=>3});
+&maketerrain('DESERT',{'SILICATES'=>3,'ACTINIDES'=>2});
+&maketerrain('MARSH',{'NUTRIENTS'=>2,'OPIATES'=>2});
+&maketerrain('TUNDRA',{'NUTRIENTS'=>1,'DATACORES'=>2});
+&maketerrain('SNOW',{'NUTRIENTS'=>1,'PROGENITOR_ARTIFACTS'=>2});
 &maketerrain('COAST',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2});
 &maketerrain('OCEAN',{'NUTRIENTS'=>1,'CLATHRATES'=>2});
-&maketerrain('PEAK',{'NUTRIENTS'=>1,'PRECIOUS_METALS'=>1});
-&maketerrain('HILL',{'NUTRIENTS'=>1,'HYDROCARBONS'=>1});
+&maketerrain('PEAK',{'SILICATES'=>3,'PRECIOUS_METALS'=>1,'CORE_SAMPLES'=>1});
+&maketerrain('HILL',{'SILICATES'=>2,'BASE_METALS'=>2});
 print TI "</TerrainInfos>\n</Civ4TerrainInfos>\n";
 close TI;
 
+# ** FEATURES **
+open (FI, '> ../Assets/XML/Terrain/CIV4FeatureInfos.xml') or die "Can't write features: $!";
+print FI '<?xml version="1.0" encoding="UTF-8"?>'."\n";
+print FI '<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->'."\n";
+print FI '<!-- Sid Meier\'s Civilization 4 -->'."\n".'<!-- Copyright Firaxis Games 2005 -->'."\n".'<!-- -->'."\n".'<!-- Feature -->'."\n";
+print FI '<Civ4FeatureInfos xmlns="x-schema:CIV4TerrainSchema.xml">'."\n<FeatureInfos>\n";
+
+# 1st arg = terrain name, 2nd = hash (yield=>production)
+sub makefeature
+{
+my $tag = shift;
+$href = shift;
+my $desc = $tag;
+$desc =~ tr/_/ /;
+$desc =~ s/(\w+)/\u\L$1/g;
+print FI "<FeatureInfo>\n";
+print FI "\t\t<Type>FEATURE_".$tag."</Type>\n";
+print FI "\t\t<Description>TXT_KEY_FEATURE_".$tag."</Description>\n";
+&maketext("TXT_KEY_FEATURE_".$tag,$desc);
+print FI "\t\t<Civilopedia>TXT_KEY_FEATURE_JUNGLE_PEDIA</Civilopedia>\n";
+print FI "\t\t<ArtDefineTag>ART_DEF_FEATURE_".$tag."</ArtDefineTag>\n";
+print FI "\t\t<YieldChanges>\n";
+for my $yield ( keys (%$href) ) {
+	my $prod = $href->{$yield};
+	print FI "\t\t\t<YieldIntegerPair>\n";
+	print FI "\t\t\t\t<YieldType>YIELD_".$yield."</YieldType>\n";
+	print FI "\t\t\t\t<iValue>".$prod."</iValue>\n";
+	print FI "\t\t\t</YieldIntegerPair>\n";
+	}
+print FI "\t\t</YieldChanges>\n";
+print FI "\t\t<RiverYieldIncreases/>\n";
+print FI "\t\t<iMovement>2</iMovement>\n";
+print FI "\t\t<iSeeThrough>1</iSeeThrough>\n";
+print FI "\t\t<iDefense>25</iDefense>\n";
+print FI "\t\t<iAppearance>0</iAppearance>\n";
+print FI "\t\t<iDisappearance>0</iDisappearance>\n";
+print FI "\t\t<iGrowth>16</iGrowth>\n";
+print FI "\t\t<bNoCoast>0</bNoCoast>\n";
+print FI "\t\t<bNoRiver>0</bNoRiver>\n";
+print FI "\t\t<bNoAdjacent>0</bNoAdjacent>\n";
+print FI "\t\t<bRequiresFlatlands>0</bRequiresFlatlands>\n";
+print FI "\t\t<bRequiresRiver>0</bRequiresRiver>\n";
+print FI "\t\t<bImpassable>0</bImpassable>\n";
+print FI "\t\t<bNoCity>0</bNoCity>\n";
+print FI "\t\t<bNoImprovement>0</bNoImprovement>\n";
+print FI "\t\t<bVisibleAlways>0</bVisibleAlways>\n";
+print FI "\t\t<OnUnitChangeTo/>\n";
+print FI "\t\t<TerrainBooleans>\n";
+print FI "\t\t<TerrainBoolean>\n";
+print FI "\t\t\t<TerrainType>TERRAIN_MARSH</TerrainType>\n";
+print FI "\t\t\t<bTerrain>1</bTerrain>\n";
+print FI "\t\t</TerrainBoolean>\n";
+print FI "\t\t<TerrainBoolean>\n";
+print FI "\t\t\t<TerrainType>TERRAIN_GRASS</TerrainType>\n";
+print FI "\t\t\t<bTerrain>1</bTerrain>\n";
+print FI "\t\t</TerrainBoolean>\n";
+print FI "\t\t<TerrainBoolean>\n";
+print FI "\t\t\t<TerrainType>TERRAIN_PLAINS</TerrainType>\n";
+print FI "\t\t\t<bTerrain>1</bTerrain>\n";
+print FI "\t\t</TerrainBoolean>\n";
+print FI "\t\t</TerrainBooleans>\n";
+print FI "\t\t<FootstepSounds>\n";
+print FI "\t\t<FootstepSound>\n";
+print FI "\t\t\t<FootstepAudioType>FOOTSTEP_AUDIO_HUMAN</FootstepAudioType>\n";
+print FI "\t\t\t<FootstepAudioScript>AS3D_UN_FOOT_UNIT_FOREST</FootstepAudioScript>\n";
+print FI "\t\t</FootstepSound>\n";
+print FI "\t\t<FootstepSound>\n";
+print FI "\t\t\t<FootstepAudioType>FOOTSTEP_AUDIO_HUMAN_LOW</FootstepAudioType>\n";
+print FI "\t\t\t<FootstepAudioScript>AS3D_UN_FOOT_UNIT_LOW_FOREST</FootstepAudioScript>\n";
+print FI "\t\t</FootstepSound>\n";
+print FI "\t\t<FootstepSound>\n";
+print FI "\t\t\t<FootstepAudioType>FOOTSTEP_AUDIO_HORSE</FootstepAudioType>\n";
+print FI "\t\t\t<FootstepAudioScript>AS3D_UN_HORSE_RUN_FOREST</FootstepAudioScript>\n";
+print FI "\t\t</FootstepSound>\n";
+print FI "\t\t<FootstepSound>\n";
+print FI "\t\t\t<FootstepAudioType>LOOPSTEP_WHEELS</FootstepAudioType>\n";
+print FI "\t\t\t<FootstepAudioScript/>\n";
+print FI "\t\t</FootstepSound>\n";
+print FI "\t\t<FootstepSound>\n";
+print FI "\t\t\t<FootstepAudioType>ENDSTEP_WHEELS</FootstepAudioType>\n";
+print FI "\t\t\t<FootstepAudioScript/>\n";
+print FI "\t\t</FootstepSound>\n";
+print FI "\t\t<FootstepSound>\n";
+print FI "\t\t\t<FootstepAudioType>LOOPSTEP_WHEELS_2</FootstepAudioType>\n";
+print FI "\t\t\t<FootstepAudioScript/>\n";
+print FI "\t\t</FootstepSound>\n";
+print FI "\t\t<FootstepSound>\n";
+print FI "\t\t\t<FootstepAudioType>ENDSTEP_WHEELS_2</FootstepAudioType>\n";
+print FI "\t\t\t<FootstepAudioScript/>\n";
+print FI "\t\t</FootstepSound>\n";
+print FI "\t\t<FootstepSound>\n";
+print FI "\t\t\t<FootstepAudioType>LOOPSTEP_ARTILLERY</FootstepAudioType>\n";
+print FI "\t\t\t<FootstepAudioScript>AS3D_UN_ARTILL_RUN_LOOP_FOREST</FootstepAudioScript>\n";
+print FI "\t\t</FootstepSound>\n";
+print FI "\t\t<FootstepSound>\n";
+print FI "\t\t\t<FootstepAudioType>ENDSTEP_ARTILLERY</FootstepAudioType>\n";
+print FI "\t\t\t<FootstepAudioScript>AS3D_UN_ARTILL_RUN_END_FOREST</FootstepAudioScript>\n";
+print FI "\t\t</FootstepSound>\n";
+print FI "\t\t<FootstepSound>\n";
+print FI "\t\t\t<FootstepAudioType>LOOPSTEP_WHEELS_3</FootstepAudioType>\n";
+print FI "\t\t\t<FootstepAudioScript>AS3D_UN_TREBUCHET_RUN_LEAVES</FootstepAudioScript>\n";
+print FI "\t\t</FootstepSound>\n";
+print FI "\t\t<FootstepSound>\n";
+print FI "\t\t\t<FootstepAudioType>ENDSTEP_WHEELS_3</FootstepAudioType>\n";
+print FI "\t\t\t<FootstepAudioScript>AS3D_UN_TREBUCHET_STOP_LEAVES</FootstepAudioScript>\n";
+print FI "\t\t</FootstepSound>\n";
+print FI "\t\t</FootstepSounds>\n";
+print FI "\t\t<WorldSoundscapeAudioScript>ASSS_JUNGLE_SELECT_AMB</WorldSoundscapeAudioScript>\n";
+print FI "\t\t<EffectType>EFFECT_BIRDSCATTER</EffectType>\n";
+print FI "\t\t<iEffectProbability>15</iEffectProbability>\n";
+print FI "\t\t<iAdvancedStartRemoveCost>40</iAdvancedStartRemoveCost>\n";
+print FI "</FeatureInfo>\n";
+}
+
+# make features
+&makefeature('FOREST',{'BIOPOLYMERS'=>4,'NUCLEIC_ACIDS'=>1});
+&makefeature('LIGHT_FOREST',{'BIOPOLYMERS'=>3,'AMINO_ACIDS'=>1});
+&makefeature('JUNGLE',{'BIOPOLYMERS'=>3,'XENOTOXINS'=>2});
+&makefeature('ICE',{'PROGENITOR_ARTIFACTS'=>2,'CLATHRATES'=>1});
+print FI "</FeatureInfos>\n</Civ4FeatureInfos>\n";
+close FI;
+
 # **IMPROVEMENTS**
 # generate XML for improvements and builds
-open (BUILDS, '> ./xml/Units/CIV4BuildInfos.xml') or die "Can't write output: $!";
-open (IM, '> ./xml/Terrain/CIV4ImprovementInfos.xml') or die "Can't write output: $!";
-open (ADI, '> ./xml/Art/CIV4ArtDefines_Improvement.xml') or die "Can't write output: $!";
+open (BUILDS, '> ../Assets/XML/Units/CIV4BuildInfos.xml') or die "Can't write output: $!";
+open (IM, '> ../Assets/XML/Terrain/CIV4ImprovementInfos.xml') or die "Can't write output: $!";
+open (ADI, '> ../Assets/XML/Art/CIV4ArtDefines_Improvement.xml') or die "Can't write output: $!";
 
 print BUILDS '<?xml version="1.0"?>'."\n";
 print BUILDS '<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->'."\n";
@@ -700,10 +822,10 @@ close ADI;
 # generate building XML
 
 # open XML for writing
-open (BI, '> ./xml/Buildings/CIV4BuildingInfos.xml') or die "Can't write output: $!";
-open (BCI, '> ./xml/Buildings/CIV4BuildingClassInfos.xml') or die "Can't write output: $!";
-open (SBI, '> ./xml/Buildings/CIV4SpecialBuildingInfos.xml') or die "Can't write output: $!";
-open (ADB, '> ./xml/Art/CIV4ArtDefines_Building.xml') or die "Can't write output: $!";
+open (BI, '> ../Assets/XML/Buildings/CIV4BuildingInfos.xml') or die "Can't write output: $!";
+open (BCI, '> ../Assets/XML/Buildings/CIV4BuildingClassInfos.xml') or die "Can't write output: $!";
+open (SBI, '> ../Assets/XML/Buildings/CIV4SpecialBuildingInfos.xml') or die "Can't write output: $!";
+open (ADB, '> ../Assets/XML/Art/CIV4ArtDefines_Building.xml') or die "Can't write output: $!";
 
 # generate XML headers
 print BI '<?xml version="1.0"?>'."\n";
@@ -787,7 +909,7 @@ foreach $item (@allbuildings)
 	print BI "\t<bCapital>0</bCapital>\n";
 	print BI "\t<bNeverCapture>0</bNeverCapture>\n";
 	print BI "\t<bCenterInCity>0</bCenterInCity>\n";
-	print BI "\t<iAIWeight>0</iAIWeight>\n";
+	print BI "\t<iAIWeight>10</iAIWeight>\n";
 	print BI "\t<YieldCosts>\n";
 	print BI "\t\t<YieldCost>\n";
 	print BI "\t\t\t<YieldType>YIELD_INDUSTRY</YieldType>\n";	
@@ -894,7 +1016,7 @@ foreach $item (@allbuildings)
 	print BI "\t<bCapital>0</bCapital>\n";
 	print BI "\t<bNeverCapture>0</bNeverCapture>\n";
 	print BI "\t<bCenterInCity>0</bCenterInCity>\n";
-	print BI "\t<iAIWeight>0</iAIWeight>\n";
+	print BI "\t<iAIWeight>10</iAIWeight>\n";
 	print BI "\t<YieldCosts>\n";
 	print BI "\t\t<YieldCost>\n";
 	print BI "\t\t\t<YieldType>YIELD_INDUSTRY</YieldType>\n";	
@@ -1007,7 +1129,7 @@ foreach $item (@allbuildings)
 	print BI "\t<bCapital>0</bCapital>\n";
 	print BI "\t<bNeverCapture>0</bNeverCapture>\n";
 	print BI "\t<bCenterInCity>0</bCenterInCity>\n";
-	print BI "\t<iAIWeight>0</iAIWeight>\n";
+	print BI "\t<iAIWeight>10</iAIWeight>\n";
 	print BI "\t<YieldCosts>\n";
 	print BI "\t\t<YieldCost>\n";
 	print BI "\t\t\t<YieldType>YIELD_INDUSTRY</YieldType>\n";	
@@ -1104,9 +1226,9 @@ close ADB;
 # generate unit, unitclass, unitartdef XML for each specialist and cargo
 	
 # open XML for writing
-open (UI, '> ./xml/Units/CIV4UnitInfos.xml') or die "Can't write output: $!";
-open (UCI, '> ./xml/Units/CIV4UnitClassInfos.xml') or die "Can't write output: $!";
-open (ADU, '> ./xml/Art/CIV4ArtDefines_Unit.xml') or die "Can't write output: $!";
+open (UI, '> ../Assets/XML/Units/CIV4UnitInfos.xml') or die "Can't write output: $!";
+open (UCI, '> ../Assets/XML/Units/CIV4UnitClassInfos.xml') or die "Can't write output: $!";
+open (ADU, '> ../Assets/XML/Art/CIV4ArtDefines_Unit.xml') or die "Can't write output: $!";
 
 # generate XML headers
 print UI '<?xml version="1.0" encoding="UTF-8"?>'."\n";
@@ -1204,7 +1326,7 @@ foreach $item (@allspecialists)
 	print UI "\t<PrereqBuilding>NONE</PrereqBuilding>\n";
 	print UI "\t<PrereqOrBuildings/>\n";
 	print UI "\t<ProductionTraits/>\n";
-	print UI "\t<iAIWeight>0</iAIWeight>\n";
+	print UI "\t<iAIWeight>10</iAIWeight>\n";
 	print UI "\t<YieldCosts/>\n";
 	print UI "\t<iHurryCostModifier>0</iHurryCostModifier>\n";
 	print UI "\t<iAdvancedStartCost>-1</iAdvancedStartCost>\n";
@@ -1388,7 +1510,7 @@ foreach $item (@cargoyields)
 	print UI "\t<PrereqBuilding>NONE</PrereqBuilding>\n";
 	print UI "\t<PrereqOrBuildings/>\n";
 	print UI "\t<ProductionTraits/>\n";
-	print UI "\t<iAIWeight>0</iAIWeight>\n";
+	print UI "\t<iAIWeight>10</iAIWeight>\n";
 	print UI "\t<YieldCosts/>\n";
 	print UI "\t<iHurryCostModifier>0</iHurryCostModifier>\n";
 	print UI "\t<iAdvancedStartCost>-1</iAdvancedStartCost>\n";
@@ -1550,7 +1672,7 @@ foreach $item (@miscunits)
 	print UI "\t<PrereqBuilding>NONE</PrereqBuilding>\n";
 	print UI "\t<PrereqOrBuildings/>\n";
 	print UI "\t<ProductionTraits/>\n";
-	print UI "\t<iAIWeight>0</iAIWeight>\n";
+	print UI "\t<iAIWeight>10</iAIWeight>\n";
 	print UI "\t<YieldCosts/>\n";
 	print UI "\t<iHurryCostModifier>0</iHurryCostModifier>\n";
 	print UI "\t<iAdvancedStartCost>-1</iAdvancedStartCost>\n";

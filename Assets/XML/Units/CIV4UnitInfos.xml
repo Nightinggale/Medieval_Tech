@@ -85,7 +85,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -406,7 +406,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -727,7 +727,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -1056,7 +1056,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -1389,7 +1389,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -1722,7 +1722,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -2055,7 +2055,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -2388,7 +2388,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -2717,7 +2717,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -3038,7 +3038,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -3359,7 +3359,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -3684,7 +3684,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -4013,7 +4013,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -4342,7 +4342,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -4671,7 +4671,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -5000,7 +5000,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -5329,7 +5329,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -5658,7 +5658,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -5987,7 +5987,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -6316,7 +6316,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -6645,7 +6645,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -6966,7 +6966,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -7287,7 +7287,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -7608,7 +7608,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -7929,7 +7929,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -8250,7 +8250,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -8571,7 +8571,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -8892,7 +8892,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -9213,7 +9213,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -9534,7 +9534,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -9850,7 +9850,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -10166,7 +10166,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -10487,7 +10487,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -10803,7 +10803,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -11086,7 +11086,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -11204,7 +11204,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -11322,7 +11322,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -11440,7 +11440,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -11558,7 +11558,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -11676,7 +11676,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -11794,7 +11794,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -11912,7 +11912,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -12030,7 +12030,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -12148,7 +12148,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -12266,7 +12266,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -12384,7 +12384,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -12502,7 +12502,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -12620,7 +12620,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -12738,7 +12738,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -12856,7 +12856,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -12974,7 +12974,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -13092,7 +13092,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -13210,7 +13210,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -13328,7 +13328,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -13446,7 +13446,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -13564,7 +13564,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -13682,7 +13682,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -13800,7 +13800,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -13918,7 +13918,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -14036,7 +14036,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -14154,7 +14154,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -14272,7 +14272,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -14390,7 +14390,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -14508,7 +14508,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -14626,7 +14626,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -14744,7 +14744,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -14862,7 +14862,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -14980,7 +14980,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -15098,7 +15098,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -15216,7 +15216,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -15334,7 +15334,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -15452,7 +15452,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -15570,7 +15570,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -15688,7 +15688,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -15806,7 +15806,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -15924,7 +15924,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -16042,7 +16042,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -16160,7 +16160,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -16278,7 +16278,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -16396,7 +16396,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -16514,7 +16514,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -16632,7 +16632,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -16750,7 +16750,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -16868,7 +16868,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -16986,7 +16986,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -17104,7 +17104,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -17222,7 +17222,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -17340,7 +17340,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -17458,7 +17458,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -17576,7 +17576,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -17694,7 +17694,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -17812,7 +17812,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -17930,7 +17930,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -18048,7 +18048,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -18166,7 +18166,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -18284,7 +18284,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -18402,7 +18402,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -18520,7 +18520,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -18638,7 +18638,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -18756,7 +18756,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>

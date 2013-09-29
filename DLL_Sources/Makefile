@@ -1,4 +1,4 @@
-#### Civilization 4 SDK Makefile 2.2 ####
+#### Civilization 4 SDK Makefile 2.3 ####
 ####  Copyright 2013 Nightinggale    ####
 #########################################
 #### Civilization 4 SDK Makefile 2.0 ####
@@ -259,8 +259,8 @@ $(TEMP_TARGET_FILES)\$(BLACKLIST).obj: $(BLACKLIST).cpp
 !IFDEF _NMAKE_VER
 
 !IF [IF NOT EXIST $(FD) EXIT 1] == 0
-!IF [$(FD) --objectextension=pch -q -O $(TARGET) CvGameCoreDLL.cpp > $(TARGET)\depends] != 0 || \
-    [$(FD) --objectextension=obj -q -O $(TARGET) $(SOURCES) >> $(TARGET)\depends] != 0
+!IF [$(FD) --objectextension=pch -q -O $(TEMP_TARGET_FILES) CvGameCoreDLL.cpp > $(TEMP_TARGET_FILES)\depends] != 0 || \
+    [$(FD) --objectextension=obj -q -O $(TEMP_TARGET_FILES) $(SOURCES) >> $(TEMP_TARGET_FILES)\depends] != 0
 !MESSAGE Error running fastdep.
 !MESSAGE $(TARGET)-fast causes this issue if $(TARGET) or $(TARGET)-fast has never been compiled before.
 !MESSAGE It is safe to ignore this error in that case, but only in that case!
@@ -276,6 +276,6 @@ $(TEMP_TARGET_FILES)\$(BLACKLIST).obj: $(BLACKLIST).cpp
 
 !ENDIF
 
-!IF EXIST(depends)
-!INCLUDE depends
+!IF EXIST($(TEMP_TARGET_FILES)\depends)
+!INCLUDE $(TEMP_TARGET_FILES)\depends
 !ENDIF

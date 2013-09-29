@@ -29,7 +29,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -104,7 +104,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -188,7 +188,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -276,7 +276,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -351,7 +351,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -435,7 +435,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -523,7 +523,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -598,7 +598,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -682,7 +682,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -770,7 +770,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -845,7 +845,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -929,7 +929,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -1017,7 +1017,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -1092,7 +1092,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -1176,7 +1176,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -1264,7 +1264,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -1339,7 +1339,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -1423,7 +1423,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -1511,7 +1511,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -1586,7 +1586,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -1670,7 +1670,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -1758,7 +1758,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -1833,7 +1833,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -1917,7 +1917,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -2005,7 +2005,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -2080,7 +2080,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -2164,7 +2164,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -2252,7 +2252,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -2327,7 +2327,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -2411,7 +2411,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -2499,7 +2499,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -2574,7 +2574,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -2658,7 +2658,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -2746,7 +2746,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -2821,7 +2821,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -2905,7 +2905,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -2993,7 +2993,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -3068,7 +3068,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -3152,7 +3152,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -3240,7 +3240,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -3315,7 +3315,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -3399,7 +3399,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -3487,7 +3487,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -3562,7 +3562,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -3646,7 +3646,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -3734,7 +3734,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -3809,7 +3809,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -3893,7 +3893,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -3981,7 +3981,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -4056,7 +4056,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -4140,7 +4140,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -4228,7 +4228,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -4303,7 +4303,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -4387,7 +4387,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -4475,7 +4475,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -4550,7 +4550,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -4634,7 +4634,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -4722,7 +4722,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -4797,7 +4797,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -4881,7 +4881,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -4969,7 +4969,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -5044,7 +5044,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -5128,7 +5128,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -5216,7 +5216,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -5291,7 +5291,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -5375,7 +5375,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -5463,7 +5463,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -5538,7 +5538,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -5622,7 +5622,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -5710,7 +5710,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -5785,7 +5785,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -5869,7 +5869,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -5957,7 +5957,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -6032,7 +6032,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -6116,7 +6116,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -6204,7 +6204,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -6279,7 +6279,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -6363,7 +6363,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -6451,7 +6451,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -6526,7 +6526,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -6610,7 +6610,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -6698,7 +6698,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -6773,7 +6773,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -6857,7 +6857,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -6945,7 +6945,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -7020,7 +7020,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -7104,7 +7104,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -7192,7 +7192,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -7267,7 +7267,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -7351,7 +7351,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -7439,7 +7439,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -7514,7 +7514,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -7598,7 +7598,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -7686,7 +7686,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -7761,7 +7761,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -7845,7 +7845,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -7933,7 +7933,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -8008,7 +8008,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -8092,7 +8092,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -8180,7 +8180,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -8255,7 +8255,7 @@
 	<bCapital>0</bCapital>
 	<bNeverCapture>0</bNeverCapture>
 	<bCenterInCity>0</bCenterInCity>
-	<iAIWeight>0</iAIWeight>
+	<iAIWeight>10</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>

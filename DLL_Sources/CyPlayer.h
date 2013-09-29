@@ -102,6 +102,7 @@ public:
 	void setCurrentResearch(CivicTypes eCurrentResearch);
 	bool isProfessionValid(int /*ProfessionTypes*/ eProfession, int/*UnitTypes*/ eUnit);
 	bool canUnitBeTraded(int /*YieldTypes*/  eYield, int /*UnitTravelStates*/ eTravelState, int/*UnitTypes*/ eUnit);
+	bool canUseYield(int /*YieldTypes*/ eYield); // invention effect cache - Nightinggale
 	std::wstring getDawnKey();
 	std::wstring getAttackForceKey();
 	std::wstring getDeclareKey();

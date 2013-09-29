@@ -142,7 +142,7 @@ void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAIT
 		CvPlot* pPlot = GC.getMapINLINE().plotINLINE(iX, iY);
 		if((pPlot != NULL) && pPlot->isWater() && (getDomainType() == DOMAIN_SEA))
 		{
-			m_eFacingDirection = (DirectionTypes) GC.getCache_WATER_UNIT_FACING_DIRECTION();
+			m_eFacingDirection = (DirectionTypes) GC.getXMLval(XML_WATER_UNIT_FACING_DIRECTION);
 		}
 		else
 		{
@@ -683,7 +683,7 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 
 	if ((eCapturingPlayer != NO_PLAYER) && (eCaptureUnitType != NO_UNIT))
 	{
-		if (GET_PLAYER(eCapturingPlayer).isHuman() || GET_PLAYER(eCapturingPlayer).AI_captureUnit(eCaptureUnitType, pPlot) || 0 == GC.getCache_AI_CAN_DISBAND_UNITS())
+		if (GET_PLAYER(eCapturingPlayer).isHuman() || GET_PLAYER(eCapturingPlayer).AI_captureUnit(eCaptureUnitType, pPlot) || 0 == GC.getXMLval(XML_AI_CAN_DISBAND_UNITS))
 		{
 			if (!GET_PLAYER(eCapturingPlayer).isProfessionValid(eCaptureProfession, eCaptureUnitType))
 			{
@@ -729,14 +729,14 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
                             if (YieldStored <= 0)
                             {
                                 //UnitTypes eCaptureUnitType = getUnitType();
-                                if (pAttacker->getProfession() == (ProfessionTypes)GC.getCache_DEFAULT_HUNTSMAN_PROFESSION())
+                                if (pAttacker->getProfession() == (ProfessionTypes)GC.getXMLval(XML_DEFAULT_HUNTSMAN_PROFESSION))
                                 {
                                    //YieldStored = GC.getUnitInfo(getUnitType()).getCombat() * GC.getDefineINT("CAPTURED_LUXURY_FOOD_RANDOM_AMOUNT");
-                                   YieldStored = GC.getCache_CAPTURED_LUXURY_FOOD_RANDOM_AMOUNT();
+                                   YieldStored = GC.getXMLval(XML_CAPTURED_LUXURY_FOOD_RANDOM_AMOUNT);
                                 }
                                 else
                                 {
-                                   YieldStored = GC.getCache_CAPTURED_CARGO_RANDOM_AMOUNT();
+                                   YieldStored = GC.getXMLval(XML_CAPTURED_CARGO_RANDOM_AMOUNT);
                                 }
                                 YieldStored = (GC.getGameINLINE().getSorenRandNum(YieldStored, "Random Yield Stored") + 1);
                                 pkCapturedUnit->setYieldStored(YieldStored);
@@ -754,7 +754,7 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
                         }
                         if(pkCapturedUnit->getTransportUnit() == NULL) //failed to load
                         {
-                            //if (pAttacker->getProfession() == (ProfessionTypes)GC.getCache_DEFAULT_HUNTSMAN_PROFESSION())
+                            //if (pAttacker->getProfession() == (ProfessionTypes)GC.getXMLval(XML_DEFAULT_HUNTSMAN_PROFESSION))
                            // {
                                 if (pAttacker->getLoadYieldAmount(eCapturedYield) == 0)
                                 {
@@ -797,7 +797,7 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 				    else
 					{
 					    int YieldStored = pkCapturedUnit->getYieldStored();
-//					    if (pAttacker != NULL && pAttacker->getProfession() == (ProfessionTypes)GC.getCache_DEFAULT_HUNTSMAN_PROFESSION())
+//					    if (pAttacker != NULL && pAttacker->getProfession() == (ProfessionTypes)GC.getXMLval(XML_DEFAULT_HUNTSMAN_PROFESSION))
 //                        {
 //                            szBuffer = gDLL->getText("TXT_KEY_MISC_YOU_CAPTURED_ANIMAL_CARGO", YieldStored, GC.getUnitInfo(eCaptureUnitType).getTextKeyWide());
 //                            gDLL->getInterfaceIFace()->addMessage(eCapturingPlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_UNITCAPTURE", MESSAGE_TYPE_INFO, pkCapturedUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), pPlot->getX_INLINE(), pPlot->getY_INLINE());
@@ -830,7 +830,7 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 						CvPlot* pPlot = pkCapturedUnit->plot();
 						if (pPlot && !pPlot->isCity(false))
 						{
-							if (GET_PLAYER(eCapturingPlayer).AI_getPlotDanger(pPlot) && GC.getCache_AI_CAN_DISBAND_UNITS())
+							if (GET_PLAYER(eCapturingPlayer).AI_getPlotDanger(pPlot) && GC.getXMLval(XML_AI_CAN_DISBAND_UNITS))
 							{
 								pkCapturedUnit->kill(false);
 							}
@@ -972,18 +972,18 @@ void CvUnit::doTurn()
 	        {
                 bEscortLeaves = true;
 	        }
-	        else if (GET_PLAYER(getOwnerINLINE()).getGold() < GC.getCache_HIRE_GUARD_COST())
+	        else if (GET_PLAYER(getOwnerINLINE()).getGold() < GC.getXMLval(XML_HIRE_GUARD_COST))
 	        {
 	            bEscortLeaves = true;
 	        }
 	        else
 	        {
-	            GET_PLAYER(getOwnerINLINE()).changeGold(-GC.getCache_HIRE_GUARD_COST());
+	            GET_PLAYER(getOwnerINLINE()).changeGold(-GC.getXMLval(XML_HIRE_GUARD_COST));
 	        }
 
 	        if (bEscortLeaves)
 	        {
-                PromotionTypes ePromotion = (PromotionTypes) GC.getCache_HIRE_GUARD_PROMOTION();
+                PromotionTypes ePromotion = (PromotionTypes) GC.getXMLval(XML_HIRE_GUARD_PROMOTION);
                 setHasRealPromotion(ePromotion, false);
                 setEscortPromotion(NO_PROMOTION);
                 for (int iPromotion = 0; iPromotion < GC.getNumPromotionInfos(); ++iPromotion)
@@ -1071,7 +1071,7 @@ void CvUnit::doTurn()
             {
                 if (GC.getImprovementInfo(plot()->getImprovementType()).isGoody())
                 {
-                    int iRand = GC.getGameINLINE().getSorenRandNum(GC.getCache_ANIMAL_BANDITS_GUARD_GOODY_TIMER(), "ANIMAL_BANDITS_GUARD_GOODY_TIMER");
+                    int iRand = GC.getGameINLINE().getSorenRandNum(GC.getXMLval(XML_ANIMAL_BANDITS_GUARD_GOODY_TIMER), "ANIMAL_BANDITS_GUARD_GOODY_TIMER");
                     changeImmobileTimer(iRand);
                 }
             }
@@ -1118,7 +1118,7 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
     bool bCombatXP = true;
     if (GC.getUnitInfo(pDefender->getUnitType()).isAnimal())
     {
-        if (getLevel() >= GC.getCache_MAX_LEVEL_FROM_ANIMAL_XP())
+        if (getLevel() >= GC.getXMLval(XML_MAX_LEVEL_FROM_ANIMAL_XP))
         {
             bCombatXP = false;
         }
@@ -1134,7 +1134,7 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 	while (true)
 	{
 		iBattleEffect = 0;
-		if (GC.getGameINLINE().getSorenRandNum(GC.getCache_COMBAT_DIE_SIDES(), "Combat") < iDefenderOdds)
+		if (GC.getGameINLINE().getSorenRandNum(GC.getXMLval(XML_COMBAT_DIE_SIDES), "Combat") < iDefenderOdds)
 		{
 		    if (getCombatFirstStrikes() == 0)\
 			{
@@ -1145,12 +1145,12 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
                         ///TKs Med
                         if (GC.getGameINLINE().getSorenRandNum(100, "Withdrawal") < withdrawalProbability() && bCombatXP)
                         {
-                            changeExperience(GC.getCache_EXPERIENCE_FROM_WITHDRAWL(), pDefender->maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), bGreatGeneralXP);
+                            changeExperience(GC.getXMLval(XML_EXPERIENCE_FROM_WITHDRAWL), pDefender->maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), bGreatGeneralXP);
                             break;
                         }
                         if (GET_PLAYER(pDefender->getOwnerINLINE()).isOption(PLAYEROPTION_MODDER_4) || GET_PLAYER(getOwnerINLINE()).isOption(PLAYEROPTION_MODDER_4))
                         {
-                            if (m_pUnitInfo->getKnightDubbingWeight() == -1 || isHasRealPromotion((PromotionTypes)GC.getCache_DEFAULT_KNIGHT_PROMOTION()))
+                            if (m_pUnitInfo->getKnightDubbingWeight() == -1 || isHasRealPromotion((PromotionTypes)GC.getXMLval(XML_DEFAULT_KNIGHT_PROMOTION)))
                             {
                                 if (!pDefender->getUnitInfo().isAnimal() && !GET_PLAYER(pDefender->getOwnerINLINE()).isEurope())
                                 {
@@ -1184,7 +1184,7 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
                     iFinalDamage = iAttackerDamage;
                     if (pDefender->isCombatCrushingBlow())
                     {
-                        if (GC.getGameINLINE().getSorenRandNum(GC.getCache_COMBAT_DIE_SIDES(), "CrushingBlow") < iDefenderOdds)
+                        if (GC.getGameINLINE().getSorenRandNum(GC.getXMLval(XML_COMBAT_DIE_SIDES), "CrushingBlow") < iDefenderOdds)
                         {
 							iBattleEffect = 1;
 							iFinalDamage *= 2;
@@ -1192,7 +1192,7 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
                     }
                     else if (pDefender->isCombatGlancingBlow())
                     {
-                        if (GC.getGameINLINE().getSorenRandNum(GC.getCache_COMBAT_DIE_SIDES(), "GlancingBlow") >= iDefenderOdds)
+                        if (GC.getGameINLINE().getSorenRandNum(GC.getXMLval(XML_COMBAT_DIE_SIDES), "GlancingBlow") >= iDefenderOdds)
                         {
 							iBattleEffect = 2;
 							iFinalDamage /= 2;
@@ -1259,7 +1259,7 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 			        {
 			            if (GET_PLAYER(pDefender->getOwnerINLINE()).isOption(PLAYEROPTION_MODDER_4) || GET_PLAYER(getOwnerINLINE()).isOption(PLAYEROPTION_MODDER_4))
                         {
-                            if (pDefender->getUnitInfo().getKnightDubbingWeight() == -1 || pDefender->isHasRealPromotion((PromotionTypes)GC.getCache_DEFAULT_KNIGHT_PROMOTION()))
+                            if (pDefender->getUnitInfo().getKnightDubbingWeight() == -1 || pDefender->isHasRealPromotion((PromotionTypes)GC.getXMLval(XML_DEFAULT_KNIGHT_PROMOTION)))
                             {
                                 if (!m_pUnitInfo->isAnimal() && !GET_PLAYER(getOwnerINLINE()).isEurope())
                                 {
@@ -1329,7 +1329,7 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
                     iFinalDamage = iDefenderDamage;
                     if (isCombatCrushingBlow())
                     {
-                        if (GC.getGameINLINE().getSorenRandNum(GC.getCache_COMBAT_DIE_SIDES(), "DefenderCrushingBlow") >= iDefenderOdds)
+                        if (GC.getGameINLINE().getSorenRandNum(GC.getXMLval(XML_COMBAT_DIE_SIDES), "DefenderCrushingBlow") >= iDefenderOdds)
                         {
 							iBattleEffect = 1;
                             iFinalDamage *= 2;
@@ -1337,7 +1337,7 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
                     }
                     else if (isCombatGlancingBlow())
                     {
-                        if (GC.getGameINLINE().getSorenRandNum(GC.getCache_COMBAT_DIE_SIDES(), "DefenderGlancingBlow") < iDefenderOdds)
+                        if (GC.getGameINLINE().getSorenRandNum(GC.getXMLval(XML_COMBAT_DIE_SIDES), "DefenderGlancingBlow") < iDefenderOdds)
                         {
 							iBattleEffect = 2;
                             iFinalDamage /= 2;
@@ -1412,14 +1412,14 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 			{
 				int iExperience = defenseXPValue();
 				iExperience = ((iExperience * iAttackerStrength) / iDefenderStrength);
-				iExperience = range(iExperience, GC.getCache_MIN_EXPERIENCE_PER_COMBAT(), GC.getCache_MAX_EXPERIENCE_PER_COMBAT());
+				iExperience = range(iExperience, GC.getXMLval(XML_MIN_EXPERIENCE_PER_COMBAT), GC.getXMLval(XML_MAX_EXPERIENCE_PER_COMBAT));
 				pDefender->changeExperience(iExperience, maxXPValue(), true, pPlot->getOwnerINLINE() == pDefender->getOwnerINLINE(), bGreatGeneralXP);
 			}
 			else
 			{
 				int iExperience = pDefender->attackXPValue();
 				iExperience = ((iExperience * iDefenderStrength) / iAttackerStrength);
-				iExperience = range(iExperience, GC.getCache_MIN_EXPERIENCE_PER_COMBAT(), GC.getCache_MAX_EXPERIENCE_PER_COMBAT());
+				iExperience = range(iExperience, GC.getXMLval(XML_MIN_EXPERIENCE_PER_COMBAT), GC.getXMLval(XML_MAX_EXPERIENCE_PER_COMBAT));
 				changeExperience(iExperience, pDefender->maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), bGreatGeneralXP);
 			}
             ///TKe
@@ -1668,7 +1668,7 @@ void CvUnit::updateCombat(bool bQuick)
 		{
 			if (!m_pUnitInfo->isHiddenNationality() && !pDefender->getUnitInfo().isHiddenNationality())
 			{
-				GET_TEAM(pDefender->getTeam()).AI_changeWarSuccess(getTeam(), GC.getCache_WAR_SUCCESS_DEFENDING());
+				GET_TEAM(pDefender->getTeam()).AI_changeWarSuccess(getTeam(), GC.getXMLval(XML_WAR_SUCCESS_DEFENDING));
 			}
 
 			CvCity* pCity = pPlot->getPlotCity();
@@ -1689,7 +1689,7 @@ void CvUnit::updateCombat(bool bQuick)
 		{
 			if (!m_pUnitInfo->isHiddenNationality() && !pDefender->getUnitInfo().isHiddenNationality())
 			{
-				GET_TEAM(getTeam()).AI_changeWarSuccess(pDefender->getTeam(), GC.getCache_WAR_SUCCESS_ATTACKING());
+				GET_TEAM(getTeam()).AI_changeWarSuccess(pDefender->getTeam(), GC.getXMLval(XML_WAR_SUCCESS_ATTACKING));
 				if (GET_PLAYER(getOwnerINLINE()).isNative())
 				{
 					GET_TEAM(getTeam()).AI_changeDamages(pDefender->getTeam(), -2 * pDefender->getUnitInfo().getAssetValue());
@@ -1723,7 +1723,7 @@ void CvUnit::updateCombat(bool bQuick)
 
                 if (pDefender->getYieldStored() > 0)
                 {
-                    UnitTypes eTreasureUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getCache_TREASURE_UNITCLASS());
+                    UnitTypes eTreasureUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getXMLval(XML_TREASURE_UNITCLASS));
                      if (eTreasureUnit != NO_UNIT)
                     {
                         CvUnit* pTreasureUnit = GET_PLAYER(getOwnerINLINE()).initUnit(eTreasureUnit, (ProfessionTypes) GC.getUnitInfo(eTreasureUnit).getDefaultProfession(), INVALID_PLOT_COORD, INVALID_PLOT_COORD);
@@ -1808,13 +1808,13 @@ void CvUnit::updateCombat(bool bQuick)
                             {
                                 if (cargoSpace() > 0 && !isFull())
                                 {
-                                    if (GC.getGameINLINE().getSorenRandNum(100, "Criminal Capture") <= GC.getCache_CHANCE_TO_CAPTURE_CRIMINALS())
+                                    if (GC.getGameINLINE().getSorenRandNum(100, "Criminal Capture") <= GC.getXMLval(XML_CHANCE_TO_CAPTURE_CRIMINALS))
                                     {
                                         pDefender->setCapturingPlayer(getOwnerINLINE());
                                     }
                                 }
                             }
-                            else if (GC.getGameINLINE().getSorenRandNum(100, "Criminal Capture") <= GC.getCache_CHANCE_TO_CAPTURE_CRIMINALS())
+                            else if (GC.getGameINLINE().getSorenRandNum(100, "Criminal Capture") <= GC.getXMLval(XML_CHANCE_TO_CAPTURE_CRIMINALS))
                             {
                                 pDefender->setCapturingPlayer(getOwnerINLINE());
                             }
@@ -2266,13 +2266,13 @@ bool CvUnit::isBetterDefenderThan(const CvUnit* pDefender, const CvUnit* pAttack
     {
 		if (!(pAttacker->immuneToFirstStrikes()))
 		{
-			iOurDefense *= ((((firstStrikes() * 2) + chanceFirstStrikes()) * ((GC.getCache_COMBAT_DAMAGE() * 2) / 5)) + 100);
+			iOurDefense *= ((((firstStrikes() * 2) + chanceFirstStrikes()) * ((GC.getXMLval(XML_COMBAT_DAMAGE) * 2) / 5)) + 100);
 			iOurDefense /= 100;
 		}
 
 		if (immuneToFirstStrikes())
 		{
-			iOurDefense *= ((((pAttacker->firstStrikes() * 2) + pAttacker->chanceFirstStrikes()) * ((GC.getCache_COMBAT_DAMAGE() * 2) / 5)) + 100);
+			iOurDefense *= ((((pAttacker->firstStrikes() * 2) + pAttacker->chanceFirstStrikes()) * ((GC.getXMLval(XML_COMBAT_DAMAGE) * 2) / 5)) + 100);
 			iOurDefense /= 100;
 		}
 	}
@@ -2284,13 +2284,13 @@ bool CvUnit::isBetterDefenderThan(const CvUnit* pDefender, const CvUnit* pAttack
     {
 		if (!(pAttacker->immuneToFirstStrikes()))
 		{
-			iTheirDefense *= ((((pDefender->firstStrikes() * 2) + pDefender->chanceFirstStrikes()) * ((GC.getCache_COMBAT_DAMAGE() * 2) / 5)) + 100);
+			iTheirDefense *= ((((pDefender->firstStrikes() * 2) + pDefender->chanceFirstStrikes()) * ((GC.getXMLval(XML_COMBAT_DAMAGE) * 2) / 5)) + 100);
 			iTheirDefense /= 100;
 		}
 
 		if (pDefender->immuneToFirstStrikes())
 		{
-			iTheirDefense *= ((((pAttacker->firstStrikes() * 2) + pAttacker->chanceFirstStrikes()) * ((GC.getCache_COMBAT_DAMAGE() * 2) / 5)) + 100);
+			iTheirDefense *= ((((pAttacker->firstStrikes() * 2) + pAttacker->chanceFirstStrikes()) * ((GC.getXMLval(XML_COMBAT_DAMAGE) * 2) / 5)) + 100);
 			iTheirDefense /= 100;
 		}
 	}
@@ -2617,29 +2617,30 @@ bool CvUnit::canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bT
 //			    }
 //			}
 			break;
+#ifdef USE_NOBLE_CLASS
         case COMMAND_HOLD_FEAST:
             if (!canMove())
             {
                 return false;
             }
-            if (m_pUnitInfo->getKnightDubbingWeight() == -1 || isHasRealPromotion((PromotionTypes)GC.getCache_DEFAULT_KNIGHT_PROMOTION()))
+            if (m_pUnitInfo->getKnightDubbingWeight() == -1 || isHasRealPromotion((PromotionTypes)GC.getXMLval(XML_DEFAULT_KNIGHT_PROMOTION)))
             {
                 CvCity* ePlotCity = plot()->getPlotCity();
                 if (ePlotCity != NULL)
                 {
-                    if (ePlotCity->getYieldStored(YIELD_SHEEP) < GC.getCache_BANQUET_YIELD_AMOUNT())
+                    if (ePlotCity->getYieldStored(YIELD_SHEEP) < GC.getXMLval(XML_BANQUET_YIELD_AMOUNT))
                     {
                         return false;
                     }
-                    if (ePlotCity->getYieldStored(YIELD_CATTLE) < GC.getCache_BANQUET_YIELD_AMOUNT())
+                    if (ePlotCity->getYieldStored(YIELD_CATTLE) < GC.getXMLval(XML_BANQUET_YIELD_AMOUNT))
                     {
                         return false;
                     }
-                    if (ePlotCity->getYieldStored(YIELD_WINE) < GC.getCache_BANQUET_YIELD_AMOUNT())
+                    if (ePlotCity->getYieldStored(YIELD_WINE) < GC.getXMLval(XML_BANQUET_YIELD_AMOUNT))
                     {
                         return false;
                     }
-                    if (ePlotCity->getYieldStored(YIELD_ALE) < GC.getCache_BANQUET_YIELD_AMOUNT())
+                    if (ePlotCity->getYieldStored(YIELD_ALE) < GC.getXMLval(XML_BANQUET_YIELD_AMOUNT))
                     {
                         return false;
                     }
@@ -2647,6 +2648,7 @@ bool CvUnit::canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bT
                 }
             }
             break;
+#endif
 
 	default:
 		FAssert(false);
@@ -2894,12 +2896,13 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
         case COMMAND_CONVERT_UNIT:
 			doKingTransport();
 			break;
+#ifdef USE_NOBLE_CLASS
         case COMMAND_HOLD_FEAST:
 			{
 				CvCity* ePlotCity = plot()->getPlotCity();
 				if (ePlotCity != NULL)
 				{
-					int iBanquetAmount = GC.getCache_BANQUET_YIELD_AMOUNT();
+					int iBanquetAmount = GC.getXMLval(XML_BANQUET_YIELD_AMOUNT);
 					ePlotCity->changeYieldStored(YIELD_SHEEP, -iBanquetAmount);
 					ePlotCity->changeYieldStored(YIELD_CATTLE, -iBanquetAmount);
 					ePlotCity->changeYieldStored(YIELD_WINE, -iBanquetAmount);
@@ -2910,6 +2913,7 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 				}
 			}
             break;
+#endif
         ///Tke
 
 		default:
@@ -3419,7 +3423,7 @@ void CvUnit::move(CvPlot* pPlot, bool bShow)
 	    {
             if (m_pUnitInfo->getLostAtSeaPercent() > GC.getGameINLINE().getSorenRandNum(100, "Lost at Sea"))
             {
-                int ilost = GC.getGameINLINE().getSorenRandNum(GC.getCache_RANDOM_TURNS_LOST_AT_SEA(), "Lost at Sea Random");
+                int ilost = GC.getGameINLINE().getSorenRandNum(GC.getXMLval(XML_RANDOM_TURNS_LOST_AT_SEA), "Lost at Sea Random");
                 setUnitTravelState(UNIT_TRAVEL_LOST_AT_SEA, false);
                 setUnitTravelTimer(ilost);
             }
@@ -3653,7 +3657,7 @@ bool CvUnit::canAutomate(AutomateTypes eAutomate) const
             }
             if (!GET_PLAYER(getOwnerINLINE()).getHasTradeRouteType(TRADE_ROUTE_FAIR))
 		    {
-		        if (GC.getCache_CHEAT_TRAVEL_ALL() == 0)
+		        if (GC.getXMLval(XML_CHEAT_TRAVEL_ALL) == 0)
 		        {
                     return false;
 		        }
@@ -3684,7 +3688,7 @@ bool CvUnit::canAutomate(AutomateTypes eAutomate) const
 //		}
         if (!GET_PLAYER(getOwnerINLINE()).getHasTradeRouteType(TRADE_ROUTE_SILK_ROAD))
         {
-            if (GC.getCache_CHEAT_TRAVEL_ALL() == 0)
+            if (GC.getXMLval(XML_CHEAT_TRAVEL_ALL) == 0)
             {
                 return false;
             }
@@ -4382,7 +4386,7 @@ void CvUnit::clearSpecialty()
 
 	CvUnit* pNewUnit = GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, NO_PROFESSION, getX_INLINE(), getY_INLINE(), AI_getUnitAIType());
 	FAssert(pNewUnit != NULL);
-    PromotionTypes eHomeBoy = (PromotionTypes) GC.getCache_PROMOTION_BUILD_HOME();
+    PromotionTypes eHomeBoy = (PromotionTypes) GC.getXMLval(XML_PROMOTION_BUILD_HOME);
     if (isHasRealPromotion(eHomeBoy))
     {
         setHasRealPromotion(eHomeBoy, false);
@@ -4636,7 +4640,7 @@ bool CvUnit::canCrossOcean(const CvPlot* pPlot, UnitTravelStates eNewState, Trad
 	        }
 	        else
 	        {
-	            if (GC.getCache_CHEAT_TRAVEL_ALL())
+	            if (GC.getXMLval(XML_CHEAT_TRAVEL_ALL))
                 {
                     return true;
                 }
@@ -4760,7 +4764,7 @@ void CvUnit::crossOcean(UnitTravelStates eNewState, bool bAIForce)
     else
     {
 
-        iTravelTime = GC.getEuropeInfo((EuropeTypes)GC.getCache_EUROPE_EAST()).getTripLength();
+        iTravelTime = GC.getEuropeInfo((EuropeTypes)GC.getXMLval(XML_EUROPE_EAST)).getTripLength();
     }
 
 	iTravelTime += GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTradeRouteTripLength(eTradeScreen);
@@ -5038,6 +5042,12 @@ bool CvUnit::canLearn() const
 		return false;
 	}
 	///TKs Invention Core Mod v 1.0
+	CvPlayerAI& kPlayer = GET_PLAYER(getOwner());
+	if (!kPlayer.canUseUnit((UnitTypes)GC.getCivilizationInfo(kPlayer.getCivilizationType()).getCivilizationUnits(eUnitType)))
+	{
+		return false;
+	}
+#if 0
     for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
     {
 
@@ -5051,6 +5061,7 @@ bool CvUnit::canLearn() const
         }
 
     }
+#endif
     ///TKe
 	if (isCargo() && !canUnload())
 	{
@@ -5106,7 +5117,7 @@ void CvUnit::doLiveAmongNatives()
 
 	CvCity* pCity = plot()->getPlotCity();
 
-	pCity->setTeachUnitMultiplier(pCity->getTeachUnitMultiplier() * (100 + GC.getCache_NATIVE_TEACH_THRESHOLD_INCREASE()) / 100);
+	pCity->setTeachUnitMultiplier(pCity->getTeachUnitMultiplier() * (100 + GC.getXMLval(XML_NATIVE_TEACH_THRESHOLD_INCREASE)) / 100);
 	int iLearnTime = getLearnTime();
 	if (iLearnTime > 0)
 	{
@@ -5371,7 +5382,7 @@ void CvUnit::kingTransport(bool bSkipPopup)
 		CvDiploParameters* pDiplo = new CvDiploParameters(GET_PLAYER(getOwnerINLINE()).getParent());
 		pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_TREASURE_TRANSPORT"));
 		pDiplo->setData(getID());
-		int iCommission = GC.getCache_KING_TRANSPORT_TREASURE_COMISSION();
+		int iCommission = GC.getXMLval(XML_KING_TRANSPORT_TREASURE_COMISSION);
 		///TKs Invention Core Mod v 1.0
         for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
         {
@@ -5433,7 +5444,7 @@ void CvUnit::doKingTransport()
                 ePlotCity->setHasRealBuilding(eBuilding, true);
             }
             bKill = true;
-			int iRand = GC.getGameINLINE().getSorenRandNum(GC.getCache_PILGRAM_OFFER_GOLD(), "Random Pilgram 1");
+			int iRand = GC.getGameINLINE().getSorenRandNum(GC.getXMLval(XML_PILGRAM_OFFER_GOLD), "Random Pilgram 1");
 			iRand *= 2;
 			//ePlotCity->changeYieldStored((YieldTypes)GC.getDefineINT("DEFAULT_TREASURE_YIELD") ,iRand);
 			GET_PLAYER(getOwner()).changeGold(iRand);
@@ -5567,7 +5578,7 @@ void CvUnit::establishMission()
 
 int CvUnit::getMissionarySuccessPercent() const
 {
-	return GET_PLAYER(getOwnerINLINE()).getMissionarySuccessPercent() * (100 + (getUnitInfo().getMissionaryRateModifier() * GC.getCache_MISSIONARY_RATE_EFFECT_ON_SUCCESS() / 100)) / 100;
+	return GET_PLAYER(getOwnerINLINE()).getMissionarySuccessPercent() * (100 + (getUnitInfo().getMissionaryRateModifier() * GC.getXMLval(XML_MISSIONARY_RATE_EFFECT_ON_SUCCESS) / 100)) / 100;
 }
 
 bool CvUnit::canSpeakWithChief(CvPlot* pPlot) const
@@ -5763,7 +5774,7 @@ int CvUnit::healRate(const CvPlot* pPlot) const
 
 	if (pPlot->isCity(true, getTeam()))
 	{
-		iTotalHeal += GC.getCache_CITY_HEAL_RATE() + (GET_TEAM(getTeam()).isFriendlyTerritory(pPlot->getTeam()) ? getExtraFriendlyHeal() : getExtraNeutralHeal());
+		iTotalHeal += GC.getXMLval(XML_CITY_HEAL_RATE) + (GET_TEAM(getTeam()).isFriendlyTerritory(pPlot->getTeam()) ? getExtraFriendlyHeal() : getExtraNeutralHeal());
 		CvCity* pCity = pPlot->getPlotCity();
 		if (pCity && !pCity->isOccupation())
 		{
@@ -5791,16 +5802,16 @@ int CvUnit::healRate(const CvPlot* pPlot) const
                 ///TKe
 			if (isEnemy(pPlot->getTeam(), pPlot))
 			{
-				iTotalHeal += (GC.getCache_ENEMY_HEAL_RATE() + getExtraEnemyHeal());
+				iTotalHeal += (GC.getXMLval(XML_ENEMY_HEAL_RATE) + getExtraEnemyHeal());
 			}
 			else
 			{
-				iTotalHeal += (GC.getCache_NEUTRAL_HEAL_RATE() + getExtraNeutralHeal());
+				iTotalHeal += (GC.getXMLval(XML_NEUTRAL_HEAL_RATE) + getExtraNeutralHeal());
 			}
 		}
 		else
 		{
-			iTotalHeal += (GC.getCache_FRIENDLY_HEAL_RATE() + getExtraFriendlyHeal());
+			iTotalHeal += (GC.getXMLval(XML_FRIENDLY_HEAL_RATE) + getExtraFriendlyHeal());
 		}
 	}
 
@@ -6248,7 +6259,7 @@ bool CvUnit::found(int iType)
 	if (eParent != NO_PLAYER && !GC.getEraInfo(kPlayer.getCurrentEra()).isRevolution() && !isAutomated())
 	{
 		int iFoodDifference = plot()->calculateNatureYield(YIELD_FOOD, getTeam(), true) - GC.getFOOD_CONSUMPTION_PER_POPULATION();
-		bool bInland = !plot()->isCoastalLand(GC.getCache_MIN_WATER_SIZE_FOR_OCEAN());
+		bool bInland = !plot()->isCoastalLand(GC.getXMLval(XML_MIN_WATER_SIZE_FOR_OCEAN));
 
 		DiploCommentTypes eDiploComment = NO_DIPLOCOMMENT;
 		///TKs SkipDip
@@ -6476,7 +6487,7 @@ bool CvUnit::canJoinCity(const CvPlot* pPlot, bool bTestVisible) const
             int iMaxPop = pCity->getMaxCityPop();
             if (iPopulation == iMaxPop)
             {
-                if (iMaxPop < GC.getCache_MAX_CITY_POPULATION_COMMUNE())
+                if (iMaxPop < GC.getXMLval(XML_MAX_CITY_POPULATION_COMMUNE))
                 {
                     return false;
                 }
@@ -7275,7 +7286,7 @@ bool CvUnit::giveExperience()
 
 int CvUnit::getStackExperienceToGive(int iNumUnits) const
 {
-	return (m_pUnitInfo->getLeaderExperience() * (100 + std::min(50, (iNumUnits - 1) * GC.getCache_WARLORD_EXTRA_EXPERIENCE_PER_UNIT_PERCENT()))) / 100;
+	return (m_pUnitInfo->getLeaderExperience() * (100 + std::min(50, (iNumUnits - 1) * GC.getXMLval(XML_WARLORD_EXTRA_EXPERIENCE_PER_UNIT_PERCENT)))) / 100;
 }
 
 int CvUnit::upgradePrice(UnitTypes eUnit) const
@@ -7293,9 +7304,9 @@ int CvUnit::upgradePrice(UnitTypes eUnit) const
 		return lResult;
 	}
 
-	iPrice = GC.getCache_BASE_UNIT_UPGRADE_COST();
+	iPrice = GC.getXMLval(XML_BASE_UNIT_UPGRADE_COST);
 
-	iPrice += (std::max(0, (GET_PLAYER(getOwnerINLINE()).getYieldProductionNeeded(eUnit, YIELD_HAMMERS) - GET_PLAYER(getOwnerINLINE()).getYieldProductionNeeded(getUnitType(), YIELD_HAMMERS))) * GC.getCache_UNIT_UPGRADE_COST_PER_PRODUCTION());
+	iPrice += (std::max(0, (GET_PLAYER(getOwnerINLINE()).getYieldProductionNeeded(eUnit, YIELD_HAMMERS) - GET_PLAYER(getOwnerINLINE()).getYieldProductionNeeded(getUnitType(), YIELD_HAMMERS))) * GC.getXMLval(XML_UNIT_UPGRADE_COST_PER_PRODUCTION));
 
 	if (!isHuman())
 	{
@@ -7616,9 +7627,9 @@ void CvUnit::upgrade(UnitTypes eUnit)
 
 	if (pUpgradeUnit->getLeaderUnitType() == NO_UNIT)
 	{
-		if (pUpgradeUnit->getExperience() > GC.getCache_MAX_EXPERIENCE_AFTER_UPGRADE())
+		if (pUpgradeUnit->getExperience() > GC.getXMLval(XML_MAX_EXPERIENCE_AFTER_UPGRADE))
 		{
-			pUpgradeUnit->setExperience(GC.getCache_MAX_EXPERIENCE_AFTER_UPGRADE());
+			pUpgradeUnit->setExperience(GC.getXMLval(XML_MAX_EXPERIENCE_AFTER_UPGRADE));
 		}
 	}
 }
@@ -7671,17 +7682,23 @@ UnitTypes CvUnit::getCaptureUnitType(CivilizationTypes eCivilization) const
 	}
 
 	///TKs Med
-	 if (eCaptureUnit != NO_UNIT)
+	if (!GET_PLAYER(GC.getGameINLINE().getActivePlayer()).canUseYield(YIELD_FROM_ANIMALS))
+	{
+		return NO_UNIT;
+	}
+#if 0
+	// this section is replaced by a simple check to see if the player can use the yield in question
+	 if (YIELD_FROM_ANIMALS != NO_YIELD && eCaptureUnit != NO_UNIT)
 	 {
 	    //YieldTypes eCapturedYield = (YieldTypes)m_pUnitInfo->getYield();
-	    if (GC.getYieldInfo(YIELD_GRAIN).getUnitClass() == m_pUnitInfo->getUnitCaptureClassType())
+	    if (GC.getYieldInfo(YIELD_FROM_ANIMALS).getUnitClass() == m_pUnitInfo->getUnitCaptureClassType())
 	    {
             for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
             {
-                if (GC.getCivicInfo((CivicTypes) iCivic).getCivicOptionType() == (CivicOptionTypes)GC.getCache_CIVICOPTION_INVENTIONS())
+                if (GC.getCivicInfo((CivicTypes) iCivic).getCivicOptionType() == (CivicOptionTypes)GC.getXMLval(XML_CIVICOPTION_INVENTIONS))
                 {
                     CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes) iCivic);
-                    if (kCivicInfo.getAllowsYields(YIELD_GRAIN) > 0)
+                    if (kCivicInfo.getAllowsYields(YIELD_FROM_ANIMALS) > 0)
                     {
                         if (GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getIdeasResearched((CivicTypes) iCivic) == 0)
                         {
@@ -7692,6 +7709,7 @@ UnitTypes CvUnit::getCaptureUnitType(CivilizationTypes eCivilization) const
             }
 	    }
 	 }
+#endif
 	///TKe
 
 	CvUnitInfo& kUnitInfo = GC.getUnitInfo(eCaptureUnit);
@@ -7801,7 +7819,7 @@ bool CvUnit::isNative() const
 
 int CvUnit::visibilityRange() const
 {
-	return (GC.getCache_UNIT_VISIBILITY_RANGE() + getExtraVisibilityRange());
+	return (GC.getXMLval(XML_UNIT_VISIBILITY_RANGE) + getExtraVisibilityRange());
 }
 
 int CvUnit::baseMoves() const
@@ -7875,7 +7893,7 @@ bool CvUnit::canBuildRoute() const
 		    ///TKs Med
 		    for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
             {
-                if (GC.getCivicInfo((CivicTypes) iCivic).getCivicOptionType() == (CivicOptionTypes)GC.getCache_CIVICOPTION_INVENTIONS())
+                if (GC.getCivicInfo((CivicTypes) iCivic).getCivicOptionType() == (CivicOptionTypes)GC.getXMLval(XML_CIVICOPTION_INVENTIONS))
                 {
                     CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes) iCivic);
                     if (kCivicInfo.getAllowsRoute(GC.getBuildInfo((BuildTypes)iI).getRoute()) > 0)
@@ -8834,7 +8852,7 @@ bool CvUnit::canTrainUnit() const
         ProfessionTypes eProfession = getProfession();
         if (eProfession != NO_PROFESSION)
         {
-            if (!isHasPromotion((PromotionTypes)GC.getCache_DEFAULT_TRAINED_PROMOTION()) && GC.getProfessionInfo(eProfession).getCombatChange() >= GC.getCache_DEFAULT_COMBAT_FOR_TRAINING())
+            if (!isHasPromotion((PromotionTypes)GC.getXMLval(XML_DEFAULT_TRAINED_PROMOTION)) && GC.getProfessionInfo(eProfession).getCombatChange() >= GC.getXMLval(XML_DEFAULT_COMBAT_FOR_TRAINING))
             {
                 return true;
             }
@@ -8920,11 +8938,11 @@ void CvUnit::setUpCombatBlockParrys(CvUnit* Defender)
         int pAttackerBlockParrys = 0;
         if (getProfession() != NO_PROFESSION)
         {
-            if (GC.getProfessionInfo(getProfession()).getCombatGearTypes(GC.getCache_UNITTACTIC_PARRY()))
+            if (GC.getProfessionInfo(getProfession()).getCombatGearTypes(GC.getXMLval(XML_UNITTACTIC_PARRY)))
             {
                 pAttackerBlockParrys++;
             }
-            if (GC.getProfessionInfo(getProfession()).getCombatGearTypes(GC.getCache_UNITARMOR_SHIELD()))
+            if (GC.getProfessionInfo(getProfession()).getCombatGearTypes(GC.getXMLval(XML_UNITARMOR_SHIELD)))
             {
                 pAttackerBlockParrys++;
             }
@@ -8932,11 +8950,11 @@ void CvUnit::setUpCombatBlockParrys(CvUnit* Defender)
         int pDefenderBlockParrys = 0;
         if (Defender->getProfession() != NO_PROFESSION)
         {
-            if (GC.getProfessionInfo(Defender->getProfession()).getCombatGearTypes(GC.getCache_UNITTACTIC_PARRY()))
+            if (GC.getProfessionInfo(Defender->getProfession()).getCombatGearTypes(GC.getXMLval(XML_UNITTACTIC_PARRY)))
             {
                 pDefenderBlockParrys++;
             }
-            if (GC.getProfessionInfo(Defender->getProfession()).getCombatGearTypes(GC.getCache_UNITARMOR_SHIELD()))
+            if (GC.getProfessionInfo(Defender->getProfession()).getCombatGearTypes(GC.getXMLval(XML_UNITARMOR_SHIELD)))
             {
                 pDefenderBlockParrys++;
             }
@@ -8980,9 +8998,9 @@ bool CvUnit::setCombatAttackBlows(CvUnit* Defender)
         Defender->setCombatGlancingBlow(false);
         if (getProfession() != NO_PROFESSION)
         {
-            if (GC.getProfessionInfo(Defender->getProfession()).getCombatGearTypes(GC.getCache_UNITARMOR_PLATE()))
+            if (GC.getProfessionInfo(Defender->getProfession()).getCombatGearTypes(GC.getXMLval(XML_UNITARMOR_PLATE)))
             {
-                 if (GC.getProfessionInfo(getProfession()).getCombatGearTypes(GC.getCache_UNITWEAPON_BLUNT()))
+                 if (GC.getProfessionInfo(getProfession()).getCombatGearTypes(GC.getXMLval(XML_UNITWEAPON_BLUNT)))
                  {
                      setCombatCrushingBlow(true);
                  }
@@ -8996,9 +9014,9 @@ bool CvUnit::setCombatAttackBlows(CvUnit* Defender)
 
         if (Defender->getProfession() != NO_PROFESSION)
         {
-            if (GC.getProfessionInfo(getProfession()).getCombatGearTypes(GC.getCache_UNITARMOR_PLATE()))
+            if (GC.getProfessionInfo(getProfession()).getCombatGearTypes(GC.getXMLval(XML_UNITARMOR_PLATE)))
             {
-                 if (GC.getProfessionInfo(Defender->getProfession()).getCombatGearTypes(GC.getCache_UNITWEAPON_BLUNT()))
+                 if (GC.getProfessionInfo(Defender->getProfession()).getCombatGearTypes(GC.getXMLval(XML_UNITWEAPON_BLUNT)))
                  {
                      Defender->setCombatCrushingBlow(true);
                  }
@@ -9171,7 +9189,7 @@ CvCity* CvUnit::getEvasionCity(int iWaylayed) const
 
 	CvCity* pBestCity = NULL;
 	int iBestDistance = MAX_INT;
-	bool bRansomingKnight = (!GET_PLAYER(getOwner()).isEurope() && (m_pUnitInfo->getKnightDubbingWeight() == -1 || isHasRealPromotion((PromotionTypes)GC.getCache_DEFAULT_KNIGHT_PROMOTION())));
+	bool bRansomingKnight = (!GET_PLAYER(getOwner()).isEurope() && (m_pUnitInfo->getKnightDubbingWeight() == -1 || isHasRealPromotion((PromotionTypes)GC.getXMLval(XML_DEFAULT_KNIGHT_PROMOTION))));
 	for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
 	{
 		CvPlayer& kPlayer = GET_PLAYER((PlayerTypes) iPlayer);
@@ -9311,7 +9329,7 @@ int CvUnit::rebelModifier(PlayerTypes eOtherPlayer) const
 		return 0;
 	}
 
-	int iModifier = std::max(0, GET_TEAM(getTeam()).getRebelPercent() - GC.getCache_REBEL_PERCENT_FOR_REVOLUTION());
+	int iModifier = std::max(0, GET_TEAM(getTeam()).getRebelPercent() - GC.getXMLval(XML_REBEL_PERCENT_FOR_REVOLUTION));
 
 	iModifier *= GET_PLAYER(getOwnerINLINE()).getRebelCombatPercent();
 	iModifier /= 100;
@@ -9860,10 +9878,10 @@ void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool b
             {
                 if (GC.getEuropeInfo(pNewPlot->getEurope()).getTradeScreensValid(TRADE_SCREEN_SPICE_ROUTE))
                 {
-                    CivicTypes eSpiceRoute = (CivicTypes)GC.getCache_TRADE_ROUTE_SPICE();
+                    CivicTypes eSpiceRoute = (CivicTypes)GC.getXMLval(XML_TRADE_ROUTE_SPICE);
                     CvPlayer& kPlayer = GET_PLAYER(getOwnerINLINE());
                     kPlayer.setHasTradeRouteType(TRADE_ROUTE_SPICE_ROUTE, true);
-                    if (GC.getDefineINT("DIPLAY_NEW_VIDEOS") > 0)
+                    if (GC.getXMLval(XML_DIPLAY_NEW_VIDEOS) > 0)
                     {
                         if (!CvString(CvWString("ART_DEF_MOVIE_SPICE_ROUTE")).empty())
                         {
@@ -9936,7 +9954,7 @@ void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool b
 //
                                     if (!m_pUnitInfo->isHiddenNationality() && !pLoopUnit->getUnitInfo().isHiddenNationality())
                                     {
-                                        GET_TEAM(getTeam()).AI_changeWarSuccess(pLoopUnit->getTeam(), GC.getCache_WAR_SUCCESS_UNIT_CAPTURING());
+                                        GET_TEAM(getTeam()).AI_changeWarSuccess(pLoopUnit->getTeam(), GC.getXMLval(XML_WAR_SUCCESS_UNIT_CAPTURING));
                                     }
 
                                     if (!isNoUnitCapture())
@@ -9963,7 +9981,7 @@ void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool b
 	        if (!GC.getProfessionInfo(getProfession()).isWater())
 			{
 			    //m_eProfession = (ProfessionTypes)GC.getDefineINT("DEFAULT_MARUADER_SEA_PROFESSION");
-			    setProfession((ProfessionTypes)GC.getCache_DEFAULT_MARUADER_SEA_PROFESSION(), true);
+			    setProfession((ProfessionTypes)GC.getXMLval(XML_DEFAULT_MARUADER_SEA_PROFESSION), true);
 			    //reloadEntity();
 			}
 	    }
@@ -10086,7 +10104,7 @@ void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool b
 		{
 			if (isEnemy(pNewCity->getTeam()) && !canCoexistWithEnemyUnit(pNewCity->getTeam()) && canFight())
 			{
-				GET_TEAM(getTeam()).AI_changeWarSuccess(pNewCity->getTeam(), GC.getCache_WAR_SUCCESS_CITY_CAPTURING());
+				GET_TEAM(getTeam()).AI_changeWarSuccess(pNewCity->getTeam(), GC.getXMLval(XML_WAR_SUCCESS_CITY_CAPTURING));
 				PlayerTypes eNewOwner = GET_PLAYER(getOwnerINLINE()).pickConqueredCityOwner(*pNewCity);
 
 				if (NO_PLAYER != eNewOwner)
@@ -10169,20 +10187,20 @@ void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool b
                     }
                     if (bKill)
                     {
-                        if (m_pUnitInfo->isAnimal())
+                        if (m_pUnitInfo->isAnimal() && pNewPlot->getOwner() != NO_PLAYER && GET_PLAYER(pNewPlot->getOwner()).canUseYield(YIELD_FROM_ANIMALS))
                         {
                             if (pWorkingCity != NULL)
                             {
 
-                                int iYieldStored = GC.getCache_CAPTURED_LUXURY_FOOD_RANDOM_AMOUNT();
+                                int iYieldStored = GC.getXMLval(XML_CAPTURED_LUXURY_FOOD_RANDOM_AMOUNT);
                                 iYieldStored = (GC.getGameINLINE().getSorenRandNum(iYieldStored, "Random City Kill") + 1);
-                                int iCityYieldStore = pWorkingCity->getYieldStored(YIELD_GRAIN) + iYieldStored;
-                                pWorkingCity->setYieldStored(YIELD_GRAIN, iCityYieldStore);
+                                int iCityYieldStore = pWorkingCity->getYieldStored(YIELD_FROM_ANIMALS) + iYieldStored;
+                                pWorkingCity->setYieldStored(YIELD_FROM_ANIMALS, iCityYieldStore);
                                 if (pWorkingCity->isHuman())
                                 {
                                     PlayerTypes eCityOwner = pWorkingCity->getOwnerINLINE();
                                     CvWString szBuffer;
-                                    szBuffer = gDLL->getText("TXT_KEY_CITY_CAPTURE_ANIMAL", GC.getImprovementInfo(pNewPlot->getImprovementType()).getTextKeyWide(), iYieldStored, GC.getYieldInfo(YIELD_GRAIN).getChar(), pWorkingCity->getNameKey());
+                                    szBuffer = gDLL->getText("TXT_KEY_CITY_CAPTURE_ANIMAL", GC.getImprovementInfo(pNewPlot->getImprovementType()).getTextKeyWide(), iYieldStored, GC.getYieldInfo(YIELD_FROM_ANIMALS).getChar(), pWorkingCity->getNameKey());
                                     gDLL->getInterfaceIFace()->addMessage(eCityOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_UNITCAPTURE", MESSAGE_TYPE_INFO, getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), pWorkingCity->getX_INLINE(), pWorkingCity->getY_INLINE());
                                 }
                             }
@@ -10240,20 +10258,22 @@ void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool b
                                 }
                                 if (bKill)
                                 {
-                                    if (m_pUnitInfo->isAnimal())
+                                    if (m_pUnitInfo->isAnimal() && pLoopCity != NULL)
                                     {
-                                        if (pLoopCity != NULL)
+										PlayerTypes eCityOwner = pLoopCity->getOwnerINLINE();
+
+										if (eCityOwner != NO_PLAYER && GET_PLAYER(eCityOwner).canUseYield(YIELD_FROM_ANIMALS))
                                         {
 
-                                            int iYieldStored = GC.getCache_CAPTURED_LUXURY_FOOD_RANDOM_AMOUNT();
+                                            int iYieldStored = GC.getXMLval(XML_CAPTURED_LUXURY_FOOD_RANDOM_AMOUNT);
                                             iYieldStored = (GC.getGameINLINE().getSorenRandNum(iYieldStored, "Random City Kill") + 1);
-                                            int iCityYieldStore = pLoopCity->getYieldStored(YIELD_GRAIN) + iYieldStored;
-                                            pLoopCity->setYieldStored(YIELD_GRAIN, iCityYieldStore);
+                                            int iCityYieldStore = pLoopCity->getYieldStored(YIELD_FROM_ANIMALS) + iYieldStored;
+                                            pLoopCity->setYieldStored(YIELD_FROM_ANIMALS, iCityYieldStore);
                                             if (pLoopCity->isHuman())
                                             {
-                                                PlayerTypes eCityOwner = pLoopCity->getOwnerINLINE();
+                                                //PlayerTypes eCityOwner = pLoopCity->getOwnerINLINE();
                                                 CvWString szBuffer;
-                                                szBuffer = gDLL->getText("TXT_KEY_CITY_CAPTURE_ANIMAL", GC.getImprovementInfo(pLoopPlot->getImprovementType()).getTextKeyWide(), iYieldStored, GC.getYieldInfo(YIELD_GRAIN).getChar(), pLoopCity->getNameKey());
+                                                szBuffer = gDLL->getText("TXT_KEY_CITY_CAPTURE_ANIMAL", GC.getImprovementInfo(pLoopPlot->getImprovementType()).getTextKeyWide(), iYieldStored, GC.getYieldInfo(YIELD_FROM_ANIMALS).getChar(), pLoopCity->getNameKey());
                                                 gDLL->getInterfaceIFace()->addMessage(eCityOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_UNITCAPTURE", MESSAGE_TYPE_INFO, getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), pLoopCity->getX_INLINE(), pLoopCity->getY_INLINE());
                                             }
                                         }
@@ -10791,7 +10811,7 @@ int CvUnit::getFortifyTurns() const
 
 void CvUnit::setFortifyTurns(int iNewValue)
 {
-	iNewValue = range(iNewValue, 0, GC.getCache_MAX_FORTIFY_TURNS());
+	iNewValue = range(iNewValue, 0, GC.getXMLval(XML_MAX_FORTIFY_TURNS));
 
 	if (iNewValue != getFortifyTurns())
 	{
@@ -10824,7 +10844,7 @@ void CvUnit::changeFortifyTurns(int iChange)
                 }
            }
         }
-        iTrainingTimeMod = GC.getCache_TURNS_TO_TRAIN() - iTrainingTimeMod;
+        iTrainingTimeMod = GC.getXMLval(XML_TURNS_TO_TRAIN) - iTrainingTimeMod;
         iTrainingTimeMod = std::max(1, iTrainingTimeMod);
         if (getTrainCounter() >= iTrainingTimeMod)
         {
@@ -10840,9 +10860,9 @@ void CvUnit::changeFortifyTurns(int iChange)
             }
 
             changeTrainCounter(-1);
-            int iExperience = GC.getCache_MAX_TRAINED_EXPERIENCE();
+            int iExperience = GC.getXMLval(XML_MAX_TRAINED_EXPERIENCE);
             changeExperience(iExperience, -1, false, false, false);
-            setHasRealPromotion(((PromotionTypes)GC.getCache_DEFAULT_TRAINED_PROMOTION()), true);
+            setHasRealPromotion(((PromotionTypes)GC.getXMLval(XML_DEFAULT_TRAINED_PROMOTION)), true);
         }
 	}
 	///TKe
@@ -11311,7 +11331,7 @@ void CvUnit::setProfession(ProfessionTypes eProfession, bool bForce)
 		return;
 	}
 	///TKs Invention Core Mod v 1.0
-	if (isHuman() && isOnMap() && eProfession == (ProfessionTypes)GC.getCache_PROFESSION_INVENTOR())
+	if (isHuman() && isOnMap() && eProfession == (ProfessionTypes)GC.getXMLval(XML_PROFESSION_INVENTOR))
 	{
 	    CivicTypes eCivic = GET_PLAYER(getOwner()).getCurrentResearch();
 	    if (eCivic == NO_CIVIC)
@@ -11321,7 +11341,7 @@ void CvUnit::setProfession(ProfessionTypes eProfession, bool bForce)
 	        {
 	            iPlotCityID = plot()->getPlotCity()->getID();
 	        }
-	        CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CHOOSE_INVENTION, (CivicOptionTypes)GC.getCache_CIVICOPTION_INVENTIONS(), iPlotCityID);
+	        CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CHOOSE_INVENTION, (CivicOptionTypes)GC.getXMLval(XML_CIVICOPTION_INVENTIONS), iPlotCityID);
             gDLL->getInterfaceIFace()->addPopup(pInfo, getOwner(), true);
 	    }
 	}
@@ -11507,7 +11527,7 @@ bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, con
         {
             if (getLevel() < GC.getProfessionInfo(eProfession).getExperenceLevel())
             {
-                if (!isHasPromotion((PromotionTypes)GC.getCache_DEFAULT_TRAINED_PROMOTION()) && !isHasRealPromotion((PromotionTypes)GC.getCache_DEFAULT_KNIGHT_PROMOTION()))
+                if (!isHasPromotion((PromotionTypes)GC.getXMLval(XML_DEFAULT_TRAINED_PROMOTION)) && !isHasRealPromotion((PromotionTypes)GC.getXMLval(XML_DEFAULT_KNIGHT_PROMOTION)))
                 {
                     if (!isNoBadGoodies())
                     {
@@ -11619,27 +11639,59 @@ bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, con
 
 		if (!pCity->AI_isWorkforceHack())
 		{
-			if (kOwner.hasContentsYieldEquipmentAmountSecure(getProfession()) || kOwner.hasContentsYieldEquipmentAmount(eProfession)) // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
+			// restructured to fully exploit speed gain from cache - Nightinggale
+			bool bTryAlt = false;
+			if (kOwner.hasContentsYieldEquipmentAmount(eProfession))
 			{
 				for (int i=0; i < NUM_YIELD_TYPES; ++i)
 				{
 					YieldTypes eYieldType = (YieldTypes) i;
-					///Tks Med
 					int iYieldCarried = 0;
 					if (getProfession() != NO_PROFESSION)
 					{
-						iYieldCarried += kOwner.getYieldEquipmentAmount(getProfession(), eYieldType);
+						iYieldCarried = kOwner.getYieldEquipmentAmount(getProfession(), eYieldType) + getAltEquipmentTypes(eYieldType);
 					}
 					int iYieldRequired = kOwner.getYieldEquipmentAmount(eProfession, eYieldType);
-					bool bTryAlt = false;
 					if (iYieldRequired > 0)
 					{
 						int iMissing = iYieldRequired - iYieldCarried;
 						if (iMissing > pCity->getYieldStored(eYieldType))
 						{
 							bTryAlt = true;
+							break;
 						}
 					}
+				}
+			}
+			if (bTryAlt && kOwner.hasContentsYieldEquipmentAmount(eProfession))
+			{
+				bTryAlt = false;
+				for (int i=0; i < NUM_YIELD_TYPES; ++i)
+				{
+					YieldTypes eYieldType = (YieldTypes) i;
+					int iYieldCarried = 0;
+					if (getProfession() != NO_PROFESSION)
+					{
+						iYieldCarried = kOwner.getYieldEquipmentAmount(getProfession(), eYieldType) + getAltEquipmentTypes(eYieldType);
+					}
+					int iYieldRequired = kOwner.getYieldEquipmentAmount(eProfession, eYieldType) + kOwner.getAltYieldEquipmentAmount(eProfession, eYieldType);
+					if (iYieldRequired > 0)
+					{
+						int iMissing = iYieldRequired - iYieldCarried;
+						if (iMissing > pCity->getYieldStored(eYieldType))
+						{
+							bTryAlt = true;
+							break;
+						}
+					}
+				}
+			}
+			// end of reconstruction - Nightinggale
+			if (bTryAlt)
+			{
+				return false;
+			}
+#if 0
 					if (bTryAlt)
 					{
 						if (kOwner.getAltYieldEquipmentAmount(eProfession, eYieldType) < 0)
@@ -11686,9 +11738,9 @@ bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, con
 					{
 						return false;
 					}
-
 				}
 			}
+#endif
 
 			if (!kNewProfession.isCitizen())
 			{
@@ -11877,7 +11929,7 @@ void CvUnit::processProfession(ProfessionTypes eProfession, int iChange, bool bU
 	{
 		if (iChange != 0)
 		{
-			if (eProfession != NO_PROFESSION && (pCity->getPopulation() > 0 || GC.getCache_CONSUME_EQUIPMENT_ON_FOUND() != 0))
+			if (eProfession != NO_PROFESSION && (pCity->getPopulation() > 0 || GC.getXMLval(XML_CONSUME_EQUIPMENT_ON_FOUND) != 0))
 			{
 				for (int i = 0; i < NUM_YIELD_TYPES; i++)
 				{
@@ -12264,7 +12316,7 @@ CivilizationTypes CvUnit::getVisualCiv(TeamTypes eForTeam) const
 	PlayerTypes eOwner = getVisualOwner(eForTeam);
 	if (eOwner == UNKNOWN_PLAYER)
 	{
-		return (CivilizationTypes) GC.getCache_BARBARIAN_CIVILIZATION();
+		return (CivilizationTypes) GC.getXMLval(XML_BARBARIAN_CIVILIZATION);
 	}
 
 	return GET_PLAYER(eOwner).getCivilizationType();
@@ -12860,7 +12912,7 @@ bool CvUnit::canAcquirePromotion(PromotionTypes ePromotion) const
 	{
         for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
         {
-            if (GC.getCivicInfo((CivicTypes) iCivic).getCivicOptionType() == (CivicOptionTypes)GC.getCache_CIVICOPTION_INVENTIONS())
+            if (GC.getCivicInfo((CivicTypes) iCivic).getCivicOptionType() == (CivicOptionTypes)GC.getXMLval(XML_CIVICOPTION_INVENTIONS))
             {
                 CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes) iCivic);
                 if (ePromotion != NO_PROMOTION && kCivicInfo.getAllowsPromotions(ePromotion) > 0)
@@ -13001,7 +13053,7 @@ bool CvUnit::isPromotionValid(PromotionTypes ePromotion) const
 		return false;
 	}
 
-	if (kPromotion.getWithdrawalChange() + withdrawalProbability() > GC.getCache_MAX_WITHDRAWAL_PROBABILITY())
+	if (kPromotion.getWithdrawalChange() + withdrawalProbability() > GC.getXMLval(XML_MAX_WITHDRAWAL_PROBABILITY))
 	{
 		return false;
 	}
@@ -13803,11 +13855,11 @@ void CvUnit::getDefenderCombatValues(CvUnit& kDefender, const CvPlot* pPlot, int
 	FAssert((iOurStrength + iTheirStrength) > 0);
 	FAssert((iOurFirepower + iTheirFirepower) > 0);
 
-	iTheirOdds = ((GC.getCache_COMBAT_DIE_SIDES() * iTheirStrength) / (iOurStrength + iTheirStrength));
+	iTheirOdds = ((GC.getXMLval(XML_COMBAT_DIE_SIDES) * iTheirStrength) / (iOurStrength + iTheirStrength));
 	int iStrengthFactor = ((iOurFirepower + iTheirFirepower + 1) / 2);
 
-	iOurDamage = std::max(1, ((GC.getCache_COMBAT_DAMAGE() * (iTheirFirepower + iStrengthFactor)) / (iOurFirepower + iStrengthFactor)));
-	iTheirDamage = std::max(1, ((GC.getCache_COMBAT_DAMAGE() * (iOurFirepower + iStrengthFactor)) / (iTheirFirepower + iStrengthFactor)));
+	iOurDamage = std::max(1, ((GC.getXMLval(XML_COMBAT_DAMAGE) * (iTheirFirepower + iStrengthFactor)) / (iOurFirepower + iStrengthFactor)));
+	iTheirDamage = std::max(1, ((GC.getXMLval(XML_COMBAT_DAMAGE) * (iOurFirepower + iStrengthFactor)) / (iTheirFirepower + iStrengthFactor)));
 }
 
 int CvUnit::getTriggerValue(EventTriggerTypes eTrigger, const CvPlot* pPlot, bool bCheckPlot) const
@@ -13843,7 +13895,7 @@ int CvUnit::getTriggerValue(EventTriggerTypes eTrigger, const CvPlot* pPlot, boo
 //        }
         if (isHuman())
         {
-            if (isHasRealPromotion((PromotionTypes)GC.getCache_DEFAULT_KNIGHT_PROFESSION_PROMOTION()))
+            if (isHasRealPromotion((PromotionTypes)GC.getXMLval(XML_DEFAULT_KNIGHT_PROFESSION_PROMOTION)))
             {
                 return 100;
             }
@@ -14093,7 +14145,7 @@ void CvUnit::setYieldStored(int iYieldAmount)
 				    int iEducationThreshold = pCity->educationThreshold();
 				    if (m_pUnitInfo->getEducationUnitClass() != NO_UNITCLASS)
 				    {
-                        iEducationThreshold = GC.getCache_EDUCATION_THRESHOLD();
+                        iEducationThreshold = GC.getXMLval(XML_EDUCATION_THRESHOLD);
 				    }
 
 					if (getYieldStored() >= iEducationThreshold)
@@ -14101,7 +14153,7 @@ void CvUnit::setYieldStored(int iYieldAmount)
                         ///TKe Update
 					    ///Tks Med
 					    ///TKs Med Update 1.1c
-					    if (m_pUnitInfo->getKnightDubbingWeight() > 0 && !isHasRealPromotion((PromotionTypes)GC.getCache_DEFAULT_KNIGHT_PROMOTION()))
+					    if (m_pUnitInfo->getKnightDubbingWeight() > 0 && !isHasRealPromotion((PromotionTypes)GC.getXMLval(XML_DEFAULT_KNIGHT_PROMOTION)))
 					    {
 					        ///TKe Update
 					        if (pCity->getPopulation() == 1)
@@ -14109,7 +14161,7 @@ void CvUnit::setYieldStored(int iYieldAmount)
                                 m_iYieldStored = iYieldAmount + iChange;
                                 return;
                             }
-                            setHasRealPromotion((PromotionTypes)GC.getCache_DEFAULT_KNIGHT_PROMOTION(), true);
+                            setHasRealPromotion((PromotionTypes)GC.getXMLval(XML_DEFAULT_KNIGHT_PROMOTION), true);
 //                            setHasRealPromotion(((PromotionTypes)GC.getDefineINT("DEFAULT_UNTRAINED_PROMOTION")), false);
                             //setHasRealPromotion(((PromotionTypes)GC.getDefineINT("DEFAULT_TRAINED_PROMOTION")), true);
                             setYieldStored(0);
@@ -15011,7 +15063,7 @@ bool CvUnit::raidGoods(CvCity* pCity)
 	}
 
 	YieldTypes eYield = aYields[GC.getGameINLINE().getSorenRandNum(aYields.size(), "Choose raid goods")];
-	int iYieldsStolen = std::min(pCity->getYieldStored(eYield), GC.getGameINLINE().getCargoYieldCapacity() * GC.getCache_NATIVE_GOODS_RAID_PERCENT() / 100);
+	int iYieldsStolen = std::min(pCity->getYieldStored(eYield), GC.getGameINLINE().getCargoYieldCapacity() * GC.getXMLval(XML_NATIVE_GOODS_RAID_PERCENT) / 100);
 
 	FAssert(iYieldsStolen > 0);
 	if (iYieldsStolen <= 0)
@@ -15067,17 +15119,17 @@ bool CvUnit::doUnitPilgram()
         return false;
     }
 
-    if (ePlotCity->isHasBuildingClass((BuildingClassTypes)GC.getCache_DEFAULT_SHRINE_CLASS()))
+    if (ePlotCity->isHasBuildingClass((BuildingClassTypes)GC.getXMLval(XML_DEFAULT_SHRINE_CLASS)))
     {
         CvCity* pHome = getHomeCity();
         int iDistanceMod = 1;
         if (pHome != NULL)
         {
             iDistanceMod = ::plotDistance(getX_INLINE(), getY_INLINE(), pHome->getX_INLINE(), pHome->getY_INLINE());
-            iDistanceMod *= GC.getCache_PILGRAM_OFFER_GOLD_DISTANCE_MOD();
+            iDistanceMod *= GC.getXMLval(XML_PILGRAM_OFFER_GOLD_DISTANCE_MOD);
 
         }
-        int iRand = GC.getGameINLINE().getSorenRandNum(GC.getCache_PILGRAM_OFFER_GOLD(), "Random Pilgram 1") + 5;
+        int iRand = GC.getGameINLINE().getSorenRandNum(GC.getXMLval(XML_PILGRAM_OFFER_GOLD), "Random Pilgram 1") + 5;
         iRand = iRand + (iRand * iDistanceMod / 100);
         //ePlotCity->changeYieldStored((YieldTypes)GC.getDefineINT("DEFAULT_TREASURE_YIELD") ,iRand);
         //iRand = GC.getGameINLINE().getSorenRandNum(GC.getDefineINT("PILGRAM_OFFER_GOLD"), "Random Pilgram 1");
@@ -15251,7 +15303,7 @@ bool CvUnit::canHireGuard(bool bTestVisible)
 
                  if (!bTestVisible)
                  {
-                     if (GET_PLAYER(getOwnerINLINE()).getGold() < GC.getCache_HIRE_GUARD_COST())
+                     if (GET_PLAYER(getOwnerINLINE()).getGold() < GC.getXMLval(XML_HIRE_GUARD_COST))
                      {
                          return false;
                      }
@@ -15279,7 +15331,7 @@ void CvUnit::hireGuard()
         return;
     }
     CvCity* ePlotCity = plot()->getPlotCity();
-    PromotionTypes ePromotion = (PromotionTypes) GC.getCache_HIRE_GUARD_PROMOTION();
+    PromotionTypes ePromotion = (PromotionTypes) GC.getXMLval(XML_HIRE_GUARD_PROMOTION);
 
     if (getEscortPromotion() == ePromotion)
     {
@@ -15310,7 +15362,7 @@ void CvUnit::hireGuard()
          UnitTypes eEscortUnit = (UnitTypes)GC.getCivilizationInfo(GET_PLAYER(ePlotCity->getOwnerINLINE()).getCivilizationType()).getCivilizationUnits((UnitClassTypes)GC.getPromotionInfo(ePromotion).getEscortUnitClass());
         if (eEscortUnit != NO_UNIT)
         {
-            GET_PLAYER(getOwnerINLINE()).changeGold(-GC.getCache_HIRE_GUARD_COST());
+            GET_PLAYER(getOwnerINLINE()).changeGold(-GC.getXMLval(XML_HIRE_GUARD_COST));
 
             setHasRealPromotion(ePromotion, true);
             setEscortPromotion(ePromotion);
@@ -15391,7 +15443,7 @@ bool CvUnit::canBuildTradingPost(bool bTestVisible)
         return false;
     }
 
-    BuildingTypes eBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(GC.getCache_NATIVE_TRADING_TRADEPOST());
+    BuildingTypes eBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(GC.getXMLval(XML_NATIVE_TRADING_TRADEPOST));
     if (!GET_PLAYER(getOwner()).canConstruct(eBuilding, false, false, true))
     {
         return false;
@@ -15414,7 +15466,7 @@ bool CvUnit::canBuildTradingPost(bool bTestVisible)
 
     if (!bTestVisible)
     {
-        if (GET_PLAYER(getOwner()).getGold() < GC.getCache_ESTABLISH_TRADEPOST_COST())
+        if (GET_PLAYER(getOwner()).getGold() < GC.getXMLval(XML_ESTABLISH_TRADEPOST_COST))
         {
             return false;
         }
@@ -15430,10 +15482,10 @@ void CvUnit::buildTradingPost(bool bTestVisible)
     {
         return;
     }
-    GET_PLAYER(getOwner()).changeGold(-GC.getCache_ESTABLISH_TRADEPOST_COST());
+    GET_PLAYER(getOwner()).changeGold(-GC.getXMLval(XML_ESTABLISH_TRADEPOST_COST));
     CvCity* pCity = plot()->getPlotCity();
     pCity->setTradePostBuilt(getTeam(), true);
-    BuildingTypes eBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(GC.getCache_NATIVE_TRADING_TRADEPOST());
+    BuildingTypes eBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(GC.getXMLval(XML_NATIVE_TRADING_TRADEPOST));
     pCity->setHasRealBuilding(eBuilding, true);
     CvWString szBuffer = gDLL->getText("TXT_KEY_ESTABLISH_TRADEPOST_MESSAGE", pCity->getNameKey());
     gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_BUILD_BANK", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE());
@@ -15492,7 +15544,7 @@ void CvUnit::buildHome()
     {
         ePlotCity->setHasRealBuilding(eBuilding, true);
         setAddedFreeBuilding(true);
-        PromotionTypes eHomeBoy = (PromotionTypes) GC.getCache_PROMOTION_BUILD_HOME();
+        PromotionTypes eHomeBoy = (PromotionTypes) GC.getXMLval(XML_PROMOTION_BUILD_HOME);
         setHasRealPromotion(eHomeBoy, false);
         CvWString szBuffer = gDLL->getText("TXT_KEY_UNIT_BUILT_HOME", getNameKey(), GC.getBuildingInfo(eBuilding).getDescription(), ePlotCity->getNameKey());
         gDLL->getInterfaceIFace()->addMessage(ePlotCity->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getUnitInfo(getUnitType()).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);

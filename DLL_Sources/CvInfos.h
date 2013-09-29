@@ -970,7 +970,42 @@ protected:
 	CvString m_szArtDefineButton;
 	std::vector<CvUnitMeshGroups> m_aProfessionGroups;
 	std::vector<int> m_aiSeeInvisibleTypes;
+
+	// EDU remake - start - Nightinggale
+public:
+	int getTeachLevel() const;
+	int getTeachLevelPython() const;
+protected:
+	int m_iTeachLevel;
+	// EDU remake - end - Nightinggale
+
+	// domestic yield demand - start - Nightinggale
+public:
+	int getYieldDemand(YieldTypes eYield) const;
+	bool demandsYields() const;
+protected:
+	YieldArray<int> m_aiYieldDemand;
+	// domestic yield demand - end - Nightinggale
 };
+
+// EDU remake - start - Nightinggale
+inline int CvUnitInfo::getTeachLevel() const
+{
+	return m_iTeachLevel;
+}
+// EDU remake - end - Nightinggale
+
+// domestic yield demand - start - Nightinggale
+int inline CvUnitInfo::getYieldDemand(YieldTypes eYield) const
+{
+	return m_aiYieldDemand.get(eYield);
+}
+
+bool inline CvUnitInfo::demandsYields() const
+{
+	return m_aiYieldDemand.isAllocated();
+}
+// domestic yield demand - end - Nightinggale
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //
@@ -1499,7 +1534,42 @@ protected:
 	int* m_aiPrereqNumOfBuildingClass;
 	int* m_aiYieldCost;
 	bool* m_abBuildingClassNeededInCity;
+	// EDU remake - start - Nightinggale
+public:
+	int getTeachLevel() const;
+	int getTeachLevelPython() const;
+protected:
+	int m_iTeachLevel;
+	// EDU remake - end - Nightinggale
+
+	// domestic yield demand - start - Nightinggale
+public:
+	int getYieldDemand(YieldTypes eYield) const;
+	int getMarketCap() const;
+protected:
+	YieldArray<int> m_aiYieldDemand;
+	int m_iMarketCap;
+	// domestic yield demand - end - Nightinggale
 };
+
+// EDU remake - start - Nightinggale
+inline int CvBuildingInfo::getTeachLevel() const
+{
+	return m_iTeachLevel;
+}
+// EDU remake - start - Nightinggale
+
+// domestic yield demand - start - Nightinggale
+int inline CvBuildingInfo::getYieldDemand(YieldTypes eYield) const
+{
+	return m_aiYieldDemand.get(eYield);
+}
+
+int inline CvBuildingInfo::getMarketCap() const
+{
+	return m_iMarketCap;
+}
+// domestic yield demand - end - Nightinggale
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //
@@ -2579,12 +2649,16 @@ public:
 	DllExport bool isMilitary() const;
 	DllExport bool isNativeTrade() const;
 	DllExport int getTradeScreenPrice(int i) const;
+
+	void setMustBeDiscovered(); // discoverable yield detection - Nightinggale
 	///Tke
 
 
 	DllExport bool read(CvXMLLoadUtility* pXML);
 	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 protected:
+	YieldTypes m_YieldType;
+
 	int m_iChar;
 	CvString m_szIcon;
 	CvString m_szHightlightIcon;
@@ -2612,12 +2686,12 @@ protected:
 	int m_iPowerValue;
 	int m_iAssetValue;
 
-	bool m_bCargo;
+	//bool m_bCargo;
 	///Tks Med
 	bool m_bIsMustBeDiscovered;
 	bool m_bIsMilitary;
 	bool m_bIsNativeTrade;
-	bool m_bIsArmor;
+	//bool m_bIsArmor;
 	int m_iLatitude;
 	int m_iLatitudeModifiers;
 	int* m_aiTradeScreenPrice;

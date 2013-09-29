@@ -100,11 +100,11 @@ void CvTeam::reset(TeamTypes eID, bool bConstructorCall)
 	m_iEverAliveCount = 0;
 	m_iNumCities = 0;
 	m_iTotalLand = 0;
-	m_iMapTradingCount = GC.getCache_ENABLE_MAP_TRADING();
-	m_iGoldTradingCount = GC.getCache_ENABLE_GOLD_TRADING();
-	m_iOpenBordersTradingCount = GC.getCache_ENABLE_OPEN_BORDERS();
-	m_iDefensivePactTradingCount = GC.getCache_ENABLE_DEFENSIVE_PACT_TRADING();
-	m_iPermanentAllianceTradingCount = GC.getCache_ENABLE_ALLIANCE_TRADING();
+	m_iMapTradingCount = GC.getXMLval(XML_ENABLE_MAP_TRADING);
+	m_iGoldTradingCount = GC.getXMLval(XML_ENABLE_GOLD_TRADING);
+	m_iOpenBordersTradingCount = GC.getXMLval(XML_ENABLE_OPEN_BORDERS);
+	m_iDefensivePactTradingCount = GC.getXMLval(XML_ENABLE_DEFENSIVE_PACT_TRADING);
+	m_iPermanentAllianceTradingCount = GC.getXMLval(XML_ENABLE_ALLIANCE_TRADING);
 
 	m_bMapCentering = false;
 
@@ -665,7 +665,7 @@ bool CvTeam::canDeclareWar(TeamTypes eTeam) const
 
 	if (hasColonialPlayer() && GET_TEAM(eTeam).hasColonialPlayer())
 	{
-		if (GC.getGameINLINE().getElapsedGameTurns() < GC.getCache_COLONIAL_FORCED_PEACE_TURNS())
+		if (GC.getGameINLINE().getElapsedGameTurns() < GC.getXMLval(XML_COLONIAL_FORCED_PEACE_TURNS))
 		{
 			return false;
 		}
@@ -1698,7 +1698,7 @@ int CvTeam::getFatherCostModifier() const
 	iCostModifier *= GC.getEraInfo(GC.getGameINLINE().getStartEra()).getFatherPercent();
 	iCostModifier /= 100;
 
-	iCostModifier *= std::max(0, ((GC.getCache_FATHER_COST_EXTRA_TEAM_MEMBER_MODIFIER() * (getNumMembers() - 1)) + 100));
+	iCostModifier *= std::max(0, ((GC.getXMLval(XML_FATHER_COST_EXTRA_TEAM_MEMBER_MODIFIER) * (getNumMembers() - 1)) + 100));
 	iCostModifier /= 100;
 
 	return iCostModifier;
@@ -1794,7 +1794,7 @@ void CvTeam::setFatherIgnore(FatherTypes eFather, bool bValue)
 bool CvTeam::canConvinceFather(FatherTypes eFather) const
 {
     ///TKs Med
-    FatherPointTypes eTradeType = (FatherPointTypes)GC.getCache_FATHER_POINT_REAL_TRADE();
+    FatherPointTypes eTradeType = (FatherPointTypes)GC.getXMLval(XML_FATHER_POINT_REAL_TRADE);
     if (GC.getFatherInfo(eFather).getFatherCategory() == eTradeType)
     {
         return false;
@@ -1829,7 +1829,7 @@ void CvTeam::convinceFather(FatherTypes eFather, bool bAccept)
 		return;
 	}
     ///TKs Med
-    FatherPointTypes eTradeType = (FatherPointTypes)GC.getCache_FATHER_POINT_REAL_TRADE();
+    FatherPointTypes eTradeType = (FatherPointTypes)GC.getXMLval(XML_FATHER_POINT_REAL_TRADE);
     if (GC.getFatherInfo(eFather).getFatherCategory() == eTradeType)
     {
         return;
@@ -1975,7 +1975,7 @@ HandicapTypes CvTeam::getHandicapType() const
 	}
 	else
 	{
-		return ((HandicapTypes)(GC.getCache_STANDARD_HANDICAP()));
+		return ((HandicapTypes)(GC.getXMLval(XML_STANDARD_HANDICAP)));
 	}
 }
 
@@ -2756,7 +2756,7 @@ bool CvTeam::canDoRevolution() const
        return true;
     }
     ///Tke
-	if (getRebelPercent() < GC.getCache_REBEL_PERCENT_FOR_REVOLUTION())
+	if (getRebelPercent() < GC.getXMLval(XML_REBEL_PERCENT_FOR_REVOLUTION))
 	{
 		return false;
 	}
@@ -2851,7 +2851,7 @@ void CvTeam::doRevolution()
 	bool bHasConstitution = false;
     for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
     {
-        if (GC.getCivicInfo((CivicTypes) iCivic).getCivicOptionType() == (CivicOptionTypes)GC.getCache_CIVICOPTION_INVENTIONS())
+        if (GC.getCivicInfo((CivicTypes) iCivic).getCivicOptionType() == (CivicOptionTypes)GC.getXMLval(XML_CIVICOPTION_INVENTIONS))
         {
             CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes) iCivic);
             if (kCivicInfo.isStartConstitution())
@@ -2871,7 +2871,7 @@ void CvTeam::doRevolution()
 		CvPlayer& kPlayer = GET_PLAYER((PlayerTypes) iPlayer);
 		if (kPlayer.isAlive() && kPlayer.getTeam() == getID())
 		{
-		    if (GC.getDefineINT("DIPLAY_NEW_VIDEOS") > 0)
+		    if (GC.getXMLval(XML_DIPLAY_NEW_VIDEOS) > 0)
             {
                 if (!CvString(CvWString("ART_DEF_MOVIE_REVOLUTION")).empty())
                 {

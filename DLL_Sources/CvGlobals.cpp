@@ -140,314 +140,6 @@ m_iUSE_ON_UPDATE_CALLBACK(0),
 m_iUSE_ON_UNIT_CREATED_CALLBACK(0),
 m_iUSE_ON_UNIT_LOST_CALLBACK(0),
 
-// cache XML - start - Nightinggale
-m_cache_ADVANCED_START_ALLOW_UNITS_OUTSIDE_CITIES(0),
-m_cache_ADVANCED_START_CITY_COST(0),
-m_cache_ADVANCED_START_CITY_COST_INCREASE(0),
-m_cache_ADVANCED_START_CITY_PLACEMENT_MAX_RANGE(0),
-m_cache_ADVANCED_START_CULTURE_COST(0),
-m_cache_ADVANCED_START_MAX_UNITS_PER_CITY(0),
-m_cache_ADVANCED_START_POPULATION_COST(0),
-m_cache_ADVANCED_START_POPULATION_COST_INCREASE(0),
-m_cache_ADVANCED_START_SIGHT_RANGE(0),
-m_cache_ADVANCED_START_VISIBILITY_COST(0),
-m_cache_ADVANCED_START_VISIBILITY_COST_INCREASE(0),
-m_cache_AI_ADVANCED_TECH_START(0),
-m_cache_AI_CAN_DISBAND_UNITS(0),
-m_cache_AI_CHEAT_AUTO_BUY(0),
-m_cache_AI_CHEAT_NEEDED_DEFENDERS(0),
-m_cache_AI_CHEAT_SPICE(0),
-m_cache_AI_CHEAT_SPICE_BUY(0),
-m_cache_AI_CHEAT_SPICE_MULTIPLE(0),
-m_cache_AI_FAVORED_TERRAIN_MOD(0),
-m_cache_AI_HANDICAP_CASTLE(0),
-m_cache_AI_HANDICAP_MOTTE(0),
-m_cache_AI_MILITARY_PROFESSION_HACK(0),
-m_cache_AI_WAREHOUSE_MOD(0),
-m_cache_ALLIANCE_CULTURE_PERCENT_DENIAL(0),
-m_cache_ALLIANCE_PACT_PEACE_DENIAL(0),
-m_cache_ANIMAL_BANDITS_GUARD_GOODY_TIMER(0),
-m_cache_AUTORESEARCH_ALL(0),
-m_cache_BANQUET_YIELD_AMOUNT(0),
-m_cache_BARBARIAN_CIVILIZATION(0),
-m_cache_BARBARIAN_LEADER(0),
-m_cache_BASE_CITY_GROWTH_THRESHOLD(0),
-m_cache_BASE_CITY_LUXURY_FOOD_THRESHOLD_MOD(0),
-m_cache_BASE_OCCUPATION_TURNS(0),
-m_cache_BASE_UNIT_UPGRADE_COST(0),
-m_cache_BUILDINGCLASS_TRAVEL_TO_FAIR(0),
-m_cache_BUILDING_PRODUCTION_DECAY_PERCENT(0),
-m_cache_BUILDING_PRODUCTION_DECAY_TIME(0),
-m_cache_BUILDING_PRODUCTION_PERCENT(0),
-m_cache_BUY_PLOT_BASE_CULTURE_COST(0),
-m_cache_BUY_PLOT_CULTURE_RANGE(0),
-m_cache_BUY_PLOT_MIN_CULTURE(0),
-m_cache_BUY_PLOT_OWNED_COST_MODIFIER(0),
-m_cache_BUY_PLOT_SELLER_INCOME_PERCENT(0),
-m_cache_CALENDER_YEAR_FIRST_CHANGE_TURN(0),
-m_cache_CALENDER_YEAR_FIRST_MULTIPLIER(0),
-m_cache_CALENDER_YEAR_SECOND_CHANGE_TURN(0),
-m_cache_CALENDER_YEAR_SECOND_MULTIPLIER(0),
-m_cache_CALENDER_YEAR_THIRD_MULTIPLIER(0),
-m_cache_CAPITAL_BUILDINGCLASS(0),
-m_cache_CAPTURED_CARGO_RANDOM_AMOUNT(0),
-m_cache_CAPTURED_LUXURY_FOOD_RANDOM_AMOUNT(0),
-m_cache_CASTLES_TO_VILLAGES_RATIO(0),
-m_cache_CHANCE_TO_CAPTURE_CRIMINALS(0),
-m_cache_CHEAT_TRAVEL_ALL(0),
-m_cache_CITY_DEFENSE_DAMAGE_HEAL_RATE(0),
-m_cache_CITY_FREE_CULTURE_GROWTH_FACTOR(0),
-m_cache_CITY_GROWTH_MULTIPLIER(0),
-m_cache_CITY_HEAL_RATE(0),
-m_cache_CITY_PILGRAM_RANDOM(0),
-m_cache_CITY_SCREEN_FOG_ENABLED(0),
-m_cache_CITY_YIELD_CAPACITY(0),
-m_cache_CITY_YIELD_DECAY_PERCENT(0),
-m_cache_CIVICOPTION_INVENTIONS(0),
-m_cache_COLONIAL_FORCED_PEACE_TURNS(0),
-m_cache_COMBAT_DAMAGE(0),
-m_cache_COMBAT_DIE_SIDES(0),
-m_cache_COMBAT_EXPERIENCE_IN_BORDERS_PERCENT(0),
-m_cache_CONSUME_EQUIPMENT_ON_FOUND(0),
-m_cache_CONTACT_YIELD_GIFT_ENCOMEIDA_TIMER(0),
-m_cache_CONTACT_YIELD_GIFT_TECH(0),
-m_cache_CULTURE_YIELD(0),
-m_cache_DEAL_TRADE_RELATIONS_POINTS(0),
-m_cache_DEEP_WATER_TERRAIN(0),
-m_cache_DEFAULT_BUILD_CASTLE(0),
-m_cache_DEFAULT_BUILD_MOTTE_AND_BAILEY(0),
-m_cache_DEFAULT_CENSURETYPE_ANATHEMA(0),
-m_cache_DEFAULT_CENSURETYPE_ANATHEMA_COUNT(0),
-m_cache_DEFAULT_CENSURETYPE_EXCOMMUNICATION(0),
-m_cache_DEFAULT_CENSURETYPE_EXCOMMUNICATION_COUNT(0),
-m_cache_DEFAULT_CENSURETYPE_INTERDICT(0),
-m_cache_DEFAULT_CENSURETYPE_INTERDICT_COUNT(0),
-m_cache_DEFAULT_COMBAT_FOR_TRAINING(0),
-m_cache_DEFAULT_DAWN_POPULATION_UNIT(0),
-m_cache_DEFAULT_FUEDALISM_TECH(0),
-m_cache_DEFAULT_GRAIN_GROWTH_UNIT_CLASS(0),
-m_cache_DEFAULT_HUNTSMAN_PROFESSION(0),
-m_cache_DEFAULT_INVENTOR_CLASS(0),
-m_cache_DEFAULT_KNIGHT_PROFESSION_PROMOTION(0),
-m_cache_DEFAULT_KNIGHT_PROMOTION(0),
-m_cache_DEFAULT_MARAUDER_CLASS(0),
-m_cache_DEFAULT_MARUADER_SEA_PROFESSION(0),
-m_cache_DEFAULT_NOBLEMAN_CLASS(0),
-m_cache_DEFAULT_NOBLE_GROWTH_UNIT_CLASS(0),
-m_cache_DEFAULT_PILGRAM_CLASS(0),
-m_cache_DEFAULT_POPULATION_UNIT(0),
-m_cache_DEFAULT_SHRINE_CLASS(0),
-m_cache_DEFAULT_SLAVE_CLASS(0),
-m_cache_DEFAULT_SPECIALBUILDING_COURTHOUSE(0),
-m_cache_DEFAULT_TEST_DEFINE(0),
-m_cache_DEFAULT_TRAINED_PROMOTION(0),
-m_cache_DEFAULT_TREASURE_YIELD(0),
-m_cache_DEFAULT_UNTRAINED_PROMOTION(0),
-m_cache_DEFAULT_VIKING_ERA(0),
-m_cache_DEFAULT_YIELD_ARMOR_TYPE(0),
-m_cache_DIFFERENT_TEAM_FEATURE_PRODUCTION_PERCENT(0),
-m_cache_DIPLOMACY_VALUE_REMAINDER(0),
-m_cache_DOCKS_NEXT_UNITS(0),
-m_cache_EDUCATION_BASE_TUITION(0),
-m_cache_EDUCATION_THRESHOLD(0),
-m_cache_EDUCATION_THRESHOLD_INCREASE(0),
-m_cache_ENABLE_ALLIANCE_TRADING(0),
-m_cache_ENABLE_DEFENSIVE_PACT_TRADING(0),
-m_cache_ENABLE_GOLD_TRADING(0),
-m_cache_ENABLE_MAP_TRADING(0),
-m_cache_ENABLE_OPEN_BORDERS(0),
-m_cache_END_GAME_DISPLAY_WARNING(0),
-m_cache_ENEMY_HEAL_RATE(0),
-m_cache_ESTABLISH_TRADEPOST_COST(0),
-m_cache_EUROPE_EAST(0),
-m_cache_EUROPE_MARKET_CORRELATION_PERCENT(0),
-m_cache_EVENT_PROBABILITY_ROLL_SIDES(0),
-m_cache_EXPERIENCE_FROM_WITHDRAWL(0),
-m_cache_EXTRA_YIELD(0),
-m_cache_FATHER_COST_EXTRA_TEAM_MEMBER_MODIFIER(0),
-m_cache_FATHER_POINT_REAL_TRADE(0),
-m_cache_FEATURE_PRODUCTION_YIELD_MAX_DISTANCE(0),
-m_cache_FIRST_EVENT_DELAY_TURNS(0),
-m_cache_FOUND_MONASTERY_NUMBER(0),
-m_cache_FOUND_MOTTE_AND_BAILEY_NUMBER(0),
-m_cache_FOUND_OUTPOST_NUMBER(0),
-m_cache_FOUND_VILLAGE_NUMBER(0),
-m_cache_FREE_CITY_ADJACENT_CULTURE(0),
-m_cache_FREE_CITY_CULTURE(0),
-m_cache_FREE_PEASANT_CIVIC(0),
-m_cache_FRIENDLY_HEAL_RATE(0),
-m_cache_GREAT_GENERALS_THRESHOLD(0),
-m_cache_GREAT_GENERALS_THRESHOLD_INCREASE(0),
-m_cache_GREAT_GENERALS_THRESHOLD_INCREASE_TEAM(0),
-m_cache_HIRE_GUARD_COST(0),
-m_cache_HIRE_GUARD_PROMOTION(0),
-m_cache_IMMIGRATION_MAX_CITY_DISTANCE(0),
-m_cache_IMMIGRATION_THRESHOLD(0),
-m_cache_IMMIGRATION_THRESHOLD_INCREASE(0),
-m_cache_IMMIGRATION_TRAVEL_MOD(0),
-m_cache_INDUSTRIAL_VICTORY_SINGLE_YIELD(0),
-m_cache_INITIAL_AI_CITY_PRODUCTION(0),
-m_cache_INITIAL_CITY_POPULATION(0),
-m_cache_INITIAL_CITY_ROUTE_TYPE(0),
-m_cache_JUNGLE_FEATURE(0),
-m_cache_KING_BUY_UNIT_PRICE_MODIFIER(0),
-m_cache_KING_INITIAL_UNIT_INCREASE(0),
-m_cache_KING_TRANSPORT_TREASURE_COMISSION(0),
-m_cache_KNIGHT_RANSOM_MOD(0),
-m_cache_LAKE_PLOT_RAND(0),
-m_cache_LAND_IMPROVEMENT(0),
-m_cache_LAND_TERRAIN(0),
-m_cache_MARAUDERS_DAYSOUT_RANDOM(0),
-m_cache_MARAUDERS_TOWER_RANGE(0),
-m_cache_MARAUDER_CRUMBS_EVENT(0),
-m_cache_MARAUDER_EVENT_DEFAULT_TURNS(0),
-m_cache_MAX_CITY_POPULATION_COMMUNE(0),
-m_cache_MAX_CITY_POPULATION_VILLAGE(0),
-m_cache_MAX_EXPERIENCE_AFTER_UPGRADE(0),
-m_cache_MAX_EXPERIENCE_PER_COMBAT(0),
-m_cache_MAX_FORTIFY_TURNS(0),
-m_cache_MAX_INSULT_MODIFIER(0),
-m_cache_MAX_LEVEL_FROM_ANIMAL_XP(0),
-m_cache_MAX_MARAUDERS(0),
-m_cache_MAX_NUM_LANGUAGES(0),
-m_cache_MAX_PLOT_LIST_SIZE(0),
-m_cache_MAX_REBEL_COMBAT_MULTIPLER(0),
-m_cache_MAX_TRAINED_EXPERIENCE(0),
-m_cache_MAX_WITHDRAWAL_PROBABILITY(0),
-m_cache_MEDIEVAL_CENSURE(0),
-m_cache_MEDIEVAL_TRADE_TECH(0),
-m_cache_MINIMAP_RENDER_SIZE(0),
-m_cache_MIN_ANIMAL_STARTING_DISTANCE(0),
-m_cache_MIN_CITY_YIELD_DECAY(0),
-m_cache_MIN_CIV_STARTING_DISTANCE(0),
-m_cache_MIN_EXPERIENCE_PER_COMBAT(0),
-m_cache_MIN_TIMER_UNIT_DOUBLE_MOVES(0),
-m_cache_MIN_WATER_SIZE_FOR_OCEAN(0),
-m_cache_MISSIONARY_RATE_EFFECT_ON_SUCCESS(0),
-m_cache_MISSIONARY_THRESHOLD(0),
-m_cache_MISSIONARY_THRESHOLD_INCREASE(0),
-m_cache_MONASTERIES_TO_VILLAGES_RATIO(0),
-m_cache_NATIVE_AUTO_SELL_PERCENT(0),
-m_cache_NATIVE_GOODS_RAID_PERCENT(0),
-m_cache_NATIVE_GROWTH_THRESHOLD_MULTIPLIER(0),
-m_cache_NATIVE_HORSES_FOR_SALE(0),
-m_cache_NATIVE_HORSES_FOR_SALE_PERCENT(0),
-m_cache_NATIVE_TEACH_THRESHOLD_INCREASE(0),
-m_cache_NATIVE_TECH(0),
-m_cache_NATIVE_TRADING_TRADEPOST(0),
-m_cache_NEUTRAL_HEAL_RATE(0),
-m_cache_NEW_CITY_BUILDING_VALUE_MODIFIER(0),
-m_cache_NEW_HURRY_MODIFIER(0),
-m_cache_NOBLE_FIELD_LABOR_PENALTY(0),
-m_cache_NO_BAD_GOODIES_EXPERIENCE_PERCENT(0),
-m_cache_NO_BAD_GOODIES_GOLD_PERCENT(0),
-m_cache_NO_CITY_SHORTAGE_MESSAGES(0),
-m_cache_NO_STARTING_PLOTS_IN_JUNGLE(0),
-m_cache_OCCUPATION_CULTURE_PERCENT_THRESHOLD(0),
-m_cache_OCCUPATION_TURNS_POPULATION_PERCENT(0),
-m_cache_OWNERSHIP_SCORE_DURATION_THRESHOLD(0),
-m_cache_OWN_TEAM_STARTING_MODIFIER(0),
-m_cache_PEACE_TREATY_LENGTH(0),
-m_cache_PERCENT_TAX_ON_AUTOSELL_GOODS(0),
-m_cache_PILGRAM_OFFER_GOLD(0),
-m_cache_PILGRAM_OFFER_GOLD_DISTANCE_MOD(0),
-m_cache_PLAYER_ALWAYS_RAZES_CITIES(0),
-m_cache_PLOTS_PER_RIVER_EDGE(0),
-m_cache_PLOT_VISIBILITY_RANGE(0),
-m_cache_PROFESSION_COAL_BURNER(0),
-m_cache_PROFESSION_INVENTOR(0),
-m_cache_PROLIFIC_INVENTOR_THRESHOLD_INCREASE(0),
-m_cache_PROMOTION_BUILD_HOME(0),
-m_cache_RANDOM_TURNS_LOST_AT_SEA(0),
-m_cache_RAZING_CULTURAL_PERCENT_THRESHOLD(0),
-m_cache_REBEL_PERCENT_FOR_REVOLUTION(0),
-m_cache_REBEL_SENTIMENT_BELLS_FACTOR(0),
-m_cache_REBEL_SENTIMENT_TURN_WEIGHT(0),
-m_cache_REVOLUTION_EUROPE_UNIT_SHIP_MODIFIER(0),
-m_cache_REVOLUTION_EUROPE_UNIT_THRESHOLD(0),
-m_cache_REVOLUTION_EUROPE_UNIT_THRESHOLD_INCREASE(0),
-m_cache_RIVAL_TEAM_STARTING_MODIFIER(0),
-m_cache_RIVER_SOURCE_MIN_RIVER_RANGE(0),
-m_cache_RIVER_SOURCE_MIN_SEAWATER_RANGE(0),
-m_cache_RUINS_IMPROVEMENT(0),
-m_cache_SCORE_FATHER_FACTOR(0),
-m_cache_SCORE_LAND_FACTOR(0),
-m_cache_SCORE_POPULATION_FACTOR(0),
-m_cache_SCORE_TAX_FACTOR(0),
-m_cache_SETTLEMENT_TREASURE_YIELD(0),
-m_cache_SHALLOW_WATER_TERRAIN(0),
-m_cache_SLAVE_FOOD_CONSUMPTION_PER_POPULATION(0),
-m_cache_STANDARD_CALENDAR(0),
-m_cache_STANDARD_CLIMATE(0),
-m_cache_STANDARD_ERA(0),
-m_cache_STANDARD_GAMESPEED(0),
-m_cache_STANDARD_HANDICAP(0),
-m_cache_STANDARD_SEALEVEL(0),
-m_cache_STANDARD_TURNTIMER(0),
-m_cache_STARTING_DISTANCE_PERCENT(0),
-m_cache_START_YEAR(0),
-m_cache_STEAMWORKS_BUILDING(0),
-m_cache_STEAMWORKS_CLASS_TYPE(0),
-m_cache_TAX_INCREASE_CHANCE(0),
-m_cache_TAX_RATE_MAX_INCREASE(0),
-m_cache_TAX_TRADE_THRESHOLD(0),
-m_cache_TAX_TRADE_THRESHOLD_ATTITUDE_PERCENT(0),
-m_cache_TAX_TRADE_THRESHOLD_TAX_RATE_PERCENT(0),
-m_cache_TK_AI_RESEARCH_COST_MOD_PERCENT(0),
-m_cache_TK_HUMAN_RESEARCH_COST_MOD_PERCENT(0),
-m_cache_TK_IDEAS_CITY_VALUE(0),
-m_cache_TK_MAX_FORTS_PER_CITY(0),
-m_cache_TK_PIONEER_COAL_FURNACE_BONUS(0),
-m_cache_TK_PROLIFIC_INVENTOR_PROGRESS(0),
-m_cache_TK_PROLIFIC_INVENTOR_THRESHOLD(0),
-m_cache_TK_RESEARCH_PACT_IDEAS_THRESHOLD(0),
-m_cache_TK_RESEARCH_TRADE_VALUE(0),
-m_cache_TK_STEAMWORKS_MODIFIER(0),
-m_cache_TRADE_POINTS_FOR_ROUTE(0),
-m_cache_TRADE_ROUTE_SPICE(0),
-m_cache_TRADE_STIMULATES_RESEARCH_MIN_VALUE(0),
-m_cache_TRADE_STIMULATES_RESEARCH_PERCENT(0),
-m_cache_TRADING_POINTS_MOD_PERCENT(0),
-m_cache_TREASURE_UNITCLASS(0),
-m_cache_TREASURE_UNITS_ONLY_SELECT_COASTAL(0),
-m_cache_TURNS_TO_TRAIN(0),
-m_cache_UNITARMOR_LEATHER(0),
-m_cache_UNITARMOR_MAIL(0),
-m_cache_UNITARMOR_PLATE(0),
-m_cache_UNITARMOR_SCALE(0),
-m_cache_UNITARMOR_SHIELD(0),
-m_cache_UNITCLASS_PIONEER(0),
-m_cache_UNITTACTIC_PARRY(0),
-m_cache_UNITWEAPON_BLUNT(0),
-m_cache_UNIT_PRODUCTION_DECAY_PERCENT(0),
-m_cache_UNIT_PRODUCTION_DECAY_TIME(0),
-m_cache_UNIT_PRODUCTION_PERCENT(0),
-m_cache_UNIT_UPGRADE_COST_PER_PRODUCTION(0),
-m_cache_UNIT_VISIBILITY_RANGE(0),
-m_cache_USE_MEDIEVAL_CALENDER(0),
-m_cache_VASSAL_CIVILIZATION(0),
-m_cache_VASSAL_LEADER(0),
-m_cache_WARLORD_EXTRA_EXPERIENCE_PER_UNIT_PERCENT(0),
-m_cache_WAR_SUCCESS_ATTACKING(0),
-m_cache_WAR_SUCCESS_CITY_CAPTURING(0),
-m_cache_WAR_SUCCESS_DEFENDING(0),
-m_cache_WAR_SUCCESS_UNIT_CAPTURING(0),
-m_cache_WATER_IMPROVEMENT(0),
-m_cache_WATER_UNIT_FACING_DIRECTION(0),
-m_cache_WEEKS_PER_MONTHS(0),
-m_cache_WILD_ANIMAL_ATTACK_WEIGHT(0),
-m_cache_WILD_ANIMAL_LAND_BONUS_NATIVE_WEIGHT(0),
-m_cache_WILD_ANIMAL_LAND_FEATURE_NATIVE_WEIGHT(0),
-m_cache_WILD_ANIMAL_LAND_PATROL_BASE_WEIGHT(0),
-m_cache_WILD_ANIMAL_LAND_TERRAIN_NATIVE_WEIGHT(0),
-m_cache_WILD_ANIMAL_LAND_UNIT_VARIATION_WEIGHT(0),
-m_cache_WILD_ANIMAL_SEA_BONUS_NATIVE_WEIGHT(0),
-m_cache_WILD_ANIMAL_SEA_FEATURE_NATIVE_WEIGHT(0),
-m_cache_WILD_ANIMAL_SEA_PATROL_BASE_WEIGHT(0),
-m_cache_WILD_ANIMAL_SEA_TERRAIN_NATIVE_WEIGHT(0),
-m_cache_WILD_ANIMAL_SEA_UNIT_VARIATION_WEIGHT(0),
-// cache XML - end - Nightinggale
-
 m_paHints(NULL),
 m_paMainMenus(NULL)
 {
@@ -1915,7 +1607,7 @@ int CvGlobals::getCostToResearch(CivicTypes eCivic)
         ///TK Update 1.1b
         CvCivicInfo& kCivicInfo = GC.getCivicInfo(eCivic);
         int iCivicResearchCost = kCivicInfo.getCostToResearch();
-        iCivicResearchCost = (iCivicResearchCost * GC.getCache_TK_HUMAN_RESEARCH_COST_MOD_PERCENT()) / 100;
+        iCivicResearchCost = (iCivicResearchCost * GC.getXMLval(XML_TK_HUMAN_RESEARCH_COST_MOD_PERCENT)) / 100;
         return iCivicResearchCost;
     }
     return 0;
@@ -1927,7 +1619,7 @@ bool CvGlobals::isEquipmentType(YieldTypes eEquipment, UnitEquipmentTypes eType)
 {
     if (eType == EQUIPMENT_ANY)
     {
-        if (eEquipment == YIELD_LEATHER_ARMOR || eEquipment == YIELD_SCALE_ARMOR || eEquipment == YIELD_MAIL_ARMOR || eEquipment == YIELD_PLATE_ARMOR)
+        if (YieldGroup_Armor(eEquipment))
         //if (eEquipment == YIELD_LEATHER_ARMOR || eEquipment == YIELD_SCALE_ARMOR)
         {
             return true;
@@ -1940,7 +1632,7 @@ bool CvGlobals::isEquipmentType(YieldTypes eEquipment, UnitEquipmentTypes eType)
     }
     else if (eType == EQUIPMENT_HEAVY_ARMOR)
     {
-        if (eEquipment == YIELD_SCALE_ARMOR || eEquipment == YIELD_MAIL_ARMOR || eEquipment == YIELD_PLATE_ARMOR)
+        if (YieldGroup_Heavy_Armor(eEquipment))
         //if (eEquipment == YIELD_SCALE_ARMOR)
         {
             return true;
@@ -1948,7 +1640,7 @@ bool CvGlobals::isEquipmentType(YieldTypes eEquipment, UnitEquipmentTypes eType)
     }
     else if (eType == EQUIPMENT_ANY_ARMOR)
     {
-        if (eEquipment == YIELD_LEATHER_ARMOR || eEquipment == YIELD_SCALE_ARMOR || eEquipment == YIELD_MAIL_ARMOR || eEquipment == YIELD_PLATE_ARMOR)
+        if (YieldGroup_Armor(eEquipment))
         //if (eEquipment == YIELD_LEATHER_ARMOR || eEquipment == YIELD_SCALE_ARMOR)
         {
             return true;
@@ -1956,7 +1648,7 @@ bool CvGlobals::isEquipmentType(YieldTypes eEquipment, UnitEquipmentTypes eType)
     }
     else if (eType == EQUIPMENT_ARMOR_HORSES)
     {
-        if (eEquipment == YIELD_LEATHER_ARMOR || eEquipment == YIELD_SCALE_ARMOR || eEquipment == YIELD_MAIL_ARMOR || eEquipment == YIELD_PLATE_ARMOR)
+        if (YieldGroup_Armor(eEquipment))
         //if (eEquipment == YIELD_LEATHER_ARMOR || eEquipment == YIELD_SCALE_ARMOR || eEquipment == YIELD_MAIL_ARMOR || eEquipment == YIELD_PLATE_ARMOR)
         {
             return true;
@@ -2593,6 +2285,15 @@ FVariableSystem* CvGlobals::getDefinesVarSystem()
 
 void CvGlobals::cacheGlobals()
 {
+	// cache XML - start - Nightinggale
+	// init all variables into a value we hope not to use for real
+	// this way we can later assert if a variable is unset
+	for (int i=0; i <NUM_XML_CONSTANTS; i++)
+	{
+		this->m_aiDefineCache[i] = -31337;
+	}
+	// cache XML - end - Nightinggale
+
 	m_iMOVE_DENOMINATOR = getDefineINT("MOVE_DENOMINATOR");
 	m_iFOOD_CONSUMPTION_PER_POPULATION = getDefineINT("FOOD_CONSUMPTION_PER_POPULATION");
 	m_iMAX_HIT_POINTS = getDefineINT("MAX_HIT_POINTS");
@@ -2655,6 +2356,341 @@ void CvGlobals::cacheGlobals()
 	m_iUSE_ON_UNIT_CREATED_CALLBACK = getDefineINT("USE_ON_UNIT_CREATED_CALLBACK");
 	m_iUSE_ON_UNIT_LOST_CALLBACK = getDefineINT("USE_ON_UNIT_LOST_CALLBACK");
 }
+
+// cache XML - start - Nightinggale
+void CvGlobals::cacheXMLval()
+{
+	// EDU remake - start - Nightinggale
+	for (int i = 0; i < NUM_TEACH_LEVELS; i++)
+	{
+		this->m_aiEducationCost[i] = getDefineFLOAT(CvString::format("EDUCATION_COST_LEVEL_%d", i+1).c_str());
+	}
+	// EDU remake - start - Nightinggale
+	// discoverable yield detection - start - Nightinggale
+	// compile output cache for CvYieldInfo::isMustBeDiscovered()
+	for (int i = 0; i < NUM_YIELD_TYPES; i++)
+	{
+		this->getYieldInfo((YieldTypes)i).setMustBeDiscovered();
+	}
+	// discoverable yield detection - end - Nightinggale
+
+	// BasicInfos\CIV4UnitCombatInfos.xml
+	this->m_aiDefineCache[XML_UNITARMOR_LEATHER                        ] = this->getDefineINT("UNITARMOR_LEATHER");
+	this->m_aiDefineCache[XML_UNITARMOR_SCALE                          ] = this->getDefineINT("UNITARMOR_SCALE");
+	this->m_aiDefineCache[XML_UNITARMOR_MAIL                           ] = this->getDefineINT("UNITARMOR_MAIL");
+
+	// Units\CIV4PromotionInfos.xml
+	this->m_aiDefineCache[XML_PROMOTION_BUILD_HOME                     ] = this->getDefineINT("PROMOTION_BUILD_HOME");
+
+	// GlobalDefineALT.xml
+	this->m_aiDefineCache[XML_AI_ADVANCED_TECH_START                   ] = this->getDefineINT("AI_ADVANCED_TECH_START");
+	this->m_aiDefineCache[XML_AI_CHEAT_AUTO_BUY                        ] = this->getDefineINT("AI_CHEAT_AUTO_BUY");
+	this->m_aiDefineCache[XML_AI_CHEAT_NEEDED_DEFENDERS                ] = this->getDefineINT("AI_CHEAT_NEEDED_DEFENDERS");
+	this->m_aiDefineCache[XML_AI_CHEAT_SPICE                           ] = this->getDefineINT("AI_CHEAT_SPICE");
+	this->m_aiDefineCache[XML_AI_CHEAT_SPICE_BUY                       ] = this->getDefineINT("AI_CHEAT_SPICE_BUY");
+	this->m_aiDefineCache[XML_AI_CHEAT_SPICE_MULTIPLE                  ] = this->getDefineINT("AI_CHEAT_SPICE_MULTIPLE");
+	this->m_aiDefineCache[XML_AI_FAVORED_TERRAIN_MOD                   ] = this->getDefineINT("AI_FAVORED_TERRAIN_MOD");
+	this->m_aiDefineCache[XML_AI_HANDICAP_CASTLE                       ] = this->getDefineINT("AI_HANDICAP_CASTLE");
+	this->m_aiDefineCache[XML_AI_HANDICAP_MOTTE                        ] = this->getDefineINT("AI_HANDICAP_MOTTE");
+	this->m_aiDefineCache[XML_AI_MILITARY_PROFESSION_HACK              ] = this->getDefineINT("AI_MILITARY_PROFESSION_HACK");
+	this->m_aiDefineCache[XML_AI_WAREHOUSE_MOD                         ] = this->getDefineINT("AI_WAREHOUSE_MOD");
+	this->m_aiDefineCache[XML_ALLIANCE_CULTURE_PERCENT_DENIAL          ] = this->getDefineINT("ALLIANCE_CULTURE_PERCENT_DENIAL");
+	this->m_aiDefineCache[XML_ALLIANCE_PACT_PEACE_DENIAL               ] = this->getDefineINT("ALLIANCE_PACT_PEACE_DENIAL");
+	this->m_aiDefineCache[XML_ANIMAL_BANDITS_GUARD_GOODY_TIMER         ] = this->getDefineINT("ANIMAL_BANDITS_GUARD_GOODY_TIMER");
+	this->m_aiDefineCache[XML_AUTORESEARCH_ALL                         ] = this->getDefineINT("AUTORESEARCH_ALL");
+	this->m_aiDefineCache[XML_BANQUET_YIELD_AMOUNT                     ] = this->getDefineINT("BANQUET_YIELD_AMOUNT");
+	this->m_aiDefineCache[XML_BARBARIAN_CIVILIZATION                   ] = this->getDefineINT("BARBARIAN_CIVILIZATION");
+	this->m_aiDefineCache[XML_BARBARIAN_LEADER                         ] = this->getDefineINT("BARBARIAN_LEADER");
+	this->m_aiDefineCache[XML_BASE_CITY_GROWTH_THRESHOLD               ] = this->getDefineINT("BASE_CITY_GROWTH_THRESHOLD");
+	this->m_aiDefineCache[XML_BASE_CITY_LUXURY_FOOD_THRESHOLD_MOD      ] = this->getDefineINT("BASE_CITY_LUXURY_FOOD_THRESHOLD_MOD");
+	this->m_aiDefineCache[XML_BUILDINGCLASS_TRAVEL_TO_FAIR             ] = this->getDefineINT("BUILDINGCLASS_TRAVEL_TO_FAIR");
+	this->m_aiDefineCache[XML_CALENDER_YEAR_FIRST_CHANGE_TURN          ] = this->getDefineINT("CALENDER_YEAR_FIRST_CHANGE_TURN");
+	this->m_aiDefineCache[XML_CALENDER_YEAR_FIRST_MULTIPLIER           ] = this->getDefineINT("CALENDER_YEAR_FIRST_MULTIPLIER");
+	this->m_aiDefineCache[XML_CALENDER_YEAR_SECOND_CHANGE_TURN         ] = this->getDefineINT("CALENDER_YEAR_SECOND_CHANGE_TURN");
+	this->m_aiDefineCache[XML_CALENDER_YEAR_SECOND_MULTIPLIER          ] = this->getDefineINT("CALENDER_YEAR_SECOND_MULTIPLIER");
+	this->m_aiDefineCache[XML_CALENDER_YEAR_THIRD_MULTIPLIER           ] = this->getDefineINT("CALENDER_YEAR_THIRD_MULTIPLIER");
+	this->m_aiDefineCache[XML_CAPTURED_CARGO_RANDOM_AMOUNT             ] = this->getDefineINT("CAPTURED_CARGO_RANDOM_AMOUNT");
+	this->m_aiDefineCache[XML_CAPTURED_LUXURY_FOOD_RANDOM_AMOUNT       ] = this->getDefineINT("CAPTURED_LUXURY_FOOD_RANDOM_AMOUNT");
+	this->m_aiDefineCache[XML_CASTLES_TO_VILLAGES_RATIO                ] = this->getDefineINT("CASTLES_TO_VILLAGES_RATIO");
+	this->m_aiDefineCache[XML_CHANCE_TO_CAPTURE_CRIMINALS              ] = this->getDefineINT("CHANCE_TO_CAPTURE_CRIMINALS");
+	this->m_aiDefineCache[XML_CHEAT_TRAVEL_ALL                         ] = this->getDefineINT("CHEAT_TRAVEL_ALL");
+	this->m_aiDefineCache[XML_CITY_PILGRAM_RANDOM                      ] = this->getDefineINT("CITY_PILGRAM_RANDOM");
+	this->m_aiDefineCache[XML_CIVICOPTION_INVENTIONS                   ] = this->getDefineINT("CIVICOPTION_INVENTIONS");
+	this->m_aiDefineCache[XML_COLONIAL_FORCED_PEACE_TURNS              ] = this->getDefineINT("COLONIAL_FORCED_PEACE_TURNS");
+	this->m_aiDefineCache[XML_CONTACT_YIELD_GIFT_ENCOMEIDA_TIMER       ] = this->getDefineINT("CONTACT_YIELD_GIFT_ENCOMEIDA_TIMER");
+	this->m_aiDefineCache[XML_CONTACT_YIELD_GIFT_TECH                  ] = this->getDefineINT("CONTACT_YIELD_GIFT_TECH");
+	this->m_aiDefineCache[XML_DEAL_TRADE_RELATIONS_POINTS              ] = this->getDefineINT("DEAL_TRADE_RELATIONS_POINTS");
+	this->m_aiDefineCache[XML_DEFAULT_CENSURETYPE_ANATHEMA             ] = this->getDefineINT("DEFAULT_CENSURETYPE_ANATHEMA");
+	this->m_aiDefineCache[XML_DEFAULT_CENSURETYPE_ANATHEMA_COUNT       ] = this->getDefineINT("DEFAULT_CENSURETYPE_ANATHEMA_COUNT");
+	this->m_aiDefineCache[XML_DEFAULT_CENSURETYPE_EXCOMMUNICATION      ] = this->getDefineINT("DEFAULT_CENSURETYPE_EXCOMMUNICATION");
+	this->m_aiDefineCache[XML_DEFAULT_CENSURETYPE_EXCOMMUNICATION_COUNT] = this->getDefineINT("DEFAULT_CENSURETYPE_EXCOMMUNICATION_COUNT");
+	this->m_aiDefineCache[XML_DEFAULT_CENSURETYPE_INTERDICT            ] = this->getDefineINT("DEFAULT_CENSURETYPE_INTERDICT");
+	this->m_aiDefineCache[XML_DEFAULT_CENSURETYPE_INTERDICT_COUNT      ] = this->getDefineINT("DEFAULT_CENSURETYPE_INTERDICT_COUNT");
+	this->m_aiDefineCache[XML_DEFAULT_COMBAT_FOR_TRAINING              ] = this->getDefineINT("DEFAULT_COMBAT_FOR_TRAINING");
+	this->m_aiDefineCache[XML_DEFAULT_DAWN_POPULATION_UNIT             ] = this->getDefineINT("DEFAULT_DAWN_POPULATION_UNIT");
+	this->m_aiDefineCache[XML_DEFAULT_FUEDALISM_TECH                   ] = this->getDefineINT("DEFAULT_FUEDALISM_TECH");
+	this->m_aiDefineCache[XML_DEFAULT_GRAIN_GROWTH_UNIT_CLASS          ] = this->getDefineINT("DEFAULT_GRAIN_GROWTH_UNIT_CLASS");
+	this->m_aiDefineCache[XML_DEFAULT_HUNTSMAN_PROFESSION              ] = this->getDefineINT("DEFAULT_HUNTSMAN_PROFESSION");
+	this->m_aiDefineCache[XML_DEFAULT_INVENTOR_CLASS                   ] = this->getDefineINT("DEFAULT_INVENTOR_CLASS");
+	this->m_aiDefineCache[XML_DEFAULT_KNIGHT_PROFESSION_PROMOTION      ] = this->getDefineINT("DEFAULT_KNIGHT_PROFESSION_PROMOTION");
+	this->m_aiDefineCache[XML_DEFAULT_KNIGHT_PROMOTION                 ] = this->getDefineINT("DEFAULT_KNIGHT_PROMOTION");
+	this->m_aiDefineCache[XML_DEFAULT_MARAUDER_CLASS                   ] = this->getDefineINT("DEFAULT_MARAUDER_CLASS");
+	this->m_aiDefineCache[XML_DEFAULT_MARUADER_SEA_PROFESSION          ] = this->getDefineINT("DEFAULT_MARUADER_SEA_PROFESSION");
+	this->m_aiDefineCache[XML_DEFAULT_NATIVE_TRADE_PROFESSION          ] = this->getDefineINT("DEFAULT_NATIVE_TRADE_PROFESSION");
+	this->m_aiDefineCache[XML_DEFAULT_NOBLEMAN_CLASS                   ] = this->getDefineINT("DEFAULT_NOBLEMAN_CLASS");
+	this->m_aiDefineCache[XML_DEFAULT_NOBLE_GROWTH_UNIT_CLASS          ] = this->getDefineINT("DEFAULT_NOBLE_GROWTH_UNIT_CLASS");
+	this->m_aiDefineCache[XML_DEFAULT_PILGRAM_CLASS                    ] = this->getDefineINT("DEFAULT_PILGRAM_CLASS");
+	this->m_aiDefineCache[XML_DEFAULT_SHRINE_CLASS                     ] = this->getDefineINT("DEFAULT_SHRINE_CLASS");
+	this->m_aiDefineCache[XML_DEFAULT_SLAVE_CLASS                      ] = this->getDefineINT("DEFAULT_SLAVE_CLASS");
+	this->m_aiDefineCache[XML_DEFAULT_SPECIALBUILDING_COURTHOUSE       ] = this->getDefineINT("DEFAULT_SPECIALBUILDING_COURTHOUSE");
+	this->m_aiDefineCache[XML_DEFAULT_TEST_DEFINE                      ] = this->getDefineINT("DEFAULT_TEST_DEFINE");
+	this->m_aiDefineCache[XML_DEFAULT_TRAINED_PROMOTION                ] = this->getDefineINT("DEFAULT_TRAINED_PROMOTION");
+	this->m_aiDefineCache[XML_DEFAULT_TREASURE_YIELD                   ] = this->getDefineINT("DEFAULT_TREASURE_YIELD");
+	this->m_aiDefineCache[XML_DEFAULT_UNTRAINED_PROMOTION              ] = this->getDefineINT("DEFAULT_UNTRAINED_PROMOTION");
+	this->m_aiDefineCache[XML_DEFAULT_VIKING_ERA                       ] = this->getDefineINT("DEFAULT_VIKING_ERA");
+	this->m_aiDefineCache[XML_DEFAULT_YIELD_ARMOR_TYPE                 ] = this->getDefineINT("DEFAULT_YIELD_ARMOR_TYPE");
+	this->m_aiDefineCache[XML_DIPLAY_NEW_VIDEOS                        ] = this->getDefineINT("DIPLAY_NEW_VIDEOS");
+	this->m_aiDefineCache[XML_DOCKS_NEXT_UNITS                         ] = this->getDefineINT("DOCKS_NEXT_UNITS");
+	this->m_aiDefineCache[XML_EDUCATION_THRESHOLD                      ] = this->getDefineINT("EDUCATION_THRESHOLD");
+	this->m_aiDefineCache[XML_EDUCATION_THRESHOLD_INCREASE             ] = this->getDefineINT("EDUCATION_THRESHOLD_INCREASE");
+	this->m_aiDefineCache[XML_ENABLE_MAP_TRADING                       ] = this->getDefineINT("ENABLE_MAP_TRADING");
+	this->m_aiDefineCache[XML_ESTABLISH_TRADEPOST_COST                 ] = this->getDefineINT("ESTABLISH_TRADEPOST_COST");
+	this->m_aiDefineCache[XML_EUROPE_EAST                              ] = this->getDefineINT("EUROPE_EAST");
+	this->m_aiDefineCache[XML_FATHER_POINT_REAL_TRADE                  ] = this->getDefineINT("FATHER_POINT_REAL_TRADE");
+	this->m_aiDefineCache[XML_FOOD_CONSUMPTION_PER_POPULATION          ] = this->getDefineINT("FOOD_CONSUMPTION_PER_POPULATION");
+	this->m_aiDefineCache[XML_FOUND_MONASTERY_NUMBER                   ] = this->getDefineINT("XML_FOUND_MONASTERY_NUMBER");
+	this->m_aiDefineCache[XML_FOUND_MOTTE_AND_BAILEY_NUMBER            ] = this->getDefineINT("FOUND_MOTTE_AND_BAILEY_NUMBER");
+	this->m_aiDefineCache[XML_FOUND_OUTPOST_NUMBER                     ] = this->getDefineINT("FOUND_OUTPOST_NUMBER");
+	this->m_aiDefineCache[XML_FOUND_VILLAGE_NUMBER                     ] = this->getDefineINT("FOUND_VILLAGE_NUMBER");
+	this->m_aiDefineCache[XML_FREE_PEASANT_CIVIC                       ] = this->getDefineINT("FREE_PEASANT_CIVIC");
+	this->m_aiDefineCache[XML_HIRE_GUARD_COST                          ] = this->getDefineINT("HIRE_GUARD_COST");
+	this->m_aiDefineCache[XML_HIRE_GUARD_PROMOTION                     ] = this->getDefineINT("HIRE_GUARD_PROMOTION");
+	this->m_aiDefineCache[XML_IMMIGRATION_MAX_CITY_DISTANCE            ] = this->getDefineINT("IMMIGRATION_MAX_CITY_DISTANCE");
+	this->m_aiDefineCache[XML_IMMIGRATION_THRESHOLD                    ] = this->getDefineINT("IMMIGRATION_THRESHOLD");
+	this->m_aiDefineCache[XML_IMMIGRATION_THRESHOLD_INCREASE           ] = this->getDefineINT("IMMIGRATION_THRESHOLD_INCREASE");
+	this->m_aiDefineCache[XML_IMMIGRATION_TRAVEL_MOD                   ] = this->getDefineINT("IMMIGRATION_TRAVEL_MOD");
+	this->m_aiDefineCache[XML_INDUSTRIAL_VICTORY_SINGLE_YIELD          ] = this->getDefineINT("INDUSTRIAL_VICTORY_SINGLE_YIELD");
+	this->m_aiDefineCache[XML_JUNGLE_FEATURE                           ] = this->getDefineINT("JUNGLE_FEATURE");
+	this->m_aiDefineCache[XML_KNIGHT_RANSOM_MOD                        ] = this->getDefineINT("KNIGHT_RANSOM_MOD");
+	this->m_aiDefineCache[XML_MARAUDERS_DAYSOUT_RANDOM                 ] = this->getDefineINT("MARAUDERS_DAYSOUT_RANDOM");
+	this->m_aiDefineCache[XML_MARAUDERS_TOWER_RANGE                    ] = this->getDefineINT("MARAUDERS_TOWER_RANGE");
+	this->m_aiDefineCache[XML_MARAUDER_CRUMBS_EVENT                    ] = this->getDefineINT("MARAUDER_CRUMBS_EVENT");
+	this->m_aiDefineCache[XML_MARAUDER_EVENT_DEFAULT_TURNS             ] = this->getDefineINT("MARAUDER_EVENT_DEFAULT_TURNS");
+	this->m_aiDefineCache[XML_MAX_CITY_POPULATION_COMMUNE              ] = this->getDefineINT("MAX_CITY_POPULATION_COMMUNE");
+	this->m_aiDefineCache[XML_MAX_CITY_POPULATION_VILLAGE              ] = this->getDefineINT("MAX_CITY_POPULATION_VILLAGE");
+	this->m_aiDefineCache[XML_MAX_INSULT_MODIFIER                      ] = this->getDefineINT("MAX_INSULT_MODIFIER");
+	this->m_aiDefineCache[XML_MAX_LEVEL_FROM_ANIMAL_XP                 ] = this->getDefineINT("MAX_LEVEL_FROM_ANIMAL_XP");
+	this->m_aiDefineCache[XML_MAX_MARAUDERS                            ] = this->getDefineINT("MAX_MARAUDERS");
+	this->m_aiDefineCache[XML_MAX_TRAINED_EXPERIENCE                   ] = this->getDefineINT("MAX_TRAINED_EXPERIENCE");
+	this->m_aiDefineCache[XML_MEDIEVAL_CENSURE                         ] = this->getDefineINT("MEDIEVAL_CENSURE");
+	this->m_aiDefineCache[XML_MEDIEVAL_TRADE_TECH                      ] = this->getDefineINT("MEDIEVAL_TRADE_TECH");
+	this->m_aiDefineCache[XML_MONASTERIES_TO_VILLAGES_RATIO            ] = this->getDefineINT("MONASTERIES_TO_VILLAGES_RATIO");
+	this->m_aiDefineCache[XML_NATIVE_AUTO_SELL_PERCENT                 ] = this->getDefineINT("NATIVE_AUTO_SELL_PERCENT");
+	this->m_aiDefineCache[XML_NATIVE_HORSES_FOR_SALE                   ] = this->getDefineINT("NATIVE_HORSES_FOR_SALE");
+	this->m_aiDefineCache[XML_NATIVE_HORSES_FOR_SALE_PERCENT           ] = this->getDefineINT("NATIVE_HORSES_FOR_SALE_PERCENT");
+	this->m_aiDefineCache[XML_NATIVE_TECH                              ] = this->getDefineINT("NATIVE_TECH");
+	this->m_aiDefineCache[XML_NATIVE_TRADING_TRADEPOST                 ] = this->getDefineINT("NATIVE_TRADING_TRADEPOST");
+	this->m_aiDefineCache[XML_NOBLE_FIELD_LABOR_PENALTY                ] = this->getDefineINT("NOBLE_FIELD_LABOR_PENALTY");
+	this->m_aiDefineCache[XML_NO_CITY_SHORTAGE_MESSAGES                ] = this->getDefineINT("NO_CITY_SHORTAGE_MESSAGES");
+	this->m_aiDefineCache[XML_NO_MARKED_SALES_CAP                      ] = this->getDefineINT("NO_MARKED_SALES_CAP");
+	this->m_aiDefineCache[XML_NO_STARTING_PLOTS_IN_JUNGLE              ] = this->getDefineINT("NO_STARTING_PLOTS_IN_JUNGLE");
+	this->m_aiDefineCache[XML_PERCENT_TAX_ON_AUTOSELL_GOODS            ] = this->getDefineINT("PERCENT_TAX_ON_AUTOSELL_GOODS");
+	this->m_aiDefineCache[XML_PILGRAM_OFFER_GOLD                       ] = this->getDefineINT("PILGRAM_OFFER_GOLD");
+	this->m_aiDefineCache[XML_PILGRAM_OFFER_GOLD_DISTANCE_MOD          ] = this->getDefineINT("PILGRAM_OFFER_GOLD_DISTANCE_MOD");
+	this->m_aiDefineCache[XML_PROFESSION_INVENTOR                      ] = this->getDefineINT("PROFESSION_INVENTOR");
+	this->m_aiDefineCache[XML_PROLIFIC_INVENTOR_THRESHOLD_INCREASE     ] = this->getDefineINT("PROLIFIC_INVENTOR_THRESHOLD_INCREASE");
+	this->m_aiDefineCache[XML_RANDOM_TURNS_LOST_AT_SEA                 ] = this->getDefineINT("RANDOM_TURNS_LOST_AT_SEA");
+	this->m_aiDefineCache[XML_SLAVE_FOOD_CONSUMPTION_PER_POPULATION    ] = this->getDefineINT("SLAVE_FOOD_CONSUMPTION_PER_POPULATION");
+	this->m_aiDefineCache[XML_START_YEAR                               ] = this->getDefineINT("START_YEAR");
+	this->m_aiDefineCache[XML_TK_AI_RESEARCH_COST_MOD_PERCENT          ] = this->getDefineINT("TK_AI_RESEARCH_COST_MOD_PERCENT");
+	this->m_aiDefineCache[XML_TK_HUMAN_RESEARCH_COST_MOD_PERCENT       ] = this->getDefineINT("TK_HUMAN_RESEARCH_COST_MOD_PERCENT");
+	this->m_aiDefineCache[XML_TK_IDEAS_CITY_VALUE                      ] = this->getDefineINT("TK_IDEAS_CITY_VALUE");
+	this->m_aiDefineCache[XML_TK_PROLIFIC_INVENTOR_PROGRESS            ] = this->getDefineINT("TK_PROLIFIC_INVENTOR_PROGRESS");
+	this->m_aiDefineCache[XML_TK_PROLIFIC_INVENTOR_THRESHOLD           ] = this->getDefineINT("TK_PROLIFIC_INVENTOR_THRESHOLD");
+	this->m_aiDefineCache[XML_TK_RESEARCH_PACT_IDEAS_THRESHOLD         ] = this->getDefineINT("TK_RESEARCH_PACT_IDEAS_THRESHOLD");
+	this->m_aiDefineCache[XML_TK_RESEARCH_TRADE_VALUE                  ] = this->getDefineINT("TK_RESEARCH_TRADE_VALUE");
+	this->m_aiDefineCache[XML_TRADE_POINTS_FOR_ROUTE                   ] = this->getDefineINT("TRADE_POINTS_FOR_ROUTE");
+	this->m_aiDefineCache[XML_TRADE_ROUTE_SPICE                        ] = this->getDefineINT("TRADE_ROUTE_SPICE");
+	this->m_aiDefineCache[XML_TRADE_STIMULATES_RESEARCH_MIN_VALUE      ] = this->getDefineINT("TRADE_STIMULATES_RESEARCH_MIN_VALUE");
+	this->m_aiDefineCache[XML_TRADE_STIMULATES_RESEARCH_PERCENT        ] = this->getDefineINT("TRADE_STIMULATES_RESEARCH_PERCENT");
+	this->m_aiDefineCache[XML_TRADING_POINTS_MOD_PERCENT               ] = this->getDefineINT("TRADING_POINTS_MOD_PERCENT");
+	this->m_aiDefineCache[XML_TREASURE_UNITS_ONLY_SELECT_COASTAL       ] = this->getDefineINT("TREASURE_UNITS_ONLY_SELECT_COASTAL");
+	this->m_aiDefineCache[XML_TURNS_TO_TRAIN                           ] = this->getDefineINT("TURNS_TO_TRAIN");
+	this->m_aiDefineCache[XML_UNITARMOR_PLATE                          ] = this->getDefineINT("UNITARMOR_PLATE");
+	this->m_aiDefineCache[XML_UNITARMOR_SHIELD                         ] = this->getDefineINT("UNITARMOR_SHIELD");
+	this->m_aiDefineCache[XML_UNITTACTIC_PARRY                         ] = this->getDefineINT("UNITTACTIC_PARRY");
+	this->m_aiDefineCache[XML_UNITWEAPON_BLUNT                         ] = this->getDefineINT("UNITWEAPON_BLUNT");
+	this->m_aiDefineCache[XML_USE_MEDIEVAL_CALENDER                    ] = this->getDefineINT("USE_MEDIEVAL_CALENDER");
+	this->m_aiDefineCache[XML_VASSAL_CIVILIZATION                      ] = this->getDefineINT("VASSAL_CIVILIZATION");
+	this->m_aiDefineCache[XML_VASSAL_LEADER                            ] = this->getDefineINT("VASSAL_LEADER");
+	this->m_aiDefineCache[XML_WEEKS_PER_MONTHS                         ] = this->getDefineINT("WEEKS_PER_MONTHS");
+	this->m_aiDefineCache[XML_WILD_ANIMAL_LAND_BONUS_NATIVE_WEIGHT     ] = this->getDefineINT("WILD_ANIMAL_LAND_BONUS_NATIVE_WEIGHT");
+	this->m_aiDefineCache[XML_WILD_ANIMAL_LAND_FEATURE_NATIVE_WEIGHT   ] = this->getDefineINT("WILD_ANIMAL_LAND_FEATURE_NATIVE_WEIGHT");
+	this->m_aiDefineCache[XML_WILD_ANIMAL_LAND_TERRAIN_NATIVE_WEIGHT   ] = this->getDefineINT("WILD_ANIMAL_LAND_TERRAIN_NATIVE_WEIGHT");
+	this->m_aiDefineCache[XML_WILD_ANIMAL_LAND_UNIT_VARIATION_WEIGHT   ] = this->getDefineINT("WILD_ANIMAL_LAND_UNIT_VARIATION_WEIGHT");
+	this->m_aiDefineCache[XML_WILD_ANIMAL_SEA_BONUS_NATIVE_WEIGHT      ] = this->getDefineINT("WILD_ANIMAL_SEA_BONUS_NATIVE_WEIGHT");
+	this->m_aiDefineCache[XML_WILD_ANIMAL_SEA_FEATURE_NATIVE_WEIGHT    ] = this->getDefineINT("WILD_ANIMAL_SEA_FEATURE_NATIVE_WEIGHT");
+	this->m_aiDefineCache[XML_WILD_ANIMAL_SEA_TERRAIN_NATIVE_WEIGHT    ] = this->getDefineINT("WILD_ANIMAL_SEA_TERRAIN_NATIVE_WEIGHT");
+	this->m_aiDefineCache[XML_WILD_ANIMAL_SEA_UNIT_VARIATION_WEIGHT    ] = this->getDefineINT("WILD_ANIMAL_SEA_UNIT_VARIATION_WEIGHT");
+
+	// vanilla GlobalDefines.xml
+	this->m_aiDefineCache[XML_ADVANCED_START_ALLOW_UNITS_OUTSIDE_CITIES] = this->getDefineINT("ADVANCED_START_ALLOW_UNITS_OUTSIDE_CITIES");
+	this->m_aiDefineCache[XML_ADVANCED_START_CITY_COST                 ] = this->getDefineINT("ADVANCED_START_CITY_COST");
+	this->m_aiDefineCache[XML_ADVANCED_START_CITY_COST_INCREASE        ] = this->getDefineINT("ADVANCED_START_CITY_COST_INCREASE");
+	this->m_aiDefineCache[XML_ADVANCED_START_CITY_PLACEMENT_MAX_RANGE  ] = this->getDefineINT("ADVANCED_START_CITY_PLACEMENT_MAX_RANGE");
+	this->m_aiDefineCache[XML_ADVANCED_START_CULTURE_COST              ] = this->getDefineINT("ADVANCED_START_CULTURE_COST");
+	this->m_aiDefineCache[XML_ADVANCED_START_MAX_UNITS_PER_CITY        ] = this->getDefineINT("ADVANCED_START_MAX_UNITS_PER_CITY");
+	this->m_aiDefineCache[XML_ADVANCED_START_POPULATION_COST           ] = this->getDefineINT("ADVANCED_START_POPULATION_COST");
+	this->m_aiDefineCache[XML_ADVANCED_START_POPULATION_COST_INCREASE  ] = this->getDefineINT("ADVANCED_START_POPULATION_COST_INCREASE");
+	this->m_aiDefineCache[XML_ADVANCED_START_SIGHT_RANGE               ] = this->getDefineINT("ADVANCED_START_SIGHT_RANGE");
+	this->m_aiDefineCache[XML_ADVANCED_START_VISIBILITY_COST           ] = this->getDefineINT("ADVANCED_START_VISIBILITY_COST");
+	this->m_aiDefineCache[XML_ADVANCED_START_VISIBILITY_COST_INCREASE  ] = this->getDefineINT("ADVANCED_START_VISIBILITY_COST_INCREASE");
+	this->m_aiDefineCache[XML_AI_CAN_DISBAND_UNITS                     ] = this->getDefineINT("AI_CAN_DISBAND_UNITS");
+	this->m_aiDefineCache[XML_AMPHIB_ATTACK_MODIFIER                   ] = this->getDefineINT("AMPHIB_ATTACK_MODIFIER");
+	this->m_aiDefineCache[XML_BASE_OCCUPATION_TURNS                    ] = this->getDefineINT("BASE_OCCUPATION_TURNS");
+	this->m_aiDefineCache[XML_BASE_UNIT_UPGRADE_COST                   ] = this->getDefineINT("BASE_UNIT_UPGRADE_COST");
+	this->m_aiDefineCache[XML_BUILDING_PRODUCTION_DECAY_PERCENT        ] = this->getDefineINT("BUILDING_PRODUCTION_DECAY_PERCENT");
+	this->m_aiDefineCache[XML_BUILDING_PRODUCTION_DECAY_TIME           ] = this->getDefineINT("BUILDING_PRODUCTION_DECAY_TIME");
+	this->m_aiDefineCache[XML_BUILDING_PRODUCTION_PERCENT              ] = this->getDefineINT("BUILDING_PRODUCTION_PERCENT");
+	this->m_aiDefineCache[XML_BUY_PLOT_BASE_CULTURE_COST               ] = this->getDefineINT("BUY_PLOT_BASE_CULTURE_COST");
+	this->m_aiDefineCache[XML_BUY_PLOT_CULTURE_RANGE                   ] = this->getDefineINT("BUY_PLOT_CULTURE_RANGE");
+	this->m_aiDefineCache[XML_BUY_PLOT_MIN_CULTURE                     ] = this->getDefineINT("BUY_PLOT_MIN_CULTURE");
+	this->m_aiDefineCache[XML_BUY_PLOT_OWNED_COST_MODIFIER             ] = this->getDefineINT("BUY_PLOT_OWNED_COST_MODIFIER");
+	this->m_aiDefineCache[XML_BUY_PLOT_SELLER_INCOME_PERCENT           ] = this->getDefineINT("BUY_PLOT_SELLER_INCOME_PERCENT");
+	this->m_aiDefineCache[XML_CAPITAL_BUILDINGCLASS                    ] = this->getDefineINT("CAPITAL_BUILDINGCLASS");
+	this->m_aiDefineCache[XML_CITY_DEFENSE_DAMAGE_HEAL_RATE            ] = this->getDefineINT("CITY_DEFENSE_DAMAGE_HEAL_RATE");
+	this->m_aiDefineCache[XML_CITY_FREE_CULTURE_GROWTH_FACTOR          ] = this->getDefineINT("CITY_FREE_CULTURE_GROWTH_FACTOR");
+	this->m_aiDefineCache[XML_CITY_GROWTH_MULTIPLIER                   ] = this->getDefineINT("CITY_GROWTH_MULTIPLIER");
+	this->m_aiDefineCache[XML_CITY_HEAL_RATE                           ] = this->getDefineINT("CITY_HEAL_RATE");
+	this->m_aiDefineCache[XML_CITY_SCREEN_FOG_ENABLED                  ] = this->getDefineINT("CITY_SCREEN_FOG_ENABLED");
+	this->m_aiDefineCache[XML_CITY_YIELD_CAPACITY                      ] = this->getDefineINT("CITY_YIELD_CAPACITY");
+	this->m_aiDefineCache[XML_CITY_YIELD_DECAY_PERCENT                 ] = this->getDefineINT("CITY_YIELD_DECAY_PERCENT");
+	this->m_aiDefineCache[XML_COMBAT_DAMAGE                            ] = this->getDefineINT("COMBAT_DAMAGE");
+	this->m_aiDefineCache[XML_COMBAT_DIE_SIDES                         ] = this->getDefineINT("COMBAT_DIE_SIDES");
+	this->m_aiDefineCache[XML_COMBAT_EXPERIENCE_IN_BORDERS_PERCENT     ] = this->getDefineINT("COMBAT_EXPERIENCE_IN_BORDERS_PERCENT");
+	this->m_aiDefineCache[XML_CONSUME_EQUIPMENT_ON_FOUND               ] = this->getDefineINT("CONSUME_EQUIPMENT_ON_FOUND");
+	this->m_aiDefineCache[XML_DEEP_WATER_TERRAIN                       ] = this->getDefineINT("DEEP_WATER_TERRAIN");
+	this->m_aiDefineCache[XML_DEFAULT_POPULATION_UNIT                  ] = this->getDefineINT("DEFAULT_POPULATION_UNIT");
+	this->m_aiDefineCache[XML_DIFFERENT_TEAM_FEATURE_PRODUCTION_PERCENT] = this->getDefineINT("DIFFERENT_TEAM_FEATURE_PRODUCTION_PERCENT");
+	this->m_aiDefineCache[XML_DIPLOMACY_VALUE_REMAINDER                ] = this->getDefineINT("DIPLOMACY_VALUE_REMAINDER");
+	this->m_aiDefineCache[XML_EDUCATION_BASE_TUITION                   ] = this->getDefineINT("EDUCATION_BASE_TUITION");
+	this->m_aiDefineCache[XML_ENABLE_ALLIANCE_TRADING                  ] = this->getDefineINT("ENABLE_ALLIANCE_TRADING");
+	this->m_aiDefineCache[XML_ENABLE_DEFENSIVE_PACT_TRADING            ] = this->getDefineINT("ENABLE_DEFENSIVE_PACT_TRADING");
+	this->m_aiDefineCache[XML_ENABLE_GOLD_TRADING                      ] = this->getDefineINT("ENABLE_GOLD_TRADING");
+	this->m_aiDefineCache[XML_ENABLE_OPEN_BORDERS                      ] = this->getDefineINT("ENABLE_OPEN_BORDERS");
+	this->m_aiDefineCache[XML_END_GAME_DISPLAY_WARNING                 ] = this->getDefineINT("END_GAME_DISPLAY_WARNING");
+	this->m_aiDefineCache[XML_ENEMY_HEAL_RATE                          ] = this->getDefineINT("ENEMY_HEAL_RATE");
+	this->m_aiDefineCache[XML_EUROPE_MARKET_CORRELATION_PERCENT        ] = this->getDefineINT("EUROPE_MARKET_CORRELATION_PERCENT");
+	this->m_aiDefineCache[XML_EVENT_PROBABILITY_ROLL_SIDES             ] = this->getDefineINT("EVENT_PROBABILITY_ROLL_SIDES");
+	this->m_aiDefineCache[XML_EXPERIENCE_FROM_WITHDRAWL                ] = this->getDefineINT("EXPERIENCE_FROM_WITHDRAWL");
+	this->m_aiDefineCache[XML_EXTRA_YIELD                              ] = this->getDefineINT("EXTRA_YIELD");
+	this->m_aiDefineCache[XML_FATHER_COST_EXTRA_TEAM_MEMBER_MODIFIER   ] = this->getDefineINT("FATHER_COST_EXTRA_TEAM_MEMBER_MODIFIER");
+	this->m_aiDefineCache[XML_FEATURE_GROWTH_MODIFIER                  ] = this->getDefineINT("FEATURE_GROWTH_MODIFIER");
+	this->m_aiDefineCache[XML_FEATURE_PRODUCTION_YIELD_MAX_DISTANCE    ] = this->getDefineINT("FEATURE_PRODUCTION_YIELD_MAX_DISTANCE");
+	this->m_aiDefineCache[XML_FIRST_EVENT_DELAY_TURNS                  ] = this->getDefineINT("FIRST_EVENT_DELAY_TURNS");
+	this->m_aiDefineCache[XML_FORTIFY_MODIFIER_PER_TURN                ] = this->getDefineINT("FORTIFY_MODIFIER_PER_TURN");
+	this->m_aiDefineCache[XML_FREE_CITY_ADJACENT_CULTURE               ] = this->getDefineINT("FREE_CITY_ADJACENT_CULTURE");
+	this->m_aiDefineCache[XML_FREE_CITY_CULTURE                        ] = this->getDefineINT("FREE_CITY_CULTURE");
+	this->m_aiDefineCache[XML_FRIENDLY_HEAL_RATE                       ] = this->getDefineINT("FRIENDLY_HEAL_RATE");
+	this->m_aiDefineCache[XML_GREAT_GENERALS_THRESHOLD                 ] = this->getDefineINT("GREAT_GENERALS_THRESHOLD");
+	this->m_aiDefineCache[XML_GREAT_GENERALS_THRESHOLD_INCREASE        ] = this->getDefineINT("GREAT_GENERALS_THRESHOLD_INCREASE");
+	this->m_aiDefineCache[XML_GREAT_GENERALS_THRESHOLD_INCREASE_TEAM   ] = this->getDefineINT("GREAT_GENERALS_THRESHOLD_INCREASE_TEAM");
+	this->m_aiDefineCache[XML_HILLS_EXTRA_DEFENSE                      ] = this->getDefineINT("HILLS_EXTRA_DEFENSE");
+	this->m_aiDefineCache[XML_HILLS_EXTRA_MOVEMENT                     ] = this->getDefineINT("HILLS_EXTRA_MOVEMENT");
+	this->m_aiDefineCache[XML_HILLS_SEE_FROM_CHANGE                    ] = this->getDefineINT("HILLS_SEE_FROM_CHANGE");
+	this->m_aiDefineCache[XML_HILLS_SEE_THROUGH_CHANGE                 ] = this->getDefineINT("HILLS_SEE_THROUGH_CHANGE");
+	this->m_aiDefineCache[XML_INITIAL_AI_CITY_PRODUCTION               ] = this->getDefineINT("INITIAL_AI_CITY_PRODUCTION");
+	this->m_aiDefineCache[XML_INITIAL_CITY_POPULATION                  ] = this->getDefineINT("INITIAL_CITY_POPULATION");
+	this->m_aiDefineCache[XML_INITIAL_CITY_ROUTE_TYPE                  ] = this->getDefineINT("INITIAL_CITY_ROUTE_TYPE");
+	this->m_aiDefineCache[XML_KING_BUY_UNIT_PRICE_MODIFIER             ] = this->getDefineINT("KING_BUY_UNIT_PRICE_MODIFIER");
+	this->m_aiDefineCache[XML_KING_INITIAL_UNIT_INCREASE               ] = this->getDefineINT("KING_INITIAL_UNIT_INCREASE");
+	this->m_aiDefineCache[XML_KING_TRANSPORT_TREASURE_COMISSION        ] = this->getDefineINT("KING_TRANSPORT_TREASURE_COMISSION");
+	this->m_aiDefineCache[XML_LAKE_MAX_AREA_SIZE                       ] = this->getDefineINT("LAKE_MAX_AREA_SIZE");
+	this->m_aiDefineCache[XML_LAKE_PLOT_RAND                           ] = this->getDefineINT("LAKE_PLOT_RAND");
+	this->m_aiDefineCache[XML_LAND_IMPROVEMENT                         ] = this->getDefineINT("LAND_IMPROVEMENT");
+	this->m_aiDefineCache[XML_LAND_TERRAIN                             ] = this->getDefineINT("LAND_TERRAIN");
+	this->m_aiDefineCache[XML_MAX_CITY_DEFENSE_DAMAGE                  ] = this->getDefineINT("MAX_CITY_DEFENSE_DAMAGE");
+	this->m_aiDefineCache[XML_MAX_EXPERIENCE_AFTER_UPGRADE             ] = this->getDefineINT("MAX_EXPERIENCE_AFTER_UPGRADE");
+	this->m_aiDefineCache[XML_MAX_EXPERIENCE_PER_COMBAT                ] = this->getDefineINT("MAX_EXPERIENCE_PER_COMBAT");
+	this->m_aiDefineCache[XML_MAX_FORTIFY_TURNS                        ] = this->getDefineINT("MAX_FORTIFY_TURNS");
+	this->m_aiDefineCache[XML_MAX_HIT_POINTS                           ] = this->getDefineINT("MAX_HIT_POINTS");
+	this->m_aiDefineCache[XML_MAX_PLOT_LIST_ROWS                       ] = this->getDefineINT("MAX_PLOT_LIST_ROWS");
+	this->m_aiDefineCache[XML_MAX_PLOT_LIST_SIZE                       ] = this->getDefineINT("MAX_PLOT_LIST_SIZE");
+	this->m_aiDefineCache[XML_MAX_REBEL_COMBAT_MULTIPLER               ] = this->getDefineINT("MAX_REBEL_COMBAT_MULTIPLER");
+	this->m_aiDefineCache[XML_MAX_REBEL_YIELD_MODIFIER                 ] = this->getDefineINT("MAX_REBEL_YIELD_MODIFIER");
+	this->m_aiDefineCache[XML_MAX_WITHDRAWAL_PROBABILITY               ] = this->getDefineINT("MAX_WITHDRAWAL_PROBABILITY");
+	this->m_aiDefineCache[XML_MIN_CITY_RANGE                           ] = this->getDefineINT("MIN_CITY_RANGE");
+	this->m_aiDefineCache[XML_MIN_CITY_YIELD_DECAY                     ] = this->getDefineINT("MIN_CITY_YIELD_DECAY");
+	this->m_aiDefineCache[XML_MIN_CIV_STARTING_DISTANCE                ] = this->getDefineINT("MIN_CIV_STARTING_DISTANCE");
+	this->m_aiDefineCache[XML_MIN_EXPERIENCE_PER_COMBAT                ] = this->getDefineINT("MIN_EXPERIENCE_PER_COMBAT");
+	this->m_aiDefineCache[XML_MIN_TIMER_UNIT_DOUBLE_MOVES              ] = this->getDefineINT("MIN_TIMER_UNIT_DOUBLE_MOVES");
+	this->m_aiDefineCache[XML_MIN_WATER_SIZE_FOR_OCEAN                 ] = this->getDefineINT("MIN_WATER_SIZE_FOR_OCEAN");
+	this->m_aiDefineCache[XML_MINIMAP_RENDER_SIZE                      ] = this->getDefineINT("MINIMAP_RENDER_SIZE");
+	this->m_aiDefineCache[XML_MISSIONARY_RATE_EFFECT_ON_SUCCESS        ] = this->getDefineINT("MISSIONARY_RATE_EFFECT_ON_SUCCESS");
+	this->m_aiDefineCache[XML_MISSIONARY_THRESHOLD                     ] = this->getDefineINT("MISSIONARY_THRESHOLD");
+	this->m_aiDefineCache[XML_MISSIONARY_THRESHOLD_INCREASE            ] = this->getDefineINT("MISSIONARY_THRESHOLD_INCREASE");
+	this->m_aiDefineCache[XML_MOVE_DENOMINATOR                         ] = this->getDefineINT("MOVE_DENOMINATOR");
+	this->m_aiDefineCache[XML_NATIVE_GOODS_RAID_PERCENT                ] = this->getDefineINT("NATIVE_GOODS_RAID_PERCENT");
+	this->m_aiDefineCache[XML_NATIVE_GROWTH_THRESHOLD_MULTIPLIER       ] = this->getDefineINT("NATIVE_GROWTH_THRESHOLD_MULTIPLIER");
+	this->m_aiDefineCache[XML_NATIVE_TEACH_THRESHOLD_INCREASE          ] = this->getDefineINT("NATIVE_TEACH_THRESHOLD_INCREASE");
+	this->m_aiDefineCache[XML_NEUTRAL_HEAL_RATE                        ] = this->getDefineINT("NEUTRAL_HEAL_RATE");
+	this->m_aiDefineCache[XML_NEW_CITY_BUILDING_VALUE_MODIFIER         ] = this->getDefineINT("NEW_CITY_BUILDING_VALUE_MODIFIER");
+	this->m_aiDefineCache[XML_NEW_HURRY_MODIFIER                       ] = this->getDefineINT("NEW_HURRY_MODIFIER");
+	this->m_aiDefineCache[XML_NO_BAD_GOODIES_EXPERIENCE_PERCENT        ] = this->getDefineINT("NO_BAD_GOODIES_EXPERIENCE_PERCENT");
+	this->m_aiDefineCache[XML_NO_BAD_GOODIES_GOLD_PERCENT              ] = this->getDefineINT("NO_BAD_GOODIES_GOLD_PERCENT");
+	this->m_aiDefineCache[XML_OCCUPATION_CULTURE_PERCENT_THRESHOLD     ] = this->getDefineINT("OCCUPATION_CULTURE_PERCENT_THRESHOLD");
+	this->m_aiDefineCache[XML_OCCUPATION_TURNS_POPULATION_PERCENT      ] = this->getDefineINT("OCCUPATION_TURNS_POPULATION_PERCENT");
+	this->m_aiDefineCache[XML_OWNERSHIP_SCORE_DURATION_THRESHOLD       ] = this->getDefineINT("OWNERSHIP_SCORE_DURATION_THRESHOLD");
+	this->m_aiDefineCache[XML_OWN_TEAM_STARTING_MODIFIER               ] = this->getDefineINT("OWN_TEAM_STARTING_MODIFIER");
+	this->m_aiDefineCache[XML_PEACE_TREATY_LENGTH                      ] = this->getDefineINT("PEACE_TREATY_LENGTH");
+	this->m_aiDefineCache[XML_PEAK_EXTRA_MOVEMENT                      ] = this->getDefineINT("PEAK_EXTRA_MOVEMENT");
+	this->m_aiDefineCache[XML_PEAK_SEE_FROM_CHANGE                     ] = this->getDefineINT("PEAK_SEE_FROM_CHANGE");
+	this->m_aiDefineCache[XML_PEAK_SEE_THROUGH_CHANGE                  ] = this->getDefineINT("PEAK_SEE_THROUGH_CHANGE");
+	this->m_aiDefineCache[XML_PLAYER_ALWAYS_RAZES_CITIES               ] = this->getDefineINT("PLAYER_ALWAYS_RAZES_CITIES");
+	this->m_aiDefineCache[XML_PLOTS_PER_RIVER_EDGE                     ] = this->getDefineINT("PLOTS_PER_RIVER_EDGE");
+	this->m_aiDefineCache[XML_PLOT_VISIBILITY_RANGE                    ] = this->getDefineINT("PLOT_VISIBILITY_RANGE");
+	this->m_aiDefineCache[XML_RAZING_CULTURAL_PERCENT_THRESHOLD        ] = this->getDefineINT("RAZING_CULTURAL_PERCENT_THRESHOLD");
+	this->m_aiDefineCache[XML_REBEL_PERCENT_FOR_REVOLUTION             ] = this->getDefineINT("REBEL_PERCENT_FOR_REVOLUTION");
+	this->m_aiDefineCache[XML_REBEL_SENTIMENT_BELLS_FACTOR             ] = this->getDefineINT("REBEL_SENTIMENT_BELLS_FACTOR");
+	this->m_aiDefineCache[XML_REBEL_SENTIMENT_TURN_WEIGHT              ] = this->getDefineINT("REBEL_SENTIMENT_TURN_WEIGHT");
+	this->m_aiDefineCache[XML_REVOLUTION_EUROPE_UNIT_SHIP_MODIFIER     ] = this->getDefineINT("REVOLUTION_EUROPE_UNIT_SHIP_MODIFIER");
+	this->m_aiDefineCache[XML_REVOLUTION_EUROPE_UNIT_THRESHOLD         ] = this->getDefineINT("REVOLUTION_EUROPE_UNIT_THRESHOLD");
+	this->m_aiDefineCache[XML_REVOLUTION_EUROPE_UNIT_THRESHOLD_INCREASE] = this->getDefineINT("REVOLUTION_EUROPE_UNIT_THRESHOLD_INCREASE");
+	this->m_aiDefineCache[XML_RIVAL_TEAM_STARTING_MODIFIER             ] = this->getDefineINT("RIVAL_TEAM_STARTING_MODIFIER");
+	this->m_aiDefineCache[XML_RIVER_ATTACK_MODIFIER                    ] = this->getDefineINT("RIVER_ATTACK_MODIFIER");
+	this->m_aiDefineCache[XML_RIVER_SOURCE_MIN_RIVER_RANGE             ] = this->getDefineINT("RIVER_SOURCE_MIN_RIVER_RANGE");
+	this->m_aiDefineCache[XML_RIVER_SOURCE_MIN_SEAWATER_RANGE          ] = this->getDefineINT("RIVER_SOURCE_MIN_SEAWATER_RANGE");
+	this->m_aiDefineCache[XML_ROUTE_FEATURE_GROWTH_MODIFIER            ] = this->getDefineINT("ROUTE_FEATURE_GROWTH_MODIFIER");
+	this->m_aiDefineCache[XML_RUINS_IMPROVEMENT                        ] = this->getDefineINT("RUINS_IMPROVEMENT");
+	this->m_aiDefineCache[XML_SCORE_FATHER_FACTOR                      ] = this->getDefineINT("SCORE_FATHER_FACTOR");
+	this->m_aiDefineCache[XML_SCORE_LAND_FACTOR                        ] = this->getDefineINT("SCORE_LAND_FACTOR");
+	this->m_aiDefineCache[XML_SCORE_POPULATION_FACTOR                  ] = this->getDefineINT("SCORE_POPULATION_FACTOR");
+	this->m_aiDefineCache[XML_SCORE_TAX_FACTOR                         ] = this->getDefineINT("SCORE_TAX_FACTOR");
+	this->m_aiDefineCache[XML_SEAWATER_SEE_FROM_CHANGE                 ] = this->getDefineINT("SEAWATER_SEE_FROM_CHANGE");
+	this->m_aiDefineCache[XML_SETTLEMENT_TREASURE_YIELD                ] = this->getDefineINT("SETTLEMENT_TREASURE_YIELD");
+	this->m_aiDefineCache[XML_SHALLOW_WATER_TERRAIN                    ] = this->getDefineINT("SHALLOW_WATER_TERRAIN");
+	this->m_aiDefineCache[XML_STANDARD_HANDICAP                        ] = this->getDefineINT("STANDARD_HANDICAP");
+	this->m_aiDefineCache[XML_STARTING_DISTANCE_PERCENT                ] = this->getDefineINT("STARTING_DISTANCE_PERCENT");
+	this->m_aiDefineCache[XML_TAX_INCREASE_CHANCE                      ] = this->getDefineINT("TAX_INCREASE_CHANCE");
+	this->m_aiDefineCache[XML_TAX_RATE_MAX_INCREASE                    ] = this->getDefineINT("TAX_RATE_MAX_INCREASE");
+	this->m_aiDefineCache[XML_TAX_TRADE_THRESHOLD                      ] = this->getDefineINT("TAX_TRADE_THRESHOLD");
+	this->m_aiDefineCache[XML_TAX_TRADE_THRESHOLD_ATTITUDE_PERCENT     ] = this->getDefineINT("TAX_TRADE_THRESHOLD_ATTITUDE_PERCENT");
+	this->m_aiDefineCache[XML_TAX_TRADE_THRESHOLD_TAX_RATE_PERCENT     ] = this->getDefineINT("TAX_TRADE_THRESHOLD_TAX_RATE_PERCENT");
+	this->m_aiDefineCache[XML_TREASURE_UNITCLASS                       ] = this->getDefineINT("TREASURE_UNITCLASS");
+	this->m_aiDefineCache[XML_UNIT_PRODUCTION_DECAY_PERCENT            ] = this->getDefineINT("UNIT_PRODUCTION_DECAY_PERCENT");
+	this->m_aiDefineCache[XML_UNIT_PRODUCTION_DECAY_TIME               ] = this->getDefineINT("UNIT_PRODUCTION_DECAY_TIME");
+	this->m_aiDefineCache[XML_UNIT_PRODUCTION_PERCENT                  ] = this->getDefineINT("UNIT_PRODUCTION_PERCENT");
+	this->m_aiDefineCache[XML_UNIT_UPGRADE_COST_PER_PRODUCTION         ] = this->getDefineINT("UNIT_UPGRADE_COST_PER_PRODUCTION");
+	this->m_aiDefineCache[XML_UNIT_VISIBILITY_RANGE                    ] = this->getDefineINT("UNIT_VISIBILITY_RANGE");
+	this->m_aiDefineCache[XML_WARLORD_EXTRA_EXPERIENCE_PER_UNIT_PERCENT] = this->getDefineINT("WARLORD_EXTRA_EXPERIENCE_PER_UNIT_PERCENT");
+	this->m_aiDefineCache[XML_WAR_SUCCESS_ATTACKING                    ] = this->getDefineINT("WAR_SUCCESS_ATTACKING");
+	this->m_aiDefineCache[XML_WAR_SUCCESS_CITY_CAPTURING               ] = this->getDefineINT("WAR_SUCCESS_CITY_CAPTURING");
+	this->m_aiDefineCache[XML_WAR_SUCCESS_DEFENDING                    ] = this->getDefineINT("WAR_SUCCESS_DEFENDING");
+	this->m_aiDefineCache[XML_WAR_SUCCESS_UNIT_CAPTURING               ] = this->getDefineINT("WAR_SUCCESS_UNIT_CAPTURING");
+	this->m_aiDefineCache[XML_WATER_IMPROVEMENT                        ] = this->getDefineINT("WATER_IMPROVEMENT");
+	this->m_aiDefineCache[XML_WATER_UNIT_FACING_DIRECTION              ] = this->getDefineINT("WATER_UNIT_FACING_DIRECTION");
+}
+// cache XML - end - Nightinggale
 
 int CvGlobals::getDefineINT( const char * szName ) const
 {
@@ -3206,319 +3242,388 @@ void CvGlobals::setBorderFinder(FAStar* pVal) { m_borderFinder = pVal; }
 void CvGlobals::setAreaFinder(FAStar* pVal) { m_areaFinder = pVal; }
 CvDLLUtilityIFaceBase* CvGlobals::getDLLIFaceNonInl() { return m_pDLL; }
 
-// cache XML - start - Nightinggale
-void CvGlobals::setXMLCache()
-{
-	if (m_cache_WEEKS_PER_MONTHS > 0)
-	{
-		// cache is already set.
-		return;
-	}
 
-	m_cache_ADVANCED_START_ALLOW_UNITS_OUTSIDE_CITIES = getDefineINT("ADVANCED_START_ALLOW_UNITS_OUTSIDE_CITIES");
-	m_cache_ADVANCED_START_CITY_COST = getDefineINT("ADVANCED_START_CITY_COST");
-	m_cache_ADVANCED_START_CITY_COST_INCREASE = getDefineINT("ADVANCED_START_CITY_COST_INCREASE");
-	m_cache_ADVANCED_START_CITY_PLACEMENT_MAX_RANGE = getDefineINT("ADVANCED_START_CITY_PLACEMENT_MAX_RANGE");
-	m_cache_ADVANCED_START_CULTURE_COST = getDefineINT("ADVANCED_START_CULTURE_COST"); 
-	m_cache_ADVANCED_START_MAX_UNITS_PER_CITY = getDefineINT("ADVANCED_START_MAX_UNITS_PER_CITY");
-	m_cache_ADVANCED_START_POPULATION_COST = getDefineINT("ADVANCED_START_POPULATION_COST");
-	m_cache_ADVANCED_START_POPULATION_COST_INCREASE = getDefineINT("ADVANCED_START_POPULATION_COST_INCREASE");
-	m_cache_ADVANCED_START_SIGHT_RANGE = getDefineINT("ADVANCED_START_SIGHT_RANGE");
-	m_cache_ADVANCED_START_VISIBILITY_COST = getDefineINT("ADVANCED_START_VISIBILITY_COST");
-	m_cache_ADVANCED_START_VISIBILITY_COST_INCREASE = getDefineINT("ADVANCED_START_VISIBILITY_COST_INCREASE");
-	m_cache_AI_ADVANCED_TECH_START = getDefineINT("AI_ADVANCED_TECH_START");
-	m_cache_AI_CAN_DISBAND_UNITS = getDefineINT("AI_CAN_DISBAND_UNITS");
-	m_cache_AI_CHEAT_AUTO_BUY = getDefineINT("AI_CHEAT_AUTO_BUY");
-	m_cache_AI_CHEAT_NEEDED_DEFENDERS = getDefineINT("AI_CHEAT_NEEDED_DEFENDERS");
-	m_cache_AI_CHEAT_SPICE = getDefineINT("AI_CHEAT_SPICE");
-	m_cache_AI_CHEAT_SPICE_BUY = getDefineINT("AI_CHEAT_SPICE_BUY");
-	m_cache_AI_CHEAT_SPICE_MULTIPLE = getDefineINT("AI_CHEAT_SPICE_MULTIPLE");
-	m_cache_AI_FAVORED_TERRAIN_MOD = getDefineINT("AI_FAVORED_TERRAIN_MOD");
-	m_cache_AI_HANDICAP_CASTLE = getDefineINT("AI_HANDICAP_CASTLE");
-	m_cache_AI_HANDICAP_MOTTE = getDefineINT("AI_HANDICAP_MOTTE");
-	m_cache_AI_MILITARY_PROFESSION_HACK = getDefineINT("AI_MILITARY_PROFESSION_HACK");
-	m_cache_AI_WAREHOUSE_MOD = getDefineINT("AI_WAREHOUSE_MOD");
-	m_cache_ALLIANCE_CULTURE_PERCENT_DENIAL = getDefineINT("ALLIANCE_CULTURE_PERCENT_DENIAL");
-	m_cache_ALLIANCE_PACT_PEACE_DENIAL = getDefineINT("ALLIANCE_PACT_PEACE_DENIAL");
-	m_cache_ANIMAL_BANDITS_GUARD_GOODY_TIMER = getDefineINT("ANIMAL_BANDITS_GUARD_GOODY_TIMER");
-	m_cache_AUTORESEARCH_ALL = getDefineINT("AUTORESEARCH_ALL");
-	m_cache_BANQUET_YIELD_AMOUNT = getDefineINT("BANQUET_YIELD_AMOUNT");
-	m_cache_BARBARIAN_CIVILIZATION = getDefineINT("BARBARIAN_CIVILIZATION");
-	m_cache_BARBARIAN_LEADER = getDefineINT("BARBARIAN_LEADER");
-	m_cache_BASE_CITY_GROWTH_THRESHOLD = getDefineINT("BASE_CITY_GROWTH_THRESHOLD");
-	m_cache_BASE_CITY_LUXURY_FOOD_THRESHOLD_MOD = getDefineINT("BASE_CITY_LUXURY_FOOD_THRESHOLD_MOD");
-	m_cache_BASE_OCCUPATION_TURNS = getDefineINT("BASE_OCCUPATION_TURNS");
-	m_cache_BASE_UNIT_UPGRADE_COST = getDefineINT("BASE_UNIT_UPGRADE_COST");
-	m_cache_BUILDINGCLASS_TRAVEL_TO_FAIR = getDefineINT("BUILDINGCLASS_TRAVEL_TO_FAIR");
-	m_cache_BUILDING_PRODUCTION_DECAY_PERCENT = getDefineINT("BUILDING_PRODUCTION_DECAY_PERCENT");
-	m_cache_BUILDING_PRODUCTION_DECAY_TIME = getDefineINT("BUILDING_PRODUCTION_DECAY_TIME");
-	m_cache_BUILDING_PRODUCTION_PERCENT = getDefineINT("BUILDING_PRODUCTION_PERCENT");
-	m_cache_BUY_PLOT_BASE_CULTURE_COST = getDefineINT("BUY_PLOT_BASE_CULTURE_COST");
-	m_cache_BUY_PLOT_CULTURE_RANGE = getDefineINT("BUY_PLOT_CULTURE_RANGE");
-	m_cache_BUY_PLOT_MIN_CULTURE = getDefineINT("BUY_PLOT_MIN_CULTURE");
-	m_cache_BUY_PLOT_OWNED_COST_MODIFIER = getDefineINT("BUY_PLOT_OWNED_COST_MODIFIER");
-	m_cache_BUY_PLOT_SELLER_INCOME_PERCENT = getDefineINT("BUY_PLOT_SELLER_INCOME_PERCENT");
-	m_cache_CALENDER_YEAR_FIRST_CHANGE_TURN = getDefineINT("CALENDER_YEAR_FIRST_CHANGE_TURN");
-	m_cache_CALENDER_YEAR_FIRST_MULTIPLIER = getDefineINT("CALENDER_YEAR_FIRST_MULTIPLIER");
-	m_cache_CALENDER_YEAR_SECOND_CHANGE_TURN = getDefineINT("CALENDER_YEAR_SECOND_CHANGE_TURN");
-	m_cache_CALENDER_YEAR_SECOND_MULTIPLIER = getDefineINT("CALENDER_YEAR_SECOND_MULTIPLIER");
-	m_cache_CALENDER_YEAR_THIRD_MULTIPLIER = getDefineINT("CALENDER_YEAR_THIRD_MULTIPLIER");
-	m_cache_CAPITAL_BUILDINGCLASS = getDefineINT("CAPITAL_BUILDINGCLASS");
-	m_cache_CAPTURED_CARGO_RANDOM_AMOUNT = getDefineINT("CAPTURED_CARGO_RANDOM_AMOUNT");
-	m_cache_CAPTURED_LUXURY_FOOD_RANDOM_AMOUNT = getDefineINT("CAPTURED_LUXURY_FOOD_RANDOM_AMOUNT");
-	m_cache_CASTLES_TO_VILLAGES_RATIO = getDefineINT("CASTLES_TO_VILLAGES_RATIO");
-	m_cache_CHANCE_TO_CAPTURE_CRIMINALS = getDefineINT("CHANCE_TO_CAPTURE_CRIMINALS");
-	m_cache_CHEAT_TRAVEL_ALL = getDefineINT("CHEAT_TRAVEL_ALL");
-	m_cache_CITY_DEFENSE_DAMAGE_HEAL_RATE = getDefineINT("CITY_DEFENSE_DAMAGE_HEAL_RATE");
-	m_cache_CITY_FREE_CULTURE_GROWTH_FACTOR = getDefineINT("CITY_FREE_CULTURE_GROWTH_FACTOR");
-	m_cache_CITY_GROWTH_MULTIPLIER = getDefineINT("CITY_GROWTH_MULTIPLIER");
-	m_cache_CITY_HEAL_RATE = getDefineINT("CITY_HEAL_RATE");
-	m_cache_CITY_PILGRAM_RANDOM = getDefineINT("CITY_PILGRAM_RANDOM");
-	m_cache_CITY_SCREEN_FOG_ENABLED = getDefineINT("CITY_SCREEN_FOG_ENABLED");
-	m_cache_CITY_YIELD_CAPACITY = getDefineINT("CITY_YIELD_CAPACITY");
-	m_cache_CITY_YIELD_DECAY_PERCENT = getDefineINT("CITY_YIELD_DECAY_PERCENT");
-	m_cache_CIVICOPTION_INVENTIONS = getDefineINT("CIVICOPTION_INVENTIONS");
-	m_cache_COLONIAL_FORCED_PEACE_TURNS = getDefineINT("COLONIAL_FORCED_PEACE_TURNS");
-	m_cache_COMBAT_DAMAGE = getDefineINT("COMBAT_DAMAGE");
-	m_cache_COMBAT_DIE_SIDES = getDefineINT("COMBAT_DIE_SIDES");
-	m_cache_COMBAT_EXPERIENCE_IN_BORDERS_PERCENT = getDefineINT("COMBAT_EXPERIENCE_IN_BORDERS_PERCENT");
-	m_cache_CONSUME_EQUIPMENT_ON_FOUND = getDefineINT("CONSUME_EQUIPMENT_ON_FOUND");
-	m_cache_CONTACT_YIELD_GIFT_ENCOMEIDA_TIMER = getDefineINT("CONTACT_YIELD_GIFT_ENCOMEIDA_TIMER");
-	m_cache_CONTACT_YIELD_GIFT_TECH = getDefineINT("CONTACT_YIELD_GIFT_TECH");
-	m_cache_CULTURE_YIELD = getDefineINT("CULTURE_YIELD");
-	m_cache_DEAL_TRADE_RELATIONS_POINTS = getDefineINT("DEAL_TRADE_RELATIONS_POINTS");
-	m_cache_DEEP_WATER_TERRAIN = getDefineINT("DEEP_WATER_TERRAIN");
-	m_cache_DEFAULT_BUILD_CASTLE = getDefineINT("DEFAULT_BUILD_CASTLE");
-	m_cache_DEFAULT_BUILD_MOTTE_AND_BAILEY = getDefineINT("DEFAULT_BUILD_MOTTE_AND_BAILEY");
-	m_cache_DEFAULT_CENSURETYPE_ANATHEMA = getDefineINT("DEFAULT_CENSURETYPE_ANATHEMA");
-	m_cache_DEFAULT_CENSURETYPE_ANATHEMA_COUNT = getDefineINT("DEFAULT_CENSURETYPE_ANATHEMA_COUNT");
-	m_cache_DEFAULT_CENSURETYPE_EXCOMMUNICATION = getDefineINT("DEFAULT_CENSURETYPE_EXCOMMUNICATION");
-	m_cache_DEFAULT_CENSURETYPE_EXCOMMUNICATION_COUNT = getDefineINT("DEFAULT_CENSURETYPE_EXCOMMUNICATION_COUNT");
-	m_cache_DEFAULT_CENSURETYPE_INTERDICT = getDefineINT("DEFAULT_CENSURETYPE_INTERDICT");
-	m_cache_DEFAULT_CENSURETYPE_INTERDICT_COUNT = getDefineINT("DEFAULT_CENSURETYPE_INTERDICT_COUNT");
-	m_cache_DEFAULT_COMBAT_FOR_TRAINING = getDefineINT("DEFAULT_COMBAT_FOR_TRAINING");
-	m_cache_DEFAULT_DAWN_POPULATION_UNIT = getDefineINT("DEFAULT_DAWN_POPULATION_UNIT");
-	m_cache_DEFAULT_FUEDALISM_TECH = getDefineINT("DEFAULT_FUEDALISM_TECH");
-	m_cache_DEFAULT_GRAIN_GROWTH_UNIT_CLASS = getDefineINT("DEFAULT_GRAIN_GROWTH_UNIT_CLASS");
-	m_cache_DEFAULT_HUNTSMAN_PROFESSION = getDefineINT("DEFAULT_HUNTSMAN_PROFESSION");
-	m_cache_DEFAULT_INVENTOR_CLASS = getDefineINT("DEFAULT_INVENTOR_CLASS");
-	m_cache_DEFAULT_KNIGHT_PROFESSION_PROMOTION = getDefineINT("DEFAULT_KNIGHT_PROFESSION_PROMOTION");
-	m_cache_DEFAULT_KNIGHT_PROMOTION = getDefineINT("DEFAULT_KNIGHT_PROMOTION");
-	m_cache_DEFAULT_MARAUDER_CLASS = getDefineINT("DEFAULT_MARAUDER_CLASS");
-	m_cache_DEFAULT_MARUADER_SEA_PROFESSION = getDefineINT("DEFAULT_MARUADER_SEA_PROFESSION");
-	m_cache_DEFAULT_NOBLEMAN_CLASS = getDefineINT("DEFAULT_NOBLEMAN_CLASS");
-	m_cache_DEFAULT_NOBLE_GROWTH_UNIT_CLASS = getDefineINT("DEFAULT_NOBLE_GROWTH_UNIT_CLASS");
-	m_cache_DEFAULT_PILGRAM_CLASS = getDefineINT("DEFAULT_PILGRAM_CLASS");
-	m_cache_DEFAULT_POPULATION_UNIT = getDefineINT("DEFAULT_POPULATION_UNIT");
-	m_cache_DEFAULT_SHRINE_CLASS = getDefineINT("DEFAULT_SHRINE_CLASS");
-	m_cache_DEFAULT_SLAVE_CLASS = getDefineINT("DEFAULT_SLAVE_CLASS");
-	m_cache_DEFAULT_SPECIALBUILDING_COURTHOUSE = getDefineINT("DEFAULT_SPECIALBUILDING_COURTHOUSE");
-	m_cache_DEFAULT_TEST_DEFINE = getDefineINT("DEFAULT_TEST_DEFINE");
-	m_cache_DEFAULT_TRAINED_PROMOTION = getDefineINT("DEFAULT_TRAINED_PROMOTION");
-	m_cache_DEFAULT_TREASURE_YIELD = getDefineINT("DEFAULT_TREASURE_YIELD");
-	m_cache_DEFAULT_UNTRAINED_PROMOTION = getDefineINT("DEFAULT_UNTRAINED_PROMOTION");
-	m_cache_DEFAULT_VIKING_ERA = getDefineINT("DEFAULT_VIKING_ERA");
-	m_cache_DEFAULT_YIELD_ARMOR_TYPE = getDefineINT("DEFAULT_YIELD_ARMOR_TYPE");
-	m_cache_DIFFERENT_TEAM_FEATURE_PRODUCTION_PERCENT = getDefineINT("DIFFERENT_TEAM_FEATURE_PRODUCTION_PERCENT");
-	m_cache_DIPLOMACY_VALUE_REMAINDER = getDefineINT("DIPLOMACY_VALUE_REMAINDER");
-	m_cache_DOCKS_NEXT_UNITS = getDefineINT("DOCKS_NEXT_UNITS");
-	m_cache_EDUCATION_BASE_TUITION = getDefineINT("EDUCATION_BASE_TUITION");
-	m_cache_EDUCATION_THRESHOLD = getDefineINT("EDUCATION_THRESHOLD");
-	m_cache_EDUCATION_THRESHOLD_INCREASE = getDefineINT("EDUCATION_THRESHOLD_INCREASE");
-	m_cache_ENABLE_ALLIANCE_TRADING = getDefineINT("ENABLE_ALLIANCE_TRADING");
-	m_cache_ENABLE_DEFENSIVE_PACT_TRADING = getDefineINT("ENABLE_DEFENSIVE_PACT_TRADING");
-	m_cache_ENABLE_GOLD_TRADING = getDefineINT("ENABLE_GOLD_TRADING");
-	m_cache_ENABLE_MAP_TRADING = getDefineINT("ENABLE_MAP_TRADING");
-	m_cache_ENABLE_OPEN_BORDERS = getDefineINT("ENABLE_OPEN_BORDERS");
-	m_cache_END_GAME_DISPLAY_WARNING = getDefineINT("END_GAME_DISPLAY_WARNING");
-	m_cache_ENEMY_HEAL_RATE = getDefineINT("ENEMY_HEAL_RATE");
-	m_cache_ESTABLISH_TRADEPOST_COST = getDefineINT("ESTABLISH_TRADEPOST_COST");
-	m_cache_EUROPE_EAST = getDefineINT("EUROPE_EAST");
-	m_cache_EUROPE_MARKET_CORRELATION_PERCENT = getDefineINT("EUROPE_MARKET_CORRELATION_PERCENT");
-	m_cache_EVENT_PROBABILITY_ROLL_SIDES = getDefineINT("EVENT_PROBABILITY_ROLL_SIDES");
-	m_cache_EXPERIENCE_FROM_WITHDRAWL = getDefineINT("EXPERIENCE_FROM_WITHDRAWL");
-	m_cache_EXTRA_YIELD = getDefineINT("EXTRA_YIELD");
-	m_cache_FATHER_COST_EXTRA_TEAM_MEMBER_MODIFIER = getDefineINT("FATHER_COST_EXTRA_TEAM_MEMBER_MODIFIER");
-	m_cache_FATHER_POINT_REAL_TRADE = getDefineINT("FATHER_POINT_REAL_TRADE");
-	m_cache_FEATURE_PRODUCTION_YIELD_MAX_DISTANCE = getDefineINT("FEATURE_PRODUCTION_YIELD_MAX_DISTANCE");
-	m_cache_FIRST_EVENT_DELAY_TURNS = getDefineINT("FIRST_EVENT_DELAY_TURNS");
-	m_cache_FOUND_MONASTERY_NUMBER = getDefineINT("FOUND_MONASTERY_NUMBER");
-	m_cache_FOUND_MOTTE_AND_BAILEY_NUMBER = getDefineINT("FOUND_MOTTE_AND_BAILEY_NUMBER");
-	m_cache_FOUND_OUTPOST_NUMBER = getDefineINT("FOUND_OUTPOST_NUMBER");
-	m_cache_FOUND_VILLAGE_NUMBER = getDefineINT("FOUND_VILLAGE_NUMBER");
-	m_cache_FREE_CITY_ADJACENT_CULTURE = getDefineINT("FREE_CITY_ADJACENT_CULTURE");
-	m_cache_FREE_CITY_CULTURE = getDefineINT("FREE_CITY_CULTURE");
-	m_cache_FREE_PEASANT_CIVIC = getDefineINT("FREE_PEASANT_CIVIC");
-	m_cache_FRIENDLY_HEAL_RATE = getDefineINT("FRIENDLY_HEAL_RATE");
-	m_cache_GREAT_GENERALS_THRESHOLD = getDefineINT("GREAT_GENERALS_THRESHOLD");
-	m_cache_GREAT_GENERALS_THRESHOLD_INCREASE = getDefineINT("GREAT_GENERALS_THRESHOLD_INCREASE");
-	m_cache_GREAT_GENERALS_THRESHOLD_INCREASE_TEAM = getDefineINT("GREAT_GENERALS_THRESHOLD_INCREASE_TEAM");
-	m_cache_HIRE_GUARD_COST = getDefineINT("HIRE_GUARD_COST");
-	m_cache_HIRE_GUARD_PROMOTION = getDefineINT("HIRE_GUARD_PROMOTION");
-	m_cache_IMMIGRATION_MAX_CITY_DISTANCE = getDefineINT("IMMIGRATION_MAX_CITY_DISTANCE");
-	m_cache_IMMIGRATION_THRESHOLD = getDefineINT("IMMIGRATION_THRESHOLD");
-	m_cache_IMMIGRATION_THRESHOLD_INCREASE = getDefineINT("IMMIGRATION_THRESHOLD_INCREASE");
-	m_cache_IMMIGRATION_TRAVEL_MOD = getDefineINT("IMMIGRATION_TRAVEL_MOD");
-	m_cache_INDUSTRIAL_VICTORY_SINGLE_YIELD = getDefineINT("INDUSTRIAL_VICTORY_SINGLE_YIELD");
-	m_cache_INITIAL_AI_CITY_PRODUCTION = getDefineINT("INITIAL_AI_CITY_PRODUCTION");
-	m_cache_INITIAL_CITY_POPULATION = getDefineINT("INITIAL_CITY_POPULATION");
-	m_cache_INITIAL_CITY_ROUTE_TYPE = getDefineINT("INITIAL_CITY_ROUTE_TYPE");
-	m_cache_JUNGLE_FEATURE = getDefineINT("JUNGLE_FEATURE");
-	m_cache_KING_BUY_UNIT_PRICE_MODIFIER = getDefineINT("KING_BUY_UNIT_PRICE_MODIFIER");
-	m_cache_KING_INITIAL_UNIT_INCREASE = getDefineINT("KING_INITIAL_UNIT_INCREASE");
-	m_cache_KING_TRANSPORT_TREASURE_COMISSION = getDefineINT("KING_TRANSPORT_TREASURE_COMISSION");
-	m_cache_KNIGHT_RANSOM_MOD = getDefineINT("KNIGHT_RANSOM_MOD");
-	m_cache_LAKE_PLOT_RAND = getDefineINT("LAKE_PLOT_RAND");
-	m_cache_LAND_IMPROVEMENT = getDefineINT("LAND_IMPROVEMENT");
-	m_cache_LAND_TERRAIN = getDefineINT("LAND_TERRAIN");
-	m_cache_MARAUDERS_DAYSOUT_RANDOM = getDefineINT("MARAUDERS_DAYSOUT_RANDOM");
-	m_cache_MARAUDERS_TOWER_RANGE = getDefineINT("MARAUDERS_TOWER_RANGE");
-	m_cache_MARAUDER_CRUMBS_EVENT = getDefineINT("MARAUDER_CRUMBS_EVENT");
-	m_cache_MARAUDER_EVENT_DEFAULT_TURNS = getDefineINT("MARAUDER_EVENT_DEFAULT_TURNS");
-	m_cache_MAX_CITY_POPULATION_COMMUNE = getDefineINT("MAX_CITY_POPULATION_COMMUNE");
-	m_cache_MAX_CITY_POPULATION_VILLAGE = getDefineINT("MAX_CITY_POPULATION_VILLAGE");
-	m_cache_MAX_EXPERIENCE_AFTER_UPGRADE = getDefineINT("MAX_EXPERIENCE_AFTER_UPGRADE");
-	m_cache_MAX_EXPERIENCE_PER_COMBAT = getDefineINT("MAX_EXPERIENCE_PER_COMBAT");
-	m_cache_MAX_FORTIFY_TURNS = getDefineINT("MAX_FORTIFY_TURNS");
-	m_cache_MAX_INSULT_MODIFIER = getDefineINT("MAX_INSULT_MODIFIER");
-	m_cache_MAX_LEVEL_FROM_ANIMAL_XP = getDefineINT("MAX_LEVEL_FROM_ANIMAL_XP");
-	m_cache_MAX_MARAUDERS = getDefineINT("MAX_MARAUDERS");
-	m_cache_MAX_NUM_LANGUAGES = getDefineINT("MAX_NUM_LANGUAGES");
-	m_cache_MAX_PLOT_LIST_SIZE = getDefineINT("MAX_PLOT_LIST_SIZE");
-	m_cache_MAX_REBEL_COMBAT_MULTIPLER = getDefineINT("MAX_REBEL_COMBAT_MULTIPLER");
-	m_cache_MAX_TRAINED_EXPERIENCE = getDefineINT("MAX_TRAINED_EXPERIENCE");
-	m_cache_MAX_WITHDRAWAL_PROBABILITY = getDefineINT("MAX_WITHDRAWAL_PROBABILITY");
-	m_cache_MEDIEVAL_CENSURE = getDefineINT("MEDIEVAL_CENSURE");
-	m_cache_MEDIEVAL_TRADE_TECH = getDefineINT("MEDIEVAL_TRADE_TECH");
-	m_cache_MINIMAP_RENDER_SIZE = getDefineINT("MINIMAP_RENDER_SIZE");
-	m_cache_MIN_ANIMAL_STARTING_DISTANCE = getDefineINT("MIN_ANIMAL_STARTING_DISTANCE");
-	m_cache_MIN_CITY_YIELD_DECAY = getDefineINT("MIN_CITY_YIELD_DECAY");
-	m_cache_MIN_CIV_STARTING_DISTANCE = getDefineINT("MIN_CIV_STARTING_DISTANCE");
-	m_cache_MIN_EXPERIENCE_PER_COMBAT = getDefineINT("MIN_EXPERIENCE_PER_COMBAT");
-	m_cache_MIN_TIMER_UNIT_DOUBLE_MOVES = getDefineINT("MIN_TIMER_UNIT_DOUBLE_MOVES");
-	m_cache_MIN_WATER_SIZE_FOR_OCEAN = getDefineINT("MIN_WATER_SIZE_FOR_OCEAN");
-	m_cache_MISSIONARY_RATE_EFFECT_ON_SUCCESS = getDefineINT("MISSIONARY_RATE_EFFECT_ON_SUCCESS");
-	m_cache_MISSIONARY_THRESHOLD = getDefineINT("MISSIONARY_THRESHOLD");
-	m_cache_MISSIONARY_THRESHOLD_INCREASE = getDefineINT("MISSIONARY_THRESHOLD_INCREASE");
-	m_cache_MONASTERIES_TO_VILLAGES_RATIO = getDefineINT("MONASTERIES_TO_VILLAGES_RATIO");
-	m_cache_NATIVE_AUTO_SELL_PERCENT = getDefineINT("NATIVE_AUTO_SELL_PERCENT");
-	m_cache_NATIVE_GOODS_RAID_PERCENT = getDefineINT("NATIVE_GOODS_RAID_PERCENT");
-	m_cache_NATIVE_GROWTH_THRESHOLD_MULTIPLIER = getDefineINT("NATIVE_GROWTH_THRESHOLD_MULTIPLIER");
-	m_cache_NATIVE_HORSES_FOR_SALE = getDefineINT("NATIVE_HORSES_FOR_SALE");
-	m_cache_NATIVE_HORSES_FOR_SALE_PERCENT = getDefineINT("NATIVE_HORSES_FOR_SALE_PERCENT");
-	m_cache_NATIVE_TEACH_THRESHOLD_INCREASE = getDefineINT("NATIVE_TEACH_THRESHOLD_INCREASE");
-	m_cache_NATIVE_TECH = getDefineINT("NATIVE_TECH");
-	m_cache_NATIVE_TRADING_TRADEPOST = getDefineINT("NATIVE_TRADING_TRADEPOST");
-	m_cache_NEUTRAL_HEAL_RATE = getDefineINT("NEUTRAL_HEAL_RATE");
-	m_cache_NEW_CITY_BUILDING_VALUE_MODIFIER = getDefineINT("NEW_CITY_BUILDING_VALUE_MODIFIER");
-	m_cache_NEW_HURRY_MODIFIER = getDefineINT("NEW_HURRY_MODIFIER");
-	m_cache_NOBLE_FIELD_LABOR_PENALTY = getDefineINT("NOBLE_FIELD_LABOR_PENALTY");
-	m_cache_NO_BAD_GOODIES_EXPERIENCE_PERCENT = getDefineINT("NO_BAD_GOODIES_EXPERIENCE_PERCENT");
-	m_cache_NO_BAD_GOODIES_GOLD_PERCENT = getDefineINT("NO_BAD_GOODIES_GOLD_PERCENT");
-	m_cache_NO_CITY_SHORTAGE_MESSAGES = getDefineINT("NO_CITY_SHORTAGE_MESSAGES");
-	m_cache_NO_STARTING_PLOTS_IN_JUNGLE = getDefineINT("NO_STARTING_PLOTS_IN_JUNGLE");
-	m_cache_OCCUPATION_CULTURE_PERCENT_THRESHOLD = getDefineINT("OCCUPATION_CULTURE_PERCENT_THRESHOLD");
-	m_cache_OCCUPATION_TURNS_POPULATION_PERCENT = getDefineINT("OCCUPATION_TURNS_POPULATION_PERCENT");
-	m_cache_OWNERSHIP_SCORE_DURATION_THRESHOLD = getDefineINT("OWNERSHIP_SCORE_DURATION_THRESHOLD");
-	m_cache_OWN_TEAM_STARTING_MODIFIER = getDefineINT("OWN_TEAM_STARTING_MODIFIER");
-	m_cache_PEACE_TREATY_LENGTH = getDefineINT("PEACE_TREATY_LENGTH");
-	m_cache_PERCENT_TAX_ON_AUTOSELL_GOODS = getDefineINT("PERCENT_TAX_ON_AUTOSELL_GOODS");
-	m_cache_PILGRAM_OFFER_GOLD = getDefineINT("PILGRAM_OFFER_GOLD");
-	m_cache_PILGRAM_OFFER_GOLD_DISTANCE_MOD = getDefineINT("PILGRAM_OFFER_GOLD_DISTANCE_MOD");
-	m_cache_PLAYER_ALWAYS_RAZES_CITIES = getDefineINT("PLAYER_ALWAYS_RAZES_CITIES");
-	m_cache_PLOTS_PER_RIVER_EDGE = getDefineINT("PLOTS_PER_RIVER_EDGE");
-	m_cache_PLOT_VISIBILITY_RANGE = getDefineINT("PLOT_VISIBILITY_RANGE");
-	m_cache_PROFESSION_COAL_BURNER = getDefineINT("PROFESSION_COAL_BURNER");
-	m_cache_PROFESSION_INVENTOR = getDefineINT("PROFESSION_INVENTOR");
-	m_cache_PROLIFIC_INVENTOR_THRESHOLD_INCREASE = getDefineINT("PROLIFIC_INVENTOR_THRESHOLD_INCREASE");
-	m_cache_PROMOTION_BUILD_HOME = getDefineINT("PROMOTION_BUILD_HOME");
-	m_cache_RANDOM_TURNS_LOST_AT_SEA = getDefineINT("RANDOM_TURNS_LOST_AT_SEA");
-	m_cache_RAZING_CULTURAL_PERCENT_THRESHOLD = getDefineINT("RAZING_CULTURAL_PERCENT_THRESHOLD");
-	m_cache_REBEL_PERCENT_FOR_REVOLUTION = getDefineINT("REBEL_PERCENT_FOR_REVOLUTION");
-	m_cache_REBEL_SENTIMENT_BELLS_FACTOR = getDefineINT("REBEL_SENTIMENT_BELLS_FACTOR");
-	m_cache_REBEL_SENTIMENT_TURN_WEIGHT = getDefineINT("REBEL_SENTIMENT_TURN_WEIGHT");
-	m_cache_REVOLUTION_EUROPE_UNIT_SHIP_MODIFIER = getDefineINT("REVOLUTION_EUROPE_UNIT_SHIP_MODIFIER");
-	m_cache_REVOLUTION_EUROPE_UNIT_THRESHOLD = getDefineINT("REVOLUTION_EUROPE_UNIT_THRESHOLD");
-	m_cache_REVOLUTION_EUROPE_UNIT_THRESHOLD_INCREASE = getDefineINT("REVOLUTION_EUROPE_UNIT_THRESHOLD_INCREASE");
-	m_cache_RIVAL_TEAM_STARTING_MODIFIER = getDefineINT("RIVAL_TEAM_STARTING_MODIFIER");
-	m_cache_RIVER_SOURCE_MIN_RIVER_RANGE = getDefineINT("RIVER_SOURCE_MIN_RIVER_RANGE");
-	m_cache_RIVER_SOURCE_MIN_SEAWATER_RANGE = getDefineINT("RIVER_SOURCE_MIN_SEAWATER_RANGE");
-	m_cache_RUINS_IMPROVEMENT = getDefineINT("RUINS_IMPROVEMENT");
-	m_cache_SCORE_FATHER_FACTOR = getDefineINT("SCORE_FATHER_FACTOR");
-	m_cache_SCORE_LAND_FACTOR = getDefineINT("SCORE_LAND_FACTOR");
-	m_cache_SCORE_POPULATION_FACTOR = getDefineINT("SCORE_POPULATION_FACTOR");
-	m_cache_SCORE_TAX_FACTOR = getDefineINT("SCORE_TAX_FACTOR");
-	m_cache_SETTLEMENT_TREASURE_YIELD = getDefineINT("SETTLEMENT_TREASURE_YIELD");
-	m_cache_SHALLOW_WATER_TERRAIN = getDefineINT("SHALLOW_WATER_TERRAIN");
-	m_cache_SLAVE_FOOD_CONSUMPTION_PER_POPULATION = getDefineINT("SLAVE_FOOD_CONSUMPTION_PER_POPULATION");
-	m_cache_STANDARD_CALENDAR = getDefineINT("STANDARD_CALENDAR");
-	m_cache_STANDARD_CLIMATE = getDefineINT("STANDARD_CLIMATE");
-	m_cache_STANDARD_ERA = getDefineINT("STANDARD_ERA");
-	m_cache_STANDARD_GAMESPEED = getDefineINT("STANDARD_GAMESPEED");
-	m_cache_STANDARD_HANDICAP = getDefineINT("STANDARD_HANDICAP");
-	m_cache_STANDARD_SEALEVEL = getDefineINT("STANDARD_SEALEVEL");
-	m_cache_STANDARD_TURNTIMER = getDefineINT("STANDARD_TURNTIMER");
-	m_cache_STARTING_DISTANCE_PERCENT = getDefineINT("STARTING_DISTANCE_PERCENT");
-	m_cache_START_YEAR = getDefineINT("START_YEAR");
-	m_cache_STEAMWORKS_BUILDING = getDefineINT("STEAMWORKS_BUILDING");
-	m_cache_STEAMWORKS_CLASS_TYPE = getDefineINT("STEAMWORKS_CLASS_TYPE");
-	m_cache_TAX_INCREASE_CHANCE = getDefineINT("TAX_INCREASE_CHANCE");
-	m_cache_TAX_RATE_MAX_INCREASE = getDefineINT("TAX_RATE_MAX_INCREASE");
-	m_cache_TAX_TRADE_THRESHOLD = getDefineINT("TAX_TRADE_THRESHOLD");
-	m_cache_TAX_TRADE_THRESHOLD_ATTITUDE_PERCENT = getDefineINT("TAX_TRADE_THRESHOLD_ATTITUDE_PERCENT");
-	m_cache_TAX_TRADE_THRESHOLD_TAX_RATE_PERCENT = getDefineINT("TAX_TRADE_THRESHOLD_TAX_RATE_PERCENT");
-	m_cache_TK_AI_RESEARCH_COST_MOD_PERCENT = getDefineINT("TK_AI_RESEARCH_COST_MOD_PERCENT");
-	m_cache_TK_HUMAN_RESEARCH_COST_MOD_PERCENT = getDefineINT("TK_HUMAN_RESEARCH_COST_MOD_PERCENT");
-	m_cache_TK_IDEAS_CITY_VALUE = getDefineINT("TK_IDEAS_CITY_VALUE");
-	m_cache_TK_MAX_FORTS_PER_CITY = getDefineINT("TK_MAX_FORTS_PER_CITY");
-	m_cache_TK_PIONEER_COAL_FURNACE_BONUS = getDefineINT("TK_PIONEER_COAL_FURNACE_BONUS");
-	m_cache_TK_PROLIFIC_INVENTOR_PROGRESS = getDefineINT("TK_PROLIFIC_INVENTOR_PROGRESS");
-	m_cache_TK_PROLIFIC_INVENTOR_THRESHOLD = getDefineINT("TK_PROLIFIC_INVENTOR_THRESHOLD");
-	m_cache_TK_RESEARCH_PACT_IDEAS_THRESHOLD = getDefineINT("TK_RESEARCH_PACT_IDEAS_THRESHOLD");
-	m_cache_TK_RESEARCH_TRADE_VALUE = getDefineINT("TK_RESEARCH_TRADE_VALUE");
-	m_cache_TK_STEAMWORKS_MODIFIER = getDefineINT("TK_STEAMWORKS_MODIFIER");
-	m_cache_TRADE_POINTS_FOR_ROUTE = getDefineINT("TRADE_POINTS_FOR_ROUTE");
-	m_cache_TRADE_ROUTE_SPICE = getDefineINT("TRADE_ROUTE_SPICE");
-	m_cache_TRADE_STIMULATES_RESEARCH_MIN_VALUE = getDefineINT("TRADE_STIMULATES_RESEARCH_MIN_VALUE");
-	m_cache_TRADE_STIMULATES_RESEARCH_PERCENT = getDefineINT("TRADE_STIMULATES_RESEARCH_PERCENT");
-	m_cache_TRADING_POINTS_MOD_PERCENT = getDefineINT("TRADING_POINTS_MOD_PERCENT");
-	m_cache_TREASURE_UNITCLASS = getDefineINT("TREASURE_UNITCLASS");
-	m_cache_TREASURE_UNITS_ONLY_SELECT_COASTAL = getDefineINT("TREASURE_UNITS_ONLY_SELECT_COASTAL");
-	m_cache_TURNS_TO_TRAIN = getDefineINT("TURNS_TO_TRAIN");
-	m_cache_UNITARMOR_LEATHER = getDefineINT("UNITARMOR_LEATHER");
-	m_cache_UNITARMOR_MAIL = getDefineINT("UNITARMOR_MAIL");
-	m_cache_UNITARMOR_PLATE = getDefineINT("UNITARMOR_PLATE");
-	m_cache_UNITARMOR_SCALE = getDefineINT("UNITARMOR_SCALE");
-	m_cache_UNITARMOR_SHIELD = getDefineINT("UNITARMOR_SHIELD");
-	m_cache_UNITCLASS_PIONEER = getDefineINT("UNITCLASS_PIONEER");
-	m_cache_UNITTACTIC_PARRY = getDefineINT("UNITTACTIC_PARRY");
-	m_cache_UNITWEAPON_BLUNT = getDefineINT("UNITWEAPON_BLUNT");
-	m_cache_UNIT_PRODUCTION_DECAY_PERCENT = getDefineINT("UNIT_PRODUCTION_DECAY_PERCENT");
-	m_cache_UNIT_PRODUCTION_DECAY_TIME = getDefineINT("UNIT_PRODUCTION_DECAY_TIME");
-	m_cache_UNIT_PRODUCTION_PERCENT = getDefineINT("UNIT_PRODUCTION_PERCENT");
-	m_cache_UNIT_UPGRADE_COST_PER_PRODUCTION = getDefineINT("UNIT_UPGRADE_COST_PER_PRODUCTION");
-	m_cache_UNIT_VISIBILITY_RANGE = getDefineINT("UNIT_VISIBILITY_RANGE");
-	m_cache_USE_MEDIEVAL_CALENDER = getDefineINT("USE_MEDIEVAL_CALENDER");
-	m_cache_VASSAL_CIVILIZATION = getDefineINT("VASSAL_CIVILIZATION");
-	m_cache_VASSAL_LEADER = getDefineINT("VASSAL_LEADER");
-	m_cache_WARLORD_EXTRA_EXPERIENCE_PER_UNIT_PERCENT = getDefineINT("WARLORD_EXTRA_EXPERIENCE_PER_UNIT_PERCENT");
-	m_cache_WAR_SUCCESS_ATTACKING = getDefineINT("WAR_SUCCESS_ATTACKING");
-	m_cache_WAR_SUCCESS_CITY_CAPTURING = getDefineINT("WAR_SUCCESS_CITY_CAPTURING");
-	m_cache_WAR_SUCCESS_DEFENDING = getDefineINT("WAR_SUCCESS_DEFENDING");
-	m_cache_WAR_SUCCESS_UNIT_CAPTURING = getDefineINT("WAR_SUCCESS_UNIT_CAPTURING");
-	m_cache_WATER_IMPROVEMENT = getDefineINT("WATER_IMPROVEMENT");
-	m_cache_WATER_UNIT_FACING_DIRECTION = getDefineINT("WATER_UNIT_FACING_DIRECTION");
-	m_cache_WEEKS_PER_MONTHS = getDefineINT("WEEKS_PER_MONTHS");
-	m_cache_WILD_ANIMAL_ATTACK_WEIGHT = getDefineINT("WILD_ANIMAL_ATTACK_WEIGHT");
-	m_cache_WILD_ANIMAL_LAND_BONUS_NATIVE_WEIGHT = getDefineINT("WILD_ANIMAL_LAND_BONUS_NATIVE_WEIGHT");
-	m_cache_WILD_ANIMAL_LAND_FEATURE_NATIVE_WEIGHT = getDefineINT("WILD_ANIMAL_LAND_FEATURE_NATIVE_WEIGHT");
-	m_cache_WILD_ANIMAL_LAND_PATROL_BASE_WEIGHT = getDefineINT("WILD_ANIMAL_LAND_PATROL_BASE_WEIGHT");
-	m_cache_WILD_ANIMAL_LAND_TERRAIN_NATIVE_WEIGHT = getDefineINT("WILD_ANIMAL_LAND_TERRAIN_NATIVE_WEIGHT");
-	m_cache_WILD_ANIMAL_LAND_UNIT_VARIATION_WEIGHT = getDefineINT("WILD_ANIMAL_LAND_UNIT_VARIATION_WEIGHT");
-	m_cache_WILD_ANIMAL_SEA_BONUS_NATIVE_WEIGHT = getDefineINT("WILD_ANIMAL_SEA_BONUS_NATIVE_WEIGHT");
-	m_cache_WILD_ANIMAL_SEA_FEATURE_NATIVE_WEIGHT = getDefineINT("WILD_ANIMAL_SEA_FEATURE_NATIVE_WEIGHT");
-	m_cache_WILD_ANIMAL_SEA_PATROL_BASE_WEIGHT = getDefineINT("WILD_ANIMAL_SEA_PATROL_BASE_WEIGHT");
-	m_cache_WILD_ANIMAL_SEA_TERRAIN_NATIVE_WEIGHT = getDefineINT("WILD_ANIMAL_SEA_TERRAIN_NATIVE_WEIGHT");
-	m_cache_WILD_ANIMAL_SEA_UNIT_VARIATION_WEIGHT = getDefineINT("WILD_ANIMAL_SEA_UNIT_VARIATION_WEIGHT");
+// XML enum check - start - Nightinggale
+
+/*
+ * Certain XML files have their types hardcoded in enums.
+ * While this certainly increase execution speed, it also adds the risk that the XML and DLL goes out of sync.
+ * The following code is to detect desyncs when the game starts as undetected desyncs can cause havoc.
+ *
+ * This code is autogenerated based on the enums.
+ *    Nightinggale
+ */
+
+void CvGlobals::CheckEnumInterfaceModeTypes() const
+{
+	FAssertMsg(!strcmp(GC.getInterfaceModeInfo(INTERFACEMODE_SELECTION).getType(), "INTERFACEMODE_SELECTION"), CvString::format("XML error. Found %s instead of INTERFACEMODE_SELECTION at index %d", GC.getInterfaceModeInfo(INTERFACEMODE_SELECTION).getType(), INTERFACEMODE_SELECTION).c_str());
+	FAssertMsg(!strcmp(GC.getInterfaceModeInfo(INTERFACEMODE_PING).getType(), "INTERFACEMODE_PING"), CvString::format("XML error. Found %s instead of INTERFACEMODE_PING at index %d", GC.getInterfaceModeInfo(INTERFACEMODE_PING).getType(), INTERFACEMODE_PING).c_str());
+	FAssertMsg(!strcmp(GC.getInterfaceModeInfo(INTERFACEMODE_SIGN).getType(), "INTERFACEMODE_SIGN"), CvString::format("XML error. Found %s instead of INTERFACEMODE_SIGN at index %d", GC.getInterfaceModeInfo(INTERFACEMODE_SIGN).getType(), INTERFACEMODE_SIGN).c_str());
+	FAssertMsg(!strcmp(GC.getInterfaceModeInfo(INTERFACEMODE_GRIP).getType(), "INTERFACEMODE_GRIP"), CvString::format("XML error. Found %s instead of INTERFACEMODE_GRIP at index %d", GC.getInterfaceModeInfo(INTERFACEMODE_GRIP).getType(), INTERFACEMODE_GRIP).c_str());
+	FAssertMsg(!strcmp(GC.getInterfaceModeInfo(INTERFACEMODE_GLOBELAYER_INPUT).getType(), "INTERFACEMODE_GLOBELAYER_INPUT"), CvString::format("XML error. Found %s instead of INTERFACEMODE_GLOBELAYER_INPUT at index %d", GC.getInterfaceModeInfo(INTERFACEMODE_GLOBELAYER_INPUT).getType(), INTERFACEMODE_GLOBELAYER_INPUT).c_str());
+	FAssertMsg(!strcmp(GC.getInterfaceModeInfo(INTERFACEMODE_GO_TO).getType(), "INTERFACEMODE_GO_TO"), CvString::format("XML error. Found %s instead of INTERFACEMODE_GO_TO at index %d", GC.getInterfaceModeInfo(INTERFACEMODE_GO_TO).getType(), INTERFACEMODE_GO_TO).c_str());
+	FAssertMsg(!strcmp(GC.getInterfaceModeInfo(INTERFACEMODE_GO_TO_TYPE).getType(), "INTERFACEMODE_GO_TO_TYPE"), CvString::format("XML error. Found %s instead of INTERFACEMODE_GO_TO_TYPE at index %d", GC.getInterfaceModeInfo(INTERFACEMODE_GO_TO_TYPE).getType(), INTERFACEMODE_GO_TO_TYPE).c_str());
+	FAssertMsg(!strcmp(GC.getInterfaceModeInfo(INTERFACEMODE_GO_TO_ALL).getType(), "INTERFACEMODE_GO_TO_ALL"), CvString::format("XML error. Found %s instead of INTERFACEMODE_GO_TO_ALL at index %d", GC.getInterfaceModeInfo(INTERFACEMODE_GO_TO_ALL).getType(), INTERFACEMODE_GO_TO_ALL).c_str());
+	FAssertMsg(!strcmp(GC.getInterfaceModeInfo(INTERFACEMODE_ROUTE_TO).getType(), "INTERFACEMODE_ROUTE_TO"), CvString::format("XML error. Found %s instead of INTERFACEMODE_ROUTE_TO at index %d", GC.getInterfaceModeInfo(INTERFACEMODE_ROUTE_TO).getType(), INTERFACEMODE_ROUTE_TO).c_str());
+	FAssertMsg(!strcmp(GC.getInterfaceModeInfo(INTERFACEMODE_PYTHON_PICK_PLOT).getType(), "INTERFACEMODE_PYTHON_PICK_PLOT"), CvString::format("XML error. Found %s instead of INTERFACEMODE_PYTHON_PICK_PLOT at index %d", GC.getInterfaceModeInfo(INTERFACEMODE_PYTHON_PICK_PLOT).getType(), INTERFACEMODE_PYTHON_PICK_PLOT).c_str());
+	FAssertMsg(!strcmp(GC.getInterfaceModeInfo(INTERFACEMODE_SAVE_PLOT_NIFS).getType(), "INTERFACEMODE_SAVE_PLOT_NIFS"), CvString::format("XML error. Found %s instead of INTERFACEMODE_SAVE_PLOT_NIFS at index %d", GC.getInterfaceModeInfo(INTERFACEMODE_SAVE_PLOT_NIFS).getType(), INTERFACEMODE_SAVE_PLOT_NIFS).c_str());
+
+	FAssertMsg(GC.getInterfaceModeInfo().size() == NUM_INTERFACEMODE_TYPES, CvString::format("XML error. Expected %d types, but found %d", NUM_INTERFACEMODE_TYPES, GC.getInterfaceModeInfo().size()));
 }
-// cache XML - end - Nightinggale
+
+void CvGlobals::CheckEnumWorldSizeTypes() const
+{
+	FAssertMsg(!strcmp(GC.getWorldInfo(WORLDSIZE_TINY).getType(), "WORLDSIZE_TINY"), CvString::format("XML error. Found %s instead of WORLDSIZE_TINY at index %d", GC.getWorldInfo(WORLDSIZE_TINY).getType(), WORLDSIZE_TINY).c_str());
+	FAssertMsg(!strcmp(GC.getWorldInfo(WORLDSIZE_SMALL).getType(), "WORLDSIZE_SMALL"), CvString::format("XML error. Found %s instead of WORLDSIZE_SMALL at index %d", GC.getWorldInfo(WORLDSIZE_SMALL).getType(), WORLDSIZE_SMALL).c_str());
+	FAssertMsg(!strcmp(GC.getWorldInfo(WORLDSIZE_STANDARD).getType(), "WORLDSIZE_STANDARD"), CvString::format("XML error. Found %s instead of WORLDSIZE_STANDARD at index %d", GC.getWorldInfo(WORLDSIZE_STANDARD).getType(), WORLDSIZE_STANDARD).c_str());
+	FAssertMsg(!strcmp(GC.getWorldInfo(WORLDSIZE_LARGE).getType(), "WORLDSIZE_LARGE"), CvString::format("XML error. Found %s instead of WORLDSIZE_LARGE at index %d", GC.getWorldInfo(WORLDSIZE_LARGE).getType(), WORLDSIZE_LARGE).c_str());
+	FAssertMsg(!strcmp(GC.getWorldInfo(WORLDSIZE_HUGE).getType(), "WORLDSIZE_HUGE"), CvString::format("XML error. Found %s instead of WORLDSIZE_HUGE at index %d", GC.getWorldInfo(WORLDSIZE_HUGE).getType(), WORLDSIZE_HUGE).c_str());
+
+	FAssertMsg(GC.getWorldInfo().size() == NUM_WORLDSIZE_TYPES, CvString::format("XML error. Expected %d types, but found %d", NUM_WORLDSIZE_TYPES, GC.getWorldInfo().size()));
+}
+
+void CvGlobals::CheckEnumGameOptionTypes() const
+{
+	FAssertMsg(!strcmp(GC.getGameOptionInfo(GAMEOPTION_ADVANCED_START).getType(), "GAMEOPTION_ADVANCED_START"), CvString::format("XML error. Found %s instead of GAMEOPTION_ADVANCED_START at index %d", GC.getGameOptionInfo(GAMEOPTION_ADVANCED_START).getType(), GAMEOPTION_ADVANCED_START).c_str());
+	FAssertMsg(!strcmp(GC.getGameOptionInfo(GAMEOPTION_NO_CITY_RAZING).getType(), "GAMEOPTION_NO_CITY_RAZING"), CvString::format("XML error. Found %s instead of GAMEOPTION_NO_CITY_RAZING at index %d", GC.getGameOptionInfo(GAMEOPTION_NO_CITY_RAZING).getType(), GAMEOPTION_NO_CITY_RAZING).c_str());
+	FAssertMsg(!strcmp(GC.getGameOptionInfo(GAMEOPTION_AGGRESSIVE_AI).getType(), "GAMEOPTION_AGGRESSIVE_AI"), CvString::format("XML error. Found %s instead of GAMEOPTION_AGGRESSIVE_AI at index %d", GC.getGameOptionInfo(GAMEOPTION_AGGRESSIVE_AI).getType(), GAMEOPTION_AGGRESSIVE_AI).c_str());
+	FAssertMsg(!strcmp(GC.getGameOptionInfo(GAMEOPTION_NO_WILD_LAND_ANIMALS).getType(), "GAMEOPTION_NO_WILD_LAND_ANIMALS"), CvString::format("XML error. Found %s instead of GAMEOPTION_NO_WILD_LAND_ANIMALS at index %d", GC.getGameOptionInfo(GAMEOPTION_NO_WILD_LAND_ANIMALS).getType(), GAMEOPTION_NO_WILD_LAND_ANIMALS).c_str());
+	FAssertMsg(!strcmp(GC.getGameOptionInfo(GAMEOPTION_NO_WILD_SEA_ANIMALS).getType(), "GAMEOPTION_NO_WILD_SEA_ANIMALS"), CvString::format("XML error. Found %s instead of GAMEOPTION_NO_WILD_SEA_ANIMALS at index %d", GC.getGameOptionInfo(GAMEOPTION_NO_WILD_SEA_ANIMALS).getType(), GAMEOPTION_NO_WILD_SEA_ANIMALS).c_str());
+	FAssertMsg(!strcmp(GC.getGameOptionInfo(GAMEOPTION_LEAD_ANY_CIV).getType(), "GAMEOPTION_LEAD_ANY_CIV"), CvString::format("XML error. Found %s instead of GAMEOPTION_LEAD_ANY_CIV at index %d", GC.getGameOptionInfo(GAMEOPTION_LEAD_ANY_CIV).getType(), GAMEOPTION_LEAD_ANY_CIV).c_str());
+	FAssertMsg(!strcmp(GC.getGameOptionInfo(GAMEOPTION_PERMANENT_ALLIANCES).getType(), "GAMEOPTION_PERMANENT_ALLIANCES"), CvString::format("XML error. Found %s instead of GAMEOPTION_PERMANENT_ALLIANCES at index %d", GC.getGameOptionInfo(GAMEOPTION_PERMANENT_ALLIANCES).getType(), GAMEOPTION_PERMANENT_ALLIANCES).c_str());
+	FAssertMsg(!strcmp(GC.getGameOptionInfo(GAMEOPTION_ALWAYS_WAR).getType(), "GAMEOPTION_ALWAYS_WAR"), CvString::format("XML error. Found %s instead of GAMEOPTION_ALWAYS_WAR at index %d", GC.getGameOptionInfo(GAMEOPTION_ALWAYS_WAR).getType(), GAMEOPTION_ALWAYS_WAR).c_str());
+	FAssertMsg(!strcmp(GC.getGameOptionInfo(GAMEOPTION_ALWAYS_PEACE).getType(), "GAMEOPTION_ALWAYS_PEACE"), CvString::format("XML error. Found %s instead of GAMEOPTION_ALWAYS_PEACE at index %d", GC.getGameOptionInfo(GAMEOPTION_ALWAYS_PEACE).getType(), GAMEOPTION_ALWAYS_PEACE).c_str());
+	FAssertMsg(!strcmp(GC.getGameOptionInfo(GAMEOPTION_ONE_CITY_CHALLENGE).getType(), "GAMEOPTION_ONE_CITY_CHALLENGE"), CvString::format("XML error. Found %s instead of GAMEOPTION_ONE_CITY_CHALLENGE at index %d", GC.getGameOptionInfo(GAMEOPTION_ONE_CITY_CHALLENGE).getType(), GAMEOPTION_ONE_CITY_CHALLENGE).c_str());
+	FAssertMsg(!strcmp(GC.getGameOptionInfo(GAMEOPTION_NO_CHANGING_WAR_PEACE).getType(), "GAMEOPTION_NO_CHANGING_WAR_PEACE"), CvString::format("XML error. Found %s instead of GAMEOPTION_NO_CHANGING_WAR_PEACE at index %d", GC.getGameOptionInfo(GAMEOPTION_NO_CHANGING_WAR_PEACE).getType(), GAMEOPTION_NO_CHANGING_WAR_PEACE).c_str());
+	FAssertMsg(!strcmp(GC.getGameOptionInfo(GAMEOPTION_NEW_RANDOM_SEED).getType(), "GAMEOPTION_NEW_RANDOM_SEED"), CvString::format("XML error. Found %s instead of GAMEOPTION_NEW_RANDOM_SEED at index %d", GC.getGameOptionInfo(GAMEOPTION_NEW_RANDOM_SEED).getType(), GAMEOPTION_NEW_RANDOM_SEED).c_str());
+	FAssertMsg(!strcmp(GC.getGameOptionInfo(GAMEOPTION_LOCK_MODS).getType(), "GAMEOPTION_LOCK_MODS"), CvString::format("XML error. Found %s instead of GAMEOPTION_LOCK_MODS at index %d", GC.getGameOptionInfo(GAMEOPTION_LOCK_MODS).getType(), GAMEOPTION_LOCK_MODS).c_str());
+	FAssertMsg(!strcmp(GC.getGameOptionInfo(GAMEOPTION_NO_GOODY_HUTS).getType(), "GAMEOPTION_NO_GOODY_HUTS"), CvString::format("XML error. Found %s instead of GAMEOPTION_NO_GOODY_HUTS at index %d", GC.getGameOptionInfo(GAMEOPTION_NO_GOODY_HUTS).getType(), GAMEOPTION_NO_GOODY_HUTS).c_str());
+	FAssertMsg(!strcmp(GC.getGameOptionInfo(GAMEOPTION_NO_EVENTS).getType(), "GAMEOPTION_NO_EVENTS"), CvString::format("XML error. Found %s instead of GAMEOPTION_NO_EVENTS at index %d", GC.getGameOptionInfo(GAMEOPTION_NO_EVENTS).getType(), GAMEOPTION_NO_EVENTS).c_str());
+
+	FAssertMsg(GC.getGameOptionInfo().size() == NUM_GAMEOPTION_TYPES, CvString::format("XML error. Expected %d types, but found %d", NUM_GAMEOPTION_TYPES, GC.getGameOptionInfo().size()));
+}
+
+void CvGlobals::CheckEnumPlayerOptionTypes() const
+{
+	FAssertMsg(!strcmp(GC.getPlayerOptionInfo(PLAYEROPTION_TUTORIAL).getType(), "PLAYEROPTION_TUTORIAL"), CvString::format("XML error. Found %s instead of PLAYEROPTION_TUTORIAL at index %d", GC.getPlayerOptionInfo(PLAYEROPTION_TUTORIAL).getType(), PLAYEROPTION_TUTORIAL).c_str());
+	FAssertMsg(!strcmp(GC.getPlayerOptionInfo(PLAYEROPTION_ADVISOR_POPUPS).getType(), "PLAYEROPTION_ADVISOR_POPUPS"), CvString::format("XML error. Found %s instead of PLAYEROPTION_ADVISOR_POPUPS at index %d", GC.getPlayerOptionInfo(PLAYEROPTION_ADVISOR_POPUPS).getType(), PLAYEROPTION_ADVISOR_POPUPS).c_str());
+	FAssertMsg(!strcmp(GC.getPlayerOptionInfo(PLAYEROPTION_ADVISOR_HELP).getType(), "PLAYEROPTION_ADVISOR_HELP"), CvString::format("XML error. Found %s instead of PLAYEROPTION_ADVISOR_HELP at index %d", GC.getPlayerOptionInfo(PLAYEROPTION_ADVISOR_HELP).getType(), PLAYEROPTION_ADVISOR_HELP).c_str());
+	FAssertMsg(!strcmp(GC.getPlayerOptionInfo(PLAYEROPTION_WAIT_END_TURN).getType(), "PLAYEROPTION_WAIT_END_TURN"), CvString::format("XML error. Found %s instead of PLAYEROPTION_WAIT_END_TURN at index %d", GC.getPlayerOptionInfo(PLAYEROPTION_WAIT_END_TURN).getType(), PLAYEROPTION_WAIT_END_TURN).c_str());
+	FAssertMsg(!strcmp(GC.getPlayerOptionInfo(PLAYEROPTION_MINIMIZE_POP_UPS).getType(), "PLAYEROPTION_MINIMIZE_POP_UPS"), CvString::format("XML error. Found %s instead of PLAYEROPTION_MINIMIZE_POP_UPS at index %d", GC.getPlayerOptionInfo(PLAYEROPTION_MINIMIZE_POP_UPS).getType(), PLAYEROPTION_MINIMIZE_POP_UPS).c_str());
+	FAssertMsg(!strcmp(GC.getPlayerOptionInfo(PLAYEROPTION_SHOW_FRIENDLY_MOVES).getType(), "PLAYEROPTION_SHOW_FRIENDLY_MOVES"), CvString::format("XML error. Found %s instead of PLAYEROPTION_SHOW_FRIENDLY_MOVES at index %d", GC.getPlayerOptionInfo(PLAYEROPTION_SHOW_FRIENDLY_MOVES).getType(), PLAYEROPTION_SHOW_FRIENDLY_MOVES).c_str());
+	FAssertMsg(!strcmp(GC.getPlayerOptionInfo(PLAYEROPTION_SHOW_ENEMY_MOVES).getType(), "PLAYEROPTION_SHOW_ENEMY_MOVES"), CvString::format("XML error. Found %s instead of PLAYEROPTION_SHOW_ENEMY_MOVES at index %d", GC.getPlayerOptionInfo(PLAYEROPTION_SHOW_ENEMY_MOVES).getType(), PLAYEROPTION_SHOW_ENEMY_MOVES).c_str());
+	FAssertMsg(!strcmp(GC.getPlayerOptionInfo(PLAYEROPTION_QUICK_MOVES).getType(), "PLAYEROPTION_QUICK_MOVES"), CvString::format("XML error. Found %s instead of PLAYEROPTION_QUICK_MOVES at index %d", GC.getPlayerOptionInfo(PLAYEROPTION_QUICK_MOVES).getType(), PLAYEROPTION_QUICK_MOVES).c_str());
+	FAssertMsg(!strcmp(GC.getPlayerOptionInfo(PLAYEROPTION_QUICK_ATTACK).getType(), "PLAYEROPTION_QUICK_ATTACK"), CvString::format("XML error. Found %s instead of PLAYEROPTION_QUICK_ATTACK at index %d", GC.getPlayerOptionInfo(PLAYEROPTION_QUICK_ATTACK).getType(), PLAYEROPTION_QUICK_ATTACK).c_str());
+	FAssertMsg(!strcmp(GC.getPlayerOptionInfo(PLAYEROPTION_QUICK_DEFENSE).getType(), "PLAYEROPTION_QUICK_DEFENSE"), CvString::format("XML error. Found %s instead of PLAYEROPTION_QUICK_DEFENSE at index %d", GC.getPlayerOptionInfo(PLAYEROPTION_QUICK_DEFENSE).getType(), PLAYEROPTION_QUICK_DEFENSE).c_str());
+	FAssertMsg(!strcmp(GC.getPlayerOptionInfo(PLAYEROPTION_STACK_ATTACK).getType(), "PLAYEROPTION_STACK_ATTACK"), CvString::format("XML error. Found %s instead of PLAYEROPTION_STACK_ATTACK at index %d", GC.getPlayerOptionInfo(PLAYEROPTION_STACK_ATTACK).getType(), PLAYEROPTION_STACK_ATTACK).c_str());
+	FAssertMsg(!strcmp(GC.getPlayerOptionInfo(PLAYEROPTION_AUTO_PROMOTION).getType(), "PLAYEROPTION_AUTO_PROMOTION"), CvString::format("XML error. Found %s instead of PLAYEROPTION_AUTO_PROMOTION at index %d", GC.getPlayerOptionInfo(PLAYEROPTION_AUTO_PROMOTION).getType(), PLAYEROPTION_AUTO_PROMOTION).c_str());
+	FAssertMsg(!strcmp(GC.getPlayerOptionInfo(PLAYEROPTION_SAFE_AUTOMATION).getType(), "PLAYEROPTION_SAFE_AUTOMATION"), CvString::format("XML error. Found %s instead of PLAYEROPTION_SAFE_AUTOMATION at index %d", GC.getPlayerOptionInfo(PLAYEROPTION_SAFE_AUTOMATION).getType(), PLAYEROPTION_SAFE_AUTOMATION).c_str());
+	FAssertMsg(!strcmp(GC.getPlayerOptionInfo(PLAYEROPTION_NUMPAD_HELP).getType(), "PLAYEROPTION_NUMPAD_HELP"), CvString::format("XML error. Found %s instead of PLAYEROPTION_NUMPAD_HELP at index %d", GC.getPlayerOptionInfo(PLAYEROPTION_NUMPAD_HELP).getType(), PLAYEROPTION_NUMPAD_HELP).c_str());
+	FAssertMsg(!strcmp(GC.getPlayerOptionInfo(PLAYEROPTION_NO_UNIT_CYCLING).getType(), "PLAYEROPTION_NO_UNIT_CYCLING"), CvString::format("XML error. Found %s instead of PLAYEROPTION_NO_UNIT_CYCLING at index %d", GC.getPlayerOptionInfo(PLAYEROPTION_NO_UNIT_CYCLING).getType(), PLAYEROPTION_NO_UNIT_CYCLING).c_str());
+	FAssertMsg(!strcmp(GC.getPlayerOptionInfo(PLAYEROPTION_NO_UNIT_RECOMMENDATIONS).getType(), "PLAYEROPTION_NO_UNIT_RECOMMENDATIONS"), CvString::format("XML error. Found %s instead of PLAYEROPTION_NO_UNIT_RECOMMENDATIONS at index %d", GC.getPlayerOptionInfo(PLAYEROPTION_NO_UNIT_RECOMMENDATIONS).getType(), PLAYEROPTION_NO_UNIT_RECOMMENDATIONS).c_str());
+	FAssertMsg(!strcmp(GC.getPlayerOptionInfo(PLAYEROPTION_RIGHT_CLICK_MENU).getType(), "PLAYEROPTION_RIGHT_CLICK_MENU"), CvString::format("XML error. Found %s instead of PLAYEROPTION_RIGHT_CLICK_MENU at index %d", GC.getPlayerOptionInfo(PLAYEROPTION_RIGHT_CLICK_MENU).getType(), PLAYEROPTION_RIGHT_CLICK_MENU).c_str());
+	FAssertMsg(!strcmp(GC.getPlayerOptionInfo(PLAYEROPTION_LEAVE_FORESTS).getType(), "PLAYEROPTION_LEAVE_FORESTS"), CvString::format("XML error. Found %s instead of PLAYEROPTION_LEAVE_FORESTS at index %d", GC.getPlayerOptionInfo(PLAYEROPTION_LEAVE_FORESTS).getType(), PLAYEROPTION_LEAVE_FORESTS).c_str());
+	FAssertMsg(!strcmp(GC.getPlayerOptionInfo(PLAYEROPTION_MODDER_1).getType(), "PLAYEROPTION_MODDER_1"), CvString::format("XML error. Found %s instead of PLAYEROPTION_MODDER_1 at index %d", GC.getPlayerOptionInfo(PLAYEROPTION_MODDER_1).getType(), PLAYEROPTION_MODDER_1).c_str());
+	FAssertMsg(!strcmp(GC.getPlayerOptionInfo(PLAYEROPTION_MODDER_2).getType(), "PLAYEROPTION_MODDER_2"), CvString::format("XML error. Found %s instead of PLAYEROPTION_MODDER_2 at index %d", GC.getPlayerOptionInfo(PLAYEROPTION_MODDER_2).getType(), PLAYEROPTION_MODDER_2).c_str());
+	FAssertMsg(!strcmp(GC.getPlayerOptionInfo(PLAYEROPTION_MODDER_3).getType(), "PLAYEROPTION_MODDER_3"), CvString::format("XML error. Found %s instead of PLAYEROPTION_MODDER_3 at index %d", GC.getPlayerOptionInfo(PLAYEROPTION_MODDER_3).getType(), PLAYEROPTION_MODDER_3).c_str());
+	FAssertMsg(!strcmp(GC.getPlayerOptionInfo(PLAYEROPTION_MODDER_4).getType(), "PLAYEROPTION_MODDER_4"), CvString::format("XML error. Found %s instead of PLAYEROPTION_MODDER_4 at index %d", GC.getPlayerOptionInfo(PLAYEROPTION_MODDER_4).getType(), PLAYEROPTION_MODDER_4).c_str());
+	FAssertMsg(!strcmp(GC.getPlayerOptionInfo(PLAYEROPTION_MODDER_5).getType(), "PLAYEROPTION_MODDER_5"), CvString::format("XML error. Found %s instead of PLAYEROPTION_MODDER_5 at index %d", GC.getPlayerOptionInfo(PLAYEROPTION_MODDER_5).getType(), PLAYEROPTION_MODDER_5).c_str());
+	FAssertMsg(!strcmp(GC.getPlayerOptionInfo(PLAYEROPTION_MODDER_6).getType(), "PLAYEROPTION_MODDER_6"), CvString::format("XML error. Found %s instead of PLAYEROPTION_MODDER_6 at index %d", GC.getPlayerOptionInfo(PLAYEROPTION_MODDER_6).getType(), PLAYEROPTION_MODDER_6).c_str());
+
+	FAssertMsg(GC.getPlayerOptionInfo().size() == NUM_PLAYEROPTION_TYPES, CvString::format("XML error. Expected %d types, but found %d", NUM_PLAYEROPTION_TYPES, GC.getPlayerOptionInfo().size()));
+}
+
+void CvGlobals::CheckEnumGraphicOptionTypes() const
+{
+	FAssertMsg(!strcmp(GC.getGraphicOptionInfo(GRAPHICOPTION_HEALTH_BARS).getType(), "GRAPHICOPTION_HEALTH_BARS"), CvString::format("XML error. Found %s instead of GRAPHICOPTION_HEALTH_BARS at index %d", GC.getGraphicOptionInfo(GRAPHICOPTION_HEALTH_BARS).getType(), GRAPHICOPTION_HEALTH_BARS).c_str());
+	FAssertMsg(!strcmp(GC.getGraphicOptionInfo(GRAPHICOPTION_NO_COMBAT_ZOOM).getType(), "GRAPHICOPTION_NO_COMBAT_ZOOM"), CvString::format("XML error. Found %s instead of GRAPHICOPTION_NO_COMBAT_ZOOM at index %d", GC.getGraphicOptionInfo(GRAPHICOPTION_NO_COMBAT_ZOOM).getType(), GRAPHICOPTION_NO_COMBAT_ZOOM).c_str());
+	FAssertMsg(!strcmp(GC.getGraphicOptionInfo(GRAPHICOPTION_NO_ENEMY_GLOW).getType(), "GRAPHICOPTION_NO_ENEMY_GLOW"), CvString::format("XML error. Found %s instead of GRAPHICOPTION_NO_ENEMY_GLOW at index %d", GC.getGraphicOptionInfo(GRAPHICOPTION_NO_ENEMY_GLOW).getType(), GRAPHICOPTION_NO_ENEMY_GLOW).c_str());
+	FAssertMsg(!strcmp(GC.getGraphicOptionInfo(GRAPHICOPTION_FROZEN_ANIMATIONS).getType(), "GRAPHICOPTION_FROZEN_ANIMATIONS"), CvString::format("XML error. Found %s instead of GRAPHICOPTION_FROZEN_ANIMATIONS at index %d", GC.getGraphicOptionInfo(GRAPHICOPTION_FROZEN_ANIMATIONS).getType(), GRAPHICOPTION_FROZEN_ANIMATIONS).c_str());
+	FAssertMsg(!strcmp(GC.getGraphicOptionInfo(GRAPHICOPTION_EFFECTS_DISABLED).getType(), "GRAPHICOPTION_EFFECTS_DISABLED"), CvString::format("XML error. Found %s instead of GRAPHICOPTION_EFFECTS_DISABLED at index %d", GC.getGraphicOptionInfo(GRAPHICOPTION_EFFECTS_DISABLED).getType(), GRAPHICOPTION_EFFECTS_DISABLED).c_str());
+	FAssertMsg(!strcmp(GC.getGraphicOptionInfo(GRAPHICOPTION_GLOBE_VIEW_BUILDINGS_DISABLED).getType(), "GRAPHICOPTION_GLOBE_VIEW_BUILDINGS_DISABLED"), CvString::format("XML error. Found %s instead of GRAPHICOPTION_GLOBE_VIEW_BUILDINGS_DISABLED at index %d", GC.getGraphicOptionInfo(GRAPHICOPTION_GLOBE_VIEW_BUILDINGS_DISABLED).getType(), GRAPHICOPTION_GLOBE_VIEW_BUILDINGS_DISABLED).c_str());
+	FAssertMsg(!strcmp(GC.getGraphicOptionInfo(GRAPHICOPTION_FULLSCREEN).getType(), "GRAPHICOPTION_FULLSCREEN"), CvString::format("XML error. Found %s instead of GRAPHICOPTION_FULLSCREEN at index %d", GC.getGraphicOptionInfo(GRAPHICOPTION_FULLSCREEN).getType(), GRAPHICOPTION_FULLSCREEN).c_str());
+	FAssertMsg(!strcmp(GC.getGraphicOptionInfo(GRAPHICOPTION_LOWRES_TEXTURES).getType(), "GRAPHICOPTION_LOWRES_TEXTURES"), CvString::format("XML error. Found %s instead of GRAPHICOPTION_LOWRES_TEXTURES at index %d", GC.getGraphicOptionInfo(GRAPHICOPTION_LOWRES_TEXTURES).getType(), GRAPHICOPTION_LOWRES_TEXTURES).c_str());
+	FAssertMsg(!strcmp(GC.getGraphicOptionInfo(GRAPHICOPTION_HIRES_TERRAIN).getType(), "GRAPHICOPTION_HIRES_TERRAIN"), CvString::format("XML error. Found %s instead of GRAPHICOPTION_HIRES_TERRAIN at index %d", GC.getGraphicOptionInfo(GRAPHICOPTION_HIRES_TERRAIN).getType(), GRAPHICOPTION_HIRES_TERRAIN).c_str());
+	FAssertMsg(!strcmp(GC.getGraphicOptionInfo(GRAPHICOPTION_NO_MOVIES).getType(), "GRAPHICOPTION_NO_MOVIES"), CvString::format("XML error. Found %s instead of GRAPHICOPTION_NO_MOVIES at index %d", GC.getGraphicOptionInfo(GRAPHICOPTION_NO_MOVIES).getType(), GRAPHICOPTION_NO_MOVIES).c_str());
+
+	FAssertMsg(GC.getGraphicOptionInfo().size() == NUM_GRAPHICOPTION_TYPES, CvString::format("XML error. Expected %d types, but found %d", NUM_GRAPHICOPTION_TYPES, GC.getGraphicOptionInfo().size()));
+}
+
+void CvGlobals::CheckEnumForceControlTypes() const
+{
+	FAssertMsg(!strcmp(GC.getForceControlInfo(FORCECONTROL_SPEED).getType(), "FORCECONTROL_SPEED"), CvString::format("XML error. Found %s instead of FORCECONTROL_SPEED at index %d", GC.getForceControlInfo(FORCECONTROL_SPEED).getType(), FORCECONTROL_SPEED).c_str());
+	FAssertMsg(!strcmp(GC.getForceControlInfo(FORCECONTROL_HANDICAP).getType(), "FORCECONTROL_HANDICAP"), CvString::format("XML error. Found %s instead of FORCECONTROL_HANDICAP at index %d", GC.getForceControlInfo(FORCECONTROL_HANDICAP).getType(), FORCECONTROL_HANDICAP).c_str());
+	FAssertMsg(!strcmp(GC.getForceControlInfo(FORCECONTROL_OPTIONS).getType(), "FORCECONTROL_OPTIONS"), CvString::format("XML error. Found %s instead of FORCECONTROL_OPTIONS at index %d", GC.getForceControlInfo(FORCECONTROL_OPTIONS).getType(), FORCECONTROL_OPTIONS).c_str());
+	FAssertMsg(!strcmp(GC.getForceControlInfo(FORCECONTROL_VICTORIES).getType(), "FORCECONTROL_VICTORIES"), CvString::format("XML error. Found %s instead of FORCECONTROL_VICTORIES at index %d", GC.getForceControlInfo(FORCECONTROL_VICTORIES).getType(), FORCECONTROL_VICTORIES).c_str());
+	FAssertMsg(!strcmp(GC.getForceControlInfo(FORCECONTROL_MAX_TURNS).getType(), "FORCECONTROL_MAX_TURNS"), CvString::format("XML error. Found %s instead of FORCECONTROL_MAX_TURNS at index %d", GC.getForceControlInfo(FORCECONTROL_MAX_TURNS).getType(), FORCECONTROL_MAX_TURNS).c_str());
+	FAssertMsg(!strcmp(GC.getForceControlInfo(FORCECONTROL_MAX_CITY_ELIMINATION).getType(), "FORCECONTROL_MAX_CITY_ELIMINATION"), CvString::format("XML error. Found %s instead of FORCECONTROL_MAX_CITY_ELIMINATION at index %d", GC.getForceControlInfo(FORCECONTROL_MAX_CITY_ELIMINATION).getType(), FORCECONTROL_MAX_CITY_ELIMINATION).c_str());
+	FAssertMsg(!strcmp(GC.getForceControlInfo(FORCECONTROL_ADVANCED_START).getType(), "FORCECONTROL_ADVANCED_START"), CvString::format("XML error. Found %s instead of FORCECONTROL_ADVANCED_START at index %d", GC.getForceControlInfo(FORCECONTROL_ADVANCED_START).getType(), FORCECONTROL_ADVANCED_START).c_str());
+
+	FAssertMsg(GC.getForceControlInfo().size() == NUM_FORCECONTROL_TYPES, CvString::format("XML error. Expected %d types, but found %d", NUM_FORCECONTROL_TYPES, GC.getForceControlInfo().size()));
+}
+
+void CvGlobals::CheckEnumDenialTypes() const
+{
+	FAssertMsg(!strcmp(GC.getDenialInfo(DENIAL_UNKNOWN).getType(), "DENIAL_UNKNOWN"), CvString::format("XML error. Found %s instead of DENIAL_UNKNOWN at index %d", GC.getDenialInfo(DENIAL_UNKNOWN).getType(), DENIAL_UNKNOWN).c_str());
+	FAssertMsg(!strcmp(GC.getDenialInfo(DENIAL_NEVER).getType(), "DENIAL_NEVER"), CvString::format("XML error. Found %s instead of DENIAL_NEVER at index %d", GC.getDenialInfo(DENIAL_NEVER).getType(), DENIAL_NEVER).c_str());
+	FAssertMsg(!strcmp(GC.getDenialInfo(DENIAL_TOO_MUCH).getType(), "DENIAL_TOO_MUCH"), CvString::format("XML error. Found %s instead of DENIAL_TOO_MUCH at index %d", GC.getDenialInfo(DENIAL_TOO_MUCH).getType(), DENIAL_TOO_MUCH).c_str());
+	FAssertMsg(!strcmp(GC.getDenialInfo(DENIAL_MYSTERY).getType(), "DENIAL_MYSTERY"), CvString::format("XML error. Found %s instead of DENIAL_MYSTERY at index %d", GC.getDenialInfo(DENIAL_MYSTERY).getType(), DENIAL_MYSTERY).c_str());
+	FAssertMsg(!strcmp(GC.getDenialInfo(DENIAL_JOKING).getType(), "DENIAL_JOKING"), CvString::format("XML error. Found %s instead of DENIAL_JOKING at index %d", GC.getDenialInfo(DENIAL_JOKING).getType(), DENIAL_JOKING).c_str());
+	FAssertMsg(!strcmp(GC.getDenialInfo(DENIAL_CONTACT_THEM).getType(), "DENIAL_CONTACT_THEM"), CvString::format("XML error. Found %s instead of DENIAL_CONTACT_THEM at index %d", GC.getDenialInfo(DENIAL_CONTACT_THEM).getType(), DENIAL_CONTACT_THEM).c_str());
+	FAssertMsg(!strcmp(GC.getDenialInfo(DENIAL_VICTORY).getType(), "DENIAL_VICTORY"), CvString::format("XML error. Found %s instead of DENIAL_VICTORY at index %d", GC.getDenialInfo(DENIAL_VICTORY).getType(), DENIAL_VICTORY).c_str());
+	FAssertMsg(!strcmp(GC.getDenialInfo(DENIAL_ATTITUDE).getType(), "DENIAL_ATTITUDE"), CvString::format("XML error. Found %s instead of DENIAL_ATTITUDE at index %d", GC.getDenialInfo(DENIAL_ATTITUDE).getType(), DENIAL_ATTITUDE).c_str());
+	FAssertMsg(!strcmp(GC.getDenialInfo(DENIAL_ATTITUDE_THEM).getType(), "DENIAL_ATTITUDE_THEM"), CvString::format("XML error. Found %s instead of DENIAL_ATTITUDE_THEM at index %d", GC.getDenialInfo(DENIAL_ATTITUDE_THEM).getType(), DENIAL_ATTITUDE_THEM).c_str());
+	FAssertMsg(!strcmp(GC.getDenialInfo(DENIAL_POWER_US).getType(), "DENIAL_POWER_US"), CvString::format("XML error. Found %s instead of DENIAL_POWER_US at index %d", GC.getDenialInfo(DENIAL_POWER_US).getType(), DENIAL_POWER_US).c_str());
+	FAssertMsg(!strcmp(GC.getDenialInfo(DENIAL_POWER_YOU).getType(), "DENIAL_POWER_YOU"), CvString::format("XML error. Found %s instead of DENIAL_POWER_YOU at index %d", GC.getDenialInfo(DENIAL_POWER_YOU).getType(), DENIAL_POWER_YOU).c_str());
+	FAssertMsg(!strcmp(GC.getDenialInfo(DENIAL_POWER_THEM).getType(), "DENIAL_POWER_THEM"), CvString::format("XML error. Found %s instead of DENIAL_POWER_THEM at index %d", GC.getDenialInfo(DENIAL_POWER_THEM).getType(), DENIAL_POWER_THEM).c_str());
+	FAssertMsg(!strcmp(GC.getDenialInfo(DENIAL_TOO_MANY_WARS).getType(), "DENIAL_TOO_MANY_WARS"), CvString::format("XML error. Found %s instead of DENIAL_TOO_MANY_WARS at index %d", GC.getDenialInfo(DENIAL_TOO_MANY_WARS).getType(), DENIAL_TOO_MANY_WARS).c_str());
+	FAssertMsg(!strcmp(GC.getDenialInfo(DENIAL_NO_GAIN).getType(), "DENIAL_NO_GAIN"), CvString::format("XML error. Found %s instead of DENIAL_NO_GAIN at index %d", GC.getDenialInfo(DENIAL_NO_GAIN).getType(), DENIAL_NO_GAIN).c_str());
+	FAssertMsg(!strcmp(GC.getDenialInfo(DENIAL_NOT_INTERESTED).getType(), "DENIAL_NOT_INTERESTED"), CvString::format("XML error. Found %s instead of DENIAL_NOT_INTERESTED at index %d", GC.getDenialInfo(DENIAL_NOT_INTERESTED).getType(), DENIAL_NOT_INTERESTED).c_str());
+	FAssertMsg(!strcmp(GC.getDenialInfo(DENIAL_NOT_ALLIED).getType(), "DENIAL_NOT_ALLIED"), CvString::format("XML error. Found %s instead of DENIAL_NOT_ALLIED at index %d", GC.getDenialInfo(DENIAL_NOT_ALLIED).getType(), DENIAL_NOT_ALLIED).c_str());
+	FAssertMsg(!strcmp(GC.getDenialInfo(DENIAL_RECENT_CANCEL).getType(), "DENIAL_RECENT_CANCEL"), CvString::format("XML error. Found %s instead of DENIAL_RECENT_CANCEL at index %d", GC.getDenialInfo(DENIAL_RECENT_CANCEL).getType(), DENIAL_RECENT_CANCEL).c_str());
+	FAssertMsg(!strcmp(GC.getDenialInfo(DENIAL_WORST_ENEMY).getType(), "DENIAL_WORST_ENEMY"), CvString::format("XML error. Found %s instead of DENIAL_WORST_ENEMY at index %d", GC.getDenialInfo(DENIAL_WORST_ENEMY).getType(), DENIAL_WORST_ENEMY).c_str());
+	FAssertMsg(!strcmp(GC.getDenialInfo(DENIAL_POWER_YOUR_ENEMIES).getType(), "DENIAL_POWER_YOUR_ENEMIES"), CvString::format("XML error. Found %s instead of DENIAL_POWER_YOUR_ENEMIES at index %d", GC.getDenialInfo(DENIAL_POWER_YOUR_ENEMIES).getType(), DENIAL_POWER_YOUR_ENEMIES).c_str());
+	FAssertMsg(!strcmp(GC.getDenialInfo(DENIAL_TOO_FAR).getType(), "DENIAL_TOO_FAR"), CvString::format("XML error. Found %s instead of DENIAL_TOO_FAR at index %d", GC.getDenialInfo(DENIAL_TOO_FAR).getType(), DENIAL_TOO_FAR).c_str());
+	FAssertMsg(!strcmp(GC.getDenialInfo(DENIAL_WAR_NOT_POSSIBLE_US).getType(), "DENIAL_WAR_NOT_POSSIBLE_US"), CvString::format("XML error. Found %s instead of DENIAL_WAR_NOT_POSSIBLE_US at index %d", GC.getDenialInfo(DENIAL_WAR_NOT_POSSIBLE_US).getType(), DENIAL_WAR_NOT_POSSIBLE_US).c_str());
+	FAssertMsg(!strcmp(GC.getDenialInfo(DENIAL_WAR_NOT_POSSIBLE_YOU).getType(), "DENIAL_WAR_NOT_POSSIBLE_YOU"), CvString::format("XML error. Found %s instead of DENIAL_WAR_NOT_POSSIBLE_YOU at index %d", GC.getDenialInfo(DENIAL_WAR_NOT_POSSIBLE_YOU).getType(), DENIAL_WAR_NOT_POSSIBLE_YOU).c_str());
+	FAssertMsg(!strcmp(GC.getDenialInfo(DENIAL_PEACE_NOT_POSSIBLE_US).getType(), "DENIAL_PEACE_NOT_POSSIBLE_US"), CvString::format("XML error. Found %s instead of DENIAL_PEACE_NOT_POSSIBLE_US at index %d", GC.getDenialInfo(DENIAL_PEACE_NOT_POSSIBLE_US).getType(), DENIAL_PEACE_NOT_POSSIBLE_US).c_str());
+	FAssertMsg(!strcmp(GC.getDenialInfo(DENIAL_PEACE_NOT_POSSIBLE_YOU).getType(), "DENIAL_PEACE_NOT_POSSIBLE_YOU"), CvString::format("XML error. Found %s instead of DENIAL_PEACE_NOT_POSSIBLE_YOU at index %d", GC.getDenialInfo(DENIAL_PEACE_NOT_POSSIBLE_YOU).getType(), DENIAL_PEACE_NOT_POSSIBLE_YOU).c_str());
+	FAssertMsg(!strcmp(GC.getDenialInfo(DENIAL_CULTURE_YOU).getType(), "DENIAL_CULTURE_YOU"), CvString::format("XML error. Found %s instead of DENIAL_CULTURE_YOU at index %d", GC.getDenialInfo(DENIAL_CULTURE_YOU).getType(), DENIAL_CULTURE_YOU).c_str());
+
+	FAssertMsg(GC.getDenialInfo().size() == NUM_DENIAL_TYPES, CvString::format("XML error. Expected %d types, but found %d", NUM_DENIAL_TYPES, GC.getDenialInfo().size()));
+}
+
+void CvGlobals::CheckEnumDomainTypes() const
+{
+	FAssertMsg(!strcmp(GC.getDomainInfo(DOMAIN_SEA).getType(), "DOMAIN_SEA"), CvString::format("XML error. Found %s instead of DOMAIN_SEA at index %d", GC.getDomainInfo(DOMAIN_SEA).getType(), DOMAIN_SEA).c_str());
+	FAssertMsg(!strcmp(GC.getDomainInfo(DOMAIN_LAND).getType(), "DOMAIN_LAND"), CvString::format("XML error. Found %s instead of DOMAIN_LAND at index %d", GC.getDomainInfo(DOMAIN_LAND).getType(), DOMAIN_LAND).c_str());
+	FAssertMsg(!strcmp(GC.getDomainInfo(DOMAIN_IMMOBILE).getType(), "DOMAIN_IMMOBILE"), CvString::format("XML error. Found %s instead of DOMAIN_IMMOBILE at index %d", GC.getDomainInfo(DOMAIN_IMMOBILE).getType(), DOMAIN_IMMOBILE).c_str());
+
+	FAssertMsg(GC.getDomainInfo().size() == NUM_DOMAIN_TYPES, CvString::format("XML error. Expected %d types, but found %d", NUM_DOMAIN_TYPES, GC.getDomainInfo().size()));
+}
+
+void CvGlobals::CheckEnumUnitAITypes() const
+{
+	FAssertMsg(!strcmp(GC.getUnitAIInfo(UNITAI_UNKNOWN).getType(), "UNITAI_UNKNOWN"), CvString::format("XML error. Found %s instead of UNITAI_UNKNOWN at index %d", GC.getUnitAIInfo(UNITAI_UNKNOWN).getType(), UNITAI_UNKNOWN).c_str());
+	FAssertMsg(!strcmp(GC.getUnitAIInfo(UNITAI_ANIMAL).getType(), "UNITAI_ANIMAL"), CvString::format("XML error. Found %s instead of UNITAI_ANIMAL at index %d", GC.getUnitAIInfo(UNITAI_ANIMAL).getType(), UNITAI_ANIMAL).c_str());
+	FAssertMsg(!strcmp(GC.getUnitAIInfo(UNITAI_COLONIST).getType(), "UNITAI_COLONIST"), CvString::format("XML error. Found %s instead of UNITAI_COLONIST at index %d", GC.getUnitAIInfo(UNITAI_COLONIST).getType(), UNITAI_COLONIST).c_str());
+	FAssertMsg(!strcmp(GC.getUnitAIInfo(UNITAI_SETTLER).getType(), "UNITAI_SETTLER"), CvString::format("XML error. Found %s instead of UNITAI_SETTLER at index %d", GC.getUnitAIInfo(UNITAI_SETTLER).getType(), UNITAI_SETTLER).c_str());
+	FAssertMsg(!strcmp(GC.getUnitAIInfo(UNITAI_WORKER).getType(), "UNITAI_WORKER"), CvString::format("XML error. Found %s instead of UNITAI_WORKER at index %d", GC.getUnitAIInfo(UNITAI_WORKER).getType(), UNITAI_WORKER).c_str());
+	FAssertMsg(!strcmp(GC.getUnitAIInfo(UNITAI_MISSIONARY).getType(), "UNITAI_MISSIONARY"), CvString::format("XML error. Found %s instead of UNITAI_MISSIONARY at index %d", GC.getUnitAIInfo(UNITAI_MISSIONARY).getType(), UNITAI_MISSIONARY).c_str());
+	FAssertMsg(!strcmp(GC.getUnitAIInfo(UNITAI_SCOUT).getType(), "UNITAI_SCOUT"), CvString::format("XML error. Found %s instead of UNITAI_SCOUT at index %d", GC.getUnitAIInfo(UNITAI_SCOUT).getType(), UNITAI_SCOUT).c_str());
+	FAssertMsg(!strcmp(GC.getUnitAIInfo(UNITAI_WAGON).getType(), "UNITAI_WAGON"), CvString::format("XML error. Found %s instead of UNITAI_WAGON at index %d", GC.getUnitAIInfo(UNITAI_WAGON).getType(), UNITAI_WAGON).c_str());
+	FAssertMsg(!strcmp(GC.getUnitAIInfo(UNITAI_TREASURE).getType(), "UNITAI_TREASURE"), CvString::format("XML error. Found %s instead of UNITAI_TREASURE at index %d", GC.getUnitAIInfo(UNITAI_TREASURE).getType(), UNITAI_TREASURE).c_str());
+	FAssertMsg(!strcmp(GC.getUnitAIInfo(UNITAI_YIELD).getType(), "UNITAI_YIELD"), CvString::format("XML error. Found %s instead of UNITAI_YIELD at index %d", GC.getUnitAIInfo(UNITAI_YIELD).getType(), UNITAI_YIELD).c_str());
+	FAssertMsg(!strcmp(GC.getUnitAIInfo(UNITAI_GENERAL).getType(), "UNITAI_GENERAL"), CvString::format("XML error. Found %s instead of UNITAI_GENERAL at index %d", GC.getUnitAIInfo(UNITAI_GENERAL).getType(), UNITAI_GENERAL).c_str());
+	FAssertMsg(!strcmp(GC.getUnitAIInfo(UNITAI_DEFENSIVE).getType(), "UNITAI_DEFENSIVE"), CvString::format("XML error. Found %s instead of UNITAI_DEFENSIVE at index %d", GC.getUnitAIInfo(UNITAI_DEFENSIVE).getType(), UNITAI_DEFENSIVE).c_str());
+	FAssertMsg(!strcmp(GC.getUnitAIInfo(UNITAI_OFFENSIVE).getType(), "UNITAI_OFFENSIVE"), CvString::format("XML error. Found %s instead of UNITAI_OFFENSIVE at index %d", GC.getUnitAIInfo(UNITAI_OFFENSIVE).getType(), UNITAI_OFFENSIVE).c_str());
+	FAssertMsg(!strcmp(GC.getUnitAIInfo(UNITAI_COUNTER).getType(), "UNITAI_COUNTER"), CvString::format("XML error. Found %s instead of UNITAI_COUNTER at index %d", GC.getUnitAIInfo(UNITAI_COUNTER).getType(), UNITAI_COUNTER).c_str());
+	FAssertMsg(!strcmp(GC.getUnitAIInfo(UNITAI_TRANSPORT_SEA).getType(), "UNITAI_TRANSPORT_SEA"), CvString::format("XML error. Found %s instead of UNITAI_TRANSPORT_SEA at index %d", GC.getUnitAIInfo(UNITAI_TRANSPORT_SEA).getType(), UNITAI_TRANSPORT_SEA).c_str());
+	FAssertMsg(!strcmp(GC.getUnitAIInfo(UNITAI_ASSAULT_SEA).getType(), "UNITAI_ASSAULT_SEA"), CvString::format("XML error. Found %s instead of UNITAI_ASSAULT_SEA at index %d", GC.getUnitAIInfo(UNITAI_ASSAULT_SEA).getType(), UNITAI_ASSAULT_SEA).c_str());
+	FAssertMsg(!strcmp(GC.getUnitAIInfo(UNITAI_COMBAT_SEA).getType(), "UNITAI_COMBAT_SEA"), CvString::format("XML error. Found %s instead of UNITAI_COMBAT_SEA at index %d", GC.getUnitAIInfo(UNITAI_COMBAT_SEA).getType(), UNITAI_COMBAT_SEA).c_str());
+	FAssertMsg(!strcmp(GC.getUnitAIInfo(UNITAI_PIRATE_SEA).getType(), "UNITAI_PIRATE_SEA"), CvString::format("XML error. Found %s instead of UNITAI_PIRATE_SEA at index %d", GC.getUnitAIInfo(UNITAI_PIRATE_SEA).getType(), UNITAI_PIRATE_SEA).c_str());
+	FAssertMsg(!strcmp(GC.getUnitAIInfo(UNITAI_TRADER).getType(), "UNITAI_TRADER"), CvString::format("XML error. Found %s instead of UNITAI_TRADER at index %d", GC.getUnitAIInfo(UNITAI_TRADER).getType(), UNITAI_TRADER).c_str());
+	FAssertMsg(!strcmp(GC.getUnitAIInfo(UNITAI_HUNTSMAN).getType(), "UNITAI_HUNTSMAN"), CvString::format("XML error. Found %s instead of UNITAI_HUNTSMAN at index %d", GC.getUnitAIInfo(UNITAI_HUNTSMAN).getType(), UNITAI_HUNTSMAN).c_str());
+	FAssertMsg(!strcmp(GC.getUnitAIInfo(UNITAI_MARAUDER).getType(), "UNITAI_MARAUDER"), CvString::format("XML error. Found %s instead of UNITAI_MARAUDER at index %d", GC.getUnitAIInfo(UNITAI_MARAUDER).getType(), UNITAI_MARAUDER).c_str());
+
+	FAssertMsg(GC.getUnitAIInfo().size() == NUM_UNITAI_TYPES, CvString::format("XML error. Expected %d types, but found %d", NUM_UNITAI_TYPES, GC.getUnitAIInfo().size()));
+}
+
+void CvGlobals::CheckEnumMissionTypes() const
+{
+	FAssertMsg(!strcmp(GC.getMissionInfo(MISSION_MOVE_TO).getType(), "MISSION_MOVE_TO"), CvString::format("XML error. Found %s instead of MISSION_MOVE_TO at index %d", GC.getMissionInfo(MISSION_MOVE_TO).getType(), MISSION_MOVE_TO).c_str());
+	FAssertMsg(!strcmp(GC.getMissionInfo(MISSION_ROUTE_TO).getType(), "MISSION_ROUTE_TO"), CvString::format("XML error. Found %s instead of MISSION_ROUTE_TO at index %d", GC.getMissionInfo(MISSION_ROUTE_TO).getType(), MISSION_ROUTE_TO).c_str());
+	FAssertMsg(!strcmp(GC.getMissionInfo(MISSION_MOVE_TO_UNIT).getType(), "MISSION_MOVE_TO_UNIT"), CvString::format("XML error. Found %s instead of MISSION_MOVE_TO_UNIT at index %d", GC.getMissionInfo(MISSION_MOVE_TO_UNIT).getType(), MISSION_MOVE_TO_UNIT).c_str());
+	FAssertMsg(!strcmp(GC.getMissionInfo(MISSION_SKIP).getType(), "MISSION_SKIP"), CvString::format("XML error. Found %s instead of MISSION_SKIP at index %d", GC.getMissionInfo(MISSION_SKIP).getType(), MISSION_SKIP).c_str());
+	FAssertMsg(!strcmp(GC.getMissionInfo(MISSION_SLEEP).getType(), "MISSION_SLEEP"), CvString::format("XML error. Found %s instead of MISSION_SLEEP at index %d", GC.getMissionInfo(MISSION_SLEEP).getType(), MISSION_SLEEP).c_str());
+	FAssertMsg(!strcmp(GC.getMissionInfo(MISSION_FORTIFY).getType(), "MISSION_FORTIFY"), CvString::format("XML error. Found %s instead of MISSION_FORTIFY at index %d", GC.getMissionInfo(MISSION_FORTIFY).getType(), MISSION_FORTIFY).c_str());
+	FAssertMsg(!strcmp(GC.getMissionInfo(MISSION_HEAL).getType(), "MISSION_HEAL"), CvString::format("XML error. Found %s instead of MISSION_HEAL at index %d", GC.getMissionInfo(MISSION_HEAL).getType(), MISSION_HEAL).c_str());
+	FAssertMsg(!strcmp(GC.getMissionInfo(MISSION_SENTRY).getType(), "MISSION_SENTRY"), CvString::format("XML error. Found %s instead of MISSION_SENTRY at index %d", GC.getMissionInfo(MISSION_SENTRY).getType(), MISSION_SENTRY).c_str());
+	FAssertMsg(!strcmp(GC.getMissionInfo(MISSION_BOMBARD).getType(), "MISSION_BOMBARD"), CvString::format("XML error. Found %s instead of MISSION_BOMBARD at index %d", GC.getMissionInfo(MISSION_BOMBARD).getType(), MISSION_BOMBARD).c_str());
+	FAssertMsg(!strcmp(GC.getMissionInfo(MISSION_PILLAGE).getType(), "MISSION_PILLAGE"), CvString::format("XML error. Found %s instead of MISSION_PILLAGE at index %d", GC.getMissionInfo(MISSION_PILLAGE).getType(), MISSION_PILLAGE).c_str());
+	FAssertMsg(!strcmp(GC.getMissionInfo(MISSION_FOUND).getType(), "MISSION_FOUND"), CvString::format("XML error. Found %s instead of MISSION_FOUND at index %d", GC.getMissionInfo(MISSION_FOUND).getType(), MISSION_FOUND).c_str());
+	FAssertMsg(!strcmp(GC.getMissionInfo(MISSION_JOIN_CITY).getType(), "MISSION_JOIN_CITY"), CvString::format("XML error. Found %s instead of MISSION_JOIN_CITY at index %d", GC.getMissionInfo(MISSION_JOIN_CITY).getType(), MISSION_JOIN_CITY).c_str());
+	FAssertMsg(!strcmp(GC.getMissionInfo(MISSION_BUILD).getType(), "MISSION_BUILD"), CvString::format("XML error. Found %s instead of MISSION_BUILD at index %d", GC.getMissionInfo(MISSION_BUILD).getType(), MISSION_BUILD).c_str());
+	FAssertMsg(!strcmp(GC.getMissionInfo(MISSION_LEAD).getType(), "MISSION_LEAD"), CvString::format("XML error. Found %s instead of MISSION_LEAD at index %d", GC.getMissionInfo(MISSION_LEAD).getType(), MISSION_LEAD).c_str());
+	FAssertMsg(!strcmp(GC.getMissionInfo(MISSION_BEGIN_COMBAT).getType(), "MISSION_BEGIN_COMBAT"), CvString::format("XML error. Found %s instead of MISSION_BEGIN_COMBAT at index %d", GC.getMissionInfo(MISSION_BEGIN_COMBAT).getType(), MISSION_BEGIN_COMBAT).c_str());
+	FAssertMsg(!strcmp(GC.getMissionInfo(MISSION_END_COMBAT).getType(), "MISSION_END_COMBAT"), CvString::format("XML error. Found %s instead of MISSION_END_COMBAT at index %d", GC.getMissionInfo(MISSION_END_COMBAT).getType(), MISSION_END_COMBAT).c_str());
+	FAssertMsg(!strcmp(GC.getMissionInfo(MISSION_SURRENDER).getType(), "MISSION_SURRENDER"), CvString::format("XML error. Found %s instead of MISSION_SURRENDER at index %d", GC.getMissionInfo(MISSION_SURRENDER).getType(), MISSION_SURRENDER).c_str());
+	FAssertMsg(!strcmp(GC.getMissionInfo(MISSION_CAPTURED).getType(), "MISSION_CAPTURED"), CvString::format("XML error. Found %s instead of MISSION_CAPTURED at index %d", GC.getMissionInfo(MISSION_CAPTURED).getType(), MISSION_CAPTURED).c_str());
+	FAssertMsg(!strcmp(GC.getMissionInfo(MISSION_IDLE).getType(), "MISSION_IDLE"), CvString::format("XML error. Found %s instead of MISSION_IDLE at index %d", GC.getMissionInfo(MISSION_IDLE).getType(), MISSION_IDLE).c_str());
+	FAssertMsg(!strcmp(GC.getMissionInfo(MISSION_DIE).getType(), "MISSION_DIE"), CvString::format("XML error. Found %s instead of MISSION_DIE at index %d", GC.getMissionInfo(MISSION_DIE).getType(), MISSION_DIE).c_str());
+	FAssertMsg(!strcmp(GC.getMissionInfo(MISSION_DAMAGE).getType(), "MISSION_DAMAGE"), CvString::format("XML error. Found %s instead of MISSION_DAMAGE at index %d", GC.getMissionInfo(MISSION_DAMAGE).getType(), MISSION_DAMAGE).c_str());
+	FAssertMsg(!strcmp(GC.getMissionInfo(MISSION_MULTI_SELECT).getType(), "MISSION_MULTI_SELECT"), CvString::format("XML error. Found %s instead of MISSION_MULTI_SELECT at index %d", GC.getMissionInfo(MISSION_MULTI_SELECT).getType(), MISSION_MULTI_SELECT).c_str());
+	FAssertMsg(!strcmp(GC.getMissionInfo(MISSION_MULTI_DESELECT).getType(), "MISSION_MULTI_DESELECT"), CvString::format("XML error. Found %s instead of MISSION_MULTI_DESELECT at index %d", GC.getMissionInfo(MISSION_MULTI_DESELECT).getType(), MISSION_MULTI_DESELECT).c_str());
+	FAssertMsg(!strcmp(GC.getMissionInfo(MISSION_FOUND_MONASTERY).getType(), "MISSION_FOUND_MONASTERY"), CvString::format("XML error. Found %s instead of MISSION_FOUND_MONASTERY at index %d", GC.getMissionInfo(MISSION_FOUND_MONASTERY).getType(), MISSION_FOUND_MONASTERY).c_str());
+	FAssertMsg(!strcmp(GC.getMissionInfo(MISSION_FOUND_OUTPOST).getType(), "MISSION_FOUND_OUTPOST"), CvString::format("XML error. Found %s instead of MISSION_FOUND_OUTPOST at index %d", GC.getMissionInfo(MISSION_FOUND_OUTPOST).getType(), MISSION_FOUND_OUTPOST).c_str());
+	FAssertMsg(!strcmp(GC.getMissionInfo(MISSION_COLLECT_TAXES).getType(), "MISSION_COLLECT_TAXES"), CvString::format("XML error. Found %s instead of MISSION_COLLECT_TAXES at index %d", GC.getMissionInfo(MISSION_COLLECT_TAXES).getType(), MISSION_COLLECT_TAXES).c_str());
+	FAssertMsg(!strcmp(GC.getMissionInfo(MISSION_HUNT).getType(), "MISSION_HUNT"), CvString::format("XML error. Found %s instead of MISSION_HUNT at index %d", GC.getMissionInfo(MISSION_HUNT).getType(), MISSION_HUNT).c_str());
+
+	FAssertMsg(GC.getMissionInfo().size() == NUM_MISSION_TYPES, CvString::format("XML error. Expected %d types, but found %d", NUM_MISSION_TYPES, GC.getMissionInfo().size()));
+}
+
+void CvGlobals::CheckEnumCommandTypes() const
+{
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_PROMOTION).getType(), "COMMAND_PROMOTION"), CvString::format("XML error. Found %s instead of COMMAND_PROMOTION at index %d", GC.getCommandInfo(COMMAND_PROMOTION).getType(), COMMAND_PROMOTION).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_UPGRADE).getType(), "COMMAND_UPGRADE"), CvString::format("XML error. Found %s instead of COMMAND_UPGRADE at index %d", GC.getCommandInfo(COMMAND_UPGRADE).getType(), COMMAND_UPGRADE).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_AUTOMATE).getType(), "COMMAND_AUTOMATE"), CvString::format("XML error. Found %s instead of COMMAND_AUTOMATE at index %d", GC.getCommandInfo(COMMAND_AUTOMATE).getType(), COMMAND_AUTOMATE).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_WAKE).getType(), "COMMAND_WAKE"), CvString::format("XML error. Found %s instead of COMMAND_WAKE at index %d", GC.getCommandInfo(COMMAND_WAKE).getType(), COMMAND_WAKE).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_CANCEL).getType(), "COMMAND_CANCEL"), CvString::format("XML error. Found %s instead of COMMAND_CANCEL at index %d", GC.getCommandInfo(COMMAND_CANCEL).getType(), COMMAND_CANCEL).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_CANCEL_ALL).getType(), "COMMAND_CANCEL_ALL"), CvString::format("XML error. Found %s instead of COMMAND_CANCEL_ALL at index %d", GC.getCommandInfo(COMMAND_CANCEL_ALL).getType(), COMMAND_CANCEL_ALL).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_STOP_AUTOMATION).getType(), "COMMAND_STOP_AUTOMATION"), CvString::format("XML error. Found %s instead of COMMAND_STOP_AUTOMATION at index %d", GC.getCommandInfo(COMMAND_STOP_AUTOMATION).getType(), COMMAND_STOP_AUTOMATION).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_DELETE).getType(), "COMMAND_DELETE"), CvString::format("XML error. Found %s instead of COMMAND_DELETE at index %d", GC.getCommandInfo(COMMAND_DELETE).getType(), COMMAND_DELETE).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_GIFT).getType(), "COMMAND_GIFT"), CvString::format("XML error. Found %s instead of COMMAND_GIFT at index %d", GC.getCommandInfo(COMMAND_GIFT).getType(), COMMAND_GIFT).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_LOAD).getType(), "COMMAND_LOAD"), CvString::format("XML error. Found %s instead of COMMAND_LOAD at index %d", GC.getCommandInfo(COMMAND_LOAD).getType(), COMMAND_LOAD).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_LOAD_UNIT).getType(), "COMMAND_LOAD_UNIT"), CvString::format("XML error. Found %s instead of COMMAND_LOAD_UNIT at index %d", GC.getCommandInfo(COMMAND_LOAD_UNIT).getType(), COMMAND_LOAD_UNIT).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_LOAD_CARGO).getType(), "COMMAND_LOAD_CARGO"), CvString::format("XML error. Found %s instead of COMMAND_LOAD_CARGO at index %d", GC.getCommandInfo(COMMAND_LOAD_CARGO).getType(), COMMAND_LOAD_CARGO).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_LOAD_YIELD).getType(), "COMMAND_LOAD_YIELD"), CvString::format("XML error. Found %s instead of COMMAND_LOAD_YIELD at index %d", GC.getCommandInfo(COMMAND_LOAD_YIELD).getType(), COMMAND_LOAD_YIELD).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_UNLOAD).getType(), "COMMAND_UNLOAD"), CvString::format("XML error. Found %s instead of COMMAND_UNLOAD at index %d", GC.getCommandInfo(COMMAND_UNLOAD).getType(), COMMAND_UNLOAD).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_UNLOAD_ALL).getType(), "COMMAND_UNLOAD_ALL"), CvString::format("XML error. Found %s instead of COMMAND_UNLOAD_ALL at index %d", GC.getCommandInfo(COMMAND_UNLOAD_ALL).getType(), COMMAND_UNLOAD_ALL).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_LEARN).getType(), "COMMAND_LEARN"), CvString::format("XML error. Found %s instead of COMMAND_LEARN at index %d", GC.getCommandInfo(COMMAND_LEARN).getType(), COMMAND_LEARN).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_KING_TRANSPORT).getType(), "COMMAND_KING_TRANSPORT"), CvString::format("XML error. Found %s instead of COMMAND_KING_TRANSPORT at index %d", GC.getCommandInfo(COMMAND_KING_TRANSPORT).getType(), COMMAND_KING_TRANSPORT).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_ESTABLISH_MISSION).getType(), "COMMAND_ESTABLISH_MISSION"), CvString::format("XML error. Found %s instead of COMMAND_ESTABLISH_MISSION at index %d", GC.getCommandInfo(COMMAND_ESTABLISH_MISSION).getType(), COMMAND_ESTABLISH_MISSION).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_SPEAK_WITH_CHIEF).getType(), "COMMAND_SPEAK_WITH_CHIEF"), CvString::format("XML error. Found %s instead of COMMAND_SPEAK_WITH_CHIEF at index %d", GC.getCommandInfo(COMMAND_SPEAK_WITH_CHIEF).getType(), COMMAND_SPEAK_WITH_CHIEF).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_YIELD_TRADE).getType(), "COMMAND_YIELD_TRADE"), CvString::format("XML error. Found %s instead of COMMAND_YIELD_TRADE at index %d", GC.getCommandInfo(COMMAND_YIELD_TRADE).getType(), COMMAND_YIELD_TRADE).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_SAIL_TO_EUROPE).getType(), "COMMAND_SAIL_TO_EUROPE"), CvString::format("XML error. Found %s instead of COMMAND_SAIL_TO_EUROPE at index %d", GC.getCommandInfo(COMMAND_SAIL_TO_EUROPE).getType(), COMMAND_SAIL_TO_EUROPE).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_CHOOSE_TRADE_ROUTES).getType(), "COMMAND_CHOOSE_TRADE_ROUTES"), CvString::format("XML error. Found %s instead of COMMAND_CHOOSE_TRADE_ROUTES at index %d", GC.getCommandInfo(COMMAND_CHOOSE_TRADE_ROUTES).getType(), COMMAND_CHOOSE_TRADE_ROUTES).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_ASSIGN_TRADE_ROUTE).getType(), "COMMAND_ASSIGN_TRADE_ROUTE"), CvString::format("XML error. Found %s instead of COMMAND_ASSIGN_TRADE_ROUTE at index %d", GC.getCommandInfo(COMMAND_ASSIGN_TRADE_ROUTE).getType(), COMMAND_ASSIGN_TRADE_ROUTE).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_PROMOTE).getType(), "COMMAND_PROMOTE"), CvString::format("XML error. Found %s instead of COMMAND_PROMOTE at index %d", GC.getCommandInfo(COMMAND_PROMOTE).getType(), COMMAND_PROMOTE).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_PROFESSION).getType(), "COMMAND_PROFESSION"), CvString::format("XML error. Found %s instead of COMMAND_PROFESSION at index %d", GC.getCommandInfo(COMMAND_PROFESSION).getType(), COMMAND_PROFESSION).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_CLEAR_SPECIALTY).getType(), "COMMAND_CLEAR_SPECIALTY"), CvString::format("XML error. Found %s instead of COMMAND_CLEAR_SPECIALTY at index %d", GC.getCommandInfo(COMMAND_CLEAR_SPECIALTY).getType(), COMMAND_CLEAR_SPECIALTY).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_HOTKEY).getType(), "COMMAND_HOTKEY"), CvString::format("XML error. Found %s instead of COMMAND_HOTKEY at index %d", GC.getCommandInfo(COMMAND_HOTKEY).getType(), COMMAND_HOTKEY).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_CONVERT_UNIT).getType(), "COMMAND_CONVERT_UNIT"), CvString::format("XML error. Found %s instead of COMMAND_CONVERT_UNIT at index %d", GC.getCommandInfo(COMMAND_CONVERT_UNIT).getType(), COMMAND_CONVERT_UNIT).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_HOLD_FEAST).getType(), "COMMAND_HOLD_FEAST"), CvString::format("XML error. Found %s instead of COMMAND_HOLD_FEAST at index %d", GC.getCommandInfo(COMMAND_HOLD_FEAST).getType(), COMMAND_HOLD_FEAST).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_TRAVEL_TO_FAIR).getType(), "COMMAND_TRAVEL_TO_FAIR"), CvString::format("XML error. Found %s instead of COMMAND_TRAVEL_TO_FAIR at index %d", GC.getCommandInfo(COMMAND_TRAVEL_TO_FAIR).getType(), COMMAND_TRAVEL_TO_FAIR).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_SAIL_SPICE_ROUTE).getType(), "COMMAND_SAIL_SPICE_ROUTE"), CvString::format("XML error. Found %s instead of COMMAND_SAIL_SPICE_ROUTE at index %d", GC.getCommandInfo(COMMAND_SAIL_SPICE_ROUTE).getType(), COMMAND_SAIL_SPICE_ROUTE).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_TRAVEL_SILK_ROAD).getType(), "COMMAND_TRAVEL_SILK_ROAD"), CvString::format("XML error. Found %s instead of COMMAND_TRAVEL_SILK_ROAD at index %d", GC.getCommandInfo(COMMAND_TRAVEL_SILK_ROAD).getType(), COMMAND_TRAVEL_SILK_ROAD).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_ASSIGN_HOME_CITY).getType(), "COMMAND_ASSIGN_HOME_CITY"), CvString::format("XML error. Found %s instead of COMMAND_ASSIGN_HOME_CITY at index %d", GC.getCommandInfo(COMMAND_ASSIGN_HOME_CITY).getType(), COMMAND_ASSIGN_HOME_CITY).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_HIRE_GUARD).getType(), "COMMAND_HIRE_GUARD"), CvString::format("XML error. Found %s instead of COMMAND_HIRE_GUARD at index %d", GC.getCommandInfo(COMMAND_HIRE_GUARD).getType(), COMMAND_HIRE_GUARD).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_CALL_BANNERS).getType(), "COMMAND_CALL_BANNERS"), CvString::format("XML error. Found %s instead of COMMAND_CALL_BANNERS at index %d", GC.getCommandInfo(COMMAND_CALL_BANNERS).getType(), COMMAND_CALL_BANNERS).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_BUILD_HOME).getType(), "COMMAND_BUILD_HOME"), CvString::format("XML error. Found %s instead of COMMAND_BUILD_HOME at index %d", GC.getCommandInfo(COMMAND_BUILD_HOME).getType(), COMMAND_BUILD_HOME).c_str());
+	FAssertMsg(!strcmp(GC.getCommandInfo(COMMAND_BUILD_TRADINGPOST).getType(), "COMMAND_BUILD_TRADINGPOST"), CvString::format("XML error. Found %s instead of COMMAND_BUILD_TRADINGPOST at index %d", GC.getCommandInfo(COMMAND_BUILD_TRADINGPOST).getType(), COMMAND_BUILD_TRADINGPOST).c_str());
+
+	FAssertMsg(GC.getCommandInfo().size() == NUM_COMMAND_TYPES, CvString::format("XML error. Expected %d types, but found %d", NUM_COMMAND_TYPES, GC.getCommandInfo().size()));
+}
+
+void CvGlobals::CheckEnumControlTypes() const
+{
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_CENTERONSELECTION).getType(), "CONTROL_CENTERONSELECTION"), CvString::format("XML error. Found %s instead of CONTROL_CENTERONSELECTION at index %d", GC.getControlInfo(CONTROL_CENTERONSELECTION).getType(), CONTROL_CENTERONSELECTION).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_SELECTYUNITTYPE).getType(), "CONTROL_SELECTYUNITTYPE"), CvString::format("XML error. Found %s instead of CONTROL_SELECTYUNITTYPE at index %d", GC.getControlInfo(CONTROL_SELECTYUNITTYPE).getType(), CONTROL_SELECTYUNITTYPE).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_SELECTYUNITALL).getType(), "CONTROL_SELECTYUNITALL"), CvString::format("XML error. Found %s instead of CONTROL_SELECTYUNITALL at index %d", GC.getControlInfo(CONTROL_SELECTYUNITALL).getType(), CONTROL_SELECTYUNITALL).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_SELECTCITY).getType(), "CONTROL_SELECTCITY"), CvString::format("XML error. Found %s instead of CONTROL_SELECTCITY at index %d", GC.getControlInfo(CONTROL_SELECTCITY).getType(), CONTROL_SELECTCITY).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_SELECTCAPITAL).getType(), "CONTROL_SELECTCAPITAL"), CvString::format("XML error. Found %s instead of CONTROL_SELECTCAPITAL at index %d", GC.getControlInfo(CONTROL_SELECTCAPITAL).getType(), CONTROL_SELECTCAPITAL).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_NEXTCITY).getType(), "CONTROL_NEXTCITY"), CvString::format("XML error. Found %s instead of CONTROL_NEXTCITY at index %d", GC.getControlInfo(CONTROL_NEXTCITY).getType(), CONTROL_NEXTCITY).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_PREVCITY).getType(), "CONTROL_PREVCITY"), CvString::format("XML error. Found %s instead of CONTROL_PREVCITY at index %d", GC.getControlInfo(CONTROL_PREVCITY).getType(), CONTROL_PREVCITY).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_NEXTUNIT).getType(), "CONTROL_NEXTUNIT"), CvString::format("XML error. Found %s instead of CONTROL_NEXTUNIT at index %d", GC.getControlInfo(CONTROL_NEXTUNIT).getType(), CONTROL_NEXTUNIT).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_PREVUNIT).getType(), "CONTROL_PREVUNIT"), CvString::format("XML error. Found %s instead of CONTROL_PREVUNIT at index %d", GC.getControlInfo(CONTROL_PREVUNIT).getType(), CONTROL_PREVUNIT).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_CYCLEUNIT).getType(), "CONTROL_CYCLEUNIT"), CvString::format("XML error. Found %s instead of CONTROL_CYCLEUNIT at index %d", GC.getControlInfo(CONTROL_CYCLEUNIT).getType(), CONTROL_CYCLEUNIT).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_CYCLEUNIT_ALT).getType(), "CONTROL_CYCLEUNIT_ALT"), CvString::format("XML error. Found %s instead of CONTROL_CYCLEUNIT_ALT at index %d", GC.getControlInfo(CONTROL_CYCLEUNIT_ALT).getType(), CONTROL_CYCLEUNIT_ALT).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_LASTUNIT).getType(), "CONTROL_LASTUNIT"), CvString::format("XML error. Found %s instead of CONTROL_LASTUNIT at index %d", GC.getControlInfo(CONTROL_LASTUNIT).getType(), CONTROL_LASTUNIT).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_ENDTURN).getType(), "CONTROL_ENDTURN"), CvString::format("XML error. Found %s instead of CONTROL_ENDTURN at index %d", GC.getControlInfo(CONTROL_ENDTURN).getType(), CONTROL_ENDTURN).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_ENDTURN_ALT).getType(), "CONTROL_ENDTURN_ALT"), CvString::format("XML error. Found %s instead of CONTROL_ENDTURN_ALT at index %d", GC.getControlInfo(CONTROL_ENDTURN_ALT).getType(), CONTROL_ENDTURN_ALT).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_FORCEENDTURN).getType(), "CONTROL_FORCEENDTURN"), CvString::format("XML error. Found %s instead of CONTROL_FORCEENDTURN at index %d", GC.getControlInfo(CONTROL_FORCEENDTURN).getType(), CONTROL_FORCEENDTURN).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_AUTOMOVES).getType(), "CONTROL_AUTOMOVES"), CvString::format("XML error. Found %s instead of CONTROL_AUTOMOVES at index %d", GC.getControlInfo(CONTROL_AUTOMOVES).getType(), CONTROL_AUTOMOVES).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_PING).getType(), "CONTROL_PING"), CvString::format("XML error. Found %s instead of CONTROL_PING at index %d", GC.getControlInfo(CONTROL_PING).getType(), CONTROL_PING).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_SIGN).getType(), "CONTROL_SIGN"), CvString::format("XML error. Found %s instead of CONTROL_SIGN at index %d", GC.getControlInfo(CONTROL_SIGN).getType(), CONTROL_SIGN).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_GRID).getType(), "CONTROL_GRID"), CvString::format("XML error. Found %s instead of CONTROL_GRID at index %d", GC.getControlInfo(CONTROL_GRID).getType(), CONTROL_GRID).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_BARE_MAP).getType(), "CONTROL_BARE_MAP"), CvString::format("XML error. Found %s instead of CONTROL_BARE_MAP at index %d", GC.getControlInfo(CONTROL_BARE_MAP).getType(), CONTROL_BARE_MAP).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_YIELDS).getType(), "CONTROL_YIELDS"), CvString::format("XML error. Found %s instead of CONTROL_YIELDS at index %d", GC.getControlInfo(CONTROL_YIELDS).getType(), CONTROL_YIELDS).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_RESOURCE_ALL).getType(), "CONTROL_RESOURCE_ALL"), CvString::format("XML error. Found %s instead of CONTROL_RESOURCE_ALL at index %d", GC.getControlInfo(CONTROL_RESOURCE_ALL).getType(), CONTROL_RESOURCE_ALL).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_UNIT_ICONS).getType(), "CONTROL_UNIT_ICONS"), CvString::format("XML error. Found %s instead of CONTROL_UNIT_ICONS at index %d", GC.getControlInfo(CONTROL_UNIT_ICONS).getType(), CONTROL_UNIT_ICONS).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_GLOBELAYER).getType(), "CONTROL_GLOBELAYER"), CvString::format("XML error. Found %s instead of CONTROL_GLOBELAYER at index %d", GC.getControlInfo(CONTROL_GLOBELAYER).getType(), CONTROL_GLOBELAYER).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_SCORES).getType(), "CONTROL_SCORES"), CvString::format("XML error. Found %s instead of CONTROL_SCORES at index %d", GC.getControlInfo(CONTROL_SCORES).getType(), CONTROL_SCORES).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_LOAD_GAME).getType(), "CONTROL_LOAD_GAME"), CvString::format("XML error. Found %s instead of CONTROL_LOAD_GAME at index %d", GC.getControlInfo(CONTROL_LOAD_GAME).getType(), CONTROL_LOAD_GAME).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_OPTIONS_SCREEN).getType(), "CONTROL_OPTIONS_SCREEN"), CvString::format("XML error. Found %s instead of CONTROL_OPTIONS_SCREEN at index %d", GC.getControlInfo(CONTROL_OPTIONS_SCREEN).getType(), CONTROL_OPTIONS_SCREEN).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_RETIRE).getType(), "CONTROL_RETIRE"), CvString::format("XML error. Found %s instead of CONTROL_RETIRE at index %d", GC.getControlInfo(CONTROL_RETIRE).getType(), CONTROL_RETIRE).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_SAVE_GROUP).getType(), "CONTROL_SAVE_GROUP"), CvString::format("XML error. Found %s instead of CONTROL_SAVE_GROUP at index %d", GC.getControlInfo(CONTROL_SAVE_GROUP).getType(), CONTROL_SAVE_GROUP).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_SAVE_NORMAL).getType(), "CONTROL_SAVE_NORMAL"), CvString::format("XML error. Found %s instead of CONTROL_SAVE_NORMAL at index %d", GC.getControlInfo(CONTROL_SAVE_NORMAL).getType(), CONTROL_SAVE_NORMAL).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_QUICK_SAVE).getType(), "CONTROL_QUICK_SAVE"), CvString::format("XML error. Found %s instead of CONTROL_QUICK_SAVE at index %d", GC.getControlInfo(CONTROL_QUICK_SAVE).getType(), CONTROL_QUICK_SAVE).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_QUICK_LOAD).getType(), "CONTROL_QUICK_LOAD"), CvString::format("XML error. Found %s instead of CONTROL_QUICK_LOAD at index %d", GC.getControlInfo(CONTROL_QUICK_LOAD).getType(), CONTROL_QUICK_LOAD).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_ORTHO_CAMERA).getType(), "CONTROL_ORTHO_CAMERA"), CvString::format("XML error. Found %s instead of CONTROL_ORTHO_CAMERA at index %d", GC.getControlInfo(CONTROL_ORTHO_CAMERA).getType(), CONTROL_ORTHO_CAMERA).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_CYCLE_CAMERA_FLYING_MODES).getType(), "CONTROL_CYCLE_CAMERA_FLYING_MODES"), CvString::format("XML error. Found %s instead of CONTROL_CYCLE_CAMERA_FLYING_MODES at index %d", GC.getControlInfo(CONTROL_CYCLE_CAMERA_FLYING_MODES).getType(), CONTROL_CYCLE_CAMERA_FLYING_MODES).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_ISOMETRIC_CAMERA_LEFT).getType(), "CONTROL_ISOMETRIC_CAMERA_LEFT"), CvString::format("XML error. Found %s instead of CONTROL_ISOMETRIC_CAMERA_LEFT at index %d", GC.getControlInfo(CONTROL_ISOMETRIC_CAMERA_LEFT).getType(), CONTROL_ISOMETRIC_CAMERA_LEFT).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_ISOMETRIC_CAMERA_RIGHT).getType(), "CONTROL_ISOMETRIC_CAMERA_RIGHT"), CvString::format("XML error. Found %s instead of CONTROL_ISOMETRIC_CAMERA_RIGHT at index %d", GC.getControlInfo(CONTROL_ISOMETRIC_CAMERA_RIGHT).getType(), CONTROL_ISOMETRIC_CAMERA_RIGHT).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_FLYING_CAMERA).getType(), "CONTROL_FLYING_CAMERA"), CvString::format("XML error. Found %s instead of CONTROL_FLYING_CAMERA at index %d", GC.getControlInfo(CONTROL_FLYING_CAMERA).getType(), CONTROL_FLYING_CAMERA).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_MOUSE_FLYING_CAMERA).getType(), "CONTROL_MOUSE_FLYING_CAMERA"), CvString::format("XML error. Found %s instead of CONTROL_MOUSE_FLYING_CAMERA at index %d", GC.getControlInfo(CONTROL_MOUSE_FLYING_CAMERA).getType(), CONTROL_MOUSE_FLYING_CAMERA).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_TOP_DOWN_CAMERA).getType(), "CONTROL_TOP_DOWN_CAMERA"), CvString::format("XML error. Found %s instead of CONTROL_TOP_DOWN_CAMERA at index %d", GC.getControlInfo(CONTROL_TOP_DOWN_CAMERA).getType(), CONTROL_TOP_DOWN_CAMERA).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_CIVILOPEDIA).getType(), "CONTROL_CIVILOPEDIA"), CvString::format("XML error. Found %s instead of CONTROL_CIVILOPEDIA at index %d", GC.getControlInfo(CONTROL_CIVILOPEDIA).getType(), CONTROL_CIVILOPEDIA).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_FOREIGN_SCREEN).getType(), "CONTROL_FOREIGN_SCREEN"), CvString::format("XML error. Found %s instead of CONTROL_FOREIGN_SCREEN at index %d", GC.getControlInfo(CONTROL_FOREIGN_SCREEN).getType(), CONTROL_FOREIGN_SCREEN).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_CONGRESS_SCREEN).getType(), "CONTROL_CONGRESS_SCREEN"), CvString::format("XML error. Found %s instead of CONTROL_CONGRESS_SCREEN at index %d", GC.getControlInfo(CONTROL_CONGRESS_SCREEN).getType(), CONTROL_CONGRESS_SCREEN).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_REVOLUTION_SCREEN).getType(), "CONTROL_REVOLUTION_SCREEN"), CvString::format("XML error. Found %s instead of CONTROL_REVOLUTION_SCREEN at index %d", GC.getControlInfo(CONTROL_REVOLUTION_SCREEN).getType(), CONTROL_REVOLUTION_SCREEN).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_EUROPE_SCREEN).getType(), "CONTROL_EUROPE_SCREEN"), CvString::format("XML error. Found %s instead of CONTROL_EUROPE_SCREEN at index %d", GC.getControlInfo(CONTROL_EUROPE_SCREEN).getType(), CONTROL_EUROPE_SCREEN).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_MILITARY_SCREEN).getType(), "CONTROL_MILITARY_SCREEN"), CvString::format("XML error. Found %s instead of CONTROL_MILITARY_SCREEN at index %d", GC.getControlInfo(CONTROL_MILITARY_SCREEN).getType(), CONTROL_MILITARY_SCREEN).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_FATHER_SCREEN).getType(), "CONTROL_FATHER_SCREEN"), CvString::format("XML error. Found %s instead of CONTROL_FATHER_SCREEN at index %d", GC.getControlInfo(CONTROL_FATHER_SCREEN).getType(), CONTROL_FATHER_SCREEN).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_TECHNOLOGY_SCREEN).getType(), "CONTROL_TECHNOLOGY_SCREEN"), CvString::format("XML error. Found %s instead of CONTROL_TECHNOLOGY_SCREEN at index %d", GC.getControlInfo(CONTROL_TECHNOLOGY_SCREEN).getType(), CONTROL_TECHNOLOGY_SCREEN).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_TRADE_SCREEN).getType(), "CONTROL_TRADE_SCREEN"), CvString::format("XML error. Found %s instead of CONTROL_TRADE_SCREEN at index %d", GC.getControlInfo(CONTROL_TRADE_SCREEN).getType(), CONTROL_TRADE_SCREEN).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_SPICE_ROUTE_SCREEN).getType(), "CONTROL_SPICE_ROUTE_SCREEN"), CvString::format("XML error. Found %s instead of CONTROL_SPICE_ROUTE_SCREEN at index %d", GC.getControlInfo(CONTROL_SPICE_ROUTE_SCREEN).getType(), CONTROL_SPICE_ROUTE_SCREEN).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_SILK_ROAD_SCREEN).getType(), "CONTROL_SILK_ROAD_SCREEN"), CvString::format("XML error. Found %s instead of CONTROL_SILK_ROAD_SCREEN at index %d", GC.getControlInfo(CONTROL_SILK_ROAD_SCREEN).getType(), CONTROL_SILK_ROAD_SCREEN).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_TRADE_FAIR_SCREEN).getType(), "CONTROL_TRADE_FAIR_SCREEN"), CvString::format("XML error. Found %s instead of CONTROL_TRADE_FAIR_SCREEN at index %d", GC.getControlInfo(CONTROL_TRADE_FAIR_SCREEN).getType(), CONTROL_TRADE_FAIR_SCREEN).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_IMMIGRATION_SCREEN).getType(), "CONTROL_IMMIGRATION_SCREEN"), CvString::format("XML error. Found %s instead of CONTROL_IMMIGRATION_SCREEN at index %d", GC.getControlInfo(CONTROL_IMMIGRATION_SCREEN).getType(), CONTROL_IMMIGRATION_SCREEN).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_TURN_LOG).getType(), "CONTROL_TURN_LOG"), CvString::format("XML error. Found %s instead of CONTROL_TURN_LOG at index %d", GC.getControlInfo(CONTROL_TURN_LOG).getType(), CONTROL_TURN_LOG).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_CHAT_ALL).getType(), "CONTROL_CHAT_ALL"), CvString::format("XML error. Found %s instead of CONTROL_CHAT_ALL at index %d", GC.getControlInfo(CONTROL_CHAT_ALL).getType(), CONTROL_CHAT_ALL).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_CHAT_TEAM).getType(), "CONTROL_CHAT_TEAM"), CvString::format("XML error. Found %s instead of CONTROL_CHAT_TEAM at index %d", GC.getControlInfo(CONTROL_CHAT_TEAM).getType(), CONTROL_CHAT_TEAM).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_DOMESTIC_SCREEN).getType(), "CONTROL_DOMESTIC_SCREEN"), CvString::format("XML error. Found %s instead of CONTROL_DOMESTIC_SCREEN at index %d", GC.getControlInfo(CONTROL_DOMESTIC_SCREEN).getType(), CONTROL_DOMESTIC_SCREEN).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_VICTORY_SCREEN).getType(), "CONTROL_VICTORY_SCREEN"), CvString::format("XML error. Found %s instead of CONTROL_VICTORY_SCREEN at index %d", GC.getControlInfo(CONTROL_VICTORY_SCREEN).getType(), CONTROL_VICTORY_SCREEN).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_INFO).getType(), "CONTROL_INFO"), CvString::format("XML error. Found %s instead of CONTROL_INFO at index %d", GC.getControlInfo(CONTROL_INFO).getType(), CONTROL_INFO).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_GLOBE_VIEW).getType(), "CONTROL_GLOBE_VIEW"), CvString::format("XML error. Found %s instead of CONTROL_GLOBE_VIEW at index %d", GC.getControlInfo(CONTROL_GLOBE_VIEW).getType(), CONTROL_GLOBE_VIEW).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_DETAILS).getType(), "CONTROL_DETAILS"), CvString::format("XML error. Found %s instead of CONTROL_DETAILS at index %d", GC.getControlInfo(CONTROL_DETAILS).getType(), CONTROL_DETAILS).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_ADMIN_DETAILS).getType(), "CONTROL_ADMIN_DETAILS"), CvString::format("XML error. Found %s instead of CONTROL_ADMIN_DETAILS at index %d", GC.getControlInfo(CONTROL_ADMIN_DETAILS).getType(), CONTROL_ADMIN_DETAILS).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_HALL_OF_FAME).getType(), "CONTROL_HALL_OF_FAME"), CvString::format("XML error. Found %s instead of CONTROL_HALL_OF_FAME at index %d", GC.getControlInfo(CONTROL_HALL_OF_FAME).getType(), CONTROL_HALL_OF_FAME).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_WORLD_BUILDER).getType(), "CONTROL_WORLD_BUILDER"), CvString::format("XML error. Found %s instead of CONTROL_WORLD_BUILDER at index %d", GC.getControlInfo(CONTROL_WORLD_BUILDER).getType(), CONTROL_WORLD_BUILDER).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_DIPLOMACY).getType(), "CONTROL_DIPLOMACY"), CvString::format("XML error. Found %s instead of CONTROL_DIPLOMACY at index %d", GC.getControlInfo(CONTROL_DIPLOMACY).getType(), CONTROL_DIPLOMACY).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_SELECT_HEALTHY).getType(), "CONTROL_SELECT_HEALTHY"), CvString::format("XML error. Found %s instead of CONTROL_SELECT_HEALTHY at index %d", GC.getControlInfo(CONTROL_SELECT_HEALTHY).getType(), CONTROL_SELECT_HEALTHY).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_FREE_COLONY).getType(), "CONTROL_FREE_COLONY"), CvString::format("XML error. Found %s instead of CONTROL_FREE_COLONY at index %d", GC.getControlInfo(CONTROL_FREE_COLONY).getType(), CONTROL_FREE_COLONY).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_AI_AUTOPLAY).getType(), "CONTROL_AI_AUTOPLAY"), CvString::format("XML error. Found %s instead of CONTROL_AI_AUTOPLAY at index %d", GC.getControlInfo(CONTROL_AI_AUTOPLAY).getType(), CONTROL_AI_AUTOPLAY).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_AI_AUTOPLAY5).getType(), "CONTROL_AI_AUTOPLAY5"), CvString::format("XML error. Found %s instead of CONTROL_AI_AUTOPLAY5 at index %d", GC.getControlInfo(CONTROL_AI_AUTOPLAY5).getType(), CONTROL_AI_AUTOPLAY5).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_AI_AUTOPLAY25).getType(), "CONTROL_AI_AUTOPLAY25"), CvString::format("XML error. Found %s instead of CONTROL_AI_AUTOPLAY25 at index %d", GC.getControlInfo(CONTROL_AI_AUTOPLAY25).getType(), CONTROL_AI_AUTOPLAY25).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_AI_AUTOPLAY100).getType(), "CONTROL_AI_AUTOPLAY100"), CvString::format("XML error. Found %s instead of CONTROL_AI_AUTOPLAY100 at index %d", GC.getControlInfo(CONTROL_AI_AUTOPLAY100).getType(), CONTROL_AI_AUTOPLAY100).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_AI_AUTOPLAY_REV).getType(), "CONTROL_AI_AUTOPLAY_REV"), CvString::format("XML error. Found %s instead of CONTROL_AI_AUTOPLAY_REV at index %d", GC.getControlInfo(CONTROL_AI_AUTOPLAY_REV).getType(), CONTROL_AI_AUTOPLAY_REV).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_LEARN_TECH).getType(), "CONTROL_LEARN_TECH"), CvString::format("XML error. Found %s instead of CONTROL_LEARN_TECH at index %d", GC.getControlInfo(CONTROL_LEARN_TECH).getType(), CONTROL_LEARN_TECH).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_FOR_TESTING).getType(), "CONTROL_FOR_TESTING"), CvString::format("XML error. Found %s instead of CONTROL_FOR_TESTING at index %d", GC.getControlInfo(CONTROL_FOR_TESTING).getType(), CONTROL_FOR_TESTING).c_str());
+
+	FAssertMsg(GC.getControlInfo().size() == NUM_CONTROL_TYPES, CvString::format("XML error. Expected %d types, but found %d", NUM_CONTROL_TYPES, GC.getControlInfo().size()));
+}
+
+void CvGlobals::CheckEnumMemoryTypes() const
+{
+	FAssertMsg(!strcmp(GC.getMemoryInfo(MEMORY_DECLARED_WAR).getType(), "MEMORY_DECLARED_WAR"), CvString::format("XML error. Found %s instead of MEMORY_DECLARED_WAR at index %d", GC.getMemoryInfo(MEMORY_DECLARED_WAR).getType(), MEMORY_DECLARED_WAR).c_str());
+	FAssertMsg(!strcmp(GC.getMemoryInfo(MEMORY_DECLARED_WAR_ON_FRIEND).getType(), "MEMORY_DECLARED_WAR_ON_FRIEND"), CvString::format("XML error. Found %s instead of MEMORY_DECLARED_WAR_ON_FRIEND at index %d", GC.getMemoryInfo(MEMORY_DECLARED_WAR_ON_FRIEND).getType(), MEMORY_DECLARED_WAR_ON_FRIEND).c_str());
+	FAssertMsg(!strcmp(GC.getMemoryInfo(MEMORY_HIRED_WAR_ALLY).getType(), "MEMORY_HIRED_WAR_ALLY"), CvString::format("XML error. Found %s instead of MEMORY_HIRED_WAR_ALLY at index %d", GC.getMemoryInfo(MEMORY_HIRED_WAR_ALLY).getType(), MEMORY_HIRED_WAR_ALLY).c_str());
+	FAssertMsg(!strcmp(GC.getMemoryInfo(MEMORY_RAZED_CITY).getType(), "MEMORY_RAZED_CITY"), CvString::format("XML error. Found %s instead of MEMORY_RAZED_CITY at index %d", GC.getMemoryInfo(MEMORY_RAZED_CITY).getType(), MEMORY_RAZED_CITY).c_str());
+	FAssertMsg(!strcmp(GC.getMemoryInfo(MEMORY_GIVE_HELP).getType(), "MEMORY_GIVE_HELP"), CvString::format("XML error. Found %s instead of MEMORY_GIVE_HELP at index %d", GC.getMemoryInfo(MEMORY_GIVE_HELP).getType(), MEMORY_GIVE_HELP).c_str());
+	FAssertMsg(!strcmp(GC.getMemoryInfo(MEMORY_REFUSED_HELP).getType(), "MEMORY_REFUSED_HELP"), CvString::format("XML error. Found %s instead of MEMORY_REFUSED_HELP at index %d", GC.getMemoryInfo(MEMORY_REFUSED_HELP).getType(), MEMORY_REFUSED_HELP).c_str());
+	FAssertMsg(!strcmp(GC.getMemoryInfo(MEMORY_ACCEPT_DEMAND).getType(), "MEMORY_ACCEPT_DEMAND"), CvString::format("XML error. Found %s instead of MEMORY_ACCEPT_DEMAND at index %d", GC.getMemoryInfo(MEMORY_ACCEPT_DEMAND).getType(), MEMORY_ACCEPT_DEMAND).c_str());
+	FAssertMsg(!strcmp(GC.getMemoryInfo(MEMORY_REJECTED_DEMAND).getType(), "MEMORY_REJECTED_DEMAND"), CvString::format("XML error. Found %s instead of MEMORY_REJECTED_DEMAND at index %d", GC.getMemoryInfo(MEMORY_REJECTED_DEMAND).getType(), MEMORY_REJECTED_DEMAND).c_str());
+	FAssertMsg(!strcmp(GC.getMemoryInfo(MEMORY_ACCEPTED_JOIN_WAR).getType(), "MEMORY_ACCEPTED_JOIN_WAR"), CvString::format("XML error. Found %s instead of MEMORY_ACCEPTED_JOIN_WAR at index %d", GC.getMemoryInfo(MEMORY_ACCEPTED_JOIN_WAR).getType(), MEMORY_ACCEPTED_JOIN_WAR).c_str());
+	FAssertMsg(!strcmp(GC.getMemoryInfo(MEMORY_DENIED_JOIN_WAR).getType(), "MEMORY_DENIED_JOIN_WAR"), CvString::format("XML error. Found %s instead of MEMORY_DENIED_JOIN_WAR at index %d", GC.getMemoryInfo(MEMORY_DENIED_JOIN_WAR).getType(), MEMORY_DENIED_JOIN_WAR).c_str());
+	FAssertMsg(!strcmp(GC.getMemoryInfo(MEMORY_ACCEPTED_STOP_TRADING).getType(), "MEMORY_ACCEPTED_STOP_TRADING"), CvString::format("XML error. Found %s instead of MEMORY_ACCEPTED_STOP_TRADING at index %d", GC.getMemoryInfo(MEMORY_ACCEPTED_STOP_TRADING).getType(), MEMORY_ACCEPTED_STOP_TRADING).c_str());
+	FAssertMsg(!strcmp(GC.getMemoryInfo(MEMORY_DENIED_STOP_TRADING).getType(), "MEMORY_DENIED_STOP_TRADING"), CvString::format("XML error. Found %s instead of MEMORY_DENIED_STOP_TRADING at index %d", GC.getMemoryInfo(MEMORY_DENIED_STOP_TRADING).getType(), MEMORY_DENIED_STOP_TRADING).c_str());
+	FAssertMsg(!strcmp(GC.getMemoryInfo(MEMORY_STOPPED_TRADING).getType(), "MEMORY_STOPPED_TRADING"), CvString::format("XML error. Found %s instead of MEMORY_STOPPED_TRADING at index %d", GC.getMemoryInfo(MEMORY_STOPPED_TRADING).getType(), MEMORY_STOPPED_TRADING).c_str());
+	FAssertMsg(!strcmp(GC.getMemoryInfo(MEMORY_STOPPED_TRADING_RECENT).getType(), "MEMORY_STOPPED_TRADING_RECENT"), CvString::format("XML error. Found %s instead of MEMORY_STOPPED_TRADING_RECENT at index %d", GC.getMemoryInfo(MEMORY_STOPPED_TRADING_RECENT).getType(), MEMORY_STOPPED_TRADING_RECENT).c_str());
+	FAssertMsg(!strcmp(GC.getMemoryInfo(MEMORY_HIRED_TRADE_EMBARGO).getType(), "MEMORY_HIRED_TRADE_EMBARGO"), CvString::format("XML error. Found %s instead of MEMORY_HIRED_TRADE_EMBARGO at index %d", GC.getMemoryInfo(MEMORY_HIRED_TRADE_EMBARGO).getType(), MEMORY_HIRED_TRADE_EMBARGO).c_str());
+	FAssertMsg(!strcmp(GC.getMemoryInfo(MEMORY_MADE_DEMAND).getType(), "MEMORY_MADE_DEMAND"), CvString::format("XML error. Found %s instead of MEMORY_MADE_DEMAND at index %d", GC.getMemoryInfo(MEMORY_MADE_DEMAND).getType(), MEMORY_MADE_DEMAND).c_str());
+	FAssertMsg(!strcmp(GC.getMemoryInfo(MEMORY_MADE_DEMAND_RECENT).getType(), "MEMORY_MADE_DEMAND_RECENT"), CvString::format("XML error. Found %s instead of MEMORY_MADE_DEMAND_RECENT at index %d", GC.getMemoryInfo(MEMORY_MADE_DEMAND_RECENT).getType(), MEMORY_MADE_DEMAND_RECENT).c_str());
+	FAssertMsg(!strcmp(GC.getMemoryInfo(MEMORY_CANCELLED_OPEN_BORDERS).getType(), "MEMORY_CANCELLED_OPEN_BORDERS"), CvString::format("XML error. Found %s instead of MEMORY_CANCELLED_OPEN_BORDERS at index %d", GC.getMemoryInfo(MEMORY_CANCELLED_OPEN_BORDERS).getType(), MEMORY_CANCELLED_OPEN_BORDERS).c_str());
+	FAssertMsg(!strcmp(GC.getMemoryInfo(MEMORY_EVENT_GOOD_TO_US).getType(), "MEMORY_EVENT_GOOD_TO_US"), CvString::format("XML error. Found %s instead of MEMORY_EVENT_GOOD_TO_US at index %d", GC.getMemoryInfo(MEMORY_EVENT_GOOD_TO_US).getType(), MEMORY_EVENT_GOOD_TO_US).c_str());
+	FAssertMsg(!strcmp(GC.getMemoryInfo(MEMORY_EVENT_BAD_TO_US).getType(), "MEMORY_EVENT_BAD_TO_US"), CvString::format("XML error. Found %s instead of MEMORY_EVENT_BAD_TO_US at index %d", GC.getMemoryInfo(MEMORY_EVENT_BAD_TO_US).getType(), MEMORY_EVENT_BAD_TO_US).c_str());
+	FAssertMsg(!strcmp(GC.getMemoryInfo(MEMORY_LIBERATED_CITIES).getType(), "MEMORY_LIBERATED_CITIES"), CvString::format("XML error. Found %s instead of MEMORY_LIBERATED_CITIES at index %d", GC.getMemoryInfo(MEMORY_LIBERATED_CITIES).getType(), MEMORY_LIBERATED_CITIES).c_str());
+	FAssertMsg(!strcmp(GC.getMemoryInfo(MEMORY_REFUSED_TAX).getType(), "MEMORY_REFUSED_TAX"), CvString::format("XML error. Found %s instead of MEMORY_REFUSED_TAX at index %d", GC.getMemoryInfo(MEMORY_REFUSED_TAX).getType(), MEMORY_REFUSED_TAX).c_str());
+	FAssertMsg(!strcmp(GC.getMemoryInfo(MEMORY_REVENGE_TAKEN).getType(), "MEMORY_REVENGE_TAKEN"), CvString::format("XML error. Found %s instead of MEMORY_REVENGE_TAKEN at index %d", GC.getMemoryInfo(MEMORY_REVENGE_TAKEN).getType(), MEMORY_REVENGE_TAKEN).c_str());
+	FAssertMsg(!strcmp(GC.getMemoryInfo(MEMORY_MISSIONARY_FAIL).getType(), "MEMORY_MISSIONARY_FAIL"), CvString::format("XML error. Found %s instead of MEMORY_MISSIONARY_FAIL at index %d", GC.getMemoryInfo(MEMORY_MISSIONARY_FAIL).getType(), MEMORY_MISSIONARY_FAIL).c_str());
+	FAssertMsg(!strcmp(GC.getMemoryInfo(MEMORY_INSULTED).getType(), "MEMORY_INSULTED"), CvString::format("XML error. Found %s instead of MEMORY_INSULTED at index %d", GC.getMemoryInfo(MEMORY_INSULTED).getType(), MEMORY_INSULTED).c_str());
+	FAssertMsg(!strcmp(GC.getMemoryInfo(MEMORY_MADE_VASSAL_DEMAND).getType(), "MEMORY_MADE_VASSAL_DEMAND"), CvString::format("XML error. Found %s instead of MEMORY_MADE_VASSAL_DEMAND at index %d", GC.getMemoryInfo(MEMORY_MADE_VASSAL_DEMAND).getType(), MEMORY_MADE_VASSAL_DEMAND).c_str());
+
+	FAssertMsg(GC.getMemoryInfo().size() == NUM_MEMORY_TYPES, CvString::format("XML error. Expected %d types, but found %d", NUM_MEMORY_TYPES, GC.getMemoryInfo().size()));
+}
+
+void CvGlobals::CheckEnumAttitudeTypes() const
+{
+	FAssertMsg(!strcmp(GC.getAttitudeInfo(ATTITUDE_FURIOUS).getType(), "ATTITUDE_FURIOUS"), CvString::format("XML error. Found %s instead of ATTITUDE_FURIOUS at index %d", GC.getAttitudeInfo(ATTITUDE_FURIOUS).getType(), ATTITUDE_FURIOUS).c_str());
+	FAssertMsg(!strcmp(GC.getAttitudeInfo(ATTITUDE_ANNOYED).getType(), "ATTITUDE_ANNOYED"), CvString::format("XML error. Found %s instead of ATTITUDE_ANNOYED at index %d", GC.getAttitudeInfo(ATTITUDE_ANNOYED).getType(), ATTITUDE_ANNOYED).c_str());
+	FAssertMsg(!strcmp(GC.getAttitudeInfo(ATTITUDE_CAUTIOUS).getType(), "ATTITUDE_CAUTIOUS"), CvString::format("XML error. Found %s instead of ATTITUDE_CAUTIOUS at index %d", GC.getAttitudeInfo(ATTITUDE_CAUTIOUS).getType(), ATTITUDE_CAUTIOUS).c_str());
+	FAssertMsg(!strcmp(GC.getAttitudeInfo(ATTITUDE_PLEASED).getType(), "ATTITUDE_PLEASED"), CvString::format("XML error. Found %s instead of ATTITUDE_PLEASED at index %d", GC.getAttitudeInfo(ATTITUDE_PLEASED).getType(), ATTITUDE_PLEASED).c_str());
+	FAssertMsg(!strcmp(GC.getAttitudeInfo(ATTITUDE_FRIENDLY).getType(), "ATTITUDE_FRIENDLY"), CvString::format("XML error. Found %s instead of ATTITUDE_FRIENDLY at index %d", GC.getAttitudeInfo(ATTITUDE_FRIENDLY).getType(), ATTITUDE_FRIENDLY).c_str());
+
+	FAssertMsg(GC.getAttitudeInfo().size() == NUM_ATTITUDE_TYPES, CvString::format("XML error. Expected %d types, but found %d", NUM_ATTITUDE_TYPES, GC.getAttitudeInfo().size()));
+}
+// XML enum check - end - Nightinggale

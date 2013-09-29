@@ -1079,6 +1079,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 										iTempValue /= 100;
 									}
 								}
+#ifdef USE_NOBLE_CLASS
 								if (getPopulation() >= 2)
 								{
                                     if (eYieldProduced == YIELD_GRAIN)
@@ -1087,6 +1088,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
                                         iTempValue /= 100;
                                     }
 								}
+#endif
 
 								if (eYieldConsumed != NO_YIELD)
 								{
@@ -1137,7 +1139,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 									iTempValue /= 100;
 								}
                                 ///TKs Med
-								if (GC.isEquipmentType(eYieldProduced, EQUIPMENT_ANY) || eYieldProduced == YIELD_TOOLS || eYieldProduced == YIELD_FOOD || eYieldProduced == YIELD_GRAIN)
+								if (GC.isEquipmentType(eYieldProduced, EQUIPMENT_ANY) || eYieldProduced == YIELD_TOOLS || eYieldProduced == YIELD_FOOD || YieldGroup_Luxury_Food(eYieldProduced))
 								{
 									bIsMilitary = true;
 								}
@@ -1184,7 +1186,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 
                 if (isMarket(eMustSaleYield) && getYieldStored(eMustSaleYield) >= (getMaintainLevel(eMustSaleYield) + 1))
                 {
-                    int iLoss = std::max(GC.getCache_CITY_YIELD_DECAY_PERCENT() * getYieldStored(eMustSaleYield) / 100, GC.getCache_MIN_CITY_YIELD_DECAY());
+                    int iLoss = std::max(GC.getXMLval(XML_CITY_YIELD_DECAY_PERCENT) * getYieldStored(eMustSaleYield) / 100, GC.getXMLval(XML_MIN_CITY_YIELD_DECAY));
 
                     iLoss = std::min(getYieldStored(eMustSaleYield) - getMaintainLevel(eMustSaleYield), iLoss);
                     if (iLoss >= kBuildingInfo.getYieldChange(eLoopYield))
@@ -1216,7 +1218,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 			if (iAdded != 0)
 			{
 			    ///TKs
-				if (GC.isEquipmentType(eLoopYield, EQUIPMENT_ANY) || eLoopYield == YIELD_TOOLS || eLoopYield == YIELD_FOOD || eLoopYield == YIELD_GRAIN)
+				if (GC.isEquipmentType(eLoopYield, EQUIPMENT_ANY) || eLoopYield == YIELD_TOOLS || eLoopYield == YIELD_FOOD || YieldGroup_Luxury_Food(eLoopYield))
 				{
 					bIsMilitary = true;
 				}
@@ -1751,7 +1753,7 @@ int CvCityAI::AI_totalBestBuildValue(CvArea* pArea) const
 			{
 				if (pLoopPlot->area() == pArea)
 				{
-					if ((pLoopPlot->getImprovementType() == NO_IMPROVEMENT) || !(GET_PLAYER(getOwnerINLINE()).isOption(PLAYEROPTION_SAFE_AUTOMATION) && !(pLoopPlot->getImprovementType() == (GC.getCache_RUINS_IMPROVEMENT()))))
+					if ((pLoopPlot->getImprovementType() == NO_IMPROVEMENT) || !(GET_PLAYER(getOwnerINLINE()).isOption(PLAYEROPTION_SAFE_AUTOMATION) && !(pLoopPlot->getImprovementType() == (GC.getXMLval(XML_RUINS_IMPROVEMENT)))))
 					{
 						iTotalValue += AI_getBestBuildValue(iI);
 					}
@@ -2144,7 +2146,7 @@ void CvCityAI::AI_doNative()
 				if (iSellPrice > 0)
 				{
 				    ///TKs Med
-					kPlayer.changeGold(((iAmountLost * iSellPrice) * GC.getCache_NATIVE_AUTO_SELL_PERCENT()) / 100);
+					kPlayer.changeGold(((iAmountLost * iSellPrice) * GC.getXMLval(XML_NATIVE_AUTO_SELL_PERCENT)) / 100);
 					///TKe
 				}
 			}
@@ -3346,7 +3348,7 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 		}
 	}
     ///TKs Med
-	if (eYieldConsumedType != NO_YIELD && eYieldConsumedType != YIELD_FOOD && eYieldConsumedType != YIELD_GRAIN)
+	if (eYieldConsumedType != NO_YIELD && eYieldConsumedType != YIELD_FOOD && !YieldGroup_Luxury_Food(eYieldConsumedType))
 	{
 		if (getYieldStored(eYieldConsumedType) > getMaxYieldCapacity(eYieldConsumedType))
 		{
@@ -3354,7 +3356,7 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 		}
 	}
 
-	if ((eYieldProducedType != YIELD_FOOD && eYieldProducedType != YIELD_GRAIN) && GC.getYieldInfo(eYieldProducedType).isCargo())
+	if (eYieldProducedType != YIELD_FOOD && !YieldGroup_Luxury_Food(eYieldProducedType) && GC.getYieldInfo(eYieldProducedType).isCargo())
 	{
 		int iNeededYield = AI_getNeededYield(eYieldProducedType) - iNetYield;
 
@@ -3383,7 +3385,7 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 			int iLoss = 0;
 			if (iExcess > 0)
 			{
-				iLoss = std::max(GC.getCache_CITY_YIELD_DECAY_PERCENT() * iExcess / 100, GC.getCache_MIN_CITY_YIELD_DECAY());
+				iLoss = std::max(GC.getXMLval(XML_CITY_YIELD_DECAY_PERCENT) * iExcess / 100, GC.getXMLval(XML_MIN_CITY_YIELD_DECAY));
 				iLoss = std::min(iLoss, iExcess);
 			}
 
@@ -3425,7 +3427,7 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 		}
 	}
 
-	if (eYieldProducedType == YIELD_FOOD || eYieldProducedType == YIELD_GRAIN)
+	if (eYieldProducedType == YIELD_FOOD || YieldGroup_Luxury_Food(eYieldProducedType))
 	{
 		int iBaseFood = iNetYield;
 
@@ -3841,24 +3843,26 @@ int CvCityAI::AI_calculateAlarm(PlayerTypes eIndex) const
 
 int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 {
+	FAssert(eYield > NO_YIELD && eYield < NUM_YIELD_TYPES);
 	int iValue = iAmount * GET_PLAYER(getOwnerINLINE()).AI_yieldValue(eYield);
 
+#if 0
 	switch (eYield)
 	{
 	    ///TK ME start
 	    ///Food Goods
-	    case YIELD_CATTLE:///NEW*
-	    case YIELD_SHEEP:///NEW*
-        case YIELD_GRAIN:///NEW*
-        case YIELD_WOOL:///NEW*
-        case YIELD_SALT:///NEW*
+	    //case YIELD_CATTLE:///NEW*
+	    //case YIELD_SHEEP:///NEW*
+        //case YIELD_GRAIN:///NEW*
+        //case YIELD_WOOL:///NEW*
+        //case YIELD_SALT:///NEW*
         ///Food Goods^
         ///Building Material
-		case YIELD_STONE:///NEW*
+		//case YIELD_STONE:///NEW*
         ///Building Material^
         ///Bonus Resources
 //		case YIELD_IVORY:///NEW*
-		case YIELD_SPICES:///NEW*
+		//case YIELD_SPICES:///NEW*
         ///Bonus Resources^
         ///Trade Goods
 //        case YIELD_LEATHER:///NEW*
@@ -3868,47 +3872,47 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 //		case YIELD_PORCELAIN:///NEW*
         ///Discoverys^
         ///Armor
-		case YIELD_LEATHER_ARMOR:///NEW*
-		case YIELD_SCALE_ARMOR:///NEW*
-		case YIELD_MAIL_ARMOR:///NEW*
-		case YIELD_PLATE_ARMOR:///NEW*
+		//case YIELD_LEATHER_ARMOR:///NEW*
+		//case YIELD_SCALE_ARMOR:///NEW*
+		//case YIELD_MAIL_ARMOR:///NEW*
+		//case YIELD_PLATE_ARMOR:///NEW*
         ///Armor^
 
 	    ///TKe
-		case YIELD_FOOD:
-		case YIELD_LUMBER:
-		case YIELD_SILVER:
-		case YIELD_COTTON:
-		case YIELD_FUR:
-		case YIELD_BARLEY:
-		case YIELD_GRAPES:
-		case YIELD_ORE:
-		case YIELD_CLOTH:
-		case YIELD_COATS:
-		case YIELD_ALE:
-		case YIELD_WINE:
-		case YIELD_TOOLS:
-		case YIELD_WEAPONS:
-		case YIELD_HORSES:
-		case YIELD_TRADE_GOODS:
-		case YIELD_HAMMERS:
+		//case YIELD_FOOD:
+		//case YIELD_LUMBER:
+		//case YIELD_SILVER:
+		//case YIELD_COTTON:
+		//case YIELD_FUR:
+		//case YIELD_BARLEY:
+		//case YIELD_GRAPES:
+		//case YIELD_ORE:
+		//case YIELD_CLOTH:
+		//case YIELD_COATS:
+		//case YIELD_ALE:
+		//case YIELD_WINE:
+		//case YIELD_TOOLS:
+		//case YIELD_WEAPONS:
+		//case YIELD_HORSES:
+		//case YIELD_TRADE_GOODS:
+		//case YIELD_HAMMERS:
 		 ///TKs Invention Core Mod v 1.0
 		//case YIELD_COAL:
-		case YIELD_IDEAS:
-		case YIELD_CULTURE:
+		//case YIELD_IDEAS:
+		//case YIELD_CULTURE:
             break;
 		///TKe
-		case YIELD_BELLS:
+		//case YIELD_BELLS:
 			break;
-		case YIELD_CROSSES:
+		//case YIELD_CROSSES:
 			break;
-		case YIELD_EDUCATION:
-		case YIELD_GOLD:///NEW*
+		//case YIELD_EDUCATION:
+		//case YIELD_GOLD:///NEW*
 			break;
 		default:
 			FAssert(false);
 	}
-
+#endif
 	return iValue;
 }
 
@@ -4005,6 +4009,7 @@ void CvCityAI::AI_assignDesiredYield()
 			YieldTypes eYield = (YieldTypes) i;
 			int iValue = GC.getYieldInfo(eYield).getNativeBuyPrice();
 			///TKs Med
+			// TODO figure out if it is a bug that the function allows yields not invented by the city owner as long as they are invented by somebody else
             for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
             {
                 CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes) iCivic);
@@ -4042,6 +4047,11 @@ void CvCityAI::AI_assignDesiredYield()
 		{
 		    YieldTypes eYield = (YieldTypes) i;
 		    int iValue = 0;
+#if 0
+			// loop to possibly assign 0 to iValue, which it is already and it will be overwritten once the loop is over
+			// No need for this loop
+
+			// TODO reject uninvented yields for "European" AI players
 		    for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
             {
                 CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes) iCivic);
@@ -4054,6 +4064,7 @@ void CvCityAI::AI_assignDesiredYield()
                     }
                 }
             }
+#endif
 
             iValue = GET_PLAYER(getOwnerINLINE()).AI_yieldValue(eYield);
             if (AI_getNeededYield(eYield) > 0)
@@ -5572,7 +5583,7 @@ void CvCityAI::AI_educateStudent(int iUnitId)
 					if (eYieldProducedType != NO_YIELD)
 					{
 					    ///TKs Med
-						if (eYieldProducedType == YIELD_FOOD || eYieldProducedType == YIELD_GRAIN)
+						if (eYieldProducedType == YIELD_FOOD || YieldGroup_Luxury_Food(eYieldProducedType))
 						{
 							iValue *= 200;
 							iValue /= 100;

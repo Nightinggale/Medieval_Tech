@@ -745,7 +745,61 @@ protected:
 	// cache getMaxYieldCapacity - end - Nightinggale
 public:
 	void UpdateBuildingAffectedCache();
-	// building affected cache - end - Nightinggale 
+	// building affected cache - end - Nightinggale
+
+	// EDU remake - start - Nightinggale
+public:
+	int getTeachLevel() const;
+protected:
+	int m_iTeachLevel;
+	// EDU remake - end - Nightinggale
+
+	// Teacher List - start - Nightinggale
+public:
+	int getOrderedStudents(UnitTypes eUnit);
+	bool getOrderedStudentsRepeat(UnitTypes eUnit);
+protected:
+	void checkOrderedStudentsForRepeats(UnitTypes eUnit);
+	void setOrderedStudents(UnitTypes eUnit, int iCount, bool bRepeat, bool bUpdateRepeat = true, bool bClearAll = false);
+
+	UnitArray<int> ma_OrderedStudents;
+	UnitArray<bool> ma_OrderedStudentsRepeat;
+	// Teacher List - end - Nightinggale
+
+	// domestic yield demand - start - Nightinggale
+public:
+	int getBuildingYieldDemand(YieldTypes eYield) const;
+	int getUnitYieldDemand(YieldTypes eYield) const;
+	// R&R, Androrc, Domestic Market
+	int getYieldBuyPrice(YieldTypes eYield) const;
+	int getYieldDemand(YieldTypes eYield) const;
+	//Androrc End
+	int getMarketCap() const;
+protected:
+	void doPrices(); // R&R, Androrc, Domestic Market
+	void initPrices();
+	void setYieldBuyPrice(YieldTypes eYield, int iPrice);
+
+	void setUnitYieldDemand();
+	void setUnitYieldDemand(UnitTypes eUnit, bool const bRemove = false);
+
+	YieldArray<int> m_aiBuildingYieldDemands; // nosave cache
+	YieldArray<int> m_aiUnitYieldDemands; // nosave cache
+	int m_iMarketCap; // nosave cache
+
+	YieldArray<int> m_aiYieldBuyPrice;
+	// domestic yield demand - end - Nightinggale
+
+	// R&R, ray, finishing Custom House Screen START
+public:
+	void setCustomHouseSellThreshold(YieldTypes eYield, int iThreshold);
+	int getCustomHouseSellThreshold(YieldTypes eYield) const;
+	void setCustomHouseNeverSell(YieldTypes eYield, bool bNeverSell);
+	bool isCustomHouseNeverSell(YieldTypes eYield) const;
+protected:
+	YieldArray<int> ma_aiCustomHouseSellThreshold;
+	YieldArray<bool> ma_aiCustomHouseNeverSell;
+	// R&R, ray, finishing Custom House Screen END
 };
 
 // cache getMaxYieldCapacity - start - Nightinggale
@@ -756,5 +810,49 @@ inline int CvCity::getMaxYieldCapacity(YieldTypes eYield) const
 	return m_cache_MaxYieldCapacity[eYield == NO_YIELD ? NUM_YIELD_TYPES : eYield];
 };
 // cache getMaxYieldCapacity - end - Nightinggale 
+
+// EDU remake - start - Nightinggale
+inline int CvCity::getTeachLevel() const
+{
+	return m_iTeachLevel;
+}
+// EDU remake - start - Nightinggale
+
+// domestic yield demand - start - Nightinggale
+inline int CvCity::getBuildingYieldDemand(YieldTypes eYield) const
+{
+	return m_aiBuildingYieldDemands.get(eYield);
+}
+
+inline int CvCity::getUnitYieldDemand(YieldTypes eYield) const
+{
+	return m_aiUnitYieldDemands.get(eYield);
+}
+
+inline int CvCity::getYieldDemand(YieldTypes eYield) const
+{
+	return (getBuildingYieldDemand(eYield) + getUnitYieldDemand(eYield)) / 100;
+}
+
+inline int CvCity::getMarketCap() const
+{
+	return m_iMarketCap;
+}
+// domestic yield demand - end - Nightinggale
+
+//Androrc Domestic Market
+// Modified by Nightinggale
+inline int CvCity::getYieldBuyPrice(YieldTypes eYield) const
+{
+	return m_aiYieldBuyPrice.get(eYield);
+}
+
+// R&R, ray, adjustment Domestic Markets
+// No messages, because too many messages get annoying
+inline void CvCity::setYieldBuyPrice(YieldTypes eYield, int iPrice)
+{
+	m_aiYieldBuyPrice.set(iPrice, eYield);
+}
+//Androrc Domestic Market END
 
 #endif

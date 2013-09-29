@@ -213,6 +213,7 @@ void CyInfoPythonInterface1()
 		//Androrc UnitArtStyles
 		.def("getUnitArtStylesArtInfo", &CvUnitInfo::getUnitArtStylesArtInfo,  python::return_value_policy<python::reference_existing_object>(), "CvArtInfoUnit* (int i, int j)")
 		//Androrc End
+		.def("getTeachLevel", &CvUnitInfo::getTeachLevelPython, "int ()") // EDU remake - Nightinggale
 		;
 	python::class_<CvSpecialUnitInfo, python::bases<CvInfoBase> >("CvSpecialUnitInfo")
 		.def("isValid", &CvSpecialUnitInfo::isValid, "bool ()")
@@ -312,6 +313,8 @@ void CyInfoPythonInterface1()
 		.def("getArtDefineTag", &CvBuildingInfo::getArtDefineTag, "string ()")
 		.def("getMovie", &CvBuildingInfo::getMovie, "string ()")
 		.def("getMovieDefineTag", &CvBuildingInfo::getMovieDefineTag, "string ()")
+
+		.def("getTeachLevel", &CvBuildingInfo::getTeachLevelPython, "int ()") // EDU remake - Nightinggale
 
 		// Arrays
 		.def("getYieldChange", &CvBuildingInfo::getYieldChange, "int (int i)")

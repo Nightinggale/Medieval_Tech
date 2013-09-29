@@ -99,5 +99,10 @@ void CyGlobalContextPythonInterface4(python::class_<CyGlobalContext>& x)
 		.def("getCitySizeTypes", &CyGlobalContext::getCitySizeTypes, "string () - Returns enum string")
 		.def("getContactTypes", &CyGlobalContext::getContactTypes, "string () - Returns enum string")
 		.def("getDiplomacyPowerTypes", &CyGlobalContext::getDiplomacyPowerTypes, "string () - Returns enum string")
+
+		// python MOD selection - start - Nightinggale
+		.def("isMedievalConquest", &CyGlobalContext::isMedievalConquest, "MOD selection")
+		.def("isColonization2071", &CyGlobalContext::isColonization2071, "MOD selection")
+		// python MOD selection - end - Nightinggale
 		;
 }

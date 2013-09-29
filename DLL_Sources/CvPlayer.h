@@ -657,8 +657,13 @@ public:
 	int getYieldEquipmentAmount(ProfessionTypes eProfession, YieldTypes eYield) const;
 	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
 	bool hasContentsYieldEquipmentAmount(ProfessionTypes eProfession) const;
+	bool hasContentsAltYieldEquipmentAmount(ProfessionTypes eProfession) const;
 	int getYieldEquipmentAmountSecure(ProfessionTypes eProfession, YieldTypes eYield) const;
 	bool hasContentsYieldEquipmentAmountSecure(ProfessionTypes eProfession) const;
+	int getAltYieldEquipmentAmountSecure(ProfessionTypes eProfession, YieldTypes eYield) const;
+	bool hasContentsAltYieldEquipmentAmountSecure(ProfessionTypes eProfession) const;
+	bool hasContentsAnyYieldEquipmentAmount(ProfessionTypes eProfession) const;
+	bool hasContentsAnyYieldEquipmentAmountSecure(ProfessionTypes eProfession) const;
 	// cache CvPlayer::getYieldEquipmentAmount - end - Nightinggale
 	bool isProfessionValid(ProfessionTypes eProfession, UnitTypes eUnit) const;
 	void changeProfessionEurope(int iUnitId, ProfessionTypes eProfession);
@@ -882,10 +887,12 @@ protected:
 
 	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
 	YieldArray<int> *m_cache_YieldEquipmentAmount;
+	YieldArray<int> *m_cache_AltYieldEquipmentAmount;
 	void Update_cache_YieldEquipmentAmount();
 	void Update_cache_YieldEquipmentAmount(ProfessionTypes eProfession);
 	int getYieldEquipmentAmountUncached(ProfessionTypes eProfession, YieldTypes eYield) const;
-	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
+	int getAltYieldEquipmentAmountUncached(ProfessionTypes eProfession, YieldTypes eYield) const;
+	// cache CvPlayer::getYieldEquipmentAmount - end - Nightinggale
 
 	std::vector<EventTriggerTypes> m_triggersFired;
 	CivicTypes* m_paeCivics;
@@ -937,6 +944,22 @@ protected:
 	virtual void read(FDataStreamBase* pStream);
 	virtual void write(FDataStreamBase* pStream);
 	void doUpdateCacheOnTurn();
+
+// invention effect cache - start - Nightinggale
+public:
+	bool canUseYield(YieldTypes eYield) const;
+	bool canUseUnit(UnitTypes eUnit) const;
+	bool canUseBonus(BonusTypes eBonus) const;
+	int getCityPlotFoodBonus() const;
+
+protected:
+	YieldArray<bool> m_abBannedYields;
+	UnitArray<bool> m_abBannedUnits;
+	BonusArray<bool> m_abBannedBonus;
+	int m_iCityPlotFoodBonus;
+
+	void updateInventionEffectCache();
+// invention effect cache - end - Nightinggale
 };
 
 // cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
@@ -945,6 +968,13 @@ inline int CvPlayer::getYieldEquipmentAmount(ProfessionTypes eProfession, YieldT
 	FAssert(m_cache_YieldEquipmentAmount != NULL);
 	FAssert(eProfession >= 0 && eProfession < GC.getNumProfessionInfos());
 	return m_cache_YieldEquipmentAmount[eProfession].get(eYield);
+}
+
+inline int CvPlayer::getAltYieldEquipmentAmount(ProfessionTypes eProfession, YieldTypes eYield) const
+{
+	FAssert(m_cache_AltYieldEquipmentAmount != NULL);
+	FAssert(eProfession >= 0 && eProfession < GC.getNumProfessionInfos());
+	return m_cache_AltYieldEquipmentAmount[eProfession].get(eYield);
 }
 
 inline bool CvPlayer::hasContentsYieldEquipmentAmount(ProfessionTypes eProfession) const
@@ -957,6 +987,16 @@ inline bool CvPlayer::hasContentsYieldEquipmentAmount(ProfessionTypes eProfessio
 	return m_cache_YieldEquipmentAmount[eProfession].isAllocated();
 }
 
+inline bool CvPlayer::hasContentsAltYieldEquipmentAmount(ProfessionTypes eProfession) const
+{
+	// strictly speaking it returns true if the array is allocated without considering the content of the array.
+	// The reason why it works is because Update_cache_YieldEquipmentAmount() will only allocate arrays if they contain anything
+	//   and deallocate them if it is changed to contain only 0.
+	FAssert(m_cache_AltYieldEquipmentAmount != NULL);
+	FAssert(eProfession >= 0 && eProfession < GC.getNumProfessionInfos());
+	return m_cache_AltYieldEquipmentAmount[eProfession].isAllocated();
+}
+
 // same functions, but with the added return 0 if professions is NO_PROFESSION or INVALID_PROFESSION
 inline int CvPlayer::getYieldEquipmentAmountSecure(ProfessionTypes eProfession, YieldTypes eYield) const
 {
@@ -967,6 +1007,51 @@ inline bool CvPlayer::hasContentsYieldEquipmentAmountSecure(ProfessionTypes ePro
 {
 	return eProfession > NO_PROFESSION ? hasContentsYieldEquipmentAmount(eProfession) : false;
 }
+
+inline int CvPlayer::getAltYieldEquipmentAmountSecure(ProfessionTypes eProfession, YieldTypes eYield) const
+{
+	return eProfession > NO_PROFESSION ? getAltYieldEquipmentAmount(eProfession, eYield) : 0;
+}
+
+inline bool CvPlayer::hasContentsAltYieldEquipmentAmountSecure(ProfessionTypes eProfession) const
+{
+	return eProfession > NO_PROFESSION ? hasContentsAltYieldEquipmentAmount(eProfession) : false;
+}
+
+// shortcut to check both normal and alt equipment
+inline bool CvPlayer::hasContentsAnyYieldEquipmentAmount(ProfessionTypes eProfession) const
+{
+	return hasContentsAnyYieldEquipmentAmount(eProfession) || hasContentsAnyYieldEquipmentAmount(eProfession);
+}
+
+inline bool CvPlayer::hasContentsAnyYieldEquipmentAmountSecure(ProfessionTypes eProfession) const
+{
+	return hasContentsAnyYieldEquipmentAmountSecure(eProfession) || hasContentsAnyYieldEquipmentAmountSecure(eProfession);
+}
 // cache CvPlayer::getYieldEquipmentAmount - end - Nightinggale
+
+// invention effect cache - start - Nightinggale
+inline bool CvPlayer::canUseYield(YieldTypes eYield) const
+{
+	FAssert(eYield < NUM_YIELD_TYPES);
+	return eYield >= 0 ? !this->m_abBannedYields.get(eYield) : false;
+}
+
+inline bool CvPlayer::canUseUnit(UnitTypes eUnit) const
+{
+	FAssert(eUnit < GC.getNumUnitInfos());
+	return eUnit >= 0 ? !this->m_abBannedUnits.get(eUnit) : false;
+}
+
+inline bool CvPlayer::canUseBonus(BonusTypes eBonus) const
+{
+	return eBonus >= 0 ? !m_abBannedBonus.get(eBonus) : false;
+}
+
+inline int CvPlayer::getCityPlotFoodBonus() const
+{
+	return m_iCityPlotFoodBonus;
+}
+// invention effect cache - end - Nightinggale
 
 #endif

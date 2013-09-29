@@ -261,5 +261,10 @@ public:
 	int getINVALID_PLOT_COORD() const { return GC.getINVALID_PLOT_COORD(); }
 	int getNUM_CITY_PLOTS() const { return GC.getNUM_CITY_PLOTS(); }
 	int getCITY_HOME_PLOT() const { return GC.getCITY_HOME_PLOT(); }
+
+	// python MOD selection - start - Nightinggale
+	bool isMedievalConquest() const;
+	bool isColonization2071() const;
+	// python MOD selection - end - Nightinggale
 };
 #endif	// CyGlobalContext_h

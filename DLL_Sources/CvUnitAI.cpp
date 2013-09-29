@@ -777,8 +777,8 @@ int CvUnitAI::AI_attackOdds(const CvPlot* pPlot, bool bPotentialEnemy) const
 
 	iStrengthFactor = ((iOurFirepower + iTheirFirepower + 1) / 2);
 
-	iDamageToUs = std::max(1,((GC.getCache_COMBAT_DAMAGE() * (iTheirFirepower + iStrengthFactor)) / (iOurFirepower + iStrengthFactor)));
-	iDamageToThem = std::max(1,((GC.getCache_COMBAT_DAMAGE() * (iOurFirepower + iStrengthFactor)) / (iTheirFirepower + iStrengthFactor)));
+	iDamageToUs = std::max(1,((GC.getXMLval(XML_COMBAT_DAMAGE) * (iTheirFirepower + iStrengthFactor)) / (iOurFirepower + iStrengthFactor)));
+	iDamageToThem = std::max(1,((GC.getXMLval(XML_COMBAT_DAMAGE) * (iOurFirepower + iStrengthFactor)) / (iTheirFirepower + iStrengthFactor)));
 
 	iNeededRoundsUs = (std::max(0, pDefender->currHitPoints()) + iDamageToThem - 1 ) / iDamageToThem;
 	iNeededRoundsThem = (std::max(0, currHitPoints()) + iDamageToUs - 1 ) / iDamageToUs;
@@ -831,7 +831,7 @@ bool CvUnitAI::AI_bestCityBuild(CvCity* pCity, CvPlot** ppBestPlot, BuildTypes* 
 				{
 					if (pLoopPlot != pIgnorePlot)
 					{
-						if ((pLoopPlot->getImprovementType() == NO_IMPROVEMENT) || !(GET_PLAYER(getOwnerINLINE()).isOption(PLAYEROPTION_SAFE_AUTOMATION) && !(pLoopPlot->getImprovementType() == (GC.getCache_RUINS_IMPROVEMENT()))))
+						if ((pLoopPlot->getImprovementType() == NO_IMPROVEMENT) || !(GET_PLAYER(getOwnerINLINE()).isOption(PLAYEROPTION_SAFE_AUTOMATION) && !(pLoopPlot->getImprovementType() == (GC.getXMLval(XML_RUINS_IMPROVEMENT)))))
 						{
 							iValue = pCity->AI_getBestBuildValue(iI);
 
@@ -1240,7 +1240,7 @@ bool CvUnitAI::AI_animalLandPatrol()
                             {
                                 if (getUnitInfo().getBonusNative(pAdjacentPlot->getBonusType()))
                                 {
-                                    iRand = GC.getCache_WILD_ANIMAL_LAND_BONUS_NATIVE_WEIGHT();
+                                    iRand = GC.getXMLval(XML_WILD_ANIMAL_LAND_BONUS_NATIVE_WEIGHT);
                                     iValue += (1 + GC.getGameINLINE().getSorenRandNum(iRand, "Wild Land Animal Patrol - Bonus Weight"));
                                 }
                             }
@@ -1248,7 +1248,7 @@ bool CvUnitAI::AI_animalLandPatrol()
                             {
                                 if (getUnitInfo().getFeatureNative(pAdjacentPlot->getFeatureType()))
                                 {
-                                    iRand = GC.getCache_WILD_ANIMAL_LAND_FEATURE_NATIVE_WEIGHT();
+                                    iRand = GC.getXMLval(XML_WILD_ANIMAL_LAND_FEATURE_NATIVE_WEIGHT);
                                     iValue += (1 + GC.getGameINLINE().getSorenRandNum(iRand, "Wild Land Animal Patrol - Feature Weight"));
                                 }
                             }
@@ -1256,14 +1256,14 @@ bool CvUnitAI::AI_animalLandPatrol()
                             {
                                 if (getUnitInfo().getTerrainNative(pAdjacentPlot->getTerrainType()))
                                 {
-                                    iRand = GC.getCache_WILD_ANIMAL_LAND_TERRAIN_NATIVE_WEIGHT();
+                                    iRand = GC.getXMLval(XML_WILD_ANIMAL_LAND_TERRAIN_NATIVE_WEIGHT);
                                     iValue += (1 + GC.getGameINLINE().getSorenRandNum(iRand, "Wild Land Animal Patrol - Terrain Weight") + iNoneNativeTerrain);
                                 }
                             }
 
                             if (isOnlyDefensive() && pAdjacentPlot->isCity(true))
                             {
-                                iRand = GC.getCache_WILD_ANIMAL_LAND_TERRAIN_NATIVE_WEIGHT();
+                                iRand = GC.getXMLval(XML_WILD_ANIMAL_LAND_TERRAIN_NATIVE_WEIGHT);
                                 iValue += (1 + GC.getGameINLINE().getSorenRandNum(iRand, "Wild Land Animal Patrol - Terrain Weight"));
                             }
 
@@ -1338,7 +1338,7 @@ bool CvUnitAI::AI_animalSeaPatrol()
                             {
                                 if (getUnitInfo().getBonusNative(pAdjacentPlot->getBonusType()))
                                 {
-                                    iRand = GC.getCache_WILD_ANIMAL_SEA_BONUS_NATIVE_WEIGHT();
+                                    iRand = GC.getXMLval(XML_WILD_ANIMAL_SEA_BONUS_NATIVE_WEIGHT);
                                     iValue += (1 + GC.getGameINLINE().getSorenRandNum(iRand, "Wild Sea Animal Patrol - Bonus Weight"));
                                 }
                             }
@@ -1346,7 +1346,7 @@ bool CvUnitAI::AI_animalSeaPatrol()
                             {
                                 if (getUnitInfo().getFeatureNative(pAdjacentPlot->getFeatureType()))
                                 {
-                                    iRand = GC.getCache_WILD_ANIMAL_SEA_FEATURE_NATIVE_WEIGHT();
+                                    iRand = GC.getXMLval(XML_WILD_ANIMAL_SEA_FEATURE_NATIVE_WEIGHT);
                                     iValue += (1 + GC.getGameINLINE().getSorenRandNum(iRand, "Wild Sea Animal Patrol - Feature Weight"));
                                 }
                             }
@@ -1354,7 +1354,7 @@ bool CvUnitAI::AI_animalSeaPatrol()
                             {
                                 if (getUnitInfo().getTerrainNative(pAdjacentPlot->getTerrainType()))
                                 {
-                                    iRand = GC.getCache_WILD_ANIMAL_SEA_TERRAIN_NATIVE_WEIGHT();
+                                    iRand = GC.getXMLval(XML_WILD_ANIMAL_SEA_TERRAIN_NATIVE_WEIGHT);
                                     iValue += (1 + GC.getGameINLINE().getSorenRandNum(iRand, "Wild Sea Animal Patrol - Terrain Weight"));
                                 }
                             }
@@ -2644,7 +2644,7 @@ void CvUnitAI::AI_defensiveBraveMove()
 					if (bMakeTribute == true)
 					{
 						//FAssertMsg(bMakeTribute == false, "This dumb ass should be false");
-						iGiftTimer = std::max(0, iGiftTimer - GC.getCache_CONTACT_YIELD_GIFT_ENCOMEIDA_TIMER());
+						iGiftTimer = std::max(0, iGiftTimer - GC.getXMLval(XML_CONTACT_YIELD_GIFT_ENCOMEIDA_TIMER));
 						//FAssert(iGiftTimer <= 0);
 					}
 				}
@@ -2666,7 +2666,7 @@ void CvUnitAI::AI_defensiveBraveMove()
                                     if (pTraderCity != NULL)
                                     {
                                             //FAssert(false);
-                                            setProfession((ProfessionTypes)GC.getDefineINT("DEFAULT_NATIVE_TRADE_PROFESSION"));
+                                            setProfession((ProfessionTypes)GC.getXMLval(XML_DEFAULT_NATIVE_TRADE_PROFESSION));
                                             //int iAmount = GC.getGame().getSorenRandNum(pCity->getYieldStored((YieldTypes)iYield) + 1, "AI native bear gifts");
                                             int iAmount = GC.getGame().getSorenRandNum(pCity->getYieldStored((YieldTypes)iYield) + 1, "AI native bear gifts");
                                             iAmount = std::min(iAmount, 100);
@@ -4783,6 +4783,20 @@ bool CvUnitAI::AI_europeBuyNativeYields()
 		yields.push_back(YIELD_HORSES);
 	}
 	///Tks Med
+	int iArmorCounter = 1;
+	for (int iYield = 0; iYield < NUM_YIELD_TYPES; iYield++)
+	{
+		YieldTypes eYield = (YieldTypes)iYield;
+		if (YieldGroup_Heavy_Armor(eYield))
+		{
+			iArmorCounter++;
+			if (GC.getGameINLINE().getSorenRandNum(iArmorCounter, "AI buy heavy armor") == 0)
+			{
+				yields.push_back(eYield);
+			}
+		}
+	}
+#if 0
 	if (kOwner.isYieldEuropeTradable(YIELD_SCALE_ARMOR))
 	{
         if (GC.getGameINLINE().getSorenRandNum(2, "AI buy scale armor") == 0)
@@ -4806,6 +4820,7 @@ bool CvUnitAI::AI_europeBuyNativeYields()
             yields.push_back(YIELD_PLATE_ARMOR);
         }
 	}
+#endif
 	///TKe
 
 	GC.getGameINLINE().getSorenRand().shuffleArray(yields, NULL);
@@ -12657,7 +12672,7 @@ bool CvUnitAI::AI_improveLocalPlot(int iRange, CvCity* pIgnoreCity)
 
 										if (GET_PLAYER(getOwnerINLINE()).isOption(PLAYEROPTION_SAFE_AUTOMATION))
 										{
-											if (pLoopPlot->getImprovementType() != NO_IMPROVEMENT && pLoopPlot->getImprovementType() != GC.getCache_RUINS_IMPROVEMENT())
+											if (pLoopPlot->getImprovementType() != NO_IMPROVEMENT && pLoopPlot->getImprovementType() != GC.getXMLval(XML_RUINS_IMPROVEMENT))
 											{
 												bAllowed = false;
 											}
@@ -14169,7 +14184,7 @@ int CvUnitAI::AI_finalOddsThreshold(CvPlot* pPlot, int iOddsThreshold)
 	{
 		if (pCity->getDefenseDamage() < ((GC.getMAX_CITY_DEFENSE_DAMAGE() * 3) / 4))
 		{
-			iFinalOddsThreshold += std::max(0, (pCity->getDefenseDamage() - pCity->getLastDefenseDamage() - (GC.getCache_CITY_DEFENSE_DAMAGE_HEAL_RATE() * 2)));
+			iFinalOddsThreshold += std::max(0, (pCity->getDefenseDamage() - pCity->getLastDefenseDamage() - (GC.getXMLval(XML_CITY_DEFENSE_DAMAGE_HEAL_RATE) * 2)));
 		}
 	}
 
@@ -14949,7 +14964,7 @@ bool CvUnitAI::AI_moveTowardsPilgramCity()
 		CvCity* pCity = pLoopPlot->getPlotCity();
 		if (pCity != NULL)
 		{
-			if (pCity->isHasBuildingClass((BuildingClassTypes)GC.getCache_DEFAULT_SHRINE_CLASS()))
+			if (pCity->isHasBuildingClass((BuildingClassTypes)GC.getXMLval(XML_DEFAULT_SHRINE_CLASS)))
 			{
                 int iCityValue = 1 + GC.getGameINLINE().getSorenRandNum(pCity->getPopulation() * 1000, "AI Pilgrim City Target");
               //  for (int iDirection = 0; iDirection < NUM_DIRECTION_TYPES; iDirection++)

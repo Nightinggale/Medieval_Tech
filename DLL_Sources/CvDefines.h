@@ -5,6 +5,13 @@
 
 // defines.h
 
+// mod selection - start - Nightinggale
+#ifndef COLONIZATION_2071
+#define MEDIEVAL_TECH
+#define USE_NOBLE_CLASS
+#endif
+// mod selection - end - Nightinggale
+
 // The following #defines should not be moddable...
 
 #define MOVE_IGNORE_DANGER										(0x00000001)

@@ -154,6 +154,15 @@ protected:
 	EmphasizeTypes getNextEmphasis(CvCity* pCity, YieldTypes eYield);
 	void doAssignCitizenToPlot(CvCity* pCity, int iPlotIndex, int iUnitId);
 
+	// Teacher List - start - Nightinggale
+	void parseCityUnitHelp(CvWidgetDataStruct &widgetDataStruct, CvWStringBuffer &szBuffer);
+	void doTeacherList(const CvWidgetDataStruct& widgetDataStruct);
+	// Teacher List - end - Nightinggale
+	// R&R, Robert Surcouf, Custom House Popup-Screen START
+	void doCustomHouse(const CvWidgetDataStruct& widgetDataStruct);
+	void doDomesticMarket(const CvWidgetDataStruct& widgetDataStruct);
+	// R&R, Robert Surcouf, Custom House Popup-Screen END
+
 	static CvDLLWidgetData* m_pInst;
 
 };

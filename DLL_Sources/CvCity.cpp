@@ -165,9 +165,9 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 
 	updateCultureLevel();
 
-	if (pPlot->getCulture(getOwnerINLINE()) < GC.getCache_FREE_CITY_CULTURE())
+	if (pPlot->getCulture(getOwnerINLINE()) < GC.getXMLval(XML_FREE_CITY_CULTURE))
 	{
-		pPlot->setCulture(getOwnerINLINE(), GC.getCache_FREE_CITY_CULTURE(), bBumpUnits);
+		pPlot->setCulture(getOwnerINLINE(), GC.getXMLval(XML_FREE_CITY_CULTURE), bBumpUnits);
 	}
 	pPlot->setOwner(getOwnerINLINE(), bBumpUnits);
 	pPlot->setPlotCity(this);
@@ -190,9 +190,9 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
     //
     //            }
                 ///Kailric Fort Mod end
-                if (pAdjacentPlot->getCulture(getOwnerINLINE()) < GC.getCache_FREE_CITY_ADJACENT_CULTURE())
+                if (pAdjacentPlot->getCulture(getOwnerINLINE()) < GC.getXMLval(XML_FREE_CITY_ADJACENT_CULTURE))
                 {
-                    pAdjacentPlot->setCulture(getOwnerINLINE(), GC.getCache_FREE_CITY_ADJACENT_CULTURE(), bBumpUnits);
+                    pAdjacentPlot->setCulture(getOwnerINLINE(), GC.getXMLval(XML_FREE_CITY_ADJACENT_CULTURE), bBumpUnits);
                 }
                 pAdjacentPlot->updateCulture(bBumpUnits);
             }
@@ -257,7 +257,7 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 	pPlot->updateYield(false);
 	setYieldRateDirty();
 
-	changePopulation(GC.getCache_INITIAL_CITY_POPULATION() + GC.getEraInfo(GC.getGameINLINE().getStartEra()).getFreePopulation());
+	changePopulation(GC.getXMLval(XML_INITIAL_CITY_POPULATION) + GC.getEraInfo(GC.getGameINLINE().getStartEra()).getFreePopulation());
 
 	GC.getMapINLINE().updateWorkingCity();
 
@@ -273,7 +273,7 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 
     if (!isNative() && isHuman())
     {
-        setMaxCityPop(GC.getCache_MAX_CITY_POPULATION_VILLAGE());
+        setMaxCityPop(GC.getXMLval(XML_MAX_CITY_POPULATION_VILLAGE));
     }
 
     setCityType(eCityType);
@@ -324,7 +324,7 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
                             }
                         }
 
-                        if (kCivicInfo.getCivicOptionType() == (CivicOptionTypes)GC.getCache_CIVICOPTION_INVENTIONS())
+                        if (kCivicInfo.getCivicOptionType() == (CivicOptionTypes)GC.getXMLval(XML_CIVICOPTION_INVENTIONS))
                         {
                             for (int iI = 0; iI < GC.getNumProfessionInfos(); iI++)
                             {
@@ -397,7 +397,7 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
             {
                 if (GET_PLAYER(getOwnerINLINE()).getCurrentResearch() == NO_CIVIC)
                 {
-                    CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CHOOSE_INVENTION, (CivicOptionTypes)GC.getCache_CIVICOPTION_INVENTIONS());
+                    CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CHOOSE_INVENTION, (CivicOptionTypes)GC.getXMLval(XML_CIVICOPTION_INVENTIONS));
                     gDLL->getInterfaceIFace()->addPopup(pInfo, getOwnerINLINE(), false);
                 }
             }
@@ -415,7 +415,7 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
         ///TKe
 		if (!isHuman())
 		{
-			changeOverflowProduction(GC.getCache_INITIAL_AI_CITY_PRODUCTION(), 0);
+			changeOverflowProduction(GC.getXMLval(XML_INITIAL_AI_CITY_PRODUCTION), 0);
 		}
 	}
 
@@ -433,6 +433,8 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 			kPlayer.AI_diplomaticHissyFit(getOwnerINLINE(), kPlayer.AI_getStolenPlotsAttitude(eOwner) - aOldAttitude[i]);
 		}
 	}
+
+	this->initPrices(); // R&R, Androrc, Domestic Market
 
 	UpdateBuildingAffectedCache(); // building affected cache - Nightinggale
 
@@ -479,6 +481,10 @@ void CvCity::uninit()
  	// transport feeder - start - Nightinggale
  	ma_tradeImportsMaintain.reset();
  	// transport feeder - end - Nightinggale
+	// Teacher List - start - Nightinggale
+	ma_OrderedStudents.reset();
+	ma_OrderedStudentsRepeat.reset();
+	// Teacher List - end - Nightinggale
 }
 
 // FUNCTION: reset()
@@ -656,6 +662,11 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 		m_aBuildingYieldChange.clear();
 	}
 
+	// R&R, ray, finishing Custom House Screen
+	ma_aiCustomHouseSellThreshold.reset();
+	ma_aiCustomHouseNeverSell.reset();
+	// R&R, ray, finishing Custom House Screen END
+
 	if (!bConstructorCall)
 	{
 		AI_reset();
@@ -763,7 +774,7 @@ void CvCity::kill()
 
 	PlayerTypes eOwner = getOwnerINLINE();
 
-	pPlot->setImprovementType((ImprovementTypes)(GC.getCache_RUINS_IMPROVEMENT()));
+	pPlot->setImprovementType((ImprovementTypes)(GC.getXMLval(XML_RUINS_IMPROVEMENT)));
 
 	gDLL->getEventReporterIFace()->cityLost(this);
 
@@ -802,7 +813,7 @@ void CvCity::doTurn()
 
 	if (!isBombarded())
 	{
-		changeDefenseDamage(-(GC.getCache_CITY_DEFENSE_DAMAGE_HEAL_RATE()));
+		changeDefenseDamage(-(GC.getXMLval(XML_CITY_DEFENSE_DAMAGE_HEAL_RATE)));
 	}
 
 	setLastDefenseDamage(getDefenseDamage());
@@ -824,6 +835,8 @@ void CvCity::doTurn()
 
 	doProduction(bAllowNoProduction);
 
+	doPrices(); // R&R, Androrc Domestic Market
+
 	doDecay();
 
 	doMissionaries();
@@ -841,7 +854,7 @@ void CvCity::doTurn()
                 {
                     if (!GET_PLAYER((PlayerTypes)iI).isNative() && GET_PLAYER((PlayerTypes)iI).getTeam() == (TeamTypes) iTeam)
                     {
-                        FatherPointTypes eTradeType = (FatherPointTypes)GC.getCache_FATHER_POINT_REAL_TRADE();
+                        FatherPointTypes eTradeType = (FatherPointTypes)GC.getXMLval(XML_FATHER_POINT_REAL_TRADE);
                         int iTradePoints = 0;
                         iTradePoints = GC.getFatherPointInfo(eTradeType).getNativeTradeGoldPointPercent() * iModifier / 100;
                         iTradePoints = GC.getFatherPointInfo(eTradeType).getNativeTradeGoldPointPercent() - iTradePoints;
@@ -890,6 +903,29 @@ void CvCity::doTurn()
 	{
 		m_aPopulationUnits[i]->doTurn();
 	}
+
+// domestic yield demand - start - Nightinggale
+#ifdef FASSERT_ENABLE
+	{
+		// check that unit yield demand cache is the same as the actual demand
+		YieldArray<int> aiTest;
+
+		for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+		{
+			YieldTypes eYield = (YieldTypes) iYield;
+			aiTest.set(this->getUnitYieldDemand(eYield), eYield);
+		}
+
+		setUnitYieldDemand();
+
+		for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+		{
+			YieldTypes eYield = (YieldTypes) iYield;
+			FAssertMsg(getUnitYieldDemand(eYield) == aiTest.get(eYield), CvString::format("%s %s cache: %d real: %d", GC.getYieldInfo(eYield).getType() , this->getName(), aiTest.get(eYield), getUnitYieldDemand(eYield)).c_str());
+		}
+	}
+#endif
+// domestic yield demand - end - Nightinggale
 
 	// ONEVENT - Do turn
 	gDLL->getEventReporterIFace()->cityDoTurn(this, getOwnerINLINE());
@@ -1146,6 +1182,19 @@ void CvCity::doTask(TaskTypes eTask, int iData1, int iData2, bool bOption, bool 
 		doCheat(bAlt, bShift, bCtrl);
 		break;
 
+	// Teacher List - start - Nightinggale
+	case TASK_CHANGE_ORDERED_STUDENTS:
+		setOrderedStudents((UnitTypes)iData1, iData2, bOption, bAlt, bShift);
+		break;
+
+	// Teacher List - end - Nightinggale
+
+	// custom house - network fix - start - Nightinggale
+	case TASK_CHANGE_CUSTOM_HOUSE_SETTINGS:
+		setCustomHouseNeverSell((YieldTypes)iData1, bOption);
+		setCustomHouseSellThreshold((YieldTypes)iData1, iData2);
+		break;
+	// custom house - network fix - end - Nightinggale
 	default:
 		FAssertMsg(false, "eTask failed to match a valid option");
 		break;
@@ -2854,7 +2903,7 @@ int CvCity::growthThreshold() const
 
     for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
     {
-        if (GC.getCivicInfo((CivicTypes) iCivic).getCivicOptionType() == (CivicOptionTypes)GC.getCache_CIVICOPTION_INVENTIONS())
+        if (GC.getCivicInfo((CivicTypes) iCivic).getCivicOptionType() == (CivicOptionTypes)GC.getXMLval(XML_CIVICOPTION_INVENTIONS))
         {
             CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes) iCivic);
             if (GET_PLAYER(getOwner()).getIdeasResearched((CivicTypes) iCivic) > 0)
@@ -2925,7 +2974,7 @@ int CvCity::getHurryCostModifier(int iBaseModifier, int iProduction, bool bIgnor
 
 	if (iProduction == 0 && !bIgnoreNew)
 	{
-		iModifier *= std::max(0, (GC.getCache_NEW_HURRY_MODIFIER() + 100));
+		iModifier *= std::max(0, (GC.getXMLval(XML_NEW_HURRY_MODIFIER) + 100));
 		iModifier /= 100;
 	}
 
@@ -3144,7 +3193,7 @@ int CvCity::getProfessionOutput(ProfessionTypes eProfession, const CvUnit* pUnit
                 iModifier += GC.getUnitInfo(pUnit->getUnitType()).getYieldModifier(eYieldProduced);
                 if (GC.getUnitInfo(pUnit->getUnitType()).getCasteAttribute() == 4 && kProfessionInfo.isWorkPlot())
                 {
-                    iModifier += GC.getCache_NOBLE_FIELD_LABOR_PENALTY();
+                    iModifier += GC.getXMLval(XML_NOBLE_FIELD_LABOR_PENALTY);
                 }
                 iExtra += GC.getUnitInfo(pUnit->getUnitType()).getYieldChange(eYieldProduced);
           //  }
@@ -4064,7 +4113,7 @@ void CvCity::setCultureLevel(CultureLevelTypes eNewValue)
 		}
 
 		//update all affected plots
-		int iRange = std::max(getCultureLevel(), eOldValue) + GC.getCache_BUY_PLOT_CULTURE_RANGE();
+		int iRange = std::max(getCultureLevel(), eOldValue) + GC.getXMLval(XML_BUY_PLOT_CULTURE_RANGE);
 		for (iDX = -iRange; iDX <= iRange; iDX++)
 		{
 			for (iDY = -iRange; iDY <= iRange; iDY++)
@@ -4080,11 +4129,10 @@ void CvCity::setCultureLevel(CultureLevelTypes eNewValue)
 
 		if (GC.getGameINLINE().isFinalInitialized())
 		{
-			YieldTypes eCultureYield = (YieldTypes) GC.getCache_CULTURE_YIELD();
-			if ((getCultureLevel() > eOldValue) && (getCultureLevel() > 1) && eCultureYield != NO_YIELD)
+			if ((getCultureLevel() > eOldValue) && (getCultureLevel() > 1))
 			{
 				szBuffer = gDLL->getText("TXT_KEY_MISC_BORDERS_EXPANDED", getNameKey());
-				gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CULTUREEXPANDS", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eCultureYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+				gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CULTUREEXPANDS", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(YIELD_CULTURE).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
 
 				if (getCultureLevel() == (GC.getNumCultureLevelInfos() - 1))
 				{
@@ -4095,12 +4143,12 @@ void CvCity::setCultureLevel(CultureLevelTypes eNewValue)
 							if (isRevealed(GET_PLAYER((PlayerTypes)iI).getTeam(), false))
 							{
 								szBuffer = gDLL->getText("TXT_KEY_MISC_CULTURE_LEVEL", getNameKey(), GC.getCultureLevelInfo(getCultureLevel()).getTextKeyWide());
-								gDLL->getInterfaceIFace()->addMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CULTURELEVEL", MESSAGE_TYPE_MAJOR_EVENT, GC.getYieldInfo(eCultureYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
+								gDLL->getInterfaceIFace()->addMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CULTURELEVEL", MESSAGE_TYPE_MAJOR_EVENT, GC.getYieldInfo(YIELD_CULTURE).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
 							}
 							else
 							{
 								szBuffer = gDLL->getText("TXT_KEY_MISC_CULTURE_LEVEL_UNKNOWN", GC.getCultureLevelInfo(getCultureLevel()).getTextKeyWide());
-								gDLL->getInterfaceIFace()->addMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CULTURELEVEL", MESSAGE_TYPE_MAJOR_EVENT, GC.getYieldInfo(eCultureYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
+								gDLL->getInterfaceIFace()->addMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CULTURELEVEL", MESSAGE_TYPE_MAJOR_EVENT, GC.getYieldInfo(YIELD_CULTURE).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
 							}
 						}
 					}
@@ -4263,7 +4311,7 @@ int CvCity::getBaseRawYieldProduced(YieldTypes eYieldType, SpecialBuildingTypes 
 				YieldTypes eYieldProduced = NO_YIELD;
 				int i = 0;
 				bool bArmor = false;
-				if ((YieldTypes)kProfessionInfo.getYieldsProduced(0) == (YieldTypes)GC.getCache_DEFAULT_YIELD_ARMOR_TYPE())
+				if ((YieldTypes)kProfessionInfo.getYieldsProduced(0) == (YieldTypes)GC.getXMLval(XML_DEFAULT_YIELD_ARMOR_TYPE))
 				{
 				    bArmor = true;
 				}
@@ -4356,7 +4404,7 @@ int CvCity::getBaseRawYieldProduced(YieldTypes eYieldType, SpecialBuildingTypes 
                     else if (isMarket(eMustSaleYield) && getYieldStored(eMustSaleYield) >= (getMaintainLevel(eMustSaleYield) + 1))
                     {
 
-                        int iLoss = std::max(GC.getCache_CITY_YIELD_DECAY_PERCENT() * getYieldStored(eMustSaleYield) / 100, GC.getCache_MIN_CITY_YIELD_DECAY());
+                        int iLoss = std::max(GC.getXMLval(XML_CITY_YIELD_DECAY_PERCENT) * getYieldStored(eMustSaleYield) / 100, GC.getXMLval(XML_MIN_CITY_YIELD_DECAY));
 
                         iLoss = std::min(getYieldStored(eMustSaleYield) - getMaintainLevel(eMustSaleYield), iLoss);
                         if (iLoss >= GC.getBuildingInfo(eBuilding).getYieldChange(eYieldType))
@@ -4537,17 +4585,11 @@ int CvCity::getYieldRate(YieldTypes eIndex) const
 
 int CvCity::getCultureRate() const
 {
-	YieldTypes eYield = (YieldTypes) GC.getCache_CULTURE_YIELD();
-	if (eYield == NO_YIELD)
-	{
-		return 0;
-	}
-
 	///TKs Med
 	int iCulture = 0;
 	if (!isNative())
 	{
-	   iCulture  = calculateNetYield(eYield) + ((calculateNetYield(YIELD_EDUCATION) + (calculateNetYield(YIELD_CROSSES) - 1)) / 2);
+	   iCulture  = calculateNetYield(YIELD_CULTURE) + ((calculateNetYield(YIELD_EDUCATION) + (calculateNetYield(YIELD_CROSSES) - 1)) / 2);
 	}
 	else
 	{
@@ -5690,7 +5732,7 @@ void CvCity::calculateNetYields(int aiYields[NUM_YIELD_TYPES], int* aiProducedYi
 
 		YieldTypes eYieldProduced = (YieldTypes) kProfession.getYieldsProduced(0);
 
-		if (eYieldConsumed != NO_YIELD && GC.getCache_NO_CITY_SHORTAGE_MESSAGES() <= 0)
+		if (eYieldConsumed != NO_YIELD && GC.getXMLval(XML_NO_CITY_SHORTAGE_MESSAGES) <= 0)
 		{
 			CvWString szBuffer = gDLL->getText("TXT_KEY_NO_RAW", getNameKey(),GC.getYieldInfo(eYieldConsumed).getChar(), GC.getYieldInfo(eYieldProduced).getChar());
 			gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYieldConsumed).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
@@ -5739,7 +5781,7 @@ int CvCity::getOverflowYieldSellPercent() const
 	}
 	if (!isHuman())
 	{
-	    iMaxPercent += GC.getCache_AI_WAREHOUSE_MOD();
+	    iMaxPercent += GC.getXMLval(XML_AI_WAREHOUSE_MOD);
 	}
 
 	return iMaxPercent;
@@ -7196,18 +7238,19 @@ void CvCity::doGrowth()
     ///TKs Med
     bool bNotMaxed = true;
 
+#ifdef USE_NOBLE_CLASS
     //bool bRationsGrowth = false;
-    if (!isNative() && getYieldStored(YIELD_GRAIN) >= GC.getCache_BASE_CITY_LUXURY_FOOD_THRESHOLD_MOD() && bNotMaxed)
+    if (!isNative() && getYieldStored(YIELD_GRAIN) >= GC.getXMLval(XML_BASE_CITY_LUXURY_FOOD_THRESHOLD_MOD) && bNotMaxed)
     {
         if (!AI_isEmphasizeAvoidGrowth())
 		{
-            UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getCache_DEFAULT_NOBLE_GROWTH_UNIT_CLASS());
+            UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getXMLval(XML_DEFAULT_NOBLE_GROWTH_UNIT_CLASS));
             //if (GET_PLAYER(getOwnerINLINE()))
             if (NO_UNIT != eUnit)
             {
                 CvUnit* pUnit = GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, (ProfessionTypes) GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession(), getX_INLINE(), getY_INLINE());
                 int iNewGrain = 0;
-                iNewGrain = getYieldStored(YIELD_GRAIN) - GC.getCache_BASE_CITY_LUXURY_FOOD_THRESHOLD_MOD();
+                iNewGrain = getYieldStored(YIELD_GRAIN) - GC.getXMLval(XML_BASE_CITY_LUXURY_FOOD_THRESHOLD_MOD);
                 setYieldStored(YIELD_GRAIN, iNewGrain);
 
 
@@ -7217,6 +7260,7 @@ void CvCity::doGrowth()
             }
 		}
     }
+#endif
 
 
 
@@ -7233,7 +7277,7 @@ void CvCity::doGrowth()
 			//UnitTypes eUnit = (UnitTypes)GET_PLAYER(getOwnerINLINE()).getDefaultPopUnit();
 			UnitTypes eUnit = NO_UNIT;
 			///TKs Med
-			bool bGetDefualtPopUnit = (GET_PLAYER(getOwnerINLINE()).getIdeasResearched((CivicTypes) GC.getCache_FREE_PEASANT_CIVIC()) > 0);
+			bool bGetDefualtPopUnit = (GET_PLAYER(getOwnerINLINE()).getIdeasResearched((CivicTypes) GC.getXMLval(XML_FREE_PEASANT_CIVIC)) > 0);
 
 			if (isNative() || GET_PLAYER(getOwnerINLINE()).isEurope() || bGetDefualtPopUnit)
 			{
@@ -7241,7 +7285,7 @@ void CvCity::doGrowth()
 			}
 			else
 			{
-			    eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getCache_DEFAULT_GRAIN_GROWTH_UNIT_CLASS());
+			    eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getXMLval(XML_DEFAULT_GRAIN_GROWTH_UNIT_CLASS));
 			}
 
 
@@ -7303,40 +7347,59 @@ void CvCity::doYields()
     int iArmorWeight = 0;
     int iBestArmorWeight = 0;
 
+	// custom house - start - Nightinggale
+	int iTotalProfitFromDomesticMarket = 0;
+	int iMarketCap = this->getMarketCap();
+	// custom house - end - Nightinggale
+
 	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
 	{
 		YieldTypes eYield = (YieldTypes) iYield;
+
+		// invention effect cache - start - Nightinggale
+		if (!GET_PLAYER(getOwnerINLINE()).canUseYield(eYield))
+		{	
+			// don't use yields, which aren't invented
+			if (getYieldStored(eYield) > 0)
+			{
+				setYieldStored(eYield, 0);
+			}
+			continue;
+		}
+		// invention effect cache - end - Nightinggale
+
 		  ///TKs MED AI Handicap
         if (!isHuman() && !isNative() && GET_PLAYER(getOwnerINLINE()).getParent() != NO_PLAYER)
         {
             switch (eYield)
             {
-
+#ifdef USE_NOBLE_CLASS
                 case YIELD_SPICES:
 
                     //if (!isHuman() && !isNative() && GET_PLAYER(getOwnerINLINE()).getParent() != NO_PLAYER)
                     {
-                        if (GC.getGameINLINE().getSorenRandNum(GC.getCache_AI_CHEAT_SPICE(), "AI Cheat Spices") == 0)
+                        if (GC.getGameINLINE().getSorenRandNum(GC.getXMLval(XML_AI_CHEAT_SPICE), "AI Cheat Spices") == 0)
                         {
-                            if (getYieldStored(eYield) <= GC.getCache_AI_CHEAT_SPICE_BUY() * GC.getCache_AI_CHEAT_SPICE_MULTIPLE())
+                            if (getYieldStored(eYield) <= GC.getXMLval(XML_AI_CHEAT_SPICE_BUY) * GC.getXMLval(XML_AI_CHEAT_SPICE_MULTIPLE))
                             {
-                                int iRandsomSpice = GC.getCache_AI_CHEAT_SPICE_BUY() + 1;
+                                int iRandsomSpice = GC.getXMLval(XML_AI_CHEAT_SPICE_BUY) + 1;
                                 changeYieldStored(eYield, iRandsomSpice);
                             }
                         }
                     }
 
                     break;
+#endif
                 case YIELD_WEAPONS:
-                    if (GC.getCache_AI_CHEAT_AUTO_BUY() > 0 && GET_TEAM(getTeam()).getAtWarCount() == 0)
+                    if (GC.getXMLval(XML_AI_CHEAT_AUTO_BUY) > 0 && GET_TEAM(getTeam()).getAtWarCount() == 0)
                     {
-                        if (iNeeded > GC.getCache_AI_CHEAT_NEEDED_DEFENDERS())
+                        if (iNeeded > GC.getXMLval(XML_AI_CHEAT_NEEDED_DEFENDERS))
                         {
-                            if (GC.getGameINLINE().getSorenRandNum(GC.getCache_AI_CHEAT_SPICE(), "AI Cheat Spices") == 0)
+                            if (GC.getGameINLINE().getSorenRandNum(GC.getXMLval(XML_AI_CHEAT_SPICE), "AI Cheat Spices") == 0)
                             {
-                                if (getYieldStored(eYield) <= GC.getCache_AI_CHEAT_SPICE_BUY() * GC.getCache_AI_CHEAT_SPICE_MULTIPLE())
+                                if (getYieldStored(eYield) <= GC.getXMLval(XML_AI_CHEAT_SPICE_BUY) * GC.getXMLval(XML_AI_CHEAT_SPICE_MULTIPLE))
                                 {
-                                    int iRandsomSpice = GC.getCache_AI_CHEAT_SPICE_BUY() + 1;
+                                    int iRandsomSpice = GC.getXMLval(XML_AI_CHEAT_SPICE_BUY) + 1;
                                     changeYieldStored(eYield, iRandsomSpice);
                                 }
                             }
@@ -7344,17 +7407,19 @@ void CvCity::doYields()
                     }
                     ///TKe
                     break;
+#ifdef MEDIEVAL_TECH
                 case YIELD_LEATHER_ARMOR:
+#endif
                 case YIELD_HORSES:
-                    if (GC.getCache_AI_CHEAT_AUTO_BUY() > 0 && GET_TEAM(getTeam()).getAtWarCount() == 0)
+                    if (GC.getXMLval(XML_AI_CHEAT_AUTO_BUY) > 0 && GET_TEAM(getTeam()).getAtWarCount() == 0)
                     {
-                        if (GET_TEAM(getTeam()).getAtWarCount() == 0 && iNeeded > GC.getCache_AI_CHEAT_NEEDED_DEFENDERS())
+                        if (GET_TEAM(getTeam()).getAtWarCount() == 0 && iNeeded > GC.getXMLval(XML_AI_CHEAT_NEEDED_DEFENDERS))
                         {
-                            if (GC.getGameINLINE().getSorenRandNum(GC.getCache_AI_CHEAT_SPICE(), "AI Cheat Spices") == 0)
+                            if (GC.getGameINLINE().getSorenRandNum(GC.getXMLval(XML_AI_CHEAT_SPICE), "AI Cheat Spices") == 0)
                             {
-                                if (getYieldStored(eYield) <= GC.getCache_AI_CHEAT_SPICE_BUY() * GC.getCache_AI_CHEAT_SPICE_MULTIPLE())
+                                if (getYieldStored(eYield) <= GC.getXMLval(XML_AI_CHEAT_SPICE_BUY) * GC.getXMLval(XML_AI_CHEAT_SPICE_MULTIPLE))
                                 {
-                                    int iRandsomSpice = GC.getCache_AI_CHEAT_SPICE_BUY() + 1;
+                                    int iRandsomSpice = GC.getXMLval(XML_AI_CHEAT_SPICE_BUY) + 1;
                                     changeYieldStored(eYield, iRandsomSpice);
                                 }
                             }
@@ -7362,6 +7427,7 @@ void CvCity::doYields()
                     }
                     ///TKe
                     break;
+#ifdef MEDIEVAL_TECH
                 case YIELD_SCALE_ARMOR:
                 case YIELD_MAIL_ARMOR:
                  case YIELD_PLATE_ARMOR:
@@ -7371,6 +7437,7 @@ void CvCity::doYields()
                             ///Testing
                             //FAssert(GET_PLAYER(getOwnerINLINE()).getID() != 0)
                             bool bDiscovered = true;
+							/*
                             if (GC.getYieldInfo(eYield).isMustBeDiscovered())
                             {
                                 bDiscovered = false;
@@ -7396,6 +7463,7 @@ void CvCity::doYields()
                                 }
                             }
                             else
+							*/
                             {
                                 iArmorWeight = GC.getYieldInfo(eYield).getAIBaseValue();
                                 if (iArmorWeight > iBestArmorWeight)
@@ -7404,15 +7472,15 @@ void CvCity::doYields()
                                     eSelectedArmor = eYield;
                                 }
                             }
-                            if (bDiscovered && GC.getCache_AI_CHEAT_AUTO_BUY() > 0 && GET_TEAM(getTeam()).getAtWarCount() == 0)
+                            if (bDiscovered && GC.getXMLval(XML_AI_CHEAT_AUTO_BUY) > 0 && GET_TEAM(getTeam()).getAtWarCount() == 0)
                             {
-                                if (iNeeded > GC.getCache_AI_CHEAT_NEEDED_DEFENDERS())
+                                if (iNeeded > GC.getXMLval(XML_AI_CHEAT_NEEDED_DEFENDERS))
                                 {
-                                    if (GC.getGameINLINE().getSorenRandNum(GC.getCache_AI_CHEAT_SPICE(), "AI Cheat Spices") == 0)
+                                    if (GC.getGameINLINE().getSorenRandNum(GC.getXMLval(XML_AI_CHEAT_SPICE), "AI Cheat Spices") == 0)
                                     {
-                                        if (getYieldStored(eYield) <= GC.getCache_AI_CHEAT_SPICE_BUY() * GC.getCache_AI_CHEAT_SPICE_MULTIPLE())
+                                        if (getYieldStored(eYield) <= GC.getXMLval(XML_AI_CHEAT_SPICE_BUY) * GC.getXMLval(XML_AI_CHEAT_SPICE_MULTIPLE))
                                         {
-                                            int iRandsomSpice = GC.getCache_AI_CHEAT_SPICE_BUY() + 1;
+                                            int iRandsomSpice = GC.getXMLval(XML_AI_CHEAT_SPICE_BUY) + 1;
                                             changeYieldStored(eYield, iRandsomSpice);
                                         }
                                     }
@@ -7421,37 +7489,7 @@ void CvCity::doYields()
                         }
 
                     break;
-                case YIELD_COTTON:
-                case YIELD_GRAIN:
-                case YIELD_STONE:
-                    //if (!isHuman() && !isNative() && GET_PLAYER(getOwnerINLINE()).getParent() != NO_PLAYER)
-                    {
-                        bool bDiscovered = true;
-                        if (GC.getYieldInfo(eYield).isMustBeDiscovered())
-                        {
-                            bDiscovered = false;
-                            for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
-                            {
-                                CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes)iCivic);
-                                if (kCivicInfo.getAllowsYields(eYield) > 0)
-                                {
-                                    if (GET_PLAYER(getOwnerINLINE()).getIdeasResearched((CivicTypes) iCivic) > 0)
-                                    {
-                                        bDiscovered = true;
-                                        break;
-                                    }
-                                }
-                            }
-                            if (!bDiscovered)
-                            {
-                                if (getYieldStored(eYield) > 0)
-                                {
-                                    setYieldStored(eYield, 0);
-                                }
-                            }
-                        }
-                    }
-                    break;
+#endif
                 default:
                 break;
             }
@@ -7581,9 +7619,9 @@ void CvCity::doYields()
 						// MultipleYieldsProduced Start by Aymerick 22/01/2010**
 						int iStudentOutput = 0;
 						///TKs Med Update 1.1c
-						//if (GET_PLAYER(getOwnerINLINE()).getIdeasResearched((CivicTypes) GC.getCache_DEFAULT_FUEDALISM_TECH()))
+						//if (GET_PLAYER(getOwnerINLINE()).getIdeasResearched((CivicTypes) GC.getXMLval(XML_DEFAULT_FUEDALISM_TECH)))
 						//{
-                            if (GC.getProfessionInfo(eProfession).getYieldsProduced(0) == eYield && GC.getUnitInfo(pLoopUnit->getUnitType()).getKnightDubbingWeight() > 0 && !pLoopUnit->isHasRealPromotion((PromotionTypes)GC.getCache_DEFAULT_KNIGHT_PROMOTION()))
+                            if (GC.getProfessionInfo(eProfession).getYieldsProduced(0) == eYield && GC.getUnitInfo(pLoopUnit->getUnitType()).getKnightDubbingWeight() > 0 && !pLoopUnit->isHasRealPromotion((PromotionTypes)GC.getXMLval(XML_DEFAULT_KNIGHT_PROMOTION)))
                             // MultipleYieldsProduced End
                             {
                                 FAssert(!pLoopUnit->getUnitInfo().isTreasure());
@@ -7593,7 +7631,7 @@ void CvCity::doYields()
                             }
 						//}
 						///TKe Update
-						if (GC.getProfessionInfo(eProfession).getSpecialBuilding() == (SpecialBuildingTypes)GC.getCache_DEFAULT_SPECIALBUILDING_COURTHOUSE())
+						if (GC.getProfessionInfo(eProfession).getSpecialBuilding() == (SpecialBuildingTypes)GC.getXMLval(XML_DEFAULT_SPECIALBUILDING_COURTHOUSE))
                         {
                             iCourtDiscipline += getProfessionOutput(eProfession, pLoopUnit, NULL) * getBaseYieldRateModifier(YIELD_CULTURE) / 100;
                         }
@@ -7623,7 +7661,7 @@ void CvCity::doYields()
 					{
 					    //bool bisPage = (pLoopUnit->getUnitClassType() == (UnitClassTypes)GC.getDefineINT("DEFAULT_NOBLE_GROWTH_UNIT_CLASS"));
 					    bool bisPage = (UnitClassTypes)GC.getUnitInfo(pLoopUnit->getUnitType()).getLaborForceUnitClass() != NO_UNITCLASS;
-					    if (!isHuman() && !bisPage && GC.getUnitInfo(pLoopUnit->getUnitType()).getKnightDubbingWeight() > 0 && !pLoopUnit->isHasRealPromotion((PromotionTypes)GC.getCache_DEFAULT_KNIGHT_PROMOTION()))
+					    if (!isHuman() && !bisPage && GC.getUnitInfo(pLoopUnit->getUnitType()).getKnightDubbingWeight() > 0 && !pLoopUnit->isHasRealPromotion((PromotionTypes)GC.getXMLval(XML_DEFAULT_KNIGHT_PROMOTION)))
                         {
                             bisPage = true;
                         }
@@ -7654,13 +7692,38 @@ void CvCity::doYields()
 
 			if (GC.getYieldInfo(eYield).isCargo())
 			{
+				// custom house - start - Nightinggale
+				if (iMarketCap > 0 && !this->isCustomHouseNeverSell(eYield))
+				{
+					int iDemand = getYieldDemand(eYield);
+					if (iDemand > 0)
+					{
+						int iStored = getYieldStored(eYield);
+						int iThreshold = getCustomHouseSellThreshold(eYield);
+						if (iStored > iThreshold)
+						{
+							int iAmount = std::min(std::min(iMarketCap, iDemand), iStored - iThreshold);
+
+							int iProfit = iAmount * this->getYieldBuyPrice(eYield);
+
+							if (iProfit > 0)
+							{
+								iMarketCap -= iAmount;
+								changeYieldStored(eYield, -iAmount);
+								iTotalProfitFromDomesticMarket += iProfit;
+							}
+						}
+					}
+				}
+				// custom house - end - Nightinggale
+
 			    ///TKs Med
 				int iExcess = getYieldStored(eYield) - getMaxYieldCapacity(eYield);
 				///Tke
 
 				if (isMarket(eYield) && getYieldStored(eYield) >= (getMaintainLevel(eYield) + 1) && GET_PLAYER(getOwnerINLINE()).getParent() != NO_PLAYER)
 				{
-                    int iLoss = std::max(GC.getCache_CITY_YIELD_DECAY_PERCENT() * getYieldStored(eYield) / 100, GC.getCache_MIN_CITY_YIELD_DECAY());
+                    int iLoss = std::max(GC.getXMLval(XML_CITY_YIELD_DECAY_PERCENT) * getYieldStored(eYield) / 100, GC.getXMLval(XML_MIN_CITY_YIELD_DECAY));
 
                     iLoss = std::min(getYieldStored(eYield) - getMaintainLevel(eYield), iLoss);
 
@@ -7668,7 +7731,7 @@ void CvCity::doYields()
                     ///TK Med
                     CvPlayer& kPlayerEurope = GET_PLAYER(GET_PLAYER(getOwnerINLINE()).getParent());
                     int iPrice = iLoss * kPlayerEurope.getYieldBuyPrice(eYield);
-                    int iTax = (GET_PLAYER(getOwnerINLINE()).getTaxRate() * GC.getCache_PERCENT_TAX_ON_AUTOSELL_GOODS()) / 100;
+                    int iTax = (GET_PLAYER(getOwnerINLINE()).getTaxRate() * GC.getXMLval(XML_PERCENT_TAX_ON_AUTOSELL_GOODS)) / 100;
                     iPrice = iPrice -= (iPrice * iTax) / 100;
                     //int iProfit = getOverflowYieldSellPercent() * GET_PLAYER(getOwnerINLINE()).getSellToEuropeProfit(eYield, iLoss) / 100;
                     //int iAutoSellProfit = getYieldAutoSellPercent(eYield) * GET_PLAYER(getOwnerINLINE()).getSellToEuropeProfit(eYield, iLoss) / 100;
@@ -7696,9 +7759,9 @@ void CvCity::doYields()
                         gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_BUILD_BANK", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
                     }
 				}
-				else if (iExcess > 0 && eYield != YIELD_GRAIN)
+				else if (iExcess > 0 && !YieldGroup_Luxury_Food(eYield))
 				{
-				    int iLoss = std::max(GC.getCache_CITY_YIELD_DECAY_PERCENT() * iExcess / 100, GC.getCache_MIN_CITY_YIELD_DECAY());
+				    int iLoss = std::max(GC.getXMLval(XML_CITY_YIELD_DECAY_PERCENT) * iExcess / 100, GC.getXMLval(XML_MIN_CITY_YIELD_DECAY));
                     iLoss = std::min(iLoss, iExcess);
 					changeYieldStored(eYield, -iLoss);
 					int iPrice = 0;
@@ -7708,7 +7771,7 @@ void CvCity::doYields()
                         iPrice = iLoss * kPlayerEurope.getYieldBuyPrice(eYield);
                     }
 					int iProfit = getOverflowYieldSellPercent() * GET_PLAYER(getOwnerINLINE()).getSellToEuropeProfit(eYield, iLoss) / 100;
-                    int iTax = (GET_PLAYER(getOwnerINLINE()).getTaxRate() * GC.getCache_PERCENT_TAX_ON_AUTOSELL_GOODS()) / 100;
+                    int iTax = (GET_PLAYER(getOwnerINLINE()).getTaxRate() * GC.getXMLval(XML_PERCENT_TAX_ON_AUTOSELL_GOODS)) / 100;
 					//int iAutoSellProfit = getYieldAutoSellPercent(eYield) * GET_PLAYER(getOwnerINLINE()).getSellToEuropeProfit(eYield, iLoss) / 100;
 					int iAutoSellProfit = getYieldAutoSellPercent(eYield) * iPrice / 100;
 					if (iAutoSellProfit > iProfit)
@@ -7740,7 +7803,7 @@ void CvCity::doYields()
                         }
 					}
 				}
-				else if (aiYields[eYield] > -iExcess && eYield != YIELD_GRAIN)
+				else if (aiYields[eYield] > -iExcess && !YieldGroup_Luxury_Food(eYield))
 				{
 					CvWString szBuffer = gDLL->getText("TXT_KEY_RUNNING_OUT_OF_SPACE",GC.getYieldInfo(eYield).getChar(), getNameKey());
 					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
@@ -7764,7 +7827,14 @@ void CvCity::doYields()
        setSelectedArmor(eSelectedArmor);
     }
 
-
+	// custom house - start - Nightinggale
+	if (iTotalProfitFromDomesticMarket != 0)
+	{
+		GET_PLAYER(getOwnerINLINE()).changeGold(iTotalProfitFromDomesticMarket);
+		CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_DOMESTIC_SOLD", getNameKey(), iTotalProfitFromDomesticMarket);
+		gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+	}
+	// custom house - end - Nightinggale
 }
 ///TKe
 void CvCity::doCulture()
@@ -7829,7 +7899,7 @@ void CvCity::doPlotCulture(bool bUpdate, PlayerTypes ePlayer, int iCultureRate)
 		}
 	}
 
-	int iFreeCultureRate = GC.getCache_CITY_FREE_CULTURE_GROWTH_FACTOR();
+	int iFreeCultureRate = GC.getXMLval(XML_CITY_FREE_CULTURE_GROWTH_FACTOR);
 	///TKs Med
 	//bool bIsVassal = (getVassalOwner() != NO_PLAYER);
 	if (getCulture(ePlayer) > 0)
@@ -7876,6 +7946,29 @@ void CvCity::doPlotCulture(bool bUpdate, PlayerTypes ePlayer, int iCultureRate)
 ///TKe
 void CvCity::doSpecialists()
 {
+	// EDU remake - start - Nightinggale
+	int iTeachLevel = this->getTeachLevel();
+	if (iTeachLevel > 0)
+	{
+		for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
+		{
+			UnitTypes eUnit =  m_aPopulationUnits[i]->getUnitType();
+
+			CvUnitInfo &kUnit = GC.getUnitInfo(eUnit);
+			///TKs Invention Core Mod v 1.0
+			if (kUnit.getNumUnitNames() > 0)
+			{
+			    continue;
+			}
+			///TKe
+			if (kUnit.getTeachLevel() <= iTeachLevel)
+			{
+				m_aiSpecialistWeights[eUnit] = 1;
+			}
+		}
+	}
+	// EDU remake - end - Nightinggale
+#if 0
 	std::set<UnitTypes> setExisting;
 	if (calculateNetYield(YIELD_EDUCATION) > 0)
 	{
@@ -7895,6 +7988,7 @@ void CvCity::doSpecialists()
 			}
 		}
 	}
+#endif
 }
 
 
@@ -8081,9 +8175,9 @@ void CvCity::doDecay()
 
 				if (isHuman())
 				{
-					if (getBuildingProductionTime((BuildingTypes)iI) > GC.getCache_BUILDING_PRODUCTION_DECAY_TIME())
+					if (getBuildingProductionTime((BuildingTypes)iI) > GC.getXMLval(XML_BUILDING_PRODUCTION_DECAY_TIME))
 					{
-						setBuildingProduction(((BuildingTypes)iI), ((getBuildingProduction((BuildingTypes)iI) * GC.getCache_BUILDING_PRODUCTION_DECAY_PERCENT()) / 100));
+						setBuildingProduction(((BuildingTypes)iI), ((getBuildingProduction((BuildingTypes)iI) * GC.getXMLval(XML_BUILDING_PRODUCTION_DECAY_PERCENT)) / 100));
 					}
 				}
 			}
@@ -8104,9 +8198,9 @@ void CvCity::doDecay()
 
 				if (isHuman())
 				{
-					if (getUnitProductionTime((UnitTypes)iI) > GC.getCache_UNIT_PRODUCTION_DECAY_TIME())
+					if (getUnitProductionTime((UnitTypes)iI) > GC.getXMLval(XML_UNIT_PRODUCTION_DECAY_TIME))
 					{
-						setUnitProduction(((UnitTypes)iI), ((getUnitProduction((UnitTypes)iI) * GC.getCache_UNIT_PRODUCTION_DECAY_PERCENT()) / 100));
+						setUnitProduction(((UnitTypes)iI), ((getUnitProduction((UnitTypes)iI) * GC.getXMLval(XML_UNIT_PRODUCTION_DECAY_PERCENT)) / 100));
 					}
 				}
 			}
@@ -8138,6 +8232,14 @@ enum
 	// transport feeder - start - Nightinggale
 	SAVE_BIT_IMPORT_FEEDER               = 1 << 4,
 	// transport feeder - end - Nightinggale
+	// Teacher List - start - Nightinggale
+	SAVE_BIT_ORDERED_STUDENTS            = 1 << 5,
+	SAVE_BIT_ORDERED_STUDENTS_REPEAT     = 1 << 6,
+	// Teacher List - end - Nightinggale
+	// R&R, ray, finishing Custom House Screen
+	SAVE_BIT_CUSTOM_HOUSE_SELL_THRESHOLD = 1 << 7,
+	SAVE_BIT_CUSTOM_HOUSE_NEVER_SELL     = 1 << 8,
+	// R&R, ray, finishing Custom House Screen END
 };
 
 // Private Functions...
@@ -8328,6 +8430,17 @@ void CvCity::read(FDataStreamBase* pStream)
   	}
  	// traderoute just-in-time - end - Nightinggale
 
+	// R&R, ray, finishing Custom House Screen
+	ma_aiCustomHouseSellThreshold.read(pStream, arrayBitmap & SAVE_BIT_CUSTOM_HOUSE_SELL_THRESHOLD);
+	ma_aiCustomHouseNeverSell.read(    pStream, arrayBitmap & SAVE_BIT_CUSTOM_HOUSE_NEVER_SELL);
+	m_aiYieldBuyPrice.read(pStream, uiFlag > 3);
+	// R&R, ray, finishing Custom House Screen END
+
+	// Teacher List - start - Nightinggale
+	ma_OrderedStudents.read(      pStream, arrayBitmap & SAVE_BIT_ORDERED_STUDENTS);
+	ma_OrderedStudentsRepeat.read(pStream, arrayBitmap & SAVE_BIT_ORDERED_STUDENTS_REPEAT);
+	// Teacher List - end - Nightinggale
+
 	m_orderQueue.Read(pStream);
 
 	pStream->Read(&m_iPopulationRank);
@@ -8355,12 +8468,21 @@ void CvCity::read(FDataStreamBase* pStream)
 		m_aBuildingYieldChange.push_back(kChange);
 	}
 
+	// domestic market - start - Nightinggale
+	if (uiFlag < 4)
+	{
+		this->initPrices();
+	}
+	// domestic market - end - Nightinggale
+
+	// set cache
 	UpdateBuildingAffectedCache(); // building affected cache - Nightinggale
+	this->setUnitYieldDemand(); // // domestic yield demand - Nightinggale
 }
 
 void CvCity::write(FDataStreamBase* pStream)
 {
-	uint uiFlag=3;
+	uint uiFlag=4;
 	pStream->Write(uiFlag);		// flag for expansion
 
 	// just-in-time yield arrays - start - Nightinggale
@@ -8376,6 +8498,14 @@ void CvCity::write(FDataStreamBase* pStream)
 	// transport feeder - start - Nightinggale
 	arrayBitmap |= ma_tradeImportsMaintain.hasContent()       ? SAVE_BIT_IMPORT_FEEDER : 0;
 	// transport feeder - end - Nightinggale
+	// Teacher List - start - Nightinggale
+	arrayBitmap |= ma_OrderedStudents.hasContent()            ? SAVE_BIT_ORDERED_STUDENTS : 0;
+	arrayBitmap |= ma_OrderedStudentsRepeat.hasContent()      ? SAVE_BIT_ORDERED_STUDENTS_REPEAT : 0;
+	// Teacher List - end - Nightinggale
+	// R&R, ray, finishing Custom House Screen
+	arrayBitmap |= ma_aiCustomHouseSellThreshold.hasContent() ? SAVE_BIT_CUSTOM_HOUSE_SELL_THRESHOLD : 0;
+	arrayBitmap |= ma_aiCustomHouseNeverSell.hasContent()     ? SAVE_BIT_CUSTOM_HOUSE_NEVER_SELL : 0;
+	// R&R, ray, finishing Custom House Screen END
 	pStream->Write(arrayBitmap);
 	// just-in-time yield arrays - end - Nightinggale
 
@@ -8482,6 +8612,17 @@ void CvCity::write(FDataStreamBase* pStream)
 	// transport feeder - start - Nightinggale
 	ma_tradeImportsMaintain.write(pStream, arrayBitmap & SAVE_BIT_IMPORT_FEEDER);
 	// transport feeder - end - Nightinggale
+
+	// R&R, ray, finishing Custom House Screen
+	ma_aiCustomHouseSellThreshold.write(pStream, arrayBitmap & SAVE_BIT_CUSTOM_HOUSE_SELL_THRESHOLD);
+	ma_aiCustomHouseNeverSell.write    (pStream, arrayBitmap & SAVE_BIT_CUSTOM_HOUSE_NEVER_SELL);
+	m_aiYieldBuyPrice.write(pStream, true);
+	// R&R, ray, finishing Custom House Screen END
+
+	// Teacher List - start - Nightinggale
+	ma_OrderedStudents.write(      pStream, arrayBitmap & SAVE_BIT_ORDERED_STUDENTS);
+	ma_OrderedStudentsRepeat.write(pStream, arrayBitmap & SAVE_BIT_ORDERED_STUDENTS_REPEAT);
+	// Teacher List - end - Nightinggale
 
 	m_orderQueue.Write(pStream);
 
@@ -9489,7 +9630,7 @@ void CvCity::addPopulationUnit(CvUnit* pUnit, ProfessionTypes eProfession)
 	pUnit->unloadAll();
 	///Tke
 
-	if ((getPopulation() == 0) && (GC.getCache_CONSUME_EQUIPMENT_ON_FOUND() != 0))
+	if ((getPopulation() == 0) && (GC.getXMLval(XML_CONSUME_EQUIPMENT_ON_FOUND) != 0))
 	{
 		// Pioneers consume tools when founding
 		// must do this before joining the city
@@ -9498,6 +9639,8 @@ void CvCity::addPopulationUnit(CvUnit* pUnit, ProfessionTypes eProfession)
 
 	CvUnit* pTransferUnit = GET_PLAYER(pUnit->getOwnerINLINE()).getAndRemoveUnit(pUnit->getID());
 	FAssert(pTransferUnit == pUnit);
+
+	this->setUnitYieldDemand(pUnit->getUnitType()); // // domestic yield demand - Nightinggale
 
 	int iOldPopulation = getPopulation();
 	m_aPopulationUnits.push_back(pTransferUnit);
@@ -9529,6 +9672,8 @@ bool CvCity::removePopulationUnit(CvUnit* pUnit, bool bDelete, ProfessionTypes e
 	}
 
 	pUnit->setColonistLocked(false);
+
+	this->setUnitYieldDemand(pUnit->getUnitType(), true); // // domestic yield demand - Nightinggale
 
 	//remove unit from worked plots
 	CvPlot* pWorkedPlot = getPlotWorkedByUnit(pUnit);
@@ -9717,7 +9862,7 @@ void CvCity::ejectTeachUnits()
 bool CvCity::canProduceYield(YieldTypes eYield)
 {
     ///Tks Med
-    if (GC.getYieldInfo(eYield).isNativeTrade() || eYield == YIELD_WOOL || eYield == YIELD_CATTLE || eYield == YIELD_SHEEP)
+    if (YieldGroup_AI_Native_Product(eYield) || GC.getYieldInfo(eYield).isNativeTrade())
     {
         if (isNative())
         {
@@ -10032,14 +10177,14 @@ void CvCity::setMissionaryRate(int iRate)
 
 void CvCity::doRebelSentiment()
 {
-	int iTurnFactor = std::max(1, GC.getCache_REBEL_SENTIMENT_TURN_WEIGHT() * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent() / 100);
+	int iTurnFactor = std::max(1, GC.getXMLval(XML_REBEL_SENTIMENT_TURN_WEIGHT) * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent() / 100);
 
 	int iPast = (iTurnFactor - 1) * getRebelSentiment();
 	int iNew = 0;
 
 	if (!GET_PLAYER(getOwnerINLINE()).isEurope())
 	{
-		iNew = calculateNetYield(YIELD_BELLS) * GC.getCache_REBEL_SENTIMENT_BELLS_FACTOR();
+		iNew = calculateNetYield(YIELD_BELLS) * GC.getXMLval(XML_REBEL_SENTIMENT_BELLS_FACTOR);
 	}
 
 	if (!isHuman())
@@ -10083,7 +10228,7 @@ int CvCity::getEducationThresholdMultiplier() const
 
 int CvCity::educationThreshold() const
 {
-	int iThreshold = ((GC.getCache_EDUCATION_THRESHOLD() * std::max(0, (getEducationThresholdMultiplier()))) / 100);
+	int iThreshold = ((GC.getXMLval(XML_EDUCATION_THRESHOLD) * std::max(0, (getEducationThresholdMultiplier()))) / 100);
 
 	iThreshold *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
 	iThreshold /= 100;
@@ -10146,6 +10291,7 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 						}
 						///Tks Med
 						YieldTypes eBonus = NO_YIELD;
+#ifdef USE_NOBLE_CLASS
 						if (kIdealProfession.getNumYieldsProduced() > 1)
 						{
                             if (eWantedYield == YIELD_CATTLE)
@@ -10159,6 +10305,7 @@ UnitClassTypes CvCity::bestTeachUnitClass()
                                 eBonus = YIELD_SHEEP;
                             }
 						}
+#endif
 						///TKe
 						// MultipleYieldsConsumed End
 						if (eWantedYield == NO_YIELD)
@@ -10435,7 +10582,7 @@ bool CvCity::educateStudent(int iUnitId, UnitTypes eUnit)
     ///TKs Med Update 1.1g
     if (!bEducationClass)
     {
-        setEducationThresholdMultiplier((getEducationThresholdMultiplier() * (100 + GC.getCache_EDUCATION_THRESHOLD_INCREASE())) / 100);
+        setEducationThresholdMultiplier((getEducationThresholdMultiplier() * (100 + GC.getXMLval(XML_EDUCATION_THRESHOLD_INCREASE))) / 100);
     }
     ///TKe Update
 	kPlayer.changeGold(-iPrice);
@@ -10453,6 +10600,14 @@ bool CvCity::educateStudent(int iUnitId, UnitTypes eUnit)
 		gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CULTUREEXPANDS", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(YIELD_EDUCATION).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
 	}
 
+	// Teacher List - start - Nightinggale
+	int OrderedStudents = getOrderedStudents(eUnit);
+	if (OrderedStudents > 0)
+	{
+		setOrderedStudents(eUnit, OrderedStudents - 1, getOrderedStudentsRepeat(eUnit));
+	}
+	// Teacher List - end - Nightinggale
+
 	return true;
 }
 
@@ -10462,7 +10617,8 @@ int CvCity::getSpecialistTuition(UnitTypes eUnit) const
 	{
 		return -1;
 	}
-
+// EDU remake - start - Nightinggale
+#if 0
 	int* pMaxElement = std::max_element(m_aiSpecialistWeights, m_aiSpecialistWeights + GC.getNumUnitInfos());
 	int iBestWeight = *pMaxElement;
 	if (iBestWeight <= 0)
@@ -10470,7 +10626,7 @@ int CvCity::getSpecialistTuition(UnitTypes eUnit) const
 		return -1;
 	}
 
-	int iPrice = GC.getCache_EDUCATION_BASE_TUITION();
+	int iPrice = GC.getXMLval(XML_EDUCATION_BASE_TUITION);
 	iPrice *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
 	iPrice /= 100;
 
@@ -10484,6 +10640,34 @@ int CvCity::getSpecialistTuition(UnitTypes eUnit) const
 	iPrice /= iBestWeight;
 
 	return iPrice;
+#endif
+	int iUnitTeachLevel = GC.getUnitInfo(eUnit).getTeachLevel();
+
+	FAssert(iUnitTeachLevel > 0);
+
+	if (iUnitTeachLevel < 1 || iUnitTeachLevel > NUM_TEACH_LEVELS || iUnitTeachLevel > this->getTeachLevel())
+	{
+		return -1;
+	}
+
+	// the rest of the function is a lightly modified version of the RaR function of the same name
+	double fPrice = double(GC.getXMLval(XML_EDUCATION_BASE_TUITION));
+	double fMulti = GC.getEducationCost(iUnitTeachLevel);
+
+	// Ausbildungskosten mit Ausbildungsstufen-Multiplikator anpassen
+	fPrice *= fMulti;
+
+	if (fPrice > 0.0)
+	{
+		// Ausbildungskosten an Geschwindigkeit anpassen
+		fPrice *= float(GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent());
+		fPrice /= 100;
+
+		// durch 10 Teilbar machen und korrekt runden
+		return int((fPrice / 10) + 0.5) * 10;
+	}
+	return 0;
+// EDU remake - end - Nightinggale
 }
 
 bool CvCity::isExport(YieldTypes eYield) const
@@ -10900,7 +11084,7 @@ bool CvCity::isEquipmentType(YieldTypes eEquipment, int iType) const
 {
     if (iType == 0)
     {
-        if (eEquipment == YIELD_LEATHER_ARMOR || eEquipment == YIELD_SCALE_ARMOR || eEquipment == YIELD_MAIL_ARMOR || eEquipment == YIELD_PLATE_ARMOR)
+        if (YieldGroup_Armor(eEquipment))
         {
             return true;
         }
@@ -10912,21 +11096,21 @@ bool CvCity::isEquipmentType(YieldTypes eEquipment, int iType) const
     }
     else if (iType == 1)
     {
-        if (eEquipment == YIELD_SCALE_ARMOR || eEquipment == YIELD_MAIL_ARMOR || eEquipment == YIELD_PLATE_ARMOR)
+        if (YieldGroup_Heavy_Armor(eEquipment))
         {
             return true;
         }
     }
     else if (iType == 2)
     {
-        if (eEquipment == YIELD_LEATHER_ARMOR || eEquipment == YIELD_SCALE_ARMOR || eEquipment == YIELD_MAIL_ARMOR || eEquipment == YIELD_PLATE_ARMOR)
+        if (YieldGroup_Armor(eEquipment))
         {
             return true;
         }
     }
     else if (iType == 3)
     {
-        if (eEquipment == YIELD_LEATHER_ARMOR || eEquipment == YIELD_SCALE_ARMOR || eEquipment == YIELD_MAIL_ARMOR || eEquipment == YIELD_PLATE_ARMOR)
+        if (YieldGroup_Armor(eEquipment))
         {
             return true;
         }
@@ -10943,7 +11127,7 @@ YieldTypes CvCity::getSelectedArmor() const
 {
     if (m_eSelectedArmor == NO_YIELD)
     {
-        return (YieldTypes)GC.getCache_DEFAULT_YIELD_ARMOR_TYPE();
+        return (YieldTypes)GC.getXMLval(XML_DEFAULT_YIELD_ARMOR_TYPE);
     }
     else
     {
@@ -11063,7 +11247,7 @@ BuildingTypes CvCity::getBestFreeBuilding()
             int iCityPlotValue = 0;
             YieldTypes eCityYield = NO_YIELD;
             YieldTypes eYield = (YieldTypes)iI;
-            if (GC.getYieldInfo(eYield).isCargo() && eYield != YIELD_ORE && eYield != YIELD_GRAIN && eYield != YIELD_LUMBER && eYield != YIELD_FOOD)
+            if (GC.getYieldInfo(eYield).isCargo() && eYield != YIELD_ORE && !YieldGroup_Luxury_Food(eYield) && eYield != YIELD_LUMBER && eYield != YIELD_FOOD)
             {
                 if (GET_PLAYER(getOwner()).getYieldBuyPrice(eYield) <= 0)
                 {
@@ -11207,16 +11391,16 @@ void CvCity::doPilgrams()
                     CvPlayer& otherPlayer = GET_PLAYER((PlayerTypes) iPlayer);
                     if ((iPlayer != pOwner.getID()) && otherPlayer.isAlive())
                     {
-                        if (otherPlayer.getID() == getMissionaryPlayer() && (otherPlayer.getBuildingClassCount((BuildingClassTypes)GC.getCache_DEFAULT_SHRINE_CLASS()) > 0))
+                        if (otherPlayer.getID() == getMissionaryPlayer() && (otherPlayer.getBuildingClassCount((BuildingClassTypes)GC.getXMLval(XML_DEFAULT_SHRINE_CLASS)) > 0))
                         {
                             int iRandomPilgramage = GC.getGameINLINE().getSorenRandNum(100, "Pilgramage City Random");
                             int iCityMod = (pOwner.getNumCities() > 0 ?  pOwner.getNumCities() : 1);
-                            int iRandomMod = GC.getCache_CITY_PILGRAM_RANDOM() / iCityMod;
+                            int iRandomMod = GC.getXMLval(XML_CITY_PILGRAM_RANDOM) / iCityMod;
                             //if (pOwner.getUnitClassCount((UnitClassTypes)GC.getDefineINT("DEFAULT_PILGRAM_CLASS")) == 0)
-                            iRandomMod = std::max(iRandomMod, GC.getCache_CITY_PILGRAM_RANDOM() / 4);
+                            iRandomMod = std::max(iRandomMod, GC.getXMLval(XML_CITY_PILGRAM_RANDOM) / 4);
                             if (iRandomPilgramage < iRandomMod)
                             {
-                                UnitTypes ePilgram = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits((UnitClassTypes)GC.getCache_DEFAULT_PILGRAM_CLASS());
+                                UnitTypes ePilgram = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits((UnitClassTypes)GC.getXMLval(XML_DEFAULT_PILGRAM_CLASS));
                                 FAssertMsg((ePilgram != NO_UNIT), "No Pilgram Unit");
                                 if (ePilgram != NO_UNIT)
                                 {
@@ -11224,7 +11408,7 @@ void CvCity::doPilgrams()
 								    if (pPilgramUnit != NULL)
 									{
 									    pPilgramUnit->setHomeCity(this);
-									    changeEventTimer(0, GC.getCache_CITY_PILGRAM_RANDOM() / 2);
+									    changeEventTimer(0, GC.getXMLval(XML_CITY_PILGRAM_RANDOM) / 2);
 										CvWString szBuffer = gDLL->getText("TXT_KEY_PILGRAMS", getNameKey());
 										gDLL->getInterfaceIFace()->addMessage(otherPlayer.getID(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_UNIT_GREATPEOPLE", MESSAGE_TYPE_INFO, GC.getUnitInfo(ePilgram).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_UNIT_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
 									}
@@ -11246,8 +11430,8 @@ void CvCity::doPilgrams()
         int eValue = GC.getGameINLINE().getElapsedGameTurns();
         ///TKs Med Update 1.1c
         //int iRevolutionTurns = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getRevolutionTurns();
-        int iMarauderSpawnTime = GC.getCache_MARAUDER_EVENT_DEFAULT_TURNS();
-        int iCrumbsEvent = GC.getCache_MARAUDER_CRUMBS_EVENT();
+        int iMarauderSpawnTime = GC.getXMLval(XML_MARAUDER_EVENT_DEFAULT_TURNS);
+        int iCrumbsEvent = GC.getXMLval(XML_MARAUDER_CRUMBS_EVENT);
         for (int iHandicapLevel=0; iHandicapLevel < GC.getNumHandicapInfos(); iHandicapLevel++)
         {
             if (getHandicapType() == (HandicapTypes)iHandicapLevel)
@@ -11269,7 +11453,7 @@ void CvCity::doPilgrams()
         if (eValue >= iMarauderSpawnTime && iMarauderEvent == 0 && plot()->getCrumbs() >= iCrumbsEvent)
         {
             ///TKe Update
-            int iMaxMarauders = GC.getCache_MAX_MARAUDERS();
+            int iMaxMarauders = GC.getXMLval(XML_MAX_MARAUDERS);
             for (int iWorld=0; iWorld<NUM_WORLDSIZE_TYPES; iWorld++)
             {
                 if (GC.getMapINLINE().getWorldSize() == (WorldSizeTypes)iWorld)
@@ -11301,7 +11485,7 @@ void CvCity::doPilgrams()
                     CvPlayer& ePlayer = GET_PLAYER((PlayerTypes)iPlayer);
                     if (ePlayer.isAlive())
                     {
-                        if (ePlayer.isNative() && ePlayer.getUnitClassCount((UnitClassTypes)GC.getCache_DEFAULT_MARAUDER_CLASS()) < iMaxMarauders)
+                        if (ePlayer.isNative() && ePlayer.getUnitClassCount((UnitClassTypes)GC.getXMLval(XML_DEFAULT_MARAUDER_CLASS)) < iMaxMarauders)
                         {
                             CvCity* pMissionCity;
                             pMissionCity = GC.getMapINLINE().findCity(getX_INLINE(), getY_INLINE(), ePlayer.getID(), NO_TEAM, true, false, NO_TEAM, NO_DIRECTION, NULL, true);
@@ -11331,13 +11515,13 @@ void CvCity::doPilgrams()
                 {
 
                         CvPlayer& pTargetPlayer = GET_PLAYER((PlayerTypes)iPlayerID);
-                        UnitTypes eMarauder = (UnitTypes)GC.getCivilizationInfo(pTargetPlayer.getCivilizationType()).getCivilizationUnits((UnitClassTypes)GC.getCache_DEFAULT_MARAUDER_CLASS());
+                        UnitTypes eMarauder = (UnitTypes)GC.getCivilizationInfo(pTargetPlayer.getCivilizationType()).getCivilizationUnits((UnitClassTypes)GC.getXMLval(XML_DEFAULT_MARAUDER_CLASS));
                         FAssertMsg((eMarauder != NO_UNIT), "No Marauder Unit");
                         if (eMarauder != NO_UNIT)
                         {
                             CvUnit* pMarauderUnit = pTargetPlayer.initUnit(eMarauder, (ProfessionTypes) GC.getUnitInfo(eMarauder).getDefaultProfession(), INVALID_PLOT_COORD, INVALID_PLOT_COORD);
                             pMarauderUnit->setUnitTravelState(UNIT_TRAVEL_STATE_HIDE_UNIT, false);
-                            int iDaysout = GC.getGameINLINE().getSorenRandNum(GC.getCache_MARAUDERS_DAYSOUT_RANDOM(), "Days Out") + 1;
+                            int iDaysout = GC.getGameINLINE().getSorenRandNum(GC.getXMLval(XML_MARAUDERS_DAYSOUT_RANDOM), "Days Out") + 1;
                             pMarauderUnit->setUnitTravelTimer(iDaysout);
                             eMissionPlot = pMarauderUnit->findNearestValidMarauderPlot(eTargetCity, this, true, true);
                             if (eMissionPlot == NULL)
@@ -11346,12 +11530,12 @@ void CvCity::doPilgrams()
                                 return;
                             }
                             pMarauderUnit->addToMap(eMissionPlot->getX_INLINE(), eMissionPlot->getY_INLINE());
-                            changeEventTimer(1, GC.getCache_CITY_PILGRAM_RANDOM() / 2);
+                            changeEventTimer(1, GC.getXMLval(XML_CITY_PILGRAM_RANDOM) / 2);
                             FAssertMsg((!eMissionPlot->isCity()), "Marauder started on city");
                             bool bDefaultMessage = true;
                             if (pMarauderUnit != NULL)
                             {
-                                int iSearchRange = GC.getCache_MARAUDERS_TOWER_RANGE();
+                                int iSearchRange = GC.getXMLval(XML_MARAUDERS_TOWER_RANGE);
                                 bool bOutpost = false;
                                 if (getMarauderDetection() > 0)
                                 {
@@ -11467,5 +11651,219 @@ void CvCity::UpdateBuildingAffectedCache()
 	}
 	m_cache_MaxYieldCapacity[NUM_YIELD_TYPES] = getMaxYieldCapacityUncached(NO_YIELD);
 	// cache getMaxYieldCapacity - end - Nightinggale
+
+	this->m_aiBuildingYieldDemands.reset(); // domestic yield demand - Nightinggale
+
+	this->m_iMarketCap = GC.getXMLval(XML_NO_MARKED_SALES_CAP);
+
+	{
+		int iMaxTeachLevel = 0; // EDU remake - Nightinggale
+
+		for (int iI = 0; iI < GC.getNumBuildingInfos(); iI++)
+		{
+			if (isHasBuilding((BuildingTypes)iI))
+			{
+				CvBuildingInfo& kBuilding = GC.getBuildingInfo((BuildingTypes)iI);
+
+				// EDU remake - start - Nightinggale
+				// majorly influenced by CvCity::NBMOD_SetCityTeachLevelCache from RaR
+				if (kBuilding.getTeachLevel() > iMaxTeachLevel)
+				{
+					iMaxTeachLevel = kBuilding.getTeachLevel();
+				}
+				// EDU remake - end - Nightinggale
+
+				// domestic yield demand - start - Nightinggale
+				for (int iYield = 0; iYield < NUM_YIELD_TYPES; iYield++)
+				{
+					YieldTypes eYield = (YieldTypes) iYield;
+					m_aiBuildingYieldDemands.set(m_aiBuildingYieldDemands.get(eYield) + kBuilding.getYieldDemand(eYield), iYield);
+				}
+				this->m_iMarketCap += kBuilding.getMarketCap();
+				// domestic yield demand - end - Nightinggale
+			}
+		}
+		this->m_iTeachLevel = iMaxTeachLevel; // EDU remake - Nightinggale
+	}
 }
 // building affected cache - end - Nightinggale
+
+// Teacher List - start - Nightinggale
+void CvCity::setOrderedStudents(UnitTypes eUnit, int iCount, bool bRepeat, bool bUpdateRepeat, bool bClearAll)
+{
+	if (bClearAll)
+	{
+		ma_OrderedStudents.reset();
+		ma_OrderedStudentsRepeat.reset();
+	} else {
+		if (!(eUnit >= 0 && eUnit < GC.getNumUnitInfos() && iCount >= 0))
+		{
+			FAssert(eUnit >= 0);
+			FAssert(eUnit < GC.getNumUnitInfos());
+			FAssert(iCount < 0);
+			return;
+		}
+	
+		ma_OrderedStudents.set(iCount, eUnit);
+		ma_OrderedStudentsRepeat.set(bRepeat, eUnit);
+		if (bUpdateRepeat && iCount == 0)
+		{
+			checkOrderedStudentsForRepeats(eUnit);
+		}
+	}
+	if (getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
+	{
+		gDLL->getInterfaceIFace()->setDirty(SelectionButtons_DIRTY_BIT, true);
+	}
+}
+
+void CvCity::checkOrderedStudentsForRepeats(UnitTypes eUnit)
+{
+	FAssert(eUnit >= 0);
+	FAssert(eUnit < GC.getNumUnitInfos());
+
+	if (ma_OrderedStudentsRepeat.isAllocated() && ma_OrderedStudents.isEmpty(false))
+	{
+		for (int iUnit = 0; iUnit < ma_OrderedStudentsRepeat.length(); iUnit++)
+		{
+			if (ma_OrderedStudentsRepeat.get(iUnit))
+			{
+				ma_OrderedStudents.set(1, iUnit);
+			}
+		}
+		if (getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
+		{
+			gDLL->getInterfaceIFace()->setDirty(SelectionButtons_DIRTY_BIT, true);
+		}
+	}
+}
+
+int CvCity::getOrderedStudents(UnitTypes eUnit)
+{
+	FAssert(eUnit >= 0);
+	FAssert(eUnit < GC.getNumUnitInfos());
+	return ma_OrderedStudents.get(eUnit);
+}
+
+bool CvCity::getOrderedStudentsRepeat(UnitTypes eUnit)
+{
+	FAssert(eUnit >= 0);
+	FAssert(eUnit < GC.getNumUnitInfos());
+	return ma_OrderedStudentsRepeat.get(eUnit);
+}
+// Teacher List - end - Nightinggale
+
+// R&R, ray, finishing Custom House Screen
+void CvCity::setCustomHouseSellThreshold(YieldTypes eYield, int iCustomHouseSellThreshold)
+{
+	FAssert(eYield >= 0);
+	FAssert(eYield < NUM_YIELD_TYPES);
+
+	if (iCustomHouseSellThreshold != getCustomHouseSellThreshold(eYield))
+	{
+		ma_aiCustomHouseSellThreshold.set(iCustomHouseSellThreshold, eYield);
+		if (getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
+		{
+			gDLL->getInterfaceIFace()->setDirty(SelectionButtons_DIRTY_BIT, true);
+		}
+	}
+}
+
+int CvCity::getCustomHouseSellThreshold(YieldTypes eYield) const
+{
+	return ma_aiCustomHouseSellThreshold.get(eYield);
+}
+
+void CvCity::setCustomHouseNeverSell(YieldTypes eYield, bool bNeverSell)
+{
+	if (isCustomHouseNeverSell(eYield) != bNeverSell)
+	{
+		ma_aiCustomHouseNeverSell.set(bNeverSell, eYield);
+
+		if (getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
+		{
+			gDLL->getInterfaceIFace()->setDirty(SelectionButtons_DIRTY_BIT, true);
+		}
+	}
+}
+
+bool CvCity::isCustomHouseNeverSell(YieldTypes eYield) const
+{
+	return ma_aiCustomHouseNeverSell.get(eYield);
+}
+// R&R, ray, finishing Custom House Screen END
+
+// domestic yield demand - start - Nightinggale
+void CvCity::setUnitYieldDemand()
+{
+	m_aiUnitYieldDemands.reset();
+	
+	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
+	{
+		CvUnit* pLoopUnit = m_aPopulationUnits[i];
+		setUnitYieldDemand(pLoopUnit->getUnitType());
+	}
+}
+
+void CvCity::setUnitYieldDemand(UnitTypes eUnit, const bool bRemove)
+{
+	CvUnitInfo& kUnitInfo = GC.getUnitInfo(eUnit);
+
+	if (kUnitInfo.demandsYields())
+	{
+		for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+		{
+			YieldTypes eYield = (YieldTypes) iYield;
+			int iDemand = kUnitInfo.getYieldDemand(eYield);
+		
+			if (iDemand != 0)
+			{
+				if (bRemove)
+				{
+					iDemand = -iDemand;
+				}
+				m_aiUnitYieldDemands.set(m_aiUnitYieldDemands.get(eYield) + iDemand, eYield);
+			}
+		}
+	}
+}
+// domestic yield demand - end - Nightinggale
+
+// R&R, ray, adjustment Domestic Markets
+// modified by Nightinggale
+void CvCity::doPrices()
+{
+	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	{
+		YieldTypes eYield = (YieldTypes) iYield;
+
+		if (YieldGroup_Cargo(eYield))
+		{
+			CvYieldInfo& kYield = GC.getYieldInfo(eYield);
+
+			int iBaseThreshold = kYield.getPriceChangeThreshold() * GC.getHandicapInfo(getHandicapType()).getEuropePriceThresholdMultiplier() * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent() / 10000;
+			int iNewPrice = kYield.getBuyPriceLow() + GC.getGameINLINE().getSorenRandNum(kYield.getBuyPriceHigh() - kYield.getBuyPriceLow() + 1, "Price selection");
+			iNewPrice += getYieldStored(eYield) / std::max(1, iBaseThreshold);
+
+			if (GC.getGameINLINE().getSorenRandNum(100, "Price correction") < kYield.getPriceCorrectionPercent() * std::abs(iNewPrice - getYieldBuyPrice(eYield)))
+			{
+				iNewPrice = std::min(iNewPrice, getYieldBuyPrice(eYield) + 1);
+				iNewPrice = std::max(iNewPrice, getYieldBuyPrice(eYield) - 1);
+				setYieldBuyPrice(eYield, iNewPrice);
+			}
+		}
+	}
+}
+
+void CvCity::initPrices()
+{
+	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	{
+		YieldTypes eYield = (YieldTypes) iYield;
+		CvYieldInfo& kYield = GC.getYieldInfo(eYield);
+		FAssert(kYield.getBuyPriceHigh() >= kYield.getBuyPriceLow());
+		int iBuyPrice = kYield.getBuyPriceLow() + GC.getGameINLINE().getSorenRandNum(kYield.getBuyPriceHigh() - kYield.getBuyPriceLow() + 1, "Yield Price");
+		setYieldBuyPrice(eYield, iBuyPrice);
+	}
+}
+//Androrc End

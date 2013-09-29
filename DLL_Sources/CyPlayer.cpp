@@ -366,6 +366,13 @@ bool CyPlayer::canUnitBeTraded(int /*YieldTypes*/ eYield, int /*UnitTravelStates
 {
 	return m_pPlayer ? m_pPlayer->canUnitBeTraded((YieldTypes)eYield, (UnitTravelStates) eTravelState, (UnitTypes) eUnit) : false;
 }
+// invention effect cache - start - Nightinggale
+bool CyPlayer::canUseYield(int /*YieldTypes*/ eYield)
+{
+	FAssertMsg(eYield < NUM_YIELD_TYPES, "Python called CyPlayer::canUseYield with a too high eYield");
+	return m_pPlayer ? m_pPlayer->canUseYield((YieldTypes)eYield) : false;
+}
+// invention effect cache - end - Nightinggale
 ///Tks Med
 std::wstring CyPlayer::getAttackForceKey( )
 {

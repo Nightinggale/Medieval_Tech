@@ -18,7 +18,7 @@
 		</YieldIntegerPair>
 		<YieldIntegerPair>
 			<YieldType>YIELD_NUCLEIC_ACIDS</YieldType>
-			<iValue>1</iValue>
+			<iValue>2</iValue>
 		</YieldIntegerPair>
 	</Yields>
 	<RiverYieldIncreases>
@@ -238,10 +238,10 @@
 	<Yields>
 		<YieldIntegerPair>
 			<YieldType>YIELD_SILICATES</YieldType>
-			<iValue>2</iValue>
+			<iValue>3</iValue>
 		</YieldIntegerPair>
 		<YieldIntegerPair>
-			<YieldType>YIELD_BASE_METALS</YieldType>
+			<YieldType>YIELD_ACTINIDES</YieldType>
 			<iValue>2</iValue>
 		</YieldIntegerPair>
 	</Yields>
@@ -348,10 +348,6 @@
 	<Civilopedia>TXT_KEY_TERRAIN_</Civilopedia>
 	<ArtDefineTag>ART_DEF_TERRAIN_MARSH</ArtDefineTag>
 	<Yields>
-		<YieldIntegerPair>
-			<YieldType>YIELD_TISSUE_SAMPLES</YieldType>
-			<iValue>1</iValue>
-		</YieldIntegerPair>
 		<YieldIntegerPair>
 			<YieldType>YIELD_OPIATES</YieldType>
 			<iValue>2</iValue>
@@ -466,7 +462,7 @@
 	<Yields>
 		<YieldIntegerPair>
 			<YieldType>YIELD_DATACORES</YieldType>
-			<iValue>3</iValue>
+			<iValue>2</iValue>
 		</YieldIntegerPair>
 		<YieldIntegerPair>
 			<YieldType>YIELD_NUTRIENTS</YieldType>
@@ -582,7 +578,7 @@
 		</YieldIntegerPair>
 		<YieldIntegerPair>
 			<YieldType>YIELD_PROGENITOR_ARTIFACTS</YieldType>
-			<iValue>3</iValue>
+			<iValue>2</iValue>
 		</YieldIntegerPair>
 	</Yields>
 	<RiverYieldIncreases>
@@ -913,7 +909,11 @@
 	<ArtDefineTag>ART_DEF_TERRAIN_PEAK</ArtDefineTag>
 	<Yields>
 		<YieldIntegerPair>
-			<YieldType>YIELD_NUTRIENTS</YieldType>
+			<YieldType>YIELD_SILICATES</YieldType>
+			<iValue>3</iValue>
+		</YieldIntegerPair>
+		<YieldIntegerPair>
+			<YieldType>YIELD_CORE_SAMPLES</YieldType>
 			<iValue>1</iValue>
 		</YieldIntegerPair>
 		<YieldIntegerPair>
@@ -1025,12 +1025,12 @@
 	<ArtDefineTag>ART_DEF_TERRAIN_HILL</ArtDefineTag>
 	<Yields>
 		<YieldIntegerPair>
-			<YieldType>YIELD_HYDROCARBONS</YieldType>
-			<iValue>1</iValue>
+			<YieldType>YIELD_SILICATES</YieldType>
+			<iValue>2</iValue>
 		</YieldIntegerPair>
 		<YieldIntegerPair>
-			<YieldType>YIELD_NUTRIENTS</YieldType>
-			<iValue>1</iValue>
+			<YieldType>YIELD_BASE_METALS</YieldType>
+			<iValue>2</iValue>
 		</YieldIntegerPair>
 	</Yields>
 	<RiverYieldIncreases>

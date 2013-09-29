@@ -240,7 +240,7 @@ void CvMapGenerator::addLakes()
 			{
 				if (!(pLoopPlot->isRiver()))
 				{
-					if (GC.getGameINLINE().getMapRandNum(GC.getCache_LAKE_PLOT_RAND(), "addLakes") == 0)
+					if (GC.getGameINLINE().getMapRandNum(GC.getXMLval(XML_LAKE_PLOT_RAND), "addLakes") == 0)
 					{
 						pLoopPlot->setPlotType(PLOT_OCEAN);
 					}
@@ -271,20 +271,20 @@ void CvMapGenerator::addRivers()
 	{
 		if (iPass <= 1)
 		{
-			iRiverSourceRange = GC.getCache_RIVER_SOURCE_MIN_RIVER_RANGE();
+			iRiverSourceRange = GC.getXMLval(XML_RIVER_SOURCE_MIN_RIVER_RANGE);
 		}
 		else
 		{
-			iRiverSourceRange = (GC.getCache_RIVER_SOURCE_MIN_RIVER_RANGE() / 2);
+			iRiverSourceRange = (GC.getXMLval(XML_RIVER_SOURCE_MIN_RIVER_RANGE) / 2);
 		}
 
 		if (iPass <= 1)
 		{
-			iSeaWaterRange = GC.getCache_RIVER_SOURCE_MIN_SEAWATER_RANGE();
+			iSeaWaterRange = GC.getXMLval(XML_RIVER_SOURCE_MIN_SEAWATER_RANGE);
 		}
 		else
 		{
-			iSeaWaterRange = (GC.getCache_RIVER_SOURCE_MIN_SEAWATER_RANGE() / 2);
+			iSeaWaterRange = (GC.getXMLval(XML_RIVER_SOURCE_MIN_SEAWATER_RANGE) / 2);
 		}
 
 		for (iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
@@ -297,8 +297,8 @@ void CvMapGenerator::addRivers()
 			{
 				if (((iPass == 0) && (pLoopPlot->isHills() || pLoopPlot->isPeak())) ||
 					  ((iPass == 1) && !(pLoopPlot->isCoastalLand()) && (GC.getGameINLINE().getMapRandNum(8, "addRivers") == 0)) ||
-					  ((iPass == 2) && (pLoopPlot->isHills() || pLoopPlot->isPeak()) && (pLoopPlot->area()->getNumRiverEdges() < ((pLoopPlot->area()->getNumTiles() / GC.getCache_PLOTS_PER_RIVER_EDGE()) + 1))) ||
-					  ((iPass == 3) && (pLoopPlot->area()->getNumRiverEdges() < ((pLoopPlot->area()->getNumTiles() / GC.getCache_PLOTS_PER_RIVER_EDGE()) + 1))))
+					  ((iPass == 2) && (pLoopPlot->isHills() || pLoopPlot->isPeak()) && (pLoopPlot->area()->getNumRiverEdges() < ((pLoopPlot->area()->getNumTiles() / GC.getXMLval(XML_PLOTS_PER_RIVER_EDGE)) + 1))) ||
+					  ((iPass == 3) && (pLoopPlot->area()->getNumRiverEdges() < ((pLoopPlot->area()->getNumTiles() / GC.getXMLval(XML_PLOTS_PER_RIVER_EDGE)) + 1))))
 				{
 					if (!(GC.getMapINLINE().findWater(pLoopPlot, iRiverSourceRange, true)))
 					{
@@ -1156,11 +1156,11 @@ void CvMapGenerator::setPlotTypes(const int* paiPlotTypes)
 		{
 			if (pLoopPlot->isAdjacentToLand())
 			{
-				pLoopPlot->setTerrainType(((TerrainTypes)(GC.getCache_SHALLOW_WATER_TERRAIN())), false, false);
+				pLoopPlot->setTerrainType(((TerrainTypes)(GC.getXMLval(XML_SHALLOW_WATER_TERRAIN))), false, false);
 			}
 			else
 			{
-				pLoopPlot->setTerrainType(((TerrainTypes)(GC.getCache_DEEP_WATER_TERRAIN())), false, false);
+				pLoopPlot->setTerrainType(((TerrainTypes)(GC.getXMLval(XML_DEEP_WATER_TERRAIN))), false, false);
 			}
 		}
 	}

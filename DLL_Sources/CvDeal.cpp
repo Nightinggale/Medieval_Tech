@@ -299,7 +299,7 @@ void CvDeal::doTurn()
 	{
 		if (getLengthSecondTrades() > 0)
 		{
-			iValue = (GET_PLAYER(getFirstPlayer()).AI_dealVal(getSecondPlayer(), getSecondTrades()) / GC.getCache_PEACE_TREATY_LENGTH());
+			iValue = (GET_PLAYER(getFirstPlayer()).AI_dealVal(getSecondPlayer(), getSecondTrades()) / GC.getXMLval(XML_PEACE_TREATY_LENGTH));
 
 			if (getLengthFirstTrades() > 0)
 			{
@@ -313,7 +313,7 @@ void CvDeal::doTurn()
 
 		if (getLengthFirstTrades() > 0)
 		{
-			iValue = (GET_PLAYER(getSecondPlayer()).AI_dealVal(getFirstPlayer(), getFirstTrades()) / GC.getCache_PEACE_TREATY_LENGTH());
+			iValue = (GET_PLAYER(getSecondPlayer()).AI_dealVal(getFirstPlayer(), getFirstTrades()) / GC.getXMLval(XML_PEACE_TREATY_LENGTH));
 
 			if (getLengthSecondTrades() > 0)
 			{
@@ -653,11 +653,11 @@ bool CvDeal::startTrade(TradeData trade, PlayerTypes eFromPlayer, PlayerTypes eT
 				///TKe
 			}
             ///Tks Med
-            if (iGold >= GC.getCache_TRADE_STIMULATES_RESEARCH_MIN_VALUE())
+            if (iGold >= GC.getXMLval(XML_TRADE_STIMULATES_RESEARCH_MIN_VALUE))
             {
                 //CivicTypes eFromPlayerResearch = GET_PLAYER(eFromPlayer).getCurrentResearch();
                 CivicTypes eToPlayerResearch = GET_PLAYER(eToPlayer).getCurrentResearch();
-                int iExtraResearch = iGold * GC.getCache_TRADE_STIMULATES_RESEARCH_PERCENT() / 100;
+                int iExtraResearch = iGold * GC.getXMLval(XML_TRADE_STIMULATES_RESEARCH_PERCENT) / 100;
 //                if (eFromPlayerResearch != NO_CIVIC)
 //                {
 //                    GET_PLAYER(eFromPlayer).changeIdeasStored(iExtraResearch);
@@ -829,8 +829,8 @@ bool CvDeal::startTrade(TradeData trade, PlayerTypes eFromPlayer, PlayerTypes eT
                 FatherPointTypes ePointType = (FatherPointTypes) i;
                 if (GC.getFatherPointInfo(ePointType).getEuropeTradeGoldPointPercent() > 0)
                 {
-                    GET_TEAM(GET_PLAYER(eFromPlayer).getTeam()).changeFatherPoints(ePointType, GC.getCache_DEAL_TRADE_RELATIONS_POINTS());
-                    GET_TEAM(GET_PLAYER(eToPlayer).getTeam()).changeFatherPoints(ePointType, GC.getCache_DEAL_TRADE_RELATIONS_POINTS());
+                    GET_TEAM(GET_PLAYER(eFromPlayer).getTeam()).changeFatherPoints(ePointType, GC.getXMLval(XML_DEAL_TRADE_RELATIONS_POINTS));
+                    GET_TEAM(GET_PLAYER(eToPlayer).getTeam()).changeFatherPoints(ePointType, GC.getXMLval(XML_DEAL_TRADE_RELATIONS_POINTS));
                 }
             }
 			///TKe
@@ -1044,7 +1044,7 @@ bool CvDeal::isCancelable(PlayerTypes eByPlayer, CvWString* pszReason)
 
 int CvDeal::turnsToCancel(PlayerTypes eByPlayer)
 {
-	return (getInitialGameTurn() + GC.getCache_PEACE_TREATY_LENGTH() - GC.getGameINLINE().getGameTurn());
+	return (getInitialGameTurn() + GC.getXMLval(XML_PEACE_TREATY_LENGTH) - GC.getGameINLINE().getGameTurn());
 }
 
 

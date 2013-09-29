@@ -930,11 +930,11 @@ int CvTeamAI::AI_endWarVal(TeamTypes eTeam) const
 		iValue /= 2;
 	}*/
 
-	iValue -= (iValue % GC.getCache_DIPLOMACY_VALUE_REMAINDER());
+	iValue -= (iValue % GC.getXMLval(XML_DIPLOMACY_VALUE_REMAINDER));
 
 	if (isHuman())
 	{
-		return std::max(iValue, GC.getCache_DIPLOMACY_VALUE_REMAINDER());
+		return std::max(iValue, GC.getXMLval(XML_DIPLOMACY_VALUE_REMAINDER));
 	}
 	else
 	{
@@ -971,11 +971,11 @@ int CvTeamAI::AI_mapTradeVal(TeamTypes eTeam) const
 
 	iValue /= 10;
 
-	iValue -= (iValue % GC.getCache_DIPLOMACY_VALUE_REMAINDER());
+	iValue -= (iValue % GC.getXMLval(XML_DIPLOMACY_VALUE_REMAINDER));
 
 	if (isHuman())
 	{
-		return std::max(iValue, GC.getCache_DIPLOMACY_VALUE_REMAINDER());
+		return std::max(iValue, GC.getXMLval(XML_DIPLOMACY_VALUE_REMAINDER));
 	}
 	else
 	{
@@ -1072,11 +1072,11 @@ int CvTeamAI::AI_makePeaceTradeVal(TeamTypes ePeaceTeam, TeamTypes eTeam) const
 	iValue *= 40;
 	iValue /= (GET_TEAM(eTeam).AI_getAtWarCounter(ePeaceTeam) + 10);
 
-	iValue -= (iValue % GC.getCache_DIPLOMACY_VALUE_REMAINDER());
+	iValue -= (iValue % GC.getXMLval(XML_DIPLOMACY_VALUE_REMAINDER));
 
 	if (isHuman())
 	{
-		return std::max(iValue, GC.getCache_DIPLOMACY_VALUE_REMAINDER());
+		return std::max(iValue, GC.getXMLval(XML_DIPLOMACY_VALUE_REMAINDER));
 	}
 	else
 	{
@@ -1246,11 +1246,11 @@ int CvTeamAI::AI_declareWarTradeVal(TeamTypes eWarTeam, TeamTypes eTeam) const
 	iValue *= 60 + (140 * GC.getGameINLINE().getGameTurn()) / std::max(1, GC.getGameINLINE().getEstimateEndTurn());
 	iValue /= 100;
 
-	iValue -= (iValue % GC.getCache_DIPLOMACY_VALUE_REMAINDER());
+	iValue -= (iValue % GC.getXMLval(XML_DIPLOMACY_VALUE_REMAINDER));
 
 	if (isHuman())
 	{
-		return std::max(iValue, GC.getCache_DIPLOMACY_VALUE_REMAINDER());
+		return std::max(iValue, GC.getXMLval(XML_DIPLOMACY_VALUE_REMAINDER));
 	}
 	else
 	{
@@ -1491,7 +1491,7 @@ DenialTypes CvTeamAI::AI_defensivePactTrade(TeamTypes eTeam) const
 		}
 	}
 
-	if (AI_getAtPeaceCounter(eTeam) < GC.getCache_ALLIANCE_PACT_PEACE_DENIAL())
+	if (AI_getAtPeaceCounter(eTeam) < GC.getXMLval(XML_ALLIANCE_PACT_PEACE_DENIAL))
 	{
 		return DENIAL_ATTITUDE;
 	}
@@ -1532,7 +1532,7 @@ DenialTypes CvTeamAI::AI_permanentAllianceTrade(TeamTypes eTeam) const
 	}
 
 	//if ((AI_getDefensivePactCounter(eTeam) + AI_getShareWarCounter(eTeam)) < 40)
-	if (AI_getDefensivePactCounter(eTeam) + AI_getAtPeaceCounter(eTeam) < GC.getCache_ALLIANCE_PACT_PEACE_DENIAL())
+	if (AI_getDefensivePactCounter(eTeam) + AI_getAtPeaceCounter(eTeam) < GC.getXMLval(XML_ALLIANCE_PACT_PEACE_DENIAL))
 	{
 		return DENIAL_NOT_ALLIED;
 	}
@@ -1555,7 +1555,7 @@ DenialTypes CvTeamAI::AI_permanentAllianceTrade(TeamTypes eTeam) const
 			}
 		}
 	}
-    iTheirCulture = iTheirCulture * GC.getCache_ALLIANCE_CULTURE_PERCENT_DENIAL() / 100;
+    iTheirCulture = iTheirCulture * GC.getXMLval(XML_ALLIANCE_CULTURE_PERCENT_DENIAL) / 100;
 	if (iTheirCulture <= iOurCulture)
 	{
 		return DENIAL_CULTURE_YOU;
@@ -3366,7 +3366,7 @@ DenialTypes CvTeamAI::AI_collaborateResearchTrade(TeamTypes eTeam) const
     {
 
         int iMyTurns = GET_PLAYER(getLeaderID()).getTurnstoCompleteResearch(false);
-        if (iMyTurns > 0 && iMyTurns <= GC.getCache_TK_RESEARCH_PACT_IDEAS_THRESHOLD() / 3)
+        if (iMyTurns > 0 && iMyTurns <= GC.getXMLval(XML_TK_RESEARCH_PACT_IDEAS_THRESHOLD) / 3)
         {
             return DENIAL_NO_GAIN;
         }
@@ -3376,7 +3376,7 @@ DenialTypes CvTeamAI::AI_collaborateResearchTrade(TeamTypes eTeam) const
         {
             return DENIAL_NO_GAIN;
         }
-        if ((100 * iResearch) / iCost < GC.getCache_TK_RESEARCH_PACT_IDEAS_THRESHOLD())
+        if ((100 * iResearch) / iCost < GC.getXMLval(XML_TK_RESEARCH_PACT_IDEAS_THRESHOLD))
         {
             return DENIAL_NO_GAIN;
         }

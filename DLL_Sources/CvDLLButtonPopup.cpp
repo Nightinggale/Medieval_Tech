@@ -752,11 +752,11 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 //            char szTKdebug[1024];
 //            sprintf( szTKdebug, "Civics selected = %d\n", iCivicSelected);
 //            gDLL->messageControlLog(szTKdebug);
-            FatherPointTypes eFatherPoint = (FatherPointTypes)GC.getCache_FATHER_POINT_REAL_TRADE();
+            FatherPointTypes eFatherPoint = (FatherPointTypes)GC.getXMLval(XML_FATHER_POINT_REAL_TRADE);
             for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
             {
                 CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes) iCivic);
-                if (((kPlayer.canDoCivics((CivicTypes) iCivic) && eCurrentResearch != (CivicTypes)iCivic) && (GC.getCivicInfo((CivicTypes)iCivic).getRequiredFatherPoints(eFatherPoint) <= 0) && kCivicInfo.getInventionCategory() != GC.getCache_MEDIEVAL_CENSURE()) || info.getData3() == 1)
+                if (((kPlayer.canDoCivics((CivicTypes) iCivic) && eCurrentResearch != (CivicTypes)iCivic) && (GC.getCivicInfo((CivicTypes)iCivic).getRequiredFatherPoints(eFatherPoint) <= 0) && kCivicInfo.getInventionCategory() != GC.getXMLval(XML_MEDIEVAL_CENSURE)) || info.getData3() == 1)
                 {
                     //if (GET_PLAYER(GC.getGameINLINE().getActivePlayer()).canDoCivics((CivicTypes) iCivic) && eCurrentResearch != (CivicTypes)iCivic)
                     //{
@@ -814,7 +814,7 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
                                     CivicTypes eNewTech = NO_CIVIC;
                                     for (int iLoopCivic = 0; iLoopCivic < GC.getNumCivicInfos(); ++iLoopCivic)
                                     {
-                                        if (GC.getCivicInfo((CivicTypes) iLoopCivic).getCivicOptionType() == (CivicOptionTypes)GC.getCache_CIVICOPTION_INVENTIONS())
+                                        if (GC.getCivicInfo((CivicTypes) iLoopCivic).getCivicOptionType() == (CivicOptionTypes)GC.getXMLval(XML_CIVICOPTION_INVENTIONS))
                                         {
                                             if (GC.getCivicInfo((CivicTypes)iLoopCivic).getRequiredFatherPoints(eFatherPoint) > 0)
                                             {
@@ -996,7 +996,7 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
             }
             else if (pPopupReturn->getButtonClicked() == 1)
             {
-                int iRansomPrice = GC.getCache_KNIGHT_RANSOM_MOD() * pRansomeUnit->getLevel();
+                int iRansomPrice = GC.getXMLval(XML_KNIGHT_RANSOM_MOD) * pRansomeUnit->getLevel();
 
                 kPlayer.changeGold(-iRansomPrice);
                 kKillerPlayer.changeGold(iRansomPrice);
@@ -1194,11 +1194,11 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 							///Tks Med
 							PromotionTypes ePromotion = (PromotionTypes)iPromotion;
 							bool bConverted = false;
-                            if (ePromotion == (PromotionTypes)GC.getCache_DEFAULT_KNIGHT_PROMOTION())
+                            if (ePromotion == (PromotionTypes)GC.getXMLval(XML_DEFAULT_KNIGHT_PROMOTION))
                             {
                                 if (GC.getUnitInfo(ploopUnit->getUnitType()).getCasteAttribute() == 3)
                                 {
-                                    UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(ploopUnit->getCivilizationType()).getCivilizationUnits((UnitClassTypes)GC.getCache_DEFAULT_NOBLEMAN_CLASS());
+                                    UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(ploopUnit->getCivilizationType()).getCivilizationUnits((UnitClassTypes)GC.getXMLval(XML_DEFAULT_NOBLEMAN_CLASS));
                                     if (eUnit != NO_UNIT)
                                     {
                                         CvUnit* pLearnUnit = GET_PLAYER(ploopUnit->getOwnerINLINE()).initUnit(eUnit, NO_PROFESSION, ploopUnit->getX_INLINE(), ploopUnit->getY_INLINE(),ploopUnit-> AI_getUnitAIType());
@@ -1271,7 +1271,7 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
                 bool bTreasureOnlyCoastal = false;
                 if (GC.getUnitInfo(pUnit->getUnitType()).isTreasure())
                 {
-                    if (GC.getCache_TREASURE_UNITS_ONLY_SELECT_COASTAL())
+                    if (GC.getXMLval(XML_TREASURE_UNITS_ONLY_SELECT_COASTAL))
                     {
                         bTreasureOnlyCoastal = true;
                     }
@@ -1336,6 +1336,92 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
         break;
         ///TKe
 
+	// Teacher List - start - Nightinggale
+	case BUTTONPOPUP_TEACHER_LIST:
+		{
+			CvPlayer& kPlayer = GET_PLAYER(GC.getGameINLINE().getActivePlayer());
+			CvCity* pCity = kPlayer.getCity(info.getData1());
+			if (pCity != NULL)
+			{
+				if (pPopupReturn->getCheckboxBitfield(1) & 0x01)
+				{
+					// Reset checkbox is set
+					for (int iUnit = 0; iUnit < GC.getNumUnitInfos(); iUnit++)
+					{
+						UnitTypes eUnit = (UnitTypes)iUnit;
+						if (pCity->getOrderedStudents(eUnit) > 0 || pCity->getOrderedStudentsRepeat(eUnit))
+						{
+							gDLL->sendDoTask(info.getData1(), TASK_CHANGE_ORDERED_STUDENTS, 0, 0, false, false, true, false);
+							break;
+						}
+					}
+					break;
+				} else {
+					// Send doTasks though a pipeline like cache.
+					// This way the last DoTask is in the cache when the loop is done.
+					// This is because the last DoTask needs to be found as it needs bAlt to be set
+					//  in order to call CvCity::checkOrderedStudentsForRepeats()
+					UnitTypes eUnitCached = NO_UNIT;
+					bool bRepeatCached = false;
+					int iLevelCached = 0;
+					for (int iUnit = 0; iUnit < GC.getNumUnitInfos(); iUnit++)
+					{
+						UnitTypes eUnit = (UnitTypes)iUnit;
+						int iLevel = pPopupReturn->getSpinnerWidgetValue(iUnit);
+						bool bRepeat = (pPopupReturn->getCheckboxBitfield(iUnit) & 0x01);
+
+						if (iLevel >= 0 && ( iLevel != pCity->getOrderedStudents(eUnit) || bRepeat != pCity->getOrderedStudentsRepeat(eUnit)))
+						{
+							if (eUnitCached != NO_UNIT)
+							{
+								gDLL->sendDoTask(info.getData1(), TASK_CHANGE_ORDERED_STUDENTS, eUnitCached, iLevelCached, bRepeatCached, false, false, false);
+							}
+							eUnitCached = eUnit;
+							iLevelCached = iLevel;
+							bRepeatCached = bRepeat;
+						}
+					}
+					if (eUnitCached != NO_UNIT)
+					{
+						gDLL->sendDoTask(info.getData1(), TASK_CHANGE_ORDERED_STUDENTS, eUnitCached, iLevelCached, bRepeatCached, true, false, false);
+					}
+				}
+			}
+		}
+		break;
+	// Teacher List - end - Nightinggale
+
+	// R&R, Robert Surcouf, Custom House Popup-Screen START
+	case BUTTONPOPUP_CUSTOM_HOUSE:
+		{
+			CvPlayer& kPlayer = GET_PLAYER(GC.getGameINLINE().getActivePlayer());
+			CvCity* pCity = kPlayer.getCity(info.getData1());
+			if (pCity != NULL)
+			{
+				for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+				{
+					YieldTypes eYield = (YieldTypes) iYield;
+					if (GC.getYieldInfo((YieldTypes) iYield).isCargo())
+					{
+						bool bNeverSell = (pPopupReturn->getCheckboxBitfield(iYield) & 0x01);
+						int iLevel = pPopupReturn->getSpinnerWidgetValue(iYield);
+						
+						if (bNeverSell != pCity->isCustomHouseNeverSell(eYield) || iLevel != pCity->getCustomHouseSellThreshold(eYield))
+						{
+							gDLL->sendDoTask(info.getData1(), TASK_CHANGE_CUSTOM_HOUSE_SETTINGS, iYield, iLevel, bNeverSell, false, false, false);
+						}
+					}
+				}
+			}
+		}
+		break;
+	
+	case BUTTONPOPUP_DOMESTIC_MARKET:
+		{
+		}
+		break;
+	// R&R, Robert Surcouf, Custom House Popup-Screen END
+
 	default:
 		FAssert(false);
 		break;
@@ -1366,7 +1452,7 @@ bool CvDLLButtonPopup::launchReturnHome(CvPopup* pPopup, CvPopupInfo &info)
     bool bTreasureOnlyCoastal = false;
     if (GC.getUnitInfo(pUnit->getUnitType()).isTreasure())
     {
-        if (GC.getCache_TREASURE_UNITS_ONLY_SELECT_COASTAL())
+        if (GC.getXMLval(XML_TREASURE_UNITS_ONLY_SELECT_COASTAL))
         {
             bTreasureOnlyCoastal = true;
         }
@@ -1670,6 +1756,19 @@ bool CvDLLButtonPopup::launchButtonPopup(CvPopup* pPopup, CvPopupInfo &info)
         bLaunched = launchReturnHome(pPopup, info);
         break;
     ///TKe
+	// Teacher List - start - Nightinggale
+	case BUTTONPOPUP_TEACHER_LIST:
+		bLaunched = launchTeacherListPopup(pPopup, info);
+		break;
+	// Teacher List - end - Nightinggale
+	// R&R, Robert Surcouf, Custom House Popup-Screen START
+	case BUTTONPOPUP_CUSTOM_HOUSE:
+		bLaunched = launchCustomHousePopup(pPopup, info);
+		break;
+	case BUTTONPOPUP_DOMESTIC_MARKET:
+		bLaunched = launchDomesticMarketPopup(pPopup, info);
+		break;
+	// R&R, Robert Surcouf, Custom House Popup-Screen END
 	default:
 		FAssert(false);
 		break;
@@ -2088,26 +2187,19 @@ bool CvDLLButtonPopup::launchEducationPopup(CvPopup* pPopup, CvPopupInfo &info)
 
 	int iNumUnits = 0;
 	UnitTypes eLastUnit = NO_UNIT;
+	// Teacher List - start - Nightinggale
+	std::vector<UnitTypes> ordered_units;
+	// Teacher List - end - Nightinggale
 	for (int iI = 0; iI < GC.getNumUnitInfos(); iI++)
 	{
-
+		UnitTypes eUnit = (UnitTypes)iI;
 		CvUnitInfo& kUnit = GC.getUnitInfo((UnitTypes) iI);
+
 		///TK Update 1.1
-        int eUnitClass = kUnit.getUnitClassType();
-        for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
-        {
-            if (GC.getCivicInfo((CivicTypes) iCivic).getCivicOptionType() == (CivicOptionTypes)GC.getCache_CIVICOPTION_INVENTIONS())
-            {
-                CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes) iCivic);
-                if (kCivicInfo.getAllowsUnitClasses(eUnitClass) > 0)
-                {
-                    if (GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getIdeasResearched((CivicTypes) iCivic) <= 0)
-                    {
-                        continue;
-                    }
-                }
-            }
-        }
+		if (!kPlayer.canUseUnit(eUnit))
+		{
+			continue;
+		}
         //TK end Update
 		int iPrice = pCity->getSpecialistTuition((UnitTypes) iI);
 		if (iPrice >= 0 && iPrice <= kPlayer.getGold())
@@ -2120,8 +2212,31 @@ bool CvDLLButtonPopup::launchEducationPopup(CvPopup* pPopup, CvPopupInfo &info)
 			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, szText, kUnit.getButton(), iI, WIDGET_GENERAL, -1, -1, true, POPUP_LAYOUT_STRETCH, DLL_FONT_LEFT_JUSTIFY);
 			++iNumUnits;
 			eLastUnit = (UnitTypes) iI;
+			// Teacher List - start - Nightinggale
+			for(int count = 0; count <	pCity->getOrderedStudents(eLastUnit); count++)
+			{
+				ordered_units.push_back(eLastUnit);
+			}
+			// Teacher List - end - Nightinggale
 		}
 	}
+
+	// Teacher List - start - Nightinggale
+	if (!ordered_units.empty())
+	{
+		// Train the unit into
+		int random_num = ordered_units.size();
+		if (random_num == 1)
+		{
+			// The vector contains only one unit. The "random" unit has to be the first.
+			random_num = 0;
+		} else {
+			random_num = GC.getGameINLINE().getSorenRandNum(random_num, "Pick unit for training");
+		}
+		gDLL->sendDoTask(info.getData1(), TASK_EDUCATE, info.getData2(), ordered_units[random_num], false, false, false, false);
+		return false;
+	}
+	// Teacher List - end - Nightinggale
 
 	if (iNumUnits <= 1)
 	{
@@ -2149,7 +2264,7 @@ bool CvDLLButtonPopup::launchRazeCityPopup(CvPopup* pPopup, CvPopupInfo &info)
 		return (false);
 	}
 
-	if (0 != GC.getCache_PLAYER_ALWAYS_RAZES_CITIES())
+	if (0 != GC.getXMLval(XML_PLAYER_ALWAYS_RAZES_CITIES))
 	{
 		player.raze(pNewCity);
 		return false;
@@ -3142,7 +3257,7 @@ bool CvDLLButtonPopup::launchPurchaseEuropeUnitPopup(CvPopup* pPopup, CvPopupInf
 //                UnitClassTypes eUnitClass = (UnitClassTypes)GC.getUnitInfo(eUnit).getUnitClassType();
 //                for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
 //                {
-//                    if (GC.getCivicInfo((CivicTypes) iCivic).getCivicOptionType() == (CivicOptionTypes)GC.getCache_CIVICOPTION_INVENTIONS())
+//                    if (GC.getCivicInfo((CivicTypes) iCivic).getCivicOptionType() == (CivicOptionTypes)GC.getXMLval(XML_CIVICOPTION_INVENTIONS))
 //                    {
 //                        CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes) iCivic);
 //                        if (kCivicInfo.getAllowsUnitClasses(eUnitClass) > 0)
@@ -3268,11 +3383,11 @@ bool CvDLLButtonPopup::launchCivicOptionPopup(CvPopup* pPopup, CvPopupInfo &info
 	{
 		return false;
 	}
-    FatherPointTypes eFatherPoint = (FatherPointTypes)GC.getCache_FATHER_POINT_REAL_TRADE();
+    FatherPointTypes eFatherPoint = (FatherPointTypes)GC.getXMLval(XML_FATHER_POINT_REAL_TRADE);
     if (info.getData1() == -3)
     {
-        CivicOptionTypes eCivicOption = (CivicOptionTypes)GC.getCache_CIVICOPTION_INVENTIONS();
-        FatherPointTypes eFatherPoint = (FatherPointTypes)GC.getCache_FATHER_POINT_REAL_TRADE();
+        CivicOptionTypes eCivicOption = (CivicOptionTypes)GC.getXMLval(XML_CIVICOPTION_INVENTIONS);
+        FatherPointTypes eFatherPoint = (FatherPointTypes)GC.getXMLval(XML_FATHER_POINT_REAL_TRADE);
         gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_CHOOSE_TRADING_PERK"));
         for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
         {
@@ -3298,7 +3413,7 @@ bool CvDLLButtonPopup::launchCivicOptionPopup(CvPopup* pPopup, CvPopupInfo &info
     ///TKe
 	CivicOptionTypes eCivicOption = (CivicOptionTypes) info.getData1();
     ///TKs Invention Core Mod v 1.0
-	if (eCivicOption == NO_CIVICOPTION || eCivicOption == (CivicOptionTypes)GC.getCache_CIVICOPTION_INVENTIONS())
+	if (eCivicOption == NO_CIVICOPTION || eCivicOption == (CivicOptionTypes)GC.getXMLval(XML_CIVICOPTION_INVENTIONS))
 	{
 		return false;
 	}
@@ -3634,7 +3749,7 @@ bool CvDLLButtonPopup::launchTalkNativesPopup(CvPopup* pPopup, CvPopupInfo& info
 ///TKs Invention Core Mod v 1.0
 bool CvDLLButtonPopup::launchChooseInventionPopup(CvPopup* pPopup, CvPopupInfo &info)
 {
-    CivicOptionTypes eCivicOption = (CivicOptionTypes)GC.getCache_CIVICOPTION_INVENTIONS();
+    CivicOptionTypes eCivicOption = (CivicOptionTypes)GC.getXMLval(XML_CIVICOPTION_INVENTIONS);
 
 	if (eCivicOption == NO_CIVICOPTION)
 	{
@@ -3763,10 +3878,10 @@ bool CvDLLButtonPopup::launchChooseInventionPopup(CvPopup* pPopup, CvPopupInfo &
 	{
 	    //bIsTrait = false;
 		CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes) iCivic);
-		FatherPointTypes eFatherPoint = (FatherPointTypes)GC.getCache_FATHER_POINT_REAL_TRADE();
+		FatherPointTypes eFatherPoint = (FatherPointTypes)GC.getXMLval(XML_FATHER_POINT_REAL_TRADE);
 		if (kCivicInfo.getCivicOptionType() == eCivicOption)
 		{
-			if (info.getData3() == 1 || ((GET_PLAYER(ePlayer).canDoCivics((CivicTypes) iCivic) && eCurrentResearch != (CivicTypes)iCivic) && (GC.getCivicInfo((CivicTypes)iCivic).getRequiredFatherPoints(eFatherPoint) <= 0)) && kCivicInfo.getInventionCategory() != (CivicTypes) GC.getCache_MEDIEVAL_CENSURE())
+			if (info.getData3() == 1 || ((GET_PLAYER(ePlayer).canDoCivics((CivicTypes) iCivic) && eCurrentResearch != (CivicTypes)iCivic) && (GC.getCivicInfo((CivicTypes)iCivic).getRequiredFatherPoints(eFatherPoint) <= 0)) && kCivicInfo.getInventionCategory() != (CivicTypes) GC.getXMLval(XML_MEDIEVAL_CENSURE))
 			{
 
 			    if (info.getData3() == 1)
@@ -3894,7 +4009,7 @@ bool CvDLLButtonPopup::launchRansomKnightPopup(CvPopup* pPopup, CvPopupInfo &inf
 
 	CvPlayer& kKillerPlayer = GET_PLAYER(eCapturePlayer);
     CvPlayer& kPlayer = GET_PLAYER(ePlayer);
-	int iRansomPrice = GC.getCache_KNIGHT_RANSOM_MOD() * pRansomeUnit->getLevel();
+	int iRansomPrice = GC.getXMLval(XML_KNIGHT_RANSOM_MOD) * pRansomeUnit->getLevel();
 	int iPlayersGold = kPlayer.getGold();
 //    FAssert(ePlayer == NO_PLAYER);
 	bool bNofunds = false;
@@ -4024,23 +4139,24 @@ bool CvDLLButtonPopup::launchArmorsmithPopup(CvPopup* pPopup, CvPopupInfo &info)
         CvYieldInfo& kYield = GC.getYieldInfo(eArmor);
         if (GC.getYieldInfo(eArmor).isArmor())
         {
-            for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
-            {
-                if (GC.getCivicInfo((CivicTypes) iCivic).getCivicOptionType() == (CivicOptionTypes)GC.getCache_CIVICOPTION_INVENTIONS())
-                {
-                    CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes) iCivic);
-                    if (kCivicInfo.getAllowsYields(eArmor) > 0)
-                    {
-                        if (kPlayer.getIdeasResearched((CivicTypes) iCivic) != 0)
+            //for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
+            //{
+             //   if (GC.getCivicInfo((CivicTypes) iCivic).getCivicOptionType() == (CivicOptionTypes)GC.getXMLval(XML_CIVICOPTION_INVENTIONS))
+             //   {
+             //       CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes) iCivic);
+             //       if (kCivicInfo.getAllowsYields(eArmor) > 0)
+             //       {
+             //           if (kPlayer.getIdeasResearched((CivicTypes) iCivic) != 0)
+			if (kPlayer.canUseYield(eArmor))
                         {
                             szRequires = CvWString::format(L"%s", GC.getYieldInfo(eArmor).getDescription());
                             gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, szRequires, kYield.getButton(), iI, WIDGET_GENERAL);
                             bFoundArmor = true;
                         }
-                    }
+              //      }
 
-                }
-            }
+              //  }
+            //}
 
 //            if (kPlayer.isYieldEuropeTradable(eArmor))
 //            {
@@ -4080,3 +4196,164 @@ bool CvDLLButtonPopup::launchNoblesJoinPopup(CvPopup* pPopup, CvPopupInfo &info)
 }
 
 ///TKe
+
+// Teacher List - start - Nightinggale
+bool CvDLLButtonPopup::launchTeacherListPopup(CvPopup* pPopup, CvPopupInfo &info)
+{
+	PlayerTypes ePlayer = GC.getGameINLINE().getActivePlayer();
+	if (ePlayer == NO_PLAYER)
+	{
+		return false;
+	}
+
+	CvPlayer& kPlayer = GET_PLAYER(ePlayer);
+	CvCity* pCity = kPlayer.getCity(info.getData1());
+	if (pCity == NULL)
+	{
+		return false;
+	}
+
+	if (pCity->getTeachLevel())
+	{
+		gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_EDIT_TEACHER_LIST_POPUP_TEXT", pCity->getNameKey()));
+		gDLL->getInterfaceIFace()->popupStartHLayout(pPopup, 0);
+		gDLL->getInterfaceIFace()->popupCreateCheckBoxes(pPopup, 1, 1, WIDGET_GENERAL, POPUP_LAYOUT_TOP);
+		gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 0, gDLL->getText("TXT_KEY_EDIT_TEACHER_LIST_POPUP_RESET_ALL_TEXT"), 1, gDLL->getText("TXT_KEY_EDIT_TEACHER_LIST_POPUP_RESET_ALL_HELP"));
+		gDLL->getInterfaceIFace()->popupEndLayout(pPopup);
+		for (int iUnitClass = 0; iUnitClass < GC.getNumUnitClassInfos(); iUnitClass++)
+		{
+			UnitTypes eUnit = (UnitTypes) GC.getCivilizationInfo(kPlayer.getCivilizationType()).getCivilizationUnits(iUnitClass);
+			if (eUnit == NO_UNIT) continue; // Unitclass not used by civ
+
+			CvUnitInfo& kUnit = GC.getUnitInfo(eUnit);
+
+			if (kUnit.getTeachLevel() < 1 || kUnit.getTeachLevel() > pCity->getTeachLevel()) continue;
+
+			int iPrice = pCity->getSpecialistTuition(eUnit);
+
+			gDLL->getInterfaceIFace()->popupStartHLayout(pPopup, 0);
+			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"", kUnit.getButton(), -1, WIDGET_HELP_TEACHER_UNIT, eUnit);
+			if (iPrice >= 0)
+			{
+				gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, CvWString::format(L" %d%c", iPrice, gDLL->getSymbolID(GOLD_CHAR)));
+				gDLL->getInterfaceIFace()->popupCreateCheckBoxes(pPopup, 1, eUnit, WIDGET_GENERAL, POPUP_LAYOUT_TOP);
+				gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 0, gDLL->getText("TXT_KEY_EDIT_TEACHER_LIST_POPUP_REPEAT_TEXT"), eUnit, gDLL->getText("TXT_KEY_EDIT_TEACHER_LIST_POPUP_REPEAT_HELP"));
+				gDLL->getInterfaceIFace()->popupSetCheckBoxState(pPopup, 0, pCity->getOrderedStudentsRepeat(eUnit), eUnit);
+				gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, eUnit, L"", pCity->getOrderedStudents(eUnit), 1, 50, 0);
+			} else {
+				gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_EDIT_TEACHER_LIST_NO_TEACHER", kUnit.getDescription()));
+			}
+			gDLL->getInterfaceIFace()->popupEndLayout(pPopup);
+		}
+	} else {
+		// Colony has no school
+		gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_EDIT_TEACHER_LIST_POPUP_NO_SCHOOL_TEXT", pCity->getNameKey()));
+	}
+	gDLL->getInterfaceIFace()->popupLaunch(pPopup, true, POPUPSTATE_IMMEDIATE);
+
+	return true;
+}
+// Teacher List - end - Nightinggale
+
+// R&R, Robert Surcouf, Custom House Popup-Screen START
+bool CvDLLButtonPopup::launchCustomHousePopup(CvPopup* pPopup, CvPopupInfo &info)
+{
+	PlayerTypes ePlayer = GC.getGameINLINE().getActivePlayer();
+	if (ePlayer == NO_PLAYER)
+	{
+		return false;
+	}
+
+	CvPlayer& kPlayer = GET_PLAYER(ePlayer);
+
+	CvCity* pCity = kPlayer.getCity(info.getData1());
+	if (pCity == NULL)
+	{
+		return false;
+	}
+
+	// R&R, ray, finishing Custom House Screen
+	gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_CUSTOM_HOUSE_POPUP_TEXT", pCity->getNameKey()));
+
+	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	{
+		YieldTypes eYield = (YieldTypes) iYield;
+
+		if (YieldGroup_Cargo(eYield))
+		{
+			CvYieldInfo& kYield = GC.getYieldInfo(eYield);
+			// R&R, ray, finishing Custom House Screen
+			gDLL->getInterfaceIFace()->popupStartHLayout(pPopup, 0);
+			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"", kYield.getButton(), -1, WIDGET_HELP_YIELD, iYield);
+			gDLL->getInterfaceIFace()->popupCreateCheckBoxes(pPopup, 1, iYield, WIDGET_GENERAL, POPUP_LAYOUT_TOP);
+			gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 0, gDLL->getText("TXT_KEY_POPUP_NEVER_SELL"), iYield);
+			// R&R, ray, finishing Custom House Screen
+			gDLL->getInterfaceIFace()->popupSetCheckBoxState(pPopup, 0, pCity->isCustomHouseNeverSell(eYield), iYield);
+			gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, iYield, L"", pCity->getCustomHouseSellThreshold(eYield), 10, 999, 0);
+			gDLL->getInterfaceIFace()->popupEndLayout(pPopup);
+		}
+	}
+
+	gDLL->getInterfaceIFace()->popupLaunch(pPopup, true, POPUPSTATE_IMMEDIATE);
+
+	return true;
+}
+bool CvDLLButtonPopup::launchDomesticMarketPopup(CvPopup* pPopup, CvPopupInfo &info)
+{
+	PlayerTypes ePlayer = GC.getGameINLINE().getActivePlayer();
+	if (ePlayer == NO_PLAYER)
+	{
+		return false;
+	}
+
+	CvPlayer& kPlayer = GET_PLAYER(ePlayer);
+
+	CvCity* pCity = kPlayer.getCity(info.getData1());
+	if (pCity == NULL)
+	{
+		return false;
+	}
+
+	int iTotalDemand = 0;
+	for (int iYield = 0; iYield < NUM_YIELD_TYPES; iYield++)
+	{
+		iTotalDemand += pCity->getYieldDemand((YieldTypes) iYield);
+	}
+
+
+	gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_DOMESTIC_MARKET_POPUP", pCity->getNameKey(), iTotalDemand, pCity->getMarketCap()));
+	
+	gDLL->getInterfaceIFace()->popupStartHLayout(pPopup, 0);
+	gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_EU_TRADE_LOG_1"));
+	gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_STORED"));
+	gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_DOMESTIC_PRICE"));
+	gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_DOMESTIC_DEMAND"));
+	gDLL->getInterfaceIFace()->popupEndLayout(pPopup);
+	
+	// R&R, ray, adjustment to displayed yield list of Domestic Market Screen
+	int startYield = GC.getDefineINT("DOMESTIC_MARKET_SCREEN_START_YIELD_ID");
+	for (int iYield = startYield; iYield < NUM_YIELD_TYPES; ++iYield)
+	{
+		YieldTypes eYield = (YieldTypes) iYield;
+		CvYieldInfo& kYield = GC.getYieldInfo(eYield);
+		if (kYield.isCargo())
+		{
+			gDLL->getInterfaceIFace()->popupStartHLayout(pPopup, 0);
+			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"", kYield.getButton(), -1, WIDGET_HELP_YIELD, iYield);
+			//gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, "9", 0, -1, WIDGET_GENERAL, MAX_INT);
+			gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_NUMBER", pCity->getYieldStored((YieldTypes) iYield)));
+			gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_NUMBER", pCity->getYieldBuyPrice((YieldTypes) iYield)));
+			gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_NUMBER", pCity->getYieldDemand((YieldTypes) iYield)));
+			//gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_NUMBER", pCity->getYieldStored((YieldTypes) iYield)), 0, -1, WIDGET_GENERAL, MAX_INT); 
+			//gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_NUMBER", pCity->getYieldBuyPrice((YieldTypes) iYield)), 0, -1, WIDGET_GENERAL, MAX_INT); 
+			//gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_NUMBER", pCity->getYieldDemand((YieldTypes) iYield)), 0, -1, WIDGET_GENERAL, MAX_INT); 
+			gDLL->getInterfaceIFace()->popupEndLayout(pPopup);
+			//gDLL->getInterfaceIFace()->popupAddSeparator(pPopup);
+		}
+	}
+
+	gDLL->getInterfaceIFace()->popupLaunch(pPopup, true, POPUPSTATE_IMMEDIATE);
+
+	return true;
+}
+// R&R, Robert Surcouf, Custom House Popup-Screen END

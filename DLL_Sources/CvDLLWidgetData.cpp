@@ -47,7 +47,7 @@ void CvDLLWidgetData::parseHelp(CvWStringBuffer &szBuffer, CvWidgetDataStruct &w
 	case WIDGET_PLOT_LIST_SHIFT:
 		if (widgetDataStruct.m_iData1 != 0)
 		{
-			szBuffer.assign(gDLL->getText("TXT_KEY_MISC_CTRL_SHIFT", (GC.getCache_MAX_PLOT_LIST_SIZE() - 1)));
+			szBuffer.assign(gDLL->getText("TXT_KEY_MISC_CTRL_SHIFT", (GC.getXMLval(XML_MAX_PLOT_LIST_SIZE) - 1)));
 		}
 		break;
 
@@ -130,6 +130,19 @@ void CvDLLWidgetData::parseHelp(CvWStringBuffer &szBuffer, CvWidgetDataStruct &w
 	case WIDGET_YIELD_IMPORT_EXPORT:
 		parseImportExportHelp(widgetDataStruct, szBuffer);
 		break;
+	// Teacher List - start - Nightinggale
+	case WIDGET_TEACHER_LIST:
+		szBuffer.append(gDLL->getText("TXT_KEY_EDIT_TEACHER_LIST"));
+		break;
+	// Teacher List - end - Nightinggale
+	// R&R, Robert Surcouf, Custom House Popup-Screen START
+	case WIDGET_CUSTOM_HOUSE:
+		szBuffer.append(gDLL->getText("TXT_KEY_EDIT_CUSTOM_HOUSE"));
+		break;
+	case WIDGET_DOMESTIC_MARKET:
+		szBuffer.append(gDLL->getText("TXT_KEY_DOMESTIC_MARKET"));
+		break;
+	// R&R, Robert Surcouf, Custom House Popup-Screen END
     ///TKs Invention Core Mod v 1.0
 	case WIDGET_INVENTORS_HOUSE:
 		parseInventorsHouseHelp(widgetDataStruct, szBuffer);
@@ -223,6 +236,12 @@ void CvDLLWidgetData::parseHelp(CvWStringBuffer &szBuffer, CvWidgetDataStruct &w
 	case WIDGET_HELP_SELECTED:
 		parseSelectedHelp(widgetDataStruct, szBuffer);
 		break;
+
+	// Teacher List - start - Nightinggale
+	case WIDGET_HELP_TEACHER_UNIT:
+		parseCityUnitHelp(widgetDataStruct, szBuffer);
+		break;
+	// Teacher List - end - Nightinggale
 
 	case WIDGET_PEDIA_JUMP_TO_UNIT:
 		parseUnitHelp(widgetDataStruct, szBuffer);
@@ -374,7 +393,7 @@ bool CvDLLWidgetData::executeAction( CvWidgetDataStruct &widgetDataStruct )
 		}
 		else
 		{
-			gDLL->getInterfaceIFace()->changePlotListColumn(widgetDataStruct.m_iData1 * ((gDLL->ctrlKey()) ? (GC.getCache_MAX_PLOT_LIST_SIZE() - 1) : 1));
+			gDLL->getInterfaceIFace()->changePlotListColumn(widgetDataStruct.m_iData1 * ((gDLL->ctrlKey()) ? (GC.getXMLval(XML_MAX_PLOT_LIST_SIZE) - 1) : 1));
 		}
 		break;
 
@@ -645,7 +664,19 @@ bool CvDLLWidgetData::executeAction( CvWidgetDataStruct &widgetDataStruct )
 	case WIDGET_GOTO_CITY:
 		doGoToCity(widgetDataStruct);
 		break;
-
+	// Teacher List - start - Nightinggale
+	case WIDGET_TEACHER_LIST:
+		doTeacherList(widgetDataStruct);
+		break;
+	// Teacher List - end - Nightinggale
+	// R&R, Robert Surcouf, Custom House Popup-Screen START
+	case WIDGET_CUSTOM_HOUSE:
+		doCustomHouse(widgetDataStruct);
+		break;
+	case WIDGET_DOMESTIC_MARKET:
+		doDomesticMarket(widgetDataStruct);
+		break;
+	// R&R, Robert Surcouf, Custom House Popup-Screen END
 	}
 
 	return bHandled;
@@ -1347,7 +1378,7 @@ void CvDLLWidgetData::parseCityNameHelp(CvWidgetDataStruct &widgetDataStruct, Cv
         int iMaxPop = pHeadSelectedCity->getMaxCityPop();
         if (iPopulation != iMaxPop)
         {
-            if (iMaxPop < GC.getCache_MAX_CITY_POPULATION_COMMUNE())
+            if (iMaxPop < GC.getXMLval(XML_MAX_CITY_POPULATION_COMMUNE))
             {
                 szBuffer.append(NEWLINE);
                 szBuffer.append(gDLL->getText("TXT_KEY_CITY_NAME_MAX_POP", iMaxPop));
@@ -1356,7 +1387,7 @@ void CvDLLWidgetData::parseCityNameHelp(CvWidgetDataStruct &widgetDataStruct, Cv
         CvWString szTempBuffer;
         if (iPopulation == iMaxPop)
         {
-            if (iMaxPop < GC.getCache_MAX_CITY_POPULATION_COMMUNE())
+            if (iMaxPop < GC.getXMLval(XML_MAX_CITY_POPULATION_COMMUNE))
             {
                 szBuffer.append(NEWLINE);
                 szBuffer.append(gDLL->getText("TXT_KEY_ACTION_CANNOT_JOIN_OVERPOPULATED"));
@@ -1387,7 +1418,7 @@ void CvDLLWidgetData::parseCityNameHelp(CvWidgetDataStruct &widgetDataStruct, Cv
                             {
                                 for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
                                 {	CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes) iCivic);
-                                    if (kCivicInfo.getCivicOptionType() == (CivicOptionTypes)GC.getCache_CIVICOPTION_INVENTIONS())
+                                    if (kCivicInfo.getCivicOptionType() == (CivicOptionTypes)GC.getXMLval(XML_CIVICOPTION_INVENTIONS))
                                     {
                                         //if (eBuilding != NO_BUILDING)
                                        // {
@@ -1735,7 +1766,7 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
                         int iMaxPop = pCity->getMaxCityPop();
                         if (iPopulation == iMaxPop)
                         {
-                            if (iMaxPop < GC.getCache_MAX_CITY_POPULATION_COMMUNE())
+                            if (iMaxPop < GC.getXMLval(XML_MAX_CITY_POPULATION_COMMUNE))
                             {
                                 szBuffer.append(NEWLINE);
                                 szBuffer.append(gDLL->getText("TXT_KEY_ACTION_CANNOT_JOIN_OVERPOPULATED"));
@@ -1766,7 +1797,7 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
                                             {
                                                 for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
                                                 {	CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes) iCivic);
-                                                    if (kCivicInfo.getCivicOptionType() == (CivicOptionTypes)GC.getCache_CIVICOPTION_INVENTIONS())
+                                                    if (kCivicInfo.getCivicOptionType() == (CivicOptionTypes)GC.getXMLval(XML_CIVICOPTION_INVENTIONS))
                                                     {
                                                         if (kCivicInfo.getAllowsBuildingTypes(GC.getBuildingInfo(eBuilding).getBuildingClassType()) > 0)
                                                         {
@@ -2357,7 +2388,7 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 				    //if (GET_PLAYER(pTrader->getOwner()).getGold() < GC.getDefineINT("ESTABLISH_TRADEPOST_COST"))
                     //{
                         szBuffer.append(NEWLINE);
-                        szBuffer.append(gDLL->getText("TXT_KEY_ESTABLISH_TRADEPOST_GOLD", GC.getCache_ESTABLISH_TRADEPOST_COST()));
+                        szBuffer.append(gDLL->getText("TXT_KEY_ESTABLISH_TRADEPOST_GOLD", GC.getXMLval(XML_ESTABLISH_TRADEPOST_COST)));
                     //}
 				}
 			}
@@ -2841,7 +2872,7 @@ void CvDLLWidgetData::parseTradeItem(CvWidgetDataStruct &widgetDataStruct, CvWSt
 			szBuffer.append(gDLL->getText("TXT_KEY_TRADE_PERMANENT_ALLIANCE"));
 			break;
 		case TRADE_PEACE_TREATY:
-			szBuffer.append(gDLL->getText("TXT_KEY_TRADE_PEACE_TREATY", GC.getCache_PEACE_TREATY_LENGTH()));
+			szBuffer.append(gDLL->getText("TXT_KEY_TRADE_PEACE_TREATY", GC.getXMLval(XML_PEACE_TREATY_LENGTH)));
 			break;
 		}
 
@@ -2898,8 +2929,11 @@ void CvDLLWidgetData::parsePopulationHelp(CvWidgetDataStruct &widgetDataStruct, 
 	{
 	    ///TKs Med
 		//szBuffer.assign(gDLL->getText("TXT_KEY_MISC_FOOD_THRESHOLD", pHeadSelectedCity->getFood(), pHeadSelectedCity->growthThreshold()));
-
-		szBuffer.assign(gDLL->getText("TXT_KEY_MISC_LUXURY_FOOD_THRESHOLD", pHeadSelectedCity->getFood(), pHeadSelectedCity->growthThreshold(), pHeadSelectedCity->getYieldStored(YIELD_GRAIN), GC.getCache_BASE_CITY_LUXURY_FOOD_THRESHOLD_MOD(), GC.getYieldInfo(YIELD_GRAIN).getChar()));
+#ifdef USE_NOBLE_CLASS
+		szBuffer.assign(gDLL->getText("TXT_KEY_MISC_LUXURY_FOOD_THRESHOLD", pHeadSelectedCity->getFood(), pHeadSelectedCity->growthThreshold(), pHeadSelectedCity->getYieldStored(YIELD_GRAIN), GC.getXMLval(XML_BASE_CITY_LUXURY_FOOD_THRESHOLD_MOD), GC.getYieldInfo(YIELD_GRAIN).getChar()));
+#else
+		szBuffer.assign(gDLL->getText("TXT_KEY_MISC_FOOD_THRESHOLD", pHeadSelectedCity->getFood(), pHeadSelectedCity->growthThreshold()));
+#endif
 		///Tke
 	}
 }
@@ -3238,6 +3272,15 @@ void CvDLLWidgetData::parseCivicHelp(CvWidgetDataStruct &widgetDataStruct, CvWSt
 	//}
 }
 ///TKe
+
+// Teacher List - start - Nightinggale
+void CvDLLWidgetData::parseCityUnitHelp(CvWidgetDataStruct &widgetDataStruct, CvWStringBuffer &szBuffer)
+{
+	UnitTypes eUnit = (UnitTypes) widgetDataStruct.m_iData1;
+	GAMETEXT.setUnitHelp(szBuffer, eUnit, false, true);	
+}
+// Teacher List - end - Nightinggale
+
 void CvDLLWidgetData::parseCivilizationHelp(CvWidgetDataStruct &widgetDataStruct, CvWStringBuffer &szBuffer)
 {
 	if (widgetDataStruct.m_iData2 != 0)
@@ -3877,6 +3920,18 @@ void CvDLLWidgetData::doYieldImportExport(const CvWidgetDataStruct& widgetDataSt
 	}
 }
 
+// Teacher List - start - Nightinggale
+void CvDLLWidgetData::doTeacherList(const CvWidgetDataStruct& widgetDataStruct)
+{
+	CvCity* pHeadSelectedCity = gDLL->getInterfaceIFace()->getHeadSelectedCity();
+	if (pHeadSelectedCity != NULL && pHeadSelectedCity->getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
+	{
+		CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_TEACHER_LIST, gDLL->getInterfaceIFace()->getHeadSelectedCity()->getID());
+		gDLL->getInterfaceIFace()->addPopup(pInfo, NO_PLAYER, true);
+	}
+}
+// Teacher List - end - Nightinggale
+
 void CvDLLWidgetData::doAssignTradeRoute(const CvWidgetDataStruct& widgetDataStruct)
 {
 	CvUnit* pUnit = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getUnit(widgetDataStruct.m_iData1);
@@ -3993,12 +4048,12 @@ void CvDLLWidgetData::doInventorsHouse(const CvWidgetDataStruct& widgetDataStruc
 	{
 	    //pHeadSelectedCity->setYieldRateDirty();
 	    //gDLL->getInterfaceIFace()->setDirty(CityScreen_DIRTY_BIT, true);
-		CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CHOOSE_INVENTION, (CivicOptionTypes)GC.getCache_CIVICOPTION_INVENTIONS(),  pHeadSelectedCity->getID());
+		CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CHOOSE_INVENTION, (CivicOptionTypes)GC.getXMLval(XML_CIVICOPTION_INVENTIONS),  pHeadSelectedCity->getID());
 		gDLL->getInterfaceIFace()->addPopup(pInfo, NO_PLAYER, true);
 	}
 	else
 	{
-	    CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CHOOSE_INVENTION, (CivicOptionTypes)GC.getCache_CIVICOPTION_INVENTIONS(), 1);
+	    CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CHOOSE_INVENTION, (CivicOptionTypes)GC.getXMLval(XML_CIVICOPTION_INVENTIONS), 1);
 		gDLL->getInterfaceIFace()->addPopup(pInfo, NO_PLAYER, true);
 	}
 
@@ -4070,3 +4125,25 @@ void CvDLLWidgetData::doTaxAdvisor(const CvWidgetDataStruct& widgetDataStruct)
 //TKe
 
 ///TKe
+
+// R&R, Robert Surcouf, Custom House Popup-Screen START
+void CvDLLWidgetData::doCustomHouse(const CvWidgetDataStruct& widgetDataStruct)
+{
+	CvCity* pHeadSelectedCity = gDLL->getInterfaceIFace()->getHeadSelectedCity();
+	if (pHeadSelectedCity != NULL && pHeadSelectedCity->getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
+	{
+		CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CUSTOM_HOUSE, gDLL->getInterfaceIFace()->getHeadSelectedCity()->getID());
+		gDLL->getInterfaceIFace()->addPopup(pInfo, NO_PLAYER, true);
+	}
+}
+
+void CvDLLWidgetData::doDomesticMarket(const CvWidgetDataStruct& widgetDataStruct)
+{
+	CvCity* pHeadSelectedCity = gDLL->getInterfaceIFace()->getHeadSelectedCity();
+	if (pHeadSelectedCity != NULL && pHeadSelectedCity->getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
+	{
+		CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_DOMESTIC_MARKET, gDLL->getInterfaceIFace()->getHeadSelectedCity()->getID());
+		gDLL->getInterfaceIFace()->addPopup(pInfo, NO_PLAYER, true);
+	}
+}
+// R&R, Robert Surcouf, Custom House Popup-Screen END

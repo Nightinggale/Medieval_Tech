@@ -75,15 +75,14 @@ public:
 		return m_iLength;
 	}
 
-protected:
 	// used when constructor isn't called, like in an array
+	// can also be used if constructor is called before XML is read as getNum..Infos() functions will be incorrect in that case.
 	void init(int iLength)
 	{
 		tArray = NULL;
 		m_iLength = iLength;
 	}
 
-public:
 	inline T get(int iIndex) const
 	{
 		FAssert(iIndex >= 0);
@@ -135,7 +134,7 @@ public:
 	};
 	inline bool isEmpty(bool bRelease = true)
 	{
-		return hasContent(bRelease);
+		return !hasContent(bRelease);
 	}
 
 	void read(FDataStreamBase* pStream, bool bRead)
@@ -158,6 +157,13 @@ public:
 			pStream->Write(m_iLength, tArray);
 		}
 	}
+
+	void read(CvXMLLoadUtility* pXML, const char* sTag)
+	{
+		FAssert(this->m_iLength > 0);
+		pXML->SetVariableListTagPair(&tArray, sTag, this->m_iLength, 0);
+		this->hasContent(); // release array if possible
+	}
 };
 
 
@@ -175,4 +181,13 @@ class UnitArray: public JustInTimeArray<T>
 public:
     UnitArray() : JustInTimeArray<T>(GC.getNumUnitInfos()){};
 	void init() { JustInTimeArray<T>::init(GC.getNumUnitInfos());}
+};
+
+
+template<class T>
+class BonusArray: public JustInTimeArray<T>
+{
+public:
+    BonusArray() : JustInTimeArray<T>(GC.getNumBonusInfos()){};
+	void init() { JustInTimeArray<T>::init(GC.getNumBonusInfos());}
 };

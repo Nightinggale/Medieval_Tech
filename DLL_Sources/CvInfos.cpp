@@ -2894,6 +2894,7 @@ m_iTradeBonus(0),
 m_iKnightDubbingWeight(0),
 m_iCasteAttribute(0),
 ///TK end
+m_iTeachLevel(0), // EDU remake - Nightinggale
 m_paszUnitNames(NULL)
 {
 }
@@ -3555,6 +3556,14 @@ const char* CvUnitInfo::getButton() const
 {
 	return m_szArtDefineButton;
 }
+
+// EDU remake - start - Nightinggale
+int CvUnitInfo::getTeachLevelPython() const
+{
+	return this->getTeachLevel();
+}
+// EDU remake - start - Nightinggale
+
 void CvUnitInfo::updateArtDefineButton()
 {
 	m_szArtDefineButton = getArtInfo(0, NO_PROFESSION)->getButton();
@@ -3653,6 +3662,7 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iLearnTime);
 	stream->Read(&m_iStudentWeight);
 	stream->Read(&m_iTeacherWeight);
+	stream->Read(&m_iTeachLevel); // EDU remake - Nightinggale
 	// < JAnimals Mod Start >
 	stream->Read(&m_iAnimalPatrolWeight);
 	stream->Read(&m_iAnimalAttackWeight);
@@ -3850,6 +3860,7 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iLearnTime);
 	stream->Write(m_iStudentWeight);
 	stream->Write(m_iTeacherWeight);
+	stream->Write(m_iTeachLevel); // EDU remake - Nightinggale
 	// < JAnimals Mod Start >
 	stream->Write(m_iAnimalPatrolWeight);
 	stream->Write(m_iAnimalAttackWeight);
@@ -4145,6 +4156,21 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(szTextVal, "LeaderPromotion");
 	m_iLeaderPromotion = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(&m_iLeaderExperience, "iLeaderExperience");
+
+	// EDU remake - start - Nightinggale
+	pXML->GetChildXmlValByName(&m_iTeachLevel, "iTeachLevel");
+	FAssertMsg(m_iTeachLevel <= NUM_TEACH_LEVELS, CvString::format("%s has teach level %d, but max is %d", this->getType(), this->getTeachLevel(), NUM_TEACH_LEVELS).c_str());
+	FAssertMsg(m_iTeachLevel >= 0, CvString::format("%s has a negative teach level", this->getType()).c_str());
+	if (this->m_iTeachLevel == 0)
+	{
+		// Set the teach level higher than the highest level of building when the unit can't be taught at any school.
+		// This will reduce checks for teachable units to a simple less than or equal.
+		this->m_iTeachLevel = NUM_TEACH_LEVELS + 100;
+	}
+	// EDU remake - end - Nightinggale
+
+	this->m_aiYieldDemand.read(pXML, "YieldDemands"); // domestic yield demand - Nightinggale
+
 	updateArtDefineButton();
 	return true;
 }
@@ -5576,6 +5602,7 @@ m_aiDomainFreeExperience(NULL),
 m_aiDomainProductionModifier(NULL),
 m_aiPrereqNumOfBuildingClass(NULL),
 m_aiYieldCost(NULL),
+m_iTeachLevel(0), // EDU remake - Nightinggale
 m_abBuildingClassNeededInCity(NULL)
 
 {
@@ -5802,6 +5829,14 @@ float CvBuildingInfo::getVisibilityPriority() const
 {
 	return m_fVisibilityPriority;
 }
+
+// EDU remake - start - Nightinggale
+int CvBuildingInfo::getTeachLevelPython() const
+{
+	return this->getTeachLevel();
+}
+// EDU remake - start - Nightinggale
+
 bool CvBuildingInfo::isWater() const
 {
 	return m_bWater;
@@ -6020,6 +6055,7 @@ void CvBuildingInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iRazedCityGoldIncrease);
 	stream->Read(&m_iTrainingTimeMod);
 	stream->Read(&m_iDetectsMarauders);
+	stream->Read(&m_iTeachLevel); // EDU remake - Nightinggale
 	///TKe
 	stream->Read(&m_iConquestProbability);
 	stream->Read(&m_iHealRateChange);
@@ -6130,6 +6166,7 @@ void CvBuildingInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iRazedCityGoldIncrease);
 	stream->Write(m_iTrainingTimeMod);
 	stream->Write(m_iDetectsMarauders);
+	stream->Write(m_iTeachLevel); // EDU remake - Nightinggale
 	stream->Write(NUM_YIELD_TYPES, m_aiMaxYieldModifiers);
 	stream->Write(NUM_YIELD_TYPES, m_aiAutoSellsYields);
 	stream->Write(NUM_YIELD_TYPES, m_aiImmigrationUnits);
@@ -6262,6 +6299,17 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPair(&m_aiPrereqNumOfBuildingClass, "PrereqBuildingClasses", GC.getNumBuildingClassInfos(), 0);
 	pXML->SetVariableListTagPair(&m_abBuildingClassNeededInCity, "BuildingClassNeededs", GC.getNumBuildingClassInfos(), false);
 	pXML->SetVariableListTagPair(&m_aiYieldCost, "YieldCosts", NUM_YIELD_TYPES, 0);
+
+	// EDU remake - start - Nightinggale
+	pXML->GetChildXmlValByName(&m_iTeachLevel, "iTeachLevel");
+	FAssertMsg(m_iTeachLevel <= NUM_TEACH_LEVELS, CvString::format("%s has teach level %d, but max is %d", this->getType(), this->getTeachLevel(), NUM_TEACH_LEVELS).c_str());
+	FAssertMsg(m_iTeachLevel >= 0, CvString::format("%s has a negative teach level", this->getType()).c_str());
+	// EDU remake - end - Nightinggale
+
+	// domestic yield demand - start - Nightinggale
+	this->m_aiYieldDemand.read(pXML, "YieldDemands");
+	pXML->GetChildXmlValByName(&m_iMarketCap, "iMarketCap");
+	// domestic yield demand - end - Nightinggale
 	return true;
 }
 
@@ -9614,12 +9662,12 @@ m_iTextureIndex(-1),
 m_iWaterTextureIndex(-1),
 m_iPowerValue(0),
 m_iAssetValue(0),
-m_bCargo(false),
+//m_bCargo(false),
 ///TKs Med
 m_bIsMilitary(false),
 m_bIsNativeTrade(false),
 m_bIsMustBeDiscovered(false),
-m_bIsArmor(false),
+//m_bIsArmor(false),
 m_iLatitude(0),
 m_iLatitudeModifiers(0),
 m_aiTradeScreenPrice(NULL)
@@ -9754,7 +9802,8 @@ int CvYieldInfo::getAssetValue() const
 }
 bool CvYieldInfo::isCargo() const
 {
-	return m_bCargo;
+	//return m_bCargo;
+	return !YieldGroup_Virtual(this->m_YieldType);
 }
 ///TKs Med
 int CvYieldInfo::getLatitudeModifiers() const
@@ -9769,7 +9818,8 @@ int CvYieldInfo::getLatitude() const
 
 bool CvYieldInfo::isArmor() const
 {
-	return m_bIsArmor;
+	//return m_bIsArmor;
+	return YieldGroup_Armor(this->m_YieldType);
 }
 bool CvYieldInfo::isMustBeDiscovered() const
 {
@@ -9784,6 +9834,21 @@ bool CvYieldInfo::isNativeTrade() const
 {
 	return m_bIsNativeTrade;
 }
+
+// discoverable yield detection - start - Nightinggale
+void CvYieldInfo::setMustBeDiscovered()
+{
+	for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
+	{
+		CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes)iCivic);
+		if (kCivicInfo.getAllowsYields(this->m_YieldType) > 0)
+		{
+			m_bIsMustBeDiscovered = true;
+			return;
+		}
+	}
+}
+// discoverable yield detection - end - Nightinggale
 ///Tke
 
 bool CvYieldInfo::read(CvXMLLoadUtility* pXML)
@@ -9793,6 +9858,10 @@ bool CvYieldInfo::read(CvXMLLoadUtility* pXML)
 	{
 		return false;
 	}
+	// make the yield aware of it's own YieldType
+	static int YieldType = 0;
+	this->m_YieldType = (YieldTypes)YieldType++;
+
 	pXML->GetChildXmlValByName(&m_iBuyPriceLow, "iBuyPriceLow");
 	pXML->GetChildXmlValByName(&m_iBuyPriceHigh, "iBuyPriceHigh");
 	pXML->GetChildXmlValByName(&m_iSellPriceDifference, "iSellPriceDifference");
@@ -9818,15 +9887,15 @@ bool CvYieldInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iWaterTextureIndex, "iWaterTextureIndex");
 	pXML->GetChildXmlValByName(&m_iPowerValue, "iPower");
 	pXML->GetChildXmlValByName(&m_iAssetValue, "iAsset");
-	pXML->GetChildXmlValByName(&m_bCargo, "bCargo");
+	//pXML->GetChildXmlValByName(&m_bCargo, "bCargo");
 	///TKs Med
 	pXML->GetChildXmlValByName(&m_iLatitudeModifiers, "iLatitudeModifiers");
 	pXML->GetChildXmlValByName(&m_iLatitude, "iLatitude");
 
-	pXML->GetChildXmlValByName(&m_bIsArmor, "bIsArmor");
+	//pXML->GetChildXmlValByName(&m_bIsArmor, "bIsArmor");
 	pXML->GetChildXmlValByName(&m_bIsMilitary, "bIsMilitary");
 	pXML->GetChildXmlValByName(&m_bIsNativeTrade, "bIsNativeTrade");
-	pXML->GetChildXmlValByName(&m_bIsMustBeDiscovered, "bIsMustBeDiscovered");
+	//pXML->GetChildXmlValByName(&m_bIsMustBeDiscovered, "bIsMustBeDiscovered");
 	pXML->SetVariableListTagPair(&m_aiTradeScreenPrice, "TradeScreenTypes", NUM_TRADE_SCREEN_TYPES, 0);
 	///Tke
 	pXML->GetChildXmlValByName(m_szIcon, "Icon");

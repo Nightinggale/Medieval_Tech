@@ -30,7 +30,7 @@ CvReplayInfo::CvReplayInfo() :
 	m_bMultiplayer(false),
 	m_iStartYear(0)
 {
-	int iSize = GC.getCache_MINIMAP_RENDER_SIZE();
+	int iSize = GC.getXMLval(XML_MINIMAP_RENDER_SIZE);
 	m_nMinimapSize = (iSize * iSize) / 2;
 }
 

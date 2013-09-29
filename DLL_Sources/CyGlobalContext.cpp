@@ -121,11 +121,6 @@ CvTraitInfo* CyGlobalContext::getTraitInfo(int i) const
 
 CvUnitInfo* CyGlobalContext::getUnitInfo(int i) const
 {
-	// cache XML - start - Nightinggale
-	// This is the first function called when opening the Pedia.
-	// Set the cache in case the Pedia in opened from main menu
-	GC.setXMLCache();
-	// cache XML - end - Nightinggale
 	return (i>=0 && i<GC.getNumUnitInfos()) ? &GC.getUnitInfo((UnitTypes) i) : NULL;
 }
 CvSpecialUnitInfo* CyGlobalContext::getSpecialUnitInfo(int i) const
@@ -466,3 +461,23 @@ CvTurnTimerInfo* CyGlobalContext::getTurnTimerInfo(int i) const
 {
 	return &(GC.getTurnTimerInfo((TurnTimerTypes) i));
 }
+
+// python MOD selection - start - Nightinggale
+bool CyGlobalContext::isMedievalConquest() const
+{
+#ifdef MEDIEVAL_TECH
+	return true;
+#else
+	return false;
+#endif
+}
+
+bool CyGlobalContext::isColonization2071() const
+{
+#ifdef COLONIZATION_2071
+	return true;
+#else
+	return false;
+#endif
+}
+// python MOD selection - end - Nightinggale

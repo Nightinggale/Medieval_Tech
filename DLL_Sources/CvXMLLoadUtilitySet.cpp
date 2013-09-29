@@ -576,6 +576,8 @@ bool CvXMLLoadUtility::SetPostGlobalsGlobalDefines()
 			GC.getDefinesVarSystem()->SetValue("WATER_UNIT_FACING_DIRECTION", DIRECTION_SOUTH);
 		}
 
+		GC.cacheXMLval(); // cache XML - Nightinggale
+
 		return true;
 	}
 
@@ -817,14 +819,19 @@ bool CvXMLLoadUtility::LoadBasicInfos()
 	FAssertMsg(GC.getNumMonthInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
 	LoadGlobalClassInfo(GC.getDenialInfo(), "CIV4DenialInfos", "BasicInfos", "Civ4DenialInfos/DenialInfos/DenialInfo", NULL);
 	FAssertMsg(GC.getNumDenialInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	GC.CheckEnumDenialTypes(); // XML enum check - Nightinggale
 	LoadGlobalClassInfo(GC.getInvisibleInfo(), "CIV4InvisibleInfos", "BasicInfos", "Civ4InvisibleInfos/InvisibleInfos/InvisibleInfo", NULL);
 	FAssertMsg(GC.getNumInvisibleInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
 	LoadGlobalClassInfo(GC.getUnitCombatInfo(), "CIV4UnitCombatInfos", "BasicInfos", "Civ4UnitCombatInfos/UnitCombatInfos/UnitCombatInfo", NULL);
 	FAssertMsg(GC.getNumUnitCombatInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
 	LoadGlobalClassInfo(GC.getDomainInfo(), "CIV4DomainInfos", "BasicInfos", "Civ4DomainInfos/DomainInfos/DomainInfo", NULL);
+	GC.CheckEnumDomainTypes(); // XML enum check - Nightinggale
 	LoadGlobalClassInfo(GC.getUnitAIInfo(), "CIV4UnitAIInfos", "BasicInfos", "Civ4UnitAIInfos/UnitAIInfos/UnitAIInfo", NULL);
+	GC.CheckEnumUnitAITypes(); // XML enum check - Nightinggale
 	LoadGlobalClassInfo(GC.getAttitudeInfo(), "CIV4AttitudeInfos", "BasicInfos", "Civ4AttitudeInfos/AttitudeInfos/AttitudeInfo", NULL);
+	GC.CheckEnumAttitudeTypes(); // XML enum check - Nightinggale
 	LoadGlobalClassInfo(GC.getMemoryInfo(), "CIV4MemoryInfos", "BasicInfos", "Civ4MemoryInfos/MemoryInfos/MemoryInfo", NULL);
+	GC.CheckEnumMemoryTypes(); // XML enum check - Nightinggale
 	LoadGlobalClassInfo(GC.getFatherCategoryInfo(), "CIV4FatherCategoryInfos", "BasicInfos", "Civ4FatherCategoryInfos/FatherCategoryInfos/FatherCategoryInfo", NULL);
 	FAssertMsg(GC.getNumFatherCategoryInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
 
@@ -855,6 +862,8 @@ bool CvXMLLoadUtility::LoadPreMenuGlobals()
 	LoadGlobalClassInfo(GC.getBuildingClassInfo(), "CIV4BuildingClassInfos", "Buildings", "Civ4BuildingClassInfos/BuildingClassInfos/BuildingClassInfo", NULL);
 	FAssertMsg(GC.getNumBuildingClassInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
 	LoadGlobalClassInfo(GC.getYieldInfo(), "CIV4YieldInfos", "Terrain", "Civ4YieldInfos/YieldInfos/YieldInfo", NULL);
+	FAssertMsg(GC.getYieldInfo().size() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	GC.CheckEnumYieldTypes(); // XML enum check - Nightinggale
 	LoadGlobalClassInfo(GC.getAlarmInfo(), "CIV4AlarmInfos", "Civilizations", "Civ4AlarmInfos/AlarmInfos/AlarmInfo", NULL);
 	FAssertMsg(GC.getNumAlarmInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
 	LoadGlobalClassInfo(GC.getGameSpeedInfo(), "CIV4GameSpeedInfo", "GameInfo", "Civ4GameSpeedInfo/GameSpeedInfos/GameSpeedInfo", NULL);
@@ -863,6 +872,7 @@ bool CvXMLLoadUtility::LoadPreMenuGlobals()
 	FAssertMsg(GC.getNumTurnTimerInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
 	LoadGlobalClassInfo(GC.getWorldInfo(), "CIV4WorldInfo", "GameInfo", "Civ4WorldInfo/WorldInfos/WorldInfo", NULL);
 	FAssertMsg(GC.getNumWorldInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	GC.CheckEnumWorldSizeTypes(); // XML enum check - Nightinggale
 	LoadGlobalClassInfo(GC.getClimateInfo(), "CIV4ClimateInfo", "GameInfo", "Civ4ClimateInfo/ClimateInfos/ClimateInfo", NULL);
 	FAssertMsg(GC.getNumClimateInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
 	LoadGlobalClassInfo(GC.getSeaLevelInfo(), "CIV4SeaLevelInfo", "GameInfo", "Civ4SeaLevelInfo/SeaLevelInfos/SeaLevelInfo", NULL);
@@ -954,10 +964,12 @@ bool CvXMLLoadUtility::LoadPreMenuGlobals()
 
 	LoadGlobalClassInfo(GC.getGameOptionInfo(), "CIV4GameOptionInfos", "GameInfo", "Civ4GameOptionInfos/GameOptionInfos/GameOptionInfo", NULL);
 	FAssertMsg(GC.getNumGameOptionInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	GC.CheckEnumGameOptionTypes(); // XML enum check - Nightinggale
 	LoadGlobalClassInfo(GC.getMPOptionInfo(), "CIV4MPOptionInfos", "GameInfo", "Civ4MPOptionInfos/MPOptionInfos/MPOptionInfo", NULL);
 	FAssertMsg(GC.getNumMPOptionInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
 	LoadGlobalClassInfo(GC.getForceControlInfo(), "CIV4ForceControlInfos", "GameInfo", "Civ4ForceControlInfos/ForceControlInfos/ForceControlInfo", NULL);
 	FAssertMsg(GC.getNumForceControlInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	GC.CheckEnumForceControlTypes(); // XML enum check - Nightinggale
 
 	// add types to global var system
 	for (int i = 0; i < GC.getNumCursorInfos(); ++i)
@@ -972,6 +984,7 @@ bool CvXMLLoadUtility::LoadPreMenuGlobals()
 		}
 		GC.getDefinesVarSystem()->SetValue(szType, i);
 	}
+
 
 	UpdateProgressCB("GlobalOther");
 
@@ -1030,14 +1043,18 @@ bool CvXMLLoadUtility::LoadPostMenuGlobals()
 	UpdateProgressCB("Global Other");
 
 	LoadGlobalClassInfo(GC.getMissionInfo(), "CIV4MissionInfos", "Units", "Civ4MissionInfos/MissionInfos/MissionInfo", NULL);
+	GC.CheckEnumMissionTypes(); // XML enum check - Nightinggale
 	LoadGlobalClassInfo(GC.getControlInfo(), "CIV4ControlInfos", "Units", "Civ4ControlInfos/ControlInfos/ControlInfo", NULL);
+	GC.CheckEnumControlTypes(); // XML enum check - Nightinggale
 	LoadGlobalClassInfo(GC.getCommandInfo(), "CIV4CommandInfos", "Units", "Civ4CommandInfos/CommandInfos/CommandInfo", NULL);
+	GC.CheckEnumCommandTypes(); // XML enum check - Nightinggale
 	LoadGlobalClassInfo(GC.getAutomateInfo(), "CIV4AutomateInfos", "Units", "Civ4AutomateInfos/AutomateInfos/AutomateInfo", NULL);
 	FAssertMsg(GC.getNumAutomateInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
 
 	UpdateProgressCB("Global Interface");
 
 	LoadGlobalClassInfo(GC.getInterfaceModeInfo(), "CIV4InterfaceModeInfos", "Interface", "Civ4InterfaceModeInfos/InterfaceModeInfos/InterfaceModeInfo", NULL);
+	GC.CheckEnumInterfaceModeTypes(); // XML enum check - Nightinggale
 
 	SetGlobalActionInfo();
 
@@ -2131,6 +2148,7 @@ DllExport bool CvXMLLoadUtility::LoadPlayerOptions()
 
 	LoadGlobalClassInfo(GC.getPlayerOptionInfo(), "CIV4PlayerOptionInfos", "GameInfo", "Civ4PlayerOptionInfos/PlayerOptionInfos/PlayerOptionInfo", NULL);
 	FAssert(GC.getNumPlayerOptionInfos() == NUM_PLAYEROPTION_TYPES);
+	GC.CheckEnumPlayerOptionTypes(); // XML enum check - Nightinggale
 
 	DestroyFXml();
 	return true;
@@ -2143,6 +2161,7 @@ DllExport bool CvXMLLoadUtility::LoadGraphicOptions()
 
 	LoadGlobalClassInfo(GC.getGraphicOptionInfo(), "CIV4GraphicOptionInfos", "GameInfo", "Civ4GraphicOptionInfos/GraphicOptionInfos/GraphicOptionInfo", NULL);
 	FAssert(GC.getNumGraphicOptions() == NUM_GRAPHICOPTION_TYPES);
+	GC.CheckEnumGraphicOptionTypes(); // XML enum check - Nightinggale
 
 	DestroyFXml();
 	return true;

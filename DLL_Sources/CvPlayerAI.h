@@ -492,3 +492,14 @@ protected:
 #endif
 
 #endif
+
+
+inline bool CvPlayerAI::AI_isYieldForSale(YieldTypes eYield) const
+{
+	return YieldGroup_AI_Sell_To_Europe(eYield) || (isNative() && (eYield == YIELD_TOOLS || eYield ==  YIELD_HORSES));
+}
+
+inline bool CvPlayerAI::AI_shouldBuyFromEurope(YieldTypes eYield) const
+{
+	return YieldGroup_AI_Buy_From_Europe(eYield);
+}

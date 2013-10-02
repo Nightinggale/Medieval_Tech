@@ -987,5 +987,17 @@
 			<Type>INTERFACE_TOTAL_PRODUCTION_BUTTON</Type>
 			<Path>Art/Interface/Screens/City_Management/yields.dds</Path>
 		</InterfaceArtInfo>
+		<InterfaceArtInfo>
+			<Type>INTERFACE_TEACHER_LIST</Type>
+			<Path>Art/Interface/Screens/City_Management/button_teaching.dds</Path>
+		</InterfaceArtInfo>
+		<InterfaceArtInfo>
+			<Type>INTERFACE_CUSTOM_HOUSE</Type>
+			<Path>Art/Interface/Screens/City_Management/button_custom.dds</Path>
+		</InterfaceArtInfo>
+		<InterfaceArtInfo>
+			<Type>INTERFACE_DOMESTIC_MARKET</Type>
+			<Path>Art/Interface/Screens/City_Management/button_market.dds</Path>
+		</InterfaceArtInfo>
 	</InterfaceArtInfos>
 </Civ4ArtDefines>

@@ -139,44 +139,83 @@ BuildingDistance = 18
 BuildingIconSize = 11
 
 # CITY BUILDINGS GRID MAP
-BUILDING_DATA = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+BUILDING_DATA_MC = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
 
 #TKs Med
-BUILDING_DATA[0] = [40, 40, BuildingDistance, BuildingIconSize] #Bells
-BUILDING_DATA[1] = [60, 40, BuildingDistance, BuildingIconSize] #Hammers
-BUILDING_DATA[2] = [40, 0, BuildingDistance, BuildingIconSize] #Hides
-BUILDING_DATA[3] = [0, 60, BuildingDistance, BuildingIconSize] #Cloth
-BUILDING_DATA[4] = [0, 80, BuildingDistance, BuildingIconSize] #Ale
-BUILDING_DATA[5] = [40, 80, BuildingDistance, BuildingIconSize] #Wine
-BUILDING_DATA[6] = [60, 0, BuildingDistance, BuildingIconSize] #Tools
-BUILDING_DATA[7] = [60, 60, BuildingDistance, BuildingIconSize] #Crosses
-BUILDING_DATA[8] = [0, 20, BuildingDistance, BuildingIconSize] #Weapons
-BUILDING_DATA[9] = [0, 0, BuildingDistance, BuildingIconSize] #Horses
-BUILDING_DATA[10] = [80, 40, BuildingDistance, BuildingIconSize] #Drama
-BUILDING_DATA[11] = [60, 80, BuildingDistance, BuildingIconSize] #Inn
-BUILDING_DATA[12] = [80, 60, BuildingDistance, BuildingIconSize] #Education
-BUILDING_DATA[13] = [20, 80, BuildingDistance, BuildingIconSize] #Coats
-BUILDING_DATA[14] = [0, 40, BuildingDistance, BuildingIconSize] #Tavern(Print)
-BUILDING_DATA[15] = [20, 60, BuildingDistance, BuildingIconSize] #Ideas
-BUILDING_DATA[16] = [80, 20, BuildingDistance, BuildingIconSize] #Bread
-BUILDING_DATA[17] = [80, 0, BuildingDistance, BuildingIconSize] #Meat
-BUILDING_DATA[18] = [20, 20, BuildingDistance, BuildingIconSize] #Armor
-BUILDING_DATA[19] = [40, 60, BuildingDistance, BuildingIconSize] #Court
-BUILDING_DATA[20] = [90, 13, BuildingDistance, BuildingIconSize] #Canal
-BUILDING_DATA[21] = [88, 80, BuildingDistance, BuildingIconSize] #Wall
-BUILDING_DATA[22] = [20, 40, BuildingDistance, BuildingIconSize] #Market_Shrine
-BUILDING_DATA[23] = [25, 43, BuildingDistance, BuildingIconSize] #Library
-BUILDING_DATA[24] = [42, 20, BuildingDistance, BuildingIconSize] #Granary
-BUILDING_DATA[25] = [76, 81, BuildingDistance, BuildingIconSize] #Dock
-BUILDING_DATA[26] = [35, 25, BuildingDistance, BuildingIconSize] #Storehouse
-BUILDING_DATA[27] = [68, 28, BuildingDistance, BuildingIconSize] #Windmill
-BUILDING_DATA[28] = [25, 8, BuildingDistance, BuildingIconSize] #Water wheel
-BUILDING_DATA[29] = [20, 0, BuildingDistance, BuildingIconSize] #Siege
-BUILDING_DATA[30] = [59, 22, BuildingDistance, BuildingIconSize] #Bank
+BUILDING_DATA_MC[0] = [40, 40, BuildingDistance, BuildingIconSize] #Bells
+BUILDING_DATA_MC[1] = [60, 40, BuildingDistance, BuildingIconSize] #Hammers
+BUILDING_DATA_MC[2] = [40, 0, BuildingDistance, BuildingIconSize] #Hides
+BUILDING_DATA_MC[3] = [0, 60, BuildingDistance, BuildingIconSize] #Cloth
+BUILDING_DATA_MC[4] = [0, 80, BuildingDistance, BuildingIconSize] #Ale
+BUILDING_DATA_MC[5] = [40, 80, BuildingDistance, BuildingIconSize] #Wine
+BUILDING_DATA_MC[6] = [60, 0, BuildingDistance, BuildingIconSize] #Tools
+BUILDING_DATA_MC[7] = [60, 60, BuildingDistance, BuildingIconSize] #Crosses
+BUILDING_DATA_MC[8] = [0, 20, BuildingDistance, BuildingIconSize] #Weapons
+BUILDING_DATA_MC[9] = [0, 0, BuildingDistance, BuildingIconSize] #Horses
+BUILDING_DATA_MC[10] = [80, 40, BuildingDistance, BuildingIconSize] #Drama
+BUILDING_DATA_MC[11] = [60, 80, BuildingDistance, BuildingIconSize] #Inn
+BUILDING_DATA_MC[12] = [80, 60, BuildingDistance, BuildingIconSize] #Education
+BUILDING_DATA_MC[13] = [20, 80, BuildingDistance, BuildingIconSize] #Coats
+BUILDING_DATA_MC[14] = [0, 40, BuildingDistance, BuildingIconSize] #Tavern(Print)
+BUILDING_DATA_MC[15] = [20, 60, BuildingDistance, BuildingIconSize] #Ideas
+BUILDING_DATA_MC[16] = [80, 20, BuildingDistance, BuildingIconSize] #Bread
+BUILDING_DATA_MC[17] = [80, 0, BuildingDistance, BuildingIconSize] #Meat
+BUILDING_DATA_MC[18] = [20, 20, BuildingDistance, BuildingIconSize] #Armor
+BUILDING_DATA_MC[19] = [40, 60, BuildingDistance, BuildingIconSize] #Court
+BUILDING_DATA_MC[20] = [90, 13, BuildingDistance, BuildingIconSize] #Canal
+BUILDING_DATA_MC[21] = [88, 80, BuildingDistance, BuildingIconSize] #Wall
+BUILDING_DATA_MC[22] = [20, 40, BuildingDistance, BuildingIconSize] #Market_Shrine
+BUILDING_DATA_MC[23] = [25, 43, BuildingDistance, BuildingIconSize] #Library
+BUILDING_DATA_MC[24] = [42, 20, BuildingDistance, BuildingIconSize] #Granary
+BUILDING_DATA_MC[25] = [76, 81, BuildingDistance, BuildingIconSize] #Dock
+BUILDING_DATA_MC[26] = [35, 25, BuildingDistance, BuildingIconSize] #Storehouse
+BUILDING_DATA_MC[27] = [68, 28, BuildingDistance, BuildingIconSize] #Windmill
+BUILDING_DATA_MC[28] = [25, 8, BuildingDistance, BuildingIconSize] #Water wheel
+BUILDING_DATA_MC[29] = [20, 0, BuildingDistance, BuildingIconSize] #Siege
+BUILDING_DATA_MC[30] = [59, 22, BuildingDistance, BuildingIconSize] #Bank
 
 
 BUILDING_GRID = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
 # TK INVENTOR MOD end
+
+# COLONIZATION 2071
+BUILDING_DATA_2071 = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+
+BUILDING_DATA_2071[0] = [40, 40, BuildingDistance, BuildingIconSize] #Bells
+BUILDING_DATA_2071[1] = [60, 40, BuildingDistance, BuildingIconSize] #Hammers
+BUILDING_DATA_2071[2] = [40, 0, BuildingDistance, BuildingIconSize] #Hides
+BUILDING_DATA_2071[3] = [0, 60, BuildingDistance, BuildingIconSize] #Cloth
+BUILDING_DATA_2071[4] = [0, 80, BuildingDistance, BuildingIconSize] #Ale
+BUILDING_DATA_2071[5] = [40, 80, BuildingDistance, BuildingIconSize] #Wine
+BUILDING_DATA_2071[6] = [60, 0, BuildingDistance, BuildingIconSize] #Tools
+BUILDING_DATA_2071[7] = [60, 60, BuildingDistance, BuildingIconSize] #Crosses
+BUILDING_DATA_2071[8] = [0, 20, BuildingDistance, BuildingIconSize] #Weapons
+BUILDING_DATA_2071[9] = [0, 0, BuildingDistance, BuildingIconSize] #Horses
+BUILDING_DATA_2071[10] = [80, 40, BuildingDistance, BuildingIconSize] #Drama
+BUILDING_DATA_2071[11] = [60, 80, BuildingDistance, BuildingIconSize] #Inn
+BUILDING_DATA_2071[12] = [80, 60, BuildingDistance, BuildingIconSize] #Education
+BUILDING_DATA_2071[13] = [20, 80, BuildingDistance, BuildingIconSize] #Coats
+BUILDING_DATA_2071[14] = [0, 40, BuildingDistance, BuildingIconSize] #Tavern(Print)
+BUILDING_DATA_2071[15] = [20, 60, BuildingDistance, BuildingIconSize] #Ideas
+BUILDING_DATA_2071[16] = [80, 20, BuildingDistance, BuildingIconSize] #Bread
+BUILDING_DATA_2071[17] = [80, 0, BuildingDistance, BuildingIconSize] #Meat
+BUILDING_DATA_2071[18] = [20, 20, BuildingDistance, BuildingIconSize] #Armor
+BUILDING_DATA_2071[19] = [40, 60, BuildingDistance, BuildingIconSize] #Court
+BUILDING_DATA_2071[20] = [90, 13, BuildingDistance, BuildingIconSize] #Canal
+BUILDING_DATA_2071[21] = [88, 80, BuildingDistance, BuildingIconSize] #Wall
+BUILDING_DATA_2071[22] = [20, 40, BuildingDistance, BuildingIconSize] #Market_Shrine
+BUILDING_DATA_2071[23] = [25, 43, BuildingDistance, BuildingIconSize] #Library
+BUILDING_DATA_2071[24] = [42, 20, BuildingDistance, BuildingIconSize] #Granary
+BUILDING_DATA_2071[25] = [76, 81, BuildingDistance, BuildingIconSize] #Dock
+BUILDING_DATA_2071[26] = [35, 25, BuildingDistance, BuildingIconSize] #Storehouse
+BUILDING_DATA_2071[27] = [68, 28, BuildingDistance, BuildingIconSize] #Windmill
+BUILDING_DATA_2071[28] = [25, 8, BuildingDistance, BuildingIconSize] #Water wheel
+BUILDING_DATA_2071[29] = [20, 0, BuildingDistance, BuildingIconSize] #Siege
+BUILDING_DATA_2071[30] = [59, 22, BuildingDistance, BuildingIconSize] #Bank
+BUILDING_DATA_2071[31] = [59, 22, BuildingDistance, BuildingIconSize] #Bank
+BUILDING_DATA_2071[32] = [59, 22, BuildingDistance, BuildingIconSize] #Bank
+
+# COLONIZATION 2071
 
 BUILDING_AREA_WIDTH = -1
 BUILDING_AREA_HEIGHT = -1
@@ -426,6 +465,14 @@ class CvMainInterface:
 		CITY_MULTI_TAB_SIZE = (TRANSPORT_AREA_HEIGHT - STACK_BAR_HEIGHT - MAP_EDGE_MARGIN_WIDTH) / 3
 
 		global BUILDING_GRID
+		
+		#TK Med
+		if gc.isMedievalConquest():
+			BUILDING_DATA = BUILDING_DATA_MC
+		elif gc.isColonization2071():
+			BUILDING_DATA = BUILDING_DATA_2071
+		#TKs Med
+			
 		BUILDING_GRID = []
 		for iBUILDING_TYPE in range(len(BUILDING_DATA)):
 			TypeArray = []
@@ -1798,6 +1845,13 @@ class CvMainInterface:
 		screen.hide("ExportTradeRouteText")
 		screen.hide("ImportButton")
 		screen.hide("ExportButton")
+		# teacher list - start - Nightinggale
+		screen.hide("TeacherListButton")
+		# teacher list - end - Nightinggale
+		# R&R, Robert Surcouf, Custom House Popup-Screen START
+		screen.hide("CustomHouseButton")
+		screen.hide("DomesticMarketButton")
+		# R&R, Robert Surcouf, Custom House Popup-Screen END
 		screen.hide("ImportLabel")
 		screen.hide("ExportLabel")
 		screen.hide("CityBuildQueue")
@@ -1927,6 +1981,17 @@ class CvMainInterface:
 						# transport feeder - end - Nightinggale
 						screen.setTableText("ImportTradeRouteText", 0, iImportRow, szImportText, "", WidgetTypes.WIDGET_YIELD_IMPORT_EXPORT, true, -1, CvUtil.FONT_LEFT_JUSTIFY )
 
+				# teacher list - start - Nightinggale
+				screen.setImageButton("TeacherListButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_TEACHER_LIST").getPath(), xResolution - (MAP_EDGE_MARGIN_WIDTH * 2) - 2 * CITY_MULTI_TAB_SIZE, CITY_TITLE_BAR_HEIGHT + CITY_VIEW_BOX_HEIGHT_AND_WIDTH - (MAP_EDGE_MARGIN_WIDTH * 2) + (STACK_BAR_HEIGHT * 3 / 2) + (MAP_EDGE_MARGIN_WIDTH / 2)-(CITY_MULTI_TAB_SIZE / 2), CITY_MULTI_TAB_SIZE, CITY_MULTI_TAB_SIZE, WidgetTypes.WIDGET_TEACHER_LIST, -1, -1)
+				# teacher list - end - Nightinggale
+
+				# R&R, Robert Surcouf, Custom House Popup-Screen START
+				#screen.setButtonGFC("CustomHouseButton", self.setFontSize(localText.getText("TXT_KEY_EDIT_CUSTOM_HOUSE_TEXT", ()), 1), "", CITIZEN_BAR_WIDTH + (MAP_EDGE_MARGIN_WIDTH * 2) + BUILD_AREA_WIDTH/4, CITY_TITLE_BAR_HEIGHT + CITY_VIEW_BOX_HEIGHT_AND_WIDTH + 50, BUILD_AREA_WIDTH - MEDIUM_BUTTON_SIZE+90, 3 * STACK_BAR_HEIGHT / 2, WidgetTypes.WIDGET_CUSTOM_HOUSE, false, -1, ButtonStyles.BUTTON_STYLE_STANDARD)
+				screen.setImageButton("CustomHouseButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_CUSTOM_HOUSE").getPath(), xResolution - (MAP_EDGE_MARGIN_WIDTH * 2) - 2 * CITY_MULTI_TAB_SIZE, CITY_TITLE_BAR_HEIGHT + CITY_VIEW_BOX_HEIGHT_AND_WIDTH - (MAP_EDGE_MARGIN_WIDTH * 2) + (STACK_BAR_HEIGHT * 3 / 2) + (MAP_EDGE_MARGIN_WIDTH / 2)+(CITY_MULTI_TAB_SIZE / 2), CITY_MULTI_TAB_SIZE, CITY_MULTI_TAB_SIZE, WidgetTypes.WIDGET_CUSTOM_HOUSE, -1, -1)
+				#screen.setButtonGFC("DomesticMarketButton", self.setFontSize(localText.getText("TXT_KEY_DOMESTIC_MARKET", ()), 1), "", CITIZEN_BAR_WIDTH + (MAP_EDGE_MARGIN_WIDTH * 2) + BUILD_AREA_WIDTH/4, CITY_TITLE_BAR_HEIGHT + CITY_VIEW_BOX_HEIGHT_AND_WIDTH + 90, BUILD_AREA_WIDTH - MEDIUM_BUTTON_SIZE+90, 3 * STACK_BAR_HEIGHT / 2, WidgetTypes.WIDGET_DOMESTIC_MARKET, false, -1, ButtonStyles.BUTTON_STYLE_STANDARD)
+				screen.setImageButton("DomesticMarketButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_DOMESTIC_MARKET").getPath(), xResolution - (MAP_EDGE_MARGIN_WIDTH * 2) - 2 * CITY_MULTI_TAB_SIZE, CITY_TITLE_BAR_HEIGHT + CITY_VIEW_BOX_HEIGHT_AND_WIDTH - (MAP_EDGE_MARGIN_WIDTH * 2) + (STACK_BAR_HEIGHT * 3 / 2) + (MAP_EDGE_MARGIN_WIDTH / 2)+ 3*(CITY_MULTI_TAB_SIZE / 2), CITY_MULTI_TAB_SIZE, CITY_MULTI_TAB_SIZE, WidgetTypes.WIDGET_DOMESTIC_MARKET, -1, -1)
+				# R&R, Robert Surcouf, Custom House Popup-Screen END
+				
 		# BUILDING MANGMENT PANEL
 			elif BUILDING_MANAGMENT_PANEL_UP:
 				screen.hide("_FXS_Screen_Bogus_Minimap_Name")

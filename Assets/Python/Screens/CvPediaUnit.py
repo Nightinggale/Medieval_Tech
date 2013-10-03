@@ -141,6 +141,30 @@ class CvPediaUnit:
 
 		listName = self.top.getNextWidgetName()
 		szSpecialText = CyGameTextMgr().getUnitHelp( self.iUnit, True, False, None )[1:]
+		
+		# TAC/Ronnar Start
+		# Lightly modified by Nightinggale
+		# Check which school is needed to train this unit
+		TeachLevel = gc.getUnitInfo(self.iUnit).getTeachLevel()
+		if (TeachLevel < 100): 
+			for iBuilding in range(gc.getNumBuildingInfos()):
+				if (gc.getBuildingInfo(iBuilding).getTeachLevel() >= TeachLevel):
+					szSpecialText += "\n" + localText.getText("TXT_KEY_SCHOOL_BUILDING_NEEDED", (gc.getBuildingInfo(iBuilding).getDescription(), ))
+		# TAC/Ronnar End
+		
+## Pedia - Unit source - Start Nightinggale
+		if gc.getUnitInfo(self.iUnit).getImmigrationWeight():
+			szSpecialText += "\n" +	localText.getText("TXT_KEY_UNIT_MIGRATES", ())
+		if gc.getUnitInfo(self.iUnit).getEuropeCost() > 0:
+			szSpecialText += "\n" +	localText.getText("TXT_KEY_UNIT_BUYABLE_IN_EUROPE", ())
+		trainableAtNatives = False
+		for iCiv in range(gc.getNumCivilizationInfos()):
+			if gc.getCivilizationInfo(iCiv).isNative():
+				if gc.getCivilizationInfo(iCiv).getTeachUnitClassWeight(gc.getUnitInfo(self.iUnit).getUnitClassType()) > 0:
+					trainableAtNatives = True
+		if trainableAtNatives:
+			szSpecialText += "\n" + localText.getText("TXT_KEY_UNIT_TAUGHT_BY_NATIVES", ())
+## Pedia - Unit source - End Nightinggale
 		screen.addMultilineText(listName, szSpecialText, self.X_SPECIAL_PANE + 15, self.Y_SPECIAL_PANE + 40, self.W_SPECIAL_PANE - 30, self.H_SPECIAL_PANE - 60, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 
 	def placeHistory(self):

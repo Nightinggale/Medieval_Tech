@@ -5,66 +5,66 @@
 <!-- -->
 <!-- Sea Level -->
 <Civ4EuropeInfo xmlns="x-schema:CIV4GameInfoSchema.xml">
-	<EuropeInfos>
-		<EuropeInfo>
-			<Type>EUROPE_EAST</Type>
-			<Description>Spice Route East</Description>
-			<Direction>east</Direction>
-			<bStart>1</bStart>
-			<iTripLength>3</iTripLength>
-			<iMinLandDistance>0</iMinLandDistance>
-			<iWidthPercent>20</iWidthPercent>
+<EuropeInfos>
+<EuropeInfo>
+<Type>EUROPE_EAST</Type>
+<Description>Spice Route East</Description>
+<Direction>east</Direction>
+<bStart>1</bStart>
+<iTripLength>3</iTripLength>
+<iMinLandDistance>0</iMinLandDistance>
+<iWidthPercent>20</iWidthPercent>
       <TradeScreenTypes>
         <TradeScreenType>
           <TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
           <bValue>1</bValue>
         </TradeScreenType>
       </TradeScreenTypes>
-		</EuropeInfo>
-		<EuropeInfo>
-			<Type>EUROPE_WEST</Type>
-			<Description>Spice Route West</Description>
-			<Direction>west</Direction>
-			<bStart>1</bStart>
-			<iTripLength>3</iTripLength>
-			<iMinLandDistance>0</iMinLandDistance>
-			<iWidthPercent>20</iWidthPercent>
+</EuropeInfo>
+<EuropeInfo>
+<Type>EUROPE_WEST</Type>
+<Description>Spice Route West</Description>
+<Direction>west</Direction>
+<bStart>1</bStart>
+<iTripLength>3</iTripLength>
+<iMinLandDistance>0</iMinLandDistance>
+<iWidthPercent>20</iWidthPercent>
       <TradeScreenTypes>
         <TradeScreenType>
           <TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
           <bValue>1</bValue>
         </TradeScreenType>
       </TradeScreenTypes>
-		</EuropeInfo>
-		<EuropeInfo>
-			<Type>EUROPE_NORTH</Type>
-			<Description>Silk Road North</Description>
-			<Direction>north</Direction>
-			<bStart>1</bStart>
-			<iTripLength>3</iTripLength>
-			<iMinLandDistance>0</iMinLandDistance>
-			<iWidthPercent>20</iWidthPercent>
+</EuropeInfo>
+<EuropeInfo>
+<Type>EUROPE_NORTH</Type>
+<Description>Silk Road North</Description>
+<Direction>north</Direction>
+<bStart>1</bStart>
+<iTripLength>3</iTripLength>
+<iMinLandDistance>0</iMinLandDistance>
+<iWidthPercent>20</iWidthPercent>
       <TradeScreenTypes>
         <TradeScreenType>
           <TradeScreen>TRADE_SCREEN_SILK_ROAD</TradeScreen>
           <bValue>1</bValue>
         </TradeScreenType>
       </TradeScreenTypes>
-		</EuropeInfo>
-		<EuropeInfo>
-			<Type>EUROPE_SOUTH</Type>
-			<Description>Silk Road South</Description>
-			<Direction>south</Direction>
-			<bStart>1</bStart>
-			<iTripLength>3</iTripLength>
-			<iMinLandDistance>0</iMinLandDistance>
-			<iWidthPercent>20</iWidthPercent>
+</EuropeInfo>
+<EuropeInfo>
+<Type>EUROPE_SOUTH</Type>
+<Description>Silk Road South</Description>
+<Direction>south</Direction>
+<bStart>1</bStart>
+<iTripLength>3</iTripLength>
+<iMinLandDistance>0</iMinLandDistance>
+<iWidthPercent>20</iWidthPercent>
       <TradeScreenTypes>
         <TradeScreenType>
           <TradeScreen>TRADE_SCREEN_SILK_ROAD</TradeScreen>
           <bValue>1</bValue>
         </TradeScreenType>
       </TradeScreenTypes>
-		</EuropeInfo>
-	</EuropeInfos>
+</EuropeInfo>
+</EuropeInfos>
 </Civ4EuropeInfo>

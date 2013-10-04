@@ -148,7 +148,7 @@
     </InterfaceArtInfo>
     <InterfaceArtInfo>
       <Type>INTERFACE_INVENTIONS_TOP_BUTTON</Type>
-      <Path>Art/Buttons/InventionTopBut.dds</Path>
+      <Path>Art/Interface/game hud/top_buttons/Research.dds</Path>
     </InterfaceArtInfo>
     <InterfaceArtInfo>
       <Type>INTERFACE_TRADE_TOP_BUTTON</Type>

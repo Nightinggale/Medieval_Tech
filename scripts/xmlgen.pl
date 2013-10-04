@@ -918,12 +918,16 @@ foreach $item (@allbuildings)
 		print SBI "\t".'<Button>,/Art/Buttons/Yields/'.$item.'.dds</Button>'."\n";
 		print SBI "</SpecialBuildingInfo>\n";
 	# make level 1 building
-		if ($tag=~/TOOLS/ or $tag=~/MUNITIONS/ or $tag=~/ROBOTICS/) {$suffix = 'Workshop';}
-		else {$suffix = 'Facility'};
-		my $bdesc = $desc.' '.$suffix;
+		if ($item=~/TOOLS/ or $item=~/MUNITIONS/ or $item=~/ROBOTICS/) {
+			$suffix = 'Workshop';
+			} else {
+			$suffix = 'Facility';
+			}
+		$bdesc = $desc.' '.$suffix;
 		if (A($bdesc) =~ /^(\w+?) / ) {$article = $1;}
-		my $plural = $desc.' '.PL_N($suffix);
-		$tag = $item.'1';}
+		$plural = $desc.' '.PL_N($suffix);
+		$tag = $item.'1';
+		}
 	else
 		{$tag = $item;}
 	print BI "<BuildingInfo>\n";	

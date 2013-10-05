@@ -42,9 +42,27 @@
           <FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
         </FreeUnitClass>
       </FreeUnitClasses>
-      <FreeBuildingClasses/>
+<FreeBuildingClasses>
+<FreeBuildingClass>
+<BuildingClassType>BUILDINGCLASS_INDUSTRY1</BuildingClassType>
+<bFreeBuildingClass>1</bFreeBuildingClass>
+</FreeBuildingClass>
+</FreeBuildingClasses> 
       <TeachUnitClasses/>
-      <FreeYields/>
+      <FreeYields>
+        <FreeYield>
+          <YieldType>YIELD_INDUSTRY</YieldType>
+          <iYield>1</iYield>
+        </FreeYield>
+        <FreeYield>
+          <YieldType>YIELD_MEDIA</YieldType>
+          <iYield>1</iYield>
+        </FreeYield>
+        <FreeYield>
+          <YieldType>YIELD_NUTRIENTS</YieldType>
+          <iYield>1</iYield>
+        </FreeYield>
+      </FreeYields>
       <CapturedCityUnitClass>NONE</CapturedCityUnitClass>
       <InitialCivics/>
       <Leaders>
@@ -94,9 +112,27 @@
           <FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
         </FreeUnitClass>
       </FreeUnitClasses>
-      <FreeBuildingClasses/>
+<FreeBuildingClasses>
+<FreeBuildingClass>
+<BuildingClassType>BUILDINGCLASS_INDUSTRY1</BuildingClassType>
+<bFreeBuildingClass>1</bFreeBuildingClass>
+</FreeBuildingClass>
+</FreeBuildingClasses> 
       <TeachUnitClasses/>
-      <FreeYields/>
+      <FreeYields>
+        <FreeYield>
+          <YieldType>YIELD_INDUSTRY</YieldType>
+          <iYield>1</iYield>
+        </FreeYield>
+        <FreeYield>
+          <YieldType>YIELD_MEDIA</YieldType>
+          <iYield>1</iYield>
+        </FreeYield>
+        <FreeYield>
+          <YieldType>YIELD_NUTRIENTS</YieldType>
+          <iYield>1</iYield>
+        </FreeYield>
+      </FreeYields>
       <CapturedCityUnitClass>NONE</CapturedCityUnitClass>
       <InitialCivics/>
       <Leaders>
@@ -146,9 +182,27 @@
           <FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
         </FreeUnitClass>
       </FreeUnitClasses>
-      <FreeBuildingClasses/>
+<FreeBuildingClasses>
+<FreeBuildingClass>
+<BuildingClassType>BUILDINGCLASS_INDUSTRY1</BuildingClassType>
+<bFreeBuildingClass>1</bFreeBuildingClass>
+</FreeBuildingClass>
+</FreeBuildingClasses> 
       <TeachUnitClasses/>
-      <FreeYields/>
+      <FreeYields>
+        <FreeYield>
+          <YieldType>YIELD_INDUSTRY</YieldType>
+          <iYield>1</iYield>
+        </FreeYield>
+        <FreeYield>
+          <YieldType>YIELD_MEDIA</YieldType>
+          <iYield>1</iYield>
+        </FreeYield>
+        <FreeYield>
+          <YieldType>YIELD_NUTRIENTS</YieldType>
+          <iYield>1</iYield>
+        </FreeYield>
+      </FreeYields>
       <CapturedCityUnitClass>NONE</CapturedCityUnitClass>
       <InitialCivics/>
       <Leaders>
@@ -198,9 +252,27 @@
           <FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
         </FreeUnitClass>
       </FreeUnitClasses>
-      <FreeBuildingClasses/>
+<FreeBuildingClasses>
+<FreeBuildingClass>
+<BuildingClassType>BUILDINGCLASS_INDUSTRY1</BuildingClassType>
+<bFreeBuildingClass>1</bFreeBuildingClass>
+</FreeBuildingClass>
+</FreeBuildingClasses> 
       <TeachUnitClasses/>
-      <FreeYields/>
+      <FreeYields>
+        <FreeYield>
+          <YieldType>YIELD_INDUSTRY</YieldType>
+          <iYield>1</iYield>
+        </FreeYield>
+        <FreeYield>
+          <YieldType>YIELD_MEDIA</YieldType>
+          <iYield>1</iYield>
+        </FreeYield>
+        <FreeYield>
+          <YieldType>YIELD_NUTRIENTS</YieldType>
+          <iYield>1</iYield>
+        </FreeYield>
+      </FreeYields>
       <CapturedCityUnitClass>NONE</CapturedCityUnitClass>
       <InitialCivics/>
       <Leaders>

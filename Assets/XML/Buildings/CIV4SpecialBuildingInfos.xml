@@ -12,7 +12,7 @@
 	<bValid>1</bValid>
 	<FontButtonIndex>2</FontButtonIndex>
 	<ProductionTraits/>
-	<Button>,/Art/Buttons/Yields/MACHINE_TOOLS.dds</Button>
+	<Button>Art/Buttons/Yields/MACHINE_TOOLS.dds</Button>
 </SpecialBuildingInfo>
 <SpecialBuildingInfo>
 	<Type>SPECIALBUILDING_ROBOTICS</Type>
@@ -20,7 +20,7 @@
 	<bValid>1</bValid>
 	<FontButtonIndex>3</FontButtonIndex>
 	<ProductionTraits/>
-	<Button>,/Art/Buttons/Yields/ROBOTICS.dds</Button>
+	<Button>Art/Buttons/Yields/ROBOTICS.dds</Button>
 </SpecialBuildingInfo>
 <SpecialBuildingInfo>
 	<Type>SPECIALBUILDING_MUNITIONS</Type>
@@ -28,7 +28,7 @@
 	<bValid>1</bValid>
 	<FontButtonIndex>4</FontButtonIndex>
 	<ProductionTraits/>
-	<Button>,/Art/Buttons/Yields/MUNITIONS.dds</Button>
+	<Button>Art/Buttons/Yields/MUNITIONS.dds</Button>
 </SpecialBuildingInfo>
 <SpecialBuildingInfo>
 	<Type>SPECIALBUILDING_PHOTONICS</Type>
@@ -36,7 +36,7 @@
 	<bValid>1</bValid>
 	<FontButtonIndex>5</FontButtonIndex>
 	<ProductionTraits/>
-	<Button>,/Art/Buttons/Yields/PHOTONICS.dds</Button>
+	<Button>Art/Buttons/Yields/PHOTONICS.dds</Button>
 </SpecialBuildingInfo>
 <SpecialBuildingInfo>
 	<Type>SPECIALBUILDING_HARD_CURRENCY</Type>
@@ -44,7 +44,7 @@
 	<bValid>1</bValid>
 	<FontButtonIndex>6</FontButtonIndex>
 	<ProductionTraits/>
-	<Button>,/Art/Buttons/Yields/HARD_CURRENCY.dds</Button>
+	<Button>Art/Buttons/Yields/HARD_CURRENCY.dds</Button>
 </SpecialBuildingInfo>
 <SpecialBuildingInfo>
 	<Type>SPECIALBUILDING_PLASTEEL</Type>
@@ -52,7 +52,7 @@
 	<bValid>1</bValid>
 	<FontButtonIndex>7</FontButtonIndex>
 	<ProductionTraits/>
-	<Button>,/Art/Buttons/Yields/PLASTEEL.dds</Button>
+	<Button>Art/Buttons/Yields/PLASTEEL.dds</Button>
 </SpecialBuildingInfo>
 <SpecialBuildingInfo>
 	<Type>SPECIALBUILDING_DURALLOY</Type>
@@ -60,7 +60,7 @@
 	<bValid>1</bValid>
 	<FontButtonIndex>8</FontButtonIndex>
 	<ProductionTraits/>
-	<Button>,/Art/Buttons/Yields/DURALLOY.dds</Button>
+	<Button>Art/Buttons/Yields/DURALLOY.dds</Button>
 </SpecialBuildingInfo>
 <SpecialBuildingInfo>
 	<Type>SPECIALBUILDING_CRYSTALLOY</Type>
@@ -68,7 +68,7 @@
 	<bValid>1</bValid>
 	<FontButtonIndex>9</FontButtonIndex>
 	<ProductionTraits/>
-	<Button>,/Art/Buttons/Yields/CRYSTALLOY.dds</Button>
+	<Button>Art/Buttons/Yields/CRYSTALLOY.dds</Button>
 </SpecialBuildingInfo>
 <SpecialBuildingInfo>
 	<Type>SPECIALBUILDING_NUCLEONICS</Type>
@@ -76,7 +76,7 @@
 	<bValid>1</bValid>
 	<FontButtonIndex>10</FontButtonIndex>
 	<ProductionTraits/>
-	<Button>,/Art/Buttons/Yields/NUCLEONICS.dds</Button>
+	<Button>Art/Buttons/Yields/NUCLEONICS.dds</Button>
 </SpecialBuildingInfo>
 <SpecialBuildingInfo>
 	<Type>SPECIALBUILDING_FUSION_CORES</Type>
@@ -84,7 +84,7 @@
 	<bValid>1</bValid>
 	<FontButtonIndex>11</FontButtonIndex>
 	<ProductionTraits/>
-	<Button>,/Art/Buttons/Yields/FUSION_CORES.dds</Button>
+	<Button>Art/Buttons/Yields/FUSION_CORES.dds</Button>
 </SpecialBuildingInfo>
 <SpecialBuildingInfo>
 	<Type>SPECIALBUILDING_SEMICONDUCTORS</Type>
@@ -92,7 +92,7 @@
 	<bValid>1</bValid>
 	<FontButtonIndex>12</FontButtonIndex>
 	<ProductionTraits/>
-	<Button>,/Art/Buttons/Yields/SEMICONDUCTORS.dds</Button>
+	<Button>Art/Buttons/Yields/SEMICONDUCTORS.dds</Button>
 </SpecialBuildingInfo>
 <SpecialBuildingInfo>
 	<Type>SPECIALBUILDING_PLASMIDS</Type>
@@ -100,7 +100,7 @@
 	<bValid>1</bValid>
 	<FontButtonIndex>13</FontButtonIndex>
 	<ProductionTraits/>
-	<Button>,/Art/Buttons/Yields/PLASMIDS.dds</Button>
+	<Button>Art/Buttons/Yields/PLASMIDS.dds</Button>
 </SpecialBuildingInfo>
 <SpecialBuildingInfo>
 	<Type>SPECIALBUILDING_ENZYMES</Type>
@@ -108,7 +108,7 @@
 	<bValid>1</bValid>
 	<FontButtonIndex>14</FontButtonIndex>
 	<ProductionTraits/>
-	<Button>,/Art/Buttons/Yields/ENZYMES.dds</Button>
+	<Button>Art/Buttons/Yields/ENZYMES.dds</Button>
 </SpecialBuildingInfo>
 <SpecialBuildingInfo>
 	<Type>SPECIALBUILDING_STEM_CELLS</Type>
@@ -116,7 +116,7 @@
 	<bValid>1</bValid>
 	<FontButtonIndex>15</FontButtonIndex>
 	<ProductionTraits/>
-	<Button>,/Art/Buttons/Yields/STEM_CELLS.dds</Button>
+	<Button>Art/Buttons/Yields/STEM_CELLS.dds</Button>
 </SpecialBuildingInfo>
 <SpecialBuildingInfo>
 	<Type>SPECIALBUILDING_STATE_SECRETS</Type>
@@ -124,7 +124,7 @@
 	<bValid>1</bValid>
 	<FontButtonIndex>16</FontButtonIndex>
 	<ProductionTraits/>
-	<Button>,/Art/Buttons/Yields/STATE_SECRETS.dds</Button>
+	<Button>Art/Buttons/Yields/STATE_SECRETS.dds</Button>
 </SpecialBuildingInfo>
 <SpecialBuildingInfo>
 	<Type>SPECIALBUILDING_PROGENITOR_TECH</Type>
@@ -132,7 +132,7 @@
 	<bValid>1</bValid>
 	<FontButtonIndex>17</FontButtonIndex>
 	<ProductionTraits/>
-	<Button>,/Art/Buttons/Yields/PROGENITOR_TECH.dds</Button>
+	<Button>Art/Buttons/Yields/PROGENITOR_TECH.dds</Button>
 </SpecialBuildingInfo>
 <SpecialBuildingInfo>
 	<Type>SPECIALBUILDING_ALIEN_RELICS</Type>
@@ -140,7 +140,7 @@
 	<bValid>1</bValid>
 	<FontButtonIndex>18</FontButtonIndex>
 	<ProductionTraits/>
-	<Button>,/Art/Buttons/Yields/ALIEN_RELICS.dds</Button>
+	<Button>Art/Buttons/Yields/ALIEN_RELICS.dds</Button>
 </SpecialBuildingInfo>
 <SpecialBuildingInfo>
 	<Type>SPECIALBUILDING_NARCOTICS</Type>
@@ -148,7 +148,7 @@
 	<bValid>1</bValid>
 	<FontButtonIndex>19</FontButtonIndex>
 	<ProductionTraits/>
-	<Button>,/Art/Buttons/Yields/NARCOTICS.dds</Button>
+	<Button>Art/Buttons/Yields/NARCOTICS.dds</Button>
 </SpecialBuildingInfo>
 <SpecialBuildingInfo>
 	<Type>SPECIALBUILDING_BIOWEAPONS</Type>
@@ -156,7 +156,7 @@
 	<bValid>1</bValid>
 	<FontButtonIndex>20</FontButtonIndex>
 	<ProductionTraits/>
-	<Button>,/Art/Buttons/Yields/BIOWEAPONS.dds</Button>
+	<Button>Art/Buttons/Yields/BIOWEAPONS.dds</Button>
 </SpecialBuildingInfo>
 <SpecialBuildingInfo>
 	<Type>SPECIALBUILDING_PHARMACEUTICALS</Type>
@@ -164,7 +164,7 @@
 	<bValid>1</bValid>
 	<FontButtonIndex>21</FontButtonIndex>
 	<ProductionTraits/>
-	<Button>,/Art/Buttons/Yields/PHARMACEUTICALS.dds</Button>
+	<Button>Art/Buttons/Yields/PHARMACEUTICALS.dds</Button>
 </SpecialBuildingInfo>
 <SpecialBuildingInfo>
 	<Type>SPECIALBUILDING_PETROCHEMICALS</Type>
@@ -172,7 +172,7 @@
 	<bValid>1</bValid>
 	<FontButtonIndex>22</FontButtonIndex>
 	<ProductionTraits/>
-	<Button>,/Art/Buttons/Yields/PETROCHEMICALS.dds</Button>
+	<Button>Art/Buttons/Yields/PETROCHEMICALS.dds</Button>
 </SpecialBuildingInfo>
 <SpecialBuildingInfo>
 	<Type>SPECIALBUILDING_COLLOIDS</Type>
@@ -180,7 +180,7 @@
 	<bValid>1</bValid>
 	<FontButtonIndex>23</FontButtonIndex>
 	<ProductionTraits/>
-	<Button>,/Art/Buttons/Yields/COLLOIDS.dds</Button>
+	<Button>Art/Buttons/Yields/COLLOIDS.dds</Button>
 </SpecialBuildingInfo>
 <SpecialBuildingInfo>
 	<Type>SPECIALBUILDING_CATALYSTS</Type>
@@ -188,7 +188,7 @@
 	<bValid>1</bValid>
 	<FontButtonIndex>24</FontButtonIndex>
 	<ProductionTraits/>
-	<Button>,/Art/Buttons/Yields/CATALYSTS.dds</Button>
+	<Button>Art/Buttons/Yields/CATALYSTS.dds</Button>
 </SpecialBuildingInfo>
 <SpecialBuildingInfo>
 	<Type>SPECIALBUILDING_INDUSTRY</Type>
@@ -196,7 +196,7 @@
 	<bValid>1</bValid>
 	<FontButtonIndex>25</FontButtonIndex>
 	<ProductionTraits/>
-	<Button>,/Art/Buttons/Yields/INDUSTRY.dds</Button>
+	<Button>Art/Buttons/Yields/INDUSTRY.dds</Button>
 </SpecialBuildingInfo>
 <SpecialBuildingInfo>
 	<Type>SPECIALBUILDING_MEDIA</Type>
@@ -204,7 +204,7 @@
 	<bValid>1</bValid>
 	<FontButtonIndex>26</FontButtonIndex>
 	<ProductionTraits/>
-	<Button>,/Art/Buttons/Yields/MEDIA.dds</Button>
+	<Button>Art/Buttons/Yields/MEDIA.dds</Button>
 </SpecialBuildingInfo>
 <SpecialBuildingInfo>
 	<Type>SPECIALBUILDING_LIBERTY</Type>
@@ -212,7 +212,7 @@
 	<bValid>1</bValid>
 	<FontButtonIndex>27</FontButtonIndex>
 	<ProductionTraits/>
-	<Button>,/Art/Buttons/Yields/LIBERTY.dds</Button>
+	<Button>Art/Buttons/Yields/LIBERTY.dds</Button>
 </SpecialBuildingInfo>
 <SpecialBuildingInfo>
 	<Type>SPECIALBUILDING_RESEARCH</Type>
@@ -220,7 +220,7 @@
 	<bValid>1</bValid>
 	<FontButtonIndex>28</FontButtonIndex>
 	<ProductionTraits/>
-	<Button>,/Art/Buttons/Yields/RESEARCH.dds</Button>
+	<Button>Art/Buttons/Yields/RESEARCH.dds</Button>
 </SpecialBuildingInfo>
 <SpecialBuildingInfo>
 	<Type>SPECIALBUILDING_EDUCATION</Type>
@@ -228,7 +228,7 @@
 	<bValid>1</bValid>
 	<FontButtonIndex>29</FontButtonIndex>
 	<ProductionTraits/>
-	<Button>,/Art/Buttons/Yields/EDUCATION.dds</Button>
+	<Button>Art/Buttons/Yields/EDUCATION.dds</Button>
 </SpecialBuildingInfo>
 <SpecialBuildingInfo>
 	<Type>SPECIALBUILDING_FORT</Type>
@@ -236,7 +236,7 @@
 	<bValid>1</bValid>
 	<FontButtonIndex>30</FontButtonIndex>
 	<ProductionTraits/>
-	<Button>,/Art/Buttons/Yields/FORT.dds</Button>
+	<Button>Art/Buttons/Yields/FORT.dds</Button>
 </SpecialBuildingInfo>
 <SpecialBuildingInfo>
 	<Type>SPECIALBUILDING_DOCK</Type>
@@ -244,7 +244,7 @@
 	<bValid>1</bValid>
 	<FontButtonIndex>31</FontButtonIndex>
 	<ProductionTraits/>
-	<Button>,/Art/Buttons/Yields/DOCK.dds</Button>
+	<Button>Art/Buttons/Yields/DOCK.dds</Button>
 </SpecialBuildingInfo>
 <SpecialBuildingInfo>
 	<Type>SPECIALBUILDING_WAREHOUSE</Type>
@@ -252,7 +252,7 @@
 	<bValid>1</bValid>
 	<FontButtonIndex>32</FontButtonIndex>
 	<ProductionTraits/>
-	<Button>,/Art/Buttons/Yields/WAREHOUSE.dds</Button>
+	<Button>Art/Buttons/Yields/WAREHOUSE.dds</Button>
 </SpecialBuildingInfo>
 <SpecialBuildingInfo>
 	<Type>SPECIALBUILDING_MARKET</Type>
@@ -260,7 +260,7 @@
 	<bValid>1</bValid>
 	<FontButtonIndex>33</FontButtonIndex>
 	<ProductionTraits/>
-	<Button>,/Art/Buttons/Yields/MARKET.dds</Button>
+	<Button>Art/Buttons/Yields/MARKET.dds</Button>
 </SpecialBuildingInfo>
 <SpecialBuildingInfo>
 	<Type>SPECIALBUILDING_PRISON</Type>
@@ -268,7 +268,7 @@
 	<bValid>1</bValid>
 	<FontButtonIndex>34</FontButtonIndex>
 	<ProductionTraits/>
-	<Button>,/Art/Buttons/Yields/PRISON.dds</Button>
+	<Button>Art/Buttons/Yields/PRISON.dds</Button>
 </SpecialBuildingInfo>
 </SpecialBuildingInfos>
 </Civ4SpecialBuildingInfos>

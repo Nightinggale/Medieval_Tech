@@ -11,8 +11,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_NUTRIENTS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>1</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -20,14 +20,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -36,7 +36,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/NUTRIENTS.dds</Button>
+	<Button>Art/Buttons/Yields/NUTRIENTS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_BIOPOLYMERS</Type>
@@ -44,8 +44,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_BIOPOLYMERS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>1</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -53,14 +53,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -69,7 +69,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/BIOPOLYMERS.dds</Button>
+	<Button>Art/Buttons/Yields/BIOPOLYMERS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_BASE_METALS</Type>
@@ -77,8 +77,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_BASE_METALS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>1</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -86,14 +86,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -102,7 +102,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/BASE_METALS.dds</Button>
+	<Button>Art/Buttons/Yields/BASE_METALS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_SILICATES</Type>
@@ -110,8 +110,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_SILICATES_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>1</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -119,14 +119,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -135,7 +135,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/SILICATES.dds</Button>
+	<Button>Art/Buttons/Yields/SILICATES.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_PRECIOUS_METALS</Type>
@@ -143,8 +143,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_PRECIOUS_METALS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>1</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -152,14 +152,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -168,7 +168,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/PRECIOUS_METALS.dds</Button>
+	<Button>Art/Buttons/Yields/PRECIOUS_METALS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_ACTINIDES</Type>
@@ -176,8 +176,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_ACTINIDES_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>1</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -185,14 +185,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -201,7 +201,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/ACTINIDES.dds</Button>
+	<Button>Art/Buttons/Yields/ACTINIDES.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_ISOTOPES</Type>
@@ -209,8 +209,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_ISOTOPES_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>1</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -218,14 +218,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -234,7 +234,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/ISOTOPES.dds</Button>
+	<Button>Art/Buttons/Yields/ISOTOPES.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_RARE_EARTHS</Type>
@@ -242,8 +242,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_RARE_EARTHS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>1</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -251,14 +251,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -267,7 +267,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/RARE_EARTHS.dds</Button>
+	<Button>Art/Buttons/Yields/RARE_EARTHS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_CRYSTALLOIDS</Type>
@@ -275,8 +275,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_CRYSTALLOIDS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>1</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -284,14 +284,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -300,7 +300,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/CRYSTALLOIDS.dds</Button>
+	<Button>Art/Buttons/Yields/CRYSTALLOIDS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_NUCLEIC_ACIDS</Type>
@@ -308,8 +308,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_NUCLEIC_ACIDS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>1</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -317,14 +317,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -333,7 +333,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/NUCLEIC_ACIDS.dds</Button>
+	<Button>Art/Buttons/Yields/NUCLEIC_ACIDS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_AMINO_ACIDS</Type>
@@ -341,8 +341,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_AMINO_ACIDS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>1</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -350,14 +350,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -366,7 +366,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/AMINO_ACIDS.dds</Button>
+	<Button>Art/Buttons/Yields/AMINO_ACIDS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_TISSUE_SAMPLES</Type>
@@ -374,8 +374,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_TISSUE_SAMPLES_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>1</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -383,14 +383,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -399,7 +399,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/TISSUE_SAMPLES.dds</Button>
+	<Button>Art/Buttons/Yields/TISSUE_SAMPLES.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_MICROBES</Type>
@@ -407,8 +407,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_MICROBES_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>1</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -416,14 +416,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -432,7 +432,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/MICROBES.dds</Button>
+	<Button>Art/Buttons/Yields/MICROBES.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_DATACORES</Type>
@@ -440,8 +440,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_DATACORES_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>1</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -449,14 +449,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -465,7 +465,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/DATACORES.dds</Button>
+	<Button>Art/Buttons/Yields/DATACORES.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_PROGENITOR_ARTIFACTS</Type>
@@ -473,8 +473,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_PROGENITOR_ARTIFACTS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>1</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -482,14 +482,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -498,7 +498,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/PROGENITOR_ARTIFACTS.dds</Button>
+	<Button>Art/Buttons/Yields/PROGENITOR_ARTIFACTS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_ALIEN_SPECIMENS</Type>
@@ -506,8 +506,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_ALIEN_SPECIMENS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>1</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -515,14 +515,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -531,7 +531,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/ALIEN_SPECIMENS.dds</Button>
+	<Button>Art/Buttons/Yields/ALIEN_SPECIMENS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_OPIATES</Type>
@@ -539,8 +539,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_OPIATES_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>1</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -548,14 +548,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -564,7 +564,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/OPIATES.dds</Button>
+	<Button>Art/Buttons/Yields/OPIATES.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_XENOTOXINS</Type>
@@ -572,8 +572,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_XENOTOXINS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>1</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -581,14 +581,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -597,7 +597,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/XENOTOXINS.dds</Button>
+	<Button>Art/Buttons/Yields/XENOTOXINS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_BOTANICALS</Type>
@@ -605,8 +605,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_BOTANICALS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>1</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -614,14 +614,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -630,7 +630,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/BOTANICALS.dds</Button>
+	<Button>Art/Buttons/Yields/BOTANICALS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_HYDROCARBONS</Type>
@@ -638,8 +638,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_HYDROCARBONS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>1</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -647,14 +647,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -663,7 +663,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/HYDROCARBONS.dds</Button>
+	<Button>Art/Buttons/Yields/HYDROCARBONS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_CLATHRATES</Type>
@@ -671,8 +671,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_CLATHRATES_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>1</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -680,14 +680,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -696,7 +696,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/CLATHRATES.dds</Button>
+	<Button>Art/Buttons/Yields/CLATHRATES.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_CORE_SAMPLES</Type>
@@ -704,8 +704,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_CORE_SAMPLES_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>1</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -713,14 +713,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -729,7 +729,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/CORE_SAMPLES.dds</Button>
+	<Button>Art/Buttons/Yields/CORE_SAMPLES.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_MACHINE_TOOLS</Type>
@@ -737,8 +737,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_MACHINE_TOOLS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>SPECIALBUILDING_MACHINE_TOOLS</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -746,14 +746,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -762,7 +762,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/MACHINE_TOOLS.dds</Button>
+	<Button>Art/Buttons/Yields/MACHINE_TOOLS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_ROBOTICS</Type>
@@ -770,8 +770,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_ROBOTICS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>SPECIALBUILDING_ROBOTICS</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -779,14 +779,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -795,7 +795,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/ROBOTICS.dds</Button>
+	<Button>Art/Buttons/Yields/ROBOTICS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_MUNITIONS</Type>
@@ -803,8 +803,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_MUNITIONS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>SPECIALBUILDING_MUNITIONS</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -812,14 +812,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -828,7 +828,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/MUNITIONS.dds</Button>
+	<Button>Art/Buttons/Yields/MUNITIONS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_PHOTONICS</Type>
@@ -836,8 +836,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_PHOTONICS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>SPECIALBUILDING_PHOTONICS</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -845,14 +845,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -861,7 +861,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/PHOTONICS.dds</Button>
+	<Button>Art/Buttons/Yields/PHOTONICS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_PLASTEEL</Type>
@@ -869,8 +869,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_PLASTEEL_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>SPECIALBUILDING_PLASTEEL</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -878,14 +878,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -894,7 +894,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/PLASTEEL.dds</Button>
+	<Button>Art/Buttons/Yields/PLASTEEL.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_DURALLOY</Type>
@@ -902,8 +902,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_DURALLOY_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>SPECIALBUILDING_DURALLOY</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -911,14 +911,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -927,7 +927,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/DURALLOY.dds</Button>
+	<Button>Art/Buttons/Yields/DURALLOY.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_CRYSTALLOY</Type>
@@ -935,8 +935,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_CRYSTALLOY_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>SPECIALBUILDING_CRYSTALLOY</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -944,14 +944,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -960,7 +960,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/CRYSTALLOY.dds</Button>
+	<Button>Art/Buttons/Yields/CRYSTALLOY.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_NUCLEONICS</Type>
@@ -968,8 +968,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_NUCLEONICS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>SPECIALBUILDING_NUCLEONICS</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -977,14 +977,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -993,7 +993,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/NUCLEONICS.dds</Button>
+	<Button>Art/Buttons/Yields/NUCLEONICS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_FUSION_CORES</Type>
@@ -1001,8 +1001,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_FUSION_CORES_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>SPECIALBUILDING_FUSION_CORES</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -1010,14 +1010,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -1026,7 +1026,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/FUSION_CORES.dds</Button>
+	<Button>Art/Buttons/Yields/FUSION_CORES.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_SEMICONDUCTORS</Type>
@@ -1034,8 +1034,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_SEMICONDUCTORS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>SPECIALBUILDING_SEMICONDUCTORS</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -1043,14 +1043,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -1059,7 +1059,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/SEMICONDUCTORS.dds</Button>
+	<Button>Art/Buttons/Yields/SEMICONDUCTORS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_PLASMIDS</Type>
@@ -1067,8 +1067,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_PLASMIDS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>SPECIALBUILDING_PLASMIDS</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -1076,14 +1076,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -1092,7 +1092,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/PLASMIDS.dds</Button>
+	<Button>Art/Buttons/Yields/PLASMIDS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_ENZYMES</Type>
@@ -1100,8 +1100,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_ENZYMES_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>SPECIALBUILDING_ENZYMES</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -1109,14 +1109,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -1125,7 +1125,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/ENZYMES.dds</Button>
+	<Button>Art/Buttons/Yields/ENZYMES.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_STEM_CELLS</Type>
@@ -1133,8 +1133,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_STEM_CELLS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>SPECIALBUILDING_STEM_CELLS</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -1142,14 +1142,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -1158,7 +1158,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/STEM_CELLS.dds</Button>
+	<Button>Art/Buttons/Yields/STEM_CELLS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_STATE_SECRETS</Type>
@@ -1166,8 +1166,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_STATE_SECRETS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>SPECIALBUILDING_STATE_SECRETS</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -1175,14 +1175,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -1191,7 +1191,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/STATE_SECRETS.dds</Button>
+	<Button>Art/Buttons/Yields/STATE_SECRETS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_PROGENITOR_TECH</Type>
@@ -1199,8 +1199,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_PROGENITOR_TECH_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>SPECIALBUILDING_PROGENITOR_TECH</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -1208,14 +1208,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -1224,7 +1224,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/PROGENITOR_TECH.dds</Button>
+	<Button>Art/Buttons/Yields/PROGENITOR_TECH.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_ALIEN_RELICS</Type>
@@ -1232,8 +1232,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_ALIEN_RELICS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>SPECIALBUILDING_ALIEN_RELICS</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -1241,14 +1241,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -1257,7 +1257,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/ALIEN_RELICS.dds</Button>
+	<Button>Art/Buttons/Yields/ALIEN_RELICS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_NARCOTICS</Type>
@@ -1265,8 +1265,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_NARCOTICS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>SPECIALBUILDING_NARCOTICS</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -1274,14 +1274,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -1290,7 +1290,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/NARCOTICS.dds</Button>
+	<Button>Art/Buttons/Yields/NARCOTICS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_BIOWEAPONS</Type>
@@ -1298,8 +1298,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_BIOWEAPONS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>SPECIALBUILDING_BIOWEAPONS</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -1307,14 +1307,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -1323,7 +1323,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/BIOWEAPONS.dds</Button>
+	<Button>Art/Buttons/Yields/BIOWEAPONS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_PHARMACEUTICALS</Type>
@@ -1331,8 +1331,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_PHARMACEUTICALS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>SPECIALBUILDING_PHARMACEUTICALS</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -1340,14 +1340,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -1356,7 +1356,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/PHARMACEUTICALS.dds</Button>
+	<Button>Art/Buttons/Yields/PHARMACEUTICALS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_PETROCHEMICALS</Type>
@@ -1364,8 +1364,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_PETROCHEMICALS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>SPECIALBUILDING_PETROCHEMICALS</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -1373,14 +1373,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -1389,7 +1389,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/PETROCHEMICALS.dds</Button>
+	<Button>Art/Buttons/Yields/PETROCHEMICALS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_COLLOIDS</Type>
@@ -1397,8 +1397,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_COLLOIDS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>SPECIALBUILDING_COLLOIDS</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -1406,14 +1406,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -1422,7 +1422,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/COLLOIDS.dds</Button>
+	<Button>Art/Buttons/Yields/COLLOIDS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_CATALYSTS</Type>
@@ -1430,8 +1430,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_CATALYSTS_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>SPECIALBUILDING_CATALYSTS</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -1439,14 +1439,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -1455,7 +1455,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/CATALYSTS.dds</Button>
+	<Button>Art/Buttons/Yields/CATALYSTS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_HARD_CURRENCY</Type>
@@ -1463,8 +1463,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_HARD_CURRENCY_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>SPECIALBUILDING_HARD_CURRENCY</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -1472,14 +1472,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -1488,7 +1488,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/HARD_CURRENCY.dds</Button>
+	<Button>Art/Buttons/Yields/HARD_CURRENCY.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_INDUSTRY</Type>
@@ -1496,8 +1496,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_INDUSTRY_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>SPECIALBUILDING_INDUSTRY</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -1505,14 +1505,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -1521,7 +1521,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/INDUSTRY.dds</Button>
+	<Button>Art/Buttons/Yields/INDUSTRY.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_MEDIA</Type>
@@ -1529,8 +1529,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_MEDIA_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>SPECIALBUILDING_MEDIA</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -1538,14 +1538,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -1554,7 +1554,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/MEDIA.dds</Button>
+	<Button>Art/Buttons/Yields/MEDIA.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_LIBERTY</Type>
@@ -1562,8 +1562,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_LIBERTY_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>SPECIALBUILDING_LIBERTY</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -1571,14 +1571,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -1587,7 +1587,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/LIBERTY.dds</Button>
+	<Button>Art/Buttons/Yields/LIBERTY.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_EDUCATION</Type>
@@ -1595,8 +1595,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_EDUCATION_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>SPECIALBUILDING_EDUCATION</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -1604,14 +1604,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -1620,7 +1620,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/EDUCATION.dds</Button>
+	<Button>Art/Buttons/Yields/EDUCATION.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_RESEARCH</Type>
@@ -1628,8 +1628,8 @@
 	<Civilopedia>TXT_KEY_PROFESSION_RESEARCH_PEDIA</Civilopedia>
 	<Strategy></Strategy>
 	<Help/>
-	<Combat>UNITCOMBAT_MELEE</Combat>
-	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
 	<SpecialBuilding>SPECIALBUILDING_RESEARCH</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
 	<bCitizen>1</bCitizen>
@@ -1637,14 +1637,14 @@
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
 	<bCanFound>0</bCanFound>
-	<bUnarmed>1</bUnarmed>
+	<bUnarmed>0</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
 	<iPower>0</iPower>
-	<iAsset>1</iAsset>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums></YieldEquipedNums>
 	<FreePromotions></FreePromotions>
 	<YieldsProduced>
@@ -1653,7 +1653,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/RESEARCH.dds</Button>
+	<Button>Art/Buttons/Yields/RESEARCH.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_COLONIST</Type>
@@ -1665,19 +1665,19 @@
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
-	<bCitizen>1</bCitizen>
+	<bCitizen>0</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
-	<bCityDefender>0</bCityDefender>
+	<bCityDefender>1</bCityDefender>
 	<bCanFound>1</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
-	<iCombatChange>0</iCombatChange>
+	<iCombatChange>1</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>1</iPower>
-	<iAsset>1</iAsset>
+	<iPower>0</iPower>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums>
 		<YieldEquipedNum>
 			<YieldType>YIELD_MUNITIONS</YieldType>
@@ -1691,7 +1691,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/COLONIST.dds</Button>
+	<Button>Art/Buttons/Yields/COLONIST.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_EXPLORER</Type>
@@ -1703,19 +1703,19 @@
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
-	<bCitizen>1</bCitizen>
+	<bCitizen>0</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
-	<bCityDefender>0</bCityDefender>
+	<bCityDefender>1</bCityDefender>
 	<bCanFound>1</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
-	<iCombatChange>0</iCombatChange>
+	<iCombatChange>1</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>1</iPower>
-	<iAsset>1</iAsset>
+	<iPower>0</iPower>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums>
 		<YieldEquipedNum>
 			<YieldType>YIELD_MUNITIONS</YieldType>
@@ -1729,7 +1729,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/EXPLORER.dds</Button>
+	<Button>Art/Buttons/Yields/EXPLORER.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_LABORER</Type>
@@ -1741,19 +1741,19 @@
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
-	<bCitizen>1</bCitizen>
+	<bCitizen>0</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
-	<bCityDefender>0</bCityDefender>
+	<bCityDefender>1</bCityDefender>
 	<bCanFound>1</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
-	<iCombatChange>0</iCombatChange>
+	<iCombatChange>1</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>1</iPower>
-	<iAsset>1</iAsset>
+	<iPower>0</iPower>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums>
 		<YieldEquipedNum>
 			<YieldType>YIELD_MUNITIONS</YieldType>
@@ -1767,7 +1767,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/LABORER.dds</Button>
+	<Button>Art/Buttons/Yields/LABORER.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_MECHANIZED_LABORER</Type>
@@ -1779,19 +1779,19 @@
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
-	<bCitizen>1</bCitizen>
+	<bCitizen>0</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
-	<bCityDefender>0</bCityDefender>
+	<bCityDefender>1</bCityDefender>
 	<bCanFound>1</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
-	<iCombatChange>0</iCombatChange>
+	<iCombatChange>1</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>1</iPower>
-	<iAsset>1</iAsset>
+	<iPower>0</iPower>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums>
 		<YieldEquipedNum>
 			<YieldType>YIELD_MUNITIONS</YieldType>
@@ -1805,7 +1805,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/MECHANIZED_LABORER.dds</Button>
+	<Button>Art/Buttons/Yields/MECHANIZED_LABORER.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_HUNTER</Type>
@@ -1817,19 +1817,19 @@
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
-	<bCitizen>1</bCitizen>
+	<bCitizen>0</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
-	<bCityDefender>0</bCityDefender>
+	<bCityDefender>1</bCityDefender>
 	<bCanFound>1</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
-	<iCombatChange>0</iCombatChange>
+	<iCombatChange>1</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>1</iPower>
-	<iAsset>1</iAsset>
+	<iPower>0</iPower>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums>
 		<YieldEquipedNum>
 			<YieldType>YIELD_MUNITIONS</YieldType>
@@ -1843,7 +1843,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/HUNTER.dds</Button>
+	<Button>Art/Buttons/Yields/HUNTER.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_TRADER</Type>
@@ -1855,19 +1855,19 @@
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
-	<bCitizen>1</bCitizen>
+	<bCitizen>0</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
-	<bCityDefender>0</bCityDefender>
+	<bCityDefender>1</bCityDefender>
 	<bCanFound>1</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
-	<iCombatChange>0</iCombatChange>
+	<iCombatChange>1</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>1</iPower>
-	<iAsset>1</iAsset>
+	<iPower>0</iPower>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums>
 		<YieldEquipedNum>
 			<YieldType>YIELD_MUNITIONS</YieldType>
@@ -1881,7 +1881,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/TRADER.dds</Button>
+	<Button>Art/Buttons/Yields/TRADER.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_ANTHROPOLOGIST</Type>
@@ -1893,19 +1893,19 @@
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
-	<bCitizen>1</bCitizen>
+	<bCitizen>0</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
-	<bCityDefender>0</bCityDefender>
+	<bCityDefender>1</bCityDefender>
 	<bCanFound>1</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
-	<iCombatChange>0</iCombatChange>
+	<iCombatChange>1</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>1</iPower>
-	<iAsset>1</iAsset>
+	<iPower>0</iPower>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums>
 		<YieldEquipedNum>
 			<YieldType>YIELD_MUNITIONS</YieldType>
@@ -1919,7 +1919,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/ANTHROPOLOGIST.dds</Button>
+	<Button>Art/Buttons/Yields/ANTHROPOLOGIST.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_EMISSARY</Type>
@@ -1931,19 +1931,19 @@
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
-	<bCitizen>1</bCitizen>
+	<bCitizen>0</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
-	<bCityDefender>0</bCityDefender>
+	<bCityDefender>1</bCityDefender>
 	<bCanFound>1</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
-	<iCombatChange>0</iCombatChange>
+	<iCombatChange>1</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>1</iPower>
-	<iAsset>1</iAsset>
+	<iPower>0</iPower>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums>
 		<YieldEquipedNum>
 			<YieldType>YIELD_MUNITIONS</YieldType>
@@ -1957,7 +1957,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/EMISSARY.dds</Button>
+	<Button>Art/Buttons/Yields/EMISSARY.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_MILITIA</Type>
@@ -1969,19 +1969,19 @@
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
-	<bCitizen>1</bCitizen>
+	<bCitizen>0</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
-	<bCityDefender>0</bCityDefender>
+	<bCityDefender>1</bCityDefender>
 	<bCanFound>1</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
-	<iCombatChange>0</iCombatChange>
+	<iCombatChange>1</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>1</iPower>
-	<iAsset>1</iAsset>
+	<iPower>0</iPower>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums>
 		<YieldEquipedNum>
 			<YieldType>YIELD_MUNITIONS</YieldType>
@@ -1995,7 +1995,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/MILITIA.dds</Button>
+	<Button>Art/Buttons/Yields/MILITIA.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_INFANTRY</Type>
@@ -2007,19 +2007,19 @@
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
-	<bCitizen>1</bCitizen>
+	<bCitizen>0</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
-	<bCityDefender>0</bCityDefender>
+	<bCityDefender>1</bCityDefender>
 	<bCanFound>1</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
-	<iCombatChange>0</iCombatChange>
+	<iCombatChange>1</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>1</iPower>
-	<iAsset>1</iAsset>
+	<iPower>0</iPower>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums>
 		<YieldEquipedNum>
 			<YieldType>YIELD_MUNITIONS</YieldType>
@@ -2033,7 +2033,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/INFANTRY.dds</Button>
+	<Button>Art/Buttons/Yields/INFANTRY.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_SCOUT_MECHA</Type>
@@ -2045,19 +2045,19 @@
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
-	<bCitizen>1</bCitizen>
+	<bCitizen>0</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
-	<bCityDefender>0</bCityDefender>
+	<bCityDefender>1</bCityDefender>
 	<bCanFound>1</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
-	<iCombatChange>0</iCombatChange>
+	<iCombatChange>1</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>1</iPower>
-	<iAsset>1</iAsset>
+	<iPower>0</iPower>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums>
 		<YieldEquipedNum>
 			<YieldType>YIELD_MUNITIONS</YieldType>
@@ -2071,7 +2071,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/SCOUT_MECHA.dds</Button>
+	<Button>Art/Buttons/Yields/SCOUT_MECHA.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_TACTICAL_MECHA</Type>
@@ -2083,19 +2083,19 @@
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
-	<bCitizen>1</bCitizen>
+	<bCitizen>0</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
-	<bCityDefender>0</bCityDefender>
+	<bCityDefender>1</bCityDefender>
 	<bCanFound>1</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
-	<iCombatChange>0</iCombatChange>
+	<iCombatChange>1</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>1</iPower>
-	<iAsset>1</iAsset>
+	<iPower>0</iPower>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums>
 		<YieldEquipedNum>
 			<YieldType>YIELD_MUNITIONS</YieldType>
@@ -2109,7 +2109,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/TACTICAL_MECHA.dds</Button>
+	<Button>Art/Buttons/Yields/TACTICAL_MECHA.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_HEAVY_MECHA</Type>
@@ -2121,19 +2121,19 @@
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
-	<bCitizen>1</bCitizen>
+	<bCitizen>0</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
-	<bCityDefender>0</bCityDefender>
+	<bCityDefender>1</bCityDefender>
 	<bCanFound>1</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
-	<iCombatChange>0</iCombatChange>
+	<iCombatChange>1</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>1</iPower>
-	<iAsset>1</iAsset>
+	<iPower>0</iPower>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums>
 		<YieldEquipedNum>
 			<YieldType>YIELD_MUNITIONS</YieldType>
@@ -2147,7 +2147,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/HEAVY_MECHA.dds</Button>
+	<Button>Art/Buttons/Yields/HEAVY_MECHA.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_TERRORIST</Type>
@@ -2159,19 +2159,19 @@
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
-	<bCitizen>1</bCitizen>
+	<bCitizen>0</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
-	<bCityDefender>0</bCityDefender>
+	<bCityDefender>1</bCityDefender>
 	<bCanFound>1</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
-	<iCombatChange>0</iCombatChange>
+	<iCombatChange>1</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>1</iPower>
-	<iAsset>1</iAsset>
+	<iPower>0</iPower>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums>
 		<YieldEquipedNum>
 			<YieldType>YIELD_MUNITIONS</YieldType>
@@ -2185,7 +2185,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/TERRORIST.dds</Button>
+	<Button>Art/Buttons/Yields/TERRORIST.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_PIRATE</Type>
@@ -2197,19 +2197,19 @@
 	<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 	<SpecialBuilding>NONE</SpecialBuilding>
 	<bWorkPlot>0</bWorkPlot>
-	<bCitizen>1</bCitizen>
+	<bCitizen>0</bCitizen>
 	<bWater>0</bWater>
 	<bScout>0</bScout>
-	<bCityDefender>0</bCityDefender>
+	<bCityDefender>1</bCityDefender>
 	<bCanFound>1</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
-	<iCombatChange>0</iCombatChange>
+	<iCombatChange>1</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>1</iPower>
-	<iAsset>1</iAsset>
+	<iPower>0</iPower>
+	<iAsset>0</iAsset>
 	<YieldEquipedNums>
 		<YieldEquipedNum>
 			<YieldType>YIELD_MUNITIONS</YieldType>
@@ -2223,7 +2223,7 @@
 	<YieldsConsumed>
 		<YieldType></YieldType>
 	</YieldsConsumed>
-	<Button>/Art/Buttons/Yields/PIRATE.dds</Button>
+	<Button>Art/Buttons/Yields/PIRATE.dds</Button>
 </ProfessionInfo>
 </ProfessionInfos>
 </Civ4ProfessionInfos>

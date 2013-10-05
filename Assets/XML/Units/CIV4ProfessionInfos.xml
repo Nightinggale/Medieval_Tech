@@ -1123,7 +1123,7 @@
 		<YieldType>YIELD_ENZYMES</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>YIELD_AMINO_ACIDS</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/ENZYMES.dds</Button>
 </ProfessionInfo>
@@ -1189,7 +1189,7 @@
 		<YieldType>YIELD_STATE_SECRETS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>YIELD_DATACORES</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/STATE_SECRETS.dds</Button>
 </ProfessionInfo>

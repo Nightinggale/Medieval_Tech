@@ -1669,19 +1669,19 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>0</bCanFound>
+	<bCanFound>1</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>0</iPower>
+	<iPower>1</iPower>
 	<iAsset>1</iAsset>
 	<YieldEquipedNums>
 		<YieldEquipedNum>
 			<YieldType>YIELD_MUNITIONS</YieldType>
-			<iYieldAmount>50</iYieldAmount>
+			<iYieldAmount>0</iYieldAmount>
 		</YieldEquipedNum>
 	</YieldEquipedNums>
 	<FreePromotions></FreePromotions>
@@ -1707,19 +1707,19 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>0</bCanFound>
+	<bCanFound>1</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>0</iPower>
+	<iPower>1</iPower>
 	<iAsset>1</iAsset>
 	<YieldEquipedNums>
 		<YieldEquipedNum>
 			<YieldType>YIELD_MUNITIONS</YieldType>
-			<iYieldAmount>50</iYieldAmount>
+			<iYieldAmount>0</iYieldAmount>
 		</YieldEquipedNum>
 	</YieldEquipedNums>
 	<FreePromotions></FreePromotions>
@@ -1745,19 +1745,19 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>0</bCanFound>
+	<bCanFound>1</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>0</iPower>
+	<iPower>1</iPower>
 	<iAsset>1</iAsset>
 	<YieldEquipedNums>
 		<YieldEquipedNum>
 			<YieldType>YIELD_MUNITIONS</YieldType>
-			<iYieldAmount>50</iYieldAmount>
+			<iYieldAmount>0</iYieldAmount>
 		</YieldEquipedNum>
 	</YieldEquipedNums>
 	<FreePromotions></FreePromotions>
@@ -1783,19 +1783,19 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>0</bCanFound>
+	<bCanFound>1</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>0</iPower>
+	<iPower>1</iPower>
 	<iAsset>1</iAsset>
 	<YieldEquipedNums>
 		<YieldEquipedNum>
 			<YieldType>YIELD_MUNITIONS</YieldType>
-			<iYieldAmount>50</iYieldAmount>
+			<iYieldAmount>0</iYieldAmount>
 		</YieldEquipedNum>
 	</YieldEquipedNums>
 	<FreePromotions></FreePromotions>
@@ -1821,19 +1821,19 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>0</bCanFound>
+	<bCanFound>1</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>0</iPower>
+	<iPower>1</iPower>
 	<iAsset>1</iAsset>
 	<YieldEquipedNums>
 		<YieldEquipedNum>
 			<YieldType>YIELD_MUNITIONS</YieldType>
-			<iYieldAmount>50</iYieldAmount>
+			<iYieldAmount>0</iYieldAmount>
 		</YieldEquipedNum>
 	</YieldEquipedNums>
 	<FreePromotions></FreePromotions>
@@ -1859,19 +1859,19 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>0</bCanFound>
+	<bCanFound>1</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>0</iPower>
+	<iPower>1</iPower>
 	<iAsset>1</iAsset>
 	<YieldEquipedNums>
 		<YieldEquipedNum>
 			<YieldType>YIELD_MUNITIONS</YieldType>
-			<iYieldAmount>50</iYieldAmount>
+			<iYieldAmount>0</iYieldAmount>
 		</YieldEquipedNum>
 	</YieldEquipedNums>
 	<FreePromotions></FreePromotions>
@@ -1897,19 +1897,19 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>0</bCanFound>
+	<bCanFound>1</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>0</iPower>
+	<iPower>1</iPower>
 	<iAsset>1</iAsset>
 	<YieldEquipedNums>
 		<YieldEquipedNum>
 			<YieldType>YIELD_MUNITIONS</YieldType>
-			<iYieldAmount>50</iYieldAmount>
+			<iYieldAmount>0</iYieldAmount>
 		</YieldEquipedNum>
 	</YieldEquipedNums>
 	<FreePromotions></FreePromotions>
@@ -1935,19 +1935,19 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>0</bCanFound>
+	<bCanFound>1</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>0</iPower>
+	<iPower>1</iPower>
 	<iAsset>1</iAsset>
 	<YieldEquipedNums>
 		<YieldEquipedNum>
 			<YieldType>YIELD_MUNITIONS</YieldType>
-			<iYieldAmount>50</iYieldAmount>
+			<iYieldAmount>0</iYieldAmount>
 		</YieldEquipedNum>
 	</YieldEquipedNums>
 	<FreePromotions></FreePromotions>
@@ -1973,19 +1973,19 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>0</bCanFound>
+	<bCanFound>1</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>0</iPower>
+	<iPower>1</iPower>
 	<iAsset>1</iAsset>
 	<YieldEquipedNums>
 		<YieldEquipedNum>
 			<YieldType>YIELD_MUNITIONS</YieldType>
-			<iYieldAmount>50</iYieldAmount>
+			<iYieldAmount>0</iYieldAmount>
 		</YieldEquipedNum>
 	</YieldEquipedNums>
 	<FreePromotions></FreePromotions>
@@ -2011,19 +2011,19 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>0</bCanFound>
+	<bCanFound>1</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>0</iPower>
+	<iPower>1</iPower>
 	<iAsset>1</iAsset>
 	<YieldEquipedNums>
 		<YieldEquipedNum>
 			<YieldType>YIELD_MUNITIONS</YieldType>
-			<iYieldAmount>50</iYieldAmount>
+			<iYieldAmount>0</iYieldAmount>
 		</YieldEquipedNum>
 	</YieldEquipedNums>
 	<FreePromotions></FreePromotions>
@@ -2049,19 +2049,19 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>0</bCanFound>
+	<bCanFound>1</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>0</iPower>
+	<iPower>1</iPower>
 	<iAsset>1</iAsset>
 	<YieldEquipedNums>
 		<YieldEquipedNum>
 			<YieldType>YIELD_MUNITIONS</YieldType>
-			<iYieldAmount>50</iYieldAmount>
+			<iYieldAmount>0</iYieldAmount>
 		</YieldEquipedNum>
 	</YieldEquipedNums>
 	<FreePromotions></FreePromotions>
@@ -2087,19 +2087,19 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>0</bCanFound>
+	<bCanFound>1</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>0</iPower>
+	<iPower>1</iPower>
 	<iAsset>1</iAsset>
 	<YieldEquipedNums>
 		<YieldEquipedNum>
 			<YieldType>YIELD_MUNITIONS</YieldType>
-			<iYieldAmount>50</iYieldAmount>
+			<iYieldAmount>0</iYieldAmount>
 		</YieldEquipedNum>
 	</YieldEquipedNums>
 	<FreePromotions></FreePromotions>
@@ -2125,19 +2125,19 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>0</bCanFound>
+	<bCanFound>1</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>0</iPower>
+	<iPower>1</iPower>
 	<iAsset>1</iAsset>
 	<YieldEquipedNums>
 		<YieldEquipedNum>
 			<YieldType>YIELD_MUNITIONS</YieldType>
-			<iYieldAmount>50</iYieldAmount>
+			<iYieldAmount>0</iYieldAmount>
 		</YieldEquipedNum>
 	</YieldEquipedNums>
 	<FreePromotions></FreePromotions>
@@ -2163,19 +2163,19 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>0</bCanFound>
+	<bCanFound>1</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>0</iPower>
+	<iPower>1</iPower>
 	<iAsset>1</iAsset>
 	<YieldEquipedNums>
 		<YieldEquipedNum>
 			<YieldType>YIELD_MUNITIONS</YieldType>
-			<iYieldAmount>50</iYieldAmount>
+			<iYieldAmount>0</iYieldAmount>
 		</YieldEquipedNum>
 	</YieldEquipedNums>
 	<FreePromotions></FreePromotions>
@@ -2201,19 +2201,19 @@
 	<bWater>0</bWater>
 	<bScout>0</bScout>
 	<bCityDefender>0</bCityDefender>
-	<bCanFound>0</bCanFound>
+	<bCanFound>1</bCanFound>
 	<bUnarmed>1</bUnarmed>
 	<bNoDefensiveBonus>0</bNoDefensiveBonus>
 	<iCombatChange>0</iCombatChange>
 	<iMovesChange>0</iMovesChange>
 	<iWorkRate>0</iWorkRate>
 	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>0</iPower>
+	<iPower>1</iPower>
 	<iAsset>1</iAsset>
 	<YieldEquipedNums>
 		<YieldEquipedNum>
 			<YieldType>YIELD_MUNITIONS</YieldType>
-			<iYieldAmount>50</iYieldAmount>
+			<iYieldAmount>0</iYieldAmount>
 		</YieldEquipedNum>
 	</YieldEquipedNums>
 	<FreePromotions></FreePromotions>

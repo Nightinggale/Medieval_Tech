@@ -355,7 +355,7 @@ foreach $item (@prodprofs)
 		{print PI "\t\t<YieldType>".$inputyield."</YieldType>\n";}
 		else {print PI "\t\t<YieldType></YieldType>\n";}
 	print PI "\t</YieldsConsumed>\n";
-	print PI "\t".'<Button>/Art/Buttons/Yields/'.$tag.'.dds</Button>'."\n";
+	print PI "\t".'<Button>Art/Buttons/Yields/'.$tag.'.dds</Button>'."\n";
 	print PI "</ProfessionInfo>\n";
 	}
 	
@@ -384,19 +384,19 @@ foreach $desc (@walkprofs)
 	print PI "\t<bWater>0</bWater>\n";
 	print PI "\t<bScout>0</bScout>\n";
 	print PI "\t<bCityDefender>0</bCityDefender>\n";
-	print PI "\t<bCanFound>0</bCanFound>\n";
+	print PI "\t<bCanFound>1</bCanFound>\n";
 	print PI "\t<bUnarmed>1</bUnarmed>\n";
 	print PI "\t<bNoDefensiveBonus>0</bNoDefensiveBonus>\n";
 	print PI "\t<iCombatChange>0</iCombatChange>\n";
 	print PI "\t<iMovesChange>0</iMovesChange>\n";	
 	print PI "\t<iWorkRate>0</iWorkRate>\n";
 	print PI "\t<iMissionaryRate>0</iMissionaryRate>\n";
-	print PI "\t<iPower>0</iPower>\n";
+	print PI "\t<iPower>1</iPower>\n";
 	print PI "\t<iAsset>1</iAsset>\n";	
 	print PI "\t<YieldEquipedNums>\n";
 	print PI "\t\t<YieldEquipedNum>\n";
 	print PI "\t\t\t<YieldType>YIELD_MUNITIONS</YieldType>\n";
-	print PI "\t\t\t<iYieldAmount>50</iYieldAmount>\n";
+	print PI "\t\t\t<iYieldAmount>0</iYieldAmount>\n";
 	print PI "\t\t</YieldEquipedNum>\n";
 	print PI "\t</YieldEquipedNums>\n";	
 	print PI "\t<FreePromotions></FreePromotions>\n";	
@@ -406,7 +406,7 @@ foreach $desc (@walkprofs)
 	print PI "\t<YieldsConsumed>\n";
 	print PI "\t\t<YieldType></YieldType>\n";
 	print PI "\t</YieldsConsumed>\n";
-	print PI "\t".'<Button>/Art/Buttons/Yields/'.$tag.'.dds</Button>'."\n";
+	print PI "\t".'<Button>Art/Buttons/Yields/'.$tag.'.dds</Button>'."\n";
 	print PI "</ProfessionInfo>\n";
 	}
 	
@@ -441,12 +441,12 @@ for my $yield ( keys (%$href) ) {
 	}
 print TI "\t<Civilopedia>TXT_KEY_TERRAIN_$tag_PEDIA</Civilopedia>\n";
 &maketext("TXT_KEY_TERRAIN_".$tag."_PEDIA",$pedia);
-#print TI "\t<ArtDefineTag>ART_DEF_TERRAIN_$tag</ArtDefineTag>\n";
-print TI "\t<ArtDefineTag>ART_DEF_TERRAIN_GRASS</ArtDefineTag>\n";
+print TI "\t<ArtDefineTag>ART_DEF_TERRAIN_$tag</ArtDefineTag>\n";
+#print TI "\t<ArtDefineTag>ART_DEF_TERRAIN_GRASS</ArtDefineTag>\n";
 print TI "\t<Yields>\n";
 for my $yield ( keys (%$href) ) {
 	$prod = $href->{$yield};
-	if ($prod > 0) {
+	if ($prod != 0) {
 		print TI "\t\t<YieldIntegerPair>\n";
 		print TI "\t\t\t<YieldType>YIELD_".$yield."</YieldType>\n";
 		print TI "\t\t\t<iValue>".$prod."</iValue>\n";
@@ -454,7 +454,7 @@ for my $yield ( keys (%$href) ) {
 		}
 	}
 print TI "\t</Yields>\n";
-if (($yield =~ /OCEAN/) or ($yield =~ /COAST/)) {
+if (($tag=~ /OCEAN/) or ($tag =~ /COAST/)) {
 	print TI "\t<RiverYieldIncreases/>\n";
 	print TI "\t<bWater>1</bWater>\n";
 	} else {
@@ -567,41 +567,41 @@ print TI "</TerrainInfo>\n";
 &maketerrain('COAST',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2});
 &maketerrain('OCEAN',{'NUTRIENTS'=>1});
 
-# Aquatic Planet
-&maketerrain('LOAM',{'NUTRIENTS'=>3,'MICROBES'=>1});
-&maketerrain('SILT_BEDS',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2});
-&maketerrain('DIATOMACEOUS',{'SILICATES'=>3,'ACTINIDES'=>2});
-&maketerrain('WETLANDS',{'NUTRIENTS'=>2,'OPIATES'=>2});
-&maketerrain('GLACIAL',{'NUTRIENTS'=>1,'DATACORES'=>2});
-&maketerrain('PELAGIC_COAST',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2});
-&maketerrain('ABYSSAL_OCEAN',{'NUTRIENTS'=>1});
+#Aquatic Planet
+# &maketerrain('LOAM',{'NUTRIENTS'=>3,'MICROBES'=>1});
+# &maketerrain('SILT_BEDS',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2});
+# &maketerrain('DIATOMACEOUS',{'SILICATES'=>3,'ACTINIDES'=>2});
+# &maketerrain('WETLANDS',{'NUTRIENTS'=>2,'OPIATES'=>2});
+# &maketerrain('GLACIAL',{'NUTRIENTS'=>1,'DATACORES'=>2});
+# &maketerrain('PELAGIC_COAST',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2});
+# &maketerrain('ABYSSAL_OCEAN',{'NUTRIENTS'=>1});
 
-# Arid Planet
-&maketerrain('STEPPE',{'NUTRIENTS'=>3,'SILICATES'=>1});
-&maketerrain('BADLANDS',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2});
-&maketerrain('DUNES',{'SILICATES'=>3,'ACTINIDES'=>2});
-&maketerrain('SALT_FLATS',{'NUTRIENTS'=>2,'OPIATES'=>2});
-&maketerrain('SCRUBLAND',{'NUTRIENTS'=>1,'DATACORES'=>2});
-&maketerrain('ALKALI_COAST',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2});
-&maketerrain('ALKALI_OCEAN',{'NUTRIENTS'=>1});
+#Arid Planet
+# &maketerrain('STEPPE',{'NUTRIENTS'=>3,'SILICATES'=>1});
+# &maketerrain('BADLANDS',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2});
+# &maketerrain('DUNES',{'SILICATES'=>3,'ACTINIDES'=>2});
+# &maketerrain('SALT_FLATS',{'NUTRIENTS'=>2,'OPIATES'=>2});
+# &maketerrain('SCRUBLAND',{'NUTRIENTS'=>1,'DATACORES'=>2});
+# &maketerrain('ALKALI_COAST',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2});
+# &maketerrain('ALKALI_OCEAN',{'NUTRIENTS'=>1});
 
-# Volcanic Planet
-&maketerrain('VOLCANIC_SOIL',{'NUTRIENTS'=>3,'PRECIOUS_METALS'=>1});
-&maketerrain('BATHOLITH',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2});
-&maketerrain('REGOLITH',{'SILICATES'=>3,'ACTINIDES'=>2});
-&maketerrain('ASH',{'NUTRIENTS'=>2,'OPIATES'=>2});
-&maketerrain('FELSIC_ROCK',{'NUTRIENTS'=>1,'DATACORES'=>2});
-&maketerrain('PYROCLASTIC',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2});
-&maketerrain('MAGMA',{'NUTRIENTS'=>1});
+#Volcanic Planet
+# &maketerrain('VOLCANIC_SOIL',{'NUTRIENTS'=>3,'PRECIOUS_METALS'=>1});
+# &maketerrain('BATHOLITH',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2});
+# &maketerrain('REGOLITH',{'SILICATES'=>3,'ACTINIDES'=>2});
+# &maketerrain('ASH',{'NUTRIENTS'=>2,'OPIATES'=>2});
+# &maketerrain('FELSIC_ROCK',{'NUTRIENTS'=>1,'DATACORES'=>2});
+# &maketerrain('PYROCLASTIC',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2});
+# &maketerrain('MAGMA',{'NUTRIENTS'=>1});
 
-# Arctic Planet
-&maketerrain('ALPINE',{'NUTRIENTS'=>3,'CRYSTALLOIDS'=>1});
-&maketerrain('HEATH',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2});
-&maketerrain('LIMESTONE',{'SILICATES'=>3,'ACTINIDES'=>2});
-&maketerrain('BOG',{'NUTRIENTS'=>2,'OPIATES'=>2});
-&maketerrain('ARCTIC',{'NUTRIENTS'=>1,'DATACORES'=>2});
-&maketerrain('BRACKISH_COAST',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2});
-&maketerrain('BRACKISH_OCEAN',{'NUTRIENTS'=>1});
+#Arctic Planet
+# &maketerrain('ALPINE',{'NUTRIENTS'=>3,'CRYSTALLOIDS'=>1});
+# &maketerrain('HEATH',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2});
+# &maketerrain('LIMESTONE',{'SILICATES'=>3,'ACTINIDES'=>2});
+# &maketerrain('BOG',{'NUTRIENTS'=>2,'OPIATES'=>2});
+# &maketerrain('ARCTIC',{'NUTRIENTS'=>1,'DATACORES'=>2});
+# &maketerrain('BRACKISH_COAST',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2});
+# &maketerrain('BRACKISH_OCEAN',{'NUTRIENTS'=>1});
 
 &maketerrain('SNOW',{''});
 &maketerrain('PEAK',{''});
@@ -633,7 +633,7 @@ print FI "\t\t<ArtDefineTag>ART_DEF_FEATURE_".$tag."</ArtDefineTag>\n";
 print FI "\t\t<YieldChanges>\n";
 for my $yield ( keys (%$href) ) {
 	my $prod = $href->{$yield};
-	if ($prod > 0) {
+	if ($prod != 0) {
 		print FI "\t\t\t<YieldIntegerPair>\n";
 		print FI "\t\t\t\t<YieldType>YIELD_".$yield."</YieldType>\n";
 		print FI "\t\t\t\t<iValue>".$prod."</iValue>\n";
@@ -726,10 +726,10 @@ print FI "</FeatureInfo>\n";
 }
 
 # make features
-&makefeature('FOREST',{'BIOPOLYMERS'=>4,'NUCLEIC_ACIDS'=>1});
+&makefeature('FOREST',{'BIOPOLYMERS'=>4,'NUTRIENTS'=>-1});
 &makefeature('LIGHT_FOREST',{'BIOPOLYMERS'=>3,'AMINO_ACIDS'=>1});
-&makefeature('JUNGLE',{'BIOPOLYMERS'=>3,'XENOTOXINS'=>2});
-&makefeature('ICE',{'PROGENITOR_ARTIFACTS'=>2,'CLATHRATES'=>1});
+&makefeature('JUNGLE',{'BIOPOLYMERS'=>3,'XENOTOXINS'=>1});
+&makefeature('ICE',{''});
 print FI "</FeatureInfos>\n</Civ4FeatureInfos>\n";
 close FI;
 
@@ -795,12 +795,12 @@ foreach $item (@improvements)
 	print IM "\t<bGoody>0</bGoody>\n";
 	print IM "\t<bPermanent>0</bPermanent>\n";
 	print IM "\t<bUseLSystem>0</bUseLSystem>\n";
-	print IM "\t<iAdvancedStartCost>24</iAdvancedStartCost>\n";
-	print IM "\t<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>\n";
+	print IM "\t<iAdvancedStartCost>10</iAdvancedStartCost>\n";
+	print IM "\t<iAdvancedStartCostIncrease>5</iAdvancedStartCostIncrease>\n";
 	print IM "\t<iTilesPerGoody>0</iTilesPerGoody>\n";
 	print IM "\t<iGoodyRange>0</iGoodyRange>\n";
 	print IM "\t<iFeatureGrowth>0</iFeatureGrowth>\n";
-	print IM "\t<iUpgradeTime>00</iUpgradeTime>\n";
+	print IM "\t<iUpgradeTime>0</iUpgradeTime>\n";
 	print IM "\t<iDefenseModifier>0</iDefenseModifier>\n";
 	print IM "\t<iPillageGold>5</iPillageGold>\n";
 	print IM "\t<bOutsideBorders>0</bOutsideBorders>\n";
@@ -915,7 +915,7 @@ foreach $item (@allbuildings)
 		print SBI "\t<bValid>1</bValid>\n";
 		print SBI "\t<FontButtonIndex>".$index."</FontButtonIndex>\n";
 		print SBI "\t<ProductionTraits/>\n";
-		print SBI "\t".'<Button>,/Art/Buttons/Yields/'.$item.'.dds</Button>'."\n";
+		print SBI "\t".'<Button>Art/Buttons/Yields/'.$item.'.dds</Button>'."\n";
 		print SBI "</SpecialBuildingInfo>\n";
 	# make level 1 building
 		if ($item=~/TOOLS/ or $item=~/MUNITIONS/ or $item=~/ROBOTICS/) {
@@ -1395,7 +1395,7 @@ foreach $item (@allspecialists)
 	print UI "\t<TerrainImpassables/>\n";
 	print UI "\t<FeatureImpassables/>\n";
 	print UI "\t<EvasionBuildings/>\n";
-	print UI "\t<iCombat>0</iCombat>\n";
+	print UI "\t<iCombat>1</iCombat>\n";
 	print UI "\t<iXPValueAttack>4</iXPValueAttack>\n";
 	print UI "\t<iXPValueDefense>2</iXPValueDefense>\n";
 	print UI "\t<iWithdrawalProb>0</iWithdrawalProb>\n";

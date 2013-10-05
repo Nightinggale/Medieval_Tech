@@ -36,12 +36,12 @@
 	<bGoody>0</bGoody>
 	<bPermanent>0</bPermanent>
 	<bUseLSystem>0</bUseLSystem>
-	<iAdvancedStartCost>24</iAdvancedStartCost>
-	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iAdvancedStartCost>10</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>5</iAdvancedStartCostIncrease>
 	<iTilesPerGoody>0</iTilesPerGoody>
 	<iGoodyRange>0</iGoodyRange>
 	<iFeatureGrowth>0</iFeatureGrowth>
-	<iUpgradeTime>00</iUpgradeTime>
+	<iUpgradeTime>0</iUpgradeTime>
 	<iDefenseModifier>0</iDefenseModifier>
 	<iPillageGold>5</iPillageGold>
 	<bOutsideBorders>0</bOutsideBorders>
@@ -95,12 +95,12 @@
 	<bGoody>0</bGoody>
 	<bPermanent>0</bPermanent>
 	<bUseLSystem>0</bUseLSystem>
-	<iAdvancedStartCost>24</iAdvancedStartCost>
-	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iAdvancedStartCost>10</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>5</iAdvancedStartCostIncrease>
 	<iTilesPerGoody>0</iTilesPerGoody>
 	<iGoodyRange>0</iGoodyRange>
 	<iFeatureGrowth>0</iFeatureGrowth>
-	<iUpgradeTime>00</iUpgradeTime>
+	<iUpgradeTime>0</iUpgradeTime>
 	<iDefenseModifier>0</iDefenseModifier>
 	<iPillageGold>5</iPillageGold>
 	<bOutsideBorders>0</bOutsideBorders>
@@ -154,12 +154,12 @@
 	<bGoody>0</bGoody>
 	<bPermanent>0</bPermanent>
 	<bUseLSystem>0</bUseLSystem>
-	<iAdvancedStartCost>24</iAdvancedStartCost>
-	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iAdvancedStartCost>10</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>5</iAdvancedStartCostIncrease>
 	<iTilesPerGoody>0</iTilesPerGoody>
 	<iGoodyRange>0</iGoodyRange>
 	<iFeatureGrowth>0</iFeatureGrowth>
-	<iUpgradeTime>00</iUpgradeTime>
+	<iUpgradeTime>0</iUpgradeTime>
 	<iDefenseModifier>0</iDefenseModifier>
 	<iPillageGold>5</iPillageGold>
 	<bOutsideBorders>0</bOutsideBorders>
@@ -213,12 +213,12 @@
 	<bGoody>0</bGoody>
 	<bPermanent>0</bPermanent>
 	<bUseLSystem>0</bUseLSystem>
-	<iAdvancedStartCost>24</iAdvancedStartCost>
-	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iAdvancedStartCost>10</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>5</iAdvancedStartCostIncrease>
 	<iTilesPerGoody>0</iTilesPerGoody>
 	<iGoodyRange>0</iGoodyRange>
 	<iFeatureGrowth>0</iFeatureGrowth>
-	<iUpgradeTime>00</iUpgradeTime>
+	<iUpgradeTime>0</iUpgradeTime>
 	<iDefenseModifier>0</iDefenseModifier>
 	<iPillageGold>5</iPillageGold>
 	<bOutsideBorders>0</bOutsideBorders>
@@ -272,12 +272,12 @@
 	<bGoody>0</bGoody>
 	<bPermanent>0</bPermanent>
 	<bUseLSystem>0</bUseLSystem>
-	<iAdvancedStartCost>24</iAdvancedStartCost>
-	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iAdvancedStartCost>10</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>5</iAdvancedStartCostIncrease>
 	<iTilesPerGoody>0</iTilesPerGoody>
 	<iGoodyRange>0</iGoodyRange>
 	<iFeatureGrowth>0</iFeatureGrowth>
-	<iUpgradeTime>00</iUpgradeTime>
+	<iUpgradeTime>0</iUpgradeTime>
 	<iDefenseModifier>0</iDefenseModifier>
 	<iPillageGold>5</iPillageGold>
 	<bOutsideBorders>0</bOutsideBorders>
@@ -331,12 +331,12 @@
 	<bGoody>0</bGoody>
 	<bPermanent>0</bPermanent>
 	<bUseLSystem>0</bUseLSystem>
-	<iAdvancedStartCost>24</iAdvancedStartCost>
-	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iAdvancedStartCost>10</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>5</iAdvancedStartCostIncrease>
 	<iTilesPerGoody>0</iTilesPerGoody>
 	<iGoodyRange>0</iGoodyRange>
 	<iFeatureGrowth>0</iFeatureGrowth>
-	<iUpgradeTime>00</iUpgradeTime>
+	<iUpgradeTime>0</iUpgradeTime>
 	<iDefenseModifier>0</iDefenseModifier>
 	<iPillageGold>5</iPillageGold>
 	<bOutsideBorders>0</bOutsideBorders>
@@ -390,12 +390,12 @@
 	<bGoody>0</bGoody>
 	<bPermanent>0</bPermanent>
 	<bUseLSystem>0</bUseLSystem>
-	<iAdvancedStartCost>24</iAdvancedStartCost>
-	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iAdvancedStartCost>10</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>5</iAdvancedStartCostIncrease>
 	<iTilesPerGoody>0</iTilesPerGoody>
 	<iGoodyRange>0</iGoodyRange>
 	<iFeatureGrowth>0</iFeatureGrowth>
-	<iUpgradeTime>00</iUpgradeTime>
+	<iUpgradeTime>0</iUpgradeTime>
 	<iDefenseModifier>0</iDefenseModifier>
 	<iPillageGold>5</iPillageGold>
 	<bOutsideBorders>0</bOutsideBorders>
@@ -449,12 +449,12 @@
 	<bGoody>0</bGoody>
 	<bPermanent>0</bPermanent>
 	<bUseLSystem>0</bUseLSystem>
-	<iAdvancedStartCost>24</iAdvancedStartCost>
-	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iAdvancedStartCost>10</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>5</iAdvancedStartCostIncrease>
 	<iTilesPerGoody>0</iTilesPerGoody>
 	<iGoodyRange>0</iGoodyRange>
 	<iFeatureGrowth>0</iFeatureGrowth>
-	<iUpgradeTime>00</iUpgradeTime>
+	<iUpgradeTime>0</iUpgradeTime>
 	<iDefenseModifier>0</iDefenseModifier>
 	<iPillageGold>5</iPillageGold>
 	<bOutsideBorders>0</bOutsideBorders>
@@ -508,12 +508,12 @@
 	<bGoody>0</bGoody>
 	<bPermanent>0</bPermanent>
 	<bUseLSystem>0</bUseLSystem>
-	<iAdvancedStartCost>24</iAdvancedStartCost>
-	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iAdvancedStartCost>10</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>5</iAdvancedStartCostIncrease>
 	<iTilesPerGoody>0</iTilesPerGoody>
 	<iGoodyRange>0</iGoodyRange>
 	<iFeatureGrowth>0</iFeatureGrowth>
-	<iUpgradeTime>00</iUpgradeTime>
+	<iUpgradeTime>0</iUpgradeTime>
 	<iDefenseModifier>0</iDefenseModifier>
 	<iPillageGold>5</iPillageGold>
 	<bOutsideBorders>0</bOutsideBorders>
@@ -567,12 +567,12 @@
 	<bGoody>0</bGoody>
 	<bPermanent>0</bPermanent>
 	<bUseLSystem>0</bUseLSystem>
-	<iAdvancedStartCost>24</iAdvancedStartCost>
-	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iAdvancedStartCost>10</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>5</iAdvancedStartCostIncrease>
 	<iTilesPerGoody>0</iTilesPerGoody>
 	<iGoodyRange>0</iGoodyRange>
 	<iFeatureGrowth>0</iFeatureGrowth>
-	<iUpgradeTime>00</iUpgradeTime>
+	<iUpgradeTime>0</iUpgradeTime>
 	<iDefenseModifier>0</iDefenseModifier>
 	<iPillageGold>5</iPillageGold>
 	<bOutsideBorders>0</bOutsideBorders>
@@ -626,12 +626,12 @@
 	<bGoody>0</bGoody>
 	<bPermanent>0</bPermanent>
 	<bUseLSystem>0</bUseLSystem>
-	<iAdvancedStartCost>24</iAdvancedStartCost>
-	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iAdvancedStartCost>10</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>5</iAdvancedStartCostIncrease>
 	<iTilesPerGoody>0</iTilesPerGoody>
 	<iGoodyRange>0</iGoodyRange>
 	<iFeatureGrowth>0</iFeatureGrowth>
-	<iUpgradeTime>00</iUpgradeTime>
+	<iUpgradeTime>0</iUpgradeTime>
 	<iDefenseModifier>0</iDefenseModifier>
 	<iPillageGold>5</iPillageGold>
 	<bOutsideBorders>0</bOutsideBorders>
@@ -685,12 +685,12 @@
 	<bGoody>0</bGoody>
 	<bPermanent>0</bPermanent>
 	<bUseLSystem>0</bUseLSystem>
-	<iAdvancedStartCost>24</iAdvancedStartCost>
-	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iAdvancedStartCost>10</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>5</iAdvancedStartCostIncrease>
 	<iTilesPerGoody>0</iTilesPerGoody>
 	<iGoodyRange>0</iGoodyRange>
 	<iFeatureGrowth>0</iFeatureGrowth>
-	<iUpgradeTime>00</iUpgradeTime>
+	<iUpgradeTime>0</iUpgradeTime>
 	<iDefenseModifier>0</iDefenseModifier>
 	<iPillageGold>5</iPillageGold>
 	<bOutsideBorders>0</bOutsideBorders>
@@ -744,12 +744,12 @@
 	<bGoody>0</bGoody>
 	<bPermanent>0</bPermanent>
 	<bUseLSystem>0</bUseLSystem>
-	<iAdvancedStartCost>24</iAdvancedStartCost>
-	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iAdvancedStartCost>10</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>5</iAdvancedStartCostIncrease>
 	<iTilesPerGoody>0</iTilesPerGoody>
 	<iGoodyRange>0</iGoodyRange>
 	<iFeatureGrowth>0</iFeatureGrowth>
-	<iUpgradeTime>00</iUpgradeTime>
+	<iUpgradeTime>0</iUpgradeTime>
 	<iDefenseModifier>0</iDefenseModifier>
 	<iPillageGold>5</iPillageGold>
 	<bOutsideBorders>0</bOutsideBorders>

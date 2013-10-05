@@ -13,12 +13,12 @@
 		<ArtDefineTag>ART_DEF_FEATURE_FOREST</ArtDefineTag>
 		<YieldChanges>
 			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>4</iValue>
+				<YieldType>YIELD_NUTRIENTS</YieldType>
+				<iValue>-1</iValue>
 			</YieldIntegerPair>
 			<YieldIntegerPair>
-				<YieldType>YIELD_NUCLEIC_ACIDS</YieldType>
-				<iValue>1</iValue>
+				<YieldType>YIELD_BIOPOLYMERS</YieldType>
+				<iValue>4</iValue>
 			</YieldIntegerPair>
 		</YieldChanges>
 		<RiverYieldIncreases/>
@@ -212,7 +212,7 @@
 			</YieldIntegerPair>
 			<YieldIntegerPair>
 				<YieldType>YIELD_XENOTOXINS</YieldType>
-				<iValue>2</iValue>
+				<iValue>1</iValue>
 			</YieldIntegerPair>
 		</YieldChanges>
 		<RiverYieldIncreases/>
@@ -303,14 +303,6 @@
 		<Civilopedia>TXT_KEY_FEATURE_JUNGLE_PEDIA</Civilopedia>
 		<ArtDefineTag>ART_DEF_FEATURE_ICE</ArtDefineTag>
 		<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_CLATHRATES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_PROGENITOR_ARTIFACTS</YieldType>
-				<iValue>2</iValue>
-			</YieldIntegerPair>
 		</YieldChanges>
 		<RiverYieldIncreases/>
 		<iMovement>2</iMovement>

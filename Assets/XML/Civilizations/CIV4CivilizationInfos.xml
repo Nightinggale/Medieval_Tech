@@ -18,7 +18,7 @@
 	<UnitArtStyleType>UNIT_ARTSTYLE_ANGLO</UnitArtStyleType>
 	<bPlayable>1</bPlayable>
 	<bAIPlayable>1</bAIPlayable>
-	<bWaterStart>0</bWaterStart>
+	<bWaterStart>1</bWaterStart>
 	<bOpenBorders>0</bOpenBorders>
 	<bWaterWorks>1</bWaterWorks>
 	<bEurope>0</bEurope>
@@ -63,6 +63,10 @@
 		<FreeUnitClass>
 			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
 			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_CORVETTE</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
 		</FreeUnitClass>
 	</FreeUnitClasses>
 	<FreeBuildingClasses>
@@ -204,7 +208,7 @@
 	<UnitArtStyleType>UNIT_ARTSTYLE_ANGLO</UnitArtStyleType>
 	<bPlayable>1</bPlayable>
 	<bAIPlayable>1</bAIPlayable>
-	<bWaterStart>0</bWaterStart>
+	<bWaterStart>1</bWaterStart>
 	<bOpenBorders>0</bOpenBorders>
 	<bWaterWorks>1</bWaterWorks>
 	<bEurope>0</bEurope>
@@ -249,6 +253,10 @@
 		<FreeUnitClass>
 			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
 			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_CORVETTE</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
 		</FreeUnitClass>
 	</FreeUnitClasses>
 	<FreeBuildingClasses>
@@ -390,7 +398,7 @@
 	<UnitArtStyleType>UNIT_ARTSTYLE_ANGLO</UnitArtStyleType>
 	<bPlayable>1</bPlayable>
 	<bAIPlayable>1</bAIPlayable>
-	<bWaterStart>0</bWaterStart>
+	<bWaterStart>1</bWaterStart>
 	<bOpenBorders>0</bOpenBorders>
 	<bWaterWorks>1</bWaterWorks>
 	<bEurope>0</bEurope>
@@ -435,6 +443,10 @@
 		<FreeUnitClass>
 			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
 			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_CORVETTE</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
 		</FreeUnitClass>
 	</FreeUnitClasses>
 	<FreeBuildingClasses>
@@ -576,7 +588,7 @@
 	<UnitArtStyleType>UNIT_ARTSTYLE_ANGLO</UnitArtStyleType>
 	<bPlayable>1</bPlayable>
 	<bAIPlayable>1</bAIPlayable>
-	<bWaterStart>0</bWaterStart>
+	<bWaterStart>1</bWaterStart>
 	<bOpenBorders>0</bOpenBorders>
 	<bWaterWorks>1</bWaterWorks>
 	<bEurope>0</bEurope>
@@ -621,6 +633,10 @@
 		<FreeUnitClass>
 			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
 			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_CORVETTE</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
 		</FreeUnitClass>
 	</FreeUnitClasses>
 	<FreeBuildingClasses>
@@ -762,7 +778,7 @@
 	<UnitArtStyleType>UNIT_ARTSTYLE_ANGLO</UnitArtStyleType>
 	<bPlayable>1</bPlayable>
 	<bAIPlayable>1</bAIPlayable>
-	<bWaterStart>0</bWaterStart>
+	<bWaterStart>1</bWaterStart>
 	<bOpenBorders>0</bOpenBorders>
 	<bWaterWorks>1</bWaterWorks>
 	<bEurope>0</bEurope>
@@ -807,6 +823,10 @@
 		<FreeUnitClass>
 			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
 			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_CORVETTE</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
 		</FreeUnitClass>
 	</FreeUnitClasses>
 	<FreeBuildingClasses>
@@ -948,7 +968,7 @@
 	<UnitArtStyleType>UNIT_ARTSTYLE_ANGLO</UnitArtStyleType>
 	<bPlayable>1</bPlayable>
 	<bAIPlayable>1</bAIPlayable>
-	<bWaterStart>0</bWaterStart>
+	<bWaterStart>1</bWaterStart>
 	<bOpenBorders>0</bOpenBorders>
 	<bWaterWorks>1</bWaterWorks>
 	<bEurope>0</bEurope>
@@ -993,6 +1013,10 @@
 		<FreeUnitClass>
 			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
 			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_CORVETTE</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
 		</FreeUnitClass>
 	</FreeUnitClasses>
 	<FreeBuildingClasses>
@@ -1134,7 +1158,7 @@
 	<UnitArtStyleType>UNIT_ARTSTYLE_ANGLO</UnitArtStyleType>
 	<bPlayable>1</bPlayable>
 	<bAIPlayable>1</bAIPlayable>
-	<bWaterStart>0</bWaterStart>
+	<bWaterStart>1</bWaterStart>
 	<bOpenBorders>0</bOpenBorders>
 	<bWaterWorks>1</bWaterWorks>
 	<bEurope>0</bEurope>
@@ -1179,6 +1203,10 @@
 		<FreeUnitClass>
 			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
 			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_CORVETTE</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
 		</FreeUnitClass>
 	</FreeUnitClasses>
 	<FreeBuildingClasses>
@@ -1320,7 +1348,7 @@
 	<UnitArtStyleType>UNIT_ARTSTYLE_ANGLO</UnitArtStyleType>
 	<bPlayable>1</bPlayable>
 	<bAIPlayable>1</bAIPlayable>
-	<bWaterStart>0</bWaterStart>
+	<bWaterStart>1</bWaterStart>
 	<bOpenBorders>0</bOpenBorders>
 	<bWaterWorks>1</bWaterWorks>
 	<bEurope>0</bEurope>
@@ -1365,6 +1393,10 @@
 		<FreeUnitClass>
 			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
 			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_CORVETTE</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
 		</FreeUnitClass>
 	</FreeUnitClasses>
 	<FreeBuildingClasses>

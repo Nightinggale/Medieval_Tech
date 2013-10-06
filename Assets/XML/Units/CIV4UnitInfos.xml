@@ -16712,7 +16712,7 @@
 	<Capture>NONE</Capture>
 	<Combat>NONE</Combat>
 	<Domain>DOMAIN_SEA</Domain>
-	<DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
+	<DefaultUnitAI>UNITAI_TRANSPORT_SEA</DefaultUnitAI>
 	<DefaultProfession>NONE</DefaultProfession>
 	<Invisible>NONE</Invisible>
 	<SeeInvisible>NONE</SeeInvisible>
@@ -16741,37 +16741,56 @@
 	<UnitClassUpgrades/>
 	<UnitAIs>
 		<UnitAI>
-			<UnitAIType>UNITAI_COMBAT_SEA</UnitAIType>
+			<UnitAIType>UNITAI_TRANSPORT_SEA</UnitAIType>
 			<bUnitAI>1</bUnitAI>
 		</UnitAI>
 	</UnitAIs>
 	<NotUnitAIs/>
 	<Builds/>
 	<PrereqBuilding>NONE</PrereqBuilding>
-	<PrereqOrBuildings/>
+	<PrereqOrBuildings>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK2</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK3</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+	</PrereqOrBuildings>
 	<ProductionTraits/>
 	<iAIWeight>10</iAIWeight>
-	<YieldCosts/>
+	<YieldCosts>
+		<YieldCost>
+			<YieldType>YIELD_INDUSTRY</YieldType>
+			<iCost>100</iCost>
+		</YieldCost>
+	</YieldCosts>
 	<iHurryCostModifier>0</iHurryCostModifier>
-	<iAdvancedStartCost>-1</iAdvancedStartCost>
-	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iAdvancedStartCost>2000</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>500</iAdvancedStartCostIncrease>
 	<iEuropeCost>2000</iEuropeCost>
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 	<iMinAreaSize>-1</iMinAreaSize>
-	<iMoves>0</iMoves>
+	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
 	<iWorkRateModifier>0</iWorkRateModifier>
 	<iMissionaryRateModifier>0</iMissionaryRateModifier>
 	<TerrainImpassables/>
 	<FeatureImpassables/>
-	<EvasionBuildings/>
+	<EvasionBuildings>
+		<EvasionBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK1</BuildingClass>
+			<bEvasion>1</bEvasion>
+		</EvasionBuilding>
+	</EvasionBuildings>
 	<iCombat>3</iCombat>
-	<iXPValueAttack>5</iXPValueAttack>
-	<iXPValueDefense>5</iXPValueDefense>
-	<iWithdrawalProb>0</iWithdrawalProb>
+	<iXPValueAttack>4</iXPValueAttack>
+	<iXPValueDefense>2</iXPValueDefense>
+	<iWithdrawalProb>10</iWithdrawalProb>
 	<iCityAttack>0</iCityAttack>
 	<iCityDefense>0</iCityDefense>
 	<iHillsAttack>0</iHillsAttack>
@@ -16791,11 +16810,11 @@
 	<bWaterYieldChanges>0</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
-	<DomainCargo>NONE</DomainCargo>
-	<iCargo>0</iCargo>
+	<DomainCargo>DOMAIN_LAND</DomainCargo>
+	<iCargo>3</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
-	<iAsset>0</iAsset>
-	<iPower>0</iPower>
+	<iAsset>200</iAsset>
+	<iPower>50</iPower>
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>0</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
@@ -16830,7 +16849,7 @@
 	<Capture>NONE</Capture>
 	<Combat>NONE</Combat>
 	<Domain>DOMAIN_SEA</Domain>
-	<DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
+	<DefaultUnitAI>UNITAI_TRANSPORT_SEA</DefaultUnitAI>
 	<DefaultProfession>NONE</DefaultProfession>
 	<Invisible>NONE</Invisible>
 	<SeeInvisible>NONE</SeeInvisible>
@@ -16859,37 +16878,56 @@
 	<UnitClassUpgrades/>
 	<UnitAIs>
 		<UnitAI>
-			<UnitAIType>UNITAI_COMBAT_SEA</UnitAIType>
+			<UnitAIType>UNITAI_TRANSPORT_SEA</UnitAIType>
 			<bUnitAI>1</bUnitAI>
 		</UnitAI>
 	</UnitAIs>
 	<NotUnitAIs/>
 	<Builds/>
 	<PrereqBuilding>NONE</PrereqBuilding>
-	<PrereqOrBuildings/>
+	<PrereqOrBuildings>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK2</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK3</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+	</PrereqOrBuildings>
 	<ProductionTraits/>
 	<iAIWeight>10</iAIWeight>
-	<YieldCosts/>
+	<YieldCosts>
+		<YieldCost>
+			<YieldType>YIELD_INDUSTRY</YieldType>
+			<iCost>100</iCost>
+		</YieldCost>
+	</YieldCosts>
 	<iHurryCostModifier>0</iHurryCostModifier>
-	<iAdvancedStartCost>-1</iAdvancedStartCost>
-	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iAdvancedStartCost>2000</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>500</iAdvancedStartCostIncrease>
 	<iEuropeCost>2000</iEuropeCost>
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 	<iMinAreaSize>-1</iMinAreaSize>
-	<iMoves>0</iMoves>
+	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
 	<iWorkRateModifier>0</iWorkRateModifier>
 	<iMissionaryRateModifier>0</iMissionaryRateModifier>
 	<TerrainImpassables/>
 	<FeatureImpassables/>
-	<EvasionBuildings/>
+	<EvasionBuildings>
+		<EvasionBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK1</BuildingClass>
+			<bEvasion>1</bEvasion>
+		</EvasionBuilding>
+	</EvasionBuildings>
 	<iCombat>3</iCombat>
-	<iXPValueAttack>5</iXPValueAttack>
-	<iXPValueDefense>5</iXPValueDefense>
-	<iWithdrawalProb>0</iWithdrawalProb>
+	<iXPValueAttack>4</iXPValueAttack>
+	<iXPValueDefense>2</iXPValueDefense>
+	<iWithdrawalProb>10</iWithdrawalProb>
 	<iCityAttack>0</iCityAttack>
 	<iCityDefense>0</iCityDefense>
 	<iHillsAttack>0</iHillsAttack>
@@ -16909,11 +16947,11 @@
 	<bWaterYieldChanges>0</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
-	<DomainCargo>NONE</DomainCargo>
-	<iCargo>0</iCargo>
+	<DomainCargo>DOMAIN_LAND</DomainCargo>
+	<iCargo>3</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
-	<iAsset>0</iAsset>
-	<iPower>0</iPower>
+	<iAsset>200</iAsset>
+	<iPower>50</iPower>
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>0</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
@@ -16948,7 +16986,7 @@
 	<Capture>NONE</Capture>
 	<Combat>NONE</Combat>
 	<Domain>DOMAIN_SEA</Domain>
-	<DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
+	<DefaultUnitAI>UNITAI_TRANSPORT_SEA</DefaultUnitAI>
 	<DefaultProfession>NONE</DefaultProfession>
 	<Invisible>NONE</Invisible>
 	<SeeInvisible>NONE</SeeInvisible>
@@ -16977,37 +17015,56 @@
 	<UnitClassUpgrades/>
 	<UnitAIs>
 		<UnitAI>
-			<UnitAIType>UNITAI_COMBAT_SEA</UnitAIType>
+			<UnitAIType>UNITAI_TRANSPORT_SEA</UnitAIType>
 			<bUnitAI>1</bUnitAI>
 		</UnitAI>
 	</UnitAIs>
 	<NotUnitAIs/>
 	<Builds/>
 	<PrereqBuilding>NONE</PrereqBuilding>
-	<PrereqOrBuildings/>
+	<PrereqOrBuildings>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK2</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK3</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+	</PrereqOrBuildings>
 	<ProductionTraits/>
 	<iAIWeight>10</iAIWeight>
-	<YieldCosts/>
+	<YieldCosts>
+		<YieldCost>
+			<YieldType>YIELD_INDUSTRY</YieldType>
+			<iCost>100</iCost>
+		</YieldCost>
+	</YieldCosts>
 	<iHurryCostModifier>0</iHurryCostModifier>
-	<iAdvancedStartCost>-1</iAdvancedStartCost>
-	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iAdvancedStartCost>2000</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>500</iAdvancedStartCostIncrease>
 	<iEuropeCost>2000</iEuropeCost>
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 	<iMinAreaSize>-1</iMinAreaSize>
-	<iMoves>0</iMoves>
+	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
 	<iWorkRateModifier>0</iWorkRateModifier>
 	<iMissionaryRateModifier>0</iMissionaryRateModifier>
 	<TerrainImpassables/>
 	<FeatureImpassables/>
-	<EvasionBuildings/>
+	<EvasionBuildings>
+		<EvasionBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK1</BuildingClass>
+			<bEvasion>1</bEvasion>
+		</EvasionBuilding>
+	</EvasionBuildings>
 	<iCombat>3</iCombat>
-	<iXPValueAttack>5</iXPValueAttack>
-	<iXPValueDefense>5</iXPValueDefense>
-	<iWithdrawalProb>0</iWithdrawalProb>
+	<iXPValueAttack>4</iXPValueAttack>
+	<iXPValueDefense>2</iXPValueDefense>
+	<iWithdrawalProb>10</iWithdrawalProb>
 	<iCityAttack>0</iCityAttack>
 	<iCityDefense>0</iCityDefense>
 	<iHillsAttack>0</iHillsAttack>
@@ -17027,11 +17084,11 @@
 	<bWaterYieldChanges>0</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
-	<DomainCargo>NONE</DomainCargo>
-	<iCargo>0</iCargo>
+	<DomainCargo>DOMAIN_LAND</DomainCargo>
+	<iCargo>3</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
-	<iAsset>0</iAsset>
-	<iPower>0</iPower>
+	<iAsset>200</iAsset>
+	<iPower>50</iPower>
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>0</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
@@ -17066,7 +17123,7 @@
 	<Capture>NONE</Capture>
 	<Combat>NONE</Combat>
 	<Domain>DOMAIN_SEA</Domain>
-	<DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
+	<DefaultUnitAI>UNITAI_TRANSPORT_SEA</DefaultUnitAI>
 	<DefaultProfession>NONE</DefaultProfession>
 	<Invisible>NONE</Invisible>
 	<SeeInvisible>NONE</SeeInvisible>
@@ -17095,37 +17152,56 @@
 	<UnitClassUpgrades/>
 	<UnitAIs>
 		<UnitAI>
-			<UnitAIType>UNITAI_COMBAT_SEA</UnitAIType>
+			<UnitAIType>UNITAI_TRANSPORT_SEA</UnitAIType>
 			<bUnitAI>1</bUnitAI>
 		</UnitAI>
 	</UnitAIs>
 	<NotUnitAIs/>
 	<Builds/>
 	<PrereqBuilding>NONE</PrereqBuilding>
-	<PrereqOrBuildings/>
+	<PrereqOrBuildings>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK2</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK3</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+	</PrereqOrBuildings>
 	<ProductionTraits/>
 	<iAIWeight>10</iAIWeight>
-	<YieldCosts/>
+	<YieldCosts>
+		<YieldCost>
+			<YieldType>YIELD_INDUSTRY</YieldType>
+			<iCost>100</iCost>
+		</YieldCost>
+	</YieldCosts>
 	<iHurryCostModifier>0</iHurryCostModifier>
-	<iAdvancedStartCost>-1</iAdvancedStartCost>
-	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iAdvancedStartCost>2000</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>500</iAdvancedStartCostIncrease>
 	<iEuropeCost>2000</iEuropeCost>
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 	<iMinAreaSize>-1</iMinAreaSize>
-	<iMoves>0</iMoves>
+	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
 	<iWorkRateModifier>0</iWorkRateModifier>
 	<iMissionaryRateModifier>0</iMissionaryRateModifier>
 	<TerrainImpassables/>
 	<FeatureImpassables/>
-	<EvasionBuildings/>
+	<EvasionBuildings>
+		<EvasionBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK1</BuildingClass>
+			<bEvasion>1</bEvasion>
+		</EvasionBuilding>
+	</EvasionBuildings>
 	<iCombat>3</iCombat>
-	<iXPValueAttack>5</iXPValueAttack>
-	<iXPValueDefense>5</iXPValueDefense>
-	<iWithdrawalProb>0</iWithdrawalProb>
+	<iXPValueAttack>4</iXPValueAttack>
+	<iXPValueDefense>2</iXPValueDefense>
+	<iWithdrawalProb>10</iWithdrawalProb>
 	<iCityAttack>0</iCityAttack>
 	<iCityDefense>0</iCityDefense>
 	<iHillsAttack>0</iHillsAttack>
@@ -17145,11 +17221,11 @@
 	<bWaterYieldChanges>0</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
-	<DomainCargo>NONE</DomainCargo>
-	<iCargo>0</iCargo>
+	<DomainCargo>DOMAIN_LAND</DomainCargo>
+	<iCargo>3</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
-	<iAsset>0</iAsset>
-	<iPower>0</iPower>
+	<iAsset>200</iAsset>
+	<iPower>50</iPower>
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>0</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
@@ -17184,7 +17260,7 @@
 	<Capture>NONE</Capture>
 	<Combat>NONE</Combat>
 	<Domain>DOMAIN_SEA</Domain>
-	<DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
+	<DefaultUnitAI>UNITAI_TRANSPORT_SEA</DefaultUnitAI>
 	<DefaultProfession>NONE</DefaultProfession>
 	<Invisible>NONE</Invisible>
 	<SeeInvisible>NONE</SeeInvisible>
@@ -17213,37 +17289,56 @@
 	<UnitClassUpgrades/>
 	<UnitAIs>
 		<UnitAI>
-			<UnitAIType>UNITAI_COMBAT_SEA</UnitAIType>
+			<UnitAIType>UNITAI_TRANSPORT_SEA</UnitAIType>
 			<bUnitAI>1</bUnitAI>
 		</UnitAI>
 	</UnitAIs>
 	<NotUnitAIs/>
 	<Builds/>
 	<PrereqBuilding>NONE</PrereqBuilding>
-	<PrereqOrBuildings/>
+	<PrereqOrBuildings>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK2</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK3</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+	</PrereqOrBuildings>
 	<ProductionTraits/>
 	<iAIWeight>10</iAIWeight>
-	<YieldCosts/>
+	<YieldCosts>
+		<YieldCost>
+			<YieldType>YIELD_INDUSTRY</YieldType>
+			<iCost>100</iCost>
+		</YieldCost>
+	</YieldCosts>
 	<iHurryCostModifier>0</iHurryCostModifier>
-	<iAdvancedStartCost>-1</iAdvancedStartCost>
-	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iAdvancedStartCost>2000</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>500</iAdvancedStartCostIncrease>
 	<iEuropeCost>2000</iEuropeCost>
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 	<iMinAreaSize>-1</iMinAreaSize>
-	<iMoves>0</iMoves>
+	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
 	<iWorkRateModifier>0</iWorkRateModifier>
 	<iMissionaryRateModifier>0</iMissionaryRateModifier>
 	<TerrainImpassables/>
 	<FeatureImpassables/>
-	<EvasionBuildings/>
+	<EvasionBuildings>
+		<EvasionBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK1</BuildingClass>
+			<bEvasion>1</bEvasion>
+		</EvasionBuilding>
+	</EvasionBuildings>
 	<iCombat>3</iCombat>
-	<iXPValueAttack>5</iXPValueAttack>
-	<iXPValueDefense>5</iXPValueDefense>
-	<iWithdrawalProb>0</iWithdrawalProb>
+	<iXPValueAttack>4</iXPValueAttack>
+	<iXPValueDefense>2</iXPValueDefense>
+	<iWithdrawalProb>10</iWithdrawalProb>
 	<iCityAttack>0</iCityAttack>
 	<iCityDefense>0</iCityDefense>
 	<iHillsAttack>0</iHillsAttack>
@@ -17263,11 +17358,11 @@
 	<bWaterYieldChanges>0</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
-	<DomainCargo>NONE</DomainCargo>
-	<iCargo>0</iCargo>
+	<DomainCargo>DOMAIN_LAND</DomainCargo>
+	<iCargo>3</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
-	<iAsset>0</iAsset>
-	<iPower>0</iPower>
+	<iAsset>200</iAsset>
+	<iPower>50</iPower>
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>0</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
@@ -17302,7 +17397,7 @@
 	<Capture>NONE</Capture>
 	<Combat>NONE</Combat>
 	<Domain>DOMAIN_SEA</Domain>
-	<DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
+	<DefaultUnitAI>UNITAI_TRANSPORT_SEA</DefaultUnitAI>
 	<DefaultProfession>NONE</DefaultProfession>
 	<Invisible>NONE</Invisible>
 	<SeeInvisible>NONE</SeeInvisible>
@@ -17331,37 +17426,56 @@
 	<UnitClassUpgrades/>
 	<UnitAIs>
 		<UnitAI>
-			<UnitAIType>UNITAI_COMBAT_SEA</UnitAIType>
+			<UnitAIType>UNITAI_TRANSPORT_SEA</UnitAIType>
 			<bUnitAI>1</bUnitAI>
 		</UnitAI>
 	</UnitAIs>
 	<NotUnitAIs/>
 	<Builds/>
 	<PrereqBuilding>NONE</PrereqBuilding>
-	<PrereqOrBuildings/>
+	<PrereqOrBuildings>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK2</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK3</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+	</PrereqOrBuildings>
 	<ProductionTraits/>
 	<iAIWeight>10</iAIWeight>
-	<YieldCosts/>
+	<YieldCosts>
+		<YieldCost>
+			<YieldType>YIELD_INDUSTRY</YieldType>
+			<iCost>100</iCost>
+		</YieldCost>
+	</YieldCosts>
 	<iHurryCostModifier>0</iHurryCostModifier>
-	<iAdvancedStartCost>-1</iAdvancedStartCost>
-	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iAdvancedStartCost>2000</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>500</iAdvancedStartCostIncrease>
 	<iEuropeCost>2000</iEuropeCost>
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 	<iMinAreaSize>-1</iMinAreaSize>
-	<iMoves>0</iMoves>
+	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
 	<iWorkRateModifier>0</iWorkRateModifier>
 	<iMissionaryRateModifier>0</iMissionaryRateModifier>
 	<TerrainImpassables/>
 	<FeatureImpassables/>
-	<EvasionBuildings/>
+	<EvasionBuildings>
+		<EvasionBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK1</BuildingClass>
+			<bEvasion>1</bEvasion>
+		</EvasionBuilding>
+	</EvasionBuildings>
 	<iCombat>3</iCombat>
-	<iXPValueAttack>5</iXPValueAttack>
-	<iXPValueDefense>5</iXPValueDefense>
-	<iWithdrawalProb>0</iWithdrawalProb>
+	<iXPValueAttack>4</iXPValueAttack>
+	<iXPValueDefense>2</iXPValueDefense>
+	<iWithdrawalProb>10</iWithdrawalProb>
 	<iCityAttack>0</iCityAttack>
 	<iCityDefense>0</iCityDefense>
 	<iHillsAttack>0</iHillsAttack>
@@ -17381,11 +17495,11 @@
 	<bWaterYieldChanges>0</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
-	<DomainCargo>NONE</DomainCargo>
-	<iCargo>0</iCargo>
+	<DomainCargo>DOMAIN_LAND</DomainCargo>
+	<iCargo>3</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
-	<iAsset>0</iAsset>
-	<iPower>0</iPower>
+	<iAsset>200</iAsset>
+	<iPower>50</iPower>
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>0</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
@@ -17420,7 +17534,7 @@
 	<Capture>NONE</Capture>
 	<Combat>NONE</Combat>
 	<Domain>DOMAIN_SEA</Domain>
-	<DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
+	<DefaultUnitAI>UNITAI_TRANSPORT_SEA</DefaultUnitAI>
 	<DefaultProfession>NONE</DefaultProfession>
 	<Invisible>NONE</Invisible>
 	<SeeInvisible>NONE</SeeInvisible>
@@ -17449,37 +17563,56 @@
 	<UnitClassUpgrades/>
 	<UnitAIs>
 		<UnitAI>
-			<UnitAIType>UNITAI_COMBAT_SEA</UnitAIType>
+			<UnitAIType>UNITAI_TRANSPORT_SEA</UnitAIType>
 			<bUnitAI>1</bUnitAI>
 		</UnitAI>
 	</UnitAIs>
 	<NotUnitAIs/>
 	<Builds/>
 	<PrereqBuilding>NONE</PrereqBuilding>
-	<PrereqOrBuildings/>
+	<PrereqOrBuildings>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK2</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK3</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+	</PrereqOrBuildings>
 	<ProductionTraits/>
 	<iAIWeight>10</iAIWeight>
-	<YieldCosts/>
+	<YieldCosts>
+		<YieldCost>
+			<YieldType>YIELD_INDUSTRY</YieldType>
+			<iCost>100</iCost>
+		</YieldCost>
+	</YieldCosts>
 	<iHurryCostModifier>0</iHurryCostModifier>
-	<iAdvancedStartCost>-1</iAdvancedStartCost>
-	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iAdvancedStartCost>2000</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>500</iAdvancedStartCostIncrease>
 	<iEuropeCost>2000</iEuropeCost>
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 	<iMinAreaSize>-1</iMinAreaSize>
-	<iMoves>0</iMoves>
+	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
 	<iWorkRateModifier>0</iWorkRateModifier>
 	<iMissionaryRateModifier>0</iMissionaryRateModifier>
 	<TerrainImpassables/>
 	<FeatureImpassables/>
-	<EvasionBuildings/>
+	<EvasionBuildings>
+		<EvasionBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK1</BuildingClass>
+			<bEvasion>1</bEvasion>
+		</EvasionBuilding>
+	</EvasionBuildings>
 	<iCombat>3</iCombat>
-	<iXPValueAttack>5</iXPValueAttack>
-	<iXPValueDefense>5</iXPValueDefense>
-	<iWithdrawalProb>0</iWithdrawalProb>
+	<iXPValueAttack>4</iXPValueAttack>
+	<iXPValueDefense>2</iXPValueDefense>
+	<iWithdrawalProb>10</iWithdrawalProb>
 	<iCityAttack>0</iCityAttack>
 	<iCityDefense>0</iCityDefense>
 	<iHillsAttack>0</iHillsAttack>
@@ -17499,11 +17632,11 @@
 	<bWaterYieldChanges>0</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
-	<DomainCargo>NONE</DomainCargo>
-	<iCargo>0</iCargo>
+	<DomainCargo>DOMAIN_LAND</DomainCargo>
+	<iCargo>3</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
-	<iAsset>0</iAsset>
-	<iPower>0</iPower>
+	<iAsset>200</iAsset>
+	<iPower>50</iPower>
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>0</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
@@ -17538,7 +17671,7 @@
 	<Capture>NONE</Capture>
 	<Combat>NONE</Combat>
 	<Domain>DOMAIN_SEA</Domain>
-	<DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
+	<DefaultUnitAI>UNITAI_TRANSPORT_SEA</DefaultUnitAI>
 	<DefaultProfession>NONE</DefaultProfession>
 	<Invisible>NONE</Invisible>
 	<SeeInvisible>NONE</SeeInvisible>
@@ -17567,37 +17700,56 @@
 	<UnitClassUpgrades/>
 	<UnitAIs>
 		<UnitAI>
-			<UnitAIType>UNITAI_COMBAT_SEA</UnitAIType>
+			<UnitAIType>UNITAI_TRANSPORT_SEA</UnitAIType>
 			<bUnitAI>1</bUnitAI>
 		</UnitAI>
 	</UnitAIs>
 	<NotUnitAIs/>
 	<Builds/>
 	<PrereqBuilding>NONE</PrereqBuilding>
-	<PrereqOrBuildings/>
+	<PrereqOrBuildings>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK2</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK3</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+	</PrereqOrBuildings>
 	<ProductionTraits/>
 	<iAIWeight>10</iAIWeight>
-	<YieldCosts/>
+	<YieldCosts>
+		<YieldCost>
+			<YieldType>YIELD_INDUSTRY</YieldType>
+			<iCost>100</iCost>
+		</YieldCost>
+	</YieldCosts>
 	<iHurryCostModifier>0</iHurryCostModifier>
-	<iAdvancedStartCost>-1</iAdvancedStartCost>
-	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iAdvancedStartCost>2000</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>500</iAdvancedStartCostIncrease>
 	<iEuropeCost>2000</iEuropeCost>
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 	<iMinAreaSize>-1</iMinAreaSize>
-	<iMoves>0</iMoves>
+	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
 	<iWorkRateModifier>0</iWorkRateModifier>
 	<iMissionaryRateModifier>0</iMissionaryRateModifier>
 	<TerrainImpassables/>
 	<FeatureImpassables/>
-	<EvasionBuildings/>
+	<EvasionBuildings>
+		<EvasionBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK1</BuildingClass>
+			<bEvasion>1</bEvasion>
+		</EvasionBuilding>
+	</EvasionBuildings>
 	<iCombat>3</iCombat>
-	<iXPValueAttack>5</iXPValueAttack>
-	<iXPValueDefense>5</iXPValueDefense>
-	<iWithdrawalProb>0</iWithdrawalProb>
+	<iXPValueAttack>4</iXPValueAttack>
+	<iXPValueDefense>2</iXPValueDefense>
+	<iWithdrawalProb>10</iWithdrawalProb>
 	<iCityAttack>0</iCityAttack>
 	<iCityDefense>0</iCityDefense>
 	<iHillsAttack>0</iHillsAttack>
@@ -17617,11 +17769,11 @@
 	<bWaterYieldChanges>0</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
-	<DomainCargo>NONE</DomainCargo>
-	<iCargo>0</iCargo>
+	<DomainCargo>DOMAIN_LAND</DomainCargo>
+	<iCargo>3</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
-	<iAsset>0</iAsset>
-	<iPower>0</iPower>
+	<iAsset>200</iAsset>
+	<iPower>50</iPower>
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>0</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
@@ -17656,7 +17808,7 @@
 	<Capture>NONE</Capture>
 	<Combat>NONE</Combat>
 	<Domain>DOMAIN_SEA</Domain>
-	<DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
+	<DefaultUnitAI>UNITAI_TRANSPORT_SEA</DefaultUnitAI>
 	<DefaultProfession>NONE</DefaultProfession>
 	<Invisible>NONE</Invisible>
 	<SeeInvisible>NONE</SeeInvisible>
@@ -17685,37 +17837,56 @@
 	<UnitClassUpgrades/>
 	<UnitAIs>
 		<UnitAI>
-			<UnitAIType>UNITAI_COMBAT_SEA</UnitAIType>
+			<UnitAIType>UNITAI_TRANSPORT_SEA</UnitAIType>
 			<bUnitAI>1</bUnitAI>
 		</UnitAI>
 	</UnitAIs>
 	<NotUnitAIs/>
 	<Builds/>
 	<PrereqBuilding>NONE</PrereqBuilding>
-	<PrereqOrBuildings/>
+	<PrereqOrBuildings>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK2</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK3</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+	</PrereqOrBuildings>
 	<ProductionTraits/>
 	<iAIWeight>10</iAIWeight>
-	<YieldCosts/>
+	<YieldCosts>
+		<YieldCost>
+			<YieldType>YIELD_INDUSTRY</YieldType>
+			<iCost>100</iCost>
+		</YieldCost>
+	</YieldCosts>
 	<iHurryCostModifier>0</iHurryCostModifier>
-	<iAdvancedStartCost>-1</iAdvancedStartCost>
-	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iAdvancedStartCost>2000</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>500</iAdvancedStartCostIncrease>
 	<iEuropeCost>2000</iEuropeCost>
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 	<iMinAreaSize>-1</iMinAreaSize>
-	<iMoves>0</iMoves>
+	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
 	<iWorkRateModifier>0</iWorkRateModifier>
 	<iMissionaryRateModifier>0</iMissionaryRateModifier>
 	<TerrainImpassables/>
 	<FeatureImpassables/>
-	<EvasionBuildings/>
+	<EvasionBuildings>
+		<EvasionBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK1</BuildingClass>
+			<bEvasion>1</bEvasion>
+		</EvasionBuilding>
+	</EvasionBuildings>
 	<iCombat>3</iCombat>
-	<iXPValueAttack>5</iXPValueAttack>
-	<iXPValueDefense>5</iXPValueDefense>
-	<iWithdrawalProb>0</iWithdrawalProb>
+	<iXPValueAttack>4</iXPValueAttack>
+	<iXPValueDefense>2</iXPValueDefense>
+	<iWithdrawalProb>10</iWithdrawalProb>
 	<iCityAttack>0</iCityAttack>
 	<iCityDefense>0</iCityDefense>
 	<iHillsAttack>0</iHillsAttack>
@@ -17735,11 +17906,11 @@
 	<bWaterYieldChanges>0</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
-	<DomainCargo>NONE</DomainCargo>
-	<iCargo>0</iCargo>
+	<DomainCargo>DOMAIN_LAND</DomainCargo>
+	<iCargo>3</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
-	<iAsset>0</iAsset>
-	<iPower>0</iPower>
+	<iAsset>200</iAsset>
+	<iPower>50</iPower>
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>0</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
@@ -17774,7 +17945,7 @@
 	<Capture>NONE</Capture>
 	<Combat>NONE</Combat>
 	<Domain>DOMAIN_SEA</Domain>
-	<DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
+	<DefaultUnitAI>UNITAI_TRANSPORT_SEA</DefaultUnitAI>
 	<DefaultProfession>NONE</DefaultProfession>
 	<Invisible>NONE</Invisible>
 	<SeeInvisible>NONE</SeeInvisible>
@@ -17803,37 +17974,56 @@
 	<UnitClassUpgrades/>
 	<UnitAIs>
 		<UnitAI>
-			<UnitAIType>UNITAI_COMBAT_SEA</UnitAIType>
+			<UnitAIType>UNITAI_TRANSPORT_SEA</UnitAIType>
 			<bUnitAI>1</bUnitAI>
 		</UnitAI>
 	</UnitAIs>
 	<NotUnitAIs/>
 	<Builds/>
 	<PrereqBuilding>NONE</PrereqBuilding>
-	<PrereqOrBuildings/>
+	<PrereqOrBuildings>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK2</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK3</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+	</PrereqOrBuildings>
 	<ProductionTraits/>
 	<iAIWeight>10</iAIWeight>
-	<YieldCosts/>
+	<YieldCosts>
+		<YieldCost>
+			<YieldType>YIELD_INDUSTRY</YieldType>
+			<iCost>100</iCost>
+		</YieldCost>
+	</YieldCosts>
 	<iHurryCostModifier>0</iHurryCostModifier>
-	<iAdvancedStartCost>-1</iAdvancedStartCost>
-	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iAdvancedStartCost>2000</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>500</iAdvancedStartCostIncrease>
 	<iEuropeCost>2000</iEuropeCost>
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 	<iMinAreaSize>-1</iMinAreaSize>
-	<iMoves>0</iMoves>
+	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
 	<iWorkRateModifier>0</iWorkRateModifier>
 	<iMissionaryRateModifier>0</iMissionaryRateModifier>
 	<TerrainImpassables/>
 	<FeatureImpassables/>
-	<EvasionBuildings/>
+	<EvasionBuildings>
+		<EvasionBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK1</BuildingClass>
+			<bEvasion>1</bEvasion>
+		</EvasionBuilding>
+	</EvasionBuildings>
 	<iCombat>3</iCombat>
-	<iXPValueAttack>5</iXPValueAttack>
-	<iXPValueDefense>5</iXPValueDefense>
-	<iWithdrawalProb>0</iWithdrawalProb>
+	<iXPValueAttack>4</iXPValueAttack>
+	<iXPValueDefense>2</iXPValueDefense>
+	<iWithdrawalProb>10</iWithdrawalProb>
 	<iCityAttack>0</iCityAttack>
 	<iCityDefense>0</iCityDefense>
 	<iHillsAttack>0</iHillsAttack>
@@ -17853,11 +18043,11 @@
 	<bWaterYieldChanges>0</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
-	<DomainCargo>NONE</DomainCargo>
-	<iCargo>0</iCargo>
+	<DomainCargo>DOMAIN_LAND</DomainCargo>
+	<iCargo>3</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
-	<iAsset>0</iAsset>
-	<iPower>0</iPower>
+	<iAsset>200</iAsset>
+	<iPower>50</iPower>
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>0</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
@@ -17892,7 +18082,7 @@
 	<Capture>NONE</Capture>
 	<Combat>NONE</Combat>
 	<Domain>DOMAIN_SEA</Domain>
-	<DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
+	<DefaultUnitAI>UNITAI_TRANSPORT_SEA</DefaultUnitAI>
 	<DefaultProfession>NONE</DefaultProfession>
 	<Invisible>NONE</Invisible>
 	<SeeInvisible>NONE</SeeInvisible>
@@ -17921,37 +18111,56 @@
 	<UnitClassUpgrades/>
 	<UnitAIs>
 		<UnitAI>
-			<UnitAIType>UNITAI_COMBAT_SEA</UnitAIType>
+			<UnitAIType>UNITAI_TRANSPORT_SEA</UnitAIType>
 			<bUnitAI>1</bUnitAI>
 		</UnitAI>
 	</UnitAIs>
 	<NotUnitAIs/>
 	<Builds/>
 	<PrereqBuilding>NONE</PrereqBuilding>
-	<PrereqOrBuildings/>
+	<PrereqOrBuildings>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK2</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK3</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+	</PrereqOrBuildings>
 	<ProductionTraits/>
 	<iAIWeight>10</iAIWeight>
-	<YieldCosts/>
+	<YieldCosts>
+		<YieldCost>
+			<YieldType>YIELD_INDUSTRY</YieldType>
+			<iCost>100</iCost>
+		</YieldCost>
+	</YieldCosts>
 	<iHurryCostModifier>0</iHurryCostModifier>
-	<iAdvancedStartCost>-1</iAdvancedStartCost>
-	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iAdvancedStartCost>2000</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>500</iAdvancedStartCostIncrease>
 	<iEuropeCost>2000</iEuropeCost>
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 	<iMinAreaSize>-1</iMinAreaSize>
-	<iMoves>0</iMoves>
+	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
 	<iWorkRateModifier>0</iWorkRateModifier>
 	<iMissionaryRateModifier>0</iMissionaryRateModifier>
 	<TerrainImpassables/>
 	<FeatureImpassables/>
-	<EvasionBuildings/>
+	<EvasionBuildings>
+		<EvasionBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK1</BuildingClass>
+			<bEvasion>1</bEvasion>
+		</EvasionBuilding>
+	</EvasionBuildings>
 	<iCombat>3</iCombat>
-	<iXPValueAttack>5</iXPValueAttack>
-	<iXPValueDefense>5</iXPValueDefense>
-	<iWithdrawalProb>0</iWithdrawalProb>
+	<iXPValueAttack>4</iXPValueAttack>
+	<iXPValueDefense>2</iXPValueDefense>
+	<iWithdrawalProb>10</iWithdrawalProb>
 	<iCityAttack>0</iCityAttack>
 	<iCityDefense>0</iCityDefense>
 	<iHillsAttack>0</iHillsAttack>
@@ -17971,11 +18180,11 @@
 	<bWaterYieldChanges>0</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
-	<DomainCargo>NONE</DomainCargo>
-	<iCargo>0</iCargo>
+	<DomainCargo>DOMAIN_LAND</DomainCargo>
+	<iCargo>3</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
-	<iAsset>0</iAsset>
-	<iPower>0</iPower>
+	<iAsset>200</iAsset>
+	<iPower>50</iPower>
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>0</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
@@ -18010,7 +18219,7 @@
 	<Capture>NONE</Capture>
 	<Combat>NONE</Combat>
 	<Domain>DOMAIN_SEA</Domain>
-	<DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
+	<DefaultUnitAI>UNITAI_TRANSPORT_SEA</DefaultUnitAI>
 	<DefaultProfession>NONE</DefaultProfession>
 	<Invisible>NONE</Invisible>
 	<SeeInvisible>NONE</SeeInvisible>
@@ -18039,37 +18248,56 @@
 	<UnitClassUpgrades/>
 	<UnitAIs>
 		<UnitAI>
-			<UnitAIType>UNITAI_COMBAT_SEA</UnitAIType>
+			<UnitAIType>UNITAI_TRANSPORT_SEA</UnitAIType>
 			<bUnitAI>1</bUnitAI>
 		</UnitAI>
 	</UnitAIs>
 	<NotUnitAIs/>
 	<Builds/>
 	<PrereqBuilding>NONE</PrereqBuilding>
-	<PrereqOrBuildings/>
+	<PrereqOrBuildings>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK2</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK3</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+	</PrereqOrBuildings>
 	<ProductionTraits/>
 	<iAIWeight>10</iAIWeight>
-	<YieldCosts/>
+	<YieldCosts>
+		<YieldCost>
+			<YieldType>YIELD_INDUSTRY</YieldType>
+			<iCost>100</iCost>
+		</YieldCost>
+	</YieldCosts>
 	<iHurryCostModifier>0</iHurryCostModifier>
-	<iAdvancedStartCost>-1</iAdvancedStartCost>
-	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iAdvancedStartCost>2000</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>500</iAdvancedStartCostIncrease>
 	<iEuropeCost>2000</iEuropeCost>
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 	<iMinAreaSize>-1</iMinAreaSize>
-	<iMoves>0</iMoves>
+	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
 	<iWorkRateModifier>0</iWorkRateModifier>
 	<iMissionaryRateModifier>0</iMissionaryRateModifier>
 	<TerrainImpassables/>
 	<FeatureImpassables/>
-	<EvasionBuildings/>
+	<EvasionBuildings>
+		<EvasionBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK1</BuildingClass>
+			<bEvasion>1</bEvasion>
+		</EvasionBuilding>
+	</EvasionBuildings>
 	<iCombat>3</iCombat>
-	<iXPValueAttack>5</iXPValueAttack>
-	<iXPValueDefense>5</iXPValueDefense>
-	<iWithdrawalProb>0</iWithdrawalProb>
+	<iXPValueAttack>4</iXPValueAttack>
+	<iXPValueDefense>2</iXPValueDefense>
+	<iWithdrawalProb>10</iWithdrawalProb>
 	<iCityAttack>0</iCityAttack>
 	<iCityDefense>0</iCityDefense>
 	<iHillsAttack>0</iHillsAttack>
@@ -18089,11 +18317,11 @@
 	<bWaterYieldChanges>0</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
-	<DomainCargo>NONE</DomainCargo>
-	<iCargo>0</iCargo>
+	<DomainCargo>DOMAIN_LAND</DomainCargo>
+	<iCargo>3</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
-	<iAsset>0</iAsset>
-	<iPower>0</iPower>
+	<iAsset>200</iAsset>
+	<iPower>50</iPower>
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>0</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
@@ -18128,7 +18356,7 @@
 	<Capture>NONE</Capture>
 	<Combat>NONE</Combat>
 	<Domain>DOMAIN_SEA</Domain>
-	<DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
+	<DefaultUnitAI>UNITAI_TRANSPORT_SEA</DefaultUnitAI>
 	<DefaultProfession>NONE</DefaultProfession>
 	<Invisible>NONE</Invisible>
 	<SeeInvisible>NONE</SeeInvisible>
@@ -18157,37 +18385,56 @@
 	<UnitClassUpgrades/>
 	<UnitAIs>
 		<UnitAI>
-			<UnitAIType>UNITAI_COMBAT_SEA</UnitAIType>
+			<UnitAIType>UNITAI_TRANSPORT_SEA</UnitAIType>
 			<bUnitAI>1</bUnitAI>
 		</UnitAI>
 	</UnitAIs>
 	<NotUnitAIs/>
 	<Builds/>
 	<PrereqBuilding>NONE</PrereqBuilding>
-	<PrereqOrBuildings/>
+	<PrereqOrBuildings>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK2</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK3</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+	</PrereqOrBuildings>
 	<ProductionTraits/>
 	<iAIWeight>10</iAIWeight>
-	<YieldCosts/>
+	<YieldCosts>
+		<YieldCost>
+			<YieldType>YIELD_INDUSTRY</YieldType>
+			<iCost>100</iCost>
+		</YieldCost>
+	</YieldCosts>
 	<iHurryCostModifier>0</iHurryCostModifier>
-	<iAdvancedStartCost>-1</iAdvancedStartCost>
-	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iAdvancedStartCost>2000</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>500</iAdvancedStartCostIncrease>
 	<iEuropeCost>2000</iEuropeCost>
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 	<iMinAreaSize>-1</iMinAreaSize>
-	<iMoves>0</iMoves>
+	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
 	<iWorkRateModifier>0</iWorkRateModifier>
 	<iMissionaryRateModifier>0</iMissionaryRateModifier>
 	<TerrainImpassables/>
 	<FeatureImpassables/>
-	<EvasionBuildings/>
+	<EvasionBuildings>
+		<EvasionBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK1</BuildingClass>
+			<bEvasion>1</bEvasion>
+		</EvasionBuilding>
+	</EvasionBuildings>
 	<iCombat>3</iCombat>
-	<iXPValueAttack>5</iXPValueAttack>
-	<iXPValueDefense>5</iXPValueDefense>
-	<iWithdrawalProb>0</iWithdrawalProb>
+	<iXPValueAttack>4</iXPValueAttack>
+	<iXPValueDefense>2</iXPValueDefense>
+	<iWithdrawalProb>10</iWithdrawalProb>
 	<iCityAttack>0</iCityAttack>
 	<iCityDefense>0</iCityDefense>
 	<iHillsAttack>0</iHillsAttack>
@@ -18207,11 +18454,11 @@
 	<bWaterYieldChanges>0</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
-	<DomainCargo>NONE</DomainCargo>
-	<iCargo>0</iCargo>
+	<DomainCargo>DOMAIN_LAND</DomainCargo>
+	<iCargo>3</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
-	<iAsset>0</iAsset>
-	<iPower>0</iPower>
+	<iAsset>200</iAsset>
+	<iPower>50</iPower>
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>0</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
@@ -18246,7 +18493,7 @@
 	<Capture>NONE</Capture>
 	<Combat>NONE</Combat>
 	<Domain>DOMAIN_SEA</Domain>
-	<DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
+	<DefaultUnitAI>UNITAI_TRANSPORT_SEA</DefaultUnitAI>
 	<DefaultProfession>NONE</DefaultProfession>
 	<Invisible>NONE</Invisible>
 	<SeeInvisible>NONE</SeeInvisible>
@@ -18275,37 +18522,56 @@
 	<UnitClassUpgrades/>
 	<UnitAIs>
 		<UnitAI>
-			<UnitAIType>UNITAI_COMBAT_SEA</UnitAIType>
+			<UnitAIType>UNITAI_TRANSPORT_SEA</UnitAIType>
 			<bUnitAI>1</bUnitAI>
 		</UnitAI>
 	</UnitAIs>
 	<NotUnitAIs/>
 	<Builds/>
 	<PrereqBuilding>NONE</PrereqBuilding>
-	<PrereqOrBuildings/>
+	<PrereqOrBuildings>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK2</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK3</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+	</PrereqOrBuildings>
 	<ProductionTraits/>
 	<iAIWeight>10</iAIWeight>
-	<YieldCosts/>
+	<YieldCosts>
+		<YieldCost>
+			<YieldType>YIELD_INDUSTRY</YieldType>
+			<iCost>100</iCost>
+		</YieldCost>
+	</YieldCosts>
 	<iHurryCostModifier>0</iHurryCostModifier>
-	<iAdvancedStartCost>-1</iAdvancedStartCost>
-	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iAdvancedStartCost>2000</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>500</iAdvancedStartCostIncrease>
 	<iEuropeCost>2000</iEuropeCost>
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 	<iMinAreaSize>-1</iMinAreaSize>
-	<iMoves>0</iMoves>
+	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
 	<iWorkRateModifier>0</iWorkRateModifier>
 	<iMissionaryRateModifier>0</iMissionaryRateModifier>
 	<TerrainImpassables/>
 	<FeatureImpassables/>
-	<EvasionBuildings/>
+	<EvasionBuildings>
+		<EvasionBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK1</BuildingClass>
+			<bEvasion>1</bEvasion>
+		</EvasionBuilding>
+	</EvasionBuildings>
 	<iCombat>3</iCombat>
-	<iXPValueAttack>5</iXPValueAttack>
-	<iXPValueDefense>5</iXPValueDefense>
-	<iWithdrawalProb>0</iWithdrawalProb>
+	<iXPValueAttack>4</iXPValueAttack>
+	<iXPValueDefense>2</iXPValueDefense>
+	<iWithdrawalProb>10</iWithdrawalProb>
 	<iCityAttack>0</iCityAttack>
 	<iCityDefense>0</iCityDefense>
 	<iHillsAttack>0</iHillsAttack>
@@ -18325,11 +18591,11 @@
 	<bWaterYieldChanges>0</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
-	<DomainCargo>NONE</DomainCargo>
-	<iCargo>0</iCargo>
+	<DomainCargo>DOMAIN_LAND</DomainCargo>
+	<iCargo>3</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
-	<iAsset>0</iAsset>
-	<iPower>0</iPower>
+	<iAsset>200</iAsset>
+	<iPower>50</iPower>
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>0</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
@@ -18364,7 +18630,7 @@
 	<Capture>NONE</Capture>
 	<Combat>NONE</Combat>
 	<Domain>DOMAIN_SEA</Domain>
-	<DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
+	<DefaultUnitAI>UNITAI_TRANSPORT_SEA</DefaultUnitAI>
 	<DefaultProfession>NONE</DefaultProfession>
 	<Invisible>NONE</Invisible>
 	<SeeInvisible>NONE</SeeInvisible>
@@ -18393,37 +18659,56 @@
 	<UnitClassUpgrades/>
 	<UnitAIs>
 		<UnitAI>
-			<UnitAIType>UNITAI_COMBAT_SEA</UnitAIType>
+			<UnitAIType>UNITAI_TRANSPORT_SEA</UnitAIType>
 			<bUnitAI>1</bUnitAI>
 		</UnitAI>
 	</UnitAIs>
 	<NotUnitAIs/>
 	<Builds/>
 	<PrereqBuilding>NONE</PrereqBuilding>
-	<PrereqOrBuildings/>
+	<PrereqOrBuildings>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK2</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK3</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+	</PrereqOrBuildings>
 	<ProductionTraits/>
 	<iAIWeight>10</iAIWeight>
-	<YieldCosts/>
+	<YieldCosts>
+		<YieldCost>
+			<YieldType>YIELD_INDUSTRY</YieldType>
+			<iCost>100</iCost>
+		</YieldCost>
+	</YieldCosts>
 	<iHurryCostModifier>0</iHurryCostModifier>
-	<iAdvancedStartCost>-1</iAdvancedStartCost>
-	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iAdvancedStartCost>2000</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>500</iAdvancedStartCostIncrease>
 	<iEuropeCost>2000</iEuropeCost>
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 	<iMinAreaSize>-1</iMinAreaSize>
-	<iMoves>0</iMoves>
+	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
 	<iWorkRateModifier>0</iWorkRateModifier>
 	<iMissionaryRateModifier>0</iMissionaryRateModifier>
 	<TerrainImpassables/>
 	<FeatureImpassables/>
-	<EvasionBuildings/>
+	<EvasionBuildings>
+		<EvasionBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK1</BuildingClass>
+			<bEvasion>1</bEvasion>
+		</EvasionBuilding>
+	</EvasionBuildings>
 	<iCombat>3</iCombat>
-	<iXPValueAttack>5</iXPValueAttack>
-	<iXPValueDefense>5</iXPValueDefense>
-	<iWithdrawalProb>0</iWithdrawalProb>
+	<iXPValueAttack>4</iXPValueAttack>
+	<iXPValueDefense>2</iXPValueDefense>
+	<iWithdrawalProb>10</iWithdrawalProb>
 	<iCityAttack>0</iCityAttack>
 	<iCityDefense>0</iCityDefense>
 	<iHillsAttack>0</iHillsAttack>
@@ -18443,11 +18728,11 @@
 	<bWaterYieldChanges>0</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
-	<DomainCargo>NONE</DomainCargo>
-	<iCargo>0</iCargo>
+	<DomainCargo>DOMAIN_LAND</DomainCargo>
+	<iCargo>3</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
-	<iAsset>0</iAsset>
-	<iPower>0</iPower>
+	<iAsset>200</iAsset>
+	<iPower>50</iPower>
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>0</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
@@ -18482,7 +18767,7 @@
 	<Capture>NONE</Capture>
 	<Combat>NONE</Combat>
 	<Domain>DOMAIN_SEA</Domain>
-	<DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
+	<DefaultUnitAI>UNITAI_TRANSPORT_SEA</DefaultUnitAI>
 	<DefaultProfession>NONE</DefaultProfession>
 	<Invisible>NONE</Invisible>
 	<SeeInvisible>NONE</SeeInvisible>
@@ -18511,37 +18796,56 @@
 	<UnitClassUpgrades/>
 	<UnitAIs>
 		<UnitAI>
-			<UnitAIType>UNITAI_COMBAT_SEA</UnitAIType>
+			<UnitAIType>UNITAI_TRANSPORT_SEA</UnitAIType>
 			<bUnitAI>1</bUnitAI>
 		</UnitAI>
 	</UnitAIs>
 	<NotUnitAIs/>
 	<Builds/>
 	<PrereqBuilding>NONE</PrereqBuilding>
-	<PrereqOrBuildings/>
+	<PrereqOrBuildings>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK2</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK3</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+	</PrereqOrBuildings>
 	<ProductionTraits/>
 	<iAIWeight>10</iAIWeight>
-	<YieldCosts/>
+	<YieldCosts>
+		<YieldCost>
+			<YieldType>YIELD_INDUSTRY</YieldType>
+			<iCost>100</iCost>
+		</YieldCost>
+	</YieldCosts>
 	<iHurryCostModifier>0</iHurryCostModifier>
-	<iAdvancedStartCost>-1</iAdvancedStartCost>
-	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iAdvancedStartCost>2000</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>500</iAdvancedStartCostIncrease>
 	<iEuropeCost>2000</iEuropeCost>
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 	<iMinAreaSize>-1</iMinAreaSize>
-	<iMoves>0</iMoves>
+	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
 	<iWorkRateModifier>0</iWorkRateModifier>
 	<iMissionaryRateModifier>0</iMissionaryRateModifier>
 	<TerrainImpassables/>
 	<FeatureImpassables/>
-	<EvasionBuildings/>
+	<EvasionBuildings>
+		<EvasionBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK1</BuildingClass>
+			<bEvasion>1</bEvasion>
+		</EvasionBuilding>
+	</EvasionBuildings>
 	<iCombat>3</iCombat>
-	<iXPValueAttack>5</iXPValueAttack>
-	<iXPValueDefense>5</iXPValueDefense>
-	<iWithdrawalProb>0</iWithdrawalProb>
+	<iXPValueAttack>4</iXPValueAttack>
+	<iXPValueDefense>2</iXPValueDefense>
+	<iWithdrawalProb>10</iWithdrawalProb>
 	<iCityAttack>0</iCityAttack>
 	<iCityDefense>0</iCityDefense>
 	<iHillsAttack>0</iHillsAttack>
@@ -18561,11 +18865,11 @@
 	<bWaterYieldChanges>0</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
-	<DomainCargo>NONE</DomainCargo>
-	<iCargo>0</iCargo>
+	<DomainCargo>DOMAIN_LAND</DomainCargo>
+	<iCargo>3</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
-	<iAsset>0</iAsset>
-	<iPower>0</iPower>
+	<iAsset>200</iAsset>
+	<iPower>50</iPower>
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>0</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
@@ -18600,7 +18904,7 @@
 	<Capture>NONE</Capture>
 	<Combat>NONE</Combat>
 	<Domain>DOMAIN_SEA</Domain>
-	<DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
+	<DefaultUnitAI>UNITAI_TRANSPORT_SEA</DefaultUnitAI>
 	<DefaultProfession>NONE</DefaultProfession>
 	<Invisible>NONE</Invisible>
 	<SeeInvisible>NONE</SeeInvisible>
@@ -18629,37 +18933,56 @@
 	<UnitClassUpgrades/>
 	<UnitAIs>
 		<UnitAI>
-			<UnitAIType>UNITAI_COMBAT_SEA</UnitAIType>
+			<UnitAIType>UNITAI_TRANSPORT_SEA</UnitAIType>
 			<bUnitAI>1</bUnitAI>
 		</UnitAI>
 	</UnitAIs>
 	<NotUnitAIs/>
 	<Builds/>
 	<PrereqBuilding>NONE</PrereqBuilding>
-	<PrereqOrBuildings/>
+	<PrereqOrBuildings>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK2</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK3</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+	</PrereqOrBuildings>
 	<ProductionTraits/>
 	<iAIWeight>10</iAIWeight>
-	<YieldCosts/>
+	<YieldCosts>
+		<YieldCost>
+			<YieldType>YIELD_INDUSTRY</YieldType>
+			<iCost>100</iCost>
+		</YieldCost>
+	</YieldCosts>
 	<iHurryCostModifier>0</iHurryCostModifier>
-	<iAdvancedStartCost>-1</iAdvancedStartCost>
-	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iAdvancedStartCost>2000</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>500</iAdvancedStartCostIncrease>
 	<iEuropeCost>2000</iEuropeCost>
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 	<iMinAreaSize>-1</iMinAreaSize>
-	<iMoves>0</iMoves>
+	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
 	<iWorkRateModifier>0</iWorkRateModifier>
 	<iMissionaryRateModifier>0</iMissionaryRateModifier>
 	<TerrainImpassables/>
 	<FeatureImpassables/>
-	<EvasionBuildings/>
+	<EvasionBuildings>
+		<EvasionBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK1</BuildingClass>
+			<bEvasion>1</bEvasion>
+		</EvasionBuilding>
+	</EvasionBuildings>
 	<iCombat>3</iCombat>
-	<iXPValueAttack>5</iXPValueAttack>
-	<iXPValueDefense>5</iXPValueDefense>
-	<iWithdrawalProb>0</iWithdrawalProb>
+	<iXPValueAttack>4</iXPValueAttack>
+	<iXPValueDefense>2</iXPValueDefense>
+	<iWithdrawalProb>10</iWithdrawalProb>
 	<iCityAttack>0</iCityAttack>
 	<iCityDefense>0</iCityDefense>
 	<iHillsAttack>0</iHillsAttack>
@@ -18679,11 +19002,11 @@
 	<bWaterYieldChanges>0</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
-	<DomainCargo>NONE</DomainCargo>
-	<iCargo>0</iCargo>
+	<DomainCargo>DOMAIN_LAND</DomainCargo>
+	<iCargo>3</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
-	<iAsset>0</iAsset>
-	<iPower>0</iPower>
+	<iAsset>200</iAsset>
+	<iPower>50</iPower>
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>0</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
@@ -18718,7 +19041,7 @@
 	<Capture>NONE</Capture>
 	<Combat>NONE</Combat>
 	<Domain>DOMAIN_SEA</Domain>
-	<DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
+	<DefaultUnitAI>UNITAI_TRANSPORT_SEA</DefaultUnitAI>
 	<DefaultProfession>NONE</DefaultProfession>
 	<Invisible>NONE</Invisible>
 	<SeeInvisible>NONE</SeeInvisible>
@@ -18747,37 +19070,56 @@
 	<UnitClassUpgrades/>
 	<UnitAIs>
 		<UnitAI>
-			<UnitAIType>UNITAI_COMBAT_SEA</UnitAIType>
+			<UnitAIType>UNITAI_TRANSPORT_SEA</UnitAIType>
 			<bUnitAI>1</bUnitAI>
 		</UnitAI>
 	</UnitAIs>
 	<NotUnitAIs/>
 	<Builds/>
 	<PrereqBuilding>NONE</PrereqBuilding>
-	<PrereqOrBuildings/>
+	<PrereqOrBuildings>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK2</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+		<PrereqOrBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK3</BuildingClass>
+			<bPrereq>1</bPrereq>
+		</PrereqOrBuilding>
+	</PrereqOrBuildings>
 	<ProductionTraits/>
 	<iAIWeight>10</iAIWeight>
-	<YieldCosts/>
+	<YieldCosts>
+		<YieldCost>
+			<YieldType>YIELD_INDUSTRY</YieldType>
+			<iCost>100</iCost>
+		</YieldCost>
+	</YieldCosts>
 	<iHurryCostModifier>0</iHurryCostModifier>
-	<iAdvancedStartCost>-1</iAdvancedStartCost>
-	<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+	<iAdvancedStartCost>2000</iAdvancedStartCost>
+	<iAdvancedStartCostIncrease>500</iAdvancedStartCostIncrease>
 	<iEuropeCost>2000</iEuropeCost>
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 	<iMinAreaSize>-1</iMinAreaSize>
-	<iMoves>0</iMoves>
+	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
 	<iWorkRateModifier>0</iWorkRateModifier>
 	<iMissionaryRateModifier>0</iMissionaryRateModifier>
 	<TerrainImpassables/>
 	<FeatureImpassables/>
-	<EvasionBuildings/>
+	<EvasionBuildings>
+		<EvasionBuilding>
+			<BuildingClass>BUILDINGCLASS_DOCK1</BuildingClass>
+			<bEvasion>1</bEvasion>
+		</EvasionBuilding>
+	</EvasionBuildings>
 	<iCombat>3</iCombat>
-	<iXPValueAttack>5</iXPValueAttack>
-	<iXPValueDefense>5</iXPValueDefense>
-	<iWithdrawalProb>0</iWithdrawalProb>
+	<iXPValueAttack>4</iXPValueAttack>
+	<iXPValueDefense>2</iXPValueDefense>
+	<iWithdrawalProb>10</iWithdrawalProb>
 	<iCityAttack>0</iCityAttack>
 	<iCityDefense>0</iCityDefense>
 	<iHillsAttack>0</iHillsAttack>
@@ -18797,11 +19139,11 @@
 	<bWaterYieldChanges>0</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
-	<DomainCargo>NONE</DomainCargo>
-	<iCargo>0</iCargo>
+	<DomainCargo>DOMAIN_LAND</DomainCargo>
+	<iCargo>3</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
-	<iAsset>0</iAsset>
-	<iPower>0</iPower>
+	<iAsset>200</iAsset>
+	<iPower>50</iPower>
 	<iNativeLearnTime>-1</iNativeLearnTime>
 	<iStudentWeight>0</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>

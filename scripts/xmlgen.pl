@@ -1385,8 +1385,13 @@ foreach $item (@allspecialists)
 	print UI "\t<iHurryCostModifier>0</iHurryCostModifier>\n";
 	print UI "\t<iAdvancedStartCost>-1</iAdvancedStartCost>\n";
 	print UI "\t<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>\n";
-	print UI "\t<iEuropeCost>-800</iEuropeCost>\n";
-	print UI "\t<iEuropeCostIncrease>0</iEuropeCostIncrease>\n";
+	$cost = 1000;
+	if ($skills[0] =~ /\w+/) {
+		foreach my $skill (@skills) {
+			$cost = $cost + 500; }
+		}
+	print UI "\t<iEuropeCost>".($cost * 2)."</iEuropeCost>\n";
+	print UI "\t<iEuropeCostIncrease>".$cost."</iEuropeCostIncrease>\n";
 	print UI "\t<iImmigrationWeight>100</iImmigrationWeight>\n";
 	print UI "\t<iImmigrationWeightDecay>10</iImmigrationWeightDecay>\n";
 	print UI "\t<iMinAreaSize>-1</iMinAreaSize>\n";
@@ -1569,7 +1574,7 @@ foreach $item (@cargoyields)
 	print UI "\t<iHurryCostModifier>0</iHurryCostModifier>\n";
 	print UI "\t<iAdvancedStartCost>-1</iAdvancedStartCost>\n";
 	print UI "\t<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>\n";
-	print UI "\t<iEuropeCost>0</iEuropeCost>\n";
+	print UI "\t<iEuropeCost>-1</iEuropeCost>\n";
 	print UI "\t<iEuropeCostIncrease>0</iEuropeCostIncrease>\n";
 	print UI "\t<iImmigrationWeight>0</iImmigrationWeight>\n";
 	print UI "\t<iImmigrationWeightDecay>0</iImmigrationWeightDecay>\n";
@@ -1988,7 +1993,40 @@ foreach $item (@beastunits)
 	print ADU "\t</AudioRunSounds>\n";
 	print ADU "</UnitArtInfo>\n";	
 	}
-	
+
+# make unit artdefs for professions that walk on the map
+foreach $item (@walkprofs)
+	{
+	$tag = $item;
+	$tag =~ tr/ /_/;
+	$tag =~ tr/[a-z]/[A-Z]/;
+	next if $tag =~ /COLONIST/;
+	print ADU "<UnitArtInfo>\n";
+	print ADU "\t<Type>ART_DEF_UNIT_".$tag."</Type>\n";
+	print ADU "\t<Button>Art/Buttons/Units/".$tag.'.dds</Button>'."\n";
+	print ADU "\t<FullLengthIcon>Art/Buttons/Units/Full/".$tag.'.dds</FullLengthIcon>'."\n";
+	print ADU "\t<fScale>1.0</fScale>\n";
+	print ADU "\t<fInterfaceScale>0.5</fInterfaceScale>\n";
+	print ADU "\t<NIF>Art/Units/".$tag.'/'.$tag.'.nif</NIF>'."\n";
+	print ADU "\t<KFM>Art/Units/".$tag.'/'.$tag.'.kfm</KFM>'."\n";
+	print ADU "\t<TrailDefinition>\n";
+	print ADU "\t\t<Texture>Art/Shared/wheeltread.dds</Texture>\n";
+	print ADU "\t\t<fWidth>1.2</fWidth>\n";
+	print ADU "\t\t<fLength>180.0</fLength>\n";
+	print ADU "\t\t<fTaper>0.0</fTaper>\n";
+	print ADU "\t\t<fFadeStartTime>0.2</fFadeStartTime>\n";
+	print ADU "\t\t<fFadeFalloff>0.35</fFadeFalloff>\n";
+	print ADU "\t</TrailDefinition>\n";
+	print ADU "\t<fBattleDistance>0</fBattleDistance>\n";
+	print ADU "\t<fRangedDeathTime>0</fRangedDeathTime>\n";
+	print ADU "\t<bActAsRanged>0</bActAsRanged>\n";
+	print ADU "\t<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>\n";
+	print ADU "\t<AudioRunSounds>\n";
+	print ADU "\t\t<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>\n";
+	print ADU "\t\t<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>\n";
+	print ADU "\t</AudioRunSounds>\n";
+	print ADU "</UnitArtInfo>\n";
+	}
 	
 # closing tags
 print UI '</UnitInfos>'."\n</Civ4UnitInfos>\n";

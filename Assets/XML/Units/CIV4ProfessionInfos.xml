@@ -34,7 +34,7 @@
 		<YieldType>YIELD_NUTRIENTS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/NUTRIENTS.dds</Button>
 </ProfessionInfo>
@@ -67,7 +67,7 @@
 		<YieldType>YIELD_BIOPOLYMERS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/BIOPOLYMERS.dds</Button>
 </ProfessionInfo>
@@ -100,7 +100,7 @@
 		<YieldType>YIELD_BASE_METALS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/BASE_METALS.dds</Button>
 </ProfessionInfo>
@@ -133,7 +133,7 @@
 		<YieldType>YIELD_SILICATES</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/SILICATES.dds</Button>
 </ProfessionInfo>
@@ -166,7 +166,7 @@
 		<YieldType>YIELD_PRECIOUS_METALS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/PRECIOUS_METALS.dds</Button>
 </ProfessionInfo>
@@ -199,7 +199,7 @@
 		<YieldType>YIELD_ACTINIDES</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/ACTINIDES.dds</Button>
 </ProfessionInfo>
@@ -232,7 +232,7 @@
 		<YieldType>YIELD_ISOTOPES</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/ISOTOPES.dds</Button>
 </ProfessionInfo>
@@ -265,7 +265,7 @@
 		<YieldType>YIELD_RARE_EARTHS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/RARE_EARTHS.dds</Button>
 </ProfessionInfo>
@@ -298,7 +298,7 @@
 		<YieldType>YIELD_CRYSTALLOIDS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/CRYSTALLOIDS.dds</Button>
 </ProfessionInfo>
@@ -331,7 +331,7 @@
 		<YieldType>YIELD_NUCLEIC_ACIDS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/NUCLEIC_ACIDS.dds</Button>
 </ProfessionInfo>
@@ -364,7 +364,7 @@
 		<YieldType>YIELD_AMINO_ACIDS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/AMINO_ACIDS.dds</Button>
 </ProfessionInfo>
@@ -397,7 +397,7 @@
 		<YieldType>YIELD_TISSUE_SAMPLES</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/TISSUE_SAMPLES.dds</Button>
 </ProfessionInfo>
@@ -430,7 +430,7 @@
 		<YieldType>YIELD_MICROBES</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/MICROBES.dds</Button>
 </ProfessionInfo>
@@ -463,7 +463,7 @@
 		<YieldType>YIELD_DATACORES</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/DATACORES.dds</Button>
 </ProfessionInfo>
@@ -496,7 +496,7 @@
 		<YieldType>YIELD_PROGENITOR_ARTIFACTS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/PROGENITOR_ARTIFACTS.dds</Button>
 </ProfessionInfo>
@@ -529,7 +529,7 @@
 		<YieldType>YIELD_ALIEN_SPECIMENS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/ALIEN_SPECIMENS.dds</Button>
 </ProfessionInfo>
@@ -562,7 +562,7 @@
 		<YieldType>YIELD_OPIATES</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/OPIATES.dds</Button>
 </ProfessionInfo>
@@ -595,7 +595,7 @@
 		<YieldType>YIELD_XENOTOXINS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/XENOTOXINS.dds</Button>
 </ProfessionInfo>
@@ -628,7 +628,7 @@
 		<YieldType>YIELD_BOTANICALS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/BOTANICALS.dds</Button>
 </ProfessionInfo>
@@ -661,7 +661,7 @@
 		<YieldType>YIELD_HYDROCARBONS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/HYDROCARBONS.dds</Button>
 </ProfessionInfo>
@@ -694,7 +694,7 @@
 		<YieldType>YIELD_CLATHRATES</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/CLATHRATES.dds</Button>
 </ProfessionInfo>
@@ -727,7 +727,7 @@
 		<YieldType>YIELD_CORE_SAMPLES</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/CORE_SAMPLES.dds</Button>
 </ProfessionInfo>
@@ -760,7 +760,7 @@
 		<YieldType>YIELD_MACHINE_TOOLS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>YIELD_BASE_METALS</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/MACHINE_TOOLS.dds</Button>
 </ProfessionInfo>
@@ -793,7 +793,7 @@
 		<YieldType>YIELD_ROBOTICS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>YIELD_MACHINE_TOOLS</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/ROBOTICS.dds</Button>
 </ProfessionInfo>
@@ -826,7 +826,7 @@
 		<YieldType>YIELD_MUNITIONS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>YIELD_MACHINE_TOOLS</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/MUNITIONS.dds</Button>
 </ProfessionInfo>
@@ -859,7 +859,7 @@
 		<YieldType>YIELD_PHOTONICS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>YIELD_CRYSTALLOIDS</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/PHOTONICS.dds</Button>
 </ProfessionInfo>
@@ -892,7 +892,7 @@
 		<YieldType>YIELD_PLASTEEL</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>YIELD_BASE_METALS</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/PLASTEEL.dds</Button>
 </ProfessionInfo>
@@ -925,7 +925,7 @@
 		<YieldType>YIELD_DURALLOY</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>YIELD_BASE_METALS</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/DURALLOY.dds</Button>
 </ProfessionInfo>
@@ -958,7 +958,7 @@
 		<YieldType>YIELD_CRYSTALLOY</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>YIELD_PRECIOUS_METALS</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/CRYSTALLOY.dds</Button>
 </ProfessionInfo>
@@ -991,7 +991,7 @@
 		<YieldType>YIELD_NUCLEONICS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>YIELD_ISOTOPES</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/NUCLEONICS.dds</Button>
 </ProfessionInfo>
@@ -1024,7 +1024,7 @@
 		<YieldType>YIELD_FUSION_CORES</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>YIELD_ACTINIDES</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/FUSION_CORES.dds</Button>
 </ProfessionInfo>
@@ -1057,7 +1057,7 @@
 		<YieldType>YIELD_SEMICONDUCTORS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>YIELD_RARE_EARTHS</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/SEMICONDUCTORS.dds</Button>
 </ProfessionInfo>
@@ -1090,7 +1090,7 @@
 		<YieldType>YIELD_PLASMIDS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>YIELD_NUCLEIC_ACIDS</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/PLASMIDS.dds</Button>
 </ProfessionInfo>
@@ -1156,7 +1156,7 @@
 		<YieldType>YIELD_STEM_CELLS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>YIELD_TISSUE_SAMPLES</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/STEM_CELLS.dds</Button>
 </ProfessionInfo>
@@ -1222,7 +1222,7 @@
 		<YieldType>YIELD_PROGENITOR_TECH</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>YIELD_PROGENITOR_ARTIFACTS</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/PROGENITOR_TECH.dds</Button>
 </ProfessionInfo>
@@ -1255,7 +1255,7 @@
 		<YieldType>YIELD_ALIEN_RELICS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>YIELD_ALIEN_SPECIMENS</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/ALIEN_RELICS.dds</Button>
 </ProfessionInfo>
@@ -1288,7 +1288,7 @@
 		<YieldType>YIELD_NARCOTICS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>YIELD_OPIATES</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/NARCOTICS.dds</Button>
 </ProfessionInfo>
@@ -1321,7 +1321,7 @@
 		<YieldType>YIELD_BIOWEAPONS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>YIELD_XENOTOXINS</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/BIOWEAPONS.dds</Button>
 </ProfessionInfo>
@@ -1354,7 +1354,7 @@
 		<YieldType>YIELD_PHARMACEUTICALS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>YIELD_BOTANICALS</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/PHARMACEUTICALS.dds</Button>
 </ProfessionInfo>
@@ -1387,7 +1387,7 @@
 		<YieldType>YIELD_PETROCHEMICALS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>YIELD_HYDROCARBONS</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/PETROCHEMICALS.dds</Button>
 </ProfessionInfo>
@@ -1420,7 +1420,7 @@
 		<YieldType>YIELD_COLLOIDS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>YIELD_CLATHRATES</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/COLLOIDS.dds</Button>
 </ProfessionInfo>
@@ -1453,7 +1453,7 @@
 		<YieldType>YIELD_CATALYSTS</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>YIELD_CORE_SAMPLES</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/CATALYSTS.dds</Button>
 </ProfessionInfo>
@@ -1486,7 +1486,7 @@
 		<YieldType>YIELD_HARD_CURRENCY</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>YIELD_PRECIOUS_METALS</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/HARD_CURRENCY.dds</Button>
 </ProfessionInfo>
@@ -1519,7 +1519,7 @@
 		<YieldType>YIELD_INDUSTRY</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/INDUSTRY.dds</Button>
 </ProfessionInfo>
@@ -1552,7 +1552,7 @@
 		<YieldType>YIELD_MEDIA</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/MEDIA.dds</Button>
 </ProfessionInfo>
@@ -1585,7 +1585,7 @@
 		<YieldType>YIELD_LIBERTY</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/LIBERTY.dds</Button>
 </ProfessionInfo>
@@ -1618,7 +1618,7 @@
 		<YieldType>YIELD_EDUCATION</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/EDUCATION.dds</Button>
 </ProfessionInfo>
@@ -1651,7 +1651,7 @@
 		<YieldType>YIELD_RESEARCH</YieldType>
 	</YieldsProduced>
 	<YieldsConsumed>
-		<YieldType></YieldType>
+		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/RESEARCH.dds</Button>
 </ProfessionInfo>

@@ -231,9 +231,9 @@ foreach $item (@allyields)
 		}
 	print YI "\t<iTextureIndex>".$index."</iTextureIndex>\n";
 	print YI "\t<iWaterTextureIndex>20</iWaterTextureIndex>\n";
-	print YI "\t<Icon>Art/Buttons/Yields/".$desc.".dds</Icon>\n";
-	print YI "\t<HighlightIcon>Art/Buttons/Yields/".$desc.".dds</HighlightIcon>\n";
-	print YI "\t".'<Button>Art/Buttons/Yields/'.$desc.'.dds</Button>'."\n";
+	print YI "\t<Icon>Art/Buttons/Yields/".$tag.".dds</Icon>\n";
+	print YI "\t<HighlightIcon>Art/Buttons/Yields/".$tag.".dds</HighlightIcon>\n";
+	print YI "\t".'<Button>Art/Buttons/Yields/'.$tag.'.dds</Button>'."\n";
 	print YI "\t<TradeScreenTypes>\n";
 	print YI "\t\t<TradeScreenType>\n";
 	print YI "\t\t\t<TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>\n";
@@ -309,9 +309,14 @@ foreach $item (@prodprofs)
 	if (not $isoutdoor) {
 		$special = 'SPECIALBUILDING_'.$tag;
 		$inputyielddesc = $yields[0];
-		$inputyield = 'YIELD_'.$yields[0];
-		$inputyielddesc =~ tr/_/ /;
-		$inputyielddesc =~ s/(\w+)/\u\L$1/g;
+		if ($inputyielddesc =~ /\w+/) {
+			$inputyield = 'YIELD_'.$yields[0];
+			$inputyielddesc =~ tr/_/ /;
+			$inputyielddesc =~ s/(\w+)/\u\L$1/g;
+			} else {
+			$inputyielddesc = '';
+			$inputyield = 'NONE';
+			}
 		}
 		else {
 		$inputyield = 'NONE';
@@ -351,9 +356,7 @@ foreach $item (@prodprofs)
 	print PI "\t\t<YieldType>YIELD_".$tag."</YieldType>\n";
 	print PI "\t</YieldsProduced>\n";
 	print PI "\t<YieldsConsumed>\n";
-	if (grep {$_ eq $inputyield} @allyields)
-		{print PI "\t\t<YieldType>".$inputyield."</YieldType>\n";}
-		else {print PI "\t\t<YieldType></YieldType>\n";}
+	print PI "\t\t<YieldType>".$inputyield."</YieldType>\n";
 	print PI "\t</YieldsConsumed>\n";
 	print PI "\t".'<Button>Art/Buttons/Yields/'.$tag.'.dds</Button>'."\n";
 	print PI "</ProfessionInfo>\n";

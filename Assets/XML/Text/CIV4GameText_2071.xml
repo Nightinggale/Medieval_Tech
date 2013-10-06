@@ -1650,11 +1650,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_PROFESSION_INDUSTRY_PEDIA</Tag>
-	<English>[LINK=YIELD_INDUSTRY]Industry[\LINK] are produced from [LINK=YIELD_][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Construction[COLOR_REVERT] profession.</English>
-	<French>[LINK=YIELD_INDUSTRY]Industry[\LINK] are produced from [LINK=YIELD_][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Construction[COLOR_REVERT] profession.</French>
-	<German>[LINK=YIELD_INDUSTRY]Industry[\LINK] are produced from [LINK=YIELD_][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Construction[COLOR_REVERT] profession.</German>
-	<Italian>[LINK=YIELD_INDUSTRY]Industry[\LINK] are produced from [LINK=YIELD_][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Construction[COLOR_REVERT] profession.</Italian>
-	<Spanish>[LINK=YIELD_INDUSTRY]Industry[\LINK] are produced from [LINK=YIELD_][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Construction[COLOR_REVERT] profession.</Spanish>
+	<English>[LINK=YIELD_INDUSTRY]Industry[\LINK] are produced from [LINK=NONE][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Construction[COLOR_REVERT] profession.</English>
+	<French>[LINK=YIELD_INDUSTRY]Industry[\LINK] are produced from [LINK=NONE][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Construction[COLOR_REVERT] profession.</French>
+	<German>[LINK=YIELD_INDUSTRY]Industry[\LINK] are produced from [LINK=NONE][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Construction[COLOR_REVERT] profession.</German>
+	<Italian>[LINK=YIELD_INDUSTRY]Industry[\LINK] are produced from [LINK=NONE][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Construction[COLOR_REVERT] profession.</Italian>
+	<Spanish>[LINK=YIELD_INDUSTRY]Industry[\LINK] are produced from [LINK=NONE][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Construction[COLOR_REVERT] profession.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_PROFESSION_MEDIA</Tag>
@@ -1666,11 +1666,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_PROFESSION_MEDIA_PEDIA</Tag>
-	<English>[LINK=YIELD_MEDIA]Media[\LINK] are produced from [LINK=YIELD_][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Mass Media[COLOR_REVERT] profession.</English>
-	<French>[LINK=YIELD_MEDIA]Media[\LINK] are produced from [LINK=YIELD_][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Mass Media[COLOR_REVERT] profession.</French>
-	<German>[LINK=YIELD_MEDIA]Media[\LINK] are produced from [LINK=YIELD_][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Mass Media[COLOR_REVERT] profession.</German>
-	<Italian>[LINK=YIELD_MEDIA]Media[\LINK] are produced from [LINK=YIELD_][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Mass Media[COLOR_REVERT] profession.</Italian>
-	<Spanish>[LINK=YIELD_MEDIA]Media[\LINK] are produced from [LINK=YIELD_][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Mass Media[COLOR_REVERT] profession.</Spanish>
+	<English>[LINK=YIELD_MEDIA]Media[\LINK] are produced from [LINK=NONE][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Mass Media[COLOR_REVERT] profession.</English>
+	<French>[LINK=YIELD_MEDIA]Media[\LINK] are produced from [LINK=NONE][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Mass Media[COLOR_REVERT] profession.</French>
+	<German>[LINK=YIELD_MEDIA]Media[\LINK] are produced from [LINK=NONE][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Mass Media[COLOR_REVERT] profession.</German>
+	<Italian>[LINK=YIELD_MEDIA]Media[\LINK] are produced from [LINK=NONE][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Mass Media[COLOR_REVERT] profession.</Italian>
+	<Spanish>[LINK=YIELD_MEDIA]Media[\LINK] are produced from [LINK=NONE][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Mass Media[COLOR_REVERT] profession.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_PROFESSION_LIBERTY</Tag>
@@ -1682,11 +1682,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_PROFESSION_LIBERTY_PEDIA</Tag>
-	<English>[LINK=YIELD_LIBERTY]Liberty[\LINK] are produced from [LINK=YIELD_][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Administration[COLOR_REVERT] profession.</English>
-	<French>[LINK=YIELD_LIBERTY]Liberty[\LINK] are produced from [LINK=YIELD_][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Administration[COLOR_REVERT] profession.</French>
-	<German>[LINK=YIELD_LIBERTY]Liberty[\LINK] are produced from [LINK=YIELD_][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Administration[COLOR_REVERT] profession.</German>
-	<Italian>[LINK=YIELD_LIBERTY]Liberty[\LINK] are produced from [LINK=YIELD_][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Administration[COLOR_REVERT] profession.</Italian>
-	<Spanish>[LINK=YIELD_LIBERTY]Liberty[\LINK] are produced from [LINK=YIELD_][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Administration[COLOR_REVERT] profession.</Spanish>
+	<English>[LINK=YIELD_LIBERTY]Liberty[\LINK] are produced from [LINK=NONE][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Administration[COLOR_REVERT] profession.</English>
+	<French>[LINK=YIELD_LIBERTY]Liberty[\LINK] are produced from [LINK=NONE][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Administration[COLOR_REVERT] profession.</French>
+	<German>[LINK=YIELD_LIBERTY]Liberty[\LINK] are produced from [LINK=NONE][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Administration[COLOR_REVERT] profession.</German>
+	<Italian>[LINK=YIELD_LIBERTY]Liberty[\LINK] are produced from [LINK=NONE][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Administration[COLOR_REVERT] profession.</Italian>
+	<Spanish>[LINK=YIELD_LIBERTY]Liberty[\LINK] are produced from [LINK=NONE][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Administration[COLOR_REVERT] profession.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_PROFESSION_EDUCATION</Tag>
@@ -1698,11 +1698,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_PROFESSION_EDUCATION_PEDIA</Tag>
-	<English>[LINK=YIELD_EDUCATION]Education[\LINK] are produced from [LINK=YIELD_][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Education[COLOR_REVERT] profession.</English>
-	<French>[LINK=YIELD_EDUCATION]Education[\LINK] are produced from [LINK=YIELD_][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Education[COLOR_REVERT] profession.</French>
-	<German>[LINK=YIELD_EDUCATION]Education[\LINK] are produced from [LINK=YIELD_][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Education[COLOR_REVERT] profession.</German>
-	<Italian>[LINK=YIELD_EDUCATION]Education[\LINK] are produced from [LINK=YIELD_][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Education[COLOR_REVERT] profession.</Italian>
-	<Spanish>[LINK=YIELD_EDUCATION]Education[\LINK] are produced from [LINK=YIELD_][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Education[COLOR_REVERT] profession.</Spanish>
+	<English>[LINK=YIELD_EDUCATION]Education[\LINK] are produced from [LINK=NONE][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Education[COLOR_REVERT] profession.</English>
+	<French>[LINK=YIELD_EDUCATION]Education[\LINK] are produced from [LINK=NONE][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Education[COLOR_REVERT] profession.</French>
+	<German>[LINK=YIELD_EDUCATION]Education[\LINK] are produced from [LINK=NONE][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Education[COLOR_REVERT] profession.</German>
+	<Italian>[LINK=YIELD_EDUCATION]Education[\LINK] are produced from [LINK=NONE][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Education[COLOR_REVERT] profession.</Italian>
+	<Spanish>[LINK=YIELD_EDUCATION]Education[\LINK] are produced from [LINK=NONE][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Education[COLOR_REVERT] profession.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_PROFESSION_RESEARCH</Tag>
@@ -1714,11 +1714,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_PROFESSION_RESEARCH_PEDIA</Tag>
-	<English>[LINK=YIELD_RESEARCH]Research[\LINK] are produced from [LINK=YIELD_][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Applied Research[COLOR_REVERT] profession.</English>
-	<French>[LINK=YIELD_RESEARCH]Research[\LINK] are produced from [LINK=YIELD_][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Applied Research[COLOR_REVERT] profession.</French>
-	<German>[LINK=YIELD_RESEARCH]Research[\LINK] are produced from [LINK=YIELD_][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Applied Research[COLOR_REVERT] profession.</German>
-	<Italian>[LINK=YIELD_RESEARCH]Research[\LINK] are produced from [LINK=YIELD_][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Applied Research[COLOR_REVERT] profession.</Italian>
-	<Spanish>[LINK=YIELD_RESEARCH]Research[\LINK] are produced from [LINK=YIELD_][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Applied Research[COLOR_REVERT] profession.</Spanish>
+	<English>[LINK=YIELD_RESEARCH]Research[\LINK] are produced from [LINK=NONE][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Applied Research[COLOR_REVERT] profession.</English>
+	<French>[LINK=YIELD_RESEARCH]Research[\LINK] are produced from [LINK=NONE][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Applied Research[COLOR_REVERT] profession.</French>
+	<German>[LINK=YIELD_RESEARCH]Research[\LINK] are produced from [LINK=NONE][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Applied Research[COLOR_REVERT] profession.</German>
+	<Italian>[LINK=YIELD_RESEARCH]Research[\LINK] are produced from [LINK=NONE][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Applied Research[COLOR_REVERT] profession.</Italian>
+	<Spanish>[LINK=YIELD_RESEARCH]Research[\LINK] are produced from [LINK=NONE][\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Applied Research[COLOR_REVERT] profession.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_PROFESSION_COLONIST</Tag>

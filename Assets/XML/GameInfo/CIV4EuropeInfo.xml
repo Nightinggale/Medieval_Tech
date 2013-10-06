@@ -12,10 +12,10 @@
 <Direction>east</Direction>
 <bStart>1</bStart>
 <iTripLength>3</iTripLength>
-<iMinLandDistance>0</iMinLandDistance>
+<iMinLandDistance>3</iMinLandDistance>
 <iWidthPercent>20</iWidthPercent>
       <TradeScreenTypes>
-        <TradeScreenType>
+		<TradeScreenType>
           <TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
           <bValue>1</bValue>
         </TradeScreenType>
@@ -25,9 +25,9 @@
 <Type>EUROPE_WEST</Type>
 <Description>Spice Route West</Description>
 <Direction>west</Direction>
-<bStart>1</bStart>
+<bStart>0</bStart>
 <iTripLength>3</iTripLength>
-<iMinLandDistance>0</iMinLandDistance>
+<iMinLandDistance>3</iMinLandDistance>
 <iWidthPercent>20</iWidthPercent>
       <TradeScreenTypes>
         <TradeScreenType>
@@ -40,9 +40,9 @@
 <Type>EUROPE_NORTH</Type>
 <Description>Silk Road North</Description>
 <Direction>north</Direction>
-<bStart>1</bStart>
+<bStart>0</bStart>
 <iTripLength>3</iTripLength>
-<iMinLandDistance>0</iMinLandDistance>
+<iMinLandDistance>3</iMinLandDistance>
 <iWidthPercent>20</iWidthPercent>
       <TradeScreenTypes>
         <TradeScreenType>
@@ -55,9 +55,9 @@
 <Type>EUROPE_SOUTH</Type>
 <Description>Silk Road South</Description>
 <Direction>south</Direction>
-<bStart>1</bStart>
+<bStart>0</bStart>
 <iTripLength>3</iTripLength>
-<iMinLandDistance>0</iMinLandDistance>
+<iMinLandDistance>3</iMinLandDistance>
 <iWidthPercent>20</iWidthPercent>
       <TradeScreenTypes>
         <TradeScreenType>

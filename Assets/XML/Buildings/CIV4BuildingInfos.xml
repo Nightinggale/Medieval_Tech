@@ -8160,7 +8160,7 @@
 <BuildingInfo>
 	<Type>BUILDING_SHRINE</Type>
 	<BuildingClass>BUILDINGCLASS_SHRINE</BuildingClass>
-	<SpecialBuildingType>NONE</SpecialBuildingType>
+	<SpecialBuildingType>SPECIALBUILDING_SHRINE</SpecialBuildingType>
 	<iSpecialBuildingPriority>0</iSpecialBuildingPriority>
 	<Description>TXT_KEY_BUILDING_SHRINE</Description>
 	<Civilopedia>TXT_KEY_PEDIA_BUILDING_SHRINE</Civilopedia>
@@ -8235,7 +8235,7 @@
 <BuildingInfo>
 	<Type>BUILDING_TRADING_POST</Type>
 	<BuildingClass>BUILDINGCLASS_TRADING_POST</BuildingClass>
-	<SpecialBuildingType>NONE</SpecialBuildingType>
+	<SpecialBuildingType>SPECIALBUILDING_TRADING_POST</SpecialBuildingType>
 	<iSpecialBuildingPriority>0</iSpecialBuildingPriority>
 	<Description>TXT_KEY_BUILDING_TRADING_POST</Description>
 	<Civilopedia>TXT_KEY_PEDIA_BUILDING_TRADING_POST</Civilopedia>

@@ -178,8 +178,8 @@ BUILDING_DATA_MC[30] = [59, 22, BuildingDistance, BuildingIconSize] #Bank
 BUILDING_GRID = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
 # TK INVENTOR MOD end
 
-# COLONIZATION 2071
-BUILDING_DATA_2071 = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+# COLONIZATION 2071 (35 current specialbuildings, index 0-34)
+BUILDING_DATA_2071 = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
 
 BUILDING_DATA_2071[0] = [40, 40, BuildingDistance, BuildingIconSize] #Bells
 BUILDING_DATA_2071[1] = [60, 40, BuildingDistance, BuildingIconSize] #Hammers
@@ -212,8 +212,10 @@ BUILDING_DATA_2071[27] = [68, 28, BuildingDistance, BuildingIconSize] #Windmill
 BUILDING_DATA_2071[28] = [25, 8, BuildingDistance, BuildingIconSize] #Water wheel
 BUILDING_DATA_2071[29] = [20, 0, BuildingDistance, BuildingIconSize] #Siege
 BUILDING_DATA_2071[30] = [59, 22, BuildingDistance, BuildingIconSize] #Bank
-BUILDING_DATA_2071[31] = [59, 22, BuildingDistance, BuildingIconSize] #Bank
-BUILDING_DATA_2071[32] = [59, 22, BuildingDistance, BuildingIconSize] #Bank
+BUILDING_DATA_2071[31] = [90, 20, BuildingDistance, BuildingIconSize] #Bank
+BUILDING_DATA_2071[32] = [90, 30, BuildingDistance, BuildingIconSize] #Bank
+BUILDING_DATA_2071[33] = [90, 40, BuildingDistance, BuildingIconSize] #Bank
+BUILDING_DATA_2071[34] = [90, 50, BuildingDistance, BuildingIconSize] #Bank
 
 # COLONIZATION 2071
 

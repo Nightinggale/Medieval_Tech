@@ -898,7 +898,8 @@ print ADB '<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jas
 print ADB '<!-- Sid Meier\'s Civilization 4 -->'."\n".'<!-- Copyright Firaxis Games 2005 -->'."\n".'<!-- -->'."\n".'<!-- Building art path information -->'."\n";
 print ADB '<Civ4ArtDefines xmlns="x-schema:CIV4ArtDefinesSchema.xml">'."\n<BuildingArtInfos>\n";
 
-# generate XML content
+# generate Buildings XML
+$index = 0;
 foreach $item (@allbuildings)
 	{
 	if (grep {$_ eq $item} @onetierbuildings) {$isonetier = 1;} else {$isonetier = 0;}
@@ -908,19 +909,20 @@ foreach $item (@allbuildings)
 	$desc =~ s/(\w+)/\u\L$1/g;
 	$item =~ tr/ /_/;
 	$item =~ tr/[a-z]/[A-Z]/;
-	$index++;
-	
-	if (not $isonetier) {
+
 	# make specialbuilding for item
-		print SBI "<SpecialBuildingInfo>\n";	
-		print SBI "\t<Type>SPECIALBUILDING_".$item."</Type>\n";
-		print SBI "\t<Description>TXT_KEY_YIELD_".$item."</Description>\n";
-		print SBI "\t<bValid>1</bValid>\n";
-		print SBI "\t<FontButtonIndex>".$index."</FontButtonIndex>\n";
-		print SBI "\t<ProductionTraits/>\n";
-		print SBI "\t".'<Button>Art/Buttons/Yields/'.$item.'.dds</Button>'."\n";
-		print SBI "</SpecialBuildingInfo>\n";
+	print SBI "<SpecialBuildingInfo>\n";	
+	print SBI "\t<Type>SPECIALBUILDING_".$item."</Type>\n";
+	print SBI "\t<Description>TXT_KEY_YIELD_".$item."</Description>\n";
+	print SBI "\t<bValid>1</bValid>\n";
+	print SBI "\t<FontButtonIndex>".$index."</FontButtonIndex>\n";
+	print SBI "\t<ProductionTraits/>\n";
+	print SBI "\t".'<Button>Art/Buttons/Yields/'.$item.'.dds</Button>'."\n";
+	print SBI "</SpecialBuildingInfo>\n";
+	$index++;
+
 	# make level 1 building
+	if (not $isonetier) {
 		if ($item=~/TOOLS/ or $item=~/MUNITIONS/ or $item=~/ROBOTICS/) {
 			$suffix = 'Workshop';
 			} else {
@@ -936,9 +938,7 @@ foreach $item (@allbuildings)
 	print BI "<BuildingInfo>\n";	
 	print BI "\t<Type>BUILDING_".$tag."</Type>\n";
 	print BI "\t<BuildingClass>BUILDINGCLASS_".$tag."</BuildingClass>\n";
-	if ($isonetier) {
-		print BI "\t<SpecialBuildingType>NONE</SpecialBuildingType>\n";}
-		else{print BI "\t<SpecialBuildingType>SPECIALBUILDING_".$item."</SpecialBuildingType>\n";}
+	print BI "\t<SpecialBuildingType>SPECIALBUILDING_".$item."</SpecialBuildingType>\n";
 	print BI "\t<iSpecialBuildingPriority>0</iSpecialBuildingPriority>\n";
 	print BI "\t<Description>TXT_KEY_BUILDING_".$tag."</Description>\n";
 	&maketext("TXT_KEY_BUILDING_".$tag, $bdesc.':'.$plural);

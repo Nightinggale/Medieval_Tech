@@ -6176,4 +6176,516 @@
 	<Italian>Build an Enigma Virion to bolster our military might.</Italian>
 	<Spanish>Build an Enigma Virion to bolster our military might.</Spanish>
 </TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_NAFTA</Tag>
+	<English>NAFTA Colonies</English>
+	<French>NAFTA Colonies</French>
+	<German>NAFTA Colonies</German>
+	<Italian>NAFTA Colonies</Italian>
+	<Spanish>NAFTA Colonies</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_NAFTA_SHORT</Tag>
+	<English>NAFTA</English>
+	<French>NAFTA</French>
+	<German>NAFTA</German>
+	<Italian>NAFTA</Italian>
+	<Spanish>NAFTA</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_NAFTA_ADJ</Tag>
+	<English>NAFTA</English>
+	<French>NAFTA</French>
+	<German>NAFTA</German>
+	<Italian>NAFTA</Italian>
+	<Spanish>NAFTA</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_NAFTA_PEDIA</Tag>
+	<English>NAFTA</English>
+	<French>NAFTA</French>
+	<German>NAFTA</German>
+	<Italian>NAFTA</Italian>
+	<Spanish>NAFTA</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_NAFTA_KING</Tag>
+	<English>NAFTA Government</English>
+	<French>NAFTA Government</French>
+	<German>NAFTA Government</German>
+	<Italian>NAFTA Government</Italian>
+	<Spanish>NAFTA Government</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_NAFTA_KING_SHORT</Tag>
+	<English>NAFTA</English>
+	<French>NAFTA</French>
+	<German>NAFTA</German>
+	<Italian>NAFTA</Italian>
+	<Spanish>NAFTA</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_NAFTA_KING_ADJ</Tag>
+	<English>NAFTA</English>
+	<French>NAFTA</French>
+	<German>NAFTA</German>
+	<Italian>NAFTA</Italian>
+	<Spanish>NAFTA</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_NAFTA_KING_PEDIA</Tag>
+	<English>NAFTA</English>
+	<French>NAFTA</French>
+	<German>NAFTA</German>
+	<Italian>NAFTA</Italian>
+	<Spanish>NAFTA</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_EU</Tag>
+	<English>EU Colonies</English>
+	<French>EU Colonies</French>
+	<German>EU Colonies</German>
+	<Italian>EU Colonies</Italian>
+	<Spanish>EU Colonies</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_EU_SHORT</Tag>
+	<English>EU</English>
+	<French>EU</French>
+	<German>EU</German>
+	<Italian>EU</Italian>
+	<Spanish>EU</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_EU_ADJ</Tag>
+	<English>EU</English>
+	<French>EU</French>
+	<German>EU</German>
+	<Italian>EU</Italian>
+	<Spanish>EU</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_EU_PEDIA</Tag>
+	<English>EU</English>
+	<French>EU</French>
+	<German>EU</German>
+	<Italian>EU</Italian>
+	<Spanish>EU</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_EU_KING</Tag>
+	<English>EU Government</English>
+	<French>EU Government</French>
+	<German>EU Government</German>
+	<Italian>EU Government</Italian>
+	<Spanish>EU Government</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_EU_KING_SHORT</Tag>
+	<English>EU</English>
+	<French>EU</French>
+	<German>EU</German>
+	<Italian>EU</Italian>
+	<Spanish>EU</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_EU_KING_ADJ</Tag>
+	<English>EU</English>
+	<French>EU</French>
+	<German>EU</German>
+	<Italian>EU</Italian>
+	<Spanish>EU</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_EU_KING_PEDIA</Tag>
+	<English>EU</English>
+	<French>EU</French>
+	<German>EU</German>
+	<Italian>EU</Italian>
+	<Spanish>EU</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_CHINA</Tag>
+	<English>China Colonies</English>
+	<French>China Colonies</French>
+	<German>China Colonies</German>
+	<Italian>China Colonies</Italian>
+	<Spanish>China Colonies</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_CHINA_SHORT</Tag>
+	<English>China</English>
+	<French>China</French>
+	<German>China</German>
+	<Italian>China</Italian>
+	<Spanish>China</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_CHINA_ADJ</Tag>
+	<English>China</English>
+	<French>China</French>
+	<German>China</German>
+	<Italian>China</Italian>
+	<Spanish>China</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_CHINA_PEDIA</Tag>
+	<English>China</English>
+	<French>China</French>
+	<German>China</German>
+	<Italian>China</Italian>
+	<Spanish>China</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_CHINA_KING</Tag>
+	<English>China Government</English>
+	<French>China Government</French>
+	<German>China Government</German>
+	<Italian>China Government</Italian>
+	<Spanish>China Government</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_CHINA_KING_SHORT</Tag>
+	<English>China</English>
+	<French>China</French>
+	<German>China</German>
+	<Italian>China</Italian>
+	<Spanish>China</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_CHINA_KING_ADJ</Tag>
+	<English>China</English>
+	<French>China</French>
+	<German>China</German>
+	<Italian>China</Italian>
+	<Spanish>China</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_CHINA_KING_PEDIA</Tag>
+	<English>China</English>
+	<French>China</French>
+	<German>China</German>
+	<Italian>China</Italian>
+	<Spanish>China</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_RUSSIA</Tag>
+	<English>Russia Colonies</English>
+	<French>Russia Colonies</French>
+	<German>Russia Colonies</German>
+	<Italian>Russia Colonies</Italian>
+	<Spanish>Russia Colonies</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHORT</Tag>
+	<English>Russia</English>
+	<French>Russia</French>
+	<German>Russia</German>
+	<Italian>Russia</Italian>
+	<Spanish>Russia</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADJ</Tag>
+	<English>Russia</English>
+	<French>Russia</French>
+	<German>Russia</German>
+	<Italian>Russia</Italian>
+	<Spanish>Russia</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_RUSSIA_PEDIA</Tag>
+	<English>Russia</English>
+	<French>Russia</French>
+	<German>Russia</German>
+	<Italian>Russia</Italian>
+	<Spanish>Russia</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_RUSSIA_KING</Tag>
+	<English>Russia Government</English>
+	<French>Russia Government</French>
+	<German>Russia Government</German>
+	<Italian>Russia Government</Italian>
+	<Spanish>Russia Government</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_RUSSIA_KING_SHORT</Tag>
+	<English>Russia</English>
+	<French>Russia</French>
+	<German>Russia</German>
+	<Italian>Russia</Italian>
+	<Spanish>Russia</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_RUSSIA_KING_ADJ</Tag>
+	<English>Russia</English>
+	<French>Russia</French>
+	<German>Russia</German>
+	<Italian>Russia</Italian>
+	<Spanish>Russia</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_RUSSIA_KING_PEDIA</Tag>
+	<English>Russia</English>
+	<French>Russia</French>
+	<German>Russia</German>
+	<Italian>Russia</Italian>
+	<Spanish>Russia</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_JAPAN</Tag>
+	<English>Japan Colonies</English>
+	<French>Japan Colonies</French>
+	<German>Japan Colonies</German>
+	<Italian>Japan Colonies</Italian>
+	<Spanish>Japan Colonies</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_JAPAN_SHORT</Tag>
+	<English>Japan</English>
+	<French>Japan</French>
+	<German>Japan</German>
+	<Italian>Japan</Italian>
+	<Spanish>Japan</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_JAPAN_ADJ</Tag>
+	<English>Japan</English>
+	<French>Japan</French>
+	<German>Japan</German>
+	<Italian>Japan</Italian>
+	<Spanish>Japan</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_JAPAN_PEDIA</Tag>
+	<English>Japan</English>
+	<French>Japan</French>
+	<German>Japan</German>
+	<Italian>Japan</Italian>
+	<Spanish>Japan</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_JAPAN_KING</Tag>
+	<English>Japan Government</English>
+	<French>Japan Government</French>
+	<German>Japan Government</German>
+	<Italian>Japan Government</Italian>
+	<Spanish>Japan Government</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_JAPAN_KING_SHORT</Tag>
+	<English>Japan</English>
+	<French>Japan</French>
+	<German>Japan</German>
+	<Italian>Japan</Italian>
+	<Spanish>Japan</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_JAPAN_KING_ADJ</Tag>
+	<English>Japan</English>
+	<French>Japan</French>
+	<German>Japan</German>
+	<Italian>Japan</Italian>
+	<Spanish>Japan</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_JAPAN_KING_PEDIA</Tag>
+	<English>Japan</English>
+	<French>Japan</French>
+	<German>Japan</German>
+	<Italian>Japan</Italian>
+	<Spanish>Japan</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_CALIPHATE</Tag>
+	<English>Caliphate Colonies</English>
+	<French>Caliphate Colonies</French>
+	<German>Caliphate Colonies</German>
+	<Italian>Caliphate Colonies</Italian>
+	<Spanish>Caliphate Colonies</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_CALIPHATE_SHORT</Tag>
+	<English>Caliphate</English>
+	<French>Caliphate</French>
+	<German>Caliphate</German>
+	<Italian>Caliphate</Italian>
+	<Spanish>Caliphate</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_CALIPHATE_ADJ</Tag>
+	<English>Caliphate</English>
+	<French>Caliphate</French>
+	<German>Caliphate</German>
+	<Italian>Caliphate</Italian>
+	<Spanish>Caliphate</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_CALIPHATE_PEDIA</Tag>
+	<English>Caliphate</English>
+	<French>Caliphate</French>
+	<German>Caliphate</German>
+	<Italian>Caliphate</Italian>
+	<Spanish>Caliphate</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_CALIPHATE_KING</Tag>
+	<English>Caliphate Government</English>
+	<French>Caliphate Government</French>
+	<German>Caliphate Government</German>
+	<Italian>Caliphate Government</Italian>
+	<Spanish>Caliphate Government</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_CALIPHATE_KING_SHORT</Tag>
+	<English>Caliphate</English>
+	<French>Caliphate</French>
+	<German>Caliphate</German>
+	<Italian>Caliphate</Italian>
+	<Spanish>Caliphate</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_CALIPHATE_KING_ADJ</Tag>
+	<English>Caliphate</English>
+	<French>Caliphate</French>
+	<German>Caliphate</German>
+	<Italian>Caliphate</Italian>
+	<Spanish>Caliphate</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_CALIPHATE_KING_PEDIA</Tag>
+	<English>Caliphate</English>
+	<French>Caliphate</French>
+	<German>Caliphate</German>
+	<Italian>Caliphate</Italian>
+	<Spanish>Caliphate</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_CONSORTIUM</Tag>
+	<English>Consortium Colonies</English>
+	<French>Consortium Colonies</French>
+	<German>Consortium Colonies</German>
+	<Italian>Consortium Colonies</Italian>
+	<Spanish>Consortium Colonies</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_CONSORTIUM_SHORT</Tag>
+	<English>Consortium</English>
+	<French>Consortium</French>
+	<German>Consortium</German>
+	<Italian>Consortium</Italian>
+	<Spanish>Consortium</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_CONSORTIUM_ADJ</Tag>
+	<English>Consortium</English>
+	<French>Consortium</French>
+	<German>Consortium</German>
+	<Italian>Consortium</Italian>
+	<Spanish>Consortium</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_CONSORTIUM_PEDIA</Tag>
+	<English>Consortium</English>
+	<French>Consortium</French>
+	<German>Consortium</German>
+	<Italian>Consortium</Italian>
+	<Spanish>Consortium</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_CONSORTIUM_KING</Tag>
+	<English>Consortium Government</English>
+	<French>Consortium Government</French>
+	<German>Consortium Government</German>
+	<Italian>Consortium Government</Italian>
+	<Spanish>Consortium Government</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_CONSORTIUM_KING_SHORT</Tag>
+	<English>Consortium</English>
+	<French>Consortium</French>
+	<German>Consortium</German>
+	<Italian>Consortium</Italian>
+	<Spanish>Consortium</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_CONSORTIUM_KING_ADJ</Tag>
+	<English>Consortium</English>
+	<French>Consortium</French>
+	<German>Consortium</German>
+	<Italian>Consortium</Italian>
+	<Spanish>Consortium</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_CONSORTIUM_KING_PEDIA</Tag>
+	<English>Consortium</English>
+	<French>Consortium</French>
+	<German>Consortium</German>
+	<Italian>Consortium</Italian>
+	<Spanish>Consortium</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_SYNDICATE</Tag>
+	<English>Syndicate Colonies</English>
+	<French>Syndicate Colonies</French>
+	<German>Syndicate Colonies</German>
+	<Italian>Syndicate Colonies</Italian>
+	<Spanish>Syndicate Colonies</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_SYNDICATE_SHORT</Tag>
+	<English>Syndicate</English>
+	<French>Syndicate</French>
+	<German>Syndicate</German>
+	<Italian>Syndicate</Italian>
+	<Spanish>Syndicate</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_SYNDICATE_ADJ</Tag>
+	<English>Syndicate</English>
+	<French>Syndicate</French>
+	<German>Syndicate</German>
+	<Italian>Syndicate</Italian>
+	<Spanish>Syndicate</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_SYNDICATE_PEDIA</Tag>
+	<English>Syndicate</English>
+	<French>Syndicate</French>
+	<German>Syndicate</German>
+	<Italian>Syndicate</Italian>
+	<Spanish>Syndicate</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_SYNDICATE_KING</Tag>
+	<English>Syndicate Government</English>
+	<French>Syndicate Government</French>
+	<German>Syndicate Government</German>
+	<Italian>Syndicate Government</Italian>
+	<Spanish>Syndicate Government</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_SYNDICATE_KING_SHORT</Tag>
+	<English>Syndicate</English>
+	<French>Syndicate</French>
+	<German>Syndicate</German>
+	<Italian>Syndicate</Italian>
+	<Spanish>Syndicate</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_SYNDICATE_KING_ADJ</Tag>
+	<English>Syndicate</English>
+	<French>Syndicate</French>
+	<German>Syndicate</German>
+	<Italian>Syndicate</Italian>
+	<Spanish>Syndicate</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_SYNDICATE_KING_PEDIA</Tag>
+	<English>Syndicate</English>
+	<French>Syndicate</French>
+	<German>Syndicate</German>
+	<Italian>Syndicate</Italian>
+	<Spanish>Syndicate</Spanish>
+</TEXT>
 </Civ4GameText>

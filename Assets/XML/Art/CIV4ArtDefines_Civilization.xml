@@ -3,232 +3,136 @@
 <!-- Sid Meier's Civilization 4 -->
 <!-- Copyright Firaxis Games 2005 -->
 <!-- -->
-<!-- Civilization art path information -->
+<!-- Unit art path information -->
 <Civ4ArtDefines xmlns="x-schema:CIV4ArtDefinesSchema.xml">
-	<CivilizationArtInfos>
-    <CivilizationArtInfo>
-      <Type>ART_DEF_CIVILIZATION_MONGOLS</Type>
-      <Button>Art/Interface/TeamColor/btn_Mongols.dds</Button>
-      <Path>Art/Interface/TeamColor/FlagDECAL_Mongol.dds</Path>
-      <bWhiteFlag>0</bWhiteFlag>
-      <bInvertFlag>0</bInvertFlag>
-      <iFontButtonIndex>21</iFontButtonIndex>
-    </CivilizationArtInfo>
-    <CivilizationArtInfo>
-      <Type>ART_DEF_CIVILIZATION_VIKING</Type>
-      <Button>Art/Interface/TeamColor/btn_Viking.dds</Button>
-      <Path>Art/Interface/TeamColor/FlagDECAL_Viking.dds</Path>
-      <bWhiteFlag>0</bWhiteFlag>
-      <bInvertFlag>0</bInvertFlag>
-      <iFontButtonIndex>13</iFontButtonIndex>
-    </CivilizationArtInfo>
-    <CivilizationArtInfo>
-      <Type>ART_DEF_CIVILIZATION_OSTROGOTH</Type>
-      <Button>Art/Interface/TeamColor/btn_Ostrogoths.dds</Button>
-      <Path>Art/Interface/TeamColor/FlagDECAL_Ostrogoth.dds</Path>
-      <bWhiteFlag>0</bWhiteFlag>
-      <bInvertFlag>0</bInvertFlag>
-      <iFontButtonIndex>41</iFontButtonIndex>
-    </CivilizationArtInfo>
-    <CivilizationArtInfo>
-      <Type>ART_DEF_CIVILIZATION_NORMANS</Type>
-      <Button>Art/Interface/TeamColor/btn_Normans.dds</Button>
-      <Path>Art/Interface/TeamColor/FlagDECAL_Norman.dds</Path>
-      <bWhiteFlag>0</bWhiteFlag>
-      <bInvertFlag>0</bInvertFlag>
-      <iFontButtonIndex>39</iFontButtonIndex>
-    </CivilizationArtInfo>
-    <CivilizationArtInfo>
-      <Type>ART_DEF_CIVILIZATION_JAPAN</Type>
-      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,1,11</Button>
-      <Path>Art/Interface/TeamColor/FlagDECAL_Dot.dds</Path>
-      <bWhiteFlag>0</bWhiteFlag>
-      <bInvertFlag>0</bInvertFlag>
-      <iFontButtonIndex>19</iFontButtonIndex>
-    </CivilizationArtInfo>
-    <CivilizationArtInfo>
-      <Type>ART_DEF_CIVILIZATION_KOREAN</Type>
-      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,1,11</Button>
-      <Path>Art/Interface/TeamColor/FlagDECAL_KoreanSymbol.dds</Path>
-      <bWhiteFlag>0</bWhiteFlag>
-      <bInvertFlag>0</bInvertFlag>
-      <iFontButtonIndex>20</iFontButtonIndex>
-    </CivilizationArtInfo>
-    <CivilizationArtInfo>
-      <Type>ART_DEF_CIVILIZATION_TURK</Type>
-      <Button>Art/Interface/TeamColor/btn_TURK-Seljuk.dds</Button>
-      <Path>Art/Interface/TeamColor/FlagDECAL_TURK-Seljuk.dds</Path>
-      <bWhiteFlag>0</bWhiteFlag>
-      <bInvertFlag>0</bInvertFlag>
-      <iFontButtonIndex>17</iFontButtonIndex>
-    </CivilizationArtInfo>
-    <CivilizationArtInfo>
-      <Type>ART_DEF_CIVILIZATION_ANGLO</Type>
-      <Button>Art/Interface/TeamColor/btn_Saxons.dds</Button>
-      <Path>Art/Interface/TeamColor/FlagDECAL_Saxon.dds</Path>
-      <bWhiteFlag>0</bWhiteFlag>
-      <bInvertFlag>0</bInvertFlag>
-      <iFontButtonIndex>42</iFontButtonIndex>
-    </CivilizationArtInfo>
-    <CivilizationArtInfo>
-      <Type>ART_DEF_CIVILIZATION_BYZANTIUM</Type>
-      <Button>Art/Interface/TeamColor/btn_Byzantium.dds</Button>
-      <Path>Art/Interface/TeamColor/FlagDECAL_Byzantine.dds</Path>
-      <bWhiteFlag>0</bWhiteFlag>
-      <bInvertFlag>0</bInvertFlag>
-      <iFontButtonIndex>40</iFontButtonIndex>
-    </CivilizationArtInfo>
-    <CivilizationArtInfo>
-      <Type>ART_DEF_CIVILIZATION_ARABS</Type>
-      <Button>Art/Interface/TeamColor/btn_Ayyubid.dds</Button>
-      <Path>Art/Interface/TeamColor/FlagDECAL_Abbuyid.dds</Path>
-      <bWhiteFlag>0</bWhiteFlag>
-      <bInvertFlag>0</bInvertFlag>
-      <iFontButtonIndex>15</iFontButtonIndex>
-    </CivilizationArtInfo>
-		<CivilizationArtInfo>
-			<Type>ART_DEF_CIVILIZATION_ENGLAND</Type>
-			<Button>Art/Interface/TeamColor/btn_Saxons.dds</Button>
-			<Path>Art/Interface/TeamColor/FlagDECAL_Saxon.dds</Path>
-			<bWhiteFlag>0</bWhiteFlag>
-			<bInvertFlag>0</bInvertFlag>
-			<iFontButtonIndex>13</iFontButtonIndex>
-		</CivilizationArtInfo>
-		<CivilizationArtInfo>
-			<Type>ART_DEF_CIVILIZATION_ENGLAND_EUROPE</Type>
-			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,5,11</Button>
-			<Path>Art/Interface/TeamColor/FlagDECAL_Crown.dds</Path>
-			<bWhiteFlag>0</bWhiteFlag>
-			<bInvertFlag>0</bInvertFlag>
-			<iFontButtonIndex>42</iFontButtonIndex>
-		</CivilizationArtInfo>
-		<CivilizationArtInfo>
-			<Type>ART_DEF_CIVILIZATION_FRANCE</Type>
-			<Button>Art/Interface/TeamColor/btn_Franks.dds</Button>
-			<Path>Art/Interface/TeamColor/FlagDECAL_Franks.dds</Path>
-			<bWhiteFlag>0</bWhiteFlag>
-			<bInvertFlag>0</bInvertFlag>
-			<iFontButtonIndex>39</iFontButtonIndex>
-		</CivilizationArtInfo>
-		<CivilizationArtInfo>
-			<Type>ART_DEF_CIVILIZATION_FRANCE_EUROPE</Type>
-			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,6,11</Button>
-			<Path>Art/Interface/TeamColor/FlagDECAL_Crown.dds</Path>
-			<bWhiteFlag>0</bWhiteFlag>
-			<bInvertFlag>0</bInvertFlag>
-			<iFontButtonIndex>39</iFontButtonIndex>
-		</CivilizationArtInfo>
-		<CivilizationArtInfo>
-			<Type>ART_DEF_CIVILIZATION_SPAIN</Type>
-			<Button>Art/Interface/TeamColor/btn_Visigoths.dds</Button>
-			<Path>Art/Interface/TeamColor/FlagDECAL_Visigoth.dds</Path>
-			<bWhiteFlag>0</bWhiteFlag>
-			<bInvertFlag>0</bInvertFlag>
-			<iFontButtonIndex>41</iFontButtonIndex>
-		</CivilizationArtInfo>
-		<CivilizationArtInfo>
-			<Type>ART_DEF_CIVILIZATION_SPAIN_EUROPE</Type>
-			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,7,11</Button>
-			<Path>Art/Interface/TeamColor/FlagDECAL_Crown.dds</Path>
-			<bWhiteFlag>0</bWhiteFlag>
-			<bInvertFlag>0</bInvertFlag>
-			<iFontButtonIndex>41</iFontButtonIndex>
-		</CivilizationArtInfo>
-		<CivilizationArtInfo>
-			<Type>ART_DEF_CIVILIZATION_NETHERLANDS</Type>
-			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,4,11</Button>
-			<Path>Art/Interface/TeamColor/FlagDECAL_Netherlands.dds</Path>
-			<bWhiteFlag>0</bWhiteFlag>
-			<bInvertFlag>0</bInvertFlag>
-			<iFontButtonIndex>40</iFontButtonIndex>
-		</CivilizationArtInfo>
-		<CivilizationArtInfo>
-			<Type>ART_DEF_CIVILIZATION_NETHERLANDS_EUROPE</Type>
-			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,8,11</Button>
-			<Path>Art/Interface/TeamColor/FlagDECAL_Crown.dds</Path>
-			<bWhiteFlag>0</bWhiteFlag>
-			<bInvertFlag>0</bInvertFlag>
-			<iFontButtonIndex>40</iFontButtonIndex>
-		</CivilizationArtInfo>
-		<CivilizationArtInfo>
-			<Type>ART_DEF_CIVILIZATION_VANDALS</Type>
-			<Button>Art/Interface/TeamColor/btn_Vandals.dds</Button>
-			<Path>Art/Interface/TeamColor/FlagDECAL_Vandals.dds</Path>
-			<bWhiteFlag>0</bWhiteFlag>
-			<bInvertFlag>0</bInvertFlag>
-			<iFontButtonIndex>0</iFontButtonIndex>
-		</CivilizationArtInfo>
-		<CivilizationArtInfo>
-			<Type>ART_DEF_CIVILIZATION_MALI</Type>
-			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,6,1</Button>
-			<Path>Art/Interface/TeamColor/flagdecal_scimitar.dds</Path>
-			<bWhiteFlag>0</bWhiteFlag>
-			<bInvertFlag>0</bInvertFlag>
-			<iFontButtonIndex>0</iFontButtonIndex>
-		</CivilizationArtInfo>
-		<CivilizationArtInfo>
-			<Type>ART_DEF_CIVILIZATION_MAGYAR</Type>
-			<Button>Art/Interface/TeamColor/btn_Magyars.dds</Button>
-			<Path>Art/Interface/TeamColor/FlagDECAL_Magyar.dds</Path>
-			<bWhiteFlag>0</bWhiteFlag>
-			<bInvertFlag>0</bInvertFlag>
-			<iFontButtonIndex>0</iFontButtonIndex>
-		</CivilizationArtInfo>
-		<CivilizationArtInfo>
-			<Type>ART_DEF_CIVILIZATION_SLAV</Type>
-			<Button>Art/Interface/TeamColor/btn_Slavs.dds</Button>
-			<Path>Art/Interface/TeamColor/FlagDECAL_Slavs.dds</Path>
-			<bWhiteFlag>0</bWhiteFlag>
-			<bInvertFlag>0</bInvertFlag>
-			<iFontButtonIndex>0</iFontButtonIndex>
-		</CivilizationArtInfo>
-		<CivilizationArtInfo>
-			<Type>ART_DEF_CIVILIZATION_BERBER</Type>
-			<Button>Art/Interface/TeamColor/btn_Berber.dds</Button>
-			<Path>Art/Interface/TeamColor/FlagDECAL_Berber.dds</Path>
-			<bWhiteFlag>0</bWhiteFlag>
-			<bInvertFlag>0</bInvertFlag>
-			<iFontButtonIndex>0</iFontButtonIndex>
-		</CivilizationArtInfo>
-		<CivilizationArtInfo>
-			<Type>ART_DEF_CIVILIZATION_LOMBARD</Type>
-			<Button>Art/Interface/TeamColor/btn_Lombardy.dds</Button>
-			<Path>Art/Interface/TeamColor/FlagDECAL_Lombardy.dds</Path>
-			<bWhiteFlag>0</bWhiteFlag>
-			<bInvertFlag>0</bInvertFlag>
-			<iFontButtonIndex>0</iFontButtonIndex>
-		</CivilizationArtInfo>
-		<CivilizationArtInfo>
-			<Type>ART_DEF_CIVILIZATION_NORWEGIAN</Type>
-			<Button>Art/Interface/TeamColor/btn_NorwegianVikings.dds</Button>
-			<Path>Art/Interface/TeamColor/FlagDECAL_NorwegianViking.dds</Path>
-			<bWhiteFlag>0</bWhiteFlag>
-			<bInvertFlag>0</bInvertFlag>
-			<iFontButtonIndex>0</iFontButtonIndex>
-		</CivilizationArtInfo>
-		<CivilizationArtInfo>
-			<Type>ART_DEF_CIVILIZATION_BURGUNDY</Type>
-			<Button>Art/Interface/TeamColor/btn_Burgundy.dds</Button>
-			<Path>Art/Interface/TeamColor/FlagDECAL_Burgundy.dds</Path>
-			<bWhiteFlag>0</bWhiteFlag>
-			<bInvertFlag>0</bInvertFlag>
-			<iFontButtonIndex>0</iFontButtonIndex>
-		</CivilizationArtInfo>
-    <CivilizationArtInfo>
-      <Type>ART_DEF_CIVILIZATION_VASSAL</Type>
-      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,3,1</Button>
-      <Path>Art/Interface/TeamColor/FlagDECAL_Jorvik.dds</Path>
-      <bWhiteFlag>0</bWhiteFlag>
-      <bInvertFlag>0</bInvertFlag>
-      <iFontButtonIndex>0</iFontButtonIndex>
-    </CivilizationArtInfo>
-		<CivilizationArtInfo>
-			<Type>ART_DEF_CIVILIZATION_BARBARIAN</Type>
-			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,1,2</Button>
-			<Path>Art/Interface/TeamColor/FlagDECAL_Skull.dds</Path>
-			<bWhiteFlag>0</bWhiteFlag>
-			<bInvertFlag>0</bInvertFlag>
-			<iFontButtonIndex>0</iFontButtonIndex>
-		</CivilizationArtInfo>
-	</CivilizationArtInfos>
+<CivilizationArtInfos>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_NAFTA</Type>
+	<Button>Art/Interface/TeamColor/NAFTA.dds</Button>
+	<Path>Art/Interface/TeamColor/NAFTA.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_NAFTA_KING</Type>
+	<Button>Art/Interface/TeamColor/NAFTA_KING.dds</Button>
+	<Path>Art/Interface/TeamColor/NAFTA_KING.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_EU</Type>
+	<Button>Art/Interface/TeamColor/EU.dds</Button>
+	<Path>Art/Interface/TeamColor/EU.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_EU_KING</Type>
+	<Button>Art/Interface/TeamColor/EU_KING.dds</Button>
+	<Path>Art/Interface/TeamColor/EU_KING.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_CHINA</Type>
+	<Button>Art/Interface/TeamColor/CHINA.dds</Button>
+	<Path>Art/Interface/TeamColor/CHINA.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_CHINA_KING</Type>
+	<Button>Art/Interface/TeamColor/CHINA_KING.dds</Button>
+	<Path>Art/Interface/TeamColor/CHINA_KING.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_RUSSIA</Type>
+	<Button>Art/Interface/TeamColor/RUSSIA.dds</Button>
+	<Path>Art/Interface/TeamColor/RUSSIA.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_RUSSIA_KING</Type>
+	<Button>Art/Interface/TeamColor/RUSSIA_KING.dds</Button>
+	<Path>Art/Interface/TeamColor/RUSSIA_KING.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_JAPAN</Type>
+	<Button>Art/Interface/TeamColor/JAPAN.dds</Button>
+	<Path>Art/Interface/TeamColor/JAPAN.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_JAPAN_KING</Type>
+	<Button>Art/Interface/TeamColor/JAPAN_KING.dds</Button>
+	<Path>Art/Interface/TeamColor/JAPAN_KING.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_CALIPHATE</Type>
+	<Button>Art/Interface/TeamColor/CALIPHATE.dds</Button>
+	<Path>Art/Interface/TeamColor/CALIPHATE.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_CALIPHATE_KING</Type>
+	<Button>Art/Interface/TeamColor/CALIPHATE_KING.dds</Button>
+	<Path>Art/Interface/TeamColor/CALIPHATE_KING.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_CONSORTIUM</Type>
+	<Button>Art/Interface/TeamColor/CONSORTIUM.dds</Button>
+	<Path>Art/Interface/TeamColor/CONSORTIUM.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_CONSORTIUM_KING</Type>
+	<Button>Art/Interface/TeamColor/CONSORTIUM_KING.dds</Button>
+	<Path>Art/Interface/TeamColor/CONSORTIUM_KING.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_SYNDICATE</Type>
+	<Button>Art/Interface/TeamColor/SYNDICATE.dds</Button>
+	<Path>Art/Interface/TeamColor/SYNDICATE.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_SYNDICATE_KING</Type>
+	<Button>Art/Interface/TeamColor/SYNDICATE_KING.dds</Button>
+	<Path>Art/Interface/TeamColor/SYNDICATE_KING.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+</CivilizationArtInfos>
 </Civ4ArtDefines>

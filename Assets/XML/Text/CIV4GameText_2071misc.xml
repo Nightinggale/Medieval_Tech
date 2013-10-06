@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by lcollins (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - New -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_SCHOOL_BUILDING_NEEDED</Tag>
+		<English>[ICON_BULLET]Can be trained in [COLOR_BUILDING_TEXT][LINK=literal]%s1_building[\LINK][COLOR_REVERT]</English>
+		<French>[ICON_BULLET]Can be trained in [COLOR_BUILDING_TEXT][LINK=literal]%s1_building[\LINK][COLOR_REVERT]</French>
+		<German>[ICON_BULLET]Ausbildung m&#246;glich in [COLOR_BUILDING_TEXT][LINK=literal]%s1_building[\LINK][COLOR_REVERT]</German>
+		<Italian>[ICON_BULLET]Can be trained in [COLOR_BUILDING_TEXT][LINK=literal]%s1_building[\LINK][COLOR_REVERT]</Italian>
+		<Spanish>[ICON_BULLET]Can be trained in [COLOR_BUILDING_TEXT][LINK=literal]%s1_building[\LINK][COLOR_REVERT]</Spanish>
+	</TEXT>
+	<!-- Pedia - Unit source - Start Nightinggale -->
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MIGRATES</Tag>
+		<English>[ICON_BULLET]Migrates from Europe</English>
+		<French>[ICON_BULLET]Migrates from Europe</French>
+		<German>[ICON_BULLET]Migriert aus Europa</German>
+		<Italian>[ICON_BULLET]Migrates from Europe</Italian>
+		<Spanish>[ICON_BULLET]Migrates from Europe</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BUYABLE_IN_EUROPE</Tag>
+		<English>[ICON_BULLET]Buyable in Europe</English>
+		<French>[ICON_BULLET]Buyable in Europe</French>
+		<German>[ICON_BULLET]Kaufbar in Europa</German>
+		<Italian>[ICON_BULLET]Buyable in Europe</Italian>
+		<Spanish>[ICON_BULLET]Buyable in Europe</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TAUGHT_BY_NATIVES</Tag>
+		<English>[ICON_BULLET]Trained by Natives</English>
+		<French>[ICON_BULLET]Trained by Natives</French>
+		<German>[ICON_BULLET]Ausbildbar durch Ureinwohner</German>
+		<Italian>[ICON_BULLET]Trained by Natives</Italian>
+		<Spanish>[ICON_BULLET]Trained by Natives</Spanish>
+	</TEXT>
+	<!-- Pedia - Unit source - End Nightinggale -->
+	<TEXT>
+		<Tag>TXT_KEY_EDIT_TEACHER_LIST</Tag>
+		<English>Teacher List Popup Screen</English>
+		<French>Teacher List Popup Screen</French>
+		<German>Teacher List Popup Screen</German>
+		<Italian>Teacher List Popup Screen</Italian>
+		<Spanish>Teacher List Popup Screen</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EDIT_TEACHER_LIST_POPUP_TEXT</Tag>
+		<English>%s1_city can train the following units.
+Select how many units you want to be trained of each profession.</English>
+		<French>%s1_city can train the following units.
+Select how many units you want to be trained of each profession.</French>
+		<German>%s1_city can train the following units.
+Select how many units you want to be trained of each profession.</German>
+		<Italian>%s1_city can train the following units.
+Select how many units you want to be trained of each profession.</Italian>
+		<Spanish>%s1_city can train the following units.
+Select how many units you want to be trained of each profession.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EDIT_TEACHER_LIST_POPUP_NO_SCHOOL_TEXT</Tag>
+		<English>%s1_city has no proper education system.</English>
+		<French>%s1_city has no proper education system.</French>
+		<German>%s1_city has no proper education system.</German>
+		<Italian>%s1_city has no proper education system.</Italian>
+		<Spanish>%s1_city has no proper education system.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EDIT_TEACHER_LIST_POPUP_RESET_ALL_TEXT</Tag>
+		<English>Reset All</English>
+		<French>Reset All</French>
+		<German>Reset All</German>
+		<Italian>Reset All</Italian>
+		<Spanish>Reset All</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EDIT_TEACHER_LIST_POPUP_RESET_ALL_HELP</Tag>
+		<English>Clear all repeats and set all units to 0.</English>
+		<French>Clear all repeats and set all units to 0.</French>
+		<German>Clear all repeats and set all units to 0.</German>
+		<Italian>Clear all repeats and set all units to 0.</Italian>
+		<Spanish>Clear all repeats and set all units to 0.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EDIT_TEACHER_LIST_POPUP_REPEAT_TEXT</Tag>
+		<English>Repeat</English>
+		<French>Repeat</French>
+		<German>Repeat</German>
+		<Italian>Repeat</Italian>
+		<Spanish>Repeat</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EDIT_TEACHER_LIST_POPUP_REPEAT_HELP</Tag>
+		<English>Orders a new unit automatically whenever no unit is trained.
+Multiple repeating units is possible and an equal number will be trained of each.</English>
+		<French>Orders a new unit automatically whenever no unit is trained.
+Multiple repeating units is possible and an equal number will be trained of each.</French>
+		<German>Orders a new unit automatically whenever no unit is trained.
+Multiple repeating units is possible and an equal number will be trained of each.</German>
+		<Italian>Orders a new unit automatically whenever no unit is trained.
+Multiple repeating units is possible and an equal number will be trained of each.</Italian>
+		<Spanish>Orders a new unit automatically whenever no unit is trained.
+Multiple repeating units is possible and an equal number will be trained of each.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EDIT_TEACHER_LIST_NO_TEACHER</Tag>
+		<English>%s1_unit: no teacher</English>
+		<French>%s1_unit : no teacher</French>
+		<German>%s1_unit: no teacher</German>
+		<Italian>%s1_unit: no teacher</Italian>
+		<Spanish>%s1_unit: no teacher</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_YIELD_DEMAND</Tag>
+		<English>Demands %F2</English>
+		<French>%d1%F2 par citoyen</French>
+		<German>%d1%F2 pro B&#252;rger</German>
+		<Italian>%d1%F2 per cittadino</Italian>
+		<Spanish>%d1%F2 por ciudadano</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CUSTOM_HOUSE_POPUP_TEXT</Tag>
+		<English>Select goods that will be sold by Custom House, and select mimimum amount of a specific yield to enable Custom House to sell such yield in city %s1_city</English>
+		<French>S&#233;lectionner les biens que le Poste de Douane va vendre, ainsi que le seuil de marchandises qui d&#233;clenche la vente de celle-ci pour la colonie suivante: %s1_city</French>
+		<German>W&#228;hle G&#252;ter, die auf dem heimischen Markt verkauft werden sollen, sowie eine Mindestschwelle ab der das Zollhaus in %s1_city verkaufen soll.</German>
+		<Italian>Select goods that will be sold by Custom House, and select mimimum amount of a specific yield to enable Custom House to sell such yield in city %s1_city</Italian>
+		<Spanish>Select goods that will be sold by Custom House, and select mimimum amount of a specific yield to enable Custom House to sell such yield in city %s1_city</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_NEVER_SELL</Tag>
+		<English>Never Sell</English>
+		<French>Ne jamais Vendre</French>
+		<German>Nicht verkaufen</German>
+		<Italian>Never Sell</Italian>
+		<Spanish>Never Sell</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOMESTIC_DEMAND</Tag>
+		<English>Demand</English>
+		<French>Demande</French>
+		<German>Bedarf</German>
+		<Italian>Demand</Italian>
+		<Spanish>Demand</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOMESTIC_PRICE</Tag>
+		<English>Price</English>
+		<French>Prix</French>
+		<German>Preis</German>
+		<Italian>Price</Italian>
+		<Spanish>Price</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOMESTIC_MARKET_POPUP</Tag>
+		<English>Domestic Market (%s1_city) %d2/%d3</English>
+		<French>March&#233; int&#233;rieur (%s1_city)</French>
+		<German>Heimischer Markt (%s1_city)</German>
+		<Italian>Domestic Market (%s1_city)</Italian>
+		<Spanish>Domestic Market (%s1_city)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STORED</Tag>
+		<English>Stored</English>
+		<French>En stock</French>
+		<German>Lager</German>
+		<Italian>Stored</Italian>
+		<Spanish>Stored</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_NUMBER</Tag>
+		<English>%d1</English>
+		<French>%d1</French>
+		<German>%d1</German>
+		<Italian>%d1</Italian>
+		<Spanish>%d1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODS_DOMESTIC_SOLD</Tag>
+		<English>On the domestic market of %s1_city goods for %d2[ICON_GOLD] have been sold.</English>
+		<French>On the domestic market of %s1_city goods for %d2[ICON_GOLD] have been sold.</French>
+		<German>Auf dem Markt von %s1_city wurden G&#252;ter f&#252;r %d2[ICON_GOLD] verkauft.</German>
+		<Italian>On the domestic market of %s1_city goods for %d2[ICON_GOLD] have been sold.</Italian>
+		<Spanish>On the domestic market of %s1_city goods for %d2[ICON_GOLD] have been sold.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_YIELDS_CONSUMED_WITH_CHAR</Tag>
+		<English>Consumes: %s1_symbol_list</English>
+		<French>Consomme : %s1_symbol_list</French>
+		<German>Ben&#246;tigt: %s1_symbol_list</German>
+		<Italian>Consuma: %s1_symbol_list</Italian>
+		<Spanish>Consume: %s1_symbol_list</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_YIELDS_CONVERSION</Tag>
+		<English>[ICON_BULLET]Converts %s1_symbol_list into %F2_yield</English>
+		<French>[ICON_BULLET]Convertit %s1_symbol_list en %F2_yield</French>
+		<German>[ICON_BULLET]Wandelt %s1_symbol_list in %F2_yield um</German>
+		<Italian>[ICON_BULLET]Converte %s1_symbol_list in %F2_yield</Italian>
+		<Spanish>[ICON_BULLET]Convierte %s1_symbol_list en %F2_yield</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_YIELDS_PRODUCED_WITH_CHAR</Tag>
+		<English>Produces: %s1_symbol_list</English>
+		<French>Produit : %s1_symbol_list</French>
+		<German>Produziert: %s1_symbol_list</German>
+		<Italian>Produce: %s1_symbol_list</Italian>
+		<Spanish>Produce: %s1_symbol_list</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CHOOSE_PROFESSION_ITEMS</Tag>
+		<English>%s1_comma_separated_list_of_yields_produced</English>
+		<French>%s1_comma_separated_list_of_yields_produced</French>
+		<German>%s1_comma_separated_list_of_yields_produced</German>
+		<Italian>%s1_comma_separated_list_of_yields_produced</Italian>
+		<Spanish>%s1_comma_separated_list_of_yields_produced</Spanish>
+	</TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MISC_HELP_PROD_FINAL_YIELD</Tag>
+    <English>-----------------------[NEWLINE]Final Production: %d1%F2_Icon</English>
+    <French>-----------------------[NEWLINE]Production finale : %d1%F2_Icon</French>
+    <German>-----------------------[NEWLINE]Letzte Produktion: %d1%F2_Icon</German>
+    <Italian>-----------------------[NEWLINE]Produzione finale: %d1%F2_Icon</Italian>
+    <Spanish>-----------------------[NEWLINE]Producci&#243;n final: %d1 %F2_Icon</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MISC_HELP_PROD_TRAIT</Tag>
+    <English>[ICON_BULLET]%D1%%%F4_Icon for %s2_unit_or_building (%s3_trait)</English>
+    <French>[ICON_BULLET]%D1%%%F4_Icon pour : %s2_unit_or_building (%s3_trait)</French>
+    <German>[ICON_BULLET]%D1%%%F4_Icon f&#252;r %s2_unit_or_building (%s3_trait)</German>
+    <Italian>[ICON_BULLET]%D1%%%F4_Icon per %s2_unit_or_building (%s3_trait)</Italian>
+    <Spanish>[ICON_BULLET]%D1%% a la %F4_Icon de %s2_unit_or_building (%s3_trait)</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CITY_BAR_HAMMER_PRODUCTION</Tag>
+    <English>%s1: %d2/%d3 %F5_Icon (%d4 [NUM4:Turn:Turns])</English>
+    <French>%s1 : %d2/%d3 %F5_Icon (%d4 [NUM4:tour:tours])</French>
+    <German>%s1: %d2/%d3 %F5_Icon (%d4 [NUM4:Runde:Runden])</German>
+    <Italian>%s1: %d2/%d3 %F5_Icon (%d4 [NUM4:turno:turni])</Italian>
+    <Spanish>%s1: %d2/%d3 %F5_Icon (%d4 [NUM4:turno:turnos])</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CITY_BAR_PRODUCTION</Tag>
+    <English>%s1: %d2/%d3 %F4_Icon</English>
+    <French>%s1 : %d2/%d3 %F4_Icon</French>
+    <German>%s1: %d2/%d3 %F4_Icon</German>
+    <Italian>%s1: %d2/%d3 %F4_Icon</Italian>
+    <Spanish>%s1: %d2/%d3 %F4_Icon</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MISC_HELP_PROD_OVERFLOW</Tag>
+    <English>Overflow from previous build: %d1%F2_Icon</English>
+    <French>Exc&#233;dent de la production pr&#233;c&#233;dente: %d1%F2_Icon</French>
+    <German>&#220;berschuss aus vorherigem Bauprojekt: %d1%F2_Icon</German>
+    <Italian>In eccedenza dalla precedente costruzione: %d1%F2_Icon</Italian>
+    <Spanish>En exceso por construcci&#243;n anterior: %d1 %F2_Icon</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MISC_HELP_PROD_DOMAIN</Tag>
+    <English>[ICON_BULLET]%D1%%%F3_Icon for %s2_domain</English>
+    <French>[ICON_BULLET]%D1%%%F3_Icon pour : %s2_domain</French>
+    <German>[ICON_BULLET]%D1%%%F3_Icon f&#252;r %s2_domain</German>
+    <Italian>[ICON_BULLET]%D1%%%F3_Icon per %s2_domain</Italian>
+    <Spanish>[ICON_BULLET]%D1%% a la %F3_Icon de %s2_domain</Spanish>
+  </TEXT>
+   <TEXT>
+    <Tag>TXT_KEY_NO_ACTION_HAS_HOME_CITY</Tag>
+    <English>[COLOR_UNIT_TEXT]Current Home Settlement: %s1_city.[COLOR_REVERT]</English>
+    <French>[COLOR_UNIT_TEXT]Current Home Settlement: %s1_city.[COLOR_REVERT]</French>
+    <German>[COLOR_UNIT_TEXT]Current Home Settlement: %s1_city.[COLOR_REVERT]</German>
+    <Italian>[COLOR_UNIT_TEXT]Current Home Settlement: %s1_city.[COLOR_REVERT]</Italian>
+    <Spanish>[COLOR_UNIT_TEXT]Current Home Settlement: %s1_city.[COLOR_REVERT]</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_SELECT_HOME_CITY</Tag>
+    <English>Select a Home Settlement for this Unit</English>
+    <French>Select a Home Settlement for this Unit</French>
+    <German>Select a Home Settlement for this Unit</German>
+    <Italian>Select a Home Settlement for this Unit</Italian>
+    <Spanish>Select a Home Settlement for this Unit</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_SELECT_HOME_CITY_NAME</Tag>
+    <English>%s1_city (%d2_population)</English>
+    <French>%s1_city (%d2_population)</French>
+    <German>%s1_city (%d2_population)</German>
+    <Italian>%s1_city (%d2_population)</Italian>
+    <Spanish>%s1_city (%d2_population)</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CLEAR_HOME_CITY</Tag>
+    <English>Clear home settlement</English>
+    <French>Clear home settlement</French>
+    <German>Clear home settlement</German>
+    <Italian>Clear home settlement</Italian>
+    <Spanish>Clear home settlement</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_RETURN_HOME_UNLOAD</Tag>
+    <English>Return Home and Unload</English>
+    <French>Return Home and Unload</French>
+    <German>Return Home and Unload</German>
+    <Italian>Return Home and Unload</Italian>
+    <Spanish>Return Home and Unload</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_AUTOMATE_IMMIGRATION</Tag>
+    <English>Immigrating</English>
+    <French>Immigrating</French>
+    <German>Immigrating</German>
+    <Italian>Immigrating</Italian>
+    <Spanish>Immigrating</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_RETURN_HOME_UNLOAD_HELP</Tag>
+    <English>Return to home settlement and unload cargo if able.</English>
+    <French>Return to home settlement and unload cargo if able.</French>
+    <German>Return to home settlement and unload cargo if able.</German>
+    <Italian>Return to home settlement and unload cargo if able.</Italian>
+    <Spanish>Return to home settlement and unload cargo if able.</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_ASSIGN_HOME_CITY</Tag>
+    <English>Assign Home Settlement</English>
+    <French>Assign Home Settlement</French>
+    <German>Assign Home Settlement</German>
+    <Italian>Assign Home Settlement</Italian>
+    <Spanish>Assign Home Settlement</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_ASSIGN_HOME_CITY_HELP</Tag>
+    <English>Select a Home Settlement. Units can then return here to unload if able.</English>
+    <French>Assign Home Settlement</French>
+    <German>Assign Home Settlement</German>
+    <Italian>Assign Home Settlement</Italian>
+    <Spanish>Assign Home Settlement</Spanish>
+  </TEXT>
+ 	<TEXT>
+		<Tag>TXT_KEY</Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GAME_OPTION_NO_WILD_LAND_ANIMALS</Tag>
+		<English>No Wild Land Animals</English>
+		<French>No Wild Land Animals</French>
+		<German>No Wild Land Animals</German>
+		<Italian>No Wild Land Animals</Italian>
+		<Spanish>No Wild Land Animals</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GAME_OPTION_NO_WILD_LAND_ANIMALS_HELP</Tag>
+		<English>Wild Land Animals will not be spawned</English>
+		<French>Wild Land Animals will not be spawned</French>
+		<German>Wild Land Animals will not be spawned</German>
+		<Italian>Wild Land Animals will not be spawned</Italian>
+		<Spanish>Wild Land Animals will not be spawned</Spanish>
+	</TEXT>
+
+	<TEXT>
+		<Tag>TXT_KEY_GAME_OPTION_NO_WILD_SEA_ANIMALS</Tag>
+		<English>No Wild Sea Animals</English>
+		<French>No Wild Sea Animals</French>
+		<German>No Wild Sea Animals</German>
+		<Italian>No Wild Sea Animals</Italian>
+		<Spanish>No Wild Sea Animals</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GAME_OPTION_NO_WILD_SEA_ANIMALS_HELP</Tag>
+		<English>Wild Sea Animals will not be spawned</English>
+		<French>Wild Sea Animals will not be spawned</French>
+		<German>Wild Sea Animals will not be spawned</German>
+		<Italian>Wild Sea Animals will not be spawned</Italian>
+		<Spanish>Wild Sea Animals will not be spawned</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY</Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_BARBARIAN</Tag>
+		<English>Barbarian</English>
+		<French>
+			<Text>Barbare</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Barbar</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Barbarico</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>B&#225;rbaro</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BARBARIAN_PEDIA</Tag>
+		<English>[TAB]The term "barbarian" was created by the Greeks; it was originally used to denote any foreigner. Since then it has gained a more negative connotation, and it is commonly applied to civilizations deemed "inferior" to one's own. The Chinese, for instance, thought of all foreign cultures - everybody from the Manchus to the Turks to the Europeans - as barbarians. Rome applied it to the Huns and the Germanic tribes, as well as to the more advanced Gauls.[PARAGRAPH:2]In Civilization IV, the term denotes people that are not part of any organized civilization appearing in the game, but are instead old-style hunter-gatherers who prey on the "weak" civilized world. Though some barbarians may have acquired fairly advanced weaponry - swords and axes, for example - and though they may occasionally capture or even build their own cities, they remain at heart brigandic nomads, destroying everything that comes in their path. Barbarians cannot be bargained with or appeased: they must be destroyed - before they destroy you!</English>
+		<French>[TAB]Le terme "Barbare" est &#224; l'origine un crit&#232;re linguistique utilis&#233; par les Grecs pour d&#233;signer toute personne &#233;trang&#232;re &#224; la civilisation grecque. Depuis, ce terme a pris une connotation p&#233;jorative et s'applique aux civilisations jug&#233;es "inf&#233;rieures". Les Chinois, par exemple, consid&#233;raient toutes les cultures &#233;trang&#232;res, des Mandchous aux Turcs en passant par les Europ&#233;ens, comme des barbares. Rome utilisait ce terme pour d&#233;signer les Huns, les Gaulois et les tribus germaniques.[PARAGRAPH:2]Dans Civilization IV, le terme "Barbares" d&#233;signe des gens qui ne font partie d'aucune civilisation organis&#233;e du jeu. Il s'agit de chasseurs-cueilleurs qui n'ont pas peur de s'attaquer au monde civilis&#233;. Bien que certains barbares aient pu acqu&#233;rir un armement assez avanc&#233;, avec notamment des &#233;p&#233;es et des haches, et bien qu'ils puissent &#224; l'occasion capturer ou m&#234;me fonder leurs propres villes, ils restent avant tout des "bandits-nomades", d&#233;truisant tout sur leur passage. Il est impossible de n&#233;gocier avec des barbares ni m&#234;me de les apaiser : il faut les &#233;liminer avant qu'ils ne vous &#233;liminent !</French>
+		<German>[TAB]Der Begriff "Barbar" kommt aus dem Griechischen und bezeichnete in seiner urspr&#252;nglichen Bedeutung alle Nichtgriechen. Seither haftete dem Wort allerdings eine immer negativere Assoziation an und heute wird es im Allgemeinen als Bezeichnung f&#252;r primitivere, "unterlegenere" Zivilisationen verwendet. Die Chinesen betrachteten beispielsweise alle fremden Kulturen - wirklich alle, von den Manchus &#252;ber die T&#252;rken bis hin zu den Europ&#228;ern - als Barbaren. Rom benutzte den Begriff f&#252;r die Hunnen und die germanischen St&#228;mme sowie f&#252;r die immerhin etwas fortschrittlicheren Gallier.[PARAGRAPH:2]In Civilization IV sind mit den "Barbaren" V&#246;lker gemeint, die keiner der organisierten Zivilisationen im Spiel angeh&#246;ren, sondern eher in die Kategorie "J&#228;ger und Sammler" eingeordnet werden k&#246;nnen und die "schwache" zivilisierte Welt mit &#220;berf&#228;llen heimsuchen. Zwar gibt es vereinzelt Barbaren, die &#252;ber relativ fortschrittliche Waffen verf&#252;gen - zum Beispiel Schwerter und &#196;xte - und sie k&#246;nnen auch gelegentlich St&#228;dte erobern oder sogar eigene St&#228;dte gr&#252;nden, dennoch bleiben sie im Herzen stets r&#228;uberische Nomaden, die alles zerst&#246;ren, was sich ihnen in den Weg stellt. Barbaren lassen sich nicht beschwichtigen und auch nicht mit sich handeln - deshalb sollten sie m&#246;glichst schnell vernichtet werden, bevor sie eine ernsthafte Bedrohung darstellen.</German>
+		<Italian>[TAB]Il termine "barbaro" venne coniato dai Greci e inizialmente veniva utilizzato per indicare qualsiasi straniero. Da allora, la parola ha assunto una connotazione negativa e viene associato a quelle civilt&#224; definite "inferiori". I Cinesi, per esempio, identificavano tutte le culture straniere come "barbare" dai Manci&#249; ai Turchi agli Europei. Roma boll&#242; con questo termine gli Unni e le popolazioni germaniche, cos&#236; come i Galli che erano culturalmente evoluti.[PARAGRAPH:2]In Civilization IV, questo termine indica le popolazioni che non fanno parte di una civilt&#224; organizzata, vecchi cacciatori che predano i "deboli" nel mondo. Malgrado alcuni barbari abbiano conquistato armamenti pi&#249; evoluti come spade e asce, e talvolta possano conquistare o fondare delle citt&#224;, i Barbari rimangono prevalentemente nomadi che distruggono e saccheggiano tutto ci&#242; che capita a tiro. Non si pu&#242; trattare con i Barbari: devono essere distrutti prima che loro distruggano te!</Italian>
+		<Spanish>[TAB]El t&#233;rmino "b&#225;rbaro" fue acu&#241;ado por los griegos, y originalmente se utilizaba para referirse a cualquier extranjero. Pero desde entonces ha adquirido unas connotaciones negativas, pues suele emplearse al hablar de las civilizaciones a las que se considera "inferiores" a la propia. Los chinos, por ejemplo, pensaban que todas las culturas extranjeras (desde los manch&#250;es a los turcos, pasando por los europeos) eran b&#225;rbaras. En Roma se empleaba el t&#233;rmino para referirse a los hunos y las tribus germanas, as&#237; como a los galos, que eran m&#225;s avanzados.[PARAGRAPH:2]En Civilization IV, este t&#233;rmino engloba a todos los pueblos que no forman parte de ninguna civilizaci&#243;n organizada del juego, y en lugar de eso se componen de cazadores-recolectores que atacan al "d&#233;bil" mundo civilizado. Aunque algunos b&#225;rbaros pueden llegar a adquirir armas bastante avanzadas (espadas y hachas, por ejemplo), y aunque de vez en cuando pueden capturar ciudades o construir las suyas propias, en el fondo siguen siendo unos n&#243;madas bandidos que lo destruyen todo a su paso. No se puede negociar con ellos, ni es posible aplacarlos: &#161;hay que destruirlos antes de que ellos te destruyan a ti!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ANIMAL</Tag>
+		<English>[ICON_BULLET]Wild Animal</English>
+		<French>[ICON_BULLET]Wild Animal</French>
+		<German>[ICON_BULLET]Wild Animal</German>
+		<Italian>[ICON_BULLET]Wild Animal</Italian>
+		<Spanish>[ICON_BULLET]Wild Animal</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ANIMAL_AI_NO_PATROL_WEIGHT</Tag>
+		<English>[ICON_BULLET]Animal does not Patrol</English>
+		<French>[ICON_BULLET]Animal does not Patrol</French>
+		<German>[ICON_BULLET]Animal does not Patrol</German>
+		<Italian>[ICON_BULLET]Animal does not Patrol</Italian>
+		<Spanish>[ICON_BULLET]Animal does not Patrol</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ANIMAL_AI_PATROL_WEIGHT</Tag>
+		<English>[ICON_BULLET]Base AI Patrol Weight: %d1_AIPatrolWeight</English>
+		<French>[ICON_BULLET]Base AI Patrol Weight: %d1_AIPatrolWeight</French>
+		<German>[ICON_BULLET]Base AI Patrol Weight: %d1_AIPatrolWeight</German>
+		<Italian>[ICON_BULLET]Base AI Patrol Weight: %d1_AIPatrolWeight</Italian>
+		<Spanish>[ICON_BULLET]Base AI Patrol Weight: %d1_AIPatrolWeight</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY</Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TERRAIN_NATIVE</Tag>
+		<English>[ICON_BULLET]Native to %s1_Desc Terrain</English>
+		<French>[ICON_BULLET]Native to %s1_Desc Terrain</French>
+		<German>[ICON_BULLET]Native to %s1_Desc Terrain</German>
+		<Italian>[ICON_BULLET]Native to %s1_Desc Terrain</Italian>
+		<Spanish>[ICON_BULLET]Native to %s1_Desc Terrain</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_FEATURE_NATIVE</Tag>
+		<English>[ICON_BULLET]Native to %s1_Desc Features</English>
+		<French>[ICON_BULLET]Native to %s1_Desc Features</French>
+		<German>[ICON_BULLET]Native to %s1_Desc Features</German>
+		<Italian>[ICON_BULLET]Native to %s1_Desc Features</Italian>
+		<Spanish>[ICON_BULLET]Native to %s1_Desc Features</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BONUS_NATIVE</Tag>
+		<English>[ICON_BULLET]Native to %s1_Desc Resources</English>
+		<French>[ICON_BULLET]Native to %s1_Desc Resources</French>
+		<German>[ICON_BULLET]Native to %s1_Desc Resources</German>
+		<Italian>[ICON_BULLET]Native to %s1_Desc Resources</Italian>
+		<Spanish>[ICON_BULLET]Native to %s1_Desc Resources</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ANIMAL_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Animals[COLOR_REVERT] hunt unprotected settlers! Beware!!</English>
+		<French>Les [COLOR_UNIT_TEXT]animaux[COLOR_REVERT] attaquent les colons sans protection. Prenez garde !</French>
+		<German>[COLOR_UNIT_TEXT]Tiere[COLOR_REVERT] jagen ungesch&#252;tzte Siedler! Vorsicht!</German>
+		<Italian>Gli [COLOR_UNIT_TEXT]animali[COLOR_REVERT] attaccano i coloni senza scorta! Fai attenzione!</Italian>
+		<Spanish>&#161;Los [COLOR_UNIT_TEXT]Animales[COLOR_REVERT] dan caza a los colonos desprotegidos! &#161;Tened cuidado!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_ANIMALS_PEDIA</Tag>
+		<English>[H1]Animals[\H1][PARAGRAPH:2]At the start of a game of Civilization IV, predatory animals may be found roaming about the world. These animals will attack any units they encounter; unarmed settlers and workers are especially at risk. Animals can be fought and destroyed just like any other unit in the game. Animals will not appear in or move into areas within a [LINK=CONCEPT_BORDERS]National Border[\LINK]; they will gradually disappear as more and more of the world is claimed.[PARAGRAPH:2]</English>
+		<French>[H1]Animaux[\H1][PARAGRAPH:2]Au d&#233;but d'une partie de Civilization IV, des pr&#233;dateurs errent dans le monde. Ces animaux attaquent les unit&#233;s qui passent &#224; leur port&#233;e. La menace est particuli&#232;rement grande pour les unit&#233;s d&#233;sarm&#233;es comme les ouvriers ou les colons. Les animaux sauvages peuvent &#234;tre combattus et d&#233;truits comme toute autre unit&#233; du jeu. Ils n'apparaissent pas ni ne circulent dans les zones d&#233;limit&#233;es par une [LINK=CONCEPT_BORDERS]Fronti&#232;re nationale[\LINK]. Ils dispara&#238;tront progressivement au fur et &#224; mesure de l'extension des implantations humaines.[PARAGRAPH:2]</French>
+		<German>[H1]Tiere[\H1][PARAGRAPH:2]Am Anfang eines Spiels leben in Civilization IV in aller Welt Raubtiere, die Ihre Einheiten attackieren. Gef&#228;hrdet sind vor allem unbewaffnete Siedler und Bautrupps. Nat&#252;rlich k&#246;nnen auch Tiere bek&#228;mpft und vernichtet werden. Tiere wagen sich nicht in Gebiete mit [LINK=CONCEPT_BORDERS]Grenzen[\LINK]. Mit zunehmender Besiedlung der Welt sterben die Tiere langsam aus.[PARAGRAPH:2][H2]Tierarten[\H2][PARAGRAPH:2]</German>
+		<Italian>[H1]Animali[\H1][PARAGRAPH:2]In Civilization IV, all'inizio di una partita si possono trovare animali predatori in giro per il mondo. Questi animali attaccano ogni unit&#224; che incontrano: i coloni e i lavoratori disarmati corrono dei seri pericoli. Gli animali possono essere affrontati e sconfitti proprio come qualsiasi altra unit&#224; di gioco. Gli animali non appaiono o si muovono in zone all'interno dei [LINK=CONCEPT_BORDERS]confini nazionali[\LINK]; gli animali spariranno lentamente mano a mano che il mondo verr&#224; colonizzato.[PARAGRAPH:2]</Italian>
+		<Spanish>[H1]Animales[\H1][PARAGRAPH:2]Al empezar el juego Civilization IV, se pueden encontrar depredadores pululando por el mundo. Estos animales atacar&#225;n a cualquier unidad que encuentren; corren especial peligro los colonos y trabajadores que van desarmados. Se puede combatir a los animales y destruirlos como si fueran cualquier otra unidad del juego. Los animales no aparecer&#225;n tras la [LINK=CONCEPT_BORDERS]frontera de una naci&#243;n[\LINK] ni la cruzar&#225;n e ir&#225;n desapareciendo gradualmente a medida que se conquisten m&#225;s partes del mundo.[PARAGRAPH:2]</Spanish>
+	</TEXT>
+</Civ4GameText>

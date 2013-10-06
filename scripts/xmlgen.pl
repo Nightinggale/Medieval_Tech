@@ -2036,5 +2036,288 @@ close UCI;
 print ADU '</UnitArtInfos>'."\n</Civ4ArtDefines>\n";
 close ADU;
 
+# ** CIVILIZATIONS / LEADERHEADS **
+
+# open XML for writing
+open (CI, '> ../Assets/XML/Civilizations/CIV4CivilizationInfos.xml') or die "Can't write output: $!";
+#open (LI, '> ../Assets/XML/Civilizations/CIV4LeaderheadInfos.xml') or die "Can't write output: $!";
+open (ADC, '> ../Assets/XML/Art/CIV4ArtDefines_Civilization.xml') or die "Can't write output: $!";
+
+# generate XML headers
+print CI '<?xml version="1.0"?>'."\n";
+print CI '<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by EXTREME (Firaxis Games) -->'."\n";
+print CI '<!-- Sid Meier\'s Civilization 4 -->'."\n".'<!-- Copyright Firaxis Games 2005 -->'."\n".'<!-- -->'."\n".'<!-- Civilization Infos -->'."\n";
+print CI '<Civ4CivilizationInfos xmlns="x-schema:CIV4CivilizationsSchema.xml">'."\n<CivilizationInfos>\n";
+
+#print LI '<?xml version="1.0"?>'."\n";
+#print LI '<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by EXTREME (Firaxis Games) -->'."\n";
+#print LI '<!-- Sid Meier\'s Civilization 4 -->'."\n".'<!-- Copyright Firaxis Games 2005 -->'."\n".'<!-- -->'."\n".'<!-- Leader Infos and AI Settings -->'."\n";
+#print LI '<Civ4LeaderHeadInfos xmlns="x-schema:CIV4CivilizationsSchema.xml">'."\n<LeaderHeadInfos>\n";
+
+print ADC '<?xml version="1.0" encoding="UTF-8" standalone="no"?>'."\n";
+print ADC '<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->'."\n";
+print ADC '<!-- Sid Meier\'s Civilization 4 -->'."\n".'<!-- Copyright Firaxis Games 2005 -->'."\n".'<!-- -->'."\n".'<!-- Unit art path information -->'."\n";
+print ADC '<Civ4ArtDefines xmlns="x-schema:CIV4ArtDefinesSchema.xml">'."\n<CivilizationArtInfos>\n";
+
+# generate civ and LH XML
+
+sub makekingciv
+{
+	my $desc = shift;
+	my $tag1 = $desc;
+	$tag1 =~ tr/ /_/;
+	$tag1 =~ tr/[a-z]/[A-Z]/;
+	$tag = $tag1."_KING";
+	print CI "<CivilizationInfo>\n";
+	print CI "\t<Type>CIVILIZATION_".$tag."</Type>\n";
+	print CI "\t<Description>TXT_KEY_CIVILIZATION_".$tag."</Description>\n";
+	&maketext("TXT_KEY_CIVILIZATION_".$tag, $desc." Government");
+	print CI "\t<ShortDescription>TXT_KEY_CIVILIZATION_".$tag."_SHORT</ShortDescription>\n";
+	&maketext("TXT_KEY_CIVILIZATION_".$tag."_SHORT", $desc);
+	print CI "\t<Adjective>TXT_KEY_CIVILIZATION_".$tag."_ADJ</Adjective>\n";
+	&maketext("TXT_KEY_CIVILIZATION_".$tag."_ADJ", $desc);
+	my $pedia = '[COLOR_HIGHLIGHT_TEXT]'.$desc." Government[COLOR_REVERT].";
+	print CI "\t<Civilopedia>TXT_KEY_CIVILIZATION_".$tag."_PEDIA</Civilopedia>\n";
+	&maketext("TXT_KEY_CIVILIZATION_".$tag."_PEDIA", $desc);
+	print CI "\t<DefaultPlayerColor>PLAYERCOLOR_WHITE</DefaultPlayerColor>\n";
+	print CI "\t<ArtDefineTag>ART_DEF_CIVILIZATION_".$tag."</ArtDefineTag>\n";
+	print CI "\t<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>\n";
+	print CI "\t<UnitArtStyleType>UNIT_ARTSTYLE_ANGLO</UnitArtStyleType>\n";
+	print CI "\t<bPlayable>0</bPlayable>\n";
+	print CI "\t<bAIPlayable>0</bAIPlayable>\n";
+	print CI "\t<bWaterStart>0</bWaterStart>\n";
+	print CI "\t<bOpenBorders>0</bOpenBorders>\n";
+	print CI "\t<bWaterWorks>1</bWaterWorks>\n";
+	print CI "\t<bEurope>1</bEurope>\n";
+	print CI "\t<bNative>0</bNative>\n";
+	print CI "\t<iAdvancedStartPoints>0</iAdvancedStartPoints>\n";
+	print CI "\t<iAreaMultiplier>100</iAreaMultiplier>\n";
+	print CI "\t<iDensityMultiplier>100</iDensityMultiplier>\n";
+	print CI "\t<iTreasure>0</iTreasure>\n";
+	print CI "\t<FavoredTerrain>NONE</FavoredTerrain>\n";
+	print CI "\t<DefaultProfession>PROFESSION_COLONIST</DefaultProfession>\n";
+	print CI "\t<Cities>\n";
+	print CI "\t\t<City>City</City>\n";
+	print CI "\t</Cities>\n";
+	print CI "\t<Buildings/>\n";
+	print CI "\t<Units>\n";
+	print CI "\t\t<Unit>\n";
+	print CI "\t\t\t<UnitClassType>UNITCLASS_KILLBOTS</UnitClassType>\n";
+	print CI "\t\t\t<UnitType>NONE</UnitType>\n";
+	print CI "\t\t</Unit>\n";
+	print CI "\t</Units>\n";
+	print CI "\t<Professions>\n";
+	print CI "\t\t<Profession>\n";
+	print CI "\t\t\t<ProfessionType>PROFESSION_TERRORIST</ProfessionType>\n";
+	print CI "\t\t\t<bValid>0</bValid>\n";
+	print CI "\t\t</Profession>\n";
+	print CI "\t\t<Profession>\n";
+	print CI "\t\t\t<ProfessionType>PROFESSION_PIRATE</ProfessionType>\n";
+	print CI "\t\t\t<bValid>0</bValid>\n";
+	print CI "\t\t</Profession>\n";
+	print CI "\t</Professions>\n";
+	print CI "\t<Traits>\n";
+	print CI "\t\t<Trait>\n";
+	print CI "\t\t\t<TraitType>TRAIT_RESEARCH_ERA_1_MOD</TraitType>\n";
+	print CI "\t\t\t<bTrait>0</bTrait>\n";
+	print CI "\t\t</Trait>\n";
+	print CI "\t</Traits>\n";
+	print CI "\t<FreeUnitClasses>\n";
+	print CI "\t\t<FreeUnitClass>\n";
+	print CI "\t\t\t<UnitClassType>UNITCLASS_COLONIST</UnitClassType>\n";
+	print CI "\t\t\t<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>\n";
+	print CI "\t\t</FreeUnitClass>\n";
+	print CI "\t\t<FreeUnitClass>\n";
+	print CI "\t\t\t<UnitClassType>UNITCLASS_COLONIST</UnitClassType>\n";
+	print CI "\t\t\t<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>\n";
+	print CI "\t\t</FreeUnitClass>\n";
+	print CI "\t</FreeUnitClasses>\n";
+	print CI "\t<FreeBuildingClasses>\n";
+	print CI "\t\t<FreeBuildingClass>\n";
+	print CI "\t\t\t<BuildingClassType>BUILDINGCLASS_INDUSTRY1</BuildingClassType>\n";
+	print CI "\t\t\t<bFreeBuildingClass>1</bFreeBuildingClass>\n";
+	print CI "\t\t</FreeBuildingClass>\n";
+	print CI "\t</FreeBuildingClasses>\n";
+	print CI "\t<TeachUnitClasses/>\n";
+	print CI "\t<FreeYields>\n";
+	print CI "\t\t<FreeYield>\n";
+	print CI "\t\t\t<YieldType>YIELD_NUTRIENTS</YieldType>\n";
+	print CI "\t\t\t<iYield>1</iYield>\n";
+	print CI "\t\t</FreeYield>\n";
+	print CI "\t\t<FreeYield>\n";
+	print CI "\t\t\t<YieldType>YIELD_INDUSTRY</YieldType>\n";
+	print CI "\t\t\t<iYield>1</iYield>\n";
+	print CI "\t\t</FreeYield>\n";
+	print CI "\t\t<FreeYield>\n";
+	print CI "\t\t\t<YieldType>YIELD_MUNITIONS</YieldType>\n";
+	print CI "\t\t\t<iYield>1</iYield>\n";
+	print CI "\t\t</FreeYield>\n";
+	print CI "\t</FreeYields>\n";
+	print CI "\t<CapturedCityUnitClass>NONE</CapturedCityUnitClass>\n";
+	print CI "\t<InitialCivics/>\n";
+	print CI "\t<Leaders>\n";
+	print CI "\t\t<Leader>\n";
+	print CI "\t\t\t<LeaderName>LEADER_OFFA</LeaderName>\n";
+	print CI "\t\t\t<bLeaderAvailability>1</bLeaderAvailability>\n";
+	print CI "\t\t</Leader>\n";
+	print CI "\t</Leaders>\n";
+	print CI "\t<DerivativeCiv>CIVILIZATION_".$tag1."</DerivativeCiv>\n";
+	print CI "\t<CivilizationSelectionSound>AS3D_ENGLAND_SELECT</CivilizationSelectionSound>\n";
+	print CI "\t<CivilizationActionSound>AS3D_ENGLAND_ORDER</CivilizationActionSound>\n";
+	print CI "\t<FreeTechs/>\n";
+	print CI "</CivilizationInfo>\n";
+
+	print ADC "<CivilizationArtInfo>\n";
+	print ADC "\t<Type>ART_DEF_CIVILIZATION_".$tag."</Type>\n";
+	print ADC "\t<Button>Art/Interface/TeamColor/".$tag.".dds</Button>\n";
+	print ADC "\t<Path>Art/Interface/TeamColor/".$tag.".dds</Path>\n";
+	print ADC "\t<bWhiteFlag>1</bWhiteFlag>\n";
+	print ADC "\t<bInvertFlag>0</bInvertFlag>\n";
+	print ADC "\t<iFontButtonIndex>21</iFontButtonIndex>\n";
+	print ADC "</CivilizationArtInfo>\n";
+	}
+
+# 1st arg = civ description, rest = LHs
+sub makehumanciv
+{
+	my $desc = shift;
+	my $tag = $desc;
+	$tag =~ tr/ /_/;
+	$tag =~ tr/[a-z]/[A-Z]/;
+	print CI "<CivilizationInfo>\n";
+	print CI "\t<Type>CIVILIZATION_".$tag."</Type>\n";
+	print CI "\t<Description>TXT_KEY_CIVILIZATION_".$tag."</Description>\n";
+	&maketext("TXT_KEY_CIVILIZATION_".$tag, $desc." Colonies");
+	print CI "\t<ShortDescription>TXT_KEY_CIVILIZATION_".$tag."_SHORT</ShortDescription>\n";
+	&maketext("TXT_KEY_CIVILIZATION_".$tag."_SHORT", $desc);
+	print CI "\t<Adjective>TXT_KEY_CIVILIZATION_".$tag."_ADJ</Adjective>\n";
+	&maketext("TXT_KEY_CIVILIZATION_".$tag."_ADJ", $desc);
+	my $pedia = '[COLOR_HIGHLIGHT_TEXT]'.$desc."[COLOR_REVERT].";
+	print CI "\t<Civilopedia>TXT_KEY_CIVILIZATION_".$tag."_PEDIA</Civilopedia>\n";
+	&maketext("TXT_KEY_CIVILIZATION_".$tag."_PEDIA", $desc);
+	print CI "\t<DefaultPlayerColor>PLAYERCOLOR_WHITE</DefaultPlayerColor>\n";
+	print CI "\t<ArtDefineTag>ART_DEF_CIVILIZATION_".$tag."</ArtDefineTag>\n";
+	print CI "\t<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>\n";
+	print CI "\t<UnitArtStyleType>UNIT_ARTSTYLE_ANGLO</UnitArtStyleType>\n";
+	print CI "\t<bPlayable>1</bPlayable>\n";
+	print CI "\t<bAIPlayable>1</bAIPlayable>\n";
+	print CI "\t<bWaterStart>0</bWaterStart>\n";
+	print CI "\t<bOpenBorders>0</bOpenBorders>\n";
+	print CI "\t<bWaterWorks>1</bWaterWorks>\n";
+	print CI "\t<bEurope>0</bEurope>\n";
+	print CI "\t<bNative>0</bNative>\n";
+	print CI "\t<iAdvancedStartPoints>0</iAdvancedStartPoints>\n";
+	print CI "\t<iAreaMultiplier>100</iAreaMultiplier>\n";
+	print CI "\t<iDensityMultiplier>100</iDensityMultiplier>\n";
+	print CI "\t<iTreasure>0</iTreasure>\n";
+	print CI "\t<FavoredTerrain>NONE</FavoredTerrain>\n";
+	print CI "\t<DefaultProfession>PROFESSION_COLONIST</DefaultProfession>\n";
+	print CI "\t<Cities>\n";
+	print CI "\t\t<City>City</City>\n";
+	print CI "\t</Cities>\n";
+	print CI "\t<Buildings/>\n";
+	print CI "\t<Units>\n";
+	print CI "\t\t<Unit>\n";
+	print CI "\t\t\t<UnitClassType>UNITCLASS_KILLBOTS</UnitClassType>\n";
+	print CI "\t\t\t<UnitType>NONE</UnitType>\n";
+	print CI "\t\t</Unit>\n";
+	print CI "\t</Units>\n";
+	print CI "\t<Professions>\n";
+	print CI "\t\t<Profession>\n";
+	print CI "\t\t\t<ProfessionType>PROFESSION_TERRORIST</ProfessionType>\n";
+	print CI "\t\t\t<bValid>0</bValid>\n";
+	print CI "\t\t</Profession>\n";
+	print CI "\t\t<Profession>\n";
+	print CI "\t\t\t<ProfessionType>PROFESSION_PIRATE</ProfessionType>\n";
+	print CI "\t\t\t<bValid>0</bValid>\n";
+	print CI "\t\t</Profession>\n";
+	print CI "\t</Professions>\n";
+	print CI "\t<Traits>\n";
+	print CI "\t\t<Trait>\n";
+	print CI "\t\t\t<TraitType>TRAIT_RESEARCH_ERA_1_MOD</TraitType>\n";
+	print CI "\t\t\t<bTrait>0</bTrait>\n";
+	print CI "\t\t</Trait>\n";
+	print CI "\t</Traits>\n";
+	print CI "\t<FreeUnitClasses>\n";
+	print CI "\t\t<FreeUnitClass>\n";
+	print CI "\t\t\t<UnitClassType>UNITCLASS_COLONIST</UnitClassType>\n";
+	print CI "\t\t\t<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>\n";
+	print CI "\t\t</FreeUnitClass>\n";
+	print CI "\t\t<FreeUnitClass>\n";
+	print CI "\t\t\t<UnitClassType>UNITCLASS_COLONIST</UnitClassType>\n";
+	print CI "\t\t\t<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>\n";
+	print CI "\t\t</FreeUnitClass>\n";
+	print CI "\t</FreeUnitClasses>\n";
+	print CI "\t<FreeBuildingClasses>\n";
+	print CI "\t\t<FreeBuildingClass>\n";
+	print CI "\t\t\t<BuildingClassType>BUILDINGCLASS_INDUSTRY1</BuildingClassType>\n";
+	print CI "\t\t\t<bFreeBuildingClass>1</bFreeBuildingClass>\n";
+	print CI "\t\t</FreeBuildingClass>\n";
+	print CI "\t</FreeBuildingClasses>\n";
+	print CI "\t<TeachUnitClasses/>\n";
+	print CI "\t<FreeYields>\n";
+	print CI "\t\t<FreeYield>\n";
+	print CI "\t\t\t<YieldType>YIELD_NUTRIENTS</YieldType>\n";
+	print CI "\t\t\t<iYield>1</iYield>\n";
+	print CI "\t\t</FreeYield>\n";
+	print CI "\t\t<FreeYield>\n";
+	print CI "\t\t\t<YieldType>YIELD_INDUSTRY</YieldType>\n";
+	print CI "\t\t\t<iYield>1</iYield>\n";
+	print CI "\t\t</FreeYield>\n";
+	print CI "\t\t<FreeYield>\n";
+	print CI "\t\t\t<YieldType>YIELD_MEDIA</YieldType>\n";
+	print CI "\t\t\t<iYield>1</iYield>\n";
+	print CI "\t\t</FreeYield>\n";
+	print CI "\t</FreeYields>\n";
+	print CI "\t<CapturedCityUnitClass>NONE</CapturedCityUnitClass>\n";
+	print CI "\t<InitialCivics/>\n";
+	print CI "\t<Leaders>\n";
+	print CI "\t\t<Leader>\n";
+	print CI "\t\t\t<LeaderName>LEADER_OFFA</LeaderName>\n";
+	print CI "\t\t\t<bLeaderAvailability>1</bLeaderAvailability>\n";
+	print CI "\t\t</Leader>\n";
+	print CI "\t</Leaders>\n";
+	print CI "\t<DerivativeCiv>NONE</DerivativeCiv>\n";
+	print CI "\t<CivilizationSelectionSound>AS3D_ENGLAND_SELECT</CivilizationSelectionSound>\n";
+	print CI "\t<CivilizationActionSound>AS3D_ENGLAND_ORDER</CivilizationActionSound>\n";
+	print CI "\t<FreeTechs/>\n";
+	print CI "</CivilizationInfo>\n";
+
+	print ADC "<CivilizationArtInfo>\n";
+	print ADC "\t<Type>ART_DEF_CIVILIZATION_".$tag."</Type>\n";
+	print ADC "\t<Button>Art/Interface/TeamColor/".$tag.".dds</Button>\n";
+	print ADC "\t<Path>Art/Interface/TeamColor/".$tag.".dds</Path>\n";
+	print ADC "\t<bWhiteFlag>1</bWhiteFlag>\n";
+	print ADC "\t<bInvertFlag>0</bInvertFlag>\n";
+	print ADC "\t<iFontButtonIndex>21</iFontButtonIndex>\n";
+	print ADC "</CivilizationArtInfo>\n";
+
+	&makekingciv($desc);
+	}
+
+# create civs and parents
+&makehumanciv('NAFTA');
+&makehumanciv('EU');
+&makehumanciv('China');
+&makehumanciv('Russia');
+&makehumanciv('Japan');
+&makehumanciv('Caliphate');
+&makehumanciv('Consortium');
+&makehumanciv('Syndicate');
+
+# add hardcoded civs
+open (HARD, '< ../Assets/XML/Civilizations/CIV4CivilizationInfos_hardcoded.xml') or die "Can't read hardcoded civs: $!";	
+foreach (<HARD>) {print CI  $_;}
+close HARD;
+
+# close files
+print CI '</CivilizationInfos>'."\n</Civ4CivilizationInfos>\n";
+close CI;
+#print LI '</LeaderheadInfos>'."\n</Civ4LeaderheadInfos>\n";
+#close LI;
+print ADC '</CivilizationArtInfos>'."\n</Civ4ArtDefines>\n";
+close ADC;
+
+# close text
 print TEXT "</Civ4GameText>\n";
 close TEXT;

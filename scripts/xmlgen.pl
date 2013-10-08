@@ -423,8 +423,17 @@ print TI '<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Ed P
 print TI '<!-- Sid Meier\'s Civilization 4 -->'."\n".'<!-- Copyright Firaxis Games 2005 -->'."\n".'<!-- -->'."\n".'<!-- Terrain Infos -->'."\n";
 print TI '<Civ4TerrainInfos xmlns="x-schema:CIV4TerrainSchema.xml">'."\n<TerrainInfos>\n";
 
+open (ADT, '> ../Assets/XML/Art/CIV4ArtDefines_Terrain.xml') or die "Can't write terrains artdef: $!";
+print ADT '<?xml version="1.0" encoding="UTF-8" standalone="no"?>'."\n";
+print ADT '<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by EXTREME (Firaxis Games) -->'."\n";
+print ADT '<!-- Sid Meier\'s Civilization 4 -->'."\n".'<!-- Copyright Firaxis Games 2005 -->'."\n".'<!-- -->'."\n".'<!-- Terrain art path information -->'."\n";
+print ADT '<Civ4ArtDefines xmlns="x-schema:CIV4ArtDefinesSchema.xml">'."\n<TerrainArtInfos>\n";
+$landorder=1;
+$waterorder=50;
+
+
 # 1st arg = terrain name, 2nd = hash (yield=>production)
-sub maketerrain
+sub makeland
 {
 my $tag = shift;
 $href = shift;
@@ -445,7 +454,6 @@ for my $yield ( keys (%$href) ) {
 print TI "\t<Civilopedia>TXT_KEY_TERRAIN_$tag_PEDIA</Civilopedia>\n";
 &maketext("TXT_KEY_TERRAIN_".$tag."_PEDIA",$pedia);
 print TI "\t<ArtDefineTag>ART_DEF_TERRAIN_$tag</ArtDefineTag>\n";
-#print TI "\t<ArtDefineTag>ART_DEF_TERRAIN_GRASS</ArtDefineTag>\n";
 print TI "\t<Yields>\n";
 for my $yield ( keys (%$href) ) {
 	$prod = $href->{$yield};
@@ -457,18 +465,13 @@ for my $yield ( keys (%$href) ) {
 		}
 	}
 print TI "\t</Yields>\n";
-if (($tag=~ /OCEAN/) or ($tag =~ /COAST/)) {
-	print TI "\t<RiverYieldIncreases/>\n";
-	print TI "\t<bWater>1</bWater>\n";
-	} else {
-	print TI "\t<RiverYieldIncreases>\n";
-	print TI "\t\t<YieldIntegerPair>\n";
-	print TI "\t\t\t<YieldType>YIELD_NUTRIENTS</YieldType>\n";
-	print TI "\t\t\t<iValue>1</iValue>\n";
-	print TI "\t\t</YieldIntegerPair>\n";
-	print TI "\t</RiverYieldIncreases>\n";
-	print TI "\t<bWater>0</bWater>\n";
-	}
+print TI "\t<RiverYieldIncreases>\n";
+print TI "\t\t<YieldIntegerPair>\n";
+print TI "\t\t\t<YieldType>YIELD_NUTRIENTS</YieldType>\n";
+print TI "\t\t\t<iValue>1</iValue>\n";
+print TI "\t\t</YieldIntegerPair>\n";
+print TI "\t</RiverYieldIncreases>\n";
+print TI "\t<bWater>0</bWater>\n";
 print TI "\t<bImpassable>0</bImpassable>\n";
 print TI "\t<bFound>1</bFound>\n";
 print TI "\t<bFoundCoast>0</bFoundCoast>\n";
@@ -559,58 +562,352 @@ print TI "\t</FootstepSounds>\n";
 print TI "\t<WorldSoundscapeAudioScript>ASSS_GRASSLAND_SELECT_AMB</WorldSoundscapeAudioScript>\n";
 print TI "\t<bGraphicalOnly>0</bGraphicalOnly>\n";
 print TI "</TerrainInfo>\n";
+
+print ADT "<TerrainArtInfo>\n";
+print ADT "\t<Type>ART_DEF_TERRAIN_".$tag."</Type>\n";
+print ADT "\t<Path>Art/Terrain/Textures/LandBlend.dds</Path>\n";
+print ADT "\t<Grid>Art/Terrain/Textures/LandGrids.dds</Grid>\n";
+print ADT "\t<Detail>Art/Terrain/Textures/".$tag.".dds</Detail>\n";
+print ADT "\t<Button>Art/Buttons/Terrains/".$tag.".dds</Button>\n";
+print ADT "\t<LayerOrder>".$landorder."</LayerOrder>\n";
+print ADT "\t<TerrainGroup>TERRAIN_GROUP_LAND</TerrainGroup>\n";
+print ADT "\t<TextureBlend01>8,0</TextureBlend01>\n";
+print ADT "\t<TextureBlend02>1,0</TextureBlend02>\n";
+print ADT "\t<TextureBlend04>6,0</TextureBlend04>\n";
+print ADT "\t<TextureBlend08>5,0</TextureBlend08>\n";
+print ADT "\t<TextureBlend03>2,0</TextureBlend03>\n";
+print ADT "\t<TextureBlend06>10,0</TextureBlend06>\n";
+print ADT "\t<TextureBlend12>12,0</TextureBlend12>\n";
+print ADT "\t<TextureBlend09>9,0</TextureBlend09>\n";
+print ADT "\t<TextureBlend07>3,0</TextureBlend07>\n";
+print ADT "\t<TextureBlend14>14,0</TextureBlend14>\n";
+print ADT "\t<TextureBlend13>11,0</TextureBlend13>\n";
+print ADT "\t<TextureBlend11>4,0</TextureBlend11>\n";
+print ADT "\t<TextureBlend10>7,0</TextureBlend10>\n";
+print ADT "\t<TextureBlend05>13,0</TextureBlend05>\n";
+print ADT "\t<TextureBlend15>15,0 16,0 18,0 19,0 20,0 21,0 22,0 23,0 24,0 25,0 26,0 27,0 28,0 29,0 30,0 31,0 32,0</TextureBlend15>\n";
+print ADT "</TerrainArtInfo>\n";
+$landorder++;
+}
+
+# 1st arg = terrain name, 2nd = hash (yield=>production)
+sub makewater
+{
+my $tag = shift;
+$href = shift;
+my $desc = $tag;
+$desc =~ tr/_/ /;
+$desc =~ s/(\w+)/\u\L$1/g;
+print TI "<TerrainInfo>\n";
+print TI "\t<Type>TERRAIN_$tag</Type>\n";
+print TI "\t<Description>TXT_KEY_TERRAIN_$tag</Description>\n";
+&maketext("TXT_KEY_TERRAIN_$tag",$desc);
+$pedia = 'The expanses of [COLOR_HIGHLIGHT_TEXT]'.$desc.'[COLOR_REVERT] found across certain planets of the New Worlds are often rich in ';
+for my $yield ( keys (%$href) ) {
+	my $yielddesc = $yield;
+	$yielddesc =~ tr/_/ /;
+	$yielddesc =~ s/(\w+)/\u\L$1/g;
+	$pedia = $pedia.'[LINK=YIELD_'.$yield.']'.$yielddesc.'[\LINK], '; 
+	}
+print TI "\t<Civilopedia>TXT_KEY_TERRAIN_$tag_PEDIA</Civilopedia>\n";
+&maketext("TXT_KEY_TERRAIN_".$tag."_PEDIA",$pedia);
+print TI "\t<ArtDefineTag>ART_DEF_TERRAIN_$tag</ArtDefineTag>\n";
+print TI "\t<Yields>\n";
+for my $yield ( keys (%$href) ) {
+	$prod = $href->{$yield};
+	if ($prod != 0) {
+		print TI "\t\t<YieldIntegerPair>\n";
+		print TI "\t\t\t<YieldType>YIELD_".$yield."</YieldType>\n";
+		print TI "\t\t\t<iValue>".$prod."</iValue>\n";
+		print TI "\t\t</YieldIntegerPair>\n";
+		}
+	}
+print TI "\t</Yields>\n";
+print TI "\t<RiverYieldIncreases/>\n";
+print TI "\t<bWater>1</bWater>\n";
+print TI "\t<bImpassable>0</bImpassable>\n";
+print TI "\t<bFound>0</bFound>\n";
+print TI "\t<bFoundCoast>0</bFoundCoast>\n";
+print TI "\t<iMovement>1</iMovement>\n";
+print TI "\t<iSeeFrom>1</iSeeFrom>\n";
+print TI "\t<iSeeThrough>1</iSeeThrough>\n";
+print TI "\t<iBuildModifier>0</iBuildModifier>\n";
+print TI "\t<iDefense>0</iDefense>\n";
+print TI "\t<Button>Art/Interface\Buttons\WorldBuilder\Terrain_Grass.dds</Button>\n";
+print TI "\t<FootstepSounds>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>FOOTSTEP_AUDIO_HUMAN</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_FOOT_UNIT</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>FOOTSTEP_AUDIO_HUMAN_LOW</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_FOOT_UNIT_LOW</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>FOOTSTEP_AUDIO_HORSE</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_HORSE_RUN</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>LOOPSTEP_WHEELS</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_CHARIOT_LOOP</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>ENDSTEP_WHEELS</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_CHARIOT_END</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>LOOPSTEP_WHEELS_2</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_WAR_CHARIOT_LOOP</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>ENDSTEP_WHEELS_2</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_WAR_CHARIOT_END</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>LOOPSTEP_OCEAN1</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_OCEAN_LOOP1</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>ENDSTEP_OCEAN1</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_OCEAN_END1</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>LOOPSTEP_OCEAN2</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_OCEAN_LOOP1</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>ENDSTEP_OCEAN2</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_OCEAN_END2</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>LOOPSTEP_IRONCLAD</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_IRONCLAD_RUN_LOOP</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>ENDSTEP_IRONCLAD</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_IRONCLAD_RUN_END</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>LOOPSTEP_TRANSPORT</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_TRANSPORT_RUN_LOOP</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>ENDSTEP_TRANSPORT</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_TRANSPORT_RUN_END</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>LOOPSTEP_ARTILLERY</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_ARTILLERY_RUN_LOOP</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>ENDSTEP_ARTILLERY</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_ARTILLERY_RUN_END</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>LOOPSTEP_WHEELS_3</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_TREBUCHET_RUN</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>ENDSTEP_WHEELS_3</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_TREBUCHET_STOP</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t</FootstepSounds>\n";
+print TI "\t<WorldSoundscapeAudioScript>ASSS_GRASSLAND_SELECT_AMB</WorldSoundscapeAudioScript>\n";
+print TI "\t<bGraphicalOnly>0</bGraphicalOnly>\n";
+print TI "</TerrainInfo>\n";
+}
+
+sub makelandvanilla
+{
+my $tag = shift;
+$href = shift;
+my $desc = $tag;
+$desc =~ tr/_/ /;
+$desc =~ s/(\w+)/\u\L$1/g;
+print TI "<TerrainInfo>\n";
+print TI "\t<Type>TERRAIN_$tag</Type>\n";
+print TI "\t<Description>TXT_KEY_TERRAIN_$tag</Description>\n";
+&maketext("TXT_KEY_TERRAIN_$tag",$desc);
+$pedia = 'The expanses of [COLOR_HIGHLIGHT_TEXT]'.$desc.'[COLOR_REVERT] found across certain planets of the New Worlds are often rich in ';
+for my $yield ( keys (%$href) ) {
+	my $yielddesc = $yield;
+	$yielddesc =~ tr/_/ /;
+	$yielddesc =~ s/(\w+)/\u\L$1/g;
+	$pedia = $pedia.'[LINK=YIELD_'.$yield.']'.$yielddesc.'[\LINK], '; 
+	}
+print TI "\t<Civilopedia>TXT_KEY_TERRAIN_$tag_PEDIA</Civilopedia>\n";
+&maketext("TXT_KEY_TERRAIN_".$tag."_PEDIA",$pedia);
+print TI "\t<ArtDefineTag>ART_DEF_TERRAIN_$tag</ArtDefineTag>\n";
+print TI "\t<Yields>\n";
+for my $yield ( keys (%$href) ) {
+	$prod = $href->{$yield};
+	if ($prod != 0) {
+		print TI "\t\t<YieldIntegerPair>\n";
+		print TI "\t\t\t<YieldType>YIELD_".$yield."</YieldType>\n";
+		print TI "\t\t\t<iValue>".$prod."</iValue>\n";
+		print TI "\t\t</YieldIntegerPair>\n";
+		}
+	}
+print TI "\t</Yields>\n";
+print TI "\t<RiverYieldIncreases>\n";
+print TI "\t\t<YieldIntegerPair>\n";
+print TI "\t\t\t<YieldType>YIELD_NUTRIENTS</YieldType>\n";
+print TI "\t\t\t<iValue>1</iValue>\n";
+print TI "\t\t</YieldIntegerPair>\n";
+print TI "\t</RiverYieldIncreases>\n";
+print TI "\t<bWater>0</bWater>\n";
+print TI "\t<bImpassable>0</bImpassable>\n";
+print TI "\t<bFound>1</bFound>\n";
+print TI "\t<bFoundCoast>0</bFoundCoast>\n";
+print TI "\t<iMovement>1</iMovement>\n";
+print TI "\t<iSeeFrom>1</iSeeFrom>\n";
+print TI "\t<iSeeThrough>1</iSeeThrough>\n";
+print TI "\t<iBuildModifier>0</iBuildModifier>\n";
+print TI "\t<iDefense>0</iDefense>\n";
+print TI "\t<Button>Art/Interface\Buttons\WorldBuilder\Terrain_Grass.dds</Button>\n";
+print TI "\t<FootstepSounds>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>FOOTSTEP_AUDIO_HUMAN</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_FOOT_UNIT</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>FOOTSTEP_AUDIO_HUMAN_LOW</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_FOOT_UNIT_LOW</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>FOOTSTEP_AUDIO_HORSE</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_HORSE_RUN</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>LOOPSTEP_WHEELS</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_CHARIOT_LOOP</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>ENDSTEP_WHEELS</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_CHARIOT_END</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>LOOPSTEP_WHEELS_2</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_WAR_CHARIOT_LOOP</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>ENDSTEP_WHEELS_2</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_WAR_CHARIOT_END</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>LOOPSTEP_OCEAN1</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_OCEAN_LOOP1</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>ENDSTEP_OCEAN1</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_OCEAN_END1</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>LOOPSTEP_OCEAN2</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_OCEAN_LOOP1</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>ENDSTEP_OCEAN2</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_OCEAN_END2</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>LOOPSTEP_IRONCLAD</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_IRONCLAD_RUN_LOOP</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>ENDSTEP_IRONCLAD</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_IRONCLAD_RUN_END</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>LOOPSTEP_TRANSPORT</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_TRANSPORT_RUN_LOOP</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>ENDSTEP_TRANSPORT</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_TRANSPORT_RUN_END</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>LOOPSTEP_ARTILLERY</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_ARTILLERY_RUN_LOOP</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>ENDSTEP_ARTILLERY</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_ARTILLERY_RUN_END</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>LOOPSTEP_WHEELS_3</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_TREBUCHET_RUN</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t\t<FootstepSound>\n";
+print TI "\t\t\t<FootstepAudioType>ENDSTEP_WHEELS_3</FootstepAudioType>\n";
+print TI "\t\t\t<FootstepAudioScript>AS3D_UN_TREBUCHET_STOP</FootstepAudioScript>\n";
+print TI "\t\t</FootstepSound>\n";
+print TI "\t</FootstepSounds>\n";
+print TI "\t<WorldSoundscapeAudioScript>ASSS_GRASSLAND_SELECT_AMB</WorldSoundscapeAudioScript>\n";
+print TI "\t<bGraphicalOnly>0</bGraphicalOnly>\n";
+print TI "</TerrainInfo>\n";
+$landorder++;
 }
 
 # make terrains
-&maketerrain('GRASS',{'NUTRIENTS'=>3,'BIOPOLYMERS'=>1});
-&maketerrain('PLAINS',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2});
-&maketerrain('DESERT',{'SILICATES'=>3,'ACTINIDES'=>2});
-&maketerrain('MARSH',{'NUTRIENTS'=>2,'OPIATES'=>2});
-&maketerrain('TUNDRA',{'NUTRIENTS'=>1,'DATACORES'=>2});
-&maketerrain('COAST',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2});
-&maketerrain('OCEAN',{'NUTRIENTS'=>1});
+&makeland('GRASS',{'NUTRIENTS'=>3,'BIOPOLYMERS'=>1});
+&makelandvanilla('PLAINS',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2});
+&makelandvanilla('DESERT',{'SILICATES'=>3,'ACTINIDES'=>2});
+&makelandvanilla('MARSH',{'NUTRIENTS'=>2,'OPIATES'=>2});
+&makelandvanilla('TUNDRA',{'NUTRIENTS'=>1,'DATACORES'=>2});
+&makewater('COAST',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2});
+&makewater('OCEAN',{'NUTRIENTS'=>1});
 
 #Aquatic Planet
-# &maketerrain('LOAM',{'NUTRIENTS'=>3,'MICROBES'=>1});
-# &maketerrain('SILT_BEDS',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2});
-# &maketerrain('DIATOMACEOUS',{'SILICATES'=>3,'ACTINIDES'=>2});
-# &maketerrain('WETLANDS',{'NUTRIENTS'=>2,'OPIATES'=>2});
-# &maketerrain('GLACIAL',{'NUTRIENTS'=>1,'DATACORES'=>2});
-# &maketerrain('PELAGIC_COAST',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2});
-# &maketerrain('ABYSSAL_OCEAN',{'NUTRIENTS'=>1});
+# &makeland('LOAM',{'NUTRIENTS'=>3,'MICROBES'=>1});
+# &makeland('SILT_BEDS',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2});
+# &makeland('DIATOMACEOUS',{'SILICATES'=>3,'ACTINIDES'=>2});
+# &makeland('WETLANDS',{'NUTRIENTS'=>2,'OPIATES'=>2});
+# &makeland('GLACIAL',{'NUTRIENTS'=>1,'DATACORES'=>2});
+# &makewater('PELAGIC_COAST',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2});
+# &makewater('ABYSSAL_OCEAN',{'NUTRIENTS'=>1});
 
 #Arid Planet
-# &maketerrain('STEPPE',{'NUTRIENTS'=>3,'SILICATES'=>1});
-# &maketerrain('BADLANDS',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2});
-# &maketerrain('DUNES',{'SILICATES'=>3,'ACTINIDES'=>2});
-# &maketerrain('SALT_FLATS',{'NUTRIENTS'=>2,'OPIATES'=>2});
-# &maketerrain('SCRUBLAND',{'NUTRIENTS'=>1,'DATACORES'=>2});
-# &maketerrain('ALKALI_COAST',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2});
-# &maketerrain('ALKALI_OCEAN',{'NUTRIENTS'=>1});
+# &makeland('STEPPE',{'NUTRIENTS'=>3,'SILICATES'=>1});
+# &makeland('BADLANDS',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2});
+# &makeland('DUNES',{'SILICATES'=>3,'ACTINIDES'=>2});
+# &makeland('SALT_FLATS',{'NUTRIENTS'=>2,'OPIATES'=>2});
+# &makeland('SCRUBLAND',{'NUTRIENTS'=>1,'DATACORES'=>2});
+# &makewater('ALKALI_COAST',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2});
+# &makewater('ALKALI_OCEAN',{'NUTRIENTS'=>1});
 
 #Volcanic Planet
-# &maketerrain('VOLCANIC_SOIL',{'NUTRIENTS'=>3,'PRECIOUS_METALS'=>1});
-# &maketerrain('BATHOLITH',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2});
-# &maketerrain('REGOLITH',{'SILICATES'=>3,'ACTINIDES'=>2});
-# &maketerrain('ASH',{'NUTRIENTS'=>2,'OPIATES'=>2});
-# &maketerrain('FELSIC_ROCK',{'NUTRIENTS'=>1,'DATACORES'=>2});
-# &maketerrain('PYROCLASTIC',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2});
-# &maketerrain('MAGMA',{'NUTRIENTS'=>1});
+# &makeland('VOLCANIC_SOIL',{'NUTRIENTS'=>3,'PRECIOUS_METALS'=>1});
+# &makeland('BATHOLITH',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2});
+# &makeland('REGOLITH',{'SILICATES'=>3,'ACTINIDES'=>2});
+# &makeland('ASH',{'NUTRIENTS'=>2,'OPIATES'=>2});
+# &makeland('FELSIC_ROCK',{'NUTRIENTS'=>1,'DATACORES'=>2});
+# &makeland('PYROCLASTIC',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2});
+# &makeland('MAGMA',{'NUTRIENTS'=>1});
 
 #Arctic Planet
-# &maketerrain('ALPINE',{'NUTRIENTS'=>3,'CRYSTALLOIDS'=>1});
-# &maketerrain('HEATH',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2});
-# &maketerrain('LIMESTONE',{'SILICATES'=>3,'ACTINIDES'=>2});
-# &maketerrain('BOG',{'NUTRIENTS'=>2,'OPIATES'=>2});
-# &maketerrain('ARCTIC',{'NUTRIENTS'=>1,'DATACORES'=>2});
-# &maketerrain('BRACKISH_COAST',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2});
-# &maketerrain('BRACKISH_OCEAN',{'NUTRIENTS'=>1});
+# &makeland('ALPINE',{'NUTRIENTS'=>3,'CRYSTALLOIDS'=>1});
+# &makeland('HEATH',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2});
+# &makeland('LIMESTONE',{'SILICATES'=>3,'ACTINIDES'=>2});
+# &makeland('BOG',{'NUTRIENTS'=>2,'OPIATES'=>2});
+# &makeland('ARCTIC',{'NUTRIENTS'=>1,'DATACORES'=>2});
+# &makewater('BRACKISH_COAST',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2});
+# &makewater('BRACKISH_OCEAN',{'NUTRIENTS'=>1});
 
-&maketerrain('SNOW',{''});
-&maketerrain('PEAK',{''});
-&maketerrain('HILL',{''});
+&makelandvanilla('SNOW',{''});
+&makelandvanilla('PEAK',{''});
+&makelandvanilla('HILL',{''});
+
+# add vanilla terrain textures
+open (HARD, '< ../Assets/XML/Art/CIV4ArtDefines_Terrain_vanilla.xml') or die "Can't read vanilla terrains: $!";	
+foreach (<HARD>) {print ADT  $_;}
+close HARD;
+
 print TI "</TerrainInfos>\n</Civ4TerrainInfos>\n";
 close TI;
+
+print ADT "</TerrainArtInfos>\n</Civ4ArtDefines>\n";
+close ADT;
 
 # ** FEATURES **
 open (FI, '> ../Assets/XML/Terrain/CIV4FeatureInfos.xml') or die "Can't write features: $!";

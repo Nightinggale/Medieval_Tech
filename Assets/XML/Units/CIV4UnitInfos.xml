@@ -85,7 +85,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -103,7 +103,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -128,15 +128,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -406,7 +406,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -424,7 +424,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -449,15 +449,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -727,7 +727,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -745,7 +745,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -778,15 +778,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -1056,7 +1056,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -1074,7 +1074,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -1111,15 +1111,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -1389,7 +1389,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -1407,7 +1407,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -1444,15 +1444,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -1722,7 +1722,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -1740,7 +1740,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -1777,15 +1777,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -2055,7 +2055,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -2073,7 +2073,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -2110,15 +2110,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -2388,7 +2388,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -2406,7 +2406,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -2439,15 +2439,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -2717,7 +2717,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -2735,7 +2735,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -2760,15 +2760,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -3038,7 +3038,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -3056,7 +3056,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -3081,15 +3081,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -3359,7 +3359,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -3377,7 +3377,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -3406,15 +3406,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -3684,7 +3684,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -3702,7 +3702,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -3735,15 +3735,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -4013,7 +4013,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -4031,7 +4031,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -4064,15 +4064,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -4342,7 +4342,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -4360,7 +4360,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -4393,15 +4393,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -4671,7 +4671,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -4689,7 +4689,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -4722,15 +4722,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -5000,7 +5000,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -5018,7 +5018,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -5051,15 +5051,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -5329,7 +5329,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -5347,7 +5347,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -5380,15 +5380,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -5658,7 +5658,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -5676,7 +5676,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -5709,15 +5709,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -5987,7 +5987,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -6005,7 +6005,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -6038,15 +6038,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -6316,7 +6316,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -6334,7 +6334,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -6367,15 +6367,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -6645,7 +6645,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -6663,7 +6663,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -6688,15 +6688,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -6966,7 +6966,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -6984,7 +6984,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -7009,15 +7009,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -7287,7 +7287,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -7305,7 +7305,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -7330,15 +7330,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -7608,7 +7608,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -7626,7 +7626,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -7651,15 +7651,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -7929,7 +7929,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -7947,7 +7947,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -7972,15 +7972,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -8250,7 +8250,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -8268,7 +8268,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -8293,15 +8293,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -8571,7 +8571,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -8589,7 +8589,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -8614,15 +8614,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -8892,7 +8892,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -8910,7 +8910,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -8935,15 +8935,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -9213,7 +9213,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -9231,7 +9231,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -9256,15 +9256,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -9534,7 +9534,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -9552,7 +9552,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -9572,15 +9572,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -9850,7 +9850,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -9868,7 +9868,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -9888,15 +9888,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -10166,7 +10166,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -10184,7 +10184,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -10209,15 +10209,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -10487,7 +10487,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -10505,7 +10505,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -10525,15 +10525,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -10803,7 +10803,7 @@
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts/>
 	<iHurryCostModifier>0</iHurryCostModifier>
 	<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -10821,7 +10821,7 @@
 	<TerrainImpassables/>
 	<FeatureImpassables/>
 	<EvasionBuildings/>
-	<iCombat>1</iCombat>
+	<iCombat>0</iCombat>
 	<iXPValueAttack>4</iXPValueAttack>
 	<iXPValueDefense>2</iXPValueDefense>
 	<iWithdrawalProb>0</iWithdrawalProb>
@@ -10841,15 +10841,15 @@
 	<YieldChanges/>
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
 	<iCargo>0</iCargo>
 	<iRequiredTransportSize>1</iRequiredTransportSize>
 	<iAsset>100</iAsset>
-	<iPower>5</iPower>
-	<iNativeLearnTime>-1</iNativeLearnTime>
+	<iPower>0</iPower>
+	<iNativeLearnTime>3</iNativeLearnTime>
 	<iStudentWeight>1000</iStudentWeight>
 	<iTeacherWeight>0</iTeacherWeight>
 	<ProfessionMeshGroups>
@@ -16759,7 +16759,7 @@
 		</PrereqOrBuilding>
 	</PrereqOrBuildings>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -16773,7 +16773,7 @@
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
-	<iMinAreaSize>-1</iMinAreaSize>
+	<iMinAreaSize>20</iMinAreaSize>
 	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
@@ -16806,8 +16806,8 @@
 	<YieldModifiers/>
 	<YieldChanges/>
 	<BonusYieldChanges/>
-	<bLandYieldChanges>0</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bLandYieldChanges>1</bLandYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>DOMAIN_LAND</DomainCargo>
@@ -16896,7 +16896,7 @@
 		</PrereqOrBuilding>
 	</PrereqOrBuildings>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -16910,7 +16910,7 @@
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
-	<iMinAreaSize>-1</iMinAreaSize>
+	<iMinAreaSize>20</iMinAreaSize>
 	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
@@ -16943,8 +16943,8 @@
 	<YieldModifiers/>
 	<YieldChanges/>
 	<BonusYieldChanges/>
-	<bLandYieldChanges>0</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bLandYieldChanges>1</bLandYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>DOMAIN_LAND</DomainCargo>
@@ -17033,7 +17033,7 @@
 		</PrereqOrBuilding>
 	</PrereqOrBuildings>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -17047,7 +17047,7 @@
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
-	<iMinAreaSize>-1</iMinAreaSize>
+	<iMinAreaSize>20</iMinAreaSize>
 	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
@@ -17080,8 +17080,8 @@
 	<YieldModifiers/>
 	<YieldChanges/>
 	<BonusYieldChanges/>
-	<bLandYieldChanges>0</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bLandYieldChanges>1</bLandYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>DOMAIN_LAND</DomainCargo>
@@ -17170,7 +17170,7 @@
 		</PrereqOrBuilding>
 	</PrereqOrBuildings>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -17184,7 +17184,7 @@
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
-	<iMinAreaSize>-1</iMinAreaSize>
+	<iMinAreaSize>20</iMinAreaSize>
 	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
@@ -17217,8 +17217,8 @@
 	<YieldModifiers/>
 	<YieldChanges/>
 	<BonusYieldChanges/>
-	<bLandYieldChanges>0</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bLandYieldChanges>1</bLandYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>DOMAIN_LAND</DomainCargo>
@@ -17307,7 +17307,7 @@
 		</PrereqOrBuilding>
 	</PrereqOrBuildings>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -17321,7 +17321,7 @@
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
-	<iMinAreaSize>-1</iMinAreaSize>
+	<iMinAreaSize>20</iMinAreaSize>
 	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
@@ -17354,8 +17354,8 @@
 	<YieldModifiers/>
 	<YieldChanges/>
 	<BonusYieldChanges/>
-	<bLandYieldChanges>0</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bLandYieldChanges>1</bLandYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>DOMAIN_LAND</DomainCargo>
@@ -17444,7 +17444,7 @@
 		</PrereqOrBuilding>
 	</PrereqOrBuildings>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -17458,7 +17458,7 @@
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
-	<iMinAreaSize>-1</iMinAreaSize>
+	<iMinAreaSize>20</iMinAreaSize>
 	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
@@ -17491,8 +17491,8 @@
 	<YieldModifiers/>
 	<YieldChanges/>
 	<BonusYieldChanges/>
-	<bLandYieldChanges>0</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bLandYieldChanges>1</bLandYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>DOMAIN_LAND</DomainCargo>
@@ -17581,7 +17581,7 @@
 		</PrereqOrBuilding>
 	</PrereqOrBuildings>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -17595,7 +17595,7 @@
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
-	<iMinAreaSize>-1</iMinAreaSize>
+	<iMinAreaSize>20</iMinAreaSize>
 	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
@@ -17628,8 +17628,8 @@
 	<YieldModifiers/>
 	<YieldChanges/>
 	<BonusYieldChanges/>
-	<bLandYieldChanges>0</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bLandYieldChanges>1</bLandYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>DOMAIN_LAND</DomainCargo>
@@ -17718,7 +17718,7 @@
 		</PrereqOrBuilding>
 	</PrereqOrBuildings>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -17732,7 +17732,7 @@
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
-	<iMinAreaSize>-1</iMinAreaSize>
+	<iMinAreaSize>20</iMinAreaSize>
 	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
@@ -17765,8 +17765,8 @@
 	<YieldModifiers/>
 	<YieldChanges/>
 	<BonusYieldChanges/>
-	<bLandYieldChanges>0</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bLandYieldChanges>1</bLandYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>DOMAIN_LAND</DomainCargo>
@@ -17855,7 +17855,7 @@
 		</PrereqOrBuilding>
 	</PrereqOrBuildings>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -17869,7 +17869,7 @@
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
-	<iMinAreaSize>-1</iMinAreaSize>
+	<iMinAreaSize>20</iMinAreaSize>
 	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
@@ -17902,8 +17902,8 @@
 	<YieldModifiers/>
 	<YieldChanges/>
 	<BonusYieldChanges/>
-	<bLandYieldChanges>0</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bLandYieldChanges>1</bLandYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>DOMAIN_LAND</DomainCargo>
@@ -17992,7 +17992,7 @@
 		</PrereqOrBuilding>
 	</PrereqOrBuildings>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -18006,7 +18006,7 @@
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
-	<iMinAreaSize>-1</iMinAreaSize>
+	<iMinAreaSize>20</iMinAreaSize>
 	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
@@ -18039,8 +18039,8 @@
 	<YieldModifiers/>
 	<YieldChanges/>
 	<BonusYieldChanges/>
-	<bLandYieldChanges>0</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bLandYieldChanges>1</bLandYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>DOMAIN_LAND</DomainCargo>
@@ -18129,7 +18129,7 @@
 		</PrereqOrBuilding>
 	</PrereqOrBuildings>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -18143,7 +18143,7 @@
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
-	<iMinAreaSize>-1</iMinAreaSize>
+	<iMinAreaSize>20</iMinAreaSize>
 	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
@@ -18176,8 +18176,8 @@
 	<YieldModifiers/>
 	<YieldChanges/>
 	<BonusYieldChanges/>
-	<bLandYieldChanges>0</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bLandYieldChanges>1</bLandYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>DOMAIN_LAND</DomainCargo>
@@ -18266,7 +18266,7 @@
 		</PrereqOrBuilding>
 	</PrereqOrBuildings>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -18280,7 +18280,7 @@
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
-	<iMinAreaSize>-1</iMinAreaSize>
+	<iMinAreaSize>20</iMinAreaSize>
 	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
@@ -18313,8 +18313,8 @@
 	<YieldModifiers/>
 	<YieldChanges/>
 	<BonusYieldChanges/>
-	<bLandYieldChanges>0</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bLandYieldChanges>1</bLandYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>DOMAIN_LAND</DomainCargo>
@@ -18403,7 +18403,7 @@
 		</PrereqOrBuilding>
 	</PrereqOrBuildings>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -18417,7 +18417,7 @@
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
-	<iMinAreaSize>-1</iMinAreaSize>
+	<iMinAreaSize>20</iMinAreaSize>
 	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
@@ -18450,8 +18450,8 @@
 	<YieldModifiers/>
 	<YieldChanges/>
 	<BonusYieldChanges/>
-	<bLandYieldChanges>0</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bLandYieldChanges>1</bLandYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>DOMAIN_LAND</DomainCargo>
@@ -18540,7 +18540,7 @@
 		</PrereqOrBuilding>
 	</PrereqOrBuildings>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -18554,7 +18554,7 @@
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
-	<iMinAreaSize>-1</iMinAreaSize>
+	<iMinAreaSize>20</iMinAreaSize>
 	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
@@ -18587,8 +18587,8 @@
 	<YieldModifiers/>
 	<YieldChanges/>
 	<BonusYieldChanges/>
-	<bLandYieldChanges>0</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bLandYieldChanges>1</bLandYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>DOMAIN_LAND</DomainCargo>
@@ -18677,7 +18677,7 @@
 		</PrereqOrBuilding>
 	</PrereqOrBuildings>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -18691,7 +18691,7 @@
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
-	<iMinAreaSize>-1</iMinAreaSize>
+	<iMinAreaSize>20</iMinAreaSize>
 	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
@@ -18724,8 +18724,8 @@
 	<YieldModifiers/>
 	<YieldChanges/>
 	<BonusYieldChanges/>
-	<bLandYieldChanges>0</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bLandYieldChanges>1</bLandYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>DOMAIN_LAND</DomainCargo>
@@ -18814,7 +18814,7 @@
 		</PrereqOrBuilding>
 	</PrereqOrBuildings>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -18828,7 +18828,7 @@
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
-	<iMinAreaSize>-1</iMinAreaSize>
+	<iMinAreaSize>20</iMinAreaSize>
 	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
@@ -18861,8 +18861,8 @@
 	<YieldModifiers/>
 	<YieldChanges/>
 	<BonusYieldChanges/>
-	<bLandYieldChanges>0</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bLandYieldChanges>1</bLandYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>DOMAIN_LAND</DomainCargo>
@@ -18951,7 +18951,7 @@
 		</PrereqOrBuilding>
 	</PrereqOrBuildings>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -18965,7 +18965,7 @@
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
-	<iMinAreaSize>-1</iMinAreaSize>
+	<iMinAreaSize>20</iMinAreaSize>
 	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
@@ -18998,8 +18998,8 @@
 	<YieldModifiers/>
 	<YieldChanges/>
 	<BonusYieldChanges/>
-	<bLandYieldChanges>0</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bLandYieldChanges>1</bLandYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>DOMAIN_LAND</DomainCargo>
@@ -19088,7 +19088,7 @@
 		</PrereqOrBuilding>
 	</PrereqOrBuildings>
 	<ProductionTraits/>
-	<iAIWeight>10</iAIWeight>
+	<iAIWeight>0</iAIWeight>
 	<YieldCosts>
 		<YieldCost>
 			<YieldType>YIELD_INDUSTRY</YieldType>
@@ -19102,7 +19102,7 @@
 	<iEuropeCostIncrease>500</iEuropeCostIncrease>
 	<iImmigrationWeight>0</iImmigrationWeight>
 	<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
-	<iMinAreaSize>-1</iMinAreaSize>
+	<iMinAreaSize>20</iMinAreaSize>
 	<iMoves>3</iMoves>
 	<bCapturesCargo>0</bCapturesCargo>
 	<iWorkRate>0</iWorkRate>
@@ -19135,8 +19135,8 @@
 	<YieldModifiers/>
 	<YieldChanges/>
 	<BonusYieldChanges/>
-	<bLandYieldChanges>0</bLandYieldChanges>
-	<bWaterYieldChanges>0</bWaterYieldChanges>
+	<bLandYieldChanges>1</bLandYieldChanges>
+	<bWaterYieldChanges>1</bWaterYieldChanges>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>DOMAIN_LAND</DomainCargo>

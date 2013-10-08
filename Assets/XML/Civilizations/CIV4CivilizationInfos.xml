@@ -57,16 +57,16 @@
 	</Traits>
 	<FreeUnitClasses>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
-		</FreeUnitClass>
-		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
-		</FreeUnitClass>
-		<FreeUnitClass>
 			<UnitClassType>UNITCLASS_CORVETTE</UnitClassType>
 			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
 		</FreeUnitClass>
 	</FreeUnitClasses>
 	<FreeBuildingClasses>
@@ -247,16 +247,16 @@
 	</Traits>
 	<FreeUnitClasses>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
-		</FreeUnitClass>
-		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
-		</FreeUnitClass>
-		<FreeUnitClass>
 			<UnitClassType>UNITCLASS_CORVETTE</UnitClassType>
 			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
 		</FreeUnitClass>
 	</FreeUnitClasses>
 	<FreeBuildingClasses>
@@ -437,16 +437,16 @@
 	</Traits>
 	<FreeUnitClasses>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
-		</FreeUnitClass>
-		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
-		</FreeUnitClass>
-		<FreeUnitClass>
 			<UnitClassType>UNITCLASS_CORVETTE</UnitClassType>
 			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
 		</FreeUnitClass>
 	</FreeUnitClasses>
 	<FreeBuildingClasses>
@@ -627,16 +627,16 @@
 	</Traits>
 	<FreeUnitClasses>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
-		</FreeUnitClass>
-		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
-		</FreeUnitClass>
-		<FreeUnitClass>
 			<UnitClassType>UNITCLASS_CORVETTE</UnitClassType>
 			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
 		</FreeUnitClass>
 	</FreeUnitClasses>
 	<FreeBuildingClasses>
@@ -817,16 +817,16 @@
 	</Traits>
 	<FreeUnitClasses>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
-		</FreeUnitClass>
-		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
-		</FreeUnitClass>
-		<FreeUnitClass>
 			<UnitClassType>UNITCLASS_CORVETTE</UnitClassType>
 			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
 		</FreeUnitClass>
 	</FreeUnitClasses>
 	<FreeBuildingClasses>
@@ -1007,16 +1007,16 @@
 	</Traits>
 	<FreeUnitClasses>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
-		</FreeUnitClass>
-		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
-		</FreeUnitClass>
-		<FreeUnitClass>
 			<UnitClassType>UNITCLASS_CORVETTE</UnitClassType>
 			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
 		</FreeUnitClass>
 	</FreeUnitClasses>
 	<FreeBuildingClasses>
@@ -1197,16 +1197,16 @@
 	</Traits>
 	<FreeUnitClasses>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
-		</FreeUnitClass>
-		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
-		</FreeUnitClass>
-		<FreeUnitClass>
 			<UnitClassType>UNITCLASS_CORVETTE</UnitClassType>
 			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
 		</FreeUnitClass>
 	</FreeUnitClasses>
 	<FreeBuildingClasses>
@@ -1387,16 +1387,16 @@
 	</Traits>
 	<FreeUnitClasses>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
-		</FreeUnitClass>
-		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
-		</FreeUnitClass>
-		<FreeUnitClass>
 			<UnitClassType>UNITCLASS_CORVETTE</UnitClassType>
 			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
 		</FreeUnitClass>
 	</FreeUnitClasses>
 	<FreeBuildingClasses>

@@ -31,6 +31,126 @@
 	<TextureBlend15>15,0 16,0 18,0 19,0 20,0 21,0 22,0 23,0 24,0 25,0 26,0 27,0 28,0 29,0 30,0 31,0 32,0</TextureBlend15>
 </TerrainArtInfo>
 <TerrainArtInfo>
+	<Type>ART_DEF_TERRAIN_AQUATIC_FERTILE</Type>
+	<Path>Art/Terrain/Textures/LandBlend.dds</Path>
+	<Grid>Art/Terrain/Textures/LandGrids.dds</Grid>
+	<Detail>Art/Terrain/Textures/AQUATIC_FERTILE.dds</Detail>
+	<Button>Art/Buttons/Terrains/AQUATIC_FERTILE.dds</Button>
+	<LayerOrder>6</LayerOrder>
+	<TerrainGroup>TERRAIN_GROUP_LAND</TerrainGroup>
+	<TextureBlend01>8,0</TextureBlend01>
+	<TextureBlend02>1,0</TextureBlend02>
+	<TextureBlend04>6,0</TextureBlend04>
+	<TextureBlend08>5,0</TextureBlend08>
+	<TextureBlend03>2,0</TextureBlend03>
+	<TextureBlend06>10,0</TextureBlend06>
+	<TextureBlend12>12,0</TextureBlend12>
+	<TextureBlend09>9,0</TextureBlend09>
+	<TextureBlend07>3,0</TextureBlend07>
+	<TextureBlend14>14,0</TextureBlend14>
+	<TextureBlend13>11,0</TextureBlend13>
+	<TextureBlend11>4,0</TextureBlend11>
+	<TextureBlend10>7,0</TextureBlend10>
+	<TextureBlend05>13,0</TextureBlend05>
+	<TextureBlend15>15,0 16,0 18,0 19,0 20,0 21,0 22,0 23,0 24,0 25,0 26,0 27,0 28,0 29,0 30,0 31,0 32,0</TextureBlend15>
+</TerrainArtInfo>
+<TerrainArtInfo>
+	<Type>ART_DEF_TERRAIN_AQUATIC_DRY</Type>
+	<Path>Art/Terrain/Textures/LandBlend.dds</Path>
+	<Grid>Art/Terrain/Textures/LandGrids.dds</Grid>
+	<Detail>Art/Terrain/Textures/AQUATIC_DRY.dds</Detail>
+	<Button>Art/Buttons/Terrains/AQUATIC_DRY.dds</Button>
+	<LayerOrder>7</LayerOrder>
+	<TerrainGroup>TERRAIN_GROUP_LAND</TerrainGroup>
+	<TextureBlend01>8,0</TextureBlend01>
+	<TextureBlend02>1,0</TextureBlend02>
+	<TextureBlend04>6,0</TextureBlend04>
+	<TextureBlend08>5,0</TextureBlend08>
+	<TextureBlend03>2,0</TextureBlend03>
+	<TextureBlend06>10,0</TextureBlend06>
+	<TextureBlend12>12,0</TextureBlend12>
+	<TextureBlend09>9,0</TextureBlend09>
+	<TextureBlend07>3,0</TextureBlend07>
+	<TextureBlend14>14,0</TextureBlend14>
+	<TextureBlend13>11,0</TextureBlend13>
+	<TextureBlend11>4,0</TextureBlend11>
+	<TextureBlend10>7,0</TextureBlend10>
+	<TextureBlend05>13,0</TextureBlend05>
+	<TextureBlend15>15,0 16,0 18,0 19,0 20,0 21,0 22,0 23,0 24,0 25,0 26,0 27,0 28,0 29,0 30,0 31,0 32,0</TextureBlend15>
+</TerrainArtInfo>
+<TerrainArtInfo>
+	<Type>ART_DEF_TERRAIN_AQUATIC_HOT</Type>
+	<Path>Art/Terrain/Textures/LandBlend.dds</Path>
+	<Grid>Art/Terrain/Textures/LandGrids.dds</Grid>
+	<Detail>Art/Terrain/Textures/AQUATIC_HOT.dds</Detail>
+	<Button>Art/Buttons/Terrains/AQUATIC_HOT.dds</Button>
+	<LayerOrder>8</LayerOrder>
+	<TerrainGroup>TERRAIN_GROUP_LAND</TerrainGroup>
+	<TextureBlend01>8,0</TextureBlend01>
+	<TextureBlend02>1,0</TextureBlend02>
+	<TextureBlend04>6,0</TextureBlend04>
+	<TextureBlend08>5,0</TextureBlend08>
+	<TextureBlend03>2,0</TextureBlend03>
+	<TextureBlend06>10,0</TextureBlend06>
+	<TextureBlend12>12,0</TextureBlend12>
+	<TextureBlend09>9,0</TextureBlend09>
+	<TextureBlend07>3,0</TextureBlend07>
+	<TextureBlend14>14,0</TextureBlend14>
+	<TextureBlend13>11,0</TextureBlend13>
+	<TextureBlend11>4,0</TextureBlend11>
+	<TextureBlend10>7,0</TextureBlend10>
+	<TextureBlend05>13,0</TextureBlend05>
+	<TextureBlend15>15,0 16,0 18,0 19,0 20,0 21,0 22,0 23,0 24,0 25,0 26,0 27,0 28,0 29,0 30,0 31,0 32,0</TextureBlend15>
+</TerrainArtInfo>
+<TerrainArtInfo>
+	<Type>ART_DEF_TERRAIN_AQUATIC_WET</Type>
+	<Path>Art/Terrain/Textures/LandBlend.dds</Path>
+	<Grid>Art/Terrain/Textures/LandGrids.dds</Grid>
+	<Detail>Art/Terrain/Textures/AQUATIC_WET.dds</Detail>
+	<Button>Art/Buttons/Terrains/AQUATIC_WET.dds</Button>
+	<LayerOrder>9</LayerOrder>
+	<TerrainGroup>TERRAIN_GROUP_LAND</TerrainGroup>
+	<TextureBlend01>8,0</TextureBlend01>
+	<TextureBlend02>1,0</TextureBlend02>
+	<TextureBlend04>6,0</TextureBlend04>
+	<TextureBlend08>5,0</TextureBlend08>
+	<TextureBlend03>2,0</TextureBlend03>
+	<TextureBlend06>10,0</TextureBlend06>
+	<TextureBlend12>12,0</TextureBlend12>
+	<TextureBlend09>9,0</TextureBlend09>
+	<TextureBlend07>3,0</TextureBlend07>
+	<TextureBlend14>14,0</TextureBlend14>
+	<TextureBlend13>11,0</TextureBlend13>
+	<TextureBlend11>4,0</TextureBlend11>
+	<TextureBlend10>7,0</TextureBlend10>
+	<TextureBlend05>13,0</TextureBlend05>
+	<TextureBlend15>15,0 16,0 18,0 19,0 20,0 21,0 22,0 23,0 24,0 25,0 26,0 27,0 28,0 29,0 30,0 31,0 32,0</TextureBlend15>
+</TerrainArtInfo>
+<TerrainArtInfo>
+	<Type>ART_DEF_TERRAIN_AQUATIC_COLD</Type>
+	<Path>Art/Terrain/Textures/LandBlend.dds</Path>
+	<Grid>Art/Terrain/Textures/LandGrids.dds</Grid>
+	<Detail>Art/Terrain/Textures/AQUATIC_COLD.dds</Detail>
+	<Button>Art/Buttons/Terrains/AQUATIC_COLD.dds</Button>
+	<LayerOrder>10</LayerOrder>
+	<TerrainGroup>TERRAIN_GROUP_LAND</TerrainGroup>
+	<TextureBlend01>8,0</TextureBlend01>
+	<TextureBlend02>1,0</TextureBlend02>
+	<TextureBlend04>6,0</TextureBlend04>
+	<TextureBlend08>5,0</TextureBlend08>
+	<TextureBlend03>2,0</TextureBlend03>
+	<TextureBlend06>10,0</TextureBlend06>
+	<TextureBlend12>12,0</TextureBlend12>
+	<TextureBlend09>9,0</TextureBlend09>
+	<TextureBlend07>3,0</TextureBlend07>
+	<TextureBlend14>14,0</TextureBlend14>
+	<TextureBlend13>11,0</TextureBlend13>
+	<TextureBlend11>4,0</TextureBlend11>
+	<TextureBlend10>7,0</TextureBlend10>
+	<TextureBlend05>13,0</TextureBlend05>
+	<TextureBlend15>15,0 16,0 18,0 19,0 20,0 21,0 22,0 23,0 24,0 25,0 26,0 27,0 28,0 29,0 30,0 31,0 32,0</TextureBlend15>
+</TerrainArtInfo>
+<TerrainArtInfo>
 	<Type>ART_DEF_TERRAIN_PLAINS</Type>
 	<Path>Art/Terrain/Textures/PlainsBlend.dds</Path>
 	<Grid>Art/Terrain/Textures/PlainsGrids.dds</Grid>

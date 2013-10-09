@@ -128,7 +128,11 @@ def_noun "Mine"  => "Mines";
 # professions that "walk" on the map
 @walkprofs = ("Colonist", "Explorer", "Laborer", "Mechanized Laborer", "Hunter", "Trader", "Anthropologist", "Emissary", "Militia", "Infantry", "Scout Mecha", "Tactical Mecha", "Heavy Mecha", "Terrorist", "Pirate");
 # military and other non-colonist units which don't take professions
-@miscunits = ("Convoy","Corvette","Frigate","Gunboat","Destroyer","Cruiser","Battleship","Dreadnought","Probe","Dropship","Freighter","Heavy Freighter","Mining Vessel","Science Vessel","Colony Ship","Treasure","Relic","Colonial Garrison");
+@transportships = ("Corvette","Dropship","Freighter","Heavy Freighter");
+@warships = ("Frigate","Gunboat","Destroyer","Cruiser","Battleship","Dreadnought");
+@miscships = ("Probe","Mining Vessel","Science Vessel","Colony Ship");
+@miscland = ("Convoy","Treasure","Relic","Colonial Garrison","Artillery","War Droid");
+@miscunits = (@transportships,@warships,@miscships,@miscland);
 @beastunits = ("Killbots","Progenitor AI","Arachnid","Scorpion","Amoeba","Enigma Virion");
 
 # TXT_KEY subroutine
@@ -432,12 +436,12 @@ $landorder=1;
 $waterorder=50;
 
 
-# 1st arg = terrain name, 2nd = hash (yield=>production)
+# 1st arg = terrain tagname, 2nd = description, 3rd = hash (yield=>production)
 sub makeland
 {
 my $tag = shift;
+my $desc = shift;
 $href = shift;
-my $desc = $tag;
 $desc =~ tr/_/ /;
 $desc =~ s/(\w+)/\u\L$1/g;
 print TI "<TerrainInfo>\n";
@@ -850,20 +854,20 @@ $landorder++;
 }
 
 # make terrains
-&makeland('GRASS',{'NUTRIENTS'=>3,'BIOPOLYMERS'=>1});
-&makelandvanilla('PLAINS',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2});
-&makelandvanilla('DESERT',{'SILICATES'=>3,'ACTINIDES'=>2});
-&makelandvanilla('MARSH',{'NUTRIENTS'=>2,'OPIATES'=>2});
-&makelandvanilla('TUNDRA',{'NUTRIENTS'=>1,'DATACORES'=>2});
-&makewater('COAST',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2});
-&makewater('OCEAN',{'NUTRIENTS'=>1});
+&makeland('GRASS','Grassland',{'NUTRIENTS'=>3,'BIOPOLYMERS'=>1});
+&makelandvanilla('PLAINS','Plains',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2});
+&makelandvanilla('DESERT','Desert',{'SILICATES'=>3,'ACTINIDES'=>2});
+&makelandvanilla('MARSH','Marsh',{'NUTRIENTS'=>2,'OPIATES'=>2});
+&makelandvanilla('TUNDRA','Tundra',{'NUTRIENTS'=>1,'DATACORES'=>2});
+&makewater('COAST','Low Orbit',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2});
+&makewater('OCEAN',,'Deep Space',{'NUTRIENTS'=>1});
 
 #Aquatic Planet
-# &makeland('LOAM',{'NUTRIENTS'=>3,'MICROBES'=>1});
-# &makeland('SILT_BEDS',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2});
-# &makeland('DIATOMACEOUS',{'SILICATES'=>3,'ACTINIDES'=>2});
-# &makeland('WETLANDS',{'NUTRIENTS'=>2,'OPIATES'=>2});
-# &makeland('GLACIAL',{'NUTRIENTS'=>1,'DATACORES'=>2});
+&makeland('AQUATIC_FERTILE','Loam',{'NUTRIENTS'=>3,'MICROBES'=>1});
+&makeland('AQUATIC_DRY','Silt Beds',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2});
+&makeland('AQUATIC_HOT','Diatomaceous',{'SILICATES'=>3,'ACTINIDES'=>2});
+&makeland('AQUATIC_WET','Wetland',{'NUTRIENTS'=>2,'OPIATES'=>2});
+&makeland('AQUATIC_COLD','Glacial',{'NUTRIENTS'=>1,'DATACORES'=>2});
 # &makewater('PELAGIC_COAST',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2});
 # &makewater('ABYSSAL_OCEAN',{'NUTRIENTS'=>1});
 
@@ -1598,6 +1602,19 @@ print ADU '<!-- Sid Meier\'s Civilization 4 -->'."\n".'<!-- Copyright Firaxis Ga
 print ADU '<Civ4ArtDefines xmlns="x-schema:CIV4ArtDefinesSchema.xml">'."\n<UnitArtInfos>\n";
 
 # generate units xml
+
+sub placeship
+{
+	print ADU "\t<NIF>Art/Units/Caravel/Caravel_FX.nif</NIF>\n";
+	print ADU "\t<KFM>Art/Units/Caravel/Caravel.kfm</KFM>\n";
+}
+
+sub placeland
+{
+	print ADU "\t<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>\n";
+	print ADU "\t<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>\n";
+}
+
 foreach $item (@allspecialists)
 	{
 	my @skills = @$item;
@@ -1792,8 +1809,9 @@ foreach $item (@allspecialists)
 	print ADU "\t<FullLengthIcon>Art/Buttons/Units/Full/".$tag.'.dds</FullLengthIcon>'."\n";
 	print ADU "\t<fScale>1.0</fScale>\n";
 	print ADU "\t<fInterfaceScale>0.5</fInterfaceScale>\n";
-	print ADU "\t<NIF>Art/Units/".$tag.'/'.$tag.'.nif</NIF>'."\n";
-	print ADU "\t<KFM>Art/Units/".$tag.'/'.$tag.'.kfm</KFM>'."\n";
+#	print ADU "\t<NIF>Art/Units/".$tag.'/'.$tag.'.nif</NIF>'."\n";
+#	print ADU "\t<KFM>Art/Units/".$tag.'/'.$tag.'.kfm</KFM>'."\n";
+	&placeland;
 	print ADU "\t<TrailDefinition>\n";
 	print ADU "\t\t<Texture>Art/Shared/wheeltread.dds</Texture>\n";
 	print ADU "\t\t<fWidth>1.2</fWidth>\n";
@@ -1807,8 +1825,8 @@ foreach $item (@allspecialists)
 	print ADU "\t<bActAsRanged>0</bActAsRanged>\n";
 	print ADU "\t<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>\n";
 	print ADU "\t<AudioRunSounds>\n";
-	print ADU "\t\t<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>\n";
-	print ADU "\t\t<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>\n";
+	print ADU "\t\t<AudioRunTypeLoop></AudioRunTypeLoop>\n";
+	print ADU "\t\t<AudioRunTypeEnd></AudioRunTypeEnd>\n";
 	print ADU "\t</AudioRunSounds>\n";
 	print ADU "</UnitArtInfo>\n";
 	}	
@@ -1947,8 +1965,9 @@ foreach $item (@cargoyields)
 	print ADU "\t<FullLengthIcon>Art/Buttons/Units/Full/".$tag.'.dds</FullLengthIcon>'."\n";
 	print ADU "\t<fScale>1.0</fScale>\n";
 	print ADU "\t<fInterfaceScale>0.5</fInterfaceScale>\n";
-	print ADU "\t<NIF>Art/Units/".$tag.'/'.$tag.'.nif</NIF>'."\n";
-	print ADU "\t<KFM>Art/Units/".$tag.'/'.$tag.'.kfm</KFM>'."\n";
+#	print ADU "\t<NIF>Art/Units/".$tag.'/'.$tag.'.nif</NIF>'."\n";
+#	print ADU "\t<KFM>Art/Units/".$tag.'/'.$tag.'.kfm</KFM>'."\n";
+	&placeland;
 	print ADU "\t<TrailDefinition>\n";
 	print ADU "\t\t<Texture>Art/Shared/wheeltread.dds</Texture>\n";
 	print ADU "\t\t<fWidth>1.2</fWidth>\n";
@@ -1962,8 +1981,8 @@ foreach $item (@cargoyields)
 	print ADU "\t<bActAsRanged>0</bActAsRanged>\n";
 	print ADU "\t<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>\n";
 	print ADU "\t<AudioRunSounds>\n";
-	print ADU "\t\t<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>\n";
-	print ADU "\t\t<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>\n";
+	print ADU "\t\t<AudioRunTypeLoop></AudioRunTypeLoop>\n";
+	print ADU "\t\t<AudioRunTypeEnd></AudioRunTypeEnd>\n";
 	print ADU "\t</AudioRunSounds>\n";
 	print ADU "</UnitArtInfo>\n";
 	}
@@ -2109,7 +2128,7 @@ foreach $item (@miscunits)
 	print UI"\t\t\t</UnitMeshGroup>\n";
 	print UI"\t\t</UnitMeshGroups>\n";
 	print UI"\t</ProfessionMeshGroups>\n";
-	print UI"\t<FormationType>FORMATION_TYPE_DEFAULT</FormationType>\n";
+	print UI"\t<FormationType>FORMATION_TYPE_MACHINE</FormationType>\n";
 	print UI"\t<HotKey/>\n";
 	print UI"\t<bAltDown>0</bAltDown>\n";
 	print UI"\t<bShiftDown>0</bShiftDown>\n";
@@ -2126,10 +2145,11 @@ foreach $item (@miscunits)
 	print ADU "\t<Type>ART_DEF_UNIT_".$tag."</Type>\n";
 	print ADU "\t<Button>Art/Buttons/Units/".$tag.'.dds</Button>'."\n";
 	print ADU "\t<FullLengthIcon>Art/Buttons/Units/Full/".$tag.'.dds</FullLengthIcon>'."\n";
-	print ADU "\t<fScale>1.0</fScale>\n";
-	print ADU "\t<fInterfaceScale>0.5</fInterfaceScale>\n";
-	print ADU "\t<NIF>Art/Units/".$tag.'/'.$tag.'.nif</NIF>'."\n";
-	print ADU "\t<KFM>Art/Units/".$tag.'/'.$tag.'.kfm</KFM>'."\n";
+	print ADU "\t<fScale>0.24</fScale>\n";
+	print ADU "\t<fInterfaceScale>0.7</fInterfaceScale>\n";
+#	print ADU "\t<NIF>Art/Units/".$tag.'/'.$tag.'.nif</NIF>'."\n";
+#	print ADU "\t<KFM>Art/Units/".$tag.'/'.$tag.'.kfm</KFM>'."\n";
+	&placeship;
 	print ADU "\t<TrailDefinition>\n";
 	print ADU "\t\t<Texture>Art/Shared/wheeltread.dds</Texture>\n";
 	print ADU "\t\t<fWidth>1.2</fWidth>\n";
@@ -2143,8 +2163,8 @@ foreach $item (@miscunits)
 	print ADU "\t<bActAsRanged>0</bActAsRanged>\n";
 	print ADU "\t<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>\n";
 	print ADU "\t<AudioRunSounds>\n";
-	print ADU "\t\t<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>\n";
-	print ADU "\t\t<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>\n";
+	print ADU "\t\t<AudioRunTypeLoop></AudioRunTypeLoop>\n";
+	print ADU "\t\t<AudioRunTypeEnd></AudioRunTypeEnd>\n";
 	print ADU "\t</AudioRunSounds>\n";
 	print ADU "</UnitArtInfo>\n";	
 	}
@@ -2289,8 +2309,9 @@ foreach $item (@beastunits)
 	print ADU "\t<FullLengthIcon>Art/Buttons/Units/Full/".$tag.'.dds</FullLengthIcon>'."\n";
 	print ADU "\t<fScale>1.0</fScale>\n";
 	print ADU "\t<fInterfaceScale>0.5</fInterfaceScale>\n";
-	print ADU "\t<NIF>Art/Units/".$tag.'/'.$tag.'.nif</NIF>'."\n";
-	print ADU "\t<KFM>Art/Units/".$tag.'/'.$tag.'.kfm</KFM>'."\n";
+#	print ADU "\t<NIF>Art/Units/".$tag.'/'.$tag.'.nif</NIF>'."\n";
+#	print ADU "\t<KFM>Art/Units/".$tag.'/'.$tag.'.kfm</KFM>'."\n";
+	&placeland;
 	print ADU "\t<TrailDefinition>\n";
 	print ADU "\t\t<Texture>Art/Shared/wheeltread.dds</Texture>\n";
 	print ADU "\t\t<fWidth>1.2</fWidth>\n";
@@ -2304,8 +2325,8 @@ foreach $item (@beastunits)
 	print ADU "\t<bActAsRanged>0</bActAsRanged>\n";
 	print ADU "\t<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>\n";
 	print ADU "\t<AudioRunSounds>\n";
-	print ADU "\t\t<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>\n";
-	print ADU "\t\t<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>\n";
+	print ADU "\t\t<AudioRunTypeLoop></AudioRunTypeLoop>\n";
+	print ADU "\t\t<AudioRunTypeEnd></AudioRunTypeEnd>\n";
 	print ADU "\t</AudioRunSounds>\n";
 	print ADU "</UnitArtInfo>\n";	
 	}
@@ -2323,8 +2344,9 @@ foreach $item (@walkprofs)
 	print ADU "\t<FullLengthIcon>Art/Buttons/Units/Full/".$tag.'.dds</FullLengthIcon>'."\n";
 	print ADU "\t<fScale>1.0</fScale>\n";
 	print ADU "\t<fInterfaceScale>0.5</fInterfaceScale>\n";
-	print ADU "\t<NIF>Art/Units/".$tag.'/'.$tag.'.nif</NIF>'."\n";
-	print ADU "\t<KFM>Art/Units/".$tag.'/'.$tag.'.kfm</KFM>'."\n";
+#	print ADU "\t<NIF>Art/Units/".$tag.'/'.$tag.'.nif</NIF>'."\n";
+#	print ADU "\t<KFM>Art/Units/".$tag.'/'.$tag.'.kfm</KFM>'."\n";
+	&placeland;
 	print ADU "\t<TrailDefinition>\n";
 	print ADU "\t\t<Texture>Art/Shared/wheeltread.dds</Texture>\n";
 	print ADU "\t\t<fWidth>1.2</fWidth>\n";
@@ -2338,8 +2360,8 @@ foreach $item (@walkprofs)
 	print ADU "\t<bActAsRanged>0</bActAsRanged>\n";
 	print ADU "\t<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>\n";
 	print ADU "\t<AudioRunSounds>\n";
-	print ADU "\t\t<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>\n";
-	print ADU "\t\t<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>\n";
+	print ADU "\t\t<AudioRunTypeLoop></AudioRunTypeLoop>\n";
+	print ADU "\t\t<AudioRunTypeEnd></AudioRunTypeEnd>\n";
 	print ADU "\t</AudioRunSounds>\n";
 	print ADU "</UnitArtInfo>\n";
 	}
@@ -2641,3 +2663,50 @@ close ADC;
 # close text
 print TEXT "</Civ4GameText>\n";
 close TEXT;
+
+# ** PLACEHOLDER ARTDEFS **
+# placeholder art paths
+
+open (ADB, '< ../Assets/XML/Art/CIV4ArtDefines_Building.xml');
+while (<ADB>) {
+	push (@lines, $_);
+	}
+close ADB;
+open (ADB, '> ../Assets/XML/Art/CIV4ArtDefines_Building.xml');
+foreach $line (@lines) {
+		if ($line =~ /CityTexture/) {print ADB "\t<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_altas.dds,1,1</CityTexture>\n";}
+		elsif ($line =~ /<NIF>/) {print ADB "\t<NIF>Art/Structures/Buildings/Town_Hall/Town_Hall.nif</NIF>\n";}		
+		elsif ($line =~ /<Button>/) {print ADB "\t<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,6</Button>\n";}
+		else {print ADB $line;}
+		}
+close ADB;
+@lines = '';
+
+open (ADU, '< ../Assets/XML/Art/CIV4ArtDefines_Unit.xml');
+while (<ADU>) {
+	push (@lines, $_);
+	}
+close ADU;
+open (ADU, '> ../Assets/XML/Art/CIV4ArtDefines_Unit.xml');
+foreach $line (@lines) {
+		if ($line =~ /FullLength/) {print ADU "\t<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>\n";}
+#		elsif ($line =~ /<NIF>/) {print ADU "\t<NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>\n";}
+#		elsif ($line =~ /<KFM>/) {print ADU "\t<KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>\n";}			
+		elsif ($line =~ /<Button>/) {print ADU "\t<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>\n";}
+		else {print ADU $line;}
+		}
+close ADU;
+@lines = '';
+
+open (ADI, '< ../Assets/XML/Art/CIV4ArtDefines_Improvement.xml');
+while (<ADI>) {
+	push (@lines, $_);
+	}
+close ADI;
+open (ADI, '> ../Assets/XML/Art/CIV4ArtDefines_Improvement.xml');
+foreach $line (@lines) {
+		if ($line =~ /Button/) {print ADI "\t<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,5,17</Button>\n";}
+		elsif ($line =~ /<NIF>/) {print ADI "\t<NIF>Art/Structures/Improvements/Farm/farm_2x1_building.nif</NIF>\n";}		
+		else {print ADI $line;}
+		}
+close ADI;

@@ -1962,19 +1962,19 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_GRASS</Tag>
-	<English>Grass</English>
-	<French>Grass</French>
-	<German>Grass</German>
-	<Italian>Grass</Italian>
-	<Spanish>Grass</Spanish>
+	<English>Grassland</English>
+	<French>Grassland</French>
+	<German>Grassland</German>
+	<Italian>Grassland</Italian>
+	<Spanish>Grassland</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_GRASS_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Grass[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Grass[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Grass[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Grass[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Grass[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Grassland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Grassland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Grassland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Grassland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Grassland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_PLAINS</Tag>
@@ -1986,11 +1986,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_PLAINS_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Plains[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Plains[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Plains[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Plains[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Plains[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Plains[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Plains[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Plains[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Plains[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Plains[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_DESERT</Tag>
@@ -2002,11 +2002,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_DESERT_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Desert[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_SILICATES]Silicates[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Desert[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_SILICATES]Silicates[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Desert[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_SILICATES]Silicates[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Desert[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_SILICATES]Silicates[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Desert[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_SILICATES]Silicates[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Desert[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Desert[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Desert[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Desert[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Desert[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_MARSH</Tag>
@@ -2018,11 +2018,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_MARSH_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_TUNDRA</Tag>
@@ -2034,11 +2034,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_TUNDRA_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Tundra[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Tundra[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Tundra[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Tundra[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Tundra[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Tundra[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Tundra[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Tundra[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Tundra[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Tundra[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_COAST</Tag>
@@ -2050,11 +2050,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_COAST_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Coast[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Coast[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Coast[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Coast[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Coast[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Coast[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Coast[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Coast[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Coast[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Coast[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_OCEAN</Tag>
@@ -2066,11 +2066,91 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_OCEAN_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Ocean[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Ocean[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Ocean[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Ocean[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Ocean[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Ocean[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Ocean[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Ocean[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Ocean[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Ocean[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_AQUATIC_FERTILE</Tag>
+	<English>Loam</English>
+	<French>Loam</French>
+	<German>Loam</German>
+	<Italian>Loam</Italian>
+	<Spanish>Loam</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_AQUATIC_FERTILE_PEDIA</Tag>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Loam[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_MICROBES]Microbes[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Loam[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_MICROBES]Microbes[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Loam[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_MICROBES]Microbes[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Loam[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_MICROBES]Microbes[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Loam[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_MICROBES]Microbes[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_AQUATIC_DRY</Tag>
+	<English>Silt Beds</English>
+	<French>Silt Beds</French>
+	<German>Silt Beds</German>
+	<Italian>Silt Beds</Italian>
+	<Spanish>Silt Beds</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_AQUATIC_DRY_PEDIA</Tag>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Silt Beds[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Silt Beds[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Silt Beds[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Silt Beds[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Silt Beds[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_AQUATIC_HOT</Tag>
+	<English>Diatomaceous</English>
+	<French>Diatomaceous</French>
+	<German>Diatomaceous</German>
+	<Italian>Diatomaceous</Italian>
+	<Spanish>Diatomaceous</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_AQUATIC_HOT_PEDIA</Tag>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Diatomaceous[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_SILICATES]Silicates[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Diatomaceous[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_SILICATES]Silicates[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Diatomaceous[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_SILICATES]Silicates[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Diatomaceous[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_SILICATES]Silicates[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Diatomaceous[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_SILICATES]Silicates[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_AQUATIC_WET</Tag>
+	<English>Wetland</English>
+	<French>Wetland</French>
+	<German>Wetland</German>
+	<Italian>Wetland</Italian>
+	<Spanish>Wetland</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_AQUATIC_WET_PEDIA</Tag>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Wetland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Wetland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Wetland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Wetland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Wetland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_AQUATIC_COLD</Tag>
+	<English>Glacial</English>
+	<French>Glacial</French>
+	<German>Glacial</German>
+	<Italian>Glacial</Italian>
+	<Spanish>Glacial</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_AQUATIC_COLD_PEDIA</Tag>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Glacial[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Glacial[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Glacial[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Glacial[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Glacial[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_SNOW</Tag>
@@ -5601,30 +5681,6 @@
 	<Spanish>Build a Veteran Soldier to increase our industrial power.</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_UNIT_CONVOY</Tag>
-	<English>Convoy:Convoys</English>
-	<French>Convoy:Convoys</French>
-	<German>Convoy:Convoys</German>
-	<Italian>Convoy:Convoys</Italian>
-	<Spanish>Convoy:Convoys</Spanish>
-</TEXT>
-<TEXT>
-	<Tag>TXT_KEY_UNIT_CONVOY_PEDIA</Tag>
-	<English>Construction of the first [COLOR_HIGHLIGHT_TEXT]Convoys[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</English>
-	<French>Construction of the first [COLOR_HIGHLIGHT_TEXT]Convoys[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</French>
-	<German>Construction of the first [COLOR_HIGHLIGHT_TEXT]Convoys[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</German>
-	<Italian>Construction of the first [COLOR_HIGHLIGHT_TEXT]Convoys[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</Italian>
-	<Spanish>Construction of the first [COLOR_HIGHLIGHT_TEXT]Convoys[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</Spanish>
-</TEXT>
-<TEXT>
-	<Tag>TXT_KEY_UNIT_CONVOY_STRATEGY</Tag>
-	<English>Build a Convoy to bolster our military might.</English>
-	<French>Build a Convoy to bolster our military might.</French>
-	<German>Build a Convoy to bolster our military might.</German>
-	<Italian>Build a Convoy to bolster our military might.</Italian>
-	<Spanish>Build a Convoy to bolster our military might.</Spanish>
-</TEXT>
-<TEXT>
 	<Tag>TXT_KEY_UNIT_CORVETTE</Tag>
 	<English>Corvette:Corvettes</English>
 	<French>Corvette:Corvettes</French>
@@ -5647,6 +5703,78 @@
 	<German>Build a Corvette to bolster our military might.</German>
 	<Italian>Build a Corvette to bolster our military might.</Italian>
 	<Spanish>Build a Corvette to bolster our military might.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_UNIT_DROPSHIP</Tag>
+	<English>Dropship:Dropships</English>
+	<French>Dropship:Dropships</French>
+	<German>Dropship:Dropships</German>
+	<Italian>Dropship:Dropships</Italian>
+	<Spanish>Dropship:Dropships</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_UNIT_DROPSHIP_PEDIA</Tag>
+	<English>Construction of the first [COLOR_HIGHLIGHT_TEXT]Dropships[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</English>
+	<French>Construction of the first [COLOR_HIGHLIGHT_TEXT]Dropships[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</French>
+	<German>Construction of the first [COLOR_HIGHLIGHT_TEXT]Dropships[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</German>
+	<Italian>Construction of the first [COLOR_HIGHLIGHT_TEXT]Dropships[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</Italian>
+	<Spanish>Construction of the first [COLOR_HIGHLIGHT_TEXT]Dropships[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_UNIT_DROPSHIP_STRATEGY</Tag>
+	<English>Build a Dropship to bolster our military might.</English>
+	<French>Build a Dropship to bolster our military might.</French>
+	<German>Build a Dropship to bolster our military might.</German>
+	<Italian>Build a Dropship to bolster our military might.</Italian>
+	<Spanish>Build a Dropship to bolster our military might.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_UNIT_FREIGHTER</Tag>
+	<English>Freighter:Freighters</English>
+	<French>Freighter:Freighters</French>
+	<German>Freighter:Freighters</German>
+	<Italian>Freighter:Freighters</Italian>
+	<Spanish>Freighter:Freighters</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_UNIT_FREIGHTER_PEDIA</Tag>
+	<English>Construction of the first [COLOR_HIGHLIGHT_TEXT]Freighters[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</English>
+	<French>Construction of the first [COLOR_HIGHLIGHT_TEXT]Freighters[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</French>
+	<German>Construction of the first [COLOR_HIGHLIGHT_TEXT]Freighters[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</German>
+	<Italian>Construction of the first [COLOR_HIGHLIGHT_TEXT]Freighters[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</Italian>
+	<Spanish>Construction of the first [COLOR_HIGHLIGHT_TEXT]Freighters[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_UNIT_FREIGHTER_STRATEGY</Tag>
+	<English>Build a Freighter to bolster our military might.</English>
+	<French>Build a Freighter to bolster our military might.</French>
+	<German>Build a Freighter to bolster our military might.</German>
+	<Italian>Build a Freighter to bolster our military might.</Italian>
+	<Spanish>Build a Freighter to bolster our military might.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_UNIT_HEAVY_FREIGHTER</Tag>
+	<English>Heavy Freighter:Heavy Freighters</English>
+	<French>Heavy Freighter:Heavy Freighters</French>
+	<German>Heavy Freighter:Heavy Freighters</German>
+	<Italian>Heavy Freighter:Heavy Freighters</Italian>
+	<Spanish>Heavy Freighter:Heavy Freighters</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_UNIT_HEAVY_FREIGHTER_PEDIA</Tag>
+	<English>Construction of the first [COLOR_HIGHLIGHT_TEXT]Heavy Freighters[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</English>
+	<French>Construction of the first [COLOR_HIGHLIGHT_TEXT]Heavy Freighters[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</French>
+	<German>Construction of the first [COLOR_HIGHLIGHT_TEXT]Heavy Freighters[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</German>
+	<Italian>Construction of the first [COLOR_HIGHLIGHT_TEXT]Heavy Freighters[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</Italian>
+	<Spanish>Construction of the first [COLOR_HIGHLIGHT_TEXT]Heavy Freighters[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_UNIT_HEAVY_FREIGHTER_STRATEGY</Tag>
+	<English>Build a Heavy Freighter to bolster our military might.</English>
+	<French>Build a Heavy Freighter to bolster our military might.</French>
+	<German>Build a Heavy Freighter to bolster our military might.</German>
+	<Italian>Build a Heavy Freighter to bolster our military might.</Italian>
+	<Spanish>Build a Heavy Freighter to bolster our military might.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_UNIT_FRIGATE</Tag>
@@ -5817,78 +5945,6 @@
 	<Spanish>Build a Probe to bolster our military might.</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_UNIT_DROPSHIP</Tag>
-	<English>Dropship:Dropships</English>
-	<French>Dropship:Dropships</French>
-	<German>Dropship:Dropships</German>
-	<Italian>Dropship:Dropships</Italian>
-	<Spanish>Dropship:Dropships</Spanish>
-</TEXT>
-<TEXT>
-	<Tag>TXT_KEY_UNIT_DROPSHIP_PEDIA</Tag>
-	<English>Construction of the first [COLOR_HIGHLIGHT_TEXT]Dropships[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</English>
-	<French>Construction of the first [COLOR_HIGHLIGHT_TEXT]Dropships[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</French>
-	<German>Construction of the first [COLOR_HIGHLIGHT_TEXT]Dropships[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</German>
-	<Italian>Construction of the first [COLOR_HIGHLIGHT_TEXT]Dropships[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</Italian>
-	<Spanish>Construction of the first [COLOR_HIGHLIGHT_TEXT]Dropships[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</Spanish>
-</TEXT>
-<TEXT>
-	<Tag>TXT_KEY_UNIT_DROPSHIP_STRATEGY</Tag>
-	<English>Build a Dropship to bolster our military might.</English>
-	<French>Build a Dropship to bolster our military might.</French>
-	<German>Build a Dropship to bolster our military might.</German>
-	<Italian>Build a Dropship to bolster our military might.</Italian>
-	<Spanish>Build a Dropship to bolster our military might.</Spanish>
-</TEXT>
-<TEXT>
-	<Tag>TXT_KEY_UNIT_FREIGHTER</Tag>
-	<English>Freighter:Freighters</English>
-	<French>Freighter:Freighters</French>
-	<German>Freighter:Freighters</German>
-	<Italian>Freighter:Freighters</Italian>
-	<Spanish>Freighter:Freighters</Spanish>
-</TEXT>
-<TEXT>
-	<Tag>TXT_KEY_UNIT_FREIGHTER_PEDIA</Tag>
-	<English>Construction of the first [COLOR_HIGHLIGHT_TEXT]Freighters[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</English>
-	<French>Construction of the first [COLOR_HIGHLIGHT_TEXT]Freighters[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</French>
-	<German>Construction of the first [COLOR_HIGHLIGHT_TEXT]Freighters[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</German>
-	<Italian>Construction of the first [COLOR_HIGHLIGHT_TEXT]Freighters[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</Italian>
-	<Spanish>Construction of the first [COLOR_HIGHLIGHT_TEXT]Freighters[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</Spanish>
-</TEXT>
-<TEXT>
-	<Tag>TXT_KEY_UNIT_FREIGHTER_STRATEGY</Tag>
-	<English>Build a Freighter to bolster our military might.</English>
-	<French>Build a Freighter to bolster our military might.</French>
-	<German>Build a Freighter to bolster our military might.</German>
-	<Italian>Build a Freighter to bolster our military might.</Italian>
-	<Spanish>Build a Freighter to bolster our military might.</Spanish>
-</TEXT>
-<TEXT>
-	<Tag>TXT_KEY_UNIT_HEAVY_FREIGHTER</Tag>
-	<English>Heavy Freighter:Heavy Freighters</English>
-	<French>Heavy Freighter:Heavy Freighters</French>
-	<German>Heavy Freighter:Heavy Freighters</German>
-	<Italian>Heavy Freighter:Heavy Freighters</Italian>
-	<Spanish>Heavy Freighter:Heavy Freighters</Spanish>
-</TEXT>
-<TEXT>
-	<Tag>TXT_KEY_UNIT_HEAVY_FREIGHTER_PEDIA</Tag>
-	<English>Construction of the first [COLOR_HIGHLIGHT_TEXT]Heavy Freighters[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</English>
-	<French>Construction of the first [COLOR_HIGHLIGHT_TEXT]Heavy Freighters[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</French>
-	<German>Construction of the first [COLOR_HIGHLIGHT_TEXT]Heavy Freighters[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</German>
-	<Italian>Construction of the first [COLOR_HIGHLIGHT_TEXT]Heavy Freighters[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</Italian>
-	<Spanish>Construction of the first [COLOR_HIGHLIGHT_TEXT]Heavy Freighters[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</Spanish>
-</TEXT>
-<TEXT>
-	<Tag>TXT_KEY_UNIT_HEAVY_FREIGHTER_STRATEGY</Tag>
-	<English>Build a Heavy Freighter to bolster our military might.</English>
-	<French>Build a Heavy Freighter to bolster our military might.</French>
-	<German>Build a Heavy Freighter to bolster our military might.</German>
-	<Italian>Build a Heavy Freighter to bolster our military might.</Italian>
-	<Spanish>Build a Heavy Freighter to bolster our military might.</Spanish>
-</TEXT>
-<TEXT>
 	<Tag>TXT_KEY_UNIT_MINING_VESSEL</Tag>
 	<English>Mining Vessel:Mining Vessels</English>
 	<French>Mining Vessel:Mining Vessels</French>
@@ -5961,6 +6017,30 @@
 	<Spanish>Build a Colony Ship to bolster our military might.</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_UNIT_CONVOY</Tag>
+	<English>Convoy:Convoys</English>
+	<French>Convoy:Convoys</French>
+	<German>Convoy:Convoys</German>
+	<Italian>Convoy:Convoys</Italian>
+	<Spanish>Convoy:Convoys</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_UNIT_CONVOY_PEDIA</Tag>
+	<English>Construction of the first [COLOR_HIGHLIGHT_TEXT]Convoys[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</English>
+	<French>Construction of the first [COLOR_HIGHLIGHT_TEXT]Convoys[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</French>
+	<German>Construction of the first [COLOR_HIGHLIGHT_TEXT]Convoys[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</German>
+	<Italian>Construction of the first [COLOR_HIGHLIGHT_TEXT]Convoys[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</Italian>
+	<Spanish>Construction of the first [COLOR_HIGHLIGHT_TEXT]Convoys[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_UNIT_CONVOY_STRATEGY</Tag>
+	<English>Build a Convoy to bolster our military might.</English>
+	<French>Build a Convoy to bolster our military might.</French>
+	<German>Build a Convoy to bolster our military might.</German>
+	<Italian>Build a Convoy to bolster our military might.</Italian>
+	<Spanish>Build a Convoy to bolster our military might.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_UNIT_TREASURE</Tag>
 	<English>Treasure:Treasures</English>
 	<French>Treasure:Treasures</French>
@@ -6031,6 +6111,54 @@
 	<German>Build a Colonial Garrison to bolster our military might.</German>
 	<Italian>Build a Colonial Garrison to bolster our military might.</Italian>
 	<Spanish>Build a Colonial Garrison to bolster our military might.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_UNIT_ARTILLERY</Tag>
+	<English>Artillery:Artillerys</English>
+	<French>Artillery:Artillerys</French>
+	<German>Artillery:Artillerys</German>
+	<Italian>Artillery:Artillerys</Italian>
+	<Spanish>Artillery:Artillerys</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_UNIT_ARTILLERY_PEDIA</Tag>
+	<English>Construction of the first [COLOR_HIGHLIGHT_TEXT]Artillerys[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</English>
+	<French>Construction of the first [COLOR_HIGHLIGHT_TEXT]Artillerys[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</French>
+	<German>Construction of the first [COLOR_HIGHLIGHT_TEXT]Artillerys[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</German>
+	<Italian>Construction of the first [COLOR_HIGHLIGHT_TEXT]Artillerys[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</Italian>
+	<Spanish>Construction of the first [COLOR_HIGHLIGHT_TEXT]Artillerys[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_UNIT_ARTILLERY_STRATEGY</Tag>
+	<English>Build an Artillery to bolster our military might.</English>
+	<French>Build an Artillery to bolster our military might.</French>
+	<German>Build an Artillery to bolster our military might.</German>
+	<Italian>Build an Artillery to bolster our military might.</Italian>
+	<Spanish>Build an Artillery to bolster our military might.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_UNIT_WAR_DROID</Tag>
+	<English>War Droid:War Droids</English>
+	<French>War Droid:War Droids</French>
+	<German>War Droid:War Droids</German>
+	<Italian>War Droid:War Droids</Italian>
+	<Spanish>War Droid:War Droids</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_UNIT_WAR_DROID_PEDIA</Tag>
+	<English>Construction of the first [COLOR_HIGHLIGHT_TEXT]War Droids[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</English>
+	<French>Construction of the first [COLOR_HIGHLIGHT_TEXT]War Droids[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</French>
+	<German>Construction of the first [COLOR_HIGHLIGHT_TEXT]War Droids[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</German>
+	<Italian>Construction of the first [COLOR_HIGHLIGHT_TEXT]War Droids[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</Italian>
+	<Spanish>Construction of the first [COLOR_HIGHLIGHT_TEXT]War Droids[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_UNIT_WAR_DROID_STRATEGY</Tag>
+	<English>Build a War Droid to bolster our military might.</English>
+	<French>Build a War Droid to bolster our military might.</French>
+	<German>Build a War Droid to bolster our military might.</German>
+	<Italian>Build a War Droid to bolster our military might.</Italian>
+	<Spanish>Build a War Droid to bolster our military might.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_UNIT_KILLBOTS</Tag>

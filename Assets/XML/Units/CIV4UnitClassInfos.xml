@@ -417,14 +417,24 @@
 	<DefaultUnit>UNIT_EARTHLING_SPECIMENS</DefaultUnit>
 </UnitClassInfo>
 <UnitClassInfo>
-	<Type>UNITCLASS_CONVOY</Type>
-	<Description>Convoy:Convoys</Description>
-	<DefaultUnit>UNIT_CONVOY</DefaultUnit>
-</UnitClassInfo>
-<UnitClassInfo>
 	<Type>UNITCLASS_CORVETTE</Type>
 	<Description>Corvette:Corvettes</Description>
 	<DefaultUnit>UNIT_CORVETTE</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_DROPSHIP</Type>
+	<Description>Dropship:Dropships</Description>
+	<DefaultUnit>UNIT_DROPSHIP</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_FREIGHTER</Type>
+	<Description>Freighter:Freighters</Description>
+	<DefaultUnit>UNIT_FREIGHTER</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_HEAVY_FREIGHTER</Type>
+	<Description>Heavy Freighter:Heavy Freighters</Description>
+	<DefaultUnit>UNIT_HEAVY_FREIGHTER</DefaultUnit>
 </UnitClassInfo>
 <UnitClassInfo>
 	<Type>UNITCLASS_FRIGATE</Type>
@@ -462,21 +472,6 @@
 	<DefaultUnit>UNIT_PROBE</DefaultUnit>
 </UnitClassInfo>
 <UnitClassInfo>
-	<Type>UNITCLASS_DROPSHIP</Type>
-	<Description>Dropship:Dropships</Description>
-	<DefaultUnit>UNIT_DROPSHIP</DefaultUnit>
-</UnitClassInfo>
-<UnitClassInfo>
-	<Type>UNITCLASS_FREIGHTER</Type>
-	<Description>Freighter:Freighters</Description>
-	<DefaultUnit>UNIT_FREIGHTER</DefaultUnit>
-</UnitClassInfo>
-<UnitClassInfo>
-	<Type>UNITCLASS_HEAVY_FREIGHTER</Type>
-	<Description>Heavy Freighter:Heavy Freighters</Description>
-	<DefaultUnit>UNIT_HEAVY_FREIGHTER</DefaultUnit>
-</UnitClassInfo>
-<UnitClassInfo>
 	<Type>UNITCLASS_MINING_VESSEL</Type>
 	<Description>Mining Vessel:Mining Vessels</Description>
 	<DefaultUnit>UNIT_MINING_VESSEL</DefaultUnit>
@@ -492,6 +487,11 @@
 	<DefaultUnit>UNIT_COLONY_SHIP</DefaultUnit>
 </UnitClassInfo>
 <UnitClassInfo>
+	<Type>UNITCLASS_CONVOY</Type>
+	<Description>Convoy:Convoys</Description>
+	<DefaultUnit>UNIT_CONVOY</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
 	<Type>UNITCLASS_TREASURE</Type>
 	<Description>Treasure:Treasures</Description>
 	<DefaultUnit>UNIT_TREASURE</DefaultUnit>
@@ -505,6 +505,16 @@
 	<Type>UNITCLASS_COLONIAL_GARRISON</Type>
 	<Description>Colonial Garrison:Colonial Garrisons</Description>
 	<DefaultUnit>UNIT_COLONIAL_GARRISON</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_ARTILLERY</Type>
+	<Description>Artillery:Artillerys</Description>
+	<DefaultUnit>UNIT_ARTILLERY</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
+	<Type>UNITCLASS_WAR_DROID</Type>
+	<Description>War Droid:War Droids</Description>
+	<DefaultUnit>UNIT_WAR_DROID</DefaultUnit>
 </UnitClassInfo>
 <UnitClassInfo>
 	<Type>UNITCLASS_KILLBOTS</Type>

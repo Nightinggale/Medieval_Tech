@@ -2153,6 +2153,246 @@
 	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Glacial[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_TERRAIN_ARID_FERTILE</Tag>
+	<English>Steppe</English>
+	<French>Steppe</French>
+	<German>Steppe</German>
+	<Italian>Steppe</Italian>
+	<Spanish>Steppe</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_ARID_FERTILE_PEDIA</Tag>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Steppe[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_SILICATES]Silicates[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Steppe[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_SILICATES]Silicates[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Steppe[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_SILICATES]Silicates[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Steppe[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_SILICATES]Silicates[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Steppe[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_SILICATES]Silicates[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_ARID_DRY</Tag>
+	<English>Badlands</English>
+	<French>Badlands</French>
+	<German>Badlands</German>
+	<Italian>Badlands</Italian>
+	<Spanish>Badlands</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_ARID_DRY_PEDIA</Tag>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Badlands[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Badlands[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Badlands[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Badlands[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Badlands[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_ARID_HOT</Tag>
+	<English>Dunes</English>
+	<French>Dunes</French>
+	<German>Dunes</German>
+	<Italian>Dunes</Italian>
+	<Spanish>Dunes</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_ARID_HOT_PEDIA</Tag>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Dunes[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_SILICATES]Silicates[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Dunes[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_SILICATES]Silicates[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Dunes[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_SILICATES]Silicates[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Dunes[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_SILICATES]Silicates[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Dunes[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_SILICATES]Silicates[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_ARID_WET</Tag>
+	<English>Salt Flats</English>
+	<French>Salt Flats</French>
+	<German>Salt Flats</German>
+	<Italian>Salt Flats</Italian>
+	<Spanish>Salt Flats</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_ARID_WET_PEDIA</Tag>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Salt Flats[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Salt Flats[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Salt Flats[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Salt Flats[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Salt Flats[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_ARID_COLD</Tag>
+	<English>Scrubland</English>
+	<French>Scrubland</French>
+	<German>Scrubland</German>
+	<Italian>Scrubland</Italian>
+	<Spanish>Scrubland</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_ARID_COLD_PEDIA</Tag>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Scrubland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Scrubland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Scrubland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Scrubland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Scrubland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_VOLCANIC_FERTILE</Tag>
+	<English>Volcanic Soil</English>
+	<French>Volcanic Soil</French>
+	<German>Volcanic Soil</German>
+	<Italian>Volcanic Soil</Italian>
+	<Spanish>Volcanic Soil</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_VOLCANIC_FERTILE_PEDIA</Tag>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Volcanic Soil[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PRECIOUS_METALS]Precious Metals[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Volcanic Soil[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PRECIOUS_METALS]Precious Metals[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Volcanic Soil[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PRECIOUS_METALS]Precious Metals[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Volcanic Soil[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PRECIOUS_METALS]Precious Metals[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Volcanic Soil[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PRECIOUS_METALS]Precious Metals[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_VOLCANIC_DRY</Tag>
+	<English>Batholith</English>
+	<French>Batholith</French>
+	<German>Batholith</German>
+	<Italian>Batholith</Italian>
+	<Spanish>Batholith</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_VOLCANIC_DRY_PEDIA</Tag>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Batholith[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Batholith[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Batholith[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Batholith[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Batholith[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_VOLCANIC_HOT</Tag>
+	<English>Regolith</English>
+	<French>Regolith</French>
+	<German>Regolith</German>
+	<Italian>Regolith</Italian>
+	<Spanish>Regolith</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_VOLCANIC_HOT_PEDIA</Tag>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Regolith[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_SILICATES]Silicates[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Regolith[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_SILICATES]Silicates[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Regolith[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_SILICATES]Silicates[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Regolith[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_SILICATES]Silicates[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Regolith[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_SILICATES]Silicates[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_VOLCANIC_WET</Tag>
+	<English>Ash</English>
+	<French>Ash</French>
+	<German>Ash</German>
+	<Italian>Ash</Italian>
+	<Spanish>Ash</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_VOLCANIC_WET_PEDIA</Tag>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Ash[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Ash[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Ash[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Ash[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Ash[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_VOLCANIC_COLD</Tag>
+	<English>Felsic Rock</English>
+	<French>Felsic Rock</French>
+	<German>Felsic Rock</German>
+	<Italian>Felsic Rock</Italian>
+	<Spanish>Felsic Rock</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_VOLCANIC_COLD_PEDIA</Tag>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Felsic Rock[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Felsic Rock[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Felsic Rock[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Felsic Rock[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Felsic Rock[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_ARCTIC_FERTILE</Tag>
+	<English>Alpine</English>
+	<French>Alpine</French>
+	<German>Alpine</German>
+	<Italian>Alpine</Italian>
+	<Spanish>Alpine</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_ARCTIC_FERTILE_PEDIA</Tag>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Alpine[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CRYSTALLOIDS]Crystalloids[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Alpine[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CRYSTALLOIDS]Crystalloids[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Alpine[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CRYSTALLOIDS]Crystalloids[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Alpine[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CRYSTALLOIDS]Crystalloids[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Alpine[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CRYSTALLOIDS]Crystalloids[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_ARCTIC_DRY</Tag>
+	<English>Heath</English>
+	<French>Heath</French>
+	<German>Heath</German>
+	<Italian>Heath</Italian>
+	<Spanish>Heath</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_ARCTIC_DRY_PEDIA</Tag>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Heath[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Heath[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Heath[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Heath[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Heath[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_ARCTIC_HOT</Tag>
+	<English>Limestone</English>
+	<French>Limestone</French>
+	<German>Limestone</German>
+	<Italian>Limestone</Italian>
+	<Spanish>Limestone</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_ARCTIC_HOT_PEDIA</Tag>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Limestone[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_SILICATES]Silicates[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Limestone[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_SILICATES]Silicates[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Limestone[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_SILICATES]Silicates[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Limestone[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_SILICATES]Silicates[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Limestone[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_SILICATES]Silicates[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_ARCTIC_WET</Tag>
+	<English>Bog</English>
+	<French>Bog</French>
+	<German>Bog</German>
+	<Italian>Bog</Italian>
+	<Spanish>Bog</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_ARCTIC_WET_PEDIA</Tag>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_ARCTIC_COLD</Tag>
+	<English>Arctic</English>
+	<French>Arctic</French>
+	<German>Arctic</German>
+	<Italian>Arctic</Italian>
+	<Spanish>Arctic</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TERRAIN_ARCTIC_COLD_PEDIA</Tag>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Arctic[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Arctic[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Arctic[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Arctic[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Arctic[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_TERRAIN_SNOW</Tag>
 	<English>Snow</English>
 	<French>Snow</French>
@@ -6337,6 +6577,38 @@
 	<Spanish>NAFTA</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_LEADER_THE_MAJOR_GENERAL</Tag>
+	<English>The Major General</English>
+	<French>The Major General</French>
+	<German>The Major General</German>
+	<Italian>The Major General</Italian>
+	<Spanish>The Major General</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_THE_MAJOR_GENERAL_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]The Major General[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_NAFTA]NAFTA[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]The Major General[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_NAFTA]NAFTA[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]The Major General[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_NAFTA]NAFTA[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]The Major General[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_NAFTA]NAFTA[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]The Major General[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_NAFTA]NAFTA[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_THE_CHIEF_OF_STAFF</Tag>
+	<English>The Chief of Staff</English>
+	<French>The Chief of Staff</French>
+	<German>The Chief of Staff</German>
+	<Italian>The Chief of Staff</Italian>
+	<Spanish>The Chief of Staff</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_THE_CHIEF_OF_STAFF_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]The Chief of Staff[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_NAFTA]NAFTA[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]The Chief of Staff[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_NAFTA]NAFTA[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]The Chief of Staff[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_NAFTA]NAFTA[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]The Chief of Staff[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_NAFTA]NAFTA[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]The Chief of Staff[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_NAFTA]NAFTA[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_CIVILIZATION_NAFTA_KING</Tag>
 	<English>NAFTA Government</English>
 	<French>NAFTA Government</French>
@@ -6367,6 +6639,22 @@
 	<German>NAFTA</German>
 	<Italian>NAFTA</Italian>
 	<Spanish>NAFTA</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_NAFTA_KING</Tag>
+	<English>NAFTA_KING</English>
+	<French>NAFTA_KING</French>
+	<German>NAFTA_KING</German>
+	<Italian>NAFTA_KING</Italian>
+	<Spanish>NAFTA_KING</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_NAFTA_KING_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]NAFTA_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_NAFTA_KING]NAFTA_KING[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]NAFTA_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_NAFTA_KING]NAFTA_KING[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]NAFTA_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_NAFTA_KING]NAFTA_KING[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]NAFTA_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_NAFTA_KING]NAFTA_KING[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]NAFTA_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_NAFTA_KING]NAFTA_KING[\LINK] who is known as a formidable opponent.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_CIVILIZATION_EU</Tag>
@@ -6401,6 +6689,38 @@
 	<Spanish>EU</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_LEADER_HERR_PROFESSOR</Tag>
+	<English>Herr Professor</English>
+	<French>Herr Professor</French>
+	<German>Herr Professor</German>
+	<Italian>Herr Professor</Italian>
+	<Spanish>Herr Professor</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_HERR_PROFESSOR_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]Herr Professor[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_EU]EU[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]Herr Professor[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_EU]EU[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]Herr Professor[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_EU]EU[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]Herr Professor[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_EU]EU[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]Herr Professor[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_EU]EU[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_HIS_EXCELLENCY</Tag>
+	<English>His Excellency</English>
+	<French>His Excellency</French>
+	<German>His Excellency</German>
+	<Italian>His Excellency</Italian>
+	<Spanish>His Excellency</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_HIS_EXCELLENCY_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]His Excellency[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_EU]EU[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]His Excellency[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_EU]EU[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]His Excellency[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_EU]EU[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]His Excellency[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_EU]EU[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]His Excellency[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_EU]EU[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_CIVILIZATION_EU_KING</Tag>
 	<English>EU Government</English>
 	<French>EU Government</French>
@@ -6431,6 +6751,22 @@
 	<German>EU</German>
 	<Italian>EU</Italian>
 	<Spanish>EU</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_EU_KING</Tag>
+	<English>EU_KING</English>
+	<French>EU_KING</French>
+	<German>EU_KING</German>
+	<Italian>EU_KING</Italian>
+	<Spanish>EU_KING</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_EU_KING_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]EU_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_EU_KING]EU_KING[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]EU_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_EU_KING]EU_KING[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]EU_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_EU_KING]EU_KING[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]EU_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_EU_KING]EU_KING[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]EU_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_EU_KING]EU_KING[\LINK] who is known as a formidable opponent.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_CIVILIZATION_CHINA</Tag>
@@ -6465,6 +6801,38 @@
 	<Spanish>China</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_LEADER_COMRADE_CHAIRMAN</Tag>
+	<English>Comrade Chairman</English>
+	<French>Comrade Chairman</French>
+	<German>Comrade Chairman</German>
+	<Italian>Comrade Chairman</Italian>
+	<Spanish>Comrade Chairman</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_COMRADE_CHAIRMAN_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]Comrade Chairman[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CHINA]China[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]Comrade Chairman[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CHINA]China[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]Comrade Chairman[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CHINA]China[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]Comrade Chairman[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CHINA]China[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]Comrade Chairman[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CHINA]China[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_MADAM_SECRETARY</Tag>
+	<English>Madam Secretary</English>
+	<French>Madam Secretary</French>
+	<German>Madam Secretary</German>
+	<Italian>Madam Secretary</Italian>
+	<Spanish>Madam Secretary</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_MADAM_SECRETARY_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]Madam Secretary[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CHINA]China[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]Madam Secretary[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CHINA]China[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]Madam Secretary[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CHINA]China[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]Madam Secretary[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CHINA]China[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]Madam Secretary[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CHINA]China[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_CIVILIZATION_CHINA_KING</Tag>
 	<English>China Government</English>
 	<French>China Government</French>
@@ -6495,6 +6863,22 @@
 	<German>China</German>
 	<Italian>China</Italian>
 	<Spanish>China</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_CHINA_KING</Tag>
+	<English>CHINA_KING</English>
+	<French>CHINA_KING</French>
+	<German>CHINA_KING</German>
+	<Italian>CHINA_KING</Italian>
+	<Spanish>CHINA_KING</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_CHINA_KING_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]CHINA_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CHINA_KING]CHINA_KING[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]CHINA_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CHINA_KING]CHINA_KING[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]CHINA_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CHINA_KING]CHINA_KING[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]CHINA_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CHINA_KING]CHINA_KING[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]CHINA_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CHINA_KING]CHINA_KING[\LINK] who is known as a formidable opponent.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_CIVILIZATION_RUSSIA</Tag>
@@ -6529,6 +6913,38 @@
 	<Spanish>Russia</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_LEADER_THE_PRODIGAL_DAUGHTER</Tag>
+	<English>The Prodigal Daughter</English>
+	<French>The Prodigal Daughter</French>
+	<German>The Prodigal Daughter</German>
+	<Italian>The Prodigal Daughter</Italian>
+	<Spanish>The Prodigal Daughter</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_THE_PRODIGAL_DAUGHTER_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]The Prodigal Daughter[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_RUSSIA]Russia[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]The Prodigal Daughter[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_RUSSIA]Russia[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]The Prodigal Daughter[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_RUSSIA]Russia[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]The Prodigal Daughter[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_RUSSIA]Russia[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]The Prodigal Daughter[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_RUSSIA]Russia[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_THE_CAPTAIN_OF_INDUSTRY</Tag>
+	<English>The Captain of Industry</English>
+	<French>The Captain of Industry</French>
+	<German>The Captain of Industry</German>
+	<Italian>The Captain of Industry</Italian>
+	<Spanish>The Captain of Industry</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_THE_CAPTAIN_OF_INDUSTRY_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]The Captain of Industry[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_RUSSIA]Russia[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]The Captain of Industry[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_RUSSIA]Russia[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]The Captain of Industry[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_RUSSIA]Russia[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]The Captain of Industry[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_RUSSIA]Russia[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]The Captain of Industry[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_RUSSIA]Russia[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_CIVILIZATION_RUSSIA_KING</Tag>
 	<English>Russia Government</English>
 	<French>Russia Government</French>
@@ -6559,6 +6975,22 @@
 	<German>Russia</German>
 	<Italian>Russia</Italian>
 	<Spanish>Russia</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_RUSSIA_KING</Tag>
+	<English>RUSSIA_KING</English>
+	<French>RUSSIA_KING</French>
+	<German>RUSSIA_KING</German>
+	<Italian>RUSSIA_KING</Italian>
+	<Spanish>RUSSIA_KING</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_RUSSIA_KING_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]RUSSIA_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_RUSSIA_KING]RUSSIA_KING[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]RUSSIA_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_RUSSIA_KING]RUSSIA_KING[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]RUSSIA_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_RUSSIA_KING]RUSSIA_KING[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]RUSSIA_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_RUSSIA_KING]RUSSIA_KING[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]RUSSIA_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_RUSSIA_KING]RUSSIA_KING[\LINK] who is known as a formidable opponent.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_CIVILIZATION_JAPAN</Tag>
@@ -6593,6 +7025,22 @@
 	<Spanish>Japan</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_LEADER_THE_MODEL_CITIZEN</Tag>
+	<English>The Model Citizen</English>
+	<French>The Model Citizen</French>
+	<German>The Model Citizen</German>
+	<Italian>The Model Citizen</Italian>
+	<Spanish>The Model Citizen</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_THE_MODEL_CITIZEN_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]The Model Citizen[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_JAPAN]Japan[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]The Model Citizen[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_JAPAN]Japan[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]The Model Citizen[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_JAPAN]Japan[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]The Model Citizen[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_JAPAN]Japan[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]The Model Citizen[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_JAPAN]Japan[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_CIVILIZATION_JAPAN_KING</Tag>
 	<English>Japan Government</English>
 	<French>Japan Government</French>
@@ -6623,6 +7071,22 @@
 	<German>Japan</German>
 	<Italian>Japan</Italian>
 	<Spanish>Japan</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_JAPAN_KING</Tag>
+	<English>JAPAN_KING</English>
+	<French>JAPAN_KING</French>
+	<German>JAPAN_KING</German>
+	<Italian>JAPAN_KING</Italian>
+	<Spanish>JAPAN_KING</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_JAPAN_KING_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]JAPAN_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_JAPAN_KING]JAPAN_KING[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]JAPAN_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_JAPAN_KING]JAPAN_KING[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]JAPAN_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_JAPAN_KING]JAPAN_KING[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]JAPAN_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_JAPAN_KING]JAPAN_KING[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]JAPAN_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_JAPAN_KING]JAPAN_KING[\LINK] who is known as a formidable opponent.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_CIVILIZATION_CALIPHATE</Tag>
@@ -6657,6 +7121,38 @@
 	<Spanish>Caliphate</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_LEADER_SAYYADINA</Tag>
+	<English>Sayyadina</English>
+	<French>Sayyadina</French>
+	<German>Sayyadina</German>
+	<Italian>Sayyadina</Italian>
+	<Spanish>Sayyadina</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_SAYYADINA_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]Sayyadina[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CALIPHATE]Caliphate[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]Sayyadina[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CALIPHATE]Caliphate[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]Sayyadina[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CALIPHATE]Caliphate[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]Sayyadina[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CALIPHATE]Caliphate[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]Sayyadina[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CALIPHATE]Caliphate[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_HIS_HIGHNESS</Tag>
+	<English>His Highness</English>
+	<French>His Highness</French>
+	<German>His Highness</German>
+	<Italian>His Highness</Italian>
+	<Spanish>His Highness</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_HIS_HIGHNESS_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]His Highness[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CALIPHATE]Caliphate[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]His Highness[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CALIPHATE]Caliphate[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]His Highness[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CALIPHATE]Caliphate[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]His Highness[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CALIPHATE]Caliphate[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]His Highness[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CALIPHATE]Caliphate[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_CIVILIZATION_CALIPHATE_KING</Tag>
 	<English>Caliphate Government</English>
 	<French>Caliphate Government</French>
@@ -6687,6 +7183,22 @@
 	<German>Caliphate</German>
 	<Italian>Caliphate</Italian>
 	<Spanish>Caliphate</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_CALIPHATE_KING</Tag>
+	<English>CALIPHATE_KING</English>
+	<French>CALIPHATE_KING</French>
+	<German>CALIPHATE_KING</German>
+	<Italian>CALIPHATE_KING</Italian>
+	<Spanish>CALIPHATE_KING</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_CALIPHATE_KING_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]CALIPHATE_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CALIPHATE_KING]CALIPHATE_KING[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]CALIPHATE_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CALIPHATE_KING]CALIPHATE_KING[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]CALIPHATE_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CALIPHATE_KING]CALIPHATE_KING[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]CALIPHATE_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CALIPHATE_KING]CALIPHATE_KING[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]CALIPHATE_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CALIPHATE_KING]CALIPHATE_KING[\LINK] who is known as a formidable opponent.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_CIVILIZATION_CONSORTIUM</Tag>
@@ -6721,6 +7233,38 @@
 	<Spanish>Consortium</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_LEADER_DIRECTOR_BLACK</Tag>
+	<English>Director Black</English>
+	<French>Director Black</French>
+	<German>Director Black</German>
+	<Italian>Director Black</Italian>
+	<Spanish>Director Black</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_DIRECTOR_BLACK_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]Director Black[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CONSORTIUM]Consortium[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]Director Black[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CONSORTIUM]Consortium[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]Director Black[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CONSORTIUM]Consortium[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]Director Black[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CONSORTIUM]Consortium[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]Director Black[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CONSORTIUM]Consortium[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_DIRECTOR_GREEN</Tag>
+	<English>Director Green</English>
+	<French>Director Green</French>
+	<German>Director Green</German>
+	<Italian>Director Green</Italian>
+	<Spanish>Director Green</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_DIRECTOR_GREEN_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]Director Green[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CONSORTIUM]Consortium[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]Director Green[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CONSORTIUM]Consortium[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]Director Green[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CONSORTIUM]Consortium[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]Director Green[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CONSORTIUM]Consortium[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]Director Green[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CONSORTIUM]Consortium[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_CIVILIZATION_CONSORTIUM_KING</Tag>
 	<English>Consortium Government</English>
 	<French>Consortium Government</French>
@@ -6751,6 +7295,22 @@
 	<German>Consortium</German>
 	<Italian>Consortium</Italian>
 	<Spanish>Consortium</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_CONSORTIUM_KING</Tag>
+	<English>CONSORTIUM_KING</English>
+	<French>CONSORTIUM_KING</French>
+	<German>CONSORTIUM_KING</German>
+	<Italian>CONSORTIUM_KING</Italian>
+	<Spanish>CONSORTIUM_KING</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_CONSORTIUM_KING_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]CONSORTIUM_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CONSORTIUM_KING]CONSORTIUM_KING[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]CONSORTIUM_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CONSORTIUM_KING]CONSORTIUM_KING[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]CONSORTIUM_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CONSORTIUM_KING]CONSORTIUM_KING[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]CONSORTIUM_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CONSORTIUM_KING]CONSORTIUM_KING[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]CONSORTIUM_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_CONSORTIUM_KING]CONSORTIUM_KING[\LINK] who is known as a formidable opponent.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_CIVILIZATION_SYNDICATE</Tag>
@@ -6785,6 +7345,54 @@
 	<Spanish>Syndicate</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_LEADER_GODMOTHER</Tag>
+	<English>Godmother</English>
+	<French>Godmother</French>
+	<German>Godmother</German>
+	<Italian>Godmother</Italian>
+	<Spanish>Godmother</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_GODMOTHER_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]Godmother[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE]Syndicate[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]Godmother[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE]Syndicate[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]Godmother[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE]Syndicate[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]Godmother[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE]Syndicate[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]Godmother[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE]Syndicate[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_BARBARIAN</Tag>
+	<English>Barbarian</English>
+	<French>Barbarian</French>
+	<German>Barbarian</German>
+	<Italian>Barbarian</Italian>
+	<Spanish>Barbarian</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_BARBARIAN_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]Barbarian[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE]Syndicate[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]Barbarian[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE]Syndicate[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]Barbarian[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE]Syndicate[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]Barbarian[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE]Syndicate[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]Barbarian[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE]Syndicate[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_VASSAL_LORD_ONE</Tag>
+	<English>Vassal Lord One</English>
+	<French>Vassal Lord One</French>
+	<German>Vassal Lord One</German>
+	<Italian>Vassal Lord One</Italian>
+	<Spanish>Vassal Lord One</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_VASSAL_LORD_ONE_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]Vassal Lord One[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE]Syndicate[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]Vassal Lord One[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE]Syndicate[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]Vassal Lord One[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE]Syndicate[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]Vassal Lord One[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE]Syndicate[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]Vassal Lord One[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE]Syndicate[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_CIVILIZATION_SYNDICATE_KING</Tag>
 	<English>Syndicate Government</English>
 	<French>Syndicate Government</French>
@@ -6815,5 +7423,21 @@
 	<German>Syndicate</German>
 	<Italian>Syndicate</Italian>
 	<Spanish>Syndicate</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_SYNDICATE_KING</Tag>
+	<English>SYNDICATE_KING</English>
+	<French>SYNDICATE_KING</French>
+	<German>SYNDICATE_KING</German>
+	<Italian>SYNDICATE_KING</Italian>
+	<Spanish>SYNDICATE_KING</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_SYNDICATE_KING_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]SYNDICATE_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE_KING]SYNDICATE_KING[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]SYNDICATE_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE_KING]SYNDICATE_KING[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]SYNDICATE_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE_KING]SYNDICATE_KING[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]SYNDICATE_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE_KING]SYNDICATE_KING[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]SYNDICATE_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE_KING]SYNDICATE_KING[\LINK] who is known as a formidable opponent.</Spanish>
 </TEXT>
 </Civ4GameText>

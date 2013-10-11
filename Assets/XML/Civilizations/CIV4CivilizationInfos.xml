@@ -94,7 +94,11 @@
 	<InitialCivics/>
 	<Leaders>
 		<Leader>
-			<LeaderName>LEADER_OFFA</LeaderName>
+			<LeaderName>LEADER_THE_MAJOR_GENERAL</LeaderName>
+			<bLeaderAvailability>1</bLeaderAvailability>
+		</Leader>
+		<Leader>
+			<LeaderName>LEADER_THE_CHIEF_OF_STAFF</LeaderName>
 			<bLeaderAvailability>1</bLeaderAvailability>
 		</Leader>
 	</Leaders>
@@ -187,7 +191,7 @@
 	<InitialCivics/>
 	<Leaders>
 		<Leader>
-			<LeaderName>LEADER_OFFA</LeaderName>
+			<LeaderName>LEADER_NAFTA_KING</LeaderName>
 			<bLeaderAvailability>1</bLeaderAvailability>
 		</Leader>
 	</Leaders>
@@ -284,7 +288,11 @@
 	<InitialCivics/>
 	<Leaders>
 		<Leader>
-			<LeaderName>LEADER_OFFA</LeaderName>
+			<LeaderName>LEADER_HERR_PROFESSOR</LeaderName>
+			<bLeaderAvailability>1</bLeaderAvailability>
+		</Leader>
+		<Leader>
+			<LeaderName>LEADER_HIS_EXCELLENCY</LeaderName>
 			<bLeaderAvailability>1</bLeaderAvailability>
 		</Leader>
 	</Leaders>
@@ -377,7 +385,7 @@
 	<InitialCivics/>
 	<Leaders>
 		<Leader>
-			<LeaderName>LEADER_OFFA</LeaderName>
+			<LeaderName>LEADER_EU_KING</LeaderName>
 			<bLeaderAvailability>1</bLeaderAvailability>
 		</Leader>
 	</Leaders>
@@ -474,7 +482,11 @@
 	<InitialCivics/>
 	<Leaders>
 		<Leader>
-			<LeaderName>LEADER_OFFA</LeaderName>
+			<LeaderName>LEADER_COMRADE_CHAIRMAN</LeaderName>
+			<bLeaderAvailability>1</bLeaderAvailability>
+		</Leader>
+		<Leader>
+			<LeaderName>LEADER_MADAM_SECRETARY</LeaderName>
 			<bLeaderAvailability>1</bLeaderAvailability>
 		</Leader>
 	</Leaders>
@@ -567,7 +579,7 @@
 	<InitialCivics/>
 	<Leaders>
 		<Leader>
-			<LeaderName>LEADER_OFFA</LeaderName>
+			<LeaderName>LEADER_CHINA_KING</LeaderName>
 			<bLeaderAvailability>1</bLeaderAvailability>
 		</Leader>
 	</Leaders>
@@ -664,7 +676,11 @@
 	<InitialCivics/>
 	<Leaders>
 		<Leader>
-			<LeaderName>LEADER_OFFA</LeaderName>
+			<LeaderName>LEADER_THE_PRODIGAL_DAUGHTER</LeaderName>
+			<bLeaderAvailability>1</bLeaderAvailability>
+		</Leader>
+		<Leader>
+			<LeaderName>LEADER_THE_CAPTAIN_OF_INDUSTRY</LeaderName>
 			<bLeaderAvailability>1</bLeaderAvailability>
 		</Leader>
 	</Leaders>
@@ -757,7 +773,7 @@
 	<InitialCivics/>
 	<Leaders>
 		<Leader>
-			<LeaderName>LEADER_OFFA</LeaderName>
+			<LeaderName>LEADER_RUSSIA_KING</LeaderName>
 			<bLeaderAvailability>1</bLeaderAvailability>
 		</Leader>
 	</Leaders>
@@ -854,7 +870,7 @@
 	<InitialCivics/>
 	<Leaders>
 		<Leader>
-			<LeaderName>LEADER_OFFA</LeaderName>
+			<LeaderName>LEADER_THE_MODEL_CITIZEN</LeaderName>
 			<bLeaderAvailability>1</bLeaderAvailability>
 		</Leader>
 	</Leaders>
@@ -947,7 +963,7 @@
 	<InitialCivics/>
 	<Leaders>
 		<Leader>
-			<LeaderName>LEADER_OFFA</LeaderName>
+			<LeaderName>LEADER_JAPAN_KING</LeaderName>
 			<bLeaderAvailability>1</bLeaderAvailability>
 		</Leader>
 	</Leaders>
@@ -1044,7 +1060,11 @@
 	<InitialCivics/>
 	<Leaders>
 		<Leader>
-			<LeaderName>LEADER_OFFA</LeaderName>
+			<LeaderName>LEADER_SAYYADINA</LeaderName>
+			<bLeaderAvailability>1</bLeaderAvailability>
+		</Leader>
+		<Leader>
+			<LeaderName>LEADER_HIS_HIGHNESS</LeaderName>
 			<bLeaderAvailability>1</bLeaderAvailability>
 		</Leader>
 	</Leaders>
@@ -1137,7 +1157,7 @@
 	<InitialCivics/>
 	<Leaders>
 		<Leader>
-			<LeaderName>LEADER_OFFA</LeaderName>
+			<LeaderName>LEADER_CALIPHATE_KING</LeaderName>
 			<bLeaderAvailability>1</bLeaderAvailability>
 		</Leader>
 	</Leaders>
@@ -1234,7 +1254,11 @@
 	<InitialCivics/>
 	<Leaders>
 		<Leader>
-			<LeaderName>LEADER_OFFA</LeaderName>
+			<LeaderName>LEADER_DIRECTOR_BLACK</LeaderName>
+			<bLeaderAvailability>1</bLeaderAvailability>
+		</Leader>
+		<Leader>
+			<LeaderName>LEADER_DIRECTOR_GREEN</LeaderName>
 			<bLeaderAvailability>1</bLeaderAvailability>
 		</Leader>
 	</Leaders>
@@ -1327,7 +1351,7 @@
 	<InitialCivics/>
 	<Leaders>
 		<Leader>
-			<LeaderName>LEADER_OFFA</LeaderName>
+			<LeaderName>LEADER_CONSORTIUM_KING</LeaderName>
 			<bLeaderAvailability>1</bLeaderAvailability>
 		</Leader>
 	</Leaders>
@@ -1424,7 +1448,15 @@
 	<InitialCivics/>
 	<Leaders>
 		<Leader>
-			<LeaderName>LEADER_OFFA</LeaderName>
+			<LeaderName>LEADER_GODMOTHER</LeaderName>
+			<bLeaderAvailability>1</bLeaderAvailability>
+		</Leader>
+		<Leader>
+			<LeaderName>LEADER_BARBARIAN</LeaderName>
+			<bLeaderAvailability>1</bLeaderAvailability>
+		</Leader>
+		<Leader>
+			<LeaderName>LEADER_VASSAL_LORD_ONE</LeaderName>
 			<bLeaderAvailability>1</bLeaderAvailability>
 		</Leader>
 	</Leaders>
@@ -1517,7 +1549,7 @@
 	<InitialCivics/>
 	<Leaders>
 		<Leader>
-			<LeaderName>LEADER_OFFA</LeaderName>
+			<LeaderName>LEADER_SYNDICATE_KING</LeaderName>
 			<bLeaderAvailability>1</bLeaderAvailability>
 		</Leader>
 	</Leaders>

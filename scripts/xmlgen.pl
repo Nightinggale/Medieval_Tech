@@ -933,7 +933,8 @@ print FI "\t\t<Type>FEATURE_".$tag."</Type>\n";
 print FI "\t\t<Description>TXT_KEY_FEATURE_".$tag."</Description>\n";
 &maketext("TXT_KEY_FEATURE_".$tag,$desc);
 print FI "\t\t<Civilopedia>TXT_KEY_FEATURE_JUNGLE_PEDIA</Civilopedia>\n";
-print FI "\t\t<ArtDefineTag>ART_DEF_FEATURE_".$tag."</ArtDefineTag>\n";
+print FI "\t\t<ArtDefineTag>ART_DEF_FEATURE_JUNGLE</ArtDefineTag>\n";
+#print FI "\t\t<ArtDefineTag>ART_DEF_FEATURE_".$tag."</ArtDefineTag>\n";
 print FI "\t\t<YieldChanges>\n";
 for my $yield ( keys (%$href) ) {
 	my $prod = $href->{$yield};
@@ -1031,9 +1032,15 @@ print FI "</FeatureInfo>\n";
 
 # make features
 &makefeature('FOREST',{'BIOPOLYMERS'=>4,'NUTRIENTS'=>-1});
-&makefeature('LIGHT_FOREST',{'BIOPOLYMERS'=>3,'AMINO_ACIDS'=>1});
-&makefeature('JUNGLE',{'BIOPOLYMERS'=>3,'XENOTOXINS'=>1});
+&makefeature('LIGHT_FOREST',{'BIOPOLYMERS'=>3});
+&makefeature('JUNGLE',{'BIOPOLYMERS'=>3,'NUTRIENTS'=>-1});
 &makefeature('ICE',{''});
+&makefeature('LUMINOUS_FOREST',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makefeature('FUNGAL_FOREST',{'BIOPOLYMERS'=>3,'OPIATES'=>1,'NUTRIENTS'=>-1});
+&makefeature('CYCAD_FOREST',{'BIOPOLYMERS'=>3,'NUCLEIC_ACIDS'=>1,'NUTRIENTS'=>-1});
+&makefeature('PETRIFIED_FOREST',{'BIOPOLYMERS'=>3,'HYDROCARBONS'=>1,'NUTRIENTS'=>-1});
+&makefeature('PROGENITOR_RUINS',{'BIOPOLYMERS'=>3,'DATACORES'=>1,'NUTRIENTS'=>-1});
+
 print FI "</FeatureInfos>\n</Civ4FeatureInfos>\n";
 close FI;
 
@@ -2960,17 +2967,22 @@ sub makekingciv
 	print ADC "</CivilizationArtInfo>\n";
 	}
 
-# 1st arg = civ description, rest = LHs
-sub makehumanciv
+# 1st arg = civ description, 2nd: 1=colonial,2=native,3=nonplayable,  rest = LHs
+sub makeciv
 {
 	my $desc = shift;
+	my $type = shift;
 	my $tag = $desc;
 	$tag =~ tr/ /_/;
 	$tag =~ tr/[a-z]/[A-Z]/;
 	print CI "<CivilizationInfo>\n";
 	print CI "\t<Type>CIVILIZATION_".$tag."</Type>\n";
 	print CI "\t<Description>TXT_KEY_CIVILIZATION_".$tag."</Description>\n";
-	&maketext("TXT_KEY_CIVILIZATION_".$tag, $desc." Colonies");
+	if ($type == 1) {
+		&maketext("TXT_KEY_CIVILIZATION_".$tag, $desc." Colonies");
+		} else {
+		&maketext("TXT_KEY_CIVILIZATION_".$tag, $desc);
+		}
 	print CI "\t<ShortDescription>TXT_KEY_CIVILIZATION_".$tag."_SHORT</ShortDescription>\n";
 	&maketext("TXT_KEY_CIVILIZATION_".$tag."_SHORT", $desc);
 	print CI "\t<Adjective>TXT_KEY_CIVILIZATION_".$tag."_ADJ</Adjective>\n";
@@ -2982,17 +2994,34 @@ sub makehumanciv
 	print CI "\t<ArtDefineTag>ART_DEF_CIVILIZATION_".$tag."</ArtDefineTag>\n";
 	print CI "\t<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>\n";
 	print CI "\t<UnitArtStyleType>UNIT_ARTSTYLE_ANGLO</UnitArtStyleType>\n";
-	print CI "\t<bPlayable>1</bPlayable>\n";
-	print CI "\t<bAIPlayable>1</bAIPlayable>\n";
-	print CI "\t<bWaterStart>1</bWaterStart>\n";
-	print CI "\t<bOpenBorders>0</bOpenBorders>\n";
-	print CI "\t<bWaterWorks>1</bWaterWorks>\n";
-	print CI "\t<bEurope>0</bEurope>\n";
-	print CI "\t<bNative>0</bNative>\n";
-	print CI "\t<iAdvancedStartPoints>0</iAdvancedStartPoints>\n";
-	print CI "\t<iAreaMultiplier>100</iAreaMultiplier>\n";
-	print CI "\t<iDensityMultiplier>100</iDensityMultiplier>\n";
-	print CI "\t<iTreasure>0</iTreasure>\n";
+	if ($type == 3)
+		{print CI "\t<bPlayable>0</bPlayable>\n";
+		print CI "\t<bAIPlayable>0</bAIPlayable>\n";
+		} else {
+		print CI "\t<bPlayable>1</bPlayable>\n";
+		print CI "\t<bAIPlayable>1</bAIPlayable>\n"; }
+	if ($type == 2)
+		{
+		print CI "\t<bWaterStart>0</bWaterStart>\n";
+		print CI "\t<bOpenBorders>1</bOpenBorders>\n";
+		print CI "\t<bWaterWorks>1</bWaterWorks>\n";
+		print CI "\t<bEurope>0</bEurope>\n";
+		print CI "\t<bNative>1</bNative>\n";
+		print CI "\t<iAdvancedStartPoints>1000</iAdvancedStartPoints>\n";
+		print CI "\t<iAreaMultiplier>100</iAreaMultiplier>\n";
+		print CI "\t<iDensityMultiplier>100</iDensityMultiplier>\n";
+		print CI "\t<iTreasure>100</iTreasure>\n";
+		} else {
+		print CI "\t<bWaterStart>1</bWaterStart>\n";
+		print CI "\t<bOpenBorders>0</bOpenBorders>\n";
+		print CI "\t<bWaterWorks>1</bWaterWorks>\n";
+		print CI "\t<bEurope>0</bEurope>\n";
+		print CI "\t<bNative>0</bNative>\n";
+		print CI "\t<iAdvancedStartPoints>0</iAdvancedStartPoints>\n";
+		print CI "\t<iAreaMultiplier>100</iAreaMultiplier>\n";
+		print CI "\t<iDensityMultiplier>100</iDensityMultiplier>\n";
+		print CI "\t<iTreasure>0</iTreasure>\n";
+		}
 	print CI "\t<FavoredTerrain>NONE</FavoredTerrain>\n";
 	print CI "\t<DefaultProfession>PROFESSION_COLONIST</DefaultProfession>\n";
 	print CI "\t<Cities>\n";
@@ -3021,20 +3050,25 @@ sub makehumanciv
 	print CI "\t\t\t<bTrait>0</bTrait>\n";
 	print CI "\t\t</Trait>\n";
 	print CI "\t</Traits>\n";
-	print CI "\t<FreeUnitClasses>\n";
-	print CI "\t\t<FreeUnitClass>\n";
-	print CI "\t\t\t<UnitClassType>UNITCLASS_CORVETTE</UnitClassType>\n";
-	print CI "\t\t\t<FreeUnitProfession>NONE</FreeUnitProfession>\n";
-	print CI "\t\t</FreeUnitClass>\n";
-	print CI "\t\t<FreeUnitClass>\n";
-	print CI "\t\t\t<UnitClassType>UNITCLASS_COLONIST</UnitClassType>\n";
-	print CI "\t\t\t<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>\n";
-	print CI "\t\t</FreeUnitClass>\n";
-	print CI "\t\t<FreeUnitClass>\n";
-	print CI "\t\t\t<UnitClassType>UNITCLASS_COLONIST</UnitClassType>\n";
-	print CI "\t\t\t<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>\n";
-	print CI "\t\t</FreeUnitClass>\n";
-	print CI "\t</FreeUnitClasses>\n";
+	if ($type == 1)
+		{
+		print CI "\t<FreeUnitClasses>\n";
+		print CI "\t\t<FreeUnitClass>\n";
+		print CI "\t\t\t<UnitClassType>UNITCLASS_CORVETTE</UnitClassType>\n";
+		print CI "\t\t\t<FreeUnitProfession>NONE</FreeUnitProfession>\n";
+		print CI "\t\t</FreeUnitClass>\n";
+		print CI "\t\t<FreeUnitClass>\n";
+		print CI "\t\t\t<UnitClassType>UNITCLASS_COLONIST</UnitClassType>\n";
+		print CI "\t\t\t<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>\n";
+		print CI "\t\t</FreeUnitClass>\n";
+		print CI "\t\t<FreeUnitClass>\n";
+		print CI "\t\t\t<UnitClassType>UNITCLASS_COLONIST</UnitClassType>\n";
+		print CI "\t\t\t<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>\n";
+		print CI "\t\t</FreeUnitClass>\n";
+		print CI "\t</FreeUnitClasses>\n";
+		} else {
+		print CI "\t<FreeUnitClasses/>\n";
+		}
 	print CI "\t<FreeBuildingClasses>\n";
 	print CI "\t\t<FreeBuildingClass>\n";
 	print CI "\t\t\t<BuildingClassType>BUILDINGCLASS_INDUSTRY1</BuildingClassType>\n";
@@ -3085,24 +3119,37 @@ sub makehumanciv
 	print ADC "\t<bInvertFlag>0</bInvertFlag>\n";
 	print ADC "\t<iFontButtonIndex>21</iFontButtonIndex>\n";
 	print ADC "</CivilizationArtInfo>\n";
-
-	&makekingciv($desc);
+	
+	if ($type != 3) {&makekingciv($desc);}
 	}
 
 # create civs and parents
-&makehumanciv('NAFTA','The Major General','The Chief of Staff');
-&makehumanciv('EU','Herr Professor','His Excellency');
-&makehumanciv('China','Comrade Chairman','Madam Secretary');
-&makehumanciv('Russia','The Prodigal Daughter','The Captain of Industry');
-&makehumanciv('Japan','The Model Citizen');
-&makehumanciv('Caliphate','Sayyadina','His Highness');
-&makehumanciv('Consortium','Director Black','Director Green');
-&makehumanciv('Syndicate','Godmother','Barbarian','Vassal Lord One');
+&makeciv('NAFTA',1,'The Major General','The Chief of Staff');
+&makeciv('EU',1,'Herr Professor','His Excellency');
+&makeciv('China',1,'Comrade Chairman','Madam Secretary');
+&makeciv('Russia',1,'The Prodigal Daughter','The Captain of Industry');
+&makeciv('Japan',1,'The Model Citizen');
+&makeciv('Caliphate',1,'Sayyadina','His Highness');
+&makeciv('Consortium',1,'Director Black','Director Green');
+&makeciv('Syndicate',1,'Godmother');
+
+&makeciv('Greys',2,'He of the Ashes');
+&makeciv('Greens',2,'He-Who-Seeks');
+&makeciv('Avians',2,'Nightingale');
+&makeciv('Sasquatch',2,'Kailric');
+&makeciv('Felids',2,'Androrc');
+&makeciv('Silicoids',2,'TC02');
+&makeciv('Reptilians',2,'Pharaoh');
+&makeciv('Amphibians',2,'Hastur');
+&makeciv('Icthyoids',2,'Dagon');
+
+&makeciv('Barbarian',3,'Barbarian');
+&makeciv('VASSAL_LORD_ONE',3,'VASSAL_LORD_ONE');
 
 # add hardcoded civs
-open (HARD, '< ../Assets/XML/Civilizations/CIV4CivilizationInfos_hardcoded.xml') or die "Can't read hardcoded civs: $!";	
-foreach (<HARD>) {print CI  $_;}
-close HARD;
+#open (HARD, '< ../Assets/XML/Civilizations/CIV4CivilizationInfos_hardcoded.xml') or die "Can't read hardcoded civs: $!";	
+#foreach (<HARD>) {print CI  $_;}
+#close HARD;
 
 # close files
 print CI '</CivilizationInfos>'."\n</Civ4CivilizationInfos>\n";

@@ -134,5 +134,165 @@
 	<bInvertFlag>0</bInvertFlag>
 	<iFontButtonIndex>21</iFontButtonIndex>
 </CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_GREYS</Type>
+	<Button>Art/Interface/TeamColor/GREYS.dds</Button>
+	<Path>Art/Interface/TeamColor/GREYS.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_GREYS_KING</Type>
+	<Button>Art/Interface/TeamColor/GREYS_KING.dds</Button>
+	<Path>Art/Interface/TeamColor/GREYS_KING.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_GREENS</Type>
+	<Button>Art/Interface/TeamColor/GREENS.dds</Button>
+	<Path>Art/Interface/TeamColor/GREENS.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_GREENS_KING</Type>
+	<Button>Art/Interface/TeamColor/GREENS_KING.dds</Button>
+	<Path>Art/Interface/TeamColor/GREENS_KING.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_AVIANS</Type>
+	<Button>Art/Interface/TeamColor/AVIANS.dds</Button>
+	<Path>Art/Interface/TeamColor/AVIANS.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_AVIANS_KING</Type>
+	<Button>Art/Interface/TeamColor/AVIANS_KING.dds</Button>
+	<Path>Art/Interface/TeamColor/AVIANS_KING.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_SASQUATCH</Type>
+	<Button>Art/Interface/TeamColor/SASQUATCH.dds</Button>
+	<Path>Art/Interface/TeamColor/SASQUATCH.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_SASQUATCH_KING</Type>
+	<Button>Art/Interface/TeamColor/SASQUATCH_KING.dds</Button>
+	<Path>Art/Interface/TeamColor/SASQUATCH_KING.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_FELIDS</Type>
+	<Button>Art/Interface/TeamColor/FELIDS.dds</Button>
+	<Path>Art/Interface/TeamColor/FELIDS.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_FELIDS_KING</Type>
+	<Button>Art/Interface/TeamColor/FELIDS_KING.dds</Button>
+	<Path>Art/Interface/TeamColor/FELIDS_KING.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_SILICOIDS</Type>
+	<Button>Art/Interface/TeamColor/SILICOIDS.dds</Button>
+	<Path>Art/Interface/TeamColor/SILICOIDS.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_SILICOIDS_KING</Type>
+	<Button>Art/Interface/TeamColor/SILICOIDS_KING.dds</Button>
+	<Path>Art/Interface/TeamColor/SILICOIDS_KING.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_REPTILIANS</Type>
+	<Button>Art/Interface/TeamColor/REPTILIANS.dds</Button>
+	<Path>Art/Interface/TeamColor/REPTILIANS.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_REPTILIANS_KING</Type>
+	<Button>Art/Interface/TeamColor/REPTILIANS_KING.dds</Button>
+	<Path>Art/Interface/TeamColor/REPTILIANS_KING.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_AMPHIBIANS</Type>
+	<Button>Art/Interface/TeamColor/AMPHIBIANS.dds</Button>
+	<Path>Art/Interface/TeamColor/AMPHIBIANS.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_AMPHIBIANS_KING</Type>
+	<Button>Art/Interface/TeamColor/AMPHIBIANS_KING.dds</Button>
+	<Path>Art/Interface/TeamColor/AMPHIBIANS_KING.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_ICTHYOIDS</Type>
+	<Button>Art/Interface/TeamColor/ICTHYOIDS.dds</Button>
+	<Path>Art/Interface/TeamColor/ICTHYOIDS.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_ICTHYOIDS_KING</Type>
+	<Button>Art/Interface/TeamColor/ICTHYOIDS_KING.dds</Button>
+	<Path>Art/Interface/TeamColor/ICTHYOIDS_KING.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_BARBARIAN</Type>
+	<Button>Art/Interface/TeamColor/BARBARIAN.dds</Button>
+	<Path>Art/Interface/TeamColor/BARBARIAN.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
+<CivilizationArtInfo>
+	<Type>ART_DEF_CIVILIZATION_VASSAL_LORD_ONE</Type>
+	<Button>Art/Interface/TeamColor/VASSAL_LORD_ONE.dds</Button>
+	<Path>Art/Interface/TeamColor/VASSAL_LORD_ONE.dds</Path>
+	<bWhiteFlag>1</bWhiteFlag>
+	<bInvertFlag>0</bInvertFlag>
+	<iFontButtonIndex>21</iFontButtonIndex>
+</CivilizationArtInfo>
 </CivilizationArtInfos>
 </Civ4ArtDefines>

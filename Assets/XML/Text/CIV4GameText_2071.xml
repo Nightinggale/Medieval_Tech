@@ -2473,6 +2473,46 @@
 	<Spanish>Ice</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_FEATURE_LUMINOUS_FOREST</Tag>
+	<English>Luminous Forest</English>
+	<French>Luminous Forest</French>
+	<German>Luminous Forest</German>
+	<Italian>Luminous Forest</Italian>
+	<Spanish>Luminous Forest</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_FEATURE_FUNGAL_FOREST</Tag>
+	<English>Fungal Forest</English>
+	<French>Fungal Forest</French>
+	<German>Fungal Forest</German>
+	<Italian>Fungal Forest</Italian>
+	<Spanish>Fungal Forest</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_FEATURE_CYCAD_FOREST</Tag>
+	<English>Cycad Forest</English>
+	<French>Cycad Forest</French>
+	<German>Cycad Forest</German>
+	<Italian>Cycad Forest</Italian>
+	<Spanish>Cycad Forest</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_FEATURE_PETRIFIED_FOREST</Tag>
+	<English>Petrified Forest</English>
+	<French>Petrified Forest</French>
+	<German>Petrified Forest</German>
+	<Italian>Petrified Forest</Italian>
+	<Spanish>Petrified Forest</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_FEATURE_PROGENITOR_RUINS</Tag>
+	<English>Progenitor Ruins</English>
+	<French>Progenitor Ruins</French>
+	<German>Progenitor Ruins</German>
+	<Italian>Progenitor Ruins</Italian>
+	<Spanish>Progenitor Ruins</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_IMPROVEMENT_FARM</Tag>
 	<English>Farm:Farms</English>
 	<French>Farm:Farms</French>
@@ -7361,38 +7401,6 @@
 	<Spanish>[COLOR_HIGHLIGHT_TEXT]Godmother[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE]Syndicate[\LINK] who is known as a formidable opponent.</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_LEADER_BARBARIAN</Tag>
-	<English>Barbarian</English>
-	<French>Barbarian</French>
-	<German>Barbarian</German>
-	<Italian>Barbarian</Italian>
-	<Spanish>Barbarian</Spanish>
-</TEXT>
-<TEXT>
-	<Tag>TXT_KEY_LEADER_BARBARIAN_PEDIA</Tag>
-	<English>[COLOR_HIGHLIGHT_TEXT]Barbarian[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE]Syndicate[\LINK] who is known as a formidable opponent.</English>
-	<French>[COLOR_HIGHLIGHT_TEXT]Barbarian[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE]Syndicate[\LINK] who is known as a formidable opponent.</French>
-	<German>[COLOR_HIGHLIGHT_TEXT]Barbarian[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE]Syndicate[\LINK] who is known as a formidable opponent.</German>
-	<Italian>[COLOR_HIGHLIGHT_TEXT]Barbarian[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE]Syndicate[\LINK] who is known as a formidable opponent.</Italian>
-	<Spanish>[COLOR_HIGHLIGHT_TEXT]Barbarian[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE]Syndicate[\LINK] who is known as a formidable opponent.</Spanish>
-</TEXT>
-<TEXT>
-	<Tag>TXT_KEY_LEADER_VASSAL_LORD_ONE</Tag>
-	<English>Vassal Lord One</English>
-	<French>Vassal Lord One</French>
-	<German>Vassal Lord One</German>
-	<Italian>Vassal Lord One</Italian>
-	<Spanish>Vassal Lord One</Spanish>
-</TEXT>
-<TEXT>
-	<Tag>TXT_KEY_LEADER_VASSAL_LORD_ONE_PEDIA</Tag>
-	<English>[COLOR_HIGHLIGHT_TEXT]Vassal Lord One[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE]Syndicate[\LINK] who is known as a formidable opponent.</English>
-	<French>[COLOR_HIGHLIGHT_TEXT]Vassal Lord One[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE]Syndicate[\LINK] who is known as a formidable opponent.</French>
-	<German>[COLOR_HIGHLIGHT_TEXT]Vassal Lord One[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE]Syndicate[\LINK] who is known as a formidable opponent.</German>
-	<Italian>[COLOR_HIGHLIGHT_TEXT]Vassal Lord One[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE]Syndicate[\LINK] who is known as a formidable opponent.</Italian>
-	<Spanish>[COLOR_HIGHLIGHT_TEXT]Vassal Lord One[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE]Syndicate[\LINK] who is known as a formidable opponent.</Spanish>
-</TEXT>
-<TEXT>
 	<Tag>TXT_KEY_CIVILIZATION_SYNDICATE_KING</Tag>
 	<English>Syndicate Government</English>
 	<French>Syndicate Government</French>
@@ -7439,5 +7447,965 @@
 	<German>[COLOR_HIGHLIGHT_TEXT]SYNDICATE_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE_KING]SYNDICATE_KING[\LINK] who is known as a formidable opponent.</German>
 	<Italian>[COLOR_HIGHLIGHT_TEXT]SYNDICATE_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE_KING]SYNDICATE_KING[\LINK] who is known as a formidable opponent.</Italian>
 	<Spanish>[COLOR_HIGHLIGHT_TEXT]SYNDICATE_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SYNDICATE_KING]SYNDICATE_KING[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_GREYS</Tag>
+	<English>Greys</English>
+	<French>Greys</French>
+	<German>Greys</German>
+	<Italian>Greys</Italian>
+	<Spanish>Greys</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_GREYS_SHORT</Tag>
+	<English>Greys</English>
+	<French>Greys</French>
+	<German>Greys</German>
+	<Italian>Greys</Italian>
+	<Spanish>Greys</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_GREYS_ADJ</Tag>
+	<English>Greys</English>
+	<French>Greys</French>
+	<German>Greys</German>
+	<Italian>Greys</Italian>
+	<Spanish>Greys</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_GREYS_PEDIA</Tag>
+	<English>Greys</English>
+	<French>Greys</French>
+	<German>Greys</German>
+	<Italian>Greys</Italian>
+	<Spanish>Greys</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_HE_OF_THE_ASHES</Tag>
+	<English>He of the Ashes</English>
+	<French>He of the Ashes</French>
+	<German>He of the Ashes</German>
+	<Italian>He of the Ashes</Italian>
+	<Spanish>He of the Ashes</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_HE_OF_THE_ASHES_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]He of the Ashes[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_GREYS]Greys[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]He of the Ashes[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_GREYS]Greys[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]He of the Ashes[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_GREYS]Greys[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]He of the Ashes[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_GREYS]Greys[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]He of the Ashes[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_GREYS]Greys[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_GREYS_KING</Tag>
+	<English>Greys Government</English>
+	<French>Greys Government</French>
+	<German>Greys Government</German>
+	<Italian>Greys Government</Italian>
+	<Spanish>Greys Government</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_GREYS_KING_SHORT</Tag>
+	<English>Greys</English>
+	<French>Greys</French>
+	<German>Greys</German>
+	<Italian>Greys</Italian>
+	<Spanish>Greys</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_GREYS_KING_ADJ</Tag>
+	<English>Greys</English>
+	<French>Greys</French>
+	<German>Greys</German>
+	<Italian>Greys</Italian>
+	<Spanish>Greys</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_GREYS_KING_PEDIA</Tag>
+	<English>Greys</English>
+	<French>Greys</French>
+	<German>Greys</German>
+	<Italian>Greys</Italian>
+	<Spanish>Greys</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_GREYS_KING</Tag>
+	<English>GREYS_KING</English>
+	<French>GREYS_KING</French>
+	<German>GREYS_KING</German>
+	<Italian>GREYS_KING</Italian>
+	<Spanish>GREYS_KING</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_GREYS_KING_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]GREYS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_GREYS_KING]GREYS_KING[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]GREYS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_GREYS_KING]GREYS_KING[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]GREYS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_GREYS_KING]GREYS_KING[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]GREYS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_GREYS_KING]GREYS_KING[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]GREYS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_GREYS_KING]GREYS_KING[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_GREENS</Tag>
+	<English>Greens</English>
+	<French>Greens</French>
+	<German>Greens</German>
+	<Italian>Greens</Italian>
+	<Spanish>Greens</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_GREENS_SHORT</Tag>
+	<English>Greens</English>
+	<French>Greens</French>
+	<German>Greens</German>
+	<Italian>Greens</Italian>
+	<Spanish>Greens</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_GREENS_ADJ</Tag>
+	<English>Greens</English>
+	<French>Greens</French>
+	<German>Greens</German>
+	<Italian>Greens</Italian>
+	<Spanish>Greens</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_GREENS_PEDIA</Tag>
+	<English>Greens</English>
+	<French>Greens</French>
+	<German>Greens</German>
+	<Italian>Greens</Italian>
+	<Spanish>Greens</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_HE-WHO-SEEKS</Tag>
+	<English>He-Who-Seeks</English>
+	<French>He-Who-Seeks</French>
+	<German>He-Who-Seeks</German>
+	<Italian>He-Who-Seeks</Italian>
+	<Spanish>He-Who-Seeks</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_HE-WHO-SEEKS_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]He-Who-Seeks[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_GREENS]Greens[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]He-Who-Seeks[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_GREENS]Greens[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]He-Who-Seeks[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_GREENS]Greens[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]He-Who-Seeks[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_GREENS]Greens[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]He-Who-Seeks[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_GREENS]Greens[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_GREENS_KING</Tag>
+	<English>Greens Government</English>
+	<French>Greens Government</French>
+	<German>Greens Government</German>
+	<Italian>Greens Government</Italian>
+	<Spanish>Greens Government</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_GREENS_KING_SHORT</Tag>
+	<English>Greens</English>
+	<French>Greens</French>
+	<German>Greens</German>
+	<Italian>Greens</Italian>
+	<Spanish>Greens</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_GREENS_KING_ADJ</Tag>
+	<English>Greens</English>
+	<French>Greens</French>
+	<German>Greens</German>
+	<Italian>Greens</Italian>
+	<Spanish>Greens</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_GREENS_KING_PEDIA</Tag>
+	<English>Greens</English>
+	<French>Greens</French>
+	<German>Greens</German>
+	<Italian>Greens</Italian>
+	<Spanish>Greens</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_GREENS_KING</Tag>
+	<English>GREENS_KING</English>
+	<French>GREENS_KING</French>
+	<German>GREENS_KING</German>
+	<Italian>GREENS_KING</Italian>
+	<Spanish>GREENS_KING</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_GREENS_KING_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]GREENS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_GREENS_KING]GREENS_KING[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]GREENS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_GREENS_KING]GREENS_KING[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]GREENS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_GREENS_KING]GREENS_KING[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]GREENS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_GREENS_KING]GREENS_KING[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]GREENS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_GREENS_KING]GREENS_KING[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_AVIANS</Tag>
+	<English>Avians</English>
+	<French>Avians</French>
+	<German>Avians</German>
+	<Italian>Avians</Italian>
+	<Spanish>Avians</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_AVIANS_SHORT</Tag>
+	<English>Avians</English>
+	<French>Avians</French>
+	<German>Avians</German>
+	<Italian>Avians</Italian>
+	<Spanish>Avians</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_AVIANS_ADJ</Tag>
+	<English>Avians</English>
+	<French>Avians</French>
+	<German>Avians</German>
+	<Italian>Avians</Italian>
+	<Spanish>Avians</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_AVIANS_PEDIA</Tag>
+	<English>Avians</English>
+	<French>Avians</French>
+	<German>Avians</German>
+	<Italian>Avians</Italian>
+	<Spanish>Avians</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_NIGHTINGALE</Tag>
+	<English>Nightingale</English>
+	<French>Nightingale</French>
+	<German>Nightingale</German>
+	<Italian>Nightingale</Italian>
+	<Spanish>Nightingale</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_NIGHTINGALE_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]Nightingale[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_AVIANS]Avians[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]Nightingale[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_AVIANS]Avians[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]Nightingale[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_AVIANS]Avians[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]Nightingale[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_AVIANS]Avians[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]Nightingale[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_AVIANS]Avians[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_AVIANS_KING</Tag>
+	<English>Avians Government</English>
+	<French>Avians Government</French>
+	<German>Avians Government</German>
+	<Italian>Avians Government</Italian>
+	<Spanish>Avians Government</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_AVIANS_KING_SHORT</Tag>
+	<English>Avians</English>
+	<French>Avians</French>
+	<German>Avians</German>
+	<Italian>Avians</Italian>
+	<Spanish>Avians</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_AVIANS_KING_ADJ</Tag>
+	<English>Avians</English>
+	<French>Avians</French>
+	<German>Avians</German>
+	<Italian>Avians</Italian>
+	<Spanish>Avians</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_AVIANS_KING_PEDIA</Tag>
+	<English>Avians</English>
+	<French>Avians</French>
+	<German>Avians</German>
+	<Italian>Avians</Italian>
+	<Spanish>Avians</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_AVIANS_KING</Tag>
+	<English>AVIANS_KING</English>
+	<French>AVIANS_KING</French>
+	<German>AVIANS_KING</German>
+	<Italian>AVIANS_KING</Italian>
+	<Spanish>AVIANS_KING</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_AVIANS_KING_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]AVIANS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_AVIANS_KING]AVIANS_KING[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]AVIANS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_AVIANS_KING]AVIANS_KING[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]AVIANS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_AVIANS_KING]AVIANS_KING[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]AVIANS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_AVIANS_KING]AVIANS_KING[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]AVIANS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_AVIANS_KING]AVIANS_KING[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_SASQUATCH</Tag>
+	<English>Sasquatch</English>
+	<French>Sasquatch</French>
+	<German>Sasquatch</German>
+	<Italian>Sasquatch</Italian>
+	<Spanish>Sasquatch</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_SASQUATCH_SHORT</Tag>
+	<English>Sasquatch</English>
+	<French>Sasquatch</French>
+	<German>Sasquatch</German>
+	<Italian>Sasquatch</Italian>
+	<Spanish>Sasquatch</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_SASQUATCH_ADJ</Tag>
+	<English>Sasquatch</English>
+	<French>Sasquatch</French>
+	<German>Sasquatch</German>
+	<Italian>Sasquatch</Italian>
+	<Spanish>Sasquatch</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_SASQUATCH_PEDIA</Tag>
+	<English>Sasquatch</English>
+	<French>Sasquatch</French>
+	<German>Sasquatch</German>
+	<Italian>Sasquatch</Italian>
+	<Spanish>Sasquatch</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_KAILRIC</Tag>
+	<English>Kailric</English>
+	<French>Kailric</French>
+	<German>Kailric</German>
+	<Italian>Kailric</Italian>
+	<Spanish>Kailric</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_KAILRIC_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]Kailric[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SASQUATCH]Sasquatch[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]Kailric[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SASQUATCH]Sasquatch[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]Kailric[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SASQUATCH]Sasquatch[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]Kailric[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SASQUATCH]Sasquatch[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]Kailric[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SASQUATCH]Sasquatch[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_SASQUATCH_KING</Tag>
+	<English>Sasquatch Government</English>
+	<French>Sasquatch Government</French>
+	<German>Sasquatch Government</German>
+	<Italian>Sasquatch Government</Italian>
+	<Spanish>Sasquatch Government</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_SASQUATCH_KING_SHORT</Tag>
+	<English>Sasquatch</English>
+	<French>Sasquatch</French>
+	<German>Sasquatch</German>
+	<Italian>Sasquatch</Italian>
+	<Spanish>Sasquatch</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_SASQUATCH_KING_ADJ</Tag>
+	<English>Sasquatch</English>
+	<French>Sasquatch</French>
+	<German>Sasquatch</German>
+	<Italian>Sasquatch</Italian>
+	<Spanish>Sasquatch</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_SASQUATCH_KING_PEDIA</Tag>
+	<English>Sasquatch</English>
+	<French>Sasquatch</French>
+	<German>Sasquatch</German>
+	<Italian>Sasquatch</Italian>
+	<Spanish>Sasquatch</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_SASQUATCH_KING</Tag>
+	<English>SASQUATCH_KING</English>
+	<French>SASQUATCH_KING</French>
+	<German>SASQUATCH_KING</German>
+	<Italian>SASQUATCH_KING</Italian>
+	<Spanish>SASQUATCH_KING</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_SASQUATCH_KING_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]SASQUATCH_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SASQUATCH_KING]SASQUATCH_KING[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]SASQUATCH_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SASQUATCH_KING]SASQUATCH_KING[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]SASQUATCH_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SASQUATCH_KING]SASQUATCH_KING[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]SASQUATCH_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SASQUATCH_KING]SASQUATCH_KING[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]SASQUATCH_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SASQUATCH_KING]SASQUATCH_KING[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_FELIDS</Tag>
+	<English>Felids</English>
+	<French>Felids</French>
+	<German>Felids</German>
+	<Italian>Felids</Italian>
+	<Spanish>Felids</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_FELIDS_SHORT</Tag>
+	<English>Felids</English>
+	<French>Felids</French>
+	<German>Felids</German>
+	<Italian>Felids</Italian>
+	<Spanish>Felids</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_FELIDS_ADJ</Tag>
+	<English>Felids</English>
+	<French>Felids</French>
+	<German>Felids</German>
+	<Italian>Felids</Italian>
+	<Spanish>Felids</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_FELIDS_PEDIA</Tag>
+	<English>Felids</English>
+	<French>Felids</French>
+	<German>Felids</German>
+	<Italian>Felids</Italian>
+	<Spanish>Felids</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_ANDRORC</Tag>
+	<English>Androrc</English>
+	<French>Androrc</French>
+	<German>Androrc</German>
+	<Italian>Androrc</Italian>
+	<Spanish>Androrc</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_ANDRORC_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]Androrc[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_FELIDS]Felids[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]Androrc[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_FELIDS]Felids[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]Androrc[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_FELIDS]Felids[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]Androrc[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_FELIDS]Felids[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]Androrc[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_FELIDS]Felids[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_FELIDS_KING</Tag>
+	<English>Felids Government</English>
+	<French>Felids Government</French>
+	<German>Felids Government</German>
+	<Italian>Felids Government</Italian>
+	<Spanish>Felids Government</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_FELIDS_KING_SHORT</Tag>
+	<English>Felids</English>
+	<French>Felids</French>
+	<German>Felids</German>
+	<Italian>Felids</Italian>
+	<Spanish>Felids</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_FELIDS_KING_ADJ</Tag>
+	<English>Felids</English>
+	<French>Felids</French>
+	<German>Felids</German>
+	<Italian>Felids</Italian>
+	<Spanish>Felids</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_FELIDS_KING_PEDIA</Tag>
+	<English>Felids</English>
+	<French>Felids</French>
+	<German>Felids</German>
+	<Italian>Felids</Italian>
+	<Spanish>Felids</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_FELIDS_KING</Tag>
+	<English>FELIDS_KING</English>
+	<French>FELIDS_KING</French>
+	<German>FELIDS_KING</German>
+	<Italian>FELIDS_KING</Italian>
+	<Spanish>FELIDS_KING</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_FELIDS_KING_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]FELIDS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_FELIDS_KING]FELIDS_KING[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]FELIDS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_FELIDS_KING]FELIDS_KING[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]FELIDS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_FELIDS_KING]FELIDS_KING[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]FELIDS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_FELIDS_KING]FELIDS_KING[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]FELIDS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_FELIDS_KING]FELIDS_KING[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_SILICOIDS</Tag>
+	<English>Silicoids</English>
+	<French>Silicoids</French>
+	<German>Silicoids</German>
+	<Italian>Silicoids</Italian>
+	<Spanish>Silicoids</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_SILICOIDS_SHORT</Tag>
+	<English>Silicoids</English>
+	<French>Silicoids</French>
+	<German>Silicoids</German>
+	<Italian>Silicoids</Italian>
+	<Spanish>Silicoids</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_SILICOIDS_ADJ</Tag>
+	<English>Silicoids</English>
+	<French>Silicoids</French>
+	<German>Silicoids</German>
+	<Italian>Silicoids</Italian>
+	<Spanish>Silicoids</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_SILICOIDS_PEDIA</Tag>
+	<English>Silicoids</English>
+	<French>Silicoids</French>
+	<German>Silicoids</German>
+	<Italian>Silicoids</Italian>
+	<Spanish>Silicoids</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_TC02</Tag>
+	<English>TC02</English>
+	<French>TC02</French>
+	<German>TC02</German>
+	<Italian>TC02</Italian>
+	<Spanish>TC02</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_TC02_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]TC02[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SILICOIDS]Silicoids[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]TC02[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SILICOIDS]Silicoids[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]TC02[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SILICOIDS]Silicoids[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]TC02[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SILICOIDS]Silicoids[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]TC02[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SILICOIDS]Silicoids[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_SILICOIDS_KING</Tag>
+	<English>Silicoids Government</English>
+	<French>Silicoids Government</French>
+	<German>Silicoids Government</German>
+	<Italian>Silicoids Government</Italian>
+	<Spanish>Silicoids Government</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_SILICOIDS_KING_SHORT</Tag>
+	<English>Silicoids</English>
+	<French>Silicoids</French>
+	<German>Silicoids</German>
+	<Italian>Silicoids</Italian>
+	<Spanish>Silicoids</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_SILICOIDS_KING_ADJ</Tag>
+	<English>Silicoids</English>
+	<French>Silicoids</French>
+	<German>Silicoids</German>
+	<Italian>Silicoids</Italian>
+	<Spanish>Silicoids</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_SILICOIDS_KING_PEDIA</Tag>
+	<English>Silicoids</English>
+	<French>Silicoids</French>
+	<German>Silicoids</German>
+	<Italian>Silicoids</Italian>
+	<Spanish>Silicoids</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_SILICOIDS_KING</Tag>
+	<English>SILICOIDS_KING</English>
+	<French>SILICOIDS_KING</French>
+	<German>SILICOIDS_KING</German>
+	<Italian>SILICOIDS_KING</Italian>
+	<Spanish>SILICOIDS_KING</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_SILICOIDS_KING_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]SILICOIDS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SILICOIDS_KING]SILICOIDS_KING[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]SILICOIDS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SILICOIDS_KING]SILICOIDS_KING[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]SILICOIDS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SILICOIDS_KING]SILICOIDS_KING[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]SILICOIDS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SILICOIDS_KING]SILICOIDS_KING[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]SILICOIDS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_SILICOIDS_KING]SILICOIDS_KING[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_REPTILIANS</Tag>
+	<English>Reptilians</English>
+	<French>Reptilians</French>
+	<German>Reptilians</German>
+	<Italian>Reptilians</Italian>
+	<Spanish>Reptilians</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_REPTILIANS_SHORT</Tag>
+	<English>Reptilians</English>
+	<French>Reptilians</French>
+	<German>Reptilians</German>
+	<Italian>Reptilians</Italian>
+	<Spanish>Reptilians</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_REPTILIANS_ADJ</Tag>
+	<English>Reptilians</English>
+	<French>Reptilians</French>
+	<German>Reptilians</German>
+	<Italian>Reptilians</Italian>
+	<Spanish>Reptilians</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_REPTILIANS_PEDIA</Tag>
+	<English>Reptilians</English>
+	<French>Reptilians</French>
+	<German>Reptilians</German>
+	<Italian>Reptilians</Italian>
+	<Spanish>Reptilians</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_PHARAOH</Tag>
+	<English>Pharaoh</English>
+	<French>Pharaoh</French>
+	<German>Pharaoh</German>
+	<Italian>Pharaoh</Italian>
+	<Spanish>Pharaoh</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_PHARAOH_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]Pharaoh[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_REPTILIANS]Reptilians[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]Pharaoh[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_REPTILIANS]Reptilians[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]Pharaoh[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_REPTILIANS]Reptilians[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]Pharaoh[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_REPTILIANS]Reptilians[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]Pharaoh[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_REPTILIANS]Reptilians[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_REPTILIANS_KING</Tag>
+	<English>Reptilians Government</English>
+	<French>Reptilians Government</French>
+	<German>Reptilians Government</German>
+	<Italian>Reptilians Government</Italian>
+	<Spanish>Reptilians Government</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_REPTILIANS_KING_SHORT</Tag>
+	<English>Reptilians</English>
+	<French>Reptilians</French>
+	<German>Reptilians</German>
+	<Italian>Reptilians</Italian>
+	<Spanish>Reptilians</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_REPTILIANS_KING_ADJ</Tag>
+	<English>Reptilians</English>
+	<French>Reptilians</French>
+	<German>Reptilians</German>
+	<Italian>Reptilians</Italian>
+	<Spanish>Reptilians</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_REPTILIANS_KING_PEDIA</Tag>
+	<English>Reptilians</English>
+	<French>Reptilians</French>
+	<German>Reptilians</German>
+	<Italian>Reptilians</Italian>
+	<Spanish>Reptilians</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_REPTILIANS_KING</Tag>
+	<English>REPTILIANS_KING</English>
+	<French>REPTILIANS_KING</French>
+	<German>REPTILIANS_KING</German>
+	<Italian>REPTILIANS_KING</Italian>
+	<Spanish>REPTILIANS_KING</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_REPTILIANS_KING_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]REPTILIANS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_REPTILIANS_KING]REPTILIANS_KING[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]REPTILIANS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_REPTILIANS_KING]REPTILIANS_KING[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]REPTILIANS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_REPTILIANS_KING]REPTILIANS_KING[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]REPTILIANS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_REPTILIANS_KING]REPTILIANS_KING[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]REPTILIANS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_REPTILIANS_KING]REPTILIANS_KING[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_AMPHIBIANS</Tag>
+	<English>Amphibians</English>
+	<French>Amphibians</French>
+	<German>Amphibians</German>
+	<Italian>Amphibians</Italian>
+	<Spanish>Amphibians</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_AMPHIBIANS_SHORT</Tag>
+	<English>Amphibians</English>
+	<French>Amphibians</French>
+	<German>Amphibians</German>
+	<Italian>Amphibians</Italian>
+	<Spanish>Amphibians</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_AMPHIBIANS_ADJ</Tag>
+	<English>Amphibians</English>
+	<French>Amphibians</French>
+	<German>Amphibians</German>
+	<Italian>Amphibians</Italian>
+	<Spanish>Amphibians</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_AMPHIBIANS_PEDIA</Tag>
+	<English>Amphibians</English>
+	<French>Amphibians</French>
+	<German>Amphibians</German>
+	<Italian>Amphibians</Italian>
+	<Spanish>Amphibians</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_HASTUR</Tag>
+	<English>Hastur</English>
+	<French>Hastur</French>
+	<German>Hastur</German>
+	<Italian>Hastur</Italian>
+	<Spanish>Hastur</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_HASTUR_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]Hastur[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_AMPHIBIANS]Amphibians[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]Hastur[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_AMPHIBIANS]Amphibians[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]Hastur[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_AMPHIBIANS]Amphibians[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]Hastur[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_AMPHIBIANS]Amphibians[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]Hastur[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_AMPHIBIANS]Amphibians[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_AMPHIBIANS_KING</Tag>
+	<English>Amphibians Government</English>
+	<French>Amphibians Government</French>
+	<German>Amphibians Government</German>
+	<Italian>Amphibians Government</Italian>
+	<Spanish>Amphibians Government</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_AMPHIBIANS_KING_SHORT</Tag>
+	<English>Amphibians</English>
+	<French>Amphibians</French>
+	<German>Amphibians</German>
+	<Italian>Amphibians</Italian>
+	<Spanish>Amphibians</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_AMPHIBIANS_KING_ADJ</Tag>
+	<English>Amphibians</English>
+	<French>Amphibians</French>
+	<German>Amphibians</German>
+	<Italian>Amphibians</Italian>
+	<Spanish>Amphibians</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_AMPHIBIANS_KING_PEDIA</Tag>
+	<English>Amphibians</English>
+	<French>Amphibians</French>
+	<German>Amphibians</German>
+	<Italian>Amphibians</Italian>
+	<Spanish>Amphibians</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_AMPHIBIANS_KING</Tag>
+	<English>AMPHIBIANS_KING</English>
+	<French>AMPHIBIANS_KING</French>
+	<German>AMPHIBIANS_KING</German>
+	<Italian>AMPHIBIANS_KING</Italian>
+	<Spanish>AMPHIBIANS_KING</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_AMPHIBIANS_KING_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]AMPHIBIANS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_AMPHIBIANS_KING]AMPHIBIANS_KING[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]AMPHIBIANS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_AMPHIBIANS_KING]AMPHIBIANS_KING[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]AMPHIBIANS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_AMPHIBIANS_KING]AMPHIBIANS_KING[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]AMPHIBIANS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_AMPHIBIANS_KING]AMPHIBIANS_KING[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]AMPHIBIANS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_AMPHIBIANS_KING]AMPHIBIANS_KING[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_ICTHYOIDS</Tag>
+	<English>Icthyoids</English>
+	<French>Icthyoids</French>
+	<German>Icthyoids</German>
+	<Italian>Icthyoids</Italian>
+	<Spanish>Icthyoids</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_ICTHYOIDS_SHORT</Tag>
+	<English>Icthyoids</English>
+	<French>Icthyoids</French>
+	<German>Icthyoids</German>
+	<Italian>Icthyoids</Italian>
+	<Spanish>Icthyoids</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_ICTHYOIDS_ADJ</Tag>
+	<English>Icthyoids</English>
+	<French>Icthyoids</French>
+	<German>Icthyoids</German>
+	<Italian>Icthyoids</Italian>
+	<Spanish>Icthyoids</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_ICTHYOIDS_PEDIA</Tag>
+	<English>Icthyoids</English>
+	<French>Icthyoids</French>
+	<German>Icthyoids</German>
+	<Italian>Icthyoids</Italian>
+	<Spanish>Icthyoids</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_DAGON</Tag>
+	<English>Dagon</English>
+	<French>Dagon</French>
+	<German>Dagon</German>
+	<Italian>Dagon</Italian>
+	<Spanish>Dagon</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_DAGON_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]Dagon[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_ICTHYOIDS]Icthyoids[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]Dagon[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_ICTHYOIDS]Icthyoids[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]Dagon[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_ICTHYOIDS]Icthyoids[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]Dagon[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_ICTHYOIDS]Icthyoids[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]Dagon[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_ICTHYOIDS]Icthyoids[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_ICTHYOIDS_KING</Tag>
+	<English>Icthyoids Government</English>
+	<French>Icthyoids Government</French>
+	<German>Icthyoids Government</German>
+	<Italian>Icthyoids Government</Italian>
+	<Spanish>Icthyoids Government</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_ICTHYOIDS_KING_SHORT</Tag>
+	<English>Icthyoids</English>
+	<French>Icthyoids</French>
+	<German>Icthyoids</German>
+	<Italian>Icthyoids</Italian>
+	<Spanish>Icthyoids</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_ICTHYOIDS_KING_ADJ</Tag>
+	<English>Icthyoids</English>
+	<French>Icthyoids</French>
+	<German>Icthyoids</German>
+	<Italian>Icthyoids</Italian>
+	<Spanish>Icthyoids</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_ICTHYOIDS_KING_PEDIA</Tag>
+	<English>Icthyoids</English>
+	<French>Icthyoids</French>
+	<German>Icthyoids</German>
+	<Italian>Icthyoids</Italian>
+	<Spanish>Icthyoids</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_ICTHYOIDS_KING</Tag>
+	<English>ICTHYOIDS_KING</English>
+	<French>ICTHYOIDS_KING</French>
+	<German>ICTHYOIDS_KING</German>
+	<Italian>ICTHYOIDS_KING</Italian>
+	<Spanish>ICTHYOIDS_KING</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_ICTHYOIDS_KING_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]ICTHYOIDS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_ICTHYOIDS_KING]ICTHYOIDS_KING[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]ICTHYOIDS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_ICTHYOIDS_KING]ICTHYOIDS_KING[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]ICTHYOIDS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_ICTHYOIDS_KING]ICTHYOIDS_KING[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]ICTHYOIDS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_ICTHYOIDS_KING]ICTHYOIDS_KING[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]ICTHYOIDS_KING[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_ICTHYOIDS_KING]ICTHYOIDS_KING[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_BARBARIAN</Tag>
+	<English>Barbarian</English>
+	<French>Barbarian</French>
+	<German>Barbarian</German>
+	<Italian>Barbarian</Italian>
+	<Spanish>Barbarian</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_BARBARIAN_SHORT</Tag>
+	<English>Barbarian</English>
+	<French>Barbarian</French>
+	<German>Barbarian</German>
+	<Italian>Barbarian</Italian>
+	<Spanish>Barbarian</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_BARBARIAN_ADJ</Tag>
+	<English>Barbarian</English>
+	<French>Barbarian</French>
+	<German>Barbarian</German>
+	<Italian>Barbarian</Italian>
+	<Spanish>Barbarian</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_BARBARIAN_PEDIA</Tag>
+	<English>Barbarian</English>
+	<French>Barbarian</French>
+	<German>Barbarian</German>
+	<Italian>Barbarian</Italian>
+	<Spanish>Barbarian</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_BARBARIAN</Tag>
+	<English>Barbarian</English>
+	<French>Barbarian</French>
+	<German>Barbarian</German>
+	<Italian>Barbarian</Italian>
+	<Spanish>Barbarian</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_BARBARIAN_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]Barbarian[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_BARBARIAN]Barbarian[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]Barbarian[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_BARBARIAN]Barbarian[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]Barbarian[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_BARBARIAN]Barbarian[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]Barbarian[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_BARBARIAN]Barbarian[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]Barbarian[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_BARBARIAN]Barbarian[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_VASSAL_LORD_ONE</Tag>
+	<English>VASSAL_LORD_ONE</English>
+	<French>VASSAL_LORD_ONE</French>
+	<German>VASSAL_LORD_ONE</German>
+	<Italian>VASSAL_LORD_ONE</Italian>
+	<Spanish>VASSAL_LORD_ONE</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_VASSAL_LORD_ONE_SHORT</Tag>
+	<English>VASSAL_LORD_ONE</English>
+	<French>VASSAL_LORD_ONE</French>
+	<German>VASSAL_LORD_ONE</German>
+	<Italian>VASSAL_LORD_ONE</Italian>
+	<Spanish>VASSAL_LORD_ONE</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_VASSAL_LORD_ONE_ADJ</Tag>
+	<English>VASSAL_LORD_ONE</English>
+	<French>VASSAL_LORD_ONE</French>
+	<German>VASSAL_LORD_ONE</German>
+	<Italian>VASSAL_LORD_ONE</Italian>
+	<Spanish>VASSAL_LORD_ONE</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_CIVILIZATION_VASSAL_LORD_ONE_PEDIA</Tag>
+	<English>VASSAL_LORD_ONE</English>
+	<French>VASSAL_LORD_ONE</French>
+	<German>VASSAL_LORD_ONE</German>
+	<Italian>VASSAL_LORD_ONE</Italian>
+	<Spanish>VASSAL_LORD_ONE</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_VASSAL_LORD_ONE</Tag>
+	<English>VASSAL_LORD_ONE</English>
+	<French>VASSAL_LORD_ONE</French>
+	<German>VASSAL_LORD_ONE</German>
+	<Italian>VASSAL_LORD_ONE</Italian>
+	<Spanish>VASSAL_LORD_ONE</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_LEADER_VASSAL_LORD_ONE_PEDIA</Tag>
+	<English>[COLOR_HIGHLIGHT_TEXT]VASSAL_LORD_ONE[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_VASSAL_LORD_ONE]VASSAL_LORD_ONE[\LINK] who is known as a formidable opponent.</English>
+	<French>[COLOR_HIGHLIGHT_TEXT]VASSAL_LORD_ONE[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_VASSAL_LORD_ONE]VASSAL_LORD_ONE[\LINK] who is known as a formidable opponent.</French>
+	<German>[COLOR_HIGHLIGHT_TEXT]VASSAL_LORD_ONE[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_VASSAL_LORD_ONE]VASSAL_LORD_ONE[\LINK] who is known as a formidable opponent.</German>
+	<Italian>[COLOR_HIGHLIGHT_TEXT]VASSAL_LORD_ONE[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_VASSAL_LORD_ONE]VASSAL_LORD_ONE[\LINK] who is known as a formidable opponent.</Italian>
+	<Spanish>[COLOR_HIGHLIGHT_TEXT]VASSAL_LORD_ONE[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_VASSAL_LORD_ONE]VASSAL_LORD_ONE[\LINK] who is known as a formidable opponent.</Spanish>
 </TEXT>
 </Civ4GameText>

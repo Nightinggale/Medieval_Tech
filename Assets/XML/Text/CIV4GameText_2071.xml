@@ -2513,6 +2513,918 @@
 	<Spanish>Progenitor Ruins</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_BONUS_PROGENITOR_METROPOLIS</Tag>
+	<English>Progenitor Metropolis</English>
+	<French>Progenitor Metropolis</French>
+	<German>Progenitor Metropolis</German>
+	<Italian>Progenitor Metropolis</Italian>
+	<Spanish>Progenitor Metropolis</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_PROGENITOR_METROPOLIS_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Progenitor Metropolis[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Progenitor Metropolis[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Progenitor Metropolis[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Progenitor Metropolis[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Progenitor Metropolis[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_RUINED_TEMPLE</Tag>
+	<English>Ruined Temple</English>
+	<French>Ruined Temple</French>
+	<German>Ruined Temple</German>
+	<Italian>Ruined Temple</Italian>
+	<Spanish>Ruined Temple</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_RUINED_TEMPLE_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Ruined Temple[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Ruined Temple[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Ruined Temple[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Ruined Temple[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Ruined Temple[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_GRAND_ZIGGURAT</Tag>
+	<English>Grand Ziggurat</English>
+	<French>Grand Ziggurat</French>
+	<German>Grand Ziggurat</German>
+	<Italian>Grand Ziggurat</Italian>
+	<Spanish>Grand Ziggurat</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_GRAND_ZIGGURAT_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Grand Ziggurat[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Grand Ziggurat[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Grand Ziggurat[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Grand Ziggurat[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Grand Ziggurat[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_NESTING_GROUNDS</Tag>
+	<English>Nesting Grounds</English>
+	<French>Nesting Grounds</French>
+	<German>Nesting Grounds</German>
+	<Italian>Nesting Grounds</Italian>
+	<Spanish>Nesting Grounds</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_NESTING_GROUNDS_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Nesting Grounds[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Nesting Grounds[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Nesting Grounds[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Nesting Grounds[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Nesting Grounds[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_SPIDER_LAIR</Tag>
+	<English>Spider Lair</English>
+	<French>Spider Lair</French>
+	<German>Spider Lair</German>
+	<Italian>Spider Lair</Italian>
+	<Spanish>Spider Lair</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_SPIDER_LAIR_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Spider Lair[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Spider Lair[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Spider Lair[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Spider Lair[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Spider Lair[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_IRIDESCENT_PYRAMIDS</Tag>
+	<English>Iridescent Pyramids</English>
+	<French>Iridescent Pyramids</French>
+	<German>Iridescent Pyramids</German>
+	<Italian>Iridescent Pyramids</Italian>
+	<Spanish>Iridescent Pyramids</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_IRIDESCENT_PYRAMIDS_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Iridescent Pyramids[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Iridescent Pyramids[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Iridescent Pyramids[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Iridescent Pyramids[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Iridescent Pyramids[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_LIMESTONE_SPIRE</Tag>
+	<English>Limestone Spire</English>
+	<French>Limestone Spire</French>
+	<German>Limestone Spire</German>
+	<Italian>Limestone Spire</Italian>
+	<Spanish>Limestone Spire</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_LIMESTONE_SPIRE_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Limestone Spire[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Limestone Spire[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Limestone Spire[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Limestone Spire[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Limestone Spire[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_ANTEDILUVIAN_CATACOMB</Tag>
+	<English>Antediluvian Catacomb</English>
+	<French>Antediluvian Catacomb</French>
+	<German>Antediluvian Catacomb</German>
+	<Italian>Antediluvian Catacomb</Italian>
+	<Spanish>Antediluvian Catacomb</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_ANTEDILUVIAN_CATACOMB_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Antediluvian Catacomb[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Antediluvian Catacomb[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Antediluvian Catacomb[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Antediluvian Catacomb[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Antediluvian Catacomb[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_SACRED_GROVE</Tag>
+	<English>Sacred Grove</English>
+	<French>Sacred Grove</French>
+	<German>Sacred Grove</German>
+	<Italian>Sacred Grove</Italian>
+	<Spanish>Sacred Grove</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_SACRED_GROVE_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Sacred Grove[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Sacred Grove[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Sacred Grove[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Sacred Grove[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Sacred Grove[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_RUINED_BIOSPHERE</Tag>
+	<English>Ruined Biosphere</English>
+	<French>Ruined Biosphere</French>
+	<German>Ruined Biosphere</German>
+	<Italian>Ruined Biosphere</Italian>
+	<Spanish>Ruined Biosphere</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_RUINED_BIOSPHERE_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Ruined Biosphere[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Ruined Biosphere[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Ruined Biosphere[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Ruined Biosphere[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Ruined Biosphere[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_PLINTH_CIRCLE</Tag>
+	<English>Plinth Circle</English>
+	<French>Plinth Circle</French>
+	<German>Plinth Circle</German>
+	<Italian>Plinth Circle</Italian>
+	<Spanish>Plinth Circle</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_PLINTH_CIRCLE_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Plinth Circle[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Plinth Circle[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Plinth Circle[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Plinth Circle[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Plinth Circle[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_SACRIFICIAL_PIT</Tag>
+	<English>Sacrificial Pit</English>
+	<French>Sacrificial Pit</French>
+	<German>Sacrificial Pit</German>
+	<Italian>Sacrificial Pit</Italian>
+	<Spanish>Sacrificial Pit</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_SACRIFICIAL_PIT_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Sacrificial Pit[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Sacrificial Pit[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Sacrificial Pit[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Sacrificial Pit[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Sacrificial Pit[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_OBSIDIAN_FACES</Tag>
+	<English>Obsidian Faces</English>
+	<French>Obsidian Faces</French>
+	<German>Obsidian Faces</German>
+	<Italian>Obsidian Faces</Italian>
+	<Spanish>Obsidian Faces</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_OBSIDIAN_FACES_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Obsidian Faces[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Obsidian Faces[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Obsidian Faces[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Obsidian Faces[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Obsidian Faces[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_MALACHITE_IDOLS</Tag>
+	<English>Malachite Idols</English>
+	<French>Malachite Idols</French>
+	<German>Malachite Idols</German>
+	<Italian>Malachite Idols</Italian>
+	<Spanish>Malachite Idols</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_MALACHITE_IDOLS_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Malachite Idols[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Malachite Idols[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Malachite Idols[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Malachite Idols[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Malachite Idols[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_CALCIFIED_BEING</Tag>
+	<English>Calcified Being</English>
+	<French>Calcified Being</French>
+	<German>Calcified Being</German>
+	<Italian>Calcified Being</Italian>
+	<Spanish>Calcified Being</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_CALCIFIED_BEING_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Calcified Being[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Calcified Being[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Calcified Being[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Calcified Being[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Calcified Being[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_OMINOUS_EFFIGY</Tag>
+	<English>Ominous Effigy</English>
+	<French>Ominous Effigy</French>
+	<German>Ominous Effigy</German>
+	<Italian>Ominous Effigy</Italian>
+	<Spanish>Ominous Effigy</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_OMINOUS_EFFIGY_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Ominous Effigy[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Ominous Effigy[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Ominous Effigy[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Ominous Effigy[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Ominous Effigy[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_ABANDONED_REDOUBT</Tag>
+	<English>Abandoned Redoubt</English>
+	<French>Abandoned Redoubt</French>
+	<German>Abandoned Redoubt</German>
+	<Italian>Abandoned Redoubt</Italian>
+	<Spanish>Abandoned Redoubt</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_ABANDONED_REDOUBT_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Abandoned Redoubt[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Abandoned Redoubt[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Abandoned Redoubt[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Abandoned Redoubt[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Abandoned Redoubt[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_EDIBLE_BERRIES</Tag>
+	<English>Edible Berries</English>
+	<French>Edible Berries</French>
+	<German>Edible Berries</German>
+	<Italian>Edible Berries</Italian>
+	<Spanish>Edible Berries</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_EDIBLE_BERRIES_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Edible Berries[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Edible Berries[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Edible Berries[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Edible Berries[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Edible Berries[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_ALIEN_FUNGI</Tag>
+	<English>Alien Fungi</English>
+	<French>Alien Fungi</French>
+	<German>Alien Fungi</German>
+	<Italian>Alien Fungi</Italian>
+	<Spanish>Alien Fungi</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_ALIEN_FUNGI_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Alien Fungi[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Alien Fungi[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Alien Fungi[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Alien Fungi[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Alien Fungi[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_NATIVE_TUBERS</Tag>
+	<English>Native Tubers</English>
+	<French>Native Tubers</French>
+	<German>Native Tubers</German>
+	<Italian>Native Tubers</Italian>
+	<Spanish>Native Tubers</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_NATIVE_TUBERS_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Native Tubers[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Native Tubers[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Native Tubers[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Native Tubers[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Native Tubers[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_NATIVE_RUMINANTS</Tag>
+	<English>Native Ruminants</English>
+	<French>Native Ruminants</French>
+	<German>Native Ruminants</German>
+	<Italian>Native Ruminants</Italian>
+	<Spanish>Native Ruminants</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_NATIVE_RUMINANTS_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Native Ruminants[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Native Ruminants[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Native Ruminants[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Native Ruminants[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Native Ruminants[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_NATIVE_UNGULATES</Tag>
+	<English>Native Ungulates</English>
+	<French>Native Ungulates</French>
+	<German>Native Ungulates</German>
+	<Italian>Native Ungulates</Italian>
+	<Spanish>Native Ungulates</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_NATIVE_UNGULATES_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Native Ungulates[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Native Ungulates[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Native Ungulates[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Native Ungulates[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Native Ungulates[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_NATIVE_PINNIPEDS</Tag>
+	<English>Native Pinnipeds</English>
+	<French>Native Pinnipeds</French>
+	<German>Native Pinnipeds</German>
+	<Italian>Native Pinnipeds</Italian>
+	<Spanish>Native Pinnipeds</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_NATIVE_PINNIPEDS_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Native Pinnipeds[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Native Pinnipeds[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Native Pinnipeds[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Native Pinnipeds[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Native Pinnipeds[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_NATIVE_OMNIVORES</Tag>
+	<English>Native Omnivores</English>
+	<French>Native Omnivores</French>
+	<German>Native Omnivores</German>
+	<Italian>Native Omnivores</Italian>
+	<Spanish>Native Omnivores</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_NATIVE_OMNIVORES_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Native Omnivores[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Native Omnivores[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Native Omnivores[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Native Omnivores[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Native Omnivores[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_ELECTROLYTIC_MOLLUSKS</Tag>
+	<English>Electrolytic Mollusks</English>
+	<French>Electrolytic Mollusks</French>
+	<German>Electrolytic Mollusks</German>
+	<Italian>Electrolytic Mollusks</Italian>
+	<Spanish>Electrolytic Mollusks</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_ELECTROLYTIC_MOLLUSKS_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Electrolytic Mollusks[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Electrolytic Mollusks[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Electrolytic Mollusks[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Electrolytic Mollusks[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Electrolytic Mollusks[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_MANTRAP_CLAMS</Tag>
+	<English>Mantrap Clams</English>
+	<French>Mantrap Clams</French>
+	<German>Mantrap Clams</German>
+	<Italian>Mantrap Clams</Italian>
+	<Spanish>Mantrap Clams</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_MANTRAP_CLAMS_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Mantrap Clams[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Mantrap Clams[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Mantrap Clams[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Mantrap Clams[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Mantrap Clams[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_NATIVE_LUNGFISH</Tag>
+	<English>Native Lungfish</English>
+	<French>Native Lungfish</French>
+	<German>Native Lungfish</German>
+	<Italian>Native Lungfish</Italian>
+	<Spanish>Native Lungfish</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_NATIVE_LUNGFISH_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Native Lungfish[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Native Lungfish[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Native Lungfish[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Native Lungfish[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Native Lungfish[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_NATIVE_ARTHROPODS</Tag>
+	<English>Native Arthropods</English>
+	<French>Native Arthropods</French>
+	<German>Native Arthropods</German>
+	<Italian>Native Arthropods</Italian>
+	<Spanish>Native Arthropods</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_NATIVE_ARTHROPODS_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Native Arthropods[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Native Arthropods[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Native Arthropods[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Native Arthropods[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Native Arthropods[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_NATIVE_RODENTS</Tag>
+	<English>Native Rodents</English>
+	<French>Native Rodents</French>
+	<German>Native Rodents</German>
+	<Italian>Native Rodents</Italian>
+	<Spanish>Native Rodents</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_NATIVE_RODENTS_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Native Rodents[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Native Rodents[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Native Rodents[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Native Rodents[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Native Rodents[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_INTELLIGENT_MAMMALS</Tag>
+	<English>Intelligent Mammals</English>
+	<French>Intelligent Mammals</French>
+	<German>Intelligent Mammals</German>
+	<Italian>Intelligent Mammals</Italian>
+	<Spanish>Intelligent Mammals</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_INTELLIGENT_MAMMALS_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Intelligent Mammals[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Intelligent Mammals[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Intelligent Mammals[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Intelligent Mammals[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Intelligent Mammals[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_NATIVE_EQUIDS</Tag>
+	<English>Native Equids</English>
+	<French>Native Equids</French>
+	<German>Native Equids</German>
+	<Italian>Native Equids</Italian>
+	<Spanish>Native Equids</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_NATIVE_EQUIDS_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Native Equids[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Native Equids[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Native Equids[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Native Equids[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Native Equids[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_NATIVE_BIPEDS</Tag>
+	<English>Native Bipeds</English>
+	<French>Native Bipeds</French>
+	<German>Native Bipeds</German>
+	<Italian>Native Bipeds</Italian>
+	<Spanish>Native Bipeds</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_NATIVE_BIPEDS_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Native Bipeds[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Native Bipeds[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Native Bipeds[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Native Bipeds[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Native Bipeds[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_NATIVE_BEETLES</Tag>
+	<English>Native Beetles</English>
+	<French>Native Beetles</French>
+	<German>Native Beetles</German>
+	<Italian>Native Beetles</Italian>
+	<Spanish>Native Beetles</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_NATIVE_BEETLES_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Native Beetles[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Native Beetles[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Native Beetles[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Native Beetles[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Native Beetles[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_EXOTIC_APHRODISIAC</Tag>
+	<English>Exotic Aphrodisiac</English>
+	<French>Exotic Aphrodisiac</French>
+	<German>Exotic Aphrodisiac</German>
+	<Italian>Exotic Aphrodisiac</Italian>
+	<Spanish>Exotic Aphrodisiac</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_EXOTIC_APHRODISIAC_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Exotic Aphrodisiac[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Exotic Aphrodisiac[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Exotic Aphrodisiac[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Exotic Aphrodisiac[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Exotic Aphrodisiac[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_SUBTERRANEAN_FUNGUS</Tag>
+	<English>Subterranean Fungus</English>
+	<French>Subterranean Fungus</French>
+	<German>Subterranean Fungus</German>
+	<Italian>Subterranean Fungus</Italian>
+	<Spanish>Subterranean Fungus</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_SUBTERRANEAN_FUNGUS_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Subterranean Fungus[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Subterranean Fungus[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Subterranean Fungus[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Subterranean Fungus[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Subterranean Fungus[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_NATIVE_MOSSES</Tag>
+	<English>Native Mosses</English>
+	<French>Native Mosses</French>
+	<German>Native Mosses</German>
+	<Italian>Native Mosses</Italian>
+	<Spanish>Native Mosses</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_NATIVE_MOSSES_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Native Mosses[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Native Mosses[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Native Mosses[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Native Mosses[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Native Mosses[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_COMMUNICATIONS_ARRAY</Tag>
+	<English>Communications Array</English>
+	<French>Communications Array</French>
+	<German>Communications Array</German>
+	<Italian>Communications Array</Italian>
+	<Spanish>Communications Array</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_COMMUNICATIONS_ARRAY_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Communications Array[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Communications Array[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Communications Array[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Communications Array[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Communications Array[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_ORBITAL_PLATFORM</Tag>
+	<English>Orbital Platform</English>
+	<French>Orbital Platform</French>
+	<German>Orbital Platform</German>
+	<Italian>Orbital Platform</Italian>
+	<Spanish>Orbital Platform</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_ORBITAL_PLATFORM_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Orbital Platform[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Orbital Platform[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Orbital Platform[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Orbital Platform[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Orbital Platform[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_DERELICT_SATELLITE</Tag>
+	<English>Derelict Satellite</English>
+	<French>Derelict Satellite</French>
+	<German>Derelict Satellite</German>
+	<Italian>Derelict Satellite</Italian>
+	<Spanish>Derelict Satellite</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_DERELICT_SATELLITE_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Derelict Satellite[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Derelict Satellite[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Derelict Satellite[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Derelict Satellite[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Derelict Satellite[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_GOLD_VEIN</Tag>
+	<English>Gold Vein</English>
+	<French>Gold Vein</French>
+	<German>Gold Vein</German>
+	<Italian>Gold Vein</Italian>
+	<Spanish>Gold Vein</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_GOLD_VEIN_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Gold Vein[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Gold Vein[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Gold Vein[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Gold Vein[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Gold Vein[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_COPPER_VEIN</Tag>
+	<English>Copper Vein</English>
+	<French>Copper Vein</French>
+	<German>Copper Vein</German>
+	<Italian>Copper Vein</Italian>
+	<Spanish>Copper Vein</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_COPPER_VEIN_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Copper Vein[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Copper Vein[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Copper Vein[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Copper Vein[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Copper Vein[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_KREEP</Tag>
+	<English>KREEP</English>
+	<French>KREEP</French>
+	<German>KREEP</German>
+	<Italian>KREEP</Italian>
+	<Spanish>KREEP</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_KREEP_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]KREEP[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]KREEP[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]KREEP[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]KREEP[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]KREEP[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_NATIVE_SHRUBS</Tag>
+	<English>Native Shrubs</English>
+	<French>Native Shrubs</French>
+	<German>Native Shrubs</German>
+	<Italian>Native Shrubs</Italian>
+	<Spanish>Native Shrubs</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_NATIVE_SHRUBS_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Native Shrubs[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Native Shrubs[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Native Shrubs[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Native Shrubs[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Native Shrubs[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_NATURAL_GAS</Tag>
+	<English>Natural Gas</English>
+	<French>Natural Gas</French>
+	<German>Natural Gas</German>
+	<Italian>Natural Gas</Italian>
+	<Spanish>Natural Gas</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_NATURAL_GAS_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Natural Gas[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Natural Gas[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Natural Gas[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Natural Gas[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Natural Gas[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_OIL</Tag>
+	<English>Oil</English>
+	<French>Oil</French>
+	<German>Oil</German>
+	<Italian>Oil</Italian>
+	<Spanish>Oil</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_OIL_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_IMPACT_CRATER</Tag>
+	<English>Impact Crater</English>
+	<French>Impact Crater</French>
+	<German>Impact Crater</German>
+	<Italian>Impact Crater</Italian>
+	<Spanish>Impact Crater</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_IMPACT_CRATER_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Impact Crater[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Impact Crater[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Impact Crater[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Impact Crater[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Impact Crater[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_METEORITE</Tag>
+	<English>Meteorite</English>
+	<French>Meteorite</French>
+	<German>Meteorite</German>
+	<Italian>Meteorite</Italian>
+	<Spanish>Meteorite</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_METEORITE_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Meteorite[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Meteorite[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Meteorite[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Meteorite[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Meteorite[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_PALEONTOLOGY_SITE</Tag>
+	<English>Paleontology Site</English>
+	<French>Paleontology Site</French>
+	<German>Paleontology Site</German>
+	<Italian>Paleontology Site</Italian>
+	<Spanish>Paleontology Site</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_PALEONTOLOGY_SITE_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Paleontology Site[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Paleontology Site[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Paleontology Site[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Paleontology Site[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Paleontology Site[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_GARGANTUAN_FOSSIL</Tag>
+	<English>Gargantuan Fossil</English>
+	<French>Gargantuan Fossil</French>
+	<German>Gargantuan Fossil</German>
+	<Italian>Gargantuan Fossil</Italian>
+	<Spanish>Gargantuan Fossil</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_GARGANTUAN_FOSSIL_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Gargantuan Fossil[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Gargantuan Fossil[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Gargantuan Fossil[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Gargantuan Fossil[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Gargantuan Fossil[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_ARCTIC_MOON</Tag>
+	<English>Arctic Moon</English>
+	<French>Arctic Moon</French>
+	<German>Arctic Moon</German>
+	<Italian>Arctic Moon</Italian>
+	<Spanish>Arctic Moon</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_ARCTIC_MOON_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Arctic Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Arctic Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Arctic Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Arctic Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Arctic Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_ARTIFACT_MOON</Tag>
+	<English>Artifact Moon</English>
+	<French>Artifact Moon</French>
+	<German>Artifact Moon</German>
+	<Italian>Artifact Moon</Italian>
+	<Spanish>Artifact Moon</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_ARTIFACT_MOON_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Artifact Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Artifact Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Artifact Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Artifact Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Artifact Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_BARREN_MOON</Tag>
+	<English>Barren Moon</English>
+	<French>Barren Moon</French>
+	<German>Barren Moon</German>
+	<Italian>Barren Moon</Italian>
+	<Spanish>Barren Moon</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_BARREN_MOON_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Barren Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Barren Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Barren Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Barren Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Barren Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_PRIMORDIAL_MOON</Tag>
+	<English>Primordial Moon</English>
+	<French>Primordial Moon</French>
+	<German>Primordial Moon</German>
+	<Italian>Primordial Moon</Italian>
+	<Spanish>Primordial Moon</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_PRIMORDIAL_MOON_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Primordial Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Primordial Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Primordial Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Primordial Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Primordial Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_VERDANT_MOON</Tag>
+	<English>Verdant Moon</English>
+	<French>Verdant Moon</French>
+	<German>Verdant Moon</German>
+	<Italian>Verdant Moon</Italian>
+	<Spanish>Verdant Moon</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_VERDANT_MOON_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Verdant Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Verdant Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Verdant Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Verdant Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Verdant Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_AQUATIC_MOON</Tag>
+	<English>Aquatic Moon</English>
+	<French>Aquatic Moon</French>
+	<German>Aquatic Moon</German>
+	<Italian>Aquatic Moon</Italian>
+	<Spanish>Aquatic Moon</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_AQUATIC_MOON_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Aquatic Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Aquatic Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Aquatic Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Aquatic Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Aquatic Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_VOLCANIC_MOON</Tag>
+	<English>Volcanic Moon</English>
+	<French>Volcanic Moon</French>
+	<German>Volcanic Moon</German>
+	<Italian>Volcanic Moon</Italian>
+	<Spanish>Volcanic Moon</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_VOLCANIC_MOON_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Volcanic Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Volcanic Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Volcanic Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Volcanic Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Volcanic Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_TOXIC_MOON</Tag>
+	<English>Toxic Moon</English>
+	<French>Toxic Moon</French>
+	<German>Toxic Moon</German>
+	<Italian>Toxic Moon</Italian>
+	<Spanish>Toxic Moon</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_BONUS_TOXIC_MOON_PEDIA</Tag>
+	<English>Rare [COLOR_HIGHLIGHT_TEXT]Toxic Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>Rare [COLOR_HIGHLIGHT_TEXT]Toxic Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>Rare [COLOR_HIGHLIGHT_TEXT]Toxic Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>Rare [COLOR_HIGHLIGHT_TEXT]Toxic Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>Rare [COLOR_HIGHLIGHT_TEXT]Toxic Moon[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_BIOPOLYMERS]Biopolymers[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_IMPROVEMENT_FARM</Tag>
 	<English>Farm:Farms</English>
 	<French>Farm:Farms</French>
@@ -8407,5 +9319,189 @@
 	<German>[COLOR_HIGHLIGHT_TEXT]VASSAL_LORD_ONE[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_VASSAL_LORD_ONE]VASSAL_LORD_ONE[\LINK] who is known as a formidable opponent.</German>
 	<Italian>[COLOR_HIGHLIGHT_TEXT]VASSAL_LORD_ONE[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_VASSAL_LORD_ONE]VASSAL_LORD_ONE[\LINK] who is known as a formidable opponent.</Italian>
 	<Spanish>[COLOR_HIGHLIGHT_TEXT]VASSAL_LORD_ONE[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_VASSAL_LORD_ONE]VASSAL_LORD_ONE[\LINK] who is known as a formidable opponent.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TRAIT_Disciplined</Tag>
+	<English>Disciplined</English>
+	<French>Disciplined</French>
+	<German>Disciplined</German>
+	<Italian>Disciplined</Italian>
+	<Spanish>Disciplined</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TRAIT_Media Savvy</Tag>
+	<English>Media Savvy</English>
+	<French>Media Savvy</French>
+	<German>Media Savvy</German>
+	<Italian>Media Savvy</Italian>
+	<Spanish>Media Savvy</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_CATEGORY_MEDIEVAL_CENSURE</Tag>
+	<English></English>
+	<French></French>
+	<German></German>
+	<Italian></Italian>
+	<Spanish></Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_CATEGORY_MEDIEVAL_TRADE_TECH</Tag>
+	<English></English>
+	<French></French>
+	<German></German>
+	<Italian></Italian>
+	<Spanish></Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_CATEGORY_NATIVE_TECH</Tag>
+	<English></English>
+	<French></French>
+	<German></German>
+	<Italian></Italian>
+	<Spanish></Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_CENSURE_INTERDICT</Tag>
+	<English>Interdict</English>
+	<French>Interdict</French>
+	<German>Interdict</German>
+	<Italian>Interdict</Italian>
+	<Spanish>Interdict</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_CENSURE_INTERDICT_PEDIA</Tag>
+	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]Interdict[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
+	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]Interdict[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
+	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]Interdict[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
+	<Italian>The discovery of [COLOR_HIGHLIGHT_TEXT]Interdict[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</Italian>
+	<Spanish>The discovery of [COLOR_HIGHLIGHT_TEXT]Interdict[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_CENSURE_INTERDICT_STRATEGY</Tag>
+	<English>Research [COLOR_HIGHLIGHT_TEXT]Interdict[COLOR_REVERT] to continue our advancement.</English>
+	<French>Research [COLOR_HIGHLIGHT_TEXT]Interdict[COLOR_REVERT] to continue our advancement.</French>
+	<German>Research [COLOR_HIGHLIGHT_TEXT]Interdict[COLOR_REVERT] to continue our advancement.</German>
+	<Italian>Research [COLOR_HIGHLIGHT_TEXT]Interdict[COLOR_REVERT] to continue our advancement.</Italian>
+	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]Interdict[COLOR_REVERT] to continue our advancement.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_CENSURE_ANATHEMA</Tag>
+	<English>Anathema</English>
+	<French>Anathema</French>
+	<German>Anathema</German>
+	<Italian>Anathema</Italian>
+	<Spanish>Anathema</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_CENSURE_ANATHEMA_PEDIA</Tag>
+	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]Anathema[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
+	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]Anathema[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
+	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]Anathema[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
+	<Italian>The discovery of [COLOR_HIGHLIGHT_TEXT]Anathema[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</Italian>
+	<Spanish>The discovery of [COLOR_HIGHLIGHT_TEXT]Anathema[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_CENSURE_ANATHEMA_STRATEGY</Tag>
+	<English>Research [COLOR_HIGHLIGHT_TEXT]Anathema[COLOR_REVERT] to continue our advancement.</English>
+	<French>Research [COLOR_HIGHLIGHT_TEXT]Anathema[COLOR_REVERT] to continue our advancement.</French>
+	<German>Research [COLOR_HIGHLIGHT_TEXT]Anathema[COLOR_REVERT] to continue our advancement.</German>
+	<Italian>Research [COLOR_HIGHLIGHT_TEXT]Anathema[COLOR_REVERT] to continue our advancement.</Italian>
+	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]Anathema[COLOR_REVERT] to continue our advancement.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_CENSURE_EXCOMMUNICATION</Tag>
+	<English>Excommunication</English>
+	<French>Excommunication</French>
+	<German>Excommunication</German>
+	<Italian>Excommunication</Italian>
+	<Spanish>Excommunication</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_CENSURE_EXCOMMUNICATION_PEDIA</Tag>
+	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]Excommunication[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
+	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]Excommunication[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
+	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]Excommunication[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
+	<Italian>The discovery of [COLOR_HIGHLIGHT_TEXT]Excommunication[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</Italian>
+	<Spanish>The discovery of [COLOR_HIGHLIGHT_TEXT]Excommunication[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_CENSURE_EXCOMMUNICATION_STRATEGY</Tag>
+	<English>Research [COLOR_HIGHLIGHT_TEXT]Excommunication[COLOR_REVERT] to continue our advancement.</English>
+	<French>Research [COLOR_HIGHLIGHT_TEXT]Excommunication[COLOR_REVERT] to continue our advancement.</French>
+	<German>Research [COLOR_HIGHLIGHT_TEXT]Excommunication[COLOR_REVERT] to continue our advancement.</German>
+	<Italian>Research [COLOR_HIGHLIGHT_TEXT]Excommunication[COLOR_REVERT] to continue our advancement.</Italian>
+	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]Excommunication[COLOR_REVERT] to continue our advancement.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_TRADING_TRADE_ROUTE_2</Tag>
+	<English>TRADING_TRADE_ROUTE_2</English>
+	<French>TRADING_TRADE_ROUTE_2</French>
+	<German>TRADING_TRADE_ROUTE_2</German>
+	<Italian>TRADING_TRADE_ROUTE_2</Italian>
+	<Spanish>TRADING_TRADE_ROUTE_2</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_TRADING_TRADE_ROUTE_2_PEDIA</Tag>
+	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_TRADE_ROUTE_2[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
+	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_TRADE_ROUTE_2[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
+	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_TRADE_ROUTE_2[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
+	<Italian>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_TRADE_ROUTE_2[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</Italian>
+	<Spanish>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_TRADE_ROUTE_2[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_TRADING_TRADE_ROUTE_2_STRATEGY</Tag>
+	<English>Research [COLOR_HIGHLIGHT_TEXT]TRADING_TRADE_ROUTE_2[COLOR_REVERT] to continue our advancement.</English>
+	<French>Research [COLOR_HIGHLIGHT_TEXT]TRADING_TRADE_ROUTE_2[COLOR_REVERT] to continue our advancement.</French>
+	<German>Research [COLOR_HIGHLIGHT_TEXT]TRADING_TRADE_ROUTE_2[COLOR_REVERT] to continue our advancement.</German>
+	<Italian>Research [COLOR_HIGHLIGHT_TEXT]TRADING_TRADE_ROUTE_2[COLOR_REVERT] to continue our advancement.</Italian>
+	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]TRADING_TRADE_ROUTE_2[COLOR_REVERT] to continue our advancement.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_TRADING_TRADEPOST</Tag>
+	<English>TRADING_TRADEPOST</English>
+	<French>TRADING_TRADEPOST</French>
+	<German>TRADING_TRADEPOST</German>
+	<Italian>TRADING_TRADEPOST</Italian>
+	<Spanish>TRADING_TRADEPOST</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_TRADING_TRADEPOST_PEDIA</Tag>
+	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_TRADEPOST[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
+	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_TRADEPOST[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
+	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_TRADEPOST[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
+	<Italian>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_TRADEPOST[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</Italian>
+	<Spanish>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_TRADEPOST[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_TRADING_TRADEPOST_STRATEGY</Tag>
+	<English>Research [COLOR_HIGHLIGHT_TEXT]TRADING_TRADEPOST[COLOR_REVERT] to continue our advancement.</English>
+	<French>Research [COLOR_HIGHLIGHT_TEXT]TRADING_TRADEPOST[COLOR_REVERT] to continue our advancement.</French>
+	<German>Research [COLOR_HIGHLIGHT_TEXT]TRADING_TRADEPOST[COLOR_REVERT] to continue our advancement.</German>
+	<Italian>Research [COLOR_HIGHLIGHT_TEXT]TRADING_TRADEPOST[COLOR_REVERT] to continue our advancement.</Italian>
+	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]TRADING_TRADEPOST[COLOR_REVERT] to continue our advancement.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_TRADING_GUILDS</Tag>
+	<English>TRADING_GUILDS</English>
+	<French>TRADING_GUILDS</French>
+	<German>TRADING_GUILDS</German>
+	<Italian>TRADING_GUILDS</Italian>
+	<Spanish>TRADING_GUILDS</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_TRADING_GUILDS_PEDIA</Tag>
+	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
+	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
+	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
+	<Italian>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</Italian>
+	<Spanish>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_TRADING_GUILDS_STRATEGY</Tag>
+	<English>Research [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] to continue our advancement.</English>
+	<French>Research [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] to continue our advancement.</French>
+	<German>Research [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] to continue our advancement.</German>
+	<Italian>Research [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] to continue our advancement.</Italian>
+	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] to continue our advancement.</Spanish>
 </TEXT>
 </Civ4GameText>

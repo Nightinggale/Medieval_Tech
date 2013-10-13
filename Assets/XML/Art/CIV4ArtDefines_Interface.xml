@@ -28,7 +28,7 @@
     </InterfaceArtInfo>
     <InterfaceArtInfo>
       <Type>MATERIALS_NEEDED</Type>
-      <Path>Art/interface/screens/TechTree/Materialsneeded.dds</Path>
+      <Path>Art/Buttons/Techs/Materials.dds</Path>
     </InterfaceArtInfo>
     <InterfaceArtInfo>
       <Type>DISALLOW_TECH</Type>
@@ -40,11 +40,11 @@
     </InterfaceArtInfo>
     <InterfaceArtInfo>
       <Type>MAGNIFYING_GLASS</Type>
-      <Path>Art/interface/screens/TechTree/MagnifingGlass.dds</Path>
+      <Path>Art/Screens/MagnifingGlass.dds</Path>
     </InterfaceArtInfo>
     <InterfaceArtInfo>
       <Type>MAGNIFYING_QUILL</Type>
-      <Path>Art/interface/screens/TechTree/Quill.dds</Path>
+      <Path>Art/Screens/Quill.dds</Path>
     </InterfaceArtInfo>
     <InterfaceArtInfo>
       <Type>TRADE_TECH_HOLDER</Type>
@@ -64,7 +64,7 @@
     </InterfaceArtInfo>
     <InterfaceArtInfo>
       <Type>NO_TRADE</Type>
-      <Path>Art/interface/screens/TechTree/NoTrade.dds</Path>
+      <Path>Art/Buttons/Techs/NoTrade.dds</Path>
     </InterfaceArtInfo>
     <InterfaceArtInfo>
       <Type>ARROW_MXY</Type>
@@ -96,55 +96,55 @@
     </InterfaceArtInfo>
     <InterfaceArtInfo>
       <Type>INTERFACE_TESTHOLDER_TECH</Type>
-      <Path>Art/interface/screens/TechTreeTestHolder.dds</Path>
+      <Path>Art/Screens/TestHolder.dds</Path>
     </InterfaceArtInfo>
     <InterfaceArtInfo>
       <Type>INTERFACE_HOLDS_TECH</Type>
-      <Path>Art/interface/screens/TechTree/HoldsTech.dds</Path>
+      <Path>Art/Screens/HoldsTech.dds</Path>
     </InterfaceArtInfo>
     <InterfaceArtInfo>
       <Type>INTERFACE_COORDINATES</Type>
-      <Path>Art/interface/screens/TechTree/COORDINATES.dds</Path>
+      <Path>Art/Screens/COORDINATES.dds</Path>
     </InterfaceArtInfo>
     <InterfaceArtInfo>
       <Type>INTERFACE_SELECT_TECH</Type>
-      <Path>Art/interface/screens/TechTree/SelectedTech.dds</Path>
+      <Path>Art/Screens/SelectedTech.dds</Path>
     </InterfaceArtInfo>
     <InterfaceArtInfo>
       <Type>INTERFACE_CATALOG_TECH</Type>
-      <Path>Art/interface/screens/TechTree/CatalogedTech.dds</Path>
+      <Path>Art/Screens/CatalogedTech.dds</Path>
     </InterfaceArtInfo>
     <InterfaceArtInfo>
       <Type>INTERFACE_HIDES_TECH</Type>
-      <Path>Art/interface/screens/TechTree/CloseScroll.dds</Path>
+      <Path>Art/Screens/CloseScroll.dds</Path>
     </InterfaceArtInfo>
     <InterfaceArtInfo>
       <Type>INTERFACE_INVENTION_SELECT</Type>
-      <Path>Art/interface/screens/TechTree/Inventing.dds</Path>
+      <Path>Art/Buttons/Inventing.dds</Path>
     </InterfaceArtInfo>
     <InterfaceArtInfo>
       <Type>INTERFACE_INVENTION_SELECT_TECH</Type>
-      <Path>Art/interface/screens/TechTree/SelectTech.dds</Path>
+      <Path>Art/Buttons/SelectTech.dds</Path>
     </InterfaceArtInfo>
     <InterfaceArtInfo>
       <Type>INTERFACE_INVENTION_CURRENT_TECH</Type>
-      <Path>Art/interface/screens/TechTree/Button_CURRENT.dds</Path>
+      <Path>Art/Buttons/Tech_Categorys/Button_CURRENT.dds</Path>
     </InterfaceArtInfo>
     <InterfaceArtInfo>
       <Type>INTERFACE_INVENTION_HIGHLIGHT_TECH</Type>
-      <Path>Art/interface/screens/TechTree/Button_HIGHLIGHT.dds</Path>
+      <Path>Art/Buttons/Tech_Categorys/Button_HIGHLIGHT.dds</Path>
     </InterfaceArtInfo>
     <InterfaceArtInfo>
       <Type>INTERFACE_TECHNOLOGY_BG</Type>
-      <Path>Art/interface/screens/TechTree/TechnologyBG.dds</Path>
+      <Path>Art/Screens/TechnologyBG.dds</Path>
     </InterfaceArtInfo>
     <InterfaceArtInfo>
       <Type>INTERFACE_TRADE_SCREEN_BG</Type>
-      <Path>Art/Interface/Screens/tradescreen/tradescreen.dds</Path>
+      <Path>Art/Interface/Screens/tradescreen.dds</Path>
     </InterfaceArtInfo>
     <InterfaceArtInfo>
       <Type>INTERFACE_INVENTIONS_COMPLETE_SELECT</Type>
-      <Path>Art/interface/screens/TechTree/InventingComplete.dds</Path>
+      <Path>Art/Buttons/InventingComplete.dds</Path>
     </InterfaceArtInfo>
     <InterfaceArtInfo>
       <Type>INTERFACE_INVENTIONS_TOP_BUTTON</Type>
@@ -159,11 +159,11 @@
     <!-- -->
     <InterfaceArtInfo>
       <Type>TUTORIAL_BLANK_SCREEN_BACKGROUND</Type>
-      <Path></Path>
+      <Path>Art/Interface/Screens/Screen_CivColonization_City.dds</Path>
     </InterfaceArtInfo>
 		<InterfaceArtInfo>
 			<Type>BUTTON_HILITE_SQUARE</Type>
-			<Path>Art/interface/screens/TechTree/button_highlight.dds</Path>
+			<Path>Art/Interface/Buttons/Button_SELECT.dds</Path>
 		</InterfaceArtInfo>
 		<InterfaceArtInfo>
 			<Type>CIVILOPEDIA_ANCIENT_BATTLEGROUND</Type>

@@ -5737,7 +5737,7 @@
 	<iBombardDefense>0</iBombardDefense>
 	<iAsset>50</iAsset>
 	<iPower>0</iPower>
-	<iYieldStorage>1000</iYieldStorage>
+	<iYieldStorage>0</iYieldStorage>
 	<iOverflowSellPercent>0</iOverflowSellPercent>
 	<fVisibilityPriority>1.0</fVisibilityPriority>
 	<SeaPlotYieldChanges/>

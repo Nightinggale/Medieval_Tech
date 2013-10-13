@@ -1044,6 +1044,179 @@ print FI "</FeatureInfo>\n";
 print FI "</FeatureInfos>\n</Civ4FeatureInfos>\n";
 close FI;
 
+# ** BONUSES **
+
+open (BI, '> ../Assets/XML/Terrain/CIV4BonusInfos.xml') or die "Can't write bonuses: $!";
+open (ADB, '> ../Assets/XML/Art/CIV4ArtDefines_Bonus.xml') or die "Can't write bonus: $!";
+
+print BI '<?xml version="1.0"?>'."\n";
+print BI '<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jason Winokur (Firaxis Games) -->'."\n";
+print BI '<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by Soren Johnson (Firaxis Games) -->'."\n";
+print BI '<!-- Sid Meier\'s Civilization 4 -->'."\n".'<!-- Copyright Firaxis Games 2005 -->'."\n".'<!-- -->'."\n".'<!-- Bonus Infos -->'."\n<!-- WARNING: It is not recommended that you remove Bonuses due to complications with the LSystem -->\n";
+print BI '<Civ4BonusInfos xmlns="x-schema:CIV4TerrainSchema.xml">'."\n<BonusInfos>\n";
+
+print ADB '<?xml version="1.0" encoding="UTF-8" standalone="no"?>'."\n";
+print ADB '<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jason Winokur (Firaxis Games) -->'."\n";
+print ADB '<!-- Sid Meier\'s Civilization 4 -->'."\n".'<!-- Copyright Firaxis Games 2005 -->'."\n".'<!-- -->'."\n".'<!-- Bonus/Resource art path information -->'."\n";
+print ADB '<Civ4ArtDefines xmlns="x-schema:CIV4ArtDefinesSchema.xml">'."\n<BonusArtInfos>\n";
+
+# 1st arg = terrain name, 2nd = hash (yield=>production)
+sub makebonus
+{
+my $desc = shift;
+$href = shift;
+my $tag = $desc;
+$tag =~ tr/ /_/;
+$tag =~ tr/[a-z]/[A-Z]/;
+print BI "<BonusInfo>\n";
+print BI "\t\t<Type>BONUS_".$tag."</Type>\n";
+print BI "\t\t<Description>TXT_KEY_BONUS_".$tag."</Description>\n";
+&maketext("TXT_KEY_BONUS_".$tag,$desc);
+$pedia = 'Rare [COLOR_HIGHLIGHT_TEXT]'.$desc.'[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in ';
+for my $yield ( keys (%$href) ) {
+	my $yielddesc = $yield;
+	$yielddesc =~ tr/_/ /;
+	$yielddesc =~ s/(\w+)/\u\L$1/g;
+	$pedia = $pedia.'[LINK=YIELD_'.$yield.']'.$yielddesc.'[\LINK], '; 
+	}
+print BI "\t\t<Civilopedia>TXT_KEY_BONUS_".$tag."_PEDIA</Civilopedia>\n";
+&maketext("TXT_KEY_BONUS_".$tag."_PEDIA",$pedia);
+print BI "\t\t<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>\n";
+# placeholder print BI "\t\t<ArtDefineTag>ART_DEF_BONUS_".$tag."</ArtDefineTag>\n";
+print BI "\t<BuildingType>NONE</BuildingType>\n";
+print BI "\t<YieldChanges>\n";
+for my $yield ( keys (%$href) ) {
+	my $prod = $href->{$yield};
+	if ($prod != 0) {
+		print BI "\t\t\t<YieldIntegerPair>\n";
+		print BI "\t\t\t\t<YieldType>YIELD_".$yield."</YieldType>\n";
+		print BI "\t\t\t\t<iValue>".$prod."</iValue>\n";
+		print BI "\t\t\t</YieldIntegerPair>\n";
+		}
+	}
+print BI "\t</YieldChanges>\n";
+print BI "\t<iAIObjective>0</iAIObjective>\n";
+print BI "\t<iPlacementOrder>4</iPlacementOrder>\n";
+print BI "\t<iConstAppearance>50</iConstAppearance>\n";
+print BI "\t<iMinAreaSize>3</iMinAreaSize>\n";
+print BI "\t<iMinLatitude>0</iMinLatitude>\n";
+print BI "\t<iMaxLatitude>90</iMaxLatitude>\n";
+print BI "\t<Rands>\n";
+print BI "\t\t<iRandApp1>25</iRandApp1>\n";
+print BI "\t\t<iRandApp2>25</iRandApp2>\n";
+print BI "\t\t<iRandApp3>0</iRandApp3>\n";
+print BI "\t\t<iRandApp4>0</iRandApp4>\n";
+print BI "\t</Rands>\n";
+print BI "\t<iPlayer>0</iPlayer>\n";
+print BI "\t<iTilesPer>50</iTilesPer>\n";
+print BI "\t<iMinLandPercent>0</iMinLandPercent>\n";
+print BI "\t<iUnique>0</iUnique>\n";
+print BI "\t<iGroupRange>0</iGroupRange>\n";
+print BI "\t<iGroupRand>0</iGroupRand>\n";
+print BI "\t<bArea>0</bArea>\n";
+print BI "\t<bHills>1</bHills>\n";
+print BI "\t<bFlatlands>1</bFlatlands>\n";
+print BI "\t<bNoRiverSide>0</bNoRiverSide>\n";
+print BI "\t<TerrainBooleans>\n";
+print BI "\t\t<TerrainBoolean>\n";
+print BI "\t\t\t<TerrainType>TERRAIN_GRASS</TerrainType>\n";
+print BI "\t\t\t<bTerrain>1</bTerrain>\n";
+print BI "\t\t</TerrainBoolean>\n";
+print BI "\t</TerrainBooleans>\n";
+print BI "\t<FeatureBooleans/>\n";
+print BI "\t<FeatureTerrainBooleans/>\n";
+print BI "</BonusInfo>\n";
+
+print ADB "<BonusArtInfo>\n";
+print ADB "\t<Type>ART_DEF_BONUS_".$tag."</Type>\n";
+print ADB "\t<fScale>1.0</fScale>\n";
+print ADB "\t<fInterfaceScale>1.0</fInterfaceScale>\n";
+print ADB "\t<NIF>Art/Terrain/Resources/".$tag.'/'.$tag.".nif</NIF>\n";
+print ADB "\t<KFM>Art/Terrain/Resources/".$tag.'/'.$tag.".kfm</KFM>\n";
+print ADB "\t<Button>Art/Buttons/Resources/".$tag.".dds</Button>\n";
+print ADB "\t<FontButtonIndex>4</FontButtonIndex>\n";
+print ADB "\t<bShadowCastor>0</bShadowCastor>\n";
+print ADB "\t<bRefractionCastor>0</bRefractionCastor>\n";
+print ADB "</BonusArtInfo>\n";
+}
+
+&makebonus('Progenitor Metropolis',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Ruined Temple',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Grand Ziggurat',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Nesting Grounds',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Spider Lair',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Iridescent Pyramids',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Limestone Spire',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Antediluvian Catacomb',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Sacred Grove',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Ruined Biosphere',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Plinth Circle',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Sacrificial Pit',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Obsidian Faces',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Malachite Idols',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Calcified Being',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Ominous Effigy',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Abandoned Redoubt',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Edible Berries',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Alien Fungi',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Native Tubers',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Native Ruminants',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Native Ungulates',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Native Pinnipeds',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Native Omnivores',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Electrolytic Mollusks',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Mantrap Clams',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Native Lungfish',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Native Arthropods',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Native Rodents',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Intelligent Mammals',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Native Equids',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Native Bipeds',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Native Beetles',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Exotic Aphrodisiac',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Subterranean Fungus',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Native Mosses',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Communications Array',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Orbital Platform',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Derelict Satellite',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Gold Vein',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Copper Vein',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('KREEP',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Native Shrubs',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Natural Gas',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Oil',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Impact Crater',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Meteorite',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Paleontology Site',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Gargantuan Fossil',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Arctic Moon',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Artifact Moon',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Barren Moon',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Primordial Moon',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Verdant Moon',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Aquatic Moon',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Volcanic Moon',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+&makebonus('Toxic Moon',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+
+#placeholder
+print ADB "<BonusArtInfo>\n";
+print ADB "\t<Type>ART_DEF_BONUS_FUR</Type>\n";
+print ADB "\t<fScale>1.0</fScale>\n";
+print ADB "\t<fInterfaceScale>1.0</fInterfaceScale>\n";
+print ADB "\t<NIF>Art/Terrain/Resources/Fur/Fur.nif</NIF>\n";
+print ADB "\t<KFM>Art/Terrain/Resources/Fur/Fur.kfm</KFM>\n";
+print ADB "\t<Button>,Art/Interface/Buttons/Unit_Resource_Atlas.dds,1,13</Button>\n";
+print ADB "\t<FontButtonIndex>21</FontButtonIndex>\n";
+print ADB "\t<bShadowCastor>1</bShadowCastor>\n";
+print ADB "\t<bRefractionCastor>0</bRefractionCastor>\n";
+print ADB "</BonusArtInfo>\n";
+
+# close files
+print BI "</BonusInfos>\n</Civ4BonusInfos>\n";
+close BI;
+print ADB "</BonusArtInfos>\n</Civ4ArtDefines>\n";
+close ADB;
+
 # **IMPROVEMENTS**
 # generate XML for improvements and builds
 open (BUILDS, '> ../Assets/XML/Units/CIV4BuildInfos.xml') or die "Can't write output: $!";
@@ -1298,7 +1471,11 @@ foreach $item (@allbuildings)
 	print BI "\t<iBombardDefense>0</iBombardDefense>\n";
 	print BI "\t<iAsset>50</iAsset>\n";
 	print BI "\t<iPower>0</iPower>\n";
-	print BI "\t<iYieldStorage>0</iYieldStorage>\n";
+	if ($item =~ /INDUSTRY/) {
+		print BI "\t<iYieldStorage>1000</iYieldStorage>\n";
+		} else {
+		print BI "\t<iYieldStorage>0</iYieldStorage>\n";
+		}
 	print BI "\t<iOverflowSellPercent>0</iOverflowSellPercent>\n";
 	print BI "\t<fVisibilityPriority>1.0</fVisibilityPriority>\n";
 	print BI "\t<SeaPlotYieldChanges/>\n";	
@@ -2907,7 +3084,7 @@ sub makekingciv
 	print CI "\t</Professions>\n";
 	print CI "\t<Traits>\n";
 	print CI "\t\t<Trait>\n";
-	print CI "\t\t\t<TraitType>TRAIT_RESEARCH_ERA_1_MOD</TraitType>\n";
+	print CI "\t\t\t<TraitType></TraitType>\n";
 	print CI "\t\t\t<bTrait>0</bTrait>\n";
 	print CI "\t\t</Trait>\n";
 	print CI "\t</Traits>\n";
@@ -3046,7 +3223,7 @@ sub makeciv
 	print CI "\t</Professions>\n";
 	print CI "\t<Traits>\n";
 	print CI "\t\t<Trait>\n";
-	print CI "\t\t\t<TraitType>TRAIT_RESEARCH_ERA_1_MOD</TraitType>\n";
+	print CI "\t\t\t<TraitType></TraitType>\n";
 	print CI "\t\t\t<bTrait>0</bTrait>\n";
 	print CI "\t\t</Trait>\n";
 	print CI "\t</Traits>\n";
@@ -3158,6 +3335,346 @@ print LI '</LeaderHeadInfos>'."\n</Civ4LeaderHeadInfos>\n";
 close LI;
 print ADC '</CivilizationArtInfos>'."\n</Civ4ArtDefines>\n";
 close ADC;
+
+# ** TECHS / CIVICS / TRAITS **
+
+# open XML for writing
+open (CI, '> ../Assets/XML/GameInfo/CIV4CivicInfos.xml') or die "Can't write civics: $!";
+open (TRI, '> ../Assets/XML/Civilizations/CIV4TraitInfos.xml') or die "Can't write traits: $!";
+
+# generate XML headers
+print CI '<?xml version="1.0"?>'."\n";
+print CI '<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Ed Piper (Firaxis Games) -->'."\n";
+print CI '<!-- Sid Meier\'s Civilization 4 -->'."\n".'<!-- Copyright Firaxis Games 2005 -->'."\n".'<!-- -->'."\n".'<!-- Civic Infos -->'."\n";
+print CI '<Civ4CivicInfos xmlns="x-schema:CIV4GameInfoSchema.xml">'."\n<CivicInfos>\n";
+
+print TRI '<?xml version="1.0"?>'."\n";
+print TRI '<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Ed Piper (Firaxis Games) -->'."\n";
+print TRI '<!-- Sid Meier\'s Civilization 4 -->'."\n".'<!-- Copyright Firaxis Games 2005 -->'."\n".'<!-- -->'."\n".'<!-- Leader Trait Infos -->'."\n";
+print TRI '<Civ4TraitInfos xmlns="x-schema:CIV4CivilizationsSchema.xml">'."\n<TraitInfos>\n";
+
+sub maketrait {
+	my $tag = shift;
+	my $desc = $tag;
+	$desc =~ tr/_/ /;
+	$desc =~ s/(\w+)/\u\L$1/g;
+	my $short = substr($desc,0,3);
+	print TRI "<TraitInfo>\n";
+	print TRI "\t<Type>TRAIT_".$tag."</Type>\n";
+	print TRI "\t<Description>TXT_KEY_TRAIT_".$tag."</Description>\n";
+	&maketext("TXT_KEY_TRAIT_".$tag, $desc);
+	print TRI "\t<ShortDescription>".$short."</ShortDescription>\n";
+	print TRI "\t<iLevelExperienceModifier>0</iLevelExperienceModifier>\n";
+	print TRI "\t<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>\n";
+	print TRI "\t<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>\n";
+	print TRI "\t<iNativeAngerModifier>0</iNativeAngerModifier>\n";
+	print TRI "\t<iLearnTimeModifier>0</iLearnTimeModifier>\n";
+	print TRI "\t<iNativeCombatModifier>0</iNativeCombatModifier>\n";
+	print TRI "\t<iMissionaryModifier>0</iMissionaryModifier>\n";
+	print TRI "\t<iRebelCombatModifier>0</iRebelCombatModifier>\n";
+	print TRI "\t<iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>\n";
+	print TRI "\t<iMercantileFactor>0</iMercantileFactor>\n";
+	print TRI "\t<iTreasureModifier>0</iTreasureModifier>\n";
+	print TRI "\t<iChiefGoldModifier>0</iChiefGoldModifier>\n";
+	print TRI "\t<iNativeAttitudeChange>0</iNativeAttitudeChange>\n";
+	print TRI "\t<iCityDefense>0</iCityDefense>\n";
+	print TRI "\t<iLandPriceDiscount>0</iLandPriceDiscount>\n";
+	print TRI "\t<iRecruitPriceDiscount>0</iRecruitPriceDiscount>\n";
+	print TRI "\t<iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>\n";
+	print TRI "\t<iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>\n";
+	print TRI "\t<CityExtraYields/>\n";
+	print TRI "\t<ExtraYieldThresholds/>\n";
+	print TRI "\t<ProfessionEquipmentModifiers/>\n";
+	print TRI "\t<FreePromotions/>\n";
+	print TRI "\t<FreePromotionUnitCombats/>\n";
+	print TRI "\t<YieldModifiers>\n";
+	print TRI "\t\t<YieldModifier>\n";
+	print TRI "\t\t\t<YieldType>YIELD_RESEARCH</YieldType>\n";
+	print TRI "\t\t\t<iYield>0</iYield>\n";
+	print TRI "\t\t</YieldModifier>\n";
+	print TRI "\t</YieldModifiers>\n";
+	print TRI "\t<TaxYieldModifiers/>\n";
+	print TRI "\t<BuildingYieldChanges/>\n";
+	print TRI "\t<UnitMoveChanges/>\n";
+	print TRI "\t<ProfessionMoveChanges/>\n";
+	print TRI "\t<BuildingProductionModifiers/>\n";
+	print TRI "\t<BuildingRequiredYieldModifiers/>\n";
+	print TRI "\t<UnitStrengthModifiers/>\n";
+	print TRI "\t<FreeBuildingClasses/>\n";
+	print TRI "\t<GoodyFactors/>\n";
+	print TRI "</TraitInfo>\n";
+}
+
+&maketrait('Earthling');
+&maketrait('Alien');
+
+&maketrait('Capitalist');
+&maketrait('Industrious');
+&maketrait('Well Connected');
+
+&maketrait('Imperialist');
+&maketrait('Disciplined');
+&maketrait('Resourceful');
+
+&maketrait('Communist');
+&maketrait('Dissident');
+&maketrait('Militaristic');
+
+&maketrait('Fanatical');
+&maketrait('Distinguished');
+&maketrait('Extravagant');
+
+&maketrait('Corporate');
+&maketrait('Entrepreneurial');
+&maketrait('Exploitative');
+
+&maketrait('Cybernetic');
+&maketrait('Automated');
+
+&maketrait('Criminal');
+&maketrait('Violent');
+
+&maketrait('Progenitor Heritage');
+&maketrait('Avian');
+&maketrait('Amphibian');
+&maketrait('Aquatic');
+&maketrait('Inorganic');
+&maketrait('Intellectual');
+&maketrait('Enigmatic');
+&maketrait('Recombinant');
+&maketrait('Mercantile');
+&maketrait('Fearsome');
+
+#category tag, description
+sub makecat {
+	my $tag = shift;
+	my $desc = shift;
+	print CI "<CivicInfo>\n";
+	print CI "\t<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>\n";
+	print CI "\t<Type>".$tag."</Type>\n";
+	print CI "\t<Description>TXT_KEY_TECH_CATEGORY_".$tag."</Description>\n";
+	&maketext("TXT_KEY_TECH_CATEGORY_".$tag,$desc);
+	print CI "\t<Civilopedia></Civilopedia>\n";
+	print CI "\t<Strategy></Strategy>\n";
+	print CI "\t<Button>Art/Buttons/Techs/Categories/".$tag.".dds</Button>\n";
+	print CI "\t<iAIWeight>0</iAIWeight>\n";
+	print CI "\t<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>\n";
+	print CI "\t<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>\n";
+	print CI "\t<iFreeExperience>0</iFreeExperience>\n";
+	print CI "\t<iWorkerSpeedModifier>0</iWorkerSpeedModifier>\n";
+	print CI "\t<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>\n";
+	print CI "\t<iMilitaryProductionModifier>0</iMilitaryProductionModifier>\n";
+	print CI "\t<iExpInBorderModifier>0</iExpInBorderModifier>\n";
+	print CI "\t<iNativeAttitudeChange>0</iNativeAttitudeChange>\n";
+	print CI "\t<iNativeCombatModifier>0</iNativeCombatModifier>\n";
+	print CI "\t<iFatherPointModifier>0</iFatherPointModifier>\n";
+	print CI "\t<bDominateNativeBorders>0</bDominateNativeBorders>\n";
+	print CI "\t<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>\n";
+	print CI "\t<YieldModifiers/>\n";
+	print CI "\t<CapitalYieldModifiers/>\n";
+	print CI "\t<Hurrys/>\n";
+	print CI "\t<SpecialBuildingNotRequireds/>\n";
+	print CI "\t<ImprovementYieldChanges/>\n";
+	print CI "\t<FreeUnitClasses/>\n";
+	print CI "\t<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>\n";
+	print CI "\t<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>\n";
+	print CI "\t<ProfessionCombatChanges/>\n";
+	print CI "\t<ImmigrationConversion>NONE</ImmigrationConversion>\n";
+	print CI "\t<InventionCategory/>\n";
+	print CI "\t<iX_Location>0</iX_Location>\n";
+	print CI "\t<iY_Location>0</iY_Location>\n";
+	print CI "\t<RequiredInvention/>\n";
+	print CI "\t<RequiredInvention2/>\n";
+	print CI "\t<RequiredInventionOr/>\n";
+	print CI "\t<RequiredUnitType/>\n";
+	print CI "\t<RequiredYields/>\n";
+	print CI "\t<AllowsYields/>\n";
+	print CI "\t<AllowsBuildingTypes/>\n";
+	print CI "\t<AllowsUnitClasses/>\n";
+	print CI "\t<AllowsPromotions/>\n";
+	print CI "\t<AllowsProfessions/>\n";
+	print CI "\t<AllowsTrait/>\n";
+	print CI "\t<AllowsBuildTypes/>\n";
+	print CI "\t<AllowsBuildTypesTerrain/>\n";
+	print CI "\t<ConvertsUnitsFrom/>\n";
+	print CI "\t<ConvertsUnitsTo/>\n";
+	print CI "\t<NewDefaultUnitClass/>\n";
+	print CI "\t<DisallowsTech/>\n";
+	print CI "\t<RouteMovementMod/>\n";
+	print CI "\t<bStartConstitution>0</bStartConstitution>\n";
+	print CI "\t<bAllowsMapTrade>0</bAllowsMapTrade>\n";
+	print CI "\t<bNoArrowinTechScreen>0</bNoArrowinTechScreen>\n";
+	print CI "\t<bisNoneTradeable>0</bisNoneTradeable>\n";
+	print CI "\t<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>\n";
+	print CI "\t<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>\n";
+	print CI "\t<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>\n";
+	print CI "\t<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>\n";
+	print CI "\t<iProlificInventorRateChange>0</iProlificInventorRateChange>\n";
+	print CI "\t<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>\n";
+	print CI "\t<iGoldBonus>0</iGoldBonus>\n";
+	print CI "\t<iFreeTechs>0</iFreeTechs>\n";
+	print CI "\t<iKingTreasureTransportMod>0</iKingTreasureTransportMod>\n";
+	print CI "\t<IndustrializationVictory/>\n";
+	print CI "</CivicInfo>\n";
+}
+
+#tag,description,category,xcoord,ycoord,requiredinvention,allowyield,allowbldg,allowprof
+sub maketech {
+	my $tag = shift;
+	my $desc = shift;
+	my $category = shift;
+	my $x = shift;
+	my $y = shift;
+	my $req = shift;
+	my $allowsyield = shift;
+	my $allowsbuilding = shift;
+	my $allowsprof = shift;
+	print CI "<CivicInfo>\n";
+	print CI "\t<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>\n";
+	print CI "\t<Type>".$tag."</Type>\n";
+	print CI "\t<Description>TXT_KEY_TECH_".$tag."</Description>\n";
+	&maketext("TXT_KEY_TECH_".$tag,$desc);
+	print CI "\t<Civilopedia>TXT_KEY_TECH_".$tag."_PEDIA</Civilopedia>\n";
+	my $pedia = 'The discovery of [COLOR_HIGHLIGHT_TEXT]'.$desc."[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.";
+	&maketext("TXT_KEY_TECH_".$tag."_PEDIA",$pedia);
+	print CI "\t<Strategy>TXT_KEY_TECH_".$tag."_STRATEGY</Strategy>\n";
+	&maketext("TXT_KEY_TECH_".$tag."_STRATEGY",'Research [COLOR_HIGHLIGHT_TEXT]'.$desc."[COLOR_REVERT] to continue our advancement.");
+	print CI "\t<Button>Art/Buttons/Techs/".$tag.".dds</Button>\n";
+	print CI "\t<iAIWeight>0</iAIWeight>\n";
+	print CI "\t<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>\n";
+	print CI "\t<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>\n";
+	print CI "\t<iFreeExperience>0</iFreeExperience>\n";
+	print CI "\t<iWorkerSpeedModifier>0</iWorkerSpeedModifier>\n";
+	print CI "\t<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>\n";
+	print CI "\t<iMilitaryProductionModifier>0</iMilitaryProductionModifier>\n";
+	print CI "\t<iExpInBorderModifier>0</iExpInBorderModifier>\n";
+	print CI "\t<iNativeAttitudeChange>0</iNativeAttitudeChange>\n";
+	print CI "\t<iNativeCombatModifier>0</iNativeCombatModifier>\n";
+	print CI "\t<iFatherPointModifier>0</iFatherPointModifier>\n";
+	print CI "\t<bDominateNativeBorders>0</bDominateNativeBorders>\n";
+	print CI "\t<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>\n";
+	print CI "\t<YieldModifiers/>\n";
+	print CI "\t<CapitalYieldModifiers/>\n";
+	print CI "\t<Hurrys/>\n";
+	print CI "\t<SpecialBuildingNotRequireds/>\n";
+	print CI "\t<ImprovementYieldChanges/>\n";
+	print CI "\t<FreeUnitClasses/>\n";
+	print CI "\t<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>\n";
+	print CI "\t<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>\n";
+	print CI "\t<ProfessionCombatChanges/>\n";
+	print CI "\t<ImmigrationConversion>NONE</ImmigrationConversion>\n";
+	print CI "\t<InventionCategory>".$category."</InventionCategory>\n";
+	print CI "\t<iX_Location>".$x."</iX_Location>\n";
+	print CI "\t<iY_Location>".$y."</iY_Location>\n";
+	print CI "\t<RequiredInvention>".$req."<RequiredInvention>\n";
+	print CI "\t<RequiredInvention2/>\n";
+	print CI "\t<RequiredInventionOr/>\n";
+	print CI "\t<RequiredUnitType/>\n";
+	print CI "\t<RequiredYields/>\n";
+	if ($allowsyield =~ /\w+/){
+		print CI "\t<AllowsYields>\n";
+		print CI "\t<YieldType>YIELD_".$allowsyield."</YieldType>\n";
+		print CI "\t<iChange>1</iChange>\n";
+		print CI "\t</AllowsYields>\n";
+		} else {
+		print CI "\t<AllowsYields/>\n";
+		}
+	if ($allowsbuilding =~ /\w+/){
+		print CI "\t<AllowsBuildingTypes>\n";
+		print CI "\t\t<AllowsBuildingType>\n";
+		print CI "\t\t\t<BuildingType>BUILDINGCLASS_".$allowsbuilding."</BuildingType>\n";
+		print CI "\t\t\t<iChange>1</iChange>\n";
+		print CI "\t\t<AllowsBuildingType>\n";
+		print CI "\t</AllowsBuildingTypes>\n";
+		} else {
+		print CI "\t<AllowsBuildingTypes/>\n";
+		}
+	print CI "\t<AllowsUnitClasses/>\n";
+	print CI "\t<AllowsPromotions/>\n";
+	if ($allowsprof =~ /\w+/){
+		print CI "\t<AllowsProfessions>\n";
+		print CI "\t\t<AllowsProfession>\n";
+		print CI "\t\t\t<ProfessionType>PROFESSION_".$allowsprof."</ProfessionType>\n";
+		print CI "\t\t\t<iChange>1</iChange>\n";
+		print CI "\t\t<AllowsProfession>\n";
+		print CI "\t</AllowsProfessions>\n";
+		} else {
+		print CI "\t<AllowsProfessions/>\n";
+		}
+	print CI "\t<AllowsTrait/>\n";
+	print CI "\t<AllowsBuildTypes/>\n";
+	print CI "\t<AllowsBuildTypesTerrain/>\n";
+	print CI "\t<ConvertsUnitsFrom/>\n";
+	print CI "\t<ConvertsUnitsTo/>\n";
+	print CI "\t<NewDefaultUnitClass/>\n";
+	print CI "\t<DisallowsTech/>\n";
+	print CI "\t<RouteMovementMod/>\n";
+	print CI "\t<bStartConstitution>0</bStartConstitution>\n";
+	print CI "\t<bAllowsMapTrade>0</bAllowsMapTrade>\n";
+	print CI "\t<bNoArrowinTechScreen>0</bNoArrowinTechScreen>\n";
+	print CI "\t<bisNoneTradeable>0</bisNoneTradeable>\n";
+	print CI "\t<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>\n";
+	print CI "\t<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>\n";
+	print CI "\t<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>\n";
+	print CI "\t<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>\n";
+	print CI "\t<iProlificInventorRateChange>0</iProlificInventorRateChange>\n";
+	print CI "\t<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>\n";
+	print CI "\t<iGoldBonus>0</iGoldBonus>\n";
+	print CI "\t<iFreeTechs>0</iFreeTechs>\n";
+	print CI "\t<iKingTreasureTransportMod>0</iKingTreasureTransportMod>\n";
+	print CI "\t<IndustrializationVictory/>\n";
+	print CI "</CivicInfo>\n";
+}
+#M:C hardcoded categories
+&makecat('MEDIEVAL_CENSURE');
+&makecat('MEDIEVAL_TRADE_TECH');
+&makecat('NATIVE_TECH');
+
+#tag,description,category,xcoord,ycoord,requiredinvention,allowyield,allowbldg,allowprof
+#M:C hardcoded techs
+&maketech('CENSURE_INTERDICT','Interdict','MEDIEVAL_CENSURE',0,0,'','','','');
+&maketech('CENSURE_ANATHEMA','Anathema','MEDIEVAL_CENSURE',0,0,'','','','');
+&maketech('CENSURE_EXCOMMUNICATION','Excommunication','MEDIEVAL_CENSURE',0,0,'','','','');
+&maketech('TRADING_TRADE_ROUTE_2','TRADING_TRADE_ROUTE_2','MEDIEVAL_TRADE_TECH',0,0,'','','','');
+&maketech('TRADING_TRADEPOST','TRADING_TRADEPOST','MEDIEVAL_TRADE_TECH',0,0,'','','','');
+&maketech('TRADING_GUILDS','TRADING_GUILDS','MEDIEVAL_TRADE_TECH',0,0,'','','','');
+
+$x=0;
+$y=0;
+
+sub maketechlineraw {
+	my $yield = shift;
+	my $desc = shift;
+	#allow yield
+	&maketech($yield.'1',$desc.' Analysis',$yield,$x,$y,'',$yield,'','');
+	$x++;
+	#allow prof
+	&maketech($yield.'2',$desc,$yield,$x,$y,'','','',$yield);
+	}
+
+sub maketechlinecity {
+	my $yield = shift;
+	my $category = shift;
+
+	}
+
+foreach @cityprof (@plotprofs) {
+	$profdesc = $cityprof[0];
+	$procyield = $cityprof[1];
+	$rawyield = $cityprof[2];
+	if ($procyield =~ /\w+/) {
+		&maketechlineraw($rawyield);
+		&maketechlinecity($procyield);
+		} else {
+		&maketechlinecity($procyield);
+		}
+	}
+
+# close files
+print CI "</CivicInfos>\n</Civ4CivicInfos>\n";
+close CI;
+print TRI "</TraitInfos>\n</Civ4TraitInfos>\n";
+close TRI;
 
 # close text
 print TEXT "</Civ4GameText>\n";

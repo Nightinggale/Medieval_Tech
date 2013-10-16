@@ -9321,6 +9321,54 @@
 	<Spanish>[COLOR_HIGHLIGHT_TEXT]VASSAL_LORD_ONE[COLOR_REVERT] is a prominent leader of [LINK=CIVILIZATION_VASSAL_LORD_ONE]VASSAL_LORD_ONE[\LINK] who is known as a formidable opponent.</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_TRAIT_Earthling</Tag>
+	<English>Earthling</English>
+	<French>Earthling</French>
+	<German>Earthling</German>
+	<Italian>Earthling</Italian>
+	<Spanish>Earthling</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TRAIT_Alien</Tag>
+	<English>Alien</English>
+	<French>Alien</French>
+	<German>Alien</German>
+	<Italian>Alien</Italian>
+	<Spanish>Alien</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TRAIT_Capitalist</Tag>
+	<English>Capitalist</English>
+	<French>Capitalist</French>
+	<German>Capitalist</German>
+	<Italian>Capitalist</Italian>
+	<Spanish>Capitalist</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TRAIT_Industrious</Tag>
+	<English>Industrious</English>
+	<French>Industrious</French>
+	<German>Industrious</German>
+	<Italian>Industrious</Italian>
+	<Spanish>Industrious</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TRAIT_Well Connected</Tag>
+	<English>Well Connected</English>
+	<French>Well Connected</French>
+	<German>Well Connected</German>
+	<Italian>Well Connected</Italian>
+	<Spanish>Well Connected</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TRAIT_Imperialist</Tag>
+	<English>Imperialist</English>
+	<French>Imperialist</French>
+	<German>Imperialist</German>
+	<Italian>Imperialist</Italian>
+	<Spanish>Imperialist</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_TRAIT_Disciplined</Tag>
 	<English>Disciplined</English>
 	<French>Disciplined</French>
@@ -9329,12 +9377,196 @@
 	<Spanish>Disciplined</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TRAIT_Media Savvy</Tag>
-	<English>Media Savvy</English>
-	<French>Media Savvy</French>
-	<German>Media Savvy</German>
-	<Italian>Media Savvy</Italian>
-	<Spanish>Media Savvy</Spanish>
+	<Tag>TXT_KEY_TRAIT_Resourceful</Tag>
+	<English>Resourceful</English>
+	<French>Resourceful</French>
+	<German>Resourceful</German>
+	<Italian>Resourceful</Italian>
+	<Spanish>Resourceful</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TRAIT_Communist</Tag>
+	<English>Communist</English>
+	<French>Communist</French>
+	<German>Communist</German>
+	<Italian>Communist</Italian>
+	<Spanish>Communist</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TRAIT_Dissident</Tag>
+	<English>Dissident</English>
+	<French>Dissident</French>
+	<German>Dissident</German>
+	<Italian>Dissident</Italian>
+	<Spanish>Dissident</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TRAIT_Militaristic</Tag>
+	<English>Militaristic</English>
+	<French>Militaristic</French>
+	<German>Militaristic</German>
+	<Italian>Militaristic</Italian>
+	<Spanish>Militaristic</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TRAIT_Fanatical</Tag>
+	<English>Fanatical</English>
+	<French>Fanatical</French>
+	<German>Fanatical</German>
+	<Italian>Fanatical</Italian>
+	<Spanish>Fanatical</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TRAIT_Distinguished</Tag>
+	<English>Distinguished</English>
+	<French>Distinguished</French>
+	<German>Distinguished</German>
+	<Italian>Distinguished</Italian>
+	<Spanish>Distinguished</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TRAIT_Extravagant</Tag>
+	<English>Extravagant</English>
+	<French>Extravagant</French>
+	<German>Extravagant</German>
+	<Italian>Extravagant</Italian>
+	<Spanish>Extravagant</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TRAIT_Corporate</Tag>
+	<English>Corporate</English>
+	<French>Corporate</French>
+	<German>Corporate</German>
+	<Italian>Corporate</Italian>
+	<Spanish>Corporate</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TRAIT_Entrepreneurial</Tag>
+	<English>Entrepreneurial</English>
+	<French>Entrepreneurial</French>
+	<German>Entrepreneurial</German>
+	<Italian>Entrepreneurial</Italian>
+	<Spanish>Entrepreneurial</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TRAIT_Exploitative</Tag>
+	<English>Exploitative</English>
+	<French>Exploitative</French>
+	<German>Exploitative</German>
+	<Italian>Exploitative</Italian>
+	<Spanish>Exploitative</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TRAIT_Cybernetic</Tag>
+	<English>Cybernetic</English>
+	<French>Cybernetic</French>
+	<German>Cybernetic</German>
+	<Italian>Cybernetic</Italian>
+	<Spanish>Cybernetic</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TRAIT_Automated</Tag>
+	<English>Automated</English>
+	<French>Automated</French>
+	<German>Automated</German>
+	<Italian>Automated</Italian>
+	<Spanish>Automated</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TRAIT_Criminal</Tag>
+	<English>Criminal</English>
+	<French>Criminal</French>
+	<German>Criminal</German>
+	<Italian>Criminal</Italian>
+	<Spanish>Criminal</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TRAIT_Violent</Tag>
+	<English>Violent</English>
+	<French>Violent</French>
+	<German>Violent</German>
+	<Italian>Violent</Italian>
+	<Spanish>Violent</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TRAIT_Progenitor Heritage</Tag>
+	<English>Progenitor Heritage</English>
+	<French>Progenitor Heritage</French>
+	<German>Progenitor Heritage</German>
+	<Italian>Progenitor Heritage</Italian>
+	<Spanish>Progenitor Heritage</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TRAIT_Avian</Tag>
+	<English>Avian</English>
+	<French>Avian</French>
+	<German>Avian</German>
+	<Italian>Avian</Italian>
+	<Spanish>Avian</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TRAIT_Amphibian</Tag>
+	<English>Amphibian</English>
+	<French>Amphibian</French>
+	<German>Amphibian</German>
+	<Italian>Amphibian</Italian>
+	<Spanish>Amphibian</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TRAIT_Aquatic</Tag>
+	<English>Aquatic</English>
+	<French>Aquatic</French>
+	<German>Aquatic</German>
+	<Italian>Aquatic</Italian>
+	<Spanish>Aquatic</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TRAIT_Inorganic</Tag>
+	<English>Inorganic</English>
+	<French>Inorganic</French>
+	<German>Inorganic</German>
+	<Italian>Inorganic</Italian>
+	<Spanish>Inorganic</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TRAIT_Intellectual</Tag>
+	<English>Intellectual</English>
+	<French>Intellectual</French>
+	<German>Intellectual</German>
+	<Italian>Intellectual</Italian>
+	<Spanish>Intellectual</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TRAIT_Enigmatic</Tag>
+	<English>Enigmatic</English>
+	<French>Enigmatic</French>
+	<German>Enigmatic</German>
+	<Italian>Enigmatic</Italian>
+	<Spanish>Enigmatic</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TRAIT_Recombinant</Tag>
+	<English>Recombinant</English>
+	<French>Recombinant</French>
+	<German>Recombinant</German>
+	<Italian>Recombinant</Italian>
+	<Spanish>Recombinant</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TRAIT_Mercantile</Tag>
+	<English>Mercantile</English>
+	<French>Mercantile</French>
+	<German>Mercantile</German>
+	<Italian>Mercantile</Italian>
+	<Spanish>Mercantile</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TRAIT_Fearsome</Tag>
+	<English>Fearsome</English>
+	<French>Fearsome</French>
+	<German>Fearsome</German>
+	<Italian>Fearsome</Italian>
+	<Spanish>Fearsome</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TECH_CATEGORY_MEDIEVAL_CENSURE</Tag>
@@ -9498,6 +9730,30 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TECH_TRADING_GUILDS_STRATEGY</Tag>
+	<English>Research [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] to continue our advancement.</English>
+	<French>Research [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] to continue our advancement.</French>
+	<German>Research [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] to continue our advancement.</German>
+	<Italian>Research [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] to continue our advancement.</Italian>
+	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] to continue our advancement.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_TEST</Tag>
+	<English>TRADING_GUILDS</English>
+	<French>TRADING_GUILDS</French>
+	<German>TRADING_GUILDS</German>
+	<Italian>TRADING_GUILDS</Italian>
+	<Spanish>TRADING_GUILDS</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_TEST_PEDIA</Tag>
+	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
+	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
+	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
+	<Italian>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</Italian>
+	<Spanish>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_TEST_STRATEGY</Tag>
 	<English>Research [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] to continue our advancement.</English>
 	<French>Research [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] to continue our advancement.</French>
 	<German>Research [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] to continue our advancement.</German>

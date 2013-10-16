@@ -1041,6 +1041,8 @@ print FI "</FeatureInfo>\n";
 &makefeature('PETRIFIED_FOREST',{'BIOPOLYMERS'=>3,'HYDROCARBONS'=>1,'NUTRIENTS'=>-1});
 &makefeature('PROGENITOR_RUINS',{'BIOPOLYMERS'=>3,'DATACORES'=>1,'NUTRIENTS'=>-1});
 
+@features = ('FOREST','LIGHT_FOREST','JUNGLE','ICE','LUMINOUS_FOREST','FUNGAL_FOREST','CYCAD_FOREST','PETRIFIED_FOREST','PROGENITOR_RUINS');
+
 print FI "</FeatureInfos>\n</Civ4FeatureInfos>\n";
 close FI;
 
@@ -1342,13 +1344,74 @@ foreach $item (@improvements)
 	print BUILDS "\t</BuildInfo>\n";}
 	
 	}
+
+# generate builds for Feature removal/harvesting
+foreach $item (@features) {
+	my $desc = $item;
+	$desc =~ tr/_/ /;
+	$desc =~ s/(\w+)/\u\L$1/g;
+	print BUILDS "\t<BuildInfo>\n";
+	print BUILDS "\t\t<Type>BUILD_REMOVE_".$item."</Type>\n";
+	print BUILDS "\t\t<Description>Remove ".$desc."</Description>\n";
+	print BUILDS "\t\t<Help/>\n";
+	print BUILDS "\t\t<iTime>0</iTime>\n";
+	print BUILDS "\t\t<iCost>0</iCost>\n";
+	print BUILDS "\t\t<bKill>0</bKill>\n";
+	print BUILDS "\t\t<ImprovementType>NONE</ImprovementType>\n";
+	print BUILDS "\t\t<RouteType>NONE</RouteType>\n";
+	print BUILDS "\t\t<EntityEvent>ENTITY_EVENT_CHOP</EntityEvent>\n";
+	print BUILDS "\t\t<FeatureStructs>\n";
+	print BUILDS "\t\t\t<FeatureStruct>\n";
+	print BUILDS "\t\t\t\t<FeatureType>FEATURE_".$item."</FeatureType>\n";
+	print BUILDS "\t\t\t\t<iTime>600</iTime>\n";
+	print BUILDS "\t\t\t\t<Yields>\n";
+	print BUILDS "\t\t\t\t\t<Yield>\n";
+	print BUILDS "\t\t\t\t\t\t<YieldType>YIELD_BIOPOLYMERS</YieldType>\n";
+	print BUILDS "\t\t\t\t\t\t<iYield>20</iYield>\n";
+	print BUILDS "\t\t\t\t\t</Yield>\n";
+	print BUILDS "\t\t\t\t</Yields>\n";
+	print BUILDS "\t\t\t\t<bRemove>1</bRemove>\n";
+	print BUILDS "\t\t\t</FeatureStruct>\n";
+	print BUILDS "\t\t</FeatureStructs>\n";
+	print BUILDS "\t\t<iCityType>-1</iCityType>\n";
+	print BUILDS "\t\t<HotKey>KB_C</HotKey>\n";
+	print BUILDS "\t\t<bAltDown>1</bAltDown>\n";
+	print BUILDS "\t\t<bShiftDown>0</bShiftDown>\n";
+	print BUILDS "\t\t<bCtrlDown>0</bCtrlDown>\n";
+	print BUILDS "\t\t<iHotKeyPriority>0</iHotKeyPriority>\n";
+	print BUILDS "\t\t".'<Button>Art\Interface\Game Hud\Actions\chop_high_res.dds</Button>'."\n";
+	print BUILDS "\t</BuildInfo>\n";
+	}	
+
+# build road
+	print BUILDS "\t<BuildInfo>\n";
+	print BUILDS "\t\t<Type>BUILD_ROAD</Type>\n";
+	print BUILDS "\t\t<Description>TXT_KEY_BUILD_ROAD</Description>\n";
+	print BUILDS "\t\t<Help/>\n";
+	print BUILDS "\t\t<iTime>400</iTime>\n";
+	print BUILDS "\t\t<iCost>20</iCost>\n";
+	print BUILDS "\t\t<bKill>0</bKill>\n";
+	print BUILDS "\t\t<ImprovementType>NONE</ImprovementType>\n";
+	print BUILDS "\t\t<RouteType>ROUTE_ROAD</RouteType>\n";
+	print BUILDS "\t\t<EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>\n";
+	print BUILDS "\t\t<FeatureStructs/>\n";
+	print BUILDS "\t\t<iCityType>-1</iCityType>\n";
+	print BUILDS "\t\t<HotKey>KB_R</HotKey>\n";
+	print BUILDS "\t\t<bAltDown>0</bAltDown>\n";
+	print BUILDS "\t\t<bShiftDown>0</bShiftDown>\n";
+	print BUILDS "\t\t<bCtrlDown>0</bCtrlDown>\n";
+	print BUILDS "\t\t<iHotKeyPriority>0</iHotKeyPriority>\n";
+	print BUILDS "\t\t".'<Button>Art\Interface\Game Hud\Actions\build_road_high_res.dds</Button>'."\n";
+	print BUILDS "\t</BuildInfo>\n";
+	
+# close files	
 print BUILDS "</BuildInfos>\n</Civ4BuildInfos>\n";
 close BUILDS;
 print IM "</ImprovementInfos>\n</Civ4ImprovementInfos>\n";
 close IM;
 print ADI "</ImprovementArtInfos>\n</Civ4ArtDefines>\n";
 close ADI;
-	
+
 # **BUILDINGS**
 # generate building XML
 
@@ -1874,6 +1937,16 @@ foreach $item (@allspecialists)
 		print UI "\t\t\t<bBuild>1</bBuild>\n";
 		print UI "\t\t</Build>\n";
 		}
+	foreach my $build (@features) {
+		print UI "\t\t<Build>\n";
+		print UI "\t\t\t<BuildType>BUILD_REMOVE_".$build."</BuildType>\n";
+		print UI "\t\t\t<bBuild>1</bBuild>\n";
+		print UI "\t\t</Build>\n";
+		}
+	print UI "\t\t<Build>\n";
+	print UI "\t\t\t<BuildType>BUILD_ROAD</BuildType>\n";
+	print UI "\t\t\t<bBuild>1</bBuild>\n";
+	print UI "\t\t</Build>\n";
 	print UI "\t</Builds>\n";
 	print UI "\t<PrereqBuilding>NONE</PrereqBuilding>\n";
 	print UI "\t<PrereqOrBuildings/>\n";
@@ -3566,7 +3639,7 @@ sub maketech {
 	print CI "\t<InventionCategory>".$category."</InventionCategory>\n";
 	print CI "\t<iX_Location>".$x."</iX_Location>\n";
 	print CI "\t<iY_Location>".$y."</iY_Location>\n";
-	print CI "\t<RequiredInvention>".$req."<RequiredInvention>\n";
+	print CI "\t<RequiredInvention>".$req."</RequiredInvention>\n";
 	print CI "\t<RequiredInvention2/>\n";
 	print CI "\t<RequiredInventionOr/>\n";
 	print CI "\t<RequiredUnitType/>\n";
@@ -3632,13 +3705,14 @@ sub maketech {
 
 #tag,description,category,xcoord,ycoord,requiredinvention,allowyield,allowbldg,allowprof
 #M:C hardcoded techs
-&maketech('CENSURE_INTERDICT','Interdict','MEDIEVAL_CENSURE',0,0,'','','','');
-&maketech('CENSURE_ANATHEMA','Anathema','MEDIEVAL_CENSURE',0,0,'','','','');
-&maketech('CENSURE_EXCOMMUNICATION','Excommunication','MEDIEVAL_CENSURE',0,0,'','','','');
-&maketech('TRADING_TRADE_ROUTE_2','TRADING_TRADE_ROUTE_2','MEDIEVAL_TRADE_TECH',0,0,'','','','');
-&maketech('TRADING_TRADEPOST','TRADING_TRADEPOST','MEDIEVAL_TRADE_TECH',0,0,'','','','');
-&maketech('TRADING_GUILDS','TRADING_GUILDS','MEDIEVAL_TRADE_TECH',0,0,'','','','');
+&maketech('CENSURE_INTERDICT','Interdict','MEDIEVAL_CENSURE',0,0,'NONE','','','');
+&maketech('CENSURE_ANATHEMA','Anathema','MEDIEVAL_CENSURE',0,0,'NONE','','','');
+&maketech('CENSURE_EXCOMMUNICATION','Excommunication','MEDIEVAL_CENSURE',0,0,'NONE','','','');
+&maketech('TRADING_TRADE_ROUTE_2','TRADING_TRADE_ROUTE_2','MEDIEVAL_TRADE_TECH',0,0,'NONE','','','');
+&maketech('TRADING_TRADEPOST','TRADING_TRADEPOST','MEDIEVAL_TRADE_TECH',0,0,'NONE','','','');
+&maketech('TRADING_GUILDS','TRADING_GUILDS','MEDIEVAL_TRADE_TECH',0,0,'NONE','','','');
 
+&maketech('TEST','TRADING_GUILDS','MEDIEVAL_TRADE_TECH',3,3,'NONE','','','');
 $x=0;
 $y=0;
 
@@ -3658,17 +3732,17 @@ sub maketechlinecity {
 
 	}
 
-foreach @cityprof (@plotprofs) {
-	$profdesc = $cityprof[0];
-	$procyield = $cityprof[1];
-	$rawyield = $cityprof[2];
-	if ($procyield =~ /\w+/) {
-		&maketechlineraw($rawyield);
-		&maketechlinecity($procyield);
-		} else {
-		&maketechlinecity($procyield);
-		}
-	}
+#foreach @cityprof (@plotprofs) {
+#	$profdesc = $cityprof[0];
+#	$procyield = $cityprof[1];
+#	$rawyield = $cityprof[2];
+#	if ($procyield =~ /\w+/) {
+#		&maketechlineraw($rawyield);
+#		&maketechlinecity($procyield);
+#		} else {
+#		&maketechlinecity($procyield);
+#		}
+#	}
 
 # close files
 print CI "</CivicInfos>\n</Civ4CivicInfos>\n";

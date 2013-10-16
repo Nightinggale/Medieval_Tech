@@ -237,7 +237,7 @@
 	<InventionCategory>MEDIEVAL_CENSURE</InventionCategory>
 	<iX_Location>0</iX_Location>
 	<iY_Location>0</iY_Location>
-	<RequiredInvention/>
+	<RequiredInvention>NONE</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
 	<RequiredUnitType/>
@@ -303,7 +303,7 @@
 	<InventionCategory>MEDIEVAL_CENSURE</InventionCategory>
 	<iX_Location>0</iX_Location>
 	<iY_Location>0</iY_Location>
-	<RequiredInvention/>
+	<RequiredInvention>NONE</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
 	<RequiredUnitType/>
@@ -369,7 +369,7 @@
 	<InventionCategory>MEDIEVAL_CENSURE</InventionCategory>
 	<iX_Location>0</iX_Location>
 	<iY_Location>0</iY_Location>
-	<RequiredInvention/>
+	<RequiredInvention>NONE</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
 	<RequiredUnitType/>
@@ -435,7 +435,7 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>0</iX_Location>
 	<iY_Location>0</iY_Location>
-	<RequiredInvention/>
+	<RequiredInvention>NONE</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
 	<RequiredUnitType/>
@@ -501,7 +501,7 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>0</iX_Location>
 	<iY_Location>0</iY_Location>
-	<RequiredInvention/>
+	<RequiredInvention>NONE</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
 	<RequiredUnitType/>
@@ -567,7 +567,73 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>0</iX_Location>
 	<iY_Location>0</iY_Location>
-	<RequiredInvention/>
+	<RequiredInvention>NONE</RequiredInvention>
+	<RequiredInvention2/>
+	<RequiredInventionOr/>
+	<RequiredUnitType/>
+	<RequiredYields/>
+	<AllowsYields/>
+	<AllowsBuildingTypes/>
+	<AllowsUnitClasses/>
+	<AllowsPromotions/>
+	<AllowsProfessions/>
+	<AllowsTrait/>
+	<AllowsBuildTypes/>
+	<AllowsBuildTypesTerrain/>
+	<ConvertsUnitsFrom/>
+	<ConvertsUnitsTo/>
+	<NewDefaultUnitClass/>
+	<DisallowsTech/>
+	<RouteMovementMod/>
+	<bStartConstitution>0</bStartConstitution>
+	<bAllowsMapTrade>0</bAllowsMapTrade>
+	<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+	<bisNoneTradeable>0</bisNoneTradeable>
+	<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+	<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+	<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+	<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+	<iProlificInventorRateChange>0</iProlificInventorRateChange>
+	<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+	<iGoldBonus>0</iGoldBonus>
+	<iFreeTechs>0</iFreeTechs>
+	<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+	<IndustrializationVictory/>
+</CivicInfo>
+<CivicInfo>
+	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+	<Type>TEST</Type>
+	<Description>TXT_KEY_TECH_TEST</Description>
+	<Civilopedia>TXT_KEY_TECH_TEST_PEDIA</Civilopedia>
+	<Strategy>TXT_KEY_TECH_TEST_STRATEGY</Strategy>
+	<Button>Art/Buttons/Techs/TEST.dds</Button>
+	<iAIWeight>0</iAIWeight>
+	<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+	<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+	<iFreeExperience>0</iFreeExperience>
+	<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+	<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+	<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+	<iExpInBorderModifier>0</iExpInBorderModifier>
+	<iNativeAttitudeChange>0</iNativeAttitudeChange>
+	<iNativeCombatModifier>0</iNativeCombatModifier>
+	<iFatherPointModifier>0</iFatherPointModifier>
+	<bDominateNativeBorders>0</bDominateNativeBorders>
+	<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+	<YieldModifiers/>
+	<CapitalYieldModifiers/>
+	<Hurrys/>
+	<SpecialBuildingNotRequireds/>
+	<ImprovementYieldChanges/>
+	<FreeUnitClasses/>
+	<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+	<ProfessionCombatChanges/>
+	<ImmigrationConversion>NONE</ImmigrationConversion>
+	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
+	<iX_Location>3</iX_Location>
+	<iY_Location>3</iY_Location>
+	<RequiredInvention>NONE</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
 	<RequiredUnitType/>

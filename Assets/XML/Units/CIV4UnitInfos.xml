@@ -81,6 +81,46 @@
 			<BuildType>BUILD_RIG</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
 	</Builds>
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
@@ -402,6 +442,46 @@
 			<BuildType>BUILD_RIG</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
 	</Builds>
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
@@ -721,6 +801,46 @@
 		</Build>
 		<Build>
 			<BuildType>BUILD_RIG</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 	</Builds>
@@ -1050,6 +1170,46 @@
 		</Build>
 		<Build>
 			<BuildType>BUILD_RIG</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 	</Builds>
@@ -1385,6 +1545,46 @@
 			<BuildType>BUILD_RIG</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
 	</Builds>
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
@@ -1716,6 +1916,46 @@
 		</Build>
 		<Build>
 			<BuildType>BUILD_RIG</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 	</Builds>
@@ -2051,6 +2291,46 @@
 			<BuildType>BUILD_RIG</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
 	</Builds>
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
@@ -2384,6 +2664,46 @@
 			<BuildType>BUILD_RIG</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
 	</Builds>
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
@@ -2713,6 +3033,46 @@
 			<BuildType>BUILD_RIG</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
 	</Builds>
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
@@ -3034,6 +3394,46 @@
 			<BuildType>BUILD_RIG</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
 	</Builds>
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
@@ -3353,6 +3753,46 @@
 		</Build>
 		<Build>
 			<BuildType>BUILD_RIG</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 	</Builds>
@@ -3678,6 +4118,46 @@
 		</Build>
 		<Build>
 			<BuildType>BUILD_RIG</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 	</Builds>
@@ -4009,6 +4489,46 @@
 			<BuildType>BUILD_RIG</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
 	</Builds>
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
@@ -4336,6 +4856,46 @@
 		</Build>
 		<Build>
 			<BuildType>BUILD_RIG</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 	</Builds>
@@ -4667,6 +5227,46 @@
 			<BuildType>BUILD_RIG</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
 	</Builds>
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
@@ -4994,6 +5594,46 @@
 		</Build>
 		<Build>
 			<BuildType>BUILD_RIG</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 	</Builds>
@@ -5325,6 +5965,46 @@
 			<BuildType>BUILD_RIG</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
 	</Builds>
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
@@ -5652,6 +6332,46 @@
 		</Build>
 		<Build>
 			<BuildType>BUILD_RIG</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 	</Builds>
@@ -5983,6 +6703,46 @@
 			<BuildType>BUILD_RIG</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
 	</Builds>
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
@@ -6310,6 +7070,46 @@
 		</Build>
 		<Build>
 			<BuildType>BUILD_RIG</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 	</Builds>
@@ -6641,6 +7441,46 @@
 			<BuildType>BUILD_RIG</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
 	</Builds>
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
@@ -6960,6 +7800,46 @@
 		</Build>
 		<Build>
 			<BuildType>BUILD_RIG</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 	</Builds>
@@ -7283,6 +8163,46 @@
 			<BuildType>BUILD_RIG</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
 	</Builds>
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
@@ -7602,6 +8522,46 @@
 		</Build>
 		<Build>
 			<BuildType>BUILD_RIG</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 	</Builds>
@@ -7925,6 +8885,46 @@
 			<BuildType>BUILD_RIG</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
 	</Builds>
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
@@ -8244,6 +9244,46 @@
 		</Build>
 		<Build>
 			<BuildType>BUILD_RIG</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 	</Builds>
@@ -8567,6 +9607,46 @@
 			<BuildType>BUILD_RIG</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
 	</Builds>
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
@@ -8886,6 +9966,46 @@
 		</Build>
 		<Build>
 			<BuildType>BUILD_RIG</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 	</Builds>
@@ -9209,6 +10329,46 @@
 			<BuildType>BUILD_RIG</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
 	</Builds>
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
@@ -9530,6 +10690,46 @@
 			<BuildType>BUILD_RIG</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
 	</Builds>
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
@@ -9846,6 +11046,46 @@
 			<BuildType>BUILD_RIG</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
 	</Builds>
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
@@ -10160,6 +11400,46 @@
 		</Build>
 		<Build>
 			<BuildType>BUILD_RIG</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 	</Builds>
@@ -10483,6 +11763,46 @@
 			<BuildType>BUILD_RIG</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
 	</Builds>
 	<PrereqBuilding>NONE</PrereqBuilding>
 	<PrereqOrBuildings/>
@@ -10797,6 +12117,46 @@
 		</Build>
 		<Build>
 			<BuildType>BUILD_RIG</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ICE</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PETRIFIED_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_ROAD</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 	</Builds>

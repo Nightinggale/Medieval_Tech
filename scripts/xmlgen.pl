@@ -598,8 +598,8 @@ $landorder++;
 sub makewater
 {
 my $tag = shift;
+my $desc = shift;
 $href = shift;
-my $desc = $tag;
 $desc =~ tr/_/ /;
 $desc =~ s/(\w+)/\u\L$1/g;
 print TI "<TerrainInfo>\n";
@@ -615,7 +615,13 @@ for my $yield ( keys (%$href) ) {
 	}
 print TI "\t<Civilopedia>TXT_KEY_TERRAIN_$tag_PEDIA</Civilopedia>\n";
 &maketext("TXT_KEY_TERRAIN_".$tag."_PEDIA",$pedia);
-print TI "\t<ArtDefineTag>ART_DEF_TERRAIN_$tag</ArtDefineTag>\n";
+#placeholder
+if (tag =~ /COAST/) {
+	print TI "\t<ArtDefineTag>ART_DEF_TERRAIN_COAST</ArtDefineTag>\n";
+	} else {
+	print TI "\t<ArtDefineTag>ART_DEF_TERRAIN_OCEAN</ArtDefineTag>\n";
+	}
+#print TI "\t<ArtDefineTag>ART_DEF_TERRAIN_$tag</ArtDefineTag>\n";
 print TI "\t<Yields>\n";
 for my $yield ( keys (%$href) ) {
 	$prod = $href->{$yield};
@@ -862,41 +868,50 @@ $landorder++;
 &makewater('COAST','Low Orbit',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2});
 &makewater('OCEAN','Deep Space',{'NUTRIENTS'=>1});
 
-#Aquatic Planet
-&makeland('AQUATIC_FERTILE','Loam',{'NUTRIENTS'=>3,'MICROBES'=>1});
-&makeland('AQUATIC_DRY','Silt Beds',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2});
-&makeland('AQUATIC_HOT','Diatomaceous',{'SILICATES'=>3,'ACTINIDES'=>2});
-&makeland('AQUATIC_WET','Wetland',{'NUTRIENTS'=>2,'OPIATES'=>2});
-&makeland('AQUATIC_COLD','Glacial',{'NUTRIENTS'=>1,'DATACORES'=>2});
-# &makewater('PELAGIC_COAST',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2});
-# &makewater('ABYSSAL_OCEAN',{'NUTRIENTS'=>1});
+# Temperate Planet (Class B)
+#&makeland('TEMPERATE_COLD','Glacial',{'NUTRIENTS'=>2,'DATACORES'=>1,'PROGENITOR_ARTIFACTS'=>3,'TISSUE_SAMPLES'=>2});
+#&makewater('TEMPERATE_COAST','Pelagic Sea',{'NUTRIENTS'=>2,'NUCLEIC_ACIDS'=>2,'AMINO_ACIDS'=>1,'ALIEN_SPECIMENS'=>3});
+#&makeland('TEMPERATE_WET','Wetland',{'NUTRIENTS'=>2,'OPIATES'=>2,'XENOTOXINS'=>3,'BOTANICALS'=>1});
+#&makeland('TEMPERATE_DRY','Silt Beds',{'NUTRIENTS'=>2,'HYDROCARBONS'=>3,'CLATHRATES'=>2,'RARE_EARTHS'=>1});
+#&makeland('TEMPERATE_HOT','Diatomaceous',{'NUTRIENTS'=>2,'ACTINIDES'=>3,'ISOTOPES'=>1,'CORE_SAMPLES'=>2});
+#&makeland('TEMPERATE_FERTILE','Loam',{'NUTRIENTS'=>3,'NUCLEIC_ACIDS'=>2,'PRECIOUS_METALS'=>1});
+#&makewater('TEMPERATE_OCEAN','Abyssal Ocean',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2,'CRYSTALLOIDS'=>1,'MICROBES'=>2});
 
-#Arid Planet
-&makeland('ARID_FERTILE','STEPPE',{'NUTRIENTS'=>3,'SILICATES'=>1});
-&makeland('ARID_DRY','BADLANDS',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2});
-&makeland('ARID_HOT','DUNES',{'SILICATES'=>3,'ACTINIDES'=>2});
-&makeland('ARID_WET','SALT_FLATS',{'NUTRIENTS'=>2,'OPIATES'=>2});
-&makeland('ARID_COLD','SCRUBLAND',{'NUTRIENTS'=>1,'DATACORES'=>2});
-# &makewater('ALKALI_COAST',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2});
-# &makewater('ALKALI_OCEAN',{'NUTRIENTS'=>1});
+# Aquatic Planet (Class C)
+&makeland('AQUATIC_COLD','Glacial',{'NUTRIENTS'=>2,'DATACORES'=>3,'PROGENITOR_ARTIFACTS'=>1,'TISSUE_SAMPLES'=>2});
+&makewater('AQUATIC_COAST','Pelagic Sea',{'NUTRIENTS'=>2,'NUCLEIC_ACIDS'=>1,'AMINO_ACIDS'=>3,'ALIEN_SPECIMENS'=>2});
+&makeland('AQUATIC_WET','Wetland',{'NUTRIENTS'=>2,'OPIATES'=>2,'XENOTOXINS'=>1,'BOTANICALS'=>3});
+&makeland('AQUATIC_DRY','Silt Beds',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2,'CLATHRATES'=>3,'RARE_EARTHS'=>1});
+&makeland('AQUATIC_HOT','Diatomaceous',{'NUTRIENTS'=>2,'ACTINIDES'=>3,'ISOTOPES'=>2,'CORE_SAMPLES'=>1});
+&makeland('AQUATIC_FERTILE','Loam',{'NUTRIENTS'=>3,'OPIATES'=>2,'PRECIOUS_METALS'=>1});
+&makewater('AQUATIC_OCEAN','Abyssal Ocean',{'NUTRIENTS'=>2,'XENOTOXINS'=>2,'CRYSTALLOIDS'=>1,'MICROBES'=>2});
 
-#Volcanic Planet
-&makeland('VOLCANIC_FERTILE','VOLCANIC_SOIL',{'NUTRIENTS'=>3,'PRECIOUS_METALS'=>1});
-&makeland('VOLCANIC_DRY','BATHOLITH',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2});
-&makeland('VOLCANIC_HOT','REGOLITH',{'SILICATES'=>3,'ACTINIDES'=>2});
-&makeland('VOLCANIC_WET','ASH',{'NUTRIENTS'=>2,'OPIATES'=>2});
-&makeland('VOLCANIC_COLD','FELSIC_ROCK',{'NUTRIENTS'=>1,'DATACORES'=>2});
-# &makeland('PYROCLASTIC',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2});
-# &makeland('MAGMA',{'NUTRIENTS'=>1});
+# Arid Planet (Class D)
+&makeland('ARID_COLD','Scrubland',{'NUTRIENTS'=>2,'DATACORES'=>3,'PROGENITOR_ARTIFACTS'=>2,'TISSUE_SAMPLES'=>1});
+&makewater('ARID_COAST','Alkali Sea',{'NUTRIENTS'=>2,'NUCLEIC_ACIDS'=>3,'AMINO_ACIDS'=>1,'ALIEN_SPECIMENS'=>2});
+&makeland('ARID_WET','Salt Flats',{'NUTRIENTS'=>2,'OPIATES'=>1,'XENOTOXINS'=>3,'BOTANICALS'=>2});
+&makeland('ARID_DRY','Badlands',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2,'CLATHRATES'=>1,'RARE_EARTHS'=>3});
+&makeland('ARID_HOT','Dunes',{'NUTRIENTS'=>2,'ACTINIDES'=>2,'ISOTOPES'=>3,'CORE_SAMPLES'=>1});
+&makeland('ARID_FERTILE','Steppe',{'NUTRIENTS'=>3,'HYDROCARBONS'=>2,'PRECIOUS_METALS'=>1});
+&makewater('ARID_OCEAN','Alkali Ocean',{'NUTRIENTS'=>2,'CLATHRATES'=>2,'CRYSTALLOIDS'=>1,'MICROBES'=>2});
 
-#Arctic Planet
-&makeland('ARCTIC_FERTILE','ALPINE',{'NUTRIENTS'=>3,'CRYSTALLOIDS'=>1});
-&makeland('ARCTIC_DRY','HEATH',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2});
-&makeland('ARCTIC_HOT','LIMESTONE',{'SILICATES'=>3,'ACTINIDES'=>2});
-&makeland('ARCTIC_WET','BOG',{'NUTRIENTS'=>2,'OPIATES'=>2});
-&makeland('ARCTIC_COLD','ARCTIC',{'NUTRIENTS'=>1,'DATACORES'=>2});
-# &makewater('BRACKISH_COAST',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2});
-# &makewater('BRACKISH_OCEAN',{'NUTRIENTS'=>1});
+# Volcanic Planet (Class E)
+&makeland('VOLCANIC_COLD','Felsic',{'NUTRIENTS'=>2,'DATACORES'=>2,'PROGENITOR_ARTIFACTS'=>3,'TISSUE_SAMPLES'=>1});
+&makewater('VOLCANIC_COAST','Pyroclastic',{'NUTRIENTS'=>2,'NUCLEIC_ACIDS'=>3,'AMINO_ACIDS'=>2,'ALIEN_SPECIMENS'=>1});
+&makeland('VOLCANIC_WET','Ash',{'NUTRIENTS'=>2,'OPIATES'=>3,'XENOTOXINS'=>1,'BOTANICALS'=>2});
+&makeland('VOLCANIC_DRY','Batholith',{'NUTRIENTS'=>2,'HYDROCARBONS'=>1,'CLATHRATES'=>3,'RARE_EARTHS'=>2});
+&makeland('VOLCANIC_HOT','Regolith',{'NUTRIENTS'=>2,'ACTINIDES'=>2,'ISOTOPES'=>1,'CORE_SAMPLES'=>3});
+&makeland('VOLCANIC_FERTILE','Volcanic Soil',{'NUTRIENTS'=>3,'ACTINIDES'=>2,'MICROBES'=>2});
+&makewater('VOLCANIC_OCEAN','Magma',{'NUTRIENTS'=>2,'ISOTOPES'=>2,'CRYSTALLOIDS'=>2,'PRECIOUS_METALS'=>1});
+
+# Arctic Planet (Class A)
+&makeland('ARCTIC_COLD','Arctic',{'NUTRIENTS'=>2,'DATACORES'=>2,'PROGENITOR_ARTIFACTS'=>1,'TISSUE_SAMPLES'=>3});
+&makewater('ARCTIC_COAST','Brackish Sea',{'NUTRIENTS'=>2,'NUCLEIC_ACIDS'=>2,'AMINO_ACIDS'=>3,'ALIEN_SPECIMENS'=>1});
+&makeland('ARCTIC_WET','Bog',{'NUTRIENTS'=>2,'OPIATES'=>3,'XENOTOXINS'=>2,'BOTANICALS'=>1});
+&makeland('ARCTIC_DRY','Heath',{'NUTRIENTS'=>2,'HYDROCARBONS'=>3,'CLATHRATES'=>1,'RARE_EARTHS'=>2});
+&makeland('ARCTIC_HOT','Limestone',{'NUTRIENTS'=>2,'ACTINIDES'=>1,'ISOTOPES'=>3,'CORE_SAMPLES'=>2});
+&makeland('ARCTIC_FERTILE','Alpine',{'NUTRIENTS'=>3,'DATACORES'=>2,'PRECIOUS_METALS'=>1});
+&makewater('ARCTIC_OCEAN','Brackish Ocean',{'NUTRIENTS'=>2,'PROGENITOR_ARTIFACTS'=>2,'CRYSTALLOIDS'=>1,'MICROBES'=>2});
 
 &makelandvanilla('SNOW',{''});
 &makelandvanilla('PEAK',{''});

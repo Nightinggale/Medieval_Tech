@@ -47,7 +47,7 @@
 	<bOutsideBorders>0</bOutsideBorders>
 	<TerrainMakesValids>
 		<TerrainMakesValid>
-			<TerrainType>TERRAIN_PLAINS</TerrainType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
 			<bMakesValid>1</bMakesValid>
 		</TerrainMakesValid>
 	</TerrainMakesValids>
@@ -106,7 +106,7 @@
 	<bOutsideBorders>0</bOutsideBorders>
 	<TerrainMakesValids>
 		<TerrainMakesValid>
-			<TerrainType>TERRAIN_PLAINS</TerrainType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
 			<bMakesValid>1</bMakesValid>
 		</TerrainMakesValid>
 	</TerrainMakesValids>
@@ -165,7 +165,7 @@
 	<bOutsideBorders>0</bOutsideBorders>
 	<TerrainMakesValids>
 		<TerrainMakesValid>
-			<TerrainType>TERRAIN_PLAINS</TerrainType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
 			<bMakesValid>1</bMakesValid>
 		</TerrainMakesValid>
 	</TerrainMakesValids>
@@ -224,7 +224,7 @@
 	<bOutsideBorders>0</bOutsideBorders>
 	<TerrainMakesValids>
 		<TerrainMakesValid>
-			<TerrainType>TERRAIN_PLAINS</TerrainType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
 			<bMakesValid>1</bMakesValid>
 		</TerrainMakesValid>
 	</TerrainMakesValids>
@@ -283,7 +283,7 @@
 	<bOutsideBorders>0</bOutsideBorders>
 	<TerrainMakesValids>
 		<TerrainMakesValid>
-			<TerrainType>TERRAIN_PLAINS</TerrainType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
 			<bMakesValid>1</bMakesValid>
 		</TerrainMakesValid>
 	</TerrainMakesValids>
@@ -342,7 +342,7 @@
 	<bOutsideBorders>0</bOutsideBorders>
 	<TerrainMakesValids>
 		<TerrainMakesValid>
-			<TerrainType>TERRAIN_PLAINS</TerrainType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
 			<bMakesValid>1</bMakesValid>
 		</TerrainMakesValid>
 	</TerrainMakesValids>
@@ -401,7 +401,7 @@
 	<bOutsideBorders>0</bOutsideBorders>
 	<TerrainMakesValids>
 		<TerrainMakesValid>
-			<TerrainType>TERRAIN_PLAINS</TerrainType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
 			<bMakesValid>1</bMakesValid>
 		</TerrainMakesValid>
 	</TerrainMakesValids>
@@ -460,7 +460,7 @@
 	<bOutsideBorders>0</bOutsideBorders>
 	<TerrainMakesValids>
 		<TerrainMakesValid>
-			<TerrainType>TERRAIN_PLAINS</TerrainType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
 			<bMakesValid>1</bMakesValid>
 		</TerrainMakesValid>
 	</TerrainMakesValids>
@@ -519,7 +519,7 @@
 	<bOutsideBorders>0</bOutsideBorders>
 	<TerrainMakesValids>
 		<TerrainMakesValid>
-			<TerrainType>TERRAIN_PLAINS</TerrainType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
 			<bMakesValid>1</bMakesValid>
 		</TerrainMakesValid>
 	</TerrainMakesValids>
@@ -578,7 +578,7 @@
 	<bOutsideBorders>0</bOutsideBorders>
 	<TerrainMakesValids>
 		<TerrainMakesValid>
-			<TerrainType>TERRAIN_PLAINS</TerrainType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
 			<bMakesValid>1</bMakesValid>
 		</TerrainMakesValid>
 	</TerrainMakesValids>
@@ -637,7 +637,7 @@
 	<bOutsideBorders>0</bOutsideBorders>
 	<TerrainMakesValids>
 		<TerrainMakesValid>
-			<TerrainType>TERRAIN_PLAINS</TerrainType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
 			<bMakesValid>1</bMakesValid>
 		</TerrainMakesValid>
 	</TerrainMakesValids>
@@ -696,7 +696,7 @@
 	<bOutsideBorders>0</bOutsideBorders>
 	<TerrainMakesValids>
 		<TerrainMakesValid>
-			<TerrainType>TERRAIN_PLAINS</TerrainType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
 			<bMakesValid>1</bMakesValid>
 		</TerrainMakesValid>
 	</TerrainMakesValids>
@@ -755,7 +755,7 @@
 	<bOutsideBorders>0</bOutsideBorders>
 	<TerrainMakesValids>
 		<TerrainMakesValid>
-			<TerrainType>TERRAIN_PLAINS</TerrainType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
 			<bMakesValid>1</bMakesValid>
 		</TerrainMakesValid>
 	</TerrainMakesValids>

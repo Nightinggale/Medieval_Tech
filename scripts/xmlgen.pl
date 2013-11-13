@@ -860,58 +860,58 @@ $landorder++;
 }
 
 # make terrains
-&makeland('GRASS','Grassland',{'NUTRIENTS'=>3,'BIOPOLYMERS'=>1});
-&makelandvanilla('PLAINS','Plains',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2});
-&makelandvanilla('DESERT','Desert',{'SILICATES'=>3,'ACTINIDES'=>2});
-&makelandvanilla('MARSH','Marsh',{'NUTRIENTS'=>2,'OPIATES'=>2});
-&makelandvanilla('TUNDRA','Tundra',{'NUTRIENTS'=>1,'DATACORES'=>2});
-&makewater('COAST','Low Orbit',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2});
+&makeland('TUNDRA','Tundra',{'NUTRIENTS'=>2,'DATACORES'=>1,'PROGENITOR_ARTIFACTS'=>3,'TISSUE_SAMPLES'=>2});
+&makelandvanilla('GRASS','Grassland',{'NUTRIENTS'=>2,'NUCLEIC_ACIDS'=>2,'AMINO_ACIDS'=>1,'ALIEN_SPECIMENS'=>3});
+&makeland('MARSH','Marsh',{'NUTRIENTS'=>2,'OPIATES'=>2,'XENOTOXINS'=>3,'BOTANICALS'=>1});
+&makeland('PLAINS','Plains',{'NUTRIENTS'=>2,'HYDROCARBONS'=>3,'CLATHRATES'=>2,'RARE_EARTHS'=>1});
+&makeland('DESERT','Desert',{'NUTRIENTS'=>2,'ACTINIDES'=>3,'ISOTOPES'=>1,'CORE_SAMPLES'=>2});
+&makewater('COAST','Low Orbit',{'NUTRIENTS'=>2});
 &makewater('OCEAN','Deep Space',{'NUTRIENTS'=>1});
 
 # Temperate Planet (Class B)
-#&makeland('TEMPERATE_COLD','Glacial',{'NUTRIENTS'=>2,'DATACORES'=>1,'PROGENITOR_ARTIFACTS'=>3,'TISSUE_SAMPLES'=>2});
-#&makewater('TEMPERATE_COAST','Pelagic Sea',{'NUTRIENTS'=>2,'NUCLEIC_ACIDS'=>2,'AMINO_ACIDS'=>1,'ALIEN_SPECIMENS'=>3});
-#&makeland('TEMPERATE_WET','Wetland',{'NUTRIENTS'=>2,'OPIATES'=>2,'XENOTOXINS'=>3,'BOTANICALS'=>1});
-#&makeland('TEMPERATE_DRY','Silt Beds',{'NUTRIENTS'=>2,'HYDROCARBONS'=>3,'CLATHRATES'=>2,'RARE_EARTHS'=>1});
-#&makeland('TEMPERATE_HOT','Diatomaceous',{'NUTRIENTS'=>2,'ACTINIDES'=>3,'ISOTOPES'=>1,'CORE_SAMPLES'=>2});
-#&makeland('TEMPERATE_FERTILE','Loam',{'NUTRIENTS'=>3,'NUCLEIC_ACIDS'=>2,'PRECIOUS_METALS'=>1});
-#&makewater('TEMPERATE_OCEAN','Abyssal Ocean',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2,'CRYSTALLOIDS'=>1,'MICROBES'=>2});
+#&makeland('TEMPERATE_COLD','Tundra',{'NUTRIENTS'=>2,'DATACORES'=>1,'PROGENITOR_ARTIFACTS'=>3,'TISSUE_SAMPLES'=>2});
+#&makeland('TEMPERATE_FERTILE','Grassland',{'NUTRIENTS'=>2,'NUCLEIC_ACIDS'=>2,'AMINO_ACIDS'=>1,'ALIEN_SPECIMENS'=>3});
+#&makeland('TEMPERATE_WET','Marsh',{'NUTRIENTS'=>2,'OPIATES'=>2,'XENOTOXINS'=>3,'BOTANICALS'=>1});
+#&makeland('TEMPERATE_DRY','Plains',{'NUTRIENTS'=>2,'HYDROCARBONS'=>3,'CLATHRATES'=>2,'RARE_EARTHS'=>1});
+#&makeland('TEMPERATE_HOT','Desert',{'NUTRIENTS'=>2,'ACTINIDES'=>3,'ISOTOPES'=>1,'CORE_SAMPLES'=>2});
+#&makewater('TEMPERATE_COAST','Temperate Sea',{'NUTRIENTS'=>3,'NUCLEIC_ACIDS'=>2,'PRECIOUS_METALS'=>1});
+#&makewater('TEMPERATE_OCEAN','Temperate Ocean',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2,'CRYSTALLOIDS'=>1,'MICROBES'=>2});
 
 # Aquatic Planet (Class C)
 &makeland('AQUATIC_COLD','Glacial',{'NUTRIENTS'=>2,'DATACORES'=>3,'PROGENITOR_ARTIFACTS'=>1,'TISSUE_SAMPLES'=>2});
-&makewater('AQUATIC_COAST','Pelagic Sea',{'NUTRIENTS'=>2,'NUCLEIC_ACIDS'=>1,'AMINO_ACIDS'=>3,'ALIEN_SPECIMENS'=>2});
+&makeland('AQUATIC_FERTILE','Loam',{'NUTRIENTS'=>2,'NUCLEIC_ACIDS'=>1,'AMINO_ACIDS'=>3,'ALIEN_SPECIMENS'=>2});
 &makeland('AQUATIC_WET','Wetland',{'NUTRIENTS'=>2,'OPIATES'=>2,'XENOTOXINS'=>1,'BOTANICALS'=>3});
 &makeland('AQUATIC_DRY','Silt Beds',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2,'CLATHRATES'=>3,'RARE_EARTHS'=>1});
 &makeland('AQUATIC_HOT','Diatomaceous',{'NUTRIENTS'=>2,'ACTINIDES'=>3,'ISOTOPES'=>2,'CORE_SAMPLES'=>1});
-&makeland('AQUATIC_FERTILE','Loam',{'NUTRIENTS'=>3,'OPIATES'=>2,'PRECIOUS_METALS'=>1});
-&makewater('AQUATIC_OCEAN','Abyssal Ocean',{'NUTRIENTS'=>2,'XENOTOXINS'=>2,'CRYSTALLOIDS'=>1,'MICROBES'=>2});
+#&makewater('AQUATIC_COAST','Pelagic Sea',{'NUTRIENTS'=>3,'OPIATES'=>2,'PRECIOUS_METALS'=>1});
+#&makewater('AQUATIC_OCEAN','Abyssal Ocean',{'NUTRIENTS'=>2,'XENOTOXINS'=>2,'CRYSTALLOIDS'=>1,'MICROBES'=>2});
 
 # Arid Planet (Class D)
 &makeland('ARID_COLD','Scrubland',{'NUTRIENTS'=>2,'DATACORES'=>3,'PROGENITOR_ARTIFACTS'=>2,'TISSUE_SAMPLES'=>1});
-&makewater('ARID_COAST','Alkali Sea',{'NUTRIENTS'=>2,'NUCLEIC_ACIDS'=>3,'AMINO_ACIDS'=>1,'ALIEN_SPECIMENS'=>2});
+&makeland('ARID_FERTILE','Steppe',{'NUTRIENTS'=>2,'NUCLEIC_ACIDS'=>3,'AMINO_ACIDS'=>1,'ALIEN_SPECIMENS'=>2});
 &makeland('ARID_WET','Salt Flats',{'NUTRIENTS'=>2,'OPIATES'=>1,'XENOTOXINS'=>3,'BOTANICALS'=>2});
 &makeland('ARID_DRY','Badlands',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2,'CLATHRATES'=>1,'RARE_EARTHS'=>3});
 &makeland('ARID_HOT','Dunes',{'NUTRIENTS'=>2,'ACTINIDES'=>2,'ISOTOPES'=>3,'CORE_SAMPLES'=>1});
-&makeland('ARID_FERTILE','Steppe',{'NUTRIENTS'=>3,'HYDROCARBONS'=>2,'PRECIOUS_METALS'=>1});
-&makewater('ARID_OCEAN','Alkali Ocean',{'NUTRIENTS'=>2,'CLATHRATES'=>2,'CRYSTALLOIDS'=>1,'MICROBES'=>2});
+#&makewater('ARID_COAST','Alkali Sea',{'NUTRIENTS'=>3,'HYDROCARBONS'=>2,'PRECIOUS_METALS'=>1});
+#&makewater('ARID_OCEAN','Alkali Ocean',{'NUTRIENTS'=>2,'CLATHRATES'=>2,'CRYSTALLOIDS'=>1,'MICROBES'=>2});
 
 # Volcanic Planet (Class E)
-&makeland('VOLCANIC_COLD','Felsic',{'NUTRIENTS'=>2,'DATACORES'=>2,'PROGENITOR_ARTIFACTS'=>3,'TISSUE_SAMPLES'=>1});
-&makewater('VOLCANIC_COAST','Pyroclastic',{'NUTRIENTS'=>2,'NUCLEIC_ACIDS'=>3,'AMINO_ACIDS'=>2,'ALIEN_SPECIMENS'=>1});
+&makeland('VOLCANIC_COLD','Felsic Rock',{'NUTRIENTS'=>2,'DATACORES'=>2,'PROGENITOR_ARTIFACTS'=>3,'TISSUE_SAMPLES'=>1});
+&makeland('VOLCANIC_FERTILE','Volcanic Soil',{'NUTRIENTS'=>2,'NUCLEIC_ACIDS'=>3,'AMINO_ACIDS'=>2,'ALIEN_SPECIMENS'=>1});
 &makeland('VOLCANIC_WET','Ash',{'NUTRIENTS'=>2,'OPIATES'=>3,'XENOTOXINS'=>1,'BOTANICALS'=>2});
 &makeland('VOLCANIC_DRY','Batholith',{'NUTRIENTS'=>2,'HYDROCARBONS'=>1,'CLATHRATES'=>3,'RARE_EARTHS'=>2});
 &makeland('VOLCANIC_HOT','Regolith',{'NUTRIENTS'=>2,'ACTINIDES'=>2,'ISOTOPES'=>1,'CORE_SAMPLES'=>3});
-&makeland('VOLCANIC_FERTILE','Volcanic Soil',{'NUTRIENTS'=>3,'ACTINIDES'=>2,'MICROBES'=>2});
-&makewater('VOLCANIC_OCEAN','Magma',{'NUTRIENTS'=>2,'ISOTOPES'=>2,'CRYSTALLOIDS'=>2,'PRECIOUS_METALS'=>1});
+#&makewater('VOLCANIC_COAST','Pyroclastic',{'NUTRIENTS'=>3,'ACTINIDES'=>2,'MICROBES'=>2});
+#&makewater('VOLCANIC_OCEAN','Magma',{'NUTRIENTS'=>2,'ISOTOPES'=>2,'CRYSTALLOIDS'=>2,'PRECIOUS_METALS'=>1});
 
 # Arctic Planet (Class A)
 &makeland('ARCTIC_COLD','Arctic',{'NUTRIENTS'=>2,'DATACORES'=>2,'PROGENITOR_ARTIFACTS'=>1,'TISSUE_SAMPLES'=>3});
-&makewater('ARCTIC_COAST','Brackish Sea',{'NUTRIENTS'=>2,'NUCLEIC_ACIDS'=>2,'AMINO_ACIDS'=>3,'ALIEN_SPECIMENS'=>1});
+&makeland('ARCTIC_FERTILE','Alpine',{'NUTRIENTS'=>2,'NUCLEIC_ACIDS'=>2,'AMINO_ACIDS'=>3,'ALIEN_SPECIMENS'=>1});
 &makeland('ARCTIC_WET','Bog',{'NUTRIENTS'=>2,'OPIATES'=>3,'XENOTOXINS'=>2,'BOTANICALS'=>1});
 &makeland('ARCTIC_DRY','Heath',{'NUTRIENTS'=>2,'HYDROCARBONS'=>3,'CLATHRATES'=>1,'RARE_EARTHS'=>2});
 &makeland('ARCTIC_HOT','Limestone',{'NUTRIENTS'=>2,'ACTINIDES'=>1,'ISOTOPES'=>3,'CORE_SAMPLES'=>2});
-&makeland('ARCTIC_FERTILE','Alpine',{'NUTRIENTS'=>3,'DATACORES'=>2,'PRECIOUS_METALS'=>1});
-&makewater('ARCTIC_OCEAN','Brackish Ocean',{'NUTRIENTS'=>2,'PROGENITOR_ARTIFACTS'=>2,'CRYSTALLOIDS'=>1,'MICROBES'=>2});
+#&makewater('ARCTIC_COAST','Brackish Sea',{'NUTRIENTS'=>3,'DATACORES'=>2,'PRECIOUS_METALS'=>1});
+#&makewater('ARCTIC_OCEAN','Brackish Ocean',{'NUTRIENTS'=>2,'PROGENITOR_ARTIFACTS'=>2,'CRYSTALLOIDS'=>1,'MICROBES'=>2});
 
 &makelandvanilla('SNOW',{''});
 &makelandvanilla('PEAK',{''});
@@ -980,15 +980,7 @@ print FI "\t\t<bVisibleAlways>0</bVisibleAlways>\n";
 print FI "\t\t<OnUnitChangeTo/>\n";
 print FI "\t\t<TerrainBooleans>\n";
 print FI "\t\t<TerrainBoolean>\n";
-print FI "\t\t\t<TerrainType>TERRAIN_MARSH</TerrainType>\n";
-print FI "\t\t\t<bTerrain>1</bTerrain>\n";
-print FI "\t\t</TerrainBoolean>\n";
-print FI "\t\t<TerrainBoolean>\n";
 print FI "\t\t\t<TerrainType>TERRAIN_GRASS</TerrainType>\n";
-print FI "\t\t\t<bTerrain>1</bTerrain>\n";
-print FI "\t\t</TerrainBoolean>\n";
-print FI "\t\t<TerrainBoolean>\n";
-print FI "\t\t\t<TerrainType>TERRAIN_PLAINS</TerrainType>\n";
 print FI "\t\t\t<bTerrain>1</bTerrain>\n";
 print FI "\t\t</TerrainBoolean>\n";
 print FI "\t\t</TerrainBooleans>\n";
@@ -1307,7 +1299,7 @@ foreach $item (@improvements)
 	print IM "\t<bOutsideBorders>0</bOutsideBorders>\n";
 	print IM "\t<TerrainMakesValids>\n";
 	print IM "\t\t<TerrainMakesValid>\n";
-	print IM "\t\t\t<TerrainType>TERRAIN_PLAINS</TerrainType>\n";
+	print IM "\t\t\t<TerrainType>TERRAIN_GRASS</TerrainType>\n";
 	print IM "\t\t\t<bMakesValid>1</bMakesValid>\n";
 	print IM "\t\t</TerrainMakesValid>\n";
 	print IM "\t</TerrainMakesValids>\n";

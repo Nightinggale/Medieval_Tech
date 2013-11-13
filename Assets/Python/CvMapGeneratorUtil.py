@@ -970,7 +970,7 @@ class TerrainGenerator:
 	"If iDesertPercent=35, then about 35% of all land will be desert. Plains is similar. \
 	Note that all percentages are approximate, as values have to be roughened to achieve a natural look."
 
-	def __init__(self, iDesertPercent=20, iPlainsPercent=20, iMarshPercent=20, iTundraPercent=20,
+	def __init__(self, iDesertPercent=15, iPlainsPercent=15, iMarshPercent=15, iTundraPercent=15,
 	             fSnowLatitude=0.7, fTundraLatitude=0.6,
 	             fGrassLatitude=0.1, fDesertBottomLatitude=0.2,
 	             fDesertTopLatitude=0.5, fracXExp=-1,
@@ -1067,6 +1067,13 @@ class TerrainGenerator:
 		self.iTundraBottom = self.tundra.getHeightFromPercent(self.iMarshBottomPercent)
 
 		self.variation.fracInit(self.iWidth, self.iHeight, self.grain_amount, self.mapRand, self.iFlags, self.fracXExp, self.fracYExp)
+
+#		self.terrainDesert = self.gc.getInfoTypeForString("TERRAIN_TEMPERATE_HOT")
+#		self.terrainPlains = self.gc.getInfoTypeForString("TERRAIN_TEMPERATE_DRY")
+#		self.terrainTundra = self.gc.getInfoTypeForString("TERRAIN_TEMPERATE_COLD")
+#		self.terrainGrass = self.gc.getInfoTypeForString("TERRAIN_TEMPERATE_FERTILE")
+#		self.terrainMarsh = self.gc.getInfoTypeForString("TERRAIN_TEMPERATE_WET")
+#		self.terrainIce = self.gc.getInfoTypeForString("TERRAIN_SNOW")
 
 		self.terrainDesert = self.gc.getInfoTypeForString("TERRAIN_DESERT")
 		self.terrainPlains = self.gc.getInfoTypeForString("TERRAIN_PLAINS")

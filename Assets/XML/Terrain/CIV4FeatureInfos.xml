@@ -40,15 +40,7 @@
 		<OnUnitChangeTo/>
 		<TerrainBooleans>
 		<TerrainBoolean>
-			<TerrainType>TERRAIN_MARSH</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-		<TerrainBoolean>
 			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_PLAINS</TerrainType>
 			<bTerrain>1</bTerrain>
 		</TerrainBoolean>
 		</TerrainBooleans>
@@ -133,15 +125,7 @@
 		<OnUnitChangeTo/>
 		<TerrainBooleans>
 		<TerrainBoolean>
-			<TerrainType>TERRAIN_MARSH</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-		<TerrainBoolean>
 			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_PLAINS</TerrainType>
 			<bTerrain>1</bTerrain>
 		</TerrainBoolean>
 		</TerrainBooleans>
@@ -230,15 +214,7 @@
 		<OnUnitChangeTo/>
 		<TerrainBooleans>
 		<TerrainBoolean>
-			<TerrainType>TERRAIN_MARSH</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-		<TerrainBoolean>
 			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_PLAINS</TerrainType>
 			<bTerrain>1</bTerrain>
 		</TerrainBoolean>
 		</TerrainBooleans>
@@ -319,15 +295,7 @@
 		<OnUnitChangeTo/>
 		<TerrainBooleans>
 		<TerrainBoolean>
-			<TerrainType>TERRAIN_MARSH</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-		<TerrainBoolean>
 			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_PLAINS</TerrainType>
 			<bTerrain>1</bTerrain>
 		</TerrainBoolean>
 		</TerrainBooleans>
@@ -420,15 +388,7 @@
 		<OnUnitChangeTo/>
 		<TerrainBooleans>
 		<TerrainBoolean>
-			<TerrainType>TERRAIN_MARSH</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-		<TerrainBoolean>
 			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_PLAINS</TerrainType>
 			<bTerrain>1</bTerrain>
 		</TerrainBoolean>
 		</TerrainBooleans>
@@ -521,15 +481,7 @@
 		<OnUnitChangeTo/>
 		<TerrainBooleans>
 		<TerrainBoolean>
-			<TerrainType>TERRAIN_MARSH</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-		<TerrainBoolean>
 			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_PLAINS</TerrainType>
 			<bTerrain>1</bTerrain>
 		</TerrainBoolean>
 		</TerrainBooleans>
@@ -622,15 +574,7 @@
 		<OnUnitChangeTo/>
 		<TerrainBooleans>
 		<TerrainBoolean>
-			<TerrainType>TERRAIN_MARSH</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-		<TerrainBoolean>
 			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_PLAINS</TerrainType>
 			<bTerrain>1</bTerrain>
 		</TerrainBoolean>
 		</TerrainBooleans>
@@ -723,15 +667,7 @@
 		<OnUnitChangeTo/>
 		<TerrainBooleans>
 		<TerrainBoolean>
-			<TerrainType>TERRAIN_MARSH</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-		<TerrainBoolean>
 			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_PLAINS</TerrainType>
 			<bTerrain>1</bTerrain>
 		</TerrainBoolean>
 		</TerrainBooleans>
@@ -824,15 +760,7 @@
 		<OnUnitChangeTo/>
 		<TerrainBooleans>
 		<TerrainBoolean>
-			<TerrainType>TERRAIN_MARSH</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-		<TerrainBoolean>
 			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_PLAINS</TerrainType>
 			<bTerrain>1</bTerrain>
 		</TerrainBoolean>
 		</TerrainBooleans>

@@ -5,7 +5,6 @@
 #-----------------------------------------------------------------------------
 #	Copyright (c) 2007 Firaxis Games, Inc. All rights reserved.
 #-----------------------------------------------------------------------------
-#
 
 from CvPythonExtensions import *
 import CvUtil

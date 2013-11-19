@@ -46,15 +46,15 @@ class CvTechnologyAdvisor:
 		screen.showScreen(PopupStates.POPUPSTATE_IMMEDIATE, False)
 	
 		# Set the background and exit button, and show the screen
-		if gc.getDefineINT("TK_RESEARCH_SCREEN_XY") > 0:
-			self.XResolution = 1024
-			self.YResolution = 768
-			screen.showWindowBackground( False )
-			screen.setDimensions(screen.centerX(0), screen.centerY(0), 1024, 768)
-		else:
-			self.XResolution = self.getScreen().getXResolution()
-			self.YResolution = self.getScreen().getYResolution()
-			screen.setDimensions(0, 0, self.XResolution, self.YResolution)
+#		if gc.getDefineINT("TK_RESEARCH_SCREEN_XY") > 0:
+#			self.XResolution = 1024
+#			self.YResolution = 768
+#			screen.showWindowBackground( False )
+#			screen.setDimensions(screen.centerX(0), screen.centerY(0), 1024, 768)
+#		else:
+		self.XResolution = self.getScreen().getXResolution()
+		self.YResolution = self.getScreen().getYResolution()
+		screen.setDimensions(0, 0, self.XResolution, self.YResolution)
 		
 		screen.addDDSGFC(self.BACKGROUND_ID, ArtFileMgr.getInterfaceArtInfo("INTERFACE_TECHNOLOGY_BG").getPath(), 0, 0, self.XResolution, self.YResolution, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 		

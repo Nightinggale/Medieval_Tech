@@ -963,39 +963,6 @@
 	<Button>Art/Buttons/Yields/CRYSTALLOY.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
-	<Type>PROFESSION_NUCLEONICS</Type>
-	<Description>TXT_KEY_PROFESSION_NUCLEONICS</Description>
-	<Civilopedia>TXT_KEY_PROFESSION_NUCLEONICS_PEDIA</Civilopedia>
-	<Strategy></Strategy>
-	<Help/>
-	<Combat>NONE</Combat>
-	<DefaultUnitAI>NONE</DefaultUnitAI>
-	<SpecialBuilding>SPECIALBUILDING_NUCLEONICS</SpecialBuilding>
-	<bWorkPlot>0</bWorkPlot>
-	<bCitizen>1</bCitizen>
-	<bWater>0</bWater>
-	<bScout>0</bScout>
-	<bCityDefender>0</bCityDefender>
-	<bCanFound>0</bCanFound>
-	<bUnarmed>0</bUnarmed>
-	<bNoDefensiveBonus>0</bNoDefensiveBonus>
-	<iCombatChange>0</iCombatChange>
-	<iMovesChange>0</iMovesChange>
-	<iWorkRate>0</iWorkRate>
-	<iMissionaryRate>0</iMissionaryRate>
-	<iPower>0</iPower>
-	<iAsset>0</iAsset>
-	<YieldEquipedNums></YieldEquipedNums>
-	<FreePromotions></FreePromotions>
-	<YieldsProduced>
-		<YieldType>YIELD_NUCLEONICS</YieldType>
-	</YieldsProduced>
-	<YieldsConsumed>
-		<YieldType>YIELD_ISOTOPES</YieldType>
-	</YieldsConsumed>
-	<Button>Art/Buttons/Yields/NUCLEONICS.dds</Button>
-</ProfessionInfo>
-<ProfessionInfo>
 	<Type>PROFESSION_FUSION_CORES</Type>
 	<Description>TXT_KEY_PROFESSION_FUSION_CORES</Description>
 	<Civilopedia>TXT_KEY_PROFESSION_FUSION_CORES_PEDIA</Civilopedia>
@@ -1027,6 +994,39 @@
 		<YieldType>YIELD_ACTINIDES</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/FUSION_CORES.dds</Button>
+</ProfessionInfo>
+<ProfessionInfo>
+	<Type>PROFESSION_NUCLEONICS</Type>
+	<Description>TXT_KEY_PROFESSION_NUCLEONICS</Description>
+	<Civilopedia>TXT_KEY_PROFESSION_NUCLEONICS_PEDIA</Civilopedia>
+	<Strategy></Strategy>
+	<Help/>
+	<Combat>NONE</Combat>
+	<DefaultUnitAI>NONE</DefaultUnitAI>
+	<SpecialBuilding>SPECIALBUILDING_NUCLEONICS</SpecialBuilding>
+	<bWorkPlot>0</bWorkPlot>
+	<bCitizen>1</bCitizen>
+	<bWater>0</bWater>
+	<bScout>0</bScout>
+	<bCityDefender>0</bCityDefender>
+	<bCanFound>0</bCanFound>
+	<bUnarmed>0</bUnarmed>
+	<bNoDefensiveBonus>0</bNoDefensiveBonus>
+	<iCombatChange>0</iCombatChange>
+	<iMovesChange>0</iMovesChange>
+	<iWorkRate>0</iWorkRate>
+	<iMissionaryRate>0</iMissionaryRate>
+	<iPower>0</iPower>
+	<iAsset>0</iAsset>
+	<YieldEquipedNums></YieldEquipedNums>
+	<FreePromotions></FreePromotions>
+	<YieldsProduced>
+		<YieldType>YIELD_NUCLEONICS</YieldType>
+	</YieldsProduced>
+	<YieldsConsumed>
+		<YieldType>YIELD_ISOTOPES</YieldType>
+	</YieldsConsumed>
+	<Button>Art/Buttons/Yields/NUCLEONICS.dds</Button>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_SEMICONDUCTORS</Type>

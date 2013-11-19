@@ -1385,22 +1385,6 @@
 	<Spanish>[LINK=YIELD_CRYSTALLOY]Crystalloy[\LINK] are produced from [LINK=YIELD_PRECIOUS_METALS]Precious Metals[\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Crystalloy Smelting[COLOR_REVERT] profession.</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_PROFESSION_NUCLEONICS</Tag>
-	<English>Nucleonics Enrichment</English>
-	<French>Nucleonics Enrichment</French>
-	<German>Nucleonics Enrichment</German>
-	<Italian>Nucleonics Enrichment</Italian>
-	<Spanish>Nucleonics Enrichment</Spanish>
-</TEXT>
-<TEXT>
-	<Tag>TXT_KEY_PROFESSION_NUCLEONICS_PEDIA</Tag>
-	<English>[LINK=YIELD_NUCLEONICS]Nucleonics[\LINK] are produced from [LINK=YIELD_ISOTOPES]Isotopes[\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Nucleonics Enrichment[COLOR_REVERT] profession.</English>
-	<French>[LINK=YIELD_NUCLEONICS]Nucleonics[\LINK] are produced from [LINK=YIELD_ISOTOPES]Isotopes[\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Nucleonics Enrichment[COLOR_REVERT] profession.</French>
-	<German>[LINK=YIELD_NUCLEONICS]Nucleonics[\LINK] are produced from [LINK=YIELD_ISOTOPES]Isotopes[\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Nucleonics Enrichment[COLOR_REVERT] profession.</German>
-	<Italian>[LINK=YIELD_NUCLEONICS]Nucleonics[\LINK] are produced from [LINK=YIELD_ISOTOPES]Isotopes[\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Nucleonics Enrichment[COLOR_REVERT] profession.</Italian>
-	<Spanish>[LINK=YIELD_NUCLEONICS]Nucleonics[\LINK] are produced from [LINK=YIELD_ISOTOPES]Isotopes[\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Nucleonics Enrichment[COLOR_REVERT] profession.</Spanish>
-</TEXT>
-<TEXT>
 	<Tag>TXT_KEY_PROFESSION_FUSION_CORES</Tag>
 	<English>Fusion Core Enrichment</English>
 	<French>Fusion Core Enrichment</French>
@@ -1415,6 +1399,22 @@
 	<German>[LINK=YIELD_FUSION_CORES]Fusion Cores[\LINK] are produced from [LINK=YIELD_ACTINIDES]Actinides[\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Fusion Core Enrichment[COLOR_REVERT] profession.</German>
 	<Italian>[LINK=YIELD_FUSION_CORES]Fusion Cores[\LINK] are produced from [LINK=YIELD_ACTINIDES]Actinides[\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Fusion Core Enrichment[COLOR_REVERT] profession.</Italian>
 	<Spanish>[LINK=YIELD_FUSION_CORES]Fusion Cores[\LINK] are produced from [LINK=YIELD_ACTINIDES]Actinides[\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Fusion Core Enrichment[COLOR_REVERT] profession.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_PROFESSION_NUCLEONICS</Tag>
+	<English>Nucleonics Enrichment</English>
+	<French>Nucleonics Enrichment</French>
+	<German>Nucleonics Enrichment</German>
+	<Italian>Nucleonics Enrichment</Italian>
+	<Spanish>Nucleonics Enrichment</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_PROFESSION_NUCLEONICS_PEDIA</Tag>
+	<English>[LINK=YIELD_NUCLEONICS]Nucleonics[\LINK] are produced from [LINK=YIELD_ISOTOPES]Isotopes[\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Nucleonics Enrichment[COLOR_REVERT] profession.</English>
+	<French>[LINK=YIELD_NUCLEONICS]Nucleonics[\LINK] are produced from [LINK=YIELD_ISOTOPES]Isotopes[\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Nucleonics Enrichment[COLOR_REVERT] profession.</French>
+	<German>[LINK=YIELD_NUCLEONICS]Nucleonics[\LINK] are produced from [LINK=YIELD_ISOTOPES]Isotopes[\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Nucleonics Enrichment[COLOR_REVERT] profession.</German>
+	<Italian>[LINK=YIELD_NUCLEONICS]Nucleonics[\LINK] are produced from [LINK=YIELD_ISOTOPES]Isotopes[\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Nucleonics Enrichment[COLOR_REVERT] profession.</Italian>
+	<Spanish>[LINK=YIELD_NUCLEONICS]Nucleonics[\LINK] are produced from [LINK=YIELD_ISOTOPES]Isotopes[\LINK] by citizens assigned to the [COLOR_HIGHLIGHT_TEXT]Nucleonics Enrichment[COLOR_REVERT] profession.</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_PROFESSION_SEMICONDUCTORS</Tag>
@@ -1970,11 +1970,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_TUNDRA_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Tundra[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Tundra[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Tundra[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Tundra[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Tundra[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Tundra[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Tundra[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Tundra[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Tundra[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Tundra[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_GRASS</Tag>
@@ -2002,11 +2002,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_MARSH_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_PLAINS</Tag>
@@ -2018,11 +2018,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_PLAINS_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Plains[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Plains[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Plains[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Plains[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Plains[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Plains[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Plains[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Plains[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Plains[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Plains[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_DESERT</Tag>
@@ -2034,11 +2034,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_DESERT_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Desert[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Desert[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Desert[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Desert[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Desert[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Desert[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Desert[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Desert[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Desert[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Desert[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_COAST</Tag>
@@ -2050,11 +2050,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_COAST_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Low Orbit[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Low Orbit[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Low Orbit[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Low Orbit[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Low Orbit[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Low Orbit[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Low Orbit[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Low Orbit[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Low Orbit[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Low Orbit[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_OCEAN</Tag>
@@ -2066,11 +2066,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_OCEAN_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Deep Space[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Deep Space[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Deep Space[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Deep Space[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Deep Space[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Deep Space[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Deep Space[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Deep Space[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Deep Space[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Deep Space[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_AQUATIC_COLD</Tag>
@@ -2082,11 +2082,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_AQUATIC_COLD_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Glacial[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Glacial[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Glacial[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Glacial[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Glacial[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Glacial[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Glacial[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Glacial[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Glacial[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Glacial[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_AQUATIC_FERTILE</Tag>
@@ -2098,11 +2098,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_AQUATIC_FERTILE_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Loam[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Loam[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Loam[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Loam[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Loam[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Loam[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Loam[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Loam[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Loam[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Loam[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_AQUATIC_WET</Tag>
@@ -2114,11 +2114,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_AQUATIC_WET_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Wetland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Wetland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Wetland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Wetland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Wetland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Wetland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Wetland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Wetland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Wetland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Wetland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_AQUATIC_DRY</Tag>
@@ -2130,11 +2130,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_AQUATIC_DRY_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Silt Beds[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Silt Beds[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Silt Beds[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Silt Beds[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Silt Beds[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Silt Beds[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Silt Beds[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Silt Beds[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Silt Beds[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Silt Beds[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_AQUATIC_HOT</Tag>
@@ -2146,11 +2146,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_AQUATIC_HOT_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Diatomaceous[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Diatomaceous[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Diatomaceous[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Diatomaceous[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Diatomaceous[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Diatomaceous[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Diatomaceous[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Diatomaceous[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Diatomaceous[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Diatomaceous[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_ARID_COLD</Tag>
@@ -2162,11 +2162,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_ARID_COLD_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Scrubland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Scrubland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Scrubland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Scrubland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Scrubland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Scrubland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Scrubland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Scrubland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Scrubland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Scrubland[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_ARID_FERTILE</Tag>
@@ -2178,11 +2178,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_ARID_FERTILE_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Steppe[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Steppe[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Steppe[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Steppe[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Steppe[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Steppe[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Steppe[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Steppe[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Steppe[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Steppe[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_ARID_WET</Tag>
@@ -2194,11 +2194,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_ARID_WET_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Salt Flats[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Salt Flats[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Salt Flats[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Salt Flats[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Salt Flats[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Salt Flats[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Salt Flats[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Salt Flats[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Salt Flats[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Salt Flats[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_ARID_DRY</Tag>
@@ -2210,11 +2210,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_ARID_DRY_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Badlands[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Badlands[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Badlands[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Badlands[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Badlands[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Badlands[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Badlands[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Badlands[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Badlands[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Badlands[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_ARID_HOT</Tag>
@@ -2226,11 +2226,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_ARID_HOT_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Dunes[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Dunes[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Dunes[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Dunes[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Dunes[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Dunes[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Dunes[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Dunes[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Dunes[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Dunes[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_VOLCANIC_COLD</Tag>
@@ -2242,11 +2242,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_VOLCANIC_COLD_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Felsic Rock[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Felsic Rock[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Felsic Rock[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Felsic Rock[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Felsic Rock[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Felsic Rock[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Felsic Rock[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Felsic Rock[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Felsic Rock[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Felsic Rock[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_VOLCANIC_FERTILE</Tag>
@@ -2258,11 +2258,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_VOLCANIC_FERTILE_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Volcanic Soil[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Volcanic Soil[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Volcanic Soil[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Volcanic Soil[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Volcanic Soil[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Volcanic Soil[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Volcanic Soil[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Volcanic Soil[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Volcanic Soil[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Volcanic Soil[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_VOLCANIC_WET</Tag>
@@ -2274,11 +2274,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_VOLCANIC_WET_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Ash[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Ash[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Ash[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Ash[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Ash[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Ash[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Ash[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Ash[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Ash[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Ash[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_VOLCANIC_DRY</Tag>
@@ -2290,11 +2290,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_VOLCANIC_DRY_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Batholith[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Batholith[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Batholith[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Batholith[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Batholith[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Batholith[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Batholith[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Batholith[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Batholith[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Batholith[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_VOLCANIC_HOT</Tag>
@@ -2306,11 +2306,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_VOLCANIC_HOT_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Regolith[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Regolith[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Regolith[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Regolith[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Regolith[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Regolith[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Regolith[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Regolith[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Regolith[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Regolith[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_ARCTIC_COLD</Tag>
@@ -2322,11 +2322,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_ARCTIC_COLD_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Arctic[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Arctic[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Arctic[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Arctic[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Arctic[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Arctic[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Arctic[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Arctic[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Arctic[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Arctic[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_ARCTIC_FERTILE</Tag>
@@ -2338,11 +2338,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_ARCTIC_FERTILE_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Alpine[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Alpine[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Alpine[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Alpine[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Alpine[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Alpine[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Alpine[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Alpine[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Alpine[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Alpine[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_AMINO_ACIDS]Amino Acids[\LINK], [LINK=YIELD_ALIEN_SPECIMENS]Alien Specimens[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_NUCLEIC_ACIDS]Nucleic Acids[\LINK], </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_ARCTIC_WET</Tag>
@@ -2354,11 +2354,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_ARCTIC_WET_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_ARCTIC_DRY</Tag>
@@ -2370,11 +2370,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_ARCTIC_DRY_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Heath[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Heath[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Heath[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Heath[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Heath[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Heath[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Heath[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Heath[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Heath[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Heath[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_ARCTIC_HOT</Tag>
@@ -2386,11 +2386,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_ARCTIC_HOT_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Limestone[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Limestone[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Limestone[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Limestone[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Limestone[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Limestone[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Limestone[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Limestone[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Limestone[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Limestone[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_SNOW</Tag>
@@ -9737,27 +9737,211 @@
 	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] to continue our advancement.</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TEST</Tag>
-	<English>TRADING_GUILDS</English>
-	<French>TRADING_GUILDS</French>
-	<German>TRADING_GUILDS</German>
-	<Italian>TRADING_GUILDS</Italian>
-	<Spanish>TRADING_GUILDS</Spanish>
+	<Tag>TXT_KEY_TECH_CATEGORY_ARCHAEOLOGY</Tag>
+	<English>Archaeology</English>
+	<French>Archaeology</French>
+	<German>Archaeology</German>
+	<Italian>Archaeology</Italian>
+	<Spanish>Archaeology</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TEST_PEDIA</Tag>
-	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
-	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
-	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
-	<Italian>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</Italian>
-	<Spanish>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</Spanish>
+	<Tag>TXT_KEY_TECH_CATEGORY_GENETICS</Tag>
+	<English>Genetics</English>
+	<French>Genetics</French>
+	<German>Genetics</German>
+	<Italian>Genetics</Italian>
+	<Spanish>Genetics</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TEST_STRATEGY</Tag>
-	<English>Research [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] to continue our advancement.</English>
-	<French>Research [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] to continue our advancement.</French>
-	<German>Research [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] to continue our advancement.</German>
-	<Italian>Research [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] to continue our advancement.</Italian>
-	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] to continue our advancement.</Spanish>
+	<Tag>TXT_KEY_TECH_CATEGORY_XENOBOTANY</Tag>
+	<English>Xenobotany</English>
+	<French>Xenobotany</French>
+	<German>Xenobotany</German>
+	<Italian>Xenobotany</Italian>
+	<Spanish>Xenobotany</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_CATEGORY_CHEMISTRY</Tag>
+	<English>Chemistry</English>
+	<French>Chemistry</French>
+	<German>Chemistry</German>
+	<Italian>Chemistry</Italian>
+	<Spanish>Chemistry</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_CATEGORY_PHYSICS</Tag>
+	<English>Physics</English>
+	<French>Physics</French>
+	<German>Physics</German>
+	<Italian>Physics</Italian>
+	<Spanish>Physics</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_ACTINIDES1</Tag>
+	<English>Actinide Analysis</English>
+	<French>Actinide Analysis</French>
+	<German>Actinide Analysis</German>
+	<Italian>Actinide Analysis</Italian>
+	<Spanish>Actinide Analysis</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_ACTINIDES1_PEDIA</Tag>
+	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]Actinide Analysis[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
+	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]Actinide Analysis[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
+	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]Actinide Analysis[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
+	<Italian>The discovery of [COLOR_HIGHLIGHT_TEXT]Actinide Analysis[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</Italian>
+	<Spanish>The discovery of [COLOR_HIGHLIGHT_TEXT]Actinide Analysis[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_ACTINIDES1_STRATEGY</Tag>
+	<English>Research [COLOR_HIGHLIGHT_TEXT]Actinide Analysis[COLOR_REVERT] to continue our advancement.</English>
+	<French>Research [COLOR_HIGHLIGHT_TEXT]Actinide Analysis[COLOR_REVERT] to continue our advancement.</French>
+	<German>Research [COLOR_HIGHLIGHT_TEXT]Actinide Analysis[COLOR_REVERT] to continue our advancement.</German>
+	<Italian>Research [COLOR_HIGHLIGHT_TEXT]Actinide Analysis[COLOR_REVERT] to continue our advancement.</Italian>
+	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]Actinide Analysis[COLOR_REVERT] to continue our advancement.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_ACTINIDES2</Tag>
+	<English>Basic Actinide Extraction</English>
+	<French>Basic Actinide Extraction</French>
+	<German>Basic Actinide Extraction</German>
+	<Italian>Basic Actinide Extraction</Italian>
+	<Spanish>Basic Actinide Extraction</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_ACTINIDES2_PEDIA</Tag>
+	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]Basic Actinide Extraction[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
+	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]Basic Actinide Extraction[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
+	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]Basic Actinide Extraction[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
+	<Italian>The discovery of [COLOR_HIGHLIGHT_TEXT]Basic Actinide Extraction[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</Italian>
+	<Spanish>The discovery of [COLOR_HIGHLIGHT_TEXT]Basic Actinide Extraction[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_ACTINIDES2_STRATEGY</Tag>
+	<English>Research [COLOR_HIGHLIGHT_TEXT]Basic Actinide Extraction[COLOR_REVERT] to continue our advancement.</English>
+	<French>Research [COLOR_HIGHLIGHT_TEXT]Basic Actinide Extraction[COLOR_REVERT] to continue our advancement.</French>
+	<German>Research [COLOR_HIGHLIGHT_TEXT]Basic Actinide Extraction[COLOR_REVERT] to continue our advancement.</German>
+	<Italian>Research [COLOR_HIGHLIGHT_TEXT]Basic Actinide Extraction[COLOR_REVERT] to continue our advancement.</Italian>
+	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]Basic Actinide Extraction[COLOR_REVERT] to continue our advancement.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_ACTINIDES3</Tag>
+	<English>Advanced Actinide Extraction</English>
+	<French>Advanced Actinide Extraction</French>
+	<German>Advanced Actinide Extraction</German>
+	<Italian>Advanced Actinide Extraction</Italian>
+	<Spanish>Advanced Actinide Extraction</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_ACTINIDES3_PEDIA</Tag>
+	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]Advanced Actinide Extraction[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
+	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]Advanced Actinide Extraction[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
+	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]Advanced Actinide Extraction[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
+	<Italian>The discovery of [COLOR_HIGHLIGHT_TEXT]Advanced Actinide Extraction[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</Italian>
+	<Spanish>The discovery of [COLOR_HIGHLIGHT_TEXT]Advanced Actinide Extraction[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_ACTINIDES3_STRATEGY</Tag>
+	<English>Research [COLOR_HIGHLIGHT_TEXT]Advanced Actinide Extraction[COLOR_REVERT] to continue our advancement.</English>
+	<French>Research [COLOR_HIGHLIGHT_TEXT]Advanced Actinide Extraction[COLOR_REVERT] to continue our advancement.</French>
+	<German>Research [COLOR_HIGHLIGHT_TEXT]Advanced Actinide Extraction[COLOR_REVERT] to continue our advancement.</German>
+	<Italian>Research [COLOR_HIGHLIGHT_TEXT]Advanced Actinide Extraction[COLOR_REVERT] to continue our advancement.</Italian>
+	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]Advanced Actinide Extraction[COLOR_REVERT] to continue our advancement.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_FUSION_CORES1</Tag>
+	<English>Fusion Core Analysis</English>
+	<French>Fusion Core Analysis</French>
+	<German>Fusion Core Analysis</German>
+	<Italian>Fusion Core Analysis</Italian>
+	<Spanish>Fusion Core Analysis</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_FUSION_CORES1_PEDIA</Tag>
+	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]Fusion Core Analysis[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
+	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]Fusion Core Analysis[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
+	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]Fusion Core Analysis[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
+	<Italian>The discovery of [COLOR_HIGHLIGHT_TEXT]Fusion Core Analysis[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</Italian>
+	<Spanish>The discovery of [COLOR_HIGHLIGHT_TEXT]Fusion Core Analysis[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_FUSION_CORES1_STRATEGY</Tag>
+	<English>Research [COLOR_HIGHLIGHT_TEXT]Fusion Core Analysis[COLOR_REVERT] to continue our advancement.</English>
+	<French>Research [COLOR_HIGHLIGHT_TEXT]Fusion Core Analysis[COLOR_REVERT] to continue our advancement.</French>
+	<German>Research [COLOR_HIGHLIGHT_TEXT]Fusion Core Analysis[COLOR_REVERT] to continue our advancement.</German>
+	<Italian>Research [COLOR_HIGHLIGHT_TEXT]Fusion Core Analysis[COLOR_REVERT] to continue our advancement.</Italian>
+	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]Fusion Core Analysis[COLOR_REVERT] to continue our advancement.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_FUSION_CORES2</Tag>
+	<English>Basic Fusion Core Production</English>
+	<French>Basic Fusion Core Production</French>
+	<German>Basic Fusion Core Production</German>
+	<Italian>Basic Fusion Core Production</Italian>
+	<Spanish>Basic Fusion Core Production</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_FUSION_CORES2_PEDIA</Tag>
+	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]Basic Fusion Core Production[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
+	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]Basic Fusion Core Production[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
+	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]Basic Fusion Core Production[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
+	<Italian>The discovery of [COLOR_HIGHLIGHT_TEXT]Basic Fusion Core Production[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</Italian>
+	<Spanish>The discovery of [COLOR_HIGHLIGHT_TEXT]Basic Fusion Core Production[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_FUSION_CORES2_STRATEGY</Tag>
+	<English>Research [COLOR_HIGHLIGHT_TEXT]Basic Fusion Core Production[COLOR_REVERT] to continue our advancement.</English>
+	<French>Research [COLOR_HIGHLIGHT_TEXT]Basic Fusion Core Production[COLOR_REVERT] to continue our advancement.</French>
+	<German>Research [COLOR_HIGHLIGHT_TEXT]Basic Fusion Core Production[COLOR_REVERT] to continue our advancement.</German>
+	<Italian>Research [COLOR_HIGHLIGHT_TEXT]Basic Fusion Core Production[COLOR_REVERT] to continue our advancement.</Italian>
+	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]Basic Fusion Core Production[COLOR_REVERT] to continue our advancement.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_FUSION_CORES3</Tag>
+	<English>Advanced Fusion Core Production</English>
+	<French>Advanced Fusion Core Production</French>
+	<German>Advanced Fusion Core Production</German>
+	<Italian>Advanced Fusion Core Production</Italian>
+	<Spanish>Advanced Fusion Core Production</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_FUSION_CORES3_PEDIA</Tag>
+	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]Advanced Fusion Core Production[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
+	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]Advanced Fusion Core Production[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
+	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]Advanced Fusion Core Production[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
+	<Italian>The discovery of [COLOR_HIGHLIGHT_TEXT]Advanced Fusion Core Production[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</Italian>
+	<Spanish>The discovery of [COLOR_HIGHLIGHT_TEXT]Advanced Fusion Core Production[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_FUSION_CORES3_STRATEGY</Tag>
+	<English>Research [COLOR_HIGHLIGHT_TEXT]Advanced Fusion Core Production[COLOR_REVERT] to continue our advancement.</English>
+	<French>Research [COLOR_HIGHLIGHT_TEXT]Advanced Fusion Core Production[COLOR_REVERT] to continue our advancement.</French>
+	<German>Research [COLOR_HIGHLIGHT_TEXT]Advanced Fusion Core Production[COLOR_REVERT] to continue our advancement.</German>
+	<Italian>Research [COLOR_HIGHLIGHT_TEXT]Advanced Fusion Core Production[COLOR_REVERT] to continue our advancement.</Italian>
+	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]Advanced Fusion Core Production[COLOR_REVERT] to continue our advancement.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_FUSION_CORES4</Tag>
+	<English>Intensive Fusion Core Production</English>
+	<French>Intensive Fusion Core Production</French>
+	<German>Intensive Fusion Core Production</German>
+	<Italian>Intensive Fusion Core Production</Italian>
+	<Spanish>Intensive Fusion Core Production</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_FUSION_CORES4_PEDIA</Tag>
+	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]Intensive Fusion Core Production[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
+	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]Intensive Fusion Core Production[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
+	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]Intensive Fusion Core Production[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
+	<Italian>The discovery of [COLOR_HIGHLIGHT_TEXT]Intensive Fusion Core Production[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</Italian>
+	<Spanish>The discovery of [COLOR_HIGHLIGHT_TEXT]Intensive Fusion Core Production[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_TECH_FUSION_CORES4_STRATEGY</Tag>
+	<English>Research [COLOR_HIGHLIGHT_TEXT]Intensive Fusion Core Production[COLOR_REVERT] to continue our advancement.</English>
+	<French>Research [COLOR_HIGHLIGHT_TEXT]Intensive Fusion Core Production[COLOR_REVERT] to continue our advancement.</French>
+	<German>Research [COLOR_HIGHLIGHT_TEXT]Intensive Fusion Core Production[COLOR_REVERT] to continue our advancement.</German>
+	<Italian>Research [COLOR_HIGHLIGHT_TEXT]Intensive Fusion Core Production[COLOR_REVERT] to continue our advancement.</Italian>
+	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]Intensive Fusion Core Production[COLOR_REVERT] to continue our advancement.</Spanish>
 </TEXT>
 </Civ4GameText>

@@ -56,8 +56,8 @@ def_noun "Mine"  => "Mines";
 	['Plasteel Smelting','PLASTEEL','BASE_METALS','BIOPOLYMERS'],
 	['Duralloy Smelting','DURALLOY','BASE_METALS','SILICATES'],
 	['Crystalloy Smelting','CRYSTALLOY','PRECIOUS_METALS','CRYSTALLOIDS'],
-	['Nucleonics Enrichment','NUCLEONICS','ISOTOPES'],
 	['Fusion Core Enrichment','FUSION_CORES','ACTINIDES'],
+	['Nucleonics Enrichment','NUCLEONICS','ISOTOPES'],
 	['Semiconductor Fabrication','SEMICONDUCTORS','RARE_EARTHS'],
 	['Plasmid Biosynthesis','PLASMIDS','NUCLEIC_ACIDS'],
 	['Enzyme Biosynthesis','ENZYMES','AMINO_ACIDS'],
@@ -860,58 +860,58 @@ $landorder++;
 }
 
 # make terrains
-&makeland('TUNDRA','Tundra',{'NUTRIENTS'=>2,'DATACORES'=>1,'PROGENITOR_ARTIFACTS'=>3,'TISSUE_SAMPLES'=>2});
-&makelandvanilla('GRASS','Grassland',{'NUTRIENTS'=>2,'NUCLEIC_ACIDS'=>2,'AMINO_ACIDS'=>1,'ALIEN_SPECIMENS'=>3});
-&makeland('MARSH','Marsh',{'NUTRIENTS'=>2,'OPIATES'=>2,'XENOTOXINS'=>3,'BOTANICALS'=>1});
-&makeland('PLAINS','Plains',{'NUTRIENTS'=>2,'HYDROCARBONS'=>3,'CLATHRATES'=>2,'RARE_EARTHS'=>1});
-&makeland('DESERT','Desert',{'NUTRIENTS'=>2,'ACTINIDES'=>3,'ISOTOPES'=>1,'CORE_SAMPLES'=>2});
-&makewater('COAST','Low Orbit',{'NUTRIENTS'=>2});
-&makewater('OCEAN','Deep Space',{'NUTRIENTS'=>1});
+&makeland('TUNDRA','Tundra',{'NUTRIENTS'=>2,'DATACORES'=>1,'PROGENITOR_ARTIFACTS'=>3,'TISSUE_SAMPLES'=>2,'POLLUTANTS'>=2});
+&makelandvanilla('GRASS','Grassland',{'NUTRIENTS'=>2,'NUCLEIC_ACIDS'=>2,'AMINO_ACIDS'=>1,'ALIEN_SPECIMENS'=>3,'POLLUTANTS'>=2});
+&makeland('MARSH','Marsh',{'NUTRIENTS'=>2,'OPIATES'=>2,'XENOTOXINS'=>3,'BOTANICALS'=>1,'POLLUTANTS'>=2});
+&makeland('PLAINS','Plains',{'NUTRIENTS'=>2,'HYDROCARBONS'=>3,'CLATHRATES'=>2,'RARE_EARTHS'=>1,'POLLUTANTS'>=2});
+&makeland('DESERT','Desert',{'NUTRIENTS'=>2,'ACTINIDES'=>3,'ISOTOPES'=>1,'CORE_SAMPLES'=>2,'POLLUTANTS'>=2});
+&makewater('COAST','Low Orbit',{'NUTRIENTS'=>2,'POLLUTANTS'>=2});
+&makewater('OCEAN','Deep Space',{'NUTRIENTS'=>1,'POLLUTANTS'>=2});
 
 # Temperate Planet (Class B)
-#&makeland('TEMPERATE_COLD','Tundra',{'NUTRIENTS'=>2,'DATACORES'=>1,'PROGENITOR_ARTIFACTS'=>3,'TISSUE_SAMPLES'=>2});
-#&makeland('TEMPERATE_FERTILE','Grassland',{'NUTRIENTS'=>2,'NUCLEIC_ACIDS'=>2,'AMINO_ACIDS'=>1,'ALIEN_SPECIMENS'=>3});
-#&makeland('TEMPERATE_WET','Marsh',{'NUTRIENTS'=>2,'OPIATES'=>2,'XENOTOXINS'=>3,'BOTANICALS'=>1});
-#&makeland('TEMPERATE_DRY','Plains',{'NUTRIENTS'=>2,'HYDROCARBONS'=>3,'CLATHRATES'=>2,'RARE_EARTHS'=>1});
-#&makeland('TEMPERATE_HOT','Desert',{'NUTRIENTS'=>2,'ACTINIDES'=>3,'ISOTOPES'=>1,'CORE_SAMPLES'=>2});
-#&makewater('TEMPERATE_COAST','Temperate Sea',{'NUTRIENTS'=>3,'NUCLEIC_ACIDS'=>2,'PRECIOUS_METALS'=>1});
-#&makewater('TEMPERATE_OCEAN','Temperate Ocean',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2,'CRYSTALLOIDS'=>1,'MICROBES'=>2});
+#&makeland('TEMPERATE_COLD','Tundra',{'NUTRIENTS'=>2,'DATACORES'=>1,'PROGENITOR_ARTIFACTS'=>3,'TISSUE_SAMPLES'=>2,'POLLUTANTS'>=2});
+#&makeland('TEMPERATE_FERTILE','Grassland',{'NUTRIENTS'=>2,'NUCLEIC_ACIDS'=>2,'AMINO_ACIDS'=>1,'ALIEN_SPECIMENS'=>3,'POLLUTANTS'>=2});
+#&makeland('TEMPERATE_WET','Marsh',{'NUTRIENTS'=>2,'OPIATES'=>2,'XENOTOXINS'=>3,'BOTANICALS'=>1,'POLLUTANTS'>=2});
+#&makeland('TEMPERATE_DRY','Plains',{'NUTRIENTS'=>2,'HYDROCARBONS'=>3,'CLATHRATES'=>2,'RARE_EARTHS'=>1,'POLLUTANTS'>=2});
+#&makeland('TEMPERATE_HOT','Desert',{'NUTRIENTS'=>2,'ACTINIDES'=>3,'ISOTOPES'=>1,'CORE_SAMPLES'=>2,'POLLUTANTS'>=2});
+#&makewater('TEMPERATE_COAST','Temperate Sea',{'NUTRIENTS'=>3,'NUCLEIC_ACIDS'=>2,'PRECIOUS_METALS'=>1,'POLLUTANTS'>=2});
+#&makewater('TEMPERATE_OCEAN','Temperate Ocean',{'NUTRIENTS'=>2,'AMINO_ACIDS'=>2,'CRYSTALLOIDS'=>1,'MICROBES'=>2,'POLLUTANTS'>=2});
 
 # Aquatic Planet (Class C)
-&makeland('AQUATIC_COLD','Glacial',{'NUTRIENTS'=>2,'DATACORES'=>3,'PROGENITOR_ARTIFACTS'=>1,'TISSUE_SAMPLES'=>2});
-&makeland('AQUATIC_FERTILE','Loam',{'NUTRIENTS'=>2,'NUCLEIC_ACIDS'=>1,'AMINO_ACIDS'=>3,'ALIEN_SPECIMENS'=>2});
-&makeland('AQUATIC_WET','Wetland',{'NUTRIENTS'=>2,'OPIATES'=>2,'XENOTOXINS'=>1,'BOTANICALS'=>3});
-&makeland('AQUATIC_DRY','Silt Beds',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2,'CLATHRATES'=>3,'RARE_EARTHS'=>1});
-&makeland('AQUATIC_HOT','Diatomaceous',{'NUTRIENTS'=>2,'ACTINIDES'=>3,'ISOTOPES'=>2,'CORE_SAMPLES'=>1});
-#&makewater('AQUATIC_COAST','Pelagic Sea',{'NUTRIENTS'=>3,'OPIATES'=>2,'PRECIOUS_METALS'=>1});
-#&makewater('AQUATIC_OCEAN','Abyssal Ocean',{'NUTRIENTS'=>2,'XENOTOXINS'=>2,'CRYSTALLOIDS'=>1,'MICROBES'=>2});
+&makeland('AQUATIC_COLD','Glacial',{'NUTRIENTS'=>2,'DATACORES'=>3,'PROGENITOR_ARTIFACTS'=>1,'TISSUE_SAMPLES'=>2,'POLLUTANTS'>=2});
+&makeland('AQUATIC_FERTILE','Loam',{'NUTRIENTS'=>2,'NUCLEIC_ACIDS'=>1,'AMINO_ACIDS'=>3,'ALIEN_SPECIMENS'=>2,'POLLUTANTS'>=2});
+&makeland('AQUATIC_WET','Wetland',{'NUTRIENTS'=>2,'OPIATES'=>2,'XENOTOXINS'=>1,'BOTANICALS'=>3,'POLLUTANTS'>=2});
+&makeland('AQUATIC_DRY','Silt Beds',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2,'CLATHRATES'=>3,'RARE_EARTHS'=>1,'POLLUTANTS'>=2});
+&makeland('AQUATIC_HOT','Diatomaceous',{'NUTRIENTS'=>2,'ACTINIDES'=>3,'ISOTOPES'=>2,'CORE_SAMPLES'=>1,'POLLUTANTS'>=2});
+#&makewater('AQUATIC_COAST','Pelagic Sea',{'NUTRIENTS'=>3,'OPIATES'=>2,'PRECIOUS_METALS'=>1,'POLLUTANTS'>=2});
+#&makewater('AQUATIC_OCEAN','Abyssal Ocean',{'NUTRIENTS'=>2,'XENOTOXINS'=>2,'CRYSTALLOIDS'=>1,'MICROBES'=>2,'POLLUTANTS'>=2});
 
 # Arid Planet (Class D)
-&makeland('ARID_COLD','Scrubland',{'NUTRIENTS'=>2,'DATACORES'=>3,'PROGENITOR_ARTIFACTS'=>2,'TISSUE_SAMPLES'=>1});
-&makeland('ARID_FERTILE','Steppe',{'NUTRIENTS'=>2,'NUCLEIC_ACIDS'=>3,'AMINO_ACIDS'=>1,'ALIEN_SPECIMENS'=>2});
-&makeland('ARID_WET','Salt Flats',{'NUTRIENTS'=>2,'OPIATES'=>1,'XENOTOXINS'=>3,'BOTANICALS'=>2});
-&makeland('ARID_DRY','Badlands',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2,'CLATHRATES'=>1,'RARE_EARTHS'=>3});
-&makeland('ARID_HOT','Dunes',{'NUTRIENTS'=>2,'ACTINIDES'=>2,'ISOTOPES'=>3,'CORE_SAMPLES'=>1});
-#&makewater('ARID_COAST','Alkali Sea',{'NUTRIENTS'=>3,'HYDROCARBONS'=>2,'PRECIOUS_METALS'=>1});
-#&makewater('ARID_OCEAN','Alkali Ocean',{'NUTRIENTS'=>2,'CLATHRATES'=>2,'CRYSTALLOIDS'=>1,'MICROBES'=>2});
+&makeland('ARID_COLD','Scrubland',{'NUTRIENTS'=>2,'DATACORES'=>3,'PROGENITOR_ARTIFACTS'=>2,'TISSUE_SAMPLES'=>1,'POLLUTANTS'>=2});
+&makeland('ARID_FERTILE','Steppe',{'NUTRIENTS'=>2,'NUCLEIC_ACIDS'=>3,'AMINO_ACIDS'=>1,'ALIEN_SPECIMENS'=>2,'POLLUTANTS'>=2});
+&makeland('ARID_WET','Salt Flats',{'NUTRIENTS'=>2,'OPIATES'=>1,'XENOTOXINS'=>3,'BOTANICALS'=>2,'POLLUTANTS'>=2});
+&makeland('ARID_DRY','Badlands',{'NUTRIENTS'=>2,'HYDROCARBONS'=>2,'CLATHRATES'=>1,'RARE_EARTHS'=>3,'POLLUTANTS'>=2});
+&makeland('ARID_HOT','Dunes',{'NUTRIENTS'=>2,'ACTINIDES'=>2,'ISOTOPES'=>3,'CORE_SAMPLES'=>1,'POLLUTANTS'>=2});
+#&makewater('ARID_COAST','Alkali Sea',{'NUTRIENTS'=>3,'HYDROCARBONS'=>2,'PRECIOUS_METALS'=>1,'POLLUTANTS'>=2});
+#&makewater('ARID_OCEAN','Alkali Ocean',{'NUTRIENTS'=>2,'CLATHRATES'=>2,'CRYSTALLOIDS'=>1,'MICROBES'=>2,'POLLUTANTS'>=2});
 
 # Volcanic Planet (Class E)
-&makeland('VOLCANIC_COLD','Felsic Rock',{'NUTRIENTS'=>2,'DATACORES'=>2,'PROGENITOR_ARTIFACTS'=>3,'TISSUE_SAMPLES'=>1});
-&makeland('VOLCANIC_FERTILE','Volcanic Soil',{'NUTRIENTS'=>2,'NUCLEIC_ACIDS'=>3,'AMINO_ACIDS'=>2,'ALIEN_SPECIMENS'=>1});
-&makeland('VOLCANIC_WET','Ash',{'NUTRIENTS'=>2,'OPIATES'=>3,'XENOTOXINS'=>1,'BOTANICALS'=>2});
-&makeland('VOLCANIC_DRY','Batholith',{'NUTRIENTS'=>2,'HYDROCARBONS'=>1,'CLATHRATES'=>3,'RARE_EARTHS'=>2});
-&makeland('VOLCANIC_HOT','Regolith',{'NUTRIENTS'=>2,'ACTINIDES'=>2,'ISOTOPES'=>1,'CORE_SAMPLES'=>3});
-#&makewater('VOLCANIC_COAST','Pyroclastic',{'NUTRIENTS'=>3,'ACTINIDES'=>2,'MICROBES'=>2});
-#&makewater('VOLCANIC_OCEAN','Magma',{'NUTRIENTS'=>2,'ISOTOPES'=>2,'CRYSTALLOIDS'=>2,'PRECIOUS_METALS'=>1});
+&makeland('VOLCANIC_COLD','Felsic Rock',{'NUTRIENTS'=>2,'DATACORES'=>2,'PROGENITOR_ARTIFACTS'=>3,'TISSUE_SAMPLES'=>1,'POLLUTANTS'>=2});
+&makeland('VOLCANIC_FERTILE','Volcanic Soil',{'NUTRIENTS'=>2,'NUCLEIC_ACIDS'=>3,'AMINO_ACIDS'=>2,'ALIEN_SPECIMENS'=>1,'POLLUTANTS'>=2});
+&makeland('VOLCANIC_WET','Ash',{'NUTRIENTS'=>2,'OPIATES'=>3,'XENOTOXINS'=>1,'BOTANICALS'=>2,'POLLUTANTS'>=2});
+&makeland('VOLCANIC_DRY','Batholith',{'NUTRIENTS'=>2,'HYDROCARBONS'=>1,'CLATHRATES'=>3,'RARE_EARTHS'=>2,'POLLUTANTS'>=2});
+&makeland('VOLCANIC_HOT','Regolith',{'NUTRIENTS'=>2,'ACTINIDES'=>2,'ISOTOPES'=>1,'CORE_SAMPLES'=>3,'POLLUTANTS'>=2});
+#&makewater('VOLCANIC_COAST','Pyroclastic',{'NUTRIENTS'=>3,'ACTINIDES'=>2,'MICROBES'=>2,'POLLUTANTS'>=2});
+#&makewater('VOLCANIC_OCEAN','Magma',{'NUTRIENTS'=>2,'ISOTOPES'=>2,'CRYSTALLOIDS'=>2,'PRECIOUS_METALS'=>1,'POLLUTANTS'>=2});
 
 # Arctic Planet (Class A)
-&makeland('ARCTIC_COLD','Arctic',{'NUTRIENTS'=>2,'DATACORES'=>2,'PROGENITOR_ARTIFACTS'=>1,'TISSUE_SAMPLES'=>3});
-&makeland('ARCTIC_FERTILE','Alpine',{'NUTRIENTS'=>2,'NUCLEIC_ACIDS'=>2,'AMINO_ACIDS'=>3,'ALIEN_SPECIMENS'=>1});
-&makeland('ARCTIC_WET','Bog',{'NUTRIENTS'=>2,'OPIATES'=>3,'XENOTOXINS'=>2,'BOTANICALS'=>1});
-&makeland('ARCTIC_DRY','Heath',{'NUTRIENTS'=>2,'HYDROCARBONS'=>3,'CLATHRATES'=>1,'RARE_EARTHS'=>2});
-&makeland('ARCTIC_HOT','Limestone',{'NUTRIENTS'=>2,'ACTINIDES'=>1,'ISOTOPES'=>3,'CORE_SAMPLES'=>2});
-#&makewater('ARCTIC_COAST','Brackish Sea',{'NUTRIENTS'=>3,'DATACORES'=>2,'PRECIOUS_METALS'=>1});
-#&makewater('ARCTIC_OCEAN','Brackish Ocean',{'NUTRIENTS'=>2,'PROGENITOR_ARTIFACTS'=>2,'CRYSTALLOIDS'=>1,'MICROBES'=>2});
+&makeland('ARCTIC_COLD','Arctic',{'NUTRIENTS'=>2,'DATACORES'=>2,'PROGENITOR_ARTIFACTS'=>1,'TISSUE_SAMPLES'=>3,'POLLUTANTS'>=2});
+&makeland('ARCTIC_FERTILE','Alpine',{'NUTRIENTS'=>2,'NUCLEIC_ACIDS'=>2,'AMINO_ACIDS'=>3,'ALIEN_SPECIMENS'=>1,'POLLUTANTS'>=2});
+&makeland('ARCTIC_WET','Bog',{'NUTRIENTS'=>2,'OPIATES'=>3,'XENOTOXINS'=>2,'BOTANICALS'=>1,'POLLUTANTS'>=2});
+&makeland('ARCTIC_DRY','Heath',{'NUTRIENTS'=>2,'HYDROCARBONS'=>3,'CLATHRATES'=>1,'RARE_EARTHS'=>2,'POLLUTANTS'>=2});
+&makeland('ARCTIC_HOT','Limestone',{'NUTRIENTS'=>2,'ACTINIDES'=>1,'ISOTOPES'=>3,'CORE_SAMPLES'=>2,'POLLUTANTS'>=2});
+#&makewater('ARCTIC_COAST','Brackish Sea',{'NUTRIENTS'=>3,'DATACORES'=>2,'PRECIOUS_METALS'=>1,'POLLUTANTS'>=2});
+#&makewater('ARCTIC_OCEAN','Brackish Ocean',{'NUTRIENTS'=>2,'PROGENITOR_ARTIFACTS'=>2,'CRYSTALLOIDS'=>1,'MICROBES'=>2,'POLLUTANTS'>=2});
 
 &makelandvanilla('SNOW',{''});
 &makelandvanilla('PEAK',{''});
@@ -1038,15 +1038,15 @@ print FI "</FeatureInfo>\n";
 }
 
 # make features
-&makefeature('FOREST',{'BIOPOLYMERS'=>4,'NUTRIENTS'=>-1});
+&makefeature('FOREST',{'BIOPOLYMERS'=>4,'NUTRIENTS'=>-1,'POLLUTANTS'=>-1});
 &makefeature('LIGHT_FOREST',{'BIOPOLYMERS'=>3});
-&makefeature('JUNGLE',{'BIOPOLYMERS'=>3,'NUTRIENTS'=>-1});
+&makefeature('JUNGLE',{'BIOPOLYMERS'=>3,'NUTRIENTS'=>-1,'POLLUTANTS'=>-1});
 &makefeature('ICE',{''});
-&makefeature('LUMINOUS_FOREST',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makefeature('FUNGAL_FOREST',{'BIOPOLYMERS'=>3,'OPIATES'=>1,'NUTRIENTS'=>-1});
-&makefeature('CYCAD_FOREST',{'BIOPOLYMERS'=>3,'NUCLEIC_ACIDS'=>1,'NUTRIENTS'=>-1});
-&makefeature('PETRIFIED_FOREST',{'BIOPOLYMERS'=>3,'HYDROCARBONS'=>1,'NUTRIENTS'=>-1});
-&makefeature('PROGENITOR_RUINS',{'BIOPOLYMERS'=>3,'DATACORES'=>1,'NUTRIENTS'=>-1});
+&makefeature('LUMINOUS_FOREST',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1,'POLLUTANTS'=>-1});
+&makefeature('FUNGAL_FOREST',{'BIOPOLYMERS'=>3,'OPIATES'=>1,'NUTRIENTS'=>-1,'POLLUTANTS'=>-1});
+&makefeature('CYCAD_FOREST',{'BIOPOLYMERS'=>3,'NUCLEIC_ACIDS'=>1,'NUTRIENTS'=>-1,'POLLUTANTS'=>-1});
+&makefeature('PETRIFIED_FOREST',{'BIOPOLYMERS'=>3,'HYDROCARBONS'=>1,'NUTRIENTS'=>-1,'POLLUTANTS'=>-1});
+&makefeature('PROGENITOR_RUINS',{'BIOPOLYMERS'=>3,'DATACORES'=>1,'NUTRIENTS'=>-1,'POLLUTANTS'=>-1});
 
 @features = ('FOREST','LIGHT_FOREST','JUNGLE','ICE','LUMINOUS_FOREST','FUNGAL_FOREST','CYCAD_FOREST','PETRIFIED_FOREST','PROGENITOR_RUINS');
 
@@ -1267,8 +1267,8 @@ foreach $item (@improvements)
 	print IM "\t<PrereqNatureYields/>\n";
 	print IM "\t<YieldIncreases>\n";
 	print IM "\t\t<YieldIntegerPair>\n";
-	print IM "\t\t\t<YieldType></YieldType>\n";
-	print IM "\t\t\t<iValue>0</iValue>\n";
+	print IM "\t\t\t<YieldType>YIELD_POLLUTANTS</YieldType>\n";
+	print IM "\t\t\t<iValue>1</iValue>\n";
 	print IM "\t\t</YieldIntegerPair>\n";
 	print IM "\t</YieldIncreases>\n";
 	print IM "\t<RiverSideYieldChanges>\n";
@@ -3653,8 +3653,8 @@ sub maketech {
 	print CI "\t<RequiredYields/>\n";
 	if ($allowsyield =~ /\w+/){
 		print CI "\t<AllowsYields>\n";
-		print CI "\t<YieldType>YIELD_".$allowsyield."</YieldType>\n";
-		print CI "\t<iChange>1</iChange>\n";
+		print CI "\t\t<YieldType>YIELD_".$allowsyield."</YieldType>\n";
+		print CI "\t\t<iChange>1</iChange>\n";
 		print CI "\t</AllowsYields>\n";
 		} else {
 		print CI "\t<AllowsYields/>\n";
@@ -3664,7 +3664,7 @@ sub maketech {
 		print CI "\t\t<AllowsBuildingType>\n";
 		print CI "\t\t\t<BuildingType>BUILDINGCLASS_".$allowsbuilding."</BuildingType>\n";
 		print CI "\t\t\t<iChange>1</iChange>\n";
-		print CI "\t\t<AllowsBuildingType>\n";
+		print CI "\t\t</AllowsBuildingType>\n";
 		print CI "\t</AllowsBuildingTypes>\n";
 		} else {
 		print CI "\t<AllowsBuildingTypes/>\n";
@@ -3676,7 +3676,7 @@ sub maketech {
 		print CI "\t\t<AllowsProfession>\n";
 		print CI "\t\t\t<ProfessionType>PROFESSION_".$allowsprof."</ProfessionType>\n";
 		print CI "\t\t\t<iChange>1</iChange>\n";
-		print CI "\t\t<AllowsProfession>\n";
+		print CI "\t\t</AllowsProfession>\n";
 		print CI "\t</AllowsProfessions>\n";
 		} else {
 		print CI "\t<AllowsProfessions/>\n";
@@ -3719,26 +3719,57 @@ sub maketech {
 &maketech('TRADING_TRADEPOST','TRADING_TRADEPOST','MEDIEVAL_TRADE_TECH',0,0,'NONE','','','');
 &maketech('TRADING_GUILDS','TRADING_GUILDS','MEDIEVAL_TRADE_TECH',0,0,'NONE','','','');
 
-&maketech('TEST','TRADING_GUILDS','MEDIEVAL_TRADE_TECH',3,3,'NONE','','','');
-$x=0;
-$y=0;
+&makecat('ARCHAEOLOGY','Archaeology');
+&makecat('GENETICS','Genetics');
+&makecat('XENOBOTANY','Xenobotany');
+&makecat('CHEMISTRY','Chemistry');
+&makecat('PHYSICS','Physics');
+
+#&maketech('TEST','TRADING_GUILDS','MEDIEVAL_TRADE_TECH',3,3,'NONE','','','');
+
+$x=1;
+$y=2;
+
+#tag,description,category,xcoord,ycoord,requiredinvention,allowyield,allowbldg,allowprof
 
 sub maketechlineraw {
 	my $yield = shift;
 	my $desc = shift;
+	my $cat = shift;
+	$x=1;
 	#allow yield
-	&maketech($yield.'1',$desc.' Analysis',$yield,$x,$y,'',$yield,'','');
+	&maketech($yield.'1',$desc.' Analysis',$cat,$x,$y,'',$yield,'','');
 	$x++;
 	#allow prof
-	&maketech($yield.'2',$desc,$yield,$x,$y,'','','',$yield);
+	&maketech($yield.'2','Basic '.$desc.' Extraction',$cat,$x,$y,$yield.'1','','',$yield);
+	$x++;
+	#production boost
+	&maketech($yield.'3','Advanced '.$desc.' Extraction',$cat,$x,$y,$yield.'2','','',$yield);
+	$y++;
 	}
 
 sub maketechlinecity {
 	my $yield = shift;
-	my $category = shift;
-
+	my $desc = shift;
+	my $cat = shift;
+	$x=2;
+	#allow yield
+	&maketech($yield.'1',$desc.' Analysis',$cat,$x,$y,'',$yield,'','');
+	$x++;
+	#allow prof + bldg 1
+	&maketech($yield.'2','Basic '.$desc.' Production',$cat,$x,$y,$yield.'1','',$yield.'1',$yield);
+	$x++;
+	#building 2
+	&maketech($yield.'3','Advanced '.$desc.' Production',$cat,$x,$y,$yield.'2','',$yield.'2','');
+	$x++;
+	#building 3
+	&maketech($yield.'4','Intensive '.$desc.' Production',$cat,$x,$y,$yield.'3','',$yield.'3','');
+	$y++;
 	}
 
+&maketechlineraw('ACTINIDES','Actinide','PHYSICS');
+&maketechlinecity('FUSION_CORES','Fusion Core','PHYSICS');
+	
 #foreach @cityprof (@plotprofs) {
 #	$profdesc = $cityprof[0];
 #	$procyield = $cityprof[1];

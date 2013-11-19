@@ -15,8 +15,8 @@
 	<PrereqNatureYields/>
 	<YieldIncreases>
 		<YieldIntegerPair>
-			<YieldType></YieldType>
-			<iValue>0</iValue>
+			<YieldType>YIELD_POLLUTANTS</YieldType>
+			<iValue>1</iValue>
 		</YieldIntegerPair>
 	</YieldIncreases>
 	<RiverSideYieldChanges>
@@ -74,8 +74,8 @@
 	<PrereqNatureYields/>
 	<YieldIncreases>
 		<YieldIntegerPair>
-			<YieldType></YieldType>
-			<iValue>0</iValue>
+			<YieldType>YIELD_POLLUTANTS</YieldType>
+			<iValue>1</iValue>
 		</YieldIntegerPair>
 	</YieldIncreases>
 	<RiverSideYieldChanges>
@@ -133,8 +133,8 @@
 	<PrereqNatureYields/>
 	<YieldIncreases>
 		<YieldIntegerPair>
-			<YieldType></YieldType>
-			<iValue>0</iValue>
+			<YieldType>YIELD_POLLUTANTS</YieldType>
+			<iValue>1</iValue>
 		</YieldIntegerPair>
 	</YieldIncreases>
 	<RiverSideYieldChanges>
@@ -192,8 +192,8 @@
 	<PrereqNatureYields/>
 	<YieldIncreases>
 		<YieldIntegerPair>
-			<YieldType></YieldType>
-			<iValue>0</iValue>
+			<YieldType>YIELD_POLLUTANTS</YieldType>
+			<iValue>1</iValue>
 		</YieldIntegerPair>
 	</YieldIncreases>
 	<RiverSideYieldChanges>
@@ -251,8 +251,8 @@
 	<PrereqNatureYields/>
 	<YieldIncreases>
 		<YieldIntegerPair>
-			<YieldType></YieldType>
-			<iValue>0</iValue>
+			<YieldType>YIELD_POLLUTANTS</YieldType>
+			<iValue>1</iValue>
 		</YieldIntegerPair>
 	</YieldIncreases>
 	<RiverSideYieldChanges>
@@ -310,8 +310,8 @@
 	<PrereqNatureYields/>
 	<YieldIncreases>
 		<YieldIntegerPair>
-			<YieldType></YieldType>
-			<iValue>0</iValue>
+			<YieldType>YIELD_POLLUTANTS</YieldType>
+			<iValue>1</iValue>
 		</YieldIntegerPair>
 	</YieldIncreases>
 	<RiverSideYieldChanges>
@@ -369,8 +369,8 @@
 	<PrereqNatureYields/>
 	<YieldIncreases>
 		<YieldIntegerPair>
-			<YieldType></YieldType>
-			<iValue>0</iValue>
+			<YieldType>YIELD_POLLUTANTS</YieldType>
+			<iValue>1</iValue>
 		</YieldIntegerPair>
 	</YieldIncreases>
 	<RiverSideYieldChanges>
@@ -428,8 +428,8 @@
 	<PrereqNatureYields/>
 	<YieldIncreases>
 		<YieldIntegerPair>
-			<YieldType></YieldType>
-			<iValue>0</iValue>
+			<YieldType>YIELD_POLLUTANTS</YieldType>
+			<iValue>1</iValue>
 		</YieldIntegerPair>
 	</YieldIncreases>
 	<RiverSideYieldChanges>
@@ -487,8 +487,8 @@
 	<PrereqNatureYields/>
 	<YieldIncreases>
 		<YieldIntegerPair>
-			<YieldType></YieldType>
-			<iValue>0</iValue>
+			<YieldType>YIELD_POLLUTANTS</YieldType>
+			<iValue>1</iValue>
 		</YieldIntegerPair>
 	</YieldIncreases>
 	<RiverSideYieldChanges>
@@ -546,8 +546,8 @@
 	<PrereqNatureYields/>
 	<YieldIncreases>
 		<YieldIntegerPair>
-			<YieldType></YieldType>
-			<iValue>0</iValue>
+			<YieldType>YIELD_POLLUTANTS</YieldType>
+			<iValue>1</iValue>
 		</YieldIntegerPair>
 	</YieldIncreases>
 	<RiverSideYieldChanges>
@@ -605,8 +605,8 @@
 	<PrereqNatureYields/>
 	<YieldIncreases>
 		<YieldIntegerPair>
-			<YieldType></YieldType>
-			<iValue>0</iValue>
+			<YieldType>YIELD_POLLUTANTS</YieldType>
+			<iValue>1</iValue>
 		</YieldIntegerPair>
 	</YieldIncreases>
 	<RiverSideYieldChanges>
@@ -664,8 +664,8 @@
 	<PrereqNatureYields/>
 	<YieldIncreases>
 		<YieldIntegerPair>
-			<YieldType></YieldType>
-			<iValue>0</iValue>
+			<YieldType>YIELD_POLLUTANTS</YieldType>
+			<iValue>1</iValue>
 		</YieldIntegerPair>
 	</YieldIncreases>
 	<RiverSideYieldChanges>
@@ -723,8 +723,8 @@
 	<PrereqNatureYields/>
 	<YieldIncreases>
 		<YieldIntegerPair>
-			<YieldType></YieldType>
-			<iValue>0</iValue>
+			<YieldType>YIELD_POLLUTANTS</YieldType>
+			<iValue>1</iValue>
 		</YieldIntegerPair>
 	</YieldIncreases>
 	<RiverSideYieldChanges>

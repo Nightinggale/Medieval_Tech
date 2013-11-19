@@ -969,8 +969,10 @@
 	<RequiredUnitType/>
 	<RequiredYields/>
 	<AllowsYields>
-		<YieldType>YIELD_ACTINIDES</YieldType>
-		<iChange>1</iChange>
+		<AllowsYield>
+			<YieldType>YIELD_ACTINIDES</YieldType>
+			<iChange>1</iChange>
+		</AllowsYield>
 	</AllowsYields>
 	<AllowsBuildingTypes/>
 	<AllowsUnitClasses/>
@@ -1180,8 +1182,10 @@
 	<RequiredUnitType/>
 	<RequiredYields/>
 	<AllowsYields>
-		<YieldType>YIELD_FUSION_CORES</YieldType>
-		<iChange>1</iChange>
+		<AllowsYield>
+			<YieldType>YIELD_FUSION_CORES</YieldType>
+			<iChange>1</iChange>
+		</AllowsYield>
 	</AllowsYields>
 	<AllowsBuildingTypes/>
 	<AllowsUnitClasses/>

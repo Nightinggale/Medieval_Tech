@@ -3653,8 +3653,10 @@ sub maketech {
 	print CI "\t<RequiredYields/>\n";
 	if ($allowsyield =~ /\w+/){
 		print CI "\t<AllowsYields>\n";
-		print CI "\t\t<YieldType>YIELD_".$allowsyield."</YieldType>\n";
-		print CI "\t\t<iChange>1</iChange>\n";
+		print CI "\t\t<AllowsYield>\n";
+		print CI "\t\t\t<YieldType>YIELD_".$allowsyield."</YieldType>\n";
+		print CI "\t\t\t<iChange>1</iChange>\n";
+		print CI "\t\t</AllowsYield>\n";
 		print CI "\t</AllowsYields>\n";
 		} else {
 		print CI "\t<AllowsYields/>\n";

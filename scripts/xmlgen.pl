@@ -3532,8 +3532,8 @@ sub makecat {
 	print CI "<CivicInfo>\n";
 	print CI "\t<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>\n";
 	print CI "\t<Type>".$tag."</Type>\n";
-	print CI "\t<Description>TXT_KEY_TECH_CATEGORY_".$tag."</Description>\n";
-	&maketext("TXT_KEY_TECH_CATEGORY_".$tag,$desc);
+	print CI "\t<Description>TXT_KEY_".$tag."</Description>\n";
+	&maketext("TXT_KEY_".$tag,$desc);
 	print CI "\t<Civilopedia></Civilopedia>\n";
 	print CI "\t<Strategy></Strategy>\n";
 	print CI "\t<Button>Art/Buttons/Techs/Categories/".$tag.".dds</Button>\n";
@@ -3609,16 +3609,19 @@ sub maketech {
 	my $allowsyield = shift;
 	my $allowsbuilding = shift;
 	my $allowsprof = shift;
+	if ($req =~ /w+/) {
+		$req = 'TECH_'.$req;
+		}
 	print CI "<CivicInfo>\n";
 	print CI "\t<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>\n";
 	print CI "\t<Type>".$tag."</Type>\n";
-	print CI "\t<Description>TXT_KEY_TECH_".$tag."</Description>\n";
+	print CI "\t<Description>TXT_KEY_".$tag."</Description>\n";
 	&maketext("TXT_KEY_TECH_".$tag,$desc);
-	print CI "\t<Civilopedia>TXT_KEY_TECH_".$tag."_PEDIA</Civilopedia>\n";
+	print CI "\t<Civilopedia>TXT_KEY_".$tag."_PEDIA</Civilopedia>\n";
 	my $pedia = 'The discovery of [COLOR_HIGHLIGHT_TEXT]'.$desc."[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.";
 	&maketext("TXT_KEY_TECH_".$tag."_PEDIA",$pedia);
-	print CI "\t<Strategy>TXT_KEY_TECH_".$tag."_STRATEGY</Strategy>\n";
-	&maketext("TXT_KEY_TECH_".$tag."_STRATEGY",'Research [COLOR_HIGHLIGHT_TEXT]'.$desc."[COLOR_REVERT] to continue our advancement.");
+	print CI "\t<Strategy>TXT_KEY_".$tag."_STRATEGY</Strategy>\n";
+	&maketext("TXT_KEY_".$tag."_STRATEGY",'Research [COLOR_HIGHLIGHT_TEXT]'.$desc."[COLOR_REVERT] to continue our advancement.");
 	print CI "\t<Button>Art/Buttons/Techs/".$tag.".dds</Button>\n";
 	print CI "\t<iAIWeight>0</iAIWeight>\n";
 	print CI "\t<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>\n";
@@ -3650,7 +3653,12 @@ sub maketech {
 	print CI "\t<RequiredInvention2/>\n";
 	print CI "\t<RequiredInventionOr/>\n";
 	print CI "\t<RequiredUnitType/>\n";
-	print CI "\t<RequiredYields/>\n";
+	print CI "\t<RequiredYields>\n";
+	print CI "\t\t<RequiredYield>\n";
+	print CI "\t\t\t<RequiredYieldType>YIELD_MACHINE_TOOLS</RequiredYieldType>\n";
+	print CI "\t\t\t<iYieldCost>40</iYieldCost>\n";
+	print CI "\t\t</RequiredYield>\n";
+	print CI "\t</RequiredYields>\n";
 	if ($allowsyield =~ /\w+/){
 		print CI "\t<AllowsYields>\n";
 		print CI "\t\t<AllowsYield>\n";
@@ -3712,6 +3720,13 @@ sub maketech {
 &makecat('MEDIEVAL_TRADE_TECH');
 &makecat('NATIVE_TECH');
 
+#2071 categories
+&makecat('TECH_CATEGORY_ARCHAEOLOGY','Archaeology');
+&makecat('TECH_CATEGORY_GENETICS','Genetics');
+&makecat('TECH_CATEGORY_XENOBOTANY','Xenobotany');
+&makecat('TECH_CATEGORY_CHEMISTRY','Chemistry');
+&makecat('TECH_CATEGORY_PHYSICS','Physics');
+
 #tag,description,category,xcoord,ycoord,requiredinvention,allowyield,allowbldg,allowprof
 #M:C hardcoded techs
 &maketech('CENSURE_INTERDICT','Interdict','MEDIEVAL_CENSURE',0,0,'NONE','','','');
@@ -3720,12 +3735,6 @@ sub maketech {
 &maketech('TRADING_TRADE_ROUTE_2','TRADING_TRADE_ROUTE_2','MEDIEVAL_TRADE_TECH',0,0,'NONE','','','');
 &maketech('TRADING_TRADEPOST','TRADING_TRADEPOST','MEDIEVAL_TRADE_TECH',0,0,'NONE','','','');
 &maketech('TRADING_GUILDS','TRADING_GUILDS','MEDIEVAL_TRADE_TECH',0,0,'NONE','','','');
-
-&makecat('ARCHAEOLOGY','Archaeology');
-&makecat('GENETICS','Genetics');
-&makecat('XENOBOTANY','Xenobotany');
-&makecat('CHEMISTRY','Chemistry');
-&makecat('PHYSICS','Physics');
 
 #&maketech('TEST','TRADING_GUILDS','MEDIEVAL_TRADE_TECH',3,3,'NONE','','','');
 
@@ -3740,13 +3749,13 @@ sub maketechlineraw {
 	my $cat = shift;
 	$x=1;
 	#allow yield
-	&maketech($yield.'1',$desc.' Analysis',$cat,$x,$y,'',$yield,'','');
+	&maketech('TECH_'.$yield.'1',$desc.' Analysis',$cat,$x,$y,'',$yield,'','');
 	$x++;
 	#allow prof
-	&maketech($yield.'2','Basic '.$desc.' Extraction',$cat,$x,$y,$yield.'1','','',$yield);
+	&maketech('TECH_'.$yield.'2','Basic '.$desc.' Extraction',$cat,$x,$y,'TECH_'.$yield.'1','','',$yield);
 	$x++;
 	#production boost
-	&maketech($yield.'3','Advanced '.$desc.' Extraction',$cat,$x,$y,$yield.'2','','',$yield);
+	&maketech('TECH_'.$yield.'3','Advanced '.$desc.' Extraction',$cat,$x,$y,'TECH_'.$yield.'2','','','');
 	$y++;
 	}
 
@@ -3756,21 +3765,23 @@ sub maketechlinecity {
 	my $cat = shift;
 	$x=2;
 	#allow yield
-	&maketech($yield.'1',$desc.' Analysis',$cat,$x,$y,'',$yield,'','');
+	&maketech('TECH_'.$yield.'1',$desc.' Analysis',$cat,$x,$y,'',$yield,'','');
 	$x++;
 	#allow prof + bldg 1
-	&maketech($yield.'2','Basic '.$desc.' Production',$cat,$x,$y,$yield.'1','',$yield.'1',$yield);
+	&maketech('TECH_'.$yield.'2','Basic '.$desc.' Production',$cat,$x,$y,'TECH_'.$yield.'1','',$yield.'1',$yield);
 	$x++;
 	#building 2
-	&maketech($yield.'3','Advanced '.$desc.' Production',$cat,$x,$y,$yield.'2','',$yield.'2','');
+	&maketech('TECH_'.$yield.'3','Advanced '.$desc.' Production',$cat,$x,$y,'TECH_'.$yield.'2','',$yield.'2','');
 	$x++;
 	#building 3
-	&maketech($yield.'4','Intensive '.$desc.' Production',$cat,$x,$y,$yield.'3','',$yield.'3','');
+	&maketech('TECH_'.$yield.'4','Intensive '.$desc.' Production',$cat,$x,$y,'TECH_'.$yield.'3','',$yield.'3','');
 	$y++;
 	}
 
-&maketechlineraw('ACTINIDES','Actinide','PHYSICS');
-&maketechlinecity('FUSION_CORES','Fusion Core','PHYSICS');
+&maketechlineraw('ACTINIDES','Actinide','TECH_CATEGORY_PHYSICS');
+&maketechlinecity('FUSION_CORES','Fusion Core','TECH_CATEGORY_PHYSICS');
+&maketechlineraw('RARE_EARTHS','Rare Earth','TECH_CATEGORY_PHYSICS');
+&maketechlinecity('SEMICONDUCTORS','Semiconductor','TECH_CATEGORY_PHYSICS');
 	
 #foreach @cityprof (@plotprofs) {
 #	$profdesc = $cityprof[0];

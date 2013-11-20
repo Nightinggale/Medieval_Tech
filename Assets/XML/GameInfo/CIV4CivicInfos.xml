@@ -9,7 +9,7 @@
 <CivicInfo>
 	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
 	<Type>MEDIEVAL_CENSURE</Type>
-	<Description>TXT_KEY_TECH_CATEGORY_MEDIEVAL_CENSURE</Description>
+	<Description>TXT_KEY_MEDIEVAL_CENSURE</Description>
 	<Civilopedia></Civilopedia>
 	<Strategy></Strategy>
 	<Button>Art/Buttons/Techs/Categories/MEDIEVAL_CENSURE.dds</Button>
@@ -75,7 +75,7 @@
 <CivicInfo>
 	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
 	<Type>MEDIEVAL_TRADE_TECH</Type>
-	<Description>TXT_KEY_TECH_CATEGORY_MEDIEVAL_TRADE_TECH</Description>
+	<Description>TXT_KEY_MEDIEVAL_TRADE_TECH</Description>
 	<Civilopedia></Civilopedia>
 	<Strategy></Strategy>
 	<Button>Art/Buttons/Techs/Categories/MEDIEVAL_TRADE_TECH.dds</Button>
@@ -141,7 +141,7 @@
 <CivicInfo>
 	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
 	<Type>NATIVE_TECH</Type>
-	<Description>TXT_KEY_TECH_CATEGORY_NATIVE_TECH</Description>
+	<Description>TXT_KEY_NATIVE_TECH</Description>
 	<Civilopedia></Civilopedia>
 	<Strategy></Strategy>
 	<Button>Art/Buttons/Techs/Categories/NATIVE_TECH.dds</Button>
@@ -206,10 +206,340 @@
 </CivicInfo>
 <CivicInfo>
 	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+	<Type>TECH_CATEGORY_ARCHAEOLOGY</Type>
+	<Description>TXT_KEY_TECH_CATEGORY_ARCHAEOLOGY</Description>
+	<Civilopedia></Civilopedia>
+	<Strategy></Strategy>
+	<Button>Art/Buttons/Techs/Categories/TECH_CATEGORY_ARCHAEOLOGY.dds</Button>
+	<iAIWeight>0</iAIWeight>
+	<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+	<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+	<iFreeExperience>0</iFreeExperience>
+	<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+	<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+	<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+	<iExpInBorderModifier>0</iExpInBorderModifier>
+	<iNativeAttitudeChange>0</iNativeAttitudeChange>
+	<iNativeCombatModifier>0</iNativeCombatModifier>
+	<iFatherPointModifier>0</iFatherPointModifier>
+	<bDominateNativeBorders>0</bDominateNativeBorders>
+	<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+	<YieldModifiers/>
+	<CapitalYieldModifiers/>
+	<Hurrys/>
+	<SpecialBuildingNotRequireds/>
+	<ImprovementYieldChanges/>
+	<FreeUnitClasses/>
+	<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+	<ProfessionCombatChanges/>
+	<ImmigrationConversion>NONE</ImmigrationConversion>
+	<InventionCategory/>
+	<iX_Location>0</iX_Location>
+	<iY_Location>0</iY_Location>
+	<RequiredInvention/>
+	<RequiredInvention2/>
+	<RequiredInventionOr/>
+	<RequiredUnitType/>
+	<RequiredYields/>
+	<AllowsYields/>
+	<AllowsBuildingTypes/>
+	<AllowsUnitClasses/>
+	<AllowsPromotions/>
+	<AllowsProfessions/>
+	<AllowsTrait/>
+	<AllowsBuildTypes/>
+	<AllowsBuildTypesTerrain/>
+	<ConvertsUnitsFrom/>
+	<ConvertsUnitsTo/>
+	<NewDefaultUnitClass/>
+	<DisallowsTech/>
+	<RouteMovementMod/>
+	<bStartConstitution>0</bStartConstitution>
+	<bAllowsMapTrade>0</bAllowsMapTrade>
+	<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+	<bisNoneTradeable>0</bisNoneTradeable>
+	<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+	<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+	<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+	<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+	<iProlificInventorRateChange>0</iProlificInventorRateChange>
+	<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+	<iGoldBonus>0</iGoldBonus>
+	<iFreeTechs>0</iFreeTechs>
+	<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+	<IndustrializationVictory/>
+</CivicInfo>
+<CivicInfo>
+	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+	<Type>TECH_CATEGORY_GENETICS</Type>
+	<Description>TXT_KEY_TECH_CATEGORY_GENETICS</Description>
+	<Civilopedia></Civilopedia>
+	<Strategy></Strategy>
+	<Button>Art/Buttons/Techs/Categories/TECH_CATEGORY_GENETICS.dds</Button>
+	<iAIWeight>0</iAIWeight>
+	<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+	<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+	<iFreeExperience>0</iFreeExperience>
+	<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+	<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+	<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+	<iExpInBorderModifier>0</iExpInBorderModifier>
+	<iNativeAttitudeChange>0</iNativeAttitudeChange>
+	<iNativeCombatModifier>0</iNativeCombatModifier>
+	<iFatherPointModifier>0</iFatherPointModifier>
+	<bDominateNativeBorders>0</bDominateNativeBorders>
+	<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+	<YieldModifiers/>
+	<CapitalYieldModifiers/>
+	<Hurrys/>
+	<SpecialBuildingNotRequireds/>
+	<ImprovementYieldChanges/>
+	<FreeUnitClasses/>
+	<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+	<ProfessionCombatChanges/>
+	<ImmigrationConversion>NONE</ImmigrationConversion>
+	<InventionCategory/>
+	<iX_Location>0</iX_Location>
+	<iY_Location>0</iY_Location>
+	<RequiredInvention/>
+	<RequiredInvention2/>
+	<RequiredInventionOr/>
+	<RequiredUnitType/>
+	<RequiredYields/>
+	<AllowsYields/>
+	<AllowsBuildingTypes/>
+	<AllowsUnitClasses/>
+	<AllowsPromotions/>
+	<AllowsProfessions/>
+	<AllowsTrait/>
+	<AllowsBuildTypes/>
+	<AllowsBuildTypesTerrain/>
+	<ConvertsUnitsFrom/>
+	<ConvertsUnitsTo/>
+	<NewDefaultUnitClass/>
+	<DisallowsTech/>
+	<RouteMovementMod/>
+	<bStartConstitution>0</bStartConstitution>
+	<bAllowsMapTrade>0</bAllowsMapTrade>
+	<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+	<bisNoneTradeable>0</bisNoneTradeable>
+	<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+	<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+	<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+	<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+	<iProlificInventorRateChange>0</iProlificInventorRateChange>
+	<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+	<iGoldBonus>0</iGoldBonus>
+	<iFreeTechs>0</iFreeTechs>
+	<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+	<IndustrializationVictory/>
+</CivicInfo>
+<CivicInfo>
+	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+	<Type>TECH_CATEGORY_XENOBOTANY</Type>
+	<Description>TXT_KEY_TECH_CATEGORY_XENOBOTANY</Description>
+	<Civilopedia></Civilopedia>
+	<Strategy></Strategy>
+	<Button>Art/Buttons/Techs/Categories/TECH_CATEGORY_XENOBOTANY.dds</Button>
+	<iAIWeight>0</iAIWeight>
+	<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+	<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+	<iFreeExperience>0</iFreeExperience>
+	<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+	<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+	<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+	<iExpInBorderModifier>0</iExpInBorderModifier>
+	<iNativeAttitudeChange>0</iNativeAttitudeChange>
+	<iNativeCombatModifier>0</iNativeCombatModifier>
+	<iFatherPointModifier>0</iFatherPointModifier>
+	<bDominateNativeBorders>0</bDominateNativeBorders>
+	<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+	<YieldModifiers/>
+	<CapitalYieldModifiers/>
+	<Hurrys/>
+	<SpecialBuildingNotRequireds/>
+	<ImprovementYieldChanges/>
+	<FreeUnitClasses/>
+	<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+	<ProfessionCombatChanges/>
+	<ImmigrationConversion>NONE</ImmigrationConversion>
+	<InventionCategory/>
+	<iX_Location>0</iX_Location>
+	<iY_Location>0</iY_Location>
+	<RequiredInvention/>
+	<RequiredInvention2/>
+	<RequiredInventionOr/>
+	<RequiredUnitType/>
+	<RequiredYields/>
+	<AllowsYields/>
+	<AllowsBuildingTypes/>
+	<AllowsUnitClasses/>
+	<AllowsPromotions/>
+	<AllowsProfessions/>
+	<AllowsTrait/>
+	<AllowsBuildTypes/>
+	<AllowsBuildTypesTerrain/>
+	<ConvertsUnitsFrom/>
+	<ConvertsUnitsTo/>
+	<NewDefaultUnitClass/>
+	<DisallowsTech/>
+	<RouteMovementMod/>
+	<bStartConstitution>0</bStartConstitution>
+	<bAllowsMapTrade>0</bAllowsMapTrade>
+	<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+	<bisNoneTradeable>0</bisNoneTradeable>
+	<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+	<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+	<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+	<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+	<iProlificInventorRateChange>0</iProlificInventorRateChange>
+	<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+	<iGoldBonus>0</iGoldBonus>
+	<iFreeTechs>0</iFreeTechs>
+	<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+	<IndustrializationVictory/>
+</CivicInfo>
+<CivicInfo>
+	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+	<Type>TECH_CATEGORY_CHEMISTRY</Type>
+	<Description>TXT_KEY_TECH_CATEGORY_CHEMISTRY</Description>
+	<Civilopedia></Civilopedia>
+	<Strategy></Strategy>
+	<Button>Art/Buttons/Techs/Categories/TECH_CATEGORY_CHEMISTRY.dds</Button>
+	<iAIWeight>0</iAIWeight>
+	<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+	<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+	<iFreeExperience>0</iFreeExperience>
+	<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+	<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+	<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+	<iExpInBorderModifier>0</iExpInBorderModifier>
+	<iNativeAttitudeChange>0</iNativeAttitudeChange>
+	<iNativeCombatModifier>0</iNativeCombatModifier>
+	<iFatherPointModifier>0</iFatherPointModifier>
+	<bDominateNativeBorders>0</bDominateNativeBorders>
+	<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+	<YieldModifiers/>
+	<CapitalYieldModifiers/>
+	<Hurrys/>
+	<SpecialBuildingNotRequireds/>
+	<ImprovementYieldChanges/>
+	<FreeUnitClasses/>
+	<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+	<ProfessionCombatChanges/>
+	<ImmigrationConversion>NONE</ImmigrationConversion>
+	<InventionCategory/>
+	<iX_Location>0</iX_Location>
+	<iY_Location>0</iY_Location>
+	<RequiredInvention/>
+	<RequiredInvention2/>
+	<RequiredInventionOr/>
+	<RequiredUnitType/>
+	<RequiredYields/>
+	<AllowsYields/>
+	<AllowsBuildingTypes/>
+	<AllowsUnitClasses/>
+	<AllowsPromotions/>
+	<AllowsProfessions/>
+	<AllowsTrait/>
+	<AllowsBuildTypes/>
+	<AllowsBuildTypesTerrain/>
+	<ConvertsUnitsFrom/>
+	<ConvertsUnitsTo/>
+	<NewDefaultUnitClass/>
+	<DisallowsTech/>
+	<RouteMovementMod/>
+	<bStartConstitution>0</bStartConstitution>
+	<bAllowsMapTrade>0</bAllowsMapTrade>
+	<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+	<bisNoneTradeable>0</bisNoneTradeable>
+	<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+	<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+	<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+	<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+	<iProlificInventorRateChange>0</iProlificInventorRateChange>
+	<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+	<iGoldBonus>0</iGoldBonus>
+	<iFreeTechs>0</iFreeTechs>
+	<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+	<IndustrializationVictory/>
+</CivicInfo>
+<CivicInfo>
+	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+	<Type>TECH_CATEGORY_PHYSICS</Type>
+	<Description>TXT_KEY_TECH_CATEGORY_PHYSICS</Description>
+	<Civilopedia></Civilopedia>
+	<Strategy></Strategy>
+	<Button>Art/Buttons/Techs/Categories/TECH_CATEGORY_PHYSICS.dds</Button>
+	<iAIWeight>0</iAIWeight>
+	<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+	<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+	<iFreeExperience>0</iFreeExperience>
+	<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+	<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+	<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+	<iExpInBorderModifier>0</iExpInBorderModifier>
+	<iNativeAttitudeChange>0</iNativeAttitudeChange>
+	<iNativeCombatModifier>0</iNativeCombatModifier>
+	<iFatherPointModifier>0</iFatherPointModifier>
+	<bDominateNativeBorders>0</bDominateNativeBorders>
+	<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+	<YieldModifiers/>
+	<CapitalYieldModifiers/>
+	<Hurrys/>
+	<SpecialBuildingNotRequireds/>
+	<ImprovementYieldChanges/>
+	<FreeUnitClasses/>
+	<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+	<ProfessionCombatChanges/>
+	<ImmigrationConversion>NONE</ImmigrationConversion>
+	<InventionCategory/>
+	<iX_Location>0</iX_Location>
+	<iY_Location>0</iY_Location>
+	<RequiredInvention/>
+	<RequiredInvention2/>
+	<RequiredInventionOr/>
+	<RequiredUnitType/>
+	<RequiredYields/>
+	<AllowsYields/>
+	<AllowsBuildingTypes/>
+	<AllowsUnitClasses/>
+	<AllowsPromotions/>
+	<AllowsProfessions/>
+	<AllowsTrait/>
+	<AllowsBuildTypes/>
+	<AllowsBuildTypesTerrain/>
+	<ConvertsUnitsFrom/>
+	<ConvertsUnitsTo/>
+	<NewDefaultUnitClass/>
+	<DisallowsTech/>
+	<RouteMovementMod/>
+	<bStartConstitution>0</bStartConstitution>
+	<bAllowsMapTrade>0</bAllowsMapTrade>
+	<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+	<bisNoneTradeable>0</bisNoneTradeable>
+	<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+	<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+	<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+	<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+	<iProlificInventorRateChange>0</iProlificInventorRateChange>
+	<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+	<iGoldBonus>0</iGoldBonus>
+	<iFreeTechs>0</iFreeTechs>
+	<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+	<IndustrializationVictory/>
+</CivicInfo>
+<CivicInfo>
+	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
 	<Type>CENSURE_INTERDICT</Type>
-	<Description>TXT_KEY_TECH_CENSURE_INTERDICT</Description>
-	<Civilopedia>TXT_KEY_TECH_CENSURE_INTERDICT_PEDIA</Civilopedia>
-	<Strategy>TXT_KEY_TECH_CENSURE_INTERDICT_STRATEGY</Strategy>
+	<Description>TXT_KEY_CENSURE_INTERDICT</Description>
+	<Civilopedia>TXT_KEY_CENSURE_INTERDICT_PEDIA</Civilopedia>
+	<Strategy>TXT_KEY_CENSURE_INTERDICT_STRATEGY</Strategy>
 	<Button>Art/Buttons/Techs/CENSURE_INTERDICT.dds</Button>
 	<iAIWeight>0</iAIWeight>
 	<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -241,7 +571,12 @@
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
 	<RequiredUnitType/>
-	<RequiredYields/>
+	<RequiredYields>
+		<RequiredYield>
+			<RequiredYieldType>YIELD_MACHINE_TOOLS</RequiredYieldType>
+			<iYieldCost>40</iYieldCost>
+		</RequiredYield>
+	</RequiredYields>
 	<AllowsYields/>
 	<AllowsBuildingTypes/>
 	<AllowsUnitClasses/>
@@ -273,9 +608,9 @@
 <CivicInfo>
 	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
 	<Type>CENSURE_ANATHEMA</Type>
-	<Description>TXT_KEY_TECH_CENSURE_ANATHEMA</Description>
-	<Civilopedia>TXT_KEY_TECH_CENSURE_ANATHEMA_PEDIA</Civilopedia>
-	<Strategy>TXT_KEY_TECH_CENSURE_ANATHEMA_STRATEGY</Strategy>
+	<Description>TXT_KEY_CENSURE_ANATHEMA</Description>
+	<Civilopedia>TXT_KEY_CENSURE_ANATHEMA_PEDIA</Civilopedia>
+	<Strategy>TXT_KEY_CENSURE_ANATHEMA_STRATEGY</Strategy>
 	<Button>Art/Buttons/Techs/CENSURE_ANATHEMA.dds</Button>
 	<iAIWeight>0</iAIWeight>
 	<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -307,7 +642,12 @@
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
 	<RequiredUnitType/>
-	<RequiredYields/>
+	<RequiredYields>
+		<RequiredYield>
+			<RequiredYieldType>YIELD_MACHINE_TOOLS</RequiredYieldType>
+			<iYieldCost>40</iYieldCost>
+		</RequiredYield>
+	</RequiredYields>
 	<AllowsYields/>
 	<AllowsBuildingTypes/>
 	<AllowsUnitClasses/>
@@ -339,9 +679,9 @@
 <CivicInfo>
 	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
 	<Type>CENSURE_EXCOMMUNICATION</Type>
-	<Description>TXT_KEY_TECH_CENSURE_EXCOMMUNICATION</Description>
-	<Civilopedia>TXT_KEY_TECH_CENSURE_EXCOMMUNICATION_PEDIA</Civilopedia>
-	<Strategy>TXT_KEY_TECH_CENSURE_EXCOMMUNICATION_STRATEGY</Strategy>
+	<Description>TXT_KEY_CENSURE_EXCOMMUNICATION</Description>
+	<Civilopedia>TXT_KEY_CENSURE_EXCOMMUNICATION_PEDIA</Civilopedia>
+	<Strategy>TXT_KEY_CENSURE_EXCOMMUNICATION_STRATEGY</Strategy>
 	<Button>Art/Buttons/Techs/CENSURE_EXCOMMUNICATION.dds</Button>
 	<iAIWeight>0</iAIWeight>
 	<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -373,7 +713,12 @@
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
 	<RequiredUnitType/>
-	<RequiredYields/>
+	<RequiredYields>
+		<RequiredYield>
+			<RequiredYieldType>YIELD_MACHINE_TOOLS</RequiredYieldType>
+			<iYieldCost>40</iYieldCost>
+		</RequiredYield>
+	</RequiredYields>
 	<AllowsYields/>
 	<AllowsBuildingTypes/>
 	<AllowsUnitClasses/>
@@ -405,9 +750,9 @@
 <CivicInfo>
 	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
 	<Type>TRADING_TRADE_ROUTE_2</Type>
-	<Description>TXT_KEY_TECH_TRADING_TRADE_ROUTE_2</Description>
-	<Civilopedia>TXT_KEY_TECH_TRADING_TRADE_ROUTE_2_PEDIA</Civilopedia>
-	<Strategy>TXT_KEY_TECH_TRADING_TRADE_ROUTE_2_STRATEGY</Strategy>
+	<Description>TXT_KEY_TRADING_TRADE_ROUTE_2</Description>
+	<Civilopedia>TXT_KEY_TRADING_TRADE_ROUTE_2_PEDIA</Civilopedia>
+	<Strategy>TXT_KEY_TRADING_TRADE_ROUTE_2_STRATEGY</Strategy>
 	<Button>Art/Buttons/Techs/TRADING_TRADE_ROUTE_2.dds</Button>
 	<iAIWeight>0</iAIWeight>
 	<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -439,7 +784,12 @@
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
 	<RequiredUnitType/>
-	<RequiredYields/>
+	<RequiredYields>
+		<RequiredYield>
+			<RequiredYieldType>YIELD_MACHINE_TOOLS</RequiredYieldType>
+			<iYieldCost>40</iYieldCost>
+		</RequiredYield>
+	</RequiredYields>
 	<AllowsYields/>
 	<AllowsBuildingTypes/>
 	<AllowsUnitClasses/>
@@ -471,9 +821,9 @@
 <CivicInfo>
 	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
 	<Type>TRADING_TRADEPOST</Type>
-	<Description>TXT_KEY_TECH_TRADING_TRADEPOST</Description>
-	<Civilopedia>TXT_KEY_TECH_TRADING_TRADEPOST_PEDIA</Civilopedia>
-	<Strategy>TXT_KEY_TECH_TRADING_TRADEPOST_STRATEGY</Strategy>
+	<Description>TXT_KEY_TRADING_TRADEPOST</Description>
+	<Civilopedia>TXT_KEY_TRADING_TRADEPOST_PEDIA</Civilopedia>
+	<Strategy>TXT_KEY_TRADING_TRADEPOST_STRATEGY</Strategy>
 	<Button>Art/Buttons/Techs/TRADING_TRADEPOST.dds</Button>
 	<iAIWeight>0</iAIWeight>
 	<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -505,7 +855,12 @@
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
 	<RequiredUnitType/>
-	<RequiredYields/>
+	<RequiredYields>
+		<RequiredYield>
+			<RequiredYieldType>YIELD_MACHINE_TOOLS</RequiredYieldType>
+			<iYieldCost>40</iYieldCost>
+		</RequiredYield>
+	</RequiredYields>
 	<AllowsYields/>
 	<AllowsBuildingTypes/>
 	<AllowsUnitClasses/>
@@ -537,9 +892,9 @@
 <CivicInfo>
 	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
 	<Type>TRADING_GUILDS</Type>
-	<Description>TXT_KEY_TECH_TRADING_GUILDS</Description>
-	<Civilopedia>TXT_KEY_TECH_TRADING_GUILDS_PEDIA</Civilopedia>
-	<Strategy>TXT_KEY_TECH_TRADING_GUILDS_STRATEGY</Strategy>
+	<Description>TXT_KEY_TRADING_GUILDS</Description>
+	<Civilopedia>TXT_KEY_TRADING_GUILDS_PEDIA</Civilopedia>
+	<Strategy>TXT_KEY_TRADING_GUILDS_STRATEGY</Strategy>
 	<Button>Art/Buttons/Techs/TRADING_GUILDS.dds</Button>
 	<iAIWeight>0</iAIWeight>
 	<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -571,7 +926,12 @@
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
 	<RequiredUnitType/>
-	<RequiredYields/>
+	<RequiredYields>
+		<RequiredYield>
+			<RequiredYieldType>YIELD_MACHINE_TOOLS</RequiredYieldType>
+			<iYieldCost>40</iYieldCost>
+		</RequiredYield>
+	</RequiredYields>
 	<AllowsYields/>
 	<AllowsBuildingTypes/>
 	<AllowsUnitClasses/>
@@ -602,341 +962,11 @@
 </CivicInfo>
 <CivicInfo>
 	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
-	<Type>ARCHAEOLOGY</Type>
-	<Description>TXT_KEY_TECH_CATEGORY_ARCHAEOLOGY</Description>
-	<Civilopedia></Civilopedia>
-	<Strategy></Strategy>
-	<Button>Art/Buttons/Techs/Categories/ARCHAEOLOGY.dds</Button>
-	<iAIWeight>0</iAIWeight>
-	<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
-	<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
-	<iFreeExperience>0</iFreeExperience>
-	<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
-	<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
-	<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
-	<iExpInBorderModifier>0</iExpInBorderModifier>
-	<iNativeAttitudeChange>0</iNativeAttitudeChange>
-	<iNativeCombatModifier>0</iNativeCombatModifier>
-	<iFatherPointModifier>0</iFatherPointModifier>
-	<bDominateNativeBorders>0</bDominateNativeBorders>
-	<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
-	<YieldModifiers/>
-	<CapitalYieldModifiers/>
-	<Hurrys/>
-	<SpecialBuildingNotRequireds/>
-	<ImprovementYieldChanges/>
-	<FreeUnitClasses/>
-	<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
-	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
-	<ProfessionCombatChanges/>
-	<ImmigrationConversion>NONE</ImmigrationConversion>
-	<InventionCategory/>
-	<iX_Location>0</iX_Location>
-	<iY_Location>0</iY_Location>
-	<RequiredInvention/>
-	<RequiredInvention2/>
-	<RequiredInventionOr/>
-	<RequiredUnitType/>
-	<RequiredYields/>
-	<AllowsYields/>
-	<AllowsBuildingTypes/>
-	<AllowsUnitClasses/>
-	<AllowsPromotions/>
-	<AllowsProfessions/>
-	<AllowsTrait/>
-	<AllowsBuildTypes/>
-	<AllowsBuildTypesTerrain/>
-	<ConvertsUnitsFrom/>
-	<ConvertsUnitsTo/>
-	<NewDefaultUnitClass/>
-	<DisallowsTech/>
-	<RouteMovementMod/>
-	<bStartConstitution>0</bStartConstitution>
-	<bAllowsMapTrade>0</bAllowsMapTrade>
-	<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
-	<bisNoneTradeable>0</bisNoneTradeable>
-	<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
-	<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
-	<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
-	<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
-	<iProlificInventorRateChange>0</iProlificInventorRateChange>
-	<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
-	<iGoldBonus>0</iGoldBonus>
-	<iFreeTechs>0</iFreeTechs>
-	<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
-	<IndustrializationVictory/>
-</CivicInfo>
-<CivicInfo>
-	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
-	<Type>GENETICS</Type>
-	<Description>TXT_KEY_TECH_CATEGORY_GENETICS</Description>
-	<Civilopedia></Civilopedia>
-	<Strategy></Strategy>
-	<Button>Art/Buttons/Techs/Categories/GENETICS.dds</Button>
-	<iAIWeight>0</iAIWeight>
-	<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
-	<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
-	<iFreeExperience>0</iFreeExperience>
-	<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
-	<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
-	<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
-	<iExpInBorderModifier>0</iExpInBorderModifier>
-	<iNativeAttitudeChange>0</iNativeAttitudeChange>
-	<iNativeCombatModifier>0</iNativeCombatModifier>
-	<iFatherPointModifier>0</iFatherPointModifier>
-	<bDominateNativeBorders>0</bDominateNativeBorders>
-	<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
-	<YieldModifiers/>
-	<CapitalYieldModifiers/>
-	<Hurrys/>
-	<SpecialBuildingNotRequireds/>
-	<ImprovementYieldChanges/>
-	<FreeUnitClasses/>
-	<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
-	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
-	<ProfessionCombatChanges/>
-	<ImmigrationConversion>NONE</ImmigrationConversion>
-	<InventionCategory/>
-	<iX_Location>0</iX_Location>
-	<iY_Location>0</iY_Location>
-	<RequiredInvention/>
-	<RequiredInvention2/>
-	<RequiredInventionOr/>
-	<RequiredUnitType/>
-	<RequiredYields/>
-	<AllowsYields/>
-	<AllowsBuildingTypes/>
-	<AllowsUnitClasses/>
-	<AllowsPromotions/>
-	<AllowsProfessions/>
-	<AllowsTrait/>
-	<AllowsBuildTypes/>
-	<AllowsBuildTypesTerrain/>
-	<ConvertsUnitsFrom/>
-	<ConvertsUnitsTo/>
-	<NewDefaultUnitClass/>
-	<DisallowsTech/>
-	<RouteMovementMod/>
-	<bStartConstitution>0</bStartConstitution>
-	<bAllowsMapTrade>0</bAllowsMapTrade>
-	<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
-	<bisNoneTradeable>0</bisNoneTradeable>
-	<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
-	<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
-	<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
-	<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
-	<iProlificInventorRateChange>0</iProlificInventorRateChange>
-	<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
-	<iGoldBonus>0</iGoldBonus>
-	<iFreeTechs>0</iFreeTechs>
-	<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
-	<IndustrializationVictory/>
-</CivicInfo>
-<CivicInfo>
-	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
-	<Type>XENOBOTANY</Type>
-	<Description>TXT_KEY_TECH_CATEGORY_XENOBOTANY</Description>
-	<Civilopedia></Civilopedia>
-	<Strategy></Strategy>
-	<Button>Art/Buttons/Techs/Categories/XENOBOTANY.dds</Button>
-	<iAIWeight>0</iAIWeight>
-	<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
-	<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
-	<iFreeExperience>0</iFreeExperience>
-	<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
-	<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
-	<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
-	<iExpInBorderModifier>0</iExpInBorderModifier>
-	<iNativeAttitudeChange>0</iNativeAttitudeChange>
-	<iNativeCombatModifier>0</iNativeCombatModifier>
-	<iFatherPointModifier>0</iFatherPointModifier>
-	<bDominateNativeBorders>0</bDominateNativeBorders>
-	<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
-	<YieldModifiers/>
-	<CapitalYieldModifiers/>
-	<Hurrys/>
-	<SpecialBuildingNotRequireds/>
-	<ImprovementYieldChanges/>
-	<FreeUnitClasses/>
-	<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
-	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
-	<ProfessionCombatChanges/>
-	<ImmigrationConversion>NONE</ImmigrationConversion>
-	<InventionCategory/>
-	<iX_Location>0</iX_Location>
-	<iY_Location>0</iY_Location>
-	<RequiredInvention/>
-	<RequiredInvention2/>
-	<RequiredInventionOr/>
-	<RequiredUnitType/>
-	<RequiredYields/>
-	<AllowsYields/>
-	<AllowsBuildingTypes/>
-	<AllowsUnitClasses/>
-	<AllowsPromotions/>
-	<AllowsProfessions/>
-	<AllowsTrait/>
-	<AllowsBuildTypes/>
-	<AllowsBuildTypesTerrain/>
-	<ConvertsUnitsFrom/>
-	<ConvertsUnitsTo/>
-	<NewDefaultUnitClass/>
-	<DisallowsTech/>
-	<RouteMovementMod/>
-	<bStartConstitution>0</bStartConstitution>
-	<bAllowsMapTrade>0</bAllowsMapTrade>
-	<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
-	<bisNoneTradeable>0</bisNoneTradeable>
-	<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
-	<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
-	<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
-	<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
-	<iProlificInventorRateChange>0</iProlificInventorRateChange>
-	<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
-	<iGoldBonus>0</iGoldBonus>
-	<iFreeTechs>0</iFreeTechs>
-	<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
-	<IndustrializationVictory/>
-</CivicInfo>
-<CivicInfo>
-	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
-	<Type>CHEMISTRY</Type>
-	<Description>TXT_KEY_TECH_CATEGORY_CHEMISTRY</Description>
-	<Civilopedia></Civilopedia>
-	<Strategy></Strategy>
-	<Button>Art/Buttons/Techs/Categories/CHEMISTRY.dds</Button>
-	<iAIWeight>0</iAIWeight>
-	<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
-	<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
-	<iFreeExperience>0</iFreeExperience>
-	<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
-	<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
-	<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
-	<iExpInBorderModifier>0</iExpInBorderModifier>
-	<iNativeAttitudeChange>0</iNativeAttitudeChange>
-	<iNativeCombatModifier>0</iNativeCombatModifier>
-	<iFatherPointModifier>0</iFatherPointModifier>
-	<bDominateNativeBorders>0</bDominateNativeBorders>
-	<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
-	<YieldModifiers/>
-	<CapitalYieldModifiers/>
-	<Hurrys/>
-	<SpecialBuildingNotRequireds/>
-	<ImprovementYieldChanges/>
-	<FreeUnitClasses/>
-	<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
-	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
-	<ProfessionCombatChanges/>
-	<ImmigrationConversion>NONE</ImmigrationConversion>
-	<InventionCategory/>
-	<iX_Location>0</iX_Location>
-	<iY_Location>0</iY_Location>
-	<RequiredInvention/>
-	<RequiredInvention2/>
-	<RequiredInventionOr/>
-	<RequiredUnitType/>
-	<RequiredYields/>
-	<AllowsYields/>
-	<AllowsBuildingTypes/>
-	<AllowsUnitClasses/>
-	<AllowsPromotions/>
-	<AllowsProfessions/>
-	<AllowsTrait/>
-	<AllowsBuildTypes/>
-	<AllowsBuildTypesTerrain/>
-	<ConvertsUnitsFrom/>
-	<ConvertsUnitsTo/>
-	<NewDefaultUnitClass/>
-	<DisallowsTech/>
-	<RouteMovementMod/>
-	<bStartConstitution>0</bStartConstitution>
-	<bAllowsMapTrade>0</bAllowsMapTrade>
-	<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
-	<bisNoneTradeable>0</bisNoneTradeable>
-	<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
-	<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
-	<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
-	<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
-	<iProlificInventorRateChange>0</iProlificInventorRateChange>
-	<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
-	<iGoldBonus>0</iGoldBonus>
-	<iFreeTechs>0</iFreeTechs>
-	<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
-	<IndustrializationVictory/>
-</CivicInfo>
-<CivicInfo>
-	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
-	<Type>PHYSICS</Type>
-	<Description>TXT_KEY_TECH_CATEGORY_PHYSICS</Description>
-	<Civilopedia></Civilopedia>
-	<Strategy></Strategy>
-	<Button>Art/Buttons/Techs/Categories/PHYSICS.dds</Button>
-	<iAIWeight>0</iAIWeight>
-	<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
-	<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
-	<iFreeExperience>0</iFreeExperience>
-	<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
-	<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
-	<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
-	<iExpInBorderModifier>0</iExpInBorderModifier>
-	<iNativeAttitudeChange>0</iNativeAttitudeChange>
-	<iNativeCombatModifier>0</iNativeCombatModifier>
-	<iFatherPointModifier>0</iFatherPointModifier>
-	<bDominateNativeBorders>0</bDominateNativeBorders>
-	<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
-	<YieldModifiers/>
-	<CapitalYieldModifiers/>
-	<Hurrys/>
-	<SpecialBuildingNotRequireds/>
-	<ImprovementYieldChanges/>
-	<FreeUnitClasses/>
-	<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
-	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
-	<ProfessionCombatChanges/>
-	<ImmigrationConversion>NONE</ImmigrationConversion>
-	<InventionCategory/>
-	<iX_Location>0</iX_Location>
-	<iY_Location>0</iY_Location>
-	<RequiredInvention/>
-	<RequiredInvention2/>
-	<RequiredInventionOr/>
-	<RequiredUnitType/>
-	<RequiredYields/>
-	<AllowsYields/>
-	<AllowsBuildingTypes/>
-	<AllowsUnitClasses/>
-	<AllowsPromotions/>
-	<AllowsProfessions/>
-	<AllowsTrait/>
-	<AllowsBuildTypes/>
-	<AllowsBuildTypesTerrain/>
-	<ConvertsUnitsFrom/>
-	<ConvertsUnitsTo/>
-	<NewDefaultUnitClass/>
-	<DisallowsTech/>
-	<RouteMovementMod/>
-	<bStartConstitution>0</bStartConstitution>
-	<bAllowsMapTrade>0</bAllowsMapTrade>
-	<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
-	<bisNoneTradeable>0</bisNoneTradeable>
-	<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
-	<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
-	<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
-	<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
-	<iProlificInventorRateChange>0</iProlificInventorRateChange>
-	<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
-	<iGoldBonus>0</iGoldBonus>
-	<iFreeTechs>0</iFreeTechs>
-	<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
-	<IndustrializationVictory/>
-</CivicInfo>
-<CivicInfo>
-	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
-	<Type>ACTINIDES1</Type>
+	<Type>TECH_ACTINIDES1</Type>
 	<Description>TXT_KEY_TECH_ACTINIDES1</Description>
 	<Civilopedia>TXT_KEY_TECH_ACTINIDES1_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_TECH_ACTINIDES1_STRATEGY</Strategy>
-	<Button>Art/Buttons/Techs/ACTINIDES1.dds</Button>
+	<Button>Art/Buttons/Techs/TECH_ACTINIDES1.dds</Button>
 	<iAIWeight>0</iAIWeight>
 	<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
 	<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -960,14 +990,19 @@
 	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
 	<ProfessionCombatChanges/>
 	<ImmigrationConversion>NONE</ImmigrationConversion>
-	<InventionCategory>PHYSICS</InventionCategory>
+	<InventionCategory>TECH_CATEGORY_PHYSICS</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>2</iY_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
 	<RequiredUnitType/>
-	<RequiredYields/>
+	<RequiredYields>
+		<RequiredYield>
+			<RequiredYieldType>YIELD_MACHINE_TOOLS</RequiredYieldType>
+			<iYieldCost>40</iYieldCost>
+		</RequiredYield>
+	</RequiredYields>
 	<AllowsYields>
 		<AllowsYield>
 			<YieldType>YIELD_ACTINIDES</YieldType>
@@ -1003,11 +1038,11 @@
 </CivicInfo>
 <CivicInfo>
 	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
-	<Type>ACTINIDES2</Type>
+	<Type>TECH_ACTINIDES2</Type>
 	<Description>TXT_KEY_TECH_ACTINIDES2</Description>
 	<Civilopedia>TXT_KEY_TECH_ACTINIDES2_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_TECH_ACTINIDES2_STRATEGY</Strategy>
-	<Button>Art/Buttons/Techs/ACTINIDES2.dds</Button>
+	<Button>Art/Buttons/Techs/TECH_ACTINIDES2.dds</Button>
 	<iAIWeight>0</iAIWeight>
 	<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
 	<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -1031,14 +1066,19 @@
 	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
 	<ProfessionCombatChanges/>
 	<ImmigrationConversion>NONE</ImmigrationConversion>
-	<InventionCategory>PHYSICS</InventionCategory>
+	<InventionCategory>TECH_CATEGORY_PHYSICS</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>2</iY_Location>
-	<RequiredInvention>ACTINIDES1</RequiredInvention>
+	<RequiredInvention>TECH_ACTINIDES1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
 	<RequiredUnitType/>
-	<RequiredYields/>
+	<RequiredYields>
+		<RequiredYield>
+			<RequiredYieldType>YIELD_MACHINE_TOOLS</RequiredYieldType>
+			<iYieldCost>40</iYieldCost>
+		</RequiredYield>
+	</RequiredYields>
 	<AllowsYields/>
 	<AllowsBuildingTypes/>
 	<AllowsUnitClasses/>
@@ -1074,11 +1114,11 @@
 </CivicInfo>
 <CivicInfo>
 	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
-	<Type>ACTINIDES3</Type>
+	<Type>TECH_ACTINIDES3</Type>
 	<Description>TXT_KEY_TECH_ACTINIDES3</Description>
 	<Civilopedia>TXT_KEY_TECH_ACTINIDES3_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_TECH_ACTINIDES3_STRATEGY</Strategy>
-	<Button>Art/Buttons/Techs/ACTINIDES3.dds</Button>
+	<Button>Art/Buttons/Techs/TECH_ACTINIDES3.dds</Button>
 	<iAIWeight>0</iAIWeight>
 	<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
 	<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -1102,24 +1142,24 @@
 	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
 	<ProfessionCombatChanges/>
 	<ImmigrationConversion>NONE</ImmigrationConversion>
-	<InventionCategory>PHYSICS</InventionCategory>
+	<InventionCategory>TECH_CATEGORY_PHYSICS</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>2</iY_Location>
-	<RequiredInvention>ACTINIDES2</RequiredInvention>
+	<RequiredInvention>TECH_ACTINIDES2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
 	<RequiredUnitType/>
-	<RequiredYields/>
+	<RequiredYields>
+		<RequiredYield>
+			<RequiredYieldType>YIELD_MACHINE_TOOLS</RequiredYieldType>
+			<iYieldCost>40</iYieldCost>
+		</RequiredYield>
+	</RequiredYields>
 	<AllowsYields/>
 	<AllowsBuildingTypes/>
 	<AllowsUnitClasses/>
 	<AllowsPromotions/>
-	<AllowsProfessions>
-		<AllowsProfession>
-			<ProfessionType>PROFESSION_ACTINIDES</ProfessionType>
-			<iChange>1</iChange>
-		</AllowsProfession>
-	</AllowsProfessions>
+	<AllowsProfessions/>
 	<AllowsTrait/>
 	<AllowsBuildTypes/>
 	<AllowsBuildTypesTerrain/>
@@ -1145,11 +1185,11 @@
 </CivicInfo>
 <CivicInfo>
 	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
-	<Type>FUSION_CORES1</Type>
+	<Type>TECH_FUSION_CORES1</Type>
 	<Description>TXT_KEY_TECH_FUSION_CORES1</Description>
 	<Civilopedia>TXT_KEY_TECH_FUSION_CORES1_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_TECH_FUSION_CORES1_STRATEGY</Strategy>
-	<Button>Art/Buttons/Techs/FUSION_CORES1.dds</Button>
+	<Button>Art/Buttons/Techs/TECH_FUSION_CORES1.dds</Button>
 	<iAIWeight>0</iAIWeight>
 	<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
 	<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -1173,14 +1213,19 @@
 	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
 	<ProfessionCombatChanges/>
 	<ImmigrationConversion>NONE</ImmigrationConversion>
-	<InventionCategory>PHYSICS</InventionCategory>
+	<InventionCategory>TECH_CATEGORY_PHYSICS</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>3</iY_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
 	<RequiredUnitType/>
-	<RequiredYields/>
+	<RequiredYields>
+		<RequiredYield>
+			<RequiredYieldType>YIELD_MACHINE_TOOLS</RequiredYieldType>
+			<iYieldCost>40</iYieldCost>
+		</RequiredYield>
+	</RequiredYields>
 	<AllowsYields>
 		<AllowsYield>
 			<YieldType>YIELD_FUSION_CORES</YieldType>
@@ -1216,11 +1261,11 @@
 </CivicInfo>
 <CivicInfo>
 	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
-	<Type>FUSION_CORES2</Type>
+	<Type>TECH_FUSION_CORES2</Type>
 	<Description>TXT_KEY_TECH_FUSION_CORES2</Description>
 	<Civilopedia>TXT_KEY_TECH_FUSION_CORES2_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_TECH_FUSION_CORES2_STRATEGY</Strategy>
-	<Button>Art/Buttons/Techs/FUSION_CORES2.dds</Button>
+	<Button>Art/Buttons/Techs/TECH_FUSION_CORES2.dds</Button>
 	<iAIWeight>0</iAIWeight>
 	<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
 	<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -1244,14 +1289,19 @@
 	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
 	<ProfessionCombatChanges/>
 	<ImmigrationConversion>NONE</ImmigrationConversion>
-	<InventionCategory>PHYSICS</InventionCategory>
+	<InventionCategory>TECH_CATEGORY_PHYSICS</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>3</iY_Location>
-	<RequiredInvention>FUSION_CORES1</RequiredInvention>
+	<RequiredInvention>TECH_FUSION_CORES1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
 	<RequiredUnitType/>
-	<RequiredYields/>
+	<RequiredYields>
+		<RequiredYield>
+			<RequiredYieldType>YIELD_MACHINE_TOOLS</RequiredYieldType>
+			<iYieldCost>40</iYieldCost>
+		</RequiredYield>
+	</RequiredYields>
 	<AllowsYields/>
 	<AllowsBuildingTypes>
 		<AllowsBuildingType>
@@ -1292,11 +1342,11 @@
 </CivicInfo>
 <CivicInfo>
 	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
-	<Type>FUSION_CORES3</Type>
+	<Type>TECH_FUSION_CORES3</Type>
 	<Description>TXT_KEY_TECH_FUSION_CORES3</Description>
 	<Civilopedia>TXT_KEY_TECH_FUSION_CORES3_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_TECH_FUSION_CORES3_STRATEGY</Strategy>
-	<Button>Art/Buttons/Techs/FUSION_CORES3.dds</Button>
+	<Button>Art/Buttons/Techs/TECH_FUSION_CORES3.dds</Button>
 	<iAIWeight>0</iAIWeight>
 	<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
 	<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -1320,14 +1370,19 @@
 	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
 	<ProfessionCombatChanges/>
 	<ImmigrationConversion>NONE</ImmigrationConversion>
-	<InventionCategory>PHYSICS</InventionCategory>
+	<InventionCategory>TECH_CATEGORY_PHYSICS</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>3</iY_Location>
-	<RequiredInvention>FUSION_CORES2</RequiredInvention>
+	<RequiredInvention>TECH_FUSION_CORES2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
 	<RequiredUnitType/>
-	<RequiredYields/>
+	<RequiredYields>
+		<RequiredYield>
+			<RequiredYieldType>YIELD_MACHINE_TOOLS</RequiredYieldType>
+			<iYieldCost>40</iYieldCost>
+		</RequiredYield>
+	</RequiredYields>
 	<AllowsYields/>
 	<AllowsBuildingTypes>
 		<AllowsBuildingType>
@@ -1363,11 +1418,11 @@
 </CivicInfo>
 <CivicInfo>
 	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
-	<Type>FUSION_CORES4</Type>
+	<Type>TECH_FUSION_CORES4</Type>
 	<Description>TXT_KEY_TECH_FUSION_CORES4</Description>
 	<Civilopedia>TXT_KEY_TECH_FUSION_CORES4_PEDIA</Civilopedia>
 	<Strategy>TXT_KEY_TECH_FUSION_CORES4_STRATEGY</Strategy>
-	<Button>Art/Buttons/Techs/FUSION_CORES4.dds</Button>
+	<Button>Art/Buttons/Techs/TECH_FUSION_CORES4.dds</Button>
 	<iAIWeight>0</iAIWeight>
 	<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
 	<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -1391,18 +1446,555 @@
 	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
 	<ProfessionCombatChanges/>
 	<ImmigrationConversion>NONE</ImmigrationConversion>
-	<InventionCategory>PHYSICS</InventionCategory>
+	<InventionCategory>TECH_CATEGORY_PHYSICS</InventionCategory>
 	<iX_Location>5</iX_Location>
 	<iY_Location>3</iY_Location>
-	<RequiredInvention>FUSION_CORES3</RequiredInvention>
+	<RequiredInvention>TECH_FUSION_CORES3</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
 	<RequiredUnitType/>
-	<RequiredYields/>
+	<RequiredYields>
+		<RequiredYield>
+			<RequiredYieldType>YIELD_MACHINE_TOOLS</RequiredYieldType>
+			<iYieldCost>40</iYieldCost>
+		</RequiredYield>
+	</RequiredYields>
 	<AllowsYields/>
 	<AllowsBuildingTypes>
 		<AllowsBuildingType>
 			<BuildingType>BUILDINGCLASS_FUSION_CORES3</BuildingType>
+			<iChange>1</iChange>
+		</AllowsBuildingType>
+	</AllowsBuildingTypes>
+	<AllowsUnitClasses/>
+	<AllowsPromotions/>
+	<AllowsProfessions/>
+	<AllowsTrait/>
+	<AllowsBuildTypes/>
+	<AllowsBuildTypesTerrain/>
+	<ConvertsUnitsFrom/>
+	<ConvertsUnitsTo/>
+	<NewDefaultUnitClass/>
+	<DisallowsTech/>
+	<RouteMovementMod/>
+	<bStartConstitution>0</bStartConstitution>
+	<bAllowsMapTrade>0</bAllowsMapTrade>
+	<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+	<bisNoneTradeable>0</bisNoneTradeable>
+	<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+	<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+	<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+	<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+	<iProlificInventorRateChange>0</iProlificInventorRateChange>
+	<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+	<iGoldBonus>0</iGoldBonus>
+	<iFreeTechs>0</iFreeTechs>
+	<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+	<IndustrializationVictory/>
+</CivicInfo>
+<CivicInfo>
+	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+	<Type>TECH_RARE_EARTHS1</Type>
+	<Description>TXT_KEY_TECH_RARE_EARTHS1</Description>
+	<Civilopedia>TXT_KEY_TECH_RARE_EARTHS1_PEDIA</Civilopedia>
+	<Strategy>TXT_KEY_TECH_RARE_EARTHS1_STRATEGY</Strategy>
+	<Button>Art/Buttons/Techs/TECH_RARE_EARTHS1.dds</Button>
+	<iAIWeight>0</iAIWeight>
+	<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+	<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+	<iFreeExperience>0</iFreeExperience>
+	<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+	<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+	<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+	<iExpInBorderModifier>0</iExpInBorderModifier>
+	<iNativeAttitudeChange>0</iNativeAttitudeChange>
+	<iNativeCombatModifier>0</iNativeCombatModifier>
+	<iFatherPointModifier>0</iFatherPointModifier>
+	<bDominateNativeBorders>0</bDominateNativeBorders>
+	<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+	<YieldModifiers/>
+	<CapitalYieldModifiers/>
+	<Hurrys/>
+	<SpecialBuildingNotRequireds/>
+	<ImprovementYieldChanges/>
+	<FreeUnitClasses/>
+	<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+	<ProfessionCombatChanges/>
+	<ImmigrationConversion>NONE</ImmigrationConversion>
+	<InventionCategory>TECH_CATEGORY_PHYSICS</InventionCategory>
+	<iX_Location>1</iX_Location>
+	<iY_Location>4</iY_Location>
+	<RequiredInvention></RequiredInvention>
+	<RequiredInvention2/>
+	<RequiredInventionOr/>
+	<RequiredUnitType/>
+	<RequiredYields>
+		<RequiredYield>
+			<RequiredYieldType>YIELD_MACHINE_TOOLS</RequiredYieldType>
+			<iYieldCost>40</iYieldCost>
+		</RequiredYield>
+	</RequiredYields>
+	<AllowsYields>
+		<AllowsYield>
+			<YieldType>YIELD_RARE_EARTHS</YieldType>
+			<iChange>1</iChange>
+		</AllowsYield>
+	</AllowsYields>
+	<AllowsBuildingTypes/>
+	<AllowsUnitClasses/>
+	<AllowsPromotions/>
+	<AllowsProfessions/>
+	<AllowsTrait/>
+	<AllowsBuildTypes/>
+	<AllowsBuildTypesTerrain/>
+	<ConvertsUnitsFrom/>
+	<ConvertsUnitsTo/>
+	<NewDefaultUnitClass/>
+	<DisallowsTech/>
+	<RouteMovementMod/>
+	<bStartConstitution>0</bStartConstitution>
+	<bAllowsMapTrade>0</bAllowsMapTrade>
+	<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+	<bisNoneTradeable>0</bisNoneTradeable>
+	<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+	<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+	<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+	<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+	<iProlificInventorRateChange>0</iProlificInventorRateChange>
+	<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+	<iGoldBonus>0</iGoldBonus>
+	<iFreeTechs>0</iFreeTechs>
+	<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+	<IndustrializationVictory/>
+</CivicInfo>
+<CivicInfo>
+	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+	<Type>TECH_RARE_EARTHS2</Type>
+	<Description>TXT_KEY_TECH_RARE_EARTHS2</Description>
+	<Civilopedia>TXT_KEY_TECH_RARE_EARTHS2_PEDIA</Civilopedia>
+	<Strategy>TXT_KEY_TECH_RARE_EARTHS2_STRATEGY</Strategy>
+	<Button>Art/Buttons/Techs/TECH_RARE_EARTHS2.dds</Button>
+	<iAIWeight>0</iAIWeight>
+	<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+	<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+	<iFreeExperience>0</iFreeExperience>
+	<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+	<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+	<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+	<iExpInBorderModifier>0</iExpInBorderModifier>
+	<iNativeAttitudeChange>0</iNativeAttitudeChange>
+	<iNativeCombatModifier>0</iNativeCombatModifier>
+	<iFatherPointModifier>0</iFatherPointModifier>
+	<bDominateNativeBorders>0</bDominateNativeBorders>
+	<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+	<YieldModifiers/>
+	<CapitalYieldModifiers/>
+	<Hurrys/>
+	<SpecialBuildingNotRequireds/>
+	<ImprovementYieldChanges/>
+	<FreeUnitClasses/>
+	<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+	<ProfessionCombatChanges/>
+	<ImmigrationConversion>NONE</ImmigrationConversion>
+	<InventionCategory>TECH_CATEGORY_PHYSICS</InventionCategory>
+	<iX_Location>2</iX_Location>
+	<iY_Location>4</iY_Location>
+	<RequiredInvention>TECH_RARE_EARTHS1</RequiredInvention>
+	<RequiredInvention2/>
+	<RequiredInventionOr/>
+	<RequiredUnitType/>
+	<RequiredYields>
+		<RequiredYield>
+			<RequiredYieldType>YIELD_MACHINE_TOOLS</RequiredYieldType>
+			<iYieldCost>40</iYieldCost>
+		</RequiredYield>
+	</RequiredYields>
+	<AllowsYields/>
+	<AllowsBuildingTypes/>
+	<AllowsUnitClasses/>
+	<AllowsPromotions/>
+	<AllowsProfessions>
+		<AllowsProfession>
+			<ProfessionType>PROFESSION_RARE_EARTHS</ProfessionType>
+			<iChange>1</iChange>
+		</AllowsProfession>
+	</AllowsProfessions>
+	<AllowsTrait/>
+	<AllowsBuildTypes/>
+	<AllowsBuildTypesTerrain/>
+	<ConvertsUnitsFrom/>
+	<ConvertsUnitsTo/>
+	<NewDefaultUnitClass/>
+	<DisallowsTech/>
+	<RouteMovementMod/>
+	<bStartConstitution>0</bStartConstitution>
+	<bAllowsMapTrade>0</bAllowsMapTrade>
+	<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+	<bisNoneTradeable>0</bisNoneTradeable>
+	<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+	<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+	<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+	<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+	<iProlificInventorRateChange>0</iProlificInventorRateChange>
+	<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+	<iGoldBonus>0</iGoldBonus>
+	<iFreeTechs>0</iFreeTechs>
+	<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+	<IndustrializationVictory/>
+</CivicInfo>
+<CivicInfo>
+	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+	<Type>TECH_RARE_EARTHS3</Type>
+	<Description>TXT_KEY_TECH_RARE_EARTHS3</Description>
+	<Civilopedia>TXT_KEY_TECH_RARE_EARTHS3_PEDIA</Civilopedia>
+	<Strategy>TXT_KEY_TECH_RARE_EARTHS3_STRATEGY</Strategy>
+	<Button>Art/Buttons/Techs/TECH_RARE_EARTHS3.dds</Button>
+	<iAIWeight>0</iAIWeight>
+	<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+	<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+	<iFreeExperience>0</iFreeExperience>
+	<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+	<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+	<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+	<iExpInBorderModifier>0</iExpInBorderModifier>
+	<iNativeAttitudeChange>0</iNativeAttitudeChange>
+	<iNativeCombatModifier>0</iNativeCombatModifier>
+	<iFatherPointModifier>0</iFatherPointModifier>
+	<bDominateNativeBorders>0</bDominateNativeBorders>
+	<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+	<YieldModifiers/>
+	<CapitalYieldModifiers/>
+	<Hurrys/>
+	<SpecialBuildingNotRequireds/>
+	<ImprovementYieldChanges/>
+	<FreeUnitClasses/>
+	<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+	<ProfessionCombatChanges/>
+	<ImmigrationConversion>NONE</ImmigrationConversion>
+	<InventionCategory>TECH_CATEGORY_PHYSICS</InventionCategory>
+	<iX_Location>3</iX_Location>
+	<iY_Location>4</iY_Location>
+	<RequiredInvention>TECH_RARE_EARTHS2</RequiredInvention>
+	<RequiredInvention2/>
+	<RequiredInventionOr/>
+	<RequiredUnitType/>
+	<RequiredYields>
+		<RequiredYield>
+			<RequiredYieldType>YIELD_MACHINE_TOOLS</RequiredYieldType>
+			<iYieldCost>40</iYieldCost>
+		</RequiredYield>
+	</RequiredYields>
+	<AllowsYields/>
+	<AllowsBuildingTypes/>
+	<AllowsUnitClasses/>
+	<AllowsPromotions/>
+	<AllowsProfessions/>
+	<AllowsTrait/>
+	<AllowsBuildTypes/>
+	<AllowsBuildTypesTerrain/>
+	<ConvertsUnitsFrom/>
+	<ConvertsUnitsTo/>
+	<NewDefaultUnitClass/>
+	<DisallowsTech/>
+	<RouteMovementMod/>
+	<bStartConstitution>0</bStartConstitution>
+	<bAllowsMapTrade>0</bAllowsMapTrade>
+	<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+	<bisNoneTradeable>0</bisNoneTradeable>
+	<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+	<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+	<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+	<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+	<iProlificInventorRateChange>0</iProlificInventorRateChange>
+	<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+	<iGoldBonus>0</iGoldBonus>
+	<iFreeTechs>0</iFreeTechs>
+	<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+	<IndustrializationVictory/>
+</CivicInfo>
+<CivicInfo>
+	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+	<Type>TECH_SEMICONDUCTORS1</Type>
+	<Description>TXT_KEY_TECH_SEMICONDUCTORS1</Description>
+	<Civilopedia>TXT_KEY_TECH_SEMICONDUCTORS1_PEDIA</Civilopedia>
+	<Strategy>TXT_KEY_TECH_SEMICONDUCTORS1_STRATEGY</Strategy>
+	<Button>Art/Buttons/Techs/TECH_SEMICONDUCTORS1.dds</Button>
+	<iAIWeight>0</iAIWeight>
+	<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+	<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+	<iFreeExperience>0</iFreeExperience>
+	<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+	<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+	<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+	<iExpInBorderModifier>0</iExpInBorderModifier>
+	<iNativeAttitudeChange>0</iNativeAttitudeChange>
+	<iNativeCombatModifier>0</iNativeCombatModifier>
+	<iFatherPointModifier>0</iFatherPointModifier>
+	<bDominateNativeBorders>0</bDominateNativeBorders>
+	<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+	<YieldModifiers/>
+	<CapitalYieldModifiers/>
+	<Hurrys/>
+	<SpecialBuildingNotRequireds/>
+	<ImprovementYieldChanges/>
+	<FreeUnitClasses/>
+	<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+	<ProfessionCombatChanges/>
+	<ImmigrationConversion>NONE</ImmigrationConversion>
+	<InventionCategory>TECH_CATEGORY_PHYSICS</InventionCategory>
+	<iX_Location>2</iX_Location>
+	<iY_Location>5</iY_Location>
+	<RequiredInvention></RequiredInvention>
+	<RequiredInvention2/>
+	<RequiredInventionOr/>
+	<RequiredUnitType/>
+	<RequiredYields>
+		<RequiredYield>
+			<RequiredYieldType>YIELD_MACHINE_TOOLS</RequiredYieldType>
+			<iYieldCost>40</iYieldCost>
+		</RequiredYield>
+	</RequiredYields>
+	<AllowsYields>
+		<AllowsYield>
+			<YieldType>YIELD_SEMICONDUCTORS</YieldType>
+			<iChange>1</iChange>
+		</AllowsYield>
+	</AllowsYields>
+	<AllowsBuildingTypes/>
+	<AllowsUnitClasses/>
+	<AllowsPromotions/>
+	<AllowsProfessions/>
+	<AllowsTrait/>
+	<AllowsBuildTypes/>
+	<AllowsBuildTypesTerrain/>
+	<ConvertsUnitsFrom/>
+	<ConvertsUnitsTo/>
+	<NewDefaultUnitClass/>
+	<DisallowsTech/>
+	<RouteMovementMod/>
+	<bStartConstitution>0</bStartConstitution>
+	<bAllowsMapTrade>0</bAllowsMapTrade>
+	<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+	<bisNoneTradeable>0</bisNoneTradeable>
+	<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+	<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+	<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+	<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+	<iProlificInventorRateChange>0</iProlificInventorRateChange>
+	<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+	<iGoldBonus>0</iGoldBonus>
+	<iFreeTechs>0</iFreeTechs>
+	<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+	<IndustrializationVictory/>
+</CivicInfo>
+<CivicInfo>
+	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+	<Type>TECH_SEMICONDUCTORS2</Type>
+	<Description>TXT_KEY_TECH_SEMICONDUCTORS2</Description>
+	<Civilopedia>TXT_KEY_TECH_SEMICONDUCTORS2_PEDIA</Civilopedia>
+	<Strategy>TXT_KEY_TECH_SEMICONDUCTORS2_STRATEGY</Strategy>
+	<Button>Art/Buttons/Techs/TECH_SEMICONDUCTORS2.dds</Button>
+	<iAIWeight>0</iAIWeight>
+	<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+	<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+	<iFreeExperience>0</iFreeExperience>
+	<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+	<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+	<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+	<iExpInBorderModifier>0</iExpInBorderModifier>
+	<iNativeAttitudeChange>0</iNativeAttitudeChange>
+	<iNativeCombatModifier>0</iNativeCombatModifier>
+	<iFatherPointModifier>0</iFatherPointModifier>
+	<bDominateNativeBorders>0</bDominateNativeBorders>
+	<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+	<YieldModifiers/>
+	<CapitalYieldModifiers/>
+	<Hurrys/>
+	<SpecialBuildingNotRequireds/>
+	<ImprovementYieldChanges/>
+	<FreeUnitClasses/>
+	<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+	<ProfessionCombatChanges/>
+	<ImmigrationConversion>NONE</ImmigrationConversion>
+	<InventionCategory>TECH_CATEGORY_PHYSICS</InventionCategory>
+	<iX_Location>3</iX_Location>
+	<iY_Location>5</iY_Location>
+	<RequiredInvention>TECH_SEMICONDUCTORS1</RequiredInvention>
+	<RequiredInvention2/>
+	<RequiredInventionOr/>
+	<RequiredUnitType/>
+	<RequiredYields>
+		<RequiredYield>
+			<RequiredYieldType>YIELD_MACHINE_TOOLS</RequiredYieldType>
+			<iYieldCost>40</iYieldCost>
+		</RequiredYield>
+	</RequiredYields>
+	<AllowsYields/>
+	<AllowsBuildingTypes>
+		<AllowsBuildingType>
+			<BuildingType>BUILDINGCLASS_SEMICONDUCTORS1</BuildingType>
+			<iChange>1</iChange>
+		</AllowsBuildingType>
+	</AllowsBuildingTypes>
+	<AllowsUnitClasses/>
+	<AllowsPromotions/>
+	<AllowsProfessions>
+		<AllowsProfession>
+			<ProfessionType>PROFESSION_SEMICONDUCTORS</ProfessionType>
+			<iChange>1</iChange>
+		</AllowsProfession>
+	</AllowsProfessions>
+	<AllowsTrait/>
+	<AllowsBuildTypes/>
+	<AllowsBuildTypesTerrain/>
+	<ConvertsUnitsFrom/>
+	<ConvertsUnitsTo/>
+	<NewDefaultUnitClass/>
+	<DisallowsTech/>
+	<RouteMovementMod/>
+	<bStartConstitution>0</bStartConstitution>
+	<bAllowsMapTrade>0</bAllowsMapTrade>
+	<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+	<bisNoneTradeable>0</bisNoneTradeable>
+	<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+	<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+	<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+	<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+	<iProlificInventorRateChange>0</iProlificInventorRateChange>
+	<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+	<iGoldBonus>0</iGoldBonus>
+	<iFreeTechs>0</iFreeTechs>
+	<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+	<IndustrializationVictory/>
+</CivicInfo>
+<CivicInfo>
+	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+	<Type>TECH_SEMICONDUCTORS3</Type>
+	<Description>TXT_KEY_TECH_SEMICONDUCTORS3</Description>
+	<Civilopedia>TXT_KEY_TECH_SEMICONDUCTORS3_PEDIA</Civilopedia>
+	<Strategy>TXT_KEY_TECH_SEMICONDUCTORS3_STRATEGY</Strategy>
+	<Button>Art/Buttons/Techs/TECH_SEMICONDUCTORS3.dds</Button>
+	<iAIWeight>0</iAIWeight>
+	<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+	<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+	<iFreeExperience>0</iFreeExperience>
+	<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+	<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+	<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+	<iExpInBorderModifier>0</iExpInBorderModifier>
+	<iNativeAttitudeChange>0</iNativeAttitudeChange>
+	<iNativeCombatModifier>0</iNativeCombatModifier>
+	<iFatherPointModifier>0</iFatherPointModifier>
+	<bDominateNativeBorders>0</bDominateNativeBorders>
+	<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+	<YieldModifiers/>
+	<CapitalYieldModifiers/>
+	<Hurrys/>
+	<SpecialBuildingNotRequireds/>
+	<ImprovementYieldChanges/>
+	<FreeUnitClasses/>
+	<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+	<ProfessionCombatChanges/>
+	<ImmigrationConversion>NONE</ImmigrationConversion>
+	<InventionCategory>TECH_CATEGORY_PHYSICS</InventionCategory>
+	<iX_Location>4</iX_Location>
+	<iY_Location>5</iY_Location>
+	<RequiredInvention>TECH_SEMICONDUCTORS2</RequiredInvention>
+	<RequiredInvention2/>
+	<RequiredInventionOr/>
+	<RequiredUnitType/>
+	<RequiredYields>
+		<RequiredYield>
+			<RequiredYieldType>YIELD_MACHINE_TOOLS</RequiredYieldType>
+			<iYieldCost>40</iYieldCost>
+		</RequiredYield>
+	</RequiredYields>
+	<AllowsYields/>
+	<AllowsBuildingTypes>
+		<AllowsBuildingType>
+			<BuildingType>BUILDINGCLASS_SEMICONDUCTORS2</BuildingType>
+			<iChange>1</iChange>
+		</AllowsBuildingType>
+	</AllowsBuildingTypes>
+	<AllowsUnitClasses/>
+	<AllowsPromotions/>
+	<AllowsProfessions/>
+	<AllowsTrait/>
+	<AllowsBuildTypes/>
+	<AllowsBuildTypesTerrain/>
+	<ConvertsUnitsFrom/>
+	<ConvertsUnitsTo/>
+	<NewDefaultUnitClass/>
+	<DisallowsTech/>
+	<RouteMovementMod/>
+	<bStartConstitution>0</bStartConstitution>
+	<bAllowsMapTrade>0</bAllowsMapTrade>
+	<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+	<bisNoneTradeable>0</bisNoneTradeable>
+	<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+	<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+	<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+	<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+	<iProlificInventorRateChange>0</iProlificInventorRateChange>
+	<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+	<iGoldBonus>0</iGoldBonus>
+	<iFreeTechs>0</iFreeTechs>
+	<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+	<IndustrializationVictory/>
+</CivicInfo>
+<CivicInfo>
+	<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+	<Type>TECH_SEMICONDUCTORS4</Type>
+	<Description>TXT_KEY_TECH_SEMICONDUCTORS4</Description>
+	<Civilopedia>TXT_KEY_TECH_SEMICONDUCTORS4_PEDIA</Civilopedia>
+	<Strategy>TXT_KEY_TECH_SEMICONDUCTORS4_STRATEGY</Strategy>
+	<Button>Art/Buttons/Techs/TECH_SEMICONDUCTORS4.dds</Button>
+	<iAIWeight>0</iAIWeight>
+	<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+	<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+	<iFreeExperience>0</iFreeExperience>
+	<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+	<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+	<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+	<iExpInBorderModifier>0</iExpInBorderModifier>
+	<iNativeAttitudeChange>0</iNativeAttitudeChange>
+	<iNativeCombatModifier>0</iNativeCombatModifier>
+	<iFatherPointModifier>0</iFatherPointModifier>
+	<bDominateNativeBorders>0</bDominateNativeBorders>
+	<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+	<YieldModifiers/>
+	<CapitalYieldModifiers/>
+	<Hurrys/>
+	<SpecialBuildingNotRequireds/>
+	<ImprovementYieldChanges/>
+	<FreeUnitClasses/>
+	<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+	<ProfessionCombatChanges/>
+	<ImmigrationConversion>NONE</ImmigrationConversion>
+	<InventionCategory>TECH_CATEGORY_PHYSICS</InventionCategory>
+	<iX_Location>5</iX_Location>
+	<iY_Location>5</iY_Location>
+	<RequiredInvention>TECH_SEMICONDUCTORS3</RequiredInvention>
+	<RequiredInvention2/>
+	<RequiredInventionOr/>
+	<RequiredUnitType/>
+	<RequiredYields>
+		<RequiredYield>
+			<RequiredYieldType>YIELD_MACHINE_TOOLS</RequiredYieldType>
+			<iYieldCost>40</iYieldCost>
+		</RequiredYield>
+	</RequiredYields>
+	<AllowsYields/>
+	<AllowsBuildingTypes>
+		<AllowsBuildingType>
+			<BuildingType>BUILDINGCLASS_SEMICONDUCTORS3</BuildingType>
 			<iChange>1</iChange>
 		</AllowsBuildingType>
 	</AllowsBuildingTypes>

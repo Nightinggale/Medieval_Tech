@@ -990,9 +990,9 @@
 	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
 	<ProfessionCombatChanges/>
 	<ImmigrationConversion>NONE</ImmigrationConversion>
-	<InventionCategory>TECH_CATEGORY_PHYSICS</InventionCategory>
+	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
-	<iY_Location>2</iY_Location>
+	<iY_Location>1</iY_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -1066,9 +1066,9 @@
 	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
 	<ProfessionCombatChanges/>
 	<ImmigrationConversion>NONE</ImmigrationConversion>
-	<InventionCategory>TECH_CATEGORY_PHYSICS</InventionCategory>
+	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
-	<iY_Location>2</iY_Location>
+	<iY_Location>1</iY_Location>
 	<RequiredInvention>TECH_ACTINIDES1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -1142,9 +1142,9 @@
 	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
 	<ProfessionCombatChanges/>
 	<ImmigrationConversion>NONE</ImmigrationConversion>
-	<InventionCategory>TECH_CATEGORY_PHYSICS</InventionCategory>
+	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
-	<iY_Location>2</iY_Location>
+	<iY_Location>1</iY_Location>
 	<RequiredInvention>TECH_ACTINIDES2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -1213,7 +1213,7 @@
 	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
 	<ProfessionCombatChanges/>
 	<ImmigrationConversion>NONE</ImmigrationConversion>
-	<InventionCategory>TECH_CATEGORY_PHYSICS</InventionCategory>
+	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>3</iY_Location>
 	<RequiredInvention></RequiredInvention>
@@ -1289,7 +1289,7 @@
 	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
 	<ProfessionCombatChanges/>
 	<ImmigrationConversion>NONE</ImmigrationConversion>
-	<InventionCategory>TECH_CATEGORY_PHYSICS</InventionCategory>
+	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>3</iY_Location>
 	<RequiredInvention>TECH_FUSION_CORES1</RequiredInvention>
@@ -1370,7 +1370,7 @@
 	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
 	<ProfessionCombatChanges/>
 	<ImmigrationConversion>NONE</ImmigrationConversion>
-	<InventionCategory>TECH_CATEGORY_PHYSICS</InventionCategory>
+	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>3</iY_Location>
 	<RequiredInvention>TECH_FUSION_CORES2</RequiredInvention>
@@ -1446,7 +1446,7 @@
 	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
 	<ProfessionCombatChanges/>
 	<ImmigrationConversion>NONE</ImmigrationConversion>
-	<InventionCategory>TECH_CATEGORY_PHYSICS</InventionCategory>
+	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>5</iX_Location>
 	<iY_Location>3</iY_Location>
 	<RequiredInvention>TECH_FUSION_CORES3</RequiredInvention>
@@ -1522,9 +1522,9 @@
 	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
 	<ProfessionCombatChanges/>
 	<ImmigrationConversion>NONE</ImmigrationConversion>
-	<InventionCategory>TECH_CATEGORY_PHYSICS</InventionCategory>
+	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
-	<iY_Location>4</iY_Location>
+	<iY_Location>5</iY_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -1598,9 +1598,9 @@
 	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
 	<ProfessionCombatChanges/>
 	<ImmigrationConversion>NONE</ImmigrationConversion>
-	<InventionCategory>TECH_CATEGORY_PHYSICS</InventionCategory>
+	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
-	<iY_Location>4</iY_Location>
+	<iY_Location>5</iY_Location>
 	<RequiredInvention>TECH_RARE_EARTHS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -1674,9 +1674,9 @@
 	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
 	<ProfessionCombatChanges/>
 	<ImmigrationConversion>NONE</ImmigrationConversion>
-	<InventionCategory>TECH_CATEGORY_PHYSICS</InventionCategory>
+	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
-	<iY_Location>4</iY_Location>
+	<iY_Location>5</iY_Location>
 	<RequiredInvention>TECH_RARE_EARTHS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -1745,9 +1745,9 @@
 	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
 	<ProfessionCombatChanges/>
 	<ImmigrationConversion>NONE</ImmigrationConversion>
-	<InventionCategory>TECH_CATEGORY_PHYSICS</InventionCategory>
+	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
-	<iY_Location>5</iY_Location>
+	<iY_Location>7</iY_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -1821,9 +1821,9 @@
 	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
 	<ProfessionCombatChanges/>
 	<ImmigrationConversion>NONE</ImmigrationConversion>
-	<InventionCategory>TECH_CATEGORY_PHYSICS</InventionCategory>
+	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
-	<iY_Location>5</iY_Location>
+	<iY_Location>7</iY_Location>
 	<RequiredInvention>TECH_SEMICONDUCTORS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -1902,9 +1902,9 @@
 	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
 	<ProfessionCombatChanges/>
 	<ImmigrationConversion>NONE</ImmigrationConversion>
-	<InventionCategory>TECH_CATEGORY_PHYSICS</InventionCategory>
+	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
-	<iY_Location>5</iY_Location>
+	<iY_Location>7</iY_Location>
 	<RequiredInvention>TECH_SEMICONDUCTORS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -1978,9 +1978,9 @@
 	<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
 	<ProfessionCombatChanges/>
 	<ImmigrationConversion>NONE</ImmigrationConversion>
-	<InventionCategory>TECH_CATEGORY_PHYSICS</InventionCategory>
+	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>5</iX_Location>
-	<iY_Location>5</iY_Location>
+	<iY_Location>7</iY_Location>
 	<RequiredInvention>TECH_SEMICONDUCTORS3</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>

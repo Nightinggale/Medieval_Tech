@@ -3616,10 +3616,10 @@ sub maketech {
 	print CI "\t<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>\n";
 	print CI "\t<Type>".$tag."</Type>\n";
 	print CI "\t<Description>TXT_KEY_".$tag."</Description>\n";
-	&maketext("TXT_KEY_TECH_".$tag,$desc);
+	&maketext("TXT_KEY_".$tag,$desc);
 	print CI "\t<Civilopedia>TXT_KEY_".$tag."_PEDIA</Civilopedia>\n";
 	my $pedia = 'The discovery of [COLOR_HIGHLIGHT_TEXT]'.$desc."[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.";
-	&maketext("TXT_KEY_TECH_".$tag."_PEDIA",$pedia);
+	&maketext("TXT_KEY_".$tag."_PEDIA",$pedia);
 	print CI "\t<Strategy>TXT_KEY_".$tag."_STRATEGY</Strategy>\n";
 	&maketext("TXT_KEY_".$tag."_STRATEGY",'Research [COLOR_HIGHLIGHT_TEXT]'.$desc."[COLOR_REVERT] to continue our advancement.");
 	print CI "\t<Button>Art/Buttons/Techs/".$tag.".dds</Button>\n";
@@ -3739,14 +3739,15 @@ sub maketech {
 #&maketech('TEST','TRADING_GUILDS','MEDIEVAL_TRADE_TECH',3,3,'NONE','','','');
 
 $x=1;
-$y=2;
+$y=1;
 
 #tag,description,category,xcoord,ycoord,requiredinvention,allowyield,allowbldg,allowprof
 
 sub maketechlineraw {
 	my $yield = shift;
 	my $desc = shift;
-	my $cat = shift;
+#	my $cat = shift;
+	my $cat = 'MEDIEVAL_TRADE_TECH';
 	$x=1;
 	#allow yield
 	&maketech('TECH_'.$yield.'1',$desc.' Analysis',$cat,$x,$y,'',$yield,'','');
@@ -3756,13 +3757,14 @@ sub maketechlineraw {
 	$x++;
 	#production boost
 	&maketech('TECH_'.$yield.'3','Advanced '.$desc.' Extraction',$cat,$x,$y,'TECH_'.$yield.'2','','','');
-	$y++;
+	$y=$y+2;
 	}
 
 sub maketechlinecity {
 	my $yield = shift;
 	my $desc = shift;
-	my $cat = shift;
+#	my $cat = shift;
+	my $cat = 'MEDIEVAL_TRADE_TECH';
 	$x=2;
 	#allow yield
 	&maketech('TECH_'.$yield.'1',$desc.' Analysis',$cat,$x,$y,'',$yield,'','');
@@ -3775,7 +3777,7 @@ sub maketechlinecity {
 	$x++;
 	#building 3
 	&maketech('TECH_'.$yield.'4','Intensive '.$desc.' Production',$cat,$x,$y,'TECH_'.$yield.'3','',$yield.'3','');
-	$y++;
+	$y=$y+2;
 	}
 
 &maketechlineraw('ACTINIDES','Actinide','TECH_CATEGORY_PHYSICS');

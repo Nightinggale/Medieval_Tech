@@ -923,11 +923,11 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_CONSTITUTE</Tag>
-    <English>Constitute:[SPACE]</English>
-    <French>Constitute:[SPACE]</French>
-    <German>Constitute:[SPACE]</German>
-    <Italian>Constitute:[SPACE]</Italian>
-    <Spanish>Constitute:[SPACE]</Spanish>
+    <English>Constitution:[SPACE]</English>
+    <French>Constitution:[SPACE]</French>
+    <German>Constitution:[SPACE]</German>
+    <Italian>Constitution:[SPACE]</Italian>
+    <Spanish>Constitution:[SPACE]</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_KNOWLEDGE</Tag>
@@ -1091,19 +1091,19 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_INVENTION_BONUS_GOLD</Tag>
-    <English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%d1_name[COLOR_REVERT][ICON_GOLD] bonus for Discovering</English>
-    <French>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%d1_name[COLOR_REVERT][ICON_GOLD] bonus for Discovering</French>
-    <German>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%d1_name[COLOR_REVERT][ICON_GOLD] bonus for Discovering</German>
-    <Italian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%d1_name[COLOR_REVERT][ICON_GOLD] bonus for Discovering</Italian>
-    <Spanish>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%d1_name[COLOR_REVERT][ICON_GOLD] bonus for Discovering</Spanish>
+    <English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%d1_name[COLOR_REVERT][ICON_GOLD] bonus for discovering</English>
+    <French>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%d1_name[COLOR_REVERT][ICON_GOLD] bonus for discovering</French>
+    <German>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%d1_name[COLOR_REVERT][ICON_GOLD] bonus for discovering</German>
+    <Italian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%d1_name[COLOR_REVERT][ICON_GOLD] bonus for discovering</Italian>
+    <Spanish>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%d1_name[COLOR_REVERT][ICON_GOLD] bonus for discovering</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_INVENTION_BONUS_GOLD_FIRST</Tag>
-    <English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%d1_name[COLOR_REVERT][ICON_GOLD] bonus for being the first to Discover</English>
-    <French>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%d1_name[COLOR_REVERT][ICON_GOLD] bonus for being the first to Discover</French>
-    <German>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%d1_name[COLOR_REVERT][ICON_GOLD] bonus for being the first to Discover</German>
-    <Italian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%d1_name[COLOR_REVERT][ICON_GOLD] bonus for being the first to Discover</Italian>
-    <Spanish>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%d1_name[COLOR_REVERT][ICON_GOLD] bonus for being the first to Discover</Spanish>
+    <English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%d1_name[COLOR_REVERT][ICON_GOLD] bonus for first to discover</English>
+    <French>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%d1_name[COLOR_REVERT][ICON_GOLD] bonus for first to discover</French>
+    <German>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%d1_name[COLOR_REVERT][ICON_GOLD] bonus for first to discover</German>
+    <Italian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%d1_name[COLOR_REVERT][ICON_GOLD] bonus for first to discover</Italian>
+    <Spanish>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%d1_name[COLOR_REVERT][ICON_GOLD] bonus for first to discover</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_RESEARCH_INCREASE_POPULATION</Tag>
@@ -1139,15 +1139,15 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_RESEARCH_ALLOWS_YIELD</Tag>
-    <English>[ICON_BULLET]Allows for the production and sell of [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT]</English>
-    <French>[ICON_BULLET]Allows for the production and sell of [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT]</French>
-    <German>[ICON_BULLET]Allows for the production and sell of [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT]</German>
-    <Italian>[ICON_BULLET]Allows for the production and sell of [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT]</Italian>
-    <Spanish>[ICON_BULLET]Allows for the production and sell of [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT]</Spanish>
+    <English>[ICON_BULLET]Allows trading and storage of [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT]</English>
+    <French>[ICON_BULLET]Allows storage and trading of [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT]</French>
+    <German>[ICON_BULLET]Allows storage and trading of [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT]</German>
+    <Italian>[ICON_BULLET]Allows storage and trading of [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT]</Italian>
+    <Spanish>[ICON_BULLET]Allows storage and trading of [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT]</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_MISC_PLAYER_COMPLETED_RESEARCH</Tag>
-    <English>You have finished Reseaching [COLOR_HIGHLIGHT_TEXT]%s1_CvcName[COLOR_REVERT]!</English>
+    <English>You have finished researching [COLOR_HIGHLIGHT_TEXT]%s1_CvcName[COLOR_REVERT]!</English>
     <French>You have finished Reseaching [COLOR_HIGHLIGHT_TEXT]%s1_CvcName[COLOR_REVERT]!</French>
     <German>You have finished Reseaching [COLOR_HIGHLIGHT_TEXT]%s1_CvcName[COLOR_REVERT]!</German>
     <Italian>You have finished Reseaching [COLOR_HIGHLIGHT_TEXT]%s1_CvcName[COLOR_REVERT]!</Italian>
@@ -1243,7 +1243,7 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_MISC_PLAYER_COMPLETED_RESEARCH_PACT</Tag>
-    <English>We have finished Reseaching [COLOR_HIGHLIGHT_TEXT]%s1_CvcName[COLOR_REVERT] with the help of our friend, [COLOR_HIGHLIGHT_TEXT]%s2_name[COLOR_REVERT]!</English>
+    <English>We have finished researching [COLOR_HIGHLIGHT_TEXT]%s1_CvcName[COLOR_REVERT] with the help of [COLOR_HIGHLIGHT_TEXT]%s2_name[COLOR_REVERT]!</English>
     <French>You have finished Reseaching [COLOR_HIGHLIGHT_TEXT]%s1_CvcName[COLOR_REVERT]!</French>
     <German>You have finished Reseaching [COLOR_HIGHLIGHT_TEXT]%s1_CvcName[COLOR_REVERT]!</German>
     <Italian>You have finished Reseaching [COLOR_HIGHLIGHT_TEXT]%s1_CvcName[COLOR_REVERT]!</Italian>
@@ -1259,7 +1259,7 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_INDUSTRILIZATION_HAS_BEGAN</Tag>
-    <English>Industrialization has just began by the [COLOR_HIGHLIGHT_TEXT]%s1_CvcName[COLOR_REVERT]!</English>
+    <English>Industrialization has begun by the [COLOR_HIGHLIGHT_TEXT]%s1_CvcName[COLOR_REVERT]!</English>
     <French>Industrialization has just began by the [COLOR_HIGHLIGHT_TEXT]%s1_CvcName[COLOR_REVERT]!</French>
     <German>Industrialization has just began by the [COLOR_HIGHLIGHT_TEXT]%s1_CvcName[COLOR_REVERT]</German>
     <Italian>Industrialization has just began by the [COLOR_HIGHLIGHT_TEXT]%s1_CvcName[COLOR_REVERT]</Italian>

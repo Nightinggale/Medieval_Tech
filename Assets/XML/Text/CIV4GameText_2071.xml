@@ -9633,7 +9633,7 @@
 	<Spanish>Physics</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_CENSURE_INTERDICT</Tag>
+	<Tag>TXT_KEY_CENSURE_INTERDICT</Tag>
 	<English>Interdict</English>
 	<French>Interdict</French>
 	<German>Interdict</German>
@@ -9641,7 +9641,7 @@
 	<Spanish>Interdict</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_CENSURE_INTERDICT_PEDIA</Tag>
+	<Tag>TXT_KEY_CENSURE_INTERDICT_PEDIA</Tag>
 	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]Interdict[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
 	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]Interdict[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
 	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]Interdict[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
@@ -9657,7 +9657,7 @@
 	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]Interdict[COLOR_REVERT] to continue our advancement.</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_CENSURE_ANATHEMA</Tag>
+	<Tag>TXT_KEY_CENSURE_ANATHEMA</Tag>
 	<English>Anathema</English>
 	<French>Anathema</French>
 	<German>Anathema</German>
@@ -9665,7 +9665,7 @@
 	<Spanish>Anathema</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_CENSURE_ANATHEMA_PEDIA</Tag>
+	<Tag>TXT_KEY_CENSURE_ANATHEMA_PEDIA</Tag>
 	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]Anathema[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
 	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]Anathema[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
 	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]Anathema[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
@@ -9681,7 +9681,7 @@
 	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]Anathema[COLOR_REVERT] to continue our advancement.</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_CENSURE_EXCOMMUNICATION</Tag>
+	<Tag>TXT_KEY_CENSURE_EXCOMMUNICATION</Tag>
 	<English>Excommunication</English>
 	<French>Excommunication</French>
 	<German>Excommunication</German>
@@ -9689,7 +9689,7 @@
 	<Spanish>Excommunication</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_CENSURE_EXCOMMUNICATION_PEDIA</Tag>
+	<Tag>TXT_KEY_CENSURE_EXCOMMUNICATION_PEDIA</Tag>
 	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]Excommunication[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
 	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]Excommunication[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
 	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]Excommunication[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
@@ -9705,7 +9705,7 @@
 	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]Excommunication[COLOR_REVERT] to continue our advancement.</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TRADING_TRADE_ROUTE_2</Tag>
+	<Tag>TXT_KEY_TRADING_TRADE_ROUTE_2</Tag>
 	<English>TRADING_TRADE_ROUTE_2</English>
 	<French>TRADING_TRADE_ROUTE_2</French>
 	<German>TRADING_TRADE_ROUTE_2</German>
@@ -9713,7 +9713,7 @@
 	<Spanish>TRADING_TRADE_ROUTE_2</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TRADING_TRADE_ROUTE_2_PEDIA</Tag>
+	<Tag>TXT_KEY_TRADING_TRADE_ROUTE_2_PEDIA</Tag>
 	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_TRADE_ROUTE_2[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
 	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_TRADE_ROUTE_2[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
 	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_TRADE_ROUTE_2[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
@@ -9729,7 +9729,7 @@
 	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]TRADING_TRADE_ROUTE_2[COLOR_REVERT] to continue our advancement.</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TRADING_TRADEPOST</Tag>
+	<Tag>TXT_KEY_TRADING_TRADEPOST</Tag>
 	<English>TRADING_TRADEPOST</English>
 	<French>TRADING_TRADEPOST</French>
 	<German>TRADING_TRADEPOST</German>
@@ -9737,7 +9737,7 @@
 	<Spanish>TRADING_TRADEPOST</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TRADING_TRADEPOST_PEDIA</Tag>
+	<Tag>TXT_KEY_TRADING_TRADEPOST_PEDIA</Tag>
 	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_TRADEPOST[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
 	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_TRADEPOST[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
 	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_TRADEPOST[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
@@ -9753,7 +9753,7 @@
 	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]TRADING_TRADEPOST[COLOR_REVERT] to continue our advancement.</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TRADING_GUILDS</Tag>
+	<Tag>TXT_KEY_TRADING_GUILDS</Tag>
 	<English>TRADING_GUILDS</English>
 	<French>TRADING_GUILDS</French>
 	<German>TRADING_GUILDS</German>
@@ -9761,7 +9761,7 @@
 	<Spanish>TRADING_GUILDS</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TRADING_GUILDS_PEDIA</Tag>
+	<Tag>TXT_KEY_TRADING_GUILDS_PEDIA</Tag>
 	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
 	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
 	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
@@ -9777,7 +9777,7 @@
 	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]TRADING_GUILDS[COLOR_REVERT] to continue our advancement.</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TECH_ACTINIDES1</Tag>
+	<Tag>TXT_KEY_TECH_ACTINIDES1</Tag>
 	<English>Actinide Analysis</English>
 	<French>Actinide Analysis</French>
 	<German>Actinide Analysis</German>
@@ -9785,7 +9785,7 @@
 	<Spanish>Actinide Analysis</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TECH_ACTINIDES1_PEDIA</Tag>
+	<Tag>TXT_KEY_TECH_ACTINIDES1_PEDIA</Tag>
 	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]Actinide Analysis[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
 	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]Actinide Analysis[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
 	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]Actinide Analysis[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
@@ -9801,7 +9801,7 @@
 	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]Actinide Analysis[COLOR_REVERT] to continue our advancement.</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TECH_ACTINIDES2</Tag>
+	<Tag>TXT_KEY_TECH_ACTINIDES2</Tag>
 	<English>Basic Actinide Extraction</English>
 	<French>Basic Actinide Extraction</French>
 	<German>Basic Actinide Extraction</German>
@@ -9809,7 +9809,7 @@
 	<Spanish>Basic Actinide Extraction</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TECH_ACTINIDES2_PEDIA</Tag>
+	<Tag>TXT_KEY_TECH_ACTINIDES2_PEDIA</Tag>
 	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]Basic Actinide Extraction[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
 	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]Basic Actinide Extraction[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
 	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]Basic Actinide Extraction[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
@@ -9825,7 +9825,7 @@
 	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]Basic Actinide Extraction[COLOR_REVERT] to continue our advancement.</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TECH_ACTINIDES3</Tag>
+	<Tag>TXT_KEY_TECH_ACTINIDES3</Tag>
 	<English>Advanced Actinide Extraction</English>
 	<French>Advanced Actinide Extraction</French>
 	<German>Advanced Actinide Extraction</German>
@@ -9833,7 +9833,7 @@
 	<Spanish>Advanced Actinide Extraction</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TECH_ACTINIDES3_PEDIA</Tag>
+	<Tag>TXT_KEY_TECH_ACTINIDES3_PEDIA</Tag>
 	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]Advanced Actinide Extraction[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
 	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]Advanced Actinide Extraction[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
 	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]Advanced Actinide Extraction[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
@@ -9849,7 +9849,7 @@
 	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]Advanced Actinide Extraction[COLOR_REVERT] to continue our advancement.</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TECH_FUSION_CORES1</Tag>
+	<Tag>TXT_KEY_TECH_FUSION_CORES1</Tag>
 	<English>Fusion Core Analysis</English>
 	<French>Fusion Core Analysis</French>
 	<German>Fusion Core Analysis</German>
@@ -9857,7 +9857,7 @@
 	<Spanish>Fusion Core Analysis</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TECH_FUSION_CORES1_PEDIA</Tag>
+	<Tag>TXT_KEY_TECH_FUSION_CORES1_PEDIA</Tag>
 	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]Fusion Core Analysis[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
 	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]Fusion Core Analysis[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
 	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]Fusion Core Analysis[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
@@ -9873,7 +9873,7 @@
 	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]Fusion Core Analysis[COLOR_REVERT] to continue our advancement.</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TECH_FUSION_CORES2</Tag>
+	<Tag>TXT_KEY_TECH_FUSION_CORES2</Tag>
 	<English>Basic Fusion Core Production</English>
 	<French>Basic Fusion Core Production</French>
 	<German>Basic Fusion Core Production</German>
@@ -9881,7 +9881,7 @@
 	<Spanish>Basic Fusion Core Production</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TECH_FUSION_CORES2_PEDIA</Tag>
+	<Tag>TXT_KEY_TECH_FUSION_CORES2_PEDIA</Tag>
 	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]Basic Fusion Core Production[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
 	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]Basic Fusion Core Production[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
 	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]Basic Fusion Core Production[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
@@ -9897,7 +9897,7 @@
 	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]Basic Fusion Core Production[COLOR_REVERT] to continue our advancement.</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TECH_FUSION_CORES3</Tag>
+	<Tag>TXT_KEY_TECH_FUSION_CORES3</Tag>
 	<English>Advanced Fusion Core Production</English>
 	<French>Advanced Fusion Core Production</French>
 	<German>Advanced Fusion Core Production</German>
@@ -9905,7 +9905,7 @@
 	<Spanish>Advanced Fusion Core Production</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TECH_FUSION_CORES3_PEDIA</Tag>
+	<Tag>TXT_KEY_TECH_FUSION_CORES3_PEDIA</Tag>
 	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]Advanced Fusion Core Production[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
 	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]Advanced Fusion Core Production[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
 	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]Advanced Fusion Core Production[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
@@ -9921,7 +9921,7 @@
 	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]Advanced Fusion Core Production[COLOR_REVERT] to continue our advancement.</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TECH_FUSION_CORES4</Tag>
+	<Tag>TXT_KEY_TECH_FUSION_CORES4</Tag>
 	<English>Intensive Fusion Core Production</English>
 	<French>Intensive Fusion Core Production</French>
 	<German>Intensive Fusion Core Production</German>
@@ -9929,7 +9929,7 @@
 	<Spanish>Intensive Fusion Core Production</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TECH_FUSION_CORES4_PEDIA</Tag>
+	<Tag>TXT_KEY_TECH_FUSION_CORES4_PEDIA</Tag>
 	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]Intensive Fusion Core Production[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
 	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]Intensive Fusion Core Production[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
 	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]Intensive Fusion Core Production[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
@@ -9945,7 +9945,7 @@
 	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]Intensive Fusion Core Production[COLOR_REVERT] to continue our advancement.</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TECH_RARE_EARTHS1</Tag>
+	<Tag>TXT_KEY_TECH_RARE_EARTHS1</Tag>
 	<English>Rare Earth Analysis</English>
 	<French>Rare Earth Analysis</French>
 	<German>Rare Earth Analysis</German>
@@ -9953,7 +9953,7 @@
 	<Spanish>Rare Earth Analysis</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TECH_RARE_EARTHS1_PEDIA</Tag>
+	<Tag>TXT_KEY_TECH_RARE_EARTHS1_PEDIA</Tag>
 	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]Rare Earth Analysis[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
 	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]Rare Earth Analysis[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
 	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]Rare Earth Analysis[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
@@ -9969,7 +9969,7 @@
 	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]Rare Earth Analysis[COLOR_REVERT] to continue our advancement.</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TECH_RARE_EARTHS2</Tag>
+	<Tag>TXT_KEY_TECH_RARE_EARTHS2</Tag>
 	<English>Basic Rare Earth Extraction</English>
 	<French>Basic Rare Earth Extraction</French>
 	<German>Basic Rare Earth Extraction</German>
@@ -9977,7 +9977,7 @@
 	<Spanish>Basic Rare Earth Extraction</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TECH_RARE_EARTHS2_PEDIA</Tag>
+	<Tag>TXT_KEY_TECH_RARE_EARTHS2_PEDIA</Tag>
 	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]Basic Rare Earth Extraction[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
 	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]Basic Rare Earth Extraction[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
 	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]Basic Rare Earth Extraction[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
@@ -9993,7 +9993,7 @@
 	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]Basic Rare Earth Extraction[COLOR_REVERT] to continue our advancement.</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TECH_RARE_EARTHS3</Tag>
+	<Tag>TXT_KEY_TECH_RARE_EARTHS3</Tag>
 	<English>Advanced Rare Earth Extraction</English>
 	<French>Advanced Rare Earth Extraction</French>
 	<German>Advanced Rare Earth Extraction</German>
@@ -10001,7 +10001,7 @@
 	<Spanish>Advanced Rare Earth Extraction</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TECH_RARE_EARTHS3_PEDIA</Tag>
+	<Tag>TXT_KEY_TECH_RARE_EARTHS3_PEDIA</Tag>
 	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]Advanced Rare Earth Extraction[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
 	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]Advanced Rare Earth Extraction[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
 	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]Advanced Rare Earth Extraction[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
@@ -10017,7 +10017,7 @@
 	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]Advanced Rare Earth Extraction[COLOR_REVERT] to continue our advancement.</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TECH_SEMICONDUCTORS1</Tag>
+	<Tag>TXT_KEY_TECH_SEMICONDUCTORS1</Tag>
 	<English>Semiconductor Analysis</English>
 	<French>Semiconductor Analysis</French>
 	<German>Semiconductor Analysis</German>
@@ -10025,7 +10025,7 @@
 	<Spanish>Semiconductor Analysis</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TECH_SEMICONDUCTORS1_PEDIA</Tag>
+	<Tag>TXT_KEY_TECH_SEMICONDUCTORS1_PEDIA</Tag>
 	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]Semiconductor Analysis[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
 	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]Semiconductor Analysis[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
 	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]Semiconductor Analysis[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
@@ -10041,7 +10041,7 @@
 	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]Semiconductor Analysis[COLOR_REVERT] to continue our advancement.</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TECH_SEMICONDUCTORS2</Tag>
+	<Tag>TXT_KEY_TECH_SEMICONDUCTORS2</Tag>
 	<English>Basic Semiconductor Production</English>
 	<French>Basic Semiconductor Production</French>
 	<German>Basic Semiconductor Production</German>
@@ -10049,7 +10049,7 @@
 	<Spanish>Basic Semiconductor Production</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TECH_SEMICONDUCTORS2_PEDIA</Tag>
+	<Tag>TXT_KEY_TECH_SEMICONDUCTORS2_PEDIA</Tag>
 	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]Basic Semiconductor Production[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
 	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]Basic Semiconductor Production[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
 	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]Basic Semiconductor Production[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
@@ -10065,7 +10065,7 @@
 	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]Basic Semiconductor Production[COLOR_REVERT] to continue our advancement.</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TECH_SEMICONDUCTORS3</Tag>
+	<Tag>TXT_KEY_TECH_SEMICONDUCTORS3</Tag>
 	<English>Advanced Semiconductor Production</English>
 	<French>Advanced Semiconductor Production</French>
 	<German>Advanced Semiconductor Production</German>
@@ -10073,7 +10073,7 @@
 	<Spanish>Advanced Semiconductor Production</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TECH_SEMICONDUCTORS3_PEDIA</Tag>
+	<Tag>TXT_KEY_TECH_SEMICONDUCTORS3_PEDIA</Tag>
 	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]Advanced Semiconductor Production[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
 	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]Advanced Semiconductor Production[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
 	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]Advanced Semiconductor Production[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>
@@ -10089,7 +10089,7 @@
 	<Spanish>Research [COLOR_HIGHLIGHT_TEXT]Advanced Semiconductor Production[COLOR_REVERT] to continue our advancement.</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TECH_SEMICONDUCTORS4</Tag>
+	<Tag>TXT_KEY_TECH_SEMICONDUCTORS4</Tag>
 	<English>Intensive Semiconductor Production</English>
 	<French>Intensive Semiconductor Production</French>
 	<German>Intensive Semiconductor Production</German>
@@ -10097,7 +10097,7 @@
 	<Spanish>Intensive Semiconductor Production</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_TECH_TECH_SEMICONDUCTORS4_PEDIA</Tag>
+	<Tag>TXT_KEY_TECH_SEMICONDUCTORS4_PEDIA</Tag>
 	<English>The discovery of [COLOR_HIGHLIGHT_TEXT]Intensive Semiconductor Production[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</English>
 	<French>The discovery of [COLOR_HIGHLIGHT_TEXT]Intensive Semiconductor Production[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</French>
 	<German>The discovery of [COLOR_HIGHLIGHT_TEXT]Intensive Semiconductor Production[COLOR_REVERT] was a crucial step in the struggle of Earthling colonists and Alien Empires to reach self-sufficiency and independence from their distant masters.</German>

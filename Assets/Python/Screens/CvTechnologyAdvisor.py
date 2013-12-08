@@ -12,7 +12,6 @@ gc = CyGlobalContext()
 ArtFileMgr = CyArtFileMgr()
 localText = CyTranslator()
 
-
 # this class is shared by both the resource and technology foreign advisors
 #converted from Continental Army
 class CvTechnologyAdvisor:
@@ -38,9 +37,6 @@ class CvTechnologyAdvisor:
 		screen = self.getScreen()
 		if screen.isActive():
 			return
-	
-		
-		
 
 		screen.setRenderInterfaceOnly(True);
 		screen.showScreen(PopupStates.POPUPSTATE_IMMEDIATE, False)
@@ -65,7 +61,6 @@ class CvTechnologyAdvisor:
 		self.SCREEN_TITLE = u"<font=4b>" + localText.getText("TXT_KEY_TECHONOLOGY_ADVISOR_TITLE", ()).upper() + u"</font>"
 		self.SCREEN_TITLE = localText.changeTextColor(self.SCREEN_TITLE, gc.getInfoTypeForString("COLOR_FONT_CREAM"))
 
-
 		self.Y_REVOLUTION = self.YResolution / 13
 		self.W_REVOLUTION = self.XResolution * 2 / 5
 		
@@ -86,10 +81,6 @@ class CvTechnologyAdvisor:
 		#Controls Tech Size in General
 		self.ICON_BUTTON_SIZE = self.YResolution / 34
 		
-		
-		
-		
-		
 		self.TECH_BACKGROUND_X = self.ICON_BUTTON_SIZE * 10
 		self.TECH_BACKGROUND_Y = self.ICON_BUTTON_SIZE * 3
 		self.MAGNIFYING_GLASS_X = self.ICON_BUTTON_SIZE * 8
@@ -106,7 +97,6 @@ class CvTechnologyAdvisor:
 		self.MAGNIFYING_GLASS = self.XResolution / 2
 		player = gc.getPlayer(gc.getGame().getActivePlayer())
 		self.PLAYER_RESEARCH = player.getCurrentResearch()
-		
 		
 		self.YCATEGORY = self.YResolution * 5 / 100
 		self.YMAGNIFYING_GLASS = int(self.YResolution / 2.1)
@@ -133,7 +123,6 @@ class CvTechnologyAdvisor:
 		screen.setText( "Title", ScrollPanel, self.SCREEN_TITLE, CvUtil.FONT_CENTER_JUSTIFY, self.XResolution / 2, 4, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		screen.setText( "RevolutionScreenExit", ScrollPanel, u"<font=4>" + CyTranslator().getText("TXT_KEY_PEDIA_SCREEN_EXIT", ()).upper() + "</font>", CvUtil.FONT_RIGHT_JUSTIFY, self.XResolution - 30, self.YResolution - 36, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_CLOSE_SCREEN, -1, -1 )
 		screen.setActivation( "RevolutionScreenExit", ActivationTypes.ACTIVATE_MIMICPARENTFOCUS )
-		
 		
 		# Draw Contents
 		self.drawIdeasExperience(-1)
@@ -164,8 +153,6 @@ class CvTechnologyAdvisor:
 			screen.setBarPercentage(szWidget, InfoBarTypes.INFOBAR_STORED, float(self.pActivePlayer.getIdeaProgress(iResearch)) / float(self.pActivePlayer.getCostToResearch(iResearch)))
 			screen.setLabel(szWidget + "label", "", u"<font=3>" + localText.getText("TXT_KEY_TECH_SCREEN_PROGRESS", (self.pActivePlayer.getIdeaProgress(iResearch), self.pActivePlayer.getCostToResearch(iResearch))) + u"</font>", CvUtil.FONT_CENTER_JUSTIFY,  self.XResolution / 2, self.YResolution - 32, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 					
-																									
-	
 	def drawCivics(self):
 		screen = self.getScreen()
 		player = gc.getPlayer(gc.getGame().getActivePlayer())
@@ -258,15 +245,10 @@ class CvTechnologyAdvisor:
 											szOrText = localText.getText("TXT_KEY_TK_OR", ())
 											szOrText = localText.changeTextColor(szOrText, gc.getInfoTypeForString("COLOR_FONT_CREAM"))
 											screen.setTextAt("OrText" + str(iListCivic), ScrollPanel, "<font=2>" + szOrText + "</font>", CvUtil.FONT_LEFT_JUSTIFY, int(localx + self.ICON_BUTTON_SIZE * 5.5) + LineReturn + iNoNeedsUnit, localy + int(iconModSize * 1.4), -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
-										
-										
-										
-											
+								
 										#screen.attachMultilineText("ScrollPanel", "Text", szFatherData, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 										#screen.moveToFront("ScrollPanel")
-										
-										
-										
+									
 										screen.addDDSGFCAt("CategoryBox" + str(iListCivic), ScrollPanel, gc.getCivicInfo(iCivic).getButton(), localx + self.ICON_BUTTON_SIZE + LineReturn, localy + (self.ICON_BUTTON_SIZE * 2), self.ICON_BUTTON_SIZE, self.ICON_BUTTON_SIZE, WidgetTypes.WIDGET_GENERAL, self.AMENDMENT_BUTTON, iCivic, false)
 										screen.setImageButtonAt("TechBox" + str(iListCivic), ScrollPanel, gc.getCivicInfo(iListCivic).getButton(), localx + self.ICON_BUTTON_SIZE + LineReturn,  localy + (self.ICON_BUTTON_SIZE / 2), self.ICON_BUTTON_SIZE, self.ICON_BUTTON_SIZE,  WidgetTypes.WIDGET_INVENTORS_HOUSE, self.CATEGORY + iDisplayClickTxt, iListCivic)
 										#bTest = True
@@ -276,9 +258,7 @@ class CvTechnologyAdvisor:
 										screen.addDDSGFCAt("HidesTech" + str(iListCivic), ScrollPanel, ArtFileMgr.getInterfaceArtInfo("INTERFACE_HIDES_TECH").getPath(), localx + LineReturn, localy, self.TECH_BACKGROUND_X, self.TECH_BACKGROUND_Y,  WidgetTypes.WIDGET_GENERAL, -1, -1, false)
 									
 									LineReturn = self.TECH_BACKGROUND_X + LineReturn
-									
-									
-										
+													
 					self.TEMP_RESEARCH == -1
 		return 0
 
@@ -299,15 +279,12 @@ class CvTechnologyAdvisor:
 			#self.SCREEN_PROGRESS = u"<font=4b>" + localText.getText("TXT_KEY_CURRENT_PROGRESS_PYTHON", (player.getCurrentResearchProgress(True, -1),)).upper() + u"</font>"
 			#self.SCREEN_PROGRESS = localText.changeTextColor(self.SCREEN_PROGRESS, gc.getInfoTypeForString("COLOR_FONT_CREAM"))
 			#screen.setText("ResearchPROGRESS", ScrollPanel, self.SCREEN_PROGRESS, CvUtil.FONT_CENTER_JUSTIFY, self.XResolution / 2, self.YResolution - 36, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
-		
 			
 		if self.TEMP_RESEARCH != -1 and self.TEMP_RESEARCH != iResearch:
 			iValue = 0
 			if iResearch != -1:
 				iValue = self.ResearchButtonDiffer
 				
-		
-			
 		#unLearned Techs
 		
 		bTest = False
@@ -323,22 +300,14 @@ class CvTechnologyAdvisor:
 		for iCivic in range(gc.getNumCivicInfos()):
 			if (gc.getCivicInfo(iCivic).getCivicOptionType() == 5 and iCivic == 1):
 				if gc.getCivicInfo(iCivic).getInventionCategory() == -1:
-					
-
-					
 					for iListCivic in range(gc.getNumCivicInfos()):
-						if (gc.getCivicInfo(iListCivic).getCivicOptionType() == 5):
-							
+						if (gc.getCivicInfo(iListCivic).getCivicOptionType() == 5):				
 							iCategory = gc.getCivicInfo(iListCivic).getInventionCategory()
-							
 							if iCategory == iCivic:
 								if (bTest == False):
 									
-									
-									
 									#localy = gc.getCivicInfo(iListCivic).getY_Location()
-									#localx = gc.getCivicInfo(iListCivic).getX_Location()
-									
+									#localx = gc.getCivicInfo(iListCivic).getX_Location()	
 																	
 									localx = 30 + ( (gc.getCivicInfo(iListCivic).getX_Location() - 1) * ( ( self.BOX_INCREMENT_X_SPACING + self.BOX_INCREMENT_WIDTH ) * self.PIXEL_INCREMENT ) )
 									localy = ( gc.getCivicInfo(iListCivic).getY_Location() - 1 ) * ( self.BOX_INCREMENT_Y_SPACING * self.PIXEL_INCREMENT ) + 5
@@ -425,8 +394,7 @@ class CvTechnologyAdvisor:
 										szHelp = CyGameTextMgr().parseCivicInfo(iListCivic, False, False, True, True, player.getCivilizationType())
 										szHelp = localText.changeTextColor(szHelp, gc.getInfoTypeForString("COLOR_FONT_CREAM"))
 										screen.setTextAt("Cost" + str(iListCivic), ScrollPanel, "<font=2>" + szHelp + "</font>", CvUtil.FONT_LEFT_JUSTIFY, localx + self.ICON_BUTTON_SIZE * 2, localy +  int(self.ICON_BUTTON_SIZE * 1.9), -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_INVENTORS_HOUSE, self.CATEGORY + iDisplayClickTxt, iListCivic)
-										
-										
+					
 										if gc.getCivicInfo(iListCivic).getRequiredUnitType() != UnitTypes.NO_UNIT:
 											iRequiredUnit = gc.getCivilizationInfo(player.getCivilizationType()).getCivilizationUnits(gc.getCivicInfo(iListCivic).getRequiredUnitType())
 											iProfession = gc.getUnitInfo(iRequiredUnit).getDefaultProfession()
@@ -456,8 +424,7 @@ class CvTechnologyAdvisor:
 		self.nWidgetCount += 1
 		return szName
 	def handleInput(self, inputClass):
-		
-					
+			
 		if (inputClass.getNotifyCode() == NotifyCode.NOTIFY_CLICKED and inputClass.getFlags() & MouseFlags.MOUSE_LBUTTONUP):
 			if (inputClass.getData1() == self.CATEGORY + 1 or inputClass.getData1() == self.AMENDMENT_BUTTON):
 				player = gc.getPlayer(gc.getGame().getActivePlayer())
@@ -486,9 +453,6 @@ class CvTechnologyAdvisor:
 					self.drawIdeasExperience(inputClass.getData2())
 					#self.TEMP_RESEARCH = inputClass.getData2()
 				
-				
-			
-		
 			#if (inputClass.isShiftKeyDown()):
 			
 			##FUNCTIONS##

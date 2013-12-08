@@ -435,7 +435,6 @@ print ADT '<Civ4ArtDefines xmlns="x-schema:CIV4ArtDefinesSchema.xml">'."\n<Terra
 $landorder=1;
 $waterorder=50;
 
-
 # 1st arg = terrain tagname, 2nd = description, 3rd = hash (yield=>production)
 sub makeland
 {
@@ -3609,6 +3608,7 @@ sub maketech {
 	my $allowsyield = shift;
 	my $allowsbuilding = shift;
 	my $allowsprof = shift;
+	my $consumed = shift;
 	if ($req =~ /w+/) {
 		$req = 'TECH_'.$req;
 		}
@@ -3653,12 +3653,16 @@ sub maketech {
 	print CI "\t<RequiredInvention2/>\n";
 	print CI "\t<RequiredInventionOr/>\n";
 	print CI "\t<RequiredUnitType/>\n";
-	print CI "\t<RequiredYields>\n";
-	print CI "\t\t<RequiredYield>\n";
-	print CI "\t\t\t<RequiredYieldType>YIELD_MACHINE_TOOLS</RequiredYieldType>\n";
-	print CI "\t\t\t<iYieldCost>40</iYieldCost>\n";
-	print CI "\t\t</RequiredYield>\n";
-	print CI "\t</RequiredYields>\n";
+	if ($consumed =~ /\w+/){
+		print CI "\t<RequiredYields>\n";
+		print CI "\t\t<RequiredYield>\n";
+		print CI "\t\t\t<RequiredYieldType>YIELD_".$consumed."</RequiredYieldType>\n";
+		print CI "\t\t\t<iYieldCost>40</iYieldCost>\n";
+		print CI "\t\t</RequiredYield>\n";
+		print CI "\t</RequiredYields>\n";
+		} else {
+		print CI "\t<RequiredYields/>\n";
+		}
 	if ($allowsyield =~ /\w+/){
 		print CI "\t<AllowsYields>\n";
 		print CI "\t\t<AllowsYield>\n";
@@ -3729,14 +3733,12 @@ sub maketech {
 
 #tag,description,category,xcoord,ycoord,requiredinvention,allowyield,allowbldg,allowprof
 #M:C hardcoded techs
-&maketech('CENSURE_INTERDICT','Interdict','MEDIEVAL_CENSURE',0,0,'NONE','','','');
-&maketech('CENSURE_ANATHEMA','Anathema','MEDIEVAL_CENSURE',0,0,'NONE','','','');
-&maketech('CENSURE_EXCOMMUNICATION','Excommunication','MEDIEVAL_CENSURE',0,0,'NONE','','','');
-&maketech('TRADING_TRADE_ROUTE_2','TRADING_TRADE_ROUTE_2','MEDIEVAL_TRADE_TECH',0,0,'NONE','','','');
-&maketech('TRADING_TRADEPOST','TRADING_TRADEPOST','MEDIEVAL_TRADE_TECH',0,0,'NONE','','','');
-&maketech('TRADING_GUILDS','TRADING_GUILDS','MEDIEVAL_TRADE_TECH',0,0,'NONE','','','');
-
-#&maketech('TEST','TRADING_GUILDS','MEDIEVAL_TRADE_TECH',3,3,'NONE','','','');
+&maketech('CENSURE_INTERDICT','Interdict','MEDIEVAL_CENSURE',0,0,'NONE','','','','');
+&maketech('CENSURE_ANATHEMA','Anathema','MEDIEVAL_CENSURE',0,0,'NONE','','','','');
+&maketech('CENSURE_EXCOMMUNICATION','Excommunication','MEDIEVAL_CENSURE',0,0,'NONE','','','','');
+&maketech('TRADING_TRADE_ROUTE_2','TRADING_TRADE_ROUTE_2','MEDIEVAL_TRADE_TECH',0,0,'NONE','','','','');
+&maketech('TRADING_TRADEPOST','TRADING_TRADEPOST','MEDIEVAL_TRADE_TECH',0,0,'NONE','','','','');
+&maketech('TRADING_GUILDS','TRADING_GUILDS','MEDIEVAL_TRADE_TECH',0,0,'NONE','','','','');
 
 $x=1;
 $y=1;
@@ -3750,41 +3752,151 @@ sub maketechlineraw {
 	my $cat = 'MEDIEVAL_TRADE_TECH';
 	$x=1;
 	#allow yield
-	&maketech('TECH_'.$yield.'1',$desc.' Analysis',$cat,$x,$y,'',$yield,'','');
+	&maketech('TECH_'.$yield.'1',$desc.' Analysis',$cat,$x,$y,'',$yield,'','','SILICATES');
 	$x++;
 	#allow prof
-	&maketech('TECH_'.$yield.'2','Basic '.$desc.' Extraction',$cat,$x,$y,'TECH_'.$yield.'1','','',$yield);
+	&maketech('TECH_'.$yield.'2','Basic '.$desc.' Extraction',$cat,$x,$y,'TECH_'.$yield.'1','','',$yield,$yield);
 	$x++;
 	#production boost
-	&maketech('TECH_'.$yield.'3','Advanced '.$desc.' Extraction',$cat,$x,$y,'TECH_'.$yield.'2','','','');
+	&maketech('TECH_'.$yield.'3','Advanced '.$desc.' Extraction',$cat,$x,$y,'TECH_'.$yield.'2','','','',$yield);
 	$y=$y+2;
 	}
 
+sub maketechlineraw1 {
+	my $yield = shift;
+	my $desc = shift;
+#	my $cat = shift;
+	my $cat = 'MEDIEVAL_TRADE_TECH';
+	$x=1;
+	#allow yield
+#	&maketech('TECH_'.$yield.'1',$desc.' Analysis',$cat,$x,$y,'',$yield,'','','SILICATES');
+#	$x++;
+	#allow prof
+	&maketech('TECH_'.$yield.'2','Basic '.$desc.' Extraction',$cat,$x,$y,'','','',$yield,$yield);
+	$x++;
+	#production boost
+	&maketech('TECH_'.$yield.'3','Advanced '.$desc.' Extraction',$cat,$x,$y,'TECH_'.$yield.'2','','','',$yield);
+	$y=$y+2;
+	}
+	
 sub maketechlinecity {
 	my $yield = shift;
 	my $desc = shift;
 #	my $cat = shift;
 	my $cat = 'MEDIEVAL_TRADE_TECH';
-	$x=2;
+	$x=1;
 	#allow yield
-	&maketech('TECH_'.$yield.'1',$desc.' Analysis',$cat,$x,$y,'',$yield,'','');
+	&maketech('TECH_'.$yield.'1',$desc.' Analysis',$cat,$x,$y,'',$yield,'','','MACHINE_TOOLS');
 	$x++;
 	#allow prof + bldg 1
-	&maketech('TECH_'.$yield.'2','Basic '.$desc.' Production',$cat,$x,$y,'TECH_'.$yield.'1','',$yield.'1',$yield);
+	&maketech('TECH_'.$yield.'2','Basic '.$desc.' Production',$cat,$x,$y,'TECH_'.$yield.'1','',$yield.'1',$yield,$yield);
 	$x++;
 	#building 2
-	&maketech('TECH_'.$yield.'3','Advanced '.$desc.' Production',$cat,$x,$y,'TECH_'.$yield.'2','',$yield.'2','');
+	&maketech('TECH_'.$yield.'3','Advanced '.$desc.' Production',$cat,$x,$y,'TECH_'.$yield.'2','',$yield.'2','',$yield);
 	$x++;
 	#building 3
-	&maketech('TECH_'.$yield.'4','Intensive '.$desc.' Production',$cat,$x,$y,'TECH_'.$yield.'3','',$yield.'3','');
+	&maketech('TECH_'.$yield.'4','Intensive '.$desc.' Production',$cat,$x,$y,'TECH_'.$yield.'3','',$yield.'3','',$yield);
 	$y=$y+2;
 	}
 
-&maketechlineraw('ACTINIDES','Actinide','TECH_CATEGORY_PHYSICS');
+@plotprofs = (
+	['Agriculture','NUTRIENTS'],
+	['Biopolymer Harvesting','BIOPOLYMERS'],
+	['Base Metals Mining','BASE_METALS'],
+	['Silicate Mining','SILICATES'],
+	['Precious Metals Excavation','PRECIOUS_METALS'],
+	['Actinide Extraction','ACTINIDES'],
+	['Isotope Extraction','ISOTOPES'],
+	['Rare Earths Extraction','RARE_EARTHS'],
+	['Crystalloid Extraction','CRYSTALLOIDS'],
+	['Nucleic Acid Culture','NUCLEIC_ACIDS'],
+	['Amino Acid Culture','AMINO_ACIDS'],
+	['Tissue Sample Culture','TISSUE_SAMPLES'],
+	['Microbial Culture','MICROBES'],
+	['Datacore Excavation','DATACORES'],
+	['Artifact Excavation','PROGENITOR_ARTIFACTS'],
+	['Alien Specimen Excavation','ALIEN_SPECIMENS'],
+	['Opiates Cultivation','OPIATES'],
+	['Xenotoxin Cultivation','XENOTOXINS'],
+	['Botanical Cultivation','BOTANICALS'],
+	['Hydrocarbon Drilling','HYDROCARBONS'],
+	['Clathrate Drilling','CLATHRATES'],
+	['Core Sample Drilling','CORE_SAMPLES']
+	);
+	
+# professions producing yields in buildings
+@cityprofs = (
+	['Machine Tool Casting','MACHINE_TOOLS','BASE_METALS'],
+	['Robotics Manufacturing','ROBOTICS','MACHINE_TOOLS'],
+	['Munitions Manufacturing','MUNITIONS','MACHINE_TOOLS'],
+	['Photonics Manufacturing','PHOTONICS','CRYSTALLOIDS'],
+	['Plasteel Smelting','PLASTEEL','BASE_METALS','BIOPOLYMERS'],
+	['Duralloy Smelting','DURALLOY','BASE_METALS','SILICATES'],
+	['Crystalloy Smelting','CRYSTALLOY','PRECIOUS_METALS','CRYSTALLOIDS'],
+	['Fusion Core Enrichment','FUSION_CORES','ACTINIDES'],
+	['Nucleonics Enrichment','NUCLEONICS','ISOTOPES'],
+	['Semiconductor Fabrication','SEMICONDUCTORS','RARE_EARTHS'],
+	['Plasmid Biosynthesis','PLASMIDS','NUCLEIC_ACIDS'],
+	['Enzyme Biosynthesis','ENZYMES','AMINO_ACIDS'],
+	['Stem Cell Dissection','STEM_CELLS','TISSUE_SAMPLES'],
+	['Datacore Analysis','STATE_SECRETS','DATACORES'],
+	['Artifact Analysis','PROGENITOR_TECH','PROGENITOR_ARTIFACTS'],
+	['Alien Specimen Dissection','ALIEN_RELICS','ALIEN_SPECIMENS'],
+	['Narcotics Distillation','NARCOTICS','OPIATES'],
+	['Bioweapons Distillation','BIOWEAPONS','XENOTOXINS'],
+	['Pharmaceuticals Distillation','PHARMACEUTICALS','BOTANICALS'],
+	['Petrochemical Refining','PETROCHEMICALS','HYDROCARBONS'],
+	['Colloids Refining','COLLOIDS','CLATHRATES'],
+	['Catalyst Refining','CATALYSTS','CORE_SAMPLES'],
+	['Investment Banking','HARD_CURRENCY','PRECIOUS_METALS'],
+	['Construction','INDUSTRY'],
+	['Mass Media','MEDIA'],
+	['Administration','LIBERTY'],
+	['Education','EDUCATION'],
+	['Applied Research','RESEARCH']
+	);
+
+&maketechlineraw1('NUCLEIC_ACIDS','Nucleic Acid','TECH_CATEGORY_GENETICS');
+&maketechlinecity('PLASMIDS','Plasmid','TECH_CATEGORY_GENETICS');
+&maketechlineraw('AMINO_ACIDS','Amino Acid','TECH_CATEGORY_GENETICS');
+&maketechlinecity('ENZYMES','Enzyme','TECH_CATEGORY_GENETICS');
+&maketechlineraw('TISSUE_SAMPLES','Tissue','TECH_CATEGORY_GENETICS');
+&maketechlinecity('STEM_CELLS','Stem Cell','TECH_CATEGORY_GENETICS');
+
+&maketechlineraw('MICROBES','Microbial','TECH_CATEGORY_GENETICS');
+
+&maketechlineraw1('OPIATES','Nucleic Acid','TECH_CATEGORY_XENOBOTANY');
+&maketechlinecity('NARCOTICS','Narcotic','TECH_CATEGORY_XENOBOTANY');
+&maketechlineraw('XENOTOXINS','Amino Acid','TECH_CATEGORY_XENOBOTANY');
+&maketechlinecity('BIOWEAPONS','Bioweapon','TECH_CATEGORY_XENOBOTANY');
+&maketechlineraw('BOTANICALS','Tissue','TECH_CATEGORY_XENOBOTANY');
+&maketechlinecity('PHARMACEUTICALS','Pharmaceuticals','TECH_CATEGORY_XENOBOTANY');
+
+&maketechlineraw1('DATACORES','Datacore','TECH_CATEGORY_ARCHAEOLOGY');
+&maketechlinecity('STATE_SECRETS','State Secrets','TECH_CATEGORY_ARCHAEOLOGY');
+&maketechlineraw('PROGENITOR_ARTIFACTS','Artifact','TECH_CATEGORY_ARCHAEOLOGY');
+&maketechlinecity('PROGENITOR_TECH','Progenitor Tech','TECH_CATEGORY_ARCHAEOLOGY');
+&maketechlineraw('ALIEN_SPECIMENS','Alien Specimen','TECH_CATEGORY_ARCHAEOLOGY');
+&maketechlinecity('ALIEN_RELICS','Relic','TECH_CATEGORY_ARCHAEOLOGY');
+
+&maketechlineraw1('HYDROCARBONS','Hydrocarbons','TECH_CATEGORY_CHEMISTRY');
+&maketechlinecity('PETROCHEMICALS','State Secrets','TECH_CATEGORY_CHEMISTRY');
+&maketechlineraw('CLATHRATES','Clathrate','TECH_CATEGORY_CHEMISTRY');
+&maketechlinecity('COLLOIDS','Colloidal','TECH_CATEGORY_CHEMISTRY');
+&maketechlineraw('CORE_SAMPLES','Core Samples','TECH_CATEGORY_CHEMISTRY');
+&maketechlinecity('CATALYSTS','Catalyst','TECH_CATEGORY_CHEMISTRY');
+
+&maketechlineraw('PRECIOUS_METALS','Precious Metals','TECH_CATEGORY_CHEMISTRY');
+
+&maketechlineraw1('ACTINIDES','Actinide','TECH_CATEGORY_PHYSICS');
 &maketechlinecity('FUSION_CORES','Fusion Core','TECH_CATEGORY_PHYSICS');
+&maketechlineraw('ISOTOPES','Isotope','TECH_CATEGORY_PHYSICS');
+&maketechlinecity('NUCLEONICS','Nucleonic','TECH_CATEGORY_PHYSICS');
 &maketechlineraw('RARE_EARTHS','Rare Earth','TECH_CATEGORY_PHYSICS');
 &maketechlinecity('SEMICONDUCTORS','Semiconductor','TECH_CATEGORY_PHYSICS');
-	
+
+&maketechlineraw('CRYSTALLOIDS','Crystalloid','TECH_CATEGORY_PHYSICS');
+
 #foreach @cityprof (@plotprofs) {
 #	$profdesc = $cityprof[0];
 #	$procyield = $cityprof[1];

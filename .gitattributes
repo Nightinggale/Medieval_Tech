@@ -1,0 +1,19 @@
+# Declare files that will always have CRLF line endings on checkout.
+*.cpp text eol=crlf
+*.h text eol=crlf
+*.hpp text eol=crlf
+*.py text eol=crlf
+*.xml text eol=crlf
+*.inl text eol=crlf
+*.pl text eol=crlf
+*.sln text eol=crlf
+*.vcxproj text eol=crlf
+*.bat text eol=crlf
+*.txt text eol=crlf
+
+*.dll binary
+*.exe binary
+
+.gitattributes export-ignore
+.gitignore export-ignore
+README.md export-ignore

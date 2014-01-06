@@ -634,6 +634,7 @@ public:
 	DllExport void setCityBillboardDirty(bool bNewValue);
 	DllExport bool isEurope() const;
 	DllExport bool isInRevolution() const;
+	void giveBackParentCities();//multinvasion 
 	bool checkIndependence() const;
 
 	void applyMissionaryPoints(CvCity* pCity);

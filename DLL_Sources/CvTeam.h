@@ -165,10 +165,11 @@ public:
 	void setTurnActive(bool bNewValue, bool bTurn = true);
 	bool isTurnActive() const;
 
+	void doRebellion();//multinvasion
 	int getRebelPercent() const;
 	bool canDoRevolution() const;
 	bool isInRevolution() const;
-	void doRevolution();
+	void doRevolution(bool bRebellion = false);//multinvasion
 	bool isParentOf(TeamTypes eChildTeam) const;
 	bool checkIndependence() const;
 

@@ -571,6 +571,8 @@ void CvTeam::doTurn()
 	AI_doTurnPre();
 	testFoundingFather();
 
+	doRebellion();//multinvasion
+	
 	AI_doTurnPost();
 }
 
@@ -2697,6 +2699,31 @@ bool CvTeam::isTurnActive() const
 
 	return false;
 }
+//multinvasion
+void CvTeam::doRebellion()
+{
+	if (isInRevolution())
+		return;
+
+	bool bRebellion = false;
+	for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+	{
+		CvPlayer& kPlayer = GET_PLAYER((PlayerTypes)iPlayer);
+		if (kPlayer.isAlive() && kPlayer.getTeam() == getID() && kPlayer.getParent() != NO_PLAYER && GET_PLAYER(kPlayer.getParent()).isAlive())
+		{
+			if (GET_TEAM(GET_PLAYER(kPlayer.getParent()).getTeam()).AI_getAttitudeVal((TeamTypes)getID()) < 0)
+			{
+
+				if (GC.getGame().getSorenRandNum(100, "Rebellion lottery") < GET_TEAM(GET_PLAYER(kPlayer.getParent()).getTeam()).AI_getAttitudeVal((TeamTypes)getID())*-1)
+					bRebellion = true;
+			}
+		}
+	}
+	if (bRebellion)
+		doRevolution(true);
+	
+}
+//multinvasion end
 
 int CvTeam::getRebelPercent() const
 {
@@ -2761,7 +2788,8 @@ bool CvTeam::canDoRevolution() const
 		return false;
 	}
 
-	return true;
+	//return true; multinvasion
+	return false;
 }
 
 bool CvTeam::isInRevolution() const
@@ -2778,12 +2806,24 @@ bool CvTeam::isInRevolution() const
 	return false;
 }
 
-void CvTeam::doRevolution()
+void CvTeam::doRevolution(bool bRebellion)//multinvasion
 {
-	if (!canDoRevolution())
+	//multinvasion
+	if (!bRebellion)
 	{
-		return;
+		if (!canDoRevolution())
+		{
+			return;
+		}
 	}
+	else
+	{
+		if (isInRevolution())
+		{
+			return;
+		}
+	}
+	//multinvasion end
 	///TKs Med Stop Auto Play on anyones Revolution
 	if (gDLL->getChtLvl() > 0 && GC.getGameINLINE().getAIAutoPlay() > 0)
     {

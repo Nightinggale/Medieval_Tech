@@ -5962,6 +5962,31 @@ bool CvGame::testVictory(VictoryTypes eVictory, TeamTypes eTeam, bool* pbEndScor
 			{
 				bValid = false;
 			}
+			//multinvasion
+			else
+			{
+				bValid = false;
+
+				for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+				{
+					CvPlayerAI& kParent = GET_PLAYER((PlayerTypes)iPlayer);
+
+					if (kParent.isAlive() && GET_TEAM(kParent.getTeam()).isParentOf(eTeam))
+					{
+						if (GET_TEAM(eTeam).isInRevolution())
+						{
+							GET_TEAM(kParent.getTeam()).makePeace(eTeam);
+
+							kParent.killUnits();
+
+							kParent.AI_reset();
+
+							kParent.initFreeUnits();
+						}
+					}
+				}
+			}
+			//multinvasion end
 		}
 	}
 

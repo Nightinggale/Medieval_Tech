@@ -2471,6 +2471,16 @@ void CvPlayer::doTurn()
 
 	AI_doTurnPost();
 
+	//multinvasion
+	if (isInRevolution())
+	{
+		if (getNumCities() == 0)
+		{
+			giveBackParentCities();
+		}
+	}
+	//multinvasion end
+
 	gDLL->getEventReporterIFace()->endPlayerTurn( GC.getGameINLINE().getGameTurn(),  getID());
 
 //	FAssert(checkPower(false));
@@ -15538,6 +15548,29 @@ bool CvPlayer::isInRevolution() const
 
 	return true;
 }
+//multinvasion
+void CvPlayer::giveBackParentCities()
+{
+	for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+	{
+		CvPlayer& kParent = GET_PLAYER((PlayerTypes)iPlayer);
+
+		if (kParent.isAlive() && GET_TEAM(kParent.getTeam()).isParentOf(getTeam()))
+		{
+			int iLoop;
+			CvCity* pLoopCity;
+			for (pLoopCity = kParent.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kParent.nextCity(&iLoop))
+			{
+				acquireCity(pLoopCity, false, false);
+			}
+			GET_TEAM(kParent.getTeam()).makePeace(GET_TEAM(getTeam()).getID());
+			kParent.killUnits(); //creates crash... can't kill units in europe?
+			kParent.AI_reset(); //also creates crash
+			kParent.initFreeUnits();
+		}
+	}
+}
+
 ///TKs Med Auto Revelution
 bool CvPlayer::checkIndependence() const
 {
@@ -15545,6 +15578,7 @@ bool CvPlayer::checkIndependence() const
 	{
 		return false;
 	}
+
     bool bValid = true;
 	for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
 	{

@@ -16,6 +16,7 @@ import CvSpiceRouteScreen
 import CvSilkRoadScreen
 import CvTradeFairScreen
 import CvImmigrationScreen
+import CvIncenseRouteScreen
 #TKend
 import CvOptionsScreen
 import CvReplayScreen
@@ -127,6 +128,11 @@ immigrationScreen = CvImmigrationScreen.CvImmigrationScreen()
 def showImmigrationScreen(argsList):
 	if (-1 != CyGame().getActivePlayer()):
 		immigrationScreen.interfaceScreen()
+
+incenserouteScreen = CvIncenseRouteScreen.CvIncenseRouteScreen()
+def showIncenseRouteScreen(argsList):
+	if (-1 != CyGame().getActivePlayer()):
+		incenserouteScreen.interfaceScreen()
 #TKe 
 
 domesticAdvisor = CvDomesticAdvisor.CvDomesticAdvisor()
@@ -755,6 +761,7 @@ HandleMouseoverMap = {  EUROPE_SCREEN : europeScreen,
 				SPICE_ROUTE_SCREEN: spicerouteScreen,
 				SILK_ROAD_SCREEN: silkroadScreen,
 				TRADE_FAIR_SCREEN: tradefairScreen,
+				INCENSE_ROUTE_SCREEN: incenserouteScreen,
 				#TRADE_ADVISOR : tradeScreen,
 				#TK INVENTIONS
 				}
@@ -804,6 +811,7 @@ HandleInputMap = {  MAIN_INTERFACE : mainInterface,
 				SILK_ROAD_SCREEN: silkroadScreen,
 				TRADE_FAIR_SCREEN: tradefairScreen,
 				IMMIGRATION_SCREEN: immigrationScreen,
+				INCENSE_ROUTE_SCREEN: incenserouteScreen,
 				#TK Inventions
 				#PEDIA_TECHNOLOGY : pediaMainScreen,
 				#TK

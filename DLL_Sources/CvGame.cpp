@@ -2585,6 +2585,7 @@ bool CvGame::canDoControl(ControlTypes eControl)
 	case CONTROL_SILK_ROAD_SCREEN:
 	case CONTROL_TRADE_FAIR_SCREEN:
 	case CONTROL_IMMIGRATION_SCREEN:
+	case CONTROL_INCENSE_ROUTE_SCREEN:
 	case CONTROL_AI_AUTOPLAY:
 	case CONTROL_AI_AUTOPLAY5:
 	case CONTROL_AI_AUTOPLAY25:
@@ -3158,6 +3159,13 @@ void CvGame::doControl(ControlTypes eControl)
 			CyArgsList argsList;
 			argsList.add(-1);
 			gDLL->getPythonIFace()->callFunction(PYScreensModule, "showSilkRoadScreen", argsList.makeFunctionArgs());
+		}
+		break;
+	case CONTROL_INCENSE_ROUTE_SCREEN:
+		{
+			CyArgsList argsList;
+			argsList.add(-1);
+			gDLL->getPythonIFace()->callFunction(PYScreensModule, "showIncenseRouteScreen", argsList.makeFunctionArgs());
 		}
 		break;
     case CONTROL_TRADE_FAIR_SCREEN:

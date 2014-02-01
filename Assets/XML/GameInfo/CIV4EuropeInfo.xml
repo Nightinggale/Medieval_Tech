@@ -24,7 +24,7 @@
 			<iMinLandDistance>4</iMinLandDistance>
 			<iWidthPercent>20</iWidthPercent>
       <TradeScreenTypes/>
-      <PythonTradeScreen>showSpiceRouteScreen</PythonTradeScreen>
+      <PythonTradeScreen/>
       <DefaultColor>PLAYERCOLOR_BLUE</DefaultColor>
       <Button>Art/Interface/Game Hud/Actions/trade_goods_high_res.dds</Button>
 		</EuropeInfo>
@@ -135,14 +135,25 @@
       <iWidthPercent>20</iWidthPercent>
       <bNoEuropePlot>1</bNoEuropePlot>
       <bLeaveFromOwnedCity>1</bLeaveFromOwnedCity>
-      <TradeScreenTypes>
-        <TradeScreenType>
-          <TradeScreen>TRADE_SCREEN_SILK_ROAD</TradeScreen>
-          <bValue>1</bValue>
-        </TradeScreenType>
-      </TradeScreenTypes>
+      <TradeScreenTypes/>
       <PythonTradeScreen>showTradeFairScreen</PythonTradeScreen>
       <Button>Art/Interface/Game Hud/Actions/TraveltoFair.dds</Button>
+    </EuropeInfo>
+    <EuropeInfo>
+      <Type>TRADE_SCREEN_INCENSE_ROUTE_MARKET</Type>
+      <Description>TXT_KEY_COMMAND_TRAVEL_SILK_ROAD</Description>
+      <Strategy>TXT_KEY_COMMAND_TRAVEL_SILK_ROAD_HELP</Strategy>
+      <Help>Incense Route</Help>
+      <Direction>north</Direction>
+      <DirectionArrays/>
+      <bStart>0</bStart>
+      <iTripLength>3</iTripLength>
+      <iMinLandDistance>0</iMinLandDistance>
+      <iMaxLandCoverage>4</iMaxLandCoverage>
+      <iWidthPercent>20</iWidthPercent>
+      <TradeScreenTypes/>
+      <PythonTradeScreen>showIncenseRouteScreen</PythonTradeScreen>
+      <Button>Art/Interface/Game Hud/Actions/travelsilkroad.dds</Button>
     </EuropeInfo>
 	</EuropeInfos>
 </Civ4EuropeInfo>

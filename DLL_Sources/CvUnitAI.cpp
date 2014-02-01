@@ -5230,10 +5230,11 @@ bool CvUnitAI::AI_sailToEurope(bool bMove, TradeRouteTypes eTradeRouteType)
                 }
             }
         }
-
+		///TKFix Trade Screen 
+		EuropeTypes eTradeMarket = (EuropeTypes)0;
         if (pBestPlot != NULL)
         {
-            GET_PLAYER(getOwnerINLINE()).setStartingTradeRoutePlot(pBestPlot, eTradeRouteType);
+            GET_PLAYER(getOwnerINLINE()).setStartingTradeRoutePlot(pBestPlot, eTradeMarket);
         }
 	}
 	else if (!isHuman() && pBestPlot == NULL && bLandRoute)

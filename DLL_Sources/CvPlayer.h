@@ -529,7 +529,7 @@ public:
     UnitTypes getDefaultPopUnit() const;
     void setDefaultPopUnit(UnitTypes eUnit);
 	bool getTechsInitialized() const;
-	///TKs Med
+	///TKs Medm_aiTradeRouteStartingPlotX
 	DllExport CvCity* getTradeFairCity() const;
 	void setTradeFairCity(CvCity* pTradeFairCity);
 	bool canMakeVassalDemand(PlayerTypes eVassal);
@@ -540,8 +540,8 @@ public:
 	int getAltYieldEquipmentAmount(ProfessionTypes eProfession, YieldTypes eYield) const;
 	int getMultiYieldRate(YieldTypes eIndex) const;
 	int getCensureType(CensureType eCensure) const;
-	CvPlot* getStartingTradeRoutePlot(TradeRouteTypes eTradeRoute) const;
-	void setStartingTradeRoutePlot(CvPlot* pNewValue, TradeRouteTypes eTradeRoute);
+	CvPlot* getStartingTradeRoutePlot(EuropeTypes eTradeRoute) const;
+	void setStartingTradeRoutePlot(CvPlot* pNewValue, EuropeTypes eTradeRoute);
 	void changeCensureType(CensureType eCensure, int iValue);
 	bool getHasTradeRouteType(EuropeTypes eTradeRoute) const;
 	void setHasTradeRouteType(EuropeTypes eTradeRoute, bool bValue);

@@ -319,13 +319,14 @@ class CvMainInterface:
 	# Sets Global screen construct values based on our Resolution
 	def SetGlobals ( self, screen ):
 		#TK Med Trade Screen List
-		#TRADE_SCREEN_SPICE_ROUTE_MARKET = CvUtil.findInfoTypeNum('TRADE_SCREEN_SPICE_ROUTE_MARKET')
 		global TRADE_SCREEN_SPICE_ROUTE_MARKET
 		global TRADE_SCREEN_SILK_ROAD_MARKET
 		global TRADE_SCREEN_TRADE_FAIR_MARKET
+		global TRADE_SCREEN_INCENSE_ROUTE_MARKET
 		TRADE_SCREEN_SPICE_ROUTE_MARKET = CvUtil.findInfoTypeNum('TRADE_SCREEN_SPICE_ROUTE_MARKET')
 		TRADE_SCREEN_SILK_ROAD_MARKET = CvUtil.findInfoTypeNum('TRADE_SCREEN_SILK_ROAD_MARKET')
 		TRADE_SCREEN_TRADE_FAIR_MARKET = CvUtil.findInfoTypeNum('TRADE_SCREEN_TRADE_FAIR_MARKET')
+		TRADE_SCREEN_INCENSE_ROUTE_MARKET = CvUtil.findInfoTypeNum('TRADE_SCREEN_INCENSE_ROUTE_MARKET')
 	# GET RESOLUTION
 		global xResolution
 		global yResolution
@@ -726,18 +727,25 @@ class CvMainInterface:
 			self.appendtoHideState(screen, "EuropeScreenButton", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
 			
 		iBtnX += self.ADVISOR_BUTTON_SPACING
+		iBtnXalt = iBtnX
 		screen.setImageButton("SpiceRouteScreenButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_SPICE_ROUTE").getPath(), iBtnX, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) / 2, self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_SPICE_ROUTE_SCREEN).getActionInfoIndex(), -1 )
 		screen.setImageShape("SpiceRouteScreenButton", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
 		screen.setHitMargins("SpiceRouteScreenButton", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
 		screen.hide("SpiceRouteScreenButton")
 		
-		iRoutes = iBtnX - (self.ADVISOR_BUTTON_SPACING / 2)
+		iBtnX += self.ADVISOR_BUTTON_SPACING
+		screen.setImageButton("IncenseRouteScreenButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_SPICE_ROUTE").getPath(), iBtnX, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) / 2, self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_INCENSE_ROUTE_SCREEN).getActionInfoIndex(), -1 )
+		screen.setImageShape("IncenseRouteScreenButton", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
+		screen.setHitMargins("IncenseRouteScreenButton", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
+		screen.hide("IncenseRouteScreenButton")
+		
+		iRoutes = iBtnXalt - (self.ADVISOR_BUTTON_SPACING / 2)
 		screen.setImageButton("SilkRoadScreenButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_SILK_ROAD").getPath(), iRoutes - (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) / 2, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) * 4, self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_SILK_ROAD_SCREEN).getActionInfoIndex(), -1 )
 		screen.setImageShape("SilkRoadScreenButton", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
 		screen.setHitMargins("SilkRoadScreenButton", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
 		screen.hide("SilkRoadScreenButton")
 		
-		iRoutes = iBtnX + (self.ADVISOR_BUTTON_SPACING / 2)
+		iRoutes = iBtnXalt + (self.ADVISOR_BUTTON_SPACING / 2)
 		screen.setImageButton("TradeFairScreenButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE").getPath(), iRoutes - (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) / 2, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) * 4, self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_TRADE_FAIR_SCREEN).getActionInfoIndex(), -1 )
 		screen.setImageShape("TradeFairScreenButton", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
 		screen.setHitMargins("TradeFairScreenButton", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
@@ -2578,6 +2586,12 @@ class CvMainInterface:
 				
 			else:
 				screen.hide("SpiceRouteScreenButton")
+			
+			if (pPlayer.getHasTradeRouteType(TRADE_SCREEN_INCENSE_ROUTE_MARKET)):	
+				screen.show("IncenseRouteScreenButton")
+				
+			else:
+				screen.hide("IncenseRouteScreenButton")
 				
 			if (pPlayer.getHasTradeRouteType(TRADE_SCREEN_SILK_ROAD_MARKET)):	
 				screen.show("SilkRoadScreenButton")
@@ -2884,6 +2898,7 @@ class CvMainInterface:
 			screen.hide("TradeFairScreenButton")
 			screen.hide("SpiceRouteScreenButton")
 			screen.hide("SilkRoadScreenButton")
+			screen.hide("IncenseRouteScreenButton")
 			#Tke
 			screen.hide("GoldText")
 			screen.hide("GoldPile")
@@ -3028,6 +3043,8 @@ class CvMainInterface:
 				screen.hide("TradeFairScreenButton")
 				screen.hide("SpiceRouteScreenButton")
 				screen.hide("SilkRoadScreenButton")
+				screen.hide("IncenseRouteScreenButton")
+				
 				
 				screen.hide("Excommunication")
 				screen.hide("ExcommunicationText")
@@ -3126,6 +3143,7 @@ class CvMainInterface:
 			screen.hide("TradeFairScreenButton")
 			screen.hide("SpiceRouteScreenButton")
 			screen.hide("SilkRoadScreenButton")
+			screen.hide("IncenseRouteScreenButton")
 			#Tke
 			for iYield in EMPHASIZEYIELDS:
 				screen.hide("MapYieldIcon" + str(iYield))

@@ -59,8 +59,8 @@ CvPlayer::CvPlayer()
     m_aiVictoryYieldCount = new int[NUM_YIELD_TYPES];
     ///TKs Med
     m_aiCensureTypes = new int[NUM_CENSURE_TYPES];
-    m_aiTradeRouteStartingPlotX = new int[NUM_TRADE_ROUTES_TYPES];
-    m_aiTradeRouteStartingPlotY = new int[NUM_TRADE_ROUTES_TYPES];
+    m_aiTradeRouteStartingPlotX = new int[NUM_YIELD_TYPES];
+    m_aiTradeRouteStartingPlotY = new int[NUM_YIELD_TYPES];
 	m_abTradeRouteTypes = new bool[GC.getNumEuropeInfos()];
     ///TKe
 	m_abYieldEuropeTradable = new bool[NUM_YIELD_TYPES];
@@ -547,15 +547,15 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	{
 	    m_aiCensureTypes[iI] = 0;
 	}
-	for (iI = 0; iI < NUM_TRADE_ROUTES_TYPES; iI++)
+	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
 	{
 	    m_aiTradeRouteStartingPlotX[iI] = INVALID_PLOT_COORD;
 	}
-	for (iI = 0; iI < NUM_TRADE_ROUTES_TYPES; iI++)
+	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
 	{
 	    m_aiTradeRouteStartingPlotY[iI] = INVALID_PLOT_COORD;
 	}
-	for (iI = 0; iI < NUM_TRADE_ROUTES_TYPES; iI++)
+	for (iI = 0; iI < GC.getNumEuropeInfos(); iI++)
 	{
 	    m_abTradeRouteTypes[iI] = true;
 	}
@@ -11563,9 +11563,9 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	///TKs Invention Core Mod v 1.0
 	pStream->Read(NUM_YIELD_TYPES, m_aiVictoryYieldCount);
 	pStream->Read(NUM_CENSURE_TYPES, m_aiCensureTypes);
-	pStream->Read(NUM_TRADE_ROUTES_TYPES, m_aiTradeRouteStartingPlotX);
-	pStream->Read(NUM_TRADE_ROUTES_TYPES, m_aiTradeRouteStartingPlotY);
-	pStream->Read(NUM_TRADE_ROUTES_TYPES, m_abTradeRouteTypes);
+	pStream->Read(NUM_YIELD_TYPES, m_aiTradeRouteStartingPlotX);
+	pStream->Read(NUM_YIELD_TYPES, m_aiTradeRouteStartingPlotY);
+	pStream->Read(GC.getNumEuropeInfos(), m_abTradeRouteTypes);
 	///Tke
 	pStream->Read(NUM_YIELD_TYPES, m_aiTaxYieldModifierCount);
 	if (uiFlag > 1)
@@ -12003,9 +12003,9 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	///TKs Invention Core Mod v 1.0
 	pStream->Write(NUM_YIELD_TYPES, m_aiVictoryYieldCount);
 	pStream->Write(NUM_CENSURE_TYPES, m_aiCensureTypes);
-	pStream->Write(NUM_TRADE_ROUTES_TYPES, m_aiTradeRouteStartingPlotX);
-	pStream->Write(NUM_TRADE_ROUTES_TYPES, m_aiTradeRouteStartingPlotY);
-	pStream->Write(NUM_TRADE_ROUTES_TYPES, m_abTradeRouteTypes);
+	pStream->Write(NUM_YIELD_TYPES, m_aiTradeRouteStartingPlotX);
+	pStream->Write(NUM_YIELD_TYPES, m_aiTradeRouteStartingPlotY);
+	pStream->Write(GC.getNumEuropeInfos(), m_abTradeRouteTypes);
 	///Tke
 	pStream->Write(NUM_YIELD_TYPES, m_aiTaxYieldModifierCount);
 	pStream->Write(MAX_PLAYERS, m_aiMissionaryPoints);
@@ -15054,11 +15054,12 @@ CvUnit* CvPlayer::buyEuropeUnit(UnitTypes eUnit, int iPriceModifier, EuropeTypes
 		{
 		    if (eTradeScreen != NO_EUROPE)
             {
-                CvPlot* pStartingTradePlot = getStartingTradeRoutePlot(TRADE_ROUTE_SPICE_ROUTE);
-                if (!pStartingPlot->isEurope() && pStartingTradePlot == NULL)
+                CvPlot* pStartingTradePlot = getStartingTradeRoutePlot(eTradeScreen);
+                if (pStartingPlot->getEurope() != eTradeScreen && pStartingTradePlot == NULL)
                 {
                     CvPlot* pNewPlot = NULL;
                     CvCity* pPortCity = GC.getMapINLINE().findCity(pStartingPlot->getX_INLINE(), pStartingPlot->getY_INLINE(), getID(), NO_TEAM, false, true);
+					///TKFix
                     if (pPortCity == NULL)
                     {
                         pNewPlot = pStartingPlot->findNearbyOceanPlot(0);
@@ -18815,13 +18816,13 @@ int CvPlayer::getCensureType(CensureType eCensure) const
 	//return 0;
 }
 
-CvPlot* CvPlayer::getStartingTradeRoutePlot(TradeRouteTypes eTradeRoute) const
+CvPlot* CvPlayer::getStartingTradeRoutePlot(EuropeTypes eTradeRoute) const
 {
     FAssertMsg(eTradeRoute != NO_TRADE_ROUTES, "Should have trade route");
 	return GC.getMapINLINE().plotSorenINLINE(m_aiTradeRouteStartingPlotX[eTradeRoute], m_aiTradeRouteStartingPlotY[eTradeRoute]);
 }
 
-void CvPlayer::setStartingTradeRoutePlot(CvPlot* pNewValue, TradeRouteTypes eTradeRoute)
+void CvPlayer::setStartingTradeRoutePlot(CvPlot* pNewValue, EuropeTypes eTradeRoute)
 {
 	CvPlot* pOldStartingPlot;
 

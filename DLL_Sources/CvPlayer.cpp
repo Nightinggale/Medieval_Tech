@@ -59,15 +59,18 @@ CvPlayer::CvPlayer()
     m_aiVictoryYieldCount = new int[NUM_YIELD_TYPES];
     ///TKs Med
     m_aiCensureTypes = new int[NUM_CENSURE_TYPES];
-    m_aiTradeRouteStartingPlotX = new int[NUM_YIELD_TYPES];
-    m_aiTradeRouteStartingPlotY = new int[NUM_YIELD_TYPES];
-	m_abTradeRouteTypes = new bool[GC.getNumEuropeInfos()];
+    //m_aiTradeRouteStartingPlotX = new int[NUM_YIELD_TYPES];
+    //m_aiTradeRouteStartingPlotY = new int[NUM_YIELD_TYPES];
+	//m_abTradeRouteTypes = new bool[GC.getNumEuropeInfos()];
     ///TKe
 	m_abYieldEuropeTradable = new bool[NUM_YIELD_TYPES];
 	m_abFeatAccomplished = new bool[NUM_FEAT_TYPES];
 	m_abOptions = new bool[NUM_PLAYEROPTION_TYPES];
 
     ///TKs Invention Core Mod v 1.0
+	m_aiTradeRouteStartingPlotX = NULL;
+	m_aiTradeRouteStartingPlotY = NULL;
+	m_abTradeRouteTypes = NULL;
     m_aiIdeaProgress = NULL;
     m_aiIdeasResearched = NULL;
     //m_aiPreviousFatherPoints = NULL;
@@ -120,9 +123,9 @@ CvPlayer::~CvPlayer()
 	///TKs Invention Core Mod v 1.0
 	SAFE_DELETE_ARRAY(m_aiVictoryYieldCount);
 	SAFE_DELETE_ARRAY(m_aiCensureTypes);
-	SAFE_DELETE_ARRAY(m_aiTradeRouteStartingPlotX);
-	SAFE_DELETE_ARRAY(m_aiTradeRouteStartingPlotY);
-	SAFE_DELETE_ARRAY(m_abTradeRouteTypes);
+	//SAFE_DELETE_ARRAY(m_aiTradeRouteStartingPlotX);
+	//SAFE_DELETE_ARRAY(m_aiTradeRouteStartingPlotY);
+	//SAFE_DELETE_ARRAY(m_abTradeRouteTypes);
 	///TKe
 	SAFE_DELETE_ARRAY(m_abYieldEuropeTradable);
 	SAFE_DELETE_ARRAY(m_abFeatAccomplished);
@@ -338,6 +341,9 @@ void CvPlayer::uninit()
 	SAFE_DELETE_ARRAY(m_aiIdeaProgress);
 	SAFE_DELETE_ARRAY(m_aiIdeasResearched);
 	SAFE_DELETE_ARRAY(m_aiPreviousFatherPoints);
+	SAFE_DELETE_ARRAY(m_aiTradeRouteStartingPlotX);
+	SAFE_DELETE_ARRAY(m_aiTradeRouteStartingPlotY);
+	SAFE_DELETE_ARRAY(m_abTradeRouteTypes);
 	///TKe
 	SAFE_DELETE_ARRAY(m_paiImprovementCount);
 	SAFE_DELETE_ARRAY(m_paiFreeBuildingCount);
@@ -547,18 +553,18 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	{
 	    m_aiCensureTypes[iI] = 0;
 	}
-	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
-	{
-	    m_aiTradeRouteStartingPlotX[iI] = INVALID_PLOT_COORD;
-	}
-	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
-	{
-	    m_aiTradeRouteStartingPlotY[iI] = INVALID_PLOT_COORD;
-	}
-	for (iI = 0; iI < GC.getNumEuropeInfos(); iI++)
-	{
-	    m_abTradeRouteTypes[iI] = true;
-	}
+	//for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
+	//{
+	    //m_aiTradeRouteStartingPlotX[iI] = INVALID_PLOT_COORD;
+	//}
+	//for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
+	//{
+	    //m_aiTradeRouteStartingPlotY[iI] = INVALID_PLOT_COORD;
+	//}
+	//for (iI = 0; iI < GC.getNumEuropeInfos(); iI++)
+	//{
+	   // m_abTradeRouteTypes[iI] = true;
+	//}
     ///TKe
 	for (iI = 0; iI < MAX_PLAYERS; ++iI)
 	{
@@ -601,6 +607,16 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
         {
             m_aiPreviousFatherPoints[iI] = 0;
         }
+
+		m_abTradeRouteTypes = new bool[GC.getNumEuropeInfos()];
+		m_aiTradeRouteStartingPlotX = new int[GC.getNumEuropeInfos()];
+		m_aiTradeRouteStartingPlotY = new int[GC.getNumEuropeInfos()];
+		for (iI = 0; iI < GC.getNumEuropeInfos(); iI++)
+		{
+			m_aiTradeRouteStartingPlotX[iI] = INVALID_PLOT_COORD;
+			m_aiTradeRouteStartingPlotY[iI] = INVALID_PLOT_COORD;
+			m_abTradeRouteTypes[iI] = true;
+		}
         ///TKe
 
 
@@ -11563,8 +11579,8 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	///TKs Invention Core Mod v 1.0
 	pStream->Read(NUM_YIELD_TYPES, m_aiVictoryYieldCount);
 	pStream->Read(NUM_CENSURE_TYPES, m_aiCensureTypes);
-	pStream->Read(NUM_YIELD_TYPES, m_aiTradeRouteStartingPlotX);
-	pStream->Read(NUM_YIELD_TYPES, m_aiTradeRouteStartingPlotY);
+	pStream->Read(GC.getNumEuropeInfos(), m_aiTradeRouteStartingPlotX);
+	pStream->Read(GC.getNumEuropeInfos(), m_aiTradeRouteStartingPlotY);
 	pStream->Read(GC.getNumEuropeInfos(), m_abTradeRouteTypes);
 	///Tke
 	pStream->Read(NUM_YIELD_TYPES, m_aiTaxYieldModifierCount);
@@ -12003,8 +12019,8 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	///TKs Invention Core Mod v 1.0
 	pStream->Write(NUM_YIELD_TYPES, m_aiVictoryYieldCount);
 	pStream->Write(NUM_CENSURE_TYPES, m_aiCensureTypes);
-	pStream->Write(NUM_YIELD_TYPES, m_aiTradeRouteStartingPlotX);
-	pStream->Write(NUM_YIELD_TYPES, m_aiTradeRouteStartingPlotY);
+	pStream->Write(GC.getNumEuropeInfos(), m_aiTradeRouteStartingPlotX);
+	pStream->Write(GC.getNumEuropeInfos(), m_aiTradeRouteStartingPlotY);
 	pStream->Write(GC.getNumEuropeInfos(), m_abTradeRouteTypes);
 	///Tke
 	pStream->Write(NUM_YIELD_TYPES, m_aiTaxYieldModifierCount);
@@ -14996,19 +15012,6 @@ CvUnit* CvPlayer::buyEuropeUnit(UnitTypes eUnit, int iPriceModifier, EuropeTypes
 		return NULL;
 	}
     int iPrice = 0;
-    /*TradeScreenTypes eTradeScreen = TRADE_SCREEN_DEFAULT;
-    if (eTradeScreen != NO_TRADE_ROUTES)
-    {
-        if (eTradeRoute == TRADE_ROUTE_SPICE_ROUTE)
-        {
-            eTradeScreen = TRADE_SCREEN_SPICE_ROUTE;
-        }
-        else if (eTradeRoute == TRADE_ROUTE_SILK_ROAD)
-        {
-            eTradeScreen = TRADE_SCREEN_SILK_ROAD;
-        }
-    }*/
-
 	if (getEuropeUnitBuyPrice(eUnit, eTradeScreen) < 0)
 	{
         return NULL;
@@ -15033,21 +15036,7 @@ CvUnit* CvPlayer::buyEuropeUnit(UnitTypes eUnit, int iPriceModifier, EuropeTypes
 	CvPlot* pStartingPlot = getStartingPlot();
 	if (GC.getUnitInfo(eUnit).getDomainType() == DOMAIN_SEA && pStartingPlot != NULL)
 	{
-	    UnitTravelStates eTravelState = UNIT_TRAVEL_STATE_IN_EUROPE;
-	    /*if (eTradeRoute != NO_TRADE_ROUTES)
-        {
-            FAssert(eTradeRoute >= 0)
-            FAssert(eTradeRoute < NUM_TRADE_ROUTES_TYPES);
-            if (eTradeRoute == TRADE_ROUTE_SPICE_ROUTE)
-            {
-                eTravelState = UNIT_TRAVEL_STATE_IN_SPICE_ROUTE;
-            }
-            else if (eTradeRoute == TRADE_ROUTE_SILK_ROAD)
-            {
-                eTravelState = UNIT_TRAVEL_STATE_IN_SILK_ROAD;
-            }
-            FAssert(eTravelState != NO_UNIT_TRAVEL_STATE);
-        }*/
+	    //UnitTravelStates eTravelState = UNIT_TRAVEL_STATE_IN_EUROPE;
 
 		pUnit = initUnit(eUnit, (ProfessionTypes) GC.getUnitInfo(eUnit).getDefaultProfession(), INVALID_PLOT_COORD, INVALID_PLOT_COORD);
         if (pUnit != NULL)
@@ -15078,16 +15067,18 @@ CvUnit* CvPlayer::buyEuropeUnit(UnitTypes eUnit, int iPriceModifier, EuropeTypes
                 if (pStartingTradePlot == NULL && pStartingPlot != NULL)
                 {
                     int iBestValue = 0;
+					pUnit->setXY(pStartingPlot->getX_INLINE(), pStartingPlot->getY_INLINE(), false, false, false, false);
+					FAssert(pUnit->getX_INLINE() != INVALID_PLOT_COORD);
                     for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
                     {
                         CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
 
-                        if (pUnit->isValidPlot(pLoopPlot) && !pLoopPlot->isVisibleEnemyDefender(pUnit))
+                        if (pUnit->isValidPlot(pLoopPlot) && !pLoopPlot->isVisibleEnemyDefender(pUnit) && pLoopPlot->getEurope() == eTradeScreen)
                         {
-                            if (pUnit->canCrossOcean(pLoopPlot, eTravelState, NO_TRADE_ROUTES, false, eTradeScreen))
+                            if (pUnit->canCrossOcean(pLoopPlot, UNIT_TRAVEL_STATE_TO_EUROPE, NO_TRADE_ROUTES, false, eTradeScreen))
                             {
                                 int iPathTurns;
-                                if (pUnit->generatePath(pStartingPlot, MOVE_BUST_FOG, true, &iPathTurns))
+                                if (pUnit->generatePath(pLoopPlot, MOVE_BUST_FOG, true, &iPathTurns))
                                 {
                                     int iValue = 10000;
                                     iValue /= 100 + pUnit->getPathCost();
@@ -15109,14 +15100,16 @@ CvUnit* CvPlayer::buyEuropeUnit(UnitTypes eUnit, int iPriceModifier, EuropeTypes
                 FAssert(pStartingTradePlot != NULL);
                 if (pStartingTradePlot != NULL)
                 {
-                    pUnit->setUnitTravelState(eTravelState, false);
+					FAssert(eTradeScreen != NO_EUROPE);
+					pUnit->setUnitTradeMarket(eTradeScreen);
+                    pUnit->setUnitTravelState(UNIT_TRAVEL_STATE_IN_EUROPE, false);
                     //add unit to map after setting Europe state so that it doesn't bump enemy units
                     pUnit->addToMap(pStartingTradePlot->getX_INLINE(), pStartingTradePlot->getY_INLINE());
                 }
             }
 		    else if (pStartingPlot->isEurope())
             {
-                pUnit->setUnitTravelState(eTravelState, false);
+                pUnit->setUnitTravelState(UNIT_TRAVEL_STATE_IN_EUROPE, false);
                 //add unit to map after setting Europe state so that it doesn't bump enemy units
                 pUnit->addToMap(pStartingPlot->getX_INLINE(), pStartingPlot->getY_INLINE());
             }

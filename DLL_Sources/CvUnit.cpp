@@ -4751,7 +4751,7 @@ bool CvUnit::canCrossOcean(const CvPlot* pPlot, UnitTravelStates eNewState, Trad
 		break;
 	}
 
-	if(isHuman() && !GC.getCivilizationInfo(getCivilizationType()).isWaterStart() && (eTradeRouteType == TRADE_ROUTE_FAIR))
+	/*if(isHuman() && !GC.getCivilizationInfo(getCivilizationType()).isWaterStart() && GC.getEuropeInfo(eEuropeTradeRoute).isNoEuropePlot())
 	{
 
         if (getDomainType() != DOMAIN_LAND)
@@ -4787,11 +4787,11 @@ bool CvUnit::canCrossOcean(const CvPlot* pPlot, UnitTravelStates eNewState, Trad
 	    }
 
 	    return true;
-	}
+	}*/
 	///TKe
 
 	FAssert(pPlot != NULL);
-	if (!pPlot->isEurope())
+	if (!pPlot->isEurope() && !isHuman())
 	{
 		return false;
 	}

@@ -583,10 +583,6 @@
     <DefineTextVal>UNITCLASS_COLONIST</DefineTextVal>
   </Define>
   <Define>
-    <DefineName>DEFAULT_YIELD_ARMOR_TYPE</DefineName>
-    <DefineTextVal>YIELD_PLASTEEL</DefineTextVal>
-  </Define>
-  <Define>
     <DefineName>DEFAULT_GRAIN_GROWTH_UNIT_CLASS</DefineName>
     <DefineTextVal>UNITCLASS_PROLETARIAN</DefineTextVal>
   </Define>

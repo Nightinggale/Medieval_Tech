@@ -6,6 +6,11 @@
 <!-- Civic Option -->
 <Civ4CivicOptionInfos xmlns="x-schema:CIV4GameInfoSchema.xml">
 	<CivicOptionInfos>
+		<!-- CIVICOPTION_INVENTIONS is hardcoded as being first in DLL for performance reasons -->
+		<CivicOptionInfo>
+			<Type>CIVICOPTION_INVENTIONS</Type>
+			<Description>TXT_KEY_CIVICOPTION_INVENTIONS</Description>
+		</CivicOptionInfo>
 		<CivicOptionInfo>
 			<Type>CIVICOPTION_SLAVERY</Type>
 			<Description>TXT_KEY_CIVICOPTION_SLAVERY</Description>
@@ -26,9 +31,5 @@
 			<Type>CIVICOPTION_SECURITY</Type>
 			<Description>TXT_KEY_CIVICOPTION_SECURITY</Description>
 		</CivicOptionInfo>
-    <CivicOptionInfo>
-      <Type>CIVICOPTION_INVENTIONS</Type>
-      <Description>Inventions</Description>
-    </CivicOptionInfo>
 	</CivicOptionInfos>
 </Civ4CivicOptionInfos>

@@ -5,66 +5,145 @@
 <!-- -->
 <!-- Sea Level -->
 <Civ4EuropeInfo xmlns="x-schema:CIV4GameInfoSchema.xml">
-<EuropeInfos>
-<EuropeInfo>
-<Type>EUROPE_EAST</Type>
-<Description>Spice Route East</Description>
-<Direction>east</Direction>
-<bStart>1</bStart>
-<iTripLength>3</iTripLength>
-<iMinLandDistance>3</iMinLandDistance>
-<iWidthPercent>20</iWidthPercent>
-      <TradeScreenTypes>
-		<TradeScreenType>
-          <TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
+	<EuropeInfos>
+		<EuropeInfo>
+			<Type>EUROPE_EAST</Type>
+			<Description>TXT_KEY_COMMAND_SAIL_SPICE_ROUTE</Description>
+      <Strategy>TXT_KEY_AUTO_SELL_SPICE_ROUTE_HELP</Strategy>
+      <Help>AI Route</Help>
+			<Direction>east</Direction>
+      <DirectionArrays>
+        <DirectionArray>
+          <Direction>DIRECTION_NORTHEAST</Direction>
+          <bValue>0</bValue>
+        </DirectionArray>
+      </DirectionArrays>
+			<bStart>1</bStart>
+      <bAIRoute>1</bAIRoute>
+			<iTripLength>3</iTripLength>
+			<iMinLandDistance>4</iMinLandDistance>
+			<iWidthPercent>20</iWidthPercent>
+      <bNoEuropePlot>1</bNoEuropePlot>
+      <TradeScreenTypes/>
+      <PythonTradeScreen>showSpiceRouteScreen</PythonTradeScreen>
+      <DefaultColor>PLAYERCOLOR_BLUE</DefaultColor>
+      <Button>Art/Interface/Game Hud/Actions/trade_goods_high_res.dds</Button>
+		</EuropeInfo>
+    <EuropeInfo>
+      <Type>TRADE_SCREEN_SPICE_ROUTE_MARKET</Type>
+      <!-- This is the Command Title -->
+      <Description>TXT_KEY_COMMAND_SAIL_SPICE_ROUTE</Description>
+      <!-- This is the Command Help Text -->
+      <Strategy>TXT_KEY_AUTO_SELL_SPICE_ROUTE_HELP</Strategy>
+      <!-- This is the short name for price lists -->
+      <Help>Spice Route</Help>
+      <!-- No longer used -->
+      <Direction>east</Direction>
+      <!-- This sets the direction. Eample: If you want the Whole East side you must include E, NE, SE directions or East will only fill half the map-->
+      <DirectionArrays>
+        <DirectionArray>
+          <Direction>DIRECTION_EAST</Direction>
           <bValue>1</bValue>
-        </TradeScreenType>
-      </TradeScreenTypes>
-</EuropeInfo>
-<EuropeInfo>
-<Type>EUROPE_WEST</Type>
-<Description>Spice Route West</Description>
-<Direction>west</Direction>
-<bStart>0</bStart>
-<iTripLength>3</iTripLength>
-<iMinLandDistance>3</iMinLandDistance>
-<iWidthPercent>20</iWidthPercent>
-      <TradeScreenTypes>
-        <TradeScreenType>
-          <TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
+        </DirectionArray>
+        <DirectionArray>
+          <Direction>DIRECTION_WEST</Direction>
           <bValue>1</bValue>
-        </TradeScreenType>
-      </TradeScreenTypes>
-</EuropeInfo>
-<EuropeInfo>
-<Type>EUROPE_NORTH</Type>
-<Description>Silk Road North</Description>
-<Direction>north</Direction>
-<bStart>0</bStart>
-<iTripLength>3</iTripLength>
-<iMinLandDistance>3</iMinLandDistance>
-<iWidthPercent>20</iWidthPercent>
+        </DirectionArray>
+        <DirectionArray>
+          <Direction>DIRECTION_NORTHEAST</Direction>
+          <bValue>1</bValue>
+        </DirectionArray>
+        <DirectionArray>
+          <Direction>DIRECTION_NORTHWEST</Direction>
+          <bValue>1</bValue>
+        </DirectionArray>
+        <DirectionArray>
+          <Direction>DIRECTION_SOUTHEAST</Direction>
+          <bValue>1</bValue>
+        </DirectionArray>
+        <DirectionArray>
+          <Direction>DIRECTION_SOUTHWEST</Direction>
+          <bValue>1</bValue>
+        </DirectionArray>
+      </DirectionArrays>
+      <!-- If this Europe is used for Units to start from -->
+      <bStart>1</bStart>
+      <!-- 1 Means this route is only used by AI -->
+      <bAIRoute>0</bAIRoute>
+      <!-- Length of the Unit's Trip to the Trade Screen -->
+      <iTripLength>3</iTripLength>
+      <!-- Land must be this far away to apply the Europe. For Water Routes only -->
+      <iMinLandDistance>4</iMinLandDistance>
+      <!-- Used to set Land Based Routes max distance from Edge of map that land tiles will be used. If > 0 this route will be considered a Land Route-->
+      <iMaxLandCoverage>0</iMaxLandCoverage>
+      <!-- Sets what percent of map is used for Europe Tiles for each Direction -->
+      <iWidthPercent>20</iWidthPercent>
+      <!-- This Europe Requires a Tech in order to be research. Use CIV4CivicInfos.XML to set up the tech -->
+      <bRequiresTech>0</bRequiresTech>
+      <!-- If using one of the Below methods of Travel this must be set to 1 as Plots are not assigned a Europe with those methods -->
+      <bNoEuropePlot>0</bNoEuropePlot>
+      <!-- Sets where the Units can leave from -->
+      <bLeaveFromBarbarianCity>0</bLeaveFromBarbarianCity>
+      <bLeaveFromForeignCity>0</bLeaveFromForeignCity>
+      <bLeaveFromOwnedCity>0</bLeaveFromOwnedCity>
+      <bLeaveFromAnyCity>0</bLeaveFromAnyCity>
+      <!-- This building is required in the City in order to Travel to Trade Screen -->
+      <!-- <CityRequiredBuildingClass></CityRequiredBuildingClass>-->
+      <!-- TradeScreenTypes is Currently Not Used -->
+      <TradeScreenTypes/>
+      <!-- This sets what screen is popped up when a unit arrives at the Trade Screen. Get the character string from CvScreensInterface.py-->
+      <PythonTradeScreen>showSpiceRouteScreen</PythonTradeScreen>
+      <!-- Sets the color of the trade route. The first Water route is always the players color, first land route is Purple, the rest must be set here -->
+      <!-- <DefaultColor></DefaultColor> -->
+      <!-- Sets the Command Button graphic -->
+      <Button>Art/Interface/Game Hud/Actions/travelSpiceRoute.dds</Button>
+    </EuropeInfo>
+		<EuropeInfo>
+			<Type>TRADE_SCREEN_SILK_ROAD_MARKET</Type>
+			<Description>TXT_KEY_COMMAND_TRAVEL_SILK_ROAD</Description>
+      <Strategy>TXT_KEY_COMMAND_TRAVEL_SILK_ROAD_HELP</Strategy>
+      <Help>Silk Road</Help>
+			<Direction>north</Direction>
+      <DirectionArrays>
+        <DirectionArray>
+          <Direction>DIRECTION_NORTH</Direction>
+          <bValue>1</bValue>
+        </DirectionArray>
+        <DirectionArray>
+          <Direction>DIRECTION_SOUTH</Direction>
+          <bValue>1</bValue>
+        </DirectionArray>
+      </DirectionArrays>
+			<bStart>0</bStart>
+			<iTripLength>3</iTripLength>
+			<iMinLandDistance>0</iMinLandDistance>
+      <iMaxLandCoverage>4</iMaxLandCoverage>
+			<iWidthPercent>20</iWidthPercent>
+      <TradeScreenTypes/>
+      <PythonTradeScreen>showSilkRoadScreen</PythonTradeScreen>
+      <Button>Art/Interface/Game Hud/Actions/travelsilkroad.dds</Button>
+		</EuropeInfo>
+    <EuropeInfo>
+      <Type>TRADE_SCREEN_TRADE_FAIR_MARKET</Type>
+      <Description>TXT_KEY_COMMAND_TRAVEL_TO_FAIR</Description>
+      <Strategy>TXT_KEY_COMMAND_TRAVEL_TO_FAIR_HELP</Strategy>
+      <Help>Local</Help>
+      <Direction>north</Direction>
+      <DirectionArrays/>
+      <bStart>0</bStart>
+      <iTripLength>3</iTripLength>
+      <iMinLandDistance>0</iMinLandDistance>
+      <iWidthPercent>20</iWidthPercent>
+      <bNoEuropePlot>1</bNoEuropePlot>
+      <bLeaveFromOwnedCity>1</bLeaveFromOwnedCity>
       <TradeScreenTypes>
         <TradeScreenType>
           <TradeScreen>TRADE_SCREEN_SILK_ROAD</TradeScreen>
           <bValue>1</bValue>
         </TradeScreenType>
       </TradeScreenTypes>
-</EuropeInfo>
-<EuropeInfo>
-<Type>EUROPE_SOUTH</Type>
-<Description>Silk Road South</Description>
-<Direction>south</Direction>
-<bStart>0</bStart>
-<iTripLength>3</iTripLength>
-<iMinLandDistance>3</iMinLandDistance>
-<iWidthPercent>20</iWidthPercent>
-      <TradeScreenTypes>
-        <TradeScreenType>
-          <TradeScreen>TRADE_SCREEN_SILK_ROAD</TradeScreen>
-          <bValue>1</bValue>
-        </TradeScreenType>
-      </TradeScreenTypes>
-</EuropeInfo>
-</EuropeInfos>
+      <PythonTradeScreen>showTradeFairScreen</PythonTradeScreen>
+      <Button>Art/Interface/Game Hud/Actions/TraveltoFair.dds</Button>
+    </EuropeInfo>
+	</EuropeInfos>
 </Civ4EuropeInfo>

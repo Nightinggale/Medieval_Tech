@@ -5,6 +5,7 @@
 #-----------------------------------------------------------------------------
 #	Copyright (c) 2007 Firaxis Games, Inc. All rights reserved.
 #-----------------------------------------------------------------------------
+#	Planets mapscript for 2071 - thanks to TC01 and Platyping for Python help!
 
 from CvPythonExtensions import *
 import CvUtil
@@ -174,7 +175,7 @@ def generatePlotTypes():
 
 def generateTerrainTypes():
 	NiTextOut("Generating Terrain (Python Donut) ...")
-	terraingen = TerrainGenerator()
+	terraingen = NewTerrainGenerator()
 	terrainTypes = terraingen.generateTerrain()
 	return terrainTypes
 
@@ -326,3 +327,166 @@ def addFeatures():
 	featuregen = DonutFeatureGenerator()
 	featuregen.addFeatures()
 	return 0
+
+class NewTerrainGenerator:
+	"If iDesertPercent=35, then about 35% of all land will be desert. Plains is similar. \
+	Note that all percentages are approximate, as values have to be roughened to achieve a natural look."
+
+	def __init__(self, iDesertPercent=15, iPlainsPercent=15, iMarshPercent=15, iTundraPercent=15,
+	             fSnowLatitude=0.7, fTundraLatitude=0.6,
+	             fGrassLatitude=0.1, fDesertBottomLatitude=0.2,
+	             fDesertTopLatitude=0.5, fracXExp=-1,
+	             fracYExp=-1, grain_amount=4):
+
+		self.gc = CyGlobalContext()
+		self.map = CyMap()
+
+		grain_amount += self.gc.getWorldInfo(self.map.getWorldSize()).getTerrainGrainChange()
+
+		self.grain_amount = grain_amount
+
+		self.iWidth = self.map.getGridWidth()
+		self.iHeight = self.map.getGridHeight()
+
+		self.mapRand = self.gc.getGame().getMapRand()
+
+		self.iFlags = 0  # Disallow FRAC_POLAR flag, to prevent "zero row" problems.
+		if self.map.isWrapX(): self.iFlags += CyFractal.FracVals.FRAC_WRAP_X
+		if self.map.isWrapY(): self.iFlags += CyFractal.FracVals.FRAC_WRAP_Y
+
+		self.deserts=CyFractal()
+		self.plains=CyFractal()
+		self.marsh=CyFractal()
+		self.tundra=CyFractal()
+		self.variation=CyFractal()
+
+		iDesertPercent += self.gc.getClimateInfo(self.map.getClimate()).getDesertPercentChange()
+		iDesertPercent = min(iDesertPercent, 100)
+		iDesertPercent = max(iDesertPercent, 0)
+
+		self.iDesertPercent = iDesertPercent
+		self.iPlainsPercent = iPlainsPercent
+		self.iMarshPercent = iMarshPercent
+		self.iTundraPercent = iTundraPercent
+
+		self.iDesertTopPercent = 100
+		self.iDesertBottomPercent = max(0,int(100-iDesertPercent))
+		self.iMarshTopPercent = 100
+		self.iMarshBottomPercent = max(0,int(100-iDesertPercent-iMarshPercent))
+		self.iPlainsTopPercent = 100
+		self.iPlainsBottomPercent = max(0,int(100-iDesertPercent-iMarshPercent-iPlainsPercent))
+		self.iTundraTopPercent = 100
+		self.iTundraBottomPercent = max(0,int(100-iDesertPercent-iMarshPercent-iPlainsPercent-iTundraPercent))
+
+		self.iMountainTopPercent = 75
+		self.iMountainBottomPercent = 60
+
+		self.fracXExp = fracXExp
+		self.fracYExp = fracYExp
+
+		self.initFractals()
+
+	def initFractals(self):
+		self.deserts.fracInit(self.iWidth, self.iHeight, self.grain_amount, self.mapRand, self.iFlags, self.fracXExp, self.fracYExp)
+		self.iDesertTop = self.deserts.getHeightFromPercent(self.iDesertTopPercent)
+		self.iDesertBottom = self.deserts.getHeightFromPercent(self.iDesertBottomPercent)
+
+		self.plains.fracInit(self.iWidth, self.iHeight, self.grain_amount+1, self.mapRand, self.iFlags, self.fracXExp, self.fracYExp)
+		self.iPlainsTop = self.plains.getHeightFromPercent(self.iPlainsTopPercent)
+		self.iPlainsBottom = self.plains.getHeightFromPercent(self.iPlainsBottomPercent)
+
+		self.marsh.fracInit(self.iWidth, self.iHeight, self.grain_amount, self.mapRand, self.iFlags, self.fracXExp, self.fracYExp)
+		self.iMarshTop = self.marsh.getHeightFromPercent(self.iMarshTopPercent)
+		self.iMarshBottom = self.marsh.getHeightFromPercent(self.iMarshBottomPercent)
+		
+		self.tundra.fracInit(self.iWidth, self.iHeight, self.grain_amount, self.mapRand, self.iFlags, self.fracXExp, self.fracYExp)
+		self.iTundraTop = self.tundra.getHeightFromPercent(self.iMarshTopPercent)
+		self.iTundraBottom = self.tundra.getHeightFromPercent(self.iMarshBottomPercent)
+
+		self.variation.fracInit(self.iWidth, self.iHeight, self.grain_amount, self.mapRand, self.iFlags, self.fracXExp, self.fracYExp)
+
+		self.terrainDesert = [self.gc.getInfoTypeForString("TERRAIN_DESERT"),
+					self.gc.getInfoTypeForString("TERRAIN_AQUATIC_HOT"),
+					self.gc.getInfoTypeForString("TERRAIN_ARID_HOT"),
+					self.gc.getInfoTypeForString("TERRAIN_VOLCANIC_HOT"),
+					self.gc.getInfoTypeForString("TERRAIN_ARCTIC_HOT")]
+		self.terrainPlains = [self.gc.getInfoTypeForString("TERRAIN_PLAINS"),
+					self.gc.getInfoTypeForString("TERRAIN_AQUATIC_DRY"),
+					self.gc.getInfoTypeForString("TERRAIN_ARID_DRY"),
+					self.gc.getInfoTypeForString("TERRAIN_VOLCANIC_DRY"),
+					self.gc.getInfoTypeForString("TERRAIN_ARCTIC_DRY")]
+		self.terrainIce = [self.gc.getInfoTypeForString("TERRAIN_SNOW"),
+					self.gc.getInfoTypeForString("TERRAIN_SNOW"),
+					self.gc.getInfoTypeForString("TERRAIN_SNOW"),
+					self.gc.getInfoTypeForString("TERRAIN_SNOW"),
+					self.gc.getInfoTypeForString("TERRAIN_SNOW")]
+		self.terrainTundra = [self.gc.getInfoTypeForString("TERRAIN_TUNDRA"),
+					self.gc.getInfoTypeForString("TERRAIN_AQUATIC_COLD"),
+					self.gc.getInfoTypeForString("TERRAIN_ARID_COLD"),
+					self.gc.getInfoTypeForString("TERRAIN_VOLCANIC_COLD"),
+					self.gc.getInfoTypeForString("TERRAIN_ARCTIC_COLD")]
+		self.terrainGrass = [self.gc.getInfoTypeForString("TERRAIN_GRASS"),
+					self.gc.getInfoTypeForString("TERRAIN_AQUATIC_COLD"),
+					self.gc.getInfoTypeForString("TERRAIN_ARID_COLD"),
+					self.gc.getInfoTypeForString("TERRAIN_VOLCANIC_COLD"),
+					self.gc.getInfoTypeForString("TERRAIN_ARCTIC_COLD")]
+		self.terrainMarsh = [self.gc.getInfoTypeForString("TERRAIN_MARSH"),
+					self.gc.getInfoTypeForString("TERRAIN_AQUATIC_WET"),
+					self.gc.getInfoTypeForString("TERRAIN_ARID_WET"),
+					self.gc.getInfoTypeForString("TERRAIN_VOLCANIC_WET"),
+					self.gc.getInfoTypeForString("TERRAIN_ARCTIC_WET")]
+
+	def getLatitudeAtPlot(self, iX, iY):
+		return None
+
+	def generateTerrain(self):
+		terrainData = [0]*(self.iWidth*self.iHeight)
+		for x in range(self.iWidth):
+			for y in range(self.iHeight):
+				iI = y*self.iWidth + x
+				pPlot = CyMap().plot(x,y)
+				iArea = pPlot.getArea()
+				iType = iArea % 5
+				terrain = self.generateTerrainAtPlot(x, y, iType)
+				terrainData[iI] = terrain
+
+		#remove marsh next to desert
+		for x in range(self.iWidth):
+			for y in range(self.iHeight):
+				iIndex = y * self.iWidth + x
+				if terrainData[iIndex] in self.terrainMarsh:
+					for iDirection in range(CardinalDirectionTypes.NUM_CARDINALDIRECTION_TYPES):
+						pNewPlot = plotCardinalDirection(x, y, CardinalDirectionTypes(iDirection))
+						if pNewPlot.isNone(): continue
+						if pNewPlot.getTerrainType() in self.terrainDesert:
+							pPlot = CyMap().plot(x,y)
+							iArea = pPlot.getArea()
+							iType = iArea % 2
+							terrainData[iIndex] = self.terrainPlains[iType]
+							break
+
+		return terrainData
+
+	def generateTerrainAtPlot(self,iX,iY,iType):
+		plot = self.map.plot(iX, iY)
+
+		if (plot.isWater()):
+			return self.map.plot(iX, iY).getTerrainType()
+
+		terrainVal = self.terrainGrass[iType]
+		desertVal = self.deserts.getHeight(iX, iY)
+		plainsVal = self.plains.getHeight(iX, iY)
+		marshVal = self.marsh.getHeight(iX, iY)
+		tundraVal = self.tundra.getHeight(iX, iY)
+		if ((desertVal >= self.iDesertBottom) and (desertVal <= self.iDesertTop)):
+			terrainVal = self.terrainDesert[iType]
+		elif ((marshVal >= self.iMarshBottom) and (marshVal <= self.iMarshTop) and plot.isFlatlands()):
+			terrainVal = self.terrainMarsh[iType]
+		elif ((plainsVal >= self.iPlainsBottom) and (plainsVal <= self.iPlainsTop)):
+			terrainVal = self.terrainPlains[iType]
+		elif ((tundraVal >= self.iTundraBottom) and (tundraVal <= self.iTundraTop)):
+			terrainVal = self.terrainTundra[iType]
+		if (terrainVal == TerrainTypes.NO_TERRAIN):
+			return self.map.plot(iX, iY).getTerrainType()
+
+		return terrainVal

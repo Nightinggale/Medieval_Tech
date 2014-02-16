@@ -48,11 +48,22 @@
 		<element type="iSeaLevelChange"/>
 	</ElementType>
 	<ElementType name="bStart" content="textOnly" dt:type="boolean"/>
-	<ElementType name="iTripLength" content="textOnly" dt:type="int"/>
+  <ElementType name="bAIRoute" content="textOnly" dt:type="boolean"/>
+  <ElementType name="bRequiresTech" content="textOnly" dt:type="boolean"/>
+  <ElementType name="bNoEuropePlot" content="textOnly" dt:type="boolean"/>
+  <ElementType name="iTripLength" content="textOnly" dt:type="int"/>
 	<ElementType name="iMinLandDistance" content="textOnly" dt:type="int"/>
+  <ElementType name="iMaxLandCoverage" content="textOnly" dt:type="int"/>
 	<ElementType name="iWidthPercent" content="textOnly" dt:type="int"/>
 	<ElementType name="Direction" content="textOnly"/>
+  <ElementType name="PythonTradeScreen" content="textOnly"/>
   <ElementType name="bValue" content="textOnly" dt:type="boolean"/>
+  <ElementType name="bLeaveFromBarbarianCity" content="textOnly" dt:type="boolean"/>
+  <ElementType name="bLeaveFromForeignCity" content="textOnly" dt:type="boolean"/>
+  <ElementType name="bLeaveFromOwnedCity" content="textOnly" dt:type="boolean"/>
+  <ElementType name="bLeaveFromAnyCity" content="textOnly" dt:type="boolean"/>
+  <ElementType name="CityRequiredBuildingClass" content="textOnly"/>
+  <ElementType name="DefaultColor" content="textOnly"/>
   <ElementType name="TradeScreenType" content="eltOnly">
     <element type="TradeScreen"/>
     <element type="bValue"/>
@@ -60,15 +71,37 @@
   <ElementType name="TradeScreenTypes" content="eltOnly">
     <element type="TradeScreenType" minOccurs="0" maxOccurs="*"/>
   </ElementType>
+  <ElementType name="DirectionArray" content="eltOnly">
+    <element type="Direction"/>
+    <element type="bValue"/>
+  </ElementType>
+  <ElementType name="DirectionArrays" content="eltOnly">
+    <element type="DirectionArray" minOccurs="0" maxOccurs="*"/>
+  </ElementType>
 	<ElementType name="EuropeInfo" content="eltOnly">
 		<element type="Type"/>
 		<element type="Description"/>
+    <element type="Strategy"/>
+    <element type="Help"/>
 		<element type="Direction"/>
+    <element type="DirectionArrays" minOccurs="0"/>
 		<element type="bStart"/>
+    <element type="bAIRoute" minOccurs="0"/>
 		<element type="iTripLength"/>
 		<element type="iMinLandDistance"/>
+    <element type="iMaxLandCoverage" minOccurs="0"/>
 		<element type="iWidthPercent"/>
+    <element type="bRequiresTech" minOccurs="0"/>
+    <element type="bNoEuropePlot" minOccurs="0"/>
+    <element type="bLeaveFromBarbarianCity" minOccurs="0"/>
+    <element type="bLeaveFromForeignCity" minOccurs="0"/>
+    <element type="bLeaveFromOwnedCity" minOccurs="0"/>
+    <element type="bLeaveFromAnyCity" minOccurs="0"/>
+    <element type="CityRequiredBuildingClass" minOccurs="0"/>
     <element type="TradeScreenTypes" minOccurs="0"/>
+    <element type="PythonTradeScreen"/>
+    <element type="DefaultColor" minOccurs="0"/>
+    <element type="Button"/>
 	</ElementType>
 	<ElementType name="WorldInfo" content="eltOnly">
 		<element type="Type"/>
@@ -441,6 +474,7 @@
   <ElementType name="bFreeUnitsAreNonePopulation" content="textOnly" dt:type="boolean"/>
   <ElementType name="bFreeUnitsNotAllCities" content="textOnly" dt:type="boolean"/>
   <ElementType name="AllowsTrait" content="textOnly"/>
+  <ElementType name="AllowsTradeScreen" content="textOnly"/>
   <ElementType name="ConvertsUnitsTo" content="textOnly"/>
   <ElementType name="NewDefaultUnitClass" content="textOnly"/>
   <ElementType name="ConvertsUnitsFrom" content="textOnly"/>
@@ -601,6 +635,7 @@
     <element type="AllowsProfessions" minOccurs="0"/>
     <element type="AllowsBonuses" minOccurs="0"/>
     <element type="AllowsTrait" minOccurs="0"/>
+    <element type="AllowsTradeScreen" minOccurs="0"/>
     <element type="AllowsBuildTypes" minOccurs="0"/>
     <element type="AllowsBuildTypesTerrain" minOccurs="0"/>
     <element type="FasterBuildTypes" minOccurs="0"/>

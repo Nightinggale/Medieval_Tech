@@ -18,66 +18,66 @@
 				</YieldModifier>
 			</YieldModifiers>
 		</EmphasizeInfo>
-    <EmphasizeInfo>
-      <Type>EMPHASIZE_LUXURY_FOOD</Type>
-      <Description>Emphasize Luxury Food</Description>
-      <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-      <bAvoidGrowth>0</bAvoidGrowth>
-      <YieldModifiers>
-        <YieldModifier>
-          <YieldType>YIELD_GRAIN</YieldType>
-          <iYield>1</iYield>
-        </YieldModifier>
-      </YieldModifiers>
-    </EmphasizeInfo>
-    <EmphasizeInfo>
-      <Type>EMPHASIZE_CATTLE</Type>
-      <Description>Emphasize Cattle</Description>
-      <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-      <bAvoidGrowth>0</bAvoidGrowth>
-      <YieldModifiers>
-        <YieldModifier>
-          <YieldType>YIELD_CATTLE</YieldType>
-          <iYield>1</iYield>
-        </YieldModifier>
-      </YieldModifiers>
-    </EmphasizeInfo>
-    <EmphasizeInfo>
-      <Type>EMPHASIZE_SHEEP</Type>
-      <Description>Emphasize Sheep</Description>
-      <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-      <bAvoidGrowth>0</bAvoidGrowth>
-      <YieldModifiers>
-        <YieldModifier>
-          <YieldType>YIELD_SHEEP</YieldType>
-          <iYield>1</iYield>
-        </YieldModifier>
-      </YieldModifiers>
-    </EmphasizeInfo>
-    <EmphasizeInfo>
-      <Type>EMPHASIZE_WOOL</Type>
-      <Description>Emphasize Wool</Description>
-      <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-      <bAvoidGrowth>0</bAvoidGrowth>
-      <YieldModifiers>
-        <YieldModifier>
-          <YieldType>YIELD_WOOL</YieldType>
-          <iYield>1</iYield>
-        </YieldModifier>
-      </YieldModifiers>
-    </EmphasizeInfo>
-    <EmphasizeInfo>
-      <Type>EMPHASIZE_SALT</Type>
-      <Description>Emphasize Salt</Description>
-      <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-      <bAvoidGrowth>0</bAvoidGrowth>
-      <YieldModifiers>
-        <YieldModifier>
-          <YieldType>YIELD_SALT</YieldType>
-          <iYield>1</iYield>
-        </YieldModifier>
-      </YieldModifiers>
-    </EmphasizeInfo>
+		<EmphasizeInfo>
+			<Type>EMPHASIZE_LUXURY_FOOD</Type>
+			<Description>Emphasize Luxury Food</Description>
+			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+			<bAvoidGrowth>0</bAvoidGrowth>
+			<YieldModifiers>
+				<YieldModifier>
+					<YieldType>YIELD_GRAIN</YieldType>
+					<iYield>1</iYield>
+				</YieldModifier>
+			</YieldModifiers>
+		</EmphasizeInfo>
+		<EmphasizeInfo>
+			<Type>EMPHASIZE_CATTLE</Type>
+			<Description>Emphasize Cattle</Description>
+			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+			<bAvoidGrowth>0</bAvoidGrowth>
+			<YieldModifiers>
+				<YieldModifier>
+					<YieldType>YIELD_CATTLE</YieldType>
+					<iYield>1</iYield>
+				</YieldModifier>
+			</YieldModifiers>
+		</EmphasizeInfo>
+		<EmphasizeInfo>
+			<Type>EMPHASIZE_SHEEP</Type>
+			<Description>Emphasize Sheep</Description>
+			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+			<bAvoidGrowth>0</bAvoidGrowth>
+			<YieldModifiers>
+				<YieldModifier>
+					<YieldType>YIELD_SHEEP</YieldType>
+					<iYield>1</iYield>
+				</YieldModifier>
+			</YieldModifiers>
+		</EmphasizeInfo>
+		<EmphasizeInfo>
+			<Type>EMPHASIZE_WOOL</Type>
+			<Description>Emphasize Wool</Description>
+			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+			<bAvoidGrowth>0</bAvoidGrowth>
+			<YieldModifiers>
+				<YieldModifier>
+					<YieldType>YIELD_WOOL</YieldType>
+					<iYield>1</iYield>
+				</YieldModifier>
+			</YieldModifiers>
+		</EmphasizeInfo>
+		<EmphasizeInfo>
+			<Type>EMPHASIZE_SALT</Type>
+			<Description>Emphasize Salt</Description>
+			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+			<bAvoidGrowth>0</bAvoidGrowth>
+			<YieldModifiers>
+				<YieldModifier>
+					<YieldType>YIELD_SALT</YieldType>
+					<iYield>1</iYield>
+				</YieldModifier>
+			</YieldModifiers>
+		</EmphasizeInfo>
 		<EmphasizeInfo>
 			<Type>EMPHASIZE_LUMBER</Type>
 			<Description>TXT_KEY_EMPHASIZE_LUMBER</Description>
@@ -90,18 +90,18 @@
 				</YieldModifier>
 			</YieldModifiers>
 		</EmphasizeInfo>
-    <EmphasizeInfo>
-      <Type>EMPHASIZE_STONE</Type>
-      <Description>Emphasize Stone</Description>
-      <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-      <bAvoidGrowth>0</bAvoidGrowth>
-      <YieldModifiers>
-        <YieldModifier>
-          <YieldType>YIELD_STONE</YieldType>
-          <iYield>1</iYield>
-        </YieldModifier>
-      </YieldModifiers>
-    </EmphasizeInfo>
+		<EmphasizeInfo>
+			<Type>EMPHASIZE_STONE</Type>
+			<Description>Emphasize Stone</Description>
+			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+			<bAvoidGrowth>0</bAvoidGrowth>
+			<YieldModifiers>
+				<YieldModifier>
+					<YieldType>YIELD_STONE</YieldType>
+					<iYield>1</iYield>
+				</YieldModifier>
+			</YieldModifiers>
+		</EmphasizeInfo>
 		<EmphasizeInfo>
 			<Type>EMPHASIZE_SILVER</Type>
 			<Description>TXT_KEY_EMPHASIZE_SILVER</Description>
@@ -114,18 +114,18 @@
 				</YieldModifier>
 			</YieldModifiers>
 		</EmphasizeInfo>
-    <EmphasizeInfo>
-      <Type>EMPHASIZE_GOLD</Type>
-      <Description>Emphasize Gold</Description>
-      <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-      <bAvoidGrowth>0</bAvoidGrowth>
-      <YieldModifiers>
-        <YieldModifier>
-          <YieldType>YIELD_GOLD</YieldType>
-          <iYield>1</iYield>
-        </YieldModifier>
-      </YieldModifiers>
-    </EmphasizeInfo>
+		<EmphasizeInfo>
+			<Type>EMPHASIZE_GOLD</Type>
+			<Description>Emphasize Gold</Description>
+			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+			<bAvoidGrowth>0</bAvoidGrowth>
+			<YieldModifiers>
+				<YieldModifier>
+					<YieldType>YIELD_GOLD</YieldType>
+					<iYield>1</iYield>
+				</YieldModifier>
+			</YieldModifiers>
+		</EmphasizeInfo>
 		<EmphasizeInfo>
 			<Type>EMPHASIZE_FUR</Type>
 			<Description>TXT_KEY_EMPHASIZE_FUR</Description>
@@ -138,42 +138,42 @@
 				</YieldModifier>
 			</YieldModifiers>
 		</EmphasizeInfo>
-    <EmphasizeInfo>
-      <Type>EMPHASIZE_COTTON</Type>
-      <Description>TXT_KEY_EMPHASIZE_COTTON</Description>
-      <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-      <bAvoidGrowth>0</bAvoidGrowth>
-      <YieldModifiers>
-        <YieldModifier>
-          <YieldType>YIELD_COTTON</YieldType>
-          <iYield>1</iYield>
-        </YieldModifier>
-      </YieldModifiers>
-    </EmphasizeInfo>
-    <EmphasizeInfo>
-      <Type>EMPHASIZE_BARLEY</Type>
-      <Description>Emphasize Barley</Description>
-      <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-      <bAvoidGrowth>0</bAvoidGrowth>
-      <YieldModifiers>
-        <YieldModifier>
-          <YieldType>YIELD_BARLEY</YieldType>
-          <iYield>1</iYield>
-        </YieldModifier>
-      </YieldModifiers>
-    </EmphasizeInfo>
-    <EmphasizeInfo>
-      <Type>EMPHASIZE_GRAPES</Type>
-      <Description>Emphasize Grapes</Description>
-      <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-      <bAvoidGrowth>0</bAvoidGrowth>
-      <YieldModifiers>
-        <YieldModifier>
-          <YieldType>YIELD_GRAPES</YieldType>
-          <iYield>1</iYield>
-        </YieldModifier>
-      </YieldModifiers>
-    </EmphasizeInfo>
+		<EmphasizeInfo>
+			<Type>EMPHASIZE_COTTON</Type>
+			<Description>TXT_KEY_EMPHASIZE_COTTON</Description>
+			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+			<bAvoidGrowth>0</bAvoidGrowth>
+			<YieldModifiers>
+				<YieldModifier>
+					<YieldType>YIELD_COTTON</YieldType>
+					<iYield>1</iYield>
+				</YieldModifier>
+			</YieldModifiers>
+		</EmphasizeInfo>
+		<EmphasizeInfo>
+			<Type>EMPHASIZE_BARLEY</Type>
+			<Description>Emphasize Barley</Description>
+			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+			<bAvoidGrowth>0</bAvoidGrowth>
+			<YieldModifiers>
+				<YieldModifier>
+					<YieldType>YIELD_BARLEY</YieldType>
+					<iYield>1</iYield>
+				</YieldModifier>
+			</YieldModifiers>
+		</EmphasizeInfo>
+		<EmphasizeInfo>
+			<Type>EMPHASIZE_GRAPES</Type>
+			<Description>Emphasize Grapes</Description>
+			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+			<bAvoidGrowth>0</bAvoidGrowth>
+			<YieldModifiers>
+				<YieldModifier>
+					<YieldType>YIELD_GRAPES</YieldType>
+					<iYield>1</iYield>
+				</YieldModifier>
+			</YieldModifiers>
+		</EmphasizeInfo>
 		<EmphasizeInfo>
 			<Type>EMPHASIZE_ORE</Type>
 			<Description>TXT_KEY_EMPHASIZE_ORE</Description>
@@ -222,18 +222,18 @@
 				</YieldModifier>
 			</YieldModifiers>
 		</EmphasizeInfo>
-    <EmphasizeInfo>
-      <Type>EMPHASIZE_WINE</Type>
-      <Description>Emphasize Wine</Description>
-      <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-      <bAvoidGrowth>0</bAvoidGrowth>
-      <YieldModifiers>
-        <YieldModifier>
-          <YieldType>YIELD_WINE</YieldType>
-          <iYield>1</iYield>
-        </YieldModifier>
-      </YieldModifiers>
-    </EmphasizeInfo>
+		<EmphasizeInfo>
+			<Type>EMPHASIZE_WINE</Type>
+			<Description>Emphasize Wine</Description>
+			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+			<bAvoidGrowth>0</bAvoidGrowth>
+			<YieldModifiers>
+				<YieldModifier>
+					<YieldType>YIELD_WINE</YieldType>
+					<iYield>1</iYield>
+				</YieldModifier>
+			</YieldModifiers>
+		</EmphasizeInfo>
 		<EmphasizeInfo>
 			<Type>EMPHASIZE_TOOLS</Type>
 			<Description>TXT_KEY_EMPHASIZE_TOOLS</Description>
@@ -270,30 +270,30 @@
 				</YieldModifier>
 			</YieldModifiers>
 		</EmphasizeInfo>
-    <EmphasizeInfo>
-      <Type>EMPHASIZE_LEATHER_ARMOR</Type>
-      <Description>Emphasize Leather Armor</Description>
-      <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-      <bAvoidGrowth>0</bAvoidGrowth>
-      <YieldModifiers>
-        <YieldModifier>
-          <YieldType>YIELD_LEATHER_ARMOR</YieldType>
-          <iYield>1</iYield>
-        </YieldModifier>
-      </YieldModifiers>
-    </EmphasizeInfo>
-    <EmphasizeInfo>
-      <Type>EMPHASIZE_SCALE_ARMOR</Type>
-      <Description>Emphasize Scale Armor</Description>
-      <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-      <bAvoidGrowth>0</bAvoidGrowth>
-      <YieldModifiers>
-        <YieldModifier>
-          <YieldType>YIELD_SCALE_ARMOR</YieldType>
-          <iYield>1</iYield>
-        </YieldModifier>
-      </YieldModifiers>
-    </EmphasizeInfo>
+		<EmphasizeInfo>
+			<Type>EMPHASIZE_LEATHER_ARMOR</Type>
+			<Description>Emphasize Leather Armor</Description>
+			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+			<bAvoidGrowth>0</bAvoidGrowth>
+			<YieldModifiers>
+				<YieldModifier>
+					<YieldType>YIELD_LEATHER_ARMOR</YieldType>
+					<iYield>1</iYield>
+				</YieldModifier>
+			</YieldModifiers>
+		</EmphasizeInfo>
+		<EmphasizeInfo>
+			<Type>EMPHASIZE_SCALE_ARMOR</Type>
+			<Description>Emphasize Scale Armor</Description>
+			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+			<bAvoidGrowth>0</bAvoidGrowth>
+			<YieldModifiers>
+				<YieldModifier>
+					<YieldType>YIELD_SCALE_ARMOR</YieldType>
+					<iYield>1</iYield>
+				</YieldModifier>
+			</YieldModifiers>
+		</EmphasizeInfo>
 		<EmphasizeInfo>
 			<Type>EMPHASIZE_HAMMERS</Type>
 			<Description>TXT_KEY_EMPHASIZE_HAMMERS</Description>
@@ -342,30 +342,30 @@
 				</YieldModifier>
 			</YieldModifiers>
 		</EmphasizeInfo>
-    <EmphasizeInfo>
-      <Type>EMPHASIZE_RESEARCH</Type>
-      <Description>Emphasize Research</Description>
-      <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-      <bAvoidGrowth>0</bAvoidGrowth>
-      <YieldModifiers>
-        <YieldModifier>
-          <YieldType>YIELD_IDEAS</YieldType>
-          <iYield>1</iYield>
-        </YieldModifier>
-      </YieldModifiers>
-    </EmphasizeInfo>
-    <EmphasizeInfo>
-      <Type>EMPHASIZE_CULTURE</Type>
-      <Description>Emphasize Culture</Description>
-      <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-      <bAvoidGrowth>0</bAvoidGrowth>
-      <YieldModifiers>
-        <YieldModifier>
-          <YieldType>YIELD_CULTURE</YieldType>
-          <iYield>1</iYield>
-        </YieldModifier>
-      </YieldModifiers>
-    </EmphasizeInfo>
+		<EmphasizeInfo>
+			<Type>EMPHASIZE_RESEARCH</Type>
+			<Description>Emphasize Research</Description>
+			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+			<bAvoidGrowth>0</bAvoidGrowth>
+			<YieldModifiers>
+				<YieldModifier>
+					<YieldType>YIELD_IDEAS</YieldType>
+					<iYield>1</iYield>
+				</YieldModifier>
+			</YieldModifiers>
+		</EmphasizeInfo>
+		<EmphasizeInfo>
+			<Type>EMPHASIZE_CULTURE</Type>
+			<Description>Emphasize Culture</Description>
+			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+			<bAvoidGrowth>0</bAvoidGrowth>
+			<YieldModifiers>
+				<YieldModifier>
+					<YieldType>YIELD_CULTURE</YieldType>
+					<iYield>1</iYield>
+				</YieldModifier>
+			</YieldModifiers>
+		</EmphasizeInfo>
 		<EmphasizeInfo>
 			<Type>EMPHASIZE_NO_FOOD</Type>
 			<Description>TXT_KEY_EMPHASIZE_NO_FOOD</Description>
@@ -378,66 +378,66 @@
 				</YieldModifier>
 			</YieldModifiers>
 		</EmphasizeInfo>
-    <EmphasizeInfo>
-      <Type>EMPHASIZE_NO_LUXURY_FOOD</Type>
-      <Description>Deemphasize Luxury Food</Description>
-      <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-      <bAvoidGrowth>0</bAvoidGrowth>
-      <YieldModifiers>
-        <YieldModifier>
-          <YieldType>YIELD_GRAIN</YieldType>
-          <iYield>-1</iYield>
-        </YieldModifier>
-      </YieldModifiers>
-    </EmphasizeInfo>
-    <EmphasizeInfo>
-      <Type>EMPHASIZE_NO_CATTLE</Type>
-      <Description>Deemphasize Cattle</Description>
-      <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-      <bAvoidGrowth>0</bAvoidGrowth>
-      <YieldModifiers>
-        <YieldModifier>
-          <YieldType>YIELD_CATTLE</YieldType>
-          <iYield>-1</iYield>
-        </YieldModifier>
-      </YieldModifiers>
-    </EmphasizeInfo>
-    <EmphasizeInfo>
-      <Type>EMPHASIZE_NO_SHEEP</Type>
-      <Description>Deemphasize Sheep</Description>
-      <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-      <bAvoidGrowth>0</bAvoidGrowth>
-      <YieldModifiers>
-        <YieldModifier>
-          <YieldType>YIELD_SHEEP</YieldType>
-          <iYield>-1</iYield>
-        </YieldModifier>
-      </YieldModifiers>
-    </EmphasizeInfo>
-    <EmphasizeInfo>
-      <Type>EMPHASIZE_NO_WOOL</Type>
-      <Description>Deemphasize Wool</Description>
-      <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-      <bAvoidGrowth>0</bAvoidGrowth>
-      <YieldModifiers>
-        <YieldModifier>
-          <YieldType>YIELD_WOOL</YieldType>
-          <iYield>-1</iYield>
-        </YieldModifier>
-      </YieldModifiers>
-    </EmphasizeInfo>
-    <EmphasizeInfo>
-      <Type>EMPHASIZE_NO_SALT</Type>
-      <Description>Deemphasize Salt</Description>
-      <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-      <bAvoidGrowth>0</bAvoidGrowth>
-      <YieldModifiers>
-        <YieldModifier>
-          <YieldType>YIELD_SALT</YieldType>
-          <iYield>-1</iYield>
-        </YieldModifier>
-      </YieldModifiers>
-    </EmphasizeInfo>
+		<EmphasizeInfo>
+			<Type>EMPHASIZE_NO_LUXURY_FOOD</Type>
+			<Description>Deemphasize Luxury Food</Description>
+			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+			<bAvoidGrowth>0</bAvoidGrowth>
+			<YieldModifiers>
+				<YieldModifier>
+					<YieldType>YIELD_GRAIN</YieldType>
+					<iYield>-1</iYield>
+				</YieldModifier>
+			</YieldModifiers>
+		</EmphasizeInfo>
+		<EmphasizeInfo>
+			<Type>EMPHASIZE_NO_CATTLE</Type>
+			<Description>Deemphasize Cattle</Description>
+			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+			<bAvoidGrowth>0</bAvoidGrowth>
+			<YieldModifiers>
+				<YieldModifier>
+					<YieldType>YIELD_CATTLE</YieldType>
+					<iYield>-1</iYield>
+				</YieldModifier>
+			</YieldModifiers>
+		</EmphasizeInfo>
+		<EmphasizeInfo>
+			<Type>EMPHASIZE_NO_SHEEP</Type>
+			<Description>Deemphasize Sheep</Description>
+			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+			<bAvoidGrowth>0</bAvoidGrowth>
+			<YieldModifiers>
+				<YieldModifier>
+					<YieldType>YIELD_SHEEP</YieldType>
+					<iYield>-1</iYield>
+				</YieldModifier>
+			</YieldModifiers>
+		</EmphasizeInfo>
+		<EmphasizeInfo>
+			<Type>EMPHASIZE_NO_WOOL</Type>
+			<Description>Deemphasize Wool</Description>
+			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+			<bAvoidGrowth>0</bAvoidGrowth>
+			<YieldModifiers>
+				<YieldModifier>
+					<YieldType>YIELD_WOOL</YieldType>
+					<iYield>-1</iYield>
+				</YieldModifier>
+			</YieldModifiers>
+		</EmphasizeInfo>
+		<EmphasizeInfo>
+			<Type>EMPHASIZE_NO_SALT</Type>
+			<Description>Deemphasize Salt</Description>
+			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+			<bAvoidGrowth>0</bAvoidGrowth>
+			<YieldModifiers>
+				<YieldModifier>
+					<YieldType>YIELD_SALT</YieldType>
+					<iYield>-1</iYield>
+				</YieldModifier>
+			</YieldModifiers>
+		</EmphasizeInfo>
 		<EmphasizeInfo>
 			<Type>EMPHASIZE_NO_LUMBER</Type>
 			<Description>TXT_KEY_EMPHASIZE_NO_LUMBER</Description>
@@ -450,18 +450,18 @@
 				</YieldModifier>
 			</YieldModifiers>
 		</EmphasizeInfo>
-    <EmphasizeInfo>
-      <Type>EMPHASIZE_NO_STONE</Type>
-      <Description>Deemphasize Stone</Description>
-      <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-      <bAvoidGrowth>0</bAvoidGrowth>
-      <YieldModifiers>
-        <YieldModifier>
-          <YieldType>YIELD_STONE</YieldType>
-          <iYield>-1</iYield>
-        </YieldModifier>
-      </YieldModifiers>
-    </EmphasizeInfo>
+		<EmphasizeInfo>
+			<Type>EMPHASIZE_NO_STONE</Type>
+			<Description>Deemphasize Stone</Description>
+			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+			<bAvoidGrowth>0</bAvoidGrowth>
+			<YieldModifiers>
+				<YieldModifier>
+					<YieldType>YIELD_STONE</YieldType>
+					<iYield>-1</iYield>
+				</YieldModifier>
+			</YieldModifiers>
+		</EmphasizeInfo>
 		<EmphasizeInfo>
 			<Type>EMPHASIZE_NO_SILVER</Type>
 			<Description>TXT_KEY_EMPHASIZE_NO_SILVER</Description>
@@ -474,18 +474,18 @@
 				</YieldModifier>
 			</YieldModifiers>
 		</EmphasizeInfo>
-    <EmphasizeInfo>
-      <Type>EMPHASIZE_NO_GOLD</Type>
-      <Description>Deemphasize Gold</Description>
-      <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-      <bAvoidGrowth>0</bAvoidGrowth>
-      <YieldModifiers>
-        <YieldModifier>
-          <YieldType>YIELD_GOLD</YieldType>
-          <iYield>-1</iYield>
-        </YieldModifier>
-      </YieldModifiers>
-    </EmphasizeInfo>
+		<EmphasizeInfo>
+			<Type>EMPHASIZE_NO_GOLD</Type>
+			<Description>Deemphasize Gold</Description>
+			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+			<bAvoidGrowth>0</bAvoidGrowth>
+			<YieldModifiers>
+				<YieldModifier>
+					<YieldType>YIELD_GOLD</YieldType>
+					<iYield>-1</iYield>
+				</YieldModifier>
+			</YieldModifiers>
+		</EmphasizeInfo>
 		<EmphasizeInfo>
 			<Type>EMPHASIZE_NO_FUR</Type>
 			<Description>TXT_KEY_EMPHASIZE_NO_FUR</Description>
@@ -498,42 +498,42 @@
 				</YieldModifier>
 			</YieldModifiers>
 		</EmphasizeInfo>
-    <EmphasizeInfo>
-      <Type>EMPHASIZE_NO_COTTON</Type>
-      <Description>TXT_KEY_EMPHASIZE_NO_COTTON</Description>
-      <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-      <bAvoidGrowth>0</bAvoidGrowth>
-      <YieldModifiers>
-        <YieldModifier>
-          <YieldType>YIELD_COTTON</YieldType>
-          <iYield>-1</iYield>
-        </YieldModifier>
-      </YieldModifiers>
-    </EmphasizeInfo>
-    <EmphasizeInfo>
-      <Type>EMPHASIZE_NO_BARLEY</Type>
-      <Description>Deemphasize Barley</Description>
-      <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-      <bAvoidGrowth>0</bAvoidGrowth>
-      <YieldModifiers>
-        <YieldModifier>
-          <YieldType>YIELD_BARLEY</YieldType>
-          <iYield>-1</iYield>
-        </YieldModifier>
-      </YieldModifiers>
-    </EmphasizeInfo>
-    <EmphasizeInfo>
-      <Type>EMPHASIZE_NO_GRAPES</Type>
-      <Description>Deemphasize Grapes</Description>
-      <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-      <bAvoidGrowth>0</bAvoidGrowth>
-      <YieldModifiers>
-        <YieldModifier>
-          <YieldType>YIELD_GRAPES</YieldType>
-          <iYield>-1</iYield>
-        </YieldModifier>
-      </YieldModifiers>
-    </EmphasizeInfo>
+		<EmphasizeInfo>
+			<Type>EMPHASIZE_NO_COTTON</Type>
+			<Description>TXT_KEY_EMPHASIZE_NO_COTTON</Description>
+			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+			<bAvoidGrowth>0</bAvoidGrowth>
+			<YieldModifiers>
+				<YieldModifier>
+					<YieldType>YIELD_COTTON</YieldType>
+					<iYield>-1</iYield>
+				</YieldModifier>
+			</YieldModifiers>
+		</EmphasizeInfo>
+		<EmphasizeInfo>
+			<Type>EMPHASIZE_NO_BARLEY</Type>
+			<Description>Deemphasize Barley</Description>
+			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+			<bAvoidGrowth>0</bAvoidGrowth>
+			<YieldModifiers>
+				<YieldModifier>
+					<YieldType>YIELD_BARLEY</YieldType>
+					<iYield>-1</iYield>
+				</YieldModifier>
+			</YieldModifiers>
+		</EmphasizeInfo>
+		<EmphasizeInfo>
+			<Type>EMPHASIZE_NO_GRAPES</Type>
+			<Description>Deemphasize Grapes</Description>
+			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+			<bAvoidGrowth>0</bAvoidGrowth>
+			<YieldModifiers>
+				<YieldModifier>
+					<YieldType>YIELD_GRAPES</YieldType>
+					<iYield>-1</iYield>
+				</YieldModifier>
+			</YieldModifiers>
+		</EmphasizeInfo>
 		<EmphasizeInfo>
 			<Type>EMPHASIZE_NO_ORE</Type>
 			<Description>TXT_KEY_EMPHASIZE_NO_ORE</Description>
@@ -582,18 +582,18 @@
 				</YieldModifier>
 			</YieldModifiers>
 		</EmphasizeInfo>
-    <EmphasizeInfo>
-      <Type>EMPHASIZE_NO_WINE</Type>
-      <Description>Deemphasize Wine</Description>
-      <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-      <bAvoidGrowth>0</bAvoidGrowth>
-      <YieldModifiers>
-        <YieldModifier>
-          <YieldType>YIELD_WINE</YieldType>
-          <iYield>-1</iYield>
-        </YieldModifier>
-      </YieldModifiers>
-    </EmphasizeInfo>
+		<EmphasizeInfo>
+			<Type>EMPHASIZE_NO_WINE</Type>
+			<Description>Deemphasize Wine</Description>
+			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+			<bAvoidGrowth>0</bAvoidGrowth>
+			<YieldModifiers>
+				<YieldModifier>
+					<YieldType>YIELD_WINE</YieldType>
+					<iYield>-1</iYield>
+				</YieldModifier>
+			</YieldModifiers>
+		</EmphasizeInfo>
 		<EmphasizeInfo>
 			<Type>EMPHASIZE_NO_TOOLS</Type>
 			<Description>TXT_KEY_EMPHASIZE_NO_TOOLS</Description>
@@ -630,30 +630,30 @@
 				</YieldModifier>
 			</YieldModifiers>
 		</EmphasizeInfo>
-    <EmphasizeInfo>
-      <Type>EMPHASIZE_NO_LEATHER_ARMOR</Type>
-      <Description>Deemphasize Leather Armor</Description>
-      <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-      <bAvoidGrowth>0</bAvoidGrowth>
-      <YieldModifiers>
-        <YieldModifier>
-          <YieldType>YIELD_LEATHER_ARMOR</YieldType>
-          <iYield>-1</iYield>
-        </YieldModifier>
-      </YieldModifiers>
-    </EmphasizeInfo>
-    <EmphasizeInfo>
-      <Type>EMPHASIZE_NO_SCALE_ARMOR</Type>
-      <Description>Deemphasize Scale Armor</Description>
-      <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-      <bAvoidGrowth>0</bAvoidGrowth>
-      <YieldModifiers>
-        <YieldModifier>
-          <YieldType>YIELD_SCALE_ARMOR</YieldType>
-          <iYield>-1</iYield>
-        </YieldModifier>
-      </YieldModifiers>
-    </EmphasizeInfo>
+		<EmphasizeInfo>
+			<Type>EMPHASIZE_NO_LEATHER_ARMOR</Type>
+			<Description>Deemphasize Leather Armor</Description>
+			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+			<bAvoidGrowth>0</bAvoidGrowth>
+			<YieldModifiers>
+				<YieldModifier>
+					<YieldType>YIELD_LEATHER_ARMOR</YieldType>
+					<iYield>-1</iYield>
+				</YieldModifier>
+			</YieldModifiers>
+		</EmphasizeInfo>
+		<EmphasizeInfo>
+			<Type>EMPHASIZE_NO_SCALE_ARMOR</Type>
+			<Description>Deemphasize Scale Armor</Description>
+			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+			<bAvoidGrowth>0</bAvoidGrowth>
+			<YieldModifiers>
+				<YieldModifier>
+					<YieldType>YIELD_SCALE_ARMOR</YieldType>
+					<iYield>-1</iYield>
+				</YieldModifier>
+			</YieldModifiers>
+		</EmphasizeInfo>
 		<EmphasizeInfo>
 			<Type>EMPHASIZE_NO_HAMMERS</Type>
 			<Description>TXT_KEY_EMPHASIZE_NO_HAMMERS</Description>
@@ -702,30 +702,30 @@
 				</YieldModifier>
 			</YieldModifiers>
 		</EmphasizeInfo>
-    <EmphasizeInfo>
-      <Type>EMPHASIZE_NO_RESEARCH</Type>
-      <Description>Deemphasize Research</Description>
-      <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-      <bAvoidGrowth>0</bAvoidGrowth>
-      <YieldModifiers>
-        <YieldModifier>
-          <YieldType>YIELD_IDEAS</YieldType>
-          <iYield>-1</iYield>
-        </YieldModifier>
-      </YieldModifiers>
-    </EmphasizeInfo>
-    <EmphasizeInfo>
-      <Type>EMPHASIZE_NO_CULTURE</Type>
-      <Description>Deemphasize Culture</Description>
-      <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-      <bAvoidGrowth>0</bAvoidGrowth>
-      <YieldModifiers>
-        <YieldModifier>
-          <YieldType>YIELD_CULTURE</YieldType>
-          <iYield>-1</iYield>
-        </YieldModifier>
-      </YieldModifiers>
-    </EmphasizeInfo>
+		<EmphasizeInfo>
+			<Type>EMPHASIZE_NO_RESEARCH</Type>
+			<Description>Deemphasize Research</Description>
+			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+			<bAvoidGrowth>0</bAvoidGrowth>
+			<YieldModifiers>
+				<YieldModifier>
+					<YieldType>YIELD_IDEAS</YieldType>
+					<iYield>-1</iYield>
+				</YieldModifier>
+			</YieldModifiers>
+		</EmphasizeInfo>
+		<EmphasizeInfo>
+			<Type>EMPHASIZE_NO_CULTURE</Type>
+			<Description>Deemphasize Culture</Description>
+			<Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+			<bAvoidGrowth>0</bAvoidGrowth>
+			<YieldModifiers>
+				<YieldModifier>
+					<YieldType>YIELD_CULTURE</YieldType>
+					<iYield>-1</iYield>
+				</YieldModifier>
+			</YieldModifiers>
+		</EmphasizeInfo>
 		<EmphasizeInfo>
 			<Type>EMPHASIZE_AVOID_GROWTH</Type>
 			<Description>TXT_KEY_EMPHASIZE_AVOID_GROWTH</Description>

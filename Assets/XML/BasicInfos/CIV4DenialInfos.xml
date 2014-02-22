@@ -102,9 +102,9 @@
 			<Type>DENIAL_PEACE_NOT_POSSIBLE_YOU</Type>
 			<Description>TXT_KEY_DENIAL_PEACE_NOT_POSSIBLE_YOU</Description>
 		</DenialInfo>
-    <DenialInfo>
-      <Type>DENIAL_CULTURE_YOU</Type>
-      <Description>TXT_KEY_DENIAL_DENIAL_CULTURE_YOU</Description>
-    </DenialInfo>
+		<DenialInfo>
+			<Type>DENIAL_CULTURE_YOU</Type>
+			<Description>TXT_KEY_DENIAL_DENIAL_CULTURE_YOU</Description>
+		</DenialInfo>
 	</DenialInfos>
 </Civ4DenialInfos>

@@ -26,10 +26,13 @@
 #include "CvMap.h"
 #include "CvArea.h"
 #include "CvPlot.h"
+#include "CvUnitAI.h"
 #include "CvPopupInfo.h"
 #include "FProfiler.h"
 #include "CyArgsList.h"
 #include "CvDLLPythonIFaceBase.h"
+
+#include "CvInfoProfessions.h"
 
 int shortenID(int iId)
 {
@@ -914,6 +917,16 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 
             szTempBuffer.Format(L"\nUnitAI Type = %s(%d).", GC.getUnitAIInfo(pUnit->AI_getUnitAIType()).getDescription(), pUnit->AI_getUnitAIState());
             szString.append(szTempBuffer);
+			if (pUnit->getUnitTradeMarket() != NO_EUROPE)
+			{
+				szTempBuffer.Format(L"\nTradeScreen = %s.", GC.getEuropeInfo(pUnit->getUnitTradeMarket()).getHelp());
+				szString.append(szTempBuffer);
+			}
+			else
+			{
+				szTempBuffer.Format(L"\nNo TradeScreen.");
+				szString.append(szTempBuffer);
+			}
             ///TKe
             szTempBuffer.Format(L"\nSacrifice Value = %d.", pUnit->AI_sacrificeValue(NULL));
             szString.append(szTempBuffer);
@@ -980,6 +993,24 @@ void CvGameTextMgr::setProfessionHelp(CvWStringBuffer &szBuffer, ProfessionTypes
 		szTempBuffer.Format(SETCOLR L"%s" ENDCOLR , TEXT_COLOR("COLOR_UNIT_TEXT"), GC.getProfessionInfo(eProfession).getDescription());
 		szBuffer.append(szTempBuffer);
 	}
+
+	/// info subclass - start - Nightinggale
+	if (kProfession.isParent() || kProfession.isSubType())
+	{
+		// print links to all sub professions and/or parent
+		ProfessionTypes eLoopProfession = kProfession.isParent() ? eProfession : kProfession.getParent();
+		int iMax = eLoopProfession + GC.getProfessionInfo(eLoopProfession).getNumSubTypes();
+		for (int iSub = eLoopProfession; iSub <= iMax; iSub++)
+		{
+			if (iSub != eProfession)
+			{
+				szBuffer.append(NEWLINE);
+				szBuffer.append(gDLL->getSymbolID(BULLET_CHAR));
+                szBuffer.append(gDLL->getText("TXT_KEY_ALT_EQUIPMENT_LINK", GC.getProfessionInfo((ProfessionTypes)iSub).getTextKeyWide()));
+			}
+		}
+	}
+	/// info subclass - end - Nightinggale
 
 	if (!bCivilopediaText)
 	{
@@ -1133,21 +1164,12 @@ void CvGameTextMgr::setProfessionHelp(CvWStringBuffer &szBuffer, ProfessionTypes
         for (int iYield = 0; iYield < NUM_YIELD_TYPES; iYield++)
         {
             int iYieldAmount = GC.getGameINLINE().getActivePlayer() != NO_PLAYER ? GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getYieldEquipmentAmount(eProfession, (YieldTypes) iYield) : kProfession.getYieldEquipmentAmount((YieldTypes) iYield);
-            ///TKs Med Update 1.1c
             if (iYieldAmount != 0)
             {
                 szTempBuffer.Format(gDLL->getText("TXT_KEY_UNIT_REQUIRES_YIELD_QUANTITY_STRING", iYieldAmount, GC.getYieldInfo((YieldTypes) iYield).getChar()));
                 szBuffer.append(NEWLINE);
                 szBuffer.append(szTempBuffer);
             }
-            //int iNumRequired = GET_PLAYER(eActivePlayer).getAltYieldEquipmentAmount(eProfession, eYield);
-            int iNumRequired = GC.getGameINLINE().getActivePlayer() != NO_PLAYER ? GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getAltYieldEquipmentAmount(eProfession, (YieldTypes) iYield) : kProfession.getAltEquipmentTypes((YieldTypes) iYield);
-			if (iNumRequired > 0)
-			{
-				szBuffer.append(NEWLINE);
-				szBuffer.append(gDLL->getText("TXT_KEY_YIELD_ALTERNATE_FOR_PROFESSION_PEDIA", iNumRequired, GC.getYieldInfo((YieldTypes) iYield).getChar()));
-			}
-            ///TKe Update
         }
     }
     ///TKs Med Update 1.1c
@@ -2195,11 +2217,24 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 		tempChar = 'x';
 		///TKs Med Trade Routes
 		//EuropeTypes eNearestEurope = pPlot->getNearestEurope();
-		EuropeTypes eNearestEurope = pPlot->getEurope();
-		if (eNearestEurope != NO_EUROPE)
+		//EuropeTypes eNearestEurope = pPlot->getEurope();
+		if (pPlot->getDistanceToOcean() != MAX_SHORT)
 		{
-			szTempBuffer.Format(L"\nTrade Route: %s", GC.getEuropeInfo(eNearestEurope).getDescription());
+			szTempBuffer.Format(L"\nDistance to Ocean: %d", pPlot->getDistanceToOcean());
 			szString.append(szTempBuffer);
+		}
+		for (int iJ = 0; iJ < GC.getNumEuropeInfos(); iJ++)
+		{
+			if (pPlot->isTradeScreenAccessPlot((EuropeTypes)iJ))
+			{
+				szTempBuffer.Format(L"\nTrade Screen: %s", GC.getEuropeInfo((EuropeTypes)iJ).getHelp());
+				szString.append(szTempBuffer);
+			}
+			else if (!GC.getEuropeInfo((EuropeTypes)iJ).isNoEuropePlot())
+			{
+				szTempBuffer.Format(L"\nDistance to %s: %d", GC.getEuropeInfo((EuropeTypes)iJ).getHelp(), pPlot->getDistanceToTradeScreen((EuropeTypes)iJ));
+				szString.append(szTempBuffer);
+			}
 		}
         ///TKe
 		if(pPlot->getRouteType() != NO_ROUTE)
@@ -2612,7 +2647,7 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 		     YieldTypes eBonusYield = NO_YIELD;
                 for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
                 {
-                    if (GC.getCivicInfo((CivicTypes) iCivic).getCivicOptionType() == (CivicOptionTypes)GC.getXMLval(XML_CIVICOPTION_INVENTIONS))
+                    if (GC.getCivicInfo((CivicTypes) iCivic).getCivicOptionType() == CIVICOPTION_INVENTIONS)
                     {
                         for (int i = 0; i < GC.getNUM_YIELD_TYPES(); ++i)
                         {
@@ -2629,7 +2664,7 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
                 {
                     for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
                     {
-                        if (GC.getCivicInfo((CivicTypes) iCivic).getCivicOptionType() == (CivicOptionTypes)GC.getXMLval(XML_CIVICOPTION_INVENTIONS))
+                        if (GC.getCivicInfo((CivicTypes) iCivic).getCivicOptionType() == CIVICOPTION_INVENTIONS)
                         {
                             CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes) iCivic);
                             if (kCivicInfo.getAllowsYields(eBonusYield) > 0 || kCivicInfo.getAllowsBonuses(eBonus) > 0)
@@ -3572,7 +3607,7 @@ void CvGameTextMgr::parseLeaderTraits(CvWStringBuffer &szHelpString, LeaderHeadT
         ///Tks Med
         if (!bDawnOfMan)
         {
-            int iVictoryType = GC.getLeaderHeadInfo(eLeader).getVictoryType();
+            int EconomyType = GC.getLeaderHeadInfo(eLeader).getEconomyType();
             if (eCivilization != NO_CIVILIZATION)
             {
                 if (GC.getCivilizationInfo(eCivilization).isWaterStart())
@@ -3587,7 +3622,7 @@ void CvGameTextMgr::parseLeaderTraits(CvWStringBuffer &szHelpString, LeaderHeadT
                 }
             }
 
-            if (iVictoryType == 4)
+            if (EconomyType == 1)
             {
                 szHelpString.append(NEWLINE);
                 szHelpString.append(gDLL->getText("TXT_KEY_CIVILIZATION_INVADER"));
@@ -3626,6 +3661,7 @@ void CvGameTextMgr::parseLeaderTraits(CvWStringBuffer &szHelpString, LeaderHeadT
 		if (!bDawnOfMan && eCivilization != NO_CIVILIZATION)
 		{
             bool bFoundTech = false;
+			bool bInGame = GC.getGameINLINE().getActivePlayer() == NO_PLAYER;
             for (int iLoopCivic = 0; iLoopCivic < GC.getNumCivicInfos(); ++iLoopCivic)
             {
                 if (GC.getCivilizationInfo(eCivilization).getCivilizationTechs(iLoopCivic) != -1)
@@ -3640,7 +3676,7 @@ void CvGameTextMgr::parseLeaderTraits(CvWStringBuffer &szHelpString, LeaderHeadT
                     CvWStringBuffer szBuffer;
                     CvCivicInfo& kLoopCivicInfo = GC.getCivicInfo((CivicTypes) iLoopCivic);
                     szHelpString.append(gDLL->getText("TXT_KEY_YELLOW_NAME", kLoopCivicInfo.getDescription()));
-                    GAMETEXT.parseCivicInfo(szBuffer, (CivicTypes) iLoopCivic, false, false, true, false, eCivilization);
+                    GAMETEXT.parseCivicInfo(szBuffer, (CivicTypes) iLoopCivic, bInGame, false, true, false, eCivilization);
                     szHelpString.append(szBuffer);
                 }
             }
@@ -4550,7 +4586,7 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
         szHelpText.append(NEWLINE);
         szHelpText.append(gDLL->getText("TXT_KEY_INCREASED_IMMIGRATION", kCivicInfo.getIncreasedImmigrants()));
     }
-    ModCodeTypes iModdersCode = (ModCodeTypes)kCivicInfo.getModdersCode1();
+   /* ModCodeTypes iModdersCode = (ModCodeTypes)kCivicInfo.getModdersCode1();
 	if (iModdersCode != NO_MOD_CODE)
 	{
 
@@ -4559,6 +4595,12 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
 	        szHelpText.append(NEWLINE);
             szHelpText.append(gDLL->getText("TXT_KEY_NEW_TRADE_ROUTE", kCivicInfo.getDescription()));
 	    }
+	}*/
+
+	if (kCivicInfo.getAllowsTradeScreen() != NO_EUROPE)
+    {
+		szHelpText.append(NEWLINE);
+        szHelpText.append(gDLL->getText("TXT_KEY_NEW_TRADE_ROUTE", kCivicInfo.getDescription()));
 	}
 
 	if (kCivicInfo.getConvertsResearchYield() != NO_YIELD)
@@ -5027,7 +5069,7 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
         for (int iLoopCivic = 0; iLoopCivic < GC.getNumCivicInfos(); ++iLoopCivic)
         {
             CvCivicInfo& kLoopCivicInfo = GC.getCivicInfo((CivicTypes) iLoopCivic);
-            if ((CivicTypes)iLoopCivic != eCivic && kLoopCivicInfo.getCivicOptionType() == (CivicOptionTypes)GC.getXMLval(XML_CIVICOPTION_INVENTIONS))
+            if ((CivicTypes)iLoopCivic != eCivic && kLoopCivicInfo.getCivicOptionType() == CIVICOPTION_INVENTIONS)
             {
                 if ((CivicTypes)kLoopCivicInfo.getRequiredInvention() == eCivic)
                 {
@@ -6369,6 +6411,13 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
         }
 
 	}
+
+	if (kBuilding.getCenterPlotBonus() != 0)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_CENTER_PLOT_BONUS", kBuilding.getCenterPlotBonus()));
+	}
+
 
     if (kBuilding.isIncreasesCityPopulation() != 0)
 	{
@@ -7877,16 +7926,15 @@ void CvGameTextMgr::setYieldPriceHelp(CvWStringBuffer &szBuffer, PlayerTypes ePl
 		{
             szBuffer.append(NEWLINE);
             szBuffer.append(gDLL->getText("TXT_KEY_BUY_AND_SELL_YIELD", kParent.getYieldBuyPrice(eYield), kParent.getYieldSellPrice(eYield)));
-            if (kPlayer.getHasTradeRouteType(TRADE_ROUTE_SPICE_ROUTE))
-            {
-                szBuffer.append(NEWLINE);
-                szBuffer.append(gDLL->getText("TXT_KEY_BUY_AND_SELL_YIELD_SPICE_ROUTE", kParent.getYieldBuyPrice(eYield, UNIT_TRAVEL_STATE_IN_SPICE_ROUTE), kParent.getYieldSellPrice(eYield,UNIT_TRAVEL_STATE_IN_SPICE_ROUTE)));
-            }
-            if (kPlayer.getHasTradeRouteType(TRADE_ROUTE_SILK_ROAD))
-            {
-                szBuffer.append(NEWLINE);
-                szBuffer.append(gDLL->getText("TXT_KEY_BUY_AND_SELL_YIELD_SILK_ROAD", kParent.getYieldBuyPrice(eYield, UNIT_TRAVEL_STATE_IN_SILK_ROAD), kParent.getYieldSellPrice(eYield, UNIT_TRAVEL_STATE_IN_SILK_ROAD)));
-            }
+			for (int i = 1; i < GC.getNumEuropeInfos(); ++i)
+			{
+				if (kPlayer.getHasTradeRouteType((EuropeTypes)i) && !GC.getEuropeInfo((EuropeTypes)i).isLeaveFromOwnedCity())
+				{
+					szBuffer.append(NEWLINE);
+					szBuffer.append(gDLL->getText("TXT_KEY_BUY_AND_SELL_YIELD_TRADE_SCREEN", GC.getEuropeInfo((EuropeTypes)i).getHelp(), kParent.getYieldBuyPrice(eYield, (EuropeTypes)i), kParent.getYieldSellPrice(eYield, (EuropeTypes)i)));
+				}
+			}
+           
 		}
 		else if (iAmount > 0)
 		{
@@ -7896,20 +7944,15 @@ void CvGameTextMgr::setYieldPriceHelp(CvWStringBuffer &szBuffer, PlayerTypes ePl
 		    iProfit -= (iAmount * kPlayer.getTaxRate()) / 100;
             szBuffer.append(NEWLINE);
             szBuffer.append(gDLL->getText("TXT_KEY_BUY_AND_SELL_YIELD_AMOUNT", iProfit, kParent.getYieldBuyPrice(eYield), kParent.getYieldSellPrice(eYield)));
-            if (kPlayer.getHasTradeRouteType(TRADE_ROUTE_SPICE_ROUTE))
-            {
-                iProfit = kParent.getYieldBuyPrice(eYield) * iAmount;
-                iProfit -= (iProfit * kPlayer.getTaxRate()) / 100;
-                szBuffer.append(NEWLINE);
-                szBuffer.append(gDLL->getText("TXT_KEY_BUY_AND_SELL_YIELD_SPICE_ROUTE_AMOUNT", iProfit, kParent.getYieldBuyPrice(eYield, UNIT_TRAVEL_STATE_IN_SPICE_ROUTE), kParent.getYieldSellPrice(eYield,UNIT_TRAVEL_STATE_IN_SPICE_ROUTE)));
-            }
-            if (kPlayer.getHasTradeRouteType(TRADE_ROUTE_SILK_ROAD))
-            {
-                iAmount = kParent.getYieldBuyPrice(eYield) * iAmount;
-                iAmount -= (iAmount * kPlayer.getTaxRate()) / 100;
-                szBuffer.append(NEWLINE);
-                szBuffer.append(gDLL->getText("TXT_KEY_BUY_AND_SELL_YIELD_SILK_ROAD_AMOUNT", iProfit, kParent.getYieldBuyPrice(eYield, UNIT_TRAVEL_STATE_IN_SILK_ROAD), kParent.getYieldSellPrice(eYield, UNIT_TRAVEL_STATE_IN_SILK_ROAD)));
-            }
+
+			for (int i = 1; i < GC.getNumEuropeInfos(); ++i)
+			{
+				if (kPlayer.getHasTradeRouteType((EuropeTypes)i) && !GC.getEuropeInfo((EuropeTypes)i).isLeaveFromOwnedCity())
+				{
+					szBuffer.append(NEWLINE);
+					szBuffer.append(gDLL->getText("TXT_KEY_BUY_AND_SELL_YIELD_TRADE_SCREEN_AMOUNT", iProfit, GC.getEuropeInfo((EuropeTypes)i).getHelp(), kParent.getYieldBuyPrice(eYield, (EuropeTypes)i), kParent.getYieldSellPrice(eYield, (EuropeTypes)i)));
+				}
+			}
 		}
 	}
 	szBuffer.append(ENDCOLR);
@@ -8640,7 +8683,7 @@ int CvGameTextMgr::setCityYieldModifierString(CvWStringBuffer& szBuffer, YieldTy
 	iCivicMod = 0;
 	for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); iCivic++)
     {
-        if (GC.getCivicInfo((CivicTypes)iCivic).getCivicOptionType() == (CivicOptionTypes)GC.getXMLval(XML_CIVICOPTION_INVENTIONS))
+        if (GC.getCivicInfo((CivicTypes)iCivic).getCivicOptionType() == CIVICOPTION_INVENTIONS)
         {
             if (kOwner.getIdeasResearched((CivicTypes) iCivic) > 0)
             {
@@ -9013,7 +9056,7 @@ void CvGameTextMgr::setCitizenHelp(CvWStringBuffer &szString, const CvCity& kCit
                 }
                 ///TKe Update 1.1g
                 ///TKs Med Update 1.1c
-				if (eProfessionYield == YIELD_EDUCATION && kUnit.getUnitInfo().getStudentWeight() > 0 && GC.getUnitInfo(kUnit.getUnitType()).getKnightDubbingWeight() <= 0)
+				if (eProfessionYield == YIELD_EDUCATION && kUnit.getUnitInfo().getStudentWeight() > 0 && GC.getUnitInfo(kUnit.getUnitType()).getKnightDubbingWeight() == 0)
 				{
 					int iEducationProduced = kCity.calculateNetYield(YIELD_EDUCATION);
 
@@ -9186,15 +9229,15 @@ void CvGameTextMgr::setCitizenHelp(CvWStringBuffer &szString, const CvCity& kCit
 	}
 }
 ///TKs Med
-void CvGameTextMgr::setEuropeYieldSoldHelp(CvWStringBuffer &szString, const CvPlayer& kPlayer, YieldTypes eYield, int iAmount, int iCommission, UnitTravelStates eTradeRoute)
+void CvGameTextMgr::setEuropeYieldSoldHelp(CvWStringBuffer &szString, const CvPlayer& kPlayer, YieldTypes eYield, int iAmount, int iCommission, EuropeTypes eTradeScreen)
 {
 	FAssert(kPlayer.getParent() != NO_PLAYER);
 	CvPlayer& kPlayerEurope = GET_PLAYER(kPlayer.getParent());
 	int iGross = iAmount;
 	if (eYield != NO_YIELD)
 	{
-		iGross *= kPlayerEurope.getYieldBuyPrice(eYield, eTradeRoute);
-		szString.append(gDLL->getText("TXT_KEY_YIELD_SOLD", iAmount, GC.getYieldInfo(eYield).getChar(), kPlayerEurope.getYieldBuyPrice(eYield, eTradeRoute), iGross));
+		iGross *= kPlayerEurope.getYieldBuyPrice(eYield, eTradeScreen);
+		szString.append(gDLL->getText("TXT_KEY_YIELD_SOLD", iAmount, GC.getYieldInfo(eYield).getChar(), kPlayerEurope.getYieldBuyPrice(eYield, eTradeScreen), iGross));
 	}
 	else
 	{
@@ -9217,7 +9260,7 @@ void CvGameTextMgr::setEuropeYieldSoldHelp(CvWStringBuffer &szString, const CvPl
 		szString.append(gDLL->getText("TXT_KEY_YIELD_TAX", kPlayer.getTaxRate(), iTaxGold));
 	}
 
-    FAssert(eYield == NO_YIELD || kPlayer.getSellToEuropeProfit(eYield, iAmount * (100 - iCommission) / 100) == iGross);
+    FAssert(eYield == NO_YIELD || kPlayer.getSellToEuropeProfit(eYield, iAmount * (100 - iCommission) / 100, eTradeScreen) == iGross);
     szString.append(NEWLINE);
     szString.append(gDLL->getText("TXT_KEY_YIELD_NET_PROFIT", iGross));
 

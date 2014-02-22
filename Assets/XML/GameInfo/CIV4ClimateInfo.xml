@@ -48,33 +48,33 @@
 			<fDesertTopLatitudeChange>-0.05</fDesertTopLatitudeChange>
 			<fRandIceLatitude>0.15</fRandIceLatitude>
 		</ClimateInfo>
-    <ClimateInfo>
-      <Type>CLIMATE_EUROPE</Type>
-      <Description>Europe</Description>
-      <iDesertPercentChange>0</iDesertPercentChange>
-      <iJungleLatitude>6</iJungleLatitude>
-      <iHillRange>7</iHillRange>
-      <iPeakPercent>25</iPeakPercent>
-      <fSnowLatitudeChange>0.15</fSnowLatitudeChange>
-      <fTundraLatitudeChange>0.1</fTundraLatitudeChange>
-      <fGrassLatitudeChange>0.0</fGrassLatitudeChange>
-      <fDesertBottomLatitudeChange>0.0</fDesertBottomLatitudeChange>
-      <fDesertTopLatitudeChange>0.0</fDesertTopLatitudeChange>
-      <fRandIceLatitude>.15</fRandIceLatitude>
-    </ClimateInfo>
-    <ClimateInfo>
-      <Type>CLIMATE_ARID</Type>
-      <Description>Arid</Description>
-      <iDesertPercentChange>20</iDesertPercentChange>
-      <iJungleLatitude>6</iJungleLatitude>
-      <iHillRange>5</iHillRange>
-      <iPeakPercent>25</iPeakPercent>
-      <fSnowLatitudeChange>0.0</fSnowLatitudeChange>
-      <fTundraLatitudeChange>0.0</fTundraLatitudeChange>
-      <fGrassLatitudeChange>0.0</fGrassLatitudeChange>
-      <fDesertBottomLatitudeChange>-0.1</fDesertBottomLatitudeChange>
-      <fDesertTopLatitudeChange>0.1</fDesertTopLatitudeChange>
-      <fRandIceLatitude>0.20</fRandIceLatitude>
-    </ClimateInfo>
+		<ClimateInfo>
+			<Type>CLIMATE_EUROPE</Type>
+			<Description>Europe</Description>
+			<iDesertPercentChange>0</iDesertPercentChange>
+			<iJungleLatitude>6</iJungleLatitude>
+			<iHillRange>7</iHillRange>
+			<iPeakPercent>25</iPeakPercent>
+			<fSnowLatitudeChange>0.15</fSnowLatitudeChange>
+			<fTundraLatitudeChange>0.1</fTundraLatitudeChange>
+			<fGrassLatitudeChange>0.0</fGrassLatitudeChange>
+			<fDesertBottomLatitudeChange>0.0</fDesertBottomLatitudeChange>
+			<fDesertTopLatitudeChange>0.0</fDesertTopLatitudeChange>
+			<fRandIceLatitude>.15</fRandIceLatitude>
+		</ClimateInfo>
+		<ClimateInfo>
+			<Type>CLIMATE_ARID</Type>
+			<Description>Arid</Description>
+			<iDesertPercentChange>20</iDesertPercentChange>
+			<iJungleLatitude>6</iJungleLatitude>
+			<iHillRange>5</iHillRange>
+			<iPeakPercent>25</iPeakPercent>
+			<fSnowLatitudeChange>0.0</fSnowLatitudeChange>
+			<fTundraLatitudeChange>0.0</fTundraLatitudeChange>
+			<fGrassLatitudeChange>0.0</fGrassLatitudeChange>
+			<fDesertBottomLatitudeChange>-0.1</fDesertBottomLatitudeChange>
+			<fDesertTopLatitudeChange>0.1</fDesertTopLatitudeChange>
+			<fRandIceLatitude>0.20</fRandIceLatitude>
+		</ClimateInfo>
 	</ClimateInfos>
 </Civ4ClimateInfo>

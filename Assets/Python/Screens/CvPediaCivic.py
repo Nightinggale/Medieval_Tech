@@ -127,7 +127,7 @@ class CvPediaCivic:
 			#if gc.getCivicInfo(j).getCivicOptionType() == 5 and gc.getCivicInfo(j).getInventionCategory() == -1:
 				#continue
 			#TKs
-			if gc.getCivicInfo(j).getCivicOptionType() == 5:
+			if gc.getCivicInfo(j).getCivicOptionType() == 0:
 				listSorted[j] = (gc.getCivicInfo(j).getDescription(), j)
 			#	Constitute = localText.getText("TXT_KEY_CONSTITUTE", ())
 			#	listSorted[j] = (Constitute + gc.getCivicInfo(j).getDescription(), j)
@@ -141,7 +141,7 @@ class CvPediaCivic:
 		for iI in range(gc.getNumCivicInfos()):
 			if (not gc.getCivicInfo(listSorted[iI][1]).isGraphicalOnly()):
 				#TKs
-				if gc.getCivicInfo(listSorted[iI][1]).getCivicOptionType() == 5 and gc.getCivicInfo(listSorted[iI][1]).getInventionCategory() == -1:
+				if gc.getCivicInfo(listSorted[iI][1]).getCivicOptionType() == 0 and gc.getCivicInfo(listSorted[iI][1]).getInventionCategory() == -1:
 					continue
 				#TKe
 				if bRedraw:

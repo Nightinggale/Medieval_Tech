@@ -15,6 +15,10 @@
 #include "CvGameAI.h"
 #include "CvInfos.h"
 
+/// PlotGroup - start - Nightinggale
+#include "CyPlotGroup.h"
+/// PlotGroup - end - Nightinggale
+
 CyCity::CyCity() : m_pCity(NULL)
 {
 
@@ -1271,6 +1275,29 @@ int CyCity::getAutoMaintainThreshold(int /*YieldTypes*/ eYield) const
 	return m_pCity ? m_pCity->getAutoMaintainThreshold((YieldTypes) eYield) : 0;
 }
 // transport feeder - end - Nightinggale
+
+/// PlotGroup - start - Nightinggale
+CyPlotGroup* CyCity::getCityPlotGroup()
+{
+	return m_pCity ? new CyPlotGroup(m_pCity->plotGroup(m_pCity->getOwnerINLINE())) : NULL;
+}
+/// PlotGroup - end - Nightinggale
+
+// EDU remake - start - Nightinggale
+int CyCity::getSpecialistTuition(int iUnit) const
+{
+	if (m_pCity == NULL || iUnit < 0 || iUnit >= GC.getNumUnitInfos())
+	{
+		return -1;	
+	}
+	return m_pCity->getSpecialistTuition((UnitTypes)iUnit);
+}
+
+bool CyCity::getTeachLevel() const
+{
+	return m_pCity ? m_pCity->getTeachLevel() : false;
+}
+// EDU remake - end - Nightinggale
 
 python::tuple CyCity::isOrderWaitingForYield(int /*YieldTypes*/ eYield)
 {

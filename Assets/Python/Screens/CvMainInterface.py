@@ -279,7 +279,7 @@ g_pSelectedUnit = 0
 
 class CvMainInterface:
 	"Main Interface Screen"
-
+	
 	def numPlotListButtons( self ):
 		return NUM_PLOT_LIST_BUTTONS
 
@@ -318,7 +318,14 @@ class CvMainInterface:
 
 	# Sets Global screen construct values based on our Resolution
 	def SetGlobals ( self, screen ):
-
+		#TK Med Trade Screen List
+		#TRADE_SCREEN_SPICE_ROUTE_MARKET = CvUtil.findInfoTypeNum('TRADE_SCREEN_SPICE_ROUTE_MARKET')
+		global TRADE_SCREEN_SPICE_ROUTE_MARKET
+		global TRADE_SCREEN_SILK_ROAD_MARKET
+		global TRADE_SCREEN_TRADE_FAIR_MARKET
+		TRADE_SCREEN_SPICE_ROUTE_MARKET = CvUtil.findInfoTypeNum('TRADE_SCREEN_SPICE_ROUTE_MARKET')
+		TRADE_SCREEN_SILK_ROAD_MARKET = CvUtil.findInfoTypeNum('TRADE_SCREEN_SILK_ROAD_MARKET')
+		TRADE_SCREEN_TRADE_FAIR_MARKET = CvUtil.findInfoTypeNum('TRADE_SCREEN_TRADE_FAIR_MARKET')
 	# GET RESOLUTION
 		global xResolution
 		global yResolution
@@ -713,38 +720,29 @@ class CvMainInterface:
 			screen.setHitMargins("ImmigrationScreenButton", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
 			self.appendtoHideState(screen, "ImmigrationScreenButton", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
 		else:
-			screen.setImageButton("EuropeScreenButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE").getPath(), iBtnX, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) / 2, self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_EUROPE_SCREEN).getActionInfoIndex(), -1 )
+			screen.setImageButton("EuropeScreenButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_MOTHER_LAND").getPath(), iBtnX, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) / 2, self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_EUROPE_SCREEN).getActionInfoIndex(), -1 )
 			screen.setImageShape("EuropeScreenButton", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
 			screen.setHitMargins("EuropeScreenButton", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
 			self.appendtoHideState(screen, "EuropeScreenButton", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
-		#if (pPlayer.getHasTradeRouteType(TradeRouteTypes.TRADE_ROUTE_SPICE_ROUTE)):	
+			
 		iBtnX += self.ADVISOR_BUTTON_SPACING
 		screen.setImageButton("SpiceRouteScreenButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_SPICE_ROUTE").getPath(), iBtnX, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) / 2, self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_SPICE_ROUTE_SCREEN).getActionInfoIndex(), -1 )
 		screen.setImageShape("SpiceRouteScreenButton", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
 		screen.setHitMargins("SpiceRouteScreenButton", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
-		#self.appendtoHideState(screen, "SpiceRouteScreenButton", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
 		screen.hide("SpiceRouteScreenButton")
-		#if (pPlayer.getHasTradeRouteType(TradeRouteTypes.TRADE_ROUTE_SILK_ROAD)):	
+		
 		iRoutes = iBtnX - (self.ADVISOR_BUTTON_SPACING / 2)
 		screen.setImageButton("SilkRoadScreenButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_SILK_ROAD").getPath(), iRoutes - (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) / 2, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) * 4, self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_SILK_ROAD_SCREEN).getActionInfoIndex(), -1 )
 		screen.setImageShape("SilkRoadScreenButton", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
 		screen.setHitMargins("SilkRoadScreenButton", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
-		#self.appendtoHideState(screen, "SilkRoadScreenButton", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
 		screen.hide("SilkRoadScreenButton")
-		#if (gc.getLeaderHeadInfo(pPlayer.getLeaderType()).getTravelCommandType() == 1  and pPlayer.getHasTradeRouteType(TradeRouteTypes.TRADE_ROUTE_FAIR)):
+		
 		iRoutes = iBtnX + (self.ADVISOR_BUTTON_SPACING / 2)
 		screen.setImageButton("TradeFairScreenButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE").getPath(), iRoutes - (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) / 2, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) * 4, self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_TRADE_FAIR_SCREEN).getActionInfoIndex(), -1 )
 		screen.setImageShape("TradeFairScreenButton", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
 		screen.setHitMargins("TradeFairScreenButton", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
-		#self.appendtoHideState(screen, "TradeFairScreenButton", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
 		screen.hide("TradeFairScreenButton")
-		#if (gc.getLeaderHeadInfo(pPlayer.getLeaderType()).getTravelCommandType() == 1 and getChtLvl() > 0):
-		#	iBtnX += self.ADVISOR_BUTTON_SPACING
-		#	screen.setImageButton("EuropeScreenButton2", ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE").getPath(), iBtnX, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) / 2, self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_EUROPE_SCREEN).getActionInfoIndex(), -1 )
-		#	screen.setImageShape("EuropeScreenButton2", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
-		#	screen.setHitMargins("EuropeScreenButton2", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
-		#	self.appendtoHideState(screen, "EuropeScreenButton2", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)	
-		#TK end
+		
 
 	# MINIMAP RING
 		screen.addPanel("MiniMapRing", u"", u"", True, False, 0, yResolution - SADDLE_HEIGHT, SADDLE_HEIGHT, SADDLE_HEIGHT, PanelStyles.PANEL_STYLE_STANDARD, WidgetTypes.WIDGET_GENERAL, -1, -1 )
@@ -1959,6 +1957,25 @@ class CvMainInterface:
 				screen.addTableControlGFC("ExportTradeRouteText", 1, CITIZEN_BAR_WIDTH + (MAP_EDGE_MARGIN_WIDTH * 2) + BUILD_AREA_WIDTH, CITY_TITLE_BAR_HEIGHT + CITY_VIEW_BOX_HEIGHT_AND_WIDTH + 3 * STACK_BAR_HEIGHT / 2, BUILD_AREA_WIDTH, TRANSPORT_AREA_HEIGHT - (STACK_BAR_HEIGHT * 3), False, False, MEDIUM_BUTTON_SIZE, MEDIUM_BUTTON_SIZE, TableStyles.TABLE_STYLE_STANDARD)
 				screen.setStyle("ExportTradeRouteText", "Table_EmptyScroll_Style")
 
+				### plotgroups start
+				# debug code
+				iExportRow = screen.appendTableRow("ExportTradeRouteText")
+				szExportText = unicode(pHeadSelectedCity.getCityPlotGroup().getLengthPlots())
+				screen.setTableText("ExportTradeRouteText", 0, iExportRow, u"<font=3>%s</font>" % szExportText, "", WidgetTypes.WIDGET_YIELD_IMPORT_EXPORT, false, -1, CvUtil.FONT_LEFT_JUSTIFY )
+				for iPlayer in range(gc.getMAX_PLAYERS()):
+					player = gc.getPlayer(iPlayer)
+					(pLoopCity, iter) = player.firstCity(false)
+					while(pLoopCity):
+						if (pLoopCity.plot().isConnectedTo(pHeadSelectedCity)):
+							if (iPlayer != pHeadSelectedCity.getOwner()):
+								screenName = "ExportTradeRouteText"
+							else:
+								screenName = "ImportTradeRouteText"
+							iExportRow = screen.appendTableRow(screenName)
+							screen.setTableText(screenName, 0, iExportRow, u"<font=3>%s</font>" % pLoopCity.getName(), "", WidgetTypes.WIDGET_YIELD_IMPORT_EXPORT, false, -1, CvUtil.FONT_LEFT_JUSTIFY )
+						(pLoopCity, iter) = player.nextCity(iter, false)
+				### plotgroups end
+				
 				for iYield in range(YieldTypes.NUM_YIELD_TYPES):
 					# transport feeder - start - Nightinggale
 					iAutoThreshold = pHeadSelectedCity.getAutoMaintainThreshold(iYield)
@@ -2091,17 +2108,18 @@ class CvMainInterface:
 					if CyInterface().canDeleteGroup():
 						iTotalActions += 1
 					iTotalActions += len(actions)
-
+					#Tk Med TradeRoute
+					iNumEuropeInfos = gc.getNumEuropeInfos()
+					iTotalActions += (iNumEuropeInfos - 1)
 					if ((self.RIGHT_MAX_ANGLE + self.LEFT_MAX_ANGLE) / self.ARC_SEPERATION) < iTotalActions:
 						self.ARC_SEPERATION = float(self.RIGHT_MAX_ANGLE + self.LEFT_MAX_ANGLE) / iTotalActions
 
 					ActionButtonList = []
+					iCount = 0
 					for i in actions:
 						if CyInterface().canHandleAction(i, True):
 							Xcord = (math.sin(math.radians(iAngle * self.NADER_SIGN)) * int(yResolution * self.CENTER_POINT_HEIGHT)) * self.NADER_SIGN * ASPECT_ADJUSTMENT + ((xResolution) / 2)
 							Ycord = (math.cos(math.radians(iAngle * self.NADER_SIGN)) * int(yResolution * self.CENTER_POINT_HEIGHT)) - (yResolution * self.CENTER_POINT_HEIGHT) + yResolution - (yResolution * self.CENTER_HUD_HEIGHT)
-							#Tk Med Move Delete
-							#iPriority = gc.getActionInfo(i).getOrderPriority()
 							szName = "ActionButton" + str(iCount)
 							screen.setImageButton(szName, gc.getActionInfo(i).getButton(), int(Xcord) - LARGE_BUTTON_SIZE, int(Ycord) - LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE * 2, LARGE_BUTTON_SIZE * 2, WidgetTypes.WIDGET_ACTION, i, -1)
 							screen.setImageShape(szName, ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
@@ -2116,6 +2134,43 @@ class CvMainInterface:
 							if iAngle < 0:
 								self.NADER_SIGN = -1
 							iCount += 1
+					plot = pHeadSelectedUnit.plot()
+					#TradeRoute = plot.getEurope()
+					#if (TradeRoute != -1):
+					iRoute = 0
+					for iRoute in range(iNumEuropeInfos):
+						#if (gc.getEuropeInfo(plot.getEurope()).getCardinalDirection() == gc.getEuropeInfo(TradeRoute).getCardinalDirection()):
+						if (pHeadSelectedUnit.canCrossOcean(plot, UnitTravelStates.UNIT_TRAVEL_STATE_TO_EUROPE, TradeRouteTypes.NO_TRADE_ROUTES, False, iRoute)):
+							#test = 1
+							#cancross = pHeadSelectedUnit.canCrossOcean(plot, UnitTravelStates.UNIT_TRAVEL_STATE_TO_EUROPE, TradeRouteTypes.NO_TRADE_ROUTES, False, plot.getEurope())
+							Xcord = (math.sin(math.radians(iAngle * self.NADER_SIGN)) * int(yResolution * self.CENTER_POINT_HEIGHT)) * self.NADER_SIGN * ASPECT_ADJUSTMENT + ((xResolution) / 2)
+							Ycord = (math.cos(math.radians(iAngle * self.NADER_SIGN)) * int(yResolution * self.CENTER_POINT_HEIGHT)) - (yResolution * self.CENTER_POINT_HEIGHT) + yResolution - (yResolution * self.CENTER_HUD_HEIGHT)
+							szName = "ActionButton" + str(iCount)
+							screen.setImageButton(szName, gc.getEuropeInfo(iRoute).getButton(), int(Xcord) - LARGE_BUTTON_SIZE, int(Ycord) - LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE * 2, LARGE_BUTTON_SIZE * 2, WidgetTypes.WIDGET_TRADE_SCREEN_ROUTE, UnitTravelStates.UNIT_TRAVEL_STATE_TO_EUROPE, iRoute)
+							screen.setImageShape(szName, ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
+							screen.setHitMargins(szName, 18, 18)
+							ActionButtonList.append(szName)
+
+							iAngle -= self.ARC_SEPERATION
+							if iAngle < 0:
+								self.NADER_SIGN = -1
+							iCount += 1
+						elif (pHeadSelectedUnit.canAutoSailTradeScreen(plot, iRoute, False)):
+							#test = 1
+							#cancross = pHeadSelectedUnit.canCrossOcean(plot, UnitTravelStates.UNIT_TRAVEL_STATE_TO_EUROPE, TradeRouteTypes.NO_TRADE_ROUTES, False, plot.getEurope())
+							Xcord = (math.sin(math.radians(iAngle * self.NADER_SIGN)) * int(yResolution * self.CENTER_POINT_HEIGHT)) * self.NADER_SIGN * ASPECT_ADJUSTMENT + ((xResolution) / 2)
+							Ycord = (math.cos(math.radians(iAngle * self.NADER_SIGN)) * int(yResolution * self.CENTER_POINT_HEIGHT)) - (yResolution * self.CENTER_POINT_HEIGHT) + yResolution - (yResolution * self.CENTER_HUD_HEIGHT)
+							szName = "ActionButton" + str(iCount)
+							screen.setImageButton(szName, gc.getEuropeInfo(iRoute).getButton(), int(Xcord) - LARGE_BUTTON_SIZE, int(Ycord) - LARGE_BUTTON_SIZE, LARGE_BUTTON_SIZE * 2, LARGE_BUTTON_SIZE * 2, WidgetTypes.WIDGET_AUTO_TRADE_SCREEN, iRoute, -1)
+							screen.setImageShape(szName, ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
+							screen.setHitMargins(szName, 18, 18)
+							ActionButtonList.append(szName)
+
+							iAngle -= self.ARC_SEPERATION
+							if iAngle < 0:
+								self.NADER_SIGN = -1
+							iCount += 1
+									
 
 					if (CyInterface().canCreateGroup()):
 						Xcord = (math.sin(math.radians(iAngle * self.NADER_SIGN)) * int(yResolution * self.CENTER_POINT_HEIGHT)) * self.NADER_SIGN * ASPECT_ADJUSTMENT + ((xResolution) / 2)
@@ -2531,20 +2586,21 @@ class CvMainInterface:
 
 		if (gc.getPlayer(ePlayer).isAlive()):
 			pPlayer = gc.getPlayer(ePlayer)
+			#for screen in range(gc.getNumEuropeInfos()):
 			#activeTeam = gc.getTeam(player.getTeam())
-			if (pPlayer.getHasTradeRouteType(TradeRouteTypes.TRADE_ROUTE_SPICE_ROUTE)):	
+			if (pPlayer.getHasTradeRouteType(TRADE_SCREEN_SPICE_ROUTE_MARKET)):	
 				screen.show("SpiceRouteScreenButton")
 				
 			else:
 				screen.hide("SpiceRouteScreenButton")
 				
-			if (pPlayer.getHasTradeRouteType(TradeRouteTypes.TRADE_ROUTE_SILK_ROAD)):	
+			if (pPlayer.getHasTradeRouteType(TRADE_SCREEN_SILK_ROAD_MARKET)):	
 				screen.show("SilkRoadScreenButton")
 				
 			else:
 				screen.hide("SilkRoadScreenButton")
 			
-			if (pPlayer.getHasTradeRouteType(TradeRouteTypes.TRADE_ROUTE_FAIR)):	
+			if (pPlayer.getHasTradeRouteType(TRADE_SCREEN_TRADE_FAIR_MARKET)):	
 				screen.show("TradeFairScreenButton")
 				
 			else:
@@ -2632,7 +2688,7 @@ class CvMainInterface:
 					#	screen.show("YieldIcon" + str(iYield))
 					#	szName = "BonusPane" + str(iYield) + "Discover"
 					#	screen.hide(szName)
-					if gc.getPlayer(ePlayer).canUnitBeTraded(iYield, UnitTravelStates.NO_UNIT_TRAVEL_STATE, UnitTypes.NO_UNIT):
+					if gc.getPlayer(ePlayer).canUnitBeTraded(iYield, 0, UnitTypes.NO_UNIT):
 						screen.show("YieldIcon" + str(iYield))
 						szName = "BonusPane" + str(iYield) + "Discover"
 						screen.hide(szName)
@@ -2933,7 +2989,7 @@ class CvMainInterface:
 # VET DynamicYieldsIcon - 13/15 - end				
 				
 				#TKs Med
-				if not gc.getPlayer(pCity.getOwner()).canUnitBeTraded(i, UnitTravelStates.NO_UNIT_TRAVEL_STATE, UnitTypes.NO_UNIT):
+				if not gc.getPlayer(pCity.getOwner()).canUnitBeTraded(i, 0, UnitTypes.NO_UNIT):
 					continue
 				iStored = pCity.getYieldStored(i)
 				iRate = pCity.calculateNetYield(i)

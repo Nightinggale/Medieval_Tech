@@ -6,15 +6,15 @@
 <!-- Hints Infos -->
 <Civ4Hints xmlns="x-schema:CIV4GameInfoSchema.xml">
 	<HintInfos>
-    <HintInfo>
-      <Description>TXT_KEY_MEDIEVAL_HINTS_1</Description>
-    </HintInfo>
-    <HintInfo>
-      <Description>TXT_KEY_MEDIEVAL_HINTS_2</Description>
-    </HintInfo>
-    <HintInfo>
-      <Description>TXT_KEY_MEDIEVAL_HINTS_3</Description>
-    </HintInfo>
+		<HintInfo>
+			<Description>TXT_KEY_MEDIEVAL_HINTS_1</Description>
+		</HintInfo>
+		<HintInfo>
+			<Description>TXT_KEY_MEDIEVAL_HINTS_2</Description>
+		</HintInfo>
+		<HintInfo>
+			<Description>TXT_KEY_MEDIEVAL_HINTS_3</Description>
+		</HintInfo>
 		<HintInfo>
 			<Description>TXT_KEY_HINT_INTERFACE_1</Description>
 		</HintInfo>

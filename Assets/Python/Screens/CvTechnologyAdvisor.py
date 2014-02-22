@@ -200,7 +200,7 @@ class CvTechnologyAdvisor:
 		LocalBack = 0
 		bTest = False
 		for iCivic in range(gc.getNumCivicInfos()):
-			if (gc.getCivicInfo(iCivic).getCivicOptionType() == 5 and iCivic == 1):
+			if (gc.getCivicInfo(iCivic).getCivicOptionType() == 0 and iCivic == 1):
 				if gc.getCivicInfo(iCivic).getInventionCategory() == -1:
 					LineReturn = 0
 					
@@ -208,7 +208,7 @@ class CvTechnologyAdvisor:
 					BonusRow += 1
 					LocalBack = self.BUTTON_SPACE
 					for iListCivic in range(gc.getNumCivicInfos()):
-						if (gc.getCivicInfo(iListCivic).getCivicOptionType() == 5):
+						if (gc.getCivicInfo(iListCivic).getCivicOptionType() == 0):
 							
 							iCategory = gc.getCivicInfo(iListCivic).getInventionCategory()
 							if iCategory == iCivic:
@@ -321,13 +321,13 @@ class CvTechnologyAdvisor:
 					Disallow = gc.getCivicInfo(iCivic).getDisallowsTech()
 					DisAllowedTech[Disallow] = True
 		for iCivic in range(gc.getNumCivicInfos()):
-			if (gc.getCivicInfo(iCivic).getCivicOptionType() == 5 and iCivic == 1):
+			if (gc.getCivicInfo(iCivic).getCivicOptionType() == 0 and iCivic == 1):
 				if gc.getCivicInfo(iCivic).getInventionCategory() == -1:
 					
 
 					
 					for iListCivic in range(gc.getNumCivicInfos()):
-						if (gc.getCivicInfo(iListCivic).getCivicOptionType() == 5):
+						if (gc.getCivicInfo(iListCivic).getCivicOptionType() == 0):
 							
 							iCategory = gc.getCivicInfo(iListCivic).getInventionCategory()
 							
@@ -702,7 +702,7 @@ class CvTechnologyAdvisor:
 
 					#szTechPrereqBorderID = "TechPrereqBorderID" + str((i * 1000) + j)
 					#screen.addDDSGFCAt( szTechPrereqBorderID, "TechList", ArtFileMgr.getInterfaceArtInfo("TECH_TREE_BUTTON_BORDER").getPath(), iX + fX + 4, iY + 22, 32, 32, WidgetTypes.WIDGET_HELP_TECH_PREPREQ, eTech, -1, False )
-			if (gc.getCivicInfo(i).getCivicOptionType() != 5):
+			if (gc.getCivicInfo(i).getCivicOptionType() != 0):
 				continue
 				
 			if gc.getCivicInfo(i).getInventionCategory() == -1:

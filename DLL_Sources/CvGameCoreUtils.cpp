@@ -615,7 +615,10 @@ bool PUF_isEnemy(const CvUnit* pUnit, int iData1, int iData2)
 	FAssertMsg(iData1 != -1, "Invalid data argument, should be >= 0");
 	FAssertMsg(iData2 != -1, "Invalid data argument, should be >= 0");
 
-	TeamTypes eOtherTeam = GET_PLAYER((PlayerTypes)iData1).getTeam();
+	//TeamTypes eOtherTeam = GET_PLAYER((PlayerTypes)iData1).getTeam();
+	///Tks Med
+	TeamTypes eOtherTeam = iData2 == 2 ? (TeamTypes)iData1 : GET_PLAYER((PlayerTypes)iData1).getTeam();
+	///TKs
 	TeamTypes eOurTeam = pUnit->getCombatTeam(eOtherTeam, pUnit->plot());
 
 	if (pUnit->canCoexistWithEnemyUnit(eOtherTeam))
@@ -623,7 +626,21 @@ bool PUF_isEnemy(const CvUnit* pUnit, int iData1, int iData2)
 		return false;
 	}
 
-	return (iData2 ? eOtherTeam != eOurTeam : atWar(eOtherTeam, eOurTeam));
+
+	//return (iData2 ? eOtherTeam != eOurTeam : atWar(eOtherTeam, eOurTeam));
+	///Tks Med
+	switch(iData2)
+	{
+	case 0:
+	case 2:
+		return atWar(eOtherTeam, eOurTeam);
+	case 1:
+		return eOtherTeam != eOurTeam;
+	default:
+		FAssert(false);
+		return false;
+	}
+	///TKs
 }
 ///Tks Med
 bool PUF_isBarbarianEnemy(const CvUnit* pUnit, int iData1, int iData2)
@@ -654,7 +671,11 @@ bool PUF_isBarbarianEnemy(const CvUnit* pUnit, int iData1, int iData2)
 bool PUF_isVisible(const CvUnit* pUnit, int iData1, int iData2)
 {
 	FAssertMsg(iData1 != -1, "Invalid data argument, should be >= 0");
-	return !(pUnit->isInvisible(GET_PLAYER((PlayerTypes)iData1).getTeam(), false));
+	//return !(pUnit->isInvisible(GET_PLAYER((PlayerTypes)iData1).getTeam(), false));
+	///Tks Med
+	TeamTypes eTeam = iData2 == 2 ? (TeamTypes)iData1 : GET_PLAYER((PlayerTypes)iData1).getTeam();
+	return !(pUnit->isInvisible(eTeam, false));
+	///TKs
 }
 
 bool PUF_isVisibleDebug(const CvUnit* pUnit, int iData1, int iData2)
@@ -1289,6 +1310,18 @@ int stepAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 }
 
 
+// Nightinggale note:
+// This function has been expanded to solve more tasks than the vanilla one
+// It exists in two modes:
+//
+//  1:
+//    iInfo set to playerID
+//    vanilla behavior (something about AI checking route quality between cities)
+//
+//  2:
+//    iInfo is set to TeamTypes + 0x40 (64)
+//    tells if there is a road (of any quality) between start and end plots
+//    Used to detect plotgroup splitting
 int routeValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder)
 {
 	CvPlot* pNewPlot;
@@ -1301,7 +1334,17 @@ int routeValid(FAStarNode* parent, FAStarNode* node, int data, const void* point
 
 	pNewPlot = GC.getMapINLINE().plotSorenINLINE(node->m_iX, node->m_iY);
 
-	ePlayer = ((PlayerTypes)(gDLL->getFAStarIFace()->GetInfo(finder)));
+	/// PlotGroup - start - Nightinggale
+	int iInfo = gDLL->getFAStarIFace()->GetInfo(finder);
+
+	if (iInfo & 0x40)
+	{
+		return pNewPlot->isTradeNetwork((TeamTypes)(iInfo & 0x3f));
+	}
+	
+	//ePlayer = ((PlayerTypes)(gDLL->getFAStarIFace()->GetInfo(finder)));
+	ePlayer = ((PlayerTypes)(iInfo));
+	/// PlotGroup - end - Nightinggale
 
 	if (!(pNewPlot->isOwned()) || (pNewPlot->getTeam() == GET_PLAYER(ePlayer).getTeam()))
 	{
@@ -1655,3 +1698,38 @@ void getUnitAIString(CvWString& szString, UnitAITypes eUnitAI)
 	default: szString = CvWString::format(L"unknown(%d)", eUnitAI); break;
 	}
 }
+
+/// post load function - start - Nightinggale
+//
+// This function is called whenever a savegame finish loading
+// The primary function is to calculate data missing in old savegames
+//
+// However other functions could be added here, like cache generation
+//
+// The argument iFixCount is set in CvPlayerAI::write()
+// New games calls this with iFixCount = -1 (all savegames are either 0 or positive)
+//
+void postLoadGameFixes(int iFixCount)
+{
+	/// PlotGroup - start - Nightinggale
+	if (iFixCount < 2)
+	{
+		// assign plotgroups to this old savegame
+		for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+		{
+			CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+			pLoopPlot->updatePlotGroup();
+		}
+	}
+	/// PlotGroup - end - Nightinggale
+
+	/// unit plot cache - start - Nightinggale
+	// set the unit cache for all plots
+	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	{
+		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		pLoopPlot->rebuildUnitCache();
+	}
+	/// unit plot cache - end - Nightinggale
+}
+/// post load function - end - Nightinggale

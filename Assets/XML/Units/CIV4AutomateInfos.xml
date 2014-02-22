@@ -76,81 +76,81 @@
 			<iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
 			<Command>COMMAND_AUTOMATE</Command>
 			<Automate>AUTOMATE_SAIL</Automate>
-			<bVisible>1</bVisible>
+			<bVisible>0</bVisible>
 			<Button>Art/Interface/Game Hud/Actions/ReturnMotherland.dds</Button>
 		</AutomateInfo>
-    <AutomateInfo>
-      <Description>TXT_KEY_AUTOMATE_HUNT</Description>
-      <Help>TXT_KEY_AUTOMATE_HUNT_HELP</Help>
-      <HotKey/>
-      <bAltDown>0</bAltDown>
-      <bShiftDown>0</bShiftDown>
-      <bCtrlDown>0</bCtrlDown>
-      <iHotKeyPriority>0</iHotKeyPriority>
-      <HotKeyAlt/>
-      <bAltDownAlt>0</bAltDownAlt>
-      <bShiftDownAlt>0</bShiftDownAlt>
-      <bCtrlDownAlt>0</bCtrlDownAlt>
-      <iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
-      <Command>COMMAND_AUTOMATE</Command>
-      <Automate>AUTOMATE_HUNT</Automate>
-      <bVisible>0</bVisible>
-      <Button>Art/Interface/Game Hud/Actions/TraveltoFair.dds</Button>
-    </AutomateInfo>
-    <AutomateInfo>
-      <Description>TXT_KEY_COMMAND_TRAVEL_TO_FAIR</Description>
-      <Help>TXT_KEY_AUTO_TRAVEL_TO_FAIR_HELP</Help>
-      <HotKey>KB_E</HotKey>
-      <bAltDown>0</bAltDown>
-      <bShiftDown>0</bShiftDown>
-      <bCtrlDown>1</bCtrlDown>
-      <iHotKeyPriority>0</iHotKeyPriority>
-      <HotKeyAlt/>
-      <bAltDownAlt>0</bAltDownAlt>
-      <bShiftDownAlt>0</bShiftDownAlt>
-      <bCtrlDownAlt>0</bCtrlDownAlt>
-      <iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
-      <Command>COMMAND_AUTOMATE</Command>
-      <Automate>AUTOMATE_TRAVEL_FAIR</Automate>
-      <bVisible>1</bVisible>
-      <Button>Art/Interface/Game Hud/Actions/TraveltoFair.dds</Button>
-    </AutomateInfo>
-    <AutomateInfo>
-      <Description>TXT_KEY_COMMAND_TRAVEL_SILK_ROAD</Description>
-      <Help>TXT_KEY_AUTO_TRAVEL_SILK_ROAD_HELP</Help>
-      <HotKey>KB_E</HotKey>
-      <bAltDown>0</bAltDown>
-      <bShiftDown>1</bShiftDown>
-      <bCtrlDown>1</bCtrlDown>
-      <iHotKeyPriority>0</iHotKeyPriority>
-      <HotKeyAlt/>
-      <bAltDownAlt>0</bAltDownAlt>
-      <bShiftDownAlt>0</bShiftDownAlt>
-      <bCtrlDownAlt>0</bCtrlDownAlt>
-      <iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
-      <Command>COMMAND_AUTOMATE</Command>
-      <Automate>AUTOMATE_TRAVEL_SILK_ROAD</Automate>
-      <bVisible>1</bVisible>
-      <Button>Art/Interface/Game Hud/Actions/travelsilkroad.dds</Button>
-    </AutomateInfo>
-    <AutomateInfo>
-      <Description>TXT_KEY_COMMAND_SAIL_SPICE_ROUTE</Description>
-      <Help>TXT_KEY_AUTO_SELL_SPICE_ROUTE_HELP</Help>
-      <HotKey>KB_E</HotKey>
-      <bAltDown>0</bAltDown>
-      <bShiftDown>0</bShiftDown>
-      <bCtrlDown>1</bCtrlDown>
-      <iHotKeyPriority>0</iHotKeyPriority>
-      <HotKeyAlt/>
-      <bAltDownAlt>0</bAltDownAlt>
-      <bShiftDownAlt>0</bShiftDownAlt>
-      <bCtrlDownAlt>0</bCtrlDownAlt>
-      <iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
-      <Command>COMMAND_AUTOMATE</Command>
-      <Automate>AUTOMATE_SAIL_SPICE_ROUTE</Automate>
-      <bVisible>1</bVisible>
-      <Button>Art/Interface/Game Hud/Actions/travelSpiceRoute.dds</Button>
-    </AutomateInfo>
+		<AutomateInfo>
+			<Description>TXT_KEY_AUTOMATE_HUNT</Description>
+			<Help>TXT_KEY_AUTOMATE_HUNT_HELP</Help>
+			<HotKey/>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<HotKeyAlt/>
+			<bAltDownAlt>0</bAltDownAlt>
+			<bShiftDownAlt>0</bShiftDownAlt>
+			<bCtrlDownAlt>0</bCtrlDownAlt>
+			<iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
+			<Command>COMMAND_AUTOMATE</Command>
+			<Automate>AUTOMATE_HUNT</Automate>
+			<bVisible>0</bVisible>
+			<Button>Art/Interface/Game Hud/Actions/TraveltoFair.dds</Button>
+		</AutomateInfo>
+		<AutomateInfo>
+			<Description>TXT_KEY_COMMAND_TRAVEL_TO_FAIR</Description>
+			<Help>TXT_KEY_AUTO_TRAVEL_TO_FAIR_HELP</Help>
+			<HotKey>KB_E</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>1</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<HotKeyAlt/>
+			<bAltDownAlt>0</bAltDownAlt>
+			<bShiftDownAlt>0</bShiftDownAlt>
+			<bCtrlDownAlt>0</bCtrlDownAlt>
+			<iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
+			<Command>COMMAND_AUTOMATE</Command>
+			<Automate>AUTOMATE_TRAVEL_FAIR</Automate>
+			<bVisible>0</bVisible>
+			<Button>Art/Interface/Game Hud/Actions/TraveltoFair.dds</Button>
+		</AutomateInfo>
+		<AutomateInfo>
+			<Description>TXT_KEY_COMMAND_TRAVEL_SILK_ROAD</Description>
+			<Help>TXT_KEY_AUTO_TRAVEL_SILK_ROAD_HELP</Help>
+			<HotKey>KB_E</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>1</bShiftDown>
+			<bCtrlDown>1</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<HotKeyAlt/>
+			<bAltDownAlt>0</bAltDownAlt>
+			<bShiftDownAlt>0</bShiftDownAlt>
+			<bCtrlDownAlt>0</bCtrlDownAlt>
+			<iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
+			<Command>COMMAND_AUTOMATE</Command>
+			<Automate>AUTOMATE_TRAVEL_SILK_ROAD</Automate>
+			<bVisible>0</bVisible>
+			<Button>Art/Interface/Game Hud/Actions/travelsilkroad.dds</Button>
+		</AutomateInfo>
+		<AutomateInfo>
+			<Description>TXT_KEY_COMMAND_SAIL_SPICE_ROUTE</Description>
+			<Help>TXT_KEY_AUTO_SELL_SPICE_ROUTE_HELP</Help>
+			<HotKey>KB_E</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>1</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<HotKeyAlt/>
+			<bAltDownAlt>0</bAltDownAlt>
+			<bShiftDownAlt>0</bShiftDownAlt>
+			<bCtrlDownAlt>0</bCtrlDownAlt>
+			<iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
+			<Command>COMMAND_AUTOMATE</Command>
+			<Automate>AUTOMATE_SAIL_SPICE_ROUTE</Automate>
+			<bVisible>0</bVisible>
+			<Button>Art/Interface/Game Hud/Actions/travelSpiceRoute.dds</Button>
+		</AutomateInfo>
 		<AutomateInfo>
 			<Description>TXT_KEY_COMMAND_CHOOSE_TRADE_ROUTES</Description>
 			<Help>TXT_KEY_COMMAND_CHOOSE_TRADE_ROUTES_HELP</Help>
@@ -187,42 +187,42 @@
 			<bVisible>1</bVisible>
 			<Button>Art/Interface/Game Hud/Actions/automate_transport_high_res.dds</Button>
 		</AutomateInfo>
-    <AutomateInfo>
-      <Description>TXT_KEY_RETURN_HOME_UNLOAD</Description>
-      <Help>TXT_KEY_RETURN_HOME_UNLOAD_HELP</Help>
-      <HotKey/>
-      <bAltDown>0</bAltDown>
-      <bShiftDown>0</bShiftDown>
-      <bCtrlDown>0</bCtrlDown>
-      <iHotKeyPriority>0</iHotKeyPriority>
-      <HotKeyAlt/>
-      <bAltDownAlt>0</bAltDownAlt>
-      <bShiftDownAlt>0</bShiftDownAlt>
-      <bCtrlDownAlt>0</bCtrlDownAlt>
-      <iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
-      <Command>COMMAND_AUTOMATE</Command>
-      <Automate>AUTOMATE_RETURN_HOME</Automate>
-      <bVisible>1</bVisible>
-      <Button>Art/Interface/Game Hud/Actions/gohomeunload.dds</Button>
-    </AutomateInfo>
-    <AutomateInfo>
-      <Description>TXT_KEY_AUTOMATE_IMMIGRATION</Description>
-      <Help>TXT_KEY_AUTOMATE_IMMIGRATION</Help>
-      <HotKey/>
-      <bAltDown>0</bAltDown>
-      <bShiftDown>0</bShiftDown>
-      <bCtrlDown>0</bCtrlDown>
-      <iHotKeyPriority>0</iHotKeyPriority>
-      <HotKeyAlt/>
-      <bAltDownAlt>0</bAltDownAlt>
-      <bShiftDownAlt>0</bShiftDownAlt>
-      <bCtrlDownAlt>0</bCtrlDownAlt>
-      <iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
-      <Command>COMMAND_AUTOMATE</Command>
-      <Automate>AUTOMATE_IMMIGRATION</Automate>
-      <bVisible>0</bVisible>
-      <Button>Art/Interface/Game Hud/Actions/gohomeunload.dds</Button>
-    </AutomateInfo>
+		<AutomateInfo>
+			<Description>TXT_KEY_RETURN_HOME_UNLOAD</Description>
+			<Help>TXT_KEY_RETURN_HOME_UNLOAD_HELP</Help>
+			<HotKey/>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<HotKeyAlt/>
+			<bAltDownAlt>0</bAltDownAlt>
+			<bShiftDownAlt>0</bShiftDownAlt>
+			<bCtrlDownAlt>0</bCtrlDownAlt>
+			<iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
+			<Command>COMMAND_AUTOMATE</Command>
+			<Automate>AUTOMATE_RETURN_HOME</Automate>
+			<bVisible>1</bVisible>
+			<Button>Art/Interface/Game Hud/Actions/gohomeunload.dds</Button>
+		</AutomateInfo>
+		<AutomateInfo>
+			<Description>TXT_KEY_AUTOMATE_IMMIGRATION</Description>
+			<Help>TXT_KEY_AUTOMATE_IMMIGRATION</Help>
+			<HotKey/>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<HotKeyAlt/>
+			<bAltDownAlt>0</bAltDownAlt>
+			<bShiftDownAlt>0</bShiftDownAlt>
+			<bCtrlDownAlt>0</bCtrlDownAlt>
+			<iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
+			<Command>COMMAND_AUTOMATE</Command>
+			<Automate>AUTOMATE_IMMIGRATION</Automate>
+			<bVisible>0</bVisible>
+			<Button>Art/Interface/Game Hud/Actions/gohomeunload.dds</Button>
+		</AutomateInfo>
 		<AutomateInfo>
 			<Description>TXT_KEY_ACTION_AUTOMATE_FULL</Description>
 			<Help>TXT_KEY_ACTION_AUTOMATE_FULL_HELP</Help>

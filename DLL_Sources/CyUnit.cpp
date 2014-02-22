@@ -1070,6 +1070,34 @@ void CyUnit::setBarbarian(bool bNewValue)
 		m_pUnit->setBarbarian(bNewValue);
 }
 // < JAnimals Mod End >
+
+//TKs Med **TradeRoute**
+//canCrossOcean(const CvPlot* pPlot, UnitTravelStates eNewState, TradeRouteTypes eTradeRouteType, bool bAIForce, EuropeTypes eEuropeTradeRoute)
+bool CyUnit::canCrossOcean(CyPlot* pPlot, int /*UnitTravelStates*/ eNewState, int /*TradeRouteTypes*/ eTradeRouteType, bool bAIForce, int /*EuropeTypes*/ eEuropeTradeRoute)
+{
+	return m_pUnit ? m_pUnit->canCrossOcean(pPlot->getPlot(), (UnitTravelStates)eNewState, (TradeRouteTypes)eTradeRouteType, bAIForce, (EuropeTypes)eEuropeTradeRoute) : false;
+}
+bool CyUnit::canAutoSailTradeScreen(CyPlot* pPlot, int /*EuropeTypes*/ eEuropeTradeRoute, bool bAIForce)
+{
+	return m_pUnit ? m_pUnit->canAutoSailTradeScreen(pPlot->getPlot(), (EuropeTypes)eEuropeTradeRoute, bAIForce) : false;
+}
+int /*EuropeTypes*/ CyUnit::getUnitTradeMarket()
+{
+	return m_pUnit ? m_pUnit->getUnitTradeMarket() : NO_EUROPE;
+}
+void CyUnit::setUnitTradeMarket(int /*EuropeTypes*/ eMarket)
+{
+	if (m_pUnit)
+		m_pUnit->setUnitTradeMarket((EuropeTypes) eMarket);
+}
+
+/// Expert working - start - Nightinggale
+bool CyUnit::isCitizenExpertWorking() const
+{
+	return m_pUnit ? m_pUnit->isCitizenExpertWorking() : false;
+}
+/// Expert working - end - Nightinggale
+
 // Python Helper Functions
 void CyUnit::centerCamera()
 {
@@ -1090,3 +1118,4 @@ std::string CyUnit::getFullLengthIcon() const
 {
 	return m_pUnit ? m_pUnit->getFullLengthIcon() : "";
 }
+

@@ -6,6 +6,7 @@
 *.xml text eol=crlf
 *.inl text eol=crlf
 *.pl text eol=crlf
+*.pm text eol=crlf
 *.sln text eol=crlf
 *.vcxproj text eol=crlf
 *.bat text eol=crlf

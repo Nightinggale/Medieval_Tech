@@ -99,9 +99,9 @@ void CyPlayerPythonInterface1(python::class_<CyPlayer>& x)
 		.def("getDeclareKey", &CyPlayer::getDeclareKey, "str() - returns the Civilization name in adjective form")
 		.def("getDawnKey", &CyPlayer::getDawnKey, "str() - returns the Civilization name in adjective form")
 		.def("isProfessionValid", &CyPlayer::isProfessionValid, "bool ()")
-		.def("canUnitBeTraded", &CyPlayer::canUnitBeTraded, "bool ()")
+		.def("canUnitBeTraded", &CyPlayer::canUnitBeTraded, "bool (int /*YieldTypes*/  eYield, int /*EuropeTypes*/ eTradeScreen, int/*UnitTypes*/ eUnit)")
 		.def("canUseYield", &CyPlayer::canUseYield, "bool (YieldTypes)") // invention effect cache - Nightinggale
-		.def("getHasTradeRouteType", &CyPlayer::getHasTradeRouteType, "bool (int (TradeRouteTypes) eTradeRoute)")
+		.def("getHasTradeRouteType", &CyPlayer::getHasTradeRouteType, "bool (int (EuropeTypes) eTradeRoute)")
 
 		///TKe
 		//.def("getTradeDenial", &CyPlayer::getTradeDenial, "DenialTypes (int eWhoTo, TradeData item)")

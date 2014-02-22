@@ -125,11 +125,11 @@
 			<FeatureVariety>
 				<FeatureArtPieces>
 					<FeatureArtPiece>
-            <ModelFile>Art/Terrain/Features/MixedTree/Mixed_single_tree.nif</ModelFile>
-            <ModelFile>Art/Terrain/Features/TreeLeafy/Leafy_single_tree_01.nif</ModelFile>
-            <ModelFile>Art/Terrain/Features/TreeLeafy/Leafy_single_tree_02.nif</ModelFile>
-            <ModelFile>Art/Terrain/Features/Light_forest/Light_forest_single_tree_01.nif</ModelFile>
-            <ModelFile>Art/Terrain/Features/Light_forest/Light_forest_single_tree_02.nif</ModelFile>
+						<ModelFile>Art/Terrain/Features/MixedTree/Mixed_single_tree.nif</ModelFile>
+						<ModelFile>Art/Terrain/Features/TreeLeafy/Leafy_single_tree_01.nif</ModelFile>
+						<ModelFile>Art/Terrain/Features/TreeLeafy/Leafy_single_tree_02.nif</ModelFile>
+						<ModelFile>Art/Terrain/Features/Light_forest/Light_forest_single_tree_01.nif</ModelFile>
+						<ModelFile>Art/Terrain/Features/Light_forest/Light_forest_single_tree_02.nif</ModelFile>
 						<Connections></Connections>
 					</FeatureArtPiece>
 				</FeatureArtPieces>

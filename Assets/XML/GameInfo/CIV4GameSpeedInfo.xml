@@ -24,24 +24,24 @@
 					<iTurnsPerIncrement>900</iTurnsPerIncrement>
 				</GameTurnInfo>
 			</GameTurnInfos>
-      <TradeRouteTripLengths>
-        <TradeRouteTripLength>
-          <TradeScreen>TRADE_SCREEN_EUROPE</TradeScreen>
-          <iTripLength>0</iTripLength>
-        </TradeRouteTripLength>
-        <TradeRouteTripLength>
-          <TradeScreen>TRADE_SCREEN_TRADE_FAIR</TradeScreen>
-          <iTripLength>-2</iTripLength>
-        </TradeRouteTripLength>
-        <TradeRouteTripLength>
-          <TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
-          <iTripLength>1</iTripLength>
-        </TradeRouteTripLength>
-        <TradeRouteTripLength>
-          <TradeScreen>TRADE_SCREEN_SILK_ROAD</TradeScreen>
-          <iTripLength>1</iTripLength>
-        </TradeRouteTripLength>
-      </TradeRouteTripLengths>
+			<TradeRouteTripLengths>
+				<TradeRouteTripLength>
+					<TradeScreen>TRADE_SCREEN_MOTHERLAND</TradeScreen>
+					<iTripLength>0</iTripLength>
+				</TradeRouteTripLength>
+				<TradeRouteTripLength>
+					<TradeScreen>TRADE_SCREEN_TRADE_FAIR_MARKET</TradeScreen>
+					<iTripLength>-2</iTripLength>
+				</TradeRouteTripLength>
+				<TradeRouteTripLength>
+					<TradeScreen>TRADE_SCREEN_SPICE_ROUTE_MARKET</TradeScreen>
+					<iTripLength>1</iTripLength>
+				</TradeRouteTripLength>
+				<TradeRouteTripLength>
+					<TradeScreen>TRADE_SCREEN_SILK_ROAD_MARKET</TradeScreen>
+					<iTripLength>1</iTripLength>
+				</TradeRouteTripLength>
+			</TradeRouteTripLengths>
 		</GameSpeedInfo>
 		<GameSpeedInfo>
 			<Type>GAMESPEED_EPIC</Type>
@@ -60,24 +60,24 @@
 					<iTurnsPerIncrement>450</iTurnsPerIncrement>
 				</GameTurnInfo>
 			</GameTurnInfos>
-      <TradeRouteTripLengths>
-        <TradeRouteTripLength>
-          <TradeScreen>TRADE_SCREEN_EUROPE</TradeScreen>
-          <iTripLength>0</iTripLength>
-        </TradeRouteTripLength>
-        <TradeRouteTripLength>
-          <TradeScreen>TRADE_SCREEN_TRADE_FAIR</TradeScreen>
-          <iTripLength>-2</iTripLength>
-        </TradeRouteTripLength>
-        <TradeRouteTripLength>
-          <TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
-          <iTripLength>1</iTripLength>
-        </TradeRouteTripLength>
-        <TradeRouteTripLength>
-          <TradeScreen>TRADE_SCREEN_SILK_ROAD</TradeScreen>
-          <iTripLength>1</iTripLength>
-        </TradeRouteTripLength>
-      </TradeRouteTripLengths>
+			<TradeRouteTripLengths>
+				<TradeRouteTripLength>
+					<TradeScreen>TRADE_SCREEN_MOTHERLAND</TradeScreen>
+					<iTripLength>0</iTripLength>
+				</TradeRouteTripLength>
+				<TradeRouteTripLength>
+					<TradeScreen>TRADE_SCREEN_TRADE_FAIR_MARKET</TradeScreen>
+					<iTripLength>-2</iTripLength>
+				</TradeRouteTripLength>
+				<TradeRouteTripLength>
+					<TradeScreen>TRADE_SCREEN_SPICE_ROUTE_MARKET</TradeScreen>
+					<iTripLength>1</iTripLength>
+				</TradeRouteTripLength>
+				<TradeRouteTripLength>
+					<TradeScreen>TRADE_SCREEN_SILK_ROAD_MARKET</TradeScreen>
+					<iTripLength>1</iTripLength>
+				</TradeRouteTripLength>
+			</TradeRouteTripLengths>
 		</GameSpeedInfo>
 		<GameSpeedInfo>
 			<Type>GAMESPEED_NORMAL</Type>
@@ -96,24 +96,24 @@
 					<iTurnsPerIncrement>350</iTurnsPerIncrement>
 				</GameTurnInfo>
 			</GameTurnInfos>
-      <TradeRouteTripLengths>
-        <TradeRouteTripLength>
-          <TradeScreen>TRADE_SCREEN_EUROPE</TradeScreen>
-          <iTripLength>0</iTripLength>
-        </TradeRouteTripLength>
-        <TradeRouteTripLength>
-          <TradeScreen>TRADE_SCREEN_TRADE_FAIR</TradeScreen>
-          <iTripLength>-2</iTripLength>
-        </TradeRouteTripLength>
-        <TradeRouteTripLength>
-          <TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
-          <iTripLength>1</iTripLength>
-        </TradeRouteTripLength>
-        <TradeRouteTripLength>
-          <TradeScreen>TRADE_SCREEN_SILK_ROAD</TradeScreen>
-          <iTripLength>1</iTripLength>
-        </TradeRouteTripLength>
-      </TradeRouteTripLengths>
+			<TradeRouteTripLengths>
+				<TradeRouteTripLength>
+					<TradeScreen>TRADE_SCREEN_MOTHERLAND</TradeScreen>
+					<iTripLength>0</iTripLength>
+				</TradeRouteTripLength>
+				<TradeRouteTripLength>
+					<TradeScreen>TRADE_SCREEN_TRADE_FAIR_MARKET</TradeScreen>
+					<iTripLength>-2</iTripLength>
+				</TradeRouteTripLength>
+				<TradeRouteTripLength>
+					<TradeScreen>TRADE_SCREEN_SPICE_ROUTE_MARKET</TradeScreen>
+					<iTripLength>1</iTripLength>
+				</TradeRouteTripLength>
+				<TradeRouteTripLength>
+					<TradeScreen>TRADE_SCREEN_SILK_ROAD_MARKET</TradeScreen>
+					<iTripLength>1</iTripLength>
+				</TradeRouteTripLength>
+			</TradeRouteTripLengths>
 		</GameSpeedInfo>
 		<GameSpeedInfo>
 			<Type>GAMESPEED_QUICK</Type>
@@ -132,24 +132,24 @@
 					<iTurnsPerIncrement>225</iTurnsPerIncrement>
 				</GameTurnInfo>
 			</GameTurnInfos>
-      <TradeRouteTripLengths>
-        <TradeRouteTripLength>
-          <TradeScreen>TRADE_SCREEN_EUROPE</TradeScreen>
-          <iTripLength>0</iTripLength>
-        </TradeRouteTripLength>
-        <TradeRouteTripLength>
-          <TradeScreen>TRADE_SCREEN_TRADE_FAIR</TradeScreen>
-          <iTripLength>-2</iTripLength>
-        </TradeRouteTripLength>
-        <TradeRouteTripLength>
-          <TradeScreen>TRADE_SCREEN_SPICE_ROUTE</TradeScreen>
-          <iTripLength>0</iTripLength>
-        </TradeRouteTripLength>
-        <TradeRouteTripLength>
-          <TradeScreen>TRADE_SCREEN_SILK_ROAD</TradeScreen>
-          <iTripLength>1</iTripLength>
-        </TradeRouteTripLength>
-      </TradeRouteTripLengths>
+			<TradeRouteTripLengths>
+				<TradeRouteTripLength>
+					<TradeScreen>TRADE_SCREEN_MOTHERLAND</TradeScreen>
+					<iTripLength>0</iTripLength>
+				</TradeRouteTripLength>
+				<TradeRouteTripLength>
+					<TradeScreen>TRADE_SCREEN_TRADE_FAIR_MARKET</TradeScreen>
+					<iTripLength>-2</iTripLength>
+				</TradeRouteTripLength>
+				<TradeRouteTripLength>
+					<TradeScreen>TRADE_SCREEN_SPICE_ROUTE_MARKET</TradeScreen>
+					<iTripLength>0</iTripLength>
+				</TradeRouteTripLength>
+				<TradeRouteTripLength>
+					<TradeScreen>TRADE_SCREEN_SILK_ROAD_MARKET</TradeScreen>
+					<iTripLength>1</iTripLength>
+				</TradeRouteTripLength>
+			</TradeRouteTripLengths>
 		</GameSpeedInfo>
 	</GameSpeedInfos>
 </Civ4GameSpeedInfo>

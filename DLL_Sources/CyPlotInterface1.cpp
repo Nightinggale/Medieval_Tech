@@ -179,5 +179,9 @@ void CyPlotPythonInterface1(python::class_<CyPlot>& x)
 		.def("getUnit", &CyPlot::getUnit, python::return_value_policy<python::manage_new_object>(), "CyUnit* (int iIndex)")
 		.def("getScriptData", &CyPlot::getScriptData, "str () - Get stored custom data")
 		.def("setScriptData", &CyPlot::setScriptData, "void (str) - Set stored custom data")
+
+		/// PlotGroup - start - Nightinggale
+		.def("isConnectedTo", &CyPlot::isConnectedTo, "bool (CvCity* pCity) - returns whether this plot is connected to the provided city")
+		/// PlotGroup - end - Nightinggale
 	;
 }

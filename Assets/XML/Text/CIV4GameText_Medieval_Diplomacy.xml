@@ -5,396 +5,396 @@
 <!-- -->
 <!-- Game Text - New -->
 <Civ4GameText xmlns="http://www.firaxis.com">
-  <TEXT>
-    <Tag>TXT_KEY</Tag>
-    <English>[ICON_BULLET]</English>
-    <French></French>
-    <German></German>
-    <Italian></Italian>
-    <Spanish></Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>AI_DIPLO_AI_PEDDLER_TRADING_1</Tag>
-    <English>We have some goods here you may find of value.</English>
-    <French></French>
-    <German></German>
-    <Italian></Italian>
-    <Spanish></Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>TXT_KEY_VASSAL_ATTITUDE_TOWARDS</Tag>
-    <English>Vassal of %s1_leader</English>
-    <French>Vassal of %s1_leader</French>
-    <German>Vassal of %s1_leader</German>
-    <Italian>Vassal of %s1_leader</Italian>
-    <Spanish>Vassal of %s1_leader</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>USER_DIPLO_TAX_POPE_CENSURE_1</Tag>
-    <English>No, your impositions are uncalled for! (The Papacy will invoke Censures on your Realm)</English>
-    <French></French>
-    <German></German>
-    <Italian></Italian>
-    <Spanish></Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>AI_DIPLO_POPE_ASK_GOLD_OR_ELSE_1</Tag>
-    <English>Please deliver %d1[ICON_GOLD] immediately or I will be forced to invoke Censure!</English>
-    <French></French>
-    <German></German>
-    <Italian></Italian>
-    <Spanish></Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>TXT_KEY_CENSURE_EXCOMMUNICATION</Tag>
-    <English>%s1_name has invoked %s2_censure on your Realm for %d3 turns (%s4_strategy)</English>
-    <French></French>
-    <German></German>
-    <Italian></Italian>
-    <Spanish></Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>TXT_KEY_CENSURE_EXCOMMUNICATION_LIFTED</Tag>
-    <English>Your Excommunication has been lifted by The Papacy</English>
-    <French></French>
-    <German></German>
-    <Italian></Italian>
-    <Spanish></Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>TXT_KEY_CENSURE_EXCOMMUNICATION_TURNS</Tag>
-    <English>[COLOR_WARNING_TEXT]Interdict for %d1 turns[COLOR_REVERT][NEWLINE]Can not appoint Priest</English>
-    <French></French>
-    <German></German>
-    <Italian></Italian>
-    <Spanish></Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>USER_DIPLO_POPE_REFUSE_GOLD_1</Tag>
-    <English>No, we already pay Tithes. That should be enough! (Anger Pope)</English>
-    <French>Non, nous avons d&#233;j&#224; des imp&#244;ts, et c'est d&#233;j&#224; bien assez ! (Rendre le roi furieux)</French>
-    <German>Nein, wir bezahlen bereits Steuern, das sollte reichen! (K&#246;nig ver&#228;rgern)</German>
-    <Italian>No, paghiamo gi&#224; le tasse. Dovrebbero bastare quelle! (Fai arrabbiare il re)</Italian>
-    <Spanish>No, ya pagamos impuestos. &#161;Con eso basta! (Enojar al rey)</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>USER_DIPLO_CALIPH_REFUSE_GOLD_1</Tag>
-    <English>No, we already pay Tithes. That should be enough! (Anger Caliph)</English>
-    <French>Non, nous avons d&#233;j&#224; des imp&#244;ts, et c'est d&#233;j&#224; bien assez ! (Rendre le roi furieux)</French>
-    <German>Nein, wir bezahlen bereits Steuern, das sollte reichen! (K&#246;nig ver&#228;rgern)</German>
-    <Italian>No, paghiamo gi&#224; le tasse. Dovrebbero bastare quelle! (Fai arrabbiare il re)</Italian>
-    <Spanish>No, ya pagamos impuestos. &#161;Con eso basta! (Enojar al rey)</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>USER_DIPLO_TAX_POPE_PARTY_1</Tag>
-    <English>No, it's time for the %s1_city %s2_yield party! (You will no longer be able to trade this good)</English>
-    <French>Non, j'ai inaugur&#233; la f&#234;te nationale du %s2_yield ! (Vous ne pourrez plus faire le commerce de ce bien avec l'Europe.)</French>
-    <German>Nein, es ist Zeit f&#252;r den %s2_yield-Aufstand im Ort %s1_city! (Ihr k&#246;nnt dieses Handelsgut nun nicht mehr mit Europa handeln.)</German>
-    <Italian>No, &#232; ora di smetterla col %s2_yield di %s1_city! (Non potrai pi&#249; commerciare questo bene con l'Europa.)</Italian>
-    <Spanish>&#161;No, es hora del partido [NUM2:del:de la:de los:de las] %s2_yield de %s1_city! (Ya no podr&#233;is intercambiar esta mercanc&#237;a con Europa).</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>USER_DIPLO_TAX_ADVISOR_PARTY_1</Tag>
-    <English>Then we will destory all the %s2_yield in %s1_city to stop the inflation! (You will no longer be able to trade this good)</English>
-    <French>Non, j'ai inaugur&#233; la f&#234;te nationale du %s2_yield ! (Vous ne pourrez plus faire le commerce de ce bien avec l'Europe.)</French>
-    <German>Nein, es ist Zeit f&#252;r den %s2_yield-Aufstand im Ort %s1_city! (Ihr k&#246;nnt dieses Handelsgut nun nicht mehr mit Europa handeln.)</German>
-    <Italian>No, &#232; ora di smetterla col %s2_yield di %s1_city! (Non potrai pi&#249; commerciare questo bene con l'Europa.)</Italian>
-    <Spanish>&#161;No, es hora del partido [NUM2:del:de la:de los:de las] %s2_yield de %s1_city! (Ya no podr&#233;is intercambiar esta mercanc&#237;a con Europa).</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>USER_DIPLO_SOMETHINGELSE_INSULT_1</Tag>
-    <English>Your stench is pungent, keep your filthy people off my lands! (Insult)</English>
-    <French>Your stench is pungent, keep your filthy people off my lands! (Insult)</French>
-    <German>Your stench is pungent, keep your filthy people off my lands! (Insult)</German>
-    <Italian>Your stench is pungent, keep your filthy people off my lands! (Insult)</Italian>
-    <Spanish>Your stench is pungent, keep your filthy people off my lands! (Insult)</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>AI_DIPLO_SOMETHINGELSE_INSULT_RESPONCE_1</Tag>
-    <English>Why you!</English>
-    <French>Why you!</French>
-    <German>Why you!</German>
-    <Italian>Why you!</Italian>
-    <Spanish>Why you!</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>AI_DIPLO_SOMETHINGELSE_INSULT_RESPONCE_2</Tag>
-    <English>Why I never!</English>
-    <French>Why I never!</French>
-    <German>Why I never!</German>
-    <Italian>Why I never!</Italian>
-    <Spanish>Why I never!</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>AI_DIPLO_SOMETHINGELSE_INSULT_RESPONCE_3</Tag>
-    <English>Leave here at once!</English>
-    <French>Leave here at once!</French>
-    <German>Leave here at once!</German>
-    <Italian>Leave here at once!</Italian>
-    <Spanish>Leave here at once!</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>AI_DIPLO_SOMETHINGELSE_INSULT_RESPONCE_4</Tag>
-    <English>Your head will look good on a pole!</English>
-    <French>Your head will look good on a pole!</French>
-    <German>Your head will look good on a pole!</German>
-    <Italian>Your head will look good on a pole!</Italian>
-    <Spanish>Your head will look good on a pole!</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>USER_DIPLO_SOMETHINGELSE_INSULT_ARPAD</Tag>
-    <English>Hey, your mustache looks funny! (Insult)</English>
-    <French>Hey, your mustache looks funny! (Insult)</French>
-    <German>Hey, your mustache looks funny! (Insult)</German>
-    <Italian>Hey, your mustache looks funny! (Insult)</Italian>
-    <Spanish>Hey, your mustache looks funny! (Insult)</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>AI_DIPLO_GREETINGS_VIKING_ADVISOR_1</Tag>
-    <English>Greetings My Lord, how may I been of service?</English>
-    <French>Greetings My Lord, how may I been of service?</French>
-    <German>Greetings My Lord, how may I been of service?</German>
-    <Italian>Greetings My Lord, how may I been of service?</Italian>
-    <Spanish>Greetings My Lord, how may I been of service?</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>TXT_KEY_MISC_HELP_STUDENT_EDUCATION_CLASS</Tag>
-    <English>Graduats to %s1_name in %d2 [NUM1:turn:turns]</English>
-    <French>Graduats to %s1_name in %d2 [NUM1:turn:turns]</French>
-    <German>Graduats to %s1_name in %d2 [NUM1:turn:turns]</German>
-    <Italian>Graduats to %s1_name in %d2 [NUM1:turn:turns]</Italian>
-    <Spanish>Graduats to %s1_name in %d2 [NUM1:turn:turns]</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>USER_DIPLO_INSULT_FIRSTCONTACT_1</Tag>
-    <English>Your head will look good on a pole! (Insult)</English>
-    <French>Your head will look good on a pole! (Insult)</French>
-    <German>Your head will look good on a pole! (Insult)</German>
-    <Italian>Your head will look good on a pole! (Insult)</Italian>
-    <Spanish>Your head will look good on a pole! (Insult)</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>USER_DIPLO_INSULT_FIRSTCONTACT_2</Tag>
-    <English>I'll take pleasure in guttin' you! (Insult)</English>
-    <French>I'll take pleasure in guttin' you! (Insult)</French>
-    <German>I'll take pleasure in guttin' you! (Insult)</German>
-    <Italian>I'll take pleasure in guttin' you! (Insult)</Italian>
-    <Spanish>I'll take pleasure in guttin' you! (Insult)</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>USER_DIPLO_FOUND_FIRST_CITY_INSULT</Tag>
-    <English>We take what we want, this is our land! (Insult)</English>
-    <French>We take what we want, this is our land! (Insult)</French>
-    <German>We take what we want, this is our land! (Insult)</German>
-    <Italian>We take what we want, this is our land! (Insult)</Italian>
-    <Spanish>We take what we want, this is our land! (Insult)</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>TXT_KEY_MISC_ATTITUDE_INSULT</Tag>
-    <English>"Your insults have not gone unnoticed!"</English>
-    <French>"Your insults have not gone unnoticed!"</French>
-    <German>"Your insults have not gone unnoticed!"</German>
-    <Italian>"Your insults have not gone unnoticed!"</Italian>
-    <Spanish>"Your insults have not gone unnoticed!"</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>USER_DIPLO_DEMAND_TEAM_1</Tag>
-    <English>This sure would come in handy. (Vassal Demand)</English>
-    <French>Voil&#224; qui sera s&#251;rement utile...(Vassal Demand)</French>
-    <German>Das k&#228;me sicher gelegen ...(Vassal Demand)</German>
-    <Italian>Torner&#224; sicuramente utile...(Vassal Demand)</Italian>
-    <Spanish>Seguro que nos vendr&#225; muy bien...(Vassal Demand)</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>TXT_KEY_MISC_VASSAL_DEMAND</Tag>
-    <English>"You've recently made your Vassal demands!"</English>
-    <French>"You've recently made your Vassal demands!"</French>
-    <German>"You've recently made your Vassal demands!"</German>
-    <Italian>"You've recently made your Vassal demands!"</Italian>
-    <Spanish>"You've recently made your Vassal demands!"</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>TXT_KEY_NEW_EUROPE_ARMY_NEW</Tag>
-    <English>The Emperor of %s1_civ_short is alarmed at the rebel sentiment in %s2_civ_short. He has added %d3 [NUM3:unit:units] to the %s4_adjective Royal Expeditionary Force.</English>
-    <French>The Emperor of %s1_civ_short is alarmed at the rebel sentiment in %s2_civ_short. He has added %d3 [NUM3:unit:units] to the %s4_adjective Royal Expeditionary Force.</French>
-    <German>The Emperor of %s1_civ_short is alarmed at the rebel sentiment in %s2_civ_short. He has added %d3 [NUM3:unit:units] to the %s4_adjective Royal Expeditionary Force.</German>
-    <Italian>The Emperor of %s1_civ_short is alarmed at the rebel sentiment in %s2_civ_short. He has added %d3 [NUM3:unit:units] to the %s4_adjective Royal Expeditionary Force.</Italian>
-    <Spanish>The Emperor of %s1_civ_short is alarmed at the rebel sentiment in %s2_civ_short. He has added %d3 [NUM3:unit:units] to the %s4_adjective Royal Expeditionary Force.</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>TXT_KEY_NEW_POPE_ARMY</Tag>
-    <English>The Pope is alarmed at the sentiment in %s2_civ_short. He has added %d3 [NUM3:unit:units] to the %s4_adjective Holy Expeditionary Force.</English>
-    <French>The Pope is alarmed at the sentiment in %s2_civ_short. He has added %d3 [NUM3:unit:units] to the %s4_adjective Holy Expeditionary Force.</French>
-    <German>The Pope is alarmed at the sentiment in %s2_civ_short. He has added %d3 [NUM3:unit:units] to the %s4_adjective Holy Expeditionary Force.</German>
-    <Italian>The Pope is alarmed at the sentiment in %s2_civ_short. He has added %d3 [NUM3:unit:units] to the %s4_adjective Holy Expeditionary Force.</Italian>
-    <Spanish>The Pope is alarmed at the sentiment in %s2_civ_short. He has added %d3 [NUM3:unit:units] to the %s4_adjective Holy Expeditionary Force.</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>TXT_KEY_NEW_CRUSADERS_ARMY</Tag>
-    <English>Spies report more soldiers have been added to the Crusader Forces that are amassing near our borders.</English>
-    <French>Spies report more soldiers have been added to the Crusader Forces that are amassing near our borders.</French>
-    <German>Spies report more soldiers have been added to the Crusader Forces that are amassing near our borders.</German>
-    <Italian>Spies report more soldiers have been added to the Crusader Forces that are amassing near our borders.</Italian>
-    <Spanish>Spies report more soldiers have been added to the Crusader Forces that are amassing near our borders.</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>AI_DIPLO_POPE_REVIVE_1</Tag>
-    <English>It appears you have lost all of your colonists. I am sending you more; try not to lose them. Your tithe has been raised to %d1_new_rate%%. You may kiss the Holy Ring.</English>
-    <French>It appears you have lost all of your colonists. I am sending you more; try not to lose them. Your tithe has been raised to %d1_new_rate%%. You may kiss the Holy Ring.</French>
-    <German>It appears you have lost all of your colonists. I am sending you more; try not to lose them. Your tithe has been raised to %d1_new_rate%%. You may kiss the Holy Ring.</German>
-    <Italian>It appears you have lost all of your colonists. I am sending you more; try not to lose them. Your tithe has been raised to %d1_new_rate%%. You may kiss the Holy Ring.</Italian>
-    <Spanish>It appears you have lost all of your colonists. I am sending you more; try not to lose them. Your tithe has been raised to %d1_new_rate%%. You may kiss the Holy Ring.</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>AI_DIPLO_POPE_KISS_PINKY_1</Tag>
-    <English>It is time to raise your tithes from %d1_old_rate%% to %d2_new_rate%%. You may kiss the Holy Ring in acquiescence.</English>
-    <French>It is time to raise your tithes from %d1_old_rate%% to %d2_new_rate%%. You may kiss the Holy Ring in acquiescence.</French>
-    <German>It is time to raise your tithes from %d1_old_rate%% to %d2_new_rate%%. You may kiss the Holy Ring in acquiescence.</German>
-    <Italian>It is time to raise your tithes from %d1_old_rate%% to %d2_new_rate%%. You may kiss the Holy Ring in acquiescence.</Italian>
-    <Spanish>It is time to raise your tithes from %d1_old_rate%% to %d2_new_rate%%. You may kiss the Holy Ring in acquiescence.</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>TXT_KEY_MISC_ATTITUDE_OPEN_BORDERS</Tag>
-    <English>%D1: "Our Trade Relations have brought our people close together."</English>
-    <French>%D1 : "Le libre passage a rapproch&#233; nos deux peuples."</French>
-    <German>%D1: "Die &#214;ffnung unserer Grenzen hat unsere V&#246;lker n&#228;her gebracht."</German>
-    <Italian>%D1: "Il nostro accordo di diritto di passaggio ha permesso ai nostri popoli di avvicinarsi"</Italian>
-    <Spanish>%D1: "La apertura de fronteras ha acercado m&#225;s a nuestros pueblos."</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>USER_DIPLO_TAX_PARTY_1</Tag>
-    <English>No, it's time for the %s1_city %s2_yield party! (You will no longer be able to trade this good.)</English>
-    <French>No, it's time for the %s1_city %s2_yield party! (You will no longer be able to trade this good.)</French>
-    <German>No, it's time for the %s1_city %s2_yield party! (You will no longer be able to trade this good.)</German>
-    <Italian>No, it's time for the %s1_city %s2_yield party! (You will no longer be able to trade this good.)</Italian>
-    <Spanish>No, it's time for the %s1_city %s2_yield party! (You will no longer be able to trade this good.)</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>AI_DIPLO_POPE_GIFT_SHIP_1</Tag>
-    <English>It's rather hard to conduct business with you when you do not have any ships to transport cargo. I will give you a new ship, but your tax rate has now been raised to %d1_new_rate%%. You may kiss the Holy Ring.</English>
-    <French>It's rather hard to conduct business with you when you do not have any ships to transport cargo. I will give you a new ship, but your tax rate has now been raised to %d1_new_rate%%. You may kiss the Holy Ring.</French>
-    <German>It's rather hard to conduct business with you when you do not have any ships to transport cargo. I will give you a new ship, but your tax rate has now been raised to %d1_new_rate%%. You may kiss the Holy Ring.</German>
-    <Italian>It's rather hard to conduct business with you when you do not have any ships to transport cargo. I will give you a new ship, but your tax rate has now been raised to %d1_new_rate%%. You may kiss the Holy Ring.</Italian>
-    <Spanish>It's rather hard to conduct business with you when you do not have any ships to transport cargo. I will give you a new ship, but your tax rate has now been raised to %d1_new_rate%%. You may kiss the Holy Ring.</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>AI_DIPLO_POPE_ASK_FOR_GOLD_1</Tag>
-    <English>Please deliver %d1[ICON_GOLD] immediately.</English>
-    <French>Veuillez imm&#233;diatement nous faire parvenir %d1[ICON_GOLD].</French>
-    <German>Bitte liefert sofort %d1[ICON_GOLD].</German>
-    <Italian>Consegna immediatamente %d1[ICON_GOLD].</Italian>
-    <Spanish>Por favor, entregad %d1 [ICON_GOLD] de inmediato.</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>AI_DIPLO_POPE_ASK_FOR_GOLD_2</Tag>
-    <English>Oh, How exciting, you have been selected to contribute %d1[ICON_GOLD] for the commission of new chapels for the Church.</English>
-    <French>You have been selected to contribute %d1[ICON_GOLD] for the commission of new chapels for the Church.</French>
-    <German>You have been selected to contribute %d1[ICON_GOLD] for the commission of new chapels for the Church.</German>
-    <Italian>You have been selected to contribute %d1[ICON_GOLD] for the commission of new chapels for the Church.</Italian>
-    <Spanish>You have been selected to contribute %d1[ICON_GOLD] for the commission of new chapels for the Church.</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>AI_DIPLO_POPE_ASK_FOR_GOLD_3</Tag>
-    <English>Hard times have fallen upon the [OUR_EMPIRE]. %d1[ICON_GOLD] would be appreciated.</English>
-    <French>[OUR_EMPIRE] traverse une p&#233;riode difficile. Un don g&#233;n&#233;reux de %d1[ICON_GOLD] serait fortement appr&#233;ci&#233;.</French>
-    <German>Schwere Zeiten sind angebrochen f&#252;r das [OUR_EMPIRE:2]. %d1[ICON_GOLD] w&#228;ren willkommen.</German>
-    <Italian>Sono tempi duri per [OUR_EMPIRE]. %d1[ICON_GOLD] ci farebbero comodo.</Italian>
-    <Spanish>Tiempos aciagos se ciernen sobre el [OUR_EMPIRE]. Se agradecer&#237;a una donaci&#243;n de %d1 [ICON_GOLD].</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>AI_DIPLO_POPE_ASK_FOR_GOLD_4</Tag>
-    <English>I am tired. Deliver %d1[ICON_GOLD], kiss the Holy Ring, and let me rest.</English>
-    <French>Je n'en puis plus. Remettez-moi %d1[ICON_GOLD], embrassez ma chevali&#232;re, et laissez-moi me reposer.</French>
-    <German>Ich bin m&#252;de. Liefert %d1[ICON_GOLD], k&#252;sst meinen Ring und lasst mich ruhen.</German>
-    <Italian>Sono stanco. Consegna %d1[ICON_GOLD], baciami l'anello e lasciami riposare.</Italian>
-    <Spanish>Estoy cansado. Dadme %d1 [ICON_GOLD], besad mi anillo y dejadme descansar.</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>AI_DIPLO_POPE_ASK_FOR_GOLD_5</Tag>
-    <English>You may kiss the Holy Ring for the bargain price of %d1[ICON_GOLD].</English>
-    <French>Vous pouvez embrasser ma chevali&#232;re pour la modique somme de %d1[ICON_GOLD].</French>
-    <German>Ihr d&#252;rft meinen Ring f&#252;r die g&#252;nstige Summe von %d1[ICON_GOLD] k&#252;ssen.</German>
-    <Italian>Puoi baciarmi l'anello per l'ottimo prezzo di %d1[ICON_GOLD].</Italian>
-    <Spanish>Pod&#233;is besar mi anillo por la m&#243;dica cantidad de %d1 [ICON_GOLD].</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>USER_DIPLO_BUY_UNITS_FROM_ADVISOR_1</Tag>
-    <English>I am in need of extra military, do you know of any Mercenarys for hire?</English>
-    <French>I am in need of extra military, do you know of any Mercenarys for hire?</French>
-    <German>I am in need of extra military, do you know of any Mercenarys for hire?</German>
-    <Italian>I am in need of extra military, do you know of any Mercenarys for hire?</Italian>
-    <Spanish>I am in need of extra military, do you know of any Mercenarys for hire?</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>AI_DIPLO_ACCEPT_BUY_UNITS_FROM_ADVISOR_1</Tag>
-    <English>Yes, my Lord, %d1[ICON_GOLD] should cover the costs for a %s2_unit.</English>
-    <French>Yes, my Lord, %d1[ICON_GOLD] should cover the costs for a %s2_unit.</French>
-    <German>Yes, my Lord, %d1[ICON_GOLD] should cover the costs for a %s2_unit.</German>
-    <Italian>Yes, my Lord, %d1[ICON_GOLD] should cover the costs for a %s2_unit.</Italian>
-    <Spanish>Yes, my Lord, %d1[ICON_GOLD] should cover the costs for a %s2_unit.</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>AI_DIPLO_REJECT_BUY_UNITS_FROM_ADVISOR_1</Tag>
-    <English>Sorry, my Lord, I have seen nor heard of any in our domain.</English>
-    <French>Sorry, my Lord, I have seen nor heard of any in our domain.</French>
-    <German>Sorry, my Lord, I have seen nor heard of any in our domain.</German>
-    <Italian>Sorry, my Lord, I have seen nor heard of any in our domain.</Italian>
-    <Spanish>Sorry, my Lord, I have seen nor heard of any in our domain.</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>AI_DIPLO_ADVISOR_REVIVE_1</Tag>
-    <English>My Lord, it appears you have lost all of your colonists. More will arrive soon. Also, Inflation in [OUR_EMPIRE] has increased to %d1_new_rate%%.</English>
-    <French>My Lord, it appears you have lost all of your colonists. More will arrive soon. Also, Inflation in [OUR_EMPIRE] has increased to %d1_new_rate%%.</French>
-    <German>My Lord, it appears you have lost all of your colonists. More will arrive soon. Also, Inflation in [OUR_EMPIRE] has increased to %d1_new_rate%%.</German>
-    <Italian>My Lord, it appears you have lost all of your colonists. More will arrive soon. Also, Inflation in [OUR_EMPIRE] has increased to %d1_new_rate%%.</Italian>
-    <Spanish>My Lord, it appears you have lost all of your colonists. More will arrive soon. Also, Inflation in [OUR_EMPIRE] has increased to %d1_new_rate%%.</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>AI_DIPLO_ADVISOR_KISS_PINKY_1</Tag>
-    <English>My Lord, the wealth of goods being brought to the Motherland has caused inflation to be increased from %d1_old_rate%% to %d2_new_rate%%.</English>
-    <French>My Lord, the wealth of goods being brought to the Motherland has caused inflation to be increased from %d1_old_rate%% to %d2_new_rate%%.</French>
-    <German>My Lord, the wealth of goods being brought to the Motherland has caused inflation to be increased from %d1_old_rate%% to %d2_new_rate%%.</German>
-    <Italian>My Lord, the wealth of goods being brought to the Motherland has caused inflation to be increased from %d1_old_rate%% to %d2_new_rate%%.</Italian>
-    <Spanish>My Lord, the wealth of goods being brought to the Motherland has caused inflation to be increased from %d1_old_rate%% to %d2_new_rate%%.</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>USER_DIPLO_ADVISOR_KISS_PINKY_1</Tag>
-    <English>Very well, if it must be so.</English>
-    <French>Very well, if it must be so.</French>
-    <German>Very well, if it must be so.</German>
-    <Italian>Very well, if it must be so.</Italian>
-    <Spanish>Very well, if it must be so.</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>AI_DIPLO_ADVISOR_GIFT_SHIP_1</Tag>
-    <English>My Lord, it has to be rather hard to conduct business when you do not have any ships to transport cargo but alas, a new ship should be arriving soon. Also, Inflation in [OUR_EMPIRE] has increased to %d1_new_rate%%.</English>
-    <French>My Lord, it has to be rather hard to conduct business when you do not have any ships to transport cargo but alas, a new ship should be arriving soon. Also, Inflation in [OUR_EMPIRE] has increased to %d1_new_rate%%.</French>
-    <German>My Lord, it has to be rather hard to conduct business when you do not have any ships to transport cargo but alas, a new ship should be arriving soon. Also, Inflation in [OUR_EMPIRE] has increased to %d1_new_rate%%.</German>
-    <Italian>My Lord, it has to be rather hard to conduct business when you do not have any ships to transport cargo but alas, a new ship should be arriving soon. Also, Inflation in [OUR_EMPIRE] has increased to %d1_new_rate%%.</Italian>
-    <Spanish>My Lord, it has to be rather hard to conduct business when you do not have any ships to transport cargo but alas, a new ship should be arriving soon. Also, Inflation in [OUR_EMPIRE] has increased to %d1_new_rate%%.</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>AI_DIPLO_ADVISOR_ASK_FOR_GOLD_1</Tag>
-    <English>My Lord, a bad winter has caused a famine in [OUR_EMPIRE]. Our people need gold for grain. Could you spare %d1[ICON_GOLD]?</English>
-    <French>My Lord, a bad winter has caused a famine in [OUR_EMPIRE]. Our people need gold for grain. Could you spare %d1[ICON_GOLD]?</French>
-    <German>My Lord, a bad winter has caused a famine in [OUR_EMPIRE]. Our people need gold for grain. Could you spare %d1[ICON_GOLD]?</German>
-    <Italian>My Lord, a bad winter has caused a famine in [OUR_EMPIRE]. Our people need gold for grain. Could you spare %d1[ICON_GOLD]?</Italian>
-    <Spanish>My Lord, a bad winter has caused a famine in [OUR_EMPIRE]. Our people need gold for grain. Could you spare %d1[ICON_GOLD]?</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>AI_DIPLO_ADVISOR_ASK_FOR_GOLD_2</Tag>
-    <English>My Lord, docks in [OUR_EMPIRE] are in major need of repair. Could you spare %d1[ICON_GOLD] for improvements.</English>
-    <French>My Lord, docks in [OUR_EMPIRE] are in major need of repair. Could you spare %d1[ICON_GOLD] for improvements.</French>
-    <German>My Lord, docks in [OUR_EMPIRE] are in major need of repair. Could you spare %d1[ICON_GOLD] for improvements.</German>
-    <Italian>My Lord, docks in [OUR_EMPIRE] are in major need of repair. Could you spare %d1[ICON_GOLD] for improvements.</Italian>
-    <Spanish>My Lord, docks in [OUR_EMPIRE] are in major need of repair. Could you spare %d1[ICON_GOLD] for improvements.</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>AI_DIPLO_ADVISOR_ASK_FOR_GOLD_3</Tag>
-    <English>My Lord, hard times have fallen upon [OUR_EMPIRE]. %d1[ICON_GOLD] would be appreciated.</English>
-    <French>My Lord, hard times have fallen upon [OUR_EMPIRE]. %d1[ICON_GOLD] would be appreciated.</French>
-    <German>My Lord, hard times have fallen upon [OUR_EMPIRE]. %d1[ICON_GOLD] would be appreciated.</German>
-    <Italian>My Lord, hard times have fallen upon [OUR_EMPIRE]. %d1[ICON_GOLD] would be appreciated.</Italian>
-    <Spanish>My Lord, hard times have fallen upon [OUR_EMPIRE]. %d1[ICON_GOLD] would be appreciated.</Spanish>
-  </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY</Tag>
+		<English>[ICON_BULLET]</English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_AI_PEDDLER_TRADING_1</Tag>
+		<English>We have some goods here you may find of value.</English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VASSAL_ATTITUDE_TOWARDS</Tag>
+		<English>Vassal of %s1_leader</English>
+		<French>Vassal of %s1_leader</French>
+		<German>Vassal of %s1_leader</German>
+		<Italian>Vassal of %s1_leader</Italian>
+		<Spanish>Vassal of %s1_leader</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>USER_DIPLO_TAX_POPE_CENSURE_1</Tag>
+		<English>No, your impositions are uncalled for! (The Papacy will invoke Censures on your Realm)</English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_POPE_ASK_GOLD_OR_ELSE_1</Tag>
+		<English>Please deliver %d1[ICON_GOLD] immediately or I will be forced to invoke Censure!</English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CENSURE_EXCOMMUNICATION</Tag>
+		<English>%s1_name has invoked %s2_censure on your Realm for %d3 turns (%s4_strategy)</English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CENSURE_EXCOMMUNICATION_LIFTED</Tag>
+		<English>Your Excommunication has been lifted by The Papacy</English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CENSURE_EXCOMMUNICATION_TURNS</Tag>
+		<English>[COLOR_WARNING_TEXT]Interdict for %d1 turns[COLOR_REVERT][NEWLINE]Can not appoint Priest</English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>USER_DIPLO_POPE_REFUSE_GOLD_1</Tag>
+		<English>No, we already pay Tithes. That should be enough! (Anger Pope)</English>
+		<French>Non, nous avons d&#233;j&#224; des imp&#244;ts, et c'est d&#233;j&#224; bien assez ! (Rendre le roi furieux)</French>
+		<German>Nein, wir bezahlen bereits Steuern, das sollte reichen! (K&#246;nig ver&#228;rgern)</German>
+		<Italian>No, paghiamo gi&#224; le tasse. Dovrebbero bastare quelle! (Fai arrabbiare il re)</Italian>
+		<Spanish>No, ya pagamos impuestos. &#161;Con eso basta! (Enojar al rey)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>USER_DIPLO_CALIPH_REFUSE_GOLD_1</Tag>
+		<English>No, we already pay Tithes. That should be enough! (Anger Caliph)</English>
+		<French>Non, nous avons d&#233;j&#224; des imp&#244;ts, et c'est d&#233;j&#224; bien assez ! (Rendre le roi furieux)</French>
+		<German>Nein, wir bezahlen bereits Steuern, das sollte reichen! (K&#246;nig ver&#228;rgern)</German>
+		<Italian>No, paghiamo gi&#224; le tasse. Dovrebbero bastare quelle! (Fai arrabbiare il re)</Italian>
+		<Spanish>No, ya pagamos impuestos. &#161;Con eso basta! (Enojar al rey)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>USER_DIPLO_TAX_POPE_PARTY_1</Tag>
+		<English>No, it's time for the %s1_city %s2_yield party! (You will no longer be able to trade this good)</English>
+		<French>Non, j'ai inaugur&#233; la f&#234;te nationale du %s2_yield ! (Vous ne pourrez plus faire le commerce de ce bien avec l'Europe.)</French>
+		<German>Nein, es ist Zeit f&#252;r den %s2_yield-Aufstand im Ort %s1_city! (Ihr k&#246;nnt dieses Handelsgut nun nicht mehr mit Europa handeln.)</German>
+		<Italian>No, &#232; ora di smetterla col %s2_yield di %s1_city! (Non potrai pi&#249; commerciare questo bene con l'Europa.)</Italian>
+		<Spanish>&#161;No, es hora del partido [NUM2:del:de la:de los:de las] %s2_yield de %s1_city! (Ya no podr&#233;is intercambiar esta mercanc&#237;a con Europa).</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>USER_DIPLO_TAX_ADVISOR_PARTY_1</Tag>
+		<English>Then we will destory all the %s2_yield in %s1_city to stop the inflation! (You will no longer be able to trade this good)</English>
+		<French>Non, j'ai inaugur&#233; la f&#234;te nationale du %s2_yield ! (Vous ne pourrez plus faire le commerce de ce bien avec l'Europe.)</French>
+		<German>Nein, es ist Zeit f&#252;r den %s2_yield-Aufstand im Ort %s1_city! (Ihr k&#246;nnt dieses Handelsgut nun nicht mehr mit Europa handeln.)</German>
+		<Italian>No, &#232; ora di smetterla col %s2_yield di %s1_city! (Non potrai pi&#249; commerciare questo bene con l'Europa.)</Italian>
+		<Spanish>&#161;No, es hora del partido [NUM2:del:de la:de los:de las] %s2_yield de %s1_city! (Ya no podr&#233;is intercambiar esta mercanc&#237;a con Europa).</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>USER_DIPLO_SOMETHINGELSE_INSULT_1</Tag>
+		<English>Your stench is pungent, keep your filthy people off my lands! (Insult)</English>
+		<French>Your stench is pungent, keep your filthy people off my lands! (Insult)</French>
+		<German>Your stench is pungent, keep your filthy people off my lands! (Insult)</German>
+		<Italian>Your stench is pungent, keep your filthy people off my lands! (Insult)</Italian>
+		<Spanish>Your stench is pungent, keep your filthy people off my lands! (Insult)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_SOMETHINGELSE_INSULT_RESPONCE_1</Tag>
+		<English>Why you!</English>
+		<French>Why you!</French>
+		<German>Why you!</German>
+		<Italian>Why you!</Italian>
+		<Spanish>Why you!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_SOMETHINGELSE_INSULT_RESPONCE_2</Tag>
+		<English>Why I never!</English>
+		<French>Why I never!</French>
+		<German>Why I never!</German>
+		<Italian>Why I never!</Italian>
+		<Spanish>Why I never!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_SOMETHINGELSE_INSULT_RESPONCE_3</Tag>
+		<English>Leave here at once!</English>
+		<French>Leave here at once!</French>
+		<German>Leave here at once!</German>
+		<Italian>Leave here at once!</Italian>
+		<Spanish>Leave here at once!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_SOMETHINGELSE_INSULT_RESPONCE_4</Tag>
+		<English>Your head will look good on a pole!</English>
+		<French>Your head will look good on a pole!</French>
+		<German>Your head will look good on a pole!</German>
+		<Italian>Your head will look good on a pole!</Italian>
+		<Spanish>Your head will look good on a pole!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>USER_DIPLO_SOMETHINGELSE_INSULT_ARPAD</Tag>
+		<English>Hey, your mustache looks funny! (Insult)</English>
+		<French>Hey, your mustache looks funny! (Insult)</French>
+		<German>Hey, your mustache looks funny! (Insult)</German>
+		<Italian>Hey, your mustache looks funny! (Insult)</Italian>
+		<Spanish>Hey, your mustache looks funny! (Insult)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_VIKING_ADVISOR_1</Tag>
+		<English>Greetings My Jarl, what do you inquire of me?</English>
+		<French>Greetings My Jarl, what do you inquire of me?</French>
+		<German>Greetings My Jarl, what do you inquire of me?</German>
+		<Italian>Greetings My Jarl, what do you inquire of me?</Italian>
+		<Spanish>Greetings My Jarl, what do you inquire of me?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_STUDENT_EDUCATION_CLASS</Tag>
+		<English>Graduats to %s1_name in %d2 [NUM1:turn:turns]</English>
+		<French>Graduats to %s1_name in %d2 [NUM1:turn:turns]</French>
+		<German>Graduats to %s1_name in %d2 [NUM1:turn:turns]</German>
+		<Italian>Graduats to %s1_name in %d2 [NUM1:turn:turns]</Italian>
+		<Spanish>Graduats to %s1_name in %d2 [NUM1:turn:turns]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>USER_DIPLO_INSULT_FIRSTCONTACT_1</Tag>
+		<English>Your head will look good on a pole! (Insult)</English>
+		<French>Your head will look good on a pole! (Insult)</French>
+		<German>Your head will look good on a pole! (Insult)</German>
+		<Italian>Your head will look good on a pole! (Insult)</Italian>
+		<Spanish>Your head will look good on a pole! (Insult)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>USER_DIPLO_INSULT_FIRSTCONTACT_2</Tag>
+		<English>I'll take pleasure in guttin' you! (Insult)</English>
+		<French>I'll take pleasure in guttin' you! (Insult)</French>
+		<German>I'll take pleasure in guttin' you! (Insult)</German>
+		<Italian>I'll take pleasure in guttin' you! (Insult)</Italian>
+		<Spanish>I'll take pleasure in guttin' you! (Insult)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>USER_DIPLO_FOUND_FIRST_CITY_INSULT</Tag>
+		<English>We take what we want, this is our land! (Insult)</English>
+		<French>We take what we want, this is our land! (Insult)</French>
+		<German>We take what we want, this is our land! (Insult)</German>
+		<Italian>We take what we want, this is our land! (Insult)</Italian>
+		<Spanish>We take what we want, this is our land! (Insult)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_ATTITUDE_INSULT</Tag>
+		<English>"Your insults have not gone unnoticed!"</English>
+		<French>"Your insults have not gone unnoticed!"</French>
+		<German>"Your insults have not gone unnoticed!"</German>
+		<Italian>"Your insults have not gone unnoticed!"</Italian>
+		<Spanish>"Your insults have not gone unnoticed!"</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>USER_DIPLO_DEMAND_TEAM_1</Tag>
+		<English>This sure would come in handy. (Vassal Demand)</English>
+		<French>Voil&#224; qui sera s&#251;rement utile...(Vassal Demand)</French>
+		<German>Das k&#228;me sicher gelegen ...(Vassal Demand)</German>
+		<Italian>Torner&#224; sicuramente utile...(Vassal Demand)</Italian>
+		<Spanish>Seguro que nos vendr&#225; muy bien...(Vassal Demand)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_VASSAL_DEMAND</Tag>
+		<English>"You've recently made your Vassal demands!"</English>
+		<French>"You've recently made your Vassal demands!"</French>
+		<German>"You've recently made your Vassal demands!"</German>
+		<Italian>"You've recently made your Vassal demands!"</Italian>
+		<Spanish>"You've recently made your Vassal demands!"</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_NEW_EUROPE_ARMY_NEW</Tag>
+		<English>The Emperor of %s1_civ_short is alarmed at the rebel sentiment in %s2_civ_short. He has added %d3 [NUM3:unit:units] to the %s4_adjective Royal Expeditionary Force.</English>
+		<French>The Emperor of %s1_civ_short is alarmed at the rebel sentiment in %s2_civ_short. He has added %d3 [NUM3:unit:units] to the %s4_adjective Royal Expeditionary Force.</French>
+		<German>The Emperor of %s1_civ_short is alarmed at the rebel sentiment in %s2_civ_short. He has added %d3 [NUM3:unit:units] to the %s4_adjective Royal Expeditionary Force.</German>
+		<Italian>The Emperor of %s1_civ_short is alarmed at the rebel sentiment in %s2_civ_short. He has added %d3 [NUM3:unit:units] to the %s4_adjective Royal Expeditionary Force.</Italian>
+		<Spanish>The Emperor of %s1_civ_short is alarmed at the rebel sentiment in %s2_civ_short. He has added %d3 [NUM3:unit:units] to the %s4_adjective Royal Expeditionary Force.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_NEW_POPE_ARMY</Tag>
+		<English>The Pope is alarmed at the sentiment in %s2_civ_short. He has added %d3 [NUM3:unit:units] to the %s4_adjective Holy Expeditionary Force.</English>
+		<French>The Pope is alarmed at the sentiment in %s2_civ_short. He has added %d3 [NUM3:unit:units] to the %s4_adjective Holy Expeditionary Force.</French>
+		<German>The Pope is alarmed at the sentiment in %s2_civ_short. He has added %d3 [NUM3:unit:units] to the %s4_adjective Holy Expeditionary Force.</German>
+		<Italian>The Pope is alarmed at the sentiment in %s2_civ_short. He has added %d3 [NUM3:unit:units] to the %s4_adjective Holy Expeditionary Force.</Italian>
+		<Spanish>The Pope is alarmed at the sentiment in %s2_civ_short. He has added %d3 [NUM3:unit:units] to the %s4_adjective Holy Expeditionary Force.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_NEW_CRUSADERS_ARMY</Tag>
+		<English>Spies report more soldiers have been added to the Crusader Forces that are amassing near our borders.</English>
+		<French>Spies report more soldiers have been added to the Crusader Forces that are amassing near our borders.</French>
+		<German>Spies report more soldiers have been added to the Crusader Forces that are amassing near our borders.</German>
+		<Italian>Spies report more soldiers have been added to the Crusader Forces that are amassing near our borders.</Italian>
+		<Spanish>Spies report more soldiers have been added to the Crusader Forces that are amassing near our borders.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_POPE_REVIVE_1</Tag>
+		<English>It appears you have lost all of your colonists. I am sending you more; try not to lose them. Your tithe has been raised to %d1_new_rate%%. You may kiss the Holy Ring.</English>
+		<French>It appears you have lost all of your colonists. I am sending you more; try not to lose them. Your tithe has been raised to %d1_new_rate%%. You may kiss the Holy Ring.</French>
+		<German>It appears you have lost all of your colonists. I am sending you more; try not to lose them. Your tithe has been raised to %d1_new_rate%%. You may kiss the Holy Ring.</German>
+		<Italian>It appears you have lost all of your colonists. I am sending you more; try not to lose them. Your tithe has been raised to %d1_new_rate%%. You may kiss the Holy Ring.</Italian>
+		<Spanish>It appears you have lost all of your colonists. I am sending you more; try not to lose them. Your tithe has been raised to %d1_new_rate%%. You may kiss the Holy Ring.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_POPE_KISS_PINKY_1</Tag>
+		<English>It is time to raise your tithes from %d1_old_rate%% to %d2_new_rate%%. You may kiss the Holy Ring in acquiescence.</English>
+		<French>It is time to raise your tithes from %d1_old_rate%% to %d2_new_rate%%. You may kiss the Holy Ring in acquiescence.</French>
+		<German>It is time to raise your tithes from %d1_old_rate%% to %d2_new_rate%%. You may kiss the Holy Ring in acquiescence.</German>
+		<Italian>It is time to raise your tithes from %d1_old_rate%% to %d2_new_rate%%. You may kiss the Holy Ring in acquiescence.</Italian>
+		<Spanish>It is time to raise your tithes from %d1_old_rate%% to %d2_new_rate%%. You may kiss the Holy Ring in acquiescence.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_ATTITUDE_OPEN_BORDERS</Tag>
+		<English>%D1: "Our Trade Relations have brought our people close together."</English>
+		<French>%D1 : "Le libre passage a rapproch&#233; nos deux peuples."</French>
+		<German>%D1: "Die &#214;ffnung unserer Grenzen hat unsere V&#246;lker n&#228;her gebracht."</German>
+		<Italian>%D1: "Il nostro accordo di diritto di passaggio ha permesso ai nostri popoli di avvicinarsi"</Italian>
+		<Spanish>%D1: "La apertura de fronteras ha acercado m&#225;s a nuestros pueblos."</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>USER_DIPLO_TAX_PARTY_1</Tag>
+		<English>No, it's time for the %s1_city %s2_yield party! (You will no longer be able to trade this good.)</English>
+		<French>No, it's time for the %s1_city %s2_yield party! (You will no longer be able to trade this good.)</French>
+		<German>No, it's time for the %s1_city %s2_yield party! (You will no longer be able to trade this good.)</German>
+		<Italian>No, it's time for the %s1_city %s2_yield party! (You will no longer be able to trade this good.)</Italian>
+		<Spanish>No, it's time for the %s1_city %s2_yield party! (You will no longer be able to trade this good.)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_POPE_GIFT_SHIP_1</Tag>
+		<English>It's rather hard to conduct business with you when you do not have any ships to transport cargo. I will give you a new ship, but your tax rate has now been raised to %d1_new_rate%%. You may kiss the Holy Ring.</English>
+		<French>It's rather hard to conduct business with you when you do not have any ships to transport cargo. I will give you a new ship, but your tax rate has now been raised to %d1_new_rate%%. You may kiss the Holy Ring.</French>
+		<German>It's rather hard to conduct business with you when you do not have any ships to transport cargo. I will give you a new ship, but your tax rate has now been raised to %d1_new_rate%%. You may kiss the Holy Ring.</German>
+		<Italian>It's rather hard to conduct business with you when you do not have any ships to transport cargo. I will give you a new ship, but your tax rate has now been raised to %d1_new_rate%%. You may kiss the Holy Ring.</Italian>
+		<Spanish>It's rather hard to conduct business with you when you do not have any ships to transport cargo. I will give you a new ship, but your tax rate has now been raised to %d1_new_rate%%. You may kiss the Holy Ring.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_POPE_ASK_FOR_GOLD_1</Tag>
+		<English>Please deliver %d1[ICON_GOLD] immediately.</English>
+		<French>Veuillez imm&#233;diatement nous faire parvenir %d1[ICON_GOLD].</French>
+		<German>Bitte liefert sofort %d1[ICON_GOLD].</German>
+		<Italian>Consegna immediatamente %d1[ICON_GOLD].</Italian>
+		<Spanish>Por favor, entregad %d1 [ICON_GOLD] de inmediato.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_POPE_ASK_FOR_GOLD_2</Tag>
+		<English>Oh, How exciting, you have been selected to contribute %d1[ICON_GOLD] for the commission of new chapels for the Church.</English>
+		<French>You have been selected to contribute %d1[ICON_GOLD] for the commission of new chapels for the Church.</French>
+		<German>You have been selected to contribute %d1[ICON_GOLD] for the commission of new chapels for the Church.</German>
+		<Italian>You have been selected to contribute %d1[ICON_GOLD] for the commission of new chapels for the Church.</Italian>
+		<Spanish>You have been selected to contribute %d1[ICON_GOLD] for the commission of new chapels for the Church.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_POPE_ASK_FOR_GOLD_3</Tag>
+		<English>Hard times have fallen upon the [OUR_EMPIRE]. %d1[ICON_GOLD] would be appreciated.</English>
+		<French>[OUR_EMPIRE] traverse une p&#233;riode difficile. Un don g&#233;n&#233;reux de %d1[ICON_GOLD] serait fortement appr&#233;ci&#233;.</French>
+		<German>Schwere Zeiten sind angebrochen f&#252;r das [OUR_EMPIRE:2]. %d1[ICON_GOLD] w&#228;ren willkommen.</German>
+		<Italian>Sono tempi duri per [OUR_EMPIRE]. %d1[ICON_GOLD] ci farebbero comodo.</Italian>
+		<Spanish>Tiempos aciagos se ciernen sobre el [OUR_EMPIRE]. Se agradecer&#237;a una donaci&#243;n de %d1 [ICON_GOLD].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_POPE_ASK_FOR_GOLD_4</Tag>
+		<English>I am tired. Deliver %d1[ICON_GOLD], kiss the Holy Ring, and let me rest.</English>
+		<French>Je n'en puis plus. Remettez-moi %d1[ICON_GOLD], embrassez ma chevali&#232;re, et laissez-moi me reposer.</French>
+		<German>Ich bin m&#252;de. Liefert %d1[ICON_GOLD], k&#252;sst meinen Ring und lasst mich ruhen.</German>
+		<Italian>Sono stanco. Consegna %d1[ICON_GOLD], baciami l'anello e lasciami riposare.</Italian>
+		<Spanish>Estoy cansado. Dadme %d1 [ICON_GOLD], besad mi anillo y dejadme descansar.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_POPE_ASK_FOR_GOLD_5</Tag>
+		<English>You may kiss the Holy Ring for the bargain price of %d1[ICON_GOLD].</English>
+		<French>Vous pouvez embrasser ma chevali&#232;re pour la modique somme de %d1[ICON_GOLD].</French>
+		<German>Ihr d&#252;rft meinen Ring f&#252;r die g&#252;nstige Summe von %d1[ICON_GOLD] k&#252;ssen.</German>
+		<Italian>Puoi baciarmi l'anello per l'ottimo prezzo di %d1[ICON_GOLD].</Italian>
+		<Spanish>Pod&#233;is besar mi anillo por la m&#243;dica cantidad de %d1 [ICON_GOLD].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>USER_DIPLO_BUY_UNITS_FROM_ADVISOR_1</Tag>
+		<English>I am in need of extra military, do you know of any Mercenarys for hire?</English>
+		<French>I am in need of extra military, do you know of any Mercenarys for hire?</French>
+		<German>I am in need of extra military, do you know of any Mercenarys for hire?</German>
+		<Italian>I am in need of extra military, do you know of any Mercenarys for hire?</Italian>
+		<Spanish>I am in need of extra military, do you know of any Mercenarys for hire?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_ACCEPT_BUY_UNITS_FROM_ADVISOR_1</Tag>
+		<English>Yes, my Lord, %d1[ICON_GOLD] should cover the costs for a %s2_unit.</English>
+		<French>Yes, my Lord, %d1[ICON_GOLD] should cover the costs for a %s2_unit.</French>
+		<German>Yes, my Lord, %d1[ICON_GOLD] should cover the costs for a %s2_unit.</German>
+		<Italian>Yes, my Lord, %d1[ICON_GOLD] should cover the costs for a %s2_unit.</Italian>
+		<Spanish>Yes, my Lord, %d1[ICON_GOLD] should cover the costs for a %s2_unit.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REJECT_BUY_UNITS_FROM_ADVISOR_1</Tag>
+		<English>Sorry, my Lord, I have seen nor heard of any in our domain.</English>
+		<French>Sorry, my Lord, I have seen nor heard of any in our domain.</French>
+		<German>Sorry, my Lord, I have seen nor heard of any in our domain.</German>
+		<Italian>Sorry, my Lord, I have seen nor heard of any in our domain.</Italian>
+		<Spanish>Sorry, my Lord, I have seen nor heard of any in our domain.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_ADVISOR_REVIVE_1</Tag>
+		<English>My Lord, it appears you have lost all of your colonists. More will arrive soon. Also, Inflation in [OUR_EMPIRE] has increased to %d1_new_rate%%.</English>
+		<French>My Lord, it appears you have lost all of your colonists. More will arrive soon. Also, Inflation in [OUR_EMPIRE] has increased to %d1_new_rate%%.</French>
+		<German>My Lord, it appears you have lost all of your colonists. More will arrive soon. Also, Inflation in [OUR_EMPIRE] has increased to %d1_new_rate%%.</German>
+		<Italian>My Lord, it appears you have lost all of your colonists. More will arrive soon. Also, Inflation in [OUR_EMPIRE] has increased to %d1_new_rate%%.</Italian>
+		<Spanish>My Lord, it appears you have lost all of your colonists. More will arrive soon. Also, Inflation in [OUR_EMPIRE] has increased to %d1_new_rate%%.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_ADVISOR_KISS_PINKY_1</Tag>
+		<English>My Lord, the wealth of goods being brought to the Motherland has caused inflation to be increased from %d1_old_rate%% to %d2_new_rate%%.</English>
+		<French>My Lord, the wealth of goods being brought to the Motherland has caused inflation to be increased from %d1_old_rate%% to %d2_new_rate%%.</French>
+		<German>My Lord, the wealth of goods being brought to the Motherland has caused inflation to be increased from %d1_old_rate%% to %d2_new_rate%%.</German>
+		<Italian>My Lord, the wealth of goods being brought to the Motherland has caused inflation to be increased from %d1_old_rate%% to %d2_new_rate%%.</Italian>
+		<Spanish>My Lord, the wealth of goods being brought to the Motherland has caused inflation to be increased from %d1_old_rate%% to %d2_new_rate%%.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>USER_DIPLO_ADVISOR_KISS_PINKY_1</Tag>
+		<English>Very well, if it must be so.</English>
+		<French>Very well, if it must be so.</French>
+		<German>Very well, if it must be so.</German>
+		<Italian>Very well, if it must be so.</Italian>
+		<Spanish>Very well, if it must be so.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_ADVISOR_GIFT_SHIP_1</Tag>
+		<English>My Lord, it has to be rather hard to conduct business when you do not have any ships to transport cargo but alas, a new ship should be arriving soon. Also, Inflation in [OUR_EMPIRE] has increased to %d1_new_rate%%.</English>
+		<French>My Lord, it has to be rather hard to conduct business when you do not have any ships to transport cargo but alas, a new ship should be arriving soon. Also, Inflation in [OUR_EMPIRE] has increased to %d1_new_rate%%.</French>
+		<German>My Lord, it has to be rather hard to conduct business when you do not have any ships to transport cargo but alas, a new ship should be arriving soon. Also, Inflation in [OUR_EMPIRE] has increased to %d1_new_rate%%.</German>
+		<Italian>My Lord, it has to be rather hard to conduct business when you do not have any ships to transport cargo but alas, a new ship should be arriving soon. Also, Inflation in [OUR_EMPIRE] has increased to %d1_new_rate%%.</Italian>
+		<Spanish>My Lord, it has to be rather hard to conduct business when you do not have any ships to transport cargo but alas, a new ship should be arriving soon. Also, Inflation in [OUR_EMPIRE] has increased to %d1_new_rate%%.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_ADVISOR_ASK_FOR_GOLD_1</Tag>
+		<English>My Lord, a bad winter has caused a famine in [OUR_EMPIRE]. Our people need gold for grain. Could you spare %d1[ICON_GOLD]?</English>
+		<French>My Lord, a bad winter has caused a famine in [OUR_EMPIRE]. Our people need gold for grain. Could you spare %d1[ICON_GOLD]?</French>
+		<German>My Lord, a bad winter has caused a famine in [OUR_EMPIRE]. Our people need gold for grain. Could you spare %d1[ICON_GOLD]?</German>
+		<Italian>My Lord, a bad winter has caused a famine in [OUR_EMPIRE]. Our people need gold for grain. Could you spare %d1[ICON_GOLD]?</Italian>
+		<Spanish>My Lord, a bad winter has caused a famine in [OUR_EMPIRE]. Our people need gold for grain. Could you spare %d1[ICON_GOLD]?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_ADVISOR_ASK_FOR_GOLD_2</Tag>
+		<English>My Lord, docks in [OUR_EMPIRE] are in major need of repair. Could you spare %d1[ICON_GOLD] for improvements.</English>
+		<French>My Lord, docks in [OUR_EMPIRE] are in major need of repair. Could you spare %d1[ICON_GOLD] for improvements.</French>
+		<German>My Lord, docks in [OUR_EMPIRE] are in major need of repair. Could you spare %d1[ICON_GOLD] for improvements.</German>
+		<Italian>My Lord, docks in [OUR_EMPIRE] are in major need of repair. Could you spare %d1[ICON_GOLD] for improvements.</Italian>
+		<Spanish>My Lord, docks in [OUR_EMPIRE] are in major need of repair. Could you spare %d1[ICON_GOLD] for improvements.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_ADVISOR_ASK_FOR_GOLD_3</Tag>
+		<English>My Lord, hard times have fallen upon [OUR_EMPIRE]. %d1[ICON_GOLD] would be appreciated.</English>
+		<French>My Lord, hard times have fallen upon [OUR_EMPIRE]. %d1[ICON_GOLD] would be appreciated.</French>
+		<German>My Lord, hard times have fallen upon [OUR_EMPIRE]. %d1[ICON_GOLD] would be appreciated.</German>
+		<Italian>My Lord, hard times have fallen upon [OUR_EMPIRE]. %d1[ICON_GOLD] would be appreciated.</Italian>
+		<Spanish>My Lord, hard times have fallen upon [OUR_EMPIRE]. %d1[ICON_GOLD] would be appreciated.</Spanish>
+	</TEXT>
 </Civ4GameText>

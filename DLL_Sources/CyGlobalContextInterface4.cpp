@@ -12,6 +12,8 @@
 #include "CvInfos.h"
 #include "CyTeam.h"
 
+#include "CvInfoProfessions.h"
+
 void CyGlobalContextPythonInterface4(python::class_<CyGlobalContext>& x)
 {
 	OutputDebugString("Python Extension Module - CyGlobalContextPythonInterface1\n");

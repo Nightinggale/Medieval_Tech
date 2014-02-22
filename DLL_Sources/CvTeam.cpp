@@ -11,6 +11,7 @@
 #include "CvMap.h"
 #include "CvPlot.h"
 #include "CvTeam.h"
+#include "CvUnitAI.h"
 #include "CvDLLInterfaceIFaceBase.h"
 #include "CvDLLEventReporterIFaceBase.h"
 #include "CvDLLEngineIFaceBase.h"
@@ -25,12 +26,14 @@
 
 CvTeam::CvTeam()
 {
-	m_abAtWar = new bool[MAX_TEAMS];
-	m_abHasMet = new bool[MAX_TEAMS];
-	m_abPermanentWarPeace = new bool[MAX_TEAMS];
-	m_abOpenBorders = new bool[MAX_TEAMS];
-	m_abDefensivePact = new bool[MAX_TEAMS];
-	m_abForcePeace = new bool[MAX_TEAMS];
+	/// player bitmap - start - Nightinggale
+	m_bmAtWar = 0;
+	m_bmHasMet = 0;
+	m_bmPermanentWarPeace = 0;
+	m_bmOpenBorders = 0;
+	m_bmDefensivePact = 0;
+	m_bmForcePeace = 0;
+	/// player bitmap - end - Nightinggale
 
 	m_abFatherIgnore = NULL;
 	///Tks Med
@@ -48,12 +51,6 @@ CvTeam::CvTeam()
 CvTeam::~CvTeam()
 {
 	uninit();
-	SAFE_DELETE_ARRAY(m_abAtWar);
-	SAFE_DELETE_ARRAY(m_abHasMet);
-	SAFE_DELETE_ARRAY(m_abPermanentWarPeace);
-	SAFE_DELETE_ARRAY(m_abOpenBorders);
-	SAFE_DELETE_ARRAY(m_abDefensivePact);
-	SAFE_DELETE_ARRAY(m_abForcePeace);
 }
 
 
@@ -110,15 +107,14 @@ void CvTeam::reset(TeamTypes eID, bool bConstructorCall)
 
 	m_eID = eID;
 
-	for (iI = 0; iI < MAX_TEAMS; iI++)
-	{
-		m_abHasMet[iI] = false;
-		m_abAtWar[iI] = false;
-		m_abPermanentWarPeace[iI] = false;
-		m_abOpenBorders[iI] = false;
-		m_abDefensivePact[iI] = false;
-		m_abForcePeace[iI] = false;
-	}
+	/// player bitmap - start - Nightinggale
+	m_bmAtWar = 0;
+	m_bmHasMet = 0;
+	m_bmPermanentWarPeace = 0;
+	m_bmOpenBorders = 0;
+	m_bmDefensivePact = 0;
+	m_bmForcePeace = 0;
+	/// player bitmap - end - Nightinggale
 
 	if (!bConstructorCall)
 	{
@@ -390,7 +386,7 @@ void CvTeam::addTeam(TeamTypes eTeam)
 	{
 		pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
 
-		pLoopPlot->changeVisibilityCount(getID(), pLoopPlot->getVisibilityCount(eTeam), NO_INVISIBLE);
+		pLoopPlot->changeVisibilityCount(getID(), pLoopPlot->getVisibilityCount(eTeam), NO_INVISIBLE, false);
 
 		for (iJ = 0; iJ < GC.getNumInvisibleInfos(); iJ++)
 		{
@@ -399,7 +395,7 @@ void CvTeam::addTeam(TeamTypes eTeam)
 
 		if (pLoopPlot->isRevealed(eTeam, false))
 		{
-			pLoopPlot->setRevealed(getID(), true, false, eTeam);
+			pLoopPlot->setRevealed(getID(), true, false, eTeam, false);
 		}
 	}
 
@@ -1675,7 +1671,7 @@ int CvTeam::countEnemyDangerByArea(CvArea* pArea) const
 			{
 				if (pLoopPlot->getTeam() == getID())
 				{
-					iCount += pLoopPlot->plotCount(PUF_canDefendEnemy, getLeaderID(), false, NO_PLAYER, NO_TEAM, PUF_isVisible, getLeaderID());
+					iCount += pLoopPlot->plotCount(PUF_canDefendEnemy, getLeaderID(), 0, NO_PLAYER, NO_TEAM, PUF_isVisible, getLeaderID());
 				}
 			}
 		}
@@ -2221,7 +2217,10 @@ bool CvTeam::isHasMet(TeamTypes eIndex)	const
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
 	//FAssert((eIndex != getID()) || m_abHasMet[eIndex]);
-	return m_abHasMet[eIndex];
+	//return m_abHasMet[eIndex];
+	/// player bitmap - start - Nightinggale
+	return HasBit(m_bmHasMet, eIndex);
+	/// player bitmap - end - Nightinggale
 }
 
 void CvTeam::makeHasMet(TeamTypes eIndex, bool bNewDiplo)
@@ -2234,7 +2233,9 @@ void CvTeam::makeHasMet(TeamTypes eIndex, bool bNewDiplo)
 
 	if (!isHasMet(eIndex))
 	{
-		m_abHasMet[eIndex] = true;
+		/// player bitmap - start - Nightinggale
+		SetBit(m_bmHasMet, eIndex);
+		/// player bitmap - end - Nightinggale
 
 		AI_setAtPeaceCounter(eIndex, 0);
 		AI_setAtWarCounter(eIndex, 0);
@@ -2332,7 +2333,10 @@ bool CvTeam::isAtWar(TeamTypes eIndex) const
 	}
 	else
 	{
-		return m_abAtWar[eIndex];
+		/// player bitmap - start - Nightinggale
+		//return m_abAtWar[eIndex];
+		return HasBit(m_bmAtWar, eIndex);
+		/// player bitmap - end - Nightinggale
 	}
 }
 
@@ -2347,7 +2351,10 @@ void CvTeam::setAtWar(TeamTypes eIndex, bool bNewValue)
 		AI_setOpenBordersCounter(eIndex, 0);
 	}
 
-	m_abAtWar[eIndex] = bNewValue;
+	//m_abAtWar[eIndex] = bNewValue;
+	/// player bitmap - start - Nightinggale
+	SetBit(m_bmAtWar, eIndex, bNewValue);
+	/// player bitmap - end - Nightinggale
 }
 
 
@@ -2355,7 +2362,10 @@ bool CvTeam::isPermanentWarPeace(TeamTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_abPermanentWarPeace[eIndex];
+	//return m_abPermanentWarPeace[eIndex];
+	/// player bitmap - start - Nightinggale
+	return HasBit(m_bmPermanentWarPeace, eIndex);
+	/// player bitmap - end - Nightinggale
 }
 
 
@@ -2363,7 +2373,10 @@ void CvTeam::setPermanentWarPeace(TeamTypes eIndex, bool bNewValue)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_abPermanentWarPeace[eIndex] = bNewValue;
+	//m_abPermanentWarPeace[eIndex] = bNewValue;
+	/// player bitmap - start - Nightinggale
+	SetBit(m_bmPermanentWarPeace, eIndex, bNewValue);
+	/// player bitmap - end - Nightinggale
 }
 
 
@@ -2377,7 +2390,10 @@ bool CvTeam::isOpenBorders(TeamTypes eIndex) const
 		return false;
 	}
 
-	return m_abOpenBorders[eIndex];
+	//return m_abOpenBorders[eIndex];
+	/// player bitmap - start - Nightinggale
+	return HasBit(m_bmOpenBorders, eIndex);
+	/// player bitmap - end - Nightinggale
 }
 
 
@@ -2388,7 +2404,10 @@ void CvTeam::setOpenBorders(TeamTypes eIndex, bool bNewValue)
 
 	if (isOpenBorders(eIndex) != bNewValue)
 	{
-		m_abOpenBorders[eIndex] = bNewValue;
+		//m_abOpenBorders[eIndex] = bNewValue;
+		/// player bitmap - start - Nightinggale
+		SetBit(m_bmOpenBorders, eIndex, bNewValue);
+		/// player bitmap - end - Nightinggale
 
 		AI_setOpenBordersCounter(eIndex, 0);
 
@@ -2408,7 +2427,10 @@ bool CvTeam::isDefensivePact(TeamTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_abDefensivePact[eIndex];
+	//return m_abDefensivePact[eIndex];
+	/// player bitmap - start - Nightinggale
+	return HasBit(m_bmDefensivePact, eIndex);
+	/// player bitmap - end - Nightinggale
 }
 
 
@@ -2419,7 +2441,10 @@ void CvTeam::setDefensivePact(TeamTypes eIndex, bool bNewValue)
 
 	if (isDefensivePact(eIndex) != bNewValue)
 	{
-		m_abDefensivePact[eIndex] = bNewValue;
+		//m_abDefensivePact[eIndex] = bNewValue;
+		/// player bitmap - start - Nightinggale
+		SetBit(m_bmDefensivePact, eIndex, bNewValue);
+		/// player bitmap - end - Nightinggale
 
 		if ((getID() == GC.getGameINLINE().getActiveTeam()) || (eIndex == GC.getGameINLINE().getActiveTeam()))
 		{
@@ -2439,7 +2464,10 @@ bool CvTeam::isForcePeace(TeamTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_abForcePeace[eIndex];
+	//return m_abForcePeace[eIndex];
+	/// player bitmap - start - Nightinggale
+	return HasBit(m_bmForcePeace, eIndex);
+	/// player bitmap - end - Nightinggale
 }
 
 
@@ -2447,7 +2475,10 @@ void CvTeam::setForcePeace(TeamTypes eIndex, bool bNewValue)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_abForcePeace[eIndex] = bNewValue;
+	//m_abForcePeace[eIndex] = bNewValue;
+	/// player bitmap - start - Nightinggale
+	SetBit(m_bmForcePeace, eIndex, bNewValue);
+	/// player bitmap - end - Nightinggale
 
 	if (isForcePeace(eIndex))
 	{
@@ -2891,7 +2922,7 @@ void CvTeam::doRevolution(bool bRebellion)//multinvasion
 	bool bHasConstitution = false;
     for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
     {
-        if (GC.getCivicInfo((CivicTypes) iCivic).getCivicOptionType() == (CivicOptionTypes)GC.getXMLval(XML_CIVICOPTION_INVENTIONS))
+        if (GC.getCivicInfo((CivicTypes) iCivic).getCivicOptionType() == CIVICOPTION_INVENTIONS)
         {
             CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes) iCivic);
             if (kCivicInfo.isStartConstitution())
@@ -3003,12 +3034,24 @@ void CvTeam::read(FDataStreamBase* pStream)
 
 	pStream->Read((int*)&m_eID);
 
-	pStream->Read(MAX_TEAMS, m_abHasMet);
-	pStream->Read(MAX_TEAMS, m_abAtWar);
-	pStream->Read(MAX_TEAMS, m_abPermanentWarPeace);
-	pStream->Read(MAX_TEAMS, m_abOpenBorders);
-	pStream->Read(MAX_TEAMS, m_abDefensivePact);
-	pStream->Read(MAX_TEAMS, m_abForcePeace);
+	/// player bitmap - start - Nightinggale
+	if (uiFlag == 0)
+	{
+		loadIntoBitmap(pStream, m_bmHasMet, MAX_TEAMS);
+		loadIntoBitmap(pStream, m_bmAtWar, MAX_TEAMS);
+		loadIntoBitmap(pStream, m_bmPermanentWarPeace, MAX_TEAMS);
+		loadIntoBitmap(pStream, m_bmOpenBorders, MAX_TEAMS);
+		loadIntoBitmap(pStream, m_bmDefensivePact, MAX_TEAMS);
+		loadIntoBitmap(pStream, m_bmForcePeace, MAX_TEAMS);
+	} else {
+		pStream->Read(&m_bmHasMet);
+		pStream->Read(&m_bmAtWar);
+		pStream->Read(&m_bmPermanentWarPeace);
+		pStream->Read(&m_bmOpenBorders);
+		pStream->Read(&m_bmDefensivePact);
+		pStream->Read(&m_bmForcePeace);
+	}
+	/// player bitmap - end - Nightinggale
 
 	pStream->Read(GC.getNumFatherInfos(), m_abFatherIgnore);
 	///Tks Med
@@ -3032,7 +3075,7 @@ void CvTeam::read(FDataStreamBase* pStream)
 
 void CvTeam::write(FDataStreamBase* pStream)
 {
-	uint uiFlag = 0;
+	uint uiFlag = 1;
 	pStream->Write(uiFlag);		// flag for expansion
 	pStream->Write(m_iNumMembers);
 	pStream->Write(m_iAliveCount);
@@ -3046,12 +3089,14 @@ void CvTeam::write(FDataStreamBase* pStream)
 	pStream->Write(m_iPermanentAllianceTradingCount);
 	pStream->Write(m_bMapCentering);
 	pStream->Write(m_eID);
-	pStream->Write(MAX_TEAMS, m_abHasMet);
-	pStream->Write(MAX_TEAMS, m_abAtWar);
-	pStream->Write(MAX_TEAMS, m_abPermanentWarPeace);
-	pStream->Write(MAX_TEAMS, m_abOpenBorders);
-	pStream->Write(MAX_TEAMS, m_abDefensivePact);
-	pStream->Write(MAX_TEAMS, m_abForcePeace);
+	/// player bitmap - start - Nightinggale
+	pStream->Write(m_bmHasMet);
+	pStream->Write(m_bmAtWar);
+	pStream->Write(m_bmPermanentWarPeace);
+	pStream->Write(m_bmOpenBorders);
+	pStream->Write(m_bmDefensivePact);
+	pStream->Write(m_bmForcePeace);
+	/// player bitmap - end - Nightinggale
 	pStream->Write(GC.getNumFatherInfos(), m_abFatherIgnore);
 	///Tks Med
 	pStream->Write(GC.getNumFatherPointInfos(), m_aiAccumilatedFatherPoints);

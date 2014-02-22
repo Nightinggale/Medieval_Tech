@@ -67,6 +67,9 @@ enum DllExport YieldTypes
 
 	// Setup for which yields to have certain hardcoded functions
 	YIELD_FROM_ANIMALS = YIELD_GRAIN,
+	YIELD_DEFAULT_ARMOR_TYPE = YIELD_SCALE_ARMOR,
+
+	NUM_CARGO_YIELD_TYPES = YIELD_HAMMERS,
 };
 
 static inline bool YieldGroup_AI_Sell(YieldTypes eYield)

@@ -6,11 +6,11 @@
 <!-- Basic Infos -->
 <Civ4UnitCombatInfos xmlns="x-schema:CIV4BasicInfoSchema.xml">
 	<UnitCombatInfos>
-    <UnitCombatInfo>
-      <Type>UNITCOMBAT_ANIMAL</Type>
-      <Description>Animal</Description>
-      <Button>,Art/Interface/Buttons/Promotions/Promotions_Atlas.dds,1,2</Button>
-    </UnitCombatInfo>
+		<UnitCombatInfo>
+			<Type>UNITCOMBAT_ANIMAL</Type>
+			<Description>Animal</Description>
+			<Button>,Art/Interface/Buttons/Promotions/Promotions_Atlas.dds,1,2</Button>
+		</UnitCombatInfo>
 		<UnitCombatInfo>
 			<Type>UNITCOMBAT_MOUNTED</Type>
 			<Description>TXT_KEY_UNITCOMBAT_MOUNTED</Description>
@@ -31,67 +31,67 @@
 			<Description>TXT_KEY_UNITCOMBAT_GUN</Description>
 			<Button>,Art/Interface/Buttons/Promotions/Promotions_Atlas.dds,2,5</Button>
 		</UnitCombatInfo>
-    <UnitCombatInfo>
-      <Type>UNITCOMBAT_HUNTER</Type>
-      <Description>Huntsman</Description>
-      <Button>,Art/Interface/Buttons/Promotions/Promotions_Atlas.dds,1,2</Button>
-    </UnitCombatInfo>
+		<UnitCombatInfo>
+			<Type>UNITCOMBAT_HUNTER</Type>
+			<Description>Huntsman</Description>
+			<Button>,Art/Interface/Buttons/Promotions/Promotions_Atlas.dds,1,2</Button>
+		</UnitCombatInfo>
 		<UnitCombatInfo>
 			<Type>UNITCOMBAT_NAVAL</Type>
 			<Description>TXT_KEY_UNITCOMBAT_NAVAL</Description>
 			<Button>,Art/Interface/Buttons/Promotions/Promotions_Atlas.dds,4,7</Button>
 		</UnitCombatInfo>
-    <UnitCombatInfo>
-      <Type>UNITARMOR_LEATHER</Type>
-      <Description>Leather Armor</Description>
-	  <Civilopedia>TXT_KEY_PROFESSION_LEATHER_ARMOR_TEXT</Civilopedia>
-      <Button>,Art/Interface/Buttons/Promotions/Promotions_Atlas.dds,4,7</Button>
-    </UnitCombatInfo>
-    <UnitCombatInfo>
-      <Type>UNITARMOR_SCALE</Type>
-      <Description>Scale Armor</Description>
-	  <Civilopedia>TXT_KEY_PROFESSION_SCALE_ARMOR_TEXT</Civilopedia>
-      <Button>,Art/Interface/Buttons/Promotions/Promotions_Atlas.dds,4,7</Button>
-    </UnitCombatInfo>
-    <UnitCombatInfo>
-      <Type>UNITARMOR_MAIL</Type>
-      <Description>Mail Armor</Description>
-  	  <Civilopedia>TXT_KEY_PROFESSION_MAIL_ARMOR_TEXT</Civilopedia>
-      <Button>,Art/Interface/Buttons/Promotions/Promotions_Atlas.dds,4,7</Button>
-    </UnitCombatInfo>
-    <UnitCombatInfo>
-      <Type>UNITARMOR_PLATE</Type>
-      <Description>Plate Armor</Description>
-	  <Civilopedia>TXT_KEY_PROFESSION_PLATE_ARMOR_TEXT</Civilopedia>
-      <Button>,Art/Interface/Buttons/Promotions/Promotions_Atlas.dds,4,7</Button>
-    </UnitCombatInfo>
-    <UnitCombatInfo>
-      <Type>UNITTACTIC_PARRY</Type>
-      <Description>Parry</Description>
-	  <Civilopedia>TXT_KEY_PROFESSION_UNITTACTIC_PARRY_TEXT</Civilopedia>
-      <Button>,Art/Interface/Buttons/Promotions/Promotions_Atlas.dds,4,7</Button>
-    </UnitCombatInfo>
-    <UnitCombatInfo>
-      <Type>UNITARMOR_SHIELD</Type>
-      <Description>Block</Description>
-	  <Civilopedia>TXT_KEY_PROFESSION_UNITARMOR_SHIELD_TEXT</Civilopedia>
-      <Button>,Art/Interface/Buttons/Promotions/Promotions_Atlas.dds,4,7</Button>
-    </UnitCombatInfo>
-    <UnitCombatInfo>
-      <Type>UNITWEAPON_BLUNT</Type>
-      <Description>Blunt Weapon</Description>
-	  <Civilopedia>TXT_KEY_PROFESSION_UNITWEAPON_BLUNT_TEXT</Civilopedia>
-      <Button>,Art/Interface/Buttons/Promotions/Promotions_Atlas.dds,4,7</Button>
-    </UnitCombatInfo>
-    <UnitCombatInfo>
-      <Type>NONECOMBAT_PEDLER</Type>
-      <Description>Tradesmen</Description>
-      <Button>,Art/Interface/Buttons/Promotions/Promotions_Atlas.dds,3,7</Button>
-    </UnitCombatInfo>
-    <UnitCombatInfo>
-      <Type>NONECOMBAT_TREASURE</Type>
-      <Description>Treasure</Description>
-      <Button>,Art/Interface/Buttons/Promotions/Promotions_Atlas.dds,4,7</Button>
-    </UnitCombatInfo>
+		<UnitCombatInfo>
+			<Type>UNITARMOR_LEATHER</Type>
+			<Description>Leather Armor</Description>
+			<Civilopedia>TXT_KEY_PROFESSION_LEATHER_ARMOR_TEXT</Civilopedia>
+			<Button>,Art/Interface/Buttons/Promotions/Promotions_Atlas.dds,4,7</Button>
+		</UnitCombatInfo>
+		<UnitCombatInfo>
+			<Type>UNITARMOR_SCALE</Type>
+			<Description>Scale Armor</Description>
+			<Civilopedia>TXT_KEY_PROFESSION_SCALE_ARMOR_TEXT</Civilopedia>
+			<Button>,Art/Interface/Buttons/Promotions/Promotions_Atlas.dds,4,7</Button>
+		</UnitCombatInfo>
+		<UnitCombatInfo>
+			<Type>UNITARMOR_MAIL</Type>
+			<Description>Mail Armor</Description>
+			<Civilopedia>TXT_KEY_PROFESSION_MAIL_ARMOR_TEXT</Civilopedia>
+			<Button>,Art/Interface/Buttons/Promotions/Promotions_Atlas.dds,4,7</Button>
+		</UnitCombatInfo>
+		<UnitCombatInfo>
+			<Type>UNITARMOR_PLATE</Type>
+			<Description>Plate Armor</Description>
+			<Civilopedia>TXT_KEY_PROFESSION_PLATE_ARMOR_TEXT</Civilopedia>
+			<Button>,Art/Interface/Buttons/Promotions/Promotions_Atlas.dds,4,7</Button>
+		</UnitCombatInfo>
+		<UnitCombatInfo>
+			<Type>UNITTACTIC_PARRY</Type>
+			<Description>Parry</Description>
+			<Civilopedia>TXT_KEY_PROFESSION_UNITTACTIC_PARRY_TEXT</Civilopedia>
+			<Button>,Art/Interface/Buttons/Promotions/Promotions_Atlas.dds,4,7</Button>
+		</UnitCombatInfo>
+		<UnitCombatInfo>
+			<Type>UNITARMOR_SHIELD</Type>
+			<Description>Block</Description>
+			<Civilopedia>TXT_KEY_PROFESSION_UNITARMOR_SHIELD_TEXT</Civilopedia>
+			<Button>,Art/Interface/Buttons/Promotions/Promotions_Atlas.dds,4,7</Button>
+		</UnitCombatInfo>
+		<UnitCombatInfo>
+			<Type>UNITWEAPON_BLUNT</Type>
+			<Description>Blunt Weapon</Description>
+			<Civilopedia>TXT_KEY_PROFESSION_UNITWEAPON_BLUNT_TEXT</Civilopedia>
+			<Button>,Art/Interface/Buttons/Promotions/Promotions_Atlas.dds,4,7</Button>
+		</UnitCombatInfo>
+		<UnitCombatInfo>
+			<Type>NONECOMBAT_PEDLER</Type>
+			<Description>Tradesmen</Description>
+			<Button>,Art/Interface/Buttons/Promotions/Promotions_Atlas.dds,3,7</Button>
+		</UnitCombatInfo>
+		<UnitCombatInfo>
+			<Type>NONECOMBAT_TREASURE</Type>
+			<Description>Treasure</Description>
+			<Button>,Art/Interface/Buttons/Promotions/Promotions_Atlas.dds,4,7</Button>
+		</UnitCombatInfo>
 	</UnitCombatInfos>
 </Civ4UnitCombatInfos>

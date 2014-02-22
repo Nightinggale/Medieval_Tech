@@ -48,27 +48,60 @@
 		<element type="iSeaLevelChange"/>
 	</ElementType>
 	<ElementType name="bStart" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bAIRoute" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bRequiresTech" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bNoEuropePlot" content="textOnly" dt:type="boolean"/>
 	<ElementType name="iTripLength" content="textOnly" dt:type="int"/>
 	<ElementType name="iMinLandDistance" content="textOnly" dt:type="int"/>
+	<ElementType name="iMaxLandCoverage" content="textOnly" dt:type="int"/>
 	<ElementType name="iWidthPercent" content="textOnly" dt:type="int"/>
 	<ElementType name="Direction" content="textOnly"/>
-  <ElementType name="bValue" content="textOnly" dt:type="boolean"/>
-  <ElementType name="TradeScreenType" content="eltOnly">
-    <element type="TradeScreen"/>
-    <element type="bValue"/>
-  </ElementType>
-  <ElementType name="TradeScreenTypes" content="eltOnly">
-    <element type="TradeScreenType" minOccurs="0" maxOccurs="*"/>
-  </ElementType>
+	<ElementType name="PythonTradeScreen" content="textOnly"/>
+	<ElementType name="bValue" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bLeaveFromBarbarianCity" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bLeaveFromForeignCity" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bLeaveFromOwnedCity" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bLeaveFromAnyCity" content="textOnly" dt:type="boolean"/>
+	<ElementType name="CityRequiredBuildingClass" content="textOnly"/>
+	<ElementType name="DefaultColor" content="textOnly"/>
+	<ElementType name="DomainType" content="eltOnly">
+		<element type="Domain"/>
+		<element type="bValue"/>
+	</ElementType>
+	<ElementType name="DomainTypes" content="eltOnly">
+		<element type="DomainType" minOccurs="1" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="DirectionArray" content="eltOnly">
+		<element type="Direction"/>
+		<element type="bValue"/>
+	</ElementType>
+	<ElementType name="DirectionArrays" content="eltOnly">
+		<element type="DirectionArray" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
 	<ElementType name="EuropeInfo" content="eltOnly">
 		<element type="Type"/>
 		<element type="Description"/>
+		<element type="Strategy"/>
+		<element type="Help"/>
 		<element type="Direction"/>
+		<element type="DirectionArrays" minOccurs="0"/>
 		<element type="bStart"/>
+		<element type="bAIRoute" minOccurs="0"/>
 		<element type="iTripLength"/>
 		<element type="iMinLandDistance"/>
+		<element type="iMaxLandCoverage" minOccurs="0"/>
 		<element type="iWidthPercent"/>
-    <element type="TradeScreenTypes" minOccurs="0"/>
+		<element type="bRequiresTech" minOccurs="0"/>
+		<element type="bNoEuropePlot" minOccurs="0"/>
+		<element type="bLeaveFromBarbarianCity" minOccurs="0"/>
+		<element type="bLeaveFromForeignCity" minOccurs="0"/>
+		<element type="bLeaveFromOwnedCity" minOccurs="0"/>
+		<element type="bLeaveFromAnyCity" minOccurs="0"/>
+		<element type="CityRequiredBuildingClass" minOccurs="0"/>
+		<element type="DomainTypes" minOccurs="0"/>
+		<element type="PythonTradeScreen"/>
+		<element type="DefaultColor" minOccurs="0"/>
+		<element type="Button"/>
 	</ElementType>
 	<ElementType name="WorldInfo" content="eltOnly">
 		<element type="Type"/>
@@ -131,7 +164,7 @@
 	<ElementType name="iDamagePrereq" content="textOnly" dt:type="int"/>
 	<ElementType name="bBad" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bWar" content="textOnly" dt:type="boolean"/>
-  <ElementType name="UnitClass" content="textOnly"/>
+	<ElementType name="UnitClass" content="textOnly"/>
 	<ElementType name="TeachUnitClass" content="textOnly"/>
 	<ElementType name="iCityGoodyWeight" content="textOnly" dt:type="int"/>
 	<ElementType name="AnnounceText" content="textOnly"/>
@@ -144,8 +177,8 @@
 	<ElementType name="GoodyWeights" content="eltOnly">
 		<element type="GoodyWeight" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-  <ElementType name="bGoodyTechs" content="textOnly" dt:type="boolean"/>
-  <ElementType name="GoodyInfo" content="eltOnly">
+	<ElementType name="bGoodyTechs" content="textOnly" dt:type="boolean"/>
+	<ElementType name="GoodyInfo" content="eltOnly">
 		<element type="Type"/>
 		<element type="Description"/>
 		<element type="Sound"/>
@@ -166,8 +199,8 @@
 		<element type="TeachUnitClass"/>
 		<element type="iCityGoodyWeight"/>
 		<element type="GoodyWeights"/>
-    <element type="bGoodyTechs"  minOccurs="0"/>
-  </ElementType>
+		<element type="bGoodyTechs"  minOccurs="0"/>
+	</ElementType>
 	<ElementType name="GoodyInfos" content="eltOnly">
 		<element type="GoodyInfo" maxOccurs="*"/>
 	</ElementType>
@@ -256,7 +289,7 @@
 		<element type="HandicapInfo" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="bDefault" content="textOnly" dt:type="boolean"/>
-  <ElementType name="bIndustrialization" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bIndustrialization" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bTargetScore" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bEndEurope" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bEndScore" content="textOnly" dt:type="boolean"/>
@@ -275,7 +308,7 @@
 		<element type="Description"/>
 		<element type="Civilopedia"/>
 		<element type="bDefault"/>
-    <element type="bIndustrialization"/>
+		<element type="bIndustrialization"/>
 		<element type="bTargetScore"/>
 		<element type="bEndEurope"/>
 		<element type="bEndScore"/>
@@ -332,7 +365,7 @@
 		<element type="CivicOptionInfo" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="iAIWeight" content="textOnly" dt:type="int"/>
-  <ElementType name="CivicPortrait" content="textOnly"/>
+	<ElementType name="CivicPortrait" content="textOnly"/>
 	<ElementType name="iGreatGeneralRateModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iDomesticGreatGeneralRateModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iFreeExperience" content="textOnly" dt:type="int"/>
@@ -405,153 +438,154 @@
 		<element type="ImprovementYieldChange" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="ImmigrationConversion" content="textOnly"/>
-  <ElementType name="InventionCategory" content="textOnly"/>
-  <ElementType name="iX_Location" content="textOnly" dt:type="int"/>
-  <ElementType name="iY_Location" content="textOnly" dt:type="int"/>
-  <ElementType name="RequiredYieldType" content="textOnly"/>
-  <ElementType name="iYieldCost" content="textOnly" dt:type="int"/>
-  <ElementType name="RequiredYield" content="eltOnly">
-    <element type="RequiredYieldType"/>
-    <element type="iYieldCost"/>
-  </ElementType>
-  <ElementType name="RequiredYields" content="eltOnly">
-    <element type="RequiredYield" minOccurs="0" maxOccurs="*"/>
-  </ElementType>
-  <ElementType name="NeededYields" content="eltOnly">
-    <element type="YieldType"/>
-    <element type="iChange"/>
-  </ElementType>
-  <ElementType name="IndustrializationVictory" content="eltOnly">
-    <element type="NeededYields" minOccurs="0" maxOccurs="*"/>
-  </ElementType>
-  <ElementType name="iValue" content="textOnly" dt:type="int"/>
-  <ElementType name="RequiredFatherPoint" content="eltOnly">
-    <element type="FatherPointType"/>
-    <element type="iValue"/>
-  </ElementType>
-  <ElementType name="RequiredFatherPoints" content="eltOnly">
-    <element type="RequiredFatherPoint" minOccurs="0" maxOccurs="*"/>
-  </ElementType>
-  <ElementType name="RequiredUnitType" content="textOnly"/>
-  <ElementType name="RequiredInvention" content="textOnly"/>
-  <ElementType name="RequiredInvention2" content="textOnly"/>
-  <ElementType name="RequiredInventionOr" content="textOnly"/>
-  <ElementType name="iFreeHurriedImmigrants" content="textOnly" dt:type="int"/>
-  <ElementType name="iCostToResearch" content="textOnly" dt:type="int"/>
-  <ElementType name="bFreeUnitsAreNonePopulation" content="textOnly" dt:type="boolean"/>
-  <ElementType name="bFreeUnitsNotAllCities" content="textOnly" dt:type="boolean"/>
-  <ElementType name="AllowsTrait" content="textOnly"/>
-  <ElementType name="ConvertsUnitsTo" content="textOnly"/>
-  <ElementType name="NewDefaultUnitClass" content="textOnly"/>
-  <ElementType name="ConvertsUnitsFrom" content="textOnly"/>
-  <ElementType name="DisallowsTech" content="textOnly"/>
-  <ElementType name="FreeUnitFirstToResearch" content="textOnly"/>
-  <ElementType name="ConvertsResearchYield" content="textOnly"/>
-  <ElementType name="AllowsYield" content="eltOnly">
-    <element type="YieldType"/>
-    <element type="iChange"/>
-  </ElementType>
-  <ElementType name="AllowsYields" content="eltOnly">
-    <element type="AllowsYield" minOccurs="0" maxOccurs="*"/>
-  </ElementType>
-  <ElementType name="AllowsBuildingType" content="eltOnly">
-    <element type="BuildingType"/>
-    <element type="iChange"/>
-  </ElementType>
-  <ElementType name="AllowsBuildingTypes" content="eltOnly">
-    <element type="AllowsBuildingType" minOccurs="0" maxOccurs="*"/>
-  </ElementType>
-  <ElementType name="AllowsUnit" content="textOnly"/>
-  <ElementType name="AllowsUnitClass" content="eltOnly">
-    <element type="AllowsUnit"/>
-    <element type="iChange"/>
-  </ElementType>
-  <ElementType name="AllowsUnitClasses" content="eltOnly">
-    <element type="AllowsUnitClass" minOccurs="0" maxOccurs="*"/>
-  </ElementType>
-  <ElementType name="PromotionType" content="textOnly"/>
-  <ElementType name="AllowsPromotion" content="eltOnly">
-    <element type="PromotionType"/>
-    <element type="iChange"/>
-  </ElementType>
-  <ElementType name="AllowsPromotions" content="eltOnly">
-    <element type="AllowsPromotion" minOccurs="0" maxOccurs="*"/>
-  </ElementType>
-  <ElementType name="AllowsProfession" content="eltOnly">
-    <element type="ProfessionType"/>
-    <element type="iChange"/>
-  </ElementType>
-  <ElementType name="AllowsProfessions" content="eltOnly">
-    <element type="AllowsProfession" minOccurs="0" maxOccurs="*"/>
-  </ElementType>
-  <ElementType name="BonusType" content="textOnly"/>
-  <ElementType name="AllowsBonus" content="eltOnly">
-    <element type="BonusType"/>
-    <element type="iChange"/>
-  </ElementType>
-  <ElementType name="AllowsBonuses" content="eltOnly">
-    <element type="AllowsBonus" minOccurs="0" maxOccurs="*"/>
-  </ElementType>
-  <ElementType name="TerrainType" content="textOnly"/>
-  <ElementType name="AllowsTerrains" content="eltOnly">
-    <element type="TerrainType"/>
-    <element type="iChange"/>
-  </ElementType>
-  <ElementType name="AllowsBuildTypesTerrain" content="eltOnly">
-    <element type="AllowsTerrains" minOccurs="0" maxOccurs="*"/>
-  </ElementType>
-  <ElementType name="BuildType" content="textOnly"/>
-  <ElementType name="ModBuildType" content="eltOnly">
-    <element type="BuildType"/>
-    <element type="iChange"/>
-  </ElementType>
-  <ElementType name="AllowsBuildTypes" content="eltOnly">
-    <element type="ModBuildType" minOccurs="0" maxOccurs="*"/>
-  </ElementType>
-  <ElementType name="FasterBuildTypes" content="eltOnly">
-    <element type="ModBuildType" minOccurs="0" maxOccurs="*"/>
-  </ElementType>
-  <ElementType name="FasterBuildFeatureTypes" content="eltOnly">
-    <element type="ModBuildType" minOccurs="0" maxOccurs="*"/>
-  </ElementType>
-  <ElementType name="MaxYieldModifier" content="eltOnly">
-    <element type="YieldType"/>
-    <element type="iChange"/>
-  </ElementType>
-  <ElementType name="MaxYieldModifiers" content="eltOnly">
-    <element type="MaxYieldModifier" minOccurs="0"/>
-  </ElementType>
-  <ElementType name="RouteType" content="textOnly"/>
-  <ElementType name="RouteTypes" content="eltOnly">
-    <element type="RouteType"/>
-    <element type="iChange"/>
-  </ElementType>
-  <ElementType name="RouteMovementMod" content="eltOnly">
-    <element type="RouteTypes" minOccurs="0" maxOccurs="*"/>
-  </ElementType>
-  <ElementType name="AllowsRoutes" content="eltOnly">
-    <element type="RouteTypes" minOccurs="0" maxOccurs="*"/>
-  </ElementType>
-  <ElementType name="bStartConstitution" content="textOnly" dt:type="boolean"/>
-  <ElementType name="bisNoneTradeable" content="textOnly" dt:type="boolean"/>
-  <ElementType name="iCheaperPopulationGrowth" content="textOnly" dt:type="int"/>
-  <ElementType name="iIncreasedEnemyHealRate" content="textOnly" dt:type="int"/>
-  <ElementType name="iCenterPlotFoodBonus" content="textOnly" dt:type="int"/>
-  <ElementType name="iProlificInventorRateChange" content="textOnly" dt:type="int"/>
-  <ElementType name="iGoldBonusForFirstToResearch" content="textOnly" dt:type="int"/>
-  <ElementType name="iGoldBonus" content="textOnly" dt:type="int"/>
-  <ElementType name="iIncreasedImmigrants" content="textOnly" dt:type="int"/>
-  <ElementType name="iFreeTechs" content="textOnly" dt:type="int"/>
-  <ElementType name="iModdersCode1" content="textOnly"/>
-  <ElementType name="iKingTreasureTransportMod" content="textOnly" dt:type="int"/>
-  <ElementType name="iFoundCityType" content="textOnly"/>
-  <ElementType name="iIncreaseCityPopulation" content="textOnly" dt:type="int"/>
-  <ElementType name="iFatherPointModifier" content="textOnly" dt:type="int"/>
-  <ElementType name="bRevolutionEuropeTrade" content="textOnly" dt:type="boolean"/>
+	<ElementType name="InventionCategory" content="textOnly"/>
+	<ElementType name="iX_Location" content="textOnly" dt:type="int"/>
+	<ElementType name="iY_Location" content="textOnly" dt:type="int"/>
+	<ElementType name="RequiredYieldType" content="textOnly"/>
+	<ElementType name="iYieldCost" content="textOnly" dt:type="int"/>
+	<ElementType name="RequiredYield" content="eltOnly">
+		<element type="RequiredYieldType"/>
+		<element type="iYieldCost"/>
+	</ElementType>
+	<ElementType name="RequiredYields" content="eltOnly">
+		<element type="RequiredYield" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="NeededYields" content="eltOnly">
+		<element type="YieldType"/>
+		<element type="iChange"/>
+	</ElementType>
+	<ElementType name="IndustrializationVictory" content="eltOnly">
+		<element type="NeededYields" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="iValue" content="textOnly" dt:type="int"/>
+	<ElementType name="RequiredFatherPoint" content="eltOnly">
+		<element type="FatherPointType"/>
+		<element type="iValue"/>
+	</ElementType>
+	<ElementType name="RequiredFatherPoints" content="eltOnly">
+		<element type="RequiredFatherPoint" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="RequiredUnitType" content="textOnly"/>
+	<ElementType name="RequiredInvention" content="textOnly"/>
+	<ElementType name="RequiredInvention2" content="textOnly"/>
+	<ElementType name="RequiredInventionOr" content="textOnly"/>
+	<ElementType name="iFreeHurriedImmigrants" content="textOnly" dt:type="int"/>
+	<ElementType name="iCostToResearch" content="textOnly" dt:type="int"/>
+	<ElementType name="bFreeUnitsAreNonePopulation" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bFreeUnitsNotAllCities" content="textOnly" dt:type="boolean"/>
+	<ElementType name="AllowsTrait" content="textOnly"/>
+	<ElementType name="AllowsTradeScreen" content="textOnly"/>
+	<ElementType name="ConvertsUnitsTo" content="textOnly"/>
+	<ElementType name="NewDefaultUnitClass" content="textOnly"/>
+	<ElementType name="ConvertsUnitsFrom" content="textOnly"/>
+	<ElementType name="DisallowsTech" content="textOnly"/>
+	<ElementType name="FreeUnitFirstToResearch" content="textOnly"/>
+	<ElementType name="ConvertsResearchYield" content="textOnly"/>
+	<ElementType name="AllowsYield" content="eltOnly">
+		<element type="YieldType"/>
+		<element type="iChange"/>
+	</ElementType>
+	<ElementType name="AllowsYields" content="eltOnly">
+		<element type="AllowsYield" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="AllowsBuildingType" content="eltOnly">
+		<element type="BuildingType"/>
+		<element type="iChange"/>
+	</ElementType>
+	<ElementType name="AllowsBuildingTypes" content="eltOnly">
+		<element type="AllowsBuildingType" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="AllowsUnit" content="textOnly"/>
+	<ElementType name="AllowsUnitClass" content="eltOnly">
+		<element type="AllowsUnit"/>
+		<element type="iChange"/>
+	</ElementType>
+	<ElementType name="AllowsUnitClasses" content="eltOnly">
+		<element type="AllowsUnitClass" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="PromotionType" content="textOnly"/>
+	<ElementType name="AllowsPromotion" content="eltOnly">
+		<element type="PromotionType"/>
+		<element type="iChange"/>
+	</ElementType>
+	<ElementType name="AllowsPromotions" content="eltOnly">
+		<element type="AllowsPromotion" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="AllowsProfession" content="eltOnly">
+		<element type="ProfessionType"/>
+		<element type="iChange"/>
+	</ElementType>
+	<ElementType name="AllowsProfessions" content="eltOnly">
+		<element type="AllowsProfession" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="BonusType" content="textOnly"/>
+	<ElementType name="AllowsBonus" content="eltOnly">
+		<element type="BonusType"/>
+		<element type="iChange"/>
+	</ElementType>
+	<ElementType name="AllowsBonuses" content="eltOnly">
+		<element type="AllowsBonus" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="TerrainType" content="textOnly"/>
+	<ElementType name="AllowsTerrains" content="eltOnly">
+		<element type="TerrainType"/>
+		<element type="iChange"/>
+	</ElementType>
+	<ElementType name="AllowsBuildTypesTerrain" content="eltOnly">
+		<element type="AllowsTerrains" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="BuildType" content="textOnly"/>
+	<ElementType name="ModBuildType" content="eltOnly">
+		<element type="BuildType"/>
+		<element type="iChange"/>
+	</ElementType>
+	<ElementType name="AllowsBuildTypes" content="eltOnly">
+		<element type="ModBuildType" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="FasterBuildTypes" content="eltOnly">
+		<element type="ModBuildType" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="FasterBuildFeatureTypes" content="eltOnly">
+		<element type="ModBuildType" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="MaxYieldModifier" content="eltOnly">
+		<element type="YieldType"/>
+		<element type="iChange"/>
+	</ElementType>
+	<ElementType name="MaxYieldModifiers" content="eltOnly">
+		<element type="MaxYieldModifier" minOccurs="0"/>
+	</ElementType>
+	<ElementType name="RouteType" content="textOnly"/>
+	<ElementType name="RouteTypes" content="eltOnly">
+		<element type="RouteType"/>
+		<element type="iChange"/>
+	</ElementType>
+	<ElementType name="RouteMovementMod" content="eltOnly">
+		<element type="RouteTypes" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="AllowsRoutes" content="eltOnly">
+		<element type="RouteTypes" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="bStartConstitution" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bisNoneTradeable" content="textOnly" dt:type="boolean"/>
+	<ElementType name="iCheaperPopulationGrowth" content="textOnly" dt:type="int"/>
+	<ElementType name="iIncreasedEnemyHealRate" content="textOnly" dt:type="int"/>
+	<ElementType name="iCenterPlotFoodBonus" content="textOnly" dt:type="int"/>
+	<ElementType name="iProlificInventorRateChange" content="textOnly" dt:type="int"/>
+	<ElementType name="iGoldBonusForFirstToResearch" content="textOnly" dt:type="int"/>
+	<ElementType name="iGoldBonus" content="textOnly" dt:type="int"/>
+	<ElementType name="iIncreasedImmigrants" content="textOnly" dt:type="int"/>
+	<ElementType name="iFreeTechs" content="textOnly" dt:type="int"/>
+	<ElementType name="iModdersCode1" content="textOnly"/>
+	<ElementType name="iKingTreasureTransportMod" content="textOnly" dt:type="int"/>
+	<ElementType name="iFoundCityType" content="textOnly"/>
+	<ElementType name="iIncreaseCityPopulation" content="textOnly" dt:type="int"/>
+	<ElementType name="iFatherPointModifier" content="textOnly" dt:type="int"/>
+	<ElementType name="bRevolutionEuropeTrade" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bAllowsMapTrade" content="textOnly" dt:type="boolean"/>
-  <ElementType name="bNoGoodyTech" content="textOnly" dt:type="boolean"/>
-  <ElementType name="bNoArrowinTechScreen" content="textOnly" dt:type="boolean"/>
-  <ElementType name="iNativeAttitudeChange" content="textOnly" dt:type="int"/>
+	<ElementType name="bNoGoodyTech" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bNoArrowinTechScreen" content="textOnly" dt:type="boolean"/>
+	<ElementType name="iNativeAttitudeChange" content="textOnly" dt:type="int"/>
 	<ElementType name="CivicInfo" content="eltOnly">
 		<element type="CivicOptionType"/>
 		<element type="Type"/>
@@ -560,7 +594,7 @@
 		<element type="Strategy"/>
 		<element type="Help" minOccurs="0"/>
 		<element type="Button"/>
-    <element type="CivicPortrait" minOccurs="0"/>
+		<element type="CivicPortrait" minOccurs="0"/>
 		<element type="iAIWeight"/>
 		<element type="iGreatGeneralRateModifier"/>
 		<element type="iDomesticGreatGeneralRateModifier"/>
@@ -580,60 +614,61 @@
 		<element type="SpecialBuildingNotRequireds"/>
 		<element type="ImprovementYieldChanges"/>
 		<element type="FreeUnitClasses"/>
-    <element type="bFreeUnitsAreNonePopulation" minOccurs="0"/>
-    <element type="bFreeUnitsNotAllCities" minOccurs="0"/>
+		<element type="bFreeUnitsAreNonePopulation" minOccurs="0"/>
+		<element type="bFreeUnitsNotAllCities" minOccurs="0"/>
 		<element type="ProfessionCombatChanges"/>
 		<element type="ImmigrationConversion"/>
-    <element type="InventionCategory" minOccurs="0"/>
-    <element type="iX_Location" minOccurs="0"/>
-    <element type="iY_Location" minOccurs="0"/>
-    <element type="RequiredInvention" minOccurs="0"/>
-    <element type="RequiredInvention2" minOccurs="0"/>
-    <element type="RequiredInventionOr" minOccurs="0"/>
-    <element type="RequiredUnitType" minOccurs="0"/>
-    <element type="RequiredYields" minOccurs="0"/>
-    <element type="RequiredFatherPoints" minOccurs="0"/>
-    <element type="iCostToResearch" minOccurs="0"/>
-    <element type="AllowsYields" minOccurs="0"/>
-    <element type="AllowsBuildingTypes" minOccurs="0"/>
-    <element type="AllowsUnitClasses" minOccurs="0"/>
-    <element type="AllowsPromotions" minOccurs="0"/>
-    <element type="AllowsProfessions" minOccurs="0"/>
-    <element type="AllowsBonuses" minOccurs="0"/>
-    <element type="AllowsTrait" minOccurs="0"/>
-    <element type="AllowsBuildTypes" minOccurs="0"/>
-    <element type="AllowsBuildTypesTerrain" minOccurs="0"/>
-    <element type="FasterBuildTypes" minOccurs="0"/>
-    <element type="FasterBuildFeatureTypes" minOccurs="0"/>
-    <element type="ConvertsUnitsFrom" minOccurs="0"/>
-    <element type="ConvertsUnitsTo" minOccurs="0"/>
-    <element type="NewDefaultUnitClass" minOccurs="0"/>
-    <element type="DisallowsTech" minOccurs="0"/>
-    <element type="ConvertsResearchYield" minOccurs="0"/>
-    <element type="RouteMovementMod" minOccurs="0"/>
-    <element type="AllowsRoutes" minOccurs="0"/>
-    <element type="FreeUnitFirstToResearch" minOccurs="0"/>
-    <element type="bStartConstitution" minOccurs="0"/>
-    <element type="bAllowsMapTrade" minOccurs="0"/>
-    <element type="bNoArrowinTechScreen" minOccurs="0"/>
-    <element type="bisNoneTradeable" minOccurs="0"/>
-    <element type="bNoGoodyTech" minOccurs="0"/>
-    <element type="iIncreasedEnemyHealRate" minOccurs="0"/>
-    <element type="iFreeHurriedImmigrants" minOccurs="0"/>
-    <element type="iCheaperPopulationGrowth" minOccurs="0"/>
-    <element type="iCenterPlotFoodBonus" minOccurs="0"/>
-    <element type="iProlificInventorRateChange" minOccurs="0"/>
-    <element type="iGoldBonusForFirstToResearch" minOccurs="0"/>
-    <element type="iGoldBonus" minOccurs="0"/>
-    <element type="iIncreasedImmigrants" minOccurs="0"/>
-    <element type="iFreeTechs" minOccurs="0"/>
-    <element type="iModdersCode1" minOccurs="0"/>
-    <element type="iKingTreasureTransportMod" minOccurs="0"/>
-    <element type="iFoundCityType" minOccurs="0"/>
-    <element type="iIncreaseCityPopulation" minOccurs="0"/>
-    <element type="IndustrializationVictory" minOccurs="0"/>
-    <element type="MaxYieldModifiers" minOccurs="0"/>
-  </ElementType>
+		<element type="InventionCategory" minOccurs="0"/>
+		<element type="iX_Location" minOccurs="0"/>
+		<element type="iY_Location" minOccurs="0"/>
+		<element type="RequiredInvention" minOccurs="0"/>
+		<element type="RequiredInvention2" minOccurs="0"/>
+		<element type="RequiredInventionOr" minOccurs="0"/>
+		<element type="RequiredUnitType" minOccurs="0"/>
+		<element type="RequiredYields" minOccurs="0"/>
+		<element type="RequiredFatherPoints" minOccurs="0"/>
+		<element type="iCostToResearch" minOccurs="0"/>
+		<element type="AllowsYields" minOccurs="0"/>
+		<element type="AllowsBuildingTypes" minOccurs="0"/>
+		<element type="AllowsUnitClasses" minOccurs="0"/>
+		<element type="AllowsPromotions" minOccurs="0"/>
+		<element type="AllowsProfessions" minOccurs="0"/>
+		<element type="AllowsBonuses" minOccurs="0"/>
+		<element type="AllowsTrait" minOccurs="0"/>
+		<element type="AllowsTradeScreen" minOccurs="0"/>
+		<element type="AllowsBuildTypes" minOccurs="0"/>
+		<element type="AllowsBuildTypesTerrain" minOccurs="0"/>
+		<element type="FasterBuildTypes" minOccurs="0"/>
+		<element type="FasterBuildFeatureTypes" minOccurs="0"/>
+		<element type="ConvertsUnitsFrom" minOccurs="0"/>
+		<element type="ConvertsUnitsTo" minOccurs="0"/>
+		<element type="NewDefaultUnitClass" minOccurs="0"/>
+		<element type="DisallowsTech" minOccurs="0"/>
+		<element type="ConvertsResearchYield" minOccurs="0"/>
+		<element type="RouteMovementMod" minOccurs="0"/>
+		<element type="AllowsRoutes" minOccurs="0"/>
+		<element type="FreeUnitFirstToResearch" minOccurs="0"/>
+		<element type="bStartConstitution" minOccurs="0"/>
+		<element type="bAllowsMapTrade" minOccurs="0"/>
+		<element type="bNoArrowinTechScreen" minOccurs="0"/>
+		<element type="bisNoneTradeable" minOccurs="0"/>
+		<element type="bNoGoodyTech" minOccurs="0"/>
+		<element type="iIncreasedEnemyHealRate" minOccurs="0"/>
+		<element type="iFreeHurriedImmigrants" minOccurs="0"/>
+		<element type="iCheaperPopulationGrowth" minOccurs="0"/>
+		<element type="iCenterPlotFoodBonus" minOccurs="0"/>
+		<element type="iProlificInventorRateChange" minOccurs="0"/>
+		<element type="iGoldBonusForFirstToResearch" minOccurs="0"/>
+		<element type="iGoldBonus" minOccurs="0"/>
+		<element type="iIncreasedImmigrants" minOccurs="0"/>
+		<element type="iFreeTechs" minOccurs="0"/>
+		<element type="iModdersCode1" minOccurs="0"/>
+		<element type="iKingTreasureTransportMod" minOccurs="0"/>
+		<element type="iFoundCityType" minOccurs="0"/>
+		<element type="iIncreaseCityPopulation" minOccurs="0"/>
+		<element type="IndustrializationVictory" minOccurs="0"/>
+		<element type="MaxYieldModifiers" minOccurs="0"/>
+	</ElementType>
 	<ElementType name="CivicInfos" content="eltOnly">
 		<element type="CivicInfo" maxOccurs="*"/>
 	</ElementType>
@@ -644,14 +679,15 @@
 	<ElementType name="iGreatGeneralPercent" content="textOnly" dt:type="int"/>
 	<ElementType name="iEventChancePerTurn" content="textOnly" dt:type="int"/>
 	<ElementType name="iRevolutionTurns" content="textOnly" dt:type="int"/>
-  <ElementType name="TradeScreen" content="textOnly"/>
-  <ElementType name="TradeRouteTripLength" content="eltOnly">
-    <element type="TradeScreen"/>
-    <element type="iTripLength"/>
-  </ElementType>
-  <ElementType name="TradeRouteTripLengths" content="eltOnly">
-    <element type="TradeRouteTripLength" minOccurs="0" maxOccurs="*"/>
-  </ElementType>
+	<ElementType name="Domain" content="textOnly"/>
+	<ElementType name="TradeScreen" content="textOnly"/>
+	<ElementType name="TradeRouteTripLength" content="eltOnly">
+		<element type="TradeScreen"/>
+		<element type="iTripLength"/>
+	</ElementType>
+	<ElementType name="TradeRouteTripLengths" content="eltOnly">
+		<element type="TradeRouteTripLength" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
 	<ElementType name="GameSpeedInfo" content="eltOnly">
 		<element type="Type"/>
 		<element type="Description"/>
@@ -664,7 +700,7 @@
 		<element type="iGreatGeneralPercent"/>
 		<element type="iRevolutionTurns"/>
 		<element type="GameTurnInfos"/>
-    <element type="TradeRouteTripLengths" minOccurs="0"/>
+		<element type="TradeRouteTripLengths" minOccurs="0"/>
 	</ElementType>
 	<ElementType name="GameSpeedInfos" content="eltOnly">
 		<element type="GameSpeedInfo" maxOccurs="*"/>
@@ -898,7 +934,7 @@
 		<element type="FatherPointCost" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="Trait" content="textOnly"/>
-  <ElementType name="FreeCivic" content="textOnly" dt:type="int"/>
+	<ElementType name="FreeCivic" content="textOnly" dt:type="int"/>
 	<ElementType name="iModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="FreeUnit" content="eltOnly">
 		<element type="UnitClass"/>
@@ -926,7 +962,7 @@
 		<element type="FreeUnits"/>
 		<element type="FatherPointCosts"/>
 		<element type="Trait"/>
-    <element type="FreeCivic" minOccurs="0"/>
+		<element type="FreeCivic" minOccurs="0"/>
 		<element type="Quote"/>
 		<element type="Sound"/>
 		<element type="SoundMP"/>
@@ -964,10 +1000,10 @@
 	<ElementType name="YieldPoints" content="eltOnly">
 		<element type="YieldPoint" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-  <ElementType name="PreInvention" content="textOnly"/>
-  <ElementType name="PreBuilding" content="textOnly"/>
-  <ElementType name="YieldProduced" content="textOnly"/>
-  <ElementType name="ExpertProfessionBonus" content="textOnly"/>
+	<ElementType name="PreInvention" content="textOnly"/>
+	<ElementType name="PreBuilding" content="textOnly"/>
+	<ElementType name="YieldProduced" content="textOnly"/>
+	<ElementType name="ExpertProfessionBonus" content="textOnly"/>
 	<ElementType name="FatherPointInfo" content="eltOnly">
 		<element type="Type"/>
 		<element type="Description"/>
@@ -987,10 +1023,10 @@
 		<element type="BuildingPoints"/>
 		<element type="YieldPoints"/>
 		<element type="iProductionConversionPoints"/>
-    <element type="PreInvention" minOccurs="0"/>
-    <element type="PreBuilding" minOccurs="0"/>
-    <element type="YieldProduced" minOccurs="0"/>
-    <element type="ExpertProfessionBonus" minOccurs="0"/>
+		<element type="PreInvention" minOccurs="0"/>
+		<element type="PreBuilding" minOccurs="0"/>
+		<element type="YieldProduced" minOccurs="0"/>
+		<element type="ExpertProfessionBonus" minOccurs="0"/>
 	</ElementType>
 	<ElementType name="FatherPointInfos" content="eltOnly">
 		<element type="FatherPointInfo" minOccurs="0" maxOccurs="*"/>

@@ -54,8 +54,8 @@
 		<ContactType>CONTACT_PEACE_TREATY</ContactType>
 		<ContactType>CONTACT_TRADE_MAP</ContactType>
 		<ContactType>CONTACT_YIELD_GIFT</ContactType>
-    <ContactType>CONTACT_TRADE_IDEAS</ContactType>
-    <ContactType>CONTACT_TRADE_RESEARCH</ContactType>
+		<ContactType>CONTACT_TRADE_IDEAS</ContactType>
+		<ContactType>CONTACT_TRADE_RESEARCH</ContactType>
 	</ContactTypes>
 	<DiplomacyPowerTypes>
 		<!--Changes must be reflected in CvEnums.h-->
@@ -70,58 +70,58 @@
 		<AutomateType>AUTOMATE_EXPLORE</AutomateType>
 		<AutomateType>AUTOMATE_SAIL</AutomateType>
     <!--TKs Changes must be reflected in CvEnums.h-->
-    <AutomateType>AUTOMATE_HUNT</AutomateType>
-    <AutomateType>AUTOMATE_TRAVEL_FAIR</AutomateType>
-    <AutomateType>AUTOMATE_TRAVEL_SILK_ROAD</AutomateType>
-    <AutomateType>AUTOMATE_SAIL_SPICE_ROUTE</AutomateType>
+		<AutomateType>AUTOMATE_HUNT</AutomateType>
+		<AutomateType>AUTOMATE_TRAVEL_FAIR</AutomateType>
+		<AutomateType>AUTOMATE_TRAVEL_SILK_ROAD</AutomateType>
+		<AutomateType>AUTOMATE_SAIL_SPICE_ROUTE</AutomateType>
 		<AutomateType>AUTOMATE_TRANSPORT_CITY</AutomateType>
 		<AutomateType>AUTOMATE_TRANSPORT_FULL</AutomateType>
-    <AutomateType>AUTOMATE_RETURN_HOME</AutomateType>
-    <AutomateType>AUTOMATE_IMMIGRATION</AutomateType>
+		<AutomateType>AUTOMATE_RETURN_HOME</AutomateType>
+		<AutomateType>AUTOMATE_IMMIGRATION</AutomateType>
 		<AutomateType>AUTOMATE_FULL</AutomateType>
 	</AutomateTypes>
-  <ModCodeTypes>
-    <ModCodeType>NO_MOD_CODE</ModCodeType>
-    <ModCodeType>MODER_CODE_FASTER_CHOP_TREES</ModCodeType>
-    <ModCodeType>MODER_CODE_SPICE_ROUTE</ModCodeType>
-    <ModCodeType>MODER_CODE_SILK_ROAD_ROUTE</ModCodeType>
-    <ModCodeType>MODER_CODE_TRADING_POST</ModCodeType>
-    <ModCodeType>MODER_CODE_ONLY_NONE_NATIVES</ModCodeType>
-    <ModCodeType>MODER_CODE_NATIVES_ONLY</ModCodeType>
-    <ModCodeType>MODER_CODE_ANYONE</ModCodeType>
-    <ModCodeType>MODER_CODE_NATIVES_VIKING_AGE</ModCodeType>
-    <ModCodeType>MODER_CODE_ALLOWS_TRADE_FAIR</ModCodeType>
-    <ModCodeType>MODER_CODE_CANNOT_WORK_BUILDINGS</ModCodeType>
-    <ModCodeType>MODER_CODE_NONE_MILITARY</ModCodeType>
-    <ModCodeType>MODER_CODE_SQUIRE</ModCodeType>
-    <ModCodeType>MODER_CODE_CRAFTMEN_NOBLES</ModCodeType>
-    <ModCodeType>MODER_CODE_AI_ONLY</ModCodeType>
-    <ModCodeType>MODER_CODE_CANNOT_LEARN_NATIVE</ModCodeType>
-  </ModCodeTypes>
-  <MedCityTypes>
-    <MedCityType>CITYTYPE_COMMERCE</MedCityType>
-    <MedCityType>CITYTYPE_MONASTERY</MedCityType>
-    <MedCityType>CITYTYPE_OUTPOST</MedCityType>
-    <MedCityType>CITYTYPE_BAILEY</MedCityType>
-    <MedCityType>CITYTYPE_CASTLE</MedCityType>
-    <MedCityType>CITYTYPE_MILITARY</MedCityType>
-    <MedCityType>CITYTYPE_NONE_MILITARY</MedCityType>
-    <MedCityType>CITYTYPE_NONE_MONASTERY</MedCityType>
-  </MedCityTypes>
-  <TradeScreenTypes>
-    <TradeScreenType>TRADE_SCREEN_MOTHERLAND</TradeScreenType>
-    <TradeScreenType>TRADE_SCREEN_TRADE_FAIR</TradeScreenType>
-    <TradeScreenType>TRADE_SCREEN_SPICE_ROUTE</TradeScreenType>
-    <TradeScreenType>TRADE_SCREEN_SILK_ROAD</TradeScreenType>
-    <TradeScreenType>TRADE_SCREEN_EUROPE</TradeScreenType>
-  </TradeScreenTypes>
-  <CensureTypes>
-    <CensureType>CENSURE_EXCOMMUNICATION</CensureType>
-    <CensureType>CENSURE_INTERDICT</CensureType>
-    <CensureType>TRADE_SCREEN_SPICE_ROUTE</CensureType>
-    <CensureType>CENSURE_ANATHEMA</CensureType>
-    <CensureType>CENSURE_CRUSADE</CensureType>
-  </CensureTypes>
+	<ModCodeTypes>
+		<ModCodeType>NO_MOD_CODE</ModCodeType>
+		<ModCodeType>MODER_CODE_FASTER_CHOP_TREES</ModCodeType>
+		<ModCodeType>MODER_CODE_SPICE_ROUTE</ModCodeType>
+		<ModCodeType>MODER_CODE_SILK_ROAD_ROUTE</ModCodeType>
+		<ModCodeType>MODER_CODE_TRADING_POST</ModCodeType>
+		<ModCodeType>MODER_CODE_ONLY_NONE_NATIVES</ModCodeType>
+		<ModCodeType>MODER_CODE_NATIVES_ONLY</ModCodeType>
+		<ModCodeType>MODER_CODE_ANYONE</ModCodeType>
+		<ModCodeType>MODER_CODE_NATIVES_VIKING_AGE</ModCodeType>
+		<ModCodeType>MODER_CODE_ALLOWS_TRADE_FAIR</ModCodeType>
+		<ModCodeType>MODER_CODE_CANNOT_WORK_BUILDINGS</ModCodeType>
+		<ModCodeType>MODER_CODE_NONE_MILITARY</ModCodeType>
+		<ModCodeType>MODER_CODE_SQUIRE</ModCodeType>
+		<ModCodeType>MODER_CODE_CRAFTMEN_NOBLES</ModCodeType>
+		<ModCodeType>MODER_CODE_AI_ONLY</ModCodeType>
+		<ModCodeType>MODER_CODE_CANNOT_LEARN_NATIVE</ModCodeType>
+	</ModCodeTypes>
+	<MedCityTypes>
+		<MedCityType>CITYTYPE_COMMERCE</MedCityType>
+		<MedCityType>CITYTYPE_MONASTERY</MedCityType>
+		<MedCityType>CITYTYPE_OUTPOST</MedCityType>
+		<MedCityType>CITYTYPE_BAILEY</MedCityType>
+		<MedCityType>CITYTYPE_CASTLE</MedCityType>
+		<MedCityType>CITYTYPE_MILITARY</MedCityType>
+		<MedCityType>CITYTYPE_NONE_MILITARY</MedCityType>
+		<MedCityType>CITYTYPE_NONE_MONASTERY</MedCityType>
+	</MedCityTypes>
+	<TradeScreenTypes>
+		<TradeScreenType>TRADE_SCREEN_MOTHERLAND</TradeScreenType>
+		<TradeScreenType>TRADE_SCREEN_TRADE_FAIR</TradeScreenType>
+		<TradeScreenType>TRADE_SCREEN_SPICE_ROUTE</TradeScreenType>
+		<TradeScreenType>TRADE_SCREEN_SILK_ROAD</TradeScreenType>
+		<TradeScreenType>TRADE_SCREEN_EUROPE</TradeScreenType>
+	</TradeScreenTypes>
+	<CensureTypes>
+		<CensureType>CENSURE_EXCOMMUNICATION</CensureType>
+		<CensureType>CENSURE_INTERDICT</CensureType>
+		<CensureType>TRADE_SCREEN_SPICE_ROUTE</CensureType>
+		<CensureType>CENSURE_ANATHEMA</CensureType>
+		<CensureType>CENSURE_CRUSADE</CensureType>
+	</CensureTypes>
   <!--TKe-->
 	<DirectionTypes>
 		<!--Changes must be reflected in CvEnums.h-->

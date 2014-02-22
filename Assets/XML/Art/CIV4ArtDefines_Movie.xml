@@ -6,22 +6,22 @@
 <!-- Movie art path information -->
 <Civ4ArtDefines xmlns="x-schema:CIV4ArtDefinesSchema.xml">
 	<MovieArtInfos>
-    <MovieArtInfo>
-      <Type>ART_DEF_MOVIE_TRADE_LEAGUE</Type>
-      <Path>Art/Movies/tradeleague.bik</Path>
-    </MovieArtInfo>
-    <MovieArtInfo>
-      <Type>ART_DEF_MOVIE_TRADE_FAIR</Type>
-      <Path>Art/Movies/tradefair.bik</Path>
-    </MovieArtInfo>
-    <MovieArtInfo>
-      <Type>ART_DEF_MOVIE_SPICE_ROUTE</Type>
-      <Path>Art/Movies/spiceroute.bik</Path>
-    </MovieArtInfo>
-    <MovieArtInfo>
-      <Type>ART_DEF_MOVIE_SILK_ROAD</Type>
-      <Path>Art/Movies/silkroad.bik</Path>
-    </MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_TRADE_LEAGUE</Type>
+			<Path>Art/Movies/tradeleague.bik</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_TRADE_FAIR</Type>
+			<Path>Art/Movies/tradefair.bik</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_SPICE_ROUTE</Type>
+			<Path>Art/Movies/spiceroute.bik</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_SILK_ROAD</Type>
+			<Path>Art/Movies/silkroad.bik</Path>
+		</MovieArtInfo>
 		<MovieArtInfo>
 			<Type>ART_DEF_MOVIE_INTRO</Type>
 			<Path>Art/Movies/Intro.bik</Path>

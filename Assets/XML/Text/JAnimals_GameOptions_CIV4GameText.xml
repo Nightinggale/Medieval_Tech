@@ -9,7 +9,6 @@
 		<Italian></Italian>
 		<Spanish></Spanish>
 	</TEXT>
-
 	<TEXT>
 		<Tag>TXT_KEY_GAME_OPTION_NO_WILD_LAND_ANIMALS</Tag>
 		<English>No Wild Land Animals</English>
@@ -26,7 +25,6 @@
 		<Italian>Wild Land Animals will not be spawned</Italian>
 		<Spanish>Wild Land Animals will not be spawned</Spanish>
 	</TEXT>
-
 	<TEXT>
 		<Tag>TXT_KEY_GAME_OPTION_NO_WILD_SEA_ANIMALS</Tag>
 		<English>No Wild Sea Animals</English>
@@ -43,5 +41,4 @@
 		<Italian>Wild Sea Animals will not be spawned</Italian>
 		<Spanish>Wild Sea Animals will not be spawned</Spanish>
 	</TEXT>
-
 </Civ4GameText>

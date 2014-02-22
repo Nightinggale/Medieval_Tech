@@ -101,12 +101,12 @@ public:
 	void setCurrentTradeResearch(CivicTypes eCurrentResearch);
 	void setCurrentResearch(CivicTypes eCurrentResearch);
 	bool isProfessionValid(int /*ProfessionTypes*/ eProfession, int/*UnitTypes*/ eUnit);
-	bool canUnitBeTraded(int /*YieldTypes*/  eYield, int /*UnitTravelStates*/ eTravelState, int/*UnitTypes*/ eUnit);
+	bool canUnitBeTraded(int /*YieldTypes*/  eYield, int /*EuropeTypes*/ eTradeScreen, int/*UnitTypes*/ eUnit);
 	bool canUseYield(int /*YieldTypes*/ eYield); // invention effect cache - Nightinggale
 	std::wstring getDawnKey();
 	std::wstring getAttackForceKey();
 	std::wstring getDeclareKey();
-	bool getHasTradeRouteType(int /*TradeRouteTypes*/ eTradeRoute);
+	bool getHasTradeRouteType(int /*EuropeTypes*/ eTradeRoute);
 	///TKe
 	bool canDoCivics(int /*CivicTypes*/ eCivic);
 	int greatGeneralThreshold();
@@ -180,7 +180,7 @@ public:
 	int getYieldRateModifier(YieldTypes eIndex);
 	int getCapitalYieldRateModifier(YieldTypes eIndex);
 	int getExtraYieldThreshold(YieldTypes eIndex);
-	bool isYieldEuropeTradable(int /*YieldTypes*/ eIndex);
+	bool isYieldEuropeTradable(int /*YieldTypes*/ eIndex, int /*EuropeTypes*/ eTradeScreen);
 	void setYieldEuropeTradable(int /*YieldTypes*/ eIndex, bool bTradeable);
 	bool isFeatAccomplished(int /*FeatTypes*/ eIndex);
 	void setFeatAccomplished(int /*FeatTypes*/ eIndex, bool bNewValue);
@@ -243,8 +243,8 @@ public:
 	bool canTradeWithEurope();
 	int getSellToEuropeProfit(int /*YieldTypes*/ eYield, int iAmount);
 	///TKs Med
-	int getYieldSellPrice(int /*YieldTypes*/ eYield, int /*UnitTravelStates*/ eTradeScreen);
-	int getYieldBuyPrice(int /*YieldTypes*/ eYield, int /*UnitTravelStates*/ eTradeScreen);
+	int getYieldSellPrice(int /*YieldTypes*/ eYield, int /*EuropeTypes*/ eTradeScreen);
+	int getYieldBuyPrice(int /*YieldTypes*/ eYield, int /*EuropeTypes*/ eTradeScreen);
 	///TKe
 	void setYieldBuyPrice(int /*YieldTypes*/ eYield, int iPrice, bool bMessage);
 	void sellYieldUnitToEurope(CyUnit* pUnit, int iAmount, int iCommission);
@@ -305,6 +305,12 @@ public:
 	void setScriptData(std::string szNewValue);
 	int AI_maxGoldTrade(int iPlayer);
 	void forcePeace(int iPlayer);
+
+	// invention effect cache - start - Nightinggale
+	bool canUseBuilding(int iBuilding) const;
+	bool canUseUnit(int iUnit) const;
+	// invention effect cache - end - Nightinggale
+
 private:
 	CvPlayer* m_pPlayer;
 };

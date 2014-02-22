@@ -7,6 +7,13 @@
 #include "CyGlobalContext.h"
 #include "CyCity.h"
 
+/// PlotGroup - start - Nightinggale
+#include "CyPlotGroup.h"
+
+void CyPlotGroupPythonInterface1(python::class_<CyPlotGroup>& x);
+/// PlotGroup - end - Nightinggale
+
+
 void CyCityPythonInterface1(python::class_<CyCity>& x);
 void CyPlotPythonInterface1(python::class_<CyPlot>& x);
 void CyPlayerPythonInterface1(python::class_<CyPlayer>& x);
@@ -72,6 +79,11 @@ DllExport void DLLPublishToPython()
 
 	python::class_<CyPlot> plot ("CyPlot");		// define plot class
 	CyPlotPythonInterface1(plot);				// publish it's methods
+
+/// PlotGroup - start - Nightinggale
+	python::class_<CyPlotGroup> plotgroup ("CyPlotGroup");		// define plot class
+	CyPlotGroupPythonInterface1(plotgroup);						// publish it's methods
+/// PlotGroup - end - Nightinggale
 
 	python::class_<CyGlobalContext> gc ("CyGlobalContext");	// define globals class
 	CyGlobalContextPythonInterface1(gc);					// publish it's methods

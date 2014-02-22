@@ -5,6 +5,10 @@
 #include "CyArea.h"
 #include "CvInfos.h"
 
+/// PlotGroup - start - Nightinggale
+#include "CyPlotGroup.h"
+/// PlotGroup - end - Nightinggale
+
 //# include <boost/python/manage_new_object.hpp>
 //# include <boost/python/return_value_policy.hpp>
 
@@ -294,6 +298,15 @@ void CyCityPythonInterface1(python::class_<CyCity>& x)
 		// native advisor update - start - Nightinggale
 		.def("getTeachUnit", &CyCity::getTeachUnit, "int /*UnitType*/ ()")
 		// native advisor update - end - Nightinggale
+
+		/// PlotGroup - start - Nightinggale
+		.def("getCityPlotGroup", &CyCity::getCityPlotGroup, python::return_value_policy<python::manage_new_object>(), "CyPlotGroup* ()")
+		/// PlotGroup - end - Nightinggale
+
+		// EDU remake - start - Nightinggale
+		.def("getSpecialistTuition", &CyCity::getSpecialistTuition, "int (int /* UnitTypes */ )")
+		.def("getTeachLevel", &CyCity::getTeachLevel, "int ()")
+		// EDU remake - end - Nightinggale
 
 		.def("isOrderWaitingForYield", &CyCity::isOrderWaitingForYield, "python::tuple isOrderWaitingForYield(int /*YieldTypes*/ eYield)")
 		;

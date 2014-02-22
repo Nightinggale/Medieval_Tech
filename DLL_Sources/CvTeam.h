@@ -223,12 +223,14 @@ protected:
 
 	TeamTypes m_eID;
 
-	bool* m_abAtWar;
-	bool* m_abHasMet;
-	bool* m_abPermanentWarPeace;
-	bool* m_abOpenBorders;
-	bool* m_abDefensivePact;
-	bool* m_abForcePeace;
+	/// player bitmap - start - Nightinggale
+	PlayerBitmap m_bmAtWar;
+	PlayerBitmap m_bmHasMet;
+	PlayerBitmap m_bmPermanentWarPeace;
+	PlayerBitmap m_bmOpenBorders;
+	PlayerBitmap m_bmDefensivePact;
+	PlayerBitmap m_bmForcePeace;
+	/// player bitmap - end - Nightinggale
 
 	bool* m_abFatherIgnore;
 	///Tks Med

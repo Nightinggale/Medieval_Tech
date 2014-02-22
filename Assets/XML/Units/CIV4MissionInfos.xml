@@ -376,97 +376,97 @@
 			<bBuild>0</bBuild>
 			<bSound>0</bSound>
 		</MissionInfo>
-    <MissionInfo>
-      <Type>MISSION_FOUND_MONASTERY</Type>
-      <Description>Found a Monastery</Description>
-      <Help>TXT_KEY_MISSION_BUILD_MONASTERY_HELP</Help>
-      <Waypoint>NONE</Waypoint>
-      <EntityEventType>ENTITY_EVENT_FOUND</EntityEventType>
-      <iTime>0</iTime>
-      <bTarget>0</bTarget>
-      <bBuild>0</bBuild>
-      <bSound>1</bSound>
-      <HotKey>KB_B</HotKey>
-      <bAltDown>0</bAltDown>
-      <bShiftDown>0</bShiftDown>
-      <bCtrlDown>0</bCtrlDown>
-      <iHotKeyPriority>1</iHotKeyPriority>
-      <HotKeyAlt/>
-      <bAltDownAlt>0</bAltDownAlt>
-      <bShiftDownAlt>0</bShiftDownAlt>
-      <bCtrlDownAlt>0</bCtrlDownAlt>
-      <iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
-      <bVisible>1</bVisible>
-      <Button>Art/Interface/Game Hud/Actions/FoundMonastery.dds</Button>
-    </MissionInfo>
-    <MissionInfo>
-      <Type>MISSION_FOUND_OUTPOST</Type>
-      <Description>Build Outpost</Description>
-      <Help>TXT_KEY_MISSION_BUILD_OUTPOST_HELP</Help>
-      <Waypoint>NONE</Waypoint>
-      <EntityEventType>ENTITY_EVENT_FOUND</EntityEventType>
-      <iTime>0</iTime>
-      <bTarget>0</bTarget>
-      <bBuild>0</bBuild>
-      <bSound>1</bSound>
-      <HotKey>KB_M</HotKey>
-      <bAltDown>0</bAltDown>
-      <bShiftDown>0</bShiftDown>
-      <bCtrlDown>0</bCtrlDown>
-      <iHotKeyPriority>1</iHotKeyPriority>
-      <HotKeyAlt/>
-      <bAltDownAlt>0</bAltDownAlt>
-      <bShiftDownAlt>0</bShiftDownAlt>
-      <bCtrlDownAlt>0</bCtrlDownAlt>
-      <iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
-      <bVisible>1</bVisible>
-      <Button>Art\Interface\Game Hud\Actions\outpost.dds</Button>
-    </MissionInfo>
-    <MissionInfo>
-      <Type>MISSION_COLLECT_TAXES</Type>
-      <Description>Collect Taxes</Description>
-      <Help>Collect taxes from your vassal</Help>
-      <Waypoint>NONE</Waypoint>
-      <EntityEventType>ENTITY_EVENT_SLEEP</EntityEventType>
-      <iTime>0</iTime>
-      <bTarget>0</bTarget>
-      <bBuild>0</bBuild>
-      <bSound>0</bSound>
-      <HotKey/>
-      <bAltDown>0</bAltDown>
-      <bShiftDown>0</bShiftDown>
-      <bCtrlDown>0</bCtrlDown>
-      <iHotKeyPriority>2</iHotKeyPriority>
-      <HotKeyAlt/>
-      <bAltDownAlt>0</bAltDownAlt>
-      <bShiftDownAlt>0</bShiftDownAlt>
-      <bCtrlDownAlt>0</bCtrlDownAlt>
-      <iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
-      <bVisible>1</bVisible>
-      <Button>Art\Interface\Game Hud\Actions\CollectTaxButton.dds</Button>
-    </MissionInfo>
-    <MissionInfo>
-      <Type>MISSION_HUNT</Type>
-      <Description>Hunt</Description>
-      <Help>Unit stands sentry until an animal is in sight</Help>
-      <Waypoint>NONE</Waypoint>
-      <EntityEventType>ENTITY_EVENT_SLEEP</EntityEventType>
-      <iTime>0</iTime>
-      <bTarget>0</bTarget>
-      <bBuild>0</bBuild>
-      <bSound>0</bSound>
-      <HotKey/>
-      <bAltDown>0</bAltDown>
-      <bShiftDown>0</bShiftDown>
-      <bCtrlDown>0</bCtrlDown>
-      <iHotKeyPriority>2</iHotKeyPriority>
-      <HotKeyAlt/>
-      <bAltDownAlt>0</bAltDownAlt>
-      <bShiftDownAlt>0</bShiftDownAlt>
-      <bCtrlDownAlt>0</bCtrlDownAlt>
-      <iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
-      <bVisible>0</bVisible>
-      <Button>Art\Interface\Buttons\Actions\Hunting.dds</Button>
-    </MissionInfo>
+		<MissionInfo>
+			<Type>MISSION_FOUND_MONASTERY</Type>
+			<Description>Found a Monastery</Description>
+			<Help>TXT_KEY_MISSION_BUILD_MONASTERY_HELP</Help>
+			<Waypoint>NONE</Waypoint>
+			<EntityEventType>ENTITY_EVENT_FOUND</EntityEventType>
+			<iTime>0</iTime>
+			<bTarget>0</bTarget>
+			<bBuild>0</bBuild>
+			<bSound>1</bSound>
+			<HotKey>KB_B</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>1</iHotKeyPriority>
+			<HotKeyAlt/>
+			<bAltDownAlt>0</bAltDownAlt>
+			<bShiftDownAlt>0</bShiftDownAlt>
+			<bCtrlDownAlt>0</bCtrlDownAlt>
+			<iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
+			<bVisible>1</bVisible>
+			<Button>Art/Interface/Game Hud/Actions/FoundMonastery.dds</Button>
+		</MissionInfo>
+		<MissionInfo>
+			<Type>MISSION_FOUND_OUTPOST</Type>
+			<Description>Build Outpost</Description>
+			<Help>TXT_KEY_MISSION_BUILD_OUTPOST_HELP</Help>
+			<Waypoint>NONE</Waypoint>
+			<EntityEventType>ENTITY_EVENT_FOUND</EntityEventType>
+			<iTime>0</iTime>
+			<bTarget>0</bTarget>
+			<bBuild>0</bBuild>
+			<bSound>1</bSound>
+			<HotKey>KB_M</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>1</iHotKeyPriority>
+			<HotKeyAlt/>
+			<bAltDownAlt>0</bAltDownAlt>
+			<bShiftDownAlt>0</bShiftDownAlt>
+			<bCtrlDownAlt>0</bCtrlDownAlt>
+			<iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
+			<bVisible>1</bVisible>
+			<Button>Art\Interface\Game Hud\Actions\outpost.dds</Button>
+		</MissionInfo>
+		<MissionInfo>
+			<Type>MISSION_COLLECT_TAXES</Type>
+			<Description>Collect Taxes</Description>
+			<Help>Collect taxes from your vassal</Help>
+			<Waypoint>NONE</Waypoint>
+			<EntityEventType>ENTITY_EVENT_SLEEP</EntityEventType>
+			<iTime>0</iTime>
+			<bTarget>0</bTarget>
+			<bBuild>0</bBuild>
+			<bSound>0</bSound>
+			<HotKey/>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>2</iHotKeyPriority>
+			<HotKeyAlt/>
+			<bAltDownAlt>0</bAltDownAlt>
+			<bShiftDownAlt>0</bShiftDownAlt>
+			<bCtrlDownAlt>0</bCtrlDownAlt>
+			<iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
+			<bVisible>1</bVisible>
+			<Button>Art\Interface\Game Hud\Actions\CollectTaxButton.dds</Button>
+		</MissionInfo>
+		<MissionInfo>
+			<Type>MISSION_HUNT</Type>
+			<Description>Hunt</Description>
+			<Help>Unit stands sentry until an animal is in sight</Help>
+			<Waypoint>NONE</Waypoint>
+			<EntityEventType>ENTITY_EVENT_SLEEP</EntityEventType>
+			<iTime>0</iTime>
+			<bTarget>0</bTarget>
+			<bBuild>0</bBuild>
+			<bSound>0</bSound>
+			<HotKey/>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>2</iHotKeyPriority>
+			<HotKeyAlt/>
+			<bAltDownAlt>0</bAltDownAlt>
+			<bShiftDownAlt>0</bShiftDownAlt>
+			<bCtrlDownAlt>0</bCtrlDownAlt>
+			<iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
+			<bVisible>0</bVisible>
+			<Button>Art\Interface\Buttons\Actions\Hunting.dds</Button>
+		</MissionInfo>
 	</MissionInfos>
 </Civ4MissionInfos>

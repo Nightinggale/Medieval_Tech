@@ -3531,8 +3531,8 @@ def afterGeneration():
     terrainHill = gc.getInfoTypeForString("TERRAIN_HILL")
     terrainPeak = gc.getInfoTypeForString("TERRAIN_PEAK")
     terrainSnow = gc.getInfoTypeForString("TERRAIN_SNOW")
-    europeNorth = gc.getInfoTypeForString("EUROPE_NORTH")
-    europeSouth = gc.getInfoTypeForString("EUROPE_SOUTH")
+    europeNorth = gc.getInfoTypeForString("TRADE_SCREEN_SILK_ROAD_MARKET")
+    europeSouth = gc.getInfoTypeForString("TRADE_SCREEN_SILK_ROAD_MARKET")
     #featureIce = gc.getInfoTypeForString("FEATURE_ICE")
     iceChance = 1.0
     iHilLPeakChance = 20
@@ -3581,8 +3581,8 @@ def afterGeneration():
     mmap = gc.getMap()
     em.initialize()
     
-    europeEast = gc.getInfoTypeForString("EUROPE_EAST")
-    europeWest = gc.getInfoTypeForString("EUROPE_WEST")
+    europeEast = gc.getInfoTypeForString("TRADE_SCREEN_SPICE_ROUTE_MARKET")
+    europeWest = gc.getInfoTypeForString("TRADE_SCREEN_SPICE_ROUTE_MARKET")
     
     for y in range(mc.height):
         for x in range(mc.width):

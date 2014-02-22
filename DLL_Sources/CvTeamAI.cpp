@@ -11,6 +11,7 @@
 #include "CvDLLInterfaceIFaceBase.h"
 #include "CvGameAI.h"
 #include "CvInfos.h"
+#include "CvUnitAI.h"
 #include "FProfiler.h"
 #include "CyArgsList.h"
 #include "CvDLLPythonIFaceBase.h"

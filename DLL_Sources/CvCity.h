@@ -8,13 +8,17 @@ class CvArea;
 class CvGenericBuilding;
 class CvInfoBase;
 
+/// PlotGroup - start - Nightinggale
+class CvPlotGroup;
+/// PlotGroup - end - Nightinggale
+
 class CvCity : public CvDLLEntity
 {
 public:
 	CvCity();
 	virtual ~CvCity();
 	///Tks Med
-	void init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, int iType = 0);
+	void init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, int iType = 0, bool bUpdatePlotGroup = true);
 	///Tke
 	void uninit();
 	void reset(int iID = 0, PlayerTypes eOwner = NO_PLAYER, int iX = 0, int iY = 0, bool bConstructorCall = false);
@@ -642,7 +646,7 @@ protected:
     PlayerTypes m_eVassalOwner;
 	YieldTypes m_eSelectedArmor;
 	int* m_aiEventTimers;
-	bool* m_abTradePostBuilt;
+	PlayerBitmap m_bmTradePostBuilt;
 	///TKe
 	int* m_aiSeaPlotYield;
 	int* m_aiRiverPlotYield;
@@ -652,9 +656,11 @@ protected:
 	int* m_aiDomainFreeExperience;
 	int* m_aiDomainProductionModifier;
 	int* m_aiCulture;
-	bool* m_abEverOwned;
-	bool* m_abRevealed;
-	bool* m_abScoutVisited;
+	/// player bitmap - start - Nightinggale
+	PlayerBitmap m_bmEverOwned;
+	PlayerBitmap m_bmRevealed;
+	PlayerBitmap m_bmScoutVisited;
+	/// player bitmap - end - Nightinggale
 	CvWString m_szName;
 	CvString m_szScriptData;
 	int* m_paiBuildingProduction;
@@ -760,23 +766,16 @@ public:
 	int getBuildingYieldDemand(YieldTypes eYield) const;
 	int getUnitYieldDemand(YieldTypes eYield) const;
 	// R&R, Androrc, Domestic Market
-	int getYieldBuyPrice(YieldTypes eYield) const;
 	int getYieldDemand(YieldTypes eYield) const;
 	//Androrc End
 	int getMarketCap() const;
 protected:
-	void doPrices(); // R&R, Androrc, Domestic Market
-	void initPrices();
-	void setYieldBuyPrice(YieldTypes eYield, int iPrice);
-
 	void setUnitYieldDemand();
 	void setUnitYieldDemand(UnitTypes eUnit, bool const bRemove = false);
 
 	YieldArray<int> m_aiBuildingYieldDemands; // nosave cache
 	YieldArray<int> m_aiUnitYieldDemands; // nosave cache
 	int m_iMarketCap; // nosave cache
-
-	YieldArray<int> m_aiYieldBuyPrice;
 	// domestic yield demand - end - Nightinggale
 
 	// R&R, ray, finishing Custom House Screen START
@@ -811,7 +810,47 @@ protected:
 	// setImportsMaintain() is only allowed to be called by doTask() or it will cause desyncs
 	void setImportsMaintain(YieldTypes eYield, bool bSetting);
 	// transport feeder - end - Nightinggale
+
+	/// PlotGroup - start - Nightinggale
+public:
+	CvPlotGroup* plotGroup(PlayerTypes ePlayer) const;
+	bool isConnectedTo(CvCity* pCity) const;									// Exposed to Python
+	bool isConnectedToCapital(PlayerTypes ePlayer = NO_PLAYER) const;			// Exposed to Python
+
+#ifdef USE_PLOTGROUP_RESOURCES
+	int getFreeBonus(BonusTypes eIndex) const;									// Exposed to Python
+	void changeFreeBonus(BonusTypes eIndex, int iChange);						// Exposed to Python
+
+	int getNumBonuses(BonusTypes eIndex) const;									// Exposed to Python
+	bool hasBonus(BonusTypes eIndex) const;										// Exposed to Python
+	void changeNumBonuses(BonusTypes eIndex, int iChange);
+
+protected:
+	// TODO plotgroups save arrays
+	BonusArray<int> m_aiFreeBonus;
+	BonusArray<int> m_aiNumBonuses;
+#endif
+	/// PlotGroup - end - Nightinggale
 };
+
+/// PlotGroup - start - Nightinggale
+#ifdef USE_PLOTGROUP_RESOURCES
+inline int CvCity::getFreeBonus(BonusTypes eIndex) const
+{
+	return m_aiFreeBonus.get(eIndex);
+}
+
+inline bool CvCity::hasBonus(BonusTypes eIndex) const
+{
+	return (getNumBonuses(eIndex) > 0);
+}
+
+inline void CvCity::changeNumBonuses(BonusTypes eIndex, int iChange)
+{
+	m_aiNumBonuses.add(iChange, eIndex);
+}
+#endif
+/// PlotGroup - end - Nightinggale
 
 // cache getMaxYieldCapacity - start - Nightinggale
 inline int CvCity::getMaxYieldCapacity(YieldTypes eYield) const
@@ -842,7 +881,7 @@ inline int CvCity::getUnitYieldDemand(YieldTypes eYield) const
 
 inline int CvCity::getYieldDemand(YieldTypes eYield) const
 {
-	return (getBuildingYieldDemand(eYield) + getUnitYieldDemand(eYield)) / 100;
+	return (getBuildingYieldDemand(eYield) + getUnitYieldDemand(eYield));
 }
 
 inline int CvCity::getMarketCap() const
@@ -850,21 +889,6 @@ inline int CvCity::getMarketCap() const
 	return m_iMarketCap;
 }
 // domestic yield demand - end - Nightinggale
-
-//Androrc Domestic Market
-// Modified by Nightinggale
-inline int CvCity::getYieldBuyPrice(YieldTypes eYield) const
-{
-	return m_aiYieldBuyPrice.get(eYield);
-}
-
-// R&R, ray, adjustment Domestic Markets
-// No messages, because too many messages get annoying
-inline void CvCity::setYieldBuyPrice(YieldTypes eYield, int iPrice)
-{
-	m_aiYieldBuyPrice.set(iPrice, eYield);
-}
-//Androrc Domestic Market END
 
 // transport feeder - start - Nightinggale
 inline bool CvCity::isAutoImportStopped(YieldTypes eYield) const

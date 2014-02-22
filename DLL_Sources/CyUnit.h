@@ -276,11 +276,22 @@ public:
 	bool isBarbarian();
 	void setBarbarian(bool bNewValue);
 	// < JAnimals Mod End >
+	//TKs Med **TradeRoute**
+	bool canCrossOcean(CyPlot* pPlot, int /*UnitTravelStates*/ eNewState, int /*TradeRouteTypes*/ eTradeRouteType, bool bAIForce, int /*EuropeTypes*/ eEuropeTradeRoute);
+	bool canAutoSailTradeScreen(CyPlot* pPlot, int /*EuropeTypes*/ eEuropeTradeRoute,  bool bAIForce);
+	int /*EuropeType*/ getUnitTradeMarket();
+	void setUnitTradeMarket(int /*EuropeType*/ eMarket);
+	//TKe
 	const CvArtInfoUnit* getArtInfo(int i) const;
 	std::string getButton() const;
 	std::string getFullLengthIcon() const;
 	// Python Helper Functions
 	void centerCamera();
+
+	/// Expert working - start - Nightinggale
+	bool isCitizenExpertWorking() const;
+	/// Expert working - end -  Nightinggale
+
 protected:
 	CvUnit* m_pUnit;
 };

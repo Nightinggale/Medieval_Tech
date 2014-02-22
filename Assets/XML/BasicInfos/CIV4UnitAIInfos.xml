@@ -78,17 +78,17 @@
 			<Type>UNITAI_PIRATE_SEA</Type>
 			<Description>UNITAI_PIRATE_SEA</Description>
 		</UnitAIInfo>
-    <UnitAIInfo>
-      <Type>UNITAI_TRADER</Type>
-      <Description>UNITAI_TRADER</Description>
-    </UnitAIInfo>
-    <UnitAIInfo>
-      <Type>UNITAI_HUNTSMAN</Type>
-      <Description>UNITAI_HUNTSMAN</Description>
-    </UnitAIInfo>
-    <UnitAIInfo>
-      <Type>UNITAI_MARAUDER</Type>
-      <Description>UNITAI_MARAUDER</Description>
-    </UnitAIInfo>
+		<UnitAIInfo>
+			<Type>UNITAI_TRADER</Type>
+			<Description>UNITAI_TRADER</Description>
+		</UnitAIInfo>
+		<UnitAIInfo>
+			<Type>UNITAI_HUNTSMAN</Type>
+			<Description>UNITAI_HUNTSMAN</Description>
+		</UnitAIInfo>
+		<UnitAIInfo>
+			<Type>UNITAI_MARAUDER</Type>
+			<Description>UNITAI_MARAUDER</Description>
+		</UnitAIInfo>
 	</UnitAIInfos>
 </Civ4UnitAIInfos>

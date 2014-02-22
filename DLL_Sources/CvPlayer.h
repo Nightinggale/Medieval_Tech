@@ -6,16 +6,20 @@
 #define CIV4_PLAYER_H
 
 #include "CvCityAI.h"
-#include "CvUnitAI.h"
 #include "CvSelectionGroupAI.h"
 #include "LinkedList.h"
 #include "CvIdVector.h"
 #include "CvTalkingHeadMessage.h"
 
+/// PlotGroup - start - Nightinggale
+#include "CvPlotGroup.h"
+/// PlotGroup - end - Nightinggale
+
 class CvDiploParameters;
 class CvPopupInfo;
 class CvEventTriggerInfo;
 class CvTradeRoute;
+class CvUnitAI;
 
 typedef std::list<CvTalkingHeadMessage> CvMessageQueue;
 typedef std::list<CvPopupInfo*> CvPopupQueue;
@@ -94,7 +98,7 @@ public:
 
 	void updateYield();
 	void updateCityPlotYield();
-	void updateCitySight(bool bIncrement);
+	void updateCitySight(bool bIncrement, bool bUpdatePlotGroups);
 
 	void updateTimers();
 
@@ -304,7 +308,7 @@ public:
 	int getExtraYieldThreshold(YieldTypes eIndex) const;
 	void updateExtraYieldThreshold(YieldTypes eIndex);
 	int getYieldRate(YieldTypes eIndex) const;
-	bool isYieldEuropeTradable(YieldTypes eIndex) const;
+	bool isYieldEuropeTradable(YieldTypes eIndex, EuropeTypes eTradeScreen=NO_EUROPE) const;
 	void setYieldEuropeTradable(YieldTypes eIndex, bool bTradeable);
 	void setYieldEuropeTradableAll();
 	bool isFeatAccomplished(FeatTypes eIndex) const;
@@ -533,17 +537,16 @@ public:
 	DllExport PlayerTypes getMinorVassal() const;
 	DllExport void setVassalOwner(PlayerTypes eParent);
 	DllExport void setMinorVassal(PlayerTypes eParent);
-	int getAltYieldEquipmentAmount(ProfessionTypes eProfession, YieldTypes eYield) const;
 	int getMultiYieldRate(YieldTypes eIndex) const;
 	int getCensureType(CensureType eCensure) const;
-	CvPlot* getStartingTradeRoutePlot(TradeRouteTypes eTradeRoute) const;
-	void setStartingTradeRoutePlot(CvPlot* pNewValue, TradeRouteTypes eTradeRoute);
+	CvPlot* getStartingTradeRoutePlot(EuropeTypes eTradeRoute) const;
+	void setStartingTradeRoutePlot(CvPlot* pNewValue, EuropeTypes eTradeRoute);
 	void changeCensureType(CensureType eCensure, int iValue);
-	bool getHasTradeRouteType(TradeRouteTypes eTradeRoute) const;
-	void setHasTradeRouteType(TradeRouteTypes eTradeRoute, bool bValue);
+	bool getHasTradeRouteType(EuropeTypes eTradeRoute) const;
+	void setHasTradeRouteType(EuropeTypes eTradeRoute, bool bValue);
 	CvCity* findImmigrationCity(CvCity* pPrimaryCity, int MaxDistance);
 	void doMedievalEvents();
-	bool canUnitBeTraded(YieldTypes eYield, UnitTravelStates eTravelState = NO_UNIT_TRAVEL_STATE, UnitTypes eUnit = NO_UNIT) const;
+	bool canUnitBeTraded(YieldTypes eYield, EuropeTypes eTradeScreen = NO_EUROPE, UnitTypes eUnit = NO_UNIT) const;
 	bool isAllResearchComplete() const;
 	void setAllResearchComplete(bool bSet);
 	bool isFirstCityRazed() const;
@@ -607,14 +610,13 @@ public:
     DllExport const wchar* getDeclareKey() const;
     DllExport const wchar* getDawnKey() const;
 	///TKe
-
-	int getSellToEuropeProfit(YieldTypes eYield, int iAmount) const;
 	///TKs Med
-	int getYieldSellPrice(YieldTypes eYield, UnitTravelStates eTradeScreen = NO_UNIT_TRAVEL_STATE) const;
-	int getYieldBuyPrice(YieldTypes eYield, UnitTravelStates eTradeScreen = NO_UNIT_TRAVEL_STATE) const;
-	int getTradeScreenPriceMod(YieldTypes eYield, UnitTravelStates eTravelState = NO_UNIT_TRAVEL_STATE, UnitTypes eUnit = NO_UNIT) const;
-	CvUnit* buyEuropeUnit(UnitTypes eUnit, int iPriceModifier, TradeRouteTypes eTradeRoute=NO_TRADE_ROUTES);
-	int getEuropeUnitBuyPrice(UnitTypes eUnit, TradeScreenTypes eTradeScreen=TRADE_SCREEN_DEFAULT) const;
+	int getSellToEuropeProfit(YieldTypes eYield, int iAmount, EuropeTypes eTradeScreen = NO_EUROPE) const;
+	int getYieldSellPrice(YieldTypes eYield, EuropeTypes eTradeScreen = NO_EUROPE) const;
+	int getYieldBuyPrice(YieldTypes eYield, EuropeTypes eTradeScreen = NO_EUROPE) const;
+	int getTradeScreenPriceMod(YieldTypes eYield, EuropeTypes eTradeScreen = NO_EUROPE, UnitTypes eUnit = NO_UNIT) const;
+	CvUnit* buyEuropeUnit(UnitTypes eUnit, int iPriceModifier, EuropeTypes eTradeScreen=NO_EUROPE);
+	int getEuropeUnitBuyPrice(UnitTypes eUnit, EuropeTypes eTradeScreenType=NO_EUROPE) const;
 	///TKe
 	void setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage);
 	void sellYieldUnitToEurope(CvUnit* pUnit, int iAmount, int iCommission);
@@ -655,13 +657,11 @@ public:
 
 	int getProfessionEquipmentModifier(ProfessionTypes eProfession) const;
 	void setProfessionEquipmentModifier(ProfessionTypes eProfession, int iValue);
-	int getYieldEquipmentAmount(ProfessionTypes eProfession, YieldTypes eYield) const;
 	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
+	ProfessionYieldCost getYieldEquipmentAmount(ProfessionTypes eProfession, YieldTypes eYield) const;
 	bool hasContentsYieldEquipmentAmount(ProfessionTypes eProfession) const;
-	bool hasContentsAltYieldEquipmentAmount(ProfessionTypes eProfession) const;
-	int getYieldEquipmentAmountSecure(ProfessionTypes eProfession, YieldTypes eYield) const;
+	ProfessionYieldCost getYieldEquipmentAmountSecure(ProfessionTypes eProfession, YieldTypes eYield) const;
 	bool hasContentsYieldEquipmentAmountSecure(ProfessionTypes eProfession) const;
-	int getAltYieldEquipmentAmountSecure(ProfessionTypes eProfession, YieldTypes eYield) const;
 	bool hasContentsAltYieldEquipmentAmountSecure(ProfessionTypes eProfession) const;
 	bool hasContentsAnyYieldEquipmentAmount(ProfessionTypes eProfession) const;
 	bool hasContentsAnyYieldEquipmentAmountSecure(ProfessionTypes eProfession) const;
@@ -887,12 +887,10 @@ protected:
 	int* m_aiTraitCount;
 
 	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
-	YieldArray<int> *m_cache_YieldEquipmentAmount;
-	YieldArray<int> *m_cache_AltYieldEquipmentAmount;
+	YieldArray<ProfessionYieldCost> *m_cache_YieldEquipmentAmount;
 	void Update_cache_YieldEquipmentAmount();
 	void Update_cache_YieldEquipmentAmount(ProfessionTypes eProfession);
-	int getYieldEquipmentAmountUncached(ProfessionTypes eProfession, YieldTypes eYield) const;
-	int getAltYieldEquipmentAmountUncached(ProfessionTypes eProfession, YieldTypes eYield) const;
+	ProfessionYieldCost getYieldEquipmentAmountUncached(ProfessionTypes eProfession, YieldTypes eYield) const;
 	// cache CvPlayer::getYieldEquipmentAmount - end - Nightinggale
 
 	std::vector<EventTriggerTypes> m_triggersFired;
@@ -928,6 +926,9 @@ protected:
 	void doGold();
 	void doBells();
 	void doCrosses();
+	/// PlotGroup - start - Nightinggale
+	void doCities();
+	/// PlotGroup - end - Nightinggale
 	void doWarnings();
 	void doEvents();
 	void doPrices();
@@ -946,10 +947,47 @@ protected:
 	virtual void write(FDataStreamBase* pStream);
 	void doUpdateCacheOnTurn();
 
+/// PlotGroup - start - Nightinggale
+public:
+	CvPlotGroup* firstPlotGroup(int *pIterIdx, bool bRev=false) const;
+	CvPlotGroup* nextPlotGroup(int *pIterIdx, bool bRev=false) const;
+	int getNumPlotGroups() const;
+	CvPlotGroup* getPlotGroup(int iID) const;
+	CvPlotGroup* addPlotGroup();
+	void deletePlotGroup(int iID);
+	CvPlotGroup* initPlotGroup(CvPlot* pPlot);
+
+	// update the cache is needed
+	void setPlotgroupCityCache();
+
+	// mark the cities in plotgroup cache as outdated
+	void clearPlotgroupCityCache();
+
+	// get plotgroups in cache and update cache if needed
+	int getNumPlotgroups();
+
+	// number of cached cities in a cached plotgroup
+	int getNumCitiesInPlotgroup(int iPlotGroup) const;
+
+	// get city from cached plotgroups
+	CvCity* getCity(int iPlotGroup, int iCity) const;
+
+	// get cache index of a plotgroup nd update cache is needed
+	int getCacheIndex(CvPlotGroup* pPlotGroup);
+
+protected:
+	FFreeListTrashArray<CvPlotGroup> m_plotGroups;
+
+	std::vector<std::vector<CvCity*> > m_aapPlotGroupCityList;
+	std::vector<CvPlotGroup*> m_aPlotGroupCache;
+	bool m_bIsPlotGroupCacheUpdated;
+/// PlotGroup - end - Nightinggale
+
 // invention effect cache - start - Nightinggale
 public:
 	bool canUseYield(YieldTypes eYield) const;
 	bool canUseUnit(UnitTypes eUnit) const;
+	bool canUseBuilding(BuildingTypes eBuilding) const;
 	bool canUseProfession(ProfessionTypes eProfession) const;
 	bool canUseBonus(BonusTypes eBonus) const;
 	int getCityPlotFoodBonus() const;
@@ -957,6 +995,7 @@ public:
 protected:
 	YieldArray<bool> m_abBannedYields;
 	UnitArray<bool> m_abBannedUnits;
+	BuildingArray<bool> m_abBannedBuildings;
 	ProfessionArray<bool> m_abBannedProfessions;
 	BonusArray<bool> m_abBannedBonus;
 
@@ -973,18 +1012,11 @@ public:
 };
 
 // cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
-inline int CvPlayer::getYieldEquipmentAmount(ProfessionTypes eProfession, YieldTypes eYield) const
+inline ProfessionYieldCost CvPlayer::getYieldEquipmentAmount(ProfessionTypes eProfession, YieldTypes eYield) const
 {
 	FAssert(m_cache_YieldEquipmentAmount != NULL);
 	FAssert(eProfession >= 0 && eProfession < GC.getNumProfessionInfos());
 	return m_cache_YieldEquipmentAmount[eProfession].get(eYield);
-}
-
-inline int CvPlayer::getAltYieldEquipmentAmount(ProfessionTypes eProfession, YieldTypes eYield) const
-{
-	FAssert(m_cache_AltYieldEquipmentAmount != NULL);
-	FAssert(eProfession >= 0 && eProfession < GC.getNumProfessionInfos());
-	return m_cache_AltYieldEquipmentAmount[eProfession].get(eYield);
 }
 
 inline bool CvPlayer::hasContentsYieldEquipmentAmount(ProfessionTypes eProfession) const
@@ -997,18 +1029,8 @@ inline bool CvPlayer::hasContentsYieldEquipmentAmount(ProfessionTypes eProfessio
 	return m_cache_YieldEquipmentAmount[eProfession].isAllocated();
 }
 
-inline bool CvPlayer::hasContentsAltYieldEquipmentAmount(ProfessionTypes eProfession) const
-{
-	// strictly speaking it returns true if the array is allocated without considering the content of the array.
-	// The reason why it works is because Update_cache_YieldEquipmentAmount() will only allocate arrays if they contain anything
-	//   and deallocate them if it is changed to contain only 0.
-	FAssert(m_cache_AltYieldEquipmentAmount != NULL);
-	FAssert(eProfession >= 0 && eProfession < GC.getNumProfessionInfos());
-	return m_cache_AltYieldEquipmentAmount[eProfession].isAllocated();
-}
-
 // same functions, but with the added return 0 if professions is NO_PROFESSION or INVALID_PROFESSION
-inline int CvPlayer::getYieldEquipmentAmountSecure(ProfessionTypes eProfession, YieldTypes eYield) const
+inline ProfessionYieldCost CvPlayer::getYieldEquipmentAmountSecure(ProfessionTypes eProfession, YieldTypes eYield) const
 {
 	return eProfession > NO_PROFESSION ? getYieldEquipmentAmount(eProfession, eYield) : 0;
 }
@@ -1016,16 +1038,6 @@ inline int CvPlayer::getYieldEquipmentAmountSecure(ProfessionTypes eProfession, 
 inline bool CvPlayer::hasContentsYieldEquipmentAmountSecure(ProfessionTypes eProfession) const
 {
 	return eProfession > NO_PROFESSION ? hasContentsYieldEquipmentAmount(eProfession) : false;
-}
-
-inline int CvPlayer::getAltYieldEquipmentAmountSecure(ProfessionTypes eProfession, YieldTypes eYield) const
-{
-	return eProfession > NO_PROFESSION ? getAltYieldEquipmentAmount(eProfession, eYield) : 0;
-}
-
-inline bool CvPlayer::hasContentsAltYieldEquipmentAmountSecure(ProfessionTypes eProfession) const
-{
-	return eProfession > NO_PROFESSION ? hasContentsAltYieldEquipmentAmount(eProfession) : false;
 }
 
 // shortcut to check both normal and alt equipment
@@ -1053,6 +1065,11 @@ inline bool CvPlayer::canUseUnit(UnitTypes eUnit) const
 	return eUnit >= 0 ? !this->m_abBannedUnits.get(eUnit) : false;
 }
 
+inline bool CvPlayer::canUseBuilding(BuildingTypes eBuilding) const
+{
+	return eBuilding >= 0 ? !this->m_abBannedBuildings.get(eBuilding) : false;
+}
+
 inline bool CvPlayer::canUseProfession(ProfessionTypes eProfession) const
 {
 	FAssert(eProfession < GC.getNumProfessionInfos());
@@ -1069,5 +1086,42 @@ inline int CvPlayer::getCityPlotFoodBonus() const
 	return m_iCityPlotFoodBonus;
 }
 // invention effect cache - end - Nightinggale
+
+/// PlotGroup - start - Nightinggale
+inline CvPlotGroup* CvPlayer::firstPlotGroup(int *pIterIdx, bool bRev) const
+{
+	return !bRev ? m_plotGroups.beginIter(pIterIdx) : m_plotGroups.endIter(pIterIdx);
+}
+
+inline CvPlotGroup* CvPlayer::nextPlotGroup(int *pIterIdx, bool bRev) const
+{
+	return !bRev ? m_plotGroups.nextIter(pIterIdx) : m_plotGroups.prevIter(pIterIdx);
+}
+
+inline int CvPlayer::getNumPlotGroups() const																		
+{
+	return m_plotGroups.getCount();
+}
+
+inline CvPlotGroup* CvPlayer::getPlotGroup(int iID) const															
+{
+	return((CvPlotGroup *)(m_plotGroups.getAt(iID)));
+}
+
+inline CvPlotGroup* CvPlayer::addPlotGroup()																	
+{
+	return((CvPlotGroup *)(m_plotGroups.add()));
+}
+
+inline void CvPlayer::deletePlotGroup(int iID)																
+{
+	m_plotGroups.removeAt(iID);
+}
+
+inline void CvPlayer::clearPlotgroupCityCache()
+{
+	this->m_bIsPlotGroupCacheUpdated = false;
+}
+/// PlotGroup - end - Nightinggale
 
 #endif

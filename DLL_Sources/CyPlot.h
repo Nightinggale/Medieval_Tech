@@ -182,6 +182,11 @@ public:
 	CyUnit* getUnit(int iIndex);
 	std::string getScriptData() const;
 	void setScriptData(std::string szNewValue);
+
+	/// PlotGroup - start - Nightinggale
+	bool isConnectedTo(CyCity* pCity);
+	/// PlotGroup - end - Nightinggale
+
 private:
 	CvPlot* m_pPlot;
 };

@@ -6,27 +6,27 @@
 <!-- Misc art path information -->
 <Civ4ArtDefines xmlns="x-schema:CIV4ArtDefinesSchema.xml">
 	<MiscArtInfos>
-    <MiscArtInfo>
-      <Type>ART_AQUEDUCT_ENDPIECE</Type>
-      <Path>Art/Structures/Buildings/Aqueduct/Aqueduct.nif::1x1_end</Path>
-      <fScale>1.0</fScale>
-      <NIF>None</NIF>
-      <KFM>None</KFM>
-    </MiscArtInfo>
-    <MiscArtInfo>
-      <Type>ART_AQUEDUCT_SEGMENT</Type>
-      <Path>Art/Structures/Buildings/Aqueduct/Aqueduct.nif::1x1_std</Path>
-      <fScale>1.0</fScale>
-      <NIF>None</NIF>
-      <KFM>None</KFM>
-    </MiscArtInfo>
-    <MiscArtInfo>
-      <Type>ART_AQUEDUCT_WELL</Type>
-      <Path>Art/Structures/Buildings/Aqueduct/Aqueduct.nif::1x1_well</Path>
-      <fScale>1.0</fScale>
-      <NIF>None</NIF>
-      <KFM>None</KFM>
-    </MiscArtInfo>
+		<MiscArtInfo>
+			<Type>ART_AQUEDUCT_ENDPIECE</Type>
+			<Path>Art/Structures/Buildings/Aqueduct/Aqueduct.nif::1x1_end</Path>
+			<fScale>1.0</fScale>
+			<NIF>None</NIF>
+			<KFM>None</KFM>
+		</MiscArtInfo>
+		<MiscArtInfo>
+			<Type>ART_AQUEDUCT_SEGMENT</Type>
+			<Path>Art/Structures/Buildings/Aqueduct/Aqueduct.nif::1x1_std</Path>
+			<fScale>1.0</fScale>
+			<NIF>None</NIF>
+			<KFM>None</KFM>
+		</MiscArtInfo>
+		<MiscArtInfo>
+			<Type>ART_AQUEDUCT_WELL</Type>
+			<Path>Art/Structures/Buildings/Aqueduct/Aqueduct.nif::1x1_well</Path>
+			<fScale>1.0</fScale>
+			<NIF>None</NIF>
+			<KFM>None</KFM>
+		</MiscArtInfo>
 		<MiscArtInfo>
 			<Type>ART_GLOBEVIEW_CLOUD_SHADOWS</Type>
 			<Path>Art/Terrain/Sky/Clouds01decal.dds</Path>

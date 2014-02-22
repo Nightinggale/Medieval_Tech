@@ -362,9 +362,9 @@ int CyPlayer::getCostToResearch(int /*CivicTypes*/ eCivic)
 {
    return m_pPlayer ? m_pPlayer->getCostToResearch((CivicTypes)eCivic) : -1;
 }
-bool CyPlayer::canUnitBeTraded(int /*YieldTypes*/ eYield, int /*UnitTravelStates*/ eTravelState, int /*UnitTypes*/ eUnit)
+bool CyPlayer::canUnitBeTraded(int /*YieldTypes*/ eYield, int /*EuropeTypes*/ eTradeScreen, int /*UnitTypes*/ eUnit)
 {
-	return m_pPlayer ? m_pPlayer->canUnitBeTraded((YieldTypes)eYield, (UnitTravelStates) eTravelState, (UnitTypes) eUnit) : false;
+	return m_pPlayer ? m_pPlayer->canUnitBeTraded((YieldTypes)eYield, (EuropeTypes) eTradeScreen, (UnitTypes) eUnit) : false;
 }
 // invention effect cache - start - Nightinggale
 bool CyPlayer::canUseYield(int /*YieldTypes*/ eYield)
@@ -386,9 +386,9 @@ std::wstring CyPlayer::getDawnKey( )
 {
 	return m_pPlayer ? m_pPlayer->getDawnKey() : std::wstring();
 }
-bool CyPlayer::getHasTradeRouteType(int /*TradeRouteTypes*/ eTradeRoute)
+bool CyPlayer::getHasTradeRouteType(int /*EuropeTypes*/ eTradeRoute)
 {
-	return m_pPlayer ? m_pPlayer->getHasTradeRouteType((TradeRouteTypes)eTradeRoute) : false;
+	return m_pPlayer ? m_pPlayer->getHasTradeRouteType((EuropeTypes)eTradeRoute) : false;
 }
 ///TKe
 bool CyPlayer::canDoCivics(int /*CivicTypes*/ eCivic)
@@ -694,9 +694,9 @@ int CyPlayer::getExtraYieldThreshold(YieldTypes eIndex)
 {
 	return m_pPlayer ? m_pPlayer->getExtraYieldThreshold(eIndex) : 0;
 }
-bool CyPlayer::isYieldEuropeTradable(int /*YieldTypes*/ eIndex)
+bool CyPlayer::isYieldEuropeTradable(int /*YieldTypes*/ eIndex, int /*EuropeTypes*/ eTradeScreen)
 {
-	return m_pPlayer ? m_pPlayer->isYieldEuropeTradable((YieldTypes)eIndex) : false;
+	return m_pPlayer ? m_pPlayer->isYieldEuropeTradable((YieldTypes)eIndex, (EuropeTypes) eTradeScreen) : false;
 }
 void CyPlayer::setYieldEuropeTradable(int /*YieldTypes*/ eIndex, bool bTradeable)
 {
@@ -1176,13 +1176,13 @@ int CyPlayer::getSellToEuropeProfit(int /*YieldTypes*/ eYield, int iAmount)
 	return m_pPlayer ? m_pPlayer->getSellToEuropeProfit((YieldTypes) eYield, iAmount) : -1;
 }
 ///TKs Med
-int CyPlayer::getYieldSellPrice(int /*YieldTypes*/ eYield, int /*UnitTravelStates*/ eTradeScreen)
+int CyPlayer::getYieldSellPrice(int /*YieldTypes*/ eYield, int /*EuropeTypes*/ eTradeScreen)
 {
-	return m_pPlayer ? m_pPlayer->getYieldSellPrice((YieldTypes) eYield, (UnitTravelStates) eTradeScreen) : -1;
+	return m_pPlayer ? m_pPlayer->getYieldSellPrice((YieldTypes) eYield, (EuropeTypes) eTradeScreen) : -1;
 }
-int CyPlayer::getYieldBuyPrice(int /*YieldTypes*/ eYield, int /*UnitTravelStates*/ eTradeScreen)
+int CyPlayer::getYieldBuyPrice(int /*YieldTypes*/ eYield, int /*EuropeTypes*/ eTradeScreen)
 {
-	return m_pPlayer ? m_pPlayer->getYieldBuyPrice((YieldTypes) eYield, (UnitTravelStates) eTradeScreen) : -1;
+	return m_pPlayer ? m_pPlayer->getYieldBuyPrice((YieldTypes) eYield, (EuropeTypes) eTradeScreen) : -1;
 }
 ///TKe
 void CyPlayer::setYieldBuyPrice(int /*YieldTypes*/ eYield, int iPrice, bool bMessage)
@@ -1250,3 +1250,35 @@ std::wstring CyPlayer::getTradeMessage(int i) const
 {
 	return m_pPlayer ? m_pPlayer->getTradeMessage(i) : L"";
 }
+
+// invention effect cache - start - Nightinggale
+bool CyPlayer::canUseBuilding(int iBuilding) const
+{
+	FAssertMsg(m_pPlayer != NULL, "Python");
+	FAssertMsg(iBuilding > NO_BUILDING, "Python");
+	FAssertMsg(iBuilding < GC.getNumBuildingInfos(), "Python");
+	if (m_pPlayer != NULL)
+	{
+		if (iBuilding > NO_BUILDING && iBuilding < GC.getNumBuildingInfos())
+		{
+			return m_pPlayer->canUseBuilding((BuildingTypes)iBuilding);
+		}
+	}
+	return false;
+}
+
+bool CyPlayer::canUseUnit(int iUnit) const
+{
+	FAssertMsg(m_pPlayer != NULL, "Python");
+	FAssertMsg(iUnit > NO_UNIT, "Python");
+	FAssertMsg(iUnit < GC.getNumUnitInfos(), "Python");
+	if (m_pPlayer != NULL)
+	{
+		if (iUnit > NO_UNIT && iUnit < GC.getNumUnitInfos())
+		{
+			return m_pPlayer->canUseUnit((UnitTypes)iUnit);
+		}
+	}
+	return false;
+}
+// invention effect cache - end - Nightinggale

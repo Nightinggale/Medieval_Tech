@@ -32,22 +32,22 @@
 			<bIsProjectile>0</bIsProjectile>
 		</EffectInfo>
 		<!-- Tracks and Footprints:-->
-    <EffectInfo>
-      <Type>EFFECT_FOOTPRINT_60</Type>
-      <Description>Footprint Medium</Description>
-      <fScale>0.65</fScale>
-      <fUpdateRate>1.0</fUpdateRate>
-      <Path>Art/Shared/Footstep.nif</Path>
-      <bIsProjectile>0</bIsProjectile>
-    </EffectInfo>
-    <EffectInfo>
-      <Type>EFFECT_FOOTPRINT_80</Type>
-      <Description>Footprint Medium</Description>
-      <fScale>0.75</fScale>
-      <fUpdateRate>1.0</fUpdateRate>
-      <Path>Art/Shared/Footstep.nif</Path>
-      <bIsProjectile>0</bIsProjectile>
-    </EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_FOOTPRINT_60</Type>
+			<Description>Footprint Medium</Description>
+			<fScale>0.65</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Shared/Footstep.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_FOOTPRINT_80</Type>
+			<Description>Footprint Medium</Description>
+			<fScale>0.75</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Shared/Footstep.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
 		<EffectInfo>
 			<Type>EFFECT_FOOTPRINT</Type>
 			<Description>Footprint</Description>
@@ -65,239 +65,239 @@
 			<bIsProjectile>0</bIsProjectile>
 		</EffectInfo>
     <!--Kailric Medieval Effects-->
-    <EffectInfo>
-      <Type>EFFECT_LONGBOWARROW</Type>
-      <Description>Longbow Arrow</Description>
-      <fScale>1.0</fScale>
-      <fUpdateRate>1.0</fUpdateRate>
-      <Path>Art/Units/Longbowman/LongbowArrow.nif</Path>
-      <bIsProjectile>1</bIsProjectile>
-      <fSpeed>500.0</fSpeed>
-      <fArcValue>0.0</fArcValue>
-    </EffectInfo>
-    <EffectInfo>
-      <Type>EFFECT_CROSSBOWBOLT</Type>
-      <Description>Crossbow bolt</Description>
-      <fScale>1.0</fScale>
-      <fUpdateRate>1.0</fUpdateRate>
-      <Path>Art/Units/Crossbowman/CrossbowBolt.nif</Path>
-      <bIsProjectile>1</bIsProjectile>
-      <fSpeed>500.0</fSpeed>
-      <fArcValue>0.0</fArcValue>
-    </EffectInfo>
-    <EffectInfo>
-      <Type>EFFECT_ARCHERARROW</Type>
-      <Description>ArcherArrow</Description>
-      <fScale>1.0</fScale>
-      <fUpdateRate>1.0</fUpdateRate>
-      <Path>Art/Units/Archer/ArcherArrow.nif</Path>
-      <bIsProjectile>1</bIsProjectile>
-      <fSpeed>500.0</fSpeed>
-      <fArcValue>0.0</fArcValue>
-    </EffectInfo>
-    <EffectInfo>
-      <Type>EFFECT_CHINESEARROW</Type>
-      <Description>ChineseArcherArrow</Description>
-      <fScale>1.0</fScale>
-      <fUpdateRate>1.0</fUpdateRate>
-      <Path>Art/Units/Archer_Chinese/Archer_Chinese_Arrow.nif</Path>
-      <bIsProjectile>1</bIsProjectile>
-      <fSpeed>500.0</fSpeed>
-      <fArcValue>0.0</fArcValue>
-    </EffectInfo>
-    <EffectInfo>
-      <Type>EFFECT_EGYPTIANARROW</Type>
-      <Description>EgyptianArcherArrow</Description>
-      <fScale>1.0</fScale>
-      <fUpdateRate>1.0</fUpdateRate>
-      <Path>Art/Units/Archer_New/Archer_Egyptian_Arrow.nif</Path>
-      <bIsProjectile>1</bIsProjectile>
-      <fSpeed>500.0</fSpeed>
-      <fArcValue>0.0</fArcValue>
-    </EffectInfo>
-    <EffectInfo>
-      <Type>EFFECT_EURASIANARROW</Type>
-      <Description>EurasianArcherArrow</Description>
-      <fScale>1.0</fScale>
-      <fUpdateRate>1.0</fUpdateRate>
-      <Path>Art/Units/Archer_Eurasian/Archer_Eurasian_Arrow.nif</Path>
-      <bIsProjectile>1</bIsProjectile>
-      <fSpeed>500.0</fSpeed>
-      <fArcValue>0.0</fArcValue>
-    </EffectInfo>
-    <EffectInfo>
-      <Type>EFFECT_GALLEY_FIREARROW</Type>
-      <Description>Galley Fire Arrow Effect</Description>
-      <fScale>0.7</fScale>
-      <fUpdateRate>1.0</fUpdateRate>
-      <Path>Art/Effects/fire_arrow/fx_Galley_FireArrow.nif</Path>
-      <bIsProjectile>1</bIsProjectile>
-      <fSpeed>300.0</fSpeed>
-      <fArcValue>3.0</fArcValue>
-    </EffectInfo>
-    <EffectInfo>
-      <Type>EFFECT_GALLEY_ARROWS</Type>
-      <Description>Galley Arrows</Description>
-      <fScale>1.0</fScale>
-      <fUpdateRate>1.0</fUpdateRate>
-      <Path>Art/Effects/PrototypeEffects/Galley/GalleyArrows.nif</Path>
-      <bIsProjectile>0</bIsProjectile>
-      <fSpeed>0</fSpeed>
-      <fArcValue>0</fArcValue>
-    </EffectInfo>
-    <EffectInfo>
-      <Type>EFFECT_PAWPRINT</Type>
-      <Description>Wild Animal Paw Print</Description>
-      <fScale>1.0</fScale>
-      <fUpdateRate>1.0</fUpdateRate>
-      <Path>Art/Shared/PawPrint.nif</Path>
-      <bIsProjectile>0</bIsProjectile>
-    </EffectInfo>
-    <EffectInfo>
-      <Type>EFFECT_CAMELARCHERARROW</Type>
-      <Description>CamelArcherArrow</Description>
-      <fScale>1.0</fScale>
-      <fUpdateRate>1.0</fUpdateRate>
-      <Path>Art/Units/Unique/Arabia/CamelArcher/ArabiaCamelArcherArrow.nif</Path>
-      <bIsProjectile>1</bIsProjectile>
-      <fSpeed>500.0</fSpeed>
-      <fArcValue>0.0</fArcValue>
-    </EffectInfo>
-    <EffectInfo>
-      <Type>EFFECT_MALISPEAR</Type>
-      <Description>Mali Spear</Description>
-      <fScale>1.0</fScale>
-      <fUpdateRate>1.0</fUpdateRate>
-      <Path>Art/Units/Unique/Mali/Skirmisher/MaliSkirmisherSpear.nif</Path>
-      <bIsProjectile>1</bIsProjectile>
-      <fSpeed>500.0</fSpeed>
-      <fArcValue>0.0</fArcValue>
-    </EffectInfo>
-    <EffectInfo>
-      <Type>EFFECT_CATAPULT_ROCK</Type>
-      <Description>Catapult Rock</Description>
-      <fScale>1.0</fScale>
-      <fUpdateRate>1.0</fUpdateRate>
-      <Path>Art/Units/Catapult/CatapultRock.kfm</Path>
-      <bIsProjectile>1</bIsProjectile>
-      <fSpeed>500.0</fSpeed>
-      <fArcValue>4.0</fArcValue>
-    </EffectInfo>
-    <EffectInfo>
-      <Type>EFFECT_HWACHA_ROCKET</Type>
-      <Description>Hwacha Rocket fire</Description>
-      <fScale>1.0</fScale>
-      <fUpdateRate>1.0</fUpdateRate>
-      <Path>Art/Units/Hwacha_Korean/Hwacha_Rocket.kfm</Path>
-      <bIsProjectile>1</bIsProjectile>
-      <fSpeed>350.0</fSpeed>
-      <fArcValue>4.0</fArcValue>
-    </EffectInfo>
-    <EffectInfo>
-      <Type>EFFECT_STONE_THROW</Type>
-      <Description>Peltast Sling Stone</Description>
-      <fScale>1.0</fScale>
-      <fUpdateRate>1.0</fUpdateRate>
-      <Path>Art/Units/Peltast/Peltast_Stone_Throw.kfm</Path>
-      <bIsProjectile>1</bIsProjectile>
-      <fSpeed>350.0</fSpeed>
-      <fArcValue>4.0</fArcValue>
-    </EffectInfo>
-    <EffectInfo>
-      <Type>EFFECT_MONGOL_JAV</Type>
-      <Description>Mongolian Javelin</Description>
-      <fScale>1.0</fScale>
-      <fUpdateRate>1.0</fUpdateRate>
-      <Path>Art/Units/Mongolian_JavelinThrower/Mongolian_Javelin.nif</Path>
-      <bIsProjectile>1</bIsProjectile>
-      <fSpeed>500.0</fSpeed>
-      <fArcValue>2.0</fArcValue>
-    </EffectInfo>
-    <EffectInfo>
-      <Type>EFFECT_TREBUCHET_ROCK</Type>
-      <Description>Trebuchet Rock</Description>
-      <fScale>1.0</fScale>
-      <fUpdateRate>1.0</fUpdateRate>
-      <Path>Art/Units/Trebuchet/TrebuchetRock.kfm</Path>
-      <bIsProjectile>1</bIsProjectile>
-      <fSpeed>400</fSpeed>
-      <fArcValue>6</fArcValue>
-    </EffectInfo>
-    <EffectInfo>
-      <Type>FOOTPRINT</Type>
-      <Description>Footprint</Description>
-      <fScale>1.0</fScale>
-      <fUpdateRate>1.0</fUpdateRate>
-      <Path>Art/Shared/Footstep.nif</Path>
-      <bIsProjectile>0</bIsProjectile>
-    </EffectInfo>
-    <EffectInfo>
-      <Type>EFFECT_BOULDER_IMPACT</Type>
-      <Description>Boulder explosion in Dirt</Description>
-      <fScale>1.0</fScale>
-      <fUpdateRate>1.0</fUpdateRate>
-      <Path>Art/Effects/explosion_dirt_02/fx_explosion_dirt_02.nif</Path>
-      <bIsProjectile>0</bIsProjectile>
-    </EffectInfo>
-    <EffectInfo>
-      <Type>EFFECT_CATAPULT_HIT_SMALL</Type>
-      <Description>Small Rock explosion for a Hit Catapult</Description>
-      <fScale>0.20</fScale>
-      <fUpdateRate>3.0</fUpdateRate>
-      <Path>Art/Effects/explosion_dirt_02/fx_explosion_dirt_02.nif</Path>
-      <bIsProjectile>0</bIsProjectile>
-    </EffectInfo>
-    <EffectInfo>
-      <Type>EFFECT_CATAPULT_HIT_LARGE</Type>
-      <Description>Boulder explosion for Catapult Death</Description>
-      <fScale>0.32</fScale>
-      <fUpdateRate>2.7</fUpdateRate>
-      <Path>Art/Effects/explosion_dirt_02/fx_explosion_dirt_02.nif</Path>
-      <bIsProjectile>0</bIsProjectile>
-    </EffectInfo>
-    <EffectInfo>
-      <Type>EFFECT_BOULDER_SMOKETRAIL</Type>
-      <Description>Catapult Boulder smoke trail</Description>
-      <fScale>1.0</fScale>
-      <fUpdateRate>1.0</fUpdateRate>
-      <Path>Art/Effects/Smoke_Contrail/fx_smoke_contrail.nif</Path>
-      <bIsProjectile>0</bIsProjectile>
-    </EffectInfo>
-    <EffectInfo>
-      <Type>EFFECT_CATAPULT_ROCK_EXPLODE</Type>
-      <Description>Boulder Explosion for Catapult Attack</Description>
-      <fScale>0.6</fScale>
-      <fUpdateRate>2.5</fUpdateRate>
-      <Path>Art/Effects/explosion_dirt_02/fx_explosion_dirt_02.nif</Path>
-      <bIsProjectile>0</bIsProjectile>
-    </EffectInfo>
-    <EffectInfo>
-      <Type>EFFECT_GALLEY_SINKING_FROTH</Type>
-      <Description>Galley_Sinking_Froth</Description>
-      <fScale>0.25</fScale>
-      <fUpdateRate>2.0</fUpdateRate>
-      <Path>Art/Effects/water_ship_sinking_froth/fx_water_ship_sinking_froth.nif</Path>
-      <bIsProjectile>0</bIsProjectile>
-    </EffectInfo>
-    <EffectInfo>
-      <Type>EFFECT_GALLEY_SPLASH_PLUME_LRG</Type>
-      <Description>Water Plume Splash Small</Description>
-      <fScale>1.0</fScale>
-      <fUpdateRate>2.0</fUpdateRate>
-      <Path>Art/Effects/water_splash_plume/fx_water_plume01.nif</Path>
-      <bIsProjectile>0</bIsProjectile>
-    </EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_LONGBOWARROW</Type>
+			<Description>Longbow Arrow</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Units/Longbowman/LongbowArrow.nif</Path>
+			<bIsProjectile>1</bIsProjectile>
+			<fSpeed>500.0</fSpeed>
+			<fArcValue>0.0</fArcValue>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_CROSSBOWBOLT</Type>
+			<Description>Crossbow bolt</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Units/Crossbowman/CrossbowBolt.nif</Path>
+			<bIsProjectile>1</bIsProjectile>
+			<fSpeed>500.0</fSpeed>
+			<fArcValue>0.0</fArcValue>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_ARCHERARROW</Type>
+			<Description>ArcherArrow</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Units/Archer/ArcherArrow.nif</Path>
+			<bIsProjectile>1</bIsProjectile>
+			<fSpeed>500.0</fSpeed>
+			<fArcValue>0.0</fArcValue>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_CHINESEARROW</Type>
+			<Description>ChineseArcherArrow</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Units/Archer_Chinese/Archer_Chinese_Arrow.nif</Path>
+			<bIsProjectile>1</bIsProjectile>
+			<fSpeed>500.0</fSpeed>
+			<fArcValue>0.0</fArcValue>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_EGYPTIANARROW</Type>
+			<Description>EgyptianArcherArrow</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Units/Archer_New/Archer_Egyptian_Arrow.nif</Path>
+			<bIsProjectile>1</bIsProjectile>
+			<fSpeed>500.0</fSpeed>
+			<fArcValue>0.0</fArcValue>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_EURASIANARROW</Type>
+			<Description>EurasianArcherArrow</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Units/Archer_Eurasian/Archer_Eurasian_Arrow.nif</Path>
+			<bIsProjectile>1</bIsProjectile>
+			<fSpeed>500.0</fSpeed>
+			<fArcValue>0.0</fArcValue>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_GALLEY_FIREARROW</Type>
+			<Description>Galley Fire Arrow Effect</Description>
+			<fScale>0.7</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Effects/fire_arrow/fx_Galley_FireArrow.nif</Path>
+			<bIsProjectile>1</bIsProjectile>
+			<fSpeed>300.0</fSpeed>
+			<fArcValue>3.0</fArcValue>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_GALLEY_ARROWS</Type>
+			<Description>Galley Arrows</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Effects/PrototypeEffects/Galley/GalleyArrows.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+			<fSpeed>0</fSpeed>
+			<fArcValue>0</fArcValue>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_PAWPRINT</Type>
+			<Description>Wild Animal Paw Print</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Shared/PawPrint.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_CAMELARCHERARROW</Type>
+			<Description>CamelArcherArrow</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Units/Unique/Arabia/CamelArcher/ArabiaCamelArcherArrow.nif</Path>
+			<bIsProjectile>1</bIsProjectile>
+			<fSpeed>500.0</fSpeed>
+			<fArcValue>0.0</fArcValue>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_MALISPEAR</Type>
+			<Description>Mali Spear</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Units/Unique/Mali/Skirmisher/MaliSkirmisherSpear.nif</Path>
+			<bIsProjectile>1</bIsProjectile>
+			<fSpeed>500.0</fSpeed>
+			<fArcValue>0.0</fArcValue>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_CATAPULT_ROCK</Type>
+			<Description>Catapult Rock</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Units/Catapult/CatapultRock.kfm</Path>
+			<bIsProjectile>1</bIsProjectile>
+			<fSpeed>500.0</fSpeed>
+			<fArcValue>4.0</fArcValue>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_HWACHA_ROCKET</Type>
+			<Description>Hwacha Rocket fire</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Units/Hwacha_Korean/Hwacha_Rocket.kfm</Path>
+			<bIsProjectile>1</bIsProjectile>
+			<fSpeed>350.0</fSpeed>
+			<fArcValue>4.0</fArcValue>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_STONE_THROW</Type>
+			<Description>Peltast Sling Stone</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Units/Peltast/Peltast_Stone_Throw.kfm</Path>
+			<bIsProjectile>1</bIsProjectile>
+			<fSpeed>350.0</fSpeed>
+			<fArcValue>4.0</fArcValue>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_MONGOL_JAV</Type>
+			<Description>Mongolian Javelin</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Units/Mongolian_JavelinThrower/Mongolian_Javelin.nif</Path>
+			<bIsProjectile>1</bIsProjectile>
+			<fSpeed>500.0</fSpeed>
+			<fArcValue>2.0</fArcValue>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_TREBUCHET_ROCK</Type>
+			<Description>Trebuchet Rock</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Units/Trebuchet/TrebuchetRock.kfm</Path>
+			<bIsProjectile>1</bIsProjectile>
+			<fSpeed>400</fSpeed>
+			<fArcValue>6</fArcValue>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>FOOTPRINT</Type>
+			<Description>Footprint</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Shared/Footstep.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_BOULDER_IMPACT</Type>
+			<Description>Boulder explosion in Dirt</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Effects/explosion_dirt_02/fx_explosion_dirt_02.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_CATAPULT_HIT_SMALL</Type>
+			<Description>Small Rock explosion for a Hit Catapult</Description>
+			<fScale>0.20</fScale>
+			<fUpdateRate>3.0</fUpdateRate>
+			<Path>Art/Effects/explosion_dirt_02/fx_explosion_dirt_02.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_CATAPULT_HIT_LARGE</Type>
+			<Description>Boulder explosion for Catapult Death</Description>
+			<fScale>0.32</fScale>
+			<fUpdateRate>2.7</fUpdateRate>
+			<Path>Art/Effects/explosion_dirt_02/fx_explosion_dirt_02.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_BOULDER_SMOKETRAIL</Type>
+			<Description>Catapult Boulder smoke trail</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Effects/Smoke_Contrail/fx_smoke_contrail.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_CATAPULT_ROCK_EXPLODE</Type>
+			<Description>Boulder Explosion for Catapult Attack</Description>
+			<fScale>0.6</fScale>
+			<fUpdateRate>2.5</fUpdateRate>
+			<Path>Art/Effects/explosion_dirt_02/fx_explosion_dirt_02.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_GALLEY_SINKING_FROTH</Type>
+			<Description>Galley_Sinking_Froth</Description>
+			<fScale>0.25</fScale>
+			<fUpdateRate>2.0</fUpdateRate>
+			<Path>Art/Effects/water_ship_sinking_froth/fx_water_ship_sinking_froth.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_GALLEY_SPLASH_PLUME_LRG</Type>
+			<Description>Water Plume Splash Small</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>2.0</fUpdateRate>
+			<Path>Art/Effects/water_splash_plume/fx_water_plume01.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
 		<!-- Projectiles:-->
-    <EffectInfo>
-      <Type>EFFECT_HORSEARCHERARROW</Type>
-      <Description>HorseArcherArrow</Description>
-      <fScale>1.0</fScale>
-      <fUpdateRate>1.0</fUpdateRate>
-      <Path>Art/Units/HorseArcher/HorseArcherArrow.nif</Path>
-      <bIsProjectile>1</bIsProjectile>
-      <fSpeed>500.0</fSpeed>
-      <fArcValue>0.0</fArcValue>
-    </EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_HORSEARCHERARROW</Type>
+			<Description>HorseArcherArrow</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Units/HorseArcher/HorseArcherArrow.nif</Path>
+			<bIsProjectile>1</bIsProjectile>
+			<fSpeed>500.0</fSpeed>
+			<fArcValue>0.0</fArcValue>
+		</EffectInfo>
 		<EffectInfo>
 			<Type>EFFECT_TOMAHAWK_THROWN</Type>
 			<Description>Tomahawk Projectile</Description>

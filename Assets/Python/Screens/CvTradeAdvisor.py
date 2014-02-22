@@ -206,13 +206,13 @@ class CvTradeAdvisor:
 					Disallow = gc.getCivicInfo(iCivic).getDisallowsTech()
 					DisAllowedTech[Disallow] = True
 		for iCivic in range(gc.getNumCivicInfos()):
-			if (gc.getCivicInfo(iCivic).getCivicOptionType() == 5):
+			if (gc.getCivicInfo(iCivic).getCivicOptionType() == 0):
 				if gc.getCivicInfo(iCivic).getInventionCategory() == -1 and iCivic == 2:
 					
 
 					
 					for iListCivic in range(gc.getNumCivicInfos()):
-						if (gc.getCivicInfo(iListCivic).getCivicOptionType() == 5):
+						if (gc.getCivicInfo(iListCivic).getCivicOptionType() == 0):
 							
 							iCategory = gc.getCivicInfo(iListCivic).getInventionCategory()
 							
@@ -510,7 +510,7 @@ class CvTradeAdvisor:
 
 		for i in range(gc.getNumCivicInfos()):
 
-			if (gc.getCivicInfo(i).getCivicOptionType() != 5):
+			if (gc.getCivicInfo(i).getCivicOptionType() != 0):
 				continue
 				
 			if gc.getCivicInfo(i).getInventionCategory() == -1:

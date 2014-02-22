@@ -109,6 +109,13 @@ public:
 
 	virtual void		Write(double value) = 0;
 	virtual void		Write(int count, const double values[]) = 0;
+
+	/// 64 bit save - start - Nightinggale
+	void                Read(__int64* variable);
+	void                Read(unsigned __int64* variable);
+	void		        Write(__int64 value);
+	void		        Write(unsigned __int64 value);
+	/// 64 bit save - end - Nightinggale
 };
 
 #endif	//FDATASTREAMBASE_H

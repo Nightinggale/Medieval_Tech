@@ -5,14 +5,14 @@
 <!-- -->
 <!-- Game Text - New -->
 <Civ4GameText xmlns="http://www.firaxis.com">
-  <TEXT>
-    <Tag>AI_DIPLO_REJECT_POPE_PINKY_1</Tag>
-    <English>You Fool! I will invoke Censure!</English>
-    <French></French>
-    <German></German>
-    <Italian></Italian>
-    <Spanish></Spanish>
-  </TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REJECT_POPE_PINKY_1</Tag>
+		<English>You Fool! I will invoke Censure!</English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_FUR_GLAD_10</Tag>
 		<English>[OUR_CIV_SHORT] thanks you and your petty little colony.</English>
@@ -45,30 +45,30 @@
 		<Italian>Vorremmo offrirti questo insediamento in segno di rispetto.</Italian>
 		<Spanish>Nos gustar&#237;a ofreceros este asentamiento como muestra de respeto.</Spanish>
 	</TEXT>
-  <TEXT>
-    <Tag>AI_DIPLO_OFFER_CITY_VASSAL</Tag>
-    <English>We would like to offer up this settlement as a vassal and a sign of our fealty.</English>
-    <French>Nous aimerions vous offrir cette colonie en gage de notre respect.</French>
-    <German>Wir m&#246;chten Euch diese Siedlung als Zeichen unseres Respekts anbieten.</German>
-    <Italian>Vorremmo offrirti questo insediamento in segno di rispetto.</Italian>
-    <Spanish>Nos gustar&#237;a ofreceros este asentamiento como muestra de respeto.</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>AI_DIPLO_DEMAND_LANDS</Tag>
-    <English>No, we desire only your lands (this will disband the settlement).</English>
-    <French>No, we desire only your lands (this will disband the settlement).</French>
-    <German>No, we desire only your lands (this will disband the settlement).</German>
-    <Italian>No, we desire only your lands (this will disband the settlement).</Italian>
-    <Spanish>No, we desire only your lands (this will disband the settlement).</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>AI_DIPLO_GIVE_VASSAL_LANDS</Tag>
-    <English>Ahh, very well. The settlements lands are yours and is it's people.</English>
-    <French>Ahh, very well. The settlements lands are yours and is it's people.</French>
-    <German>Ahh, very well. The settlements lands are yours and is it's people.</German>
-    <Italian>Ahh, very well. The settlements lands are yours and is it's people.</Italian>
-    <Spanish>Ahh, very well. The settlements lands are yours and is it's people.</Spanish>
-  </TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_OFFER_CITY_VASSAL</Tag>
+		<English>We would like to offer up this settlement as a vassal and a sign of our fealty.</English>
+		<French>Nous aimerions vous offrir cette colonie en gage de notre respect.</French>
+		<German>Wir m&#246;chten Euch diese Siedlung als Zeichen unseres Respekts anbieten.</German>
+		<Italian>Vorremmo offrirti questo insediamento in segno di rispetto.</Italian>
+		<Spanish>Nos gustar&#237;a ofreceros este asentamiento como muestra de respeto.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_LANDS</Tag>
+		<English>No, we desire only your lands (this will disband the settlement).</English>
+		<French>No, we desire only your lands (this will disband the settlement).</French>
+		<German>No, we desire only your lands (this will disband the settlement).</German>
+		<Italian>No, we desire only your lands (this will disband the settlement).</Italian>
+		<Spanish>No, we desire only your lands (this will disband the settlement).</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GIVE_VASSAL_LANDS</Tag>
+		<English>Ahh, very well. The settlements lands are yours and is it's people.</English>
+		<French>Ahh, very well. The settlements lands are yours and is it's people.</French>
+		<German>Ahh, very well. The settlements lands are yours and is it's people.</German>
+		<Italian>Ahh, very well. The settlements lands are yours and is it's people.</Italian>
+		<Spanish>Ahh, very well. The settlements lands are yours and is it's people.</Spanish>
+	</TEXT>
 	<!--FIRST CONTACT-->
 	<TEXT>
 		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_CHARLEMAGNE_1</Tag>
@@ -1134,22 +1134,22 @@
 		<Italian>Bene.</Italian>
 		<Spanish>Muy bien.</Spanish>
 	</TEXT>
-  <TEXT>
-    <Tag>USER_DIPLO_REJECT_PINKY_2</Tag>
-    <English>Whatever!</English>
-    <French>Tr&#232;s bien.</French>
-    <German>Gut.</German>
-    <Italian>Bene.</Italian>
-    <Spanish>Muy bien.</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>USER_DIPLO_REJECT_PINKY_3</Tag>
-    <English>Whatever, P Dog!</English>
-    <French>Tr&#232;s bien.</French>
-    <German>Gut.</German>
-    <Italian>Bene.</Italian>
-    <Spanish>Muy bien.</Spanish>
-  </TEXT>
+	<TEXT>
+		<Tag>USER_DIPLO_REJECT_PINKY_2</Tag>
+		<English>Whatever!</English>
+		<French>Tr&#232;s bien.</French>
+		<German>Gut.</German>
+		<Italian>Bene.</Italian>
+		<Spanish>Muy bien.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>USER_DIPLO_REJECT_PINKY_3</Tag>
+		<English>Whatever, P Dog!</English>
+		<French>Tr&#232;s bien.</French>
+		<German>Gut.</German>
+		<Italian>Bene.</Italian>
+		<Spanish>Muy bien.</Spanish>
+	</TEXT>
 	<!--SEND SCOUT INTO NATIVE VILLAGE-->
 	<TEXT>
 		<Tag>AI_DIPLO_CHIEF_GOODY_1</Tag>
@@ -1233,46 +1233,46 @@
 		<Italian>Visto che siete un piccolo gruppo di nomadi, vi offriamo di godere della terra che vi circonda.</Italian>
 		<Spanish>Ya que sois un peque&#241;o grupo de n&#243;madas, os invitamos a que acept&#233;is la tierra que os rodea.</Spanish>
 	</TEXT>
-  <TEXT>
-    <Tag>AI_DIPLO_MEET_THE_POP</Tag>
-    <English>Greetings, my child, I hope your dealings with the Church will be pleasant and forth-right?</English>
-    <French>Greetings, my child, I hope your dealings with the Church will be pleasant and forth-right?</French>
-    <German>Greetings, my child, I hope your dealings with the Church will be pleasant and forth-right?</German>
-    <Italian>Greetings, my child, I hope your dealings with the Church will be pleasant and forth-right?</Italian>
-    <Spanish>Greetings, my child, I hope your dealings with the Church will be pleasant and forth-right?</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>USER_DIPLO_MEET_THE_POP_1</Tag>
-    <English>Yes, your Holiness, I am looking forward to kissing your Holy ring.</English>
-    <French>Yes, your Holiness, I am looking forward to kissing your holy ring.</French>
-    <German>Yes, your Holiness, I am looking forward to kissing your holy ring.</German>
-    <Italian>Yes, your Holiness, I am looking forward to kissing your holy ring.</Italian>
-    <Spanish>Yes, your Holiness, I am looking forward to kissing your holy ring.</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>USER_DIPLO_MEET_THE_POP_INSULT_1</Tag>
-    <English>Church, Smurch! (Insult)</English>
-    <French>Church, Smurch! (Insult)</French>
-    <German>Church, Smurch! (Insult)</German>
-    <Italian>Church, Smurch! (Insult)</Italian>
-    <Spanish>Church, Smurch! (Insult)</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>USER_DIPLO_MEET_THE_POP_INSULT_2</Tag>
-    <English>I "hope" you can manage to keep your Holy noise out of my business! (Insult)</English>
-    <French>I "hope" you can manage to keep your holy noise out of my business! (Insult)</French>
-    <German>I "hope" you can manage to keep your holy noise out of my business! (Insult)</German>
-    <Italian>I "hope" you can manage to keep your holy noise out of my business! (Insult)</Italian>
-    <Spanish>I "hope" you can manage to keep your holy noise out of my business! (Insult)</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>USER_DIPLO_MEET_THE_POP_INSULT_3</Tag>
-    <English>Yes, I am looking forward to kissing your Holy ass, err umm, I mean Ring! (Insult)</English>
-    <French>And Who are you? (Insult)</French>
-    <German>And Who are you? (Insult)</German>
-    <Italian>And Who are you? (Insult)</Italian>
-    <Spanish>And Who are you? (Insult)</Spanish>
-  </TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_MEET_THE_POP</Tag>
+		<English>Greetings, my child, I hope your dealings with the Church will be pleasant and forth-right?</English>
+		<French>Greetings, my child, I hope your dealings with the Church will be pleasant and forth-right?</French>
+		<German>Greetings, my child, I hope your dealings with the Church will be pleasant and forth-right?</German>
+		<Italian>Greetings, my child, I hope your dealings with the Church will be pleasant and forth-right?</Italian>
+		<Spanish>Greetings, my child, I hope your dealings with the Church will be pleasant and forth-right?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>USER_DIPLO_MEET_THE_POP_1</Tag>
+		<English>Yes, your Holiness, I am looking forward to kissing your Holy ring.</English>
+		<French>Yes, your Holiness, I am looking forward to kissing your holy ring.</French>
+		<German>Yes, your Holiness, I am looking forward to kissing your holy ring.</German>
+		<Italian>Yes, your Holiness, I am looking forward to kissing your holy ring.</Italian>
+		<Spanish>Yes, your Holiness, I am looking forward to kissing your holy ring.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>USER_DIPLO_MEET_THE_POP_INSULT_1</Tag>
+		<English>Church, Smurch! (Insult)</English>
+		<French>Church, Smurch! (Insult)</French>
+		<German>Church, Smurch! (Insult)</German>
+		<Italian>Church, Smurch! (Insult)</Italian>
+		<Spanish>Church, Smurch! (Insult)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>USER_DIPLO_MEET_THE_POP_INSULT_2</Tag>
+		<English>I "hope" you can manage to keep your Holy noise out of my business! (Insult)</English>
+		<French>I "hope" you can manage to keep your holy noise out of my business! (Insult)</French>
+		<German>I "hope" you can manage to keep your holy noise out of my business! (Insult)</German>
+		<Italian>I "hope" you can manage to keep your holy noise out of my business! (Insult)</Italian>
+		<Spanish>I "hope" you can manage to keep your holy noise out of my business! (Insult)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>USER_DIPLO_MEET_THE_POP_INSULT_3</Tag>
+		<English>Yes, I am looking forward to kissing your Holy ass, err umm, I mean Ring! (Insult)</English>
+		<French>And Who are you? (Insult)</French>
+		<German>And Who are you? (Insult)</German>
+		<Italian>And Who are you? (Insult)</Italian>
+		<Spanish>And Who are you? (Insult)</Spanish>
+	</TEXT>
 	<TEXT>
 		<Tag>USER_DIPLO_FOUND_FIRST_CITY_1</Tag>
 		<English>Thank you, neighbor!</English>
@@ -1555,7 +1555,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_FOUND_CITY_INLAND_1</Tag>
-		<English>This site lacks ocean access. You will have to build Wagon Trains to transfer goods to a port, and from there ship them back to Europe. Are you sure you want to settle here?</English>
+		<English>This site lacks ocean access. You will have to build Supply Trains to transfer goods to a port, and from there ship them back to Europe. Are you sure you want to settle here?</English>
 		<French>Cet endroit n'offre pas d'acc&#232;s &#224; l'oc&#233;an. Vous devrez construire des convois de chariots pour acheminer les marchandises vers un port avant qu'elles n'embarquent pour l'Europe. Voulez-vous vraiment vous installer ici ?</French>
 		<German>Dieser Ort hat keinen direkten Zugang zum Ozean. Ihr werdet Kutschentrosse bauen m&#252;ssen zur Bef&#246;rderung der G&#252;ter an einen Hafen, um sie von da aus nach Europa zu verschiffen. Wollt Ihr Euch wirklich hier ansiedeln?</German>
 		<Italian>A questa posizione manca un accesso al mare. Dovrai costruire colonne di carovane per trasportare i beni verso un porto da cui poi inviarli in Europa. Sei sicuro di volerti insediare qui?</Italian>

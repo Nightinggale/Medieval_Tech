@@ -26,9 +26,9 @@
 			<Type>FATHERCATEGORY_POLITICS</Type>
 			<Description>TXT_KEY_FATHERCATEGORY_POLITICS</Description>
 		</FatherCategoryInfo>
-    <FatherCategoryInfo>
-      <Type>FATHERCATEGORY_REAL_TRADE</Type>
-      <Description>Trading</Description>
-    </FatherCategoryInfo>
+		<FatherCategoryInfo>
+			<Type>FATHERCATEGORY_REAL_TRADE</Type>
+			<Description>Trading</Description>
+		</FatherCategoryInfo>
 	</FatherCategoryInfos>
 </Civ4FatherCategoryInfos>

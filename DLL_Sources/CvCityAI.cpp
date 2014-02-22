@@ -9,6 +9,9 @@
 #include "CyArgsList.h"
 #include "CvInfos.h"
 #include "CvMap.h"
+#include "CvUnitAI.h"
+
+#include "CvInfoProfessions.h"
 
 #include "CvDLLPythonIFaceBase.h"
 #include "CvDLLInterfaceIFaceBase.h"

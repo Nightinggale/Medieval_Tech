@@ -14,11 +14,590 @@
 #include "FVariableSystem.h"
 #include "CvGameCoreUtils.h"
 
+#include "CvInfoProfessions.h"
+
 // XML length check - start - Nightinggale
 #ifdef FASSERT_ENABLE
 char f_szXMLname[1024];
 #endif
 // XML length check - end - Nightinggale
+
+/// XML load - start - Nightinggale
+bool bFirstLoadRound;
+bool bLoadOnce;
+
+void CvXMLLoadUtility::loadXMLFiles()
+{
+	bLoadOnce = false;
+	loadXMLFile(XML_FILE_CIV4BasicInfos);
+	loadXMLFile(XML_FILE_CIV4CalendarInfos);
+	loadXMLFile(XML_FILE_CIV4SeasonInfos);
+	loadXMLFile(XML_FILE_CIV4MonthInfos);
+	loadXMLFile(XML_FILE_CIV4DenialInfos);
+	loadXMLFile(XML_FILE_CIV4InvisibleInfos);
+	loadXMLFile(XML_FILE_CIV4UnitCombatInfos);
+	loadXMLFile(XML_FILE_CIV4DomainInfos);
+	loadXMLFile(XML_FILE_CIV4UnitAIInfos);
+	loadXMLFile(XML_FILE_CIV4AttitudeInfos);
+	loadXMLFile(XML_FILE_CIV4MemoryInfos);
+	loadXMLFile(XML_FILE_CIV4FatherCategoryInfos);
+	loadXMLFile(XML_FILE_CIV4ColorVals);
+	loadXMLFile(XML_FILE_CIV4UnitClassInfos);
+	loadXMLFile(XML_FILE_CIV4CultureLevelInfo);
+	loadXMLFile(XML_FILE_CIV4VictoryInfo);
+	loadXMLFile(XML_FILE_CIV4BuildingClassInfos);
+	loadXMLFile(XML_FILE_CIV4PlayerColorInfos);
+	loadXMLFile(XML_FILE_CIV4EuropeInfo);
+	loadXMLFile(XML_FILE_CIV4YieldInfos);
+	loadXMLFile(XML_FILE_CIV4AlarmInfos);
+	loadXMLFile(XML_FILE_CIV4GameSpeedInfo);
+	loadXMLFile(XML_FILE_CIV4TurnTimerInfo);
+	loadXMLFile(XML_FILE_CIV4WorldInfo);
+	loadXMLFile(XML_FILE_CIV4ClimateInfo);
+	loadXMLFile(XML_FILE_CIV4SeaLevelInfo);
+	loadXMLFile(XML_FILE_CIV4TerrainInfos);
+	loadXMLFile(XML_FILE_CIV4EraInfos);
+	loadXMLFile(XML_FILE_Civ4FeatureInfos);
+	loadXMLFile(XML_FILE_CIV4PromotionInfos);
+	loadXMLFile(XML_FILE_CIV4ProfessionInfos);
+	loadXMLFile(XML_FILE_CIV4GoodyInfo);
+	loadXMLFile(XML_FILE_CIV4TraitInfos);
+	loadXMLFile(XML_FILE_CIV4SpecialBuildingInfos);
+	loadXMLFile(XML_FILE_CIV4AnimationInfos);
+	loadXMLFile(XML_FILE_CIV4AnimationPathInfos);
+	loadXMLFile(XML_FILE_CIV4HandicapInfo);
+	loadXMLFile(XML_FILE_CIV4CursorInfo);
+	loadXMLFile(XML_FILE_CIV4CivicOptionInfos);
+	loadXMLFile(XML_FILE_CIV4HurryInfo);
+	loadXMLFile(XML_FILE_CIV4BuildingInfos);
+	loadXMLFile(XML_FILE_CIV4BonusInfos);
+	loadXMLFile(XML_FILE_Civ4RouteInfos);
+	loadXMLFile(XML_FILE_CIV4ImprovementInfos);
+	loadXMLFile(XML_FILE_CIV4FatherPointInfos);
+	loadXMLFile(XML_FILE_CIV4FatherInfos);
+	loadXMLFile(XML_FILE_CIV4SpecialUnitInfos);
+	loadXMLFile(XML_FILE_CIV4CivicInfos);
+	loadXMLFile(XML_FILE_CIV4LeaderHeadInfos);
+	loadXMLFile(XML_FILE_CIV4EffectInfos);
+	loadXMLFile(XML_FILE_CIV4EntityEventInfos);
+	loadXMLFile(XML_FILE_CIV4BuildInfos);
+	loadXMLFile(XML_FILE_CIV4UnitInfos);
+	loadXMLFile(XML_FILE_CIV4UnitArtStyleTypeInfos);
+	loadXMLFile(XML_FILE_CIV4CivilizationInfos);
+	loadXMLFile(XML_FILE_CIV4MainMenus);
+	loadXMLFile(XML_FILE_CIV4GameOptionInfos);
+	loadXMLFile(XML_FILE_CIV4MPOptionInfos);
+	loadXMLFile(XML_FILE_CIV4ForceControlInfos);
+	loadXMLFile(XML_FILE_CIV4TerrainSettings);
+	loadXMLFile(XML_FILE_CIV4EventInfos);
+	loadXMLFile(XML_FILE_CIV4EventTriggerInfos);
+	loadXMLFile(XML_FILE_CIV4EmphasizeInfo);
+	loadXMLFile(XML_FILE_CIV4MissionInfos);
+	loadXMLFile(XML_FILE_CIV4ControlInfos);
+	loadXMLFile(XML_FILE_CIV4CommandInfos);
+	loadXMLFile(XML_FILE_CIV4AttachableInfos);
+	loadXMLFile(XML_FILE_CIV4DiplomacyInfos);
+
+
+	if (!bFirstLoadRound)
+	{
+		// type less XML files
+		// these files will produce an error if loaded more than once
+		bLoadOnce = true;
+		loadXMLFile(XML_FILE_CIV4Hints);
+		loadXMLFile(XML_FILE_CIV4SlideShowInfos);
+		loadXMLFile(XML_FILE_CIV4SlideShowRandomInfos);
+		loadXMLFile(XML_FILE_CIV4WorldPickerInfos);
+		loadXMLFile(XML_FILE_Civ4RouteModelInfos);
+		loadXMLFile(XML_FILE_CIV4RiverModelInfos);
+		loadXMLFile(XML_FILE_CIV4WaterPlaneInfos);
+		loadXMLFile(XML_FILE_CIV4TerrainPlaneInfos);
+		loadXMLFile(XML_FILE_CIV4CameraOverlayInfos);
+		loadXMLFile(XML_FILE_CIV4AutomateInfos);
+		loadXMLFile(XML_FILE_CIV4InterfaceModeInfos);
+		loadXMLFile(XML_FILE_CIV4FormationInfos);
+	}
+}
+
+void CvXMLLoadUtility::loadXMLFile(XMLFileNames eFile)
+{
+	if (eFile == XML_FILE_CIV4ArtDefines_Bonus)
+	{
+		LoadGlobalClassInfo(ARTFILEMGR.getBonusArtInfo(), "CIV4ArtDefines_Bonus", "Art", "Civ4ArtDefines/BonusArtInfos/BonusArtInfo", NULL);
+	}
+	else if (eFile == XML_FILE_CIV4ArtDefines_Building)
+	{
+		LoadGlobalClassInfo(ARTFILEMGR.getBuildingArtInfo(), "CIV4ArtDefines_Building", "Art", "Civ4ArtDefines/BuildingArtInfos/BuildingArtInfo", NULL);
+	}
+	else if (eFile == XML_FILE_CIV4ArtDefines_Civilization)
+	{
+		LoadGlobalClassInfo(ARTFILEMGR.getCivilizationArtInfo(), "CIV4ArtDefines_Civilization", "Art", "Civ4ArtDefines/CivilizationArtInfos/CivilizationArtInfo", NULL);
+	}
+	else if (eFile == XML_FILE_CIV4ArtDefines_Feature)
+	{
+		LoadGlobalClassInfo(ARTFILEMGR.getFeatureArtInfo(), "CIV4ArtDefines_Feature", "Art", "Civ4ArtDefines/FeatureArtInfos/FeatureArtInfo", NULL);
+	}
+	else if (eFile == XML_FILE_CIV4ArtDefines_Improvement)
+	{
+		LoadGlobalClassInfo(ARTFILEMGR.getImprovementArtInfo(), "CIV4ArtDefines_Improvement", "Art", "Civ4ArtDefines/ImprovementArtInfos/ImprovementArtInfo", NULL);
+	}
+	else if (eFile == XML_FILE_CIV4ArtDefines_Interface)
+	{
+		LoadGlobalClassInfo(ARTFILEMGR.getInterfaceArtInfo(), "CIV4ArtDefines_Interface", "Art", "Civ4ArtDefines/InterfaceArtInfos/InterfaceArtInfo", NULL);
+	}
+	else if (eFile == XML_FILE_CIV4ArtDefines_Leaderhead)
+	{
+		LoadGlobalClassInfo(ARTFILEMGR.getLeaderheadArtInfo(), "CIV4ArtDefines_Leaderhead", "Art", "Civ4ArtDefines/LeaderheadArtInfos/LeaderheadArtInfo", NULL);
+	}
+	else if (eFile == XML_FILE_CIV4ArtDefines_Misc)
+	{
+		LoadGlobalClassInfo(ARTFILEMGR.getMiscArtInfo(), "CIV4ArtDefines_Misc", "Art", "Civ4ArtDefines/MiscArtInfos/MiscArtInfo", NULL);
+	}
+	else if (eFile == XML_FILE_CIV4ArtDefines_Movie)
+	{
+		LoadGlobalClassInfo(ARTFILEMGR.getMovieArtInfo(), "CIV4ArtDefines_Movie", "Art", "Civ4ArtDefines/MovieArtInfos/MovieArtInfo", NULL);
+	}
+	else if (eFile == XML_FILE_CIV4ArtDefines_Terrain)
+	{
+		LoadGlobalClassInfo(ARTFILEMGR.getTerrainArtInfo(), "CIV4ArtDefines_Terrain", "Art", "Civ4ArtDefines/TerrainArtInfos/TerrainArtInfo", NULL);
+	}
+	else if (eFile == XML_FILE_CIV4ArtDefines_Unit)
+	{
+		LoadGlobalClassInfo(ARTFILEMGR.getUnitArtInfo(), "CIV4ArtDefines_Unit", "Art", "Civ4ArtDefines/UnitArtInfos/UnitArtInfo", NULL);
+	}
+	else if (eFile == XML_FILE_CIV4AlarmInfos)
+	{
+		LoadGlobalClassInfo(GC.getAlarmInfo(), "CIV4AlarmInfos", "Civilizations", "Civ4AlarmInfos/AlarmInfos/AlarmInfo", NULL);
+		FAssertMsg(GC.getNumAlarmInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4AnimationInfos)
+	{
+		LoadGlobalClassInfo(GC.getAnimationCategoryInfo(), "CIV4AnimationInfos", "Units", "Civ4AnimationInfos/AnimationCategories/AnimationCategory", NULL);
+		FAssertMsg(GC.getNumAnimationCategoryInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4AnimationPathInfos)
+	{
+		LoadGlobalClassInfo(GC.getAnimationPathInfo(), "CIV4AnimationPathInfos", "Units", "Civ4AnimationPathInfos/AnimationPaths/AnimationPath", NULL);
+		FAssertMsg(GC.getNumAnimationPathInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4AttachableInfos)
+	{
+		LoadGlobalClassInfo(GC.getAttachableInfo(), "CIV4AttachableInfos", "Misc", "Civ4AttachableInfos/AttachableInfos/AttachableInfo", NULL);
+		FAssertMsg(GC.getNumAttachableInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4AttitudeInfos)
+	{
+		LoadGlobalClassInfo(GC.getAttitudeInfo(), "CIV4AttitudeInfos", "BasicInfos", "Civ4AttitudeInfos/AttitudeInfos/AttitudeInfo", NULL);
+		GC.CheckEnumAttitudeTypes(); // XML enum check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4AutomateInfos)
+	{
+		LoadGlobalClassInfo(GC.getAutomateInfo(), "CIV4AutomateInfos", "Units", "Civ4AutomateInfos/AutomateInfos/AutomateInfo", NULL);
+		FAssertMsg(GC.getNumAutomateInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+		UpdateProgressCB("Global Interface");
+	}
+	else if (eFile == XML_FILE_CIV4BonusInfos)
+	{
+		LoadGlobalClassInfo(GC.getBonusInfo(), "CIV4BonusInfos", "Terrain", "Civ4BonusInfos/BonusInfos/BonusInfo", &CvDLLUtilityIFaceBase::createBonusInfoCacheObject);
+		FAssertMsg(GC.getNumBonusInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4BuildInfos)
+	{
+		LoadGlobalClassInfo(GC.getBuildInfo(), "CIV4BuildInfos", "Units", "Civ4BuildInfos/BuildInfos/BuildInfo", NULL);
+		FAssertMsg(GC.getNumBuildInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4BuildingClassInfos)
+	{
+		LoadGlobalClassInfo(GC.getBuildingClassInfo(), "CIV4BuildingClassInfos", "Buildings", "Civ4BuildingClassInfos/BuildingClassInfos/BuildingClassInfo", NULL);
+		FAssertMsg(GC.getNumBuildingClassInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4BuildingInfos)
+	{
+		LoadGlobalClassInfo(GC.getBuildingInfo(), "CIV4BuildingInfos", "Buildings", "Civ4BuildingInfos/BuildingInfos/BuildingInfo", &CvDLLUtilityIFaceBase::createBuildingInfoCacheObject);
+		FAssertMsg(GC.getNumBuildingInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4CalendarInfos)
+	{
+		LoadGlobalClassInfo(GC.getCalendarInfo(), "CIV4CalendarInfos", "BasicInfos", "Civ4CalendarInfos/CalendarInfos/CalendarInfo", NULL);
+		FAssertMsg(GC.getNumCalendarInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4CameraOverlayInfos)
+	{
+		LoadGlobalClassInfo(GC.getCameraOverlayInfo(), "CIV4CameraOverlayInfos", "Misc", "Civ4CameraOverlayInfos/CameraOverlayInfos/CameraOverlayInfo", NULL);
+		FAssertMsg(GC.getNumCameraOverlayInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+		UpdateProgressCB("Global Emphasize");
+	}
+	else if (eFile == XML_FILE_CIV4CivicInfos)
+	{
+		LoadGlobalClassInfo(GC.getCivicInfo(), "CIV4CivicInfos", "GameInfo", "Civ4CivicInfos/CivicInfos/CivicInfo", &CvDLLUtilityIFaceBase::createCivicInfoCacheObject);
+		FAssertMsg(GC.getNumCivicInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4CivicOptionInfos)
+	{
+		LoadGlobalClassInfo(GC.getCivicOptionInfo(), "CIV4CivicOptionInfos", "GameInfo", "Civ4CivicOptionInfos/CivicOptionInfos/CivicOptionInfo", NULL);
+		FAssertMsg(GC.getNumCivicOptionInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4CivilizationInfos)
+	{
+		LoadGlobalClassInfo(GC.getCivilizationInfo(), "CIV4CivilizationInfos", "Civilizations", "Civ4CivilizationInfos/CivilizationInfos/CivilizationInfo", &CvDLLUtilityIFaceBase::createCivilizationInfoCacheObject);
+		FAssertMsg(GC.getNumCivilizationInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4ClimateInfo)
+	{
+		LoadGlobalClassInfo(GC.getClimateInfo(), "CIV4ClimateInfo", "GameInfo", "Civ4ClimateInfo/ClimateInfos/ClimateInfo", NULL);
+		FAssertMsg(GC.getNumClimateInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4ColorVals)
+	{
+		LoadGlobalClassInfo(GC.getColorInfo(), "CIV4ColorVals", "Interface", "Civ4ColorVals/ColorVals/ColorVal", NULL);
+		FAssertMsg(GC.getNumColorInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4CommandInfos)
+	{
+		LoadGlobalClassInfo(GC.getCommandInfo(), "CIV4CommandInfos", "Units", "Civ4CommandInfos/CommandInfos/CommandInfo", NULL);
+		FAssertMsg(GC.getNumCommandInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4BasicInfos)
+	{
+		LoadGlobalClassInfo(GC.getConceptInfo(), "CIV4BasicInfos", "BasicInfos", "Civ4BasicInfos/ConceptInfos/ConceptInfo", NULL);
+		FAssertMsg(GC.getNumConceptInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4ControlInfos)
+	{
+		LoadGlobalClassInfo(GC.getControlInfo(), "CIV4ControlInfos", "Units", "Civ4ControlInfos/ControlInfos/ControlInfo", NULL);
+		FAssertMsg(GC.getNumControlInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4CultureLevelInfo)
+	{
+		LoadGlobalClassInfo(GC.getCultureLevelInfo(), "CIV4CultureLevelInfo", "GameInfo", "Civ4CultureLevelInfo/CultureLevelInfos/CultureLevelInfo", NULL);
+		FAssertMsg(GC.getNumCultureLevelInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4CursorInfo)
+	{
+		LoadGlobalClassInfo(GC.getCursorInfo(), "CIV4CursorInfo", "GameInfo", "Civ4CursorInfo/CursorInfos/CursorInfo", NULL);
+		FAssertMsg(GC.getNumCursorInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4DenialInfos)
+	{
+		LoadGlobalClassInfo(GC.getDenialInfo(), "CIV4DenialInfos", "BasicInfos", "Civ4DenialInfos/DenialInfos/DenialInfo", NULL);
+		FAssertMsg(GC.getNumDenialInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4DiplomacyInfos)
+	{
+		if (bFirstLoadRound)
+		{
+			LoadGlobalClassInfo(GC.getDiplomacyInfo(), "CIV4DiplomacyInfos", "GameInfo", "Civ4DiplomacyInfos/DiplomacyInfos/DiplomacyInfo", NULL);
+		} else {
+			// Special Case Diplomacy Info due to double vectored nature and appending of Responses
+			LoadDiplomacyInfo(GC.getDiplomacyInfo(), "CIV4DiplomacyInfos", "GameInfo", "Civ4DiplomacyInfos/DiplomacyInfos/DiplomacyInfo", &CvDLLUtilityIFaceBase::createDiplomacyInfoCacheObject);
+		}
+		FAssertMsg(GC.getNumDiplomacyInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4DomainInfos)
+	{
+		LoadGlobalClassInfo(GC.getDomainInfo(), "CIV4DomainInfos", "BasicInfos", "Civ4DomainInfos/DomainInfos/DomainInfo", NULL);
+		GC.CheckEnumDomainTypes(); // XML enum check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4EffectInfos)
+	{
+		LoadGlobalClassInfo(GC.getEffectInfo(), "CIV4EffectInfos", "Misc", "Civ4EffectInfos/EffectInfos/EffectInfo", NULL);
+		FAssertMsg(GC.getNumEffectInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4EmphasizeInfo)
+	{
+		UpdateProgressCB("Global Emphasize");
+		LoadGlobalClassInfo(GC.getEmphasizeInfo(), "CIV4EmphasizeInfo", "GameInfo", "Civ4EmphasizeInfo/EmphasizeInfos/EmphasizeInfo", NULL);
+		FAssertMsg(GC.getNumEmphasizeInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4EntityEventInfos)
+	{
+		LoadGlobalClassInfo(GC.getEntityEventInfo(), "CIV4EntityEventInfos", "Units", "Civ4EntityEventInfos/EntityEventInfos/EntityEventInfo", NULL);
+		FAssertMsg(GC.getNumEntityEventInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4EraInfos)
+	{
+		LoadGlobalClassInfo(GC.getEraInfo(), "CIV4EraInfos", "GameInfo", "Civ4EraInfos/EraInfos/EraInfo", NULL);
+		FAssertMsg(GC.getNumEraInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4EuropeInfo)
+	{
+		LoadGlobalClassInfo(GC.getEuropeInfo(), "CIV4EuropeInfo", "GameInfo", "Civ4EuropeInfo/EuropeInfos/EuropeInfo", NULL); // TK Mod XML load order change
+		FAssertMsg(GC.getNumEuropeInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4EventInfos)
+	{
+		UpdateProgressCB("Global Events");
+		LoadGlobalClassInfo(GC.getEventInfo(), "CIV4EventInfos", "Events", "Civ4EventInfos/EventInfos/EventInfo", &CvDLLUtilityIFaceBase::createEventInfoCacheObject);
+		FAssertMsg(GC.getNumEventInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4EventTriggerInfos)
+	{
+		LoadGlobalClassInfo(GC.getEventTriggerInfo(), "CIV4EventTriggerInfos", "Events", "Civ4EventTriggerInfos/EventTriggerInfos/EventTriggerInfo", &CvDLLUtilityIFaceBase::createEventTriggerInfoCacheObject);
+		FAssertMsg(GC.getNumEventTriggerInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4FatherCategoryInfos)
+	{
+		LoadGlobalClassInfo(GC.getFatherCategoryInfo(), "CIV4FatherCategoryInfos", "BasicInfos", "Civ4FatherCategoryInfos/FatherCategoryInfos/FatherCategoryInfo", NULL);
+		FAssertMsg(GC.getNumFatherCategoryInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4FatherInfos)
+	{
+		LoadGlobalClassInfo(GC.getFatherInfo(), "CIV4FatherInfos", "GameInfo", "Civ4FatherInfos/FatherInfos/FatherInfo", &CvDLLUtilityIFaceBase::createFatherInfoCacheObject);
+		FAssertMsg(GC.getNumFatherInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4FatherPointInfos)
+	{
+		LoadGlobalClassInfo(GC.getFatherPointInfo(), "CIV4FatherPointInfos", "GameInfo", "Civ4FatherPointInfos/FatherPointInfos/FatherPointInfo", NULL);
+		FAssertMsg(GC.getNumFatherPointInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_Civ4FeatureInfos)
+	{
+		LoadGlobalClassInfo(GC.getFeatureInfo(), "Civ4FeatureInfos", "Terrain", "Civ4FeatureInfos/FeatureInfos/FeatureInfo", NULL);
+		FAssertMsg(GC.getNumFeatureInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4ForceControlInfos)
+	{
+		LoadGlobalClassInfo(GC.getForceControlInfo(), "CIV4ForceControlInfos", "GameInfo", "Civ4ForceControlInfos/ForceControlInfos/ForceControlInfo", NULL);
+		FAssertMsg(GC.getNumForceControlInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4GameOptionInfos)
+	{
+		LoadGlobalClassInfo(GC.getGameOptionInfo(), "CIV4GameOptionInfos", "GameInfo", "Civ4GameOptionInfos/GameOptionInfos/GameOptionInfo", NULL);
+		FAssertMsg(GC.getNumGameOptionInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4GameSpeedInfo)
+	{
+		LoadGlobalClassInfo(GC.getGameSpeedInfo(), "CIV4GameSpeedInfo", "GameInfo", "Civ4GameSpeedInfo/GameSpeedInfos/GameSpeedInfo", NULL);
+		FAssertMsg(GC.getNumGameSpeedInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4GoodyInfo)
+	{
+		LoadGlobalClassInfo(GC.getGoodyInfo(), "CIV4GoodyInfo", "GameInfo", "Civ4GoodyInfo/GoodyInfos/GoodyInfo", NULL);
+		FAssertMsg(GC.getNumGoodyInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4GraphicOptionInfos)
+	{
+		LoadGlobalClassInfo(GC.getGraphicOptionInfo(), "CIV4GraphicOptionInfos", "GameInfo", "Civ4GraphicOptionInfos/GraphicOptionInfos/GraphicOptionInfo", NULL);
+		FAssert(GC.getNumGraphicOptions() == NUM_GRAPHICOPTION_TYPES);
+		GC.CheckEnumGraphicOptionTypes(); // XML enum check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4HandicapInfo)
+	{
+		LoadGlobalClassInfo(GC.getHandicapInfo(), "CIV4HandicapInfo", "GameInfo", "Civ4HandicapInfo/HandicapInfos/HandicapInfo", &CvDLLUtilityIFaceBase::createHandicapInfoCacheObject);
+		FAssertMsg(GC.getNumHandicapInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4Hints)
+	{
+		LoadGlobalClassInfo(GC.getHints(), "CIV4Hints", "GameInfo", "Civ4Hints/HintInfos/HintInfo", NULL);
+		FAssertMsg(GC.getNumHints() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4HurryInfo)
+	{
+		LoadGlobalClassInfo(GC.getHurryInfo(), "CIV4HurryInfo", "GameInfo", "Civ4HurryInfo/HurryInfos/HurryInfo", NULL);
+		FAssertMsg(GC.getNumHurryInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4ImprovementInfos)
+	{
+		LoadGlobalClassInfo(GC.getImprovementInfo(), "CIV4ImprovementInfos", "Terrain", "Civ4ImprovementInfos/ImprovementInfos/ImprovementInfo", &CvDLLUtilityIFaceBase::createImprovementInfoCacheObject);
+		FAssertMsg(GC.getNumImprovementInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4InterfaceModeInfos)
+	{
+		LoadGlobalClassInfo(GC.getInterfaceModeInfo(), "CIV4InterfaceModeInfos", "Interface", "Civ4InterfaceModeInfos/InterfaceModeInfos/InterfaceModeInfo", NULL);
+		GC.CheckEnumInterfaceModeTypes(); // XML enum check - Nightinggale
+		SetGlobalActionInfo();
+	}
+	else if (eFile == XML_FILE_CIV4InvisibleInfos)
+	{
+		LoadGlobalClassInfo(GC.getInvisibleInfo(), "CIV4InvisibleInfos", "BasicInfos", "Civ4InvisibleInfos/InvisibleInfos/InvisibleInfo", NULL);
+		FAssertMsg(GC.getNumInvisibleInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4TerrainSettings)
+	{
+		LoadGlobalClassInfo(GC.getLandscapeInfo(), "CIV4TerrainSettings", "Terrain", "Civ4TerrainSettings/LandscapeInfos/LandscapeInfo", NULL);
+		FAssertMsg(GC.getNumLandscapeInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4LeaderHeadInfos)
+	{
+		LoadGlobalClassInfo(GC.getLeaderHeadInfo(), "CIV4LeaderHeadInfos", "Civilizations", "Civ4LeaderHeadInfos/LeaderHeadInfos/LeaderHeadInfo", &CvDLLUtilityIFaceBase::createLeaderHeadInfoCacheObject);
+		FAssertMsg(GC.getNumLeaderHeadInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4MPOptionInfos)
+	{
+		LoadGlobalClassInfo(GC.getMPOptionInfo(), "CIV4MPOptionInfos", "GameInfo", "Civ4MPOptionInfos/MPOptionInfos/MPOptionInfo", NULL);
+		FAssertMsg(GC.getNumMPOptionInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4MainMenus)
+	{
+		LoadGlobalClassInfo(GC.getMainMenus(), "CIV4MainMenus", "Art", "Civ4MainMenus/MainMenus/MainMenu", NULL);
+		FAssertMsg(GC.getNumMainMenus() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4MemoryInfos)
+	{
+		LoadGlobalClassInfo(GC.getMemoryInfo(), "CIV4MemoryInfos", "BasicInfos", "Civ4MemoryInfos/MemoryInfos/MemoryInfo", NULL);
+		GC.CheckEnumMemoryTypes(); // XML enum check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4MissionInfos)
+	{
+		UpdateProgressCB("Global Other");
+		LoadGlobalClassInfo(GC.getMissionInfo(), "CIV4MissionInfos", "Units", "Civ4MissionInfos/MissionInfos/MissionInfo", NULL);
+		FAssertMsg(GC.getNumMissionInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4MonthInfos)
+	{
+		LoadGlobalClassInfo(GC.getMonthInfo(), "CIV4MonthInfos", "BasicInfos", "Civ4MonthInfos/MonthInfos/MonthInfo", NULL);
+		FAssertMsg(GC.getNumMonthInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4PlayerColorInfos)
+	{
+		LoadGlobalClassInfo(GC.getPlayerColorInfo(), "CIV4PlayerColorInfos", "Interface", "Civ4PlayerColorInfos/PlayerColorInfos/PlayerColorInfo", NULL);
+		FAssertMsg(GC.getNumPlayerColorInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4PlayerOptionInfos)
+	{
+		LoadGlobalClassInfo(GC.getPlayerOptionInfo(), "CIV4PlayerOptionInfos", "GameInfo", "Civ4PlayerOptionInfos/PlayerOptionInfos/PlayerOptionInfo", NULL);
+		FAssertMsg(GC.getNumPlayerOptionInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4ProfessionInfos)
+	{
+		LoadGlobalClassInfo(GC.getProfessionInfo(), "CIV4ProfessionInfos", "Units", "Civ4ProfessionInfos/ProfessionInfos/ProfessionInfo", &CvDLLUtilityIFaceBase::createProfessionInfoCacheObject);
+		FAssertMsg(GC.getNumProfessionInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4PromotionInfos)
+	{
+		LoadGlobalClassInfo(GC.getPromotionInfo(), "CIV4PromotionInfos", "Units", "Civ4PromotionInfos/PromotionInfos/PromotionInfo", &CvDLLUtilityIFaceBase::createPromotionInfoCacheObject);
+		FAssertMsg(GC.getNumPromotionInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4RiverModelInfos)
+	{
+		UpdateProgressCB("Global Rivers");
+		LoadGlobalClassInfo(GC.getRiverModelInfo(), "CIV4RiverModelInfos", "Art", "Civ4RiverModelInfos/RiverModelInfos/RiverModelInfo", NULL);
+		FAssertMsg(GC.getNumRiverModelInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_Civ4RouteInfos)
+	{
+		LoadGlobalClassInfo(GC.getRouteInfo(), "Civ4RouteInfos", "Misc", "Civ4RouteInfos/RouteInfos/RouteInfo", NULL);
+		FAssertMsg(GC.getNumRouteInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_Civ4RouteModelInfos)
+	{
+		UpdateProgressCB("Global Routes");
+		LoadGlobalClassInfo(GC.getRouteModelInfo(), "Civ4RouteModelInfos", "Art", "Civ4RouteModelInfos/RouteModelInfos/RouteModelInfo", NULL);
+		FAssertMsg(GC.getNumRouteModelInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4SeaLevelInfo)
+	{
+		LoadGlobalClassInfo(GC.getSeaLevelInfo(), "CIV4SeaLevelInfo", "GameInfo", "Civ4SeaLevelInfo/SeaLevelInfos/SeaLevelInfo", NULL);
+		FAssertMsg(GC.getNumSeaLevelInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4SeasonInfos)
+	{
+		LoadGlobalClassInfo(GC.getSeasonInfo(), "CIV4SeasonInfos", "BasicInfos", "Civ4SeasonInfos/SeasonInfos/SeasonInfo", NULL);
+		FAssertMsg(GC.getNumSeasonInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4SlideShowInfos)
+	{
+		LoadGlobalClassInfo(GC.getSlideShowInfo(), "CIV4SlideShowInfos", "Interface", "Civ4SlideShowInfos/SlideShowInfos/SlideShowInfo", NULL);
+		FAssertMsg(GC.getNumSlideShowInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4SlideShowRandomInfos)
+	{
+		LoadGlobalClassInfo(GC.getSlideShowRandomInfo(), "CIV4SlideShowRandomInfos", "Interface", "Civ4SlideShowRandomInfos/SlideShowRandomInfos/SlideShowRandomInfo", NULL);
+		FAssertMsg(GC.getNumSlideShowRandomInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4SpecialBuildingInfos)
+	{
+		LoadGlobalClassInfo(GC.getSpecialBuildingInfo(), "CIV4SpecialBuildingInfos", "Buildings", "Civ4SpecialBuildingInfos/SpecialBuildingInfos/SpecialBuildingInfo", NULL);
+		FAssertMsg(GC.getNumSpecialBuildingInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4SpecialUnitInfos)
+	{
+		LoadGlobalClassInfo(GC.getSpecialUnitInfo(), "CIV4SpecialUnitInfos", "Units", "Civ4SpecialUnitInfos/SpecialUnitInfos/SpecialUnitInfo", NULL);
+		FAssertMsg(GC.getNumSpecialUnitInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4TerrainInfos)
+	{
+		LoadGlobalClassInfo(GC.getTerrainInfo(), "CIV4TerrainInfos", "Terrain", "Civ4TerrainInfos/TerrainInfos/TerrainInfo", NULL);
+		FAssertMsg(GC.getNumTerrainInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4TerrainPlaneInfos)
+	{
+		LoadGlobalClassInfo(GC.getTerrainPlaneInfo(), "CIV4TerrainPlaneInfos", "Misc", "Civ4TerrainPlaneInfos/TerrainPlaneInfos/TerrainPlaneInfo", NULL);
+		FAssertMsg(GC.getNumTerrainPlaneInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4TraitInfos)
+	{
+		LoadGlobalClassInfo(GC.getTraitInfo(), "CIV4TraitInfos", "Civilizations", "Civ4TraitInfos/TraitInfos/TraitInfo", &CvDLLUtilityIFaceBase::createTraitInfoCacheObject);
+		FAssertMsg(GC.getNumTraitInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4TurnTimerInfo)
+	{
+		LoadGlobalClassInfo(GC.getTurnTimerInfo(), "CIV4TurnTimerInfo", "GameInfo", "Civ4TurnTimerInfo/TurnTimerInfos/TurnTimerInfo", NULL);
+		FAssertMsg(GC.getNumTurnTimerInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4UnitAIInfos)
+	{
+		LoadGlobalClassInfo(GC.getUnitAIInfo(), "CIV4UnitAIInfos", "BasicInfos", "Civ4UnitAIInfos/UnitAIInfos/UnitAIInfo", NULL);
+		GC.CheckEnumUnitAITypes(); // XML enum check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4UnitArtStyleTypeInfos)
+	{
+		LoadGlobalClassInfo(GC.getUnitArtStyleTypeInfo(), "CIV4UnitArtStyleTypeInfos", "Civilizations", "Civ4UnitArtStyleTypeInfos/UnitArtStyleTypeInfos/UnitArtStyleTypeInfo", false);
+		FAssertMsg(GC.getNumUnitArtStyleTypeInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4UnitClassInfos)
+	{
+		LoadGlobalClassInfo(GC.getUnitClassInfo(), "CIV4UnitClassInfos", "Units", "Civ4UnitClassInfos/UnitClassInfos/UnitClassInfo", NULL);
+		FAssertMsg(GC.getNumUnitClassInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4UnitCombatInfos)
+	{
+		LoadGlobalClassInfo(GC.getUnitCombatInfo(), "CIV4UnitCombatInfos", "BasicInfos", "Civ4UnitCombatInfos/UnitCombatInfos/UnitCombatInfo", NULL);
+		FAssertMsg(GC.getNumUnitCombatInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4FormationInfos)
+	{
+		LoadGlobalClassInfo(GC.getUnitFormationInfo(), "CIV4FormationInfos", "Units", "UnitFormations/UnitFormation", NULL);
+		FAssertMsg(GC.getNumUnitFormationInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4UnitInfos)
+	{
+		LoadGlobalClassInfo(GC.getUnitInfo(), "CIV4UnitInfos", "Units", "Civ4UnitInfos/UnitInfos/UnitInfo", &CvDLLUtilityIFaceBase::createUnitInfoCacheObject);
+		FAssertMsg(GC.getNumUnitInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4VictoryInfo)
+	{
+		LoadGlobalClassInfo(GC.getVictoryInfo(), "CIV4VictoryInfo", "GameInfo", "Civ4VictoryInfo/VictoryInfos/VictoryInfo", NULL);
+		FAssertMsg(GC.getNumVictoryInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4WaterPlaneInfos)
+	{
+		UpdateProgressCB("Global Other");
+		LoadGlobalClassInfo(GC.getWaterPlaneInfo(), "CIV4WaterPlaneInfos", "Misc", "Civ4WaterPlaneInfos/WaterPlaneInfos/WaterPlaneInfo", NULL);
+		FAssertMsg(GC.getNumWaterPlaneInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4WorldInfo)
+	{
+		LoadGlobalClassInfo(GC.getWorldInfo(), "CIV4WorldInfo", "GameInfo", "Civ4WorldInfo/WorldInfos/WorldInfo", NULL);
+		FAssertMsg(GC.getNumWorldInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+		GC.CheckEnumWorldSizeTypes(); // XML enum check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4WorldPickerInfos)
+	{
+		LoadGlobalClassInfo(GC.getWorldPickerInfo(), "CIV4WorldPickerInfos", "Interface", "Civ4WorldPickerInfos/WorldPickerInfos/WorldPickerInfo", NULL);
+		FAssertMsg(GC.getNumWorldPickerInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4YieldInfos)
+	{
+		LoadGlobalClassInfo(GC.getYieldInfo(), "CIV4YieldInfos", "Terrain", "Civ4YieldInfos/YieldInfos/YieldInfo", NULL);
+		FAssertMsg(NUM_YIELD_TYPES == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else
+	{
+		FAssertMsg(false, "loadXMLFile() doesn't know how to handle eFile");
+	}
+}
+/// XML load - end - Nightinggale
 
 bool CvXMLLoadUtility::ReadGlobalDefines(const TCHAR* szXMLFileName, CvCacheObject* cache)
 {
@@ -373,10 +952,6 @@ bool CvXMLLoadUtility::SetPostGlobalsGlobalDefines()
 		idx = FindInInfoClass(szVal);
 		GC.getDefinesVarSystem()->SetValue("CONTACT_YIELD_GIFT_TECH", idx);
 
-		SetGlobalDefine("DEFAULT_YIELD_ARMOR_TYPE", szVal);
-		idx = FindInInfoClass(szVal);
-		GC.getDefinesVarSystem()->SetValue("DEFAULT_YIELD_ARMOR_TYPE", idx);
-
 		SetGlobalDefine("DEFAULT_GRAIN_GROWTH_UNIT_CLASS", szVal);
 		idx = FindInInfoClass(szVal);
 		GC.getDefinesVarSystem()->SetValue("DEFAULT_GRAIN_GROWTH_UNIT_CLASS", idx);
@@ -686,6 +1261,9 @@ void CvXMLLoadUtility::SetDiplomacyCommentTypes(CvString** ppszString, int* iNum
 //------------------------------------------------------------------------------------------------------
 bool CvXMLLoadUtility::SetupGlobalLandscapeInfo()
 {
+	// load order: 6
+	// loads after main menu
+#if 0
 	if (!CreateFXml())
 	{
 		return false;
@@ -696,7 +1274,7 @@ bool CvXMLLoadUtility::SetupGlobalLandscapeInfo()
 
 	// delete the pointer to the FXml variable
 	DestroyFXml();
-
+#endif
 	return true;
 }
 
@@ -710,6 +1288,8 @@ bool CvXMLLoadUtility::SetupGlobalLandscapeInfo()
 //------------------------------------------------------------------------------------------------------
 bool CvXMLLoadUtility::SetGlobalArtDefines()
 {
+	// load order: 3
+#if 0
 	if (!CreateFXml())
 	{
 		return false;
@@ -728,6 +1308,7 @@ bool CvXMLLoadUtility::SetGlobalArtDefines()
 	LoadGlobalClassInfo(ARTFILEMGR.getFeatureArtInfo(), "CIV4ArtDefines_Feature", "Art", "Civ4ArtDefines/FeatureArtInfos/FeatureArtInfo", NULL);
 
 	DestroyFXml();
+#endif
 
 	return true;
 }
@@ -811,6 +1392,8 @@ bool CvXMLLoadUtility::LoadGlobalText()
 
 bool CvXMLLoadUtility::LoadBasicInfos()
 {
+	// load order: 4
+	#if 0
 	if (!CreateFXml())
 	{
 		return false;
@@ -843,6 +1426,7 @@ bool CvXMLLoadUtility::LoadBasicInfos()
 	FAssertMsg(GC.getNumFatherCategoryInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
 
 	DestroyFXml();
+#endif
 	return true;
 }
 
@@ -853,11 +1437,18 @@ bool CvXMLLoadUtility::LoadBasicInfos()
 //
 bool CvXMLLoadUtility::LoadPreMenuGlobals()
 {
+	// load order: 5
+
 	if (!CreateFXml())
 	{
 		return false;
 	}
 
+	/// XML load - start - Nightinggale
+	bFirstLoadRound = false;
+	loadXMLFiles();
+	/// XML load - end - Nightinggale
+#if 0
 	LoadGlobalClassInfo(GC.getColorInfo(), "CIV4ColorVals", "Interface", "Civ4ColorVals/ColorVals/ColorVal", NULL);
 	FAssertMsg(GC.getNumColorInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
 	LoadGlobalClassInfo(GC.getUnitClassInfo(), "CIV4UnitClassInfos", "Units", "Civ4UnitClassInfos/UnitClassInfos/UnitClassInfo", NULL);
@@ -868,6 +1459,10 @@ bool CvXMLLoadUtility::LoadPreMenuGlobals()
 	FAssertMsg(GC.getNumVictoryInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
 	LoadGlobalClassInfo(GC.getBuildingClassInfo(), "CIV4BuildingClassInfos", "Buildings", "Civ4BuildingClassInfos/BuildingClassInfos/BuildingClassInfo", NULL);
 	FAssertMsg(GC.getNumBuildingClassInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	LoadGlobalClassInfo(GC.getPlayerColorInfo(), "CIV4PlayerColorInfos", "Interface", "Civ4PlayerColorInfos/PlayerColorInfos/PlayerColorInfo", NULL);
+	FAssertMsg(GC.getNumPlayerColorInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	LoadGlobalClassInfo(GC.getEuropeInfo(), "CIV4EuropeInfo", "GameInfo", "Civ4EuropeInfo/EuropeInfos/EuropeInfo", NULL); // TK Mod XML load order change
+	FAssertMsg(GC.getNumEuropeInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
 	LoadGlobalClassInfo(GC.getYieldInfo(), "CIV4YieldInfos", "Terrain", "Civ4YieldInfos/YieldInfos/YieldInfo", NULL);
 	FAssertMsg(GC.getYieldInfo().size() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
 	GC.CheckEnumYieldTypes(); // XML enum check - Nightinggale
@@ -884,8 +1479,6 @@ bool CvXMLLoadUtility::LoadPreMenuGlobals()
 	FAssertMsg(GC.getNumClimateInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
 	LoadGlobalClassInfo(GC.getSeaLevelInfo(), "CIV4SeaLevelInfo", "GameInfo", "Civ4SeaLevelInfo/SeaLevelInfos/SeaLevelInfo", NULL);
 	FAssertMsg(GC.getNumSeaLevelInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
-	LoadGlobalClassInfo(GC.getEuropeInfo(), "CIV4EuropeInfo", "GameInfo", "Civ4EuropeInfo/EuropeInfos/EuropeInfo", NULL);
-	FAssertMsg(GC.getNumEuropeInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
 	LoadGlobalClassInfo(GC.getTerrainInfo(), "CIV4TerrainInfos", "Terrain", "Civ4TerrainInfos/TerrainInfos/TerrainInfo", NULL);
 	FAssertMsg(GC.getNumTerrainInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
 	LoadGlobalClassInfo(GC.getEraInfo(), "CIV4EraInfos", "GameInfo", "Civ4EraInfos/EraInfos/EraInfo", NULL);
@@ -940,8 +1533,7 @@ bool CvXMLLoadUtility::LoadPreMenuGlobals()
 	FAssertMsg(GC.getNumCivicInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
 	LoadGlobalClassInfo(GC.getLeaderHeadInfo(), "CIV4LeaderHeadInfos", "Civilizations", "Civ4LeaderHeadInfos/LeaderHeadInfos/LeaderHeadInfo", &CvDLLUtilityIFaceBase::createLeaderHeadInfoCacheObject);
 	FAssertMsg(GC.getNumLeaderHeadInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
-	LoadGlobalClassInfo(GC.getPlayerColorInfo(), "CIV4PlayerColorInfos", "Interface", "Civ4PlayerColorInfos/PlayerColorInfos/PlayerColorInfo", NULL);
-	FAssertMsg(GC.getNumPlayerColorInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	
 	LoadGlobalClassInfo(GC.getEffectInfo(), "CIV4EffectInfos", "Misc", "Civ4EffectInfos/EffectInfos/EffectInfo", NULL);
 	FAssertMsg(GC.getNumEffectInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
 	LoadGlobalClassInfo(GC.getEntityEventInfo(), "CIV4EntityEventInfos", "Units", "Civ4EntityEventInfos/EntityEventInfos/EntityEventInfo", NULL);
@@ -977,7 +1569,7 @@ bool CvXMLLoadUtility::LoadPreMenuGlobals()
 	LoadGlobalClassInfo(GC.getForceControlInfo(), "CIV4ForceControlInfos", "GameInfo", "Civ4ForceControlInfos/ForceControlInfos/ForceControlInfo", NULL);
 	FAssertMsg(GC.getNumForceControlInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
 	GC.CheckEnumForceControlTypes(); // XML enum check - Nightinggale
-
+#endif
 	// add types to global var system
 	for (int i = 0; i < GC.getNumCursorInfos(); ++i)
 	{
@@ -1010,6 +1602,9 @@ bool CvXMLLoadUtility::LoadPreMenuGlobals()
 //------------------------------------------------------------------------------------------------------
 bool CvXMLLoadUtility::LoadPostMenuGlobals()
 {
+	// load order: 7
+	// loads after main menu
+#if 0
 	PROFILE_FUNC();
 	if (!CreateFXml())
 	{
@@ -1078,6 +1673,7 @@ bool CvXMLLoadUtility::LoadPostMenuGlobals()
 	LoadDiplomacyInfo(GC.getDiplomacyInfo(), "CIV4DiplomacyInfos", "GameInfo", "Civ4DiplomacyInfos/DiplomacyInfos/DiplomacyInfo", &CvDLLUtilityIFaceBase::createDiplomacyInfoCacheObject);
 
 	DestroyFXml();
+#endif
 	return true;
 }
 
@@ -1512,6 +2108,7 @@ void CvXMLLoadUtility::SetGlobalClassInfo(std::vector<T*>& aInfos, const char* s
 	// if we successfully locate the tag name in the xml file
 	if (gDLL->getXMLIFace()->LocateNode(m_pFXml, szTagName))
 	{
+		int iSub = -1; /// info subclass - Nightinggale
 		// loop through each tag
 		do
 		{
@@ -1525,13 +2122,26 @@ void CvXMLLoadUtility::SetGlobalClassInfo(std::vector<T*>& aInfos, const char* s
 				break;
 			}
 
-			bool bSuccess = pClassInfo->read(this);
+			/// XML load - start - Nightinggale
+			//bool bSuccess = pClassInfo->read(this);
+			bool bSuccess = false;
+			if (!bLoadOnce)
+			{
+				bSuccess = pClassInfo->readSub(this, &iSub);
+			}
+			if (!bFirstLoadRound)
+			{
+				bSuccess = pClassInfo->read(this);
+			}
+			/// XML load - end - Nightinggale
 			FAssert(bSuccess);
 			if (!bSuccess)
 			{
 				delete pClassInfo;
 				break;
 			}
+
+			GC.XMLlength++; // XML length check - Nightinggale
 
 			int iIndex = -1;
 			if (NULL != pClassInfo->getType())
@@ -1550,6 +2160,7 @@ void CvXMLLoadUtility::SetGlobalClassInfo(std::vector<T*>& aInfos, const char* s
 			else
 			{
 // XML length check - start - Nightinggale
+				FAssert(!bLoadOnce && !bFirstLoadRound);
 #ifdef FASSERT_ENABLE
 				if (strlen(pClassInfo->getType()) >= sizeof(f_szXMLname))
 				{
@@ -1564,8 +2175,10 @@ void CvXMLLoadUtility::SetGlobalClassInfo(std::vector<T*>& aInfos, const char* s
 				aInfos[iIndex] = pClassInfo;
 			}
 
-
-		} while (gDLL->getXMLIFace()->NextSibling(m_pFXml));
+		/// info subclass - start - Nightinggale
+		//} while (gDLL->getXMLIFace()->NextSibling(m_pFXml));
+		} while (iSub != -1 || gDLL->getXMLIFace()->NextSibling(m_pFXml));
+		/// info subclass - end - Nightinggale
 
 		//readPass2
 		{
@@ -1605,6 +2218,7 @@ void CvXMLLoadUtility::SetDiplomacyInfo(std::vector<CvDiplomacyInfo*>& DiploInfo
 		// loop through each tag
 		do
 		{
+			GC.XMLlength++; // XML length check - Nightinggale
 			SkipToNextVal();	// skip to the next non-comment node
 
 			CvString szType;
@@ -1731,6 +2345,13 @@ void CvXMLLoadUtility::LoadDiplomacyInfo(std::vector<CvDiplomacyInfo*>& DiploInf
 	bool bWriteCache = true;
 	CvCacheObject* pCache = NULL;
 	GC.addToInfosVectors(&DiploInfos);
+
+	// XML length check - start - Nightinggale
+	GC.XMLlength = 0;
+#ifdef FASSERT_ENABLE
+	f_szXMLname[0] = 0;
+#endif
+	// XML length check - end - Nightinggale
 
 	if (NULL != pArgFunction)
 	{
@@ -2150,12 +2771,44 @@ void CvXMLLoadUtility::SetVariableListTagPairForAudioScripts(int **ppiList, cons
 
 DllExport bool CvXMLLoadUtility::LoadPlayerOptions()
 {
+	// load order: 1
+
 	if (!CreateFXml())
 		return false;
+	
+/// XML load - start - Nightinggale
+	bFirstLoadRound = false;
+	bLoadOnce = true;
+
+	// hardcode NONE to -1 when reading XML files
+	GC.setInfoTypeFromString("NONE", -1);
+
+	// load options and graphic files
+	loadXMLFile(XML_FILE_CIV4PlayerOptionInfos);
+	loadXMLFile(XML_FILE_CIV4GraphicOptionInfos);
+	
+	loadXMLFile(XML_FILE_CIV4ArtDefines_Interface);
+	loadXMLFile(XML_FILE_CIV4ArtDefines_Movie);
+	loadXMLFile(XML_FILE_CIV4ArtDefines_Misc);
+	loadXMLFile(XML_FILE_CIV4ArtDefines_Unit);
+	loadXMLFile(XML_FILE_CIV4ArtDefines_Building);
+	loadXMLFile(XML_FILE_CIV4ArtDefines_Civilization);
+	loadXMLFile(XML_FILE_CIV4ArtDefines_Leaderhead);
+	loadXMLFile(XML_FILE_CIV4ArtDefines_Bonus);
+	loadXMLFile(XML_FILE_CIV4ArtDefines_Improvement);
+	loadXMLFile(XML_FILE_CIV4ArtDefines_Terrain);
+	loadXMLFile(XML_FILE_CIV4ArtDefines_Feature);
+
+	// load BasicInfo for XML files
+	bFirstLoadRound = true;
+	loadXMLFiles();
+/// XML load - end - Nightinggale
+#if 0
 
 	LoadGlobalClassInfo(GC.getPlayerOptionInfo(), "CIV4PlayerOptionInfos", "GameInfo", "Civ4PlayerOptionInfos/PlayerOptionInfos/PlayerOptionInfo", NULL);
 	FAssert(GC.getNumPlayerOptionInfos() == NUM_PLAYEROPTION_TYPES);
 	GC.CheckEnumPlayerOptionTypes(); // XML enum check - Nightinggale
+#endif
 
 	DestroyFXml();
 	return true;
@@ -2163,6 +2816,9 @@ DllExport bool CvXMLLoadUtility::LoadPlayerOptions()
 
 DllExport bool CvXMLLoadUtility::LoadGraphicOptions()
 {
+	// load order: 2
+
+#if 0
 	if (!CreateFXml())
 		return false;
 
@@ -2171,6 +2827,7 @@ DllExport bool CvXMLLoadUtility::LoadGraphicOptions()
 	GC.CheckEnumGraphicOptionTypes(); // XML enum check - Nightinggale
 
 	DestroyFXml();
+#endif
 	return true;
 }
 

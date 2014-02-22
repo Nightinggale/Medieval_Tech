@@ -9,8 +9,6 @@
 		<Italian></Italian>
 		<Spanish></Spanish>
 	</TEXT>
-
-
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BEAR_BLACK</Tag>
 		<English>Black Bear</English>
@@ -43,7 +41,6 @@
 		<Italian>Polar Bear</Italian>
 		<Spanish>Polar Bear</Spanish>
 	</TEXT>
-
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COUGAR</Tag>
 		<English>Cougar</English>
@@ -52,7 +49,6 @@
 		<Italian>Cougar</Italian>
 		<Spanish>Cougar</Spanish>
 	</TEXT>
-
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_DOG</Tag>
 		<English>Dog</English>
@@ -61,7 +57,6 @@
 		<Italian>Dog</Italian>
 		<Spanish>Dog</Spanish>
 	</TEXT>
-
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ELEPHANT</Tag>
 		<English>Elephant</English>
@@ -70,7 +65,6 @@
 		<Italian>Elephant</Italian>
 		<Spanish>Elephant</Spanish>
 	</TEXT>
-
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_GIANT_TORTOISE</Tag>
 		<English>Giant Tortoise</English>
@@ -79,7 +73,6 @@
 		<Italian>Giant Tortoise</Italian>
 		<Spanish>Giant Tortoise</Spanish>
 	</TEXT>
-
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_GORILLA</Tag>
 		<English>Gorilla</English>
@@ -88,7 +81,6 @@
 		<Italian>Gorilla</Italian>
 		<Spanish>Gorilla</Spanish>
 	</TEXT>
-
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HYENA</Tag>
 		<English>Hyena</English>
@@ -97,7 +89,6 @@
 		<Italian>Hyena</Italian>
 		<Spanish>Hyena</Spanish>
 	</TEXT>
-
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_KRAKEN</Tag>
 		<English>Kraken</English>
@@ -106,7 +97,6 @@
 		<Italian>Kraken</Italian>
 		<Spanish>Kraken</Spanish>
 	</TEXT>
-
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MONKEY</Tag>
 		<English>Monkey</English>
@@ -115,7 +105,6 @@
 		<Italian>Monkey</Italian>
 		<Spanish>Monkey</Spanish>
 	</TEXT>
-
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PIG</Tag>
 		<English>Pig</English>
@@ -124,7 +113,6 @@
 		<Italian>Pig</Italian>
 		<Spanish>Pig</Spanish>
 	</TEXT>
-
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SEA_SERPENT</Tag>
 		<English>Sea Serpent</English>
@@ -133,7 +121,6 @@
 		<Italian>Sea Serpent</Italian>
 		<Spanish>Sea Serpent</Spanish>
 	</TEXT>
-
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BEAR</Tag>
 		<English>Bear</English>

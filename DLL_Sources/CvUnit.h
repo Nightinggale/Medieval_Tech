@@ -140,10 +140,12 @@ public:
 
 	bool canClearSpecialty() const;
 	void clearSpecialty();
-
+	///Tks Med TradeScreens
 	bool canAutoCrossOcean(const CvPlot* pPlot, TradeRouteTypes eTradeRouteType=NO_TRADE_ROUTES, bool bAIForce=false) const;
-	bool canCrossOcean(const CvPlot* pPlot, UnitTravelStates eNewState, TradeRouteTypes eTradeRouteType=NO_TRADE_ROUTES, bool bAIForce=false) const;
-	void crossOcean(UnitTravelStates eNewState, bool bAIForce=false);
+	bool canAutoSailTradeScreen(const CvPlot* pPlot, EuropeTypes eTradeScreenType=NO_EUROPE, bool bAIForce=false) const;
+	bool canCrossOcean(const CvPlot* pPlot, UnitTravelStates eNewState, TradeRouteTypes eTradeRouteType=NO_TRADE_ROUTES, bool bAIForce=false, EuropeTypes eEuropeTradeRoute=NO_EUROPE) const;
+	void crossOcean(UnitTravelStates eNewState, bool bAIForce=false, EuropeTypes eTradeMarket=NO_EUROPE);
+	//TKe
 	bool canUnload() const;
 	void unload();
 	void unloadStoredAmount(int iAmount);
@@ -569,8 +571,8 @@ public:
 	DllExport UnitTypes getConvertToUnit() const;
 	void setConvertToUnit(UnitTypes eConvertToUnit);
 	///Tks Med
-	int getAltEquipmentTypes(YieldTypes eIndex) const;
-	void changeAltEquipmentTypes(YieldTypes eIndex, int iChange);
+	EuropeTypes getUnitTradeMarket() const;
+	void setUnitTradeMarket(EuropeTypes eMarket);
 	CvPlot* getTravelPlot() const;
 	void setTravelPlot();
 	bool doUnitPilgram();
@@ -724,6 +726,10 @@ public:
 	virtual void AI_setOldProfession(ProfessionTypes eProfession) = 0;
 	virtual ProfessionTypes AI_getIdealProfession() const = 0;
 
+	/// Expert working - start - Nightinggale
+	// tell if unit is working his expert profession(s)
+	bool isCitizenExpertWorking() const;
+	/// Expert working - end - Nightinggale
 
 protected:
 
@@ -829,6 +835,7 @@ protected:
 	int* m_paiFreePromotionCount;
 	int* m_paiTerrainDoubleMoveCount;
 	///TKs Med
+	EuropeTypes m_eUnitTradeMarket;
 	int* m_paiAltEquipmentTypes;
 	///TKe
 	int* m_paiFeatureDoubleMoveCount;

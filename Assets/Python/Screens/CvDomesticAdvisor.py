@@ -51,7 +51,7 @@ class CvDomesticAdvisor:
 		self.nScreenHeight = (screen.getYResolution() - (screen.getYResolution() * 31 / 100))
 		
 #VET NewCapacity - begin 1/4
-		self.num_yields = YieldTypes.YIELD_HAMMERS
+		self.num_yields = YieldTypes.NUM_CARGO_YIELD_TYPES
 
 		self.bNewCapacity = (gc.getDefineINT("NEW_CAPACITY") > 0)
 		self.useLuxuryGoods = (gc.getDefineINT("PRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS") > 0)
@@ -129,6 +129,7 @@ class CvDomesticAdvisor:
 
 		self.StateButtons = []
 		self.StatePages = []
+		self.StateNames = []
 		self.StateHelp = []
 		
 		# Button generation
@@ -140,14 +141,34 @@ class CvDomesticAdvisor:
 		self.BUILDING_STATE           = self.addButton("INTERFACE_CITY_BUILD_BUTTON",          "TXT_KEY_BUILDINGS")
 		self.IMPORTEXPORT_STATE       = self.addButton("INTERFACE_CITY_GOVENOR_BUTTON",        "TXT_KEY_CONCEPT_TRADE_ROUTE")
 		self.CITIZEN_STATE            = self.addButton("INTERFACE_CITY_CITIZEN_BUTTON",        "TXT_KEY_DOMESTIC_ADVISOR_STATE_CITIZEN")
+		self.CITIZEN_COUNT_STATE      = self.addButton("INTERFACE_CITY_CITIZEN_BUTTON",        "TXT_KEY_DOMESTIC_ADVISOR_STATE_CITIZEN_COUNT")
+		self.CITIZEN_WRONG_STATE      = self.addButton("INTERFACE_CITY_CITIZEN_BUTTON",        "TXT_KEY_DOMESTIC_ADVISOR_STATE_CITIZEN_WRONG")
 		self.TOTAL_PRODUCTION_STATE   = self.addButton("INTERFACE_WAREHOUSE_STORAGE_BUTTON",    "TXT_KEY_CONCEPT_TOTAL_PRODUCTION")  # total production page - Nightinggale
 		self.TRADEROUTE_STATE         = self.addButton("INTERFACE_IMPORT_EXPORT_BUTTON",       "TXT_KEY_DOMESTIC_ADVISOR_STATE_TRADEROUTE")
 		self.NATIVE_STATE             = self.addButton("INTERFACE_NATIVE_VILLAGES_BUTTON",              "TXT_KEY_DOMESTIC_ADVISOR_STATE_NATIVE")
 		
-		self.YieldPages = set([self.PRODUCTION_STATE])
-		self.YieldPages.add(self.WAREHOUSE_STATE)
-		self.YieldPages.add(self.TOTAL_PRODUCTION_STATE)
-		self.YieldPages.add(self.IMPORTEXPORT_STATE)
+		# make sure there is room enough on the screen for all buttons
+		iButtonSpacing = (self.X_EXIT - 145) // (len(self.StateButtons) - 1)
+		if (iButtonSpacing < self.iButtonSpacing):
+			self.iButtonSpacing = iButtonSpacing
+		
+		# set names to those lists not using self.createSubpage
+		# in other words it's the lists, which doesn't add cities to the left
+		for state in ([ self.TRADEROUTE_STATE, self.NATIVE_STATE ]):
+			self.StatePages[state] = [self.StateNames[state]]
+		
+		self.YieldPages = []
+		self.YieldPages.append(self.PRODUCTION_STATE)
+		self.YieldPages.append(self.WAREHOUSE_STATE)
+		self.YieldPages.append(self.TOTAL_PRODUCTION_STATE)
+		self.YieldPages.append(self.IMPORTEXPORT_STATE)
+		
+		self.BuildingPages = []
+		self.BuildingPages.append(self.BUILDING_STATE)
+		
+		self.CitizenPages = []
+		self.CitizenPages.append(self.CITIZEN_COUNT_STATE)
+		self.CitizenPages.append(self.CITIZEN_WRONG_STATE)
 		
 		## R&R, Robert Surcouf,  Domestic Advisor Screen START
 		
@@ -155,70 +176,112 @@ class CvDomesticAdvisor:
 		self.StateButtons.append("INTERFACE_CITY_LEFT_ARROW")
 		self.StateButtons.append("INTERFACE_CITY_RIGHT_ARROW")
 		# Next Page / Previous Page
-		self.MAX_YIELDS_IN_A_PAGE = 18
-		#self.MAX_YIELDS_IN_A_PAGE = 19
-		#self.MAX_BUILDINGS_IN_A_PAGE = 26
-		self.MAX_BUILDINGS_IN_A_PAGE = 18
 		
-		self.WAREHOUSE_COLUMN_SIZE = (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH - self.iWareHouseW) / self.MAX_YIELDS_IN_A_PAGE
-		self.PRODUCTION_COLUMN_SIZE = (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / self.MAX_YIELDS_IN_A_PAGE
-		self.BUILDING_COLUMN_SIZE = (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / self.MAX_BUILDINGS_IN_A_PAGE
 		## R&R, Robert Surcouf,  Domestic Advisor Screen END
 		
 		#TKs Med
-		self.GENERAL_COLUMN_SIZE = (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / (12 + self.inventions + self.culture)
+		#self.GENERAL_COLUMN_SIZE = (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / (12 + self.inventions + self.culture)
+		self.GENERAL_COLUMN_SIZE = 60
 		#TKe Med
 		
+		self.AllowedYields = []
+		self.AllowedYieldIndex = []
+		
+		self.AllowedUnits = []
+		self.AllowedUnitIndex = []
+		
+		self.AllowedBuildings = []
+		self.AllowedBuildingIndex = []
+		self.AllowedSpecialBuildings = []
+		
+		for iYield in range(self.num_yields):
+			iIndex = -1
+			if (player.canUseYield(iYield)):
+				iIndex = len(self.AllowedYields)
+				self.AllowedYields.append(iYield)
+			self.AllowedYieldIndex.append(iIndex)
+		
+		for iUnit in range(gc.getNumUnitInfos()):
+			iIndex = -1
+			if (player.canUseUnit(iUnit)):
+				if (gc.getUnitInfo(iUnit).isFound()):
+					iIndex = len(self.AllowedUnits)
+					self.AllowedUnits.append(iUnit)
+			self.AllowedUnitIndex.append(iIndex)
+			
+		specialBuildings = [] 
+		for iBuilding in range(gc.getNumSpecialBuildingInfos()):
+			specialBuildings.append([])
+
+		for iBuilding in range(gc.getNumBuildingInfos()):
+			if (player.canUseBuilding(iBuilding)):
+				specialBuilding = gc.getBuildingInfo(iBuilding).getSpecialBuildingType()
+				specialBuildings[specialBuilding].append(iBuilding)
+		
+		for BuildingArray in range(len(specialBuildings)):
+			iIndex = -1
+			if (len(specialBuildings[BuildingArray]) > 0):
+				iIndex = len(self.AllowedBuildings)
+				self.AllowedBuildings.append(specialBuildings[BuildingArray])
+				self.AllowedSpecialBuildings.append(len(self.AllowedBuildingIndex))
+			self.AllowedBuildingIndex.append(iIndex)
+
+		# set number of columns in a page
+		# first argument is minimum column width
+		# second argument is number of columns (presumably array length)
+		
+		self.MAX_YIELDS_IN_A_PAGE      = self.getNumColumns(59, len(self.AllowedYields))
+		self.MAX_BUILDINGS_IN_A_PAGE   = self.getNumColumns(59, len(self.AllowedBuildings))
+		self.MAX_UNITS_IN_A_PAGE       = self.getNumColumns(49, len(self.AllowedUnits))
+			
 		self.RebuildArrays()
 
-		#Initialize the Lists
-		for iState in range(len(self.StatePages)):
-			if iState != self.TRADEROUTE_STATE and iState != self.NATIVE_STATE:
-				self.initPage(iState, 0)
-
-		self.createSubpage(self.GENERAL_STATE, 1)
-		
-		#GeneralState Headers
-		szListName = self.StatePages[self.GENERAL_STATE][0] + "ListBackground"
-		# Population Column
-		screen.setTableColumnHeader( szListName, 2, "<font=2>" + localText.getText("TXT_KEY_POPULATION", ()) + "</font>", self.GENERAL_COLUMN_SIZE)
-		# Liberty Column
-		screen.setTableColumnHeader( szListName, 3, "<font=2>" + (u" %c" %(CyGame().getSymbolID(FontSymbols.POWER_CHAR))) + "</font>", self.GENERAL_COLUMN_SIZE)		
-		# Food Column
-		screen.setTableColumnHeader( szListName, 5, "<font=2>" + (u" %c" % gc.getYieldInfo(YieldTypes.YIELD_FOOD).getChar()) + "</font>", self.GENERAL_COLUMN_SIZE)
-		# Hammers Column
-		screen.setTableColumnHeader( szListName, 6, "<font=2>" + (u" %c" % gc.getYieldInfo(YieldTypes.YIELD_HAMMERS).getChar()) + "</font>", self.GENERAL_COLUMN_SIZE)
-		# Bells Column
-		screen.setTableColumnHeader( szListName, 8, "<font=2>" + (u" %c" % gc.getYieldInfo(YieldTypes.YIELD_BELLS).getChar()) + "</font>", self.GENERAL_COLUMN_SIZE)
-		# Crosses Column
-		screen.setTableColumnHeader( szListName, 10, "<font=2>" + (u" %c" % gc.getYieldInfo(YieldTypes.YIELD_CROSSES).getChar()) + "</font>", self.GENERAL_COLUMN_SIZE)
-		# Education Column
-		screen.setTableColumnHeader( szListName, 11, "<font=2>" + (u" %c" % gc.getYieldInfo(YieldTypes.YIELD_EDUCATION).getChar()) + "</font>", self.GENERAL_COLUMN_SIZE)
-		
-		#TKs Med
-		# Ideas Column
+		# setup for general columns
+		general_column_setup = []
+		general_column_setup.append([self.GENERAL_COLUMN_SIZE, "population", localText.getText("TXT_KEY_POPULATION", ())])
+		general_column_setup.append([self.GENERAL_COLUMN_SIZE, "power", (u" %c" %(CyGame().getSymbolID(FontSymbols.POWER_CHAR)))])
+		general_column_setup.append([self.GENERAL_COLUMN_SIZE, "food", (u" %c" % gc.getYieldInfo(YieldTypes.YIELD_FOOD).getChar() )])
+		general_column_setup.append([self.GENERAL_COLUMN_SIZE, "hammer", (u" %c" % gc.getYieldInfo(YieldTypes.YIELD_HAMMERS).getChar() )])
+		general_column_setup.append([self.GENERAL_COLUMN_SIZE, "bell", (u" %c" % gc.getYieldInfo(YieldTypes.YIELD_BELLS).getChar() )])
+		general_column_setup.append([self.GENERAL_COLUMN_SIZE, "cross", (u" %c" % gc.getYieldInfo(YieldTypes.YIELD_CROSSES).getChar() )])
+		general_column_setup.append([self.GENERAL_COLUMN_SIZE, "education", (u" %c" % gc.getYieldInfo(YieldTypes.YIELD_EDUCATION).getChar() )])
 		if self.inventions:
-			screen.setTableColumnHeader( szListName, 12, "<font=3>" + (u" %c" % gc.getYieldInfo(YieldTypes.YIELD_IDEAS).getChar()) + "</font>", self.GENERAL_COLUMN_SIZE)
-		# Culture and Prosperity Column
+			general_column_setup.append([self.GENERAL_COLUMN_SIZE, "idea", (u" %c" % gc.getYieldInfo(YieldTypes.YIELD_IDEAS).getChar() )])
 		if self.culture:
-			screen.setTableColumnHeader( szListName, 12 + self.inventions, "<font=3>" + (u" %c" % gc.getYieldInfo(YieldTypes.YIELD_CULTURE).getChar()) + "</font>", self.GENERAL_COLUMN_SIZE)
-		#TKe Med
+			general_column_setup.append([self.GENERAL_COLUMN_SIZE, "culture", (u" %c" % gc.getYieldInfo(YieldTypes.YIELD_CULTURE).getChar() )])
+		general_column_setup.append([self.GENERAL_COLUMN_SIZE, "strength", (u" %c" % CyGame().getSymbolID(FontSymbols.STRENGTH_CHAR)) ])
+		general_column_setup.append([self.GENERAL_COLUMN_SIZE, "defence", (u" %c" % CyGame().getSymbolID(FontSymbols.DEFENSE_CHAR)) ])
+		general_column_setup.append([self.GENERAL_COLUMN_SIZE * 3, "culture_long", localText.getText("TXT_KEY_ADVISOR_CULTURE", ())])
 		
-		# Garrison Column
-		screen.setTableColumnHeader( szListName, 13 + self.inventions + self.culture, "<font=2>" + (u" %c" % CyGame().getSymbolID(FontSymbols.STRENGTH_CHAR)) + "</font>", self.GENERAL_COLUMN_SIZE)
-		# Defense Column
-		screen.setTableColumnHeader( szListName, 14 + self.inventions + self.culture, "<font=2>" + (u" %c" % CyGame().getSymbolID(FontSymbols.DEFENSE_CHAR)) + "</font>", self.GENERAL_COLUMN_SIZE)
-		# Production Column
-		# Set width to 3 * self.GENERAL_COLUMN_SIZE + whatever is left due to rounding.
-		screen.setTableColumnHeader( szListName, 15 + self.inventions + self.culture, "<font=2>" + localText.getText("TXT_KEY_DOMESTIC_ADVISOR_PRODUCING", ()).upper() + "</font>", self.nTableWidth - ((9 + self.inventions + self.culture) * self.GENERAL_COLUMN_SIZE) )
-
-		## R&R, Robert Surcouf,  Domestic Advisor Screen START
-		szListName = self.StatePages[self.GENERAL_STATE][1] + "ListBackground"
-		# Culture Column
-		screen.setTableColumnHeader(szListName, 2, "<font=2>" + (u" %c" % gc.getYieldInfo(YieldTypes.YIELD_BELLS).getChar()) + "</font>", (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / 12 )
-		# Culture Column
-		screen.setTableColumnHeader( szListName, 3, "<font=2>" + localText.getText("TXT_KEY_ADVISOR_CULTURE", ()).upper() + "</font>", (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / 4 )
-		## R&R, Robert Surcouf,  Domestic Advisor Screen END
+		# setting up page(s) for general state
+		self.GENERAL_COLUMNS = []
+		self.MAX_GENERAL_IN_A_PAGE = len(general_column_setup)
+		iSpace = self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH
+		for iColumn in range(len(general_column_setup)):
+			if (len(self.GENERAL_COLUMNS) < self.MAX_GENERAL_IN_A_PAGE):
+				iNew = iSpace - general_column_setup[iColumn][0]
+				if (iNew < 200):
+					self.GENERAL_COLUMNS.append([iSpace, "production", localText.getText("TXT_KEY_DOMESTIC_ADVISOR_PRODUCING", ()).upper(), iSpace])
+					self.MAX_GENERAL_IN_A_PAGE = len(self.GENERAL_COLUMNS)
+				else:
+					iSpace = iNew
+			if (len(self.GENERAL_COLUMNS) >= self.MAX_GENERAL_IN_A_PAGE and general_column_setup[iColumn][1] == "culture_long"):
+				self.GENERAL_COLUMNS.append([self.GENERAL_COLUMN_SIZE, "bell", (u" %c" % gc.getYieldInfo(YieldTypes.YIELD_BELLS).getChar() ), iSpace])
+			self.GENERAL_COLUMNS.append(general_column_setup[iColumn])
+			self.GENERAL_COLUMNS[len(self.GENERAL_COLUMNS)-1].append(len(self.GENERAL_COLUMNS))
+		
+		if (len(self.GENERAL_COLUMNS) <= self.MAX_GENERAL_IN_A_PAGE):
+			self.GENERAL_COLUMNS.append([iSpace, "production", localText.getText("TXT_KEY_DOMESTIC_ADVISOR_PRODUCING", ()).upper(), iSpace])
+			self.MAX_GENERAL_IN_A_PAGE = len(self.GENERAL_COLUMNS)
+		
+		self.createSubpage(self.GENERAL_STATE, 0, self.MAX_GENERAL_IN_A_PAGE)
+		if (len(self.GENERAL_COLUMNS) > self.MAX_GENERAL_IN_A_PAGE):
+			self.createSubpage(self.GENERAL_STATE, 1, len(self.GENERAL_COLUMNS) % self.MAX_GENERAL_IN_A_PAGE)
+		
+		for iIndex in range(len(self.GENERAL_COLUMNS)):
+			iIndexOnPage = iIndex % self.MAX_GENERAL_IN_A_PAGE
+			iPage = iIndex // self.MAX_GENERAL_IN_A_PAGE
+			screen.setTableColumnHeader( self.StatePages[self.GENERAL_STATE][iPage] + "ListBackground", iIndexOnPage + 2, "<font=2>" + self.GENERAL_COLUMNS[iIndex][2] + "</font>", self.GENERAL_COLUMNS[iIndex][0])
 		
 		if (self.useLuxuryGoods):
 			self.createSubpage(self.GENERAL_STATE, 2)
@@ -240,35 +303,59 @@ class CvDomesticAdvisor:
 #VET NewCapacity - begin 3/4
 		for iState in self.YieldPages:
 			offset = 0
-			width = (self.PRODUCTION_COLUMN_SIZE * self.nTableWidth) / self.nNormalizedTableWidth
+			#width = (self.PRODUCTION_COLUMN_SIZE * self.nTableWidth) / self.nNormalizedTableWidth
 			if self.bNewCapacity and iState == self.WAREHOUSE_STATE:
 				offset = 1
 				width = (self.WAREHOUSE_COLUMN_SIZE * self.nTableWidth) / self.nNormalizedTableWidth
 				for PageName in self.StatePages[self.WAREHOUSE_STATE]:
 					screen.setTableColumnHeader( PageName + "ListBackground", 2, "<font=2>" + "MAX" + "</font>", self.iWareHouseW)
 				
-			for iYield in range(YieldTypes.YIELD_FOOD, self.num_yields):
-				iYieldOnPage = iYield % self.MAX_YIELDS_IN_A_PAGE
-				iPage = iYield // self.MAX_YIELDS_IN_A_PAGE
-				self.createSubpage(iState, iPage)
-				screen.setTableColumnHeader( self.StatePages[iState][iPage] + "ListBackground", iYieldOnPage + 2 + offset, "<font=2> " + (u" %c" % gc.getYieldInfo(iYield).getChar()) + "</font>", (self.PRODUCTION_COLUMN_SIZE * self.nTableWidth) / self.nNormalizedTableWidth )
+			for iYieldIndex in range(len(self.AllowedYields)):
+				iYield = self.AllowedYields[iYieldIndex]
+				iYieldOnPage = iYieldIndex % self.MAX_YIELDS_IN_A_PAGE
+				iPage = iYieldIndex // self.MAX_YIELDS_IN_A_PAGE
+				[ iWidth, iColumns ] = self.getColumnWidth(iYieldIndex, len(self.AllowedYields), self.MAX_YIELDS_IN_A_PAGE, iPage)
+				self.createSubpage(iState, iPage, iColumns)
+				screen.setTableColumnHeader( self.StatePages[iState][iPage] + "ListBackground", iYieldOnPage + 2 + offset, "<font=2> " + (u" %c" % gc.getYieldInfo(iYield).getChar()) + "</font>", iWidth )
 
 				
 		# Building Headers
-		for iSpecial in range(gc.getNumSpecialBuildingInfos()):	
-			if (iSpecial != gc.getInfoTypeForString("SPECIALBUILDING_BELLS")):
-				iBuildingOnPage = (iSpecial-1) % self.MAX_BUILDINGS_IN_A_PAGE
-				iPage = (iSpecial-1) // self.MAX_BUILDINGS_IN_A_PAGE
-				self.createSubpage(self.BUILDING_STATE, iPage)
+		for iIndex in range(len(self.AllowedBuildings)):
+			iIndexOnPage = iIndex % self.MAX_BUILDINGS_IN_A_PAGE
+			iPage = iIndex // self.MAX_BUILDINGS_IN_A_PAGE
+			iSpecial = self.AllowedSpecialBuildings[iIndex]
+			[ iWidth, iColumns ] = self.getColumnWidth(iIndex, len(self.AllowedBuildings), self.MAX_BUILDINGS_IN_A_PAGE, iPage)
+			for state in self.BuildingPages:
+				self.createSubpage(state, iPage, iColumns)
+				screen.setTableColumnHeader( self.StatePages[state][iPage] + "ListBackground", iIndexOnPage + 2, "<font=2> " + (u" %c" %  gc.getSpecialBuildingInfo(iSpecial).getChar()) + "</font>", iWidth)
+		
+		#for iSpecial in range(gc.getNumSpecialBuildingInfos()):	
+		#	if (iSpecial != gc.getInfoTypeForString("SPECIALBUILDING_BELLS")):
+		#		iBuildingOnPage = (iSpecial-1) % self.MAX_BUILDINGS_IN_A_PAGE
+		#		iPage = (iSpecial-1) // self.MAX_BUILDINGS_IN_A_PAGE
+		#		self.createSubpage(self.BUILDING_STATE, iPage)
 			
-				if (iSpecial == self.WhaleOil):
-					screen.setTableColumnHeader( self.StatePages[self.BUILDING_STATE][iPage] + "ListBackground", iBuildingOnPage + 2, "<font=2> " + (u" %c" %  gc.getYieldInfo(YieldTypes.YIELD_WHALE_OIL).getChar()) + "</font>", (self.BUILDING_COLUMN_SIZE * self.nTableWidth) / self.nNormalizedTableWidth )				
-				else:
-					screen.setTableColumnHeader( self.StatePages[self.BUILDING_STATE][iPage] + "ListBackground", iBuildingOnPage + 2, "<font=2> " + (u" %c" %  gc.getSpecialBuildingInfo(iSpecial).getChar())         + "</font>", (self.BUILDING_COLUMN_SIZE * self.nTableWidth) / self.nNormalizedTableWidth )
+		#		if (iSpecial == self.WhaleOil):
+		#			screen.setTableColumnHeader( self.StatePages[self.BUILDING_STATE][iPage] + "ListBackground", iBuildingOnPage + 2, "<font=2> " + (u" %c" %  gc.getYieldInfo(YieldTypes.YIELD_WHALE_OIL).getChar()) + "</font>", (self.BUILDING_COLUMN_SIZE * self.nTableWidth) / self.nNormalizedTableWidth )				
+		#		else:
+		#			screen.setTableColumnHeader( self.StatePages[self.BUILDING_STATE][iPage] + "ListBackground", iBuildingOnPage + 2, "<font=2> " + (u" %c" %  gc.getSpecialBuildingInfo(iSpecial).getChar())         + "</font>", (self.BUILDING_COLUMN_SIZE * self.nTableWidth) / self.nNormalizedTableWidth )
 	
 		# Citizen Headers
+		self.createSubpage(self.CITIZEN_STATE, 0, 3)
 		screen.setTableColumnHeader( self.StatePages[self.CITIZEN_STATE][0] + "ListBackground", 2, "<font=2>" +  localText.getText("TXT_KEY_DOMESTIC_ADVISOR_STATE_CITIZEN", ()).upper() + "</font>", self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH)
 			
+		# Citizen count header
+		for iIndex in range(len(self.AllowedUnits)):
+			iIndexOnPage = iIndex % self.MAX_UNITS_IN_A_PAGE
+			iPage = iIndex // self.MAX_UNITS_IN_A_PAGE
+			iUnit = self.AllowedUnits[iIndex]
+			[ iWidth, iColumns ] = self.getColumnWidth(iIndex, len(self.AllowedUnits), self.MAX_UNITS_IN_A_PAGE, iPage)
+			for iStateIndez in range(len(self.CitizenPages)):
+				state = self.CitizenPages[iStateIndez]
+				self.createSubpage(state, iPage, iColumns)
+				screen.setTableColumnHeader( self.StatePages[state][iPage] + "ListBackground", iIndexOnPage + 2, "<font=2> " + gc.getUnitInfo(iUnit).getDescription() + "</font>", iWidth )
+
+		
 		#Default State on Screen opening
 		self.CurrentState = self.GENERAL_STATE
 		self.CurrentPage = 0
@@ -295,10 +382,22 @@ class CvDomesticAdvisor:
 					screen.setImageButton("HighlightButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_HIGHLIGHTED_BUTTON").getPath(), (self.iButtonSpacing * iState) + (self.iButtonSpacing / 2) - ((self.iButtonSize * RelativeButtonSize / 100) / 2) + (self.iButtonSize / 2), self.Y_LOWER_ROW - ((self.iButtonSize * RelativeButtonSize / 100) / 2) + (self.iButtonSize / 2), self.iButtonSize * RelativeButtonSize / 100, self.iButtonSize * RelativeButtonSize / 100, WidgetTypes.WIDGET_GENERAL, iState, -1 )
 				
 				
-				# auto-generated list creation - Nightinggale
-				# Added hardcoded button values 100 and 102
-				screen.setImageButton("MainLeftButton", ArtFileMgr.getInterfaceArtInfo(self.StateButtons[len(self.StateButtons)-2]).getPath(), 15, 20, 2*self.iButtonSize/3, 2*self.iButtonSize/3, WidgetTypes.WIDGET_GENERAL, 100, -1 )
-				screen.setImageButton("MainRightButton", ArtFileMgr.getInterfaceArtInfo(self.StateButtons[len(self.StateButtons)-1]).getPath(), self.nScreenWidth -50, 20, 2*self.iButtonSize/3, 2*self.iButtonSize/3, WidgetTypes.WIDGET_GENERAL, 102, -1 )
+		# auto-generated list creation - Nightinggale
+		# Added hardcoded button values 100 and 102
+		#
+		# turn the button on and off with y_offset
+		# as ignoring a button can leave a ghost behind, turning a button off is done by drawing it outside the screen (y = -1000)
+		# kind of a hack, but it works
+		y_offset = 20
+		if (self.CurrentPage == 0):
+			y_offset = -1000
+		screen.setImageButton("MainLeftButton", ArtFileMgr.getInterfaceArtInfo(self.StateButtons[len(self.StateButtons)-2]).getPath(), 15, y_offset, 2*self.iButtonSize/3, 2*self.iButtonSize/3, WidgetTypes.WIDGET_GENERAL, 100, -1 )
+				
+		y_offset = -1000
+		if (self.CurrentPage < (len(self.StatePages[self.CurrentState]) - 1)):
+			y_offset = 20
+		screen.setImageButton("MainRightButton", ArtFileMgr.getInterfaceArtInfo(self.StateButtons[len(self.StateButtons)-1]).getPath(), self.nScreenWidth -50, y_offset, 2*self.iButtonSize/3, 2*self.iButtonSize/3, WidgetTypes.WIDGET_GENERAL, 102, -1 )
+
 			## R&R, Robert Surcouf,  Domestic Advisor Screen END
 	# Function to draw the contents of the cityList passed in
 	def drawContents (self):
@@ -354,49 +453,57 @@ class CvDomesticAdvisor:
 		screen.setTableText(szState + "ListBackground", 1, i, "<font=2>" + pLoopCity.getName() + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 		## R&R, Robert Surcouf,  Domestic Advisor Screen - End
 		
-		if(self.CurrentState == self.GENERAL_STATE and self.CurrentPage == 0):
-
-			# Population
-			screen.setTableInt(szState + "ListBackground", 2, i, "<font=2>" + unicode(pLoopCity.getPopulation()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-			# Liberty
-			screen.setTableInt(szState + "ListBackground", 3, i, "<font=2>" + unicode(pLoopCity.getRebelPercent()) + "%" + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-			# Food rate
-			iNetFood = pLoopCity.foodDifference()
-			szText = unicode(iNetFood)
-			if iNetFood > 0:
-				szText = localText.getText("TXT_KEY_COLOR_POSITIVE", ()) + szText + localText.getText("TXT_KEY_COLOR_REVERT", ())
-			elif iNetFood < 0:
-				szText = localText.getText("TXT_KEY_COLOR_NEGATIVE", ()) + szText + localText.getText("TXT_KEY_COLOR_REVERT", ())			
-			screen.setTableInt(szState + "ListBackground", 5, i, "<font=2>" + szText + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-			# Hammers rate
-			screen.setTableInt(szState + "ListBackground", 6, i, "<font=2>" + unicode(pLoopCity.calculateNetYield(YieldTypes.YIELD_HAMMERS)) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-			#Bell rate
-			screen.setTableInt(szState + "ListBackground", 8, i, "<font=2>" + unicode(pLoopCity.calculateNetYield(YieldTypes.YIELD_BELLS)) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-			# Crosses rate
-			screen.setTableInt(szState + "ListBackground", 10, i, "<font=2>" + unicode(pLoopCity.calculateNetYield(YieldTypes.YIELD_CROSSES)) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-			# Education rate
-			screen.setTableInt(szState + "ListBackground", 11, i, "<font=2>" + unicode(pLoopCity.calculateNetYield(YieldTypes.YIELD_EDUCATION)) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-			
-			#TKs Med
-			# Research rate
-			if self.inventions:
-				screen.setTableInt(szState + "ListBackground", 12, i, "<font=3>" + unicode(pLoopCity.calculateNetYield(YieldTypes.YIELD_IDEAS)) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-			# Culture rate
-			if self.culture:
-				screen.setTableInt(szState + "ListBackground", 12 + self.inventions, i, "<font=3>" + unicode(pLoopCity.calculateNetYield(YieldTypes.YIELD_CULTURE)) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-			#TKe Med
-			
-			# Garrison
-			screen.setTableInt(szState + "ListBackground", 13 + self.inventions + self.culture, i, "<font=2>" + unicode(pLoopCity.plot().getNumDefenders(pLoopCity.getOwner())) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-			# Defense
-			szBuffer = u"<font=2>%s%%</font>" % (str(pLoopCity.getDefenseModifier()))
-			screen.setTableInt(szState + "ListBackground", 14 + self.inventions + self.culture, i, "<font=2>" + szBuffer + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-			# Producing
-			screen.setTableText(szState + "ListBackground", 15 + self.inventions + self.culture, i, "<font=2>" + pLoopCity.getProductionName() + " (" + str(pLoopCity.getGeneralProductionTurnsLeft()) + ")" + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-
+		if(self.CurrentState == self.GENERAL_STATE):
+			if (self.CurrentPage == 0):
+				start = 0
+				end = self.MAX_GENERAL_IN_A_PAGE
+			else:
+				start = self.MAX_GENERAL_IN_A_PAGE
+				end = len(self.GENERAL_COLUMNS)
+				
+			for iIndex in range(start, end):
+				szText = ""
+				szColumn = self.GENERAL_COLUMNS[iIndex][1]
+				if (szColumn == "population"):
+					szText = unicode(pLoopCity.getPopulation())
+				elif (szColumn == "power"):
+					szText = unicode(pLoopCity.getRebelPercent()) + "%"
+				elif (szColumn == "food"):
+					iNetFood = pLoopCity.foodDifference()
+					szText = unicode(iNetFood)
+					if iNetFood > 0:
+						szText = localText.getText("TXT_KEY_COLOR_POSITIVE", ()) + szText + localText.getText("TXT_KEY_COLOR_REVERT", ())
+					elif iNetFood < 0:
+						szText = localText.getText("TXT_KEY_COLOR_NEGATIVE", ()) + szText + localText.getText("TXT_KEY_COLOR_REVERT", ())	
+				elif (szColumn == "hammer"):
+					szText = unicode(pLoopCity.calculateNetYield(YieldTypes.YIELD_HAMMERS))
+				elif (szColumn == "bell"):
+					szText = unicode(pLoopCity.calculateNetYield(YieldTypes.YIELD_BELLS))
+				elif (szColumn == "cross"):
+					szText = unicode(pLoopCity.calculateNetYield(YieldTypes.YIELD_CROSSES))
+				elif (szColumn == "education"):
+					szText = unicode(pLoopCity.calculateNetYield(YieldTypes.YIELD_EDUCATION))
+				elif (szColumn == "idea"):
+					szText = unicode(pLoopCity.calculateNetYield(YieldTypes.YIELD_IDEAS))
+				elif (szColumn == "culture"):
+					szText = unicode(pLoopCity.calculateNetYield(YieldTypes.YIELD_CULTURE))
+				elif (szColumn == "strength"):
+					szText = unicode(pLoopCity.plot().getNumDefenders(pLoopCity.getOwner()))
+				elif (szColumn == "defence"):
+					szText = u"<font=2>%s%%</font>" % (str(pLoopCity.getDefenseModifier()))
+				elif (szColumn == "culture_long"):
+					szText = localText.getText("TXT_KEY_CITY_BAR_CULTURE", (pLoopCity.getCulture(pLoopCity.getOwner()),pLoopCity.getCultureThreshold(), gc.getCultureLevelInfo(pLoopCity.getCultureLevel()).getText()))
+				elif (szColumn == "production"):
+					szText = pLoopCity.getProductionName() + " (" + str(pLoopCity.getGeneralProductionTurnsLeft()) + ")"
+				else:
+					szText = u"ERROR"
+				
+				screen.setTableInt(szState + "ListBackground", iIndex - start + 2, i, "<font=2>" + szText + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+				
 		elif(self.CurrentState == self.PRODUCTION_STATE):
 			start = self.YieldStart()
-			for iYield in range(start, self.YieldEnd()):
+			for iYieldIndex in range(start, self.YieldEnd()):
+				iYield = self.AllowedYields[iYieldIndex]
 				iNetYield = pLoopCity.calculateNetYield(iYield)
 				szText = unicode(iNetYield)
 				if iNetYield > 0:
@@ -405,7 +512,7 @@ class CvDomesticAdvisor:
 					szText = localText.getText("TXT_KEY_COLOR_NEGATIVE", ()) + szText + localText.getText("TXT_KEY_COLOR_REVERT", ())
 				elif iNetYield == 0:
 					szText = ""
-				screen.setTableInt(szState + "ListBackground", iYield - start + 2, i, "<font=1>" + szText + "<font/>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+				screen.setTableInt(szState + "ListBackground", iYieldIndex - start + 2, i, "<font=1>" + szText + "<font/>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 				
 		elif(self.CurrentState == self.WAREHOUSE_STATE):
 #VET NewCapacity - begin 4/4
@@ -464,13 +571,14 @@ class CvDomesticAdvisor:
 				szText += u"/" + str(iMaxYield) + u"</color></font>"
 				screen.setTableInt(self.StatePages[self.WAREHOUSE_STATE][self.CurrentPage] + "ListBackground", 2, i, szText, "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 				
-			for iYield in range(self.YieldStart(), self.YieldEnd()):
+			for iYieldIndex in range(self.YieldStart(), self.YieldEnd()):
+				iYield = self.AllowedYields[iYieldIndex]
 				iNetYield = pLoopCity.getYieldStored(iYield)
 				szText = unicode(iNetYield)
 				if iNetYield == 0:
 					szText = ""
 				else:
-					screen.setTableInt(szState + "ListBackground", (iYield % self.MAX_YIELDS_IN_A_PAGE) + 2 + self.bNewCapacity, i, u"<font=2><color=0,255,0>" + szText + u"</color></font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+					screen.setTableInt(szState + "ListBackground", (iYieldIndex % self.MAX_YIELDS_IN_A_PAGE) + 2 + self.bNewCapacity, i, u"<font=2><color=0,255,0>" + szText + u"</color></font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 			#else:
 			#	screen.setTableInt(self.StatePages[self.WAREHOUSE_STATE][0] + "ListBackground", 2, i, u"<font=2><color=255,255,255>" + str(pLoopCity.getMaxYieldCapacity()) + u"</color></font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 			#	for iYield in range(YieldTypes.NUM_YIELD_TYPES):
@@ -498,48 +606,81 @@ class CvDomesticAdvisor:
 #VET NewCapacity - end 4/4
 				
 		elif(self.CurrentState == self.BUILDING_STATE):
-			start = (self.MAX_BUILDINGS_IN_A_PAGE * self.CurrentPage) + 1
-			end = min((self.MAX_BUILDINGS_IN_A_PAGE * (self.CurrentPage + 1)) + 1, gc.getNumSpecialBuildingInfos()-1)
+			start = self.BuildingStart()
+			for iBuildingIndex in range(start, self.BuildingEnd()):
+				iSpecial = self.AllowedSpecialBuildings[iBuildingIndex]
+				iIconBuilding = -1
+				for iBuilding in self.AllowedBuildings[iBuildingIndex]:
+					if pLoopCity.isHasBuilding(iBuilding):
+						iIconBuilding = iBuilding
+						break
+				if iIconBuilding != -1:
+					screen.setTableInt(szState + "ListBackground", iBuildingIndex - start  + 2, i, "", gc.getBuildingInfo(iIconBuilding).getButton(), WidgetTypes.WIDGET_PEDIA_JUMP_TO_BUILDING, iIconBuilding, -1, CvUtil.FONT_LEFT_JUSTIFY )
 		
-			for iSpecial in range(start, end):
-				if (iSpecial != gc.getInfoTypeForString("SPECIALBUILDING_BELLS")):
-					iIconBuilding = -1
-					for iBuilding in range(gc.getNumBuildingInfos()):
-						if gc.getBuildingInfo(iBuilding).getSpecialBuildingType() == iSpecial:
-							if pLoopCity.isHasBuilding(iBuilding):
-								iIconBuilding = iBuilding
-								break
-					if iIconBuilding != -1:
-						screen.setTableInt(szState + "ListBackground", iSpecial - start  + 2, i, "", gc.getBuildingInfo(iBuilding).getButton(), WidgetTypes.WIDGET_PEDIA_JUMP_TO_BUILDING, iBuilding, -1, CvUtil.FONT_LEFT_JUSTIFY )
+		
+			#start = (self.MAX_BUILDINGS_IN_A_PAGE * self.CurrentPage) + 1
+			#end = min((self.MAX_BUILDINGS_IN_A_PAGE * (self.CurrentPage + 1)) + 1, gc.getNumSpecialBuildingInfos()-1)
+		
+			#for iSpecial in range(start, end):
+			#	if (iSpecial != gc.getInfoTypeForString("SPECIALBUILDING_BELLS")):
+			#		iIconBuilding = -1
+			#		for iBuilding in range(gc.getNumBuildingInfos()):
+			#			if gc.getBuildingInfo(iBuilding).getSpecialBuildingType() == iSpecial:
+			#				if pLoopCity.isHasBuilding(iBuilding):
+			#					iIconBuilding = iBuilding
+			#					break
+			#		if iIconBuilding != -1:
+			#			screen.setTableInt(szState + "ListBackground", iSpecial - start  + 2, i, "", gc.getBuildingInfo(iBuilding).getButton(), WidgetTypes.WIDGET_PEDIA_JUMP_TO_BUILDING, iBuilding, -1, CvUtil.FONT_LEFT_JUSTIFY )
 						
 		elif(self.CurrentState == self.IMPORTEXPORT_STATE):
 			start = self.YieldStart()
-			for iYield in range(start, self.YieldEnd()):
+			for iYieldIndex in range(start, self.YieldEnd()):
+				iYield = self.AllowedYields[iYieldIndex]
 				bExportYield = pLoopCity.isExport(iYield)
 				bImportYield = pLoopCity.isImport(iYield)
 				## R&R, Robert Surcouf,  Domestic Advisor Screen - End
 				if (bExportYield and bImportYield):
-					screen.setTableInt(szState + "ListBackground", iYield - start + 2, i, u"<font=2><color=255,255,0>" + localText.getText("TXT_KEY_IN_AND_OUT", ()) + u"</color></font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+					screen.setTableInt(szState + "ListBackground", iYieldIndex - start + 2, i, u"<font=2><color=255,255,0>" + localText.getText("TXT_KEY_IN_AND_OUT", ()) + u"</color></font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 				elif (not bExportYield and bImportYield):
-					screen.setTableInt(szState + "ListBackground", iYield - start + 2, i, u"<font=2><color=0,255,0>" + localText.getText("TXT_KEY_IN", ()) + u"</color></font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+					screen.setTableInt(szState + "ListBackground", iYieldIndex - start + 2, i, u"<font=2><color=0,255,0>" + localText.getText("TXT_KEY_IN", ()) + u"</color></font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 				elif (bExportYield and not bImportYield):
-					screen.setTableInt(szState + "ListBackground", iYield - start + 2, i, u"<font=2><color=255,0,0>" + localText.getText("TXT_KEY_OUT", ()) + u"</color></font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+					screen.setTableInt(szState + "ListBackground", iYieldIndex - start + 2, i, u"<font=2><color=255,0,0>" + localText.getText("TXT_KEY_OUT", ()) + u"</color></font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 
 			screen.setTableText(szState + "ListBackground", 1, i, "<font=2>" + pLoopCity.getName() + "</font>", "", WidgetTypes.WIDGET_YIELD_IMPORT_EXPORT, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 			# RR - Domestic Advisor Screen - END
-			
-		## R&R, Robert Surcouf,  Domestic Advisor Screen START
-		elif(self.CurrentState == self.GENERAL_STATE and self.CurrentPage == 1): 
-			#Culture rate
-			screen.setTableInt(szState + "ListBackground", 2, i, "<font=3>" + unicode(pLoopCity.calculateNetYield(YieldTypes.YIELD_BELLS)) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-			# Culture Level
-			
-			#screen.setTableText(szState + "ListBackground", 3, i, "<font=3>" + localText.getText("TXT_KEY_IMMIGRATION_BAR", (pLoopCity.getCultureLevel(),pLoopCity.getCultureThreshold(), gc.getYieldInfo(YieldTypes.YIELD_BELLS).getChar())) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-			#screen.setTableText(szState + "ListBackground", 3, i, "<font=3>" + gc.getCultureLevelInfo(pLoopCity.getCultureLevel()).getTextKey()+"</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-			###screen.setTableText(szState + "ListBackground", 3, i, "<font=3>" + gc.getCultureLevelInfo(pLoopCity.getCultureLevel()).getText()+"</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-			screen.setTableText(szState + "ListBackground", 3, i, "<font=2>" + localText.getText("TXT_KEY_CITY_BAR_CULTURE", (pLoopCity.getCulture(pLoopCity.getOwner()),pLoopCity.getCultureThreshold(), gc.getCultureLevelInfo(pLoopCity.getCultureLevel()).getText()))+"</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-			
-		## R&R, Robert Surcouf,  Domestic Advisor Screen END
+		
+		elif(self.CurrentState in self.CitizenPages):
+			cityPopList = [0] * len(self.AllowedUnits)
+			for iCitizen in range(pLoopCity.getPopulation() - 1, -1, -1):
+				pCitizen = pLoopCity.getPopulationUnitByIndex(iCitizen)
+				iType = pCitizen.getUnitType()
+				if (self.CurrentState == self.CITIZEN_COUNT_STATE or not pCitizen.isCitizenExpertWorking()):
+					cityPopList[self.AllowedUnitIndex[iType]] += 1
+				
+			iTeachLevelCity = pLoopCity.getTeachLevel()
+			start = self.CitizenStart()
+			for iUnitIndex in range(start, self.CitizenEnd()):
+				iUnitCount = cityPopList[iUnitIndex]
+				iUnit = self.AllowedUnits[iUnitIndex]
+				ITeachLevelUnit = gc.getUnitInfo(iUnit).getTeachLevel()
+				
+				if (pLoopCity.getSpecialistTuition(iUnit) != -1):
+					szText = u"<color=0,255,0>"
+				elif (ITeachLevelUnit > 100):
+					szText = u"<color=255,255,255>"
+				elif (iTeachLevelCity >= ITeachLevelUnit):
+					szText = u"<color=255,255,0>"
+				else:
+					szText =u"<color=255,0,0>"
+				
+				if (iUnitCount > 0):
+					szText += unicode(iUnitCount)
+				else:
+					# a single green line is too tricky to see
+					# 3 lines are visible while they still do not take attention away from the numbers
+					szText += u"---"
+				
+				screen.setTableInt(szState + "ListBackground", iUnitIndex - start + 2, i, u"<font=2>" + szText + u"</font>", "", WidgetTypes.WIDGET_PEDIA_JUMP_TO_UNIT, iUnit, -1, CvUtil.FONT_LEFT_JUSTIFY )
 		
 		## R&R, Robert Surcouf, Domestic Market display START
 		elif(self.CurrentState == self.GENERAL_STATE and self.CurrentPage == 2): 
@@ -886,7 +1027,9 @@ class CvDomesticAdvisor:
 					if(self.CurrentState != iData):
 						screen.hide(self.StatePages[self.CurrentState][self.CurrentPage] + "ListBackground")
 						if self.CurrentState not in self.YieldPages or iData not in self.YieldPages:
-							self.CurrentPage = 0
+							if self.CurrentState not in self.CitizenPages or iData not in self.CitizenPages:
+								if self.CurrentState not in self.BuildingPages or iData not in self.BuildingPages:
+									self.CurrentPage = 0
 						self.CurrentState = iData
 						self.drawContents()
 				# auto-generated list creation - start - Nightinggale
@@ -952,39 +1095,52 @@ class CvDomesticAdvisor:
 		return (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / iNum 
 	## R&R, Robert Surcouf,  Domestic Advisor Screen - End
 	
-	# two small functions to get the yields on the current page - Nightinggale
+	# small functions to simplify looping though columns in current page - Nightinggale
 	def YieldStart(self):
 		return self.MAX_YIELDS_IN_A_PAGE * self.CurrentPage
 		
 	def YieldEnd(self):
-		return min((self.MAX_YIELDS_IN_A_PAGE * (self.CurrentPage + 1)), self.num_yields)
+		return min((self.MAX_YIELDS_IN_A_PAGE * (self.CurrentPage + 1)), len(self.AllowedYields))
+		
+	def BuildingStart(self):
+		return self.MAX_BUILDINGS_IN_A_PAGE * self.CurrentPage
+		
+	def BuildingEnd(self):
+		return min((self.MAX_BUILDINGS_IN_A_PAGE * (self.CurrentPage + 1)), len(self.AllowedSpecialBuildings))
+	
+	def CitizenStart(self):
+		return self.MAX_UNITS_IN_A_PAGE * self.CurrentPage
+		
+	def CitizenEnd(self):
+		return min((self.MAX_UNITS_IN_A_PAGE * (self.CurrentPage + 1)), len(self.AllowedUnits))
 	
 	# auto-generated list creation - start - Nightinggale
 	def addButton(self, state_button, state_help):
 		index = len(self.StatePages)
 		self.StateButtons.append(state_button)
-		self.StatePages.append(["State" + str(index)])
+		self.StateNames.append("State" + str(index))
+		self.StatePages.append([])
 		self.StateHelp.append(state_help)
 		return index
 		
-	def createSubpage(self, iState, iPage):
+	def createSubpage(self, iState, iPage, iColumns):
 		length = len(self.StatePages[iState])
-		if (length <= iPage):
-			self.StatePages[iState].append(self.StatePages[iState][0] + "Page" + str(length))
-			self.initPage(iState, length)
-			self.createSubpage(iState, iPage)
+		if (length == iPage):
+			self.StatePages[iState].append(self.StateNames[iState] + "Page" + str(length))
+			self.initPage(iState, length, iColumns)
+			#self.createSubpage(iState, iPage, iColumns)
 			
-	def initPage(self, iState, iPage):
+	def initPage(self, iState, iPage, iColumns):
 		if iState != self.TRADEROUTE_STATE and iState != self.NATIVE_STATE:
 			screen = CyGInterfaceScreen( "DomesticAdvisor", CvScreenEnums.DOMESTIC_ADVISOR )
 			szStateName = self.StatePages[iState][iPage] + "ListBackground"
 			## R&R, Robert Surcouf,  Domestic Advisor Screen START
 			#screen.addTableControlGFC(szStateName, 22, (self.nScreenWidth - self.nTableWidth) / 2, 60, self.nTableWidth, self.nTableHeight, True, False, self.iCityButtonSize, self.iCityButtonSize, TableStyles.TABLE_STYLE_STANDARD )
-			screen.addTableControlGFC(szStateName, self.MAX_YIELDS_IN_A_PAGE + 4, (self.nScreenWidth - self.nTableWidth) / 2, 60, self.nTableWidth, self.nTableHeight, True, False, self.iCityButtonSize, self.iCityButtonSize, TableStyles.TABLE_STYLE_STANDARD )
+			screen.addTableControlGFC(szStateName, iColumns + 2, (self.nScreenWidth - self.nTableWidth) / 2, 60, self.nTableWidth, self.nTableHeight, True, False, self.iCityButtonSize, self.iCityButtonSize, TableStyles.TABLE_STYLE_STANDARD )
 			screen.setStyle(szStateName, "Table_StandardCiv_Style")
 			screen.hide(szStateName)
-			screen.setTableColumnHeader(szStateName, 0, "", 45 )
-			#screen.setTableColumnHeader(szStateName, 0, "", 56 )
+			#screen.setTableColumnHeader(szStateName, 0, "", 45 )
+			screen.setTableColumnHeader(szStateName, 0, "", 56 )
 			## R&R, Robert Surcouf,  Domestic Advisor Screen END
 			screen.setTableColumnHeader(szStateName, 1, "<font=2>" + localText.getText("TXT_KEY_DOMESTIC_ADVISOR_NAME", ()).upper() + "</font>", self.CITY_NAME_COLUMN_WIDTH - 56 )
 
@@ -1001,4 +1157,33 @@ class CvDomesticAdvisor:
 			# total production page - end - Nightinggale
 				screen.appendTableRow(szStateName)
 				screen.setTableRowHeight(szStateName, iCity, self.ROW_HIGHT)
-	# auto-generated list creation - end - Nightinggale 
+				
+	def getNumColumns(self, iMinSpace, iNumColumns):
+		iSpace = self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH
+		
+		iMaxOnPage = iSpace // iMinSpace
+		iPages = iNumColumns // iMaxOnPage
+		if ((iPages * iMaxOnPage) < iNumColumns):
+			iPages += 1
+		
+		iColumnsOnPage = iNumColumns // iPages
+		if ((iColumnsOnPage * iPages) < iNumColumns):
+			iColumnsOnPage += 1
+		
+		return iColumnsOnPage
+		
+	def getColumnWidth(self, iIndex, iMax, iNumOnPage, iPage):
+		iSpace = self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH
+		
+		if ((iMax // iNumOnPage) == iPage):
+			iCount = iMax % iNumOnPage
+		else:
+			iCount = iNumOnPage
+		
+		iWidth = iSpace // iCount
+		
+		if ((iIndex + 1) == iMax or ((iIndex + 1) % iNumOnPage) == 0):
+			iWidth += iSpace % iCount
+		
+		return [ iWidth, iCount ]
+	# auto-generated list creation - end - Nightinggale

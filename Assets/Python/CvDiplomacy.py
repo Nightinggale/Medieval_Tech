@@ -864,12 +864,12 @@ class CvDiplomacy:
 			diploScreen.closeScreen()
 
 		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_TAX_PARTY")):
-		    player = gc.getPlayer(gc.getGame().getActivePlayer())
-		    if (gc.getLeaderHeadInfo(player.getLeaderType()).getVictoryType() == 1):
-		        self.setAIComment(self.getCommentID("AI_DIPLOCOMMENT_REJECT_PINKY"))
-		    else:
-			self.setAIComment(self.getCommentID("AI_DIPLOCOMMENT_REJECT_PINKY"), gc.getYieldInfo(iData1).getTextKey())
-
+			player = gc.getPlayer(gc.getGame().getActivePlayer())
+			if (gc.getLeaderHeadInfo(player.getLeaderType()).getVictoryType() == 1):
+				self.setAIComment(self.getCommentID("AI_DIPLOCOMMENT_REJECT_PINKY"))
+			else:
+				self.setAIComment(self.getCommentID("AI_DIPLOCOMMENT_REJECT_PINKY"), gc.getYieldInfo(iData1).getTextKey())
+				
 		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_REJECT_PINKY")):
 			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_REFUSE_TAX_RATE, iData1, iData2)
 			diploScreen.closeScreen()

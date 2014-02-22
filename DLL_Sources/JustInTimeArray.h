@@ -46,23 +46,38 @@ template<class T> class JustInTimeArray
 {
 private:
 	T* tArray;
-	int m_iLength;
+	const int m_iLength;
+	const T m_eDefault;
 
 public:
-	JustInTimeArray(int iLength)
-	{
-		tArray = NULL;
-		m_iLength = iLength;
-	}
+	JustInTimeArray(int iLength, T eDefault = 0)
+	: tArray(NULL)
+	, m_iLength(iLength)
+	, m_eDefault(eDefault)
+	{}
 
 	~JustInTimeArray()
 	{
 		SAFE_DELETE_ARRAY(tArray);
 	}
 
-	void reset()
+	// use resetContent() if you want to write to the array
+	// this way memory will not be freed and reallocated (slow process)
+	inline void reset()
 	{
 		SAFE_DELETE_ARRAY(tArray);
+	}
+
+	// reset content of an array if it is allocated
+	inline void resetContent()
+	{
+		if (isAllocated())
+		{
+			for (int iIterator = 0; iIterator < m_iLength; ++iIterator)
+			{
+				tArray[iIterator] = m_eDefault;
+			}
+		}
 	}
 
 	inline bool isAllocated() const
@@ -75,19 +90,11 @@ public:
 		return m_iLength;
 	}
 
-	// used when constructor isn't called, like in an array
-	// can also be used if constructor is called before XML is read as getNum..Infos() functions will be incorrect in that case.
-	void init(int iLength)
-	{
-		tArray = NULL;
-		m_iLength = iLength;
-	}
-
 	inline T get(int iIndex) const
 	{
 		FAssert(iIndex >= 0);
 		FAssert(iIndex < m_iLength);
-		return tArray ? tArray[iIndex] : 0;
+		return tArray ? tArray[iIndex] : m_eDefault;
 	}
 
 	inline void set(T value, int iIndex)
@@ -97,16 +104,13 @@ public:
 
 		if (tArray == NULL)
 		{
-			if (value == 0)
+			if (value == m_eDefault)
 			{
 				// no need to allocate memory to assign a default (false) value
 				return;
 			}
 			tArray = new T[m_iLength];
-			for (int iIterator = 0; iIterator < m_iLength; ++iIterator)
-			{
-				tArray[iIterator] = 0;
-			}
+			resetContent();
 		}
 		tArray[iIndex] = value;
 	}
@@ -171,7 +175,7 @@ public:
 				// requested writing an empty array.
 				for (int i = 0; i < m_iLength; i++)
 				{
-					pStream->Write(0);
+					pStream->Write(m_eDefault);
 				}
 			} else {
 				pStream->Write(m_iLength, tArray);
@@ -201,7 +205,15 @@ class YieldArray: public JustInTimeArray<T>
 {
 public:
 	YieldArray() : JustInTimeArray<T>(NUM_YIELD_TYPES){};
-	void init() {  JustInTimeArray<T>::init(NUM_YIELD_TYPES);}
+	YieldArray(T eDefault) : JustInTimeArray<T>(NUM_YIELD_TYPES, eDefault){};
+};
+
+template<class T>
+class YieldCargoArray: public JustInTimeArray<T>
+{
+public:
+	YieldCargoArray() : JustInTimeArray<T>(NUM_CARGO_YIELD_TYPES){};
+	YieldCargoArray(T eDefault) : JustInTimeArray<T>(NUM_CARGO_YIELD_TYPES, eDefault){};
 };
 
 template<class T>
@@ -209,7 +221,7 @@ class UnitArray: public JustInTimeArray<T>
 {
 public:
     UnitArray() : JustInTimeArray<T>(GC.getNumUnitInfos()){};
-	void init() { JustInTimeArray<T>::init(GC.getNumUnitInfos());}
+	UnitArray(T eDefault) : JustInTimeArray<T>(GC.getNumUnitInfos(), eDefault){};
 };
 
 template<class T>
@@ -217,7 +229,7 @@ class ProfessionArray: public JustInTimeArray<T>
 {
 public:
     ProfessionArray() : JustInTimeArray<T>(GC.getNumProfessionInfos()){};
-	void init() { JustInTimeArray<T>::init(GC.getNumProfessionInfos());}
+	ProfessionArray(T eDefault) : JustInTimeArray<T>(GC.getNumProfessionInfos(), eDefault){};
 };
 
 template<class T>
@@ -225,7 +237,7 @@ class PromotionArray: public JustInTimeArray<T>
 {
 public:
     PromotionArray() : JustInTimeArray<T>(GC.getNumPromotionInfos()){};
-	void init() { JustInTimeArray<T>::init(GC.getNumPromotionInfos());}
+	PromotionArray(T eDefault) : JustInTimeArray<T>(GC.getNumPromotionInfos(), eDefault){};
 };
 
 template<class T>
@@ -233,7 +245,7 @@ class UnitCombatArray: public JustInTimeArray<T>
 {
 public:
     UnitCombatArray() : JustInTimeArray<T>(GC.getNumUnitCombatInfos()){};
-	void init() { JustInTimeArray<T>::init(GC.getNumUnitCombatInfos());}
+	UnitCombatArray(T eDefault) : JustInTimeArray<T>(GC.getNumUnitCombatInfos(), eDefault){};
 };
 
 template<class T>
@@ -241,5 +253,29 @@ class BonusArray: public JustInTimeArray<T>
 {
 public:
     BonusArray() : JustInTimeArray<T>(GC.getNumBonusInfos()){};
-	void init() { JustInTimeArray<T>::init(GC.getNumBonusInfos());}
+	BonusArray(T eDefault) : JustInTimeArray<T>(GC.getNumBonusInfos(), eDefault){};
+};
+
+template<class T>
+class PlayerArray: public JustInTimeArray<T>
+{
+public:
+	PlayerArray() : JustInTimeArray<T>(MAX_PLAYERS){};
+	PlayerArray(T eDefault) : JustInTimeArray<T>(MAX_PLAYERS, eDefault){};
+};
+
+template<class T>
+class EuropeArray: public JustInTimeArray<T>
+{
+public:
+	EuropeArray() : JustInTimeArray<T>(GC.getNumEuropeInfos()){};
+	EuropeArray(T eDefault) : JustInTimeArray<T>(GC.getNumEuropeInfos(), eDefault){};
+};
+
+template<class T>
+class BuildingArray: public JustInTimeArray<T>
+{
+public:
+    BuildingArray() : JustInTimeArray<T>(GC.getNumBuildingInfos()){};
+	BuildingArray(T eDefault) : JustInTimeArray<T>(GC.getNumBuildingInfos(), eDefault){};
 };

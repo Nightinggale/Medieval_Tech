@@ -14,7 +14,10 @@
 #include "CyArgsList.h"
 #include "CvGameTextMgr.h"
 #include "CvTradeRoute.h"
+#include "CvUnitAI.h"
 #include <numeric>
+
+#include "CvInfoProfessions.h"
 
 // interfaces used
 #include "CvDLLEngineIFaceBase.h"
@@ -32,7 +35,8 @@ CvCity::CvCity()
     ///Kailric Fort Mod end
     ///Tks Med
     m_aiEventTimers = new int[2];
-    m_abTradePostBuilt = new bool[MAX_TEAMS];
+    //m_abTradePostBuilt = new bool[MAX_TEAMS];
+	m_bmTradePostBuilt = 0;
 
     ///Tke
 	m_aiSeaPlotYield = new int[NUM_YIELD_TYPES];
@@ -44,9 +48,11 @@ CvCity::CvCity()
 	m_aiDomainProductionModifier = new int[NUM_DOMAIN_TYPES];
 
 	m_aiCulture = new int[MAX_PLAYERS];
-	m_abEverOwned = new bool[MAX_PLAYERS];
-	m_abRevealed = new bool[MAX_TEAMS];
-	m_abScoutVisited = new bool[MAX_TEAMS];
+	/// player bitmap - start - Nightinggale
+	m_bmEverOwned = 0;
+	m_bmRevealed = 0;
+	m_bmScoutVisited = 0;
+	/// player bitmap - end - Nightinggale
 
 	m_paiBuildingProduction = NULL;
 	m_paiBuildingProductionTime = NULL;
@@ -86,7 +92,7 @@ CvCity::~CvCity()
     ///Kailric Fort Mod end
     ///Tks Med
     SAFE_DELETE_ARRAY(m_aiEventTimers);
-    SAFE_DELETE_ARRAY(m_abTradePostBuilt);
+    //SAFE_DELETE_ARRAY(m_abTradePostBuilt);
     ///Tke
 
 	SAFE_DELETE_ARRAY(m_abBaseYieldRankValid);
@@ -101,13 +107,10 @@ CvCity::~CvCity()
 	SAFE_DELETE_ARRAY(m_aiDomainFreeExperience);
 	SAFE_DELETE_ARRAY(m_aiDomainProductionModifier);
 	SAFE_DELETE_ARRAY(m_aiCulture);
-	SAFE_DELETE_ARRAY(m_abEverOwned);
-	SAFE_DELETE_ARRAY(m_abRevealed);
-	SAFE_DELETE_ARRAY(m_abScoutVisited);
 }
 
 ///TKs Med
-void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, int iType)
+void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, int iType, bool bUpdatePlotGroup)
 {
 //Tke
 	std::vector<int> aOldAttitude(MAX_PLAYERS, 0);
@@ -163,7 +166,7 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 	{
 		pPlot->setCulture(getOwnerINLINE(), GC.getXMLval(XML_FREE_CITY_CULTURE), bBumpUnits);
 	}
-	pPlot->setOwner(getOwnerINLINE(), bBumpUnits);
+	pPlot->setOwner(getOwnerINLINE(), bBumpUnits, bUpdatePlotGroup);
 	pPlot->setPlotCity(this);
     ///TKs Med
     if (GET_PLAYER(getOwnerINLINE()).getVassalOwner() == NO_PLAYER)
@@ -218,7 +221,7 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 	///Kailric Fort Mod end
 
 	pPlot->setImprovementType(NO_IMPROVEMENT);
-	pPlot->updateCityRoute();
+	pPlot->updateCityRoute(true); /// PlotGroup - Nightinggale
 
 	for (int iI = 0; iI < MAX_TEAMS; iI++)
 	{
@@ -318,7 +321,7 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
                             }
                         }
 
-                        if (kCivicInfo.getCivicOptionType() == (CivicOptionTypes)GC.getXMLval(XML_CIVICOPTION_INVENTIONS))
+                        if (kCivicInfo.getCivicOptionType() == CIVICOPTION_INVENTIONS)
                         {
                             for (int iI = 0; iI < GC.getNumProfessionInfos(); iI++)
                             {
@@ -391,7 +394,7 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
             {
                 if (GET_PLAYER(getOwnerINLINE()).getCurrentResearch() == NO_CIVIC)
                 {
-                    CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CHOOSE_INVENTION, (CivicOptionTypes)GC.getXMLval(XML_CIVICOPTION_INVENTIONS));
+                    CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CHOOSE_INVENTION, CIVICOPTION_INVENTIONS);
                     gDLL->getInterfaceIFace()->addPopup(pInfo, getOwnerINLINE(), false);
                 }
             }
@@ -413,10 +416,6 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 		}
 	}
 
-    ///Kailric Fort Mod Start
-    //pPlot->updatePlotGroup(getOwner(), false);
-    ///Kailric Fort Mod end
-
 	for (int i = 0; i < MAX_PLAYERS; ++i)
 	{
 		CvPlayerAI& kPlayer = GET_PLAYER((PlayerTypes) i );
@@ -427,8 +426,6 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 			kPlayer.AI_diplomaticHissyFit(getOwnerINLINE(), kPlayer.AI_getStolenPlotsAttitude(eOwner) - aOldAttitude[i]);
 		}
 	}
-
-	this->initPrices(); // R&R, Androrc, Domestic Market
 
 	UpdateBuildingAffectedCache(); // building affected cache - Nightinggale
 
@@ -571,20 +568,14 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 		m_aiCulture[iI] = 0;
 	}
 
-	for (iI = 0; iI < MAX_PLAYERS; iI++)
-	{
-		m_abEverOwned[iI] = false;
-	}
-
-	for (iI = 0; iI < MAX_TEAMS; iI++)
-	{
-		m_abRevealed[iI] = false;
-		m_abScoutVisited[iI] = false;
-		///Tks Med
-		m_abTradePostBuilt[iI] = false;
-		///Tke
-
-	}
+	/// player bitmap - start - Nightinggale
+	m_bmEverOwned = 0;
+	m_bmRevealed = 0;
+	m_bmScoutVisited = 0;
+	/// player bitmap - end - Nightinggale
+	///Tks Med
+	m_bmTradePostBuilt = 0;
+	///Tke
 
 	clear(m_szName);
 	m_szScriptData = "";
@@ -829,8 +820,6 @@ void CvCity::doTurn()
 	doPlotCulture(false, getOwnerINLINE(), getCultureRate());
 
 	doProduction(bAllowNoProduction);
-
-	doPrices(); // R&R, Androrc Domestic Market
 
 	doDecay();
 
@@ -2929,7 +2918,7 @@ int CvCity::growthThreshold() const
 
     for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
     {
-        if (GC.getCivicInfo((CivicTypes) iCivic).getCivicOptionType() == (CivicOptionTypes)GC.getXMLval(XML_CIVICOPTION_INVENTIONS))
+        if (GC.getCivicInfo((CivicTypes) iCivic).getCivicOptionType() == CIVICOPTION_INVENTIONS)
         {
             CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes) iCivic);
             if (GET_PLAYER(getOwner()).getIdeasResearched((CivicTypes) iCivic) > 0)
@@ -4337,7 +4326,7 @@ int CvCity::getBaseRawYieldProduced(YieldTypes eYieldType, SpecialBuildingTypes 
 				YieldTypes eYieldProduced = NO_YIELD;
 				int i = 0;
 				bool bArmor = false;
-				if ((YieldTypes)kProfessionInfo.getYieldsProduced(0) == (YieldTypes)GC.getXMLval(XML_DEFAULT_YIELD_ARMOR_TYPE))
+				if ((YieldTypes)kProfessionInfo.getYieldsProduced(0) == YIELD_DEFAULT_ARMOR_TYPE)
 				{
 				    bArmor = true;
 				}
@@ -5817,7 +5806,10 @@ bool CvCity::isEverOwned(PlayerTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex expected to be < MAX_PLAYERS");
-	return m_abEverOwned[eIndex];
+	//return m_abEverOwned[eIndex];
+	/// player bitmap - start - Nightinggale
+	return HasBit(m_bmEverOwned, eIndex);
+	/// player bitmap - end - Nightinggale
 }
 
 
@@ -5825,7 +5817,10 @@ void CvCity::setEverOwned(PlayerTypes eIndex, bool bNewValue)
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex expected to be < MAX_PLAYERS");
-	m_abEverOwned[eIndex] = bNewValue;
+	//m_abEverOwned[eIndex] = bNewValue;
+	/// player bitmap - start - Nightinggale
+	SetBit(m_bmEverOwned, eIndex, bNewValue);
+	/// player bitmap - end - Nightinggale
 }
 
 
@@ -5840,7 +5835,10 @@ bool CvCity::isRevealed(TeamTypes eIndex, bool bDebug) const
 		FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 		FAssertMsg(eIndex < MAX_TEAMS, "eIndex expected to be < MAX_TEAMS");
 
-		return m_abRevealed[eIndex];
+		//return m_abRevealed[eIndex];
+		/// player bitmap - start - Nightinggale
+		return HasBit(m_bmRevealed, eIndex);
+		/// player bitmap - end - Nightinggale
 	}
 }
 
@@ -5855,7 +5853,10 @@ void CvCity::setRevealed(TeamTypes eIndex, bool bNewValue)
 
 	if (isRevealed(eIndex, false) != bNewValue)
 	{
-		m_abRevealed[eIndex] = bNewValue;
+		//m_abRevealed[eIndex] = bNewValue;
+		/// player bitmap - start - Nightinggale
+		SetBit(m_bmRevealed, eIndex, bNewValue);
+		/// player bitmap - end - Nightinggale
 
 		updateVisibility();
 
@@ -7379,11 +7380,6 @@ void CvCity::doYields()
     int iArmorWeight = 0;
     int iBestArmorWeight = 0;
 
-	// custom house - start - Nightinggale
-	int iTotalProfitFromDomesticMarket = 0;
-	int iMarketCap = this->getMarketCap();
-	// custom house - end - Nightinggale
-
 	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
 	{
 		YieldTypes eYield = (YieldTypes) iYield;
@@ -7724,31 +7720,6 @@ void CvCity::doYields()
 
 			if (GC.getYieldInfo(eYield).isCargo())
 			{
-				// custom house - start - Nightinggale
-				if (iMarketCap > 0 && !this->isCustomHouseNeverSell(eYield))
-				{
-					int iDemand = getYieldDemand(eYield);
-					if (iDemand > 0)
-					{
-						int iStored = getYieldStored(eYield);
-						int iThreshold = getCustomHouseSellThreshold(eYield);
-						if (iStored > iThreshold)
-						{
-							int iAmount = std::min(std::min(iMarketCap, iDemand), iStored - iThreshold);
-
-							int iProfit = iAmount * this->getYieldBuyPrice(eYield);
-
-							if (iProfit > 0)
-							{
-								iMarketCap -= iAmount;
-								changeYieldStored(eYield, -iAmount);
-								iTotalProfitFromDomesticMarket += iProfit;
-							}
-						}
-					}
-				}
-				// custom house - end - Nightinggale
-
 			    ///TKs Med
 				int iExcess = getYieldStored(eYield) - getMaxYieldCapacity(eYield);
 				///Tke
@@ -7858,15 +7829,6 @@ void CvCity::doYields()
     {
        setSelectedArmor(eSelectedArmor);
     }
-
-	// custom house - start - Nightinggale
-	if (iTotalProfitFromDomesticMarket != 0)
-	{
-		GET_PLAYER(getOwnerINLINE()).changeGold(iTotalProfitFromDomesticMarket);
-		CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_DOMESTIC_SOLD", getNameKey(), iTotalProfitFromDomesticMarket);
-		gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
-	}
-	// custom house - end - Nightinggale
 }
 ///TKe
 void CvCity::doCulture()
@@ -8369,7 +8331,13 @@ void CvCity::read(FDataStreamBase* pStream)
 	}
     ///TKs Med
     pStream->Read(2, m_aiEventTimers);
-    pStream->Read(MAX_TEAMS, m_abTradePostBuilt);
+    //pStream->Read(MAX_TEAMS, m_abTradePostBuilt);
+	if (uiFlag < 6)
+	{
+		loadIntoBitmap(pStream, m_bmTradePostBuilt, MAX_TEAMS);
+	} else {
+		pStream->Read(&m_bmTradePostBuilt);
+	}
     ///Tke
 	pStream->Read(NUM_YIELD_TYPES, m_aiSeaPlotYield);
 	pStream->Read(NUM_YIELD_TYPES, m_aiRiverPlotYield);
@@ -8380,9 +8348,21 @@ void CvCity::read(FDataStreamBase* pStream)
 	pStream->Read(NUM_DOMAIN_TYPES, m_aiDomainProductionModifier);
 	pStream->Read(MAX_PLAYERS, m_aiCulture);
 
-	pStream->Read(MAX_PLAYERS, m_abEverOwned);
-	pStream->Read(MAX_TEAMS, m_abRevealed);
-	pStream->Read(MAX_TEAMS, m_abScoutVisited);
+	/// player bitmap - start - Nightinggale
+	//pStream->Read(MAX_PLAYERS, m_abEverOwned);
+	//pStream->Read(MAX_TEAMS, m_abRevealed);
+	//pStream->Read(MAX_TEAMS, m_abScoutVisited);
+	if (uiFlag < 6)
+	{
+		loadIntoBitmap(pStream, m_bmEverOwned, MAX_PLAYERS);
+		loadIntoBitmap(pStream, m_bmRevealed, MAX_TEAMS);
+		loadIntoBitmap(pStream, m_bmScoutVisited, MAX_TEAMS);
+	} else {
+		pStream->Read(&m_bmEverOwned);
+		pStream->Read(&m_bmRevealed);
+		pStream->Read(&m_bmScoutVisited);
+	}
+	/// player bitmap - end - Nightinggale
 
 	pStream->ReadString(m_szName);
 	pStream->ReadString(m_szScriptData);
@@ -8469,7 +8449,15 @@ void CvCity::read(FDataStreamBase* pStream)
 	// R&R, ray, finishing Custom House Screen
 	ma_aiCustomHouseSellThreshold.read(pStream, arrayBitmap & SAVE_BIT_CUSTOM_HOUSE_SELL_THRESHOLD);
 	ma_aiCustomHouseNeverSell.read(    pStream, arrayBitmap & SAVE_BIT_CUSTOM_HOUSE_NEVER_SELL);
-	m_aiYieldBuyPrice.read(pStream, uiFlag > 3);
+	if (uiFlag == 4)
+	{
+		// saved prices are no longer needed. Skip past them.
+		for (int i = 0; i < NUM_YIELD_TYPES; i++)
+		{
+			int iBuffer;
+			pStream->Read(&iBuffer);
+		}
+	}
 	// R&R, ray, finishing Custom House Screen END
 
 	// Teacher List - start - Nightinggale
@@ -8504,13 +8492,6 @@ void CvCity::read(FDataStreamBase* pStream)
 		m_aBuildingYieldChange.push_back(kChange);
 	}
 
-	// domestic market - start - Nightinggale
-	if (uiFlag < 4)
-	{
-		this->initPrices();
-	}
-	// domestic market - end - Nightinggale
-
 	// set cache
 	UpdateBuildingAffectedCache(); // building affected cache - Nightinggale
 	this->setUnitYieldDemand(); // // domestic yield demand - Nightinggale
@@ -8519,7 +8500,7 @@ void CvCity::read(FDataStreamBase* pStream)
 
 void CvCity::write(FDataStreamBase* pStream)
 {
-	uint uiFlag=4;
+	uint uiFlag=6;
 	pStream->Write(uiFlag);		// flag for expansion
 
 	// just-in-time yield arrays - start - Nightinggale
@@ -8600,7 +8581,8 @@ void CvCity::write(FDataStreamBase* pStream)
 	pStream->Write(m_eMissionaryPlayer);
 	///TKs Med
 	pStream->Write(2, m_aiEventTimers);
-	pStream->Write(MAX_TEAMS, m_abTradePostBuilt);
+	//pStream->Write(MAX_TEAMS, m_abTradePostBuilt);
+	pStream->Write(m_bmTradePostBuilt);
 	///Tke
 
 	pStream->Write(NUM_YIELD_TYPES, m_aiSeaPlotYield);
@@ -8612,9 +8594,14 @@ void CvCity::write(FDataStreamBase* pStream)
 	pStream->Write(NUM_DOMAIN_TYPES, m_aiDomainProductionModifier);
 	pStream->Write(MAX_PLAYERS, m_aiCulture);
 
-	pStream->Write(MAX_PLAYERS, m_abEverOwned);
-	pStream->Write(MAX_TEAMS, m_abRevealed);
-	pStream->Write(MAX_TEAMS, m_abScoutVisited);
+	//pStream->Write(MAX_PLAYERS, m_abEverOwned);
+	//pStream->Write(MAX_TEAMS, m_abRevealed);
+	//pStream->Write(MAX_TEAMS, m_abScoutVisited);
+	/// player bitmap - start - Nightinggale
+	pStream->Write(m_bmEverOwned);
+	pStream->Write(m_bmRevealed);
+	pStream->Write(m_bmScoutVisited);
+	/// player bitmap - end - Nightinggale
 
 	pStream->WriteString(m_szName);
 	pStream->WriteString(m_szScriptData);
@@ -8655,7 +8642,6 @@ void CvCity::write(FDataStreamBase* pStream)
 	// R&R, ray, finishing Custom House Screen
 	ma_aiCustomHouseSellThreshold.write(pStream, arrayBitmap & SAVE_BIT_CUSTOM_HOUSE_SELL_THRESHOLD);
 	ma_aiCustomHouseNeverSell.write    (pStream, arrayBitmap & SAVE_BIT_CUSTOM_HOUSE_NEVER_SELL);
-	m_aiYieldBuyPrice.write(pStream, true);
 	// R&R, ray, finishing Custom House Screen END
 
 	// Teacher List - start - Nightinggale
@@ -10027,7 +10013,10 @@ void CvCity::setScoutVisited(TeamTypes eTeam, bool bVisited)
 
 	if(bVisited != isScoutVisited(eTeam))
 	{
-		m_abScoutVisited[eTeam] = bVisited;
+		//m_abScoutVisited[eTeam] = bVisited;
+		/// player bitmap - start - Nightinggale
+		SetBit(m_bmScoutVisited, eTeam, bVisited);
+		/// player bitmap - end - Nightinggale
 		setBillboardDirty(true);
 	}
 }
@@ -10039,7 +10028,7 @@ void CvCity::setTradePostBuilt(TeamTypes eTeam, bool bBuilt)
 
 	if(bBuilt != isTradePostBuilt(eTeam))
 	{
-		m_abTradePostBuilt[eTeam] = bBuilt;
+		SetBit(m_bmTradePostBuilt, eTeam, bBuilt);
 		setBillboardDirty(true);
 	}
 }
@@ -10053,7 +10042,8 @@ bool CvCity::isTradePostBuilt(TeamTypes eTeam) const
 	//{
 		//return false;
 	//}
-	return m_abTradePostBuilt[eTeam];
+	//return m_abTradePostBuilt[eTeam];
+	return HasBit(m_bmTradePostBuilt, eTeam);
 }
 
 ///Tke
@@ -10071,7 +10061,10 @@ bool CvCity::isScoutVisited(TeamTypes eTeam) const
 	{
 		return true;
 	}
-	return m_abScoutVisited[eTeam];
+	//return m_abScoutVisited[eTeam];
+	/// player bitmap - start - Nightinggale
+	return HasBit(m_bmScoutVisited, eTeam);
+	/// player bitmap - end - Nightinggale
 }
 
 
@@ -11090,7 +11083,7 @@ void CvCity::checkImportsMaintain(YieldTypes eYield, bool bUpdateScreen)
 	if (!isAutoImportStopped(eYield) && iStoredLevel >= iMaintainLevel)
  	{
  		ma_tradeStopAutoImport.set(true, eYield);
-	} else if (isAutoImportStopped(eYield) && (iNeededLevel < iStoredLevel || (iStoredLevel <= (iMaintainLevel*3)/4))) {
+	} else if (isAutoImportStopped(eYield) && (iNeededLevel > iStoredLevel || (iStoredLevel <= (iMaintainLevel*3)/4))) {
 		ma_tradeStopAutoImport.set(false, eYield);
 	} else if (!bUpdateScreen) {
 		// nothing changed. Do not continue to screen update code.
@@ -11109,6 +11102,11 @@ void CvCity::setAutoThresholdCache(YieldTypes eYield)
 	int iProductionNeeded = getProductionNeededUncached(eYield);
 
 	ma_productionNeeded.set(iProductionNeeded, eYield);
+
+	if (YieldGroup_Virtual(eYield))
+	{
+		return;
+	}
 
 	if (iProductionNeeded == MAX_INT)
 	{
@@ -11284,7 +11282,7 @@ YieldTypes CvCity::getSelectedArmor() const
 {
     if (m_eSelectedArmor == NO_YIELD)
     {
-        return (YieldTypes)GC.getXMLval(XML_DEFAULT_YIELD_ARMOR_TYPE);
+        return YIELD_DEFAULT_ARMOR_TYPE;
     }
     else
     {
@@ -11994,6 +11992,7 @@ void CvCity::setUnitYieldDemand(UnitTypes eUnit, const bool bRemove)
 }
 // domestic yield demand - end - Nightinggale
 
+#if 0
 // R&R, ray, adjustment Domestic Markets
 // modified by Nightinggale
 void CvCity::doPrices()
@@ -12031,4 +12030,41 @@ void CvCity::initPrices()
 		setYieldBuyPrice(eYield, iBuyPrice);
 	}
 }
+#endif
 //Androrc End
+
+/// PlotGroup - start - Nightinggale
+CvPlotGroup* CvCity::plotGroup(PlayerTypes ePlayer) const
+{
+	return plot()->getPlotGroup(ePlayer);
+}
+
+#ifdef USE_PLOTGROUP_RESOURCES
+void CvCity::changeFreeBonus(BonusTypes eIndex, int iChange)
+{
+	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
+	FAssertMsg(eIndex < GC.getNumBonusInfos(), "eIndex expected to be < GC.getNumBonusInfos()");
+
+	if (iChange != 0)
+	{
+		plot()->updatePlotGroupBonus(false);
+		m_aiFreeBonus.add(iChange, eIndex);
+		FAssert(getFreeBonus(eIndex) >= 0);
+		plot()->updatePlotGroupBonus(true);
+	}
+}
+
+int CvCity::getNumBonuses(BonusTypes eIndex) const
+{
+	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
+	FAssertMsg(eIndex < GC.getNumBonusInfos(), "eIndex expected to be < GC.getNumBonusInfos()");
+
+	if (!GET_PLAYER(getOwnerINLINE()).canUseBonus(eIndex))
+	{
+		return 0;
+	}
+
+	return m_aiNumBonuses.get(eIndex) + m_aiFreeBonus.get(eIndex);
+}
+#endif
+/// PlotGroup - end - Nightinggale

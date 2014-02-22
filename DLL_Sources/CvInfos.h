@@ -60,6 +60,14 @@ public:
 	DllExport virtual bool readPass2(CvXMLLoadUtility* pXML) { return false; }
 	DllExport virtual bool readPass3() { FAssertMsg(false, "Override this"); return false; }
 
+	/// info subclass - start - Nightinggale
+	virtual bool readSub(CvXMLLoadUtility* pXML, int* pSub) { return CvInfoBase::read(pXML);};
+	bool readSub(CvXMLLoadUtility* pXML, int* pSub, int* pCount);
+	bool readSub(CvXMLLoadUtility* pXML, int* pSub, unsigned int* bmMask, int iParentBits, int iParentOffset, int iNumChildBits, int iNumChildOffset);
+	bool getSub(CvXMLLoadUtility* pXML);
+	virtual TCHAR* getSubTag() { FAssertMsg(false, "Override this"); return NULL;};
+	/// info subclass - end - Nightinggale
+
 protected:
 	bool doneReadingXML(CvXMLLoadUtility* pXML);
 	bool m_bGraphicalOnly;
@@ -331,157 +339,6 @@ protected:
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //
-//  class : CvProfessionInfo
-//
-//  DESC:
-//
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-class CvProfessionInfo :	public CvInfoBase
-{
-	//---------------------------------------PUBLIC INTERFACE---------------------------------
-public:
-	DllExport CvProfessionInfo();
-
-	///TK Professions Pedia
-
-    DllExport bool isNativesInvalid() const;
-    DllExport bool isEuropeInvalid() const;
-    DllExport bool isColonialInvalid() const;
-	DllExport int getArtTagUnitClass() const;
-	DllExport int getTaxCollectRate() const;
-	DllExport int getExperenceLevel() const;
-	///TKe
-	DllExport virtual ~CvProfessionInfo();
-	DllExport int getUnitCombatType() const;
-	DllExport int getDefaultUnitAIType() const;
-	DllExport int getSpecialBuilding() const;
-	DllExport int getCombatChange() const;
-	DllExport int getMovesChange() const;
-	DllExport int getWorkRate() const;
-	DllExport int getMissionaryRate() const;
-	DllExport int getPowerValue() const;
-	DllExport int getAssetValue() const;
-	DllExport bool isWorkPlot() const;
-	DllExport bool isCitizen() const;
-	DllExport bool isWater() const;
-	DllExport bool isScout() const;
-	DllExport bool isCityDefender() const;
-	DllExport bool canFound() const;
-	DllExport bool isUnarmed() const;
-	DllExport bool isNoDefensiveBonus() const;
-	DllExport int getYieldEquipmentAmount(int iYield) const;
-	DllExport bool isFreePromotion(int i) const;
-	///TKs Med BM
-	DllExport bool isAltFreePromotion(int i) const;
-	DllExport bool getCombatGearTypes(int i) const;
-	DllExport bool hasCombatGearTypes() const; // CombatGearTypes - Nightinggale
-	DllExport int getAltEquipmentTypes(int i) const;
-	//int getAltEquipmentTypesArray();
-	int getAltEquipmentAt(int i) const;
-	//int getNumAltEquipmentTypes() const;
-	int getAltFreePromotionAt(int i) const;
-	//int getNumAltFreePromotion() const;
-	//bool* getAltFreePromotionArray();
-	DllExport int getRequiredBuilding() const;
-	DllExport int getUpgradeProfession() const;
-	DllExport int getLeadUnit() const;
-	DllExport int getRequiredPromotion() const;
-	DllExport int getCivilizationType() const;
-	DllExport int getFoundCityType() const;
-	///TKe
-	// MultipleYieldsProduced Start by Aymerick 22/01/2010
-	DllExport int getYieldsProduced(int i) const;
-	DllExport int getNumYieldsProduced() const;
-	// MultipleYieldsProduced End
-	// MultipleYieldsConsumed Start by Aymerick 05/01/2010
-	///TKs Invention Core Mod v 1.0
-	DllExport int getYieldsConsumedPedia(int i) const;
-	DllExport int getNumYieldsConsumedPedia() const;
-	DllExport int getYieldsConsumed(int i, PlayerTypes eCurrentPlayer=NO_PLAYER) const;
-	///TKe
-	DllExport int getNumYieldsConsumed(PlayerTypes eCurrentPlayer=NO_PLAYER) const;
-	// MultipleYieldsConsumed End
-	DllExport void read(FDataStreamBase* stream);
-	DllExport void write(FDataStreamBase* stream);
-	DllExport bool read(CvXMLLoadUtility* pXML);
-	///TKs Med
-    //DllExport bool readPass2(CvXMLLoadUtility* pXML);
-    ///Tke
-	DllExport bool readPass3();
-
-	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
-protected:
-	int m_iUnitCombatType;
-	int m_iDefaultUnitAIType;
-
-	///TK Professions Pedia
-	bool m_ibNativesInvalid;
-	bool m_ibEuropeInvalid;
-	bool m_ibColonialInvalid;
-	int m_iArtTagUnit;
-	int m_iTaxCollectRate;
-	int m_iExperenceLevel;
-	///TKe
-
-	int m_iYieldProduced;
-	int m_iYieldConsumed;
-	int m_iSpecialBuilding;
-	int m_iCombatChange;
-	int m_iMovesChange;
-	int m_iWorkRate;
-	int m_iMissionaryRate;
-	int m_iPowerValue;
-	int m_iAssetValue;
-	bool m_bWorkPlot;
-	bool m_bCitizen;
-	bool m_bWater;
-	bool m_bScout;
-	bool m_bCityDefender;
-	bool m_bCanFound;
-	bool m_bUnarmed;
-	bool m_bNoDefensiveBonus;
-
-	struct YieldEquipment
-	{
-		int iYieldType;
-		int iYieldAmount;
-	};
-
-	std::vector<YieldEquipment> m_aYieldEquipments;
-	bool* m_abFreePromotions;
-	///TKs Med BM
-	UnitCombatArray<bool> m_aiCombatGearTypes; // CombatGearTypes - Nightinggale
-	int* m_aiAltEquipmentTypes;
-	bool* m_abAltFreePromotions;
-	int m_iRequiredBuilding;
-	int m_iUpgradeProfession;
-	int m_iLeadUnit;
-	int iRequiredPromotion;
-	int iCivType;
-	int m_iFoundCityType;
-	///TKe
-	// MultipleYieldsProduced Start by Aymerick 22/01/2010
-	std::vector<int> m_aiYieldsProduced;
-	// MultipleYieldsProduced End
-	// MultipleYieldsConsumed Start by Aymerick 05/01/2010
-	std::vector<int> m_aiYieldsConsumed;
-	// MultipleYieldsConsumed End
-};
-
-// CombatGearTypes - start - Nightinggale
-inline bool CvProfessionInfo::getCombatGearTypes(int i) const
-{
-	return m_aiCombatGearTypes.get(i);
-}
-
-inline bool CvProfessionInfo::hasCombatGearTypes() const
-{
-	return m_aiCombatGearTypes.isAllocated();
-}
-// CombatGearTypes - end - Nightinggale
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
 //  class : CvMissionInfo
 //
 //  DESC:
@@ -547,12 +404,18 @@ public:
 	DllExport bool getConfirmCommand() const;
 	DllExport bool getVisible() const;
 	DllExport bool getAll() const;
+	///TKs **TradeRoute**
+	DllExport int getEuropeTradeRoute() const;
+	//TKe
 	DllExport bool read(CvXMLLoadUtility* pXML);
 	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 protected:
 	bool m_bConfirmCommand;
 	bool m_bVisible;
 	bool m_bAll;
+	///TK **TradeRoute**
+	int m_iEuropeTradeRoute;
+	//Tke
 };
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -1137,6 +1000,7 @@ public:
     DllExport int getIncreaseCityPopulation() const;
     DllExport int getAllowsProfession() const;
 	DllExport int getAllowsTrait() const;
+	DllExport int getAllowsTradeScreen() const;
 	DllExport int getConvertsResearchYield() const;
 	DllExport int getDisallowsTech() const;
 	DllExport int getFreeUnitFirstToResearch() const;
@@ -1233,6 +1097,7 @@ protected:
 	int m_iCostToResearch;
 
 	int m_iAllowsTrait;
+	int m_iAllowsTradeScreen;
 	int m_iConvertsResearchYield;
 	int m_iDisallowsTech;
 	int m_iFreeUnitFirstToResearch;
@@ -1360,7 +1225,7 @@ public:
 	DllExport int getDefaultUnitIndex() const;
 	DllExport void setDefaultUnitIndex(int i);
 	DllExport bool read(CvXMLLoadUtility* pXML);
-	DllExport bool readPass3();
+	//DllExport bool readPass3();
 //---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 protected:
 	int m_iDefaultUnitIndex;
@@ -1639,7 +1504,7 @@ public:
 	DllExport int getVictoryThreshold(int i) const;
 
 	DllExport bool read(CvXMLLoadUtility* pXML);
-	DllExport bool readPass3();
+	//DllExport bool readPass3();
 	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 protected:
 	int m_iDefaultBuildingIndex;
@@ -2440,7 +2305,26 @@ protected:
 	bool* m_abFeatureMakesValid;
 	std::vector<int*> m_aaiRouteYieldChanges;
 	CvImprovementBonusInfo* m_paImprovementBonus;
+
+	/// PlotGroup - start - Nightinggale
+#ifdef USE_PLOTGROUP_RESOURCES
+public:
+	bool CvImprovementInfo::allowsBonusResource(BonusTypes eBonus) const;
+
+protected:
+	BonusArray<bool> m_abAllowedBonusResource;
+#endif
+	/// PlotGroup - end - Nightinggale
 };
+
+/// PlotGroup - start - Nightinggale
+#ifdef USE_PLOTGROUP_RESOURCES
+inline bool CvImprovementInfo::allowsBonusResource(BonusTypes eBonus) const
+{
+	return m_abAllowedBonusResource.get(eBonus); 
+}
+#endif
+/// PlotGroup - end - Nightinggale
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //
@@ -3079,7 +2963,21 @@ public:
 	DllExport int getTripLength() const;
 	DllExport int getMinLandDistance() const;
 	DllExport int getWidthPercent() const;
-    DllExport int getTradeScreensValid(int i) const;
+	///TKs Med ***TradeRoute**
+	DllExport int getMaxLandCoverage() const;
+	DllExport bool isAIonly() const;
+	DllExport bool isRequiresTech() const;
+	DllExport bool isNoEuropePlot() const;
+    DllExport int getDomainsValid(int i) const;
+	DllExport int getDirectionValid(int i) const;
+	DllExport int getCityRequiredBuilding() const;
+	DllExport int getDefaultColor() const;
+	DllExport bool isLeaveFromBarbarianCity() const;
+	DllExport bool isLeaveFromForeignCity() const;
+	DllExport bool isLeaveFromOwnedCity() const;
+	DllExport bool isLeaveFromAnyCity() const;
+	DllExport const char* getTradeRouteButton() const;
+	DllExport const char* getPythonTradeScreen() const;
 	DllExport bool read(CvXMLLoadUtility* pXML);
 
 protected:
@@ -3089,7 +2987,20 @@ protected:
 	int m_iMinLandDistance;
 	int m_iWidthPercent;
 	///Tks Med
-    int* m_aiTradeScreens;
+	int m_iMaxLandCoverage;
+	bool m_bAIonly;
+	bool m_bRequiresTech;
+	bool m_bNoEuropePlot;
+	CvString m_szPythonTradeScreen;
+	CvString m_szTradeRouteButton;
+    int* m_aiDomainTypes;
+	int* m_aiDirectionArrays;
+	bool m_bLeaveFromBarbarianCity;
+	bool m_bLeaveFromForeignCity;
+	bool m_bLeaveFromOwnedCity;
+	bool m_bLeaveFromAnyCity;
+	int m_iCityRequiredBuilding;
+	int m_iDefaultColor;
 	///TKe
 };
 
@@ -4527,7 +4438,7 @@ public:
 	DllExport void write(FDataStreamBase* );
 	DllExport bool read(CvXMLLoadUtility* pXML);
 	///TK Med
-	DllExport bool readPass3();
+	//DllExport bool readPass3();
 	///Tke
 
 protected:

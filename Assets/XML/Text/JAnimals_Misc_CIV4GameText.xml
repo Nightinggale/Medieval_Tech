@@ -9,7 +9,6 @@
 		<Italian></Italian>
 		<Spanish></Spanish>
 	</TEXT>
-
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ANIMAL</Tag>
 		<English>[ICON_BULLET]Wild Animal</English>
@@ -18,8 +17,6 @@
 		<Italian>[ICON_BULLET]Wild Animal</Italian>
 		<Spanish>[ICON_BULLET]Wild Animal</Spanish>
 	</TEXT>
-
-
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ANIMAL_AI_NO_PATROL_WEIGHT</Tag>
 		<English>[ICON_BULLET]Animal does not Patrol</English>

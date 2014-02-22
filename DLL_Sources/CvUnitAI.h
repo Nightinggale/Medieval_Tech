@@ -153,7 +153,7 @@ protected:
 	bool AI_europeAssaultSea();
 
     ///TKs Med
-	bool AI_sailToEurope(bool bMove = true, TradeRouteTypes eTradeRouteType = NO_TRADE_ROUTES);
+	bool AI_sailToEurope(bool bMove = true, EuropeTypes eTradeScreenType = NO_EUROPE);
 	///Tke
 	bool AI_travelToPort(int iMinPercent = 25, int iMaxPath = MAX_INT);
 

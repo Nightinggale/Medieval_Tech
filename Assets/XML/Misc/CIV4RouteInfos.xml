@@ -6,27 +6,27 @@
 <!-- Route Infos -->
 <Civ4RouteInfos xmlns="x-schema:CIV4MiscSchema.xml">
 	<RouteInfos>
-    <RouteInfo>
-      <Type>ROUTE_ROAD</Type>
-      <Description>TXT_KEY_ROUTE_ROAD</Description>
-      <iValue>1</iValue>
-      <iAdvancedStartCost>12</iAdvancedStartCost>
-      <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-      <iMovement>20</iMovement>
-      <iFlatMovement>20</iFlatMovement>
-      <Yields/>
-      <Button>Art/Interface/Buttons/Builds/BuildRoad.dds</Button>
-    </RouteInfo>
-    <RouteInfo>
-      <Type>ROUTE_TRAIL</Type>
-      <Description>Stone-Paved Roads</Description>
-      <iValue>2</iValue>
-      <iAdvancedStartCost>24</iAdvancedStartCost>
-      <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-      <iMovement>10</iMovement>
-      <iFlatMovement>10</iFlatMovement>
-      <Yields/>
-      <Button>Art/Interface/Buttons/Builds/Trails.dds</Button>
-    </RouteInfo>
+		<RouteInfo>
+			<Type>ROUTE_ROAD</Type>
+			<Description>TXT_KEY_ROUTE_ROAD</Description>
+			<iValue>1</iValue>
+			<iAdvancedStartCost>12</iAdvancedStartCost>
+			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+			<iMovement>20</iMovement>
+			<iFlatMovement>20</iFlatMovement>
+			<Yields/>
+			<Button>Art/Interface/Buttons/Builds/BuildRoad.dds</Button>
+		</RouteInfo>
+		<RouteInfo>
+			<Type>ROUTE_TRAIL</Type>
+			<Description>Stone-Paved Roads</Description>
+			<iValue>2</iValue>
+			<iAdvancedStartCost>24</iAdvancedStartCost>
+			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+			<iMovement>10</iMovement>
+			<iFlatMovement>10</iFlatMovement>
+			<Yields/>
+			<Button>Art/Interface/Buttons/Builds/Trails.dds</Button>
+		</RouteInfo>
 	</RouteInfos>
 </Civ4RouteInfos>

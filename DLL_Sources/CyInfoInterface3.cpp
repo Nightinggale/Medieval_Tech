@@ -1,5 +1,6 @@
 #include "CvGameCoreDLL.h"
 #include "CvInfos.h"
+#include "CvInfoProfessions.h"
 //
 // Python interface for info classes (formerly structs)
 // These are simple enough to be exposed directly - no wrappers
@@ -207,6 +208,9 @@ void CyInfoPythonInterface3()
 		.def("getTripLength", &CvEuropeInfo::getTripLength, "int ()")
 		.def("getMinLandDistance", &CvEuropeInfo::getMinLandDistance, "int ()")
 		.def("getWidthPercent", &CvEuropeInfo::getWidthPercent, "int ()")
+		///Tks Med **TradeRoutes**
+		.def("getTradeRouteButton", &CvEuropeInfo::getTradeRouteButton, "string ()")
+		///TKe
 		;
 	python::class_<CvAssetInfoBase>("CvAssetInfoBase")
 		.def("setTag", &CvAssetInfoBase::setTag, "void (string)")
@@ -496,6 +500,12 @@ void CyInfoPythonInterface3()
 		.def("getNumYieldsConsumedPedia", &CvProfessionInfo::getNumYieldsConsumedPedia, "int ()")
 		///TKe
 		// MultipleYieldsConsumed End
+		/// info subclass - start - Nightinggale
+		.def("isParent", &CvProfessionInfo::isParent, "bool ()")
+		.def("isSubType", &CvProfessionInfo::isSubType, "bool ()")
+		.def("getParent", &CvProfessionInfo::getParent, "int ()")
+		.def("getNumSubTypes", &CvProfessionInfo::getNumSubTypes, "int ()")
+		/// info subclass - end - Nightinggale
 		;
 	python::class_<CvFatherInfo, python::bases<CvInfoBase> >("CvFatherInfo")
 		.def("getFatherCategory", &CvFatherInfo::getFatherCategory, "int ()")

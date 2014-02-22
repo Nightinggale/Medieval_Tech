@@ -41,22 +41,22 @@
 		<element type="AutomateType" maxOccurs="*"/>
 	</ElementType>
   <!--TKs Med-->
-  <ElementType name="MedCityType" content="textOnly"/>
-  <ElementType name="MedCityTypes" content="eltOnly">
-    <element type="MedCityType" maxOccurs="*"/>
-  </ElementType>
-  <ElementType name="TradeScreenType" content="textOnly"/>
-  <ElementType name="TradeScreenTypes" content="eltOnly">
-    <element type="TradeScreenType" maxOccurs="*"/>
-  </ElementType>
-  <ElementType name="CensureType" content="textOnly"/>
-  <ElementType name="CensureTypes" content="eltOnly">
-    <element type="CensureType" maxOccurs="*"/>
-  </ElementType>
-  <ElementType name="ModCodeType" content="textOnly"/>
-  <ElementType name="ModCodeTypes" content="eltOnly">
-    <element type="ModCodeType" maxOccurs="*"/>
-  </ElementType>
+	<ElementType name="MedCityType" content="textOnly"/>
+	<ElementType name="MedCityTypes" content="eltOnly">
+		<element type="MedCityType" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="TradeScreenType" content="textOnly"/>
+	<ElementType name="TradeScreenTypes" content="eltOnly">
+		<element type="TradeScreenType" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="CensureType" content="textOnly"/>
+	<ElementType name="CensureTypes" content="eltOnly">
+		<element type="CensureType" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="ModCodeType" content="textOnly"/>
+	<ElementType name="ModCodeTypes" content="eltOnly">
+		<element type="ModCodeType" maxOccurs="*"/>
+	</ElementType>
   <!--TKe-->
 	<ElementType name="DirectionType" content="textOnly"/>
 	<ElementType name="DirectionTypes" content="eltOnly">
@@ -86,11 +86,11 @@
 		<element type="ContactTypes"/>
 		<element type="DiplomacyPowerTypes"/>
 		<element type="AutomateTypes"/>
-    <element type="ModCodeTypes"/>
-    <element type="MedCityTypes"/>
-    <element type="TradeScreenTypes"/>
-    <element type="CensureTypes"/>
-    <element type="DirectionTypes"/>
+		<element type="ModCodeTypes"/>
+		<element type="MedCityTypes"/>
+		<element type="TradeScreenTypes"/>
+		<element type="CensureTypes"/>
+		<element type="DirectionTypes"/>
 		<element type="FootstepAudioTypes"/>
 		<element type="FootstepAudioTags"/>
 		<element type="InterfaceVisibilityTypes"/>

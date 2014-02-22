@@ -24,6 +24,7 @@
 #include "FAStarNode.h"
 #include "CvInitCore.h"
 #include "CvInfos.h"
+#include "CvUnitAI.h"
 #include "FProfiler.h"
 
 #include "CvDLLEngineIFaceBase.h"
@@ -246,7 +247,10 @@ void CvMap::setRevealedPlots(TeamTypes eTeam, bool bNewValue, bool bTerrainOnly)
 
 	for (int iI = 0; iI < numPlotsINLINE(); iI++)
 	{
-		plotByIndexINLINE(iI)->setRevealed(eTeam, bNewValue, bTerrainOnly, NO_TEAM);
+		/// PlotGroup - start - Nightinggale
+		//plotByIndexINLINE(iI)->setRevealed(eTeam, bNewValue, bTerrainOnly, NO_TEAM);
+		plotByIndexINLINE(iI)->setRevealed(eTeam, bNewValue, bTerrainOnly, NO_TEAM, false);
+		/// PlotGroup - end - Nightinggale
 	}
 }
 
@@ -352,7 +356,7 @@ void CvMap::updateSight(bool bIncrement)
 {
 	for (int iI = 0; iI < numPlotsINLINE(); iI++)
 	{
-		plotByIndexINLINE(iI)->updateSight(bIncrement);
+		plotByIndexINLINE(iI)->updateSight(bIncrement, false);
 	}
 }
 
@@ -1354,5 +1358,46 @@ void CvMap::calculateAreas()
 	}
 }
 
+
+/// PlotGroup - start - Nightinggale
+void CvMap::combinePlotGroups(PlayerTypes ePlayer, CvPlotGroup* pPlotGroup1, CvPlotGroup* pPlotGroup2)
+{
+	CLLNode<XYCoords>* pPlotNode;
+	CvPlotGroup* pNewPlotGroup;
+	CvPlotGroup* pOldPlotGroup;
+	CvPlot* pPlot;
+
+	FAssertMsg(pPlotGroup1 != NULL, "pPlotGroup is not assigned to a valid value");
+	FAssertMsg(pPlotGroup2 != NULL, "pPlotGroup is not assigned to a valid value");
+
+	if (pPlotGroup1 == pPlotGroup2)
+	{
+		return;
+	}
+
+	if (pPlotGroup1->getLengthPlots() > pPlotGroup2->getLengthPlots())
+	{
+		pNewPlotGroup = pPlotGroup1;
+		pOldPlotGroup = pPlotGroup2;
+	}
+	else
+	{
+		pNewPlotGroup = pPlotGroup2;
+		pOldPlotGroup = pPlotGroup1;
+	}
+
+	pPlotNode = pOldPlotGroup->headPlotsNode();
+	while (pPlotNode != NULL)
+	{
+		pPlot = plotSorenINLINE(pPlotNode->m_data.iX, pPlotNode->m_data.iY);
+		pNewPlotGroup->addPlot(pPlot);
+		pPlotNode = pOldPlotGroup->deletePlotsNode(pPlotNode);
+	}
+
+	/// PlotGroup - start - Nightinggale
+	GET_PLAYER(ePlayer).clearPlotgroupCityCache();
+	/// PlotGroup - end - Nightinggale
+}
+/// PlotGroup - end - Nightinggale
 
 // Private Functions...

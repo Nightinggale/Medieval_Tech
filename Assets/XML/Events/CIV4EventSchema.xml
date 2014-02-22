@@ -13,7 +13,7 @@
 	<ElementType name="bQuest" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bTutorial" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bSinglePlayer" content="textOnly" dt:type="boolean"/>
-  <ElementType name="EventArt" content="textOnly"/>
+	<ElementType name="EventArt" content="textOnly"/>
 	<ElementType name="iMinTreasury" content="textOnly" dt:type="int"/>
 	<ElementType name="iGold" content="textOnly" dt:type="int"/>
 	<ElementType name="iRandomGold" content="textOnly" dt:type="int"/>
@@ -110,8 +110,8 @@
 		<element type="TerrainType" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
   <!--Medieval Events-->
-  <ElementType name="bDoNotAnnounce" content="textOnly" dt:type="boolean"/>
-  <ElementType name="bOnUnitTrained" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bDoNotAnnounce" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bOnUnitTrained" content="textOnly" dt:type="boolean"/>
 	<ElementType name="TerrainType" content="textOnly"/>
 	<ElementType name="iTerrainChange" content="textOnly" dt:type="int"/>
 	<ElementType name="ImprovementsRequired" content="eltOnly">
@@ -239,9 +239,9 @@
 		<element type="PythonCanDoUnit"/>
 		<element type="PythonCallback"/>
     <!--Medieval Events-->
-    <element type="EventArt" minOccurs="0"/>
-    <element type="bDoNotAnnounce" minOccurs="0"/>
-    <element type="bOnUnitTrained" minOccurs="0"/>
+		<element type="EventArt" minOccurs="0"/>
+		<element type="bDoNotAnnounce" minOccurs="0"/>
+		<element type="bOnUnitTrained" minOccurs="0"/>
 	</ElementType>
 	<ElementType name="EventTriggerInfos" content="eltOnly">
 		<element type="EventTriggerInfo" minOccurs="0" maxOccurs="*"/>

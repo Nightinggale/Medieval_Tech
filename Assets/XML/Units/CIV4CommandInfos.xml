@@ -310,7 +310,7 @@
 			<bShiftDownAlt>0</bShiftDownAlt>
 			<bCtrlDownAlt>0</bCtrlDownAlt>
 			<iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
-			<bVisible>1</bVisible>
+			<bVisible>0</bVisible>
 			<Button>Art/Interface/Game Hud/Actions/ReturnMotherland.dds</Button>
 		</CommandInfo>
 		<CommandInfo>
@@ -404,179 +404,180 @@
 			<Description>TXT_KEY_COMMAND_HOTKEY</Description>
 			<Help>TXT_KEY_COMMAND_HOTKEY_HELP</Help>
 		</CommandInfo>
-    <CommandInfo>
-      <Type>COMMAND_CONVERT_UNIT</Type>
-      <Description>Convert Unit</Description>
-      <Help>TXT_KEY_COMMAND_PROFESSION_HELP</Help>
-      <HotKey>0</HotKey>
-      <bAltDown>0</bAltDown>
-      <bShiftDown>0</bShiftDown>
-      <bCtrlDown>0</bCtrlDown>
-      <iHotKeyPriority>0</iHotKeyPriority>
-      <HotKeyAlt/>
-      <bAltDownAlt>0</bAltDownAlt>
-      <bShiftDownAlt>0</bShiftDownAlt>
-      <bCtrlDownAlt>0</bCtrlDownAlt>
-      <iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
-      <bVisible>1</bVisible>
-      <Button>Art/Interface/Game Hud/Actions/Change_profession.dds</Button>
-    </CommandInfo>
-    <CommandInfo>
-      <Type>COMMAND_HOLD_FEAST</Type>
-      <Description>Throw a Banquet</Description>
-      <Help>TXT_KEY_COMMAND_PROFESSION_HELP</Help>
-      <HotKey>0</HotKey>
-      <bAltDown>0</bAltDown>
-      <bShiftDown>0</bShiftDown>
-      <bCtrlDown>0</bCtrlDown>
-      <iHotKeyPriority>0</iHotKeyPriority>
-      <HotKeyAlt/>
-      <bAltDownAlt>0</bAltDownAlt>
-      <bShiftDownAlt>0</bShiftDownAlt>
-      <bCtrlDownAlt>0</bCtrlDownAlt>
-      <iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
-      <bVisible>0</bVisible>
-      <Button>Art/Interface/Game Hud/Actions/HoldBanquet.dds</Button>
-    </CommandInfo>
-    <CommandInfo>
-      <Type>COMMAND_TRAVEL_TO_FAIR</Type>
-      <Description>TXT_KEY_COMMAND_TRAVEL_TO_FAIR</Description>
-      <Help>TXT_KEY_COMMAND_TRAVEL_TO_FAIR_HELP</Help>
-      <HotKey>KB_E</HotKey>
-      <bAltDown>0</bAltDown>
-      <bShiftDown>0</bShiftDown>
-      <bCtrlDown>1</bCtrlDown>
-      <iHotKeyPriority>0</iHotKeyPriority>
-      <HotKeyAlt/>
-      <bAltDownAlt>0</bAltDownAlt>
-      <bShiftDownAlt>0</bShiftDownAlt>
-      <bCtrlDownAlt>0</bCtrlDownAlt>
-      <iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
-      <bVisible>1</bVisible>
-      <Button>Art/Interface/Game Hud/Actions/TraveltoFair.dds</Button>
-    </CommandInfo>
-    <CommandInfo>
-      <Type>COMMAND_SAIL_SPICE_ROUTE</Type>
-      <Description>TXT_KEY_COMMAND_SAIL_SPICE_ROUTE</Description>
-      <Help>TXT_KEY_AUTO_SELL_SPICE_ROUTE_HELP</Help>
-      <HotKey>KB_E</HotKey>
-      <bAltDown>0</bAltDown>
-      <bShiftDown>0</bShiftDown>
-      <bCtrlDown>1</bCtrlDown>
-      <iHotKeyPriority>0</iHotKeyPriority>
-      <HotKeyAlt/>
-      <bAltDownAlt>0</bAltDownAlt>
-      <bShiftDownAlt>0</bShiftDownAlt>
-      <bCtrlDownAlt>0</bCtrlDownAlt>
-      <iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
-      <bVisible>1</bVisible>
-      <Button>Art/Interface/Game Hud/Actions/travelSpiceRoute.dds</Button>
-    </CommandInfo>
-    <CommandInfo>
-      <Type>COMMAND_TRAVEL_SILK_ROAD</Type>
-      <Description>TXT_KEY_COMMAND_TRAVEL_SILK_ROAD</Description>
-      <Help>TXT_KEY_COMMAND_TRAVEL_SILK_ROAD_HELP</Help>
-      <HotKey>KB_E</HotKey>
-      <bAltDown>0</bAltDown>
-      <bShiftDown>0</bShiftDown>
-      <bCtrlDown>1</bCtrlDown>
-      <iHotKeyPriority>0</iHotKeyPriority>
-      <HotKeyAlt/>
-      <bAltDownAlt>0</bAltDownAlt>
-      <bShiftDownAlt>0</bShiftDownAlt>
-      <bCtrlDownAlt>0</bCtrlDownAlt>
-      <iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
-      <bVisible>1</bVisible>
-      <Button>Art/Interface/Game Hud/Actions/travelsilkroad.dds</Button>
-    </CommandInfo>
-    <CommandInfo>
-      <Type>COMMAND_ASSIGN_HOME_CITY</Type>
-      <Description>TXT_KEY_ASSIGN_HOME_CITY</Description>
-      <Help>TXT_KEY_ASSIGN_HOME_CITY_HELP</Help>
-      <HotKey/>
-      <bAltDown>0</bAltDown>
-      <bShiftDown>0</bShiftDown>
-      <bCtrlDown>0</bCtrlDown>
-      <iHotKeyPriority>0</iHotKeyPriority>
-      <HotKeyAlt/>
-      <bAltDownAlt>0</bAltDownAlt>
-      <bShiftDownAlt>0</bShiftDownAlt>
-      <bCtrlDownAlt>0</bCtrlDownAlt>
-      <iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
-      <bVisible>1</bVisible>
-      <Button>Art/Interface/Game Hud/Actions/assign_home_high_res.dds</Button>
-    </CommandInfo>
-    <CommandInfo>
-      <Type>COMMAND_HIRE_GUARD</Type>
-      <Description>Hire Guide</Description>
-      <Help>Hires a guide that will escort this unit until it returns to a home city (No bad goodies and faster movment!)</Help>
-      <HotKey/>
-      <bAltDown>0</bAltDown>
-      <bShiftDown>0</bShiftDown>
-      <bCtrlDown>0</bCtrlDown>
-      <iHotKeyPriority>0</iHotKeyPriority>
-      <HotKeyAlt/>
-      <bAltDownAlt>0</bAltDownAlt>
-      <bShiftDownAlt>0</bShiftDownAlt>
-      <bCtrlDownAlt>0</bCtrlDownAlt>
-      <iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
-      <bVisible>1</bVisible>
-      <Button>Art/Interface/Game Hud/Actions/GuardButton.dds</Button>
-    </CommandInfo>
-    <CommandInfo>
-      <Type>COMMAND_CALL_BANNERS</Type>
-      <Description>Summon Vassal</Description>
-      <Help>Summon the Vassal and his retainers</Help>
-      <HotKey/>
-      <bAltDown>0</bAltDown>
-      <bShiftDown>0</bShiftDown>
-      <bCtrlDown>0</bCtrlDown>
-      <iHotKeyPriority>0</iHotKeyPriority>
-      <HotKeyAlt/>
-      <bAltDownAlt>0</bAltDownAlt>
-      <bShiftDownAlt>0</bShiftDownAlt>
-      <bCtrlDownAlt>0</bCtrlDownAlt>
-      <iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
-      <bVisible>1</bVisible>
-      <Button>Art/Interface/Game Hud/Actions/assign_home_high_res.dds</Button>
-    </CommandInfo>
-    <CommandInfo>
-      <Type>COMMAND_BUILD_HOME</Type>
-      <Description>Build Home Here</Description>
-      <Help>Unit settles here building their home to work</Help>
-      <HotKey/>
-      <bAltDown>0</bAltDown>
-      <bShiftDown>0</bShiftDown>
-      <bCtrlDown>0</bCtrlDown>
-      <iHotKeyPriority>0</iHotKeyPriority>
-      <HotKeyAlt/>
-      <bAltDownAlt>0</bAltDownAlt>
-      <bShiftDownAlt>0</bShiftDownAlt>
-      <bCtrlDownAlt>0</bCtrlDownAlt>
-      <iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
-      <iOrderPriority>6</iOrderPriority>
-      <bConfirmCommand>1</bConfirmCommand>
-      <bVisible>1</bVisible>
-      <Button>Art/Interface/Game Hud/Actions/BuildHome.dds</Button>
-    </CommandInfo>
-    <CommandInfo>
-      <Type>COMMAND_BUILD_TRADINGPOST</Type>
-      <Description>Establish Trading Post</Description>
-      <Help>Unit will establish a Trading Post at this village granting Trade Points each turn and revealing valuable goods present</Help>
-      <HotKey/>
-      <bAltDown>0</bAltDown>
-      <bShiftDown>0</bShiftDown>
-      <bCtrlDown>0</bCtrlDown>
-      <iHotKeyPriority>0</iHotKeyPriority>
-      <HotKeyAlt/>
-      <bAltDownAlt>0</bAltDownAlt>
-      <bShiftDownAlt>0</bShiftDownAlt>
-      <bCtrlDownAlt>0</bCtrlDownAlt>
-      <iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
-      <iOrderPriority>2</iOrderPriority>
-      <bConfirmCommand>0</bConfirmCommand>
-      <bVisible>1</bVisible>
-      <Button>Art/Interface/Game Hud/Actions/EstablishTradePost.dds</Button>
-    </CommandInfo>
+		<CommandInfo>
+			<Type>COMMAND_CONVERT_UNIT</Type>
+			<Description>Convert Unit</Description>
+			<Help>TXT_KEY_COMMAND_PROFESSION_HELP</Help>
+			<HotKey>0</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<HotKeyAlt/>
+			<bAltDownAlt>0</bAltDownAlt>
+			<bShiftDownAlt>0</bShiftDownAlt>
+			<bCtrlDownAlt>0</bCtrlDownAlt>
+			<iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
+			<bVisible>1</bVisible>
+			<Button>Art/Interface/Game Hud/Actions/Change_profession.dds</Button>
+		</CommandInfo>
+		<CommandInfo>
+			<Type>COMMAND_HOLD_FEAST</Type>
+			<Description>Throw a Banquet</Description>
+			<Help>TXT_KEY_COMMAND_PROFESSION_HELP</Help>
+			<HotKey>0</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<HotKeyAlt/>
+			<bAltDownAlt>0</bAltDownAlt>
+			<bShiftDownAlt>0</bShiftDownAlt>
+			<bCtrlDownAlt>0</bCtrlDownAlt>
+			<iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
+			<bVisible>0</bVisible>
+			<Button>Art/Interface/Game Hud/Actions/HoldBanquet.dds</Button>
+		</CommandInfo>
+		<CommandInfo>
+			<Type>COMMAND_TRAVEL_TO_FAIR</Type>
+			<Description>TXT_KEY_COMMAND_TRAVEL_TO_FAIR</Description>
+			<Help>TXT_KEY_COMMAND_TRAVEL_TO_FAIR_HELP</Help>
+			<HotKey>KB_E</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>1</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<HotKeyAlt/>
+			<bAltDownAlt>0</bAltDownAlt>
+			<bShiftDownAlt>0</bShiftDownAlt>
+			<bCtrlDownAlt>0</bCtrlDownAlt>
+			<iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
+			<bVisible>1</bVisible>
+			<Button>Art/Interface/Game Hud/Actions/TraveltoFair.dds</Button>
+		</CommandInfo>
+		<CommandInfo>
+			<Type>COMMAND_SAIL_SPICE_ROUTE</Type>
+			<Description>TXT_KEY_COMMAND_SAIL_SPICE_ROUTE</Description>
+			<Help>TXT_KEY_AUTO_SELL_SPICE_ROUTE_HELP</Help>
+			<HotKey>KB_E</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>1</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<HotKeyAlt/>
+			<bAltDownAlt>0</bAltDownAlt>
+			<bShiftDownAlt>0</bShiftDownAlt>
+			<bCtrlDownAlt>0</bCtrlDownAlt>
+			<iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
+			<bVisible>1</bVisible>
+			<EuropeTradeRoute/>
+			<Button>Art/Interface/Game Hud/Actions/travelSpiceRoute.dds</Button>
+		</CommandInfo>
+		<CommandInfo>
+			<Type>COMMAND_TRAVEL_SILK_ROAD</Type>
+			<Description>TXT_KEY_COMMAND_TRAVEL_SILK_ROAD</Description>
+			<Help>TXT_KEY_COMMAND_TRAVEL_SILK_ROAD_HELP</Help>
+			<HotKey>KB_E</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>1</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<HotKeyAlt/>
+			<bAltDownAlt>0</bAltDownAlt>
+			<bShiftDownAlt>0</bShiftDownAlt>
+			<bCtrlDownAlt>0</bCtrlDownAlt>
+			<iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
+			<bVisible>1</bVisible>
+			<Button>Art/Interface/Game Hud/Actions/travelsilkroad.dds</Button>
+		</CommandInfo>
+		<CommandInfo>
+			<Type>COMMAND_ASSIGN_HOME_CITY</Type>
+			<Description>TXT_KEY_ASSIGN_HOME_CITY</Description>
+			<Help>TXT_KEY_ASSIGN_HOME_CITY_HELP</Help>
+			<HotKey/>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<HotKeyAlt/>
+			<bAltDownAlt>0</bAltDownAlt>
+			<bShiftDownAlt>0</bShiftDownAlt>
+			<bCtrlDownAlt>0</bCtrlDownAlt>
+			<iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
+			<bVisible>1</bVisible>
+			<Button>Art/Interface/Game Hud/Actions/assign_home_high_res.dds</Button>
+		</CommandInfo>
+		<CommandInfo>
+			<Type>COMMAND_HIRE_GUARD</Type>
+			<Description>Hire Guide</Description>
+			<Help>Hires a guide that will escort this unit until it returns to a home city (No bad goodies and faster movment!)</Help>
+			<HotKey/>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<HotKeyAlt/>
+			<bAltDownAlt>0</bAltDownAlt>
+			<bShiftDownAlt>0</bShiftDownAlt>
+			<bCtrlDownAlt>0</bCtrlDownAlt>
+			<iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
+			<bVisible>1</bVisible>
+			<Button>Art/Interface/Game Hud/Actions/GuardButton.dds</Button>
+		</CommandInfo>
+		<CommandInfo>
+			<Type>COMMAND_CALL_BANNERS</Type>
+			<Description>Summon Vassal</Description>
+			<Help>Summon the Vassal and his retainers</Help>
+			<HotKey/>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<HotKeyAlt/>
+			<bAltDownAlt>0</bAltDownAlt>
+			<bShiftDownAlt>0</bShiftDownAlt>
+			<bCtrlDownAlt>0</bCtrlDownAlt>
+			<iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
+			<bVisible>1</bVisible>
+			<Button>Art/Interface/Game Hud/Actions/assign_home_high_res.dds</Button>
+		</CommandInfo>
+		<CommandInfo>
+			<Type>COMMAND_BUILD_HOME</Type>
+			<Description>Build Home Here</Description>
+			<Help>Unit settles here building their home to work</Help>
+			<HotKey/>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<HotKeyAlt/>
+			<bAltDownAlt>0</bAltDownAlt>
+			<bShiftDownAlt>0</bShiftDownAlt>
+			<bCtrlDownAlt>0</bCtrlDownAlt>
+			<iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
+			<iOrderPriority>6</iOrderPriority>
+			<bConfirmCommand>1</bConfirmCommand>
+			<bVisible>1</bVisible>
+			<Button>Art/Interface/Game Hud/Actions/BuildHome.dds</Button>
+		</CommandInfo>
+		<CommandInfo>
+			<Type>COMMAND_BUILD_TRADINGPOST</Type>
+			<Description>Establish Trading Post</Description>
+			<Help>Unit will establish a Trading Post at this village granting Trade Points each turn and revealing valuable goods present</Help>
+			<HotKey/>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<HotKeyAlt/>
+			<bAltDownAlt>0</bAltDownAlt>
+			<bShiftDownAlt>0</bShiftDownAlt>
+			<bCtrlDownAlt>0</bCtrlDownAlt>
+			<iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
+			<iOrderPriority>2</iOrderPriority>
+			<bConfirmCommand>0</bConfirmCommand>
+			<bVisible>1</bVisible>
+			<Button>Art/Interface/Game Hud/Actions/EstablishTradePost.dds</Button>
+		</CommandInfo>
 	</CommandInfos>
 </Civ4CommandInfos>

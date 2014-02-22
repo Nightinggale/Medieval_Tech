@@ -10,6 +10,7 @@
 #include "CvGameCoreUtils.h"
 #include "FProfiler.h"
 #include "CVInfos.h"
+#include "CvUnitAI.h"
 #include "CvTradeRoute.h"
 
 // Public Functions...

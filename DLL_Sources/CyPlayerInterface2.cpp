@@ -85,5 +85,10 @@ void CyPlayerPythonInterface2(python::class_<CyPlayer>& x)
 		.def("addRevolutionEuropeUnit", &CyPlayer::addRevolutionEuropeUnit, "void addRevolutionEuropeUnit(int /*UnitTypes*/ eUnit, int /*ProfessionTypes*/ eProfession)")
 		.def("getNumTradeMessages", &CyPlayer::getNumTradeMessages, "int ()")
 		.def("getTradeMessage", &CyPlayer::getTradeMessage, "string (int)")
+
+		// invention effect cache - start - Nightinggale
+		.def("canUseBuilding", &CyPlayer::canUseBuilding, "bool (int)")
+		.def("canUseUnit", &CyPlayer::canUseUnit, "bool (int)")
+		// invention effect cache - end - Nightinggale
 		;
 }

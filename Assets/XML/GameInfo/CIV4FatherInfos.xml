@@ -14,12 +14,12 @@
 			<Strategy>TXT_KEY_FATHER_JUAN_PONCE_DE_LEON_STRATEGY</Strategy>
 			<FatherCategory>FATHERCATEGORY_EXPLORATION</FatherCategory>
 			<RevealImprovements/>
-      <FreeUnits>
-        <FreeUnit>
-          <UnitClass>UNITCLASS_FRIGATE</UnitClass>
-          <iFreeUnits>1</iFreeUnits>
-        </FreeUnit>
-      </FreeUnits>
+			<FreeUnits>
+				<FreeUnit>
+					<UnitClass>UNITCLASS_FRIGATE</UnitClass>
+					<iFreeUnits>1</iFreeUnits>
+				</FreeUnit>
+			</FreeUnits>
 			<FatherPointCosts>
 				<FatherPointCost>
 					<FatherPointType>FATHER_POINT_EXPLORATION</FatherPointType>
@@ -38,8 +38,8 @@
 		</FatherInfo>
 		<FatherInfo>
 			<Type>FATHER_GONZALO_JIMENEZ_DE_QUESADA</Type>
-      <Portrait>Art/Interface/Screens/Founding_Fathers/Filippo.dds</Portrait>
-      <Description>Filippo Brunelleschi</Description>
+			<Portrait>Art/Interface/Screens/Founding_Fathers/Filippo.dds</Portrait>
+			<Description>Filippo Brunelleschi</Description>
 			<Civilopedia>TXT_KEY_FATHER</Civilopedia>
 			<Strategy>TXT_KEY_FATHER_GONZALO_JIMENEZ_DE_QUESADA_STRATEGY</Strategy>
 			<FatherCategory>FATHERCATEGORY_EXPLORATION</FatherCategory>
@@ -55,7 +55,7 @@
 					<iCost>200</iCost>
 				</FatherPointCost>
 			</FatherPointCosts>
-      <Trait>TRAIT_FILIPPO_BRUNE</Trait>
+			<Trait>TRAIT_FILIPPO_BRUNE</Trait>
 			<Quote>TXT_KEY_FUTURE_QUOTE</Quote>
 			<Sound>AS2D_FUTURE</Sound>
 			<SoundMP>AS2D_MP_FUTURE</SoundMP>
@@ -86,31 +86,31 @@
 			<SoundMP>AS2D_MP_FUTURE</SoundMP>
 			<Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,5,2</Button>
 		</FatherInfo>
-    <FatherInfo>
-      <Type>FATHER_AL_MASUDI</Type>
-      <Portrait>Art/Interface/Screens/Founding_Fathers/Al_Masudi.dds</Portrait>
-      <Description>Al Masudi</Description>
-      <Civilopedia>TXT_KEY_FATHER_ZHENG_HE</Civilopedia>
-      <Strategy>TXT_KEY_FATHER_VACO_NUNEZ_DE_BALBOA_STRATEGY</Strategy>
-      <FatherCategory>FATHERCATEGORY_EXPLORATION</FatherCategory>
-      <RevealImprovements/>
-      <FreeUnits/>
-      <FatherPointCosts>
-        <FatherPointCost>
-          <FatherPointType>FATHER_POINT_EXPLORATION</FatherPointType>
-          <iCost>1700</iCost>
-        </FatherPointCost>
-        <FatherPointCost>
-          <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-          <iCost>700</iCost>
-        </FatherPointCost>
-      </FatherPointCosts>
-      <Trait>TRAIT_AL_MASUDI</Trait>
-      <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
-      <Sound>AS2D_FUTURE</Sound>
-      <SoundMP>AS2D_MP_FUTURE</SoundMP>
-      <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,5,2</Button>
-    </FatherInfo>
+		<FatherInfo>
+			<Type>FATHER_AL_MASUDI</Type>
+			<Portrait>Art/Interface/Screens/Founding_Fathers/Al_Masudi.dds</Portrait>
+			<Description>Al Masudi</Description>
+			<Civilopedia>TXT_KEY_FATHER_ZHENG_HE</Civilopedia>
+			<Strategy>TXT_KEY_FATHER_VACO_NUNEZ_DE_BALBOA_STRATEGY</Strategy>
+			<FatherCategory>FATHERCATEGORY_EXPLORATION</FatherCategory>
+			<RevealImprovements/>
+			<FreeUnits/>
+			<FatherPointCosts>
+				<FatherPointCost>
+					<FatherPointType>FATHER_POINT_EXPLORATION</FatherPointType>
+					<iCost>1700</iCost>
+				</FatherPointCost>
+				<FatherPointCost>
+					<FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
+					<iCost>700</iCost>
+				</FatherPointCost>
+			</FatherPointCosts>
+			<Trait>TRAIT_AL_MASUDI</Trait>
+			<Quote>TXT_KEY_FUTURE_QUOTE</Quote>
+			<Sound>AS2D_FUTURE</Sound>
+			<SoundMP>AS2D_MP_FUTURE</SoundMP>
+			<Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,5,2</Button>
+		</FatherInfo>
 		<FatherInfo>
 			<Type>FATHER_WELCHER_MALVERN</Type>
 			<Portrait>Art/Interface/Screens/Founding_Fathers/Malvern.dds</Portrait>
@@ -118,16 +118,16 @@
 			<Civilopedia>TXT_KEY_FATHER</Civilopedia>
 			<Strategy>TXT_KEY_FATHER_WELCHER_MALVERN_STRATEGY</Strategy>
 			<FatherCategory>FATHERCATEGORY_EXPLORATION</FatherCategory>
-      <RevealImprovements>
-        <RevealImprovement>
-          <ImprovementType>IMPROVEMENT_GOODY_HUT</ImprovementType>
-          <bReveal>1</bReveal>
-        </RevealImprovement>
-        <RevealImprovement>
-          <ImprovementType>IMPROVEMENT_GOODY_HUT2</ImprovementType>
-          <bReveal>1</bReveal>
-        </RevealImprovement>
-      </RevealImprovements>
+			<RevealImprovements>
+				<RevealImprovement>
+					<ImprovementType>IMPROVEMENT_GOODY_HUT</ImprovementType>
+					<bReveal>1</bReveal>
+				</RevealImprovement>
+				<RevealImprovement>
+					<ImprovementType>IMPROVEMENT_GOODY_HUT2</ImprovementType>
+					<bReveal>1</bReveal>
+				</RevealImprovement>
+			</RevealImprovements>
 			<FreeUnits/>
 			<FatherPointCosts>
 				<FatherPointCost>
@@ -145,31 +145,31 @@
 			<SoundMP>AS2D_MP_FUTURE</SoundMP>
 			<Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,4,2</Button>
 		</FatherInfo>
-    <FatherInfo>
-      <Type>FATHER_GIOVANNI_CARPINI</Type>
-      <Portrait>Art/Interface/Screens/Founding_Fathers/Carpini.dds</Portrait>
-      <Description>Giovanni da Pian del Carpini</Description>
-      <Civilopedia>TXT_KEY_FATHER</Civilopedia>
-      <Strategy>TXT_KEY_FATHER_SOR_JUANA_STRATEGY</Strategy>
-      <FatherCategory>FATHERCATEGORY_EXPLORATION</FatherCategory>
-      <RevealImprovements/>
-      <FreeUnits/>
-      <FatherPointCosts>
-        <FatherPointCost>
-          <FatherPointType>FATHER_POINT_EXPLORATION</FatherPointType>
-          <iCost>700</iCost>
-        </FatherPointCost>
-        <FatherPointCost>
-          <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-          <iCost>325</iCost>
-        </FatherPointCost>
-      </FatherPointCosts>
-      <Trait>TRAIT_GIOVANNI</Trait>
-      <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
-      <Sound>AS2D_FUTURE</Sound>
-      <SoundMP>AS2D_MP_FUTURE</SoundMP>
-      <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,1,7</Button>
-    </FatherInfo>
+		<FatherInfo>
+			<Type>FATHER_GIOVANNI_CARPINI</Type>
+			<Portrait>Art/Interface/Screens/Founding_Fathers/Carpini.dds</Portrait>
+			<Description>Giovanni da Pian del Carpini</Description>
+			<Civilopedia>TXT_KEY_FATHER</Civilopedia>
+			<Strategy>TXT_KEY_FATHER_SOR_JUANA_STRATEGY</Strategy>
+			<FatherCategory>FATHERCATEGORY_EXPLORATION</FatherCategory>
+			<RevealImprovements/>
+			<FreeUnits/>
+			<FatherPointCosts>
+				<FatherPointCost>
+					<FatherPointType>FATHER_POINT_EXPLORATION</FatherPointType>
+					<iCost>700</iCost>
+				</FatherPointCost>
+				<FatherPointCost>
+					<FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
+					<iCost>325</iCost>
+				</FatherPointCost>
+			</FatherPointCosts>
+			<Trait>TRAIT_GIOVANNI</Trait>
+			<Quote>TXT_KEY_FUTURE_QUOTE</Quote>
+			<Sound>AS2D_FUTURE</Sound>
+			<SoundMP>AS2D_MP_FUTURE</SoundMP>
+			<Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,1,7</Button>
+		</FatherInfo>
 		<FatherInfo>
 			<Type>FATHER_BENJAMIN_TUDELA</Type>
 			<Portrait>Art/Interface/Screens/Founding_Fathers/Benjamin.dds</Portrait>
@@ -177,7 +177,7 @@
 			<Civilopedia>TXT_KEY_FATHER</Civilopedia>
 			<Strategy>TXT_KEY_FATHER_JOHN_SMITH_STRATEGY</Strategy>
 			<FatherCategory>FATHERCATEGORY_EXPLORATION</FatherCategory>
-      <RevealImprovements/>
+			<RevealImprovements/>
 			<FreeUnits/>
 			<FatherPointCosts>
 				<FatherPointCost>
@@ -189,7 +189,7 @@
 					<iCost>950</iCost>
 				</FatherPointCost>
 			</FatherPointCosts>
-      <Trait>TRAIT_BENJAMIN_TUDELA</Trait>
+			<Trait>TRAIT_BENJAMIN_TUDELA</Trait>
 			<Quote>TXT_KEY_FUTURE_QUOTE</Quote>
 			<Sound>AS2D_FUTURE</Sound>
 			<SoundMP>AS2D_MP_FUTURE</SoundMP>
@@ -197,8 +197,8 @@
 		</FatherInfo>
 		<FatherInfo>
 			<Type>FATHER_JACQUES_MARQUETTE</Type>
-      <Portrait>Art/Interface/Screens/Founding_Fathers/Eriksson.dds</Portrait>
-      <Description>Lief Erikson</Description>
+			<Portrait>Art/Interface/Screens/Founding_Fathers/Eriksson.dds</Portrait>
+			<Description>Lief Erikson</Description>
 			<Civilopedia>TXT_KEY_FATHER</Civilopedia>
 			<Strategy>TXT_KEY_FATHER_JACQUES_MARQUETTE_STRATEGY</Strategy>
 			<FatherCategory>FATHERCATEGORY_EXPLORATION</FatherCategory>
@@ -270,31 +270,31 @@
 			<SoundMP>AS2D_MP_FUTURE</SoundMP>
 			<Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,6,5</Button>
 		</FatherInfo>
-    <FatherInfo>
-      <Type>FATHER_CHRISTOPHER</Type>
-      <Portrait>Art/Interface/Screens/Founding_Fathers/Christopher.dds</Portrait>
-      <Description>Christopher Columbus</Description>
-      <Civilopedia>TXT_KEY_FATHER</Civilopedia>
-      <Strategy>TXT_KEY_FATHER_LEWIS_AND_CLARK_STRATEGY</Strategy>
-      <FatherCategory>FATHERCATEGORY_EXPLORATION</FatherCategory>
-      <RevealImprovements/>
-      <FreeUnits/>
-      <FatherPointCosts>
-        <FatherPointCost>
-          <FatherPointType>FATHER_POINT_EXPLORATION</FatherPointType>
-          <iCost>5250</iCost>
-        </FatherPointCost>
-        <FatherPointCost>
-          <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-          <iCost>1900</iCost>
-        </FatherPointCost>
-      </FatherPointCosts>
-      <Trait>TRAIT_CHRISTOPHER</Trait>
-      <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
-      <Sound>AS2D_FUTURE</Sound>
-      <SoundMP>AS2D_MP_FUTURE</SoundMP>
-      <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,6,5</Button>
-    </FatherInfo>
+		<FatherInfo>
+			<Type>FATHER_CHRISTOPHER</Type>
+			<Portrait>Art/Interface/Screens/Founding_Fathers/Christopher.dds</Portrait>
+			<Description>Christopher Columbus</Description>
+			<Civilopedia>TXT_KEY_FATHER</Civilopedia>
+			<Strategy>TXT_KEY_FATHER_LEWIS_AND_CLARK_STRATEGY</Strategy>
+			<FatherCategory>FATHERCATEGORY_EXPLORATION</FatherCategory>
+			<RevealImprovements/>
+			<FreeUnits/>
+			<FatherPointCosts>
+				<FatherPointCost>
+					<FatherPointType>FATHER_POINT_EXPLORATION</FatherPointType>
+					<iCost>5250</iCost>
+				</FatherPointCost>
+				<FatherPointCost>
+					<FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
+					<iCost>1900</iCost>
+				</FatherPointCost>
+			</FatherPointCosts>
+			<Trait>TRAIT_CHRISTOPHER</Trait>
+			<Quote>TXT_KEY_FUTURE_QUOTE</Quote>
+			<Sound>AS2D_FUTURE</Sound>
+			<SoundMP>AS2D_MP_FUTURE</SoundMP>
+			<Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,6,5</Button>
+		</FatherInfo>
 		<FatherInfo>
 			<Type>FATHER_BARTOLOME_DE_LAS_CASAS</Type>
 			<Portrait>Art/Interface/Screens/Founding_Fathers/BenedictofNursia.dds</Portrait>
@@ -303,12 +303,12 @@
 			<Strategy>TXT_KEY_FATHER_BARTOLOME_DE_LAS_CASAS_STRATEGY</Strategy>
 			<FatherCategory>FATHERCATEGORY_RELIGION</FatherCategory>
 			<RevealImprovements/>
-      <FreeUnits>
-        <FreeUnit>
-          <UnitClass>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClass>
-          <iFreeUnits>3</iFreeUnits>
-        </FreeUnit>
-      </FreeUnits>
+			<FreeUnits>
+				<FreeUnit>
+					<UnitClass>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClass>
+					<iFreeUnits>3</iFreeUnits>
+				</FreeUnit>
+			</FreeUnits>
 			<FatherPointCosts>
 				<FatherPointCost>
 					<FatherPointType>FATHER_POINT_RELIGION</FatherPointType>
@@ -363,12 +363,12 @@
 			<Strategy>TXT_KEY_FATHER_WILLIAM_BREWSTER_STRATEGY</Strategy>
 			<FatherCategory>FATHERCATEGORY_RELIGION</FatherCategory>
 			<RevealImprovements/>
-      <FreeUnits>
-        <FreeUnit>
-          <UnitClass>UNITCLASS_CARAVEL</UnitClass>
-          <iFreeUnits>1</iFreeUnits>
-        </FreeUnit>
-      </FreeUnits>
+			<FreeUnits>
+				<FreeUnit>
+					<UnitClass>UNITCLASS_CARAVEL</UnitClass>
+					<iFreeUnits>1</iFreeUnits>
+				</FreeUnit>
+			</FreeUnits>
 			<FatherPointCosts>
 				<FatherPointCost>
 					<FatherPointType>FATHER_POINT_RELIGION</FatherPointType>
@@ -495,14 +495,14 @@
 			<RevealImprovements/>
 			<FreeUnits/>
 			<FatherPointCosts>
-        <FatherPointCost>
-          <FatherPointType>FATHER_POINT_RELIGION</FatherPointType>
-          <iCost>225</iCost>
-        </FatherPointCost>
-        <FatherPointCost>
-          <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-          <iCost>200</iCost>
-        </FatherPointCost>
+				<FatherPointCost>
+					<FatherPointType>FATHER_POINT_RELIGION</FatherPointType>
+					<iCost>225</iCost>
+				</FatherPointCost>
+				<FatherPointCost>
+					<FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
+					<iCost>200</iCost>
+				</FatherPointCost>
 			</FatherPointCosts>
 			<Trait>TRAIT_COLUMBA</Trait>
 			<Quote>TXT_KEY_FUTURE_QUOTE</Quote>
@@ -510,31 +510,31 @@
 			<SoundMP>AS2D_MP_FUTURE</SoundMP>
 			<Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,4,3</Button>
 		</FatherInfo>
-    <FatherInfo>
-      <Type>FATHER_BONIFACE</Type>
-      <Portrait>Art/Interface/Screens/Founding_Fathers/Boniface.dds</Portrait>
-      <Description>Boniface</Description>
-      <Civilopedia>TXT_KEY_FATHER</Civilopedia>
-      <Strategy>TXT_KEY_FATHER_GREGORIO_DE_MATTOS_E_GUERRA_STRATEGY</Strategy>
-      <FatherCategory>FATHERCATEGORY_RELIGION</FatherCategory>
-      <RevealImprovements/>
-      <FreeUnits/>
-      <FatherPointCosts>
-        <FatherPointCost>
-          <FatherPointType>FATHER_POINT_RELIGION</FatherPointType>
-          <iCost>1700</iCost>
-        </FatherPointCost>
-        <FatherPointCost>
-          <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-          <iCost>1400</iCost>
-        </FatherPointCost>
-      </FatherPointCosts>
-      <Trait>TRAIT_BONIFACE</Trait>
-      <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
-      <Sound>AS2D_FUTURE</Sound>
-      <SoundMP>AS2D_MP_FUTURE</SoundMP>
-      <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,4,3</Button>
-    </FatherInfo>
+		<FatherInfo>
+			<Type>FATHER_BONIFACE</Type>
+			<Portrait>Art/Interface/Screens/Founding_Fathers/Boniface.dds</Portrait>
+			<Description>Boniface</Description>
+			<Civilopedia>TXT_KEY_FATHER</Civilopedia>
+			<Strategy>TXT_KEY_FATHER_GREGORIO_DE_MATTOS_E_GUERRA_STRATEGY</Strategy>
+			<FatherCategory>FATHERCATEGORY_RELIGION</FatherCategory>
+			<RevealImprovements/>
+			<FreeUnits/>
+			<FatherPointCosts>
+				<FatherPointCost>
+					<FatherPointType>FATHER_POINT_RELIGION</FatherPointType>
+					<iCost>1700</iCost>
+				</FatherPointCost>
+				<FatherPointCost>
+					<FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
+					<iCost>1400</iCost>
+				</FatherPointCost>
+			</FatherPointCosts>
+			<Trait>TRAIT_BONIFACE</Trait>
+			<Quote>TXT_KEY_FUTURE_QUOTE</Quote>
+			<Sound>AS2D_FUTURE</Sound>
+			<SoundMP>AS2D_MP_FUTURE</SoundMP>
+			<Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,4,3</Button>
+		</FatherInfo>
 		<FatherInfo>
 			<Type>FATHER_NATHANIAL_HAWTHORNE</Type>
 			<Portrait>Art/Interface/Screens/Founding_Fathers/Wycliffe.dds</Portrait>
@@ -554,37 +554,37 @@
 					<iCost>3400</iCost>
 				</FatherPointCost>
 			</FatherPointCosts>
-      <Trait>TRAIT_JOHN_WYCLIFFE</Trait>
-        <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
+			<Trait>TRAIT_JOHN_WYCLIFFE</Trait>
+			<Quote>TXT_KEY_FUTURE_QUOTE</Quote>
 			<Sound>AS2D_FUTURE</Sound>
 			<SoundMP>AS2D_MP_FUTURE</SoundMP>
 			<Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,5,4</Button>
 		</FatherInfo>
-    <FatherInfo>
-      <Type>FATHER_BERNARD_OF_CLAIRVAUX</Type>
-      <Portrait>Art/Interface/Screens/Founding_Fathers/bernard.dds</Portrait>
-      <Description>Bernard of Clairvaux</Description>
-      <Civilopedia>TXT_KEY_FATHER</Civilopedia>
-      <Strategy>TXT_KEY_FATHER_NATHANIAL_HAWTHORNE_STRATEGY</Strategy>
-      <FatherCategory>FATHERCATEGORY_RELIGION</FatherCategory>
-      <RevealImprovements/>
-      <FreeUnits/>
-      <FatherPointCosts>
-        <FatherPointCost>
-          <FatherPointType>FATHER_POINT_RELIGION</FatherPointType>
-          <iCost>4600</iCost>
-        </FatherPointCost>
-        <FatherPointCost>
-          <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-          <iCost>4000</iCost>
-        </FatherPointCost>
-      </FatherPointCosts>
-      <Trait>TRAIT_BERNARD_OF_CLAIRVAUX</Trait>
-      <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
-      <Sound>AS2D_FUTURE</Sound>
-      <SoundMP>AS2D_MP_FUTURE</SoundMP>
-      <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,5,4</Button>
-    </FatherInfo>
+		<FatherInfo>
+			<Type>FATHER_BERNARD_OF_CLAIRVAUX</Type>
+			<Portrait>Art/Interface/Screens/Founding_Fathers/bernard.dds</Portrait>
+			<Description>Bernard of Clairvaux</Description>
+			<Civilopedia>TXT_KEY_FATHER</Civilopedia>
+			<Strategy>TXT_KEY_FATHER_NATHANIAL_HAWTHORNE_STRATEGY</Strategy>
+			<FatherCategory>FATHERCATEGORY_RELIGION</FatherCategory>
+			<RevealImprovements/>
+			<FreeUnits/>
+			<FatherPointCosts>
+				<FatherPointCost>
+					<FatherPointType>FATHER_POINT_RELIGION</FatherPointType>
+					<iCost>4600</iCost>
+				</FatherPointCost>
+				<FatherPointCost>
+					<FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
+					<iCost>4000</iCost>
+				</FatherPointCost>
+			</FatherPointCosts>
+			<Trait>TRAIT_BERNARD_OF_CLAIRVAUX</Trait>
+			<Quote>TXT_KEY_FUTURE_QUOTE</Quote>
+			<Sound>AS2D_FUTURE</Sound>
+			<SoundMP>AS2D_MP_FUTURE</SoundMP>
+			<Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,5,4</Button>
+		</FatherInfo>
 		<FatherInfo>
 			<Type>FATHER_CHARLES_MARTEL</Type>
 			<Portrait>Art/Interface/Screens/Founding_Fathers/Martel.dds</Portrait>
@@ -654,7 +654,7 @@
 					<iCost>600</iCost>
 				</FatherPointCost>
 			</FatherPointCosts>
-      <Trait>TRAIT_HUGUES</Trait>
+			<Trait>TRAIT_HUGUES</Trait>
 			<Quote>TXT_KEY_FUTURE_QUOTE</Quote>
 			<Sound>AS2D_FUTURE</Sound>
 			<SoundMP>AS2D_MP_FUTURE</SoundMP>
@@ -804,8 +804,8 @@
 					<iCost>1900</iCost>
 				</FatherPointCost>
 			</FatherPointCosts>
-      <Trait>TRAIT_JEAN_FROISSART</Trait >
-      <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
+			<Trait>TRAIT_JEAN_FROISSART</Trait >
+			<Quote>TXT_KEY_FUTURE_QUOTE</Quote>
 			<Sound>AS2D_FUTURE</Sound>
 			<SoundMP>AS2D_MP_FUTURE</SoundMP>
 			<Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,3,5</Button>
@@ -885,31 +885,31 @@
 			<SoundMP>AS2D_MP_FUTURE</SoundMP>
 			<Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,1,6</Button>
 		</FatherInfo>
-    <FatherInfo>
-      <Type>FATHER_PEDRO_ALVARES_CABRAL</Type>
-      <Portrait>Art/Interface/Screens/Founding_Fathers/EilmerM.dds</Portrait>
-      <Description>Eilmer of Malmesbury</Description>
-      <Civilopedia>TXT_KEY_FATHER_ARNARSON</Civilopedia>
-      <Strategy>TXT_KEY_FATHER_PEDRO_ALVARES_CABRAL_STRATEGY</Strategy>
-      <FatherCategory>FATHERCATEGORY_TRADE</FatherCategory>
-      <RevealImprovements/>
-      <FreeUnits/>
-      <FatherPointCosts>
-        <FatherPointCost>
-          <FatherPointType>FATHER_POINT_TRADE</FatherPointType>
-          <iCost>1550</iCost>
-        </FatherPointCost>
-        <FatherPointCost>
-          <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-          <iCost>900</iCost>
-        </FatherPointCost>
-      </FatherPointCosts>
-      <Trait>TRAIT_EILMER_MALMESBURY</Trait>
-      <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
-      <Sound>AS2D_FUTURE</Sound>
-      <SoundMP>AS2D_MP_FUTURE</SoundMP>
-      <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,1,2</Button>
-    </FatherInfo>
+		<FatherInfo>
+			<Type>FATHER_PEDRO_ALVARES_CABRAL</Type>
+			<Portrait>Art/Interface/Screens/Founding_Fathers/EilmerM.dds</Portrait>
+			<Description>Eilmer of Malmesbury</Description>
+			<Civilopedia>TXT_KEY_FATHER_ARNARSON</Civilopedia>
+			<Strategy>TXT_KEY_FATHER_PEDRO_ALVARES_CABRAL_STRATEGY</Strategy>
+			<FatherCategory>FATHERCATEGORY_TRADE</FatherCategory>
+			<RevealImprovements/>
+			<FreeUnits/>
+			<FatherPointCosts>
+				<FatherPointCost>
+					<FatherPointType>FATHER_POINT_TRADE</FatherPointType>
+					<iCost>1550</iCost>
+				</FatherPointCost>
+				<FatherPointCost>
+					<FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
+					<iCost>900</iCost>
+				</FatherPointCost>
+			</FatherPointCosts>
+			<Trait>TRAIT_EILMER_MALMESBURY</Trait>
+			<Quote>TXT_KEY_FUTURE_QUOTE</Quote>
+			<Sound>AS2D_FUTURE</Sound>
+			<SoundMP>AS2D_MP_FUTURE</SoundMP>
+			<Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,1,2</Button>
+		</FatherInfo>
 		<FatherInfo>
 			<Type>FATHER_JOHN_ROLFE</Type>
 			<Portrait>Art/Interface/Screens/Founding_Fathers/ArRazi.dds</Portrait>
@@ -1139,18 +1139,18 @@
 			<Strategy>TXT_KEY_FATHER_POCAHONTAS_STRATEGY</Strategy>
 			<FatherCategory>FATHERCATEGORY_POLITICS</FatherCategory>
 			<RevealImprovements/>
-      <FreeUnits>
-        <FreeUnit>
-          <UnitClass>UNITCLASS_NOBLEMAN</UnitClass>
-          <iFreeUnits>3</iFreeUnits>
-        </FreeUnit>
-      </FreeUnits>
-      <FatherPointCosts>
-        <FatherPointCost>
-          <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-          <iCost>8000</iCost>
-        </FatherPointCost>
-      </FatherPointCosts>
+			<FreeUnits>
+				<FreeUnit>
+					<UnitClass>UNITCLASS_NOBLEMAN</UnitClass>
+					<iFreeUnits>3</iFreeUnits>
+				</FreeUnit>
+			</FreeUnits>
+			<FatherPointCosts>
+				<FatherPointCost>
+					<FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
+					<iCost>8000</iCost>
+				</FatherPointCost>
+			</FatherPointCosts>
 			<Trait/>
 			<Quote>TXT_KEY_FUTURE_QUOTE</Quote>
 			<Sound>AS2D_FUTURE</Sound>
@@ -1186,12 +1186,12 @@
 			<Strategy>TXT_KEY_FATHER_SAMUEL_ADAMS_STRATEGY</Strategy>
 			<FatherCategory>FATHERCATEGORY_POLITICS</FatherCategory>
 			<RevealImprovements/>
-      <FreeUnits>
-        <FreeUnit>
-          <UnitClass>UNITCLASS_VINEYARD_PLANTER</UnitClass>
-          <iFreeUnits>2</iFreeUnits>
-        </FreeUnit>
-      </FreeUnits>
+			<FreeUnits>
+				<FreeUnit>
+					<UnitClass>UNITCLASS_VINEYARD_PLANTER</UnitClass>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnit>
+			</FreeUnits>
 			<FatherPointCosts>
 				<FatherPointCost>
 					<FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
@@ -1204,32 +1204,32 @@
 			<SoundMP>AS2D_MP_FUTURE</SoundMP>
 			<Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,2,1</Button>
 		</FatherInfo>
-    <FatherInfo>
-      <Type>FATHER_ALCUIN_OF_YORK</Type>
-      <Portrait>Art/Interface/Screens/Founding_Fathers/Alcuin.dds</Portrait>
-      <Description>Alcuin of York</Description>
-      <Civilopedia>TXT_KEY_FATHER</Civilopedia>
-      <Strategy>TXT_KEY_FATHER_SAMUEL_ADAMS_STRATEGY</Strategy>
-      <FatherCategory>FATHERCATEGORY_POLITICS</FatherCategory>
-      <RevealImprovements/>
-      <FreeUnits>
-        <FreeUnit>
-          <UnitClass>UNITCLASS_DIGNITARY</UnitClass>
-          <iFreeUnits>2</iFreeUnits>
-        </FreeUnit>
-      </FreeUnits>
-      <FatherPointCosts>
-        <FatherPointCost>
-          <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-          <iCost>3400</iCost>
-        </FatherPointCost>
-      </FatherPointCosts>
-      <Trait>TRAIT_ALCUIN_OF_YORK</Trait>
-      <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
-      <Sound>AS2D_FUTURE</Sound>
-      <SoundMP>AS2D_MP_FUTURE</SoundMP>
-      <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,2,1</Button>
-    </FatherInfo>
+		<FatherInfo>
+			<Type>FATHER_ALCUIN_OF_YORK</Type>
+			<Portrait>Art/Interface/Screens/Founding_Fathers/Alcuin.dds</Portrait>
+			<Description>Alcuin of York</Description>
+			<Civilopedia>TXT_KEY_FATHER</Civilopedia>
+			<Strategy>TXT_KEY_FATHER_SAMUEL_ADAMS_STRATEGY</Strategy>
+			<FatherCategory>FATHERCATEGORY_POLITICS</FatherCategory>
+			<RevealImprovements/>
+			<FreeUnits>
+				<FreeUnit>
+					<UnitClass>UNITCLASS_DIGNITARY</UnitClass>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnit>
+			</FreeUnits>
+			<FatherPointCosts>
+				<FatherPointCost>
+					<FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
+					<iCost>3400</iCost>
+				</FatherPointCost>
+			</FatherPointCosts>
+			<Trait>TRAIT_ALCUIN_OF_YORK</Trait>
+			<Quote>TXT_KEY_FUTURE_QUOTE</Quote>
+			<Sound>AS2D_FUTURE</Sound>
+			<SoundMP>AS2D_MP_FUTURE</SoundMP>
+			<Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,2,1</Button>
+		</FatherInfo>
 		<FatherInfo>
 			<Type>FATHER_GREGORY_GREAT</Type>
 			<Portrait>Art/Interface/Screens/Founding_Fathers/Gregory.dds</Portrait>
@@ -1377,27 +1377,27 @@
 			<SoundMP>AS2D_MP_FUTURE</SoundMP>
 			<Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,8,3</Button>
 		</FatherInfo>
-    <FatherInfo>
-      <Type>REAL_TRADE_TRADING_POSTS</Type>
-      <Portrait>Art/Interface/Screens/Founding_Fathers/Benjamin.dds</Portrait>
-      <Description>Trading Post</Description>
-      <Civilopedia>TXT_KEY_FATHER</Civilopedia>
-      <Strategy>TXT_KEY_FATHER_JOHN_SMITH_STRATEGY</Strategy>
-      <FatherCategory>FATHERCATEGORY_REAL_TRADE</FatherCategory>
-      <RevealImprovements/>
-      <FreeUnits/>
-      <FatherPointCosts>
-        <FatherPointCost>
-          <FatherPointType>FATHER_POINT_REAL_TRADE</FatherPointType>
-          <iCost>400</iCost>
-        </FatherPointCost>
-      </FatherPointCosts>
-      <Trait/>
-      <FreeCivic>21</FreeCivic>
-      <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
-      <Sound>AS2D_FUTURE</Sound>
-      <SoundMP>AS2D_MP_FUTURE</SoundMP>
-      <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,8,6</Button>
-    </FatherInfo>
+		<FatherInfo>
+			<Type>REAL_TRADE_TRADING_POSTS</Type>
+			<Portrait>Art/Interface/Screens/Founding_Fathers/Benjamin.dds</Portrait>
+			<Description>Trading Post</Description>
+			<Civilopedia>TXT_KEY_FATHER</Civilopedia>
+			<Strategy>TXT_KEY_FATHER_JOHN_SMITH_STRATEGY</Strategy>
+			<FatherCategory>FATHERCATEGORY_REAL_TRADE</FatherCategory>
+			<RevealImprovements/>
+			<FreeUnits/>
+			<FatherPointCosts>
+				<FatherPointCost>
+					<FatherPointType>FATHER_POINT_REAL_TRADE</FatherPointType>
+					<iCost>400</iCost>
+				</FatherPointCost>
+			</FatherPointCosts>
+			<Trait/>
+			<FreeCivic>21</FreeCivic>
+			<Quote>TXT_KEY_FUTURE_QUOTE</Quote>
+			<Sound>AS2D_FUTURE</Sound>
+			<SoundMP>AS2D_MP_FUTURE</SoundMP>
+			<Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,8,6</Button>
+		</FatherInfo>
 	</FatherInfos>
 </Civ4FatherInfos>

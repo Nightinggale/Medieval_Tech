@@ -185,6 +185,10 @@ void getUnitAIString(CvWString& szString, UnitAITypes eUnitAI);
 bool shouldMoveBefore(const CvUnit* pUnitA, const CvUnit* pUnitB);
 bool shouldUnitMove(const CvUnit* pUnit);
 
+/// post load function - start - Nightinggale
+void postLoadGameFixes(int iFixCount);
+/// post load function - end - Nightinggale
+
 class CvShouldMoveBefore
 {
 public:

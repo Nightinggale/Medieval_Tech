@@ -132,23 +132,23 @@
 			<Help>TXT_KEY_PLAYER_OPTION_MODDER_3_HELP</Help>
 			<bDefault>0</bDefault>
 		</PlayerOptionInfo>
-    <PlayerOptionInfo>
-      <Type>PLAYEROPTION_MODDER_4</Type>
-      <Description>TXT_KEY_PLAYER_OPTION_MODDER_4</Description>
-      <Help>TXT_KEY_PLAYER_OPTION_MODDER_4_HELP</Help>
-      <bDefault>0</bDefault>
-    </PlayerOptionInfo>
-    <PlayerOptionInfo>
-      <Type>PLAYEROPTION_MODDER_5</Type>
-      <Description>TXT_KEY_PLAYER_OPTION_MODDER_5</Description>
-      <Help>TXT_KEY_PLAYER_OPTION_MODDER_5_HELP</Help>
-      <bDefault>1</bDefault>
-    </PlayerOptionInfo>
-    <PlayerOptionInfo>
-      <Type>PLAYEROPTION_MODDER_6</Type>
-      <Description>TXT_KEY_PLAYER_OPTION_MODDER_6</Description>
-      <Help>TXT_KEY_PLAYER_OPTION_MODDER_6_HELP</Help>
-      <bDefault>1</bDefault>
-    </PlayerOptionInfo>
+		<PlayerOptionInfo>
+			<Type>PLAYEROPTION_MODDER_4</Type>
+			<Description>TXT_KEY_PLAYER_OPTION_MODDER_4</Description>
+			<Help>TXT_KEY_PLAYER_OPTION_MODDER_4_HELP</Help>
+			<bDefault>0</bDefault>
+		</PlayerOptionInfo>
+		<PlayerOptionInfo>
+			<Type>PLAYEROPTION_MODDER_5</Type>
+			<Description>TXT_KEY_PLAYER_OPTION_MODDER_5</Description>
+			<Help>TXT_KEY_PLAYER_OPTION_MODDER_5_HELP</Help>
+			<bDefault>1</bDefault>
+		</PlayerOptionInfo>
+		<PlayerOptionInfo>
+			<Type>PLAYEROPTION_MODDER_6</Type>
+			<Description>TXT_KEY_PLAYER_OPTION_MODDER_6</Description>
+			<Help>TXT_KEY_PLAYER_OPTION_MODDER_6_HELP</Help>
+			<bDefault>1</bDefault>
+		</PlayerOptionInfo>
 	</PlayerOptionInfos>
 </Civ4PlayerOptionInfos>

@@ -32,7 +32,7 @@
 			<iSoundtrackSpace>75</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>1</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
-        <EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_06</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_06</EraInfoSoundtrack>
 				<EraInfoSoundtrack>AS2D_MEDIEVAL_1</EraInfoSoundtrack>
 				<EraInfoSoundtrack>AS2D_MEDIEVAL_2</EraInfoSoundtrack>
 				<EraInfoSoundtrack>AS2D_MEDIEVAL_3</EraInfoSoundtrack>
@@ -46,10 +46,10 @@
 				<EraInfoSoundtrack>AS2D_MEDIEVAL_17</EraInfoSoundtrack>
 				<EraInfoSoundtrack>AS2D_MEDIEVAL_18</EraInfoSoundtrack>
 				<EraInfoSoundtrack>AS2D_MEDIEVAL_19</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_03</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_04</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_05</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_23</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_03</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_04</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_05</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_23</EraInfoSoundtrack>
 			</EraInfoSoundtracks>
 			<CitySoundscapes>
 				<CitySoundscape>
@@ -96,28 +96,28 @@
 			<iSoundtrackSpace>75</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>1</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
-        <EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_27</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_20</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_5</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_6</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_7</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_8</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_9</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_10</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_11</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_13</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_15</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_17</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_18</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_19</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_25</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_26</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_29</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_20</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_10</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_11</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_12</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_13</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_27</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_20</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_5</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_6</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_7</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_8</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_9</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_10</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_11</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_13</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_15</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_17</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_18</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_19</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_25</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_26</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_29</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_20</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_10</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_11</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_12</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_13</EraInfoSoundtrack>
 			</EraInfoSoundtracks>
 			<CitySoundscapes>
 				<CitySoundscape>
@@ -164,25 +164,25 @@
 			<iSoundtrackSpace>75</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>1</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_21</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_07</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_08</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_09</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_22</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_25</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_9</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_10</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_11</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_14</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_16</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_17</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_18</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_19</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_23</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_25</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_27</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_28</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_33</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_21</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_07</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_08</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_09</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_22</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_25</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_9</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_10</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_11</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_14</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_16</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_17</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_18</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_19</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_23</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_25</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_27</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_28</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_33</EraInfoSoundtrack>
 			</EraInfoSoundtracks>
 			<CitySoundscapes>
 				<CitySoundscape>
@@ -229,31 +229,31 @@
 			<iSoundtrackSpace>75</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>1</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_22</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_21</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_14</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_15</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_16</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_17</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_18</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_19</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_24</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_OPENING_MENU</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_24</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_9</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_10</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_11</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_12</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_13</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_14</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_15</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_16</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_17</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_18</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_19</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_30</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_31</EraInfoSoundtrack>
-        <EraInfoSoundtrack>AS2D_MEDIEVAL_32</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_22</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_21</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_14</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_15</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_16</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_17</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_18</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_19</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_TSK_MEDIEVAL_24</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_OPENING_MENU</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_24</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_9</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_10</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_11</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_12</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_13</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_14</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_15</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_16</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_17</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_18</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_19</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_30</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_31</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEDIEVAL_32</EraInfoSoundtrack>
 			</EraInfoSoundtracks>
 			<CitySoundscapes>
 				<CitySoundscape>

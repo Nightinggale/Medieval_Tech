@@ -2,6 +2,7 @@
 
 #include "CvGameCoreDLL.h"
 #include "CvPlayerAI.h"
+#include "CvUnitAI.h"
 #include "CvRandom.h"
 #include "CvGlobals.h"
 #include "CvGameCoreUtils.h"
@@ -25,6 +26,8 @@
 #include "CvDLLFAStarIFaceBase.h"
 #include "FAStarNode.h"
 #include "CvTradeRoute.h"
+
+#include "CvInfoProfessions.h"
 
 #define DANGER_RANGE				(4)
 #define GREATER_FOUND_RANGE			(5)
@@ -7193,14 +7196,14 @@ bool CvPlayerAI::AI_doDiploKissPinky(PlayerTypes ePlayer)
 	{
 		return false;
 	}
-	if (!kPlayer.isFeatAccomplished(FEAT_CITY_NO_FOOD))
+	if ((GC.getLeaderHeadInfo(kPlayer.getLeaderType()).getVictoryType() == 1 || GC.getLeaderHeadInfo(kPlayer.getLeaderType()).getVictoryType() == 3) && !kPlayer.isFeatAccomplished(FEAT_CITY_NO_FOOD))
 	{
 	    return false;
 	}
 
 
 	//if (AI_getMemoryCount(ePlayer, MEMORY_REFUSED_TAX)) ATTITUDE_ANNOYED
-	if (kPlayer.isHuman() && GC.getLeaderHeadInfo(kPlayer.getLeaderType()).getVictoryType() == 1)
+	if (kPlayer.isHuman() && (GC.getLeaderHeadInfo(kPlayer.getLeaderType()).getVictoryType() == 1 || GC.getLeaderHeadInfo(kPlayer.getLeaderType()).getVictoryType() == 3))
     {
 
         if (AI_getAttitude(ePlayer, false) <= ATTITUDE_ANNOYED)
@@ -9426,7 +9429,7 @@ void CvPlayerAI::AI_createNativeCities()
 			}
 			else if (pLoopPlot->getOwnerINLINE() == getID())
 			{
-				pLoopPlot->setOwner(NO_PLAYER, false);
+				pLoopPlot->setOwner(NO_PLAYER, false, true);
 			}
 		}
 
@@ -11103,6 +11106,20 @@ void CvPlayerAI::read(FDataStreamBase* pStream)
 	pStream->Read(NUM_STRATEGY_TYPES, m_aiStrategyStartedTurn);
 	pStream->Read(NUM_STRATEGY_TYPES, m_aiStrategyData);
 
+	/// post load function - start - Nightinggale
+	uint iFixCount = 0;
+	if (uiFlag >= 4)
+	{
+		pStream->Read(&iFixCount);
+	}
+
+	if (m_eID == (MAX_PLAYERS - 1))
+	{
+		// Done loading the last player
+		// Execute the post load code
+		postLoadGameFixes(iFixCount);
+	}
+	/// post load function - end - Nightinggale
 }
 
 
@@ -11114,7 +11131,11 @@ void CvPlayerAI::write(FDataStreamBase* pStream)
 {
 	CvPlayer::write(pStream);	// write base class data first
 
-	uint uiFlag=2;
+	/// post load function - start - Nightinggale
+	uint iFixCount = 2;
+	/// post load function - end - Nightinggale
+
+	uint uiFlag=4;
 	pStream->Write(uiFlag);		// flag for expansion
 
 	pStream->Write(m_distanceMap.size());
@@ -11199,6 +11220,10 @@ void CvPlayerAI::write(FDataStreamBase* pStream)
 	pStream->Write(NUM_EMOTION_TYPES, m_aiEmotions);
 	pStream->Write(NUM_STRATEGY_TYPES, m_aiStrategyStartedTurn);
 	pStream->Write(NUM_STRATEGY_TYPES, m_aiStrategyData);
+
+	/// post load function - start - Nightinggale
+	pStream->Write(iFixCount);
+	/// post load function - end - Nightinggale
 }
 
 
@@ -12823,7 +12848,7 @@ int CvPlayerAI::AI_countNumAreaHostileUnits(CvArea* pArea, bool bPlayer, bool bT
 			((bPlayer && pLoopPlot->getOwnerINLINE() == getID()) || (bTeam && pLoopPlot->getTeam() == getTeam())
 				|| (bNeutral && !pLoopPlot->isOwned()) || (bHostile && pLoopPlot->isOwned() && GET_TEAM(getTeam()).isAtWar(pLoopPlot->getTeam()))))
 			{
-			iCount += pLoopPlot->plotCount(PUF_isEnemy, getID(), false, NO_PLAYER, NO_TEAM, PUF_isVisible, getID());
+			iCount += pLoopPlot->plotCount(PUF_isEnemy, getID(), 0, NO_PLAYER, NO_TEAM, PUF_isVisible, getID());
 		}
 	}
 	return iCount;
@@ -13523,7 +13548,10 @@ void CvPlayerAI::AI_doAdvancedStart(bool bNoExit)
 
 							if (plotDistance(pPlot->getX_INLINE(), pPlot->getY_INLINE(), pStartingPlot->getX_INLINE(), pStartingPlot->getY_INLINE()) <= GC.getXMLval(XML_ADVANCED_START_SIGHT_RANGE))
 							{
-								pPlot->setRevealed(getTeam(), true, false, NO_TEAM);
+								/// PlotGroup - start - Nightinggale
+								//pPlot->setRevealed(getTeam(), true, false, NO_TEAM);
+								pPlot->setRevealed(getTeam(), true, false, NO_TEAM, false);
+								/// PlotGroup - end - Nightinggale
 							}
 						}
 					}

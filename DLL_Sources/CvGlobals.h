@@ -755,12 +755,14 @@ public:
 
 	// cache XML - start - Nightinggale
 public:
-	int getXMLval(XMLconstantTypes eVal);
-	int getXMLvalConst(XMLconstantTypes eVal) const;
+	int getXMLval(XMLconstantTypes eVal) const;
 	int getXMLuncached(XMLconstantTypes eVal) const;
 	void cacheXMLval();
 protected:
 	int m_aiDefineCache[NUM_XML_CONSTANTS];
+#ifdef XML_CACHE_COUNT
+	unsigned int m_aiDefineCacheCount[NUM_XML_CONSTANTS];
+#endif
 	// cache XML - end - Nightinggale
 
 protected:
@@ -1045,6 +1047,13 @@ protected:
 	float m_aiEducationCost[NUM_TEACH_LEVELS];
 	// EDU remake - start - Nightinggale
 	
+	/// PlotGroup - start - Nightinggale
+public:
+	DllExport FAStar& getPlotGroupFinder();
+protected:
+	FAStar* m_plotGroupFinder;
+	/// PlotGroup - end - Nightinggale
+
 	// DLL interface
 	CvDLLUtilityIFaceBase* m_pDLL;
 };
@@ -1144,37 +1153,23 @@ bool writeInfoArray(FDataStreamBase* pStream,  std::vector<T*>& array)
 	return true;
 }
 
-// cache XML - start - Nightinggale
-inline int CvGlobals::getXMLval(XMLconstantTypes eVal)
+/// PlotGroup - start - Nightinggale
+inline FAStar& CvGlobals::getPlotGroupFinder()
 {
-	FAssert(eVal >= 0 && eVal < NUM_XML_CONSTANTS);
-
-	int iVal = this->m_aiDefineCache[eVal];
-	if (iVal == XML_INIT_VALUE)
-	{
-		// cache is unset
-		iVal = this->getXMLuncached(eVal);
-		this->m_aiDefineCache[eVal] = iVal;
-	}
-	return iVal;
+	return *m_plotGroupFinder;
 }
+/// PlotGroup - end - Nightinggale
 
-// the const function is faster and can be called from const functions.
-// however unlike the non-const function it will NOT cache uncached values meaning it can cause a serious performance penalty.
-// use only this function in const functions as failure to cache seriously hurts performance.
-// The difference between the functions are only performance related. They should always return the same value.
-inline int CvGlobals::getXMLvalConst(XMLconstantTypes eVal) const
+// cache XML - start - Nightinggale
+inline int CvGlobals::getXMLval(XMLconstantTypes eVal) const
 {
 	FAssert(eVal >= 0 && eVal < NUM_XML_CONSTANTS);
 
-	int iVal = this->m_aiDefineCache[eVal];
-	if (iVal == XML_INIT_VALUE)
-	{
-		// cache is unset
-		FAssertMsg(false, "const reading unset XML val");
-		return this->getXMLuncached(eVal);
-	}
-	return iVal;
+#ifdef XML_CACHE_COUNT
+		this->m_aiDefineCacheCount[eVal]++;
+		FAssert(m_aiDefineCacheCount[eVal] < (MAX_UNSIGNED_INT - 1));																																													
+#endif
+	return m_aiDefineCache[eVal];
 }
 // cache XML - end - Nightinggale
 

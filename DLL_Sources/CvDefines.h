@@ -36,6 +36,23 @@
 #define MAX_PLAYERS												(CvGlobals::getInstance().getMaxCivPlayers())
 #endif
 
+// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
+// set amount of memory allocated to store yield cost for professions (each yield)
+// unsigned char: 0 to 255
+// unsigned short: 0-65535 (that should certainly be enough!)
+typedef unsigned char ProfessionYieldCost;
+// cache CvPlayer::getYieldEquipmentAmount - end - Nightinggale
+
+/// player bitmap - start - Nightinggale
+// allocate 32 or 64 bools for players
+// MAX_PLAYERS could be moved to the top of the file and made mod specific
+#if MAX_PLAYERS > 32
+typedef unsigned __int64 PlayerBitmap;
+#else
+typedef unsigned int PlayerBitmap;
+#endif
+/// player bitmap - end - Nightinggale
+
 #define MAX_TEAMS													(MAX_PLAYERS)
 
 // Char Count limit for edit boxes

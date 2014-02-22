@@ -94,21 +94,21 @@
 	<ElementType name="iAsset" content="textOnly" dt:type="int"/>
 	<ElementType name="Icon" content="textOnly"/>
 	<ElementType name="HighlightIcon" content="textOnly"/>
-  <ElementType name="bIsArmor" content="textOnly" dt:type="boolean"/>
-  <ElementType name="bIsMilitary" content="textOnly" dt:type="boolean"/>
-  <ElementType name="bIsNativeTrade" content="textOnly" dt:type="boolean"/>
-  <ElementType name="bIsMustBeDiscovered" content="textOnly" dt:type="boolean"/>
-  <ElementType name="iLatitude" content="textOnly" dt:type="int"/>
-  <ElementType name="iLatitudeModifiers" content="textOnly" dt:type="int"/>
-  <ElementType name="iPricePercent" content="textOnly" dt:type="int"/>
-  <ElementType name="TradeScreen" content="textOnly"/>
-  <ElementType name="TradeScreenType" content="eltOnly">
-    <element type="TradeScreen"/>
-    <element type="iPricePercent"/>
-  </ElementType>
-  <ElementType name="TradeScreenTypes" content="eltOnly">
-    <element type="TradeScreenType" minOccurs="0" maxOccurs="*"/>
-  </ElementType>
+	<ElementType name="bIsArmor" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bIsMilitary" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bIsNativeTrade" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bIsMustBeDiscovered" content="textOnly" dt:type="boolean"/>
+	<ElementType name="iLatitude" content="textOnly" dt:type="int"/>
+	<ElementType name="iLatitudeModifiers" content="textOnly" dt:type="int"/>
+	<ElementType name="iPricePercent" content="textOnly" dt:type="int"/>
+	<ElementType name="TradeScreen" content="textOnly"/>
+	<ElementType name="TradeScreenType" content="eltOnly">
+		<element type="TradeScreen"/>
+		<element type="iPricePercent"/>
+	</ElementType>
+	<ElementType name="TradeScreenTypes" content="eltOnly">
+		<element type="TradeScreenType" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
 	<ElementType name="YieldInfo" content="eltOnly">
 		<element type="Type"/>
 		<element type="Description"/>
@@ -140,13 +140,13 @@
 		<element type="Icon"/>
 		<element type="HighlightIcon"/>
 		<element type="Button"/>
-    <element type="bIsArmor" minOccurs="0"/>
-    <element type="bIsMilitary" minOccurs="0"/>
-    <element type="bIsNativeTrade" minOccurs="0"/>
-    <element type="bIsMustBeDiscovered" minOccurs="0"/>
-    <element type="iLatitude" minOccurs="0"/>
-    <element type="iLatitudeModifiers" minOccurs="0"/>
-    <element type="TradeScreenTypes" minOccurs="0"/>
+		<element type="bIsArmor" minOccurs="0"/>
+		<element type="bIsMilitary" minOccurs="0"/>
+		<element type="bIsNativeTrade" minOccurs="0"/>
+		<element type="bIsMustBeDiscovered" minOccurs="0"/>
+		<element type="iLatitude" minOccurs="0"/>
+		<element type="iLatitudeModifiers" minOccurs="0"/>
+		<element type="TradeScreenTypes" minOccurs="0"/>
 	</ElementType>
 	<ElementType name="YieldInfos" content="eltOnly">
 		<element type="YieldInfo" maxOccurs="*"/>
@@ -160,9 +160,9 @@
 		<element type="YieldIntegerPair" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
   <!--TKs Med-->
-  <ElementType name="YieldPercentIncreases" content="eltOnly">
-    <element type="YieldIntegerPair" minOccurs="0" maxOccurs="*"/>
-  </ElementType>
+	<ElementType name="YieldPercentIncreases" content="eltOnly">
+		<element type="YieldIntegerPair" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
 	<ElementType name="iAppearance" content="textOnly" dt:type="int"/>
 	<ElementType name="iDisappearance" content="textOnly" dt:type="int"/>
 	<ElementType name="iGrowth" content="textOnly" dt:type="int"/>
@@ -379,15 +379,15 @@
 	<ElementType name="iFeatureGrowth" content="textOnly" dt:type="int"/>
 	<ElementType name="iDefenseModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iPillageGold" content="textOnly" dt:type="int"/>
-  <ElementType name="iPatrolLevel" content="textOnly" dt:type="int"/>
+	<ElementType name="iPatrolLevel" content="textOnly" dt:type="int"/>
 	<ElementType name="bOutsideBorders" content="textOnly" dt:type="boolean"/>
 	<ElementType name="iAdvancedStartCost" content="textOnly" dt:type="int"/>
 	<ElementType name="iAdvancedStartRemoveCost" content="textOnly" dt:type="int"/>
 	<ElementType name="iAdvancedStartCostIncrease" content="textOnly" dt:type="int"/>
 	<ElementType name="iTilesPerGoody" content="textOnly" dt:type="int"/>
 	<ElementType name="iUpgradeTime" content="textOnly" dt:type="int"/>
-  <ElementType name="iVisibilityChange" content="textOnly" dt:type="int"/>
-  <ElementType name="bMakesValid" content="textOnly" dt:type="boolean"/>
+	<ElementType name="iVisibilityChange" content="textOnly" dt:type="int"/>
+	<ElementType name="bMakesValid" content="textOnly" dt:type="boolean"/>
 	<ElementType name="TerrainMakesValid" content="eltOnly">
 		<element type="TerrainType"/>
 		<element type="bMakesValid"/>
@@ -395,15 +395,15 @@
 	<ElementType name="TerrainMakesValids" content="eltOnly">
 		<element type="TerrainMakesValid" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-  <ElementType name="RequiredCityYield" content="eltOnly">
-    <element type="YieldType"/>
-    <element type="iValue"/>
-  </ElementType>
-  <ElementType name="RequiredCityYields" content="eltOnly">
-    <element type="RequiredCityYield" minOccurs="0" maxOccurs="*"/>
-  </ElementType>
-  <ElementType name="bRequiresCityYields" content="textOnly" dt:type="boolean"/>
-  <ElementType name="CreatesBonus" content="textOnly"/>
+	<ElementType name="RequiredCityYield" content="eltOnly">
+		<element type="YieldType"/>
+		<element type="iValue"/>
+	</ElementType>
+	<ElementType name="RequiredCityYields" content="eltOnly">
+		<element type="RequiredCityYield" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="bRequiresCityYields" content="textOnly" dt:type="boolean"/>
+	<ElementType name="CreatesBonus" content="textOnly"/>
 	<ElementType name="FeatureMakesValid" content="eltOnly">
 		<element type="FeatureType"/>
 		<element type="bMakesValid"/>
@@ -420,7 +420,7 @@
 		<element type="PrereqNatureYields"/>
 		<element type="YieldIncreases"/>
     <!--TKs Med-->
-    <element type="YieldPercentIncreases" minOccurs="0"/>
+		<element type="YieldPercentIncreases" minOccurs="0"/>
 		<element type="RiverSideYieldChanges"/>
 		<element type="HillsYieldChanges"/>
 		<element type="bActsAsCity"/>
@@ -441,18 +441,18 @@
 		<element type="iUpgradeTime"/>
 		<element type="iDefenseModifier"/>
 		<element type="iPillageGold"/>
-    <element type="iPatrolLevel" minOccurs="0"/>
-    <element type="bOutsideBorders"/>
+		<element type="iPatrolLevel" minOccurs="0"/>
+		<element type="bOutsideBorders"/>
 		<element type="TerrainMakesValids"/>
 		<element type="FeatureMakesValids"/>
 		<element type="BonusTypeStructs" maxOccurs="*"/>
 		<element type="ImprovementPillage"/>
 		<element type="ImprovementUpgrade"/>
 		<element type="RouteYieldChanges"/>
-    <element type="bRequiresCityYields" minOccurs="0"/>
-    <element type="RequiredCityYields" minOccurs="0"/>
-    <element type="CreatesBonus" minOccurs="0"/>
-    <element type="iVisibilityChange" minOccurs="0"/>
+		<element type="bRequiresCityYields" minOccurs="0"/>
+		<element type="RequiredCityYields" minOccurs="0"/>
+		<element type="CreatesBonus" minOccurs="0"/>
+		<element type="iVisibilityChange" minOccurs="0"/>
 		<element type="WorldSoundscapeAudioScript" minOccurs="0"/>
 		<element type="bGraphicalOnly"/>
 	</ElementType>

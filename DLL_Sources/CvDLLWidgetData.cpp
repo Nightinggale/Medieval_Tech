@@ -19,6 +19,8 @@
 #include "CvPopupInfo.h"
 #include "FProfiler.h"
 
+#include "CvInfoProfessions.h"
+
 CvDLLWidgetData* CvDLLWidgetData::m_pInst = NULL;
 
 CvDLLWidgetData& CvDLLWidgetData::getInstance()
@@ -171,10 +173,29 @@ void CvDLLWidgetData::parseHelp(CvWStringBuffer &szBuffer, CvWidgetDataStruct &w
 	case WIDGET_DOCK:
 		parseEuropeUnitHelp(widgetDataStruct, szBuffer);
 		break;
-
+///Tks Med TradeRoute
 	case WIDGET_SAIL:
 		szBuffer.append(gDLL->getText("TXT_KEY_SAIL"));
 		break;
+
+	case WIDGET_TRADE_SCREEN_ROUTE:
+		{			
+			szBuffer.append(GC.getEuropeInfo((EuropeTypes) widgetDataStruct.m_iData2).getDescription());
+			szBuffer.append(GC.getEuropeInfo((EuropeTypes) widgetDataStruct.m_iData2).getStrategy());
+		}
+		break;
+	case WIDGET_AUTO_TRADE_SCREEN:
+		{			
+			szBuffer.append(GC.getEuropeInfo((EuropeTypes) widgetDataStruct.m_iData1).getDescription());
+			szBuffer.append(GC.getEuropeInfo((EuropeTypes) widgetDataStruct.m_iData1).getStrategy());
+		}
+		break;
+	case WIDGET_POP_UP_SCREEN:
+		{			
+			//szBuffer.append(GC.getEuropeInfo((EuropeTypes) widgetDataStruct.m_iData1).getDescription());
+		}
+		break;
+///TKe
 
 	case WIDGET_GOTO_CITY:
 		{
@@ -647,7 +668,7 @@ bool CvDLLWidgetData::executeAction( CvWidgetDataStruct &widgetDataStruct )
 		doTaxAdvisor(widgetDataStruct);
 		break;
     //Tke
-    ///TKs Invention Core Mod v 1.0
+    ///TKs Med  v 1.0
 	case WIDGET_INVENTORS_HOUSE:
 		doInventorsHouse(widgetDataStruct);
 		break;
@@ -656,6 +677,40 @@ bool CvDLLWidgetData::executeAction( CvWidgetDataStruct &widgetDataStruct )
 		break;
     case WIDGET_MARKET:
 		doMarket(widgetDataStruct);
+		break;
+		///TradeRoutes
+	case WIDGET_TRADE_SCREEN_ROUTE:
+		{
+			CvUnit* pHeadSelectedUnit = gDLL->getInterfaceIFace()->getHeadSelectedUnit();
+			if (pHeadSelectedUnit != NULL)
+			{
+				//gDLL->sendDoCommand(pHeadSelectedUnit->getID(), COMMAND_SAIL_SPICE_ROUTE, widgetDataStruct.m_iData1, widgetDataStruct.m_iData2, false);
+				pHeadSelectedUnit->crossOcean((UnitTravelStates) widgetDataStruct.m_iData1, false, (EuropeTypes) widgetDataStruct.m_iData2);
+			}
+		}
+		break;
+	case WIDGET_AUTO_TRADE_SCREEN:
+		{
+			CvUnit* pHeadSelectedUnit = gDLL->getInterfaceIFace()->getHeadSelectedUnit();
+			if (pHeadSelectedUnit != NULL)
+			{
+				pHeadSelectedUnit->setUnitTradeMarket((EuropeTypes) widgetDataStruct.m_iData1);
+				//pHeadSelectedUnit->automate(AUTOMATE_SAIL);
+				pHeadSelectedUnit->getGroup()->setAutomateType(AUTOMATE_SAIL);
+			}
+		}
+		break;
+	case WIDGET_POP_UP_SCREEN:
+		{
+				const CvPopupQueue& kPopups = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getPopups();
+				FAssert((EuropeTypes) widgetDataStruct.m_iData1 != NO_EUROPE);
+				FAssert((EuropeTypes) widgetDataStruct.m_iData1 < GC.getNumEuropeInfos());
+				CvWString szTradeRoute = GC.getEuropeInfo((EuropeTypes) widgetDataStruct.m_iData1).getPythonTradeScreen();
+				CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_PYTHON_SCREEN);
+				pInfo->setText(szTradeRoute);
+				gDLL->getInterfaceIFace()->addPopup(pInfo, GC.getGameINLINE().getActivePlayer(), widgetDataStruct.m_iData2);
+		
+		}
 		break;
 	///TKe
 	case WIDGET_ASSIGN_TRADE_ROUTE:
@@ -1418,7 +1473,7 @@ void CvDLLWidgetData::parseCityNameHelp(CvWidgetDataStruct &widgetDataStruct, Cv
                             {
                                 for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
                                 {	CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes) iCivic);
-                                    if (kCivicInfo.getCivicOptionType() == (CivicOptionTypes)GC.getXMLval(XML_CIVICOPTION_INVENTIONS))
+                                    if (kCivicInfo.getCivicOptionType() == CIVICOPTION_INVENTIONS)
                                     {
                                         //if (eBuilding != NO_BUILDING)
                                        // {
@@ -1797,7 +1852,7 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
                                             {
                                                 for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
                                                 {	CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes) iCivic);
-                                                    if (kCivicInfo.getCivicOptionType() == (CivicOptionTypes)GC.getXMLval(XML_CIVICOPTION_INVENTIONS))
+                                                    if (kCivicInfo.getCivicOptionType() == CIVICOPTION_INVENTIONS)
                                                     {
                                                         if (kCivicInfo.getAllowsBuildingTypes(GC.getBuildingInfo(eBuilding).getBuildingClassType()) > 0)
                                                         {
@@ -3186,13 +3241,6 @@ void CvDLLWidgetData::parseCityYieldHelp(CvWidgetDataStruct &widgetDataStruct, C
 				szBuffer.append(NEWLINE);
 				szBuffer.append(gDLL->getText("TXT_KEY_YIELD_NEEDED_FOR_PROFESSION", iNumRequired, GC.getProfessionInfo(eProfession).getTextKeyWide()));
 			}
-			///TKs Med
-			iNumRequired = GET_PLAYER(eActivePlayer).getAltYieldEquipmentAmount(eProfession, eYield);
-			if (iNumRequired > 0)
-			{
-				szBuffer.append(NEWLINE);
-				szBuffer.append(gDLL->getText("TXT_KEY_YIELD_ALTERNATE_FOR_PROFESSION", iNumRequired, GC.getProfessionInfo(eProfession).getTextKeyWide()));
-			}
 		}
 	}
 	if (NULL == pCity)
@@ -3256,19 +3304,23 @@ void CvDLLWidgetData::parseImprovementHelp(CvWidgetDataStruct &widgetDataStruct,
 void CvDLLWidgetData::parseCivicHelp(CvWidgetDataStruct &widgetDataStruct, CvWStringBuffer &szBuffer)
 {   bool bShowYields = false;
     bool bSkipName = false;
-   if (widgetDataStruct.m_iData2 == 1)
-   {
-       bShowYields = true;
-   }
-   if (widgetDataStruct.m_iData2 == 2)
-   {
-       bShowYields = true;
-       bSkipName = true;
-   }
+	bool bNoPlayer = GC.getGameINLINE().getActivePlayer() == NO_PLAYER;
+	if (!bNoPlayer)
+	{
+	   if (widgetDataStruct.m_iData2 == 1)
+	   {
+		   bShowYields = true;
+	   }
+	   if (widgetDataStruct.m_iData2 == 2)
+	   {
+		   bShowYields = true;
+		   bSkipName = true;
+	   }
+	}
 //	{
 //	if (widgetDataStruct.m_iData2 != 0)
 //	{
-		GAMETEXT.parseCivicInfo(szBuffer, (CivicTypes)widgetDataStruct.m_iData1, false, bShowYields, bSkipName, false);
+		GAMETEXT.parseCivicInfo(szBuffer, (CivicTypes)widgetDataStruct.m_iData1, bNoPlayer, bShowYields, bSkipName, false);
 	//}
 }
 ///TKe
@@ -4048,12 +4100,12 @@ void CvDLLWidgetData::doInventorsHouse(const CvWidgetDataStruct& widgetDataStruc
 	{
 	    //pHeadSelectedCity->setYieldRateDirty();
 	    //gDLL->getInterfaceIFace()->setDirty(CityScreen_DIRTY_BIT, true);
-		CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CHOOSE_INVENTION, (CivicOptionTypes)GC.getXMLval(XML_CIVICOPTION_INVENTIONS),  pHeadSelectedCity->getID());
+		CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CHOOSE_INVENTION, CIVICOPTION_INVENTIONS,  pHeadSelectedCity->getID());
 		gDLL->getInterfaceIFace()->addPopup(pInfo, NO_PLAYER, true);
 	}
 	else
 	{
-	    CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CHOOSE_INVENTION, (CivicOptionTypes)GC.getXMLval(XML_CIVICOPTION_INVENTIONS), 1);
+	    CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CHOOSE_INVENTION, CIVICOPTION_INVENTIONS, 1);
 		gDLL->getInterfaceIFace()->addPopup(pInfo, NO_PLAYER, true);
 	}
 

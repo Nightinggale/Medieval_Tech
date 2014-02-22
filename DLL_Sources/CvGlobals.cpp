@@ -2285,15 +2285,6 @@ FVariableSystem* CvGlobals::getDefinesVarSystem()
 
 void CvGlobals::cacheGlobals()
 {
-	// cache XML - start - Nightinggale
-	// init all variables into a value we hope not to use for real
-	// this way we can later assert if a variable is unset
-	for (int i=0; i <NUM_XML_CONSTANTS; i++)
-	{
-		this->m_aiDefineCache[i] = -31337;
-	}
-	// cache XML - end - Nightinggale
-
 	m_iMOVE_DENOMINATOR = getDefineINT("MOVE_DENOMINATOR");
 	m_iFOOD_CONSUMPTION_PER_POPULATION = getDefineINT("FOOD_CONSUMPTION_PER_POPULATION");
 	m_iMAX_HIT_POINTS = getDefineINT("MAX_HIT_POINTS");
@@ -2355,13 +2346,6 @@ void CvGlobals::cacheGlobals()
 	m_iUSE_ON_UPDATE_CALLBACK = getDefineINT("USE_ON_UPDATE_CALLBACK");
 	m_iUSE_ON_UNIT_CREATED_CALLBACK = getDefineINT("USE_ON_UNIT_CREATED_CALLBACK");
 	m_iUSE_ON_UNIT_LOST_CALLBACK = getDefineINT("USE_ON_UNIT_LOST_CALLBACK");
-
-	// cache XML - start - Nightinggale
-	for (int i = 0; i < NUM_XML_CONSTANTS; i++)
-	{
-		this->m_aiDefineCache[i] = XML_INIT_VALUE;
-	}
-	// cache XML - end - Nightinggale
 }
 
 // cache XML - start - Nightinggale
@@ -2387,7 +2371,7 @@ int CvGlobals::getXMLuncached(XMLconstantTypes eVal) const
 			return this->getDefineINT("UNITWEAPON_BLUNT");
 			break;
 		case XML_EUROPE_EAST:
-			return this->getDefineINT("EUROPE_EAST");
+			return this->getDefineINT("TRADE_SCREEN_MOTHERLAND");
 			break;
 		case XML_AI_ADVANCED_TECH_START:
 			return this->getDefineINT("AI_ADVANCED_TECH_START");
@@ -2485,9 +2469,6 @@ int CvGlobals::getXMLuncached(XMLconstantTypes eVal) const
 		case XML_CITY_PILGRAM_RANDOM:
 			return this->getDefineINT("CITY_PILGRAM_RANDOM");
 			break;
-		case XML_CIVICOPTION_INVENTIONS:
-			return this->getDefineINT("CIVICOPTION_INVENTIONS");
-			break;
 		case XML_COLONIAL_FORCED_PEACE_TURNS:
 			return this->getDefineINT("COLONIAL_FORCED_PEACE_TURNS");
 			break;
@@ -2583,9 +2564,6 @@ int CvGlobals::getXMLuncached(XMLconstantTypes eVal) const
 			break;
 		case XML_DEFAULT_VIKING_ERA:
 			return this->getDefineINT("DEFAULT_VIKING_ERA");
-			break;
-		case XML_DEFAULT_YIELD_ARMOR_TYPE:
-			return this->getDefineINT("DEFAULT_YIELD_ARMOR_TYPE");
 			break;
 		case XML_DIPLAY_NEW_VIDEOS:
 			return this->getDefineINT("DIPLAY_NEW_VIDEOS");
@@ -3316,15 +3294,15 @@ void CvGlobals::cacheXMLval()
 	}
 	// discoverable yield detection - end - Nightinggale
 
-	// cache as many XML values as possible. However if a value is 0, then we can't tell if it is 0 or not read yet.
 	for (int i = 0; i < NUM_XML_CONSTANTS; i++)
 	{
-		int iVal = this->getXMLuncached((XMLconstantTypes)i);
-		if (iVal != 0)
-		{
-			this->m_aiDefineCache[i] = iVal;
-		}
+		this->m_aiDefineCache[i] = this->getXMLuncached((XMLconstantTypes)i);
+#ifdef XML_CACHE_COUNT
+		this->m_aiDefineCacheCount[i] = 0;
+#endif
 	}
+
+	FAssertMsg(getInfoTypeForString("CIVICOPTION_INVENTIONS") == CIVICOPTION_INVENTIONS, CvString::format("Must have index %d", CIVICOPTION_INVENTIONS).c_str());
 }
 // cache XML - end - Nightinggale
 

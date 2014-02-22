@@ -279,6 +279,10 @@ protected:
 
 	void calculateAreas();
 
+	/// PlotGroup - start - Nightinggale
+public:
+	void combinePlotGroups(PlayerTypes ePlayer, CvPlotGroup* pPlotGroup1, CvPlotGroup* pPlotGroup2);
+	/// PlotGroup - end - Nightinggale
 };
 
 

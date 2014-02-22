@@ -6,51 +6,51 @@
 <!-- Improvement art path information -->
 <Civ4ArtDefines xmlns="x-schema:CIV4ArtDefinesSchema.xml">
 	<ImprovementArtInfos>
-    <ImprovementArtInfo>
-      <Type>ART_DEF_IMPROVEMENT_GRAVEYARD</Type>
-      <bExtraAnimations>0</bExtraAnimations>
-      <fScale>15.0</fScale>
-      <fInterfaceScale>1.0</fInterfaceScale>
-      <NIF>Art/Structures/Improvements/graveyard/graveyard.nif</NIF>
-      <KFM/>
-      <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,17</Button>
-    </ImprovementArtInfo>
-    <ImprovementArtInfo>
-      <Type>ART_DEF_IMPROVEMENT_ANCIENT_CITY_RUINS</Type>
-      <bExtraAnimations>0</bExtraAnimations>
-      <fScale>0.5</fScale>
-      <fInterfaceScale>1.0</fInterfaceScale>
-      <NIF>Art/Structures/Improvements/RuinsA/destroyed_city.nif</NIF>
-      <KFM/>
-      <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,17</Button>
-    </ImprovementArtInfo>
-    <ImprovementArtInfo>
-      <Type>ART_DEF_IMPROVEMENT_WATCH_TOWER</Type>
-      <bExtraAnimations>0</bExtraAnimations>
-      <fScale>0.5</fScale>
-      <fInterfaceScale>0.8</fInterfaceScale>
-      <NIF>Art/Structures/Improvements/RomanTower/RomanTower.nif</NIF>
-      <KFM/>
-      <Button>Art/Structures/Improvements/RomanTower/btn_RomanTower.dds</Button>
-    </ImprovementArtInfo>
-    <ImprovementArtInfo>
-      <Type>ART_DEF_IMPROVEMENT_LODGE_TOWER</Type>
-      <bExtraAnimations>0</bExtraAnimations>
-      <fScale>0.7</fScale>
-      <fInterfaceScale>1.0</fInterfaceScale>
-      <NIF>Art/Structures/buildings/stronghold/HumanBarracks.nif</NIF>
-      <KFM/>
-      <Button>Art\Interface\Game Hud\Actions\stronghold_icon.dds</Button>
-    </ImprovementArtInfo>
-    <ImprovementArtInfo>
-      <Type>ART_DEF_IMPROVEMENT_CASTLE</Type>
-      <bExtraAnimations>0</bExtraAnimations>
-      <fScale>0.8</fScale>
-      <fInterfaceScale>1.0</fInterfaceScale>
-      <NIF>Art/Structures/Buildings/castle/castle.nif</NIF>
-      <KFM/>
-      <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,4,7</Button>
-    </ImprovementArtInfo>
+		<ImprovementArtInfo>
+			<Type>ART_DEF_IMPROVEMENT_GRAVEYARD</Type>
+			<bExtraAnimations>0</bExtraAnimations>
+			<fScale>15.0</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Structures/Improvements/graveyard/graveyard.nif</NIF>
+			<KFM/>
+			<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,17</Button>
+		</ImprovementArtInfo>
+		<ImprovementArtInfo>
+			<Type>ART_DEF_IMPROVEMENT_ANCIENT_CITY_RUINS</Type>
+			<bExtraAnimations>0</bExtraAnimations>
+			<fScale>0.5</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Structures/Improvements/RuinsA/destroyed_city.nif</NIF>
+			<KFM/>
+			<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,17</Button>
+		</ImprovementArtInfo>
+		<ImprovementArtInfo>
+			<Type>ART_DEF_IMPROVEMENT_WATCH_TOWER</Type>
+			<bExtraAnimations>0</bExtraAnimations>
+			<fScale>0.5</fScale>
+			<fInterfaceScale>0.8</fInterfaceScale>
+			<NIF>Art/Structures/Improvements/RomanTower/RomanTower.nif</NIF>
+			<KFM/>
+			<Button>Art/Structures/Improvements/RomanTower/btn_RomanTower.dds</Button>
+		</ImprovementArtInfo>
+		<ImprovementArtInfo>
+			<Type>ART_DEF_IMPROVEMENT_LODGE_TOWER</Type>
+			<bExtraAnimations>0</bExtraAnimations>
+			<fScale>0.7</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Structures/buildings/stronghold/HumanBarracks.nif</NIF>
+			<KFM/>
+			<Button>Art\Interface\Game Hud\Actions\stronghold_icon.dds</Button>
+		</ImprovementArtInfo>
+		<ImprovementArtInfo>
+			<Type>ART_DEF_IMPROVEMENT_CASTLE</Type>
+			<bExtraAnimations>0</bExtraAnimations>
+			<fScale>0.8</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/castle/castle.nif</NIF>
+			<KFM/>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,4,7</Button>
+		</ImprovementArtInfo>
 		<ImprovementArtInfo>
 			<Type>ART_DEF_IMPROVEMENT_LAND_WORKED</Type>
 			<bExtraAnimations>0</bExtraAnimations>
@@ -123,32 +123,32 @@
 			<KFM>Art/Structures/Improvements/Mine/Mine.kfm</KFM>
 			<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,5,18</Button>
 		</ImprovementArtInfo>
-    <ImprovementArtInfo>
-      <Type>ART_DEF_IMPROVEMENT_MINE_STRONGHOLD</Type>
-      <bExtraAnimations>0</bExtraAnimations>
-      <fScale>0.7</fScale>
-      <fInterfaceScale>0.8</fInterfaceScale>
-      <NIF>Art/Structures/Improvements/MineStronghold/Mine.nif</NIF>
-      <KFM>Art/Structures/Improvements/MineStronghold/Mine.kfm</KFM>
-      <Button>Art\Interface\Game Hud\Actions\StrongholdMine.dds</Button>
-    </ImprovementArtInfo>
-    <ImprovementArtInfo>
-      <Type>ART_DEF_IMPROVEMENT_QUARRY</Type>
-      <bExtraAnimations>0</bExtraAnimations>
-      <fScale>1.0</fScale>
-      <fInterfaceScale>1.0</fInterfaceScale>
-      <NIF>Art/Structures/Improvements/quarry/quarry.nif</NIF>
-      <KFM>Art/Structures/Improvements/quarry/quarry.kfm</KFM>
-      <Button>,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,6,7</Button>
-    </ImprovementArtInfo>
-    <ImprovementArtInfo>
-      <Type>ART_DEF_IMPROVEMENT_PASTOR</Type>
-      <bExtraAnimations>0</bExtraAnimations>
-      <fScale>0.8</fScale>
-      <fInterfaceScale>1.0</fInterfaceScale>
-      <NIF>Art/Structures/Improvements/pasture/pasture.nif</NIF>
-      <KFM/>
-      <Button>,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,8,7</Button>
-    </ImprovementArtInfo>
+		<ImprovementArtInfo>
+			<Type>ART_DEF_IMPROVEMENT_MINE_STRONGHOLD</Type>
+			<bExtraAnimations>0</bExtraAnimations>
+			<fScale>0.7</fScale>
+			<fInterfaceScale>0.8</fInterfaceScale>
+			<NIF>Art/Structures/Improvements/MineStronghold/Mine.nif</NIF>
+			<KFM>Art/Structures/Improvements/MineStronghold/Mine.kfm</KFM>
+			<Button>Art\Interface\Game Hud\Actions\StrongholdMine.dds</Button>
+		</ImprovementArtInfo>
+		<ImprovementArtInfo>
+			<Type>ART_DEF_IMPROVEMENT_QUARRY</Type>
+			<bExtraAnimations>0</bExtraAnimations>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Structures/Improvements/quarry/quarry.nif</NIF>
+			<KFM>Art/Structures/Improvements/quarry/quarry.kfm</KFM>
+			<Button>,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,6,7</Button>
+		</ImprovementArtInfo>
+		<ImprovementArtInfo>
+			<Type>ART_DEF_IMPROVEMENT_PASTOR</Type>
+			<bExtraAnimations>0</bExtraAnimations>
+			<fScale>0.8</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Structures/Improvements/pasture/pasture.nif</NIF>
+			<KFM/>
+			<Button>,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,8,7</Button>
+		</ImprovementArtInfo>
 	</ImprovementArtInfos>
 </Civ4ArtDefines>

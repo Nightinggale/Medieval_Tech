@@ -24,6 +24,8 @@
 #include "CvPopupInfo.h"
 #include "CvTradeRoute.h"
 
+#include "CvInfoProfessions.h"
+
 // Public Functions...
 
 CvSelectionGroup::CvSelectionGroup()
@@ -3175,7 +3177,8 @@ void CvSelectionGroup::setAutomateType(AutomateTypes eNewValue)
 		if (eNewValue == NO_AUTOMATE)
 		{
 			getHeadUnit()->AI_setUnitAIState(UNITAI_STATE_DEFAULT);
-
+			//Tks Trade Screen Clear Trade Market
+			getHeadUnit()->setUnitTradeMarket(NO_EUROPE);
 			CvPlot* pPlot = plot();
 			if (pPlot != NULL)
 			{
@@ -3193,7 +3196,6 @@ void CvSelectionGroup::setAutomateType(AutomateTypes eNewValue)
 				}
 			}
 		}
-
 		//clear all trade routes
 		if (eNewValue != AUTOMATE_TRANSPORT_ROUTES)
 		{

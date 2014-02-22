@@ -873,7 +873,7 @@ void CvMapGenerator::addGoodies()
 		}
 	}
 }
-///TKs Med Trade Routes
+///TKs Med TradeScreens
 void CvMapGenerator::addEurope()
 {
 	PROFILE_FUNC();
@@ -889,113 +889,243 @@ void CvMapGenerator::addEurope()
 		gDLL->getPythonIFace()->pythonGetEuropeMinLandDistance(eEurope, &iMinLandDistance);
 
 		//try several times until at least one start europe is found
-		bool bWaterRoute = (iMinLandDistance > 0);
+		//bool bWaterRoute = (kEurope.getDomainsValid(DOMAIN_SEA));
 		bool bAnyEuropeFound = false;
 		bool bCheckDirection = true;
+		//int iDomainCount = 0;
+		int iGridWidth = GC.getMapINLINE().getGridWidthINLINE();
+		int iGridHeight = GC.getMapINLINE().getGridHeightINLINE();
 		for ( ; iMinLandDistance >= 0 && !bAnyEuropeFound; iMinLandDistance--)
 		{
 			for (int i = 0; i < GC.getMapINLINE().numPlotsINLINE(); ++i)
 			{
 				CvPlot* pPlot = GC.getMapINLINE().plotByIndexINLINE(i);
 				bCheckDirection = true;
-				if (bWaterRoute && !pPlot->isWater())
+				if (!kEurope.getDomainsValid(DOMAIN_SEA) && pPlot->isWater())
 				{
                     bCheckDirection = false;
 				}
-				else if (!bWaterRoute && pPlot->isWater())
+				//else if (kEurope.getDomainsValid(DOMAIN_SEA))
+				//{
+					//iDomainCount++;
+				//}
+
+				if (!kEurope.getDomainsValid(DOMAIN_LAND) && !pPlot->isWater())
 				{
 				    bCheckDirection = false;
 				}
+				//else if (kEurope.getDomainsValid(DOMAIN_LAND))
+				//{
+					//iDomainCount++;
+				//}
 
-				if (bCheckDirection && !pPlot->isEurope())
+				if (bCheckDirection && !pPlot->isTradeScreenAccessPlot(eEurope))
 				{
-					bool bEurope = false;
-					switch (kEurope.getCardinalDirection())
+					for (int iDir = 0; iDir < NUM_DIRECTION_TYPES; ++iDir)
 					{
-					case CARDINALDIRECTION_EAST:
-						bEurope = (pPlot->getX_INLINE() > (100 - iWidthPercent) * GC.getMapINLINE().getGridWidthINLINE() / 100);
-						break;
-					case CARDINALDIRECTION_WEST:
-						bEurope = (pPlot->getX_INLINE() < iWidthPercent * GC.getMapINLINE().getGridWidthINLINE() / 100);
-						break;
-					case CARDINALDIRECTION_NORTH:
-						bEurope = (pPlot->getY_INLINE() > (100 - iWidthPercent) * GC.getMapINLINE().getGridHeightINLINE() / 100);
-						//FAssert(bEurope == false);
-						break;
-					case CARDINALDIRECTION_SOUTH:
-						bEurope = (pPlot->getY_INLINE() < iWidthPercent * GC.getMapINLINE().getGridHeightINLINE() / 100);
-						break;
-					default:
-						FAssertMsg(false, "Invalid direction");
-						break;
-					}
-					if (bEurope)
-					{
-                        if (bWaterRoute)
-                        {
-                            for (int i = -iMinLandDistance; i <= iMinLandDistance && bEurope; i++)
-                            {
-                                for (int j = -iMinLandDistance; j <= iMinLandDistance && bEurope; j++)
-                                {
-                                    CvPlot* pLoopPlot = ::plotXY(pPlot->getX_INLINE(), pPlot->getY_INLINE(), i, j);
-                                    if (pLoopPlot != NULL)
-                                    {
-                                        if (!pLoopPlot->isWater())
-                                        {
-                                            bEurope = false;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        else
-                        {
-                            //if (kEurope.getCardinalDirection() == (CARDINALDIRECTION_NORTH || CARDINALDIRECTION_SOUTH))
-                            if (kEurope.getCardinalDirection() == CARDINALDIRECTION_SOUTH)
-                            {
-                                if (pPlot->getY_INLINE() > 4)
-                                {
-                                    bEurope = false;
-                                }
-                            }
-                            else if (kEurope.getCardinalDirection() == CARDINALDIRECTION_NORTH)
-                            {
-                                if (pPlot->getY_INLINE() < (GC.getMapINLINE().getGridHeightINLINE() - 4))
-                                {
-                                    bEurope = false;
-                                }
-                            }
-                        }
-					}
-
-					if (bEurope)
-					{
-						if (pPlot->getFeatureType() != NO_FEATURE && GC.getFeatureInfo(pPlot->getFeatureType()).isImpassable())
+						/*DIRECTION_NORTH,
+						DIRECTION_NORTHEAST,
+						DIRECTION_EAST,
+						DIRECTION_SOUTHEAST,
+						DIRECTION_SOUTH,
+						DIRECTION_SOUTHWEST,
+						DIRECTION_WEST,
+						DIRECTION_NORTHWEST,*/
+						bool bEurope = false;
+						
+						if (kEurope.getDirectionValid(iDir))
 						{
-							pPlot->setFeatureType(NO_FEATURE);
-							///TKs Med
-							//pPlot->setTerrainType((TerrainTypes)GC.getDefineINT("TERRAIN_PEAK"));
-							//pPlot->setPlotType(PLOT_PEAK, true, true);
-							///TKe
+							switch ((DirectionTypes)iDir)
+							{
+							case DIRECTION_EAST:
+								bEurope = (pPlot->getX_INLINE() > (100 - iWidthPercent) * iGridWidth / 100 && pPlot->getY_INLINE() <= (100 - iWidthPercent) * iGridHeight / 100 && pPlot->getY_INLINE() >= iWidthPercent * iGridHeight / 100);
+								break;
+							case DIRECTION_NORTHEAST:
+								bEurope = (pPlot->getX_INLINE() > (100 - iWidthPercent) * iGridWidth / 100 && pPlot->getY_INLINE() > (100 - iWidthPercent) * iGridHeight / 100);
+								break;
+							case DIRECTION_SOUTHEAST:
+								bEurope = (pPlot->getX_INLINE() > (100 - iWidthPercent) * iGridWidth / 100 && pPlot->getY_INLINE() < iWidthPercent * iGridHeight / 100);
+								break;
+							case DIRECTION_WEST:
+								bEurope = (pPlot->getX_INLINE() < iWidthPercent * iGridWidth / 100 && pPlot->getY_INLINE() <= (100 - iWidthPercent) * iGridHeight / 100 && pPlot->getY_INLINE() >= iWidthPercent * iGridHeight / 100);
+								break;
+							case DIRECTION_NORTHWEST:
+								bEurope = (pPlot->getX_INLINE() < (100 - iWidthPercent) * iGridWidth / 100 && pPlot->getY_INLINE() > (100 - iWidthPercent) * iGridHeight / 100);
+								break;
+							case DIRECTION_SOUTHWEST:
+								bEurope = (pPlot->getX_INLINE() < (100 - iWidthPercent) * iGridWidth / 100 && pPlot->getY_INLINE() < iWidthPercent * iGridHeight / 100);
+								break;
+							case DIRECTION_NORTH:
+								bEurope = (pPlot->getY_INLINE() > (100 - iWidthPercent) * iGridHeight / 100 && pPlot->getX_INLINE() > iWidthPercent * iGridWidth / 100 && pPlot->getX_INLINE() < (100 - iWidthPercent) * iGridWidth / 100);
+								break;
+							case DIRECTION_SOUTH:
+								bEurope = (pPlot->getY_INLINE() < iWidthPercent * iGridHeight / 100 && pPlot->getX_INLINE() > iWidthPercent * iGridWidth / 100 && pPlot->getX_INLINE() < (100 - iWidthPercent) * iGridWidth / 100);
+								break;
+							default:
+								FAssertMsg(false, "Invalid direction");
+								break;
+							}
 						}
 
-						if (pPlot->isImpassable())
+						if (bEurope)
 						{
-							bEurope = false;
-						}
-					}
+							
+								if (kEurope.getDomainsValid(DOMAIN_SEA))
+								{
+									for (int i = -iMinLandDistance; i <= iMinLandDistance && bEurope; i++)
+									{
+										for (int j = -iMinLandDistance; j <= iMinLandDistance && bEurope; j++)
+										{
+											CvPlot* pLoopPlot = ::plotXY(pPlot->getX_INLINE(), pPlot->getY_INLINE(), i, j);
+											if (pLoopPlot != NULL)
+											{
+												if (!pLoopPlot->isWater())
+												{
+													bEurope = false;
+												}
+											}
+										}
+									}
 
-					if (bEurope)
-					{
-						pPlot->setEurope(eEurope);
-						bAnyEuropeFound = true;
+									if (bEurope)
+									{
+										if (pPlot->getFeatureType() != NO_FEATURE && GC.getFeatureInfo(pPlot->getFeatureType()).isImpassable())
+										{
+											pPlot->setFeatureType(NO_FEATURE);
+										}
+
+										if (pPlot->isImpassable())
+										{
+											bEurope = false;
+										}
+									}
+
+									if (bEurope)
+									{
+										if (!pPlot->isEurope())
+										{
+											pPlot->setEurope(eEurope);
+										}
+										pPlot->setTradeScreenAccess(eEurope);
+										bAnyEuropeFound = true;
+									}
+
+									bEurope = true;
+								}
+								
+								if (kEurope.getDomainsValid(DOMAIN_LAND))
+								{
+								
+									switch ((DirectionTypes)iDir)
+									{
+									case DIRECTION_EAST:
+										if (pPlot->getX_INLINE() < (iGridWidth - kEurope.getMaxLandCoverage()))
+										{
+											bEurope = false;
+										}
+										break;
+									case DIRECTION_NORTHEAST:
+										if (pPlot->getX_INLINE() < (iGridWidth - kEurope.getMaxLandCoverage()) && pPlot->getY_INLINE() < (iGridHeight - kEurope.getMaxLandCoverage()))
+										{
+											bEurope = false;
+										}
+										break;
+									case DIRECTION_SOUTHEAST:
+										if (pPlot->getY_INLINE() > kEurope.getMaxLandCoverage() && pPlot->getX_INLINE() < (iGridWidth - kEurope.getMaxLandCoverage()))
+										{
+											bEurope = false;
+										}
+										break;
+									case DIRECTION_WEST:
+										if (pPlot->getX_INLINE() > kEurope.getMaxLandCoverage())
+										{
+											bEurope = false;
+										}
+										break;
+									case DIRECTION_NORTHWEST:
+										if (pPlot->getX_INLINE() > kEurope.getMaxLandCoverage() && pPlot->getY_INLINE() < (iGridHeight - kEurope.getMaxLandCoverage()))
+										{
+											bEurope = false;
+										}
+										break;
+									case DIRECTION_SOUTHWEST:
+										if (pPlot->getY_INLINE() > kEurope.getMaxLandCoverage() && pPlot->getX_INLINE() > kEurope.getMaxLandCoverage())
+										{
+											bEurope = false;
+										}
+										break;
+									case DIRECTION_NORTH:
+										if (pPlot->getY_INLINE() < (iGridHeight - kEurope.getMaxLandCoverage()))
+										{
+											bEurope = false;
+										}
+										break;
+									case DIRECTION_SOUTH:
+										if (pPlot->getY_INLINE() > kEurope.getMaxLandCoverage())
+										{
+											bEurope = false;
+										}
+										break;
+									default:
+										FAssertMsg(false, "Invalid direction");
+										break;
+									}
+
+									if (bEurope)
+									{
+										if (pPlot->getFeatureType() != NO_FEATURE && GC.getFeatureInfo(pPlot->getFeatureType()).isImpassable())
+										{
+											pPlot->setFeatureType(NO_FEATURE);
+										}
+
+										if (pPlot->isImpassable())
+										{
+											bEurope = false;
+										}
+									}
+
+									if (bEurope)
+									{
+										if (!pPlot->isEurope())
+										{
+											pPlot->setEurope(eEurope);
+										}
+										pPlot->setTradeScreenAccess(eEurope);
+										bAnyEuropeFound = true;
+									}
+								}
+							
+						}
+
+						/*if (bEurope)
+						{
+							if (pPlot->getFeatureType() != NO_FEATURE && GC.getFeatureInfo(pPlot->getFeatureType()).isImpassable())
+							{
+								pPlot->setFeatureType(NO_FEATURE);
+							}
+
+							if (pPlot->isImpassable())
+							{
+								bEurope = false;
+							}
+						}
+
+						if (bEurope)
+						{
+							if (!pPlot->isEurope())
+							{
+								pPlot->setEurope(eEurope);
+							}
+							pPlot->setTradeScreenAccess(eEurope);
+							bAnyEuropeFound = true;
+						}*/
 					}
 				}
 			}
 		}
 	}
 }
-
+///Tke
 
 void CvMapGenerator::eraseRivers()
 {

@@ -10,8 +10,14 @@
 
 #include "CvDefines.h"
 
+
+// only include the header needed for the mod in question
+// including all mod yield headers will work, but it will force recompilation of all mods when one mod changes something
+#if defined(MEDIEVAL_TECH)
 #include "Yields_Medieval_Tech.h"
+#elif defined(COLONIZATION_2071)
 #include "Yields_Colonization_2071.h"
+#endif
 
 // virtual means it can't be loaded into a ship, meaning it's yields like crosses and bells.
 static inline bool YieldGroup_Virtual(YieldTypes eYield)

@@ -166,15 +166,15 @@
 			<Description>TXT_KEY_CONCEPT_GUNS</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_GUNS_PEDIA</Civilopedia>
 		</ConceptInfo>
-    <ConceptInfo>
-      <Type>CONCEPT_MEDIEVAL</Type>
-      <Description>Medieval Concepts</Description>
-      <Civilopedia>TXT_KEY_CONCEPT_MEDIEVAL_PEDIA</Civilopedia>
-    </ConceptInfo>
-    <ConceptInfo>
-      <Type>CONCEPT_MEDIEVAL_TRADE_POINTS</Type>
-      <Description>Medieval Trade Points</Description>
-      <Civilopedia>TXT_KEY_CONCEPT_MEDIEVAL_TRADE_POINTS_PEDIA</Civilopedia>
-    </ConceptInfo>
+		<ConceptInfo>
+			<Type>CONCEPT_MEDIEVAL</Type>
+			<Description>Medieval Concepts</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_MEDIEVAL_PEDIA</Civilopedia>
+		</ConceptInfo>
+		<ConceptInfo>
+			<Type>CONCEPT_MEDIEVAL_TRADE_POINTS</Type>
+			<Description>Medieval Trade Points</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_MEDIEVAL_TRADE_POINTS_PEDIA</Civilopedia>
+		</ConceptInfo>
 	</ConceptInfos>
 </Civ4BasicInfos>

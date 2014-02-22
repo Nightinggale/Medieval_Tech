@@ -269,10 +269,20 @@ void CyUnitPythonInterface1(python::class_<CyUnit>& x)
 		.def("isBarbarian", &CyUnit::isBarbarian, "bool ()")
 		.def("setBarbarian", &CyUnit::setBarbarian, "void (bool bNewValue)")
 		// < JAnimals Mod End >
+		//Tks Med **TradeRoute**
+		.def("canCrossOcean", &CyUnit::canCrossOcean, "bool (CyPlot* pPlot, int /*UnitTravelStates*/ eNewState, int /*TradeRouteTypes*/ eTradeRouteType, bool bAIForce, int /*EuropeTypes*/ eEuropeTradeRoute)")
+		.def("canAutoSailTradeScreen", &CyUnit::canAutoSailTradeScreen, "bool (CyPlot* pPlot, int /*UnitTravelStates*/ eNewState, int /*EuropeTypes*/ eEuropeTradeRoute, bool bAIForce)")
+		.def("getUnitTradeMarket", &CyUnit::getUnitTradeMarket, "int /*EuropeTypes*/ ()")
+		.def("setUnitTradeMarket", &CyUnit::setUnitTradeMarket, "void (int /*EuropeTypes*/)")
+		//TKe
 		// Python Helper Functions
 		.def("centerCamera", &CyUnit::centerCamera, "void () - Centers the Camera on the unit")
 		.def("getArtInfo", &CyUnit::getArtInfo,  python::return_value_policy<python::reference_existing_object>(), "CvArtInfoUnit* (int i)")
 		.def("getButton", &CyUnit::getButton, "std::string ()")
 		.def("getFullLengthIcon", &CyUnit::getFullLengthIcon, "std::string ()")
+
+		/// Expert working - start - Nightinggale
+		.def("isCitizenExpertWorking", &CyUnit::isCitizenExpertWorking, "bool ()")
+		/// Expert working - end - Nightinggale
 		;
 }

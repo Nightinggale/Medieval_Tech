@@ -482,7 +482,10 @@ enum DllExport WidgetTypes
 	WIDGET_DOCK,
 	WIDGET_SAIL,
 	WIDGET_GOTO_CITY,
-	///TKs Invention Core Mod v 1.0
+	///TKs Med TradeRoutes
+	WIDGET_TRADE_SCREEN_ROUTE,
+	WIDGET_AUTO_TRADE_SCREEN,
+	WIDGET_POP_UP_SCREEN,
 	WIDGET_INVENTORS_HOUSE,
 	WIDGET_CIVIC_HELP,
 	WIDGET_PEDIA_JUMP_TO_TECHNOLOGY,
@@ -1632,6 +1635,7 @@ enum DllExport CultureLevelTypes
 enum DllExport CivicOptionTypes
 {
 	NO_CIVICOPTION = -1,
+	CIVICOPTION_INVENTIONS,
 };
 
 enum DllExport CivicTypes
@@ -2845,6 +2849,105 @@ enum DllExport AlarmTypes
 	NO_ALARM = -1,
 };
 
+/// XML load - start - Nightinggale
+enum XMLFileNames
+{
+	XML_FILE_CIV4ArtDefines_Bonus,
+	XML_FILE_CIV4ArtDefines_Building,
+	XML_FILE_CIV4ArtDefines_Civilization,
+	XML_FILE_CIV4ArtDefines_Feature,
+	XML_FILE_CIV4ArtDefines_Improvement,
+	XML_FILE_CIV4ArtDefines_Interface,
+	XML_FILE_CIV4ArtDefines_Leaderhead,
+	XML_FILE_CIV4ArtDefines_Misc,
+	XML_FILE_CIV4ArtDefines_Movie,
+	XML_FILE_CIV4ArtDefines_Terrain,
+	XML_FILE_CIV4ArtDefines_Unit,
+	XML_FILE_CIV4AlarmInfos,
+	XML_FILE_CIV4AnimationInfos,
+	XML_FILE_CIV4AnimationPathInfos,
+	XML_FILE_CIV4AttachableInfos,
+	XML_FILE_CIV4AttitudeInfos,
+	XML_FILE_CIV4AutomateInfos,
+	XML_FILE_CIV4BonusInfos,
+	XML_FILE_CIV4BuildInfos,
+	XML_FILE_CIV4BuildingClassInfos,
+	XML_FILE_CIV4BuildingInfos,
+	XML_FILE_CIV4CalendarInfos,
+	XML_FILE_CIV4CameraOverlayInfos,
+	XML_FILE_CIV4CivicInfos,
+	XML_FILE_CIV4CivicOptionInfos,
+	XML_FILE_CIV4CivilizationInfos,
+	XML_FILE_CIV4ClimateInfo,
+	XML_FILE_CIV4ColorVals,
+	XML_FILE_CIV4CommandInfos,
+	XML_FILE_CIV4BasicInfos,
+	XML_FILE_CIV4ControlInfos,
+	XML_FILE_CIV4CultureLevelInfo,
+	XML_FILE_CIV4CursorInfo,
+	XML_FILE_CIV4DenialInfos,
+	XML_FILE_CIV4DiplomacyInfos,
+	XML_FILE_CIV4DomainInfos,
+	XML_FILE_CIV4EffectInfos,
+	XML_FILE_CIV4EmphasizeInfo,
+	XML_FILE_CIV4EntityEventInfos,
+	XML_FILE_CIV4EraInfos,
+	XML_FILE_CIV4EuropeInfo,
+	XML_FILE_CIV4EventInfos,
+	XML_FILE_CIV4EventTriggerInfos,
+	XML_FILE_CIV4FatherCategoryInfos,
+	XML_FILE_CIV4FatherInfos,
+	XML_FILE_CIV4FatherPointInfos,
+	XML_FILE_Civ4FeatureInfos,
+	XML_FILE_CIV4ForceControlInfos,
+	XML_FILE_CIV4GameOptionInfos,
+	XML_FILE_CIV4GameSpeedInfo,
+	XML_FILE_CIV4GoodyInfo,
+	XML_FILE_CIV4GraphicOptionInfos,
+	XML_FILE_CIV4HandicapInfo,
+	XML_FILE_CIV4Hints,
+	XML_FILE_CIV4HurryInfo,
+	XML_FILE_CIV4ImprovementInfos,
+	XML_FILE_CIV4InterfaceModeInfos,
+	XML_FILE_CIV4InvisibleInfos,
+	XML_FILE_CIV4TerrainSettings,
+	XML_FILE_CIV4LeaderHeadInfos,
+	XML_FILE_CIV4MPOptionInfos,
+	XML_FILE_CIV4MainMenus,
+	XML_FILE_CIV4MemoryInfos,
+	XML_FILE_CIV4MissionInfos,
+	XML_FILE_CIV4MonthInfos,
+	XML_FILE_CIV4PlayerColorInfos,
+	XML_FILE_CIV4PlayerOptionInfos,
+	XML_FILE_CIV4ProfessionInfos,
+	XML_FILE_CIV4PromotionInfos,
+	XML_FILE_CIV4RiverModelInfos,
+	XML_FILE_Civ4RouteInfos,
+	XML_FILE_Civ4RouteModelInfos,
+	XML_FILE_CIV4SeaLevelInfo,
+	XML_FILE_CIV4SeasonInfos,
+	XML_FILE_CIV4SlideShowInfos,
+	XML_FILE_CIV4SlideShowRandomInfos,
+	XML_FILE_CIV4SpecialBuildingInfos,
+	XML_FILE_CIV4SpecialUnitInfos,
+	XML_FILE_CIV4TerrainInfos,
+	XML_FILE_CIV4TerrainPlaneInfos,
+	XML_FILE_CIV4TraitInfos,
+	XML_FILE_CIV4TurnTimerInfo,
+	XML_FILE_CIV4UnitAIInfos,
+	XML_FILE_CIV4UnitArtStyleTypeInfos,
+	XML_FILE_CIV4UnitClassInfos,
+	XML_FILE_CIV4UnitCombatInfos,
+	XML_FILE_CIV4FormationInfos,
+	XML_FILE_CIV4UnitInfos,
+	XML_FILE_CIV4VictoryInfo,
+	XML_FILE_CIV4WaterPlaneInfos,
+	XML_FILE_CIV4WorldInfo,
+	XML_FILE_CIV4WorldPickerInfos,
+	XML_FILE_CIV4YieldInfos,
+};
+/// XML load - end - Nightinggale
+
 // cache XML - start - Nightinggale
 enum DllExport XMLconstantTypes
 {
@@ -2911,7 +3014,6 @@ enum DllExport XMLconstantTypes
 	XML_CHANCE_TO_CAPTURE_CRIMINALS,
 	XML_CHEAT_TRAVEL_ALL,
 	XML_CITY_PILGRAM_RANDOM,
-	XML_CIVICOPTION_INVENTIONS,
 	XML_COLONIAL_FORCED_PEACE_TURNS,
 	XML_CONTACT_YIELD_GIFT_ENCOMEIDA_TIMER,
 	XML_CONTACT_YIELD_GIFT_TECH,
@@ -2944,7 +3046,6 @@ enum DllExport XMLconstantTypes
 	XML_DEFAULT_TREASURE_YIELD,
 	XML_DEFAULT_UNTRAINED_PROMOTION,
 	XML_DEFAULT_VIKING_ERA,
-	XML_DEFAULT_YIELD_ARMOR_TYPE,
 	XML_DIPLAY_NEW_VIDEOS,
 	XML_DOCKS_NEXT_UNITS,
 	XML_EDUCATION_THRESHOLD,
@@ -3188,9 +3289,6 @@ enum DllExport XMLconstantTypes
 	// the number of XML constants
 	// used to set the array length for storage
 	NUM_XML_CONSTANTS,
-
-	// init value to indicate cache not set
-	XML_INIT_VALUE = 0xFFFF1234,
 };
 // cache XML - end - Nightinggale
 

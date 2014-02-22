@@ -102,13 +102,13 @@
 			<Type>MEMORY_MISSIONARY_FAIL</Type>
 			<Description>TXT_KEY_MEMORY_MISSIONARY_FAIL</Description>
 		</MemoryInfo>
-    <MemoryInfo>
-      <Type>MEMORY_INSULTED</Type>
-      <Description>TXT_KEY_MISC_ATTITUDE_INSULT</Description>
-    </MemoryInfo>
-    <MemoryInfo>
-      <Type>MEMORY_MADE_VASSAL_DEMAND</Type>
-      <Description>TXT_KEY_MISC_VASSAL_DEMAND</Description>
-    </MemoryInfo>
+		<MemoryInfo>
+			<Type>MEMORY_INSULTED</Type>
+			<Description>TXT_KEY_MISC_ATTITUDE_INSULT</Description>
+		</MemoryInfo>
+		<MemoryInfo>
+			<Type>MEMORY_MADE_VASSAL_DEMAND</Type>
+			<Description>TXT_KEY_MISC_VASSAL_DEMAND</Description>
+		</MemoryInfo>
 	</MemoryInfos>
 </Civ4MemoryInfos>

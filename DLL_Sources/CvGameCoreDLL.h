@@ -153,6 +153,47 @@ __forceinline DWORD FtoDW( float f ) { return *(DWORD*)&f; }
 __forceinline float DWtoF( dword n ) { return *(float*)&n; }
 __forceinline float MaxFloat() { return DWtoF(0x7f7fffff); }
 
+/// bitmap - start - Nightinggale
+// variableless versions assuming the argument to be 0
+// useful for enums
+#define SETBIT( x ) (1 << x)
+#define SETBITS( x, y ) (((1 << x) - 1 ) << y)
+
+#define GETBIT ( x, y ) ((x >> y) & 1)
+#define GETBITS( x, y, z ) ((x >> y) & ((1 << z) - 1 ))
+
+template <typename T>
+static inline bool HasBit(const T x, const int y)
+{
+	return (x & ((T)1U << y)) != 0;
+}
+
+template <typename T>
+static inline T SetBit(T &x, const int y)
+{
+   return x = (T)(x | ((T)1U << y));
+}
+
+template <typename T>
+static inline T ClrBit(T &x, const int y)
+{
+	return x = (T)(x & ~((T)1U << y));
+}
+
+// use one of the previous functions instead of hardcoding bValue
+// this function is only for cases where a bit can be turned both on and off
+template <typename T>
+static inline T SetBit(T &x, const int y, const bool bValue)
+{
+	if (bValue)
+	{
+		return x = (T)(x | ((T)1U << y));
+	} else {
+		return x = (T)(x & ~((T)1U << y));
+	}
+}
+/// bitmap - end - Nightinggale
+
 //
 // Boost Python
 //
@@ -194,5 +235,23 @@ namespace python = boost::python;
 #undef OutputDebugString
 #define OutputDebugString(x)
 #endif //FINAL_RELEASE
+
+/// bitmap - start - Nightinggale
+// has to be after the includes
+template <typename T>
+static void loadIntoBitmap(FDataStreamBase* pStream, T &bmVar, int iCount)
+{
+	// convert old format to the new bitmap
+	for (int i = 0; i < iCount; i++)
+	{
+		bool bTemp;
+		pStream->Read(&bTemp);
+		if (bTemp)
+		{
+			SetBit(bmVar, i);
+		}
+	}
+}
+/// bitmap - end - Nightinggale
 
 #endif	// CvGameCoreDLL_h

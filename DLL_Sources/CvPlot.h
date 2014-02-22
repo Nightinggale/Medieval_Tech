@@ -22,11 +22,19 @@ class CvUnit;
 class CvSymbol;
 class CvFlagEntity;
 
+/// PlotGroup - start - Nightinggale
+class CvPlotGroup;
+/// PlotGroup - end - Nightinggale
+
 typedef bool (*ConstPlotUnitFunc)( const CvUnit* pUnit, int iData1, int iData2);
 typedef bool (*PlotUnitFunc)(CvUnit* pUnit, int iData1, int iData2);
 
 class CvPlot
 {
+/// player bitmap - start - Nightinggale
+protected:
+	PlayerBitmap m_bmRevealed;
+/// player bitmap - end - Nightinggale
 
 public:
 	CvPlot();
@@ -88,12 +96,17 @@ public:
 
 	int seeFromLevel(TeamTypes eTeam) const;
 	int seeThroughLevel() const;
-	void changeAdjacentSight(TeamTypes eTeam, int iRange, bool bIncrement, CvUnit* pUnit);
+
+	/// PlotGroup - start - Nightinggale
+	//void changeAdjacentSight(TeamTypes eTeam, int iRange, bool bIncrement, CvUnit* pUnit);
+	void changeAdjacentSight(TeamTypes eTeam, int iRange, bool bIncrement, CvUnit* pUnit, bool bUpdatePlotGroups);
+	/// PlotGroup - end - Nightinggale
+
 	bool canSeePlot(CvPlot *plot, TeamTypes eTeam, int iRange, DirectionTypes eFacingDirection) const;
 	bool canSeeDisplacementPlot(TeamTypes eTeam, int dx, int dy, int originalDX, int originalDY, bool firstPlot, bool outerRing) const;
 	bool shouldProcessDisplacementPlot(int dx, int dy, int range, DirectionTypes eFacingDirection) const;
-	void updateSight(bool bIncrement);
-	void updateSeeFromSight(bool bIncrement);
+	void updateSight(bool bIncrement, bool bUpdatePlotGroups);
+	void updateSeeFromSight(bool bIncrement, bool bUpdatePlotGroups);
 	DllExport bool canHaveBonus(BonusTypes eBonus, bool bIgnoreLatitude = false) const;
 	DllExport bool canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam = NO_TEAM, bool bPotential = false) const;
 
@@ -124,7 +137,13 @@ public:
 
 	DllExport bool isVisible(TeamTypes eTeam, bool bDebug) const;
 	DllExport bool isActiveVisible(bool bDebug) const;
-	///TKs Med
+	///TKs TradeScreen
+	void setDistanceToTradeScreen(EuropeTypes eTradeScreen, short iNewValue);
+	short getDistanceToTradeScreen(EuropeTypes eTradeScreen) const;
+	CvPlot* findNearbyTradeScreenPlot(EuropeTypes eTradeScreen, int iRandomization=0);
+	bool isTradeScreenAccessPlot(EuropeTypes eEurope) const;
+	void setTradeScreenAccess(EuropeTypes eEurope, bool bClear=false);
+	EuropeTypes getNearestTradeScreenPlot(EuropeTypes eEurope, bool bAccessable=false) const;
 	bool isVisibleToCivTeam(bool bIgnoreNativeTeams = false) const;
 	///Tke
 	bool isVisibleToWatchingHuman() const;
@@ -150,6 +169,7 @@ public:
 	int getNumVisiblePotentialEnemyDefenders(const CvUnit* pUnit) const;
 	DllExport bool isVisibleEnemyUnit(PlayerTypes ePlayer) const;
 	///TKs Med
+	bool isVisibleEnemyUnit(TeamTypes eTeam) const;
 	bool isVisibleBarbarianEnemyUnit(const CvUnit* pUnit) const;
 	///TKe
 	bool isVisibleEnemyUnit(const CvUnit* pUnit) const;
@@ -245,7 +265,7 @@ public:
 		return (PlayerTypes)m_eOwner;
 	}
 #endif
-	void setOwner(PlayerTypes eNewValue, bool bCheckUnits);
+	void setOwner(PlayerTypes eNewValue, bool bCheckUnits, bool bUpdatePlotGroup);
 	DllExport PlotTypes getPlotType() const;
 	DllExport bool isWater() const;
 	DllExport bool isEurope() const;
@@ -266,8 +286,12 @@ public:
 	DllExport void setImprovementType(ImprovementTypes eNewValue);
 
 	DllExport RouteTypes getRouteType() const;
-	DllExport void setRouteType(RouteTypes eNewValue);
-	void updateCityRoute();
+	/// PlotGroup - start - Nightinggale
+	//DllExport void setRouteType(RouteTypes eNewValue);
+	//void updateCityRoute();
+	DllExport void setRouteType(RouteTypes eNewValue, bool bUpdatePlotGroups = true);
+	void updateCityRoute(bool bUpdatePlotGroup);
+	/// PlotGroup - end - Nightinggale
 	DllExport CvCity* getPlotCity() const;
 	void setPlotCity(CvCity* pNewValue);
 	DllExport CvCity* getWorkingCity() const;
@@ -317,7 +341,11 @@ public:
 	void changePlayerCityRadiusCount(PlayerTypes eIndex, int iChange);
 
 	int getVisibilityCount(TeamTypes eTeam) const;
-	void changeVisibilityCount(TeamTypes eTeam, int iChange, InvisibleTypes eSeeInvisible);
+	
+	/// PlotGroup - start - Nightinggale
+	//void changeVisibilityCount(TeamTypes eTeam, int iChange, InvisibleTypes eSeeInvisible);
+	void changeVisibilityCount(TeamTypes eTeam, int iChange, InvisibleTypes eSeeInvisible, bool bUpdatePlotGroup);
+	/// PlotGroup - end - Nightinggale
 
 	DllExport PlayerTypes getRevealedOwner(TeamTypes eTeam, bool bDebug) const;
 	DllExport TeamTypes getRevealedTeam(TeamTypes eTeam, bool bDebug) const;
@@ -327,7 +355,13 @@ public:
 	void updateRiverCrossing(DirectionTypes eIndex);
 	void updateRiverCrossing();
 	DllExport bool isRevealed(TeamTypes eTeam, bool bDebug) const;
-	DllExport void setRevealed(TeamTypes eTeam, bool bNewValue, bool bTerrainOnly, TeamTypes eFromTeam);
+
+	/// PlotGroup - start - Nightinggale
+	//DllExport void setRevealed(TeamTypes eTeam, bool bNewValue, bool bTerrainOnly, TeamTypes eFromTeam);
+	DllExport void setRevealed(TeamTypes eTeam, bool bNewValue, bool bTerrainOnly, TeamTypes eFromTeam, bool bUpdatePlotGroup);
+	/// PlotGroup - end - Nightinggale
+
+
 	bool isAdjacentRevealed(TeamTypes eTeam) const;
 	bool isAdjacentNonrevealed(TeamTypes eTeam) const;
 
@@ -429,7 +463,9 @@ protected:
 	short m_iRiverCrossingCount;
 	short m_iDistanceToOcean;
 	short m_iCrumbs;
-
+	///Tks TradeScreen
+	unsigned int m_iTradeScreenAccess;
+	//Tke
 	bool m_bStartingPlot:1;
 	bool m_bHills:1;
 	bool m_bNOfRiver:1;
@@ -462,9 +498,10 @@ protected:
 	char* m_aiPlayerCityRadiusCount;
 	short* m_aiVisibilityCount;
 	char* m_aiRevealedOwner;
-
+	///Tks TradeScreen
+	EuropeArray<short> m_asTradeScreenDistance;
+	///Tke
 	bool* m_abRiverCrossing;	// bit vector
-	bool* m_abRevealed;
 
 	short* /*ImprovementTypes*/ m_aeRevealedImprovementType;
 	short* /*RouteTypes*/ m_aeRevealedRouteType;
@@ -496,6 +533,72 @@ protected:
 
 	// added so under cheat mode we can access protected stuff
 	friend class CvGameTextMgr;
+
+
+	/// PlotGroup - start - Nightinggale
+public:
+	CvPlotGroup* getPlotGroup(PlayerTypes ePlayer) const;
+	CvPlotGroup* getOwnerPlotGroup() const;
+
+	void setPlotGroup(PlayerTypes ePlayer, CvPlotGroup* pNewValue);
+	void updatePlotGroup();
+	void updatePlotGroup(PlayerTypes ePlayer, bool bRecalculate = true);
+
+	bool isConnectedTo( const CvCity* pCity) const;														// Exposed to Python
+	bool isConnectedToCapital(PlayerTypes ePlayer = NO_PLAYER) const;
+	bool isTradeNetwork(TeamTypes eTeam) const;
+	bool isTradeNetworkConnected(const CvPlot * pPlot, TeamTypes eTeam) const;
+
+
+	// homemade functions - Nightinggale
+	void removeTradeNetwork(PlayerTypes ePlayer);
+	void addTradeNetwork(PlayerTypes ePlayer);
+
+#ifdef USE_PLOTGROUP_RESOURCES
+	void updatePlotGroupBonus(bool bAdd);
+	int getPlotGroupConnectedBonus(PlayerTypes ePlayer, BonusTypes eBonus) const;						// Exposed to Python
+	bool isPlotGroupConnectedBonus(PlayerTypes ePlayer, BonusTypes eBonus) const;						// Exposed to Python
+	bool isAdjacentPlotGroupConnectedBonus(PlayerTypes ePlayer, BonusTypes eBonus) const;				// Exposed to Python
+#endif
+
+protected:
+	int* m_aiPlotGroup;			// IDs - keep as int
+	/// PlotGroup - end - Nightinggale
+
+	/// unit plot cache - start - Nightinggale
+public:
+	int getUnitCache(PlayerTypes ePlayer) const;
+	void changeUnitCache(int i, const CvUnit* pUnit);
+	void rebuildUnitCache();
+#ifdef FASSERT_ENABLE
+	void checkUnitCache();
+#endif
+protected:
+	PlayerArray<int> m_aiUnitCache;
+	/// unit plot cache - end - Nightinggale
 };
+
+
+/// PlotGroup - start - Nightinggale
+#ifndef USE_PLOTGROUP_RESOURCES
+#define updatePlotGroupBonus( expr )
+#endif
+inline CvPlotGroup* CvPlot::getOwnerPlotGroup() const
+{
+	if (getOwnerINLINE() == NO_PLAYER)
+	{
+		return NULL;
+	}
+
+	return getPlotGroup(getOwnerINLINE());
+}
+/// PlotGroup - end - Nightinggale
+
+/// unit plot cache - start - Nightinggale
+inline int CvPlot::getUnitCache(PlayerTypes ePlayer) const
+{
+	return m_aiUnitCache.get(ePlayer);
+}
+/// unit plot cache - end - Nightinggale
 
 #endif

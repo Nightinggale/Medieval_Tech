@@ -10,20 +10,20 @@
 	<ElementType name="ArtDefineTag" content="textOnly"/>
 	<ElementType name="AlarmType" content="textOnly"/>
   <!--TK Start-->
-  <ElementType name="AttackForceKey" content="textOnly"/>
-  <ElementType name="iResearchMod" content="textOnly" dt:type="int"/>
-  <ElementType name="EraTrait" content="eltOnly">
-    <element type="EraType"/>
-    <element type="TraitType"/>
-  </ElementType>
-  <ElementType name="EraTraits" content="eltOnly">
-    <element type="EraTrait" minOccurs="0" maxOccurs="*"/>
-  </ElementType>
-  <ElementType name="DawnKey" content="textOnly"/>
-  <ElementType name="DeclareKey" content="textOnly"/>
-  <ElementType name="iVictoryType" content="textOnly" dt:type="int"/>
-  <ElementType name="iTravelCommandType" content="textOnly" dt:type="int"/>
-  <ElementType name="iEconomyType" content="textOnly" dt:type="int"/>
+	<ElementType name="AttackForceKey" content="textOnly"/>
+	<ElementType name="iResearchMod" content="textOnly" dt:type="int"/>
+	<ElementType name="EraTrait" content="eltOnly">
+		<element type="EraType"/>
+		<element type="TraitType"/>
+	</ElementType>
+	<ElementType name="EraTraits" content="eltOnly">
+		<element type="EraTrait" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="DawnKey" content="textOnly"/>
+	<ElementType name="DeclareKey" content="textOnly"/>
+	<ElementType name="iVictoryType" content="textOnly" dt:type="int"/>
+	<ElementType name="iTravelCommandType" content="textOnly" dt:type="int"/>
+	<ElementType name="iEconomyType" content="textOnly" dt:type="int"/>
 	<ElementType name="iBaseAttitude" content="textOnly" dt:type="int"/>
 	<ElementType name="iNativeAttitude" content="textOnly" dt:type="int"/>
 	<ElementType name="iRefuseToTalkWarThreshold" content="textOnly" dt:type="int"/>
@@ -167,14 +167,14 @@
 		<element type="ArtDefineTag"/>
 		<element type="AlarmType"/>
     <!--TK Start-->
-    <element type="AttackForceKey" minOccurs="0"/>
-    <element type="DeclareKey" minOccurs="0"/>
-    <element type="DawnKey" minOccurs="0"/>
-    <element type="bWaterStart" minOccurs="0"/>
-    <element type="iVictoryType" minOccurs="0"/>
-    <element type="iTravelCommandType" minOccurs="0"/>
-    <element type="iEconomyType" minOccurs="0"/>
-    <element type="EraTraits" minOccurs="0"/>
+		<element type="AttackForceKey" minOccurs="0"/>
+		<element type="DeclareKey" minOccurs="0"/>
+		<element type="DawnKey" minOccurs="0"/>
+		<element type="bWaterStart" minOccurs="0"/>
+		<element type="iVictoryType" minOccurs="0"/>
+		<element type="iTravelCommandType" minOccurs="0"/>
+		<element type="iEconomyType" minOccurs="0"/>
+		<element type="EraTraits" minOccurs="0"/>
     <!--TK End-->
 		<element type="iBaseAttitude"/>
 		<element type="iNativeAttitude"/>
@@ -229,7 +229,7 @@
 		<element type="ImprovementWeightModifiers"/>
 		<element type="DiplomacyMusicPeace"/>
 		<element type="DiplomacyMusicWar"/>
-  </ElementType>
+	</ElementType>
 	<ElementType name="LeaderHeadInfos" content="eltOnly">
 		<element type="LeaderHeadInfo" maxOccurs="*"/>
 	</ElementType>
@@ -279,7 +279,7 @@
 		<element type="PromotionType"/>
 		<element type="bFreePromotion"/>
 	</ElementType>
-  <ElementType name="bFreePromotionsAllowChange" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bFreePromotionsAllowChange" content="textOnly" dt:type="boolean"/>
 	<ElementType name="FreePromotions" content="eltOnly">
 		<element type="FreePromotion" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
@@ -293,24 +293,24 @@
 		<element type="FreePromotionUnitCombat" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
   <!--Free Promotion Unit Classes-->
-  <ElementType name="bFreePromotionUnitClass" content="textOnly" dt:type="boolean"/>
-  <ElementType name="FreePromotionUnitClass" content="eltOnly">
-    <element type="UnitClassType"/>
-    <element type="bFreePromotionUnitClass"/>
-  </ElementType>
-  <ElementType name="FreePromotionUnitClasses" content="eltOnly">
-    <element type="FreePromotionUnitClass" minOccurs="0" maxOccurs="*"/>
-  </ElementType>
+	<ElementType name="bFreePromotionUnitClass" content="textOnly" dt:type="boolean"/>
+	<ElementType name="FreePromotionUnitClass" content="eltOnly">
+		<element type="UnitClassType"/>
+		<element type="bFreePromotionUnitClass"/>
+	</ElementType>
+	<ElementType name="FreePromotionUnitClasses" content="eltOnly">
+		<element type="FreePromotionUnitClass" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
   <!--Free Promotion Unit Profession-->
-  <ElementType name="FreeUnitProfessionType" content="textOnly"/>
-  <ElementType name="bFreePromotionUnitProfession" content="textOnly" dt:type="boolean"/>
-  <ElementType name="FreePromotionUnitProfession" content="eltOnly">
-    <element type="FreeUnitProfessionType"/>
-    <element type="bFreePromotionUnitProfession"/>
-  </ElementType>
-  <ElementType name="FreePromotionUnitProfessions" content="eltOnly">
-    <element type="FreePromotionUnitProfession" minOccurs="0" maxOccurs="*"/>
-  </ElementType>
+	<ElementType name="FreeUnitProfessionType" content="textOnly"/>
+	<ElementType name="bFreePromotionUnitProfession" content="textOnly" dt:type="boolean"/>
+	<ElementType name="FreePromotionUnitProfession" content="eltOnly">
+		<element type="FreeUnitProfessionType"/>
+		<element type="bFreePromotionUnitProfession"/>
+	</ElementType>
+	<ElementType name="FreePromotionUnitProfessions" content="eltOnly">
+		<element type="FreePromotionUnitProfession" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
 	<ElementType name="TaxYieldModifiers" content="eltOnly">
 		<element type="YieldModifier" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
@@ -412,9 +412,9 @@
 		<element type="FreePromotions"/>
 		<element type="FreePromotionUnitCombats"/>
     <!--Free Promotion Unit Classes and Profession-->
-    <element type="FreePromotionUnitClasses" minOccurs="0"/>
-    <element type="FreePromotionUnitProfessions" minOccurs="0"/>
-    <element type="bFreePromotionsAllowChange" minOccurs="0"/>
+		<element type="FreePromotionUnitClasses" minOccurs="0"/>
+		<element type="FreePromotionUnitProfessions" minOccurs="0"/>
+		<element type="bFreePromotionsAllowChange" minOccurs="0"/>
 		<element type="YieldModifiers"/>
 		<element type="TaxYieldModifiers"/>
 		<element type="BuildingYieldChanges"/>
@@ -424,7 +424,7 @@
 		<element type="BuildingRequiredYieldModifiers"/>
 		<element type="UnitStrengthModifiers"/>
 		<element type="FreeBuildingClasses"/>
-    <element type="bFreeBuildingAllowChange" minOccurs="0"/>
+		<element type="bFreeBuildingAllowChange" minOccurs="0"/>
 		<element type="GoodyFactors"/>
 	</ElementType>
 	<ElementType name="TraitInfos" content="eltOnly">
@@ -482,7 +482,7 @@
 	<ElementType name="FreeBuildingClasses" content="eltOnly">
 		<element type="FreeBuildingClass" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-  <ElementType name="bFreeBuildingAllowChange" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bFreeBuildingAllowChange" content="textOnly" dt:type="boolean"/>
 	<ElementType name="TeachUnitClasses" content="eltOnly">
 		<element type="TeachUnitClass" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
@@ -524,18 +524,18 @@
 	<ElementType name="Leaders" content="eltOnly">
 		<element type="Leader" maxOccurs="*"/>
 	</ElementType>
-  <ElementType name="bFree" content="textOnly" dt:type="boolean"/>
-  <ElementType name="Tech" content="textOnly"/>
-  <ElementType name="FreeTech" content="eltOnly">
-    <element type="Tech"/>
-    <element type="bFree"/>
-  </ElementType>
-  <ElementType name="FreeTechs" content="eltOnly">
-    <element type="FreeTech" minOccurs="0" maxOccurs="*"/>
-  </ElementType>
-  <ElementType name="CivilizationSelectionSound" content="textOnly"/>
+	<ElementType name="bFree" content="textOnly" dt:type="boolean"/>
+	<ElementType name="Tech" content="textOnly"/>
+	<ElementType name="FreeTech" content="eltOnly">
+		<element type="Tech"/>
+		<element type="bFree"/>
+	</ElementType>
+	<ElementType name="FreeTechs" content="eltOnly">
+		<element type="FreeTech" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="CivilizationSelectionSound" content="textOnly"/>
 	<ElementType name="CivilizationActionSound" content="textOnly"/>
-  <ElementType name="UnitArtStyleType" content="textOnly"/>
+	<ElementType name="UnitArtStyleType" content="textOnly"/>
 	<ElementType name="CivilizationInfo" content="eltOnly">
 		<element type="Type"/>
 		<element type="Description"/>
@@ -545,7 +545,7 @@
 		<element type="DefaultPlayerColor"/>
 		<element type="ArtDefineTag"/>
 		<element type="ArtStyleType"/>
-    <element type="UnitArtStyleType" minOccurs="0" maxOccurs="1"/>
+		<element type="UnitArtStyleType" minOccurs="0" maxOccurs="1"/>
 		<element type="bPlayable"/>
 		<element type="bAIPlayable"/>
 		<element type="bWaterStart"/>
@@ -574,9 +574,9 @@
 		<element type="DerivativeCiv"/>
 		<element type="CivilizationSelectionSound"/>
 		<element type="CivilizationActionSound"/>
-    <element type="FreeTechs" minOccurs="0"/>
-    <element type="iVictoryType" minOccurs="0"/>
-    <element type="iEconomyType" minOccurs="0"/>
+		<element type="FreeTechs" minOccurs="0"/>
+		<element type="iVictoryType" minOccurs="0"/>
+		<element type="iEconomyType" minOccurs="0"/>
 	</ElementType>
 	<ElementType name="CivilizationInfos" content="eltOnly">
 		<element type="CivilizationInfo" maxOccurs="*"/>
@@ -590,35 +590,35 @@
 	<ElementType name="Civ4CivilizationInfos" content="eltOnly">
 		<element type="CivilizationInfos" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-  <ElementType name="EarlyArtDefineTag" content="textOnly"/>
-  <ElementType name="LateArtDefineTag" content="textOnly"/>
-  <ElementType name="MiddleArtDefineTag" content="textOnly"/>
-  <ElementType name="UnitMeshGroup" content="eltOnly">
-    <element type="ArtDefineTag" minOccurs="0"/>
-  </ElementType>
-  <ElementType name="StyleUnit" content="eltOnly">
-    <element type="UnitType"/>
-    <element type="ProfessionType"/>
-    <element type="UnitMeshGroup" minOccurs="0" maxOccurs="*"/>
-  </ElementType>
-  <ElementType name="StyleUnits" content="eltOnly">
-    <element type="StyleUnit" minOccurs="0" maxOccurs="*"/>
-  </ElementType>
-  <ElementType name="UnitArtStyleTypeInfo" content="eltOnly">
-    <element type="Type"/>
-    <element type="StyleUnits" minOccurs="0" maxOccurs="1"/>
-  </ElementType>
-  <ElementType name="UnitArtStyleTypeInfos" content="eltOnly">
-    <element type="UnitArtStyleTypeInfo" minOccurs="0" maxOccurs="*"/>
-  </ElementType>
-  <ElementType name="Civ4UnitArtStyleTypeInfos" content="eltOnly">
-    <element type="UnitArtStyleTypeInfos" minOccurs="0"/>
-  </ElementType>
+	<ElementType name="EarlyArtDefineTag" content="textOnly"/>
+	<ElementType name="LateArtDefineTag" content="textOnly"/>
+	<ElementType name="MiddleArtDefineTag" content="textOnly"/>
+	<ElementType name="UnitMeshGroup" content="eltOnly">
+		<element type="ArtDefineTag" minOccurs="0"/>
+	</ElementType>
+	<ElementType name="StyleUnit" content="eltOnly">
+		<element type="UnitType"/>
+		<element type="ProfessionType"/>
+		<element type="UnitMeshGroup" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="StyleUnits" content="eltOnly">
+		<element type="StyleUnit" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="UnitArtStyleTypeInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="StyleUnits" minOccurs="0" maxOccurs="1"/>
+	</ElementType>
+	<ElementType name="UnitArtStyleTypeInfos" content="eltOnly">
+		<element type="UnitArtStyleTypeInfo" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Civ4UnitArtStyleTypeInfos" content="eltOnly">
+		<element type="UnitArtStyleTypeInfos" minOccurs="0"/>
+	</ElementType>
 	<ElementType name="Civ4Civilizations" content="eltOnly">
 		<element type="LeaderHeadInfos" minOccurs="0" maxOccurs="*"/>
 		<element type="TraitInfos" minOccurs="0" maxOccurs="*"/>
 		<element type="CivilizationInfos" minOccurs="0" maxOccurs="*"/>
-    <element type="UnitArtStyleTypeInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="UnitArtStyleTypeInfos" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="iRange" content="textOnly" dt:type="int"/>
 	<ElementType name="iColony" content="textOnly" dt:type="int"/>

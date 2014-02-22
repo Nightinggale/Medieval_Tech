@@ -264,6 +264,11 @@ private:
 	void orderHotkeyInfo(int** ppiSortedIndex, T* pHotkeyInfos, int iLength);
 	void orderHotkeyInfo(int** ppiSortedIndex, int* pHotkeyIndex, int iLength);
 	void logMsg(char* format, ... );
+
+	/// XML load - start - Nightinggale
+	void loadXMLFiles();
+	void loadXMLFile(XMLFileNames eFile);
+	/// XML load - end - Nightinggale
 };
 
 //

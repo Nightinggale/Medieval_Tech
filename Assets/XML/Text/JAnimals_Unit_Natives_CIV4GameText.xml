@@ -9,7 +9,6 @@
 		<Italian></Italian>
 		<Spanish></Spanish>
 	</TEXT>
-
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TERRAIN_NATIVE</Tag>
 		<English>[ICON_BULLET]Native to %s1_Desc Terrain</English>

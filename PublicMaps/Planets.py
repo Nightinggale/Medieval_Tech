@@ -227,16 +227,28 @@ class DonutFeatureGenerator(CvMapGeneratorUtil.FeatureGenerator):
 	def __initFeatureTypes(self):
 		self.featureIce = self.gc.getInfoTypeForString("FEATURE_ICE")
 		self.featureJungle = self.gc.getInfoTypeForString("FEATURE_JUNGLE")
-		self.featureForest = self.gc.getInfoTypeForString("FEATURE_FOREST")
 		self.featureLightForest = self.gc.getInfoTypeForString("FEATURE_LIGHT_FOREST")
-#		self.featureFungalForest = self.gc.getInfoTypeForString("FEATURE_FUNGAL_FOREST")
-#		self.featureCycadForest = self.gc.getInfoTypeForString("FEATURE_CYCAD_FOREST")
-#		self.featureLuminousForest = self.gc.getInfoTypeForString("FEATURE_LUMINOUS_FOREST")
-#		self.featurePetrifiedForest = self.gc.getInfoTypeForString("FEATURE_PETRIFIED_FOREST")
+		
+		self.featureForest = [self.gc.getInfoTypeForString('FEATURE_DECIDUOUS_FOREST'),
+				self.gc.getInfoTypeForString('FEATURE_CONIFEROUS_FOREST'),
+				self.gc.getInfoTypeForString('FEATURE_METALLOPHYTE_FOREST'),
+				self.gc.getInfoTypeForString('FEATURE_LITHOTROPHIC_FUNGI'),
+				self.gc.getInfoTypeForString('FEATURE_CHEMOTROPHIC_FUNGI'),
+				self.gc.getInfoTypeForString('FEATURE_LUMINOUS_FOREST'),
+				self.gc.getInfoTypeForString('FEATURE_POLYPLOID_FOREST'),
+				self.gc.getInfoTypeForString('FEATURE_HOLOGRAPHIC_FRAGMENTS'),
+				self.gc.getInfoTypeForString('FEATURE_ANGIOSPERM_FOREST'),
+				self.gc.getInfoTypeForString('FEATURE_PETRIFIED_FOREST'),
+				self.gc.getInfoTypeForString('FEATURE_RADIOTROPHIC_FUNGI'),
+				self.gc.getInfoTypeForString('FEATURE_RESINOUS_FOREST'),
+				self.gc.getInfoTypeForString('FEATURE_PROGENITOR_RUINS'),
+				self.gc.getInfoTypeForString('FEATURE_THORN_FOREST'),
+				self.gc.getInfoTypeForString('FEATURE_PRIMORDIAL_FOREST')]
+
 #		self.featureScrub = self.gc.getInfoTypeForString("FEATURE_SCRUB")
-#		self.featureScrub = self.gc.getInfoTypeForString("FEATURE_LAKE")
-#		self.featureScrub = self.gc.getInfoTypeForString("FEATURE_LAGOON")
-#		self.featureScrub = self.gc.getInfoTypeForString("FEATURE_VOLCANO")
+#		self.featureLake = self.gc.getInfoTypeForString("FEATURE_LAKE")
+#		self.featureLagoon = self.gc.getInfoTypeForString("FEATURE_LAGOON")
+#		self.featureVolcano = self.gc.getInfoTypeForString("FEATURE_VOLCANO")
 
 	def addFeatures(self):
 		"adds features to all plots as appropriate"
@@ -258,17 +270,17 @@ class DonutFeatureGenerator(CvMapGeneratorUtil.FeatureGenerator):
 				if self.mapRand.get(10000, "Add Feature PYTHON") < self.gc.getFeatureInfo(iI).getAppearanceProbability():
 					pPlot.setFeatureType(iI, -1)
 
+#		if (pPlot.getFeatureType() == FeatureTypes.NO_FEATURE):
+#			self.addIceAtPlot(pPlot, iX, iY, lat)
+
 		if (pPlot.getFeatureType() == FeatureTypes.NO_FEATURE):
-			self.addIceAtPlot(pPlot, iX, iY, lat)
+			self.addForestsAtPlot(pPlot, iX, iY, lat)
 
 		if (pPlot.getFeatureType() == FeatureTypes.NO_FEATURE):
 			self.addJunglesAtPlot(pPlot, iX, iY, lat)
 
 		if (pPlot.getFeatureType() == FeatureTypes.NO_FEATURE):
 			self.addLightForestsAtPlot(pPlot, iX, iY, lat)
-
-		if (pPlot.getFeatureType() == FeatureTypes.NO_FEATURE):
-			self.addForestsAtPlot(pPlot, iX, iY, lat)
 
 	def addIceAtPlot(self, pPlot, iX, iY, lat):
 		if pPlot.canHaveFeature(self.featureIce):
@@ -313,14 +325,11 @@ class DonutFeatureGenerator(CvMapGeneratorUtil.FeatureGenerator):
 				pPlot.setFeatureType(self.featureLightForest, -1)
 
 	def addForestsAtPlot(self, pPlot, iX, iY, lat):
-		if pPlot.canHaveFeature(self.featureForest):
-			if self.forests.getHeight(iX, iY) >= self.iForestLevel:
-				game = CyGame()
-				iForestRnd = game.getSorenRandNum(20, "Light Forests")
-				if iForestRnd >= 14:
-					self.addLightForestsAtPlot(pPlot, iX, iY, lat)
-				else:
-					pPlot.setFeatureType(self.featureForest, -1)
+		if self.forests.getHeight(iX, iY) >= self.iForestLevel:
+			game = CyGame()
+			iForestRnd = game.getSorenRandNum(len(self.featureForest), "pick forest type from list")
+			if pPlot.canHaveFeature(self.featureForest[iForestRnd]):
+				pPlot.setFeatureType(self.featureForest[iForestRnd], -1)
 	
 def addFeatures():
 	NiTextOut("Adding Features (Python Donut) ...")

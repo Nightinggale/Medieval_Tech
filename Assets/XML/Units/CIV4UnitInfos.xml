@@ -98,15 +98,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -114,7 +138,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -459,15 +499,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -475,7 +539,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -820,15 +900,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -836,7 +940,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -1189,15 +1309,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -1205,7 +1349,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -1562,15 +1722,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -1578,7 +1762,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -1935,15 +2135,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -1951,7 +2175,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -2308,15 +2548,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -2324,7 +2588,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -2681,15 +2961,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -2697,7 +3001,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -3050,15 +3370,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -3066,7 +3410,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -3411,15 +3771,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -3427,7 +3811,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -3772,15 +4172,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -3788,7 +4212,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -4137,15 +4577,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -4153,7 +4617,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -4506,15 +4986,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -4522,7 +5026,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -4875,15 +5395,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -4891,7 +5435,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -5244,15 +5804,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -5260,7 +5844,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -5613,15 +6213,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -5629,7 +6253,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -5982,15 +6622,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -5998,7 +6662,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -6351,15 +7031,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -6367,7 +7071,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -6720,15 +7440,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -6736,7 +7480,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -7089,15 +7849,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -7105,7 +7889,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -7458,15 +8258,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -7474,7 +8298,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -7819,15 +8659,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -7835,7 +8699,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -8180,15 +9060,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -8196,7 +9100,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -8541,15 +9461,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -8557,7 +9501,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -8902,15 +9862,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -8918,7 +9902,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -9263,15 +10263,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -9279,7 +10303,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -9624,15 +10664,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -9640,7 +10704,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -9985,15 +11065,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -10001,7 +11105,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -10346,15 +11466,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -10362,7 +11506,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -10707,15 +11867,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -10723,7 +11907,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -11063,15 +12263,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -11079,7 +12303,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -11419,15 +12659,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -11435,7 +12699,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -11780,15 +13060,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -11796,7 +13100,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -12136,15 +13456,39 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_DECIDUOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CONIFEROUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_METALLOPHYTE_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_LITHOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_CHEMOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_LUMINOUS_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_FUNGAL_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_POLYPLOID_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
-			<BuildType>BUILD_REMOVE_CYCAD_FOREST</BuildType>
+			<BuildType>BUILD_REMOVE_HOLOGRAPHIC_FRAGMENTS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_ANGIOSPERM_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
@@ -12152,7 +13496,23 @@
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>
+			<BuildType>BUILD_REMOVE_RADIOTROPHIC_FUNGI</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_RESINOUS_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
 			<BuildType>BUILD_REMOVE_PROGENITOR_RUINS</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_THORN_FOREST</BuildType>
+			<bBuild>1</bBuild>
+		</Build>
+		<Build>
+			<BuildType>BUILD_REMOVE_PRIMORDIAL_FOREST</BuildType>
 			<bBuild>1</bBuild>
 		</Build>
 		<Build>

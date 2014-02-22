@@ -17,7 +17,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -444,7 +444,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -871,7 +871,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -1298,7 +1298,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -1725,7 +1725,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -2152,7 +2152,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -2579,7 +2579,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -3006,7 +3006,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -3433,7 +3433,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -3860,7 +3860,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -4287,7 +4287,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -4714,7 +4714,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -5141,7 +5141,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -5568,7 +5568,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -5995,7 +5995,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -6422,7 +6422,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -6849,7 +6849,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -7276,7 +7276,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -7703,7 +7703,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -8130,7 +8130,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -8557,7 +8557,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -8984,7 +8984,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -9411,7 +9411,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -9838,7 +9838,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -10265,7 +10265,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -10692,7 +10692,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -11119,7 +11119,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -11546,7 +11546,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -11973,7 +11973,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -12400,7 +12400,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -12827,7 +12827,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -13254,7 +13254,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -13681,7 +13681,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -14108,7 +14108,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -14535,7 +14535,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -14962,7 +14962,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -15389,7 +15389,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -15816,7 +15816,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -16243,7 +16243,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -16670,7 +16670,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -17097,7 +17097,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>
@@ -17524,7 +17524,7 @@
 	<DawnKey>None</DawnKey>
 	<!--ECONOMY: 1 = HomeCity; 2 = Three Routes to Unlock Land Start; 3 = Inflation-->
 	<iVictoryType>1</iVictoryType>
-	<iTravelCommandType>1</iTravelCommandType>
+	<iTravelCommandType>0</iTravelCommandType>
 	<iEconomyType>2</iEconomyType>
 	<iBaseAttitude>0</iBaseAttitude>
 	<iNativeAttitude>0</iNativeAttitude>

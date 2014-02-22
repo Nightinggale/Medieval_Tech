@@ -2473,6 +2473,46 @@
 	<Spanish>Ice</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_FEATURE_DECIDUOUS_FOREST</Tag>
+	<English>Deciduous Forest</English>
+	<French>Deciduous Forest</French>
+	<German>Deciduous Forest</German>
+	<Italian>Deciduous Forest</Italian>
+	<Spanish>Deciduous Forest</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_FEATURE_CONIFEROUS_FOREST</Tag>
+	<English>Coniferous Forest</English>
+	<French>Coniferous Forest</French>
+	<German>Coniferous Forest</German>
+	<Italian>Coniferous Forest</Italian>
+	<Spanish>Coniferous Forest</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_FEATURE_METALLOPHYTE_FOREST</Tag>
+	<English>Metallophyte Forest</English>
+	<French>Metallophyte Forest</French>
+	<German>Metallophyte Forest</German>
+	<Italian>Metallophyte Forest</Italian>
+	<Spanish>Metallophyte Forest</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_FEATURE_LITHOTROPHIC_FUNGI</Tag>
+	<English>Lithotrophic Fungi</English>
+	<French>Lithotrophic Fungi</French>
+	<German>Lithotrophic Fungi</German>
+	<Italian>Lithotrophic Fungi</Italian>
+	<Spanish>Lithotrophic Fungi</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_FEATURE_CHEMOTROPHIC_FUNGI</Tag>
+	<English>Chemotrophic Fungi</English>
+	<French>Chemotrophic Fungi</French>
+	<German>Chemotrophic Fungi</German>
+	<Italian>Chemotrophic Fungi</Italian>
+	<Spanish>Chemotrophic Fungi</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_FEATURE_LUMINOUS_FOREST</Tag>
 	<English>Luminous Forest</English>
 	<French>Luminous Forest</French>
@@ -2481,20 +2521,28 @@
 	<Spanish>Luminous Forest</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_FEATURE_FUNGAL_FOREST</Tag>
-	<English>Fungal Forest</English>
-	<French>Fungal Forest</French>
-	<German>Fungal Forest</German>
-	<Italian>Fungal Forest</Italian>
-	<Spanish>Fungal Forest</Spanish>
+	<Tag>TXT_KEY_FEATURE_POLYPLOID_FOREST</Tag>
+	<English>Polyploid Forest</English>
+	<French>Polyploid Forest</French>
+	<German>Polyploid Forest</German>
+	<Italian>Polyploid Forest</Italian>
+	<Spanish>Polyploid Forest</Spanish>
 </TEXT>
 <TEXT>
-	<Tag>TXT_KEY_FEATURE_CYCAD_FOREST</Tag>
-	<English>Cycad Forest</English>
-	<French>Cycad Forest</French>
-	<German>Cycad Forest</German>
-	<Italian>Cycad Forest</Italian>
-	<Spanish>Cycad Forest</Spanish>
+	<Tag>TXT_KEY_FEATURE_HOLOGRAPHIC_FRAGMENTS</Tag>
+	<English>Holographic Fragments</English>
+	<French>Holographic Fragments</French>
+	<German>Holographic Fragments</German>
+	<Italian>Holographic Fragments</Italian>
+	<Spanish>Holographic Fragments</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_FEATURE_ANGIOSPERM_FOREST</Tag>
+	<English>Angiosperm Forest</English>
+	<French>Angiosperm Forest</French>
+	<German>Angiosperm Forest</German>
+	<Italian>Angiosperm Forest</Italian>
+	<Spanish>Angiosperm Forest</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_FEATURE_PETRIFIED_FOREST</Tag>
@@ -2505,12 +2553,44 @@
 	<Spanish>Petrified Forest</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_FEATURE_RADIOTROPHIC_FUNGI</Tag>
+	<English>Radiotrophic Fungi</English>
+	<French>Radiotrophic Fungi</French>
+	<German>Radiotrophic Fungi</German>
+	<Italian>Radiotrophic Fungi</Italian>
+	<Spanish>Radiotrophic Fungi</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_FEATURE_RESINOUS_FOREST</Tag>
+	<English>Resinous Forest</English>
+	<French>Resinous Forest</French>
+	<German>Resinous Forest</German>
+	<Italian>Resinous Forest</Italian>
+	<Spanish>Resinous Forest</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_FEATURE_PROGENITOR_RUINS</Tag>
 	<English>Progenitor Ruins</English>
 	<French>Progenitor Ruins</French>
 	<German>Progenitor Ruins</German>
 	<Italian>Progenitor Ruins</Italian>
 	<Spanish>Progenitor Ruins</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_FEATURE_THORN_FOREST</Tag>
+	<English>Thorn Forest</English>
+	<French>Thorn Forest</French>
+	<German>Thorn Forest</German>
+	<Italian>Thorn Forest</Italian>
+	<Spanish>Thorn Forest</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_FEATURE_PRIMORDIAL_FOREST</Tag>
+	<English>Primordial Forest</English>
+	<French>Primordial Forest</French>
+	<German>Primordial Forest</German>
+	<Italian>Primordial Forest</Italian>
+	<Spanish>Primordial Forest</Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_BONUS_PROGENITOR_METROPOLIS</Tag>

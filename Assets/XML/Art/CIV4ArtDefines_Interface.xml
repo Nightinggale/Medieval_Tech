@@ -683,6 +683,10 @@
 			<Type>INTERFACE_MOTHER_LAND</Type>
 			<Path>Art/Interface/Game Hud/Top_buttons/motherlandtopbut.dds</Path>
 		</InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>INTERFACE_CIVIC_SCREEN_TOP</Type>
+      <Path>Art/Interface/Game Hud/Top_buttons/CivicsScreenTopBut.dds</Path>
+    </InterfaceArtInfo>
 		<InterfaceArtInfo>
 			<Type>INTERFACE_SPICE_ROUTE</Type>
 			<Path>Art/Interface/Game Hud/Top_buttons/SpiceRouteTopBut.dds</Path>

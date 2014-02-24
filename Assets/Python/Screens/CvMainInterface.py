@@ -724,6 +724,12 @@ class CvMainInterface:
 			screen.setImageShape("EuropeScreenButton", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
 			screen.setHitMargins("EuropeScreenButton", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
 			self.appendtoHideState(screen, "EuropeScreenButton", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
+		
+		iCivics = iBtnX - (self.ADVISOR_BUTTON_SPACING / 2)
+		screen.setImageButton("CivicOptionsScreenButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_CIVIC_SCREEN_TOP").getPath(), iCivics - (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) / 2, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) * 4, self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_CIVICS_SCREEN).getActionInfoIndex(), -1 )
+		screen.setImageShape("CivicOptionsScreenButton", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
+		screen.setHitMargins("CivicOptionsScreenButton", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
+		self.appendtoHideState(screen, "CivicOptionsScreenButton", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
 			
 		iBtnX += self.ADVISOR_BUTTON_SPACING
 		screen.setImageButton("SpiceRouteScreenButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_SPICE_ROUTE").getPath(), iBtnX, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) / 2, self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_SPICE_ROUTE_SCREEN).getActionInfoIndex(), -1 )

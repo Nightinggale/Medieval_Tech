@@ -25,6 +25,8 @@ void CyGameTextMgrInterface()
 		.def("getTerrainHelp", &CyGameTextMgr::getTerrainHelp, "wstring (int iTerrain, bool bCivilopediaText)")
 		.def("getYieldsHelp", &CyGameTextMgr::getYieldsHelp, "wstring (int iYield, bool bCivilopediaText)")
 		.def("getFeatureHelp", &CyGameTextMgr::getFeatureHelp, "wstring (int iFeature, bool bCivilopediaText)")
+		//tks Civics
+		.def("setRevolutionHelp", &CyGameTextMgr::setRevolutionHelp, "wstring (int iPlayer)")
 		///TKs Invention Core Mod v 1.0
 		.def("parseCivicInfo", &CyGameTextMgr::parseCivicInfo, "wstring (int /*CivicTypes*/ iCivicType, bool bCivilopediaText, bool bPlayerContext, bool bSkipName, bool bOnlyCost, int /*CivilizationTypes*/ eCivilization)")
         ///Tke

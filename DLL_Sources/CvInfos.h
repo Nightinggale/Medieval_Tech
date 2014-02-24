@@ -996,7 +996,9 @@ public:
 	DllExport int getY_Location() const;
 
 	DllExport int getCostToResearch() const;
-
+	///Tks Civics
+	int getAnarchyLength() const;
+	//TKe Civics
     DllExport int getIncreaseCityPopulation() const;
     DllExport int getAllowsProfession() const;
 	DllExport int getAllowsTrait() const;
@@ -1036,7 +1038,9 @@ public:
     DllExport int getAllowsYields(int i) const;
     DllExport int getAllowsPromotions(int i) const;
     DllExport int getAllowsBonuses(int i) const;
-
+	//Tks Civics
+	DllExport int getUpkeepYields(int i) const;
+	//tke
     DllExport int getAllowsBuildTypes(int i) const;
     DllExport int getFasterBuildTypes(int i) const;
     DllExport int getFasterBuildFeatureTypes(int i) const;
@@ -1116,6 +1120,9 @@ protected:
     int m_aiConvertsUnitsFrom;
     int m_iFreeHurriedImmigrants;
     int m_iGoldBonus;
+	///TKs CivicsScreen
+	int m_iAnarchyLength;
+	//TKe CivicsScreen
     int m_iIncreasedImmigrants;
 	bool m_bisTradeable;
 	bool m_bFreeUnitsAreNonePopulation;
@@ -1124,7 +1131,9 @@ protected:
     bool m_bGoodyTech;
     bool m_bNoArrowinTechScreen;
     bool m_bStartConstitution;
-
+	///TKs CivicsScreen
+	int* m_aiUpkeepYields;
+	//TKe CivicsScreen
     int* m_iRouteMovementMod;
     int* m_aiAllowsRoute;
     int* m_aiAllowsBuildingTypes;
@@ -1949,6 +1958,8 @@ public:
 
 	DllExport GameTurnInfo& getGameTurnInfo(int iIndex) const;
 	///TKs Med
+	//Tks Civics
+	DllExport int getAnarchyPercent() const;
 	DllExport int getTradeRouteTripLength(int i) const;
 	///Tke
 	DllExport void allocateGameTurnInfos(const int iSize);
@@ -1965,6 +1976,8 @@ protected:
 	int m_iNumTurnIncrements;
 	CvString m_szGameSpeedName;
 	///TKs Med
+	//TK Civics
+	int m_iAnarchyPercent;
 	int* m_aiTradeRouteTripLength;
 	///TKe
 	GameTurnInfo* m_pGameTurnInfo;
@@ -3036,6 +3049,8 @@ public:
 	DllExport int getRecruitPriceDiscount() const;
 	DllExport int getEuropeTravelTimeModifier() const;
 	DllExport int getImmigrationThresholdModifier() const;
+	///Tks CivicsScreen
+	DllExport int getMaxAnarchy() const;
 
 	///TKs Invention Core Mod v 1.0
 
@@ -3092,7 +3107,9 @@ protected:
 	int m_iRecruitPriceDiscount;
 	int m_iEuropeTravelTimeModifier;
 	int m_iImmigrationThresholdModifier;
-
+	///TKs CivicsScreen
+	int m_iMaxAnarchy;
+	//TKe CivicsScreen
 	///TKs Invention Core Mod v 1.0
 	bool m_bFreePromotionsAllowChange;
     bool m_bFreeBuildingAllowChange;
@@ -3719,6 +3736,8 @@ public:
 
 	DllExport bool isRevolution() const;
 	DllExport bool isNoGoodies() const;
+	//Tks Civics
+	DllExport int getAnarchyPercent() const;
 	// < JAnimals Mod Start >
 	bool isNoAILandAnimals() const;
 	bool isNoAISeaAnimals() const;
@@ -3752,6 +3771,8 @@ protected:
 	CvString m_szAudioUnitDefeatScript;
 	bool m_bRevolution;
 	bool m_bNoGoodies;
+	//TK Civics
+	int m_iAnarchyPercent;
 	// < JAnimals Mod Start >
 	bool m_bNoAILandAnimals;
 	bool m_bNoAISeaAnimals;

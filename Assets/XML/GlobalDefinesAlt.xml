@@ -10,6 +10,10 @@
 		<DefineName>AUTORESEARCH_ALL</DefineName>
 		<iDefineIntVal>0</iDefineIntVal>
 	</Define>
+  <Define>
+    <DefineName>MIN_REVOLUTION_TURNS</DefineName>
+    <iDefineIntVal>5</iDefineIntVal>
+  </Define>
 	<Define>
 		<DefineName>DIPLAY_NEW_VIDEOS</DefineName>
 		<iDefineIntVal>0</iDefineIntVal>

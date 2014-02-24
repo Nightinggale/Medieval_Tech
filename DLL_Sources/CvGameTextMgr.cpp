@@ -2107,6 +2107,24 @@ bool CvGameTextMgr::setCombatPlotHelp(CvWStringBuffer &szString, CvPlot* pPlot)
 	return false;
 }
 
+///Tks Civics
+void CvGameTextMgr::setRevolutionHelp(CvWStringBuffer& szBuffer, PlayerTypes ePlayer)
+{
+	szBuffer.assign(gDLL->getText("TXT_KEY_MISC_CANNOT_CHANGE_CIVICS"));
+
+	if (GET_PLAYER(ePlayer).isAnarchy())
+	{
+		szBuffer.append(gDLL->getText("TXT_KEY_MISC_WHILE_IN_ANARCHY"));
+	}
+	else if (GET_PLAYER(ePlayer).getRevolutionTimer() > 0)
+	{
+		szBuffer.append(gDLL->getText("TXT_KEY_MISC_ANOTHER_REVOLUTION_RECENTLY"));
+		szBuffer.append(L" : ");
+		szBuffer.append(gDLL->getText("TXT_KEY_MISC_WAIT_MORE_TURNS", GET_PLAYER(ePlayer).getRevolutionTimer()));
+	}
+}
+///Te
+
 // DO NOT REMOVE - needed for font testing - Moose
 void createTestFontString(CvWStringBuffer& szString)
 {

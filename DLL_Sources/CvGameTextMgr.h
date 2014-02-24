@@ -61,6 +61,8 @@ public:
 	DllExport void setScoreHelp(CvWStringBuffer &szString, PlayerTypes ePlayer);
 	DllExport void setCitizenHelp(CvWStringBuffer &szString, const CvCity& kCity, const CvUnit& kUnit);
 	///TKs Med
+	///Tks Civics
+	DllExport void setRevolutionHelp(CvWStringBuffer& szBuffer, PlayerTypes ePlayer);
 	DllExport void setEuropeYieldSoldHelp(CvWStringBuffer &szString, const CvPlayer& kPlayer, YieldTypes eYield, int iAmount, int iCommission, EuropeTypes eTradeRoute=NO_EUROPE);
 	///Tke
 	DllExport void setEuropeYieldBoughtHelp(CvWStringBuffer &szString, const CvPlayer& kPlayer, YieldTypes eYield, int iAmount);

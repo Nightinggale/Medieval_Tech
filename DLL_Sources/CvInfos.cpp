@@ -3844,6 +3844,9 @@ m_iModdersCode1(NO_MOD_CODE),
 m_iKingTreasureTransportMod(0),
 m_iFoundCityType(-1),
 m_iIncreaseCityPopulation(0),
+///TKs Civics
+m_iAnarchyLength(0),
+//TKe Civics
 
 m_aiConvertsUnitsFrom(NO_UNITCLASS),
 m_aiConvertsUnitsTo(NO_UNITCLASS),
@@ -3856,11 +3859,13 @@ m_bAllowsMapTrade(false),
 m_bGoodyTech(false),
 m_bNoArrowinTechScreen(false),
 m_bisTradeable(false),
-
 m_iRouteMovementMod(NULL),
 m_aiAllowsRoute(NULL),
 m_aiAllowsBuildingTypes(NULL),
 m_aiAllowsYields(NULL),
+//Tks Civics
+m_aiUpkeepYields(NULL),
+//tke
 m_aiAllowsPromotions(NULL),
 m_aiAllowsBonuses(NULL),
 m_aiAllowsUnitClasses(NULL),
@@ -3904,6 +3909,9 @@ CvCivicInfo::~CvCivicInfo()
     SAFE_DELETE_ARRAY(m_aiRequiredFatherPoints);
     SAFE_DELETE_ARRAY(m_aiRequiredYields);
     SAFE_DELETE_ARRAY(m_aiAllowsYields);
+	//TKs Civics
+	SAFE_DELETE_ARRAY(m_aiUpkeepYields);
+	///tke
     SAFE_DELETE_ARRAY(m_iRouteMovementMod);
     SAFE_DELETE_ARRAY(m_aiAllowsRoute);
     SAFE_DELETE_ARRAY(m_aiAllowsBuildingTypes);
@@ -4015,7 +4023,7 @@ int CvCivicInfo::getY_Location() const
 	return m_iY_Location;
 }
 
- ///tknre
+ ///tke
 int CvCivicInfo::getAllowsYields(int i) const
 {
 	return m_aiAllowsYields ? m_aiAllowsYields[i] : 0;
@@ -4144,7 +4152,15 @@ int CvCivicInfo::getIncreaseCityPopulation() const
 {
 	return m_iIncreaseCityPopulation;
 }
-
+///Tks CivicsScreen
+int CvCivicInfo::getAnarchyLength() const
+{
+	return m_iAnarchyLength;
+}
+int CvCivicInfo::getUpkeepYields(int i) const
+{
+	return m_aiUpkeepYields ? m_aiUpkeepYields[i] : 0;
+}
 int CvCivicInfo::getAllowsTrait() const
 {
 	return m_iAllowsTrait;
@@ -4662,9 +4678,9 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iGoldBonus, "iGoldBonus");
 	pXML->GetChildXmlValByName(&m_iIncreasedImmigrants, "iIncreasedImmigrants");
 	pXML->GetChildXmlValByName(&m_iFreeTechs, "iFreeTechs");
-
-
-
+	///Tks CivicsScreen
+	pXML->GetChildXmlValByName(&m_iAnarchyLength, "iAnarchyLength");
+	///Tke CivicsScreen
 	pXML->GetChildXmlValByName(&m_iKingTreasureTransportMod, "iKingTreasureTransportMod");
 	pXML->GetChildXmlValByName(&m_iIncreaseCityPopulation, "iIncreaseCityPopulation");
 
@@ -4675,7 +4691,9 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bGoodyTech, "bNoGoodyTech");
 	pXML->GetChildXmlValByName(&m_bNoArrowinTechScreen, "bNoArrowinTechScreen");
 	pXML->GetChildXmlValByName(&m_bisTradeable, "bisNoneTradeable");
-
+	//Tks Civics
+	pXML->SetVariableListTagPair(&m_aiUpkeepYields, "UpkeepYields", NUM_YIELD_TYPES, 0);
+	//tke
     pXML->SetVariableListTagPair(&m_aiAllowsYields, "AllowsYields", NUM_YIELD_TYPES, 0);
     pXML->SetVariableListTagPair(&m_iRouteMovementMod, "RouteMovementMod", GC.getNumRouteInfos(), 0);
     pXML->SetVariableListTagPair(&m_aiAllowsRoute, "AllowsRoutes", GC.getNumRouteInfos(), 0);
@@ -7402,6 +7420,9 @@ bool CvHandicapInfo::read(CvXMLLoadUtility* pXML)
 //
 //------------------------------------------------------------------------------------------------------
 CvGameSpeedInfo::CvGameSpeedInfo() :
+///TKs CivicsScreen
+m_iAnarchyPercent(0),
+//TKe CivicsScreen
 m_iGrowthPercent(0),
 m_iStoragePercent(0),
 m_iTrainPercent(0),
@@ -7430,10 +7451,17 @@ CvGameSpeedInfo::~CvGameSpeedInfo()
 	SAFE_DELETE_ARRAY(m_aiTradeRouteTripLength);
 	///TKe
 }
+///Tks CivicsScreen
+int CvGameSpeedInfo::getAnarchyPercent() const
+{
+	return m_iAnarchyPercent;
+}
+///TKe CivicsScreen
 int CvGameSpeedInfo::getGrowthPercent() const
 {
 	return m_iGrowthPercent;
 }
+
 int CvGameSpeedInfo::getStoragePercent() const
 {
 	return m_iStoragePercent;
@@ -7483,6 +7511,9 @@ bool CvGameSpeedInfo::read(CvXMLLoadUtility* pXML)
 		return false;
 	}
 	int j, iTempVal;
+	///Tks CivicsScreen
+	pXML->GetChildXmlValByName(&m_iAnarchyPercent, "iAnarchyPercent");
+	///Tke CivicsScreen
 	pXML->GetChildXmlValByName(&m_iGrowthPercent, "iGrowthPercent");
 	pXML->GetChildXmlValByName(&m_iStoragePercent, "iStoragePercent");
 	pXML->GetChildXmlValByName(&m_iTrainPercent, "iTrainPercent");
@@ -10692,6 +10723,9 @@ CvTraitInfo::CvTraitInfo() :
 	m_iEuropeTravelTimeModifier(0),
 	m_iImmigrationThresholdModifier(0),
 	///TKs Invention Core Mod v 1.0
+	///TKs CivicsScreen
+	m_iMaxAnarchy(0),
+	//TKe CivicsScreen
 	m_bFreePromotionsAllowChange(false),
 	m_bFreeBuildingAllowChange(false),
 	///TKe
@@ -10825,6 +10859,11 @@ int CvTraitInfo::getEuropeTravelTimeModifier() const
 int CvTraitInfo::getImmigrationThresholdModifier() const
 {
 	return m_iImmigrationThresholdModifier;
+}
+///Tks CivicsScreen
+int CvTraitInfo::getMaxAnarchy() const
+{
+	return m_iMaxAnarchy;
 }
 ///TKs Invention Core Mod v 1.0
 bool CvTraitInfo::isFreePromotionsAllowChange() const
@@ -11142,7 +11181,9 @@ bool CvTraitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iRecruitPriceDiscount, "iRecruitPriceDiscount");
 	pXML->GetChildXmlValByName(&m_iEuropeTravelTimeModifier, "iEuropeTravelTimeModifier");
 	pXML->GetChildXmlValByName(&m_iImmigrationThresholdModifier, "iImmigrationThresholdModifier");
-
+	///Tks CivicsScreen
+	pXML->GetChildXmlValByName(&m_iMaxAnarchy, "iMaxAnarchy");
+	///Tke CivicsScreen
 ///TKs Invention Core Mod v 1.0
     pXML->GetChildXmlValByName(&m_bFreePromotionsAllowChange, "bFreePromotionsAllowChange");
     pXML->GetChildXmlValByName(&m_bFreeBuildingAllowChange, "bFreeBuildingAllowChange");
@@ -12463,6 +12504,9 @@ m_iGreatGeneralPercent(0),
 m_iEventChancePerTurn(0),
 m_iSoundtrackSpace(0),
 m_iNumSoundtracks(0),
+//Tks Civics
+m_iAnarchyPercent(0),
+//Tke Civics
 m_bRevolution(false),
 m_bNoGoodies(false),
 // < JAnimals Mod Start >
@@ -12567,6 +12611,12 @@ bool CvEraInfo::isNoGoodies() const
 {
 	return m_bNoGoodies;
 }
+///Tks CivicsScreen
+int CvEraInfo::getAnarchyPercent() const
+{
+	return m_iAnarchyPercent;
+}
+///TKe CivicsScreen
 // < JAnimals Mod Start >
 bool CvEraInfo::isNoAILandAnimals() const
 {
@@ -12596,6 +12646,9 @@ bool CvEraInfo::read(CvXMLLoadUtility* pXML)
 	{
 		return false;
 	}
+	///Tks CivicsScreen
+	pXML->GetChildXmlValByName(&m_iAnarchyPercent, "iAnarchyPercent");
+	///Tke CivicsScreen
 	pXML->GetChildXmlValByName(&m_bRevolution, "bRevolution");
 	pXML->GetChildXmlValByName(&m_bNoGoodies, "bNoGoodies");
 	pXML->GetChildXmlValByName(&m_iGameTurn, "iGameTurn");

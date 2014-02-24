@@ -82,6 +82,12 @@ public:
 	int calculateTotalYield(int /*YieldTypes*/ eYield);
 	bool isCivic(int /*CivicTypes*/ eCivic);
 	///Tks Med
+	//Tks Civics
+	void changeCivics(boost::python::list& /*CivicTypes**/ paeNewCivics, bool bForce);
+	bool canChangeCivics(int /*CivicTypes**/ paeNewCivics);
+	int getCivicAnarchyLength(boost::python::list& /*CivicTypes**/ paeNewCivics);
+	int getCivicUpkeep(boost::python::list&  /*CivicTypes*/ paiCivics, bool bIgnoreAnarchy);
+	///Tke Civics
 	int getMultiYieldRate(YieldTypes eIndex);
 	///TKs Invention Core Mod v 1.0
 	int getIdeasExperience() const;

@@ -279,6 +279,37 @@ bool CyPlayer::isCivic(int /*CivicTypes*/ eCivic)
 }
 
 ///TKs Med
+//Tks Civics
+void CyPlayer::changeCivics(boost::python::list& /*CivicTypes**/ paeNewCivics, bool bForce)
+{
+	int* pCivics = NULL;
+	gDLL->getPythonIFace()->putSeqInArray(paeNewCivics.ptr() /*src*/, &pCivics /*dst*/);
+	if (m_pPlayer)
+		m_pPlayer->changeCivics((CivicTypes*)pCivics, bForce);
+	delete [] pCivics;
+}
+bool CyPlayer::canChangeCivics(int /*CivicTypes**/ paeNewCivics)
+{
+	return m_pPlayer ? m_pPlayer->canChangeCivics((CivicTypes*)paeNewCivics) : false;
+}
+int CyPlayer::getCivicAnarchyLength(boost::python::list& /*CivicTypes**/ paeNewCivics)
+{
+	int* pCivics = NULL;
+	gDLL->getPythonIFace()->putSeqInArray(paeNewCivics.ptr() /*src*/, &pCivics /*dst*/);
+
+	int iRet = m_pPlayer ? m_pPlayer->getCivicAnarchyLength((CivicTypes*)pCivics) : -1;
+	delete [] pCivics;
+	return iRet;
+}
+int CyPlayer::getCivicUpkeep(boost::python::list& /*CivicTypes*/ paiCivics, bool bIgnoreAnarchy)
+{
+	int* pCivics = NULL;
+	gDLL->getPythonIFace()->putSeqInArray(paiCivics.ptr() /*src*/, &pCivics /*dst*/);
+	int iRet = m_pPlayer ? m_pPlayer->getCivicUpkeep((CivicTypes*)pCivics, bIgnoreAnarchy) : -1;
+	delete [] pCivics;
+	return iRet;
+}
+//tke Civics
 int CyPlayer::getMultiYieldRate(YieldTypes eIndex)
 {
 	return m_pPlayer ? m_pPlayer->getMultiYieldRate(eIndex) : -1;

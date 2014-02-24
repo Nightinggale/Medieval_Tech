@@ -530,6 +530,33 @@ public:
     void setDefaultPopUnit(UnitTypes eUnit);
 	bool getTechsInitialized() const;
 	///TKs Med
+	///Tk Civics
+	int getAnarchyTurns() const;
+	bool isAnarchy() const;
+	void changeAnarchyTurns(int iChange);
+	int getMaxAnarchyTurns() const;
+	void updateMaxAnarchyTurns();
+	int getAnarchyModifier() const;
+	void changeAnarchyModifier(int iChange);
+	bool canChangeCivics(CivicTypes* paeNewCivics) const;
+	void changeCivics(CivicTypes* paeNewCivics, bool bForce);
+	int getRevolutionTimer() const;
+	void setRevolutionTimer(int iNewValue);
+	void changeRevolutionTimer(int iChange);
+	int getConversionTimer() const;
+	void setConversionTimer(int iNewValue);
+	void changeConversionTimer(int iChange);
+	int getCivicAnarchyLength(CivicTypes* paeNewCivics) const;
+	int getSingleCivicUpkeep(CivicTypes eCivic, bool bIgnoreAnarchy) const;
+	int getCivicUpkeep(CivicTypes* paeCivics, bool bIgnoreAnarchy) const;
+	int getUpkeepModifier() const;
+	void changeUpkeepModifier(int iChange);
+	int getUpkeepCount(YieldTypes eIndex) const;
+	void changeUpkeepCount(YieldTypes eIndex, int iChange);
+	/*int getHasCivicOptionCount(CivicOptionTypes eIndex) const;
+	bool isHasCivicOption(CivicOptionTypes eIndex) const;
+	void changeHasCivicOptionCount(CivicOptionTypes eIndex, int iChange);*/
+	//Tk Civics End
 	DllExport CvCity* getTradeFairCity() const;
 	void setTradeFairCity(CvCity* pTradeFairCity);
 	bool canMakeVassalDemand(PlayerTypes eVassal);
@@ -793,6 +820,14 @@ protected:
 	int m_iMissionaryRateModifier;
 	int m_iMissionarySuccessPercent;
     ///TKs Invention Core Mod v 1.0
+	///Tks CivicsStart
+	int m_iAnarchyTurns;
+	int m_iMaxAnarchyTurns;
+	int m_iAnarchyModifier;
+	int m_iRevolutionTimer;
+	int m_iConversionTimer;
+	int m_iUpkeepModifier;
+	///Tks CivicsEnd
     int m_iTradeFairCityID;
     int m_iProlificInventorModifier;
 	int m_iProlificInventorThresholdModifier;
@@ -855,6 +890,9 @@ protected:
 	int* m_aiVictoryYieldCount;
 	int* m_aiCensureTypes;
 	///TKs Med
+	///TK Civics
+	//int* m_paiHasCivicOptionCount;
+	int* m_paiUpkeepCount;
 	int* m_aiTradeRouteStartingPlotX;
 	int* m_aiTradeRouteStartingPlotY;
 	bool* m_abTradeRouteTypes;

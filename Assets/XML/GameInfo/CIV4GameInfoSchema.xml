@@ -485,9 +485,16 @@
 		<element type="YieldType"/>
 		<element type="iChange"/>
 	</ElementType>
+  <ElementType name="UpkeepYield" content="eltOnly">
+    <element type="YieldType"/>
+    <element type="iChange"/>
+  </ElementType>
 	<ElementType name="AllowsYields" content="eltOnly">
 		<element type="AllowsYield" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
+  <ElementType name="UpkeepYields" content="eltOnly">
+    <element type="UpkeepYield" minOccurs="0" maxOccurs="*"/>
+  </ElementType>
 	<ElementType name="AllowsBuildingType" content="eltOnly">
 		<element type="BuildingType"/>
 		<element type="iChange"/>
@@ -581,7 +588,8 @@
 	<ElementType name="iFoundCityType" content="textOnly"/>
 	<ElementType name="iIncreaseCityPopulation" content="textOnly" dt:type="int"/>
 	<ElementType name="iFatherPointModifier" content="textOnly" dt:type="int"/>
-	<ElementType name="bRevolutionEuropeTrade" content="textOnly" dt:type="boolean"/>
+  <ElementType name="iAnarchyLength" content="textOnly" dt:type="int"/>
+  <ElementType name="bRevolutionEuropeTrade" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bAllowsMapTrade" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bNoGoodyTech" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bNoArrowinTechScreen" content="textOnly" dt:type="boolean"/>
@@ -628,6 +636,7 @@
 		<element type="RequiredYields" minOccurs="0"/>
 		<element type="RequiredFatherPoints" minOccurs="0"/>
 		<element type="iCostToResearch" minOccurs="0"/>
+    <element type="UpkeepYields" minOccurs="0"/>
 		<element type="AllowsYields" minOccurs="0"/>
 		<element type="AllowsBuildingTypes" minOccurs="0"/>
 		<element type="AllowsUnitClasses" minOccurs="0"/>
@@ -653,7 +662,8 @@
 		<element type="bNoArrowinTechScreen" minOccurs="0"/>
 		<element type="bisNoneTradeable" minOccurs="0"/>
 		<element type="bNoGoodyTech" minOccurs="0"/>
-		<element type="iIncreasedEnemyHealRate" minOccurs="0"/>
+		<element type="iAnarchyLength" minOccurs="0"/>
+    <element type="iIncreasedEnemyHealRate" minOccurs="0"/>
 		<element type="iFreeHurriedImmigrants" minOccurs="0"/>
 		<element type="iCheaperPopulationGrowth" minOccurs="0"/>
 		<element type="iCenterPlotFoodBonus" minOccurs="0"/>
@@ -675,6 +685,7 @@
 	<ElementType name="iGrowthPercent" content="textOnly" dt:type="int"/>
 	<ElementType name="iStoragePercent" content="textOnly" dt:type="int"/>
 	<ElementType name="iTrainPercent" content="textOnly" dt:type="int"/>
+  <ElementType name="iAnarchyPercent" content="textOnly" dt:type="int"/>
 	<ElementType name="iConstructPercent" content="textOnly" dt:type="int"/>
 	<ElementType name="iGreatGeneralPercent" content="textOnly" dt:type="int"/>
 	<ElementType name="iEventChancePerTurn" content="textOnly" dt:type="int"/>
@@ -700,6 +711,7 @@
 		<element type="iGreatGeneralPercent"/>
 		<element type="iRevolutionTurns"/>
 		<element type="GameTurnInfos"/>
+    <element type="iAnarchyPercent" minOccurs="0"/>
 		<element type="TradeRouteTripLengths" minOccurs="0"/>
 	</ElementType>
 	<ElementType name="GameSpeedInfos" content="eltOnly">
@@ -843,6 +855,7 @@
 		<!-- JAnimals Mod End -->
 		<element type="bNoGoodies"/>
 		<element type="bRevolution"/>
+    <element type="iAnarchyPercent" minOccurs="0"/>
 		<element type="iGameTurn"/>
 		<element type="iAdvancedStartPoints"/>
 		<element type="iStartingUnitMultiplier"/>

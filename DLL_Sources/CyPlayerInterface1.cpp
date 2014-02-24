@@ -75,6 +75,12 @@ void CyPlayerPythonInterface1(python::class_<CyPlayer>& x)
 		.def("canBuild", &CyPlayer::canBuild, "bool (CyPlot* pPlot, int (BuildTypes) eBuild, bool bTestEra, bool bTestVisible)")
 		.def("calculateTotalYield", &CyPlayer::calculateTotalYield, "int (int /*YieldTypes*/ eYield) - Returns the total sum of all city yield")
 		.def("isCivic", &CyPlayer::isCivic, "bool (int (CivicTypes) eCivic)")
+		///TKs Civics
+		.def("changeCivics", &CyPlayer::changeCivics, "void (int (CivicTypes*) paeNewCivics, bool bForce)")
+		.def("canChangeCivics", &CyPlayer::canChangeCivics, "bool (int (CivicTypes*) paeNewCivics)")
+		.def("getCivicAnarchyLength", &CyPlayer::getCivicAnarchyLength, "int (int (CivicTypes*) paeNewCivics)")
+		.def("getCivicUpkeep", &CyPlayer::getCivicUpkeep, "int (int* /*CivicTypes*/ paiCivics, bool bIgnoreAnarchy)")
+		///Tke
 		///Tks Med
 		.def("getMultiYieldRate", &CyPlayer::getMultiYieldRate, "int (YieldTypes eIndex)")
 		///TKs Invention Core Mod v 1.0

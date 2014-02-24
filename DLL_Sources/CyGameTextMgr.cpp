@@ -118,6 +118,14 @@ std::wstring CyGameTextMgr::getYieldsHelp(int iYield, bool bCivilopediaText)
 	GAMETEXT.setYieldsHelp(szBuffer, (YieldTypes)iYield, bCivilopediaText);
 	return szBuffer.getCString();
 }
+
+//Tks Civics
+std::wstring CyGameTextMgr::setRevolutionHelp(int iPlayer)
+{
+	CvWStringBuffer szBuffer;
+	GAMETEXT.setRevolutionHelp(szBuffer, (PlayerTypes)iPlayer);
+	return szBuffer.getCString();
+}
 ///TKs Invention Core Mod v 1.0
 std::wstring CyGameTextMgr::parseCivicInfo(int /*CivicTypes*/ iCivicType, bool bCivilopediaText, bool bPlayerContext, bool bSkipName, bool bOnlyCost, int /*CivilizationTypes*/ eCivilization)
 {

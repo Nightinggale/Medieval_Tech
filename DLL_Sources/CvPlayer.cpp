@@ -58,16 +58,16 @@ CvPlayer::CvPlayer()
 	m_aiMissionaryThresholdMultiplier = new int[MAX_PLAYERS];
 	///TKs Invention Core Mod v 1.0
     m_aiVictoryYieldCount = new int[NUM_YIELD_TYPES];
+	//TKs Civics
+	m_paiUpkeepCount = new int[NUM_YIELD_TYPES];
+	//Tke
     ///TKs Med
     m_aiCensureTypes = new int[NUM_CENSURE_TYPES];
-    //m_aiTradeRouteStartingPlotX = new int[NUM_YIELD_TYPES];
-    //m_aiTradeRouteStartingPlotY = new int[NUM_YIELD_TYPES];
-	//m_abTradeRouteTypes = new bool[GC.getNumEuropeInfos()];
     ///TKe
 	m_abYieldEuropeTradable = new bool[NUM_YIELD_TYPES];
 	m_abFeatAccomplished = new bool[NUM_FEAT_TYPES];
 	m_abOptions = new bool[NUM_PLAYEROPTION_TYPES];
-
+	//Tks Civics
     ///TKs Invention Core Mod v 1.0
 	m_aiTradeRouteStartingPlotX = NULL;
 	m_aiTradeRouteStartingPlotY = NULL;
@@ -93,7 +93,6 @@ CvPlayer::CvPlayer()
 	m_aiTraitCount = NULL;
 
 	m_paeCivics = NULL;
-
 	m_ppiImprovementYieldChange = NULL;
 	m_ppiBuildingYieldChange = NULL;
 
@@ -122,6 +121,9 @@ CvPlayer::~CvPlayer()
 	SAFE_DELETE_ARRAY(m_aiMissionaryThresholdMultiplier);
 	///TKs Invention Core Mod v 1.0
 	SAFE_DELETE_ARRAY(m_aiVictoryYieldCount);
+	//Tks Civics
+	SAFE_DELETE_ARRAY(m_paiUpkeepCount);
+	///TKe
 	SAFE_DELETE_ARRAY(m_aiCensureTypes);
 	//SAFE_DELETE_ARRAY(m_aiTradeRouteStartingPlotX);
 	//SAFE_DELETE_ARRAY(m_aiTradeRouteStartingPlotY);
@@ -228,6 +230,12 @@ void CvPlayer::init(PlayerTypes eID)
 
 		for (int iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
 		{
+			//Tks Civics
+			if (iI == CIVICOPTION_INVENTIONS)
+			{
+				continue;
+			}
+			//Tke
 			setCivic(((CivicOptionTypes)iI), ((CivicTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationInitialCivics(iI))));
 		}
 
@@ -473,6 +481,14 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	m_bTechsInitialized = false;
 	m_bAllResearchComplete = false;
 	m_bFirstCityRazed = false;
+	///Tks CivicsStart
+	m_iAnarchyTurns = 0;
+	m_iMaxAnarchyTurns = 0;
+	m_iAnarchyModifier = 0;
+	m_iRevolutionTimer = 0;
+	m_iConversionTimer = 0;
+	m_iUpkeepModifier = 0;
+	///Tks CivicsEnd
 	///Tks Med
 	m_iGoldPlundered = 0;
 	m_iMissionsActive = 0;
@@ -531,6 +547,9 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 		m_aiYieldBoughtTotal[iI] = 0;
 		///TKs Invention Core Mod v 1.0
 		m_aiVictoryYieldCount[iI] = 0;
+		///Tke Civics
+		m_paiUpkeepCount[iI] = 0;
+		//tke
 		///TKe
 		m_abYieldEuropeTradable[iI] = true;
 		m_aiTaxYieldModifierCount[iI] = 0;
@@ -540,19 +559,7 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	{
 	    m_aiCensureTypes[iI] = 0;
 	}
-	//for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
-	//{
-	    //m_aiTradeRouteStartingPlotX[iI] = INVALID_PLOT_COORD;
-	//}
-	//for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
-	//{
-	    //m_aiTradeRouteStartingPlotY[iI] = INVALID_PLOT_COORD;
-	//}
-	//for (iI = 0; iI < GC.getNumEuropeInfos(); iI++)
-	//{
-	   // m_abTradeRouteTypes[iI] = true;
-	//}
-    ///TKe
+
 	for (iI = 0; iI < MAX_PLAYERS; ++iI)
 	{
 		m_aiMissionaryPoints[iI] = 0;
@@ -568,6 +575,8 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	{
 		m_abOptions[iI] = false;
 	}
+	
+
 	m_szScriptData = "";
 
 	if (!bConstructorCall)
@@ -2468,6 +2477,11 @@ void CvPlayer::doTurn()
 
 	///TKs Invention Core Mod v 1.0
 	doIdeas();
+	//TkCivics
+	if (getRevolutionTimer() > 0)
+	{
+		changeRevolutionTimer(-1);
+	}
 	///Tks Med
 	if (getCensureType(CENSURE_EXCOMMUNICATION) > 0)
 	{
@@ -2654,6 +2668,7 @@ void CvPlayer::doTurnUnits()
 
 void CvPlayer::verifyCivics()
 {
+	
 	for (int iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
 	{
 	    ///TK Update 1.1b
@@ -6053,8 +6068,28 @@ bool CvPlayer::canDoCivics(CivicTypes eCivic) const
 
 			return true;
 	}
-	///TKe
+	
+	/*if (isHuman())
+	{
+		if (eCivic == NO_CIVIC)
+		{
+			return false;
+		}
 
+
+	}*/
+	if (eCivic != NO_CIVIC)
+	{
+		CvCivicInfo& kCivicInfo = GC.getCivicInfo(eCivic);
+		if (kCivicInfo.getRequiredInvention() != NO_CIVIC)
+		{
+			if (getIdeasResearched((CivicTypes)kCivicInfo.getRequiredInvention()) == 0)
+			{
+				return false;
+			}
+		}
+	}
+	///TKe
 	if (eCivic == NO_CIVIC)
 	{
 		return true;
@@ -8248,6 +8283,7 @@ void CvPlayer::setCivic(CivicOptionTypes eIndex, CivicTypes eNewValue)
    // bool bIdea = false;
     if (eIndex == CIVICOPTION_INVENTIONS)
     {
+		m_paeCivics[eIndex] = NO_CIVIC;
         return;
         //eOldCivic = NO_CIVIC;
         //bIdea = true;
@@ -11580,6 +11616,9 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(NUM_YIELD_TYPES, m_aiYieldBoughtTotal);
 	///TKs Invention Core Mod v 1.0
 	pStream->Read(NUM_YIELD_TYPES, m_aiVictoryYieldCount);
+	///Tks Civics
+	pStream->Read(NUM_YIELD_TYPES, m_paiUpkeepCount);
+	//Tke Civics
 	pStream->Read(NUM_CENSURE_TYPES, m_aiCensureTypes);
 	pStream->Read(GC.getNumEuropeInfos(), m_aiTradeRouteStartingPlotX);
 	pStream->Read(GC.getNumEuropeInfos(), m_aiTradeRouteStartingPlotY);
@@ -11918,6 +11957,14 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iDoTechFlag);
 	pStream->Read(&m_iEventResetTimer);
 	pStream->Read(&m_iCurrentFoundCityType);
+	///Tks CivicsStart
+	pStream->Read(&m_iAnarchyTurns);
+	pStream->Read(&m_iMaxAnarchyTurns);
+	pStream->Read(&m_iAnarchyModifier);
+	pStream->Read(&m_iRevolutionTimer);
+	pStream->Read(&m_iConversionTimer);
+	pStream->Read(&m_iUpkeepModifier);
+	///Tks CivicsEnd
 	pStream->Read(&m_iGoldPlundered);
 	pStream->Read(&m_iMissionsActive);
 	pStream->Read(&m_iVillages);
@@ -12020,6 +12067,9 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(NUM_YIELD_TYPES, m_aiYieldBoughtTotal);
 	///TKs Invention Core Mod v 1.0
 	pStream->Write(NUM_YIELD_TYPES, m_aiVictoryYieldCount);
+	//TKs CIvics
+	pStream->Write(NUM_YIELD_TYPES, m_paiUpkeepCount);
+	///tke
 	pStream->Write(NUM_CENSURE_TYPES, m_aiCensureTypes);
 	pStream->Write(GC.getNumEuropeInfos(), m_aiTradeRouteStartingPlotX);
 	pStream->Write(GC.getNumEuropeInfos(), m_aiTradeRouteStartingPlotY);
@@ -12318,6 +12368,14 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(m_iDoTechFlag);
 	pStream->Write(m_iEventResetTimer);
 	pStream->Write(m_iCurrentFoundCityType);
+	///Tks CivicsStart
+	pStream->Write(m_iAnarchyTurns);
+	pStream->Write(m_iMaxAnarchyTurns);
+	pStream->Write(m_iAnarchyModifier);
+	pStream->Write(m_iRevolutionTimer);
+	pStream->Write(m_iConversionTimer);
+	pStream->Write(m_iUpkeepModifier);
+	///Tks CivicsEnd
 	pStream->Write(m_iGoldPlundered);
 	pStream->Write(m_iMissionsActive);
 	pStream->Write(m_iVillages);
@@ -14613,6 +14671,449 @@ CvCity* CvPlayer::getPopulationUnitCity(int iUnitId) const
 	return NULL;
 }
 ///TKs Med
+///Tk Civics********
+int CvPlayer::getAnarchyTurns() const																			
+{
+	return m_iAnarchyTurns;
+}
+
+
+bool CvPlayer::isAnarchy() const																						
+{
+	return (getAnarchyTurns() > 0);
+}
+
+
+void CvPlayer::changeAnarchyTurns(int iChange)
+{
+	bool bOldAnarchy;
+
+	if (iChange != 0)
+	{
+		bOldAnarchy = isAnarchy();
+
+		m_iAnarchyTurns = (m_iAnarchyTurns + iChange);
+		FAssert(getAnarchyTurns() >= 0);
+
+		if (bOldAnarchy != isAnarchy())
+		{
+			//updateCommerce();
+			//updateMaintenance();
+			//updateTradeRoutes();
+			//updateCorporation();
+
+			AI_makeAssignWorkDirty();
+			///MESSAGE ADDEED!!!!!!!!!!!!
+			if (isAnarchy())
+			{
+				gDLL->getInterfaceIFace()->addMessage(getID(), true, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_MISC_REVOLUTION_HAS_BEGUN").GetCString(), "AS2D_REVOLTSTART", MESSAGE_TYPE_MAJOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WARNING_TEXT"));
+			}
+			else
+			{
+				gDLL->getInterfaceIFace()->addMessage(getID(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_MISC_REVOLUTION_OVER").GetCString(), "AS2D_REVOLTEND", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WARNING_TEXT"));
+			}
+
+			if (getID() == GC.getGameINLINE().getActivePlayer())
+			{
+				gDLL->getInterfaceIFace()->setDirty(MiscButtons_DIRTY_BIT, true);
+			}
+
+			if (getTeam() == GC.getGameINLINE().getActiveTeam())
+			{
+				gDLL->getInterfaceIFace()->setDirty(CityInfo_DIRTY_BIT, true);
+			}
+		}
+
+		if (getID() == GC.getGameINLINE().getActivePlayer())
+		{
+			gDLL->getInterfaceIFace()->setDirty(GameData_DIRTY_BIT, true);
+		}
+	}
+}
+
+
+int CvPlayer::getMaxAnarchyTurns() const																		 
+{
+	return m_iMaxAnarchyTurns;
+}
+
+
+void CvPlayer::updateMaxAnarchyTurns()
+{
+	int iBestValue;
+	int iI;
+	///DEFINE INTEGER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	//iBestValue = GC.getDefineINT("MAX_ANARCHY_TURNS");
+	iBestValue = 100;
+	FAssertMsg((GC.getNumTraitInfos() > 0), "GC.getNumTraitInfos() is less than or equal to zero but is expected to be larger than zero in CvPlayer::updateMaxAnarchyTurns");
+	for (iI = 0; iI < GC.getNumTraitInfos(); iI++)
+	{
+		if (hasTrait((TraitTypes)iI))
+		{
+			if (GC.getTraitInfo((TraitTypes)iI).getMaxAnarchy() >= 0)
+			{
+				if (GC.getTraitInfo((TraitTypes)iI).getMaxAnarchy() < iBestValue)
+				{
+					iBestValue = GC.getTraitInfo((TraitTypes)iI).getMaxAnarchy();
+				}
+			}
+		}
+	}
+
+	m_iMaxAnarchyTurns = iBestValue;
+	FAssert(getMaxAnarchyTurns() >= 0);
+}
+
+
+int CvPlayer::getAnarchyModifier() const
+{
+	return m_iAnarchyModifier;
+}
+
+int CvPlayer::getRevolutionTimer() const	
+{
+	return m_iRevolutionTimer;
+}
+
+
+void CvPlayer::setRevolutionTimer(int iNewValue)
+{
+	if (getRevolutionTimer() != iNewValue)
+	{
+		m_iRevolutionTimer = iNewValue;
+		FAssert(getRevolutionTimer() >= 0);
+
+		if (getID() == GC.getGameINLINE().getActivePlayer())
+		{
+			gDLL->getInterfaceIFace()->setDirty(MiscButtons_DIRTY_BIT, true);
+		}
+	}
+}
+
+
+void CvPlayer::changeRevolutionTimer(int iChange)
+{
+	setRevolutionTimer(getRevolutionTimer() + iChange);
+}
+
+
+int CvPlayer::getConversionTimer() const	
+{
+	return m_iConversionTimer;
+}
+
+
+void CvPlayer::setConversionTimer(int iNewValue)
+{
+	if (getConversionTimer() != iNewValue)
+	{
+		m_iConversionTimer = iNewValue;
+		FAssert(getConversionTimer() >= 0);
+
+		if (getID() == GC.getGameINLINE().getActivePlayer())
+		{
+			gDLL->getInterfaceIFace()->setDirty(MiscButtons_DIRTY_BIT, true);
+		}
+	}
+}
+
+
+void CvPlayer::changeConversionTimer(int iChange)
+{
+	setConversionTimer(getConversionTimer() + iChange);
+}
+
+void CvPlayer::changeAnarchyModifier(int iChange)
+{
+	if (0 != iChange)
+	{
+	m_iAnarchyModifier += iChange;
+
+		setRevolutionTimer(std::max(0, ((100 + iChange) * getRevolutionTimer()) / 100));
+		setConversionTimer(std::max(0, ((100 + iChange) * getConversionTimer()) / 100));
+	}
+}
+
+int CvPlayer::getUpkeepModifier() const
+{
+	return m_iUpkeepModifier;
+}
+
+
+void CvPlayer::changeUpkeepModifier(int iChange)
+{
+	m_iUpkeepModifier = (m_iUpkeepModifier + iChange);
+}
+
+void CvPlayer::changeUpkeepCount(YieldTypes eIndex, int iChange)
+{
+	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
+	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
+
+	if (iChange != 0)
+	{
+		FAssertMsg(m_paiUpkeepCount != NULL, "m_paiUpkeepCount is not expected to be equal with NULL");
+		m_paiUpkeepCount[eIndex] = (m_paiUpkeepCount[eIndex] + iChange);
+		FAssertMsg(getUpkeepCount(eIndex) >= 0, "getUpkeepCount(eIndex) is expected to be non-negative (invalid Index)");
+
+		if (getID() == GC.getGameINLINE().getActivePlayer())
+		{
+			gDLL->getInterfaceIFace()->setDirty(GameData_DIRTY_BIT, true);
+		}
+	}
+}
+
+int CvPlayer::getUpkeepCount(YieldTypes eIndex) const
+{
+	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
+	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
+	FAssertMsg(m_paiUpkeepCount != NULL, "m_paiUpkeepCount is not expected to be equal with NULL");
+	return m_paiUpkeepCount[eIndex];
+}
+
+int CvPlayer::getSingleCivicUpkeep(CivicTypes eCivic, bool bIgnoreAnarchy) const
+{
+	int iUpkeep;
+
+	if (eCivic == NO_CIVIC)
+	{
+		return 0;
+	}
+
+	//if (isNoCivicUpkeep((CivicOptionTypes)(GC.getCivicInfo(eCivic).getCivicOptionType())))
+	//{
+		//return 0;
+	//}
+	bool bYieldUpkeepFound = false;
+	for (int iI = 0; NUM_YIELD_TYPES; iI++)
+	{
+		if (GC.getCivicInfo(eCivic).getUpkeepYields((YieldTypes)iI) == 0)
+		{
+			bYieldUpkeepFound = true;
+			break;
+		}
+	}
+
+	if (!bYieldUpkeepFound)
+	{
+		return 0;
+	}
+
+	if (!bIgnoreAnarchy)
+	{
+		if (isAnarchy())
+		{
+			return 0;
+		}
+	}
+
+	iUpkeep = 0;
+
+	//iUpkeep += ((std::max(0, (getTotalPopulation() + GC.getDefineINT("UPKEEP_POPULATION_OFFSET") - GC.getCivicInfo(eCivic).getCivicOptionType())) * GC.getUpkeepInfo((UpkeepTypes)(GC.getCivicInfo(eCivic).getUpkeep())).getPopulationPercent()) / 100);
+	//iUpkeep += ((std::max(0, (getNumCities() + GC.getDefineINT("UPKEEP_CITY_OFFSET") + GC.getCivicInfo(eCivic).getCivicOptionType() - (GC.getNumCivicOptionInfos() / 2))) * GC.getUpkeepInfo((UpkeepTypes)(GC.getCivicInfo(eCivic).getUpkeep())).getCityPercent()) / 100);
+
+	iUpkeep *= std::max(0, (getUpkeepModifier() + 100));
+	iUpkeep /= 100;
+
+	//iUpkeep *= GC.getHandicapInfo(getHandicapType()).getCivicUpkeepPercent();
+	iUpkeep /= 100;
+
+	if (!isHuman() && !isNative())
+	{
+		//iUpkeep *= GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getAICivicUpkeepPercent();
+		iUpkeep /= 100;
+
+		iUpkeep *= std::max(0, ((GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getAIPerEraModifier() * getCurrentEra()) + 100));
+		iUpkeep /= 100;
+	}
+
+	return std::max(0, iUpkeep);
+}
+
+
+int CvPlayer::getCivicUpkeep(CivicTypes* paeCivics, bool bIgnoreAnarchy) const
+{
+	int iTotalUpkeep;
+	int iI;
+
+	if (paeCivics == NULL)
+	{
+		paeCivics = m_paeCivics;
+	}
+
+	iTotalUpkeep = 0;
+
+	for (iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
+	{
+		iTotalUpkeep += getSingleCivicUpkeep(paeCivics[iI], bIgnoreAnarchy);
+	}
+
+	return iTotalUpkeep;
+}
+
+bool CvPlayer::canChangeCivics(CivicTypes* paeNewCivics) const
+{
+	int iI;
+
+	if (isAnarchy())
+	{
+		return false;
+	}
+
+	if (getRevolutionTimer() > 0)
+	{
+		return false;
+	}
+
+	if (paeNewCivics == NULL)
+	{
+		// XXX is this necessary?
+		for (iI = 0; iI < GC.getNumCivicInfos(); iI++)
+		{
+			if (canDoCivics((CivicTypes)iI))
+			{
+				if (getCivic((CivicOptionTypes)GC.getCivicInfo((CivicTypes) iI).getCivicOptionType()) != iI)
+				{
+					return true;
+				}
+			}
+		}
+	}
+	else
+	{
+		for (iI = 0; iI < GC.getNumCivicOptionInfos(); ++iI)
+		{
+			/*if (GC.getGameINLINE().isForceCivicOption((CivicOptionTypes)iI))
+			{
+				if (!GC.getGameINLINE().isForceCivic(paeNewCivics[iI]))
+				{
+					return false;
+				}
+			}*/
+
+			if (getCivic((CivicOptionTypes)iI) != paeNewCivics[iI])
+			{
+				return true;
+			}
+		}
+	}
+
+	return false;
+}
+
+int CvPlayer::getCivicAnarchyLength(CivicTypes* paeNewCivics) const
+{
+	bool bChange;
+	int iAnarchyLength;
+	int iI;
+
+	if (getMaxAnarchyTurns() == 0)
+	{
+		return 0;
+	}
+
+	//if (isGoldenAge())
+	//{
+		//return 0;
+	//}
+
+	iAnarchyLength = 0;
+
+	bChange = false;
+
+	for (iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
+	{
+		if (paeNewCivics[iI] != getCivic((CivicOptionTypes)iI))
+		{
+			iAnarchyLength += GC.getCivicInfo(paeNewCivics[iI]).getAnarchyLength();
+
+			bChange = true;
+		}
+	}
+
+	if (bChange)
+	{
+		///DEFINE INT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		//iAnarchyLength += GC.getDefineINT("BASE_CIVIC_ANARCHY_LENGTH");
+		iAnarchyLength += 1;
+
+		//iAnarchyLength += ((getNumCities() * GC.getWorldInfo(GC.getMapINLINE().getWorldSize()).getNumCitiesAnarchyPercent()) / 100);
+	}
+
+	iAnarchyLength = ((iAnarchyLength * std::max(0, (getAnarchyModifier() + 100))) / 100);
+
+	if (iAnarchyLength == 0)
+	{
+		return 0;
+	}
+
+	iAnarchyLength *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getAnarchyPercent();
+	iAnarchyLength /= 100;
+
+	iAnarchyLength *= GC.getEraInfo(GC.getGameINLINE().getStartEra()).getAnarchyPercent();
+	iAnarchyLength /= 100;
+
+	return range(iAnarchyLength, 1, getMaxAnarchyTurns());
+}
+
+void CvPlayer::changeCivics(CivicTypes* paeNewCivics, bool bForce)
+{
+	int iAnarchyLength;
+	int iI;
+
+	if (!bForce && !canChangeCivics(paeNewCivics))
+	{
+		return;
+	}
+
+	iAnarchyLength = getCivicAnarchyLength(paeNewCivics);
+
+	if (iAnarchyLength > 0)
+	{
+		changeAnarchyTurns(iAnarchyLength);
+
+		for (iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
+		{
+			setCivic(((CivicOptionTypes)iI), paeNewCivics[iI]);
+		}
+	}
+	else
+	{
+		for (iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
+		{
+			setCivic(((CivicOptionTypes)iI), paeNewCivics[iI]);
+		}
+	}
+
+	setRevolutionTimer(std::max(1, ((100 + getAnarchyModifier()) * GC.getDefineINT("MIN_REVOLUTION_TURNS")) / 100) + iAnarchyLength);
+
+	if (getID() == GC.getGameINLINE().getActivePlayer())
+	{
+		gDLL->getInterfaceIFace()->setDirty(Popup_DIRTY_BIT, true); // to force an update of the civic chooser popup
+	}
+}
+
+//int CvPlayer::getHasCivicOptionCount(CivicOptionTypes eIndex) const
+//{
+//	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
+//	FAssertMsg(eIndex < GC.getNumCivicOptionInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
+//	return m_paiHasCivicOptionCount[eIndex];
+//}
+//
+//
+//bool CvPlayer::isHasCivicOption(CivicOptionTypes eIndex) const
+//{
+//	return (getHasCivicOptionCount(eIndex) > 0);
+//}
+//
+//void CvPlayer::changeHasCivicOptionCount(CivicOptionTypes eIndex, int iChange)
+//{
+//	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
+//	FAssertMsg(eIndex < GC.getNumCivicOptionInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
+//	m_paiHasCivicOptionCount[eIndex] = (m_paiHasCivicOptionCount[eIndex] + iChange);
+//	FAssert(getHasCivicOptionCount(eIndex) >= 0);
+//}
+///Tke Civics End
 int CvPlayer::getYieldSellPrice(YieldTypes eYield, EuropeTypes eTradeScreen) const
 {
 	FAssert(eYield >= 0);
@@ -15049,7 +15550,7 @@ CvUnit* CvPlayer::buyEuropeUnit(UnitTypes eUnit, int iPriceModifier, EuropeTypes
 		    if (eTradeScreen != NO_EUROPE)
             {
                 CvPlot* pStartingTradePlot = getStartingTradeRoutePlot(eTradeScreen);
-                if (!pStartingPlot->isTradeScreenAccessPlot(eTradeScreen) && pStartingTradePlot == NULL)
+                if (!pStartingPlot->isTradeScreenAccessPlot(eTradeScreen) != eTradeScreen && pStartingTradePlot == NULL)
                 {
                     CvPlot* pNewPlot = NULL;
                     CvCity* pPortCity = GC.getMapINLINE().findCity(pStartingPlot->getX_INLINE(), pStartingPlot->getY_INLINE(), getID(), NO_TEAM, false, true);

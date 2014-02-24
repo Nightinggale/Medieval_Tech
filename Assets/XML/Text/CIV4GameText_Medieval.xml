@@ -13,6 +13,70 @@
 		<Italian></Italian>
 		<Spanish></Spanish>
 	</TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_SCREEN_TITLE</Tag>
+    <English>Decrees</English>
+    <French>Decrees</French>
+    <German>Decrees</German>
+    <Italian>Decrees</Italian>
+    <Spanish>Decrees</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MISC_ANOTHER_REVOLUTION_RECENTLY</Tag>
+    <English>[SPACE]because of recent Resolution</English>
+    <French>[SPACE]&#224; cause d'une r&#233;solution</French>
+    <German>[SPACE]wegen k&#252;rzlicher Resolution</German>
+    <Italian>[SPACE]C'&#232; stata un'altra risoluzione recentemente</Italian>
+    <Spanish>[SPACE]debido a una reciente resoluci&#243;n</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MISC_WAIT_MORE_TURNS</Tag>
+    <English>Wait %d1_Num more [NUM1:Turn:Turns]</English>
+    <French>Attendre encore %d1_Num [NUM1:tour:tours]</French>
+    <German>Noch %d1_Num [NUM1:Runde:Runden] warten</German>
+    <Italian>Aspetta %d1_Num [NUM1:turno:turni]</Italian>
+    <Spanish>Esperar %d1_Num [NUM1:turno:turnos] m&#225;s</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MISC_CANNOT_CHANGE_CIVICS</Tag>
+    <English>Cannot change Decrees</English>
+    <French>La doctrine choisie ne peut &#234;tre instaur&#233;e</French>
+    <German>Kann keine Staatsformen &#228;ndern</German>
+    <Italian>Impossibile cambiare con le forme di governo selezionate</Italian>
+    <Spanish>No se puede cambiar de principios</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MISC_WHILE_IN_ANARCHY</Tag>
+    <English>[SPACE]While in Anarchy</English>
+    <French>[SPACE]pendant l'anarchie</French>
+    <German>[SPACE]W&#228;hrend einer Anarchiephase</German>
+    <Italian>[SPACE]Mentre si &#232; in anarchia</Italian>
+    <Spanish>[SPACE]mientras reina la anarqu&#237;a</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_ANARCHY_TURNS</Tag>
+    <English>%d1 [NUM1:Turn:Turns] for Resolution</English>
+    <French>%d1 [NUM1:tour:tours] pour la r&#233;solution</French>
+    <German>%d1 [NUM1:Runde:Runden] bis zur Resolution</German>
+    <Italian>%d1 [NUM1:turno:turni] per la risoluzione</Italian>
+    <Spanish>%d1 [NUM1:turno:turnos] para la resoluci&#243;n</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_SCREEN_BEGIN_RESOLUTION</Tag>
+    <English>Begin Resolution</English>
+    <French>Begin Resolution</French>
+    <German>Begin Resolution</German>
+    <Italian>Begin Resolution</Italian>
+    <Spanish>Begin Resolution</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_SCREEN_UPKEEP</Tag>
+    <English>Upkeep: %d1[ICON_GOLD] per turn</English>
+    <French>Entretien : %d1[ICON_GOLD] par tour</French>
+    <German>Unterhalt: %d1[ICON_GOLD] pro Runde</German>
+    <Italian>Mantenimento: %d1[ICON_GOLD] per turno</Italian>
+    <Spanish>Mantenimiento: %d1 [ICON_GOLD] por turno</Spanish>
+  </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVICOPTION_INVENTIONS</Tag>
 		<English>Medieval Research</English>

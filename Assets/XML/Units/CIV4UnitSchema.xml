@@ -109,6 +109,7 @@
 	<ElementType name="iStudentWeight" content="textOnly" dt:type="int"/>
 	<ElementType name="iTeacherWeight" content="textOnly" dt:type="int"/>
 	<ElementType name="iTeachLevel" content="textOnly" dt:type="int"/>
+  <ElementType name="iFoodConsumed" content="textOnly" dt:type="int"/>
 	<!-- JAnimals Mod Start -->
 	<ElementType name="iAnimalPatrolWeight" content="textOnly" dt:type="int"/>
 	<ElementType name="iAnimalAttackWeight" content="textOnly" dt:type="int"/>
@@ -490,6 +491,7 @@
 		<element type="PrereqBuilding"/>
 		<element type="PrereqOrBuildings"/>
 		<element type="ProductionTraits"/>
+    <element type="iFoodConsumed" minOccurs="0"/>
 		<element type="iAIWeight"/>
 		<element type="YieldCosts"/>
 		<element type="iHurryCostModifier"/>
@@ -548,7 +550,7 @@
 		<element type="iStudentWeight"/>
 		<element type="iTeacherWeight"/>
 		<element type="iTeachLevel"/>
-		<!-- JAnimals Mod Start -->
+    <!-- JAnimals Mod Start -->
 		<element type="iAnimalPatrolWeight"/>
 		<element type="iAnimalAttackWeight"/>
 		<!-- JAnimals Mod End -->

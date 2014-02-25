@@ -6489,14 +6489,16 @@ bool CvUnit::canJoinCity(const CvPlot* pPlot, bool bTestVisible) const
 
 	if (!bTestVisible)
 	{
-		if (pCity->getRawYieldProduced(YIELD_FOOD) < pCity->getPopulation() * GC.getFOOD_CONSUMPTION_PER_POPULATION())
+		///Tks New Food
+		//if (pCity->getRawYieldProduced(YIELD_FOOD) < pCity->getPopulation() * GC.getFOOD_CONSUMPTION_PER_POPULATION())
+		if (pCity->getRawYieldProduced(YIELD_FOOD) < pCity->getMaxFoodConsumed())
 		{
 			if (!canJoinStarvingCity(*pCity))
 			{
 				return false;
 			}
 		}
-
+		///Tke
 		ProfessionTypes eProfession = getProfession();
 		if (eProfession == NO_PROFESSION || GC.getProfessionInfo(eProfession).isUnarmed() || GC.getProfessionInfo(eProfession).isCitizen())
 		{
@@ -6539,13 +6541,15 @@ bool CvUnit::canJoinStarvingCity(const CvCity& kCity) const
 	{
 		return true;
 	}
-
+	///Tks New FOod
 	int iNewPop = kCity.getPopulation() + 1;
-	if (kCity.AI_getFoodGatherable(iNewPop, 0) >= iNewPop * GC.getFOOD_CONSUMPTION_PER_POPULATION())
+	int iFoodConsumed = m_pUnitInfo->getFoodConsumed();
+	//if (kCity.AI_getFoodGatherable(iNewPop, 0) >= iNewPop * GC.getFOOD_CONSUMPTION_PER_POPULATION())
+	if (kCity.AI_getFoodGatherable(iNewPop, 0) >= kCity.getMaxFoodConsumed() + iFoodConsumed)
 	{
 		return true;
 	}
-
+	///tke
 	if (!isHuman())
 	{
 		ProfessionTypes eProfession = AI_getIdealProfession();

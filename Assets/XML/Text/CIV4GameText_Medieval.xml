@@ -953,6 +953,30 @@
 		<Italian>[ICON_BULLET]%D1_Change%% contro i Barbarians</Italian>
 		<Spanish>[ICON_BULLET]%D1_Change%% contra Barbarians</Spanish>
 	</TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MISC_REVOLUTION_HAS_BEGUN</Tag>
+    <English>The revolution has begun!!!</English>
+    <French>La r&#233;volution a &#233;clat&#233; !</French>
+    <German>Die Revolution hat begonnen!!!</German>
+    <Italian>La rivoluzione &#232; cominciata!</Italian>
+    <Spanish>Ha empezado la revoluci&#243;n.</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MISC_REVOLUTION_OVER</Tag>
+    <English>The anarchy is over! Your government is re-established.</English>
+    <French>L'anarchie a disparu ! Votre gouvernement a repris le contr&#244;le.</French>
+    <German>Die Anarchiephase ist vor&#252;ber! Eure Regierung wurde wieder eingesetzt.</German>
+    <Italian>L'anarchia &#232; terminata, &#232; stato ristabilito il governo.</Italian>
+    <Spanish>La anarqu&#237;a toca a su fin. Se ha restaurado vuestro gobierno.</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MISC_HELP_YIELD_DECRESS</Tag>
+    <English>[ICON_BULLET]%D1%%%F2 from Decrees</English>
+    <French>[ICON_BULLET]%D1%%%F2 (Decrees)</French>
+    <German>[ICON_BULLET]%D1%%%F2 Decrees</German>
+    <Italian>[ICON_BULLET]%D1%%%F2 Decrees</Italian>
+    <Spanish>[ICON_BULLET]%D1%% %F2 por Decrees</Spanish>
+  </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_HELP_YIELD_RESEARCH</Tag>
 		<English>[ICON_BULLET]%D1%%%F2 from %s3_research</English>
@@ -1137,6 +1161,22 @@
 		<Italian>[ICON_BULLET]-%d1% to land purchases</Italian>
 		<Spanish>[ICON_BULLET]-%d1% to land purchases</Spanish>
 	</TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_UNIT_CONSUMED_FOOD</Tag>
+    <English>[ICON_BULLET]Consumes %d1[ICON_FOOD]</English>
+    <French>[ICON_BULLET]Consumes %d1[ICON_FOOD]</French>
+    <German>[ICON_BULLET]Consumes %d1[ICON_FOOD]</German>
+    <Italian>[ICON_BULLET]Consumes %d1[ICON_FOOD]</Italian>
+    <Spanish>[ICON_BULLET]Consumes %d1[ICON_FOOD]</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_UNIT_CONSUMED_NO_FOOD</Tag>
+    <English>[ICON_BULLET]Consumes no [ICON_FOOD]</English>
+    <French>[ICON_BULLET]Consumes no [ICON_FOOD]</French>
+    <German>[ICON_BULLET]Consumes no [ICON_FOOD]</German>
+    <Italian>[ICON_BULLET]Consumes no [ICON_FOOD]</Italian>
+    <Spanish>[ICON_BULLET]Consumes no [ICON_FOOD]</Spanish>
+  </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_REHIBILITATE_HELP</Tag>
 		<English>[ICON_BULLET]Units working here also help reform Outlaws working in this town</English>

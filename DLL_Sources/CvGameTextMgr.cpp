@@ -5279,6 +5279,21 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 		}
 	}
     ///TKs Med
+	// Tk New Food
+	if (kUnitInfo.getFoodConsumed() != GC.getFOOD_CONSUMPTION_PER_POPULATION())
+	{
+		if (kUnitInfo.getFoodConsumed() > 0)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_UNIT_CONSUMED_FOOD", kUnitInfo.getFoodConsumed()));
+		}
+		else
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_UNIT_CONSUMED_NO_FOOD"));
+		}
+	}
+
     if (kUnitInfo.isPreventTraveling())
 	{
 		szBuffer.append(NEWLINE);
@@ -8683,20 +8698,20 @@ int CvGameTextMgr::setCityYieldModifierString(CvWStringBuffer& szBuffer, YieldTy
 
 	// Civics
 	int iCivicMod = 0;
-//	for (int i = 0; i < GC.getNumCivicOptionInfos(); i++)
-//	{
-//		if (NO_CIVIC != kOwner.getCivic((CivicOptionTypes)i) && (CivicOptionTypes)i != (CivicOptionTypes)GC.getDefineINT("CIVICOPTION_INVENTIONS"))
-//		{
-//			iCivicMod += GC.getCivicInfo(kOwner.getCivic((CivicOptionTypes)i)).getYieldModifier(eYieldType);
-//		}
-//	}
+	for (int i = 0; i < GC.getNumCivicOptionInfos(); i++)
+	{
+		if (NO_CIVIC != kOwner.getCivic((CivicOptionTypes)i) && (CivicOptionTypes)i != CIVICOPTION_INVENTIONS)
+		{
+			iCivicMod += GC.getCivicInfo(kOwner.getCivic((CivicOptionTypes)i)).getYieldModifier(eYieldType);
+		}
+	}
 
-//	if (0 != iCivicMod)
-//	{
-//		szBuffer.append(NEWLINE);
-//		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_CIVICS", iCivicMod, info.getChar()));
-//		iBaseModifier += iCivicMod;
-//	}
+	if (0 != iCivicMod)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_CIVICS", iCivicMod, info.getChar()));
+		iBaseModifier += iCivicMod;
+	}
 	///TKs Med
 	iCivicMod = 0;
 	for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); iCivic++)

@@ -156,7 +156,14 @@
 				</FreeYield>
 			</FreeYields>
 			<CapturedCityUnitClass>NONE</CapturedCityUnitClass>
-			<InitialCivics/>
+      <InitialCivics>
+        <CivicType>NONE</CivicType>
+        <CivicType>CIVIC_TRIBALISM</CivicType>
+        <CivicType>CIVIC_APATHY</CivicType>
+        <CivicType>CIVIC_LOCAL_TRADE</CivicType>
+        <CivicType>CIVIC_ANARCHIST</CivicType>
+        <CivicType>CIVIC_AGRICULTURE</CivicType>
+      </InitialCivics>
 			<Leaders>
 				<Leader>
 					<LeaderName>LEADER_OFFA</LeaderName>

@@ -6594,6 +6594,10 @@
 					<TradeScreen>TRADE_SCREEN_SPICE_ROUTE_MARKET</TradeScreen>
 					<iPricePercent>1000</iPricePercent>
 				</TradeScreenType>
+        <TradeScreenType>
+          <TradeScreen>TRADE_SCREEN_MOTHERLAND</TradeScreen>
+          <iPricePercent>1000</iPricePercent>
+        </TradeScreenType>
 			</TradeScreenTypes>
 			<iEuropeCostIncrease>300</iEuropeCostIncrease>
 			<iImmigrationWeight>50</iImmigrationWeight>
@@ -29792,6 +29796,7 @@
 			<PrereqBuilding>NONE</PrereqBuilding>
 			<PrereqOrBuildings/>
 			<ProductionTraits/>
+      <iFoodConsumed>1</iFoodConsumed>
 			<iAIWeight>0</iAIWeight>
 			<YieldCosts/>
 			<iHurryCostModifier>0</iHurryCostModifier>
@@ -29803,6 +29808,10 @@
 					<TradeScreen>TRADE_SCREEN_SPICE_ROUTE_MARKET</TradeScreen>
 					<iPricePercent>100</iPricePercent>
 				</TradeScreenType>
+        <TradeScreenType>
+          <TradeScreen>TRADE_SCREEN_MOTHERLAND</TradeScreen>
+          <iPricePercent>100</iPricePercent>
+        </TradeScreenType>
 			</TradeScreenTypes>
 			<iEuropeCostIncrease>50</iEuropeCostIncrease>
 			<iImmigrationWeight>0</iImmigrationWeight>

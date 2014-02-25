@@ -30,9 +30,6 @@
 
 CvCity::CvCity()
 {
-    ///Kailric Fort Mod Start
-    ///m_aForts_to_Support = new int[GC.getDefineINT("TK_MAX_FORTS_PER_CITY")];
-    ///Kailric Fort Mod end
     ///Tks Med
     m_aiEventTimers = new int[2];
     //m_abTradePostBuilt = new bool[MAX_TEAMS];
@@ -520,6 +517,7 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 	m_iCenterPlotBonus = 0;
     m_iMaxCityPop = 0;
     m_iDetectMaraudersRange = 0;
+	m_iMaxFoodConsumed = 0;
     ///TKe
 	m_iEducationThresholdMultiplier = 100;
 
@@ -2898,7 +2896,10 @@ int CvCity::extraPopulation() const
 
 int CvCity::foodConsumption(int iExtra) const
 {
-	return ((getPopulation() + iExtra) * GC.getFOOD_CONSUMPTION_PER_POPULATION());
+	///Tks New Food
+	return (getMaxFoodConsumed() + (iExtra * GC.getFOOD_CONSUMPTION_PER_POPULATION()));
+	//Tke
+	//return ((getPopulation() + iExtra) * GC.getFOOD_CONSUMPTION_PER_POPULATION());
 }
 
 int CvCity::foodDifference() const
@@ -4461,8 +4462,8 @@ int CvCity::getRawYieldConsumed(YieldTypes eYieldType) const
 	///TKs Med Update 1.1g
 	if (eYieldType == YIELD_FOOD)
 	{
-	    //int iSlaveCount = 0;
-	    int iNoneSlavePop = getPopulation();
+
+	    //int iNoneSlavePop = getPopulation();
 //	    for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
 //        {
 //            CvUnit* pUnit = m_aPopulationUnits[i];
@@ -4475,8 +4476,9 @@ int CvCity::getRawYieldConsumed(YieldTypes eYieldType) const
 //                }
 //            }
 //        }
-		iYieldConsumed = iNoneSlavePop * GC.getFOOD_CONSUMPTION_PER_POPULATION();
-		//iYieldConsumed += iSlaveCount * GC.getDefineINT("SLAVE_FOOD_CONSUMPTION_PER_POPULATION");
+		//iYieldConsumed = iNoneSlavePop * GC.getFOOD_CONSUMPTION_PER_POPULATION();
+		iYieldConsumed = getMaxFoodConsumed();
+		
 	}
 	///Tke Update
     ///TK Coal
@@ -8288,6 +8290,7 @@ void CvCity::read(FDataStreamBase* pStream)
 	///TKs Med
 	pStream->Read(&m_iMaxCityPop);
 	pStream->Read(&m_iDetectMaraudersRange);
+	pStream->Read(&m_iMaxFoodConsumed);
 	///TKe
 	if (uiFlag > 1)
 	{
@@ -8559,6 +8562,7 @@ void CvCity::write(FDataStreamBase* pStream)
 	///TKs Med
 	pStream->Write(m_iMaxCityPop);
 	pStream->Write(m_iDetectMaraudersRange);
+	pStream->Write(m_iMaxFoodConsumed);
 	///TKe
 	pStream->Write(m_iEducationThresholdMultiplier);
 
@@ -9665,8 +9669,9 @@ void CvCity::addPopulationUnit(CvUnit* pUnit, ProfessionTypes eProfession)
 	CvUnit* pTransferUnit = GET_PLAYER(pUnit->getOwnerINLINE()).getAndRemoveUnit(pUnit->getID());
 	FAssert(pTransferUnit == pUnit);
 
-	this->setUnitYieldDemand(pUnit->getUnitType()); // // domestic yield demand - Nightinggale
-
+	this->setUnitYieldDemand(pUnit->getUnitType());// // domestic yield demand - Nightinggale
+	int iFood = GC.getUnitInfo(pUnit->getUnitType()).getFoodConsumed();
+	changeMaxFoodConsumed(iFood); /// TK New Food
 	int iOldPopulation = getPopulation();
 	m_aPopulationUnits.push_back(pTransferUnit);
 	area()->changePower(getOwnerINLINE(), pTransferUnit->getPower());
@@ -9699,7 +9704,8 @@ bool CvCity::removePopulationUnit(CvUnit* pUnit, bool bDelete, ProfessionTypes e
 	pUnit->setColonistLocked(false);
 
 	this->setUnitYieldDemand(pUnit->getUnitType(), true); // // domestic yield demand - Nightinggale
-
+	int iFood = GC.getUnitInfo(pUnit->getUnitType()).getFoodConsumed();
+	changeMaxFoodConsumed(-iFood); /// TK New Food
 	//remove unit from worked plots
 	CvPlot* pWorkedPlot = getPlotWorkedByUnit(pUnit);
 	if (pWorkedPlot != NULL)
@@ -11369,6 +11375,16 @@ void CvCity::changeMarauderDetection(int iChange)
 int CvCity::getMarauderDetection() const
 {
 	return m_iDetectMaraudersRange;
+}
+
+void CvCity::changeMaxFoodConsumed(int iChange)
+{
+	m_iMaxFoodConsumed += iChange;
+}
+
+int CvCity::getMaxFoodConsumed() const
+{
+	return m_iMaxFoodConsumed;
 }
 
 int CvCity::getMaxYieldCapacityPer(YieldTypes eYield) const

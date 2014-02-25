@@ -320,8 +320,9 @@ class CvCivicsScreen:
 			screen.hide(self.CANCEL_NAME)
 
 		# Anarchy
+		#self.m_paeDisplayCivics[1] = 1
 		iTurns = activePlayer.getCivicAnarchyLength(self.m_paeDisplayCivics);
-		
+		#SiTurns = 9
 		if (activePlayer.canChangeCivics(0)):
 			szText = localText.getText("TXT_KEY_ANARCHY_TURNS", (iTurns, ))
 		else:

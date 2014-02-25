@@ -4499,11 +4499,11 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_SLAVERY</CivicOptionType>
-			<Type>CIVIC_FREEDOM</Type>
-			<Description>TXT_KEY_CIVIC_FREEDOM</Description>
-			<Civilopedia>TXT_KEY_CIVIC_FREEDOM_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_FREEDOM_STRATEGY</Strategy>
+			<CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
+			<Type>CIVIC_TRIBALISM</Type>
+			<Description>Tribalism</Description>
+			<Civilopedia>????</Civilopedia>
+			<Strategy>????</Strategy>
 			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,7,4</Button>
 			<iAIWeight>0</iAIWeight>
 			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -4523,21 +4523,16 @@
 			<Hurrys/>
 			<SpecialBuildingNotRequireds/>
 			<ImprovementYieldChanges/>
-			<FreeUnitClasses>
-				<FreeUnitClass>
-					<UnitClass>UNITCLASS_COLONIST</UnitClass>
-					<iNumFree>1</iNumFree>
-				</FreeUnitClass>
-			</FreeUnitClasses>
+			<FreeUnitClasses/>
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_SLAVERY</CivicOptionType>
-			<Type>CIVIC_SLAVERY</Type>
-			<Description>TXT_KEY_CIVIC_SLAVERY</Description>
-			<Civilopedia>TXT_KEY_CIVIC_SLAVERY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_SLAVERY_STRATEGY</Strategy>
+			<CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
+			<Type>CIVIC_MANORALISM</Type>
+			<Description>Manoralism</Description>
+			<Civilopedia>????</Civilopedia>
+			<Strategy>????</Strategy>
 			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,6,4</Button>
 			<iAIWeight>0</iAIWeight>
 			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -4555,39 +4550,11 @@
 			<YieldModifiers>
 				<YieldModifier>
 					<YieldType>YIELD_FOOD</YieldType>
-					<iYield>50</iYield>
-				</YieldModifier>
-				<YieldModifier>
-					<YieldType>YIELD_LUMBER</YieldType>
-					<iYield>50</iYield>
-				</YieldModifier>
-				<YieldModifier>
-					<YieldType>YIELD_SILVER</YieldType>
-					<iYield>50</iYield>
-				</YieldModifier>
-				<YieldModifier>
-					<YieldType>YIELD_COTTON</YieldType>
-					<iYield>50</iYield>
-				</YieldModifier>
-				<YieldModifier>
-					<YieldType>YIELD_FUR</YieldType>
-					<iYield>50</iYield>
-				</YieldModifier>
-				<YieldModifier>
-					<YieldType>YIELD_BARLEY</YieldType>
-					<iYield>50</iYield>
+					<iYield>25</iYield>
 				</YieldModifier>
 				<YieldModifier>
 					<YieldType>YIELD_GRAPES</YieldType>
-					<iYield>50</iYield>
-				</YieldModifier>
-				<YieldModifier>
-					<YieldType>YIELD_ORE</YieldType>
-					<iYield>50</iYield>
-				</YieldModifier>
-				<YieldModifier>
-					<YieldType>YIELD_HAMMERS</YieldType>
-					<iYield>50</iYield>
+					<iYield>25</iYield>
 				</YieldModifier>
 			</YieldModifiers>
 			<CapitalYieldModifiers/>
@@ -4597,42 +4564,130 @@
 			<FreeUnitClasses/>
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
+      <iAnarchyLength>5</iAnarchyLength>
 		</CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
+      <Type>CIVIC_MONARCHY</Type>
+      <Description>TXT_KEY_CIVIC_MONARCHY</Description>
+      <Civilopedia>TXT_KEY_CIVIC_MONARCHY_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_CIVIC_MONARCHY_STRATEGY</Strategy>
+      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,8,4</Button>
+      <iAIWeight>100</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>1</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
+      <Type>CIVIC_FEUDALISM</Type>
+      <Description>Feudalism</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,6,4</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
+      <Type>CIVIC_THEOCRACY</Type>
+      <Description>Theocracy</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,6,4</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
+      <Type>CIVIC_PARLAMENT</Type>
+      <Description>Parlament</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,6,4</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+    </CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_ELECTION</CivicOptionType>
-			<Type>CIVIC_MONARCHY</Type>
-			<Description>TXT_KEY_CIVIC_MONARCHY</Description>
-			<Civilopedia>TXT_KEY_CIVIC_MONARCHY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_MONARCHY_STRATEGY</Strategy>
-			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,8,4</Button>
-			<iAIWeight>100</iAIWeight>
-			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
-			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
-			<iFreeExperience>0</iFreeExperience>
-			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
-			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
-			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
-			<iExpInBorderModifier>1</iExpInBorderModifier>
-			<iNativeAttitudeChange>0</iNativeAttitudeChange>
-			<iNativeCombatModifier>0</iNativeCombatModifier>
-			<iFatherPointModifier>0</iFatherPointModifier>
-			<bDominateNativeBorders>0</bDominateNativeBorders>
-			<bRevolutionEuropeTrade>1</bRevolutionEuropeTrade>
-			<YieldModifiers/>
-			<CapitalYieldModifiers/>
-			<Hurrys/>
-			<SpecialBuildingNotRequireds/>
-			<ImprovementYieldChanges/>
-			<FreeUnitClasses/>
-			<ProfessionCombatChanges/>
-			<ImmigrationConversion>NONE</ImmigrationConversion>
-		</CivicInfo>
-		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_ELECTION</CivicOptionType>
-			<Type>CIVIC_ELECTIONS</Type>
-			<Description>TXT_KEY_CIVIC_ELECTIONS</Description>
-			<Civilopedia>TXT_KEY_CIVIC_ELECTIONS_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_ELECTIONS_STRATEGY</Strategy>
+			<CivicOptionType>CIVICOPTION_PIETY</CivicOptionType>
+			<Type>CIVIC_APATHY</Type>
+			<Description>Apathy</Description>
+			<Civilopedia>????</Civilopedia>
+			<Strategy>????</Strategy>
 			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,5,4</Button>
 			<iAIWeight>0</iAIWeight>
 			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -4644,37 +4699,8 @@
 			<iExpInBorderModifier>0</iExpInBorderModifier>
 			<iNativeAttitudeChange>0</iNativeAttitudeChange>
 			<iNativeCombatModifier>0</iNativeCombatModifier>
-			<iFatherPointModifier>100</iFatherPointModifier>
-			<bDominateNativeBorders>0</bDominateNativeBorders>
-			<bRevolutionEuropeTrade>1</bRevolutionEuropeTrade>
-			<YieldModifiers/>
-			<CapitalYieldModifiers/>
-			<Hurrys/>
-			<SpecialBuildingNotRequireds/>
-			<ImprovementYieldChanges/>
-			<FreeUnitClasses/>
-			<ProfessionCombatChanges/>
-			<ImmigrationConversion>NONE</ImmigrationConversion>
-		</CivicInfo>
-		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_NATIVES</CivicOptionType>
-			<Type>CIVIC_MANIFEST_DESTINY</Type>
-			<Description>TXT_KEY_CIVIC_MANIFEST_DESTINY</Description>
-			<Civilopedia>TXT_KEY_CIVIC_MANIFEST_DESTINY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_MANIFEST_DESTINY_STRATEGY</Strategy>
-			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,1,5</Button>
-			<iAIWeight>0</iAIWeight>
-			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
-			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
-			<iFreeExperience>0</iFreeExperience>
-			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
-			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
-			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
-			<iExpInBorderModifier>0</iExpInBorderModifier>
-			<iNativeAttitudeChange>0</iNativeAttitudeChange>
-			<iNativeCombatModifier>50</iNativeCombatModifier>
 			<iFatherPointModifier>0</iFatherPointModifier>
-			<bDominateNativeBorders>1</bDominateNativeBorders>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
 			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
 			<YieldModifiers/>
 			<CapitalYieldModifiers/>
@@ -4685,13 +4711,129 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 		</CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_PIETY</CivicOptionType>
+      <Type>CIVIC_DIVINERIGHT</Type>
+      <Description>Divine Right</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,5,4</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_PIETY</CivicOptionType>
+      <Type>CIVIC_ORGANIZED</Type>
+      <Description>Organized</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,5,4</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_PIETY</CivicOptionType>
+      <Type>CIVIC_EXTRA_PIETY</Type>
+      <Description>Extra Piety</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,6,5</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>YIELD_HAMMERS</ImmigrationConversion>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_PIETY</CivicOptionType>
+      <Type>CIVIC_TOLERANCE</Type>
+      <Description>Religious Tolerance</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,5,4</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+    </CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_NATIVES</CivicOptionType>
-			<Type>CIVIC_NATIVE_RIGHTS</Type>
-			<Description>TXT_KEY_CIVIC_NATIVE_RIGHTS</Description>
-			<Civilopedia>TXT_KEY_CIVIC_NATIVE_RIGHTS_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_NATIVE_RIGHTS_STRATEGY</Strategy>
-			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,3,5</Button>
+			<CivicOptionType>CIVICOPTION_COMMERCE</CivicOptionType>
+			<Type>CIVIC_LOCAL_TRADE</Type>
+			<Description>Local Trade</Description>
+			<Civilopedia>????</Civilopedia>
+			<Strategy>????</Strategy>
+			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,1,5</Button>
 			<iAIWeight>0</iAIWeight>
 			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
 			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -4700,7 +4842,7 @@
 			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
 			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
 			<iExpInBorderModifier>0</iExpInBorderModifier>
-			<iNativeAttitudeChange>5</iNativeAttitudeChange>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
 			<iNativeCombatModifier>0</iNativeCombatModifier>
 			<iFatherPointModifier>0</iFatherPointModifier>
 			<bDominateNativeBorders>0</bDominateNativeBorders>
@@ -4715,11 +4857,127 @@
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_RELIGION</CivicOptionType>
-			<Type>CIVIC_SEPARATION_CHURCH_STATE</Type>
-			<Description>TXT_KEY_CIVIC_SEPARATION_CHURCH_STATE</Description>
-			<Civilopedia>TXT_KEY_CIVIC_SEPARATION_CHURCH_STATE_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_SEPARATION_CHURCH_STATE_STRATEGY</Strategy>
+			<CivicOptionType>CIVICOPTION_COMMERCE</CivicOptionType>
+			<Type>CIVIC_CENTRALIZED</Type>
+			<Description>Centralized</Description>
+			<Civilopedia>????</Civilopedia>
+			<Strategy>????</Strategy>
+			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,3,5</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+		</CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_COMMERCE</CivicOptionType>
+      <Type>CIVIC_MARKET_ECONOMY</Type>
+      <Description>Market Economy</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,3,5</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_COMMERCE</CivicOptionType>
+      <Type>CIVIC_GUILDS</Type>
+      <Description>Guilds</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,3,5</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_COMMERCE</CivicOptionType>
+      <Type>CIVIC_MERCHANTILISM</Type>
+      <Description>Merchantilism</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,3,5</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+    </CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
+			<Type>CIVIC_ANARCHIST</Type>
+			<Description>Anarchist</Description>
+			<Civilopedia>????</Civilopedia>
+			<Strategy>????</Strategy>
 			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,2,5</Button>
 			<iAIWeight>0</iAIWeight>
 			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -4741,43 +4999,159 @@
 			<ImprovementYieldChanges/>
 			<FreeUnitClasses/>
 			<ProfessionCombatChanges/>
-			<ImmigrationConversion>YIELD_BELLS</ImmigrationConversion>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
 		</CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
+      <Type>CIVIC_ORDEAL</Type>
+      <Description>Ordeal</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,2,5</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
+      <Type>CIVIC_RELIGIOUS_LAW</Type>
+      <Description>Religious Law</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,2,5</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
+      <Type>CIVIC_JURY</Type>
+      <Description>Trail by Jury</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,2,5</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
+      <Type>CIVIC_EXTRA_LEGAL</Type>
+      <Description>Extra Legal</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,2,5</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
+      <Type>CIVIC_AGRICULTURE</Type>
+      <Description>Agriculture</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,4,5</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+    </CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_RELIGION</CivicOptionType>
-			<Type>CIVIC_THEOCRACY</Type>
-			<Description>TXT_KEY_CIVIC_THEOCRACY</Description>
-			<Civilopedia>TXT_KEY_CIVIC_THEOCRACY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_THEOCRACY_STRATEGY</Strategy>
-			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,6,5</Button>
-			<iAIWeight>0</iAIWeight>
-			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
-			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
-			<iFreeExperience>0</iFreeExperience>
-			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
-			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
-			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
-			<iExpInBorderModifier>0</iExpInBorderModifier>
-			<iNativeAttitudeChange>0</iNativeAttitudeChange>
-			<iNativeCombatModifier>0</iNativeCombatModifier>
-			<iFatherPointModifier>0</iFatherPointModifier>
-			<bDominateNativeBorders>0</bDominateNativeBorders>
-			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
-			<YieldModifiers/>
-			<CapitalYieldModifiers/>
-			<Hurrys/>
-			<SpecialBuildingNotRequireds/>
-			<ImprovementYieldChanges/>
-			<FreeUnitClasses/>
-			<ProfessionCombatChanges/>
-			<ImmigrationConversion>YIELD_HAMMERS</ImmigrationConversion>
-		</CivicInfo>
-		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_SECURITY</CivicOptionType>
-			<Type>CIVIC_BEAR_ARMS</Type>
-			<Description>TXT_KEY_CIVIC_BEAR_ARMS</Description>
-			<Civilopedia>TXT_KEY_CIVIC_BEAR_ARMS_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_BEAR_ARMS_STRATEGY</Strategy>
+			<CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
+			<Type>CIVIC_SLAVERY</Type>
+			<Description>TXT_KEY_CIVIC_SLAVERY</Description>
+			<Civilopedia>????</Civilopedia>
+			<Strategy>????</Strategy>
 			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,4,5</Button>
 			<iAIWeight>0</iAIWeight>
 			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -4798,20 +5172,15 @@
 			<SpecialBuildingNotRequireds/>
 			<ImprovementYieldChanges/>
 			<FreeUnitClasses/>
-			<ProfessionCombatChanges>
-				<ProfessionCombatChange>
-					<ProfessionType>PROFESSION_COLONIST</ProfessionType>
-					<iChange>1</iChange>
-				</ProfessionCombatChange>
-			</ProfessionCombatChanges>
+			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_SECURITY</CivicOptionType>
-			<Type>CIVIC_CONTROLLED_ARMS</Type>
-			<Description>TXT_KEY_CIVIC_CONTROLLED_ARMS</Description>
-			<Civilopedia>TXT_KEY_CIVIC_CONTROLLED_ARMS_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_CONTROLLED_ARMS_STRATEGY</Strategy>
+			<CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
+			<Type>CIVIC_SERFDOM</Type>
+			<Description>Serfdom</Description>
+			<Civilopedia>????</Civilopedia>
+			<Strategy>????</Strategy>
 			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,5,5</Button>
 			<iAIWeight>0</iAIWeight>
 			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -4826,12 +5195,7 @@
 			<iFatherPointModifier>0</iFatherPointModifier>
 			<bDominateNativeBorders>0</bDominateNativeBorders>
 			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_BELLS</YieldType>
-					<iYield>50</iYield>
-				</YieldModifier>
-			</YieldModifiers>
+			<YieldModifiers/>
 			<CapitalYieldModifiers/>
 			<Hurrys/>
 			<SpecialBuildingNotRequireds/>
@@ -4840,6 +5204,64 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 		</CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
+      <Type>CIVIC_CASTE</Type>
+      <Description>Caste</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,5,5</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
+      <Type>CIVIC_FREE_LABOR</Type>
+      <Description>Free Labor</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,5,5</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+    </CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
 			<Type>TRADING_TRADEPOST</Type>

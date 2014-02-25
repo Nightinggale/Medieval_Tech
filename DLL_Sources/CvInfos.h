@@ -594,7 +594,8 @@ public:
     DllExport bool isPreventFounding() const;
     DllExport bool isPreventTraveling() const;
     DllExport int getLostAtSeaPercent() const;
-    DllExport int getConvertsToYield() const;
+    DllExport int getFoodConsumed() const;
+	DllExport int getConvertsToYield() const;
     DllExport int getConvertsToBuildingClass() const;
     DllExport int getFreeBuildingClass() const;
     DllExport int getEducationUnitClass() const;
@@ -769,6 +770,7 @@ protected:
 	bool m_ibEuropeInvalid;
 	bool m_ibColonialInvalid;
 	int m_iLostAtSeaPercent;
+	int m_iFoodConsumed;
 	///Tks Med
 	bool m_bPreventFounding;
 	bool m_bPreventTraveling;

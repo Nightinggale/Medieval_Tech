@@ -562,6 +562,8 @@ public:
 	int getMaxYieldCapacityPer(YieldTypes eYield) const;
 	void changeMarauderDetection(int iChange);
 	int getMarauderDetection() const;
+	void changeMaxFoodConsumed(int iChange);
+	int getMaxFoodConsumed() const;
 	void doPilgrams();
 	bool isMarket(YieldTypes eYield) const;
 	void addMarket(YieldTypes eYield);
@@ -627,6 +629,7 @@ protected:
 	MedCityTypes m_iCityType;
 	int m_iMaxCityPop;
 	int m_iDetectMaraudersRange;
+	int m_iMaxFoodConsumed;
 	///Tke
 	int m_iEducationThresholdMultiplier;
 

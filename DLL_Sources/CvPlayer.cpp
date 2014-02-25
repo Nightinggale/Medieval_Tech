@@ -238,6 +238,8 @@ void CvPlayer::init(PlayerTypes eID)
 			//Tke
 			setCivic(((CivicOptionTypes)iI), ((CivicTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationInitialCivics(iI))));
 		}
+		//Tks Civic Screen
+		updateMaxAnarchyTurns();
 
 		for (int iI = 0; iI < GC.getNumEventInfos(); iI++)
 		{
@@ -2468,7 +2470,12 @@ void CvPlayer::doTurn()
 	/// PlotGroup - start - Nightinggale
 	doCities();
 	/// PlotGroup - end - Nightinggale
-
+	///Tks Civic Screen
+	if (getAnarchyTurns() > 0)
+	{
+		changeAnarchyTurns(-1);
+	}
+	//Tke
 	verifyCivics();
 
 	doPrices();
@@ -14741,11 +14748,11 @@ int CvPlayer::getMaxAnarchyTurns() const
 void CvPlayer::updateMaxAnarchyTurns()
 {
 	int iBestValue;
-	int iI;
+	//int iI;
 	///DEFINE INTEGER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	//iBestValue = GC.getDefineINT("MAX_ANARCHY_TURNS");
 	iBestValue = 100;
-	FAssertMsg((GC.getNumTraitInfos() > 0), "GC.getNumTraitInfos() is less than or equal to zero but is expected to be larger than zero in CvPlayer::updateMaxAnarchyTurns");
+	/*FAssertMsg((GC.getNumTraitInfos() > 0), "GC.getNumTraitInfos() is less than or equal to zero but is expected to be larger than zero in CvPlayer::updateMaxAnarchyTurns");
 	for (iI = 0; iI < GC.getNumTraitInfos(); iI++)
 	{
 		if (hasTrait((TraitTypes)iI))
@@ -14758,7 +14765,7 @@ void CvPlayer::updateMaxAnarchyTurns()
 				}
 			}
 		}
-	}
+	}*/
 
 	m_iMaxAnarchyTurns = iBestValue;
 	FAssert(getMaxAnarchyTurns() >= 0);
@@ -15550,7 +15557,7 @@ CvUnit* CvPlayer::buyEuropeUnit(UnitTypes eUnit, int iPriceModifier, EuropeTypes
 		    if (eTradeScreen != NO_EUROPE)
             {
                 CvPlot* pStartingTradePlot = getStartingTradeRoutePlot(eTradeScreen);
-                if (!pStartingPlot->isTradeScreenAccessPlot(eTradeScreen) != eTradeScreen && pStartingTradePlot == NULL)
+                if (!pStartingPlot->isTradeScreenAccessPlot(eTradeScreen) && pStartingTradePlot == NULL)
                 {
                     CvPlot* pNewPlot = NULL;
                     CvCity* pPortCity = GC.getMapINLINE().findCity(pStartingPlot->getX_INLINE(), pStartingPlot->getY_INLINE(), getID(), NO_TEAM, false, true);

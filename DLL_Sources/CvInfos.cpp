@@ -2265,6 +2265,7 @@ m_ibNativesInvalid(false),
 m_ibEuropeInvalid(false),
 m_ibColonialInvalid(false),
 m_iLostAtSeaPercent(0),
+m_iFoodConsumed(2),
 ///TKe
 // < JAnimals Mod Start >
 m_iAnimalPatrolWeight(0),
@@ -2621,6 +2622,10 @@ bool CvUnitInfo::isColonialInvalid() const
 int CvUnitInfo::getLostAtSeaPercent() const
 {
 	return m_iLostAtSeaPercent;
+}
+int CvUnitInfo::getFoodConsumed() const
+{
+	return m_iFoodConsumed;
 }
 ///Tke
 
@@ -3459,6 +3464,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_ibEuropeInvalid, "bEuropeInvalid");
 	pXML->GetChildXmlValByName(&m_ibColonialInvalid, "bColonialInvalid");
 	pXML->GetChildXmlValByName(&m_iLostAtSeaPercent, "LostAtSeaPercent");
+	pXML->GetChildXmlValByName(&m_iFoodConsumed, "iFoodConsumed", GC.getFOOD_CONSUMPTION_PER_POPULATION());
 	///Tks Med
 	pXML->GetChildXmlValByName(szTextVal, "ConvertsToYield");
 	m_iConvertsToYield = pXML->FindInInfoClass(szTextVal);

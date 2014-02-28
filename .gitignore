@@ -1,12 +1,26 @@
 # Added recommended file from github with light modifications to suit our needs
 # Nightinggale
 
+# Colo specific files
+#####################
+*.FPK
+*.dds
+*.bik
+*.mp3
+*.wav
+DLL_Sources/Makefile.settings
+DLL_Sources/*.suo
+DLL_Sources/*.vcxproj.user
+DLL_Sources/Boost-1.32.0/*
+DLL_Sources/Python24/*
+DLL_Sources/*/depends
+
 # Compiled source #
 ###################
 *.com
 *.class
-#*.dll
-#*.exe
+*.dll
+*.exe
 *.o
 *.so
 

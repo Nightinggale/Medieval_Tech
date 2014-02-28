@@ -5061,8 +5061,8 @@
     </CivicInfo>
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
-      <Type>CIVIC_JURY</Type>
-      <Description>Trail by Jury</Description>
+      <Type>CIVIC_CHARTER_LAW</Type>
+      <Description>Charter Law</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
       <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,2,5</Button>
@@ -5087,6 +5087,28 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RandomGrowthClasses>
+        <RandomGrowthClass>
+          <UnitClassType>UNITCLASS_NOBLEMAN</UnitClassType>
+          <iPercentChance>100</iPercentChance>
+        </RandomGrowthClass>
+        <RandomGrowthClass>
+          <UnitClassType>UNITCLASS_JESTER</UnitClassType>
+          <iPercentChance>100</iPercentChance>
+        </RandomGrowthClass>
+        <RandomGrowthClass>
+          <UnitClassType>UNITCLASS_MINER</UnitClassType>
+          <iPercentChance>100</iPercentChance>
+        </RandomGrowthClass>
+        <RandomGrowthClass>
+          <UnitClassType>UNITCLASS_COTTON_PLANTER</UnitClassType>
+          <iPercentChance>100</iPercentChance>
+        </RandomGrowthClass>
+        <RandomGrowthClass>
+          <UnitClassType>UNITCLASS_FARMER</UnitClassType>
+          <iPercentChance>100</iPercentChance>
+        </RandomGrowthClass>
+      </RandomGrowthClasses>
     </CivicInfo>
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>

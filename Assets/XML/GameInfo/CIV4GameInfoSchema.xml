@@ -510,6 +510,15 @@
 	<ElementType name="AllowsUnitClasses" content="eltOnly">
 		<element type="AllowsUnitClass" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
+  <ElementType name="UnitClassType" content="textOnly"/>
+  <ElementType name="iPercentChance" content="textOnly" dt:type="int"/>
+  <ElementType name="RandomGrowthClass" content="eltOnly">
+    <element type="UnitClassType"/>
+    <element type="iPercentChance"/>
+  </ElementType>
+  <ElementType name="RandomGrowthClasses" content="eltOnly">
+    <element type="RandomGrowthClass" minOccurs="0" maxOccurs="*"/>
+  </ElementType>
 	<ElementType name="PromotionType" content="textOnly"/>
 	<ElementType name="AllowsPromotion" content="eltOnly">
 		<element type="PromotionType"/>
@@ -651,7 +660,8 @@
 		<element type="FasterBuildFeatureTypes" minOccurs="0"/>
 		<element type="ConvertsUnitsFrom" minOccurs="0"/>
 		<element type="ConvertsUnitsTo" minOccurs="0"/>
-		<element type="NewDefaultUnitClass" minOccurs="0"/>
+    <element type="RandomGrowthClasses" minOccurs="0"/>
+    <element type="NewDefaultUnitClass" minOccurs="0"/>
 		<element type="DisallowsTech" minOccurs="0"/>
 		<element type="ConvertsResearchYield" minOccurs="0"/>
 		<element type="RouteMovementMod" minOccurs="0"/>

@@ -7308,21 +7308,57 @@ void CvCity::doGrowth()
 		}
 		else
 		{
-            ///TKs Invention Core Mod v 1.0
-			//UnitTypes eUnit = (UnitTypes)GET_PLAYER(getOwnerINLINE()).getDefaultPopUnit();
+            ///TKs Civics Screen
+			std::vector<UnitTypes> aRandomGrowth;
+			std::vector<int> iaRandomGrowth;
+			for (int iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
+			{
+				if (GET_PLAYER(getOwnerINLINE()).getCivic((CivicOptionTypes)iI) != NO_CIVIC)
+				{
+					CvCivicInfo& kCivicInfo =  GC.getCivicInfo(GET_PLAYER(getOwnerINLINE()).getCivic((CivicOptionTypes)iI));
+
+					if (kCivicInfo.getNumRandomGrowthUnits() > 0)
+					{
+						for (int iI = 0; iI < kCivicInfo.getNumRandomGrowthUnits(); iI++)
+						{
+							int iRandomPercent = kCivicInfo.getRandomGrowthUnitsPercent(iI);
+							if (GC.getGameINLINE().getSorenRandNum(100, "Percent Growth Unit") <= iRandomPercent)
+							{
+								int iLoopUnitClass = kCivicInfo.getRandomGrowthUnits(iI);
+								UnitTypes eRandomUnit = (UnitTypes)kCivicInfo.getRandomGrowthUnits(iI);
+								eRandomUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eRandomUnit);
+								if (NO_UNIT != eRandomUnit)
+								{
+									aRandomGrowth.push_back(eRandomUnit);
+								}
+							}
+						}
+					}
+		
+				}
+			}
 			UnitTypes eUnit = NO_UNIT;
-			///TKs Med
-			bool bGetDefualtPopUnit = (GET_PLAYER(getOwnerINLINE()).getIdeasResearched((CivicTypes) GC.getXMLval(XML_FREE_PEASANT_CIVIC)) > 0);
-
-			if (isNative() || GET_PLAYER(getOwnerINLINE()).isEurope() || bGetDefualtPopUnit)
+			if (!aRandomGrowth.empty())
 			{
-			    eUnit = (UnitTypes)GET_PLAYER(getOwnerINLINE()).getDefaultPopUnit();
-			}
-			else
-			{
-			    eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getXMLval(XML_DEFAULT_GRAIN_GROWTH_UNIT_CLASS));
+				int iRandomUnit = aRandomGrowth.size();
+				iRandomUnit = GC.getGameINLINE().getSorenRandNum(iRandomUnit, "Random Growth Unit");
+				eUnit = aRandomGrowth[iRandomUnit];
 			}
 
+			if (eUnit == NO_UNIT)
+			{
+				///TKs Med
+				bool bGetDefualtPopUnit = (GET_PLAYER(getOwnerINLINE()).getIdeasResearched((CivicTypes) GC.getXMLval(XML_FREE_PEASANT_CIVIC)) > 0);
+
+				if (isNative() || GET_PLAYER(getOwnerINLINE()).isEurope() || bGetDefualtPopUnit)
+				{
+					eUnit = (UnitTypes)GET_PLAYER(getOwnerINLINE()).getDefaultPopUnit();
+				}
+				else
+				{
+					eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getXMLval(XML_DEFAULT_GRAIN_GROWTH_UNIT_CLASS));
+				}
+			}
 
 			if (NO_UNIT != eUnit)
 			{
@@ -7332,12 +7368,13 @@ void CvCity::doGrowth()
 				int iKeepfood = (growthThreshold() * getMaxFoodKeptPercent()) / 100;
 				changeFood(-(std::max(0, (growthThreshold() - iKeepfood))));
 			}
-            ///TKe
+			///TKe
 			gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_CITY_GROWTH", getNameKey()), "AS2D_POSITIVE_DINK", MESSAGE_TYPE_INFO, GC.getYieldInfo(YIELD_FOOD).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
 
 
 			// ONEVENT - City growth
 			gDLL->getEventReporterIFace()->cityGrowth(this, getOwnerINLINE());
+
 		}
 	}
 	else if (getFood() < 0)

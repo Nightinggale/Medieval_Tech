@@ -1074,6 +1074,9 @@ public:
 	DllExport int getNumFreeUnitClasses() const;
 	DllExport int getFreeUnitClass(int i) const;
 	///TKs Med
+	DllExport int getNumRandomGrowthUnits() const;
+	DllExport int getRandomGrowthUnits(int index) const;
+	DllExport int getRandomGrowthUnitsPercent(int index) const;
     DllExport const char* getCivicPortrait() const;
     ///TKe
 	DllExport void read(FDataStreamBase* stream);
@@ -1152,6 +1155,7 @@ protected:
     int* m_aiRequiredFatherPoints;
     int* m_aiRequiredYields;
     int* m_aiMaxYieldModifiers;
+
 	///TKe
 	int m_iDomesticGreatGeneralRateModifier;
 	int m_iFreeExperience;
@@ -1179,7 +1183,9 @@ protected:
 	bool* m_pabHurry;
 	bool* m_pabSpecialBuildingNotRequired;
 	std::vector<int*> m_aaiImprovementYieldChanges;
-
+	//Tks Civics
+	std::vector< std::pair<UnitClassTypes, int> > m_aRandomGrowthUnits;
+	///Tke
 	std::vector<int> m_aFreeUnitClasses;
 };
 

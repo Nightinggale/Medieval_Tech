@@ -3931,7 +3931,7 @@ CvCivicInfo::~CvCivicInfo()
     SAFE_DELETE_ARRAY(m_aiAllowsBuildTypesTerrain);
     SAFE_DELETE_ARRAY(m_aiIndustrializationVictory);
     SAFE_DELETE_ARRAY(m_aiMaxYieldModifiers);
-    ///TKe
+	///TKe
 	SAFE_DELETE_ARRAY(m_aiYieldModifier);
 	SAFE_DELETE_ARRAY(m_aiCapitalYieldModifier);
 	SAFE_DELETE_ARRAY(m_aiProfessionCombatChange);
@@ -4046,6 +4046,22 @@ int CvCivicInfo::getAllowsUnitClasses(int i) const
 	return m_aiAllowsUnitClasses ? m_aiAllowsUnitClasses[i] : 0;
 }
 
+int CvCivicInfo::getNumRandomGrowthUnits() const
+{
+	return m_aRandomGrowthUnits.size();
+}
+int CvCivicInfo::getRandomGrowthUnits(int index) const
+{
+	FAssert(index < (int) m_aRandomGrowthUnits.size());
+	FAssert(index > -1);
+	return m_aRandomGrowthUnits[index].first;
+}
+int CvCivicInfo::getRandomGrowthUnitsPercent(int index) const
+{
+	FAssert(index < (int) m_aRandomGrowthUnits.size());
+	FAssert(index > -1);
+	return m_aRandomGrowthUnits[index].second;
+}
 
 int CvCivicInfo::getAllowsBuildTypes(int i) const
 {
@@ -4717,6 +4733,29 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
     pXML->SetVariableListTagPair(&m_aiAllowsProfessions, "AllowsProfessions", GC.getNumProfessionInfos(), 0);
 
     pXML->SetVariableListTagPair(&m_aiRequiredYields, "RequiredYields", NUM_YIELD_TYPES, 0);
+
+	m_aRandomGrowthUnits.clear();
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"RandomGrowthClasses"))
+	{
+		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"RandomGrowthClass"))
+		{
+			do
+			{
+				pXML->GetChildXmlValByName(szTextVal, "UnitClassType");
+				int iUnitClass = pXML->FindInInfoClass(szTextVal);
+				//pXML->GetChildXmlValByName(szTextVal, "PercentChance");
+				//int iProfession = pXML->FindInInfoClass(szTextVal);
+				int iPercentChance = 0;
+				pXML->GetChildXmlValByName(&iPercentChance, "iPercentChance");
+				m_aRandomGrowthUnits.push_back(std::make_pair((UnitClassTypes) iUnitClass, iPercentChance));
+			} while(gDLL->getXMLIFace()->NextSibling(pXML->GetXML()));
+			// set the current xml node to it's parent node
+			gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+		}
+		// set the current xml node to it's parent node
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+
 	///TKe
 	pXML->GetChildXmlValByName(&m_iNativeAttitudeChange, "iNativeAttitudeChange");
 	pXML->GetChildXmlValByName(&m_iNativeCombatModifier, "iNativeCombatModifier");

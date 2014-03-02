@@ -6,164 +6,164 @@
 <!-- Interface art path information -->
 <Civ4ArtDefines xmlns="x-schema:CIV4ArtDefinesSchema.xml">
 	<InterfaceArtInfos>
-		<InterfaceArtInfo>
-			<Type>TK_MAINMENU_SLIDESHOW_LOAD</Type>
-			<Path>Art/Interface/Screens/Loading/TK_LoadingScreenBGslideshow.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>TK_FORIEGN_BACKGROUND</Type>
-			<Path>Art/Interface/Screens/Loading/TK_BackGround1.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>INTERFACE_LEAVE_FAIR</Type>
-			<Path>Art/Interface/Game Hud/Actions/gohomeunload.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>INTERFACE_LEAVE_PORT</Type>
-			<Path>Art/Interface/Game Hud/Actions/leaveport.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>INTERFACE_DISCOVERY_MID</Type>
-			<Path>Art/Interface/Screens/City_Management/Discovery_Mid.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>MATERIALS_NEEDED</Type>
-			<Path>Art/Buttons/Techs/Materials.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>DISALLOW_TECH</Type>
-			<Path>Art/Interface/Screens/TechTree/x.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>ART_VASSAL_JOIN</Type>
-			<Path>Art/Interface/Screens/CivicPortraits/Vassal.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>MAGNIFYING_GLASS</Type>
-			<Path>Art/Screens/MagnifingGlass.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>MAGNIFYING_QUILL</Type>
-			<Path>Art/Screens/Quill.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>TRADE_TECH_HOLDER</Type>
-			<Path>Art/Screens/TradeHolder.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>MILITARY_TECH_HOLDER</Type>
-			<Path>Art/Screens/MilitaryHolder.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>MEDICAL_TECH_HOLDER</Type>
-			<Path>Art/Screens/MedicalHolder.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>NATIVE_TECH_HOLDER</Type>
-			<Path>Art/Screens/NativeHolder.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>NO_TRADE</Type>
-			<Path>Art/Buttons/Techs/NoTrade.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>ARROW_MXY</Type>
-			<Path>Art/interface/screens/TechTree/Corner-XY.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>ARROW_X</Type>
-			<Path>Art/interface/screens/TechTree/LineX.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>ARROW_XMY</Type>
-			<Path>Art/interface/screens/TechTree/CornerX-Y.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>ARROW_XY</Type>
-			<Path>Art/interface/screens/TechTree/CornerXY.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>ARROW_Y</Type>
-			<Path>Art/interface/screens/TechTree/LineY.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>ARROW_HEAD</Type>
-			<Path>Art/interface/screens/TechTree/Head.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>ARROW_MXMY</Type>
-			<Path>Art/interface/screens/TechTree/Corner-X-Y.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>INTERFACE_TESTHOLDER_TECH</Type>
-			<Path>Art/Screens/TestHolder.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>INTERFACE_HOLDS_TECH</Type>
-			<Path>Art/Screens/HoldsTech.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>INTERFACE_COORDINATES</Type>
-			<Path>Art/Screens/COORDINATES.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>INTERFACE_SELECT_TECH</Type>
-			<Path>Art/Screens/SelectedTech.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>INTERFACE_CATALOG_TECH</Type>
-			<Path>Art/Screens/CatalogedTech.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>INTERFACE_HIDES_TECH</Type>
-			<Path>Art/Screens/CloseScroll.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>INTERFACE_INVENTION_SELECT</Type>
-			<Path>Art/Buttons/Inventing.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>INTERFACE_INVENTION_SELECT_TECH</Type>
-			<Path>Art/Buttons/SelectTech.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>INTERFACE_INVENTION_CURRENT_TECH</Type>
-			<Path>Art/Buttons/Tech_Categorys/Button_CURRENT.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>INTERFACE_INVENTION_HIGHLIGHT_TECH</Type>
-			<Path>Art/Buttons/Tech_Categorys/Button_HIGHLIGHT.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>INTERFACE_TECHNOLOGY_BG</Type>
-			<Path>Art/Screens/TechnologyBG.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>INTERFACE_TRADE_SCREEN_BG</Type>
-			<Path>Art/Interface/Screens/tradescreen.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>INTERFACE_INVENTIONS_COMPLETE_SELECT</Type>
-			<Path>Art/Buttons/InventingComplete.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>INTERFACE_INVENTIONS_TOP_BUTTON</Type>
-			<Path>Art/Buttons/InventionTopBut.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>INTERFACE_TRADE_TOP_BUTTON</Type>
-			<Path>Art/Buttons/blanktopbutton.dds</Path>
-		</InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>TK_MAINMENU_SLIDESHOW_LOAD</Type>
+      <Path>Art/Interface/Screens/Loading/TK_LoadingScreenBGslideshow.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>TK_FORIEGN_BACKGROUND</Type>
+      <Path>Art/Interface/Screens/Loading/TK_BackGround1.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>INTERFACE_LEAVE_FAIR</Type>
+      <Path>Art/Interface/Game Hud/Actions/gohomeunload.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>INTERFACE_LEAVE_PORT</Type>
+      <Path>Art/Interface/Game Hud/Actions/leaveport.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>INTERFACE_DISCOVERY_MID</Type>
+      <Path>Art/Interface/Screens/City_Management/Discovery_Mid.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>MATERIALS_NEEDED</Type>
+      <Path>Art/interface/screens/TechTree/Materialsneeded.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>DISALLOW_TECH</Type>
+      <Path>Art/Interface/Screens/TechTree/x.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>ART_VASSAL_JOIN</Type>
+      <Path>Art/Interface/Screens/CivicPortraits/Vassal.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>MAGNIFYING_GLASS</Type>
+      <Path>Art/interface/screens/TechTree/MagnifingGlass.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>MAGNIFYING_QUILL</Type>
+      <Path>Art/interface/screens/TechTree/Quill.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>TRADE_TECH_HOLDER</Type>
+      <Path>Art/Screens/TradeHolder.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>MILITARY_TECH_HOLDER</Type>
+      <Path>Art/Screens/MilitaryHolder.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>MEDICAL_TECH_HOLDER</Type>
+      <Path>Art/Screens/MedicalHolder.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>NATIVE_TECH_HOLDER</Type>
+      <Path>Art/Screens/NativeHolder.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>NO_TRADE</Type>
+      <Path>Art/interface/screens/TechTree/NoTrade.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>ARROW_MXY</Type>
+      <Path>Art/interface/screens/TechTree/Corner-XY.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>ARROW_X</Type>
+      <Path>Art/interface/screens/TechTree/LineX.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>ARROW_XMY</Type>
+      <Path>Art/interface/screens/TechTree/CornerX-Y.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>ARROW_XY</Type>
+      <Path>Art/interface/screens/TechTree/CornerXY.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>ARROW_Y</Type>
+      <Path>Art/interface/screens/TechTree/LineY.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>ARROW_HEAD</Type>
+      <Path>Art/interface/screens/TechTree/Head.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>ARROW_MXMY</Type>
+      <Path>Art/interface/screens/TechTree/Corner-X-Y.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>INTERFACE_TESTHOLDER_TECH</Type>
+      <Path>Art/interface/screens/TechTreeTestHolder.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>INTERFACE_HOLDS_TECH</Type>
+      <Path>Art/interface/screens/TechTree/HoldsTech.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>INTERFACE_COORDINATES</Type>
+      <Path>Art/interface/screens/TechTree/COORDINATES.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>INTERFACE_SELECT_TECH</Type>
+      <Path>Art/interface/screens/TechTree/SelectedTech.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>INTERFACE_CATALOG_TECH</Type>
+      <Path>Art/interface/screens/TechTree/CatalogedTech.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>INTERFACE_HIDES_TECH</Type>
+      <Path>Art/interface/screens/TechTree/CloseScroll.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>INTERFACE_INVENTION_SELECT</Type>
+      <Path>Art/interface/screens/TechTree/Inventing.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>INTERFACE_INVENTION_SELECT_TECH</Type>
+      <Path>Art/interface/screens/TechTree/SelectTech.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>INTERFACE_INVENTION_CURRENT_TECH</Type>
+      <Path>Art/interface/screens/TechTree/Button_CURRENT.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>INTERFACE_INVENTION_HIGHLIGHT_TECH</Type>
+      <Path>Art/interface/screens/TechTree/Button_HIGHLIGHT.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>INTERFACE_TECHNOLOGY_BG</Type>
+      <Path>Art/interface/screens/TechTree/TechnologyBG.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>INTERFACE_TRADE_SCREEN_BG</Type>
+      <Path>Art/Interface/Screens/tradescreen/tradescreen.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>INTERFACE_INVENTIONS_COMPLETE_SELECT</Type>
+      <Path>Art/interface/screens/TechTree/InventingComplete.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>INTERFACE_INVENTIONS_TOP_BUTTON</Type>
+      <Path>Art/Interface/game hud/top_buttons/Research.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>INTERFACE_TRADE_TOP_BUTTON</Type>
+      <Path>Art/Buttons/blanktopbutton.dds</Path>
+    </InterfaceArtInfo>
     <!-- -->
     <!-- TutorialBlankScreen Mod Start 1/1 -->
     <!-- -->
-		<InterfaceArtInfo>
-			<Type>TUTORIAL_BLANK_SCREEN_BACKGROUND</Type>
-			<Path>Art/Interface/Screens/Screen_CivColonization_City.dds</Path>
-		</InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>TUTORIAL_BLANK_SCREEN_BACKGROUND</Type>
+      <Path></Path>
+    </InterfaceArtInfo>
 		<InterfaceArtInfo>
 			<Type>BUTTON_HILITE_SQUARE</Type>
-			<Path>Art/Interface/Buttons/Button_SELECT.dds</Path>
+			<Path>Art/interface/screens/TechTree/button_highlight.dds</Path>
 		</InterfaceArtInfo>
 		<InterfaceArtInfo>
 			<Type>CIVILOPEDIA_ANCIENT_BATTLEGROUND</Type>
@@ -433,22 +433,22 @@
 			<Type>SCREEN_GOLD_PILE</Type>
 			<Path>Art/Interface/Game Hud/Gold_stack.dds</Path>
 		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>SCREEN_TRADE_POINTS</Type>
-			<Path>Art/Interface/Game Hud/Trade_Points.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>SCREEN_MAIN_EXCOMMUNICATION</Type>
-			<Path>Art/Interface/Game Hud/Top_buttons/Excommunication.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>SCREEN_MAIN_INTERDICT</Type>
-			<Path>Art/Interface/Game Hud/Top_buttons/Interdict.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>SCREEN_MAIN_ANATHEMA</Type>
-			<Path>Art/Interface/Game Hud/Top_buttons/Anathema.dds</Path>
-		</InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>SCREEN_TRADE_POINTS</Type>
+      <Path>Art/Interface/Game Hud/Trade_Points.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>SCREEN_MAIN_EXCOMMUNICATION</Type>
+      <Path>Art/Interface/Game Hud/Top_buttons/Excommunication.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>SCREEN_MAIN_INTERDICT</Type>
+      <Path>Art/Interface/Game Hud/Top_buttons/Interdict.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>SCREEN_MAIN_ANATHEMA</Type>
+      <Path>Art/Interface/Game Hud/Top_buttons/Anathema.dds</Path>
+    </InterfaceArtInfo>
 		<InterfaceArtInfo>
 			<Type>FATHER_BG</Type>
 			<Path>Art/Interface/Screens/Founding_Fathers/FF_BG.dds</Path>
@@ -671,22 +671,18 @@
 			<Type>INTERFACE_EUROPE</Type>
 			<Path>Art/Interface/Game Hud/Top_buttons/Europe.dds</Path>
 		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>INTERFACE_SILK_ROAD</Type>
-			<Path>Art/Interface/Game Hud/Top_buttons/SilkRoadTopBut.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>INTERFACE_IMMIGRATION</Type>
-			<Path>Art/Interface/Game Hud/Top_buttons/ImmigrationTopBut.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>INTERFACE_MOTHER_LAND</Type>
-			<Path>Art/Interface/Game Hud/Top_buttons/motherlandtopbut.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>INTERFACE_SPICE_ROUTE</Type>
-			<Path>Art/Interface/Game Hud/Top_buttons/SpiceRouteTopBut.dds</Path>
-		</InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>INTERFACE_SILK_ROAD</Type>
+      <Path>Art/Interface/Game Hud/Top_buttons/SilkRoadTopBut.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>INTERFACE_IMMIGRATION</Type>
+      <Path>Art/Interface/Game Hud/Top_buttons/ImmigrationTopBut.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>INTERFACE_SPICE_ROUTE</Type>
+      <Path>Art/Interface/Game Hud/Top_buttons/SpiceRouteTopBut.dds</Path>
+    </InterfaceArtInfo>
 		<InterfaceArtInfo>
 			<Type>INTERFACE_FOREIGN_ADVISOR</Type>
 			<Path>Art/Interface/Game Hud/Top_buttons/Foreign_Advisor.dds</Path>
@@ -723,34 +719,34 @@
 			<Type>INTERFACE_EUROPE_BACKGROUND</Type>
 			<Path>Art/Interface/Screens/Europe/background.dds</Path>
 		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>INTERFACE_SPICE_ROUTE_BACKGROUND</Type>
-			<Path>Art/Interface/Screens/Spice_Route/spice_background.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>INTERFACE_SPICE_ROUTE_TITLE_BAR</Type>
-			<Path>Art/Interface/Screens/Spice_Route/SR_TitleBar.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>INTERFACE_SPICE_ROUTE_SCREEN_TAB_OFF</Type>
-			<Path>Art/Interface/Screens/Spice_Route/SR_TabOFF.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>INTERFACE_SILK_ROAD_BACKGROUND</Type>
-			<Path>Art/Interface/Screens/Spice_Route/SilkRoad_background.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>INTERFACE_TRADE_FAIR_ROAD_BACKGROUND</Type>
-			<Path>Art/Interface/Screens/Spice_Route/TradeFairBG.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>INTERFACE_SILK_ROAD_TITLE_BAR</Type>
-			<Path>Art/Interface/Screens/Spice_Route/SilkR_TitleBar.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>INTERFACE_SILK_ROAD_TAB_OFF</Type>
-			<Path>Art/Interface/Screens/Spice_Route/SilkR_TabOFF.dds</Path>
-		</InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>INTERFACE_SPICE_ROUTE_BACKGROUND</Type>
+      <Path>Art/Interface/Screens/Spice_Route/spice_background.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>INTERFACE_SPICE_ROUTE_TITLE_BAR</Type>
+      <Path>Art/Interface/Screens/Spice_Route/SR_TitleBar.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>INTERFACE_SPICE_ROUTE_SCREEN_TAB_OFF</Type>
+      <Path>Art/Interface/Screens/Spice_Route/SR_TabOFF.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>INTERFACE_SILK_ROAD_BACKGROUND</Type>
+      <Path>Art/Interface/Screens/Spice_Route/SilkRoad_background.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>INTERFACE_TRADE_FAIR_ROAD_BACKGROUND</Type>
+      <Path>Art/Interface/Screens/Spice_Route/TradeFairBG.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>INTERFACE_SILK_ROAD_TITLE_BAR</Type>
+      <Path>Art/Interface/Screens/Spice_Route/SilkR_TitleBar.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>INTERFACE_SILK_ROAD_TAB_OFF</Type>
+      <Path>Art/Interface/Screens/Spice_Route/SilkR_TabOFF.dds</Path>
+    </InterfaceArtInfo>
 		<InterfaceArtInfo>
 			<Type>INTERFACE_EUROPE_SHADOW_BOX</Type>
 			<Path>Art/Interface/Screens/Europe/box_black_shaded.dds</Path>
@@ -875,14 +871,14 @@
 			<Type>INTERFACE_STORES_BUTTON</Type>
 			<Path>Art/Interface/Screens/City_Management/cargo_box.dds</Path>
 		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>INTERFACE_WAREHOUSE_STORAGE_BUTTON</Type>
-			<Path>Art/Interface/Buttons/Actions/warehousestorage.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>INTERFACE_NATIVE_VILLAGES_BUTTON</Type>
-			<Path>Art/Interface/Buttons/Actions/NativeVillages.dds</Path>
-		</InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>INTERFACE_WAREHOUSE_STORAGE_BUTTON</Type>
+      <Path>Art/Interface/Buttons/Actions/warehousestorage.dds</Path>
+    </InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>INTERFACE_NATIVE_VILLAGES_BUTTON</Type>
+      <Path>Art/Interface/Buttons/Actions/NativeVillages.dds</Path>
+    </InterfaceArtInfo>
 		<InterfaceArtInfo>
 			<Type>INTERFACE_CITY_CITIZEN_BUTTON</Type>
 			<Path>Art/Interface/Screens/City_Management/Dude.dds</Path>
@@ -895,20 +891,6 @@
 			<Type>INTERFACE_CITY_GOVENOR_BUTTON</Type>
 			<Path>Art/Interface/Screens/City_Management/import_export.dds</Path>
 		</InterfaceArtInfo>
-		<!-- domestic advisor upgrade - start - nightinggale -->
-		<InterfaceArtInfo>
-			<Type>INTERFACE_CITY_VACANT_BUILDING_BUTTON</Type>
-			<Path>Art/Interface/Screens/City_Management/Build.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>INTERFACE_CITY_CITIZEN_COUNT_BUTTON</Type>
-			<Path>Art/Interface/Screens/City_Management/Dude.dds</Path>
-		</InterfaceArtInfo>
-		<InterfaceArtInfo>
-			<Type>INTERFACE_CITY_CITIZEN_WRONG_BUTTON</Type>
-			<Path>Art/Interface/Screens/City_Management/Dude.dds</Path>
-		</InterfaceArtInfo>
-		<!-- domestic advisor upgrade - end - nightinggale -->
 		<InterfaceArtInfo>
 			<Type>INTERFACE_BOX_NEG_END</Type>
 			<Path>Art/Interface/Screens/City_Management/BottomBoxEND.dds</Path>

@@ -20,19 +20,26 @@ class CvPediaProfession:
 		self.iProfession = -1
 		self.top = main
 
-	def getSortedList( self, numInfos, getInfo ):
+	def getSortedListProfession( self ):
 		'''returned a list of infos sorted alphabetically'''
 
+		### info subclass - Nightinggale
+		#
+		# assigned calls to this function (not used in vanilla?)
+		# this mean only one list generation and the different lists will no longer go out of sync
+		# also added ignore for subtypes
+		
+		
 		# count the items we are going to display
 		iNumNonGraphical = 0
 		for i in range(gc.getNumProfessionInfos()):
-			if (not getInfo(i).isGraphicalOnly()):
+			if (not gc.getProfessionInfo(i).isSubType()):
 				iNumNonGraphical += 1
 
 		infoList = [(0,0)] * iNumNonGraphical
 		j = 0
 		for i in range(gc.getNumProfessionInfos()):
-			if (not gc.getProfessionInfo(i).isGraphicalOnly()):
+			if (not gc.getProfessionInfo(i).isSubType()):
 				infoList[j] = (gc.getProfessionInfo(i).getDescription(), i)
 				j += 1
 
@@ -310,18 +317,24 @@ class CvPediaProfession:
 		if bRedraw:
 			screen.clearListBoxGFC(self.top.LIST_ID)
 
-		# sort Units alphabetically
-		ProfessionList=[(0,0)]*gc.getNumProfessionInfos()
-		for j in range(gc.getNumProfessionInfos()):
-			ProfessionList[j] = (gc.getProfessionInfo(j).getDescription(), j)
-		ProfessionList.sort()
 
+		### info subclass - start - Nightinggale
+		# replaced list generation with a function call to the function, which does precisely the same
+		ProfessionList = self.getSortedListProfession()
+		
+		selected_profession = self.iProfession
+		if (gc.getProfessionInfo(selected_profession).isSubType()):
+			selected_profession = gc.getProfessionInfo(selected_profession).getParent()
+		### info subclass - end - Nightinggale
 		iSelected = 0
 		i = 0
-		for iI in range(gc.getNumProfessionInfos()):
+		for iI in range(len(ProfessionList)):
 			if bRedraw:
 				screen.appendListBoxStringNoUpdate(self.top.LIST_ID, ProfessionList[iI][0], WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROFESSION, ProfessionList[iI][1], 0, CvUtil.FONT_LEFT_JUSTIFY)
-			if ProfessionList[iI][1] == self.iProfession:
+			### info subclass - start - Nightinggale
+			# if ProfessionList[iI][1] == self.iProfession:
+			if ProfessionList[iI][1] == selected_profession:
+			### info subclass - end - Nightinggale
 				iSelected = iI
 				i += 1
 

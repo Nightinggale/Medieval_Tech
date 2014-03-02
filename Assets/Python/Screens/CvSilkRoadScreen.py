@@ -80,8 +80,7 @@ class CvSilkRoadScreen:
 		self.Y_DOCKS_OFFSET = 50
 		self.H_DOCK = (self.PANE_HEIGHT - (self.H_TEXT_MARGIN * 2)) * 35 / 100
 		
-		self.EUROPE_EAST = CvUtil.findInfoTypeNum('EUROPE_EAST')
-		self.EUROPE_WEST = CvUtil.findInfoTypeNum('EUROPE_WEST')
+		self.TRADE_SCREEN_SILK_ROAD_MARKET = CvUtil.findInfoTypeNum('TRADE_SCREEN_SILK_ROAD_MARKET')
 
 		# Set the background and exit button, and show the screen
 		screen.setDimensions(0, 0, self.XResolution, self.YResolution)
@@ -106,7 +105,7 @@ class CvSilkRoadScreen:
 		screen.addDDSGFC("EuropeScreenOutboundImage", ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE_SHADOW_BOX").getPath(), - self.W_TEXT_MARGIN, self.Y_BOUND, self.PANE_WIDTH, (self.PANE_HEIGHT - self.H_TEXT_MARGIN) / 2, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 		szText = localText.changeTextColor(localText.getText("TXT_KEY_OUTBOUND", ()).upper(), gc.getInfoTypeForString("COLOR_FONT_CREAM"))
 		screen.setLabel("EuropeScreenOutboundText", "Background",  u"<font=4>" + szText + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, (self.PANE_WIDTH / 2), self.Y_BOUND - (self.H_TEXT_MARGIN / 2), 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, self.SAIL_TO_NEW_WORLD, -1 )
-		screen.addScrollPanel("OutBoundList", u"", self.W_TEXT_MARGIN / 2, self.Y_BOUND + self.H_TEXT_MARGIN, self.W_SLIDER, ((self.PANE_HEIGHT - self.H_TEXT_MARGIN) / 2) - (self.H_TEXT_MARGIN * 3), PanelStyles.PANEL_STYLE_MAIN, false, WidgetTypes.WIDGET_SAIL, UnitTravelStates.UNIT_TRAVEL_STATE_FROM_SILK_ROAD, -1 )
+		screen.addScrollPanel("OutBoundList", u"", self.W_TEXT_MARGIN / 2, self.Y_BOUND + self.H_TEXT_MARGIN, self.W_SLIDER, ((self.PANE_HEIGHT - self.H_TEXT_MARGIN) / 2) - (self.H_TEXT_MARGIN * 3), PanelStyles.PANEL_STYLE_MAIN, false, WidgetTypes.WIDGET_SAIL, UnitTravelStates.UNIT_TRAVEL_STATE_FROM_EUROPE, -1 )
 
 		# In Port
 		screen.addDDSGFC("EuropeScreenPortImage", ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE_SHADOW_BOX").getPath(), self.X_IN_PORT, self.Y_UPPER_EDGE, self.IN_PORT_PANE_WIDTH, self.PANE_HEIGHT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
@@ -161,12 +160,41 @@ class CvSilkRoadScreen:
 			LARGE_BUTTON_SIZE = 36
 		STACK_BAR_HEIGHT = int((2.7 * self.YResolution) / 100)	
 		ScrollButtonSize = LARGE_BUTTON_SIZE
-		if (gc.getPlayer(gc.getGame().getActivePlayer()).getHasTradeRouteType(TradeRouteTypes.TRADE_ROUTE_FAIR)):	
-			screen.setImageButton("SpiceRouteScreen",ArtFileMgr.getInterfaceArtInfo("INTERFACE_SPICE_ROUTE").getPath(), (self.XResolution * 35 / 100) - (ScrollButtonSize / 2), (STACK_BAR_HEIGHT / 2) - (ScrollButtonSize / 3), ScrollButtonSize, ScrollButtonSize, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_SPICE_ROUTE_SCREEN).getActionInfoIndex(), -1)
-			screen.setImageButton("TradeFairScreen",ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE").getPath(), (self.XResolution * 65 / 100) - (ScrollButtonSize / 2), (STACK_BAR_HEIGHT / 2) - (ScrollButtonSize / 3), ScrollButtonSize, ScrollButtonSize, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_TRADE_FAIR_SCREEN).getActionInfoIndex(), -1)
-		elif (gc.getPlayer(gc.getGame().getActivePlayer()).getHasTradeRouteType(TradeRouteTypes.TRADE_ROUTE_SPICE_ROUTE)):	
-			screen.setImageButton("SpiceRouteScreen",ArtFileMgr.getInterfaceArtInfo("INTERFACE_SPICE_ROUTE").getPath(), (self.XResolution * 35 / 100) - (ScrollButtonSize / 2), (STACK_BAR_HEIGHT / 2) - (ScrollButtonSize / 3), ScrollButtonSize, ScrollButtonSize, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_SPICE_ROUTE_SCREEN).getActionInfoIndex(), -1)
-			screen.setImageButton("ImmigratioinScreen",ArtFileMgr.getInterfaceArtInfo("INTERFACE_IMMIGRATION").getPath(), (self.XResolution * 65 / 100) - (ScrollButtonSize / 2), (STACK_BAR_HEIGHT / 2) - (ScrollButtonSize / 3), ScrollButtonSize, ScrollButtonSize, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_IMMIGRATION_SCREEN).getActionInfoIndex(), -1)
+		#Trade Screen quick screen links
+		#self.TRADE_SCREEN_SPICE_ROUTE_MARKET = CvUtil.findInfoTypeNum('TRADE_SCREEN_SPICE_ROUTE_MARKET')
+		#self.TRADE_SCREEN_SILK_ROAD_MARKET = CvUtil.findInfoTypeNum('TRADE_SCREEN_SILK_ROAD_MARKET')
+		#self.TRADE_SCREEN_TRADE_FAIR_MARKET = CvUtil.findInfoTypeNum('TRADE_SCREEN_TRADE_FAIR_MARKET')	
+		#if (gc.getPlayer(gc.getGame().getActivePlayer()).getHasTradeRouteType(self.TRADE_SCREEN_TRADE_FAIR_MARKET)):	
+			#screen.setImageButton("SpiceRouteScreen",ArtFileMgr.getInterfaceArtInfo("INTERFACE_SPICE_ROUTE").getPath(), (self.XResolution * 35 / 100) - (ScrollButtonSize / 2), (STACK_BAR_HEIGHT / 2) - (ScrollButtonSize / 3), ScrollButtonSize, ScrollButtonSize, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_SPICE_ROUTE_SCREEN).getActionInfoIndex(), -1)
+			#screen.setImageButton("TradeFairScreen",ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE").getPath(), (self.XResolution * 65 / 100) - (ScrollButtonSize / 2), (STACK_BAR_HEIGHT / 2) - (ScrollButtonSize / 3), ScrollButtonSize, ScrollButtonSize, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_TRADE_FAIR_SCREEN).getActionInfoIndex(), -1)
+		#elif (gc.getPlayer(gc.getGame().getActivePlayer()).getHasTradeRouteType(self.TRADE_SCREEN_SPICE_ROUTE_MARKET)):	
+			#screen.setImageButton("SpiceRouteScreen",ArtFileMgr.getInterfaceArtInfo("INTERFACE_SPICE_ROUTE").getPath(), (self.XResolution * 35 / 100) - (ScrollButtonSize / 2), (STACK_BAR_HEIGHT / 2) - (ScrollButtonSize / 3), ScrollButtonSize, ScrollButtonSize, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_SPICE_ROUTE_SCREEN).getActionInfoIndex(), -1)
+			#screen.setImageButton("ImmigratioinScreen",ArtFileMgr.getInterfaceArtInfo("INTERFACE_IMMIGRATION").getPath(), (self.XResolution * 65 / 100) - (ScrollButtonSize / 2), (STACK_BAR_HEIGHT / 2) - (ScrollButtonSize / 3), ScrollButtonSize, ScrollButtonSize, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_IMMIGRATION_SCREEN).getActionInfoIndex(), -1)
+		iRoute = 0
+		iNumEuropeInfos = gc.getNumEuropeInfos()
+		ThisScreen = self.TRADE_SCREEN_SILK_ROAD_MARKET 
+		HasImmigrationScreen = gc.getLeaderHeadInfo(gc.getPlayer(gc.getGame().getActivePlayer()).getLeaderType()).getTravelCommandType() == 1
+		FinalRoute = ThisScreen
+		DiscoveredCout = 0;
+		for iRoute in range(iNumEuropeInfos):
+			if (iRoute != ThisScreen and gc.getPlayer(gc.getGame().getActivePlayer()).getHasTradeRouteType(iRoute)):
+				if (iRoute == 0 and (ThisScreen - 1) == 0):
+					if (HasImmigrationScreen):
+						screen.setImageButton("ImmigratioinScreen",ArtFileMgr.getInterfaceArtInfo("INTERFACE_IMMIGRATION").getPath(), (self.XResolution * 35 / 100) - (ScrollButtonSize / 2), (STACK_BAR_HEIGHT / 2) - (ScrollButtonSize / 3), ScrollButtonSize, ScrollButtonSize, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_IMMIGRATION_SCREEN).getActionInfoIndex(), -1)
+					else:
+						screen.setImageButton("MotherLand",ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE").getPath(), (self.XResolution * 35 / 100) - (ScrollButtonSize / 2), (STACK_BAR_HEIGHT / 2) - (ScrollButtonSize / 3), ScrollButtonSize, ScrollButtonSize, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_SILK_ROAD_SCREEN).getActionInfoIndex(), -1)
+				elif ((ThisScreen - 1) == iRoute):	
+					screen.setImageButton("QickLink1",gc.getEuropeInfo(iRoute).getButton(), (self.XResolution * 35 / 100) - (ScrollButtonSize / 2), (STACK_BAR_HEIGHT / 2) - (ScrollButtonSize / 3), ScrollButtonSize, ScrollButtonSize, WidgetTypes.WIDGET_POP_UP_SCREEN, iRoute, 1)
+				elif ((ThisScreen + 1) == iRoute):
+					screen.setImageButton("QickLink2",gc.getEuropeInfo(iRoute).getButton(), (self.XResolution * 65 / 100) - (ScrollButtonSize / 2), (STACK_BAR_HEIGHT / 2) - (ScrollButtonSize / 3), ScrollButtonSize, ScrollButtonSize, WidgetTypes.WIDGET_POP_UP_SCREEN, iRoute, 1)
+			if (gc.getPlayer(gc.getGame().getActivePlayer()).getHasTradeRouteType(iRoute)):
+				FinalRoute = iRoute
+				DiscoveredCout = DiscoveredCout + 1
+		if (FinalRoute == ThisScreen and DiscoveredCout > 2):
+			if (HasImmigrationScreen):
+				screen.setImageButton("ImmigratioinScreen",ArtFileMgr.getInterfaceArtInfo("INTERFACE_IMMIGRATION").getPath(), (self.XResolution * 65 / 100) - (ScrollButtonSize / 2), (STACK_BAR_HEIGHT / 2) - (ScrollButtonSize / 3), ScrollButtonSize, ScrollButtonSize, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_IMMIGRATION_SCREEN).getActionInfoIndex(), -1)
+			else:
+				screen.setImageButton("MotherLand",ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE").getPath(), (self.XResolution * 65 / 100) - (ScrollButtonSize / 2), (STACK_BAR_HEIGHT / 2) - (ScrollButtonSize / 3), ScrollButtonSize, ScrollButtonSize, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_SILK_ROAD_SCREEN).getActionInfoIndex(), -1)
 		
 #TKe
 		# draw the contents
@@ -190,12 +218,12 @@ class CvSilkRoadScreen:
 		OutboundUnitsList = []
 		(unit, iter) = player.firstUnit()
 		while (unit):
-			if (not unit.isCargo() and not unit.isDelayedDeath()):
-				if (unit.getUnitTravelState() == UnitTravelStates.UNIT_TRAVEL_STATE_IN_SILK_ROAD):
+			if (not unit.isCargo() and not unit.isDelayedDeath() and (unit.getUnitTradeMarket() == self.TRADE_SCREEN_SILK_ROAD_MARKET)):
+				if (unit.getUnitTravelState() == UnitTravelStates.UNIT_TRAVEL_STATE_IN_EUROPE):
 					EuropeUnitsList.append(unit)
-				elif (unit.getUnitTravelState() == UnitTravelStates.UNIT_TRAVEL_STATE_TO_SILK_ROAD):
+				elif (unit.getUnitTravelState() == UnitTravelStates.UNIT_TRAVEL_STATE_TO_EUROPE):
 					InboundUnitsList.append(unit)
-				if (unit.getUnitTravelState() == UnitTravelStates.UNIT_TRAVEL_STATE_FROM_SILK_ROAD):
+				if (unit.getUnitTravelState() == UnitTravelStates.UNIT_TRAVEL_STATE_FROM_EUROPE):
 					OutboundUnitsList.append(unit)
 			(unit, iter) = player.nextUnit(iter)
 
@@ -254,7 +282,7 @@ class CvSilkRoadScreen:
 				#screen.addDragableButtonAt("LoadingList", self.getNextWidgetName(), unit.getFullLengthIcon(), "", 0, yLocation_InPort, self.SHIP_ICON_SIZE * 2, self.SHIP_ICON_SIZE * 2, WidgetTypes.WIDGET_SHIP_CARGO, unit.getID(), -1, ButtonStyles.BUTTON_STYLE_LABEL)
 			#Tke
 #			screen.setImageButtonAt(self.getNextWidgetName(), "LoadingList", ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE_SAIL").getPath(), - (self.CARGO_ICON_SIZE / 3) + 4, yLocation_InPort + (self.SHIP_ICON_SIZE * 2) - (self.CARGO_ICON_SIZE * 3 / 4), self.CARGO_ICON_SIZE * 3 / 2, self.CARGO_ICON_SIZE * 3 / 2, WidgetTypes.WIDGET_GENERAL, self.SAIL_TO_NEW_WORLD, unit.getID())
-			if (unit.canSailEurope(self.EUROPE_EAST)):
+			if (unit.canSailEurope(self.TRADE_SCREEN_SILK_ROAD_MARKET)):
 				#if gc.getCivilizationInfo(player.getCivilizationType()).isWaterStart():
 					#screen.setImageButtonAt(self.getNextWidgetName(), "LoadingList", ArtFileMgr.getInterfaceArtInfo("INTERFACE_LEAVE_PORT").getPath(), - (self.CARGO_ICON_SIZE / 3) + 4, yLocation_InPort + (self.SHIP_ICON_SIZE * 2) - (self.CARGO_ICON_SIZE * 3 / 4), self.CARGO_ICON_SIZE * 3 / 2, self.CARGO_ICON_SIZE * 3 / 2, WidgetTypes.WIDGET_GENERAL, self.SAIL_TO_NEW_WORLD, unit.getID())
 				#else:
@@ -291,15 +319,15 @@ class CvSilkRoadScreen:
 				screen.addDDSGFCAt(self.getNextWidgetName(), "InBoundList", unit.getFullLengthIcon(), 0, yLocation_ToEurope - (self.SHIP_ICON_SIZE / 3), self.SHIP_ICON_SIZE * 4 / 3, self.SHIP_ICON_SIZE * 4 / 3, WidgetTypes.WIDGET_GENERAL, -1, -1, False)
 			yLocation_ToEurope += ShipPanelHight + (self.H_TEXT_MARGIN)
 
-		screen.addScrollPanel("OutBoundList", u"", self.W_TEXT_MARGIN / 2, self.Y_BOUND + self.H_TEXT_MARGIN, self.W_SLIDER, ((self.PANE_HEIGHT - self.H_TEXT_MARGIN) / 2) - (self.H_TEXT_MARGIN * 3), PanelStyles.PANEL_STYLE_MAIN, false, WidgetTypes.WIDGET_SAIL, UnitTravelStates.UNIT_TRAVEL_STATE_FROM_SILK_ROAD, -1 )
+		screen.addScrollPanel("OutBoundList", u"", self.W_TEXT_MARGIN / 2, self.Y_BOUND + self.H_TEXT_MARGIN, self.W_SLIDER, ((self.PANE_HEIGHT - self.H_TEXT_MARGIN) / 2) - (self.H_TEXT_MARGIN * 3), PanelStyles.PANEL_STYLE_MAIN, false, WidgetTypes.WIDGET_SAIL, UnitTravelStates.UNIT_TRAVEL_STATE_FROM_EUROPE, -1 )
 		for unit in OutboundUnitsList:
 			szText = localText.getText("TXT_KEY_ARRIVALS_IN", (unit.getName(), unit.getUnitTravelTimer()))
 
-			screen.addDDSGFCAt(self.getNextWidgetName(), "OutBoundList", ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE_OUT_BOUND_BOX").getPath(), 0, yLocation_FromEurope + (self.SHIP_ICON_SIZE / 3), self.W_SLIDER - self.W_TEXT_MARGIN, self.SHIP_ICON_SIZE, WidgetTypes.WIDGET_SAIL, UnitTravelStates.UNIT_TRAVEL_STATE_FROM_SILK_ROAD, -1, False)
-			screen.setLabelAt( self.getNextWidgetName(), "OutBoundList", "<font=2>" + unit.getName().upper() + " : " + szText.upper() + "</font>", CvUtil.FONT_RIGHT_JUSTIFY, self.W_SLIDER - self.W_TEXT_MARGIN - 10, yLocation_FromEurope + (self.SHIP_ICON_SIZE / 3) + ShipPanelHight, -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_SAIL, UnitTravelStates.UNIT_TRAVEL_STATE_FROM_SILK_ROAD, -1)
+			screen.addDDSGFCAt(self.getNextWidgetName(), "OutBoundList", ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE_OUT_BOUND_BOX").getPath(), 0, yLocation_FromEurope + (self.SHIP_ICON_SIZE / 3), self.W_SLIDER - self.W_TEXT_MARGIN, self.SHIP_ICON_SIZE, WidgetTypes.WIDGET_SAIL, UnitTravelStates.UNIT_TRAVEL_STATE_FROM_EUROPE, -1, False)
+			screen.setLabelAt( self.getNextWidgetName(), "OutBoundList", "<font=2>" + unit.getName().upper() + " : " + szText.upper() + "</font>", CvUtil.FONT_RIGHT_JUSTIFY, self.W_SLIDER - self.W_TEXT_MARGIN - 10, yLocation_FromEurope + (self.SHIP_ICON_SIZE / 3) + ShipPanelHight, -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_SAIL, UnitTravelStates.UNIT_TRAVEL_STATE_FROM_EUROPE, -1)
 
 			for i in range(unit.cargoSpace()):
-				screen.addDDSGFCAt(self.getNextWidgetName(), "OutBoundList", ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE_BOX_CARGO").getPath(), self.W_SLIDER - (self.W_TEXT_MARGIN * 2) - ((self.CARGO_SPACING / 2) * (i)), yLocation_FromEurope + (self.SHIP_ICON_SIZE / 3) + (self.SHIP_ICON_SIZE / 2) - (self.CARGO_ICON_SIZE/4), self.CARGO_ICON_SIZE / 2, self.CARGO_ICON_SIZE / 2, WidgetTypes.WIDGET_SAIL, UnitTravelStates.UNIT_TRAVEL_STATE_FROM_SILK_ROAD, -1, False)
+				screen.addDDSGFCAt(self.getNextWidgetName(), "OutBoundList", ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE_BOX_CARGO").getPath(), self.W_SLIDER - (self.W_TEXT_MARGIN * 2) - ((self.CARGO_SPACING / 2) * (i)), yLocation_FromEurope + (self.SHIP_ICON_SIZE / 3) + (self.SHIP_ICON_SIZE / 2) - (self.CARGO_ICON_SIZE/4), self.CARGO_ICON_SIZE / 2, self.CARGO_ICON_SIZE / 2, WidgetTypes.WIDGET_SAIL, UnitTravelStates.UNIT_TRAVEL_STATE_FROM_EUROPE, -1, False)
 
 			iCargoCount = 0
 			plot = unit.plot()
@@ -311,10 +339,10 @@ class CvSilkRoadScreen:
 					iCargoCount += 1
 			#TKs MEd outbound
 			if unit.getDomainType() == DomainTypes.DOMAIN_LAND:
-				screen.addDDSGFCAt( self.getNextWidgetName(), "OutBoundList", unit.getFullLengthIcon(), self.RECRUIT_PANE_HEIGHT  * 2 / 3, yLocation_FromEurope + 20, self.RECRUIT_PANE_HEIGHT  * 1 / 3, self.RECRUIT_PANE_HEIGHT * 2 / 3, WidgetTypes.WIDGET_SAIL, UnitTravelStates.UNIT_TRAVEL_STATE_FROM_SILK_ROAD, -1, False)
+				screen.addDDSGFCAt( self.getNextWidgetName(), "OutBoundList", unit.getFullLengthIcon(), self.RECRUIT_PANE_HEIGHT  * 2 / 3, yLocation_FromEurope + 20, self.RECRUIT_PANE_HEIGHT  * 1 / 3, self.RECRUIT_PANE_HEIGHT * 2 / 3, WidgetTypes.WIDGET_SAIL, UnitTravelStates.UNIT_TRAVEL_STATE_FROM_EUROPE, -1, False)
 			#Tke
 			else:
-				screen.addDDSGFCAt( self.getNextWidgetName(), "OutBoundList", unit.getFullLengthIcon(), 0, yLocation_FromEurope - (self.SHIP_ICON_SIZE / 3), self.SHIP_ICON_SIZE * 4 / 3, self.SHIP_ICON_SIZE * 4 / 3, WidgetTypes.WIDGET_SAIL, UnitTravelStates.UNIT_TRAVEL_STATE_FROM_SILK_ROAD, -1, False)
+				screen.addDDSGFCAt( self.getNextWidgetName(), "OutBoundList", unit.getFullLengthIcon(), 0, yLocation_FromEurope - (self.SHIP_ICON_SIZE / 3), self.SHIP_ICON_SIZE * 4 / 3, self.SHIP_ICON_SIZE * 4 / 3, WidgetTypes.WIDGET_SAIL, UnitTravelStates.UNIT_TRAVEL_STATE_FROM_EUROPE, -1, False)
 			yLocation_FromEurope += ShipPanelHight + (self.H_TEXT_MARGIN)
 
 
@@ -356,10 +384,10 @@ class CvSilkRoadScreen:
 		for iYield in range(YieldTypes.NUM_YIELD_TYPES):
 			kYield = gc.getYieldInfo(iYield)
 			if kYield.isCargo():
-				if (pPlayer.canUnitBeTraded(iYield, UnitTravelStates.UNIT_TRAVEL_STATE_IN_SILK_ROAD, UnitTypes.NO_UNIT)):
-					YieldList.append(iYield)
-				else:
-					iDiscoverCount += 1
+				#if (pPlayer.canUnitBeTraded(iYield, self.TRADE_SCREEN_SILK_ROAD_MARKET, UnitTypes.NO_UNIT)):
+				YieldList.append(iYield)
+				#else:
+					#iDiscoverCount += 1
 		WidthMod = 33
 		BoxWithMod = -3
 		iDiscoverCount = len(YieldList) + iDiscoverCount
@@ -376,23 +404,39 @@ class CvSilkRoadScreen:
 		
 		for iYield in YieldList:
 			kYield = gc.getYieldInfo(iYield)
-			iSellPrice = playerEurope.getYieldSellPrice(iYield, UnitTravelStates.UNIT_TRAVEL_STATE_IN_SILK_ROAD)
-			iBuyPrice = playerEurope.getYieldBuyPrice(iYield, UnitTravelStates.UNIT_TRAVEL_STATE_IN_SILK_ROAD)
+			iSellPrice = playerEurope.getYieldSellPrice(iYield, self.TRADE_SCREEN_SILK_ROAD_MARKET)
+			iBuyPrice = playerEurope.getYieldBuyPrice(iYield, self.TRADE_SCREEN_SILK_ROAD_MARKET)
 			
 			if (kYield.isMilitary()):
 				screen.addDDSGFC(self.getNextWidgetName(), ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE_BOX_PRICE").getPath(), xMilitaryLocation - MilitaryBoxSize, Military_Y_RATES, MilitaryBoxSize, MilitaryBoxSize, WidgetTypes.WIDGET_MOVE_CARGO_TO_TRANSPORT, iYield, -1 )
-				screen.addDragableButton(self.getNextWidgetName(), gc.getYieldInfo(iYield).getIcon(), "", xMilitaryLocation - MilitaryBoxSize + (MilitaryBoxSize / 8), Military_Y_RATES + (MilitaryBoxSize / 3), MilitaryBoxSize * 3 / 4, MilitaryBoxSize * 3 / 4, WidgetTypes.WIDGET_MOVE_CARGO_TO_TRANSPORT, iYield, -1, ButtonStyles.BUTTON_STYLE_IMAGE )
+				if not (pPlayer.canUnitBeTraded(iYield, self.TRADE_SCREEN_SILK_ROAD_MARKET, UnitTypes.NO_UNIT)):
+					screen.addDragableButton(self.getNextWidgetName(), gc.getYieldInfo(iYield).getIcon(), "", xMilitaryLocation - MilitaryBoxSize + (MilitaryBoxSize / 8), Military_Y_RATES + (MilitaryBoxSize / 3), MilitaryBoxSize * 3 / 4, MilitaryBoxSize * 3 / 4, WidgetTypes.WIDGET_HELP_YIELD, iYield, -1, ButtonStyles.BUTTON_STYLE_IMAGE )
+				else:	
+					screen.addDragableButton(self.getNextWidgetName(), gc.getYieldInfo(iYield).getIcon(), "", xMilitaryLocation - MilitaryBoxSize + (MilitaryBoxSize / 8), Military_Y_RATES + (MilitaryBoxSize / 3), MilitaryBoxSize * 3 / 4, MilitaryBoxSize * 3 / 4, WidgetTypes.WIDGET_MOVE_CARGO_TO_TRANSPORT, iYield, -1, ButtonStyles.BUTTON_STYLE_IMAGE )
 				szPrices = u"<font=3>%d/%d</font>" % (iBuyPrice, iSellPrice)
-				if not player.isYieldEuropeTradable(iYield):
+				if not player.isYieldEuropeTradable(iYield, self.TRADE_SCREEN_SILK_ROAD_MARKET):
 					szPrices = u"<color=255,0,0>" + szPrices + u"</color>"
+				elif not (pPlayer.canUnitBeTraded(iYield, self.TRADE_SCREEN_SILK_ROAD_MARKET, UnitTypes.NO_UNIT)):
+					iBuyPrice = playerEurope.getYieldBuyPrice(iYield, -1)
+					szPrices = u"<font=3>%d/-</font>" % (iBuyPrice)
+					szPrices = u"<color=255,0,0>" + szPrices + u"</color>"
+					
 				screen.setLabel(self.getNextWidgetName(), "Background", szPrices, CvUtil.FONT_CENTER_JUSTIFY, xMilitaryLocation - (MilitaryBoxSize / 2), Military_Y_RATES, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_MOVE_CARGO_TO_TRANSPORT, iYield, -1)
 	
 				xMilitaryLocation += MilitaryBoxSize
 			else:	
 				screen.addDDSGFC(self.getNextWidgetName(), ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE_BOX_PRICE").getPath(), xLocation - BoxSize, self.Y_RATES - 10, BoxSize, BoxSize, WidgetTypes.WIDGET_MOVE_CARGO_TO_TRANSPORT, iYield, -1 )
-				screen.addDragableButton(self.getNextWidgetName(), gc.getYieldInfo(iYield).getIcon(), "", xLocation - BoxSize + (BoxSize / 8), self.Y_RATES + (BoxSize / 3) - 10, BoxSize * 3 / 4, BoxSize * 3 / 4, WidgetTypes.WIDGET_MOVE_CARGO_TO_TRANSPORT, iYield, -1, ButtonStyles.BUTTON_STYLE_IMAGE )
+				if not (pPlayer.canUnitBeTraded(iYield, self.TRADE_SCREEN_SILK_ROAD_MARKET, UnitTypes.NO_UNIT)):
+					screen.addDragableButton(self.getNextWidgetName(), gc.getYieldInfo(iYield).getIcon(), "", xLocation - BoxSize + (BoxSize / 8), self.Y_RATES + (BoxSize / 3) - 10, BoxSize * 3 / 4, BoxSize * 3 / 4, WidgetTypes.WIDGET_HELP_YIELD, iYield, -1, ButtonStyles.BUTTON_STYLE_IMAGE )
+				else:
+					screen.addDragableButton(self.getNextWidgetName(), gc.getYieldInfo(iYield).getIcon(), "", xLocation - BoxSize + (BoxSize / 8), self.Y_RATES + (BoxSize / 3) - 10, BoxSize * 3 / 4, BoxSize * 3 / 4, WidgetTypes.WIDGET_MOVE_CARGO_TO_TRANSPORT, iYield, -1, ButtonStyles.BUTTON_STYLE_IMAGE )
 				szPrices = u"<font=3>%d/%d</font>" % (iBuyPrice, iSellPrice)
-				if not player.isYieldEuropeTradable(iYield):
+				if not player.isYieldEuropeTradable(iYield, self.TRADE_SCREEN_SILK_ROAD_MARKET):
+					szPrices = u"<color=255,0,0>" + szPrices + u"</color>"
+				elif not (pPlayer.canUnitBeTraded(iYield, self.TRADE_SCREEN_SILK_ROAD_MARKET, UnitTypes.NO_UNIT)):
+					#iSellPrice = playerEurope.getYieldSellPrice(iYield, self.TRADE_SCREEN)
+					iBuyPrice = playerEurope.getYieldBuyPrice(iYield, -1)
+					szPrices = u"<font=3>%d/-</font>" % (iBuyPrice)
 					szPrices = u"<color=255,0,0>" + szPrices + u"</color>"
 				screen.setLabel(self.getNextWidgetName(), "Background", szPrices, CvUtil.FONT_CENTER_JUSTIFY, xLocation - (BoxSize / 2), self.Y_RATES - 10, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_MOVE_CARGO_TO_TRANSPORT, iYield, -1)
 	
@@ -438,20 +482,23 @@ class CvSilkRoadScreen:
 
 				if (inputClass.getData1() == self.BUY_UNIT_BUTTON_ID) :
 					popupInfo = CyPopupInfo()
+					popupInfo.setData1(1)
+					#TradeScreen Code
+					popupInfo.setData3(self.TRADE_SCREEN_SILK_ROAD_MARKET)
 					popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_PURCHASE_EUROPE_UNIT)
 					CyInterface().addPopup(popupInfo, gc.getGame().getActivePlayer(), true, false)
 
 				elif (inputClass.getData1() == self.SAIL_TO_NEW_WORLD) :
 					activePlayer = gc.getPlayer(gc.getGame().getActivePlayer())
 					transport = activePlayer.getUnit(inputClass.getData2())
-					if (not transport.isNone()) and transport.getUnitTravelState() != UnitTravelStates.UNIT_TRAVEL_STATE_FROM_SILK_ROAD:
-						CyMessageControl().sendDoCommand(inputClass.getData2(), CommandTypes.COMMAND_TRAVEL_SILK_ROAD, UnitTravelStates.UNIT_TRAVEL_STATE_FROM_SILK_ROAD, -1, false)
+					if (not transport.isNone()) and transport.getUnitTravelState() != UnitTravelStates.UNIT_TRAVEL_STATE_FROM_EUROPE:
+						CyMessageControl().sendDoCommand(inputClass.getData2(), CommandTypes.COMMAND_SAIL_TO_EUROPE, UnitTravelStates.UNIT_TRAVEL_STATE_FROM_EUROPE, self.TRADE_SCREEN_SILK_ROAD_MARKET, false)
 
 				elif (inputClass.getData1() == self.SAIL_TO_NEW_WORLD_WEST) :
 					activePlayer = gc.getPlayer(gc.getGame().getActivePlayer())
 					transport = activePlayer.getUnit(inputClass.getData2())
-					if (not transport.isNone()) and transport.getUnitTravelState() != UnitTravelStates.UNIT_TRAVEL_STATE_FROM_SILK_ROAD:
-						CyMessageControl().sendDoCommand(inputClass.getData2(), CommandTypes.COMMAND_TRAVEL_SILK_ROAD, UnitTravelStates.UNIT_TRAVEL_STATE_FROM_SILK_ROAD, -1, false)
+					if (not transport.isNone()) and transport.getUnitTravelState() != UnitTravelStates.UNIT_TRAVEL_STATE_FROM_EUROPE:
+						CyMessageControl().sendDoCommand(inputClass.getData2(), CommandTypes.COMMAND_SAIL_TO_EUROPE, UnitTravelStates.UNIT_TRAVEL_STATE_FROM_EUROPE, self.TRADE_SCREEN_SILK_ROAD_MARKET, false)
 
 				elif (inputClass.getData1() == self.SELL_ALL) :
 					player = gc.getPlayer(gc.getGame().getActivePlayer())
@@ -459,7 +506,7 @@ class CvSilkRoadScreen:
 
 					(unit, iter) = player.firstUnit()
 					while (unit):
-						if (unit.getUnitTravelState() == UnitTravelStates.UNIT_TRAVEL_STATE_IN_SILK_ROAD and unit.isCargo() and unit.isGoods()):
+						if (unit.getUnitTravelState() == UnitTravelStates.UNIT_TRAVEL_STATE_IN_EUROPE and unit.isCargo() and unit.isGoods()):
 							if (unit.getTransportUnit().getID() == transport.getID()):
 								CyMessageControl().sendPlayerAction(player.getID(), PlayerActionTypes.PLAYER_ACTION_SELL_YIELD_UNIT, 0, unit.getYieldStored(), unit.getID())
 						(unit, iter) = player.nextUnit(iter)
@@ -469,7 +516,7 @@ class CvSilkRoadScreen:
 					transport = player.getUnit(inputClass.getData2())
 					for i in range(player.getNumEuropeUnits()):
 						loopUnit = player.getEuropeUnit(i)
-						if (not transport.isNone() and transport.getUnitTravelState() == UnitTravelStates.UNIT_TRAVEL_STATE_IN_SILK_ROAD and not transport.isFull()):
+						if (not transport.isNone() and transport.getUnitTravelState() == UnitTravelStates.UNIT_TRAVEL_STATE_IN_EUROPE and not transport.isFull()):
 							CyMessageControl().sendPlayerAction(player.getID(), PlayerActionTypes.PLAYER_ACTION_LOAD_UNIT_FROM_EUROPE, loopUnit.getID(), inputClass.getData2(), -1)
 
 		return 0
@@ -497,7 +544,7 @@ class CvSilkRoadScreen:
 				#Tks Med
 				player = gc.getPlayer(gc.getGame().getActivePlayer())
 				if gc.getCivilizationInfo(player.getCivilizationType()).isWaterStart():
-					return localText.getText("TXT_KEY_SAIL", ()) + " - " + localText.getObjectText("TXT_KEY_EUROPE_EAST", 0)
+					return localText.getText("TXT_KEY_SAIL", ()) + " - " + localText.getObjectText("TXT_KEY_TRADE_SCREEN_SILK_ROAD_MARKET", 0)
 				else:
 					return localText.getText("TXT_KEY_LEAVE", ())
 			if iData1 == self.SAIL_TO_NEW_WORLD_WEST:

@@ -259,7 +259,10 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 	def placeProfessions(self):
 		screen = self.getScreen()
 		# Create and place a profession pane
-		list = self.getSortedList( gc.getNumProfessionInfos(), gc.getProfessionInfo )
+		### info subclass - start - Nightinggale
+		# list = self.getSortedList( gc.getNumProfessionInfos(), gc.getProfessionInfo )
+		list = self.pediaProfessionScreen.getSortedListProfession()
+		### info subclass - end - Nightinggale
 
 		ButtonSize = 24
 		nColumns = 2
@@ -513,9 +516,9 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 		for item in list:
 			#TKs
 			Constitute = ""
-			if gc.getCivicInfo(item[1]).getCivicOptionType() == 5 and gc.getCivicInfo(item[1]).getInventionCategory() == -1:
+			if gc.getCivicInfo(item[1]).getCivicOptionType() == 0 and gc.getCivicInfo(item[1]).getInventionCategory() == -1:
 				continue
-			if gc.getCivicInfo(item[1]).getCivicOptionType() != 5:
+			if gc.getCivicInfo(item[1]).getCivicOptionType() != 0:
 				#Constitute = localText.getText("TXT_KEY_CONSTITUTE", ())
 				continue
 			

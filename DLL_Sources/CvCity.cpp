@@ -34,7 +34,8 @@ CvCity::CvCity()
     m_aiEventTimers = new int[2];
     //m_abTradePostBuilt = new bool[MAX_TEAMS];
 	m_bmTradePostBuilt = 0;
-
+	m_aiConnectedTradeBonus = new int[NUM_YIELD_TYPES];
+	m_aiConnectedMissionBonus = new int[NUM_YIELD_TYPES];
     ///Tke
 	m_aiSeaPlotYield = new int[NUM_YIELD_TYPES];
 	m_aiRiverPlotYield = new int[NUM_YIELD_TYPES];
@@ -89,6 +90,8 @@ CvCity::~CvCity()
     ///Kailric Fort Mod end
     ///Tks Med
     SAFE_DELETE_ARRAY(m_aiEventTimers);
+	SAFE_DELETE_ARRAY(m_aiConnectedTradeBonus);
+	SAFE_DELETE_ARRAY(m_aiConnectedMissionBonus);
     //SAFE_DELETE_ARRAY(m_abTradePostBuilt);
     ///Tke
 
@@ -457,7 +460,13 @@ void CvCity::uninit()
 		SAFE_DELETE(m_aPopulationUnits[i]);
 	}
 	m_aPopulationUnits.clear();
-
+	//Tks Civics
+	for (uint i = 0; i < m_aNetworkCityIDs.size(); ++i)
+	{
+		SAFE_DELETE(m_aNetworkCityIDs[i]);
+	}
+	m_aNetworkCityIDs.clear();
+	//Tke
 	// traderoute just-in-time - start - Nightinggale
  	ma_tradeImports.reset();
  	ma_tradeExports.reset();
@@ -544,10 +553,13 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 		m_aiEventTimers[iI] = 0;
 	}
 
-	///TKe
+	
 
 	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
 	{
+		m_aiConnectedTradeBonus[iI] = 0;
+		m_aiConnectedMissionBonus[iI] = 0;
+		///TKe
 		m_aiSeaPlotYield[iI] = 0;
 		m_aiRiverPlotYield[iI] = 0;
 		m_aiYieldRateModifier[iI] = 0;
@@ -848,6 +860,74 @@ void CvCity::doTurn()
 			}
 		//}
 	}
+	//if (!isNative())
+	//{
+	//	
+	//	std::vector<YieldTypes> aTradeYield;
+	//	std::vector<YieldTypes> aMissionYield;
+	//	std::vector<int> aTradeYieldAmount;
+	//	std::vector<int> aMissionYieldAmount;
+
+	//	for (int iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
+	//	{
+	//		if (GET_PLAYER(getOwnerINLINE()).getCivic((CivicOptionTypes)iI) != NO_CIVIC)
+	//		{
+	//			CvCivicInfo& kCivicInfo =  GC.getCivicInfo(GET_PLAYER(getOwnerINLINE()).getCivic((CivicOptionTypes)iI));
+	//			for (int iI = 0; iI < kCivicInfo.getNumConnectedTradeYields(); iI++)
+	//			{
+	//				aTradeYield.push_back((YieldTypes)kCivicInfo.getConnectedTradeYields(iI));
+	//				aTradeYieldAmount.push_back(kCivicInfo.getConnectedTradeYieldsBonus(iI));
+	//			}
+	//			for (int iI = 0; iI < kCivicInfo.getNumConnectedMissonYields(); iI++)
+	//			{
+	//				aMissionYield.push_back((YieldTypes)kCivicInfo.getConnectedMissonYields(iI));
+	//				aMissionYieldAmount.push_back(kCivicInfo.getConnectedMissonYieldsBonus(iI));
+	//			}
+	//		}
+	//	}
+
+	//	if (!aTradeYield.empty() || !aMissionYield.empty())
+	//	{
+	//		int iLoop;
+	//		for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+	//		{
+	//			if (GET_PLAYER(getOwnerINLINE()).getTradingPostCount((PlayerTypes)iPlayer) > 0 || GET_PLAYER((PlayerTypes)iPlayer).getMissionaryPoints(getOwnerINLINE()) > 0)
+	//			{
+	//				CvPlayer& kPlayer = GET_PLAYER((PlayerTypes)iPlayer);
+	//				for (CvCity* pLoopCity = kPlayer.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kPlayer.nextCity(&iLoop))
+	//				{
+	//					if (!aTradeYield.empty() && pLoopCity->isTradePostBuilt(getTeam()))
+	//					{
+	//						if (isConnectedTo(pLoopCity))
+	//						{
+	//							//Add Bonuses here
+	//							for (uint iI = 0; iI < aTradeYield.size(); ++iI)
+	//							{
+	//								//changeYieldStored(aTradeYield[iI], aTradeYieldAmount[iI]);
+	//								changeConnectedTradeYield(aTradeYield[iI], aTradeYieldAmount[iI]);
+	//							}
+	//							//GET_PLAYER(getOwnerINLINE()).changeGold(500);
+	//						}
+	//					}
+	//					if (!aMissionYield.empty() && pLoopCity->getMissionaryPlayer() == getOwner())
+	//					{
+	//						if (isConnectedTo(pLoopCity))
+	//						{
+	//							//Add Bonuses here
+	//							for (uint iI = 0; iI < aMissionYield.size(); ++iI)
+	//							{
+	//								changeConnectedMissionYield(aMissionYield[iI], aMissionYieldAmount[iI]);
+	//								//changeYieldStored(aMissionYield[iI], aMissionYieldAmount[iI]);
+	//							}
+	//							//GET_PLAYER(getOwnerINLINE()).changeGold(1000);
+	//						}
+	//					}
+	//				}
+	//			}
+	//		}
+	//	}
+	//}
+			
 	///TKe
 
 	doRebelSentiment();
@@ -4390,7 +4470,11 @@ int CvCity::getBaseRawYieldProduced(YieldTypes eYieldType, SpecialBuildingTypes 
     {
         bBuildingExtra = false;
     }
+	//Tks Civics
+	int iExtraConnectedNetwork = 0;
 
+	iExtraConnectedNetwork += getConnectedTradeYield(eYieldType);
+	iExtraConnectedNetwork += getConnectedMissionYield(eYieldType);
 
 	//building extra
 
@@ -4440,8 +4524,9 @@ int CvCity::getBaseRawYieldProduced(YieldTypes eYieldType, SpecialBuildingTypes 
             }
         }
 	}
-    ///TKe
-	return (iCityYieldProduction + iPlotYieldProduction + iBuildingYieldProduced);
+   
+	return (iCityYieldProduction + iPlotYieldProduction + iBuildingYieldProduced + iExtraConnectedNetwork);
+	 ///TKe
 }
 
 int CvCity::getRawYieldProduced(YieldTypes eYieldType) const
@@ -4822,6 +4907,14 @@ void CvCity::setYieldStored(YieldTypes eYield, int iValue)
 	FAssertMsg(eYield >= 0, "eYield expected to be >= 0");
 	FAssertMsg(eYield < NUM_YIELD_TYPES	, "eYield expected to be < NUM_YIELD_TYPES");
 	FAssert(iValue >= 0 || eYield == YIELD_FOOD);
+
+	//TKs Civics
+	if (eYield == YIELD_GOLD)
+	{
+		GET_PLAYER(getOwnerINLINE()).changeGold(iValue);
+		return;
+	}
+	///Tke
 
 	int iChange = iValue - getYieldStored(eYield);
 	if (iChange != 0)
@@ -7885,8 +7978,97 @@ void CvCity::doCulture()
 
 	changeCulture(getOwnerINLINE(), getCultureRate(), false);
 }
+//Civic Reset
+///TKs Civic
+void CvCity::resetConnectedYieldBonus(CivicTypes eCivic, int iChange)
+{
+	if (eCivic == NO_CIVIC)
+	{
+		for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+		{
+			changeConnectedTradeYield((YieldTypes)iYield, 0);
+			changeConnectedMissionYield((YieldTypes)iYield, 0);
+		}
+	}
 
-///TKs Med
+	std::vector<YieldTypes> aTradeYield;
+	std::vector<YieldTypes> aMissionYield;
+	std::vector<int> aTradeYieldAmount;
+	std::vector<int> aMissionYieldAmount;
+	if (eCivic == NO_CIVIC)
+	{
+		for (int iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
+		{
+			if (GET_PLAYER(getOwnerINLINE()).getCivic((CivicOptionTypes)iI) != NO_CIVIC)
+			{
+				CvCivicInfo& kCivicInfo =  GC.getCivicInfo(GET_PLAYER(getOwnerINLINE()).getCivic((CivicOptionTypes)iI));
+				for (int iI = 0; iI < kCivicInfo.getNumConnectedTradeYields(); iI++)
+				{
+					aTradeYield.push_back((YieldTypes)kCivicInfo.getConnectedTradeYields(iI));
+					aTradeYieldAmount.push_back(kCivicInfo.getConnectedTradeYieldsBonus(iI) * iChange) ;
+				}
+				for (int iI = 0; iI < kCivicInfo.getNumConnectedMissonYields(); iI++)
+				{
+					aMissionYield.push_back((YieldTypes)kCivicInfo.getConnectedMissonYields(iI));
+					aMissionYieldAmount.push_back(kCivicInfo.getConnectedMissonYieldsBonus(iI) * iChange) ;
+				}
+			}
+		}
+	}
+	else
+	{
+		CvCivicInfo& kCivicInfo =  GC.getCivicInfo(eCivic);
+		for (int iI = 0; iI < kCivicInfo.getNumConnectedTradeYields(); iI++)
+		{
+			aTradeYield.push_back((YieldTypes)kCivicInfo.getConnectedTradeYields(iI));
+			aTradeYieldAmount.push_back(kCivicInfo.getConnectedTradeYieldsBonus(iI) * iChange) ;
+		}
+		for (int iI = 0; iI < kCivicInfo.getNumConnectedMissonYields(); iI++)
+		{
+			aMissionYield.push_back((YieldTypes)kCivicInfo.getConnectedMissonYields(iI));
+			aMissionYieldAmount.push_back(kCivicInfo.getConnectedMissonYieldsBonus(iI) * iChange) ;
+		}
+	}
+
+	if (!aTradeYield.empty() || !aMissionYield.empty())
+	{
+		int iLoop;
+		for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+		{
+			if (GET_PLAYER((PlayerTypes)iPlayer).isAlive() && (GET_PLAYER(getOwnerINLINE()).getTradingPostCount((PlayerTypes)iPlayer) > 0 || GET_PLAYER((PlayerTypes)iPlayer).getMissionaryPoints(getOwnerINLINE()) > 0))
+			{
+				CvPlayer& kPlayer = GET_PLAYER((PlayerTypes)iPlayer);
+				for (CvCity* pLoopCity = kPlayer.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kPlayer.nextCity(&iLoop))
+				{
+					if (!aTradeYield.empty() && pLoopCity->isTradePostBuilt(getTeam()))
+					{
+						if (isConnectedTo(pLoopCity))
+						{
+							//Add Bonuses here
+							for (uint iI = 0; iI < aTradeYield.size(); ++iI)
+							{
+								
+								changeConnectedTradeYield(aTradeYield[iI], aTradeYieldAmount[iI]);
+							}
+						}
+					}
+					if (!aMissionYield.empty() && pLoopCity->getMissionaryPlayer() == getOwner())
+					{
+						if (isConnectedTo(pLoopCity))
+						{
+							//Add Bonuses here
+							for (uint iI = 0; iI < aMissionYield.size(); ++iI)
+							{
+								changeConnectedMissionYield(aMissionYield[iI], aMissionYieldAmount[iI]);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 void CvCity::doPlotCulture(bool bUpdate, PlayerTypes ePlayer, int iCultureRate)
 {
     ///Tks Med
@@ -8378,6 +8560,8 @@ void CvCity::read(FDataStreamBase* pStream)
 	} else {
 		pStream->Read(&m_bmTradePostBuilt);
 	}
+	pStream->Read(NUM_YIELD_TYPES, m_aiConnectedTradeBonus);
+	pStream->Read(NUM_YIELD_TYPES, m_aiConnectedMissionBonus);
     ///Tke
 	pStream->Read(NUM_YIELD_TYPES, m_aiSeaPlotYield);
 	pStream->Read(NUM_YIELD_TYPES, m_aiRiverPlotYield);
@@ -8531,6 +8715,16 @@ void CvCity::read(FDataStreamBase* pStream)
 		kChange.read(pStream);
 		m_aBuildingYieldChange.push_back(kChange);
 	}
+	//Tks Civics
+	/*pStream->Read(&iNumElts);
+	int iElement;
+	m_aNetworkCityIDs.clear();
+	for (int i = 0; i < iNumElts; ++i)
+	{
+		pStream->Read(&iElement);
+		m_aNetworkCityIDs.push_back(iElement);
+	}*/
+	///Tke
 
 	// set cache
 	UpdateBuildingAffectedCache(); // building affected cache - Nightinggale
@@ -8624,6 +8818,8 @@ void CvCity::write(FDataStreamBase* pStream)
 	pStream->Write(2, m_aiEventTimers);
 	//pStream->Write(MAX_TEAMS, m_abTradePostBuilt);
 	pStream->Write(m_bmTradePostBuilt);
+	pStream->Write(NUM_YIELD_TYPES, m_aiConnectedTradeBonus);
+	pStream->Write(NUM_YIELD_TYPES, m_aiConnectedMissionBonus);
 	///Tke
 
 	pStream->Write(NUM_YIELD_TYPES, m_aiSeaPlotYield);
@@ -8710,6 +8906,13 @@ void CvCity::write(FDataStreamBase* pStream)
 	{
 		(*it).write(pStream);
 	}
+	//Tks Civics
+	/*pStream->Write(m_aNetworkCityIDs.size());
+	for (std::vector<int>::iterator it = m_aNetworkCityIDs.begin(); it != m_aNetworkCityIDs.end(); ++it)
+	{
+		pStream->Write(*it);
+	}*/
+	//Tke
 }
 
 
@@ -9373,7 +9576,34 @@ void CvCity::invalidateYieldRankCache(YieldTypes eYield)
 		m_abYieldRankValid[eYield] = false;
 	}
 }
+///Tks Civics Screen
+int CvCity::getNumNetworkCityIDs() const
+{
+	return m_aNetworkCityIDs.size();
+}
+//int CvCity::getNetworkCityIDs() const
+//{
 
+//}
+void CvCity::addNetworkCityID(CvCity* pCity)
+{
+	 m_aNetworkCityIDs.push_back(pCity);
+}
+void CvCity::removeNetworkCityID(CvCity* pCity)
+{
+
+	m_aNetworkCityIDs.erase(std::remove(m_aNetworkCityIDs.begin(), m_aNetworkCityIDs.end(), pCity));
+	//for (std::vector<CvCity*>::iterator it = m_aNetworkCityIDs.begin(); it != m_aNetworkCityIDs.end(); ++it)
+	//{
+	//	if (*it == CvCity)
+	//	{
+	//		m_aNetworkCityIDs.erase(it);
+	//		break;  //it is now invalud must break!
+	//	}
+	//}
+}
+
+//tke
 int CvCity::getBuildingYieldChange(BuildingClassTypes eBuildingClass, YieldTypes eYield) const
 {
 	for (std::vector<BuildingYieldChange>::const_iterator it = m_aBuildingYieldChange.begin(); it != m_aBuildingYieldChange.end(); ++it)
@@ -10064,6 +10294,17 @@ void CvCity::setScoutVisited(TeamTypes eTeam, bool bVisited)
 	}
 }
 ///TKs Med
+bool CvCity::isConnectedTo(CvCity* pCity) const
+{
+	return plot()->isConnectedTo(pCity);
+}
+
+
+bool CvCity::isConnectedToCapital(PlayerTypes ePlayer) const
+{
+	return plot()->isConnectedToCapital(ePlayer);
+}
+
 void CvCity::setTradePostBuilt(TeamTypes eTeam, bool bBuilt)
 {
 	FAssert(eTeam >= 0);
@@ -10071,6 +10312,10 @@ void CvCity::setTradePostBuilt(TeamTypes eTeam, bool bBuilt)
 
 	if(bBuilt != isTradePostBuilt(eTeam))
 	{
+		///Tks Civic Screen
+		plot()->updateConnectedBonusYields((PlayerTypes)0);
+		BuildingTypes eBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(GC.getXMLval(XML_NATIVE_TRADING_TRADEPOST));
+		setHasRealBuilding(eBuilding, bBuilt);
 		SetBit(m_bmTradePostBuilt, eTeam, bBuilt);
 		setBillboardDirty(true);
 	}
@@ -10193,8 +10438,6 @@ void CvCity::setMissionaryPlayer(PlayerTypes ePlayer)
 {
     ///Tks Med Debug
     FAssert(ePlayer != UNKNOWN_PLAYER);
-    LeaderHeadTypes eLeader = GET_PLAYER(ePlayer).getLeaderType();
-    FAssert(eLeader != NO_LEADER);
     ///TKe
 	if (ePlayer != getMissionaryPlayer())
 	{
@@ -10205,7 +10448,9 @@ void CvCity::setMissionaryPlayer(PlayerTypes ePlayer)
 		if (eOldPlayer != NO_PLAYER)
 		{
 			CvWString szBuffer = gDLL->getText("TXT_KEY_MISSION_REMOVED", getNameKey(), GET_PLAYER(eOldPlayer).getCivilizationAdjectiveKey());
-
+			//Tks Civics
+			GET_PLAYER(getOwnerINLINE()).changeMissionaryPoints(eOldPlayer, -1);
+			//TKe
 			for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
 			{
 				CvPlayer& kLoopPlayer = GET_PLAYER((PlayerTypes) iPlayer);
@@ -11839,6 +12084,53 @@ int CvCity::getEventTimer(int iEvent) const
 	return m_aiEventTimers[iEvent];
 }
 
+int CvCity::getConnectedTradeYield(YieldTypes eIndex) const
+{
+	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
+	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex expected to be < NUM_YIELD_TYPES");
+	return m_aiConnectedTradeBonus[eIndex];
+}
+
+
+void CvCity::changeConnectedTradeYield(YieldTypes eIndex, int iChange)
+{
+	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
+	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex expected to be < NUM_YIELD_TYPES");
+
+	if (iChange != 0)
+	{
+		m_aiConnectedTradeBonus[eIndex] = (m_aiConnectedTradeBonus[eIndex] + iChange);
+		FAssert(getConnectedTradeYield(eIndex) >= 0);
+	}
+	else
+	{
+		m_aiConnectedTradeBonus[eIndex] = 0;
+	}
+}
+
+int CvCity::getConnectedMissionYield(YieldTypes eIndex) const
+{
+	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
+	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex expected to be < NUM_YIELD_TYPES");
+	return m_aiConnectedMissionBonus[eIndex];
+}
+
+
+void CvCity::changeConnectedMissionYield(YieldTypes eIndex, int iChange)
+{
+	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
+	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex expected to be < NUM_YIELD_TYPES");
+
+	if (iChange != 0)
+	{
+		m_aiConnectedMissionBonus[eIndex] = (m_aiConnectedMissionBonus[eIndex] + iChange);
+		FAssert(getConnectedMissionYield(eIndex) >= 0);
+	}
+	else
+	{
+		m_aiConnectedMissionBonus[eIndex] = 0;
+	}
+}
 
 void CvCity::changeEventTimer(int iEvent, int iChange)
 {

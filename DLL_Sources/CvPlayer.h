@@ -531,6 +531,10 @@ public:
 	bool getTechsInitialized() const;
 	///TKs Med
 	///Tk Civics
+	void resetConnectedPlayerYieldBonus(CivicTypes eCivic = NO_CIVIC, int iChange = 1);
+	int getNumNetworkCities() const;
+	void addNetworkCities(CvCity* pCity);
+	void removeNetworkCities(CvCity* pCity);
 	int getAnarchyTurns() const;
 	bool isAnarchy() const;
 	void changeAnarchyTurns(int iChange);
@@ -553,6 +557,8 @@ public:
 	void changeUpkeepModifier(int iChange);
 	int getUpkeepCount(YieldTypes eIndex) const;
 	void changeUpkeepCount(YieldTypes eIndex, int iChange);
+	void changeTradingPostCount(PlayerTypes eIndex, int iChange);
+	int getTradingPostCount(PlayerTypes eIndex) const;
 	/*int getHasCivicOptionCount(CivicOptionTypes eIndex) const;
 	bool isHasCivicOption(CivicOptionTypes eIndex) const;
 	void changeHasCivicOptionCount(CivicOptionTypes eIndex, int iChange);*/
@@ -892,6 +898,7 @@ protected:
 	///TKs Med
 	///TK Civics
 	//int* m_paiHasCivicOptionCount;
+	int* m_aiTradingPostCount;
 	int* m_paiUpkeepCount;
 	int* m_aiTradeRouteStartingPlotX;
 	int* m_aiTradeRouteStartingPlotY;
@@ -940,6 +947,7 @@ protected:
 	CLinkList<int> m_groupCycle;
 	std::vector<CvWString> m_aszCityNames;
 	FFreeListTrashArray<CvCityAI> m_cities;
+	std::vector<CvCity*> m_aNetworkCities; //TKs Civics
 	CvIdVector<CvTradeRoute> m_tradeRoutes;
 	CvIdVector<CvUnitAI> m_units;
 	std::vector<CvUnit*> m_aEuropeUnits;

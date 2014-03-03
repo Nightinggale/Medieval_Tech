@@ -5596,7 +5596,11 @@ void CvUnit::establishMission()
 		}
 		pCity->setMissionaryPlayer(getOwnerINLINE());
 		pCity->setMissionaryRate(iMissionaryRate);
-
+		///Tks Civics //Civic Reset
+		GET_PLAYER(pCity->getOwnerINLINE()).changeMissionaryPoints(getOwnerINLINE(), 1);
+		CvPlayer& kPlayer = GET_PLAYER(getOwnerINLINE());
+		kPlayer.resetConnectedPlayerYieldBonus();
+		//tke
 
 		for (int i = 0; i < GC.getNumFatherPointInfos(); ++i)
 		{
@@ -15279,6 +15283,11 @@ bool CvUnit::canHireGuard(bool bTestVisible)
             return false;
         }
 
+		if (canSpeakWithChief(plot()))
+		{
+			return false;
+		}
+
         if (isDelayedDeath())
         {
             return false;
@@ -15494,11 +15503,15 @@ void CvUnit::buildTradingPost(bool bTestVisible)
     {
         return;
     }
-    GET_PLAYER(getOwner()).changeGold(-GC.getXMLval(XML_ESTABLISH_TRADEPOST_COST));
+    GET_PLAYER(getOwnerINLINE()).changeGold(-GC.getXMLval(XML_ESTABLISH_TRADEPOST_COST));
     CvCity* pCity = plot()->getPlotCity();
     pCity->setTradePostBuilt(getTeam(), true);
-    BuildingTypes eBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(GC.getXMLval(XML_NATIVE_TRADING_TRADEPOST));
-    pCity->setHasRealBuilding(eBuilding, true);
+    //BuildingTypes eBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(GC.getXMLval(XML_NATIVE_TRADING_TRADEPOST));
+    //pCity->setHasRealBuilding(eBuilding, true);
+	//Civic Reset
+	GET_PLAYER(getOwnerINLINE()).changeTradingPostCount(pCity->getOwnerINLINE(), 1);
+	CvPlayer& kPlayer = GET_PLAYER(getOwnerINLINE());
+	kPlayer.resetConnectedPlayerYieldBonus();
     CvWString szBuffer = gDLL->getText("TXT_KEY_ESTABLISH_TRADEPOST_MESSAGE", pCity->getNameKey());
     gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_BUILD_BANK", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE());
 }

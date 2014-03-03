@@ -8998,6 +8998,14 @@ void CvPlot::updatePlotGroup()
 			updatePlotGroup((PlayerTypes)iI);
 		}
 	}
+	///Tks Civic Screen
+	for (iI = 0; iI < MAX_PLAYERS; ++iI)
+	{
+		if (GET_PLAYER((PlayerTypes)iI).isAlive())
+		{
+			updateConnectedBonusYields((PlayerTypes)iI);
+		}
+	}
 }
 
 
@@ -9080,6 +9088,41 @@ void CvPlot::updatePlotGroup(PlayerTypes ePlayer, bool bRecalculate)
 			}
 		}
 	}
+}
+//Tks Civics
+void CvPlot::updateConnectedBonusYields(PlayerTypes ePlayer)
+{
+	FAssert(ePlayer >= 0);
+	FAssert(ePlayer < MAX_PLAYERS);
+
+	CvPlayerAI& kPlayer = GET_PLAYER(ePlayer);
+	//CvPlotGroup* pPlotGroup = getPlotGroup(ePlayer);
+	bool bResetConnectedBonus = false;
+	if (!kPlayer.isNative())
+	{
+		for (int iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
+		{
+			if (kPlayer.getCivic((CivicOptionTypes)iI) != NO_CIVIC)
+			{
+				CvCivicInfo& kCivicInfo =  GC.getCivicInfo(kPlayer.getCivic((CivicOptionTypes)iI));
+				if (kCivicInfo.getNumConnectedTradeYields() > 0 || kCivicInfo.getNumConnectedMissonYields() > 0)
+				{
+					bResetConnectedBonus = true;
+					break;
+				}
+			}
+		}
+	}
+
+	if (bResetConnectedBonus)
+	{
+		int iLoop;
+		for (CvCity* pLoopCity = kPlayer.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kPlayer.nextCity(&iLoop))
+		{
+			pLoopCity->resetConnectedYieldBonus();
+		}	
+	}
+
 }
 
 bool CvPlot::isConnectedTo(const CvCity* pCity) const

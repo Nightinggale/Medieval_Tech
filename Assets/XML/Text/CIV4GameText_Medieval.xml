@@ -825,6 +825,30 @@
 		<Italian>[TAB]Stimulating %d1 research</Italian>
 		<Spanish>[TAB]Stimulating %d1 research</Spanish>
 	</TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_CONNECTED_TRADE</Tag>
+    <English>[ICON_BULLET]+%d1%F2 Bonus per Settlement connected Trading Post</English>
+    <French>[ICON_BULLET]+%d1%F2 Bonus for connected Trading Post</French>
+    <German>[ICON_BULLET]+%d1%F2 Bonus for connected Trading Post</German>
+    <Italian>[ICON_BULLET]+%d1%F2 Bonus for connected Trading Post</Italian>
+    <Spanish>[ICON_BULLET]+%d1%F2 Bonus for connected Trading Post</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_CONNECTED_MISSION</Tag>
+    <English>[ICON_BULLET]+%d1%F2 Bonus per Settlement connected Mission</English>
+    <French>[ICON_BULLET]+%d1%F2 Bonus for connected Mission</French>
+    <German>[ICON_BULLET]+%d1%F2 Bonus for connected Mission</German>
+    <Italian>[ICON_BULLET]+%d1%F2 Bonus for connected Mission</Italian>
+    <Spanish>[ICON_BULLET]+%d1%F2 Bonus for connected Mission</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_GROWTH_UNITS</Tag>
+    <English>[ICON_BULLET]%d1%% Chance %s2 on Settlement Growth</English>
+    <French>[ICON_BULLET]%d1%% Chance %s2 on Settlement Growth</French>
+    <German>[ICON_BULLET]%d1%% Chance %s2 on Settlement Growth</German>
+    <Italian>[ICON_BULLET]%d1%% Chance %s2 on Settlement Growth</Italian>
+    <Spanish>[ICON_BULLET]%d1%% Chance %s2 on Settlement Growth</Spanish>
+  </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PURCHASE_EUROPE</Tag>
 		<English>Summon Specialists and or Slaves to Your Realm</English>
@@ -889,6 +913,14 @@
 		<Italian>[ICON_BULLET]Trade Points are converted to %F1_Yield</Italian>
 		<Spanish>[ICON_BULLET]Trade Points are converted to %F1_Yield</Spanish>
 	</TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CONNECTED_YIELD_BONUS</Tag>
+    <English>[ICON_BULLET]%d1%F2_Yield from Decrees</English>
+    <French>[ICON_BULLET]%d1%F2_Yield from Decrees</French>
+    <German>[ICON_BULLET]%d1%F2_Yield from Decrees</German>
+    <Italian>[ICON_BULLET]%d1%F2_Yield from Decrees</Italian>
+    <Spanish>[ICON_BULLET]%d1%F2_Yield from Decreesc</Spanish>
+  </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RESEARCH_CONVERTS_YIELD_HELP</Tag>
 		<English>[ICON_BULLET]%d1%F2_Yield from converted %F3_Yield</English>

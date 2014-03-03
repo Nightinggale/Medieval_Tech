@@ -59,6 +59,7 @@ CvPlayer::CvPlayer()
 	///TKs Invention Core Mod v 1.0
     m_aiVictoryYieldCount = new int[NUM_YIELD_TYPES];
 	//TKs Civics
+	m_aiTradingPostCount = new int[MAX_PLAYERS];
 	m_paiUpkeepCount = new int[NUM_YIELD_TYPES];
 	//Tke
     ///TKs Med
@@ -122,6 +123,7 @@ CvPlayer::~CvPlayer()
 	///TKs Invention Core Mod v 1.0
 	SAFE_DELETE_ARRAY(m_aiVictoryYieldCount);
 	//Tks Civics
+	SAFE_DELETE_ARRAY(m_aiTradingPostCount);
 	SAFE_DELETE_ARRAY(m_paiUpkeepCount);
 	///TKe
 	SAFE_DELETE_ARRAY(m_aiCensureTypes);
@@ -566,6 +568,9 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	{
 		m_aiMissionaryPoints[iI] = 0;
 		m_aiMissionaryThresholdMultiplier[iI] = 100;
+		///Tks Civics
+		m_aiTradingPostCount[iI] = 0;
+		///Tke
 	}
 
 	for (iI = 0; iI < NUM_FEAT_TYPES; iI++)
@@ -11087,7 +11092,12 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
         sprintf(szOut, "######################## Player %d %S Has Aquired %S\n", getID(), getNameKey(), GC.getCivicInfo(eCivic).getTextKeyWide());
         gDLL->messageControlLog(szOut);
 	//}
-    ///TKs Med TradeScreen
+	//Tks Civics Screen //Civic Reset
+	if (kCivicInfo.getNumConnectedMissonYields() > 0 || kCivicInfo.getNumConnectedTradeYields() > 0)
+	{
+		resetConnectedPlayerYieldBonus(eCivic, iChange);
+	}
+	 ///TKs Med TradeScreen
 	if ((EuropeTypes)kCivicInfo.getAllowsTradeScreen() != NO_EUROPE)
 	{
 		setHasTradeRouteType((EuropeTypes)kCivicInfo.getAllowsTradeScreen(), true);
@@ -11625,6 +11635,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(NUM_YIELD_TYPES, m_aiVictoryYieldCount);
 	///Tks Civics
 	pStream->Read(NUM_YIELD_TYPES, m_paiUpkeepCount);
+	pStream->Read(MAX_PLAYERS, m_aiTradingPostCount);
 	//Tke Civics
 	pStream->Read(NUM_CENSURE_TYPES, m_aiCensureTypes);
 	pStream->Read(GC.getNumEuropeInfos(), m_aiTradeRouteStartingPlotX);
@@ -12076,6 +12087,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(NUM_YIELD_TYPES, m_aiVictoryYieldCount);
 	//TKs CIvics
 	pStream->Write(NUM_YIELD_TYPES, m_paiUpkeepCount);
+	pStream->Write(MAX_PLAYERS, m_aiTradingPostCount);
 	///tke
 	pStream->Write(NUM_CENSURE_TYPES, m_aiCensureTypes);
 	pStream->Write(GC.getNumEuropeInfos(), m_aiTradeRouteStartingPlotX);
@@ -14846,6 +14858,30 @@ int CvPlayer::getUpkeepModifier() const
 	return m_iUpkeepModifier;
 }
 
+void CvPlayer::changeTradingPostCount(PlayerTypes eIndex, int iChange)
+{
+	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
+	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex is expected to be within maximum bounds (invalid Index)");
+	if (iChange != 0)
+	{
+		
+		m_aiTradingPostCount[eIndex] = (m_aiTradingPostCount[eIndex] + iChange);
+
+		//if (getID() == GC.getGameINLINE().getActivePlayer())
+		//{
+			//gDLL->getInterfaceIFace()->setDirty(GameData_DIRTY_BIT, true);
+		//}
+	}
+}
+
+int CvPlayer::getTradingPostCount(PlayerTypes eIndex) const
+{
+	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
+	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex is expected to be within maximum bounds (invalid Index)");
+	FAssertMsg(m_aiTradingPostCount != NULL, "m_aiTradingPostCount is not expected to be equal with NULL");
+	return m_aiTradingPostCount[eIndex];
+}
+
 
 void CvPlayer::changeUpkeepModifier(int iChange)
 {
@@ -15092,7 +15128,7 @@ void CvPlayer::changeCivics(CivicTypes* paeNewCivics, bool bForce)
 		}
 	}
 
-	setRevolutionTimer(std::max(1, ((100 + getAnarchyModifier()) * GC.getDefineINT("MIN_REVOLUTION_TURNS")) / 100) + iAnarchyLength);
+	//setRevolutionTimer(std::max(1, ((100 + getAnarchyModifier()) * GC.getDefineINT("MIN_REVOLUTION_TURNS")) / 100) + iAnarchyLength);
 
 	if (getID() == GC.getGameINLINE().getActivePlayer())
 	{
@@ -16311,6 +16347,12 @@ void CvPlayer::changeMissionaryPoints(PlayerTypes ePlayer, int iChange)
 		m_aiMissionaryPoints[ePlayer] += iChange;
 		FAssert(m_aiMissionaryPoints[ePlayer] >= 0);
 	}
+	///Tks Civics
+	else if(iChange < 0)
+	{
+		m_aiMissionaryPoints[ePlayer] = 0;
+	}
+	///Tke
 }
 
 int CvPlayer::getMissionaryThresholdMultiplier(PlayerTypes ePlayer) const
@@ -16348,6 +16390,18 @@ void CvPlayer::burnMissions(PlayerTypes ePlayer)
 		{
 			pCity->setMissionaryPlayer(NO_PLAYER);
 		}
+		//Tks Burn Trading Post
+		if (pCity->isTradePostBuilt(GET_PLAYER(ePlayer).getTeam()))
+		{
+			GET_PLAYER(ePlayer).changeTradingPostCount(getID(), -1);
+			pCity->setTradePostBuilt(GET_PLAYER(ePlayer).getTeam(), false);
+		}
+		///Tke
+	}
+	//Civic Reset
+	if (GET_PLAYER(ePlayer).isAlive())
+	{
+		GET_PLAYER(ePlayer).resetConnectedPlayerYieldBonus();
 	}
 }
 
@@ -17912,6 +17966,30 @@ int CvPlayer::getDoTechFlag() const
 {
 	return m_iDoTechFlag;
 }
+//NewFunctions New Funtions
+///Tks Civics Screen
+int CvPlayer::getNumNetworkCities() const
+{
+	return m_aNetworkCities.size();
+}
+void CvPlayer::addNetworkCities(CvCity* pCity)
+{
+	 m_aNetworkCities.push_back(pCity);
+}
+void CvPlayer::removeNetworkCities(CvCity* pCity)
+{
+
+	m_aNetworkCities.erase(std::remove(m_aNetworkCities.begin(), m_aNetworkCities.end(), pCity));
+}
+//Civic Reset
+void CvPlayer::resetConnectedPlayerYieldBonus(CivicTypes eCivic, int iChange)
+{
+	int iLoop;
+	for (CvCity* pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+	{
+		pLoopCity->resetConnectedYieldBonus(eCivic, iChange);
+	}
+}
 
 void CvPlayer::changeEventResetTimer(int iChange)
 {
@@ -17995,39 +18073,11 @@ int CvPlayer::getCostToResearch(CivicTypes eCivic)
             int iCivicResearchCost = 0;
             if (!isHuman())
             {
-                //int iIdeasThisTurn = 0;
-//                for (int iFather = 0; iFather < GC.getNumFatherPointInfos(); ++iFather)
-//                {
-//                    FatherPointTypes eFatherPoint = (FatherPointTypes)iFather;
-//                    if (GC.getCivicInfo(eCivic).getRequiredFatherPoints(eFatherPoint) > 0)
-//                    {
-//                        //bFatherPointFound = true;
-//                       iIdeasThisTurn = GET_TEAM(getTeam()).getAccumilatedFatherPoints(eFatherPoint) - getPreviousFatherPoints(eFatherPoint);
-//                       FAssert(iIdeasThisTurn >= 0);
-//
-//                    }
-//                }
                 iMod = GC.getXMLval(XML_TK_AI_RESEARCH_COST_MOD_PERCENT);
                 CvCivicInfo& kCivicInfo = GC.getCivicInfo(eCivic);
                 iCivicResearchCost = kCivicInfo.getCostToResearch();
                 iCivicResearchCost = (iCivicResearchCost * iMod) / 100;
             }
-//            else
-//            {
-//                int iIdeasThisTurn = 0;
-//                for (int iFather = 0; iFather < GC.getNumFatherPointInfos(); ++iFather)
-//                {
-//                    FatherPointTypes eFatherPoint = (FatherPointTypes)iFather;
-//                    if (GC.getCivicInfo(eCivic).getRequiredFatherPoints(eFatherPoint) > 0)
-//                    {
-//                        //bFatherPointFound = true;
-//                       iIdeasThisTurn = GET_TEAM(getTeam()).getAccumilatedFatherPoints(eFatherPoint) - getPreviousFatherPoints(eFatherPoint);
-//                       FAssert(iIdeasThisTurn >= 0);
-//
-//                    }
-//                }
-//                iCivicResearchCost = GC.getCostToResearch(eCivic) + iIdeasThisTurn;
-//            }
             ///TK Update 1.1b
             iCivicResearchCost = GC.getCostToResearch(eCivic);
             iCivicResearchCost *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getFatherPercent();
@@ -18175,10 +18225,6 @@ int CvPlayer::getIdeaProgress(CivicTypes eCivic) const
 
 void CvPlayer::setIdeaProgress(CivicTypes eCivic, int iValue)
 {
-//    char szOut[1024];
-//    sprintf(szOut, "######################## Native Player %d %S Progress %d \n", getID(), getNameKey(), iValue);
-//    gDLL->messageControlLog(szOut);
-
 	if(iValue != getIdeaProgress(eCivic))
 	{
 		m_aiIdeaProgress[eCivic] = iValue;
@@ -18211,14 +18257,6 @@ void CvPlayer::doSetupIdeas(bool Cheat)
 
 					}
 
-//					if (!bSetFirstResearch)
-//					{
-//					    if (canDoCivics((CivicTypes)iLoopCivic))
-//					    {
-//					        setCurrentResearch((CivicTypes)iLoopCivic);
-//					    }
-//					    bSetFirstResearch = true;
-//					}
 				}
 			}
 
@@ -18842,19 +18880,6 @@ void CvPlayer::cancelResearchPact(TeamTypes eEndingTeam)
 
 		if (bCancelDeal)
 		{
-//		    CLLNode<TradeData>* pNode;
-//
-//            for (pNode = pLoopDeal->headFirstTradesNode(); (pNode != NULL); pNode = pLoopDeal->nextFirstTradesNode(pNode))
-//            {
-//                pLoopDeal->endTrade(pNode->m_data, pLoopDeal->getFirstPlayer(), pLoopDeal->getSecondPlayer(), bNoMessage, eEndingTeam);
-//            }
-//
-//            for (pNode = pLoopDeal->headSecondTradesNode(); (pNode != NULL); pNode = pLoopDeal->nextSecondTradesNode(pNode))
-//            {
-//                pLoopDeal->endTrade(pNode->m_data, pLoopDeal->getSecondPlayer(), pLoopDeal->getFirstPlayer(), bNoMessage, eEndingTeam);
-//            }
-//
-//            GC.getGameINLINE().deleteDeal(pLoopDeal->getID());
 			pLoopDeal->kill(false, eEndingTeam);
 		}
 	}

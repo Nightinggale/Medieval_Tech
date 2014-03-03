@@ -182,6 +182,14 @@
 					<Tech>MEDIEVAL_TECH_MONASTICISM</Tech>
 					<bFree>1</bFree>
 				</FreeTech>
+        <FreeTech>
+          <Tech>TRADING_TRADEPOST</Tech>
+          <bFree>1</bFree>
+        </FreeTech>
+        <FreeTech>
+          <Tech>MEDIEVAL_TECH_WHEELBARROW</Tech>
+          <bFree>1</bFree>
+        </FreeTech>
 			</FreeTechs>
 		</CivilizationInfo>
 		<CivilizationInfo>

@@ -4045,6 +4045,40 @@ int CvCivicInfo::getAllowsUnitClasses(int i) const
 {
 	return m_aiAllowsUnitClasses ? m_aiAllowsUnitClasses[i] : 0;
 }
+//Tks Civics
+int CvCivicInfo::getNumConnectedMissonYields() const
+{
+	return m_aConnectedMissonYields.size();
+}
+int CvCivicInfo::getConnectedMissonYields(int index) const
+{
+	FAssert(index < (int) m_aConnectedMissonYields.size());
+	FAssert(index > -1);
+	return m_aConnectedMissonYields[index].first;
+}
+int CvCivicInfo::getConnectedMissonYieldsBonus(int index) const
+{
+	FAssert(index < (int) m_aConnectedMissonYields.size());
+	FAssert(index > -1);
+	return m_aConnectedMissonYields[index].second;
+}
+
+int CvCivicInfo::getNumConnectedTradeYields() const
+{
+	return m_aConnectedTradeYields.size();
+}
+int CvCivicInfo::getConnectedTradeYields(int index) const
+{
+	FAssert(index < (int) m_aConnectedTradeYields.size());
+	FAssert(index > -1);
+	return m_aConnectedTradeYields[index].first;
+}
+int CvCivicInfo::getConnectedTradeYieldsBonus(int index) const
+{
+	FAssert(index < (int) m_aConnectedTradeYields.size());
+	FAssert(index > -1);
+	return m_aConnectedTradeYields[index].second;
+}
 
 int CvCivicInfo::getNumRandomGrowthUnits() const
 {
@@ -4733,7 +4767,7 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
     pXML->SetVariableListTagPair(&m_aiAllowsProfessions, "AllowsProfessions", GC.getNumProfessionInfos(), 0);
 
     pXML->SetVariableListTagPair(&m_aiRequiredYields, "RequiredYields", NUM_YIELD_TYPES, 0);
-
+	//Civic Arrays Start
 	m_aRandomGrowthUnits.clear();
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"RandomGrowthClasses"))
 	{
@@ -4743,8 +4777,6 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 			{
 				pXML->GetChildXmlValByName(szTextVal, "UnitClassType");
 				int iUnitClass = pXML->FindInInfoClass(szTextVal);
-				//pXML->GetChildXmlValByName(szTextVal, "PercentChance");
-				//int iProfession = pXML->FindInInfoClass(szTextVal);
 				int iPercentChance = 0;
 				pXML->GetChildXmlValByName(&iPercentChance, "iPercentChance");
 				m_aRandomGrowthUnits.push_back(std::make_pair((UnitClassTypes) iUnitClass, iPercentChance));
@@ -4753,6 +4785,42 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 			gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 		}
 		// set the current xml node to it's parent node
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+
+	m_aConnectedTradeYields.clear();
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"ConnectedTradeYields"))
+	{
+		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"YieldChange"))
+		{
+			do
+			{
+				pXML->GetChildXmlValByName(szTextVal, "YieldType");
+				int iYieldType = pXML->FindInInfoClass(szTextVal);
+				int iChange = 0;
+				pXML->GetChildXmlValByName(&iChange, "iYieldChange");
+				m_aConnectedTradeYields.push_back(std::make_pair((YieldTypes)iYieldType, iChange));
+			} while(gDLL->getXMLIFace()->NextSibling(pXML->GetXML()));
+			gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+		}
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+
+	m_aConnectedMissonYields.clear();
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"ConnectedMissonYields"))
+	{
+		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"YieldChange"))
+		{
+			do
+			{
+				pXML->GetChildXmlValByName(szTextVal, "YieldType");
+				int iYieldType = pXML->FindInInfoClass(szTextVal);
+				int iChange = 0;
+				pXML->GetChildXmlValByName(&iChange, "iYieldChange");
+				m_aConnectedMissonYields.push_back(std::make_pair((YieldTypes)iYieldType, iChange));
+			} while(gDLL->getXMLIFace()->NextSibling(pXML->GetXML()));
+			gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+		}
 		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 	}
 

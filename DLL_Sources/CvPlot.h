@@ -543,7 +543,8 @@ public:
 	void setPlotGroup(PlayerTypes ePlayer, CvPlotGroup* pNewValue);
 	void updatePlotGroup();
 	void updatePlotGroup(PlayerTypes ePlayer, bool bRecalculate = true);
-
+	//TKs Civics
+	void updateConnectedBonusYields(PlayerTypes ePlayer);
 	bool isConnectedTo( const CvCity* pCity) const;														// Exposed to Python
 	bool isConnectedToCapital(PlayerTypes ePlayer = NO_PLAYER) const;
 	bool isTradeNetwork(TeamTypes eTeam) const;

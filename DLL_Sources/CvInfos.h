@@ -1077,6 +1077,15 @@ public:
 	DllExport int getNumRandomGrowthUnits() const;
 	DllExport int getRandomGrowthUnits(int index) const;
 	DllExport int getRandomGrowthUnitsPercent(int index) const;
+
+	DllExport int getNumConnectedMissonYields() const;
+	DllExport int getConnectedMissonYields(int index) const;
+	DllExport int getConnectedMissonYieldsBonus(int index) const;
+
+	DllExport int getNumConnectedTradeYields() const;
+	DllExport int getConnectedTradeYields(int index) const;
+	DllExport int getConnectedTradeYieldsBonus(int index) const;
+
     DllExport const char* getCivicPortrait() const;
     ///TKe
 	DllExport void read(FDataStreamBase* stream);
@@ -1185,6 +1194,8 @@ protected:
 	std::vector<int*> m_aaiImprovementYieldChanges;
 	//Tks Civics
 	std::vector< std::pair<UnitClassTypes, int> > m_aRandomGrowthUnits;
+	std::vector< std::pair<YieldTypes, int> > m_aConnectedTradeYields;
+	std::vector< std::pair<YieldTypes, int> > m_aConnectedMissonYields;
 	///Tke
 	std::vector<int> m_aFreeUnitClasses;
 };

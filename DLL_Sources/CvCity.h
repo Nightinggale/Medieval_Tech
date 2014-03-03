@@ -278,10 +278,17 @@ public:
 	int getRiverPlotYield(YieldTypes eIndex) const;
 	void changeRiverPlotYield(YieldTypes eIndex, int iChange);
 	///TKs Med
+	int getConnectedTradeYield(YieldTypes eIndex) const;
+	void changeConnectedTradeYield(YieldTypes eIndex, int iChange);
+	int getConnectedMissionYield(YieldTypes eIndex) const;
+	void changeConnectedMissionYield(YieldTypes eIndex, int iChange);
 	int getCenterPlotBonus() const;
 	PlayerTypes getVassalOwner() const;
 	void setVassalOwner(PlayerTypes eNewValue);
 	int getBaseRawYieldProduced(YieldTypes eIndex, SpecialBuildingTypes eSpecialBuilding = NO_SPECIALBUILDING) const;
+	int getNumNetworkCityIDs() const;
+	void addNetworkCityID(CvCity* pCity);
+	void removeNetworkCityID(CvCity* pCity);
 	///TKe
 	int getRawYieldProduced(YieldTypes eIndex) const;
 	int getRawYieldConsumed(YieldTypes eIndex) const;
@@ -569,6 +576,7 @@ public:
 	void addMarket(YieldTypes eYield);
 	void removeMarket(YieldTypes eYield);
 	DllExport bool isEquipmentType(YieldTypes eEquipment, int iType = 0) const;
+	void resetConnectedYieldBonus(CivicTypes eCivic = NO_CIVIC, int iChange = 1);
 	///Tke
 	void setTeachUnitClass(UnitClassTypes eUnitClass);
 	void ejectTeachUnits();
@@ -650,6 +658,8 @@ protected:
 	YieldTypes m_eSelectedArmor;
 	int* m_aiEventTimers;
 	PlayerBitmap m_bmTradePostBuilt;
+	int* m_aiConnectedTradeBonus;
+	int* m_aiConnectedMissionBonus;
 	///TKe
 	int* m_aiSeaPlotYield;
 	int* m_aiRiverPlotYield;
@@ -683,8 +693,8 @@ protected:
 	std::vector< std::pair < float, float> > m_kWallOverridePoints;
 	std::vector<EventTypes> m_aEventsOccured;
 	std::vector<BuildingYieldChange> m_aBuildingYieldChange;
+	std::vector<CvCity*> m_aNetworkCityIDs; //TKs Civics
 	std::vector<CvUnit*> m_aPopulationUnits;
-
 	// traderoute just-in-time - start - Nightinggale
  	YieldArray<bool> ma_tradeImports;
  	YieldArray<bool> ma_tradeExports;

@@ -2297,8 +2297,22 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 			int iCurrentValue = 0;
 			BuildTypes eCurrentBuild = NO_BUILD;
             static_cast<CvCityAI*>(pWorkingCity)->AI_bestPlotBuild(pPlot, &iCurrentValue, &eCurrentBuild);
+			//Tks Civics
+			for (iI = 0; iI < NUM_YIELD_TYPES; ++iI)
+			{
+				if (pWorkingCity->getConnectedMissionYield((YieldTypes)iI) > 0)
+				{
+					szTempBuffer.Format(L"\nMission: %s (%d)", GC.getYieldInfo((YieldTypes)iI).getDescription(), pWorkingCity->getConnectedMissionYield((YieldTypes)iI));
+					szString.append(szTempBuffer);
+				}
+				if (pWorkingCity->getConnectedTradeYield((YieldTypes)iI) > 0)
+				{
+					szTempBuffer.Format(L"\nTradePost: %s (%d)", GC.getYieldInfo((YieldTypes)iI).getDescription(), pWorkingCity->getConnectedTradeYield((YieldTypes)iI));
+					szString.append(szTempBuffer);
+				}
+			}
 
-            if (NO_BUILD != eBestBuild)
+		    if (NO_BUILD != eBestBuild)
             {
                 szTempBuffer.Format(L"\nBest Build: %s (%d)", GC.getBuildInfo(eBestBuild).getDescription(), iBuildValue);
                 szString.append(szTempBuffer);
@@ -4413,12 +4427,35 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
 
 
     }
-    ///TK Update 1.1
+
     if (bOnlyCost)
     {
         return;
     }
-    //TK end Update
+   //Tk Civics Screen
+	//if (kCivicInfo.getNumConnectedMissonYields() > 0)
+	//{
+	for (iI = 0; iI < kCivicInfo.getNumConnectedTradeYields(); iI++)
+	{
+		YieldTypes eConnectedYield = (YieldTypes)kCivicInfo.getConnectedTradeYields(iI);
+		szHelpText.append(NEWLINE);
+		szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_CONNECTED_TRADE", kCivicInfo.getConnectedTradeYieldsBonus(iI), GC.getYieldInfo(eConnectedYield).getChar()));
+	}
+	//}
+	for (iI = 0; iI < kCivicInfo.getNumConnectedMissonYields(); iI++)
+	{
+		YieldTypes eConnectedYield = (YieldTypes)kCivicInfo.getConnectedMissonYields(iI);
+		szHelpText.append(NEWLINE);
+		szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_CONNECTED_MISSION", kCivicInfo.getConnectedMissonYieldsBonus(iI), GC.getYieldInfo(eConnectedYield).getChar()));
+	}
+
+	for (iI = 0; iI < kCivicInfo.getNumRandomGrowthUnits(); iI++)
+	{
+		//UnitTypes eImmigrantUnit = (UnitClassTypes)kCivicInfo.getRandomGrowthUnits(iI);
+		szHelpText.append(NEWLINE);
+		szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_GROWTH_UNITS", kCivicInfo.getRandomGrowthUnitsPercent(iI), GC.getUnitClassInfo((UnitClassTypes)kCivicInfo.getRandomGrowthUnits(iI)).getDescription()));
+	}
+
     YieldTypes eVictoryYield = (YieldTypes) GC.getXMLval(XML_INDUSTRIAL_VICTORY_SINGLE_YIELD);
     if (kCivicInfo.getIndustrializationVictory(eVictoryYield) > 0)
 	{
@@ -4432,6 +4469,7 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
         szHelpText.append(NEWLINE);
         szHelpText.append(gDLL->getText("TXT_KEY_TECH_INDUSTRIAL_VICTORY", iCost, GC.getYieldInfo(eVictoryYield).getChar()));
 	}
+
 	if (kCivicInfo.getAllowsTrait() != NO_TRAIT)
 	{
 	    CvWStringBuffer szHelpString;
@@ -8298,6 +8336,34 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 		iBaseProduction += iCityPlotYield;
 		szBuffer.append(NEWLINE);
 		szBuffer.append(CvWString::format(gDLL->getText("TXT_KEY_MISC_FROM_CITY_YIELD", iCityPlotYield, info.getChar())));
+	}
+	//Tks Civics Screen
+	//if (owner != NO_PLAYER)
+	//{
+		//for (int iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
+		//{
+			//if (owner.getCivic((CivicOptionTypes)iI) != NO_CIVIC)
+			//{
+				//CvCivicInfo& kCivicInfo =  GC.getCivicInfo(owner.getCivic((CivicOptionTypes)iI));
+				//for (int iI = 0; iI < kCivicInfo.getNumConnectedTradeYields(); iI++)
+				//{
+					//if (kCivicInfo.getNumConnectedMissonYields() > 0 || kCivicInfo.getNumConnectedTradeYields() > 0)
+					//{
+
+					//}
+	if (city.getConnectedTradeYield(eYieldType) > 0)
+	{
+		szBuffer.append(NEWLINE);
+        //szBuffer.append(CvWString::format(gDLL->getText("TXT_KEY_CONNECTED_YIELD_BONUS", city.getConnectedTradeYield(eYieldType), info.getChar(), GC.getCivicInfo(YIELD_IDEAS).getChar
+		szBuffer.append(CvWString::format(gDLL->getText("TXT_KEY_CONNECTED_YIELD_BONUS", city.getConnectedTradeYield(eYieldType), info.getChar())));
+		iBaseProduction += city.getConnectedTradeYield(eYieldType);
+	}
+
+	if (city.getConnectedMissionYield(eYieldType) > 0)
+	{
+		szBuffer.append(NEWLINE);
+        szBuffer.append(CvWString::format(gDLL->getText("TXT_KEY_CONNECTED_YIELD_BONUS", city.getConnectedMissionYield(eYieldType), info.getChar())));
+		iBaseProduction += city.getConnectedMissionYield(eYieldType);
 	}
 
 	///TKs Med Update 1.1h

@@ -519,6 +519,12 @@
   <ElementType name="RandomGrowthClasses" content="eltOnly">
     <element type="RandomGrowthClass" minOccurs="0" maxOccurs="*"/>
   </ElementType>
+  <ElementType name="ConnectedTradeYields" content="eltOnly">
+    <element type="YieldChange" minOccurs="0" maxOccurs="*"/>
+  </ElementType>
+  <ElementType name="ConnectedMissonYields" content="eltOnly">
+    <element type="YieldChange" minOccurs="0" maxOccurs="*"/>
+  </ElementType>
 	<ElementType name="PromotionType" content="textOnly"/>
 	<ElementType name="AllowsPromotion" content="eltOnly">
 		<element type="PromotionType"/>
@@ -661,6 +667,8 @@
 		<element type="ConvertsUnitsFrom" minOccurs="0"/>
 		<element type="ConvertsUnitsTo" minOccurs="0"/>
     <element type="RandomGrowthClasses" minOccurs="0"/>
+    <element type="ConnectedMissonYields" minOccurs="0"/>
+    <element type="ConnectedTradeYields" minOccurs="0"/>
     <element type="NewDefaultUnitClass" minOccurs="0"/>
 		<element type="DisallowsTech" minOccurs="0"/>
 		<element type="ConvertsResearchYield" minOccurs="0"/>

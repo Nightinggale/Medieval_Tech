@@ -1731,5 +1731,38 @@ void postLoadGameFixes(int iFixCount)
 		pLoopPlot->rebuildUnitCache();
 	}
 	/// unit plot cache - end - Nightinggale
+
+	//Tks Civics Screen
+	bool bTest = false;
+	if (bTest){
+	for (int iI = 0; iI < MAX_PLAYERS; iI++)
+	{
+		if (GET_PLAYER((PlayerTypes)iI).isAlive() && !GET_PLAYER((PlayerTypes)iI).isNative())
+		{
+			for (int iPlotGroup = 0; iPlotGroup < GET_PLAYER((PlayerTypes)iI).getNumPlotgroups(); iPlotGroup++)
+			{
+				for (int iCity = 0; iCity < GET_PLAYER((PlayerTypes)iI).getNumCitiesInPlotgroup(iPlotGroup); iCity++)
+				{
+					CvCity* pCity = GET_PLAYER((PlayerTypes)iI).getCity(iPlotGroup, iCity);
+					for (int iJ = 0; iJ < MAX_PLAYERS; iJ++)
+					{
+						if (GET_PLAYER((PlayerTypes)iJ).isAlive() && (GET_PLAYER((PlayerTypes)iI).getTradingPostCount((PlayerTypes)iJ) > 0 || GET_PLAYER((PlayerTypes)iJ).getMissionaryPoints((PlayerTypes)iI) > 0))
+						{
+							int iLoop;
+							for (CvCity* pLoopCity = GET_PLAYER((PlayerTypes)iJ).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER((PlayerTypes)iJ).nextCity(&iLoop))
+							{
+								if (pCity->isConnectedTo(pLoopCity))
+								{
+									GET_PLAYER((PlayerTypes)iI).addNetworkCities(pLoopCity);
+								}
+							}
+						}
+					}
+
+				}
+			}
+		}
+	}
+}
 }
 /// post load function - end - Nightinggale

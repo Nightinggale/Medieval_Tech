@@ -4713,8 +4713,43 @@
 		</CivicInfo>
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_PIETY</CivicOptionType>
-      <Type>CIVIC_DIVINERIGHT</Type>
-      <Description>Divine Right</Description>
+      <Type>CIVIC_RITUALISTIC</Type>
+      <Description>Ritualistic</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,5,4</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+      <ConnectedMissonYields>
+        <YieldChange>
+          <YieldType>YIELD_CROSSES</YieldType>
+          <iYieldChange>2</iYieldChange>
+        </YieldChange>
+      </ConnectedMissonYields>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_PIETY</CivicOptionType>
+      <Type>CIVIC_DIVINE_REVELATION</Type>
+      <Description>Divine Revelation</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
       <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,5,4</Button>
@@ -4742,37 +4777,8 @@
     </CivicInfo>
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_PIETY</CivicOptionType>
-      <Type>CIVIC_ORGANIZED</Type>
-      <Description>Organized</Description>
-      <Civilopedia>????</Civilopedia>
-      <Strategy>????</Strategy>
-      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,5,4</Button>
-      <iAIWeight>0</iAIWeight>
-      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
-      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
-      <iFreeExperience>0</iFreeExperience>
-      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
-      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
-      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
-      <iExpInBorderModifier>0</iExpInBorderModifier>
-      <iNativeAttitudeChange>0</iNativeAttitudeChange>
-      <iNativeCombatModifier>0</iNativeCombatModifier>
-      <iFatherPointModifier>0</iFatherPointModifier>
-      <bDominateNativeBorders>0</bDominateNativeBorders>
-      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
-      <YieldModifiers/>
-      <CapitalYieldModifiers/>
-      <Hurrys/>
-      <SpecialBuildingNotRequireds/>
-      <ImprovementYieldChanges/>
-      <FreeUnitClasses/>
-      <ProfessionCombatChanges/>
-      <ImmigrationConversion>NONE</ImmigrationConversion>
-    </CivicInfo>
-    <CivicInfo>
-      <CivicOptionType>CIVICOPTION_PIETY</CivicOptionType>
-      <Type>CIVIC_EXTRA_PIETY</Type>
-      <Description>Extra Piety</Description>
+      <Type>CIVIC_PATRIARCH</Type>
+      <Description>Patriarch</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
       <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,6,5</Button>
@@ -4858,8 +4864,8 @@
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_COMMERCE</CivicOptionType>
-			<Type>CIVIC_CENTRALIZED</Type>
-			<Description>Centralized</Description>
+			<Type>CIVIC_MANORIAL</Type>
+			<Description>Manorial</Description>
 			<Civilopedia>????</Civilopedia>
 			<Strategy>????</Strategy>
 			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,3,5</Button>
@@ -4888,7 +4894,7 @@
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_COMMERCE</CivicOptionType>
       <Type>CIVIC_MARKET_ECONOMY</Type>
-      <Description>Market Economy</Description>
+      <Description>Free Market</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
       <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,3,5</Button>
@@ -4913,6 +4919,18 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RandomGrowthClasses>
+        <RandomGrowthClass>
+          <UnitClassType>UNITCLASS_NOBLEMAN</UnitClassType>
+          <iPercentChance>100</iPercentChance>
+        </RandomGrowthClass>
+      </RandomGrowthClasses>
+      <ConnectedTradeYields>
+        <YieldChange>
+          <YieldType>YIELD_IDEAS</YieldType>
+          <iYieldChange>3</iYieldChange>
+        </YieldChange>
+      </ConnectedTradeYields>
     </CivicInfo>
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_COMMERCE</CivicOptionType>
@@ -4945,8 +4963,8 @@
     </CivicInfo>
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_COMMERCE</CivicOptionType>
-      <Type>CIVIC_MERCHANTILISM</Type>
-      <Description>Merchantilism</Description>
+      <Type>CIVIC_STATE_CONTROL</Type>
+      <Description>State Control</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
       <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,3,5</Button>
@@ -4971,6 +4989,12 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <ConnectedTradeYields>
+        <YieldChange>
+          <YieldType>YIELD_GOLD</YieldType>
+          <iYieldChange>100</iYieldChange>
+        </YieldChange>
+      </ConnectedTradeYields>
     </CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>

@@ -602,6 +602,8 @@
 	<ElementType name="iKingTreasureTransportMod" content="textOnly" dt:type="int"/>
 	<ElementType name="iFoundCityType" content="textOnly"/>
 	<ElementType name="iIncreaseCityPopulation" content="textOnly" dt:type="int"/>
+  <ElementType name="iMissionariesNotCosumed" content="textOnly" dt:type="int"/>
+  <ElementType name="iTradingPostNotCosumed" content="textOnly" dt:type="int"/>
 	<ElementType name="iFatherPointModifier" content="textOnly" dt:type="int"/>
   <ElementType name="iAnarchyLength" content="textOnly" dt:type="int"/>
   <ElementType name="bRevolutionEuropeTrade" content="textOnly" dt:type="boolean"/>
@@ -695,6 +697,8 @@
 		<element type="iFoundCityType" minOccurs="0"/>
 		<element type="iIncreaseCityPopulation" minOccurs="0"/>
 		<element type="IndustrializationVictory" minOccurs="0"/>
+    <element type="iMissionariesNotCosumed" minOccurs="0"/>
+    <element type="iTradingPostNotCosumed" minOccurs="0"/>
 		<element type="MaxYieldModifiers" minOccurs="0"/>
 	</ElementType>
 	<ElementType name="CivicInfos" content="eltOnly">

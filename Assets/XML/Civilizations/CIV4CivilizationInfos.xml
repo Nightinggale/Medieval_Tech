@@ -409,7 +409,14 @@
 				</FreeYield>
 			</FreeYields>
 			<CapturedCityUnitClass>NONE</CapturedCityUnitClass>
-			<InitialCivics/>
+      <InitialCivics>
+        <CivicType>NONE</CivicType>
+        <CivicType>CIVIC_TRIBALISM</CivicType>
+        <CivicType>CIVIC_APATHY</CivicType>
+        <CivicType>CIVIC_LOCAL_TRADE</CivicType>
+        <CivicType>CIVIC_ANARCHIST</CivicType>
+        <CivicType>CIVIC_AGRICULTURE</CivicType>
+      </InitialCivics>
 			<Leaders>
 				<Leader>
 					<LeaderName>LEADER_SALADIN</LeaderName>
@@ -600,7 +607,14 @@
 				</FreeYield>
 			</FreeYields>
 			<CapturedCityUnitClass>NONE</CapturedCityUnitClass>
-			<InitialCivics/>
+      <InitialCivics>
+        <CivicType>NONE</CivicType>
+        <CivicType>CIVIC_TRIBALISM</CivicType>
+        <CivicType>CIVIC_APATHY</CivicType>
+        <CivicType>CIVIC_LOCAL_TRADE</CivicType>
+        <CivicType>CIVIC_ANARCHIST</CivicType>
+        <CivicType>CIVIC_AGRICULTURE</CivicType>
+      </InitialCivics>
 			<Leaders>
 				<Leader>
 					<LeaderName>LEADER_CLOVIS</LeaderName>
@@ -838,7 +852,14 @@
 				</FreeYield>
 			</FreeYields>
 			<CapturedCityUnitClass>NONE</CapturedCityUnitClass>
-			<InitialCivics/>
+      <InitialCivics>
+        <CivicType>NONE</CivicType>
+        <CivicType>CIVIC_TRIBALISM</CivicType>
+        <CivicType>CIVIC_APATHY</CivicType>
+        <CivicType>CIVIC_LOCAL_TRADE</CivicType>
+        <CivicType>CIVIC_ANARCHIST</CivicType>
+        <CivicType>CIVIC_AGRICULTURE</CivicType>
+      </InitialCivics>
 			<Leaders>
 				<Leader>
 					<LeaderName>LEADER_ALMANSUR</LeaderName>
@@ -1029,7 +1050,14 @@
 				</FreeYield>
 			</FreeYields>
 			<CapturedCityUnitClass>NONE</CapturedCityUnitClass>
-			<InitialCivics/>
+      <InitialCivics>
+        <CivicType>NONE</CivicType>
+        <CivicType>CIVIC_TRIBALISM</CivicType>
+        <CivicType>CIVIC_APATHY</CivicType>
+        <CivicType>CIVIC_LOCAL_TRADE</CivicType>
+        <CivicType>CIVIC_ANARCHIST</CivicType>
+        <CivicType>CIVIC_AGRICULTURE</CivicType>
+      </InitialCivics>
 			<Leaders>
 				<Leader>
 					<LeaderName>LEADER_WILLIAM</LeaderName>
@@ -1225,7 +1253,14 @@
 				</FreeYield>
 			</FreeYields>
 			<CapturedCityUnitClass>NONE</CapturedCityUnitClass>
-			<InitialCivics/>
+      <InitialCivics>
+        <CivicType>NONE</CivicType>
+        <CivicType>CIVIC_TRIBALISM</CivicType>
+        <CivicType>CIVIC_APATHY</CivicType>
+        <CivicType>CIVIC_LOCAL_TRADE</CivicType>
+        <CivicType>CIVIC_ANARCHIST</CivicType>
+        <CivicType>CIVIC_AGRICULTURE</CivicType>
+      </InitialCivics>
 			<Leaders>
 				<Leader>
 					<LeaderName>LEADER_RAGNAR</LeaderName>
@@ -1418,7 +1453,14 @@
 				</FreeYield>
 			</FreeYields>
 			<CapturedCityUnitClass>NONE</CapturedCityUnitClass>
-			<InitialCivics/>
+      <InitialCivics>
+        <CivicType>NONE</CivicType>
+        <CivicType>CIVIC_TRIBALISM</CivicType>
+        <CivicType>CIVIC_APATHY</CivicType>
+        <CivicType>CIVIC_LOCAL_TRADE</CivicType>
+        <CivicType>CIVIC_ANARCHIST</CivicType>
+        <CivicType>CIVIC_AGRICULTURE</CivicType>
+      </InitialCivics>
 			<Leaders>
 				<Leader>
 					<LeaderName>LEADER_JUSTINIAN</LeaderName>
@@ -1609,7 +1651,14 @@
 				</FreeYield>
 			</FreeYields>
 			<CapturedCityUnitClass>NONE</CapturedCityUnitClass>
-			<InitialCivics/>
+      <InitialCivics>
+        <CivicType>NONE</CivicType>
+        <CivicType>CIVIC_TRIBALISM</CivicType>
+        <CivicType>CIVIC_APATHY</CivicType>
+        <CivicType>CIVIC_LOCAL_TRADE</CivicType>
+        <CivicType>CIVIC_ANARCHIST</CivicType>
+        <CivicType>CIVIC_AGRICULTURE</CivicType>
+      </InitialCivics>
 			<Leaders>
 				<Leader>
 					<LeaderName>LEADER_THEODORIC</LeaderName>
@@ -1779,7 +1828,7 @@
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
-			<TeachUnitClasses/>
+      <TeachUnitClasses/>
 			<FreeYields>
 				<FreeYield>
 					<YieldType>YIELD_BELLS</YieldType>
@@ -1795,7 +1844,14 @@
 				</FreeYield>
 			</FreeYields>
 			<CapturedCityUnitClass>NONE</CapturedCityUnitClass>
-			<InitialCivics/>
+      <InitialCivics>
+        <CivicType>NONE</CivicType>
+        <CivicType>CIVIC_TRIBALISM</CivicType>
+        <CivicType>CIVIC_APATHY</CivicType>
+        <CivicType>CIVIC_LOCAL_TRADE</CivicType>
+        <CivicType>CIVIC_ANARCHIST</CivicType>
+        <CivicType>CIVIC_AGRICULTURE</CivicType>
+      </InitialCivics>
 			<Leaders>
 				<Leader>
 					<LeaderName>LEADER_RECCARED</LeaderName>

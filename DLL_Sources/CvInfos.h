@@ -1000,6 +1000,8 @@ public:
 	DllExport int getCostToResearch() const;
 	///Tks Civics
 	int getAnarchyLength() const;
+	int getMissionariesNotCosumed() const;
+	int getTradingPostNotCosumed() const;
 	//TKe Civics
     DllExport int getIncreaseCityPopulation() const;
     DllExport int getAllowsProfession() const;
@@ -1135,6 +1137,8 @@ protected:
     int m_iFreeHurriedImmigrants;
     int m_iGoldBonus;
 	///TKs CivicsScreen
+	int m_iMissionariesNotCosumed;
+	int m_iTradingPostNotCosumed;
 	int m_iAnarchyLength;
 	//TKe CivicsScreen
     int m_iIncreasedImmigrants;

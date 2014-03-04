@@ -1521,6 +1521,22 @@
 		<Italian>[COLOR_ALT_HIGHLIGHT_TEXT]Starts on Land[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_ALT_HIGHLIGHT_TEXT]Starts on Land[COLOR_REVERT]</Spanish>
 	</TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MISSIONS_NOTCONSUMED_COUNT</Tag>
+    <English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Missionaries[COLOR_REVERT] return after %d1_name turns</English>
+    <French>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Missionaries[COLOR_REVERT] return after %d1_name turns</French>
+    <German>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Missionaries[COLOR_REVERT] return after %d1_name turns</German>
+    <Italian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Missionaries[COLOR_REVERT] return after %d1_name turns</Italian>
+    <Spanish>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Missionaries[COLOR_REVERT] return after %d1_name turns</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MISSIONS_NOTCONSUMED_CONVERT</Tag>
+    <English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Missionaries[COLOR_REVERT] return after first convert</English>
+    <French>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Missionaries[COLOR_REVERT] return after first convert</French>
+    <German>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Missionaries[COLOR_REVERT] return after first convert</German>
+    <Italian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Missionaries[COLOR_REVERT] return after first convert</Italian>
+    <Spanish>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Missionaries[COLOR_REVERT] return after first convert</Spanish>
+  </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ALLOWS_DEFAULT_UNIT</Tag>
 		<English>[ICON_BULLET]Your towns will produce [COLOR_HIGHLIGHT_TEXT]Peasants[COLOR_REVERT] instead of [COLOR_HIGHLIGHT_TEXT]Serfs[COLOR_REVERT]</English>

@@ -3851,6 +3851,8 @@ m_iKingTreasureTransportMod(0),
 m_iFoundCityType(-1),
 m_iIncreaseCityPopulation(0),
 ///TKs Civics
+m_iMissionariesNotCosumed(0),
+m_iTradingPostNotCosumed(0),
 m_iAnarchyLength(0),
 //TKe Civics
 
@@ -4209,6 +4211,14 @@ int CvCivicInfo::getIncreaseCityPopulation() const
 	return m_iIncreaseCityPopulation;
 }
 ///Tks CivicsScreen
+int CvCivicInfo::getMissionariesNotCosumed() const
+{
+	return m_iMissionariesNotCosumed;
+}
+int CvCivicInfo::getTradingPostNotCosumed() const
+{
+	return m_iTradingPostNotCosumed;
+}
 int CvCivicInfo::getAnarchyLength() const
 {
 	return m_iAnarchyLength;
@@ -4735,6 +4745,8 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iIncreasedImmigrants, "iIncreasedImmigrants");
 	pXML->GetChildXmlValByName(&m_iFreeTechs, "iFreeTechs");
 	///Tks CivicsScreen
+	pXML->GetChildXmlValByName(&m_iMissionariesNotCosumed, "iMissionariesNotCosumed");
+	pXML->GetChildXmlValByName(&m_iTradingPostNotCosumed, "iTradingPostNotCosumed");
 	pXML->GetChildXmlValByName(&m_iAnarchyLength, "iAnarchyLength");
 	///Tke CivicsScreen
 	pXML->GetChildXmlValByName(&m_iKingTreasureTransportMod, "iKingTreasureTransportMod");

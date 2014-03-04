@@ -1622,12 +1622,10 @@
 					<ProfessionType>PROFESSION_INFANTRY3</ProfessionType>
 					<iChange>1</iChange>
 				</AllowsProfession>
-			</AllowsProfessions>
-			<AllowsProfessions>
-				<AllowsProfession>
-					<ProfessionType>PROFESSION_PIKEMAN_PLATE</ProfessionType>
-					<iChange>1</iChange>
-				</AllowsProfession>
+        <AllowsProfession>
+          <ProfessionType>PROFESSION_PIKEMAN_PLATE</ProfessionType>
+          <iChange>1</iChange>
+        </AllowsProfession>
 			</AllowsProfessions>
 			<AllowsTrait/>
 			<AllowsBuildTypes/>
@@ -2585,12 +2583,10 @@
 					<ProfessionType>PROFESSION_INFANTRY2</ProfessionType>
 					<iChange>1</iChange>
 				</AllowsProfession>
-			</AllowsProfessions>
-			<AllowsProfessions>
-				<AllowsProfession>
-					<ProfessionType>PROFESSION_HEAVY_INFANTRY_MAIL</ProfessionType>
-					<iChange>1</iChange>
-				</AllowsProfession>
+        <AllowsProfession>
+          <ProfessionType>PROFESSION_HEAVY_INFANTRY_MAIL</ProfessionType>
+          <iChange>1</iChange>
+        </AllowsProfession>
 			</AllowsProfessions>
 			<AllowsTrait/>
 			<AllowsBuildTypes/>
@@ -4745,6 +4741,7 @@
           <iYieldChange>2</iYieldChange>
         </YieldChange>
       </ConnectedMissonYields>
+      <iMissionariesNotCosumed>-1</iMissionariesNotCosumed>
     </CivicInfo>
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_PIETY</CivicOptionType>

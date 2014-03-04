@@ -4637,6 +4637,16 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
 	}
     ///TKs Invention Core Mod v 1.0
 	///START
+	if (kCivicInfo.getMissionariesNotCosumed() > 0)
+	{
+	    szHelpText.append(NEWLINE);
+        szHelpText.append(gDLL->getText("TXT_KEY_MISSIONS_NOTCONSUMED_COUNT", kCivicInfo.getMissionariesNotCosumed()));
+	}
+	if (kCivicInfo.getMissionariesNotCosumed() < 0)
+	{
+	    szHelpText.append(NEWLINE);
+        szHelpText.append(gDLL->getText("TXT_KEY_MISSIONS_NOTCONSUMED_CONVERT"));
+	}
 	if (kCivicInfo.getIncreasedImmigrants() > 0)
     {
         szHelpText.append(NEWLINE);

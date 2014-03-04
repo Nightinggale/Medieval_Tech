@@ -5608,8 +5608,24 @@ void CvUnit::establishMission()
 			GET_PLAYER(getOwnerINLINE()).changeFatherPoints(ePointType, GC.getFatherPointInfo(ePointType).getMissionaryPoints());
 		}
 	}
-
-	kill(true);
+	//Tks Civic Screen
+	if (GET_PLAYER(getOwnerINLINE()).getMissionaryHide() < 0)
+	{
+		setUnitTravelState(UNIT_TRAVEL_STATE_HIDE_UNIT, false);
+		setUnitTravelTimer(MAX_SHORT);
+		//GET_PLAYER(pCity->getOwnerINLINE()).changeMissionaryPoints(getOwnerINLINE(), 1000);
+	}
+	else if (GET_PLAYER(getOwnerINLINE()).getMissionaryHide() > 0)
+	{
+		setUnitTravelState(UNIT_TRAVEL_STATE_HIDE_UNIT, false);
+		setUnitTravelTimer(GET_PLAYER(getOwnerINLINE()).getMissionaryHide());
+	}
+	else
+	{
+		kill(true);
+	}
+	//Tke
+	
 }
 
 int CvUnit::getMissionarySuccessPercent() const

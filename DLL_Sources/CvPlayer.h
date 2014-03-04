@@ -599,6 +599,8 @@ public:
 	int getMonasterys() const;
 	int getCastles() const;
 	int getNumDocksNextUnits() const;
+	int getMissionaryHide() const;
+	void changeMissionaryHide(int iChange);
 	void changeGoldPlundered(int iChange);
 	void changeMissionsActive(int iChange);
 	void changeVillages(int iChange);
@@ -843,6 +845,7 @@ protected:
 	int m_iEventResetTimer;
 	int m_iCurrentFoundCityType;
 	int m_iGoldPlundered;
+	int m_iMissionaryHide;
 	int m_iMissionsActive;
 	int m_iVillages;
 	int m_iMonasterys;

@@ -598,7 +598,7 @@ public:
 	int getVillages() const;
 	int getMonasterys() const;
 	int getCastles() const;
-	int getNumDocksNextUnits() const;
+	unsigned int getNumDocksNextUnits() const;
 	int getMissionaryHide() const;
 	void changeMissionaryHide(int iChange);
 	void changeGoldPlundered(int iChange);
@@ -606,7 +606,7 @@ public:
 	void changeVillages(int iChange);
 	void changeMonasterys(int iChange);
 	void changeCastles(int iChange);
-	void changeNumDocksNextUnits(int iChange);
+	//void changeNumDocksNextUnits(int iChange);
 	MedCityTypes getAICityType();
 	void changeCityTypes(MedCityTypes CityType, int iChange);
 	int prolificInventorThreshold() const;
@@ -850,7 +850,7 @@ protected:
 	int m_iVillages;
 	int m_iMonasterys;
 	int m_iCastles;
-	int m_iNumDocksNextUnits;
+	unsigned int m_iNumDocksNextUnits;
 	UnitTypes m_iDefaultPopUnit;
 	int m_iFreeTechs;
 	int m_bTechsInitialized;
@@ -1038,6 +1038,7 @@ protected:
 public:
 	bool canUseYield(YieldTypes eYield) const;
 	bool canUseUnit(UnitTypes eUnit) const;
+	bool canUseUnitImmigration(UnitTypes eUnit) const;
 	bool canUseBuilding(BuildingTypes eBuilding) const;
 	bool canUseProfession(ProfessionTypes eProfession) const;
 	bool canUseBonus(BonusTypes eBonus) const;
@@ -1046,6 +1047,7 @@ public:
 protected:
 	YieldArray<bool> m_abBannedYields;
 	UnitArray<bool> m_abBannedUnits;
+	UnitArray<bool> m_abBannedUnitsImmigration;
 	BuildingArray<bool> m_abBannedBuildings;
 	ProfessionArray<bool> m_abBannedProfessions;
 	BonusArray<bool> m_abBannedBonus;
@@ -1114,6 +1116,12 @@ inline bool CvPlayer::canUseUnit(UnitTypes eUnit) const
 {
 	FAssert(eUnit < GC.getNumUnitInfos());
 	return eUnit >= 0 ? !this->m_abBannedUnits.get(eUnit) : false;
+}
+
+inline bool CvPlayer::canUseUnitImmigration(UnitTypes eUnit) const
+{
+	FAssert(eUnit < GC.getNumUnitInfos());
+	return eUnit >= 0 ? !this->m_abBannedUnitsImmigration.get(eUnit) : false;
 }
 
 inline bool CvPlayer::canUseBuilding(BuildingTypes eBuilding) const

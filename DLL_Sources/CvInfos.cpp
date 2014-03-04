@@ -4142,6 +4142,13 @@ int CvCivicInfo::getAllowsBonuses(int i) const
 	return m_aiAllowsBonuses ? m_aiAllowsBonuses[i] : 0;
 }
 
+//Tks Civics
+bool CvCivicInfo::canUseUnitClassImmigration(int i) const
+{
+	return m_jaAllowedUnitClassImmigration.get(i);
+}
+//tke
+
 
 int CvCivicInfo::getCenterPlotFoodBonus() const
 {
@@ -4780,6 +4787,7 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 
     pXML->SetVariableListTagPair(&m_aiRequiredYields, "RequiredYields", NUM_YIELD_TYPES, 0);
 	//Civic Arrays Start
+	m_jaAllowedUnitClassImmigration.read(pXML, "AllowsUnitClassImmigration");
 	m_aRandomGrowthUnits.clear();
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"RandomGrowthClasses"))
 	{

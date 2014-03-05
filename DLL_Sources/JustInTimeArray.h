@@ -225,6 +225,14 @@ public:
 };
 
 template<class T>
+class UnitClassArray: public JustInTimeArray<T>
+{
+public:
+    UnitClassArray() : JustInTimeArray<T>(GC.getNumUnitClassInfos()){};
+	UnitClassArray(T eDefault) : JustInTimeArray<T>(GC.getNumUnitClassInfos(), eDefault){};
+};
+
+template<class T>
 class ProfessionArray: public JustInTimeArray<T>
 {
 public:

@@ -943,7 +943,7 @@ void CvPlayer::initImmigration()
 {
 	FAssert(getParent() != NO_PLAYER);
 	m_aDocksNextUnits.clear();
-	for (int i = 0; i < getNumDocksNextUnits(); ++i)
+	for (unsigned int i = 0; i < getNumDocksNextUnits(); ++i)
 	{
 		m_aDocksNextUnits.push_back(pickBestImmigrant());
 	}
@@ -11155,33 +11155,6 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
             }
         }
     }
-    ///Exchange Immigrants
-    for (int iUnit = 0; iUnit < GC.getNumUnitClassInfos(); iUnit++)
-    {
-        if (kCivicInfo.getAllowsUnitClasses(iUnit) < 0)
-        {
-            for (int i = 0; i < getNumDocksNextUnits(); ++i)
-            {
-                UnitTypes eUnit = (UnitTypes) GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits((UnitClassTypes)iUnit);
-                if ((UnitTypes)m_aDocksNextUnits[i] == eUnit)
-                {
-                    m_aDocksNextUnits[i] = pickBestImmigrant();
-                }
-            }
-        }
-    }
-
-    if (kCivicInfo.getIncreasedImmigrants() > 0)
-    {
-        int iIncrease = kCivicInfo.getIncreasedImmigrants();
-        changeNumDocksNextUnits(iIncrease);
-
-        for (int i = 0; i < iIncrease; ++i)
-        {
-            m_aDocksNextUnits.push_back(pickBestImmigrant());
-        }
-    }
-
 
 	if (kCivicInfo.getNewDefaultUnitClass() != NO_UNITCLASS)
 	{
@@ -11993,7 +11966,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iVillages);
 	pStream->Read(&m_iMonasterys);
 	pStream->Read(&m_iCastles);
-	pStream->Read(&m_iNumDocksNextUnits);
+	pStream->Read(&m_iNumDocksNextUnits); // no need to save this
 	pStream->Read(&m_bTechsInitialized);
 	pStream->Read(&m_bAllResearchComplete);
 	pStream->Read(&m_bFirstCityRazed);
@@ -12407,7 +12380,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(m_iVillages);
 	pStream->Write(m_iMonasterys);
 	pStream->Write(m_iCastles);
-	pStream->Write(m_iNumDocksNextUnits);
+	pStream->Write(m_iNumDocksNextUnits); // no need to save this
 	pStream->Write(m_bTechsInitialized);
 	pStream->Write(m_bAllResearchComplete);
 	pStream->Write(m_bFirstCityRazed);
@@ -16953,7 +16926,7 @@ UnitTypes CvPlayer::pickBestImmigrant()
 	{
 		UnitTypes eUnit = (UnitTypes) GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iUnitClass);
 		///Inventor ///TKs Invention Core Mod v 1.0
-		bool bAllowed = this->canUseUnit(eUnit);
+		bool bAllowed = this->canUseUnitImmigration(eUnit);
 #if 0
 		bool bAllowed = true;
 		for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
@@ -19325,13 +19298,8 @@ int CvPlayer::getCastles() const
 {
 	return m_iCastles;
 }
-void CvPlayer::changeNumDocksNextUnits(int iChange)
-{
-    m_iNumDocksNextUnits += iChange;
-    FAssert(m_iNumDocksNextUnits >= 1);
-}
 
-int CvPlayer::getNumDocksNextUnits() const
+unsigned int CvPlayer::getNumDocksNextUnits() const
 {
 	return m_iNumDocksNextUnits;
 }
@@ -19746,7 +19714,43 @@ void CvPlayer::updateInventionEffectCache()
 	}
 	this->m_abBannedUnits.hasContent(); // release memory if possible
 
-	// cache allowed units
+	// cache allowed units for immigration
+	for (int iUnit = 0; iUnit < GC.getNumUnitInfos(); iUnit++)
+	{
+		if (!canUseUnit((UnitTypes)iUnit))
+		{
+			m_abBannedUnitsImmigration.set(true, iUnit);
+			continue;
+		}
+
+		int iCurrent = 0;
+		int iMax = 0;
+
+		CvUnitInfo& kUnit = GC.getUnitInfo((UnitTypes) iUnit);
+        int eUnitClass = kUnit.getUnitClassType();
+
+        for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
+        {
+			CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes)iCivic);
+			int iCivicWeight = kCivicInfo.canUseUnitClassImmigration(eUnitClass);
+			if (iCivicWeight > 0)
+			{
+				iMax += iCivicWeight;
+			}
+			if (iCivicWeight != 0 && getIdeasResearched((CivicTypes) iCivic) > 0)
+			{
+				iCurrent += iCivicWeight;
+			}
+        }
+		if (iMax == 0)
+		{
+			iCurrent++;
+		}
+		this->m_abBannedUnitsImmigration.set(iCurrent <= 0, iUnit);
+	}
+	this->m_abBannedUnitsImmigration.hasContent(); // release memory if possible
+
+	// cache allowed buildings
 	for (int iBuilding = 0; iBuilding < GC.getNumBuildingInfos(); iBuilding++)
 	{
 		int iCurrent = 0;
@@ -19820,6 +19824,10 @@ void CvPlayer::updateInventionEffectCache()
 	}
 	this->m_abBannedProfessions.hasContent(); // release memory if possible
 
+
+	// set number of immigrants on "dock"
+	m_iNumDocksNextUnits = GC.getXMLval(XML_DOCKS_NEXT_UNITS);
+
 	// city plot food bonus
 	// Initiate Trade Route Screens
 	this->m_iCityPlotFoodBonus = 0;
@@ -19839,11 +19847,40 @@ void CvPlayer::updateInventionEffectCache()
 			if (this->getIdeasResearched((CivicTypes) iCivic) > 0)
 			{
 				this->m_iCityPlotFoodBonus += kCivicInfo.getCenterPlotFoodBonus();
+				m_iNumDocksNextUnits += kCivicInfo.getIncreasedImmigrants();
 			}
 			else if (bTradeScreen)
 			{
 				setHasTradeRouteType((EuropeTypes)kCivicInfo.getAllowsTradeScreen(), false);
 			}
+		}
+	}
+
+	// change dock size if needed
+	if (m_aDocksNextUnits.size() > 0)
+	{
+		// size is 0 when starting a new game
+		// ignore this case as initImmigration() is called later
+
+		// add immigrants on the dock
+		while (m_iNumDocksNextUnits > m_aDocksNextUnits.size())
+		{
+			m_aDocksNextUnits.pop_back();
+		}
+
+		// remove immigrants from the dock
+		while (m_iNumDocksNextUnits < m_aDocksNextUnits.size())
+		{
+			m_aDocksNextUnits.push_back(pickBestImmigrant());
+		}
+	}
+
+	// remove any units from the docks if they can no longer appear on the docks
+	for (unsigned int i = 0; i < m_aDocksNextUnits.size(); ++i)
+    {
+		if (!canUseUnitImmigration((UnitTypes)m_aDocksNextUnits[i]))
+		{
+			m_aDocksNextUnits[i] = pickBestImmigrant();
 		}
 	}
 }

@@ -510,6 +510,9 @@
 	<ElementType name="AllowsUnitClasses" content="eltOnly">
 		<element type="AllowsUnitClass" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
+	<ElementType name="AllowsUnitClassesImmigration" content="eltOnly">
+		<element type="AllowsUnitClass" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
   <ElementType name="UnitClassType" content="textOnly"/>
   <ElementType name="iPercentChance" content="textOnly" dt:type="int"/>
   <ElementType name="RandomGrowthClass" content="eltOnly">
@@ -657,6 +660,7 @@
 		<element type="AllowsYields" minOccurs="0"/>
 		<element type="AllowsBuildingTypes" minOccurs="0"/>
 		<element type="AllowsUnitClasses" minOccurs="0"/>
+		<element type="AllowsUnitClassesImmigration" minOccurs="0"/>
 		<element type="AllowsPromotions" minOccurs="0"/>
 		<element type="AllowsProfessions" minOccurs="0"/>
 		<element type="AllowsBonuses" minOccurs="0"/>

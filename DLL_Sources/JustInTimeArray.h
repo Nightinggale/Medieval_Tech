@@ -42,16 +42,33 @@
  *  The reason why the class function definitions are inside the declaration is to avoid compiler errors regarding templates.
  */
 
+
+enum JIT_ARRAY_TYPES
+{
+	JIT_ARRAY_YIELD,
+	JIT_ARRAY_UNIT,
+	JIT_ARRAY_UNIT_CLASS,
+	JIT_ARRAY_PROFESSION,
+	JIT_ARRAY_PROMOTION,
+	JIT_ARRAY_UNIT_COMBAT,
+	JIT_ARRAY_BONUS,
+	JIT_ARRAY_PLAYER,
+	JIT_ARRAY_EUROPE,
+	JIT_ARRAY_BUILDING,
+};
+
 template<class T> class JustInTimeArray
 {
 private:
 	T* tArray;
-	const int m_iLength;
+	const unsigned short m_iLength;
+	const unsigned short m_iType;
 	const T m_eDefault;
 
 public:
-	JustInTimeArray(int iLength, T eDefault = 0)
+	JustInTimeArray(JIT_ARRAY_TYPES eType, int iLength, T eDefault = 0)
 	: tArray(NULL)
+	, m_iType(eType)
 	, m_iLength(iLength)
 	, m_eDefault(eDefault)
 	{}
@@ -126,6 +143,11 @@ public:
 		{
 			set(value, iIndex);
 		}
+	}
+
+	unsigned short getType() const
+	{
+		return m_iType;
 	}
 
 	bool hasContent(bool bRelease = true)
@@ -204,86 +226,88 @@ template<class T>
 class YieldArray: public JustInTimeArray<T>
 {
 public:
-	YieldArray() : JustInTimeArray<T>(NUM_YIELD_TYPES){};
-	YieldArray(T eDefault) : JustInTimeArray<T>(NUM_YIELD_TYPES, eDefault){};
+	YieldArray() : JustInTimeArray<T>(JIT_ARRAY_YIELD, NUM_YIELD_TYPES){};
+	YieldArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_YIELD, NUM_YIELD_TYPES, eDefault){};
 };
 
 template<class T>
 class YieldCargoArray: public JustInTimeArray<T>
 {
 public:
-	YieldCargoArray() : JustInTimeArray<T>(NUM_CARGO_YIELD_TYPES){};
-	YieldCargoArray(T eDefault) : JustInTimeArray<T>(NUM_CARGO_YIELD_TYPES, eDefault){};
+	// for presumably all intended purpose of type, this is the same type as yield
+	// the type is designed to help figuring out which info types should be used etc. We have length to tell lengths apart
+	YieldCargoArray() : JustInTimeArray<T>(JIT_ARRAY_YIELD, NUM_CARGO_YIELD_TYPES){};
+	YieldCargoArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_YIELD, NUM_CARGO_YIELD_TYPES, eDefault){};
 };
 
 template<class T>
 class UnitArray: public JustInTimeArray<T>
 {
 public:
-    UnitArray() : JustInTimeArray<T>(GC.getNumUnitInfos()){};
-	UnitArray(T eDefault) : JustInTimeArray<T>(GC.getNumUnitInfos(), eDefault){};
+    UnitArray() : JustInTimeArray<T>(JIT_ARRAY_UNIT, GC.getNumUnitInfos()){};
+	UnitArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_UNIT, GC.getNumUnitInfos(), eDefault){};
 };
 
 template<class T>
 class UnitClassArray: public JustInTimeArray<T>
 {
 public:
-    UnitClassArray() : JustInTimeArray<T>(GC.getNumUnitClassInfos()){};
-	UnitClassArray(T eDefault) : JustInTimeArray<T>(GC.getNumUnitClassInfos(), eDefault){};
+    UnitClassArray() : JustInTimeArray<T>(JIT_ARRAY_UNIT_CLASS, GC.getNumUnitClassInfos()){};
+	UnitClassArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_UNIT_CLASS, GC.getNumUnitClassInfos(), eDefault){};
 };
 
 template<class T>
 class ProfessionArray: public JustInTimeArray<T>
 {
 public:
-    ProfessionArray() : JustInTimeArray<T>(GC.getNumProfessionInfos()){};
-	ProfessionArray(T eDefault) : JustInTimeArray<T>(GC.getNumProfessionInfos(), eDefault){};
+    ProfessionArray() : JustInTimeArray<T>(JIT_ARRAY_PROFESSION, GC.getNumProfessionInfos()){};
+	ProfessionArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_PROFESSION, GC.getNumProfessionInfos(), eDefault){};
 };
 
 template<class T>
 class PromotionArray: public JustInTimeArray<T>
 {
 public:
-    PromotionArray() : JustInTimeArray<T>(GC.getNumPromotionInfos()){};
-	PromotionArray(T eDefault) : JustInTimeArray<T>(GC.getNumPromotionInfos(), eDefault){};
+    PromotionArray() : JustInTimeArray<T>(JIT_ARRAY_PROMOTION, GC.getNumPromotionInfos()){};
+	PromotionArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_PROMOTION, GC.getNumPromotionInfos(), eDefault){};
 };
 
 template<class T>
 class UnitCombatArray: public JustInTimeArray<T>
 {
 public:
-    UnitCombatArray() : JustInTimeArray<T>(GC.getNumUnitCombatInfos()){};
-	UnitCombatArray(T eDefault) : JustInTimeArray<T>(GC.getNumUnitCombatInfos(), eDefault){};
+    UnitCombatArray() : JustInTimeArray<T>(JIT_ARRAY_UNIT_COMBAT, GC.getNumUnitCombatInfos()){};
+	UnitCombatArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_UNIT_COMBAT, GC.getNumUnitCombatInfos(), eDefault){};
 };
 
 template<class T>
 class BonusArray: public JustInTimeArray<T>
 {
 public:
-    BonusArray() : JustInTimeArray<T>(GC.getNumBonusInfos()){};
-	BonusArray(T eDefault) : JustInTimeArray<T>(GC.getNumBonusInfos(), eDefault){};
+    BonusArray() : JustInTimeArray<T>(JIT_ARRAY_BONUS, GC.getNumBonusInfos()){};
+	BonusArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_BONUS, GC.getNumBonusInfos(), eDefault){};
 };
 
 template<class T>
 class PlayerArray: public JustInTimeArray<T>
 {
 public:
-	PlayerArray() : JustInTimeArray<T>(MAX_PLAYERS){};
-	PlayerArray(T eDefault) : JustInTimeArray<T>(MAX_PLAYERS, eDefault){};
+	PlayerArray() : JustInTimeArray<T>(JIT_ARRAY_PLAYER, MAX_PLAYERS){};
+	PlayerArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_PLAYER, MAX_PLAYERS, eDefault){};
 };
 
 template<class T>
 class EuropeArray: public JustInTimeArray<T>
 {
 public:
-	EuropeArray() : JustInTimeArray<T>(GC.getNumEuropeInfos()){};
-	EuropeArray(T eDefault) : JustInTimeArray<T>(GC.getNumEuropeInfos(), eDefault){};
+	EuropeArray() : JustInTimeArray<T>(JIT_ARRAY_EUROPE, GC.getNumEuropeInfos()){};
+	EuropeArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_EUROPE, GC.getNumEuropeInfos(), eDefault){};
 };
 
 template<class T>
 class BuildingArray: public JustInTimeArray<T>
 {
 public:
-    BuildingArray() : JustInTimeArray<T>(GC.getNumBuildingInfos()){};
-	BuildingArray(T eDefault) : JustInTimeArray<T>(GC.getNumBuildingInfos(), eDefault){};
+    BuildingArray() : JustInTimeArray<T>(JIT_ARRAY_BUILDING, GC.getNumBuildingInfos()){};
+	BuildingArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_BUILDING, GC.getNumBuildingInfos(), eDefault){};
 };

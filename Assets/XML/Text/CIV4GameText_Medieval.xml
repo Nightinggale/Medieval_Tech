@@ -124,10 +124,10 @@
 	<TEXT>
 		<Tag>TXT_KEY_ESTABLISH_TRADEPOST_MESSAGE</Tag>
 		<English>You have established a trading post in %s1_city</English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<French>You have established a trading post in %s1_city</French>
+		<German>You have established a trading post in %s1_city</German>
+		<Italian>You have established a trading post in %s1_city</Italian>
+		<Spanish>You have established a trading post in %s1_city</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DOMESTIC_ADVISOR_STATE_NATIVE</Tag>
@@ -1537,6 +1537,14 @@
     <Italian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Missionaries[COLOR_REVERT] return after first convert</Italian>
     <Spanish>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Missionaries[COLOR_REVERT] return after first convert</Spanish>
   </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_TRADERS_NOTCONSUMED</Tag>
+    <English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Traders[COLOR_REVERT] return after %d1_name turns</English>
+    <French>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Peddlers and Merchants[COLOR_REVERT] return after %d1_name turns</French>
+    <German>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Peddlers and Merchants[COLOR_REVERT] return after %d1_name turns</German>
+    <Italian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Peddlers and Merchants[COLOR_REVERT] return after %d1_name turns</Italian>
+    <Spanish>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Peddlers and Merchants[COLOR_REVERT] return after %d1_name turns</Spanish>
+  </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ALLOWS_DEFAULT_UNIT</Tag>
 		<English>[ICON_BULLET]Your towns will produce [COLOR_HIGHLIGHT_TEXT]Peasants[COLOR_REVERT] instead of [COLOR_HIGHLIGHT_TEXT]Serfs[COLOR_REVERT]</English>
@@ -1569,6 +1577,14 @@
 		<Italian>%d1</Italian>
 		<Spanish>%d1</Spanish>
 	</TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_TRADING_POST_GOODS_SOLD</Tag>
+    <English>, carried goods have been sold for %d1[ICON_GOLD]</English>
+    <French>, carried goods have been sold for %d1[ICON_GOLD]</French>
+    <German>, carried goods have been sold for %d1[ICON_GOLD]</German>
+    <Italian>, carried goods have been sold for %d1[ICON_GOLD]</Italian>
+    <Spanish>, carried goods have been sold for %d1[ICON_GOLD]</Spanish>
+  </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_LEATHER_ARMOR_TEXT</Tag>
 		<English>[ICON_BULLET]Leather Armor</English>

@@ -495,6 +495,7 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	///Tks CivicsEnd
 	///Tks Med
 	m_iMissionaryHide = 0;
+	m_iTradingPostHide = 0;
 	m_iGoldPlundered = 0;
 	m_iMissionsActive = 0;
 	m_iVillages = 0;
@@ -11306,7 +11307,8 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
     changeFreeTechs(kCivicInfo.getFreeTechs());
 //    changeProlificInventorModifier(kCivicInfo.getProlificInventorRateChange());
     changeGold(kCivicInfo.getGoldBonus());
-	changeMissionaryHide(kCivicInfo.getMissionariesNotCosumed());
+	changeMissionaryHide(kCivicInfo.getMissionariesNotCosumed() * iChange);
+	changeTradingPostHide(kCivicInfo.getTradingPostNotCosumed() * iChange);
     ///TKe
 	changeGreatGeneralRateModifier(kCivicInfo.getGreatGeneralRateModifier() * iChange);
 	changeDomesticGreatGeneralRateModifier(kCivicInfo.getDomesticGreatGeneralRateModifier() * iChange);
@@ -11985,6 +11987,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iUpkeepModifier);
 	///Tks CivicsEnd
 	pStream->Read(&m_iMissionaryHide);
+	pStream->Read(&m_iTradingPostHide);
 	pStream->Read(&m_iGoldPlundered);
 	pStream->Read(&m_iMissionsActive);
 	pStream->Read(&m_iVillages);
@@ -12398,6 +12401,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(m_iUpkeepModifier);
 	///Tks CivicsEnd
 	pStream->Write(m_iMissionaryHide);
+	pStream->Write(m_iTradingPostHide);
 	pStream->Write(m_iGoldPlundered);
 	pStream->Write(m_iMissionsActive);
 	pStream->Write(m_iVillages);
@@ -16309,7 +16313,7 @@ void CvPlayer::applyMissionaryPoints(CvCity* pCity)
 		int iThreshold = missionaryThreshold(ePlayer);
 		if (getMissionaryPoints(ePlayer) >= iThreshold)
 		{
-			//Activate Missionary
+			//Activate Missionary Civics Screen
 			if (GET_PLAYER(ePlayer).getMissionaryHide() < 0)
 			{
 				CLLNode<IDInfo>* pUnitNode =  pCity->plot()->headUnitNode();
@@ -18052,6 +18056,18 @@ void CvPlayer::changeMissionaryHide(int iChange)
 int CvPlayer::getMissionaryHide() const
 {
 	return m_iMissionaryHide;
+}
+
+void CvPlayer::changeTradingPostHide(int iChange)
+{
+
+    m_iTradingPostHide += iChange;
+
+}
+
+int CvPlayer::getTradingPostHide() const
+{
+	return m_iTradingPostHide;
 }
 void CvPlayer::changeMissionsActive(int iChange)
 {

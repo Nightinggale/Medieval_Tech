@@ -4916,18 +4916,14 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
-      <RandomGrowthClasses>
-        <RandomGrowthClass>
-          <UnitClassType>UNITCLASS_NOBLEMAN</UnitClassType>
-          <iPercentChance>100</iPercentChance>
-        </RandomGrowthClass>
-      </RandomGrowthClasses>
+      <RandomGrowthClasses/>
       <ConnectedTradeYields>
         <YieldChange>
           <YieldType>YIELD_IDEAS</YieldType>
           <iYieldChange>3</iYieldChange>
         </YieldChange>
       </ConnectedTradeYields>
+      <iTradingPostNotCosumed>3</iTradingPostNotCosumed>
     </CivicInfo>
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_COMMERCE</CivicOptionType>

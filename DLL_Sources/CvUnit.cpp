@@ -15529,7 +15529,36 @@ void CvUnit::buildTradingPost(bool bTestVisible)
 	CvPlayer& kPlayer = GET_PLAYER(getOwnerINLINE());
 	kPlayer.resetConnectedPlayerYieldBonus();
     CvWString szBuffer = gDLL->getText("TXT_KEY_ESTABLISH_TRADEPOST_MESSAGE", pCity->getNameKey());
-    gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_BUILD_BANK", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE());
+    //gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_BUILD_BANK", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE());
+	//Tks Civic Screen
+	if (GET_PLAYER(getOwnerINLINE()).getTradingPostHide() > 0)
+	{
+		setUnitTravelState(UNIT_TRAVEL_STATE_HIDE_UNIT, false);
+		setUnitTravelTimer(GET_PLAYER(getOwnerINLINE()).getTradingPostHide());
+	}
+	else
+	{
+		CLLNode<IDInfo>* pUnitNode =  plot()->headUnitNode();
+		CvPlayer& kPlayerEurope = GET_PLAYER(GET_PLAYER(getOwnerINLINE()).getParent());
+		while (pUnitNode != NULL)
+		{
+			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+			pUnitNode = plot()->nextUnitNode(pUnitNode);
+
+			if (pLoopUnit->getTransportUnit() == this)
+			{						
+				int iPrice = kPlayerEurope.getYieldBuyPrice(pLoopUnit->getYield());
+				iPrice = iPrice * pLoopUnit->getYieldStored() / 2;
+				GET_PLAYER(getOwnerINLINE()).changeGold(iPrice);
+				szBuffer.append(gDLL->getText("TXT_KEY_TRADING_POST_GOODS_SOLD", iPrice));
+				//szBuffer.append(szFirstBuffer);
+			}
+		}
+
+		kill(true);
+	}
+	gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_BUILD_BANK", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE());
+	//Tke
 }
 
 

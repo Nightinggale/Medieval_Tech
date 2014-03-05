@@ -4635,7 +4635,7 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
 			szHelpText.append(CvWString::format(L"%s%c%s", NEWLINE, gDLL->getSymbolID(BULLET_CHAR), GC.getHurryInfo((HurryTypes)iI).getDescription()));
 		}
 	}
-    ///TKs Invention Core Mod v 1.0
+    ///TKs Civic Screen
 	///START
 	if (kCivicInfo.getMissionariesNotCosumed() > 0)
 	{
@@ -4647,10 +4647,15 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
 	    szHelpText.append(NEWLINE);
         szHelpText.append(gDLL->getText("TXT_KEY_MISSIONS_NOTCONSUMED_CONVERT"));
 	}
-	if (kCivicInfo.getIncreasedImmigrants() > 0)
+	if (kCivicInfo.getMissionariesNotCosumed() < 0)
+	{
+	    szHelpText.append(NEWLINE);
+        szHelpText.append(gDLL->getText("TXT_KEY_MISSIONS_NOTCONSUMED_CONVERT"));
+	}
+	if (kCivicInfo.getTradingPostNotCosumed() > 0)
     {
         szHelpText.append(NEWLINE);
-        szHelpText.append(gDLL->getText("TXT_KEY_INCREASED_IMMIGRATION", kCivicInfo.getIncreasedImmigrants()));
+        szHelpText.append(gDLL->getText("TXT_KEY_TRADERS_NOTCONSUMED", kCivicInfo.getTradingPostNotCosumed()));
     }
    /* ModCodeTypes iModdersCode = (ModCodeTypes)kCivicInfo.getModdersCode1();
 	if (iModdersCode != NO_MOD_CODE)

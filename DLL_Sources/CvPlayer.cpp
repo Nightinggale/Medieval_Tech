@@ -41,6 +41,16 @@
 // Public Functions...
 
 CvPlayer::CvPlayer()
+// invention effect cache - start - Nightinggale
+// set the default to release memory when everything is allowed instead of when nothing is allowed
+// presumably the case where nothing is allowed will never happen while allowing all say yields can happen in late game
+: m_ja_bAllowedYields(true)
+, m_ja_bAllowedBonus(true)
+, m_ja_bAllowedUnits(true)
+, m_ja_bAllowedUnitsImmigration(true)
+, m_ja_bAllowedBuildings(true)
+, m_ja_bAllowedProfessions(true)
+// invention effect cache - end - Nightinggale
 {
 
 
@@ -19614,231 +19624,120 @@ bool CvPlayer::canMakeVassalDemand(PlayerTypes eVassal)
 ///TKe
 
 // invention effect cache - start - Nightinggale
-void CvPlayer::updateInventionEffectCache()
+void CvPlayer::updateInventionEffectCacheSingleArray(JustInTimeArray<bool>* pArray, int (CvCivicInfo::*fptr)(int) const)
 {
 	CvCivilizationInfo& kCivilizationInfo = GC.getCivilizationInfo(this->getCivilizationType());
 
-	for (int i = 0; i < NUM_YIELD_TYPES; i++)
+	for (int iIndex = 0; iIndex < pArray->length(); iIndex++)
 	{
-		YieldTypes eYield = (YieldTypes)i;
-
 		int iCurrent = 0;
-		int iMax = 0;
+		bool bHasPositive = false;
+		int iParent = iIndex;
+		int iTest = iIndex;
 
-		if (this->isNative() && YieldGroup_AI_Native_Product(eYield))
+		switch (pArray->getType())
 		{
-			// natives are always allowed to have native yields even without their inventions.
-			iCurrent = 1;
-		} else {
+		case JIT_ARRAY_UNIT:
+			{
+				CvUnitInfo& kUnit = GC.getUnitInfo((UnitTypes) iIndex);
+				iParent = kUnit.getUnitClassType();
+				iTest = kCivilizationInfo.getCivilizationUnits(iParent);
+			}
+			break;
+		case JIT_ARRAY_BUILDING:
+			{
+				CvBuildingInfo& kBuilding = GC.getBuildingInfo((BuildingTypes) iIndex);
+				iParent = kBuilding.getBuildingClassType();
+				iTest = kCivilizationInfo.getCivilizationBuildings(iParent);
+			}
+			break;
+		case JIT_ARRAY_PROFESSION:
+			{
+				CvProfessionInfo& kProfession = GC.getProfessionInfo((ProfessionTypes)iIndex);
+				if (!kCivilizationInfo.isValidProfession(iIndex)
+				 || (kCivilizationInfo.isEurope() && kProfession.isEuropeInvalid()) 
+				 || (kCivilizationInfo.isNative() && kProfession.isNativesInvalid()))
+				{
+					iTest = -1;
+				}
+			}
+			break;
+		case JIT_ARRAY_YIELD:
+		case JIT_ARRAY_BONUS:
+			break;
+
+		default:
+			FAssertMsg(false, "unknown array type");
+			break;
+		}
+
+
+		if (iIndex == iTest)
+		{
 			for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
 			{
 				CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes)iCivic);
-				int iCivicWeight = kCivicInfo.getAllowsYields(eYield);
+
+				int iCivicWeight = (kCivicInfo.*fptr)(iParent);
 				if (iCivicWeight > 0)
 				{
-					iMax += iCivicWeight;
+					bHasPositive = true;
 				}
 				if (iCivicWeight != 0 && getIdeasResearched((CivicTypes) iCivic) > 0)
 				{
 					iCurrent += iCivicWeight;
 				}
 			}
-
-			if (iMax == 0)
+			if (!bHasPositive)
 			{
 				iCurrent++;
 			}
 		}
-		this->m_abBannedYields.set(iCurrent <= 0, eYield);
-	}
-	this->m_abBannedYields.hasContent(); // free memory if possible
 
-	// cache plot bonus
-	for (int i = 0; i < GC.getNumBonusInfos(); i++)
+		bool bNewValue = iCurrent > 0;
+
+		pArray->set(bNewValue, iIndex);
+	}
+	pArray->hasContent(); // free memory if possible
+}
+
+void CvPlayer::updateInventionEffectCache()
+{
+	updateInventionEffectCacheSingleArray(&m_ja_bAllowedYields, &CvCivicInfo::getAllowsYields);
+	updateInventionEffectCacheSingleArray(&m_ja_bAllowedBonus, &CvCivicInfo::getAllowsBonuses);
+	updateInventionEffectCacheSingleArray(&m_ja_bAllowedUnits, &CvCivicInfo::getAllowsUnitClasses);
+	updateInventionEffectCacheSingleArray(&m_ja_bAllowedUnitsImmigration, &CvCivicInfo::getAllowedUnitClassImmigration);
+	updateInventionEffectCacheSingleArray(&m_ja_bAllowedBuildings, &CvCivicInfo::getAllowsBuildingTypes);
+	updateInventionEffectCacheSingleArray(&m_ja_bAllowedProfessions, &CvCivicInfo::getAllowsProfessions);
+	
+	// natives are always allowed to have native yields even without their inventions.
+	if (isNative())
 	{
-		BonusTypes eBonus = (BonusTypes)i;
-		int iMax = 0;
-		int iCurrent = 0;
-
-		for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
+		for (int iYield = 0; iYield < m_ja_bAllowedYields.length(); iYield++)
 		{
-			CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes) iCivic);
-			if (kCivicInfo.getCivicOptionType() == CIVICOPTION_INVENTIONS)
+			if (YieldGroup_AI_Native_Product((YieldTypes)iYield))
 			{
-				int iBonus = kCivicInfo.getAllowsBonuses(eBonus);
-				if (iBonus > 0)
-				{
-					iMax += iBonus;
-				}
-
-				if (this->getIdeasResearched((CivicTypes) iCivic) > 0)
-				{
-					iCurrent += iBonus;
-				}
+				m_ja_bAllowedYields.set(true, iYield);
 			}
 		}
-		if (iMax == 0)
-		{
-			iCurrent++;
-		}
-		// TODO mark map dirty if new value is different from old value
-		this->m_abBannedBonus.set(iCurrent <= 0, eBonus);
 	}
-	this->m_abBannedBonus.hasContent(); // release memory if possible
 
-	// cache allowed units
-	for (int iUnit = 0; iUnit < GC.getNumUnitInfos(); iUnit++)
+	// disallow immigrants if the unit isn't allowed
+	for (int i = 0; i < m_ja_bAllowedUnits.length(); i++)
 	{
-		int iCurrent = 0;
-		int iMax = 0;
-
-		CvUnitInfo& kUnit = GC.getUnitInfo((UnitTypes) iUnit);
-        int eUnitClass = kUnit.getUnitClassType();
-
-		if (iUnit != kCivilizationInfo.getCivilizationUnits(eUnitClass))
+		if (!m_ja_bAllowedUnits.get(i))
 		{
-			this->m_abBannedUnits.set(true, iUnit);
-			continue;
+			m_ja_bAllowedUnitsImmigration.set(false, i);
 		}
-
-        for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
-        {
-			CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes)iCivic);
-			int iCivicWeight = kCivicInfo.getAllowsUnitClasses(eUnitClass);
-			if (iCivicWeight > 0)
-			{
-				iMax += iCivicWeight;
-			}
-			if (iCivicWeight != 0 && getIdeasResearched((CivicTypes) iCivic) > 0)
-			{
-				iCurrent += iCivicWeight;
-			}
-        }
-		if (iMax == 0)
-		{
-			iCurrent++;
-		}
-		this->m_abBannedUnits.set(iCurrent <= 0, iUnit);
 	}
-	this->m_abBannedUnits.hasContent(); // release memory if possible
-
-	// cache allowed units for immigration
-	for (int iUnit = 0; iUnit < GC.getNumUnitInfos(); iUnit++)
-	{
-		if (!canUseUnit((UnitTypes)iUnit))
-		{
-			m_abBannedUnitsImmigration.set(true, iUnit);
-			continue;
-		}
-
-		int iCurrent = 0;
-		int iMax = 0;
-
-		CvUnitInfo& kUnit = GC.getUnitInfo((UnitTypes) iUnit);
-        int eUnitClass = kUnit.getUnitClassType();
-
-        for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
-        {
-			CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes)iCivic);
-			int iCivicWeight = kCivicInfo.canUseUnitClassImmigration(eUnitClass);
-			if (iCivicWeight > 0)
-			{
-				iMax += iCivicWeight;
-			}
-			if (iCivicWeight != 0 && getIdeasResearched((CivicTypes) iCivic) > 0)
-			{
-				iCurrent += iCivicWeight;
-			}
-        }
-		if (iMax == 0)
-		{
-			iCurrent++;
-		}
-		this->m_abBannedUnitsImmigration.set(iCurrent <= 0, iUnit);
-	}
-	this->m_abBannedUnitsImmigration.hasContent(); // release memory if possible
-
-	// cache allowed buildings
-	for (int iBuilding = 0; iBuilding < GC.getNumBuildingInfos(); iBuilding++)
-	{
-		int iCurrent = 0;
-		int iMax = 0;
-
-		CvBuildingInfo& kBuilding = GC.getBuildingInfo((BuildingTypes) iBuilding);
-        int eBuildingClass = kBuilding.getBuildingClassType();
-
-		if (iBuilding != kCivilizationInfo.getCivilizationBuildings(eBuildingClass))
-		{
-			this->m_abBannedUnits.set(true, iBuilding);
-			continue;
-		}
-
-        for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
-        {
-			CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes)iCivic);
-			int iCivicWeight = kCivicInfo.getAllowsBuildingTypes(eBuildingClass);
-			if (iCivicWeight > 0)
-			{
-				iMax += iCivicWeight;
-			}
-			if (iCivicWeight != 0 && getIdeasResearched((CivicTypes) iCivic) > 0)
-			{
-				iCurrent += iCivicWeight;
-			}
-        }
-		if (iMax == 0)
-		{
-			iCurrent++;
-		}
-		this->m_abBannedBuildings.set(iCurrent <= 0, iBuilding);
-	}
-	this->m_abBannedBuildings.hasContent(); // release memory if possible
-
-	// cache allowed professions
-	for (int iProfession = 0; iProfession < GC.getNumProfessionInfos(); iProfession++)
-	{
-		ProfessionTypes eProfession = (ProfessionTypes) iProfession;
-		int iCurrent = 0;
-		int iMax = 0;
-
-		CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
-
-		if (!kCivilizationInfo.isValidProfession(eProfession)
-		 || (kCivilizationInfo.isEurope() && kProfession.isEuropeInvalid()) 
-		 || (kCivilizationInfo.isNative() && kProfession.isNativesInvalid()))
-		{
-			this->m_abBannedProfessions.set(true, eProfession);
-			continue;
-		}
-
-        for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
-        {
-			CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes)iCivic);
-			int iCivicWeight = kCivicInfo.getAllowsProfessions(eProfession);
-			if (iCivicWeight > 0)
-			{
-				iMax += iCivicWeight;
-			}
-			if (iCivicWeight != 0 && getIdeasResearched((CivicTypes) iCivic) > 0)
-			{
-				iCurrent += iCivicWeight;
-			}
-        }
-		if (iMax == 0)
-		{
-			iCurrent++;
-		}
-		this->m_abBannedProfessions.set(iCurrent <= 0, eProfession);
-	}
-	this->m_abBannedProfessions.hasContent(); // release memory if possible
-
 
 	// set number of immigrants on "dock"
 	m_iNumDocksNextUnits = GC.getXMLval(XML_DOCKS_NEXT_UNITS);
 
 	// city plot food bonus
+	m_iCityPlotFoodBonus = 0;
+
 	// Initiate Trade Route Screens
-	this->m_iCityPlotFoodBonus = 0;
 	bool bTradeScreen = false;
 	for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
 	{

@@ -1051,15 +1051,16 @@ public:
 	int getCityPlotFoodBonus() const;
 
 protected:
-	YieldArray<bool> m_abBannedYields;
-	UnitArray<bool> m_abBannedUnits;
-	UnitArray<bool> m_abBannedUnitsImmigration;
-	BuildingArray<bool> m_abBannedBuildings;
-	ProfessionArray<bool> m_abBannedProfessions;
-	BonusArray<bool> m_abBannedBonus;
+	YieldArray<bool> m_ja_bAllowedYields;
+	UnitArray<bool> m_ja_bAllowedUnits;
+	UnitArray<bool> m_ja_bAllowedUnitsImmigration;
+	BuildingArray<bool> m_ja_bAllowedBuildings;
+	ProfessionArray<bool> m_ja_bAllowedProfessions;
+	BonusArray<bool> m_ja_bAllowedBonus;
 
 	int m_iCityPlotFoodBonus;
 
+	void updateInventionEffectCacheSingleArray(JustInTimeArray<bool>* pArray, int (CvCivicInfo::*fptr)(int) const);
 	void updateInventionEffectCache();
 // invention effect cache - end - Nightinggale
 
@@ -1115,35 +1116,35 @@ inline bool CvPlayer::hasContentsAnyYieldEquipmentAmountSecure(ProfessionTypes e
 inline bool CvPlayer::canUseYield(YieldTypes eYield) const
 {
 	FAssert(eYield < NUM_YIELD_TYPES);
-	return eYield >= 0 ? !this->m_abBannedYields.get(eYield) : false;
+	return eYield >= 0 ? this->m_ja_bAllowedYields.get(eYield) : false;
 }
 
 inline bool CvPlayer::canUseUnit(UnitTypes eUnit) const
 {
 	FAssert(eUnit < GC.getNumUnitInfos());
-	return eUnit >= 0 ? !this->m_abBannedUnits.get(eUnit) : false;
+	return eUnit >= 0 ? this->m_ja_bAllowedUnits.get(eUnit) : false;
 }
 
 inline bool CvPlayer::canUseUnitImmigration(UnitTypes eUnit) const
 {
 	FAssert(eUnit < GC.getNumUnitInfos());
-	return eUnit >= 0 ? !this->m_abBannedUnitsImmigration.get(eUnit) : false;
+	return eUnit >= 0 ? this->m_ja_bAllowedUnitsImmigration.get(eUnit) : false;
 }
 
 inline bool CvPlayer::canUseBuilding(BuildingTypes eBuilding) const
 {
-	return eBuilding >= 0 ? !this->m_abBannedBuildings.get(eBuilding) : false;
+	return eBuilding >= 0 ? this->m_ja_bAllowedBuildings.get(eBuilding) : false;
 }
 
 inline bool CvPlayer::canUseProfession(ProfessionTypes eProfession) const
 {
 	FAssert(eProfession < GC.getNumProfessionInfos());
-	return eProfession >= 0 ? !this->m_abBannedProfessions.get(eProfession) : false;
+	return eProfession >= 0 ? this->m_ja_bAllowedProfessions.get(eProfession) : false;
 }
 
 inline bool CvPlayer::canUseBonus(BonusTypes eBonus) const
 {
-	return eBonus >= 0 ? !m_abBannedBonus.get(eBonus) : false;
+	return eBonus >= 0 ? m_ja_bAllowedBonus.get(eBonus) : false;
 }
 
 inline int CvPlayer::getCityPlotFoodBonus() const

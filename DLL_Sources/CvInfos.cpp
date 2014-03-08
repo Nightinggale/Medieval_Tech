@@ -4144,7 +4144,7 @@ int CvCivicInfo::getAllowsBonuses(int i) const
 }
 
 //Tks Civics
-bool CvCivicInfo::canUseUnitClassImmigration(int i) const
+int CvCivicInfo::getAllowedUnitClassImmigration(int i) const
 {
 	return m_jaAllowedUnitClassImmigration.get(i);
 }

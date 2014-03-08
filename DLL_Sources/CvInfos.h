@@ -1044,7 +1044,7 @@ public:
     DllExport int getAllowsPromotions(int i) const;
     DllExport int getAllowsBonuses(int i) const;
 	//Tks Civics
-	bool canUseUnitClassImmigration(int i) const;
+	int getAllowedUnitClassImmigration(int i) const;
 	int getUpkeepYields(int i) const;
 	//tke
     DllExport int getAllowsBuildTypes(int i) const;
@@ -1203,7 +1203,7 @@ protected:
 	std::vector< std::pair<UnitClassTypes, int> > m_aRandomGrowthUnits;
 	std::vector< std::pair<YieldTypes, int> > m_aConnectedTradeYields;
 	std::vector< std::pair<YieldTypes, int> > m_aConnectedMissonYields;
-	UnitClassArray<char> m_jaAllowedUnitClassImmigration;
+	UnitClassArray<int> m_jaAllowedUnitClassImmigration;
 	///Tke
 	std::vector<int> m_aFreeUnitClasses;
 };

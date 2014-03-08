@@ -1051,6 +1051,7 @@ public:
     DllExport int getFasterBuildTypes(int i) const;
     DllExport int getFasterBuildFeatureTypes(int i) const;
     DllExport int getAllowsBuildTypesTerrain(int i) const;
+	DllExport int getFartherPointChanges(int i) const;
     DllExport int getIndustrializationVictory(int i) const;
 	DllExport int getAllowsProfessions(int i) const;
 	DllExport int getRequiredFatherPoints(int i) const;
@@ -1166,6 +1167,7 @@ protected:
     int* m_aiFasterBuildTypes;
     int* m_aiFasterBuildFeatureTypes;
     int* m_aiAllowsBuildTypesTerrain;
+	int* m_aiFartherPointChanges;
     int* m_aiIndustrializationVictory;
     int* m_aiAllowsProfessions;
     int* m_aiRequiredFatherPoints;

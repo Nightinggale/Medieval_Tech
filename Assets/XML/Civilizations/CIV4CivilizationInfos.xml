@@ -162,7 +162,7 @@
         <CivicType>CIVIC_APATHY</CivicType>
         <CivicType>CIVIC_LOCAL_TRADE</CivicType>
         <CivicType>CIVIC_ANARCHIST</CivicType>
-        <CivicType>CIVIC_AGRICULTURE</CivicType>
+        <CivicType>CIVIC_TRIBALISM</CivicType>
       </InitialCivics>
 			<Leaders>
 				<Leader>
@@ -415,7 +415,7 @@
         <CivicType>CIVIC_APATHY</CivicType>
         <CivicType>CIVIC_LOCAL_TRADE</CivicType>
         <CivicType>CIVIC_ANARCHIST</CivicType>
-        <CivicType>CIVIC_AGRICULTURE</CivicType>
+        <CivicType>CIVIC_TRIBALISM</CivicType>
       </InitialCivics>
 			<Leaders>
 				<Leader>
@@ -613,7 +613,7 @@
         <CivicType>CIVIC_APATHY</CivicType>
         <CivicType>CIVIC_LOCAL_TRADE</CivicType>
         <CivicType>CIVIC_ANARCHIST</CivicType>
-        <CivicType>CIVIC_AGRICULTURE</CivicType>
+        <CivicType>CIVIC_TRIBALISM</CivicType>
       </InitialCivics>
 			<Leaders>
 				<Leader>
@@ -858,7 +858,7 @@
         <CivicType>CIVIC_APATHY</CivicType>
         <CivicType>CIVIC_LOCAL_TRADE</CivicType>
         <CivicType>CIVIC_ANARCHIST</CivicType>
-        <CivicType>CIVIC_AGRICULTURE</CivicType>
+        <CivicType>CIVIC_TRIBALISM</CivicType>
       </InitialCivics>
 			<Leaders>
 				<Leader>
@@ -1056,7 +1056,7 @@
         <CivicType>CIVIC_APATHY</CivicType>
         <CivicType>CIVIC_LOCAL_TRADE</CivicType>
         <CivicType>CIVIC_ANARCHIST</CivicType>
-        <CivicType>CIVIC_AGRICULTURE</CivicType>
+        <CivicType>CIVIC_TRIBALISM</CivicType>
       </InitialCivics>
 			<Leaders>
 				<Leader>
@@ -1259,7 +1259,7 @@
         <CivicType>CIVIC_APATHY</CivicType>
         <CivicType>CIVIC_LOCAL_TRADE</CivicType>
         <CivicType>CIVIC_ANARCHIST</CivicType>
-        <CivicType>CIVIC_AGRICULTURE</CivicType>
+        <CivicType>CIVIC_TRIBALISM</CivicType>
       </InitialCivics>
 			<Leaders>
 				<Leader>
@@ -1459,7 +1459,7 @@
         <CivicType>CIVIC_APATHY</CivicType>
         <CivicType>CIVIC_LOCAL_TRADE</CivicType>
         <CivicType>CIVIC_ANARCHIST</CivicType>
-        <CivicType>CIVIC_AGRICULTURE</CivicType>
+        <CivicType>CIVIC_TRIBALISM</CivicType>
       </InitialCivics>
 			<Leaders>
 				<Leader>
@@ -1657,7 +1657,7 @@
         <CivicType>CIVIC_APATHY</CivicType>
         <CivicType>CIVIC_LOCAL_TRADE</CivicType>
         <CivicType>CIVIC_ANARCHIST</CivicType>
-        <CivicType>CIVIC_AGRICULTURE</CivicType>
+        <CivicType>CIVIC_TRIBALISM</CivicType>
       </InitialCivics>
 			<Leaders>
 				<Leader>
@@ -1850,7 +1850,7 @@
         <CivicType>CIVIC_APATHY</CivicType>
         <CivicType>CIVIC_LOCAL_TRADE</CivicType>
         <CivicType>CIVIC_ANARCHIST</CivicType>
-        <CivicType>CIVIC_AGRICULTURE</CivicType>
+        <CivicType>CIVIC_TRIBALISM</CivicType>
       </InitialCivics>
 			<Leaders>
 				<Leader>

@@ -4920,7 +4920,14 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
             }
         }
    // }
-
+	for (iI = 0; iI < GC.getNumFatherPointInfos(); ++iI)
+    {
+        if (kCivicInfo.getFartherPointChanges(iI) > 0)
+        {
+            szHelpText.append(NEWLINE);
+            szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_FATHER_BONUS", kCivicInfo.getFartherPointChanges(iI), GC.getFatherPointInfo((FatherPointTypes)iI).getDescription()));
+        }
+    }
     for (iI = 0; iI < GC.getNumRouteInfos(); iI++)
     {
         if (kCivicInfo.getRouteMovementMod(iI) != 0)

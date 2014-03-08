@@ -13,7 +13,7 @@
 		</CivicOptionInfo>
 		<CivicOptionInfo>
 			<Type>CIVICOPTION_GOVERNMENT</Type>
-			<Description>Government</Description>
+			<Description>Administration</Description>
 		</CivicOptionInfo>
 		<CivicOptionInfo>
 			<Type>CIVICOPTION_PIETY</Type>

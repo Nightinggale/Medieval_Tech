@@ -552,12 +552,20 @@
 		<element type="AllowsBonus" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="TerrainType" content="textOnly"/>
+  <ElementType name="FartherPointType" content="textOnly"/>
 	<ElementType name="AllowsTerrains" content="eltOnly">
 		<element type="TerrainType"/>
 		<element type="iChange"/>
 	</ElementType>
 	<ElementType name="AllowsBuildTypesTerrain" content="eltOnly">
 		<element type="AllowsTerrains" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+  <ElementType name="FartherPointChange" content="eltOnly">
+		<element type="FartherPointType"/>
+		<element type="iChange"/>
+	</ElementType>
+  <ElementType name="FartherPointChanges" content="eltOnly">
+		<element type="FartherPointChange" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="BuildType" content="textOnly"/>
 	<ElementType name="ModBuildType" content="eltOnly">
@@ -669,6 +677,7 @@
 		<element type="AllowsTradeScreen" minOccurs="0"/>
 		<element type="AllowsBuildTypes" minOccurs="0"/>
 		<element type="AllowsBuildTypesTerrain" minOccurs="0"/>
+    <element type="FartherPointChanges" minOccurs="0"/>
 		<element type="FasterBuildTypes" minOccurs="0"/>
 		<element type="FasterBuildFeatureTypes" minOccurs="0"/>
 		<element type="ConvertsUnitsFrom" minOccurs="0"/>

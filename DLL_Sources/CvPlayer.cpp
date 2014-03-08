@@ -78,13 +78,14 @@ CvPlayer::CvPlayer()
 	m_abYieldEuropeTradable = new bool[NUM_YIELD_TYPES];
 	m_abFeatAccomplished = new bool[NUM_FEAT_TYPES];
 	m_abOptions = new bool[NUM_PLAYEROPTION_TYPES];
-	//Tks Civics
     ///TKs Invention Core Mod v 1.0
 	m_aiTradeRouteStartingPlotX = NULL;
 	m_aiTradeRouteStartingPlotY = NULL;
 	m_abTradeRouteTypes = NULL;
     m_aiIdeaProgress = NULL;
     m_aiIdeasResearched = NULL;
+	//Tks Civics
+	//m_aiBonusFatherPoints = NULL;
     //m_aiPreviousFatherPoints = NULL;
     ///TKe
 	m_paiImprovementCount = NULL;
@@ -135,11 +136,7 @@ CvPlayer::~CvPlayer()
 	//Tks Civics
 	SAFE_DELETE_ARRAY(m_aiTradingPostCount);
 	SAFE_DELETE_ARRAY(m_paiUpkeepCount);
-	///TKe
 	SAFE_DELETE_ARRAY(m_aiCensureTypes);
-	//SAFE_DELETE_ARRAY(m_aiTradeRouteStartingPlotX);
-	//SAFE_DELETE_ARRAY(m_aiTradeRouteStartingPlotY);
-	//SAFE_DELETE_ARRAY(m_abTradeRouteTypes);
 	///TKe
 	SAFE_DELETE_ARRAY(m_abYieldEuropeTradable);
 	SAFE_DELETE_ARRAY(m_abFeatAccomplished);
@@ -359,6 +356,7 @@ void CvPlayer::uninit()
 	SAFE_DELETE_ARRAY(m_aiTradeRouteStartingPlotX);
 	SAFE_DELETE_ARRAY(m_aiTradeRouteStartingPlotY);
 	SAFE_DELETE_ARRAY(m_abTradeRouteTypes);
+	SAFE_DELETE_ARRAY(m_aiBonusFatherPoints);
 	///TKe
 	SAFE_DELETE_ARRAY(m_paiImprovementCount);
 	SAFE_DELETE_ARRAY(m_paiFreeBuildingCount);
@@ -571,6 +569,7 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 		m_aiTaxYieldModifierCount[iI] = 0;
 	}
     ///TKs Med
+	
     for (iI = 0; iI < NUM_CENSURE_TYPES; iI++)
 	{
 	    m_aiCensureTypes[iI] = 0;
@@ -617,11 +616,16 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
             m_aiIdeasResearched[iI] = 0;
         }
         ///Tks Med
+		//FAssertMsg(m_aiPreviousFatherPoints==NULL, "about to leak memory, CvPlayer::m_aiPreviousFatherPoints");
+		//FAssertMsg(m_aiBonusFatherPoints==NULL, "about to leak memory, CvPlayer::m_aiBonusFatherPoints");
         m_aiPreviousFatherPoints = new int [GC.getNumFatherPointInfos()];
+		m_aiBonusFatherPoints = new int[GC.getNumFatherPointInfos()];
         for (iI = 0; iI < GC.getNumFatherPointInfos(); iI++)
         {
             m_aiPreviousFatherPoints[iI] = 0;
+			m_aiBonusFatherPoints[iI] = 0;
         }
+		 ///Tke
 
 		m_abTradeRouteTypes = new bool[GC.getNumEuropeInfos()];
 		m_aiTradeRouteStartingPlotX = new int[GC.getNumEuropeInfos()];
@@ -11305,7 +11309,10 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
 	changeDominateNativeBordersCount(kCivicInfo.isDominateNativeBorders() ? iChange : 0);
 	changeRevolutionEuropeTradeCount(kCivicInfo.isRevolutionEuropeTrade() ? iChange : 0);
 	setFatherPointMultiplier(getFatherPointMultiplier() + kCivicInfo.getFatherPointModifier() * iChange);
-
+	for (int iFatherPoint = 0; iFatherPoint < GC.getNumFatherPointInfos(); ++iFatherPoint)
+	{
+		changeBonusFatherPoints((FatherPointTypes)iFatherPoint, kCivicInfo.getFartherPointChanges(iFatherPoint) * iChange);
+	}
 	if (kCivicInfo.getImmigrationConversion() != NO_YIELD)
 	{
 		if (iChange > 0)
@@ -11647,6 +11654,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(GC.getNumCivicInfos(), m_aiIdeaProgress);
 	pStream->Read(GC.getNumCivicInfos(), m_aiIdeasResearched);
 	pStream->Read(GC.getNumFatherPointInfos(), m_aiPreviousFatherPoints);
+	pStream->Read(GC.getNumFatherPointInfos(), m_aiBonusFatherPoints);
 	///TKe
 	pStream->Read(GC.getNumImprovementInfos(), m_paiImprovementCount);
 	pStream->Read(GC.getNumBuildingInfos(), m_paiFreeBuildingCount);
@@ -12099,6 +12107,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(GC.getNumCivicInfos(), m_aiIdeaProgress);
    	pStream->Write(GC.getNumCivicInfos(), m_aiIdeasResearched);
    	pStream->Write(GC.getNumFatherPointInfos(), m_aiPreviousFatherPoints);
+	pStream->Write(GC.getNumFatherPointInfos(), m_aiBonusFatherPoints);
    	///TKe
 	pStream->Write(GC.getNumImprovementInfos(), m_paiImprovementCount);
 	pStream->Write(GC.getNumBuildingInfos(), m_paiFreeBuildingCount);
@@ -19258,7 +19267,21 @@ void CvPlayer::doMedievalEvents()
 //
 //    }
 }
+int CvPlayer::getBonusFatherPoints(FatherPointTypes ePointType) const
+{
+	return m_aiBonusFatherPoints[ePointType];
+}
 
+void CvPlayer::changeBonusFatherPoints(FatherPointTypes ePointType, int iChange)
+{
+	FAssert((ePointType >= 0) && (ePointType < GC.getNumFatherPointInfos()));
+
+	if (iChange != 0)
+	{
+		m_aiBonusFatherPoints[ePointType] += iChange;
+		FAssert(m_aiBonusFatherPoints[ePointType] >= 0);
+	}
+}
 void CvPlayer::changeCityTypes(MedCityTypes CityType, int iChange)
 {
     if (isNative() || isEurope())

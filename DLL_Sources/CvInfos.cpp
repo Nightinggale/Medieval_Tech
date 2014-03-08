@@ -3883,6 +3883,7 @@ m_aiAllowsBuildTypes(NULL),
 m_aiFasterBuildTypes(NULL),
 m_aiFasterBuildFeatureTypes(NULL),
 m_aiAllowsBuildTypesTerrain(NULL),
+m_aiFartherPointChanges(NULL),
 m_aiIndustrializationVictory(NULL),
 m_aiMaxYieldModifiers(NULL),
 ///TKe
@@ -3932,6 +3933,7 @@ CvCivicInfo::~CvCivicInfo()
     SAFE_DELETE_ARRAY(m_aiFasterBuildTypes);
     SAFE_DELETE_ARRAY(m_aiFasterBuildFeatureTypes);
     SAFE_DELETE_ARRAY(m_aiAllowsBuildTypesTerrain);
+	SAFE_DELETE_ARRAY(m_aiFartherPointChanges);
     SAFE_DELETE_ARRAY(m_aiIndustrializationVictory);
     SAFE_DELETE_ARRAY(m_aiMaxYieldModifiers);
 	///TKe
@@ -4118,6 +4120,10 @@ int CvCivicInfo::getFasterBuildFeatureTypes(int i) const
 int CvCivicInfo::getAllowsBuildTypesTerrain(int i) const
 {
 	return m_aiAllowsBuildTypesTerrain ? m_aiAllowsBuildTypesTerrain[i] : 0;
+}
+int CvCivicInfo::getFartherPointChanges(int i) const
+{
+	return m_aiFartherPointChanges ? m_aiFartherPointChanges[i] : 0;
 }
 
 int CvCivicInfo::getIndustrializationVictory(int i) const
@@ -4789,6 +4795,7 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
     pXML->SetVariableListTagPair(&m_aiIndustrializationVictory, "IndustrializationVictory", NUM_YIELD_TYPES, 0);
     pXML->SetVariableListTagPair(&m_aiMaxYieldModifiers, "MaxYieldModifiers", NUM_YIELD_TYPES, 0);
     pXML->SetVariableListTagPair(&m_aiAllowsBuildTypesTerrain, "AllowsBuildTypesTerrain", GC.getNumTerrainInfos(), 0);
+	pXML->SetVariableListTagPair(&m_aiFartherPointChanges, "FartherPointChanges", GC.getNumFatherPointInfos(), 0);
     pXML->SetVariableListTagPair(&m_aiAllowsProfessions, "AllowsProfessions", GC.getNumProfessionInfos(), 0);
 
     pXML->SetVariableListTagPair(&m_aiRequiredYields, "RequiredYields", NUM_YIELD_TYPES, 0);

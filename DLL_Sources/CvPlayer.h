@@ -623,6 +623,8 @@ public:
     void createProlificInventor(UnitTypes eInvetorUnit, bool bIncrementExperience, int iX, int iY);
 	int getCostToResearch(CivicTypes eCivic);
 	int getPreviousFatherPoints(FatherPointTypes eIndex) const;
+	int getBonusFatherPoints(FatherPointTypes ePointType) const;
+	void changeBonusFatherPoints(FatherPointTypes ePointType, int iChange);
 	int getTemporyIdeasStored() const;
 	int getIdeasStored() const;
 	void setPreviousFatherPoints(FatherPointTypes eIndex, int iChange);
@@ -923,6 +925,7 @@ protected:
     int* m_aiIdeaProgress;
     int* m_aiIdeasResearched;
     int* m_aiPreviousFatherPoints;
+	int* m_aiBonusFatherPoints;
     ///TKe
 	int* m_paiImprovementCount;
 	int* m_paiFreeBuildingCount;

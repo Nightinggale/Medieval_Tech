@@ -124,18 +124,14 @@ void CvTeam::reset(TeamTypes eID, bool bConstructorCall)
 		{
 			m_abFatherIgnore[iI] = false;
 		}
-
-		FAssertMsg(m_aiFatherPoints==NULL, "about to leak memory, CvTeam::m_aiFatherPoints");
-		m_aiFatherPoints = new int[GC.getNumFatherPointInfos()];
-		for (iI = 0; iI < GC.getNumFatherPointInfos(); iI++)
-		{
-			m_aiFatherPoints[iI] = 0;
-		}
 		///Tks Med
+		FAssertMsg(m_aiFatherPoints==NULL, "about to leak memory, CvTeam::m_aiFatherPoints");
 		FAssertMsg(m_aiAccumilatedFatherPoints==NULL, "about to leak memory, CvTeam::m_aiAccumilatedFatherPoints");
+		m_aiFatherPoints = new int[GC.getNumFatherPointInfos()];
 		m_aiAccumilatedFatherPoints = new int[GC.getNumFatherPointInfos()];
 		for (iI = 0; iI < GC.getNumFatherPointInfos(); iI++)
 		{
+			m_aiFatherPoints[iI] = 0;
 			m_aiAccumilatedFatherPoints[iI] = 0;
 		}
         ///Tke
@@ -1720,6 +1716,23 @@ void CvTeam::changeFatherPoints(FatherPointTypes ePointType, int iChange)
 		if (hasColonialPlayer())
 		{
 			///Tks Med
+			int iBonus=0;
+			int iPreviousBonus=0;
+			for (int iI = 0; iI < MAX_PLAYERS; iI++)
+			{
+				if (GET_PLAYER((PlayerTypes)iI).getTeam() == getID())
+				{
+					iPreviousBonus = GET_PLAYER((PlayerTypes)iI).getBonusFatherPoints(ePointType);
+					if (iPreviousBonus > iBonus)
+					{
+						iBonus = iPreviousBonus;
+					}
+					
+				}
+			}
+			iChange *= std::max(1, (iBonus + 100));
+			iChange /= 100;
+			
 			if (iChange > 0)
 			{
 				changeAccumilatedFatherPoints(ePointType, iChange);
@@ -1732,12 +1745,8 @@ void CvTeam::changeFatherPoints(FatherPointTypes ePointType, int iChange)
 
 }
 
-
 int CvTeam::getAccumilatedFatherPoints(FatherPointTypes ePointType) const
 {
-	//int iPoints = getFatherPoints(ePointType) - m_aiAccumilatedFatherPoints[ePointType];
-	//FAssert(iPoints >= 0);
-	//return iPoints;
 	return m_aiAccumilatedFatherPoints[ePointType];
 }
 

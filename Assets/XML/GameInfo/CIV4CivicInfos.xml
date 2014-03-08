@@ -4496,8 +4496,8 @@
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
-			<Type>CIVIC_TRIBALISM</Type>
-			<Description>Tribalism</Description>
+			<Type>CIVIC_LOCALISM</Type>
+			<Description>Localism</Description>
 			<Civilopedia>????</Civilopedia>
 			<Strategy>????</Strategy>
 			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,7,4</Button>
@@ -4522,45 +4522,6 @@
 			<FreeUnitClasses/>
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
-		</CivicInfo>
-		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
-			<Type>CIVIC_MANORALISM</Type>
-			<Description>Manoralism</Description>
-			<Civilopedia>????</Civilopedia>
-			<Strategy>????</Strategy>
-			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,6,4</Button>
-			<iAIWeight>0</iAIWeight>
-			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
-			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
-			<iFreeExperience>0</iFreeExperience>
-			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
-			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
-			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
-			<iExpInBorderModifier>0</iExpInBorderModifier>
-			<iNativeAttitudeChange>0</iNativeAttitudeChange>
-			<iNativeCombatModifier>0</iNativeCombatModifier>
-			<iFatherPointModifier>0</iFatherPointModifier>
-			<bDominateNativeBorders>0</bDominateNativeBorders>
-			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_FOOD</YieldType>
-					<iYield>25</iYield>
-				</YieldModifier>
-				<YieldModifier>
-					<YieldType>YIELD_GRAPES</YieldType>
-					<iYield>25</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-			<CapitalYieldModifiers/>
-			<Hurrys/>
-			<SpecialBuildingNotRequireds/>
-			<ImprovementYieldChanges/>
-			<FreeUnitClasses/>
-			<ProfessionCombatChanges/>
-			<ImmigrationConversion>NONE</ImmigrationConversion>
-      <iAnarchyLength>5</iAnarchyLength>
 		</CivicInfo>
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
@@ -4833,7 +4794,7 @@
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_COMMERCE</CivicOptionType>
 			<Type>CIVIC_LOCAL_TRADE</Type>
-			<Description>Local Trade</Description>
+			<Description>Minimum</Description>
 			<Civilopedia>????</Civilopedia>
 			<Strategy>????</Strategy>
 			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,1,5</Button>
@@ -4917,6 +4878,12 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <FartherPointChanges>
+        <FartherPointChange>
+          <FartherPointType>FATHER_POINT_EXPLORATION</FartherPointType>
+          <iChange>100</iChange>
+        </FartherPointChange>
+      </FartherPointChanges>
       <RandomGrowthClasses/>
       <ConnectedTradeYields>
         <YieldChange>
@@ -5021,8 +4988,8 @@
 		</CivicInfo>
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
-      <Type>CIVIC_ORDEAL</Type>
-      <Description>Ordeal</Description>
+      <Type>CIVIC_SOVEREIGN</Type>
+      <Description>Sovereign Rule</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
       <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,2,5</Button>
@@ -5051,7 +5018,7 @@
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
       <Type>CIVIC_RELIGIOUS_LAW</Type>
-      <Description>Religious Law</Description>
+      <Description>Ecclesiastical</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
       <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,2,5</Button>
@@ -5110,28 +5077,12 @@
           <UnitClassType>UNITCLASS_NOBLEMAN</UnitClassType>
           <iPercentChance>100</iPercentChance>
         </RandomGrowthClass>
-        <RandomGrowthClass>
-          <UnitClassType>UNITCLASS_JESTER</UnitClassType>
-          <iPercentChance>100</iPercentChance>
-        </RandomGrowthClass>
-        <RandomGrowthClass>
-          <UnitClassType>UNITCLASS_MINER</UnitClassType>
-          <iPercentChance>100</iPercentChance>
-        </RandomGrowthClass>
-        <RandomGrowthClass>
-          <UnitClassType>UNITCLASS_COTTON_PLANTER</UnitClassType>
-          <iPercentChance>100</iPercentChance>
-        </RandomGrowthClass>
-        <RandomGrowthClass>
-          <UnitClassType>UNITCLASS_FARMER</UnitClassType>
-          <iPercentChance>100</iPercentChance>
-        </RandomGrowthClass>
       </RandomGrowthClasses>
     </CivicInfo>
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
-      <Type>CIVIC_EXTRA_LEGAL</Type>
-      <Description>Extra Legal</Description>
+      <Type>CIVIC_CODEX</Type>
+      <Description>Codex</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
       <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,2,5</Button>
@@ -5159,8 +5110,8 @@
     </CivicInfo>
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
-      <Type>CIVIC_AGRICULTURE</Type>
-      <Description>Agriculture</Description>
+      <Type>CIVIC_TRIBALISM</Type>
+      <Description>Tribalism</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
       <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,4,5</Button>
@@ -5246,8 +5197,8 @@
 		</CivicInfo>
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
-      <Type>CIVIC_CASTE</Type>
-      <Description>Caste</Description>
+      <Type>CIVIC_WAGE</Type>
+      <Description>Wage Labor</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
       <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,5,5</Button>
@@ -5275,8 +5226,8 @@
     </CivicInfo>
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
-      <Type>CIVIC_FREE_LABOR</Type>
-      <Description>Free Labor</Description>
+      <Type>CIVIC_BUREAUCRACY</Type>
+      <Description>Bureaucracy</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
       <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,5,5</Button>

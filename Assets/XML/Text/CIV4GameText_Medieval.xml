@@ -14,6 +14,14 @@
 		<Spanish></Spanish>
 	</TEXT>
   <TEXT>
+    <Tag>TXT_KEY_CIVIC_FATHER_BONUS</Tag>
+    <English>[ICON_BULLET]+%d1_points% [COLOR_HIGHLIGHT_TEXT]%s2_father[COLOR_REVERT]</English>
+    <French>[ICON_BULLET]+%d1_points% %s2_father</French>
+    <German>[ICON_BULLET]+%d1_points% %s2_father</German>
+    <Italian>[ICON_BULLET]+%d1_points% %s2_father</Italian>
+    <Spanish>[ICON_BULLET]+%d1_points% %s2_father</Spanish>
+  </TEXT>
+  <TEXT>
     <Tag>TXT_KEY_CIVIC_SCREEN_TITLE</Tag>
     <English>Decrees</English>
     <French>Decrees</French>

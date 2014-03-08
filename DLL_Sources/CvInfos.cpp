@@ -3854,6 +3854,7 @@ m_iIncreaseCityPopulation(0),
 m_iMissionariesNotCosumed(0),
 m_iTradingPostNotCosumed(0),
 m_iAnarchyLength(0),
+m_iHuntingYieldPercent(0),
 //TKe Civics
 
 m_aiConvertsUnitsFrom(NO_UNITCLASS),
@@ -4229,6 +4230,10 @@ int CvCivicInfo::getTradingPostNotCosumed() const
 int CvCivicInfo::getAnarchyLength() const
 {
 	return m_iAnarchyLength;
+}
+int CvCivicInfo::getHuntingYieldPercent() const
+{
+	return m_iHuntingYieldPercent;
 }
 int CvCivicInfo::getUpkeepYields(int i) const
 {
@@ -4755,6 +4760,7 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iMissionariesNotCosumed, "iMissionariesNotCosumed");
 	pXML->GetChildXmlValByName(&m_iTradingPostNotCosumed, "iTradingPostNotCosumed");
 	pXML->GetChildXmlValByName(&m_iAnarchyLength, "iAnarchyLength");
+	pXML->GetChildXmlValByName(&m_iHuntingYieldPercent, "iHuntingYieldPercent");
 	///Tke CivicsScreen
 	pXML->GetChildXmlValByName(&m_iKingTreasureTransportMod, "iKingTreasureTransportMod");
 	pXML->GetChildXmlValByName(&m_iIncreaseCityPopulation, "iIncreaseCityPopulation");

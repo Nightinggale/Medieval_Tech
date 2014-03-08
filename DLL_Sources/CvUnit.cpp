@@ -719,47 +719,52 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
                         }
                     }
 				}
-				///TKs Med
 				else if (pAttacker != NULL)
 				{
 
                     YieldTypes eCapturedYield = (YieldTypes)pkCapturedUnit->getYield();
+					bool bCaptured = false;
                     if (eCapturedYield != NO_YIELD)
                     {
                         int YieldStored = pkCapturedUnit->getYieldStored();
                         if (pAttacker->cargoSpace() > 0)
                         {
-                            if (YieldStored <= 0)
+                            if (YieldStored <= 0 && pAttacker->getProfession() != NO_PROFESSION)
                             {
-                                //UnitTypes eCaptureUnitType = getUnitType();
-                                if (pAttacker->getProfession() == (ProfessionTypes)GC.getXMLval(XML_DEFAULT_HUNTSMAN_PROFESSION))
-                                {
-                                   //YieldStored = GC.getUnitInfo(getUnitType()).getCombat() * GC.getDefineINT("CAPTURED_LUXURY_FOOD_RANDOM_AMOUNT");
-                                   YieldStored = GC.getXMLval(XML_CAPTURED_LUXURY_FOOD_RANDOM_AMOUNT);
-                                }
-                                else
-                                {
-                                   YieldStored = GC.getXMLval(XML_CAPTURED_CARGO_RANDOM_AMOUNT);
-                                }
+								for (int iI=0;iI < GC.getProfessionInfo(pAttacker->getProfession()).getNumCaptureCargoTypes(); iI++)
+								{
+									if ((UnitClassTypes)GC.getProfessionInfo(pAttacker->getProfession()).getCaptureCargoTypes(iI) == GC.getUnitInfo(eCaptureUnitType).getUnitCaptureClassType())
+									{
+									   YieldStored = GC.getProfessionInfo(pAttacker->getProfession()).getCaptureCargoTypeAmount(iI);
+									   bCaptured = true;
+									   break;
+									}
+								}
+                            }
+
+							if (bCaptured)
+							{
                                 YieldStored = (GC.getGameINLINE().getSorenRandNum(YieldStored, "Random Yield Stored") + 1);
+								YieldStored *= std::max(1, (GET_PLAYER(pAttacker->getOwnerINLINE()).getHuntingYieldPercent() + 100));
+								YieldStored /= 100;
                                 pkCapturedUnit->setYieldStored(YieldStored);
+								pkCapturedUnit->setXY(pAttacker->getX_INLINE(), pAttacker->getY_INLINE());
+								pkCapturedUnit->setTransportUnit(pAttacker);
+								if(pkCapturedUnit->getTransportUnit() != NULL || pkCapturedUnit->isDelayedDeath())
+								{
 
-                            }
-							pkCapturedUnit->setXY(pAttacker->getX_INLINE(), pAttacker->getY_INLINE());
-                            pkCapturedUnit->setTransportUnit(pAttacker);
-                            if(pkCapturedUnit->getTransportUnit() != NULL || pkCapturedUnit->isDelayedDeath())
-                            {
-
-                                szBuffer = gDLL->getText("TXT_KEY_MISC_YOU_CAPTURED_ANIMAL_CARGO", YieldStored, GC.getUnitInfo(eCaptureUnitType).getTextKeyWide(), GC.getUnitInfo(eCaptureUnitType).getTextKeyWide());
-                                gDLL->getInterfaceIFace()->addMessage(eCapturingPlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_UNITCAPTURE", MESSAGE_TYPE_INFO, pkCapturedUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), pPlot->getX_INLINE(), pPlot->getY_INLINE());
-                            }
+									szBuffer = gDLL->getText("TXT_KEY_MISC_YOU_CAPTURED_ANIMAL_CARGO", YieldStored, GC.getUnitInfo(eCaptureUnitType).getTextKeyWide(), GC.getUnitInfo(eCaptureUnitType).getTextKeyWide());
+									gDLL->getInterfaceIFace()->addMessage(eCapturingPlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_UNITCAPTURE", MESSAGE_TYPE_INFO, pkCapturedUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), pPlot->getX_INLINE(), pPlot->getY_INLINE());
+								}
+							}
 
                         }
+
                         if(pkCapturedUnit->getTransportUnit() == NULL) //failed to load
                         {
                             //if (pAttacker->getProfession() == (ProfessionTypes)GC.getXMLval(XML_DEFAULT_HUNTSMAN_PROFESSION))
                            // {
-                                if (pAttacker->getLoadYieldAmount(eCapturedYield) == 0)
+                                if (bCaptured && pAttacker->getLoadYieldAmount(eCapturedYield) == 0)
                                 {
                                     szBuffer = gDLL->getText("TXT_KEY_MISC_YOU_CAPTURED_CARGO_FULL", YieldStored, GC.getUnitInfo(eCaptureUnitType).getTextKeyWide(), GC.getUnitInfo(eCaptureUnitType).getTextKeyWide());
                                     gDLL->getInterfaceIFace()->addMessage(eCapturingPlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_UNITCAPTURE", MESSAGE_TYPE_INFO, pkCapturedUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), pPlot->getX_INLINE(), pPlot->getY_INLINE());

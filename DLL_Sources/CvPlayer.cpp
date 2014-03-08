@@ -11282,6 +11282,7 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
     changeGold(kCivicInfo.getGoldBonus());
 	changeMissionaryHide(kCivicInfo.getMissionariesNotCosumed() * iChange);
 	changeTradingPostHide(kCivicInfo.getTradingPostNotCosumed() * iChange);
+	changeHuntingYieldPercent(kCivicInfo.getHuntingYieldPercent() * iChange);
     ///TKe
 	changeGreatGeneralRateModifier(kCivicInfo.getGreatGeneralRateModifier() * iChange);
 	changeDomesticGreatGeneralRateModifier(kCivicInfo.getDomesticGreatGeneralRateModifier() * iChange);
@@ -11961,6 +11962,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	///Tks CivicsEnd
 	pStream->Read(&m_iMissionaryHide);
 	pStream->Read(&m_iTradingPostHide);
+	pStream->Read(&m_iHuntingYieldPercent);
 	pStream->Read(&m_iGoldPlundered);
 	pStream->Read(&m_iMissionsActive);
 	pStream->Read(&m_iVillages);
@@ -12375,6 +12377,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	///Tks CivicsEnd
 	pStream->Write(m_iMissionaryHide);
 	pStream->Write(m_iTradingPostHide);
+	pStream->Write(m_iHuntingYieldPercent);
 	pStream->Write(m_iGoldPlundered);
 	pStream->Write(m_iMissionsActive);
 	pStream->Write(m_iVillages);
@@ -18033,14 +18036,19 @@ int CvPlayer::getMissionaryHide() const
 
 void CvPlayer::changeTradingPostHide(int iChange)
 {
-
     m_iTradingPostHide += iChange;
-
 }
-
 int CvPlayer::getTradingPostHide() const
 {
 	return m_iTradingPostHide;
+}
+void CvPlayer::changeHuntingYieldPercent(int iChange)
+{
+    m_iHuntingYieldPercent += iChange;
+}
+int CvPlayer::getHuntingYieldPercent() const
+{
+	return m_iHuntingYieldPercent;
 }
 void CvPlayer::changeMissionsActive(int iChange)
 {

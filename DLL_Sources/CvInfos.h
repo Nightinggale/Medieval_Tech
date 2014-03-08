@@ -1002,6 +1002,7 @@ public:
 	int getAnarchyLength() const;
 	int getMissionariesNotCosumed() const;
 	int getTradingPostNotCosumed() const;
+	int getHuntingYieldPercent() const;
 	//TKe Civics
     DllExport int getIncreaseCityPopulation() const;
     DllExport int getAllowsProfession() const;
@@ -1141,6 +1142,7 @@ protected:
 	int m_iMissionariesNotCosumed;
 	int m_iTradingPostNotCosumed;
 	int m_iAnarchyLength;
+	int m_iHuntingYieldPercent;
 	//TKe CivicsScreen
     int m_iIncreasedImmigrants;
 	bool m_bisTradeable;

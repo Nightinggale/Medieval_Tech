@@ -1172,8 +1172,15 @@ void CvGameTextMgr::setProfessionHelp(CvWStringBuffer &szBuffer, ProfessionTypes
             }
         }
     }
-    ///TKs Med Update 1.1c
-
+    ///TKs Civic Screen
+	for (int i = 0; i < kProfession.getNumCaptureCargoTypes(); i++)
+        {
+			if (kProfession.getCaptureCargoTypes(i) >= 0)
+			{
+				szBuffer.append(NEWLINE);
+				szBuffer.append(gDLL->getText("TXT_KEY_PROFESSION_CAPTURE_CARGO", GC.getUnitClassInfo((UnitClassTypes)kProfession.getCaptureCargoTypes(i)).getDescription()));
+			}
+		}
     ///TKe
 
     ///Tks Med
@@ -4656,6 +4663,11 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
     {
         szHelpText.append(NEWLINE);
         szHelpText.append(gDLL->getText("TXT_KEY_TRADERS_NOTCONSUMED", kCivicInfo.getTradingPostNotCosumed()));
+    }
+	if (kCivicInfo.getHuntingYieldPercent() > 0)
+    {
+        szHelpText.append(NEWLINE);
+        szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_BONUS_HUNTING", kCivicInfo.getHuntingYieldPercent()));
     }
    /* ModCodeTypes iModdersCode = (ModCodeTypes)kCivicInfo.getModdersCode1();
 	if (iModdersCode != NO_MOD_CODE)

@@ -819,6 +819,10 @@
 		<element type="YieldType"/>
 		<element type="iYieldAmount"/>
 	</ElementType>
+  <ElementType name="YieldTypes" content="eltOnly">
+    <element type="YieldType"/>
+    <element type="iYieldAmount"/>
+  </ElementType>
 	<ElementType name="YieldEquipedNums" content="eltOnly">
 		<element type="YieldEquipedNum" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
@@ -841,6 +845,13 @@
 	<ElementType name="YieldsConsumed" content="eltOnly">
 		<element type="YieldType" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
+  <ElementType name="CaptureCargoType" content="eltOnly">
+    <element type="UnitClassType"/>
+    <element type="iChange"/>
+  </ElementType>
+  <ElementType name="CaptureCargoTypes" content="eltOnly">
+    <element type="CaptureCargoType" minOccurs="0" maxOccurs="*"/>
+  </ElementType>
 <!-- MultipleYieldsConsumed End -->
 	<ElementType name="RequiredBuilding" content="textOnly"/>
 	<ElementType name="RequiredPromotion" content="textOnly"/>
@@ -902,8 +913,9 @@
 <!-- MultipleYieldsProduced End -->
 <!-- MultipleYieldsConsumed Start -->
 		<element type="YieldsConsumed"/>
-<!-- MultipleYieldsConsumed End -->
-		<element type="RequiredBuilding" minOccurs="0"/>
+    <!-- MultipleYieldsConsumed End -->
+    <element type="CaptureCargoTypes" minOccurs="0"/>
+    <element type="RequiredBuilding" minOccurs="0"/>
 		<element type="RequiredPromotion" minOccurs="0"/>
 		<element type="iFoundCityType" minOccurs="0"/>
 		<element type="CivType" minOccurs="0"/>

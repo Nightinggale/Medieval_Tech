@@ -159,6 +159,12 @@
 			<YieldsConsumed>
 				<YieldType>NONE</YieldType>
 			</YieldsConsumed>
+      <CaptureCargoTypes>
+        <CaptureCargoType>
+          <UnitClassType>UNITCLASS_GRAIN</UnitClassType>
+          <iChange>20</iChange>
+        </CaptureCargoType>
+      </CaptureCargoTypes>
 			<CivType>1</CivType>
 			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,7,5</Button>
 			<ProfessionSubTypes/>

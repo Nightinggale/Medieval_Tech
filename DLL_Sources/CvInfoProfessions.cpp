@@ -156,7 +156,22 @@ bool CvProfessionInfo::isFreePromotion(int i) const
 	return m_abFreePromotions ? m_abFreePromotions[i] : false;
 }
 */
-
+int CvProfessionInfo::getNumCaptureCargoTypes() const
+{
+	return m_aiCaptureCargoTypes.size();
+}
+int CvProfessionInfo::getCaptureCargoTypes(int index) const
+{
+	FAssert(index < (int) m_aiCaptureCargoTypes.size());
+	FAssert(index > -1);
+	return m_aiCaptureCargoTypes[index].first;
+}
+int CvProfessionInfo::getCaptureCargoTypeAmount(int index) const
+{
+	FAssert(index < (int) m_aiCaptureCargoTypes.size());
+	FAssert(index > -1);
+	return m_aiCaptureCargoTypes[index].second;
+}
 // MultipleYieldsProduced Start by Aymerick 22/01/2010
 int CvProfessionInfo::getYieldsProduced(int i) const
 {
@@ -612,6 +627,25 @@ bool CvProfessionInfo::read(CvXMLLoadUtility* pXML)
 		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 	}
 	// MultipleYieldsConsumed End
+
+	m_aiCaptureCargoTypes.clear();
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"CaptureCargoTypes"))
+	{
+		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"CaptureCargoType"))
+		{
+			do
+			{
+				pXML->GetChildXmlValByName(szTextVal, "UnitClassType");
+				int iUnitClassType = pXML->FindInInfoClass(szTextVal);
+				int iChange = 0;
+				pXML->GetChildXmlValByName(&iChange, "iChange");
+				m_aiCaptureCargoTypes.push_back(std::make_pair((UnitClassTypes)iUnitClassType, iChange));
+			} while(gDLL->getXMLIFace()->NextSibling(pXML->GetXML()));
+			gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+		}
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+
 
 	/// info subclass - start - Nightinggale
 	if (getSub(pXML))

@@ -4887,6 +4887,7 @@
 			<FreeUnitClasses/>
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
+      <iHuntingYieldPercent>100</iHuntingYieldPercent>
 		</CivicInfo>
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_COMMERCE</CivicOptionType>

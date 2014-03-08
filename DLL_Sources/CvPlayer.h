@@ -603,6 +603,8 @@ public:
 	void changeMissionaryHide(int iChange);
 	int getTradingPostHide() const;
 	void changeTradingPostHide(int iChange);
+	int getHuntingYieldPercent() const;
+	void changeHuntingYieldPercent(int iChange);
 	void changeGoldPlundered(int iChange);
 	void changeMissionsActive(int iChange);
 	void changeVillages(int iChange);
@@ -849,6 +851,7 @@ protected:
 	int m_iGoldPlundered;
 	int m_iMissionaryHide;
 	int m_iTradingPostHide;
+	int m_iHuntingYieldPercent;
 	int m_iMissionsActive;
 	int m_iVillages;
 	int m_iMonasterys;

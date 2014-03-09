@@ -859,11 +859,12 @@ $landorder++;
 }
 
 # make terrains
-&makeland('TUNDRA','Tundra',{'NUTRIENTS'=>2,'DATACORES'=>1,'PROGENITOR_ARTIFACTS'=>3,'TISSUE_SAMPLES'=>2,'POLLUTANTS'>=2});
+&makelandvanilla('TUNDRA','Tundra',{'NUTRIENTS'=>2,'DATACORES'=>1,'PROGENITOR_ARTIFACTS'=>3,'TISSUE_SAMPLES'=>2,'POLLUTANTS'>=2});
 &makelandvanilla('GRASS','Grassland',{'NUTRIENTS'=>2,'NUCLEIC_ACIDS'=>2,'AMINO_ACIDS'=>1,'ALIEN_SPECIMENS'=>3,'POLLUTANTS'>=2});
-&makeland('MARSH','Marsh',{'NUTRIENTS'=>2,'OPIATES'=>2,'XENOTOXINS'=>3,'BOTANICALS'=>1,'POLLUTANTS'>=2});
-&makeland('PLAINS','Plains',{'NUTRIENTS'=>2,'HYDROCARBONS'=>3,'CLATHRATES'=>2,'RARE_EARTHS'=>1,'POLLUTANTS'>=2});
-&makeland('DESERT','Desert',{'NUTRIENTS'=>2,'ACTINIDES'=>3,'ISOTOPES'=>1,'CORE_SAMPLES'=>2,'POLLUTANTS'>=2});
+&makelandvanilla('MARSH','Marsh',{'NUTRIENTS'=>2,'OPIATES'=>2,'XENOTOXINS'=>3,'BOTANICALS'=>1,'POLLUTANTS'>=2});
+&makelandvanilla('PLAINS','Plains',{'NUTRIENTS'=>2,'HYDROCARBONS'=>3,'CLATHRATES'=>2,'RARE_EARTHS'=>1,'POLLUTANTS'>=2});
+&makelandvanilla('DESERT','Desert',{'NUTRIENTS'=>2,'ACTINIDES'=>3,'ISOTOPES'=>1,'CORE_SAMPLES'=>2,'POLLUTANTS'>=2});
+
 &makewater('COAST','Low Orbit',{'NUTRIENTS'=>2,'POLLUTANTS'>=2});
 &makewater('OCEAN','Deep Space',{'NUTRIENTS'=>1,'POLLUTANTS'>=2});
 

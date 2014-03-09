@@ -1970,11 +1970,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_TUNDRA_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Tundra[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Tundra[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Tundra[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Tundra[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Tundra[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_TISSUE_SAMPLES]Tissue Samples[\LINK], [LINK=YIELD_DATACORES]Datacores[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_PROGENITOR_ARTIFACTS]Progenitor Artifacts[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Tundra[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Tundra[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Tundra[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Tundra[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Tundra[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_GRASS</Tag>
@@ -2002,11 +2002,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_MARSH_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_OPIATES]Opiates[\LINK], [LINK=YIELD_BOTANICALS]Botanicals[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_XENOTOXINS]Xenotoxins[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_PLAINS</Tag>
@@ -2018,11 +2018,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_PLAINS_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Plains[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Plains[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Plains[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Plains[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Plains[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_RARE_EARTHS]Rare Earths[\LINK], [LINK=YIELD_CLATHRATES]Clathrates[\LINK], [LINK=YIELD_HYDROCARBONS]Hydrocarbons[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Plains[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Plains[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Plains[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Plains[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Plains[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_DESERT</Tag>
@@ -2034,11 +2034,11 @@
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_DESERT_PEDIA</Tag>
-	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Desert[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </English>
-	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Desert[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </French>
-	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Desert[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </German>
-	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Desert[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Italian>
-	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Desert[COLOR_REVERT] found across certain planets of the New Worlds are often rich in [LINK=YIELD_][\LINK], [LINK=YIELD_ISOTOPES]Isotopes[\LINK], [LINK=YIELD_NUTRIENTS]Nutrients[\LINK], [LINK=YIELD_CORE_SAMPLES]Core Samples[\LINK], [LINK=YIELD_ACTINIDES]Actinides[\LINK], </Spanish>
+	<English>The expanses of [COLOR_HIGHLIGHT_TEXT]Desert[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </English>
+	<French>The expanses of [COLOR_HIGHLIGHT_TEXT]Desert[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </French>
+	<German>The expanses of [COLOR_HIGHLIGHT_TEXT]Desert[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </German>
+	<Italian>The expanses of [COLOR_HIGHLIGHT_TEXT]Desert[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </Italian>
+	<Spanish>The expanses of [COLOR_HIGHLIGHT_TEXT]Desert[COLOR_REVERT] found across certain planets of the New Worlds are often rich in </Spanish>
 </TEXT>
 <TEXT>
 	<Tag>TXT_KEY_TERRAIN_COAST</Tag>

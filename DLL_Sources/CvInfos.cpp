@@ -3868,6 +3868,7 @@ m_bAllowsMapTrade(false),
 m_bGoodyTech(false),
 m_bNoArrowinTechScreen(false),
 m_bisTradeable(false),
+m_bWorkersBuildAfterMove(false),
 m_iRouteMovementMod(NULL),
 m_aiAllowsRoute(NULL),
 m_aiAllowsBuildingTypes(NULL),
@@ -4364,6 +4365,10 @@ int CvCivicInfo::getFatherPointModifier() const
 {
 	return m_iFatherPointModifier;
 }
+bool CvCivicInfo::isWorkersBuildAfterMove() const
+{
+	return m_bWorkersBuildAfterMove;
+}
 bool CvCivicInfo::isDominateNativeBorders() const
 {
 	return m_bDominateNativeBorders;
@@ -4778,6 +4783,7 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bGoodyTech, "bNoGoodyTech");
 	pXML->GetChildXmlValByName(&m_bNoArrowinTechScreen, "bNoArrowinTechScreen");
 	pXML->GetChildXmlValByName(&m_bisTradeable, "bisNoneTradeable");
+	pXML->GetChildXmlValByName(&m_bWorkersBuildAfterMove, "bWorkersBuildAfterMove");
 	//Tks Civics
 	pXML->SetVariableListTagPair(&m_aiUpkeepYields, "UpkeepYields", NUM_YIELD_TYPES, 0);
 	//tke

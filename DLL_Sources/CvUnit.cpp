@@ -6959,7 +6959,14 @@ bool CvUnit::build(BuildTypes eBuild)
 	GET_PLAYER(getOwnerINLINE()).changeGold(-(GET_PLAYER(getOwnerINLINE()).getBuildCost(plot(), eBuild)));
 
     bool bFound = false;
-    int iWorkRate = workRate(false);
+	///Tk Testing
+	
+	bool bCivic = false;
+	if (isHuman())
+	{
+		//bCivic = true;
+	}
+    int iWorkRate = workRate(bCivic);
     if (GC.getBuildInfo(eBuild).getImprovement() != NO_IMPROVEMENT)
     {
         if (GC.getBuildInfo(eBuild).getCityType() > -1)

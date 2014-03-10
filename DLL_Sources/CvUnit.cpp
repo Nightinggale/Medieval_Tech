@@ -4238,6 +4238,10 @@ int CvUnit::getMaxLoadYieldAmount(YieldTypes eYield) const
 			// transport feeder - start - Nightinggale
 			//iMaxAvailable -= pCity->getMaintainLevel(eYield);
 			iMaxAvailable -= pCity->getAutoMaintainThreshold(eYield);
+			if (iMaxAvailable < 0)
+			{
+				iMaxAvailable = pCity->getYieldStored(eYield);
+			}
 			// transport feeder - end - Nightinggale
 		}
 		iMaxAmount = std::min(iMaxAmount, iMaxAvailable);

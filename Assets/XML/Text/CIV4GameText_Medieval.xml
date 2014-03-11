@@ -8,11 +8,19 @@
 	<TEXT>
 		<Tag>TXT_KEY</Tag>
 		<English>[ICON_BULLET]</English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<French>[ICON_BULLET]</French>
+		<German>[ICON_BULLET]</German>
+		<Italian>[ICON_BULLET]</Italian>
+		<Spanish>[ICON_BULLET]</Spanish>
 	</TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_WORKERS_BUILD</Tag>
+    <English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Workers[COLOR_REVERT] can Build after move</English>
+    <French>[ICON_BULLET]</French>
+    <German>[ICON_BULLET]</German>
+    <Italian>[ICON_BULLET]</Italian>
+    <Spanish>[ICON_BULLET]</Spanish>
+  </TEXT>
   <TEXT>
     <Tag>TXT_KEY_CIVIC_FATHER_BONUS</Tag>
     <English>[ICON_BULLET]+%d1_points% [COLOR_HIGHLIGHT_TEXT]%s2_father[COLOR_REVERT]</English>

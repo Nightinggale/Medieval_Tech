@@ -5017,7 +5017,13 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
     }
 
 
-    if (kCivicInfo.isAllowsMapTrade())
+    if (kCivicInfo.isWorkersBuildAfterMove())
+	{
+	   szHelpText.append(NEWLINE);
+	   szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_WORKERS_BUILD"));
+	}
+
+	if (kCivicInfo.isAllowsMapTrade())
 	{
 	   szHelpText.append(NEWLINE);
 	   szHelpText.append(gDLL->getText("TXT_KEY_ALLOWS_TRADE_MAPS"));

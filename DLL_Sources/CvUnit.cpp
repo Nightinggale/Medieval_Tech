@@ -6963,7 +6963,13 @@ bool CvUnit::build(BuildTypes eBuild)
 	GET_PLAYER(getOwnerINLINE()).changeGold(-(GET_PLAYER(getOwnerINLINE()).getBuildCost(plot(), eBuild)));
 
     bool bFound = false;
-    int iWorkRate = workRate(false);
+	///Tk Civics 
+	bool bCivic = false;
+	if (isHuman() && GET_PLAYER(getOwnerINLINE()).getWorkersBuildAfterMove() > 0)
+	{
+		bCivic = true;
+	}
+    int iWorkRate = workRate(bCivic);
     if (GC.getBuildInfo(eBuild).getImprovement() != NO_IMPROVEMENT)
     {
         if (GC.getBuildInfo(eBuild).getCityType() > -1)
@@ -8055,6 +8061,7 @@ BuildTypes CvUnit::getBuildType() const
 
 int CvUnit::workRate(bool bMax) const
 {
+	///Tks Civics
 	if (!bMax)
 	{
 		if (!canMove())

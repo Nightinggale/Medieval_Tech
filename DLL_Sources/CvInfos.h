@@ -1033,6 +1033,7 @@ public:
 	DllExport bool isGoodyTech() const;
 	DllExport bool isNoArrowinTechScreen() const;
 	DllExport bool isNoneTradeable() const;
+	DllExport bool isWorkersBuildAfterMove() const;
 
     DllExport int getRouteMovementMod(int i) const;
     DllExport int getAllowsRoute(int i) const;
@@ -1147,6 +1148,7 @@ protected:
 	//TKe CivicsScreen
     int m_iIncreasedImmigrants;
 	bool m_bisTradeable;
+	bool m_bWorkersBuildAfterMove;
 	bool m_bFreeUnitsAreNonePopulation;
     bool m_bFreeUnitsNotAllCities;
     bool m_bAllowsMapTrade;

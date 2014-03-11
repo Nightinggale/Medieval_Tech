@@ -2254,7 +2254,7 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 				{
 					pSelectedUnit = ::getUnit(pSelectedUnitNode->m_data);
 
-					iNowWorkRate += pSelectedUnit->workRate(false);
+					iNowWorkRate += pSelectedUnit->workRate(GET_PLAYER(pSelectedUnit->getOwnerINLINE()).getWorkersBuildAfterMove() > 0);//Tks Civics
 					iThenWorkRate += pSelectedUnit->workRate(true);
 
 					pSelectedUnitNode = gDLL->getInterfaceIFace()->nextSelectionListNode(pSelectedUnitNode);

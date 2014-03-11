@@ -621,6 +621,7 @@
   <ElementType name="bRevolutionEuropeTrade" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bAllowsMapTrade" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bNoGoodyTech" content="textOnly" dt:type="boolean"/>
+  <ElementType name="bWorkersBuildAfterMove" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bNoArrowinTechScreen" content="textOnly" dt:type="boolean"/>
 	<ElementType name="iNativeAttitudeChange" content="textOnly" dt:type="int"/>
 	<ElementType name="CivicInfo" content="eltOnly">
@@ -696,6 +697,7 @@
 		<element type="bNoArrowinTechScreen" minOccurs="0"/>
 		<element type="bisNoneTradeable" minOccurs="0"/>
 		<element type="bNoGoodyTech" minOccurs="0"/>
+    <element type="bWorkersBuildAfterMove" minOccurs="0"/>
 		<element type="iAnarchyLength" minOccurs="0"/>
     <element type="iIncreasedEnemyHealRate" minOccurs="0"/>
 		<element type="iFreeHurriedImmigrants" minOccurs="0"/>

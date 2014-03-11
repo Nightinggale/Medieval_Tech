@@ -5252,6 +5252,7 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <bWorkersBuildAfterMove>1</bWorkersBuildAfterMove>
     </CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>

@@ -433,10 +433,6 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 
 	m_iStartingX = INVALID_PLOT_COORD;
 	m_iStartingY = INVALID_PLOT_COORD;
-	///TKs ME
-	//m_iStartingX = INVALID_PLOT_COORD;
-	// m_iStartingY = INVALID_PLOT_COORD;
-	///TKe
 	m_iTotalPopulation = 0;
 	m_iTotalLand = 0;
 	m_iTotalLandScored = 0;
@@ -504,6 +500,7 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	///Tks Med
 	m_iMissionaryHide = 0;
 	m_iTradingPostHide = 0;
+	m_iWorkersBuildAfterMove = 0;
 	m_iGoldPlundered = 0;
 	m_iMissionsActive = 0;
 	m_iVillages = 0;
@@ -11290,6 +11287,10 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
     {
         GET_TEAM(getTeam()).changeMapTradingCount(1);
     }
+	if (kCivicInfo.isWorkersBuildAfterMove())
+    {
+        changeWorkersBuildAfterMove(iChange);
+    }
 
     changeFreeTechs(kCivicInfo.getFreeTechs());
 //    changeProlificInventorModifier(kCivicInfo.getProlificInventorRateChange());
@@ -11980,6 +11981,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	///Tks CivicsEnd
 	pStream->Read(&m_iMissionaryHide);
 	pStream->Read(&m_iTradingPostHide);
+	pStream->Read(&m_iWorkersBuildAfterMove);
 	pStream->Read(&m_iHuntingYieldPercent);
 	pStream->Read(&m_iGoldPlundered);
 	pStream->Read(&m_iMissionsActive);
@@ -12396,6 +12398,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	///Tks CivicsEnd
 	pStream->Write(m_iMissionaryHide);
 	pStream->Write(m_iTradingPostHide);
+	pStream->Write(m_iWorkersBuildAfterMove);
 	pStream->Write(m_iHuntingYieldPercent);
 	pStream->Write(m_iGoldPlundered);
 	pStream->Write(m_iMissionsActive);
@@ -18068,6 +18071,14 @@ void CvPlayer::changeHuntingYieldPercent(int iChange)
 int CvPlayer::getHuntingYieldPercent() const
 {
 	return m_iHuntingYieldPercent;
+}
+int CvPlayer::getWorkersBuildAfterMove() const
+{
+	return m_iWorkersBuildAfterMove;
+}
+void CvPlayer::changeWorkersBuildAfterMove(int iChange)
+{
+    m_iWorkersBuildAfterMove += iChange;
 }
 void CvPlayer::changeMissionsActive(int iChange)
 {

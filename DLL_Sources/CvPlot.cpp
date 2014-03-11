@@ -1922,12 +1922,11 @@ int CvPlot::getBuildTurnsLeft(BuildTypes eBuild, int iNowExtra, int iThenExtra) 
 	iThenBuildRate = iThenExtra;
 
 	pUnitNode = headUnitNode();
-
+	///Tks Civics
 	while (pUnitNode != NULL)
 	{
 		pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = nextUnitNode(pUnitNode);
-
 		if (pLoopUnit->getBuildType() == eBuild)
 		{
 			if (pLoopUnit->canMove())
@@ -1937,7 +1936,7 @@ int CvPlot::getBuildTurnsLeft(BuildTypes eBuild, int iNowExtra, int iThenExtra) 
 			iThenBuildRate += pLoopUnit->workRate(true);
 		}
 	}
-
+	///Tke
 	if (iThenBuildRate == 0)
 	{
 		//this means it will take forever under current circumstances

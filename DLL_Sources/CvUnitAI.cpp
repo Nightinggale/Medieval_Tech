@@ -5408,7 +5408,10 @@ bool CvUnitAI::AI_collectGoods()
 			{
 				if (kOwner.AI_isYieldForSale(eYield))
 				{
-					int iStored = pCity->getYieldStored(eYield) - pCity->getMaintainLevel(eYield);
+					// transport feeder - start - Nightinggale
+					// int iStored = pCity->getYieldStored(eYield) - pCity->getMaintainLevel(eYield);
+					int iStored = pCity->getYieldStored(eYield) - pCity->getAutoMaintainThreshold(eYield);
+					// transport feeder - end - Nightinggale
 					if (iStored > (GC.getGameINLINE().getCargoYieldCapacity() / 10))
 					{
 						int iYieldValue = iStored * kEuropePlayer.getYieldBuyPrice(eYield);
@@ -5416,10 +5419,10 @@ bool CvUnitAI::AI_collectGoods()
 						{
 							iBestYieldValue =iYieldValue;
 						eBestYield = eYield;
+						}
 					}
 				}
 			}
-		}
 		}
 
 		if (eBestYield == NO_YIELD)

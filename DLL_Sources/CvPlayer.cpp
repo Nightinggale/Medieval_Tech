@@ -11981,7 +11981,10 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	///Tks CivicsEnd
 	pStream->Read(&m_iMissionaryHide);
 	pStream->Read(&m_iTradingPostHide);
-	pStream->Read(&m_iWorkersBuildAfterMove);
+	if (uiFlag >= 5)
+	{
+		pStream->Read(&m_iWorkersBuildAfterMove);
+	}
 	pStream->Read(&m_iHuntingYieldPercent);
 	pStream->Read(&m_iGoldPlundered);
 	pStream->Read(&m_iMissionsActive);
@@ -12009,7 +12012,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 {
 	int iI;
 
-	uint uiFlag = 4;
+	uint uiFlag = 5;
 	pStream->Write(uiFlag);		// flag for expansion
 
 	pStream->Write(m_iStartingX);

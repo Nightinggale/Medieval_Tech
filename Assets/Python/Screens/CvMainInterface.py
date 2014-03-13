@@ -179,7 +179,7 @@ BUILDING_GRID = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
 # TK INVENTOR MOD end
 
 # COLONIZATION 2071
-BUILDING_DATA_2071 = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+BUILDING_DATA_2071 = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
 
 BUILDING_DATA_2071[0] = [40, 40, BuildingDistance, BuildingIconSize] #Bells
 BUILDING_DATA_2071[1] = [60, 40, BuildingDistance, BuildingIconSize] #Hammers
@@ -214,6 +214,9 @@ BUILDING_DATA_2071[29] = [20, 0, BuildingDistance, BuildingIconSize] #Siege
 BUILDING_DATA_2071[30] = [59, 22, BuildingDistance, BuildingIconSize] #Bank
 BUILDING_DATA_2071[31] = [59, 22, BuildingDistance, BuildingIconSize] #Bank
 BUILDING_DATA_2071[32] = [59, 22, BuildingDistance, BuildingIconSize] #Bank
+BUILDING_DATA_2071[33] = [59, 22, BuildingDistance, BuildingIconSize] #Bank
+BUILDING_DATA_2071[34] = [59, 22, BuildingDistance, BuildingIconSize] #Bank
+BUILDING_DATA_2071[35] = [59, 22, BuildingDistance, BuildingIconSize] #Bank
 
 # COLONIZATION 2071
 

@@ -496,6 +496,8 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	m_iRevolutionTimer = 0;
 	m_iConversionTimer = 0;
 	m_iUpkeepModifier = 0;
+	m_iGoldIncome = 0;
+	m_iExpences = 0;
 	///Tks CivicsEnd
 	///Tks Med
 	m_iMissionaryHide = 0;
@@ -2502,7 +2504,12 @@ void CvPlayer::doTurn()
 
 	///TKs Invention Core Mod v 1.0
 	doIdeas();
-	//TkCivics
+	//Tk Civics
+	if (getGoldIncome() > 0)
+	{
+		int iTreasuryPercent = getGold() * getGoldIncome() / 100;
+		changeGold(iTreasuryPercent);
+	}
 	if (getRevolutionTimer() > 0)
 	{
 		changeRevolutionTimer(-1);
@@ -11381,6 +11388,22 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
           //  pLoopCity->setMaxCityPop(kCivicInfo.getIncreaseCityPopulation());
        // }
     //}
+
+	//TKs Civics
+	if (kCivicInfo.getNumCivicTreasuryBonus() > 0)
+	{
+		int iGoldIncome = 0;
+		for (int iI = 0; iI < kCivicInfo.getNumCivicTreasuryBonus(); iI++)
+		{
+			iGoldIncome += kCivicInfo.getCivicTreasuryBonus(iI) * getBuildingClassCount((BuildingClassTypes)kCivicInfo.getCivicTreasury(iI));
+		}
+
+		if (iGoldIncome != 0)
+		{
+			setGoldIncome(iGoldIncome * iChange);
+		}
+	}
+
     if (iRecieveFreeUnit == 2 || iRecieveFreeUnit == 0)
     {
         for (int i = 0; i < kCivicInfo.getNumFreeUnitClasses(); ++i)
@@ -11978,6 +12001,8 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iRevolutionTimer);
 	pStream->Read(&m_iConversionTimer);
 	pStream->Read(&m_iUpkeepModifier);
+	pStream->Read(&m_iGoldIncome);
+	pStream->Read(&m_iExpences);
 	///Tks CivicsEnd
 	pStream->Read(&m_iMissionaryHide);
 	pStream->Read(&m_iTradingPostHide);
@@ -12398,6 +12423,8 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(m_iRevolutionTimer);
 	pStream->Write(m_iConversionTimer);
 	pStream->Write(m_iUpkeepModifier);
+	pStream->Write(m_iGoldIncome);
+	pStream->Write(m_iExpences);
 	///Tks CivicsEnd
 	pStream->Write(m_iMissionaryHide);
 	pStream->Write(m_iTradingPostHide);
@@ -14861,11 +14888,6 @@ void CvPlayer::changeAnarchyModifier(int iChange)
 	}
 }
 
-int CvPlayer::getUpkeepModifier() const
-{
-	return m_iUpkeepModifier;
-}
-
 void CvPlayer::changeTradingPostCount(PlayerTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
@@ -14881,7 +14903,6 @@ void CvPlayer::changeTradingPostCount(PlayerTypes eIndex, int iChange)
 		//}
 	}
 }
-
 int CvPlayer::getTradingPostCount(PlayerTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
@@ -14890,10 +14911,38 @@ int CvPlayer::getTradingPostCount(PlayerTypes eIndex) const
 	return m_aiTradingPostCount[eIndex];
 }
 
+int CvPlayer::getUpkeepModifier() const
+{
+	return m_iUpkeepModifier;
+}
 
 void CvPlayer::changeUpkeepModifier(int iChange)
 {
 	m_iUpkeepModifier = (m_iUpkeepModifier + iChange);
+}
+
+int CvPlayer::getGoldIncome() const
+{
+	return m_iGoldIncome;
+}
+
+void CvPlayer::changeGoldIncome(int iChange)
+{
+	m_iGoldIncome = (m_iGoldIncome + iChange);
+}
+void CvPlayer::setGoldIncome(int iChange)
+{
+	//m_iGoldIncome = (m_iGoldIncome + iChange);
+	m_iGoldIncome = iChange;
+}
+int CvPlayer::getExpences() const
+{
+	return m_iExpences;
+}
+
+void CvPlayer::changeExpences(int iChange)
+{
+	m_iExpences = (m_iExpences + iChange);
 }
 
 void CvPlayer::changeUpkeepCount(YieldTypes eIndex, int iChange)

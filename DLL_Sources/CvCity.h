@@ -566,6 +566,7 @@ public:
 	MedCityTypes getCityType() const;
 	bool isCityType(MedCityTypes eCheckCityType) const;
 	int getMaxCityPop() const;
+	int getCivicTreasuryBonus() const;
 	int getMaxYieldCapacityPer(YieldTypes eYield) const;
 	void changeMarauderDetection(int iChange);
 	int getMarauderDetection() const;
@@ -634,6 +635,7 @@ protected:
 	int m_iTeachUnitMultiplier;
 	///TKs Med
 	int m_iCenterPlotBonus;
+	int m_iCivicTreasuryBonus;
 	MedCityTypes m_iCityType;
 	int m_iMaxCityPop;
 	int m_iDetectMaraudersRange;

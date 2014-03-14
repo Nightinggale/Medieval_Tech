@@ -98,6 +98,8 @@ public:
 	int getIdeasResearched(int /*CivicTypes*/ eCivic);
 	int getVictoryYieldCount(int /*YieldTypes*/ eYield);
 	int getNumDocksNextUnits() const;
+	int getExpences() const;
+	int getGoldIncome() const;
 	int getCurrentResearch() const;
 	int getCurrentTradeResearch() const;
 	int getCurrentResearchProgress(bool bGetTurns, int /*CivicTypes*/ eCivic);

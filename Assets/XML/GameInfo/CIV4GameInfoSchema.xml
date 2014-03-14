@@ -599,6 +599,13 @@
 	<ElementType name="AllowsRoutes" content="eltOnly">
 		<element type="RouteTypes" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
+  <ElementType name="CivicTreasuryBonus" content="eltOnly">
+    <element type="BuildingClassType"/>
+    <element type="iValue"/>
+  </ElementType>
+  <ElementType name="CivicTreasuryBonuses" content="eltOnly">
+    <element type="CivicTreasuryBonus" minOccurs="0" maxOccurs="*"/>
+  </ElementType>
 	<ElementType name="bStartConstitution" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bisNoneTradeable" content="textOnly" dt:type="boolean"/>
 	<ElementType name="iCheaperPopulationGrowth" content="textOnly" dt:type="int"/>
@@ -622,6 +629,7 @@
 	<ElementType name="bAllowsMapTrade" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bNoGoodyTech" content="textOnly" dt:type="boolean"/>
   <ElementType name="bWorkersBuildAfterMove" content="textOnly" dt:type="boolean"/>
+  <ElementType name="bBuildingTreasuryBonus" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bNoArrowinTechScreen" content="textOnly" dt:type="boolean"/>
 	<ElementType name="iNativeAttitudeChange" content="textOnly" dt:type="int"/>
 	<ElementType name="CivicInfo" content="eltOnly">
@@ -692,12 +700,14 @@
 		<element type="RouteMovementMod" minOccurs="0"/>
 		<element type="AllowsRoutes" minOccurs="0"/>
 		<element type="FreeUnitFirstToResearch" minOccurs="0"/>
+    <element type="CivicTreasuryBonuses" minOccurs="0"/>
 		<element type="bStartConstitution" minOccurs="0"/>
 		<element type="bAllowsMapTrade" minOccurs="0"/>
 		<element type="bNoArrowinTechScreen" minOccurs="0"/>
 		<element type="bisNoneTradeable" minOccurs="0"/>
 		<element type="bNoGoodyTech" minOccurs="0"/>
     <element type="bWorkersBuildAfterMove" minOccurs="0"/>
+    <element type="bBuildingTreasuryBonus" minOccurs="0"/>
 		<element type="iAnarchyLength" minOccurs="0"/>
     <element type="iIncreasedEnemyHealRate" minOccurs="0"/>
 		<element type="iFreeHurriedImmigrants" minOccurs="0"/>

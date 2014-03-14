@@ -1123,6 +1123,12 @@
 					<iValue>100</iValue>
 				</AutoSellsYield>
 			</AutoSellsYields>
+      <CivicTreasuryBonuses>
+        <CivicTreasuryBonus>
+          <CivicType>CIVIC_STATE_CONTROL</CivicType>
+          <iValue>1</iValue>
+        </CivicTreasuryBonus>
+      </CivicTreasuryBonuses>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
@@ -1293,6 +1299,12 @@
 					<iValue>100</iValue>
 				</AutoSellsYield>
 			</AutoSellsYields>
+      <CivicTreasuryBonuses>
+        <CivicTreasuryBonus>
+          <CivicType>CIVIC_STATE_CONTROL</CivicType>
+          <iValue>2</iValue>
+        </CivicTreasuryBonus>
+      </CivicTreasuryBonuses>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>

@@ -156,6 +156,9 @@ void CvDLLWidgetData::parseHelp(CvWStringBuffer &szBuffer, CvWidgetDataStruct &w
     case WIDGET_MARKET:
 		parseSpecialBuildingHelp(widgetDataStruct, szBuffer);
 		break;
+	case WIDGET_GOLD_INCOME:
+		parseGoldIncomeHelp(widgetDataStruct, szBuffer);
+		break;
     ///TKe
      //TK Tax
 	case WIDGET_TAX_ADVISOR:
@@ -652,6 +655,8 @@ bool CvDLLWidgetData::executeAction( CvWidgetDataStruct &widgetDataStruct )
 	case WIDGET_CLOSE_SCREEN:
 	case WIDGET_SCORE_BREAKDOWN:
 	case WIDGET_ASSIGN_CITIZEN_TO_PLOT:
+	///Tks Med
+	case WIDGET_GOLD_INCOME:
 		//	Nothing on clicked
 		break;
 	case WIDGET_CREATE_TRADE_ROUTE:
@@ -4129,6 +4134,18 @@ void CvDLLWidgetData::doMarket(const CvWidgetDataStruct& widgetDataStruct)
         //gDLL->getInterfaceIFace()->setDirty(CityScreen_DIRTY_BIT, true);
 		CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_MARKET, gDLL->getInterfaceIFace()->getHeadSelectedCity()->getID());
 		gDLL->getInterfaceIFace()->addPopup(pInfo, NO_PLAYER, true);
+	}
+}
+void CvDLLWidgetData::parseGoldIncomeHelp(CvWidgetDataStruct& widgetDataStruct, CvWStringBuffer& szBuffer)
+{
+	//PlayerTypes ePlayer = GC.getGameINLINE().getActivePlayer();
+	CvPlayer& kPlayer = GET_PLAYER(GC.getGameINLINE().getActivePlayer());
+	szBuffer.append(gDLL->getText("TXT_KEY_PLAYER_INCOME_GOLD", kPlayer.getGold()));
+	if (kPlayer.getGoldIncome() > 0)
+	{
+		int iIncome = kPlayer.getGoldIncome() * kPlayer.getGold() / 100;
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_PLAYER_TURN_GOLD", kPlayer.getGoldIncome(), iIncome));
 	}
 }
 void CvDLLWidgetData::parseInventorsHouseHelp(CvWidgetDataStruct& widgetDataStruct, CvWStringBuffer& szBuffer)

@@ -4953,9 +4953,20 @@
       <ConnectedTradeYields>
         <YieldChange>
           <YieldType>YIELD_GOLD</YieldType>
-          <iYieldChange>100</iYieldChange>
+          <iYieldChange>3</iYieldChange>
         </YieldChange>
       </ConnectedTradeYields>
+      <CivicTreasuryBonuses>
+        <CivicTreasuryBonus>
+          <BuildingClassType>BUILDINGCLASS_MINT</BuildingClassType>
+          <iValue>1</iValue>
+        </CivicTreasuryBonus>
+        <CivicTreasuryBonus>
+          <BuildingClassType>BUILDINGCLASS_BANK</BuildingClassType>
+          <iValue>2</iValue>
+        </CivicTreasuryBonus>
+      </CivicTreasuryBonuses>
+      <bBuildingTreasuryBonus>1</bBuildingTreasuryBonus>
     </CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>

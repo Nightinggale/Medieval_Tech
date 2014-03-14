@@ -339,6 +339,16 @@ int CyPlayer::getNumDocksNextUnits() const
    return m_pPlayer ? m_pPlayer->getNumDocksNextUnits() : -1;
 }
 
+int CyPlayer::getExpences() const
+{
+   return m_pPlayer ? m_pPlayer->getExpences() : 0;
+}
+
+int CyPlayer::getGoldIncome() const
+{
+   return m_pPlayer ? m_pPlayer->getGoldIncome() : 0;
+}
+
 int CyPlayer::prolificInventorThreshold() const
 {
 	return m_pPlayer ? m_pPlayer->prolificInventorThreshold() : -1;

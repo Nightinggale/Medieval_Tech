@@ -1034,6 +1034,7 @@ public:
 	DllExport bool isNoArrowinTechScreen() const;
 	DllExport bool isNoneTradeable() const;
 	DllExport bool isWorkersBuildAfterMove() const;
+	DllExport bool isBuildingTreasuryBonus() const;
 
     DllExport int getRouteMovementMod(int i) const;
     DllExport int getAllowsRoute(int i) const;
@@ -1080,6 +1081,10 @@ public:
 	DllExport int getNumFreeUnitClasses() const;
 	DllExport int getFreeUnitClass(int i) const;
 	///TKs Med
+	DllExport int getNumCivicTreasuryBonus() const;
+	DllExport int getCivicTreasury(int index) const;
+	DllExport int getCivicTreasuryBonus(int index) const;
+
 	DllExport int getNumRandomGrowthUnits() const;
 	DllExport int getRandomGrowthUnits(int index) const;
 	DllExport int getRandomGrowthUnitsPercent(int index) const;
@@ -1149,6 +1154,7 @@ protected:
     int m_iIncreasedImmigrants;
 	bool m_bisTradeable;
 	bool m_bWorkersBuildAfterMove;
+	bool m_bBuildingTreasuryBonus;
 	bool m_bFreeUnitsAreNonePopulation;
     bool m_bFreeUnitsNotAllCities;
     bool m_bAllowsMapTrade;
@@ -1204,6 +1210,7 @@ protected:
 	bool* m_pabSpecialBuildingNotRequired;
 	std::vector<int*> m_aaiImprovementYieldChanges;
 	//Tks Civics
+	std::vector< std::pair<BuildingClassTypes, int> > m_aiCivicTreasuryBonuses;
 	std::vector< std::pair<UnitClassTypes, int> > m_aRandomGrowthUnits;
 	std::vector< std::pair<YieldTypes, int> > m_aConnectedTradeYields;
 	std::vector< std::pair<YieldTypes, int> > m_aConnectedMissonYields;
@@ -1328,6 +1335,9 @@ public:
 	DllExport int getMaxYieldModifiers(int iYield) const;
 	DllExport int getImmigrationUnits(int iUnit) const;
 	DllExport int getAutoSellsYields(int iYield) const;
+	DllExport int getNumCivicTreasuryBonus() const;
+	DllExport int getCivicTreasury(int index) const;
+	DllExport int getCivicTreasuryBonus(int index) const;
 	///Tke
 	DllExport int getConquestProbability() const;
 	DllExport int getHealRateChange() const;
@@ -1467,6 +1477,8 @@ public:
 	int getYieldDemand(YieldTypes eYield) const;
 	int getMarketCap() const;
 protected:
+	//Tks Civics
+	std::vector< std::pair<CivicTypes, int> > m_aiCivicTreasuryBonuses;
 	YieldArray<int> m_aiYieldDemand;
 	int m_iMarketCap;
 	// domestic yield demand - end - Nightinggale

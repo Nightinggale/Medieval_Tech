@@ -4440,8 +4440,16 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
         return;
     }
    //Tk Civics Screen
-	//if (kCivicInfo.getNumConnectedMissonYields() > 0)
-	//{
+	/*for (iI = 0; iI < kCivicInfo.getNumCivicTreasuryBonus(); iI++)
+    {
+        szHelpText.append(NEWLINE);
+		szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_TREASURY_BUILDING", GC.getCivicInfo((BuildingClassTypes)kCivicInfo.getCivicTreasury(iI)).getDescription(), kCivicInfo.getCivicTreasuryBonus(iI)));
+    }*/
+	if (kCivicInfo.getNumCivicTreasuryBonus() > 0)
+	{
+	    szHelpText.append(NEWLINE);
+		szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_BUILDING_TREASURY_BONUS"));
+	}
 	for (iI = 0; iI < kCivicInfo.getNumConnectedTradeYields(); iI++)
 	{
 		YieldTypes eConnectedYield = (YieldTypes)kCivicInfo.getConnectedTradeYields(iI);
@@ -6381,6 +6389,12 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
     {
         szBuffer.append(NEWLINE);
         szBuffer.append(gDLL->getText("TXT_KEY_UNIT_REHIBILITATE_HELP"));
+    }
+	//Tks Civics
+	for (iI = 0; iI < kBuilding.getNumCivicTreasuryBonus(); iI++)
+    {
+        szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_CIVIC_TREASURY_BUILDING", GC.getCivicInfo((CivicTypes)kBuilding.getCivicTreasury(iI)).getDescription(), kBuilding.getCivicTreasuryBonus(iI)));
     }
     ///TKs Med Update 1.1g
     if (bCivilopediaText)
@@ -8378,19 +8392,6 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 		szBuffer.append(CvWString::format(gDLL->getText("TXT_KEY_MISC_FROM_CITY_YIELD", iCityPlotYield, info.getChar())));
 	}
 	//Tks Civics Screen
-	//if (owner != NO_PLAYER)
-	//{
-		//for (int iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
-		//{
-			//if (owner.getCivic((CivicOptionTypes)iI) != NO_CIVIC)
-			//{
-				//CvCivicInfo& kCivicInfo =  GC.getCivicInfo(owner.getCivic((CivicOptionTypes)iI));
-				//for (int iI = 0; iI < kCivicInfo.getNumConnectedTradeYields(); iI++)
-				//{
-					//if (kCivicInfo.getNumConnectedMissonYields() > 0 || kCivicInfo.getNumConnectedTradeYields() > 0)
-					//{
-
-					//}
 	if (city.getConnectedTradeYield(eYieldType) > 0)
 	{
 		szBuffer.append(NEWLINE);

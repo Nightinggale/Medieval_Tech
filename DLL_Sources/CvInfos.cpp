@@ -3869,6 +3869,7 @@ m_bGoodyTech(false),
 m_bNoArrowinTechScreen(false),
 m_bisTradeable(false),
 m_bWorkersBuildAfterMove(false),
+m_bBuildingTreasuryBonus(false),
 m_iRouteMovementMod(NULL),
 m_aiAllowsRoute(NULL),
 m_aiAllowsBuildingTypes(NULL),
@@ -4369,6 +4370,26 @@ bool CvCivicInfo::isWorkersBuildAfterMove() const
 {
 	return m_bWorkersBuildAfterMove;
 }
+int CvCivicInfo::getNumCivicTreasuryBonus() const
+{
+	return m_aiCivicTreasuryBonuses.size();
+}
+int CvCivicInfo::getCivicTreasury(int index) const
+{
+	FAssert(index < (int) m_aiCivicTreasuryBonuses.size());
+	FAssert(index > -1);
+	return m_aiCivicTreasuryBonuses[index].first;
+}
+int CvCivicInfo::getCivicTreasuryBonus(int index) const
+{
+	FAssert(index < (int) m_aiCivicTreasuryBonuses.size());
+	FAssert(index > -1);
+	return m_aiCivicTreasuryBonuses[index].second;
+}
+bool CvCivicInfo::isBuildingTreasuryBonus() const
+{
+	return m_bBuildingTreasuryBonus;
+}
 bool CvCivicInfo::isDominateNativeBorders() const
 {
 	return m_bDominateNativeBorders;
@@ -4784,6 +4805,7 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bNoArrowinTechScreen, "bNoArrowinTechScreen");
 	pXML->GetChildXmlValByName(&m_bisTradeable, "bisNoneTradeable");
 	pXML->GetChildXmlValByName(&m_bWorkersBuildAfterMove, "bWorkersBuildAfterMove");
+	pXML->GetChildXmlValByName(&m_bBuildingTreasuryBonus, "bBuildingTreasuryBonus");
 	//Tks Civics
 	pXML->SetVariableListTagPair(&m_aiUpkeepYields, "UpkeepYields", NUM_YIELD_TYPES, 0);
 	//tke
@@ -4807,6 +4829,27 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
     pXML->SetVariableListTagPair(&m_aiRequiredYields, "RequiredYields", NUM_YIELD_TYPES, 0);
 	//Civic Arrays Start
 	m_jaAllowedUnitClassImmigration.read(pXML, "AllowsUnitClassImmigration");
+
+	m_aiCivicTreasuryBonuses.clear();
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"CivicTreasuryBonuses"))
+	{
+		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"CivicTreasuryBonus"))
+		{
+			do
+			{
+				pXML->GetChildXmlValByName(szTextVal, "BuildingClassType");
+				int iBuildingClass = pXML->FindInInfoClass(szTextVal);
+				int iValue = 0;
+				pXML->GetChildXmlValByName(&iValue, "iValue");
+				m_aiCivicTreasuryBonuses.push_back(std::make_pair((BuildingClassTypes) iBuildingClass, iValue));
+			} while(gDLL->getXMLIFace()->NextSibling(pXML->GetXML()));
+			// set the current xml node to it's parent node
+			gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+		}
+		// set the current xml node to it's parent node
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+
 	m_aRandomGrowthUnits.clear();
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"RandomGrowthClasses"))
 	{
@@ -5420,10 +5463,27 @@ int CvBuildingInfo::getAutoSellsYields(int i) const
 {
 	return m_aiAutoSellsYields ? m_aiAutoSellsYields[i] : -1;
 }
+int CvBuildingInfo::getNumCivicTreasuryBonus() const
+{
+	return m_aiCivicTreasuryBonuses.size();
+}
+int CvBuildingInfo::getCivicTreasury(int index) const
+{
+	FAssert(index < (int) m_aiCivicTreasuryBonuses.size());
+	FAssert(index > -1);
+	return m_aiCivicTreasuryBonuses[index].first;
+}
+int CvBuildingInfo::getCivicTreasuryBonus(int index) const
+{
+	FAssert(index < (int) m_aiCivicTreasuryBonuses.size());
+	FAssert(index > -1);
+	return m_aiCivicTreasuryBonuses[index].second;
+}
 int CvBuildingInfo::getCenterPlotBonus() const
 {
 	return m_iCenterPlotBonus;
 }
+
 ///TKe
 int CvBuildingInfo::getNextSpecialBuilding() const
 {
@@ -5895,6 +5955,28 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPair(&m_aiProductionTraits, "ProductionTraits", GC.getNumTraitInfos(), 0);
 	pXML->GetChildXmlValByName(szTextVal, "FreePromotion");
 	m_iFreePromotion = pXML->FindInInfoClass(szTextVal);
+
+	m_aiCivicTreasuryBonuses.clear();
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"CivicTreasuryBonuses"))
+	{
+		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"CivicTreasuryBonus"))
+		{
+			do
+			{
+				pXML->GetChildXmlValByName(szTextVal, "CivicType");
+				int iCivicType = pXML->FindInInfoClass(szTextVal);
+				int iValue = 0;
+				pXML->GetChildXmlValByName(&iValue, "iValue");
+				m_aiCivicTreasuryBonuses.push_back(std::make_pair((CivicTypes) iCivicType, iValue));
+			} while(gDLL->getXMLIFace()->NextSibling(pXML->GetXML()));
+			// set the current xml node to it's parent node
+			gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+		}
+		// set the current xml node to it's parent node
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+
+
 	pXML->GetChildXmlValByName(&m_bWorksWater, "bWorksWater");
 	pXML->GetChildXmlValByName(&m_bWater, "bWater");
 	pXML->GetChildXmlValByName(&m_bRiver, "bRiver");

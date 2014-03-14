@@ -881,12 +881,12 @@ class CvMainInterface:
 		
 		screen.setImageButton("TradePoints", ArtFileMgr.getInterfaceArtInfo("SCREEN_TRADE_POINTS").getPath(), 0, yResolution - 227, 80, 80, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_TRADE_SCREEN).getActionInfoIndex(), -1)
 		screen.setImageShape("TradePoints", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
-		screen.setHitMargins("TradePoints", 30, 30)
+		screen.setHitMargins("TradePoints", 50, 50)
 		self.appendtoHideState(screen, "TradePoints", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
 		#TKe
-		screen.addDDSGFC("GoldPile", ArtFileMgr.getInterfaceArtInfo("SCREEN_GOLD_PILE").getPath(), 0, yResolution - 90, 80, 80, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		screen.addDDSGFC("GoldPile", ArtFileMgr.getInterfaceArtInfo("SCREEN_GOLD_PILE").getPath(), 0, yResolution - 90, 80, 80, WidgetTypes.WIDGET_GOLD_INCOME, -1, -1)
 		screen.setImageShape("GoldPile", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
-		screen.setHitMargins("GoldPile", 35, 35)
+		screen.setHitMargins("GoldPile", 50, 50)
 		self.appendtoHideState(screen, "GoldPile", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
 
 	# AUTOMATE PRODUCTION & CITIZEN BUTTON & Research :) :)
@@ -2530,13 +2530,16 @@ class CvMainInterface:
 					fontsize = 1
 					if (iTradeResearch >= 1000):
 						fontsize = 0
-					screen.setLabel("TradeText", "Background", self.setFontSize(szTradeText, fontsize), CvUtil.FONT_CENTER_JUSTIFY, 40, yResolution - 230, -0.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+					screen.setText("TradeText", "Background", self.setFontSize(szTradeText, fontsize), CvUtil.FONT_CENTER_JUSTIFY, 40, yResolution - 230, -0.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_TRADE_SCREEN).getActionInfoIndex(), -1 )
+					#screen.setLabel("TradeText", "Background", self.setFontSize(szTradeText, fontsize), CvUtil.FONT_CENTER_JUSTIFY, 40, yResolution - 230, -0.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_TRADE_SCREEN).getActionInfoIndex(), -1 )
 				else:
 					fontsize = 1
 					szTradeText = str(iCurrentTradePoints)
-					screen.setLabel("TradeText", "Background", self.setFontSize(szTradeText, fontsize), CvUtil.FONT_CENTER_JUSTIFY, 40, yResolution - 230, -0.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+					#screen.setText("CityNameText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution / 2 , CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_CITY_NAME, -1, -1 )
+					screen.setText("TradeText", "Background", self.setFontSize(szTradeText, fontsize), CvUtil.FONT_CENTER_JUSTIFY, 40, yResolution - 230, -0.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_TRADE_SCREEN).getActionInfoIndex(), -1 )
+					#screen.setLabel("TradeText", "Background", self.setFontSize(szTradeText, fontsize), CvUtil.FONT_CENTER_JUSTIFY, 40, yResolution - 230, -0.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_TRADE_SCREEN).getActionInfoIndex(), -1 )
 				szText = CyGameTextMgr().getGoldStr(ePlayer)
-				screen.setLabel("GoldText", "Background", self.setFontSize(szText, 1), CvUtil.FONT_CENTER_JUSTIFY, 40, yResolution - 30, -0.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+				screen.setLabel("GoldText", "Background", self.setFontSize(szText, 1), CvUtil.FONT_CENTER_JUSTIFY, 40, yResolution - 30, -0.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GOLD_INCOME, -1, -1 )
 				#TKs Censures and Travel Types
 				self.updateCensorIcons()
 				self.updateTravelRoutes()

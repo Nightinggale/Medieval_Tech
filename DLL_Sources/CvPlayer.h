@@ -555,6 +555,11 @@ public:
 	int getCivicUpkeep(CivicTypes* paeCivics, bool bIgnoreAnarchy) const;
 	int getUpkeepModifier() const;
 	void changeUpkeepModifier(int iChange);
+	int getGoldIncome() const;
+	void changeGoldIncome(int iChange);
+	void setGoldIncome(int iChange);
+	int getExpences() const;
+	void changeExpences(int iChange);
 	int getUpkeepCount(YieldTypes eIndex) const;
 	void changeUpkeepCount(YieldTypes eIndex, int iChange);
 	void changeTradingPostCount(PlayerTypes eIndex, int iChange);
@@ -843,6 +848,8 @@ protected:
 	int m_iRevolutionTimer;
 	int m_iConversionTimer;
 	int m_iUpkeepModifier;
+	int m_iGoldIncome;
+	int m_iExpences;
 	///Tks CivicsEnd
     int m_iTradeFairCityID;
     int m_iProlificInventorModifier;

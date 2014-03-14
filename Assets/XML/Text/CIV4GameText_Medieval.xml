@@ -14,12 +14,28 @@
 		<Spanish>[ICON_BULLET]</Spanish>
 	</TEXT>
   <TEXT>
-    <Tag>TXT_KEY_CIVIC_WORKERS_BUILD</Tag>
-    <English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Workers[COLOR_REVERT] can Build after move</English>
+    <Tag>TXT_KEY_CIVIC_TREASURY_BUILDING</Tag>
+    <English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s1_civic[COLOR_REVERT] bonus: +%d2% of Treasury</English>
     <French>[ICON_BULLET]</French>
     <German>[ICON_BULLET]</German>
     <Italian>[ICON_BULLET]</Italian>
     <Spanish>[ICON_BULLET]</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_BUILDING_TREASURY_BONUS</Tag>
+    <English>[ICON_BULLET]Allows Building Treasury Bonus</English>
+    <French>[ICON_BULLET]</French>
+    <German>[ICON_BULLET]</German>
+    <Italian>[ICON_BULLET]</Italian>
+    <Spanish>[ICON_BULLET]</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_WORKERS_BUILD</Tag>
+    <English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Workers[COLOR_REVERT] can Build after move</English>
+    <French>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Workers[COLOR_REVERT] can Build after move</French>
+    <German>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Workers[COLOR_REVERT] can Build after move</German>
+    <Italian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Workers[COLOR_REVERT] can Build after move</Italian>
+    <Spanish>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Workers[COLOR_REVERT] can Build after move</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_CIVIC_FATHER_BONUS</Tag>
@@ -36,6 +52,22 @@
     <German>Decrees</German>
     <Italian>Decrees</Italian>
     <Spanish>Decrees</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_PLAYER_INCOME_GOLD</Tag>
+    <English>[COLOR_HIGHLIGHT_TEXT]Treasury:[COLOR_REVERT] %d1</English>
+    <French>%d1</French>
+    <German>%d1</German>
+    <Italian>%d1</Italian>
+    <Spanish>%d1</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_PLAYER_TURN_GOLD</Tag>
+    <English>+%d1% of [COLOR_HIGHLIGHT_TEXT]Treasury[COLOR_REVERT] per Turn(%d2[ICON_GOLD])</English>
+    <French>+%d1% of [COLOR_HIGHLIGHT_TEXT]Treasury[COLOR_REVERT] per Turn(%d2[ICON_GOLD])</French>
+    <German>+%d1% of [COLOR_HIGHLIGHT_TEXT]Treasury[COLOR_REVERT] per Turn(%d2[ICON_GOLD])</German>
+    <Italian>+%d1% of [COLOR_HIGHLIGHT_TEXT]Treasury[COLOR_REVERT] per Turn(%d2[ICON_GOLD])</Italian>
+    <Spanish>+%d1% of [COLOR_HIGHLIGHT_TEXT]Treasury[COLOR_REVERT] per Turn(%d2[ICON_GOLD])</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_MISC_ANOTHER_REVOLUTION_RECENTLY</Tag>

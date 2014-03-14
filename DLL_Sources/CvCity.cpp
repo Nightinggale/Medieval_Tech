@@ -524,6 +524,7 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 	m_iTeachUnitMultiplier = 100;
 	///TKs Med
 	m_iCenterPlotBonus = 0;
+	m_iCivicTreasuryBonus = 0;
     m_iMaxCityPop = 0;
     m_iDetectMaraudersRange = 0;
 	m_iMaxFoodConsumed = 0;
@@ -2862,6 +2863,14 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange)
 	    setMaxCityPop(GC.getBuildingInfo(eBuilding).isIncreasesCityPopulation());
 	}
 	changeMarauderDetection(GC.getBuildingInfo(eBuilding).getDetectMaruaders());
+	for (int iC = 0; iC < GC.getBuildingInfo(eBuilding).getNumCivicTreasuryBonus(); iC++)
+	{
+		if (GET_PLAYER(getOwnerINLINE()).isCivic((CivicTypes)GC.getBuildingInfo(eBuilding).getCivicTreasury(iC)))
+		{
+			this->m_iCivicTreasuryBonus += GC.getBuildingInfo(eBuilding).getCivicTreasuryBonus(iC) * iChange;
+			GET_PLAYER(getOwnerINLINE()).changeGoldIncome(GC.getBuildingInfo(eBuilding).getCivicTreasuryBonus(iC) * iChange);
+		}
+	}
 	///TKe
 	changeFreeExperience(GC.getBuildingInfo(eBuilding).getFreeExperience() * iChange);
 	changeMaxFoodKeptPercent(GC.getBuildingInfo(eBuilding).getFoodKept() * iChange);
@@ -11646,6 +11655,10 @@ int CvCity::getMaxCityPop() const
 	return m_iMaxCityPop;
 }
 
+int CvCity::getCivicTreasuryBonus() const
+{
+	return m_iCivicTreasuryBonus;
+}
 void CvCity::changeMarauderDetection(int iChange)
 {
     if (iChange > m_iDetectMaraudersRange)
@@ -11885,7 +11898,8 @@ void CvCity::doPilgrams()
         //int iRevolutionTurns = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getRevolutionTurns();
         int iMarauderSpawnTime = GC.getXMLval(XML_MARAUDER_EVENT_DEFAULT_TURNS);
         int iCrumbsEvent = GC.getXMLval(XML_MARAUDER_CRUMBS_EVENT);
-        for (int iHandicapLevel=0; iHandicapLevel < GC.getNumHandicapInfos(); iHandicapLevel++)
+		int iHandicapLevel;
+        for (iHandicapLevel=0; iHandicapLevel < GC.getNumHandicapInfos(); iHandicapLevel++)
         {
             if (getHandicapType() == (HandicapTypes)iHandicapLevel)
             {
@@ -12144,6 +12158,7 @@ void CvCity::changeEventTimer(int iEvent, int iChange)
 // building affected cache - start - Nightinggale
 void CvCity::UpdateBuildingAffectedCache()
 {
+
 	// cache getMaxYieldCapacity - start - Nightinggale
 	for (int iYield = 0; iYield < NUM_YIELD_TYPES; iYield++)
 	{

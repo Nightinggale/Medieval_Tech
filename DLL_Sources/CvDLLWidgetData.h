@@ -86,6 +86,7 @@ protected:
 	void doArmorsmith(const CvWidgetDataStruct& widgetDataStruct);
 	void doMarket(const CvWidgetDataStruct& widgetDataStruct);
 	void parseInventorsHouseHelp(CvWidgetDataStruct& widgetDataStruct, CvWStringBuffer& szBuffer);
+	void parseGoldIncomeHelp(CvWidgetDataStruct& widgetDataStruct, CvWStringBuffer& szBuffer);
 	//TK Tax
 	void doTaxAdvisor(const CvWidgetDataStruct& widgetDataStruct);
 	//TKe

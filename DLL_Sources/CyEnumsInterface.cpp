@@ -301,6 +301,7 @@ void CyEnumsPythonInterface()
 		//TKe
 		.value("WIDGET_ARMORSMITH", WIDGET_ARMORSMITH)
 		.value("WIDGET_MARKET", WIDGET_MARKET)
+		.value("WIDGET_GOLD_INCOME", WIDGET_GOLD_INCOME)
 		///TKe
 		// Teacher List - start - Nightinggale
 		.value("WIDGET_TEACHER_LIST", WIDGET_TEACHER_LIST)

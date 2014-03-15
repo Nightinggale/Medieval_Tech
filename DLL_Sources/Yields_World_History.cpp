@@ -11,32 +11,54 @@
 // AI sells unconditionally to natives and Europe unless they are raw materials as well
 void Check_YieldGroup_AI_Sell::build()
 {
-	YieldVector.push_back(YIELD_PRECIOUS_METALS);
+	YieldVector.push_back(YIELD_JEWELLERY);
 	YieldVector.push_back(YIELD_CLOTH);
 	YieldVector.push_back(YIELD_COATS);
 	YieldVector.push_back(YIELD_ALE);
 	YieldVector.push_back(YIELD_WINE);
 	YieldVector.push_back(YIELD_POTTERY);
+	YieldVector.push_back(YIELD_BRONZE);
+	YieldVector.push_back(YIELD_WOODEN_GOODS);
+	YieldVector.push_back(YIELD_CARVED_IVORY);
+	YieldVector.push_back(YIELD_SILK);
+	YieldVector.push_back(YIELD_FINE_CLOTH);
+	YieldVector.push_back(YIELD_JADE_CARVING);
+	YieldVector.push_back(YIELD_ELECTRONICS);
+	YieldVector.push_back(YIELD_RUM);
+	YieldVector.push_back(YIELD_CERAMICS);
+	YieldVector.push_back(YIELD_TAILORED_CLOTHING);
+	YieldVector.push_back(YIELD_HOUSEHOLD_GOODS);
+	YieldVector.push_back(YIELD_MODERN_CARS);
+	YieldVector.push_back(YIELD_CARS);
+	YieldVector.push_back(YIELD_APPLIANCES);
+	YieldVector.push_back(YIELD_COMPUTERS);
 }
 
 // AI sells these in Europe
 // AI can also sell unneeded raw materials even if they aren't listed here
 void Check_YieldGroup_AI_Sell_To_Europe::build()
 {
-	YieldVector.push_back(YIELD_CLAY);
-	YieldVector.push_back(YIELD_PRECIOUS_METALS);
-	YieldVector.push_back(YIELD_COTTON);
-	YieldVector.push_back(YIELD_BARLEY);
-	YieldVector.push_back(YIELD_GRAPES);
-	YieldVector.push_back(YIELD_ORE);
+	YieldVector.push_back(YIELD_JEWELLERY);
 	YieldVector.push_back(YIELD_CLOTH);
 	YieldVector.push_back(YIELD_COATS);
 	YieldVector.push_back(YIELD_ALE);
 	YieldVector.push_back(YIELD_WINE);
-	YieldVector.push_back(YIELD_CATTLE);
-	YieldVector.push_back(YIELD_SHEEP);
-	YieldVector.push_back(YIELD_WOOL);
-	YieldVector.push_back(YIELD_SPICES);
+	YieldVector.push_back(YIELD_POTTERY);
+	YieldVector.push_back(YIELD_BRONZE);
+	YieldVector.push_back(YIELD_WOODEN_GOODS);
+	YieldVector.push_back(YIELD_CARVED_IVORY);
+	YieldVector.push_back(YIELD_SILK);
+	YieldVector.push_back(YIELD_FINE_CLOTH);
+	YieldVector.push_back(YIELD_JADE_CARVING);
+	YieldVector.push_back(YIELD_ELECTRONICS);
+	YieldVector.push_back(YIELD_RUM);
+	YieldVector.push_back(YIELD_CERAMICS);
+	YieldVector.push_back(YIELD_TAILORED_CLOTHING);
+	YieldVector.push_back(YIELD_HOUSEHOLD_GOODS);
+	YieldVector.push_back(YIELD_MODERN_CARS);
+	YieldVector.push_back(YIELD_CARS);
+	YieldVector.push_back(YIELD_APPLIANCES);
+	YieldVector.push_back(YIELD_COMPUTERS);
 }
 
 // AI attemps to buy from natives as needed (or whenever offered?)
@@ -46,19 +68,36 @@ void Check_YieldGroup_AI_Buy_From_Natives::build()
 	YieldVector.push_back(YIELD_STONE_TOOLS);
 	YieldVector.push_back(YIELD_GRAIN);
 	YieldVector.push_back(YIELD_CATTLE);
+	YieldVector.push_back(YIELD_HORSES);
+	YieldVector.push_back(YIELD_SHEEP);
+	YieldVector.push_back(YIELD_PRECIOUS_METALS);
+	YieldVector.push_back(YIELD_HERBS);
+	YieldVector.push_back(YIELD_IRON_TOOLS);
+	YieldVector.push_back(YIELD_GRAIN);
+	YieldVector.push_back(YIELD_FOOD);
+	YieldVector.push_back(YIELD_RICH_FOOD);
 }
 
 // AI attemps to buy from Europe (Europe as in vanilla functionality)
 void Check_YieldGroup_AI_Buy_From_Europe::build()
 {
 	YieldVector.push_back(YIELD_LEATHER_ARMOR);
+	YieldVector.push_back(YIELD_BRONZE_ARMOR);
 	YieldVector.push_back(YIELD_SCALE_ARMOR);
-	//YieldVector.push_back(YIELD_MAIL_ARMOR);
+	YieldVector.push_back(YIELD_CHAIN_ARMOR);
 	YieldVector.push_back(YIELD_PLATE_ARMOR);
-	YieldVector.push_back(YIELD_TOOLS);
-	YieldVector.push_back(YIELD_WEAPONS);
-	YieldVector.push_back(YIELD_HORSES);
-	YieldVector.push_back(YIELD_POTTERY);
+	YieldVector.push_back(YIELD_ARMOR);
+	YieldVector.push_back(YIELD_MODERN_ARMOR);
+	YieldVector.push_back(YIELD_STONE_TOOLS);
+	YieldVector.push_back(YIELD_IRON_TOOLS);
+	YieldVector.push_back(YIELD_POWER_TOOLS);
+	YieldVector.push_back(YIELD_STONE_WEAPONS);
+	YieldVector.push_back(YIELD_BRONZE_WEAPONS);
+	YieldVector.push_back(YIELD_IRON_WEAPONS);
+	YieldVector.push_back(YIELD_STEEL_WEAPONS);
+	YieldVector.push_back(YIELD_MUSKETS);
+	YieldVector.push_back(YIELD_RIFLES);
+	YieldVector.push_back(YIELD_HERBS);
 	YieldVector.push_back(YIELD_SPICES);
 }
 
@@ -69,14 +108,31 @@ void Check_YieldGroup_AI_Raw_Material::build()
 	YieldVector.push_back(YIELD_COTTON);
 	YieldVector.push_back(YIELD_BARLEY);
 	YieldVector.push_back(YIELD_GRAPES);
+	YieldVector.push_back(YIELD_SUGAR);
+	YieldVector.push_back(YIELD_JADE);
+	YieldVector.push_back(YIELD_IVORY);
 	YieldVector.push_back(YIELD_ORE);
 	YieldVector.push_back(YIELD_CATTLE);
+	YieldVector.push_back(YIELD_HERBS);
 	YieldVector.push_back(YIELD_SPICES);
 	YieldVector.push_back(YIELD_SHEEP);
 	YieldVector.push_back(YIELD_WOOL);
 	YieldVector.push_back(YIELD_CLAY);
 	YieldVector.push_back(YIELD_STONE);
+	YieldVector.push_back(YIELD_COPPER);
+	YieldVector.push_back(YIELD_TIN);
 	YieldVector.push_back(YIELD_BRONZE);
+	YieldVector.push_back(YIELD_IRON);
+	YieldVector.push_back(YIELD_COAL);
+	YieldVector.push_back(YIELD_STEEL);
+	YieldVector.push_back(YIELD_SILICON);
+	YieldVector.push_back(YIELD_ALUMINIUM);
+	YieldVector.push_back(YIELD_OIL);
+	YieldVector.push_back(YIELD_PLASTIC);
+	YieldVector.push_back(YIELD_RUBBER);
+	YieldVector.push_back(YIELD_ELECTRONICS);
+	YieldVector.push_back(YIELD_FUEL);
+	YieldVector.push_back(YIELD_ROCKETS);
 }
 
 // Set yields the natives will produce
@@ -88,6 +144,22 @@ void Check_YieldGroup_AI_Native_Product::build()
 	YieldVector.push_back(YIELD_WOOL);
 	YieldVector.push_back(YIELD_CATTLE);
 	YieldVector.push_back(YIELD_SHEEP);
+	YieldVector.push_back(YIELD_HORSES);
+	YieldVector.push_back(YIELD_LUMBER);
+	YieldVector.push_back(YIELD_CLAY);
+	YieldVector.push_back(YIELD_STONE);
+	YieldVector.push_back(YIELD_PRECIOUS_METALS);
+	YieldVector.push_back(YIELD_ORE);
+	YieldVector.push_back(YIELD_HERBS);
+	YieldVector.push_back(YIELD_SPICES);
+	YieldVector.push_back(YIELD_IVORY);
+	YieldVector.push_back(YIELD_JADE);
+	YieldVector.push_back(YIELD_SUGAR);
+	YieldVector.push_back(YIELD_BARLEY);
+	YieldVector.push_back(YIELD_GEMS);
+	YieldVector.push_back(YIELD_DYE);
+	YieldVector.push_back(YIELD_COTTON);
+	YieldVector.push_back(YIELD_SILK_WORM);
 }
 
 // Yields to show up on city billboards
@@ -115,23 +187,29 @@ void Check_YieldGroup_City_Billboard_Offset_Fix::build()
 void Check_YieldGroup_Armor::build()
 {
 	YieldVector.push_back(YIELD_LEATHER_ARMOR);
+	YieldVector.push_back(YIELD_BRONZE_ARMOR);
 	YieldVector.push_back(YIELD_SCALE_ARMOR);
-	//YieldVector.push_back(YIELD_MAIL_ARMOR);
+	YieldVector.push_back(YIELD_CHAIN_ARMOR);
 	YieldVector.push_back(YIELD_PLATE_ARMOR);
+	YieldVector.push_back(YIELD_ARMOR);
+	YieldVector.push_back(YIELD_MODERN_ARMOR);
 }
 
 // yield is light armor
 void Check_YieldGroup_Light_Armor::build()
 {
 	YieldVector.push_back(YIELD_LEATHER_ARMOR);
+	YieldVector.push_back(YIELD_BRONZE_ARMOR);
 }
 
 // yield is heavy armor
 void Check_YieldGroup_Heavy_Armor::build()
 {
 	YieldVector.push_back(YIELD_SCALE_ARMOR);
-	//YieldVector.push_back(YIELD_MAIL_ARMOR);
+	YieldVector.push_back(YIELD_CHAIN_ARMOR);
 	YieldVector.push_back(YIELD_PLATE_ARMOR);
+	YieldVector.push_back(YIELD_ARMOR);
+	YieldVector.push_back(YIELD_MODERN_ARMOR);
 }
 
 // check YieldTypes vs XML yield names

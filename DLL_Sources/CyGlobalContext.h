@@ -265,6 +265,7 @@ public:
 	// python MOD selection - start - Nightinggale
 	bool isMedievalConquest() const;
 	bool isColonization2071() const;
+	bool isWorldHistory() const;
 	// python MOD selection - end - Nightinggale
 };
 #endif	// CyGlobalContext_h

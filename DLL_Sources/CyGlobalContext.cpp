@@ -480,4 +480,13 @@ bool CyGlobalContext::isColonization2071() const
 	return false;
 #endif
 }
+
+bool CyGlobalContext::isWorldHistory() const
+{
+#ifdef WORLD_HISTORY
+	return true;
+#else
+	return false;
+#endif
+}
 // python MOD selection - end - Nightinggale

@@ -105,6 +105,7 @@ void CyGlobalContextPythonInterface4(python::class_<CyGlobalContext>& x)
 		// python MOD selection - start - Nightinggale
 		.def("isMedievalConquest", &CyGlobalContext::isMedievalConquest, "MOD selection")
 		.def("isColonization2071", &CyGlobalContext::isColonization2071, "MOD selection")
+		.def("isWorldHistory",     &CyGlobalContext::isWorldHistory,     "MOD selection")
 		// python MOD selection - end - Nightinggale
 		;
 }

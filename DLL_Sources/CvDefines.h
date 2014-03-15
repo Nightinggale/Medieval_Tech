@@ -6,9 +6,11 @@
 // defines.h
 
 // mod selection - start - Nightinggale
+#ifndef WORLD_HISTORY
 #ifndef COLONIZATION_2071
 #define MEDIEVAL_TECH
 #define USE_NOBLE_CLASS
+#endif
 #endif
 // mod selection - end - Nightinggale
 

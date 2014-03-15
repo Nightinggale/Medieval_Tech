@@ -590,7 +590,14 @@ void CvXMLLoadUtility::loadXMLFile(XMLFileNames eFile)
 	else if (eFile == XML_FILE_CIV4YieldInfos)
 	{
 		LoadGlobalClassInfo(GC.getYieldInfo(), "CIV4YieldInfos", "Terrain", "Civ4YieldInfos/YieldInfos/YieldInfo", NULL);
-		FAssertMsg(NUM_YIELD_TYPES == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+		if (bFirstLoadRound)
+		{
+			// we only need to check this once
+			FAssertMsg(GC.getYieldInfo().size() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+			FAssertMsg(NUM_YIELD_TYPES == GC.getYieldInfo().size(), "Wrong number of yields in XML (correct mod?)");
+			GC.CheckEnumYieldTypes(); // XML enum check - Nightinggale
+	
+		}
 	}
 	else
 	{

@@ -17,6 +17,8 @@
 #include "Yields_Medieval_Tech.h"
 #elif defined(COLONIZATION_2071)
 #include "Yields_Colonization_2071.h"
+#elif defined(WORLD_HISTORY)
+#include "Yields_World_History.h"
 #endif
 
 // virtual means it can't be loaded into a ship, meaning it's yields like crosses and bells.

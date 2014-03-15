@@ -100,7 +100,7 @@
 			<iAsset>0</iAsset>
 			<YieldEquipedNums>
 				<YieldEquipedNum>
-					<YieldType>YIELD_TOOLS</YieldType>
+					<YieldType>YIELD_STONE_TOOLS</YieldType>
 					<iYieldAmount>50</iYieldAmount>
 				</YieldEquipedNum>
 			</YieldEquipedNums>
@@ -143,7 +143,7 @@
 			<iAsset>0</iAsset>
 			<YieldEquipedNums>
 				<YieldEquipedNum>
-					<YieldType>YIELD_TOOLS</YieldType>
+					<YieldType>YIELD_STONE_TOOLS</YieldType>
 					<iYieldAmount>50</iYieldAmount>
 				</YieldEquipedNum>
 			</YieldEquipedNums>
@@ -190,7 +190,7 @@
 			<iAsset>0</iAsset>
 			<YieldEquipedNums>
 				<YieldEquipedNum>
-					<YieldType>YIELD_TOOLS</YieldType>
+					<YieldType>YIELD_STONE_WEAPONS</YieldType>
 					<iYieldAmount>25</iYieldAmount>
 				</YieldEquipedNum>
 			</YieldEquipedNums>
@@ -340,7 +340,7 @@
 			<iTaxCollectRate>25</iTaxCollectRate>
 			<YieldEquipedNums>
 				<YieldEquipedNum>
-					<YieldType>YIELD_TOOLS</YieldType>
+					<YieldType>YIELD_IRON_TOOLS</YieldType>
 					<iYieldAmount>25</iYieldAmount>
 				</YieldEquipedNum>
 			</YieldEquipedNums>
@@ -442,11 +442,11 @@
 					<iYieldAmount>50</iYieldAmount>
 				</YieldEquipedNum>
 				<YieldEquipedNum>
-					<YieldType>YIELD_WEAPONS</YieldType>
+					<YieldType>YIELD_IRON_WEAPONS</YieldType>
 					<iYieldAmount>50</iYieldAmount>
 				</YieldEquipedNum>
 				<YieldEquipedNum>
-					<YieldType>YIELD_MAIL_ARMOR</YieldType>
+					<YieldType>YIELD_CHAIN_ARMOR</YieldType>
 					<iYieldAmount>50</iYieldAmount>
 				</YieldEquipedNum>
 			</YieldEquipedNums>
@@ -491,7 +491,7 @@
 							<iYieldAmount>50</iYieldAmount>
 						</YieldEquipedNum>
 						<YieldEquipedNum>
-							<YieldType>YIELD_WEAPONS</YieldType>
+							<YieldType>YIELD_STEEL_WEAPONS</YieldType>
 							<iYieldAmount>50</iYieldAmount>
 						</YieldEquipedNum>
 						<YieldEquipedNum>
@@ -499,7 +499,7 @@
 							<iYieldAmount>50</iYieldAmount>
 						</YieldEquipedNum>
 						<YieldEquipedNum>
-							<YieldType>YIELD_MAIL_ARMOR</YieldType>
+							<YieldType>YIELD_CHAIN_ARMOR</YieldType>
 							<iYieldAmount>50</iYieldAmount>
 						</YieldEquipedNum>
 					</YieldEquipedNums>
@@ -562,7 +562,7 @@
 					<iYieldAmount>50</iYieldAmount>
 				</YieldEquipedNum>
 				<YieldEquipedNum>
-					<YieldType>YIELD_WEAPONS</YieldType>
+					<YieldType>YIELD_IRON_WEAPONS</YieldType>
 					<iYieldAmount>50</iYieldAmount>
 				</YieldEquipedNum>
 				<YieldEquipedNum>
@@ -601,11 +601,11 @@
 							<iYieldAmount>50</iYieldAmount>
 						</YieldEquipedNum>
 						<YieldEquipedNum>
-							<YieldType>YIELD_WEAPONS</YieldType>
+							<YieldType>YIELD_IRON_WEAPONS</YieldType>
 							<iYieldAmount>50</iYieldAmount>
 						</YieldEquipedNum>
 						<YieldEquipedNum>
-							<YieldType>YIELD_MAIL_ARMOR</YieldType>
+							<YieldType>YIELD_CHAIN_ARMOR</YieldType>
 							<iYieldAmount>25</iYieldAmount>
 						</YieldEquipedNum>
 					</YieldEquipedNums>
@@ -649,7 +649,7 @@
 					<iYieldAmount>50</iYieldAmount>
 				</YieldEquipedNum>
 				<YieldEquipedNum>
-					<YieldType>YIELD_WEAPONS</YieldType>
+					<YieldType>YIELD_BRONZE_WEAPONS</YieldType>
 					<iYieldAmount>50</iYieldAmount>
 				</YieldEquipedNum>
 			</YieldEquipedNums>
@@ -721,7 +721,7 @@
 			<iAsset>0</iAsset>
 			<YieldEquipedNums>
 				<YieldEquipedNum>
-					<YieldType>YIELD_TOOLS</YieldType>
+					<YieldType>YIELD_WOODEN_GOODS</YieldType>
 					<iYieldAmount>50</iYieldAmount>
 				</YieldEquipedNum>
 			</YieldEquipedNums>
@@ -793,7 +793,7 @@
 			<iAsset>0</iAsset>
 			<YieldEquipedNums>
 				<YieldEquipedNum>
-					<YieldType>YIELD_WEAPONS</YieldType>
+					<YieldType>YIELD_WOODEN_GOODS</YieldType>
 					<iYieldAmount>50</iYieldAmount>
 				</YieldEquipedNum>
 			</YieldEquipedNums>
@@ -861,7 +861,7 @@
 			<CombatGearTypes/>
 			<YieldEquipedNums>
 				<YieldEquipedNum>
-					<YieldType>YIELD_WEAPONS</YieldType>
+					<YieldType>YIELD_IRON_WEAPONS</YieldType>
 					<iYieldAmount>50</iYieldAmount>
 				</YieldEquipedNum>
 				<YieldEquipedNum>
@@ -892,7 +892,7 @@
 					<CombatGearTypes/>
 					<YieldEquipedNums>
 						<YieldEquipedNum>
-							<YieldType>YIELD_WEAPONS</YieldType>
+							<YieldType>YIELD_IRON_WEAPONS</YieldType>
 							<iYieldAmount>50</iYieldAmount>
 						</YieldEquipedNum>
 						<YieldEquipedNum>
@@ -941,11 +941,11 @@
 			<iAsset>0</iAsset>
 			<YieldEquipedNums>
 				<YieldEquipedNum>
-					<YieldType>YIELD_WEAPONS</YieldType>
+					<YieldType>YIELD_IRON_WEAPONS</YieldType>
 					<iYieldAmount>50</iYieldAmount>
 				</YieldEquipedNum>
 				<YieldEquipedNum>
-					<YieldType>YIELD_MAIL_ARMOR</YieldType>
+					<YieldType>YIELD_CHAIN_ARMOR</YieldType>
 					<iYieldAmount>25</iYieldAmount>
 				</YieldEquipedNum>
 			</YieldEquipedNums>
@@ -966,13 +966,13 @@
 			<ProfessionSubTypes>
 				<ProfessionSubType>
 					<Type>PROFESSION_HEAVY_SKIRMISHER_PLATE</Type>
-					<Description>Heavy Skirmisher(Scale)</Description>
+					<Description>Heavy Skirmisher(Plate)</Description>
 					<iPower>125</iPower>
 					<ArrayEnable>011</ArrayEnable>
 					<CombatGearTypes/>
 					<YieldEquipedNums>
 						<YieldEquipedNum>
-							<YieldType>YIELD_WEAPONS</YieldType>
+							<YieldType>YIELD_STEEL_WEAPONS</YieldType>
 							<iYieldAmount>50</iYieldAmount>
 						</YieldEquipedNum>
 						<YieldEquipedNum>
@@ -1020,7 +1020,7 @@
 			<iAsset>0</iAsset>
 			<YieldEquipedNums>
 				<YieldEquipedNum>
-					<YieldType>YIELD_WEAPONS</YieldType>
+					<YieldType>YIELD_WOODEN_GOODS</YieldType>
 					<iYieldAmount>50</iYieldAmount>
 				</YieldEquipedNum>
 				<YieldEquipedNum>
@@ -1059,11 +1059,11 @@
 					<CombatGearTypes/>
 					<YieldEquipedNums>
 						<YieldEquipedNum>
-							<YieldType>YIELD_WEAPONS</YieldType>
+							<YieldType>YIELD_IRON_WEAPONS</YieldType>
 							<iYieldAmount>50</iYieldAmount>
 						</YieldEquipedNum>
 						<YieldEquipedNum>
-							<YieldType>YIELD_MAIL_ARMOR</YieldType>
+							<YieldType>YIELD_CHAIN_ARMOR</YieldType>
 							<iYieldAmount>25</iYieldAmount>
 						</YieldEquipedNum>
 					</YieldEquipedNums>
@@ -1115,7 +1115,7 @@
 			<iAsset>0</iAsset>
 			<YieldEquipedNums>
 				<YieldEquipedNum>
-					<YieldType>YIELD_TOOLS</YieldType>
+					<YieldType>YIELD_IRON_WEAPONS</YieldType>
 					<iYieldAmount>50</iYieldAmount>
 				</YieldEquipedNum>
 			</YieldEquipedNums>
@@ -1183,7 +1183,7 @@
 			<iAsset>0</iAsset>
 			<YieldEquipedNums>
 				<YieldEquipedNum>
-					<YieldType>YIELD_WEAPONS</YieldType>
+					<YieldType>YIELD_IRON_WEAPONS</YieldType>
 					<iYieldAmount>50</iYieldAmount>
 				</YieldEquipedNum>
 				<YieldEquipedNum>
@@ -1214,11 +1214,11 @@
 					<CombatGearTypes/>
 					<YieldEquipedNums>
 						<YieldEquipedNum>
-							<YieldType>YIELD_WEAPONS</YieldType>
+							<YieldType>YIELD_IRON_WEAPONS</YieldType>
 							<iYieldAmount>50</iYieldAmount>
 						</YieldEquipedNum>
 						<YieldEquipedNum>
-							<YieldType>YIELD_MAIL_ARMOR</YieldType>
+							<YieldType>YIELD_CHAIN_ARMOR</YieldType>
 							<iYieldAmount>25</iYieldAmount>
 						</YieldEquipedNum>
 					</YieldEquipedNums>
@@ -1269,11 +1269,11 @@
 			</CombatGearTypes>
 			<YieldEquipedNums>
 				<YieldEquipedNum>
-					<YieldType>YIELD_WEAPONS</YieldType>
+					<YieldType>YIELD_IRON_WEAPONS</YieldType>
 					<iYieldAmount>50</iYieldAmount>
 				</YieldEquipedNum>
 				<YieldEquipedNum>
-					<YieldType>YIELD_MAIL_ARMOR</YieldType>
+					<YieldType>YIELD_CHAIN_ARMOR</YieldType>
 					<iYieldAmount>25</iYieldAmount>
 				</YieldEquipedNum>
 			</YieldEquipedNums>
@@ -1300,7 +1300,7 @@
 					<CombatGearTypes/>
 					<YieldEquipedNums>
 						<YieldEquipedNum>
-							<YieldType>YIELD_WEAPONS</YieldType>
+							<YieldType>YIELD_STEEL_WEAPONS</YieldType>
 							<iYieldAmount>50</iYieldAmount>
 						</YieldEquipedNum>
 						<YieldEquipedNum>
@@ -1558,7 +1558,7 @@
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
-				<YieldType>YIELD_SILVER</YieldType>
+				<YieldType>YIELD_PRECIOUS_METALS</YieldType>
 			</YieldsProduced>
 			<YieldsConsumed>
 				<YieldType>NONE</YieldType>
@@ -1626,7 +1626,7 @@
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
-				<YieldType>YIELD_FUR</YieldType>
+				<YieldType>YIELD_HIDES</YieldType>
 			</YieldsProduced>
 			<YieldsConsumed>
 				<YieldType>NONE</YieldType>
@@ -1836,7 +1836,7 @@
 			<FreePromotions/>
 			<YieldsProduced>
 				<YieldType>YIELD_GRAIN</YieldType>
-				<YieldType>YIELD_FUR</YieldType>
+				<YieldType>YIELD_HIDES</YieldType>
 			</YieldsProduced>
 			<YieldsConsumed>
 				<YieldType>YIELD_SPICES</YieldType>
@@ -1908,7 +1908,7 @@
 				<YieldType>YIELD_LEATHER_ARMOR</YieldType>
 			</YieldsProduced>
 			<YieldsConsumed>
-				<YieldType>YIELD_FUR</YieldType>
+				<YieldType>YIELD_HIDES</YieldType>
 			</YieldsConsumed>
 			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,1,8</Button>
 			<ProfessionSubTypes/>
@@ -2043,7 +2043,7 @@
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
-				<YieldType>YIELD_TOOLS</YieldType>
+				<YieldType>YIELD_IRON_TOOLS</YieldType>
 			</YieldsProduced>
 			<YieldsConsumed>
 				<YieldType>YIELD_ORE</YieldType>
@@ -2080,19 +2080,19 @@
 			<FreePromotions/>
 			<YieldsProduced>
 				<YieldType>YIELD_SCALE_ARMOR</YieldType>
-				<YieldType>YIELD_MAIL_ARMOR</YieldType>
+				<YieldType>YIELD_CHAIN_ARMOR</YieldType>
 				<YieldType>YIELD_PLATE_ARMOR</YieldType>
 			</YieldsProduced>
 			<YieldsConsumed>
-				<YieldType>YIELD_TOOLS</YieldType>
-				<YieldType>YIELD_FUR</YieldType>
+				<YieldType>YIELD_IRON_TOOLS</YieldType>
+				<YieldType>YIELD_HIDES</YieldType>
 			</YieldsConsumed>
 			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,1,7</Button>
 			<ProfessionSubTypes/>
 		</ProfessionInfo>
 		<ProfessionInfo>
 			<Type>PROFESSION_GUNSMITH</Type>
-			<Description>Weapon Smith</Description>
+			<Description>Gun Smith</Description>
 			<Civilopedia>TXT_KEY_UNIT_GUNSMITH_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_PROFESSION_GUNSMITH_STRATEGY</Strategy>
 			<Help/>
@@ -2116,10 +2116,10 @@
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
-				<YieldType>YIELD_WEAPONS</YieldType>
+				<YieldType>YIELD_MUSKETS</YieldType>
 			</YieldsProduced>
 			<YieldsConsumed>
-				<YieldType>YIELD_ORE</YieldType>
+				<YieldType>YIELD_IRON_TOOLS</YieldType>
 			</YieldsConsumed>
 			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,1,7</Button>
 			<ProfessionSubTypes/>
@@ -2476,7 +2476,7 @@
 			<iAsset>0</iAsset>
 			<YieldEquipedNums>
 				<YieldEquipedNum>
-					<YieldType>YIELD_WEAPONS</YieldType>
+					<YieldType>YIELD_WOODEN_GOODS</YieldType>
 					<iYieldAmount>25</iYieldAmount>
 				</YieldEquipedNum>
 			</YieldEquipedNums>
@@ -2518,7 +2518,7 @@
 			<iAsset>0</iAsset>
 			<YieldEquipedNums>
 				<YieldEquipedNum>
-					<YieldType>YIELD_WEAPONS</YieldType>
+					<YieldType>YIELD_IRON_WEAPONS</YieldType>
 					<iYieldAmount>25</iYieldAmount>
 				</YieldEquipedNum>
 				<YieldEquipedNum>
@@ -2616,11 +2616,11 @@
 					<iYieldAmount>25</iYieldAmount>
 				</YieldEquipedNum>
 				<YieldEquipedNum>
-					<YieldType>YIELD_WEAPONS</YieldType>
+					<YieldType>YIELD_IRON_WEAPONS</YieldType>
 					<iYieldAmount>25</iYieldAmount>
 				</YieldEquipedNum>
 				<YieldEquipedNum>
-					<YieldType>YIELD_MAIL_ARMOR</YieldType>
+					<YieldType>YIELD_CHAIN_ARMOR</YieldType>
 					<iYieldAmount>25</iYieldAmount>
 				</YieldEquipedNum>
 			</YieldEquipedNums>
@@ -2666,7 +2666,7 @@
 					<iYieldAmount>25</iYieldAmount>
 				</YieldEquipedNum>
 				<YieldEquipedNum>
-					<YieldType>YIELD_WEAPONS</YieldType>
+					<YieldType>YIELD_STEEL_WEAPONS</YieldType>
 					<iYieldAmount>25</iYieldAmount>
 				</YieldEquipedNum>
 				<YieldEquipedNum>

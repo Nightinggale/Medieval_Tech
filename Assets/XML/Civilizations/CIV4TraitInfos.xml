@@ -1988,7 +1988,7 @@
 			<BuildingProductionModifiers/>
 			<BuildingRequiredYieldModifiers>
 				<BuildingRequiredYieldModifier>
-					<YieldType>YIELD_TOOLS</YieldType>
+					<YieldType>YIELD_IRON_TOOLS</YieldType>
 					<iModifier>-50</iModifier>
 				</BuildingRequiredYieldModifier>
 			</BuildingRequiredYieldModifiers>
@@ -2069,7 +2069,7 @@
 			<YieldModifiers/>
 			<TaxYieldModifiers>
 				<YieldModifier>
-					<YieldType>YIELD_WEAPONS</YieldType>
+					<YieldType>YIELD_IRON_WEAPONS</YieldType>
 					<iYield>1</iYield>
 				</YieldModifier>
 			</TaxYieldModifiers>
@@ -2528,7 +2528,7 @@
 					<BuildingClassType>BUILDINGCLASS_TRADING_POST</BuildingClassType>
 					<BuildingYields>
 						<YieldChange>
-							<YieldType>YIELD_TRADE_GOODS</YieldType>
+							<YieldType>YIELD_POTTERY</YieldType>
 							<iYieldChange>3</iYieldChange>
 						</YieldChange>
 					</BuildingYields>
@@ -2537,7 +2537,7 @@
 					<BuildingClassType>BUILDINGCLASS_MARKET</BuildingClassType>
 					<BuildingYields>
 						<YieldChange>
-							<YieldType>YIELD_TRADE_GOODS</YieldType>
+							<YieldType>YIELD_POTTERY</YieldType>
 							<iYieldChange>6</iYieldChange>
 						</YieldChange>
 					</BuildingYields>
@@ -2643,7 +2643,7 @@
 			<BuildingProductionModifiers/>
 			<BuildingRequiredYieldModifiers>
 				<BuildingRequiredYieldModifier>
-					<YieldType>YIELD_TOOLS</YieldType>
+					<YieldType>YIELD_IRON_TOOLS</YieldType>
 					<iModifier>-50</iModifier>
 				</BuildingRequiredYieldModifier>
 			</BuildingRequiredYieldModifiers>
@@ -2764,7 +2764,7 @@
 			<FreePromotionUnitCombats/>
 			<YieldModifiers>
 				<YieldModifier>
-					<YieldType>YIELD_FUR</YieldType>
+					<YieldType>YIELD_HIDES</YieldType>
 					<iYield>50</iYield>
 				</YieldModifier>
 			</YieldModifiers>
@@ -3094,7 +3094,7 @@
 					<BuildingClassType>BUILDINGCLASS_ARMORY</BuildingClassType>
 					<BuildingYields>
 						<YieldChange>
-							<YieldType>YIELD_WEAPONS</YieldType>
+							<YieldType>YIELD_IRON_WEAPONS</YieldType>
 							<iYieldChange>3</iYieldChange>
 						</YieldChange>
 					</BuildingYields>
@@ -3103,7 +3103,7 @@
 					<BuildingClassType>BUILDINGCLASS_MAGAZINE</BuildingClassType>
 					<BuildingYields>
 						<YieldChange>
-							<YieldType>YIELD_WEAPONS</YieldType>
+							<YieldType>YIELD_IRON_WEAPONS</YieldType>
 							<iYieldChange>3</iYieldChange>
 						</YieldChange>
 					</BuildingYields>
@@ -3112,7 +3112,7 @@
 					<BuildingClassType>BUILDINGCLASS_ARSENAL</BuildingClassType>
 					<BuildingYields>
 						<YieldChange>
-							<YieldType>YIELD_WEAPONS</YieldType>
+							<YieldType>YIELD_IRON_WEAPONS</YieldType>
 							<iYieldChange>3</iYieldChange>
 						</YieldChange>
 					</BuildingYields>
@@ -5178,7 +5178,7 @@
 					<BuildingClassType>BUILDINGCLASS_BLACKSMITH_HOUSE</BuildingClassType>
 					<BuildingYields>
 						<YieldChange>
-							<YieldType>YIELD_TOOLS</YieldType>
+							<YieldType>YIELD_IRON_TOOLS</YieldType>
 							<iYieldChange>1</iYieldChange>
 						</YieldChange>
 					</BuildingYields>
@@ -5187,7 +5187,7 @@
 					<BuildingClassType>BUILDINGCLASS_BLACKSMITH_SHOP</BuildingClassType>
 					<BuildingYields>
 						<YieldChange>
-							<YieldType>YIELD_TOOLS</YieldType>
+							<YieldType>YIELD_IRON_TOOLS</YieldType>
 							<iYieldChange>2</iYieldChange>
 						</YieldChange>
 					</BuildingYields>
@@ -5196,7 +5196,7 @@
 					<BuildingClassType>BUILDINGCLASS_IRONWORKS</BuildingClassType>
 					<BuildingYields>
 						<YieldChange>
-							<YieldType>YIELD_TOOLS</YieldType>
+							<YieldType>YIELD_IRON_TOOLS</YieldType>
 							<iYieldChange>3</iYieldChange>
 						</YieldChange>
 					</BuildingYields>

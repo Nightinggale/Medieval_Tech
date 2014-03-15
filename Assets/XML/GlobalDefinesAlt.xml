@@ -464,7 +464,7 @@
 	</Define>
 	<Define>
 		<DefineName>DEFAULT_TREASURE_YIELD</DefineName>
-		<DefineTextVal>YIELD_SILVER</DefineTextVal>
+		<DefineTextVal>YIELD_PRECIOUS_METALS</DefineTextVal>
 	</Define>
 	<Define>
 		<DefineName>PILGRAM_OFFER_GOLD</DefineName>

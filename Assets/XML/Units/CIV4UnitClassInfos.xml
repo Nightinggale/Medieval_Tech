@@ -297,69 +297,14 @@
 			<DefaultUnit>UNIT_FOOD</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_LUMBER</Type>
-			<Description>TXT_KEY_UNIT_LUMBER</Description>
-			<DefaultUnit>UNIT_LUMBER</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_SILVER</Type>
-			<Description>TXT_KEY_UNIT_SILVER</Description>
-			<DefaultUnit>UNIT_SILVER</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_COTTON</Type>
-			<Description>TXT_KEY_UNIT_COTTON</Description>
-			<DefaultUnit>UNIT_COTTON</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_FUR</Type>
-			<Description>Hides</Description>
-			<DefaultUnit>UNIT_FUR</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_SUGAR</Type>
-			<Description>Salt</Description>
-			<DefaultUnit>UNIT_SUGAR</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_ORE</Type>
-			<Description>TXT_KEY_UNIT_ORE</Description>
-			<DefaultUnit>UNIT_ORE</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_CLOTH</Type>
-			<Description>TXT_KEY_UNIT_CLOTH</Description>
-			<DefaultUnit>UNIT_CLOTH</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_COATS</Type>
-			<Description>TXT_KEY_UNIT_COATS</Description>
-			<DefaultUnit>UNIT_COATS</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_RUM</Type>
-			<Description>Ale</Description>
-			<DefaultUnit>UNIT_RUM</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_TOOLS</Type>
-			<Description>TXT_KEY_UNIT_TOOLS</Description>
-			<DefaultUnit>UNIT_TOOLS</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_MUSKETS</Type>
-			<Description>Weapons</Description>
-			<DefaultUnit>UNIT_MUSKETS</DefaultUnit>
+			<Type>UNITCLASS_GRAIN</Type>
+			<Description>Luxury Food</Description>
+			<DefaultUnit>UNIT_GRAIN</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_HORSES</Type>
 			<Description>TXT_KEY_UNIT_HORSES</Description>
 			<DefaultUnit>UNIT_HORSES</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_TRADE_GOODS</Type>
-			<Description>TXT_KEY_UNIT_TRADE_GOODS</Description>
-			<DefaultUnit>UNIT_TRADE_GOODS</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_CATTLE</Type>
@@ -372,14 +317,9 @@
 			<DefaultUnit>UNIT_SHEEP</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_GRAIN</Type>
-			<Description>Luxury Food</Description>
-			<DefaultUnit>UNIT_GRAIN</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_WOOL</Type>
-			<Description>Wool</Description>
-			<DefaultUnit>UNIT_WOOL</DefaultUnit>
+			<Type>UNITCLASS_LUMBER</Type>
+			<Description>TXT_KEY_UNIT_LUMBER</Description>
+			<DefaultUnit>UNIT_LUMBER</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_STONE</Type>
@@ -387,19 +327,24 @@
 			<DefaultUnit>UNIT_STONE</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_GOLD</Type>
-			<Description>Gold</Description>
-			<DefaultUnit>UNIT_GOLD</DefaultUnit>
+			<Type>UNITCLASS_STONE_TOOLS</Type>
+			<Description>TXT_KEY_UNIT_STONE_TOOLS</Description>
+			<DefaultUnit>UNIT_STONE_TOOLS</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_SPICES</Type>
-			<Description>Spices</Description>
-			<DefaultUnit>UNIT_SPICES</DefaultUnit>
+			<Type>UNITCLASS_STONE_WEAPONS</Type>
+			<Description>TXT_KEY_UNIT_STONE_WEAPONS</Description>
+			<DefaultUnit>UNIT_STONE_WEAPONS</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_BARLEY</Type>
-			<Description>Barley</Description>
-			<DefaultUnit>UNIT_BARLEY</DefaultUnit>
+			<Type>UNITCLASS_ORE</Type>
+			<Description>TXT_KEY_UNIT_ORE</Description>
+			<DefaultUnit>UNIT_ORE</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_PRECIOUS_METALS</Type>
+			<Description>TXT_KEY_UNIT_PRECIOUS_METALS</Description>
+			<DefaultUnit>UNIT_PRECIOUS_METALS</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_GRAPES</Type>
@@ -412,9 +357,44 @@
 			<DefaultUnit>UNIT_WINE</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_LEATHER</Type>
-			<Description>Leather</Description>
-			<DefaultUnit>UNIT_LEATHER</DefaultUnit>
+			<Type>UNITCLASS_HERBS</Type>
+			<Description>Herbs</Description>
+			<DefaultUnit>UNIT_HERBS</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_CLAY</Type>
+			<Description>Clay</Description>
+			<DefaultUnit>UNIT_CLAY</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_POTTERY</Type>
+			<Description>TXT_KEY_UNIT_POTTERY</Description>
+			<DefaultUnit>UNIT_POTTERY</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_COTTON</Type>
+			<Description>TXT_KEY_UNIT_COTTON</Description>
+			<DefaultUnit>UNIT_COTTON</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_CLOTH</Type>
+			<Description>TXT_KEY_UNIT_CLOTH</Description>
+			<DefaultUnit>UNIT_CLOTH</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_WOOL</Type>
+			<Description>Wool</Description>
+			<DefaultUnit>UNIT_WOOL</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_COATS</Type>
+			<Description>TXT_KEY_UNIT_COATS</Description>
+			<DefaultUnit>UNIT_COATS</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_HIDES</Type>
+			<Description>Hides</Description>
+			<DefaultUnit>UNIT_HIDES</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_LEATHER_ARMOR</Type>
@@ -422,19 +402,304 @@
 			<DefaultUnit>UNIT_LEATHER_ARMOR</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
+			<Type>UNITCLASS_COPPER</Type>
+			<Description>TXT_KEY_UNIT_COPPER</Description>
+			<DefaultUnit>UNIT_COPPER</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_TIN</Type>
+			<Description>TXT_KEY_UNIT_TIN</Description>
+			<DefaultUnit>UNIT_TIN</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_BRONZE</Type>
+			<Description>TXT_KEY_UNIT_BRONZE</Description>
+			<DefaultUnit>UNIT_BRONZE</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_BRONZE_WEAPONS</Type>
+			<Description>TXT_KEY_UNIT_BRONZE_WEAPONS</Description>
+			<DefaultUnit>UNIT_BRONZE_WEAPONS</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_BRONZE_ARMOR</Type>
+			<Description>TXT_KEY_UNIT_BRONZE_ARMOR</Description>
+			<DefaultUnit>UNIT_BRONZE_ARMOR</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_RICH_FOOD</Type>
+			<Description>TXT_KEY_UNIT_RICH_FOOD</Description>
+			<DefaultUnit>UNIT_RICH_FOOD</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_BARLEY</Type>
+			<Description>Barley</Description>
+			<DefaultUnit>UNIT_BARLEY</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_ALE</Type>
+			<Description>TXT_KEY_UNIT_ALE</Description>
+			<DefaultUnit>UNIT_ALE</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_SUGAR</Type>
+			<Description>Sugar</Description>
+			<DefaultUnit>UNIT_SUGAR</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_RUM</Type>
+			<Description>RUM</Description>
+			<DefaultUnit>UNIT_RUM</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_WOODEN_GOODS</Type>
+			<Description>TXT_KEY_UNIT_WOODEN_GOODS</Description>
+			<DefaultUnit>UNIT_WOODEN_GOODS</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_CUT_STONE</Type>
+			<Description>TXT_KEY_UNIT_CUT_STONE</Description>
+			<DefaultUnit>UNIT_CUT_STONE</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_IRON</Type>
+			<Description>TXT_KEY_UNIT_IRON</Description>
+			<DefaultUnit>UNIT_IRON</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_COAL</Type>
+			<Description>TXT_KEY_UNIT_COAL</Description>
+			<DefaultUnit>UNIT_COAL</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_STEEL</Type>
+			<Description>TXT_KEY_UNIT_STEEL</Description>
+			<DefaultUnit>UNIT_STEEL</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_GEMS</Type>
+			<Description>TXT_KEY_UNIT_GEMS</Description>
+			<DefaultUnit>UNIT_GEMS</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_IVORY</Type>
+			<Description>TXT_KEY_UNIT_IVORY</Description>
+			<DefaultUnit>UNIT_IVORY</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_CARVED_IVORY</Type>
+			<Description>TXT_KEY_UNIT_CARVED_IVORY</Description>
+			<DefaultUnit>UNIT_CARVED_IVORY</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_SPICES</Type>
+			<Description>Spices</Description>
+			<DefaultUnit>UNIT_SPICES</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_SILK_WORM</Type>
+			<Description>TXT_KEY_UNIT_SILK_WORM</Description>
+			<DefaultUnit>UNIT_SILK_WORM</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_SILK</Type>
+			<Description>TXT_KEY_UNIT_SILK</Description>
+			<DefaultUnit>UNIT_SILK</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_DYE</Type>
+			<Description>TXT_KEY_UNIT_DYE</Description>
+			<DefaultUnit>UNIT_DYE</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_FINE_CLOTH</Type>
+			<Description>TXT_KEY_UNIT_FINE_CLOTH</Description>
+			<DefaultUnit>UNIT_FINE_CLOTH</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_JADE</Type>
+			<Description>TXT_KEY_UNIT_JADE</Description>
+			<DefaultUnit>UNIT_JADE</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_JADE_CARVING</Type>
+			<Description>TXT_KEY_UNIT_JADE_CARVING</Description>
+			<DefaultUnit>UNIT_JADE_CARVING</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_JEWELLERY</Type>
+			<Description>TXT_KEY_UNIT_JEWELLERY</Description>
+			<DefaultUnit>UNIT_JEWELLERY</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_IRON_TOOLS</Type>
+			<Description>TXT_KEY_UNIT_IRON_TOOLS</Description>
+			<DefaultUnit>UNIT_IRON_TOOLS</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_IRON_WEAPONS</Type>
+			<Description>TXT_KEY_UNIT_IRON_WEAPONS</Description>
+			<DefaultUnit>UNIT_IRON_WEAPONS</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_STEEL_WEAPONS</Type>
+			<Description>TXT_KEY_UNIT_STEEL_WEAPONS</Description>
+			<DefaultUnit>UNIT_STEEL_WEAPONS</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
 			<Type>UNITCLASS_SCALE_ARMOR</Type>
 			<Description>Scale Armor</Description>
 			<DefaultUnit>UNIT_SCALE_ARMOR</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_MAIL_ARMOR</Type>
+			<Type>UNITCLASS_CHAIN_ARMOR</Type>
 			<Description>Mail Armor</Description>
-			<DefaultUnit>UNIT_MAIL_ARMOR</DefaultUnit>
+			<DefaultUnit>UNIT_CHAIN_ARMOR</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_PLATE_ARMOR</Type>
 			<Description>Plate Armor</Description>
 			<DefaultUnit>UNIT_PLATE_ARMOR</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_TINNED_FOOD</Type>
+			<Description>TXT_KEY_UNIT_TINNED_FOOD</Description>
+			<DefaultUnit>UNIT_TINNED_FOOD</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_OIL</Type>
+			<Description>TXT_KEY_UNIT_OIL</Description>
+			<DefaultUnit>UNIT_OIL</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_PLASTIC</Type>
+			<Description>TXT_KEY_UNIT_PLASTIC</Description>
+			<DefaultUnit>UNIT_PLASTIC</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_RUBBER</Type>
+			<Description>TXT_KEY_UNIT_RUBBER</Description>
+			<DefaultUnit>UNIT_RUBBER</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_SILICON</Type>
+			<Description>TXT_KEY_UNIT_SILICON</Description>
+			<DefaultUnit>UNIT_SILICON</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_ELECTRONICS</Type>
+			<Description>TXT_KEY_UNIT_ELECTRONICS</Description>
+			<DefaultUnit>UNIT_ELECTRONICS</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_ALUMINIUM</Type>
+			<Description>TXT_KEY_UNIT_ALUMINIUM</Description>
+			<DefaultUnit>UNIT_ALUMINIUM</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_FUEL</Type>
+			<Description>TXT_KEY_UNIT_FUEL</Description>
+			<DefaultUnit>UNIT_FUEL</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_CERAMICS</Type>
+			<Description>TXT_KEY_UNIT_CERAMICS</Description>
+			<DefaultUnit>UNIT_CERAMICS</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_STEAM_ENGINES</Type>
+			<Description>TXT_KEY_UNIT_STEAM_ENGINES</Description>
+			<DefaultUnit>UNIT_STEAM_ENGINES</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_TAILORED_CLOTHING</Type>
+			<Description>TXT_KEY_UNIT_TAILORED_CLOTHING</Description>
+			<DefaultUnit>UNIT_TAILORED_CLOTHING</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_HOUSEHOLD_GOODS</Type>
+			<Description>TXT_KEY_UNIT_HOUSEHOLD_GOODS</Description>
+			<DefaultUnit>UNIT_HOUSEHOLD_GOODS</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_APPLIANCES</Type>
+			<Description>TXT_KEY_UNIT_APPLIANCES</Description>
+			<DefaultUnit>UNIT_APPLIANCES</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_CARS</Type>
+			<Description>TXT_KEY_UNIT_CARS</Description>
+			<DefaultUnit>UNIT_CARS</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_MODERN_CARS</Type>
+			<Description>TXT_KEY_UNIT_BRONZE</Description>
+			<DefaultUnit>UNIT_BRONZE</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_COMPUTERS</Type>
+			<Description>TXT_KEY_UNIT_COMPUTERS</Description>
+			<DefaultUnit>UNIT_COMPUTERS</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_ARTILLERY_PARTS</Type>
+			<Description>TXT_KEY_UNIT_ARTILLERY_PARTS</Description>
+			<DefaultUnit>UNIT_ARTILLERY_PARTS</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_POWER_TOOLS</Type>
+			<Description>TXT_KEY_UNIT_POWER_TOOLS</Description>
+			<DefaultUnit>UNIT_POWER_TOOLS</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_MUSKETS</Type>
+			<Description>Muskets</Description>
+			<DefaultUnit>UNIT_MUSKETS</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_RIFLES</Type>
+			<Description>TXT_KEY_UNIT_RIFLES</Description>
+			<DefaultUnit>UNIT_RIFLES</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_AUTOMATIC_WEAPONS</Type>
+			<Description>TXT_KEY_UNIT_AUTOMATIC_WEAPONS</Description>
+			<DefaultUnit>UNIT_AUTOMATIC_WEAPONS</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_ROCKETS</Type>
+			<Description>TXT_KEY_UNIT_ROCKETS</Description>
+			<DefaultUnit>UNIT_ROCKETS</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_GUIDED_MISSILES</Type>
+			<Description>TXT_KEY_UNIT_GUIDED_MISSILES</Description>
+			<DefaultUnit>UNIT_GUIDED_MISSILES</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_ENGINE_PARTS</Type>
+			<Description>TXT_KEY_UNIT_ENGINE_PARTS</Description>
+			<DefaultUnit>UNIT_ENGINE_PARTS</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_ARMOR</Type>
+			<Description>TXT_KEY_UNIT_ARMOR</Description>
+			<DefaultUnit>UNIT_ARMOR</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_MODERN_ARMOR</Type>
+			<Description>TXT_KEY_UNIT_MODERN_ARMOR</Description>
+			<DefaultUnit>UNIT_MODERN_ARMOR</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_AERIAL_PARTS</Type>
+			<Description>TXT_KEY_UNIT_AERIAL_PARTS</Description>
+			<DefaultUnit>UNIT_AERIAL_PARTS</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_GOLD</Type>
+			<Description>Gold</Description>
+			<DefaultUnit>UNIT_GOLD</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_TREASURE</Type>

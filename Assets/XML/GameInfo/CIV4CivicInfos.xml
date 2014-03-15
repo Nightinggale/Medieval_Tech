@@ -400,6 +400,3694 @@
       <!--If a Yield is listed here it will be used to determine Industrial Victory. The code is only set up to use one Yield atm.-->
 			<IndustrializationVictory/>
 		</CivicInfo>
+<!-- Lib.spi't tech tree starts here [Trade Winds]-->
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_FARMING</Type>
+			<Description>Farming</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>300</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+		<!-- Ancient starts here (Should really we create ANCIENT_TECH?)[Trade Winds] -->
+			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+			<iX_Location>1</iX_Location>
+			<iY_Location>4</iY_Location>
+			<RequiredInvention/>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+			<RequiredUnitType/>
+			<RequiredYields>
+        			<RequiredYield>
+          				<RequiredYieldType>YIELD_FOOD</RequiredYieldType>
+          				<iYieldCost>100</iYieldCost>
+        			</RequiredYield>       
+      			</RequiredYields>
+			<iCostToResearch>6</iCostToResearch>
+			<AllowsYields/>
+			<AllowsBuildingTypes/>
+			<AllowsUnitClasses>
+				<AllowsUnitClass>
+					<AllowsUnit>UNITCLASS_FARMER</AllowsUnit>
+					<iChange>1</iChange>
+				</AllowsUnitClass>
+			</AllowsUnitClasses>
+			<AllowsPromotions/>
+			<AllowsProfessions>
+				<AllowsProfession>
+					<ProfessionType>PROFESSION_FARMER</ProfessionType>
+					<iChange>1</iChange>
+				</AllowsProfession>
+			</AllowsProfessions>
+			<AllowsTrait/>
+			<AllowsBuildTypes>
+				<ModBuildType>
+					<BuildType>IMPROVEMENT_FARM</BuildType>
+					<iChange>1</iChange>
+				</ModBuildType>
+			</AllowsBuildTypes>
+			<AllowsBuildTypesTerrain/>
+			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+			<NewDefaultUnitClass/>
+			<DisallowsTech/>
+			<RouteMovementMod/>
+			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+			<bisNoneTradeable>0</bisNoneTradeable>
+			<bNoGoodyTech>0</bNoGoodyTech>
+			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+			<iCenterPlotFoodBonus>2</iCenterPlotFoodBonus>
+			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+			<iGoldBonus>0</iGoldBonus>
+			<iFreeTechs>0</iFreeTechs>
+			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_SHEPERDING</Type>
+			<Description>Sheperding</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>300</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+			<iX_Location>1</iX_Location>
+			<iY_Location>6</iY_Location>
+			<RequiredInvention/>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+			<RequiredUnitType/>
+			<RequiredYields>
+        			<RequiredYield>
+          				<RequiredYieldType>YIELD_FOOD</RequiredYieldType>
+          				<iYieldCost>100</iYieldCost>
+        			</RequiredYield>       
+      			</RequiredYields>
+			<iCostToResearch>6</iCostToResearch>
+			<AllowsYields>
+				<AllowsYield>
+					<YieldType>YIELD_SHEEP</YieldType>
+					<iChange>1</iChange>
+				</AllowsYield>
+			</AllowsYields>
+			<AllowsBuildingTypes/>
+			<AllowsUnitClasses>
+				<AllowsUnitClass>
+					<AllowsUnit>UNITCLASS_SHEPARD</AllowsUnit>
+					<iChange>1</iChange>
+				</AllowsUnitClass>
+			</AllowsUnitClasses>
+			<AllowsPromotions/>
+			<AllowsProfessions>
+				<AllowsProfession>
+					<ProfessionType>PROFESSION_SHEPARD</ProfessionType>
+					<iChange>1</iChange>
+				</AllowsProfession>
+			</AllowsProfessions>
+			<AllowsTrait/>
+			<AllowsBuildTypes/>
+			<AllowsBuildTypesTerrain/>
+			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+			<NewDefaultUnitClass/>
+			<DisallowsTech/>
+			<RouteMovementMod/>
+			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+			<bisNoneTradeable>0</bisNoneTradeable>
+			<bNoGoodyTech>0</bNoGoodyTech>
+			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+			<iGoldBonus>0</iGoldBonus>
+			<iFreeTechs>0</iFreeTechs>
+			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_FIRE</Type>
+			<Description>Fire</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>300</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+			<iX_Location>1</iX_Location>
+			<iY_Location>10</iY_Location>
+			<RequiredInvention/>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+			<RequiredUnitType/>
+			<RequiredYields/>
+			<iCostToResearch>10</iCostToResearch>
+			<AllowsYields/>
+			<AllowsBuildingTypes/>
+			<AllowsUnitClasses/>
+			<AllowsPromotions/>
+			<AllowsProfessions/>
+			<AllowsTrait/>
+			<AllowsBuildTypes/>
+			<AllowsBuildTypesTerrain/>
+			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+			<NewDefaultUnitClass/>
+			<DisallowsTech/>
+			<RouteMovementMod/>
+			<AllowsRoutes/>
+			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+			<bisNoneTradeable>0</bisNoneTradeable>
+			<bNoGoodyTech>0</bNoGoodyTech>
+			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+			<iGoldBonus>0</iGoldBonus>
+			<iFreeTechs>0</iFreeTechs>
+			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_DANGER</Type>
+			<Description>Danger</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>1</iX_Location>
+			<iY_Location>12</iY_Location>
+      			<RequiredInvention/>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields/>
+			<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields/>
+      			<AllowsBuildingTypes/>
+			<AllowsUnitClasses/>
+			<AllowsPromotions/>
+			<AllowsProfessions>
+				<AllowsProfession>
+					<ProfessionType>PROFESSION_ARMED_PEASANT</ProfessionType>
+		<!-- Future PROFESSION_CLUBSMAN [Trade Winds] -->
+					<iChange>1</iChange>
+				</AllowsProfession>
+			</AllowsProfessions>
+      			<AllowsTrait/>
+     			<AllowsBuildTypes/>
+      			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_BUTCHERY</Type>
+			<Description>Butchery</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>3</iX_Location>
+			<iY_Location>4</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_FARMING</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields/>
+			<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields>
+				<AllowsYield>
+					<YieldType>YIELD_HIDES</YieldType>
+					<iChange>1</iChange>
+				</AllowsYield>
+				<AllowsYield>
+					<YieldType>YIELD_WOOL</YieldType>
+					<iChange>1</iChange>
+				</AllowsYield>
+			</AllowsYields>
+      			<AllowsBuildingTypes>
+				<AllowsBuildingType>
+					<BuildingType>BUILDINGCLASS_BUTCHERS_HOUSE</BuildingType>
+					<iChange>1</iChange>
+				</AllowsBuildingType>
+		<!-- Implement BUILDINGCLASS_SHEERING_SLAB [Trade Winds] -->
+			</AllowsBuildingTypes>
+			<AllowsUnitClasses>
+				<AllowsUnitClass>
+					<AllowsUnit>UNITCLASS_BUTCHER</AllowsUnit>
+					<iChange>1</iChange>
+				</AllowsUnitClass>
+			</AllowsUnitClasses>
+			<AllowsPromotions/>
+			<AllowsProfessions>
+				<AllowsProfession>
+					<ProfessionType>PROFESSION_BUTCHER</ProfessionType>
+					<iChange>1</iChange>
+				</AllowsProfession>
+			</AllowsProfessions>
+      			<AllowsTrait/>
+     			<AllowsBuildTypes/>
+			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_DOMESTICATION</Type>
+			<Description>Domestication</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>3</iX_Location>
+			<iY_Location>6</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_SHEPERDING</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields>
+        			<RequiredYield>
+          				<RequiredYieldType>YIELD_FOOD</RequiredYieldType>
+          				<iYieldCost>100</iYieldCost>
+        			</RequiredYield>       
+      			</RequiredYields>
+			<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields/>
+      			<AllowsBuildingTypes/>
+			<AllowsUnitClasses>
+				<AllowsUnitClass>
+					<AllowsUnit>UNITCLASS_HERDSMAN</AllowsUnit>
+					<iChange>1</iChange>
+				</AllowsUnitClass>
+				<AllowsUnitClass>
+					<AllowsUnit>UNITCLASS_RANCHER</AllowsUnit>
+					<iChange>1</iChange>
+				</AllowsUnitClass>
+			</AllowsUnitClasses>
+			<AllowsPromotions/>
+			<AllowsProfessions>
+				<AllowsProfession>
+					<ProfessionType>PROFESSION_HERDSMAN</ProfessionType>
+					<iChange>1</iChange>
+				</AllowsProfession>
+				<AllowsProfession>
+					<ProfessionType>PROFESSION_RANCHER</ProfessionType>
+					<iChange>1</iChange>
+				</AllowsProfession>
+			</AllowsProfessions>
+      			<AllowsTrait/>
+     			<AllowsBuildTypes/>
+      			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_WOOD_GATHERING</Type>
+			<Description>Wood Gathering</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>300</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+			<iX_Location>3</iX_Location>
+			<iY_Location>10</iY_Location>
+			<RequiredInvention>MEDIEVAL_TECH_FIRE</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+			<RequiredUnitType/>
+			<RequiredYields>
+        			<RequiredYield>
+          				<RequiredYieldType>YIELD_FOOD</RequiredYieldType>
+          				<iYieldCost>100</iYieldCost>
+        			</RequiredYield>       
+      			</RequiredYields>
+			<iCostToResearch>6</iCostToResearch>
+			<AllowsYields>
+				<AllowsYield>
+					<YieldType>YIELD_LUMBER</YieldType>
+					<iChange>1</iChange>
+				</AllowsYield>
+			</AllowsYields>
+			<AllowsBuildingTypes/>
+			<AllowsUnitClasses/>
+			<AllowsPromotions/>
+			<AllowsProfessions/>
+			<AllowsTrait/>
+			<AllowsBuildTypes/>
+			<AllowsBuildTypesTerrain/>
+			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+			<NewDefaultUnitClass/>
+			<DisallowsTech/>
+			<RouteMovementMod/>
+			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+			<bisNoneTradeable>0</bisNoneTradeable>
+			<bNoGoodyTech>0</bNoGoodyTech>
+			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+			<iGoldBonus>0</iGoldBonus>
+			<iFreeTechs>0</iFreeTechs>
+			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_HUNTING</Type>
+			<Description>Hunting</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>3</iX_Location>
+			<iY_Location>12</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_DANGER</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields/>
+			<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields/>
+      			<AllowsBuildingTypes/>
+			<AllowsUnitClasses>
+				<AllowsUnitClass>
+					<AllowsUnit>UNITCLASS_HUNTSMAN</AllowsUnit>
+					<iChange>1</iChange>
+				</AllowsUnitClass>
+			</AllowsUnitClasses>
+			<AllowsPromotions/>
+			<AllowsProfessions>
+				<AllowsProfession>
+					<ProfessionType>PROFESSION_HUNTSMAN</ProfessionType>
+					<iChange>1</iChange>
+				</AllowsProfession>
+		<!-- Future PROFESSION_SLINGER [Trade Winds] -->
+			</AllowsProfessions>
+      			<AllowsTrait/>
+     			<AllowsBuildTypes/>
+      			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_CRUDE_CLOTHING</Type>
+			<Description>Crude Clothing</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>5</iX_Location>
+				<iY_Location>4</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_BUTCHERY</RequiredInvention>
+				<RequiredInvention2/>
+				<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields/>
+			<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields>
+				<AllowsYield>
+					<YieldType>YIELD_COATS</YieldType>
+					<iChange>1</iChange>
+				</AllowsYield>				
+			</AllowsYields>
+      			<AllowsBuildingTypes/>
+		<!-- Implementing this causes crash because of lock free building [Trade Winds] -->
+		<!-- AllowsBuildingType BuildingType BUILDINGCLASS_COAT_TRADERS_HOUSE /BuildingType iChange 1 /iChange /AllowsBuildingType -->
+		<!-- Implement BUILDINGCLASS_SLAB [Trade Winds] -->				
+			<AllowsUnitClasses>
+				<AllowsUnitClass>
+					<AllowsUnit>UNITCLASS_COAT_MAKER</AllowsUnit>
+					<iChange>1</iChange>
+				</AllowsUnitClass>		
+			</AllowsUnitClasses>
+			<AllowsPromotions/>
+			<AllowsProfessions>
+				<AllowsProfession>
+					<ProfessionType>PROFESSION_COAT_TRADER</ProfessionType>
+					<iChange>1</iChange>
+				</AllowsProfession>
+		<!-- Future PROFESSION_SPEARMAN [Trade Winds] -->
+			</AllowsProfessions>
+      			<AllowsTrait/>
+     			<AllowsBuildTypes/>
+			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_ANIMAL_LABOUR</Type>
+			<Description>Animal Labour</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>300</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+		<!-- SHEEP Bonus Hardcoded? [Trade Winds] -->
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+					<ImprovementYields>
+						<YieldChange>
+							<YieldType>YIELD_FOOD</YieldType>
+							<iYieldChange>1</iYieldChange>
+						</YieldChange>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
+			<FreeUnitClasses/>
+			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+			<iX_Location>5</iX_Location>
+			<iY_Location>6</iY_Location>
+			<RequiredInvention>MEDIEVAL_TECH_DOMESTICATION</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+			<RequiredUnitType/>
+			<RequiredYields/>
+			<iCostToResearch>10</iCostToResearch>
+			<AllowsYields/>
+			<AllowsBuildingTypes/>
+			<AllowsUnitClasses/>
+		<!-- Future UNITCLASS_OX [Trade Winds] -->
+			<AllowsPromotions/>
+			<AllowsProfessions/>
+			<AllowsTrait/>
+			<AllowsBuildTypes/>
+			<AllowsBuildTypesTerrain/>
+			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+			<NewDefaultUnitClass/>
+			<DisallowsTech/>
+			<RouteMovementMod/>
+			<AllowsRoutes/>
+			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+			<bisNoneTradeable>0</bisNoneTradeable>
+			<bNoGoodyTech>0</bNoGoodyTech>
+			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+			<iGoldBonus>0</iGoldBonus>
+			<iFreeTechs>0</iFreeTechs>
+			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_STONE_GATHERING</Type>
+			<Description>Stone Gathering</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>300</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+			<iX_Location>5</iX_Location>
+			<iY_Location>10</iY_Location>
+			<RequiredInvention>MEDIEVAL_TECH_WOOD_GATHERING</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+			<RequiredUnitType/>
+			<RequiredYields>
+        			<RequiredYield>
+          				<RequiredYieldType>YIELD_FOOD</RequiredYieldType>
+          				<iYieldCost>100</iYieldCost>
+        			</RequiredYield>       
+      			</RequiredYields>
+			<iCostToResearch>6</iCostToResearch>
+			<AllowsYields/>
+			<AllowsBuildingTypes/>
+			<AllowsUnitClasses>
+				<AllowsUnitClass>
+					<AllowsUnit>UNITCLASS_QUARRYMAN</AllowsUnit>
+					<iChange>1</iChange>
+				</AllowsUnitClass>
+			</AllowsUnitClasses>
+			<AllowsPromotions/>
+			<AllowsProfessions>
+				<AllowsProfession>
+					<ProfessionType>PROFESSION_QUARRYMAN</ProfessionType>
+					<iChange>1</iChange>
+				</AllowsProfession>
+			</AllowsProfessions>
+			<AllowsTrait/>
+			<AllowsBuildTypes/>
+			<AllowsBuildTypesTerrain/>
+			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+			<NewDefaultUnitClass/>
+			<DisallowsTech/>
+			<RouteMovementMod/>
+			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+			<bisNoneTradeable>0</bisNoneTradeable>
+			<bNoGoodyTech>0</bNoGoodyTech>
+			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+			<iGoldBonus>0</iGoldBonus>
+			<iFreeTechs>0</iFreeTechs>
+			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_STONE_TOOL_MAKING</Type>
+			<Description>Stone Tool Making</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+		<!-- STONE Bonus Hardcoded? [Trade Winds] -->
+		<!-- WOOD Bonus Hardcoded? [Trade Winds] -->
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>5</iX_Location>
+			<iY_Location>12</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_HUNTING</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields/>
+			<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields/>
+		<!-- Future YIELD_STONE_TOOL [Trade Winds] -->
+      			<AllowsBuildingTypes>
+				<AllowsBuildingType>
+					<BuildingType>BUILDINGCLASS_ARMORSMITHS_SHOP_1</BuildingType>
+					<iChange>1</iChange>
+				</AllowsBuildingType>
+		<!-- Implement BUILDINGCLASS_TOOL_MAKING_SLAB [Trade Winds] -->
+			</AllowsBuildingTypes>	
+			<AllowsUnitClasses>
+				<AllowsUnitClass>
+					<AllowsUnit>UNITCLASS_PIONEER</AllowsUnit>
+					<iChange>1</iChange>		
+				</AllowsUnitClass>
+		<!-- Future UNITCLASS_STONE_TOOL_MAKER [Trade Winds] -->
+			</AllowsUnitClasses>
+			<AllowsPromotions/>
+			<AllowsProfessions>
+				<AllowsProfession>
+					<ProfessionType>PROFESSION_PIONEER</ProfessionType>
+					<iChange>1</iChange>
+				</AllowsProfession>
+		<!-- Future PROFESSION_STONE_TOOL_MAKER [Trade Winds] -->
+			</AllowsProfessions>
+      			<AllowsTrait/>
+     			<AllowsBuildTypes/>
+			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_LEATHER_ARMOUR_MAKING</Type>
+			<Description>Leather Armour Making</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>7</iX_Location>
+			<iY_Location>4</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_CRUDE_CLOTHING</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields/>
+			<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields>
+				<AllowsYield>
+					<YieldType>YIELD_LEATHER_ARMOR</YieldType>
+					<iChange>1</iChange>
+				</AllowsYield>				
+			</AllowsYields>
+      			<AllowsBuildingTypes/>
+		<!-- Implement BUILDINGCLASS_ARMOUR_MAKING_SLAB [Trade Winds] -->		
+			<AllowsUnitClasses>
+				<AllowsUnitClass>
+					<AllowsUnit>UNITCLASS_TANNER</AllowsUnit>
+					<iChange>1</iChange>
+				</AllowsUnitClass>
+		<!-- Future PROFESSION_STONE_SPEARMAN [Trade Winds] -->
+			</AllowsUnitClasses>
+			<AllowsPromotions/>
+			<AllowsProfessions>
+				<AllowsProfession>
+					<ProfessionType>PROFESSION_FUR_TRADER</ProfessionType>
+					<iChange>1</iChange>
+				</AllowsProfession>
+			</AllowsProfessions>
+      			<AllowsTrait/>
+     			<AllowsBuildTypes/>				
+			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_RIDING</Type>
+			<Description>Riding</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>300</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+			<iX_Location>7</iX_Location>
+			<iY_Location>6</iY_Location>
+			<RequiredInvention>MEDIEVAL_TECH_ANIMAL_LABOUR</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+			<RequiredUnitType/>
+			<RequiredYields>
+        			<RequiredYield>
+          				<RequiredYieldType>YIELD_HORSES</RequiredYieldType>
+          				<iYieldCost>100</iYieldCost>
+        			</RequiredYield>       
+      			</RequiredYields>
+			<iCostToResearch>6</iCostToResearch>
+			<AllowsYields/>
+			<AllowsBuildingTypes/>
+			<AllowsUnitClasses/>
+			<AllowsPromotions/>
+			<AllowsProfessions>
+				<AllowsProfession>
+					<ProfessionType>PROFESSION_CALVARY</ProfessionType>
+					<iChange>1</iChange>
+				</AllowsProfession>
+			</AllowsProfessions>
+			<AllowsTrait/>
+			<AllowsBuildTypes/>
+			<AllowsBuildTypesTerrain/>
+			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+			<NewDefaultUnitClass/>
+			<DisallowsTech/>
+			<RouteMovementMod/>
+			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+			<bisNoneTradeable>0</bisNoneTradeable>
+			<bNoGoodyTech>0</bNoGoodyTech>
+			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+			<iGoldBonus>0</iGoldBonus>
+			<iFreeTechs>0</iFreeTechs>
+			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_RAFT_BUILDING</Type>
+			<Description>Raft Building</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>300</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+			<iX_Location>7</iX_Location>
+			<iY_Location>10</iY_Location>
+			<RequiredInvention>MEDIEVAL_TECH_STONE_GATHERING</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+			<RequiredUnitType/>
+			<RequiredYields/>
+			<iCostToResearch>10</iCostToResearch>
+			<AllowsYields/>
+			<AllowsBuildingTypes/>
+			<AllowsUnitClasses/>
+		<!-- Future UNITCLASS_RAFT [Trade Winds] -->
+			<AllowsPromotions/>
+			<AllowsProfessions/>
+			<AllowsTrait/>
+			<AllowsBuildTypes/>
+			<AllowsBuildTypesTerrain/>
+			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+			<NewDefaultUnitClass/>
+			<DisallowsTech/>
+			<RouteMovementMod/>
+			<AllowsRoutes/>
+			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+			<bisNoneTradeable>0</bisNoneTradeable>
+			<bNoGoodyTech>0</bNoGoodyTech>
+			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+			<iGoldBonus>0</iGoldBonus>
+			<iFreeTechs>0</iFreeTechs>
+			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_STONE_WEAPON_MAKING</Type>
+			<Description>Stone Weapon Making</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>7</iX_Location>
+			<iY_Location>12</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_STONE_TOOL_MAKING</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields/>
+			<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields>
+				<AllowsYield>
+					<YieldType>YIELD_STONE</YieldType>
+					<iChange>1</iChange>
+				</AllowsYield>
+		<!-- Future YIELD_STONE_WEAPONS [Trade Winds] -->
+			</AllowsYields>
+      			<AllowsBuildingTypes>
+				<AllowsBuildingType>
+					<BuildingType>BUILDINGCLASS_ARMORY</BuildingType>
+					<iChange>1</iChange>
+				</AllowsBuildingType>
+		<!-- Implement BUILDINGCLASS_STONE_WEAPON_MAKING_SLAB [Trade Winds] -->
+			</AllowsBuildingTypes>		
+			<AllowsUnitClasses>
+				<AllowsUnitClass>
+					<AllowsUnit>UNITCLASS_GUNSMITH</AllowsUnit>
+					<iChange>1</iChange>
+				</AllowsUnitClass>
+			</AllowsUnitClasses>
+			<AllowsPromotions/>
+			<AllowsProfessions>
+				<AllowsProfession>
+					<ProfessionType>PROFESSION_GUNSMITH</ProfessionType>
+					<iChange>1</iChange>
+				</AllowsProfession>
+		<!-- Future PROFESSION_STONE_CLUBSMAN [Trade Winds] -->
+			</AllowsProfessions>
+      			<AllowsTrait/>
+     			<AllowsBuildTypes/>
+			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_WEAVING</Type>
+			<Description>Weaving</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>9</iX_Location>
+			<iY_Location>4</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_LEATHER_ARMOUR_MAKING</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields>
+        			<RequiredYield>
+          				<RequiredYieldType>YIELD_COTTON</RequiredYieldType>
+          				<iYieldCost>100</iYieldCost>
+        			</RequiredYield>       
+      			</RequiredYields>
+			<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields>
+				<AllowsYield>
+					<YieldType>YIELD_CLOTH</YieldType>
+					<iChange>1</iChange>
+				</AllowsYield>
+			</AllowsYields>
+      			<AllowsBuildingTypes/>
+		<!-- Implement BUILDINGCLASS_WEAVERS_HUT [Trade Winds] -->
+		<!-- Implement BUILDINGCLASS_TANNERS_HUT [Trade Winds] -->
+			<AllowsUnitClasses>
+				<AllowsUnitClass>
+					<AllowsUnit>UNITCLASS_WEAVER</AllowsUnit>
+					<iChange>1</iChange>
+				</AllowsUnitClass>
+			</AllowsUnitClasses>
+			<AllowsPromotions/>
+			<AllowsProfessions>
+				<AllowsProfession>
+					<ProfessionType>PROFESSION_WEAVER</ProfessionType>
+					<iChange>1</iChange>
+				</AllowsProfession>
+			</AllowsProfessions>
+      			<AllowsTrait/>
+     			<AllowsBuildTypes/>
+      			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_ARCHERY</Type>
+			<Description>Archery</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>9</iX_Location>
+			<iY_Location>6</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_RIDING</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields>
+        			<RequiredYield>
+          				<RequiredYieldType>YIELD_LUMBER</RequiredYieldType>
+          				<iYieldCost>100</iYieldCost>
+        			</RequiredYield>
+				<RequiredYield>
+          				<RequiredYieldType>YIELD_HIDES</RequiredYieldType>
+          				<iYieldCost>100</iYieldCost>
+        			</RequiredYield>          
+      			</RequiredYields>
+			<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields/>
+			<AllowsBuildingTypes/>
+			<AllowsUnitClasses/>
+			<AllowsPromotions/>
+			<AllowsProfessions>
+				<AllowsProfession>
+					<ProfessionType>PROFESSION_MISSLEMAN</ProfessionType>
+					<iChange>1</iChange>
+				</AllowsProfession>
+			</AllowsProfessions>
+      			<AllowsTrait/>
+     			<AllowsBuildTypes/>
+      			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_KILNS</Type>
+			<Description>Kilns</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>9</iX_Location>
+			<iY_Location>10</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_RAFT_BUILDING</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields>
+        			<RequiredYield>
+          				<RequiredYieldType>YIELD_STONE</RequiredYieldType>
+          				<iYieldCost>100</iYieldCost>
+        			</RequiredYield>
+		<!-- Also requires YIELD_CLAY [Trade Winds] -->       
+      			</RequiredYields>
+			<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields/>
+		<!-- Future YIELD_POTTERY [Trade Winds] --> 
+      			<AllowsBuildingTypes/>
+		<!-- Implement BUILDINGCLASS_POTTERS_HUT [Trade Winds] -->
+			<AllowsUnitClasses/>
+		<!-- Future UNITCLASS_POTTER [Trade Winds] -->
+			<AllowsPromotions/>
+			<AllowsProfessions/>
+		<!-- Future PROFESSION_POTTER [Trade Winds] -->
+      			<AllowsTrait/>
+     			<AllowsBuildTypes/>
+      			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_PIT_MINING</Type>
+			<Description>Pit Mining</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>9</iX_Location>
+			<iY_Location>12</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_STONE_WEAPON_MAKING</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields/>
+        		<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields>
+				<AllowsYield>
+					<YieldType>YIELD_ORE</YieldType>
+					<iChange>1</iChange>
+				</AllowsYield>
+		<!-- Future YIELD_CLAY [Trade Winds] -->
+			</AllowsYields>
+      			<AllowsBuildingTypes/>
+			<AllowsUnitClasses>
+				<AllowsUnitClass>
+					<AllowsUnit>UNITCLASS_MINER</AllowsUnit>
+					<iChange>1</iChange>
+				</AllowsUnitClass>
+		<!-- Future UNITCLASS_CLAY_MINER [Trade Winds] -->
+			</AllowsUnitClasses>
+			<AllowsPromotions/>
+			<AllowsProfessions>
+				<AllowsProfession>
+					<ProfessionType>PROFESSION_ORE_MINER</ProfessionType>
+					<iChange>1</iChange>
+				</AllowsProfession>
+		<!-- Future PROFSSION_CLAY_MINER [Trade Winds] -->
+			</AllowsProfessions>
+      			<AllowsTrait/>
+     			<AllowsBuildTypes/>
+		<!-- Future IMPROVEMENT_CLAY_PIT [Trade Winds] -->
+      			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_EARLY_CLASSICAL_SHIP_BUILDING</Type>
+			<Description>Early Classical Ship Building</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>11</iX_Location>
+			<iY_Location>4</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_WEAVING</RequiredInvention>
+			<RequiredInvention2>MEDIEVAL_TECH_RAFT_BUILDING</RequiredInvention2>
+			<RequiredInventionOr/>		
+			<RequiredUnitType/>
+      			<RequiredYields>
+        			<RequiredYield>
+          				<RequiredYieldType>YIELD_LUMBER</RequiredYieldType>
+          				<iYieldCost>100</iYieldCost>
+        			</RequiredYield>       
+      			</RequiredYields>
+			<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields/>
+			<AllowsBuildingTypes>
+				<AllowsBuildingType>
+					<BuildingType>BUILDINGCLASS_DOCK</BuildingType>
+					<iChange>1</iChange>
+				</AllowsBuildingType>
+			</AllowsBuildingTypes>		
+			<AllowsUnitClasses/>
+		<!-- Future UNITCLASS_BIREME [Trade Winds] -->
+			<AllowsPromotions/>
+			<AllowsProfessions/>
+			<AllowsTrait/>
+     			<AllowsBuildTypes/>
+      			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_CULTIVATION</Type>
+			<Description>Cultivation</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>11</iX_Location>
+			<iY_Location>6</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_ARCHERY</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields/>
+        		<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields>
+				<AllowsYield>
+					<YieldType>YIELD_COTTON</YieldType>
+					<iChange>1</iChange>
+				</AllowsYield>
+				<AllowsYield>
+					<YieldType>YIELD_GRAPES</YieldType>
+					<iChange>1</iChange>
+				</AllowsYield>
+		<!-- Future YIELD_HERBS [Trade Winds] -->
+			</AllowsYields>
+      			<AllowsBuildingTypes/>
+			<AllowsUnitClasses>
+				<AllowsUnitClass>
+					<AllowsUnit>UNITCLASS_COTTON_PLANTER</AllowsUnit>
+					<iChange>1</iChange>
+				</AllowsUnitClass>
+				<AllowsUnitClass>
+					<AllowsUnit>UNITCLASS_VINEYARD_PLANTER</AllowsUnit>
+					<iChange>1</iChange>
+				</AllowsUnitClass>
+		<!-- Future UNITCLASS_HERB_PLANTER [Trade Winds] -->
+			</AllowsUnitClasses>
+			<AllowsPromotions/>
+			<AllowsProfessions>
+				<AllowsProfession>
+					<ProfessionType>PROFESSION_COTTON_PLANTER</ProfessionType>
+					<iChange>1</iChange>
+				</AllowsProfession>
+				<AllowsProfession>
+					<ProfessionType>PROFESSION_TOBACCO_PLANTER</ProfessionType>
+					<iChange>1</iChange>
+				</AllowsProfession>
+		<!-- Future PROFESSION_HERB_PLANTER [Trade Winds] -->
+			</AllowsProfessions>
+      			<AllowsTrait/>
+     			<AllowsBuildTypes/>
+      			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_EARLY_SMELTING</Type>
+			<Description>Early Smelting</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>11</iX_Location>
+			<iY_Location>10</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_KILNS</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields/>
+        		<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields/>
+		<!-- Future YIELD_TIN [Trade Winds] -->
+		<!-- Future YIELD_COPPER [Trade Winds] -->
+      			<AllowsBuildingTypes/>
+		<!-- Implement BUILDINGCLASS_SMELTER_HUT [Trade Winds] -->
+			<AllowsUnitClasses/>
+		<!-- Implement UNITCLASS_SMELTER [Trade Winds] -->
+			<AllowsPromotions/>
+			<AllowsProfessions/>
+		<!-- Implement PROFESSION_SMELTER [Trade Winds] -->
+      			<AllowsTrait/>
+     			<AllowsBuildTypes/>
+      			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_CLASSICAL_CONSTRUCTION</Type>
+			<Description>Classical Construction</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>11</iX_Location>
+			<iY_Location>12</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_PIT_MINING</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields>
+        			<RequiredYield>
+          				<RequiredYieldType>YIELD_LUMBER</RequiredYieldType>
+          				<iYieldCost>100</iYieldCost>
+        			</RequiredYield>       
+      			</RequiredYields>
+			<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields/>
+			<AllowsBuildingTypes/>
+		<!-- Implement BUILDINGCLASS_BUILDERS_HUT [Trade Winds] -->
+			<AllowsUnitClasses/>				
+		<!-- Future UNITCLASS_BUILDER [Trade Winds] -->
+		<!-- Future UNITCLASS_CHARIOT [Trade Winds] -->
+		<!-- Future UNITCLASS_CATAPULT [Trade Winds] -->
+			<AllowsPromotions/>
+			<AllowsProfessions/>
+		<!-- Future PROFESSION_BUILDER [Trade Winds] -->
+			<AllowsTrait/>
+     			<AllowsBuildTypes/>
+      			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_WINE_MAKING</Type>
+			<Description>Wine Making</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>13</iX_Location>
+			<iY_Location>6</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_CULTIVATION</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields>
+        			<RequiredYield>
+          				<RequiredYieldType>YIELD_GRAPES</RequiredYieldType>
+          				<iYieldCost>100</iYieldCost>
+        			</RequiredYield>       
+      			</RequiredYields>
+			<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields>
+				<AllowsYield>
+					<YieldType>YIELD_WINE</YieldType>
+					<iChange>1</iChange>
+				</AllowsYield>
+			</AllowsYields>
+      			<AllowsBuildingTypes/>
+		<!-- Implement BUILDINGCLASS_WINE_MAKER_HOUSE (Should really be given when founding cities?) [Trade Winds] -->
+			<AllowsUnitClasses>
+				<AllowsUnitClass>
+					<AllowsUnit>UNITCLASS_WINE_MAKER</AllowsUnit>
+					<iChange>1</iChange>
+				</AllowsUnitClass>
+			</AllowsUnitClasses>
+			<AllowsPromotions/>
+			<AllowsProfessions>
+				<AllowsProfession>
+					<ProfessionType>PROFESSION_TOBACCONIST</ProfessionType>
+					<iChange>1</iChange>
+				</AllowsProfession>
+			</AllowsProfessions>
+      			<AllowsTrait/>
+     			<AllowsBuildTypes/>
+      			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_BRONZE_SMELTING</Type>
+			<Description>Bronze Smelting</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>13</iX_Location>
+			<iY_Location>10</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_EARLY_SMELTING</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields/>
+        	<!-- Required Future YIELD_TIN [Trade Winds] -->
+		<!-- Required Future YIELD_COPPER [Trade Winds] -->
+			<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields/>
+		<!-- Required Future YIELD_BRONZE [Trade Winds] -->
+      			<AllowsBuildingTypes/>
+			<AllowsUnitClasses/>
+		<!-- Future UNITCLASS_SMELTER -->
+			<AllowsPromotions/>
+			<AllowsProfessions/>
+		<!-- Future PROFESSION_SMELTER -->
+      			<AllowsTrait/>
+     			<AllowsBuildTypes/>
+      			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_CARPENTRY</Type>
+			<Description>Carpentry</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>13</iX_Location>
+			<iY_Location>12</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_CLASSICAL_CONSTRUCTION</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields>
+        			<RequiredYield>
+          				<RequiredYieldType>YIELD_LUMBER</RequiredYieldType>
+          				<iYieldCost>100</iYieldCost>
+        			</RequiredYield>       
+      			</RequiredYields>
+			<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields/>
+		<!-- Future YIELD_WOODEN_GOODS [Trade Winds] -->
+      			<AllowsBuildingTypes/>
+		<!-- Implement BUILDINGCLASS_CARPENTER_HOUSE (Should really be given when founding cities?) [Trade Winds] -->			
+			<AllowsUnitClasses>
+				<AllowsUnitClass>
+					<AllowsUnit>UNITCLASS_CARPENTER</AllowsUnit>
+					<iChange>1</iChange>
+				</AllowsUnitClass>
+			</AllowsUnitClasses>
+			<AllowsPromotions/>
+			<AllowsProfessions>
+				<AllowsProfession>
+					<ProfessionType>PROFESSION_CARPENTER</ProfessionType>
+					<iChange>1</iChange>
+				</AllowsProfession>
+			</AllowsProfessions>
+      			<AllowsTrait/>
+     			<AllowsBuildTypes/>
+      			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_BRONZE_ARMOUR_MAKING</Type>
+			<Description>Bronze Armour Making</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>15</iX_Location>
+			<iY_Location>4</iY_Location>
+			<RequiredInvention>MEDIEVAL_TECH_EARLY_CLASSICAL_SHIP_BUILDING</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields/>
+        	<!-- Required Future YIELD_TIN [Trade Winds] -->
+		<!-- Required Future YIELD_COPPER [Trade Winds] -->
+			<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields/>
+		<!-- Future BUILDINGCLASS_BRONZE_ARMOUR_HUT [Trade Winds]-->
+      			<AllowsBuildingTypes/>
+		<!-- Implement WINE_MAKER_HOUSE (Should really be given when founding cities?) [Trade Winds] -->
+			<AllowsUnitClasses>
+				<AllowsUnitClass>
+					<AllowsUnit>UNITCLASS_ARMORSMITH</AllowsUnit>
+					<iChange>1</iChange>
+				</AllowsUnitClass>
+		<!-- Future UNITCLASS_HOPLITE [Trade Winds]-->
+			</AllowsUnitClasses>
+			<AllowsPromotions/>
+			<AllowsProfessions>
+				<AllowsProfession>
+					<ProfessionType>PROFESSION_ARMORSMITH</ProfessionType>
+					<iChange>1</iChange>
+				</AllowsProfession>
+			</AllowsProfessions>
+      			<AllowsTrait/>
+     			<AllowsBuildTypes/>
+      			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_OX_COLLAR</Type>
+			<Description>Ox Collar</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>15</iX_Location>
+			<iY_Location>6</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_WINE_MAKING</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields>
+        			<RequiredYield>
+          				<RequiredYieldType>YIELD_CATTLE</RequiredYieldType>
+          				<iYieldCost>100</iYieldCost>
+        			</RequiredYield>
+		<!-- Future YIELD_WOODEN_GOODS [Trade Winds] -->      
+      			</RequiredYields>
+			<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields/>
+			<AllowsBuildingTypes/>
+			<AllowsUnitClasses/>
+		<!-- Future UNITCLASS_OX_CART [Trade Winds] -->
+			<AllowsPromotions/>
+			<AllowsProfessions/>
+			<AllowsTrait/>
+     			<AllowsBuildTypes/>
+      			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_BRONZE_WEAPON_MAKING</Type>
+			<Description>Bronze Weapon Making</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>15</iX_Location>
+			<iY_Location>10</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_BRONZE_SMELTING</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields/>
+        	<!-- Future YIELD_BRONZE [Trade Winds]-->
+			<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields/>
+		<!-- Future YIELD_BRONZE_WEAPONS [Trade Winds]-->
+      			<AllowsBuildingTypes/>
+		<!-- Implement BUILDINGCLASS_WEAPON_SMITH_HUT (There is a previous Stone Weapon Smith) [Trade Winds] -->
+			<AllowsUnitClasses/>
+			<AllowsPromotions/>
+			<AllowsProfessions/>
+			<AllowsTrait/>
+     			<AllowsBuildTypes/>
+      			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_SHAFT_MINING</Type>
+			<Description>Shaft Mining</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+		<!-- +2 ORE PEAKS Bonus Hardcoded? [Trade Winds] -->
+		<!-- +1 ORE MOUNTAINS Bonus Hardcoded? [Trade Winds] -->
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>15</iX_Location>
+			<iY_Location>12</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_CARPENTRY</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields>
+        			<RequiredYield>
+          				<RequiredYieldType>YIELD_LUMBER</RequiredYieldType>
+          				<iYieldCost>100</iYieldCost>
+        			</RequiredYield>
+				<RequiredYield>
+          				<RequiredYieldType>YIELD_STONE</RequiredYieldType>
+          				<iYieldCost>100</iYieldCost>
+        			</RequiredYield>       
+      			</RequiredYields>
+			<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields/>				
+		<!-- Future YIELD_PRECIOUS_METALS [Trade Winds]-->
+      			<AllowsBuildingTypes/>
+		<!-- Implement BUILDINGCLASS_WINE_MAKER_HOUSE (Should really be given when founding cities?) [Trade Winds] -->
+			<AllowsUnitClasses/>
+		<!-- Future UNITCLASS_MINER ?? [Trade Winds]-->
+			<AllowsPromotions/>
+			<AllowsProfessions/>
+		<!-- Future PROFESSION_MINER ?? [Trade Winds]-->
+      			<AllowsTrait/>
+     			<AllowsBuildTypes>
+				<ModBuildType>
+					<BuildType>IMPROVEMENT_MINE</BuildType>
+					<iChange>1</iChange>
+				</ModBuildType>
+			</AllowsBuildTypes>
+      			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_BRONZE_AGE_CAVALRY</Type>
+			<Description>Bronze Age Cavalry</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>17</iX_Location>
+			<iY_Location>4</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_BRONZE_ARMOUR_MAKING</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields/>
+        		<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields/>
+			<AllowsBuildingTypes/>
+			<AllowsUnitClasses/>
+		<!-- Future UNITCLASS_COMPANION_CAVALRY -->
+			<AllowsPromotions/>
+			<AllowsProfessions/>
+			<AllowsTrait/>
+     			<AllowsBuildTypes/>
+      			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_PATRICIAN_NOBILITY</Type>
+			<Description>Patrician Nobility</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>17</iX_Location>
+			<iY_Location>6</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_WINE_MAKING</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields>
+        			<RequiredYield>
+          				<RequiredYieldType>YIELD_FOOD</RequiredYieldType>
+          				<iYieldCost>100</iYieldCost>
+        			</RequiredYield>       
+      			</RequiredYields>
+			<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields>
+				<AllowsYield>
+					<YieldType>YIELD_GRAIN</YieldType>
+					<iChange>1</iChange>
+				</AllowsYield>
+			</AllowsYields>
+      			<AllowsBuildingTypes/>
+		<!-- Implement BUILDINGCLASS_COOK_HOUSE [Trade Winds] -->
+			<AllowsUnitClasses/>
+		<!-- Future UNITCLASS_COOK [Trade Winds]-->
+		<!-- Future UNITCLASS_PATRICIAN [Trade Winds]-->
+			<AllowsPromotions/>
+			<AllowsProfessions/>
+		<!-- Future PROFESSION_COOK [Trade Winds]-->
+      			<AllowsTrait/>
+     			<AllowsBuildTypes/>
+      			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_STONE_MASONRY</Type>
+			<Description>Stone Masonry</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>17</iX_Location>
+			<iY_Location>12</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_CARPENTRY</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields>
+        			<RequiredYield>
+          				<RequiredYieldType>YIELD_STONE</RequiredYieldType>
+          				<iYieldCost>100</iYieldCost>
+        			</RequiredYield>       
+      			</RequiredYields>
+			<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields/>
+		<!-- Future YIELD_CUT_STONE [Trade Winds]-->
+      			<AllowsBuildingTypes/>
+			<AllowsUnitClasses/>
+		<!-- Future UNITCLASS_STONE_MASON [Trade Winds]-->
+			<AllowsPromotions/>
+			<AllowsProfessions/>
+		<!-- Future PROFESSION_STONE_MASON [Trade Winds]-->
+      			<AllowsTrait/>
+     			<AllowsBuildTypes/>
+      			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_LATE_CLASSICAL_SHIP_BUILDING</Type>
+			<Description>Late Classical Ship Building</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>19</iX_Location>
+			<iY_Location>4</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_EARLY_CLASSICAL_SHIP_BUILDING</RequiredInvention>
+			<RequiredInvention2>MEDIEVAL_TECH_CARPENTRY</RequiredInvention2>
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields>
+        			<RequiredYield>
+          				<RequiredYieldType>YIELD_CLOTH</RequiredYieldType>
+          				<iYieldCost>100</iYieldCost>
+        			</RequiredYield>
+		<!-- Future YIELD_WOODEN_GOODS [Trade Winds] -->     
+      			</RequiredYields>
+			<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields/>
+      			<AllowsBuildingTypes>
+				<AllowsBuildingType>
+					<BuildingType>BUILDINGCLASS_DRYDOCK</BuildingType>
+		<!-- Implement future BUILDINGCLASS_HARBOUR [Trade Winds] -->
+					<iChange>1</iChange>
+				</AllowsBuildingType>
+			</AllowsBuildingTypes>		
+			<AllowsUnitClasses>
+				<AllowsUnitClass>
+					<AllowsUnit>UNITCLASS_CARAVEL</AllowsUnit>
+		<!-- Implement future UNITCLASS_TRIREME [Trade Winds] -->
+					<iChange>1</iChange>
+				</AllowsUnitClass>
+			</AllowsUnitClasses>
+			<AllowsPromotions/>
+			<AllowsProfessions/>
+			<AllowsTrait/>
+     			<AllowsBuildTypes/>
+      			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_PACK_MULES</Type>
+			<Description>Pack Mules</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>19</iX_Location>
+			<iY_Location>6</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_OX_COLLAR</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields>
+        			<RequiredYield>
+          				<RequiredYieldType>YIELD_HORSES</RequiredYieldType>
+          				<iYieldCost>100</iYieldCost>
+        			</RequiredYield>       
+      			</RequiredYields>
+			<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields/>
+			<AllowsBuildingTypes/>
+			<AllowsUnitClasses/>
+		<!-- Future UNITCLASS_PACK_MULE [Trade Winds] -->
+			<AllowsPromotions/>
+			<AllowsProfessions/>
+			<AllowsTrait/>
+			<AllowsTradeScreen>TRADE_SCREEN_EURO_ZONE_MARKET</AllowsTradeScreen>
+     			<AllowsBuildTypes/>
+      			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_EARLY_IRON_SMELTING</Type>
+			<Description>Early Iron Smelting</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>19</iX_Location>
+			<iY_Location>10</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_STONE_MASONRY</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields>
+        			<RequiredYield>
+          				<RequiredYieldType>YIELD_ORE</RequiredYieldType>
+          				<iYieldCost>100</iYieldCost>
+        			</RequiredYield>       
+      			</RequiredYields>
+			<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields/>
+		<!-- Future YIELD_IRON [Trade Winds] -->
+      			<AllowsBuildingTypes/>
+			<AllowsUnitClasses/>
+			<AllowsPromotions/>
+			<AllowsProfessions/>
+			<AllowsTrait/>
+     			<AllowsBuildTypes/>
+      			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_IRON_TOOL_MAKING</Type>
+			<Description>Iron Tool Making</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>21</iX_Location>
+			<iY_Location>12</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_EARLY_IRON_SMELTING</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields>
+        			<RequiredYield>
+          				<RequiredYieldType>YIELD_LUMBER</RequiredYieldType>
+          				<iYieldCost>100</iYieldCost>
+        			</RequiredYield>
+		<!-- Future YIELD_IRON [Trade Winds] -->     
+      			</RequiredYields>
+			<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields>
+				<AllowsYield>
+					<YieldType>YIELD_IRON_TOOLS</YieldType>
+					<iChange>1</iChange>
+				</AllowsYield>
+			</AllowsYields>
+      			<AllowsBuildingTypes>
+				<AllowsBuildingType>
+					<BuildingType>BUILDINGCLASS_BLACKSMITH_HOUSE</BuildingType>
+					<iChange>1</iChange>
+				</AllowsBuildingType>
+			</AllowsBuildingTypes>
+			<AllowsUnitClasses/>
+			<AllowsPromotions/>
+			<AllowsProfessions/>
+      			<AllowsTrait/>
+     			<AllowsBuildTypes/>
+      			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_BANDED_IRON_ARMOUR</Type>
+			<Description>Banded Iron Armour</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>23</iX_Location>
+			<iY_Location>4</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_IRON_TOOL_MAKING</RequiredInvention>
+			<RequiredInvention2>MEDIEVAL_TECH_IRON_WEAPON_MAKING</RequiredInvention2>			
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields>
+        			<RequiredYield>
+          				<RequiredYieldType>YIELD_CLOTH</RequiredYieldType>
+          				<iYieldCost>100</iYieldCost>
+        			</RequiredYield>
+				<RequiredYield>
+          				<RequiredYieldType>YIELD_IRON_TOOLS</RequiredYieldType>
+          				<iYieldCost>100</iYieldCost>
+        			</RequiredYield>
+		<!-- Future YIELD_IRON [Trade Winds] -->    
+      			</RequiredYields>
+			<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields>
+				<AllowsYield>
+					<YieldType>YIELD_SCALE_ARMOR</YieldType>
+					<iChange>1</iChange>
+				</AllowsYield>
+			</AllowsYields>
+      			<AllowsBuildingTypes>
+				<AllowsBuildingType>
+					<BuildingType>BUILDINGCLASS_ARMORSMITHS_HOUSE</BuildingType>
+					<iChange>1</iChange>
+				</AllowsBuildingType>
+			</AllowsBuildingTypes>		
+			<AllowsUnitClasses/>
+		<!-- Future UNITCLASS_LEGIONNAIRE [Trade Winds] -->
+			<AllowsPromotions/>
+			<AllowsProfessions/>				
+      			<AllowsTrait/>
+     			<AllowsBuildTypes/>
+      			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_CLASSICAL_ROAD_BUILDING</Type>
+			<Description>Classical Road Building</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>23</iX_Location>
+			<iY_Location>10</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_STONE_MASONRY</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields>
+        			<RequiredYield>
+          				<RequiredYieldType>YIELD_IRON_TOOLS</RequiredYieldType>
+          				<iYieldCost>100</iYieldCost>
+        			</RequiredYield>
+		<!-- Future YIELD_CUT_STONE [Trade Winds] -->        
+      			</RequiredYields>
+			<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields/>
+      			<AllowsBuildingTypes/>
+			<AllowsUnitClasses/>
+		<!-- Implement future UNITCLASS_IRON_AGE_WORKER [Trade Winds] -->
+			<AllowsPromotions/>
+			<AllowsProfessions/>
+		<!-- Implement future PROFESSION_IRON_AGE_WORKER [Trade Winds] -->
+      			<AllowsTrait/>
+     			<AllowsBuildTypes/>
+		<!-- Future IMPROVEMENT_ROMAN_ROADS [Trade Winds] -->
+      			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_IRON_WEAPON_MAKING</Type>
+			<Description>Iron Weapon Making</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>23</iX_Location>
+			<iY_Location>12</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_EARLY_IRON_SMELTING</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields>
+        			<RequiredYield>
+          				<RequiredYieldType>YIELD_IRON_TOOLS</RequiredYieldType>
+          				<iYieldCost>100</iYieldCost>
+        			</RequiredYield>
+		<!-- Future YIELD_IRON [Trade Winds] -->     
+      			</RequiredYields>
+			<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields>
+				<AllowsYield>
+					<YieldType>YIELD_IRON_WEAPONS</YieldType>
+					<iChange>1</iChange>
+				</AllowsYield>
+			</AllowsYields>
+      			<AllowsBuildingTypes>
+				<AllowsBuildingType>
+					<BuildingType>BUILDINGCLASS_BLACKSMITH_HOUSE</BuildingType>
+					<iChange>1</iChange>
+				</AllowsBuildingType>
+			</AllowsBuildingTypes>
+			<AllowsUnitClasses/>
+			<AllowsPromotions/>
+			<AllowsProfessions/>
+      			<AllowsTrait/>
+     			<AllowsBuildTypes/>
+      			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_HEAVY_CLASSICAL_SHIP_BUILDING</Type>
+			<Description>Heavy Classical Ship Building</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>25</iX_Location>
+			<iY_Location>4</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_CLASSICAL_ROAD_BUILDING</RequiredInvention>
+			<RequiredInvention2>MEDIEVAL_TECH_LATE_CLASSICAL_SHIP_BUILDING</RequiredInvention2>			
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields>
+        			<RequiredYield>
+          				<RequiredYieldType>YIELD_CLOTH</RequiredYieldType>
+          				<iYieldCost>100</iYieldCost>
+        			</RequiredYield>				
+		<!-- Future YIELD_WOODEN_GOODS [Trade Winds] -->
+		<!-- Future YIELD_CUT_STONE [Trade Winds] -->
+		<!-- Future YIELD_IRON [Trade Winds] -->  
+      			</RequiredYields>
+			<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields/>
+      			<AllowsBuildingTypes/>				
+			<AllowsUnitClasses/>
+		<!-- Future UNITCLASS_QUINQUIREME [Trade Winds] -->
+			<AllowsPromotions/>
+			<AllowsProfessions/>				
+      			<AllowsTrait/>
+     			<AllowsBuildTypes/>
+      			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_MILITARY_PRIVILEGE</Type>
+			<Description>Military Privilege</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>25</iX_Location>
+			<iY_Location>6</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_BANDED_IRON_ARMOUR</RequiredInvention>
+			<RequiredInvention2>MEDIEVAL_TECH_PATRICIAN_NOBILITY</RequiredInvention2>			
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields>
+        			<RequiredYield>
+          				<RequiredYieldType>YIELD_GRAIN</RequiredYieldType>
+          				<iYieldCost>100</iYieldCost>
+        			</RequiredYield>
+				<RequiredYield>
+          				<RequiredYieldType>YIELD_SCALE_ARMOR</RequiredYieldType>
+          				<iYieldCost>100</iYieldCost>
+        			</RequiredYield>
+				<RequiredYield>
+          				<RequiredYieldType>YIELD_HORSES</RequiredYieldType>
+          				<iYieldCost>100</iYieldCost>
+        			</RequiredYield>
+				<RequiredYield>
+          				<RequiredYieldType>YIELD_IRON_WEAPONS</RequiredYieldType>
+          				<iYieldCost>100</iYieldCost>
+        			</RequiredYield> 
+      			</RequiredYields>
+			<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields/>
+      			<AllowsBuildingTypes/>					
+			<AllowsUnitClasses/>
+		<!-- Future UNITCLASS_EQUITE [Trade Winds] -->
+			<AllowsPromotions/>
+			<AllowsProfessions/>				
+      			<AllowsTrait/>
+     			<AllowsBuildTypes/>
+      			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_CLASICAL_SIEGE_CRAFT</Type>
+			<Description>Clasical Siege Craft</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>0</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+  			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+      			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+      			<iX_Location>25</iX_Location>
+			<iY_Location>12</iY_Location>
+      			<RequiredInvention>MEDIEVAL_TECH_CLASSICAL_ROAD_BUILDING</RequiredInvention>
+			<RequiredInvention2/>
+			<RequiredInventionOr/>
+     			<RequiredUnitType/>
+      			<RequiredYields/>
+        	<!-- Future YIELD_WOODEN_GOODS [Trade Winds] -->
+		<!-- Future YIELD_CUT_STONE [Trade Winds] -->
+		<!-- Future YIELD_IRON [Trade Winds] -->    
+      			<iCostToResearch>10</iCostToResearch>
+      			<AllowsYields/>					
+			<AllowsUnitClasses/>
+		<!-- Future UNITCLASS_ONAGER [Trade Winds] -->
+			<AllowsPromotions/>
+			<AllowsProfessions/>				
+      			<AllowsTrait/>
+     			<AllowsBuildTypes/>
+      			<AllowsBuildTypesTerrain/>
+     			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+      			<NewDefaultUnitClass/>
+      			<DisallowsTech/>
+      			<RouteMovementMod/>
+     			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+ 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+ 			<bisNoneTradeable>0</bisNoneTradeable>
+     			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+      			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      			<iGoldBonus>0</iGoldBonus>
+      			<iFreeTechs>0</iFreeTechs>
+      			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_CASUS_BELI</Type>
+			<Description>Casus Beli</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>300</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+			<iX_Location>27</iX_Location>
+			<iY_Location>6</iY_Location>
+			<RequiredInvention>MEDIEVAL_TECH_CLASICAL_SIEGE_CRAFT</RequiredInvention>
+			<RequiredInvention2>MEDIEVAL_TECH_HEAVY_CLASSICAL_SHIP_BUILDING</RequiredInvention2>
+			<RequiredInventionOr/>
+			<RequiredUnitType/>
+			<RequiredYields/>
+			<iCostToResearch>10</iCostToResearch>
+			<AllowsYields/>
+			<AllowsBuildingTypes/>
+			<AllowsUnitClasses/>
+			<AllowsPromotions/>
+			<AllowsProfessions/>
+			<AllowsTrait/>
+			<AllowsBuildTypes/>
+			<AllowsBuildTypesTerrain/>
+			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+			<NewDefaultUnitClass/>
+			<DisallowsTech/>
+			<RouteMovementMod/>
+			<AllowsRoutes/>
+			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+			<bisNoneTradeable>0</bisNoneTradeable>
+			<bNoGoodyTech>0</bNoGoodyTech>
+			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+			<iGoldBonus>0</iGoldBonus>
+			<iFreeTechs>0</iFreeTechs>
+			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+			<IndustrializationVictory/>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<Type>MEDIEVAL_TECH_DARK_AGES</Type>
+			<Description>Dark Ages</Description>
+			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+			<iAIWeight>300</iAIWeight>
+			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+			<iFreeExperience>0</iFreeExperience>
+			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iExpInBorderModifier>0</iExpInBorderModifier>
+			<iNativeAttitudeChange>0</iNativeAttitudeChange>
+			<iNativeCombatModifier>0</iNativeCombatModifier>
+			<iFatherPointModifier>0</iFatherPointModifier>
+			<bDominateNativeBorders>0</bDominateNativeBorders>
+			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+			<YieldModifiers/>
+			<CapitalYieldModifiers/>
+			<Hurrys/>
+			<SpecialBuildingNotRequireds/>
+			<ImprovementYieldChanges/>
+			<FreeUnitClasses/>
+			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+			<ProfessionCombatChanges/>
+			<ImmigrationConversion>NONE</ImmigrationConversion>
+			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
+			<iX_Location>29</iX_Location>
+			<iY_Location>12</iY_Location>
+			<RequiredInvention>MEDIEVAL_TECH_CASUS_BELI</RequiredInvention>
+			<RequiredInvention2>MEDIEVAL_TECH_MILITARY_PRIVILEGE</RequiredInvention2>
+			<RequiredInventionOr/>
+			<RequiredUnitType/>
+			<RequiredYields/>
+			<iCostToResearch>10</iCostToResearch>
+			<AllowsYields/>
+			<AllowsBuildingTypes/>
+			<AllowsUnitClasses/>
+			<AllowsPromotions/>
+			<AllowsProfessions/>
+			<AllowsTrait/>
+			<AllowsBuildTypes/>
+			<AllowsBuildTypesTerrain/>
+			<ConvertsUnitsFrom/>
+			<ConvertsUnitsTo/>
+			<NewDefaultUnitClass/>
+			<DisallowsTech/>
+			<RouteMovementMod/>
+			<AllowsRoutes/>
+			<bStartConstitution>0</bStartConstitution>
+			<bAllowsMapTrade>0</bAllowsMapTrade>
+			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+			<bisNoneTradeable>0</bisNoneTradeable>
+			<bNoGoodyTech>0</bNoGoodyTech>
+			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+			<iProlificInventorRateChange>0</iProlificInventorRateChange>
+			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+			<iGoldBonus>0</iGoldBonus>
+			<iFreeTechs>0</iFreeTechs>
+			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+			<IndustrializationVictory/>
+		</CivicInfo>
+<!-- Lib.spi't tech tree ends here [Trade Winds] -->
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
 			<Type>MEDIEVAL_TECH_ASTROLOGY</Type>
@@ -436,8 +4124,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>6</iX_Location>
-			<iY_Location>3</iY_Location>
+			<iX_Location>36</iX_Location>
+			<iY_Location>4</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_GLASSMAKING</RequiredInvention>
 			<RequiredInvention2/>
 			<RequiredInventionOr/>
@@ -504,8 +4192,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>7</iX_Location>
-			<iY_Location>1</iY_Location>
+			<iX_Location>37</iX_Location>
+			<iY_Location>2</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_ASTROLOGY</RequiredInvention>
 			<RequiredInvention2>MEDIEVAL_TECH_MACHINERY</RequiredInvention2>
 			<RequiredInventionOr/>
@@ -571,8 +4259,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>4</iX_Location>
-			<iY_Location>5</iY_Location>
+			<iX_Location>34</iX_Location>
+			<iY_Location>4</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_MATHEMATICS</RequiredInvention>
 			<RequiredInvention2>MEDIEVAL_TECH_ALPHABET</RequiredInvention2>
 			<RequiredInventionOr/>
@@ -657,8 +4345,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>3</iX_Location>
-			<iY_Location>3</iY_Location>
+			<iX_Location>33</iX_Location>
+			<iY_Location>4</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_MONASTICISM</RequiredInvention>
 			<RequiredInvention2>MEDIEVAL_TECH_MANORIALISM</RequiredInvention2>
 			<RequiredInventionOr/>
@@ -735,8 +4423,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>9</iX_Location>
-			<iY_Location>3</iY_Location>
+			<iX_Location>39</iX_Location>
+			<iY_Location>4</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_PAPER</RequiredInvention>
 			<RequiredInvention2/>
 			<RequiredInventionOr/>
@@ -807,7 +4495,7 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>2</iX_Location>
+			<iX_Location>32</iX_Location>
 			<iY_Location>2</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_MONASTICISM</RequiredInvention>
 			<RequiredInvention2>MEDIEVAL_TECH_ALPHABET</RequiredInvention2>
@@ -890,9 +4578,9 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>1</iX_Location>
-			<iY_Location>3</iY_Location>
-			<RequiredInvention/>
+			<iX_Location>31</iX_Location>
+			<iY_Location>4</iY_Location>
+			<RequiredInvention>MEDIEVAL_TECH_DARK_AGES</RequiredInvention>
 			<RequiredInvention2/>
 			<RequiredInventionOr/>
 			<RequiredUnitType/>
@@ -973,8 +4661,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>3</iX_Location>
-			<iY_Location>1</iY_Location>
+			<iX_Location>33</iX_Location>
+			<iY_Location>2</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_CODE_OF_LAWS</RequiredInvention>
 			<RequiredInvention2>MEDIEVAL_TECH_THEOLOGY</RequiredInvention2>
 			<RequiredInventionOr/>
@@ -1041,8 +4729,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>2</iX_Location>
-			<iY_Location>5</iY_Location>
+			<iX_Location>32</iX_Location>
+			<iY_Location>4</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_MONASTICISM</RequiredInvention>
 			<RequiredInvention2>MEDIEVAL_TECH_METALCASTING</RequiredInvention2>
 			<RequiredInventionOr/>
@@ -1119,9 +4807,9 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>1</iX_Location>
-			<iY_Location>9</iY_Location>
-			<RequiredInvention/>
+			<iX_Location>31</iX_Location>
+			<iY_Location>10</iY_Location>
+			<RequiredInvention>MEDIEVAL_TECH_DARK_AGES</RequiredInvention>
 			<RequiredInvention2/>
 			<RequiredInventionOr/>
 			<RequiredUnitType/>
@@ -1193,8 +4881,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>7</iX_Location>
-			<iY_Location>3</iY_Location>
+			<iX_Location>37</iX_Location>
+			<iY_Location>4</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_ASTROLOGY</RequiredInvention>
 			<RequiredInvention2/>
 			<RequiredInventionOr/>
@@ -1266,8 +4954,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>8</iX_Location>
-			<iY_Location>3</iY_Location>
+			<iX_Location>38</iX_Location>
+			<iY_Location>4</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_CALENDER</RequiredInvention>
 			<RequiredInvention2/>
 			<RequiredInventionOr/>
@@ -1333,7 +5021,7 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>10</iX_Location>
+			<iX_Location>40</iX_Location>
 			<iY_Location>6</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_ENGINEERING</RequiredInvention>
 			<RequiredInvention2/>
@@ -1341,12 +5029,8 @@
 			<RequiredUnitType/>
 			<RequiredYields/>
 			<iCostToResearch>140</iCostToResearch>
-			<AllowsYields>
-				<AllowsYield>
-					<YieldType>YIELD_STONE</YieldType>
-					<iChange>1</iChange>
-				</AllowsYield>
-			</AllowsYields>
+			<AllowsYields/>
+				<!-- YieldType>YIELD_STONE</YieldType -->
 			<AllowsBuildingTypes>
 				<AllowsBuildingType>
 					<BuildingType>BUILDINGCLASS_COURTHOUSE</BuildingType>
@@ -1421,8 +5105,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>10</iX_Location>
-			<iY_Location>9</iY_Location>
+			<iX_Location>40</iX_Location>
+			<iY_Location>10</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_CROSSBOW</RequiredInvention>
 			<RequiredInvention2/>
 			<RequiredInventionOr/>
@@ -1504,7 +5188,7 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>7</iX_Location>
+			<iX_Location>37</iX_Location>
 			<iY_Location>6</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_GLASSMAKING</RequiredInvention>
 			<RequiredInvention2>MEDIEVAL_TECH_CONSTRUCTION</RequiredInvention2>
@@ -1590,7 +5274,7 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>11</iX_Location>
+			<iX_Location>41</iX_Location>
 			<iY_Location>6</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_ROADS</RequiredInvention>
 			<RequiredInvention2/>
@@ -1683,7 +5367,7 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>11</iX_Location>
+			<iX_Location>41</iX_Location>
 			<iY_Location>4</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_ROADS</RequiredInvention>
 			<RequiredInvention2/>
@@ -1764,8 +5448,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>12</iX_Location>
-			<iY_Location>3</iY_Location>
+			<iX_Location>42</iX_Location>
+			<iY_Location>4</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_STONEWORK</RequiredInvention>
 			<RequiredInvention2/>
 			<RequiredInventionOr/>
@@ -1842,8 +5526,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>9</iX_Location>
-			<iY_Location>9</iY_Location>
+			<iX_Location>39</iX_Location>
+			<iY_Location>10</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_ENGINEERING</RequiredInvention>
 			<RequiredInvention2/>
 			<RequiredInventionOr/>
@@ -1918,8 +5602,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>11</iX_Location>
-			<iY_Location>9</iY_Location>
+			<iX_Location>41</iX_Location>
+			<iY_Location>10</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_MACHINERY</RequiredInvention>
 			<RequiredInvention2/>
 			<RequiredInventionOr/>
@@ -1994,8 +5678,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>12</iX_Location>
-			<iY_Location>9</iY_Location>
+			<iX_Location>42</iX_Location>
+			<iY_Location>10</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_SPINNINGWHEEL</RequiredInvention>
 			<RequiredInvention2/>
 			<RequiredInventionOr/>
@@ -2061,8 +5745,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>13</iX_Location>
-			<iY_Location>3</iY_Location>
+			<iX_Location>43</iX_Location>
+			<iY_Location>4</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_INVENTION_DIKES</RequiredInvention>
 			<RequiredInvention2/>
 			<RequiredInventionOr/>
@@ -2145,8 +5829,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>4</iX_Location>
-			<iY_Location>7</iY_Location>
+			<iX_Location>34</iX_Location>
+			<iY_Location>8</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_MAILARMOR</RequiredInvention>
 			<RequiredInvention2>MEDIEVAL_TECH_CONSTRUCTION</RequiredInvention2>
 			<RequiredInventionOr/>
@@ -2232,9 +5916,9 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>1</iX_Location>
+			<iX_Location>31</iX_Location>
 			<iY_Location>6</iY_Location>
-			<RequiredInvention/>
+			<RequiredInvention>MEDIEVAL_TECH_DARK_AGES</RequiredInvention>
 			<RequiredInvention2/>
 			<RequiredInventionOr/>
 			<RequiredUnitType/>
@@ -2319,8 +6003,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>4</iX_Location>
-			<iY_Location>9</iY_Location>
+			<iX_Location>34</iX_Location>
+			<iY_Location>10</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_WHEELBARROW</RequiredInvention>
 			<RequiredInvention2>MEDIEVAL_TECH_METALCASTING</RequiredInvention2>
 			<RequiredInventionOr/>
@@ -2399,7 +6083,7 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>2</iX_Location>
+			<iX_Location>32</iX_Location>
 			<iY_Location>10</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_WHEELBARROW</RequiredInvention>
 			<RequiredInvention2>MEDIEVAL_TECH_MONARCHY</RequiredInvention2>
@@ -2481,7 +6165,7 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>3</iX_Location>
+			<iX_Location>33</iX_Location>
 			<iY_Location>10</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_MOTTEANDBAILEY</RequiredInvention>
 			<RequiredInvention2>MEDIEVAL_TECH_MATHEMATICS</RequiredInvention2>
@@ -2558,8 +6242,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>3</iX_Location>
-			<iY_Location>7</iY_Location>
+			<iX_Location>33</iX_Location>
+			<iY_Location>8</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_HORSESHOES</RequiredInvention>
 			<RequiredInvention2/>
 			<RequiredInventionOr/>
@@ -2568,7 +6252,7 @@
 			<iCostToResearch>30</iCostToResearch>
 			<AllowsYields>
 				<AllowsYield>
-					<YieldType>YIELD_MAIL_ARMOR</YieldType>
+					<YieldType>YIELD_CHAIN_ARMOR</YieldType>
 					<iChange>1</iChange>
 				</AllowsYield>
 			</AllowsYields>
@@ -2651,8 +6335,8 @@
 			</ProfessionCombatChanges>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>6</iX_Location>
-			<iY_Location>11</iY_Location>
+			<iX_Location>36</iX_Location>
+			<iY_Location>12</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_FUEDALISM</RequiredInvention>
 			<RequiredInvention2>MEDIEVAL_TECH_DRAMA</RequiredInvention2>
 			<RequiredInventionOr/>
@@ -2745,8 +6429,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>7</iX_Location>
-			<iY_Location>9</iY_Location>
+			<iX_Location>37</iX_Location>
+			<iY_Location>10</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_WHEELEDPLOW</RequiredInvention>
 			<RequiredInvention2>MEDIEVAL_TECH_CALENDER</RequiredInvention2>
 			<RequiredInventionOr/>
@@ -2817,8 +6501,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>2</iX_Location>
-			<iY_Location>7</iY_Location>
+			<iX_Location>32</iX_Location>
+			<iY_Location>8</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_METALCASTING</RequiredInvention>
 			<RequiredInvention2/>
 			<RequiredInventionOr/>
@@ -2899,8 +6583,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>8</iX_Location>
-			<iY_Location>11</iY_Location>
+			<iX_Location>38</iX_Location>
+			<iY_Location>12</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_CROPROTATION</RequiredInvention>
 			<RequiredInvention2/>
 			<RequiredInventionOr/>
@@ -2968,8 +6652,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>9</iX_Location>
-			<iY_Location>11</iY_Location>
+			<iX_Location>39</iX_Location>
+			<iY_Location>12</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_HORSEBREADING</RequiredInvention>
 			<RequiredInvention2/>
 			<RequiredInventionOr/>
@@ -3035,7 +6719,7 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>5</iX_Location>
+			<iX_Location>35</iX_Location>
 			<iY_Location>10</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_WHEELEDPLOW</RequiredInvention>
 			<RequiredInvention2>MEDIEVAL_TECH_MAILARMOR</RequiredInvention2>
@@ -3121,8 +6805,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>5</iX_Location>
-			<iY_Location>7</iY_Location>
+			<iX_Location>35</iX_Location>
+			<iY_Location>8</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_MINING</RequiredInvention>
 			<RequiredInvention2>MEDIEVAL_TECH_HORSECOLLAR</RequiredInvention2>
 			<RequiredInventionOr/>
@@ -3201,20 +6885,16 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>6</iX_Location>
-			<iY_Location>7</iY_Location>
+			<iX_Location>36</iX_Location>
+			<iY_Location>8</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_IRONPLOW</RequiredInvention>
 			<RequiredInvention2/>
 			<RequiredInventionOr/>
 			<RequiredUnitType/>
 			<RequiredYields/>
 			<iCostToResearch>70</iCostToResearch>
-			<AllowsYields>
-				<AllowsYield>
-					<YieldType>YIELD_COTTON</YieldType>
-					<iChange>1</iChange>
-				</AllowsYield>
-			</AllowsYields>
+			<AllowsYields/>
+		<!-- Cotton discovery moved to Cultivation [Trade Winds] -->
 			<AllowsBuildingTypes/>
 			<AllowsUnitClasses>
 				<AllowsUnitClass>
@@ -3278,9 +6958,9 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>1</iX_Location>
+			<iX_Location>31</iX_Location>
 			<iY_Location>12</iY_Location>
-			<RequiredInvention/>
+			<RequiredInvention>MEDIEVAL_TECH_DARK_AGES</RequiredInvention>
 			<RequiredInvention2/>
 			<RequiredInventionOr/>
 			<RequiredUnitType/>
@@ -3313,12 +6993,8 @@
 				</AllowsUnitClass>
 			</AllowsUnitClasses>
 			<AllowsPromotions/>
-			<AllowsProfessions>
-				<AllowsProfession>
-					<ProfessionType>PROFESSION_HUNTSMAN</ProfessionType>
-					<iChange>1</iChange>
-				</AllowsProfession>
-			</AllowsProfessions>
+			<AllowsProfessions/>
+		<!--Originally here huntsman profession [Trade Winds]-->
 			<AllowsTrait/>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
@@ -3345,7 +7021,7 @@
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
-			<Type>MEDIEVAL_TECH_HUNTING</Type>
+			<Type>MEDIEVAL_TECH_MEDIEVAL_HUNTING</Type>
 			<Description>Medieval Hunting</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
 			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
@@ -3379,7 +7055,7 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>2</iX_Location>
+			<iX_Location>32</iX_Location>
 			<iY_Location>12</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_MANORIALISM</RequiredInvention>
 			<RequiredInvention2/>
@@ -3389,12 +7065,8 @@
 			<iCostToResearch>20</iCostToResearch>
 			<AllowsYields/>
 			<AllowsBuildingTypes/>
-			<AllowsUnitClasses>
-				<AllowsUnitClass>
-					<AllowsUnit>UNITCLASS_HUNTSMAN</AllowsUnit>
-					<iChange>1</iChange>
-				</AllowsUnitClass>
-			</AllowsUnitClasses>
+			<AllowsUnitClasses/>
+		<!--Originally here huntsman unit [Trade Winds]-->
 			<AllowsPromotions/>
 			<AllowsProfessions/>
 			<AllowsTrait/>
@@ -3458,7 +7130,7 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>3</iX_Location>
+			<iX_Location>33</iX_Location>
 			<iY_Location>12</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_HUNTING</RequiredInvention>
 			<RequiredInvention2>MEDIEVAL_TECH_CODE_OF_LAWS</RequiredInvention2>
@@ -3540,7 +7212,7 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>5</iX_Location>
+			<iX_Location>35</iX_Location>
 			<iY_Location>12</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_MONARCHY</RequiredInvention>
 			<RequiredInvention2>MEDIEVAL_TECH_STIRRUP</RequiredInvention2>
@@ -3629,7 +7301,7 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>13</iX_Location>
+			<iX_Location>43</iX_Location>
 			<iY_Location>12</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_CIVILSERVICE</RequiredInvention>
 			<RequiredInvention2>MEDIEVAL_TECH_CLOCK</RequiredInvention2>
@@ -3697,7 +7369,7 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>11</iX_Location>
+			<iX_Location>41</iX_Location>
 			<iY_Location>12</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_FUEDALISM</RequiredInvention>
 			<RequiredInvention2>MEDIEVAL_TECH_PAPER</RequiredInvention2>
@@ -3779,8 +7451,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>6</iX_Location>
-			<iY_Location>1</iY_Location>
+			<iX_Location>36</iX_Location>
+			<iY_Location>2</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_DRAMA</RequiredInvention>
 			<RequiredInvention2/>
 			<RequiredInventionOr/>
@@ -3852,7 +7524,7 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>4</iX_Location>
+			<iX_Location>34</iX_Location>
 			<iY_Location>2</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_ALPHABET</RequiredInvention>
 			<RequiredInvention2/>
@@ -3935,7 +7607,7 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>5</iX_Location>
+			<iX_Location>35</iX_Location>
 			<iY_Location>2</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_THEOLOGY</RequiredInvention>
 			<RequiredInvention2/>
@@ -4013,8 +7685,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>12</iX_Location>
-			<iY_Location>5</iY_Location>
+			<iX_Location>42</iX_Location>
+			<iY_Location>4</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_STONEWORK</RequiredInvention>
 			<RequiredInvention2>MEDIEVAL_TECH_THEOLOGY</RequiredInvention2>
 			<RequiredInventionOr/>
@@ -4086,8 +7758,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>13</iX_Location>
-			<iY_Location>9</iY_Location>
+			<iX_Location>43</iX_Location>
+			<iY_Location>10</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_CLOCK</RequiredInvention>
 			<RequiredInvention2>MEDIEVAL_TECH_CIVILSERVICE</RequiredInvention2>
 			<RequiredInventionOr/>
@@ -4159,7 +7831,7 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>5</iX_Location>
+			<iX_Location>35</iX_Location>
 			<iY_Location>4</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_ALCHEMY</RequiredInvention>
 			<RequiredInvention2/>
@@ -4232,8 +7904,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>9</iX_Location>
-			<iY_Location>1</iY_Location>
+			<iX_Location>39</iX_Location>
+			<iY_Location>2</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_RUDDER</RequiredInvention>
 			<RequiredInvention2/>
 			<RequiredInventionOr/>
@@ -4308,8 +7980,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>10</iX_Location>
-			<iY_Location>1</iY_Location>
+			<iX_Location>40</iX_Location>
+			<iY_Location>2</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_COMPASS</RequiredInvention>
 			<RequiredInvention2/>
 			<RequiredInventionOr/>
@@ -4389,8 +8061,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>8</iX_Location>
-			<iY_Location>1</iY_Location>
+			<iX_Location>38</iX_Location>
+			<iY_Location>2</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_ASTROLOBE</RequiredInvention>
 			<RequiredInvention2/>
 			<RequiredInventionOr/>
@@ -4461,8 +8133,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
-			<iX_Location>11</iX_Location>
-			<iY_Location>1</iY_Location>
+			<iX_Location>41</iX_Location>
+			<iY_Location>2</iY_Location>
 			<RequiredInvention>MEDIEVAL_TECH_LATLONG</RequiredInvention>
 			<RequiredInvention2/>
 			<RequiredInventionOr/>
@@ -4562,7 +8234,7 @@
 					<iYield>50</iYield>
 				</YieldModifier>
 				<YieldModifier>
-					<YieldType>YIELD_SILVER</YieldType>
+					<YieldType>YIELD_PRECIOUS_METALS</YieldType>
 					<iYield>50</iYield>
 				</YieldModifier>
 				<YieldModifier>
@@ -4570,7 +8242,7 @@
 					<iYield>50</iYield>
 				</YieldModifier>
 				<YieldModifier>
-					<YieldType>YIELD_FUR</YieldType>
+					<YieldType>YIELD_HIDES</YieldType>
 					<iYield>50</iYield>
 				</YieldModifier>
 				<YieldModifier>
@@ -4840,6 +8512,7 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 		</CivicInfo>
+		<!--Trade-->
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
 			<Type>TRADING_TRADEPOST</Type>
@@ -4872,8 +8545,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
-			<iX_Location>1</iX_Location>
-			<iY_Location>3</iY_Location>
+			<iX_Location>31</iX_Location>
+			<iY_Location>4</iY_Location>
 			<RequiredInvention/>
 			<RequiredInvention2/>
 			<RequiredInventionOr/>
@@ -4954,7 +8627,7 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
-			<iX_Location>2</iX_Location>
+			<iX_Location>12</iX_Location>
 			<iY_Location>2</iY_Location>
 			<RequiredInvention>TRADING_TRADEPOST</RequiredInvention>
 			<RequiredInvention2/>
@@ -5029,7 +8702,7 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
-			<iX_Location>2</iX_Location>
+			<iX_Location>12</iX_Location>
 			<iY_Location>4</iY_Location>
 			<RequiredInvention>TRADING_TRADEPOST</RequiredInvention>
 			<RequiredInvention2/>
@@ -5104,8 +8777,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
-			<iX_Location>3</iX_Location>
-			<iY_Location>3</iY_Location>
+			<iX_Location>13</iX_Location>
+			<iY_Location>4</iY_Location>
 			<RequiredInvention>TRADING_PERK1</RequiredInvention>
 			<RequiredInvention2/>
 			<RequiredInventionOr>TRADING_PERK2</RequiredInventionOr>
@@ -5193,8 +8866,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
-			<iX_Location>4</iX_Location>
-			<iY_Location>3</iY_Location>
+			<iX_Location>14</iX_Location>
+			<iY_Location>4</iY_Location>
 			<RequiredInvention>TRADING_MARKET</RequiredInvention>
 			<RequiredInvention2/>
 			<RequiredInventionOr/>
@@ -5271,8 +8944,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
-			<iX_Location>5</iX_Location>
-			<iY_Location>3</iY_Location>
+			<iX_Location>15</iX_Location>
+			<iY_Location>4</iY_Location>
 			<RequiredInvention>TRADING_TRADE_ROUTE_2</RequiredInvention>
 			<RequiredInvention2/>
 			<RequiredInventionOr/>
@@ -5355,7 +9028,7 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
-			<iX_Location>6</iX_Location>
+			<iX_Location>16</iX_Location>
 			<iY_Location>2</iY_Location>
 			<RequiredInvention>TRADING_CURRENCY</RequiredInvention>
 			<RequiredInvention2/>
@@ -5430,7 +9103,7 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
-			<iX_Location>6</iX_Location>
+			<iX_Location>16</iX_Location>
 			<iY_Location>4</iY_Location>
 			<RequiredInvention>TRADING_CURRENCY</RequiredInvention>
 			<RequiredInvention2/>
@@ -5506,8 +9179,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
-			<iX_Location>7</iX_Location>
-			<iY_Location>3</iY_Location>
+			<iX_Location>17</iX_Location>
+			<iY_Location>4</iY_Location>
 			<RequiredInvention>TRADING_PERK3</RequiredInvention>
 			<RequiredInvention2/>
 			<RequiredInventionOr>TRADING_PERK4</RequiredInventionOr>
@@ -5584,8 +9257,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
-			<iX_Location>8</iX_Location>
-			<iY_Location>3</iY_Location>
+			<iX_Location>18</iX_Location>
+			<iY_Location>4</iY_Location>
 			<RequiredInvention>TRADING_TRADE_ROUTE_1</RequiredInvention>
 			<RequiredInvention2/>
 			<RequiredInventionOr/>
@@ -5666,8 +9339,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
-			<iX_Location>9</iX_Location>
-			<iY_Location>3</iY_Location>
+			<iX_Location>19</iX_Location>
+			<iY_Location>4</iY_Location>
 			<RequiredInvention>TRADING_FAIR</RequiredInvention>
 			<RequiredInvention2/>
 			<RequiredInventionOr/>
@@ -5751,8 +9424,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
-			<iX_Location>10</iX_Location>
-			<iY_Location>3</iY_Location>
+			<iX_Location>20</iX_Location>
+			<iY_Location>4</iY_Location>
 			<RequiredInvention>TRADING_GUILDS</RequiredInvention>
 			<RequiredInvention2/>
 			<RequiredInventionOr/>
@@ -5830,8 +9503,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
-			<iX_Location>11</iX_Location>
-			<iY_Location>3</iY_Location>
+			<iX_Location>211</iX_Location>
+			<iY_Location>4</iY_Location>
 			<RequiredInvention>BANKING</RequiredInvention>
 			<RequiredInvention2/>
 			<RequiredInventionOr/>
@@ -5905,7 +9578,7 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
-			<iX_Location>12</iX_Location>
+			<iX_Location>212</iX_Location>
 			<iY_Location>2</iY_Location>
 			<RequiredInvention>TRADING_COMMUNE</RequiredInvention>
 			<RequiredInvention2/>
@@ -5980,7 +9653,7 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
-			<iX_Location>12</iX_Location>
+			<iX_Location>212</iX_Location>
 			<iY_Location>4</iY_Location>
 			<RequiredInvention>TRADING_COMMUNE</RequiredInvention>
 			<RequiredInvention2/>
@@ -6055,8 +9728,8 @@
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
 			<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
-			<iX_Location>13</iX_Location>
-			<iY_Location>3</iY_Location>
+			<iX_Location>213</iX_Location>
+			<iY_Location>4</iY_Location>
 			<RequiredInvention>TRADING_PERK5</RequiredInvention>
 			<RequiredInvention2/>
 			<RequiredInventionOr>TRADING_PERK6</RequiredInventionOr>

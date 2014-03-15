@@ -72,12 +72,6 @@ void CvGlobals::CheckEnumYieldTypes() const
 	{
 		YieldTypes eYield = (YieldTypes)iYield;
 		FAssertMsg(BaseGroup.XMLnameChecked[iYield], CvString::format("Yield %s not checked for consistency between enum and XML", GC.getYieldInfo(eYield).getType()).c_str());
-		if (YieldGroup_Virtual(eYield))
-		{
-			FAssertMsg(!GC.getYieldInfo(eYield).isCargo(), CvString::format("Virtual yield %s has bCargo set in XML", GC.getYieldInfo(eYield).getType()).c_str());
-		} else {
-			FAssertMsg(GC.getYieldInfo(eYield).isCargo(), CvString::format("Non-virtual yield %s has bCargo unset in XML", GC.getYieldInfo(eYield).getType()).c_str());
-		}
 	}
 
 	Check_YieldGroup_AI_Sell AI_Sell;

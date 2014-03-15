@@ -5814,6 +5814,12 @@ CvSpecialBuildingInfo::CvSpecialBuildingInfo() :
 m_bValid(false),
 m_iChar(0),
 m_iFontButtonIndex(0),
+/// special building placement xml - start - Nightinggale
+m_iPosX(0),
+m_iPosY(0),
+m_iSizeX(0),
+m_iSizeY(0),
+/// special building placement xml - end - Nightinggale
 m_aiProductionTraits(NULL)
 {
 }
@@ -5844,6 +5850,48 @@ int CvSpecialBuildingInfo::getFontButtonIndex() const
 {
 	return m_iFontButtonIndex;
 }
+
+/// special building placement xml - start - Nightinggale
+int CvSpecialBuildingInfo::getPosX() const
+{
+	return m_iPosX;
+}
+
+int CvSpecialBuildingInfo::getPosY() const
+{
+	return m_iPosY;
+}
+
+int CvSpecialBuildingInfo::getSizeX() const
+{
+	return m_iSizeX;
+}
+
+int CvSpecialBuildingInfo::getSizeY() const
+{
+	return m_iSizeY;
+}
+
+int CvSpecialBuildingInfo::getSizePos(int iI) const
+{
+	switch (iI)
+	{
+		case 0:
+			return getPosX();
+		case 1:
+			return getPosY();
+		case 2:
+			return getSizeX();
+		case 3:
+			return getSizeY();
+		default:
+			FAssertMsg(false, "wrong argument for special building size/position");
+			return 0;
+	}
+
+}
+/// special building placement xml - end - Nightinggale
+
 // Arrays
 int CvSpecialBuildingInfo::getProductionTraits(int i) const
 {
@@ -5860,6 +5908,17 @@ bool CvSpecialBuildingInfo::read(CvXMLLoadUtility* pXML)
 	}
 	pXML->GetChildXmlValByName(&m_bValid, "bValid");
 	pXML->GetChildXmlValByName(&m_iFontButtonIndex, "FontButtonIndex");
+	/// special building placement xml - start - Nightinggale
+	int iBuffer = 0;
+	pXML->GetChildXmlValByName(&iBuffer, "iPosX");
+	m_iPosX = iBuffer;
+	pXML->GetChildXmlValByName(&iBuffer, "iPosY");
+	m_iPosY =  iBuffer;
+	pXML->GetChildXmlValByName(&iBuffer, "iSizeX");
+	m_iSizeX =  iBuffer;
+	pXML->GetChildXmlValByName(&iBuffer, "iSizeY");
+	m_iSizeY = iBuffer;
+	/// special building placement xml - end - Nightinggale
 	pXML->SetVariableListTagPair(&m_aiProductionTraits, "ProductionTraits", GC.getNumTraitInfos(), 0);
 	return true;
 }

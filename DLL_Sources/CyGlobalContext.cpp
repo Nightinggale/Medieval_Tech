@@ -490,3 +490,10 @@ bool CyGlobalContext::isWorldHistory() const
 #endif
 }
 // python MOD selection - end - Nightinggale
+
+/// special building placement xml - start - Nightinggale
+void CyGlobalContext::reloadSpecialBuildings()
+{
+	GC.reloadSpecialBuildings();
+}
+/// special building placement xml - end - Nightinggale

@@ -333,6 +333,13 @@ void CyInfoPythonInterface1()
 	python::class_<CvSpecialBuildingInfo, python::bases<CvInfoBase> >("CvSpecialBuildingInfo")
 		.def("isValid", &CvSpecialBuildingInfo::isValid, "bool ()")
 		.def("getChar", &CvSpecialBuildingInfo::getChar, "int ()")
+		/// special building placement xml - start - Nightinggale
+		.def("getPosX", &CvSpecialBuildingInfo::getPosX, "int ()")
+		.def("getPosY", &CvSpecialBuildingInfo::getPosY, "int ()")
+		.def("getSizeX", &CvSpecialBuildingInfo::getSizeX, "int ()")
+		.def("getSizeY", &CvSpecialBuildingInfo::getSizeY, "int ()")
+		.def("getSizePos", &CvSpecialBuildingInfo::getSizePos, "int (int)")
+		/// special building placement xml - end - Nightinggale
 		// Arrays
 		.def("getProductionTraits", &CvSpecialBuildingInfo::getProductionTraits, "int (int i)")
 		;

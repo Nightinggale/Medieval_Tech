@@ -267,5 +267,9 @@ public:
 	bool isColonization2071() const;
 	bool isWorldHistory() const;
 	// python MOD selection - end - Nightinggale
+
+	/// special building placement xml - start - Nightinggale
+	void reloadSpecialBuildings();
+	/// special building placement xml - end - Nightinggale
 };
 #endif	// CyGlobalContext_h

@@ -205,6 +205,10 @@ public:
 	// the m_szXmlPath member variable pre-pended to it to form the full pathname
 	DllExport bool LoadCivXml(FXml* pFXml, const TCHAR* szFilename);
 
+	/// special building placement xml - start - Nightinggale
+	void reloadSpecialBuildings();
+	/// special building placement xml - end - Nightinggale
+
 	//---------------------------------------PRIVATE MEMBER VARIABLES---------------------------------
 private:
 	FXml* m_pFXml;						// member variable pointer to the current FXml class

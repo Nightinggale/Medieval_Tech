@@ -20,6 +20,7 @@
 #include "FProfiler.h"
 #include "FVariableSystem.h"
 #include "CvInitCore.h"
+#include "CvXMLLoadUtility.h"
 
 #define COPY(dst, src, typeName) \
 	{ \
@@ -4241,3 +4242,11 @@ void CvGlobals::CheckEnumAttitudeTypes() const
 	FAssertMsg(GC.getAttitudeInfo().size() == NUM_ATTITUDE_TYPES, CvString::format("XML error. Expected %d types, but found %d", NUM_ATTITUDE_TYPES, GC.getAttitudeInfo().size()));
 }
 // XML enum check - end - Nightinggale
+
+/// special building placement xml - start - Nightinggale
+void CvGlobals::reloadSpecialBuildings()
+{
+	CvXMLLoadUtility pXML;
+	pXML.reloadSpecialBuildings();
+}
+/// special building placement xml - end - Nightinggale

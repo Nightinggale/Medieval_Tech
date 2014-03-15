@@ -313,6 +313,10 @@
 	<ElementType name="ArtStyleType" content="textOnly"/>
 	<ElementType name="iRequiredPopulation" content="textOnly" dt:type="int"/>
 	<ElementType name="FontButtonIndex" content="textOnly" dt:type="int"/>
+	<ElementType name="iPosX" content="textOnly" dt:type="int"/>
+	<ElementType name="iPosY" content="textOnly" dt:type="int"/>
+	<ElementType name="iSizeX" content="textOnly" dt:type="int"/>
+	<ElementType name="iSizeY" content="textOnly" dt:type="int"/>
 	<ElementType name="fScale" content="textOnly"/>
 	<ElementType name="bValid" content="textOnly" dt:type="boolean"/>
 	<ElementType name="Button" content="textOnly"/>
@@ -321,6 +325,10 @@
 		<element type="Description"/>
 		<element type="bValid"/>
 		<element type="FontButtonIndex"/>
+		<element type="iPosX"/>
+		<element type="iPosY"/>
+		<element type="iSizeX"/>
+		<element type="iSizeY"/>
 		<element type="ProductionTraits"/>
 		<element type="Button"/>
 	</ElementType>

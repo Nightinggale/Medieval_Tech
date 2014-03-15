@@ -107,5 +107,9 @@ void CyGlobalContextPythonInterface4(python::class_<CyGlobalContext>& x)
 		.def("isColonization2071", &CyGlobalContext::isColonization2071, "MOD selection")
 		.def("isWorldHistory",     &CyGlobalContext::isWorldHistory,     "MOD selection")
 		// python MOD selection - end - Nightinggale
+
+		/// special building placement xml - start - Nightinggale
+		.def("reloadSpecialBuildings", &CyGlobalContext::reloadSpecialBuildings, "")
+		/// special building placement xml - end - Nightinggale
 		;
 }

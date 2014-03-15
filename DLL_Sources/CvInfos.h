@@ -1470,6 +1470,14 @@ public:
 	DllExport void setChar(int i);
 	DllExport int getFontButtonIndex() const;
 
+	/// special building placement xml - start - Nightinggale
+	int getPosX() const;
+	int getPosY() const;
+	int getSizeX() const;
+	int getSizeY() const;
+	int getSizePos(int iI) const;
+	/// special building placement xml - end - Nightinggale
+
 	// Arrays
 	DllExport int getProductionTraits(int i) const;
 
@@ -1479,6 +1487,12 @@ protected:
 	bool m_bValid;
 	int m_iChar;
 	int m_iFontButtonIndex;
+	/// special building placement xml - start - Nightinggale
+	char m_iPosX;
+	char m_iPosY;
+	char m_iSizeX;
+	char m_iSizeY;
+	/// special building placement xml - end - Nightinggale
 	// Arrays
 	int* m_aiProductionTraits;
 };

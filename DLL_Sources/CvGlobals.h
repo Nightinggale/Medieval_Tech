@@ -765,6 +765,11 @@ protected:
 #endif
 	// cache XML - end - Nightinggale
 
+	/// special building placement xml - start - Nightinggale
+public:
+	void reloadSpecialBuildings();
+	/// special building placement xml - end - Nightinggale
+
 protected:
 
 	bool m_bGraphicsInitialized;

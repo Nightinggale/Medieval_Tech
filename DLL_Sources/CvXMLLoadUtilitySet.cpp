@@ -2838,4 +2838,18 @@ DllExport bool CvXMLLoadUtility::LoadGraphicOptions()
 	return true;
 }
 
+/// special building placement xml - start - Nightinggale
+void CvXMLLoadUtility::reloadSpecialBuildings()
+{
+	if (!CreateFXml())
+	{
+		return;
+	}
 
+	bFirstLoadRound = false;
+	bLoadOnce = false;
+
+	loadXMLFile(XML_FILE_CIV4SpecialBuildingInfos);
+	DestroyFXml();
+}
+/// special building placement xml - end - Nightinggale

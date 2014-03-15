@@ -11,6 +11,10 @@
 			<Description>TXT_KEY_SPECIALBUILDING_BELLS</Description>
 			<bValid>1</bValid>
 			<FontButtonIndex>29</FontButtonIndex>
+			<iPosX>40</iPosX>
+			<iPosY>40</iPosY>
+			<iSizeX>18</iSizeX>
+			<iSizeY>11</iSizeY>
 			<ProductionTraits/>
 			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
 		</SpecialBuildingInfo>
@@ -19,6 +23,10 @@
 			<Description>TXT_KEY_SPECIALBUILDING_HAMMERS</Description>
 			<bValid>1</bValid>
 			<FontButtonIndex>28</FontButtonIndex>
+			<iPosX>60</iPosX>
+			<iPosY>40</iPosY>
+			<iSizeX>18</iSizeX>
+			<iSizeY>11</iSizeY>
 			<ProductionTraits/>
 			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
 		</SpecialBuildingInfo>
@@ -27,6 +35,10 @@
 			<Description>TXT_KEY_SPECIALBUILDING_COATS</Description>
 			<bValid>1</bValid>
 			<FontButtonIndex>11</FontButtonIndex>
+			<iPosX>40</iPosX>
+			<iPosY>0</iPosY>
+			<iSizeX>18</iSizeX>
+			<iSizeY>11</iSizeY>
 			<ProductionTraits/>
 			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
 		</SpecialBuildingInfo>
@@ -35,6 +47,10 @@
 			<Description>TXT_KEY_SPECIALBUILDING_CLOTH</Description>
 			<bValid>1</bValid>
 			<FontButtonIndex>16</FontButtonIndex>
+			<iPosX>0</iPosX>
+			<iPosY>60</iPosY>
+			<iSizeX>18</iSizeX>
+			<iSizeY>11</iSizeY>
 			<ProductionTraits/>
 			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
 		</SpecialBuildingInfo>
@@ -43,6 +59,10 @@
 			<Description>TXT_KEY_SPECIALBUILDING_RUM</Description>
 			<bValid>1</bValid>
 			<FontButtonIndex>18</FontButtonIndex>
+			<iPosX>0</iPosX>
+			<iPosY>80</iPosY>
+			<iSizeX>18</iSizeX>
+			<iSizeY>11</iSizeY>
 			<ProductionTraits/>
 			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
 		</SpecialBuildingInfo>
@@ -51,6 +71,10 @@
 			<Description>TXT_KEY_SPECIALBUILDING_CIGARS</Description>
 			<bValid>1</bValid>
 			<FontButtonIndex>19</FontButtonIndex>
+			<iPosX>40</iPosX>
+			<iPosY>80</iPosY>
+			<iSizeX>18</iSizeX>
+			<iSizeY>11</iSizeY>
 			<ProductionTraits/>
 			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
 		</SpecialBuildingInfo>
@@ -59,6 +83,10 @@
 			<Description>TXT_KEY_SPECIALBUILDING_TOOLS</Description>
 			<bValid>1</bValid>
 			<FontButtonIndex>20</FontButtonIndex>
+			<iPosX>60</iPosX>
+			<iPosY>0</iPosY>
+			<iSizeX>18</iSizeX>
+			<iSizeY>11</iSizeY>
 			<ProductionTraits/>
 			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
 		</SpecialBuildingInfo>
@@ -67,6 +95,10 @@
 			<Description>TXT_KEY_SPECIALBUILDING_CROSSES</Description>
 			<bValid>1</bValid>
 			<FontButtonIndex>30</FontButtonIndex>
+			<iPosX>60</iPosX>
+			<iPosY>60</iPosY>
+			<iSizeX>18</iSizeX>
+			<iSizeY>11</iSizeY>
 			<ProductionTraits/>
 			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
 		</SpecialBuildingInfo>
@@ -75,6 +107,10 @@
 			<Description>TXT_KEY_SPECIALBUILDING_MUSKETS</Description>
 			<bValid>1</bValid>
 			<FontButtonIndex>21</FontButtonIndex>
+			<iPosX>0</iPosX>
+			<iPosY>20</iPosY>
+			<iSizeX>18</iSizeX>
+			<iSizeY>11</iSizeY>
 			<ProductionTraits/>
 			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
 		</SpecialBuildingInfo>
@@ -83,6 +119,10 @@
 			<Description>TXT_KEY_SPECIALBUILDING_HORSES</Description>
 			<bValid>1</bValid>
 			<FontButtonIndex>22</FontButtonIndex>
+			<iPosX>0</iPosX>
+			<iPosY>0</iPosY>
+			<iSizeX>18</iSizeX>
+			<iSizeY>11</iSizeY>
 			<ProductionTraits/>
 			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
 		</SpecialBuildingInfo>
@@ -91,6 +131,10 @@
 			<Description>Drama</Description>
 			<bValid>1</bValid>
 			<FontButtonIndex>33</FontButtonIndex>
+			<iPosX>80</iPosX>
+			<iPosY>40</iPosY>
+			<iSizeX>18</iSizeX>
+			<iSizeY>11</iSizeY>
 			<ProductionTraits/>
 			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
 		</SpecialBuildingInfo>
@@ -99,6 +143,10 @@
 			<Description>Inn</Description>
 			<bValid>1</bValid>
 			<FontButtonIndex>33</FontButtonIndex>
+			<iPosX>60</iPosX>
+			<iPosY>80</iPosY>
+			<iSizeX>18</iSizeX>
+			<iSizeY>11</iSizeY>
 			<ProductionTraits/>
 			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
 		</SpecialBuildingInfo>
@@ -107,6 +155,10 @@
 			<Description>TXT_KEY_SPECIALBUILDING_EDUCATION</Description>
 			<bValid>1</bValid>
 			<FontButtonIndex>31</FontButtonIndex>
+			<iPosX>80</iPosX>
+			<iPosY>60</iPosY>
+			<iSizeX>18</iSizeX>
+			<iSizeY>11</iSizeY>
 			<ProductionTraits/>
 			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
 		</SpecialBuildingInfo>
@@ -115,6 +167,10 @@
 			<Description>TXT_KEY_SPECIALBUILDING_COATS</Description>
 			<bValid>1</bValid>
 			<FontButtonIndex>17</FontButtonIndex>
+			<iPosX>20</iPosX>
+			<iPosY>80</iPosY>
+			<iSizeX>18</iSizeX>
+			<iSizeY>11</iSizeY>
 			<ProductionTraits/>
 			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
 		</SpecialBuildingInfo>
@@ -123,6 +179,10 @@
 			<Description>TXT_KEY_SPECIALBUILDING_PRINT</Description>
 			<bValid>1</bValid>
 			<FontButtonIndex>29</FontButtonIndex>
+			<iPosX>0</iPosX>
+			<iPosY>40</iPosY>
+			<iSizeX>18</iSizeX>
+			<iSizeY>11</iSizeY>
 			<ProductionTraits/>
 			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
 		</SpecialBuildingInfo>
@@ -131,6 +191,10 @@
 			<Description>TXT_KEY_SPECIALBUILDING_PRINT</Description>
 			<bValid>1</bValid>
 			<FontButtonIndex>32</FontButtonIndex>
+			<iPosX>20</iPosX>
+			<iPosY>60</iPosY>
+			<iSizeX>18</iSizeX>
+			<iSizeY>11</iSizeY>
 			<ProductionTraits/>
 			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
 		</SpecialBuildingInfo>
@@ -139,6 +203,10 @@
 			<Description>TXT_KEY_SPECIALBUILDING_BELLS</Description>
 			<bValid>1</bValid>
 			<FontButtonIndex>1</FontButtonIndex>
+			<iPosX>80</iPosX>
+			<iPosY>20</iPosY>
+			<iSizeX>18</iSizeX>
+			<iSizeY>11</iSizeY>
 			<ProductionTraits/>
 			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
 		</SpecialBuildingInfo>
@@ -147,6 +215,10 @@
 			<Description>TXT_KEY_SPECIALBUILDING_BELLS</Description>
 			<bValid>1</bValid>
 			<FontButtonIndex>1</FontButtonIndex>
+			<iPosX>80</iPosX>
+			<iPosY>0</iPosY>
+			<iSizeX>18</iSizeX>
+			<iSizeY>11</iSizeY>
 			<ProductionTraits/>
 			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
 		</SpecialBuildingInfo>
@@ -155,6 +227,10 @@
 			<Description>TXT_KEY_SPECIALBUILDING_BELLS</Description>
 			<bValid>1</bValid>
 			<FontButtonIndex>24</FontButtonIndex>
+			<iPosX>20</iPosX>
+			<iPosY>20</iPosY>
+			<iSizeX>18</iSizeX>
+			<iSizeY>11</iSizeY>
 			<ProductionTraits/>
 			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
 		</SpecialBuildingInfo>
@@ -163,6 +239,10 @@
 			<Description>TXT_KEY_SPECIALBUILDING_BELLS</Description>
 			<bValid>1</bValid>
 			<FontButtonIndex>33</FontButtonIndex>
+			<iPosX>40</iPosX>
+			<iPosY>60</iPosY>
+			<iSizeX>18</iSizeX>
+			<iSizeY>11</iSizeY>
 			<ProductionTraits/>
 			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
 		</SpecialBuildingInfo>
@@ -171,6 +251,10 @@
 			<Description>TXT_KEY_SPECIALBUILDING_BELLS</Description>
 			<bValid>1</bValid>
 			<FontButtonIndex>35</FontButtonIndex>
+			<iPosX>90</iPosX>
+			<iPosY>13</iPosY>
+			<iSizeX>18</iSizeX>
+			<iSizeY>11</iSizeY>
 			<ProductionTraits/>
 			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
 		</SpecialBuildingInfo>
@@ -179,6 +263,10 @@
 			<Description>TXT_KEY_SPECIALBUILDING_BELLS</Description>
 			<bValid>1</bValid>
 			<FontButtonIndex>35</FontButtonIndex>
+			<iPosX>88</iPosX>
+			<iPosY>80</iPosY>
+			<iSizeX>18</iSizeX>
+			<iSizeY>11</iSizeY>
 			<ProductionTraits/>
 			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
 		</SpecialBuildingInfo>
@@ -187,6 +275,10 @@
 			<Description>TXT_KEY_SPECIALBUILDING_BELLS</Description>
 			<bValid>1</bValid>
 			<FontButtonIndex>30</FontButtonIndex>
+			<iPosX>20</iPosX>
+			<iPosY>40</iPosY>
+			<iSizeX>18</iSizeX>
+			<iSizeY>11</iSizeY>
 			<ProductionTraits/>
 			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
 		</SpecialBuildingInfo>
@@ -195,6 +287,10 @@
 			<Description>TXT_KEY_SPECIALBUILDING_BELLS</Description>
 			<bValid>1</bValid>
 			<FontButtonIndex>32</FontButtonIndex>
+			<iPosX>25</iPosX>
+			<iPosY>43</iPosY>
+			<iSizeX>18</iSizeX>
+			<iSizeY>11</iSizeY>
 			<ProductionTraits/>
 			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
 		</SpecialBuildingInfo>
@@ -203,6 +299,10 @@
 			<Description>TXT_KEY_SPECIALBUILDING_BELLS</Description>
 			<bValid>1</bValid>
 			<FontButtonIndex>0</FontButtonIndex>
+			<iPosX>42</iPosX>
+			<iPosY>20</iPosY>
+			<iSizeX>18</iSizeX>
+			<iSizeY>11</iSizeY>
 			<ProductionTraits/>
 			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
 		</SpecialBuildingInfo>
@@ -211,6 +311,10 @@
 			<Description>TXT_KEY_SPECIALBUILDING_BELLS</Description>
 			<bValid>1</bValid>
 			<FontButtonIndex>34</FontButtonIndex>
+			<iPosX>76</iPosX>
+			<iPosY>81</iPosY>
+			<iSizeX>18</iSizeX>
+			<iSizeY>11</iSizeY>
 			<ProductionTraits/>
 			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
 		</SpecialBuildingInfo>
@@ -219,6 +323,10 @@
 			<Description>TXT_KEY_SPECIALBUILDING_BELLS</Description>
 			<bValid>1</bValid>
 			<FontButtonIndex>27</FontButtonIndex>
+			<iPosX>35</iPosX>
+			<iPosY>25</iPosY>
+			<iSizeX>18</iSizeX>
+			<iSizeY>11</iSizeY>
 			<ProductionTraits/>
 			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
 		</SpecialBuildingInfo>
@@ -227,6 +335,10 @@
 			<Description>TXT_KEY_SPECIALBUILDING_BELLS</Description>
 			<bValid>1</bValid>
 			<FontButtonIndex>27</FontButtonIndex>
+			<iPosX>68</iPosX>
+			<iPosY>28</iPosY>
+			<iSizeX>18</iSizeX>
+			<iSizeY>11</iSizeY>
 			<ProductionTraits/>
 			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
 		</SpecialBuildingInfo>
@@ -235,6 +347,10 @@
 			<Description>TXT_KEY_SPECIALBUILDING_BELLS</Description>
 			<bValid>1</bValid>
 			<FontButtonIndex>27</FontButtonIndex>
+			<iPosX>25</iPosX>
+			<iPosY>8</iPosY>
+			<iSizeX>18</iSizeX>
+			<iSizeY>11</iSizeY>
 			<ProductionTraits/>
 			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
 		</SpecialBuildingInfo>
@@ -243,6 +359,10 @@
 			<Description>TXT_KEY_SPECIALBUILDING_BELLS</Description>
 			<bValid>1</bValid>
 			<FontButtonIndex>27</FontButtonIndex>
+			<iPosX>20</iPosX>
+			<iPosY>0</iPosY>
+			<iSizeX>18</iSizeX>
+			<iSizeY>11</iSizeY>
 			<ProductionTraits/>
 			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
 		</SpecialBuildingInfo>
@@ -251,6 +371,10 @@
 			<Description>TXT_KEY_SPECIALBUILDING_BELLS</Description>
 			<bValid>1</bValid>
 			<FontButtonIndex>9</FontButtonIndex>
+			<iPosX>59</iPosX>
+			<iPosY>22</iPosY>
+			<iSizeX>18</iSizeX>
+			<iSizeY>11</iSizeY>
 			<ProductionTraits/>
 			<Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
 		</SpecialBuildingInfo>

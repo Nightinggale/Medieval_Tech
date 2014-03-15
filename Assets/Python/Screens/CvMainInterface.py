@@ -471,32 +471,6 @@ class CvMainInterface:
 		global CITY_MULTI_TAB_SIZE
 		CITY_MULTI_TAB_SIZE = (TRANSPORT_AREA_HEIGHT - STACK_BAR_HEIGHT - MAP_EDGE_MARGIN_WIDTH) / 3
 
-		global BUILDING_GRID
-		
-		#TK Med
-		if gc.isMedievalConquest():
-			BUILDING_DATA = BUILDING_DATA_MC
-		elif gc.isColonization2071():
-			BUILDING_DATA = BUILDING_DATA_2071
-		#TKs Med
-			
-		BUILDING_GRID = []
-		for iBUILDING_TYPE in range(len(BUILDING_DATA)):
-			TypeArray = []
-			for iData in range(len(BUILDING_DATA[iBUILDING_TYPE])):
-				if  iData == 0 :
-					Dimention = BUILDING_AREA_WIDTH
-				elif iData == 1:
-					Dimention = BUILDING_AREA_HEIGHT
-				elif iData == 2:
-					Dimention = BUILDING_AREA_HEIGHT
-				else:
-					Dimention = BUILDING_AREA_WIDTH
-
-				TypeArray.append(int((BUILDING_DATA[iBUILDING_TYPE][iData] * Dimention) / 100))
-
-			BUILDING_GRID.append(TypeArray)
-
 		global AVOID_GROWTH
 		for iEmphasize in range(gc.getNumEmphasizeInfos()):
 			if gc.getEmphasizeInfo(iEmphasize).isAvoidGrowth():
@@ -1218,27 +1192,6 @@ class CvMainInterface:
 
 		screen.setLabelAt("RebelText", "RebelBar", "", CvUtil.FONT_CENTER_JUSTIFY, (CITIZEN_BAR_WIDTH - (STACK_BAR_HEIGHT * 3 / 2)) / 2, 0, -1.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 
-	# CITY BUILDING GRID
-		for iSpecial in range(gc.getNumSpecialBuildingInfos()):
-			iTargetProfession = -1
-			for iProfession in range(gc.getNumProfessionInfos()):
-				if gc.getCivilizationInfo(gc.getActivePlayer().getCivilizationType()).isValidProfession(iProfession):
-					if(gc.getProfessionInfo(iProfession).getSpecialBuilding() == iSpecial):
-						iTargetProfession = iProfession
-						break
-			#TKs Med
-			BuildingY = BUILDING_GRID[iSpecial][1] + STACK_BAR_HEIGHT
-			if (iSpecial == 18):
-				screen.setImageButton("CityBuildingGraphic" + str(iSpecial), "", BUILDING_GRID[iSpecial][0] + STACK_BAR_HEIGHT, BuildingY, BUILDING_GRID[iSpecial][3], BUILDING_GRID[iSpecial][3], WidgetTypes.WIDGET_ARMORSMITH, iSpecial, iTargetProfession)
-				#screen.setImageButton("CityBuildingGraphic" + str(iSpecial), "", BUILDING_GRID[iSpecial][0] + STACK_BAR_HEIGHT, BUILDING_GRID[iSpecial][1] + CITY_TITLE_BAR_HEIGHT, BUILDING_GRID[iSpecial][3], BUILDING_GRID[iSpecial][3], WidgetTypes.WIDGET_CITY_UNIT_ASSIGN_PROFESSION, iSpecial, iTargetProfession)
-			elif (iSpecial == 22):
-				screen.setImageButton("CityBuildingGraphic" + str(iSpecial), "", BUILDING_GRID[iSpecial][0] + STACK_BAR_HEIGHT, BuildingY, BUILDING_GRID[iSpecial][3], BUILDING_GRID[iSpecial][3], WidgetTypes.WIDGET_MARKET, iSpecial, iTargetProfession)
-			else:
-				screen.setImageButton("CityBuildingGraphic" + str(iSpecial), "", BUILDING_GRID[iSpecial][0] + STACK_BAR_HEIGHT, BuildingY, BUILDING_GRID[iSpecial][3], BUILDING_GRID[iSpecial][3], WidgetTypes.WIDGET_CITY_UNIT_ASSIGN_PROFESSION, iSpecial, iTargetProfession)
-			#TKe
-			screen.addDDSGFC("ProductionBox" + str(iSpecial), ArtFileMgr.getInterfaceArtInfo("INTERFACE_PRODUCTION_BOX").getPath(), BUILDING_GRID[iSpecial][0] + STACK_BAR_HEIGHT, BUILDING_GRID[iSpecial][1] + BUILDING_GRID[iSpecial][2], BUILDING_GRID[iSpecial][3] + STACK_BAR_HEIGHT, STACK_BAR_HEIGHT, WidgetTypes.WIDGET_GENERAL, -1, -1)
-			screen.hide("ProductionBox" + str(iSpecial))
-
 	# BUTTONS
 		screen.setImageButton("HurryGold", ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE_PURCHASE_UNIT").getPath(), CITIZEN_BAR_WIDTH - (SMALL_BUTTON_SIZE), yResolution - BOTTOM_CENTER_HUD_HEIGHT - TRANSPORT_AREA_HEIGHT - (STACK_BAR_HEIGHT / 2) - SMALL_BUTTON_SIZE, SMALL_BUTTON_SIZE * 2, SMALL_BUTTON_SIZE * 2, WidgetTypes.WIDGET_HURRY, gc.getInfoTypeForString("HURRY_GOLD"), -1)
 		self.appendtoHideState(screen, "HurryGold", HIDE_TYPE_CITY, HIDE_LEVEL_HIDE)
@@ -1275,6 +1228,13 @@ class CvMainInterface:
 			screen.setText( szName, "Background", u"", CvUtil.FONT_RIGHT_JUSTIFY, 996, 622, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_CONTACT_CIV, i, -1 )
 			screen.hide( szName )
 
+		# special building placement xml - start - Nightinggale
+		self.screen = screen
+		self.buildingUpdateCounter = 0
+		self.buildingUpdateThreshold = gc.getDefineINT("BuildingUpdateInterval")
+		self.setBuildingGrid()
+		# special building placement xml - end - Nightinggale
+			
 		# This should be a forced redraw screen
 		screen.setForcedRedraw(True)
 		self.SetHideLists(screen)
@@ -1296,6 +1256,15 @@ class CvMainInterface:
 
 		messageControl = CyMessageControl()
 
+		# special building placement xml - start - Nightinggale
+		if self.buildingUpdateThreshold > 0:
+			self.buildingUpdateCounter = self.buildingUpdateCounter + 1
+			if self.buildingUpdateCounter == self.buildingUpdateThreshold:
+				self.buildingUpdateCounter = 0
+				gc.reloadSpecialBuildings()
+				self.setBuildingGrid()
+		# special building placement xml - end - Nightinggale
+		
 		# Hide all interface widgets
 		bShow = False
 		if ( CyInterface().getShowInterface() != InterfaceVisibility.INTERFACE_HIDE_ALL and CyInterface().getShowInterface() != InterfaceVisibility.INTERFACE_MINIMAP_ONLY ):
@@ -2802,29 +2771,9 @@ class CvMainInterface:
 				screen.setLabelAt("ProductionText", "CityProductionBar", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, (xResolution - CITIZEN_BAR_WIDTH - (MAP_EDGE_MARGIN_WIDTH * 2)) / 2, STACK_BAR_HEIGHT / 2, -1.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_HELP_SELECTED, 0, -1 )
 
 			# 3 D BUILDINGS
-				for iSpecial in range(gc.getNumSpecialBuildingInfos()):
-					BuildingPresent = False
-					for iBuilding in range(gc.getNumBuildingInfos()):
-						if (pHeadSelectedCity.isHasBuilding(iBuilding)):
-							if(gc.getBuildingInfo(iBuilding).getSpecialBuildingType() == iSpecial):
-								BuildingPresent = True
-								break
-					#Tks Med
-					bSkip = False
-					if (gc.getBuildingInfo(iBuilding).getBuildingMakesInvalid() != -1):
-						if (pHeadSelectedCity.isHasBuildingClass(gc.getBuildingInfo(iBuilding).getBuildingMakesInvalid())):
-							bSkip = True
-					#if (gc.getBuildingInfo(iBuilding).isArmory()):
-						#iArmorBuilding = gc.getProfessionInfo(pHeadSelectedCity.getSelectedArmor()).getSpecialBuilding()
-						#if (iArmorBuilding != iSpecial):
-							#bSkip = True
-
-					if (BuildingPresent and bSkip == False):
-						Texture = gc.getBuildingInfo(iBuilding).getArtInfo().getCityTexture()
-						screen.changeImageButton("CityBuildingGraphic" + str(iSpecial), gc.getBuildingInfo(iBuilding).getArtInfo().getCityTexture())
-						screen.show("CityBuildingGraphic" + str(iSpecial))
-					else:
-						screen.hide("CityBuildingGraphic" + str(iSpecial))
+				# special building placement xml - start - Nightinggale
+				self.drawBuildingSprites(pHeadSelectedCity)
+				# special building placement xml - end - Nightinggale
 
 			# CITIY DEFENSE MODIFIER
 				iDefenseModifier = pHeadSelectedCity.getDefenseModifier()
@@ -3675,3 +3624,83 @@ class CvMainInterface:
 		#	return szHelp
 
 		return u""
+
+# special building placement xml - start - Nightinggale
+	def setBuildingGrid( self ):
+		#screen = CyGInterfaceScreen("MainInterface", CvScreenEnums.MAIN_INTERFACE )
+		screen = self.screen
+		global STACK_BAR_HEIGHT
+		global BUILDING_GRID
+		BUILDING_GRID = []
+		for iBUILDING_TYPE in range(gc.getNumSpecialBuildingInfos()):
+			TypeArray = []
+			for iData in range(4):
+				if  iData == 0 :
+					Dimention = BUILDING_AREA_WIDTH
+				elif iData == 1:
+					Dimention = BUILDING_AREA_HEIGHT
+				elif iData == 2:
+					Dimention = BUILDING_AREA_HEIGHT
+				else:
+					Dimention = BUILDING_AREA_WIDTH
+				
+				#TypeArray.append(int((BUILDING_DATA[iBUILDING_TYPE][iData] * Dimention) / 100))
+				TypeArray.append(int((gc.getSpecialBuildingInfo(iBUILDING_TYPE).getSizePos(iData) * Dimention) / 100))
+
+			BUILDING_GRID.append(TypeArray)
+			
+		# CITY BUILDING GRID
+		for iSpecial in range(gc.getNumSpecialBuildingInfos()):
+			iTargetProfession = -1
+			for iProfession in range(gc.getNumProfessionInfos()):
+				if gc.getCivilizationInfo(gc.getActivePlayer().getCivilizationType()).isValidProfession(iProfession):
+					if(gc.getProfessionInfo(iProfession).getSpecialBuilding() == iSpecial):
+						iTargetProfession = iProfession
+						break
+			#TKs Med
+			BuildingY = BUILDING_GRID[iSpecial][1] + STACK_BAR_HEIGHT
+			if (iSpecial == 18):
+				screen.setImageButton("CityBuildingGraphic" + str(iSpecial), "", BUILDING_GRID[iSpecial][0] + STACK_BAR_HEIGHT, BuildingY, BUILDING_GRID[iSpecial][3], BUILDING_GRID[iSpecial][3], WidgetTypes.WIDGET_ARMORSMITH, iSpecial, iTargetProfession)
+				#screen.setImageButton("CityBuildingGraphic" + str(iSpecial), "", BUILDING_GRID[iSpecial][0] + STACK_BAR_HEIGHT, BUILDING_GRID[iSpecial][1] + CITY_TITLE_BAR_HEIGHT, BUILDING_GRID[iSpecial][3], BUILDING_GRID[iSpecial][3], WidgetTypes.WIDGET_CITY_UNIT_ASSIGN_PROFESSION, iSpecial, iTargetProfession)
+			elif (iSpecial == 22):
+				screen.setImageButton("CityBuildingGraphic" + str(iSpecial), "", BUILDING_GRID[iSpecial][0] + STACK_BAR_HEIGHT, BuildingY, BUILDING_GRID[iSpecial][3], BUILDING_GRID[iSpecial][3], WidgetTypes.WIDGET_MARKET, iSpecial, iTargetProfession)
+			else:
+				screen.setImageButton("CityBuildingGraphic" + str(iSpecial), "", BUILDING_GRID[iSpecial][0] + STACK_BAR_HEIGHT, BuildingY, BUILDING_GRID[iSpecial][3], BUILDING_GRID[iSpecial][3], WidgetTypes.WIDGET_CITY_UNIT_ASSIGN_PROFESSION, iSpecial, iTargetProfession)
+			#TKe
+			screen.addDDSGFC("ProductionBox" + str(iSpecial), ArtFileMgr.getInterfaceArtInfo("INTERFACE_PRODUCTION_BOX").getPath(), BUILDING_GRID[iSpecial][0] + STACK_BAR_HEIGHT, BUILDING_GRID[iSpecial][1] + BUILDING_GRID[iSpecial][2], BUILDING_GRID[iSpecial][3] + STACK_BAR_HEIGHT, STACK_BAR_HEIGHT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+			screen.hide("ProductionBox" + str(iSpecial))
+		
+		if CyInterface().isCityScreenUp():
+			pHeadSelectedCity = CyInterface().getHeadSelectedCity()
+			if pHeadSelectedCity:
+				self.drawBuildingSprites(pHeadSelectedCity)
+				self.updateCitizenButtons()
+			
+			
+	def drawBuildingSprites( self, pHeadSelectedCity ):
+		screen = self.screen
+		for iSpecial in range(gc.getNumSpecialBuildingInfos()):
+			BuildingPresent = False
+			for iBuilding in range(gc.getNumBuildingInfos()):
+				if (pHeadSelectedCity.isHasBuilding(iBuilding)):
+					if(gc.getBuildingInfo(iBuilding).getSpecialBuildingType() == iSpecial):
+						BuildingPresent = True
+						break
+			#Tks Med
+			bSkip = False
+			if (gc.getBuildingInfo(iBuilding).getBuildingMakesInvalid() != -1):
+				if (pHeadSelectedCity.isHasBuildingClass(gc.getBuildingInfo(iBuilding).getBuildingMakesInvalid())):
+					bSkip = True
+			#if (gc.getBuildingInfo(iBuilding).isArmory()):
+				#iArmorBuilding = gc.getProfessionInfo(pHeadSelectedCity.getSelectedArmor()).getSpecialBuilding()
+				#if (iArmorBuilding != iSpecial):
+					#bSkip = True
+
+			if (BuildingPresent and bSkip == False):
+				Texture = gc.getBuildingInfo(iBuilding).getArtInfo().getCityTexture()
+				screen.changeImageButton("CityBuildingGraphic" + str(iSpecial), gc.getBuildingInfo(iBuilding).getArtInfo().getCityTexture())
+				screen.show("CityBuildingGraphic" + str(iSpecial))
+			else:
+				screen.hide("CityBuildingGraphic" + str(iSpecial))
+# special building placement xml - end - Nightinggale
+		

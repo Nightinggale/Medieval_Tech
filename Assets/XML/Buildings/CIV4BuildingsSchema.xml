@@ -66,6 +66,7 @@
 	<ElementType name="iExperience" content="textOnly" dt:type="int"/>
 	<ElementType name="iFoodKept" content="textOnly" dt:type="int"/>
 	<ElementType name="iHealRateChange" content="textOnly" dt:type="int"/>
+	<ElementType name="iCenterPlotBonus" content="textOnly" dt:type="int"/>
 	<ElementType name="iMilitaryProductionModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iDefense" content="textOnly" dt:type="int"/>
 	<ElementType name="iBombardDefense" content="textOnly" dt:type="int"/>
@@ -118,13 +119,13 @@
 	<ElementType name="YieldModifiers" content="eltOnly">
 		<element type="YieldModifier" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-  <ElementType name="MaxYieldModifier" content="eltOnly">
-    <element type="YieldType"/>
-    <element type="iModifier"/>
-  </ElementType>
-  <ElementType name="MaxYieldModifiers" content="eltOnly">
-    <element type="MaxYieldModifier" minOccurs="0"/>
-  </ElementType>
+	<ElementType name="MaxYieldModifier" content="eltOnly">
+		<element type="YieldType"/>
+		<element type="iModifier"/>
+	</ElementType>
+	<ElementType name="MaxYieldModifiers" content="eltOnly">
+		<element type="MaxYieldModifier" minOccurs="0"/>
+	</ElementType>
 	<ElementType name="YieldDemand" content="eltOnly">
 		<element type="YieldType"/>
 		<element type="iYieldDemand"/>
@@ -177,35 +178,35 @@
 	<ElementType name="BuildingClassNeededs" content="eltOnly">
 		<element type="BuildingClassNeeded" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-  <ElementType name="UnitClassType" content="textOnly"/>
-  <ElementType name="bValue" content="textOnly" dt:type="boolean"/>
-  <ElementType name="iValue" content="textOnly" dt:type="int"/>
-  <ElementType name="ImmigrationUnit" content="eltOnly">
-    <element type="UnitClassType"/>
-    <element type="bValue"/>
-  </ElementType>
-  <ElementType name="ImmigrationUnits" content="eltOnly">
-    <element type="ImmigrationUnit" minOccurs="0" maxOccurs="*"/>
-  </ElementType>
-  <ElementType name="AutoSellsYield" content="eltOnly">
-    <element type="YieldType"/>
-    <element type="iValue"/>
-  </ElementType>
-  <ElementType name="AutoSellsYields" content="eltOnly">
-    <element type="AutoSellsYield" minOccurs="0" maxOccurs="*"/>
-  </ElementType>
-  <ElementType name="AutoSellYieldChange" content="textOnly"/>
-  <ElementType name="BuildingMakesInvalid" content="textOnly"/>
-  <ElementType name="iCityType" content="textOnly"/>
-  <ElementType name="iFreeToCityType" content="textOnly"/>
-  <ElementType name="iModdersCode1" content="textOnly"/>
-  <ElementType name="AlternateBuilding" content="textOnly"/>
-  <ElementType name="bArmory" content="textOnly" dt:type="boolean"/>
-  <ElementType name="iIncreasesCityPopulation" content="textOnly" dt:type="int"/>
-  <ElementType name="iRazedCityGoldIncrease" content="textOnly" dt:type="int"/>
-  <ElementType name="iTrainingTimeMod" content="textOnly" dt:type="int"/>
-  <ElementType name="iTeachLevel" content="textOnly" dt:type="int"/>
-  <ElementType name="iDetectsMarauders" content="textOnly" dt:type="int"/>
+	<ElementType name="UnitClassType" content="textOnly"/>
+	<ElementType name="bValue" content="textOnly" dt:type="boolean"/>
+	<ElementType name="iValue" content="textOnly" dt:type="int"/>
+	<ElementType name="ImmigrationUnit" content="eltOnly">
+		<element type="UnitClassType"/>
+		<element type="bValue"/>
+	</ElementType>
+	<ElementType name="ImmigrationUnits" content="eltOnly">
+		<element type="ImmigrationUnit" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="AutoSellsYield" content="eltOnly">
+		<element type="YieldType"/>
+		<element type="iValue"/>
+	</ElementType>
+	<ElementType name="AutoSellsYields" content="eltOnly">
+		<element type="AutoSellsYield" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="AutoSellYieldChange" content="textOnly"/>
+	<ElementType name="BuildingMakesInvalid" content="textOnly"/>
+	<ElementType name="iCityType" content="textOnly"/>
+	<ElementType name="iFreeToCityType" content="textOnly"/>
+	<ElementType name="iModdersCode1" content="textOnly"/>
+	<ElementType name="AlternateBuilding" content="textOnly"/>
+	<ElementType name="bArmory" content="textOnly" dt:type="boolean"/>
+	<ElementType name="iIncreasesCityPopulation" content="textOnly" dt:type="int"/>
+	<ElementType name="iRazedCityGoldIncrease" content="textOnly" dt:type="int"/>
+	<ElementType name="iTrainingTimeMod" content="textOnly" dt:type="int"/>
+	<ElementType name="iTeachLevel" content="textOnly" dt:type="int"/>
+	<ElementType name="iDetectsMarauders" content="textOnly" dt:type="int"/>
 	<ElementType name="HotKey" content="textOnly"/>
 	<ElementType name="bAltDown" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bShiftDown" content="textOnly" dt:type="boolean"/>
@@ -235,8 +236,8 @@
 		<element type="VictoryPrereq"/>
 		<element type="FreeStartEra"/>
 		<element type="MaxStartEra"/>
-    <element type="iCityType" minOccurs="0"/>
-    <element type="iFreeToCityType" minOccurs="0"/>
+		<element type="iCityType" minOccurs="0"/>
+		<element type="iFreeToCityType" minOccurs="0"/>
 		<element type="ProductionTraits"/>
 		<element type="FreePromotion"/>
 		<element type="bGraphicalOnly"/>
@@ -263,6 +264,7 @@
 		<element type="iExperience"/>
 		<element type="iFoodKept"/>
 		<element type="iHealRateChange"/>
+		<element type="iCenterPlotBonus" minOccurs="0"/>
 		<element type="iMilitaryProductionModifier"/>
 		<element type="iDefense"/>
 		<element type="iBombardDefense"/>
@@ -281,22 +283,22 @@
 		<element type="DomainProductionModifiers"/>
 		<element type="PrereqBuildingClasses"/>
 		<element type="BuildingClassNeededs"/>
-    <element type="BuildingMakesInvalid" minOccurs="0"/>
-    <element type="iModdersCode1" minOccurs="0"/>
-    <element type="AlternateBuilding" minOccurs="0"/>
-    <element type="bArmory" minOccurs="0"/>
-    <element type="iIncreasesCityPopulation" minOccurs="0"/>
-    <element type="iRazedCityGoldIncrease" minOccurs="0"/>
-    <element type="iTrainingTimeMod" minOccurs="0"/>
-	<element type="iTeachLevel" minOccurs="0"/>
-    <element type="iDetectsMarauders" minOccurs="0"/>
-    <element type="MaxYieldModifiers" minOccurs="0"/>
-	<element type="YieldDemands" minOccurs="0"/>
-	<element type="iMarketCap" minOccurs="0"/>
-    <element type="ImmigrationUnits" minOccurs="0"/>
-    <element type="AutoSellsYields" minOccurs="0"/>
-    <element type="AutoSellYieldChange" minOccurs="0"/>
-    <element type="HotKey"/>
+		<element type="BuildingMakesInvalid" minOccurs="0"/>
+		<element type="iModdersCode1" minOccurs="0"/>
+		<element type="AlternateBuilding" minOccurs="0"/>
+		<element type="bArmory" minOccurs="0"/>
+		<element type="iIncreasesCityPopulation" minOccurs="0"/>
+		<element type="iRazedCityGoldIncrease" minOccurs="0"/>
+		<element type="iTrainingTimeMod" minOccurs="0"/>
+		<element type="iTeachLevel" minOccurs="0"/>
+		<element type="iDetectsMarauders" minOccurs="0"/>
+		<element type="MaxYieldModifiers" minOccurs="0"/>
+		<element type="YieldDemands" minOccurs="0"/>
+		<element type="iMarketCap" minOccurs="0"/>
+		<element type="ImmigrationUnits" minOccurs="0"/>
+		<element type="AutoSellsYields" minOccurs="0"/>
+		<element type="AutoSellYieldChange" minOccurs="0"/>
+		<element type="HotKey"/>
 		<element type="bAltDown"/>
 		<element type="bShiftDown"/>
 		<element type="bCtrlDown"/>
@@ -311,6 +313,10 @@
 	<ElementType name="ArtStyleType" content="textOnly"/>
 	<ElementType name="iRequiredPopulation" content="textOnly" dt:type="int"/>
 	<ElementType name="FontButtonIndex" content="textOnly" dt:type="int"/>
+	<ElementType name="iPosX" content="textOnly" dt:type="int"/>
+	<ElementType name="iPosY" content="textOnly" dt:type="int"/>
+	<ElementType name="iSizeX" content="textOnly" dt:type="int"/>
+	<ElementType name="iSizeY" content="textOnly" dt:type="int"/>
 	<ElementType name="fScale" content="textOnly"/>
 	<ElementType name="bValid" content="textOnly" dt:type="boolean"/>
 	<ElementType name="Button" content="textOnly"/>
@@ -319,6 +325,10 @@
 		<element type="Description"/>
 		<element type="bValid"/>
 		<element type="FontButtonIndex"/>
+		<element type="iPosX"/>
+		<element type="iPosY"/>
+		<element type="iSizeX"/>
+		<element type="iSizeY"/>
 		<element type="ProductionTraits"/>
 		<element type="Button"/>
 	</ElementType>

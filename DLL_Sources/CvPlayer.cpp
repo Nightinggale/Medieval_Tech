@@ -240,7 +240,7 @@ void CvPlayer::init(PlayerTypes eID)
 		for (int iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
 		{
 			//Tks Civics
-			if (iI == CIVICOPTION_INVENTIONS)
+			if ((CivicOptionTypes)iI == CIVICOPTION_INVENTIONS)
 			{
 				continue;
 			}
@@ -754,6 +754,7 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 		m_aEuropeRevolutionUnits.clear();
 		m_triggersFired.clear();
 		m_aDocksNextUnits.clear();
+		m_aCivicCombatBonuses.clear();///TKs Civics
 	}
 
 	m_cities.removeAll();
@@ -2704,7 +2705,7 @@ void CvPlayer::verifyCivics()
 	for (int iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
 	{
 	    ///TK Update 1.1b
-	    if (iI == CIVICOPTION_INVENTIONS)
+	    if ((CivicOptionTypes)iI == CIVICOPTION_INVENTIONS)
 	    {
 	        continue;
 	    }
@@ -5997,6 +5998,12 @@ void CvPlayer::calculateTotalYields(int aiYields[]) const
 
 bool CvPlayer::isCivic(CivicTypes eCivic) const
 {
+	///Tks Civics
+	if (eCivic == NO_CIVIC)
+	{
+		return false;
+	}
+	//Tke
 	int iI;
 	for (iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
 	{
@@ -11390,6 +11397,25 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
     //}
 
 	//TKs Civics
+	if (kCivicInfo.getNumCivicCombatBonus() > 0)
+	{
+		clearCivicCombatBonuses();
+		for (int iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
+		{
+			if ((CivicOptionTypes)iI == CIVICOPTION_INVENTIONS)
+			{
+				continue;
+			}
+			if (getCivic((CivicOptionTypes)iI) != NO_CIVIC)
+			{
+				for (int iJ = 0; iJ < GC.getCivicInfo(getCivic((CivicOptionTypes)iI)).getNumCivicCombatBonus(); iJ++)
+				{
+					addCivicCombatBonuses((CivicTypes)GC.getCivicInfo(getCivic((CivicOptionTypes)iI)).getCivicCombat(iJ), GC.getCivicInfo(getCivic((CivicOptionTypes)iI)).getCivicCombatBonus(iJ));
+				}
+			}
+		}
+	}
+
 	if (kCivicInfo.getNumCivicTreasuryBonus() > 0)
 	{
 		int iGoldIncome = 0;
@@ -11947,7 +11973,21 @@ void CvPlayer::read(FDataStreamBase* pStream)
 			m_aEuropeRevolutionUnits.push_back(std::make_pair(eUnit, eProfession));
 		}
 	}
-
+	///Tks Civics Screen
+	{
+		m_aCivicCombatBonuses.clear();
+		uint iSize;
+		pStream->Read(&iSize);
+		for (uint i = 0; i < iSize; i++)
+		{
+			CivicTypes eCivic;
+			int iBonus;
+			pStream->Read((int*)&eCivic);
+			pStream->Read((int*)&iBonus);
+			m_aCivicCombatBonuses.push_back(std::make_pair(eCivic, iBonus));
+		}
+	}
+	//Tke
 	{
 		m_aDocksNextUnits.clear();
 		uint iSize;
@@ -12374,7 +12414,18 @@ void CvPlayer::write(FDataStreamBase* pStream)
 			pStream->Write((*it).second);
 		}
 	}
-
+	///Tks Civcs Screen
+	{
+		uint iSize = m_aCivicCombatBonuses.size();
+		pStream->Write(iSize);
+		std::vector< std::pair<CivicTypes, int> >::iterator it;
+		for (it = m_aCivicCombatBonuses.begin(); it != m_aCivicCombatBonuses.end(); ++it)
+		{
+			pStream->Write((*it).first);
+			pStream->Write((*it).second);
+		}
+	}
+	//Tke
 	{
 		uint iSize = m_aDocksNextUnits.size();
 		pStream->Write(iSize);
@@ -16974,6 +17025,68 @@ ProfessionTypes CvPlayer::getRevolutionEuropeProfession(int i) const
 
 	return m_aEuropeRevolutionUnits[i].second;
 }
+
+///Tks Civics Screen
+int CvPlayer::calculateCivicCombatBonuses(PlayerTypes ePlayer) const
+{
+	FAssert(ePlayer != NO_PLAYER);
+	int iBonus = 0; 
+	//Bonuses for This Player vs Other Player
+	for (int iI = 0; iI < getNumCivicCombatBonuses(); iI++)
+	{
+		CivicTypes eCivic = getCivicCombatBonusCivic(iI);
+		if (isCivic(eCivic) && !GET_PLAYER(ePlayer).isCivic(eCivic))
+		{
+			iBonus += getCivicCombatBonuses(iI);
+		}
+		else if (GET_PLAYER(ePlayer).isCivic(eCivic))
+		{
+			iBonus += getCivicCombatBonuses(iI);
+		}
+	}
+	//Bonuses for Other Player vs This Player
+	for (int iI = 0; iI < GET_PLAYER(ePlayer).getNumCivicCombatBonuses(); iI++)
+	{
+		CivicTypes eCivic = GET_PLAYER(ePlayer).getCivicCombatBonusCivic(iI);
+		if (GET_PLAYER(ePlayer).isCivic(eCivic) && !isCivic(eCivic))
+		{
+			iBonus -= GET_PLAYER(ePlayer).getCivicCombatBonuses(iI);
+		}
+		else if (isCivic(eCivic))
+		{
+			iBonus -= GET_PLAYER(ePlayer).getCivicCombatBonuses(iI);
+		}	
+	}
+	return iBonus;
+}
+int CvPlayer::getNumCivicCombatBonuses() const
+{
+	return m_aCivicCombatBonuses.size();
+}
+
+int CvPlayer::getCivicCombatBonuses(int i) const
+{
+	FAssert(i >= 0 && i < getNumCivicCombatBonuses());
+
+	return m_aCivicCombatBonuses[i].second;
+}
+
+CivicTypes CvPlayer::getCivicCombatBonusCivic(int i) const
+{
+	FAssert(i >= 0 && i < getNumCivicCombatBonuses());
+
+	return m_aCivicCombatBonuses[i].first;
+}
+void CvPlayer::addCivicCombatBonuses(CivicTypes eCivic, int iBonus)
+{
+	m_aCivicCombatBonuses.push_back(std::make_pair(eCivic, iBonus));
+}
+
+void CvPlayer::clearCivicCombatBonuses()
+{
+	m_aCivicCombatBonuses.clear();
+}
+//TKe
 
 void CvPlayer::addRevolutionEuropeUnit(UnitTypes eUnit, ProfessionTypes eProfession)
 {

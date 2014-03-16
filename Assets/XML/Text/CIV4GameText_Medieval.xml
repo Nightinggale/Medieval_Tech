@@ -14,6 +14,14 @@
 		<Spanish>[ICON_BULLET]</Spanish>
 	</TEXT>
   <TEXT>
+    <Tag>TXT_KEY_COMBAT_PLOT_MOD_VS_CIVIC</Tag>
+    <English>[ICON_BULLET]%D1_Bonus%% from Decrees</English>
+    <French>[ICON_BULLET]%D1_Bonus%% from Decrees</French>
+    <German>[ICON_BULLET]%D1_Bonus%% from Decrees</German>
+    <Italian>[ICON_BULLET]%D1_Bonus%% from Decrees</Italian>
+    <Spanish>[ICON_BULLET]%D1_Bonus%% from Decrees</Spanish>
+  </TEXT>
+  <TEXT>
     <Tag>TXT_KEY_CIVIC_TREASURY_BUILDING</Tag>
     <English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s1_civic[COLOR_REVERT] bonus: +%d2% of Treasury</English>
     <French>[ICON_BULLET]</French>
@@ -30,6 +38,22 @@
     <Spanish>[ICON_BULLET]</Spanish>
   </TEXT>
   <TEXT>
+    <Tag>TXT_KEY_CIVIC_HOLY_COMBAT_BONUS</Tag>
+    <English>[ICON_BULLET]+%d1_points% vs without [COLOR_HIGHLIGHT_TEXT]%s2_civic[COLOR_REVERT]</English>
+    <French>[ICON_BULLET]+%d1_points% [COLOR_HIGHLIGHT_TEXT]%s2_father[COLOR_REVERT]</French>
+    <German>[ICON_BULLET]+%d1_points% [COLOR_HIGHLIGHT_TEXT]%s2_father[COLOR_REVERT]</German>
+    <Italian>[ICON_BULLET]+%d1_points% [COLOR_HIGHLIGHT_TEXT]%s2_father[COLOR_REVERT]</Italian>
+    <Spanish>[ICON_BULLET]+%d1_points% [COLOR_HIGHLIGHT_TEXT]%s2_father[COLOR_REVERT]</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_COMBAT_BONUS</Tag>
+    <English>[ICON_BULLET]+%d1_points% vs [COLOR_HIGHLIGHT_TEXT]%s2_civic[COLOR_REVERT]</English>
+    <French>[ICON_BULLET]+%d1_points% vs [COLOR_HIGHLIGHT_TEXT]%s2_civic[COLOR_REVERT]</French>
+    <German>[ICON_BULLET]+%d1_points% vs [COLOR_HIGHLIGHT_TEXT]%s2_civic[COLOR_REVERT]</German>
+    <Italian>[ICON_BULLET]+%d1_points% vs [COLOR_HIGHLIGHT_TEXT]%s2_civic[COLOR_REVERT]</Italian>
+    <Spanish>[ICON_BULLET]+%d1_points% vs [COLOR_HIGHLIGHT_TEXT]%s2_civic[COLOR_REVERT]</Spanish>
+  </TEXT>
+  <TEXT>
     <Tag>TXT_KEY_CIVIC_WORKERS_BUILD</Tag>
     <English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Workers[COLOR_REVERT] can Build after move</English>
     <French>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Workers[COLOR_REVERT] can Build after move</French>
@@ -40,10 +64,10 @@
   <TEXT>
     <Tag>TXT_KEY_CIVIC_FATHER_BONUS</Tag>
     <English>[ICON_BULLET]+%d1_points% [COLOR_HIGHLIGHT_TEXT]%s2_father[COLOR_REVERT]</English>
-    <French>[ICON_BULLET]+%d1_points% %s2_father</French>
-    <German>[ICON_BULLET]+%d1_points% %s2_father</German>
-    <Italian>[ICON_BULLET]+%d1_points% %s2_father</Italian>
-    <Spanish>[ICON_BULLET]+%d1_points% %s2_father</Spanish>
+    <French>[ICON_BULLET]+%d1_points% [COLOR_HIGHLIGHT_TEXT]%s2_father[COLOR_REVERT]</French>
+    <German>[ICON_BULLET]+%d1_points% [COLOR_HIGHLIGHT_TEXT]%s2_father[COLOR_REVERT]</German>
+    <Italian>[ICON_BULLET]+%d1_points% [COLOR_HIGHLIGHT_TEXT]%s2_father[COLOR_REVERT]</Italian>
+    <Spanish>[ICON_BULLET]+%d1_points% [COLOR_HIGHLIGHT_TEXT]%s2_father[COLOR_REVERT]</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_CIVIC_SCREEN_TITLE</Tag>

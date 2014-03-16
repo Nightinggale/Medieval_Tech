@@ -1856,7 +1856,14 @@ bool CvGameTextMgr::setCombatPlotHelp(CvWStringBuffer &szString, CvPlot* pPlot)
 					szString.append(gDLL->getText("TXT_KEY_COMBAT_PLOT_MOD_VS_TYPE", iModifier, GC.getUnitCombatInfo(pDefender->getUnitCombatType()).getTextKeyWide()));
 				}
 			}
-
+			///Tks Civics
+			iModifier = GET_PLAYER(pAttacker->getOwnerINLINE()).calculateCivicCombatBonuses(pDefender->getOwnerINLINE());
+			if (iModifier != 0)
+			{
+				szString.append(NEWLINE);
+				szString.append(gDLL->getText("TXT_KEY_COMBAT_PLOT_MOD_VS_CIVIC", iModifier));
+			}
+			//TKe
 			iModifier = pAttacker->domainModifier(pDefender->getDomainType());
 
 			if (iModifier != 0)
@@ -4429,10 +4436,6 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
             }
             szHelpText.append(gDLL->getText("TXT_KEY_TRADEPOINTS_CONVERTED_IDEAS_COST", iCost, GC.getFatherPointInfo(eFatherPoints).getChar()));
         }
-
-
-
-
     }
 
     if (bOnlyCost)
@@ -4445,6 +4448,19 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
         szHelpText.append(NEWLINE);
 		szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_TREASURY_BUILDING", GC.getCivicInfo((BuildingClassTypes)kCivicInfo.getCivicTreasury(iI)).getDescription(), kCivicInfo.getCivicTreasuryBonus(iI)));
     }*/
+	for (iI = 0; iI < kCivicInfo.getNumCivicCombatBonus(); iI++)
+	{
+		if ((CivicTypes)kCivicInfo.getCivicCombat(iI) == eCivic)
+		{
+			szHelpText.append(NEWLINE);
+			szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_HOLY_COMBAT_BONUS", kCivicInfo.getCivicCombatBonus(iI), GC.getCivicInfo((CivicTypes)kCivicInfo.getCivicCombat(iI)).getDescription()));
+		}
+		else
+		{
+			szHelpText.append(NEWLINE);
+			szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_COMBAT_BONUS", kCivicInfo.getCivicCombatBonus(iI), GC.getCivicInfo((CivicTypes)kCivicInfo.getCivicCombat(iI)).getDescription()));
+		}
+	}
 	if (kCivicInfo.getNumCivicTreasuryBonus() > 0)
 	{
 	    szHelpText.append(NEWLINE);
@@ -4656,11 +4672,6 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
 	{
 	    szHelpText.append(NEWLINE);
         szHelpText.append(gDLL->getText("TXT_KEY_MISSIONS_NOTCONSUMED_COUNT", kCivicInfo.getMissionariesNotCosumed()));
-	}
-	if (kCivicInfo.getMissionariesNotCosumed() < 0)
-	{
-	    szHelpText.append(NEWLINE);
-        szHelpText.append(gDLL->getText("TXT_KEY_MISSIONS_NOTCONSUMED_CONVERT"));
 	}
 	if (kCivicInfo.getMissionariesNotCosumed() < 0)
 	{

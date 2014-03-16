@@ -4613,7 +4613,7 @@
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
       <Type>CIVIC_PARLAMENT</Type>
-      <Description>Parlament</Description>
+      <Description>Parliament</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
       <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,6,4</Button>
@@ -4638,6 +4638,12 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <CivicCombatBonuses>
+        <CivicCombatBonus>
+          <Civic>CIVIC_SLAVERY</Civic>
+          <iValue>25</iValue>
+        </CivicCombatBonus>
+      </CivicCombatBonuses>
     </CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_PIETY</CivicOptionType>
@@ -4732,6 +4738,12 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <CivicCombatBonuses>
+        <CivicCombatBonus>
+          <Civic>CIVIC_DIVINE_REVELATION</Civic>
+          <iValue>25</iValue>
+        </CivicCombatBonus>
+      </CivicCombatBonuses>
     </CivicInfo>
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_PIETY</CivicOptionType>

@@ -8316,7 +8316,7 @@ int CvUnit::maxCombatStr(const CvPlot* pPlot, const CvUnit* pAttacker, CombatDet
 			pCombatDetails->sUnitName = CvWString::format(L"%s (%s)", GC.getProfessionInfo(getProfession()).getDescription(), getName().GetCString());
 		}
 	}
-
+	
 	if (baseCombatStr() == 0)
 	{
 		return 0;
@@ -8331,9 +8331,11 @@ int CvUnit::maxCombatStr(const CvPlot* pPlot, const CvUnit* pAttacker, CombatDet
 	{
 		pCombatDetails->iExtraCombatPercent = iExtraModifier;
 	}
-
+	
 	if (pAttacker != NULL)
 	{
+		///Tks Civics
+		iModifier += GET_PLAYER(getOwnerINLINE()).calculateCivicCombatBonuses(pAttacker->getOwnerINLINE());
 	    ///TK Med
 		if (isNative() || m_pUnitInfo->getCasteAttribute() == 7)
 		{
@@ -8441,7 +8443,9 @@ int CvUnit::maxCombatStr(const CvPlot* pPlot, const CvUnit* pAttacker, CombatDet
 	if (pAttacker != NULL)
 	{
 		int iTempModifier = 0;
-
+		///Tks Civics
+		//iExtraModifier = GET_PLAYER(pAttacker->getOwnerINLINE()).calculateCivicCombatBonuses(getOwnerINLINE());
+	    ///TK Med
 		if (pAttackedPlot->isCity(true, getTeam()))
 		{
 			iExtraModifier = -pAttacker->cityAttackModifier();

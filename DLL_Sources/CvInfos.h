@@ -1046,6 +1046,9 @@ public:
     DllExport int getAllowsPromotions(int i) const;
     DllExport int getAllowsBonuses(int i) const;
 	//Tks Civics
+	int getNumCivicCombatBonus() const;
+	int getCivicCombat(int index) const;
+	int getCivicCombatBonus(int index) const;
 	int getAllowedUnitClassImmigration(int i) const;
 	int getUpkeepYields(int i) const;
 	//tke
@@ -1210,6 +1213,7 @@ protected:
 	bool* m_pabSpecialBuildingNotRequired;
 	std::vector<int*> m_aaiImprovementYieldChanges;
 	//Tks Civics
+	std::vector< std::pair<CivicTypes, int> > m_aiCivicCombatBonuses;
 	std::vector< std::pair<BuildingClassTypes, int> > m_aiCivicTreasuryBonuses;
 	std::vector< std::pair<UnitClassTypes, int> > m_aRandomGrowthUnits;
 	std::vector< std::pair<YieldTypes, int> > m_aConnectedTradeYields;

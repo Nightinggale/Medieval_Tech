@@ -731,7 +731,14 @@ public:
 	void hurry(HurryTypes eHurry, int iIndex);
 	int getHurryGold(HurryTypes eHurry, int iIndex) const;
 	const wchar* getHurryItemTextKey(HurryTypes eHurry, int iData) const;
-	///TKs Invention Core Mod v 1.0
+	///TKs Med
+	int getNumCivicCombatBonuses() const;
+	int getCivicCombatBonuses(int i) const;
+	CivicTypes getCivicCombatBonusCivic(int i) const;
+	void addCivicCombatBonuses(CivicTypes eCivic, int iBonus);
+	void clearCivicCombatBonuses();
+	int calculateCivicCombatBonuses(PlayerTypes ePlayer) const;
+
 	void doImmigrant(int iIndex, int iReason = 0);
 	///TKe
 
@@ -979,7 +986,7 @@ protected:
 	CvEventMap m_mapEventCountdown;
 	UnitCombatPromotionArray m_aFreeUnitCombatPromotions;
 	UnitClassPromotionArray m_aFreeUnitClassPromotions;
-
+	std::vector< std::pair<CivicTypes, int> > m_aCivicCombatBonuses;///Tks Civics
 	std::vector< std::pair<UnitTypes, ProfessionTypes> > m_aEuropeRevolutionUnits;
 	std::vector<UnitTypes> m_aDocksNextUnits;
 	CvMessageQueue m_listGameMessages;

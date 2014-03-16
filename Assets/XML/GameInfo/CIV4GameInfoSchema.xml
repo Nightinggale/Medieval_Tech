@@ -606,6 +606,13 @@
   <ElementType name="CivicTreasuryBonuses" content="eltOnly">
     <element type="CivicTreasuryBonus" minOccurs="0" maxOccurs="*"/>
   </ElementType>
+  <ElementType name="CivicCombatBonus" content="eltOnly">
+    <element type="Civic"/>
+    <element type="iValue"/>
+  </ElementType>
+  <ElementType name="CivicCombatBonuses" content="eltOnly">
+    <element type="CivicCombatBonus" minOccurs="0" maxOccurs="*"/>
+  </ElementType>
 	<ElementType name="bStartConstitution" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bisNoneTradeable" content="textOnly" dt:type="boolean"/>
 	<ElementType name="iCheaperPopulationGrowth" content="textOnly" dt:type="int"/>
@@ -701,6 +708,7 @@
 		<element type="AllowsRoutes" minOccurs="0"/>
 		<element type="FreeUnitFirstToResearch" minOccurs="0"/>
     <element type="CivicTreasuryBonuses" minOccurs="0"/>
+    <element type="CivicCombatBonuses" minOccurs="0"/>
 		<element type="bStartConstitution" minOccurs="0"/>
 		<element type="bAllowsMapTrade" minOccurs="0"/>
 		<element type="bNoArrowinTechScreen" minOccurs="0"/>

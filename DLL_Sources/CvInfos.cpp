@@ -4386,6 +4386,22 @@ int CvCivicInfo::getCivicTreasuryBonus(int index) const
 	FAssert(index > -1);
 	return m_aiCivicTreasuryBonuses[index].second;
 }
+int CvCivicInfo::getNumCivicCombatBonus() const
+{
+	return m_aiCivicCombatBonuses.size();
+}
+int CvCivicInfo::getCivicCombat(int index) const
+{
+	FAssert(index < (int) m_aiCivicCombatBonuses.size());
+	FAssert(index > -1);
+	return m_aiCivicCombatBonuses[index].first;
+}
+int CvCivicInfo::getCivicCombatBonus(int index) const
+{
+	FAssert(index < (int) m_aiCivicCombatBonuses.size());
+	//FAssert(index > -1);
+	return m_aiCivicCombatBonuses[index].second;
+}
 bool CvCivicInfo::isBuildingTreasuryBonus() const
 {
 	return m_bBuildingTreasuryBonus;
@@ -4842,6 +4858,26 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 				int iValue = 0;
 				pXML->GetChildXmlValByName(&iValue, "iValue");
 				m_aiCivicTreasuryBonuses.push_back(std::make_pair((BuildingClassTypes) iBuildingClass, iValue));
+			} while(gDLL->getXMLIFace()->NextSibling(pXML->GetXML()));
+			// set the current xml node to it's parent node
+			gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+		}
+		// set the current xml node to it's parent node
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+
+	m_aiCivicCombatBonuses.clear();
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"CivicCombatBonuses"))
+	{
+		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"CivicCombatBonus"))
+		{
+			do
+			{
+				pXML->GetChildXmlValByName(szTextVal, "Civic");
+				int iCivicType = pXML->FindInInfoClass(szTextVal);
+				int iValue = 0;
+				pXML->GetChildXmlValByName(&iValue, "iValue");
+				m_aiCivicCombatBonuses.push_back(std::make_pair((CivicTypes) iCivicType, iValue));
 			} while(gDLL->getXMLIFace()->NextSibling(pXML->GetXML()));
 			// set the current xml node to it's parent node
 			gDLL->getXMLIFace()->SetToParent(pXML->GetXML());

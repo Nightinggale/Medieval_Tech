@@ -3837,7 +3837,7 @@ sub maketechlinecity1 {
 	my $cat = 'MEDIEVAL_TRADE_TECH';
 	$x=1;
 	#allow bldg 1
-	&maketech('TECH_'.$yield.'1',$desc.' Analysis',$cat,$x,$y,'','',$yield.'1','','NUTRIENTS');
+	&maketech('TECH_'.$yield.'1',$desc.' Design',$cat,$x,$y,'','',$yield.'1','','NUTRIENTS');
 	$x++;
 	#allow prof
 	&maketech('TECH_'.$yield.'2','Basic '.$desc.' Production',$cat,$x,$y,'TECH_'.$yield.'1','','',$yield,'EARTH_GOODS');
@@ -3849,21 +3849,38 @@ sub maketechlinecity1 {
 	&maketech('TECH_'.$yield.'4','Intensive '.$desc.' Production',$cat,$x,$y,'TECH_'.$yield.'3','',$yield.'3','',$yield);
 	$y=$y+2;
 	}
+	
+#techline for city yield production (for yields that are always unlocked)
+sub maketechlinecity2 {
+	my $yield = shift;
+	my $desc = shift;
+#	my $cat = shift;
+	my $cat = 'MEDIEVAL_TRADE_TECH';
+	$x=2;
+	#allow prof
+	&maketech('TECH_'.$yield.'1','Basic '.$desc,$cat,$x,$y,'','','',$yield,'EARTH_GOODS');
+	$x++;
+	#building 2
+	&maketech('TECH_'.$yield.'2','Advanced '.$desc,$cat,$x,$y,'TECH_'.$yield.'1','',$yield.'2','',$yield);
+	$x++;
+	#building 3
+	&maketech('TECH_'.$yield.'3','Intensive '.$desc,$cat,$x,$y,'TECH_'.$yield.'2','',$yield.'3','',$yield);
+	$y=$y+2;
+	}
 
 #tag,description,category,xcoord,ycoord,requiredinvention,allowyield,allowbldg,allowprof,inputyield
 
 &maketechlinecity1('MEDIA','Media','TECH_CATEGORY_SOCIAL_SCIENCE');
 &maketechlinecity1('EDUCATION','Education','TECH_CATEGORY_SOCIAL_SCIENCE');
-&maketechlinecity1('LIBERTY','Political','TECH_CATEGORY_SOCIAL_SCIENCE');
-&maketechlinecity1('RESEARCH','Research','TECH_CATEGORY_SOCIAL_SCIENCE');
+&maketechlinecity2('LIBERTY','Political','TECH_CATEGORY_SOCIAL_SCIENCE');
+&maketechlinecity2('RESEARCH','Research','TECH_CATEGORY_SOCIAL_SCIENCE');
 &maketechlinecity1('HARD_CURRENCY','Financial','TECH_CATEGORY_SOCIAL_SCIENCE');
 
-&maketechlinecity1('INDUSTRY','Construction','TECH_CATEGORY_ENGINEERING');
+&maketechlinecity2('INDUSTRY','Construction','TECH_CATEGORY_ENGINEERING');
 &maketechlinecity1('MACHINE_TOOLS','Machine Tool','TECH_CATEGORY_ENGINEERING');
 &maketechlinecity('ROBOTICS','Robotics','TECH_CATEGORY_ENGINEERING');
 &maketechlinecity1('MUNITIONS','Munitions','TECH_CATEGORY_ENGINEERING');
 &maketechlinecity('PHOTONICS','Photonics','TECH_CATEGORY_ENGINEERING');
-
 
 &maketechlineraw1('NUCLEIC_ACIDS','Nucleic Acid','TECH_CATEGORY_GENETICS');
 &maketechlinecity('PLASMIDS','Plasmid','TECH_CATEGORY_GENETICS');

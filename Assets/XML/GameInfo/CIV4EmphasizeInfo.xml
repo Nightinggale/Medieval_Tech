@@ -73,7 +73,7 @@
 			<bAvoidGrowth>0</bAvoidGrowth>
 			<YieldModifiers>
 				<YieldModifier>
-					<YieldType>YIELD_CLAY</YieldType>
+					<YieldType>YIELD_SALT</YieldType>
 					<iYield>1</iYield>
 				</YieldModifier>
 			</YieldModifiers>
@@ -109,7 +109,7 @@
 			<bAvoidGrowth>0</bAvoidGrowth>
 			<YieldModifiers>
 				<YieldModifier>
-					<YieldType>YIELD_PRECIOUS_METALS</YieldType>
+					<YieldType>YIELD_SILVER</YieldType>
 					<iYield>1</iYield>
 				</YieldModifier>
 			</YieldModifiers>
@@ -133,7 +133,7 @@
 			<bAvoidGrowth>0</bAvoidGrowth>
 			<YieldModifiers>
 				<YieldModifier>
-					<YieldType>YIELD_HIDES</YieldType>
+					<YieldType>YIELD_FUR</YieldType>
 					<iYield>1</iYield>
 				</YieldModifier>
 			</YieldModifiers>
@@ -433,7 +433,7 @@
 			<bAvoidGrowth>0</bAvoidGrowth>
 			<YieldModifiers>
 				<YieldModifier>
-					<YieldType>YIELD_CLAY</YieldType>
+					<YieldType>YIELD_SALT</YieldType>
 					<iYield>-1</iYield>
 				</YieldModifier>
 			</YieldModifiers>
@@ -469,7 +469,7 @@
 			<bAvoidGrowth>0</bAvoidGrowth>
 			<YieldModifiers>
 				<YieldModifier>
-					<YieldType>YIELD_PRECIOUS_METALS</YieldType>
+					<YieldType>YIELD_SILVER</YieldType>
 					<iYield>-1</iYield>
 				</YieldModifier>
 			</YieldModifiers>
@@ -493,7 +493,7 @@
 			<bAvoidGrowth>0</bAvoidGrowth>
 			<YieldModifiers>
 				<YieldModifier>
-					<YieldType>YIELD_HIDES</YieldType>
+					<YieldType>YIELD_FUR</YieldType>
 					<iYield>-1</iYield>
 				</YieldModifier>
 			</YieldModifiers>

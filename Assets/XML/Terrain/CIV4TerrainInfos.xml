@@ -43,7 +43,7 @@
 					<iValue>1</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
-					<YieldType>YIELD_PRECIOUS_METALS</YieldType>
+					<YieldType>YIELD_SILVER</YieldType>
 					<iValue>1</iValue>
 				</YieldIntegerPair>
 			</RiverYieldIncreases>
@@ -179,7 +179,7 @@
 					<iValue>1</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
-					<YieldType>YIELD_PRECIOUS_METALS</YieldType>
+					<YieldType>YIELD_SILVER</YieldType>
 					<iValue>1</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
@@ -513,11 +513,11 @@
 					<iValue>1</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
-					<YieldType>YIELD_HIDES</YieldType>
+					<YieldType>YIELD_FUR</YieldType>
 					<iValue>2</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
-					<YieldType>YIELD_CLAY</YieldType>
+					<YieldType>YIELD_SALT</YieldType>
 					<iValue>2</iValue>
 				</YieldIntegerPair>
 			</Yields>
@@ -527,7 +527,7 @@
 					<iValue>1</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
-					<YieldType>YIELD_HIDES</YieldType>
+					<YieldType>YIELD_FUR</YieldType>
 					<iValue>1</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
@@ -539,7 +539,7 @@
 					<iValue>1</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
-					<YieldType>YIELD_PRECIOUS_METALS</YieldType>
+					<YieldType>YIELD_SILVER</YieldType>
 					<iValue>1</iValue>
 				</YieldIntegerPair>
 			</RiverYieldIncreases>
@@ -641,13 +641,13 @@
 			<ArtDefineTag>ART_DEF_TERRAIN_SNOW</ArtDefineTag>
 			<Yields>
 				<YieldIntegerPair>
-					<YieldType>YIELD_HIDES</YieldType>
+					<YieldType>YIELD_FUR</YieldType>
 					<iValue>2</iValue>
 				</YieldIntegerPair>
 			</Yields>
 			<RiverYieldIncreases>
 				<YieldIntegerPair>
-					<YieldType>YIELD_HIDES</YieldType>
+					<YieldType>YIELD_FUR</YieldType>
 					<iValue>1</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
@@ -659,7 +659,7 @@
 					<iValue>1</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
-					<YieldType>YIELD_PRECIOUS_METALS</YieldType>
+					<YieldType>YIELD_SILVER</YieldType>
 					<iValue>1</iValue>
 				</YieldIntegerPair>
 			</RiverYieldIncreases>
@@ -1059,7 +1059,7 @@
 			<ArtDefineTag>ART_DEF_TERRAIN_HILL</ArtDefineTag>
 			<Yields>
 				<YieldIntegerPair>
-					<YieldType>YIELD_CLAY</YieldType>
+					<YieldType>YIELD_SALT</YieldType>
 					<iValue>6</iValue>
 				</YieldIntegerPair>
 			</Yields>

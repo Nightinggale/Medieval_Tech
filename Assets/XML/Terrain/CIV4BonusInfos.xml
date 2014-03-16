@@ -183,7 +183,7 @@
 			<BuildingType>BUILDING_BONUS_DEER</BuildingType>
 			<YieldChanges>
 				<YieldIntegerPair>
-					<YieldType>YIELD_HIDES</YieldType>
+					<YieldType>YIELD_FUR</YieldType>
 					<iValue>2</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
@@ -386,7 +386,7 @@
 			<BuildingType>BUILDING_BONUS_SILVER</BuildingType>
 			<YieldChanges>
 				<YieldIntegerPair>
-					<YieldType>YIELD_PRECIOUS_METALS</YieldType>
+					<YieldType>YIELD_SILVER</YieldType>
 					<iValue>2</iValue>
 				</YieldIntegerPair>
 			</YieldChanges>
@@ -503,7 +503,7 @@
 			<BuildingType>BUILDING_BONUS_FUR</BuildingType>
 			<YieldChanges>
 				<YieldIntegerPair>
-					<YieldType>YIELD_HIDES</YieldType>
+					<YieldType>YIELD_FUR</YieldType>
 					<iValue>2</iValue>
 				</YieldIntegerPair>
 			</YieldChanges>

@@ -130,7 +130,7 @@
 					<iValue>1</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
-					<YieldType>YIELD_HIDES</YieldType>
+					<YieldType>YIELD_FUR</YieldType>
 					<iValue>1</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
@@ -142,7 +142,7 @@
 					<iValue>1</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
-					<YieldType>YIELD_PRECIOUS_METALS</YieldType>
+					<YieldType>YIELD_SILVER</YieldType>
 					<iValue>1</iValue>
 				</YieldIntegerPair>
 			</RiverYieldIncreases>
@@ -238,7 +238,7 @@
 					<iValue>-2</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
-					<YieldType>YIELD_HIDES</YieldType>
+					<YieldType>YIELD_FUR</YieldType>
 					<iValue>3</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
@@ -272,7 +272,7 @@
 					<iValue>1</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
-					<YieldType>YIELD_HIDES</YieldType>
+					<YieldType>YIELD_FUR</YieldType>
 					<iValue>1</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
@@ -284,7 +284,7 @@
 					<iValue>1</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
-					<YieldType>YIELD_PRECIOUS_METALS</YieldType>
+					<YieldType>YIELD_SILVER</YieldType>
 					<iValue>1</iValue>
 				</YieldIntegerPair>
 			</RiverYieldIncreases>
@@ -384,7 +384,7 @@
 					<iValue>-1</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
-					<YieldType>YIELD_HIDES</YieldType>
+					<YieldType>YIELD_FUR</YieldType>
 					<iValue>2</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
@@ -406,7 +406,7 @@
 					<iValue>1</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
-					<YieldType>YIELD_HIDES</YieldType>
+					<YieldType>YIELD_FUR</YieldType>
 					<iValue>1</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
@@ -418,7 +418,7 @@
 					<iValue>1</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
-					<YieldType>YIELD_PRECIOUS_METALS</YieldType>
+					<YieldType>YIELD_SILVER</YieldType>
 					<iValue>1</iValue>
 				</YieldIntegerPair>
 			</RiverYieldIncreases>

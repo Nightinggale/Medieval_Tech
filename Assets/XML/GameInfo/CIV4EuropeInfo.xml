@@ -182,28 +182,5 @@
 			<PythonTradeScreen>showTradeFairScreen</PythonTradeScreen>
 			<Button>Art/Interface/Game Hud/Actions/TraveltoFair.dds</Button>
 		</EuropeInfo>
-		<EuropeInfo>
-			<Type>TRADE_SCREEN_EURO_ZONE_MARKET</Type>
-			<Description>TXT_KEY_COMMAND_TRAVEL_TO_EURO_ZONE</Description>
-			<Strategy>TXT_KEY_COMMAND_TRAVEL_TO_EURO_ZONE_HELP</Strategy>
-			<Help>European Trade Centre</Help>
-			<Direction>north</Direction>
-			<DirectionArrays/>
-			<bStart>0</bStart>
-			<iTripLength>3</iTripLength>
-			<iMinLandDistance>0</iMinLandDistance>
-			<iWidthPercent>20</iWidthPercent>
-			<bRequiresTech>1</bRequiresTech>
-			<bNoEuropePlot>1</bNoEuropePlot>
-			<bLeaveFromOwnedCity>1</bLeaveFromOwnedCity>
-			<DomainTypes>
-				<DomainType>
-					<Domain>DOMAIN_LAND</Domain>
-					<bValue>1</bValue>
-				</DomainType>
-				</DomainTypes>
-			<PythonTradeScreen>showEuroZoneScreen</PythonTradeScreen>
-			<Button>Art/Interface/Game Hud/Actions/TraveltoFair.dds</Button>
-		</EuropeInfo>
 	</EuropeInfos>
 </Civ4EuropeInfo>

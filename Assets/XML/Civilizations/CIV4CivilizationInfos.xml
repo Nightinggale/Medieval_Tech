@@ -2510,7 +2510,7 @@
 	<InitialCivics/>
 	<Leaders>
 		<Leader>
-			<LeaderName>LEADER_TC02</LeaderName>
+			<LeaderName>LEADER_TC01</LeaderName>
 			<bLeaderAvailability>1</bLeaderAvailability>
 		</Leader>
 	</Leaders>

@@ -14,6 +14,14 @@
 		<Spanish>[ICON_BULLET]</Spanish>
 	</TEXT>
   <TEXT>
+    <Tag>TXT_KEY_CIVIC_NEW_MISSIONARY_CLASS</Tag>
+    <English>[ICON_BULLET]Missionary Converts are [COLOR_HIGHLIGHT_TEXT]%s1_unitclass[COLOR_REVERT]</English>
+    <French>[ICON_BULLET]Missionary Converts are [COLOR_HIGHLIGHT_TEXT]%s1_unitclass[COLOR_REVERT]</French>
+    <German>[ICON_BULLET]Missionary Converts are [COLOR_HIGHLIGHT_TEXT]%s1_unitclass[COLOR_REVERT]</German>
+    <Italian>[ICON_BULLET]Missionary Converts are [COLOR_HIGHLIGHT_TEXT]%s1_unitclass[COLOR_REVERT]</Italian>
+    <Spanish>[ICON_BULLET]Missionary Converts are [COLOR_HIGHLIGHT_TEXT]%s1_unitclass[COLOR_REVERT]</Spanish>
+  </TEXT>
+  <TEXT>
     <Tag>TXT_KEY_COMBAT_PLOT_MOD_VS_CIVIC</Tag>
     <English>[ICON_BULLET]%D1_Bonus%% from Decrees</English>
     <French>[ICON_BULLET]%D1_Bonus%% from Decrees</French>
@@ -1624,6 +1632,14 @@
     <German>[ICON_BULLET]+%d1% to [COLOR_HIGHLIGHT_TEXT]Hunting[COLOR_REVERT] results</German>
     <Italian>[ICON_BULLET]+%d1% to [COLOR_HIGHLIGHT_TEXT]Hunting[COLOR_REVERT] results</Italian>
     <Spanish>[ICON_BULLET]+%d1% to [COLOR_HIGHLIGHT_TEXT]Hunting[COLOR_REVERT] results</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_BONUS_PILGRAM</Tag>
+    <English>[ICON_BULLET]+%d1% bonus to [COLOR_HIGHLIGHT_TEXT]Pilgrimages[COLOR_REVERT]</English>
+    <French>[ICON_BULLET]+%d1% bonus to [COLOR_HIGHLIGHT_TEXT]Pilgrimages[COLOR_REVERT]</French>
+    <German>[ICON_BULLET]+%d1% bonus to [COLOR_HIGHLIGHT_TEXT]Pilgrimages[COLOR_REVERT]</German>
+    <Italian>[ICON_BULLET]+%d1% bonus to [COLOR_HIGHLIGHT_TEXT]Pilgrimages[COLOR_REVERT]</Italian>
+    <Spanish>[ICON_BULLET]+%d1% bonus to [COLOR_HIGHLIGHT_TEXT]Pilgrimages[COLOR_REVERT]</Spanish>
   </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ALLOWS_DEFAULT_UNIT</Tag>

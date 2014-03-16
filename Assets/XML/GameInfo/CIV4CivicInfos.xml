@@ -4738,12 +4738,14 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <NewConvertUnitClass>UNITCLASS_CHRISTIAN_MISSIONARY</NewConvertUnitClass>
       <CivicCombatBonuses>
         <CivicCombatBonus>
           <Civic>CIVIC_DIVINE_REVELATION</Civic>
           <iValue>25</iValue>
         </CivicCombatBonus>
       </CivicCombatBonuses>
+      <iPilgramYieldPercent>50</iPilgramYieldPercent>
     </CivicInfo>
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_PIETY</CivicOptionType>

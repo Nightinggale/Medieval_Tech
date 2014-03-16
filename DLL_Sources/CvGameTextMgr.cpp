@@ -4688,6 +4688,11 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
         szHelpText.append(NEWLINE);
         szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_BONUS_HUNTING", kCivicInfo.getHuntingYieldPercent()));
     }
+	if (kCivicInfo.getPilgramYieldPercent() > 0)
+    {
+        szHelpText.append(NEWLINE);
+        szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_BONUS_PILGRAM", kCivicInfo.getPilgramYieldPercent()));
+    }
    /* ModCodeTypes iModdersCode = (ModCodeTypes)kCivicInfo.getModdersCode1();
 	if (iModdersCode != NO_MOD_CODE)
 	{
@@ -5112,8 +5117,11 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
         //}
 	}
 
-
-
+	if (kCivicInfo.getNewConvertUnitClass() != NO_UNITCLASS)
+	{
+        szHelpText.append(NEWLINE);
+		szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_NEW_MISSIONARY_CLASS", GC.getUnitClassInfo((UnitClassTypes)kCivicInfo.getNewConvertUnitClass()).getDescription()));
+	}
 
 	if (kCivicInfo.getIncreasedEnemyHealRate() > 0)
 	{

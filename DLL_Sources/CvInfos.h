@@ -1003,6 +1003,7 @@ public:
 	int getMissionariesNotCosumed() const;
 	int getTradingPostNotCosumed() const;
 	int getHuntingYieldPercent() const;
+	int getPilgramYieldPercent() const;
 	//TKe Civics
     DllExport int getIncreaseCityPopulation() const;
     DllExport int getAllowsProfession() const;
@@ -1025,7 +1026,8 @@ public:
 	DllExport int getFoundCityType() const;
 
 
-    DllExport int getNewDefaultUnitClass() const;
+    DllExport int getNewDefaultUnitClass() const; 
+	DllExport int getNewConvertUnitClass() const;
 	DllExport bool isFreeUnitsAreNonePopulation() const;
 	DllExport bool isFreeUnitsNotAllCities() const;
 	DllExport bool isStartConstitution() const;
@@ -1139,6 +1141,7 @@ protected:
     int m_iGoldBonusForFirstToResearch;
     int m_iProlificInventorRateChange;
     int m_iNewDefaultUnitClass;
+	int m_iNewConvertUnitClass;
     int m_iFreeTechs;
     int m_iModdersCode1;
     int m_iKingTreasureTransportMod;
@@ -1153,6 +1156,7 @@ protected:
 	int m_iTradingPostNotCosumed;
 	int m_iAnarchyLength;
 	int m_iHuntingYieldPercent;
+	int m_iPilgramYieldPercent;
 	//TKe CivicsScreen
     int m_iIncreasedImmigrants;
 	bool m_bisTradeable;

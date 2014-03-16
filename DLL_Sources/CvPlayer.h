@@ -526,11 +526,14 @@ public:
 	void changeIdeaProgress(CivicTypes eCivic, int iChange);
 
 
-    UnitTypes getDefaultPopUnit() const;
-    void setDefaultPopUnit(UnitTypes eUnit);
+    
 	bool getTechsInitialized() const;
+	void setDefaultPopUnit(UnitTypes eUnit);
+	UnitTypes getDefaultPopUnit() const;
 	///TKs Med
 	///Tk Civics
+	UnitClassTypes getConvertedNativeUnitClass() const;
+    void setConvertedNativeUnitClass(UnitClassTypes eUnitClass);
 	void resetConnectedPlayerYieldBonus(CivicTypes eCivic = NO_CIVIC, int iChange = 1);
 	int getNumNetworkCities() const;
 	void addNetworkCities(CvCity* pCity);
@@ -877,6 +880,7 @@ protected:
 	int m_iCastles;
 	unsigned int m_iNumDocksNextUnits;
 	UnitTypes m_iDefaultPopUnit;
+	UnitClassTypes m_iConvertedNativeUnit;
 	int m_iFreeTechs;
 	int m_bTechsInitialized;
 	int m_bAllResearchComplete;

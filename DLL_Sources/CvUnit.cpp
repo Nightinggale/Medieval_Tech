@@ -15191,10 +15191,18 @@ bool CvUnit::doUnitPilgram()
         }
         int iRand = GC.getGameINLINE().getSorenRandNum(GC.getXMLval(XML_PILGRAM_OFFER_GOLD), "Random Pilgram 1") + 5;
         iRand = iRand + (iRand * iDistanceMod / 100);
-        //ePlotCity->changeYieldStored((YieldTypes)GC.getDefineINT("DEFAULT_TREASURE_YIELD") ,iRand);
-        //iRand = GC.getGameINLINE().getSorenRandNum(GC.getDefineINT("PILGRAM_OFFER_GOLD"), "Random Pilgram 1");
+       //Tks Civics
+		int iRandMod = 0;
+		for (int iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
+		{
+			if (GET_PLAYER(ePlotCity->getOwner()).getCivic((CivicOptionTypes)iI) != NO_CIVIC)
+			{
+				iRandMod += GC.getCivicInfo(GET_PLAYER(ePlotCity->getOwner()).getCivic((CivicOptionTypes)iI)).getPilgramYieldPercent();
+			}
+		}
+		iRand = iRand + (iRand * iRandMod / 100);
         GET_PLAYER(ePlotCity->getOwner()).changeGold(iRand);
-        ePlotCity->changeCulture(ePlotCity->getOwner(), iRand, true);
+        ePlotCity->changeCulture(ePlotCity->getOwner(), (iRand / 2), true);
         CvWString szBuffer = gDLL->getText("TXT_KEY_UNIT_PILGRAMS_ARRIVE", ePlotCity->getNameKey(), iRand);
         gDLL->getInterfaceIFace()->addMessage(ePlotCity->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getUnitInfo(getUnitType()).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
         plot()->addCrumbs(10);

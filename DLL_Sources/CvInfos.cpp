@@ -3855,11 +3855,13 @@ m_iMissionariesNotCosumed(0),
 m_iTradingPostNotCosumed(0),
 m_iAnarchyLength(0),
 m_iHuntingYieldPercent(0),
+m_iPilgramYieldPercent(0),
 //TKe Civics
 
 m_aiConvertsUnitsFrom(NO_UNITCLASS),
 m_aiConvertsUnitsTo(NO_UNITCLASS),
 m_iNewDefaultUnitClass(NO_UNITCLASS),
+m_iNewConvertUnitClass(NO_UNITCLASS),
 
 m_bFreeUnitsAreNonePopulation(false),
 m_bFreeUnitsNotAllCities(false),
@@ -4243,6 +4245,10 @@ int CvCivicInfo::getHuntingYieldPercent() const
 {
 	return m_iHuntingYieldPercent;
 }
+int CvCivicInfo::getPilgramYieldPercent() const
+{
+	return m_iPilgramYieldPercent;
+}
 int CvCivicInfo::getUpkeepYields(int i) const
 {
 	return m_aiUpkeepYields ? m_aiUpkeepYields[i] : 0;
@@ -4271,7 +4277,10 @@ int CvCivicInfo::getNewDefaultUnitClass() const
 {
 	return m_iNewDefaultUnitClass;
 }
-
+int CvCivicInfo::getNewConvertUnitClass() const
+{
+	return m_iNewConvertUnitClass;
+}
 int CvCivicInfo::getConvertsUnitsFrom() const
 {
 	return m_aiConvertsUnitsFrom;
@@ -4785,6 +4794,9 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 
 	pXML->GetChildXmlValByName(szTextVal, "NewDefaultUnitClass");
 	m_iNewDefaultUnitClass = pXML->FindInInfoClass(szTextVal);
+	
+	pXML->GetChildXmlValByName(szTextVal, "NewConvertUnitClass");
+	m_iNewConvertUnitClass = pXML->FindInInfoClass(szTextVal);
 
 	pXML->GetChildXmlValByName(szTextVal, "ConvertsUnitsFrom");
 	m_aiConvertsUnitsFrom = pXML->FindInInfoClass(szTextVal);
@@ -4809,6 +4821,7 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iTradingPostNotCosumed, "iTradingPostNotCosumed");
 	pXML->GetChildXmlValByName(&m_iAnarchyLength, "iAnarchyLength");
 	pXML->GetChildXmlValByName(&m_iHuntingYieldPercent, "iHuntingYieldPercent");
+	pXML->GetChildXmlValByName(&m_iPilgramYieldPercent, "iPilgramYieldPercent");
 	///Tke CivicsScreen
 	pXML->GetChildXmlValByName(&m_iKingTreasureTransportMod, "iKingTreasureTransportMod");
 	pXML->GetChildXmlValByName(&m_iIncreaseCityPopulation, "iIncreaseCityPopulation");

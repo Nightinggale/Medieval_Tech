@@ -540,6 +540,7 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	m_eVassal = NO_PLAYER;
 	m_eMinorVassal = NO_PLAYER;
 	m_iDefaultPopUnit = NO_UNIT;
+	m_iConvertedNativeUnit = NO_UNITCLASS;
 	m_eCurrentResearch = NO_CIVIC;
 	m_eCurrentTradeResearch = NO_CIVIC;
 	m_eResearchPartner = NO_PLAYER;
@@ -11112,18 +11113,28 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
 {
 
 	CvCivicInfo& kCivicInfo = GC.getCivicInfo(eCivic);
-	///TKs Invention Core Mod v 1.0
-	//if (kCivicInfo.getCivicOptionType() == (CivicOptionTypes)GC.getDefineINT("CIVICOPTION_INVENTIONS"))
-	//{
-	    char szOut[1024];
-        sprintf(szOut, "######################## Player %d %S Has Aquired %S\n", getID(), getNameKey(), GC.getCivicInfo(eCivic).getTextKeyWide());
-        gDLL->messageControlLog(szOut);
-	//}
+	char szOut[1024];
+    sprintf(szOut, "######################## Player %d %S Has Aquired %S\n", getID(), getNameKey(), GC.getCivicInfo(eCivic).getTextKeyWide());
+    gDLL->messageControlLog(szOut);
+
 	//Tks Civics Screen //Civic Reset
 	if (kCivicInfo.getNumConnectedMissonYields() > 0 || kCivicInfo.getNumConnectedTradeYields() > 0)
 	{
 		resetConnectedPlayerYieldBonus(eCivic, iChange);
 	}
+
+	if (kCivicInfo.getNewConvertUnitClass() != NO_UNITCLASS)
+	{
+		if (iChange > 0)
+		{
+			setConvertedNativeUnitClass((UnitClassTypes)kCivicInfo.getNewConvertUnitClass());
+		}
+		else
+		{
+			setConvertedNativeUnitClass(NO_UNITCLASS);
+		}
+	}
+
 	 ///TKs Med TradeScreen
 	if ((EuropeTypes)kCivicInfo.getAllowsTradeScreen() != NO_EUROPE)
 	{
@@ -11655,6 +11666,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read((int*)&m_eVassal);
 	pStream->Read((int*)&m_eMinorVassal);
     pStream->Read((int*)&m_iDefaultPopUnit);
+	pStream->Read((int*)&m_iConvertedNativeUnit);
     pStream->Read((int*)&m_eCurrentResearch);
     pStream->Read((int*)&m_eCurrentTradeResearch);
     pStream->Read((int*)&m_eResearchPartner);
@@ -12134,6 +12146,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(m_eVassal);
 	pStream->Write(m_eMinorVassal);
 	pStream->Write(m_iDefaultPopUnit);
+	pStream->Write(m_iConvertedNativeUnit);
 	pStream->Write(m_eCurrentResearch);
 	pStream->Write(m_eCurrentTradeResearch);
 	pStream->Write(m_eResearchPartner);
@@ -16412,6 +16425,8 @@ void CvPlayer::applyMissionaryPoints(CvCity* pCity)
 		int iModifier = 100 + getMissionaryRateModifier() + GET_PLAYER(ePlayer).getMissionaryRateModifier();
 		changeMissionaryPoints(ePlayer, pCity->getMissionaryRate() * iModifier / 100);
 		int iThreshold = missionaryThreshold(ePlayer);
+		//Tks Testing
+		//iThreshold = 100;
 		if (getMissionaryPoints(ePlayer) >= iThreshold)
 		{
 			//Activate Missionary Civics Screen
@@ -16433,7 +16448,17 @@ void CvPlayer::applyMissionaryPoints(CvCity* pCity)
 			}
 			//spawn converted native
 			bool bUnitCreated = false;
-			UnitClassTypes eUnitClass = (UnitClassTypes) GC.getCivilizationInfo(getCivilizationType()).getCapturedCityUnitClass();
+			//Tks Civics
+			UnitClassTypes eUnitClass;
+			if (GET_PLAYER(ePlayer).getConvertedNativeUnitClass() != NO_UNITCLASS)
+			{
+				eUnitClass = (UnitClassTypes) GET_PLAYER(ePlayer).getConvertedNativeUnitClass();
+			}
+			else
+			{
+				eUnitClass = (UnitClassTypes) GC.getCivilizationInfo(getCivilizationType()).getCapturedCityUnitClass();
+			}
+			//TKe
 			if (eUnitClass != NO_UNITCLASS)
 			{
 				UnitTypes eUnit = (UnitTypes) GC.getCivilizationInfo(GET_PLAYER(ePlayer).getCivilizationType()).getCivilizationUnits(eUnitClass);
@@ -17043,6 +17068,10 @@ int CvPlayer::calculateCivicCombatBonuses(PlayerTypes ePlayer) const
 		{
 			iBonus += getCivicCombatBonuses(iI);
 		}
+		else if (getIdeasResearched(eCivic) && !GET_PLAYER(ePlayer).getIdeasResearched(eCivic))
+		{
+			iBonus += getCivicCombatBonuses(iI);
+		}
 	}
 	//Bonuses for Other Player vs This Player
 	for (int iI = 0; iI < GET_PLAYER(ePlayer).getNumCivicCombatBonuses(); iI++)
@@ -17055,7 +17084,11 @@ int CvPlayer::calculateCivicCombatBonuses(PlayerTypes ePlayer) const
 		else if (isCivic(eCivic))
 		{
 			iBonus -= GET_PLAYER(ePlayer).getCivicCombatBonuses(iI);
-		}	
+		}
+		else if (GET_PLAYER(ePlayer).getIdeasResearched(eCivic) && !getIdeasResearched(eCivic))
+		{
+			iBonus -= getCivicCombatBonuses(iI);
+		}
 	}
 	return iBonus;
 }
@@ -19268,6 +19301,16 @@ UnitTypes CvPlayer::getDefaultPopUnit() const
 void CvPlayer::setDefaultPopUnit(UnitTypes eUnit)
 {
     m_iDefaultPopUnit = eUnit;
+}
+
+UnitClassTypes CvPlayer::getConvertedNativeUnitClass() const
+{
+    return m_iConvertedNativeUnit;
+}
+
+void CvPlayer::setConvertedNativeUnitClass(UnitClassTypes eUnitClass)
+{
+    m_iConvertedNativeUnit = eUnitClass;
 }
 
 int CvPlayer::getVictoryYieldCount(YieldTypes eYield) const

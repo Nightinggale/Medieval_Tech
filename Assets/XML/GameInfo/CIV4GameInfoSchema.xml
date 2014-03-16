@@ -477,6 +477,7 @@
 	<ElementType name="AllowsTradeScreen" content="textOnly"/>
 	<ElementType name="ConvertsUnitsTo" content="textOnly"/>
 	<ElementType name="NewDefaultUnitClass" content="textOnly"/>
+  <ElementType name="NewConvertUnitClass" content="textOnly"/>
 	<ElementType name="ConvertsUnitsFrom" content="textOnly"/>
 	<ElementType name="DisallowsTech" content="textOnly"/>
 	<ElementType name="FreeUnitFirstToResearch" content="textOnly"/>
@@ -630,6 +631,7 @@
   <ElementType name="iMissionariesNotCosumed" content="textOnly" dt:type="int"/>
   <ElementType name="iTradingPostNotCosumed" content="textOnly" dt:type="int"/>
   <ElementType name="iHuntingYieldPercent" content="textOnly" dt:type="int"/>
+  <ElementType name="iPilgramYieldPercent" content="textOnly" dt:type="int"/>
   <ElementType name="iFatherPointModifier" content="textOnly" dt:type="int"/>
   <ElementType name="iAnarchyLength" content="textOnly" dt:type="int"/>
   <ElementType name="bRevolutionEuropeTrade" content="textOnly" dt:type="boolean"/>
@@ -702,6 +704,7 @@
     <element type="ConnectedMissonYields" minOccurs="0"/>
     <element type="ConnectedTradeYields" minOccurs="0"/>
     <element type="NewDefaultUnitClass" minOccurs="0"/>
+    <element type="NewConvertUnitClass" minOccurs="0"/>
 		<element type="DisallowsTech" minOccurs="0"/>
 		<element type="ConvertsResearchYield" minOccurs="0"/>
 		<element type="RouteMovementMod" minOccurs="0"/>
@@ -733,6 +736,7 @@
 		<element type="IndustrializationVictory" minOccurs="0"/>
     <element type="iMissionariesNotCosumed" minOccurs="0"/>
     <element type="iTradingPostNotCosumed" minOccurs="0"/>
+    <element type="iPilgramYieldPercent" minOccurs="0"/>
     <element type="iHuntingYieldPercent" minOccurs="0"/>
 		<element type="MaxYieldModifiers" minOccurs="0"/>
 	</ElementType>

@@ -4749,15 +4749,9 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 	}
 	SAFE_DELETE_ARRAY(aFreeUnitClasses);
 
-	return true;
-}
-
-///Thanks to Androrc the Orc for this addtioin
+	///Thanks to Androrc the Orc for this addtiion
 	///TKs Invention Core Mod v 1.0
-bool CvCivicInfo::readPass2(CvXMLLoadUtility* pXML)
-{
-    CvString szTextVal;
-
+	// moved to main read by Nightinggale
     pXML->GetChildXmlValByName(szTextVal, "DisallowsTech");
 	m_iDisallowsTech = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(szTextVal, "FreeUnitFirstToResearch");
@@ -4769,9 +4763,47 @@ bool CvCivicInfo::readPass2(CvXMLLoadUtility* pXML)
     pXML->GetChildXmlValByName(szTextVal, "RequiredInventionOr");
     m_iRequiredInventionOr = pXML->FindInInfoClass(szTextVal);
 
+	/// relative tech location - start - Nightinggale
+	if (m_iRequiredInvention != NO_CIVIC)
+	{
+		int iX = 0;
+		int iY = 0;
+		pXML->GetChildXmlValByName(&iX, "iX_Relative_Location", 0);
+		pXML->GetChildXmlValByName(&iY, "iY_Relative_Location", 0);
+
+		if (iX != 0 || iY != 0)
+		{
+			m_iX_Location = 0x9000 + iX;
+			m_iY_Location = iY;
+		}
+	}
+	/// relative tech location - end - Nightinggale
+	///TKe
+
+	return true;
+}
+
+/// relative tech location - start - Nightinggale
+bool CvCivicInfo::readPass2(CvXMLLoadUtility* pXML)
+{
+	// make the threshold check a bit lower than the actual threshold because that allows for negative values
+	if (m_iX_Location >= 0x8000)
+	{
+		FAssert(m_iRequiredInvention >= 0);
+		CvCivicInfo& kParent = GC.getCivicInfo((CivicTypes)m_iRequiredInvention);
+			
+		// make sure the parent's location is updated
+		kParent.readPass2(pXML);
+
+		// set new location
+		m_iX_Location += kParent.getX_Location() - 0x9000;
+		m_iY_Location += kParent.getY_Location();
+	}
 
     return true;
 }
+/// relative tech location - end - Nightinggale
+
 //
 //bool CvCivicInfo::readPass3(CvXMLLoadUtility* pXML)
 //{

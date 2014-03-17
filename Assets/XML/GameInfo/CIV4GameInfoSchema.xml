@@ -586,8 +586,15 @@
 		<element type="YieldType"/>
 		<element type="iChange"/>
 	</ElementType>
+  <ElementType name="GarrisonUnitModifier" content="eltOnly">
+		<element type="YieldType"/>
+		<element type="iChange"/>
+	</ElementType>
 	<ElementType name="MaxYieldModifiers" content="eltOnly">
 		<element type="MaxYieldModifier" minOccurs="0"/>
+	</ElementType>
+  <ElementType name="GarrisonUnitModifiers" content="eltOnly">
+		<element type="GarrisonUnitModifier" minOccurs="0"/>
 	</ElementType>
 	<ElementType name="RouteType" content="textOnly"/>
 	<ElementType name="RouteTypes" content="eltOnly">
@@ -712,6 +719,7 @@
 		<element type="FreeUnitFirstToResearch" minOccurs="0"/>
     <element type="CivicTreasuryBonuses" minOccurs="0"/>
     <element type="CivicCombatBonuses" minOccurs="0"/>
+    <element type="GarrisonUnitModifiers" minOccurs="0"/>
 		<element type="bStartConstitution" minOccurs="0"/>
 		<element type="bAllowsMapTrade" minOccurs="0"/>
 		<element type="bNoArrowinTechScreen" minOccurs="0"/>

@@ -4551,6 +4551,12 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <GarrisonUnitModifiers>
+        <GarrisonUnitModifier>
+          <YieldType>YIELD_BELLS</YieldType>
+          <iChange>3</iChange>
+        </GarrisonUnitModifier>
+      </GarrisonUnitModifiers>
     </CivicInfo>
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
@@ -4774,7 +4780,13 @@
       <ImprovementYieldChanges/>
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
-      <ImmigrationConversion>YIELD_HAMMERS</ImmigrationConversion>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+      <GarrisonUnitModifiers>
+        <GarrisonUnitModifier>
+          <YieldType>YIELD_CULTURE</YieldType>
+          <iChange>3</iChange>
+        </GarrisonUnitModifier>
+      </GarrisonUnitModifiers>
     </CivicInfo>
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_PIETY</CivicOptionType>
@@ -5068,6 +5080,12 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <GarrisonUnitModifiers>
+        <GarrisonUnitModifier>
+          <YieldType>YIELD_CROSSES</YieldType>
+          <iChange>3</iChange>
+        </GarrisonUnitModifier>
+      </GarrisonUnitModifiers>
     </CivicInfo>
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>

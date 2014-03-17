@@ -572,6 +572,7 @@ public:
 	void setConvertToUnit(UnitTypes eConvertToUnit);
 	///Tks Med
 	EuropeTypes getUnitTradeMarket() const;
+	bool canGarrison() const;
 	void setUnitTradeMarket(EuropeTypes eMarket);
 	CvPlot* getTravelPlot() const;
 	void setTravelPlot();

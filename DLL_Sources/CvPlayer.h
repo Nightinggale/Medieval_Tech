@@ -565,6 +565,8 @@ public:
 	void changeExpences(int iChange);
 	int getUpkeepCount(YieldTypes eIndex) const;
 	void changeUpkeepCount(YieldTypes eIndex, int iChange);
+	int getGarrisonUnitBonus(YieldTypes eIndex) const;
+	void changeGarrisonUnitBonus(YieldTypes eIndex, int iChange);
 	void changeTradingPostCount(PlayerTypes eIndex, int iChange);
 	int getTradingPostCount(PlayerTypes eIndex) const;
 	/*int getHasCivicOptionCount(CivicOptionTypes eIndex) const;
@@ -932,6 +934,7 @@ protected:
 	//int* m_paiHasCivicOptionCount;
 	int* m_aiTradingPostCount;
 	int* m_paiUpkeepCount;
+	int* m_paiGarrisonUnitBonus;
 	int* m_aiTradeRouteStartingPlotX;
 	int* m_aiTradeRouteStartingPlotY;
 	bool* m_abTradeRouteTypes;

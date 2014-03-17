@@ -70,6 +70,7 @@ CvPlayer::CvPlayer()
     m_aiVictoryYieldCount = new int[NUM_YIELD_TYPES];
 	//TKs Civics
 	m_aiTradingPostCount = new int[MAX_PLAYERS];
+	m_paiGarrisonUnitBonus = new int[NUM_YIELD_TYPES];
 	m_paiUpkeepCount = new int[NUM_YIELD_TYPES];
 	//Tke
     ///TKs Med
@@ -135,6 +136,7 @@ CvPlayer::~CvPlayer()
 	SAFE_DELETE_ARRAY(m_aiVictoryYieldCount);
 	//Tks Civics
 	SAFE_DELETE_ARRAY(m_aiTradingPostCount);
+	SAFE_DELETE_ARRAY(m_paiGarrisonUnitBonus);
 	SAFE_DELETE_ARRAY(m_paiUpkeepCount);
 	SAFE_DELETE_ARRAY(m_aiCensureTypes);
 	///TKe
@@ -562,6 +564,7 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 		///TKs Invention Core Mod v 1.0
 		m_aiVictoryYieldCount[iI] = 0;
 		///Tke Civics
+		m_paiGarrisonUnitBonus[iI] = 0;
 		m_paiUpkeepCount[iI] = 0;
 		//tke
 		///TKe
@@ -11378,6 +11381,7 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
 	{
 		changeYieldRateModifier(((YieldTypes)iI), (kCivicInfo.getYieldModifier(iI) * iChange));
 		changeCapitalYieldRateModifier(((YieldTypes)iI), (kCivicInfo.getCapitalYieldModifier(iI) * iChange));
+		changeGarrisonUnitBonus((YieldTypes)iI, kCivicInfo.getGarrisonUnitModifiers(iI) * iChange);///Tks Civics
 	}
 
 	for (int iI = 0; iI < GC.getNumHurryInfos(); iI++)
@@ -11397,15 +11401,6 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
 			changeImprovementYieldChange(((ImprovementTypes)iI), ((YieldTypes)iJ), (kCivicInfo.getImprovementYieldChanges(iI, iJ) * iChange));
 		}
 	}
-    ///TKs Invention Core Mod v 1.0
-    //if (kCivicInfo.getIncreaseCityPopulation() > 0)
-   // {
-       // int iLoop;
-       // for (CvCity* pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
-      //  {
-          //  pLoopCity->setMaxCityPop(kCivicInfo.getIncreaseCityPopulation());
-       // }
-    //}
 
 	//TKs Civics
 	if (kCivicInfo.getNumCivicCombatBonus() > 0)
@@ -11547,11 +11542,6 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
         {
             if (GC.getYieldInfo(eYield).isMustBeDiscovered())
             {
-
-//                CyArgsList argsList;
-//                argsList.add(-1);
-//                gDLL->getPythonIFace()->callFunction(PYScreensModule, "showMainInterface", argsList.makeFunctionArgs());
-
                 gDLL->getInterfaceIFace()->setDirty(NewYieldAvailable_DIRTY_BIT, true);
                 break;
             }
@@ -11690,6 +11680,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	///TKs Invention Core Mod v 1.0
 	pStream->Read(NUM_YIELD_TYPES, m_aiVictoryYieldCount);
 	///Tks Civics
+	pStream->Read(NUM_YIELD_TYPES, m_paiGarrisonUnitBonus);
 	pStream->Read(NUM_YIELD_TYPES, m_paiUpkeepCount);
 	pStream->Read(MAX_PLAYERS, m_aiTradingPostCount);
 	//Tke Civics
@@ -12167,6 +12158,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	///TKs Invention Core Mod v 1.0
 	pStream->Write(NUM_YIELD_TYPES, m_aiVictoryYieldCount);
 	//TKs CIvics
+	pStream->Write(NUM_YIELD_TYPES, m_paiGarrisonUnitBonus);
 	pStream->Write(NUM_YIELD_TYPES, m_paiUpkeepCount);
 	pStream->Write(MAX_PLAYERS, m_aiTradingPostCount);
 	///tke
@@ -15033,6 +15025,32 @@ int CvPlayer::getUpkeepCount(YieldTypes eIndex) const
 	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
 	FAssertMsg(m_paiUpkeepCount != NULL, "m_paiUpkeepCount is not expected to be equal with NULL");
 	return m_paiUpkeepCount[eIndex];
+}
+
+void CvPlayer::changeGarrisonUnitBonus(YieldTypes eIndex, int iChange)
+{
+	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
+	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
+
+	if (iChange != 0)
+	{
+		FAssertMsg(m_paiGarrisonUnitBonus != NULL, "m_paiGarrisonUnitBonus is not expected to be equal with NULL");
+		m_paiGarrisonUnitBonus[eIndex] = (m_paiGarrisonUnitBonus[eIndex] + iChange);
+		FAssertMsg(getGarrisonUnitBonus(eIndex) >= 0, "getGarrisonUnitBonus(eIndex) is expected to be non-negative (invalid Index)");
+
+		//if (getID() == GC.getGameINLINE().getActivePlayer())
+		//{
+			//gDLL->getInterfaceIFace()->setDirty(GameData_DIRTY_BIT, true);
+		//}
+	}
+}
+
+int CvPlayer::getGarrisonUnitBonus(YieldTypes eIndex) const
+{
+	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
+	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
+	FAssertMsg(m_paiGarrisonUnitBonus != NULL, "m_paiGarrisonUnitBonus is not expected to be equal with NULL");
+	return m_paiGarrisonUnitBonus[eIndex];
 }
 
 int CvPlayer::getSingleCivicUpkeep(CivicTypes eCivic, bool bIgnoreAnarchy) const

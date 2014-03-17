@@ -30,6 +30,14 @@
     <Spanish>[ICON_BULLET]%D1_Bonus%% from Decrees</Spanish>
   </TEXT>
   <TEXT>
+    <Tag>TXT_KEY_CIVIC_GARRISON_BONUS</Tag>
+    <English>[SPACE]from Garrisoned Units</English>
+    <French>[SPACE]from Garrisoned Units</French>
+    <German>[SPACE]from Garrisoned Units</German>
+    <Italian>[SPACE]from Garrisoned Units</Italian>
+    <Spanish>[SPACE]from Garrisoned Units</Spanish>
+  </TEXT>
+  <TEXT>
     <Tag>TXT_KEY_CIVIC_TREASURY_BUILDING</Tag>
     <English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s1_civic[COLOR_REVERT] bonus: +%d2% of Treasury</English>
     <French>[ICON_BULLET]</French>
@@ -1000,6 +1008,14 @@
     <German>[ICON_BULLET]%d1%F2_Yield from Decrees</German>
     <Italian>[ICON_BULLET]%d1%F2_Yield from Decrees</Italian>
     <Spanish>[ICON_BULLET]%d1%F2_Yield from Decreesc</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_GARRISONED_BONUS</Tag>
+    <English>[ICON_BULLET]%d1F2_Yield from Garrisoned Units</English>
+    <French>[ICON_BULLET]%d1F2_Yield from Garrisoned Units</French>
+    <German>[ICON_BULLET]%d1F2_Yield from Garrisoned Units</German>
+    <Italian>[ICON_BULLET]%d1F2_Yield from Garrisoned Units</Italian>
+    <Spanish>[ICON_BULLET]%d1F2_Yield from Garrisoned Units</Spanish>
   </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RESEARCH_CONVERTS_YIELD_HELP</Tag>

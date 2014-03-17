@@ -968,10 +968,10 @@ void CvUnit::doTurn()
      ///TKs Invention Core Mod v 1.0
 	if (isOnMap())
 	{
-	    if (isAlwaysHostile(plot()))
-        {
-            //FAssert(m_pUnitInfo->getDefaultUnitAIType() == AI_getUnitAIType());
-        }
+	    //if (isAlwaysHostile(plot()))
+     //   {
+     //       //FAssert(m_pUnitInfo->getDefaultUnitAIType() == AI_getUnitAIType());
+     //   }
 	    if (getEscortPromotion() != NO_PROMOTION)
 	    {
 	        CvCity* pPlotCity = plot()->getPlotCity();
@@ -8873,11 +8873,6 @@ bool CvUnit::isFortifyable() const
 		return false;
 	}
 
-	if (!isOnMap())
-	{
-		return false;
-	}
-
 	return true;
 }
 
@@ -14460,6 +14455,40 @@ EuropeTypes CvUnit::getUnitTradeMarket() const
 	return m_eUnitTradeMarket;
 }
 
+bool CvUnit::canGarrison() const
+{
+	if (!isOnMap())
+	{
+		return false;
+	}
+
+	if (cargoSpace() > 0)
+	{
+		return false;
+	}
+
+	if (!canAttack())
+	{
+		return false;
+	}
+
+	if (workRate(true) > 0)
+	{
+		return false;
+	}
+
+	if (getProfession() == NO_PROFESSION)
+	{
+		return false;
+	}
+
+	if (getDomainType() == DOMAIN_SEA)
+	{
+		return false;
+	}
+
+	return true;
+}
 void CvUnit::setUnitTradeMarket(EuropeTypes eMarket)
 {
 	m_eUnitTradeMarket = eMarket;

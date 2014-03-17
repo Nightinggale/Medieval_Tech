@@ -4360,38 +4360,6 @@ int CvCity::getBaseRawYieldProduced(YieldTypes eYieldType, SpecialBuildingTypes 
 		return 0;
 	}
 	CvPlayer& owner = GET_PLAYER(getOwnerINLINE());
-    ///TK Coal
-//	int iExtra = 0;
-//	if (eYieldType != YIELD_COAL && isHasRealBuilding((BuildingTypes)GC.getDefineINT("STEAMWORKS_BUILDING")))
-//	{
-//        int iConsumedCoal = getRawYieldConsumed(YIELD_COAL);
-//
-//        if (iConsumedCoal > 0)
-//        {
-//            int iCoalMod = getYieldStored(YIELD_COAL) + getBaseRawYieldProduced(YIELD_COAL) * getBaseYieldRateModifier(YIELD_COAL) / 100 - iConsumedCoal;
-//            if (iCoalMod != -iConsumedCoal)
-//            {
-//                int SteamWorksMod = std::max(1, GC.getDefineINT("TK_STEAMWORKS_MODIFIER"));
-//                if (iCoalMod != -iConsumedCoal)
-//                {
-//                    if (iCoalMod > iConsumedCoal && iCoalMod != 0)
-//                    {
-//                        iExtra = iConsumedCoal / SteamWorksMod;
-//                    }
-//                    else if (iCoalMod < iConsumedCoal)
-//                    {
-//                        iExtra = (iConsumedCoal + iCoalMod) / SteamWorksMod;
-//                    }
-//                    else if (iCoalMod == 0)
-//                    {
-//                        iExtra = iConsumedCoal / SteamWorksMod;
-//                    }
-//                }
-//            }
-//        }
-//
-//	}
-	  ///Tke
 	//indoor professions
 	int iCityYieldProduction = 0;
 	for (int i = 0; i < getPopulation(); ++i)
@@ -4443,22 +4411,11 @@ int CvCity::getBaseRawYieldProduced(YieldTypes eYieldType, SpecialBuildingTypes 
                         }
                     }
 				}
-				//YieldTypes eYieldProduced = (YieldTypes) kProfessionInfo.getYieldsProduced(0);
-				// MultipleYieldsProduced End
 				///TKe
 
 			}
 		}
 	}
-
-	 ///TK Coal
-//	if (iCityYieldProduction > 0 && GC.getYieldInfo(eYieldType).getUnitClass() != NO_UNITCLASS && eYieldType != YIELD_COAL)
-//	{
-//
-//	    iCityYieldProduction += iExtra;
-//
-//	}
-    ///TKe
 
 	//outdoor professions
 	int iPlotYieldProduction = 0;
@@ -4484,7 +4441,24 @@ int CvCity::getBaseRawYieldProduced(YieldTypes eYieldType, SpecialBuildingTypes 
 
 	iExtraConnectedNetwork += getConnectedTradeYield(eYieldType);
 	iExtraConnectedNetwork += getConnectedMissionYield(eYieldType);
-
+	if (owner.getGarrisonUnitBonus(eYieldType) > 0)
+	{
+		CvPlot* pPlot = plot();
+		CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
+		while (pUnitNode != NULL)
+		{
+			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+			pUnitNode = pPlot->nextUnitNode(pUnitNode);
+			if (pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
+			{
+				if (pLoopUnit->canGarrison())
+				{
+					iExtraConnectedNetwork += owner.getGarrisonUnitBonus(eYieldType);
+				}
+			}
+		}
+	}
+	
 	//building extra
 
 	int iBuildingYieldProduced = 0;

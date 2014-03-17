@@ -1053,6 +1053,7 @@ public:
 	int getCivicCombatBonus(int index) const;
 	int getAllowedUnitClassImmigration(int i) const;
 	int getUpkeepYields(int i) const;
+	int* getGarrisonUnitArray() const;
 	//tke
     DllExport int getAllowsBuildTypes(int i) const;
     DllExport int getFasterBuildTypes(int i) const;
@@ -1066,6 +1067,7 @@ public:
 	DllExport int* getRequiredYieldsArray() const;
 	DllExport int getRequiredYieldsArraySize() const;
     DllExport int getMaxYieldModifiers(int i) const;
+	DllExport int getGarrisonUnitModifiers(int i) const;
 	///Tke
 	DllExport int getNativeAttitudeChange() const;
 	DllExport int getNativeCombatModifier() const;
@@ -1188,6 +1190,7 @@ protected:
     int* m_aiRequiredFatherPoints;
     int* m_aiRequiredYields;
     int* m_aiMaxYieldModifiers;
+	int* m_aiGarrisonUnitModifiers;
 
 	///TKe
 	int m_iDomesticGreatGeneralRateModifier;

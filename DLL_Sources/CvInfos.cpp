@@ -3890,6 +3890,7 @@ m_aiAllowsBuildTypesTerrain(NULL),
 m_aiFartherPointChanges(NULL),
 m_aiIndustrializationVictory(NULL),
 m_aiMaxYieldModifiers(NULL),
+m_aiGarrisonUnitModifiers(NULL),
 ///TKe
 m_iDomesticGreatGeneralRateModifier(0),
 m_iFreeExperience(0),
@@ -3940,6 +3941,7 @@ CvCivicInfo::~CvCivicInfo()
 	SAFE_DELETE_ARRAY(m_aiFartherPointChanges);
     SAFE_DELETE_ARRAY(m_aiIndustrializationVictory);
     SAFE_DELETE_ARRAY(m_aiMaxYieldModifiers);
+	SAFE_DELETE_ARRAY(m_aiGarrisonUnitModifiers);
 	///TKe
 	SAFE_DELETE_ARRAY(m_aiYieldModifier);
 	SAFE_DELETE_ARRAY(m_aiCapitalYieldModifier);
@@ -4141,8 +4143,16 @@ int CvCivicInfo::getMaxYieldModifiers(int i) const
 	FAssertMsg(i > -1, "Index out of bounds");
 	return m_aiMaxYieldModifiers ? m_aiMaxYieldModifiers[i] : -1;
 }
-
-
+int CvCivicInfo::getGarrisonUnitModifiers(int i) const
+{
+	FAssertMsg(i < NUM_YIELD_TYPES, "Index out of bounds");
+	FAssertMsg(i > -1, "Index out of bounds");
+	return m_aiGarrisonUnitModifiers ? m_aiGarrisonUnitModifiers[i] : -1;
+}
+int* CvCivicInfo::getGarrisonUnitArray() const
+{
+	return m_aiGarrisonUnitModifiers;
+}
 int CvCivicInfo::getAllowsPromotions(int i) const
 {
 	return m_aiAllowsPromotions ? m_aiAllowsPromotions[i] : 0;
@@ -4357,7 +4367,6 @@ int* CvCivicInfo::getRequiredYieldsArray() const
 
 int CvCivicInfo::getRequiredYieldsArraySize() const
 {
-	//return (int)m_aiRequiredYields.size();
 	return 0;
 }
 
@@ -4851,6 +4860,7 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 
     pXML->SetVariableListTagPair(&m_aiIndustrializationVictory, "IndustrializationVictory", NUM_YIELD_TYPES, 0);
     pXML->SetVariableListTagPair(&m_aiMaxYieldModifiers, "MaxYieldModifiers", NUM_YIELD_TYPES, 0);
+	pXML->SetVariableListTagPair(&m_aiGarrisonUnitModifiers, "GarrisonUnitModifiers", NUM_YIELD_TYPES, 0);
     pXML->SetVariableListTagPair(&m_aiAllowsBuildTypesTerrain, "AllowsBuildTypesTerrain", GC.getNumTerrainInfos(), 0);
 	pXML->SetVariableListTagPair(&m_aiFartherPointChanges, "FartherPointChanges", GC.getNumFatherPointInfos(), 0);
     pXML->SetVariableListTagPair(&m_aiAllowsProfessions, "AllowsProfessions", GC.getNumProfessionInfos(), 0);

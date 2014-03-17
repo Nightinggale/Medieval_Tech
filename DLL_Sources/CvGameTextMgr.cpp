@@ -4640,6 +4640,10 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
 	//	Capital Yield Modifiers
 	setYieldChangeHelp(szHelpText, L"", L"", gDLL->getText("TXT_KEY_CIVIC_IN_CAPITAL").GetCString(), kCivicInfo.getCapitalYieldModifierArray(), true);
 
+	// Civic Arrays
+	//Garrison Unit Array
+	setYieldChangeHelp(szHelpText, L"", L"", gDLL->getText("TXT_KEY_CIVIC_GARRISON_BONUS").GetCString(), kCivicInfo.getGarrisonUnitArray(), false);
+
 	//	Improvement Yields
 	for (iI = 0; iI < NUM_YIELD_TYPES; ++iI)
 	{
@@ -4656,6 +4660,7 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
 				iLast = kCivicInfo.getImprovementYieldChanges(iJ, iI);
 			}
 		}
+
 	}
 
 	//	Hurry types
@@ -4817,14 +4822,14 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
         }
     }
 
-    for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
+	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
     {
         if (kCivicInfo.getAllowsYields(iI) > 0)
         {
             szHelpText.append(NEWLINE);
             szHelpText.append(gDLL->getText("TXT_KEY_RESEARCH_ALLOWS_YIELD", GC.getYieldInfo((YieldTypes)iI).getDescription()));
         }
-    }
+	}
     ///Building Types is Used Here
     for (iI = 0; iI < GC.getNumBuildingInfos(); iI++)
     {
@@ -8417,6 +8422,28 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
         //szBuffer.append(CvWString::format(gDLL->getText("TXT_KEY_CONNECTED_YIELD_BONUS", city.getConnectedTradeYield(eYieldType), info.getChar(), GC.getCivicInfo(YIELD_IDEAS).getChar
 		szBuffer.append(CvWString::format(gDLL->getText("TXT_KEY_CONNECTED_YIELD_BONUS", city.getConnectedTradeYield(eYieldType), info.getChar())));
 		iBaseProduction += city.getConnectedTradeYield(eYieldType);
+	}
+
+	if (owner.getGarrisonUnitBonus(eYieldType) > 0)
+	{
+		int iGarrisonBonus = 0;
+		CvPlot* pPlot = city.plot();
+		CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
+		while (pUnitNode != NULL)
+		{
+			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+			pUnitNode = pPlot->nextUnitNode(pUnitNode);
+			if (pLoopUnit->getOwnerINLINE() == city.getOwnerINLINE())
+			{
+				if (pLoopUnit->canGarrison())
+				{
+					iGarrisonBonus += owner.getGarrisonUnitBonus(eYieldType);
+				}
+			}
+		}
+		szBuffer.append(NEWLINE);
+        szBuffer.append(CvWString::format(gDLL->getText("TXT_KEY_CIVIC_GARRISONED_BONUS", iGarrisonBonus, info.getChar())));
+		iBaseProduction += iGarrisonBonus;
 	}
 
 	if (city.getConnectedMissionYield(eYieldType) > 0)

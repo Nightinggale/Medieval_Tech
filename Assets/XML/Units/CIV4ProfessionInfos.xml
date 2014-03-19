@@ -37,6 +37,7 @@
 		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/NUTRIENTS.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_BIOPOLYMERS</Type>
@@ -70,6 +71,7 @@
 		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/BIOPOLYMERS.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_BASE_METALS</Type>
@@ -103,6 +105,7 @@
 		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/BASE_METALS.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_SILICATES</Type>
@@ -136,6 +139,7 @@
 		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/SILICATES.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_PRECIOUS_METALS</Type>
@@ -169,6 +173,7 @@
 		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/PRECIOUS_METALS.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_ACTINIDES</Type>
@@ -202,6 +207,7 @@
 		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/ACTINIDES.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_ISOTOPES</Type>
@@ -235,6 +241,7 @@
 		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/ISOTOPES.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_RARE_EARTHS</Type>
@@ -268,6 +275,7 @@
 		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/RARE_EARTHS.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_CRYSTALLOIDS</Type>
@@ -301,6 +309,7 @@
 		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/CRYSTALLOIDS.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_NUCLEIC_ACIDS</Type>
@@ -334,6 +343,7 @@
 		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/NUCLEIC_ACIDS.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_AMINO_ACIDS</Type>
@@ -367,6 +377,7 @@
 		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/AMINO_ACIDS.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_TISSUE_SAMPLES</Type>
@@ -400,6 +411,7 @@
 		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/TISSUE_SAMPLES.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_MICROBES</Type>
@@ -433,6 +445,7 @@
 		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/MICROBES.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_DATACORES</Type>
@@ -466,6 +479,7 @@
 		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/DATACORES.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_PROGENITOR_ARTIFACTS</Type>
@@ -499,6 +513,7 @@
 		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/PROGENITOR_ARTIFACTS.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_ALIEN_SPECIMENS</Type>
@@ -532,6 +547,7 @@
 		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/ALIEN_SPECIMENS.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_OPIATES</Type>
@@ -565,6 +581,7 @@
 		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/OPIATES.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_XENOTOXINS</Type>
@@ -598,6 +615,7 @@
 		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/XENOTOXINS.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_BOTANICALS</Type>
@@ -631,6 +649,7 @@
 		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/BOTANICALS.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_HYDROCARBONS</Type>
@@ -664,6 +683,7 @@
 		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/HYDROCARBONS.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_CLATHRATES</Type>
@@ -697,6 +717,7 @@
 		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/CLATHRATES.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_CORE_SAMPLES</Type>
@@ -730,6 +751,7 @@
 		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/CORE_SAMPLES.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_MACHINE_TOOLS</Type>
@@ -763,6 +785,7 @@
 		<YieldType>YIELD_BASE_METALS</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/MACHINE_TOOLS.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_ROBOTICS</Type>
@@ -796,6 +819,7 @@
 		<YieldType>YIELD_MACHINE_TOOLS</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/ROBOTICS.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_MUNITIONS</Type>
@@ -829,6 +853,7 @@
 		<YieldType>YIELD_MACHINE_TOOLS</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/MUNITIONS.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_PHOTONICS</Type>
@@ -862,6 +887,7 @@
 		<YieldType>YIELD_CRYSTALLOIDS</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/PHOTONICS.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_PLASTEEL</Type>
@@ -895,6 +921,7 @@
 		<YieldType>YIELD_BASE_METALS</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/PLASTEEL.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_DURALLOY</Type>
@@ -928,6 +955,7 @@
 		<YieldType>YIELD_BASE_METALS</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/DURALLOY.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_CRYSTALLOY</Type>
@@ -961,6 +989,7 @@
 		<YieldType>YIELD_PRECIOUS_METALS</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/CRYSTALLOY.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_FUSION_CORES</Type>
@@ -994,6 +1023,7 @@
 		<YieldType>YIELD_ACTINIDES</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/FUSION_CORES.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_NUCLEONICS</Type>
@@ -1027,6 +1057,7 @@
 		<YieldType>YIELD_ISOTOPES</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/NUCLEONICS.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_SEMICONDUCTORS</Type>
@@ -1060,6 +1091,7 @@
 		<YieldType>YIELD_RARE_EARTHS</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/SEMICONDUCTORS.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_PLASMIDS</Type>
@@ -1093,6 +1125,7 @@
 		<YieldType>YIELD_NUCLEIC_ACIDS</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/PLASMIDS.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_ENZYMES</Type>
@@ -1126,6 +1159,7 @@
 		<YieldType>YIELD_AMINO_ACIDS</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/ENZYMES.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_STEM_CELLS</Type>
@@ -1159,6 +1193,7 @@
 		<YieldType>YIELD_TISSUE_SAMPLES</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/STEM_CELLS.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_STATE_SECRETS</Type>
@@ -1192,6 +1227,7 @@
 		<YieldType>YIELD_DATACORES</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/STATE_SECRETS.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_PROGENITOR_TECH</Type>
@@ -1225,6 +1261,7 @@
 		<YieldType>YIELD_PROGENITOR_ARTIFACTS</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/PROGENITOR_TECH.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_ALIEN_RELICS</Type>
@@ -1258,6 +1295,7 @@
 		<YieldType>YIELD_ALIEN_SPECIMENS</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/ALIEN_RELICS.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_NARCOTICS</Type>
@@ -1291,6 +1329,7 @@
 		<YieldType>YIELD_OPIATES</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/NARCOTICS.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_BIOWEAPONS</Type>
@@ -1324,6 +1363,7 @@
 		<YieldType>YIELD_XENOTOXINS</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/BIOWEAPONS.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_PHARMACEUTICALS</Type>
@@ -1357,6 +1397,7 @@
 		<YieldType>YIELD_BOTANICALS</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/PHARMACEUTICALS.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_PETROCHEMICALS</Type>
@@ -1390,6 +1431,7 @@
 		<YieldType>YIELD_HYDROCARBONS</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/PETROCHEMICALS.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_COLLOIDS</Type>
@@ -1423,6 +1465,7 @@
 		<YieldType>YIELD_CLATHRATES</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/COLLOIDS.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_CATALYSTS</Type>
@@ -1456,6 +1499,7 @@
 		<YieldType>YIELD_CORE_SAMPLES</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/CATALYSTS.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_HARD_CURRENCY</Type>
@@ -1489,6 +1533,7 @@
 		<YieldType>YIELD_PRECIOUS_METALS</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/HARD_CURRENCY.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_INDUSTRY</Type>
@@ -1522,6 +1567,7 @@
 		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/INDUSTRY.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_MEDIA</Type>
@@ -1555,6 +1601,7 @@
 		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/MEDIA.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_LIBERTY</Type>
@@ -1588,6 +1635,7 @@
 		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/LIBERTY.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_EDUCATION</Type>
@@ -1621,6 +1669,7 @@
 		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/EDUCATION.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_RESEARCH</Type>
@@ -1654,6 +1703,7 @@
 		<YieldType>NONE</YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/RESEARCH.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_COLONIST</Type>
@@ -1692,6 +1742,7 @@
 		<YieldType></YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/COLONIST.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_EXPLORER</Type>
@@ -1730,6 +1781,7 @@
 		<YieldType></YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/EXPLORER.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_LABORER</Type>
@@ -1768,6 +1820,7 @@
 		<YieldType></YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/LABORER.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_MECHANIZED_LABORER</Type>
@@ -1806,6 +1859,7 @@
 		<YieldType></YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/MECHANIZED_LABORER.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_HUNTER</Type>
@@ -1844,6 +1898,7 @@
 		<YieldType></YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/HUNTER.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_TRADER</Type>
@@ -1882,6 +1937,7 @@
 		<YieldType></YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/TRADER.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_ANTHROPOLOGIST</Type>
@@ -1920,6 +1976,7 @@
 		<YieldType></YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/ANTHROPOLOGIST.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_EMISSARY</Type>
@@ -1958,6 +2015,7 @@
 		<YieldType></YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/EMISSARY.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_MILITIA</Type>
@@ -1996,6 +2054,7 @@
 		<YieldType></YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/MILITIA.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_INFANTRY</Type>
@@ -2034,6 +2093,7 @@
 		<YieldType></YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/INFANTRY.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_SCOUT_MECHA</Type>
@@ -2072,6 +2132,7 @@
 		<YieldType></YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/SCOUT_MECHA.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_TACTICAL_MECHA</Type>
@@ -2110,6 +2171,7 @@
 		<YieldType></YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/TACTICAL_MECHA.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_HEAVY_MECHA</Type>
@@ -2148,6 +2210,7 @@
 		<YieldType></YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/HEAVY_MECHA.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_TERRORIST</Type>
@@ -2186,6 +2249,7 @@
 		<YieldType></YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/TERRORIST.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 <ProfessionInfo>
 	<Type>PROFESSION_PIRATE</Type>
@@ -2224,6 +2288,7 @@
 		<YieldType></YieldType>
 	</YieldsConsumed>
 	<Button>Art/Buttons/Yields/PIRATE.dds</Button>
+	<ProfessionSubTypes/>
 </ProfessionInfo>
 </ProfessionInfos>
 </Civ4ProfessionInfos>

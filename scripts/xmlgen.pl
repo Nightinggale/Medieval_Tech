@@ -1038,6 +1038,9 @@ print FI "</FeatureInfo>\n";
 }
 
 # make features
+
+@features = ('FOREST','LIGHT_FOREST','JUNGLE','ICE','DECIDUOUS_FOREST','CONIFEROUS_FOREST','METALLOPHYTE_FOREST','LITHOTROPHIC_FUNGI','CHEMOTROPHIC_FUNGI','LUMINOUS_FOREST','POLYPLOID_FOREST','HOLOGRAPHIC_FRAGMENTS','ANGIOSPERM_FOREST','PETRIFIED_FOREST','RADIOTROPHIC_FUNGI','RESINOUS_FOREST','PROGENITOR_RUINS','THORN_FOREST','PRIMORDIAL_FOREST');
+
 &makefeature('FOREST',{'BIOPOLYMERS'=>4,'NUTRIENTS'=>-1,'POLLUTANTS'=>-1});
 &makefeature('LIGHT_FOREST',{'BIOPOLYMERS'=>3});
 &makefeature('JUNGLE',{'BIOPOLYMERS'=>3,'NUTRIENTS'=>-1,'POLLUTANTS'=>-1});
@@ -1057,8 +1060,6 @@ print FI "</FeatureInfo>\n";
 &makefeature('PROGENITOR_RUINS',{'BIOPOLYMERS'=>3,'NUTRIENTS'=>-1,'POLLUTANTS'=>-1,'PROGENITOR_ARTIFACTS'=>1});
 &makefeature('THORN_FOREST',{'BIOPOLYMERS'=>3,'NUTRIENTS'=>-1,'POLLUTANTS'=>-1,'XENOTOXINS'=>1});
 &makefeature('PRIMORDIAL_FOREST',{'BIOPOLYMERS'=>3,'NUTRIENTS'=>-1,'POLLUTANTS'=>-1,'CLATHRATES'=>1});
-
-@features = ('FOREST','LIGHT_FOREST','JUNGLE','ICE','DECIDUOUS_FOREST','CONIFEROUS_FOREST','METALLOPHYTE_FOREST','LITHOTROPHIC_FUNGI','CHEMOTROPHIC_FUNGI','LUMINOUS_FOREST','POLYPLOID_FOREST','HOLOGRAPHIC_FRAGMENTS','ANGIOSPERM_FOREST','PETRIFIED_FOREST','RADIOTROPHIC_FUNGI','RESINOUS_FOREST','PROGENITOR_RUINS','THORN_FOREST','PRIMORDIAL_FOREST');
 
 print FI "</FeatureInfos>\n</Civ4FeatureInfos>\n";
 close FI;
@@ -1435,7 +1436,7 @@ close ADI;
 # open XML for writing
 open (BI, '> ../Assets/XML/Buildings/CIV4BuildingInfos.xml') or die "Can't write output: $!";
 open (BCI, '> ../Assets/XML/Buildings/CIV4BuildingClassInfos.xml') or die "Can't write output: $!";
-open (SBI, '> ../Assets/XML/Buildings/CIV4SpecialBuildingInfos.xml') or die "Can't write output: $!";
+#open (SBI, '> ../Assets/XML/Buildings/CIV4SpecialBuildingInfos.xml') or die "Can't write output: $!";
 open (ADB, '> ../Assets/XML/Art/CIV4ArtDefines_Building.xml') or die "Can't write output: $!";
 
 # generate XML headers
@@ -1449,10 +1450,10 @@ print BCI '<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jas
 print BCI '<!-- Sid Meier\'s Civilization 4 -->'."\n".'<!-- Copyright Firaxis Games 2005 -->'."\n".'<!-- -->'."\n".'<!-- Building Class Infos -->'."\n";
 print BCI '<Civ4BuildingClassInfos xmlns="x-schema:CIV4BuildingsSchema.xml">'."\n<BuildingClassInfos>\n";
 
-print SBI '<?xml version="1.0"?>'."\n";
-print SBI '<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by EXTREME (Firaxis Games) -->'."\n";
-print SBI '<!-- Sid Meier\'s Civilization 4 -->'."\n".'<!-- Copyright Firaxis Games 2005 -->'."\n".'<!-- -->'."\n".'<!-- Special Building -->'."\n";
-print SBI '<Civ4SpecialBuildingInfos xmlns="x-schema:CIV4BuildingsSchema.xml">'."\n<SpecialBuildingInfos>\n";
+#print SBI '<?xml version="1.0"?>'."\n";
+#print SBI '<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by EXTREME (Firaxis Games) -->'."\n";
+#print SBI '<!-- Sid Meier\'s Civilization 4 -->'."\n".'<!-- Copyright Firaxis Games 2005 -->'."\n".'<!-- -->'."\n".'<!-- Special Building -->'."\n";
+#print SBI '<Civ4SpecialBuildingInfos xmlns="x-schema:CIV4BuildingsSchema.xml">'."\n<SpecialBuildingInfos>\n";
 
 print ADB '<?xml version="1.0" encoding="UTF-8" standalone="no"?>'."\n";
 print ADB '<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jason Winokur (Firaxis Games) -->'."\n";
@@ -1472,14 +1473,14 @@ foreach $item (@allbuildings)
 	$item =~ tr/[a-z]/[A-Z]/;
 
 	# make specialbuilding for item
-	print SBI "<SpecialBuildingInfo>\n";	
-	print SBI "\t<Type>SPECIALBUILDING_".$item."</Type>\n";
-	print SBI "\t<Description>TXT_KEY_YIELD_".$item."</Description>\n";
-	print SBI "\t<bValid>1</bValid>\n";
-	print SBI "\t<FontButtonIndex>".$index."</FontButtonIndex>\n";
-	print SBI "\t<ProductionTraits/>\n";
-	print SBI "\t".'<Button>Art/Buttons/Yields/'.$item.'.dds</Button>'."\n";
-	print SBI "</SpecialBuildingInfo>\n";
+#	print SBI "<SpecialBuildingInfo>\n";	
+#	print SBI "\t<Type>SPECIALBUILDING_".$item."</Type>\n";
+#	print SBI "\t<Description>TXT_KEY_YIELD_".$item."</Description>\n";
+#	print SBI "\t<bValid>1</bValid>\n";
+#	print SBI "\t<FontButtonIndex>".$index."</FontButtonIndex>\n";
+#	print SBI "\t<ProductionTraits/>\n";
+#	print SBI "\t".'<Button>Art/Buttons/Yields/'.$item.'.dds</Button>'."\n";
+#	print SBI "</SpecialBuildingInfo>\n";
 	$index++;
 
 	# make level 1 building
@@ -1835,8 +1836,8 @@ print BI '</BuildingInfos>'."\n</Civ4BuildingInfos>\n";
 close BI;
 print BCI '</BuildingClassInfos>'."\n</Civ4BuildingClassInfos>\n";
 close BCI;
-print SBI '</SpecialBuildingInfos>'."\n</Civ4SpecialBuildingInfos>\n";
-close SBI;
+#print SBI '</SpecialBuildingInfos>'."\n</Civ4SpecialBuildingInfos>\n";
+#close SBI;
 print ADB '</BuildingArtInfos>'."\n</Civ4ArtDefines>\n";
 close ADB;
 
@@ -3573,6 +3574,8 @@ sub makecat {
 	print CI "\t<InventionCategory/>\n";
 	print CI "\t<iX_Location>0</iX_Location>\n";
 	print CI "\t<iY_Location>0</iY_Location>\n";
+	print CI "\t<iX_Relative_Location>0</iX_Relative_Location>\n";
+	print CI "\t<iY_Relative_Location>0</iY_Relative_Location>\n";
 	print CI "\t<RequiredInvention/>\n";
 	print CI "\t<RequiredInvention2/>\n";
 	print CI "\t<RequiredInventionOr/>\n";
@@ -3660,6 +3663,8 @@ sub maketech {
 	print CI "\t<InventionCategory>".$category."</InventionCategory>\n";
 	print CI "\t<iX_Location>".$x."</iX_Location>\n";
 	print CI "\t<iY_Location>".$y."</iY_Location>\n";
+	print CI "\t<iX_Relative_Location>".$x."</iX_Relative_Location>\n";
+	print CI "\t<iY_Relative_Location>".$y."</iY_Relative_Location>\n";
 	print CI "\t<RequiredInvention>".$req."</RequiredInvention>\n";
 	print CI "\t<RequiredInvention2/>\n";
 	print CI "\t<RequiredInventionOr/>\n";

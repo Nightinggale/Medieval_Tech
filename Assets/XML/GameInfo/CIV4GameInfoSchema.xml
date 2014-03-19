@@ -441,6 +441,8 @@
 	<ElementType name="InventionCategory" content="textOnly"/>
 	<ElementType name="iX_Location" content="textOnly" dt:type="int"/>
 	<ElementType name="iY_Location" content="textOnly" dt:type="int"/>
+	<ElementType name="iX_Relative_Location" content="textOnly" dt:type="int"/>
+	<ElementType name="iY_Relative_Location" content="textOnly" dt:type="int"/>
 	<ElementType name="RequiredYieldType" content="textOnly"/>
 	<ElementType name="iYieldCost" content="textOnly" dt:type="int"/>
 	<ElementType name="RequiredYield" content="eltOnly">
@@ -621,6 +623,8 @@
 		<element type="InventionCategory" minOccurs="0"/>
 		<element type="iX_Location" minOccurs="0"/>
 		<element type="iY_Location" minOccurs="0"/>
+		<element type="iX_Relative_Location" minOccurs="0"/>
+		<element type="iY_Relative_Location" minOccurs="0"/>
 		<element type="RequiredInvention" minOccurs="0"/>
 		<element type="RequiredInvention2" minOccurs="0"/>
 		<element type="RequiredInventionOr" minOccurs="0"/>

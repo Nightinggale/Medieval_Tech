@@ -39,6 +39,8 @@
 	<InventionCategory/>
 	<iX_Location>0</iX_Location>
 	<iY_Location>0</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention/>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -105,6 +107,8 @@
 	<InventionCategory/>
 	<iX_Location>0</iX_Location>
 	<iY_Location>0</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention/>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -171,6 +175,8 @@
 	<InventionCategory/>
 	<iX_Location>0</iX_Location>
 	<iY_Location>0</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention/>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -237,6 +243,8 @@
 	<InventionCategory/>
 	<iX_Location>0</iX_Location>
 	<iY_Location>0</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention/>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -303,6 +311,8 @@
 	<InventionCategory/>
 	<iX_Location>0</iX_Location>
 	<iY_Location>0</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention/>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -369,6 +379,8 @@
 	<InventionCategory/>
 	<iX_Location>0</iX_Location>
 	<iY_Location>0</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention/>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -435,6 +447,8 @@
 	<InventionCategory/>
 	<iX_Location>0</iX_Location>
 	<iY_Location>0</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention/>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -501,6 +515,8 @@
 	<InventionCategory/>
 	<iX_Location>0</iX_Location>
 	<iY_Location>0</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention/>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -567,6 +583,8 @@
 	<InventionCategory>MEDIEVAL_CENSURE</InventionCategory>
 	<iX_Location>0</iX_Location>
 	<iY_Location>0</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>NONE</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -633,6 +651,8 @@
 	<InventionCategory>MEDIEVAL_CENSURE</InventionCategory>
 	<iX_Location>0</iX_Location>
 	<iY_Location>0</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>NONE</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -699,6 +719,8 @@
 	<InventionCategory>MEDIEVAL_CENSURE</InventionCategory>
 	<iX_Location>0</iX_Location>
 	<iY_Location>0</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>NONE</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -765,6 +787,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>0</iX_Location>
 	<iY_Location>0</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>NONE</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -831,6 +855,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>0</iX_Location>
 	<iY_Location>0</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>NONE</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -897,6 +923,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>0</iX_Location>
 	<iY_Location>0</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>NONE</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -963,6 +991,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>1</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -1039,6 +1069,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>1</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_MEDIA1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -1115,6 +1147,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>1</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_MEDIA2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -1191,6 +1225,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>1</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_MEDIA3</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -1267,6 +1303,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>3</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -1343,6 +1381,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>3</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_EDUCATION1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -1419,6 +1459,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>3</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_EDUCATION2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -1495,6 +1537,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>3</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_EDUCATION3</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -1571,6 +1615,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>5</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -1647,6 +1693,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>5</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_LIBERTY1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -1723,6 +1771,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>5</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_LIBERTY2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -1799,6 +1849,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>7</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -1875,6 +1927,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>7</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_RESEARCH1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -1951,6 +2005,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>7</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_RESEARCH2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -2027,6 +2083,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>9</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -2103,6 +2161,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>9</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_HARD_CURRENCY1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -2179,6 +2239,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>9</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_HARD_CURRENCY2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -2255,6 +2317,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>9</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_HARD_CURRENCY3</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -2331,6 +2395,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>11</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -2407,6 +2473,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>11</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_INDUSTRY1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -2483,6 +2551,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>11</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_INDUSTRY2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -2559,6 +2629,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>13</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -2635,6 +2707,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>13</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_MACHINE_TOOLS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -2711,6 +2785,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>13</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_MACHINE_TOOLS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -2787,6 +2863,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>13</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_MACHINE_TOOLS3</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -2863,6 +2941,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>15</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -2939,6 +3019,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>15</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_ROBOTICS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -3020,6 +3102,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>15</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_ROBOTICS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -3096,6 +3180,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>15</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_ROBOTICS3</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -3172,6 +3258,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>17</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -3248,6 +3336,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>17</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_MUNITIONS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -3324,6 +3414,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>17</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_MUNITIONS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -3400,6 +3492,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>17</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_MUNITIONS3</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -3476,6 +3570,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>19</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -3552,6 +3648,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>19</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_PHOTONICS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -3633,6 +3731,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>19</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_PHOTONICS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -3709,6 +3809,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>19</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_PHOTONICS3</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -3785,6 +3887,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>21</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -3861,6 +3965,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>21</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_NUCLEIC_ACIDS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -3932,6 +4038,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>23</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -4008,6 +4116,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>23</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_PLASMIDS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -4089,6 +4199,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>23</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_PLASMIDS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -4165,6 +4277,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>23</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_PLASMIDS3</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -4241,6 +4355,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>25</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -4312,6 +4428,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>25</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_PLASMIDS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -4383,6 +4501,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>25</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_PLASMIDS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -4454,6 +4574,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>27</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -4530,6 +4652,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>27</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_AMINO_ACIDS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -4606,6 +4730,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>27</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_AMINO_ACIDS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -4677,6 +4803,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>29</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -4753,6 +4881,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>29</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_ENZYMES1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -4834,6 +4964,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>29</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_ENZYMES2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -4910,6 +5042,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>29</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_ENZYMES3</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -4986,6 +5120,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>31</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -5057,6 +5193,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>31</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_ENZYMES1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -5128,6 +5266,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>31</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_ENZYMES2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -5199,6 +5339,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>33</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -5275,6 +5417,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>33</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_TISSUE_SAMPLES1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -5351,6 +5495,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>33</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_TISSUE_SAMPLES2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -5422,6 +5568,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>35</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -5498,6 +5646,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>35</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_STEM_CELLS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -5579,6 +5729,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>35</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_STEM_CELLS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -5655,6 +5807,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>35</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_STEM_CELLS3</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -5731,6 +5885,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>37</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -5802,6 +5958,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>37</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_STEM_CELLS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -5873,6 +6031,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>37</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_STEM_CELLS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -5944,6 +6104,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>39</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -6020,6 +6182,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>39</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_MICROBES1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -6096,6 +6260,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>39</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_MICROBES2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -6167,6 +6333,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>41</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -6243,6 +6411,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>41</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_OPIATES2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -6314,6 +6484,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>43</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -6390,6 +6562,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>43</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_NARCOTICS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -6471,6 +6645,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>43</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_NARCOTICS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -6547,6 +6723,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>43</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_NARCOTICS3</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -6623,6 +6801,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>45</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -6694,6 +6874,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>45</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_NARCOTICS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -6765,6 +6947,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>45</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_NARCOTICS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -6836,6 +7020,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>47</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -6912,6 +7098,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>47</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_XENOTOXINS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -6988,6 +7176,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>47</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_XENOTOXINS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -7059,6 +7249,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>49</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -7135,6 +7327,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>49</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_BIOWEAPONS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -7216,6 +7410,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>49</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_BIOWEAPONS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -7292,6 +7488,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>49</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_BIOWEAPONS3</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -7368,6 +7566,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>51</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -7439,6 +7639,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>51</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_BIOWEAPONS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -7510,6 +7712,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>51</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_BIOWEAPONS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -7581,6 +7785,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>53</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -7657,6 +7863,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>53</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_BOTANICALS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -7733,6 +7941,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>53</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_BOTANICALS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -7804,6 +8014,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>55</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -7880,6 +8092,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>55</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_PHARMACEUTICALS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -7961,6 +8175,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>55</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_PHARMACEUTICALS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -8037,6 +8253,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>55</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_PHARMACEUTICALS3</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -8113,6 +8331,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>57</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -8184,6 +8404,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>57</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_PHARMACEUTICALS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -8255,6 +8477,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>57</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_PHARMACEUTICALS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -8326,6 +8550,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>59</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -8402,6 +8628,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>59</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_DATACORES2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -8473,6 +8701,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>61</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -8549,6 +8779,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>61</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_STATE_SECRETS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -8630,6 +8862,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>61</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_STATE_SECRETS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -8706,6 +8940,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>61</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_STATE_SECRETS3</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -8782,6 +9018,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>63</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -8853,6 +9091,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>63</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_STATE_SECRETS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -8924,6 +9164,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>63</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_STATE_SECRETS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -8995,6 +9237,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>65</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -9071,6 +9315,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>65</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_PROGENITOR_ARTIFACTS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -9147,6 +9393,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>65</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_PROGENITOR_ARTIFACTS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -9218,6 +9466,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>67</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -9294,6 +9544,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>67</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_PROGENITOR_TECH1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -9375,6 +9627,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>67</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_PROGENITOR_TECH2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -9451,6 +9705,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>67</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_PROGENITOR_TECH3</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -9527,6 +9783,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>69</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -9598,6 +9856,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>69</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_PROGENITOR_TECH1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -9669,6 +9929,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>69</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_PROGENITOR_TECH2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -9740,6 +10002,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>71</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -9816,6 +10080,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>71</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_ALIEN_SPECIMENS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -9892,6 +10158,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>71</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_ALIEN_SPECIMENS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -9963,6 +10231,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>73</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -10039,6 +10309,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>73</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_ALIEN_RELICS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -10120,6 +10392,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>73</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_ALIEN_RELICS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -10196,6 +10470,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>73</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_ALIEN_RELICS3</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -10272,6 +10548,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>75</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -10343,6 +10621,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>75</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_ALIEN_RELICS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -10414,6 +10694,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>75</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_ALIEN_RELICS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -10485,6 +10767,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>77</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -10561,6 +10845,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>77</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_HYDROCARBONS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -10632,6 +10918,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>79</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -10708,6 +10996,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>79</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_PETROCHEMICALS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -10789,6 +11079,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>79</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_PETROCHEMICALS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -10865,6 +11157,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>79</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_PETROCHEMICALS3</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -10941,6 +11235,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>81</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -11012,6 +11308,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>81</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_PETROCHEMICALS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -11083,6 +11381,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>81</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_PETROCHEMICALS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -11154,6 +11454,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>83</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -11230,6 +11532,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>83</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_CLATHRATES1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -11306,6 +11610,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>83</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_CLATHRATES2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -11377,6 +11683,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>85</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -11453,6 +11761,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>85</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_COLLOIDS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -11534,6 +11844,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>85</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_COLLOIDS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -11610,6 +11922,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>85</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_COLLOIDS3</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -11686,6 +12000,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>87</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -11757,6 +12073,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>87</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_COLLOIDS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -11828,6 +12146,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>87</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_COLLOIDS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -11899,6 +12219,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>89</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -11975,6 +12297,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>89</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_CORE_SAMPLES1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -12051,6 +12375,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>89</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_CORE_SAMPLES2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -12122,6 +12448,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>91</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -12198,6 +12526,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>91</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_CATALYSTS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -12279,6 +12609,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>91</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_CATALYSTS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -12355,6 +12687,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>91</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_CATALYSTS3</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -12431,6 +12765,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>93</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -12502,6 +12838,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>93</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_CATALYSTS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -12573,6 +12911,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>93</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_CATALYSTS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -12644,6 +12984,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>95</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -12720,6 +13062,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>95</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_PRECIOUS_METALS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -12796,6 +13140,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>95</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_PRECIOUS_METALS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -12867,6 +13213,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>97</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -12943,6 +13291,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>97</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_ACTINIDES2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -13014,6 +13364,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>99</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -13090,6 +13442,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>99</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_FUSION_CORES1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -13171,6 +13525,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>99</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_FUSION_CORES2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -13247,6 +13603,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>99</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_FUSION_CORES3</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -13323,6 +13681,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>101</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -13394,6 +13754,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>101</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_FUSION_CORES1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -13465,6 +13827,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>101</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_FUSION_CORES2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -13536,6 +13900,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>103</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -13612,6 +13978,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>103</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_ISOTOPES1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -13688,6 +14056,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>103</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_ISOTOPES2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -13759,6 +14129,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>105</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -13835,6 +14207,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>105</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_NUCLEONICS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -13916,6 +14290,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>105</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_NUCLEONICS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -13992,6 +14368,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>105</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_NUCLEONICS3</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -14068,6 +14446,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>107</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -14139,6 +14519,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>107</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_NUCLEONICS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -14210,6 +14592,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>107</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_NUCLEONICS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -14281,6 +14665,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>109</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -14357,6 +14743,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>109</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_RARE_EARTHS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -14433,6 +14821,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>109</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_RARE_EARTHS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -14504,6 +14894,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>111</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -14580,6 +14972,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>111</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_SEMICONDUCTORS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -14661,6 +15055,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>111</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_SEMICONDUCTORS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -14737,6 +15133,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>111</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_SEMICONDUCTORS3</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -14813,6 +15211,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>113</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -14884,6 +15284,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>113</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_SEMICONDUCTORS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -14955,6 +15357,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>4</iX_Location>
 	<iY_Location>113</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_SEMICONDUCTORS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -15026,6 +15430,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>1</iX_Location>
 	<iY_Location>115</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention></RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -15102,6 +15508,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>2</iX_Location>
 	<iY_Location>115</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_CRYSTALLOIDS1</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>
@@ -15178,6 +15586,8 @@
 	<InventionCategory>MEDIEVAL_TRADE_TECH</InventionCategory>
 	<iX_Location>3</iX_Location>
 	<iY_Location>115</iY_Location>
+	<iX_Relative_Location>0</iX_Relative_Location>
+	<iY_Relative_Location>0</iY_Relative_Location>
 	<RequiredInvention>TECH_CRYSTALLOIDS2</RequiredInvention>
 	<RequiredInvention2/>
 	<RequiredInventionOr/>

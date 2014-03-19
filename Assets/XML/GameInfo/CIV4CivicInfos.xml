@@ -4787,6 +4787,7 @@
           <iChange>3</iChange>
         </GarrisonUnitModifier>
       </GarrisonUnitModifiers>
+      <iDiplomacyAttitudeChange>2</iDiplomacyAttitudeChange>
     </CivicInfo>
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_PIETY</CivicOptionType>

@@ -3131,6 +3131,10 @@ int CvPlayerAI::AI_getAttitudeVal(PlayerTypes ePlayer, bool bForced)
 	iAttitude += AI_getShareWarAttitude(ePlayer);
 	iAttitude += AI_getTradeAttitude(ePlayer);
 	iAttitude += AI_getRivalTradeAttitude(ePlayer);
+	//Tks Civics
+	iAttitude += AI_getCivicAttitude(ePlayer);
+	iAttitude += GET_PLAYER(ePlayer).getDiplomacyAttitudeModifier(getID());
+	//Tke
 
 	for (int iI = 0; iI < NUM_MEMORY_TYPES; iI++)
 	{
@@ -7322,15 +7326,6 @@ bool CvPlayerAI::AI_doDiploOpenBorders(PlayerTypes ePlayer)
 	return true;
 }
 
-///TKs Med
-//int CvPlayerAI::AI_getInsultedAttitude(PlayerTypes ePlayer)
-//{
-//	return m_aiInsultedAttitudeCache[ePlayer];
-//}
-//void CvPlayerAI::AI_changeInsultedAttitude(PlayerTypes ePlayer, int Change)
-//{
-//    m_aiInsultedAttitudeCache[ePlayer] += Change;
-//}
 ///TKs Invention Core Mod v 1.0
 bool CvPlayerAI::AI_doDiploCollaborateResearch(PlayerTypes ePlayer)
 {
@@ -15075,5 +15070,33 @@ bool CvPlayerAI::AI_doDiploOfferVassalCity(PlayerTypes ePlayer)
 	}
 
 	return bOffered;
+}
+
+int CvPlayerAI::AI_getCivicAttitude(PlayerTypes ePlayer)
+{
+	
+	int iAttitudeChange = 0;
+	for (int iX=0; iX < GC.getLeaderHeadInfo(getPersonalityType()).getNumCivicDiplomacyAttitudes(); iX++)
+	{
+		if (GET_PLAYER(ePlayer).isCivic((CivicTypes)GC.getLeaderHeadInfo(getPersonalityType()).getCivicDiplomacyAttitudes(iX)))
+		{
+			iAttitudeChange += GC.getLeaderHeadInfo(getPersonalityType()).getCivicDiplomacyAttitudesValue(iX);
+			//iAttitudeChange /= std::max(1, GC.getLeaderHeadInfo(GET_PLAYER(ePlayer).getPersonalityType()).getCivicDiplomacyDivisor());
+		}
+	}
+	/*int iChangelimit = GC.getLeaderHeadInfo(getPersonalityType()).getCivicDiplomacyChangeLimit();
+	if (iChangelimit > 0)
+	{
+		return range(iAttitudeChange, -(abs(iChangelimit)), abs(iChangelimit));
+	}*/
+	//if (!atWar(getTeam(), GET_PLAYER(ePlayer).getTeam()))
+	//{
+		return iAttitudeChange;
+	//}
+	//else
+	//{
+		//return std::min(1, iAttitudeChange);
+	//}
+	
 }
 ///TKe

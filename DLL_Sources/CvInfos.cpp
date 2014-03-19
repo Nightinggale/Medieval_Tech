@@ -3851,6 +3851,7 @@ m_iKingTreasureTransportMod(0),
 m_iFoundCityType(-1),
 m_iIncreaseCityPopulation(0),
 ///TKs Civics
+m_iDiplomacyAttitudeChange(0),
 m_iMissionariesNotCosumed(0),
 m_iTradingPostNotCosumed(0),
 m_iAnarchyLength(0),
@@ -4239,6 +4240,10 @@ int CvCivicInfo::getIncreaseCityPopulation() const
 	return m_iIncreaseCityPopulation;
 }
 ///Tks CivicsScreen
+int CvCivicInfo::getDiplomacyAttitudeChange() const
+{
+	return m_iDiplomacyAttitudeChange;
+}
 int CvCivicInfo::getMissionariesNotCosumed() const
 {
 	return m_iMissionariesNotCosumed;
@@ -4826,6 +4831,7 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iIncreasedImmigrants, "iIncreasedImmigrants");
 	pXML->GetChildXmlValByName(&m_iFreeTechs, "iFreeTechs");
 	///Tks CivicsScreen
+	pXML->GetChildXmlValByName(&m_iDiplomacyAttitudeChange, "iDiplomacyAttitudeChange");
 	pXML->GetChildXmlValByName(&m_iMissionariesNotCosumed, "iMissionariesNotCosumed");
 	pXML->GetChildXmlValByName(&m_iTradingPostNotCosumed, "iTradingPostNotCosumed");
 	pXML->GetChildXmlValByName(&m_iAnarchyLength, "iAnarchyLength");
@@ -9951,6 +9957,8 @@ bool CvInterfaceModeInfo::read(CvXMLLoadUtility* pXML)
 CvLeaderHeadInfo::CvLeaderHeadInfo() :
 m_iAlarmType(NO_ALARM),
 ///Tks Med
+m_iCivicDiplomacyDivisor(1),
+m_iCivicDiplomacyChangeLimit(0),
 iVictoryType(0),
 iTravelCommandType(-1),
 iEconomyType(0),
@@ -10200,6 +10208,33 @@ int CvLeaderHeadInfo::getAtPeaceAttitudeChangeLimit() const
 {
 	return m_iAtPeaceAttitudeChangeLimit;
 }
+//Tks Civics Diplomacy
+int CvLeaderHeadInfo::getCivicDiplomacyDivisor() const
+{
+	return m_iCivicDiplomacyDivisor;
+}
+int CvLeaderHeadInfo::getCivicDiplomacyChangeLimit() const
+{
+	return m_iCivicDiplomacyChangeLimit;
+}
+int CvLeaderHeadInfo::getNumCivicDiplomacyAttitudes() const
+{
+	return m_aiCivicDiplomacyAttitudes.size();
+}
+int CvLeaderHeadInfo::getCivicDiplomacyAttitudes(int index) const
+{
+	FAssert(index < (int) m_aiCivicDiplomacyAttitudes.size());
+	FAssert(index > -1);
+	return m_aiCivicDiplomacyAttitudes[index].first;
+}
+int CvLeaderHeadInfo::getCivicDiplomacyAttitudesValue(int index) const
+{
+	FAssert(index < (int) m_aiCivicDiplomacyAttitudes.size());
+	FAssert(index > -1);
+	return m_aiCivicDiplomacyAttitudes[index].second;
+}
+
+//Tke
 int CvLeaderHeadInfo::getOpenBordersAttitudeDivisor() const
 {
 	return m_iOpenBordersAttitudeDivisor;
@@ -10571,6 +10606,10 @@ bool CvLeaderHeadInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iAtPeaceAttitudeDivisor, "iAtPeaceAttitudeDivisor");
 	pXML->GetChildXmlValByName(&m_iAtPeaceAttitudeChangeLimit, "iAtPeaceAttitudeChangeLimit");
 	pXML->GetChildXmlValByName(&m_iOpenBordersAttitudeDivisor, "iOpenBordersAttitudeDivisor");
+	///Tks Civics Diplomacy
+	pXML->GetChildXmlValByName(&m_iCivicDiplomacyDivisor, "iCivicDiplomacyDivisor");
+	pXML->GetChildXmlValByName(&m_iCivicDiplomacyChangeLimit, "iCivicDiplomacyChangeLimit");
+	//tke
 	pXML->GetChildXmlValByName(&m_iOpenBordersAttitudeChangeLimit, "iOpenBordersAttitudeChangeLimit");
 	pXML->GetChildXmlValByName(&m_iDefensivePactAttitudeDivisor, "iDefensivePactAttitudeDivisor");
 	pXML->GetChildXmlValByName(&m_iDefensivePactAttitudeChangeLimit, "iDefensivePactAttitudeChangeLimit");
@@ -10608,6 +10647,26 @@ bool CvLeaderHeadInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPairForAudioScripts(&m_aiDiploPeaceMusicScriptIds, "DiplomacyMusicPeace", GC.getNumEraInfos());
 	pXML->SetVariableListTagPairForAudioScripts(&m_aiDiploWarMusicScriptIds, "DiplomacyMusicWar", GC.getNumEraInfos());
 	///TKs Med
+	m_aiCivicDiplomacyAttitudes.clear();
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"CivicDiplomacyAttitudes"))
+	{
+		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"CivicDiplomacy"))
+		{
+			do
+			{
+				pXML->GetChildXmlValByName(szTextVal, "CivicType");
+				int iCivic = pXML->FindInInfoClass(szTextVal);
+				int iChange = 0;
+				pXML->GetChildXmlValByName(&iChange, "iChange");
+				m_aiCivicDiplomacyAttitudes.push_back(std::make_pair((CivicTypes)iCivic, iChange));
+			} while(gDLL->getXMLIFace()->NextSibling(pXML->GetXML()));
+			gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+		}
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+
+
+
 	CvString* pszTraits = NULL;
 	FAssertMsg(NULL == aiEraTraits, "Memory leak");
 	aiEraTraits = new int[GC.getNumEraInfos()];

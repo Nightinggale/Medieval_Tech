@@ -57,6 +57,8 @@
 	<ElementType name="iShareWarAttitudeChange" content="textOnly" dt:type="int"/>
 	<ElementType name="iShareWarAttitudeDivisor" content="textOnly" dt:type="int"/>
 	<ElementType name="iShareWarAttitudeChangeLimit" content="textOnly" dt:type="int"/>
+  <ElementType name="iCivicDiplomacyDivisor" content="textOnly" dt:type="int"/>
+  <ElementType name="iCivicDiplomacyChangeLimit" content="textOnly" dt:type="int"/>
 	<ElementType name="DemandTributeAttitudeThreshold" content="textOnly"/>
 	<ElementType name="NoGiveHelpAttitudeThreshold" content="textOnly"/>
 	<ElementType name="MapRefuseAttitudeThreshold" content="textOnly"/>
@@ -67,6 +69,13 @@
 	<ElementType name="OpenBordersRefuseAttitudeThreshold" content="textOnly"/>
 	<ElementType name="DefensivePactRefuseAttitudeThreshold" content="textOnly"/>
 	<ElementType name="PermanentAllianceRefuseAttitudeThreshold" content="textOnly"/>
+  <ElementType name="CivicDiplomacy" content="eltOnly">
+		<element type="CivicType"/>
+		<element type="iChange"/>
+	</ElementType>
+	<ElementType name="CivicDiplomacyAttitudes" content="eltOnly">
+		<element type="CivicDiplomacy" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
 	<ElementType name="YieldModifier" content="eltOnly">
 		<element type="YieldType"/>
 		<element type="iYield"/>
@@ -209,6 +218,9 @@
 		<element type="iShareWarAttitudeChange"/>
 		<element type="iShareWarAttitudeDivisor"/>
 		<element type="iShareWarAttitudeChangeLimit"/>
+    <element type="iCivicDiplomacyDivisor" minOccurs="0"/>
+    <element type="iCivicDiplomacyChangeLimit" minOccurs="0"/>
+    <element type="CivicDiplomacyAttitudes" minOccurs="0"/>
 		<element type="DemandTributeAttitudeThreshold"/>
 		<element type="NoGiveHelpAttitudeThreshold"/>
 		<element type="MapRefuseAttitudeThreshold"/>

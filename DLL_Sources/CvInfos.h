@@ -999,6 +999,7 @@ public:
 
 	DllExport int getCostToResearch() const;
 	///Tks Civics
+	int getDiplomacyAttitudeChange() const;
 	int getAnarchyLength() const;
 	int getMissionariesNotCosumed() const;
 	int getTradingPostNotCosumed() const;
@@ -1154,6 +1155,7 @@ protected:
     int m_iFreeHurriedImmigrants;
     int m_iGoldBonus;
 	///TKs CivicsScreen
+	int m_iDiplomacyAttitudeChange;
 	int m_iMissionariesNotCosumed;
 	int m_iTradingPostNotCosumed;
 	int m_iAnarchyLength;
@@ -2774,6 +2776,9 @@ public:
 	DllExport virtual ~CvLeaderHeadInfo();
 	DllExport int getAlarmType() const;
 	///Tks Med
+	int getNumCivicDiplomacyAttitudes() const;
+	int getCivicDiplomacyAttitudes(int index) const;
+	int getCivicDiplomacyAttitudesValue(int index) const;
 	DllExport int getEraTraits(int i) const;
 	DllExport int getVictoryType() const;
 	DllExport int getTravelCommandType() const;
@@ -2817,6 +2822,10 @@ public:
 	DllExport int getOpenBordersAttitudeDivisor() const;
 	DllExport int getOpenBordersAttitudeChangeLimit() const;
 	DllExport int getDefensivePactAttitudeDivisor() const;
+	//Tks Civics Diplomacy
+	DllExport int getCivicDiplomacyDivisor() const;
+	DllExport int getCivicDiplomacyChangeLimit() const;
+	//tke
 	DllExport int getDefensivePactAttitudeChangeLimit() const;
 	DllExport int getShareWarAttitudeChange() const;
 	DllExport int getShareWarAttitudeDivisor() const;
@@ -2908,6 +2917,10 @@ protected:
 	int m_iOpenBordersRefuseAttitudeThreshold;
 	int m_iDefensivePactRefuseAttitudeThreshold;
 	int m_iPermanentAllianceRefuseAttitudeThreshold;
+	//Tks Civics Diplomacy
+	int m_iCivicDiplomacyDivisor;
+	int m_iCivicDiplomacyChangeLimit;
+	//Tke
 	CvString m_szArtDefineTag;
 	// Arrays
 	bool* m_abTraits;
@@ -2921,6 +2934,7 @@ protected:
 	int* m_aiDiploPeaceMusicScriptIds;
 	int* m_aiDiploWarMusicScriptIds;
 	 ///Tks Med
+	std::vector< std::pair<CivicTypes, int> > m_aiCivicDiplomacyAttitudes;
 	int* aiEraTraits;
 	///TKe
 };

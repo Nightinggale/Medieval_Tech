@@ -569,6 +569,8 @@ public:
 	void changeGarrisonUnitBonus(YieldTypes eIndex, int iChange);
 	void changeTradingPostCount(PlayerTypes eIndex, int iChange);
 	int getTradingPostCount(PlayerTypes eIndex) const;
+	void changeDiplomacyAttitudeModifier(int iChange);
+	int getDiplomacyAttitudeModifier(PlayerTypes ePlayer) const;
 	/*int getHasCivicOptionCount(CivicOptionTypes eIndex) const;
 	bool isHasCivicOption(CivicOptionTypes eIndex) const;
 	void changeHasCivicOptionCount(CivicOptionTypes eIndex, int iChange);*/
@@ -862,6 +864,7 @@ protected:
 	int m_iUpkeepModifier;
 	int m_iGoldIncome;
 	int m_iExpences;
+	int m_iDiplomacyAttitude;
 	///Tks CivicsEnd
     int m_iTradeFairCityID;
     int m_iProlificInventorModifier;

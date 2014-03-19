@@ -32,7 +32,7 @@ public:
 	static void freeStatics();
 	DllExport static bool areStaticsInitialized();
 	///TKs Med
-	///TKs Med
+	int AI_getCivicAttitude(PlayerTypes ePlayer);
 	bool AI_shouldBuyFromNative(YieldTypes eYield, CvUnit* pTransport=NULL) const;
 	//tkend
 	//TKe

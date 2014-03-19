@@ -11125,7 +11125,7 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
 	{
 		resetConnectedPlayerYieldBonus(eCivic, iChange);
 	}
-
+	
 	if (kCivicInfo.getNewConvertUnitClass() != NO_UNITCLASS)
 	{
 		if (iChange > 0)
@@ -11322,6 +11322,7 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
 
     changeFreeTechs(kCivicInfo.getFreeTechs());
 //    changeProlificInventorModifier(kCivicInfo.getProlificInventorRateChange());
+	changeDiplomacyAttitudeModifier(kCivicInfo.getDiplomacyAttitudeChange() * iChange);
     changeGold(kCivicInfo.getGoldBonus());
 	changeMissionaryHide(kCivicInfo.getMissionariesNotCosumed() * iChange);
 	changeTradingPostHide(kCivicInfo.getTradingPostNotCosumed() * iChange);
@@ -18283,6 +18284,29 @@ int CvPlayer::getTradingPostHide() const
 void CvPlayer::changeHuntingYieldPercent(int iChange)
 {
     m_iHuntingYieldPercent += iChange;
+}
+void CvPlayer::changeDiplomacyAttitudeModifier(int iChange)
+{
+    m_iDiplomacyAttitude += iChange;
+}
+int CvPlayer::getDiplomacyAttitudeModifier(PlayerTypes ePlayer) const
+{
+	if (!atWar(getTeam(), GET_PLAYER(ePlayer).getTeam()))
+	{
+		int iAttitudeChange = m_iDiplomacyAttitude;
+		iAttitudeChange /= std::max(1, GC.getLeaderHeadInfo(GET_PLAYER(ePlayer).getPersonalityType()).getCivicDiplomacyDivisor());
+		int iChangelimit = GC.getLeaderHeadInfo(GET_PLAYER(ePlayer).getPersonalityType()).getCivicDiplomacyChangeLimit();
+		if (iChangelimit > 0)
+		{
+			return range(iAttitudeChange, -(abs(iChangelimit)), abs(iChangelimit));
+		}
+		else
+		{
+			return iAttitudeChange;
+		}
+	}
+
+	return 0;
 }
 int CvPlayer::getHuntingYieldPercent() const
 {

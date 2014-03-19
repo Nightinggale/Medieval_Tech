@@ -30,6 +30,38 @@
     <Spanish>[ICON_BULLET]%D1_Bonus%% from Decrees</Spanish>
   </TEXT>
   <TEXT>
+    <Tag>TXT_KEY_CIVIC_ATTITUDES_EFFECT_GOOD</Tag>
+    <English>%D1: "Your Diplomatic measures are encouraging."</English>
+    <French>%D1 : "Your Diplomatic measures are encouraging."</French>
+    <German>%D1: "Your Diplomatic measures are encouraging."</German>
+    <Italian>%D1: "Your Diplomatic measures are encouraging."</Italian>
+    <Spanish>%D1: "Your Diplomatic measures are encouraging."</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_ATTITUDES_EFFECT_BAD</Tag>
+    <English>%D1: "Your Diplomacy have be weighed in the balance and found lacking."</English>
+    <French>%D1 : "Your Diplomatic measures are in need of work!"</French>
+    <German>%D1: "Your Diplomatic measures are in need of work!"</German>
+    <Italian>%D1: "Your Diplomatic measures are in need of work!"</Italian>
+    <Spanish>%D1: "Your Diplomatic measures are in need of work!"</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_ATTITUDES_GOOD</Tag>
+    <English>%D1: "Our mutual ideals of Social Policies are encouraging."</English>
+    <French>%D1 : "Our mutual ideals of Social Policies are encouraging."</French>
+    <German>%D1: "Our mutual ideals of Social Policies are encouraging."</German>
+    <Italian>%D1: "Our mutual ideals of Social Policies are encouraging."</Italian>
+    <Spanish>%D1: "Our mutual ideals of Social Policies are encouraging."</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_ATTITUDES_BAD</Tag>
+    <English>%D1: "Your Social Policies are appalling to us."</English>
+    <French>%D1 : "Your Social Policies are appalling to us."</French>
+    <German>%D1: "Your Social Policies are appalling to us."</German>
+    <Italian>%D1: "Your Social Policies are appalling to us."</Italian>
+    <Spanish>%D1: "Your Social Policies are appalling to us."</Spanish>
+  </TEXT>
+  <TEXT>
     <Tag>TXT_KEY_CIVIC_GARRISON_BONUS</Tag>
     <English>[SPACE]from Garrisoned Units</English>
     <French>[SPACE]from Garrisoned Units</French>
@@ -40,18 +72,34 @@
   <TEXT>
     <Tag>TXT_KEY_CIVIC_TREASURY_BUILDING</Tag>
     <English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s1_civic[COLOR_REVERT] bonus: +%d2% of Treasury</English>
-    <French>[ICON_BULLET]</French>
-    <German>[ICON_BULLET]</German>
-    <Italian>[ICON_BULLET]</Italian>
-    <Spanish>[ICON_BULLET]</Spanish>
+    <French>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s1_civic[COLOR_REVERT] bonus: +%d2% of Treasury</French>
+    <German>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s1_civic[COLOR_REVERT] bonus: +%d2% of Treasury</German>
+    <Italian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s1_civic[COLOR_REVERT] bonus: +%d2% of Treasury</Italian>
+    <Spanish>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s1_civic[COLOR_REVERT] bonus: +%d2% of Treasury</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_CIVIC_BUILDING_TREASURY_BONUS</Tag>
     <English>[ICON_BULLET]Allows Building Treasury Bonus</English>
-    <French>[ICON_BULLET]</French>
-    <German>[ICON_BULLET]</German>
-    <Italian>[ICON_BULLET]</Italian>
-    <Spanish>[ICON_BULLET]</Spanish>
+    <French>[ICON_BULLET]Allows Building Treasury Bonus</French>
+    <German>[ICON_BULLET]Allows Building Treasury Bonus</German>
+    <Italian>[ICON_BULLET]Allows Building Treasury Bonus</Italian>
+    <Spanish>[ICON_BULLET]Allows Building Treasury Bonus</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_DIPLOMACY_BONUS</Tag>
+    <English>[ICON_BULLET]+%d1 Bonus to Diplomacy</English>
+    <French>[ICON_BULLET]+%d1 Bonus to Diplomacy</French>
+    <German>[ICON_BULLET]+%d1 Bonus to Diplomacy</German>
+    <Italian>[ICON_BULLET]+%d1 Bonus to Diplomacy</Italian>
+    <Spanish>[ICON_BULLET]+%d1 Bonus to Diplomacy</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_DIPLOMACY_NEGATIVE</Tag>
+    <English>[ICON_BULLET][COLOR_WARNING_TEXT]+%d1[COLOR_REVERT] Penalty to Diplomacy</English>
+    <French>[ICON_BULLET][COLOR_WARNING_TEXT]+%d1[COLOR_REVERT] Penalty to Diplomacy</French>
+    <German>[ICON_BULLET][COLOR_WARNING_TEXT]+%d1[COLOR_REVERT] Penalty to Diplomacy</German>
+    <Italian>[ICON_BULLET][COLOR_WARNING_TEXT]+%d1[COLOR_REVERT] Penalty to Diplomacy</Italian>
+    <Spanish>[ICON_BULLET][COLOR_WARNING_TEXT]+%d1[COLOR_REVERT] Penalty to Diplomacy</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_CIVIC_HOLY_COMBAT_BONUS</Tag>
@@ -96,10 +144,10 @@
   <TEXT>
     <Tag>TXT_KEY_PLAYER_INCOME_GOLD</Tag>
     <English>[COLOR_HIGHLIGHT_TEXT]Treasury:[COLOR_REVERT] %d1</English>
-    <French>%d1</French>
-    <German>%d1</German>
-    <Italian>%d1</Italian>
-    <Spanish>%d1</Spanish>
+    <French>[COLOR_HIGHLIGHT_TEXT]Treasury:[COLOR_REVERT] %d1</French>
+    <German>[COLOR_HIGHLIGHT_TEXT]Treasury:[COLOR_REVERT] %d1</German>
+    <Italian>[COLOR_HIGHLIGHT_TEXT]Treasury:[COLOR_REVERT] %d1</Italian>
+    <Spanish>[COLOR_HIGHLIGHT_TEXT]Treasury:[COLOR_REVERT] %d1</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_PLAYER_TURN_GOLD</Tag>

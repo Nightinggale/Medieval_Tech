@@ -158,12 +158,52 @@
 	</Traits>
 	<FreeUnitClasses>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
 		</FreeUnitClass>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
 		</FreeUnitClass>
 	</FreeUnitClasses>
 	<FreeBuildingClasses>
@@ -352,12 +392,52 @@
 	</Traits>
 	<FreeUnitClasses>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
 		</FreeUnitClass>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
 		</FreeUnitClass>
 	</FreeUnitClasses>
 	<FreeBuildingClasses>
@@ -546,12 +626,52 @@
 	</Traits>
 	<FreeUnitClasses>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
 		</FreeUnitClass>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
 		</FreeUnitClass>
 	</FreeUnitClasses>
 	<FreeBuildingClasses>
@@ -740,12 +860,52 @@
 	</Traits>
 	<FreeUnitClasses>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
 		</FreeUnitClass>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
 		</FreeUnitClass>
 	</FreeUnitClasses>
 	<FreeBuildingClasses>
@@ -930,12 +1090,52 @@
 	</Traits>
 	<FreeUnitClasses>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
 		</FreeUnitClass>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
 		</FreeUnitClass>
 	</FreeUnitClasses>
 	<FreeBuildingClasses>
@@ -1124,12 +1324,52 @@
 	</Traits>
 	<FreeUnitClasses>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
 		</FreeUnitClass>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
 		</FreeUnitClass>
 	</FreeUnitClasses>
 	<FreeBuildingClasses>
@@ -1318,12 +1558,52 @@
 	</Traits>
 	<FreeUnitClasses>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
 		</FreeUnitClass>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
 		</FreeUnitClass>
 	</FreeUnitClasses>
 	<FreeBuildingClasses>
@@ -1508,12 +1788,52 @@
 	</Traits>
 	<FreeUnitClasses>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
 		</FreeUnitClass>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
 		</FreeUnitClass>
 	</FreeUnitClasses>
 	<FreeBuildingClasses>
@@ -1685,12 +2005,52 @@
 	</Traits>
 	<FreeUnitClasses>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
 		</FreeUnitClass>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
 		</FreeUnitClass>
 	</FreeUnitClasses>
 	<FreeBuildingClasses>
@@ -1862,12 +2222,52 @@
 	</Traits>
 	<FreeUnitClasses>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
 		</FreeUnitClass>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
 		</FreeUnitClass>
 	</FreeUnitClasses>
 	<FreeBuildingClasses>
@@ -2039,12 +2439,52 @@
 	</Traits>
 	<FreeUnitClasses>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
 		</FreeUnitClass>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
 		</FreeUnitClass>
 	</FreeUnitClasses>
 	<FreeBuildingClasses>
@@ -2216,12 +2656,52 @@
 	</Traits>
 	<FreeUnitClasses>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
 		</FreeUnitClass>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
 		</FreeUnitClass>
 	</FreeUnitClasses>
 	<FreeBuildingClasses>
@@ -2393,12 +2873,52 @@
 	</Traits>
 	<FreeUnitClasses>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
 		</FreeUnitClass>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
 		</FreeUnitClass>
 	</FreeUnitClasses>
 	<FreeBuildingClasses>
@@ -2570,12 +3090,52 @@
 	</Traits>
 	<FreeUnitClasses>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
 		</FreeUnitClass>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
 		</FreeUnitClass>
 	</FreeUnitClasses>
 	<FreeBuildingClasses>
@@ -2747,12 +3307,52 @@
 	</Traits>
 	<FreeUnitClasses>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
 		</FreeUnitClass>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
 		</FreeUnitClass>
 	</FreeUnitClasses>
 	<FreeBuildingClasses>
@@ -2924,12 +3524,52 @@
 	</Traits>
 	<FreeUnitClasses>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
 		</FreeUnitClass>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
 		</FreeUnitClass>
 	</FreeUnitClasses>
 	<FreeBuildingClasses>
@@ -3101,12 +3741,52 @@
 	</Traits>
 	<FreeUnitClasses>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
 		</FreeUnitClass>
 		<FreeUnitClass>
-			<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-			<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>
+			<FreeUnitProfession>NONE</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>
+		</FreeUnitClass>
+		<FreeUnitClass>
+			<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>
+			<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>
 		</FreeUnitClass>
 	</FreeUnitClasses>
 	<FreeBuildingClasses>

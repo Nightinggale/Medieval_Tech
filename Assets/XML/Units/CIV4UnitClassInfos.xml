@@ -517,6 +517,11 @@
 	<DefaultUnit>UNIT_WAR_DROID</DefaultUnit>
 </UnitClassInfo>
 <UnitClassInfo>
+	<Type>UNITCLASS_STORMTROOPER</Type>
+	<Description>Stormtrooper:Stormtroopers</Description>
+	<DefaultUnit>UNIT_STORMTROOPER</DefaultUnit>
+</UnitClassInfo>
+<UnitClassInfo>
 	<Type>UNITCLASS_KILLBOTS</Type>
 	<Description>Killbots:Killbotses</Description>
 	<DefaultUnit>UNIT_KILLBOTS</DefaultUnit>

@@ -131,7 +131,7 @@ def_noun "Mine"  => "Mines";
 @transportships = ("Corvette","Dropship","Freighter","Heavy Freighter");
 @warships = ("Frigate","Gunboat","Destroyer","Cruiser","Battleship","Dreadnought");
 @miscships = ("Probe","Mining Vessel","Science Vessel","Colony Ship");
-@miscland = ("Convoy","Treasure","Relic","Colonial Garrison","Artillery","War Droid");
+@miscland = ("Convoy","Treasure","Relic","Colonial Garrison","Artillery","War Droid","Stormtrooper");
 @miscunits = (@transportships,@warships,@miscships,@miscland);
 @beastunits = ("Killbots","Progenitor AI","Arachnid","Scorpion","Amoeba","Enigma Virion");
 
@@ -3180,14 +3180,22 @@ sub makekingciv
 	print CI "\t\t</Trait>\n";
 	print CI "\t</Traits>\n";
 	print CI "\t<FreeUnitClasses>\n";
-	print CI "\t\t<FreeUnitClass>\n";
-	print CI "\t\t\t<UnitClassType>UNITCLASS_COLONIST</UnitClassType>\n";
-	print CI "\t\t\t<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>\n";
-	print CI "\t\t</FreeUnitClass>\n";
-	print CI "\t\t<FreeUnitClass>\n";
-	print CI "\t\t\t<UnitClassType>UNITCLASS_COLONIST</UnitClassType>\n";
-	print CI "\t\t\t<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>\n";
-	print CI "\t\t</FreeUnitClass>\n";
+	for ($i = 1; $i <5; $i++) {
+		print CI "\t\t<FreeUnitClass>\n";
+		print CI "\t\t\t<UnitClassType>UNITCLASS_DREADNOUGHT</UnitClassType>\n";
+		print CI "\t\t\t<FreeUnitProfession>NONE</FreeUnitProfession>\n";
+		print CI "\t\t</FreeUnitClass>\n";
+		}
+	for ($i = 1; $i <5; $i++) {
+		print CI "\t\t<FreeUnitClass>\n";
+		print CI "\t\t\t<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>\n";
+		print CI "\t\t\t<FreeUnitProfession>PROFESSION_INFANTRY</FreeUnitProfession>\n";
+		print CI "\t\t</FreeUnitClass>\n";
+		print CI "\t\t<FreeUnitClass>\n";
+		print CI "\t\t\t<UnitClassType>UNITCLASS_STORMTROOPER</UnitClassType>\n";
+		print CI "\t\t\t<FreeUnitProfession>PROFESSION_HEAVY_MECHA</FreeUnitProfession>\n";
+		print CI "\t\t</FreeUnitClass>\n";
+		}
 	print CI "\t</FreeUnitClasses>\n";
 	print CI "\t<FreeBuildingClasses>\n";
 	print CI "\t\t<FreeBuildingClass>\n";

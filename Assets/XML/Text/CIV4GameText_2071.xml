@@ -7433,6 +7433,30 @@
 	<Spanish>Build a War Droid to bolster our military might.</Spanish>
 </TEXT>
 <TEXT>
+	<Tag>TXT_KEY_UNIT_STORMTROOPER</Tag>
+	<English>Stormtrooper:Stormtroopers</English>
+	<French>Stormtrooper:Stormtroopers</French>
+	<German>Stormtrooper:Stormtroopers</German>
+	<Italian>Stormtrooper:Stormtroopers</Italian>
+	<Spanish>Stormtrooper:Stormtroopers</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_UNIT_STORMTROOPER_PEDIA</Tag>
+	<English>Construction of the first [COLOR_HIGHLIGHT_TEXT]Stormtroopers[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</English>
+	<French>Construction of the first [COLOR_HIGHLIGHT_TEXT]Stormtroopers[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</French>
+	<German>Construction of the first [COLOR_HIGHLIGHT_TEXT]Stormtroopers[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</German>
+	<Italian>Construction of the first [COLOR_HIGHLIGHT_TEXT]Stormtroopers[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</Italian>
+	<Spanish>Construction of the first [COLOR_HIGHLIGHT_TEXT]Stormtroopers[COLOR_REVERT] was a vital step in allowing Aliens and Human colonists to progress toward independence from their distant overlords.</Spanish>
+</TEXT>
+<TEXT>
+	<Tag>TXT_KEY_UNIT_STORMTROOPER_STRATEGY</Tag>
+	<English>Build a Stormtrooper to bolster our military might.</English>
+	<French>Build a Stormtrooper to bolster our military might.</French>
+	<German>Build a Stormtrooper to bolster our military might.</German>
+	<Italian>Build a Stormtrooper to bolster our military might.</Italian>
+	<Spanish>Build a Stormtrooper to bolster our military might.</Spanish>
+</TEXT>
+<TEXT>
 	<Tag>TXT_KEY_UNIT_KILLBOTS</Tag>
 	<English>Killbots:Killbotses</English>
 	<French>Killbots:Killbotses</French>

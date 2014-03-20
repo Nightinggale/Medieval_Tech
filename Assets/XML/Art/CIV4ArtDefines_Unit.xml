@@ -2557,6 +2557,31 @@
 	</AudioRunSounds>
 </UnitArtInfo>
 <UnitArtInfo>
+	<Type>ART_DEF_UNIT_STORMTROOPER</Type>
+	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
+	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
+	<fScale>0.24</fScale>
+	<fInterfaceScale>0.7</fInterfaceScale>
+	<NIF>Art/Units/Caravel/Caravel_FX.nif</NIF>
+	<KFM>Art/Units/Caravel/Caravel.kfm</KFM>
+	<TrailDefinition>
+		<Texture>Art/Shared/wheeltread.dds</Texture>
+		<fWidth>1.2</fWidth>
+		<fLength>180.0</fLength>
+		<fTaper>0.0</fTaper>
+		<fFadeStartTime>0.2</fFadeStartTime>
+		<fFadeFalloff>0.35</fFadeFalloff>
+	</TrailDefinition>
+	<fBattleDistance>0</fBattleDistance>
+	<fRangedDeathTime>0</fRangedDeathTime>
+	<bActAsRanged>0</bActAsRanged>
+	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+	<AudioRunSounds>
+		<AudioRunTypeLoop></AudioRunTypeLoop>
+		<AudioRunTypeEnd></AudioRunTypeEnd>
+	</AudioRunSounds>
+</UnitArtInfo>
+<UnitArtInfo>
 	<Type>ART_DEF_UNIT_KILLBOTS</Type>
 	<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
 	<FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>

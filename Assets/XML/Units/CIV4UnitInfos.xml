@@ -216,7 +216,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -418,7 +423,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -640,7 +645,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -842,7 +852,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -1072,7 +1082,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -1274,7 +1289,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -1508,7 +1523,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -1710,7 +1730,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -1944,7 +1964,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -2146,7 +2171,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -2380,7 +2405,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -2582,7 +2612,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -2816,7 +2846,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -3018,7 +3053,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -3248,7 +3283,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -3450,7 +3490,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -3672,7 +3712,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -3874,7 +3919,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -4096,7 +4141,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -4298,7 +4348,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -4524,7 +4574,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -4726,7 +4781,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -4956,7 +5011,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -5158,7 +5218,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -5388,7 +5448,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -5590,7 +5655,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -5820,7 +5885,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -6022,7 +6092,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -6252,7 +6322,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -6454,7 +6529,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -6684,7 +6759,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -6886,7 +6966,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -7116,7 +7196,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -7318,7 +7403,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -7548,7 +7633,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -7750,7 +7840,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -7980,7 +8070,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -8182,7 +8277,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -8412,7 +8507,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -8614,7 +8714,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -8836,7 +8936,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -9038,7 +9143,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -9260,7 +9365,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -9462,7 +9572,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -9684,7 +9794,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -9886,7 +10001,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -10108,7 +10223,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -10310,7 +10430,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -10532,7 +10652,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -10734,7 +10859,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -10956,7 +11081,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -11158,7 +11288,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -11380,7 +11510,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -11582,7 +11717,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -11804,7 +11939,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -12006,7 +12146,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -12228,7 +12368,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -12430,7 +12575,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -12647,7 +12792,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -12849,7 +12999,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -13066,7 +13216,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -13268,7 +13423,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -13490,7 +13645,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -13692,7 +13852,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -13909,7 +14069,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -14111,7 +14276,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -14328,7 +14493,12 @@
 	<BonusYieldChanges/>
 	<bLandYieldChanges>1</bLandYieldChanges>
 	<bWaterYieldChanges>1</bWaterYieldChanges>
-	<YieldDemands/>
+	<YieldDemands>
+		<YieldDemand>
+			<YieldType>YIELD_EARTH_GOODS</YieldType>
+			<iYieldDemand>5</iYieldDemand>
+		</YieldDemand>
+	</YieldDemands>
 	<iBombardRate>0</iBombardRate>
 	<SpecialCargo>NONE</SpecialCargo>
 	<DomainCargo>NONE</DomainCargo>
@@ -14530,7 +14700,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -14671,7 +14841,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -14812,7 +14982,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -14953,7 +15123,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -15094,7 +15264,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -15235,7 +15405,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -15376,7 +15546,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -15517,7 +15687,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -15658,7 +15828,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -15799,7 +15969,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -15940,7 +16110,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -16081,7 +16251,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -16222,7 +16392,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -16363,7 +16533,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -16504,7 +16674,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -16645,7 +16815,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -16786,7 +16956,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -16927,7 +17097,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -17068,7 +17238,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -17209,7 +17379,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -17350,7 +17520,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -17491,7 +17661,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -17632,7 +17802,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -17773,7 +17943,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -17914,7 +18084,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -18055,7 +18225,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -18196,7 +18366,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -18337,7 +18507,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -18478,7 +18648,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -18619,7 +18789,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -18760,7 +18930,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -18901,7 +19071,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -19042,7 +19212,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -19183,7 +19353,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -19324,7 +19494,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -19465,7 +19635,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -19606,7 +19776,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -19747,7 +19917,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -19888,7 +20058,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -20029,7 +20199,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -20170,7 +20340,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -20311,7 +20481,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -20452,7 +20622,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -20593,7 +20763,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -20734,7 +20904,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -20875,7 +21045,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -21016,7 +21186,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -21157,7 +21327,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -21298,7 +21468,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -21458,7 +21628,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -21618,7 +21788,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -21778,7 +21948,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -21938,7 +22108,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -22098,7 +22268,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -22258,7 +22428,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -22418,7 +22588,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -22578,7 +22748,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -22738,7 +22908,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -22898,7 +23068,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -23058,7 +23228,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -23218,7 +23388,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -23378,7 +23548,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -23538,7 +23708,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -23698,7 +23868,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -23858,7 +24028,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -24018,7 +24188,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -24178,7 +24348,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -24338,7 +24508,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -24498,7 +24668,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -24658,7 +24828,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -24680,9 +24850,9 @@
 	<Domain>DOMAIN_LAND</Domain>
 	<DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
 	<DefaultProfession>NONE</DefaultProfession>
-	<bNativesInvalid>0</bNativesInvalid>
-	<bEuropeInvalid>0</bEuropeInvalid>
-	<bColonialInvalid>0</bColonialInvalid>
+	<bNativesInvalid>1</bNativesInvalid>
+	<bEuropeInvalid>1</bEuropeInvalid>
+	<bColonialInvalid>1</bColonialInvalid>
 	<Invisible>NONE</Invisible>
 	<SeeInvisible>NONE</SeeInvisible>
 	<Description>TXT_KEY_UNIT_KILLBOTS</Description>
@@ -24707,7 +24877,7 @@
 	<bHiddenNationality>0</bHiddenNationality>
 	<bAlwaysHostile>1</bAlwaysHostile>
 	<bTreasure>0</bTreasure>
-	<bAnimal>0</bAnimal>
+	<bAnimal>1</bAnimal>
 	<UnitClassUpgrades/>
 	<UnitAIs>
 		<UnitAI>
@@ -24799,7 +24969,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -24821,9 +24991,9 @@
 	<Domain>DOMAIN_LAND</Domain>
 	<DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
 	<DefaultProfession>NONE</DefaultProfession>
-	<bNativesInvalid>0</bNativesInvalid>
-	<bEuropeInvalid>0</bEuropeInvalid>
-	<bColonialInvalid>0</bColonialInvalid>
+	<bNativesInvalid>1</bNativesInvalid>
+	<bEuropeInvalid>1</bEuropeInvalid>
+	<bColonialInvalid>1</bColonialInvalid>
 	<Invisible>NONE</Invisible>
 	<SeeInvisible>NONE</SeeInvisible>
 	<Description>TXT_KEY_UNIT_PROGENITOR_AI</Description>
@@ -24848,7 +25018,7 @@
 	<bHiddenNationality>0</bHiddenNationality>
 	<bAlwaysHostile>1</bAlwaysHostile>
 	<bTreasure>0</bTreasure>
-	<bAnimal>0</bAnimal>
+	<bAnimal>1</bAnimal>
 	<UnitClassUpgrades/>
 	<UnitAIs>
 		<UnitAI>
@@ -24940,7 +25110,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -24962,9 +25132,9 @@
 	<Domain>DOMAIN_LAND</Domain>
 	<DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
 	<DefaultProfession>NONE</DefaultProfession>
-	<bNativesInvalid>0</bNativesInvalid>
-	<bEuropeInvalid>0</bEuropeInvalid>
-	<bColonialInvalid>0</bColonialInvalid>
+	<bNativesInvalid>1</bNativesInvalid>
+	<bEuropeInvalid>1</bEuropeInvalid>
+	<bColonialInvalid>1</bColonialInvalid>
 	<Invisible>NONE</Invisible>
 	<SeeInvisible>NONE</SeeInvisible>
 	<Description>TXT_KEY_UNIT_ARACHNID</Description>
@@ -24989,7 +25159,7 @@
 	<bHiddenNationality>0</bHiddenNationality>
 	<bAlwaysHostile>1</bAlwaysHostile>
 	<bTreasure>0</bTreasure>
-	<bAnimal>0</bAnimal>
+	<bAnimal>1</bAnimal>
 	<UnitClassUpgrades/>
 	<UnitAIs>
 		<UnitAI>
@@ -25081,7 +25251,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -25103,9 +25273,9 @@
 	<Domain>DOMAIN_LAND</Domain>
 	<DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
 	<DefaultProfession>NONE</DefaultProfession>
-	<bNativesInvalid>0</bNativesInvalid>
-	<bEuropeInvalid>0</bEuropeInvalid>
-	<bColonialInvalid>0</bColonialInvalid>
+	<bNativesInvalid>1</bNativesInvalid>
+	<bEuropeInvalid>1</bEuropeInvalid>
+	<bColonialInvalid>1</bColonialInvalid>
 	<Invisible>NONE</Invisible>
 	<SeeInvisible>NONE</SeeInvisible>
 	<Description>TXT_KEY_UNIT_SCORPION</Description>
@@ -25130,7 +25300,7 @@
 	<bHiddenNationality>0</bHiddenNationality>
 	<bAlwaysHostile>1</bAlwaysHostile>
 	<bTreasure>0</bTreasure>
-	<bAnimal>0</bAnimal>
+	<bAnimal>1</bAnimal>
 	<UnitClassUpgrades/>
 	<UnitAIs>
 		<UnitAI>
@@ -25222,7 +25392,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -25244,9 +25414,9 @@
 	<Domain>DOMAIN_LAND</Domain>
 	<DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
 	<DefaultProfession>NONE</DefaultProfession>
-	<bNativesInvalid>0</bNativesInvalid>
-	<bEuropeInvalid>0</bEuropeInvalid>
-	<bColonialInvalid>0</bColonialInvalid>
+	<bNativesInvalid>1</bNativesInvalid>
+	<bEuropeInvalid>1</bEuropeInvalid>
+	<bColonialInvalid>1</bColonialInvalid>
 	<Invisible>NONE</Invisible>
 	<SeeInvisible>NONE</SeeInvisible>
 	<Description>TXT_KEY_UNIT_AMOEBA</Description>
@@ -25271,7 +25441,7 @@
 	<bHiddenNationality>0</bHiddenNationality>
 	<bAlwaysHostile>1</bAlwaysHostile>
 	<bTreasure>0</bTreasure>
-	<bAnimal>0</bAnimal>
+	<bAnimal>1</bAnimal>
 	<UnitClassUpgrades/>
 	<UnitAIs>
 		<UnitAI>
@@ -25363,7 +25533,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>
@@ -25385,9 +25555,9 @@
 	<Domain>DOMAIN_LAND</Domain>
 	<DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
 	<DefaultProfession>NONE</DefaultProfession>
-	<bNativesInvalid>0</bNativesInvalid>
-	<bEuropeInvalid>0</bEuropeInvalid>
-	<bColonialInvalid>0</bColonialInvalid>
+	<bNativesInvalid>1</bNativesInvalid>
+	<bEuropeInvalid>1</bEuropeInvalid>
+	<bColonialInvalid>1</bColonialInvalid>
 	<Invisible>NONE</Invisible>
 	<SeeInvisible>NONE</SeeInvisible>
 	<Description>TXT_KEY_UNIT_ENIGMA_VIRION</Description>
@@ -25412,7 +25582,7 @@
 	<bHiddenNationality>0</bHiddenNationality>
 	<bAlwaysHostile>1</bAlwaysHostile>
 	<bTreasure>0</bTreasure>
-	<bAnimal>0</bAnimal>
+	<bAnimal>1</bAnimal>
 	<UnitClassUpgrades/>
 	<UnitAIs>
 		<UnitAI>
@@ -25504,7 +25674,7 @@
 	<LeaderPromotion>NONE</LeaderPromotion>
 	<iLeaderExperience>0</iLeaderExperience>
 	<ProfessionsNotAllowed/>
-	<KnightDubbingWeight>-1</KnightDubbingWeight>
+	<KnightDubbingWeight>0</KnightDubbingWeight>
 	<iCasteAttribute>0</iCasteAttribute>
 	<bPreventFounding>0</bPreventFounding>
 	<bPreventTraveling>0</bPreventTraveling>

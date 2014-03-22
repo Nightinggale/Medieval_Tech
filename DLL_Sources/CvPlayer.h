@@ -159,7 +159,7 @@ public:
 	int calculateTotalYield(YieldTypes eYield) const;
 	void calculateTotalYields(int aiYields[]) const;
 	bool isCivic(CivicTypes eCivic) const;
-	bool canDoCivics(CivicTypes eCivic) const;
+	bool canDoCivics(CivicTypes eCivic, bool bProhitbitCheck = false) const;
 	DllExport int greatGeneralThreshold() const;
 	int immigrationThreshold() const;
 	int revolutionEuropeUnitThreshold() const;

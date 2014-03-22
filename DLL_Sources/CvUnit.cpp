@@ -5198,7 +5198,7 @@ void CvUnit::doLearn()
                     if (GET_PLAYER(getOwner()).getIdeasResearched((CivicTypes) iCivic) <= 0)
                     {
                         GET_PLAYER(getOwner()).processCivics((CivicTypes) iCivic, 1);
-                        GET_PLAYER(getOwner()).changeIdeasResearched((CivicTypes) iCivic, 1);
+                        //GET_PLAYER(getOwner()).changeIdeasResearched((CivicTypes) iCivic, 1);
                         if (GET_PLAYER(getOwner()).getCurrentResearch() == (CivicTypes) iCivic)
                         {
                             if (isHuman())

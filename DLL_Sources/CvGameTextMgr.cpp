@@ -4448,6 +4448,12 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
         szHelpText.append(NEWLINE);
 		szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_TREASURY_BUILDING", GC.getCivicInfo((BuildingClassTypes)kCivicInfo.getCivicTreasury(iI)).getDescription(), kCivicInfo.getCivicTreasuryBonus(iI)));
     }*/
+	for (iI = 0; iI < kCivicInfo.getProhibitsCivicsSize(); iI++)
+	{
+		szHelpText.append(NEWLINE);
+		szHelpText.append(gDLL->getText("TXT_KEY_PROHIBITED_CIVIC_EFFECT", GC.getCivicInfo(kCivicInfo.getProhibitsCivics(iI)).getDescription()));
+	}
+
 	for (iI = 0; iI < kCivicInfo.getNumCivicCombatBonus(); iI++)
 	{
 		if ((CivicTypes)kCivicInfo.getCivicCombat(iI) == eCivic)

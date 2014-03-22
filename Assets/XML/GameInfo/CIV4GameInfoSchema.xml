@@ -590,6 +590,12 @@
 		<element type="YieldType"/>
 		<element type="iChange"/>
 	</ElementType>
+  <ElementType name="ProhibitedCivic" content="eltOnly">
+		<element type="Civic" minOccurs="0"/>
+	</ElementType>
+  <ElementType name="ProhibitsCivics" content="eltOnly">
+		<element type="ProhibitedCivic" minOccurs="0"/>
+	</ElementType>
 	<ElementType name="MaxYieldModifiers" content="eltOnly">
 		<element type="MaxYieldModifier" minOccurs="0"/>
 	</ElementType>
@@ -671,6 +677,7 @@
 		<element type="iFatherPointModifier"/>
 		<element type="bDominateNativeBorders"/>
 		<element type="bRevolutionEuropeTrade"/>
+    <element type="ProhibitsCivics" minOccurs="0"/>
 		<element type="YieldModifiers"/>
 		<element type="CapitalYieldModifiers"/>
 		<element type="Hurrys"/>

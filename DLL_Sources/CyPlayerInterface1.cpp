@@ -114,7 +114,7 @@ void CyPlayerPythonInterface1(python::class_<CyPlayer>& x)
 		///TKe
 		//.def("getTradeDenial", &CyPlayer::getTradeDenial, "DenialTypes (int eWhoTo, TradeData item)")
         ///TKe
-		.def("canDoCivics", &CyPlayer::canDoCivics, "bool (int (CivicTypes) eCivic)")
+		.def("canDoCivics", &CyPlayer::canDoCivics, "bool (int (CivicTypes) eCivic, bool bProhitbitCheck)")
 		.def("greatGeneralThreshold", &CyPlayer::greatGeneralThreshold, "int ()")
 		.def("immigrationThreshold", &CyPlayer::immigrationThreshold, "int ()")
 		.def("revolutionEuropeUnitThreshold", &CyPlayer::revolutionEuropeUnitThreshold, "int ()")

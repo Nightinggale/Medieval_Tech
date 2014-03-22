@@ -1049,6 +1049,8 @@ public:
     DllExport int getAllowsPromotions(int i) const;
     DllExport int getAllowsBonuses(int i) const;
 	//Tks Civics
+	int getProhibitsCivicsSize() const;
+	CivicTypes getProhibitsCivics(int index) const;
 	int getNumCivicCombatBonus() const;
 	int getCivicCombat(int index) const;
 	int getCivicCombatBonus(int index) const;
@@ -1229,6 +1231,7 @@ protected:
 	std::vector< std::pair<YieldTypes, int> > m_aConnectedMissonYields;
 	UnitClassArray<int> m_jaAllowedUnitClassImmigration;
 	///Tke
+	std::vector<CivicTypes> m_aProhibitsCivics;
 	std::vector<int> m_aFreeUnitClasses;
 };
 

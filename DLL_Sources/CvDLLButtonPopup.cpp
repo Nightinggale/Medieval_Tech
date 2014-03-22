@@ -812,7 +812,7 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
                             }
                             else
                             {
-                                GET_PLAYER(GC.getGameINLINE().getActivePlayer()).changeIdeasResearched((CivicTypes)iCivic, 1);
+                               // GET_PLAYER(GC.getGameINLINE().getActivePlayer()).changeIdeasResearched((CivicTypes)iCivic, 1);
 
                                     CvWString szBuffer = gDLL->getText("TXT_KEY_MISC_PLAYER_COMPLETED_RESEARCH", GC.getCivicInfo((CivicTypes)iCivic).getTextKeyWide());
                                     gDLL->getInterfaceIFace()->addMessage(GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getID(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_UNIT_GREATPEOPLE", MESSAGE_TYPE_MAJOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"));

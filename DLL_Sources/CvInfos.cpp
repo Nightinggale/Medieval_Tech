@@ -4040,8 +4040,6 @@ int CvCivicInfo::getY_Location() const
 {
 	return m_iY_Location;
 }
-
- ///tke
 int CvCivicInfo::getAllowsYields(int i) const
 {
 	return m_aiAllowsYields ? m_aiAllowsYields[i] : 0;
@@ -4052,12 +4050,20 @@ int CvCivicInfo::getAllowsBuildingTypes(int i) const
 	return m_aiAllowsBuildingTypes ? m_aiAllowsBuildingTypes[i] : 0;
 }
 
-
 int CvCivicInfo::getAllowsUnitClasses(int i) const
 {
 	return m_aiAllowsUnitClasses ? m_aiAllowsUnitClasses[i] : 0;
 }
+///tke
 //Tks Civics
+int CvCivicInfo::getProhibitsCivicsSize() const
+{
+	return m_aProhibitsCivics.size();
+}
+CivicTypes CvCivicInfo::getProhibitsCivics(int index) const
+{
+	return m_aProhibitsCivics[index];
+}
 int CvCivicInfo::getNumConnectedMissonYields() const
 {
 	return m_aConnectedMissonYields.size();
@@ -4874,7 +4880,25 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
     pXML->SetVariableListTagPair(&m_aiRequiredYields, "RequiredYields", NUM_YIELD_TYPES, 0);
 	//Civic Arrays Start
 	m_jaAllowedUnitClassImmigration.read(pXML, "AllowsUnitClassImmigration");
+	//Prohibited Civics
+	//CivicTypes iVal;
+	if(gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "ProhibitsCivics"))
+	{
+		if(gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "ProhibitedCivic"))
+		{
+			do
+			{
+				pXML->GetChildXmlValByName(szTextVal, "Civic");
+				int iCivic = pXML->FindInInfoClass(szTextVal);
+				m_aProhibitsCivics.push_back((CivicTypes)iCivic);
+			} while(gDLL->getXMLIFace()->LocateNextSiblingNodeByTagName(pXML->GetXML(), "ProhibitedCivic"));
+			gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+		}
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
 
+
+	//CivicTreasuryBonuses
 	m_aiCivicTreasuryBonuses.clear();
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"CivicTreasuryBonuses"))
 	{

@@ -116,7 +116,7 @@ public:
 	std::wstring getDeclareKey();
 	bool getHasTradeRouteType(int /*EuropeTypes*/ eTradeRoute);
 	///TKe
-	bool canDoCivics(int /*CivicTypes*/ eCivic);
+	bool canDoCivics(int /*CivicTypes*/ eCivic, bool bProhitbitCheck);
 	int greatGeneralThreshold();
 	int immigrationThreshold();
 	int revolutionEuropeUnitThreshold();

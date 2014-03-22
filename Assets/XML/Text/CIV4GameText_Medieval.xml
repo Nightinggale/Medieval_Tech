@@ -22,6 +22,14 @@
     <Spanish>[ICON_BULLET]Missionary Converts are [COLOR_HIGHLIGHT_TEXT]%s1_unitclass[COLOR_REVERT]</Spanish>
   </TEXT>
   <TEXT>
+    <Tag>TXT_KEY_PROHIBITED_CIVIC_EFFECT</Tag>
+    <English>[ICON_BULLET]Prohibits: [COLOR_HIGHLIGHT_TEXT]%s1_civic[COLOR_REVERT]</English>
+    <French>[ICON_BULLET]Prohibits: [COLOR_HIGHLIGHT_TEXT]%s1_civic[COLOR_REVERT]</French>
+    <German>[ICON_BULLET]Prohibits: [COLOR_HIGHLIGHT_TEXT]%s1_civic[COLOR_REVERT]</German>
+    <Italian>[ICON_BULLET]Prohibits: [COLOR_HIGHLIGHT_TEXT]%s1_civic[COLOR_REVERT]</Italian>
+    <Spanish>[ICON_BULLET]Prohibits: [COLOR_HIGHLIGHT_TEXT]%s1_civic[COLOR_REVERT]</Spanish>
+  </TEXT>
+  <TEXT>
     <Tag>TXT_KEY_COMBAT_PLOT_MOD_VS_CIVIC</Tag>
     <English>[ICON_BULLET]%D1_Bonus%% from Decrees</English>
     <French>[ICON_BULLET]%D1_Bonus%% from Decrees</French>

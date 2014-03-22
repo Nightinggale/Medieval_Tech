@@ -589,7 +589,7 @@ bool CvDeal::startTrade(TradeData trade, PlayerTypes eFromPlayer, PlayerTypes eT
         if (eCivic != NO_CIVIC && GET_PLAYER(eToPlayer).getCurrentResearch() == eCivic)
         {
             CvCivicInfo& kCivicInfo = GC.getCivicInfo(eCivic);
-            GET_PLAYER(eToPlayer).changeIdeasResearched(eCivic, 1);
+            //GET_PLAYER(eToPlayer).changeIdeasResearched(eCivic, 1);
             GET_PLAYER(eToPlayer).processCivics(eCivic, 1);
             CvWString szBuffer = gDLL->getText("TXT_KEY_MISC_PLAYER_TRADE_RESEARCH", GC.getCivicInfo(eCivic).getTextKeyWide(), GET_PLAYER(eFromPlayer).getCivilizationAdjectiveKey());
             gDLL->getInterfaceIFace()->addMessage(GET_PLAYER(eToPlayer).getID(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_UNIT_GREATPEOPLE", MESSAGE_TYPE_MAJOR_EVENT, GC.getLeaderHeadInfo(GET_PLAYER(eToPlayer).getLeaderType()).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"));
@@ -604,7 +604,7 @@ bool CvDeal::startTrade(TradeData trade, PlayerTypes eFromPlayer, PlayerTypes eT
         else if (eCivic != NO_CIVIC)
         {
             CvCivicInfo& kCivicInfo = GC.getCivicInfo(eCivic);
-             GET_PLAYER(eToPlayer).changeIdeasResearched(eCivic, 1);
+            // GET_PLAYER(eToPlayer).changeIdeasResearched(eCivic, 1);
             GET_PLAYER(eToPlayer).processCivics(eCivic, 1);
            CvWString szBuffer = gDLL->getText("TXT_KEY_MISC_PLAYER_TRADE_RESEARCH", GC.getCivicInfo(eCivic).getTextKeyWide(), GET_PLAYER(eFromPlayer).getCivilizationAdjectiveKey());
             gDLL->getInterfaceIFace()->addMessage(GET_PLAYER(eToPlayer).getID(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_UNIT_GREATPEOPLE", MESSAGE_TYPE_MAJOR_EVENT, GC.getLeaderHeadInfo(GET_PLAYER(eToPlayer).getLeaderType()).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"));

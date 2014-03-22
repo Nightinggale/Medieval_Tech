@@ -4618,7 +4618,7 @@
     </CivicInfo>
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
-      <Type>CIVIC_PARLAMENT</Type>
+      <Type>CIVIC_PARLIAMENT</Type>
       <Description>Parliament</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
@@ -4636,6 +4636,11 @@
       <iFatherPointModifier>0</iFatherPointModifier>
       <bDominateNativeBorders>0</bDominateNativeBorders>
       <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <ProhibitsCivics>
+        <ProhibitedCivic>
+          <Civic>CIVIC_STATE_CONTROL</Civic>
+        </ProhibitedCivic>
+      </ProhibitsCivics>
       <YieldModifiers/>
       <CapitalYieldModifiers/>
       <Hurrys/>
@@ -4969,6 +4974,11 @@
       <iFatherPointModifier>0</iFatherPointModifier>
       <bDominateNativeBorders>0</bDominateNativeBorders>
       <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <ProhibitsCivics>
+        <ProhibitedCivic>
+          <Civic>CIVIC_PARLIAMENT</Civic>
+        </ProhibitedCivic>
+      </ProhibitsCivics>
       <YieldModifiers/>
       <CapitalYieldModifiers/>
       <Hurrys/>

@@ -145,18 +145,27 @@ class CvCivicsScreen:
 
 			if (gc.getCivicInfo(j).getCivicOptionType() == iCivicOption):										
 				screen.setState(self.getCivicsButtonName(j), self.m_paeCurrentCivics[iCivicOption] == j)
-				
+				prohitbitcheck = True
 				if (self.m_paeDisplayCivics[iCivicOption] == j):
-					#screen.setState(self.getCivicsButtonName(j), True)
 					screen.show(self.getCivicsButtonName(j))
-					#screen.setText("testing", "Background", u"<font=4>" + localText.getText("Testing", ()).upper() + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, 800, 500, self.Z_TEXT, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, 1, 0)			
-				elif (activePlayer.canDoCivics(j)):
-				#elif (show):
-					#screen.setState(self.getCivicsButtonName(j), False)
-						
-					screen.show(self.getCivicsButtonName(j))
-				else:
+					prohitbitcheck = False
+				elif (not activePlayer.canDoCivics(j, True)):
 					screen.hide(self.getCivicsButtonName(j))
+					prohitbitcheck = False
+				if (prohitbitcheck):
+					cando = True
+					for i in range(gc.getCivicInfo(j).getProhibitsCivicsSize()):
+						prohitbit = gc.getCivicInfo(j).getProhibitsCivics(i) 
+						for k in range (gc.getNumCivicOptionInfos()):
+							if (self.m_paeCurrentCivics[k] == prohitbit):
+								cando = False
+							if (self.m_paeOriginalCivics[k] == prohitbit):
+								if (self.m_paeCurrentCivics[k] == prohitbit):
+									cando = False
+					if (cando):
+						screen.show(self.getCivicsButtonName(j))
+					else:
+						screen.hide(self.getCivicsButtonName(j))
 								
 	# Will draw the radio buttons (and revolution)
 	def drawAllButtons(self):				
@@ -197,13 +206,29 @@ class CvCivicsScreen:
 			self.drawCivicOptionButtons(iCivicOption)
 			return True
 		return False
-		
+	def canDoProhibitedCivic(self, iCivic):
+		#cando = True
+		screen = self.getScreen()
+		screen.setText("testing", "Background", u"<font=4>" + localText.getText("canDoProh", ()).upper() + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, 800, 500, self.Z_TEXT, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, 1, 0)			
+		for i in range(gc.getCivicInfo(iCivic).getProhibitsCivicsSize()):
+			prohitbit = gc.getCivicInfo(iCivic).getProhibitsCivics(i) 
+			for k in range (gc.getNumCivicOptionInfos()):
+				if (self.m_paeCurrentCivics[k] == prohitbit):
+					return 0
+		return 1
 	def select(self, iCivic):
+		screen = self.getScreen()
 		activePlayer = gc.getPlayer(self.iActivePlayer)
-		if (not activePlayer.canDoCivics(iCivic)):
-			# If you can't even do this, get out....
+		if (not activePlayer.canDoCivics(iCivic, True )):
 			return 0
-			
+		for i in range(gc.getCivicInfo(iCivic).getProhibitsCivicsSize()):
+			prohitbit = gc.getCivicInfo(iCivic).getProhibitsCivics(i) 
+			for k in range (gc.getNumCivicOptionInfos()):
+				if (self.m_paeCurrentCivics[k] == prohitbit):
+					return 0
+				if (self.m_paeOriginalCivics[k] == prohitbit):
+					if (self.m_paeCurrentCivics[k] == prohitbit):
+						return 0
 		iCivicOption = gc.getCivicInfo(iCivic).getCivicOptionType()
 		
 		# Set the previous widget
@@ -219,6 +244,9 @@ class CvCivicsScreen:
 		# highlight the new widget
 		self.highlight(iCivic)		
 		self.getScreen().setState(self.getCivicsButtonName(iCivic), True)
+		
+		for i in range(gc.getNumCivicOptionInfos()):
+			self.drawCivicOptionButtons(i)
 		
 		return 0
 

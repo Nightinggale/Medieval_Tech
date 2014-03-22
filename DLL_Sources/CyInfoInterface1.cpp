@@ -246,7 +246,8 @@ void CyInfoPythonInterface1()
 		.def("isNoArrowinTechScreen", &CvCivicInfo::isNoArrowinTechScreen, "bool ()")
 		.def("getDisallowsTech", &CvCivicInfo::getDisallowsTech, "int ()")
 		.def("getAllowsYields", &CvCivicInfo::getAllowsYields, "int ()")
-
+		.def("getProhibitsCivicsSize", &CvCivicInfo::getProhibitsCivicsSize, "int ()")
+		.def("getProhibitsCivics", &CvCivicInfo::getProhibitsCivics, "CivicTypes (int i)")
 		///TKe
 		.def("getNativeAttitudeChange", &CvCivicInfo::getNativeAttitudeChange, "int ()")
 		.def("getNativeCombatModifier", &CvCivicInfo::getNativeCombatModifier, "int ()")

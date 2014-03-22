@@ -276,7 +276,7 @@ void CvPlayer::init(PlayerTypes eID)
 
                         if ((CivicTypes)iLoopCivic != NO_CIVIC)
                         {
-                            changeIdeasResearched((CivicTypes)iLoopCivic, 1);
+                            //changeIdeasResearched((CivicTypes)iLoopCivic, 1);
                             processCivics((CivicTypes)iLoopCivic, 1);
 
                         }
@@ -3317,7 +3317,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
                         int iTurns = GC.getXMLval(XML_DEFAULT_CENSURETYPE_EXCOMMUNICATION_COUNT);
                         kPlayer.changeCensureType(CENSURE_EXCOMMUNICATION, iTurns);
                         CivicTypes eCivic = (CivicTypes)GC.getXMLval(XML_DEFAULT_CENSURETYPE_EXCOMMUNICATION);
-                        kPlayer.changeIdeasResearched(eCivic, 1);
+                        //kPlayer.changeIdeasResearched(eCivic, 1);
                         kPlayer.processCivics(eCivic, 1);
                         CvWString szMessage = gDLL->getText("TXT_KEY_CENSURE_EXCOMMUNICATION", getCivilizationAdjectiveKey(), GC.getCivicInfo(eCivic).getDescription(), iTurns, GC.getCivicInfo(eCivic).getStrategy());
                         gDLL->getInterfaceIFace()->addMessage(ePlayer, true, GC.getEVENT_MESSAGE_TIME(), szMessage, "AS2D_CITY_REVOLT", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"));
@@ -3329,7 +3329,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
                         int iTurns = GC.getXMLval(XML_DEFAULT_CENSURETYPE_ANATHEMA_COUNT);
                         kPlayer.changeCensureType(CENSURE_ANATHEMA, iTurns);
                         CivicTypes eCivic = (CivicTypes)GC.getXMLval(XML_DEFAULT_CENSURETYPE_ANATHEMA);
-                        kPlayer.changeIdeasResearched(eCivic, 1);
+                        //kPlayer.changeIdeasResearched(eCivic, 1);
                         kPlayer.processCivics(eCivic, 1);
                         CvWString szMessage = gDLL->getText("TXT_KEY_CENSURE_EXCOMMUNICATION", getCivilizationAdjectiveKey(), GC.getCivicInfo(eCivic).getDescription(), iTurns, GC.getCivicInfo(eCivic).getStrategy());
                         int iLoop;
@@ -3359,7 +3359,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
                         int iTurns = GC.getXMLval(XML_DEFAULT_CENSURETYPE_INTERDICT_COUNT);
                         kPlayer.changeCensureType(CENSURE_INTERDICT, iTurns);
                         CivicTypes eCivic = (CivicTypes)GC.getXMLval(XML_DEFAULT_CENSURETYPE_INTERDICT);
-                        kPlayer.changeIdeasResearched(eCivic, 1);
+                        //kPlayer.changeIdeasResearched(eCivic, 1);
                         kPlayer.processCivics(eCivic, 1);
                         int iLoop;
                         for (CvCity* pLoopCity = kPlayer.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kPlayer.nextCity(&iLoop))
@@ -4726,7 +4726,7 @@ int CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
                     CvWString szBuffer = gDLL->getText("TXT_KEY_MISC_PLAYER_COMPLETED_RESEARCH", GC.getCivicInfo(eFreeTech).getTextKeyWide());
                     gDLL->getInterfaceIFace()->addMessage(getID(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_UNIT_GREATPEOPLE", MESSAGE_TYPE_MAJOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"));
                 }
-                changeIdeasResearched(eFreeTech, 1);
+                //changeIdeasResearched(eFreeTech, 1);
                 processCivics(eFreeTech, 1);
                 if (getCurrentResearch() == eFreeTech)
                 {
@@ -6019,7 +6019,7 @@ bool CvPlayer::isCivic(CivicTypes eCivic) const
 	return false;
 }
 
-bool CvPlayer::canDoCivics(CivicTypes eCivic) const
+bool CvPlayer::canDoCivics(CivicTypes eCivic, bool bProhitbitCheck) const
 {
 	PROFILE_FUNC();
 
@@ -6131,7 +6131,27 @@ bool CvPlayer::canDoCivics(CivicTypes eCivic) const
 				return false;
 			}
 		}
+
+		if (!bProhitbitCheck)
+		{
+			for (int iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
+			{
+				if (getCivic((CivicOptionTypes)iI) != NO_CIVIC)
+				{
+					for (int iJ = 0; iJ < GC.getCivicInfo(getCivic((CivicOptionTypes)iI)).getProhibitsCivicsSize(); iJ++)
+					{
+						if (GC.getCivicInfo(getCivic((CivicOptionTypes)iI)).getProhibitsCivics(iJ) == eCivic)
+						{
+							return false;
+						}
+					}
+				}
+			}
+		}
 	}
+
+	
+
 	///TKe
 	if (eCivic == NO_CIVIC)
 	{
@@ -11121,6 +11141,7 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
     gDLL->messageControlLog(szOut);
 
 	//Tks Civics Screen //Civic Reset
+	changeIdeasResearched(eCivic, iChange);
 	if (kCivicInfo.getNumConnectedMissonYields() > 0 || kCivicInfo.getNumConnectedTradeYields() > 0)
 	{
 		resetConnectedPlayerYieldBonus(eCivic, iChange);
@@ -18550,7 +18571,7 @@ void CvPlayer::doSetupIdeas(bool Cheat)
 
 					if ((CivicTypes)iLoopCivic != NO_CIVIC)
 					{
-						changeIdeasResearched((CivicTypes)iLoopCivic, 1);
+						//changeIdeasResearched((CivicTypes)iLoopCivic, 1);
 						processCivics((CivicTypes)iLoopCivic, 1);
 
 					}
@@ -18575,7 +18596,7 @@ void CvPlayer::doSetupIdeas(bool Cheat)
                         if (iTest > 0 && !getTechsInitialized())
                         {
                             eCivic = (CivicTypes)getIdea(true);
-                            changeIdeasResearched(eCivic, 1);
+                            //changeIdeasResearched(eCivic, 1);
                             processCivics(eCivic, 1);
                          char szOut[1024];
                         sprintf(szOut, "######################## Player %d %S Free Added %d \n", getID(), getNameKey(), iCivic);
@@ -18675,7 +18696,7 @@ void CvPlayer::doSetupIdeas(bool Cheat)
                         char szOut[1024];
                         sprintf(szOut, "######################## Player %d %S Has Learned %S\n", getID(), getNameKey(), GC.getCivicInfo((CivicTypes)iLoopCivic).getTextKeyWide());
                         gDLL->messageControlLog(szOut);
-                        changeIdeasResearched((CivicTypes)iLoopCivic, 1);
+                       // changeIdeasResearched((CivicTypes)iLoopCivic, 1);
                         processCivics((CivicTypes)iLoopCivic, 1);
 
                         sprintf(szOut, "######################## Tech Processed\n");
@@ -18772,7 +18793,7 @@ void CvPlayer::doIdeas(bool Cheat)
                     CvWString szBuffer = gDLL->getText("TXT_KEY_MISC_PLAYER_TRADE_LEAGUE_ESTABLISHED", kTradeCivicInfo.getGoldBonus());
                     gDLL->getInterfaceIFace()->addMessage(getID(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_UNIT_GREATPEOPLE", MESSAGE_TYPE_MAJOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_YELLOW"));
                     processCivics(eTradeCivic, 1);
-                    changeIdeasResearched(eTradeCivic, 1);
+                    //changeIdeasResearched(eTradeCivic, 1);
                     if (GC.getXMLval(XML_DIPLAY_NEW_VIDEOS) > 0)
                     {
                         if (!CvString(CvWString("ART_DEF_MOVIE_TRADE_LEAGUE")).empty())
@@ -18802,7 +18823,7 @@ void CvPlayer::doIdeas(bool Cheat)
                     //char szOut[1024];
                     sprintf(szOut, "######################## Player %d %S has finished Trade research %S\n", getID(), getNameKey(), kTradeCivicInfo.getTextKeyWide());
                     gDLL->messageControlLog(szOut);
-                    changeIdeasResearched(eTradeCivic, 1);
+                    //changeIdeasResearched(eTradeCivic, 1);
                     processCivics(eTradeCivic, 1);
                     setCurrentTradeResearch(NO_CIVIC);
                     GET_TEAM(getTeam()).changeFatherPoints(eFatherPoint, -iRequiredPoints);
@@ -18936,7 +18957,7 @@ void CvPlayer::doIdeas(bool Cheat)
                             }
                             else
                             {
-                                GET_PLAYER(ePartner).changeIdeasResearched(eCivic, 1);
+                               // GET_PLAYER(ePartner).changeIdeasResearched(eCivic, 1);
                                 GET_PLAYER(ePartner).processCivics(eCivic, 1);
                                 GET_PLAYER(ePartner).setCurrentResearch(NO_CIVIC);
                                 GET_PLAYER(ePartner).changeIdeasStored(-1);
@@ -18947,7 +18968,7 @@ void CvPlayer::doIdeas(bool Cheat)
                         setResearchPartner(NO_PLAYER);
                     }
 
-                    changeIdeasResearched(eCivic, 1);
+                    //changeIdeasResearched(eCivic, 1);
 
                     if (ePartner == NO_PLAYER)
                     {
@@ -19732,7 +19753,7 @@ void CvPlayer::changeCensureType(CensureType eCensure, int iValue)
             case CENSURE_EXCOMMUNICATION:
                 {
                     CivicTypes eCivic = (CivicTypes)GC.getXMLval(XML_DEFAULT_CENSURETYPE_EXCOMMUNICATION);
-                    changeIdeasResearched(eCivic, -1);
+                    //changeIdeasResearched(eCivic, -1);
                     processCivics(eCivic, -1);
                     CvWString szMessage = gDLL->getText("TXT_KEY_CENSURE_EXCOMMUNICATION_LIFTED");
                     gDLL->getInterfaceIFace()->addMessage(getID(), false, GC.getEVENT_MESSAGE_TIME(), szMessage, "AS2D_REVOLTEND", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"));
@@ -19741,7 +19762,7 @@ void CvPlayer::changeCensureType(CensureType eCensure, int iValue)
             case CENSURE_INTERDICT:
                 {
                     CivicTypes eCivic = (CivicTypes)GC.getXMLval(XML_DEFAULT_CENSURETYPE_INTERDICT);
-                    changeIdeasResearched(eCivic, -1);
+                    //changeIdeasResearched(eCivic, -1);
                     processCivics(eCivic, -1);
                     CvWString szMessage = gDLL->getText("TXT_KEY_CENSURE_EXCOMMUNICATION_LIFTED");
                     gDLL->getInterfaceIFace()->addMessage(getID(), false, GC.getEVENT_MESSAGE_TIME(), szMessage, "AS2D_REVOLTEND", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"));
@@ -19750,7 +19771,7 @@ void CvPlayer::changeCensureType(CensureType eCensure, int iValue)
             case CENSURE_ANATHEMA:
                 {
                     CivicTypes eCivic = (CivicTypes)GC.getXMLval(XML_DEFAULT_CENSURETYPE_ANATHEMA);
-                    changeIdeasResearched(eCivic, -1);
+                    //changeIdeasResearched(eCivic, -1);
                     processCivics(eCivic, -1);
                     CvWString szMessage = gDLL->getText("TXT_KEY_CENSURE_EXCOMMUNICATION_LIFTED");
                     gDLL->getInterfaceIFace()->addMessage(getID(), false, GC.getEVENT_MESSAGE_TIME(), szMessage, "AS2D_REVOLTEND", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"));

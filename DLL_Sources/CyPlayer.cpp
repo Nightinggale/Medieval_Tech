@@ -432,9 +432,9 @@ bool CyPlayer::getHasTradeRouteType(int /*EuropeTypes*/ eTradeRoute)
 	return m_pPlayer ? m_pPlayer->getHasTradeRouteType((EuropeTypes)eTradeRoute) : false;
 }
 ///TKe
-bool CyPlayer::canDoCivics(int /*CivicTypes*/ eCivic)
+bool CyPlayer::canDoCivics(int /*CivicTypes*/ eCivic, bool bProhitbitCheck)
 {
-	return m_pPlayer ? m_pPlayer->canDoCivics((CivicTypes)eCivic) : false;
+	return m_pPlayer ? m_pPlayer->canDoCivics((CivicTypes)eCivic, bProhitbitCheck) : false;
 }
 int CyPlayer::greatGeneralThreshold()
 {

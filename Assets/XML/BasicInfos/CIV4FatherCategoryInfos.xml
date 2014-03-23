@@ -27,7 +27,7 @@
 			<Description>Military</Description>
 		</FatherCategoryInfo>
 		<FatherCategoryInfo>
-			<Type>FATHERCATEGORY_POLITICS</Type>
+			<Type>FATHERCATEGORY_POLITICAL</Type>
 			<Description>Political</Description>
 		</FatherCategoryInfo>
 		<FatherCategoryInfo>

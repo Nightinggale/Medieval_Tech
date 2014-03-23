@@ -179,7 +179,7 @@ BUILDING_GRID = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
 # TK INVENTOR MOD end
 
 # COLONIZATION 2071
-BUILDING_DATA_2071 = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+BUILDING_DATA_2071 = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
 
 BUILDING_DATA_2071[0] = [40, 40, BuildingDistance, BuildingIconSize] #Bells
 BUILDING_DATA_2071[1] = [60, 40, BuildingDistance, BuildingIconSize] #Hammers

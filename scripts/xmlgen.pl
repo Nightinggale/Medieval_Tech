@@ -3535,11 +3535,12 @@ close LI;
 print ADC '</CivilizationArtInfos>'."\n</Civ4ArtDefines>\n";
 close ADC;
 
-# ** TECHS / CIVICS / TRAITS **
+# ** TECHS / CIVICS / TRAITS / FATHERS **
 
 # open XML for writing
 open (CI, '> ../Assets/XML/GameInfo/CIV4CivicInfos.xml') or die "Can't write civics: $!";
 open (TRI, '> ../Assets/XML/Civilizations/CIV4TraitInfos.xml') or die "Can't write traits: $!";
+open (FI, '> ../Assets/XML/GameInfo/CIV4FatherInfos.xml') or die "Can't write fathers: $!";
 
 # generate XML headers
 print CI '<?xml version="1.0"?>'."\n";
@@ -3551,6 +3552,11 @@ print TRI '<?xml version="1.0"?>'."\n";
 print TRI '<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Ed Piper (Firaxis Games) -->'."\n";
 print TRI '<!-- Sid Meier\'s Civilization 4 -->'."\n".'<!-- Copyright Firaxis Games 2005 -->'."\n".'<!-- -->'."\n".'<!-- Leader Trait Infos -->'."\n";
 print TRI '<Civ4TraitInfos xmlns="x-schema:CIV4CivilizationsSchema.xml">'."\n<TraitInfos>\n";
+
+print FI '<?xml version="1.0"?>'."\n";
+print FI '<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by EXTREME (Firaxis Games) -->'."\n";
+print FI '<!-- Sid Meier\'s Civilization 4 -->'."\n".'<!-- Copyright Firaxis Games 2005 -->'."\n".'<!-- -->'."\n".'<!-- Father Infos -->'."\n";
+print FI '<Civ4FatherInfos xmlns="x-schema:CIV4GameInfoSchema.xml">'."\n<FatherInfos>\n";
 
 sub maketrait {
 	my $tag = shift;
@@ -3644,7 +3650,57 @@ sub maketrait {
 &maketrait('Mercantile');
 &maketrait('Fearsome');
 
-#category tag, description
+# Civ4FatherInfos.xml
+# arguments: category, tier
+sub makefather {
+	my $cat = shift;
+	my $n = shift;
+	my $tag = $cat.$n;
+	my $desc = $tag;
+	$desc =~ tr/_/ /;
+	$desc =~ s/(\w+)/\u\L$1/g;
+	print FI "<FatherInfo>\n";
+	print FI "\t<Type>FATHER_".$tag."</Type>\n";
+	print FI "\t<Portrait>Art/Interface/Screens/Founding_Fathers/".$tag.'.dds</Portrait>'."\n";
+	print FI "\t<Description>TXT_KEY_FATHER_".$tag."</Description>\n";
+	&maketext("TXT_KEY_FATHER_".$tag, $desc);
+	print FI "\t<Civilopedia>TXT_KEY_FATHER_".$tag."_PEDIA</Civilopedia>\n";
+	my $pedia = 'This powerful leader\'s many [COLOR_HIGHLIGHT_TEXT]'.$desc."[COLOR_REVERT] connections can easily tip the balance of power in favor of any interplanetary power fortunate enough to retain their services.";
+	&maketext('TXT_KEY_FATHER_'.$tag.'_PEDIA',$pedia);
+	print FI "\t<Strategy>TXT_KEY_FATHER_".$tag."_STRATEGY</Strategy>\n";
+	print FI "\t<FatherCategory>FATHERCATEGORY_".$cat."</FatherCategory>\n";
+	print FI "\t<RevealImprovements/>\n";
+	print FI "\t<FreeUnits/>\n";
+	print FI "\t<FatherPointCosts>\n";
+	print FI "\t\t<FatherPointCost>\n";
+	print FI "\t\t\t<FatherPointType>FATHER_POINT_".$cat."</FatherPointType>\n";
+	print FI "\t\t\t<iCost>".($n*200)."</iCost>\n";
+	print FI "\t\t</FatherPointCost>\n";
+	unless ($cat eq 'POLITICAL'){
+	print FI "\t\t<FatherPointCost>\n";
+	print FI "\t\t\t<FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>\n";
+	print FI "\t\t\t<iCost>".($n*100)."</iCost>\n";
+	print FI "\t\t</FatherPointCost>\n";
+		}
+	print FI "\t</FatherPointCosts>\n";
+	print FI "\t<Trait/>\n";
+	print FI "\t<Quote>TXT_KEY_FUTURE_QUOTE</Quote>\n";
+	print FI "\t<Sound>AS2D_FUTURE</Sound>\n";
+	print FI "\t<SoundMP>AS2D_MP_FUTURE</SoundMP>\n";
+	print FI "\t<Button>Art/Interface/Screens/Founding_Fathers/Buttons/".$tag.'.dds</Button>'."\n";
+	print FI "</FatherInfo>\n";
+}
+
+# populate fathercategories
+@fathercats = ('POLITICAL','MILITARY','SCIENTIFIC','CORPORATE','MEDIA','CRIMINAL');
+foreach (@fathercats) {
+	for ($i = 1; $i <7; $i++) {
+		&makefather($_,$i);
+		}
+	}
+
+#Tech Category
+#arguments: tag, description
 sub makecat {
 	my $tag = shift;
 	my $desc = shift;
@@ -4068,6 +4124,8 @@ print CI "</CivicInfos>\n</Civ4CivicInfos>\n";
 close CI;
 print TRI "</TraitInfos>\n</Civ4TraitInfos>\n";
 close TRI;
+print FI "</FatherInfos>\n</Civ4FatherInfos>\n";
+close FI;
 
 # close text
 print TEXT "</Civ4GameText>\n";

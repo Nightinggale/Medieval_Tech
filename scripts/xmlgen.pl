@@ -3827,8 +3827,8 @@ sub maketech {
 	print CI "\t<InventionCategory>".$category."</InventionCategory>\n";
 	print CI "\t<iX_Location>".$x."</iX_Location>\n";
 	print CI "\t<iY_Location>".$y."</iY_Location>\n";
-	print CI "\t<iX_Relative_Location>".$x."</iX_Relative_Location>\n";
-	print CI "\t<iY_Relative_Location>".$y."</iY_Relative_Location>\n";
+	print CI "\t<iX_Relative_Location>0</iX_Relative_Location>\n";
+	print CI "\t<iY_Relative_Location>0</iY_Relative_Location>\n";
 	print CI "\t<RequiredInvention>".$req."</RequiredInvention>\n";
 	print CI "\t<RequiredInvention2/>\n";
 	print CI "\t<RequiredInventionOr/>\n";

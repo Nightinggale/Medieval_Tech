@@ -1049,6 +1049,14 @@
 		<Italian>[ICON_BULLET]Disallows [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT]</Italian>
 		<Spanish>[ICON_BULLET]Disallows [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT]</Spanish>
 	</TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_PREVENT_UNITCLASS_IMMIGRATION</Tag>
+    <English>[ICON_BULLET]Prevent [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT] in Immigration</English>
+    <French>[ICON_BULLET]Prevent [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT] in Immigration</French>
+    <German>[ICON_BULLET]Prevent [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT] in Immigration</German>
+    <Italian>[ICON_BULLET]Prevent [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT] in Immigration</Italian>
+    <Spanish>[ICON_BULLET]Prevent [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT] in Immigration</Spanish>
+  </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INVENTION_ALLOWS_UNITCLASS</Tag>
 		<English>[ICON_BULLET]Allows [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT]</English>
@@ -1129,6 +1137,14 @@
 		<Italian>[ICON_BULLET]%d1 Cheaper Population Growth</Italian>
 		<Spanish>[ICON_BULLET]%d1 Cheaper Population Growth</Spanish>
 	</TEXT>
+  <TEXT>
+		<Tag>TXT_KEY_CIVIC_GLOBAL_FOOD_COST</Tag>
+		<English>[ICON_BULLET]%d1[ICON_FOOD] cost for all Citizens</English>
+		<French>[ICON_BULLET]%d1[ICON_FOOD] cost</French>
+		<German>[ICON_BULLET]%d1[ICON_FOOD] cost</German>
+		<Italian>[ICON_BULLET]%d1[ICON_FOOD] cost</Italian>
+		<Spanish>[ICON_BULLET]%d1[ICON_FOOD] cost</Spanish>
+	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RESEARCH_GROWTH_INCREASE</Tag>
 		<English>[ICON_BULLET]+%d1 Max Population</English>
@@ -1139,7 +1155,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RESEARCH_CENTER_FOOD_PLOT</Tag>
-		<English>[ICON_BULLET]+%d1 Food to Settlement Plot</English>
+		<English>[ICON_BULLET]+%d1[ICON_FOOD] to Settlement Plot</English>
 		<French>[ICON_BULLET]+%d1 Food to Settlement Plot</French>
 		<German>[ICON_BULLET]+%d1 Food to Settlement Plot</German>
 		<Italian>[ICON_BULLET]+%d1 Food to Settlement Plot</Italian>

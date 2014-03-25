@@ -38,6 +38,14 @@
     <Spanish>[ICON_BULLET]%D1_Bonus%% from Decrees</Spanish>
   </TEXT>
   <TEXT>
+    <Tag>TXT_KEY_CIVIC_INCREASED_IMMIGRANTS</Tag>
+    <English>[ICON_BULLET]+%d1_Bonus[ICON_ANGRYPOP] selectable Immigrant</English>
+    <French>[ICON_BULLET]+%d1_Bonus selectable Immigrant</French>
+    <German>[ICON_BULLET]+%d1_Bonus selectable Immigrant</German>
+    <Italian>[ICON_BULLET]+%d1_Bonus selectable Immigrant</Italian>
+    <Spanish>[ICON_BULLET]+%d1_Bonus selectable Immigrant</Spanish>
+  </TEXT>
+  <TEXT>
     <Tag>TXT_KEY_CIVIC_ATTITUDES_EFFECT_GOOD</Tag>
     <English>%D1: "Your Diplomatic measures are encouraging."</English>
     <French>%D1 : "Your Diplomatic measures are encouraging."</French>
@@ -984,6 +992,14 @@
     <German>[ICON_BULLET]+%d1%F2 Bonus for connected Mission</German>
     <Italian>[ICON_BULLET]+%d1%F2 Bonus for connected Mission</Italian>
     <Spanish>[ICON_BULLET]+%d1%F2 Bonus for connected Mission</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_UNIT_FOOD_CHANGE</Tag>
+    <English>[ICON_BULLET]%d1[ICON_FOOD] cost for %s2</English>
+    <French>[ICON_BULLET]%d1[ICON_FOOD] cost for %s2</French>
+    <German>[ICON_BULLET]%d1[ICON_FOOD] cost for %s2</German>
+    <Italian>[ICON_BULLET]%d1[ICON_FOOD] cost for %s2</Italian>
+    <Spanish>[ICON_BULLET]%d1[ICON_FOOD] cost for %s2</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_CIVIC_GROWTH_UNITS</Tag>

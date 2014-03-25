@@ -1009,11 +1009,13 @@ public:
     DllExport int getIncreaseCityPopulation() const;
     DllExport int getAllowsProfession() const;
 	DllExport int getAllowsTrait() const;
+	DllExport int getAllowsCivic() const;
 	DllExport int getAllowsTradeScreen() const;
 	DllExport int getConvertsResearchYield() const;
 	DllExport int getDisallowsTech() const;
 	DllExport int getFreeUnitFirstToResearch() const;
 	DllExport int getCheaperPopulationGrowth() const;
+	DllExport int getGlobalFoodCostMod() const;
 	DllExport int getCenterPlotFoodBonus() const;
 	DllExport int getIncreasedEnemyHealRate() const;
 	DllExport int getGoldBonusForFirstToResearch() const;
@@ -1098,6 +1100,10 @@ public:
 	DllExport int getNumRandomGrowthUnits() const;
 	DllExport int getRandomGrowthUnits(int index) const;
 	DllExport int getRandomGrowthUnitsPercent(int index) const;
+	
+	DllExport int getNumUnitClassFoodCosts() const;
+	DllExport int getFoodCostsUnits(int index) const;
+	DllExport int getUnitClassFoodCosts(int index) const;
 
 	DllExport int getNumConnectedMissonYields() const;
 	DllExport int getConnectedMissonYields(int index) const;
@@ -1136,11 +1142,13 @@ protected:
 	int m_iCostToResearch;
 
 	int m_iAllowsTrait;
+	int m_iAllowsCivic;
 	int m_iAllowsTradeScreen;
 	int m_iConvertsResearchYield;
 	int m_iDisallowsTech;
 	int m_iFreeUnitFirstToResearch;
 	int m_iCheaperPopulationGrowth;
+	int m_iGlobalFoodCostMod;
 	int m_iCenterPlotFoodBonus;
 	int m_iIncreasedEnemyHealRate;
     int m_iGoldBonusForFirstToResearch;
@@ -1227,6 +1235,7 @@ protected:
 	std::vector< std::pair<CivicTypes, int> > m_aiCivicCombatBonuses;
 	std::vector< std::pair<BuildingClassTypes, int> > m_aiCivicTreasuryBonuses;
 	std::vector< std::pair<UnitClassTypes, int> > m_aRandomGrowthUnits;
+	std::vector< std::pair<UnitClassTypes, int> > m_aUnitClassFoodCosts;
 	std::vector< std::pair<YieldTypes, int> > m_aConnectedTradeYields;
 	std::vector< std::pair<YieldTypes, int> > m_aConnectedMissonYields;
 	UnitClassArray<int> m_jaAllowedUnitClassImmigration;

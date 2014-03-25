@@ -571,6 +571,7 @@ public:
 	void changeMarauderDetection(int iChange);
 	int getMarauderDetection() const;
 	void changeMaxFoodConsumed(int iChange);
+	void setMaxFoodConsumed(int iChange);
 	int getMaxFoodConsumed() const;
 	void doPilgrams();
 	bool isMarket(YieldTypes eYield) const;

@@ -43,7 +43,7 @@
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_SLAVE</Type>
-			<Description>Supply Train</Description>
+			<Description>Slave</Description>
 			<DefaultUnit>UNIT_SLAVE</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>

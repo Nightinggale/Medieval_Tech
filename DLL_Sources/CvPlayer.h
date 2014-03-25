@@ -574,6 +574,7 @@ public:
 	/*int getHasCivicOptionCount(CivicOptionTypes eIndex) const;
 	bool isHasCivicOption(CivicOptionTypes eIndex) const;
 	void changeHasCivicOptionCount(CivicOptionTypes eIndex, int iChange);*/
+	int getUnitClassFoodCost(UnitTypes eUnit, bool bResetAll = false) const;
 	//Tk Civics End
 	DllExport CvCity* getTradeFairCity() const;
 	void setTradeFairCity(CvCity* pTradeFairCity);
@@ -610,7 +611,10 @@ public:
 	int getVillages() const;
 	int getMonasterys() const;
 	int getCastles() const;
+	int getCityPlotFoodBonus() const;
+	void changeCityPlotFoodBonus(int iChange);
 	unsigned int getNumDocksNextUnits() const;
+	void changeNumDocksNextUnits(int iChange);
 	int getMissionaryHide() const;
 	void changeMissionaryHide(int iChange);
 	int getTradingPostHide() const;
@@ -883,6 +887,7 @@ protected:
 	int m_iVillages;
 	int m_iMonasterys;
 	int m_iCastles;
+	int m_iCityPlotFoodBonus;
 	unsigned int m_iNumDocksNextUnits;
 	UnitTypes m_iDefaultPopUnit;
 	UnitClassTypes m_iConvertedNativeUnit;
@@ -1078,7 +1083,7 @@ public:
 	bool canUseBuilding(BuildingTypes eBuilding) const;
 	bool canUseProfession(ProfessionTypes eProfession) const;
 	bool canUseBonus(BonusTypes eBonus) const;
-	int getCityPlotFoodBonus() const;
+	//int getCityPlotFoodBonus() const;
 
 protected:
 	YieldArray<bool> m_ja_bAllowedYields;
@@ -1088,10 +1093,11 @@ protected:
 	ProfessionArray<bool> m_ja_bAllowedProfessions;
 	BonusArray<bool> m_ja_bAllowedBonus;
 
-	int m_iCityPlotFoodBonus;
+	
 
 	void updateInventionEffectCacheSingleArray(JustInTimeArray<bool>* pArray, int (CvCivicInfo::*fptr)(int) const);
 	void updateInventionEffectCache();
+	void updateImmigrantsOnDock();//TKs Civics
 // invention effect cache - end - Nightinggale
 
 // transport feeder - start - Nightinggale
@@ -1177,10 +1183,10 @@ inline bool CvPlayer::canUseBonus(BonusTypes eBonus) const
 	return eBonus >= 0 ? m_ja_bAllowedBonus.get(eBonus) : false;
 }
 
-inline int CvPlayer::getCityPlotFoodBonus() const
-{
-	return m_iCityPlotFoodBonus;
-}
+//inline int CvPlayer::getCityPlotFoodBonus() const
+///{
+	//return m_iCityPlotFoodBonus;
+//}
 // invention effect cache - end - Nightinggale
 
 /// PlotGroup - start - Nightinggale

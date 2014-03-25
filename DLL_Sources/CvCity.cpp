@@ -2957,12 +2957,17 @@ bool CvCity::isCoastal(int iMinWaterSize) const
 {
 	return plot()->isCoastalLand(iMinWaterSize);
 }
-
+//Tks Civics
 bool CvCity::isDisorder() const
 {
+	if (GET_PLAYER(getOwnerINLINE()).isAnarchy())
+	{
+		return true;
+	}
+
 	return (isOccupation());
 }
-
+//tke
 int CvCity::extraPopulation() const
 {
 	int iNumExtra = 0;
@@ -9920,7 +9925,7 @@ void CvCity::addPopulationUnit(CvUnit* pUnit, ProfessionTypes eProfession)
 	FAssert(pTransferUnit == pUnit);
 
 	this->setUnitYieldDemand(pUnit->getUnitType());// // domestic yield demand - Nightinggale
-	int iFood = GC.getUnitInfo(pUnit->getUnitType()).getFoodConsumed();
+	int iFood = GET_PLAYER(getOwnerINLINE()).getUnitClassFoodCost(pUnit->getUnitType());
 	changeMaxFoodConsumed(iFood); /// TK New Food
 	int iOldPopulation = getPopulation();
 	m_aPopulationUnits.push_back(pTransferUnit);
@@ -9954,7 +9959,7 @@ bool CvCity::removePopulationUnit(CvUnit* pUnit, bool bDelete, ProfessionTypes e
 	pUnit->setColonistLocked(false);
 
 	this->setUnitYieldDemand(pUnit->getUnitType(), true); // // domestic yield demand - Nightinggale
-	int iFood = GC.getUnitInfo(pUnit->getUnitType()).getFoodConsumed();
+	int iFood = GET_PLAYER(getOwnerINLINE()).getUnitClassFoodCost(pUnit->getUnitType());
 	changeMaxFoodConsumed(-iFood); /// TK New Food
 	//remove unit from worked plots
 	CvPlot* pWorkedPlot = getPlotWorkedByUnit(pUnit);
@@ -11649,6 +11654,11 @@ int CvCity::getMarauderDetection() const
 void CvCity::changeMaxFoodConsumed(int iChange)
 {
 	m_iMaxFoodConsumed += iChange;
+}
+
+void CvCity::setMaxFoodConsumed(int iChange)
+{
+	m_iMaxFoodConsumed = iChange;
 }
 
 int CvCity::getMaxFoodConsumed() const

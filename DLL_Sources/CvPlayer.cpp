@@ -510,6 +510,7 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	m_iVillages = 0;
 	m_iMonasterys = 0;
 	m_iCastles = 0;
+	m_iCityPlotFoodBonus = 0;
 	m_iNumDocksNextUnits = GC.getXMLval(XML_DOCKS_NEXT_UNITS);
 	///TKe
 
@@ -11146,7 +11147,12 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
 	{
 		resetConnectedPlayerYieldBonus(eCivic, iChange);
 	}
-	
+
+	if (kCivicInfo.getGlobalFoodCostMod() > 0 || kCivicInfo.getNumUnitClassFoodCosts() > 0)
+	{
+		getUnitClassFoodCost(NO_UNIT, true);
+	}
+
 	if (kCivicInfo.getNewConvertUnitClass() != NO_UNITCLASS)
 	{
 		if (iChange > 0)
@@ -11348,6 +11354,8 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
 	changeMissionaryHide(kCivicInfo.getMissionariesNotCosumed() * iChange);
 	changeTradingPostHide(kCivicInfo.getTradingPostNotCosumed() * iChange);
 	changeHuntingYieldPercent(kCivicInfo.getHuntingYieldPercent() * iChange);
+	changeCityPlotFoodBonus(kCivicInfo.getCenterPlotFoodBonus() * iChange);
+	//changeNumDocksNextUnits(kCivicInfo.getIncreasedImmigrants() * iChange);
     ///TKe
 	changeGreatGeneralRateModifier(kCivicInfo.getGreatGeneralRateModifier() * iChange);
 	changeDomesticGreatGeneralRateModifier(kCivicInfo.getDomesticGreatGeneralRateModifier() * iChange);
@@ -12081,6 +12089,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iVillages);
 	pStream->Read(&m_iMonasterys);
 	pStream->Read(&m_iCastles);
+	pStream->Read(&m_iCityPlotFoodBonus);
 	pStream->Read(&m_iNumDocksNextUnits); // no need to save this
 	pStream->Read(&m_bTechsInitialized);
 	pStream->Read(&m_bAllResearchComplete);
@@ -12513,6 +12522,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(m_iVillages);
 	pStream->Write(m_iMonasterys);
 	pStream->Write(m_iCastles);
+	pStream->Write(m_iCityPlotFoodBonus);
 	pStream->Write(m_iNumDocksNextUnits); // no need to save this
 	pStream->Write(m_bTechsInitialized);
 	pStream->Write(m_bAllResearchComplete);
@@ -14873,11 +14883,11 @@ int CvPlayer::getMaxAnarchyTurns() const
 void CvPlayer::updateMaxAnarchyTurns()
 {
 	int iBestValue;
-	//int iI;
+	int iI;
 	///DEFINE INTEGER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	//iBestValue = GC.getDefineINT("MAX_ANARCHY_TURNS");
 	iBestValue = 100;
-	/*FAssertMsg((GC.getNumTraitInfos() > 0), "GC.getNumTraitInfos() is less than or equal to zero but is expected to be larger than zero in CvPlayer::updateMaxAnarchyTurns");
+	FAssertMsg((GC.getNumTraitInfos() > 0), "GC.getNumTraitInfos() is less than or equal to zero but is expected to be larger than zero in CvPlayer::updateMaxAnarchyTurns");
 	for (iI = 0; iI < GC.getNumTraitInfos(); iI++)
 	{
 		if (hasTrait((TraitTypes)iI))
@@ -14890,7 +14900,7 @@ void CvPlayer::updateMaxAnarchyTurns()
 				}
 			}
 		}
-	}*/
+	}
 
 	m_iMaxAnarchyTurns = iBestValue;
 	FAssert(getMaxAnarchyTurns() >= 0);
@@ -19627,6 +19637,20 @@ unsigned int CvPlayer::getNumDocksNextUnits() const
 	return m_iNumDocksNextUnits;
 }
 
+void CvPlayer::changeNumDocksNextUnits(int iChange)
+{
+	m_iNumDocksNextUnits += iChange;
+}
+
+int CvPlayer::getCityPlotFoodBonus() const
+{
+	return m_iCityPlotFoodBonus;
+}
+void CvPlayer::changeCityPlotFoodBonus(int iChange)
+{
+	m_iCityPlotFoodBonus += iChange;
+}
+
 MedCityTypes CvPlayer::getAICityType()
 {
     if (isNative() || isEurope())
@@ -19926,6 +19950,52 @@ bool CvPlayer::canMakeVassalDemand(PlayerTypes eVassal)
     }
     return true;
 }
+
+int CvPlayer::getUnitClassFoodCost(UnitTypes eUnit, bool bResetAll) const
+{
+	if (bResetAll)
+	{
+		int iLoop;
+		for (CvCity* pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+		{
+			pLoopCity->setMaxFoodConsumed(0);
+			int iFood = 0;
+			for (int i = 0; i < pLoopCity->getPopulation(); ++i)
+			{
+				CvUnit* pUnit =  pLoopCity->getPopulationUnitByIndex(i);
+				if (NULL != pUnit)
+				{
+					iFood = getUnitClassFoodCost(pUnit->getUnitType());
+					pLoopCity->changeMaxFoodConsumed(iFood);
+				}
+			}
+		}
+
+		return 0;
+	}
+
+
+	int iFood = GC.getUnitInfo(eUnit).getFoodConsumed();
+	UnitClassTypes eUnitClass = (UnitClassTypes)GC.getUnitInfo(eUnit).getUnitClassType();
+	//Cycle Civic Options
+	for (int iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
+	{
+		CivicTypes eCivic = getCivic((CivicOptionTypes)iI);
+		if (eCivic != NO_CIVIC)
+		{
+			iFood += GC.getCivicInfo(eCivic).getGlobalFoodCostMod();
+			for (int iJ = 0; iJ < GC.getCivicInfo(eCivic).getNumUnitClassFoodCosts(); iJ++)
+			{
+				if ((UnitClassTypes)GC.getCivicInfo(eCivic).getFoodCostsUnits(iJ) == eUnitClass)
+				{
+					iFood += GC.getCivicInfo(eCivic).getUnitClassFoodCosts(iJ);
+				}
+			}
+		}
+	}
+
+	return iFood;
+}
 ///TKe
 
 // invention effect cache - start - Nightinggale
@@ -20040,15 +20110,15 @@ void CvPlayer::updateInventionEffectCache()
 	m_iNumDocksNextUnits = GC.getXMLval(XML_DOCKS_NEXT_UNITS);
 
 	// city plot food bonus
-	m_iCityPlotFoodBonus = 0;
+	//m_iCityPlotFoodBonus = 0;
 
 	// Initiate Trade Route Screens
 	bool bTradeScreen = false;
 	for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
 	{
 		CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes) iCivic);
-		if (kCivicInfo.getCivicOptionType() == CIVICOPTION_INVENTIONS)
-		{
+		//if (kCivicInfo.getCivicOptionType() == CIVICOPTION_INVENTIONS)
+		//{
 			//for (int iTradeScreen = 0; iTradeScreen < GC.getNumEuropeInfos(); ++iTradeScreen)
 			if (kCivicInfo.getAllowsTradeScreen() != NO_EUROPE)
 			{
@@ -20058,14 +20128,73 @@ void CvPlayer::updateInventionEffectCache()
 
 			if (this->getIdeasResearched((CivicTypes) iCivic) > 0)
 			{
-				this->m_iCityPlotFoodBonus += kCivicInfo.getCenterPlotFoodBonus();
+				//this->m_iCityPlotFoodBonus += kCivicInfo.getCenterPlotFoodBonus();
 				m_iNumDocksNextUnits += kCivicInfo.getIncreasedImmigrants();
 			}
 			else if (bTradeScreen)
 			{
 				setHasTradeRouteType((EuropeTypes)kCivicInfo.getAllowsTradeScreen(), false);
 			}
+		//}
+	}
+
+	// change dock size if needed
+	if (m_aDocksNextUnits.size() > 0)
+	{
+		// size is 0 when starting a new game
+		// ignore this case as initImmigration() is called later
+
+		// add immigrants on the dock
+		while (m_iNumDocksNextUnits > m_aDocksNextUnits.size())
+		{
+			m_aDocksNextUnits.push_back(pickBestImmigrant());
 		}
+
+		// remove immigrants from the dock
+		while (m_iNumDocksNextUnits < m_aDocksNextUnits.size())
+		{
+			m_aDocksNextUnits.pop_back();
+		}
+	}
+
+	// remove any units from the docks if they can no longer appear on the docks
+	for (unsigned int i = 0; i < m_aDocksNextUnits.size(); ++i)
+    {
+		if (!canUseUnitImmigration((UnitTypes)m_aDocksNextUnits[i]))
+		{
+			m_aDocksNextUnits[i] = pickBestImmigrant();
+		}
+	}
+}
+//Tks Civics
+void CvPlayer::updateImmigrantsOnDock()
+{
+	
+	// disallow immigrants if the unit isn't allowed
+	for (int i = 0; i < m_ja_bAllowedUnits.length(); i++)
+	{
+		if (!m_ja_bAllowedUnits.get(i))
+		{
+			m_ja_bAllowedUnitsImmigration.set(false, i);
+		}
+	}
+
+	// set number of immigrants on "dock"
+	m_iNumDocksNextUnits = GC.getXMLval(XML_DOCKS_NEXT_UNITS);
+
+	// city plot food bonus
+	//m_iCityPlotFoodBonus = 0;
+
+	// Initiate Trade Route Screens
+	for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
+	{
+		CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes) iCivic);
+
+		if (this->getIdeasResearched((CivicTypes) iCivic) > 0)
+		{
+			m_iNumDocksNextUnits += kCivicInfo.getIncreasedImmigrants();
+		}
+			
 	}
 
 	// change dock size if needed

@@ -4496,9 +4496,14 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
 		szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_CONNECTED_MISSION", kCivicInfo.getConnectedMissonYieldsBonus(iI), GC.getYieldInfo(eConnectedYield).getChar()));
 	}
 
+	for (iI = 0; iI < kCivicInfo.getNumUnitClassFoodCosts(); iI++)
+	{
+		szHelpText.append(NEWLINE);
+		szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_UNIT_FOOD_CHANGE", kCivicInfo.getUnitClassFoodCosts(iI), GC.getUnitClassInfo((UnitClassTypes)kCivicInfo.getFoodCostsUnits(iI)).getDescription()));
+	}
+
 	for (iI = 0; iI < kCivicInfo.getNumRandomGrowthUnits(); iI++)
 	{
-		//UnitTypes eImmigrantUnit = (UnitClassTypes)kCivicInfo.getRandomGrowthUnits(iI);
 		szHelpText.append(NEWLINE);
 		szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_GROWTH_UNITS", kCivicInfo.getRandomGrowthUnitsPercent(iI), GC.getUnitClassInfo((UnitClassTypes)kCivicInfo.getRandomGrowthUnits(iI)).getDescription()));
 	}
@@ -4689,6 +4694,12 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
 	}
     ///TKs Civic Screen
 	///START
+
+	if (kCivicInfo.getIncreasedImmigrants() > 0)
+	{
+	    szHelpText.append(NEWLINE);
+        szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_INCREASED_IMMIGRANTS", kCivicInfo.getIncreasedImmigrants()));
+	}
 	if (kCivicInfo.getMissionariesNotCosumed() > 0)
 	{
 	    szHelpText.append(NEWLINE);
@@ -4990,6 +5001,31 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
 
     for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
     {
+		//if (kCivicInfo.getAllowedUnitClassImmigration(iI) > 0)
+  //      {
+  //          for (int i = 0; i < GC.getNumUnitInfos(); ++i)
+  //          {
+  //              CvUnitInfo& kUnitInfo = GC.getUnitInfo((UnitTypes) i);
+  //              if (kUnitInfo.getUnitClassType() == (UnitClassTypes)iI)
+  //              {
+  //                  bool bShowUnit = true;
+  //                  if (eCivilization != NO_CIVILIZATION)
+  //                  {
+  //                      UnitTypes eUnit = (UnitTypes) GC.getCivilizationInfo(eCivilization).getCivilizationUnits((UnitClassTypes)iI);
+  //                      if (eUnit != (UnitTypes) i)
+  //                      {
+  //                          bShowUnit = false;
+  //                      }
+  //                  }
+  //                  if (bShowUnit)
+  //                  {
+  //                      szHelpText.append(NEWLINE);
+  //                      szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_PREVENT_UNITCLASS_IMMIGRATION", kUnitInfo.getDescription()));
+  //                  }
+  //                  //break;
+  //              }
+  //          }
+  //      }
         if (kCivicInfo.getAllowsUnitClasses(iI) > 0)
         {
             for (int i = 0; i < GC.getNumUnitInfos(); ++i)
@@ -5184,7 +5220,11 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
            szHelpText.append(gDLL->getText("TXT_KEY_FOUND_OUTPOST"));
         }
 	}
-
+	if (kCivicInfo.getGlobalFoodCostMod() != 0)
+	{
+	   szHelpText.append(NEWLINE);
+	   szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_GLOBAL_FOOD_COST", kCivicInfo.getGlobalFoodCostMod()));
+	}
 	if (kCivicInfo.getCheaperPopulationGrowth() != 0)
 	{
 	   szHelpText.append(NEWLINE);

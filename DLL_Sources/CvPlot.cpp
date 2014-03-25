@@ -5095,10 +5095,10 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 	///TKs Med CenterPlotBonus
 	if (getPlotCity() != NULL && iYield > 0)
 	{
-		if (eYield == YIELD_FOOD && eTeam != NO_TEAM && GC.getGameINLINE().isFinalInitialized())
-		{
-			iYield += GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getCityPlotFoodBonus();
-		}
+		//if (eYield == YIELD_FOOD && eTeam != NO_TEAM && GC.getGameINLINE().isFinalInitialized())
+		//{
+			//iYield += GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getCityPlotFoodBonus();
+		//}
 		iYield += getPlotCity()->getCenterPlotBonus();
 	}
 	///TKe

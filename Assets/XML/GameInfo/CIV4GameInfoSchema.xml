@@ -474,6 +474,7 @@
 	<ElementType name="bFreeUnitsAreNonePopulation" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bFreeUnitsNotAllCities" content="textOnly" dt:type="boolean"/>
 	<ElementType name="AllowsTrait" content="textOnly"/>
+  <ElementType name="AllowsCivic" content="textOnly"/>
 	<ElementType name="AllowsTradeScreen" content="textOnly"/>
 	<ElementType name="ConvertsUnitsTo" content="textOnly"/>
 	<ElementType name="NewDefaultUnitClass" content="textOnly"/>
@@ -522,6 +523,13 @@
   </ElementType>
   <ElementType name="RandomGrowthClasses" content="eltOnly">
     <element type="RandomGrowthClass" minOccurs="0" maxOccurs="*"/>
+  </ElementType>
+  <ElementType name="UnitClassFoodCost" content="eltOnly">
+    <element type="UnitClassType"/>
+    <element type="iValue"/>
+  </ElementType>
+  <ElementType name="UnitClassFoodCosts" content="eltOnly">
+    <element type="UnitClassFoodCost" minOccurs="0" maxOccurs="*"/>
   </ElementType>
   <ElementType name="ConnectedTradeYields" content="eltOnly">
     <element type="YieldChange" minOccurs="0" maxOccurs="*"/>
@@ -630,6 +638,7 @@
 	<ElementType name="bStartConstitution" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bisNoneTradeable" content="textOnly" dt:type="boolean"/>
 	<ElementType name="iCheaperPopulationGrowth" content="textOnly" dt:type="int"/>
+  <ElementType name="iGlobalFoodCostMod" content="textOnly" dt:type="int"/>
 	<ElementType name="iIncreasedEnemyHealRate" content="textOnly" dt:type="int"/>
 	<ElementType name="iCenterPlotFoodBonus" content="textOnly" dt:type="int"/>
 	<ElementType name="iProlificInventorRateChange" content="textOnly" dt:type="int"/>
@@ -707,6 +716,7 @@
 		<element type="AllowsProfessions" minOccurs="0"/>
 		<element type="AllowsBonuses" minOccurs="0"/>
 		<element type="AllowsTrait" minOccurs="0"/>
+    <element type="AllowsCivic" minOccurs="0"/>
 		<element type="AllowsTradeScreen" minOccurs="0"/>
 		<element type="AllowsBuildTypes" minOccurs="0"/>
 		<element type="AllowsBuildTypesTerrain" minOccurs="0"/>
@@ -715,6 +725,7 @@
 		<element type="FasterBuildFeatureTypes" minOccurs="0"/>
 		<element type="ConvertsUnitsFrom" minOccurs="0"/>
 		<element type="ConvertsUnitsTo" minOccurs="0"/>
+    <element type="UnitClassFoodCosts" minOccurs="0"/>
     <element type="RandomGrowthClasses" minOccurs="0"/>
     <element type="ConnectedMissonYields" minOccurs="0"/>
     <element type="ConnectedTradeYields" minOccurs="0"/>
@@ -740,6 +751,7 @@
     <element type="iIncreasedEnemyHealRate" minOccurs="0"/>
 		<element type="iFreeHurriedImmigrants" minOccurs="0"/>
 		<element type="iCheaperPopulationGrowth" minOccurs="0"/>
+    <element type="iGlobalFoodCostMod" minOccurs="0"/>
 		<element type="iCenterPlotFoodBonus" minOccurs="0"/>
 		<element type="iProlificInventorRateChange" minOccurs="0"/>
 		<element type="iGoldBonusForFirstToResearch" minOccurs="0"/>

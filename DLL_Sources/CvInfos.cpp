@@ -3833,11 +3833,13 @@ m_aiRequiredYields(NULL),
 
 m_iCostToResearch(0),
 m_iAllowsTrait(NO_TRAIT),
+m_iAllowsCivic(NO_CIVIC),
 m_iAllowsTradeScreen(NO_EUROPE),
 m_iConvertsResearchYield(NO_YIELD),
 m_iDisallowsTech(NO_CIVIC),
 m_iFreeUnitFirstToResearch(NO_UNITCLASS),
 m_iCheaperPopulationGrowth(0),
+m_iGlobalFoodCostMod(0),
 m_iIncreasedEnemyHealRate(0),
 m_iCenterPlotFoodBonus(0),
 m_iFreeHurriedImmigrants(0),
@@ -4115,6 +4117,23 @@ int CvCivicInfo::getRandomGrowthUnitsPercent(int index) const
 	return m_aRandomGrowthUnits[index].second;
 }
 
+int CvCivicInfo::getNumUnitClassFoodCosts() const
+{
+	return m_aUnitClassFoodCosts.size();
+}
+int CvCivicInfo::getFoodCostsUnits(int index) const
+{
+	FAssert(index < (int) m_aUnitClassFoodCosts.size());
+	FAssert(index > -1);
+	return m_aUnitClassFoodCosts[index].first;
+}
+int CvCivicInfo::getUnitClassFoodCosts(int index) const
+{
+	FAssert(index < (int) m_aUnitClassFoodCosts.size());
+	FAssert(index > -1);
+	return m_aUnitClassFoodCosts[index].second;
+}
+
 int CvCivicInfo::getAllowsBuildTypes(int i) const
 {
 	return m_aiAllowsBuildTypes ? m_aiAllowsBuildTypes[i] : 0;
@@ -4278,6 +4297,10 @@ int CvCivicInfo::getAllowsTrait() const
 {
 	return m_iAllowsTrait;
 }
+int CvCivicInfo::getAllowsCivic() const
+{
+	return m_iAllowsCivic;
+}
 /// TK Med TradeScreen
 int CvCivicInfo::getAllowsTradeScreen() const
 {
@@ -4320,6 +4343,11 @@ int CvCivicInfo::getFreeUnitFirstToResearch() const
 int CvCivicInfo::getCheaperPopulationGrowth() const
 {
 	return m_iCheaperPopulationGrowth;
+}
+
+int CvCivicInfo::getGlobalFoodCostMod() const
+{
+	return m_iGlobalFoodCostMod;
 }
 
 bool CvCivicInfo::isFreeUnitsAreNonePopulation() const
@@ -4803,6 +4831,9 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(szTextVal, "AllowsTrait");
 	m_iAllowsTrait = pXML->FindInInfoClass(szTextVal);
 
+    pXML->GetChildXmlValByName(szTextVal, "AllowsCivic");
+	m_iAllowsCivic = pXML->FindInInfoClass(szTextVal);
+
 	pXML->GetChildXmlValByName(szTextVal, "AllowsTradeScreen");
 	m_iAllowsTradeScreen = pXML->FindInInfoClass(szTextVal);
 
@@ -4826,7 +4857,7 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 
     pXML->GetChildXmlValByName(szTextVal, "iModdersCode1");
 	m_iModdersCode1 = pXML->FindInInfoClass(szTextVal);
-
+	pXML->GetChildXmlValByName(&m_iGlobalFoodCostMod, "iGlobalFoodCostMod");
 	pXML->GetChildXmlValByName(&m_iCheaperPopulationGrowth, "iCheaperPopulationGrowth");
 	pXML->GetChildXmlValByName(&m_iCenterPlotFoodBonus, "iCenterPlotFoodBonus");
 	pXML->GetChildXmlValByName(&m_iIncreasedEnemyHealRate, "iIncreasedEnemyHealRate");
@@ -4938,7 +4969,7 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 		// set the current xml node to it's parent node
 		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 	}
-
+	//RandomGrowthUnits
 	m_aRandomGrowthUnits.clear();
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"RandomGrowthClasses"))
 	{
@@ -4951,6 +4982,26 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 				int iPercentChance = 0;
 				pXML->GetChildXmlValByName(&iPercentChance, "iPercentChance");
 				m_aRandomGrowthUnits.push_back(std::make_pair((UnitClassTypes) iUnitClass, iPercentChance));
+			} while(gDLL->getXMLIFace()->NextSibling(pXML->GetXML()));
+			// set the current xml node to it's parent node
+			gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+		}
+		// set the current xml node to it's parent node
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+	//UnitClassFoodCosts
+	m_aUnitClassFoodCosts.clear();
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"UnitClassFoodCosts"))
+	{
+		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"UnitClassFoodCost"))
+		{
+			do
+			{
+				pXML->GetChildXmlValByName(szTextVal, "UnitClassType");
+				int iUnitClass = pXML->FindInInfoClass(szTextVal);
+				int iPercentChance = 0;
+				pXML->GetChildXmlValByName(&iPercentChance, "iValue");
+				m_aUnitClassFoodCosts.push_back(std::make_pair((UnitClassTypes) iUnitClass, iPercentChance));
 			} while(gDLL->getXMLIFace()->NextSibling(pXML->GetXML()));
 			// set the current xml node to it's parent node
 			gDLL->getXMLIFace()->SetToParent(pXML->GetXML());

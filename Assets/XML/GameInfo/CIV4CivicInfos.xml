@@ -1005,7 +1005,6 @@
 			<iProlificInventorRateChange>0</iProlificInventorRateChange>
 			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
 			<iGoldBonus>0</iGoldBonus>
-			<iIncreasedImmigrants>1</iIncreasedImmigrants>
 			<iFreeTechs>0</iFreeTechs>
 			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
 			<IndustrializationVictory/>
@@ -2797,12 +2796,7 @@
 			<iFatherPointModifier>0</iFatherPointModifier>
 			<bDominateNativeBorders>0</bDominateNativeBorders>
 			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_HAMMERS</YieldType>
-					<iYield>25</iYield>
-				</YieldModifier>
-			</YieldModifiers>
+			<YieldModifiers/>
 			<CapitalYieldModifiers/>
 			<Hurrys/>
 			<SpecialBuildingNotRequireds/>
@@ -3547,21 +3541,8 @@
 			<AllowsYields/>
 			<AllowsBuildingTypes/>
 			<AllowsUnitClasses/>
-			<AllowsPromotions>
-				<AllowsPromotion>
-					<PromotionType>PROMOTION_KNIGHT</PromotionType>
-					<iChange>1</iChange>
-				</AllowsPromotion>
-			</AllowsPromotions>
+			<AllowsPromotions/>
 			<AllowsProfessions>
-				<AllowsProfession>
-					<ProfessionType>PROFESSION_KNIGHT_PLATE</ProfessionType>
-					<iChange>1</iChange>
-				</AllowsProfession>
-				<AllowsProfession>
-					<ProfessionType>PROFESSION_KNIGHT_MAIL</ProfessionType>
-					<iChange>1</iChange>
-				</AllowsProfession>
 				<AllowsProfession>
 					<ProfessionType>PROFESSION_SKIRMISHER2</ProfessionType>
 					<iChange>1</iChange>
@@ -4537,7 +4518,7 @@
       <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
       <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
       <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
-      <iExpInBorderModifier>1</iExpInBorderModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
       <iNativeAttitudeChange>0</iNativeAttitudeChange>
       <iNativeCombatModifier>0</iNativeCombatModifier>
       <iFatherPointModifier>0</iFatherPointModifier>
@@ -4551,6 +4532,7 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <AllowsTrait>TRAIT_CIVIC_MONARCHY</AllowsTrait>
       <GarrisonUnitModifiers>
         <GarrisonUnitModifier>
           <YieldType>YIELD_BELLS</YieldType>
@@ -4586,6 +4568,28 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <AllowsPromotions>
+        <AllowsPromotion>
+          <PromotionType>PROMOTION_KNIGHT</PromotionType>
+          <iChange>1</iChange>
+        </AllowsPromotion>
+      </AllowsPromotions>
+      <AllowsProfessions>
+        <AllowsProfession>
+          <ProfessionType>PROFESSION_KNIGHT_PLATE</ProfessionType>
+          <iChange>1</iChange>
+        </AllowsProfession>
+        <AllowsProfession>
+          <ProfessionType>PROFESSION_KNIGHT_MAIL</ProfessionType>
+          <iChange>1</iChange>
+        </AllowsProfession>
+      </AllowsProfessions>
+      <FartherPointChanges>
+        <FartherPointChange>
+          <FartherPointType>FATHER_POINT_MILITARY</FartherPointType>
+          <iChange>100</iChange>
+        </FartherPointChange>
+      </FartherPointChanges>
     </CivicInfo>
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
@@ -4615,6 +4619,18 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <FartherPointChanges>
+        <FartherPointChange>
+          <FartherPointType>FATHER_POINT_RELIGION</FartherPointType>
+          <iChange>100</iChange>
+        </FartherPointChange>
+      </FartherPointChanges>
+      <RandomGrowthClasses>
+        <RandomGrowthClass>
+          <UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
+          <iPercentChance>33</iPercentChance>
+        </RandomGrowthClass>
+      </RandomGrowthClasses>
     </CivicInfo>
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
@@ -4640,6 +4656,9 @@
         <ProhibitedCivic>
           <Civic>CIVIC_STATE_CONTROL</Civic>
         </ProhibitedCivic>
+        <ProhibitedCivic>
+          <Civic>CIVIC_SLAVERY</Civic>
+        </ProhibitedCivic>
       </ProhibitsCivics>
       <YieldModifiers/>
       <CapitalYieldModifiers/>
@@ -4649,6 +4668,12 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <FartherPointChanges>
+        <FartherPointChange>
+          <FartherPointType>FATHER_POINT_POLITICAL</FartherPointType>
+          <iChange>100</iChange>
+        </FartherPointChange>
+      </FartherPointChanges>
       <CivicCombatBonuses>
         <CivicCombatBonus>
           <Civic>CIVIC_SLAVERY</Civic>
@@ -4814,7 +4839,21 @@
       <iFatherPointModifier>0</iFatherPointModifier>
       <bDominateNativeBorders>0</bDominateNativeBorders>
       <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
-      <YieldModifiers/>
+      <ProhibitsCivics>
+        <ProhibitedCivic>
+          <Civic>CIVIC_RELIGIOUS_LAW</Civic>
+        </ProhibitedCivic>
+      </ProhibitsCivics>
+      <YieldModifiers>
+        <YieldModifier>
+          <YieldType>YIELD_IDEAS</YieldType>
+          <iYield>50</iYield>
+        </YieldModifier>
+        <YieldModifier>
+          <YieldType>YIELD_CULTURE</YieldType>
+          <iYield>-50</iYield>
+        </YieldModifier>
+      </YieldModifiers>
       <CapitalYieldModifiers/>
       <Hurrys/>
       <SpecialBuildingNotRequireds/>
@@ -4822,6 +4861,12 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <FartherPointChanges>
+        <FartherPointChange>
+          <FartherPointType>FATHER_POINT_TRADE</FartherPointType>
+          <iChange>100</iChange>
+        </FartherPointChange>
+      </FartherPointChanges>
     </CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_COMMERCE</CivicOptionType>
@@ -4880,6 +4925,7 @@
 			<FreeUnitClasses/>
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
+      <iCenterPlotFoodBonus>2</iCenterPlotFoodBonus>
       <iHuntingYieldPercent>100</iHuntingYieldPercent>
 		</CivicInfo>
     <CivicInfo>
@@ -4923,7 +4969,7 @@
           <iYieldChange>3</iYieldChange>
         </YieldChange>
       </ConnectedTradeYields>
-      <iTradingPostNotCosumed>3</iTradingPostNotCosumed>
+      <iTradingPostNotCosumed>5</iTradingPostNotCosumed>
     </CivicInfo>
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_COMMERCE</CivicOptionType>
@@ -4945,7 +4991,16 @@
       <iFatherPointModifier>0</iFatherPointModifier>
       <bDominateNativeBorders>0</bDominateNativeBorders>
       <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
-      <YieldModifiers/>
+      <YieldModifiers>
+        <YieldModifier>
+          <YieldType>YIELD_IDEAS</YieldType>
+          <iYield>-50</iYield>
+        </YieldModifier>
+        <YieldModifier>
+          <YieldType>YIELD_HAMMERS</YieldType>
+          <iYield>50</iYield>
+        </YieldModifier>
+      </YieldModifiers>
       <CapitalYieldModifiers/>
       <Hurrys/>
       <SpecialBuildingNotRequireds/>
@@ -5025,8 +5080,8 @@
 			<iFatherPointModifier>0</iFatherPointModifier>
 			<bDominateNativeBorders>0</bDominateNativeBorders>
 			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
-			<YieldModifiers/>
-			<CapitalYieldModifiers/>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
 			<Hurrys/>
 			<SpecialBuildingNotRequireds/>
 			<ImprovementYieldChanges/>
@@ -5055,7 +5110,12 @@
       <bDominateNativeBorders>0</bDominateNativeBorders>
       <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
       <YieldModifiers/>
-      <CapitalYieldModifiers/>
+      <CapitalYieldModifiers>
+        <YieldModifier>
+          <YieldType>YIELD_HAMMERS</YieldType>
+          <iYield>100</iYield>
+        </YieldModifier>
+      </CapitalYieldModifiers>
       <Hurrys/>
       <SpecialBuildingNotRequireds/>
       <ImprovementYieldChanges/>
@@ -5083,6 +5143,11 @@
       <iFatherPointModifier>0</iFatherPointModifier>
       <bDominateNativeBorders>0</bDominateNativeBorders>
       <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <ProhibitsCivics>
+        <ProhibitedCivic>
+          <Civic>CIVIC_TOLERANCE</Civic>
+        </ProhibitedCivic>
+      </ProhibitsCivics>
       <YieldModifiers/>
       <CapitalYieldModifiers/>
       <Hurrys/>
@@ -5091,6 +5156,12 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <AllowsUnitClassesImmigration>
+        <AllowsUnitClass>
+          <AllowsUnit>UNITCLASS_CRIMINAL</AllowsUnit>
+          <iChange>-1</iChange>
+        </AllowsUnitClass>
+      </AllowsUnitClassesImmigration>
       <GarrisonUnitModifiers>
         <GarrisonUnitModifier>
           <YieldType>YIELD_CROSSES</YieldType>
@@ -5129,9 +5200,10 @@
       <RandomGrowthClasses>
         <RandomGrowthClass>
           <UnitClassType>UNITCLASS_NOBLEMAN</UnitClassType>
-          <iPercentChance>100</iPercentChance>
+          <iPercentChance>33</iPercentChance>
         </RandomGrowthClass>
       </RandomGrowthClasses>
+      <iIncreasedImmigrants>1</iIncreasedImmigrants>
     </CivicInfo>
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
@@ -5153,7 +5225,12 @@
       <iFatherPointModifier>0</iFatherPointModifier>
       <bDominateNativeBorders>0</bDominateNativeBorders>
       <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
-      <YieldModifiers/>
+      <YieldModifiers>
+        <YieldModifier>
+          <YieldType>YIELD_EDUCATION</YieldType>
+          <iYield>100</iYield>
+        </YieldModifier>
+      </YieldModifiers>
       <CapitalYieldModifiers/>
       <Hurrys/>
       <SpecialBuildingNotRequireds/>
@@ -5161,6 +5238,13 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <AllowsTrait>TRAIT_CIVIC_CODEX</AllowsTrait>
+      <RandomGrowthClasses>
+        <RandomGrowthClass>
+          <UnitClassType>UNITCLASS_DIGNITARY</UnitClassType>
+          <iPercentChance>33</iPercentChance>
+        </RandomGrowthClass>
+      </RandomGrowthClasses>
     </CivicInfo>
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
@@ -5211,7 +5295,17 @@
 			<iFatherPointModifier>0</iFatherPointModifier>
 			<bDominateNativeBorders>0</bDominateNativeBorders>
 			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
-			<YieldModifiers/>
+      <ProhibitsCivics>
+        <ProhibitedCivic>
+          <Civic>CIVIC_PARLIAMENT</Civic>
+        </ProhibitedCivic>
+      </ProhibitsCivics>
+      <YieldModifiers>
+        <YieldModifier>
+          <YieldType>YIELD_BELLS</YieldType>
+          <iYield>-25</iYield>
+        </YieldModifier>
+      </YieldModifiers>
 			<CapitalYieldModifiers/>
 			<Hurrys/>
 			<SpecialBuildingNotRequireds/>
@@ -5219,6 +5313,16 @@
 			<FreeUnitClasses/>
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
+      <UnitClassFoodCosts>
+        <UnitClassFoodCost>
+          <UnitClassType>UNITCLASS_SLAVE</UnitClassType>
+          <iValue>-1</iValue>
+        </UnitClassFoodCost>
+        <UnitClassFoodCost>
+          <UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
+          <iValue>-1</iValue>
+        </UnitClassFoodCost>
+      </UnitClassFoodCosts>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
@@ -5248,6 +5352,12 @@
 			<FreeUnitClasses/>
 			<ProfessionCombatChanges/>
 			<ImmigrationConversion>NONE</ImmigrationConversion>
+      <UnitClassFoodCosts>
+        <UnitClassFoodCost>
+          <UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
+          <iValue>-1</iValue>
+        </UnitClassFoodCost>
+      </UnitClassFoodCosts>
 		</CivicInfo>
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
@@ -5269,7 +5379,12 @@
       <iFatherPointModifier>0</iFatherPointModifier>
       <bDominateNativeBorders>0</bDominateNativeBorders>
       <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
-      <YieldModifiers/>
+      <YieldModifiers>
+        <YieldModifier>
+          <YieldType>YIELD_BELLS</YieldType>
+          <iYield>100</iYield>
+        </YieldModifier>
+      </YieldModifiers>
       <CapitalYieldModifiers/>
       <Hurrys/>
       <SpecialBuildingNotRequireds/>
@@ -5277,6 +5392,17 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <AllowsUnitClassesImmigration>
+        <AllowsUnitClass>
+          <AllowsUnit>UNITCLASS_INDENTURED_SERVANT</AllowsUnit>
+          <iChange>-1</iChange>
+        </AllowsUnitClass>
+        <AllowsUnitClass>
+          <AllowsUnit>UNITCLASS_COTTER</AllowsUnit>
+          <iChange>-1</iChange>
+        </AllowsUnitClass>
+      </AllowsUnitClassesImmigration>
+      <iGlobalFoodCostMod>1</iGlobalFoodCostMod>
     </CivicInfo>
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
@@ -5295,7 +5421,7 @@
       <iExpInBorderModifier>0</iExpInBorderModifier>
       <iNativeAttitudeChange>0</iNativeAttitudeChange>
       <iNativeCombatModifier>0</iNativeCombatModifier>
-      <iFatherPointModifier>0</iFatherPointModifier>
+      <iFatherPointModifier>25</iFatherPointModifier>
       <bDominateNativeBorders>0</bDominateNativeBorders>
       <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
       <YieldModifiers/>

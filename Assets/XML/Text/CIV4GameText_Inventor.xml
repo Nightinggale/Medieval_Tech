@@ -1051,11 +1051,19 @@
 	</TEXT>
   <TEXT>
     <Tag>TXT_KEY_CIVIC_PREVENT_UNITCLASS_IMMIGRATION</Tag>
-    <English>[ICON_BULLET]Prevent [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT] in Immigration</English>
+    <English>[ICON_BULLET]Prevents [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT] in Immigration</English>
     <French>[ICON_BULLET]Prevent [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT] in Immigration</French>
     <German>[ICON_BULLET]Prevent [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT] in Immigration</German>
     <Italian>[ICON_BULLET]Prevent [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT] in Immigration</Italian>
     <Spanish>[ICON_BULLET]Prevent [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT] in Immigration</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_ALLOW_UNITCLASS_IMMIGRATION</Tag>
+    <English>[ICON_BULLET]Allows [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT] in Immigration</English>
+    <French>[ICON_BULLET]Allows [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT] in Immigration</French>
+    <German>[ICON_BULLET]Allows [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT] in Immigration</German>
+    <Italian>[ICON_BULLET]Allows [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT] in Immigration</Italian>
+    <Spanish>[ICON_BULLET]Allows [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT] in Immigration</Spanish>
   </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INVENTION_ALLOWS_UNITCLASS</Tag>

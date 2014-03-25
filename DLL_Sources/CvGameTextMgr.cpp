@@ -5001,31 +5001,56 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
 
     for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
     {
-		//if (kCivicInfo.getAllowedUnitClassImmigration(iI) > 0)
-  //      {
-  //          for (int i = 0; i < GC.getNumUnitInfos(); ++i)
-  //          {
-  //              CvUnitInfo& kUnitInfo = GC.getUnitInfo((UnitTypes) i);
-  //              if (kUnitInfo.getUnitClassType() == (UnitClassTypes)iI)
-  //              {
-  //                  bool bShowUnit = true;
-  //                  if (eCivilization != NO_CIVILIZATION)
-  //                  {
-  //                      UnitTypes eUnit = (UnitTypes) GC.getCivilizationInfo(eCivilization).getCivilizationUnits((UnitClassTypes)iI);
-  //                      if (eUnit != (UnitTypes) i)
-  //                      {
-  //                          bShowUnit = false;
-  //                      }
-  //                  }
-  //                  if (bShowUnit)
-  //                  {
-  //                      szHelpText.append(NEWLINE);
-  //                      szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_PREVENT_UNITCLASS_IMMIGRATION", kUnitInfo.getDescription()));
-  //                  }
-  //                  //break;
-  //              }
-  //          }
-  //      }
+		if (kCivicInfo.getAllowedUnitClassImmigration(iI) > 0)
+        {
+            for (int i = 0; i < GC.getNumUnitInfos(); ++i)
+            {
+                CvUnitInfo& kUnitInfo = GC.getUnitInfo((UnitTypes) i);
+                if (kUnitInfo.getUnitClassType() == (UnitClassTypes)iI)
+                {
+                    bool bShowUnit = true;
+                    if (eCivilization != NO_CIVILIZATION)
+                    {
+                        UnitTypes eUnit = (UnitTypes) GC.getCivilizationInfo(eCivilization).getCivilizationUnits((UnitClassTypes)iI);
+                        if (eUnit != (UnitTypes) i)
+                        {
+                            bShowUnit = false;
+                        }
+                    }
+                    if (bShowUnit)
+                    {
+                        szHelpText.append(NEWLINE);
+                        szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_ALLOW_UNITCLASS_IMMIGRATION", kUnitInfo.getDescription()));
+                    }
+                    //break;
+                }
+            }
+        }
+		if (kCivicInfo.getAllowedUnitClassImmigration(iI) < 0)
+        {
+            for (int i = 0; i < GC.getNumUnitInfos(); ++i)
+            {
+                CvUnitInfo& kUnitInfo = GC.getUnitInfo((UnitTypes) i);
+                if (kUnitInfo.getUnitClassType() == (UnitClassTypes)iI)
+                {
+                    bool bShowUnit = true;
+                    if (eCivilization != NO_CIVILIZATION)
+                    {
+                        UnitTypes eUnit = (UnitTypes) GC.getCivilizationInfo(eCivilization).getCivilizationUnits((UnitClassTypes)iI);
+                        if (eUnit != (UnitTypes) i)
+                        {
+                            bShowUnit = false;
+                        }
+                    }
+                    if (bShowUnit)
+                    {
+                        szHelpText.append(NEWLINE);
+                        szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_PREVENT_UNITCLASS_IMMIGRATION", kUnitInfo.getDescription()));
+                    }
+                    //break;
+                }
+            }
+        }
         if (kCivicInfo.getAllowsUnitClasses(iI) > 0)
         {
             for (int i = 0; i < GC.getNumUnitInfos(); ++i)

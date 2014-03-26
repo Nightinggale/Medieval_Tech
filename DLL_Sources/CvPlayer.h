@@ -546,7 +546,7 @@ public:
 	int getAnarchyModifier() const;
 	void changeAnarchyModifier(int iChange);
 	bool canChangeCivics(CivicTypes* paeNewCivics) const;
-	void changeCivics(CivicTypes* paeNewCivics, bool bForce);
+	void changeCivics(CivicTypes* paeNewCivics, bool bForce = false);
 	int getRevolutionTimer() const;
 	void setRevolutionTimer(int iNewValue);
 	void changeRevolutionTimer(int iChange);

@@ -15298,8 +15298,12 @@ void CvPlayer::changeCivics(CivicTypes* paeNewCivics, bool bForce)
 			setCivic(((CivicOptionTypes)iI), paeNewCivics[iI]);
 		}
 	}
-
-	//setRevolutionTimer(std::max(1, ((100 + getAnarchyModifier()) * GC.getDefineINT("MIN_REVOLUTION_TURNS")) / 100) + iAnarchyLength);
+	int iMinTurns = GC.getDefineINT("MIN_REVOLUTION_TURNS");
+	if (!isHuman())
+	{
+		iMinTurns *= 5;
+	}
+	//setRevolutionTimer(std::max(1, ((100 + getAnarchyModifier()) * iMinTurns) / 100) + iAnarchyLength);
 
 	if (getID() == GC.getGameINLINE().getActivePlayer())
 	{

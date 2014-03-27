@@ -3428,13 +3428,12 @@ bool CvDLLButtonPopup::launchCivicOptionPopup(CvPopup* pPopup, CvPopupInfo &info
     FatherPointTypes eFatherPoint = (FatherPointTypes)GC.getXMLval(XML_FATHER_POINT_REAL_TRADE);
     if (info.getData1() == -3)
     {
-        CivicOptionTypes eCivicOption = CIVICOPTION_INVENTIONS;
         FatherPointTypes eFatherPoint = (FatherPointTypes)GC.getXMLval(XML_FATHER_POINT_REAL_TRADE);
         gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_CHOOSE_TRADING_PERK"));
         for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
         {
             CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes) iCivic);
-            if (kCivicInfo.getCivicOptionType() == eCivicOption)
+            if (kCivicInfo.getCivicOptionType() == CIVICOPTION_INVENTIONS)
             {
                 if (GC.getCivicInfo((CivicTypes)iCivic).getRequiredFatherPoints(eFatherPoint) > 0)
                 {

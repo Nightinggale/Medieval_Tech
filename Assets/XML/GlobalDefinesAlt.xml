@@ -607,10 +607,6 @@
 		<DefineTextVal>NATIVE_TECH</DefineTextVal>
 	</Define>
 	<Define>
-		<DefineName>CIVICOPTION_INVENTIONS</DefineName>
-		<DefineTextVal>CIVICOPTION_INVENTIONS</DefineTextVal>
-	</Define>
-	<Define>
 		<DefineName>MEDIEVAL_TRADE_TECH</DefineName>
 		<DefineTextVal>MEDIEVAL_TRADE_TECH</DefineTextVal>
 	</Define>

@@ -8985,7 +8985,7 @@ int CvGameTextMgr::setCityYieldModifierString(CvWStringBuffer& szBuffer, YieldTy
 	int iCivicMod = 0;
 	for (int i = 0; i < GC.getNumCivicOptionInfos(); i++)
 	{
-		if (NO_CIVIC != kOwner.getCivic((CivicOptionTypes)i) && (CivicOptionTypes)i != CIVICOPTION_INVENTIONS)
+		if (NO_CIVIC != kOwner.getCivic((CivicOptionTypes)i))
 		{
 			iCivicMod += GC.getCivicInfo(kOwner.getCivic((CivicOptionTypes)i)).getYieldModifier(eYieldType);
 		}

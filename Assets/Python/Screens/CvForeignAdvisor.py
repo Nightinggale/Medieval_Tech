@@ -32,7 +32,9 @@ class CvForeignAdvisor:
 		self.Y_LEADER = 115
 		self.H_LEADER = 64
 		self.W_LEADER = 64
-
+		#Tks Civics
+		self.CIVIC_BUTTON_SIZE = 24
+		#Tke
 		self.X_LEGEND = 20
 		self.Y_LEGEND = 530
 		self.H_LEGEND = 180
@@ -181,13 +183,26 @@ class CvForeignAdvisor:
 
 			szTempBuffer = u"<color=%d,%d,%d,%d>%s</color>  " %(gc.getPlayer(iLoopPlayer).getPlayerTextColorR(), gc.getPlayer(iLoopPlayer).getPlayerTextColorG(), gc.getPlayer(iLoopPlayer).getPlayerTextColorB(), gc.getPlayer(iLoopPlayer).getPlayerTextColorA(), gc.getPlayer(iLoopPlayer).getName())
 			screen.setTextAt("NameString" + str(j), mainPanelName, "<font=4>" + szTempBuffer + "</font>", CvUtil.FONT_LEFT_JUSTIFY, 30, 10 + (j * 140), -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
-
+			#Tks Civics
 			iRow = 0
+			testbuffer = "Help"
+			if (not gc.getPlayer(iLoopPlayer).isNative() and not gc.getPlayer(iLoopPlayer).isEurope()):
+				
+				if (gc.getPlayer(iLoopPlayer).getCivic(0) != -1):
+					#screen.setTextAt("Test" + str(j), mainPanelName, "<font=4>" + testbuffer + "</font>", CvUtil.FONT_LEFT_JUSTIFY, 30, 50 + (j * 140), -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+					iButtonRow = 110
+					iButtonRowY = 40 + (j * 140)
+					for iI in range (gc.getNumCivicOptionInfos()):
+						iCivic = gc.getPlayer(iLoopPlayer).getCivic(iI)
+						#screen.setImageButton("Civic" + str(iI), gc.getCivicInfo(iCivic).getButton(), iButtonRow, iButtonRowY, self.CIVIC_BUTTON_SIZE, self.CIVIC_BUTTON_SIZE, WidgetTypes.WIDGET_PEDIA_JUMP_TO_CIVIC, iCivic, 1)
+						screen.addDDSGFCAt("Civic" + str(iI) + str(iLoopPlayer), mainPanelName, gc.getCivicInfo(iCivic).getButton(), iButtonRow, iButtonRowY, self.CIVIC_BUTTON_SIZE, self.CIVIC_BUTTON_SIZE, WidgetTypes.WIDGET_PEDIA_JUMP_TO_CIVIC, iCivic, -1, False)
+						iButtonRow = iButtonRow + self.CIVIC_BUTTON_SIZE
+			#tke
 			for i in range(gc.getGame().getIndexAfterLastDeal()):
 				deal = gc.getGame().getDeal(i)
 
 				if (deal.getFirstPlayer() == iLoopPlayer and deal.getSecondPlayer() == self.iActiveLeader and not deal.isNone()) or (deal.getSecondPlayer() == iLoopPlayer and deal.getFirstPlayer() == self.iActiveLeader):
-					screen.setTextAt("DealString" + str(i), playerPanelName, "<font=3>" + CyGameTextMgr().getDealString(deal, iLoopPlayer) + "</font>", CvUtil.FONT_LEFT_JUSTIFY, 110, 20 + (iRow * 20), -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_DEAL_KILL, deal.getID(), -1 )
+					screen.setTextAt("DealString" + str(i), playerPanelName, "<font=3>" + CyGameTextMgr().getDealString(deal, iLoopPlayer) + "</font>", CvUtil.FONT_LEFT_JUSTIFY, 110, 50 + (iRow * 20), -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_DEAL_KILL, deal.getID(), -1 )
 					iRow += 1
 
 	def drawRelations(self, bInitial):

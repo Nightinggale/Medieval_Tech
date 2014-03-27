@@ -92,12 +92,12 @@ class CvCongressAdvisor:
 		#self.MyTechs = []
 		bFoundTech = False
 		
-		for iTech in range(gc.getNumCivicInfos()):
-			if (self.player.getIdeasResearched(iTech) > 0):
-				if (bFoundTech == False):
-					bFoundTech = True
-					#self.MyFathers.append(-5)
-				self.MyFathers.append(iTech)
+		#for iTech in range(gc.getNumCivicInfos()):
+		#	if (self.player.getIdeasResearched(iTech) > 0):
+		#		if (bFoundTech == False):
+		#			bFoundTech = True
+		#			#self.MyFathers.append(-5)
+		#		self.MyFathers.append(iTech)
 				#self.MyTechs.append(iTech)
 		
 		if (self.FatherColumn == 0) or (self.getActualColumnCount() <= self.MaxColumnCount):

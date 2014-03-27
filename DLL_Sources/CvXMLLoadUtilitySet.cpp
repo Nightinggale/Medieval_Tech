@@ -920,9 +920,9 @@ bool CvXMLLoadUtility::SetPostGlobalsGlobalDefines()
 		GC.getDefinesVarSystem()->SetValue("TREASURE_UNITCLASS", idx);
 
 		///TKs Invention Core Mod v 1.0
-		SetGlobalDefine("CIVICOPTION_INVENTIONS", szVal);
+		/*SetGlobalDefine("CIVICOPTION_INVENTIONS", szVal);
 		idx = FindInInfoClass(szVal);
-		GC.getDefinesVarSystem()->SetValue("CIVICOPTION_INVENTIONS", idx);
+		GC.getDefinesVarSystem()->SetValue("CIVICOPTION_INVENTIONS", idx);*/
 
 		SetGlobalDefine("DEFAULT_NATIVE_TRADE_PROFESSION", szVal);
 		idx = FindInInfoClass(szVal);
@@ -2782,7 +2782,7 @@ DllExport bool CvXMLLoadUtility::LoadPlayerOptions()
 
 	// hardcode NONE to -1 when reading XML files
 	GC.setInfoTypeFromString("NONE", -1);
-	//GC.setInfoTypeFromString("CIVICOPTION_INVENTIONS", -1); //Tk Civic Change
+	GC.setInfoTypeFromString("CIVICOPTION_INVENTIONS", -1); //Tk Civic Change
 
 	// load options and graphic files
 	loadXMLFile(XML_FILE_CIV4PlayerOptionInfos);

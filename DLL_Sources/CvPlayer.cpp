@@ -241,12 +241,6 @@ void CvPlayer::init(PlayerTypes eID)
 
 		for (int iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
 		{
-			//Tks Civics
-			if ((CivicOptionTypes)iI == CIVICOPTION_INVENTIONS)
-			{
-				continue;
-			}
-			//Tke
 			setCivic(((CivicOptionTypes)iI), ((CivicTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationInitialCivics(iI))));
 		}
 		//Tks Civic Screen
@@ -11438,10 +11432,6 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
 		clearCivicCombatBonuses();
 		for (int iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
 		{
-			if ((CivicOptionTypes)iI == CIVICOPTION_INVENTIONS)
-			{
-				continue;
-			}
 			if (getCivic((CivicOptionTypes)iI) != NO_CIVIC)
 			{
 				for (int iJ = 0; iJ < GC.getCivicInfo(getCivic((CivicOptionTypes)iI)).getNumCivicCombatBonus(); iJ++)
@@ -15184,11 +15174,14 @@ bool CvPlayer::canChangeCivics(CivicTypes* paeNewCivics) const
 		// XXX is this necessary?
 		for (iI = 0; iI < GC.getNumCivicInfos(); iI++)
 		{
-			if (canDoCivics((CivicTypes)iI))
+			if (GC.getCivicInfo((CivicTypes) iI).getCivicOptionType() != NO_CIVICOPTION)
 			{
-				if (getCivic((CivicOptionTypes)GC.getCivicInfo((CivicTypes) iI).getCivicOptionType()) != iI)
+				if (canDoCivics((CivicTypes)iI))
 				{
-					return true;
+					if (getCivic((CivicOptionTypes)GC.getCivicInfo((CivicTypes) iI).getCivicOptionType()) != iI)
+					{
+						return true;
+					}
 				}
 			}
 		}
@@ -15204,8 +15197,9 @@ bool CvPlayer::canChangeCivics(CivicTypes* paeNewCivics) const
 					return false;
 				}
 			}*/
-
-			if (getCivic((CivicOptionTypes)iI) != paeNewCivics[iI])
+			CivicTypes eCurrentCivic = getCivic((CivicOptionTypes)iI);
+			CivicTypes eNewCivic = paeNewCivics[iI];
+			if (eCurrentCivic != eNewCivic)
 			{
 				return true;
 			}

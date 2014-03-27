@@ -206,13 +206,13 @@ class CvTradeAdvisor:
 					Disallow = gc.getCivicInfo(iCivic).getDisallowsTech()
 					DisAllowedTech[Disallow] = True
 		for iCivic in range(gc.getNumCivicInfos()):
-			if (gc.getCivicInfo(iCivic).getCivicOptionType() == 0):
+			if (gc.getCivicInfo(iCivic).getCivicOptionType() == -1):
 				if gc.getCivicInfo(iCivic).getInventionCategory() == -1 and iCivic == 2:
 					
 
 					
 					for iListCivic in range(gc.getNumCivicInfos()):
-						if (gc.getCivicInfo(iListCivic).getCivicOptionType() == 0):
+						if (gc.getCivicInfo(iListCivic).getCivicOptionType() == -1):
 							
 							iCategory = gc.getCivicInfo(iListCivic).getInventionCategory()
 							
@@ -230,7 +230,7 @@ class CvTradeAdvisor:
 									szFatherTitle = gc.getCivicInfo(iListCivic).getDescription()
 									ArtTechHolder = ArtFileMgr.getInterfaceArtInfo("INTERFACE_HOLDS_TECH").getPath()
 									TextColor = gc.getInfoTypeForString("COLOR_FONT_GOLD")
-									if (not player.canDoCivics(iListCivic)):
+									if (not player.canDoCivics(iListCivic, False)):
 										TextColor = gc.getInfoTypeForString("COLOR_FONT_CREAM")
 										ArtTechHolder = ArtFileMgr.getInterfaceArtInfo("INTERFACE_CATALOG_TECH").getPath()
 									Magnefy_X = localx + self.MagnefyS_X 
@@ -269,7 +269,7 @@ class CvTradeAdvisor:
 										
 									else:
 										TurnstoComplete = ""
-										if (player.canDoCivics(iListCivic)):
+										if (player.canDoCivics(iListCivic, False)):
 											#iTurns = player.getCurrentResearchProgress(True, iListCivic)
 											if iTurns > 0:
 												TurnstoComplete = " (" + str(iTurns) + slash + str(iTradePointCost) +")"
@@ -335,7 +335,7 @@ class CvTradeAdvisor:
 				player = gc.getPlayer(gc.getGame().getActivePlayer())
 				#if player.getResearchPartner() != -1:
 					#return 0
-				#if player.canDoCivics(inputClass.getData2()):
+				#if player.canDoCivics(inputClass.getData2(), False):
 				screen = self.getScreen()
 				iListCivic = inputClass.getData2()
 				localx = 30 + ( (gc.getCivicInfo(iListCivic).getX_Location() - 1) * ( ( self.BOX_INCREMENT_X_SPACING + self.BOX_INCREMENT_WIDTH ) * self.PIXEL_INCREMENT ) )
@@ -461,7 +461,7 @@ class CvTradeAdvisor:
 			if player.getResearchPartner() != -1:
 				locked = localText.getText("TXT_KEY_CITY_CURRENT_RESEARCH_LOCKED", ())
 				return szColoredName + szHelp + "\n" + locked
-			elif player.canDoCivics(iData2):
+			elif player.canDoCivics(iData2, False):
 				return szColoredName + szHelp + localText.getText("TXT_KEY_CLICK_TO_RESEARCH_THIS", ())
 			
 			else:
@@ -510,7 +510,7 @@ class CvTradeAdvisor:
 
 		for i in range(gc.getNumCivicInfos()):
 
-			if (gc.getCivicInfo(i).getCivicOptionType() != 0):
+			if (gc.getCivicInfo(i).getCivicOptionType() != -1):
 				continue
 				
 			if gc.getCivicInfo(i).getInventionCategory() == -1:

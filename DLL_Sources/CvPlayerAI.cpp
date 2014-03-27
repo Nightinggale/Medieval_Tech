@@ -5683,7 +5683,7 @@ CivicTypes CvPlayerAI::AI_bestCivic(CivicOptionTypes eCivicOption)
 
 	for (iI = 0; iI < GC.getNumCivicInfos(); iI++)
 	{
-		if (GC.getCivicInfo((CivicTypes)iI).getCivicOptionType() != CIVICOPTION_INVENTIONS && GC.getCivicInfo((CivicTypes)iI).getCivicOptionType() == eCivicOption)
+		if (GC.getCivicInfo((CivicTypes)iI).getCivicOptionType() == eCivicOption)
 		{
 			if (canDoCivics((CivicTypes)iI))
 			{

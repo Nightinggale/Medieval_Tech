@@ -157,7 +157,6 @@
 			</FreeYields>
 			<CapturedCityUnitClass>NONE</CapturedCityUnitClass>
       <InitialCivics>
-        <CivicType>NONE</CivicType>
         <CivicType>CIVIC_LOCALISM</CivicType>
         <CivicType>CIVIC_APATHY</CivicType>
         <CivicType>CIVIC_LOCAL_TRADE</CivicType>
@@ -410,7 +409,6 @@
 			</FreeYields>
 			<CapturedCityUnitClass>NONE</CapturedCityUnitClass>
       <InitialCivics>
-        <CivicType>NONE</CivicType>
         <CivicType>CIVIC_LOCALISM</CivicType>
         <CivicType>CIVIC_APATHY</CivicType>
         <CivicType>CIVIC_LOCAL_TRADE</CivicType>
@@ -608,7 +606,6 @@
 			</FreeYields>
 			<CapturedCityUnitClass>NONE</CapturedCityUnitClass>
       <InitialCivics>
-        <CivicType>NONE</CivicType>
         <CivicType>CIVIC_LOCALISM</CivicType>
         <CivicType>CIVIC_APATHY</CivicType>
         <CivicType>CIVIC_LOCAL_TRADE</CivicType>
@@ -853,7 +850,6 @@
 			</FreeYields>
 			<CapturedCityUnitClass>NONE</CapturedCityUnitClass>
       <InitialCivics>
-        <CivicType>NONE</CivicType>
         <CivicType>CIVIC_LOCALISM</CivicType>
         <CivicType>CIVIC_APATHY</CivicType>
         <CivicType>CIVIC_LOCAL_TRADE</CivicType>
@@ -1051,7 +1047,6 @@
 			</FreeYields>
 			<CapturedCityUnitClass>NONE</CapturedCityUnitClass>
       <InitialCivics>
-        <CivicType>NONE</CivicType>
         <CivicType>CIVIC_LOCALISM</CivicType>
         <CivicType>CIVIC_APATHY</CivicType>
         <CivicType>CIVIC_LOCAL_TRADE</CivicType>
@@ -1254,7 +1249,6 @@
 			</FreeYields>
 			<CapturedCityUnitClass>NONE</CapturedCityUnitClass>
       <InitialCivics>
-        <CivicType>NONE</CivicType>
         <CivicType>CIVIC_LOCALISM</CivicType>
         <CivicType>CIVIC_APATHY</CivicType>
         <CivicType>CIVIC_LOCAL_TRADE</CivicType>
@@ -1454,7 +1448,6 @@
 			</FreeYields>
 			<CapturedCityUnitClass>NONE</CapturedCityUnitClass>
       <InitialCivics>
-        <CivicType>NONE</CivicType>
         <CivicType>CIVIC_LOCALISM</CivicType>
         <CivicType>CIVIC_APATHY</CivicType>
         <CivicType>CIVIC_LOCAL_TRADE</CivicType>
@@ -1652,7 +1645,6 @@
 			</FreeYields>
 			<CapturedCityUnitClass>NONE</CapturedCityUnitClass>
       <InitialCivics>
-        <CivicType>NONE</CivicType>
         <CivicType>CIVIC_LOCALISM</CivicType>
         <CivicType>CIVIC_APATHY</CivicType>
         <CivicType>CIVIC_LOCAL_TRADE</CivicType>
@@ -1845,7 +1837,6 @@
 			</FreeYields>
 			<CapturedCityUnitClass>NONE</CapturedCityUnitClass>
       <InitialCivics>
-        <CivicType>NONE</CivicType>
         <CivicType>CIVIC_LOCALISM</CivicType>
         <CivicType>CIVIC_APATHY</CivicType>
         <CivicType>CIVIC_LOCAL_TRADE</CivicType>
@@ -2034,7 +2025,6 @@
 			</FreeYields>
 			<CapturedCityUnitClass>NONE</CapturedCityUnitClass>
       <InitialCivics>
-        <CivicType>NONE</CivicType>
         <CivicType>CIVIC_LOCALISM</CivicType>
         <CivicType>CIVIC_APATHY</CivicType>
         <CivicType>CIVIC_LOCAL_TRADE</CivicType>

@@ -84,11 +84,11 @@ class CvCivicsScreen:
 		self.m_paeDisplayCivics = []
 		self.m_paeOriginalCivics = []
 		for i in range (gc.getNumCivicOptionInfos()):
-			if (i == 0 or activePlayer.getCivic(i) == -1):
-				self.m_paeCurrentCivics.append(0);
-				self.m_paeDisplayCivics.append(0);
-				self.m_paeOriginalCivics.append(0);
-				continue
+			#if (i == 0 or activePlayer.getCivic(i) == -1):
+			#	self.m_paeCurrentCivics.append(0);
+			#	self.m_paeDisplayCivics.append(0);
+			#	self.m_paeOriginalCivics.append(0);
+			#	continue
 			self.m_paeCurrentCivics.append(activePlayer.getCivic(i));
 			self.m_paeDisplayCivics.append(activePlayer.getCivic(i));
 			self.m_paeOriginalCivics.append(activePlayer.getCivic(i));
@@ -171,9 +171,9 @@ class CvCivicsScreen:
 	def drawAllButtons(self):				
 
 		for i in range(gc.getNumCivicOptionInfos()):
-			if (i == 0):
-				continue
-			fX = self.HEADINGS_SPACING  + (self.HEADINGS_WIDTH + self.HEADINGS_SPACING) * (i - 1)
+			#if (i == 0):
+			#	continue
+			fX = self.HEADINGS_SPACING  + (self.HEADINGS_WIDTH + self.HEADINGS_SPACING) * (i)
 			fY = self.HEADINGS_TOP
 			szAreaID = self.AREA_NAME + str(i)
 			screen = self.getScreen()
@@ -297,7 +297,7 @@ class CvCivicsScreen:
 		szHelpText += CyGameTextMgr().parseCivicInfo(iCivic, False, True, True, False, activePlayer.getCivilizationType())
 		
 		#self.getScreen().setText("testing", "Background", u"<font=4>" + szPaneID + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, 750, 500, self.Z_TEXT, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, 1, 0)	
-		fX = self.HEADINGS_SPACING  + (self.HEADINGS_WIDTH + self.HEADINGS_SPACING) * (iCivicOption - 1)
+		fX = self.HEADINGS_SPACING  + (self.HEADINGS_WIDTH + self.HEADINGS_SPACING) * (iCivicOption)
 
 		screen.setLabel(self.HELP_HEADER_NAME + str(iCivicOption), "Background",  u"<font=3>" + gc.getCivicInfo(self.m_paeDisplayCivics[iCivicOption]).getDescription().upper() + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, fX + self.HEADINGS_WIDTH/2, self.HELP_TOP + self.TEXT_MARGIN, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 			
@@ -313,9 +313,9 @@ class CvCivicsScreen:
 	# Will draw the help text
 	def drawAllHelpText(self):	
 		for i in range (gc.getNumCivicOptionInfos()):		
-			if (i == 0):
-				continue
-			fX = self.HEADINGS_SPACING  + (self.HEADINGS_WIDTH + self.HEADINGS_SPACING) * (i - 1)
+			#if (i == 0):
+			#	continue
+			fX = self.HEADINGS_SPACING  + (self.HEADINGS_WIDTH + self.HEADINGS_SPACING) * i
 
 			szPaneID = "CivicsHelpTextBackground" + str(i)
 			screen = self.getScreen()

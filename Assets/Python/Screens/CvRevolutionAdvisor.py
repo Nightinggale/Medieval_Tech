@@ -94,7 +94,7 @@ class CvRevolutionAdvisor:
 		self.drawPlayerTroops()
 		#self.drawColonialTroops()
 		self.drawWarMaterials()
-		self.drawCivics()
+		#self.drawCivics()
 		
 		return 0
 

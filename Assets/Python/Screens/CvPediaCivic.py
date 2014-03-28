@@ -89,6 +89,8 @@ class CvPediaCivic:
 		iCivicOptionType = gc.getCivicInfo(self.iCivic).getCivicOptionType()
 		if (iCivicOptionType != -1):
 			screen.appendListBoxString(panelName, u"<font=4>" + gc.getCivicOptionInfo(iCivicOptionType).getDescription().upper() + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+		else:
+			screen.appendListBoxString(panelName, u"<font=4>" + "Invention" + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
 
 	def placeSpecial(self):
 		screen = self.top.getScreen()
@@ -127,7 +129,7 @@ class CvPediaCivic:
 			#if gc.getCivicInfo(j).getCivicOptionType() == 5 and gc.getCivicInfo(j).getInventionCategory() == -1:
 				#continue
 			#TKs
-			if gc.getCivicInfo(j).getCivicOptionType() == 0:
+			if gc.getCivicInfo(j).getCivicOptionType() != -1 or gc.getCivicInfo(j).getInventionCategory() != -1:
 				listSorted[j] = (gc.getCivicInfo(j).getDescription(), j)
 			#	Constitute = localText.getText("TXT_KEY_CONSTITUTE", ())
 			#	listSorted[j] = (Constitute + gc.getCivicInfo(j).getDescription(), j)
@@ -141,7 +143,7 @@ class CvPediaCivic:
 		for iI in range(gc.getNumCivicInfos()):
 			if (not gc.getCivicInfo(listSorted[iI][1]).isGraphicalOnly()):
 				#TKs
-				if gc.getCivicInfo(listSorted[iI][1]).getCivicOptionType() == 0 and gc.getCivicInfo(listSorted[iI][1]).getInventionCategory() == -1:
+				if gc.getCivicInfo(listSorted[iI][1]).getCivicOptionType() == -1 and gc.getCivicInfo(listSorted[iI][1]).getInventionCategory() == -1:
 					continue
 				#TKe
 				if bRedraw:

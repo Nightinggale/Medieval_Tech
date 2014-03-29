@@ -1731,11 +1731,19 @@
   </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ALLOWS_DEFAULT_UNIT</Tag>
-		<English>[ICON_BULLET]Your towns will produce [COLOR_HIGHLIGHT_TEXT]Peasants[COLOR_REVERT] instead of [COLOR_HIGHLIGHT_TEXT]Serfs[COLOR_REVERT]</English>
-		<French>[ICON_BULLET]Your towns will produce [COLOR_HIGHLIGHT_TEXT]Peasants[COLOR_REVERT] instead of [COLOR_HIGHLIGHT_TEXT]Serfs[COLOR_REVERT]</French>
-		<German>[ICON_BULLET]Your towns will produce [COLOR_HIGHLIGHT_TEXT]Peasants[COLOR_REVERT] instead of [COLOR_HIGHLIGHT_TEXT]Serfs[COLOR_REVERT]</German>
-		<Italian>[ICON_BULLET]Your towns will produce [COLOR_HIGHLIGHT_TEXT]Peasants[COLOR_REVERT] instead of [COLOR_HIGHLIGHT_TEXT]Serfs[COLOR_REVERT]</Italian>
-		<Spanish>[ICON_BULLET]Your towns will produce [COLOR_HIGHLIGHT_TEXT]Peasants[COLOR_REVERT] instead of [COLOR_HIGHLIGHT_TEXT]Serfs[COLOR_REVERT]</Spanish>
+		<English>[ICON_BULLET]Your towns will produce [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] when overflowing with food</English>
+		<French>[ICON_BULLET]Your towns will produce [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] when overflowing with food</French>
+		<German>[ICON_BULLET]Your towns will produce [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] when overflowing with food</German>
+		<Italian>[ICON_BULLET]Your towns will produce [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] when overflowing with food</Italian>
+		<Spanish>[ICON_BULLET]Your towns will produce [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] when overflowing with food</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ALLOWS_LUXURY_UNIT</Tag>
+		<English>[ICON_BULLET]Your towns will produce [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] when overflowing with luxury food</English>
+		<French>[ICON_BULLET]Your towns will produce [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] when overflowing with luxury food</French>
+		<German>[ICON_BULLET]Your towns will produce [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] when overflowing with luxury food</German>
+		<Italian>[ICON_BULLET]Your towns will produce [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] when overflowing with luxury food</Italian>
+		<Spanish>[ICON_BULLET]Your towns will produce [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] when overflowing with luxury food</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_REBEL_COMBAT_MOD</Tag>

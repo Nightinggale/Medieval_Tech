@@ -5174,10 +5174,58 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
 	   szHelpText.append(gDLL->getText("TXT_KEY_ALLOWS_TRADE_MAPS"));
 	}
 
-	if (eCivic == (CivicTypes)GC.getXMLval(XML_FREE_PEASANT_CIVIC))
+	if (kCivicInfo.getNewDefaultUnitClass() != NO_UNITCLASS)
 	{
-	   szHelpText.append(NEWLINE);
-	   szHelpText.append(gDLL->getText("TXT_KEY_ALLOWS_DEFAULT_UNIT"));
+		UnitClassTypes eClass = (UnitClassTypes)kCivicInfo.getNewDefaultUnitClass();
+
+		for (int i = 0; i < GC.getNumUnitInfos(); ++i)
+        {
+            CvUnitInfo& kUnitInfo = GC.getUnitInfo((UnitTypes) i);
+            if (kUnitInfo.getUnitClassType() == eClass)
+            {
+                bool bShowUnit = true;
+                if (eCivilization != NO_CIVILIZATION)
+                {
+                    UnitTypes eUnit = (UnitTypes) GC.getCivilizationInfo(eCivilization).getCivilizationUnits(eClass);
+                    if (eUnit != (UnitTypes) i)
+                    {
+                        bShowUnit = false;
+                    }
+                }
+                if (bShowUnit)
+                {
+                    szHelpText.append(NEWLINE);
+                    szHelpText.append(gDLL->getText("TXT_KEY_ALLOWS_DEFAULT_UNIT", kUnitInfo.getDescription()));
+                }
+            }
+        }
+	}
+
+	if (kCivicInfo.getNewLuxuryUnitClass() != NO_UNITCLASS)
+	{
+		UnitClassTypes eClass = (UnitClassTypes)kCivicInfo.getNewLuxuryUnitClass();
+
+		for (int i = 0; i < GC.getNumUnitInfos(); ++i)
+        {
+            CvUnitInfo& kUnitInfo = GC.getUnitInfo((UnitTypes) i);
+            if (kUnitInfo.getUnitClassType() == eClass)
+            {
+                bool bShowUnit = true;
+                if (eCivilization != NO_CIVILIZATION)
+                {
+                    UnitTypes eUnit = (UnitTypes) GC.getCivilizationInfo(eCivilization).getCivilizationUnits(eClass);
+                    if (eUnit != (UnitTypes) i)
+                    {
+                        bShowUnit = false;
+                    }
+                }
+                if (bShowUnit)
+                {
+                    szHelpText.append(NEWLINE);
+                    szHelpText.append(gDLL->getText("TXT_KEY_ALLOWS_LUXURY_UNIT", kUnitInfo.getDescription()));
+                }
+            }
+        }
 	}
 
     if (kCivicInfo.getConvertsUnitsTo() != NO_UNITCLASS && kCivicInfo.getConvertsUnitsFrom() != NO_UNITCLASS)

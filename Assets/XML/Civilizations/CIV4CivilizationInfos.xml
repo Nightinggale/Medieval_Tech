@@ -3996,7 +3996,7 @@
 					<UnitType>UNIT_NATIVE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
+					<UnitClassType>UNITCLASS_SERF</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -4434,7 +4434,7 @@
 					<UnitType>UNIT_NATIVE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
+					<UnitClassType>UNITCLASS_SERF</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -4871,7 +4871,7 @@
 					<UnitType>UNIT_NATIVE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
+					<UnitClassType>UNITCLASS_SERF</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -5312,7 +5312,7 @@
 					<UnitType>UNIT_NATIVE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
+					<UnitClassType>UNITCLASS_SERF</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -5760,7 +5760,7 @@
 					<UnitType>UNIT_NATIVE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
+					<UnitClassType>UNITCLASS_SERF</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -6197,7 +6197,7 @@
 					<UnitType>UNIT_NATIVE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
+					<UnitClassType>UNITCLASS_SERF</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -6626,7 +6626,7 @@
 					<UnitType>UNIT_NATIVE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
+					<UnitClassType>UNITCLASS_SERF</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -7053,7 +7053,7 @@
 					<UnitType>UNIT_NATIVE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
+					<UnitClassType>UNITCLASS_SERF</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -7529,7 +7529,7 @@
 					<UnitType>UNIT_NATIVE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
+					<UnitClassType>UNITCLASS_SERF</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>

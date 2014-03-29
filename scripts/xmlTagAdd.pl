@@ -63,6 +63,10 @@ writeFile(@lines);
 updateFile ("Button",       "<ProfessionSubTypes/>");
 writeFile(@lines);
 
+@lines = (openFile('GameInfo/CIV4CivicInfos.xml'));
+updateFile ("NewDefaultUnitClass",     "<NewLuxuryUnitClass/>");
+writeFile(@lines);
+
 # end if setup.
 
 sub updateFile

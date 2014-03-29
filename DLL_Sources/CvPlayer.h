@@ -532,6 +532,9 @@ public:
 	UnitTypes getDefaultPopUnit() const;
 	///TKs Med
 	///Tk Civics
+	void setLuxuryPopUnit(UnitTypes eUnit);
+	UnitTypes getLuxuryPopUnit() const;
+
 	UnitClassTypes getConvertedNativeUnitClass() const;
     void setConvertedNativeUnitClass(UnitClassTypes eUnitClass);
 	void resetConnectedPlayerYieldBonus(CivicTypes eCivic = NO_CIVIC, int iChange = 1);
@@ -612,7 +615,6 @@ public:
 	int getMonasterys() const;
 	int getCastles() const;
 	int getCityPlotFoodBonus() const;
-	void changeCityPlotFoodBonus(int iChange);
 	unsigned int getNumDocksNextUnits() const;
 	void changeNumDocksNextUnits(int iChange);
 	int getMissionaryHide() const;
@@ -888,8 +890,11 @@ protected:
 	int m_iMonasterys;
 	int m_iCastles;
 	int m_iCityPlotFoodBonus;
-	unsigned int m_iNumDocksNextUnits;
+	int m_iNumDocksNextUnits;
 	UnitTypes m_iDefaultPopUnit;
+	///Tks Civics
+	UnitTypes m_iLuxuryPopUnit;
+	///Tke Civics
 	UnitClassTypes m_iConvertedNativeUnit;
 	int m_iFreeTechs;
 	int m_bTechsInitialized;
@@ -1183,10 +1188,10 @@ inline bool CvPlayer::canUseBonus(BonusTypes eBonus) const
 	return eBonus >= 0 ? m_ja_bAllowedBonus.get(eBonus) : false;
 }
 
-//inline int CvPlayer::getCityPlotFoodBonus() const
-///{
-	//return m_iCityPlotFoodBonus;
-//}
+inline int CvPlayer::getCityPlotFoodBonus() const
+{
+	return m_iCityPlotFoodBonus;
+}
 // invention effect cache - end - Nightinggale
 
 /// PlotGroup - start - Nightinggale

@@ -7285,20 +7285,23 @@ void CvCity::doGrowth()
     ///TKs Med
     bool bNotMaxed = true;
 
-#ifdef USE_NOBLE_CLASS
     //bool bRationsGrowth = false;
-    if (!isNative() && getYieldStored(YIELD_GRAIN) >= GC.getXMLval(XML_BASE_CITY_LUXURY_FOOD_THRESHOLD_MOD) && bNotMaxed)
-    {
+    //if (!isNative() && getYieldStored(YIELD_GRAIN) >= GC.getXMLval(XML_BASE_CITY_LUXURY_FOOD_THRESHOLD_MOD) && bNotMaxed)
+    
+	UnitTypes eUnit = GET_PLAYER(getOwnerINLINE()).getLuxuryPopUnit();
+	if (YIELD_LUXURY_GROWTH != NO_YIELD && NO_UNIT != eUnit)
+	{
         if (!AI_isEmphasizeAvoidGrowth())
 		{
-            UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getXMLval(XML_DEFAULT_NOBLE_GROWTH_UNIT_CLASS));
+			//UnitTypes eUnit = GET_PLAYER(getOwnerINLINE()).getLuxuryPopUnit();
             //if (GET_PLAYER(getOwnerINLINE()))
-            if (NO_UNIT != eUnit)
+            //if (NO_UNIT != eUnit)
+			if (getYieldStored(YIELD_LUXURY_GROWTH) >= GC.getXMLval(XML_BASE_CITY_LUXURY_FOOD_THRESHOLD_MOD) && bNotMaxed)
             {
                 CvUnit* pUnit = GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, (ProfessionTypes) GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession(), getX_INLINE(), getY_INLINE());
                 int iNewGrain = 0;
-                iNewGrain = getYieldStored(YIELD_GRAIN) - GC.getXMLval(XML_BASE_CITY_LUXURY_FOOD_THRESHOLD_MOD);
-                setYieldStored(YIELD_GRAIN, iNewGrain);
+                iNewGrain = getYieldStored(YIELD_LUXURY_GROWTH) - GC.getXMLval(XML_BASE_CITY_LUXURY_FOOD_THRESHOLD_MOD);
+                setYieldStored(YIELD_LUXURY_GROWTH, iNewGrain);
 
 
                 gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_CITY_NOBLE_GROWTH", getNameKey()), "AS2D_POSITIVE_DINK", MESSAGE_TYPE_INFO, GC.getYieldInfo(YIELD_FOOD).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
@@ -7307,7 +7310,6 @@ void CvCity::doGrowth()
             }
 		}
     }
-#endif
 
 
 
@@ -7360,6 +7362,8 @@ void CvCity::doGrowth()
 			if (eUnit == NO_UNIT)
 			{
 				///TKs Med
+				eUnit = (UnitTypes)GET_PLAYER(getOwnerINLINE()).getDefaultPopUnit();
+#if 0
 				bool bGetDefualtPopUnit = (GET_PLAYER(getOwnerINLINE()).getIdeasResearched((CivicTypes) GC.getXMLval(XML_FREE_PEASANT_CIVIC)) > 0);
 
 				if (isNative() || GET_PLAYER(getOwnerINLINE()).isEurope() || bGetDefualtPopUnit)
@@ -7370,6 +7374,7 @@ void CvCity::doGrowth()
 				{
 					eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getXMLval(XML_DEFAULT_GRAIN_GROWTH_UNIT_CLASS));
 				}
+#endif
 			}
 
 			if (NO_UNIT != eUnit)

@@ -71,8 +71,10 @@
       <!--These next two are used to convert units after this tech is research-->
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
-      <!--This will be the new Default population unit for when a City does its Growth or you clear specialty and such-->
+      <!--This will be the new Default population unitclass for when a City does its normal food Growth -->
 			<NewDefaultUnitClass/>
+	  <!--This will be the new Default population unitclass for when a City does its luxury food Growth -->
+			<NewLuxuryUnitClass/>
       <!--If this tech is researched the DisallowsTech will be none researchable-->
 			<DisallowsTech/>
       <!--Modifies the cost to move along routes. Example: put 1 to increase movement along roads by 1-->
@@ -171,6 +173,7 @@
 			<ConvertsUnitsTo/>
       <!--This will be the new Default population unit for when a City does its Growth or you clear specialty and such-->
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
       <!--If this tech is researched the DisallowsTech will be none researchable-->
 			<DisallowsTech/>
       <!--Modifies the cost to move along routes. Example: put 1 to increase movement along roads by 1-->
@@ -269,6 +272,7 @@
 			<ConvertsUnitsTo/>
       <!--This will be the new Default population unit for when a City does its Growth or you clear specialty and such-->
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
       <!--If this tech is researched the DisallowsTech will be none researchable-->
 			<DisallowsTech/>
       <!--Modifies the cost to move along routes. Example: put 1 to increase movement along roads by 1-->
@@ -367,6 +371,7 @@
 			<ConvertsUnitsTo/>
       <!--This will be the new Default population unit for when a City does its Growth or you clear specialty and such-->
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
       <!--If this tech is researched the DisallowsTech will be none researchable-->
 			<DisallowsTech/>
       <!--Modifies the cost to move along routes. Example: put 1 to increase movement along roads by 1-->
@@ -1244,7 +1249,7 @@
           <iValue>-1</iValue>
         </UnitClassFoodCost>
         <UnitClassFoodCost>
-          <UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
+          <UnitClassType>UNITCLASS_SERF</UnitClassType>
           <iValue>-1</iValue>
         </UnitClassFoodCost>
       </UnitClassFoodCosts>
@@ -1279,7 +1284,7 @@
       <ImmigrationConversion>NONE</ImmigrationConversion>
       <UnitClassFoodCosts>
         <UnitClassFoodCost>
-          <UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
+          <UnitClassType>UNITCLASS_SERF</UnitClassType>
           <iValue>-1</iValue>
         </UnitClassFoodCost>
       </UnitClassFoodCosts>
@@ -1319,7 +1324,7 @@
       <ImmigrationConversion>NONE</ImmigrationConversion>
       <AllowsUnitClassesImmigration>
         <AllowsUnitClass>
-          <AllowsUnit>UNITCLASS_INDENTURED_SERVANT</AllowsUnit>
+          <AllowsUnit>UNITCLASS_SERF</AllowsUnit>
           <iChange>-1</iChange>
         </AllowsUnitClass>
         <AllowsUnitClass>
@@ -1414,6 +1419,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<FreeUnitFirstToResearch>UNITCLASS_INVENTOR</FreeUnitFirstToResearch>
@@ -1482,6 +1488,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -1568,6 +1575,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -1640,6 +1648,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -1718,6 +1727,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -1800,6 +1810,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -1883,6 +1894,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -1951,6 +1963,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -2028,6 +2041,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -2096,6 +2110,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<AllowsRoutes>
@@ -2175,6 +2190,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -2243,6 +2259,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -2325,6 +2342,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<AllowsRoutes>
@@ -2414,6 +2432,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -2500,6 +2519,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -2591,6 +2611,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -2672,6 +2693,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -2750,6 +2772,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -2826,6 +2849,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -2902,6 +2926,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -2969,6 +2994,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -3053,6 +3079,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -3139,6 +3166,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -3226,6 +3254,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -3305,6 +3334,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -3388,6 +3418,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -3465,6 +3496,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -3552,6 +3584,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -3629,6 +3662,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -3718,6 +3752,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -3790,6 +3825,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -3867,6 +3903,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<FreeUnitFirstToResearch>UNITCLASS_RANCHER</FreeUnitFirstToResearch>
@@ -3936,6 +3973,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -4012,6 +4050,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -4100,6 +4139,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -4179,6 +4219,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -4274,6 +4315,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass>UNITCLASS_PAGE</NewLuxuryUnitClass>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -4357,6 +4399,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<FreeUnitFirstToResearch>UNITCLASS_HUNTSMAN</FreeUnitFirstToResearch>
@@ -4440,6 +4483,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -4517,6 +4561,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -4584,6 +4629,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<ConvertsResearchYield>YIELD_BELLS</ConvertsResearchYield>
 			<RouteMovementMod/>
@@ -4657,6 +4703,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -4734,6 +4781,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<FreeUnitFirstToResearch>UNITCLASS_DIGNITARY</FreeUnitFirstToResearch>
@@ -4817,6 +4865,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<FreeUnitFirstToResearch>UNITCLASS_PREACHER</FreeUnitFirstToResearch>
@@ -4900,6 +4949,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<FreeUnitFirstToResearch>UNITCLASS_JESTER</FreeUnitFirstToResearch>
@@ -4973,6 +5023,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<FreeUnitFirstToResearch/>
@@ -5041,6 +5092,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<ConvertsResearchYield>YIELD_CULTURE</ConvertsResearchYield>
 			<RouteMovementMod/>
@@ -5119,6 +5171,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<FreeUnitFirstToResearch>UNITCLASS_DISTILLER</FreeUnitFirstToResearch>
@@ -5196,6 +5249,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -5277,6 +5331,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -5344,6 +5399,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -5416,6 +5472,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<FreeUnitFirstToResearch>UNITCLASS_FRIGATE</FreeUnitFirstToResearch>
@@ -5496,6 +5553,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -5573,6 +5631,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech>TRADING_PERK2</DisallowsTech>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -5648,6 +5707,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech>TRADING_PERK1</DisallowsTech>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -5737,6 +5797,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -5813,6 +5874,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -5899,6 +5961,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -5974,6 +6037,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech>TRADING_PERK4</DisallowsTech>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -6049,6 +6113,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech>TRADING_PERK3</DisallowsTech>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -6126,6 +6191,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -6209,6 +6275,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -6294,7 +6361,8 @@
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
-			<NewDefaultUnitClass/>
+			<NewDefaultUnitClass>UNITCLASS_COLONIST</NewDefaultUnitClass>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -6375,6 +6443,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -6449,6 +6518,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -6524,6 +6594,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech>TRADING_PERK6</DisallowsTech>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -6599,6 +6670,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech>TRADING_PERK5</DisallowsTech>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -6674,6 +6746,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>

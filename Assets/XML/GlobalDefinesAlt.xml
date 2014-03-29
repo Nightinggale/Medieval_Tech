@@ -315,10 +315,6 @@
 		<DefineTextVal>CLIMATE_EUROPE</DefineTextVal>
 	</Define>
 	<Define>
-		<DefineName>FREE_PEASANT_CIVIC</DefineName>
-		<DefineTextVal>TRADING_GUILDS</DefineTextVal>
-	</Define>
-	<Define>
 		<DefineName>AI_MILITARY_PROFESSION_HACK</DefineName>
 		<iDefineIntVal>0</iDefineIntVal>
 	</Define>
@@ -578,17 +574,22 @@
 		<DefineName>DEFAULT_NOBLEMAN_CLASS</DefineName>
 		<DefineTextVal>UNITCLASS_NOBLEMAN</DefineTextVal>
 	</Define>
+	<!-- Default unitclass to get from overflowing regular food -->
+	<!-- This can be overwritten by NewDefaultUnitClass in civics -->
+	<!-- Civs having this class set to NO_UNIT (like natives) will use DEFAULT_POPULATION_UNITCLASS instead -->
 	<Define>
-		<DefineName>DEFAULT_GRAIN_GROWTH_UNIT_CLASS</DefineName>
-		<DefineTextVal>UNITCLASS_INDENTURED_SERVANT</DefineTextVal>
+		<DefineName>DEFAULT_GROWTH_UNITCLASS</DefineName>
+		<DefineTextVal>UNITCLASS_SERF</DefineTextVal>
 	</Define>
+	<!-- Default unitclass to get from overflowing luxury food -->
+	<!-- This can be overwritten by NewLuxuryUnitClass in civics -->
 	<Define>
-		<DefineName>DEFAULT_NOBLE_GROWTH_UNIT_CLASS</DefineName>
-		<DefineTextVal>UNITCLASS_PAGE</DefineTextVal>
+		<DefineName>DEFAULT_GROWTH_NOBLE_UNITCLASS</DefineName>
+		<DefineTextVal>NONE</DefineTextVal>
 	</Define>
-  <!-- This is the New Default Unit -->
+	<!-- Clear speciality converts to units to DEFAULT_POPULATION_UNITCLASS -->
 	<Define>
-		<DefineName>DEFAULT_DAWN_POPULATION_UNIT</DefineName>
+		<DefineName>DEFAULT_POPULATION_UNITCLASS</DefineName>
 		<DefineTextVal>UNITCLASS_COLONIST</DefineTextVal>
 	</Define>
   <!--Having this tech makes the Natives give you gifts more frequently-->

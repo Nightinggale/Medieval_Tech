@@ -7360,6 +7360,8 @@ void CvCity::doGrowth()
 			if (eUnit == NO_UNIT)
 			{
 				///TKs Med
+				eUnit = (UnitTypes)GET_PLAYER(getOwnerINLINE()).getDefaultPopUnit();
+#if 0
 				bool bGetDefualtPopUnit = (GET_PLAYER(getOwnerINLINE()).getIdeasResearched((CivicTypes) GC.getXMLval(XML_FREE_PEASANT_CIVIC)) > 0);
 
 				if (isNative() || GET_PLAYER(getOwnerINLINE()).isEurope() || bGetDefualtPopUnit)
@@ -7370,6 +7372,7 @@ void CvCity::doGrowth()
 				{
 					eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getXMLval(XML_DEFAULT_GRAIN_GROWTH_UNIT_CLASS));
 				}
+#endif
 			}
 
 			if (NO_UNIT != eUnit)

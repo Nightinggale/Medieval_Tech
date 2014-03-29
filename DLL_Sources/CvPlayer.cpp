@@ -295,13 +295,13 @@ void CvPlayer::init(PlayerTypes eID)
                 }
 
                setTechsInitialized(true);
-               setDefaultPopUnit((UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits((UnitClassTypes)GC.getXMLval(XML_DEFAULT_DAWN_POPULATION_UNIT)));
+               setDefaultPopUnit((UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits((UnitClassTypes)GC.getXMLval(XML_DEFAULT_POPULATION_UNITCLASS)));
 
             }
 
             if (!isNative() && !isEurope())
             {
-               setDefaultPopUnit((UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits((UnitClassTypes)GC.getXMLval(XML_DEFAULT_DAWN_POPULATION_UNIT)));
+               setDefaultPopUnit((UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits((UnitClassTypes)GC.getXMLval(XML_DEFAULT_POPULATION_UNITCLASS)));
 
             }
 
@@ -11216,6 +11216,7 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
         }
     }
 
+#if 0
 	if (kCivicInfo.getNewDefaultUnitClass() != NO_UNITCLASS)
 	{
 		UnitTypes eNewUnit = (UnitTypes) GC.getUnitClassInfo((UnitClassTypes)kCivicInfo.getNewDefaultUnitClass()).getDefaultUnitIndex();
@@ -11224,6 +11225,7 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
 		setDefaultPopUnit(eNewUnit);
 
     }
+#endif
     if (kCivicInfo.getConvertsUnitsFrom() != NO_UNITCLASS && kCivicInfo.getConvertsUnitsTo() != NO_UNITCLASS)
     {
         UnitTypes eToUnit = (UnitTypes) GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(kCivicInfo.getConvertsUnitsTo());
@@ -19362,7 +19364,7 @@ UnitTypes CvPlayer::getDefaultPopUnit() const
 {
     if (m_iDefaultPopUnit == NO_UNIT)
     {
-        return  (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getXMLval(XML_DEFAULT_POPULATION_UNIT));
+        return  (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getXMLval(XML_DEFAULT_POPULATION_UNITCLASS));
     }
 
     return m_iDefaultPopUnit;
@@ -20104,6 +20106,13 @@ void CvPlayer::updateInventionEffectCache()
 		}
 	}
 
+	// growth unit
+	UnitTypes eGrowthUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getXMLval(XML_DEFAULT_GROWTH_UNITCLASS));
+	if (eGrowthUnit == NO_UNIT)
+	{
+		eGrowthUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getXMLval(XML_DEFAULT_POPULATION_UNITCLASS));
+	}
+
 	// set number of immigrants on "dock"
 	m_iNumDocksNextUnits = GC.getXMLval(XML_DOCKS_NEXT_UNITS);
 
@@ -20128,12 +20137,27 @@ void CvPlayer::updateInventionEffectCache()
 			{
 				//this->m_iCityPlotFoodBonus += kCivicInfo.getCenterPlotFoodBonus();
 				m_iNumDocksNextUnits += kCivicInfo.getIncreasedImmigrants();
+
+				UnitClassTypes eNewGrowthClass = (UnitClassTypes)kCivicInfo.getNewDefaultUnitClass();
+				if (eNewGrowthClass != NO_UNITCLASS)
+				{
+					UnitTypes eNewUnit = (UnitTypes) GC.getUnitClassInfo(eNewGrowthClass).getDefaultUnitIndex();
+					if (eNewUnit > eGrowthUnit)
+					{
+						eGrowthUnit = eNewUnit;
+					}
+				}
 			}
 			else if (bTradeScreen)
 			{
 				setHasTradeRouteType((EuropeTypes)kCivicInfo.getAllowsTradeScreen(), false);
 			}
 		//}
+	}
+
+	if (getDefaultPopUnit() != eGrowthUnit)
+	{
+		setDefaultPopUnit(eGrowthUnit);
 	}
 
 	// change dock size if needed

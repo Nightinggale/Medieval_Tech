@@ -1244,7 +1244,7 @@
           <iValue>-1</iValue>
         </UnitClassFoodCost>
         <UnitClassFoodCost>
-          <UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
+          <UnitClassType>UNITCLASS_SERF</UnitClassType>
           <iValue>-1</iValue>
         </UnitClassFoodCost>
       </UnitClassFoodCosts>
@@ -1279,7 +1279,7 @@
       <ImmigrationConversion>NONE</ImmigrationConversion>
       <UnitClassFoodCosts>
         <UnitClassFoodCost>
-          <UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
+          <UnitClassType>UNITCLASS_SERF</UnitClassType>
           <iValue>-1</iValue>
         </UnitClassFoodCost>
       </UnitClassFoodCosts>
@@ -1319,7 +1319,7 @@
       <ImmigrationConversion>NONE</ImmigrationConversion>
       <AllowsUnitClassesImmigration>
         <AllowsUnitClass>
-          <AllowsUnit>UNITCLASS_INDENTURED_SERVANT</AllowsUnit>
+          <AllowsUnit>UNITCLASS_SERF</AllowsUnit>
           <iChange>-1</iChange>
         </AllowsUnitClass>
         <AllowsUnitClass>
@@ -6294,7 +6294,7 @@
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
-			<NewDefaultUnitClass/>
+			<NewDefaultUnitClass>UNITCLASS_COLONIST</NewDefaultUnitClass>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>

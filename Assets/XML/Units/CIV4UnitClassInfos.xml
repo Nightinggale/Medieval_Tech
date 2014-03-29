@@ -72,9 +72,9 @@
 			<DefaultUnit>UNIT_NOBLEMAN</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_INDENTURED_SERVANT</Type>
+			<Type>UNITCLASS_SERF</Type>
 			<Description>Serf</Description>
-			<DefaultUnit>UNIT_INDENTURED_SERVANT</DefaultUnit>
+			<DefaultUnit>UNIT_SERF</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_CRIMINAL</Type>

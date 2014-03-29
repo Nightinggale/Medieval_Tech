@@ -865,9 +865,13 @@ bool CvXMLLoadUtility::SetPostGlobalsGlobalDefines()
 		idx = FindInInfoClass(szVal);
 		GC.getDefinesVarSystem()->SetValue("CAPITAL_BUILDINGCLASS", idx);
 
-		SetGlobalDefine("DEFAULT_POPULATION_UNIT", szVal);
+		SetGlobalDefine("DEFAULT_GROWTH_UNITCLASS", szVal);
 		idx = FindInInfoClass(szVal);
-		GC.getDefinesVarSystem()->SetValue("DEFAULT_POPULATION_UNIT", idx);
+		GC.getDefinesVarSystem()->SetValue("DEFAULT_GROWTH_UNITCLASS", idx);
+
+		SetGlobalDefine("DEFAULT_POPULATION_UNITCLASS", szVal);
+		idx = FindInInfoClass(szVal);
+		GC.getDefinesVarSystem()->SetValue("DEFAULT_POPULATION_UNITCLASS", idx);
 
 		SetGlobalDefine("INITIAL_CITY_ROUTE_TYPE", szVal);
 		idx = FindInInfoClass(szVal);
@@ -944,17 +948,9 @@ bool CvXMLLoadUtility::SetPostGlobalsGlobalDefines()
 		idx = FindInInfoClass(szVal);
 		GC.getDefinesVarSystem()->SetValue("NATIVE_TECH", idx);
 
-		SetGlobalDefine("DEFAULT_DAWN_POPULATION_UNIT", szVal);
-		idx = FindInInfoClass(szVal);
-		GC.getDefinesVarSystem()->SetValue("DEFAULT_DAWN_POPULATION_UNIT", idx);
-
 		SetGlobalDefine("CONTACT_YIELD_GIFT_TECH", szVal);
 		idx = FindInInfoClass(szVal);
 		GC.getDefinesVarSystem()->SetValue("CONTACT_YIELD_GIFT_TECH", idx);
-
-		SetGlobalDefine("DEFAULT_GRAIN_GROWTH_UNIT_CLASS", szVal);
-		idx = FindInInfoClass(szVal);
-		GC.getDefinesVarSystem()->SetValue("DEFAULT_GRAIN_GROWTH_UNIT_CLASS", idx);
 
 		SetGlobalDefine("DEFAULT_NOBLE_GROWTH_UNIT_CLASS", szVal);
 		idx = FindInInfoClass(szVal);
@@ -1007,10 +1003,6 @@ bool CvXMLLoadUtility::SetPostGlobalsGlobalDefines()
 		SetGlobalDefine("DEFAULT_SPECIALBUILDING_COURTHOUSE", szVal);
 		idx = FindInInfoClass(szVal);
 		GC.getDefinesVarSystem()->SetValue("DEFAULT_SPECIALBUILDING_COURTHOUSE", idx);
-
-		SetGlobalDefine("FREE_PEASANT_CIVIC", szVal);
-		idx = FindInInfoClass(szVal);
-		GC.getDefinesVarSystem()->SetValue("FREE_PEASANT_CIVIC", idx);
 
 		SetGlobalDefine("JUNGLE_FEATURE", szVal);
 		idx = FindInInfoClass(szVal);

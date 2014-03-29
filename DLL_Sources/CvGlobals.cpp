@@ -2502,14 +2502,8 @@ int CvGlobals::getXMLuncached(XMLconstantTypes eVal) const
 		case XML_DEFAULT_COMBAT_FOR_TRAINING:
 			return this->getDefineINT("DEFAULT_COMBAT_FOR_TRAINING");
 			break;
-		case XML_DEFAULT_DAWN_POPULATION_UNIT:
-			return this->getDefineINT("DEFAULT_DAWN_POPULATION_UNIT");
-			break;
 		case XML_DEFAULT_FUEDALISM_TECH:
 			return this->getDefineINT("DEFAULT_FUEDALISM_TECH");
-			break;
-		case XML_DEFAULT_GRAIN_GROWTH_UNIT_CLASS:
-			return this->getDefineINT("DEFAULT_GRAIN_GROWTH_UNIT_CLASS");
 			break;
 		case XML_DEFAULT_HUNTSMAN_PROFESSION:
 			return this->getDefineINT("DEFAULT_HUNTSMAN_PROFESSION");
@@ -2600,9 +2594,6 @@ int CvGlobals::getXMLuncached(XMLconstantTypes eVal) const
 			break;
 		case XML_FOUND_VILLAGE_NUMBER:
 			return this->getDefineINT("FOUND_VILLAGE_NUMBER");
-			break;
-		case XML_FREE_PEASANT_CIVIC:
-			return this->getDefineINT("FREE_PEASANT_CIVIC");
 			break;
 		case XML_HIRE_GUARD_COST:
 			return this->getDefineINT("HIRE_GUARD_COST");
@@ -2913,8 +2904,11 @@ int CvGlobals::getXMLuncached(XMLconstantTypes eVal) const
 		case XML_DEEP_WATER_TERRAIN:
 			return this->getDefineINT("DEEP_WATER_TERRAIN");
 			break;
-		case XML_DEFAULT_POPULATION_UNIT:
-			return this->getDefineINT("DEFAULT_POPULATION_UNIT");
+		case XML_DEFAULT_GROWTH_UNITCLASS:
+			return this->getDefineINT("DEFAULT_GROWTH_UNITCLASS");
+			break;
+		case XML_DEFAULT_POPULATION_UNITCLASS:
+			return this->getDefineINT("DEFAULT_POPULATION_UNITCLASS");
 			break;
 		case XML_DIFFERENT_TEAM_FEATURE_PRODUCTION_PERCENT:
 			return this->getDefineINT("DIFFERENT_TEAM_FEATURE_PRODUCTION_PERCENT");

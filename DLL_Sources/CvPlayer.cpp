@@ -11353,7 +11353,6 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
 	changeMissionaryHide(kCivicInfo.getMissionariesNotCosumed() * iChange);
 	changeTradingPostHide(kCivicInfo.getTradingPostNotCosumed() * iChange);
 	changeHuntingYieldPercent(kCivicInfo.getHuntingYieldPercent() * iChange);
-	changeCityPlotFoodBonus(kCivicInfo.getCenterPlotFoodBonus() * iChange);
 	//changeNumDocksNextUnits(kCivicInfo.getIncreasedImmigrants() * iChange);
     ///TKe
 	changeGreatGeneralRateModifier(kCivicInfo.getGreatGeneralRateModifier() * iChange);
@@ -12084,7 +12083,6 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iVillages);
 	pStream->Read(&m_iMonasterys);
 	pStream->Read(&m_iCastles);
-	pStream->Read(&m_iCityPlotFoodBonus);
 	pStream->Read(&m_iNumDocksNextUnits); // no need to save this
 	pStream->Read(&m_bTechsInitialized);
 	pStream->Read(&m_bAllResearchComplete);
@@ -12517,7 +12515,6 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(m_iVillages);
 	pStream->Write(m_iMonasterys);
 	pStream->Write(m_iCastles);
-	pStream->Write(m_iCityPlotFoodBonus);
 	pStream->Write(m_iNumDocksNextUnits); // no need to save this
 	pStream->Write(m_bTechsInitialized);
 	pStream->Write(m_bAllResearchComplete);
@@ -19657,15 +19654,6 @@ void CvPlayer::changeNumDocksNextUnits(int iChange)
 	m_iNumDocksNextUnits += iChange;
 }
 
-int CvPlayer::getCityPlotFoodBonus() const
-{
-	return m_iCityPlotFoodBonus;
-}
-void CvPlayer::changeCityPlotFoodBonus(int iChange)
-{
-	m_iCityPlotFoodBonus += iChange;
-}
-
 MedCityTypes CvPlayer::getAICityType()
 {
     if (isNative() || isEurope())
@@ -20112,14 +20100,7 @@ void CvPlayer::updateInventionEffectCache()
 		}
 	}
 
-	// disallow immigrants if the unit isn't allowed
-	for (int i = 0; i < m_ja_bAllowedUnits.length(); i++)
-	{
-		if (!m_ja_bAllowedUnits.get(i))
-		{
-			m_ja_bAllowedUnitsImmigration.set(false, i);
-		}
-	}
+	// TODO figure out some cleaner code for growth units
 
 	// growth unit
 	UnitTypes eGrowthUnit = NO_UNIT;
@@ -20140,11 +20121,8 @@ void CvPlayer::updateInventionEffectCache()
 		eLuxuryUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getXMLval(XML_DEFAULT_GROWTH_NOBLE_UNITCLASS));
 	}
 
-	// set number of immigrants on "dock"
-	m_iNumDocksNextUnits = GC.getXMLval(XML_DOCKS_NEXT_UNITS);
-
 	// city plot food bonus
-	//m_iCityPlotFoodBonus = 0;
+	m_iCityPlotFoodBonus = 0;
 
 	// Initiate Trade Route Screens
 	bool bTradeScreen = false;
@@ -20162,8 +20140,7 @@ void CvPlayer::updateInventionEffectCache()
 
 			if (this->getIdeasResearched((CivicTypes) iCivic) > 0)
 			{
-				//this->m_iCityPlotFoodBonus += kCivicInfo.getCenterPlotFoodBonus();
-				m_iNumDocksNextUnits += kCivicInfo.getIncreasedImmigrants();
+				m_iCityPlotFoodBonus += kCivicInfo.getCenterPlotFoodBonus();
 
 				UnitClassTypes eNewGrowthClass = (UnitClassTypes)kCivicInfo.getNewDefaultUnitClass();
 				if (eNewGrowthClass != NO_UNITCLASS)
@@ -20200,38 +20177,11 @@ void CvPlayer::updateInventionEffectCache()
 		setLuxuryPopUnit(eLuxuryUnit);
 	}
 
-	// change dock size if needed
-	if (m_aDocksNextUnits.size() > 0)
-	{
-		// size is 0 when starting a new game
-		// ignore this case as initImmigration() is called later
-
-		// add immigrants on the dock
-		while (m_iNumDocksNextUnits > m_aDocksNextUnits.size())
-		{
-			m_aDocksNextUnits.push_back(pickBestImmigrant());
-		}
-
-		// remove immigrants from the dock
-		while (m_iNumDocksNextUnits < m_aDocksNextUnits.size())
-		{
-			m_aDocksNextUnits.pop_back();
-		}
-	}
-
-	// remove any units from the docks if they can no longer appear on the docks
-	for (unsigned int i = 0; i < m_aDocksNextUnits.size(); ++i)
-    {
-		if (!canUseUnitImmigration((UnitTypes)m_aDocksNextUnits[i]))
-		{
-			m_aDocksNextUnits[i] = pickBestImmigrant();
-		}
-	}
+	updateImmigrantsOnDock();
 }
 //Tks Civics
 void CvPlayer::updateImmigrantsOnDock()
 {
-	
 	// disallow immigrants if the unit isn't allowed
 	for (int i = 0; i < m_ja_bAllowedUnits.length(); i++)
 	{
@@ -20244,19 +20194,21 @@ void CvPlayer::updateImmigrantsOnDock()
 	// set number of immigrants on "dock"
 	m_iNumDocksNextUnits = GC.getXMLval(XML_DOCKS_NEXT_UNITS);
 
-	// city plot food bonus
-	//m_iCityPlotFoodBonus = 0;
-
-	// Initiate Trade Route Screens
+	// Get changes from civics
 	for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
 	{
 		CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes) iCivic);
 
-		if (this->getIdeasResearched((CivicTypes) iCivic) > 0)
+		if (getIdeasResearched((CivicTypes) iCivic) > 0)
 		{
 			m_iNumDocksNextUnits += kCivicInfo.getIncreasedImmigrants();
-		}
-			
+		}	
+	}
+
+	// never allow less than one unit on the docks
+	if (m_iNumDocksNextUnits < 1)
+	{
+		m_iNumDocksNextUnits = 1;
 	}
 
 	// change dock size if needed
@@ -20266,13 +20218,13 @@ void CvPlayer::updateImmigrantsOnDock()
 		// ignore this case as initImmigration() is called later
 
 		// add immigrants on the dock
-		while (m_iNumDocksNextUnits > m_aDocksNextUnits.size())
+		while (m_iNumDocksNextUnits > (signed int)m_aDocksNextUnits.size())
 		{
 			m_aDocksNextUnits.pop_back();
 		}
 
 		// remove immigrants from the dock
-		while (m_iNumDocksNextUnits < m_aDocksNextUnits.size())
+		while (m_iNumDocksNextUnits < (signed int)m_aDocksNextUnits.size())
 		{
 			m_aDocksNextUnits.push_back(pickBestImmigrant());
 		}

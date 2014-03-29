@@ -181,7 +181,7 @@ void getActivityTypeString(CvWString& szString, ActivityTypes eActivityType);
 void getMissionTypeString(CvWString& szString, MissionTypes eMissionType);
 void getMissionAIString(CvWString& szString, MissionAITypes eMissionAI);
 void getUnitAIString(CvWString& szString, UnitAITypes eUnitAI);
-
+void getPlayerAIStrategyString(CvWString& szString, StrategyTypes eStrategyAI);///TKs Med Test Code
 bool shouldMoveBefore(const CvUnit* pUnitA, const CvUnit* pUnitB);
 bool shouldUnitMove(const CvUnit* pUnit);
 

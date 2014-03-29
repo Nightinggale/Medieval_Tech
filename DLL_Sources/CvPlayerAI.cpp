@@ -5747,6 +5747,14 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic)
 	FAssertMsg(eCivic >= 0, "eCivic is expected to be non-negative (invalid Index)");
 
 	CvCivicInfo& kCivic = GC.getCivicInfo(eCivic);
+	//Food Penalties
+	if (kCivic.getGlobalFoodCostMod() > 0)
+	{
+		if (getNumCities() < 7)
+		{
+			return 0;
+		}
+	}
 
 	bWarPlan = (GET_TEAM(getTeam()).getAnyWarPlanCount() > 0);
 
@@ -5764,27 +5772,54 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic)
 	iValue += -(GC.getCivicInfo(eCivic).getAnarchyLength() * getNumCities());
 
 	iValue += -(getSingleCivicUpkeep(eCivic, true));
+	if (kCivic.getMissionariesNotCosumed())
+	{
+		iValue += 20;
+	}
+	if (kCivic.getTradingPostNotCosumed())
+	{
+		iValue += 20;
+	}
+	//Need Number of Shrines and missionaries
+	//getPilgramYieldPercent()
+	// AI doesn't hunt!!!!
+	//getHuntingYieldPercent()
+	iValue += kCivic.getDiplomacyAttitudeChange() * 4;
+	iValue += kCivic.getCenterPlotFoodBonus() * getNumCities();
 
 	//iValue += ((kCivic.getGreatPeopleRateModifier() * getNumCities()) / 10);
 	
 	//iValue += -((kCivic.getDistanceMaintenanceModifier() * std::max(0, (getNumCities() - 3))) / 8);
 	//iValue += -((kCivic.getNumCitiesMaintenanceModifier() * std::max(0, (getNumCities() - 3))) / 8);
-
+	//FF points
+	for (iI = 0; iI < GC.getNumFatherCategoryInfos(); iI++)
+	{
+		iValue += kCivic.getFartherPointChanges(iI) * getNumCities();
+	}
 
 	//War Civics
-	iValue += ((kCivic.getGreatGeneralRateModifier() * getCastles()) / 50);
-	iValue += ((kCivic.getDomesticGreatGeneralRateModifier() * getCastles()) / 100);
+	int iCastleMod = getCastles() + 1;
+	iValue += ((kCivic.getGreatGeneralRateModifier() * iCastleMod) / 50);
+	iValue += ((kCivic.getDomesticGreatGeneralRateModifier() * iCastleMod) / 100);
 	iValue += (kCivic.getFreeExperience() * getNumCities() * (bWarPlan ? 8 : 5) * iWarmongerPercent) / 100; 
 	if (bWarPlan)
 	{
-		iValue += ((kCivic.getExpInBorderModifier() * getCastles()) / 200);
+		iValue += kCivic.getNumCivicCombatBonus() * 10;
+		iValue += ((kCivic.getExpInBorderModifier() * iCastleMod) / 200);
 	}
+	//Strategies
+	//AI_isStrategy(STRATEGY_CONCENTRATED_ATTACK);
+
 	//Father Point Civics
 
 	//Expansion Civics
 	iValue += ((kCivic.getWorkerSpeedModifier() * AI_getNumAIUnits(UNITAI_WORKER)) / 15);
 	iValue += ((kCivic.getImprovementUpgradeRateModifier() * getNumCities()) / 50);
 	iValue += (kCivic.getMilitaryProductionModifier() * getNumCities() * iWarmongerPercent) / (bWarPlan ? 300 : 500 ); 
+	if (kCivic.isWorkersBuildAfterMove())
+	{
+		iValue += 2 * AI_getNumAIUnits(UNITAI_WORKER);
+	}
 	//iValue += (kCivic.getBaseFreeUnits() / 2);
 	//iValue += (kCivic.getBaseFreeMilitaryUnits() / 3);
 	//iValue += ((kCivic.getFreeUnitsPopulationPercent() * getTotalPopulation()) / 200);
@@ -5849,20 +5884,50 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic)
 			iValue += (11 * getNumCities() * AI_getHappinessWeight(isCivic(eCivic) ? -iTempValue : iTempValue, 1)) / 100;
 		}
 	}*/
+
 	//Native Civics
 
 	//Yield Civics
+	//int iNegativeYieldMod = 0;
+	/*for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
+	{
+		UnitTypes eLoopUnit = ((UnitTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iI)));
+
+		if (eLoopUnit != NO_UNIT)
+		{
+		}
+	}*/
+	if (kCivic.getNumUnitClassFoodCosts() > 0)
+	{
+		iValue += getAveragePopulation() * kCivic.getNumUnitClassFoodCosts();
+	}
+
+	if (kCivic.getNumRandomGrowthUnits() > 0)
+	{
+		iValue += getAveragePopulation() * kCivic.getNumRandomGrowthUnits();
+	}
+
+	int iTotalDefenders = AI_getNumAIUnits(UNITAI_DEFENSIVE);
 	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
 	{
 		iTempValue = 0;
-
-		iTempValue += ((kCivic.getYieldModifier(iI) * getNumCities()) / 2);
-		iTempValue += ((kCivic.getCapitalYieldModifier(iI) * 3) / 4);
-		CvCity* pCapital = getCapitalCity(); 
+		//Check for Captial first
+		iTempValue = kCivic.getCapitalYieldModifier(iI);
+		CvCity* pCapital = getCapitalCity();
 		if (pCapital) 
 		{
+			iTempValue += ((iTempValue * 3) / 4);
 			iTempValue += ((kCivic.getCapitalYieldModifier(iI) * pCapital->getYieldRate((YieldTypes)iI)) / 80); 
 		}
+		else if (iTempValue != 0)
+		{
+			return 0;
+		}
+
+		/*if (kCivic.getYieldModifier(iI) < 0)
+		{
+
+		}*/
 		iTempValue += ((kCivic.getYieldModifier(iI) * getNumCities()) / 11);
 
 		for (iJ = 0; iJ < GC.getNumImprovementInfos(); iJ++)
@@ -5870,8 +5935,39 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic)
 			//iTempValue += (AI_averageYieldMultiplier((YieldTypes)iI) * (kCivic.getImprovementYieldChanges(iJ, iI) * (getImprovementCount((ImprovementTypes)iJ) + getNumCities() * 2))) / 100;
 			iTempValue += (kCivic.getImprovementYieldChanges(iJ, iI) * (getImprovementCount((ImprovementTypes)iJ) + getNumCities() * 2)) / 100;
 		}
+		//Need AI for this effect
+		/*if (getNumCities() > 3)
+		{
+			iTempValue += (getConnectedTradeYieldsBonus(iI));
+		}*/
+		if (iTotalDefenders > 0)
+		{
+			if (bWarPlan)
+			{
+				iTempValue += kCivic.getGarrisonUnitModifiers(iI) * iTotalDefenders * 2;
+			}
+			else
+			{
+				iTempValue += kCivic.getGarrisonUnitModifiers(iI) * iTotalDefenders;
+			}
+		}
 
-		if (iI == YIELD_FOOD) 
+		if (iI == YIELD_BELLS) 
+		{ 
+			if (AI_isStrategy(STRATEGY_FAST_BELLS))
+			{
+				iTempValue *= 6;
+			}
+			else
+			{
+				iTempValue *= 2; 
+			}
+		}
+		else if (iI == YIELD_IDEAS) 
+		{ 
+			iTempValue *= 2; 
+		}
+		else if (iI == YIELD_FOOD) 
 		{ 
 			iTempValue *= 3; 
 		} 
@@ -5881,18 +5977,31 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic)
 		} 
 		else if (iI == YIELD_GOLD) 
 		{ 
-			iTempValue *= 2; 
+			if (AI_isStrategy(STRATEGY_CASH_FOCUS))
+			{
+				iTempValue *= 6;
+			}
+			else
+			{
+				iTempValue *= 2; 
+			}
 		} 
 
 		iValue += iTempValue;
 	}
 	//Building Civics
+	for (iJ = 0; iJ < kCivic.getNumCivicTreasuryBonus(); iJ++)
+	{
+
+		if (getBuildingClassCount((BuildingClassTypes)kCivic.getCivicTreasury(iJ)) >= 1)
+		{
+			iValue += getBuildingClassCount((BuildingClassTypes)iJ) * kCivic.getCivicTreasuryBonus(iJ);
+		}
+
+	}
 	/*for (iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
 	{
-		if (kCivic.getBuildingHappinessChanges(iI) != 0)
-		{
-			iValue += (kCivic.getBuildingHappinessChanges(iI) * getBuildingClassCount((BuildingClassTypes)iI) * 3);
-		}
+		
 	}*/
 	
 	/*for (iI = 0; iI < GC.getNumFeatureInfos(); iI++)
@@ -5920,15 +6029,23 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic)
 		}
 	}*/
 
-	for (iI = 0; iI < GC.getNumSpecialBuildingInfos(); iI++)
-	{
-		if (kCivic.isSpecialBuildingNotRequired(iI))
-		{
-			iValue += ((getNumCities() / 2) + 1); // XXX
-		}
-	} 
+	//for (iI = 0; iI < GC.getNumSpecialBuildingInfos(); iI++)
+	//{
+	//	if (kCivic.isSpecialBuildingNotRequired(iI))
+	//	{
+	//		iValue += ((getNumCities() / 2) + 1); // XXX
+	//	}
+	//} 
 
 	//Personality Civics
+	for (iI = 0; iI < GC.getLeaderHeadInfo(getPersonalityType()).getNumCivicDiplomacyAttitudes(); iI++)
+	{
+		if (GC.getLeaderHeadInfo(getPersonalityType()).getCivicDiplomacyAttitudes(iI) == eCivic)
+		{
+			iValue *= GC.getLeaderHeadInfo(getPersonalityType()).getCivicDiplomacyAttitudesValue(iI);
+			break;
+		}
+	}
 	//if (GC.getLeaderHeadInfo(getPersonalityType()).getFavoriteCivic() == eCivic)
 	/*{
 		if (iHighestReligionCount > 0)

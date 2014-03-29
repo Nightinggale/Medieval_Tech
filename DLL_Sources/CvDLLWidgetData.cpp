@@ -2708,11 +2708,28 @@ void CvDLLWidgetData::parseContactCivHelp(CvWidgetDataStruct &widgetDataStruct, 
 		szBuffer.append(CvWString::format(L"\n%d%c %d%c", player.getGold(), gDLL->getSymbolID(GOLD_CHAR), GET_TEAM(player.getTeam()).getRebelPercent(), gDLL->getSymbolID(POWER_CHAR)));
 		szBuffer.append(CvWString::format(L"\nCities = %d, Units = %d, Pop = %d, AIPop = %d", player.getNumCities(), player.getNumUnits(), player.getTotalPopulation(), player.AI_getPopulation()));
 		szBuffer.append(CvWString::format(L"\nIncome = %d, Hurry Spending = %d", player.AI_getTotalIncome(), player.AI_getHurrySpending()));
+		///CHeatMod COdes
+	/*if (gDLL->getChtLvl() > 0 && gDLL->shiftKey())
+	{
+		for (int iStrat = 0; iStrat < NUM_STRATEGY_TYPES; iStrat++)
+		{
+			if (GET_PLAYER((PlayerTypes)widgetDataStruct.m_iData1).AI_getStrategyDuration((StrategyTypes)iStrat) > 0)
+			{
+				CvWString szTempString;
+				getPlayerAIStrategyString(szTempString, (StrategyTypes)iStrat);
+				szBuffer.append(NEWLINE);
+				szBuffer.append(CvWString::format(SETCOLR L" %s: %d " ENDCOLR, GET_PLAYER((PlayerTypes)widgetDataStruct.m_iData1).getPlayerTextColorR(), GET_PLAYER((PlayerTypes)widgetDataStruct.m_iData1).getPlayerTextColorG(), GET_PLAYER((PlayerTypes)widgetDataStruct.m_iData1).getPlayerTextColorB(), GET_PLAYER((PlayerTypes)widgetDataStruct.m_iData1).getPlayerTextColorA(), szTempString.GetCString(), GET_PLAYER((PlayerTypes)widgetDataStruct.m_iData1).AI_getStrategyDuration((StrategyTypes)iStrat)));
+			}
+		}
+
+	}*/
 		for (int i = 0; i < NUM_STRATEGY_TYPES; ++i)
 		{
 			if (player.AI_isStrategy((StrategyTypes) i))
 			{
-				szBuffer.append(CvWString::format(L"\nStrategy %d, Duration %d", i, player.AI_getStrategyDuration((StrategyTypes) i)));
+				CvWString szTempString;
+				getPlayerAIStrategyString(szTempString, (StrategyTypes)i);
+				szBuffer.append(CvWString::format(L"\n%s, Duration %d", szTempString.GetCString(), player.AI_getStrategyDuration((StrategyTypes) i)));
 			}
 		}
 

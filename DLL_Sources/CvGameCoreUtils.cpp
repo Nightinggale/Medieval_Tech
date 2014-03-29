@@ -1698,7 +1698,29 @@ void getUnitAIString(CvWString& szString, UnitAITypes eUnitAI)
 	default: szString = CvWString::format(L"unknown(%d)", eUnitAI); break;
 	}
 }
-
+//Tks Med Test Code
+void getPlayerAIStrategyString(CvWString& szString, StrategyTypes eStrategyAI)
+{
+	
+	switch (eStrategyAI)
+	{
+	case NO_STRATEGY: szString = L"no Strategy AI"; break;
+	case STRATEGY_SMALL_WAVES: szString = L"Small Waves"; break;
+	case STRATEGY_BUILDUP: szString = L"Build Up"; break;
+	case STRATEGY_CONCENTRATED_ATTACK: szString = L"Concentrated Attack"; break;
+	case STRATEGY_DISTRIBUTED_ATTACK: szString = L"Distributed Attack"; break;
+	case STRATEGY_DIE_FIGHTING: szString = L"Die Fighting"; break;
+	case STRATEGY_FAST_BELLS: szString = L"Fast Bells"; break;
+	case STRATEGY_CASH_FOCUS: szString = L"Cash Focus"; break;
+	case STRATEGY_SELL_TO_NATIVES: szString = L"Sell to Natives"; break;
+	case STRATEGY_DENSE_CITY_SPACING: szString = L"Dense City SPacing"; break;
+	case STRATEGY_REVOLUTION_PREPARING: szString = L"Revolution Prep"; break;
+	case STRATEGY_REVOLUTION_DECLARING: szString = L"Revolution Declare"; break;
+	case STRATEGY_REVOLUTION: szString = L"Revolution"; break;
+	default: szString = CvWString::format(L"unknown(%d)", eStrategyAI); break;
+	}
+}
+//Tke
 /// post load function - start - Nightinggale
 //
 // This function is called whenever a savegame finish loading

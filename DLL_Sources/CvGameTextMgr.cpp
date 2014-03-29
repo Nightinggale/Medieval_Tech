@@ -3726,6 +3726,45 @@ void CvGameTextMgr::parseLeaderTraits(CvWStringBuffer &szHelpString, LeaderHeadT
                     szHelpString.append(szBuffer);
                 }
             }
+
+			for (int iLoopCivic = 0; iLoopCivic < GC.getLeaderHeadInfo(eLeader).getNumCivicDiplomacyAttitudes(); ++iLoopCivic)
+            {
+				int bFoundFavored = false;
+				if (GC.getLeaderHeadInfo(eLeader).getCivicDiplomacyAttitudesValue(iLoopCivic) > 0)
+				{
+                
+					if (bFoundFavored == false)
+					{
+						szHelpString.append(NEWLINE);
+						szHelpString.append(gDLL->getText("TXT_KEYCIVILIZATION_FAVORED_CIVICS"));
+						bFoundFavored = true;
+					}
+					szHelpString.append(NEWLINE);
+					CvWStringBuffer szBuffer;
+					CvCivicInfo& kLoopCivicInfo = GC.getCivicInfo((CivicTypes)GC.getLeaderHeadInfo(eLeader).getCivicDiplomacyAttitudes(iLoopCivic));
+					szHelpString.append(gDLL->getText("TXT_KEY_YELLOW_NAME", kLoopCivicInfo.getDescription()));
+					//GAMETEXT.parseCivicInfo(szBuffer, (CivicTypes) iLoopCivic, bInGame, false, true, false, eCivilization);
+					//szHelpString.append(szBuffer);
+				}
+				int bFoundDistained = false;
+				if (GC.getLeaderHeadInfo(eLeader).getCivicDiplomacyAttitudesValue(iLoopCivic) < 0)
+				{
+                
+					if (bFoundDistained == false)
+					{
+						szHelpString.append(NEWLINE);
+						szHelpString.append(gDLL->getText("TXT_KEYCIVILIZATION_DISTAINED_CIVICS"));
+						bFoundDistained = true;
+					}
+					szHelpString.append(NEWLINE);
+					CvWStringBuffer szBuffer;
+					CvCivicInfo& kLoopCivicInfo = GC.getCivicInfo((CivicTypes) GC.getLeaderHeadInfo(eLeader).getCivicDiplomacyAttitudes(iLoopCivic));
+					szHelpString.append(gDLL->getText("TXT_KEY_YELLOW_NAME", kLoopCivicInfo.getDescription()));
+					//GAMETEXT.parseCivicInfo(szBuffer, (CivicTypes) iLoopCivic, bInGame, false, true, false, eCivilization);
+					//szHelpString.append(szBuffer);
+				}
+                
+            }
 		}
 
 		///TKe

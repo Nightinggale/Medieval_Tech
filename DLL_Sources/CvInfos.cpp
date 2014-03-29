@@ -3864,6 +3864,9 @@ m_iPilgramYieldPercent(0),
 m_aiConvertsUnitsFrom(NO_UNITCLASS),
 m_aiConvertsUnitsTo(NO_UNITCLASS),
 m_iNewDefaultUnitClass(NO_UNITCLASS),
+///Tks Civics
+m_iNewLuxuryUnitClass(NO_UNITCLASS),
+///Tke Civics
 m_iNewConvertUnitClass(NO_UNITCLASS),
 
 m_bFreeUnitsAreNonePopulation(false),
@@ -4321,6 +4324,14 @@ int CvCivicInfo::getNewDefaultUnitClass() const
 {
 	return m_iNewDefaultUnitClass;
 }
+
+///Tks Civics
+int CvCivicInfo::getNewLuxuryUnitClass() const
+{
+	return m_iNewLuxuryUnitClass;
+}
+///Tke Civics
+
 int CvCivicInfo::getNewConvertUnitClass() const
 {
 	return m_iNewConvertUnitClass;
@@ -4577,6 +4588,9 @@ void CvCivicInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iFoundCityType);
 	stream->Read(&m_iIncreaseCityPopulation);
 	stream->Read(&m_iNewDefaultUnitClass);
+	///Tks Civics
+	stream->Read(&m_iNewLuxuryUnitClass);
+	///Tke Civics
 	stream->Read(&m_aiConvertsUnitsTo);
 	stream->Read(&m_aiConvertsUnitsFrom);
 
@@ -4743,6 +4757,9 @@ void CvCivicInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iFoundCityType);
 	stream->Write(m_iIncreaseCityPopulation);
 	stream->Write(m_iNewDefaultUnitClass);
+	///Tks Civics
+	stream->Write(m_iNewLuxuryUnitClass);
+	///Tke Civics
 	stream->Write(m_aiConvertsUnitsTo);
 	stream->Write(m_aiConvertsUnitsFrom);
 
@@ -4845,6 +4862,11 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 
 	pXML->GetChildXmlValByName(szTextVal, "NewDefaultUnitClass");
 	m_iNewDefaultUnitClass = pXML->FindInInfoClass(szTextVal);
+
+	///Tks Civics
+	pXML->GetChildXmlValByName(szTextVal, "NewLuxuryUnitClass");
+	m_iNewLuxuryUnitClass = pXML->FindInInfoClass(szTextVal);
+	///Tke Civics
 	
 	pXML->GetChildXmlValByName(szTextVal, "NewConvertUnitClass");
 	m_iNewConvertUnitClass = pXML->FindInInfoClass(szTextVal);

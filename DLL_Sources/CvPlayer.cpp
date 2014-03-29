@@ -537,6 +537,9 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	m_eVassal = NO_PLAYER;
 	m_eMinorVassal = NO_PLAYER;
 	m_iDefaultPopUnit = NO_UNIT;
+	///Tks Civics
+	m_iLuxuryPopUnit = NO_UNIT;
+	///Tke Civics
 	m_iConvertedNativeUnit = NO_UNITCLASS;
 	m_eCurrentResearch = NO_CIVIC;
 	m_eCurrentTradeResearch = NO_CIVIC;
@@ -19376,6 +19379,18 @@ void CvPlayer::setDefaultPopUnit(UnitTypes eUnit)
     m_iDefaultPopUnit = eUnit;
 }
 
+///Tks Civics
+UnitTypes CvPlayer::getLuxuryPopUnit() const
+{
+	return m_iLuxuryPopUnit;
+}
+
+void CvPlayer::setLuxuryPopUnit(UnitTypes eUnit)
+{
+    m_iLuxuryPopUnit = eUnit;
+}
+///Tke Civics
+
 UnitClassTypes CvPlayer::getConvertedNativeUnitClass() const
 {
     return m_iConvertedNativeUnit;
@@ -20107,10 +20122,22 @@ void CvPlayer::updateInventionEffectCache()
 	}
 
 	// growth unit
-	UnitTypes eGrowthUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getXMLval(XML_DEFAULT_GROWTH_UNITCLASS));
+	UnitTypes eGrowthUnit = NO_UNIT;
+	if (GC.getXMLval(XML_DEFAULT_GROWTH_UNITCLASS) != NO_UNITCLASS)
+	{
+		eGrowthUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getXMLval(XML_DEFAULT_GROWTH_UNITCLASS));
+	}
 	if (eGrowthUnit == NO_UNIT)
 	{
 		eGrowthUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getXMLval(XML_DEFAULT_POPULATION_UNITCLASS));
+	}
+
+	FAssertMsg(eGrowthUnit != NO_UNIT, CvString::format("%s has no default growth unit", GC.getCivilizationInfo(getCivilizationType()).getType()));
+
+	UnitTypes eLuxuryUnit = NO_UNIT;
+	if (GC.getXMLval(XML_DEFAULT_GROWTH_NOBLE_UNITCLASS) != NO_UNITCLASS)
+	{
+		eLuxuryUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getXMLval(XML_DEFAULT_GROWTH_NOBLE_UNITCLASS));
 	}
 
 	// set number of immigrants on "dock"
@@ -20147,6 +20174,15 @@ void CvPlayer::updateInventionEffectCache()
 						eGrowthUnit = eNewUnit;
 					}
 				}
+				eNewGrowthClass = (UnitClassTypes)kCivicInfo.getNewLuxuryUnitClass();
+				if (eNewGrowthClass != NO_UNITCLASS)
+				{
+					UnitTypes eNewUnit = (UnitTypes) GC.getUnitClassInfo(eNewGrowthClass).getDefaultUnitIndex();
+					if (eNewUnit > eLuxuryUnit)
+					{
+						eLuxuryUnit = eNewUnit;
+					}
+				}
 			}
 			else if (bTradeScreen)
 			{
@@ -20158,6 +20194,10 @@ void CvPlayer::updateInventionEffectCache()
 	if (getDefaultPopUnit() != eGrowthUnit)
 	{
 		setDefaultPopUnit(eGrowthUnit);
+	}
+	if (getLuxuryPopUnit() != eLuxuryUnit)
+	{
+		setLuxuryPopUnit(eLuxuryUnit);
 	}
 
 	// change dock size if needed

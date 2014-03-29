@@ -581,9 +581,11 @@
 		<DefineName>DEFAULT_GROWTH_UNITCLASS</DefineName>
 		<DefineTextVal>UNITCLASS_SERF</DefineTextVal>
 	</Define>
+	<!-- Default unitclass to get from overflowing luxury food -->
+	<!-- This can be overwritten by NewLuxuryUnitClass in civics -->
 	<Define>
-		<DefineName>DEFAULT_NOBLE_GROWTH_UNIT_CLASS</DefineName>
-		<DefineTextVal>UNITCLASS_PAGE</DefineTextVal>
+		<DefineName>DEFAULT_GROWTH_NOBLE_UNITCLASS</DefineName>
+		<DefineTextVal>NONE</DefineTextVal>
 	</Define>
 	<!-- Clear speciality converts to units to DEFAULT_POPULATION_UNITCLASS -->
 	<Define>

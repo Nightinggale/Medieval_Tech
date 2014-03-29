@@ -5162,6 +5162,33 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
         }
 	}
 
+	if (kCivicInfo.getNewLuxuryUnitClass() != NO_UNITCLASS)
+	{
+		UnitClassTypes eClass = (UnitClassTypes)kCivicInfo.getNewLuxuryUnitClass();
+
+		for (int i = 0; i < GC.getNumUnitInfos(); ++i)
+        {
+            CvUnitInfo& kUnitInfo = GC.getUnitInfo((UnitTypes) i);
+            if (kUnitInfo.getUnitClassType() == eClass)
+            {
+                bool bShowUnit = true;
+                if (eCivilization != NO_CIVILIZATION)
+                {
+                    UnitTypes eUnit = (UnitTypes) GC.getCivilizationInfo(eCivilization).getCivilizationUnits(eClass);
+                    if (eUnit != (UnitTypes) i)
+                    {
+                        bShowUnit = false;
+                    }
+                }
+                if (bShowUnit)
+                {
+                    szHelpText.append(NEWLINE);
+                    szHelpText.append(gDLL->getText("TXT_KEY_ALLOWS_LUXURY_UNIT", kUnitInfo.getDescription()));
+                }
+            }
+        }
+	}
+
     if (kCivicInfo.getConvertsUnitsTo() != NO_UNITCLASS && kCivicInfo.getConvertsUnitsFrom() != NO_UNITCLASS)
 	{
         UnitTypes eUnitTo = NO_UNIT;

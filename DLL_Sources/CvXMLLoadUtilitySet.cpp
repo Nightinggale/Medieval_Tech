@@ -865,6 +865,10 @@ bool CvXMLLoadUtility::SetPostGlobalsGlobalDefines()
 		idx = FindInInfoClass(szVal);
 		GC.getDefinesVarSystem()->SetValue("CAPITAL_BUILDINGCLASS", idx);
 
+		SetGlobalDefine("DEFAULT_GROWTH_NOBLE_UNITCLASS", szVal);
+		idx = FindInInfoClass(szVal);
+		GC.getDefinesVarSystem()->SetValue("DEFAULT_GROWTH_NOBLE_UNITCLASS", idx);
+
 		SetGlobalDefine("DEFAULT_GROWTH_UNITCLASS", szVal);
 		idx = FindInInfoClass(szVal);
 		GC.getDefinesVarSystem()->SetValue("DEFAULT_GROWTH_UNITCLASS", idx);
@@ -951,10 +955,6 @@ bool CvXMLLoadUtility::SetPostGlobalsGlobalDefines()
 		SetGlobalDefine("CONTACT_YIELD_GIFT_TECH", szVal);
 		idx = FindInInfoClass(szVal);
 		GC.getDefinesVarSystem()->SetValue("CONTACT_YIELD_GIFT_TECH", idx);
-
-		SetGlobalDefine("DEFAULT_NOBLE_GROWTH_UNIT_CLASS", szVal);
-		idx = FindInInfoClass(szVal);
-		GC.getDefinesVarSystem()->SetValue("DEFAULT_NOBLE_GROWTH_UNIT_CLASS", idx);
 
 		SetGlobalDefine("DEFAULT_KNIGHT_PROMOTION", szVal);
 		idx = FindInInfoClass(szVal);

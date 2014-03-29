@@ -478,6 +478,7 @@
 	<ElementType name="AllowsTradeScreen" content="textOnly"/>
 	<ElementType name="ConvertsUnitsTo" content="textOnly"/>
 	<ElementType name="NewDefaultUnitClass" content="textOnly"/>
+	<ElementType name="NewLuxuryUnitClass" content="textOnly"/>
   <ElementType name="NewConvertUnitClass" content="textOnly"/>
 	<ElementType name="ConvertsUnitsFrom" content="textOnly"/>
 	<ElementType name="DisallowsTech" content="textOnly"/>
@@ -730,6 +731,7 @@
     <element type="ConnectedMissonYields" minOccurs="0"/>
     <element type="ConnectedTradeYields" minOccurs="0"/>
     <element type="NewDefaultUnitClass" minOccurs="0"/>
+	<element type="NewLuxuryUnitClass" minOccurs="0"/>
     <element type="NewConvertUnitClass" minOccurs="0"/>
 		<element type="DisallowsTech" minOccurs="0"/>
 		<element type="ConvertsResearchYield" minOccurs="0"/>

@@ -2529,9 +2529,6 @@ int CvGlobals::getXMLuncached(XMLconstantTypes eVal) const
 		case XML_DEFAULT_NOBLEMAN_CLASS:
 			return this->getDefineINT("DEFAULT_NOBLEMAN_CLASS");
 			break;
-		case XML_DEFAULT_NOBLE_GROWTH_UNIT_CLASS:
-			return this->getDefineINT("DEFAULT_NOBLE_GROWTH_UNIT_CLASS");
-			break;
 		case XML_DEFAULT_PILGRAM_CLASS:
 			return this->getDefineINT("DEFAULT_PILGRAM_CLASS");
 			break;
@@ -2906,6 +2903,9 @@ int CvGlobals::getXMLuncached(XMLconstantTypes eVal) const
 			break;
 		case XML_DEFAULT_GROWTH_UNITCLASS:
 			return this->getDefineINT("DEFAULT_GROWTH_UNITCLASS");
+			break;
+		case XML_DEFAULT_GROWTH_NOBLE_UNITCLASS:
+			return this->getDefineINT("DEFAULT_GROWTH_NOBLE_UNITCLASS");
 			break;
 		case XML_DEFAULT_POPULATION_UNITCLASS:
 			return this->getDefineINT("DEFAULT_POPULATION_UNITCLASS");

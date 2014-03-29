@@ -532,6 +532,9 @@ public:
 	UnitTypes getDefaultPopUnit() const;
 	///TKs Med
 	///Tk Civics
+	void setLuxuryPopUnit(UnitTypes eUnit);
+	UnitTypes getLuxuryPopUnit() const;
+
 	UnitClassTypes getConvertedNativeUnitClass() const;
     void setConvertedNativeUnitClass(UnitClassTypes eUnitClass);
 	void resetConnectedPlayerYieldBonus(CivicTypes eCivic = NO_CIVIC, int iChange = 1);
@@ -890,6 +893,9 @@ protected:
 	int m_iCityPlotFoodBonus;
 	unsigned int m_iNumDocksNextUnits;
 	UnitTypes m_iDefaultPopUnit;
+	///Tks Civics
+	UnitTypes m_iLuxuryPopUnit;
+	///Tke Civics
 	UnitClassTypes m_iConvertedNativeUnit;
 	int m_iFreeTechs;
 	int m_bTechsInitialized;

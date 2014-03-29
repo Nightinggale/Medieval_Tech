@@ -1029,7 +1029,10 @@ public:
 	DllExport int getFoundCityType() const;
 
 
-    DllExport int getNewDefaultUnitClass() const; 
+    DllExport int getNewDefaultUnitClass() const;
+	///Tks Civics
+	int getNewLuxuryUnitClass() const;
+	///Tke Civics
 	DllExport int getNewConvertUnitClass() const;
 	DllExport bool isFreeUnitsAreNonePopulation() const;
 	DllExport bool isFreeUnitsNotAllCities() const;
@@ -1154,6 +1157,9 @@ protected:
     int m_iGoldBonusForFirstToResearch;
     int m_iProlificInventorRateChange;
     int m_iNewDefaultUnitClass;
+	///Tks Civics
+	int m_iNewLuxuryUnitClass;
+	///Tke Civics
 	int m_iNewConvertUnitClass;
     int m_iFreeTechs;
     int m_iModdersCode1;

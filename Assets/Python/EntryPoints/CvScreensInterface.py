@@ -231,8 +231,12 @@ def pediaJumpToImprovement(argsList):
 def pediaJumpToCivic(argsList):
 	pediaMainScreen.pediaJump(PEDIA_CIVIC, argsList[0], True)
 #TK Inventions
-#def pediaJumpToTechnology(argsList):
-	#pediaMainScreen.pediaJump(PEDIA_TECHNOLOGY, argsList[0], True)
+def pediaJumpToTech(argsList):
+	pediaMainScreen.pediaJump(PEDIA_TECHS, argsList[0], True)
+def pediaJumpToTradeTech(argsList):
+	pediaMainScreen.pediaJump(PEDIA_TRADE_TECHS, argsList[0], True)
+def pediaJumpToCencure(argsList):
+	pediaMainScreen.pediaJump(PEDIA_CENSURES, argsList[0], True)
 #TK
 
 def pediaJumpToCiv(argsList):
@@ -796,6 +800,11 @@ HandleInputMap = {  MAIN_INTERFACE : mainInterface,
 					PEDIA_FEATURE : pediaMainScreen,
 					PEDIA_FATHER : pediaMainScreen,
 					PEDIA_CIVIC : pediaMainScreen,
+					#Tks New Pedia 1
+					PEDIA_TECHS : pediaMainScreen,
+					PEDIA_TRADE_TECHS : pediaMainScreen,
+					PEDIA_CENSURES : pediaMainScreen,
+					#TKe
 					PEDIA_CIVILIZATION : pediaMainScreen,
 					PEDIA_LEADER : pediaMainScreen,
 					PEDIA_HISTORY : pediaMainScreen,
@@ -832,6 +841,11 @@ HandleNavigationMap = {
 					PEDIA_FEATURE : pediaMainScreen,
 					PEDIA_FATHER : pediaMainScreen,
 					PEDIA_CIVIC : pediaMainScreen,
+					#Tks New Pedia 2
+					PEDIA_TECHS : pediaMainScreen,
+					PEDIA_TRADE_TECHS : pediaMainScreen,
+					PEDIA_CENSURES : pediaMainScreen,
+					#TKe
 					PEDIA_CIVILIZATION : pediaMainScreen,
 					PEDIA_LEADER : pediaMainScreen,
 					PEDIA_HISTORY : pediaMainScreen,

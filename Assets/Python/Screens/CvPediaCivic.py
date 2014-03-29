@@ -119,7 +119,7 @@ class CvPediaCivic:
 	def placeLinks(self, bRedraw):
 
 		screen = self.top.getScreen()
-
+		#Tks 
 		if bRedraw:
 			screen.clearListBoxGFC(self.top.LIST_ID)
 
@@ -129,7 +129,7 @@ class CvPediaCivic:
 			#if gc.getCivicInfo(j).getCivicOptionType() == 5 and gc.getCivicInfo(j).getInventionCategory() == -1:
 				#continue
 			#TKs
-			if gc.getCivicInfo(j).getCivicOptionType() != -1 or gc.getCivicInfo(j).getInventionCategory() != -1:
+			if gc.getCivicInfo(j).getCivicOptionType() != -1:
 				listSorted[j] = (gc.getCivicInfo(j).getDescription(), j)
 			#	Constitute = localText.getText("TXT_KEY_CONSTITUTE", ())
 			#	listSorted[j] = (Constitute + gc.getCivicInfo(j).getDescription(), j)
@@ -143,7 +143,7 @@ class CvPediaCivic:
 		for iI in range(gc.getNumCivicInfos()):
 			if (not gc.getCivicInfo(listSorted[iI][1]).isGraphicalOnly()):
 				#TKs
-				if gc.getCivicInfo(listSorted[iI][1]).getCivicOptionType() == -1 and gc.getCivicInfo(listSorted[iI][1]).getInventionCategory() == -1:
+				if gc.getCivicInfo(listSorted[iI][1]).getCivicOptionType() == -1:
 					continue
 				#TKe
 				if bRedraw:

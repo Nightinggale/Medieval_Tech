@@ -59,6 +59,11 @@ protected:
 	void doPediaPromotionJump(CvWidgetDataStruct &widgetDataStruct);
 	void doPediaImprovementJump(CvWidgetDataStruct &widgetDataStruct, bool bData2 = false);
 	void doPediaCivicJump(CvWidgetDataStruct &widgetDataStruct);
+	///Tks Civic
+	void doPediaTechJump(CvWidgetDataStruct &widgetDataStruct);
+	void doPediaTradeTechJump(CvWidgetDataStruct &widgetDataStruct);
+	void doPediaCensureJump(CvWidgetDataStruct &widgetDataStruct);
+	//Tke
 	void doPediaCivilizationJump(CvWidgetDataStruct &widgetDataStruct);
 	void doPediaLeaderJump(CvWidgetDataStruct &widgetDataStruct);
 	void doPediaDescription(CvWidgetDataStruct &widgetDataStruct);

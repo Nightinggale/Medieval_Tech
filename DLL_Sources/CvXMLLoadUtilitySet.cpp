@@ -2782,7 +2782,7 @@ DllExport bool CvXMLLoadUtility::LoadPlayerOptions()
 
 	// hardcode NONE to -1 when reading XML files
 	GC.setInfoTypeFromString("NONE", -1);
-	//GC.setInfoTypeFromString("CIVICOPTION_INVENTIONS", -1); //Tk Civic Change
+	GC.setInfoTypeFromString("CIVICOPTION_INVENTIONS", -1); //Tk Civic Change
 
 	// load options and graphic files
 	loadXMLFile(XML_FILE_CIV4PlayerOptionInfos);

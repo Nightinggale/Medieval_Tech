@@ -437,22 +437,46 @@
 		<Italian></Italian>
 		<Spanish></Spanish>
 	</TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_PEDIA_CATEGORY_TECHS</Tag>
+    <English>Inventions</English>
+    <French>Inventions</French>
+    <German>Inventions</German>
+    <Italian>Inventions</Italian>
+    <Spanish>Inventions</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_PEDIA_CATEGORY_TRADE_PERKS</Tag>
+    <English>Trade Perks</English>
+    <French>Trade Perks</French>
+    <German>Trade Perks</German>
+    <Italian>Trade Perks</Italian>
+    <Spanish>Trade Perks</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_PEDIA_CATEGORY_CENSURES</Tag>
+    <English>Censures</English>
+    <French>Censures</French>
+    <German>Censures</German>
+    <Italian>Censures</Italian>
+    <Spanish>Censures</Spanish>
+  </TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_PEDIA_CATEGORY_CIVIC</Tag>
-		<English>Inventions / Constitution</English>
+		<Tag>TXT_KEY_PEDIA_CATEGORY_DECRESS</Tag>
+		<English>Decress</English>
 		<French>
-			<Text>Constitution / Inventions</Text>
+			<Text>Decress</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
-		<German>Verfassung / Inventions</German>
+		<German>Decress</German>
 		<Italian>
-			<Text>Costituzione / Inventions</Text>
+			<Text>Decress</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Italian>
 		<Spanish>
-			<Text>Constituci&#243;n</Text>
+			<Text>Decress</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Spanish>

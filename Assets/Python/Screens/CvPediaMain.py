@@ -16,6 +16,11 @@ import CvPediaTerrain
 import CvPediaFeature
 import CvPediaImprovement
 import CvPediaCivic
+#tks New Pedia 4
+import CvPediaTechs
+import CvPediaTradeTechs
+import CvPediaCensures
+#tke
 import CvPediaCivilization
 import CvPediaLeader
 import CvPediaHistory
@@ -57,6 +62,11 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 		self.pediaFeature = CvPediaFeature.CvPediaFeature(self)
 		self.pediaImprovement = CvPediaImprovement.CvPediaImprovement(self)
 		self.pediaCivic = CvPediaCivic.CvPediaCivic(self)
+		#Tks New Pedia 5
+		self.pediaTechs = CvPediaTechs.CvPediaTechs(self)
+		self.pediaTradeTechs = CvPediaTradeTechs.CvPediaTradeTechs(self)
+		self.pediaCensures = CvPediaCensures.CvPediaCensures(self)
+		#Tke
 		self.pediaCivilization = CvPediaCivilization.CvPediaCivilization(self)
 		self.pediaLeader = CvPediaLeader.CvPediaLeader(self)
 		self.pediaHistorical = CvPediaHistory.CvPediaHistory(self)
@@ -84,6 +94,11 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 			CivilopediaPageTypes.CIVILOPEDIA_PAGE_CIV	: self.placeCivs,
 			CivilopediaPageTypes.CIVILOPEDIA_PAGE_LEADER	: self.placeLeaders,
 			CivilopediaPageTypes.CIVILOPEDIA_PAGE_CIVIC	: self.placeCivics,
+			#Tks New Pedia 6
+			CivilopediaPageTypes.CIVILOPEDIA_PAGE_TECHNOLOGY	: self.placeTechs,
+			CivilopediaPageTypes.CIVILOPEDIA_PAGE_TRADE_TECHS	: self.placeTradeTechs,
+			CivilopediaPageTypes.CIVILOPEDIA_PAGE_CENSURES	: self.placeCensures,
+			#Tke
 			CivilopediaPageTypes.CIVILOPEDIA_PAGE_CONCEPT	: self.placeConcepts,
 			CivilopediaPageTypes.CIVILOPEDIA_PAGE_HINTS	: self.placeHints,
 			}
@@ -108,7 +123,12 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 		self.szCategoryPromotion = localText.getText("TXT_KEY_PEDIA_CATEGORY_PROMOTION", ())
 		self.szCategoryCiv = localText.getText("TXT_KEY_PEDIA_CATEGORY_CIV", ())
 		self.szCategoryLeader = localText.getText("TXT_KEY_PEDIA_CATEGORY_LEADER", ())
-		self.szCategoryCivic = localText.getText("TXT_KEY_PEDIA_CATEGORY_CIVIC", ())
+		self.szCategoryCivic = localText.getText("TXT_KEY_PEDIA_CATEGORY_DECRESS", ())
+		#tks New Pedia 7
+		self.szCategoryTechs = localText.getText("TXT_KEY_PEDIA_CATEGORY_TECHS", ())
+		self.szCategoryTradeTechs = localText.getText("TXT_KEY_PEDIA_CATEGORY_TRADE_PERKS", ())
+		self.szCategoryCensures = localText.getText("TXT_KEY_PEDIA_CATEGORY_CENSURES", ())
+		#tke
 		self.szCategoryConcept = localText.getText("TXT_KEY_PEDIA_CATEGORY_CONCEPT", ())
 		self.szCategoryHints = localText.getText("TXT_KEY_PEDIA_CATEGORY_HINTS", ())
 		self.listCategories = [ self.szCategoryUnit,
@@ -124,6 +144,11 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 								self.szCategoryCiv,
 								self.szCategoryLeader,
 								self.szCategoryCivic,
+								#tks New Pedia 8
+								self.szCategoryTechs,
+								self.szCategoryTradeTechs,
+								self.szCategoryCensures,
+								#tke
 								self.szCategoryConcept,
 								self.szCategoryHints]
 								
@@ -516,7 +541,7 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 		for item in list:
 			#TKs
 			Constitute = ""
-			if gc.getCivicInfo(item[1]).getCivicOptionType() == -1 and gc.getCivicInfo(item[1]).getInventionCategory() == -1:
+			if gc.getCivicInfo(item[1]).getCivicOptionType() == -1:
 				continue
 			#if gc.getCivicInfo(item[1]).getCivicOptionType() != 0:
 				#Constitute = localText.getText("TXT_KEY_CONSTITUTE", ())
@@ -530,7 +555,118 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 				screen.setTableRowHeight(tableName, iRow, ButtonSize)
 			screen.setTableText(tableName, iColumn, iRow, u"<font=3>" + Constitute + item[0] + u"</font>", gc.getCivicInfo(item[1]).getButton(), WidgetTypes.WIDGET_PEDIA_JUMP_TO_CIVIC, item[1], 1, CvUtil.FONT_LEFT_JUSTIFY)
 			iCounter += 1
-			#TKe
+			
+	def placeTechs(self):
+		screen = self.getScreen()
+		# Create and place a civics pane
+		list = self.getSortedList( gc.getNumCivicInfos(), gc.getCivicInfo )
+
+		ButtonSize = 24
+		nColumns = 1
+		nEntries = len(list)
+		nRows = nEntries // nColumns
+		if (nEntries % nColumns):
+			nRows += 1
+		tableName = self.getNextWidgetName()
+		screen.addTableControlGFC(tableName, nColumns, self.X_ITEMS_PANE, self.Y_ITEMS_PANE+5, self.W_ITEMS_PANE, self.H_ITEMS_PANE-5, False, False, ButtonSize, ButtonSize, TableStyles.TABLE_STYLE_STANDARD);
+		screen.enableSelect(tableName, False)
+		for i in range(nColumns):
+			screen.setTableColumnHeader(tableName, i, "", self.W_ITEMS_PANE/nColumns)
+
+		iCounter = 0
+		iNumRows = 0
+		for item in list:
+			#TKs
+			Constitute = ""
+			if gc.getCivicInfo(item[1]).getInventionCategory() != 1:
+				continue
+			#if gc.getCivicInfo(item[1]).getCivicOptionType() != 0:
+				#Constitute = localText.getText("TXT_KEY_CONSTITUTE", ())
+				#continue
+			
+			iRow = iCounter % nRows
+			iColumn = iCounter // nRows
+			if iRow >= iNumRows:
+				iNumRows += 1
+				screen.appendTableRow(tableName)
+				screen.setTableRowHeight(tableName, iRow, ButtonSize)
+			screen.setTableText(tableName, iColumn, iRow, u"<font=3>" + Constitute + item[0] + u"</font>", gc.getCivicInfo(item[1]).getButton(), WidgetTypes.WIDGET_PEDIA_JUMP_TO_TECH, item[1], 1, CvUtil.FONT_LEFT_JUSTIFY)
+			iCounter += 1
+	#End Tech Civic
+	def placeTradeTechs(self):
+		screen = self.getScreen()
+		# Create and place a civics pane
+		list = self.getSortedList( gc.getNumCivicInfos(), gc.getCivicInfo )
+
+		ButtonSize = 24
+		nColumns = 1
+		nEntries = len(list)
+		nRows = nEntries // nColumns
+		if (nEntries % nColumns):
+			nRows += 1
+		tableName = self.getNextWidgetName()
+		screen.addTableControlGFC(tableName, nColumns, self.X_ITEMS_PANE, self.Y_ITEMS_PANE+5, self.W_ITEMS_PANE, self.H_ITEMS_PANE-5, False, False, ButtonSize, ButtonSize, TableStyles.TABLE_STYLE_STANDARD);
+		screen.enableSelect(tableName, False)
+		for i in range(nColumns):
+			screen.setTableColumnHeader(tableName, i, "", self.W_ITEMS_PANE/nColumns)
+
+		iCounter = 0
+		iNumRows = 0
+		for item in list:
+			#TKs
+			Constitute = ""
+			if gc.getCivicInfo(item[1]).getInventionCategory() != 2:
+				continue
+			#if gc.getCivicInfo(item[1]).getCivicOptionType() != 0:
+				#Constitute = localText.getText("TXT_KEY_CONSTITUTE", ())
+				#continue
+			
+			iRow = iCounter % nRows
+			iColumn = iCounter // nRows
+			if iRow >= iNumRows:
+				iNumRows += 1
+				screen.appendTableRow(tableName)
+				screen.setTableRowHeight(tableName, iRow, ButtonSize)
+			screen.setTableText(tableName, iColumn, iRow, u"<font=3>" + Constitute + item[0] + u"</font>", gc.getCivicInfo(item[1]).getButton(), WidgetTypes.WIDGET_PEDIA_JUMP_TO_TRADE_TECH, item[1], 1, CvUtil.FONT_LEFT_JUSTIFY)
+			iCounter += 1
+	#End Trade Tech Civic
+	def placeCensures(self):
+		screen = self.getScreen()
+		# Create and place a civics pane
+		list = self.getSortedList( gc.getNumCivicInfos(), gc.getCivicInfo )
+
+		ButtonSize = 24
+		nColumns = 1
+		nEntries = len(list)
+		nRows = nEntries // nColumns
+		if (nEntries % nColumns):
+			nRows += 1
+		tableName = self.getNextWidgetName()
+		screen.addTableControlGFC(tableName, nColumns, self.X_ITEMS_PANE, self.Y_ITEMS_PANE+5, self.W_ITEMS_PANE, self.H_ITEMS_PANE-5, False, False, ButtonSize, ButtonSize, TableStyles.TABLE_STYLE_STANDARD);
+		screen.enableSelect(tableName, False)
+		for i in range(nColumns):
+			screen.setTableColumnHeader(tableName, i, "", self.W_ITEMS_PANE/nColumns)
+
+		iCounter = 0
+		iNumRows = 0
+		for item in list:
+			#TKs
+			Constitute = ""
+			if gc.getCivicInfo(item[1]).getInventionCategory() != 3:
+				continue
+			#if gc.getCivicInfo(item[1]).getCivicOptionType() != 0:
+				#Constitute = localText.getText("TXT_KEY_CONSTITUTE", ())
+				#continue
+			
+			iRow = iCounter % nRows
+			iColumn = iCounter // nRows
+			if iRow >= iNumRows:
+				iNumRows += 1
+				screen.appendTableRow(tableName)
+				screen.setTableRowHeight(tableName, iRow, ButtonSize)
+			screen.setTableText(tableName, iColumn, iRow, u"<font=3>" + Constitute + item[0] + u"</font>", gc.getCivicInfo(item[1]).getButton(), WidgetTypes.WIDGET_PEDIA_JUMP_TO_CENSURES, item[1], 1, CvUtil.FONT_LEFT_JUSTIFY)
+			iCounter += 1
+	#End Censures Civic New Pedia 8
 	def placeTerrains(self):
 		screen = self.getScreen()
 		# Create and place a terrain pane
@@ -751,6 +887,14 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 			self.pediaImprovement.interfaceScreen(iEntry, self.X_ITEMS_PANE, self.Y_ITEMS_PANE, self.H_ITEMS_PANE, self.W_ITEMS_PANE)
 		elif (iScreen == CvScreenEnums.PEDIA_CIVIC):
 			self.pediaCivic.interfaceScreen(iEntry, self.X_ITEMS_PANE, self.Y_ITEMS_PANE, self.H_ITEMS_PANE, self.W_ITEMS_PANE)
+		#Tks
+		elif (iScreen == CvScreenEnums.PEDIA_TECHS):
+			self.pediaTechs.interfaceScreen(iEntry, self.X_ITEMS_PANE, self.Y_ITEMS_PANE, self.H_ITEMS_PANE, self.W_ITEMS_PANE)
+		elif (iScreen == CvScreenEnums.PEDIA_TRADE_TECHS):
+			self.pediaTradeTechs.interfaceScreen(iEntry, self.X_ITEMS_PANE, self.Y_ITEMS_PANE, self.H_ITEMS_PANE, self.W_ITEMS_PANE)
+		elif (iScreen == CvScreenEnums.PEDIA_CENSURES):
+			self.pediaCensures.interfaceScreen(iEntry, self.X_ITEMS_PANE, self.Y_ITEMS_PANE, self.H_ITEMS_PANE, self.W_ITEMS_PANE)
+		#Tke
 		elif (iScreen == CvScreenEnums.PEDIA_CIVILIZATION):
 			self.pediaCivilization.interfaceScreen(iEntry, self.X_ITEMS_PANE, self.Y_ITEMS_PANE, self.H_ITEMS_PANE, self.W_ITEMS_PANE)
 		elif (iScreen == CvScreenEnums.PEDIA_LEADER):
@@ -812,6 +956,14 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 			return self.pediaJump(CvScreenEnums.PEDIA_MAIN, int(CivilopediaPageTypes.CIVILOPEDIA_PAGE_LEADER), True)
 		if (szLink == "PEDIA_MAIN_CIVIC"):
 			return self.pediaJump(CvScreenEnums.PEDIA_MAIN, int(CivilopediaPageTypes.CIVILOPEDIA_PAGE_CIVIC), True)
+			#tks
+		if (szLink == "PEDIA_MAIN_TECHS"):
+			return self.pediaJump(CvScreenEnums.PEDIA_MAIN, int(CivilopediaPageTypes.CIVILOPEDIA_PAGE_TECHNOLOGY), True)
+		if (szLink == "PEDIA_MAIN_TRADE_TECHS"):
+			return self.pediaJump(CvScreenEnums.PEDIA_MAIN, int(CivilopediaPageTypes.CIVILOPEDIA_PAGE_TRADE_TECHS), True)
+		if (szLink == "PEDIA_MAIN_CENSURES"):
+			return self.pediaJump(CvScreenEnums.PEDIA_MAIN, int(CivilopediaPageTypes.CIVILOPEDIA_PAGE_CENSURES), True)
+			#tke
 		if (szLink == "PEDIA_MAIN_CONCEPT"):
 			return self.pediaJump(CvScreenEnums.PEDIA_MAIN, int(CivilopediaPageTypes.CIVILOPEDIA_PAGE_CONCEPT), True)
 		if (szLink == "PEDIA_MAIN_HINTS"):
@@ -894,6 +1046,14 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 			return self.pediaImprovement.handleInput(inputClass)
 		if (self.iLastScreen == CvScreenEnums.PEDIA_CIVIC):
 			return self.pediaCivic.handleInput(inputClass)
+		#Tks
+		if (self.iLastScreen == CvScreenEnums.PEDIA_TECHS):
+			return self.pediaTechs.handleInput(inputClass)
+		if (self.iLastScreen == CvScreenEnums.PEDIA_TRADE_TECHS):
+			return self.pediaTradeTechs.handleInput(inputClass)
+		if (self.iLastScreen == CvScreenEnums.PEDIA_CENSURES):
+			return self.pediaCensures.handleInput(inputClass)
+		#Tke
 		if (self.iLastScreen == CvScreenEnums.PEDIA_CIVILIZATION):
 			return self.pediaCivilization.handleInput(inputClass)
 		if (self.iLastScreen == CvScreenEnums.PEDIA_LEADER):

@@ -318,6 +318,15 @@ void CvDLLWidgetData::parseHelp(CvWStringBuffer &szBuffer, CvWidgetDataStruct &w
 	case WIDGET_PEDIA_JUMP_TO_CIVIC:
 		parseCivicHelp(widgetDataStruct, szBuffer);
 		break;
+	case WIDGET_PEDIA_JUMP_TO_TECH:
+		parseCivicHelp(widgetDataStruct, szBuffer);
+		break;
+	case WIDGET_PEDIA_JUMP_TO_TRADE_TECH:
+		parseCivicHelp(widgetDataStruct, szBuffer);
+		break;
+	case WIDGET_PEDIA_JUMP_TO_CENSURES:
+		parseCivicHelp(widgetDataStruct, szBuffer);
+		break;
     ///TKs Invention Core Mod v 1.0
     case WIDGET_PEDIA_JUMP_TO_TECHNOLOGY:
 		//parseCivicHelp(widgetDataStruct, szBuffer);
@@ -593,6 +602,15 @@ bool CvDLLWidgetData::executeAction( CvWidgetDataStruct &widgetDataStruct )
 		doPediaCivicJump(widgetDataStruct);
 		break;
 	///TKs Invention Core Mod v 1.0
+	case WIDGET_PEDIA_JUMP_TO_TECH:
+		doPediaTechJump(widgetDataStruct);
+		break;
+	case WIDGET_PEDIA_JUMP_TO_TRADE_TECH:
+		doPediaTradeTechJump(widgetDataStruct);
+		break;
+	case WIDGET_PEDIA_JUMP_TO_CENSURES:
+		doPediaCensureJump(widgetDataStruct);
+		break;
     case WIDGET_PEDIA_JUMP_TO_TECHNOLOGY:
 		doInventorsHouse(widgetDataStruct);
 		break;
@@ -860,6 +878,9 @@ bool CvDLLWidgetData::isLink(const CvWidgetDataStruct &widgetDataStruct) const
 	case WIDGET_PEDIA_JUMP_TO_CIVIC:
 	///TKs Invention Core Mod v 1.0
 	case WIDGET_PEDIA_JUMP_TO_TECHNOLOGY:
+	case WIDGET_PEDIA_JUMP_TO_TECH:
+	case WIDGET_PEDIA_JUMP_TO_TRADE_TECH:
+	case WIDGET_PEDIA_JUMP_TO_CENSURES:
 	///TKe
 	case WIDGET_PEDIA_JUMP_TO_CIV:
 	case WIDGET_PEDIA_JUMP_TO_LEADER:
@@ -1312,6 +1333,27 @@ void CvDLLWidgetData::doPediaCivicJump(CvWidgetDataStruct &widgetDataStruct)
 	argsList.add(widgetDataStruct.m_iData1);
 	gDLL->getPythonIFace()->callFunction(PYScreensModule, "pediaJumpToCivic", argsList.makeFunctionArgs());
 }
+
+///TKs Civics
+void CvDLLWidgetData::doPediaTechJump(CvWidgetDataStruct &widgetDataStruct)
+{
+	CyArgsList argsList;
+	argsList.add(widgetDataStruct.m_iData1);
+	gDLL->getPythonIFace()->callFunction(PYScreensModule, "pediaJumpToTech", argsList.makeFunctionArgs());
+}
+void CvDLLWidgetData::doPediaTradeTechJump(CvWidgetDataStruct &widgetDataStruct)
+{
+	CyArgsList argsList;
+	argsList.add(widgetDataStruct.m_iData1);
+	gDLL->getPythonIFace()->callFunction(PYScreensModule, "pediaJumpToTradeTech", argsList.makeFunctionArgs());
+}
+void CvDLLWidgetData::doPediaCensureJump(CvWidgetDataStruct &widgetDataStruct)
+{
+	CyArgsList argsList;
+	argsList.add(widgetDataStruct.m_iData1);
+	gDLL->getPythonIFace()->callFunction(PYScreensModule, "pediaJumpToCencure", argsList.makeFunctionArgs());
+}
+//Tke
 
 void CvDLLWidgetData::doPediaCivilizationJump(CvWidgetDataStruct &widgetDataStruct)
 {
@@ -3447,6 +3489,8 @@ void CvDLLWidgetData::parseDescriptionHelp(CvWidgetDataStruct &widgetDataStruct,
 		break;
 		///TKs Invention Core Mod v 1.0
     case CIVILOPEDIA_PAGE_TECHNOLOGY:
+	case CIVILOPEDIA_PAGE_TRADE_TECHS:
+	case CIVILOPEDIA_PAGE_CENSURES:
 		{
 			CivicTypes eCivic = (CivicTypes)widgetDataStruct.m_iData2;
 			if (NO_CIVIC != eCivic)

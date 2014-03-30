@@ -4932,7 +4932,7 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 
     pXML->SetVariableListTagPair(&m_aiRequiredYields, "RequiredYields", NUM_YIELD_TYPES, 0);
 	//Civic Arrays Start
-	m_jaAllowedUnitClassImmigration.read(pXML, "AllowsUnitClassImmigration");
+	m_jaAllowedUnitClassImmigration.read(pXML, "AllowsUnitClassesImmigration");
 	//Prohibited Civics
 	//CivicTypes iVal;
 	if(gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "ProhibitsCivics"))

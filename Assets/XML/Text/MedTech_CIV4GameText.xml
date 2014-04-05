@@ -569,7 +569,7 @@ At the Battle of Nesjar, in 1016, Olaf Haraldsson won the kingdom of Norway from
 	<!-- Pedia - Unit source - Start Nightinggale -->
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MIGRATES</Tag>
-		<English>[ICON_BULLET]Migrates from Europe</English>
+		<English>[ICON_BULLET]can Migrate</English>
 		<French>[ICON_BULLET]Migrates from Europe</French>
 		<German>[ICON_BULLET]Migriert aus Europa</German>
 		<Italian>[ICON_BULLET]Migrates from Europe</Italian>
@@ -577,7 +577,7 @@ At the Battle of Nesjar, in 1016, Olaf Haraldsson won the kingdom of Norway from
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BUYABLE_IN_EUROPE</Tag>
-		<English>[ICON_BULLET]Buyable in Europe</English>
+		<English>[ICON_BULLET]can be Summoned</English>
 		<French>[ICON_BULLET]Buyable in Europe</French>
 		<German>[ICON_BULLET]Kaufbar in Europa</German>
 		<Italian>[ICON_BULLET]Buyable in Europe</Italian>

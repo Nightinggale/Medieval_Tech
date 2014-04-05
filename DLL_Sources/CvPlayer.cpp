@@ -243,8 +243,6 @@ void CvPlayer::init(PlayerTypes eID)
 		{
 			setCivic(((CivicOptionTypes)iI), ((CivicTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationInitialCivics(iI))));
 		}
-		//Tks Civic Screen
-		updateMaxAnarchyTurns();
 
 		for (int iI = 0; iI < GC.getNumEventInfos(); iI++)
 		{
@@ -333,9 +331,11 @@ void CvPlayer::init(PlayerTypes eID)
 	}
 
 	AI_init();
-
+	
 	if (this->getCivilizationType() != NO_CIVILIZATION)
 	{
+		//Tks Civic Screen
+		updateMaxAnarchyTurns();
 		Update_cache_YieldEquipmentAmount(); // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 		this->updateInventionEffectCache(); // invention effect cache - Nightinggale
 	}
@@ -2507,12 +2507,6 @@ void CvPlayer::doTurn()
 
 	///TKs Invention Core Mod v 1.0
 	doIdeas();
-	//Tk Civics
-	if (getGoldIncome() > 0)
-	{
-		int iTreasuryPercent = getGold() * getGoldIncome() / 100;
-		changeGold(iTreasuryPercent);
-	}
 	if (getRevolutionTimer() > 0)
 	{
 		changeRevolutionTimer(-1);
@@ -9478,7 +9472,17 @@ void CvPlayer::doGold()
 	}
 
 	int iGoldChange = 0;
-
+	//Tk Civics
+	if (getGoldIncome() > 0)
+	{
+		int iTreasuryPercent = getGold() * getGoldIncome() / 100;
+		changeGold(iTreasuryPercent);
+	}
+	iGoldChange = -getUpkeepCount(YIELD_GOLD);
+	if (!isHuman() && (getGold() + iGoldChange) < 0)
+	{
+		iGoldChange = 0;
+	}
 	FAssert(isHuman() || ((getGold() + iGoldChange) >= 0));
 
 	changeGold(iGoldChange);
@@ -14874,6 +14878,11 @@ int CvPlayer::getMaxAnarchyTurns() const
 
 void CvPlayer::updateMaxAnarchyTurns()
 {
+	if (isNative() || isEurope())
+	{
+		return;
+	}
+
 	int iBestValue;
 	int iI;
 	///DEFINE INTEGER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -14884,7 +14893,7 @@ void CvPlayer::updateMaxAnarchyTurns()
 	{
 		if (hasTrait((TraitTypes)iI))
 		{
-			if (GC.getTraitInfo((TraitTypes)iI).getMaxAnarchy() >= 0)
+			if (GC.getTraitInfo((TraitTypes)iI).getMaxAnarchy() > 0)
 			{
 				if (GC.getTraitInfo((TraitTypes)iI).getMaxAnarchy() < iBestValue)
 				{
@@ -15085,12 +15094,12 @@ int CvPlayer::getSingleCivicUpkeep(CivicTypes eCivic, bool bIgnoreAnarchy) const
 	{
 		return 0;
 	}
-
+	
 	//if (isNoCivicUpkeep((CivicOptionTypes)(GC.getCivicInfo(eCivic).getCivicOptionType())))
 	//{
 		//return 0;
 	//}
-	bool bYieldUpkeepFound = false;
+	/*bool bYieldUpkeepFound = false;
 	for (int iI = 0; NUM_YIELD_TYPES; iI++)
 	{
 		if (GC.getCivicInfo(eCivic).getUpkeepYields((YieldTypes)iI) == 0)
@@ -15103,7 +15112,7 @@ int CvPlayer::getSingleCivicUpkeep(CivicTypes eCivic, bool bIgnoreAnarchy) const
 	if (!bYieldUpkeepFound)
 	{
 		return 0;
-	}
+	}*/
 
 	if (!bIgnoreAnarchy)
 	{
@@ -15113,8 +15122,11 @@ int CvPlayer::getSingleCivicUpkeep(CivicTypes eCivic, bool bIgnoreAnarchy) const
 		}
 	}
 
-	iUpkeep = 0;
-
+	iUpkeep = GC.getCivicInfo(eCivic).getUpkeepYields(YIELD_GOLD);
+	if (iUpkeep == 0)
+	{
+		return 0;
+	}
 	//iUpkeep += ((std::max(0, (getTotalPopulation() + GC.getDefineINT("UPKEEP_POPULATION_OFFSET") - GC.getCivicInfo(eCivic).getCivicOptionType())) * GC.getUpkeepInfo((UpkeepTypes)(GC.getCivicInfo(eCivic).getUpkeep())).getPopulationPercent()) / 100);
 	//iUpkeep += ((std::max(0, (getNumCities() + GC.getDefineINT("UPKEEP_CITY_OFFSET") + GC.getCivicInfo(eCivic).getCivicOptionType() - (GC.getNumCivicOptionInfos() / 2))) * GC.getUpkeepInfo((UpkeepTypes)(GC.getCivicInfo(eCivic).getUpkeep())).getCityPercent()) / 100);
 
@@ -15122,12 +15134,12 @@ int CvPlayer::getSingleCivicUpkeep(CivicTypes eCivic, bool bIgnoreAnarchy) const
 	iUpkeep /= 100;
 
 	//iUpkeep *= GC.getHandicapInfo(getHandicapType()).getCivicUpkeepPercent();
-	iUpkeep /= 100;
+	//iUpkeep /= 100;
 
 	if (!isHuman() && !isNative())
 	{
 		//iUpkeep *= GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getAICivicUpkeepPercent();
-		iUpkeep /= 100;
+		//iUpkeep /= 100;
 
 		iUpkeep *= std::max(0, ((GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getAIPerEraModifier() * getCurrentEra()) + 100));
 		iUpkeep /= 100;
@@ -15190,6 +15202,11 @@ bool CvPlayer::canChangeCivics(CivicTypes* paeNewCivics) const
 	}
 	else
 	{
+		if (isHuman() && getCivicInitalCosts(paeNewCivics) < getGold())
+		{
+			return false;
+		}
+
 		for (iI = 0; iI < GC.getNumCivicOptionInfos(); ++iI)
 		{
 			/*if (GC.getGameINLINE().isForceCivicOption((CivicOptionTypes)iI))
@@ -15209,6 +15226,37 @@ bool CvPlayer::canChangeCivics(CivicTypes* paeNewCivics) const
 	}
 
 	return false;
+}
+
+int CvPlayer::getCivicInitalCosts(CivicTypes* paeNewCivics) const
+{
+	int iInitailCost;
+	int iI;
+
+	iInitailCost = 0;
+
+	for (iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
+	{
+		if (paeNewCivics[iI] != getCivic((CivicOptionTypes)iI))
+		{
+			iInitailCost += GC.getCivicInfo(paeNewCivics[iI]).getInitialCost();
+		}
+	}
+
+	//iInitailCost = ((iInitailCost * std::max(0, (getAnarchyModifier() + 100))) / 100);
+
+	if (iInitailCost == 0)
+	{
+		return 0;
+	}
+
+	iInitailCost *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getAnarchyPercent();
+	iInitailCost /= 100;
+
+	iInitailCost *= GC.getEraInfo(GC.getGameINLINE().getStartEra()).getAnarchyPercent();
+	iInitailCost /= 100;
+
+	return range(iInitailCost, 1, MAX_SHORT);
 }
 
 int CvPlayer::getCivicAnarchyLength(CivicTypes* paeNewCivics) const
@@ -15276,6 +15324,19 @@ void CvPlayer::changeCivics(CivicTypes* paeNewCivics, bool bForce)
 		return;
 	}
 
+	int iMinTurns = GC.getDefineINT("MIN_REVOLUTION_TURNS");
+	if (!isHuman())
+	{
+		iMinTurns *= 5;
+	}
+	else
+	{
+		//Uncomment when done testing
+		//setRevolutionTimer(std::max(1, ((100 + getAnarchyModifier()) * iMinTurns) / 100) + iAnarchyLength);
+		int iCost = getCivicInitalCosts(paeNewCivics);
+		changeGold(-iCost);
+	}
+
 	iAnarchyLength = getCivicAnarchyLength(paeNewCivics);
 
 	if (iAnarchyLength > 0)
@@ -15284,6 +15345,7 @@ void CvPlayer::changeCivics(CivicTypes* paeNewCivics, bool bForce)
 
 		for (iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
 		{
+			changeUpkeepCount(YIELD_GOLD, getSingleCivicUpkeep(paeNewCivics[iI], true));
 			setCivic(((CivicOptionTypes)iI), paeNewCivics[iI]);
 		}
 	}
@@ -15291,16 +15353,11 @@ void CvPlayer::changeCivics(CivicTypes* paeNewCivics, bool bForce)
 	{
 		for (iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
 		{
+			changeUpkeepCount(YIELD_GOLD, getSingleCivicUpkeep(paeNewCivics[iI], true));
 			setCivic(((CivicOptionTypes)iI), paeNewCivics[iI]);
 		}
 	}
-	int iMinTurns = GC.getDefineINT("MIN_REVOLUTION_TURNS");
-	if (!isHuman())
-	{
-		iMinTurns *= 5;
-	}
-	//setRevolutionTimer(std::max(1, ((100 + getAnarchyModifier()) * iMinTurns) / 100) + iAnarchyLength);
-
+	
 	if (getID() == GC.getGameINLINE().getActivePlayer())
 	{
 		gDLL->getInterfaceIFace()->setDirty(Popup_DIRTY_BIT, true); // to force an update of the civic chooser popup

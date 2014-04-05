@@ -591,7 +591,7 @@
 	<ElementType name="FasterBuildFeatureTypes" content="eltOnly">
 		<element type="ModBuildType" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-	<ElementType name="MaxYieldModifier" content="eltOnly">
+	<ElementType name="MaxStorageModifier" content="eltOnly">
 		<element type="YieldType"/>
 		<element type="iChange"/>
 	</ElementType>
@@ -605,8 +605,8 @@
   <ElementType name="ProhibitsCivics" content="eltOnly">
 		<element type="ProhibitedCivic" minOccurs="0"/>
 	</ElementType>
-	<ElementType name="MaxYieldModifiers" content="eltOnly">
-		<element type="MaxYieldModifier" minOccurs="0"/>
+	<ElementType name="MaxStorageModifiers" content="eltOnly">
+		<element type="MaxStorageModifier" minOccurs="0"/>
 	</ElementType>
   <ElementType name="GarrisonUnitModifiers" content="eltOnly">
 		<element type="GarrisonUnitModifier" minOccurs="0"/>
@@ -657,6 +657,7 @@
   <ElementType name="iPilgramYieldPercent" content="textOnly" dt:type="int"/>
   <ElementType name="iFatherPointModifier" content="textOnly" dt:type="int"/>
   <ElementType name="iAnarchyLength" content="textOnly" dt:type="int"/>
+  <ElementType name="iInitialCost" content="textOnly" dt:type="int"/>
   <ElementType name="iDiplomacyAttitudeChange" content="textOnly" dt:type="int"/>
   <ElementType name="bRevolutionEuropeTrade" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bAllowsMapTrade" content="textOnly" dt:type="boolean"/>
@@ -731,7 +732,7 @@
     <element type="ConnectedMissonYields" minOccurs="0"/>
     <element type="ConnectedTradeYields" minOccurs="0"/>
     <element type="NewDefaultUnitClass" minOccurs="0"/>
-	<element type="NewLuxuryUnitClass" minOccurs="0"/>
+	  <element type="NewLuxuryUnitClass" minOccurs="0"/>
     <element type="NewConvertUnitClass" minOccurs="0"/>
 		<element type="DisallowsTech" minOccurs="0"/>
 		<element type="ConvertsResearchYield" minOccurs="0"/>
@@ -749,6 +750,7 @@
     <element type="bWorkersBuildAfterMove" minOccurs="0"/>
     <element type="bBuildingTreasuryBonus" minOccurs="0"/>
 		<element type="iAnarchyLength" minOccurs="0"/>
+    <element type="iInitialCost" minOccurs="0"/>
     <element type="iDiplomacyAttitudeChange" minOccurs="0"/>
     <element type="iIncreasedEnemyHealRate" minOccurs="0"/>
 		<element type="iFreeHurriedImmigrants" minOccurs="0"/>
@@ -769,7 +771,7 @@
     <element type="iTradingPostNotCosumed" minOccurs="0"/>
     <element type="iPilgramYieldPercent" minOccurs="0"/>
     <element type="iHuntingYieldPercent" minOccurs="0"/>
-		<element type="MaxYieldModifiers" minOccurs="0"/>
+		<element type="MaxStorageModifiers" minOccurs="0"/>
 	</ElementType>
 	<ElementType name="CivicInfos" content="eltOnly">
 		<element type="CivicInfo" maxOccurs="*"/>

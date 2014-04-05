@@ -245,10 +245,13 @@ public:
 	DllExport int getUpgradeDiscount() const;
 	DllExport int getExperiencePercent() const;
     ///TK FS
-    DllExport int getFirstStrikesChange() const;				// Exposed to Python
+	DllExport int getPlotWorkedBonus() const;
+	DllExport int getBuildingWorkedBonus() const;
+    DllExport int getFirstStrikesChange() const;
 	DllExport int getChanceFirstStrikesChange() const;
 	DllExport int getEscortUnitClass() const;
 	DllExport bool isImmuneToFirstStrikes() const;
+	DllExport bool isCivilian() const;
 	DllExport bool isNonePromotion() const;
 	DllExport bool isNoBadGoodies() const;
     ///TKe
@@ -306,11 +309,14 @@ protected:
 	int m_iPillageChange;
 	int m_iUpgradeDiscount;
 	int m_iExperiencePercent;
-	///TK FS
+	///TK
+	int m_iPlotWorkedBonus;
+	int m_iBuildingWorkedBonus;
 	int m_iFirstStrikesChange;
 	int m_iEscortUnitClass;
     int m_iChanceFirstStrikesChange;
     bool m_bImmuneToFirstStrikes;
+	bool m_bCivilian;
     bool bNonePromotion;
     bool bNoBadGoodies;
     ///TKe
@@ -1001,6 +1007,7 @@ public:
 	///Tks Civics
 	int getDiplomacyAttitudeChange() const;
 	int getAnarchyLength() const;
+	int getInitialCost() const;
 	int getMissionariesNotCosumed() const;
 	int getTradingPostNotCosumed() const;
 	int getHuntingYieldPercent() const;
@@ -1175,6 +1182,7 @@ protected:
 	int m_iMissionariesNotCosumed;
 	int m_iTradingPostNotCosumed;
 	int m_iAnarchyLength;
+	int m_iInitialCost;
 	int m_iHuntingYieldPercent;
 	int m_iPilgramYieldPercent;
 	//TKe CivicsScreen

@@ -86,6 +86,7 @@ public:
 	void changeCivics(boost::python::list& /*CivicTypes**/ paeNewCivics, bool bForce);
 	bool canChangeCivics(int /*CivicTypes**/ paeNewCivics);
 	int getCivicAnarchyLength(boost::python::list& /*CivicTypes**/ paeNewCivics);
+	int getCivicInitalCosts(boost::python::list& /*CivicTypes**/ paeNewCivics);
 	int getCivicUpkeep(boost::python::list&  /*CivicTypes*/ paiCivics, bool bIgnoreAnarchy);
 	///Tke Civics
 	int getMultiYieldRate(YieldTypes eIndex);

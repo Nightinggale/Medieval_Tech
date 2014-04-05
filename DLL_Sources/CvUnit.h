@@ -578,6 +578,10 @@ public:
 	void setTravelPlot();
 	bool doUnitPilgram();
 	CvPlot* findNearestValidMarauderPlot(CvCity* pSpawnCity, CvCity* pVictimCity, bool bNoCitySpawn, bool bMustBeSameArea);
+	int getPlotWorkedBonus() const;
+	void changePlotWorkedBonus(int iChange);
+	int getBuildingWorkedBonus() const;
+	void changeBuildingWorkedBonus(int iChange);
 	int getInvisibleTimer() const;
 	void setInvisibleTimer(int iNewValue);
 	void changeInvisibleTimer(int iChange);
@@ -761,6 +765,8 @@ protected:
 	int m_iExtraChanceFirstStrikes;
 	int m_iCombatBlockParrys;
 	int m_iEscortPromotion;
+	int m_iPlotWorkedBonus;
+	int m_iBuildingWorkedBonus;
 	int m_iInvisibleTimer;
 	bool m_bCrushingBlows;
 	bool m_bGlancingBlows;

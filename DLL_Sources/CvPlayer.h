@@ -557,6 +557,7 @@ public:
 	void setConversionTimer(int iNewValue);
 	void changeConversionTimer(int iChange);
 	int getCivicAnarchyLength(CivicTypes* paeNewCivics) const;
+	int getCivicInitalCosts(CivicTypes* paeNewCivics) const;
 	int getSingleCivicUpkeep(CivicTypes eCivic, bool bIgnoreAnarchy) const;
 	int getCivicUpkeep(CivicTypes* paeCivics, bool bIgnoreAnarchy) const;
 	int getUpkeepModifier() const;

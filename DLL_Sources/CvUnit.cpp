@@ -316,7 +316,7 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 	m_iAttackPlotX = INVALID_PLOT_COORD;
 	m_iAttackPlotY = INVALID_PLOT_COORD;
 	m_iCombatTimer = 0;
-
+	
 	m_iCombatDamage = 0;
 	m_iFortifyTurns = 0;
 	m_iBlitzCount = 0;
@@ -350,6 +350,9 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 	m_iUnitTravelTimer = 0;
 	m_iBadCityDefenderCount = 0;
 	m_iUnarmedCount = 0;
+	//TKs New Promotion Effects
+	m_iPlotWorkedBonus = 0;
+	m_iBuildingWorkedBonus = 0;
     ///TK Med
     m_iInvisibleTimer = 0;
     m_iTravelPlotX = INVALID_PLOT_COORD;
@@ -2636,6 +2639,10 @@ bool CvUnit::canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bT
 			break;
 #ifdef USE_NOBLE_CLASS
         case COMMAND_HOLD_FEAST:
+			{
+				//Currently Not used, return false here
+				return false;
+			}
             if (!canMove())
             {
                 return false;
@@ -5224,7 +5231,7 @@ void CvUnit::doLearn()
             }
         }
     }
-    //TK end Update
+   
 
 
 
@@ -5233,6 +5240,11 @@ void CvUnit::doLearn()
 
 UnitTypes CvUnit::getLearnUnitType(const CvPlot* pPlot) const
 {
+	if (getUnitInfo().getCasteAttribute() == 6)
+	{
+		return NO_UNIT;
+	}
+
 	if (getUnitInfo().getLearnTime() < 0)
 	{
 		return NO_UNIT;
@@ -5273,7 +5285,7 @@ UnitTypes CvUnit::getLearnUnitType(const CvPlot* pPlot) const
 
 	return eTeachUnit;
 }
-
+ //TK end Update
 int CvUnit::getLearnTime() const
 {
 	CvCity* pCity = plot()->getPlotCity();
@@ -11534,14 +11546,16 @@ void CvUnit::setProfession(ProfessionTypes eProfession, bool bForce)
 		if (getProfession() != NO_PROFESSION)
 		{
 			CvProfessionInfo& kProfession = GC.getProfessionInfo(getProfession());
-
 			if (kProfession.hasCombatGearTypes())
 			{
 				for (int iPromotion = 0; iPromotion < GC.getNumPromotionInfos(); ++iPromotion)
 				{
 					if (isHasPromotion((PromotionTypes) iPromotion))
 					{
-						aiPromotionChange.set(-1, iPromotion);
+						if (kProfession.isCitizen() && !GC.getPromotionInfo((PromotionTypes) iPromotion).isCivilian())
+						{
+							aiPromotionChange.set(-1, iPromotion);
+						}
 					}
 				}
 			}
@@ -13226,6 +13240,10 @@ void CvUnit::processPromotion(PromotionTypes ePromotion, int iChange)
             reloadEntity();
         }
     }
+	//TK Civilian Promotions
+	changePlotWorkedBonus(GC.getPromotionInfo(ePromotion).getPlotWorkedBonus() * iChange);
+	changeBuildingWorkedBonus(GC.getPromotionInfo(ePromotion).getBuildingWorkedBonus() * iChange);
+	//Tke
 	changeBlitzCount((GC.getPromotionInfo(ePromotion).isBlitz()) ? iChange : 0);
 	changeAmphibCount((GC.getPromotionInfo(ePromotion).isAmphib()) ? iChange : 0);
 	changeRiverCount((GC.getPromotionInfo(ePromotion).isRiver()) ? iChange : 0);
@@ -13441,6 +13459,8 @@ void CvUnit::read(FDataStreamBase* pStream)
 	//{
 		//m_eUnitTradeMarket = NO_EUROPE;
 	//}
+	pStream->Read(&m_iPlotWorkedBonus);
+	pStream->Read(&m_iBuildingWorkedBonus);
 	pStream->Read(&m_iInvisibleTimer);
 	pStream->Read(&m_iTravelPlotX);
 	pStream->Read(&m_iTravelPlotY);
@@ -13562,8 +13582,10 @@ void CvUnit::write(FDataStreamBase* pStream)
 	pStream->Write(m_iBadCityDefenderCount);
 	pStream->Write(m_iUnarmedCount);
 	pStream->Write(m_eUnitTravelState);
-    ///TK FS
+	//Tks Med
 	pStream->Write(m_eUnitTradeMarket);
+	pStream->Write(m_iPlotWorkedBonus);
+	pStream->Write(m_iBuildingWorkedBonus);
 	pStream->Write(m_iInvisibleTimer);
 	pStream->Write(m_iTravelPlotX);
 	pStream->Write(m_iTravelPlotY);
@@ -14220,11 +14242,10 @@ void CvUnit::setYieldStored(int iYieldAmount)
 
 					if (getYieldStored() >= iEducationThreshold)
 					{
-                        ///TKe Update
+   
 					    ///Tks Med
 					    if (m_pUnitInfo->getKnightDubbingWeight() > 0 && !isHasRealPromotion((PromotionTypes)GC.getXMLval(XML_DEFAULT_KNIGHT_PROMOTION)))
 					    {
-					        ///TKe Update
 					        if (pCity->getPopulation() == 1)
                             {
                                 m_iYieldStored = iYieldAmount + iChange;
@@ -14242,13 +14263,18 @@ void CvUnit::setYieldStored(int iYieldAmount)
                                         CvUnit* pLearnUnit = GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, NO_PROFESSION, getX_INLINE(), getY_INLINE(), AI_getUnitAIType());
                                         FAssert(pLearnUnit != NULL);
                                         pLearnUnit->convert(this, true);
+										CvWString szBuffer = gDLL->getText("TXT_KEY_MISC_PAGE_GRADUATED", getNameKey(), pLearnUnit->getNameKey(), pCity->getNameKey());
+										gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getUnitInfo(getUnitType()).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
                                     }
                                 }
 
 
                             }
-					        CvWString szBuffer = gDLL->getText("TXT_KEY_UNIT_PROMOTED_KNIGHT", getNameKey(), pCity->getNameKey());
-                            gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getUnitInfo(getUnitType()).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
+							else
+							{
+								CvWString szBuffer = gDLL->getText("TXT_KEY_MISC_PAGE_GRADUATED", getNameKey(), pCity->getNameKey());
+								gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getUnitInfo(getUnitType()).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
+							}
 					    }
 					    else if (m_pUnitInfo->getEducationUnitClass() != NO_UNITCLASS)
 					    {
@@ -15698,6 +15724,29 @@ bool CvUnit::collectTaxes()
 void CvUnit::callBanners()
 {
 
+}
+int CvUnit::getPlotWorkedBonus() const
+{
+	return m_iPlotWorkedBonus;
+}
+
+void CvUnit::changePlotWorkedBonus(int iChange)
+{
+	if (iChange != 0)
+	{
+		m_iPlotWorkedBonus += iChange;
+	}
+}
+int CvUnit::getBuildingWorkedBonus() const
+{
+	return m_iBuildingWorkedBonus;
+}
+void CvUnit::changeBuildingWorkedBonus(int iChange)
+{
+	if (iChange != 0)
+	{
+		m_iBuildingWorkedBonus += iChange;
+	}
 }
 int CvUnit::getInvisibleTimer() const
 {

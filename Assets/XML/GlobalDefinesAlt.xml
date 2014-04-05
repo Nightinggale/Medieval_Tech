@@ -579,7 +579,7 @@
 	<!-- Civs having this class set to NO_UNIT (like natives) will use DEFAULT_POPULATION_UNITCLASS instead -->
 	<Define>
 		<DefineName>DEFAULT_GROWTH_UNITCLASS</DefineName>
-		<DefineTextVal>UNITCLASS_SERF</DefineTextVal>
+		<DefineTextVal>UNITCLASS_COLONIST</DefineTextVal>
 	</Define>
 	<!-- Default unitclass to get from overflowing luxury food -->
 	<!-- This can be overwritten by NewLuxuryUnitClass in civics -->

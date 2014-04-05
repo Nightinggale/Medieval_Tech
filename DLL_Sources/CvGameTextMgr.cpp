@@ -3726,18 +3726,17 @@ void CvGameTextMgr::parseLeaderTraits(CvWStringBuffer &szHelpString, LeaderHeadT
                     szHelpString.append(szBuffer);
                 }
             }
-
+			bFoundTech = false;
 			for (int iLoopCivic = 0; iLoopCivic < GC.getLeaderHeadInfo(eLeader).getNumCivicDiplomacyAttitudes(); ++iLoopCivic)
             {
-				int bFoundFavored = false;
 				if (GC.getLeaderHeadInfo(eLeader).getCivicDiplomacyAttitudesValue(iLoopCivic) > 0)
 				{
                 
-					if (bFoundFavored == false)
+					if (bFoundTech == false)
 					{
 						szHelpString.append(NEWLINE);
 						szHelpString.append(gDLL->getText("TXT_KEYCIVILIZATION_FAVORED_CIVICS"));
-						bFoundFavored = true;
+						bFoundTech = true;
 					}
 					szHelpString.append(NEWLINE);
 					CvWStringBuffer szBuffer;
@@ -3746,15 +3745,20 @@ void CvGameTextMgr::parseLeaderTraits(CvWStringBuffer &szHelpString, LeaderHeadT
 					//GAMETEXT.parseCivicInfo(szBuffer, (CivicTypes) iLoopCivic, bInGame, false, true, false, eCivilization);
 					//szHelpString.append(szBuffer);
 				}
-				int bFoundDistained = false;
+                
+            }
+			bFoundTech = false;
+			for (int iLoopCivic = 0; iLoopCivic < GC.getLeaderHeadInfo(eLeader).getNumCivicDiplomacyAttitudes(); ++iLoopCivic)
+            {
+				
 				if (GC.getLeaderHeadInfo(eLeader).getCivicDiplomacyAttitudesValue(iLoopCivic) < 0)
 				{
                 
-					if (bFoundDistained == false)
+					if (bFoundTech == false)
 					{
 						szHelpString.append(NEWLINE);
 						szHelpString.append(gDLL->getText("TXT_KEYCIVILIZATION_DISTAINED_CIVICS"));
-						bFoundDistained = true;
+						bFoundTech = true;
 					}
 					szHelpString.append(NEWLINE);
 					CvWStringBuffer szBuffer;
@@ -4017,10 +4021,10 @@ void CvGameTextMgr::parseCivInfos(CvWStringBuffer &szInfoText, CivilizationTypes
 ///TKs Invention Core Mod v 1.0
 void CvGameTextMgr::parsePromotionHelp(CvWStringBuffer &szBuffer, PromotionTypes ePromotion, const wchar* pcNewline, bool bCivilopediaText)
 {
-///TKe
 	PROFILE_FUNC();
 
 	CvWString szText, szText2;
+	CvWString szFirstBuffer;
 	int iI;
 
 	if (NO_PROMOTION == ePromotion)
@@ -4029,7 +4033,23 @@ void CvGameTextMgr::parsePromotionHelp(CvWStringBuffer &szBuffer, PromotionTypes
 	}
 
 	CvPromotionInfo& kPromotion = GC.getPromotionInfo(ePromotion);
-
+	//TKs Civilian Promotions
+	if (kPromotion.isCivilian())
+	{
+		szBuffer.append(pcNewline);
+		szBuffer.append(gDLL->getText("TXT_KEY_IS_CIVILIAN_PROMOTION"));
+	}
+	if (kPromotion.getPlotWorkedBonus() != 0)
+	{
+		szBuffer.append(pcNewline);
+		szBuffer.append(gDLL->getText("TXT_KEY_FIELD_LABOR_BONUS", kPromotion.getPlotWorkedBonus()));
+	}
+	if (kPromotion.getBuildingWorkedBonus() != 0)
+	{
+		szBuffer.append(pcNewline);
+		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_LABOR_BONUS", kPromotion.getBuildingWorkedBonus()));
+	}
+	//Tk end Civilian Promotions
 	if (kPromotion.isBlitz())
 	{
 		szBuffer.append(pcNewline);
@@ -5195,7 +5215,7 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
                 if (bShowUnit)
                 {
                     szHelpText.append(NEWLINE);
-                    szHelpText.append(gDLL->getText("TXT_KEY_ALLOWS_DEFAULT_UNIT", kUnitInfo.getDescription()));
+                    szHelpText.append(gDLL->getText("TXT_KEY_ALLOWS_NEW_DEFAULT_UNIT", kUnitInfo.getDescription()));
                 }
             }
         }
@@ -5262,29 +5282,11 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
         }
 	}
 
-	//if (kCivicInfo.getNewDefaultUnitClass() != NO_UNITCLASS && !bCivilopediaText && GC.getGameINLINE().getActivePlayer() != NO_PLAYER)
-	if (kCivicInfo.getNewDefaultUnitClass() != NO_UNITCLASS)
+	/*if (kCivicInfo.getNewDefaultUnitClass() != NO_UNITCLASS)
 	{
-//        UnitTypes eUnitTo = NO_UNIT;
-//        UnitTypes eUnitFrom = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getDefaultPopUnit();
-//	    for (int i = 0; i < GC.getNumUnitInfos(); ++i)
-//        {
-//            CvUnitInfo& kUnitInfo = GC.getUnitInfo((UnitTypes) i);
-//
-//            if (kUnitInfo.getUnitClassType() == (UnitClassTypes)kCivicInfo.getNewDefaultUnitClass())
-//            {
-//                eUnitTo = (UnitTypes) i;
-//                break;
-//            }
-//        }
-//        if (eUnitTo != NO_UNIT && eUnitFrom != NO_UNIT)
-//        {
-//           CvUnitInfo& kUnitInfoTo = GC.getUnitInfo(eUnitTo);
-//           CvUnitInfo& kUnitInfoFrom = GC.getUnitInfo(eUnitFrom);
            szHelpText.append(NEWLINE);
            szHelpText.append(gDLL->getText("TXT_KEY_CONVERTS_TO_COLONIAL"));
-        //}
-	}
+	}*/
 
 	if (kCivicInfo.getNewConvertUnitClass() != NO_UNITCLASS)
 	{

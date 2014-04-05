@@ -19,6 +19,7 @@ class CvCivicsScreen:
 		self.SCREEN_NAME = "CivicsScreen"
 		self.CANCEL_NAME = "CivicsCancel"
 		self.EXIT_NAME = "CivicsExit"
+		self.LACK_FUNDS = "LackFunds"
 		self.TITLE_NAME = "CivicsTitleHeader"
 		self.BUTTON_NAME = "CivicsScreenButton"
 		self.TEXT_NAME = "CivicsScreenText"
@@ -340,9 +341,15 @@ class CvCivicsScreen:
 		
 		# Make the revolution button
 		screen.deleteWidget(self.EXIT_NAME)
-		if (activePlayer.canChangeCivics(0) and bChange):			
-			screen.setText(self.EXIT_NAME, "Background", u"<font=4>" + localText.getText("TXT_KEY_CIVIC_SCREEN_BEGIN_RESOLUTION", ( )).upper() + u"</font>", CvUtil.FONT_RIGHT_JUSTIFY, self.X_EXIT, self.Y_EXIT, self.Z_TEXT, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, self.BEGIN_RESOLUTION, 0)
+		
+		if (activePlayer.canChangeCivics(0) and bChange):
+			if (activePlayer.getCivicInitalCosts(self.m_paeDisplayCivics) > activePlayer.getGold()):
+				screen.setText(self.LACK_FUNDS, "Background", u"<font=4>" + localText.getText("Lack Funds", ( )).upper() + u"</font>", CvUtil.FONT_RIGHT_JUSTIFY, self.X_EXIT, self.Y_EXIT, self.Z_TEXT, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, 0)
+			else:
+				screen.setText(self.EXIT_NAME, "Background", u"<font=4>" + localText.getText("TXT_KEY_CIVIC_SCREEN_BEGIN_RESOLUTION", ( )).upper() + u"</font>", CvUtil.FONT_RIGHT_JUSTIFY, self.X_EXIT, self.Y_EXIT, self.Z_TEXT, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, self.BEGIN_RESOLUTION, 0)
+				screen.hide(self.LACK_FUNDS)
 			screen.show(self.CANCEL_NAME)
+				
 		else:
 			screen.setText(self.EXIT_NAME, "Background", u"<font=4>" + localText.getText("TXT_KEY_PEDIA_SCREEN_EXIT", ( )).upper() + u"</font>", CvUtil.FONT_RIGHT_JUSTIFY, self.X_EXIT, self.Y_EXIT, self.Z_TEXT, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_CLOSE_SCREEN, 1, -1)
 			screen.hide(self.CANCEL_NAME)
@@ -361,7 +368,10 @@ class CvCivicsScreen:
 
 		# Maintenance		
 		szText = localText.getText("TXT_KEY_CIVIC_SCREEN_UPKEEP", (activePlayer.getCivicUpkeep(self.m_paeDisplayCivics, True), ))
-		screen.setLabel("CivicsUpkeepText", "Background", u"<font=3>" + szText + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, self.X_SCREEN, self.BOTTOM_LINE_TOP + self.BOTTOM_LINE_HEIGHT - 2 * self.TEXT_MARGIN, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		screen.setLabel("CivicsUpkeepText", "Background", u"<font=3>" + szText + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, self.X_SCREEN - 100, self.BOTTOM_LINE_TOP + self.BOTTOM_LINE_HEIGHT - 2 * self.TEXT_MARGIN, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		
+		szText = localText.getText("TXT_KEY_CIVIC_SCREEN_INITIAL_COST", (activePlayer.getCivicInitalCosts(self.m_paeDisplayCivics), ))
+		screen.setLabel("CivicsInitialCostText", "Background", u"<font=3>" + szText + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, self.X_SCREEN + 100, self.BOTTOM_LINE_TOP + self.BOTTOM_LINE_HEIGHT - 2 * self.TEXT_MARGIN, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		
 		
 	# Resolution!!!
@@ -386,7 +396,7 @@ class CvCivicsScreen:
 			for i in range (gc.getNumCivicOptionInfos()):
 				self.m_paeCurrentCivics[i] = self.m_paeOriginalCivics[i]
 				self.m_paeDisplayCivics[i] = self.m_paeOriginalCivics[i]
-			
+			screen.hide(self.LACK_FUNDS)
 			self.drawContents()
 			
 	def getCivicsButtonName(self, iCivic):

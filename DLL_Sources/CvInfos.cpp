@@ -965,11 +965,14 @@ m_iCommandType(NO_COMMAND),
 m_iPillageChange(0),
 m_iUpgradeDiscount(0),
 m_iExperiencePercent(0),
-///TK Med FS
+///TK Med
+m_iPlotWorkedBonus(0),
+m_iBuildingWorkedBonus(0),
 m_iFirstStrikesChange(0),
 m_iEscortUnitClass(NO_UNITCLASS),
 m_iChanceFirstStrikesChange(0),
 m_bImmuneToFirstStrikes(false),
+m_bCivilian(false),
 bNoBadGoodies(false),
 bNonePromotion(false),
 ///TKe
@@ -1062,7 +1065,19 @@ int CvPromotionInfo::getBombardRateChange() const
 {
 	return m_iBombardRateChange;
 }
-///TK FS
+///TK
+int CvPromotionInfo::getPlotWorkedBonus() const
+{
+	return m_iPlotWorkedBonus;
+}
+int CvPromotionInfo::getBuildingWorkedBonus() const
+{
+	return m_iBuildingWorkedBonus;
+}
+bool CvPromotionInfo::isCivilian() const
+{
+	return m_bCivilian;
+}
 int CvPromotionInfo::getFirstStrikesChange() const
 {
 	return m_iFirstStrikesChange;
@@ -1408,10 +1423,13 @@ bool CvPromotionInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bLeader, "bLeader");
 	pXML->GetChildXmlValByName(&m_bBlitz, "bBlitz");
 	///TK FS
+	pXML->GetChildXmlValByName(&m_iPlotWorkedBonus, "iPlotWorkedBonus");
+	pXML->GetChildXmlValByName(&m_iBuildingWorkedBonus, "iBuildingWorkedBonus");
 	pXML->GetChildXmlValByName(&m_iFirstStrikesChange, "iFirstStrikesChange");
 	pXML->GetChildXmlValByName(szTextVal, "EscortUnitClass");
 	m_iEscortUnitClass = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(&m_bImmuneToFirstStrikes, "bImmuneToFirstStrikes");
+	pXML->GetChildXmlValByName(&m_bCivilian, "bCivilian");
 	pXML->GetChildXmlValByName(&bNonePromotion, "bNonePromotion");
 	pXML->GetChildXmlValByName(&bNoBadGoodies, "bNoBadGoodies");
 	///TKe
@@ -3857,6 +3875,7 @@ m_iDiplomacyAttitudeChange(0),
 m_iMissionariesNotCosumed(0),
 m_iTradingPostNotCosumed(0),
 m_iAnarchyLength(0),
+m_iInitialCost(0),
 m_iHuntingYieldPercent(0),
 m_iPilgramYieldPercent(0),
 //TKe Civics
@@ -4279,6 +4298,10 @@ int CvCivicInfo::getMissionariesNotCosumed() const
 int CvCivicInfo::getTradingPostNotCosumed() const
 {
 	return m_iTradingPostNotCosumed;
+}
+int CvCivicInfo::getInitialCost() const
+{
+	return m_iInitialCost;
 }
 int CvCivicInfo::getAnarchyLength() const
 {
@@ -4894,6 +4917,7 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iMissionariesNotCosumed, "iMissionariesNotCosumed");
 	pXML->GetChildXmlValByName(&m_iTradingPostNotCosumed, "iTradingPostNotCosumed");
 	pXML->GetChildXmlValByName(&m_iAnarchyLength, "iAnarchyLength");
+	pXML->GetChildXmlValByName(&m_iInitialCost, "iInitialCost");
 	pXML->GetChildXmlValByName(&m_iHuntingYieldPercent, "iHuntingYieldPercent");
 	pXML->GetChildXmlValByName(&m_iPilgramYieldPercent, "iPilgramYieldPercent");
 	///Tke CivicsScreen
@@ -4924,7 +4948,7 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
     pXML->SetVariableListTagPair(&m_aiFasterBuildFeatureTypes, "FasterBuildFeatureTypes", GC.getNumFeatureInfos(), 0);
 
     pXML->SetVariableListTagPair(&m_aiIndustrializationVictory, "IndustrializationVictory", NUM_YIELD_TYPES, 0);
-    pXML->SetVariableListTagPair(&m_aiMaxYieldModifiers, "MaxYieldModifiers", NUM_YIELD_TYPES, 0);
+    pXML->SetVariableListTagPair(&m_aiMaxYieldModifiers, "MaxStorageModifiers", NUM_YIELD_TYPES, 0);
 	pXML->SetVariableListTagPair(&m_aiGarrisonUnitModifiers, "GarrisonUnitModifiers", NUM_YIELD_TYPES, 0);
     pXML->SetVariableListTagPair(&m_aiAllowsBuildTypesTerrain, "AllowsBuildTypesTerrain", GC.getNumTerrainInfos(), 0);
 	pXML->SetVariableListTagPair(&m_aiFartherPointChanges, "FartherPointChanges", GC.getNumFatherPointInfos(), 0);

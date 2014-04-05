@@ -301,6 +301,15 @@ int CyPlayer::getCivicAnarchyLength(boost::python::list& /*CivicTypes**/ paeNewC
 	delete [] pCivics;
 	return iRet;
 }
+int CyPlayer::getCivicInitalCosts(boost::python::list& /*CivicTypes**/ paeNewCivics)
+{
+	int* pCivics = NULL;
+	gDLL->getPythonIFace()->putSeqInArray(paeNewCivics.ptr() /*src*/, &pCivics /*dst*/);
+
+	int iRet = m_pPlayer ? m_pPlayer->getCivicInitalCosts((CivicTypes*)pCivics) : -1;
+	delete [] pCivics;
+	return iRet;
+}
 int CyPlayer::getCivicUpkeep(boost::python::list& /*CivicTypes*/ paiCivics, bool bIgnoreAnarchy)
 {
 	int* pCivics = NULL;

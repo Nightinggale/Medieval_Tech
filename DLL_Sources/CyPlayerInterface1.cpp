@@ -79,6 +79,7 @@ void CyPlayerPythonInterface1(python::class_<CyPlayer>& x)
 		.def("changeCivics", &CyPlayer::changeCivics, "void (int (CivicTypes*) paeNewCivics, bool bForce)")
 		.def("canChangeCivics", &CyPlayer::canChangeCivics, "bool (int (CivicTypes*) paeNewCivics)")
 		.def("getCivicAnarchyLength", &CyPlayer::getCivicAnarchyLength, "int (int (CivicTypes*) paeNewCivics)")
+		.def("getCivicInitalCosts", &CyPlayer::getCivicInitalCosts, "int (int (CivicTypes*) paeNewCivics)")
 		.def("getCivicUpkeep", &CyPlayer::getCivicUpkeep, "int (int* /*CivicTypes*/ paiCivics, bool bIgnoreAnarchy)")
 		///Tke
 		///Tks Med

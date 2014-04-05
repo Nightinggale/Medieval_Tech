@@ -4202,11 +4202,36 @@ void CvDLLWidgetData::parseGoldIncomeHelp(CvWidgetDataStruct& widgetDataStruct, 
 	//PlayerTypes ePlayer = GC.getGameINLINE().getActivePlayer();
 	CvPlayer& kPlayer = GET_PLAYER(GC.getGameINLINE().getActivePlayer());
 	szBuffer.append(gDLL->getText("TXT_KEY_PLAYER_INCOME_GOLD", kPlayer.getGold()));
+	int iIncome = 0;
 	if (kPlayer.getGoldIncome() > 0)
 	{
-		int iIncome = kPlayer.getGoldIncome() * kPlayer.getGold() / 100;
+		iIncome = kPlayer.getGoldIncome() * kPlayer.getGold() / 100;
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_PLAYER_TURN_GOLD", kPlayer.getGoldIncome(), iIncome));
+	}
+	int iUpkeep = -kPlayer.getUpkeepCount(YIELD_GOLD);
+	if (iUpkeep != 0)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_PLAYER_UPKEEP_GOLD", iUpkeep));
+
+		int iTotal = iUpkeep + iIncome + kPlayer.getGold();
+		//szBuffer.append(NEWLINE);
+		
+		if (iTotal == 0)
+		{
+			//szBuffer.append(gDLL->getText("TXT_KEY_PLAYER_TOTAL_GOLD", iTotal));
+		}
+		else if (iTotal > 0)
+		{
+			szBuffer.append(L"\n====================\n");
+			szBuffer.append(gDLL->getText("TXT_KEY_PLAYER_TOTAL_GOLD", iTotal));
+		}
+		else
+		{
+			szBuffer.append(L"\n====================\n");
+			szBuffer.append(gDLL->getText("TXT_KEY_PLAYER_DEFICIT_GOLD", iUpkeep + iIncome));
+		}
 	}
 }
 void CvDLLWidgetData::parseInventorsHouseHelp(CvWidgetDataStruct& widgetDataStruct, CvWStringBuffer& szBuffer)

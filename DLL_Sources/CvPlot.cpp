@@ -5227,8 +5227,23 @@ int CvPlot::calculatePotentialYield(YieldTypes eYield, const CvUnit* pUnit, bool
 		eImprovement = getImprovementType();
 		eRoute = getRouteType();
 	}
+	
 
-	return calculatePotentialYield(eYield, ePlayer, eImprovement, false, eRoute, pUnit != NULL ? pUnit->getUnitType() : NO_UNIT, bDisplay);
+	int iYield = calculatePotentialYield(eYield, ePlayer, eImprovement, false, eRoute, pUnit != NULL ? pUnit->getUnitType() : NO_UNIT, bDisplay);
+	//Tks Civilian Promotions
+	if (pUnit != NULL && iYield > 0)
+	{
+		iYield += pUnit->getPlotWorkedBonus();
+
+		if (GC.getUnitInfo(pUnit->getUnitType()).getCasteAttribute() == 4)
+		{
+			int iModifier = GC.getXMLval(XML_NOBLE_FIELD_LABOR_PENALTY);
+			iYield -= (iYield * iModifier) / 100;
+		}
+	}
+
+
+	return iYield;
 }
 
 int CvPlot::calculatePotentialYield(YieldTypes eYield, PlayerTypes ePlayer, ImprovementTypes eImprovement, bool bIgnoreFeature, RouteTypes eRoute, UnitTypes eUnit, bool bDisplay) const

@@ -3217,30 +3217,9 @@ int CvCity::getProfessionOutput(ProfessionTypes eProfession, const CvUnit* pUnit
     //YieldTypes eYieldProduced = NO_YIELD;
     if (pUnit != NULL)
     {
-        //for (int i = 0; i < kProfessionInfo.getNumYieldsProduced(); i++)
-       // {
-           // eYieldProduced = (YieldTypes) kProfessionInfo.getYieldsProduced(0);
-
-            ///TK COAL
-            //if (eProfession == (ProfessionTypes)GC.getDefineINT("PROFESSION_COAL_BURNER"))
-            //{
-               // if (pUnit->getUnitClassType() == GC.getDefineINT("UNITCLASS_PIONEER"))
-               // {
-                   // iModifier += GC.getDefineINT("TK_PIONEER_COAL_FURNACE_BONUS");
-               // }
-            //}
-            //else
-           // {
-                iModifier += GC.getUnitInfo(pUnit->getUnitType()).getYieldModifier(eYieldProduced);
-                if (GC.getUnitInfo(pUnit->getUnitType()).getCasteAttribute() == 4 && kProfessionInfo.isWorkPlot())
-                {
-                    iModifier += GC.getXMLval(XML_NOBLE_FIELD_LABOR_PENALTY);
-                }
-                iExtra += GC.getUnitInfo(pUnit->getUnitType()).getYieldChange(eYieldProduced);
-          //  }
-            ///TKe
-
-        //}
+        iModifier += GC.getUnitInfo(pUnit->getUnitType()).getYieldModifier(eYieldProduced);
+        iExtra += GC.getUnitInfo(pUnit->getUnitType()).getYieldChange(eYieldProduced);
+		iExtra += pUnit->getBuildingWorkedBonus();//Tks Civilian Promotions
     }
 
 
@@ -4352,7 +4331,16 @@ int CvCity::getBaseRawYieldProduced(YieldTypes eYieldType, SpecialBuildingTypes 
 			}
 		}
 	}
-
+		//if (GC.getUnitInfo(pUnit->getUnitType()).getCasteAttribute() == 4 && kProfessionInfo.isWorkPlot())
+  //      {
+  //          iModifier += GC.getXMLval(XML_NOBLE_FIELD_LABOR_PENALTY);
+  //      }
+		////Tks Civilian Promotions
+		//if (kProfessionInfo.isWorkPlot())
+  //      {
+		//	iExtra += pUnit->getPlotWorkedBonus();
+		//}
+		
 	//outdoor professions
 	int iPlotYieldProduction = 0;
 	for (int i = 0; i < NUM_CITY_PLOTS; ++i)
@@ -7743,7 +7731,6 @@ void CvCity::doYields()
 
 					if (GC.getUnitInfo(pLoopUnit->getUnitType()).getStudentWeight() > 0 && eProfession != NO_PROFESSION)
 					{
-					    //bool bisPage = (pLoopUnit->getUnitClassType() == (UnitClassTypes)GC.getDefineINT("DEFAULT_NOBLE_GROWTH_UNIT_CLASS"));
 					    bool bisPage = (UnitClassTypes)GC.getUnitInfo(pLoopUnit->getUnitType()).getLaborForceUnitClass() != NO_UNITCLASS;
 					    if (!isHuman() && !bisPage && GC.getUnitInfo(pLoopUnit->getUnitType()).getKnightDubbingWeight() > 0 && !pLoopUnit->isHasRealPromotion((PromotionTypes)GC.getXMLval(XML_DEFAULT_KNIGHT_PROMOTION)))
                         {
@@ -7753,7 +7740,7 @@ void CvCity::doYields()
 						if (GC.getProfessionInfo(eProfession).getYieldsProduced(0) == eYield || bisPage)
 						// MultipleYieldsProduced End
 						{
-							FAssert(!pLoopUnit->getUnitInfo().isTreasure());
+							//FAssert(!pLoopUnit->getUnitInfo().isTreasure());
 							int iStudentOutput = 0;
 							if (bisPage || (UnitClassTypes)GC.getUnitInfo(pLoopUnit->getUnitType()).getCasteAttribute() == 3)
 							{

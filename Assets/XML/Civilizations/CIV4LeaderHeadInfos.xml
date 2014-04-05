@@ -52,6 +52,18 @@
 			<iShareWarAttitudeChange>1</iShareWarAttitudeChange>
 			<iShareWarAttitudeDivisor>8</iShareWarAttitudeDivisor>
 			<iShareWarAttitudeChangeLimit>3</iShareWarAttitudeChangeLimit>
+      <iCivicDiplomacyDivisor>1</iCivicDiplomacyDivisor>
+      <iCivicDiplomacyChangeLimit>1</iCivicDiplomacyChangeLimit>
+      <CivicDiplomacyAttitudes>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_MANORIAL</CivicType>
+          <iChange>2</iChange>
+        </CivicDiplomacy>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_THEOCRACY</CivicType>
+          <iChange>2</iChange>
+        </CivicDiplomacy>
+      </CivicDiplomacyAttitudes>
 			<DemandTributeAttitudeThreshold>ATTITUDE_CAUTIOUS</DemandTributeAttitudeThreshold>
 			<NoGiveHelpAttitudeThreshold>ATTITUDE_CAUTIOUS</NoGiveHelpAttitudeThreshold>
 			<MapRefuseAttitudeThreshold>ATTITUDE_ANNOYED</MapRefuseAttitudeThreshold>
@@ -480,6 +492,18 @@
 			<iShareWarAttitudeChange>1</iShareWarAttitudeChange>
 			<iShareWarAttitudeDivisor>8</iShareWarAttitudeDivisor>
 			<iShareWarAttitudeChangeLimit>3</iShareWarAttitudeChangeLimit>
+      <iCivicDiplomacyDivisor>1</iCivicDiplomacyDivisor>
+      <iCivicDiplomacyChangeLimit>1</iCivicDiplomacyChangeLimit>
+      <CivicDiplomacyAttitudes>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_MONARCHY</CivicType>
+          <iChange>2</iChange>
+        </CivicDiplomacy>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_SOVEREIGN</CivicType>
+          <iChange>2</iChange>
+        </CivicDiplomacy>
+      </CivicDiplomacyAttitudes>
 			<DemandTributeAttitudeThreshold>ATTITUDE_CAUTIOUS</DemandTributeAttitudeThreshold>
 			<NoGiveHelpAttitudeThreshold>ATTITUDE_CAUTIOUS</NoGiveHelpAttitudeThreshold>
 			<MapRefuseAttitudeThreshold>ATTITUDE_ANNOYED</MapRefuseAttitudeThreshold>
@@ -908,6 +932,18 @@
 			<iShareWarAttitudeChange>1</iShareWarAttitudeChange>
 			<iShareWarAttitudeDivisor>8</iShareWarAttitudeDivisor>
 			<iShareWarAttitudeChangeLimit>3</iShareWarAttitudeChangeLimit>
+      <iCivicDiplomacyDivisor>1</iCivicDiplomacyDivisor>
+      <iCivicDiplomacyChangeLimit>1</iCivicDiplomacyChangeLimit>
+      <CivicDiplomacyAttitudes>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_MANORIAL</CivicType>
+          <iChange>2</iChange>
+        </CivicDiplomacy>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_SOVEREIGN</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+      </CivicDiplomacyAttitudes>
 			<DemandTributeAttitudeThreshold>ATTITUDE_CAUTIOUS</DemandTributeAttitudeThreshold>
 			<NoGiveHelpAttitudeThreshold>ATTITUDE_CAUTIOUS</NoGiveHelpAttitudeThreshold>
 			<MapRefuseAttitudeThreshold>ATTITUDE_ANNOYED</MapRefuseAttitudeThreshold>
@@ -1334,6 +1370,18 @@
 			<iShareWarAttitudeChange>1</iShareWarAttitudeChange>
 			<iShareWarAttitudeDivisor>8</iShareWarAttitudeDivisor>
 			<iShareWarAttitudeChangeLimit>3</iShareWarAttitudeChangeLimit>
+      <iCivicDiplomacyDivisor>1</iCivicDiplomacyDivisor>
+      <iCivicDiplomacyChangeLimit>1</iCivicDiplomacyChangeLimit>
+      <CivicDiplomacyAttitudes>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_SOVEREIGN</CivicType>
+          <iChange>2</iChange>
+        </CivicDiplomacy>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_FEUDALISM</CivicType>
+          <iChange>2</iChange>
+        </CivicDiplomacy>
+      </CivicDiplomacyAttitudes>
 			<DemandTributeAttitudeThreshold>ATTITUDE_CAUTIOUS</DemandTributeAttitudeThreshold>
 			<NoGiveHelpAttitudeThreshold>ATTITUDE_CAUTIOUS</NoGiveHelpAttitudeThreshold>
 			<MapRefuseAttitudeThreshold>ATTITUDE_ANNOYED</MapRefuseAttitudeThreshold>
@@ -2200,6 +2248,18 @@
 			<iShareWarAttitudeChange>1</iShareWarAttitudeChange>
 			<iShareWarAttitudeDivisor>8</iShareWarAttitudeDivisor>
 			<iShareWarAttitudeChangeLimit>3</iShareWarAttitudeChangeLimit>
+      <iCivicDiplomacyDivisor>1</iCivicDiplomacyDivisor>
+      <iCivicDiplomacyChangeLimit>1</iCivicDiplomacyChangeLimit>
+      <CivicDiplomacyAttitudes>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_SOVEREIGN</CivicType>
+          <iChange>2</iChange>
+        </CivicDiplomacy>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_MONARCHY</CivicType>
+          <iChange>2</iChange>
+        </CivicDiplomacy>
+      </CivicDiplomacyAttitudes>
 			<DemandTributeAttitudeThreshold>ATTITUDE_CAUTIOUS</DemandTributeAttitudeThreshold>
 			<NoGiveHelpAttitudeThreshold>ATTITUDE_CAUTIOUS</NoGiveHelpAttitudeThreshold>
 			<MapRefuseAttitudeThreshold>ATTITUDE_ANNOYED</MapRefuseAttitudeThreshold>
@@ -2626,6 +2686,18 @@
 			<iShareWarAttitudeChange>1</iShareWarAttitudeChange>
 			<iShareWarAttitudeDivisor>8</iShareWarAttitudeDivisor>
 			<iShareWarAttitudeChangeLimit>3</iShareWarAttitudeChangeLimit>
+      <iCivicDiplomacyDivisor>1</iCivicDiplomacyDivisor>
+      <iCivicDiplomacyChangeLimit>1</iCivicDiplomacyChangeLimit>
+      <CivicDiplomacyAttitudes>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_DIVINE_REVELATION</CivicType>
+          <iChange>2</iChange>
+        </CivicDiplomacy>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_MONARCHY</CivicType>
+          <iChange>2</iChange>
+        </CivicDiplomacy>
+      </CivicDiplomacyAttitudes>
 			<DemandTributeAttitudeThreshold>ATTITUDE_CAUTIOUS</DemandTributeAttitudeThreshold>
 			<NoGiveHelpAttitudeThreshold>ATTITUDE_CAUTIOUS</NoGiveHelpAttitudeThreshold>
 			<MapRefuseAttitudeThreshold>ATTITUDE_ANNOYED</MapRefuseAttitudeThreshold>
@@ -3052,6 +3124,18 @@
 			<iShareWarAttitudeChange>1</iShareWarAttitudeChange>
 			<iShareWarAttitudeDivisor>8</iShareWarAttitudeDivisor>
 			<iShareWarAttitudeChangeLimit>3</iShareWarAttitudeChangeLimit>
+      <iCivicDiplomacyDivisor>1</iCivicDiplomacyDivisor>
+      <iCivicDiplomacyChangeLimit>1</iCivicDiplomacyChangeLimit>
+      <CivicDiplomacyAttitudes>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_PATRIARCH</CivicType>
+          <iChange>2</iChange>
+        </CivicDiplomacy>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_STATE_CONTROL</CivicType>
+          <iChange>2</iChange>
+        </CivicDiplomacy>
+      </CivicDiplomacyAttitudes>
 			<DemandTributeAttitudeThreshold>ATTITUDE_CAUTIOUS</DemandTributeAttitudeThreshold>
 			<NoGiveHelpAttitudeThreshold>ATTITUDE_CAUTIOUS</NoGiveHelpAttitudeThreshold>
 			<MapRefuseAttitudeThreshold>ATTITUDE_ANNOYED</MapRefuseAttitudeThreshold>
@@ -3479,6 +3563,18 @@
 			<iShareWarAttitudeChange>1</iShareWarAttitudeChange>
 			<iShareWarAttitudeDivisor>8</iShareWarAttitudeDivisor>
 			<iShareWarAttitudeChangeLimit>3</iShareWarAttitudeChangeLimit>
+      <iCivicDiplomacyDivisor>1</iCivicDiplomacyDivisor>
+      <iCivicDiplomacyChangeLimit>1</iCivicDiplomacyChangeLimit>
+      <CivicDiplomacyAttitudes>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_SLAVERY</CivicType>
+          <iChange>2</iChange>
+        </CivicDiplomacy>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_RITUALISTIC</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+      </CivicDiplomacyAttitudes>
 			<DemandTributeAttitudeThreshold>ATTITUDE_CAUTIOUS</DemandTributeAttitudeThreshold>
 			<NoGiveHelpAttitudeThreshold>ATTITUDE_CAUTIOUS</NoGiveHelpAttitudeThreshold>
 			<MapRefuseAttitudeThreshold>ATTITUDE_ANNOYED</MapRefuseAttitudeThreshold>
@@ -3902,6 +3998,18 @@
 			<iShareWarAttitudeChange>1</iShareWarAttitudeChange>
 			<iShareWarAttitudeDivisor>8</iShareWarAttitudeDivisor>
 			<iShareWarAttitudeChangeLimit>3</iShareWarAttitudeChangeLimit>
+      <iCivicDiplomacyDivisor>1</iCivicDiplomacyDivisor>
+      <iCivicDiplomacyChangeLimit>1</iCivicDiplomacyChangeLimit>
+      <CivicDiplomacyAttitudes>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_MONARCHY</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_SOVEREIGN</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+      </CivicDiplomacyAttitudes>
 			<DemandTributeAttitudeThreshold>ATTITUDE_CAUTIOUS</DemandTributeAttitudeThreshold>
 			<NoGiveHelpAttitudeThreshold>ATTITUDE_CAUTIOUS</NoGiveHelpAttitudeThreshold>
 			<MapRefuseAttitudeThreshold>ATTITUDE_ANNOYED</MapRefuseAttitudeThreshold>
@@ -4324,6 +4432,18 @@
 			<iShareWarAttitudeChange>1</iShareWarAttitudeChange>
 			<iShareWarAttitudeDivisor>8</iShareWarAttitudeDivisor>
 			<iShareWarAttitudeChangeLimit>3</iShareWarAttitudeChangeLimit>
+      <iCivicDiplomacyDivisor>1</iCivicDiplomacyDivisor>
+      <iCivicDiplomacyChangeLimit>1</iCivicDiplomacyChangeLimit>
+      <CivicDiplomacyAttitudes>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_MONARCHY</CivicType>
+          <iChange>2</iChange>
+        </CivicDiplomacy>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_SOVEREIGN</CivicType>
+          <iChange>2</iChange>
+        </CivicDiplomacy>
+      </CivicDiplomacyAttitudes>
 			<DemandTributeAttitudeThreshold>ATTITUDE_CAUTIOUS</DemandTributeAttitudeThreshold>
 			<NoGiveHelpAttitudeThreshold>ATTITUDE_CAUTIOUS</NoGiveHelpAttitudeThreshold>
 			<MapRefuseAttitudeThreshold>ATTITUDE_ANNOYED</MapRefuseAttitudeThreshold>
@@ -4749,6 +4869,18 @@
 			<iShareWarAttitudeChange>1</iShareWarAttitudeChange>
 			<iShareWarAttitudeDivisor>8</iShareWarAttitudeDivisor>
 			<iShareWarAttitudeChangeLimit>3</iShareWarAttitudeChangeLimit>
+      <iCivicDiplomacyDivisor>1</iCivicDiplomacyDivisor>
+      <iCivicDiplomacyChangeLimit>1</iCivicDiplomacyChangeLimit>
+      <CivicDiplomacyAttitudes>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_MONARCHY</CivicType>
+          <iChange>2</iChange>
+        </CivicDiplomacy>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_RITUALISTIC</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+      </CivicDiplomacyAttitudes>
 			<DemandTributeAttitudeThreshold>ATTITUDE_CAUTIOUS</DemandTributeAttitudeThreshold>
 			<NoGiveHelpAttitudeThreshold>ATTITUDE_CAUTIOUS</NoGiveHelpAttitudeThreshold>
 			<MapRefuseAttitudeThreshold>ATTITUDE_FURIOUS</MapRefuseAttitudeThreshold>
@@ -5175,6 +5307,18 @@
 			<iShareWarAttitudeChange>1</iShareWarAttitudeChange>
 			<iShareWarAttitudeDivisor>8</iShareWarAttitudeDivisor>
 			<iShareWarAttitudeChangeLimit>3</iShareWarAttitudeChangeLimit>
+      <iCivicDiplomacyDivisor>1</iCivicDiplomacyDivisor>
+      <iCivicDiplomacyChangeLimit>1</iCivicDiplomacyChangeLimit>
+      <CivicDiplomacyAttitudes>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_MANORIAL</CivicType>
+          <iChange>2</iChange>
+        </CivicDiplomacy>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_RITUALISTIC</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+      </CivicDiplomacyAttitudes>
 			<DemandTributeAttitudeThreshold>ATTITUDE_CAUTIOUS</DemandTributeAttitudeThreshold>
 			<NoGiveHelpAttitudeThreshold>ATTITUDE_CAUTIOUS</NoGiveHelpAttitudeThreshold>
 			<MapRefuseAttitudeThreshold>ATTITUDE_FURIOUS</MapRefuseAttitudeThreshold>
@@ -5604,6 +5748,18 @@
 			<iShareWarAttitudeChange>1</iShareWarAttitudeChange>
 			<iShareWarAttitudeDivisor>8</iShareWarAttitudeDivisor>
 			<iShareWarAttitudeChangeLimit>3</iShareWarAttitudeChangeLimit>
+      <iCivicDiplomacyDivisor>1</iCivicDiplomacyDivisor>
+      <iCivicDiplomacyChangeLimit>1</iCivicDiplomacyChangeLimit>
+      <CivicDiplomacyAttitudes>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_SOVEREIGN</CivicType>
+          <iChange>2</iChange>
+        </CivicDiplomacy>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_RELIGIOUS_LAW</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+      </CivicDiplomacyAttitudes>
 			<DemandTributeAttitudeThreshold>ATTITUDE_CAUTIOUS</DemandTributeAttitudeThreshold>
 			<NoGiveHelpAttitudeThreshold>ATTITUDE_CAUTIOUS</NoGiveHelpAttitudeThreshold>
 			<MapRefuseAttitudeThreshold>ATTITUDE_FURIOUS</MapRefuseAttitudeThreshold>
@@ -6027,6 +6183,18 @@
 			<iShareWarAttitudeChange>1</iShareWarAttitudeChange>
 			<iShareWarAttitudeDivisor>8</iShareWarAttitudeDivisor>
 			<iShareWarAttitudeChangeLimit>3</iShareWarAttitudeChangeLimit>
+      <iCivicDiplomacyDivisor>1</iCivicDiplomacyDivisor>
+      <iCivicDiplomacyChangeLimit>1</iCivicDiplomacyChangeLimit>
+      <CivicDiplomacyAttitudes>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_MONARCHY</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_SOVEREIGN</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+      </CivicDiplomacyAttitudes>
 			<DemandTributeAttitudeThreshold>ATTITUDE_CAUTIOUS</DemandTributeAttitudeThreshold>
 			<NoGiveHelpAttitudeThreshold>ATTITUDE_CAUTIOUS</NoGiveHelpAttitudeThreshold>
 			<MapRefuseAttitudeThreshold>ATTITUDE_FURIOUS</MapRefuseAttitudeThreshold>
@@ -6450,6 +6618,18 @@
 			<iShareWarAttitudeChange>1</iShareWarAttitudeChange>
 			<iShareWarAttitudeDivisor>8</iShareWarAttitudeDivisor>
 			<iShareWarAttitudeChangeLimit>3</iShareWarAttitudeChangeLimit>
+      <iCivicDiplomacyDivisor>1</iCivicDiplomacyDivisor>
+      <iCivicDiplomacyChangeLimit>1</iCivicDiplomacyChangeLimit>
+      <CivicDiplomacyAttitudes>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_MONARCHY</CivicType>
+          <iChange>2</iChange>
+        </CivicDiplomacy>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_SOVEREIGN</CivicType>
+          <iChange>2</iChange>
+        </CivicDiplomacy>
+      </CivicDiplomacyAttitudes>
 			<DemandTributeAttitudeThreshold>ATTITUDE_CAUTIOUS</DemandTributeAttitudeThreshold>
 			<NoGiveHelpAttitudeThreshold>ATTITUDE_CAUTIOUS</NoGiveHelpAttitudeThreshold>
 			<MapRefuseAttitudeThreshold>ATTITUDE_FURIOUS</MapRefuseAttitudeThreshold>
@@ -7733,6 +7913,18 @@
 			<iShareWarAttitudeChange>1</iShareWarAttitudeChange>
 			<iShareWarAttitudeDivisor>8</iShareWarAttitudeDivisor>
 			<iShareWarAttitudeChangeLimit>3</iShareWarAttitudeChangeLimit>
+      <iCivicDiplomacyDivisor>1</iCivicDiplomacyDivisor>
+      <iCivicDiplomacyChangeLimit>6</iCivicDiplomacyChangeLimit>
+      <CivicDiplomacyAttitudes>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_SLAVERY</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_SOVEREIGN</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+      </CivicDiplomacyAttitudes>
 			<DemandTributeAttitudeThreshold>ATTITUDE_CAUTIOUS</DemandTributeAttitudeThreshold>
 			<NoGiveHelpAttitudeThreshold>ATTITUDE_CAUTIOUS</NoGiveHelpAttitudeThreshold>
 			<MapRefuseAttitudeThreshold>ATTITUDE_PLEASED</MapRefuseAttitudeThreshold>
@@ -8156,6 +8348,18 @@
 			<iShareWarAttitudeChange>1</iShareWarAttitudeChange>
 			<iShareWarAttitudeDivisor>8</iShareWarAttitudeDivisor>
 			<iShareWarAttitudeChangeLimit>3</iShareWarAttitudeChangeLimit>
+      <iCivicDiplomacyDivisor>1</iCivicDiplomacyDivisor>
+      <iCivicDiplomacyChangeLimit>6</iCivicDiplomacyChangeLimit>
+      <CivicDiplomacyAttitudes>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_SLAVERY</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_SOVEREIGN</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+      </CivicDiplomacyAttitudes>
 			<DemandTributeAttitudeThreshold>ATTITUDE_CAUTIOUS</DemandTributeAttitudeThreshold>
 			<NoGiveHelpAttitudeThreshold>ATTITUDE_CAUTIOUS</NoGiveHelpAttitudeThreshold>
 			<MapRefuseAttitudeThreshold>ATTITUDE_PLEASED</MapRefuseAttitudeThreshold>
@@ -8579,6 +8783,18 @@
 			<iShareWarAttitudeChange>1</iShareWarAttitudeChange>
 			<iShareWarAttitudeDivisor>8</iShareWarAttitudeDivisor>
 			<iShareWarAttitudeChangeLimit>3</iShareWarAttitudeChangeLimit>
+      <iCivicDiplomacyDivisor>1</iCivicDiplomacyDivisor>
+      <iCivicDiplomacyChangeLimit>6</iCivicDiplomacyChangeLimit>
+      <CivicDiplomacyAttitudes>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_SLAVERY</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_SOVEREIGN</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+      </CivicDiplomacyAttitudes>
 			<DemandTributeAttitudeThreshold>ATTITUDE_CAUTIOUS</DemandTributeAttitudeThreshold>
 			<NoGiveHelpAttitudeThreshold>ATTITUDE_CAUTIOUS</NoGiveHelpAttitudeThreshold>
 			<MapRefuseAttitudeThreshold>ATTITUDE_PLEASED</MapRefuseAttitudeThreshold>
@@ -9002,6 +9218,18 @@
 			<iShareWarAttitudeChange>1</iShareWarAttitudeChange>
 			<iShareWarAttitudeDivisor>8</iShareWarAttitudeDivisor>
 			<iShareWarAttitudeChangeLimit>3</iShareWarAttitudeChangeLimit>
+      <iCivicDiplomacyDivisor>1</iCivicDiplomacyDivisor>
+      <iCivicDiplomacyChangeLimit>6</iCivicDiplomacyChangeLimit>
+      <CivicDiplomacyAttitudes>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_SLAVERY</CivicType>
+          <iChange>2</iChange>
+        </CivicDiplomacy>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_RITUALISTIC</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+      </CivicDiplomacyAttitudes>
 			<DemandTributeAttitudeThreshold>ATTITUDE_CAUTIOUS</DemandTributeAttitudeThreshold>
 			<NoGiveHelpAttitudeThreshold>ATTITUDE_CAUTIOUS</NoGiveHelpAttitudeThreshold>
 			<MapRefuseAttitudeThreshold>ATTITUDE_PLEASED</MapRefuseAttitudeThreshold>
@@ -9425,6 +9653,18 @@
 			<iShareWarAttitudeChange>1</iShareWarAttitudeChange>
 			<iShareWarAttitudeDivisor>8</iShareWarAttitudeDivisor>
 			<iShareWarAttitudeChangeLimit>3</iShareWarAttitudeChangeLimit>
+      <iCivicDiplomacyDivisor>1</iCivicDiplomacyDivisor>
+      <iCivicDiplomacyChangeLimit>6</iCivicDiplomacyChangeLimit>
+      <CivicDiplomacyAttitudes>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_FEUDALISM</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_RITUALISTIC</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+      </CivicDiplomacyAttitudes>
 			<DemandTributeAttitudeThreshold>ATTITUDE_CAUTIOUS</DemandTributeAttitudeThreshold>
 			<NoGiveHelpAttitudeThreshold>ATTITUDE_CAUTIOUS</NoGiveHelpAttitudeThreshold>
 			<MapRefuseAttitudeThreshold>ATTITUDE_PLEASED</MapRefuseAttitudeThreshold>
@@ -9848,6 +10088,18 @@
 			<iShareWarAttitudeChange>1</iShareWarAttitudeChange>
 			<iShareWarAttitudeDivisor>8</iShareWarAttitudeDivisor>
 			<iShareWarAttitudeChangeLimit>3</iShareWarAttitudeChangeLimit>
+      <iCivicDiplomacyDivisor>1</iCivicDiplomacyDivisor>
+      <iCivicDiplomacyChangeLimit>6</iCivicDiplomacyChangeLimit>
+      <CivicDiplomacyAttitudes>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_SOVEREIGN</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_SLAVERY</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+      </CivicDiplomacyAttitudes>
 			<DemandTributeAttitudeThreshold>ATTITUDE_CAUTIOUS</DemandTributeAttitudeThreshold>
 			<NoGiveHelpAttitudeThreshold>ATTITUDE_CAUTIOUS</NoGiveHelpAttitudeThreshold>
 			<MapRefuseAttitudeThreshold>ATTITUDE_PLEASED</MapRefuseAttitudeThreshold>
@@ -10274,6 +10526,18 @@
 			<iShareWarAttitudeChange>1</iShareWarAttitudeChange>
 			<iShareWarAttitudeDivisor>8</iShareWarAttitudeDivisor>
 			<iShareWarAttitudeChangeLimit>2</iShareWarAttitudeChangeLimit>
+      <iCivicDiplomacyDivisor>1</iCivicDiplomacyDivisor>
+      <iCivicDiplomacyChangeLimit>6</iCivicDiplomacyChangeLimit>
+      <CivicDiplomacyAttitudes>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_SOVEREIGN</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_MONARCHY</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+      </CivicDiplomacyAttitudes>
 			<DemandTributeAttitudeThreshold>ATTITUDE_CAUTIOUS</DemandTributeAttitudeThreshold>
 			<NoGiveHelpAttitudeThreshold>ATTITUDE_CAUTIOUS</NoGiveHelpAttitudeThreshold>
 			<MapRefuseAttitudeThreshold>NONE</MapRefuseAttitudeThreshold>
@@ -10689,6 +10953,18 @@
 			<iShareWarAttitudeChange>1</iShareWarAttitudeChange>
 			<iShareWarAttitudeDivisor>8</iShareWarAttitudeDivisor>
 			<iShareWarAttitudeChangeLimit>2</iShareWarAttitudeChangeLimit>
+      <iCivicDiplomacyDivisor>1</iCivicDiplomacyDivisor>
+      <iCivicDiplomacyChangeLimit>6</iCivicDiplomacyChangeLimit>
+      <CivicDiplomacyAttitudes>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_SOVEREIGN</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_DIVINE_REVELATION</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+      </CivicDiplomacyAttitudes>
 			<DemandTributeAttitudeThreshold>ATTITUDE_CAUTIOUS</DemandTributeAttitudeThreshold>
 			<NoGiveHelpAttitudeThreshold>ATTITUDE_CAUTIOUS</NoGiveHelpAttitudeThreshold>
 			<MapRefuseAttitudeThreshold>NONE</MapRefuseAttitudeThreshold>
@@ -11100,6 +11376,18 @@
 			<iShareWarAttitudeChange>1</iShareWarAttitudeChange>
 			<iShareWarAttitudeDivisor>8</iShareWarAttitudeDivisor>
 			<iShareWarAttitudeChangeLimit>2</iShareWarAttitudeChangeLimit>
+      <iCivicDiplomacyDivisor>1</iCivicDiplomacyDivisor>
+      <iCivicDiplomacyChangeLimit>6</iCivicDiplomacyChangeLimit>
+      <CivicDiplomacyAttitudes>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_SOVEREIGN</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_DIVINE_REVELATION</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+      </CivicDiplomacyAttitudes>
 			<DemandTributeAttitudeThreshold>ATTITUDE_CAUTIOUS</DemandTributeAttitudeThreshold>
 			<NoGiveHelpAttitudeThreshold>ATTITUDE_CAUTIOUS</NoGiveHelpAttitudeThreshold>
 			<MapRefuseAttitudeThreshold>NONE</MapRefuseAttitudeThreshold>
@@ -11511,6 +11799,18 @@
 			<iShareWarAttitudeChange>1</iShareWarAttitudeChange>
 			<iShareWarAttitudeDivisor>8</iShareWarAttitudeDivisor>
 			<iShareWarAttitudeChangeLimit>2</iShareWarAttitudeChangeLimit>
+      <iCivicDiplomacyDivisor>1</iCivicDiplomacyDivisor>
+      <iCivicDiplomacyChangeLimit>6</iCivicDiplomacyChangeLimit>
+      <CivicDiplomacyAttitudes>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_SOVEREIGN</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_DIVINE_REVELATION</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+      </CivicDiplomacyAttitudes>
 			<DemandTributeAttitudeThreshold>ATTITUDE_CAUTIOUS</DemandTributeAttitudeThreshold>
 			<NoGiveHelpAttitudeThreshold>ATTITUDE_CAUTIOUS</NoGiveHelpAttitudeThreshold>
 			<MapRefuseAttitudeThreshold>NONE</MapRefuseAttitudeThreshold>
@@ -11922,6 +12222,18 @@
 			<iShareWarAttitudeChange>1</iShareWarAttitudeChange>
 			<iShareWarAttitudeDivisor>8</iShareWarAttitudeDivisor>
 			<iShareWarAttitudeChangeLimit>2</iShareWarAttitudeChangeLimit>
+      <iCivicDiplomacyDivisor>1</iCivicDiplomacyDivisor>
+      <iCivicDiplomacyChangeLimit>6</iCivicDiplomacyChangeLimit>
+      <CivicDiplomacyAttitudes>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_SOVEREIGN</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_DIVINE_REVELATION</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+      </CivicDiplomacyAttitudes>
 			<DemandTributeAttitudeThreshold>ATTITUDE_CAUTIOUS</DemandTributeAttitudeThreshold>
 			<NoGiveHelpAttitudeThreshold>ATTITUDE_CAUTIOUS</NoGiveHelpAttitudeThreshold>
 			<MapRefuseAttitudeThreshold>NONE</MapRefuseAttitudeThreshold>
@@ -12333,6 +12645,18 @@
 			<iShareWarAttitudeChange>1</iShareWarAttitudeChange>
 			<iShareWarAttitudeDivisor>8</iShareWarAttitudeDivisor>
 			<iShareWarAttitudeChangeLimit>2</iShareWarAttitudeChangeLimit>
+      <iCivicDiplomacyDivisor>1</iCivicDiplomacyDivisor>
+      <iCivicDiplomacyChangeLimit>6</iCivicDiplomacyChangeLimit>
+      <CivicDiplomacyAttitudes>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_SOVEREIGN</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_DIVINE_REVELATION</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+      </CivicDiplomacyAttitudes>
 			<DemandTributeAttitudeThreshold>ATTITUDE_CAUTIOUS</DemandTributeAttitudeThreshold>
 			<NoGiveHelpAttitudeThreshold>ATTITUDE_CAUTIOUS</NoGiveHelpAttitudeThreshold>
 			<MapRefuseAttitudeThreshold>NONE</MapRefuseAttitudeThreshold>
@@ -12744,6 +13068,18 @@
 			<iShareWarAttitudeChange>1</iShareWarAttitudeChange>
 			<iShareWarAttitudeDivisor>8</iShareWarAttitudeDivisor>
 			<iShareWarAttitudeChangeLimit>2</iShareWarAttitudeChangeLimit>
+      <iCivicDiplomacyDivisor>1</iCivicDiplomacyDivisor>
+      <iCivicDiplomacyChangeLimit>6</iCivicDiplomacyChangeLimit>
+      <CivicDiplomacyAttitudes>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_SOVEREIGN</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_DIVINE_REVELATION</CivicType>
+          <iChange>-2</iChange>
+        </CivicDiplomacy>
+      </CivicDiplomacyAttitudes>
 			<DemandTributeAttitudeThreshold>ATTITUDE_CAUTIOUS</DemandTributeAttitudeThreshold>
 			<NoGiveHelpAttitudeThreshold>ATTITUDE_CAUTIOUS</NoGiveHelpAttitudeThreshold>
 			<MapRefuseAttitudeThreshold>NONE</MapRefuseAttitudeThreshold>
@@ -13155,6 +13491,9 @@
 			<iShareWarAttitudeChange>0</iShareWarAttitudeChange>
 			<iShareWarAttitudeDivisor>0</iShareWarAttitudeDivisor>
 			<iShareWarAttitudeChangeLimit>0</iShareWarAttitudeChangeLimit>
+      <iCivicDiplomacyDivisor>1</iCivicDiplomacyDivisor>
+      <iCivicDiplomacyChangeLimit>6</iCivicDiplomacyChangeLimit>
+      <CivicDiplomacyAttitudes/>
 			<DemandTributeAttitudeThreshold>ATTITUDE_CAUTIOUS</DemandTributeAttitudeThreshold>
 			<NoGiveHelpAttitudeThreshold>ATTITUDE_CAUTIOUS</NoGiveHelpAttitudeThreshold>
 			<MapRefuseAttitudeThreshold>ATTITUDE_PLEASED</MapRefuseAttitudeThreshold>
@@ -13249,6 +13588,18 @@
 			<iShareWarAttitudeChange>1</iShareWarAttitudeChange>
 			<iShareWarAttitudeDivisor>8</iShareWarAttitudeDivisor>
 			<iShareWarAttitudeChangeLimit>3</iShareWarAttitudeChangeLimit>
+      <iCivicDiplomacyDivisor>1</iCivicDiplomacyDivisor>
+      <iCivicDiplomacyChangeLimit>6</iCivicDiplomacyChangeLimit>
+      <CivicDiplomacyAttitudes>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_FEUDALISM</CivicType>
+          <iChange>2</iChange>
+        </CivicDiplomacy>
+        <CivicDiplomacy>
+          <CivicType>CIVIC_SERFDOM</CivicType>
+          <iChange>2</iChange>
+        </CivicDiplomacy>
+      </CivicDiplomacyAttitudes>
 			<DemandTributeAttitudeThreshold>ATTITUDE_CAUTIOUS</DemandTributeAttitudeThreshold>
 			<NoGiveHelpAttitudeThreshold>ATTITUDE_CAUTIOUS</NoGiveHelpAttitudeThreshold>
 			<MapRefuseAttitudeThreshold>ATTITUDE_PLEASED</MapRefuseAttitudeThreshold>

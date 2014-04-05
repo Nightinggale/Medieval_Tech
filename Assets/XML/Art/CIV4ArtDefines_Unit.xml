@@ -10,18 +10,18 @@
 			<Type>ART_DEF_UNIT_TEST</Type>
 			<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,6,11</Button>
 			<FullLengthIcon>,Art/Interface/Screens/City_Management/Dragoon.dds</FullLengthIcon>
-			<fScale>0.54</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Barbarian/Turkish Warrior/TurkishSpearman.nif</NIF>
-			<KFM>Art/Units/Barbarian/Turkish Warrior/Unique_Mayan_Holkan.kfm</KFM>
-			<fBattleDistance>0.35</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop/>
-				<AudioRunTypeEnd/>
-			</AudioRunSounds>
+      <fScale>0.54</fScale>
+      <fInterfaceScale>0.8</fInterfaceScale>
+      <NIF>Art/Units/Burgher/BurgherAxe.nif</NIF>
+      <KFM>Art/Units/Seasoned_Explorer/explorer.kfm</KFM>
+      <fBattleDistance>0.35</fBattleDistance>
+      <fRangedDeathTime>0.31</fRangedDeathTime>
+      <bActAsRanged>0</bActAsRanged>
+      <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+      <AudioRunSounds>
+        <AudioRunTypeLoop/>
+        <AudioRunTypeEnd/>
+      </AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_TEST2</Type>
@@ -40,38 +40,157 @@
 				<AudioRunTypeEnd/>
 			</AudioRunSounds>
 		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_TEST_SHIP</Type>
-			<Button>Art/Buttons/Units/cog.dds</Button>
-			<FullLengthIcon>Art/Buttons/Units/cogEurope.dds</FullLengthIcon>
-			<fScale>0.24</fScale>
-			<fInterfaceScale>0.6</fInterfaceScale>
-			<NIF>Art/Units/galleas/galley_fx.nif</NIF>
-			<KFM>Art/Units/galleas/galley.kfm</KFM>
-			<iDamageStates>4</iDamageStates>
-			<TrailDefinition>
-				<Texture>Art/Shared/water_ship_wake.dds</Texture>
-				<fWidth>1</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>1</fTaper>
-				<fFadeStartTime>.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.35</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bSmoothMove>1</bSmoothMove>
-			<fAngleInterpRate>720.0</fAngleInterpRate>
-			<fBankRate>.3</fBankRate>
-			<fExchangeAngle>25.0</fExchangeAngle>
-			<bActAsRanged>0</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_OCEAN2</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_OCEAN2</AudioRunTypeEnd>
-			</AudioRunSounds>
-			<SelectionSound>AS3D_UN_OCEAN_END1</SelectionSound>
-			<ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
-		</UnitArtInfo>
+    <UnitArtInfo>
+      <Type>ART_DEF_UNIT_TEST_SHIP</Type>
+      <Button>Art/Buttons/Units/cog.dds</Button>
+      <FullLengthIcon>Art/Buttons/Units/cogEurope.dds</FullLengthIcon>
+      <fScale>0.24</fScale>
+      <fInterfaceScale>0.6</fInterfaceScale>
+      <NIF>Art/Units/galleas/galley_fx.nif</NIF>
+      <KFM>Art/Units/galleas/galley.kfm</KFM>
+      <iDamageStates>4</iDamageStates>
+      <TrailDefinition>
+        <Texture>Art/Shared/water_ship_wake.dds</Texture>
+        <fWidth>1</fWidth>
+        <fLength>180.0</fLength>
+        <fTaper>1</fTaper>
+        <fFadeStartTime>.2</fFadeStartTime>
+        <fFadeFalloff>0.35</fFadeFalloff>
+      </TrailDefinition>
+      <fBattleDistance>0.35</fBattleDistance>
+      <fRangedDeathTime>0.31</fRangedDeathTime>
+      <bSmoothMove>1</bSmoothMove>
+      <fAngleInterpRate>720.0</fAngleInterpRate>
+      <fBankRate>.3</fBankRate>
+      <fExchangeAngle>25.0</fExchangeAngle>
+      <bActAsRanged>0</bActAsRanged>
+      <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+      <AudioRunSounds>
+        <AudioRunTypeLoop>LOOPSTEP_OCEAN2</AudioRunTypeLoop>
+        <AudioRunTypeEnd>ENDSTEP_OCEAN2</AudioRunTypeEnd>
+      </AudioRunSounds>
+      <SelectionSound>AS3D_UN_OCEAN_END1</SelectionSound>
+      <ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
+    </UnitArtInfo>
+    <UnitArtInfo>
+      <Type>ART_DEF_UNIT_BURGHER</Type>
+      <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,6,11</Button>
+      <FullLengthIcon>,Art/Interface/Screens/City_Management/Dragoon.dds</FullLengthIcon>
+      <fScale>0.54</fScale>
+      <fInterfaceScale>0.8</fInterfaceScale>
+      <NIF>Art/Units/Burgher/BurgherAxe.nif</NIF>
+      <KFM>Art/Units/Seasoned_Explorer/explorer.kfm</KFM>
+      <fBattleDistance>0.35</fBattleDistance>
+      <fRangedDeathTime>0.31</fRangedDeathTime>
+      <bActAsRanged>0</bActAsRanged>
+      <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+      <AudioRunSounds>
+        <AudioRunTypeLoop/>
+        <AudioRunTypeEnd/>
+      </AudioRunSounds>
+    </UnitArtInfo>
+    <UnitArtInfo>
+      <Type>ART_DEF_UNIT_ARISTOCRAT</Type>
+      <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,6,11</Button>
+      <FullLengthIcon>,Art/Interface/Screens/City_Management/Dragoon.dds</FullLengthIcon>
+      <fScale>0.54</fScale>
+      <fInterfaceScale>0.8</fInterfaceScale>
+      <NIF>Art/Units/Aristocrat/AristocratSword.nif</NIF>
+      <KFM>Art/Units/Seasoned_Explorer/explorer.kfm</KFM>
+      <fBattleDistance>0.35</fBattleDistance>
+      <fRangedDeathTime>0.31</fRangedDeathTime>
+      <bActAsRanged>0</bActAsRanged>
+      <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+      <AudioRunSounds>
+        <AudioRunTypeLoop/>
+        <AudioRunTypeEnd/>
+      </AudioRunSounds>
+    </UnitArtInfo>
+    <UnitArtInfo>
+      <Type>ART_DEF_UNIT_VESTARCH</Type>
+      <Button>Art/Buttons/Units/squire.dds</Button>
+      <FullLengthIcon>Art/Buttons/Units/squireCM.dds</FullLengthIcon>
+      <fScale>0.54</fScale>
+      <fInterfaceScale>0.8</fInterfaceScale>
+      <NIF>Art/Units/Vestarch/Vestarch.nif</NIF>
+      <KFM>Art/Units/Seasoned_Explorer/explorer.kfm</KFM>
+      <fBattleDistance>0.35</fBattleDistance>
+      <fRangedDeathTime>0.31</fRangedDeathTime>
+      <bActAsRanged>0</bActAsRanged>
+      <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+      <AudioRunSounds>
+        <AudioRunTypeLoop/>
+        <AudioRunTypeEnd/>
+      </AudioRunSounds>
+    </UnitArtInfo>
+    <UnitArtInfo>
+      <Type>ART_DEF_UNIT_ELDER</Type>
+      <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,6,11</Button>
+      <FullLengthIcon>,Art/Interface/Screens/City_Management/Dragoon.dds</FullLengthIcon>
+      <fScale>0.54</fScale>
+      <fInterfaceScale>0.8</fInterfaceScale>
+      <NIF>Art/Units/Elder/ElderScarf.nif</NIF>
+      <KFM>Art/Units/Indentured_Servant/Indentured_Servant.kfm</KFM>
+      <fBattleDistance>0.35</fBattleDistance>
+      <fRangedDeathTime>0.31</fRangedDeathTime>
+      <bActAsRanged>0</bActAsRanged>
+      <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+      <AudioRunSounds>
+        <AudioRunTypeLoop/>
+        <AudioRunTypeEnd/>
+      </AudioRunSounds>
+    </UnitArtInfo>
+    <UnitArtInfo>
+      <Type>ART_DEF_UNIT_RECRUIT</Type>
+      <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,6,11</Button>
+      <FullLengthIcon>,Art/Interface/Screens/City_Management/Dragoon.dds</FullLengthIcon>
+      <fScale>0.54</fScale>
+      <fInterfaceScale>0.8</fInterfaceScale>
+      <NIF>Art/Units/Recruit/Recruit.nif</NIF>
+      <KFM>Art/Units/Indentured_Servant/Indentured_Servant.kfm</KFM>
+      <fBattleDistance>0.35</fBattleDistance>
+      <fRangedDeathTime>0.31</fRangedDeathTime>
+      <bActAsRanged>0</bActAsRanged>
+      <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+      <AudioRunSounds>
+        <AudioRunTypeLoop/>
+        <AudioRunTypeEnd/>
+      </AudioRunSounds>
+    </UnitArtInfo>
+    <UnitArtInfo>
+      <Type>ART_DEF_UNIT_EUNUCH</Type>
+      <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,6,11</Button>
+      <FullLengthIcon>,Art/Interface/Screens/City_Management/Dragoon.dds</FullLengthIcon>
+      <fScale>0.54</fScale>
+      <fInterfaceScale>0.8</fInterfaceScale>
+      <NIF>Art/Units/Eunuch/Eunuch.nif</NIF>
+      <KFM>Art/Units/Indentured_Servant/Indentured_Servant.kfm</KFM>
+      <fBattleDistance>0.35</fBattleDistance>
+      <fRangedDeathTime>0.31</fRangedDeathTime>
+      <bActAsRanged>0</bActAsRanged>
+      <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+      <AudioRunSounds>
+        <AudioRunTypeLoop/>
+        <AudioRunTypeEnd/>
+      </AudioRunSounds>
+    </UnitArtInfo>
+    <UnitArtInfo>
+      <Type>ART_DEF_UNIT_CHAMBERLAIN</Type>
+      <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,6,11</Button>
+      <FullLengthIcon>,Art/Interface/Screens/City_Management/Dragoon.dds</FullLengthIcon>
+      <fScale>0.54</fScale>
+      <fInterfaceScale>0.8</fInterfaceScale>
+      <NIF>Art/Units/Chamberlain/Chamberlain.nif</NIF>
+      <KFM>Art/Units/Indentured_Servant/Indentured_Servant.kfm</KFM>
+      <fBattleDistance>0.35</fBattleDistance>
+      <fRangedDeathTime>0.31</fRangedDeathTime>
+      <bActAsRanged>0</bActAsRanged>
+      <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+      <AudioRunSounds>
+        <AudioRunTypeLoop/>
+        <AudioRunTypeEnd/>
+      </AudioRunSounds>
+    </UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_TRAPPER_CART</Type>
 			<Button>Art/Buttons/Units/furtrapper.dds</Button>
@@ -548,6 +667,23 @@
 				<AudioRunTypeEnd/>
 			</AudioRunSounds>
 		</UnitArtInfo>
+    <UnitArtInfo>
+      <Type>ART_DEF_UNIT_SLAVE_WARRIOR</Type>
+      <Button>Art/Buttons/Units/slave.dds</Button>
+      <FullLengthIcon>Art/Buttons/Units/slaveCM.dds</FullLengthIcon>
+      <fScale>0.54</fScale>
+      <fInterfaceScale>0.8</fInterfaceScale>
+      <NIF>Art/Units/lightspearman/barbarianspearman.nif</NIF>
+      <KFM>Art/Units/lightspearman/lightspearman.kfm</KFM>
+      <fBattleDistance>0.35</fBattleDistance>
+      <fRangedDeathTime>0.31</fRangedDeathTime>
+      <bActAsRanged>0</bActAsRanged>
+      <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+      <AudioRunSounds>
+        <AudioRunTypeLoop/>
+        <AudioRunTypeEnd/>
+      </AudioRunSounds>
+    </UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_PROFESSION_SLAVE_WORKER</Type>
 			<Button>Art/Buttons/Units/SlavePioneer.dds</Button>
@@ -633,6 +769,23 @@
 				<AudioRunTypeEnd/>
 			</AudioRunSounds>
 		</UnitArtInfo>
+    <UnitArtInfo>
+      <Type>ART_DEF_UNIT_TOBACCONIST</Type>
+      <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,4</Button>
+      <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Tobacconist.dds</FullLengthIcon>
+      <fScale>0.44</fScale>
+      <fInterfaceScale>1.0</fInterfaceScale>
+      <NIF>Art/Units/Master_Tobacconist/Master_Tobacconist.nif</NIF>
+      <KFM>Art/Units/Master_Tobacconist/Master_Tobacconist.kfm</KFM>
+      <fBattleDistance>0.35</fBattleDistance>
+      <fRangedDeathTime>0.31</fRangedDeathTime>
+      <bActAsRanged>0</bActAsRanged>
+      <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+      <AudioRunSounds>
+        <AudioRunTypeLoop/>
+        <AudioRunTypeEnd/>
+      </AudioRunSounds>
+    </UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_CATTLE</Type>
 			<Button>Art/Buttons/Resources/Cattle.dds</Button>
@@ -2554,7 +2707,7 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_TOBACCONIST</Type>
+			<Type>ART_DEF_UNIT_DIGNITARY</Type>
 			<Button>Art/Buttons/Units/dignitaryb.dds</Button>
 			<FullLengthIcon>Art/Buttons/Units/dignitarycm.dds</FullLengthIcon>
 			<fScale>0.54</fScale>

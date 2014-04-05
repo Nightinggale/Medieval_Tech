@@ -218,9 +218,9 @@
 		<element type="iShareWarAttitudeChange"/>
 		<element type="iShareWarAttitudeDivisor"/>
 		<element type="iShareWarAttitudeChangeLimit"/>
-    <element type="iCivicDiplomacyDivisor" minOccurs="0"/>
-    <element type="iCivicDiplomacyChangeLimit" minOccurs="0"/>
-    <element type="CivicDiplomacyAttitudes" minOccurs="0"/>
+    <element type="iCivicDiplomacyDivisor"/>
+    <element type="iCivicDiplomacyChangeLimit"/>
+    <element type="CivicDiplomacyAttitudes"/>
 		<element type="DemandTributeAttitudeThreshold"/>
 		<element type="NoGiveHelpAttitudeThreshold"/>
 		<element type="MapRefuseAttitudeThreshold"/>

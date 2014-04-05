@@ -1214,7 +1214,8 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
                             {
                                 if (GC.getUnitInfo(ploopUnit->getUnitType()).getCasteAttribute() == 3)
                                 {
-                                    UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(ploopUnit->getCivilizationType()).getCivilizationUnits((UnitClassTypes)GC.getXMLval(XML_DEFAULT_NOBLEMAN_CLASS));
+                                    //UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(ploopUnit->getCivilizationType()).getCivilizationUnits((UnitClassTypes)GC.getXMLval(XML_DEFAULT_NOBLEMAN_CLASS));
+									UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(ploopUnit->getCivilizationType()).getCivilizationUnits((UnitClassTypes)GC.getUnitInfo(ploopUnit->getUnitType()).getEducationUnitClass());
                                     if (eUnit != NO_UNIT)
                                     {
                                         CvUnit* pLearnUnit = GET_PLAYER(ploopUnit->getOwnerINLINE()).initUnit(eUnit, NO_PROFESSION, ploopUnit->getX_INLINE(), ploopUnit->getY_INLINE(),ploopUnit-> AI_getUnitAIType());
@@ -3323,19 +3324,22 @@ bool CvDLLButtonPopup::launchPurchaseEuropeUnitPopup(CvPopup* pPopup, CvPopupInf
 		if (NO_UNIT != eUnit)
 		{
 			EuropeTypes eTradeScreen = (EuropeTypes)info.getData3();
-			FAssert(eTradeScreen != NO_EUROPE);
-			if (GC.getUnitInfo(eUnit).getDomainType() == DOMAIN_SEA)
+			//FAssert(eTradeScreen != NO_EUROPE);
+			if (eTradeScreen != NO_EUROPE)
 			{
-				bWaterUnitReady = false;
-				for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+				if (GC.getUnitInfo(eUnit).getDomainType() == DOMAIN_SEA)
 				{
-					CvPlot* pPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
-					if (pPlot->isRevealed(kPlayer.getTeam(), false))
+					bWaterUnitReady = false;
+					for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
 					{
-						if (pPlot->isTradeScreenAccessPlot(eTradeScreen))
+						CvPlot* pPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+						if (pPlot->isRevealed(kPlayer.getTeam(), false))
 						{
-							bWaterUnitReady = true;
-							break;
+							if (pPlot->isTradeScreenAccessPlot(eTradeScreen))
+							{
+								bWaterUnitReady = true;
+								break;
+							}
 						}
 					}
 				}

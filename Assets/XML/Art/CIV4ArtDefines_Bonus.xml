@@ -7,628 +7,243 @@
 <Civ4ArtDefines xmlns="x-schema:CIV4ArtDefinesSchema.xml">
 <BonusArtInfos>
 <BonusArtInfo>
-	<Type>ART_DEF_BONUS_PROGENITOR_METROPOLIS</Type>
+	<Type>ART_DEF_BONUS_NUTRIENTS1</Type>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/PROGENITOR_METROPOLIS/PROGENITOR_METROPOLIS.nif</NIF>
-	<KFM>Art/Terrain/Resources/PROGENITOR_METROPOLIS/PROGENITOR_METROPOLIS.kfm</KFM>
-	<Button>Art/Buttons/Resources/PROGENITOR_METROPOLIS.dds</Button>
+	<NIF>Art/Terrain/Resources/NUTRIENTS1/NUTRIENTS1.nif</NIF>
+	<KFM>Art/Terrain/Resources/NUTRIENTS1/NUTRIENTS1.kfm</KFM>
+	<Button>Art/Buttons/Resources/NUTRIENTS1.dds</Button>
 	<FontButtonIndex>4</FontButtonIndex>
 	<bShadowCastor>0</bShadowCastor>
 	<bRefractionCastor>0</bRefractionCastor>
 </BonusArtInfo>
 <BonusArtInfo>
-	<Type>ART_DEF_BONUS_RUINED_TEMPLE</Type>
+	<Type>ART_DEF_BONUS_BIOPOLYMERS1</Type>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/RUINED_TEMPLE/RUINED_TEMPLE.nif</NIF>
-	<KFM>Art/Terrain/Resources/RUINED_TEMPLE/RUINED_TEMPLE.kfm</KFM>
-	<Button>Art/Buttons/Resources/RUINED_TEMPLE.dds</Button>
+	<NIF>Art/Terrain/Resources/BIOPOLYMERS1/BIOPOLYMERS1.nif</NIF>
+	<KFM>Art/Terrain/Resources/BIOPOLYMERS1/BIOPOLYMERS1.kfm</KFM>
+	<Button>Art/Buttons/Resources/BIOPOLYMERS1.dds</Button>
 	<FontButtonIndex>4</FontButtonIndex>
 	<bShadowCastor>0</bShadowCastor>
 	<bRefractionCastor>0</bRefractionCastor>
 </BonusArtInfo>
 <BonusArtInfo>
-	<Type>ART_DEF_BONUS_GRAND_ZIGGURAT</Type>
+	<Type>ART_DEF_BONUS_SILICATES1</Type>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/GRAND_ZIGGURAT/GRAND_ZIGGURAT.nif</NIF>
-	<KFM>Art/Terrain/Resources/GRAND_ZIGGURAT/GRAND_ZIGGURAT.kfm</KFM>
-	<Button>Art/Buttons/Resources/GRAND_ZIGGURAT.dds</Button>
+	<NIF>Art/Terrain/Resources/SILICATES1/SILICATES1.nif</NIF>
+	<KFM>Art/Terrain/Resources/SILICATES1/SILICATES1.kfm</KFM>
+	<Button>Art/Buttons/Resources/SILICATES1.dds</Button>
 	<FontButtonIndex>4</FontButtonIndex>
 	<bShadowCastor>0</bShadowCastor>
 	<bRefractionCastor>0</bRefractionCastor>
 </BonusArtInfo>
 <BonusArtInfo>
-	<Type>ART_DEF_BONUS_NESTING_GROUNDS</Type>
+	<Type>ART_DEF_BONUS_BASE_METALS1</Type>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/NESTING_GROUNDS/NESTING_GROUNDS.nif</NIF>
-	<KFM>Art/Terrain/Resources/NESTING_GROUNDS/NESTING_GROUNDS.kfm</KFM>
-	<Button>Art/Buttons/Resources/NESTING_GROUNDS.dds</Button>
+	<NIF>Art/Terrain/Resources/BASE_METALS1/BASE_METALS1.nif</NIF>
+	<KFM>Art/Terrain/Resources/BASE_METALS1/BASE_METALS1.kfm</KFM>
+	<Button>Art/Buttons/Resources/BASE_METALS1.dds</Button>
 	<FontButtonIndex>4</FontButtonIndex>
 	<bShadowCastor>0</bShadowCastor>
 	<bRefractionCastor>0</bRefractionCastor>
 </BonusArtInfo>
 <BonusArtInfo>
-	<Type>ART_DEF_BONUS_SPIDER_LAIR</Type>
+	<Type>ART_DEF_BONUS_ACTINIDES1</Type>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/SPIDER_LAIR/SPIDER_LAIR.nif</NIF>
-	<KFM>Art/Terrain/Resources/SPIDER_LAIR/SPIDER_LAIR.kfm</KFM>
-	<Button>Art/Buttons/Resources/SPIDER_LAIR.dds</Button>
+	<NIF>Art/Terrain/Resources/ACTINIDES1/ACTINIDES1.nif</NIF>
+	<KFM>Art/Terrain/Resources/ACTINIDES1/ACTINIDES1.kfm</KFM>
+	<Button>Art/Buttons/Resources/ACTINIDES1.dds</Button>
 	<FontButtonIndex>4</FontButtonIndex>
 	<bShadowCastor>0</bShadowCastor>
 	<bRefractionCastor>0</bRefractionCastor>
 </BonusArtInfo>
 <BonusArtInfo>
-	<Type>ART_DEF_BONUS_IRIDESCENT_PYRAMIDS</Type>
+	<Type>ART_DEF_BONUS_ISOTOPES1</Type>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/IRIDESCENT_PYRAMIDS/IRIDESCENT_PYRAMIDS.nif</NIF>
-	<KFM>Art/Terrain/Resources/IRIDESCENT_PYRAMIDS/IRIDESCENT_PYRAMIDS.kfm</KFM>
-	<Button>Art/Buttons/Resources/IRIDESCENT_PYRAMIDS.dds</Button>
+	<NIF>Art/Terrain/Resources/ISOTOPES1/ISOTOPES1.nif</NIF>
+	<KFM>Art/Terrain/Resources/ISOTOPES1/ISOTOPES1.kfm</KFM>
+	<Button>Art/Buttons/Resources/ISOTOPES1.dds</Button>
 	<FontButtonIndex>4</FontButtonIndex>
 	<bShadowCastor>0</bShadowCastor>
 	<bRefractionCastor>0</bRefractionCastor>
 </BonusArtInfo>
 <BonusArtInfo>
-	<Type>ART_DEF_BONUS_LIMESTONE_SPIRE</Type>
+	<Type>ART_DEF_BONUS_RARE_EARTHS1</Type>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/LIMESTONE_SPIRE/LIMESTONE_SPIRE.nif</NIF>
-	<KFM>Art/Terrain/Resources/LIMESTONE_SPIRE/LIMESTONE_SPIRE.kfm</KFM>
-	<Button>Art/Buttons/Resources/LIMESTONE_SPIRE.dds</Button>
+	<NIF>Art/Terrain/Resources/RARE_EARTHS1/RARE_EARTHS1.nif</NIF>
+	<KFM>Art/Terrain/Resources/RARE_EARTHS1/RARE_EARTHS1.kfm</KFM>
+	<Button>Art/Buttons/Resources/RARE_EARTHS1.dds</Button>
 	<FontButtonIndex>4</FontButtonIndex>
 	<bShadowCastor>0</bShadowCastor>
 	<bRefractionCastor>0</bRefractionCastor>
 </BonusArtInfo>
 <BonusArtInfo>
-	<Type>ART_DEF_BONUS_ANTEDILUVIAN_CATACOMB</Type>
+	<Type>ART_DEF_BONUS_CRYSTALLOIDS1</Type>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/ANTEDILUVIAN_CATACOMB/ANTEDILUVIAN_CATACOMB.nif</NIF>
-	<KFM>Art/Terrain/Resources/ANTEDILUVIAN_CATACOMB/ANTEDILUVIAN_CATACOMB.kfm</KFM>
-	<Button>Art/Buttons/Resources/ANTEDILUVIAN_CATACOMB.dds</Button>
+	<NIF>Art/Terrain/Resources/CRYSTALLOIDS1/CRYSTALLOIDS1.nif</NIF>
+	<KFM>Art/Terrain/Resources/CRYSTALLOIDS1/CRYSTALLOIDS1.kfm</KFM>
+	<Button>Art/Buttons/Resources/CRYSTALLOIDS1.dds</Button>
 	<FontButtonIndex>4</FontButtonIndex>
 	<bShadowCastor>0</bShadowCastor>
 	<bRefractionCastor>0</bRefractionCastor>
 </BonusArtInfo>
 <BonusArtInfo>
-	<Type>ART_DEF_BONUS_SACRED_GROVE</Type>
+	<Type>ART_DEF_BONUS_NUCLEIC_ACIDS1</Type>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/SACRED_GROVE/SACRED_GROVE.nif</NIF>
-	<KFM>Art/Terrain/Resources/SACRED_GROVE/SACRED_GROVE.kfm</KFM>
-	<Button>Art/Buttons/Resources/SACRED_GROVE.dds</Button>
+	<NIF>Art/Terrain/Resources/NUCLEIC_ACIDS1/NUCLEIC_ACIDS1.nif</NIF>
+	<KFM>Art/Terrain/Resources/NUCLEIC_ACIDS1/NUCLEIC_ACIDS1.kfm</KFM>
+	<Button>Art/Buttons/Resources/NUCLEIC_ACIDS1.dds</Button>
 	<FontButtonIndex>4</FontButtonIndex>
 	<bShadowCastor>0</bShadowCastor>
 	<bRefractionCastor>0</bRefractionCastor>
 </BonusArtInfo>
 <BonusArtInfo>
-	<Type>ART_DEF_BONUS_RUINED_BIOSPHERE</Type>
+	<Type>ART_DEF_BONUS_AMINO_ACIDS1</Type>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/RUINED_BIOSPHERE/RUINED_BIOSPHERE.nif</NIF>
-	<KFM>Art/Terrain/Resources/RUINED_BIOSPHERE/RUINED_BIOSPHERE.kfm</KFM>
-	<Button>Art/Buttons/Resources/RUINED_BIOSPHERE.dds</Button>
+	<NIF>Art/Terrain/Resources/AMINO_ACIDS1/AMINO_ACIDS1.nif</NIF>
+	<KFM>Art/Terrain/Resources/AMINO_ACIDS1/AMINO_ACIDS1.kfm</KFM>
+	<Button>Art/Buttons/Resources/AMINO_ACIDS1.dds</Button>
 	<FontButtonIndex>4</FontButtonIndex>
 	<bShadowCastor>0</bShadowCastor>
 	<bRefractionCastor>0</bRefractionCastor>
 </BonusArtInfo>
 <BonusArtInfo>
-	<Type>ART_DEF_BONUS_PLINTH_CIRCLE</Type>
+	<Type>ART_DEF_BONUS_TISSUE_SAMPLES1</Type>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/PLINTH_CIRCLE/PLINTH_CIRCLE.nif</NIF>
-	<KFM>Art/Terrain/Resources/PLINTH_CIRCLE/PLINTH_CIRCLE.kfm</KFM>
-	<Button>Art/Buttons/Resources/PLINTH_CIRCLE.dds</Button>
+	<NIF>Art/Terrain/Resources/TISSUE_SAMPLES1/TISSUE_SAMPLES1.nif</NIF>
+	<KFM>Art/Terrain/Resources/TISSUE_SAMPLES1/TISSUE_SAMPLES1.kfm</KFM>
+	<Button>Art/Buttons/Resources/TISSUE_SAMPLES1.dds</Button>
 	<FontButtonIndex>4</FontButtonIndex>
 	<bShadowCastor>0</bShadowCastor>
 	<bRefractionCastor>0</bRefractionCastor>
 </BonusArtInfo>
 <BonusArtInfo>
-	<Type>ART_DEF_BONUS_SACRIFICIAL_PIT</Type>
+	<Type>ART_DEF_BONUS_MICROBES1</Type>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/SACRIFICIAL_PIT/SACRIFICIAL_PIT.nif</NIF>
-	<KFM>Art/Terrain/Resources/SACRIFICIAL_PIT/SACRIFICIAL_PIT.kfm</KFM>
-	<Button>Art/Buttons/Resources/SACRIFICIAL_PIT.dds</Button>
+	<NIF>Art/Terrain/Resources/MICROBES1/MICROBES1.nif</NIF>
+	<KFM>Art/Terrain/Resources/MICROBES1/MICROBES1.kfm</KFM>
+	<Button>Art/Buttons/Resources/MICROBES1.dds</Button>
 	<FontButtonIndex>4</FontButtonIndex>
 	<bShadowCastor>0</bShadowCastor>
 	<bRefractionCastor>0</bRefractionCastor>
 </BonusArtInfo>
 <BonusArtInfo>
-	<Type>ART_DEF_BONUS_OBSIDIAN_FACES</Type>
+	<Type>ART_DEF_BONUS_DATACORES1</Type>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/OBSIDIAN_FACES/OBSIDIAN_FACES.nif</NIF>
-	<KFM>Art/Terrain/Resources/OBSIDIAN_FACES/OBSIDIAN_FACES.kfm</KFM>
-	<Button>Art/Buttons/Resources/OBSIDIAN_FACES.dds</Button>
+	<NIF>Art/Terrain/Resources/DATACORES1/DATACORES1.nif</NIF>
+	<KFM>Art/Terrain/Resources/DATACORES1/DATACORES1.kfm</KFM>
+	<Button>Art/Buttons/Resources/DATACORES1.dds</Button>
 	<FontButtonIndex>4</FontButtonIndex>
 	<bShadowCastor>0</bShadowCastor>
 	<bRefractionCastor>0</bRefractionCastor>
 </BonusArtInfo>
 <BonusArtInfo>
-	<Type>ART_DEF_BONUS_MALACHITE_IDOLS</Type>
+	<Type>ART_DEF_BONUS_PROGENITOR_ARTIFACTS1</Type>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/MALACHITE_IDOLS/MALACHITE_IDOLS.nif</NIF>
-	<KFM>Art/Terrain/Resources/MALACHITE_IDOLS/MALACHITE_IDOLS.kfm</KFM>
-	<Button>Art/Buttons/Resources/MALACHITE_IDOLS.dds</Button>
+	<NIF>Art/Terrain/Resources/PROGENITOR_ARTIFACTS1/PROGENITOR_ARTIFACTS1.nif</NIF>
+	<KFM>Art/Terrain/Resources/PROGENITOR_ARTIFACTS1/PROGENITOR_ARTIFACTS1.kfm</KFM>
+	<Button>Art/Buttons/Resources/PROGENITOR_ARTIFACTS1.dds</Button>
 	<FontButtonIndex>4</FontButtonIndex>
 	<bShadowCastor>0</bShadowCastor>
 	<bRefractionCastor>0</bRefractionCastor>
 </BonusArtInfo>
 <BonusArtInfo>
-	<Type>ART_DEF_BONUS_CALCIFIED_BEING</Type>
+	<Type>ART_DEF_BONUS_ALIEN_SPECIMENS1</Type>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/CALCIFIED_BEING/CALCIFIED_BEING.nif</NIF>
-	<KFM>Art/Terrain/Resources/CALCIFIED_BEING/CALCIFIED_BEING.kfm</KFM>
-	<Button>Art/Buttons/Resources/CALCIFIED_BEING.dds</Button>
+	<NIF>Art/Terrain/Resources/ALIEN_SPECIMENS1/ALIEN_SPECIMENS1.nif</NIF>
+	<KFM>Art/Terrain/Resources/ALIEN_SPECIMENS1/ALIEN_SPECIMENS1.kfm</KFM>
+	<Button>Art/Buttons/Resources/ALIEN_SPECIMENS1.dds</Button>
 	<FontButtonIndex>4</FontButtonIndex>
 	<bShadowCastor>0</bShadowCastor>
 	<bRefractionCastor>0</bRefractionCastor>
 </BonusArtInfo>
 <BonusArtInfo>
-	<Type>ART_DEF_BONUS_OMINOUS_EFFIGY</Type>
+	<Type>ART_DEF_BONUS_PRECIOUS_METALS1</Type>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/OMINOUS_EFFIGY/OMINOUS_EFFIGY.nif</NIF>
-	<KFM>Art/Terrain/Resources/OMINOUS_EFFIGY/OMINOUS_EFFIGY.kfm</KFM>
-	<Button>Art/Buttons/Resources/OMINOUS_EFFIGY.dds</Button>
+	<NIF>Art/Terrain/Resources/PRECIOUS_METALS1/PRECIOUS_METALS1.nif</NIF>
+	<KFM>Art/Terrain/Resources/PRECIOUS_METALS1/PRECIOUS_METALS1.kfm</KFM>
+	<Button>Art/Buttons/Resources/PRECIOUS_METALS1.dds</Button>
 	<FontButtonIndex>4</FontButtonIndex>
 	<bShadowCastor>0</bShadowCastor>
 	<bRefractionCastor>0</bRefractionCastor>
 </BonusArtInfo>
 <BonusArtInfo>
-	<Type>ART_DEF_BONUS_ABANDONED_REDOUBT</Type>
+	<Type>ART_DEF_BONUS_OPIATES1</Type>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/ABANDONED_REDOUBT/ABANDONED_REDOUBT.nif</NIF>
-	<KFM>Art/Terrain/Resources/ABANDONED_REDOUBT/ABANDONED_REDOUBT.kfm</KFM>
-	<Button>Art/Buttons/Resources/ABANDONED_REDOUBT.dds</Button>
+	<NIF>Art/Terrain/Resources/OPIATES1/OPIATES1.nif</NIF>
+	<KFM>Art/Terrain/Resources/OPIATES1/OPIATES1.kfm</KFM>
+	<Button>Art/Buttons/Resources/OPIATES1.dds</Button>
 	<FontButtonIndex>4</FontButtonIndex>
 	<bShadowCastor>0</bShadowCastor>
 	<bRefractionCastor>0</bRefractionCastor>
 </BonusArtInfo>
 <BonusArtInfo>
-	<Type>ART_DEF_BONUS_EDIBLE_BERRIES</Type>
+	<Type>ART_DEF_BONUS_XENOTOXINS1</Type>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/EDIBLE_BERRIES/EDIBLE_BERRIES.nif</NIF>
-	<KFM>Art/Terrain/Resources/EDIBLE_BERRIES/EDIBLE_BERRIES.kfm</KFM>
-	<Button>Art/Buttons/Resources/EDIBLE_BERRIES.dds</Button>
+	<NIF>Art/Terrain/Resources/XENOTOXINS1/XENOTOXINS1.nif</NIF>
+	<KFM>Art/Terrain/Resources/XENOTOXINS1/XENOTOXINS1.kfm</KFM>
+	<Button>Art/Buttons/Resources/XENOTOXINS1.dds</Button>
 	<FontButtonIndex>4</FontButtonIndex>
 	<bShadowCastor>0</bShadowCastor>
 	<bRefractionCastor>0</bRefractionCastor>
 </BonusArtInfo>
 <BonusArtInfo>
-	<Type>ART_DEF_BONUS_ALIEN_FUNGI</Type>
+	<Type>ART_DEF_BONUS_BOTANICALS1</Type>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/ALIEN_FUNGI/ALIEN_FUNGI.nif</NIF>
-	<KFM>Art/Terrain/Resources/ALIEN_FUNGI/ALIEN_FUNGI.kfm</KFM>
-	<Button>Art/Buttons/Resources/ALIEN_FUNGI.dds</Button>
+	<NIF>Art/Terrain/Resources/BOTANICALS1/BOTANICALS1.nif</NIF>
+	<KFM>Art/Terrain/Resources/BOTANICALS1/BOTANICALS1.kfm</KFM>
+	<Button>Art/Buttons/Resources/BOTANICALS1.dds</Button>
 	<FontButtonIndex>4</FontButtonIndex>
 	<bShadowCastor>0</bShadowCastor>
 	<bRefractionCastor>0</bRefractionCastor>
 </BonusArtInfo>
 <BonusArtInfo>
-	<Type>ART_DEF_BONUS_NATIVE_TUBERS</Type>
+	<Type>ART_DEF_BONUS_HYDROCARBONS1</Type>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/NATIVE_TUBERS/NATIVE_TUBERS.nif</NIF>
-	<KFM>Art/Terrain/Resources/NATIVE_TUBERS/NATIVE_TUBERS.kfm</KFM>
-	<Button>Art/Buttons/Resources/NATIVE_TUBERS.dds</Button>
+	<NIF>Art/Terrain/Resources/HYDROCARBONS1/HYDROCARBONS1.nif</NIF>
+	<KFM>Art/Terrain/Resources/HYDROCARBONS1/HYDROCARBONS1.kfm</KFM>
+	<Button>Art/Buttons/Resources/HYDROCARBONS1.dds</Button>
 	<FontButtonIndex>4</FontButtonIndex>
 	<bShadowCastor>0</bShadowCastor>
 	<bRefractionCastor>0</bRefractionCastor>
 </BonusArtInfo>
 <BonusArtInfo>
-	<Type>ART_DEF_BONUS_NATIVE_RUMINANTS</Type>
+	<Type>ART_DEF_BONUS_CLATHRATES1</Type>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/NATIVE_RUMINANTS/NATIVE_RUMINANTS.nif</NIF>
-	<KFM>Art/Terrain/Resources/NATIVE_RUMINANTS/NATIVE_RUMINANTS.kfm</KFM>
-	<Button>Art/Buttons/Resources/NATIVE_RUMINANTS.dds</Button>
+	<NIF>Art/Terrain/Resources/CLATHRATES1/CLATHRATES1.nif</NIF>
+	<KFM>Art/Terrain/Resources/CLATHRATES1/CLATHRATES1.kfm</KFM>
+	<Button>Art/Buttons/Resources/CLATHRATES1.dds</Button>
 	<FontButtonIndex>4</FontButtonIndex>
 	<bShadowCastor>0</bShadowCastor>
 	<bRefractionCastor>0</bRefractionCastor>
 </BonusArtInfo>
 <BonusArtInfo>
-	<Type>ART_DEF_BONUS_NATIVE_UNGULATES</Type>
+	<Type>ART_DEF_BONUS_CORE_SAMPLES1</Type>
 	<fScale>1.0</fScale>
 	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/NATIVE_UNGULATES/NATIVE_UNGULATES.nif</NIF>
-	<KFM>Art/Terrain/Resources/NATIVE_UNGULATES/NATIVE_UNGULATES.kfm</KFM>
-	<Button>Art/Buttons/Resources/NATIVE_UNGULATES.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_NATIVE_PINNIPEDS</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/NATIVE_PINNIPEDS/NATIVE_PINNIPEDS.nif</NIF>
-	<KFM>Art/Terrain/Resources/NATIVE_PINNIPEDS/NATIVE_PINNIPEDS.kfm</KFM>
-	<Button>Art/Buttons/Resources/NATIVE_PINNIPEDS.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_NATIVE_OMNIVORES</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/NATIVE_OMNIVORES/NATIVE_OMNIVORES.nif</NIF>
-	<KFM>Art/Terrain/Resources/NATIVE_OMNIVORES/NATIVE_OMNIVORES.kfm</KFM>
-	<Button>Art/Buttons/Resources/NATIVE_OMNIVORES.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_ELECTROLYTIC_MOLLUSKS</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/ELECTROLYTIC_MOLLUSKS/ELECTROLYTIC_MOLLUSKS.nif</NIF>
-	<KFM>Art/Terrain/Resources/ELECTROLYTIC_MOLLUSKS/ELECTROLYTIC_MOLLUSKS.kfm</KFM>
-	<Button>Art/Buttons/Resources/ELECTROLYTIC_MOLLUSKS.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_MANTRAP_CLAMS</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/MANTRAP_CLAMS/MANTRAP_CLAMS.nif</NIF>
-	<KFM>Art/Terrain/Resources/MANTRAP_CLAMS/MANTRAP_CLAMS.kfm</KFM>
-	<Button>Art/Buttons/Resources/MANTRAP_CLAMS.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_NATIVE_LUNGFISH</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/NATIVE_LUNGFISH/NATIVE_LUNGFISH.nif</NIF>
-	<KFM>Art/Terrain/Resources/NATIVE_LUNGFISH/NATIVE_LUNGFISH.kfm</KFM>
-	<Button>Art/Buttons/Resources/NATIVE_LUNGFISH.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_NATIVE_ARTHROPODS</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/NATIVE_ARTHROPODS/NATIVE_ARTHROPODS.nif</NIF>
-	<KFM>Art/Terrain/Resources/NATIVE_ARTHROPODS/NATIVE_ARTHROPODS.kfm</KFM>
-	<Button>Art/Buttons/Resources/NATIVE_ARTHROPODS.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_NATIVE_RODENTS</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/NATIVE_RODENTS/NATIVE_RODENTS.nif</NIF>
-	<KFM>Art/Terrain/Resources/NATIVE_RODENTS/NATIVE_RODENTS.kfm</KFM>
-	<Button>Art/Buttons/Resources/NATIVE_RODENTS.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_INTELLIGENT_MAMMALS</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/INTELLIGENT_MAMMALS/INTELLIGENT_MAMMALS.nif</NIF>
-	<KFM>Art/Terrain/Resources/INTELLIGENT_MAMMALS/INTELLIGENT_MAMMALS.kfm</KFM>
-	<Button>Art/Buttons/Resources/INTELLIGENT_MAMMALS.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_NATIVE_EQUIDS</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/NATIVE_EQUIDS/NATIVE_EQUIDS.nif</NIF>
-	<KFM>Art/Terrain/Resources/NATIVE_EQUIDS/NATIVE_EQUIDS.kfm</KFM>
-	<Button>Art/Buttons/Resources/NATIVE_EQUIDS.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_NATIVE_BIPEDS</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/NATIVE_BIPEDS/NATIVE_BIPEDS.nif</NIF>
-	<KFM>Art/Terrain/Resources/NATIVE_BIPEDS/NATIVE_BIPEDS.kfm</KFM>
-	<Button>Art/Buttons/Resources/NATIVE_BIPEDS.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_NATIVE_BEETLES</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/NATIVE_BEETLES/NATIVE_BEETLES.nif</NIF>
-	<KFM>Art/Terrain/Resources/NATIVE_BEETLES/NATIVE_BEETLES.kfm</KFM>
-	<Button>Art/Buttons/Resources/NATIVE_BEETLES.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_EXOTIC_APHRODISIAC</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/EXOTIC_APHRODISIAC/EXOTIC_APHRODISIAC.nif</NIF>
-	<KFM>Art/Terrain/Resources/EXOTIC_APHRODISIAC/EXOTIC_APHRODISIAC.kfm</KFM>
-	<Button>Art/Buttons/Resources/EXOTIC_APHRODISIAC.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_SUBTERRANEAN_FUNGUS</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/SUBTERRANEAN_FUNGUS/SUBTERRANEAN_FUNGUS.nif</NIF>
-	<KFM>Art/Terrain/Resources/SUBTERRANEAN_FUNGUS/SUBTERRANEAN_FUNGUS.kfm</KFM>
-	<Button>Art/Buttons/Resources/SUBTERRANEAN_FUNGUS.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_NATIVE_MOSSES</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/NATIVE_MOSSES/NATIVE_MOSSES.nif</NIF>
-	<KFM>Art/Terrain/Resources/NATIVE_MOSSES/NATIVE_MOSSES.kfm</KFM>
-	<Button>Art/Buttons/Resources/NATIVE_MOSSES.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_COMMUNICATIONS_ARRAY</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/COMMUNICATIONS_ARRAY/COMMUNICATIONS_ARRAY.nif</NIF>
-	<KFM>Art/Terrain/Resources/COMMUNICATIONS_ARRAY/COMMUNICATIONS_ARRAY.kfm</KFM>
-	<Button>Art/Buttons/Resources/COMMUNICATIONS_ARRAY.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_ORBITAL_PLATFORM</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/ORBITAL_PLATFORM/ORBITAL_PLATFORM.nif</NIF>
-	<KFM>Art/Terrain/Resources/ORBITAL_PLATFORM/ORBITAL_PLATFORM.kfm</KFM>
-	<Button>Art/Buttons/Resources/ORBITAL_PLATFORM.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_DERELICT_SATELLITE</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/DERELICT_SATELLITE/DERELICT_SATELLITE.nif</NIF>
-	<KFM>Art/Terrain/Resources/DERELICT_SATELLITE/DERELICT_SATELLITE.kfm</KFM>
-	<Button>Art/Buttons/Resources/DERELICT_SATELLITE.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_GOLD_VEIN</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/GOLD_VEIN/GOLD_VEIN.nif</NIF>
-	<KFM>Art/Terrain/Resources/GOLD_VEIN/GOLD_VEIN.kfm</KFM>
-	<Button>Art/Buttons/Resources/GOLD_VEIN.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_COPPER_VEIN</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/COPPER_VEIN/COPPER_VEIN.nif</NIF>
-	<KFM>Art/Terrain/Resources/COPPER_VEIN/COPPER_VEIN.kfm</KFM>
-	<Button>Art/Buttons/Resources/COPPER_VEIN.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_KREEP</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/KREEP/KREEP.nif</NIF>
-	<KFM>Art/Terrain/Resources/KREEP/KREEP.kfm</KFM>
-	<Button>Art/Buttons/Resources/KREEP.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_NATIVE_SHRUBS</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/NATIVE_SHRUBS/NATIVE_SHRUBS.nif</NIF>
-	<KFM>Art/Terrain/Resources/NATIVE_SHRUBS/NATIVE_SHRUBS.kfm</KFM>
-	<Button>Art/Buttons/Resources/NATIVE_SHRUBS.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_NATURAL_GAS</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/NATURAL_GAS/NATURAL_GAS.nif</NIF>
-	<KFM>Art/Terrain/Resources/NATURAL_GAS/NATURAL_GAS.kfm</KFM>
-	<Button>Art/Buttons/Resources/NATURAL_GAS.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_OIL</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/OIL/OIL.nif</NIF>
-	<KFM>Art/Terrain/Resources/OIL/OIL.kfm</KFM>
-	<Button>Art/Buttons/Resources/OIL.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_IMPACT_CRATER</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/IMPACT_CRATER/IMPACT_CRATER.nif</NIF>
-	<KFM>Art/Terrain/Resources/IMPACT_CRATER/IMPACT_CRATER.kfm</KFM>
-	<Button>Art/Buttons/Resources/IMPACT_CRATER.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_METEORITE</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/METEORITE/METEORITE.nif</NIF>
-	<KFM>Art/Terrain/Resources/METEORITE/METEORITE.kfm</KFM>
-	<Button>Art/Buttons/Resources/METEORITE.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_PALEONTOLOGY_SITE</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/PALEONTOLOGY_SITE/PALEONTOLOGY_SITE.nif</NIF>
-	<KFM>Art/Terrain/Resources/PALEONTOLOGY_SITE/PALEONTOLOGY_SITE.kfm</KFM>
-	<Button>Art/Buttons/Resources/PALEONTOLOGY_SITE.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_GARGANTUAN_FOSSIL</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/GARGANTUAN_FOSSIL/GARGANTUAN_FOSSIL.nif</NIF>
-	<KFM>Art/Terrain/Resources/GARGANTUAN_FOSSIL/GARGANTUAN_FOSSIL.kfm</KFM>
-	<Button>Art/Buttons/Resources/GARGANTUAN_FOSSIL.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_ARCTIC_MOON</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/ARCTIC_MOON/ARCTIC_MOON.nif</NIF>
-	<KFM>Art/Terrain/Resources/ARCTIC_MOON/ARCTIC_MOON.kfm</KFM>
-	<Button>Art/Buttons/Resources/ARCTIC_MOON.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_ARTIFACT_MOON</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/ARTIFACT_MOON/ARTIFACT_MOON.nif</NIF>
-	<KFM>Art/Terrain/Resources/ARTIFACT_MOON/ARTIFACT_MOON.kfm</KFM>
-	<Button>Art/Buttons/Resources/ARTIFACT_MOON.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_BARREN_MOON</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/BARREN_MOON/BARREN_MOON.nif</NIF>
-	<KFM>Art/Terrain/Resources/BARREN_MOON/BARREN_MOON.kfm</KFM>
-	<Button>Art/Buttons/Resources/BARREN_MOON.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_PRIMORDIAL_MOON</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/PRIMORDIAL_MOON/PRIMORDIAL_MOON.nif</NIF>
-	<KFM>Art/Terrain/Resources/PRIMORDIAL_MOON/PRIMORDIAL_MOON.kfm</KFM>
-	<Button>Art/Buttons/Resources/PRIMORDIAL_MOON.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_VERDANT_MOON</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/VERDANT_MOON/VERDANT_MOON.nif</NIF>
-	<KFM>Art/Terrain/Resources/VERDANT_MOON/VERDANT_MOON.kfm</KFM>
-	<Button>Art/Buttons/Resources/VERDANT_MOON.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_AQUATIC_MOON</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/AQUATIC_MOON/AQUATIC_MOON.nif</NIF>
-	<KFM>Art/Terrain/Resources/AQUATIC_MOON/AQUATIC_MOON.kfm</KFM>
-	<Button>Art/Buttons/Resources/AQUATIC_MOON.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_VOLCANIC_MOON</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/VOLCANIC_MOON/VOLCANIC_MOON.nif</NIF>
-	<KFM>Art/Terrain/Resources/VOLCANIC_MOON/VOLCANIC_MOON.kfm</KFM>
-	<Button>Art/Buttons/Resources/VOLCANIC_MOON.dds</Button>
-	<FontButtonIndex>4</FontButtonIndex>
-	<bShadowCastor>0</bShadowCastor>
-	<bRefractionCastor>0</bRefractionCastor>
-</BonusArtInfo>
-<BonusArtInfo>
-	<Type>ART_DEF_BONUS_TOXIC_MOON</Type>
-	<fScale>1.0</fScale>
-	<fInterfaceScale>1.0</fInterfaceScale>
-	<NIF>Art/Terrain/Resources/TOXIC_MOON/TOXIC_MOON.nif</NIF>
-	<KFM>Art/Terrain/Resources/TOXIC_MOON/TOXIC_MOON.kfm</KFM>
-	<Button>Art/Buttons/Resources/TOXIC_MOON.dds</Button>
+	<NIF>Art/Terrain/Resources/CORE_SAMPLES1/CORE_SAMPLES1.nif</NIF>
+	<KFM>Art/Terrain/Resources/CORE_SAMPLES1/CORE_SAMPLES1.kfm</KFM>
+	<Button>Art/Buttons/Resources/CORE_SAMPLES1.dds</Button>
 	<FontButtonIndex>4</FontButtonIndex>
 	<bShadowCastor>0</bShadowCastor>
 	<bRefractionCastor>0</bRefractionCastor>

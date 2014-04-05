@@ -10,8 +10,13 @@ def_noun "Mine"  => "Mines";
 
 # ** CONTENT ARRAYS **
 
-# arrays of yields
-@cargoyields = ("Nutrients" , "Biopolymers" , "Silicates" , "Base Metals" , "Actinides" , "Isotopes" , "Rare Earths" , "Crystalloids" , "Nucleic Acids" , "Amino Acids" , "Tissue Samples" , "Microbes" , "Datacores" , "Progenitor Artifacts" , "Alien Specimens" , "Precious Metals" , "Opiates" , "Xenotoxins" , "Botanicals" , "Hydrocarbons" , "Clathrates" , "Core Samples" , "Machine Tools" , "Robotics" , "Munitions" , "Photonics" , "Plasteel" , "Duralloy" , "Crystalloy" , "Nucleonics" , "Fusion Cores" , "Semiconductors" , "Plasmids" , "Enzymes" , "Stem Cells" , "State Secrets" , "Progenitor Tech" , "Alien Relics" , "Narcotics" , "Bioweapons" , "Pharmaceuticals" , "Petrochemicals" , "Colloids" , "Catalysts", "Hard Currency", "Earth Goods", "Contraband", "Earthling Specimens");
+# array of yields found on map
+@mapyields = ("Nutrients" , "Biopolymers" , "Silicates" , "Base Metals" , "Actinides" , "Isotopes" , "Rare Earths" , "Crystalloids" , "Nucleic Acids" , "Amino Acids" , "Tissue Samples" , "Microbes" , "Datacores" , "Progenitor Artifacts" , "Alien Specimens" , "Precious Metals" , "Opiates" , "Xenotoxins" , "Botanicals" , "Hydrocarbons" , "Clathrates" , "Core Samples");
+
+# array of other cargo yields
+@miscyields = ("Machine Tools" , "Robotics" , "Munitions" , "Photonics" , "Plasteel" , "Duralloy" , "Crystalloy" , "Nucleonics" , "Fusion Cores" , "Semiconductors" , "Plasmids" , "Enzymes" , "Stem Cells" , "State Secrets" , "Progenitor Tech" , "Alien Relics" , "Narcotics" , "Bioweapons" , "Pharmaceuticals" , "Petrochemicals" , "Colloids" , "Catalysts", "Hard Currency", "Earth Goods", "Contraband", "Earthling Specimens");
+@cargoyields = (@mapyields,@miscyields);
+
 # array of abstract yields
 @abstractyields = ("Industry", "Media", "Liberty", "Research", "Education", "Influence", "Energy", "Pollutants", "Credits");
 @allyields = (@cargoyields,@abstractyields);
@@ -82,6 +87,7 @@ def_noun "Mine"  => "Mines";
 
 #city production yields needing specialbuildings
 @cityyields = ("Machine Tools" , "Robotics" , "Munitions" , "Photonics" , "Hard Currency" , "Plasteel" , "Duralloy" , "Crystalloy" , "Nucleonics" , "Fusion Cores" , "Semiconductors" , "Plasmids" , "Enzymes" , "Stem Cells" , "State Secrets" , "Progenitor Tech" , "Alien Relics" , "Narcotics" , "Bioweapons" , "Pharmaceuticals" , "Petrochemicals" , "Colloids" , "Catalysts", "Industry" , "Media", "Liberty", "Research", "Education");
+
 #other specialbuildings
 @miscbuildings = ("Fort","Dock","Warehouse","Market","Prison");
 @onetierbuildings = ("Shrine","Trading Post");
@@ -1091,8 +1097,8 @@ my $tag = $desc;
 $tag =~ tr/ /_/;
 $tag =~ tr/[a-z]/[A-Z]/;
 print BI "<BonusInfo>\n";
-print BI "\t\t<Type>BONUS_".$tag."</Type>\n";
-print BI "\t\t<Description>TXT_KEY_BONUS_".$tag."</Description>\n";
+print BI "\t<Type>BONUS_".$tag."</Type>\n";
+print BI "\t<Description>TXT_KEY_BONUS_".$tag."</Description>\n";
 &maketext("TXT_KEY_BONUS_".$tag,$desc);
 $pedia = 'Rare [COLOR_HIGHLIGHT_TEXT]'.$desc.'[COLOR_REVERT] can occasionally be found across certain planets of the New Worlds, and are are often rich in ';
 for my $yield ( keys (%$href) ) {
@@ -1101,19 +1107,19 @@ for my $yield ( keys (%$href) ) {
 	$yielddesc =~ s/(\w+)/\u\L$1/g;
 	$pedia = $pedia.'[LINK=YIELD_'.$yield.']'.$yielddesc.'[\LINK], '; 
 	}
-print BI "\t\t<Civilopedia>TXT_KEY_BONUS_".$tag."_PEDIA</Civilopedia>\n";
+print BI "\t<Civilopedia>TXT_KEY_BONUS_".$tag."_PEDIA</Civilopedia>\n";
 &maketext("TXT_KEY_BONUS_".$tag."_PEDIA",$pedia);
-print BI "\t\t<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>\n";
+print BI "\t<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>\n";
 # placeholder print BI "\t\t<ArtDefineTag>ART_DEF_BONUS_".$tag."</ArtDefineTag>\n";
 print BI "\t<BuildingType>NONE</BuildingType>\n";
 print BI "\t<YieldChanges>\n";
 for my $yield ( keys (%$href) ) {
 	my $prod = $href->{$yield};
 	if ($prod != 0) {
-		print BI "\t\t\t<YieldIntegerPair>\n";
-		print BI "\t\t\t\t<YieldType>YIELD_".$yield."</YieldType>\n";
-		print BI "\t\t\t\t<iValue>".$prod."</iValue>\n";
-		print BI "\t\t\t</YieldIntegerPair>\n";
+		print BI "\t\t<YieldIntegerPair>\n";
+		print BI "\t\t\t<YieldType>YIELD_".$yield."</YieldType>\n";
+		print BI "\t\t\t<iValue>".$prod."</iValue>\n";
+		print BI "\t\t</YieldIntegerPair>\n";
 		}
 	}
 print BI "\t</YieldChanges>\n";
@@ -1162,63 +1168,70 @@ print ADB "\t<bRefractionCastor>0</bRefractionCastor>\n";
 print ADB "</BonusArtInfo>\n";
 }
 
-&makebonus('Progenitor Metropolis',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Ruined Temple',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Grand Ziggurat',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Nesting Grounds',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Spider Lair',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Iridescent Pyramids',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Limestone Spire',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Antediluvian Catacomb',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Sacred Grove',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Ruined Biosphere',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Plinth Circle',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Sacrificial Pit',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Obsidian Faces',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Malachite Idols',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Calcified Being',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Ominous Effigy',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Abandoned Redoubt',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Edible Berries',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Alien Fungi',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Native Tubers',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Native Ruminants',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Native Ungulates',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Native Pinnipeds',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Native Omnivores',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Electrolytic Mollusks',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Mantrap Clams',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Native Lungfish',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Native Arthropods',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Native Rodents',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Intelligent Mammals',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Native Equids',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Native Bipeds',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Native Beetles',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Exotic Aphrodisiac',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Subterranean Fungus',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Native Mosses',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Communications Array',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Orbital Platform',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Derelict Satellite',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Gold Vein',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Copper Vein',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('KREEP',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Native Shrubs',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Natural Gas',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Oil',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Impact Crater',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Meteorite',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Paleontology Site',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Gargantuan Fossil',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Arctic Moon',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Artifact Moon',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Barren Moon',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Primordial Moon',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Verdant Moon',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Aquatic Moon',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Volcanic Moon',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
-&makebonus('Toxic Moon',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+foreach $item (@mapyields) {
+	my $tag = $item;
+	$tag =~ tr/ /_/;
+	$tag =~ tr/[a-z]/[A-Z]/;
+	&makebonus($tag.'1',{$tag=>2});
+}
+
+#&makebonus('Progenitor Metropolis',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Ruined Temple',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Grand Ziggurat',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Nesting Grounds',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Spider Lair',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Iridescent Pyramids',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Limestone Spire',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Antediluvian Catacomb',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Sacred Grove',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Ruined Biosphere',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Plinth Circle',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Sacrificial Pit',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Obsidian Faces',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Malachite Idols',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Calcified Being',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Ominous Effigy',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Abandoned Redoubt',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Edible Berries',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Alien Fungi',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Native Tubers',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Native Ruminants',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Native Ungulates',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Native Pinnipeds',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Native Omnivores',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Electrolytic Mollusks',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Mantrap Clams',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Native Lungfish',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Native Arthropods',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Native Rodents',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Intelligent Mammals',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Native Equids',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Native Bipeds',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Native Beetles',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Exotic Aphrodisiac',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Subterranean Fungus',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Native Mosses',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Communications Array',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Orbital Platform',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Derelict Satellite',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Gold Vein',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Copper Vein',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('KREEP',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Native Shrubs',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Natural Gas',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Oil',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Impact Crater',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Meteorite',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Paleontology Site',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Gargantuan Fossil',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Arctic Moon',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Artifact Moon',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Barren Moon',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Primordial Moon',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Verdant Moon',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Aquatic Moon',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Volcanic Moon',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
+#&makebonus('Toxic Moon',{'BIOPOLYMERS'=>3,'ACTINIDES'=>1,'NUTRIENTS'=>-1});
 
 #placeholder
 print ADB "<BonusArtInfo>\n";
@@ -3775,7 +3788,7 @@ sub makecat {
 	print CI "</CivicInfo>\n";
 }
 
-#tag,description,category,xcoord,ycoord,requiredinvention,allowyield,allowbldg,allowprof
+#tag,description,category,xcoord,ycoord,requiredinvention,allowyield,allowbldg,allowprof,allowbonus,inputyield
 sub maketech {
 	my $tag = shift;
 	my $desc = shift;
@@ -3786,6 +3799,7 @@ sub maketech {
 	my $allowsyield = shift;
 	my $allowsbuilding = shift;
 	my $allowsprof = shift;
+	my $allowsbonus = shift;
 	my $consumed = shift;
 	if ($req =~ /w+/) {
 		$req = 'TECH_'.$req;
@@ -3875,6 +3889,16 @@ sub maketech {
 		} else {
 		print CI "\t<AllowsProfessions/>\n";
 		}
+	if ($allowsbonus =~ /\w+/){
+		print CI "\t<AllowsBonuses>\n";
+		print CI "\t\t<AllowsBonus>\n";
+		print CI "\t\t\t<BonusType>BONUS_".$allowsbonus."</BonusType>\n";
+		print CI "\t\t\t<iChange>1</iChange>\n";
+		print CI "\t\t</AllowsBonus>\n";
+		print CI "\t</AllowsBonuses>\n";
+		} else {
+		print CI "\t<AllowsBonuses/>\n";
+		}
 	print CI "\t<AllowsTrait/>\n";
 	print CI "\t<AllowsBuildTypes/>\n";
 	print CI "\t<AllowsBuildTypesTerrain/>\n";
@@ -3911,20 +3935,19 @@ sub maketech {
 &makecat('TECH_CATEGORY_CHEMISTRY','Chemistry');
 &makecat('TECH_CATEGORY_PHYSICS','Physics');
 
-#tag,description,category,xcoord,ycoord,requiredinvention,allowyield,allowbldg,allowprof,inputyield
 #M:C hardcoded techs
-&maketech('CENSURE_INTERDICT','Interdict','MEDIEVAL_CENSURE',0,0,'NONE','','','','');
-&maketech('CENSURE_ANATHEMA','Anathema','MEDIEVAL_CENSURE',0,0,'NONE','','','','');
-&maketech('CENSURE_EXCOMMUNICATION','Excommunication','MEDIEVAL_CENSURE',0,0,'NONE','','','','');
-&maketech('TRADING_TRADE_ROUTE_2','TRADING_TRADE_ROUTE_2','MEDIEVAL_TRADE_TECH',0,0,'NONE','','','','');
-&maketech('TRADING_TRADEPOST','TRADING_TRADEPOST','MEDIEVAL_TRADE_TECH',0,0,'NONE','','','','');
-&maketech('TRADING_GUILDS','TRADING_GUILDS','MEDIEVAL_TRADE_TECH',0,0,'NONE','','','','');
+&maketech('CENSURE_INTERDICT','Interdict','MEDIEVAL_CENSURE',0,0,'NONE','','','','','');
+&maketech('CENSURE_ANATHEMA','Anathema','MEDIEVAL_CENSURE',0,0,'NONE','','','','','');
+&maketech('CENSURE_EXCOMMUNICATION','Excommunication','MEDIEVAL_CENSURE',0,0,'NONE','','','','','');
+&maketech('TRADING_TRADE_ROUTE_2','TRADING_TRADE_ROUTE_2','MEDIEVAL_TRADE_TECH',0,0,'NONE','','','','','');
+&maketech('TRADING_TRADEPOST','TRADING_TRADEPOST','MEDIEVAL_TRADE_TECH',0,0,'NONE','','','','','');
+&maketech('TRADING_GUILDS','TRADING_GUILDS','MEDIEVAL_TRADE_TECH',0,0,'NONE','','','','','');
 
 $x=1;
 $y=1;
 
 #arguments to techline functions:
-#tag,description,category,xcoord,ycoord,requiredinvention,allowyield,allowbldg,allowprof,inputyield
+#tag,description,category,xcoord,ycoord,requiredinvention,allowyield,allowbldg,allowprof,allowbonus,inputyield
 
 #techline for raw yield unlock and harvesting
 sub maketechlineraw {
@@ -3934,13 +3957,13 @@ sub maketechlineraw {
 	my $cat = 'MEDIEVAL_TRADE_TECH';
 	$x=1;
 	#allow yield
-	&maketech('TECH_'.$yield.'1',$desc.' Analysis',$cat,$x,$y,'',$yield,'','','SILICATES');
+	&maketech('TECH_'.$yield.'1',$desc.' Analysis',$cat,$x,$y,'',$yield,'','','','SILICATES');
 	$x++;
 	#allow prof
-	&maketech('TECH_'.$yield.'2','Basic '.$desc.' Extraction',$cat,$x,$y,'TECH_'.$yield.'1','','',$yield,$yield);
+	&maketech('TECH_'.$yield.'2','Basic '.$desc.' Extraction',$cat,$x,$y,'TECH_'.$yield.'1','','',$yield,'',$yield);
 	$x++;
 	#production boost
-	&maketech('TECH_'.$yield.'3','Advanced '.$desc.' Extraction',$cat,$x,$y,'TECH_'.$yield.'2','','','',$yield);
+	&maketech('TECH_'.$yield.'3','Advanced '.$desc.' Extraction',$cat,$x,$y,'TECH_'.$yield.'2','','','',$yield.'1',$yield);
 	$y=$y+2;
 	}
 
@@ -3952,13 +3975,13 @@ sub maketechlineraw1 {
 	my $cat = 'MEDIEVAL_TRADE_TECH';
 	$x=1;
 	#allow yield
-#	&maketech('TECH_'.$yield.'1',$desc.' Analysis',$cat,$x,$y,'',$yield,'','','SILICATES');
+#	&maketech('TECH_'.$yield.'1',$desc.' Analysis',$cat,$x,$y,'',$yield,'','','','SILICATES');
 #	$x++;
 	#allow prof
-	&maketech('TECH_'.$yield.'2','Basic '.$desc.' Extraction',$cat,$x,$y,'','','',$yield,$yield);
+	&maketech('TECH_'.$yield.'2','Basic '.$desc.' Extraction',$cat,$x,$y,'','','',$yield,'',$yield);
 	$x++;
 	#production boost
-	&maketech('TECH_'.$yield.'3','Advanced '.$desc.' Extraction',$cat,$x,$y,'TECH_'.$yield.'2','','','',$yield);
+	&maketech('TECH_'.$yield.'3','Advanced '.$desc.' Extraction',$cat,$x,$y,'TECH_'.$yield.'2','','','',$yield.'1',$yield);
 	$y=$y+2;
 	}
 
@@ -3969,11 +3992,11 @@ sub maketechlinemisc {
 #	my $cat = shift;
 	my $cat = 'MEDIEVAL_TRADE_TECH';
 	$x=2;
-	&maketech('TECH_'.$yield.'A1','Applied '.$desc.'s',$cat,$x,$y,'','','','',$yield);
+	&maketech('TECH_'.$yield.'A1','Applied '.$desc.'s',$cat,$x,$y,'','','','','',$yield);
 	$x++;
-	&maketech('TECH_'.$yield.'A2',$desc.' Technology',$cat,$x,$y,'TECH_'.$yield.'1','','','',$yield);
+	&maketech('TECH_'.$yield.'A2',$desc.' Technology',$cat,$x,$y,'TECH_'.$yield.'1','','','','',$yield);
 	$x++;
-	&maketech('TECH_'.$yield.'A3',$desc.' Engineering',$cat,$x,$y,'TECH_'.$yield.'2','','','',$yield);
+	&maketech('TECH_'.$yield.'A3',$desc.' Engineering',$cat,$x,$y,'TECH_'.$yield.'2','','','','',$yield);
 	$y=$y+2;
 	}
 
@@ -3985,16 +4008,16 @@ sub maketechlinecity {
 	my $cat = 'MEDIEVAL_TRADE_TECH';
 	$x=1;
 	#allow yield
-	&maketech('TECH_'.$yield.'1',$desc.' Analysis',$cat,$x,$y,'',$yield,'','','MACHINE_TOOLS');
+	&maketech('TECH_'.$yield.'1',$desc.' Analysis',$cat,$x,$y,'',$yield,'','','','MACHINE_TOOLS');
 	$x++;
 	#allow prof + bldg 1
-	&maketech('TECH_'.$yield.'2','Basic '.$desc.' Production',$cat,$x,$y,'TECH_'.$yield.'1','',$yield.'1',$yield,$yield);
+	&maketech('TECH_'.$yield.'2','Basic '.$desc.' Production',$cat,$x,$y,'TECH_'.$yield.'1','',$yield.'1',$yield,'',$yield);
 	$x++;
 	#building 2
-	&maketech('TECH_'.$yield.'3','Advanced '.$desc.' Production',$cat,$x,$y,'TECH_'.$yield.'2','',$yield.'2','',$yield);
+	&maketech('TECH_'.$yield.'3','Advanced '.$desc.' Production',$cat,$x,$y,'TECH_'.$yield.'2','',$yield.'2','','',$yield);
 	$x++;
 	#building 3
-	&maketech('TECH_'.$yield.'4','Intensive '.$desc.' Production',$cat,$x,$y,'TECH_'.$yield.'3','',$yield.'3','',$yield);
+	&maketech('TECH_'.$yield.'4','Intensive '.$desc.' Production',$cat,$x,$y,'TECH_'.$yield.'3','',$yield.'3','','',$yield);
 	$y=$y+2;
 	}
 
@@ -4006,16 +4029,16 @@ sub maketechlinecity1 {
 	my $cat = 'MEDIEVAL_TRADE_TECH';
 	$x=1;
 	#allow bldg 1
-	&maketech('TECH_'.$yield.'1',$desc.' Design',$cat,$x,$y,'','',$yield.'1','','NUTRIENTS');
+	&maketech('TECH_'.$yield.'1',$desc.' Design',$cat,$x,$y,'','',$yield.'1','','','NUTRIENTS');
 	$x++;
 	#allow prof
-	&maketech('TECH_'.$yield.'2','Basic '.$desc.' Production',$cat,$x,$y,'TECH_'.$yield.'1','','',$yield,'EARTH_GOODS');
+	&maketech('TECH_'.$yield.'2','Basic '.$desc.' Production',$cat,$x,$y,'TECH_'.$yield.'1','','',$yield,'','EARTH_GOODS');
 	$x++;
 	#building 2
-	&maketech('TECH_'.$yield.'3','Advanced '.$desc.' Production',$cat,$x,$y,'TECH_'.$yield.'2','',$yield.'2','',$yield);
+	&maketech('TECH_'.$yield.'3','Advanced '.$desc.' Production',$cat,$x,$y,'TECH_'.$yield.'2','',$yield.'2','','',$yield);
 	$x++;
 	#building 3
-	&maketech('TECH_'.$yield.'4','Intensive '.$desc.' Production',$cat,$x,$y,'TECH_'.$yield.'3','',$yield.'3','',$yield);
+	&maketech('TECH_'.$yield.'4','Intensive '.$desc.' Production',$cat,$x,$y,'TECH_'.$yield.'3','',$yield.'3','','',$yield);
 	$y=$y+2;
 	}
 	
@@ -4027,13 +4050,13 @@ sub maketechlinecity2 {
 	my $cat = 'MEDIEVAL_TRADE_TECH';
 	$x=2;
 	#allow prof
-	&maketech('TECH_'.$yield.'1','Basic '.$desc,$cat,$x,$y,'','','',$yield,'EARTH_GOODS');
+	&maketech('TECH_'.$yield.'1','Basic '.$desc,$cat,$x,$y,'','','',$yield,'','EARTH_GOODS');
 	$x++;
 	#building 2
-	&maketech('TECH_'.$yield.'2','Advanced '.$desc,$cat,$x,$y,'TECH_'.$yield.'1','',$yield.'2','',$yield);
+	&maketech('TECH_'.$yield.'2','Advanced '.$desc,$cat,$x,$y,'TECH_'.$yield.'1','',$yield.'2','','',$yield);
 	$x++;
 	#building 3
-	&maketech('TECH_'.$yield.'3','Intensive '.$desc,$cat,$x,$y,'TECH_'.$yield.'2','',$yield.'3','',$yield);
+	&maketech('TECH_'.$yield.'3','Intensive '.$desc,$cat,$x,$y,'TECH_'.$yield.'2','',$yield.'3','','',$yield);
 	$y=$y+2;
 	}
 

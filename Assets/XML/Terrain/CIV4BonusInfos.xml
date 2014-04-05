@@ -9,24 +9,16 @@
 <Civ4BonusInfos xmlns="x-schema:CIV4TerrainSchema.xml">
 <BonusInfos>
 <BonusInfo>
-		<Type>BONUS_PROGENITOR_METROPOLIS</Type>
-		<Description>TXT_KEY_BONUS_PROGENITOR_METROPOLIS</Description>
-		<Civilopedia>TXT_KEY_BONUS_PROGENITOR_METROPOLIS_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
+	<Type>BONUS_NUTRIENTS1</Type>
+	<Description>TXT_KEY_BONUS_NUTRIENTS1</Description>
+	<Civilopedia>TXT_KEY_BONUS_NUTRIENTS1_PEDIA</Civilopedia>
+	<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
 	<BuildingType>NONE</BuildingType>
 	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
+		<YieldIntegerPair>
+			<YieldType>YIELD_NUTRIENTS</YieldType>
+			<iValue>2</iValue>
+		</YieldIntegerPair>
 	</YieldChanges>
 	<iAIObjective>0</iAIObjective>
 	<iPlacementOrder>4</iPlacementOrder>
@@ -60,24 +52,16 @@
 	<FeatureTerrainBooleans/>
 </BonusInfo>
 <BonusInfo>
-		<Type>BONUS_RUINED_TEMPLE</Type>
-		<Description>TXT_KEY_BONUS_RUINED_TEMPLE</Description>
-		<Civilopedia>TXT_KEY_BONUS_RUINED_TEMPLE_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
+	<Type>BONUS_BIOPOLYMERS1</Type>
+	<Description>TXT_KEY_BONUS_BIOPOLYMERS1</Description>
+	<Civilopedia>TXT_KEY_BONUS_BIOPOLYMERS1_PEDIA</Civilopedia>
+	<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
 	<BuildingType>NONE</BuildingType>
 	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
+		<YieldIntegerPair>
+			<YieldType>YIELD_BIOPOLYMERS</YieldType>
+			<iValue>2</iValue>
+		</YieldIntegerPair>
 	</YieldChanges>
 	<iAIObjective>0</iAIObjective>
 	<iPlacementOrder>4</iPlacementOrder>
@@ -111,24 +95,16 @@
 	<FeatureTerrainBooleans/>
 </BonusInfo>
 <BonusInfo>
-		<Type>BONUS_GRAND_ZIGGURAT</Type>
-		<Description>TXT_KEY_BONUS_GRAND_ZIGGURAT</Description>
-		<Civilopedia>TXT_KEY_BONUS_GRAND_ZIGGURAT_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
+	<Type>BONUS_SILICATES1</Type>
+	<Description>TXT_KEY_BONUS_SILICATES1</Description>
+	<Civilopedia>TXT_KEY_BONUS_SILICATES1_PEDIA</Civilopedia>
+	<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
 	<BuildingType>NONE</BuildingType>
 	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
+		<YieldIntegerPair>
+			<YieldType>YIELD_SILICATES</YieldType>
+			<iValue>2</iValue>
+		</YieldIntegerPair>
 	</YieldChanges>
 	<iAIObjective>0</iAIObjective>
 	<iPlacementOrder>4</iPlacementOrder>
@@ -162,24 +138,16 @@
 	<FeatureTerrainBooleans/>
 </BonusInfo>
 <BonusInfo>
-		<Type>BONUS_NESTING_GROUNDS</Type>
-		<Description>TXT_KEY_BONUS_NESTING_GROUNDS</Description>
-		<Civilopedia>TXT_KEY_BONUS_NESTING_GROUNDS_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
+	<Type>BONUS_BASE_METALS1</Type>
+	<Description>TXT_KEY_BONUS_BASE_METALS1</Description>
+	<Civilopedia>TXT_KEY_BONUS_BASE_METALS1_PEDIA</Civilopedia>
+	<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
 	<BuildingType>NONE</BuildingType>
 	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
+		<YieldIntegerPair>
+			<YieldType>YIELD_BASE_METALS</YieldType>
+			<iValue>2</iValue>
+		</YieldIntegerPair>
 	</YieldChanges>
 	<iAIObjective>0</iAIObjective>
 	<iPlacementOrder>4</iPlacementOrder>
@@ -213,24 +181,16 @@
 	<FeatureTerrainBooleans/>
 </BonusInfo>
 <BonusInfo>
-		<Type>BONUS_SPIDER_LAIR</Type>
-		<Description>TXT_KEY_BONUS_SPIDER_LAIR</Description>
-		<Civilopedia>TXT_KEY_BONUS_SPIDER_LAIR_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
+	<Type>BONUS_ACTINIDES1</Type>
+	<Description>TXT_KEY_BONUS_ACTINIDES1</Description>
+	<Civilopedia>TXT_KEY_BONUS_ACTINIDES1_PEDIA</Civilopedia>
+	<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
 	<BuildingType>NONE</BuildingType>
 	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
+		<YieldIntegerPair>
+			<YieldType>YIELD_ACTINIDES</YieldType>
+			<iValue>2</iValue>
+		</YieldIntegerPair>
 	</YieldChanges>
 	<iAIObjective>0</iAIObjective>
 	<iPlacementOrder>4</iPlacementOrder>
@@ -264,24 +224,16 @@
 	<FeatureTerrainBooleans/>
 </BonusInfo>
 <BonusInfo>
-		<Type>BONUS_IRIDESCENT_PYRAMIDS</Type>
-		<Description>TXT_KEY_BONUS_IRIDESCENT_PYRAMIDS</Description>
-		<Civilopedia>TXT_KEY_BONUS_IRIDESCENT_PYRAMIDS_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
+	<Type>BONUS_ISOTOPES1</Type>
+	<Description>TXT_KEY_BONUS_ISOTOPES1</Description>
+	<Civilopedia>TXT_KEY_BONUS_ISOTOPES1_PEDIA</Civilopedia>
+	<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
 	<BuildingType>NONE</BuildingType>
 	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
+		<YieldIntegerPair>
+			<YieldType>YIELD_ISOTOPES</YieldType>
+			<iValue>2</iValue>
+		</YieldIntegerPair>
 	</YieldChanges>
 	<iAIObjective>0</iAIObjective>
 	<iPlacementOrder>4</iPlacementOrder>
@@ -315,24 +267,16 @@
 	<FeatureTerrainBooleans/>
 </BonusInfo>
 <BonusInfo>
-		<Type>BONUS_LIMESTONE_SPIRE</Type>
-		<Description>TXT_KEY_BONUS_LIMESTONE_SPIRE</Description>
-		<Civilopedia>TXT_KEY_BONUS_LIMESTONE_SPIRE_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
+	<Type>BONUS_RARE_EARTHS1</Type>
+	<Description>TXT_KEY_BONUS_RARE_EARTHS1</Description>
+	<Civilopedia>TXT_KEY_BONUS_RARE_EARTHS1_PEDIA</Civilopedia>
+	<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
 	<BuildingType>NONE</BuildingType>
 	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
+		<YieldIntegerPair>
+			<YieldType>YIELD_RARE_EARTHS</YieldType>
+			<iValue>2</iValue>
+		</YieldIntegerPair>
 	</YieldChanges>
 	<iAIObjective>0</iAIObjective>
 	<iPlacementOrder>4</iPlacementOrder>
@@ -366,24 +310,16 @@
 	<FeatureTerrainBooleans/>
 </BonusInfo>
 <BonusInfo>
-		<Type>BONUS_ANTEDILUVIAN_CATACOMB</Type>
-		<Description>TXT_KEY_BONUS_ANTEDILUVIAN_CATACOMB</Description>
-		<Civilopedia>TXT_KEY_BONUS_ANTEDILUVIAN_CATACOMB_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
+	<Type>BONUS_CRYSTALLOIDS1</Type>
+	<Description>TXT_KEY_BONUS_CRYSTALLOIDS1</Description>
+	<Civilopedia>TXT_KEY_BONUS_CRYSTALLOIDS1_PEDIA</Civilopedia>
+	<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
 	<BuildingType>NONE</BuildingType>
 	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
+		<YieldIntegerPair>
+			<YieldType>YIELD_CRYSTALLOIDS</YieldType>
+			<iValue>2</iValue>
+		</YieldIntegerPair>
 	</YieldChanges>
 	<iAIObjective>0</iAIObjective>
 	<iPlacementOrder>4</iPlacementOrder>
@@ -417,24 +353,16 @@
 	<FeatureTerrainBooleans/>
 </BonusInfo>
 <BonusInfo>
-		<Type>BONUS_SACRED_GROVE</Type>
-		<Description>TXT_KEY_BONUS_SACRED_GROVE</Description>
-		<Civilopedia>TXT_KEY_BONUS_SACRED_GROVE_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
+	<Type>BONUS_NUCLEIC_ACIDS1</Type>
+	<Description>TXT_KEY_BONUS_NUCLEIC_ACIDS1</Description>
+	<Civilopedia>TXT_KEY_BONUS_NUCLEIC_ACIDS1_PEDIA</Civilopedia>
+	<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
 	<BuildingType>NONE</BuildingType>
 	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
+		<YieldIntegerPair>
+			<YieldType>YIELD_NUCLEIC_ACIDS</YieldType>
+			<iValue>2</iValue>
+		</YieldIntegerPair>
 	</YieldChanges>
 	<iAIObjective>0</iAIObjective>
 	<iPlacementOrder>4</iPlacementOrder>
@@ -468,24 +396,16 @@
 	<FeatureTerrainBooleans/>
 </BonusInfo>
 <BonusInfo>
-		<Type>BONUS_RUINED_BIOSPHERE</Type>
-		<Description>TXT_KEY_BONUS_RUINED_BIOSPHERE</Description>
-		<Civilopedia>TXT_KEY_BONUS_RUINED_BIOSPHERE_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
+	<Type>BONUS_AMINO_ACIDS1</Type>
+	<Description>TXT_KEY_BONUS_AMINO_ACIDS1</Description>
+	<Civilopedia>TXT_KEY_BONUS_AMINO_ACIDS1_PEDIA</Civilopedia>
+	<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
 	<BuildingType>NONE</BuildingType>
 	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
+		<YieldIntegerPair>
+			<YieldType>YIELD_AMINO_ACIDS</YieldType>
+			<iValue>2</iValue>
+		</YieldIntegerPair>
 	</YieldChanges>
 	<iAIObjective>0</iAIObjective>
 	<iPlacementOrder>4</iPlacementOrder>
@@ -519,24 +439,16 @@
 	<FeatureTerrainBooleans/>
 </BonusInfo>
 <BonusInfo>
-		<Type>BONUS_PLINTH_CIRCLE</Type>
-		<Description>TXT_KEY_BONUS_PLINTH_CIRCLE</Description>
-		<Civilopedia>TXT_KEY_BONUS_PLINTH_CIRCLE_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
+	<Type>BONUS_TISSUE_SAMPLES1</Type>
+	<Description>TXT_KEY_BONUS_TISSUE_SAMPLES1</Description>
+	<Civilopedia>TXT_KEY_BONUS_TISSUE_SAMPLES1_PEDIA</Civilopedia>
+	<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
 	<BuildingType>NONE</BuildingType>
 	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
+		<YieldIntegerPair>
+			<YieldType>YIELD_TISSUE_SAMPLES</YieldType>
+			<iValue>2</iValue>
+		</YieldIntegerPair>
 	</YieldChanges>
 	<iAIObjective>0</iAIObjective>
 	<iPlacementOrder>4</iPlacementOrder>
@@ -570,24 +482,16 @@
 	<FeatureTerrainBooleans/>
 </BonusInfo>
 <BonusInfo>
-		<Type>BONUS_SACRIFICIAL_PIT</Type>
-		<Description>TXT_KEY_BONUS_SACRIFICIAL_PIT</Description>
-		<Civilopedia>TXT_KEY_BONUS_SACRIFICIAL_PIT_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
+	<Type>BONUS_MICROBES1</Type>
+	<Description>TXT_KEY_BONUS_MICROBES1</Description>
+	<Civilopedia>TXT_KEY_BONUS_MICROBES1_PEDIA</Civilopedia>
+	<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
 	<BuildingType>NONE</BuildingType>
 	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
+		<YieldIntegerPair>
+			<YieldType>YIELD_MICROBES</YieldType>
+			<iValue>2</iValue>
+		</YieldIntegerPair>
 	</YieldChanges>
 	<iAIObjective>0</iAIObjective>
 	<iPlacementOrder>4</iPlacementOrder>
@@ -621,24 +525,16 @@
 	<FeatureTerrainBooleans/>
 </BonusInfo>
 <BonusInfo>
-		<Type>BONUS_OBSIDIAN_FACES</Type>
-		<Description>TXT_KEY_BONUS_OBSIDIAN_FACES</Description>
-		<Civilopedia>TXT_KEY_BONUS_OBSIDIAN_FACES_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
+	<Type>BONUS_DATACORES1</Type>
+	<Description>TXT_KEY_BONUS_DATACORES1</Description>
+	<Civilopedia>TXT_KEY_BONUS_DATACORES1_PEDIA</Civilopedia>
+	<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
 	<BuildingType>NONE</BuildingType>
 	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
+		<YieldIntegerPair>
+			<YieldType>YIELD_DATACORES</YieldType>
+			<iValue>2</iValue>
+		</YieldIntegerPair>
 	</YieldChanges>
 	<iAIObjective>0</iAIObjective>
 	<iPlacementOrder>4</iPlacementOrder>
@@ -672,24 +568,16 @@
 	<FeatureTerrainBooleans/>
 </BonusInfo>
 <BonusInfo>
-		<Type>BONUS_MALACHITE_IDOLS</Type>
-		<Description>TXT_KEY_BONUS_MALACHITE_IDOLS</Description>
-		<Civilopedia>TXT_KEY_BONUS_MALACHITE_IDOLS_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
+	<Type>BONUS_PROGENITOR_ARTIFACTS1</Type>
+	<Description>TXT_KEY_BONUS_PROGENITOR_ARTIFACTS1</Description>
+	<Civilopedia>TXT_KEY_BONUS_PROGENITOR_ARTIFACTS1_PEDIA</Civilopedia>
+	<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
 	<BuildingType>NONE</BuildingType>
 	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
+		<YieldIntegerPair>
+			<YieldType>YIELD_PROGENITOR_ARTIFACTS</YieldType>
+			<iValue>2</iValue>
+		</YieldIntegerPair>
 	</YieldChanges>
 	<iAIObjective>0</iAIObjective>
 	<iPlacementOrder>4</iPlacementOrder>
@@ -723,24 +611,16 @@
 	<FeatureTerrainBooleans/>
 </BonusInfo>
 <BonusInfo>
-		<Type>BONUS_CALCIFIED_BEING</Type>
-		<Description>TXT_KEY_BONUS_CALCIFIED_BEING</Description>
-		<Civilopedia>TXT_KEY_BONUS_CALCIFIED_BEING_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
+	<Type>BONUS_ALIEN_SPECIMENS1</Type>
+	<Description>TXT_KEY_BONUS_ALIEN_SPECIMENS1</Description>
+	<Civilopedia>TXT_KEY_BONUS_ALIEN_SPECIMENS1_PEDIA</Civilopedia>
+	<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
 	<BuildingType>NONE</BuildingType>
 	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
+		<YieldIntegerPair>
+			<YieldType>YIELD_ALIEN_SPECIMENS</YieldType>
+			<iValue>2</iValue>
+		</YieldIntegerPair>
 	</YieldChanges>
 	<iAIObjective>0</iAIObjective>
 	<iPlacementOrder>4</iPlacementOrder>
@@ -774,24 +654,16 @@
 	<FeatureTerrainBooleans/>
 </BonusInfo>
 <BonusInfo>
-		<Type>BONUS_OMINOUS_EFFIGY</Type>
-		<Description>TXT_KEY_BONUS_OMINOUS_EFFIGY</Description>
-		<Civilopedia>TXT_KEY_BONUS_OMINOUS_EFFIGY_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
+	<Type>BONUS_PRECIOUS_METALS1</Type>
+	<Description>TXT_KEY_BONUS_PRECIOUS_METALS1</Description>
+	<Civilopedia>TXT_KEY_BONUS_PRECIOUS_METALS1_PEDIA</Civilopedia>
+	<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
 	<BuildingType>NONE</BuildingType>
 	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
+		<YieldIntegerPair>
+			<YieldType>YIELD_PRECIOUS_METALS</YieldType>
+			<iValue>2</iValue>
+		</YieldIntegerPair>
 	</YieldChanges>
 	<iAIObjective>0</iAIObjective>
 	<iPlacementOrder>4</iPlacementOrder>
@@ -825,24 +697,16 @@
 	<FeatureTerrainBooleans/>
 </BonusInfo>
 <BonusInfo>
-		<Type>BONUS_ABANDONED_REDOUBT</Type>
-		<Description>TXT_KEY_BONUS_ABANDONED_REDOUBT</Description>
-		<Civilopedia>TXT_KEY_BONUS_ABANDONED_REDOUBT_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
+	<Type>BONUS_OPIATES1</Type>
+	<Description>TXT_KEY_BONUS_OPIATES1</Description>
+	<Civilopedia>TXT_KEY_BONUS_OPIATES1_PEDIA</Civilopedia>
+	<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
 	<BuildingType>NONE</BuildingType>
 	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
+		<YieldIntegerPair>
+			<YieldType>YIELD_OPIATES</YieldType>
+			<iValue>2</iValue>
+		</YieldIntegerPair>
 	</YieldChanges>
 	<iAIObjective>0</iAIObjective>
 	<iPlacementOrder>4</iPlacementOrder>
@@ -876,24 +740,16 @@
 	<FeatureTerrainBooleans/>
 </BonusInfo>
 <BonusInfo>
-		<Type>BONUS_EDIBLE_BERRIES</Type>
-		<Description>TXT_KEY_BONUS_EDIBLE_BERRIES</Description>
-		<Civilopedia>TXT_KEY_BONUS_EDIBLE_BERRIES_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
+	<Type>BONUS_XENOTOXINS1</Type>
+	<Description>TXT_KEY_BONUS_XENOTOXINS1</Description>
+	<Civilopedia>TXT_KEY_BONUS_XENOTOXINS1_PEDIA</Civilopedia>
+	<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
 	<BuildingType>NONE</BuildingType>
 	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
+		<YieldIntegerPair>
+			<YieldType>YIELD_XENOTOXINS</YieldType>
+			<iValue>2</iValue>
+		</YieldIntegerPair>
 	</YieldChanges>
 	<iAIObjective>0</iAIObjective>
 	<iPlacementOrder>4</iPlacementOrder>
@@ -927,24 +783,16 @@
 	<FeatureTerrainBooleans/>
 </BonusInfo>
 <BonusInfo>
-		<Type>BONUS_ALIEN_FUNGI</Type>
-		<Description>TXT_KEY_BONUS_ALIEN_FUNGI</Description>
-		<Civilopedia>TXT_KEY_BONUS_ALIEN_FUNGI_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
+	<Type>BONUS_BOTANICALS1</Type>
+	<Description>TXT_KEY_BONUS_BOTANICALS1</Description>
+	<Civilopedia>TXT_KEY_BONUS_BOTANICALS1_PEDIA</Civilopedia>
+	<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
 	<BuildingType>NONE</BuildingType>
 	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
+		<YieldIntegerPair>
+			<YieldType>YIELD_BOTANICALS</YieldType>
+			<iValue>2</iValue>
+		</YieldIntegerPair>
 	</YieldChanges>
 	<iAIObjective>0</iAIObjective>
 	<iPlacementOrder>4</iPlacementOrder>
@@ -978,24 +826,16 @@
 	<FeatureTerrainBooleans/>
 </BonusInfo>
 <BonusInfo>
-		<Type>BONUS_NATIVE_TUBERS</Type>
-		<Description>TXT_KEY_BONUS_NATIVE_TUBERS</Description>
-		<Civilopedia>TXT_KEY_BONUS_NATIVE_TUBERS_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
+	<Type>BONUS_HYDROCARBONS1</Type>
+	<Description>TXT_KEY_BONUS_HYDROCARBONS1</Description>
+	<Civilopedia>TXT_KEY_BONUS_HYDROCARBONS1_PEDIA</Civilopedia>
+	<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
 	<BuildingType>NONE</BuildingType>
 	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
+		<YieldIntegerPair>
+			<YieldType>YIELD_HYDROCARBONS</YieldType>
+			<iValue>2</iValue>
+		</YieldIntegerPair>
 	</YieldChanges>
 	<iAIObjective>0</iAIObjective>
 	<iPlacementOrder>4</iPlacementOrder>
@@ -1029,24 +869,16 @@
 	<FeatureTerrainBooleans/>
 </BonusInfo>
 <BonusInfo>
-		<Type>BONUS_NATIVE_RUMINANTS</Type>
-		<Description>TXT_KEY_BONUS_NATIVE_RUMINANTS</Description>
-		<Civilopedia>TXT_KEY_BONUS_NATIVE_RUMINANTS_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
+	<Type>BONUS_CLATHRATES1</Type>
+	<Description>TXT_KEY_BONUS_CLATHRATES1</Description>
+	<Civilopedia>TXT_KEY_BONUS_CLATHRATES1_PEDIA</Civilopedia>
+	<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
 	<BuildingType>NONE</BuildingType>
 	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
+		<YieldIntegerPair>
+			<YieldType>YIELD_CLATHRATES</YieldType>
+			<iValue>2</iValue>
+		</YieldIntegerPair>
 	</YieldChanges>
 	<iAIObjective>0</iAIObjective>
 	<iPlacementOrder>4</iPlacementOrder>
@@ -1080,1809 +912,16 @@
 	<FeatureTerrainBooleans/>
 </BonusInfo>
 <BonusInfo>
-		<Type>BONUS_NATIVE_UNGULATES</Type>
-		<Description>TXT_KEY_BONUS_NATIVE_UNGULATES</Description>
-		<Civilopedia>TXT_KEY_BONUS_NATIVE_UNGULATES_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
+	<Type>BONUS_CORE_SAMPLES1</Type>
+	<Description>TXT_KEY_BONUS_CORE_SAMPLES1</Description>
+	<Civilopedia>TXT_KEY_BONUS_CORE_SAMPLES1_PEDIA</Civilopedia>
+	<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
 	<BuildingType>NONE</BuildingType>
 	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_NATIVE_PINNIPEDS</Type>
-		<Description>TXT_KEY_BONUS_NATIVE_PINNIPEDS</Description>
-		<Civilopedia>TXT_KEY_BONUS_NATIVE_PINNIPEDS_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_NATIVE_OMNIVORES</Type>
-		<Description>TXT_KEY_BONUS_NATIVE_OMNIVORES</Description>
-		<Civilopedia>TXT_KEY_BONUS_NATIVE_OMNIVORES_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_ELECTROLYTIC_MOLLUSKS</Type>
-		<Description>TXT_KEY_BONUS_ELECTROLYTIC_MOLLUSKS</Description>
-		<Civilopedia>TXT_KEY_BONUS_ELECTROLYTIC_MOLLUSKS_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_MANTRAP_CLAMS</Type>
-		<Description>TXT_KEY_BONUS_MANTRAP_CLAMS</Description>
-		<Civilopedia>TXT_KEY_BONUS_MANTRAP_CLAMS_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_NATIVE_LUNGFISH</Type>
-		<Description>TXT_KEY_BONUS_NATIVE_LUNGFISH</Description>
-		<Civilopedia>TXT_KEY_BONUS_NATIVE_LUNGFISH_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_NATIVE_ARTHROPODS</Type>
-		<Description>TXT_KEY_BONUS_NATIVE_ARTHROPODS</Description>
-		<Civilopedia>TXT_KEY_BONUS_NATIVE_ARTHROPODS_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_NATIVE_RODENTS</Type>
-		<Description>TXT_KEY_BONUS_NATIVE_RODENTS</Description>
-		<Civilopedia>TXT_KEY_BONUS_NATIVE_RODENTS_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_INTELLIGENT_MAMMALS</Type>
-		<Description>TXT_KEY_BONUS_INTELLIGENT_MAMMALS</Description>
-		<Civilopedia>TXT_KEY_BONUS_INTELLIGENT_MAMMALS_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_NATIVE_EQUIDS</Type>
-		<Description>TXT_KEY_BONUS_NATIVE_EQUIDS</Description>
-		<Civilopedia>TXT_KEY_BONUS_NATIVE_EQUIDS_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_NATIVE_BIPEDS</Type>
-		<Description>TXT_KEY_BONUS_NATIVE_BIPEDS</Description>
-		<Civilopedia>TXT_KEY_BONUS_NATIVE_BIPEDS_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_NATIVE_BEETLES</Type>
-		<Description>TXT_KEY_BONUS_NATIVE_BEETLES</Description>
-		<Civilopedia>TXT_KEY_BONUS_NATIVE_BEETLES_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_EXOTIC_APHRODISIAC</Type>
-		<Description>TXT_KEY_BONUS_EXOTIC_APHRODISIAC</Description>
-		<Civilopedia>TXT_KEY_BONUS_EXOTIC_APHRODISIAC_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_SUBTERRANEAN_FUNGUS</Type>
-		<Description>TXT_KEY_BONUS_SUBTERRANEAN_FUNGUS</Description>
-		<Civilopedia>TXT_KEY_BONUS_SUBTERRANEAN_FUNGUS_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_NATIVE_MOSSES</Type>
-		<Description>TXT_KEY_BONUS_NATIVE_MOSSES</Description>
-		<Civilopedia>TXT_KEY_BONUS_NATIVE_MOSSES_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_COMMUNICATIONS_ARRAY</Type>
-		<Description>TXT_KEY_BONUS_COMMUNICATIONS_ARRAY</Description>
-		<Civilopedia>TXT_KEY_BONUS_COMMUNICATIONS_ARRAY_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_ORBITAL_PLATFORM</Type>
-		<Description>TXT_KEY_BONUS_ORBITAL_PLATFORM</Description>
-		<Civilopedia>TXT_KEY_BONUS_ORBITAL_PLATFORM_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_DERELICT_SATELLITE</Type>
-		<Description>TXT_KEY_BONUS_DERELICT_SATELLITE</Description>
-		<Civilopedia>TXT_KEY_BONUS_DERELICT_SATELLITE_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_GOLD_VEIN</Type>
-		<Description>TXT_KEY_BONUS_GOLD_VEIN</Description>
-		<Civilopedia>TXT_KEY_BONUS_GOLD_VEIN_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_COPPER_VEIN</Type>
-		<Description>TXT_KEY_BONUS_COPPER_VEIN</Description>
-		<Civilopedia>TXT_KEY_BONUS_COPPER_VEIN_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_KREEP</Type>
-		<Description>TXT_KEY_BONUS_KREEP</Description>
-		<Civilopedia>TXT_KEY_BONUS_KREEP_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_NATIVE_SHRUBS</Type>
-		<Description>TXT_KEY_BONUS_NATIVE_SHRUBS</Description>
-		<Civilopedia>TXT_KEY_BONUS_NATIVE_SHRUBS_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_NATURAL_GAS</Type>
-		<Description>TXT_KEY_BONUS_NATURAL_GAS</Description>
-		<Civilopedia>TXT_KEY_BONUS_NATURAL_GAS_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_OIL</Type>
-		<Description>TXT_KEY_BONUS_OIL</Description>
-		<Civilopedia>TXT_KEY_BONUS_OIL_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_IMPACT_CRATER</Type>
-		<Description>TXT_KEY_BONUS_IMPACT_CRATER</Description>
-		<Civilopedia>TXT_KEY_BONUS_IMPACT_CRATER_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_METEORITE</Type>
-		<Description>TXT_KEY_BONUS_METEORITE</Description>
-		<Civilopedia>TXT_KEY_BONUS_METEORITE_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_PALEONTOLOGY_SITE</Type>
-		<Description>TXT_KEY_BONUS_PALEONTOLOGY_SITE</Description>
-		<Civilopedia>TXT_KEY_BONUS_PALEONTOLOGY_SITE_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_GARGANTUAN_FOSSIL</Type>
-		<Description>TXT_KEY_BONUS_GARGANTUAN_FOSSIL</Description>
-		<Civilopedia>TXT_KEY_BONUS_GARGANTUAN_FOSSIL_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_ARCTIC_MOON</Type>
-		<Description>TXT_KEY_BONUS_ARCTIC_MOON</Description>
-		<Civilopedia>TXT_KEY_BONUS_ARCTIC_MOON_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_ARTIFACT_MOON</Type>
-		<Description>TXT_KEY_BONUS_ARTIFACT_MOON</Description>
-		<Civilopedia>TXT_KEY_BONUS_ARTIFACT_MOON_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_BARREN_MOON</Type>
-		<Description>TXT_KEY_BONUS_BARREN_MOON</Description>
-		<Civilopedia>TXT_KEY_BONUS_BARREN_MOON_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_PRIMORDIAL_MOON</Type>
-		<Description>TXT_KEY_BONUS_PRIMORDIAL_MOON</Description>
-		<Civilopedia>TXT_KEY_BONUS_PRIMORDIAL_MOON_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_VERDANT_MOON</Type>
-		<Description>TXT_KEY_BONUS_VERDANT_MOON</Description>
-		<Civilopedia>TXT_KEY_BONUS_VERDANT_MOON_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_AQUATIC_MOON</Type>
-		<Description>TXT_KEY_BONUS_AQUATIC_MOON</Description>
-		<Civilopedia>TXT_KEY_BONUS_AQUATIC_MOON_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_VOLCANIC_MOON</Type>
-		<Description>TXT_KEY_BONUS_VOLCANIC_MOON</Description>
-		<Civilopedia>TXT_KEY_BONUS_VOLCANIC_MOON_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
-	</YieldChanges>
-	<iAIObjective>0</iAIObjective>
-	<iPlacementOrder>4</iPlacementOrder>
-	<iConstAppearance>50</iConstAppearance>
-	<iMinAreaSize>3</iMinAreaSize>
-	<iMinLatitude>0</iMinLatitude>
-	<iMaxLatitude>90</iMaxLatitude>
-	<Rands>
-		<iRandApp1>25</iRandApp1>
-		<iRandApp2>25</iRandApp2>
-		<iRandApp3>0</iRandApp3>
-		<iRandApp4>0</iRandApp4>
-	</Rands>
-	<iPlayer>0</iPlayer>
-	<iTilesPer>50</iTilesPer>
-	<iMinLandPercent>0</iMinLandPercent>
-	<iUnique>0</iUnique>
-	<iGroupRange>0</iGroupRange>
-	<iGroupRand>0</iGroupRand>
-	<bArea>0</bArea>
-	<bHills>1</bHills>
-	<bFlatlands>1</bFlatlands>
-	<bNoRiverSide>0</bNoRiverSide>
-	<TerrainBooleans>
-		<TerrainBoolean>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-			<bTerrain>1</bTerrain>
-		</TerrainBoolean>
-	</TerrainBooleans>
-	<FeatureBooleans/>
-	<FeatureTerrainBooleans/>
-</BonusInfo>
-<BonusInfo>
-		<Type>BONUS_TOXIC_MOON</Type>
-		<Description>TXT_KEY_BONUS_TOXIC_MOON</Description>
-		<Civilopedia>TXT_KEY_BONUS_TOXIC_MOON_PEDIA</Civilopedia>
-		<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
-	<BuildingType>NONE</BuildingType>
-	<YieldChanges>
-			<YieldIntegerPair>
-				<YieldType>YIELD_NUTRIENTS</YieldType>
-				<iValue>-1</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_BIOPOLYMERS</YieldType>
-				<iValue>3</iValue>
-			</YieldIntegerPair>
-			<YieldIntegerPair>
-				<YieldType>YIELD_ACTINIDES</YieldType>
-				<iValue>1</iValue>
-			</YieldIntegerPair>
+		<YieldIntegerPair>
+			<YieldType>YIELD_CORE_SAMPLES</YieldType>
+			<iValue>2</iValue>
+		</YieldIntegerPair>
 	</YieldChanges>
 	<iAIObjective>0</iAIObjective>
 	<iPlacementOrder>4</iPlacementOrder>

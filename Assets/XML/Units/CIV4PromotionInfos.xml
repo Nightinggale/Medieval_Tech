@@ -3946,7 +3946,7 @@
 		</PromotionInfo>
 		<PromotionInfo>
 			<Type>PROMOTION_KNIGHT</Type>
-			<Description>Knighted</Description>
+			<Description>Honored</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereq>PROMOTION_VETERAN2</PromotionPrereq>
 			<PromotionPrereqOr1>NONE</PromotionPrereqOr1>

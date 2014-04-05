@@ -74,8 +74,8 @@
     </UnitArtInfo>
     <UnitArtInfo>
       <Type>ART_DEF_UNIT_BURGHER</Type>
-      <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,6,11</Button>
-      <FullLengthIcon>,Art/Interface/Screens/City_Management/Dragoon.dds</FullLengthIcon>
+      <Button>Art/Interface/Buttons/Units/burgher_button.dds</Button>
+      <FullLengthIcon>Art/Interface/Buttons/Units/burgherCM.dds</FullLengthIcon>
       <fScale>0.54</fScale>
       <fInterfaceScale>0.8</fInterfaceScale>
       <NIF>Art/Units/Burgher/BurgherAxe.nif</NIF>
@@ -91,8 +91,8 @@
     </UnitArtInfo>
     <UnitArtInfo>
       <Type>ART_DEF_UNIT_ARISTOCRAT</Type>
-      <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,6,11</Button>
-      <FullLengthIcon>,Art/Interface/Screens/City_Management/Dragoon.dds</FullLengthIcon>
+      <Button>Art/Interface/Buttons/Units/aristocrat_button.dds</Button>
+      <FullLengthIcon>Art/Interface/Buttons/Units/aristocratCM.dds</FullLengthIcon>
       <fScale>0.54</fScale>
       <fInterfaceScale>0.8</fInterfaceScale>
       <NIF>Art/Units/Aristocrat/AristocratSword.nif</NIF>
@@ -108,8 +108,8 @@
     </UnitArtInfo>
     <UnitArtInfo>
       <Type>ART_DEF_UNIT_VESTARCH</Type>
-      <Button>Art/Buttons/Units/squire.dds</Button>
-      <FullLengthIcon>Art/Buttons/Units/squireCM.dds</FullLengthIcon>
+      <Button>Art/Interface/Buttons/Units/vestarch_button.dds</Button>
+      <FullLengthIcon>Art/Interface/Buttons/Units/VestArchCM.dds</FullLengthIcon>
       <fScale>0.54</fScale>
       <fInterfaceScale>0.8</fInterfaceScale>
       <NIF>Art/Units/Vestarch/Vestarch.nif</NIF>
@@ -125,8 +125,8 @@
     </UnitArtInfo>
     <UnitArtInfo>
       <Type>ART_DEF_UNIT_ELDER</Type>
-      <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,6,11</Button>
-      <FullLengthIcon>,Art/Interface/Screens/City_Management/Dragoon.dds</FullLengthIcon>
+      <Button>Art/Interface/Buttons/Units/elder_button.dds</Button>
+      <FullLengthIcon>Art/Interface/Buttons/Units/ElderCM.dds</FullLengthIcon>
       <fScale>0.54</fScale>
       <fInterfaceScale>0.8</fInterfaceScale>
       <NIF>Art/Units/Elder/ElderScarf.nif</NIF>
@@ -142,8 +142,8 @@
     </UnitArtInfo>
     <UnitArtInfo>
       <Type>ART_DEF_UNIT_RECRUIT</Type>
-      <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,6,11</Button>
-      <FullLengthIcon>,Art/Interface/Screens/City_Management/Dragoon.dds</FullLengthIcon>
+      <Button>Art/Interface/Buttons/Units/recruit_button.dds</Button>
+      <FullLengthIcon>Art/Interface/Buttons/Units/recruitCM.dds</FullLengthIcon>
       <fScale>0.54</fScale>
       <fInterfaceScale>0.8</fInterfaceScale>
       <NIF>Art/Units/Recruit/Recruit.nif</NIF>
@@ -159,8 +159,8 @@
     </UnitArtInfo>
     <UnitArtInfo>
       <Type>ART_DEF_UNIT_EUNUCH</Type>
-      <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,6,11</Button>
-      <FullLengthIcon>,Art/Interface/Screens/City_Management/Dragoon.dds</FullLengthIcon>
+      <Button>Art/Interface/Buttons/Units/eunuch_button.dds</Button>
+      <FullLengthIcon>Art/Interface/Buttons/Units/enuchCM.dds</FullLengthIcon>
       <fScale>0.54</fScale>
       <fInterfaceScale>0.8</fInterfaceScale>
       <NIF>Art/Units/Eunuch/Eunuch.nif</NIF>
@@ -176,8 +176,8 @@
     </UnitArtInfo>
     <UnitArtInfo>
       <Type>ART_DEF_UNIT_CHAMBERLAIN</Type>
-      <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,6,11</Button>
-      <FullLengthIcon>,Art/Interface/Screens/City_Management/Dragoon.dds</FullLengthIcon>
+      <Button>Art/Interface/Buttons/Units/chamberlain_button.dds</Button>
+      <FullLengthIcon>Art/Interface/Buttons/Units/chamberlainCM.dds</FullLengthIcon>
       <fScale>0.54</fScale>
       <fInterfaceScale>0.8</fInterfaceScale>
       <NIF>Art/Units/Chamberlain/Chamberlain.nif</NIF>
@@ -669,8 +669,8 @@
 		</UnitArtInfo>
     <UnitArtInfo>
       <Type>ART_DEF_UNIT_SLAVE_WARRIOR</Type>
-      <Button>Art/Buttons/Units/slave.dds</Button>
-      <FullLengthIcon>Art/Buttons/Units/slaveCM.dds</FullLengthIcon>
+      <Button>Art/Interface/Buttons/Units/slavesoldier_button.dds</Button>
+      <FullLengthIcon>Art/Interface/Buttons/Units/slavesoldierCM.dds</FullLengthIcon>
       <fScale>0.54</fScale>
       <fInterfaceScale>0.8</fInterfaceScale>
       <NIF>Art/Units/lightspearman/barbarianspearman.nif</NIF>

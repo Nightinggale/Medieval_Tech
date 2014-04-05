@@ -15202,7 +15202,7 @@ bool CvPlayer::canChangeCivics(CivicTypes* paeNewCivics) const
 	}
 	else
 	{
-		if (isHuman() && getCivicInitalCosts(paeNewCivics) < getGold())
+		if (isHuman() && getCivicInitalCosts(paeNewCivics) > getGold())
 		{
 			return false;
 		}

@@ -6124,6 +6124,24 @@ bool CvPlayer::canDoCivics(CivicTypes eCivic, bool bProhitbitCheck) const
 			}
 		}
 
+		if (kCivicInfo.getRequiredInvention2() != NO_CIVIC)
+		{
+			if (getIdeasResearched((CivicTypes)kCivicInfo.getRequiredInvention()) == 0)
+			{
+				if (kCivicInfo.getRequiredInventionOr() != NO_CIVIC)
+				{
+					if (getIdeasResearched((CivicTypes)kCivicInfo.getRequiredInventionOr()) == 0)
+					{
+						return false;
+					}
+				}
+				else
+				{
+					return false;
+				}
+			}
+		}
+
 		if (!bProhitbitCheck)
 		{
 			for (int iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
@@ -15331,13 +15349,14 @@ void CvPlayer::changeCivics(CivicTypes* paeNewCivics, bool bForce)
 	}
 	else
 	{
-		//Uncomment when done testing
-		//setRevolutionTimer(std::max(1, ((100 + getAnarchyModifier()) * iMinTurns) / 100) + iAnarchyLength);
 		int iCost = getCivicInitalCosts(paeNewCivics);
 		changeGold(-iCost);
 	}
 
 	iAnarchyLength = getCivicAnarchyLength(paeNewCivics);
+
+	//Uncomment when done testing
+	setRevolutionTimer(std::max(1, ((100 + getAnarchyModifier()) * iMinTurns) / 100) + iAnarchyLength);
 
 	if (iAnarchyLength > 0)
 	{

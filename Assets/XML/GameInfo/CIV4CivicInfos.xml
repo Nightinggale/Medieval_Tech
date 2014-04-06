@@ -470,6 +470,7 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_MONARCHY</RequiredInvention>
       <UpkeepYields>
         <UpkeepYield>
           <YieldType>YIELD_GOLD</YieldType>
@@ -515,6 +516,7 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_FEUDALISM</RequiredInvention>
       <UpkeepYields>
         <UpkeepYield>
           <YieldType>YIELD_GOLD</YieldType>
@@ -575,6 +577,7 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_THEOLOGY</RequiredInvention>
       <UpkeepYields>
         <UpkeepYield>
           <YieldType>YIELD_GOLD</YieldType>
@@ -630,6 +633,7 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_CLOCK</RequiredInvention>
       <UpkeepYields>
         <UpkeepYield>
           <YieldType>YIELD_GOLD</YieldType>
@@ -680,6 +684,7 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_ROADS</RequiredInvention>
       <UpkeepYields>
         <UpkeepYield>
           <YieldType>YIELD_GOLD</YieldType>
@@ -717,6 +722,7 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_CODE_OF_LAWS</RequiredInvention>
       <UpkeepYields>
         <UpkeepYield>
           <YieldType>YIELD_GOLD</YieldType>
@@ -761,6 +767,7 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_STIRRUP</RequiredInvention>
       <UpkeepYields>
         <UpkeepYield>
           <YieldType>YIELD_GOLD</YieldType>
@@ -806,6 +813,7 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_ROADS</RequiredInvention>
       <UpkeepYields>
         <UpkeepYield>
           <YieldType>YIELD_GOLD</YieldType>
@@ -865,6 +873,7 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_FLYINGBUTRESS</RequiredInvention>
       <UpkeepYields>
         <UpkeepYield>
           <YieldType>YIELD_GOLD</YieldType>
@@ -945,6 +954,7 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_MANORIALISM</RequiredInvention>
       <UpkeepYields>
         <UpkeepYield>
           <YieldType>YIELD_GOLD</YieldType>
@@ -984,6 +994,7 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>TRADING_CURRENCY</RequiredInvention>
       <UpkeepYields>
         <UpkeepYield>
           <YieldType>YIELD_GOLD</YieldType>
@@ -1044,6 +1055,7 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>TRADING_GUILDS</RequiredInvention>
       <UpkeepYields>
         <UpkeepYield>
           <YieldType>YIELD_GOLD</YieldType>
@@ -1088,6 +1100,7 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_STONEWORK</RequiredInvention>
       <UpkeepYields>
         <UpkeepYield>
           <YieldType>YIELD_GOLD</YieldType>
@@ -1184,6 +1197,7 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_CONSTRUCTION</RequiredInvention>
       <UpkeepYields>
         <UpkeepYield>
           <YieldType>YIELD_GOLD</YieldType>
@@ -1226,6 +1240,7 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_ASTROLOGY</RequiredInvention>
       <UpkeepYields>
         <UpkeepYield>
           <YieldType>YIELD_GOLD</YieldType>
@@ -1275,6 +1290,7 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>TRADING_COMMUNE</RequiredInvention>
       <UpkeepYields>
         <UpkeepYield>
           <YieldType>YIELD_GOLD</YieldType>
@@ -1324,6 +1340,7 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_BLOCKPRINTING</RequiredInvention>
       <UpkeepYields>
         <UpkeepYield>
           <YieldType>YIELD_GOLD</YieldType>
@@ -1411,6 +1428,7 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_METALCASTING</RequiredInvention>
       <UpkeepYields>
         <UpkeepYield>
           <YieldType>YIELD_GOLD</YieldType>
@@ -1459,6 +1477,7 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_MOTTEANDBAILEY</RequiredInvention>
       <UpkeepYields>
         <UpkeepYield>
           <YieldType>YIELD_GOLD</YieldType>
@@ -1508,6 +1527,7 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_CALENDER</RequiredInvention>
       <UpkeepYields>
         <UpkeepYield>
           <YieldType>YIELD_GOLD</YieldType>
@@ -1557,6 +1577,7 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_CIVILSERVICE</RequiredInvention>
       <UpkeepYields>
         <UpkeepYield>
           <YieldType>YIELD_GOLD</YieldType>
@@ -3844,7 +3865,7 @@
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
 			<iX_Location>6</iX_Location>
 			<iY_Location>11</iY_Location>
-			<RequiredInvention>MEDIEVAL_TECH_FUEDALISM</RequiredInvention>
+			<RequiredInvention>MEDIEVAL_TECH_FEUDALISM</RequiredInvention>
 			<RequiredInvention2>MEDIEVAL_TECH_DRAMA</RequiredInvention2>
 			<RequiredInventionOr/>
 			<RequiredUnitType/>
@@ -4708,8 +4729,8 @@
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>NONE</CivicOptionType>
-			<Type>MEDIEVAL_TECH_FUEDALISM</Type>
-			<Description>Fuedalism</Description>
+			<Type>MEDIEVAL_TECH_FEUDALISM</Type>
+			<Description>Feudalism</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
 			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
 			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
@@ -4885,7 +4906,7 @@
 			<InventionCategory>MEDIEVAL_TECH</InventionCategory>
 			<iX_Location>11</iX_Location>
 			<iY_Location>12</iY_Location>
-			<RequiredInvention>MEDIEVAL_TECH_FUEDALISM</RequiredInvention>
+			<RequiredInvention>MEDIEVAL_TECH_FEUDALISM</RequiredInvention>
 			<RequiredInvention2>MEDIEVAL_TECH_PAPER</RequiredInvention2>
 			<RequiredInventionOr/>
 			<RequiredUnitType/>

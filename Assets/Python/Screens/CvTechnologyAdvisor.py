@@ -665,7 +665,8 @@ class CvTechnologyAdvisor:
 	def getHeight(self, yDiff, nFactor):
 		return ( ( nFactor + ( ( abs( yDiff ) - 1 ) * 6 ) ) * self.PIXEL_INCREMENT )
 	def drawArrows (self):
-
+		
+		
 		screen = self.getScreen()
 		player = gc.getPlayer(gc.getGame().getActivePlayer())
 		iLoop = 0
@@ -701,13 +702,13 @@ class CvTechnologyAdvisor:
 
 					#szTechPrereqBorderID = "TechPrereqBorderID" + str((i * 1000) + j)
 					#screen.addDDSGFCAt( szTechPrereqBorderID, "TechList", ArtFileMgr.getInterfaceArtInfo("TECH_TREE_BUTTON_BORDER").getPath(), iX + fX + 4, iY + 22, 32, 32, WidgetTypes.WIDGET_HELP_TECH_PREPREQ, eTech, -1, False )
-			if (gc.getCivicInfo(i).getCivicOptionType() != -1):
-				continue
-				
-			if gc.getCivicInfo(i).getInventionCategory() == -1:
-				continue
+			
 			if gc.getCivicInfo(i).getInventionCategory() != 1:
 				continue
+			if (gc.getCivicInfo(i).getCivicOptionType() != -1):
+				continue
+			#if gc.getCivicInfo(i).getInventionCategory() == -1:
+				#continue
 			j = 0
 			#
 			for j in range(2):

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by lcollins (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - New -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_BULLET_PEDIA</Tag>
+		<English>[ICON_BULLET]</English>
+		<French>[ICON_BULLET]</French>
+		<German>[ICON_BULLET]</German>
+		<Italian>[ICON_BULLET]</Italian>
+		<Spanish>[ICON_BULLET]</Spanish>
+	</TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_UNIT_EDUCATE_HONORED_CLASS</Tag>
+    <English>[ICON_BULLET][LINK=PROMOTION_KNIGHT]Honored[\LINK] when promoted to [LINK=literal]%s1_Unit[\LINK]</English>
+    <French>[ICON_BULLET]Educates to [LINK=literal]%s1_Unit[\LINK]</French>
+    <German>[ICON_BULLET]Educates to [LINK=literal]%s1_Unit[\LINK]</German>
+    <Italian>[ICON_BULLET]Educates to [LINK=literal]%s1_Unit[\LINK]</Italian>
+    <Spanish>[ICON_BULLET]Educates to [LINK=literal]%s1_Unit[\LINK]</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_WORKFORCE_EDUCATION_UNIT</Tag>
+    <English>[ICON_BULLET]Educates to [LINK=literal]%s1_Unit[\LINK] while working in your settlements</English>
+    <French>[ICON_BULLET]Educates to [LINK=literal]%s1_Unit[\LINK]</French>
+    <German>[ICON_BULLET]Educates to [LINK=literal]%s1_Unit[\LINK]</German>
+    <Italian>[ICON_BULLET]Educates to [LINK=literal]%s1_Unit[\LINK]</Italian>
+    <Spanish>[ICON_BULLET]Educates to [LINK=literal]%s1_Unit[\LINK]</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_UNIT_EDUCATION_CLASS</Tag>
+    <English>[ICON_BULLET]Educates to [LINK=literal]%s1_class[\LINK] from producing %F2</English>
+    <French>[ICON_BULLET]Educates to %s1_class</French>
+    <German>[ICON_BULLET]Educates to %s1_class</German>
+    <Italian>[ICON_BULLET]Educates to %s1_class</Italian>
+    <Spanish>[ICON_BULLET]Educates to %s1_class</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_UNIT_EDUCATION_CLASS_ALSO</Tag>
+    <English>[ICON_BULLET]Also, Educates to [LINK=literal]%s1_class[\LINK] from producing %F2</English>
+    <French>[ICON_BULLET]Educates to %s1_class</French>
+    <German>[ICON_BULLET]Educates to %s1_class</German>
+    <Italian>[ICON_BULLET]Educates to %s1_class</Italian>
+    <Spanish>[ICON_BULLET]Educates to %s1_class</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_REHIBLILITATE_EDUCATION_UNIT</Tag>
+    <English>[ICON_BULLET]Rehabilitates to [LINK=literal]%s1_Unit[\LINK] from [LINK=BUILDING_MANOR_COURT]Manor Court[\LINK] or [LINK=BUILDING_COURTHOUSE]Courthouse[\LINK]</English>
+    <French>[ICON_BULLET]Rehabilitates to [LINK=literal]%s1_Unit[\LINK]</French>
+    <German>[ICON_BULLET]Rehabilitates to [LINK=literal]%s1_Unit[\LINK]</German>
+    <Italian>[ICON_BULLET]Rehabilitates to [LINK=literal]%s1_Unit[\LINK]</Italian>
+    <Spanish>[ICON_BULLET]Rehabilitates to [LINK=literal]%s1_Unit[\LINK]</Spanish>
+  </TEXT>
+</Civ4GameText>

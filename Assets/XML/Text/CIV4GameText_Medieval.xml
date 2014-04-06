@@ -6,7 +6,7 @@
 <!-- Game Text - New -->
 <Civ4GameText xmlns="http://www.firaxis.com">
 	<TEXT>
-		<Tag>TXT_KEY</Tag>
+		<Tag>TXT_KEY_BULLET_ONLY</Tag>
 		<English>[ICON_BULLET]</English>
 		<French>[ICON_BULLET]</French>
 		<German>[ICON_BULLET]</German>
@@ -1376,14 +1376,6 @@
 		<German>[ICON_BULLET]%D1_Bonus%% from Fealty</German>
 		<Italian>[ICON_BULLET]%D1_Bonus%% from Fealty</Italian>
 		<Spanish>[ICON_BULLET]%D1_Bonus%% from Fealty</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_EDUCATION_CLASS</Tag>
-		<English>[ICON_BULLET]Educates to %s1_class</English>
-		<French>[ICON_BULLET]Educates to %s1_class</French>
-		<German>[ICON_BULLET]Educates to %s1_class</German>
-		<Italian>[ICON_BULLET]Educates to %s1_class</Italian>
-		<Spanish>[ICON_BULLET]Educates to %s1_class</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FRIST_TO_RESEARCH_UNIT_CLASS</Tag>

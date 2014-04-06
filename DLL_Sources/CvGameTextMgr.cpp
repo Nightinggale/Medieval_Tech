@@ -4391,7 +4391,10 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
 	FAssert(GC.getGameINLINE().getActivePlayer() != NO_PLAYER || !bPlayerContext);
     if (bPlayerContext || !bCivilopediaText)
     {
-        eCivilization = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getCivilizationType();
+		if (GC.getGameINLINE().getActivePlayer() != NO_PLAYER)
+		{
+			eCivilization = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getCivilizationType();
+		}
     }
 
 	if (!bSkipName)
@@ -5567,11 +5570,47 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_CAN_NOT_FOUND"));
 	}
+	bool bAlso = false;
+	if (kUnitInfo.getLaborForceUnitClass() != NO_UNITCLASS)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_WORKFORCE_EDUCATION_UNIT", GC.getUnitClassInfo((UnitClassTypes)kUnitInfo.getLaborForceUnitClass()).getTextKeyWide()));
+		bAlso = true;
+	}
 
     if (kUnitInfo.getEducationUnitClass() != NO_UNITCLASS)
 	{
 		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_EDUCATION_CLASS", GC.getUnitClassInfo((UnitClassTypes)kUnitInfo.getEducationUnitClass()).getTextKeyWide()));
+		if (bAlso && bCivilopediaText)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_UNIT_EDUCATION_CLASS_ALSO", GC.getUnitClassInfo((UnitClassTypes)kUnitInfo.getEducationUnitClass()).getTextKeyWide(), GC.getYieldInfo(YIELD_EDUCATION).getChar()));
+		}
+		else
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_UNIT_EDUCATION_CLASS", GC.getUnitClassInfo((UnitClassTypes)kUnitInfo.getEducationUnitClass()).getTextKeyWide(), GC.getYieldInfo(YIELD_EDUCATION).getChar()));
+		}
+		bAlso = true;
+	}
+
+	if (kUnitInfo.getKnightDubbingWeight() > 0)
+	{
+		szBuffer.append(NEWLINE);
+		if (bAlso && bCivilopediaText)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_UNIT_EDUCATION_CLASS_ALSO", GC.getUnitClassInfo((UnitClassTypes)kUnitInfo.getEducationUnitClass()).getTextKeyWide(), GC.getYieldInfo(YIELD_BELLS).getChar()));
+		}
+		else
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_UNIT_EDUCATION_CLASS", GC.getUnitClassInfo((UnitClassTypes)kUnitInfo.getEducationUnitClass()).getTextKeyWide(), GC.getYieldInfo(YIELD_BELLS).getChar()));
+		}
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_EDUCATE_HONORED_CLASS", GC.getUnitClassInfo((UnitClassTypes)kUnitInfo.getEducationUnitClass()).getTextKeyWide()));
+	}
+
+	if (kUnitInfo.getRehibilitateUnitClass() != NO_UNITCLASS)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_REHIBLILITATE_EDUCATION_UNIT", GC.getUnitClassInfo((UnitClassTypes)kUnitInfo.getRehibilitateUnitClass()).getTextKeyWide()));
 	}
 
 	if (kUnitInfo.getTradeBonus() > 0)

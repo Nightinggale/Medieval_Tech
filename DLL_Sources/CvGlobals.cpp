@@ -688,6 +688,23 @@ CvInfoBase& CvGlobals::getHints(int i)
 	return *(m_paHints[i]);
 }
 
+/// language selection - start - Nightinggale
+int CvGlobals::getNumLanguageInfos()
+{
+	return (int)m_paLanguages.size();
+}
+
+std::vector<LanguageInfo*>& CvGlobals::getLanguageInfos()
+{
+	return m_paLanguages;
+}
+
+LanguageInfo& CvGlobals::getLanguageInfo(int i)
+{
+	return *(m_paLanguages[i]);
+}
+/// language selection - end - Nightinggale
+
 int CvGlobals::getNumMainMenus()
 {
 	return (int)m_paMainMenus.size();

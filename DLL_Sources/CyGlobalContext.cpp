@@ -497,3 +497,10 @@ void CyGlobalContext::reloadSpecialBuildings()
 	GC.reloadSpecialBuildings();
 }
 /// special building placement xml - end - Nightinggale
+
+/// language selection - start - Nightinggale
+LanguageInfo* CyGlobalContext::getLanguageInfo(int i) const
+{
+	return (i>=0 && i<GC.getNumLanguageInfos()) ? &GC.getLanguageInfo(i) : NULL;
+}
+/// language selection - end - Nightinggale

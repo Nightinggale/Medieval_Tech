@@ -114,5 +114,10 @@ void CyGlobalContextPythonInterface1(python::class_<CyGlobalContext>& x)
 
 		.def("getNumActionInfos", &CyGlobalContext::getNumActionInfos, "() - Total Action Infos XML\\Units\\CIV4ActionInfos.xml")
 		.def("getActionInfo", &CyGlobalContext::getActionInfo, python::return_value_policy<python::reference_existing_object>(), "(ActionID) - CvInfo for ActionID")
+	
+		/// language selection - start - Nightinggale
+		.def("getNumLanguageInfos", &CyGlobalContext::getNumLanguageInfos, "() - Total Feature Infos XML\\Terrain\\CIV4FeatureInfos.xml")
+		.def("getLanguageInfo", &CyGlobalContext::getLanguageInfo, python::return_value_policy<python::reference_existing_object>(), "(FeatureID) - CvInfo for FeatureID")
+		/// language selection - end - Nightinggale
 	;
 }

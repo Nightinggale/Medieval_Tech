@@ -309,7 +309,10 @@ void CyInfoPythonInterface3()
 	python::class_<CvGameText, python::bases<CvInfoBase> >("CvGameText")
 		.def("getText", &CvGameText::pyGetText, "wstring ()")
 		.def("setText", &CvGameText::setText, "void (wstring)")
-		.def("getNumLanguages", &CvGameText::getNumLanguages, "int ()")
+		/// language selection - start - Nightinggale
+		//.def("getNumLanguages", &CvGameText::getNumLanguages, "int ()")
+		.def("getNumLanguages", &CvGameText::getNumLanguagesReal, "int ()")
+		/// language selection - end - Nightinggale
 		;
 	python::class_<CvDiplomacyTextInfo, python::bases<CvInfoBase> >("CvDiplomacyTextInfo")
 		.def("getResponse", &CvDiplomacyTextInfo::getResponse,  python::return_value_policy<python::reference_existing_object>(), "Response (int iNum)")

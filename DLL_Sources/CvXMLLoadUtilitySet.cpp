@@ -412,6 +412,13 @@ void CvXMLLoadUtility::loadXMLFile(XMLFileNames eFile)
 		LoadGlobalClassInfo(GC.getInvisibleInfo(), "CIV4InvisibleInfos", "BasicInfos", "Civ4InvisibleInfos/InvisibleInfos/InvisibleInfo", NULL);
 		FAssertMsg(GC.getNumInvisibleInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
 	}
+	/// language selection - start - Nightinggale
+	else if (eFile == XML_FILE_CIV4LanguageInfos)
+	{
+		LoadGlobalClassInfo(GC.getLanguageInfos(), "CIV4LanguageInfos", "GameInfo", "CIV4LanguageInfos/LanguageInfos/LanguageInfo", NULL);
+		FAssertMsg(GC.getNumLanguageInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	/// language selection - end - Nightinggale
 	else if (eFile == XML_FILE_CIV4TerrainSettings)
 	{
 		LoadGlobalClassInfo(GC.getLandscapeInfo(), "CIV4TerrainSettings", "Terrain", "Civ4TerrainSettings/LandscapeInfos/LandscapeInfo", NULL);
@@ -1329,6 +1336,29 @@ bool CvXMLLoadUtility::SetGlobalArtDefines()
 //------------------------------------------------------------------------------------------------------
 bool CvXMLLoadUtility::LoadGlobalText()
 {
+	/// language selection - start - Nightinggale
+	{
+		// make sure we have ISO code and not index
+		CvGameText::setCurrentLanguage(GAMETEXT.getCurrentLanguage());
+
+		// set language tag
+		int iLanguage = GAMETEXT.getCurrentLanguage();
+
+		// init string to English as this is the language it will use when ISO code isn't in XML
+		CvString szLanguage("English");
+
+		for (int iIndex = 0; iIndex < GC.getNumLanguageInfos(); iIndex++)
+		{
+			if (iLanguage == GC.getLanguageInfo(iIndex).getCodeInt())
+			{
+				szLanguage = GC.getLanguageInfo(iIndex).getName();
+				break;
+			}
+		}
+		CvGameText::setLanguage(szLanguage);
+	}
+	/// language selection - end - Nightinggale
+
 	CvCacheObject* cache = gDLL->createGlobalTextCacheObject("GlobalText.dat");	// cache file name
 	if (!gDLL->cacheRead(cache))
 	{
@@ -2080,9 +2110,21 @@ void CvXMLLoadUtility::SetGameText(const char* szTextGroup, const char* szTagNam
 		for (i=0; i < iNumVals; i++)
 		{
 			CvGameText textInfo;
-			textInfo.read(this);
-
-			gDLL->addText(textInfo.getType() /*id*/, textInfo.getText(), textInfo.getGender(), textInfo.getPlural());
+			/// language selection - start - Nightinggale
+			//textInfo.read(this);
+			if (!textInfo.read(this))
+			{
+				// print a generic error message telling which string it failed to load
+				char	szMessage[1024];
+				sprintf( szMessage, "failed to load %s\n Current XML file is: %s", textInfo.getType(), GC.getCurrentXMLFile().GetCString());
+				gDLL->MessageBox(szMessage, "XML Error");
+			}
+			else
+			/// language selection - end - Nightinggale
+			{
+				gDLL->addText(textInfo.getType() /*id*/, textInfo.getText(), textInfo.getGender(), textInfo.getPlural());
+			}
+				
 			if (!gDLL->getXMLIFace()->NextSibling(m_pFXml) && i!=iNumVals-1)
 			{
 				char	szMessage[1024];
@@ -2789,6 +2831,10 @@ DllExport bool CvXMLLoadUtility::LoadPlayerOptions()
 
 	// hardcode NONE to -1 when reading XML files
 	GC.setInfoTypeFromString("NONE", -1);
+
+	/// language selection - start - Nightinggale
+	loadXMLFile(XML_FILE_CIV4LanguageInfos);
+	/// language selection - end - Nightinggale
 
 	// load options and graphic files
 	loadXMLFile(XML_FILE_CIV4PlayerOptionInfos);

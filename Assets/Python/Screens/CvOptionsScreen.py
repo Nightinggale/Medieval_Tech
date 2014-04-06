@@ -328,7 +328,10 @@ class CvOptionsScreen:
 
 		aszDropdownElements = ()
 		for i in range(CvGameText().getNumLanguages()):
-			szKey = "TXT_KEY_LANGUAGE_%d" % i
+			# language selection - start - Nightinggale
+			#szKey = "TXT_KEY_LANGUAGE_%d" % i
+			szKey = gc.getLanguageInfo(i).getName()
+			# language selection - end - Nightinggale
 			aszDropdownElements = aszDropdownElements + (localText.getText(szKey, ()),)
 
 		szCallbackFunction = "handleLanguagesDropdownBoxInput"

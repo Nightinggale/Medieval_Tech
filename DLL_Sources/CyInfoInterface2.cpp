@@ -283,4 +283,9 @@ void CyInfoPythonInterface2()
 		.def("isTerrain", &CvFeatureInfo::isTerrain, "bool (int i)")
 		.def("getNumVarieties", &CvFeatureInfo::getNumVarieties, "int ()")
 		;
+	/// language selection - start - Nightinggale
+	python::class_<LanguageInfo, python::bases<CvInfoBase> >("LanguageInfo")
+		.def("getName", &LanguageInfo::getName, "string ()")
+		;
+	/// language selection - end - Nightinggale
 }

@@ -1127,4 +1127,18 @@
 	<ElementType name="Civ4FatherPointInfos" content="eltOnly">
 		<element type="FatherPointInfos"/>
 	</ElementType>
+	
+	<!-- language selection - start - Nightinggale -->
+	<ElementType name="Code" content="textOnly"/>
+	<ElementType name="LanguageInfo" content="eltOnly">
+		<element type="Name"/>
+		<element type="Code"/>
+	</ElementType>
+	<ElementType name="LanguageInfos" content="eltOnly">
+		<element type="LanguageInfo" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="CIV4LanguageInfos" content="eltOnly">
+		<element type="LanguageInfos" maxOccurs="*"/>
+	</ElementType>
+	<!-- language selection - end - Nightinggale -->
 </Schema>

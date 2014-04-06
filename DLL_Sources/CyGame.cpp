@@ -13,6 +13,9 @@
 #include "CyReplayInfo.h"
 #include "CvReplayInfo.h"
 #include "CyPlot.h"
+
+#include "CvInfos.h"
+
 CyGame::CyGame() : m_pGame(NULL)
 {
 	m_pGame = &GC.getGameINLINE();
@@ -584,11 +587,30 @@ bool CyGame::isPitbossHost() const				// remove once CvApp is exposed
 }
 int CyGame::getCurrentLanguage() const				// remove once CvApp is exposed
 {
-	return gDLL->getCurrentLanguage();
+	/// language selection - start - Nightinggale
+	//	return gDLL->getCurrentLanguage();
+
+	// return the index to the language rather than the ISO code
+	int iLanguage = gDLL->getCurrentLanguage();
+	for (int iIndex = 0; iIndex < GC.getNumLanguageInfos(); iIndex++)
+	{
+		if (iLanguage == GC.getLanguageInfo(iIndex).getCodeInt())
+		{
+			return iIndex;
+		}
+	}
+	// failure to detect language (shouldn't be possible)
+	// use first language
+	FAssertMsg(false, "python requests non-existing language");
+	return 0;
+	/// language selection - end - Nightinggale
 }
 void CyGame::setCurrentLanguage(int iNewLanguage)			// remove once CvApp is exposed
 {
-	gDLL->setCurrentLanguage(iNewLanguage);
+	/// language selection - start - Nightinggale
+	//gDLL->setCurrentLanguage(iNewLanguage);
+	CvGameText::setCurrentLanguage(iNewLanguage);
+	/// language selection - end - Nightinggale
 }
 int CyGame::getReplayMessageTurn(int i) const
 {

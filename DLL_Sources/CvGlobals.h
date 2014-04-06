@@ -113,6 +113,9 @@ class CvFatherPointInfo;
 class CvUnitArtStyleTypeInfo;
 //Androrc End
 class CvMainMenuInfo;
+/// language selection - start - Nightinggale
+class LanguageInfo;
+/// language selection - end - Nightinggale
 
 
 class CvGlobals
@@ -229,6 +232,12 @@ public:
 	DllExport int getNumHints();
 	DllExport std::vector<CvInfoBase*>& getHints();
 	DllExport CvInfoBase& getHints(int i);
+
+	/// language selection - start - Nightinggale
+	int getNumLanguageInfos();
+	std::vector<LanguageInfo*>& getLanguageInfos();
+	LanguageInfo& getLanguageInfo(int i);
+	/// language selection - end - Nightinggale
 
 	DllExport int getNumMainMenus();
 	DllExport std::vector<CvMainMenuInfo*>& getMainMenus();
@@ -849,6 +858,9 @@ protected:
 	std::vector<CvColorInfo*> m_paColorInfo;
 	std::vector<CvPlayerColorInfo*> m_paPlayerColorInfo;
 	std::vector<CvInfoBase*> m_paHints;
+	/// language selection - start - Nightinggale
+	std::vector<LanguageInfo*> m_paLanguages;
+	/// language selection - end - Nightinggale
 	std::vector<CvMainMenuInfo*> m_paMainMenus;
 	std::vector<CvTerrainInfo*> m_paTerrainInfo;
 	std::vector<CvLandscapeInfo*> m_paLandscapeInfo;

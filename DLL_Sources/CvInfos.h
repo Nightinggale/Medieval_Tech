@@ -3892,8 +3892,33 @@ protected:
 	CvWString m_szText;
 	CvWString m_szGender;
 	CvWString m_szPlural;
-	static int NUM_LANGUAGES;
+
+	/// language selection - start - Nightinggale
+public:
+	int getNumLanguagesReal() const; // used for list generation
+	static void setLanguage(const CvString& szLanguage);
+	static void setCurrentLanguage(int iLanguage);
+protected:
+	static TCHAR* m_acLanguage;
+	/// language selection - end - Nightinggale
 };
+
+/// language selection - start - Nightinggale
+class LanguageInfo : public CvInfoBase
+{
+public:
+	LanguageInfo();
+	std::string getName() const;
+	CvString getCode() const;
+	int getCodeInt() const;
+
+	bool read(CvXMLLoadUtility* pXML);
+protected:
+	CvString m_szName;
+	CvString m_szCode;
+	int m_iCode;
+};
+/// language selection - end - Nightinggale
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //

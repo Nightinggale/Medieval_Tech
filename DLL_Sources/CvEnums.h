@@ -2911,6 +2911,9 @@ enum XMLFileNames
 	XML_FILE_CIV4InterfaceModeInfos,
 	XML_FILE_CIV4InvisibleInfos,
 	XML_FILE_CIV4TerrainSettings,
+	/// language selection - start - Nightinggale
+	XML_FILE_CIV4LanguageInfos,
+	/// language selection - end - Nightinggale
 	XML_FILE_CIV4LeaderHeadInfos,
 	XML_FILE_CIV4MPOptionInfos,
 	XML_FILE_CIV4MainMenus,

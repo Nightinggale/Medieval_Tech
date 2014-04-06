@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!-- Language Infos -->
+<!-- Languages appear ingame in the same order as written here -->
+<!-- Name: the name of the language in ENGLISH -->
+<!-- Code: the ISO 639-2 code for the language -->
+
+<!-- The game will then pick the line from TEXT XML files with the same tag as the name here -->
+<!-- English is used as fallback language -->
+
+<!-- Code is used to generate a unique int for each language to be able to tell them apart -->
+<!-- http://en.wikipedia.org/wiki/List_of_ISO_639-2_codes -->
+<!-- Use the leftmost code if multiple codes are available -->
+
+<!-- Written by Nightinggale -->
+
+<CIV4LanguageInfos xmlns="x-schema:CIV4GameInfoSchema.xml">
+	<LanguageInfos>
+		<LanguageInfo>
+			<Name>English</Name>
+			<Code>eng</Code>
+		</LanguageInfo>
+		<LanguageInfo>
+			<Name>French</Name>
+			<Code>fra</Code>
+		</LanguageInfo>
+		<LanguageInfo>
+			<Name>German</Name>
+			<Code>ger</Code>
+		</LanguageInfo>
+		<LanguageInfo>
+			<Name>Italian</Name>
+			<Code>ita</Code>
+		</LanguageInfo>
+		<LanguageInfo>
+			<Name>Spanish</Name>
+			<Code>spa</Code>
+		</LanguageInfo>
+	</LanguageInfos>
+</CIV4LanguageInfos>

@@ -12921,14 +12921,41 @@ bool CvLandscapeInfo::read(CvXMLLoadUtility* pXML)
 // CvGameText
 //////////////////////////////////////////////////////////////////////////
 // static
-int CvGameText::NUM_LANGUAGES = 0;
+/// language selection - start - Nightinggale
+TCHAR* CvGameText::m_acLanguage = NULL;
+/// language selection - end - Nightinggale
+
 int CvGameText::getNumLanguages() const
 {
-	return NUM_LANGUAGES;
+	//return NUM_LANGUAGES;
+	/// language selection - start - Nightinggale
+
+	// exe exposed getNumLanguages
+
+	// return the highest possible language, which is zzz
+	// the exe accepts languages from 0 to this (return value - 1)
+	int iVal = 0;
+	for (int i=0; i<3; i++)
+	{
+		iVal = iVal << 8;
+		iVal |= 'z';
+	}
+	iVal++;
+	return iVal;
+	/// language selection - end - Nightinggale
 }
+
+/// language selection - start - Nightinggale
+int CvGameText::getNumLanguagesReal() const
+{
+	// python exposed getNumLanguages
+	return GC.getNumLanguageInfos();
+}
+/// language selection - end - Nightinggale
+
 void CvGameText::setNumLanguages(int iNum)
 {
-	NUM_LANGUAGES = iNum;
+	//NUM_LANGUAGES = iNum;
 }
 CvGameText::CvGameText() :
 	m_szGender("N"),
@@ -12943,8 +12970,12 @@ void CvGameText::setText(const wchar* szText)
 {
 	m_szText = szText;
 }
+
+/// language selection - start - Nightinggale
 bool CvGameText::read(CvXMLLoadUtility* pXML)
 {
+	// total rewrite of the vanilla function of the same name
+
 	CvString szTextVal;
 	CvWString wszTextVal;
 	if (!CvInfoBase::read(pXML))
@@ -12954,52 +12985,153 @@ bool CvGameText::read(CvXMLLoadUtility* pXML)
 	gDLL->getXMLIFace()->SetToChild(pXML->GetXML()); // Move down to Child level
 	pXML->GetXmlVal(m_szType);		// TAG
 
-	static const int iMaxNumLanguages = GC.getDefineINT("MAX_NUM_LANGUAGES"); // has to be uncached
-	int iNumLanguages = NUM_LANGUAGES ? NUM_LANGUAGES : iMaxNumLanguages + 1;
-	int j=0;
-	for (j = 0; j < iNumLanguages; j++)
+	if (gDLL->getXMLIFace()->LocateFirstSiblingNodeByTagName(pXML->GetXML(), "English"))
 	{
-		pXML->SkipToNextVal();	// skip comments
-		if (!gDLL->getXMLIFace()->NextSibling(pXML->GetXML()) || j == iMaxNumLanguages)
+		if (!pXML->GetChildXmlValByName(wszTextVal, "Text"))
 		{
-			NUM_LANGUAGES = j;
-			break;
+			pXML->GetXmlVal(wszTextVal);
 		}
-		if (j == GAMETEXT.getCurrentLanguage()) // Only add appropriate language Text
+	}
+	if (wszTextVal.empty())
+	{
+		return false;
+	}
+
+	bool bFound = false;
+
+	// loop loosely based on loop for the same purpose in C2C
+	for (int iAttempt = 0 ; iAttempt < 2 && !bFound ; iAttempt++)
+	{
+		TCHAR* acLanguage = iAttempt == 0 ? m_acLanguage : "English";
+		if (!gDLL->getXMLIFace()->LocateFirstSiblingNodeByTagName(pXML->GetXML(), acLanguage))
 		{
-			// TEXT
-			if (pXML->GetChildXmlValByName(wszTextVal, "Text"))
+			continue;
+		}
+		
+		if (!pXML->GetChildXmlValByName(wszTextVal, "Text"))
+		{
+			pXML->GetXmlVal(wszTextVal);
+		}
+		if (!wszTextVal.empty())
+		{
+			szTextVal.Copy(wszTextVal);
+			if (szTextVal != m_szType)
 			{
 				setText(wszTextVal);
-			}
-			else
-			{
-				pXML->GetXmlVal(wszTextVal);
-				setText(wszTextVal);
-				if (NUM_LANGUAGES > 0)
-				{
-					break;
-				}
-			}
-			// GENDER
-			if (pXML->GetChildXmlValByName(wszTextVal, "Gender"))
-			{
-				setGender(wszTextVal);
-			}
-			// PLURAL
-			if (pXML->GetChildXmlValByName(wszTextVal, "Plural"))
-			{
-				setPlural(wszTextVal);
-			}
-			if (NUM_LANGUAGES > 0)
-			{
-				break;
+				bFound = true;
 			}
 		}
 	}
+
+	// add gender and plural to the found string
+	if (bFound && pXML->GetChildXmlValByName(wszTextVal, "Text"))
+	{
+		// vanilla code for gender and plural
+
+		// GENDER
+		if (pXML->GetChildXmlValByName(wszTextVal, "Gender"))
+		{
+			setGender(wszTextVal);
+		}
+		// PLURAL
+		if (pXML->GetChildXmlValByName(wszTextVal, "Plural"))
+		{
+			setPlural(wszTextVal);
+		}
+	}
 	gDLL->getXMLIFace()->SetToParent(pXML->GetXML()); // Move back up to Parent
+	return bFound;
+}
+
+void CvGameText::setLanguage(const CvString& szLanguage)
+{
+	SAFE_DELETE_ARRAY(m_acLanguage);
+	m_acLanguage = new TCHAR[szLanguage.GetLength() + 1];
+	sprintf(m_acLanguage, "%s", szLanguage.c_str());
+	m_acLanguage[szLanguage.GetLength()] = 0; // NULL termination
+
+	for (int iIndex = 0; iIndex < GC.getNumLanguageInfos(); iIndex++)
+	{
+		if (szLanguage == GC.getLanguageInfo(iIndex).getName())
+		{
+			CvGameText::setCurrentLanguage(iIndex);	
+			return;
+		}
+	}
+}
+
+void CvGameText::setCurrentLanguage(int iLanguage)
+{
+	if (iLanguage >= 0 && iLanguage < GC.getNumLanguageInfos())
+	{
+		gDLL->setCurrentLanguage(GC.getLanguageInfo(iLanguage).getCodeInt());
+	}
+	else
+	{
+		for (int iIndex = 0; iIndex < GC.getNumLanguageInfos(); iIndex++)
+		{
+			if (iLanguage == GC.getLanguageInfo(iIndex).getCodeInt())
+			{
+				gDLL->setCurrentLanguage(iLanguage);	
+				return;
+			}
+		}
+	}
+}
+
+LanguageInfo::LanguageInfo()
+:  m_iCode(0)
+{
+}
+
+std::string LanguageInfo::getName() const
+{
+	FAssert(!m_szName.empty());
+	return m_szName;
+}
+
+CvString LanguageInfo::getCode() const
+{
+	FAssert(!m_szCode.empty());
+	return m_szCode;
+}
+	
+int LanguageInfo::getCodeInt() const
+{
+	FAssert(m_iCode > 0);
+	return m_iCode;
+}
+
+bool LanguageInfo::read(CvXMLLoadUtility* pXML)
+{
+	CvString szTextVal;
+	if (!CvInfoBase::read(pXML))
+	{
+		return false;
+	}
+
+	pXML->GetChildXmlValByName(m_szName, "Name");
+	pXML->GetChildXmlValByName(m_szCode, "Code");
+
+	FAssert(m_szCode.size() == 3);
+	if (m_szCode.size() != 3)
+	{
+		return false;
+	}
+	for (int iI = 0; iI < 3; iI++)
+	{
+		char cChar = m_szCode.c_str()[iI];
+		if (cChar < 'a' || cChar > 'z')
+		{
+			return false;
+		}
+		m_iCode = m_iCode << 8;
+		m_iCode |= cChar;
+	}
 	return true;
 }
+/// language selection - end - Nightinggale
+
 //////////////////////////////////////////////////////////////////////////
 //
 //	CvDiplomacyTextInfo

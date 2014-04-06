@@ -271,5 +271,10 @@ public:
 	/// special building placement xml - start - Nightinggale
 	void reloadSpecialBuildings();
 	/// special building placement xml - end - Nightinggale
+
+	/// language selection - start - Nightinggale
+	int getNumLanguageInfos() const { return GC.getNumLanguageInfos(); }
+	LanguageInfo* getLanguageInfo(int i) const;
+	/// language selection - end - Nightinggale
 };
 #endif	// CyGlobalContext_h

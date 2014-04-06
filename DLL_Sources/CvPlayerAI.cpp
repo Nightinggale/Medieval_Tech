@@ -5687,6 +5687,7 @@ CivicTypes CvPlayerAI::AI_bestCivic(CivicOptionTypes eCivicOption)
 		{
 			if (canDoCivics((CivicTypes)iI))
 			{
+				FAssert(iI != 15);
 				iValue = AI_civicValue((CivicTypes)iI);
 
 				if (isCivic((CivicTypes)iI))
@@ -5731,7 +5732,10 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic)
 	iValue *= 10 + GC.getGameINLINE().getSorenRandNum(90, "AI choose revolution civics");
 
 	return iValue;*/
-
+	if (GC.getCivicInfo(eCivic).getRequiredInvention() == NO_CIVIC)
+	{
+		return 0;
+	}
 	///End Old Code
 	bool bWarPlan;
 	//int iConnectedForeignCities;

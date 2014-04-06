@@ -411,7 +411,7 @@
       <Description>Localism</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
-      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,7,4</Button>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,5,1</Button>
       <iAIWeight>0</iAIWeight>
       <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
       <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -448,7 +448,7 @@
       <Description>TXT_KEY_CIVIC_MONARCHY</Description>
       <Civilopedia>TXT_KEY_CIVIC_MONARCHY_PEDIA</Civilopedia>
       <Strategy>TXT_KEY_CIVIC_MONARCHY_STRATEGY</Strategy>
-      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,8,4</Button>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,1,4</Button>
       <iAIWeight>100</iAIWeight>
       <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
       <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -493,7 +493,7 @@
       <Description>Feudalism</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
-      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,6,4</Button>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,4,2</Button>
       <iAIWeight>0</iAIWeight>
       <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
       <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -553,7 +553,7 @@
       <Description>Theocracy</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
-      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,6,4</Button>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,4,4</Button>
       <iAIWeight>0</iAIWeight>
       <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
       <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -603,7 +603,7 @@
       <Description>Parliament</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
-      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,6,4</Button>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,6,2</Button>
       <iAIWeight>0</iAIWeight>
       <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
       <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -658,7 +658,7 @@
       <Description>Apathy</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
-      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,5,4</Button>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,5,3</Button>
       <iAIWeight>0</iAIWeight>
       <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
       <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -695,7 +695,7 @@
       <Description>Ritualistic</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
-      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,5,4</Button>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,2,1</Button>
       <iAIWeight>0</iAIWeight>
       <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
       <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -739,7 +739,7 @@
       <Description>Divine Revelation</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
-      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,5,4</Button>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,3,1</Button>
       <iAIWeight>0</iAIWeight>
       <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
       <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -784,7 +784,7 @@
       <Description>Patriarch</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
-      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,6,5</Button>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,8,2</Button>
       <iAIWeight>0</iAIWeight>
       <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
       <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -829,7 +829,7 @@
       <Description>Religious Tolerance</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
-      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,5,4</Button>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,4,3</Button>
       <iAIWeight>0</iAIWeight>
       <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
       <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -886,7 +886,7 @@
       <Description>Minimum</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
-      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,1,5</Button>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,4,1</Button>
       <iAIWeight>0</iAIWeight>
       <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
       <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -923,7 +923,7 @@
       <Description>Manorial</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
-      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,3,5</Button>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,7,2</Button>
       <iAIWeight>0</iAIWeight>
       <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
       <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -962,7 +962,7 @@
       <Description>Free Market</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
-      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,3,5</Button>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,2,4</Button>
       <iAIWeight>0</iAIWeight>
       <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
       <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -1013,7 +1013,7 @@
       <Description>Guilds</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
-      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,3,5</Button>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,6,1</Button>
       <iAIWeight>0</iAIWeight>
       <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
       <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -1061,7 +1061,7 @@
       <Description>State Control</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
-      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,3,5</Button>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,1,1</Button>
       <iAIWeight>0</iAIWeight>
       <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
       <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -1120,7 +1120,7 @@
       <Description>Anarchist</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
-      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,2,5</Button>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,1,3</Button>
       <iAIWeight>0</iAIWeight>
       <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
       <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -1157,7 +1157,7 @@
       <Description>Sovereign Rule</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
-      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,2,5</Button>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,3,2</Button>
       <iAIWeight>0</iAIWeight>
       <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
       <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -1199,7 +1199,7 @@
       <Description>Ecclesiastical</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
-      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,2,5</Button>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,3,3</Button>
       <iAIWeight>0</iAIWeight>
       <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
       <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -1253,7 +1253,7 @@
       <Description>Charter Law</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
-      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,2,5</Button>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,8,3</Button>
       <iAIWeight>0</iAIWeight>
       <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
       <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -1297,7 +1297,7 @@
       <Description>Codex</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
-      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,2,5</Button>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,2,2</Button>
       <iAIWeight>0</iAIWeight>
       <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
       <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -1346,7 +1346,7 @@
       <Description>Tribalism</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
-      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,4,5</Button>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,1,2</Button>
       <iAIWeight>0</iAIWeight>
       <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
       <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -1383,7 +1383,7 @@
       <Description>TXT_KEY_CIVIC_SLAVERY</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
-      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,4,5</Button>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,7,3</Button>
       <iAIWeight>0</iAIWeight>
       <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
       <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -1437,7 +1437,7 @@
       <Description>Serfdom</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
-      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,5,5</Button>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,3,4</Button>
       <iAIWeight>0</iAIWeight>
       <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
       <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -1481,7 +1481,7 @@
       <Description>Wage Labor</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
-      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,5,5</Button>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,2,3</Button>
       <iAIWeight>0</iAIWeight>
       <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
       <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -1535,7 +1535,7 @@
       <Description>Bureaucracy</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
-      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,5,5</Button>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,5,2</Button>
       <iAIWeight>0</iAIWeight>
       <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
       <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>

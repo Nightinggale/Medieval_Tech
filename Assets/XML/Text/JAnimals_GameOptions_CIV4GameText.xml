@@ -2,14 +2,6 @@
 <!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by lcollins (Firaxis Games) -->
 <Civ4GameText xmlns="http://www.firaxis.com">
 	<TEXT>
-		<Tag>TXT_KEY</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_GAME_OPTION_NO_WILD_LAND_ANIMALS</Tag>
 		<English>No Wild Land Animals</English>
 		<French>No Wild Land Animals</French>

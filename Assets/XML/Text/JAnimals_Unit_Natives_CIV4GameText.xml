@@ -2,14 +2,6 @@
 <!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by lcollins (Firaxis Games) -->
 <Civ4GameText xmlns="http://www.firaxis.com">
 	<TEXT>
-		<Tag>TXT_KEY</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_UNIT_TERRAIN_NATIVE</Tag>
 		<English>[ICON_BULLET]Native to %s1_Desc Terrain</English>
 		<French>[ICON_BULLET]Native to %s1_Desc Terrain</French>

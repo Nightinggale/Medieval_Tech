@@ -54,14 +54,6 @@
 		<Spanish></Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_MEDIEVAL_HINTS_2</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_INVENTOR_PEDIA</Tag>
 		<English>Invention is a very creative process.  An open and curious mind enables one to see beyond what is known.  Inventors think outside of the box. "Hell, there are no rules here we're trying to accomplish something new". -Thomas A. Edison.   Seeing a new possibility, a new connection or relationship can spark an invention.  Inventive thinking frequently involves combining concepts or elements from different realms that would not normally be put together.  Sometimes inventors skip over the boundaries between distinctly separate territories or fields.  Ways of thinking, materials, processes or tools from one realm are used as no one else has imagined in a different realm.[NEWLINE][TAB]To invent is to see anew.  "To raise new questions, new possibilities, to regard old questions from a new angle, requires creative imagination and marks real advance". -Einstein.  Inventors often envision a new idea, seeing it in their mind's eye.  New ideas can arise when the conscious mind turns away from the subject or problem; or when the focus is on something else; or even while relaxing or sleeping.  A novel idea may come in a flash - a Eureka! moment.  For example, after years of working to figure out the general theory of relativity, the solution came to Einstein suddenly in a dream "like a giant die making an indelible impress, a huge map of the universe outlined itself in one clear vision".</English>
 		<French></French>
@@ -399,7 +391,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_NATIVE_TECH2_DESCRIPTION</Tag>
-		<English></English>
+		<English>Native tech 2 description</English>
 		<French></French>
 		<German></German>
 		<Italian></Italian>

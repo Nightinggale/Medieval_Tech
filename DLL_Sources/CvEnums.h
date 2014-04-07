@@ -3297,4 +3297,23 @@ enum DllExport XMLconstantTypes
 };
 // cache XML - end - Nightinggale
 
+/// JIT array save - start - Nightinggale
+enum JIT_ARRAY_TYPES
+{
+	JIT_ARRAY_BONUS = 0,
+	JIT_ARRAY_BUILDING,
+	JIT_ARRAY_EUROPE,
+	JIT_ARRAY_PLAYER,
+	JIT_ARRAY_PROFESSION,
+	JIT_ARRAY_PROMOTION,
+	JIT_ARRAY_UNIT,
+	JIT_ARRAY_UNIT_CLASS,
+	JIT_ARRAY_UNIT_COMBAT,
+	JIT_ARRAY_YIELD,
+	JIT_ARRAY_CARGO_YIELD,
+
+	NUM_JIT_ARRAY_TYPES,
+};
+/// JIT array save - end - Nightinggale
+
 #endif	// CVENUMS_h

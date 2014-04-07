@@ -21,6 +21,8 @@
 #include "FVariableSystem.h"
 #include "CvInitCore.h"
 
+#include "CvInfoProfessions.h"
+
 #define COPY(dst, src, typeName) \
 	{ \
 		int iNum = sizeof(src)/sizeof(typeName); \
@@ -4236,3 +4238,82 @@ void CvGlobals::CheckEnumAttitudeTypes() const
 	FAssertMsg(GC.getAttitudeInfo().size() == NUM_ATTITUDE_TYPES, CvString::format("XML error. Expected %d types, but found %d", NUM_ATTITUDE_TYPES, GC.getAttitudeInfo().size()));
 }
 // XML enum check - end - Nightinggale
+
+/// JIT array save - start - Nightinggale
+int CvGlobals::getArrayLength(JIT_ARRAY_TYPES eType)
+{
+	switch (eType)
+	{
+	case JIT_ARRAY_YIELD:
+		return NUM_YIELD_TYPES;
+	case JIT_ARRAY_CARGO_YIELD:
+		return NUM_CARGO_YIELD_TYPES;
+	case JIT_ARRAY_UNIT:
+		return getNumUnitInfos();
+	case JIT_ARRAY_UNIT_CLASS:
+		return getNumUnitClassInfos();
+	case JIT_ARRAY_PROFESSION:
+		return getNumProfessionInfos();
+	case JIT_ARRAY_PROMOTION:
+		return getNumPromotionInfos();
+	case JIT_ARRAY_UNIT_COMBAT:
+		return getNumUnitCombatInfos();
+	case JIT_ARRAY_BONUS:
+		return getNumBonusInfos();
+	case JIT_ARRAY_PLAYER:
+		return MAX_PLAYERS;
+	case JIT_ARRAY_EUROPE:
+		return getNumEuropeInfos();
+	case JIT_ARRAY_BUILDING:
+		return getNumBuildingInfos();
+	}
+	FAssertMsg(false, "missing length case");
+	return 0;
+}
+
+CvWString CvGlobals::getArrayType(JIT_ARRAY_TYPES eType, int iIndex)
+{
+	// not all JIT arrays relies on XML data
+	// return an empty string when data doesn't rely in CvBasicInfo
+
+	CvWString szType;
+	
+	switch (eType)
+	{
+	case JIT_ARRAY_YIELD:
+	case JIT_ARRAY_CARGO_YIELD:
+		szType = getYieldInfo((YieldTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_UNIT:
+		szType = getUnitInfo((UnitTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_UNIT_CLASS:
+		szType = getUnitClassInfo((UnitClassTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_PROFESSION:
+		szType = getProfessionInfo((ProfessionTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_PROMOTION:
+		szType = getPromotionInfo((PromotionTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_UNIT_COMBAT:
+		szType = getUnitCombatInfo((UnitCombatTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_BONUS:
+		szType = getBonusInfo((BonusTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_PLAYER:
+		break;
+	case JIT_ARRAY_EUROPE:
+		szType = getEuropeInfo((EuropeTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_BUILDING:
+		szType = getBuildingInfo((BuildingTypes)iIndex).getType();
+		break;
+	default:
+		FAssertMsg(false, "missing info case");
+	}
+
+	return szType;
+}
+/// JIT array save - end - Nightinggale

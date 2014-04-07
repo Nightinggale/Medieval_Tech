@@ -20098,6 +20098,7 @@ void CvPlayer::updateInventionEffectCacheSingleArray(JustInTimeArray<bool>* pArr
 			}
 			break;
 		case JIT_ARRAY_YIELD:
+		case JIT_ARRAY_CARGO_YIELD:
 		case JIT_ARRAY_BONUS:
 			break;
 

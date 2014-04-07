@@ -30,6 +30,14 @@
     <Spanish>[COLOR_WARNING_TEXT]Anarchy[COLOR_REVERT]</Spanish>
   </TEXT>
   <TEXT>
+    <Tag>TXT_KEY_TECH_ALLOWS_CIVIC</Tag>
+    <English>[ICON_BULLET]Permits [COLOR_HIGHLIGHT_TEXT]%s1_Civic[COLOR_REVERT]</English>
+    <French>[ICON_BULLET]Permits [COLOR_HIGHLIGHT_TEXT]%s1_Civic[COLOR_REVERT]</French>
+    <German>[ICON_BULLET]Permits [COLOR_HIGHLIGHT_TEXT]%s1_Civic[COLOR_REVERT]</German>
+    <Italian>[ICON_BULLET]Permits [COLOR_HIGHLIGHT_TEXT]%s1_Civic[COLOR_REVERT]</Italian>
+    <Spanish>[ICON_BULLET]Permits [COLOR_HIGHLIGHT_TEXT]%s1_Civic[COLOR_REVERT]</Spanish>
+  </TEXT>
+  <TEXT>
     <Tag>TXT_KEY_CIVIC_NEW_MISSIONARY_CLASS</Tag>
     <English>[ICON_BULLET]Missionary Converts are [COLOR_HIGHLIGHT_TEXT]%s1_unitclass[COLOR_REVERT]</English>
     <French>[ICON_BULLET]Missionary Converts are [COLOR_HIGHLIGHT_TEXT]%s1_unitclass[COLOR_REVERT]</French>
@@ -2001,6 +2009,38 @@
 		<Italian>Your Sovereign is alarmed at your rebellious sentiment. He has added %d1 [NUM1:unit:units] to the Royal Military.</Italian>
 		<Spanish>Your Sovereign is alarmed at your rebellious sentiment. He has added %d1 [NUM1:unit:units] to the Royal Military.</Spanish>
 	</TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_GOODY_ANNOUNCE_HEALING</Tag>
+    <English>A barbarian tribe has healed your unit!</English>
+    <French>Une tribu indig&#232;ne a soign&#233; votre unit&#233; !</French>
+    <German>Ein Ureinwohnerstamm hat Eure Einheit geheilt!</German>
+    <Italian>Una trib&#249; di nativi ha curato l'unit&#224;!</Italian>
+    <Spanish>&#161;Una tribu nativa ha curado a vuestra unidad!</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_GOODY_ANNOUNCE_HOSTILE</Tag>
+    <English>You have offended the barbarians, who attack your unit in revenge!</English>
+    <French>Vous avez offens&#233; les indig&#232;nes qui attaquent votre unit&#233; en repr&#233;sailles !</French>
+    <German>Ihr habt die Ureinwohner beleidigt. Sie greifen Euch aus Rache an!</German>
+    <Italian>Hai offeso i nativi, che attaccano la tua unit&#224;!</Italian>
+    <Spanish>&#161;Hab&#233;is ofendido a los Nativos, que atacan a vuestra unidad como venganza!</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_GOODY_ANNOUNCE_BURIAL_GROUNDS</Tag>
+    <English>You have discovered what appears to be barbarian burial ground. Do you wish to search for treasure?</English>
+    <French>Vous avez d&#233;couvert ce qui semble &#234;tre un cimeti&#232;re indig&#232;ne. Voulez-vous explorer ce tr&#233;sor? </French>
+    <German>Ihr habt etwas entdeckt, das wie eine Ureinwohner-Grabst&#228;tte aussieht. Wollt Ihr nach Sch&#228;tzen suchen?</German>
+    <Italian>Hai scoperto quello che sembra un cimitero dei nativi. Vuoi cercare dei tesori?</Italian>
+    <Spanish>Hab&#233;is descubierto lo que parecen ser T&#250;mulos funerarios de los Nativos. &#191;Quer&#233;is buscar tesoros?</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_GOODY_ANNOUNCE_WAR</Tag>
+    <English>You have offended the barbarians, who declare war on you in revenge!</English>
+    <French>Vous avez offens&#233; les indig&#232;nes qui vous d&#233;clarent la guerre en repr&#233;sailles !</French>
+    <German>Ihr habt die Ureinwohner beleidigt. Sie erkl&#228;ren Euch aus Rache den Krieg!</German>
+    <Italian>Hai offeso i nativi, che ti dichiarano guerra!</Italian>
+    <Spanish>Hab&#233;is ofendido a los Nativos, que os declaran la guerra como represalia.</Spanish>
+  </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_NEW_POPE_ARMY_NEW</Tag>
 		<English>%s1 is alarmed at your rebellious sentiment against the Church. He has added %d2 [NUM2:unit:units] to the Holy Expeditionary Force.</English>

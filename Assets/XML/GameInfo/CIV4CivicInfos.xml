@@ -716,7 +716,7 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
-      <RequiredInvention>MEDIEVAL_TECH_ROADS</RequiredInvention>
+      <RequiredInvention/>
       <UpkeepYields>
         <UpkeepYield>
           <YieldType>YIELD_GOLD</YieldType>
@@ -1528,7 +1528,7 @@
     </CivicInfo>
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
-      <Type>CIVIC_WAGE</Type>
+      <Type>CIVIC_WAGE_LABOR</Type>
       <Description>Wage Labor</Description>
       <Civilopedia>????</Civilopedia>
       <Strategy>????</Strategy>
@@ -1671,6 +1671,7 @@
 			<AllowsPromotions/>
 			<AllowsProfessions/>
 			<AllowsTrait/>
+      <AllowsCivic>CIVIC_RELIGIOUS_LAW</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
@@ -1979,6 +1980,7 @@
 			<AllowsPromotions/>
 			<AllowsProfessions/>
 			<AllowsTrait/>
+      <AllowsCivic>CIVIC_CODEX</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
@@ -2062,6 +2064,7 @@
 			</AllowsPromotions>
 			<AllowsProfessions/>
 			<AllowsTrait/>
+      <AllowsCivic>CIVIC_RITUALISTIC</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
@@ -2442,6 +2445,7 @@
 			<AllowsPromotions/>
 			<AllowsProfessions/>
 			<AllowsTrait>INVENTION_MEDIEVAL_TECH_CALENDER</AllowsTrait>
+      <AllowsCivic>CIVIC_WAGE_LABOR</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
@@ -2594,6 +2598,7 @@
 			<AllowsPromotions/>
 			<AllowsProfessions/>
 			<AllowsTrait/>
+      <AllowsCivic>CIVIC_PATRIARCH</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
@@ -2940,6 +2945,7 @@
 			<AllowsPromotions/>
 			<AllowsProfessions/>
 			<AllowsTrait/>
+      <AllowsCivic>CIVIC_STATE_CONTROL</AllowsCivic>
 			<AllowsBuildTypes>
 				<ModBuildType>
 					<BuildType>IMPROVEMENT_QUARRY</BuildType>
@@ -3246,6 +3252,7 @@
 			<AllowsPromotions/>
 			<AllowsProfessions/>
 			<AllowsTrait>INVENTION_CLOCK</AllowsTrait>
+      <AllowsCivic>CIVIC_PARLIAMENT</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
@@ -3506,6 +3513,7 @@
 				</AllowsProfession>
 			</AllowsProfessions>
 			<AllowsTrait/>
+      <AllowsCivic>CIVIC_SLAVERY</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
@@ -3661,6 +3669,7 @@
 			<AllowsPromotions/>
 			<AllowsProfessions/>
 			<AllowsTrait/>
+      <AllowsCivic>CIVIC_SERFDOM</AllowsCivic>
 			<AllowsBuildTypes>
 				<ModBuildType>
 					<BuildType>IMPROVEMENT_WATCH_TOWER</BuildType>
@@ -3748,6 +3757,7 @@
 			<AllowsPromotions/>
 			<AllowsProfessions/>
 			<AllowsTrait/>
+      <AllowsCivic>CIVIC_SOVEREIGN</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
@@ -4302,6 +4312,7 @@
 				</AllowsProfession>
 			</AllowsProfessions>
 			<AllowsTrait>INVENTION_STIRRUP</AllowsTrait>
+      <AllowsCivic>CIVIC_DIVINE_REVELATION</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
@@ -4567,6 +4578,7 @@
 				</AllowsProfession>
 			</AllowsProfessions>
 			<AllowsTrait/>
+      <AllowsCivic>CIVIC_MANORIAL</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
@@ -4735,6 +4747,7 @@
 				</AllowsProfession>
 			</AllowsProfessions>
 			<AllowsTrait/>
+      <AllowsCivic>CIVIC_MONARCHY</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
@@ -4813,6 +4826,7 @@
 				</AllowsProfession>
 			</AllowsProfessions>
 			<AllowsTrait/>
+      <AllowsCivic>CIVIC_FEUDALISM</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
@@ -4955,6 +4969,7 @@
 			</AllowsPromotions>
 			<AllowsProfessions/>
 			<AllowsTrait>INVENTION_CIVILSERVICE</AllowsTrait>
+      <AllowsCivic>CIVIC_BUREAUCRACY</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
@@ -5117,6 +5132,7 @@
 			<AllowsPromotions/>
 			<AllowsProfessions/>
 			<AllowsTrait/>
+      <AllowsCivic>CIVIC_THEOCRACY</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
@@ -5275,6 +5291,7 @@
 			<AllowsPromotions/>
 			<AllowsProfessions/>
 			<AllowsTrait/>
+      <AllowsCivic>CIVIC_TOLERANCE</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
@@ -6049,6 +6066,7 @@
 				</AllowsProfession>
 			</AllowsProfessions>
 			<AllowsTrait/>
+      <AllowsCivic>CIVIC_MARKET_ECONOMY</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
@@ -6614,6 +6632,7 @@
 			<AllowsPromotions/>
 			<AllowsProfessions/>
 			<AllowsTrait/>
+      <AllowsCivic>CIVIC_GUILDS</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
@@ -6770,6 +6789,7 @@
 			<AllowsPromotions/>
 			<AllowsProfessions/>
 			<AllowsTrait>INVENTION_COMMUNE</AllowsTrait>
+      <AllowsCivic>CIVIC_CHARTER_LAW</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>

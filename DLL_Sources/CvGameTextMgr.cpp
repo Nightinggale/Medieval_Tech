@@ -4756,6 +4756,15 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
 	}
     ///TKs Civic Screen
 	///START
+	//for (iI = 0; iI < GC.getNumCivicOptionInfos(); ++iI)
+	//{
+
+	//}
+	if (kCivicInfo.getAllowsCivic() != NO_CIVIC)
+	{
+	    szHelpText.append(NEWLINE);
+        szHelpText.append(gDLL->getText("TXT_KEY_TECH_ALLOWS_CIVIC", GC.getCivicInfo((CivicTypes)kCivicInfo.getAllowsCivic()).getDescription()));
+	}
 
 	if (kCivicInfo.getIncreasedImmigrants() > 0)
 	{

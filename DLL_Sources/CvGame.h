@@ -475,6 +475,15 @@ protected:
 	void updateOceanDistances();
 
 	void doUpdateCacheOnTurn();
+
+	/// JIT array save - start - Nightinggale
+public:
+	int convertArrayInfo(JIT_ARRAY_TYPES eType, int iIndex) const;
+protected:
+	void readArrayInfo(FDataStreamBase* pStream);
+	void writeArrayInfo(FDataStreamBase* pStream);
+	std::vector< std::vector<int> > m_aaiArrayIndex;
+	/// JIT array save - end - Nightinggale
 };
 
 #endif

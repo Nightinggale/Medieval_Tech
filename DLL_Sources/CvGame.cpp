@@ -6586,6 +6586,10 @@ void CvGame::read(FDataStreamBase* pStream)
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
 
+	/// JIT array save - start - Nightinggale
+	readArrayInfo(pStream);
+	/// JIT array save - end - Nightinggale
+
 	pStream->Read(&m_iEndTurnMessagesSent);
 	pStream->Read(&m_iElapsedGameTurns);
 	pStream->Read(&m_iStartTurn);
@@ -6753,6 +6757,10 @@ void CvGame::write(FDataStreamBase* pStream)
 {
 	uint uiFlag=1;
 	pStream->Write(uiFlag);		// flag for expansion
+
+	/// JIT array save - start - Nightinggale
+	writeArrayInfo(pStream);
+	/// JIT array save - end - Nightinggale
 
 	pStream->Write(m_iEndTurnMessagesSent);
 	pStream->Write(m_iElapsedGameTurns);
@@ -7625,3 +7633,90 @@ void CvGame::createVassalPlayer(PlayerTypes eVassalOwner, CvCity* pCity)
 }
 
 ///TKe
+
+/// JIT array save - start - Nightinggale
+// array save format is as follows
+// first int is number of arrays
+// for each array
+// int telling number of strings
+// a string telling which type the index in question was at the time of saving
+void CvGame::readArrayInfo(FDataStreamBase* pStream)
+{
+	int iNumArrays = 0;
+	pStream->Read(&iNumArrays);
+
+	m_aaiArrayIndex.clear();
+	m_aaiArrayIndex.reserve(iNumArrays);
+
+	for (int iArray = 0; iArray < iNumArrays; iArray++)
+	{
+		int iLength = 0;
+		pStream->Read(&iLength);
+
+		std::vector<int> aArray(iLength);
+		for (int iIndex = 0; iIndex < iLength; iIndex++)
+		{
+			CvWString szType;
+			pStream->ReadString(szType);
+
+			if (szType == GC.getArrayType((JIT_ARRAY_TYPES)iArray, iIndex))
+			{
+				aArray.push_back(iIndex);
+			}
+			else
+			{
+				// index no longer has the same type as when it was saved
+				// loop though array to find the correct one
+				int iNewIndex = -1;
+				for (int iCurIndex = 0; iCurIndex < GC.getArrayLength((JIT_ARRAY_TYPES)iArray); iCurIndex++)
+				{
+					if (szType == GC.getArrayType((JIT_ARRAY_TYPES)iArray, iCurIndex))
+					{
+						iNewIndex = iCurIndex;
+						break;
+					}
+				}
+				aArray.push_back(iNewIndex);
+			}
+		}
+
+		m_aaiArrayIndex.push_back(aArray);
+	}
+}
+
+void CvGame::writeArrayInfo(FDataStreamBase* pStream)
+{
+	pStream->Write((int)NUM_JIT_ARRAY_TYPES);
+	for (int iArray = 0; iArray < NUM_JIT_ARRAY_TYPES; iArray++)
+	{
+		int iLimit = GC.getArrayLength((JIT_ARRAY_TYPES)iArray);
+		if (GC.getArrayType((JIT_ARRAY_TYPES)iArray, 0).empty())
+		{
+			iLimit = 0;
+		}
+
+		pStream->Write(iLimit);
+
+		for (int iIndex = 0; iIndex < iLimit; iIndex++)
+		{
+			pStream->WriteString(GC.getArrayType((JIT_ARRAY_TYPES)iArray, iIndex));
+		}
+	}
+}
+
+int CvGame::convertArrayInfo(JIT_ARRAY_TYPES eType, int iIndex) const
+{
+	FAssert((int)m_aaiArrayIndex.size() > eType);
+	FAssert(eType >= 0);
+	FAssert(iIndex >= 0);
+
+	// return the converted index if available
+	if (iIndex < (int)m_aaiArrayIndex[eType].size())
+	{
+		return m_aaiArrayIndex[eType][iIndex];
+	}
+	// no conversion is possible. Assume the index to be unchanged
+	// this is valid for arrays with no XML connection, like playerIDs
+	return iIndex;
+}
+/// JIT array save - end - Nightinggale

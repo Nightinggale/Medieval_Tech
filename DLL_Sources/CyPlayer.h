@@ -116,8 +116,9 @@ public:
 	std::wstring getAttackForceKey();
 	std::wstring getDeclareKey();
 	bool getHasTradeRouteType(int /*EuropeTypes*/ eTradeRoute);
-	///TKe
+	int getAnarchyTurns();
 	bool canDoCivics(int /*CivicTypes*/ eCivic, bool bProhitbitCheck);
+	///TKe
 	int greatGeneralThreshold();
 	int immigrationThreshold();
 	int revolutionEuropeUnitThreshold();

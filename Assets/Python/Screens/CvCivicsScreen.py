@@ -344,7 +344,7 @@ class CvCivicsScreen:
 		
 		if (activePlayer.canChangeCivics(0) and bChange):
 			if (activePlayer.getCivicInitalCosts(self.m_paeDisplayCivics) > activePlayer.getGold()):
-				screen.setText(self.LACK_FUNDS, "Background", u"<font=4>" + localText.getText("Lack Funds", ( )).upper() + u"</font>", CvUtil.FONT_RIGHT_JUSTIFY, self.X_EXIT, self.Y_EXIT, self.Z_TEXT, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, 0)
+				screen.setText(self.LACK_FUNDS, "Background", u"<font=4>" + localText.getText("TXT_KEY_CIVICS_LACK_FUNDS", ( )).upper() + u"</font>", CvUtil.FONT_RIGHT_JUSTIFY, self.X_EXIT, self.Y_EXIT, self.Z_TEXT, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, 0)
 			else:
 				screen.setText(self.EXIT_NAME, "Background", u"<font=4>" + localText.getText("TXT_KEY_CIVIC_SCREEN_BEGIN_RESOLUTION", ( )).upper() + u"</font>", CvUtil.FONT_RIGHT_JUSTIFY, self.X_EXIT, self.Y_EXIT, self.Z_TEXT, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, self.BEGIN_RESOLUTION, 0)
 				screen.hide(self.LACK_FUNDS)

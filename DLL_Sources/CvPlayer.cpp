@@ -14862,10 +14862,12 @@ void CvPlayer::changeAnarchyTurns(int iChange)
 			///MESSAGE ADDEED!!!!!!!!!!!!
 			if (isAnarchy())
 			{
+				processCivics((CivicTypes)XML_DEFAULT_GLOBAL_EFFECT_ANARCHY, 1);
 				gDLL->getInterfaceIFace()->addMessage(getID(), true, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_MISC_REVOLUTION_HAS_BEGUN").GetCString(), "AS2D_REVOLTSTART", MESSAGE_TYPE_MAJOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WARNING_TEXT"));
 			}
 			else
 			{
+				processCivics((CivicTypes)XML_DEFAULT_GLOBAL_EFFECT_ANARCHY, -1);
 				gDLL->getInterfaceIFace()->addMessage(getID(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_MISC_REVOLUTION_OVER").GetCString(), "AS2D_REVOLTEND", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WARNING_TEXT"));
 			}
 

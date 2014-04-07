@@ -440,11 +440,16 @@ bool CyPlayer::getHasTradeRouteType(int /*EuropeTypes*/ eTradeRoute)
 {
 	return m_pPlayer ? m_pPlayer->getHasTradeRouteType((EuropeTypes)eTradeRoute) : false;
 }
-///TKe
+int CyPlayer::getAnarchyTurns()
+{
+	return m_pPlayer ? m_pPlayer->getAnarchyTurns() : 0;
+}
+
 bool CyPlayer::canDoCivics(int /*CivicTypes*/ eCivic, bool bProhitbitCheck)
 {
 	return m_pPlayer ? m_pPlayer->canDoCivics((CivicTypes)eCivic, bProhitbitCheck) : false;
 }
+///TKe
 int CyPlayer::greatGeneralThreshold()
 {
 	return m_pPlayer ? m_pPlayer->greatGeneralThreshold() : -1;

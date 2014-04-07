@@ -406,6 +406,38 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
     <CivicInfo>
+      <CivicOptionType>NONE</CivicOptionType>
+      <Type>GLOBAL_EFFECT_ANARCHY</Type>
+      <Description>Anarchy</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,1,3</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+      <UpkeepYields/>
+      <iAnarchyLength>0</iAnarchyLength>
+      <iInitialCost>0</iInitialCost>
+    </CivicInfo>
+    <CivicInfo>
       <CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
       <Type>CIVIC_LOCALISM</Type>
       <Description>Localism</Description>
@@ -4540,7 +4572,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
-			<NewLuxuryUnitClass>UNITCLASS_PAGE</NewLuxuryUnitClass>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>

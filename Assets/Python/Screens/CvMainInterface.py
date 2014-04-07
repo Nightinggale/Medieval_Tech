@@ -857,26 +857,32 @@ class CvMainInterface:
 		screen.setImageButton("Excommunication", ArtFileMgr.getInterfaceArtInfo("SCREEN_MAIN_EXCOMMUNICATION").getPath(), 0, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE / 2), self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_PEDIA_JUMP_TO_CIVIC, gc.getDefineINT("DEFAULT_CENSURETYPE_EXCOMMUNICATION"), 0)
 		screen.setImageShape("Excommunication", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
 		screen.setHitMargins("Excommunication", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
-		#self.appendtoHideState(screen, "Excommunication", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
 		screen.hide("Excommunication")
+		
 		screen.setImageButton("INTERDICT", ArtFileMgr.getInterfaceArtInfo("SCREEN_MAIN_INTERDICT").getPath(), 0, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE / 2) * 2 , self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_PEDIA_JUMP_TO_CIVIC, gc.getDefineINT("DEFAULT_CENSURETYPE_INTERDICT"), 0)
 		screen.setImageShape("INTERDICT", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
 		screen.setHitMargins("INTERDICT", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
-		#self.appendtoHideState(screen, "INTERDICT", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
 		screen.hide("INTERDICT")
+		
 		screen.setImageButton("ANATHEMA", ArtFileMgr.getInterfaceArtInfo("SCREEN_MAIN_ANATHEMA").getPath(), 0, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE / 2) * 3 , self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_PEDIA_JUMP_TO_CIVIC, gc.getDefineINT("DEFAULT_CENSURETYPE_ANATHEMA"), 0)
 		screen.setImageShape("ANATHEMA", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
 		screen.setHitMargins("ANATHEMA", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
-		#self.appendtoHideState(screen, "ANATHEMA", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
 		screen.hide("ANATHEMA")
+		
+		screen.setImageButton("ANARCHY", ArtFileMgr.getInterfaceArtInfo("SCREEN_MAIN_ANARCHY").getPath(), 0, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE / 2) * 4 , self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_PEDIA_JUMP_TO_CIVIC, gc.getDefineINT("DEFAULT_GLOBAL_EFFECT_ANARCHY"), 0)
+		screen.setImageShape("ANARCHY", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
+		screen.setHitMargins("ANARCHY", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
+		screen.hide("ANARCHY")
 		
 		szTradeText = "" 
 		screen.setLabel("ExcommunicationText", "Background", self.setFontSize(szTradeText, 0), CvUtil.FONT_CENTER_JUSTIFY, 45, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE / 2), -0.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )	
 		screen.setLabel("INTERDICTText", "Background", self.setFontSize(szTradeText, 0), CvUtil.FONT_CENTER_JUSTIFY, 45, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE / 2) * 2.5, -0.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 		screen.setLabel("ANATHEMAText", "Background", self.setFontSize(szTradeText, 0), CvUtil.FONT_CENTER_JUSTIFY, 45, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE / 2) * 3.5, -0.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+		screen.setLabel("ANARCHYText", "Background", self.setFontSize(szTradeText, 0), CvUtil.FONT_CENTER_JUSTIFY, 45, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE / 2) * 4.5, -0.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 		screen.hide("ExcommunicationText")
 		screen.hide("INTERDICTText")
 		screen.hide("ANATHEMAText")
+		screen.hide("ANARCHYText")
 		
 		
 		screen.setImageButton("TradePoints", ArtFileMgr.getInterfaceArtInfo("SCREEN_TRADE_POINTS").getPath(), 0, yResolution - 227, 80, 80, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_TRADE_SCREEN).getActionInfoIndex(), -1)
@@ -2581,7 +2587,14 @@ class CvMainInterface:
 			else:
 				screen.hide("ANATHEMA")
 				screen.hide("ANATHEMAText")
-				#self.appendtoHideState(screen, "ANATHEMA", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
+			iAnarchy = player.getAnarchyTurns()	
+			if (iAnarchy > 0):
+				screen.show("ANARCHY")
+				szTradeText = str(iAnarchy)
+				screen.setLabel("ANARCHYText", "Background", self.setFontSize(szTradeText, -1), CvUtil.FONT_CENTER_JUSTIFY, 37, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE / 2) * 4.6, -0.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+			else:
+				screen.hide("ANARCHY")
+				screen.hide("ANARCHYText")
 					
 		return 0
 	
@@ -2747,15 +2760,21 @@ class CvMainInterface:
 				iFoodDifference = pHeadSelectedCity.foodDifference()
 				iProductionDiffNoFood = pHeadSelectedCity.getCurrentProductionDifference(True)
 				iProductionDiffJustFood = 0
+				#TKs MEd
+				ePlayer = gc.getGame().getActivePlayer()
+				player = gc.getPlayer(ePlayer)
+				iAnarchy = player.getAnarchyTurns()
 				szBuffer = u"<font=4>"
-				if (iFoodDifference > 0):
+				if (iAnarchy > 0):
+					szBuffer = localText.getText("TXT_KEY_INTERFACE_ANARCHY", ())
+				elif (iFoodDifference > 0):
 					szBuffer = localText.getText("INTERFACE_CITY_GROWING", (pHeadSelectedCity.getFoodTurnsLeft(), ))
 				elif (iFoodDifference < 0):
 					szBuffer = localText.getText("INTERFACE_CITY_STARVING", ())
 				else:
 					szBuffer = localText.getText("INTERFACE_CITY_STAGNANT", ())
 				szBuffer += u"</font>"
-				#TKs MEd
+				
 				screen.setText("PopulationText", "Background", szBuffer, CvUtil.FONT_LEFT_JUSTIFY, xResolution * 5 / 130, CITY_TITLE_BAR_HEIGHT / 8, -0.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_HELP_POPULATION, -1, -1 )
 				#Tke
 				screen.setStyle("PopulationText", "Button_Stone_Style")
@@ -2905,6 +2924,10 @@ class CvMainInterface:
 			
 			screen.hide("ANATHEMA")
 			screen.hide("ANATHEMAText")
+			
+			screen.hide("ANARCHY")
+			screen.hide("ANARCHYText")
+			
 			screen.hide("TradeFairScreenButton")
 			screen.hide("SpiceRouteScreenButton")
 			screen.hide("SilkRoadScreenButton")
@@ -3062,6 +3085,9 @@ class CvMainInterface:
 				screen.hide("ANATHEMA")
 				screen.hide("ANATHEMAText")
 				
+				screen.hide("ANARCHY")
+				screen.hide("ANARCHYText")
+				
 				screen.hide("TradeText")
 				screen.hide("TradePoints")
 				#TKe
@@ -3146,6 +3172,9 @@ class CvMainInterface:
 			
 			screen.hide("ANATHEMA")
 			screen.hide("ANATHEMAText")
+			
+			screen.hide("ANARCHY")
+			screen.hide("ANARCHYText")
 			
 			screen.hide("TradeFairScreenButton")
 			screen.hide("SpiceRouteScreenButton")

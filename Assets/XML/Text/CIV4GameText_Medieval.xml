@@ -14,6 +14,22 @@
 		<Spanish>[ICON_BULLET]</Spanish>
 	</TEXT>
   <TEXT>
+    <Tag>TXT_KEY_CIVICS_LACK_FUNDS</Tag>
+    <English>Lack Funds</English>
+    <French>Lack Funds</French>
+    <German>Lack Funds</German>
+    <Italian>Lack Funds</Italian>
+    <Spanish>Lack Funds</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_INTERFACE_ANARCHY</Tag>
+    <English>[COLOR_WARNING_TEXT]Anarchy[COLOR_REVERT]</English>
+    <French>[COLOR_WARNING_TEXT]Anarchy[COLOR_REVERT]</French>
+    <German>[COLOR_WARNING_TEXT]Anarchy[COLOR_REVERT]</German>
+    <Italian>[COLOR_WARNING_TEXT]Anarchy[COLOR_REVERT]</Italian>
+    <Spanish>[COLOR_WARNING_TEXT]Anarchy[COLOR_REVERT]</Spanish>
+  </TEXT>
+  <TEXT>
     <Tag>TXT_KEY_CIVIC_NEW_MISSIONARY_CLASS</Tag>
     <English>[ICON_BULLET]Missionary Converts are [COLOR_HIGHLIGHT_TEXT]%s1_unitclass[COLOR_REVERT]</English>
     <French>[ICON_BULLET]Missionary Converts are [COLOR_HIGHLIGHT_TEXT]%s1_unitclass[COLOR_REVERT]</French>

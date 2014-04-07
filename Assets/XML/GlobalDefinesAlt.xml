@@ -110,6 +110,10 @@
 		<DefineName>TRADE_POINTS_FOR_ROUTE</DefineName>
 		<iDefineIntVal>40</iDefineIntVal>
 	</Define>
+  <Define>
+    <DefineName>DEFAULT_GLOBAL_EFFECT_ANARCHY</DefineName>
+    <DefineTextVal>GLOBAL_EFFECT_ANARCHY</DefineTextVal>
+  </Define>
 	<Define>
 		<DefineName>DEFAULT_CENSURETYPE_EXCOMMUNICATION</DefineName>
 		<DefineTextVal>CENSURE_EXCOMMUNICATION</DefineTextVal>

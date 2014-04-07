@@ -183,11 +183,11 @@
 				</FreeTech>
         <FreeTech>
           <Tech>TRADING_TRADEPOST</Tech>
-          <bFree>1</bFree>
+          <bFree>0</bFree>
         </FreeTech>
         <FreeTech>
           <Tech>MEDIEVAL_TECH_WHEELBARROW</Tech>
-          <bFree>1</bFree>
+          <bFree>0</bFree>
         </FreeTech>
 			</FreeTechs>
 		</CivilizationInfo>

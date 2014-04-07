@@ -1068,6 +1068,10 @@ bool CvXMLLoadUtility::SetPostGlobalsGlobalDefines()
 		idx = FindInInfoClass(szVal);
 		GC.getDefinesVarSystem()->SetValue("DEFAULT_CENSURETYPE_EXCOMMUNICATION", idx);
 
+		SetGlobalDefine("DEFAULT_GLOBAL_EFFECT_ANARCHY", szVal);
+		idx = FindInInfoClass(szVal);
+		GC.getDefinesVarSystem()->SetValue("DEFAULT_GLOBAL_EFFECT_ANARCHY", idx);
+
 		SetGlobalDefine("DEFAULT_CENSURETYPE_INTERDICT", szVal);
 		idx = FindInInfoClass(szVal);
 		GC.getDefinesVarSystem()->SetValue("DEFAULT_CENSURETYPE_INTERDICT", idx);

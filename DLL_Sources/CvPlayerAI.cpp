@@ -5687,7 +5687,7 @@ CivicTypes CvPlayerAI::AI_bestCivic(CivicOptionTypes eCivicOption)
 		{
 			if (canDoCivics((CivicTypes)iI))
 			{
-				FAssert(iI != 15);
+				//FAssert(iI != 15); //Testing Assert
 				iValue = AI_civicValue((CivicTypes)iI);
 
 				if (isCivic((CivicTypes)iI))

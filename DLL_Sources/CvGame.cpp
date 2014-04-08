@@ -7680,6 +7680,32 @@ void CvGame::readArrayInfo(FDataStreamBase* pStream)
 			}
 		}
 
+		// try to catch name changes
+		if (iLength == GC.getArrayLength((JIT_ARRAY_TYPES)iArray))
+		{
+			for (int i = 0; i < iLength; i++)
+			{
+				if (aArray[i] == -1)
+				{
+					bool bFound = false;
+					for (int j = 0; j < iLength; j++)
+					{
+						if (i == aArray[j])
+						{
+							bFound = true;
+							break;
+						}
+					}
+					if (!bFound)
+					{
+						// type of current index isn't found and the current type of the index isn't saved.
+						// we will guess that it is renamed rather than removed
+						aArray[i] = i;
+					}
+				}
+			}
+		}
+
 		m_aaiArrayIndex.push_back(aArray);
 	}
 }

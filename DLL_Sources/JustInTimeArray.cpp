@@ -6,6 +6,7 @@
 #include "CvGameCoreDLL.h"
 #include "CvXMLLoadUtility.h"
 #include "CvDLLXMLIFaceBase.h"
+#include "CvGameAI.h"
 
 template<class T>
 JustInTimeArray<T>::JustInTimeArray(JIT_ARRAY_TYPES eType, T eDefault = 0)
@@ -132,6 +133,8 @@ void JustInTimeArray<T>::read(FDataStreamBase* pStream, bool bEnable)
 {
 	if (bEnable)
 	{
+		CvGameAI& eGame = GC.getGameINLINE();
+
 		int iNumElements = 0;
 		pStream->Read(&iNumElements);
 
@@ -141,7 +144,11 @@ void JustInTimeArray<T>::read(FDataStreamBase* pStream, bool bEnable)
 		{
 			int iBuffer = 0;
 			pStream->Read(&iBuffer);
-			set(iBuffer, iIndex);
+			int iNewIndex = eGame.convertArrayInfo(getType(), iIndex);
+			if (iNewIndex >= 0)
+			{
+				set(iBuffer, iNewIndex);
+			}
 		}
 	}
 }

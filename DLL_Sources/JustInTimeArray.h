@@ -52,12 +52,10 @@ public:
 
 	~JustInTimeArray();
 
-	// use resetContent() if you want to write to the array
-	// this way memory will not be freed and reallocated (slow process)
-	void reset();
-
 	// reset content of an array if it is allocated
 	void resetContent();
+
+	void releaseMemory();
 
 	// non-allocated arrays contains only default values
 	// this is a really fast content check without even looking at array content
@@ -97,8 +95,11 @@ public:
 		return !hasContent(bRelease);
 	}
 
-	void read(FDataStreamBase* pStream, bool bRead);
-	void write(FDataStreamBase* pStream, bool bWrite);
+	int getNumUsedElements() const;
+
+	// bEnable can be used like "uiFlag > x" to make oneline conditional loads
+	void read(FDataStreamBase* pStream, bool bEnable = true);
+	void write(FDataStreamBase* pStream);
 	void read(CvXMLLoadUtility* pXML, const char* sTag);
 };
 

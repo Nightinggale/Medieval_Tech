@@ -22,12 +22,6 @@ JustInTimeArray<T>::~JustInTimeArray()
 }
 
 template<class T>
-void JustInTimeArray<T>::reset()
-{
-	SAFE_DELETE_ARRAY(tArray);
-}
-
-template<class T>
 void JustInTimeArray<T>::resetContent()
 {
 	if (isAllocated())
@@ -37,6 +31,20 @@ void JustInTimeArray<T>::resetContent()
 			tArray[iIterator] = m_eDefault;
 		}
 	}
+}
+
+template<class T>
+void JustInTimeArray<T>::releaseMemory()
+{
+	// TODO find best memory management
+	// releasing memory here will make the game use less memory
+	// however it also increases the risk of memory fragmentation
+	// we will need to figure out if agressive reclaiming of memory is a good idea
+#if 1
+	SAFE_DELETE_ARRAY(tArray);
+#else
+	resetContent();
+#endif
 }
 
 template<class T>
@@ -97,38 +105,63 @@ bool JustInTimeArray<T>::hasContent(bool bRelease)
 	if (bRelease)
 	{
 		// array is allocated but has no content
-		SAFE_DELETE_ARRAY(tArray);
+		releaseMemory();
 	}
 	return false;
 };
 
 template<class T>
-void JustInTimeArray<T>::read(FDataStreamBase* pStream, bool bRead)
+int JustInTimeArray<T>::getNumUsedElements() const
 {
-	if (bRead)
+	int iMax = 0;
+	if (isAllocated())
 	{
-		if (tArray == NULL)
+		for (unsigned int iIndex = 0; iIndex < m_iLength; iIndex++)
 		{
-			tArray = new T[m_iLength];
+			if (tArray[iIndex] != m_eDefault)
+			{
+				iMax = 1 + iIndex;
+			}
 		}
-		pStream->Read(m_iLength, tArray);
+	}
+	return iMax;
+}
+
+template<class T>
+void JustInTimeArray<T>::read(FDataStreamBase* pStream, bool bEnable)
+{
+	if (bEnable)
+	{
+		int iNumElements = 0;
+		pStream->Read(&iNumElements);
+
+		resetContent();
+
+		for (int iIndex = 0; iIndex < iNumElements; iIndex++)
+		{
+			int iBuffer = 0;
+			pStream->Read(&iBuffer);
+			set(iBuffer, iIndex);
+		}
 	}
 }
 
 template<class T>
-void JustInTimeArray<T>::write(FDataStreamBase* pStream, bool bWrite)
+void JustInTimeArray<T>::write(FDataStreamBase* pStream)
 {
-	if (bWrite)
+	int iNumElements = getNumUsedElements();
+
+	pStream->Write(iNumElements);
+
+	if (iNumElements == 0)
 	{
-		if (tArray == NULL)
+		releaseMemory();
+	}
+	else
+	{
+		for (int iIndex = 0; iIndex < iNumElements; iIndex++)
 		{
-			// requested writing an empty array.
-			for (int i = 0; i < m_iLength; i++)
-			{
-				pStream->Write(m_eDefault);
-			}
-		} else {
-			pStream->Write(m_iLength, tArray);
+			pStream->Write((int)get(iIndex));
 		}
 	}
 }

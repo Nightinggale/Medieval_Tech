@@ -145,13 +145,7 @@ CvPlayer::~CvPlayer()
 	SAFE_DELETE_ARRAY(m_abOptions);
 
 	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
- 	if (m_cache_YieldEquipmentAmount != NULL)
- 	{
- 		for (int iProfession = 0; iProfession < GC.getNumProfessionInfos(); iProfession++) {
- 			m_cache_YieldEquipmentAmount[iProfession].reset();
- 		}
- 		SAFE_DELETE_ARRAY(m_cache_YieldEquipmentAmount);
- 	}
+ 	SAFE_DELETE_ARRAY(m_cache_YieldEquipmentAmount);
  	// cache CvPlayer::getYieldEquipmentAmount - end - Nightinggale
 }
 

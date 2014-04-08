@@ -324,16 +324,13 @@ void CvProfessionInfo::read(FDataStreamBase* stream)
 	}
 
 	SAFE_DELETE_ARRAY(m_abFreePromotions);*/
-	bool bLoad;
-	stream->Read(&bLoad);
-	m_acYieldEquipments.read(stream, bLoad);
 	//m_abFreePromotions = new bool[GC.getNumPromotionInfos()];
 	//stream->Read(GC.getNumPromotionInfos(), m_abFreePromotions);
-	m_acYieldEquipments.read(stream, bLoad);
-	m_abFreePromotions.read(stream, bLoad);
+	m_acYieldEquipments.read(stream);
+	m_abFreePromotions.read(stream);
 
 	///TKs Med BM
-	m_aiCombatGearTypes.read(stream, true); // CombatGearTypes - Nightinggale
+	m_aiCombatGearTypes.read(stream); // CombatGearTypes - Nightinggale
 	///TKe
 
 	// MultipleYieldsProduced Start by Aymerick 22/01/2010
@@ -393,17 +390,13 @@ void CvProfessionInfo::write(FDataStreamBase* stream)
 		stream->Write(m_aYieldEquipments[i].iYieldType);
 		stream->Write(m_aYieldEquipments[i].iYieldAmount);
 	}*/
-	m_acYieldEquipments.hasContent();
-	stream->Write(m_acYieldEquipments.isAllocated());
-	m_acYieldEquipments.write(stream, m_acYieldEquipments.isAllocated());
+	m_acYieldEquipments.write(stream);
 
 	//stream->Write(GC.getNumPromotionInfos(), m_abFreePromotions);
 
-	m_abFreePromotions.hasContent();
-	stream->Write(m_abFreePromotions.isAllocated());
-	m_abFreePromotions.write(stream, m_abFreePromotions.isAllocated());
+	m_abFreePromotions.write(stream);
 	///TKs Med BM
-	m_aiCombatGearTypes.write(stream, true); // CombatGearTypes - Nightinggale
+	m_aiCombatGearTypes.write(stream); // CombatGearTypes - Nightinggale
 	///TKe
 
 	// MultipleYieldsProduced Start by Aymerick 22/01/2010

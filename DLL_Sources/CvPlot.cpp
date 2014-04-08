@@ -117,7 +117,7 @@ void CvPlot::uninit()
 
 	SAFE_DELETE_ARRAY(m_abRiverCrossing);
 	///Tks TradScreen
-	m_asTradeScreenDistance.reset();
+	m_asTradeScreenDistance.resetContent();
 	///TKe
 	//SAFE_DELETE_ARRAY(m_abRevealed);
 	/// player bitmap - start - Nightinggale
@@ -209,7 +209,7 @@ void CvPlot::reset(int iX, int iY, bool bConstructorCall)
 		m_aiYield[iI] = 0;
 	}
 	///Tks TradeScreen
-	m_asTradeScreenDistance.reset();
+	m_asTradeScreenDistance.resetContent();
 	///Tke
 	updateImpassable();
 }
@@ -7538,15 +7538,6 @@ ColorTypes CvPlot::plotMinimapColor()
 	return (ColorTypes)GC.getInfoTypeForString("COLOR_CLEAR");
 }
 
-
-// just-in-time yield arrays - start - Nightinggale
-// bitmap to tell which arrays are saved
-enum
-{
-	SAVE_BIT_TRADE_DISTANCE               = 1 << 0,
-};
-// just-in-time yield arrays - end - Nightinggale
-
 //
 // read object from a stream
 // used during load
@@ -7563,11 +7554,6 @@ void CvPlot::read(FDataStreamBase* pStream)
 
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
-	
-	// just-in-time yield arrays - start - Nightinggale
-	uint arrayBitmap = 0;
-	pStream->Read(&arrayBitmap);
-	// just-in-time yield arrays - end - Nightinggale
 
 	pStream->Read(&m_iX);
 	pStream->Read(&m_iY);
@@ -7586,7 +7572,7 @@ void CvPlot::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iCrumbs);
 	///TKs TradeScreen
 	pStream->Read(&m_iTradeScreenAccess);
-	m_asTradeScreenDistance.read(pStream, arrayBitmap & SAVE_BIT_TRADE_DISTANCE);
+	m_asTradeScreenDistance.read(pStream);
 	///Tke
 	pStream->Read(&bVal);
 	m_bStartingPlot = bVal;
@@ -7798,14 +7784,6 @@ void CvPlot::write(FDataStreamBase* pStream)
 	uint uiFlag=2;
 	pStream->Write(uiFlag);		// flag for expansion
 
-	// just-in-time yield arrays - start - Nightinggale
-	uint arrayBitmap = 0;
-
-	arrayBitmap |= m_asTradeScreenDistance.hasContent()               ? SAVE_BIT_TRADE_DISTANCE : 0;
-
-	pStream->Write(arrayBitmap);
-	// just-in-time yield arrays - end - Nightinggale
-
 	pStream->Write(m_iX);
 	pStream->Write(m_iY);
 	pStream->Write(m_iArea);
@@ -7823,7 +7801,7 @@ void CvPlot::write(FDataStreamBase* pStream)
 	pStream->Write(m_iCrumbs);
 	///TKs TradeScreen
 	pStream->Write(m_iTradeScreenAccess);
-	m_asTradeScreenDistance.write(pStream, arrayBitmap & SAVE_BIT_TRADE_DISTANCE);
+	m_asTradeScreenDistance.write(pStream);
 	///Tke
 	pStream->Write(m_bStartingPlot);
 	pStream->Write(m_bHills);

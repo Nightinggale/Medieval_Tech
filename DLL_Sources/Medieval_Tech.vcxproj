@@ -35,6 +35,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="JustInTimeArray.cpp" />
     <ClCompile Include="CvInfoProfessions.cpp" />
     <ClCompile Include="FDataStreamBase.cpp" />
     <ClCompile Include="CyPlotGroup.cpp" />

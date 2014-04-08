@@ -1,9 +1,6 @@
 #pragma once
 // JustInTimeArray.h
 
-#include "CvDLLEntity.h"
-#include "CvGlobals.h"
-
 /*
  * Guide for just-in-time array usage
  *  This is classes containing a single pointer. This means from a coding point of view they can be used like an array.
@@ -38,9 +35,9 @@
  *   Copy class YieldArray and change:
  *    2 * YieldArray (function and constructor) into a suitable name
 *     2 * NUM_YIELD_TYPES into whatever length you need.
- *
- *  The reason why the class function definitions are inside the declaration is to avoid compiler errors regarding templates.
  */
+
+class CvXMLLoadUtility;
 
 template<class T> class JustInTimeArray
 {
@@ -51,37 +48,20 @@ private:
 	const T m_eDefault;
 
 public:
-	JustInTimeArray(JIT_ARRAY_TYPES eType, T eDefault = 0)
-	: tArray(NULL)
-	, m_iType(eType)
-	, m_iLength(GC.getArrayLength(eType))
-	, m_eDefault(eDefault)
-	{}
+	JustInTimeArray(JIT_ARRAY_TYPES eType, T eDefault = 0);
 
-	~JustInTimeArray()
-	{
-		SAFE_DELETE_ARRAY(tArray);
-	}
+	~JustInTimeArray();
 
 	// use resetContent() if you want to write to the array
 	// this way memory will not be freed and reallocated (slow process)
-	inline void reset()
-	{
-		SAFE_DELETE_ARRAY(tArray);
-	}
+	void reset();
 
 	// reset content of an array if it is allocated
-	inline void resetContent()
-	{
-		if (isAllocated())
-		{
-			for (int iIterator = 0; iIterator < m_iLength; ++iIterator)
-			{
-				tArray[iIterator] = m_eDefault;
-			}
-		}
-	}
+	void resetContent();
 
+	// non-allocated arrays contains only default values
+	// this is a really fast content check without even looking at array content
+	// note that it is possible to have allocated arrays with only default content
 	inline bool isAllocated() const
 	{
 		return tArray != NULL;
@@ -92,6 +72,7 @@ public:
 		return m_iLength;
 	}
 
+	// get stored value
 	inline T get(int iIndex) const
 	{
 		FAssert(iIndex >= 0);
@@ -99,111 +80,26 @@ public:
 		return tArray ? tArray[iIndex] : m_eDefault;
 	}
 
-	inline void set(T value, int iIndex)
-	{
-		FAssert(iIndex >= 0);
-		FAssert(iIndex < m_iLength);
+	// assign argument to storage
+	void set(T value, int iIndex);
 
-		if (tArray == NULL)
-		{
-			if (value == m_eDefault)
-			{
-				// no need to allocate memory to assign a default (false) value
-				return;
-			}
-			tArray = new T[m_iLength];
-			resetContent();
-		}
-		tArray[iIndex] = value;
-	}
+	// add argument to stored value
+	void add(T value, int iIndex);
 
-	inline void add(T value, int iIndex)
-	{
-		this->set(value + this->get(iIndex), iIndex);
-	}
+	// replace value with argument if argument is higher than the already stored value
+	void keepMax(T value, int iIndex);
 
-	inline void keepMax(T value, int iIndex)
-	{
-		if (value > get(iIndex))
-		{
-			set(value, iIndex);
-		}
-	}
+	JIT_ARRAY_TYPES getType() const;
 
-	unsigned short getType() const
-	{
-		return m_iType;
-	}
-
-	bool hasContent(bool bRelease = true)
-	{
-		if (tArray == NULL)
-		{
-			return false;
-		}
-		for (int iIterator = 0; iIterator < m_iLength; ++iIterator)
-		{
-			if (tArray[iIterator])
-			{
-				return true;
-			}
-		}
-
-		if (bRelease)
-		{
-			// array is allocated but has no content
-			SAFE_DELETE_ARRAY(tArray);
-		}
-		return false;
-	};
+	bool hasContent(bool bRelease = true);
 	inline bool isEmpty(bool bRelease = true)
 	{
 		return !hasContent(bRelease);
 	}
 
-	void read(FDataStreamBase* pStream, bool bRead)
-	{
-		if (bRead)
-		{
-			if (tArray == NULL)
-			{
-				tArray = new T[m_iLength];
-			}
-			pStream->Read(m_iLength, tArray);
-		}
-	}
-
-	void write(FDataStreamBase* pStream, bool bWrite)
-	{
-		if (bWrite)
-		{
-			if (tArray == NULL)
-			{
-				// requested writing an empty array.
-				for (int i = 0; i < m_iLength; i++)
-				{
-					pStream->Write(m_eDefault);
-				}
-			} else {
-				pStream->Write(m_iLength, tArray);
-			}
-		}
-	}
-
-	void read(CvXMLLoadUtility* pXML, const char* sTag)
-	{
-		// read the data into a temp int array and then set the permanent array with those values.
-		// this is a workaround for template issues
-		FAssert(this->m_iLength > 0);
-		int *iArray = new int[this->m_iLength];
-		pXML->SetVariableListTagPair(&iArray, sTag, this->m_iLength, 0);
-		for (int i = 0; i < this->m_iLength; i++)
-		{
-			this->set(iArray[i], i);
-		}
-		SAFE_DELETE_ARRAY(iArray);
-		this->hasContent(); // release array if possible
-	}
+	void read(FDataStreamBase* pStream, bool bRead);
+	void write(FDataStreamBase* pStream, bool bWrite);
+	void read(CvXMLLoadUtility* pXML, const char* sTag);
 };
 
 

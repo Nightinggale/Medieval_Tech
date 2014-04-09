@@ -3219,7 +3219,11 @@ int CvCity::getProfessionOutput(ProfessionTypes eProfession, const CvUnit* pUnit
     {
         iModifier += GC.getUnitInfo(pUnit->getUnitType()).getYieldModifier(eYieldProduced);
         iExtra += GC.getUnitInfo(pUnit->getUnitType()).getYieldChange(eYieldProduced);
-		iExtra += pUnit->getBuildingWorkedBonus();//Tks Civilian Promotions
+		if (eYieldProduced != YIELD_EDUCATION)
+		{
+			iExtra += pUnit->getBuildingWorkedBonus();//Tks Civilian Promotions
+		}
+
     }
 
 

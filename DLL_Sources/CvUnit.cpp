@@ -183,6 +183,11 @@ void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAIT
 		if (m_pUnitInfo->getFreePromotions(iI))
 		{
 			setHasRealPromotion(((PromotionTypes)iI), true);
+			//TKs Civilian Promo
+			if (GC.getPromotionInfo((PromotionTypes)iI).isCivilian())
+			{
+				processPromotion((PromotionTypes)iI, 1);
+			}
 		}
 	}
 
@@ -11552,7 +11557,7 @@ void CvUnit::setProfession(ProfessionTypes eProfession, bool bForce)
 				{
 					if (isHasPromotion((PromotionTypes) iPromotion))
 					{
-						if (kProfession.isCitizen() && !GC.getPromotionInfo((PromotionTypes) iPromotion).isCivilian())
+						if (!GC.getPromotionInfo((PromotionTypes) iPromotion).isCivilian())
 						{
 							aiPromotionChange.set(-1, iPromotion);
 						}
@@ -11621,7 +11626,10 @@ void CvUnit::setProfession(ProfessionTypes eProfession, bool bForce)
 				{
 					if (isHasPromotion((PromotionTypes) iPromotion))
 					{
-						aiPromotionChange.add(1, iPromotion);
+						if (!GC.getPromotionInfo((PromotionTypes) iPromotion).isCivilian())
+						{
+							aiPromotionChange.add(1, iPromotion);
+						}
 					}
 				}
 			}

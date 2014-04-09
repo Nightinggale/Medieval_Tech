@@ -575,7 +575,7 @@
 			<bCtrlDownAlt>0</bCtrlDownAlt>
 			<iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
 			<iOrderPriority>2</iOrderPriority>
-			<bConfirmCommand>0</bConfirmCommand>
+			<bConfirmCommand>1</bConfirmCommand>
 			<bVisible>1</bVisible>
 			<Button>Art/Interface/Game Hud/Actions/EstablishTradePost.dds</Button>
 		</CommandInfo>

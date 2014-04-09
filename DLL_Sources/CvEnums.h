@@ -2102,6 +2102,7 @@ enum DllExport FeatTypes
 	///TKs Med
 	FEAT_PILGRAM,
 	FEAT_MARAUDER,
+	FEAT_FIRST_CIVIC,
 	///TKe
 
 #ifdef _USRDLL

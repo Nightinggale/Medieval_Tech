@@ -14,6 +14,46 @@
 		<Spanish>[ICON_BULLET]</Spanish>
 	</TEXT>
   <TEXT>
+    <Tag>TXT_KEY_BLANK</Tag>
+    <English></English>
+    <French></French>
+    <German></German>
+    <Italian></Italian>
+    <Spanish></Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_DEFAULT_POP_UNIT</Tag>
+    <English>Growth Unit: [COLOR_UNIT_TEXT]%s1[COLOR_REVERT]</English>
+    <French></French>
+    <German></German>
+    <Italian></Italian>
+    <Spanish></Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_NO_DEFAULT_LUXURY_POP_UNIT</Tag>
+    <English>No Luxury Growth Unit</English>
+    <French></French>
+    <German></German>
+    <Italian></Italian>
+    <Spanish></Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_DEFAULT_LUXURY_POP_UNIT</Tag>
+    <English>Luxury Growth Unit: [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]</English>
+    <French></French>
+    <German></German>
+    <Italian></Italian>
+    <Spanish></Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_RANDOM_POP_UNIT</Tag>
+    <English>Random Growth Unit: [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT](%d2%)</English>
+    <French></French>
+    <German></German>
+    <Italian></Italian>
+    <Spanish></Spanish>
+  </TEXT>
+  <TEXT>
     <Tag>TXT_KEY_CIVICS_LACK_FUNDS</Tag>
     <English>Lack Funds</English>
     <French>Lack Funds</French>

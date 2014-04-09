@@ -1568,10 +1568,6 @@
       </UpkeepYields>
       <AllowsUnitClassesImmigration>
         <AllowsUnitClass>
-          <AllowsUnit>UNITCLASS_SERF</AllowsUnit>
-          <iChange>-1</iChange>
-        </AllowsUnitClass>
-        <AllowsUnitClass>
           <AllowsUnit>UNITCLASS_COTTER</AllowsUnit>
           <iChange>-1</iChange>
         </AllowsUnitClass>

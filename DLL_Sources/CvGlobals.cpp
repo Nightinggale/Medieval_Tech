@@ -2500,7 +2500,7 @@ int CvGlobals::getXMLuncached(XMLconstantTypes eVal) const
 			return this->getDefineINT("DEFAULT_CENSURETYPE_INTERDICT_COUNT");
 			break;
 		case XML_DEFAULT_GLOBAL_EFFECT_ANARCHY:
-			return this->getDefineINT("XML_DEFAULT_GLOBAL_EFFECT_ANARCHY");
+			return this->getDefineINT("DEFAULT_GLOBAL_EFFECT_ANARCHY");
 			break;
 		case XML_DEFAULT_COMBAT_FOR_TRAINING:
 			return this->getDefineINT("DEFAULT_COMBAT_FOR_TRAINING");

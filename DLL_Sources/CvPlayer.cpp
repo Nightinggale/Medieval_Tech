@@ -11157,7 +11157,14 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
 
 	CvCivicInfo& kCivicInfo = GC.getCivicInfo(eCivic);
 	char szOut[1024];
-    sprintf(szOut, "######################## Player %d %S Has Aquired %S\n", getID(), getNameKey(), GC.getCivicInfo(eCivic).getTextKeyWide());
+	if (iChange > 0)
+	{
+		sprintf(szOut, "######################## Player %d %S Has Aquired %S\n", getID(), getNameKey(), GC.getCivicInfo(eCivic).getTextKeyWide());
+	}
+	else
+	{
+		sprintf(szOut, "######################## Player %d %S Has Removed %S\n", getID(), getNameKey(), GC.getCivicInfo(eCivic).getTextKeyWide());
+	}
     gDLL->messageControlLog(szOut);
 
 	//Tks Civics Screen //Civic Reset
@@ -14862,12 +14869,14 @@ void CvPlayer::changeAnarchyTurns(int iChange)
 			///MESSAGE ADDEED!!!!!!!!!!!!
 			if (isAnarchy())
 			{
-				processCivics((CivicTypes)XML_DEFAULT_GLOBAL_EFFECT_ANARCHY, 1);
+				//processCivics((CivicTypes)XML_DEFAULT_GLOBAL_EFFECT_ANARCHY, 1);
+				processCivics((CivicTypes)GC.getDefineINT("DEFAULT_GLOBAL_EFFECT_ANARCHY"), 1);
 				gDLL->getInterfaceIFace()->addMessage(getID(), true, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_MISC_REVOLUTION_HAS_BEGUN").GetCString(), "AS2D_REVOLTSTART", MESSAGE_TYPE_MAJOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WARNING_TEXT"));
 			}
 			else
 			{
-				processCivics((CivicTypes)XML_DEFAULT_GLOBAL_EFFECT_ANARCHY, -1);
+				//processCivics((CivicTypes)XML_DEFAULT_GLOBAL_EFFECT_ANARCHY, -1);
+				processCivics((CivicTypes)GC.getDefineINT("DEFAULT_GLOBAL_EFFECT_ANARCHY"), -1);
 				gDLL->getInterfaceIFace()->addMessage(getID(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_MISC_REVOLUTION_OVER").GetCString(), "AS2D_REVOLTEND", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WARNING_TEXT"));
 			}
 
@@ -20298,13 +20307,13 @@ void CvPlayer::updateImmigrantsOnDock()
 		// add immigrants on the dock
 		while (m_iNumDocksNextUnits > (signed int)m_aDocksNextUnits.size())
 		{
-			m_aDocksNextUnits.pop_back();
+			m_aDocksNextUnits.push_back(pickBestImmigrant());
 		}
 
 		// remove immigrants from the dock
 		while (m_iNumDocksNextUnits < (signed int)m_aDocksNextUnits.size())
 		{
-			m_aDocksNextUnits.push_back(pickBestImmigrant());
+			m_aDocksNextUnits.pop_back();
 		}
 	}
 

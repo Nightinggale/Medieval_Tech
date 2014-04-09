@@ -3050,6 +3050,52 @@ void CvDLLWidgetData::parsePopulationHelp(CvWidgetDataStruct &widgetDataStruct, 
 		//szBuffer.assign(gDLL->getText("TXT_KEY_MISC_FOOD_THRESHOLD", pHeadSelectedCity->getFood(), pHeadSelectedCity->growthThreshold()));
 #ifdef USE_NOBLE_CLASS
 		szBuffer.assign(gDLL->getText("TXT_KEY_MISC_LUXURY_FOOD_THRESHOLD", pHeadSelectedCity->getFood(), pHeadSelectedCity->growthThreshold(), pHeadSelectedCity->getYieldStored(YIELD_GRAIN), GC.getXMLval(XML_BASE_CITY_LUXURY_FOOD_THRESHOLD_MOD), GC.getYieldInfo(YIELD_GRAIN).getChar()));
+		UnitTypes eUnit = GET_PLAYER(pHeadSelectedCity->getOwnerINLINE()).getDefaultPopUnit();
+		if (eUnit != NO_UNIT)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append((gDLL->getText("TXT_KEY_DEFAULT_POP_UNIT", GC.getUnitInfo(eUnit).getDescription())));
+		}
+		UnitTypes eLuxuryUnit = GET_PLAYER(pHeadSelectedCity->getOwnerINLINE()).getLuxuryPopUnit();
+		if (eLuxuryUnit != NO_UNIT)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append((gDLL->getText("TXT_KEY_DEFAULT_LUXURY_POP_UNIT", GC.getUnitInfo(eLuxuryUnit).getDescription())));
+		}
+		else
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append((gDLL->getText("TXT_KEY_NO_DEFAULT_LUXURY_POP_UNIT")));
+		}
+
+		///TKs Civics Screen
+			for (int iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
+			{
+				if (GET_PLAYER(pHeadSelectedCity->getOwnerINLINE()).getCivic((CivicOptionTypes)iI) != NO_CIVIC)
+				{
+					CvCivicInfo& kCivicInfo =  GC.getCivicInfo(GET_PLAYER(pHeadSelectedCity->getOwnerINLINE()).getCivic((CivicOptionTypes)iI));
+
+					if (kCivicInfo.getNumRandomGrowthUnits() > 0)
+					{
+						for (int iI = 0; iI < kCivicInfo.getNumRandomGrowthUnits(); iI++)
+						{
+							//int iLoopUnitClass = kCivicInfo.getRandomGrowthUnits(iI);
+							UnitTypes eRandomUnit = NO_UNIT;
+							eRandomUnit = (UnitTypes)GC.getCivilizationInfo(pHeadSelectedCity->getCivilizationType()).getCivilizationUnits((UnitTypes)kCivicInfo.getRandomGrowthUnits(iI));
+							if (NO_UNIT != eRandomUnit)
+							{
+								int iRandomPercent = kCivicInfo.getRandomGrowthUnitsPercent(iI);
+								szBuffer.append(NEWLINE);
+								szBuffer.append((gDLL->getText("TXT_KEY_RANDOM_POP_UNIT", GC.getUnitInfo(eRandomUnit).getDescription(), iRandomPercent)));
+							}
+						}
+					}
+		
+				}
+			}
+			
+
+
 #else
 		szBuffer.assign(gDLL->getText("TXT_KEY_MISC_FOOD_THRESHOLD", pHeadSelectedCity->getFood(), pHeadSelectedCity->growthThreshold()));
 #endif

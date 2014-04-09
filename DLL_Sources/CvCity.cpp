@@ -7331,8 +7331,8 @@ void CvCity::doGrowth()
 							if (GC.getGameINLINE().getSorenRandNum(100, "Percent Growth Unit") <= iRandomPercent)
 							{
 								int iLoopUnitClass = kCivicInfo.getRandomGrowthUnits(iI);
-								UnitTypes eRandomUnit = (UnitTypes)kCivicInfo.getRandomGrowthUnits(iI);
-								eRandomUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eRandomUnit);
+								UnitTypes eRandomUnit = NO_UNIT;
+								eRandomUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits((UnitClassTypes)kCivicInfo.getRandomGrowthUnits(iI));
 								if (NO_UNIT != eRandomUnit)
 								{
 									aRandomGrowth.push_back(eRandomUnit);

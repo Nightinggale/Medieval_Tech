@@ -29,6 +29,8 @@
 // Public Functions...
 
 CvCity::CvCity()
+	: m_ja_iBuildingOriginalOwner(-1)
+	, m_ja_iBuildingOriginalTime(MIN_INT)
 {
     ///Tks Med
     m_aiEventTimers = new int[2];
@@ -52,17 +54,11 @@ CvCity::CvCity()
 	m_bmScoutVisited = 0;
 	/// player bitmap - end - Nightinggale
 
-	m_paiBuildingProduction = NULL;
-	m_paiBuildingProductionTime = NULL;
-	m_paiBuildingOriginalOwner = NULL;
-	m_paiBuildingOriginalTime = NULL;
 	m_paiUnitProduction = NULL;
 	m_paiUnitProductionTime = NULL;
 	m_aiSpecialistWeights = NULL;
 	m_paiUnitCombatFreeExperience = NULL;
 	m_paiFreePromotionCount = NULL;
-	m_pabHasRealBuilding = NULL;
-	m_pabHasFreeBuilding = NULL;
 
 	m_paiWorkingPlot = NULL;
 
@@ -436,17 +432,17 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 
 void CvCity::uninit()
 {
-	SAFE_DELETE_ARRAY(m_paiBuildingProduction);
-	SAFE_DELETE_ARRAY(m_paiBuildingProductionTime);
-	SAFE_DELETE_ARRAY(m_paiBuildingOriginalOwner);
-	SAFE_DELETE_ARRAY(m_paiBuildingOriginalTime);
+	m_ja_iBuildingProduction.resetContent();
+	m_ja_iBuildingProductionTime.resetContent();
+	m_ja_iBuildingOriginalOwner.resetContent();
+	m_ja_iBuildingOriginalTime.resetContent();
 	SAFE_DELETE_ARRAY(m_paiUnitProduction);
 	SAFE_DELETE_ARRAY(m_paiUnitProductionTime);
 	SAFE_DELETE_ARRAY(m_aiSpecialistWeights);
 	SAFE_DELETE_ARRAY(m_paiUnitCombatFreeExperience);
 	SAFE_DELETE_ARRAY(m_paiFreePromotionCount);
-	SAFE_DELETE_ARRAY(m_pabHasRealBuilding);
-	SAFE_DELETE_ARRAY(m_pabHasFreeBuilding);
+	m_ja_bHasRealBuilding.resetContent();
+	m_ja_bHasFreeBuilding.resetContent();
 
 	SAFE_DELETE_ARRAY(m_paiWorkingPlot);
 
@@ -605,23 +601,13 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 	if (!bConstructorCall)
 	{
 		FAssertMsg((0 < GC.getNumBuildingInfos()),  "GC.getNumBuildingInfos() is not greater than zero but an array is being allocated in CvCity::reset");
-		//m_ppBuildings = new CvBuilding *[GC.getNumBuildingInfos()];
-		m_paiBuildingProduction = new int[GC.getNumBuildingInfos()];
-		m_paiBuildingProductionTime = new int[GC.getNumBuildingInfos()];
-		m_paiBuildingOriginalOwner = new int[GC.getNumBuildingInfos()];
-		m_paiBuildingOriginalTime = new int[GC.getNumBuildingInfos()];
-		m_pabHasRealBuilding = new bool[GC.getNumBuildingInfos()];
-		m_pabHasFreeBuilding = new bool[GC.getNumBuildingInfos()];
-		for (iI = 0; iI < GC.getNumBuildingInfos(); iI++)
-		{
-			//m_ppBuildings[iI] = NULL;
-			m_paiBuildingProduction[iI] = 0;
-			m_paiBuildingProductionTime[iI] = 0;
-			m_paiBuildingOriginalOwner[iI] = -1;
-			m_paiBuildingOriginalTime[iI] = MIN_INT;
-			m_pabHasRealBuilding[iI] = false;
-			m_pabHasFreeBuilding[iI] = false;
-		}
+		
+		m_ja_iBuildingProduction.resetContent();
+		m_ja_iBuildingProductionTime.resetContent();
+		m_ja_iBuildingOriginalOwner.resetContent();
+		m_ja_iBuildingOriginalTime.resetContent();
+		m_ja_bHasRealBuilding.resetContent();
+		m_ja_bHasFreeBuilding.resetContent();
 
 		FAssertMsg((0 < GC.getNumUnitInfos()),  "GC.getNumUnitInfos() is not greater than zero but an array is being allocated in CvCity::reset");
 		m_paiUnitProduction = new int[GC.getNumUnitInfos()];
@@ -5942,9 +5928,7 @@ void CvCity::setScriptData(std::string szNewValue)
 
 int CvCity::getBuildingProduction(BuildingTypes eIndex)	const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < GC.getNumBuildingInfos(), "eIndex expected to be < GC.getNumBuildingInfos()");
-	return m_paiBuildingProduction[eIndex];
+	return m_ja_iBuildingProduction.get(eIndex);
 }
 
 
@@ -5955,7 +5939,7 @@ void CvCity::setBuildingProduction(BuildingTypes eIndex, int iNewValue)
 
 	if (getBuildingProduction(eIndex) != iNewValue)
 	{
-		m_paiBuildingProduction[eIndex] = iNewValue;
+		m_ja_iBuildingProduction.set(iNewValue, eIndex);
 		FAssert(getBuildingProduction(eIndex) >= 0);
 
 		if (getTeam() == GC.getGameINLINE().getActiveTeam())
@@ -5980,17 +5964,13 @@ void CvCity::changeBuildingProduction(BuildingTypes eIndex, int iChange)
 
 int CvCity::getBuildingProductionTime(BuildingTypes eIndex)	const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < GC.getNumBuildingInfos(), "eIndex expected to be < GC.getNumBuildingInfos()");
-	return m_paiBuildingProductionTime[eIndex];
+	return m_ja_iBuildingProductionTime.get(eIndex);
 }
 
 
 void CvCity::setBuildingProductionTime(BuildingTypes eIndex, int iNewValue)
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < GC.getNumBuildingInfos(), "eIndex expected to be < GC.getNumBuildingInfos()");
-	m_paiBuildingProductionTime[eIndex] = iNewValue;
+	m_ja_iBuildingProductionTime.set(iNewValue, eIndex);
 	FAssert(getBuildingProductionTime(eIndex) >= 0);
 }
 
@@ -6003,17 +5983,13 @@ void CvCity::changeBuildingProductionTime(BuildingTypes eIndex, int iChange)
 
 int CvCity::getBuildingOriginalOwner(BuildingTypes eIndex) const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < GC.getNumBuildingInfos(), "eIndex expected to be < GC.getNumBuildingInfos()");
-	return m_paiBuildingOriginalOwner[eIndex];
+	return m_ja_iBuildingOriginalOwner.get(eIndex);
 }
 
 
 int CvCity::getBuildingOriginalTime(BuildingTypes eIndex) const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < GC.getNumBuildingInfos(), "eIndex expected to be < GC.getNumBuildingInfos()");
-	return m_paiBuildingOriginalTime[eIndex];
+	return m_ja_iBuildingOriginalTime.get(eIndex);
 }
 
 
@@ -6524,9 +6500,7 @@ int CvCity::getNextFreeUnitId() const
 
 bool CvCity::isHasRealBuilding(BuildingTypes eIndex) const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < GC.getNumBuildingInfos(), "eIndex expected to be < GC.getNumBuildingInfos()");
-	return m_pabHasRealBuilding[eIndex];
+	return m_ja_bHasRealBuilding.get(eIndex);
 }
 
 
@@ -6549,18 +6523,18 @@ void CvCity::setHasRealBuildingTimed(BuildingTypes eIndex, bool bNewValue, bool 
 			abOldBuildings[i] = isHasBuilding((BuildingTypes) i);
 		}
 
-		m_pabHasRealBuilding[eIndex] = bNewValue;
+		m_ja_bHasRealBuilding.set(bNewValue, eIndex);
 		setYieldRateDirty();
 
 		if (isHasRealBuilding(eIndex))
 		{
-			m_paiBuildingOriginalOwner[eIndex] = eOriginalOwner;
-			m_paiBuildingOriginalTime[eIndex] = iOriginalTime;
+			m_ja_iBuildingOriginalOwner.set(eOriginalOwner, eIndex);
+			m_ja_iBuildingOriginalTime.set(iOriginalTime, eIndex);
 		}
 		else
 		{
-			m_paiBuildingOriginalOwner[eIndex] = NO_PLAYER;
-			m_paiBuildingOriginalTime[eIndex] = MIN_INT;
+			m_ja_iBuildingOriginalOwner.set(NO_PLAYER, eIndex);
+			m_ja_iBuildingOriginalTime.set(MIN_INT, eIndex);
 		}
 
 		for (int i = 0; i < GC.getNumBuildingInfos(); ++i)
@@ -6598,9 +6572,7 @@ void CvCity::setHasRealBuildingTimed(BuildingTypes eIndex, bool bNewValue, bool 
 
 bool CvCity::isHasFreeBuilding(BuildingTypes eIndex) const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < GC.getNumBuildingInfos(), "eIndex expected to be < GC.getNumBuildingInfos()");
-	return m_pabHasFreeBuilding[eIndex];
+	return m_ja_bHasFreeBuilding.get(eIndex);
 }
 
 
@@ -6617,7 +6589,7 @@ void CvCity::setHasFreeBuilding(BuildingTypes eIndex, bool bNewValue)
 			abOldBuildings[i] = isHasBuilding((BuildingTypes) i);
 		}
 
-		m_pabHasFreeBuilding[eIndex] = bNewValue;
+		m_ja_bHasFreeBuilding.set(bNewValue, eIndex);
 		setYieldRateDirty();
 
 		for (int i = 0; i < GC.getNumBuildingInfos(); ++i)
@@ -8468,17 +8440,17 @@ void CvCity::read(FDataStreamBase* pStream)
 	pStream->ReadString(m_szName);
 	pStream->ReadString(m_szScriptData);
 
-	pStream->Read(GC.getNumBuildingInfos(), m_paiBuildingProduction);
-	pStream->Read(GC.getNumBuildingInfos(), m_paiBuildingProductionTime);
-	pStream->Read(GC.getNumBuildingInfos(), m_paiBuildingOriginalOwner);
-	pStream->Read(GC.getNumBuildingInfos(), m_paiBuildingOriginalTime);
+	m_ja_iBuildingProduction.read(pStream);
+	m_ja_iBuildingProductionTime.read(pStream);
+	m_ja_iBuildingOriginalOwner.read(pStream);
+	m_ja_iBuildingOriginalTime.read(pStream);
 	pStream->Read(GC.getNumUnitInfos(), m_paiUnitProduction);
 	pStream->Read(GC.getNumUnitInfos(), m_paiUnitProductionTime);
 	pStream->Read(GC.getNumUnitInfos(), m_aiSpecialistWeights);
 	pStream->Read(GC.getNumUnitCombatInfos(), m_paiUnitCombatFreeExperience);
 	pStream->Read(GC.getNumPromotionInfos(), m_paiFreePromotionCount);
-	pStream->Read(GC.getNumBuildingInfos(), m_pabHasRealBuilding);
-	pStream->Read(GC.getNumBuildingInfos(), m_pabHasFreeBuilding);
+	m_ja_bHasRealBuilding.read(pStream);
+	m_ja_bHasFreeBuilding.read(pStream);
 
 	pStream->Read(NUM_CITY_PLOTS, m_paiWorkingPlot);
 
@@ -8695,17 +8667,17 @@ void CvCity::write(FDataStreamBase* pStream)
 	pStream->WriteString(m_szName);
 	pStream->WriteString(m_szScriptData);
 
-	pStream->Write(GC.getNumBuildingInfos(), m_paiBuildingProduction);
-	pStream->Write(GC.getNumBuildingInfos(), m_paiBuildingProductionTime);
-	pStream->Write(GC.getNumBuildingInfos(), m_paiBuildingOriginalOwner);
-	pStream->Write(GC.getNumBuildingInfos(), m_paiBuildingOriginalTime);
+	m_ja_iBuildingProduction.write(pStream);
+	m_ja_iBuildingProductionTime.write(pStream);
+	m_ja_iBuildingOriginalOwner.write(pStream);
+	m_ja_iBuildingOriginalTime.write(pStream);
 	pStream->Write(GC.getNumUnitInfos(), m_paiUnitProduction);
 	pStream->Write(GC.getNumUnitInfos(), m_paiUnitProductionTime);
 	pStream->Write(GC.getNumUnitInfos(), m_aiSpecialistWeights);
 	pStream->Write(GC.getNumUnitCombatInfos(), m_paiUnitCombatFreeExperience);
 	pStream->Write(GC.getNumPromotionInfos(), m_paiFreePromotionCount);
-	pStream->Write(GC.getNumBuildingInfos(), m_pabHasRealBuilding);
-	pStream->Write(GC.getNumBuildingInfos(), m_pabHasFreeBuilding);
+	m_ja_bHasRealBuilding.write(pStream);
+	m_ja_bHasFreeBuilding.write(pStream);
 
 	pStream->Write(NUM_CITY_PLOTS, m_paiWorkingPlot);
 

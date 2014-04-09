@@ -679,17 +679,17 @@ protected:
 	/// player bitmap - end - Nightinggale
 	CvWString m_szName;
 	CvString m_szScriptData;
-	int* m_paiBuildingProduction;
-	int* m_paiBuildingProductionTime;
-	int* m_paiBuildingOriginalOwner;
-	int* m_paiBuildingOriginalTime;
+	BuildingArray<int> m_ja_iBuildingProduction;
+	BuildingArray<int> m_ja_iBuildingProductionTime;
+	BuildingArray<int> m_ja_iBuildingOriginalOwner;
+	BuildingArray<int> m_ja_iBuildingOriginalTime;
 	int* m_paiUnitProduction;
 	int* m_paiUnitProductionTime;
 	int* m_aiSpecialistWeights;
 	int* m_paiUnitCombatFreeExperience;
 	int* m_paiFreePromotionCount;
-	bool* m_pabHasRealBuilding;
-	bool* m_pabHasFreeBuilding;
+	BuildingArray<bool> m_ja_bHasRealBuilding;
+	BuildingArray<bool> m_ja_bHasFreeBuilding;
 	int* m_paiWorkingPlot;
 	IDInfo* m_paTradeCities;
 	mutable CLinkList<OrderData> m_orderQueue;

@@ -1187,7 +1187,7 @@
 	</TEXT>
   <TEXT>
 		<Tag>TXT_KEY_CIVIC_GLOBAL_FOOD_COST</Tag>
-		<English>[ICON_BULLET]%d1[ICON_FOOD] cost for all Citizens</English>
+		<English>[ICON_BULLET]%D1[ICON_FOOD] cost for all Citizens</English>
 		<French>[ICON_BULLET]%d1[ICON_FOOD] cost</French>
 		<German>[ICON_BULLET]%d1[ICON_FOOD] cost</German>
 		<Italian>[ICON_BULLET]%d1[ICON_FOOD] cost</Italian>

@@ -4304,6 +4304,12 @@ void CvPlayer::raze(CvCity* pCity)
 			{
 				iTreasureMod += kTrait.getTreasureModifier();
 			}
+			//Tks Civics
+			if (!isNative() && hasTrait((TraitTypes) iTrait))
+			{
+				iTreasureMod += kTrait.getTreasureModifier();
+			}
+			//Tke
 		}
 		iTreasure *= iTreasureMod;
 		iTreasure /= 100;

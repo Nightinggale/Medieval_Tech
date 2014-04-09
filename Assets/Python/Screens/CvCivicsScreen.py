@@ -18,6 +18,8 @@ class CvCivicsScreen:
 	def __init__(self):
 		self.SCREEN_NAME = "CivicsScreen"
 		self.CANCEL_NAME = "CivicsCancel"
+		self.UPKEEP_COST = "UpkeepCost"
+		self.INITIAL_COST = "InitalCost"
 		self.EXIT_NAME = "CivicsExit"
 		self.LACK_FUNDS = "LackFunds"
 		self.TITLE_NAME = "CivicsTitleHeader"
@@ -358,7 +360,9 @@ class CvCivicsScreen:
 		#self.m_paeDisplayCivics[1] = 1
 		iTurns = activePlayer.getCivicAnarchyLength(self.m_paeDisplayCivics);
 		#SiTurns = 9
+		bCanChange = False 
 		if (activePlayer.canChangeCivics(0)):
+			bCanChange = True
 			szText = localText.getText("TXT_KEY_ANARCHY_TURNS", (iTurns, ))
 		else:
 			szText = CyGameTextMgr().setRevolutionHelp(self.iActivePlayer)
@@ -366,12 +370,29 @@ class CvCivicsScreen:
 
 		screen.setLabel("CivicsRevText", "Background", u"<font=3>" + szText + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, self.X_SCREEN, self.BOTTOM_LINE_TOP + self.TEXT_MARGIN//2, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 
-		# Maintenance		
-		szText = localText.getText("TXT_KEY_CIVIC_SCREEN_UPKEEP", (activePlayer.getCivicUpkeep(self.m_paeDisplayCivics, True), ))
-		screen.setLabel("CivicsUpkeepText", "Background", u"<font=3>" + szText + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, self.X_SCREEN - 100, self.BOTTOM_LINE_TOP + self.BOTTOM_LINE_HEIGHT - 2 * self.TEXT_MARGIN, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
-		
-		szText = localText.getText("TXT_KEY_CIVIC_SCREEN_INITIAL_COST", (activePlayer.getCivicInitalCosts(self.m_paeDisplayCivics), ))
-		screen.setLabel("CivicsInitialCostText", "Background", u"<font=3>" + szText + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, self.X_SCREEN + 100, self.BOTTOM_LINE_TOP + self.BOTTOM_LINE_HEIGHT - 2 * self.TEXT_MARGIN, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		# Maintenance
+		iUpkeep = activePlayer.getCivicUpkeep(self.m_paeDisplayCivics, True)
+		iInitialCost = activePlayer.getCivicInitalCosts(self.m_paeDisplayCivics)
+		if (iUpkeep > 0 and iInitialCost > 0):
+			
+			szText = localText.getText("TXT_KEY_CIVIC_SCREEN_UPKEEP", (activePlayer.getCivicUpkeep(self.m_paeDisplayCivics, True), ))
+			screen.setLabel(SELF, "Background", u"<font=3>" + szText + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, self.X_SCREEN - 100, self.BOTTOM_LINE_TOP + self.BOTTOM_LINE_HEIGHT - 2 * self.TEXT_MARGIN, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+			if (bCanChange):
+				szText = localText.getText("TXT_KEY_CIVIC_SCREEN_INITIAL_COST", (activePlayer.getCivicInitalCosts(self.m_paeDisplayCivics), ))
+				screen.setLabel("CivicsInitialCostText", "Background", u"<font=3>" + szText + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, self.X_SCREEN + 100, self.BOTTOM_LINE_TOP + self.BOTTOM_LINE_HEIGHT - 2 * self.TEXT_MARGIN, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		elif (bCanChange and iUpkeep == 0 and iInitialCost > 0):
+			
+			szText = localText.getText("TXT_KEY_CIVIC_SCREEN_INITIAL_COST", (activePlayer.getCivicInitalCosts(self.m_paeDisplayCivics), ))
+			screen.setLabel("CivicsInitialCostText", "Background", u"<font=3>" + szText + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, self.X_SCREEN, self.BOTTOM_LINE_TOP + self.BOTTOM_LINE_HEIGHT - 2 * self.TEXT_MARGIN, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+			screen.setLabel("CivicsUpkeepText", "Background", "", CvUtil.FONT_CENTER_JUSTIFY, self.X_SCREEN, self.BOTTOM_LINE_TOP + self.BOTTOM_LINE_HEIGHT - 2 * self.TEXT_MARGIN, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		elif (iUpkeep > 0 and iInitialCost == 0):
+			
+			szText = localText.getText("TXT_KEY_CIVIC_SCREEN_UPKEEP", (activePlayer.getCivicUpkeep(self.m_paeDisplayCivics, True), ))
+			screen.setLabel("CivicsUpkeepText", "Background", u"<font=3>" + szText + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, self.X_SCREEN, self.BOTTOM_LINE_TOP + self.BOTTOM_LINE_HEIGHT - 2 * self.TEXT_MARGIN, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+			screen.setLabel("CivicsInitialCostText", "Background", "", CvUtil.FONT_CENTER_JUSTIFY, self.X_SCREEN, self.BOTTOM_LINE_TOP + self.BOTTOM_LINE_HEIGHT - 2 * self.TEXT_MARGIN, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		else:
+			screen.setLabel("CivicsInitialCostText", "Background", "", CvUtil.FONT_CENTER_JUSTIFY, self.X_SCREEN, self.BOTTOM_LINE_TOP + self.BOTTOM_LINE_HEIGHT - 2 * self.TEXT_MARGIN, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+			screen.setLabel("CivicsUpkeepText", "Background", "", CvUtil.FONT_CENTER_JUSTIFY, self.X_SCREEN, self.BOTTOM_LINE_TOP + self.BOTTOM_LINE_HEIGHT - 2 * self.TEXT_MARGIN, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		
 		
 	# Resolution!!!

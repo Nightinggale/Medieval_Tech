@@ -3045,8 +3045,13 @@ void CvGameTextMgr::parseTraits(CvWStringBuffer &szHelpString, TraitTypes eTrait
 		{
 			if (eCivilization != NO_CIVILIZATION)
 			{
-				iTreasureModifier *= GC.getCivilizationInfo(eCivilization).getTreasure();
-				iTreasureModifier /= 100;
+				//TKs Civics Effect
+				if (GC.getCivilizationInfo(eCivilization).getTreasure() > 0)
+				{
+					iTreasureModifier *= GC.getCivilizationInfo(eCivilization).getTreasure();
+					iTreasureModifier /= 100;
+				}
+				//Tke
 			}
 
 			if ((iTreasureModifier > 0) && (iTreasureModifier != 100))

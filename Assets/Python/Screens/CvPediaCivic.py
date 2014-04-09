@@ -103,7 +103,7 @@ class CvPediaCivic:
 		screen.enableSelect(listName, False)
 		
 		#TKs
-		szSpecialText = CyGameTextMgr().parseCivicInfo(self.iCivic, True, False, True, False, 1)
+		szSpecialText = CyGameTextMgr().parseCivicInfo(self.iCivic, True, False, True, False, -1)
 		#Tke
 		screen.addMultilineText(listName, szSpecialText[1:], self.X_SPECIAL+5, self.Y_SPECIAL+30, self.W_SPECIAL-10, self.H_SPECIAL-30, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 

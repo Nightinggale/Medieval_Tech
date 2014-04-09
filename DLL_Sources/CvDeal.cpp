@@ -652,21 +652,11 @@ bool CvDeal::startTrade(TradeData trade, PlayerTypes eFromPlayer, PlayerTypes eT
 				///TKe
 			}
             ///Tks Med
-            if (iGold >= GC.getXMLval(XML_TRADE_STIMULATES_RESEARCH_MIN_VALUE))
+
+           /* if (iGold >= GC.getXMLval(XML_TRADE_STIMULATES_RESEARCH_MIN_VALUE))
             {
-                //CivicTypes eFromPlayerResearch = GET_PLAYER(eFromPlayer).getCurrentResearch();
                 CivicTypes eToPlayerResearch = GET_PLAYER(eToPlayer).getCurrentResearch();
                 int iExtraResearch = iGold * GC.getXMLval(XML_TRADE_STIMULATES_RESEARCH_PERCENT) / 100;
-//                if (eFromPlayerResearch != NO_CIVIC)
-//                {
-//                    GET_PLAYER(eFromPlayer).changeIdeasStored(iExtraResearch);
-//                    GET_PLAYER(eFromPlayer).changeIdeaProgress(eFromPlayerResearch, iExtraResearch);
-//                    char szOut[1024];
-//                    sprintf(szOut, "######################## %S traded with %S stimulating %d in research\n", GET_PLAYER(eFromPlayer).getNameKey(), GET_PLAYER(eToPlayer).getNameKey(), iExtraResearch);
-//                    gDLL->messageControlLog(szOut);
-//                    CvWString szBuffer = gDLL->getText("TXT_KEY_DEAL_STIMULATES_RESEARCH", iExtraResearch);
-//                    gDLL->getInterfaceIFace()->addMessage(eFromPlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"));
-//                }
 
                 if (eToPlayerResearch != NO_CIVIC)
                 {
@@ -675,7 +665,7 @@ bool CvDeal::startTrade(TradeData trade, PlayerTypes eFromPlayer, PlayerTypes eT
                     CvWString szBuffer = gDLL->getText("TXT_KEY_DEAL_STIMULATES_RESEARCH", iExtraResearch);
                     gDLL->getInterfaceIFace()->addMessage(eToPlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"));
                 }
-            }
+            }*/
             ///Tke
 
 			// Python Event

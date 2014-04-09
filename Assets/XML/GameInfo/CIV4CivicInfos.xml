@@ -509,6 +509,12 @@
           <iChange>0</iChange>
         </UpkeepYield>
       </UpkeepYields>
+      <AllowsUnitClassesImmigration>
+        <AllowsUnitClass>
+          <AllowsUnit>UNITCLASS_ARAB_NOBLEMAN</AllowsUnit>
+          <iChange>1</iChange>
+        </AllowsUnitClass>
+      </AllowsUnitClassesImmigration>
       <AllowsTrait>TRAIT_CIVIC_MONARCHY</AllowsTrait>
       <NewLuxuryUnitClass>UNITCLASS_RECRUIT</NewLuxuryUnitClass>
       <GarrisonUnitModifiers>
@@ -672,6 +678,13 @@
           <iChange>0</iChange>
         </UpkeepYield>
       </UpkeepYields>
+      <AllowsUnitClasses/>
+      <AllowsUnitClassesImmigration>
+        <AllowsUnitClass>
+          <AllowsUnit>UNITCLASS_ARISTOCRAT</AllowsUnit>
+          <iChange>1</iChange>
+        </AllowsUnitClass>
+      </AllowsUnitClassesImmigration>
       <FartherPointChanges>
         <FartherPointChange>
           <FartherPointType>FATHER_POINT_POLITICAL</FartherPointType>
@@ -852,6 +865,13 @@
           <iChange>0</iChange>
         </UpkeepYield>
       </UpkeepYields>
+      <AllowsUnitClasses/>
+      <AllowsUnitClassesImmigration>
+        <AllowsUnitClass>
+          <AllowsUnit>UNITCLASS_VESTARCH</AllowsUnit>
+          <iChange>1</iChange>
+        </AllowsUnitClass>
+      </AllowsUnitClassesImmigration>
       <NewLuxuryUnitClass>UNITCLASS_EUNUCH</NewLuxuryUnitClass>
       <GarrisonUnitModifiers>
         <GarrisonUnitModifier>
@@ -993,6 +1013,14 @@
           <iChange>0</iChange>
         </UpkeepYield>
       </UpkeepYields>
+      <AllowsUnitClasses/>
+      <AllowsUnitClassesImmigration>
+        <AllowsUnitClass>
+          <AllowsUnit>UNITCLASS_NOBLEMAN</AllowsUnit>
+          <iChange>1</iChange>
+        </AllowsUnitClass>
+      </AllowsUnitClassesImmigration>
+      <AllowsPromotions/>
       <iAnarchyLength>2</iAnarchyLength>
       <iInitialCost>250</iInitialCost>
       <iCenterPlotFoodBonus>1</iCenterPlotFoodBonus>
@@ -1236,6 +1264,7 @@
           <iChange>0</iChange>
         </UpkeepYield>
       </UpkeepYields>
+      <AllowsTrait>TRAIT_CIVIC_LOOTERS</AllowsTrait>
       <iAnarchyLength>3</iAnarchyLength>
       <iInitialCost>100</iInitialCost>
     </CivicInfo>
@@ -4561,18 +4590,9 @@
 					<AllowsUnit>UNITCLASS_BAKER</AllowsUnit>
 					<iChange>1</iChange>
 				</AllowsUnitClass>
-				<AllowsUnitClass>
-					<AllowsUnit>UNITCLASS_NOBLEMAN</AllowsUnit>
-					<iChange>1</iChange>
-				</AllowsUnitClass>
 			</AllowsUnitClasses>
 			<AllowsPromotions/>
-			<AllowsProfessions>
-				<AllowsProfession>
-					<ProfessionType>PROFESSION_HUNTSMAN</ProfessionType>
-					<iChange>1</iChange>
-				</AllowsProfession>
-			</AllowsProfessions>
+			<AllowsProfessions/>
 			<AllowsTrait/>
       <AllowsCivic>CIVIC_MANORIAL</AllowsCivic>
 			<AllowsBuildTypes/>
@@ -4652,7 +4672,12 @@
 				</AllowsUnitClass>
 			</AllowsUnitClasses>
 			<AllowsPromotions/>
-			<AllowsProfessions/>
+      <AllowsProfessions>
+        <AllowsProfession>
+          <ProfessionType>PROFESSION_HUNTSMAN</ProfessionType>
+          <iChange>1</iChange>
+        </AllowsProfession>
+      </AllowsProfessions>
 			<AllowsTrait/>
 			<AllowsBuildTypes>
 				<ModBuildType>

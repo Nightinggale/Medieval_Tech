@@ -10,6 +10,14 @@
 	<ElementType name="ArtDefineTag" content="textOnly"/>
 	<ElementType name="AlarmType" content="textOnly"/>
   <!--TK Start-->
+  <ElementType name="TradeScreen" content="textOnly"/>
+  <ElementType name="TradeScreens" content="eltOnly">
+    <element type="TradeScreen"/>
+    <element type="bValid"/>
+  </ElementType>
+  <ElementType name="TradeScreensAllowed" content="eltOnly">
+    <element type="TradeScreens" minOccurs="0" maxOccurs="*"/>
+  </ElementType>
 	<ElementType name="AttackForceKey" content="textOnly"/>
 	<ElementType name="iResearchMod" content="textOnly" dt:type="int"/>
 	<ElementType name="EraTrait" content="eltOnly">
@@ -183,6 +191,7 @@
 		<element type="iVictoryType" minOccurs="0"/>
 		<element type="iTravelCommandType" minOccurs="0"/>
 		<element type="iEconomyType" minOccurs="0"/>
+    <element type="TradeScreensAllowed" minOccurs="0"/>
 		<element type="EraTraits" minOccurs="0"/>
     <!--TK End-->
 		<element type="iBaseAttitude"/>

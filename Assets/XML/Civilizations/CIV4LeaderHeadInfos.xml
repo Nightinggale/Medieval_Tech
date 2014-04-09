@@ -19,6 +19,12 @@
 			<iVictoryType>1</iVictoryType>
 			<iTravelCommandType>1</iTravelCommandType>
 			<iEconomyType>2</iEconomyType>
+      <TradeScreensAllowed>
+        <TradeScreens>
+          <TradeScreen>TRADE_SCREEN_MOTHERLAND</TradeScreen>
+          <bValid>0</bValid>
+        </TradeScreens>
+      </TradeScreensAllowed>
 			<iBaseAttitude>-2</iBaseAttitude>
 			<iNativeAttitude>0</iNativeAttitude>
 			<iRefuseToTalkWarThreshold>6</iRefuseToTalkWarThreshold>
@@ -459,6 +465,12 @@
 			<iVictoryType>1</iVictoryType>
 			<iTravelCommandType>1</iTravelCommandType>
 			<iEconomyType>2</iEconomyType>
+      <TradeScreensAllowed>
+        <TradeScreens>
+          <TradeScreen>TRADE_SCREEN_MOTHERLAND</TradeScreen>
+          <bValid>0</bValid>
+        </TradeScreens>
+      </TradeScreensAllowed>
 			<iBaseAttitude>-2</iBaseAttitude>
 			<iNativeAttitude>0</iNativeAttitude>
 			<iRefuseToTalkWarThreshold>6</iRefuseToTalkWarThreshold>
@@ -899,6 +911,12 @@
 			<iVictoryType>1</iVictoryType>
 			<iTravelCommandType>1</iTravelCommandType>
 			<iEconomyType>2</iEconomyType>
+      <TradeScreensAllowed>
+        <TradeScreens>
+          <TradeScreen>TRADE_SCREEN_MOTHERLAND</TradeScreen>
+          <bValid>0</bValid>
+        </TradeScreens>
+      </TradeScreensAllowed>
 			<iBaseAttitude>-2</iBaseAttitude>
 			<iNativeAttitude>0</iNativeAttitude>
 			<iRefuseToTalkWarThreshold>6</iRefuseToTalkWarThreshold>
@@ -1337,6 +1355,12 @@
 			<iVictoryType>1</iVictoryType>
 			<iTravelCommandType>1</iTravelCommandType>
 			<iEconomyType>2</iEconomyType>
+      <TradeScreensAllowed>
+        <TradeScreens>
+          <TradeScreen>TRADE_SCREEN_MOTHERLAND</TradeScreen>
+          <bValid>0</bValid>
+        </TradeScreens>
+      </TradeScreensAllowed>
 			<iBaseAttitude>-2</iBaseAttitude>
 			<iNativeAttitude>0</iNativeAttitude>
 			<iRefuseToTalkWarThreshold>6</iRefuseToTalkWarThreshold>
@@ -1776,6 +1800,12 @@
 			<iTravelCommandType>0</iTravelCommandType>
       <!--ECONOMY: 1 = HomeCity; 2 = Fair; 3 = Inflation-->
 			<iEconomyType>2</iEconomyType>
+      <TradeScreensAllowed>
+        <TradeScreens>
+          <TradeScreen>TRADE_SCREEN_MOTHERLAND</TradeScreen>
+          <bValid>1</bValid>
+        </TradeScreens>
+      </TradeScreensAllowed>
 			<iBaseAttitude>-2</iBaseAttitude>
 			<iNativeAttitude>0</iNativeAttitude>
 			<iRefuseToTalkWarThreshold>6</iRefuseToTalkWarThreshold>
@@ -2215,6 +2245,12 @@
 			<iVictoryType>1</iVictoryType>
 			<iTravelCommandType>1</iTravelCommandType>
 			<iEconomyType>2</iEconomyType>
+      <TradeScreensAllowed>
+        <TradeScreens>
+          <TradeScreen>TRADE_SCREEN_MOTHERLAND</TradeScreen>
+          <bValid>0</bValid>
+        </TradeScreens>
+      </TradeScreensAllowed>
 			<iBaseAttitude>-2</iBaseAttitude>
 			<iNativeAttitude>0</iNativeAttitude>
 			<iRefuseToTalkWarThreshold>6</iRefuseToTalkWarThreshold>
@@ -2653,6 +2689,12 @@
 			<iVictoryType>2</iVictoryType>
 			<iTravelCommandType>1</iTravelCommandType>
 			<iEconomyType>2</iEconomyType>
+      <TradeScreensAllowed>
+        <TradeScreens>
+          <TradeScreen>TRADE_SCREEN_MOTHERLAND</TradeScreen>
+          <bValid>1</bValid>
+        </TradeScreens>
+      </TradeScreensAllowed>
 			<iBaseAttitude>-2</iBaseAttitude>
 			<iNativeAttitude>0</iNativeAttitude>
 			<iRefuseToTalkWarThreshold>6</iRefuseToTalkWarThreshold>
@@ -3091,6 +3133,12 @@
 			<iVictoryType>3</iVictoryType>
 			<iTravelCommandType>1</iTravelCommandType>
 			<iEconomyType>2</iEconomyType>
+      <TradeScreensAllowed>
+        <TradeScreens>
+          <TradeScreen>TRADE_SCREEN_MOTHERLAND</TradeScreen>
+          <bValid>0</bValid>
+        </TradeScreens>
+      </TradeScreensAllowed>
 			<iBaseAttitude>-2</iBaseAttitude>
 			<iNativeAttitude>0</iNativeAttitude>
 			<iRefuseToTalkWarThreshold>6</iRefuseToTalkWarThreshold>
@@ -5274,6 +5322,12 @@
 			<iVictoryType>1</iVictoryType>
 			<iTravelCommandType>1</iTravelCommandType>
 			<iEconomyType>2</iEconomyType>
+      <TradeScreensAllowed>
+        <TradeScreens>
+          <TradeScreen>TRADE_SCREEN_MOTHERLAND</TradeScreen>
+          <bValid>0</bValid>
+        </TradeScreens>
+      </TradeScreensAllowed>
 			<iBaseAttitude>1</iBaseAttitude>
 			<iNativeAttitude>2</iNativeAttitude>
 			<iRefuseToTalkWarThreshold>8</iRefuseToTalkWarThreshold>

@@ -4535,6 +4535,11 @@ bool CvUnit::canAutoSailTradeScreen(const CvPlot* pPlot, EuropeTypes eTradeScree
 	    return false;
 	}
 
+	if (!GC.getLeaderHeadInfo(GET_PLAYER(getOwner()).getLeaderType()).isTradeScreenAllowed(eTradeScreenType))
+	{
+		return false;
+	}
+
 	FAssert(pPlot != NULL);
 	if (pPlot == NULL)
 	{
@@ -4599,12 +4604,16 @@ bool CvUnit::canCrossOcean(const CvPlot* pPlot, UnitTravelStates eNewState, Trad
 		return false;
 	}
 
-
 	if (m_pUnitInfo->isPreventTraveling())
 	{
 	    return false;
 	}
 	
+	if (!GC.getLeaderHeadInfo(GET_PLAYER(getOwner()).getLeaderType()).isTradeScreenAllowed(eEuropeTradeRoute))
+	{
+		return false;
+	}
+
 	switch (getUnitTravelState())
 	{
 	case NO_UNIT_TRAVEL_STATE:

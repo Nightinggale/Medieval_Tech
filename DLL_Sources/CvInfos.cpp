@@ -10137,9 +10137,10 @@ m_aiNoWarAttitudeProb(NULL),
 m_aiUnitAIWeightModifier(NULL),
 m_aiImprovementWeightModifier(NULL),
 m_aiDiploPeaceMusicScriptIds(NULL),
-///Tks Med
 m_aiDiploWarMusicScriptIds(NULL),
-aiEraTraits(NULL)
+///Tks Med
+aiEraTraits(NULL),
+m_aiAllowedTradeScreens(NULL)
 ///Tke
 
 {
@@ -10165,6 +10166,7 @@ CvLeaderHeadInfo::~CvLeaderHeadInfo()
 	SAFE_DELETE_ARRAY(m_aiDiploWarMusicScriptIds);
 	///Tks Med
 	SAFE_DELETE_ARRAY(aiEraTraits);
+	SAFE_DELETE_ARRAY(m_aiAllowedTradeScreens);
 	///Tke
 }
 const char* CvLeaderHeadInfo::getButton() const
@@ -10195,6 +10197,10 @@ int CvLeaderHeadInfo::getEraTraits(int i) const
 	return aiEraTraits ? aiEraTraits[i] : -1;
 }
 
+bool CvLeaderHeadInfo::isTradeScreenAllowed(int i) const
+{
+	return m_aiAllowedTradeScreens ? m_aiAllowedTradeScreens[i] : true;
+}
 int CvLeaderHeadInfo::getVictoryType() const
 {
 	return iVictoryType;
@@ -10768,6 +10774,7 @@ bool CvLeaderHeadInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPairForAudioScripts(&m_aiDiploPeaceMusicScriptIds, "DiplomacyMusicPeace", GC.getNumEraInfos());
 	pXML->SetVariableListTagPairForAudioScripts(&m_aiDiploWarMusicScriptIds, "DiplomacyMusicWar", GC.getNumEraInfos());
 	///TKs Med
+	pXML->SetVariableListTagPair(&m_aiAllowedTradeScreens, "TradeScreensAllowed", GC.getNumEuropeInfos(), true);
 	m_aiCivicDiplomacyAttitudes.clear();
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"CivicDiplomacyAttitudes"))
 	{
@@ -10797,6 +10804,16 @@ bool CvLeaderHeadInfo::read(CvXMLLoadUtility* pXML)
 		aiEraTraits[i] = pXML->FindInInfoClass(pszTraits[i]);
 	}
 	SAFE_DELETE_ARRAY(pszTraits);
+
+	/*CvString* pszEuropes = NULL;
+	FAssertMsg(NULL == aiAllowedTradeScreens, "Memory leak");
+	aiAllowedTradeScreens = new int[GC.getNumEuropeInfos()];
+	pXML->SetVariableListTagPair<CvString>(&pszEuropes, "TradeScreensAllowed", GC.getNumEuropeInfos(), "NONE");
+	for (int i = 0; i < GC.getNumEuropeInfos(); ++i)
+	{
+		aiAllowedTradeScreens[i] = pXML->FindInInfoClass(pszEuropes[i]);
+	}
+	SAFE_DELETE_ARRAY(pszEuropes);*/
 
 	//pXML->SetVariableListTagPair(&aiEraTraits, "EraTraits", GC.getNumEraInfos(), -1);
 	///Tke

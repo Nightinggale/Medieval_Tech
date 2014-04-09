@@ -8233,7 +8233,7 @@ void CvGameTextMgr::parseLeaderHeadHelp(CvWStringBuffer &szBuffer, PlayerTypes e
 		return;
 	}
 
-	szBuffer.append(CvWString::format(L"%s", GET_PLAYER(eThisPlayer).getName()));
+	szBuffer.append(CvWString::format(L"%s (%s)", GET_PLAYER(eThisPlayer).getName(), GC.getCivilizationInfo(GET_PLAYER(eThisPlayer).getCivilizationType()).getDescription()));
 
 	parsePlayerTraits(szBuffer, eThisPlayer);
 

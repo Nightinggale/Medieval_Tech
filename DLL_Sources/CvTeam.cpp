@@ -1714,27 +1714,26 @@ void CvTeam::changeFatherPoints(FatherPointTypes ePointType, int iChange)
 	if (iChange != 0)
 	{
 		if (hasColonialPlayer())
-		{
-			///Tks Med
-			int iBonus=0;
-			int iPreviousBonus=0;
-			for (int iI = 0; iI < MAX_PLAYERS; iI++)
-			{
-				if (GET_PLAYER((PlayerTypes)iI).getTeam() == getID())
-				{
-					iPreviousBonus = GET_PLAYER((PlayerTypes)iI).getBonusFatherPoints(ePointType);
-					if (iPreviousBonus > iBonus)
-					{
-						iBonus = iPreviousBonus;
-					}
-					
-				}
-			}
-			iChange *= std::max(1, (iBonus + 100));
-			iChange /= 100;
-			
+		{	
 			if (iChange > 0)
 			{
+				///Tks Med
+				int iBonus=0;
+				int iPreviousBonus=0;
+				for (int iI = 0; iI < MAX_PLAYERS; iI++)
+				{
+					if (GET_PLAYER((PlayerTypes)iI).getTeam() == getID())
+					{
+						iPreviousBonus = GET_PLAYER((PlayerTypes)iI).getBonusFatherPoints(ePointType);
+						if (iPreviousBonus > iBonus)
+						{
+							iBonus = iPreviousBonus;
+						}
+					
+					}
+				}
+				iChange *= std::max(1, (iBonus + 100));
+				iChange /= 100;
 				changeAccumilatedFatherPoints(ePointType, iChange);
 			}
 			///Tke

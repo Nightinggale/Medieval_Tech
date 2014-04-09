@@ -2806,6 +2806,7 @@ public:
 	int getCivicDiplomacyAttitudes(int index) const;
 	int getCivicDiplomacyAttitudesValue(int index) const;
 	DllExport int getEraTraits(int i) const;
+	bool isTradeScreenAllowed(int i) const;
 	DllExport int getVictoryType() const;
 	DllExport int getTravelCommandType() const;
 	DllExport int getEconomyType() const;
@@ -2962,6 +2963,7 @@ protected:
 	 ///Tks Med
 	std::vector< std::pair<CivicTypes, int> > m_aiCivicDiplomacyAttitudes;
 	int* aiEraTraits;
+	bool* m_aiAllowedTradeScreens;
 	///TKe
 };
 

@@ -949,9 +949,9 @@ protected:
 	int* m_aiTradingPostCount;
 	int* m_paiUpkeepCount;
 	int* m_paiGarrisonUnitBonus;
-	int* m_aiTradeRouteStartingPlotX;
-	int* m_aiTradeRouteStartingPlotY;
-	bool* m_abTradeRouteTypes;
+	EuropeArray<int>   m_ja_iTradeRouteStartingPlotX;
+	EuropeArray<int>   m_ja_iTradeRouteStartingPlotY;
+	EuropeArray<bool>  m_ja_bTradeRouteTypes;
 	///Tke
 
 	bool* m_abYieldEuropeTradable;

@@ -51,6 +51,11 @@ CvPlayer::CvPlayer()
 , m_ja_bAllowedBuildings(true)
 , m_ja_bAllowedProfessions(true)
 // invention effect cache - end - Nightinggale
+///TK Civics
+, m_ja_iTradeRouteStartingPlotX(INVALID_PLOT_COORD)
+, m_ja_iTradeRouteStartingPlotY(INVALID_PLOT_COORD)
+, m_ja_bTradeRouteTypes(true)
+///Tke
 {
 
 
@@ -80,9 +85,6 @@ CvPlayer::CvPlayer()
 	m_abFeatAccomplished = new bool[NUM_FEAT_TYPES];
 	m_abOptions = new bool[NUM_PLAYEROPTION_TYPES];
     ///TKs Invention Core Mod v 1.0
-	m_aiTradeRouteStartingPlotX = NULL;
-	m_aiTradeRouteStartingPlotY = NULL;
-	m_abTradeRouteTypes = NULL;
     m_aiIdeaProgress = NULL;
     m_aiIdeasResearched = NULL;
 	//Tks Civics
@@ -343,9 +345,9 @@ void CvPlayer::uninit()
 	SAFE_DELETE_ARRAY(m_aiIdeaProgress);
 	SAFE_DELETE_ARRAY(m_aiIdeasResearched);
 	SAFE_DELETE_ARRAY(m_aiPreviousFatherPoints);
-	SAFE_DELETE_ARRAY(m_aiTradeRouteStartingPlotX);
-	SAFE_DELETE_ARRAY(m_aiTradeRouteStartingPlotY);
-	SAFE_DELETE_ARRAY(m_abTradeRouteTypes);
+	m_ja_iTradeRouteStartingPlotX.resetContent();
+	m_ja_iTradeRouteStartingPlotY.resetContent();
+	m_ja_bTradeRouteTypes.resetContent();
 	SAFE_DELETE_ARRAY(m_aiBonusFatherPoints);
 	///TKe
 	SAFE_DELETE_ARRAY(m_paiImprovementCount);
@@ -621,16 +623,9 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 			m_aiBonusFatherPoints[iI] = 0;
         }
 		 ///Tke
-
-		m_abTradeRouteTypes = new bool[GC.getNumEuropeInfos()];
-		m_aiTradeRouteStartingPlotX = new int[GC.getNumEuropeInfos()];
-		m_aiTradeRouteStartingPlotY = new int[GC.getNumEuropeInfos()];
-		for (iI = 0; iI < GC.getNumEuropeInfos(); iI++)
-		{
-			m_aiTradeRouteStartingPlotX[iI] = INVALID_PLOT_COORD;
-			m_aiTradeRouteStartingPlotY[iI] = INVALID_PLOT_COORD;
-			m_abTradeRouteTypes[iI] = true;
-		}
+		m_ja_iTradeRouteStartingPlotX.resetContent();
+		m_ja_iTradeRouteStartingPlotY.resetContent();
+		m_ja_bTradeRouteTypes.resetContent();
         ///TKe
 
 
@@ -11707,9 +11702,9 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(MAX_PLAYERS, m_aiTradingPostCount);
 	//Tke Civics
 	pStream->Read(NUM_CENSURE_TYPES, m_aiCensureTypes);
-	pStream->Read(GC.getNumEuropeInfos(), m_aiTradeRouteStartingPlotX);
-	pStream->Read(GC.getNumEuropeInfos(), m_aiTradeRouteStartingPlotY);
-	pStream->Read(GC.getNumEuropeInfos(), m_abTradeRouteTypes);
+	m_ja_iTradeRouteStartingPlotX.read(pStream);
+	m_ja_iTradeRouteStartingPlotY.read(pStream);
+	m_ja_bTradeRouteTypes.read(pStream);
 	///Tke
 	pStream->Read(NUM_YIELD_TYPES, m_aiTaxYieldModifierCount);
 	if (uiFlag > 1)
@@ -12185,9 +12180,9 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(MAX_PLAYERS, m_aiTradingPostCount);
 	///tke
 	pStream->Write(NUM_CENSURE_TYPES, m_aiCensureTypes);
-	pStream->Write(GC.getNumEuropeInfos(), m_aiTradeRouteStartingPlotX);
-	pStream->Write(GC.getNumEuropeInfos(), m_aiTradeRouteStartingPlotY);
-	pStream->Write(GC.getNumEuropeInfos(), m_abTradeRouteTypes);
+	m_ja_iTradeRouteStartingPlotX.write(pStream);
+	m_ja_iTradeRouteStartingPlotY.write(pStream);
+	m_ja_bTradeRouteTypes.write(pStream);
 	///Tke
 	pStream->Write(NUM_YIELD_TYPES, m_aiTaxYieldModifierCount);
 	pStream->Write(MAX_PLAYERS, m_aiMissionaryPoints);
@@ -19768,7 +19763,7 @@ int CvPlayer::getCensureType(CensureType eCensure) const
 CvPlot* CvPlayer::getStartingTradeRoutePlot(EuropeTypes eTradeRoute) const
 {
     FAssertMsg(eTradeRoute != NO_TRADE_ROUTES, "Should have trade route");
-	return GC.getMapINLINE().plotSorenINLINE(m_aiTradeRouteStartingPlotX[eTradeRoute], m_aiTradeRouteStartingPlotY[eTradeRoute]);
+	return GC.getMapINLINE().plotSorenINLINE(m_ja_iTradeRouteStartingPlotX.get(eTradeRoute), m_ja_iTradeRouteStartingPlotY.get(eTradeRoute));
 }
 
 void CvPlayer::setStartingTradeRoutePlot(CvPlot* pNewValue, EuropeTypes eTradeRoute)
@@ -19782,13 +19777,13 @@ void CvPlayer::setStartingTradeRoutePlot(CvPlot* pNewValue, EuropeTypes eTradeRo
 
 		if (pNewValue == NULL)
 		{
-			m_aiTradeRouteStartingPlotX[eTradeRoute] = INVALID_PLOT_COORD;
-			m_aiTradeRouteStartingPlotY[eTradeRoute] = INVALID_PLOT_COORD;
+			m_ja_iTradeRouteStartingPlotX.set(INVALID_PLOT_COORD, eTradeRoute);
+			m_ja_iTradeRouteStartingPlotY.set(INVALID_PLOT_COORD, eTradeRoute);
 		}
 		else
 		{
-			m_aiTradeRouteStartingPlotX[eTradeRoute] = pNewValue->getX_INLINE();
-			m_aiTradeRouteStartingPlotY[eTradeRoute] = pNewValue->getY_INLINE();
+			m_ja_iTradeRouteStartingPlotX.set(pNewValue->getX_INLINE(), eTradeRoute);
+			m_ja_iTradeRouteStartingPlotY.set(pNewValue->getY_INLINE(), eTradeRoute);
 		}
 	}
 }
@@ -19799,13 +19794,13 @@ bool CvPlayer::getHasTradeRouteType(EuropeTypes eTradeRoute) const
     {
         return true;
     }
-	return m_abTradeRouteTypes[eTradeRoute];
+	return m_ja_bTradeRouteTypes.get(eTradeRoute);
 	//return 0;
 }
 
 void CvPlayer::setHasTradeRouteType(EuropeTypes eTradeRoute, bool bValue)
 {
-    m_abTradeRouteTypes[eTradeRoute] = bValue;
+	m_ja_bTradeRouteTypes.set(bValue, eTradeRoute);
 }
 
 void CvPlayer::changeCensureType(CensureType eCensure, int iValue)
@@ -20176,14 +20171,14 @@ void CvPlayer::updateInventionEffectCache()
 	// city plot food bonus
 	m_iCityPlotFoodBonus = 0;
 
-	// Initiate Trade Route Screens
-	bool bTradeScreen = false;
 	for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
 	{
 		CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes) iCivic);
 		//if (kCivicInfo.getCivicOptionType() == CIVICOPTION_INVENTIONS)
 		//{
 			//for (int iTradeScreen = 0; iTradeScreen < GC.getNumEuropeInfos(); ++iTradeScreen)
+			// Initiate Trade Route Screens
+			bool bTradeScreen = false;
 			if (kCivicInfo.getAllowsTradeScreen() != NO_EUROPE)
 			{
 				FAssert (kCivicInfo.getAllowsTradeScreen() < GC.getNumEuropeInfos());

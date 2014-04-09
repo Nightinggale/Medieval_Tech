@@ -41,9 +41,6 @@ CvMap::CvMap()
 {
 	CvMapInitData defaultMapData;
 
-	m_paiNumBonus = NULL;
-	m_paiNumBonusOnLand = NULL;
-
 	m_pMapPlots = NULL;
 
 	reset(&defaultMapData);
@@ -103,8 +100,8 @@ void CvMap::init(CvMapInitData* pInitInfo/*=NULL*/)
 
 void CvMap::uninit()
 {
-	SAFE_DELETE_ARRAY(m_paiNumBonus);
-	SAFE_DELETE_ARRAY(m_paiNumBonusOnLand);
+	m_ja_iNumBonus.resetContent();
+	m_ja_iNumBonusOnLand.resetContent();
 
 	SAFE_DELETE_ARRAY(m_pMapPlots);
 
@@ -115,8 +112,6 @@ void CvMap::uninit()
 // Initializes data members that are serialized.
 void CvMap::reset(CvMapInitData* pInitInfo)
 {
-	int iI;
-
 	//--------------------------------
 	// Uninit class
 	uninit();
@@ -177,19 +172,8 @@ void CvMap::reset(CvMapInitData* pInitInfo)
 		gDLL->getPythonIFace()->pythonGetWrapXY(&m_bWrapX, &m_bWrapY);
 	}
 
-	if (GC.getNumBonusInfos())
-	{
-		FAssertMsg((0 < GC.getNumBonusInfos()), "GC.getNumBonusInfos() is not greater than zero but an array is being allocated in CvMap::reset");
-		FAssertMsg(m_paiNumBonus==NULL, "mem leak m_paiNumBonus");
-		m_paiNumBonus = new int[GC.getNumBonusInfos()];
-		FAssertMsg(m_paiNumBonusOnLand==NULL, "mem leak m_paiNumBonusOnLand");
-		m_paiNumBonusOnLand = new int[GC.getNumBonusInfos()];
-		for (iI = 0; iI < GC.getNumBonusInfos(); iI++)
-		{
-			m_paiNumBonus[iI] = 0;
-			m_paiNumBonusOnLand[iI] = 0;
-		}
-	}
+	m_ja_iNumBonus.resetContent();
+	m_ja_iNumBonusOnLand.resetContent();
 
 	m_areas.removeAll();
 }
@@ -1072,34 +1056,26 @@ CustomMapOptionTypes CvMap::getCustomMapOption(int iOption)
 
 int CvMap::getNumBonuses(BonusTypes eIndex)
 {
-	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
-	FAssertMsg(eIndex < GC.getNumBonusInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiNumBonus[eIndex];
+	return m_ja_iNumBonus.get(eIndex);
 }
 
 
 void CvMap::changeNumBonuses(BonusTypes eIndex, int iChange)
 {
-	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
-	FAssertMsg(eIndex < GC.getNumBonusInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiNumBonus[eIndex] = (m_paiNumBonus[eIndex] + iChange);
+	return m_ja_iNumBonus.add(iChange, eIndex);
 	FAssert(getNumBonuses(eIndex) >= 0);
 }
 
 
 int CvMap::getNumBonusesOnLand(BonusTypes eIndex)
 {
-	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
-	FAssertMsg(eIndex < GC.getNumBonusInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiNumBonusOnLand[eIndex];
+	return m_ja_iNumBonusOnLand.get(eIndex);
 }
 
 
 void CvMap::changeNumBonusesOnLand(BonusTypes eIndex, int iChange)
 {
-	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
-	FAssertMsg(eIndex < GC.getNumBonusInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiNumBonusOnLand[eIndex] = (m_paiNumBonusOnLand[eIndex] + iChange);
+	m_ja_iNumBonusOnLand.add(iChange, eIndex);
 	FAssert(getNumBonusesOnLand(eIndex) >= 0);
 }
 
@@ -1254,9 +1230,8 @@ void CvMap::read(FDataStreamBase* pStream)
 	pStream->Read(&m_bWrapX);
 	pStream->Read(&m_bWrapY);
 
-	FAssertMsg((0 < GC.getNumBonusInfos()), "GC.getNumBonusInfos() is not greater than zero but an array is being allocated");
-	pStream->Read(GC.getNumBonusInfos(), m_paiNumBonus);
-	pStream->Read(GC.getNumBonusInfos(), m_paiNumBonusOnLand);
+	m_ja_iNumBonus.read(pStream);
+	m_ja_iNumBonusOnLand.read(pStream);
 
 	if (numPlotsINLINE() > 0)
 	{
@@ -1293,12 +1268,10 @@ void CvMap::write(FDataStreamBase* pStream)
 	pStream->Write(m_bWrapX);
 	pStream->Write(m_bWrapY);
 
-	FAssertMsg((0 < GC.getNumBonusInfos()), "GC.getNumBonusInfos() is not greater than zero but an array is being allocated");
-	pStream->Write(GC.getNumBonusInfos(), m_paiNumBonus);
-	pStream->Write(GC.getNumBonusInfos(), m_paiNumBonusOnLand);
+	m_ja_iNumBonus.write(pStream);
+	m_ja_iNumBonusOnLand.write(pStream);
 
-	int iI;
-	for (iI = 0; iI < numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < numPlotsINLINE(); iI++)
 	{
 		m_pMapPlots[iI].write(pStream);
 	}

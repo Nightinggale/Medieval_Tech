@@ -94,8 +94,8 @@ protected:
 	int** m_aaiYieldRateModifier;
 	int** m_aaiNumTrainAIUnits;
 	int** m_aaiNumAIUnits;
-	int* m_paiNumBonuses;
 	int* m_paiNumImprovements;
+	BonusArray<int> m_ja_iNumBonuses;
 public:
 	// for serialization
 	virtual void read(FDataStreamBase* pStream);

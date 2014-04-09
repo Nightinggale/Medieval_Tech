@@ -270,8 +270,8 @@ protected:
 	bool m_bWrapX;
 	bool m_bWrapY;
 
-	int* m_paiNumBonus;
-	int* m_paiNumBonusOnLand;
+	BonusArray<int> m_ja_iNumBonus;
+	BonusArray<int> m_ja_iNumBonusOnLand;
 
 	CvPlot* m_pMapPlots;
 

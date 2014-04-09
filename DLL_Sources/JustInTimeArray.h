@@ -65,7 +65,7 @@ public:
 		return tArray != NULL;
 	}
 	
-	inline int length()
+	inline int length() const
 	{
 		return m_iLength;
 	}

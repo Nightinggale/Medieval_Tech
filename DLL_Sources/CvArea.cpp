@@ -39,7 +39,6 @@ CvArea::CvArea()
 		m_aaiNumAIUnits[i] = new int[NUM_UNITAI_TYPES];
 	}
 
-	m_paiNumBonuses = NULL;
 	m_paiNumImprovements = NULL;
 
 
@@ -93,7 +92,7 @@ void CvArea::init(int iID, bool bWater)
 
 void CvArea::uninit()
 {
-	SAFE_DELETE_ARRAY(m_paiNumBonuses);
+	m_ja_iNumBonuses.resetContent();
 	SAFE_DELETE_ARRAY(m_paiNumImprovements);
 }
 
@@ -158,12 +157,7 @@ void CvArea::reset(int iID, bool bWater, bool bConstructorCall)
 
 	if (!bConstructorCall)
 	{
-		FAssertMsg((0 < GC.getNumBonusInfos()) && "GC.getNumBonusInfos() is not greater than zero but an array is being allocated in CvArea::reset", "GC.getNumBonusInfos() is not greater than zero but an array is being allocated in CvArea::reset");
-		m_paiNumBonuses = new int[GC.getNumBonusInfos()];
-		for (iI = 0; iI < GC.getNumBonusInfos(); iI++)
-		{
-			m_paiNumBonuses[iI] = 0;
-		}
+		m_ja_iNumBonuses.resetContent();
 
 		FAssertMsg((0 < GC.getNumImprovementInfos()) && "GC.getNumImprovementInfos() is not greater than zero but an array is being allocated in CvArea::reset", "GC.getNumImprovementInfos() is not greater than zero but an array is being allocated in CvArea::reset");
 		m_paiNumImprovements = new int[GC.getNumImprovementInfos()];
@@ -592,9 +586,7 @@ void CvArea::changeNumAIUnits(PlayerTypes eIndex1, UnitAITypes eIndex2, int iCha
 
 int CvArea::getNumBonuses(BonusTypes eBonus) const
 {
-	FAssertMsg(eBonus >= 0, "eBonus expected to be >= 0");
-	FAssertMsg(eBonus < GC.getNumBonusInfos(), "eBonus expected to be < GC.getNumBonusInfos");
-	return m_paiNumBonuses[eBonus];
+	return m_ja_iNumBonuses.get(eBonus);
 }
 
 
@@ -602,9 +594,9 @@ int CvArea::getNumTotalBonuses() const
 {
 	int iTotal = 0;
 
-	for (int iI = 0; iI < GC.getNumBonusInfos(); iI++)
+	for (int iI = 0; iI < m_ja_iNumBonuses.length(); iI++)
 	{
-		iTotal += m_paiNumBonuses[iI];
+		iTotal += m_ja_iNumBonuses.get(iI);
 	}
 
 	return iTotal;
@@ -613,9 +605,7 @@ int CvArea::getNumTotalBonuses() const
 
 void CvArea::changeNumBonuses(BonusTypes eBonus, int iChange)
 {
-	FAssertMsg(eBonus >= 0, "eBonus expected to be >= 0");
-	FAssertMsg(eBonus < GC.getNumBonusInfos(), "eBonus expected to be < GC.getNumBonusInfos");
-	m_paiNumBonuses[eBonus] = (m_paiNumBonuses[eBonus] + iChange);
+	m_ja_iNumBonuses.add(iChange, eBonus);
 	FAssert(getNumBonuses(eBonus) >= 0);
 }
 
@@ -684,7 +674,7 @@ void CvArea::read(FDataStreamBase* pStream)
 		pStream->Read(NUM_UNITAI_TYPES, m_aaiNumAIUnits[iI]);
 	}
 
-	pStream->Read(GC.getNumBonusInfos(), m_paiNumBonuses);
+	m_ja_iNumBonuses.read(pStream);
 	pStream->Read(GC.getNumImprovementInfos(), m_paiNumImprovements);
 }
 
@@ -732,7 +722,7 @@ void CvArea::write(FDataStreamBase* pStream)
 	{
 		pStream->Write(NUM_UNITAI_TYPES, m_aaiNumAIUnits[iI]);
 	}
-	pStream->Write(GC.getNumBonusInfos(), m_paiNumBonuses);
+	m_ja_iNumBonuses.write(pStream);
 	pStream->Write(GC.getNumImprovementInfos(), m_paiNumImprovements);
 }
 

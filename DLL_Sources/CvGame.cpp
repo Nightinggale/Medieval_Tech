@@ -7734,10 +7734,9 @@ int CvGame::convertArrayInfo(JIT_ARRAY_TYPES eType, int iIndex) const
 {
 	FAssert((int)m_aaiArrayIndex.size() > eType);
 	FAssert(eType >= 0);
-	FAssert(iIndex >= 0);
 
 	// return the converted index if available
-	if (iIndex < (int)m_aaiArrayIndex[eType].size())
+	if (iIndex >= 0 && iIndex < (int)m_aaiArrayIndex[eType].size())
 	{
 		return m_aaiArrayIndex[eType][iIndex];
 	}

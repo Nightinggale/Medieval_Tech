@@ -98,13 +98,10 @@ CvPlayer::CvPlayer()
 	m_paiUnitClassImmigrated = NULL;
 	m_paiUnitMoveChange = NULL;
 	m_paiUnitStrengthModifier = NULL;
-	m_paiProfessionCombatChange = NULL;
-	m_paiProfessionMoveChange = NULL;
 	m_paiBuildingClassCount = NULL;
 	m_paiBuildingClassMaking = NULL;
 	m_paiHurryCount = NULL;
 	m_paiSpecialBuildingNotRequiredCount = NULL;
-	m_aiProfessionEquipmentModifier = NULL;
 	m_aiTraitCount = NULL;
 
 	m_paeCivics = NULL;
@@ -357,13 +354,13 @@ void CvPlayer::uninit()
 	SAFE_DELETE_ARRAY(m_paiUnitClassImmigrated);
 	SAFE_DELETE_ARRAY(m_paiUnitMoveChange);
 	SAFE_DELETE_ARRAY(m_paiUnitStrengthModifier);
-	SAFE_DELETE_ARRAY(m_paiProfessionCombatChange);
-	SAFE_DELETE_ARRAY(m_paiProfessionMoveChange);
+	m_ja_iProfessionCombatChange.resetContent();
+	m_ja_iProfessionMoveChange.resetContent();
 	SAFE_DELETE_ARRAY(m_paiBuildingClassCount);
 	SAFE_DELETE_ARRAY(m_paiBuildingClassMaking);
 	SAFE_DELETE_ARRAY(m_paiHurryCount);
 	SAFE_DELETE_ARRAY(m_paiSpecialBuildingNotRequiredCount);
-	SAFE_DELETE_ARRAY(m_aiProfessionEquipmentModifier);
+	m_ja_iProfessionEquipmentModifier.resetContent();
 	SAFE_DELETE_ARRAY(m_aiTraitCount);
 
 	SAFE_DELETE_ARRAY(m_paeCivics);
@@ -661,15 +658,8 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 			m_paiUnitStrengthModifier[iI] = 0;
 		}
 
-		FAssertMsg(m_paiProfessionCombatChange==NULL, "about to leak memory, CvPlayer::m_paiProfessionMoveChange");
-		m_paiProfessionCombatChange = new int [GC.getNumProfessionInfos()];
-		FAssertMsg(m_paiProfessionMoveChange==NULL, "about to leak memory, CvPlayer::m_paiProfessionMoveChange");
-		m_paiProfessionMoveChange = new int [GC.getNumProfessionInfos()];
-		for (iI = 0; iI < GC.getNumProfessionInfos(); iI++)
-		{
-			m_paiProfessionCombatChange[iI] = 0;
-			m_paiProfessionMoveChange[iI] = 0;
-		}
+		m_ja_iProfessionCombatChange.resetContent();
+		m_ja_iProfessionMoveChange.resetContent();
 
 		FAssertMsg(m_paiBuildingClassCount==NULL, "about to leak memory, CvPlayer::m_paiBuildingClassCount");
 		m_paiBuildingClassCount = new int [GC.getNumBuildingClassInfos()];
@@ -702,12 +692,7 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 			m_paeCivics[iI] = NO_CIVIC;
 		}
 
-		FAssertMsg(m_aiProfessionEquipmentModifier==NULL, "about to leak memory, CvPlayer::m_aiProfessionEquipmentModifier");
-		m_aiProfessionEquipmentModifier = new int[GC.getNumProfessionInfos()];
-		for (iI = 0; iI < GC.getNumProfessionInfos(); iI++)
-		{
-			m_aiProfessionEquipmentModifier[iI] = 0;
-		}
+		m_ja_iProfessionEquipmentModifier.resetContent();
 
 		FAssertMsg(m_aiTraitCount==NULL, "about to leak memory, CvPlayer::m_aiTraitCount");
 		m_aiTraitCount = new int[GC.getNumTraitInfos()];
@@ -8125,23 +8110,17 @@ void CvPlayer::changeUnitStrengthModifier(UnitClassTypes eIndex, int iChange)
 
 int CvPlayer::getProfessionMoveChange(ProfessionTypes eIndex) const
 {
-	FAssert(eIndex >= 0 && eIndex < GC.getNumProfessionInfos());
-	return m_paiProfessionMoveChange[eIndex];
+	return m_ja_iProfessionMoveChange.get(eIndex);
 }
 
 void CvPlayer::changeProfessionMoveChange(ProfessionTypes eIndex, int iChange)
 {
-	FAssert(eIndex >= 0 && eIndex < GC.getNumProfessionInfos());
-	if(iChange != 0)
-	{
-		m_paiProfessionMoveChange[eIndex] += iChange;
-	}
+	m_ja_iProfessionMoveChange.add(iChange, eIndex);
 }
 
 int CvPlayer::getProfessionCombatChange(ProfessionTypes eIndex) const
 {
-	FAssert(eIndex >= 0 && eIndex < GC.getNumProfessionInfos());
-	return m_paiProfessionCombatChange[eIndex];
+	return m_ja_iProfessionCombatChange.get(eIndex);
 }
 
 void CvPlayer::changeProfessionCombatChange(ProfessionTypes eIndex, int iChange)
@@ -8178,7 +8157,7 @@ void CvPlayer::changeProfessionCombatChange(ProfessionTypes eIndex, int iChange)
 			}
 		}
 
-		m_paiProfessionCombatChange[eIndex] += iChange;
+		m_ja_iProfessionCombatChange.add(iChange, eIndex);
 
 		for (CvUnit* pUnit = firstUnit(&iLoop); pUnit != NULL; pUnit = nextUnit(&iLoop))
 		{
@@ -11733,8 +11712,8 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(GC.getNumUnitClassInfos(), m_paiUnitClassImmigrated);
 	pStream->Read(GC.getNumUnitClassInfos(), m_paiUnitMoveChange);
 	pStream->Read(GC.getNumUnitClassInfos(), m_paiUnitStrengthModifier);
-	pStream->Read(GC.getNumProfessionInfos(), m_paiProfessionCombatChange);
-	pStream->Read(GC.getNumProfessionInfos(), m_paiProfessionMoveChange);
+	m_ja_iProfessionCombatChange.read(pStream);
+	m_ja_iProfessionMoveChange.read(pStream);
 	pStream->Read(GC.getNumBuildingClassInfos(), m_paiBuildingClassCount);
 	pStream->Read(GC.getNumBuildingClassInfos(), m_paiBuildingClassMaking);
 	pStream->Read(GC.getNumHurryInfos(), m_paiHurryCount);
@@ -11745,7 +11724,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 		pStream->Read(GC.getNumCivilizationInfos(), &aiMissionaryPoints[0]);
 		pStream->Read(GC.getNumCivilizationInfos(), &aiMissionaryPoints[0]);
 	}
-	pStream->Read(GC.getNumProfessionInfos(), m_aiProfessionEquipmentModifier);
+	m_ja_iProfessionEquipmentModifier.read(pStream);
 	pStream->Read(GC.getNumTraitInfos(), m_aiTraitCount);
 
 	for (iI=0;iI<GC.getNumCivicOptionInfos();iI++)
@@ -12208,13 +12187,13 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(GC.getNumUnitClassInfos(), m_paiUnitClassImmigrated);
 	pStream->Write(GC.getNumUnitClassInfos(), m_paiUnitMoveChange);
 	pStream->Write(GC.getNumUnitClassInfos(), m_paiUnitStrengthModifier);
-	pStream->Write(GC.getNumProfessionInfos(), m_paiProfessionCombatChange);
-	pStream->Write(GC.getNumProfessionInfos(), m_paiProfessionMoveChange);
+	m_ja_iProfessionCombatChange.write(pStream);
+	m_ja_iProfessionMoveChange.write(pStream);
 	pStream->Write(GC.getNumBuildingClassInfos(), m_paiBuildingClassCount);
 	pStream->Write(GC.getNumBuildingClassInfos(), m_paiBuildingClassMaking);
 	pStream->Write(GC.getNumHurryInfos(), m_paiHurryCount);
 	pStream->Write(GC.getNumSpecialBuildingInfos(), m_paiSpecialBuildingNotRequiredCount);
-	pStream->Write(GC.getNumProfessionInfos(), m_aiProfessionEquipmentModifier);
+	m_ja_iProfessionEquipmentModifier.write(pStream);
 	pStream->Write(GC.getNumTraitInfos(), m_aiTraitCount);
 
 	for (iI=0;iI<GC.getNumCivicOptionInfos();iI++)
@@ -16732,8 +16711,7 @@ int CvPlayer::getRebelCombatPercent() const
 
 int CvPlayer::getProfessionEquipmentModifier(ProfessionTypes eProfession) const
 {
-	FAssert(eProfession >= 0 && eProfession < GC.getNumProfessionInfos());
-	return m_aiProfessionEquipmentModifier[eProfession];
+	return m_ja_iProfessionEquipmentModifier.get(eProfession);
 }
 
 void CvPlayer::setProfessionEquipmentModifier(ProfessionTypes eProfession, int iValue)
@@ -16784,7 +16762,7 @@ void CvPlayer::setProfessionEquipmentModifier(ProfessionTypes eProfession, int i
 			}
 		}
 
-		m_aiProfessionEquipmentModifier[eProfession] = iValue;
+		m_ja_iProfessionEquipmentModifier.set(iValue, eProfession);
 
 		for (uint i = 0; i < aProfessionUnits.size(); ++i)
 		{
@@ -16845,7 +16823,7 @@ void CvPlayer::Update_cache_YieldEquipmentAmount(ProfessionTypes eProfession)
 void CvPlayer::Update_cache_YieldEquipmentAmount()
 {
 	///TKs Nightinggale fix
-	if (m_eID <= NO_PLAYER || m_aiProfessionEquipmentModifier == NULL || GC.getGameINLINE().getHandicapType() == NO_HANDICAP)
+	if (m_eID <= NO_PLAYER || GC.getGameINLINE().getHandicapType() == NO_HANDICAP)
 	{
 		// Some update calls gets triggered during player init. They can safely be ignored.
 		return;

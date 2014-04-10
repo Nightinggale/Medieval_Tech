@@ -972,15 +972,15 @@ protected:
 	int* m_paiUnitClassImmigrated;
 	int* m_paiUnitMoveChange;
 	int* m_paiUnitStrengthModifier;
-	int* m_paiProfessionCombatChange;
-	int* m_paiProfessionMoveChange;
+	ProfessionArray<int> m_ja_iProfessionCombatChange;
+	ProfessionArray<int> m_ja_iProfessionMoveChange;
 	int* m_paiBuildingClassCount;
 	int* m_paiBuildingClassMaking;
 	int* m_paiHurryCount;
 	int* m_paiSpecialBuildingNotRequiredCount;
 	int* m_aiMissionaryPoints;
 	int* m_aiMissionaryThresholdMultiplier;
-	int* m_aiProfessionEquipmentModifier;
+	ProfessionArray<int> m_ja_iProfessionEquipmentModifier;
 	int* m_aiTraitCount;
 
 	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale

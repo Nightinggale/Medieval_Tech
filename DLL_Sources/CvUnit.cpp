@@ -13446,6 +13446,7 @@ void CvUnit::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iYieldStored);
 	pStream->Read(&m_iExtraWorkRate);
 	pStream->Read((int*)&m_eProfession);
+	m_eProfession = (ProfessionTypes)GC.getGameINLINE().convertArrayInfo(JIT_ARRAY_PROFESSION, m_eProfession);
 	pStream->Read(&m_iUnitTravelTimer);
 	pStream->Read(&m_iBadCityDefenderCount);
 	pStream->Read(&m_iUnarmedCount);

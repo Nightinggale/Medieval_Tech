@@ -7661,7 +7661,7 @@ void CvGame::readArrayInfo(FDataStreamBase* pStream)
 
 			if (szType == GC.getArrayType((JIT_ARRAY_TYPES)iArray, iIndex))
 			{
-				aArray.push_back(iIndex);
+				aArray[iIndex] = iIndex;
 			}
 			else
 			{
@@ -7676,7 +7676,7 @@ void CvGame::readArrayInfo(FDataStreamBase* pStream)
 						break;
 					}
 				}
-				aArray.push_back(iNewIndex);
+				aArray[iIndex] = iNewIndex;
 			}
 		}
 

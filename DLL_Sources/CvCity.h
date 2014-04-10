@@ -363,7 +363,6 @@ public:
 	void changeUnitCombatFreeExperience(UnitCombatTypes eIndex, int iChange);
 	int getFreePromotionCount(PromotionTypes eIndex) const;
 	bool isFreePromotion(PromotionTypes eIndex) const;
-	void changeFreePromotionCount(PromotionTypes eIndex, int iChange);
 	CvUnit* getUnitWorkingPlot(int iPlotIndex) const;
 	DllExport bool isUnitWorkingPlot(int iPlotIndex) const;
 	bool isUnitWorkingAnyPlot(const CvUnit* pUnit) const;
@@ -687,7 +686,7 @@ protected:
 	int* m_paiUnitProductionTime;
 	int* m_aiSpecialistWeights;
 	int* m_paiUnitCombatFreeExperience;
-	int* m_paiFreePromotionCount;
+	PromotionArray<unsigned char> m_ja_iFreePromotionCount;
 	BuildingArray<bool> m_ja_bHasRealBuilding;
 	BuildingArray<bool> m_ja_bHasFreeBuilding;
 	int* m_paiWorkingPlot;

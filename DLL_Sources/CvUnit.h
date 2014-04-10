@@ -838,8 +838,8 @@ protected:
 	CvWString m_szName;
 	CvString m_szScriptData;
 
-	bool* m_pabHasRealPromotion;
-	int* m_paiFreePromotionCount;
+	PromotionArray<bool> m_ja_bHasRealPromotion;
+	PromotionArray<unsigned char> m_ja_iFreePromotionCount;
 	int* m_paiTerrainDoubleMoveCount;
 	///TKs Med
 	EuropeTypes m_eUnitTradeMarket;

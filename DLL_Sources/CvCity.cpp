@@ -58,7 +58,6 @@ CvCity::CvCity()
 	m_paiUnitProductionTime = NULL;
 	m_aiSpecialistWeights = NULL;
 	m_paiUnitCombatFreeExperience = NULL;
-	m_paiFreePromotionCount = NULL;
 
 	m_paiWorkingPlot = NULL;
 
@@ -440,7 +439,7 @@ void CvCity::uninit()
 	SAFE_DELETE_ARRAY(m_paiUnitProductionTime);
 	SAFE_DELETE_ARRAY(m_aiSpecialistWeights);
 	SAFE_DELETE_ARRAY(m_paiUnitCombatFreeExperience);
-	SAFE_DELETE_ARRAY(m_paiFreePromotionCount);
+	m_ja_iFreePromotionCount.resetContent();
 	m_ja_bHasRealBuilding.resetContent();
 	m_ja_bHasFreeBuilding.resetContent();
 
@@ -628,11 +627,7 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 		}
 
 		FAssertMsg((0 < GC.getNumPromotionInfos()),  "GC.getNumPromotionInfos() is not greater than zero but an array is being allocated in CvCity::reset");
-		m_paiFreePromotionCount = new int[GC.getNumPromotionInfos()];
-		for (iI = 0; iI < GC.getNumPromotionInfos(); iI++)
-		{
-			m_paiFreePromotionCount[iI] = 0;
-		}
+		m_ja_iFreePromotionCount.resetContent();
 
 		FAssertMsg((0 < NUM_CITY_PLOTS),  "NUM_CITY_PLOTS is not greater than zero but an array is being allocated in CvCity::reset");
 		m_paiWorkingPlot = new int[NUM_CITY_PLOTS];
@@ -2770,10 +2765,6 @@ void CvCity::hurry(HurryTypes eHurry)
 
 void CvCity::processBuilding(BuildingTypes eBuilding, int iChange)
 {
-	if (GC.getBuildingInfo(eBuilding).getFreePromotion() != NO_PROMOTION)
-	{
-		changeFreePromotionCount(((PromotionTypes)(GC.getBuildingInfo(eBuilding).getFreePromotion())), iChange);
-	}
 	///TKs Med
 	if (GC.getBuildingInfo(eBuilding).isIncreasesCityPopulation() != 0)
 	{
@@ -6073,24 +6064,13 @@ void CvCity::changeUnitCombatFreeExperience(UnitCombatTypes eIndex, int iChange)
 
 int CvCity::getFreePromotionCount(PromotionTypes eIndex) const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < GC.getNumPromotionInfos(), "eIndex expected to be < GC.getNumPromotionInfos()");
-	return m_paiFreePromotionCount[eIndex];
+	return m_ja_iFreePromotionCount.get(eIndex);
 }
 
 
 bool CvCity::isFreePromotion(PromotionTypes eIndex) const
 {
-	return (getFreePromotionCount(eIndex) > 0);
-}
-
-
-void CvCity::changeFreePromotionCount(PromotionTypes eIndex, int iChange)
-{
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < GC.getNumPromotionInfos(), "eIndex expected to be < GC.getNumPromotionInfos()");
-	m_paiFreePromotionCount[eIndex] = (m_paiFreePromotionCount[eIndex] + iChange);
-	FAssert(getFreePromotionCount(eIndex) >= 0);
+	return (m_ja_iFreePromotionCount.get(eIndex) > 0);
 }
 
 
@@ -8448,7 +8428,6 @@ void CvCity::read(FDataStreamBase* pStream)
 	pStream->Read(GC.getNumUnitInfos(), m_paiUnitProductionTime);
 	pStream->Read(GC.getNumUnitInfos(), m_aiSpecialistWeights);
 	pStream->Read(GC.getNumUnitCombatInfos(), m_paiUnitCombatFreeExperience);
-	pStream->Read(GC.getNumPromotionInfos(), m_paiFreePromotionCount);
 	m_ja_bHasRealBuilding.read(pStream);
 	m_ja_bHasFreeBuilding.read(pStream);
 
@@ -8675,7 +8654,6 @@ void CvCity::write(FDataStreamBase* pStream)
 	pStream->Write(GC.getNumUnitInfos(), m_paiUnitProductionTime);
 	pStream->Write(GC.getNumUnitInfos(), m_aiSpecialistWeights);
 	pStream->Write(GC.getNumUnitCombatInfos(), m_paiUnitCombatFreeExperience);
-	pStream->Write(GC.getNumPromotionInfos(), m_paiFreePromotionCount);
 	m_ja_bHasRealBuilding.write(pStream);
 	m_ja_bHasFreeBuilding.write(pStream);
 
@@ -11995,6 +11973,8 @@ void CvCity::UpdateBuildingAffectedCache()
 	this->m_iCenterPlotBonus = 0;
 	///Tke
 
+	m_ja_iFreePromotionCount.resetContent();
+
 	{
 		int iMaxTeachLevel = 0; // EDU remake - Nightinggale
 
@@ -12024,12 +12004,22 @@ void CvCity::UpdateBuildingAffectedCache()
 				///TKs Med
 				this->m_iCenterPlotBonus += kBuilding.getCenterPlotBonus();
 				///Tke
+
+				{
+					PromotionTypes ePromotinon = (PromotionTypes)kBuilding.getFreePromotion();
+					if (ePromotinon != NO_PROMOTION)
+					{
+						m_ja_iFreePromotionCount.add(1, ePromotinon);
+					}
+				}
 			}
 		}
 		this->m_iTeachLevel = iMaxTeachLevel; // EDU remake - Nightinggale
 	}
 
-	m_aiBuildingYieldDemands.hasContent(); // release unneeded memory
+	// release unneeded memory
+	m_aiBuildingYieldDemands.hasContent();
+	m_ja_iFreePromotionCount.hasContent();
 }
 // building affected cache - end - Nightinggale
 

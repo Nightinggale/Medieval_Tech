@@ -55,8 +55,6 @@ CvUnitTemporaryStrengthModifier::~CvUnitTemporaryStrengthModifier()
 
 
 CvUnit::CvUnit() :
-	m_pabHasRealPromotion(NULL),
-	m_paiFreePromotionCount(NULL),
 	m_paiTerrainDoubleMoveCount(NULL),
 	///TKs MEd
 	m_paiAltEquipmentTypes(NULL),
@@ -274,8 +272,8 @@ void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAIT
 
 void CvUnit::uninit()
 {
-	SAFE_DELETE_ARRAY(m_pabHasRealPromotion);
-	SAFE_DELETE_ARRAY(m_paiFreePromotionCount);
+	m_ja_bHasRealPromotion.resetContent();
+	m_ja_iFreePromotionCount.resetContent();
 	SAFE_DELETE_ARRAY(m_paiTerrainDoubleMoveCount);
 	///TKs Med
 	SAFE_DELETE_ARRAY(m_paiAltEquipmentTypes);
@@ -412,13 +410,8 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 	if (!bConstructorCall)
 	{
 		FAssertMsg((0 < GC.getNumPromotionInfos()), "GC.getNumPromotionInfos() is not greater than zero but an array is being allocated in CvUnit::reset");
-		m_paiFreePromotionCount = new int[GC.getNumPromotionInfos()];
-		m_pabHasRealPromotion = new bool[GC.getNumPromotionInfos()];
-		for (iI = 0; iI < GC.getNumPromotionInfos(); iI++)
-		{
-			m_pabHasRealPromotion[iI] = false;
-			m_paiFreePromotionCount[iI] = 0;
-		}
+		m_ja_bHasRealPromotion.resetContent();
+		m_ja_iFreePromotionCount.resetContent();
 
 		FAssertMsg((0 < GC.getNumTerrainInfos()), "GC.getNumTerrainInfos() is not greater than zero but a float array is being allocated in CvUnit::reset");
 		m_paiTerrainDoubleMoveCount = new int[GC.getNumTerrainInfos()];
@@ -13180,9 +13173,7 @@ bool CvUnit::isHasPromotion(PromotionTypes eIndex) const
 
 bool CvUnit::isHasRealPromotion(PromotionTypes eIndex) const
 {
-	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
-	FAssertMsg(eIndex < GC.getNumPromotionInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_pabHasRealPromotion[eIndex];
+	return m_ja_bHasRealPromotion.get(eIndex);
 }
 
 void CvUnit::setHasRealPromotion(PromotionTypes eIndex, bool bValue)
@@ -13197,7 +13188,7 @@ void CvUnit::setHasRealPromotion(PromotionTypes eIndex, bool bValue)
 			processPromotion(eIndex, -1);
 		}
 
-		m_pabHasRealPromotion[eIndex] = bValue;
+		m_ja_bHasRealPromotion.set(bValue, eIndex);
 
 		if (isHasPromotion(eIndex))
 		{
@@ -13320,7 +13311,7 @@ void CvUnit::setFreePromotionCount(PromotionTypes eIndex, int iValue)
 			processPromotion(eIndex, -1);
 		}
 
-		m_paiFreePromotionCount[eIndex] = iValue;
+		m_ja_iFreePromotionCount.set(iValue, eIndex);
 
 		if (isHasPromotion(eIndex))
 		{
@@ -13337,9 +13328,7 @@ void CvUnit::setFreePromotionCount(PromotionTypes eIndex, int iValue)
 
 int CvUnit::getFreePromotionCount(PromotionTypes eIndex) const
 {
-	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
-	FAssertMsg(eIndex < GC.getNumPromotionInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiFreePromotionCount[eIndex];
+	return m_ja_iFreePromotionCount.get(eIndex);
 }
 
 int CvUnit::getSubUnitCount() const
@@ -13508,8 +13497,8 @@ void CvUnit::read(FDataStreamBase* pStream)
 	pStream->ReadString(m_szName);
 	pStream->ReadString(m_szScriptData);
 
-	pStream->Read(GC.getNumPromotionInfos(), m_pabHasRealPromotion);
-	pStream->Read(GC.getNumPromotionInfos(), m_paiFreePromotionCount);
+	m_ja_bHasRealPromotion.read(pStream);
+	m_ja_iFreePromotionCount.read(pStream);
 	pStream->Read(GC.getNumTerrainInfos(), m_paiTerrainDoubleMoveCount);
 	///TKs MEd
 	pStream->Read(NUM_YIELD_TYPES, m_paiAltEquipmentTypes);
@@ -13631,8 +13620,8 @@ void CvUnit::write(FDataStreamBase* pStream)
 	pStream->WriteString(m_szName);
 	pStream->WriteString(m_szScriptData);
 
-	pStream->Write(GC.getNumPromotionInfos(), m_pabHasRealPromotion);
-	pStream->Write(GC.getNumPromotionInfos(), m_paiFreePromotionCount);
+	m_ja_bHasRealPromotion.write(pStream);
+	m_ja_iFreePromotionCount.write(pStream);
 	pStream->Write(GC.getNumTerrainInfos(), m_paiTerrainDoubleMoveCount);
 	///TKs MEd
 	pStream->Write(NUM_YIELD_TYPES, m_paiAltEquipmentTypes);

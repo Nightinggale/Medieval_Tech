@@ -54,9 +54,6 @@ CvCity::CvCity()
 	m_bmScoutVisited = 0;
 	/// player bitmap - end - Nightinggale
 
-	m_paiUnitProduction = NULL;
-	m_paiUnitProductionTime = NULL;
-	m_aiSpecialistWeights = NULL;
 	m_paiUnitCombatFreeExperience = NULL;
 
 	m_paiWorkingPlot = NULL;
@@ -435,9 +432,9 @@ void CvCity::uninit()
 	m_ja_iBuildingProductionTime.resetContent();
 	m_ja_iBuildingOriginalOwner.resetContent();
 	m_ja_iBuildingOriginalTime.resetContent();
-	SAFE_DELETE_ARRAY(m_paiUnitProduction);
-	SAFE_DELETE_ARRAY(m_paiUnitProductionTime);
-	SAFE_DELETE_ARRAY(m_aiSpecialistWeights);
+	m_ja_iUnitProduction.resetContent();
+	m_ja_iUnitProductionTime.resetContent();
+	m_ja_iSpecialistWeights.resetContent();
 	SAFE_DELETE_ARRAY(m_paiUnitCombatFreeExperience);
 	m_ja_iFreePromotionCount.resetContent();
 	m_ja_bHasRealBuilding.resetContent();
@@ -609,15 +606,9 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 		m_ja_bHasFreeBuilding.resetContent();
 
 		FAssertMsg((0 < GC.getNumUnitInfos()),  "GC.getNumUnitInfos() is not greater than zero but an array is being allocated in CvCity::reset");
-		m_paiUnitProduction = new int[GC.getNumUnitInfos()];
-		m_paiUnitProductionTime = new int[GC.getNumUnitInfos()];
-		m_aiSpecialistWeights = new int[GC.getNumUnitInfos()];
-		for (iI = 0;iI < GC.getNumUnitInfos();iI++)
-		{
-			m_paiUnitProduction[iI] = 0;
-			m_paiUnitProductionTime[iI] = 0;
-			m_aiSpecialistWeights[iI] = 0;
-		}
+		m_ja_iUnitProduction.resetContent();
+		m_ja_iUnitProductionTime.resetContent();
+		m_ja_iSpecialistWeights.resetContent();
 
 		FAssertMsg((0 < GC.getNumUnitCombatInfos()),  "GC.getNumUnitCombatInfos() is not greater than zero but an array is being allocated in CvCity::reset");
 		m_paiUnitCombatFreeExperience = new int[GC.getNumUnitCombatInfos()];
@@ -5986,9 +5977,7 @@ int CvCity::getBuildingOriginalTime(BuildingTypes eIndex) const
 
 int CvCity::getUnitProduction(UnitTypes eIndex)	const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < GC.getNumUnitInfos(), "eIndex expected to be < GC.getNumUnitInfos()");
-	return m_paiUnitProduction[eIndex];
+	return m_ja_iUnitProduction.get(eIndex);
 }
 
 
@@ -5999,7 +5988,7 @@ void CvCity::setUnitProduction(UnitTypes eIndex, int iNewValue)
 
 	if (getUnitProduction(eIndex) != iNewValue)
 	{
-		m_paiUnitProduction[eIndex] = iNewValue;
+		m_ja_iUnitProduction.set(iNewValue, eIndex);
 		FAssert(getUnitProduction(eIndex) >= 0);
 
 		if (getTeam() == GC.getGameINLINE().getActiveTeam())
@@ -6024,17 +6013,13 @@ void CvCity::changeUnitProduction(UnitTypes eIndex, int iChange)
 
 int CvCity::getUnitProductionTime(UnitTypes eIndex)	const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < GC.getNumUnitInfos(), "eIndex expected to be < GC.getNumUnitInfos()");
-	return m_paiUnitProductionTime[eIndex];
+	return m_ja_iUnitProductionTime.get(eIndex);
 }
 
 
 void CvCity::setUnitProductionTime(UnitTypes eIndex, int iNewValue)
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < GC.getNumUnitInfos(), "eIndex expected to be < GC.getNumUnitInfos()");
-	m_paiUnitProductionTime[eIndex] = iNewValue;
+	m_ja_iUnitProductionTime.set(iNewValue, eIndex);
 	FAssert(getUnitProductionTime(eIndex) >= 0);
 }
 
@@ -8041,7 +8026,7 @@ void CvCity::doSpecialists()
 			///TKe
 			if (kUnit.getTeachLevel() <= iTeachLevel)
 			{
-				m_aiSpecialistWeights[eUnit] = 1;
+				m_ja_iSpecialistWeights.set(1, eUnit);
 			}
 		}
 	}
@@ -8424,9 +8409,9 @@ void CvCity::read(FDataStreamBase* pStream)
 	m_ja_iBuildingProductionTime.read(pStream);
 	m_ja_iBuildingOriginalOwner.read(pStream);
 	m_ja_iBuildingOriginalTime.read(pStream);
-	pStream->Read(GC.getNumUnitInfos(), m_paiUnitProduction);
-	pStream->Read(GC.getNumUnitInfos(), m_paiUnitProductionTime);
-	pStream->Read(GC.getNumUnitInfos(), m_aiSpecialistWeights);
+	m_ja_iUnitProduction.read(pStream);
+	m_ja_iUnitProductionTime.read(pStream);
+	m_ja_iSpecialistWeights.read(pStream);
 	pStream->Read(GC.getNumUnitCombatInfos(), m_paiUnitCombatFreeExperience);
 	m_ja_bHasRealBuilding.read(pStream);
 	m_ja_bHasFreeBuilding.read(pStream);
@@ -8650,9 +8635,9 @@ void CvCity::write(FDataStreamBase* pStream)
 	m_ja_iBuildingProductionTime.write(pStream);
 	m_ja_iBuildingOriginalOwner.write(pStream);
 	m_ja_iBuildingOriginalTime.write(pStream);
-	pStream->Write(GC.getNumUnitInfos(), m_paiUnitProduction);
-	pStream->Write(GC.getNumUnitInfos(), m_paiUnitProductionTime);
-	pStream->Write(GC.getNumUnitInfos(), m_aiSpecialistWeights);
+	m_ja_iUnitProduction.write(pStream);
+	m_ja_iUnitProductionTime.write(pStream);
+	m_ja_iSpecialistWeights.write(pStream);
 	pStream->Write(GC.getNumUnitCombatInfos(), m_paiUnitCombatFreeExperience);
 	m_ja_bHasRealBuilding.write(pStream);
 	m_ja_bHasFreeBuilding.write(pStream);
@@ -10697,10 +10682,12 @@ bool CvCity::educateStudent(int iUnitId, UnitTypes eUnit)
 	pLearnUnit->convert(pUnit, true);
 
 	// reduce accumulated weights, but round up
+	/*
 	for (int i = 0; i < GC.getNumUnitInfos(); ++i)
 	{
 		m_aiSpecialistWeights[i] = (m_aiSpecialistWeights[i] + 1) / 2;
 	}
+	*/
     ///TKs Med Update 1.1g
     if (!bEducationClass)
     {
@@ -10735,7 +10722,7 @@ bool CvCity::educateStudent(int iUnitId, UnitTypes eUnit)
 
 int CvCity::getSpecialistTuition(UnitTypes eUnit) const
 {
-	if (m_aiSpecialistWeights[eUnit] <= 0)
+	if (m_ja_iSpecialistWeights.get(eUnit) <= 0)
 	{
 		return -1;
 	}

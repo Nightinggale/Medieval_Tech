@@ -13479,6 +13479,7 @@ void CvUnit::read(FDataStreamBase* pStream)
 	pStream->Read((int*)&m_eOwner);
 	pStream->Read((int*)&m_eCapturingPlayer);
 	pStream->Read((int*)&m_eUnitType);
+	m_eUnitType = (UnitTypes)GC.getGameINLINE().convertArrayInfo(JIT_ARRAY_UNIT, m_eUnitType);
 	FAssert(NO_UNIT != m_eUnitType);
 	m_pUnitInfo = (NO_UNIT != m_eUnitType) ? &GC.getUnitInfo(m_eUnitType) : NULL;
 	pStream->Read((int*)&m_eLeaderUnitType);

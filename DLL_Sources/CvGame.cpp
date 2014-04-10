@@ -41,7 +41,6 @@ CvGame::CvGame()
 	m_aiTeamRank = new int[MAX_TEAMS];						// Ordered by team ID...
 	m_aiTeamScore = new int[MAX_TEAMS];						// Ordered by team ID...
 
-	m_paiUnitCreatedCount = NULL;
 	m_paiUnitClassCreatedCount = NULL;
 	m_paiBuildingClassCreatedCount = NULL;
 	m_aeFatherTeam = NULL;
@@ -393,7 +392,7 @@ void CvGame::regenerateMap()
 
 void CvGame::uninit()
 {
-	SAFE_DELETE_ARRAY(m_paiUnitCreatedCount);
+	m_ja_iUnitCreatedCount.resetContent();
 	SAFE_DELETE_ARRAY(m_paiUnitClassCreatedCount);
 	SAFE_DELETE_ARRAY(m_paiBuildingClassCreatedCount);
 	SAFE_DELETE_ARRAY(m_aeFatherTeam);
@@ -488,13 +487,7 @@ void CvGame::reset(HandicapTypes eHandicap, bool bConstructorCall)
 
 	if (!bConstructorCall)
 	{
-
-		FAssertMsg(m_paiUnitCreatedCount==NULL, "about to leak memory, CvGame::m_paiUnitCreatedCount");
-		m_paiUnitCreatedCount = new int[GC.getNumUnitInfos()];
-		for (iI = 0; iI < GC.getNumUnitInfos(); iI++)
-		{
-			m_paiUnitCreatedCount[iI] = 0;
-		}
+		m_ja_iUnitCreatedCount.resetContent();
 
 		FAssertMsg(m_paiUnitClassCreatedCount==NULL, "about to leak memory, CvGame::m_paiUnitClassCreatedCount");
 		m_paiUnitClassCreatedCount = new int[GC.getNumUnitClassInfos()];
@@ -4866,17 +4859,13 @@ void CvGame::setForceControl(ForceControlTypes eIndex, bool bEnabled)
 
 int CvGame::getUnitCreatedCount(UnitTypes eIndex)
 {
-	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
-	FAssertMsg(eIndex < GC.getNumUnitInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiUnitCreatedCount[eIndex];
+	return m_ja_iUnitCreatedCount.get(eIndex);
 }
 
 
 void CvGame::incrementUnitCreatedCount(UnitTypes eIndex)
 {
-	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
-	FAssertMsg(eIndex < GC.getNumUnitInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiUnitCreatedCount[eIndex]++;
+	m_ja_iUnitCreatedCount.add(1, eIndex);
 }
 
 
@@ -6642,7 +6631,7 @@ void CvGame::read(FDataStreamBase* pStream)
 	pStream->Read(MAX_TEAMS, m_aiTeamRank);
 	pStream->Read(MAX_TEAMS, m_aiTeamScore);
 
-	pStream->Read(GC.getNumUnitInfos(), m_paiUnitCreatedCount);
+	m_ja_iUnitCreatedCount.read(pStream);
 	pStream->Read(GC.getNumUnitClassInfos(), m_paiUnitClassCreatedCount);
 	pStream->Read(GC.getNumBuildingClassInfos(), m_paiBuildingClassCreatedCount);
 	pStream->Read(GC.getNumFatherInfos(), (int*)m_aeFatherTeam);
@@ -6809,7 +6798,7 @@ void CvGame::write(FDataStreamBase* pStream)
 	pStream->Write(MAX_TEAMS, m_aiRankTeam);
 	pStream->Write(MAX_TEAMS, m_aiTeamRank);
 	pStream->Write(MAX_TEAMS, m_aiTeamScore);
-	pStream->Write(GC.getNumUnitInfos(), m_paiUnitCreatedCount);
+	m_ja_iUnitCreatedCount.write(pStream);
 	pStream->Write(GC.getNumUnitClassInfos(), m_paiUnitClassCreatedCount);
 	pStream->Write(GC.getNumBuildingClassInfos(), m_paiBuildingClassCreatedCount);
 	pStream->Write(GC.getNumFatherInfos(), (int*)m_aeFatherTeam);

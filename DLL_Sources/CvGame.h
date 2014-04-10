@@ -420,7 +420,7 @@ protected:
 	int* m_aiTeamRank;						// Ordered by team ID...
 	int* m_aiTeamScore;						// Ordered by team ID...
 
-	int* m_paiUnitCreatedCount;
+	UnitArray<int> m_ja_iUnitCreatedCount;
 	int* m_paiUnitClassCreatedCount;
 	int* m_paiBuildingClassCreatedCount;
 

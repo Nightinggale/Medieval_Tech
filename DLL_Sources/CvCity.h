@@ -682,9 +682,9 @@ protected:
 	BuildingArray<int> m_ja_iBuildingProductionTime;
 	BuildingArray<int> m_ja_iBuildingOriginalOwner;
 	BuildingArray<int> m_ja_iBuildingOriginalTime;
-	int* m_paiUnitProduction;
-	int* m_paiUnitProductionTime;
-	int* m_aiSpecialistWeights;
+	UnitArray<int> m_ja_iUnitProduction;
+	UnitArray<int> m_ja_iUnitProductionTime;
+	UnitArray<unsigned char> m_ja_iSpecialistWeights; // TODO convert to bool (used as bool)
 	int* m_paiUnitCombatFreeExperience;
 	PromotionArray<unsigned char> m_ja_iFreePromotionCount;
 	BuildingArray<bool> m_ja_bHasRealBuilding;

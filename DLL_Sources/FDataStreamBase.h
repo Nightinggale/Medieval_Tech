@@ -116,6 +116,19 @@ public:
 	void		        Write(__int64 value);
 	void		        Write(unsigned __int64 value);
 	/// 64 bit save - end - Nightinggale
+
+	/// JIT array save - start - Nightinggale
+	void                Read(JIT_ARRAY_TYPES eType, int* i);
+	
+	void Read(BonusTypes*      eVar) {Read(JIT_ARRAY_BONUS       , (int*) eVar);}
+	void Read(EuropeTypes*     eVar) {Read(JIT_ARRAY_EUROPE      , (int*) eVar);}
+	void Read(ProfessionTypes* eVar) {Read(JIT_ARRAY_PROFESSION  , (int*) eVar);}
+	void Read(PromotionTypes*  eVar) {Read(JIT_ARRAY_PROMOTION   , (int*) eVar);}
+	void Read(UnitTypes*       eVar) {Read(JIT_ARRAY_UNIT        , (int*) eVar);}
+	void Read(UnitClassTypes*  eVar) {Read(JIT_ARRAY_UNIT_CLASS  , (int*) eVar);}
+	void Read(UnitCombatTypes* eVar) {Read(JIT_ARRAY_UNIT_COMBAT , (int*) eVar);}
+	void Read(YieldTypes*      eVar) {Read(JIT_ARRAY_YIELD       , (int*) eVar);}
+	/// JIT array save - end - Nightinggale
 };
 
 #endif	//FDATASTREAMBASE_H

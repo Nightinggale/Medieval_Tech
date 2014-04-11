@@ -209,6 +209,8 @@ namespace python = boost::python;
 
 #include "FAssert.h"
 #include "CvGameCoreDLLDefNew.h"
+#include "CvEnums.h"
+#include "Yields.h"
 #include "FDataStreamBase.h"
 #include "FFreeListArrayBase.h"
 #include "FFreeListTrashArray.h"
@@ -216,7 +218,6 @@ namespace python = boost::python;
 #include "CvIdVector.h"
 //#include "FVariableSystem.h"
 #include "CvString.h"
-#include "CvEnums.h"
 #include "CvStructs.h"
 #include "CvDLLUtilityIFaceBase.h"
 

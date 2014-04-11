@@ -13434,8 +13434,7 @@ void CvUnit::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iImmobileTimer);
 	pStream->Read(&m_iYieldStored);
 	pStream->Read(&m_iExtraWorkRate);
-	pStream->Read((int*)&m_eProfession);
-	m_eProfession = (ProfessionTypes)GC.getGameINLINE().convertArrayInfo(JIT_ARRAY_PROFESSION, m_eProfession);
+	pStream->Read(&m_eProfession);
 	pStream->Read(&m_iUnitTravelTimer);
 	pStream->Read(&m_iBadCityDefenderCount);
 	pStream->Read(&m_iUnarmedCount);
@@ -13478,8 +13477,7 @@ void CvUnit::read(FDataStreamBase* pStream)
 
 	pStream->Read((int*)&m_eOwner);
 	pStream->Read((int*)&m_eCapturingPlayer);
-	pStream->Read((int*)&m_eUnitType);
-	m_eUnitType = (UnitTypes)GC.getGameINLINE().convertArrayInfo(JIT_ARRAY_UNIT, m_eUnitType);
+	pStream->Read(&m_eUnitType);
 	FAssert(NO_UNIT != m_eUnitType);
 	m_pUnitInfo = (NO_UNIT != m_eUnitType) ? &GC.getUnitInfo(m_eUnitType) : NULL;
 	pStream->Read((int*)&m_eLeaderUnitType);

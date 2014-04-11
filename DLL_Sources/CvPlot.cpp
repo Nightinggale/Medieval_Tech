@@ -7595,12 +7595,6 @@ void CvPlot::read(FDataStreamBase* pStream)
 	pStream->Read(&m_eTerrainType);
 	pStream->Read(&m_eFeatureType);
 	pStream->Read(&m_eBonusType);
-	/// JIT array save - start - Nightinggale
-	if (m_eBonusType != NO_BONUS)
-	{
-		m_eBonusType = GC.getGameINLINE().convertArrayInfo(JIT_ARRAY_BONUS, m_eBonusType);
-	}
-	/// JIT array save - end - Nightinggale
 	pStream->Read(&m_eImprovementType);
 	pStream->Read(&m_eRouteType);
 	pStream->Read(&m_eRiverNSDirection);

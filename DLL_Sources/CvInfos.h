@@ -3166,6 +3166,9 @@ public:
 	///TKs Med
 	DllExport int isFreePromotionUnitClass(int i) const;
 	DllExport int isFreePromotionUnitProfession(int i) const;
+	int getNumBonusTechCategories() const;
+	CivicTypes getBonusTechCategory(int index) const;
+	int getTechCategoryBonus(int index) const;
 	///TKe
 	DllExport int getYieldModifier(int iYield) const;
 	DllExport int getGoodyFactor(int iGoody) const;
@@ -3233,6 +3236,7 @@ protected:
 	bool* m_abFreeBuildingClass;
 
 	std::vector<int*> m_aaiBuildingYieldChanges;
+	std::vector< std::pair<CivicTypes, int> > m_aBonusTechCategories;//TKs Invention Categories
 };
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

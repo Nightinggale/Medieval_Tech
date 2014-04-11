@@ -108,109 +108,42 @@
       <!--If a Yield is listed here it will be used to determine Industrial Victory. The code is only set up to use one Yield atm.-->
 			<IndustrializationVictory/>
 		</CivicInfo>
-		<CivicInfo>
-			<CivicOptionType>NONE</CivicOptionType>
-			<Type>MEDIEVAL_TECH</Type>
-			<Description>Medieval Tech</Description>
-			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
-			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
-			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
-			<iAIWeight>0</iAIWeight>
-			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
-			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
-			<iFreeExperience>0</iFreeExperience>
-			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
-			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
-			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
-			<iExpInBorderModifier>0</iExpInBorderModifier>
-			<iNativeAttitudeChange>0</iNativeAttitudeChange>
-			<iNativeCombatModifier>0</iNativeCombatModifier>
-			<iFatherPointModifier>0</iFatherPointModifier>
-			<bDominateNativeBorders>0</bDominateNativeBorders>
-			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
-			<YieldModifiers/>
-			<CapitalYieldModifiers/>
-			<Hurrys/>
-			<SpecialBuildingNotRequireds/>
-			<ImprovementYieldChanges/>
-			<FreeUnitClasses/>
-      <!--Prevents the Free Units from being automaticly added as population-->
-			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
-      <!--Prevents units from being created in all the cities-->
-			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
-			<ProfessionCombatChanges/>
-			<ImmigrationConversion>NONE</ImmigrationConversion>
-      <!--A Category must be listed here for the Tech to be used in game-->
-			<InventionCategory/>
-      <!--X and Y location of the tech on the tech grid-->
-			<iX_Location>0</iX_Location>
-			<iY_Location>0</iY_Location>
-      <!--These 3 are the pre required techs. On the tech tree grid if all three are used RequiredInvention will be set as "Also Requires"-->
-      <!--and arrows will point at RequiredInvention2 and RequiredInventionOr. If RequiredInvention2 is not used arrows will point at RequiredInvention and RequiredInventionOr.-->
-      <!--If the Or tech is not used then RequiredInvention2 wil be set as the "Also Requires" if it is used.-->
-			<RequiredInvention/>
-			<RequiredInvention2/>
-			<RequiredInventionOr/>
-      <!--This unit must be assisting on the project in the City-->
-			<RequiredUnitType/>
-      <!--These are the required Yields that get consumed. If no Yield is used here do not put YIELD_IDEAS, leave as <RequiredYields/>-->
-			<RequiredYields/>
-      <!--Allows the Production of this Yield. If a yield is listed here it will not be able to be harvested, bought, or sold. Nor will buildings associated with this yield be usable-->
-			<AllowsYields/>
-      <!--The next four are self explained. Put 1 to allow or -1 to disallow-->
-			<AllowsBuildingTypes/>
-			<AllowsUnitClasses/>
-			<AllowsPromotions/>
-			<AllowsProfessions/>
-      <!--Place a Trait here to have it Processed along with this Tech. See CIV4TraitInfos for examples-->
-			<AllowsTrait/>
-      <!--This is "Improvements". Place Improvements here to allow or disallow-->
-			<AllowsBuildTypes/>
-      <!--Checks the below terrains for the Improvements above. Not fully tested yet-->
-			<AllowsBuildTypesTerrain/>
-      <!--These next two are used to convert units after this tech is research-->
-			<ConvertsUnitsFrom/>
-			<ConvertsUnitsTo/>
-      <!--This will be the new Default population unit for when a City does its Growth or you clear specialty and such-->
-			<NewDefaultUnitClass/>
-			<NewLuxuryUnitClass/>
-      <!--If this tech is researched the DisallowsTech will be none researchable-->
-			<DisallowsTech/>
-      <!--Modifies the cost to move along routes. Example: put 1 to increase movement along roads by 1-->
-			<RouteMovementMod/>
-      <!--This tech will allow you to have a Constitution before you start your revolution-->
-			<bStartConstitution>0</bStartConstitution>
-      <!--Allows map trading-->
-			<bAllowsMapTrade>0</bAllowsMapTrade>
-      <!--Arrows will not point to this Tech, currently not used in the code-->
-			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
-      <!--This tech will be none tradeable-->
-			<bisNoneTradeable>0</bisNoneTradeable>
-      <!--Increases heal rate in enemy territory by this amount-->
-			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
-      <!--The number of free Immigrants when this tech is researched-->
-			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
-      <!--Decreases the standard 200 threshold for food to do population growth-->
-			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
-      <!--Increases the Center plot food bonus-->
-			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
-      <!--Changes the rate you gain Prolific inventor experience-->
-			<iProlificInventorRateChange>0</iProlificInventorRateChange>
-      <!--First to discover earns this gold-->
-			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
-      <!--Gold bonus for discovering, don't need to be first-->
-			<iGoldBonus>0</iGoldBonus>
-      <!--The number of Free techs. If you have a free tech the next project you have selected to research on your next turn will be auto completed-->
-			<iFreeTechs>0</iFreeTechs>
-      <!--This modifies the percent that the king charges you to transport Treasure units-->
-			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
-      <!--If a Yield is listed here it will be used to determine Industrial Victory. The code is only set up to use one Yield atm.-->
-			<IndustrializationVictory/>
-		</CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>NONE</CivicOptionType>
+      <Type>GLOBAL_EFFECT_ANARCHY</Type>
+      <Description>Anarchy</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,1,3</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+      <UpkeepYields/>
+      <iAnarchyLength>0</iAnarchyLength>
+      <iInitialCost>0</iInitialCost>
+    </CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TRADE_TECH</Type>
-			<Description>Medieval Trade Tech</Description>
+			<Description>Trading Points</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
 			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
 			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
@@ -407,11 +340,11 @@
 		</CivicInfo>
     <CivicInfo>
       <CivicOptionType>NONE</CivicOptionType>
-      <Type>GLOBAL_EFFECT_ANARCHY</Type>
-      <Description>Anarchy</Description>
-      <Civilopedia>????</Civilopedia>
-      <Strategy>????</Strategy>
-      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,1,3</Button>
+      <Type>MEDIEVAL_TECH</Type>
+      <Description>Medieval Tech</Description>
+      <Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+      <Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+      <Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
       <iAIWeight>0</iAIWeight>
       <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
       <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -431,11 +364,78 @@
       <SpecialBuildingNotRequireds/>
       <ImprovementYieldChanges/>
       <FreeUnitClasses/>
+      <!--Prevents the Free Units from being automaticly added as population-->
+      <bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      <!--Prevents units from being created in all the cities-->
+      <bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
-      <UpkeepYields/>
-      <iAnarchyLength>0</iAnarchyLength>
-      <iInitialCost>0</iInitialCost>
+      <!--A Category must be listed here for the Tech to be used in game-->
+      <InventionCategory/>
+      <!--X and Y location of the tech on the tech grid-->
+      <iX_Location>0</iX_Location>
+      <iY_Location>0</iY_Location>
+      <!--These 3 are the pre required techs. On the tech tree grid if all three are used RequiredInvention will be set as "Also Requires"-->
+      <!--and arrows will point at RequiredInvention2 and RequiredInventionOr. If RequiredInvention2 is not used arrows will point at RequiredInvention and RequiredInventionOr.-->
+      <!--If the Or tech is not used then RequiredInvention2 wil be set as the "Also Requires" if it is used.-->
+      <RequiredInvention/>
+      <RequiredInvention2/>
+      <RequiredInventionOr/>
+      <!--This unit must be assisting on the project in the City-->
+      <RequiredUnitType/>
+      <!--These are the required Yields that get consumed. If no Yield is used here do not put YIELD_IDEAS, leave as <RequiredYields/>-->
+      <RequiredYields/>
+      <!--Allows the Production of this Yield. If a yield is listed here it will not be able to be harvested, bought, or sold. Nor will buildings associated with this yield be usable-->
+      <AllowsYields/>
+      <!--The next four are self explained. Put 1 to allow or -1 to disallow-->
+      <AllowsBuildingTypes/>
+      <AllowsUnitClasses/>
+      <AllowsPromotions/>
+      <AllowsProfessions/>
+      <!--Place a Trait here to have it Processed along with this Tech. See CIV4TraitInfos for examples-->
+      <AllowsTrait/>
+      <!--This is "Improvements". Place Improvements here to allow or disallow-->
+      <AllowsBuildTypes/>
+      <!--Checks the below terrains for the Improvements above. Not fully tested yet-->
+      <AllowsBuildTypesTerrain/>
+      <!--These next two are used to convert units after this tech is research-->
+      <ConvertsUnitsFrom/>
+      <ConvertsUnitsTo/>
+      <!--This will be the new Default population unit for when a City does its Growth or you clear specialty and such-->
+      <NewDefaultUnitClass/>
+      <NewLuxuryUnitClass/>
+      <!--If this tech is researched the DisallowsTech will be none researchable-->
+      <DisallowsTech/>
+      <!--Modifies the cost to move along routes. Example: put 1 to increase movement along roads by 1-->
+      <RouteMovementMod/>
+      <!--This tech will allow you to have a Constitution before you start your revolution-->
+      <bStartConstitution>0</bStartConstitution>
+      <!--Allows map trading-->
+      <bAllowsMapTrade>0</bAllowsMapTrade>
+      <!--Arrows will not point to this Tech, currently not used in the code-->
+      <bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+      <!--This tech will be none tradeable-->
+      <bisNoneTradeable>0</bisNoneTradeable>
+      <!--Increases heal rate in enemy territory by this amount-->
+      <iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      <!--The number of free Immigrants when this tech is researched-->
+      <iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      <!--Decreases the standard 200 threshold for food to do population growth-->
+      <iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      <!--Increases the Center plot food bonus-->
+      <iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      <!--Changes the rate you gain Prolific inventor experience-->
+      <iProlificInventorRateChange>0</iProlificInventorRateChange>
+      <!--First to discover earns this gold-->
+      <iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      <!--Gold bonus for discovering, don't need to be first-->
+      <iGoldBonus>0</iGoldBonus>
+      <!--The number of Free techs. If you have a free tech the next project you have selected to research on your next turn will be auto completed-->
+      <iFreeTechs>0</iFreeTechs>
+      <!--This modifies the percent that the king charges you to transport Treasure units-->
+      <iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      <!--If a Yield is listed here it will be used to determine Industrial Victory. The code is only set up to use one Yield atm.-->
+      <IndustrializationVictory/>
     </CivicInfo>
     <CivicInfo>
       <CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>

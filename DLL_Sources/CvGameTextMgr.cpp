@@ -2964,6 +2964,17 @@ void CvGameTextMgr::parseTraits(CvWStringBuffer &szHelpString, TraitTypes eTrait
 			szHelpString.append(kTrait.getHelp());
 		}
 
+		//TK Tech Categories
+		for (int iI = 0; iI < kTrait.getNumBonusTechCategories(); ++iI)
+		{
+			szHelpString.append(NEWLINE);
+			if (bIndent)
+			{
+				szHelpString.append(L"  ");
+			}
+			szHelpString.append(gDLL->getText("TXT_KEY_TRAIT_TECH_CATEGORY_BONUS", kTrait.getTechCategoryBonus(iI), GC.getCivicInfo((CivicTypes)kTrait.getBonusTechCategory(iI)).getDescription()));
+		}
+
 		// iLevelExperienceModifier
 		if (kTrait.getLevelExperienceModifier() != 0)
 		{

@@ -122,7 +122,7 @@ class CvPediaTechs:
 		# sort Improvements alphabetically
 		listSorted=[(0,0)]*gc.getNumCivicInfos()
 		for j in range(gc.getNumCivicInfos()):
-			if gc.getCivicInfo(j).getInventionCategory() == 1:
+			if gc.getCivicInfo(j).getInventionCategory() >= 4:
 				listSorted[j] = (gc.getCivicInfo(j).getDescription(), j)
 		listSorted.sort()
 
@@ -131,7 +131,7 @@ class CvPediaTechs:
 		for iI in range(gc.getNumCivicInfos()):
 			if (not gc.getCivicInfo(listSorted[iI][1]).isGraphicalOnly()):
 				#TKs
-				if gc.getCivicInfo(listSorted[iI][1]).getInventionCategory() != 1:
+				if gc.getCivicInfo(listSorted[iI][1]).getInventionCategory() < 4:
 					continue
 				#TKe
 				if bRedraw:

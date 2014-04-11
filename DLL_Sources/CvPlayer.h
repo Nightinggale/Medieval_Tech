@@ -653,6 +653,7 @@ public:
 	void changeIdeasStored(int iChange);
 	void doSetupIdeas(bool Cheat=false);
 	void doIdeas(bool Cheat=false);
+	int getBonusTechModifier(int iExtra, bool doTrade = false) const;
 	CivicTypes getCurrentResearch() const;
 	CivicTypes getCurrentTradeResearch() const;
 	void setCurrentResearch(CivicTypes eCurrentResearch);

@@ -22,6 +22,14 @@
     <Spanish></Spanish>
   </TEXT>
   <TEXT>
+    <Tag>TXT_KEY_TRAIT_TECH_CATEGORY_BONUS</Tag>
+    <English>[ICON_BULLET]%D1_Bonus%% to [COLOR_HIGHLIGHT_TEXT]%s2_tech[COLOR_REVERT]</English>
+    <French>[ICON_BULLET]</French>
+    <German>[ICON_BULLET]</German>
+    <Italian>[ICON_BULLET]</Italian>
+    <Spanish>[ICON_BULLET]</Spanish>
+  </TEXT>
+  <TEXT>
     <Tag>TXT_KEY_DEFAULT_POP_UNIT</Tag>
     <English>Growth Unit: [COLOR_UNIT_TEXT]%s1[COLOR_REVERT]</English>
     <French></French>

@@ -14875,6 +14875,7 @@ void CvPlayer::changeAnarchyTurns(int iChange)
 			///MESSAGE ADDEED!!!!!!!!!!!!
 			if (isAnarchy())
 			{
+				// TODO needs to be cached
 				//processCivics((CivicTypes)XML_DEFAULT_GLOBAL_EFFECT_ANARCHY, 1);
 				processCivics((CivicTypes)GC.getDefineINT("DEFAULT_GLOBAL_EFFECT_ANARCHY"), 1);
 				gDLL->getInterfaceIFace()->addMessage(getID(), true, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_MISC_REVOLUTION_HAS_BEGUN").GetCString(), "AS2D_REVOLTSTART", MESSAGE_TYPE_MAJOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WARNING_TEXT"));
@@ -15560,8 +15561,8 @@ void CvPlayer::sellYieldUnitToEurope(CvUnit* pUnit, int iAmount, int iCommission
 
 				}
 
-				///TKs
-                CivicTypes ePlayerResearch = getCurrentResearch();
+				// TODO reavaluate the free research feature
+                /*CivicTypes ePlayerResearch = getCurrentResearch();
                 if (ePlayerResearch != NO_CIVIC && iProfit >= GC.getXMLval(XML_TRADE_STIMULATES_RESEARCH_MIN_VALUE))
                 {
                    int iExtraResearch = iProfit * GC.getXMLval(XML_TRADE_STIMULATES_RESEARCH_PERCENT) / 100;
@@ -15570,8 +15571,8 @@ void CvPlayer::sellYieldUnitToEurope(CvUnit* pUnit, int iAmount, int iCommission
                    char szOut[1024];
                    sprintf(szOut, "######################## %S traded with %S stimulating %d in research\n", getNameKey(), kPlayerEurope.getNameKey(), iExtraResearch);
                     gDLL->messageControlLog(szOut);
-                }
-
+                }*/
+				///TKs
 
 				CvWStringBuffer szMessage;
 				GAMETEXT.setEuropeYieldSoldHelp(szMessage, *this, eYield, iAmount, iCommission, eTradeScreen);
@@ -19119,6 +19120,56 @@ void CvPlayer::doIdeas(bool Cheat)
     }
 
 
+}
+
+int CvPlayer::getBonusTechModifier(int iExtra, bool doTrade) const
+{
+	CivicTypes eCurrentTech = NO_CIVIC;
+	if (doTrade)
+	{
+		eCurrentTech = getCurrentTradeResearch();
+	}
+	else
+	{
+		eCurrentTech = getCurrentResearch();
+	}
+
+	if (eCurrentTech != NO_CIVIC)
+	{
+		int iTraitMod = 0;
+		for (int iI = 0; iI < GC.getNumTraitInfos(); iI++)
+		{
+			if (hasTrait((TraitTypes)iI))
+			{
+				CvTraitInfo& kTrait = GC.getTraitInfo((TraitTypes)iI);
+				for (int iJ = 0; iJ < kTrait.getNumBonusTechCategories(); ++iJ)
+				{
+					CivicTypes eTraitCivic = kTrait.getBonusTechCategory(iJ);
+					if (GC.getCivicInfo(eCurrentTech).getInventionCategory() == eTraitCivic)
+					{
+						iTraitMod += kTrait.getTechCategoryBonus(iJ);
+					}
+				}
+			}
+		}
+
+		if (iTraitMod > 0)
+		{
+			if (iExtra > 0)
+			{
+				iTraitMod = iTraitMod * iExtra / 100;
+				iExtra += iTraitMod;
+				return iExtra;
+			}
+			else
+			{
+				return iTraitMod;
+			}
+		}
+
+
+	}
+	return 0;
 }
 
 CivicTypes CvPlayer::getCurrentResearch() const

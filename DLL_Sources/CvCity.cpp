@@ -4570,6 +4570,12 @@ int CvCity::getBaseYieldRateModifier(YieldTypes eIndex, int iExtra) const
 
 	iModifier += GET_PLAYER(getOwnerINLINE()).getTaxYieldRateModifier(eIndex);
 
+	//Tks Tech Categories Modifier
+	if (eIndex == YIELD_IDEAS)
+	{
+		iModifier += GET_PLAYER(getOwnerINLINE()).getBonusTechModifier(0);
+	}
+
 	iModifier += getRebelPercent() * GC.getMAX_REBEL_YIELD_MODIFIER() / 100;
 
 	if (isCapital())
@@ -7659,6 +7665,7 @@ void CvCity::doYields()
                     int iIdeasThisTurn = aiYields[eYield];
                     //if (!bUseFatherPoints)
                     //{
+
                         GET_PLAYER(getOwner()).changeIdeasStored(iIdeasThisTurn);
                         GET_PLAYER(getOwner()).changeIdeaProgress(eCivic, iIdeasThisTurn);
                         for (int i = 0; i < GC.getNumFatherPointInfos(); ++i)

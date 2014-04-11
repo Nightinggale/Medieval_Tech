@@ -321,7 +321,7 @@ class CvTechnologyAdvisor:
 					DisAllowedTech[Disallow] = True
 		
 		for iCivic in range(gc.getNumCivicInfos()):
-			if (gc.getCivicInfo(iCivic).getCivicOptionType() == -1 and iCivic == 1):
+			if (gc.getCivicInfo(iCivic).getCivicOptionType() == -1 and iCivic >= 4):
 				if gc.getCivicInfo(iCivic).getInventionCategory() == -1:
 					
 				
@@ -420,7 +420,10 @@ class CvTechnologyAdvisor:
 									#screen.addDDSGFCAt("CategoryBox" + str(iListCivic), ScrollPanel, gc.getCivicInfo(iCivic).getButton(), localx + self.ICON_BUTTON_SIZE, localy +  int(self.ICON_BUTTON_SIZE * 1.5), self.ICON_BUTTON_SIZE - 5, self.ICON_BUTTON_SIZE - 5, WidgetTypes.WIDGET_GENERAL, self.AMENDMENT_BUTTON, iCivic, false)
 									screen.setTextAt("Title" + str(iListCivic), ScrollPanel, "<font=3>" + szFatherTitle + "</font>", CvUtil.FONT_LEFT_JUSTIFY, localx + (self.ICON_BUTTON_SIZE * 2 + (self.ICON_BUTTON_SIZE / 10)), localy +  int(self.ICON_BUTTON_SIZE * 0.7), -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_INVENTORS_HOUSE, self.CATEGORY + iDisplayClickTxt, iListCivic)
 									if (player.getIdeasResearched(iListCivic) <= 0):
-										screen.addDDSGFCAt("MaterialIcon" + str(iListCivic), ScrollPanel, ArtFileMgr.getInterfaceArtInfo("MATERIALS_NEEDED").getPath(), localx + self.ICON_BUTTON_SIZE, localy +  int(self.ICON_BUTTON_SIZE * 1.5), self.ICON_BUTTON_SIZE - 3, self.ICON_BUTTON_SIZE - 3, WidgetTypes.WIDGET_GENERAL, self.AMENDMENT_BUTTON + 3, -1, false)
+										if gc.getDefineINT("SHOW_TECH_CATEGORIES") == 0:
+											screen.addDDSGFCAt("MaterialIcon" + str(iListCivic), ScrollPanel, ArtFileMgr.getInterfaceArtInfo("MATERIALS_NEEDED").getPath(), localx + self.ICON_BUTTON_SIZE, localy +  int(self.ICON_BUTTON_SIZE * 1.5), self.ICON_BUTTON_SIZE - 3, self.ICON_BUTTON_SIZE - 3, WidgetTypes.WIDGET_GENERAL, self.AMENDMENT_BUTTON + 3, -1, false)
+										else:
+											screen.addDDSGFCAt("CategoryBox" + str(iListCivic), ScrollPanel, gc.getCivicInfo(iCivic).getButton(), localx + self.ICON_BUTTON_SIZE, localy +  int(self.ICON_BUTTON_SIZE * 1.5), self.ICON_BUTTON_SIZE - 5, self.ICON_BUTTON_SIZE - 5, WidgetTypes.WIDGET_GENERAL, self.AMENDMENT_BUTTON, iCivic, false)
 										szHelp = CyGameTextMgr().parseCivicInfo(iListCivic, False, False, True, True, player.getCivilizationType())
 										szHelp = localText.changeTextColor(szHelp, gc.getInfoTypeForString("COLOR_FONT_CREAM"))
 										screen.setTextAt("Cost" + str(iListCivic), ScrollPanel, "<font=2>" + szHelp + "</font>", CvUtil.FONT_LEFT_JUSTIFY, localx + self.ICON_BUTTON_SIZE * 2, localy +  int(self.ICON_BUTTON_SIZE * 1.9), -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_INVENTORS_HOUSE, self.CATEGORY + iDisplayClickTxt, iListCivic)
@@ -703,7 +706,7 @@ class CvTechnologyAdvisor:
 					#szTechPrereqBorderID = "TechPrereqBorderID" + str((i * 1000) + j)
 					#screen.addDDSGFCAt( szTechPrereqBorderID, "TechList", ArtFileMgr.getInterfaceArtInfo("TECH_TREE_BUTTON_BORDER").getPath(), iX + fX + 4, iY + 22, 32, 32, WidgetTypes.WIDGET_HELP_TECH_PREPREQ, eTech, -1, False )
 			
-			if gc.getCivicInfo(i).getInventionCategory() != 1:
+			if gc.getCivicInfo(i).getInventionCategory() < 4:
 				continue
 			if (gc.getCivicInfo(i).getCivicOptionType() != -1):
 				continue

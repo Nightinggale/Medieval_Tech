@@ -291,6 +291,12 @@
 			<UnitStrengthModifiers/>
 			<FreeBuildingClasses/>
 			<GoodyFactors/>
+      <BonusTechCategories>
+        <BonusTechCategory>
+          <CivicType>MEDIEVAL_TRADE_TECH</CivicType>
+          <iFactor>25</iFactor>
+        </BonusTechCategory>
+      </BonusTechCategories>
 		</TraitInfo>
     <TraitInfo>
       <Type>INVENTION_TRAIT_GUILDS</Type>

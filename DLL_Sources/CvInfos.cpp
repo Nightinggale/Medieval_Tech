@@ -11273,6 +11273,24 @@ CvTraitInfo::~CvTraitInfo()
 		SAFE_DELETE_ARRAY(m_aaiBuildingYieldChanges[iBuildingClass]);
 	}
 }
+//TKs Tech Categories
+int CvTraitInfo::getNumBonusTechCategories() const
+{
+	return m_aBonusTechCategories.size();
+}
+CivicTypes CvTraitInfo::getBonusTechCategory(int index) const
+{
+	FAssert(index < (int) m_aBonusTechCategories.size());
+	FAssert(index > -1);
+	return m_aBonusTechCategories[index].first;
+}
+int CvTraitInfo::getTechCategoryBonus(int index) const
+{
+	FAssert(index < (int) m_aBonusTechCategories.size());
+	FAssert(index > -1);
+	return m_aBonusTechCategories[index].second;
+}
+//TKe
 int CvTraitInfo::getLevelExperienceModifier() const
 {
 	return m_iLevelExperienceModifier;
@@ -11730,8 +11748,27 @@ bool CvTraitInfo::read(CvXMLLoadUtility* pXML)
 	///TKs Med
 	pXML->SetVariableListTagPair(&m_abFreePromotionUnitClass, "FreePromotionUnitClasses", GC.getNumUnitClassInfos(), false);
 	pXML->SetVariableListTagPair(&m_abFreePromotionUnitProfession, "FreePromotionUnitProfessions", GC.getNumProfessionInfos(), false);
-	///TKs
 	pXML->SetVariableListTagPair(&m_abFreeBuildingClass, "FreeBuildingClasses", GC.getNumBuildingClassInfos(), false);
+	m_aBonusTechCategories.clear();
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"BonusTechCategories"))
+	{
+		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"BonusTechCategory"))
+		{
+			do
+			{
+				pXML->GetChildXmlValByName(szTextVal, "CivicType");
+				int iCivic = pXML->FindInInfoClass(szTextVal);
+				int iChange = 0;
+				pXML->GetChildXmlValByName(&iChange, "iFactor");
+				m_aBonusTechCategories.push_back(std::make_pair((CivicTypes)iCivic, iChange));
+			} while(gDLL->getXMLIFace()->NextSibling(pXML->GetXML()));
+			gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+		}
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+
+	///TKs
+	
 	return true;
 }
 

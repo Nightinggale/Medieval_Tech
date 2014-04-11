@@ -404,6 +404,13 @@
 	<ElementType name="GoodyFactors" content="eltOnly">
 		<element type="GoodyFactor" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
+  <ElementType name="BonusTechCategory" content="eltOnly">
+		<element type="CivicType"/>
+		<element type="iFactor"/>
+	</ElementType>
+	<ElementType name="BonusTechCategories" content="eltOnly">
+		<element type="BonusTechCategory" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
 	<ElementType name="TraitInfo" content="eltOnly">
 		<element type="Type"/>
 		<element type="Description"/>
@@ -447,6 +454,7 @@
 		<element type="FreeBuildingClasses"/>
 		<element type="bFreeBuildingAllowChange" minOccurs="0"/>
 		<element type="GoodyFactors"/>
+    <element type="BonusTechCategories" minOccurs="0"/>
 	</ElementType>
 	<ElementType name="TraitInfos" content="eltOnly">
 		<element type="TraitInfo" maxOccurs="*"/>

@@ -1725,6 +1725,7 @@ void CvTeam::changeFatherPoints(FatherPointTypes ePointType, int iChange)
 					if (GET_PLAYER((PlayerTypes)iI).getTeam() == getID())
 					{
 						iPreviousBonus = GET_PLAYER((PlayerTypes)iI).getBonusFatherPoints(ePointType);
+						iPreviousBonus += GET_PLAYER((PlayerTypes)iI).getBonusTechModifier(0, true);
 						if (iPreviousBonus > iBonus)
 						{
 							iBonus = iPreviousBonus;

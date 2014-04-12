@@ -222,6 +222,7 @@ namespace python = boost::python;
 #include "CvDLLUtilityIFaceBase.h"
 
 #include "JustInTimeArray.h"
+#include "BoolArray.h"
 
 #include "CvGameCoreUtils.h"
 #include "CvGlobals.h"

@@ -1,3 +1,5 @@
+#ifndef JUST_IN_TIME_ARRAY_H
+#define JUST_IN_TIME_ARRAY_H
 #pragma once
 // JustInTimeArray.h
 
@@ -191,3 +193,4 @@ public:
     BuildingArray() : JustInTimeArray<T>(JIT_ARRAY_BUILDING){};
 	BuildingArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_BUILDING, eDefault){};
 };
+#endif

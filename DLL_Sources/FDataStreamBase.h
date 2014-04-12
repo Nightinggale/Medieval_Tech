@@ -122,6 +122,7 @@ public:
 	
 	void Read(BonusTypes*      eVar) {Read(JIT_ARRAY_BONUS       , (int*) eVar);}
 	void Read(EuropeTypes*     eVar) {Read(JIT_ARRAY_EUROPE      , (int*) eVar);}
+	void Read(ImprovementTypes* eVar){Read(JIT_ARRAY_IMPROVEMENT , (int*) eVar);}
 	void Read(ProfessionTypes* eVar) {Read(JIT_ARRAY_PROFESSION  , (int*) eVar);}
 	void Read(PromotionTypes*  eVar) {Read(JIT_ARRAY_PROMOTION   , (int*) eVar);}
 	void Read(UnitTypes*       eVar) {Read(JIT_ARRAY_UNIT        , (int*) eVar);}

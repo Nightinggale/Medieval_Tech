@@ -94,7 +94,7 @@ protected:
 	int** m_aaiYieldRateModifier;
 	int** m_aaiNumTrainAIUnits;
 	int** m_aaiNumAIUnits;
-	int* m_paiNumImprovements;
+	ImprovementArray<int> m_ja_iNumImprovements;
 	BonusArray<int> m_ja_iNumBonuses;
 public:
 	// for serialization

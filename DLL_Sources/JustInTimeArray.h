@@ -193,4 +193,11 @@ public:
     BuildingArray() : JustInTimeArray<T>(JIT_ARRAY_BUILDING){};
 	BuildingArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_BUILDING, eDefault){};
 };
+
+template<class T>
+class ImprovementArray: public JustInTimeArray<T>
+{
+public:
+	ImprovementArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_IMPROVEMENT, eDefault){};
+};
 #endif

@@ -39,9 +39,6 @@ CvArea::CvArea()
 		m_aaiNumAIUnits[i] = new int[NUM_UNITAI_TYPES];
 	}
 
-	m_paiNumImprovements = NULL;
-
-
 	reset(0, false, true);
 }
 
@@ -93,7 +90,7 @@ void CvArea::init(int iID, bool bWater)
 void CvArea::uninit()
 {
 	m_ja_iNumBonuses.resetContent();
-	SAFE_DELETE_ARRAY(m_paiNumImprovements);
+	m_ja_iNumImprovements.resetContent();
 }
 
 
@@ -158,13 +155,7 @@ void CvArea::reset(int iID, bool bWater, bool bConstructorCall)
 	if (!bConstructorCall)
 	{
 		m_ja_iNumBonuses.resetContent();
-
-		FAssertMsg((0 < GC.getNumImprovementInfos()) && "GC.getNumImprovementInfos() is not greater than zero but an array is being allocated in CvArea::reset", "GC.getNumImprovementInfos() is not greater than zero but an array is being allocated in CvArea::reset");
-		m_paiNumImprovements = new int[GC.getNumImprovementInfos()];
-		for (iI = 0; iI < GC.getNumImprovementInfos(); iI++)
-		{
-			m_paiNumImprovements[iI] = 0;
-		}
+		m_ja_iNumImprovements.resetContent();
 	}
 }
 
@@ -612,17 +603,13 @@ void CvArea::changeNumBonuses(BonusTypes eBonus, int iChange)
 
 int CvArea::getNumImprovements(ImprovementTypes eImprovement) const
 {
-	FAssertMsg(eImprovement >= 0, "eImprovement expected to be >= 0");
-	FAssertMsg(eImprovement < GC.getNumImprovementInfos(), "eImprovement expected to be < GC.getNumImprovementInfos");
-	return m_paiNumImprovements[eImprovement];
+	return m_ja_iNumImprovements.get(eImprovement);
 }
 
 
 void CvArea::changeNumImprovements(ImprovementTypes eImprovement, int iChange)
 {
-	FAssertMsg(eImprovement >= 0, "eImprovement expected to be >= 0");
-	FAssertMsg(eImprovement < GC.getNumImprovementInfos(), "eImprovement expected to be < GC.getNumImprovementInfos");
-	m_paiNumImprovements[eImprovement] += iChange;
+	m_ja_iNumImprovements.add(iChange, eImprovement);
 	FAssert(getNumImprovements(eImprovement) >= 0);
 }
 
@@ -675,7 +662,7 @@ void CvArea::read(FDataStreamBase* pStream)
 	}
 
 	m_ja_iNumBonuses.read(pStream);
-	pStream->Read(GC.getNumImprovementInfos(), m_paiNumImprovements);
+	m_ja_iNumImprovements.read(pStream);
 }
 
 
@@ -723,7 +710,7 @@ void CvArea::write(FDataStreamBase* pStream)
 		pStream->Write(NUM_UNITAI_TYPES, m_aaiNumAIUnits[iI]);
 	}
 	m_ja_iNumBonuses.write(pStream);
-	pStream->Write(GC.getNumImprovementInfos(), m_paiNumImprovements);
+	m_ja_iNumImprovements.write(pStream);
 }
 
 // Protected Functions...

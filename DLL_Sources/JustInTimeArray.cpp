@@ -14,7 +14,9 @@ JustInTimeArray<T>::JustInTimeArray(JIT_ARRAY_TYPES eType, T eDefault = 0)
 , m_iType(eType)
 , m_iLength(GC.getArrayLength(eType))
 , m_eDefault(eDefault)
-{}
+{
+	FAssertMsg(m_iLength != 0, "arrays can't have 0 length");
+}
 
 template<class T>
 JustInTimeArray<T>::~JustInTimeArray()

@@ -355,6 +355,13 @@
 	<ElementType name="HurryInfos" content="eltOnly">
 		<element type="HurryInfo" maxOccurs="*"/>
 	</ElementType>
+  <ElementType name="GlobalCivicEffectInfos" content="eltOnly">
+		<element type="GlobalCivicEffectInfo" maxOccurs="*"/>
+	</ElementType>
+  <ElementType name="GlobalCivicEffectInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="Description"/>
+	</ElementType>
 	<ElementType name="CivicOptionType" content="textOnly"/>
 	<ElementType name="CivicOptionDescription" content="textOnly"/>
 	<ElementType name="CivicOptionInfo" content="eltOnly">
@@ -1177,6 +1184,9 @@
 	<ElementType name="Civ4CivicOptionInfos" content="eltOnly">
 		<element type="CivicOptionInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
+  <ElementType name="Civ4GlobalCivicEffectInfos" content="eltOnly">
+    <element type="GlobalCivicEffectInfos" minOccurs="0" maxOccurs="1"/>
+  </ElementType>
 	<ElementType name="Civ4CivicInfos" content="eltOnly">
 		<element type="CivicInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>

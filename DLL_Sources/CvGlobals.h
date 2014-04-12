@@ -490,6 +490,12 @@ public:
 	DllExport std::vector<CvInfoBase*>& getCivicOptionInfo();
 	DllExport CvInfoBase& getCivicOptionInfo(CivicOptionTypes eCivicOptionNum);
 
+	//TKs
+	DllExport int getNumGlobalCivicEffectInfos();
+	DllExport std::vector<CvInfoBase*>& getGlobalCivicEffectInfos();
+	DllExport CvInfoBase& getGlobalCivicEffectInfos(GlobalCivicEffectTypes eGlobalCivicEffect);
+	//Tke
+
 	DllExport int getNumCivicInfos();
 	DllExport std::vector<CvCivicInfo*>& getCivicInfo();
 	DllExport CvCivicInfo& getCivicInfo(CivicTypes eCivicNum);
@@ -927,7 +933,9 @@ protected:
 	//Androrc UnitArtStyles
     std::vector<CvUnitArtStyleTypeInfo*> m_paUnitArtStyleTypeInfo;
 	//Androrc End
-
+	//tks
+	std::vector<CvInfoBase*> m_paGlobalCivicEffectInfos;
+	//tke
 	// Game Text
 	std::vector<CvGameText*> m_paGameTextXML;
 

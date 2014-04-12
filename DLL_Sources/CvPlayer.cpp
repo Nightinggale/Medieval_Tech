@@ -9803,7 +9803,19 @@ void CvPlayer::doCities()
 								iSold -= iRemove;
 
 								pCity->changeYieldStored((YieldTypes)iYield, -iRemove);
+								if (iProfit != 0)
+								{
+									// TODO message and trade points
 
+									// get a city because a city name
+									// we need a proper message eventually
+									//int iLoop;
+									//CvCity* pCity = firstCity(&iLoop);
+
+									changeGold(iProfit);
+									CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_DOMESTIC_SOLD", pCity->getNameKey(), iProfit);
+									gDLL->getInterfaceIFace()->addMessage(getID(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), pCity->getX_INLINE(), pCity->getY_INLINE(), true, true);
+								}
 								if (iSold == 0)
 								{
 									// removed everything sold
@@ -9817,19 +9829,7 @@ void CvPlayer::doCities()
 			FAssert(iSold == 0);
 		}
 	}
-	if (iProfit != 0)
-	{
-		// TODO message and trade points
-
-		// get a city because a city name
-		// we need a proper message eventually
-		int iLoop;
-		CvCity* pCity = firstCity(&iLoop);
-
-		changeGold(iProfit);
-		CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_DOMESTIC_SOLD", pCity->getNameKey(), iProfit);
-		gDLL->getInterfaceIFace()->addMessage(getID(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), pCity->getX_INLINE(), pCity->getY_INLINE(), true, true);
-	}
+	
 }
 /// PlotGroup - end - Nightinggale
 

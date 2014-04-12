@@ -1881,6 +1881,25 @@ CvInfoBase& CvGlobals::getCivicOptionInfo(CivicOptionTypes eCivicOptionNum)
 	return *(m_paCivicOptionInfo[eCivicOptionNum]);
 }
 
+//TKs
+int CvGlobals::getNumGlobalCivicEffectInfos()
+{
+	return (int)m_paGlobalCivicEffectInfos.size();
+}
+
+std::vector<CvInfoBase*>& CvGlobals::getGlobalCivicEffectInfos()	// For Moose - XML Load Util, CvInfos
+{
+	return m_paGlobalCivicEffectInfos;
+}
+
+CvInfoBase& CvGlobals::getGlobalCivicEffectInfos(GlobalCivicEffectTypes eGlobalCivicEffect)
+{
+	FAssert(eGlobalCivicEffect > -1);
+	FAssert(eGlobalCivicEffect < GC.getNumCivicOptionInfos());
+	return *(m_paGlobalCivicEffectInfos[eGlobalCivicEffect]);
+}
+//Tke
+
 int CvGlobals::getNumCivicInfos()
 {
 	return (int)m_paCivicInfo.size();

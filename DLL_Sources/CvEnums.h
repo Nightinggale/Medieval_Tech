@@ -1621,6 +1621,14 @@ enum DllExport ControlTypes
 #endif
 };
 
+//Tks
+enum DllExport GlobalCivicEffectTypes
+{
+	NO_GLOBALCIVICEFFECT = -1,
+};
+
+//tke
+
 enum DllExport PromotionTypes
 {
 	NO_PROMOTION = -1,
@@ -2885,6 +2893,7 @@ enum XMLFileNames
 	XML_FILE_CIV4CameraOverlayInfos,
 	XML_FILE_CIV4CivicInfos,
 	XML_FILE_CIV4CivicOptionInfos,
+	XML_FILE_CIV4GlobalCivicEffectInfos,//Tk GlobalCivicEffectInfos
 	XML_FILE_CIV4CivilizationInfos,
 	XML_FILE_CIV4ClimateInfo,
 	XML_FILE_CIV4ColorVals,

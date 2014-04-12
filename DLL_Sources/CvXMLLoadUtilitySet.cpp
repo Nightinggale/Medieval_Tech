@@ -68,6 +68,7 @@ void CvXMLLoadUtility::loadXMLFiles()
 	loadXMLFile(XML_FILE_CIV4HandicapInfo);
 	loadXMLFile(XML_FILE_CIV4CursorInfo);
 	loadXMLFile(XML_FILE_CIV4CivicOptionInfos);
+	loadXMLFile(XML_FILE_CIV4GlobalCivicEffectInfos); //tks GlobalCivicEffectInfos
 	loadXMLFile(XML_FILE_CIV4HurryInfo);
 	loadXMLFile(XML_FILE_CIV4BuildingInfos);
 	loadXMLFile(XML_FILE_CIV4BonusInfos);
@@ -236,6 +237,11 @@ void CvXMLLoadUtility::loadXMLFile(XMLFileNames eFile)
 	{
 		LoadGlobalClassInfo(GC.getCivicOptionInfo(), "CIV4CivicOptionInfos", "GameInfo", "Civ4CivicOptionInfos/CivicOptionInfos/CivicOptionInfo", NULL);
 		FAssertMsg(GC.getNumCivicOptionInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4GlobalCivicEffectInfos)
+	{
+		LoadGlobalClassInfo(GC.getGlobalCivicEffectInfos(), "CIV4GlobalCivicEffectInfos", "GameInfo", "Civ4GlobalCivicEffectInfos/GlobalCivicEffectInfos/GlobalCivicEffectInfo", NULL);
+		FAssertMsg(GC.getNumGlobalCivicEffectInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
 	}
 	else if (eFile == XML_FILE_CIV4CivilizationInfos)
 	{

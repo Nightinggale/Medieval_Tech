@@ -3239,7 +3239,8 @@ void CvUnitAI::AI_transportTraderMove()
 	 CvCity* pCity = NULL;
     if (plot()->getPlotCity() != NULL)
     {
-        if (canBuildTradingPost(false))
+		pCity = plot()->getPlotCity();
+        if (!pCity->isHuman() && canBuildTradingPost(false))
 		{
 			buildTradingPost(false);
 		}
@@ -3250,7 +3251,6 @@ void CvUnitAI::AI_transportTraderMove()
         }
         if (plot()->getOwner() == getOwner())
         {
-            pCity = plot()->getPlotCity();
             if (!isHuman())
             {
                 AI_upgradeProfession();

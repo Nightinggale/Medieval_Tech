@@ -176,10 +176,10 @@ protected:
 	int m_iFoundValue;
 	int m_iTargetSize;
 
-	int* m_aiYieldOutputWeight;
-	int* m_aiNeededYield;
-	int* m_aiTradeBalance;
-	int* m_aiYieldAdvantage;
+	YieldArray<int> m_ja_iYieldOutputWeight;
+	YieldArray<int> m_ja_iNeededYield;
+	YieldArray<int> m_ja_iTradeBalance;
+	YieldArray<int> m_ja_iYieldAdvantage;
 
 	int m_iEmphasizeAvoidGrowthCount;
 
@@ -191,14 +191,14 @@ protected:
 
 	IDInfo m_routeToCity;
 
-	int* m_aiEmphasizeYieldCount;
+	YieldArray<int> m_ja_iEmphasizeYieldCount;
 	bool m_bForceEmphasizeCulture;
 
 	int m_aiBestBuildValue[NUM_CITY_PLOTS];
 
 	BuildTypes m_aeBestBuild[NUM_CITY_PLOTS];
 
-	bool* m_abEmphasize;
+	BoolArray m_ba_Emphasize;
 
 	mutable int m_iCachePlayerClosenessTurn;
 	mutable int m_iCachePlayerClosenessDistance;

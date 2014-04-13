@@ -4268,6 +4268,8 @@ int CvGlobals::getArrayLength(JIT_ARRAY_TYPES eType)
 		return getNumBuildingInfos();
 	case JIT_ARRAY_IMPROVEMENT:
 		return getNumImprovementInfos();
+	case JIT_ARRAY_EMPHASIZE:
+		return getNumEmphasizeInfos();
 	}
 	FAssertMsg(false, "missing length case");
 	return 0;
@@ -4314,6 +4316,9 @@ CvWString CvGlobals::getArrayType(JIT_ARRAY_TYPES eType, int iIndex)
 		break;
 	case JIT_ARRAY_IMPROVEMENT:
 		szType = getImprovementInfo((ImprovementTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_EMPHASIZE:
+		szType = getEmphasizeInfo((EmphasizeTypes)iIndex).getType();
 		break;
 	default:
 		FAssertMsg(false, "missing info case");

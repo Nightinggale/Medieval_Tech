@@ -4109,8 +4109,13 @@ void CvCityAI::AI_updateNeededYields()
 				if (eIdealProfession != NO_PROFESSION && pLoopUnit->canHaveProfession(eIdealProfession, true, NULL))
 				{
 					YieldTypes eConsumedYield = (YieldTypes)GC.getProfessionInfo(eIdealProfession).getYieldsConsumed(0, GET_PLAYER(getOwner()).getID());
-					int iAddedValue = getProfessionInput(eIdealProfession, pLoopUnit);
-					m_ja_iNeededYield.add(iAddedValue, eConsumedYield);
+					// bugfix - don't use NO_YIELD as array index - Nightinggale
+					// looks like vanilla could get away with it, but JIT arrays are more picky about indexes
+					if (eConsumedYield != NO_YIELD)
+					{
+						int iAddedValue = getProfessionInput(eIdealProfession, pLoopUnit);
+						m_ja_iNeededYield.add(iAddedValue, eConsumedYield);
+					}
 				}
 			}
 		}

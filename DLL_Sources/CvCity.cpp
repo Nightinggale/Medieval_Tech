@@ -31,6 +31,9 @@
 CvCity::CvCity()
 	: m_ja_iBuildingOriginalOwner(-1)
 	, m_ja_iBuildingOriginalTime(MIN_INT)
+	, m_ba_ConTrainSpecialist(JIT_ARRAY_UNIT)
+	, m_ba_HasRealBuilding(JIT_ARRAY_BUILDING)
+	, m_ba_HasFreeBuilding(JIT_ARRAY_BUILDING)
 {
     ///Tks Med
     m_aiEventTimers = new int[2];
@@ -418,11 +421,11 @@ void CvCity::uninit()
 	m_ja_iBuildingOriginalTime.resetContent();
 	m_ja_iUnitProduction.resetContent();
 	m_ja_iUnitProductionTime.resetContent();
-	m_ja_iSpecialistWeights.resetContent();
+	m_ba_ConTrainSpecialist.resetContent();
 	m_ja_iUnitCombatFreeExperience.resetContent();
 	m_ja_iFreePromotionCount.resetContent();
-	m_ja_bHasRealBuilding.resetContent();
-	m_ja_bHasFreeBuilding.resetContent();
+	m_ba_HasRealBuilding.resetContent();
+	m_ba_HasFreeBuilding.resetContent();
 
 	SAFE_DELETE_ARRAY(m_paiWorkingPlot);
 
@@ -572,13 +575,13 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 		m_ja_iBuildingProductionTime.resetContent();
 		m_ja_iBuildingOriginalOwner.resetContent();
 		m_ja_iBuildingOriginalTime.resetContent();
-		m_ja_bHasRealBuilding.resetContent();
-		m_ja_bHasFreeBuilding.resetContent();
+		m_ba_HasRealBuilding.resetContent();
+		m_ba_HasFreeBuilding.resetContent();
 
 		FAssertMsg((0 < GC.getNumUnitInfos()),  "GC.getNumUnitInfos() is not greater than zero but an array is being allocated in CvCity::reset");
 		m_ja_iUnitProduction.resetContent();
 		m_ja_iUnitProductionTime.resetContent();
-		m_ja_iSpecialistWeights.resetContent();
+		m_ba_ConTrainSpecialist.resetContent();
 
 		FAssertMsg((0 < GC.getNumUnitCombatInfos()),  "GC.getNumUnitCombatInfos() is not greater than zero but an array is being allocated in CvCity::reset");
 		m_ja_iUnitCombatFreeExperience.resetContent();
@@ -6417,7 +6420,7 @@ int CvCity::getNextFreeUnitId() const
 
 bool CvCity::isHasRealBuilding(BuildingTypes eIndex) const
 {
-	return m_ja_bHasRealBuilding.get(eIndex);
+	return m_ba_HasRealBuilding.get(eIndex);
 }
 
 
@@ -6440,7 +6443,7 @@ void CvCity::setHasRealBuildingTimed(BuildingTypes eIndex, bool bNewValue, bool 
 			abOldBuildings[i] = isHasBuilding((BuildingTypes) i);
 		}
 
-		m_ja_bHasRealBuilding.set(bNewValue, eIndex);
+		m_ba_HasRealBuilding.set(bNewValue, eIndex);
 		setYieldRateDirty();
 
 		if (isHasRealBuilding(eIndex))
@@ -6489,7 +6492,7 @@ void CvCity::setHasRealBuildingTimed(BuildingTypes eIndex, bool bNewValue, bool 
 
 bool CvCity::isHasFreeBuilding(BuildingTypes eIndex) const
 {
-	return m_ja_bHasFreeBuilding.get(eIndex);
+	return m_ba_HasFreeBuilding.get(eIndex);
 }
 
 
@@ -6506,7 +6509,7 @@ void CvCity::setHasFreeBuilding(BuildingTypes eIndex, bool bNewValue)
 			abOldBuildings[i] = isHasBuilding((BuildingTypes) i);
 		}
 
-		m_ja_bHasFreeBuilding.set(bNewValue, eIndex);
+		m_ba_HasFreeBuilding.set(bNewValue, eIndex);
 		setYieldRateDirty();
 
 		for (int i = 0; i < GC.getNumBuildingInfos(); ++i)
@@ -7978,7 +7981,7 @@ void CvCity::doSpecialists()
 			///TKe
 			if (kUnit.getTeachLevel() <= iTeachLevel)
 			{
-				m_ja_iSpecialistWeights.set(1, eUnit);
+				m_ba_ConTrainSpecialist.set(true, eUnit);
 			}
 		}
 	}
@@ -8364,10 +8367,10 @@ void CvCity::read(FDataStreamBase* pStream)
 	m_ja_iBuildingOriginalTime.read(pStream);
 	m_ja_iUnitProduction.read(pStream);
 	m_ja_iUnitProductionTime.read(pStream);
-	m_ja_iSpecialistWeights.read(pStream);
+	m_ba_ConTrainSpecialist.read(pStream);
 	m_ja_iUnitCombatFreeExperience.read(pStream);
-	m_ja_bHasRealBuilding.read(pStream);
-	m_ja_bHasFreeBuilding.read(pStream);
+	m_ba_HasRealBuilding.read(pStream);
+	m_ba_HasFreeBuilding.read(pStream);
 
 	pStream->Read(NUM_CITY_PLOTS, m_paiWorkingPlot);
 
@@ -8590,10 +8593,10 @@ void CvCity::write(FDataStreamBase* pStream)
 	m_ja_iBuildingOriginalTime.write(pStream);
 	m_ja_iUnitProduction.write(pStream);
 	m_ja_iUnitProductionTime.write(pStream);
-	m_ja_iSpecialistWeights.write(pStream);
+	m_ba_ConTrainSpecialist.write(pStream);
 	m_ja_iUnitCombatFreeExperience.write(pStream);
-	m_ja_bHasRealBuilding.write(pStream);
-	m_ja_bHasFreeBuilding.write(pStream);
+	m_ba_HasRealBuilding.write(pStream);
+	m_ba_HasFreeBuilding.write(pStream);
 
 	pStream->Write(NUM_CITY_PLOTS, m_paiWorkingPlot);
 
@@ -10675,7 +10678,7 @@ bool CvCity::educateStudent(int iUnitId, UnitTypes eUnit)
 
 int CvCity::getSpecialistTuition(UnitTypes eUnit) const
 {
-	if (m_ja_iSpecialistWeights.get(eUnit) <= 0)
+	if (!m_ba_ConTrainSpecialist.get(eUnit))
 	{
 		return -1;
 	}

@@ -684,11 +684,11 @@ protected:
 	BuildingArray<int> m_ja_iBuildingOriginalTime;
 	UnitArray<int> m_ja_iUnitProduction;
 	UnitArray<int> m_ja_iUnitProductionTime;
-	UnitArray<unsigned char> m_ja_iSpecialistWeights; // TODO convert to bool (used as bool)
+	BoolArray m_ba_ConTrainSpecialist;
 	UnitCombatArray<int> m_ja_iUnitCombatFreeExperience;
 	PromotionArray<unsigned char> m_ja_iFreePromotionCount;
-	BuildingArray<bool> m_ja_bHasRealBuilding;
-	BuildingArray<bool> m_ja_bHasFreeBuilding;
+	BoolArray m_ba_HasRealBuilding;
+	BoolArray m_ba_HasFreeBuilding;
 	int* m_paiWorkingPlot;
 	IDInfo* m_paTradeCities;
 	mutable CLinkList<OrderData> m_orderQueue;

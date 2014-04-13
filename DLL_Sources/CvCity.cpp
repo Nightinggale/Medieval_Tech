@@ -36,14 +36,7 @@ CvCity::CvCity()
     m_aiEventTimers = new int[2];
     //m_abTradePostBuilt = new bool[MAX_TEAMS];
 	m_bmTradePostBuilt = 0;
-	m_aiConnectedTradeBonus = new int[NUM_YIELD_TYPES];
-	m_aiConnectedMissionBonus = new int[NUM_YIELD_TYPES];
     ///Tke
-	m_aiSeaPlotYield = new int[NUM_YIELD_TYPES];
-	m_aiRiverPlotYield = new int[NUM_YIELD_TYPES];
-	m_aiYieldRateModifier = new int[NUM_YIELD_TYPES];
-	m_aiYieldStored = new int[NUM_YIELD_TYPES];
-	m_aiYieldRushed = new int[NUM_YIELD_TYPES];
 	m_aiDomainFreeExperience = new int[NUM_DOMAIN_TYPES];
 	m_aiDomainProductionModifier = new int[NUM_DOMAIN_TYPES];
 
@@ -53,8 +46,6 @@ CvCity::CvCity()
 	m_bmRevealed = 0;
 	m_bmScoutVisited = 0;
 	/// player bitmap - end - Nightinggale
-
-	m_paiUnitCombatFreeExperience = NULL;
 
 	m_paiWorkingPlot = NULL;
 
@@ -82,8 +73,6 @@ CvCity::~CvCity()
     ///Kailric Fort Mod end
     ///Tks Med
     SAFE_DELETE_ARRAY(m_aiEventTimers);
-	SAFE_DELETE_ARRAY(m_aiConnectedTradeBonus);
-	SAFE_DELETE_ARRAY(m_aiConnectedMissionBonus);
     //SAFE_DELETE_ARRAY(m_abTradePostBuilt);
     ///Tke
 
@@ -91,11 +80,6 @@ CvCity::~CvCity()
 	SAFE_DELETE_ARRAY(m_aiYieldRank);
 	SAFE_DELETE_ARRAY(m_abYieldRankValid);
 
-	SAFE_DELETE_ARRAY(m_aiSeaPlotYield);
-	SAFE_DELETE_ARRAY(m_aiRiverPlotYield);
-	SAFE_DELETE_ARRAY(m_aiYieldRateModifier);
-	SAFE_DELETE_ARRAY(m_aiYieldStored);
-	SAFE_DELETE_ARRAY(m_aiYieldRushed);
 	SAFE_DELETE_ARRAY(m_aiDomainFreeExperience);
 	SAFE_DELETE_ARRAY(m_aiDomainProductionModifier);
 	SAFE_DELETE_ARRAY(m_aiCulture);
@@ -435,7 +419,7 @@ void CvCity::uninit()
 	m_ja_iUnitProduction.resetContent();
 	m_ja_iUnitProductionTime.resetContent();
 	m_ja_iSpecialistWeights.resetContent();
-	SAFE_DELETE_ARRAY(m_paiUnitCombatFreeExperience);
+	m_ja_iUnitCombatFreeExperience.resetContent();
 	m_ja_iFreePromotionCount.resetContent();
 	m_ja_bHasRealBuilding.resetContent();
 	m_ja_bHasFreeBuilding.resetContent();
@@ -546,20 +530,6 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 		m_aiEventTimers[iI] = 0;
 	}
 
-	
-
-	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
-	{
-		m_aiConnectedTradeBonus[iI] = 0;
-		m_aiConnectedMissionBonus[iI] = 0;
-		///TKe
-		m_aiSeaPlotYield[iI] = 0;
-		m_aiRiverPlotYield[iI] = 0;
-		m_aiYieldRateModifier[iI] = 0;
-		m_aiYieldStored[iI] = 0;
-		m_aiYieldRushed[iI] = 0;
-	}
-
 	for (iI = 0; iI < NUM_DOMAIN_TYPES; iI++)
 	{
 		m_aiDomainFreeExperience[iI] = 0;
@@ -611,11 +581,7 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 		m_ja_iSpecialistWeights.resetContent();
 
 		FAssertMsg((0 < GC.getNumUnitCombatInfos()),  "GC.getNumUnitCombatInfos() is not greater than zero but an array is being allocated in CvCity::reset");
-		m_paiUnitCombatFreeExperience = new int[GC.getNumUnitCombatInfos()];
-		for (iI = 0; iI < GC.getNumUnitCombatInfos(); iI++)
-		{
-			m_paiUnitCombatFreeExperience[iI] = 0;
-		}
+		m_ja_iUnitCombatFreeExperience.resetContent();
 
 		FAssertMsg((0 < GC.getNumPromotionInfos()),  "GC.getNumPromotionInfos() is not greater than zero but an array is being allocated in CvCity::reset");
 		m_ja_iFreePromotionCount.resetContent();
@@ -4177,9 +4143,7 @@ void CvCity::updateCultureLevel()
 
 int CvCity::getSeaPlotYield(YieldTypes eIndex) const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex expected to be < NUM_YIELD_TYPES");
-	return m_aiSeaPlotYield[eIndex];
+	return m_ja_iSeaPlotYield.get(eIndex);
 }
 
 
@@ -4190,7 +4154,7 @@ void CvCity::changeSeaPlotYield(YieldTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_aiSeaPlotYield[eIndex] = (m_aiSeaPlotYield[eIndex] + iChange);
+		m_ja_iSeaPlotYield.add(iChange, eIndex);
 		FAssert(getSeaPlotYield(eIndex) >= 0);
 
 		updateYield();
@@ -4200,9 +4164,7 @@ void CvCity::changeSeaPlotYield(YieldTypes eIndex, int iChange)
 
 int CvCity::getRiverPlotYield(YieldTypes eIndex) const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex expected to be < NUM_YIELD_TYPES");
-	return m_aiRiverPlotYield[eIndex];
+	return m_ja_iRiverPlotYield.get(eIndex);
 }
 
 
@@ -4213,7 +4175,7 @@ void CvCity::changeRiverPlotYield(YieldTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_aiRiverPlotYield[eIndex] += iChange;
+		m_ja_iRiverPlotYield.add(iChange, eIndex);
 		FAssert(getRiverPlotYield(eIndex) >= 0);
 
 		updateYield();
@@ -4594,9 +4556,7 @@ void CvCity::setYieldRateDirty()
 
 int CvCity::getYieldRateModifier(YieldTypes eIndex)	const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex expected to be < NUM_YIELD_TYPES");
-	return m_aiYieldRateModifier[eIndex];
+	return m_ja_iYieldRateModifier.get(eIndex);
 }
 
 
@@ -4607,7 +4567,7 @@ void CvCity::changeYieldRateModifier(YieldTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_aiYieldRateModifier[eIndex] += iChange;
+		m_ja_iYieldRateModifier.add(iChange, eIndex);
 		FAssert(getYieldRateModifier(eIndex) >= 0);
 
 		GET_PLAYER(getOwnerINLINE()).invalidateYieldRankCache(eIndex);
@@ -4772,9 +4732,7 @@ void CvCity::changeCulture(PlayerTypes eIndex, int iChange, bool bPlots)
 
 int CvCity::getYieldStored(YieldTypes eYield) const
 {
-	FAssertMsg(eYield >= 0, "eYield expected to be >= 0");
-	FAssertMsg(eYield < NUM_YIELD_TYPES	, "eYield expected to be < NUM_YIELD_TYPES");
-	return m_aiYieldStored[eYield];
+	return m_ja_iYieldStored.get(eYield);
 }
 
 void CvCity::setYieldStored(YieldTypes eYield, int iValue)
@@ -4794,7 +4752,7 @@ void CvCity::setYieldStored(YieldTypes eYield, int iValue)
 	int iChange = iValue - getYieldStored(eYield);
 	if (iChange != 0)
 	{
-		m_aiYieldStored[eYield] = iValue;
+		m_ja_iYieldStored.set(iValue, eYield);
 
 		if (!AI_isWorkforceHack())
 		{
@@ -4832,14 +4790,12 @@ void CvCity::changeYieldStored(YieldTypes eYield, int iChange)
 
 int CvCity::getYieldRushed(YieldTypes eYield) const
 {
-	FAssert(eYield >= 0 && eYield < NUM_YIELD_TYPES);
-	return m_aiYieldRushed[eYield];
+	return m_ja_iYieldRushed.get(eYield);
 }
 
 void CvCity::changeYieldRushed(YieldTypes eYield, int iChange)
 {
-	FAssert(eYield >= 0 && eYield < NUM_YIELD_TYPES);
-	m_aiYieldRushed[eYield] += iChange;
+	m_ja_iYieldRushed.add(iChange, eYield);
 	FAssert(getYieldRushed(eYield) >= 0);
 }
 
@@ -6032,17 +5988,13 @@ void CvCity::changeUnitProductionTime(UnitTypes eIndex, int iChange)
 
 int CvCity::getUnitCombatFreeExperience(UnitCombatTypes eIndex) const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < GC.getNumUnitCombatInfos(), "eIndex expected to be < GC.getNumUnitCombatInfos()");
-	return m_paiUnitCombatFreeExperience[eIndex];
+	return m_ja_iUnitCombatFreeExperience.get(eIndex);
 }
 
 
 void CvCity::changeUnitCombatFreeExperience(UnitCombatTypes eIndex, int iChange)
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < GC.getNumUnitCombatInfos(), "eIndex expected to be < GC.getNumUnitCombatInfos()");
-	m_paiUnitCombatFreeExperience[eIndex] = (m_paiUnitCombatFreeExperience[eIndex] + iChange);
+	m_ja_iUnitCombatFreeExperience.add(iChange, eIndex);
 	FAssert(getUnitCombatFreeExperience(eIndex) >= 0);
 }
 
@@ -8337,6 +8289,7 @@ void CvCity::read(FDataStreamBase* pStream)
 	// m_bInfoDirty not saved...
 	// m_bLayoutDirty not saved...
     ///TKs Med
+	// TODO city types in XML
     pStream->Read((int*)&m_iCityType);
     pStream->Read((int*)&m_eSelectedArmor);
     pStream->Read((int*)&m_eVassalOwner);
@@ -8345,7 +8298,7 @@ void CvCity::read(FDataStreamBase* pStream)
 	pStream->Read((int*)&m_ePreviousOwner);
 	pStream->Read((int*)&m_eOriginalOwner);
 	pStream->Read((int*)&m_eCultureLevel);
-	pStream->Read((int*)&m_eTeachUnitClass);
+	pStream->Read(&m_eTeachUnitClass);
 	if (uiFlag == 0)
 	{
 		m_eMissionaryPlayer = NO_PLAYER;
@@ -8374,14 +8327,14 @@ void CvCity::read(FDataStreamBase* pStream)
 	} else {
 		pStream->Read(&m_bmTradePostBuilt);
 	}
-	pStream->Read(NUM_YIELD_TYPES, m_aiConnectedTradeBonus);
-	pStream->Read(NUM_YIELD_TYPES, m_aiConnectedMissionBonus);
+	m_ja_iConnectedTradeBonus.read(pStream);
+	m_ja_iConnectedMissionBonus.read(pStream);
     ///Tke
-	pStream->Read(NUM_YIELD_TYPES, m_aiSeaPlotYield);
-	pStream->Read(NUM_YIELD_TYPES, m_aiRiverPlotYield);
-	pStream->Read(NUM_YIELD_TYPES, m_aiYieldRateModifier);
-	pStream->Read(NUM_YIELD_TYPES, m_aiYieldStored);
-	pStream->Read(NUM_YIELD_TYPES, m_aiYieldRushed);
+	m_ja_iSeaPlotYield.read(pStream);
+	m_ja_iRiverPlotYield.read(pStream);
+	m_ja_iYieldRateModifier.read(pStream);
+	m_ja_iYieldStored.read(pStream);
+	m_ja_iYieldRushed.read(pStream);
 	pStream->Read(NUM_DOMAIN_TYPES, m_aiDomainFreeExperience);
 	pStream->Read(NUM_DOMAIN_TYPES, m_aiDomainProductionModifier);
 	pStream->Read(MAX_PLAYERS, m_aiCulture);
@@ -8412,7 +8365,7 @@ void CvCity::read(FDataStreamBase* pStream)
 	m_ja_iUnitProduction.read(pStream);
 	m_ja_iUnitProductionTime.read(pStream);
 	m_ja_iSpecialistWeights.read(pStream);
-	pStream->Read(GC.getNumUnitCombatInfos(), m_paiUnitCombatFreeExperience);
+	m_ja_iUnitCombatFreeExperience.read(pStream);
 	m_ja_bHasRealBuilding.read(pStream);
 	m_ja_bHasFreeBuilding.read(pStream);
 
@@ -8506,10 +8459,10 @@ void CvCity::read(FDataStreamBase* pStream)
 
 	pStream->Read(&m_iPopulationRank);
 	pStream->Read(&m_bPopulationRankValid);
-	pStream->Read(NUM_YIELD_TYPES, m_aiBaseYieldRank);
-	pStream->Read(NUM_YIELD_TYPES, m_abBaseYieldRankValid);
-	pStream->Read(NUM_YIELD_TYPES, m_aiYieldRank);
-	pStream->Read(NUM_YIELD_TYPES, m_abYieldRankValid);
+	//pStream->Read(NUM_YIELD_TYPES, m_aiBaseYieldRank);
+	//pStream->Read(NUM_YIELD_TYPES, m_abBaseYieldRankValid);
+	//pStream->Read(NUM_YIELD_TYPES, m_aiYieldRank);
+	//pStream->Read(NUM_YIELD_TYPES, m_abYieldRankValid);
 
 	pStream->Read(&iNumElts);
 	m_aEventsOccured.clear();
@@ -8606,15 +8559,15 @@ void CvCity::write(FDataStreamBase* pStream)
 	pStream->Write(2, m_aiEventTimers);
 	//pStream->Write(MAX_TEAMS, m_abTradePostBuilt);
 	pStream->Write(m_bmTradePostBuilt);
-	pStream->Write(NUM_YIELD_TYPES, m_aiConnectedTradeBonus);
-	pStream->Write(NUM_YIELD_TYPES, m_aiConnectedMissionBonus);
+	m_ja_iConnectedTradeBonus.write(pStream);
+	m_ja_iConnectedMissionBonus.write(pStream);
 	///Tke
 
-	pStream->Write(NUM_YIELD_TYPES, m_aiSeaPlotYield);
-	pStream->Write(NUM_YIELD_TYPES, m_aiRiverPlotYield);
-	pStream->Write(NUM_YIELD_TYPES, m_aiYieldRateModifier);
-	pStream->Write(NUM_YIELD_TYPES, m_aiYieldStored);
-	pStream->Write(NUM_YIELD_TYPES, m_aiYieldRushed);
+	m_ja_iSeaPlotYield.write(pStream);
+	m_ja_iRiverPlotYield.write(pStream);
+	m_ja_iYieldRateModifier.write(pStream);
+	m_ja_iYieldStored.write(pStream);
+	m_ja_iYieldRushed.write(pStream);
 	pStream->Write(NUM_DOMAIN_TYPES, m_aiDomainFreeExperience);
 	pStream->Write(NUM_DOMAIN_TYPES, m_aiDomainProductionModifier);
 	pStream->Write(MAX_PLAYERS, m_aiCulture);
@@ -8638,7 +8591,7 @@ void CvCity::write(FDataStreamBase* pStream)
 	m_ja_iUnitProduction.write(pStream);
 	m_ja_iUnitProductionTime.write(pStream);
 	m_ja_iSpecialistWeights.write(pStream);
-	pStream->Write(GC.getNumUnitCombatInfos(), m_paiUnitCombatFreeExperience);
+	m_ja_iUnitCombatFreeExperience.write(pStream);
 	m_ja_bHasRealBuilding.write(pStream);
 	m_ja_bHasFreeBuilding.write(pStream);
 
@@ -8677,10 +8630,10 @@ void CvCity::write(FDataStreamBase* pStream)
 
 	pStream->Write(m_iPopulationRank);
 	pStream->Write(m_bPopulationRankValid);
-	pStream->Write(NUM_YIELD_TYPES, m_aiBaseYieldRank);
-	pStream->Write(NUM_YIELD_TYPES, m_abBaseYieldRankValid);
-	pStream->Write(NUM_YIELD_TYPES, m_aiYieldRank);
-	pStream->Write(NUM_YIELD_TYPES, m_abYieldRankValid);
+	//pStream->Write(NUM_YIELD_TYPES, m_aiBaseYieldRank);
+	//pStream->Write(NUM_YIELD_TYPES, m_abBaseYieldRankValid);
+	//pStream->Write(NUM_YIELD_TYPES, m_aiYieldRank);
+	//pStream->Write(NUM_YIELD_TYPES, m_abYieldRankValid);
 
 	pStream->Write(m_aEventsOccured.size());
 	for (std::vector<EventTypes>::iterator it = m_aEventsOccured.begin(); it != m_aEventsOccured.end(); ++it)
@@ -11885,9 +11838,7 @@ int CvCity::getEventTimer(int iEvent) const
 
 int CvCity::getConnectedTradeYield(YieldTypes eIndex) const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex expected to be < NUM_YIELD_TYPES");
-	return m_aiConnectedTradeBonus[eIndex];
+	return m_ja_iConnectedTradeBonus.get(eIndex);
 }
 
 
@@ -11898,20 +11849,19 @@ void CvCity::changeConnectedTradeYield(YieldTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_aiConnectedTradeBonus[eIndex] = (m_aiConnectedTradeBonus[eIndex] + iChange);
+		m_ja_iConnectedTradeBonus.add(iChange, eIndex);
 		FAssert(getConnectedTradeYield(eIndex) >= 0);
 	}
 	else
 	{
-		m_aiConnectedTradeBonus[eIndex] = 0;
+		// TODO figure out why a change of 0 is setting the var to 0
+		m_ja_iConnectedTradeBonus.set(0, eIndex);
 	}
 }
 
 int CvCity::getConnectedMissionYield(YieldTypes eIndex) const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex expected to be < NUM_YIELD_TYPES");
-	return m_aiConnectedMissionBonus[eIndex];
+	return m_ja_iConnectedMissionBonus.get(eIndex);
 }
 
 
@@ -11922,12 +11872,12 @@ void CvCity::changeConnectedMissionYield(YieldTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_aiConnectedMissionBonus[eIndex] = (m_aiConnectedMissionBonus[eIndex] + iChange);
+		m_ja_iConnectedMissionBonus.add(iChange, eIndex);
 		FAssert(getConnectedMissionYield(eIndex) >= 0);
 	}
 	else
 	{
-		m_aiConnectedMissionBonus[eIndex] = 0;
+		m_ja_iConnectedMissionBonus.set(0, eIndex);
 	}
 }
 

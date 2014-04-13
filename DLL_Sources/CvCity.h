@@ -660,14 +660,14 @@ protected:
 	YieldTypes m_eSelectedArmor;
 	int* m_aiEventTimers;
 	PlayerBitmap m_bmTradePostBuilt;
-	int* m_aiConnectedTradeBonus;
-	int* m_aiConnectedMissionBonus;
+	YieldArray<int> m_ja_iConnectedTradeBonus;
+	YieldArray<int> m_ja_iConnectedMissionBonus;
 	///TKe
-	int* m_aiSeaPlotYield;
-	int* m_aiRiverPlotYield;
-	int* m_aiYieldRateModifier;
-	int* m_aiYieldStored;
-	int* m_aiYieldRushed;
+	YieldArray<int> m_ja_iSeaPlotYield;
+	YieldArray<int> m_ja_iRiverPlotYield;
+	YieldArray<int> m_ja_iYieldRateModifier;
+	YieldArray<int> m_ja_iYieldStored;
+	YieldArray<int> m_ja_iYieldRushed;
 	int* m_aiDomainFreeExperience;
 	int* m_aiDomainProductionModifier;
 	int* m_aiCulture;
@@ -685,7 +685,7 @@ protected:
 	UnitArray<int> m_ja_iUnitProduction;
 	UnitArray<int> m_ja_iUnitProductionTime;
 	UnitArray<unsigned char> m_ja_iSpecialistWeights; // TODO convert to bool (used as bool)
-	int* m_paiUnitCombatFreeExperience;
+	UnitCombatArray<int> m_ja_iUnitCombatFreeExperience;
 	PromotionArray<unsigned char> m_ja_iFreePromotionCount;
 	BuildingArray<bool> m_ja_bHasRealBuilding;
 	BuildingArray<bool> m_ja_bHasFreeBuilding;

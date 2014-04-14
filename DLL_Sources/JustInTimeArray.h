@@ -195,9 +195,37 @@ public:
 };
 
 template<class T>
+class BuildingClassArray: public JustInTimeArray<T>
+{
+public:
+	BuildingClassArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_BUILDING_CLASS, eDefault){};
+};
+
+template<class T>
+class BuildingSpecialArray: public JustInTimeArray<T>
+{
+public:
+	BuildingSpecialArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_BUILDING_SPECIAL, eDefault){};
+};
+
+template<class T>
 class ImprovementArray: public JustInTimeArray<T>
 {
 public:
 	ImprovementArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_IMPROVEMENT, eDefault){};
+};
+
+template<class T>
+class CivicArray: public JustInTimeArray<T>
+{
+public:
+	CivicArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_CIVIC, eDefault){};
+};
+
+template<class T>
+class FatherArray: public JustInTimeArray<T>
+{
+public:
+	FatherArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_FATHER, eDefault){};
 };
 #endif

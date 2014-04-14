@@ -34,6 +34,10 @@
 // Public Functions...
 
 CvGame::CvGame()
+	: m_ja_eFatherTeam(NO_TEAM)
+	, m_ja_iFatherGameTurn(-1)
+	, m_ba_SpecialUnitValid(JIT_ARRAY_UNIT_SPECIAL)
+	, m_ba_SpecialBuildingValid(JIT_ARRAY_BUILDING_SPECIAL)
 {
 	m_aiRankPlayer = new int[MAX_PLAYERS];        // Ordered by rank...
 	m_aiPlayerScore = new int[MAX_PLAYERS];       // Ordered by player ID...
@@ -41,16 +45,6 @@ CvGame::CvGame()
 	m_aiTeamRank = new int[MAX_TEAMS];						// Ordered by team ID...
 	m_aiTeamScore = new int[MAX_TEAMS];						// Ordered by team ID...
 
-	m_paiUnitClassCreatedCount = NULL;
-	m_paiBuildingClassCreatedCount = NULL;
-	m_aeFatherTeam = NULL;
-	m_aiFatherGameTurn = NULL;
-
-	m_pabSpecialUnitValid = NULL;
-	m_pabSpecialBuildingValid = NULL;
-	///TKs Invention Core Mod v 1.0
-    m_aiIdeasResearched = NULL;
-    ///TKe
 	m_pReplayInfo = NULL;
 
 
@@ -393,14 +387,14 @@ void CvGame::regenerateMap()
 void CvGame::uninit()
 {
 	m_ja_iUnitCreatedCount.resetContent();
-	SAFE_DELETE_ARRAY(m_paiUnitClassCreatedCount);
-	SAFE_DELETE_ARRAY(m_paiBuildingClassCreatedCount);
-	SAFE_DELETE_ARRAY(m_aeFatherTeam);
-	SAFE_DELETE_ARRAY(m_aiFatherGameTurn);
-	SAFE_DELETE_ARRAY(m_pabSpecialUnitValid);
-	SAFE_DELETE_ARRAY(m_pabSpecialBuildingValid);
+	m_ja_iUnitClassCreatedCount.resetContent();
+	m_ja_iBuildingClassCreatedCount.resetContent();
+	m_ja_eFatherTeam.resetContent();
+	m_ja_iFatherGameTurn.resetContent();
+	m_ba_SpecialUnitValid.resetContent();
+	m_ba_SpecialBuildingValid.resetContent();
 	 ///TKs Invention Core Mod v 1.0
-	SAFE_DELETE_ARRAY(m_aiIdeasResearched);
+	m_ja_iIdeasResearched.resetContent();
 	///TKe
 
 	m_aszDestroyedCities.clear();
@@ -488,52 +482,16 @@ void CvGame::reset(HandicapTypes eHandicap, bool bConstructorCall)
 	if (!bConstructorCall)
 	{
 		m_ja_iUnitCreatedCount.resetContent();
-
-		FAssertMsg(m_paiUnitClassCreatedCount==NULL, "about to leak memory, CvGame::m_paiUnitClassCreatedCount");
-		m_paiUnitClassCreatedCount = new int[GC.getNumUnitClassInfos()];
-		for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
-		{
-			m_paiUnitClassCreatedCount[iI] = 0;
-		}
-
-		FAssertMsg(m_paiBuildingClassCreatedCount==NULL, "about to leak memory, CvGame::m_paiBuildingClassCreatedCount");
-		m_paiBuildingClassCreatedCount = new int[GC.getNumBuildingClassInfos()];
-		for (iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
-		{
-			m_paiBuildingClassCreatedCount[iI] = 0;
-		}
+		m_ja_iUnitClassCreatedCount.resetContent();
+		m_ja_iBuildingClassCreatedCount.resetContent();
 
 		FAssertMsg(0 < GC.getNumFatherInfos(), "GC.getNumFatherInfos() is not greater than zero in CvGame::reset");
-		FAssertMsg(m_aeFatherTeam==NULL, "about to leak memory, CvGame::m_aeFatherTeam");
-		FAssertMsg(m_aiFatherGameTurn==NULL, "about to leak memory, CvGame::m_aiFatherGameTurn");
-		m_aeFatherTeam = new TeamTypes[GC.getNumFatherInfos()];
-		m_aiFatherGameTurn = new int[GC.getNumFatherInfos()];
-		for (iI = 0; iI < GC.getNumFatherInfos(); iI++)
-		{
-			m_aeFatherTeam[iI] = NO_TEAM;
-			m_aiFatherGameTurn[iI] = -1;
-		}
-
-		FAssertMsg(m_pabSpecialUnitValid==NULL, "about to leak memory, CvGame::m_pabSpecialUnitValid");
-		m_pabSpecialUnitValid = new bool[GC.getNumSpecialUnitInfos()];
-		for (iI = 0; iI < GC.getNumSpecialUnitInfos(); iI++)
-		{
-			m_pabSpecialUnitValid[iI] = false;
-		}
-
-		FAssertMsg(m_pabSpecialBuildingValid==NULL, "about to leak memory, CvGame::m_pabSpecialBuildingValid");
-		m_pabSpecialBuildingValid = new bool[GC.getNumSpecialBuildingInfos()];
-		for (iI = 0; iI < GC.getNumSpecialBuildingInfos(); iI++)
-		{
-			m_pabSpecialBuildingValid[iI] = false;
-		}
-
+		m_ja_eFatherTeam.resetContent();
+		m_ja_iFatherGameTurn.resetContent();
+		m_ba_SpecialUnitValid.resetContent();
+		m_ba_SpecialBuildingValid.resetContent();
 		///TKs Invention Core Mod v 1.0
-		m_aiIdeasResearched = new int [GC.getNumCivicInfos()];
-        for (iI = 0; iI < GC.getNumCivicInfos(); iI++)
-        {
-            m_aiIdeasResearched[iI] = 0;
-        }
+		m_ja_iIdeasResearched.resetContent();
         ///TKe
 	}
 
@@ -4871,30 +4829,22 @@ void CvGame::incrementUnitCreatedCount(UnitTypes eIndex)
 
 int CvGame::getUnitClassCreatedCount(UnitClassTypes eIndex)
 {
-	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
-	FAssertMsg(eIndex < GC.getNumUnitClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiUnitClassCreatedCount[eIndex];
+	return m_ja_iUnitClassCreatedCount.get(eIndex);
 }
 
 void CvGame::incrementUnitClassCreatedCount(UnitClassTypes eIndex)
 {
-	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
-	FAssertMsg(eIndex < GC.getNumUnitClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiUnitClassCreatedCount[eIndex]++;
+	m_ja_iUnitClassCreatedCount.add(1, eIndex);
 }
 
 int CvGame::getBuildingClassCreatedCount(BuildingClassTypes eIndex)
 {
-	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
-	FAssertMsg(eIndex < GC.getNumBuildingClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiBuildingClassCreatedCount[eIndex];
+	return m_ja_iBuildingClassCreatedCount.get(eIndex);
 }
 
 void CvGame::incrementBuildingClassCreatedCount(BuildingClassTypes eIndex)
 {
-	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
-	FAssertMsg(eIndex < GC.getNumBuildingClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiBuildingClassCreatedCount[eIndex]++;
+	m_ja_iBuildingClassCreatedCount.add(1, eIndex);
 }
 
 bool CvGame::isVictoryValid(VictoryTypes eIndex) const
@@ -4906,25 +4856,19 @@ bool CvGame::isVictoryValid(VictoryTypes eIndex) const
 
 bool CvGame::isSpecialUnitValid(SpecialUnitTypes eIndex)
 {
-	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
-	FAssertMsg(eIndex < GC.getNumSpecialUnitInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_pabSpecialUnitValid[eIndex];
+	return m_ba_SpecialUnitValid.get(eIndex);
 }
 
 
 void CvGame::makeSpecialUnitValid(SpecialUnitTypes eIndex)
 {
-	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
-	FAssertMsg(eIndex < GC.getNumSpecialUnitInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_pabSpecialUnitValid[eIndex] = true;
+	m_ba_SpecialUnitValid.set(true, eIndex);
 }
 
 
 bool CvGame::isSpecialBuildingValid(SpecialBuildingTypes eIndex)
 {
-	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
-	FAssertMsg(eIndex < GC.getNumSpecialBuildingInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_pabSpecialBuildingValid[eIndex];
+	return m_ba_SpecialBuildingValid.get(eIndex);
 }
 
 
@@ -4933,9 +4877,9 @@ void CvGame::makeSpecialBuildingValid(SpecialBuildingTypes eIndex, bool bAnnounc
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumSpecialBuildingInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
 
-	if (!m_pabSpecialBuildingValid[eIndex])
+	if (!isSpecialBuildingValid(eIndex))
 	{
-		m_pabSpecialBuildingValid[eIndex] = true;
+		m_ba_SpecialBuildingValid.set(true, eIndex);
 
 
 		if (bAnnounce)
@@ -6632,15 +6576,15 @@ void CvGame::read(FDataStreamBase* pStream)
 	pStream->Read(MAX_TEAMS, m_aiTeamScore);
 
 	m_ja_iUnitCreatedCount.read(pStream);
-	pStream->Read(GC.getNumUnitClassInfos(), m_paiUnitClassCreatedCount);
-	pStream->Read(GC.getNumBuildingClassInfos(), m_paiBuildingClassCreatedCount);
-	pStream->Read(GC.getNumFatherInfos(), (int*)m_aeFatherTeam);
-	pStream->Read(GC.getNumFatherInfos(), m_aiFatherGameTurn);
+	m_ja_iUnitClassCreatedCount.read(pStream);
+	m_ja_iBuildingClassCreatedCount.read(pStream);
+	m_ja_eFatherTeam.read(pStream);
+	m_ja_iFatherGameTurn.read(pStream);
 
-	pStream->Read(GC.getNumSpecialUnitInfos(), m_pabSpecialUnitValid);
-	pStream->Read(GC.getNumSpecialBuildingInfos(), m_pabSpecialBuildingValid);
+	m_ba_SpecialUnitValid.read(pStream);
+	m_ba_SpecialBuildingValid.read(pStream);
     ///TKs Invention Core Mod v 1.0
-	pStream->Read(GC.getNumCivicInfos(), m_aiIdeasResearched);
+	m_ja_iIdeasResearched.read(pStream);
 	///TKe
 
 	{
@@ -6799,15 +6743,15 @@ void CvGame::write(FDataStreamBase* pStream)
 	pStream->Write(MAX_TEAMS, m_aiTeamRank);
 	pStream->Write(MAX_TEAMS, m_aiTeamScore);
 	m_ja_iUnitCreatedCount.write(pStream);
-	pStream->Write(GC.getNumUnitClassInfos(), m_paiUnitClassCreatedCount);
-	pStream->Write(GC.getNumBuildingClassInfos(), m_paiBuildingClassCreatedCount);
-	pStream->Write(GC.getNumFatherInfos(), (int*)m_aeFatherTeam);
-	pStream->Write(GC.getNumFatherInfos(), m_aiFatherGameTurn);
+	m_ja_iUnitClassCreatedCount.write(pStream);
+	m_ja_iBuildingClassCreatedCount.write(pStream);
+	m_ja_eFatherTeam.write(pStream);
+	m_ja_iFatherGameTurn.write(pStream);
 
-	pStream->Write(GC.getNumSpecialUnitInfos(), m_pabSpecialUnitValid);
-	pStream->Write(GC.getNumSpecialBuildingInfos(), m_pabSpecialBuildingValid);
+	m_ba_SpecialUnitValid.write(pStream);
+	m_ba_SpecialBuildingValid.write(pStream);
 	///TKs Invention Core Mod v 1.0
-   	pStream->Write(GC.getNumCivicInfos(), m_aiIdeasResearched);
+	m_ja_iIdeasResearched.write(pStream);
    	///TKe
 
 	{
@@ -7203,14 +7147,12 @@ bool CvGame::isBuildingEverActive(BuildingTypes eBuilding) const
 
 TeamTypes CvGame::getFatherTeam(FatherTypes eFather) const
 {
-	FAssert(eFather >= 0 && eFather < GC.getNumFatherInfos());
-	return m_aeFatherTeam[eFather];
+	return (TeamTypes)m_ja_eFatherTeam.get(eFather);
 }
 
 int CvGame::getFatherGameTurn(FatherTypes eFather) const
 {
-	FAssert(eFather >= 0 && eFather < GC.getNumFatherInfos());
-	return m_aiFatherGameTurn[eFather];
+	return m_ja_iFatherGameTurn.get(eFather);
 }
 
 void CvGame::setFatherTeam(FatherTypes eFather, TeamTypes eTeam)
@@ -7229,7 +7171,7 @@ void CvGame::setFatherTeam(FatherTypes eFather, TeamTypes eTeam)
 			bFirstTime = false;
 		}
 
-		m_aeFatherTeam[eFather] = eTeam;
+		m_ja_eFatherTeam.set(eTeam, eFather);
 
 		if (getFatherTeam(eFather) != NO_TEAM)
 		{
@@ -7237,7 +7179,7 @@ void CvGame::setFatherTeam(FatherTypes eFather, TeamTypes eTeam)
 
 			if (bFirstTime)
 			{
-				m_aiFatherGameTurn[eFather] = getGameTurn();
+				m_ja_iFatherGameTurn.set(getGameTurn(), eFather);
 
 				for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
 				{
@@ -7563,16 +7505,14 @@ void CvGame::updateOceanDistances()
 
 int CvGame::getIdeasResearched(CivicTypes eIndex) const
 {
-	return m_aiIdeasResearched[eIndex];
-	//return 0;
+	return m_ja_iIdeasResearched.get(eIndex);
 }
 
 void CvGame::changeIdeasResearched(CivicTypes eIndex, int iChange)
 {
 	if (eIndex != NO_CIVIC)
 	{
-		m_aiIdeasResearched[eIndex] += iChange;
-
+		m_ja_iIdeasResearched.add(iChange, eIndex);
 	}
 }
 ///TKs Med

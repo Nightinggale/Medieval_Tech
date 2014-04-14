@@ -121,7 +121,11 @@ public:
 	void                Read(JIT_ARRAY_TYPES eType, int* i);
 	
 	void Read(BonusTypes*      eVar) {Read(JIT_ARRAY_BONUS       , (int*) eVar);}
+	void Read(BuildingTypes*        eVar) {Read(JIT_ARRAY_BUILDING         , (int*) eVar);}
+	void Read(BuildingClassTypes*   eVar) {Read(JIT_ARRAY_BUILDING_CLASS   , (int*) eVar);}
+	void Read(SpecialBuildingTypes* eVar) {Read(JIT_ARRAY_BUILDING_SPECIAL , (int*) eVar);}
 	void Read(EuropeTypes*     eVar) {Read(JIT_ARRAY_EUROPE      , (int*) eVar);}
+	void Read(FatherTypes*          eVar) {Read(JIT_ARRAY_FATHER           , (int*) eVar);}
 	void Read(ImprovementTypes* eVar){Read(JIT_ARRAY_IMPROVEMENT , (int*) eVar);}
 	void Read(ProfessionTypes* eVar) {Read(JIT_ARRAY_PROFESSION  , (int*) eVar);}
 	void Read(PromotionTypes*  eVar) {Read(JIT_ARRAY_PROMOTION   , (int*) eVar);}

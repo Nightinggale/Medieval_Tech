@@ -29,6 +29,7 @@
 // Public Functions...
 
 CvCity::CvCity()
+	: ma_aiCustomHouseNeverSell(true)
 {
     ///Tks Med
     m_aiEventTimers = new int[2];
@@ -74,7 +75,6 @@ CvCity::CvCity()
 	m_abBaseYieldRankValid = new bool[NUM_YIELD_TYPES];
 	m_aiYieldRank = new int[NUM_YIELD_TYPES];
 	m_abYieldRankValid = new bool[NUM_YIELD_TYPES];
-
 	reset(0, NO_PLAYER, 0, 0, true);
 }
 
@@ -82,7 +82,6 @@ CvCity::~CvCity()
 {
 	CvDLLEntity::removeEntity();			// remove entity from engine
 	CvDLLEntity::destroyEntity();			// delete CvCityEntity and detach from us
-
 	uninit();
 
 	///Kailric Fort Mod Start
@@ -10236,8 +10235,12 @@ void CvCity::setTradePostBuilt(TeamTypes eTeam, bool bBuilt)
 	{
 		///Tks Civic Screen
 		plot()->updateConnectedBonusYields((PlayerTypes)0);
-		BuildingTypes eBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(GC.getXMLval(XML_NATIVE_TRADING_TRADEPOST));
-		setHasRealBuilding(eBuilding, bBuilt);
+		if (isNative())
+		{
+			BuildingTypes eBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(GC.getXMLval(XML_NATIVE_TRADING_TRADEPOST));
+			setHasRealBuilding(eBuilding, bBuilt);
+		}
+		
 		SetBit(m_bmTradePostBuilt, eTeam, bBuilt);
 		setBillboardDirty(true);
 	}

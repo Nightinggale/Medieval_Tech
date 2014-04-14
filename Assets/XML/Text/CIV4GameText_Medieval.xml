@@ -441,6 +441,14 @@
 		<Italian>Disboscare una [LINK=FEATURE_FOREST]foresta[\LINK]</Italian>
 		<Spanish>Talar un [LINK=FEATURE_FOREST]bosque[\LINK]</Spanish>
 	</TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_INTERFACE_GOVERNOR_TOGGLE</Tag>
+    <English>Steward</English>
+    <French>Steward</French>
+    <German>Steward</German>
+    <Italian>Steward</Italian>
+    <Spanish>Steward</Spanish>
+  </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CLICK_MARKET_SELECT</Tag>
 		<English>[COLOR_UNIT_TEXT]Click to select goods to sale on market[COLOR_REVERT]</English>

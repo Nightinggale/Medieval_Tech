@@ -9813,7 +9813,7 @@ void CvPlayer::doCities()
 									//CvCity* pCity = firstCity(&iLoop);
 
 									changeGold(iProfit);
-									CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_DOMESTIC_SOLD", pCity->getNameKey(), iProfit);
+									CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_DOMESTIC_SOLD_N", pCity->getNameKey(), GC.getYieldInfo((YieldTypes)iYield).getDescription(), iProfit);
 									gDLL->getInterfaceIFace()->addMessage(getID(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), pCity->getX_INLINE(), pCity->getY_INLINE(), true, true);
 								}
 								if (iSold == 0)

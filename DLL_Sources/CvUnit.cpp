@@ -15576,6 +15576,12 @@ bool CvUnit::canBuildTradingPost(bool bTestVisible)
         return false;
     }
 
+	if (getDomainType() != DOMAIN_LAND)
+	{
+		return false;
+	}
+
+	// TODO check this code
     BuildingTypes eBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(GC.getXMLval(XML_NATIVE_TRADING_TRADEPOST));
     if (!GET_PLAYER(getOwner()).canConstruct(eBuilding, false, false, true))
     {

@@ -855,6 +855,19 @@ bool CvDLLWidgetData::executeDoubleClick(const CvWidgetDataStruct& widgetDataStr
 	case WIDGET_DOCK:
 		doDoubleClickDock(widgetDataStruct);
 		break;
+	///tks
+	case WIDGET_MOVE_CARGO_TO_TRANSPORT:
+		{
+			CvCity* pHeadSelectedCity = gDLL->getInterfaceIFace()->getHeadSelectedCity();
+			if (pHeadSelectedCity != NULL && pHeadSelectedCity->getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
+			{
+				CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CUSTOM_HOUSE, gDLL->getInterfaceIFace()->getHeadSelectedCity()->getID(), widgetDataStruct.m_iData1);
+				gDLL->getInterfaceIFace()->addPopup(pInfo, NO_PLAYER, true);
+			}
+		}
+		//doCustomHouse(widgetDataStruct);
+		break;
+		//tke
 
 	default:
 		bHandled = false;

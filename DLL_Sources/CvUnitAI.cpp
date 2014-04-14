@@ -3236,7 +3236,7 @@ void CvUnitAI::AI_transportTraderMove()
 		return;
 	}
 
-	 CvCity* pCity = NULL;
+	CvCity* pCity = NULL;
     if (plot()->getPlotCity() != NULL)
     {
 		pCity = plot()->getPlotCity();
@@ -3249,14 +3249,17 @@ void CvUnitAI::AI_transportTraderMove()
         {
             return;
         }
+
         if (plot()->getOwner() == getOwner())
         {
+			pCity = plot()->getPlotCity();
             if (!isHuman())
             {
                 AI_upgradeProfession();
             }
         }
     }
+
     if (AI_getUnitAIState() == UNITAI_STATE_PURCHASED)
 	{
 	    if (!hasCargo())

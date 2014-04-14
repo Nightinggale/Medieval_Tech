@@ -17012,7 +17012,7 @@
 			<Description>Inn Keeper</Description>
 			<Civilopedia>TXT_KEY_UNIT_COLONIST_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_COLONIST_STRATEGY</Strategy>
-			<bGraphicalOnly>1</bGraphicalOnly>
+			<bGraphicalOnly>0</bGraphicalOnly>
 			<bNoBadGoodies>0</bNoBadGoodies>
 			<bOnlyDefensive>0</bOnlyDefensive>
 			<bNoCapture>0</bNoCapture>

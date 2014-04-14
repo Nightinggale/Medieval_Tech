@@ -3667,9 +3667,8 @@ class CvMainInterface:
 		global BUILDING_MANAGMENT_PANEL_UP
 		global AUTOMATION_MANAGMENT_PANEL_UP
 		global MAP_MANAGMENT_PANEL_UP
-
+				
 		if (inputClass.getNotifyCode() == NotifyCode.NOTIFY_CLICKED):
-
 			if (inputClass.getButtonType() == WidgetTypes.WIDGET_GENERAL and inputClass.getData1() == BUILDING_MANAGMENT_TOGGLE):
 				BUILDING_MANAGMENT_PANEL_UP = True
 				AUTOMATION_MANAGMENT_PANEL_UP, MAP_MANAGMENT_PANEL_UP = False, False
@@ -3687,7 +3686,7 @@ class CvMainInterface:
 
 			elif (inputClass.getButtonType() == WidgetTypes.WIDGET_CLOSE_SCREEN):
 				CyInterface().clearSelectedCities()
-
+		
 		return 0
 
 	# Updates the Screen

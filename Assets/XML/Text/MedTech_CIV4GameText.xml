@@ -594,7 +594,7 @@ At the Battle of Nesjar, in 1016, Olaf Haraldsson won the kingdom of Norway from
 	<!-- Pedia - Unit source - End Nightinggale -->
 	<TEXT>
 		<Tag>TXT_KEY_EDIT_TEACHER_LIST</Tag>
-		<English>Teacher List Popup Screen</English>
+		<English>Teacher List</English>
 		<French>Teacher List Popup Screen</French>
 		<German>Teacher List Popup Screen</German>
 		<Italian>Teacher List Popup Screen</Italian>
@@ -666,7 +666,7 @@ At the Battle of Nesjar, in 1016, Olaf Haraldsson won the kingdom of Norway from
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CUSTOM_HOUSE_POPUP_TEXT</Tag>
-		<English>Select goods that will be sold by Custom House, and select mimimum amount of a specific yield to enable Custom House to sell such yield in city %s1_city</English>
+		<English>Select goods that will be sold on the local market, and select mimimum amount to sell yield in city %s1_city</English>
 		<French>S&#233;lectionner les biens que le Poste de Douane va vendre, ainsi que le seuil de marchandises qui d&#233;clenche la vente de celle-ci pour la colonie suivante: %s1_city</French>
 		<German>W&#228;hle G&#252;ter, die auf dem heimischen Markt verkauft werden sollen, sowie eine Mindestschwelle ab der das Zollhaus in %s1_city verkaufen soll.</German>
 		<Italian>Select goods that will be sold by Custom House, and select mimimum amount of a specific yield to enable Custom House to sell such yield in city %s1_city</Italian>
@@ -696,6 +696,30 @@ At the Battle of Nesjar, in 1016, Olaf Haraldsson won the kingdom of Norway from
 		<Italian>Price</Italian>
 		<Spanish>Price</Spanish>
 	</TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_EDIT_CUSTOM_HOUSE</Tag>
+    <English>Local Market</English>
+    <French>Local Market</French>
+    <German>Local Market</German>
+    <Italian>Local Market</Italian>
+    <Spanish>Local Market</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_DOMESTIC_MARKET</Tag>
+    <English>Demands</English>
+    <French>Demands</French>
+    <German>Demands</German>
+    <Italian>Demands</Italian>
+    <Spanish>Demands</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_EU_TRADE_LOG_1</Tag>
+    <English>Log</English>
+    <French>Log</French>
+    <German>Log</German>
+    <Italian>Log</Italian>
+    <Spanish>Log</Spanish>
+  </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DOMESTIC_MARKET_POPUP</Tag>
 		<English>Domestic Market (%s1_city) %d2/%d3</English>
@@ -728,6 +752,14 @@ At the Battle of Nesjar, in 1016, Olaf Haraldsson won the kingdom of Norway from
 		<Italian>On the domestic market of %s1_city goods for %d2[ICON_GOLD] have been sold.</Italian>
 		<Spanish>On the domestic market of %s1_city goods for %d2[ICON_GOLD] have been sold.</Spanish>
 	</TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_GOODS_DOMESTIC_SOLD_N</Tag>
+    <English>On the domestic market of %s1_city %s2_goods for %d3[ICON_GOLD] have been sold.</English>
+    <French>On the domestic market of %s1_city goods for %d2[ICON_GOLD] have been sold.</French>
+    <German>Auf dem Markt von %s1_city wurden G&#252;ter f&#252;r %d2[ICON_GOLD] verkauft.</German>
+    <Italian>On the domestic market of %s1_city goods for %d2[ICON_GOLD] have been sold.</Italian>
+    <Spanish>On the domestic market of %s1_city goods for %d2[ICON_GOLD] have been sold.</Spanish>
+  </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ALT_EQUIPMENT_LINK</Tag>
 		<English>Alt equipment: [LINK=literal]%s1_default_unit[\LINK]</English>

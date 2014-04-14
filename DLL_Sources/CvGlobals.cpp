@@ -4244,42 +4244,42 @@ int CvGlobals::getArrayLength(JIT_ARRAY_TYPES eType)
 {
 	switch (eType)
 	{
-	case JIT_ARRAY_CIVIC:
-		return getNumCivicInfos();
-	case JIT_ARRAY_YIELD:
-		return NUM_YIELD_TYPES;
-	case JIT_ARRAY_CARGO_YIELD:
-		return NUM_CARGO_YIELD_TYPES;
-	case JIT_ARRAY_UNIT:
-		return getNumUnitInfos();
-	case JIT_ARRAY_UNIT_CLASS:
-		return getNumUnitClassInfos();
-	case JIT_ARRAY_PROFESSION:
-		return getNumProfessionInfos();
-	case JIT_ARRAY_PROMOTION:
-		return getNumPromotionInfos();
-	case JIT_ARRAY_UNIT_COMBAT:
-		return getNumUnitCombatInfos();
 	case JIT_ARRAY_BONUS:
 		return getNumBonusInfos();
-	case JIT_ARRAY_PLAYER:
-		return MAX_PLAYERS;
-	case JIT_ARRAY_EUROPE:
-		return getNumEuropeInfos();
 	case JIT_ARRAY_BUILDING:
 		return getNumBuildingInfos();
 	case JIT_ARRAY_BUILDING_CLASS:
 		return getNumBuildingClassInfos();
 	case JIT_ARRAY_BUILDING_SPECIAL:
 		return getNumSpecialBuildingInfos();
-	case JIT_ARRAY_IMPROVEMENT:
-		return getNumImprovementInfos();
+	case JIT_ARRAY_CIVIC:
+		return getNumCivicInfos();
 	case JIT_ARRAY_EMPHASIZE:
 		return getNumEmphasizeInfos();
+	case JIT_ARRAY_EUROPE:
+		return getNumEuropeInfos();
 	case JIT_ARRAY_FATHER:
 		return getNumFatherInfos();
+	case JIT_ARRAY_IMPROVEMENT:
+		return getNumImprovementInfos();
+	case JIT_ARRAY_PLAYER:
+		return MAX_PLAYERS;
+	case JIT_ARRAY_PROFESSION:
+		return getNumProfessionInfos();
+	case JIT_ARRAY_PROMOTION:
+		return getNumPromotionInfos();
+	case JIT_ARRAY_UNIT:
+		return getNumUnitInfos();
+	case JIT_ARRAY_UNIT_CLASS:
+		return getNumUnitClassInfos();
+	case JIT_ARRAY_UNIT_COMBAT:
+		return getNumUnitCombatInfos();
 	case JIT_ARRAY_UNIT_SPECIAL:
 		return getNumSpecialUnitInfos();
+	case JIT_ARRAY_YIELD:
+		return NUM_YIELD_TYPES;
+	case JIT_ARRAY_CARGO_YIELD:
+		return NUM_CARGO_YIELD_TYPES;
 	}
 	FAssertMsg(false, "missing length case");
 	return 0;
@@ -4294,35 +4294,8 @@ CvWString CvGlobals::getArrayType(JIT_ARRAY_TYPES eType, int iIndex)
 	
 	switch (eType)
 	{
-	case JIT_ARRAY_CIVIC:
-		szType = getCivicInfo((CivicTypes)iIndex).getType();
-		break;
-	case JIT_ARRAY_YIELD:
-	case JIT_ARRAY_CARGO_YIELD:
-		szType = getYieldInfo((YieldTypes)iIndex).getType();
-		break;
-	case JIT_ARRAY_UNIT:
-		szType = getUnitInfo((UnitTypes)iIndex).getType();
-		break;
-	case JIT_ARRAY_UNIT_CLASS:
-		szType = getUnitClassInfo((UnitClassTypes)iIndex).getType();
-		break;
-	case JIT_ARRAY_PROFESSION:
-		szType = getProfessionInfo((ProfessionTypes)iIndex).getType();
-		break;
-	case JIT_ARRAY_PROMOTION:
-		szType = getPromotionInfo((PromotionTypes)iIndex).getType();
-		break;
-	case JIT_ARRAY_UNIT_COMBAT:
-		szType = getUnitCombatInfo((UnitCombatTypes)iIndex).getType();
-		break;
 	case JIT_ARRAY_BONUS:
 		szType = getBonusInfo((BonusTypes)iIndex).getType();
-		break;
-	case JIT_ARRAY_PLAYER:
-		break;
-	case JIT_ARRAY_EUROPE:
-		szType = getEuropeInfo((EuropeTypes)iIndex).getType();
 		break;
 	case JIT_ARRAY_BUILDING:
 		szType = getBuildingInfo((BuildingTypes)iIndex).getType();
@@ -4333,17 +4306,44 @@ CvWString CvGlobals::getArrayType(JIT_ARRAY_TYPES eType, int iIndex)
 	case JIT_ARRAY_BUILDING_SPECIAL:
 		szType = getSpecialBuildingInfo((SpecialBuildingTypes)iIndex).getType();
 		break;
-	case JIT_ARRAY_IMPROVEMENT:
-		szType = getImprovementInfo((ImprovementTypes)iIndex).getType();
+	case JIT_ARRAY_CIVIC:
+		szType = getCivicInfo((CivicTypes)iIndex).getType();
 		break;
 	case JIT_ARRAY_EMPHASIZE:
 		szType = getEmphasizeInfo((EmphasizeTypes)iIndex).getType();
 		break;
+	case JIT_ARRAY_EUROPE:
+		szType = getEuropeInfo((EuropeTypes)iIndex).getType();
+		break;
 	case JIT_ARRAY_FATHER:
 		szType = getFatherInfo((FatherTypes)iIndex).getType();
 		break;
+	case JIT_ARRAY_IMPROVEMENT:
+		szType = getImprovementInfo((ImprovementTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_PLAYER:
+		break;
+	case JIT_ARRAY_PROFESSION:
+		szType = getProfessionInfo((ProfessionTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_PROMOTION:
+		szType = getPromotionInfo((PromotionTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_UNIT:
+		szType = getUnitInfo((UnitTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_UNIT_CLASS:
+		szType = getUnitClassInfo((UnitClassTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_UNIT_COMBAT:
+		szType = getUnitCombatInfo((UnitCombatTypes)iIndex).getType();
+		break;
 	case JIT_ARRAY_UNIT_SPECIAL:
 		szType = getSpecialUnitInfo((SpecialUnitTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_YIELD:
+	case JIT_ARRAY_CARGO_YIELD:
+		szType = getYieldInfo((YieldTypes)iIndex).getType();
 		break;
 	default:
 		FAssertMsg(false, "missing info case");

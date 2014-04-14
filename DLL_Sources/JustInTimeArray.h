@@ -105,93 +105,18 @@ public:
 	void read(CvXMLLoadUtility* pXML, const char* sTag);
 };
 
-
-template<class T>
-class YieldArray: public JustInTimeArray<T>
-{
-public:
-	YieldArray() : JustInTimeArray<T>(JIT_ARRAY_YIELD){};
-	YieldArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_YIELD, eDefault){};
-};
-
-template<class T>
-class YieldCargoArray: public JustInTimeArray<T>
-{
-public:
-	YieldCargoArray() : JustInTimeArray<T>(JIT_ARRAY_CARGO_YIELD){};
-	YieldCargoArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_CARGO_YIELD, eDefault){};
-};
-
-template<class T>
-class UnitArray: public JustInTimeArray<T>
-{
-public:
-    UnitArray() : JustInTimeArray<T>(JIT_ARRAY_UNIT){};
-	UnitArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_UNIT, eDefault){};
-};
-
-template<class T>
-class UnitClassArray: public JustInTimeArray<T>
-{
-public:
-    UnitClassArray() : JustInTimeArray<T>(JIT_ARRAY_UNIT_CLASS){};
-	UnitClassArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_UNIT_CLASS, eDefault){};
-};
-
-template<class T>
-class ProfessionArray: public JustInTimeArray<T>
-{
-public:
-    ProfessionArray() : JustInTimeArray<T>(JIT_ARRAY_PROFESSION){};
-	ProfessionArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_PROFESSION, eDefault){};
-};
-
-template<class T>
-class PromotionArray: public JustInTimeArray<T>
-{
-public:
-    PromotionArray() : JustInTimeArray<T>(JIT_ARRAY_PROMOTION){};
-	PromotionArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_PROMOTION, eDefault){};
-};
-
-template<class T>
-class UnitCombatArray: public JustInTimeArray<T>
-{
-public:
-    UnitCombatArray() : JustInTimeArray<T>(JIT_ARRAY_UNIT_COMBAT){};
-	UnitCombatArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_UNIT_COMBAT, eDefault){};
-};
-
 template<class T>
 class BonusArray: public JustInTimeArray<T>
 {
 public:
-    BonusArray() : JustInTimeArray<T>(JIT_ARRAY_BONUS){};
-	BonusArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_BONUS, eDefault){};
-};
-
-template<class T>
-class PlayerArray: public JustInTimeArray<T>
-{
-public:
-	PlayerArray() : JustInTimeArray<T>(JIT_ARRAY_PLAYER){};
-	PlayerArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_PLAYER, eDefault){};
-};
-
-template<class T>
-class EuropeArray: public JustInTimeArray<T>
-{
-public:
-	EuropeArray() : JustInTimeArray<T>(JIT_ARRAY_EUROPE){};
-	EuropeArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_EUROPE, eDefault){};
+	BonusArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_BONUS, eDefault){};
 };
 
 template<class T>
 class BuildingArray: public JustInTimeArray<T>
 {
 public:
-    BuildingArray() : JustInTimeArray<T>(JIT_ARRAY_BUILDING){};
-	BuildingArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_BUILDING, eDefault){};
+	BuildingArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_BUILDING, eDefault){};
 };
 
 template<class T>
@@ -209,13 +134,6 @@ public:
 };
 
 template<class T>
-class ImprovementArray: public JustInTimeArray<T>
-{
-public:
-	ImprovementArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_IMPROVEMENT, eDefault){};
-};
-
-template<class T>
 class CivicArray: public JustInTimeArray<T>
 {
 public:
@@ -223,9 +141,79 @@ public:
 };
 
 template<class T>
+class EuropeArray: public JustInTimeArray<T>
+{
+public:
+	EuropeArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_EUROPE, eDefault){};
+};
+
+template<class T>
 class FatherArray: public JustInTimeArray<T>
 {
 public:
 	FatherArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_FATHER, eDefault){};
+};
+
+template<class T>
+class ImprovementArray: public JustInTimeArray<T>
+{
+public:
+	ImprovementArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_IMPROVEMENT, eDefault){};
+};
+
+template<class T>
+class PlayerArray: public JustInTimeArray<T>
+{
+public:
+	PlayerArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_PLAYER, eDefault){};
+};
+
+template<class T>
+class ProfessionArray: public JustInTimeArray<T>
+{
+public:
+	ProfessionArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_PROFESSION, eDefault){};
+};
+
+template<class T>
+class PromotionArray: public JustInTimeArray<T>
+{
+public:
+	PromotionArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_PROMOTION, eDefault){};
+};
+
+template<class T>
+class UnitArray: public JustInTimeArray<T>
+{
+public:
+	UnitArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_UNIT, eDefault){};
+};
+
+template<class T>
+class UnitClassArray: public JustInTimeArray<T>
+{
+public:
+	UnitClassArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_UNIT_CLASS, eDefault){};
+};
+
+template<class T>
+class UnitCombatArray: public JustInTimeArray<T>
+{
+public:
+	UnitCombatArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_UNIT_COMBAT, eDefault){};
+};
+
+template<class T>
+class YieldArray: public JustInTimeArray<T>
+{
+public:
+	YieldArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_YIELD, eDefault){};
+};
+
+template<class T>
+class YieldCargoArray: public JustInTimeArray<T>
+{
+public:
+	YieldCargoArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_CARGO_YIELD, eDefault){};
 };
 #endif

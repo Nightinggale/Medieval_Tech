@@ -11539,10 +11539,30 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	m_ja_iProfessionEquipmentModifier.read(pStream);
 	m_ja_iTraitCount.read(pStream);
 
-	for (iI=0;iI<GC.getNumCivicOptionInfos();iI++)
+	/// JIT array save - start - Nightinggale
+	//for (iI=0;iI<GC.getNumCivicOptionInfos();iI++)
+	//{
+	//	pStream->Read((int*)&m_paeCivics[iI]);
+	//}
 	{
-		pStream->Read((int*)&m_paeCivics[iI]);
+		// read the same number of civics as civic types at the time of load
+		// convert the index to the current index and then save the converted civic type
+		int iLength = 0;
+		pStream->Read(&iLength);
+		for (int iI=0; iI < iLength; iI++)
+		{
+			CivicTypes eCivic = NO_CIVIC;
+			pStream->Read(&eCivic);
+
+			int iIndex = GC.getGameINLINE().convertArrayInfo(JIT_ARRAY_CIVIC_OPTION, iI);
+			if (iIndex > -1 && iIndex < GC.getNumCivicOptionInfos())
+			{
+				// store converted civic in converted civic option index
+				m_paeCivics[iIndex] = eCivic;
+			}
+		}
 	}
+	/// JIT array save - end - Nightinggale
 
 	for (iI=0;iI<GC.getNumImprovementInfos();iI++)
 	{
@@ -12008,6 +12028,9 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	m_ja_iProfessionEquipmentModifier.write(pStream);
 	m_ja_iTraitCount.write(pStream);
 
+	/// JIT array save - start - Nightinggale
+	pStream->Write(GC.getNumCivicOptionInfos());
+	/// JIT array save - end - Nightinggale
 	for (iI=0;iI<GC.getNumCivicOptionInfos();iI++)
 	{
 		pStream->Write(m_paeCivics[iI]);

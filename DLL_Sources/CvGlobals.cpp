@@ -4254,20 +4254,30 @@ int CvGlobals::getArrayLength(JIT_ARRAY_TYPES eType)
 		return getNumSpecialBuildingInfos();
 	case JIT_ARRAY_CIVIC:
 		return getNumCivicInfos();
+	case JIT_ARRAY_CIVIC_OPTION:
+		return getNumCivicOptionInfos();
+	case JIT_ARRAY_ERA:
+		return getNumEraInfos();
 	case JIT_ARRAY_EMPHASIZE:
 		return getNumEmphasizeInfos();
 	case JIT_ARRAY_EUROPE:
 		return getNumEuropeInfos();
 	case JIT_ARRAY_FATHER:
 		return getNumFatherInfos();
+	case JIT_ARRAY_HURRY:
+		return getNumHurryInfos();
 	case JIT_ARRAY_IMPROVEMENT:
 		return getNumImprovementInfos();
+	case JIT_ARRAY_LEADER_HEAD:
+		return getNumLeaderHeadInfos();
 	case JIT_ARRAY_PLAYER:
 		return MAX_PLAYERS;
 	case JIT_ARRAY_PROFESSION:
 		return getNumProfessionInfos();
 	case JIT_ARRAY_PROMOTION:
 		return getNumPromotionInfos();
+	case JIT_ARRAY_TRAIT:
+		return getNumTraitInfos();
 	case JIT_ARRAY_UNIT:
 		return getNumUnitInfos();
 	case JIT_ARRAY_UNIT_CLASS:
@@ -4309,6 +4319,12 @@ CvWString CvGlobals::getArrayType(JIT_ARRAY_TYPES eType, int iIndex)
 	case JIT_ARRAY_CIVIC:
 		szType = getCivicInfo((CivicTypes)iIndex).getType();
 		break;
+	case JIT_ARRAY_CIVIC_OPTION:
+		szType = getCivicOptionInfo((CivicOptionTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_ERA:
+		szType = getEraInfo((EraTypes)iIndex).getType();
+		break;
 	case JIT_ARRAY_EMPHASIZE:
 		szType = getEmphasizeInfo((EmphasizeTypes)iIndex).getType();
 		break;
@@ -4318,8 +4334,14 @@ CvWString CvGlobals::getArrayType(JIT_ARRAY_TYPES eType, int iIndex)
 	case JIT_ARRAY_FATHER:
 		szType = getFatherInfo((FatherTypes)iIndex).getType();
 		break;
+	case JIT_ARRAY_HURRY:
+		szType = getHurryInfo((HurryTypes)iIndex).getType();
+		break;
 	case JIT_ARRAY_IMPROVEMENT:
 		szType = getImprovementInfo((ImprovementTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_LEADER_HEAD:
+		szType = getLeaderHeadInfo((LeaderHeadTypes)iIndex).getType();
 		break;
 	case JIT_ARRAY_PLAYER:
 		break;
@@ -4328,6 +4350,9 @@ CvWString CvGlobals::getArrayType(JIT_ARRAY_TYPES eType, int iIndex)
 		break;
 	case JIT_ARRAY_PROMOTION:
 		szType = getPromotionInfo((PromotionTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_TRAIT:
+		szType = getTraitInfo((TraitTypes)iIndex).getType();
 		break;
 	case JIT_ARRAY_UNIT:
 		szType = getUnitInfo((UnitTypes)iIndex).getType();

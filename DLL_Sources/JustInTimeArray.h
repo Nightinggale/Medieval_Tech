@@ -141,6 +141,13 @@ public:
 };
 
 template<class T>
+class CivicOptionArray: public JustInTimeArray<T>
+{
+public:
+	CivicOptionArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_CIVIC_OPTION, eDefault){};
+};
+
+template<class T>
 class EuropeArray: public JustInTimeArray<T>
 {
 public:
@@ -152,6 +159,13 @@ class FatherArray: public JustInTimeArray<T>
 {
 public:
 	FatherArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_FATHER, eDefault){};
+};
+
+template<class T>
+class HurryArray: public JustInTimeArray<T>
+{
+public:
+	HurryArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_HURRY, eDefault){};
 };
 
 template<class T>
@@ -180,6 +194,13 @@ class PromotionArray: public JustInTimeArray<T>
 {
 public:
 	PromotionArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_PROMOTION, eDefault){};
+};
+
+template<class T>
+class TraitArray: public JustInTimeArray<T>
+{
+public:
+	TraitArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_TRAIT, eDefault){};
 };
 
 template<class T>

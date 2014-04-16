@@ -1746,11 +1746,15 @@ void postLoadGameFixes(int iFixCount)
 	/// PlotGroup - end - Nightinggale
 
 	/// unit plot cache - start - Nightinggale
-	// set the unit cache for all plots
 	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
 	{
 		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+
+		// set the unit cache
 		pLoopPlot->rebuildUnitCache();
+
+		// recalculate yield production cache
+		pLoopPlot->updateYield(false);
 	}
 	/// unit plot cache - end - Nightinggale
 

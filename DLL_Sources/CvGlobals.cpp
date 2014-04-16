@@ -4264,6 +4264,8 @@ int CvGlobals::getArrayLength(JIT_ARRAY_TYPES eType)
 		return getNumEuropeInfos();
 	case JIT_ARRAY_FATHER:
 		return getNumFatherInfos();
+	case JIT_ARRAY_FEATURE:
+		return getNumFeatureInfos();
 	case JIT_ARRAY_HURRY:
 		return getNumHurryInfos();
 	case JIT_ARRAY_IMPROVEMENT:
@@ -4276,6 +4278,10 @@ int CvGlobals::getArrayLength(JIT_ARRAY_TYPES eType)
 		return getNumProfessionInfos();
 	case JIT_ARRAY_PROMOTION:
 		return getNumPromotionInfos();
+	case JIT_ARRAY_ROUTE:
+		return getNumRouteInfos();
+	case JIT_ARRAY_TERRAIN:
+		return getNumTerrainInfos();
 	case JIT_ARRAY_TRAIT:
 		return getNumTraitInfos();
 	case JIT_ARRAY_UNIT:
@@ -4334,6 +4340,9 @@ CvWString CvGlobals::getArrayType(JIT_ARRAY_TYPES eType, int iIndex)
 	case JIT_ARRAY_FATHER:
 		szType = getFatherInfo((FatherTypes)iIndex).getType();
 		break;
+	case JIT_ARRAY_FEATURE:
+		szType = getFeatureInfo((FeatureTypes)iIndex).getType();
+		break;
 	case JIT_ARRAY_HURRY:
 		szType = getHurryInfo((HurryTypes)iIndex).getType();
 		break;
@@ -4350,6 +4359,12 @@ CvWString CvGlobals::getArrayType(JIT_ARRAY_TYPES eType, int iIndex)
 		break;
 	case JIT_ARRAY_PROMOTION:
 		szType = getPromotionInfo((PromotionTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_ROUTE:
+		szType = getRouteInfo((RouteTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_TERRAIN:
+		szType = getTerrainInfo((TerrainTypes)iIndex).getType();
 		break;
 	case JIT_ARRAY_TRAIT:
 		szType = getTraitInfo((TraitTypes)iIndex).getType();

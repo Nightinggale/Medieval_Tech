@@ -129,10 +129,13 @@ public:
 	void Read(EmphasizeTypes*       eVar) {Read(JIT_ARRAY_EMPHASIZE        , (int*) eVar);}
 	void Read(EuropeTypes*          eVar) {Read(JIT_ARRAY_EUROPE           , (int*) eVar);}
 	void Read(FatherTypes*          eVar) {Read(JIT_ARRAY_FATHER           , (int*) eVar);}
+	void Read(FeatureTypes*         eVar) {Read(JIT_ARRAY_FEATURE          , (int*) eVar);}
 	void Read(ImprovementTypes*     eVar) {Read(JIT_ARRAY_IMPROVEMENT      , (int*) eVar);}
 	void Read(LeaderHeadTypes*      eVar) {Read(JIT_ARRAY_LEADER_HEAD      , (int*) eVar);}
 	void Read(ProfessionTypes*      eVar) {Read(JIT_ARRAY_PROFESSION       , (int*) eVar);}
 	void Read(PromotionTypes*       eVar) {Read(JIT_ARRAY_PROMOTION        , (int*) eVar);}
+	void Read(RouteTypes*           eVar) {Read(JIT_ARRAY_ROUTE            , (int*) eVar);}
+	void Read(TerrainTypes*         eVar) {Read(JIT_ARRAY_TERRAIN          , (int*) eVar);}
 	void Read(UnitTypes*            eVar) {Read(JIT_ARRAY_UNIT             , (int*) eVar);}
 	void Read(UnitClassTypes*       eVar) {Read(JIT_ARRAY_UNIT_CLASS       , (int*) eVar);}
 	void Read(UnitCombatTypes*      eVar) {Read(JIT_ARRAY_UNIT_COMBAT      , (int*) eVar);}

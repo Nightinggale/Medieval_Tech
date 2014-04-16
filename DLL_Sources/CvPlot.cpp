@@ -7590,23 +7590,32 @@ void CvPlot::read(FDataStreamBase* pStream)
 	// m_bLayoutStateWorked not saved
 	// m_bImpassable not saved
 
+	int iBuffer;
+
 	pStream->Read(&m_eOwner);
 	pStream->Read(&m_ePlotType);
-	pStream->Read(&m_eTerrainType);
-	pStream->Read(&m_eFeatureType);
-	pStream->Read(&m_eBonusType);
-	pStream->Read(&m_eImprovementType);
-	pStream->Read(&m_eRouteType);
+	pStream->Read((TerrainTypes*)&iBuffer);
+	m_eTerrainType = iBuffer;
+	pStream->Read((FeatureTypes*)&iBuffer);
+	m_eFeatureType = iBuffer;
+	pStream->Read((BonusTypes*)&iBuffer);
+	m_eBonusType = iBuffer;
+	pStream->Read((ImprovementTypes*)&iBuffer);
+	m_eImprovementType = iBuffer;
+	pStream->Read((RouteTypes*)&iBuffer);
+	m_eRouteType = iBuffer;
 	pStream->Read(&m_eRiverNSDirection);
 	pStream->Read(&m_eRiverWEDirection);
-	pStream->Read(&m_eEurope);
+	pStream->Read((EuropeTypes*)&iBuffer);
+	m_eEurope = iBuffer;
 	updateImpassable();
 
 	m_plotCity.read(pStream);
 	m_workingCity.read(pStream);
 	m_workingCityOverride.read(pStream);
 
-	pStream->Read(NUM_YIELD_TYPES, m_aiYield);
+	// m_aiYield recalculated on load
+	//pStream->Read(NUM_YIELD_TYPES, m_aiYield);
 
 	/// PlotGroup - start - Nightinggale
 	SAFE_DELETE_ARRAY(m_aiPlotGroup);
@@ -7814,22 +7823,31 @@ void CvPlot::write(FDataStreamBase* pStream)
 	// m_bLayoutStateWorked not saved
 	// m_bImpassable not saved
 
+	int iBuffer;
+
 	pStream->Write(m_eOwner);
 	pStream->Write(m_ePlotType);
-	pStream->Write(m_eTerrainType);
-	pStream->Write(m_eFeatureType);
-	pStream->Write(m_eBonusType);
-	pStream->Write(m_eImprovementType);
-	pStream->Write(m_eRouteType);
+	iBuffer = m_eTerrainType;
+	pStream->Write(iBuffer);
+	iBuffer = m_eFeatureType;
+	pStream->Write(iBuffer);
+	iBuffer = m_eBonusType;
+	pStream->Write(iBuffer);
+	iBuffer = m_eImprovementType;
+	pStream->Write(iBuffer);
+	iBuffer = m_eRouteType;
+	pStream->Write(iBuffer);
 	pStream->Write(m_eRiverNSDirection);
 	pStream->Write(m_eRiverWEDirection);
-	pStream->Write(m_eEurope);
+	iBuffer = m_eEurope;
+	pStream->Write(iBuffer);
 
 	m_plotCity.write(pStream);
 	m_workingCity.write(pStream);
 	m_workingCityOverride.write(pStream);
 
-	pStream->Write(NUM_YIELD_TYPES, m_aiYield);
+	// m_aiYield recalculated on load
+	//pStream->Write(NUM_YIELD_TYPES, m_aiYield);
 
 	/// PlotGroup - start - Nightinggale
 	if (NULL == m_aiPlotGroup)

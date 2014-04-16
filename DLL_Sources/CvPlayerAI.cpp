@@ -69,6 +69,8 @@ DllExport CvPlayerAI& CvPlayerAI::getPlayerNonInl(PlayerTypes ePlayer)
 // Public Functions...
 
 CvPlayerAI::CvPlayerAI()
+	: m_ja_iBestWorkedYieldPlots(-1)
+	, m_ja_iBestUnworkedYieldPlots(-1)
 {
 	m_aiNumTrainAIUnits = new int[NUM_UNITAI_TYPES];
 	m_aiNumAIUnits = new int[NUM_UNITAI_TYPES];
@@ -93,17 +95,9 @@ CvPlayerAI::CvPlayerAI()
 		m_aaiMemoryCount[i] = new int[NUM_MEMORY_TYPES];
 	}
 
-	m_aiAverageYieldMultiplier = new int[NUM_YIELD_TYPES];
-
-	m_aiUnitClassWeights = NULL;
-	m_aiUnitCombatWeights = NULL;
 	m_aiEmotions = new int[NUM_EMOTION_TYPES];
 	m_aiStrategyStartedTurn = new int[NUM_STRATEGY_TYPES];
 	m_aiStrategyData = new int[NUM_STRATEGY_TYPES];
-
-	m_aiBestWorkedYieldPlots = new int[NUM_YIELD_TYPES];
-	m_aiBestUnworkedYieldPlots = new int[NUM_YIELD_TYPES];
-	m_aiYieldValuesTimes100 = new int[NUM_YIELD_TYPES];
 
 	m_aiCloseBordersAttitudeCache = new int[MAX_PLAYERS];
 	m_aiStolenPlotsAttitudeCache = new int[MAX_PLAYERS];
@@ -140,7 +134,6 @@ CvPlayerAI::~CvPlayerAI()
 	}
 	SAFE_DELETE_ARRAY(m_aaiMemoryCount);
 
-	SAFE_DELETE_ARRAY(m_aiAverageYieldMultiplier);
 	SAFE_DELETE_ARRAY(m_aiCloseBordersAttitudeCache);
 	SAFE_DELETE_ARRAY(m_aiStolenPlotsAttitudeCache);
 	///TKs Med
@@ -149,10 +142,6 @@ CvPlayerAI::~CvPlayerAI()
 	SAFE_DELETE_ARRAY(m_aiEmotions);
 	SAFE_DELETE_ARRAY(m_aiStrategyStartedTurn);
 	SAFE_DELETE_ARRAY(m_aiStrategyData);
-
-	SAFE_DELETE_ARRAY(m_aiBestWorkedYieldPlots);
-	SAFE_DELETE_ARRAY(m_aiBestUnworkedYieldPlots);
-	SAFE_DELETE_ARRAY(m_aiYieldValuesTimes100);
 }
 
 
@@ -171,8 +160,8 @@ void CvPlayerAI::AI_init()
 
 void CvPlayerAI::AI_uninit()
 {
-	SAFE_DELETE_ARRAY(m_aiUnitClassWeights);
-	SAFE_DELETE_ARRAY(m_aiUnitCombatWeights);
+	m_ja_iUnitClassWeights.resetContent();
+	m_ja_iUnitCombatWeights.resetContent();
 }
 
 
@@ -234,13 +223,11 @@ void CvPlayerAI::AI_reset()
 		}
 	}
 
-	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
-	{
-		m_aiAverageYieldMultiplier[iI] = 0;
-		m_aiBestWorkedYieldPlots[iI] = -1;
-		m_aiBestUnworkedYieldPlots[iI] = -1;
-		m_aiYieldValuesTimes100[iI] = 0;
-	}
+	m_ja_iAverageYieldMultiplier.resetContent();
+	m_ja_iBestWorkedYieldPlots.resetContent();
+	m_ja_iBestUnworkedYieldPlots.resetContent();
+	m_ja_iYieldValuesTimes100.resetContent();
+
 	m_iAveragesCacheTurn = -1;
 
 	m_iTurnLastProductionDirty = -1;
@@ -253,19 +240,8 @@ void CvPlayerAI::AI_reset()
 
 	m_aiAICitySites.clear();
 
-	FAssert(m_aiUnitClassWeights == NULL);
-	m_aiUnitClassWeights = new int[GC.getNumUnitClassInfos()];
-	for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
-	{
-		m_aiUnitClassWeights[iI] = 0;
-	}
-
-	FAssert(m_aiUnitCombatWeights == NULL);
-	m_aiUnitCombatWeights = new int[GC.getNumUnitCombatInfos()];
-	for (iI = 0; iI < GC.getNumUnitCombatInfos(); iI++)
-	{
-		m_aiUnitCombatWeights[iI] = 0;
-	}
+	m_ja_iUnitClassWeights.resetContent();
+	m_ja_iUnitCombatWeights.resetContent();
 
 	for (iI = 0; iI < MAX_PLAYERS; iI++)
 	{
@@ -9018,7 +8994,7 @@ int CvPlayerAI::AI_yieldValue(YieldTypes eYield, bool bProduce, int iAmount)
 	}
 	else
 	{
-		iValue += m_aiYieldValuesTimes100[eYield];
+		iValue += m_ja_iYieldValuesTimes100.get(eYield);
 	}
 
 	iValue *= AI_yieldWeight(eYield);
@@ -9267,13 +9243,13 @@ void CvPlayerAI::AI_updateYieldValues()
 				FAssert(false);
 		}
 #endif
-		m_aiYieldValuesTimes100[i] = 100 * iValue;
+		m_ja_iYieldValuesTimes100.set(100 * iValue, i);
 	}
-	int iCrossValue = m_aiYieldValuesTimes100[YIELD_FOOD] * getGrowthThreshold(1) / (50 + immigrationThreshold() * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent() / 100);
+	int iCrossValue = m_ja_iYieldValuesTimes100.get(YIELD_FOOD) * getGrowthThreshold(1) / (50 + immigrationThreshold() * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent() / 100);
 	iCrossValue /= 2;
 
 	//Crosses
-	m_aiYieldValuesTimes100[YIELD_CROSSES] = std::max(m_aiYieldValuesTimes100[YIELD_CROSSES], iCrossValue);
+	m_ja_iYieldValuesTimes100.keepMax(iCrossValue, YIELD_CROSSES);
 
 	//The function is quite simple. Iterate over every citizen which has input yield.
 	//Calculate the value of their output yield, and assign half of that to the input.
@@ -9305,10 +9281,10 @@ void CvPlayerAI::AI_updateYieldValues()
 							iInput = 1;
 						}
 						///TKe
-						int iProfit = (m_aiYieldValuesTimes100[kProfession.getYieldsProduced(0)] * iOutput);
+						int iProfit = (m_ja_iYieldValuesTimes100.get(kProfession.getYieldsProduced(0)) * iOutput);
 						// MultipleYieldsProduced End
 						int iInputValue = iProfit / (2 * iInput); //Assign 50% of the yield value to the input.
-						m_aiYieldValuesTimes100[kProfession.getYieldsConsumed(0, getID())] = std::max(iInputValue, m_aiYieldValuesTimes100[kProfession.getYieldsConsumed(0, getID())]);
+						m_ja_iYieldValuesTimes100.keepMax(iInputValue, kProfession.getYieldsConsumed(0, getID()));
 					}
 				}
 				ProfessionTypes eIdealProfesion = AI_idealProfessionForUnit(pLoopUnit->getUnitType());
@@ -9322,8 +9298,8 @@ void CvPlayerAI::AI_updateYieldValues()
 						YieldTypes eYieldProduced = (YieldTypes)kIdealPro.getYieldsProduced(0);
 						FAssert(kIdealPro.getYieldsProduced(0) != NO_YIELD);
 						// MultipleYieldsProduced End
-						int iInputValue = m_aiYieldValuesTimes100[eYieldProduced] / 2;
-						m_aiYieldValuesTimes100[eYieldConsumed] = std::max(iInputValue, m_aiYieldValuesTimes100[eYieldConsumed]);
+						int iInputValue = m_ja_iYieldValuesTimes100.get(eYieldProduced) / 2;
+						m_ja_iYieldValuesTimes100.keepMax(iInputValue, eYieldConsumed);
 					}
 				}
 			}
@@ -11394,6 +11370,11 @@ void CvPlayerAI::read(FDataStreamBase* pStream)
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
 
+	/// JIT array save - start - Nightinggale
+	int iSavedNumUnitAItypes = 0;
+	pStream->Read(&iSavedNumUnitAItypes);
+	/// JIT array save - end - Nightinggale
+	
 	if (uiFlag > 0)
 	{
 		uint iSize;
@@ -11412,30 +11393,30 @@ void CvPlayerAI::read(FDataStreamBase* pStream)
 
 	pStream->Read(&m_iAveragesCacheTurn);
 
-	pStream->Read((int*)&m_eNextBuyUnit);
+	pStream->Read(&m_eNextBuyUnit);
 	pStream->Read((int*)&m_eNextBuyUnitAI);
 	pStream->Read(&m_iNextBuyUnitValue);
-	pStream->Read((int*)&m_eNextBuyProfession);
-	pStream->Read((int*)&m_eNextBuyProfessionUnit);
+	pStream->Read(&m_eNextBuyProfession);
+	pStream->Read(&m_eNextBuyProfessionUnit);
 	pStream->Read((int*)&m_eNextBuyProfessionAI);
 	pStream->Read(&m_iNextBuyProfessionValue);
 
 	pStream->Read(&m_iTotalIncome);
 	pStream->Read(&m_iHurrySpending);
 
-	pStream->Read(NUM_YIELD_TYPES, m_aiAverageYieldMultiplier);
-	pStream->Read(NUM_YIELD_TYPES, m_aiBestWorkedYieldPlots);
-	pStream->Read(NUM_YIELD_TYPES, m_aiBestUnworkedYieldPlots);
-	pStream->Read(NUM_YIELD_TYPES, m_aiYieldValuesTimes100);
+	m_ja_iAverageYieldMultiplier.read(pStream);
+	m_ja_iBestWorkedYieldPlots.read(pStream);
+	m_ja_iBestUnworkedYieldPlots.read(pStream);
+	m_ja_iYieldValuesTimes100.read(pStream);
 
 	pStream->Read(&m_iUpgradeUnitsCacheTurn);
 	pStream->Read(&m_iUpgradeUnitsCachedExpThreshold);
 	pStream->Read(&m_iUpgradeUnitsCachedGold);
 
-	pStream->Read(NUM_UNITAI_TYPES, m_aiNumTrainAIUnits);
-	pStream->Read(NUM_UNITAI_TYPES, m_aiNumAIUnits);
-	pStream->Read(NUM_UNITAI_TYPES, m_aiNumRetiredAIUnits);
-	pStream->Read(NUM_UNITAI_TYPES, m_aiUnitAIStrategyWeights);
+	pStream->Read(iSavedNumUnitAItypes, m_aiNumTrainAIUnits);
+	pStream->Read(iSavedNumUnitAItypes, m_aiNumAIUnits);
+	pStream->Read(iSavedNumUnitAItypes, m_aiNumRetiredAIUnits);
+	pStream->Read(iSavedNumUnitAItypes, m_aiUnitAIStrategyWeights);
 	pStream->Read(MAX_PLAYERS, m_aiPeacetimeTradeValue);
 	pStream->Read(MAX_PLAYERS, m_aiPeacetimeGrantValue);
 	pStream->Read(MAX_PLAYERS, m_aiGoldTradedTo);
@@ -11479,8 +11460,8 @@ void CvPlayerAI::read(FDataStreamBase* pStream)
 		}
 	}
 
-	pStream->Read(GC.getNumUnitClassInfos(), m_aiUnitClassWeights);
-	pStream->Read(GC.getNumUnitCombatInfos(), m_aiUnitCombatWeights);
+	m_ja_iUnitClassWeights.read(pStream);
+	m_ja_iUnitCombatWeights.read(pStream);
 	pStream->Read(MAX_PLAYERS, m_aiCloseBordersAttitudeCache);
 	pStream->Read(MAX_PLAYERS, m_aiStolenPlotsAttitudeCache);
 	///TKs Med
@@ -11522,6 +11503,10 @@ void CvPlayerAI::write(FDataStreamBase* pStream)
 	uint uiFlag=4;
 	pStream->Write(uiFlag);		// flag for expansion
 
+	/// JIT array save - start - Nightinggale
+	pStream->Write(NUM_UNITAI_TYPES);
+	/// JIT array save - end - Nightinggale
+
 	pStream->Write(m_distanceMap.size());
 	if (!m_distanceMap.empty())
 	{
@@ -11545,10 +11530,10 @@ void CvPlayerAI::write(FDataStreamBase* pStream)
 	pStream->Write(m_iTotalIncome);
 	pStream->Write(m_iHurrySpending);
 
-	pStream->Write(NUM_YIELD_TYPES, m_aiAverageYieldMultiplier);
-	pStream->Write(NUM_YIELD_TYPES, m_aiBestWorkedYieldPlots);
-	pStream->Write(NUM_YIELD_TYPES, m_aiBestUnworkedYieldPlots);
-	pStream->Write(NUM_YIELD_TYPES, m_aiYieldValuesTimes100);
+	m_ja_iAverageYieldMultiplier.write(pStream);
+	m_ja_iBestWorkedYieldPlots.write(pStream);
+	m_ja_iBestUnworkedYieldPlots.write(pStream);
+	m_ja_iYieldValuesTimes100.write(pStream);
 
 	pStream->Write(m_iUpgradeUnitsCacheTurn);
 	pStream->Write(m_iUpgradeUnitsCachedExpThreshold);
@@ -11594,8 +11579,8 @@ void CvPlayerAI::write(FDataStreamBase* pStream)
 		pStream->Write(m_unitPriorityHeap.size(), &m_unitPriorityHeap[0]);
 	}
 
-	pStream->Write(GC.getNumUnitClassInfos(), m_aiUnitClassWeights);
-	pStream->Write(GC.getNumUnitCombatInfos(), m_aiUnitCombatWeights);
+	m_ja_iUnitClassWeights.write(pStream);
+	m_ja_iUnitCombatWeights.write(pStream);
 	pStream->Write(MAX_PLAYERS, m_aiCloseBordersAttitudeCache);
 	pStream->Write(MAX_PLAYERS, m_aiStolenPlotsAttitudeCache);
 	///TKs MEd
@@ -14284,12 +14269,12 @@ int CvPlayerAI::AI_calculateTotalBombard(DomainTypes eDomain)
 
 int CvPlayerAI::AI_getUnitClassWeight(UnitClassTypes eUnitClass)
 {
-	return m_aiUnitClassWeights[eUnitClass] / 100;
+	return m_ja_iUnitClassWeights.get(eUnitClass) / 100;
 }
 
 int CvPlayerAI::AI_getUnitCombatWeight(UnitCombatTypes eUnitCombat)
 {
-	return m_aiUnitCombatWeights[eUnitCombat] / 100;
+	return m_ja_iUnitCombatWeights.get(eUnitCombat) / 100;
 }
 
 void CvPlayerAI::AI_doEnemyUnitData()
@@ -14352,7 +14337,7 @@ void CvPlayerAI::AI_doEnemyUnitData()
 						}
 					}
 
-					if (m_aiUnitClassWeights[pLoopUnit->getUnitClassType()] == 0)
+					if (m_ja_iUnitClassWeights.get(pLoopUnit->getUnitClassType()) == 0)
 					{
 						iUnitValue *= 4;
 					}
@@ -14375,10 +14360,12 @@ void CvPlayerAI::AI_doEnemyUnitData()
 	//Decay
 	for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
 	{
-		m_aiUnitClassWeights[iI] -= 100;
-		m_aiUnitClassWeights[iI] *= 3;
-		m_aiUnitClassWeights[iI] /= 4;
-		m_aiUnitClassWeights[iI] = std::max(0, m_aiUnitClassWeights[iI]);
+		int iWeight = m_ja_iUnitClassWeights.get(iI);
+		iWeight -= 100;
+		iWeight *= 3;
+		iWeight /= 4;
+		iWeight = std::max(0, iWeight);
+		m_ja_iUnitClassWeights.set(iWeight, iI);
 	}
 
 	for (iI = 0; iI < GC.getNumUnitInfos(); iI++)
@@ -14388,34 +14375,31 @@ void CvPlayerAI::AI_doEnemyUnitData()
 			UnitTypes eLoopUnit = (UnitTypes)iI;
 			aiUnitCounts[iI] = 0;
 			FAssert(aiDomainSums[GC.getUnitInfo(eLoopUnit).getDomainType()] > 0);
-			m_aiUnitClassWeights[GC.getUnitInfo(eLoopUnit).getUnitClassType()] += (5000 * aiUnitCounts[iI]) / std::max(1, aiDomainSums[GC.getUnitInfo(eLoopUnit).getDomainType()]);
+			int iAddedWeight = (5000 * aiUnitCounts[iI]) / std::max(1, aiDomainSums[GC.getUnitInfo(eLoopUnit).getDomainType()]);
+			m_ja_iUnitClassWeights.add(iAddedWeight, GC.getUnitInfo(eLoopUnit).getUnitClassType());
 		}
 	}
 
-	for (iI = 0; iI < GC.getNumUnitCombatInfos(); ++iI)
-	{
-		m_aiUnitCombatWeights[iI] = 0;
-	}
+	m_ja_iUnitCombatWeights.resetContent();
 
 	for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
 	{
-		if (m_aiUnitClassWeights[iI] > 0)
+		if (m_ja_iUnitClassWeights.get(iI) > 0)
 		{
 			UnitTypes eUnit = (UnitTypes)GC.getUnitClassInfo((UnitClassTypes)iI).getDefaultUnitIndex();
-			m_aiUnitCombatWeights[GC.getUnitInfo(eUnit).getUnitCombatType()] += m_aiUnitClassWeights[iI];
-
+			m_ja_iUnitCombatWeights.add(m_ja_iUnitClassWeights.get(iI), GC.getUnitInfo(eUnit).getUnitCombatType());
 		}
 	}
 
 	for (iI = 0; iI < GC.getNumUnitCombatInfos(); iI++)
 	{
-		if (m_aiUnitCombatWeights[iI] > 25)
+		if (m_ja_iUnitCombatWeights.get(iI) > 25)
 		{
-			m_aiUnitCombatWeights[iI] += 2500;
+			m_ja_iUnitCombatWeights.add(2500, iI);
 		}
-		else if (m_aiUnitCombatWeights[iI] > 0)
+		else if (m_ja_iUnitCombatWeights.get(iI) > 0)
 		{
-			m_aiUnitCombatWeights[iI] += 1000;
+			m_ja_iUnitCombatWeights.add(1000, iI);
 		}
 	}
 }
@@ -14431,7 +14415,7 @@ int CvPlayerAI::AI_calculateUnitAIViability(UnitAITypes eUnitAI, DomainTypes eDo
 		CvUnitInfo& kUnitInfo = GC.getUnitInfo((UnitTypes)iI);
 		if (kUnitInfo.getDomainType() == eDomain)
 		{
-			if (m_aiUnitClassWeights[iI] > 0)
+			if (m_ja_iUnitClassWeights.get(iI) > 0)
 			{
 				if (kUnitInfo.getUnitAIType(eUnitAI))
 				{
@@ -15104,11 +15088,11 @@ void CvPlayerAI::AI_updateBestYieldPlots()
 	int aiBestWorkedYield[NUM_YIELD_TYPES];
 	int aiBestUnworkedYield[NUM_YIELD_TYPES];
 
+	m_ja_iBestWorkedYieldPlots.resetContent();
+	m_ja_iBestUnworkedYieldPlots.resetContent();
+
 	for (int i = 0; i < NUM_YIELD_TYPES; ++i)
 	{
-		m_aiBestWorkedYieldPlots[i] = -1;
-		m_aiBestUnworkedYieldPlots[i] = -1;
-
 		aiBestWorkedYield[i] = 0;
 		aiBestUnworkedYield[i] = 0;
 	}
@@ -15129,7 +15113,7 @@ void CvPlayerAI::AI_updateBestYieldPlots()
 						if (iPlotYield > aiBestWorkedYield[iYield])
 						{
 							aiBestWorkedYield[iYield] = iPlotYield;
-							m_aiBestWorkedYieldPlots[iYield] = i;
+							m_ja_iBestWorkedYieldPlots.set(i, iYield);
 						}
 					}
 					else
@@ -15137,7 +15121,7 @@ void CvPlayerAI::AI_updateBestYieldPlots()
 						if (iPlotYield > aiBestUnworkedYield[iYield])
 						{
 							aiBestUnworkedYield[iYield] = iPlotYield;
-							m_aiBestUnworkedYieldPlots[iYield] = i;
+							m_ja_iBestUnworkedYieldPlots.set(i, iYield);
 						}
 					}
 				}
@@ -15148,20 +15132,14 @@ void CvPlayerAI::AI_updateBestYieldPlots()
 
 CvPlot* CvPlayerAI::AI_getBestWorkedYieldPlot(YieldTypes eYield)
 {
-	FAssertMsg(eYield > NO_YIELD, "Index out of bounds");
-	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
-
 	//Automatically returns NULL, if -1.
-	return GC.getMapINLINE().plotByIndexINLINE(m_aiBestWorkedYieldPlots[eYield]);
+	return GC.getMapINLINE().plotByIndexINLINE(m_ja_iBestWorkedYieldPlots.get(eYield));
 }
 
 CvPlot* CvPlayerAI::AI_getBestUnworkedYieldPlot(YieldTypes eYield)
 {
-	FAssertMsg(eYield > NO_YIELD, "Index out of bounds");
-	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
-
 	//Automatically returns NULL, if -1.
-	return GC.getMapINLINE().plotByIndexINLINE(m_aiBestUnworkedYieldPlots[eYield]);
+	return GC.getMapINLINE().plotByIndexINLINE(m_ja_iBestUnworkedYieldPlots.get(eYield));
 }
 
 int CvPlayerAI::AI_getBestPlotYield(YieldTypes eYield)

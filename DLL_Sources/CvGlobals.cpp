@@ -4266,6 +4266,8 @@ int CvGlobals::getArrayLength(JIT_ARRAY_TYPES eType)
 		return getNumFatherInfos();
 	case JIT_ARRAY_FEATURE:
 		return getNumFeatureInfos();
+	case JIT_ARRAY_HANDICAP:
+		return getNumHandicapInfos();
 	case JIT_ARRAY_HURRY:
 		return getNumHurryInfos();
 	case JIT_ARRAY_IMPROVEMENT:
@@ -4342,6 +4344,9 @@ CvWString CvGlobals::getArrayType(JIT_ARRAY_TYPES eType, int iIndex)
 		break;
 	case JIT_ARRAY_FEATURE:
 		szType = getFeatureInfo((FeatureTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_HANDICAP:
+		szType = getHandicapInfo((HandicapTypes)iIndex).getType();
 		break;
 	case JIT_ARRAY_HURRY:
 		szType = getHurryInfo((HurryTypes)iIndex).getType();

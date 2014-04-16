@@ -6558,7 +6558,7 @@ void CvGame::read(FDataStreamBase* pStream)
 		pStream->Read(&m_bMaxTurnsExtended);
 	}
 
-	pStream->Read((int*)&m_eHandicap);
+	pStream->Read(&m_eHandicap);
 	pStream->Read((int*)&m_ePausePlayer);
 	// < JAnimals Mod Start >
 	pStream->Read((int*)&m_eBarbarianPlayer);

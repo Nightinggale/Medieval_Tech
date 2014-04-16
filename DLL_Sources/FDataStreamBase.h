@@ -130,6 +130,7 @@ public:
 	void Read(EuropeTypes*          eVar) {Read(JIT_ARRAY_EUROPE           , (int*) eVar);}
 	void Read(FatherTypes*          eVar) {Read(JIT_ARRAY_FATHER           , (int*) eVar);}
 	void Read(FeatureTypes*         eVar) {Read(JIT_ARRAY_FEATURE          , (int*) eVar);}
+	void Read(HandicapTypes*        eVar) {Read(JIT_ARRAY_HANDICAP         , (int*) eVar);}
 	void Read(ImprovementTypes*     eVar) {Read(JIT_ARRAY_IMPROVEMENT      , (int*) eVar);}
 	void Read(LeaderHeadTypes*      eVar) {Read(JIT_ARRAY_LEADER_HEAD      , (int*) eVar);}
 	void Read(ProfessionTypes*      eVar) {Read(JIT_ARRAY_PROFESSION       , (int*) eVar);}

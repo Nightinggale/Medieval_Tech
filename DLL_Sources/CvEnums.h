@@ -1305,6 +1305,7 @@ enum DllExport CensureType
 ///TKe
 enum DllExport UnitAITypes
 {
+	// add to end for max savegame compatibility
 	NO_UNITAI = -1,
 
 	UNITAI_UNKNOWN,
@@ -1358,6 +1359,7 @@ enum DllExport ProbabilityTypes
 
 enum DllExport ActivityTypes
 {
+	// add to end for max savegame compatibility
 	NO_ACTIVITY = -1,
 
 	ACTIVITY_AWAKE,
@@ -1378,6 +1380,7 @@ enum DllExport ActivityTypes
 
 enum DllExport AutomateTypes
 {
+	// add to end for max savegame compatibility
 	NO_AUTOMATE = -1,
 
 	AUTOMATE_BUILD,
@@ -1446,6 +1449,7 @@ enum DllExport MissionTypes
 
 enum DllExport MissionAITypes
 {
+	// add to end for max savegame compatibility
 	NO_MISSIONAI = -1,
 
 	MISSIONAI_SHADOW,
@@ -2809,6 +2813,7 @@ enum DllExport UnitTravelStates
 
 enum DllExport UnitAIStates
 {
+	// add to end for max savegame compatibility
 	NO_UNITAI_STATE = -1,
 
 	UNITAI_STATE_DEFAULT,
@@ -3300,6 +3305,7 @@ enum DllExport XMLconstantTypes
 /// JIT array save - start - Nightinggale
 enum JIT_ARRAY_TYPES
 {
+	// add to end for max savegame compatibility
 	JIT_ARRAY_BONUS = 0,
 	JIT_ARRAY_BUILDING,
 	JIT_ARRAY_BUILDING_CLASS,

@@ -13442,7 +13442,7 @@ void CvUnit::read(FDataStreamBase* pStream)
     ///TKs Med **TradeMarket**
 	if (uiFlag > 0)
 	{
-		pStream->Read((int*)&m_eUnitTradeMarket);
+		pStream->Read(&m_eUnitTradeMarket);
 	}
 	//else
 	//{
@@ -13480,12 +13480,12 @@ void CvUnit::read(FDataStreamBase* pStream)
 	pStream->Read(&m_eUnitType);
 	FAssert(NO_UNIT != m_eUnitType);
 	m_pUnitInfo = (NO_UNIT != m_eUnitType) ? &GC.getUnitInfo(m_eUnitType) : NULL;
-	pStream->Read((int*)&m_eLeaderUnitType);
+	pStream->Read(&m_eLeaderUnitType);
 
 
 	m_combatUnit.read(pStream);
 	///TKs Invention Core Mod v 1.0
-	pStream->Read((int*)&m_ConvertToUnit);
+	pStream->Read(&m_ConvertToUnit);
 	///TKe
 	pStream->Read(&m_iPostCombatPlotIndex);
 	m_transportUnit.read(pStream);

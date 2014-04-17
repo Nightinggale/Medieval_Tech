@@ -201,7 +201,7 @@ void CvTradeRoute::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iId);
 	m_kSourceCity.read(pStream);
 	m_kDestinationCity.read(pStream);
-	pStream->Read((int*) &m_eYield);
+	pStream->Read(&m_eYield);
 }
 
 void CvTradeRoute::write(FDataStreamBase* pStream)

@@ -15556,8 +15556,8 @@ void CvUnitAI::read(FDataStreamBase* pStream)
 	}
 	pStream->Read((int*)&m_eUnitAIType);
 	pStream->Read((int*)&m_eUnitAIState);
-	pStream->Read((int*)&m_eOldProfession);
-	pStream->Read((int*)&m_eIdealProfessionCache);
+	pStream->Read(&m_eOldProfession);
+	pStream->Read(&m_eIdealProfessionCache);
 	pStream->Read(&m_iAutomatedAbortTurn);
 }
 

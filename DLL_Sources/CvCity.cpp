@@ -460,6 +460,7 @@ void CvCity::uninit()
 	}
 	m_aPopulationUnits.clear();
 	//Tks Civics
+	// TODO remove this code
 	for (uint i = 0; i < m_aNetworkCityIDs.size(); ++i)
 	{
 		SAFE_DELETE(m_aNetworkCityIDs[i]);
@@ -7777,7 +7778,8 @@ void CvCity::doYields()
 				int iExcess = getYieldStored(eYield) - getMaxYieldCapacity(eYield);
 				///Tke
 
-				if (isMarket(eYield) && getYieldStored(eYield) >= (getMaintainLevel(eYield) + 1) && GET_PLAYER(getOwnerINLINE()).getParent() != NO_PLAYER)
+				//if (isMarket(eYield) && getYieldStored(eYield) >= (getMaintainLevel(eYield) + 1) && GET_PLAYER(getOwnerINLINE()).getParent() != NO_PLAYER)
+				if (!isCustomHouseNeverSell(eYield) && getYieldStored(eYield) >= (getMaintainLevel(eYield) + 1) && GET_PLAYER(getOwnerINLINE()).getParent() != NO_PLAYER)
 				{
                     int iLoss = std::max(GC.getXMLval(XML_CITY_YIELD_DECAY_PERCENT) * getYieldStored(eYield) / 100, GC.getXMLval(XML_MIN_CITY_YIELD_DECAY));
 
@@ -7792,7 +7794,9 @@ void CvCity::doYields()
                     //int iProfit = getOverflowYieldSellPercent() * GET_PLAYER(getOwnerINLINE()).getSellToEuropeProfit(eYield, iLoss) / 100;
                     //int iAutoSellProfit = getYieldAutoSellPercent(eYield) * GET_PLAYER(getOwnerINLINE()).getSellToEuropeProfit(eYield, iLoss) / 100;
                     int iProfit = getOverflowYieldSellPercent() * iPrice / 100;
-                    int iAutoSellProfit = getYieldAutoSellPercent(eYield) * iPrice / 100;
+
+                    //int iAutoSellProfit = getYieldAutoSellPercent(eYield) * iPrice / 100;
+					int iAutoSellProfit = 50 * iPrice / 100;
                     //if (iAutoSellProfit > 0)
                     //{  /// Add goods sold city prosperity bonus
                         //int iProsperity = calculateNetYield(YIELD_CROSSES) + (calculateNetYield(YIELD_BELLS) + calculateNetYield(YIELD_EDUCATION)) / 2;
@@ -8961,28 +8965,39 @@ void CvCity::getCityBillboardSizeIconColors(NiColorA& kDotColor, NiColorA& kText
 
 	if ((getTeam() == GC.getGameINLINE().getActiveTeam()))
 	{
+		//TKs Med
+		if (getMaxCityPop() == getPopulation())
+		{
+			NiColorA kMaxPop(1,.30f,.30f,1);
+			kTextColor = kMaxPop;
+		}
+		else
+		{
+			kTextColor = kBlack;
+		}
+		
 		if (foodDifference() < 0)
 		{
 			if ((foodDifference() == -1) && (getFood() >= ((75 * growthThreshold()) / 100)))
 			{
 				kDotColor = kStagnant;
-				kTextColor = kBlack;
+				//kTextColor = kBlack;
 			}
 			else
 			{
 				kDotColor = kShrinking;
-				kTextColor = kBlack;
+				//kTextColor = kBlack;
 			}
 		}
 		else if (foodDifference() > 0)
 		{
 			kDotColor = kGrowing;
-			kTextColor = kBlack;
+			//kTextColor = kBlack;
 		}
 		else if (foodDifference() == 0)
 		{
 			kDotColor = kStagnant;
-			kTextColor = kBlack;
+			//kTextColor = kBlack;
 		}
 	}
 	else
@@ -8992,7 +9007,7 @@ void CvCity::getCityBillboardSizeIconColors(NiColorA& kDotColor, NiColorA& kText
 		kTextColor = kPlayerSecondaryColor;
 	}
 }
-
+//Tke
 const TCHAR* CvCity::getCityBillboardProductionIcon() const
 {
     ///TKs Med

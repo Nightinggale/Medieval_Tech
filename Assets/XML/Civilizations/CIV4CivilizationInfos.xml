@@ -92,7 +92,7 @@
 					<FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_VETERAN</UnitClassType>
+					<UnitClassType>UNITCLASS_NOBLEMAN</UnitClassType>
 					<FreeUnitProfession>PROFESSION_INFANTRY1</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
@@ -320,7 +320,7 @@
 					<FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+					<UnitClassType>UNITCLASS_NOBLEMAN</UnitClassType>
 					<FreeUnitProfession>PROFESSION_INFANTRY1</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
@@ -517,7 +517,7 @@
 					<FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_VETERAN</UnitClassType>
+					<UnitClassType>UNITCLASS_NOBLEMAN</UnitClassType>
 					<FreeUnitProfession>PROFESSION_INFANTRY1</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
@@ -761,7 +761,7 @@
 					<FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_VETERAN</UnitClassType>
+					<UnitClassType>UNITCLASS_NOBLEMAN</UnitClassType>
 					<FreeUnitProfession>PROFESSION_INFANTRY1</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
@@ -958,7 +958,7 @@
 					<FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_VETERAN</UnitClassType>
+					<UnitClassType>UNITCLASS_NOBLEMAN</UnitClassType>
 					<FreeUnitProfession>PROFESSION_INFANTRY1</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
@@ -1359,7 +1359,7 @@
 					<FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+					<UnitClassType>UNITCLASS_NOBLEMAN</UnitClassType>
 					<FreeUnitProfession>PROFESSION_INFANTRY1</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
@@ -1556,7 +1556,7 @@
 					<FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+					<UnitClassType>UNITCLASS_NOBLEMAN</UnitClassType>
 					<FreeUnitProfession>PROFESSION_INFANTRY1</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
@@ -1748,7 +1748,7 @@
 					<FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_VETERAN</UnitClassType>
+					<UnitClassType>UNITCLASS_NOBLEMAN</UnitClassType>
 					<FreeUnitProfession>PROFESSION_INFANTRY1</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
@@ -4209,35 +4209,35 @@
 			<FavoredTerrain>NONE</FavoredTerrain>
 			<DefaultProfession>PROFESSION_BRAVE</DefaultProfession>
 			<Cities>
-				<City>TXT_KEY_CITY_NAME_DJENNE</City>
-				<City>TXT_KEY_CITY_NAME_KUMBISALEH</City>
-				<City>TXT_KEY_CITY_NAME_GAO</City>
-				<City>TXT_KEY_CITY_NAME_WALATA</City>
-				<City>TXT_KEY_CITY_NAME_NIANI</City>
-				<City>TXT_KEY_CITY_NAME_AWDAGHOST</City>
-				<City>TXT_KEY_CITY_NAME_TADMEKKA</City>
-				<City>TXT_KEY_CITY_NAME_TEKEDDA</City>
-				<City>TXT_KEY_CITY_NAME_AWLIL</City>
-				<City>TXT_KEY_CITY_NAME_WADAN</City>
-				<City>TXT_KEY_CITY_NAME_AGADES</City>
-				<City>TXT_KEY_CITY_NAME_TEODENI</City>
-				<City>TXT_KEY_CITY_NAME_TAGHAZA</City>
-				<City>TXT_KEY_CITY_NAME_KATSINA</City>
-				<City>TXT_KEY_CITY_NAME_KANO</City>
-				<City>TXT_KEY_CITY_NAME_ZARIA</City>
-				<City>TXT_KEY_CITY_NAME_BILMA</City>
-				<City>TXT_KEY_CITY_NAME_NGAZARGUMU</City>
-				<City>TXT_KEY_CITY_NAME_KANGABA</City>
-				<City>TXT_KEY_CITY_NAME_DIA</City>
-				<City>TXT_KEY_CITY_NAME_TIRAQQA</City>
-				<City>TXT_KEY_CITY_NAME_AWKAR</City>
-				<City>TXT_KEY_CITY_NAME_KUKIYA</City>
-				<City>TXT_KEY_CITY_NAME_TAKRUR</City>
-				<City>TXT_KEY_CITY_NAME_ARAWAN</City>
-				<City>TXT_KEY_CITY_NAME_SYA</City>
-				<City>TXT_KEY_CITY_NAME_TAOUDENNI</City>
-				<City>TXT_KEY_CITY_NAME_BAMBOUK</City>
-				<City>TXT_KEY_CITY_NAME_KIRINA</City>
+				<City>Toumboctou</City>
+				<City>Jenne</City>
+				<City>Koumbi Saleh</City>
+				<City>Gao</City>
+				<City>Walatah</City>
+				<City>Niani</City>
+				<City>Aoudaghost</City>
+				<City>Tadmekka</City>
+				<City>Tekedah</City>
+				<City>Awlil</City>
+				<City>Ouadane</City>
+				<City>Agades</City>
+				<City>Taoudeni</City>
+				<City>Taghassa</City>
+				<City>Katsina</City>
+				<City>Kano</City>
+				<City>Zarya</City>
+				<City>Bilma</City>
+				<City>Ngazargumu</City>
+				<City>Kangaba</City>
+				<City>Fiyya</City>
+				<City>Tiraka</City>
+				<City>Awkar</City>
+				<City>Kukiya</City>
+				<City>Takrur</City>
+				<City>Arawan</City>
+				<City>Sia</City>
+				<City>Bambuk</City>
+				<City>Kirina</City>
 			</Cities>
 			<Buildings>
 				<Building>

@@ -1342,6 +1342,16 @@ void CvDLLWidgetData::doPediaImprovementJump(CvWidgetDataStruct &widgetDataStruc
 
 void CvDLLWidgetData::doPediaCivicJump(CvWidgetDataStruct &widgetDataStruct)
 {
+	//Tks Cheat
+	if ((gDLL->getChtLvl() > 0) && gDLL->shiftKey())
+	{
+		if (GET_PLAYER(GC.getGameINLINE().getActivePlayer()).isAnarchy())
+		{
+			GET_PLAYER(GC.getGameINLINE().getActivePlayer()).changeAnarchyTurns(GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getAnarchyTurns() * -1);
+			return;
+		}		
+	}
+	//Tke
 	CyArgsList argsList;
 	argsList.add(widgetDataStruct.m_iData1);
 	gDLL->getPythonIFace()->callFunction(PYScreensModule, "pediaJumpToCivic", argsList.makeFunctionArgs());

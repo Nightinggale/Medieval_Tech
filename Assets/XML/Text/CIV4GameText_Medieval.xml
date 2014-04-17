@@ -135,11 +135,11 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_CIVIC_ATTITUDES_GOOD</Tag>
-    <English>%D1: "Our mutual ideals of Social Policies are encouraging."</English>
-    <French>%D1 : "Our mutual ideals of Social Policies are encouraging."</French>
-    <German>%D1: "Our mutual ideals of Social Policies are encouraging."</German>
-    <Italian>%D1: "Our mutual ideals of Social Policies are encouraging."</Italian>
-    <Spanish>%D1: "Our mutual ideals of Social Policies are encouraging."</Spanish>
+    <English>%D1: "Our mutual ideals on Social Policies are encouraging."</English>
+    <French>%D1 : "Our mutual ideals on Social Policies are encouraging."</French>
+    <German>%D1: "Our mutual ideals on Social Policies are encouraging."</German>
+    <Italian>%D1: "Our mutual ideals on Social Policies are encouraging."</Italian>
+    <Spanish>%D1: "Our mutual ideals on Social Policies are encouraging."</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_CIVIC_ATTITUDES_BAD</Tag>
@@ -150,8 +150,16 @@
     <Spanish>%D1: "Your Social Policies are appalling to us."</Spanish>
   </TEXT>
   <TEXT>
+    <Tag>TXT_KEY_UNIT_YIELD_DEMAND</Tag>
+    <English>Demands %s1_symbol_list</English>
+    <French>Demands %s1_symbol_list</French>
+    <German>Will %s1_symbol_list</German>
+    <Italian>Demands %s1_symbol_list</Italian>
+    <Spanish>Demands %s1_symbol_list</Spanish>
+  </TEXT>
+  <TEXT>
     <Tag>TXT_KEY_CIVIC_GARRISON_BONUS</Tag>
-    <English>[SPACE]from Garrisoned Units</English>
+    <English>[SPACE]from Garrison</English>
     <French>[SPACE]from Garrisoned Units</French>
     <German>[SPACE]from Garrisoned Units</German>
     <Italian>[SPACE]from Garrisoned Units</Italian>
@@ -176,6 +184,14 @@
   <TEXT>
     <Tag>TXT_KEY_CIVIC_DIPLOMACY_BONUS</Tag>
     <English>[ICON_BULLET]+%d1 Bonus to Diplomacy</English>
+    <French>[ICON_BULLET]+%d1 Bonus to Diplomacy</French>
+    <German>[ICON_BULLET]+%d1 Bonus to Diplomacy</German>
+    <Italian>[ICON_BULLET]+%d1 Bonus to Diplomacy</Italian>
+    <Spanish>[ICON_BULLET]+%d1 Bonus to Diplomacy</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_NUMBER_UNICLASS_COUNT</Tag>
+    <English>%d1 as [COLOR_HIGHLIGHT_TEXT]Subjects[COLOR_REVERT]</English>
     <French>[ICON_BULLET]+%d1 Bonus to Diplomacy</French>
     <German>[ICON_BULLET]+%d1 Bonus to Diplomacy</German>
     <Italian>[ICON_BULLET]+%d1 Bonus to Diplomacy</Italian>

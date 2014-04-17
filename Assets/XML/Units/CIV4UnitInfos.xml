@@ -30,7 +30,7 @@
       <Description>A Test Unit</Description>
       <Civilopedia>TXT_KEY_UNIT_INDENTURED_SERVANT_PEDIA</Civilopedia>
       <Strategy>TXT_KEY_UNIT_INDENTURED_SERVANT_STRATEGY</Strategy>
-      <bGraphicalOnly>0</bGraphicalOnly>
+      <bGraphicalOnly>1</bGraphicalOnly>
       <bNoBadGoodies>0</bNoBadGoodies>
       <bOnlyDefensive>0</bOnlyDefensive>
       <bNoCapture>0</bNoCapture>
@@ -581,8 +581,8 @@
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iEuropeCost>-800</iEuropeCost>
-			<iEuropeCostIncrease>0</iEuropeCostIncrease>
+			<iEuropeCost>200</iEuropeCost>
+			<iEuropeCostIncrease>100</iEuropeCostIncrease>
 			<iImmigrationWeight>0</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -618,7 +618,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_COATS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_ALE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -1103,7 +1124,28 @@
       <BonusYieldChanges/>
       <bLandYieldChanges>1</bLandYieldChanges>
       <bWaterYieldChanges>1</bWaterYieldChanges>
-      <YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_COATS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_ALE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
       <iBombardRate>0</iBombardRate>
       <SpecialCargo>NONE</SpecialCargo>
       <DomainCargo>NONE</DomainCargo>
@@ -1592,7 +1634,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_COATS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_ALE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -2081,7 +2144,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_COATS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_ALE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -2570,7 +2654,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iYieldDemand>200</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iYieldDemand>200</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_COATS</YieldType>
+          <iYieldDemand>200</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_ALE</YieldType>
+          <iYieldDemand>200</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>200</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -3051,7 +3156,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iYieldDemand>200</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iYieldDemand>200</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_COATS</YieldType>
+          <iYieldDemand>200</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_ALE</YieldType>
+          <iYieldDemand>200</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>200</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -3616,7 +3742,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_COATS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_ALE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -4092,7 +4239,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_COATS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_ALE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -4579,7 +4747,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_COATS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_ALE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -5050,7 +5239,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_COATS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_ALE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -5525,7 +5735,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_COATS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_ALE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -6000,7 +6231,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_COATS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_ALE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -6480,7 +6732,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_SALT</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SPICES</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_CLOTH</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_WINE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -6960,7 +7233,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_SALT</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SPICES</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_CLOTH</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_WINE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -7450,8 +7744,29 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
-			<iBombardRate>0</iBombardRate>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_COATS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_ALE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
+      <iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
 			<iCargo>0</iCargo>
@@ -7976,8 +8291,29 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
-			<iBombardRate>0</iBombardRate>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_COATS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_ALE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
+      <iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
 			<iCargo>0</iCargo>
@@ -8469,7 +8805,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_COATS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_ALE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -8962,7 +9319,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_COATS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_ALE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -10923,8 +11301,29 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
-			<iBombardRate>0</iBombardRate>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_SALT</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SPICES</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_CLOTH</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_WINE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
+      <iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
 			<iCargo>0</iCargo>
@@ -11395,7 +11794,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_SALT</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SPICES</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_CLOTH</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_WINE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -11867,7 +12287,28 @@
       <BonusYieldChanges/>
       <bLandYieldChanges>1</bLandYieldChanges>
       <bWaterYieldChanges>1</bWaterYieldChanges>
-      <YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_SALT</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SPICES</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_CLOTH</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_WINE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
       <iBombardRate>0</iBombardRate>
       <SpecialCargo>NONE</SpecialCargo>
       <DomainCargo>NONE</DomainCargo>
@@ -12340,7 +12781,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_SALT</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SPICES</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_CLOTH</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_WINE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -12826,7 +13288,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_SALT</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SPICES</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_CLOTH</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_WINE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -13312,7 +13795,28 @@
       <BonusYieldChanges/>
       <bLandYieldChanges>1</bLandYieldChanges>
       <bWaterYieldChanges>1</bWaterYieldChanges>
-      <YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_SALT</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SPICES</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_CLOTH</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_WINE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
       <iBombardRate>0</iBombardRate>
       <SpecialCargo>NONE</SpecialCargo>
       <DomainCargo>NONE</DomainCargo>
@@ -13798,7 +14302,28 @@
       <BonusYieldChanges/>
       <bLandYieldChanges>1</bLandYieldChanges>
       <bWaterYieldChanges>1</bWaterYieldChanges>
-      <YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_SALT</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SPICES</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_CLOTH</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_WINE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
       <iBombardRate>0</iBombardRate>
       <SpecialCargo>NONE</SpecialCargo>
       <DomainCargo>NONE</DomainCargo>
@@ -14283,7 +14808,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_SALT</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SPICES</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_CLOTH</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_WINE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -14764,7 +15310,28 @@
       <BonusYieldChanges/>
       <bLandYieldChanges>1</bLandYieldChanges>
       <bWaterYieldChanges>1</bWaterYieldChanges>
-      <YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_SALT</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SPICES</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_CLOTH</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_WINE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
       <iBombardRate>0</iBombardRate>
       <SpecialCargo>NONE</SpecialCargo>
       <DomainCargo>NONE</DomainCargo>
@@ -15111,6 +15678,505 @@
       <ConvertsToGold>0</ConvertsToGold>
     </UnitInfo>
     <UnitInfo>
+      <Type>UNIT_PREACHER</Type>
+      <Class>UNITCLASS_PREACHER</Class>
+      <UniqueNames/>
+      <Special>NONE</Special>
+      <Capture>NONE</Capture>
+      <Combat>NONE</Combat>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+      <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+      <bNativesInvalid>0</bNativesInvalid>
+      <bEuropeInvalid>0</bEuropeInvalid>
+      <bColonialInvalid>0</bColonialInvalid>
+      <Invisible>NONE</Invisible>
+      <SeeInvisible>NONE</SeeInvisible>
+      <Description>Parish Priest</Description>
+      <Civilopedia>TXT_KEY_UNIT_PREACHER_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_PREACHER_STRATEGY</Strategy>
+      <bGraphicalOnly>0</bGraphicalOnly>
+      <bNoBadGoodies>0</bNoBadGoodies>
+      <bOnlyDefensive>0</bOnlyDefensive>
+      <bNoCapture>0</bNoCapture>
+      <bQuickCombat>0</bQuickCombat>
+      <bRivalTerritory>0</bRivalTerritory>
+      <bMilitaryProduction>0</bMilitaryProduction>
+      <bFound>1</bFound>
+      <bInvisible>0</bInvisible>
+      <bNoDefensiveBonus>0</bNoDefensiveBonus>
+      <bCanMoveImpassable>0</bCanMoveImpassable>
+      <bCanMoveAllTerrain>0</bCanMoveAllTerrain>
+      <bFlatMovementCost>0</bFlatMovementCost>
+      <bIgnoreTerrainCost>0</bIgnoreTerrainCost>
+      <bMechanized>0</bMechanized>
+      <bLineOfSight>0</bLineOfSight>
+      <bHiddenNationality>0</bHiddenNationality>
+      <bAlwaysHostile>0</bAlwaysHostile>
+      <bTreasure>0</bTreasure>
+      <bAnimal>0</bAnimal>
+      <UnitClassUpgrades/>
+      <UnitAIs>
+        <UnitAI>
+          <UnitAIType>UNITAI_COLONIST</UnitAIType>
+          <bUnitAI>1</bUnitAI>
+        </UnitAI>
+      </UnitAIs>
+      <NotUnitAIs/>
+      <Builds>
+        <Build>
+          <BuildType>BUILD_ROAD</BuildType>
+          <bBuild>1</bBuild>
+        </Build>
+        <Build>
+          <BuildType>BUILD_FARM</BuildType>
+          <bBuild>1</bBuild>
+        </Build>
+        <Build>
+          <BuildType>BUILD_MINE</BuildType>
+          <bBuild>1</bBuild>
+        </Build>
+        <Build>
+          <BuildType>BUILD_LODGE</BuildType>
+          <bBuild>1</bBuild>
+        </Build>
+        <Build>
+          <BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+          <bBuild>1</bBuild>
+        </Build>
+        <Build>
+          <BuildType>BUILD_REMOVE_FOREST</BuildType>
+          <bBuild>1</bBuild>
+        </Build>
+        <Build>
+          <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+          <bBuild>1</bBuild>
+        </Build>
+      </Builds>
+      <PrereqBuilding>NONE</PrereqBuilding>
+      <PrereqOrBuildings/>
+      <ProductionTraits/>
+      <iAIWeight>0</iAIWeight>
+      <YieldCosts/>
+      <iHurryCostModifier>0</iHurryCostModifier>
+      <iAdvancedStartCost>-1</iAdvancedStartCost>
+      <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+      <iEuropeCost>2000</iEuropeCost>
+      <iEuropeCostIncrease>0</iEuropeCostIncrease>
+      <iImmigrationWeight>40</iImmigrationWeight>
+      <iImmigrationWeightDecay>40</iImmigrationWeightDecay>
+      <iMinAreaSize>-1</iMinAreaSize>
+      <iMoves>1</iMoves>
+      <bCapturesCargo>0</bCapturesCargo>
+      <iWorkRate>0</iWorkRate>
+      <iWorkRateModifier>0</iWorkRateModifier>
+      <iMissionaryRateModifier>0</iMissionaryRateModifier>
+      <TerrainImpassables/>
+      <FeatureImpassables/>
+      <TerrainNatives/>
+      <FeatureNatives/>
+      <BonusNatives/>
+      <EvasionBuildings/>
+      <iCombat>0</iCombat>
+      <iXPValueAttack>4</iXPValueAttack>
+      <iXPValueDefense>2</iXPValueDefense>
+      <iWithdrawalProb>0</iWithdrawalProb>
+      <iCityAttack>0</iCityAttack>
+      <iCityDefense>0</iCityDefense>
+      <iHillsAttack>0</iHillsAttack>
+      <iHillsDefense>0</iHillsDefense>
+      <TerrainAttacks/>
+      <TerrainDefenses/>
+      <FeatureAttacks/>
+      <FeatureDefenses/>
+      <UnitClassAttackMods/>
+      <UnitClassDefenseMods/>
+      <UnitCombatMods/>
+      <DomainMods/>
+      <FreeBuildingClass>BUILDINGCLASS_CHAPEL</FreeBuildingClass>
+      <YieldModifiers>
+        <YieldModifier>
+          <YieldType>YIELD_CROSSES</YieldType>
+          <iYieldMod>100</iYieldMod>
+        </YieldModifier>
+      </YieldModifiers>
+      <YieldChanges/>
+      <BonusYieldChanges/>
+      <bLandYieldChanges>1</bLandYieldChanges>
+      <bWaterYieldChanges>1</bWaterYieldChanges>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_SALT</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SPICES</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_CLOTH</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_WINE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
+      <iBombardRate>0</iBombardRate>
+      <SpecialCargo>NONE</SpecialCargo>
+      <DomainCargo>NONE</DomainCargo>
+      <iCargo>0</iCargo>
+      <iRequiredTransportSize>1</iRequiredTransportSize>
+      <iAsset>250</iAsset>
+      <iPower>0</iPower>
+      <iNativeLearnTime>-1</iNativeLearnTime>
+      <iStudentWeight>0</iStudentWeight>
+      <iTeacherWeight>2</iTeacherWeight>
+      <iTeachLevel>3</iTeachLevel>
+      <iAnimalPatrolWeight>-1</iAnimalPatrolWeight>
+      <iAnimalAttackWeight>-1</iAnimalAttackWeight>
+      <ProfessionMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>NONE</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_UNIT_PRIEST</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_PEDLER</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>0</iMeleeWaveSize>
+          <iRangedWaveSize>4</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_MERCHANT2</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_MERCHANT</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>0</iMeleeWaveSize>
+          <iRangedWaveSize>4</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_MERCHANT</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_MISSLEMAN</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>0</iMeleeWaveSize>
+          <iRangedWaveSize>4</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_ARCHER</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_ARCHER_LEATHER</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>0</iMeleeWaveSize>
+          <iRangedWaveSize>4</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_ARCHER</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_MISSLEMAN2</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>0</iMeleeWaveSize>
+          <iRangedWaveSize>4</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_LONGBOWMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_LONGBOWMAN_LEATHER</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>0</iMeleeWaveSize>
+          <iRangedWaveSize>4</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_LONGBOWMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_SKIRMISHER1</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_ANGLO_SWORDSMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_SKIRMISHER_SCALE</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_ANGLO_SWORDSMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_SKIRMISHER2</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_HEAVY_SWORDSMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_HEAVY_SKIRMISHER_PLATE</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_HEAVY_SWORDSMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_SKIRMISHER3</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>3</iMeleeWaveSize>
+          <iRangedWaveSize>1</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_CROSSBOWMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_CROSSBOWMAN_MAIL</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>3</iMeleeWaveSize>
+          <iRangedWaveSize>1</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_CROSSBOWMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_ARMED_PEASANT</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_ARMED_PEASANT</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_ARMOURED_PEASANT_LEATHER</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_ARMED_PEASANT</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_INFANTRY1</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_ANGLO_SPEARMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_INFANTRY_MAIL</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_ANGLO_SPEARMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_INFANTRY2</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_HEAVY_SPEARMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_HEAVY_INFANTRY_MAIL</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_HEAVY_SPEARMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_INFANTRY3</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_PIKEMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_PIKEMAN_PLATE</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_PIKEMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_SCOUT</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_UNIT_PROFESSION_SCOUT</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_CALVARY</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_UNIT_PROFESSION_CALVARY</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_CALVARY_LEATHER</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_UNIT_PROFESSION_CALVARY</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_KNIGHT_MAIL</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_UNIT_PROFESSION_KNIGHT</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_KNIGHT_PLATE</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_UNIT_PROFESSION_KNIGHT_PLATE</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_PIONEER</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_UNIT_WORKER_EUROPEAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_UNIT_PROFESSION_MISSIONARY</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+      </ProfessionMeshGroups>
+      <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+      <HotKey/>
+      <bAltDown>0</bAltDown>
+      <bShiftDown>0</bShiftDown>
+      <bCtrlDown>0</bCtrlDown>
+      <iHotKeyPriority>0</iHotKeyPriority>
+      <FreePromotions>
+        <FreePromotion>
+          <PromotionType>PROMOTION_BUILD_HOME</PromotionType>
+          <bFreePromotion>1</bFreePromotion>
+        </FreePromotion>
+      </FreePromotions>
+      <LeaderPromotion>NONE</LeaderPromotion>
+      <iLeaderExperience>0</iLeaderExperience>
+      <ProfessionsNotAllowed/>
+      <KnightDubbingWeight>0</KnightDubbingWeight>
+      <iCasteAttribute>0</iCasteAttribute>
+      <bPreventFounding>0</bPreventFounding>
+      <bPreventTraveling>0</bPreventTraveling>
+      <EducationUnitClass>NONE</EducationUnitClass>
+      <RehibilitateUnitClass>NONE</RehibilitateUnitClass>
+      <LaborForceUnitClass>NONE</LaborForceUnitClass>
+      <iTradeBonus>0</iTradeBonus>
+      <ConvertsToYield>NONE</ConvertsToYield>
+      <ConvertsToBuildingClass>NONE</ConvertsToBuildingClass>
+      <ConvertsToGold>0</ConvertsToGold>
+    </UnitInfo>
+    <UnitInfo>
       <Type>UNIT_BURGHER</Type>
       <Class>UNITCLASS_BURGHER</Class>
       <UniqueNames/>
@@ -15231,7 +16297,28 @@
       <BonusYieldChanges/>
       <bLandYieldChanges>1</bLandYieldChanges>
       <bWaterYieldChanges>1</bWaterYieldChanges>
-      <YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_SALT</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SPICES</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_CLOTH</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_WINE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
       <iBombardRate>0</iBombardRate>
       <SpecialCargo>NONE</SpecialCargo>
       <DomainCargo>NONE</DomainCargo>
@@ -15708,7 +16795,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_SALT</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SPICES</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_CLOTH</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_WINE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -16185,7 +17293,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_SALT</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SPICES</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_CLOTH</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_WINE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -16670,7 +17799,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_SALT</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SPICES</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_CLOTH</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_WINE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -17120,7 +18270,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_SALT</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SPICES</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_CLOTH</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_WINE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -17597,7 +18768,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_COATS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_ALE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -18074,8 +19266,29 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
-			<iBombardRate>0</iBombardRate>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_COATS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_ALE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
+      <iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
 			<iCargo>0</iCargo>
@@ -18551,7 +19764,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_COATS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_ALE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -19028,7 +20262,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_COATS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_ALE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -19508,7 +20763,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_COATS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_ALE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -19984,7 +21260,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_COATS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_ALE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -20456,479 +21753,521 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
-			<iBombardRate>0</iBombardRate>
-			<SpecialCargo>NONE</SpecialCargo>
-			<DomainCargo>NONE</DomainCargo>
-			<iCargo>0</iCargo>
-			<iRequiredTransportSize>1</iRequiredTransportSize>
-			<iAsset>250</iAsset>
-			<iPower>0</iPower>
-			<iNativeLearnTime>-1</iNativeLearnTime>
-			<iStudentWeight>0</iStudentWeight>
-			<iTeacherWeight>4</iTeacherWeight>
-			<iTeachLevel>1</iTeachLevel>
-			<iAnimalPatrolWeight>-1</iAnimalPatrolWeight>
-			<iAnimalAttackWeight>-1</iAnimalAttackWeight>
-			<ProfessionMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>NONE</ProfessionType>
-					<fMaxSpeed>1.25</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>1</iMeleeWaveSize>
-					<iRangedWaveSize>1</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_GRAPE_GROWER</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_PEDLER</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>0</iMeleeWaveSize>
-					<iRangedWaveSize>4</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_MERCHANT2</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_MERCHANT</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>0</iMeleeWaveSize>
-					<iRangedWaveSize>4</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_MERCHANT</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_MISSLEMAN</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>0</iMeleeWaveSize>
-					<iRangedWaveSize>4</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_ARCHER</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_ARCHER_LEATHER</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>0</iMeleeWaveSize>
-					<iRangedWaveSize>4</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_ARCHER</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_MISSLEMAN2</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>0</iMeleeWaveSize>
-					<iRangedWaveSize>4</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_LONGBOWMAN</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_LONGBOWMAN_LEATHER</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>0</iMeleeWaveSize>
-					<iRangedWaveSize>4</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_LONGBOWMAN</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_SKIRMISHER1</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_ANGLO_SWORDSMAN</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_SKIRMISHER_SCALE</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_ANGLO_SWORDSMAN</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_SKIRMISHER2</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_HEAVY_SWORDSMAN</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_HEAVY_SKIRMISHER_PLATE</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_HEAVY_SWORDSMAN</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_SKIRMISHER3</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>3</iMeleeWaveSize>
-					<iRangedWaveSize>1</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_CROSSBOWMAN</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_CROSSBOWMAN_MAIL</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>3</iMeleeWaveSize>
-					<iRangedWaveSize>1</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_CROSSBOWMAN</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_ARMED_PEASANT</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_ARMED_PEASANT</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_ARMOURED_PEASANT_LEATHER</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_ARMED_PEASANT</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_INFANTRY1</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_ANGLO_SPEARMAN</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_INFANTRY_MAIL</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_ANGLO_SPEARMAN</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_INFANTRY2</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_HEAVY_SPEARMAN</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_HEAVY_INFANTRY_MAIL</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_HEAVY_SPEARMAN</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_INFANTRY3</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_PIKEMAN</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_PIKEMAN_PLATE</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_PIKEMAN</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_SCOUT</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_SCOUT</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_CALVARY</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_CALVARY</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_CALVARY_LEATHER</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_CALVARY</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_KNIGHT_MAIL</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_KNIGHT</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_KNIGHT_PLATE</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_KNIGHT_PLATE</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_PIONEER</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_WORKER_EUROPEAN</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_MISSIONARY</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-			</ProfessionMeshGroups>
-			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
-			<HotKey/>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>0</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>0</iHotKeyPriority>
-			<FreePromotions/>
-			<LeaderPromotion>NONE</LeaderPromotion>
-			<iLeaderExperience>0</iLeaderExperience>
-			<ProfessionsNotAllowed/>
-			<KnightDubbingWeight>0</KnightDubbingWeight>
-			<iCasteAttribute>0</iCasteAttribute>
-			<bPreventFounding>0</bPreventFounding>
-			<bPreventTraveling>0</bPreventTraveling>
-			<EducationUnitClass>NONE</EducationUnitClass>
-			<RehibilitateUnitClass>NONE</RehibilitateUnitClass>
-			<LaborForceUnitClass>NONE</LaborForceUnitClass>
-			<iTradeBonus>0</iTradeBonus>
-			<ConvertsToYield>NONE</ConvertsToYield>
-			<ConvertsToBuildingClass>NONE</ConvertsToBuildingClass>
-			<ConvertsToGold>0</ConvertsToGold>
-		</UnitInfo>
-		<UnitInfo>
-			<Type>UNIT_BARLEY_PLANTER</Type>
-			<Class>UNITCLASS_BARLEY_PLANTER</Class>
-			<UniqueNames/>
-			<Special>NONE</Special>
-			<Capture>NONE</Capture>
-			<Combat>NONE</Combat>
-			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-			<DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
-			<bNativesInvalid>1</bNativesInvalid>
-			<bEuropeInvalid>0</bEuropeInvalid>
-			<bColonialInvalid>0</bColonialInvalid>
-			<Invisible>NONE</Invisible>
-			<SeeInvisible>NONE</SeeInvisible>
-			<Description>Expert Barley Farmer</Description>
-			<Civilopedia>TXT_KEY_UNIT_COTTON_PLANTER_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_COTTON_PLANTER_STRATEGY</Strategy>
-			<bGraphicalOnly>0</bGraphicalOnly>
-			<bNoBadGoodies>0</bNoBadGoodies>
-			<bOnlyDefensive>0</bOnlyDefensive>
-			<bNoCapture>0</bNoCapture>
-			<bQuickCombat>0</bQuickCombat>
-			<bRivalTerritory>0</bRivalTerritory>
-			<bMilitaryProduction>0</bMilitaryProduction>
-			<bFound>1</bFound>
-			<bInvisible>0</bInvisible>
-			<bNoDefensiveBonus>0</bNoDefensiveBonus>
-			<bCanMoveImpassable>0</bCanMoveImpassable>
-			<bCanMoveAllTerrain>0</bCanMoveAllTerrain>
-			<bFlatMovementCost>0</bFlatMovementCost>
-			<bIgnoreTerrainCost>0</bIgnoreTerrainCost>
-			<bMechanized>0</bMechanized>
-			<bLineOfSight>0</bLineOfSight>
-			<bHiddenNationality>0</bHiddenNationality>
-			<bAlwaysHostile>0</bAlwaysHostile>
-			<bTreasure>0</bTreasure>
-			<bAnimal>0</bAnimal>
-			<UnitClassUpgrades/>
-			<UnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_COLONIST</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-			</UnitAIs>
-			<NotUnitAIs/>
-			<Builds>
-				<Build>
-					<BuildType>BUILD_ROAD</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_FARM</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_MINE</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_LODGE</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_REMOVE_FOREST</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-			</Builds>
-			<PrereqBuilding>NONE</PrereqBuilding>
-			<PrereqOrBuildings/>
-			<ProductionTraits/>
-			<iAIWeight>0</iAIWeight>
-			<YieldCosts/>
-			<iHurryCostModifier>0</iHurryCostModifier>
-			<iAdvancedStartCost>-1</iAdvancedStartCost>
-			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iEuropeCost>-1</iEuropeCost>
-			<iEuropeCostIncrease>0</iEuropeCostIncrease>
-			<iImmigrationWeight>0</iImmigrationWeight>
-			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>1</iMoves>
-			<bCapturesCargo>0</bCapturesCargo>
-			<iWorkRate>0</iWorkRate>
-			<iWorkRateModifier>0</iWorkRateModifier>
-			<iMissionaryRateModifier>0</iMissionaryRateModifier>
-			<TerrainImpassables/>
-			<FeatureImpassables/>
-			<TerrainNatives/>
-			<FeatureNatives/>
-			<BonusNatives/>
-			<EvasionBuildings/>
-			<iCombat>0</iCombat>
-			<iXPValueAttack>4</iXPValueAttack>
-			<iXPValueDefense>2</iXPValueDefense>
-			<iWithdrawalProb>0</iWithdrawalProb>
-			<iCityAttack>0</iCityAttack>
-			<iCityDefense>0</iCityDefense>
-			<iHillsAttack>0</iHillsAttack>
-			<iHillsDefense>0</iHillsDefense>
-			<TerrainAttacks/>
-			<TerrainDefenses/>
-			<FeatureAttacks/>
-			<FeatureDefenses/>
-			<UnitClassAttackMods/>
-			<UnitClassDefenseMods/>
-			<UnitCombatMods/>
-			<DomainMods/>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_BARLEY</YieldType>
-					<iYieldMod>100</iYieldMod>
-				</YieldModifier>
-			</YieldModifiers>
-			<YieldChanges/>
-			<BonusYieldChanges/>
-			<bLandYieldChanges>1</bLandYieldChanges>
-			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_COATS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_ALE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
+      <iBombardRate>0</iBombardRate>
+      <SpecialCargo>NONE</SpecialCargo>
+      <DomainCargo>NONE</DomainCargo>
+      <iCargo>0</iCargo>
+      <iRequiredTransportSize>1</iRequiredTransportSize>
+      <iAsset>250</iAsset>
+      <iPower>0</iPower>
+      <iNativeLearnTime>-1</iNativeLearnTime>
+      <iStudentWeight>0</iStudentWeight>
+      <iTeacherWeight>4</iTeacherWeight>
+      <iTeachLevel>1</iTeachLevel>
+      <iAnimalPatrolWeight>-1</iAnimalPatrolWeight>
+      <iAnimalAttackWeight>-1</iAnimalAttackWeight>
+      <ProfessionMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>NONE</ProfessionType>
+          <fMaxSpeed>1.25</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>1</iMeleeWaveSize>
+          <iRangedWaveSize>1</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_UNIT_GRAPE_GROWER</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_PEDLER</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>0</iMeleeWaveSize>
+          <iRangedWaveSize>4</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_MERCHANT2</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_MERCHANT</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>0</iMeleeWaveSize>
+          <iRangedWaveSize>4</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_MERCHANT</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_MISSLEMAN</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>0</iMeleeWaveSize>
+          <iRangedWaveSize>4</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_ARCHER</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_ARCHER_LEATHER</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>0</iMeleeWaveSize>
+          <iRangedWaveSize>4</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_ARCHER</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_MISSLEMAN2</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>0</iMeleeWaveSize>
+          <iRangedWaveSize>4</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_LONGBOWMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_LONGBOWMAN_LEATHER</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>0</iMeleeWaveSize>
+          <iRangedWaveSize>4</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_LONGBOWMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_SKIRMISHER1</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_ANGLO_SWORDSMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_SKIRMISHER_SCALE</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_ANGLO_SWORDSMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_SKIRMISHER2</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_HEAVY_SWORDSMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_HEAVY_SKIRMISHER_PLATE</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_HEAVY_SWORDSMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_SKIRMISHER3</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>3</iMeleeWaveSize>
+          <iRangedWaveSize>1</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_CROSSBOWMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_CROSSBOWMAN_MAIL</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>3</iMeleeWaveSize>
+          <iRangedWaveSize>1</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_CROSSBOWMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_ARMED_PEASANT</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_ARMED_PEASANT</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_ARMOURED_PEASANT_LEATHER</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_ARMED_PEASANT</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_INFANTRY1</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_ANGLO_SPEARMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_INFANTRY_MAIL</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_ANGLO_SPEARMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_INFANTRY2</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_HEAVY_SPEARMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_HEAVY_INFANTRY_MAIL</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_HEAVY_SPEARMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_INFANTRY3</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_PIKEMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_PIKEMAN_PLATE</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_PIKEMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_SCOUT</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_UNIT_PROFESSION_SCOUT</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_CALVARY</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_UNIT_PROFESSION_CALVARY</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_CALVARY_LEATHER</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_UNIT_PROFESSION_CALVARY</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_KNIGHT_MAIL</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_UNIT_PROFESSION_KNIGHT</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_KNIGHT_PLATE</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_UNIT_PROFESSION_KNIGHT_PLATE</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_PIONEER</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_UNIT_WORKER_EUROPEAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_UNIT_PROFESSION_MISSIONARY</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+      </ProfessionMeshGroups>
+      <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+      <HotKey/>
+      <bAltDown>0</bAltDown>
+      <bShiftDown>0</bShiftDown>
+      <bCtrlDown>0</bCtrlDown>
+      <iHotKeyPriority>0</iHotKeyPriority>
+      <FreePromotions/>
+      <LeaderPromotion>NONE</LeaderPromotion>
+      <iLeaderExperience>0</iLeaderExperience>
+      <ProfessionsNotAllowed/>
+      <KnightDubbingWeight>0</KnightDubbingWeight>
+      <iCasteAttribute>0</iCasteAttribute>
+      <bPreventFounding>0</bPreventFounding>
+      <bPreventTraveling>0</bPreventTraveling>
+      <EducationUnitClass>NONE</EducationUnitClass>
+      <RehibilitateUnitClass>NONE</RehibilitateUnitClass>
+      <LaborForceUnitClass>NONE</LaborForceUnitClass>
+      <iTradeBonus>0</iTradeBonus>
+      <ConvertsToYield>NONE</ConvertsToYield>
+      <ConvertsToBuildingClass>NONE</ConvertsToBuildingClass>
+      <ConvertsToGold>0</ConvertsToGold>
+    </UnitInfo>
+    <UnitInfo>
+      <Type>UNIT_BARLEY_PLANTER</Type>
+      <Class>UNITCLASS_BARLEY_PLANTER</Class>
+      <UniqueNames/>
+      <Special>NONE</Special>
+      <Capture>NONE</Capture>
+      <Combat>NONE</Combat>
+      <Domain>DOMAIN_LAND</Domain>
+      <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+      <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+      <bNativesInvalid>1</bNativesInvalid>
+      <bEuropeInvalid>0</bEuropeInvalid>
+      <bColonialInvalid>0</bColonialInvalid>
+      <Invisible>NONE</Invisible>
+      <SeeInvisible>NONE</SeeInvisible>
+      <Description>Expert Barley Farmer</Description>
+      <Civilopedia>TXT_KEY_UNIT_COTTON_PLANTER_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_UNIT_COTTON_PLANTER_STRATEGY</Strategy>
+      <bGraphicalOnly>0</bGraphicalOnly>
+      <bNoBadGoodies>0</bNoBadGoodies>
+      <bOnlyDefensive>0</bOnlyDefensive>
+      <bNoCapture>0</bNoCapture>
+      <bQuickCombat>0</bQuickCombat>
+      <bRivalTerritory>0</bRivalTerritory>
+      <bMilitaryProduction>0</bMilitaryProduction>
+      <bFound>1</bFound>
+      <bInvisible>0</bInvisible>
+      <bNoDefensiveBonus>0</bNoDefensiveBonus>
+      <bCanMoveImpassable>0</bCanMoveImpassable>
+      <bCanMoveAllTerrain>0</bCanMoveAllTerrain>
+      <bFlatMovementCost>0</bFlatMovementCost>
+      <bIgnoreTerrainCost>0</bIgnoreTerrainCost>
+      <bMechanized>0</bMechanized>
+      <bLineOfSight>0</bLineOfSight>
+      <bHiddenNationality>0</bHiddenNationality>
+      <bAlwaysHostile>0</bAlwaysHostile>
+      <bTreasure>0</bTreasure>
+      <bAnimal>0</bAnimal>
+      <UnitClassUpgrades/>
+      <UnitAIs>
+        <UnitAI>
+          <UnitAIType>UNITAI_COLONIST</UnitAIType>
+          <bUnitAI>1</bUnitAI>
+        </UnitAI>
+      </UnitAIs>
+      <NotUnitAIs/>
+      <Builds>
+        <Build>
+          <BuildType>BUILD_ROAD</BuildType>
+          <bBuild>1</bBuild>
+        </Build>
+        <Build>
+          <BuildType>BUILD_FARM</BuildType>
+          <bBuild>1</bBuild>
+        </Build>
+        <Build>
+          <BuildType>BUILD_MINE</BuildType>
+          <bBuild>1</bBuild>
+        </Build>
+        <Build>
+          <BuildType>BUILD_LODGE</BuildType>
+          <bBuild>1</bBuild>
+        </Build>
+        <Build>
+          <BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+          <bBuild>1</bBuild>
+        </Build>
+        <Build>
+          <BuildType>BUILD_REMOVE_FOREST</BuildType>
+          <bBuild>1</bBuild>
+        </Build>
+        <Build>
+          <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+          <bBuild>1</bBuild>
+        </Build>
+      </Builds>
+      <PrereqBuilding>NONE</PrereqBuilding>
+      <PrereqOrBuildings/>
+      <ProductionTraits/>
+      <iAIWeight>0</iAIWeight>
+      <YieldCosts/>
+      <iHurryCostModifier>0</iHurryCostModifier>
+      <iAdvancedStartCost>-1</iAdvancedStartCost>
+      <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+      <iEuropeCost>-1</iEuropeCost>
+      <iEuropeCostIncrease>0</iEuropeCostIncrease>
+      <iImmigrationWeight>0</iImmigrationWeight>
+      <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
+      <iMinAreaSize>-1</iMinAreaSize>
+      <iMoves>1</iMoves>
+      <bCapturesCargo>0</bCapturesCargo>
+      <iWorkRate>0</iWorkRate>
+      <iWorkRateModifier>0</iWorkRateModifier>
+      <iMissionaryRateModifier>0</iMissionaryRateModifier>
+      <TerrainImpassables/>
+      <FeatureImpassables/>
+      <TerrainNatives/>
+      <FeatureNatives/>
+      <BonusNatives/>
+      <EvasionBuildings/>
+      <iCombat>0</iCombat>
+      <iXPValueAttack>4</iXPValueAttack>
+      <iXPValueDefense>2</iXPValueDefense>
+      <iWithdrawalProb>0</iWithdrawalProb>
+      <iCityAttack>0</iCityAttack>
+      <iCityDefense>0</iCityDefense>
+      <iHillsAttack>0</iHillsAttack>
+      <iHillsDefense>0</iHillsDefense>
+      <TerrainAttacks/>
+      <TerrainDefenses/>
+      <FeatureAttacks/>
+      <FeatureDefenses/>
+      <UnitClassAttackMods/>
+      <UnitClassDefenseMods/>
+      <UnitCombatMods/>
+      <DomainMods/>
+      <YieldModifiers>
+        <YieldModifier>
+          <YieldType>YIELD_BARLEY</YieldType>
+          <iYieldMod>100</iYieldMod>
+        </YieldModifier>
+      </YieldModifiers>
+      <YieldChanges/>
+      <BonusYieldChanges/>
+      <bLandYieldChanges>1</bLandYieldChanges>
+      <bWaterYieldChanges>1</bWaterYieldChanges>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_COATS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_ALE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -21405,7 +22744,28 @@
 			</BonusYieldChanges>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>0</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_COATS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_ALE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -21877,7 +23237,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_COATS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_ALE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -22364,7 +23745,28 @@
 			</BonusYieldChanges>
 			<bLandYieldChanges>0</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_COATS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_ALE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -22842,8 +24244,29 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
-			<iBombardRate>0</iBombardRate>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_SALT</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SPICES</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_CLOTH</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_WINE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
+      <iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
 			<iCargo>0</iCargo>
@@ -23320,7 +24743,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_SALT</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SPICES</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_CLOTH</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_WINE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -23814,7 +25258,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_SALT</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SPICES</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_CLOTH</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_WINE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -24308,7 +25773,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_SALT</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SPICES</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_CLOTH</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_WINE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -24802,7 +26288,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_SALT</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SPICES</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_CLOTH</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_WINE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -25279,7 +26786,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_SALT</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SPICES</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_CLOTH</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_WINE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -25752,7 +27280,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_SALT</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SPICES</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_CLOTH</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_WINE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -26230,7 +27779,28 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_SALT</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SPICES</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_CLOTH</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_WINE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
@@ -26707,8 +28277,29 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
-			<iBombardRate>0</iBombardRate>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_COATS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_ALE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
+      <iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
 			<iCargo>0</iCargo>
@@ -27185,8 +28776,29 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
-			<iBombardRate>0</iBombardRate>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_COATS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_ALE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
+      <iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
 			<iCargo>0</iCargo>
@@ -27663,8 +29275,29 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
-			<iBombardRate>0</iBombardRate>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_COATS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_ALE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
+      <iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
 			<iCargo>0</iCargo>
@@ -28141,8 +29774,29 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
-			<iBombardRate>0</iBombardRate>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_SALT</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SPICES</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_CLOTH</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_WINE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
+      <iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
 			<iCargo>0</iCargo>
@@ -28619,8 +30273,29 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
-			<iBombardRate>0</iBombardRate>
+      <YieldDemands>
+        <YieldDemand>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_COATS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_ALE</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_TRADE_GOODS</YieldType>
+          <iYieldDemand>500</iYieldDemand>
+        </YieldDemand>
+      </YieldDemands>
+      <iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>NONE</DomainCargo>
 			<iCargo>0</iCargo>
@@ -29636,484 +31311,6 @@
 				</FreePromotion>
 				<FreePromotion>
 					<PromotionType>PROMOTION_KNIGHT</PromotionType>
-					<bFreePromotion>1</bFreePromotion>
-				</FreePromotion>
-			</FreePromotions>
-			<LeaderPromotion>NONE</LeaderPromotion>
-			<iLeaderExperience>0</iLeaderExperience>
-			<ProfessionsNotAllowed/>
-			<KnightDubbingWeight>0</KnightDubbingWeight>
-			<iCasteAttribute>0</iCasteAttribute>
-			<bPreventFounding>0</bPreventFounding>
-			<bPreventTraveling>0</bPreventTraveling>
-			<EducationUnitClass>NONE</EducationUnitClass>
-			<RehibilitateUnitClass>NONE</RehibilitateUnitClass>
-			<LaborForceUnitClass>NONE</LaborForceUnitClass>
-			<iTradeBonus>0</iTradeBonus>
-			<ConvertsToYield>NONE</ConvertsToYield>
-			<ConvertsToBuildingClass>NONE</ConvertsToBuildingClass>
-			<ConvertsToGold>0</ConvertsToGold>
-		</UnitInfo>
-		<UnitInfo>
-			<Type>UNIT_PREACHER</Type>
-			<Class>UNITCLASS_PREACHER</Class>
-			<UniqueNames/>
-			<Special>NONE</Special>
-			<Capture>NONE</Capture>
-			<Combat>NONE</Combat>
-			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-			<DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
-			<bEuropeInvalid>0</bEuropeInvalid>
-			<bColonialInvalid>0</bColonialInvalid>
-			<Invisible>NONE</Invisible>
-			<SeeInvisible>NONE</SeeInvisible>
-			<Description>Parish Priest</Description>
-			<Civilopedia>TXT_KEY_UNIT_PREACHER_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_PREACHER_STRATEGY</Strategy>
-			<bGraphicalOnly>0</bGraphicalOnly>
-			<bNoBadGoodies>0</bNoBadGoodies>
-			<bOnlyDefensive>0</bOnlyDefensive>
-			<bNoCapture>0</bNoCapture>
-			<bQuickCombat>0</bQuickCombat>
-			<bRivalTerritory>0</bRivalTerritory>
-			<bMilitaryProduction>0</bMilitaryProduction>
-			<bFound>1</bFound>
-			<bInvisible>0</bInvisible>
-			<bNoDefensiveBonus>0</bNoDefensiveBonus>
-			<bCanMoveImpassable>0</bCanMoveImpassable>
-			<bCanMoveAllTerrain>0</bCanMoveAllTerrain>
-			<bFlatMovementCost>0</bFlatMovementCost>
-			<bIgnoreTerrainCost>0</bIgnoreTerrainCost>
-			<bMechanized>0</bMechanized>
-			<bLineOfSight>0</bLineOfSight>
-			<bHiddenNationality>0</bHiddenNationality>
-			<bAlwaysHostile>0</bAlwaysHostile>
-			<bTreasure>0</bTreasure>
-			<bAnimal>0</bAnimal>
-			<UnitClassUpgrades/>
-			<UnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_COLONIST</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-			</UnitAIs>
-			<NotUnitAIs/>
-			<Builds>
-				<Build>
-					<BuildType>BUILD_ROAD</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_FARM</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_MINE</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_LODGE</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_REMOVE_FOREST</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-			</Builds>
-			<PrereqBuilding>NONE</PrereqBuilding>
-			<PrereqOrBuildings/>
-			<ProductionTraits/>
-			<iAIWeight>0</iAIWeight>
-			<YieldCosts/>
-			<iHurryCostModifier>0</iHurryCostModifier>
-			<iAdvancedStartCost>-1</iAdvancedStartCost>
-			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iEuropeCost>2000</iEuropeCost>
-			<iEuropeCostIncrease>0</iEuropeCostIncrease>
-			<iImmigrationWeight>40</iImmigrationWeight>
-			<iImmigrationWeightDecay>40</iImmigrationWeightDecay>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>1</iMoves>
-			<bCapturesCargo>0</bCapturesCargo>
-			<iWorkRate>0</iWorkRate>
-			<iWorkRateModifier>0</iWorkRateModifier>
-			<iMissionaryRateModifier>0</iMissionaryRateModifier>
-			<TerrainImpassables/>
-			<FeatureImpassables/>
-			<TerrainNatives/>
-			<FeatureNatives/>
-			<BonusNatives/>
-			<EvasionBuildings/>
-			<iCombat>0</iCombat>
-			<iXPValueAttack>4</iXPValueAttack>
-			<iXPValueDefense>2</iXPValueDefense>
-			<iWithdrawalProb>0</iWithdrawalProb>
-			<iCityAttack>0</iCityAttack>
-			<iCityDefense>0</iCityDefense>
-			<iHillsAttack>0</iHillsAttack>
-			<iHillsDefense>0</iHillsDefense>
-			<TerrainAttacks/>
-			<TerrainDefenses/>
-			<FeatureAttacks/>
-			<FeatureDefenses/>
-			<UnitClassAttackMods/>
-			<UnitClassDefenseMods/>
-			<UnitCombatMods/>
-			<DomainMods/>
-			<FreeBuildingClass>BUILDINGCLASS_CHAPEL</FreeBuildingClass>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_CROSSES</YieldType>
-					<iYieldMod>100</iYieldMod>
-				</YieldModifier>
-			</YieldModifiers>
-			<YieldChanges/>
-			<BonusYieldChanges/>
-			<bLandYieldChanges>1</bLandYieldChanges>
-			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
-			<iBombardRate>0</iBombardRate>
-			<SpecialCargo>NONE</SpecialCargo>
-			<DomainCargo>NONE</DomainCargo>
-			<iCargo>0</iCargo>
-			<iRequiredTransportSize>1</iRequiredTransportSize>
-			<iAsset>250</iAsset>
-			<iPower>0</iPower>
-			<iNativeLearnTime>-1</iNativeLearnTime>
-			<iStudentWeight>0</iStudentWeight>
-			<iTeacherWeight>2</iTeacherWeight>
-			<iTeachLevel>3</iTeachLevel>
-			<iAnimalPatrolWeight>-1</iAnimalPatrolWeight>
-			<iAnimalAttackWeight>-1</iAnimalAttackWeight>
-			<ProfessionMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>NONE</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_PRIEST</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_PEDLER</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>0</iMeleeWaveSize>
-					<iRangedWaveSize>4</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_MERCHANT2</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_MERCHANT</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>0</iMeleeWaveSize>
-					<iRangedWaveSize>4</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_MERCHANT</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_MISSLEMAN</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>0</iMeleeWaveSize>
-					<iRangedWaveSize>4</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_ARCHER</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_ARCHER_LEATHER</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>0</iMeleeWaveSize>
-					<iRangedWaveSize>4</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_ARCHER</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_MISSLEMAN2</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>0</iMeleeWaveSize>
-					<iRangedWaveSize>4</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_LONGBOWMAN</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_LONGBOWMAN_LEATHER</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>0</iMeleeWaveSize>
-					<iRangedWaveSize>4</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_LONGBOWMAN</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_SKIRMISHER1</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_ANGLO_SWORDSMAN</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_SKIRMISHER_SCALE</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_ANGLO_SWORDSMAN</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_SKIRMISHER2</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_HEAVY_SWORDSMAN</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_HEAVY_SKIRMISHER_PLATE</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_HEAVY_SWORDSMAN</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_SKIRMISHER3</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>3</iMeleeWaveSize>
-					<iRangedWaveSize>1</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_CROSSBOWMAN</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_CROSSBOWMAN_MAIL</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>3</iMeleeWaveSize>
-					<iRangedWaveSize>1</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_CROSSBOWMAN</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_ARMED_PEASANT</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_ARMED_PEASANT</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_ARMOURED_PEASANT_LEATHER</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_ARMED_PEASANT</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_INFANTRY1</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_ANGLO_SPEARMAN</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_INFANTRY_MAIL</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_ANGLO_SPEARMAN</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_INFANTRY2</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_HEAVY_SPEARMAN</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_HEAVY_INFANTRY_MAIL</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_HEAVY_SPEARMAN</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_INFANTRY3</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_PIKEMAN</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_PIKEMAN_PLATE</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_PROFESSION_PIKEMAN</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_SCOUT</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_SCOUT</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_CALVARY</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_CALVARY</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_CALVARY_LEATHER</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_CALVARY</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_KNIGHT_MAIL</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_KNIGHT</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_KNIGHT_PLATE</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_KNIGHT_PLATE</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_PIONEER</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_WORKER_EUROPEAN</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_MISSIONARY</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-			</ProfessionMeshGroups>
-			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
-			<HotKey/>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>0</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>0</iHotKeyPriority>
-			<FreePromotions>
-				<FreePromotion>
-					<PromotionType>PROMOTION_BUILD_HOME</PromotionType>
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>

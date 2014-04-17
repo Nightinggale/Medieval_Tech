@@ -6140,6 +6140,11 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit, bool
 	// test for unique unit
 	UnitClassTypes eUnitClass = (UnitClassTypes)GC.getUnitInfo(eUnit).getUnitClassType();
 	UnitTypes eDefaultUnit = (UnitTypes)GC.getUnitClassInfo(eUnitClass).getDefaultUnitIndex();
+	if (ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).getUnitClassCount(eUnitClass) > 0)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_NUMBER_UNICLASS_COUNT", GET_PLAYER(ePlayer).getUnitClassCount(eUnitClass)));
+	}
     ///TKs Med Update 1.1g
 	if (bCivilopediaText && NO_UNIT != eDefaultUnit && eDefaultUnit != eUnit)
 	{
@@ -6238,6 +6243,24 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit, bool
 			szBuffer.append(gDLL->getText("TXT_KEY_UNIT_BONUS_YIELD_CHANGE", it->first, it->second.GetCString()));
 		}
 	}
+
+	// R&R, Androrc, Domestic Market
+	// R&R, ray, adjustment Domestic Markets, displaying as list
+	CvWString szYieldsDemandedList;
+	for (iI = 0; iI < NUM_YIELD_TYPES; ++iI)
+	{
+		if(GC.getUnitInfo(eUnit).getYieldDemand((YieldTypes) iI) != 0)
+		{
+			szYieldsDemandedList += CvWString::format(L"%c", GC.getYieldInfo((YieldTypes) iI).getChar());
+		}
+	}
+	if(!isEmpty(szYieldsDemandedList))
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getSymbolID(BULLET_CHAR));
+		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_YIELD_DEMAND", szYieldsDemandedList.GetCString()));
+	}
+	//Androrc End
 
 	if ((pCity == NULL) || !(pCity->canTrain(eUnit)))
 	{
@@ -6668,7 +6691,21 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 
 	// domestic yield demand - start - Nightinggale
 	// based heavily on Androrc Domestic Market
+	CvWString szYieldsDemandedList;
 	for (iI = 0; iI < NUM_YIELD_TYPES; ++iI)
+	{
+		if(kBuilding.getYieldDemand((YieldTypes) iI) != 0)
+		{
+			szYieldsDemandedList += CvWString::format(L"%c", GC.getYieldInfo((YieldTypes) iI).getChar());
+		}
+	}
+	if(!isEmpty(szYieldsDemandedList))
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getSymbolID(BULLET_CHAR));
+		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_YIELD_DEMAND", szYieldsDemandedList.GetCString()));
+	}
+	/*for (iI = 0; iI < NUM_YIELD_TYPES; ++iI)
 	{
 		if(kBuilding.getYieldDemand((YieldTypes) iI) != 0)
 		{
@@ -6676,7 +6713,7 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 			szBuffer.append(gDLL->getSymbolID(BULLET_CHAR));
 			szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_YIELD_DEMAND", kBuilding.getYieldDemand((YieldTypes) iI), GC.getYieldInfo((YieldTypes) iI).getChar()));
 		}
-	}
+	}*/
 	// domestic yield demand - end - Nightinggale
 	// test for unique building
 	BuildingClassTypes eBuildingClass = (BuildingClassTypes)kBuilding.getBuildingClassType();
@@ -7862,7 +7899,7 @@ void CvGameTextMgr::getAttitudeString(CvWStringBuffer& szBuffer, PlayerTypes ePl
 		iTotalChange += iAttitudeChange;
 		if ((iPass == 0) ? (iAttitudeChange > 0) : (iAttitudeChange < 0))
 		{
-			szTempBuffer.Format(SETCOLR L"%s" ENDCOLR, TEXT_COLOR((iAttitudeChange > 0) ? "COLOR_POSITIVE_TEXT" : "COLOR_NEGATIVE_TEXT"), gDLL->getText(((iAttitudeChange > 0) ? "TXT_KEY_CIVIC_ATTITUDES_GOOD" : "TXT_KEY_CIVIC_ATTITUDES_BAD"), iAttitudeChange).GetCString());
+			szTempBuffer.Format(SETCOLR L"%s" ENDCOLR, TEXT_COLOR((iAttitudeChange > 0) ? "COLOR_POSITIVE_TEXT" : "COLOR_NEGATIVE_TEXT"), gDLL->getText(((iAttitudeChange > 0) ? "TXT_KEY_MISC_ATTITUDE_EXTRA_GOOD" : "TXT_KEY_MISC_ATTITUDE_EXTRA_BAD"), iAttitudeChange).GetCString());
 			szBuffer.append(NEWLINE);
 			szBuffer.append(szTempBuffer);
 		}
@@ -8365,8 +8402,10 @@ void CvGameTextMgr::setYieldPriceHelp(CvWStringBuffer &szBuffer, PlayerTypes ePl
 			{
 				if (kPlayer.getHasTradeRouteType((EuropeTypes)i) && !GC.getEuropeInfo((EuropeTypes)i).isLeaveFromOwnedCity())
 				{
+					iProfit = kParent.getYieldBuyPrice(eYield,(EuropeTypes)i) * iAmount;
+					iProfit -= (iAmount * kPlayer.getTaxRate()) / 100;
 					szBuffer.append(NEWLINE);
-					szBuffer.append(gDLL->getText("TXT_KEY_BUY_AND_SELL_YIELD_TRADE_SCREEN_AMOUNT", iProfit, GC.getEuropeInfo((EuropeTypes)i).getHelp(), kParent.getYieldBuyPrice(eYield, (EuropeTypes)i), kParent.getYieldSellPrice(eYield, (EuropeTypes)i)));
+					szBuffer.append(gDLL->getText("TXT_KEY_BUY_AND_SELL_YIELD_TRADE_SCREEN_AMOUNT", GC.getEuropeInfo((EuropeTypes)i).getHelp(), iProfit, kParent.getYieldBuyPrice(eYield, (EuropeTypes)i), kParent.getYieldSellPrice(eYield, (EuropeTypes)i)));
 				}
 			}
 		}
@@ -8907,22 +8946,23 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 
 					for (int j = 0; j < GC.getProfessionInfo(eProfession).getNumYieldsConsumed(owner.getID()); j++)
 					{
-					    ///Tk Med 3.1
-					    if (GC.getProfessionInfo(eProfession).getNumYieldsConsumed(owner.getID()) > 1)
-					    {
-					        int iMultiYieldStored = 0;
-					        //int iMultiYieldProduced = 0;
-                            for (int n = 0; n < GC.getProfessionInfo(eProfession).getNumYieldsConsumed(owner.getID()); n++)
-                            {
-                                YieldTypes eYieldConsumed = (YieldTypes) GC.getProfessionInfo(eProfession).getYieldsConsumed(n);
-                                iMultiYieldStored = city.getYieldStored(eYieldConsumed) - iConsumed + iModifiedProduction;
-                                if (iMultiYieldStored < 0)
-                                {
-                                   iConsumed = 0;
-                                }
 
-                            }
-					    }
+					    ///Tk Med 3.1
+					    //if (GC.getProfessionInfo(eProfession).getNumYieldsConsumed(owner.getID()) > 1)
+					    //{
+					    //    int iMultiYieldStored = 0;
+					    //    //int iMultiYieldProduced = 0;
+         //                   for (int n = 0; n < GC.getProfessionInfo(eProfession).getNumYieldsConsumed(owner.getID()); n++)
+         //                   {
+         //                       YieldTypes eYieldConsumed = (YieldTypes) GC.getProfessionInfo(eProfession).getYieldsConsumed(n);
+         //                       iMultiYieldStored = city.getYieldStored(eYieldConsumed) - iConsumed + iModifiedProduction;
+         //                       if (iMultiYieldStored < 0)
+         //                       {
+         //                          iConsumed = 0;
+         //                       }
+
+         //                   }
+					    //}
 					    if (iConsumed > 0)
 					    {
                             if (GC.getProfessionInfo(eProfession).getYieldsConsumed(j, owner.getID()) == eYieldType)
@@ -9221,14 +9261,14 @@ void CvGameTextMgr::buildCityBillboardIconString( CvWStringBuffer& szBuffer, CvC
 		szBuffer.append(CvWString::format(L" (%c:%d)", gDLL->getSymbolID(OCCUPATION_CHAR), pCity->getOccupationTimer()));
 	}
 
-	if (pCity->isVisible(GC.getGameINLINE().getActiveTeam(), true))
+	if (true)
 	{
 		//stored arms
 		CvWStringBuffer szTemp;
 		TeamTypes eTeam = GC.getGameINLINE().getActiveTeam();
 		bool bTradeCity = pCity->isTradePostBuilt(eTeam);
 		std::vector<int> aYieldShown(NUM_YIELD_TYPES, 0);
-		if (!pCity->isNative())
+		if (!pCity->isNative() && pCity->isVisible(GC.getGameINLINE().getActiveTeam(), true))
 		{
             for (int iProfession = 0; iProfession < GC.getNumProfessionInfos(); ++iProfession)
             {
@@ -9289,34 +9329,37 @@ void CvGameTextMgr::buildCityBillboardIconString( CvWStringBuffer& szBuffer, CvC
 			szBuffer.append(L" ");
 			szBuffer.append(szTemp);
 		}
-
-		int iDefenseModifier = pCity->getDefenseModifier();
-		if (iDefenseModifier != 0)
+		if (pCity->isVisible(GC.getGameINLINE().getActiveTeam(), true))
 		{
-			szBuffer.append(CvWString::format(L" %c:%s%d%%", gDLL->getSymbolID(HEALTHY_CHAR), ((iDefenseModifier > 0) ? "+" : ""), iDefenseModifier));
+			int iDefenseModifier = pCity->getDefenseModifier();
+			if (iDefenseModifier != 0)
+			{
+				szBuffer.append(CvWString::format(L" %c:%s%d%%", gDLL->getSymbolID(HEALTHY_CHAR), ((iDefenseModifier > 0) ? "+" : ""), iDefenseModifier));
+			}
+
+		
+			if (!pCity->isNative())
+			{
+				if (pCity->getRebelPercent() > 0)
+				{
+					szBuffer.append(CvWString::format(L" %c:%d%%", gDLL->getSymbolID(BAD_GOLD_CHAR), pCity->getRebelPercent()));
+				}
+				if (pCity->getCityType() == CITYTYPE_COMMERCE)
+				{
+					szBuffer.append(CvWString::format(L" %c", gDLL->getSymbolID(BAD_FOOD_CHAR)));
+				}
+				else if (pCity->getCityType() == CITYTYPE_MONASTERY)
+				{
+					szBuffer.append(CvWString::format(L" %c", gDLL->getSymbolID(UNHEALTHY_CHAR)));
+				}
+				else if (pCity->getCityType() == CITYTYPE_OUTPOST)
+				{
+					szBuffer.append(CvWString::format(L" %c", gDLL->getSymbolID(BULLET_CHAR)));
+				}
+			}
 		}
 
-		if (pCity->getRebelPercent() > 0)
-		{
-			szBuffer.append(CvWString::format(L" %c:%d%%", gDLL->getSymbolID(BAD_GOLD_CHAR), pCity->getRebelPercent()));
-		}
-        if (!pCity->isNative())
-        {
-            if (pCity->getCityType() == CITYTYPE_COMMERCE)
-            {
-                szBuffer.append(CvWString::format(L" %c", gDLL->getSymbolID(BAD_FOOD_CHAR)));
-            }
-            else if (pCity->getCityType() == CITYTYPE_MONASTERY)
-            {
-                szBuffer.append(CvWString::format(L" %c", gDLL->getSymbolID(UNHEALTHY_CHAR)));
-            }
-            else if (pCity->getCityType() == CITYTYPE_OUTPOST)
-            {
-                szBuffer.append(CvWString::format(L" %c", gDLL->getSymbolID(BULLET_CHAR)));
-            }
-        }
-
-        if (pCity->isNative() && bTradeCity)
+        if (bTradeCity)
         {
             szBuffer.append(CvWString::format(L" %c", gDLL->getSymbolID(RELIGION_CHAR)));
         }

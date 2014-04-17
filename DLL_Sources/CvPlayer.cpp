@@ -6126,6 +6126,8 @@ bool CvPlayer::canDoCivics(CivicTypes eCivic, bool bProhitbitCheck) const
 		{
 			if (getIdeasResearched((CivicTypes)kCivicInfo.getRequiredInvention()) == 0)
 			{
+				//FAssert(GC.getCivicInfo((CivicTypes)kCivicInfo.getRequiredInvention()).getAllowsCivic() == eCivic);
+				FAssertMsg(GC.getCivicInfo((CivicTypes)kCivicInfo.getRequiredInvention()).getAllowsCivic() == eCivic, "Allowed Civics and Required Techs do not Match in XML" );
 				return false;
 			}
 		}
@@ -8362,6 +8364,8 @@ void CvPlayer::setCivic(CivicOptionTypes eIndex, CivicTypes eNewValue)
    // bool bIdea = false;
     if (eIndex == CIVICOPTION_INVENTIONS)
     {
+		// TODO this code should never be reached anymore, it it doesn't FAssert then remove it
+		FAssert(false);
 		m_paeCivics[eIndex] = NO_CIVIC;
         return;
         //eOldCivic = NO_CIVIC;
@@ -9687,7 +9691,7 @@ void CvPlayer::doCities()
 		{
 			CvCity* pCity = getCity(iPlotGroup, iCity);
 			pCity->doTurn();
-
+			//continue;
 			// save yield related data from city
 			iMarketCap += pCity->getMarketCap();
 

@@ -299,7 +299,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iOverflowSellPercent>50</iOverflowSellPercent>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<SeaPlotYieldChanges/>
 			<RiverPlotYieldChanges/>
@@ -312,90 +312,14 @@
 			<PrereqBuildingClasses/>
 			<BuildingClassNeededs/>
 			<iModdersCode1>MODER_CODE_TRADING_POST</iModdersCode1>
-      <YieldDemands>
-        <YieldDemand>
-          <YieldType>YIELD_FOOD</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_CATTLE</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_SHEEP</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_WOOL</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_LUMBER</YieldType>
-          <iYieldDemand>0</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_STONE</YieldType>
-          <iYieldDemand>0</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_SILVER</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_SALT</YieldType>
-          <iYieldDemand>0</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_SPICES</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_FUR</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_COTTON</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_BARLEY</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_GRAPES</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_ORE</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_CLOTH</YieldType>
-          <iYieldDemand>0</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_COATS</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_ALE</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_WINE</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_TOOLS</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_TRADE_GOODS</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-      </YieldDemands>
+      <YieldDemands/>
 			<iMarketCap>2</iMarketCap>
-			<AutoSellsYields/>
+      <AutoSellsYields>
+        <AutoSellsYield>
+          <YieldType>YIELD_FOOD</YieldType>
+          <iValue>1</iValue>
+        </AutoSellsYield>
+      </AutoSellsYields>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
@@ -465,7 +389,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iOverflowSellPercent>60</iOverflowSellPercent>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<SeaPlotYieldChanges/>
 			<RiverPlotYieldChanges/>
@@ -497,90 +421,14 @@
 			</BuildingClassNeededs>
 			<iModdersCode1>MODER_CODE_TRADING_POST</iModdersCode1>
 			<iIncreasesCityPopulation>3</iIncreasesCityPopulation>
-      <YieldDemands>
-        <YieldDemand>
-          <YieldType>YIELD_FOOD</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_CATTLE</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_SHEEP</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_WOOL</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_LUMBER</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_STONE</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_SILVER</YieldType>
-          <iYieldDemand>0</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_SALT</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_SPICES</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_FUR</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_COTTON</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_BARLEY</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_GRAPES</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_ORE</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_CLOTH</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_COATS</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_ALE</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_WINE</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_TOOLS</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_TRADE_GOODS</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-      </YieldDemands>
+      <YieldDemands/>
 			<iMarketCap>4</iMarketCap>
-			<AutoSellsYields/>
+      <AutoSellsYields>
+        <AutoSellsYield>
+          <YieldType>YIELD_FOOD</YieldType>
+          <iValue>2</iValue>
+        </AutoSellsYield>
+      </AutoSellsYields>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
@@ -642,7 +490,7 @@
 			<iAsset>150</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iOverflowSellPercent>75</iOverflowSellPercent>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<SeaPlotYieldChanges/>
 			<RiverPlotYieldChanges/>
@@ -664,89 +512,13 @@
 				</BuildingClassNeeded>
 			</BuildingClassNeededs>
 			<iModdersCode1>MODER_CODE_TRADING_POST</iModdersCode1>
-      <YieldDemands>
-        <YieldDemand>
+      <YieldDemands/>
+      <AutoSellsYields>
+        <AutoSellsYield>
           <YieldType>YIELD_FOOD</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_CATTLE</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_SHEEP</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_WOOL</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_LUMBER</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_STONE</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_SILVER</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_SALT</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_SPICES</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_FUR</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_COTTON</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_BARLEY</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_GRAPES</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_ORE</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_CLOTH</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_COATS</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_ALE</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_WINE</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_TOOLS</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_TRADE_GOODS</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-      </YieldDemands>
-			<AutoSellsYields/>
+          <iValue>3</iValue>
+        </AutoSellsYield>
+      </AutoSellsYields>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
@@ -1564,12 +1336,7 @@
 			<DomainProductionModifiers/>
 			<PrereqBuildingClasses/>
 			<BuildingClassNeededs/>
-      <YieldDemands>
-        <YieldDemand>
-          <YieldType>YIELD_GRAIN</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-      </YieldDemands>
+      <YieldDemands/>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
@@ -1673,12 +1440,7 @@
 			<DomainProductionModifiers/>
 			<PrereqBuildingClasses/>
 			<BuildingClassNeededs/>
-      <YieldDemands>
-        <YieldDemand>
-          <YieldType>YIELD_GRAIN</YieldType>
-          <iYieldDemand>700</iYieldDemand>
-        </YieldDemand>
-      </YieldDemands>
+      <YieldDemands/>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
@@ -1747,12 +1509,7 @@
 			<DomainProductionModifiers/>
 			<PrereqBuildingClasses/>
 			<BuildingClassNeededs/>
-			<YieldDemands>
-				<YieldDemand>
-					<YieldType>YIELD_TRADE_GOODS</YieldType>
-					<iYieldDemand>500</iYieldDemand>
-				</YieldDemand>
-			</YieldDemands>
+			<YieldDemands/>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
@@ -1822,12 +1579,7 @@
 			<DomainProductionModifiers/>
 			<PrereqBuildingClasses/>
 			<BuildingClassNeededs/>
-      <YieldDemands>
-        <YieldDemand>
-          <YieldType>YIELD_GRAIN</YieldType>
-          <iYieldDemand>500</iYieldDemand>
-        </YieldDemand>
-      </YieldDemands>
+      <YieldDemands/>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
@@ -1921,6 +1673,10 @@
       <YieldDemands>
         <YieldDemand>
           <YieldType>YIELD_GRAIN</YieldType>
+          <iYieldDemand>1000</iYieldDemand>
+        </YieldDemand>
+        <YieldDemand>
+          <YieldType>YIELD_FOOD</YieldType>
           <iYieldDemand>1000</iYieldDemand>
         </YieldDemand>
       </YieldDemands>
@@ -2375,7 +2131,7 @@
 			<bGraphicalOnly>0</bGraphicalOnly>
 			<bWorksWater>0</bWorksWater>
 			<bWater>0</bWater>
-			<bRiver>0</bRiver>
+			<bRiver>1</bRiver>
 			<bCapital>0</bCapital>
 			<bNeverCapture>0</bNeverCapture>
 			<bCenterInCity>0</bCenterInCity>
@@ -3617,7 +3373,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>200</iYieldStorage>
-			<iOverflowSellPercent>50</iOverflowSellPercent>
+			<iOverflowSellPercent>0</iOverflowSellPercent>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<SeaPlotYieldChanges/>
 			<RiverPlotYieldChanges/>

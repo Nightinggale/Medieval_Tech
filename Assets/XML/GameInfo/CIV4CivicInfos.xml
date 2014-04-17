@@ -1014,12 +1014,7 @@
         </UpkeepYield>
       </UpkeepYields>
       <AllowsUnitClasses/>
-      <AllowsUnitClassesImmigration>
-        <AllowsUnitClass>
-          <AllowsUnit>UNITCLASS_NOBLEMAN</AllowsUnit>
-          <iChange>1</iChange>
-        </AllowsUnitClass>
-      </AllowsUnitClassesImmigration>
+      <AllowsUnitClassesImmigration/>
       <AllowsPromotions/>
       <iAnarchyLength>2</iAnarchyLength>
       <iInitialCost>250</iInitialCost>
@@ -1071,7 +1066,7 @@
       <ConnectedTradeYields>
         <YieldChange>
           <YieldType>YIELD_IDEAS</YieldType>
-          <iYieldChange>3</iYieldChange>
+          <iYieldChange>1</iYieldChange>
         </YieldChange>
       </ConnectedTradeYields>
       <iAnarchyLength>1</iAnarchyLength>
@@ -1538,7 +1533,7 @@
       <FreeUnitClasses/>
       <ProfessionCombatChanges/>
       <ImmigrationConversion>NONE</ImmigrationConversion>
-      <RequiredInvention>MEDIEVAL_TECH_MOTTEANDBAILEY</RequiredInvention>
+      <RequiredInvention>MEDIEVAL_TECH_WHEELBARROW</RequiredInvention>
       <UpkeepYields>
         <UpkeepYield>
           <YieldType>YIELD_GOLD</YieldType>
@@ -2386,10 +2381,16 @@
 			<iCostToResearch>10</iCostToResearch>
 			<AllowsYields/>
 			<AllowsBuildingTypes/>
-			<AllowsUnitClasses/>
+      <AllowsUnitClasses>
+        <AllowsUnitClass>
+          <AllowsUnit>UNITCLASS_SERF</AllowsUnit>
+          <iChange>1</iChange>
+        </AllowsUnitClass>
+      </AllowsUnitClasses>
 			<AllowsPromotions/>
 			<AllowsProfessions/>
 			<AllowsTrait>INVENTION_WHEELBARROW</AllowsTrait>
+      <AllowsCivic>CIVIC_SERFDOM</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
@@ -3694,7 +3695,7 @@
 			<AllowsPromotions/>
 			<AllowsProfessions/>
 			<AllowsTrait/>
-      <AllowsCivic>CIVIC_SERFDOM</AllowsCivic>
+      <AllowsCivic/>
 			<AllowsBuildTypes>
 				<ModBuildType>
 					<BuildType>IMPROVEMENT_WATCH_TOWER</BuildType>
@@ -4569,28 +4570,14 @@
 			<RequiredUnitType/>
 			<RequiredYields/>
 			<iCostToResearch>6</iCostToResearch>
-			<AllowsYields>
-				<AllowsYield>
-					<YieldType>YIELD_GRAIN</YieldType>
-					<iChange>1</iChange>
-				</AllowsYield>
-			</AllowsYields>
+			<AllowsYields/>
 			<AllowsBuildingTypes>
 				<AllowsBuildingType>
 					<BuildingType>BUILDINGCLASS_MANOR</BuildingType>
 					<iChange>1</iChange>
 				</AllowsBuildingType>
 			</AllowsBuildingTypes>
-			<AllowsUnitClasses>
-				<AllowsUnitClass>
-					<AllowsUnit>UNITCLASS_BUTCHER</AllowsUnit>
-					<iChange>1</iChange>
-				</AllowsUnitClass>
-				<AllowsUnitClass>
-					<AllowsUnit>UNITCLASS_BAKER</AllowsUnit>
-					<iChange>1</iChange>
-				</AllowsUnitClass>
-			</AllowsUnitClasses>
+			<AllowsUnitClasses/>
 			<AllowsPromotions/>
 			<AllowsProfessions/>
 			<AllowsTrait/>
@@ -6087,7 +6074,7 @@
 				</AllowsProfession>
 			</AllowsProfessions>
 			<AllowsTrait/>
-      <AllowsCivic>CIVIC_MARKET_ECONOMY</AllowsCivic>
+      <AllowsCivic/>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
@@ -6252,6 +6239,7 @@
 			<AllowsPromotions/>
 			<AllowsProfessions/>
 			<AllowsTrait/>
+      <AllowsCivic>CIVIC_MARKET_ECONOMY</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>

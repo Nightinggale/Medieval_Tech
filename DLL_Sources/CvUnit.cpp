@@ -1094,6 +1094,13 @@ void CvUnit::doTurn()
         }
     }
 
+	if (getUnitTravelState() == UNIT_TRAVEL_STATE_LIVE_AMONG_NATIVES)
+	{
+		if (isHurt())
+        {
+            doHeal();
+        }
+	}
 
 	doUnitTravelTimer();
 
@@ -3128,9 +3135,9 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 	///TKs Med
 	if (isHuman() && m_pUnitInfo->isPreventTraveling() && !m_pUnitInfo->isMechUnit())
 	{
-	    if (pPlot->getOwner() != getOwner())
+	    if (plot()->getOwner() == getOwner() && pPlot->getOwner() != getOwner())
 	    {
-	        return false;
+			return false;
 	    }
 	}
 
@@ -5098,12 +5105,12 @@ bool CvUnit::canLearn() const
 	{
 		return false;
 	}
-	///TKs Invention Core Mod v 1.0
-	CvPlayerAI& kPlayer = GET_PLAYER(getOwner());
+	///TKs TODO 
+	/*CvPlayerAI& kPlayer = GET_PLAYER(getOwner());
 	if (!kPlayer.canUseUnit((UnitTypes)GC.getCivilizationInfo(kPlayer.getCivilizationType()).getCivilizationUnits(eUnitType)))
 	{
 		return false;
-	}
+	}*/
 #if 0
     for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
     {

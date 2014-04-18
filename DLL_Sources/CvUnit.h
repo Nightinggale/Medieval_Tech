@@ -5,6 +5,7 @@
 #ifndef CIV4_UNIT_H
 #define CIV4_UNIT_H
 
+#include "CvGameCoreDLL.h"
 #include "CvDLLEntity.h"
 //#include "CvEnums.h"
 //#include "CvStructs.h"
@@ -840,19 +841,19 @@ protected:
 
 	PromotionArray<bool> m_ja_bHasRealPromotion;
 	PromotionArray<unsigned char> m_ja_iFreePromotionCount;
-	int* m_paiTerrainDoubleMoveCount;
+	TerrainArray<char> m_ja_iTerrainDoubleMoveCount;
+	FeatureArray<char> m_ja_iFeatureDoubleMoveCount;
+	TerrainArray<short> m_ja_iExtraTerrainAttackPercent;
+	TerrainArray<short> m_ja_iExtraTerrainDefensePercent;
+	FeatureArray<short> m_ja_iExtraFeatureAttackPercent;
+	FeatureArray<short> m_ja_iExtraFeatureDefensePercent;
+	UnitClassArray<short> m_ja_iExtraUnitClassAttackModifier;
+	UnitClassArray<short> m_ja_iExtraUnitClassDefenseModifier;
+	UnitCombatArray<short> m_ja_iExtraUnitCombatModifier;
+
 	///TKs Med
 	EuropeTypes m_eUnitTradeMarket;
-	int* m_paiAltEquipmentTypes;
 	///TKe
-	int* m_paiFeatureDoubleMoveCount;
-	int* m_paiExtraTerrainAttackPercent;
-	int* m_paiExtraTerrainDefensePercent;
-	int* m_paiExtraFeatureAttackPercent;
-	int* m_paiExtraFeatureDefensePercent;
-	int* m_paiExtraUnitClassAttackModifier;
-	int* m_paiExtraUnitClassDefenseModifier;
-	int* m_paiExtraUnitCombatModifier;
 
 	bool canAdvance(const CvPlot* pPlot, int iThreshold) const;
 
@@ -868,7 +869,12 @@ protected:
 	void resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition& kBattle);
 
 	void doUnitTravelTimer();
-	void processPromotion(PromotionTypes ePromotion, int iChange);
+	/// unit promotion effect cache - start - Nightinggale
+	//void processPromotion(PromotionTypes ePromotion, int iChange);
+	void processPromotion(PromotionTypes ePromotion, int iChange, bool bLoading = false);
+	void updatePromotionCache(); // call ONLY when loading a savegame!!!
+	void reclaimCacheMemory();
+	/// unit promotion effect cache - end - Nightinggale
 	UnitCombatTypes getProfessionUnitCombatType(ProfessionTypes eProfession) const;
 	bool hasUnitCombatType(UnitCombatTypes eUnitCombat) const; // CombatGearTypes - Nightinggale
 	void processUnitCombatType(UnitCombatTypes eUnitCombat, int iChange);

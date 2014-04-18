@@ -46,7 +46,7 @@ template<class T> class JustInTimeArray
 private:
 	T* tArray;
 	const unsigned short m_iLength;
-	const unsigned short m_iType;
+	const unsigned char m_iType;
 	const T m_eDefault;
 
 public:
@@ -162,6 +162,13 @@ public:
 };
 
 template<class T>
+class FeatureArray: public JustInTimeArray<T>
+{
+public:
+	FeatureArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_FEATURE, eDefault){};
+};
+
+template<class T>
 class HurryArray: public JustInTimeArray<T>
 {
 public:
@@ -194,6 +201,13 @@ class PromotionArray: public JustInTimeArray<T>
 {
 public:
 	PromotionArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_PROMOTION, eDefault){};
+};
+
+template<class T>
+class TerrainArray: public JustInTimeArray<T>
+{
+public:
+	TerrainArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_TERRAIN, eDefault){};
 };
 
 template<class T>

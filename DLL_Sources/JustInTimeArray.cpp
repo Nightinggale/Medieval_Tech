@@ -196,5 +196,6 @@ void JustInTimeArray<T>::read(CvXMLLoadUtility* pXML, const char* sTag)
 // has to be after all template functions (read: last in file)
 template class JustInTimeArray <int>;
 template class JustInTimeArray <bool>;
+template class JustInTimeArray <char>;
 template class JustInTimeArray <unsigned char>;
 template class JustInTimeArray <short>;

@@ -13080,7 +13080,11 @@ void CvUnit::setHasRealPromotion(PromotionTypes eIndex, bool bValue)
 
 	if (isHasRealPromotion(eIndex) != bValue)
 	{
-		if (isHasPromotion(eIndex))
+		/// unit promotion effect cache - start - Nightinggale
+		bool bHasbefore = isHasPromotion(eIndex);
+		/// unit promotion effect cache - end - Nightinggale
+
+		if (bHasbefore)
 		{
 			processPromotion(eIndex, -1);
 		}
@@ -13099,7 +13103,11 @@ void CvUnit::setHasRealPromotion(PromotionTypes eIndex, bool bValue)
 		}
 
 		/// unit promotion effect cache - start - Nightinggale
-		reclaimCacheMemory();
+		if (bHasbefore && !isHasPromotion(eIndex))
+		{
+			// removing a promotion might allow releasing memory
+			reclaimCacheMemory();
+		}
 		/// unit promotion effect cache - end - Nightinggale
 	}
 }
@@ -13207,7 +13215,10 @@ void CvUnit::setFreePromotionCount(PromotionTypes eIndex, int iValue)
 
 	if (getFreePromotionCount(eIndex) != iValue)
 	{
-		if (isHasPromotion(eIndex))
+		/// unit promotion effect cache - start - Nightinggale
+		bool bHasBefore = isHasPromotion(eIndex);
+		/// unit promotion effect cache - end - Nightinggale
+		if (bHasBefore)
 		{
 			processPromotion(eIndex, -1);
 		}
@@ -13226,7 +13237,11 @@ void CvUnit::setFreePromotionCount(PromotionTypes eIndex, int iValue)
 		}
 
 		/// unit promotion effect cache - start - Nightinggale
-		reclaimCacheMemory();
+		if (bHasBefore && !isHasPromotion(eIndex))
+		{
+			// removing a promotion might allow releasing memory
+			reclaimCacheMemory();
+		}
 		/// unit promotion effect cache - end - Nightinggale
 	}
 }

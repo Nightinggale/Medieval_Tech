@@ -162,6 +162,13 @@ public:
 };
 
 template<class T>
+class FatherPointArray: public JustInTimeArray<T>
+{
+public:
+	FatherPointArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_FATHER_POINT, eDefault){};
+};
+
+template<class T>
 class FeatureArray: public JustInTimeArray<T>
 {
 public:

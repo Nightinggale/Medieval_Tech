@@ -58,7 +58,7 @@ void EventTriggeredData::setID(int iID)
 void EventTriggeredData::read(FDataStreamBase* pStream)
 {
 	pStream->Read(&m_iId);
-	pStream->Read((int*)&m_eTrigger);
+	pStream->Read(&m_eTrigger);
 	pStream->Read(&m_iTurn);
 	pStream->Read((int*)&m_ePlayer);
 	pStream->Read(&m_iCityId);
@@ -67,7 +67,7 @@ void EventTriggeredData::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iUnitId);
 	pStream->Read((int*)&m_eOtherPlayer);
 	pStream->Read(&m_iOtherPlayerCityId);
-	pStream->Read((int*)&m_eBuilding);
+	pStream->Read(&m_eBuilding);
 	pStream->ReadString(m_szText);
 	pStream->ReadString(m_szGlobalText);
 }
@@ -94,18 +94,35 @@ void PlotExtraYield::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iX);
 	pStream->Read(&m_iY);
 	m_aeExtraYield.clear();
+
+	/// JIT array save - start - Nightinggale
+	YieldArray<int> eArray;
+	eArray.read(pStream);
+
+	for (int i = 0; i < NUM_YIELD_TYPES; ++i)
+	{
+		m_aeExtraYield.push_back(eArray.get(i));
+	}
+
+	/// JIT array save - end - Nightinggale
+	/*
 	for (int i = 0; i < NUM_YIELD_TYPES; ++i)
 	{
 		int iYield;
 		pStream->Read(&iYield);
 		m_aeExtraYield.push_back(iYield);
 	}
+	*/
 }
 
 void PlotExtraYield::write(FDataStreamBase* pStream)
 {
 	pStream->Write(m_iX);
 	pStream->Write(m_iY);
+	/// JIT array save - start - Nightinggale
+	// save in JIT format, meaning first length, then content as ints
+	pStream->Write(NUM_YIELD_TYPES);
+	/// JIT array save - end - Nightinggale
 	for (int i = 0; i < NUM_YIELD_TYPES; ++i)
 	{
 		pStream->Write(m_aeExtraYield[i]);
@@ -114,8 +131,8 @@ void PlotExtraYield::write(FDataStreamBase* pStream)
 
 void BuildingYieldChange::read(FDataStreamBase* pStream)
 {
-	pStream->Read((int*)&eBuildingClass);
-	pStream->Read((int*)&eYield);
+	pStream->Read(&eBuildingClass);
+	pStream->Read(&eYield);
 	pStream->Read(&iChange);
 }
 

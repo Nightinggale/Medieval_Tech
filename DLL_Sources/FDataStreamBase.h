@@ -128,6 +128,7 @@ public:
 	void Read(EraTypes*             eVar) {Read(JIT_ARRAY_ERA              , (int*) eVar);}
 	void Read(EmphasizeTypes*       eVar) {Read(JIT_ARRAY_EMPHASIZE        , (int*) eVar);}
 	void Read(EuropeTypes*          eVar) {Read(JIT_ARRAY_EUROPE           , (int*) eVar);}
+	void Read(EventTriggerTypes*    eVar) {Read(JIT_ARRAY_EVENT_TRIGGER    , (int*) eVar);}
 	void Read(FatherTypes*          eVar) {Read(JIT_ARRAY_FATHER           , (int*) eVar);}
 	void Read(FeatureTypes*         eVar) {Read(JIT_ARRAY_FEATURE          , (int*) eVar);}
 	void Read(HandicapTypes*        eVar) {Read(JIT_ARRAY_HANDICAP         , (int*) eVar);}

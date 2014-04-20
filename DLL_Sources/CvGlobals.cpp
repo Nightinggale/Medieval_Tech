@@ -4262,8 +4262,12 @@ int CvGlobals::getArrayLength(JIT_ARRAY_TYPES eType)
 		return getNumEmphasizeInfos();
 	case JIT_ARRAY_EUROPE:
 		return getNumEuropeInfos();
+	case JIT_ARRAY_EVENT_TRIGGER:
+		return getNumEventTriggerInfos();
 	case JIT_ARRAY_FATHER:
 		return getNumFatherInfos();
+	case JIT_ARRAY_FATHER_POINT:
+		return getNumFatherPointInfos();
 	case JIT_ARRAY_FEATURE:
 		return getNumFeatureInfos();
 	case JIT_ARRAY_HANDICAP:
@@ -4339,8 +4343,14 @@ CvWString CvGlobals::getArrayType(JIT_ARRAY_TYPES eType, int iIndex)
 	case JIT_ARRAY_EUROPE:
 		szType = getEuropeInfo((EuropeTypes)iIndex).getType();
 		break;
+	case JIT_ARRAY_EVENT_TRIGGER:
+		szType = getEventTriggerInfo((EventTriggerTypes)iIndex).getType();
+		break;
 	case JIT_ARRAY_FATHER:
 		szType = getFatherInfo((FatherTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_FATHER_POINT:
+		szType = getFatherPointInfo((FatherPointTypes)iIndex).getType();
 		break;
 	case JIT_ARRAY_FEATURE:
 		szType = getFeatureInfo((FeatureTypes)iIndex).getType();

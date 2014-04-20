@@ -1889,6 +1889,7 @@ enum DllExport FunctionTypes
 
 enum DllExport TradeableItems
 {
+	// add to end for max savegame compatibility
 	TRADE_ITEM_NONE = -1,
 
 	TRADE_GOLD,
@@ -3315,7 +3316,9 @@ enum JIT_ARRAY_TYPES
 	JIT_ARRAY_ERA,
 	JIT_ARRAY_EMPHASIZE,
 	JIT_ARRAY_EUROPE,
+	JIT_ARRAY_EVENT_TRIGGER,
 	JIT_ARRAY_FATHER,
+	JIT_ARRAY_FATHER_POINT,
 	JIT_ARRAY_FEATURE,
 	JIT_ARRAY_HANDICAP,
 	JIT_ARRAY_HURRY,

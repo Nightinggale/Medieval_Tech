@@ -5636,7 +5636,7 @@ void CvCityAI::read(FDataStreamBase* pStream)
 	pStream->Read(&uiFlag);	// flags for expansion
 
 	pStream->Read(&m_iGiftTimer);
-	pStream->Read((int*)&m_eDesiredYield);
+	pStream->Read(&m_eDesiredYield);
 	pStream->Read(&m_iTargetSize);
 	pStream->Read(&m_iFoundValue);
 
@@ -5656,7 +5656,15 @@ void CvCityAI::read(FDataStreamBase* pStream)
 	m_ja_iEmphasizeYieldCount.read(pStream);
 	pStream->Read(&m_bForceEmphasizeCulture);
 	pStream->Read(NUM_CITY_PLOTS, m_aiBestBuildValue);
-	pStream->Read(NUM_CITY_PLOTS, (int*)m_aeBestBuild);
+	/// JIT array save - start - Nightinggale
+	for (int i = 0; i < NUM_CITY_PLOTS; i++)
+	{
+		BuildTypes eBuild;
+		pStream->Read(&eBuild);
+		m_aeBestBuild[i] = eBuild;
+	}
+	//pStream->Read(NUM_CITY_PLOTS, (int*)m_aeBestBuild);
+	/// JIT array save - start - Nightinggale
 	m_ba_Emphasize.read(pStream);
 	pStream->Read(&m_iCachePlayerClosenessTurn);
 	pStream->Read(&m_iCachePlayerClosenessDistance);

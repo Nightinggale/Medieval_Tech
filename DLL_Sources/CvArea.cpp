@@ -648,17 +648,22 @@ void CvArea::read(FDataStreamBase* pStream)
 		m_aTargetCities[iI].read(pStream);
 	}
 
+	/// JIT array save - start - Nightinggale
+	int iNumUnitAITypes = 0;
+	pStream->Read(&iNumUnitAITypes);
+	/// JIT array save - end - Nightinggale
+
 	for (iI = 0; iI < MAX_PLAYERS; iI++)
 	{
 		pStream->Read(NUM_YIELD_TYPES, m_aaiYieldRateModifier[iI]);
 	}
 	for (iI = 0; iI < MAX_PLAYERS; iI++)
 	{
-		pStream->Read(NUM_UNITAI_TYPES, m_aaiNumTrainAIUnits[iI]);
+		pStream->Read(iNumUnitAITypes, m_aaiNumTrainAIUnits[iI]);
 	}
 	for (iI = 0; iI < MAX_PLAYERS; iI++)
 	{
-		pStream->Read(NUM_UNITAI_TYPES, m_aaiNumAIUnits[iI]);
+		pStream->Read(iNumUnitAITypes, m_aaiNumAIUnits[iI]);
 	}
 
 	m_ja_iNumBonuses.read(pStream);
@@ -696,6 +701,10 @@ void CvArea::write(FDataStreamBase* pStream)
 	{
 		m_aTargetCities[iI].write(pStream);
 	}
+
+	/// JIT array save - start - Nightinggale
+	pStream->Write(NUM_UNITAI_TYPES);
+	/// JIT array save - end - Nightinggale
 
 	for (iI = 0; iI < MAX_PLAYERS; iI++)
 	{

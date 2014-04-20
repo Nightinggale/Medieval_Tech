@@ -121,6 +121,7 @@ public:
 	void                Read(JIT_ARRAY_TYPES eType, int* i);
 	
 	void Read(BonusTypes*           eVar) {Read(JIT_ARRAY_BONUS            , (int*) eVar);}
+	void Read(BuildTypes*           eVar) {Read(JIT_ARRAY_BUILD            , (int*) eVar);}
 	void Read(BuildingTypes*        eVar) {Read(JIT_ARRAY_BUILDING         , (int*) eVar);}
 	void Read(BuildingClassTypes*   eVar) {Read(JIT_ARRAY_BUILDING_CLASS   , (int*) eVar);}
 	void Read(SpecialBuildingTypes* eVar) {Read(JIT_ARRAY_BUILDING_SPECIAL , (int*) eVar);}

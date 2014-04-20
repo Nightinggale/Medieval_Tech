@@ -8294,7 +8294,7 @@ void CvCity::read(FDataStreamBase* pStream)
     ///TKs Med
 	// TODO city types in XML
     pStream->Read((int*)&m_iCityType);
-    pStream->Read((int*)&m_eSelectedArmor);
+    pStream->Read(&m_eSelectedArmor);
     pStream->Read((int*)&m_eVassalOwner);
     ///Tke
 	pStream->Read((int*)&m_eOwner);

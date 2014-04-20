@@ -4246,6 +4246,8 @@ int CvGlobals::getArrayLength(JIT_ARRAY_TYPES eType)
 	{
 	case JIT_ARRAY_BONUS:
 		return getNumBonusInfos();
+	case JIT_ARRAY_BUILD:
+		return getNumBuildInfos();
 	case JIT_ARRAY_BUILDING:
 		return getNumBuildingInfos();
 	case JIT_ARRAY_BUILDING_CLASS:
@@ -4318,6 +4320,9 @@ CvWString CvGlobals::getArrayType(JIT_ARRAY_TYPES eType, int iIndex)
 	{
 	case JIT_ARRAY_BONUS:
 		szType = getBonusInfo((BonusTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_BUILD:
+		szType = getBuildInfo((BuildTypes)iIndex).getType();
 		break;
 	case JIT_ARRAY_BUILDING:
 		szType = getBuildingInfo((BuildingTypes)iIndex).getType();

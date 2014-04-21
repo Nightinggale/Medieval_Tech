@@ -1733,18 +1733,6 @@ void getPlayerAIStrategyString(CvWString& szString, StrategyTypes eStrategyAI)
 //
 void postLoadGameFixes(int iFixCount)
 {
-	/// PlotGroup - start - Nightinggale
-	if (iFixCount < 2)
-	{
-		// assign plotgroups to this old savegame
-		for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
-		{
-			CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
-			pLoopPlot->updatePlotGroup();
-		}
-	}
-	/// PlotGroup - end - Nightinggale
-
 	/// unit plot cache - start - Nightinggale
 	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
 	{
@@ -1759,6 +1747,7 @@ void postLoadGameFixes(int iFixCount)
 	/// unit plot cache - end - Nightinggale
 
 	//Tks Civics Screen
+	// TODO the following should have a function of it's own rather than filling up that much here.
 	bool bTest = false;
 	if (bTest){
 	for (int iI = 0; iI < MAX_PLAYERS; iI++)

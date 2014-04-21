@@ -13335,14 +13335,7 @@ void CvUnit::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iUnarmedCount);
 	pStream->Read((int*)&m_eUnitTravelState);
     ///TKs Med **TradeMarket**
-	if (uiFlag > 0)
-	{
-		pStream->Read(&m_eUnitTradeMarket);
-	}
-	//else
-	//{
-		//m_eUnitTradeMarket = NO_EUROPE;
-	//}
+	pStream->Read(&m_eUnitTradeMarket);
 	pStream->Read(&m_iInvisibleTimer);
 	pStream->Read(&m_iTravelPlotX);
 	pStream->Read(&m_iTravelPlotY);
@@ -13395,7 +13388,7 @@ void CvUnit::read(FDataStreamBase* pStream)
 
 void CvUnit::write(FDataStreamBase* pStream)
 {
-	uint uiFlag=1;
+	uint uiFlag=0;
 	pStream->Write(uiFlag);		// flag for expansion
 
 	pStream->Write(m_iID);

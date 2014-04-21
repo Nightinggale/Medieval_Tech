@@ -11473,10 +11473,7 @@ void CvPlayerAI::read(FDataStreamBase* pStream)
 
 	/// post load function - start - Nightinggale
 	uint iFixCount = 0;
-	if (uiFlag >= 4)
-	{
-		pStream->Read(&iFixCount);
-	}
+	pStream->Read(&iFixCount);
 
 	if (m_eID == (MAX_PLAYERS - 1))
 	{

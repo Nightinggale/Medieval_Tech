@@ -6553,10 +6553,7 @@ void CvGame::read(FDataStreamBase* pStream)
 	// m_bPbemTurnSent not saved
 	pStream->Read(&m_bHotPbemBetweenTurns);
 	// m_bPlayerOptionsSent not saved
-	if (uiFlag > 0)
-	{
-		pStream->Read(&m_bMaxTurnsExtended);
-	}
+	pStream->Read(&m_bMaxTurnsExtended);
 
 	pStream->Read(&m_eHandicap);
 	pStream->Read((int*)&m_ePausePlayer);

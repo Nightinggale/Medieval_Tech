@@ -7619,14 +7619,11 @@ void CvPlot::read(FDataStreamBase* pStream)
 
 	/// PlotGroup - start - Nightinggale
 	SAFE_DELETE_ARRAY(m_aiPlotGroup);
-	if (uiFlag > 0)
+	pStream->Read(&cCount);
+	if (cCount > 0)
 	{
-		pStream->Read(&cCount);
-		if (cCount > 0)
-		{
-			m_aiPlotGroup = new int[cCount];
-			pStream->Read(cCount, m_aiPlotGroup);
-		}
+		m_aiPlotGroup = new int[cCount];
+		pStream->Read(cCount, m_aiPlotGroup);
 	}
 	/// PlotGroup - end - Nightinggale
 
@@ -7678,25 +7675,8 @@ void CvPlot::read(FDataStreamBase* pStream)
 		pStream->Read(cCount, m_abRiverCrossing);
 	}
 
-	/*
-	SAFE_DELETE_ARRAY(m_abRevealed);
-	pStream->Read(&cCount);
-	if (cCount > 0)
-	{
-		m_abRevealed = new bool[cCount];
-		pStream->Read(cCount, m_abRevealed);
-	}*/
 	/// player bitmap - start - Nightinggale
-	if (uiFlag >= 2)
-	{
-		pStream->Read(&m_bmRevealed);
-	} else {
-		pStream->Read(&cCount);
-		if (cCount > 0)
-		{
-			loadIntoBitmap(pStream, m_bmRevealed, cCount);
-		}
-	}
+	pStream->Read(&m_bmRevealed);
 	/// player bitmap - end - Nightinggale
 
 	SAFE_DELETE_ARRAY(m_aeRevealedImprovementType);
@@ -7790,7 +7770,7 @@ void CvPlot::write(FDataStreamBase* pStream)
 {
 	uint iI;
 
-	uint uiFlag=2;
+	uint uiFlag=0;
 	pStream->Write(uiFlag);		// flag for expansion
 
 	pStream->Write(m_iX);

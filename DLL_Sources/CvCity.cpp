@@ -8280,10 +8280,7 @@ void CvCity::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iDetectMaraudersRange);
 	pStream->Read(&m_iMaxFoodConsumed);
 	///TKe
-	if (uiFlag > 1)
-	{
-		pStream->Read(&m_iEducationThresholdMultiplier);
-	}
+	pStream->Read(&m_iEducationThresholdMultiplier);
 
 	pStream->Read(&m_bNeverLost);
 	pStream->Read(&m_bBombarded);
@@ -8302,34 +8299,10 @@ void CvCity::read(FDataStreamBase* pStream)
 	pStream->Read((int*)&m_eOriginalOwner);
 	pStream->Read((int*)&m_eCultureLevel);
 	pStream->Read(&m_eTeachUnitClass);
-	if (uiFlag == 0)
-	{
-		m_eMissionaryPlayer = NO_PLAYER;
-		CivilizationTypes eMissionaryCivilization;
-		pStream->Read((int*)&eMissionaryCivilization);
-		for (int iPlayer = 0; iPlayer < MAX_PLAYERS; iPlayer++)
-		{
-			CvPlayer& kPlayer = GET_PLAYER((PlayerTypes) iPlayer);
-			if (kPlayer.isAlive() && kPlayer.getCivilizationType() == eMissionaryCivilization)
-			{
-				m_eMissionaryPlayer = (PlayerTypes) iPlayer;
-				break;
-			}
-		}
-	}
-	else
-	{
-		pStream->Read((int*)&m_eMissionaryPlayer);
-	}
+	pStream->Read((int*)&m_eMissionaryPlayer);
     ///TKs Med
     pStream->Read(2, m_aiEventTimers);
-    //pStream->Read(MAX_TEAMS, m_abTradePostBuilt);
-	if (uiFlag < 6)
-	{
-		loadIntoBitmap(pStream, m_bmTradePostBuilt, MAX_TEAMS);
-	} else {
-		pStream->Read(&m_bmTradePostBuilt);
-	}
+	pStream->Read(&m_bmTradePostBuilt);
 	m_ja_iConnectedTradeBonus.read(pStream);
 	m_ja_iConnectedMissionBonus.read(pStream);
     ///Tke
@@ -8343,19 +8316,9 @@ void CvCity::read(FDataStreamBase* pStream)
 	pStream->Read(MAX_PLAYERS, m_aiCulture);
 
 	/// player bitmap - start - Nightinggale
-	//pStream->Read(MAX_PLAYERS, m_abEverOwned);
-	//pStream->Read(MAX_TEAMS, m_abRevealed);
-	//pStream->Read(MAX_TEAMS, m_abScoutVisited);
-	if (uiFlag < 6)
-	{
-		loadIntoBitmap(pStream, m_bmEverOwned, MAX_PLAYERS);
-		loadIntoBitmap(pStream, m_bmRevealed, MAX_TEAMS);
-		loadIntoBitmap(pStream, m_bmScoutVisited, MAX_TEAMS);
-	} else {
-		pStream->Read(&m_bmEverOwned);
-		pStream->Read(&m_bmRevealed);
-		pStream->Read(&m_bmScoutVisited);
-	}
+	pStream->Read(&m_bmEverOwned);
+	pStream->Read(&m_bmRevealed);
+	pStream->Read(&m_bmScoutVisited);
 	/// player bitmap - end - Nightinggale
 
 	pStream->ReadString(m_szName);
@@ -8386,71 +8349,21 @@ void CvCity::read(FDataStreamBase* pStream)
 	}
 
 	// traderoute just-in-time - start - Nightinggale
- 	if (uiFlag > 2)
-  	{
- 		ma_tradeImports.read(pStream);
- 		ma_tradeExports.read(pStream);
-		///Tks Med
-		ma_tradeMarket.read(pStream);
-		///Tke Med
- 		ma_tradeThreshold.read(pStream);
- 		// transport feeder - start - Nightinggale
- 		ma_tradeImportsMaintain.read(pStream);
-		ma_tradeStopAutoImport.read(pStream);
- 		// transport feeder - end - Nightinggale
- 	} else {
- 		int iNumYields;
-
- 		pStream->Read(&iNumYields);
- 		for (int iI = 0; iI < iNumYields; iI++)
- 		{
- 			int iIndex;
- 			pStream->Read(&iIndex);
- 			ma_tradeImports.set(true, iIndex);
- 		}
-
- 		pStream->Read(&iNumYields);
- 		for (int iI = 0; iI < iNumYields; iI++)
- 		{
- 			int iIndex;
- 			pStream->Read(&iIndex);
- 			ma_tradeExports.set(true, iIndex);
- 		}
-
-		///Tks Med
-		pStream->Read(&iNumYields);
-		if (iNumYields > 0)
-		{
-			int iIndex;
- 			pStream->Read(&iIndex);
- 			ma_tradeMarket.set(true, iIndex);
-		}
-		///Tke
-
- 		pStream->Read(&iNumYields);
- 		for (int i = 0; i < iNumYields; ++i)
- 		{
- 			YieldTypes eYield;
- 			int iLevel;
- 			pStream->Read((int*)&eYield);
- 			pStream->Read(&iLevel);
- 			ma_tradeThreshold.set(iLevel, eYield);
- 		}
-  	}
+ 	ma_tradeImports.read(pStream);
+ 	ma_tradeExports.read(pStream);
+	///Tks Med
+	ma_tradeMarket.read(pStream);
+	///Tke Med
+ 	ma_tradeThreshold.read(pStream);
+ 	// transport feeder - start - Nightinggale
+ 	ma_tradeImportsMaintain.read(pStream);
+	ma_tradeStopAutoImport.read(pStream);
+ 	// transport feeder - end - Nightinggale
  	// traderoute just-in-time - end - Nightinggale
 
 	// R&R, ray, finishing Custom House Screen
 	ma_aiCustomHouseSellThreshold.read(pStream);
 	ma_aiCustomHouseNeverSell.read(pStream);
-	if (uiFlag == 4)
-	{
-		// saved prices are no longer needed. Skip past them.
-		for (int i = 0; i < NUM_YIELD_TYPES; i++)
-		{
-			int iBuffer;
-			pStream->Read(&iBuffer);
-		}
-	}
 	// R&R, ray, finishing Custom House Screen END
 
 	// Teacher List - start - Nightinggale
@@ -8462,10 +8375,6 @@ void CvCity::read(FDataStreamBase* pStream)
 
 	pStream->Read(&m_iPopulationRank);
 	pStream->Read(&m_bPopulationRankValid);
-	//pStream->Read(NUM_YIELD_TYPES, m_aiBaseYieldRank);
-	//pStream->Read(NUM_YIELD_TYPES, m_abBaseYieldRankValid);
-	//pStream->Read(NUM_YIELD_TYPES, m_aiYieldRank);
-	//pStream->Read(NUM_YIELD_TYPES, m_abYieldRankValid);
 
 	pStream->Read(&iNumElts);
 	m_aEventsOccured.clear();
@@ -8503,7 +8412,7 @@ void CvCity::read(FDataStreamBase* pStream)
 
 void CvCity::write(FDataStreamBase* pStream)
 {
-	uint uiFlag=6;
+	uint uiFlag=0;
 	pStream->Write(uiFlag);		// flag for expansion
 
 	pStream->Write(m_iID);

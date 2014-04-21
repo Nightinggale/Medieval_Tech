@@ -2945,22 +2945,12 @@ void CvTeam::read(FDataStreamBase* pStream)
 	pStream->Read((int*)&m_eID);
 
 	/// player bitmap - start - Nightinggale
-	if (uiFlag == 0)
-	{
-		loadIntoBitmap(pStream, m_bmHasMet, MAX_TEAMS);
-		loadIntoBitmap(pStream, m_bmAtWar, MAX_TEAMS);
-		loadIntoBitmap(pStream, m_bmPermanentWarPeace, MAX_TEAMS);
-		loadIntoBitmap(pStream, m_bmOpenBorders, MAX_TEAMS);
-		loadIntoBitmap(pStream, m_bmDefensivePact, MAX_TEAMS);
-		loadIntoBitmap(pStream, m_bmForcePeace, MAX_TEAMS);
-	} else {
-		pStream->Read(&m_bmHasMet);
-		pStream->Read(&m_bmAtWar);
-		pStream->Read(&m_bmPermanentWarPeace);
-		pStream->Read(&m_bmOpenBorders);
-		pStream->Read(&m_bmDefensivePact);
-		pStream->Read(&m_bmForcePeace);
-	}
+	pStream->Read(&m_bmHasMet);
+	pStream->Read(&m_bmAtWar);
+	pStream->Read(&m_bmPermanentWarPeace);
+	pStream->Read(&m_bmOpenBorders);
+	pStream->Read(&m_bmDefensivePact);
+	pStream->Read(&m_bmForcePeace);
 	/// player bitmap - end - Nightinggale
 
 	m_ba_FatherIgnore.read(pStream);
@@ -2985,7 +2975,7 @@ void CvTeam::read(FDataStreamBase* pStream)
 
 void CvTeam::write(FDataStreamBase* pStream)
 {
-	uint uiFlag = 1;
+	uint uiFlag = 0;
 	pStream->Write(uiFlag);		// flag for expansion
 	pStream->Write(m_iNumMembers);
 	pStream->Write(m_iAliveCount);

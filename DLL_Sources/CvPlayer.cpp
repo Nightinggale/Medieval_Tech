@@ -11411,15 +11411,9 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iDomesticGreatGeneralRateModifier);
 	pStream->Read(&m_iImmigrationThresholdMultiplier);
 	pStream->Read(&m_iRevolutionEuropeUnitThresholdMultiplier);
-	if (uiFlag > 1)
-	{
-		pStream->Read(&m_iKingNumUnitMultiplier);
-	}
-	if (uiFlag <= 2)
-	{
-		int iEducationThresholdMultiplier;
-		pStream->Read(&iEducationThresholdMultiplier);
-	}
+	
+	pStream->Read(&m_iKingNumUnitMultiplier);
+
 	pStream->Read(&m_iNativeAngerModifier);
 	pStream->Read(&m_iFreeExperience);
 	pStream->Read(&m_iWorkerSpeedModifier);
@@ -11441,10 +11435,8 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iLandScore);
 	pStream->Read(&m_iFatherScore);
 	pStream->Read(&m_iCombatExperience);
-	if (uiFlag > 1)
-	{
-		pStream->Read(&m_iMissionarySuccessPercent);
-	}
+	
+	pStream->Read(&m_iMissionarySuccessPercent);
 
 	pStream->Read(&m_bAlive);
 	pStream->Read(&m_bEverAlive);
@@ -11498,11 +11490,8 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	m_ja_iTradeRouteStartingPlotY.read(pStream);
 	m_ja_bTradeRouteTypes.read(pStream);
 	///Tke
-	if (uiFlag > 1)
-	{
-		pStream->Read(MAX_PLAYERS, m_aiMissionaryPoints);
-		pStream->Read(MAX_PLAYERS, m_aiMissionaryThresholdMultiplier);
-	}
+	pStream->Read(MAX_PLAYERS, m_aiMissionaryPoints);
+	pStream->Read(MAX_PLAYERS, m_aiMissionaryThresholdMultiplier);
 
 	m_ba_YieldEuropeTradable.read(pStream);
 	pStream->Read(NUM_FEAT_TYPES, m_abFeatAccomplished);
@@ -11530,12 +11519,6 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	m_ja_iBuildingClassMaking.read(pStream);
 	m_ja_iHurryCount.read(pStream);
 	m_ja_iSpecialBuildingNotRequiredCount.read(pStream);
-	if (uiFlag <= 1)
-	{
-		std::vector<int> aiMissionaryPoints(GC.getNumCivilizationInfos());
-		pStream->Read(GC.getNumCivilizationInfos(), &aiMissionaryPoints[0]);
-		pStream->Read(GC.getNumCivilizationInfos(), &aiMissionaryPoints[0]);
-	}
 	m_ja_iProfessionEquipmentModifier.read(pStream);
 	m_ja_iTraitCount.read(pStream);
 
@@ -11602,10 +11585,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	}
 
 	/// PlotGroup - start - Nightinggale
-	if (uiFlag >= 4)
-	{
-		ReadStreamableFFreeListTrashArray(m_plotGroups, pStream);
-	}
+	ReadStreamableFFreeListTrashArray(m_plotGroups, pStream);
 	/// PlotGroup - end - Nightinggale
 
 	ReadStreamableFFreeListTrashArray(m_selectionGroups, pStream);
@@ -11877,10 +11857,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	///Tks CivicsEnd
 	pStream->Read(&m_iMissionaryHide);
 	pStream->Read(&m_iTradingPostHide);
-	if (uiFlag >= 5)
-	{
-		pStream->Read(&m_iWorkersBuildAfterMove);
-	}
+	pStream->Read(&m_iWorkersBuildAfterMove);
 	pStream->Read(&m_iHuntingYieldPercent);
 	pStream->Read(&m_iGoldPlundered);
 	pStream->Read(&m_iMissionsActive);
@@ -11908,7 +11885,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 {
 	int iI;
 
-	uint uiFlag = 5;
+	uint uiFlag = 0;
 	pStream->Write(uiFlag);		// flag for expansion
 
 	pStream->Write(m_iStartingX);

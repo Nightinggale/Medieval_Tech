@@ -666,6 +666,10 @@ public:
 	int getCurrentResearchProgress(bool bGetTurns, CivicTypes eCivic = NO_CIVIC);
 	int getTurnstoCompleteResearch(bool bReturnNetResearch=false, CivicTypes eCivic = NO_CIVIC);
 	void processCivics(CivicTypes eCivic, int iChange);
+	/// non saved civic effects - start - Nightinggale
+	void processCivicNotSaved(CivicTypes eCivic, int iChange);
+	void postLoadCivicUpdate();
+	/// non saved civic effects - end - Nightinggale
 	int getIdea(bool Research, PlayerTypes ePlayer = NO_PLAYER) const;
 	void setResearchPartner(PlayerTypes ePartner);
 	PlayerTypes getResearchPartner() const;

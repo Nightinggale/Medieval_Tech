@@ -11025,6 +11025,12 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
         processTrait((TraitTypes)kCivicInfo.getAllowsTrait(), 1);
     }
 
+	/// non saved civic effects - start - Nightinggale
+	// update the part of the cache, which is recalculated on load rather than included in savegames.
+	processCivicNotSaved(eCivic, iChange);
+	/// non saved civic effects - end - Nightinggale
+
+
     if (kCivicInfo.getFreeHurriedImmigrants() > 0)
     {
         for (int iX=0; iX < kCivicInfo.getFreeHurriedImmigrants(); iX++)
@@ -11162,10 +11168,6 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
     {
         GET_TEAM(getTeam()).changeMapTradingCount(1);
     }
-	if (kCivicInfo.isWorkersBuildAfterMove())
-    {
-        changeWorkersBuildAfterMove(iChange);
-    }
 
     changeFreeTechs(kCivicInfo.getFreeTechs());
 //    changeProlificInventorModifier(kCivicInfo.getProlificInventorRateChange());
@@ -11173,24 +11175,14 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
     changeGold(kCivicInfo.getGoldBonus());
 	changeMissionaryHide(kCivicInfo.getMissionariesNotCosumed() * iChange);
 	changeTradingPostHide(kCivicInfo.getTradingPostNotCosumed() * iChange);
-	changeHuntingYieldPercent(kCivicInfo.getHuntingYieldPercent() * iChange);
 	//changeNumDocksNextUnits(kCivicInfo.getIncreasedImmigrants() * iChange);
     ///TKe
 	changeGreatGeneralRateModifier(kCivicInfo.getGreatGeneralRateModifier() * iChange);
 	changeDomesticGreatGeneralRateModifier(kCivicInfo.getDomesticGreatGeneralRateModifier() * iChange);
 	changeFreeExperience(kCivicInfo.getFreeExperience() * iChange);
-	changeWorkerSpeedModifier(kCivicInfo.getWorkerSpeedModifier() * iChange);
-	changeImprovementUpgradeRateModifier(kCivicInfo.getImprovementUpgradeRateModifier() * iChange);
-	changeMilitaryProductionModifier(kCivicInfo.getMilitaryProductionModifier() * iChange);
-	changeExpInBorderModifier(kCivicInfo.getExpInBorderModifier() * iChange);
 	changeNativeCombatModifier(kCivicInfo.getNativeCombatModifier() * iChange);
-	changeDominateNativeBordersCount(kCivicInfo.isDominateNativeBorders() ? iChange : 0);
 	changeRevolutionEuropeTradeCount(kCivicInfo.isRevolutionEuropeTrade() ? iChange : 0);
-	setFatherPointMultiplier(getFatherPointMultiplier() + kCivicInfo.getFatherPointModifier() * iChange);
-	for (int iFatherPoint = 0; iFatherPoint < GC.getNumFatherPointInfos(); ++iFatherPoint)
-	{
-		changeBonusFatherPoints((FatherPointTypes)iFatherPoint, kCivicInfo.getFartherPointChanges(iFatherPoint) * iChange);
-	}
+
 	if (kCivicInfo.getImmigrationConversion() != NO_YIELD)
 	{
 		if (iChange > 0)
@@ -11241,14 +11233,6 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
 	for (int iI = 0; iI < GC.getNumSpecialBuildingInfos(); iI++)
 	{
 		changeSpecialBuildingNotRequiredCount(((SpecialBuildingTypes)iI), ((kCivicInfo.isSpecialBuildingNotRequired(iI)) ? iChange : 0));
-	}
-
-	for (int iI = 0; iI < GC.getNumImprovementInfos(); iI++)
-	{
-		for (int iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
-		{
-			changeImprovementYieldChange(((ImprovementTypes)iI), ((YieldTypes)iJ), (kCivicInfo.getImprovementYieldChanges(iI, iJ) * iChange));
-		}
 	}
 
 	//TKs Civics
@@ -11393,6 +11377,52 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
         }
     }
 }
+
+/// non saved civic effects - start - Nightinggale
+void CvPlayer::processCivicNotSaved(CivicTypes eCivic, int iChange)
+{
+	CvCivicInfo& kCivicInfo = GC.getCivicInfo(eCivic);
+
+	if (kCivicInfo.isWorkersBuildAfterMove())
+    {
+        changeWorkersBuildAfterMove(iChange);
+    }
+
+	changeHuntingYieldPercent(kCivicInfo.getHuntingYieldPercent() * iChange);
+	changeWorkerSpeedModifier(kCivicInfo.getWorkerSpeedModifier() * iChange);
+	changeImprovementUpgradeRateModifier(kCivicInfo.getImprovementUpgradeRateModifier() * iChange);
+	changeMilitaryProductionModifier(kCivicInfo.getMilitaryProductionModifier() * iChange);
+	changeExpInBorderModifier(kCivicInfo.getExpInBorderModifier() * iChange);
+	changeDominateNativeBordersCount(kCivicInfo.isDominateNativeBorders() ? iChange : 0);
+	setFatherPointMultiplier(getFatherPointMultiplier() + kCivicInfo.getFatherPointModifier() * iChange);
+
+	for (int iFatherPoint = 0; iFatherPoint < GC.getNumFatherPointInfos(); ++iFatherPoint)
+	{
+		changeBonusFatherPoints((FatherPointTypes)iFatherPoint, kCivicInfo.getFartherPointChanges(iFatherPoint) * iChange);
+	}
+
+	for (int iI = 0; iI < GC.getNumImprovementInfos(); iI++)
+	{
+		for (int iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
+		{
+			changeImprovementYieldChange(((ImprovementTypes)iI), ((YieldTypes)iJ), (kCivicInfo.getImprovementYieldChanges(iI, iJ) * iChange));
+		}
+	}
+}
+
+void CvPlayer::postLoadCivicUpdate()
+{
+	for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); iCivic++)
+	{
+		CivicTypes eCivic = (CivicTypes)iCivic;
+		if (isCivic(eCivic))
+		{
+			processCivicNotSaved(eCivic, 1);
+		}
+	}
+}
+/// non saved civic effects - end - Nightinggale
+
 ///TKe
 void CvPlayer::showMissedMessages()
 {
@@ -11453,13 +11483,9 @@ void CvPlayer::read(FDataStreamBase* pStream)
 
 	pStream->Read(&m_iNativeAngerModifier);
 	pStream->Read(&m_iFreeExperience);
-	pStream->Read(&m_iWorkerSpeedModifier);
-	pStream->Read(&m_iImprovementUpgradeRateModifier);
-	pStream->Read(&m_iMilitaryProductionModifier);
 	pStream->Read(&m_iCityDefenseModifier);
 	pStream->Read(&m_iHighestUnitLevel);
 	pStream->Read(&m_iFatherOverflowBells);
-	pStream->Read(&m_iExpInBorderModifier);
 	pStream->Read(&m_iLevelExperienceModifier);
 	pStream->Read(&m_iCapitalCityID);
 	///TKs Med
@@ -11541,7 +11567,6 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	m_ja_iIdeaProgress.read(pStream);
 	m_ja_iIdeasResearched.read(pStream);
 	m_ja_iPreviousFatherPoints.read(pStream);
-	m_ja_iBonusFatherPoints.read(pStream);
 	///TKe
 	m_ja_iImprovementCount.read(pStream);
 	m_ja_iFreeBuildingCount.read(pStream);
@@ -11583,11 +11608,6 @@ void CvPlayer::read(FDataStreamBase* pStream)
 		}
 	}
 	/// JIT array save - end - Nightinggale
-
-	for (iI=0;iI<GC.getNumImprovementInfos();iI++)
-	{
-		pStream->Read(NUM_YIELD_TYPES, m_ppiImprovementYieldChange[iI]);
-	}
 
 	for (iI=0;iI<GC.getNumBuildingClassInfos();iI++)
 	{
@@ -11866,9 +11886,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iBellsStored);
 	pStream->Read(&m_iTaxRate);
 	pStream->Read(&m_iNativeCombatModifier);
-	pStream->Read(&m_iDominateNativeBordersCount);
 	pStream->Read(&m_iRevolutionEuropeTradeCount);
-	pStream->Read(&m_iFatherPointMultiplier);
 	pStream->Read(&m_iMissionaryRateModifier);
 
 	///TKs Invention Core Mod v 1.0
@@ -11894,8 +11912,6 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	///Tks CivicsEnd
 	pStream->Read(&m_iMissionaryHide);
 	pStream->Read(&m_iTradingPostHide);
-	pStream->Read(&m_iWorkersBuildAfterMove);
-	pStream->Read(&m_iHuntingYieldPercent);
 	pStream->Read(&m_iGoldPlundered);
 	pStream->Read(&m_iMissionsActive);
 	pStream->Read(&m_iVillages);
@@ -11909,6 +11925,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 
 	if (this->getCivilizationType() != NO_CIVILIZATION)
 	{
+		postLoadCivicUpdate(); /// non saved civic effects - Nightinggale
 		Update_cache_YieldEquipmentAmount(); // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 		this->updateInventionEffectCache(); // invention effect cache - Nightinggale	
 	}
@@ -11941,13 +11958,9 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(m_iKingNumUnitMultiplier);
 	pStream->Write(m_iNativeAngerModifier);
 	pStream->Write(m_iFreeExperience);
-	pStream->Write(m_iWorkerSpeedModifier);
-	pStream->Write(m_iImprovementUpgradeRateModifier);
-	pStream->Write(m_iMilitaryProductionModifier);
 	pStream->Write(m_iCityDefenseModifier);
 	pStream->Write(m_iHighestUnitLevel);
 	pStream->Write(m_iFatherOverflowBells);
-	pStream->Write(m_iExpInBorderModifier);
 	pStream->Write(m_iLevelExperienceModifier);
 	pStream->Write(m_iCapitalCityID);
 	///TKs Med
@@ -12024,7 +12037,6 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	m_ja_iIdeaProgress.write(pStream);
    	m_ja_iIdeasResearched.write(pStream);
    	m_ja_iPreviousFatherPoints.write(pStream);
-	m_ja_iBonusFatherPoints.write(pStream);
    	///TKe
 	m_ja_iImprovementCount.write(pStream);
 	m_ja_iFreeBuildingCount.write(pStream);
@@ -12048,11 +12060,6 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	for (iI=0;iI<GC.getNumCivicOptionInfos();iI++)
 	{
 		pStream->Write(m_paeCivics[iI]);
-	}
-
-	for (iI=0;iI<GC.getNumImprovementInfos();iI++)
-	{
-		pStream->Write(NUM_YIELD_TYPES, m_ppiImprovementYieldChange[iI]);
 	}
 
 	for (iI=0;iI<GC.getNumBuildingClassInfos();iI++)
@@ -12301,9 +12308,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(m_iBellsStored);
 	pStream->Write(m_iTaxRate);
 	pStream->Write(m_iNativeCombatModifier);
-	pStream->Write(m_iDominateNativeBordersCount);
 	pStream->Write(m_iRevolutionEuropeTradeCount);
-	pStream->Write(m_iFatherPointMultiplier);
 	pStream->Write(m_iMissionaryRateModifier);
 
 	 ///TKs Invention Core Mod v 1.0
@@ -12329,8 +12334,6 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	///Tks CivicsEnd
 	pStream->Write(m_iMissionaryHide);
 	pStream->Write(m_iTradingPostHide);
-	pStream->Write(m_iWorkersBuildAfterMove);
-	pStream->Write(m_iHuntingYieldPercent);
 	pStream->Write(m_iGoldPlundered);
 	pStream->Write(m_iMissionsActive);
 	pStream->Write(m_iVillages);

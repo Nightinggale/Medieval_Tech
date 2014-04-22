@@ -11637,10 +11637,6 @@ void CvPlayer::read(FDataStreamBase* pStream)
 		}
 	}
 
-	ReadStreamableFFreeListTrashArray(m_cities, pStream);
-	m_tradeRoutes.Read(pStream);
-	m_units.Read(pStream);
-
 	freeEuropeUnits();
 	int iNumEuropeUnits;
 	pStream->Read(&iNumEuropeUnits);
@@ -11934,6 +11930,11 @@ void CvPlayer::read(FDataStreamBase* pStream)
 		Update_cache_YieldEquipmentAmount(); // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 		this->updateInventionEffectCache(); // invention effect cache - Nightinggale	
 	}
+
+	// load after cache is updated
+	m_tradeRoutes.Read(pStream);
+	ReadStreamableFFreeListTrashArray(m_cities, pStream);
+	m_units.Read(pStream);
 }
 
 //
@@ -12058,10 +12059,6 @@ void CvPlayer::write(FDataStreamBase* pStream)
 			pStream->WriteString(m_aszCityNames[i]);
 		}
 	}
-
-	WriteStreamableFFreeListTrashArray(m_cities, pStream);
-	m_tradeRoutes.Write(pStream);
-	m_units.Write(pStream);
 
 	pStream->Write((int)m_aEuropeUnits.size());
 	for(int i=0;i<(int)m_aEuropeUnits.size();i++)
@@ -12320,6 +12317,11 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(m_bAllResearchComplete);
 	pStream->Write(m_bFirstCityRazed);
 	///TKe
+
+	// other classes should be saved last
+	m_tradeRoutes.Write(pStream);
+	WriteStreamableFFreeListTrashArray(m_cities, pStream);
+	m_units.Write(pStream);
 }
 
 void CvPlayer::createGreatGeneral(UnitTypes eGreatGeneralUnit, bool bIncrementExperience, int iX, int iY)

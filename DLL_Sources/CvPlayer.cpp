@@ -5382,13 +5382,9 @@ void CvPlayer::processTrait(TraitTypes eTrait, int iChange)
 
 	changeTraitCount(eTrait, iChange);
 
-	changeLevelExperienceModifier(kTrait.getLevelExperienceModifier() * iChange);
-	changeGreatGeneralRateModifier(kTrait.getGreatGeneralRateModifier() * iChange);
-	changeDomesticGreatGeneralRateModifier(kTrait.getDomesticGreatGeneralRateModifier() * iChange);
-
-	changeNativeAngerModifier(kTrait.getNativeAngerModifier() * iChange);
-	changeNativeCombatModifier(kTrait.getNativeCombatModifier() * iChange);
-	changeMissionaryRateModifier(kTrait.getMissionaryModifier() * iChange);
+	/// trait effects not saved - start - Nightinggale
+	processTraitNotSaved(eTrait, iChange);
+	/// trait effects not saved - end - Nightinggale
 
 	for (int iProfession = 0; iProfession < GC.getNumProfessionInfos(); ++iProfession)
 	{
@@ -5440,14 +5436,6 @@ void CvPlayer::processTrait(TraitTypes eTrait, int iChange)
 	{
 		YieldTypes eYield = (YieldTypes) iYield;
 
-		changeYieldRateModifier(eYield, iChange * kTrait.getYieldModifier(iYield));
-		changeBuildingRequiredYieldModifier(eYield, kTrait.getBuildingRequiredYieldModifier(eYield) * iChange);
-
-		if (kTrait.isTaxYieldModifier(iYield))
-		{
-			changeTaxYieldModifierCount(eYield, iChange);
-		}
-
 		updateExtraYieldThreshold(eYield);
 
 		if (kTrait.getCityExtraYield(iYield) != 0 || kTrait.getExtraYieldThreshold(iYield) != 0)
@@ -5459,17 +5447,6 @@ void CvPlayer::processTrait(TraitTypes eTrait, int iChange)
 	if (bUpdatePlotYields)
 	{
 		updateYield();
-	}
-
-	for (int iUnitClass = 0; iUnitClass < GC.getNumUnitClassInfos(); ++iUnitClass)
-	{
-		changeUnitMoveChange((UnitClassTypes) iUnitClass, iChange * kTrait.getUnitMoveChange(iUnitClass));
-		changeUnitStrengthModifier((UnitClassTypes) iUnitClass, iChange * kTrait.getUnitStrengthModifier(iUnitClass));
-	}
-
-	for (int iProfession = 0; iProfession < GC.getNumProfessionInfos(); ++iProfession)
-	{
-		changeProfessionMoveChange((ProfessionTypes) iProfession, iChange * kTrait.getProfessionMoveChange(iProfession));
 	}
 
 	for (int iBuildingClass = 0; iBuildingClass < GC.getNumBuildingClassInfos(); ++iBuildingClass)
@@ -5502,18 +5479,30 @@ void CvPlayer::processTrait(TraitTypes eTrait, int iChange)
 			}
 		}
 	}
-
-	changeCityDefenseModifier(iChange * kTrait.getCityDefense());
-
-	/// trait effects not saved - start - Nightinggale
-	processTraitNotSaved(eTrait, iChange);
-	/// trait effects not saved - end - Nightinggale
 }
 
 /// trait effects not saved - start - Nightinggale
 void CvPlayer::processTraitNotSaved(TraitTypes eTrait, int iChange)
 {
 	CvTraitInfo& kTrait = GC.getTraitInfo(eTrait);
+
+	changeLevelExperienceModifier(kTrait.getLevelExperienceModifier() * iChange);
+	changeNativeAngerModifier(kTrait.getNativeAngerModifier() * iChange);
+	changeMissionaryRateModifier(kTrait.getMissionaryModifier() * iChange);
+	changeCityDefenseModifier(iChange * kTrait.getCityDefense());
+
+	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	{
+		YieldTypes eYield = (YieldTypes) iYield;
+
+		changeYieldRateModifier(eYield, iChange * kTrait.getYieldModifier(iYield)); // civics
+		changeBuildingRequiredYieldModifier(eYield, kTrait.getBuildingRequiredYieldModifier(eYield) * iChange);
+
+		if (kTrait.isTaxYieldModifier(iYield))
+		{
+			changeTaxYieldModifierCount(eYield, iChange);
+		}
+	}
 
 	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
 	{
@@ -5524,6 +5513,22 @@ void CvPlayer::processTraitNotSaved(TraitTypes eTrait, int iChange)
 			changeBuildingYieldChange((BuildingClassTypes) iBuildingClass, eYield, iChange * kTrait.getBuildingYieldChange(iBuildingClass, iYield));
 		}
 	}
+
+	for (int iUnitClass = 0; iUnitClass < GC.getNumUnitClassInfos(); ++iUnitClass)
+	{
+		changeUnitMoveChange((UnitClassTypes) iUnitClass, iChange * kTrait.getUnitMoveChange(iUnitClass));
+		changeUnitStrengthModifier((UnitClassTypes) iUnitClass, iChange * kTrait.getUnitStrengthModifier(iUnitClass));
+	}
+
+	for (int iProfession = 0; iProfession < GC.getNumProfessionInfos(); ++iProfession)
+	{
+		changeProfessionMoveChange((ProfessionTypes) iProfession, iChange * kTrait.getProfessionMoveChange(iProfession));
+	}
+
+	// the following lines are also set by civics
+	changeGreatGeneralRateModifier(kTrait.getGreatGeneralRateModifier() * iChange);
+	changeDomesticGreatGeneralRateModifier(kTrait.getDomesticGreatGeneralRateModifier() * iChange);
+	changeNativeCombatModifier(kTrait.getNativeCombatModifier() * iChange);
 }
 
 void CvPlayer::postLoadUpateTraits()
@@ -11204,10 +11209,7 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
 	changeTradingPostHide(kCivicInfo.getTradingPostNotCosumed() * iChange);
 	//changeNumDocksNextUnits(kCivicInfo.getIncreasedImmigrants() * iChange);
     ///TKe
-	changeGreatGeneralRateModifier(kCivicInfo.getGreatGeneralRateModifier() * iChange);
-	changeDomesticGreatGeneralRateModifier(kCivicInfo.getDomesticGreatGeneralRateModifier() * iChange);
 	changeFreeExperience(kCivicInfo.getFreeExperience() * iChange);
-	changeNativeCombatModifier(kCivicInfo.getNativeCombatModifier() * iChange);
 	changeRevolutionEuropeTradeCount(kCivicInfo.isRevolutionEuropeTrade() ? iChange : 0);
 
 	if (kCivicInfo.getImmigrationConversion() != NO_YIELD)
@@ -11243,13 +11245,6 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
 	for (int iProfession = 0; iProfession < GC.getNumProfessionInfos(); ++iProfession)
 	{
 		changeProfessionCombatChange((ProfessionTypes) iProfession, kCivicInfo.getProfessionCombatChange(iProfession) * iChange);
-	}
-
-	for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
-	{
-		changeYieldRateModifier(((YieldTypes)iI), (kCivicInfo.getYieldModifier(iI) * iChange));
-		changeCapitalYieldRateModifier(((YieldTypes)iI), (kCivicInfo.getCapitalYieldModifier(iI) * iChange));
-		changeGarrisonUnitBonus((YieldTypes)iI, kCivicInfo.getGarrisonUnitModifiers(iI) * iChange);///Tks Civics
 	}
 
 	for (int iI = 0; iI < GC.getNumHurryInfos(); iI++)
@@ -11435,6 +11430,19 @@ void CvPlayer::processCivicNotSaved(CivicTypes eCivic, int iChange)
 			changeImprovementYieldChange(((ImprovementTypes)iI), ((YieldTypes)iJ), (kCivicInfo.getImprovementYieldChanges(iI, iJ) * iChange));
 		}
 	}
+
+	for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
+	{
+		changeYieldRateModifier(((YieldTypes)iI), (kCivicInfo.getYieldModifier(iI) * iChange)); // trait
+		changeCapitalYieldRateModifier(((YieldTypes)iI), (kCivicInfo.getCapitalYieldModifier(iI) * iChange));
+		changeGarrisonUnitBonus((YieldTypes)iI, kCivicInfo.getGarrisonUnitModifiers(iI) * iChange);///Tks Civics
+	}
+
+
+	// the following lines are also set by traits
+	changeGreatGeneralRateModifier(kCivicInfo.getGreatGeneralRateModifier() * iChange);
+	changeDomesticGreatGeneralRateModifier(kCivicInfo.getDomesticGreatGeneralRateModifier() * iChange);
+	changeNativeCombatModifier(kCivicInfo.getNativeCombatModifier() * iChange);
 }
 
 void CvPlayer::postLoadCivicUpdate()
@@ -11484,8 +11492,6 @@ void CvPlayer::setPbemNewTurn(bool bNew)
 //
 void CvPlayer::read(FDataStreamBase* pStream)
 {
-	int iI;
-
 	// Init data before load
 	reset();
 
@@ -11501,19 +11507,14 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iAdvancedStartPoints);
 	pStream->Read(&m_iGreatGeneralsCreated);
 	pStream->Read(&m_iGreatGeneralsThresholdModifier);
-	pStream->Read(&m_iGreatGeneralRateModifier);
-	pStream->Read(&m_iDomesticGreatGeneralRateModifier);
 	pStream->Read(&m_iImmigrationThresholdMultiplier);
 	pStream->Read(&m_iRevolutionEuropeUnitThresholdMultiplier);
 	
 	pStream->Read(&m_iKingNumUnitMultiplier);
 
-	pStream->Read(&m_iNativeAngerModifier);
 	pStream->Read(&m_iFreeExperience);
-	pStream->Read(&m_iCityDefenseModifier);
 	pStream->Read(&m_iHighestUnitLevel);
 	pStream->Read(&m_iFatherOverflowBells);
-	pStream->Read(&m_iLevelExperienceModifier);
 	pStream->Read(&m_iCapitalCityID);
 	///TKs Med
 	pStream->Read(&m_iTradeFairCityID);
@@ -11558,20 +11559,14 @@ void CvPlayer::read(FDataStreamBase* pStream)
 
 
 	m_ja_iSeaPlotYield.read(pStream);
-	m_ja_iYieldRateModifier.read(pStream);
-	m_ja_iCapitalYieldRateModifier.read(pStream);
-	m_ja_iBuildingRequiredYieldModifier.read(pStream);
 	m_ja_iCityExtraYield.read(pStream);
 	m_ja_iExtraYieldThreshold.read(pStream);
 	m_ja_iYieldBuyPrice.read(pStream);
 	m_ja_iYieldTradedTotal.read(pStream);
-
 	m_ja_iYieldBoughtTotal.read(pStream);
-	m_ja_iTaxYieldModifierCount.read(pStream);
 	///TKs Invention Core Mod v 1.0
 	m_ja_iVictoryYieldCount.read(pStream);
 	///Tks Civics
-	m_ja_iGarrisonUnitBonus.read(pStream);
 	m_ja_iUpkeepCount.read(pStream);
 	pStream->Read(MAX_PLAYERS, m_aiTradingPostCount);
 	//Tke Civics
@@ -11600,10 +11595,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	m_ja_iUnitClassCount.read(pStream);
 	m_ja_iUnitClassMaking.read(pStream);
 	m_ja_iUnitClassImmigrated.read(pStream);
-	m_ja_iUnitMoveChange.read(pStream);
-	m_ja_iUnitStrengthModifier.read(pStream);
 	m_ja_iProfessionCombatChange.read(pStream);
-	m_ja_iProfessionMoveChange.read(pStream);
 	m_ja_iBuildingClassCount.read(pStream);
 	m_ja_iBuildingClassMaking.read(pStream);
 	m_ja_iHurryCount.read(pStream);
@@ -11907,9 +11899,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iCrossesStored);
 	pStream->Read(&m_iBellsStored);
 	pStream->Read(&m_iTaxRate);
-	pStream->Read(&m_iNativeCombatModifier);
 	pStream->Read(&m_iRevolutionEuropeTradeCount);
-	pStream->Read(&m_iMissionaryRateModifier);
 
 	///TKs Invention Core Mod v 1.0
 	//pStream->Read(&m_iPreviousFatherPoints);
@@ -11960,8 +11950,6 @@ void CvPlayer::read(FDataStreamBase* pStream)
 //
 void CvPlayer::write(FDataStreamBase* pStream)
 {
-	int iI;
-
 	uint uiFlag = 0;
 	pStream->Write(uiFlag);		// flag for expansion
 
@@ -11974,17 +11962,12 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(m_iAdvancedStartPoints);
 	pStream->Write(m_iGreatGeneralsCreated);
 	pStream->Write(m_iGreatGeneralsThresholdModifier);
-	pStream->Write(m_iGreatGeneralRateModifier);
-	pStream->Write(m_iDomesticGreatGeneralRateModifier);
 	pStream->Write(m_iImmigrationThresholdMultiplier);
 	pStream->Write(m_iRevolutionEuropeUnitThresholdMultiplier);
 	pStream->Write(m_iKingNumUnitMultiplier);
-	pStream->Write(m_iNativeAngerModifier);
 	pStream->Write(m_iFreeExperience);
-	pStream->Write(m_iCityDefenseModifier);
 	pStream->Write(m_iHighestUnitLevel);
 	pStream->Write(m_iFatherOverflowBells);
-	pStream->Write(m_iLevelExperienceModifier);
 	pStream->Write(m_iCapitalCityID);
 	///TKs Med
 	pStream->Write(m_iTradeFairCityID);
@@ -12025,19 +12008,14 @@ void CvPlayer::write(FDataStreamBase* pStream)
 
 
    	m_ja_iSeaPlotYield.write(pStream);
-	m_ja_iYieldRateModifier.write(pStream);
-	m_ja_iCapitalYieldRateModifier.write(pStream);
-	m_ja_iBuildingRequiredYieldModifier.write(pStream);
 	m_ja_iCityExtraYield.write(pStream);
 	m_ja_iExtraYieldThreshold.write(pStream);
 	m_ja_iYieldBuyPrice.write(pStream);
 	m_ja_iYieldTradedTotal.write(pStream);
 	m_ja_iYieldBoughtTotal.write(pStream);
-	m_ja_iTaxYieldModifierCount.write(pStream);
 	///TKs Invention Core Mod v 1.0
 	m_ja_iVictoryYieldCount.write(pStream);
 	//TKs CIvics
-	m_ja_iGarrisonUnitBonus.write(pStream);
 	m_ja_iUpkeepCount.write(pStream);
 	pStream->Write(MAX_PLAYERS, m_aiTradingPostCount);
 	///tke
@@ -12066,10 +12044,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	m_ja_iUnitClassCount.write(pStream);
 	m_ja_iUnitClassMaking.write(pStream);
 	m_ja_iUnitClassImmigrated.write(pStream);
-	m_ja_iUnitMoveChange.write(pStream);
-	m_ja_iUnitStrengthModifier.write(pStream);
 	m_ja_iProfessionCombatChange.write(pStream);
-	m_ja_iProfessionMoveChange.write(pStream);
 	m_ja_iBuildingClassCount.write(pStream);
 	m_ja_iBuildingClassMaking.write(pStream);
 	m_ja_iHurryCount.write(pStream);
@@ -12080,7 +12055,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	/// JIT array save - start - Nightinggale
 	pStream->Write(GC.getNumCivicOptionInfos());
 	/// JIT array save - end - Nightinggale
-	for (iI=0;iI<GC.getNumCivicOptionInfos();iI++)
+	for (int iI=0;iI<GC.getNumCivicOptionInfos();iI++)
 	{
 		pStream->Write(m_paeCivics[iI]);
 	}
@@ -12325,9 +12300,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(m_iCrossesStored);
 	pStream->Write(m_iBellsStored);
 	pStream->Write(m_iTaxRate);
-	pStream->Write(m_iNativeCombatModifier);
 	pStream->Write(m_iRevolutionEuropeTradeCount);
-	pStream->Write(m_iMissionaryRateModifier);
 
 	 ///TKs Invention Core Mod v 1.0
     pStream->Write(m_iTemporyIdeasStored);

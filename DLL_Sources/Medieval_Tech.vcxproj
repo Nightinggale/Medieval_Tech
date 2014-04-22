@@ -35,6 +35,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BoolArray.cpp" />
+    <ClCompile Include="JustInTimeArray.cpp" />
     <ClCompile Include="CvInfoProfessions.cpp" />
     <ClCompile Include="FDataStreamBase.cpp" />
     <ClCompile Include="CyPlotGroup.cpp" />
@@ -142,6 +144,7 @@
     <None Include="interfaceDirtyBits.inl" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BoolArray.h" />
     <ClInclude Include="CvInfoProfessions.h" />
     <ClInclude Include="CyPlotGroup.h" />
     <ClInclude Include="CvPlotGroup.h" />

@@ -412,7 +412,7 @@ protected:
 
 	CvString m_szScriptData;
     ///TKs Invention Core Mod v 1.0
-    int* m_aiIdeasResearched;
+    CivicArray<int> m_ja_iIdeasResearched;
     ///TKe
 	int* m_aiRankPlayer;        // Ordered by rank...
 	int* m_aiPlayerScore;       // Ordered by player ID...
@@ -420,15 +420,15 @@ protected:
 	int* m_aiTeamRank;						// Ordered by team ID...
 	int* m_aiTeamScore;						// Ordered by team ID...
 
-	int* m_paiUnitCreatedCount;
-	int* m_paiUnitClassCreatedCount;
-	int* m_paiBuildingClassCreatedCount;
+	UnitArray<int> m_ja_iUnitCreatedCount;
+	UnitArray<int> m_ja_iUnitClassCreatedCount;
+	BuildingClassArray<int> m_ja_iBuildingClassCreatedCount;
 
-	TeamTypes* m_aeFatherTeam;
-	int* m_aiFatherGameTurn;
+	FatherArray<int> m_ja_eFatherTeam;
+	FatherArray<int> m_ja_iFatherGameTurn;
 
-	bool* m_pabSpecialUnitValid;
-	bool* m_pabSpecialBuildingValid;
+	BoolArray m_ba_SpecialUnitValid;
+	BoolArray m_ba_SpecialBuildingValid;
 
 	std::vector<CvWString> m_aszDestroyedCities;
 	std::vector<CvWString> m_aszGreatGeneralBorn;
@@ -475,6 +475,15 @@ protected:
 	void updateOceanDistances();
 
 	void doUpdateCacheOnTurn();
+
+	/// JIT array save - start - Nightinggale
+public:
+	int convertArrayInfo(JIT_ARRAY_TYPES eType, int iIndex) const;
+protected:
+	void readArrayInfo(FDataStreamBase* pStream);
+	void writeArrayInfo(FDataStreamBase* pStream);
+	std::vector< std::vector<int> > m_aaiArrayIndex;
+	/// JIT array save - end - Nightinggale
 };
 
 #endif

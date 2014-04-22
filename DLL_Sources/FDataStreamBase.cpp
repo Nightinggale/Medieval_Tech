@@ -5,6 +5,7 @@
 // Nightinggale
 
 #include "CvGameCoreDLL.h"
+#include "CvGameAI.h"
 
 // read/write 64 bit int
 // this is done by spliting the 64 bit variable into 2 unsigned ints (2*32)
@@ -45,3 +46,11 @@ void FDataStreamBase::Write(unsigned __int64 value)
 	iBuffer = (unsigned int)(value & MAX_UNSIGNED_INT);
 	this->Write(iBuffer);
 }
+
+/// JIT array save - start - Nightinggale
+void FDataStreamBase::Read(JIT_ARRAY_TYPES eType, int* i)
+{
+	Read(i);
+	*i = GC.getGameINLINE().convertArrayInfo(eType, *i);
+}
+/// JIT array save - end - Nightinggale

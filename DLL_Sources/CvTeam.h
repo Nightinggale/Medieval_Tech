@@ -231,14 +231,14 @@ protected:
 	PlayerBitmap m_bmForcePeace;
 	/// player bitmap - end - Nightinggale
 
-	bool* m_abFatherIgnore;
+	BoolArray m_ba_FatherIgnore;
 	///Tks Med
-	int* m_aiAccumilatedFatherPoints;
+	FatherPointArray<int> m_ja_iAccumilatedFatherPoints;
 	///Tke
-	int* m_aiFatherPoints;
-	int* m_aiUnitClassCount;
-	int* m_aiBuildingClassCount;
-	int* m_aiEuropeUnitsPurchased;
+	FatherPointArray<int> m_ja_iFatherPoints;
+	UnitClassArray<int> m_ja_iUnitClassCount;
+	BuildingClassArray<int> m_ja_iBuildingClassCount;
+	UnitClassArray<int> m_ja_iEuropeUnitsPurchased;
 
 	std::vector<BonusTypes> m_aeRevealedBonuses;
 	void testFoundingFather();

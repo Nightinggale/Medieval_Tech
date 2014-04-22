@@ -363,7 +363,6 @@ public:
 	void changeUnitCombatFreeExperience(UnitCombatTypes eIndex, int iChange);
 	int getFreePromotionCount(PromotionTypes eIndex) const;
 	bool isFreePromotion(PromotionTypes eIndex) const;
-	void changeFreePromotionCount(PromotionTypes eIndex, int iChange);
 	CvUnit* getUnitWorkingPlot(int iPlotIndex) const;
 	DllExport bool isUnitWorkingPlot(int iPlotIndex) const;
 	bool isUnitWorkingAnyPlot(const CvUnit* pUnit) const;
@@ -661,14 +660,14 @@ protected:
 	YieldTypes m_eSelectedArmor;
 	int* m_aiEventTimers;
 	PlayerBitmap m_bmTradePostBuilt;
-	int* m_aiConnectedTradeBonus;
-	int* m_aiConnectedMissionBonus;
+	YieldArray<int> m_ja_iConnectedTradeBonus;
+	YieldArray<int> m_ja_iConnectedMissionBonus;
 	///TKe
-	int* m_aiSeaPlotYield;
-	int* m_aiRiverPlotYield;
-	int* m_aiYieldRateModifier;
-	int* m_aiYieldStored;
-	int* m_aiYieldRushed;
+	YieldArray<int> m_ja_iSeaPlotYield;
+	YieldArray<int> m_ja_iRiverPlotYield;
+	YieldArray<int> m_ja_iYieldRateModifier;
+	YieldArray<int> m_ja_iYieldStored;
+	YieldArray<int> m_ja_iYieldRushed;
 	int* m_aiDomainFreeExperience;
 	int* m_aiDomainProductionModifier;
 	int* m_aiCulture;
@@ -679,17 +678,17 @@ protected:
 	/// player bitmap - end - Nightinggale
 	CvWString m_szName;
 	CvString m_szScriptData;
-	int* m_paiBuildingProduction;
-	int* m_paiBuildingProductionTime;
-	int* m_paiBuildingOriginalOwner;
-	int* m_paiBuildingOriginalTime;
-	int* m_paiUnitProduction;
-	int* m_paiUnitProductionTime;
-	int* m_aiSpecialistWeights;
-	int* m_paiUnitCombatFreeExperience;
-	int* m_paiFreePromotionCount;
-	bool* m_pabHasRealBuilding;
-	bool* m_pabHasFreeBuilding;
+	BuildingArray<int> m_ja_iBuildingProduction;
+	BuildingArray<int> m_ja_iBuildingProductionTime;
+	BuildingArray<int> m_ja_iBuildingOriginalOwner;
+	BuildingArray<int> m_ja_iBuildingOriginalTime;
+	UnitArray<int> m_ja_iUnitProduction;
+	UnitArray<int> m_ja_iUnitProductionTime;
+	BoolArray m_ba_ConTrainSpecialist;
+	UnitCombatArray<int> m_ja_iUnitCombatFreeExperience;
+	PromotionArray<unsigned char> m_ja_iFreePromotionCount;
+	BoolArray m_ba_HasRealBuilding;
+	BoolArray m_ba_HasFreeBuilding;
 	int* m_paiWorkingPlot;
 	IDInfo* m_paTradeCities;
 	mutable CLinkList<OrderData> m_orderQueue;

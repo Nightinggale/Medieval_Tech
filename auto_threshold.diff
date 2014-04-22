@@ -1,0 +1,502 @@
+diff --git a/Assets/CvGameCoreDLL.dll b/Assets/CvGameCoreDLL.dll
+index 6e47fb6..55ac76b 100644
+Binary files a/Assets/CvGameCoreDLL.dll and b/Assets/CvGameCoreDLL.dll differ
+diff --git a/Assets/Python/Screens/CvMainInterface.py b/Assets/Python/Screens/CvMainInterface.py
+index 1bf4784..6bd85e6 100644
+--- a/Assets/Python/Screens/CvMainInterface.py
++++ b/Assets/Python/Screens/CvMainInterface.py
+@@ -1960,11 +1960,25 @@ class CvMainInterface:
+ 				screen.setStyle("ExportTradeRouteText", "Table_EmptyScroll_Style")
+ 
+ 				for iYield in range(YieldTypes.NUM_YIELD_TYPES):
++					# transport feeder - start - Nightinggale
++					iAutoThreshold = pHeadSelectedCity.getAutoMaintainThreshold(iYield)
++					iThreshold     = pHeadSelectedCity.getMaintainLevel(iYield)
++					szThreshold = ""
++					if (iAutoThreshold > 0):
++						szThreshold += " ("
++						if (iThreshold < iAutoThreshold):
++							szThreshold += unicode(iAutoThreshold) + "/"
++						szThreshold += unicode(iThreshold) + ")"
++					# transport feeder - end - Nightinggale
++					
+ 					if (pHeadSelectedCity.isExport(iYield)):
+ 						iExportRow = screen.appendTableRow("ExportTradeRouteText")
+ 						szExportText = u"<font=3>%c %s</font>" % (gc.getYieldInfo(iYield).getChar(), gc.getYieldInfo(iYield).getDescription())
+-						if pHeadSelectedCity.getMaintainLevel(iYield) > 0:
+-							szExportText += " (%s %d)" % (localText.getText("TXT_KEY_TRADE_ROUTE_MAINTAIN", ()), pHeadSelectedCity.getMaintainLevel(iYield))
++						# transport feeder - start - Nightinggale
++						#if pHeadSelectedCity.getMaintainLevel(iYield) > 0:
++						#	szExportText += " (%s %d)" % (localText.getText("TXT_KEY_TRADE_ROUTE_MAINTAIN", ()), pHeadSelectedCity.getMaintainLevel(iYield))
++						szExportText += szThreshold
++						# transport feeder - end - Nightinggale
+ 						screen.setTableText("ExportTradeRouteText", 0, iExportRow, u"<font=3>%s</font>" % szExportText, "", WidgetTypes.WIDGET_YIELD_IMPORT_EXPORT, false, -1, CvUtil.FONT_LEFT_JUSTIFY )
+ 
+ 					if (pHeadSelectedCity.isImport(iYield)):
+@@ -1977,6 +1991,8 @@ class CvMainInterface:
+ 								szImportText = localText.getText("TXT_KEY_COLOR_NEGATIVE", ()) + szImportText
+ 							else:
+ 								szImportText = localText.getText("TXT_KEY_COLOR_POSITIVE", ()) + szImportText
++
++							szImportText += szThreshold
+ 							szImportText += localText.getText("TXT_KEY_COLOR_REVERT", ())
+ 						# transport feeder - end - Nightinggale
+ 						screen.setTableText("ImportTradeRouteText", 0, iImportRow, szImportText, "", WidgetTypes.WIDGET_YIELD_IMPORT_EXPORT, true, -1, CvUtil.FONT_LEFT_JUSTIFY )
+diff --git a/DLL_Sources/CvCity.cpp b/DLL_Sources/CvCity.cpp
+index 0b05fca..08d99d9 100644
+--- a/DLL_Sources/CvCity.cpp
++++ b/DLL_Sources/CvCity.cpp
+@@ -2398,7 +2398,7 @@ int CvCity::getProduction() const
+ }
+ 
+ 
+-int CvCity::getProductionNeeded(YieldTypes eYield) const
++int CvCity::getProductionNeededUncached(YieldTypes eYield) const
+ {
+ 	CLLNode<OrderData>* pOrderNode = headOrderQueueNode();
+ 
+@@ -6752,6 +6752,8 @@ void CvCity::pushOrder(OrderTypes eOrder, int iData1, int iData2, bool bSave, bo
+ 		startHeadOrder();
+ 	}
+ 
++	setAutoThresholdCache(); // transport feeder - Nightinggale
++
+ 	if ((getTeam() == GC.getGameINLINE().getActiveTeam()) || GC.getGameINLINE().isDebugMode())
+ 	{
+ 		setBillboardDirty(true);
+@@ -6907,6 +6909,7 @@ void CvCity::popOrder(int iNum, bool bFinish, bool bChoose)
+ 	{
+ 		startHeadOrder();
+ 	}
++
+ 	if ((getTeam() == GC.getGameINLINE().getActiveTeam()) || GC.getGameINLINE().isDebugMode())
+ 	{
+ 		setBillboardDirty(true);
+@@ -6967,6 +6970,8 @@ void CvCity::popOrder(int iNum, bool bFinish, bool bChoose)
+ 		gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, szSound, MESSAGE_TYPE_MINOR_EVENT, szIcon, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+ 	}
+ 
++	setAutoThresholdCache(); // transport feeder - Nightinggale
++
+ 	if ((getTeam() == GC.getGameINLINE().getActiveTeam()) || GC.getGameINLINE().isDebugMode())
+ 	{
+ 		setBillboardDirty(true);
+@@ -8514,6 +8519,7 @@ void CvCity::read(FDataStreamBase* pStream)
+ 	// set cache
+ 	UpdateBuildingAffectedCache(); // building affected cache - Nightinggale
+ 	this->setUnitYieldDemand(); // // domestic yield demand - Nightinggale
++	this->setAutoThresholdCache(); // transport feeder - Nightinggale
+ }
+ 
+ void CvCity::write(FDataStreamBase* pStream)
+@@ -11005,10 +11011,29 @@ void CvCity::setMaintainLevel(YieldTypes eYield, int iMaintainLevel)
+ {
+ 	if (getMaintainLevel(eYield) != iMaintainLevel)
+ 	{
++		// transport feeder - begin - Nightinggale
++		int iOld = getMaintainLevel(eYield);
++		// transport feeder - end - Nightinggale
++
+ 		// traderoute just-in-time - start - Nightinggale
+ 		ma_tradeThreshold.set(iMaintainLevel, eYield);
+ 		// traderoute just-in-time - end - Nightinggale
+ 
++		// transport feeder - begin - Nightinggale
++		if (getAutoMaintainThreshold(eYield) < iMaintainLevel)
++		{
++			// threshold is increased.
++			// increase cache without checking normal cache check as we know at this point that a full check will result in the same as using iMaintainLevel
++			ma_tradeAutoThreshold.set(iMaintainLevel, eYield);
++			checkImportsMaintain(eYield);
++		} else if (iOld == getAutoMaintainThreshold(eYield))
++		{
++			// old auto threshold was the same as the user threshold.
++			// do a full cache reset check
++			setAutoThresholdCache(eYield);
++		}
++		// transport feeder - end - Nightinggale
++
+ 		if (getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
+ 		{
+ 			gDLL->getInterfaceIFace()->setDirty(SelectionButtons_DIRTY_BIT, true);
+@@ -11063,13 +11088,14 @@ void CvCity::checkImportsMaintain(YieldTypes eYield, bool bUpdateScreen)
+ 	
+ 	FAssertMsg(isImport(eYield), "Feeder service is active without import enabled");
+ 
+- 	int iMaintainLevel = ma_tradeThreshold.get(eYield);
++ 	int iMaintainLevel = getAutoMaintainThreshold(eYield);
+  	int iStoredLevel   = getYieldStored(eYield);
++	int iNeededLevel   = getProductionNeeded(eYield);
+ 
+- 	if (!isAutoImportStopped(eYield) && iStoredLevel >= iMaintainLevel)
++	if (!isAutoImportStopped(eYield) && iStoredLevel >= iMaintainLevel)
+  	{
+  		ma_tradeStopAutoImport.set(true, eYield);
+-	} else if (isAutoImportStopped(eYield) && (iStoredLevel <= (iMaintainLevel*3)/4)) {
++	} else if (isAutoImportStopped(eYield) && (iNeededLevel < iStoredLevel || (iStoredLevel <= (iMaintainLevel*3)/4))) {
+ 		ma_tradeStopAutoImport.set(false, eYield);
+ 	} else if (!bUpdateScreen) {
+ 		// nothing changed. Do not continue to screen update code.
+@@ -11082,6 +11108,75 @@ void CvCity::checkImportsMaintain(YieldTypes eYield, bool bUpdateScreen)
+ 		gDLL->getInterfaceIFace()->setDirty(Domestic_Advisor_DIRTY_BIT, true);
+ 	}
+ }
++
++void CvCity::setAutoThresholdCache(YieldTypes eYield)
++{
++	int iProductionNeeded = getProductionNeededUncached(eYield);
++
++	ma_productionNeeded.set(iProductionNeeded, eYield);
++
++	if (iProductionNeeded == MAX_INT)
++	{
++		// the city isn't producing anything. Set threshold to 0 instead of infinity.
++		ma_tradeAutoThreshold.set(0, eYield);
++	} else {
++		ma_tradeAutoThreshold.set(iProductionNeeded, eYield);
++	}
++
++#if 0
++	// only first in production queue
++	//ma_tradeAutoThreshold.keepMax(getProductionNeeded(eYield), eYield);
++	// no need for this part. getProductionNeeded() is called twice in a row. The second result should never be bigger than the first.
++#else
++	// everything in production queue
++	for  (CLLNode<OrderData>* pOrderNode = headOrderQueueNode(); pOrderNode != NULL; pOrderNode = nextOrderQueueNode(pOrderNode))
++	{
++		switch (pOrderNode->m_data.eOrderType)
++		{
++		case ORDER_TRAIN:
++			ma_tradeAutoThreshold.keepMax(getYieldProductionNeeded((UnitTypes)pOrderNode->m_data.iData1, eYield), eYield);
++			break;
++
++		case ORDER_CONSTRUCT:
++			ma_tradeAutoThreshold.keepMax(getYieldProductionNeeded((BuildingTypes)pOrderNode->m_data.iData1, eYield), eYield);
++			break;
++		}
++	}
++#endif
++
++	std::vector< std::pair<OrderTypes, int> > aOrders;
++	getOrdersWaitingForYield(aOrders, eYield, false, 0);
++
++
++	int iMax = aOrders.size();
++	for(int i = 0; i < iMax; ++i) {
++		switch (aOrders[i].first)
++		{
++		case ORDER_TRAIN:
++			ma_tradeAutoThreshold.keepMax(getYieldProductionNeeded((UnitTypes)aOrders[i].second, eYield), eYield);
++			break;
++
++		case ORDER_CONSTRUCT:
++			ma_tradeAutoThreshold.keepMax(getYieldProductionNeeded((BuildingTypes)aOrders[i].second, eYield), eYield);
++			break;
++		}
++	}
++
++	// increase threshold to manually set threshold, if needed
++	ma_tradeAutoThreshold.keepMax(ma_tradeThreshold.get(eYield), eYield);
++
++	checkImportsMaintain(eYield);
++}
++
++void CvCity::setAutoThresholdCache()
++{
++	for (int i = 0; i < NUM_YIELD_TYPES; i++)
++	{
++		YieldTypes eYield = (YieldTypes)i;
++		setAutoThresholdCache(eYield);
++		checkImportsMaintain(eYield);
++	}
++}
+ // transport feeder - end - Nightinggale
+ 
+ ///TKs Invention Core Mod v 1.0
+diff --git a/DLL_Sources/CvCity.h b/DLL_Sources/CvCity.h
+index 4d62388..561fa4a 100644
+--- a/DLL_Sources/CvCity.h
++++ b/DLL_Sources/CvCity.h
+@@ -587,10 +587,6 @@ public:
+ 	void removeTradeRoutes();
+ 	void setMaintainLevel(YieldTypes eYield, int iMaintainLevel);
+ 	int getMaintainLevel(YieldTypes eYield) const;
+-	// transport feeder - start - Nightinggale
+- 	bool getImportsMaintain(YieldTypes eYield) const;
+-	bool isAutoImportStopped(YieldTypes eYield) const;
+- 	// transport feeder - end - Nightinggale
+ 	///TKs Invention Core Mod v 1.0
+ 	int canResearch() const;
+ 	///Tke
+@@ -689,10 +685,6 @@ protected:
+ 	///Tke
+  	YieldArray<int> ma_tradeThreshold;
+  	// traderoute just-in-time - end - Nightinggale
+- 	// transport feeder - start - Nightinggale
+- 	YieldArray<bool> ma_tradeImportsMaintain;
+-	YieldArray<bool> ma_tradeStopAutoImport;
+- 	// transport feeder - end - Nightinggale
+ 
+ 	// CACHE: cache frequently used values
+ 	mutable int	m_iPopulationRank;
+@@ -732,10 +724,6 @@ protected:
+ 	void setUnitWorkingPlot(const CvPlot* pPlot, int iUnitId);
+ 	int getNextFreeUnitId() const;
+ 
+-	// transport feeder - start - Nightinggale
+-	void setImportsMaintain(YieldTypes eYield, bool bSetting);
+-	void checkImportsMaintain(YieldTypes eYield, bool bUpdateScreen = false);
+-	// transport feeder - end - Nightinggale
+ 	virtual bool AI_addBestCitizen() = 0;
+ 	virtual bool AI_removeWorstCitizen() = 0;
+ 
+@@ -802,6 +790,28 @@ protected:
+ 	YieldArray<int> ma_aiCustomHouseSellThreshold;
+ 	YieldArray<bool> ma_aiCustomHouseNeverSell;
+ 	// R&R, ray, finishing Custom House Screen END
++
++	// transport feeder - start - Nightinggale
++public:
++ 	bool getImportsMaintain(YieldTypes eYield) const;
++	bool isAutoImportStopped(YieldTypes eYield) const;
++	int getAutoMaintainThreshold(YieldTypes eYield) const;
++	int getProductionNeededUncached(YieldTypes eYield) const;
++	void checkImportsMaintain(YieldTypes eYield, bool bUpdateScreen = false);
++
++	// WARNING: setAutoThresholdCache will cause desyncs if not called by all computers in MP in sync
++	void setAutoThresholdCache(YieldTypes eYield);
++	void setAutoThresholdCache();
++
++protected:
++ 	YieldArray<bool> ma_tradeImportsMaintain;
++	YieldArray<bool> ma_tradeStopAutoImport;
++	YieldArray<int> ma_tradeAutoThreshold; // nosave - recalculate on load
++	YieldArray<int> ma_productionNeeded; // nosave - recalculate on load
++
++	// setImportsMaintain() is only allowed to be called by doTask() or it will cause desyncs
++	void setImportsMaintain(YieldTypes eYield, bool bSetting);
++	// transport feeder - end - Nightinggale
+ };
+ 
+ // cache getMaxYieldCapacity - start - Nightinggale
+@@ -862,6 +872,16 @@ inline bool CvCity::isAutoImportStopped(YieldTypes eYield) const
+ {
+ 	return ma_tradeStopAutoImport.get(eYield);
+ }
++
++inline int CvCity::getAutoMaintainThreshold(YieldTypes eYield) const
++{
++	return ma_tradeAutoThreshold.get(eYield);
++}
++
++inline int CvCity::getProductionNeeded(YieldTypes eYield) const
++{
++	return ma_productionNeeded.get(eYield);
++}
+ // transport feeder - end - Nightinggale
+ 
+ #endif
+diff --git a/DLL_Sources/CvPlayer.cpp b/DLL_Sources/CvPlayer.cpp
+index 167250f..661f353 100644
+--- a/DLL_Sources/CvPlayer.cpp
++++ b/DLL_Sources/CvPlayer.cpp
+@@ -7353,6 +7353,9 @@ void CvPlayer::setCurrentEra(EraTypes eNewValue)
+ 		// dirty all of this player's cities...
+ 		for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+ 		{
++			// transport feeder - start - Nightinggale
++			pLoopCity->setAutoThresholdCache();
++			// transport feeder - end - Nightinggale
+ 			if (pLoopCity->getOwnerINLINE() == getID())
+ 			{
+ 				pLoopCity->setLayoutDirty(true);
+@@ -7573,6 +7576,9 @@ void CvPlayer::changeBuildingRequiredYieldModifier(YieldTypes eIndex, int iChang
+ 	if (iChange != 0)
+ 	{
+ 		m_aiBuildingRequiredYieldModifier[eIndex] += iChange;
++		// transport feeder - start - Nightinggale
++		this->updateTransportThreshold(eIndex);
++		// transport feeder - end - Nightinggale
+ 	}
+ }
+ 
+@@ -19175,3 +19181,24 @@ void CvPlayer::updateInventionEffectCache()
+ 	}
+ }
+ // invention effect cache - end - Nightinggale
++
++
++// transport feeder - start - Nightinggale
++void CvPlayer::updateTransportThreshold()
++{
++	int iLoop;
++	for (CvCity* pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
++	{
++		pLoopCity->setAutoThresholdCache();
++	}
++}
++
++void CvPlayer::updateTransportThreshold(YieldTypes eYield)
++{
++	int iLoop;
++	for (CvCity* pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
++	{
++		pLoopCity->setAutoThresholdCache(eYield);
++	}
++}
++// transport feeder - end - Nightinggale
+diff --git a/DLL_Sources/CvPlayer.h b/DLL_Sources/CvPlayer.h
+index 7d192ff..939626a 100644
+--- a/DLL_Sources/CvPlayer.h
++++ b/DLL_Sources/CvPlayer.h
+@@ -963,6 +963,12 @@ protected:
+ 
+ 	void updateInventionEffectCache();
+ // invention effect cache - end - Nightinggale
++
++// transport feeder - start - Nightinggale
++public:
++	void updateTransportThreshold();
++	void updateTransportThreshold(YieldTypes eYield);
++// transport feeder - end - Nightinggale
+ };
+ 
+ // cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
+diff --git a/DLL_Sources/CvPlayerAI.cpp b/DLL_Sources/CvPlayerAI.cpp
+index 7314848..60e7d1d 100644
+--- a/DLL_Sources/CvPlayerAI.cpp
++++ b/DLL_Sources/CvPlayerAI.cpp
+@@ -8959,7 +8959,10 @@ int CvPlayerAI::AI_transferYieldValue(const IDInfo target, YieldTypes eYield, in
+ 		///TKs Med
+ 		int iMaxCapacity = (eYield == YIELD_FOOD || YieldGroup_Luxury_Food(eYield)) ? pCity->growthThreshold() : pCity->getMaxYieldCapacity(eYield);
+ 		///Tke
+-		int iMaintainLevel = pCity->getMaintainLevel(eYield);
++		// transport feeder - start - Nightinggale
++		//int iMaintainLevel = pCity->getMaintainLevel(eYield);
++		int iMaintainLevel = pCity->getAutoMaintainThreshold(eYield);
++		// transport feeder - end - Nightinggale
+ 		FAssert(iMaxCapacity > 0);
+ 		if (iAmount < 0) // Loading
+ 		{
+@@ -9005,6 +9008,7 @@ int CvPlayerAI::AI_transferYieldValue(const IDInfo target, YieldTypes eYield, in
+ 				iValue /= 100;
+ 			}
+ 
++			/*
+ 			int iProductionNeeded = 0;
+ 			UnitTypes eUnit = pCity->getProductionUnit();
+ 			if (eUnit != NO_UNIT)
+@@ -9016,6 +9020,10 @@ int CvPlayerAI::AI_transferYieldValue(const IDInfo target, YieldTypes eYield, in
+ 			{
+ 				iProductionNeeded = std::max(iProductionNeeded, pCity->getYieldProductionNeeded(eBuilding, eYield));
+ 			}
++			*/
++			// production cache - start - Nightinggale
++			int iProductionNeeded = pCity->getProductionNeeded(eYield);
++			// production cache - end - Nightinggale
+ 
+ 			if (iStored > 0 && iStored < iProductionNeeded)
+ 			{
+diff --git a/DLL_Sources/CvSelectionGroupAI.cpp b/DLL_Sources/CvSelectionGroupAI.cpp
+index 786bc4c..1c1a5b8 100644
+--- a/DLL_Sources/CvSelectionGroupAI.cpp
++++ b/DLL_Sources/CvSelectionGroupAI.cpp
+@@ -1035,7 +1035,10 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
+ 			CvCity* pDestinationCity = ::getCity(routes[i]->getDestinationCity());
+ 			YieldTypes eYield = routes[i]->getYield();
+ 
+-			int iAmount = pSourceCity->getYieldStored(eYield) - pSourceCity->getMaintainLevel(eYield);
++			// transport feeder - start - Nightinggale
++			//int iAmount = pSourceCity->getYieldStored(eYield) - pSourceCity->getMaintainLevel(eYield);
++			int iAmount = pSourceCity->getYieldStored(eYield) - pSourceCity->getAutoMaintainThreshold(eYield);
++			// transport feeder - end - Nightinggale
+ 
+ 			if (iAmount > 0)
+ 			{
+@@ -1127,7 +1130,10 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
+ 
+ 					if ((pPlotCity == pSourceCity))
+ 					{
+-						int iAmount = pSourceCity->getYieldStored(eYield) - pSourceCity->getMaintainLevel(eYield);
++						// transport feeder - start - Nightinggale
++						//int iAmount = pSourceCity->getYieldStored(eYield) - pSourceCity->getMaintainLevel(eYield);
++						int iAmount = pSourceCity->getYieldStored(eYield) - pSourceCity->getAutoMaintainThreshold(eYield);
++						// transport feeder - end - Nightinggale
+ 
+ 						if (iAmount > 0)
+ 						{
+diff --git a/DLL_Sources/CvUnit.cpp b/DLL_Sources/CvUnit.cpp
+index 43e3d19..0a471f3 100644
+--- a/DLL_Sources/CvUnit.cpp
++++ b/DLL_Sources/CvUnit.cpp
+@@ -4217,7 +4217,10 @@ int CvUnit::getMaxLoadYieldAmount(YieldTypes eYield) const
+ 		int iMaxAvailable = pCity->getYieldStored(eYield);
+ 		if (!isHuman() || isAutomated())
+ 		{
+-			iMaxAvailable -= pCity->getMaintainLevel(eYield);
++			// transport feeder - start - Nightinggale
++			//iMaxAvailable -= pCity->getMaintainLevel(eYield);
++			iMaxAvailable -= pCity->getAutoMaintainThreshold(eYield);
++			// transport feeder - end - Nightinggale
+ 		}
+ 		iMaxAmount = std::min(iMaxAmount, iMaxAvailable);
+ 	}
+diff --git a/DLL_Sources/CyCity.cpp b/DLL_Sources/CyCity.cpp
+index 80aa5a3..c3097ba 100644
+--- a/DLL_Sources/CyCity.cpp
++++ b/DLL_Sources/CyCity.cpp
+@@ -1260,6 +1260,11 @@ bool CyCity::isAutoImportStopped(int /*YieldTypes*/ eYield) const
+ {
+ 	return m_pCity ? m_pCity->isAutoImportStopped((YieldTypes) eYield) : false;
+ }
++
++int CyCity::getAutoMaintainThreshold(int /*YieldTypes*/ eYield) const
++{
++	return m_pCity ? m_pCity->getAutoMaintainThreshold((YieldTypes) eYield) : 0;
++}
+ // transport feeder - end - Nightinggale
+ 
+ python::tuple CyCity::isOrderWaitingForYield(int /*YieldTypes*/ eYield)
+diff --git a/DLL_Sources/CyCity.h b/DLL_Sources/CyCity.h
+index 2bb7c79..39d6143 100644
+--- a/DLL_Sources/CyCity.h
++++ b/DLL_Sources/CyCity.h
+@@ -292,6 +292,7 @@ public:
+ 	// transport feeder - start - Nightinggale
+ 	bool isImportFeeder(int /*YieldTypes*/ eYield) const;
+ 	bool isAutoImportStopped(int /*YieldTypes*/ eYield) const;
++	int getAutoMaintainThreshold(int /*YieldTypes*/ eYield) const;
+ 	// transport feeder - end - Nightinggale
+ 
+ 	python::tuple isOrderWaitingForYield(int /*YieldTypes*/ eYield);
+diff --git a/DLL_Sources/CyCityInterface1.cpp b/DLL_Sources/CyCityInterface1.cpp
+index 030f8fa..e080366 100644
+--- a/DLL_Sources/CyCityInterface1.cpp
++++ b/DLL_Sources/CyCityInterface1.cpp
+@@ -279,6 +279,7 @@ void CyCityPythonInterface1(python::class_<CyCity>& x)
+ 		// transport feeder - start - Nightinggale
+ 		.def("isImportFeeder", &CyCity::isImportFeeder, "bool isImportFeeder(int /*YieldTypes*/ eYield) const")
+ 		.def("isAutoImportStopped", &CyCity::isAutoImportStopped, "bool isAutoImportStopped(int /*YieldTypes*/ eYield) const")
++		.def("getAutoMaintainThreshold", &CyCity::getAutoMaintainThreshold, "int getAutoMaintainThreshold(int /*YieldTypes*/ eYield) const")
+ 		// transport feeder - end - Nightinggale
+ 
+ 		// R&R, Robert Surcouf, No More Variables Hidden game option START
+diff --git a/DLL_Sources/JustInTimeArray.h b/DLL_Sources/JustInTimeArray.h
+index 231d7a5..9695045 100644
+--- a/DLL_Sources/JustInTimeArray.h
++++ b/DLL_Sources/JustInTimeArray.h
+@@ -116,6 +116,14 @@ public:
+ 		this->set(value + this->get(iIndex), iIndex);
+ 	}
+ 
++	inline void keepMax(T value, int iIndex)
++	{
++		if (value > get(iIndex))
++		{
++			set(value, iIndex);
++		}
++	}
++
+ 	bool hasContent(bool bRelease = true)
+ 	{
+ 		if (tArray == NULL)

@@ -30,19 +30,17 @@
 
 CvCity::CvCity()
 	: ma_aiCustomHouseNeverSell(true)
+	, m_ja_iBuildingOriginalOwner(-1)
+	, m_ja_iBuildingOriginalTime(MIN_INT)
+	, m_ba_ConTrainSpecialist(JIT_ARRAY_UNIT)
+	, m_ba_HasRealBuilding(JIT_ARRAY_BUILDING)
+	, m_ba_HasFreeBuilding(JIT_ARRAY_BUILDING)
 {
     ///Tks Med
     m_aiEventTimers = new int[2];
     //m_abTradePostBuilt = new bool[MAX_TEAMS];
 	m_bmTradePostBuilt = 0;
-	m_aiConnectedTradeBonus = new int[NUM_YIELD_TYPES];
-	m_aiConnectedMissionBonus = new int[NUM_YIELD_TYPES];
     ///Tke
-	m_aiSeaPlotYield = new int[NUM_YIELD_TYPES];
-	m_aiRiverPlotYield = new int[NUM_YIELD_TYPES];
-	m_aiYieldRateModifier = new int[NUM_YIELD_TYPES];
-	m_aiYieldStored = new int[NUM_YIELD_TYPES];
-	m_aiYieldRushed = new int[NUM_YIELD_TYPES];
 	m_aiDomainFreeExperience = new int[NUM_DOMAIN_TYPES];
 	m_aiDomainProductionModifier = new int[NUM_DOMAIN_TYPES];
 
@@ -52,18 +50,6 @@ CvCity::CvCity()
 	m_bmRevealed = 0;
 	m_bmScoutVisited = 0;
 	/// player bitmap - end - Nightinggale
-
-	m_paiBuildingProduction = NULL;
-	m_paiBuildingProductionTime = NULL;
-	m_paiBuildingOriginalOwner = NULL;
-	m_paiBuildingOriginalTime = NULL;
-	m_paiUnitProduction = NULL;
-	m_paiUnitProductionTime = NULL;
-	m_aiSpecialistWeights = NULL;
-	m_paiUnitCombatFreeExperience = NULL;
-	m_paiFreePromotionCount = NULL;
-	m_pabHasRealBuilding = NULL;
-	m_pabHasFreeBuilding = NULL;
 
 	m_paiWorkingPlot = NULL;
 
@@ -89,8 +75,6 @@ CvCity::~CvCity()
     ///Kailric Fort Mod end
     ///Tks Med
     SAFE_DELETE_ARRAY(m_aiEventTimers);
-	SAFE_DELETE_ARRAY(m_aiConnectedTradeBonus);
-	SAFE_DELETE_ARRAY(m_aiConnectedMissionBonus);
     //SAFE_DELETE_ARRAY(m_abTradePostBuilt);
     ///Tke
 
@@ -98,11 +82,6 @@ CvCity::~CvCity()
 	SAFE_DELETE_ARRAY(m_aiYieldRank);
 	SAFE_DELETE_ARRAY(m_abYieldRankValid);
 
-	SAFE_DELETE_ARRAY(m_aiSeaPlotYield);
-	SAFE_DELETE_ARRAY(m_aiRiverPlotYield);
-	SAFE_DELETE_ARRAY(m_aiYieldRateModifier);
-	SAFE_DELETE_ARRAY(m_aiYieldStored);
-	SAFE_DELETE_ARRAY(m_aiYieldRushed);
 	SAFE_DELETE_ARRAY(m_aiDomainFreeExperience);
 	SAFE_DELETE_ARRAY(m_aiDomainProductionModifier);
 	SAFE_DELETE_ARRAY(m_aiCulture);
@@ -435,17 +414,17 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 
 void CvCity::uninit()
 {
-	SAFE_DELETE_ARRAY(m_paiBuildingProduction);
-	SAFE_DELETE_ARRAY(m_paiBuildingProductionTime);
-	SAFE_DELETE_ARRAY(m_paiBuildingOriginalOwner);
-	SAFE_DELETE_ARRAY(m_paiBuildingOriginalTime);
-	SAFE_DELETE_ARRAY(m_paiUnitProduction);
-	SAFE_DELETE_ARRAY(m_paiUnitProductionTime);
-	SAFE_DELETE_ARRAY(m_aiSpecialistWeights);
-	SAFE_DELETE_ARRAY(m_paiUnitCombatFreeExperience);
-	SAFE_DELETE_ARRAY(m_paiFreePromotionCount);
-	SAFE_DELETE_ARRAY(m_pabHasRealBuilding);
-	SAFE_DELETE_ARRAY(m_pabHasFreeBuilding);
+	m_ja_iBuildingProduction.resetContent();
+	m_ja_iBuildingProductionTime.resetContent();
+	m_ja_iBuildingOriginalOwner.resetContent();
+	m_ja_iBuildingOriginalTime.resetContent();
+	m_ja_iUnitProduction.resetContent();
+	m_ja_iUnitProductionTime.resetContent();
+	m_ba_ConTrainSpecialist.resetContent();
+	m_ja_iUnitCombatFreeExperience.resetContent();
+	m_ja_iFreePromotionCount.resetContent();
+	m_ba_HasRealBuilding.resetContent();
+	m_ba_HasFreeBuilding.resetContent();
 
 	SAFE_DELETE_ARRAY(m_paiWorkingPlot);
 
@@ -468,19 +447,19 @@ void CvCity::uninit()
 	m_aNetworkCityIDs.clear();
 	//Tke
 	// traderoute just-in-time - start - Nightinggale
- 	ma_tradeImports.reset();
- 	ma_tradeExports.reset();
+ 	ma_tradeImports.releaseMemory();
+ 	ma_tradeExports.releaseMemory();
 	///Tks Med
-	ma_tradeMarket.reset();
+	ma_tradeMarket.releaseMemory();
 	///TKe
- 	ma_tradeThreshold.reset();
+ 	ma_tradeThreshold.releaseMemory();
  	// traderoute just-in-time - end - Nightinggale
  	// transport feeder - start - Nightinggale
- 	ma_tradeImportsMaintain.reset();
+ 	ma_tradeImportsMaintain.releaseMemory();
  	// transport feeder - end - Nightinggale
 	// Teacher List - start - Nightinggale
-	ma_OrderedStudents.reset();
-	ma_OrderedStudentsRepeat.reset();
+	ma_OrderedStudents.releaseMemory();
+	ma_OrderedStudentsRepeat.releaseMemory();
 	// Teacher List - end - Nightinggale
 }
 
@@ -554,20 +533,6 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 		m_aiEventTimers[iI] = 0;
 	}
 
-	
-
-	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
-	{
-		m_aiConnectedTradeBonus[iI] = 0;
-		m_aiConnectedMissionBonus[iI] = 0;
-		///TKe
-		m_aiSeaPlotYield[iI] = 0;
-		m_aiRiverPlotYield[iI] = 0;
-		m_aiYieldRateModifier[iI] = 0;
-		m_aiYieldStored[iI] = 0;
-		m_aiYieldRushed[iI] = 0;
-	}
-
 	for (iI = 0; iI < NUM_DOMAIN_TYPES; iI++)
 	{
 		m_aiDomainFreeExperience[iI] = 0;
@@ -605,48 +570,24 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 	if (!bConstructorCall)
 	{
 		FAssertMsg((0 < GC.getNumBuildingInfos()),  "GC.getNumBuildingInfos() is not greater than zero but an array is being allocated in CvCity::reset");
-		//m_ppBuildings = new CvBuilding *[GC.getNumBuildingInfos()];
-		m_paiBuildingProduction = new int[GC.getNumBuildingInfos()];
-		m_paiBuildingProductionTime = new int[GC.getNumBuildingInfos()];
-		m_paiBuildingOriginalOwner = new int[GC.getNumBuildingInfos()];
-		m_paiBuildingOriginalTime = new int[GC.getNumBuildingInfos()];
-		m_pabHasRealBuilding = new bool[GC.getNumBuildingInfos()];
-		m_pabHasFreeBuilding = new bool[GC.getNumBuildingInfos()];
-		for (iI = 0; iI < GC.getNumBuildingInfos(); iI++)
-		{
-			//m_ppBuildings[iI] = NULL;
-			m_paiBuildingProduction[iI] = 0;
-			m_paiBuildingProductionTime[iI] = 0;
-			m_paiBuildingOriginalOwner[iI] = -1;
-			m_paiBuildingOriginalTime[iI] = MIN_INT;
-			m_pabHasRealBuilding[iI] = false;
-			m_pabHasFreeBuilding[iI] = false;
-		}
+		
+		m_ja_iBuildingProduction.resetContent();
+		m_ja_iBuildingProductionTime.resetContent();
+		m_ja_iBuildingOriginalOwner.resetContent();
+		m_ja_iBuildingOriginalTime.resetContent();
+		m_ba_HasRealBuilding.resetContent();
+		m_ba_HasFreeBuilding.resetContent();
 
 		FAssertMsg((0 < GC.getNumUnitInfos()),  "GC.getNumUnitInfos() is not greater than zero but an array is being allocated in CvCity::reset");
-		m_paiUnitProduction = new int[GC.getNumUnitInfos()];
-		m_paiUnitProductionTime = new int[GC.getNumUnitInfos()];
-		m_aiSpecialistWeights = new int[GC.getNumUnitInfos()];
-		for (iI = 0;iI < GC.getNumUnitInfos();iI++)
-		{
-			m_paiUnitProduction[iI] = 0;
-			m_paiUnitProductionTime[iI] = 0;
-			m_aiSpecialistWeights[iI] = 0;
-		}
+		m_ja_iUnitProduction.resetContent();
+		m_ja_iUnitProductionTime.resetContent();
+		m_ba_ConTrainSpecialist.resetContent();
 
 		FAssertMsg((0 < GC.getNumUnitCombatInfos()),  "GC.getNumUnitCombatInfos() is not greater than zero but an array is being allocated in CvCity::reset");
-		m_paiUnitCombatFreeExperience = new int[GC.getNumUnitCombatInfos()];
-		for (iI = 0; iI < GC.getNumUnitCombatInfos(); iI++)
-		{
-			m_paiUnitCombatFreeExperience[iI] = 0;
-		}
+		m_ja_iUnitCombatFreeExperience.resetContent();
 
 		FAssertMsg((0 < GC.getNumPromotionInfos()),  "GC.getNumPromotionInfos() is not greater than zero but an array is being allocated in CvCity::reset");
-		m_paiFreePromotionCount = new int[GC.getNumPromotionInfos()];
-		for (iI = 0; iI < GC.getNumPromotionInfos(); iI++)
-		{
-			m_paiFreePromotionCount[iI] = 0;
-		}
+		m_ja_iFreePromotionCount.resetContent();
 
 		FAssertMsg((0 < NUM_CITY_PLOTS),  "NUM_CITY_PLOTS is not greater than zero but an array is being allocated in CvCity::reset");
 		m_paiWorkingPlot = new int[NUM_CITY_PLOTS];
@@ -660,8 +601,8 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 	}
 
 	// R&R, ray, finishing Custom House Screen
-	ma_aiCustomHouseSellThreshold.reset();
-	ma_aiCustomHouseNeverSell.reset();
+	ma_aiCustomHouseSellThreshold.releaseMemory();
+	ma_aiCustomHouseNeverSell.releaseMemory();
 	// R&R, ray, finishing Custom House Screen END
 
 	if (!bConstructorCall)
@@ -2784,10 +2725,6 @@ void CvCity::hurry(HurryTypes eHurry)
 
 void CvCity::processBuilding(BuildingTypes eBuilding, int iChange)
 {
-	if (GC.getBuildingInfo(eBuilding).getFreePromotion() != NO_PROMOTION)
-	{
-		changeFreePromotionCount(((PromotionTypes)(GC.getBuildingInfo(eBuilding).getFreePromotion())), iChange);
-	}
 	///TKs Med
 	if (GC.getBuildingInfo(eBuilding).isIncreasesCityPopulation() != 0)
 	{
@@ -4213,9 +4150,7 @@ void CvCity::updateCultureLevel()
 
 int CvCity::getSeaPlotYield(YieldTypes eIndex) const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex expected to be < NUM_YIELD_TYPES");
-	return m_aiSeaPlotYield[eIndex];
+	return m_ja_iSeaPlotYield.get(eIndex);
 }
 
 
@@ -4226,7 +4161,7 @@ void CvCity::changeSeaPlotYield(YieldTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_aiSeaPlotYield[eIndex] = (m_aiSeaPlotYield[eIndex] + iChange);
+		m_ja_iSeaPlotYield.add(iChange, eIndex);
 		FAssert(getSeaPlotYield(eIndex) >= 0);
 
 		updateYield();
@@ -4236,9 +4171,7 @@ void CvCity::changeSeaPlotYield(YieldTypes eIndex, int iChange)
 
 int CvCity::getRiverPlotYield(YieldTypes eIndex) const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex expected to be < NUM_YIELD_TYPES");
-	return m_aiRiverPlotYield[eIndex];
+	return m_ja_iRiverPlotYield.get(eIndex);
 }
 
 
@@ -4249,7 +4182,7 @@ void CvCity::changeRiverPlotYield(YieldTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_aiRiverPlotYield[eIndex] += iChange;
+		m_ja_iRiverPlotYield.add(iChange, eIndex);
 		FAssert(getRiverPlotYield(eIndex) >= 0);
 
 		updateYield();
@@ -4636,9 +4569,7 @@ void CvCity::setYieldRateDirty()
 
 int CvCity::getYieldRateModifier(YieldTypes eIndex)	const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex expected to be < NUM_YIELD_TYPES");
-	return m_aiYieldRateModifier[eIndex];
+	return m_ja_iYieldRateModifier.get(eIndex);
 }
 
 
@@ -4649,7 +4580,7 @@ void CvCity::changeYieldRateModifier(YieldTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_aiYieldRateModifier[eIndex] += iChange;
+		m_ja_iYieldRateModifier.add(iChange, eIndex);
 		FAssert(getYieldRateModifier(eIndex) >= 0);
 
 		GET_PLAYER(getOwnerINLINE()).invalidateYieldRankCache(eIndex);
@@ -4814,9 +4745,7 @@ void CvCity::changeCulture(PlayerTypes eIndex, int iChange, bool bPlots)
 
 int CvCity::getYieldStored(YieldTypes eYield) const
 {
-	FAssertMsg(eYield >= 0, "eYield expected to be >= 0");
-	FAssertMsg(eYield < NUM_YIELD_TYPES	, "eYield expected to be < NUM_YIELD_TYPES");
-	return m_aiYieldStored[eYield];
+	return m_ja_iYieldStored.get(eYield);
 }
 
 void CvCity::setYieldStored(YieldTypes eYield, int iValue)
@@ -4836,7 +4765,7 @@ void CvCity::setYieldStored(YieldTypes eYield, int iValue)
 	int iChange = iValue - getYieldStored(eYield);
 	if (iChange != 0)
 	{
-		m_aiYieldStored[eYield] = iValue;
+		m_ja_iYieldStored.set(iValue, eYield);
 
 		if (!AI_isWorkforceHack())
 		{
@@ -4874,14 +4803,12 @@ void CvCity::changeYieldStored(YieldTypes eYield, int iChange)
 
 int CvCity::getYieldRushed(YieldTypes eYield) const
 {
-	FAssert(eYield >= 0 && eYield < NUM_YIELD_TYPES);
-	return m_aiYieldRushed[eYield];
+	return m_ja_iYieldRushed.get(eYield);
 }
 
 void CvCity::changeYieldRushed(YieldTypes eYield, int iChange)
 {
-	FAssert(eYield >= 0 && eYield < NUM_YIELD_TYPES);
-	m_aiYieldRushed[eYield] += iChange;
+	m_ja_iYieldRushed.add(iChange, eYield);
 	FAssert(getYieldRushed(eYield) >= 0);
 }
 
@@ -5952,9 +5879,7 @@ void CvCity::setScriptData(std::string szNewValue)
 
 int CvCity::getBuildingProduction(BuildingTypes eIndex)	const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < GC.getNumBuildingInfos(), "eIndex expected to be < GC.getNumBuildingInfos()");
-	return m_paiBuildingProduction[eIndex];
+	return m_ja_iBuildingProduction.get(eIndex);
 }
 
 
@@ -5965,7 +5890,7 @@ void CvCity::setBuildingProduction(BuildingTypes eIndex, int iNewValue)
 
 	if (getBuildingProduction(eIndex) != iNewValue)
 	{
-		m_paiBuildingProduction[eIndex] = iNewValue;
+		m_ja_iBuildingProduction.set(iNewValue, eIndex);
 		FAssert(getBuildingProduction(eIndex) >= 0);
 
 		if (getTeam() == GC.getGameINLINE().getActiveTeam())
@@ -5990,17 +5915,13 @@ void CvCity::changeBuildingProduction(BuildingTypes eIndex, int iChange)
 
 int CvCity::getBuildingProductionTime(BuildingTypes eIndex)	const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < GC.getNumBuildingInfos(), "eIndex expected to be < GC.getNumBuildingInfos()");
-	return m_paiBuildingProductionTime[eIndex];
+	return m_ja_iBuildingProductionTime.get(eIndex);
 }
 
 
 void CvCity::setBuildingProductionTime(BuildingTypes eIndex, int iNewValue)
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < GC.getNumBuildingInfos(), "eIndex expected to be < GC.getNumBuildingInfos()");
-	m_paiBuildingProductionTime[eIndex] = iNewValue;
+	m_ja_iBuildingProductionTime.set(iNewValue, eIndex);
 	FAssert(getBuildingProductionTime(eIndex) >= 0);
 }
 
@@ -6013,25 +5934,19 @@ void CvCity::changeBuildingProductionTime(BuildingTypes eIndex, int iChange)
 
 int CvCity::getBuildingOriginalOwner(BuildingTypes eIndex) const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < GC.getNumBuildingInfos(), "eIndex expected to be < GC.getNumBuildingInfos()");
-	return m_paiBuildingOriginalOwner[eIndex];
+	return m_ja_iBuildingOriginalOwner.get(eIndex);
 }
 
 
 int CvCity::getBuildingOriginalTime(BuildingTypes eIndex) const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < GC.getNumBuildingInfos(), "eIndex expected to be < GC.getNumBuildingInfos()");
-	return m_paiBuildingOriginalTime[eIndex];
+	return m_ja_iBuildingOriginalTime.get(eIndex);
 }
 
 
 int CvCity::getUnitProduction(UnitTypes eIndex)	const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < GC.getNumUnitInfos(), "eIndex expected to be < GC.getNumUnitInfos()");
-	return m_paiUnitProduction[eIndex];
+	return m_ja_iUnitProduction.get(eIndex);
 }
 
 
@@ -6042,7 +5957,7 @@ void CvCity::setUnitProduction(UnitTypes eIndex, int iNewValue)
 
 	if (getUnitProduction(eIndex) != iNewValue)
 	{
-		m_paiUnitProduction[eIndex] = iNewValue;
+		m_ja_iUnitProduction.set(iNewValue, eIndex);
 		FAssert(getUnitProduction(eIndex) >= 0);
 
 		if (getTeam() == GC.getGameINLINE().getActiveTeam())
@@ -6067,17 +5982,13 @@ void CvCity::changeUnitProduction(UnitTypes eIndex, int iChange)
 
 int CvCity::getUnitProductionTime(UnitTypes eIndex)	const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < GC.getNumUnitInfos(), "eIndex expected to be < GC.getNumUnitInfos()");
-	return m_paiUnitProductionTime[eIndex];
+	return m_ja_iUnitProductionTime.get(eIndex);
 }
 
 
 void CvCity::setUnitProductionTime(UnitTypes eIndex, int iNewValue)
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < GC.getNumUnitInfos(), "eIndex expected to be < GC.getNumUnitInfos()");
-	m_paiUnitProductionTime[eIndex] = iNewValue;
+	m_ja_iUnitProductionTime.set(iNewValue, eIndex);
 	FAssert(getUnitProductionTime(eIndex) >= 0);
 }
 
@@ -6090,41 +6001,26 @@ void CvCity::changeUnitProductionTime(UnitTypes eIndex, int iChange)
 
 int CvCity::getUnitCombatFreeExperience(UnitCombatTypes eIndex) const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < GC.getNumUnitCombatInfos(), "eIndex expected to be < GC.getNumUnitCombatInfos()");
-	return m_paiUnitCombatFreeExperience[eIndex];
+	return m_ja_iUnitCombatFreeExperience.get(eIndex);
 }
 
 
 void CvCity::changeUnitCombatFreeExperience(UnitCombatTypes eIndex, int iChange)
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < GC.getNumUnitCombatInfos(), "eIndex expected to be < GC.getNumUnitCombatInfos()");
-	m_paiUnitCombatFreeExperience[eIndex] = (m_paiUnitCombatFreeExperience[eIndex] + iChange);
+	m_ja_iUnitCombatFreeExperience.add(iChange, eIndex);
 	FAssert(getUnitCombatFreeExperience(eIndex) >= 0);
 }
 
 
 int CvCity::getFreePromotionCount(PromotionTypes eIndex) const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < GC.getNumPromotionInfos(), "eIndex expected to be < GC.getNumPromotionInfos()");
-	return m_paiFreePromotionCount[eIndex];
+	return m_ja_iFreePromotionCount.get(eIndex);
 }
 
 
 bool CvCity::isFreePromotion(PromotionTypes eIndex) const
 {
-	return (getFreePromotionCount(eIndex) > 0);
-}
-
-
-void CvCity::changeFreePromotionCount(PromotionTypes eIndex, int iChange)
-{
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < GC.getNumPromotionInfos(), "eIndex expected to be < GC.getNumPromotionInfos()");
-	m_paiFreePromotionCount[eIndex] = (m_paiFreePromotionCount[eIndex] + iChange);
-	FAssert(getFreePromotionCount(eIndex) >= 0);
+	return (m_ja_iFreePromotionCount.get(eIndex) > 0);
 }
 
 
@@ -6534,9 +6430,7 @@ int CvCity::getNextFreeUnitId() const
 
 bool CvCity::isHasRealBuilding(BuildingTypes eIndex) const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < GC.getNumBuildingInfos(), "eIndex expected to be < GC.getNumBuildingInfos()");
-	return m_pabHasRealBuilding[eIndex];
+	return m_ba_HasRealBuilding.get(eIndex);
 }
 
 
@@ -6559,18 +6453,18 @@ void CvCity::setHasRealBuildingTimed(BuildingTypes eIndex, bool bNewValue, bool 
 			abOldBuildings[i] = isHasBuilding((BuildingTypes) i);
 		}
 
-		m_pabHasRealBuilding[eIndex] = bNewValue;
+		m_ba_HasRealBuilding.set(bNewValue, eIndex);
 		setYieldRateDirty();
 
 		if (isHasRealBuilding(eIndex))
 		{
-			m_paiBuildingOriginalOwner[eIndex] = eOriginalOwner;
-			m_paiBuildingOriginalTime[eIndex] = iOriginalTime;
+			m_ja_iBuildingOriginalOwner.set(eOriginalOwner, eIndex);
+			m_ja_iBuildingOriginalTime.set(iOriginalTime, eIndex);
 		}
 		else
 		{
-			m_paiBuildingOriginalOwner[eIndex] = NO_PLAYER;
-			m_paiBuildingOriginalTime[eIndex] = MIN_INT;
+			m_ja_iBuildingOriginalOwner.set(NO_PLAYER, eIndex);
+			m_ja_iBuildingOriginalTime.set(MIN_INT, eIndex);
 		}
 
 		for (int i = 0; i < GC.getNumBuildingInfos(); ++i)
@@ -6608,9 +6502,7 @@ void CvCity::setHasRealBuildingTimed(BuildingTypes eIndex, bool bNewValue, bool 
 
 bool CvCity::isHasFreeBuilding(BuildingTypes eIndex) const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < GC.getNumBuildingInfos(), "eIndex expected to be < GC.getNumBuildingInfos()");
-	return m_pabHasFreeBuilding[eIndex];
+	return m_ba_HasFreeBuilding.get(eIndex);
 }
 
 
@@ -6627,7 +6519,7 @@ void CvCity::setHasFreeBuilding(BuildingTypes eIndex, bool bNewValue)
 			abOldBuildings[i] = isHasBuilding((BuildingTypes) i);
 		}
 
-		m_pabHasFreeBuilding[eIndex] = bNewValue;
+		m_ba_HasFreeBuilding.set(bNewValue, eIndex);
 		setYieldRateDirty();
 
 		for (int i = 0; i < GC.getNumBuildingInfos(); ++i)
@@ -8103,7 +7995,7 @@ void CvCity::doSpecialists()
 			///TKe
 			if (kUnit.getTeachLevel() <= iTeachLevel)
 			{
-				m_aiSpecialistWeights[eUnit] = 1;
+				m_ba_ConTrainSpecialist.set(true, eUnit);
 			}
 		}
 	}
@@ -8357,34 +8249,6 @@ void CvCity::doMissionaries()
 	GET_PLAYER(getOwnerINLINE()).applyMissionaryPoints(this);
 }
 
-// just-in-time yield arrays - start - Nightinggale
-// bitmap to tell which arrays are saved
-enum
-{
-	// traderoute just-in-time - start - Nightinggale
-	SAVE_BIT_TRADE_IMPORTS               = 1 << 0,
-	SAVE_BIT_TRADE_EXPORTS               = 1 << 1,
-	///Tks Med
-	SAVE_BIT_TRADE_MARKET                = 1 << 2,
-	///Tke Med
-	SAVE_BIT_TRADE_THRESHOLD             = 1 << 3,
-	// traderoute just-in-time - end - Nightinggale
-	// transport feeder - start - Nightinggale
-	SAVE_BIT_IMPORT_FEEDER               = 1 << 4,
-	// transport feeder - end - Nightinggale
-	// Teacher List - start - Nightinggale
-	SAVE_BIT_ORDERED_STUDENTS            = 1 << 5,
-	SAVE_BIT_ORDERED_STUDENTS_REPEAT     = 1 << 6,
-	// Teacher List - end - Nightinggale
-	// R&R, ray, finishing Custom House Screen
-	SAVE_BIT_CUSTOM_HOUSE_SELL_THRESHOLD = 1 << 7,
-	SAVE_BIT_CUSTOM_HOUSE_NEVER_SELL     = 1 << 8,
-	// R&R, ray, finishing Custom House Screen END
-	// transport feeder - start - Nightinggale
-	SAVE_BIT_IMPORT_STOP                 = 1 << 9,
-	// transport feeder - end - Nightinggale
-};
-
 // Private Functions...
 
 void CvCity::read(FDataStreamBase* pStream)
@@ -8396,12 +8260,6 @@ void CvCity::read(FDataStreamBase* pStream)
 
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
-
-	uint arrayBitmap = 0;
-	if (uiFlag > 2)
-	{
-		pStream->Read(&arrayBitmap);
-	}
 
 	pStream->Read(&m_iID);
 	pStream->Read(&m_iX);
@@ -8436,10 +8294,7 @@ void CvCity::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iDetectMaraudersRange);
 	pStream->Read(&m_iMaxFoodConsumed);
 	///TKe
-	if (uiFlag > 1)
-	{
-		pStream->Read(&m_iEducationThresholdMultiplier);
-	}
+	pStream->Read(&m_iEducationThresholdMultiplier);
 
 	pStream->Read(&m_bNeverLost);
 	pStream->Read(&m_bBombarded);
@@ -8448,85 +8303,51 @@ void CvCity::read(FDataStreamBase* pStream)
 	// m_bInfoDirty not saved...
 	// m_bLayoutDirty not saved...
     ///TKs Med
+	// TODO city types in XML
     pStream->Read((int*)&m_iCityType);
-    pStream->Read((int*)&m_eSelectedArmor);
+    pStream->Read(&m_eSelectedArmor);
     pStream->Read((int*)&m_eVassalOwner);
     ///Tke
 	pStream->Read((int*)&m_eOwner);
 	pStream->Read((int*)&m_ePreviousOwner);
 	pStream->Read((int*)&m_eOriginalOwner);
 	pStream->Read((int*)&m_eCultureLevel);
-	pStream->Read((int*)&m_eTeachUnitClass);
-	if (uiFlag == 0)
-	{
-		m_eMissionaryPlayer = NO_PLAYER;
-		CivilizationTypes eMissionaryCivilization;
-		pStream->Read((int*)&eMissionaryCivilization);
-		for (int iPlayer = 0; iPlayer < MAX_PLAYERS; iPlayer++)
-		{
-			CvPlayer& kPlayer = GET_PLAYER((PlayerTypes) iPlayer);
-			if (kPlayer.isAlive() && kPlayer.getCivilizationType() == eMissionaryCivilization)
-			{
-				m_eMissionaryPlayer = (PlayerTypes) iPlayer;
-				break;
-			}
-		}
-	}
-	else
-	{
-		pStream->Read((int*)&m_eMissionaryPlayer);
-	}
+	pStream->Read(&m_eTeachUnitClass);
+	pStream->Read((int*)&m_eMissionaryPlayer);
     ///TKs Med
     pStream->Read(2, m_aiEventTimers);
-    //pStream->Read(MAX_TEAMS, m_abTradePostBuilt);
-	if (uiFlag < 6)
-	{
-		loadIntoBitmap(pStream, m_bmTradePostBuilt, MAX_TEAMS);
-	} else {
-		pStream->Read(&m_bmTradePostBuilt);
-	}
-	pStream->Read(NUM_YIELD_TYPES, m_aiConnectedTradeBonus);
-	pStream->Read(NUM_YIELD_TYPES, m_aiConnectedMissionBonus);
+	pStream->Read(&m_bmTradePostBuilt);
+	m_ja_iConnectedTradeBonus.read(pStream);
+	m_ja_iConnectedMissionBonus.read(pStream);
     ///Tke
-	pStream->Read(NUM_YIELD_TYPES, m_aiSeaPlotYield);
-	pStream->Read(NUM_YIELD_TYPES, m_aiRiverPlotYield);
-	pStream->Read(NUM_YIELD_TYPES, m_aiYieldRateModifier);
-	pStream->Read(NUM_YIELD_TYPES, m_aiYieldStored);
-	pStream->Read(NUM_YIELD_TYPES, m_aiYieldRushed);
+	m_ja_iSeaPlotYield.read(pStream);
+	m_ja_iRiverPlotYield.read(pStream);
+	m_ja_iYieldRateModifier.read(pStream);
+	m_ja_iYieldStored.read(pStream);
+	m_ja_iYieldRushed.read(pStream);
 	pStream->Read(NUM_DOMAIN_TYPES, m_aiDomainFreeExperience);
 	pStream->Read(NUM_DOMAIN_TYPES, m_aiDomainProductionModifier);
 	pStream->Read(MAX_PLAYERS, m_aiCulture);
 
 	/// player bitmap - start - Nightinggale
-	//pStream->Read(MAX_PLAYERS, m_abEverOwned);
-	//pStream->Read(MAX_TEAMS, m_abRevealed);
-	//pStream->Read(MAX_TEAMS, m_abScoutVisited);
-	if (uiFlag < 6)
-	{
-		loadIntoBitmap(pStream, m_bmEverOwned, MAX_PLAYERS);
-		loadIntoBitmap(pStream, m_bmRevealed, MAX_TEAMS);
-		loadIntoBitmap(pStream, m_bmScoutVisited, MAX_TEAMS);
-	} else {
-		pStream->Read(&m_bmEverOwned);
-		pStream->Read(&m_bmRevealed);
-		pStream->Read(&m_bmScoutVisited);
-	}
+	pStream->Read(&m_bmEverOwned);
+	pStream->Read(&m_bmRevealed);
+	pStream->Read(&m_bmScoutVisited);
 	/// player bitmap - end - Nightinggale
 
 	pStream->ReadString(m_szName);
 	pStream->ReadString(m_szScriptData);
 
-	pStream->Read(GC.getNumBuildingInfos(), m_paiBuildingProduction);
-	pStream->Read(GC.getNumBuildingInfos(), m_paiBuildingProductionTime);
-	pStream->Read(GC.getNumBuildingInfos(), m_paiBuildingOriginalOwner);
-	pStream->Read(GC.getNumBuildingInfos(), m_paiBuildingOriginalTime);
-	pStream->Read(GC.getNumUnitInfos(), m_paiUnitProduction);
-	pStream->Read(GC.getNumUnitInfos(), m_paiUnitProductionTime);
-	pStream->Read(GC.getNumUnitInfos(), m_aiSpecialistWeights);
-	pStream->Read(GC.getNumUnitCombatInfos(), m_paiUnitCombatFreeExperience);
-	pStream->Read(GC.getNumPromotionInfos(), m_paiFreePromotionCount);
-	pStream->Read(GC.getNumBuildingInfos(), m_pabHasRealBuilding);
-	pStream->Read(GC.getNumBuildingInfos(), m_pabHasFreeBuilding);
+	m_ja_iBuildingProduction.read(pStream);
+	m_ja_iBuildingProductionTime.read(pStream);
+	m_ja_iBuildingOriginalOwner.read(pStream);
+	m_ja_iBuildingOriginalTime.read(pStream);
+	m_ja_iUnitProduction.read(pStream);
+	m_ja_iUnitProductionTime.read(pStream);
+	m_ba_ConTrainSpecialist.read(pStream);
+	m_ja_iUnitCombatFreeExperience.read(pStream);
+	m_ba_HasRealBuilding.read(pStream);
+	m_ba_HasFreeBuilding.read(pStream);
 
 	pStream->Read(NUM_CITY_PLOTS, m_paiWorkingPlot);
 
@@ -8542,86 +8363,32 @@ void CvCity::read(FDataStreamBase* pStream)
 	}
 
 	// traderoute just-in-time - start - Nightinggale
- 	if (uiFlag > 2)
-  	{
- 		ma_tradeImports.read(pStream, arrayBitmap & SAVE_BIT_TRADE_IMPORTS);
- 		ma_tradeExports.read(pStream, arrayBitmap & SAVE_BIT_TRADE_EXPORTS);
-		///Tks Med
-		ma_tradeMarket.read(pStream, arrayBitmap & SAVE_BIT_TRADE_MARKET);
-		///Tke Med
- 		ma_tradeThreshold.read(pStream, arrayBitmap & SAVE_BIT_TRADE_THRESHOLD);
- 		// transport feeder - start - Nightinggale
- 		ma_tradeImportsMaintain.read(pStream, arrayBitmap & SAVE_BIT_IMPORT_FEEDER);
-		ma_tradeStopAutoImport.read(pStream, arrayBitmap & SAVE_BIT_IMPORT_STOP);
- 		// transport feeder - end - Nightinggale
- 	} else {
- 		int iNumYields;
-
- 		pStream->Read(&iNumYields);
- 		for (int iI = 0; iI < iNumYields; iI++)
- 		{
- 			int iIndex;
- 			pStream->Read(&iIndex);
- 			ma_tradeImports.set(true, iIndex);
- 		}
-
- 		pStream->Read(&iNumYields);
- 		for (int iI = 0; iI < iNumYields; iI++)
- 		{
- 			int iIndex;
- 			pStream->Read(&iIndex);
- 			ma_tradeExports.set(true, iIndex);
- 		}
-
-		///Tks Med
-		pStream->Read(&iNumYields);
-		if (iNumYields > 0)
-		{
-			int iIndex;
- 			pStream->Read(&iIndex);
- 			ma_tradeMarket.set(true, iIndex);
-		}
-		///Tke
-
- 		pStream->Read(&iNumYields);
- 		for (int i = 0; i < iNumYields; ++i)
- 		{
- 			YieldTypes eYield;
- 			int iLevel;
- 			pStream->Read((int*)&eYield);
- 			pStream->Read(&iLevel);
- 			ma_tradeThreshold.set(iLevel, eYield);
- 		}
-  	}
+ 	ma_tradeImports.read(pStream);
+ 	ma_tradeExports.read(pStream);
+	///Tks Med
+	ma_tradeMarket.read(pStream);
+	///Tke Med
+ 	ma_tradeThreshold.read(pStream);
+ 	// transport feeder - start - Nightinggale
+ 	ma_tradeImportsMaintain.read(pStream);
+	ma_tradeStopAutoImport.read(pStream);
+ 	// transport feeder - end - Nightinggale
  	// traderoute just-in-time - end - Nightinggale
 
 	// R&R, ray, finishing Custom House Screen
-	ma_aiCustomHouseSellThreshold.read(pStream, arrayBitmap & SAVE_BIT_CUSTOM_HOUSE_SELL_THRESHOLD);
-	ma_aiCustomHouseNeverSell.read(    pStream, arrayBitmap & SAVE_BIT_CUSTOM_HOUSE_NEVER_SELL);
-	if (uiFlag == 4)
-	{
-		// saved prices are no longer needed. Skip past them.
-		for (int i = 0; i < NUM_YIELD_TYPES; i++)
-		{
-			int iBuffer;
-			pStream->Read(&iBuffer);
-		}
-	}
+	ma_aiCustomHouseSellThreshold.read(pStream);
+	ma_aiCustomHouseNeverSell.read(pStream);
 	// R&R, ray, finishing Custom House Screen END
 
 	// Teacher List - start - Nightinggale
-	ma_OrderedStudents.read(      pStream, arrayBitmap & SAVE_BIT_ORDERED_STUDENTS);
-	ma_OrderedStudentsRepeat.read(pStream, arrayBitmap & SAVE_BIT_ORDERED_STUDENTS_REPEAT);
+	ma_OrderedStudents.read(pStream);
+	ma_OrderedStudentsRepeat.read(pStream);
 	// Teacher List - end - Nightinggale
 
 	m_orderQueue.Read(pStream);
 
 	pStream->Read(&m_iPopulationRank);
 	pStream->Read(&m_bPopulationRankValid);
-	pStream->Read(NUM_YIELD_TYPES, m_aiBaseYieldRank);
-	pStream->Read(NUM_YIELD_TYPES, m_abBaseYieldRankValid);
-	pStream->Read(NUM_YIELD_TYPES, m_aiYieldRank);
-	pStream->Read(NUM_YIELD_TYPES, m_abYieldRankValid);
 
 	pStream->Read(&iNumElts);
 	m_aEventsOccured.clear();
@@ -8659,33 +8426,8 @@ void CvCity::read(FDataStreamBase* pStream)
 
 void CvCity::write(FDataStreamBase* pStream)
 {
-	uint uiFlag=6;
+	uint uiFlag=0;
 	pStream->Write(uiFlag);		// flag for expansion
-
-	// just-in-time yield arrays - start - Nightinggale
-	uint arrayBitmap = 0;
-	// traderoute just-in-time - start - Nightinggale
-	arrayBitmap |= ma_tradeImports.hasContent()               ? SAVE_BIT_TRADE_IMPORTS : 0;
-	arrayBitmap |= ma_tradeExports.hasContent()               ? SAVE_BIT_TRADE_EXPORTS : 0;
-	///Tks Med
-	arrayBitmap |= ma_tradeMarket.hasContent()                ? SAVE_BIT_TRADE_MARKET : 0;
-	///Tke Med
-	arrayBitmap |= ma_tradeThreshold.hasContent()             ? SAVE_BIT_TRADE_THRESHOLD : 0;
-	// traderoute just-in-time - end - Nightinggale
-	// transport feeder - start - Nightinggale
-	arrayBitmap |= ma_tradeImportsMaintain.hasContent()       ? SAVE_BIT_IMPORT_FEEDER : 0;
-	arrayBitmap |= ma_tradeStopAutoImport.hasContent()        ? SAVE_BIT_IMPORT_STOP : 0;
-	// transport feeder - end - Nightinggale
-	// Teacher List - start - Nightinggale
-	arrayBitmap |= ma_OrderedStudents.hasContent()            ? SAVE_BIT_ORDERED_STUDENTS : 0;
-	arrayBitmap |= ma_OrderedStudentsRepeat.hasContent()      ? SAVE_BIT_ORDERED_STUDENTS_REPEAT : 0;
-	// Teacher List - end - Nightinggale
-	// R&R, ray, finishing Custom House Screen
-	arrayBitmap |= ma_aiCustomHouseSellThreshold.hasContent() ? SAVE_BIT_CUSTOM_HOUSE_SELL_THRESHOLD : 0;
-	arrayBitmap |= ma_aiCustomHouseNeverSell.hasContent()     ? SAVE_BIT_CUSTOM_HOUSE_NEVER_SELL : 0;
-	// R&R, ray, finishing Custom House Screen END
-	pStream->Write(arrayBitmap);
-	// just-in-time yield arrays - end - Nightinggale
 
 	pStream->Write(m_iID);
 	pStream->Write(m_iX);
@@ -8743,15 +8485,15 @@ void CvCity::write(FDataStreamBase* pStream)
 	pStream->Write(2, m_aiEventTimers);
 	//pStream->Write(MAX_TEAMS, m_abTradePostBuilt);
 	pStream->Write(m_bmTradePostBuilt);
-	pStream->Write(NUM_YIELD_TYPES, m_aiConnectedTradeBonus);
-	pStream->Write(NUM_YIELD_TYPES, m_aiConnectedMissionBonus);
+	m_ja_iConnectedTradeBonus.write(pStream);
+	m_ja_iConnectedMissionBonus.write(pStream);
 	///Tke
 
-	pStream->Write(NUM_YIELD_TYPES, m_aiSeaPlotYield);
-	pStream->Write(NUM_YIELD_TYPES, m_aiRiverPlotYield);
-	pStream->Write(NUM_YIELD_TYPES, m_aiYieldRateModifier);
-	pStream->Write(NUM_YIELD_TYPES, m_aiYieldStored);
-	pStream->Write(NUM_YIELD_TYPES, m_aiYieldRushed);
+	m_ja_iSeaPlotYield.write(pStream);
+	m_ja_iRiverPlotYield.write(pStream);
+	m_ja_iYieldRateModifier.write(pStream);
+	m_ja_iYieldStored.write(pStream);
+	m_ja_iYieldRushed.write(pStream);
 	pStream->Write(NUM_DOMAIN_TYPES, m_aiDomainFreeExperience);
 	pStream->Write(NUM_DOMAIN_TYPES, m_aiDomainProductionModifier);
 	pStream->Write(MAX_PLAYERS, m_aiCulture);
@@ -8768,17 +8510,16 @@ void CvCity::write(FDataStreamBase* pStream)
 	pStream->WriteString(m_szName);
 	pStream->WriteString(m_szScriptData);
 
-	pStream->Write(GC.getNumBuildingInfos(), m_paiBuildingProduction);
-	pStream->Write(GC.getNumBuildingInfos(), m_paiBuildingProductionTime);
-	pStream->Write(GC.getNumBuildingInfos(), m_paiBuildingOriginalOwner);
-	pStream->Write(GC.getNumBuildingInfos(), m_paiBuildingOriginalTime);
-	pStream->Write(GC.getNumUnitInfos(), m_paiUnitProduction);
-	pStream->Write(GC.getNumUnitInfos(), m_paiUnitProductionTime);
-	pStream->Write(GC.getNumUnitInfos(), m_aiSpecialistWeights);
-	pStream->Write(GC.getNumUnitCombatInfos(), m_paiUnitCombatFreeExperience);
-	pStream->Write(GC.getNumPromotionInfos(), m_paiFreePromotionCount);
-	pStream->Write(GC.getNumBuildingInfos(), m_pabHasRealBuilding);
-	pStream->Write(GC.getNumBuildingInfos(), m_pabHasFreeBuilding);
+	m_ja_iBuildingProduction.write(pStream);
+	m_ja_iBuildingProductionTime.write(pStream);
+	m_ja_iBuildingOriginalOwner.write(pStream);
+	m_ja_iBuildingOriginalTime.write(pStream);
+	m_ja_iUnitProduction.write(pStream);
+	m_ja_iUnitProductionTime.write(pStream);
+	m_ba_ConTrainSpecialist.write(pStream);
+	m_ja_iUnitCombatFreeExperience.write(pStream);
+	m_ba_HasRealBuilding.write(pStream);
+	m_ba_HasFreeBuilding.write(pStream);
 
 	pStream->Write(NUM_CITY_PLOTS, m_paiWorkingPlot);
 
@@ -8789,36 +8530,36 @@ void CvCity::write(FDataStreamBase* pStream)
 	}
 
 	// traderoute just-in-time - start - Nightinggale
-	ma_tradeImports.write(pStream, arrayBitmap & SAVE_BIT_TRADE_IMPORTS);
-	ma_tradeExports.write(pStream, arrayBitmap & SAVE_BIT_TRADE_EXPORTS);
+	ma_tradeImports.write(pStream);
+	ma_tradeExports.write(pStream);
 	///Tks Med
-	ma_tradeMarket.write(pStream, arrayBitmap & SAVE_BIT_TRADE_MARKET);
+	ma_tradeMarket.write(pStream);
 	///Tke Med
-	ma_tradeThreshold.write(pStream, arrayBitmap & SAVE_BIT_TRADE_THRESHOLD);
+	ma_tradeThreshold.write(pStream);
 	// traderoute just-in-time - end - Nightinggale
 	// transport feeder - start - Nightinggale
-	ma_tradeImportsMaintain.write(pStream, arrayBitmap & SAVE_BIT_IMPORT_FEEDER);
-	ma_tradeStopAutoImport.write(pStream, arrayBitmap & SAVE_BIT_IMPORT_STOP);
+	ma_tradeImportsMaintain.write(pStream);
+	ma_tradeStopAutoImport.write(pStream);
 	// transport feeder - end - Nightinggale
 
 	// R&R, ray, finishing Custom House Screen
-	ma_aiCustomHouseSellThreshold.write(pStream, arrayBitmap & SAVE_BIT_CUSTOM_HOUSE_SELL_THRESHOLD);
-	ma_aiCustomHouseNeverSell.write    (pStream, arrayBitmap & SAVE_BIT_CUSTOM_HOUSE_NEVER_SELL);
+	ma_aiCustomHouseSellThreshold.write(pStream);
+	ma_aiCustomHouseNeverSell.write(pStream);
 	// R&R, ray, finishing Custom House Screen END
 
 	// Teacher List - start - Nightinggale
-	ma_OrderedStudents.write(      pStream, arrayBitmap & SAVE_BIT_ORDERED_STUDENTS);
-	ma_OrderedStudentsRepeat.write(pStream, arrayBitmap & SAVE_BIT_ORDERED_STUDENTS_REPEAT);
+	ma_OrderedStudents.write(pStream);
+	ma_OrderedStudentsRepeat.write(pStream);
 	// Teacher List - end - Nightinggale
 
 	m_orderQueue.Write(pStream);
 
 	pStream->Write(m_iPopulationRank);
 	pStream->Write(m_bPopulationRankValid);
-	pStream->Write(NUM_YIELD_TYPES, m_aiBaseYieldRank);
-	pStream->Write(NUM_YIELD_TYPES, m_abBaseYieldRankValid);
-	pStream->Write(NUM_YIELD_TYPES, m_aiYieldRank);
-	pStream->Write(NUM_YIELD_TYPES, m_abYieldRankValid);
+	//pStream->Write(NUM_YIELD_TYPES, m_aiBaseYieldRank);
+	//pStream->Write(NUM_YIELD_TYPES, m_abBaseYieldRankValid);
+	//pStream->Write(NUM_YIELD_TYPES, m_aiYieldRank);
+	//pStream->Write(NUM_YIELD_TYPES, m_abYieldRankValid);
 
 	pStream->Write(m_aEventsOccured.size());
 	for (std::vector<EventTypes>::iterator it = m_aEventsOccured.begin(); it != m_aEventsOccured.end(); ++it)
@@ -10844,10 +10585,12 @@ bool CvCity::educateStudent(int iUnitId, UnitTypes eUnit)
 	pLearnUnit->convert(pUnit, true);
 
 	// reduce accumulated weights, but round up
+	/*
 	for (int i = 0; i < GC.getNumUnitInfos(); ++i)
 	{
 		m_aiSpecialistWeights[i] = (m_aiSpecialistWeights[i] + 1) / 2;
 	}
+	*/
     ///TKs Med Update 1.1g
     if (!bEducationClass)
     {
@@ -10882,7 +10625,7 @@ bool CvCity::educateStudent(int iUnitId, UnitTypes eUnit)
 
 int CvCity::getSpecialistTuition(UnitTypes eUnit) const
 {
-	if (m_aiSpecialistWeights[eUnit] <= 0)
+	if (!m_ba_ConTrainSpecialist.get(eUnit))
 	{
 		return -1;
 	}
@@ -12046,9 +11789,7 @@ int CvCity::getEventTimer(int iEvent) const
 
 int CvCity::getConnectedTradeYield(YieldTypes eIndex) const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex expected to be < NUM_YIELD_TYPES");
-	return m_aiConnectedTradeBonus[eIndex];
+	return m_ja_iConnectedTradeBonus.get(eIndex);
 }
 
 
@@ -12059,20 +11800,19 @@ void CvCity::changeConnectedTradeYield(YieldTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_aiConnectedTradeBonus[eIndex] = (m_aiConnectedTradeBonus[eIndex] + iChange);
+		m_ja_iConnectedTradeBonus.add(iChange, eIndex);
 		FAssert(getConnectedTradeYield(eIndex) >= 0);
 	}
 	else
 	{
-		m_aiConnectedTradeBonus[eIndex] = 0;
+		// TODO figure out why a change of 0 is setting the var to 0
+		m_ja_iConnectedTradeBonus.set(0, eIndex);
 	}
 }
 
 int CvCity::getConnectedMissionYield(YieldTypes eIndex) const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex expected to be < NUM_YIELD_TYPES");
-	return m_aiConnectedMissionBonus[eIndex];
+	return m_ja_iConnectedMissionBonus.get(eIndex);
 }
 
 
@@ -12083,12 +11823,12 @@ void CvCity::changeConnectedMissionYield(YieldTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_aiConnectedMissionBonus[eIndex] = (m_aiConnectedMissionBonus[eIndex] + iChange);
+		m_ja_iConnectedMissionBonus.add(iChange, eIndex);
 		FAssert(getConnectedMissionYield(eIndex) >= 0);
 	}
 	else
 	{
-		m_aiConnectedMissionBonus[eIndex] = 0;
+		m_ja_iConnectedMissionBonus.set(0, eIndex);
 	}
 }
 
@@ -12113,13 +11853,15 @@ void CvCity::UpdateBuildingAffectedCache()
 	m_cache_MaxYieldCapacity[NUM_YIELD_TYPES] = getMaxYieldCapacityUncached(NO_YIELD);
 	// cache getMaxYieldCapacity - end - Nightinggale
 
-	this->m_aiBuildingYieldDemands.reset(); // domestic yield demand - Nightinggale
+	this->m_aiBuildingYieldDemands.resetContent(); // domestic yield demand - Nightinggale
 
 	this->m_iMarketCap = GC.getXMLval(XML_NO_MARKED_SALES_CAP);
 
 	///TKs Med
 	this->m_iCenterPlotBonus = 0;
 	///Tke
+
+	m_ja_iFreePromotionCount.resetContent();
 
 	{
 		int iMaxTeachLevel = 0; // EDU remake - Nightinggale
@@ -12150,10 +11892,22 @@ void CvCity::UpdateBuildingAffectedCache()
 				///TKs Med
 				this->m_iCenterPlotBonus += kBuilding.getCenterPlotBonus();
 				///Tke
+
+				{
+					PromotionTypes ePromotinon = (PromotionTypes)kBuilding.getFreePromotion();
+					if (ePromotinon != NO_PROMOTION)
+					{
+						m_ja_iFreePromotionCount.add(1, ePromotinon);
+					}
+				}
 			}
 		}
 		this->m_iTeachLevel = iMaxTeachLevel; // EDU remake - Nightinggale
 	}
+
+	// release unneeded memory
+	m_aiBuildingYieldDemands.hasContent();
+	m_ja_iFreePromotionCount.hasContent();
 }
 // building affected cache - end - Nightinggale
 
@@ -12162,8 +11916,8 @@ void CvCity::setOrderedStudents(UnitTypes eUnit, int iCount, bool bRepeat, bool 
 {
 	if (bClearAll)
 	{
-		ma_OrderedStudents.reset();
-		ma_OrderedStudentsRepeat.reset();
+		ma_OrderedStudents.resetContent();
+		ma_OrderedStudentsRepeat.resetContent();
 	} else {
 		if (!(eUnit >= 0 && eUnit < GC.getNumUnitInfos() && iCount >= 0))
 		{
@@ -12265,13 +12019,14 @@ bool CvCity::isCustomHouseNeverSell(YieldTypes eYield) const
 // domestic yield demand - start - Nightinggale
 void CvCity::setUnitYieldDemand()
 {
-	m_aiUnitYieldDemands.reset();
+	m_aiUnitYieldDemands.resetContent();
 	
 	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
 	{
 		CvUnit* pLoopUnit = m_aPopulationUnits[i];
 		setUnitYieldDemand(pLoopUnit->getUnitType());
 	}
+	m_aiUnitYieldDemands.hasContent(); // try to release memory
 }
 
 void CvCity::setUnitYieldDemand(UnitTypes eUnit, const bool bRemove)

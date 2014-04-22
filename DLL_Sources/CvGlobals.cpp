@@ -21,6 +21,8 @@
 #include "FVariableSystem.h"
 #include "CvInitCore.h"
 
+#include "CvInfoProfessions.h"
+
 #define COPY(dst, src, typeName) \
 	{ \
 		int iNum = sizeof(src)/sizeof(typeName); \
@@ -4258,3 +4260,177 @@ void CvGlobals::CheckEnumAttitudeTypes() const
 	FAssertMsg(GC.getAttitudeInfo().size() == NUM_ATTITUDE_TYPES, CvString::format("XML error. Expected %d types, but found %d", NUM_ATTITUDE_TYPES, GC.getAttitudeInfo().size()));
 }
 // XML enum check - end - Nightinggale
+
+/// JIT array save - start - Nightinggale
+int CvGlobals::getArrayLength(JIT_ARRAY_TYPES eType)
+{
+	switch (eType)
+	{
+	case JIT_ARRAY_BONUS:
+		return getNumBonusInfos();
+	case JIT_ARRAY_BUILD:
+		return getNumBuildInfos();
+	case JIT_ARRAY_BUILDING:
+		return getNumBuildingInfos();
+	case JIT_ARRAY_BUILDING_CLASS:
+		return getNumBuildingClassInfos();
+	case JIT_ARRAY_BUILDING_SPECIAL:
+		return getNumSpecialBuildingInfos();
+	case JIT_ARRAY_CIVIC:
+		return getNumCivicInfos();
+	case JIT_ARRAY_CIVIC_OPTION:
+		return getNumCivicOptionInfos();
+	case JIT_ARRAY_ERA:
+		return getNumEraInfos();
+	case JIT_ARRAY_EMPHASIZE:
+		return getNumEmphasizeInfos();
+	case JIT_ARRAY_EUROPE:
+		return getNumEuropeInfos();
+	case JIT_ARRAY_EVENT_TRIGGER:
+		return getNumEventTriggerInfos();
+	case JIT_ARRAY_FATHER:
+		return getNumFatherInfos();
+	case JIT_ARRAY_FATHER_POINT:
+		return getNumFatherPointInfos();
+	case JIT_ARRAY_FEATURE:
+		return getNumFeatureInfos();
+	case JIT_ARRAY_HANDICAP:
+		return getNumHandicapInfos();
+	case JIT_ARRAY_HURRY:
+		return getNumHurryInfos();
+	case JIT_ARRAY_IMPROVEMENT:
+		return getNumImprovementInfos();
+	case JIT_ARRAY_LEADER_HEAD:
+		return getNumLeaderHeadInfos();
+	case JIT_ARRAY_PLAYER:
+		return MAX_PLAYERS;
+	case JIT_ARRAY_PROFESSION:
+		return getNumProfessionInfos();
+	case JIT_ARRAY_PROMOTION:
+		return getNumPromotionInfos();
+	case JIT_ARRAY_ROUTE:
+		return getNumRouteInfos();
+	case JIT_ARRAY_TERRAIN:
+		return getNumTerrainInfos();
+	case JIT_ARRAY_TRAIT:
+		return getNumTraitInfos();
+	case JIT_ARRAY_UNIT:
+		return getNumUnitInfos();
+	case JIT_ARRAY_UNIT_CLASS:
+		return getNumUnitClassInfos();
+	case JIT_ARRAY_UNIT_COMBAT:
+		return getNumUnitCombatInfos();
+	case JIT_ARRAY_UNIT_SPECIAL:
+		return getNumSpecialUnitInfos();
+	case JIT_ARRAY_YIELD:
+		return NUM_YIELD_TYPES;
+	case JIT_ARRAY_CARGO_YIELD:
+		return NUM_CARGO_YIELD_TYPES;
+	}
+	FAssertMsg(false, "missing length case");
+	return 0;
+}
+
+CvWString CvGlobals::getArrayType(JIT_ARRAY_TYPES eType, int iIndex)
+{
+	// not all JIT arrays relies on XML data
+	// return an empty string when data doesn't rely in CvBasicInfo
+
+	CvWString szType;
+	
+	switch (eType)
+	{
+	case JIT_ARRAY_BONUS:
+		szType = getBonusInfo((BonusTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_BUILD:
+		szType = getBuildInfo((BuildTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_BUILDING:
+		szType = getBuildingInfo((BuildingTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_BUILDING_CLASS:
+		szType = getBuildingClassInfo((BuildingClassTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_BUILDING_SPECIAL:
+		szType = getSpecialBuildingInfo((SpecialBuildingTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_CIVIC:
+		szType = getCivicInfo((CivicTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_CIVIC_OPTION:
+		szType = getCivicOptionInfo((CivicOptionTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_ERA:
+		szType = getEraInfo((EraTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_EMPHASIZE:
+		szType = getEmphasizeInfo((EmphasizeTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_EUROPE:
+		szType = getEuropeInfo((EuropeTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_EVENT_TRIGGER:
+		szType = getEventTriggerInfo((EventTriggerTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_FATHER:
+		szType = getFatherInfo((FatherTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_FATHER_POINT:
+		szType = getFatherPointInfo((FatherPointTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_FEATURE:
+		szType = getFeatureInfo((FeatureTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_HANDICAP:
+		szType = getHandicapInfo((HandicapTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_HURRY:
+		szType = getHurryInfo((HurryTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_IMPROVEMENT:
+		szType = getImprovementInfo((ImprovementTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_LEADER_HEAD:
+		szType = getLeaderHeadInfo((LeaderHeadTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_PLAYER:
+		break;
+	case JIT_ARRAY_PROFESSION:
+		szType = getProfessionInfo((ProfessionTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_PROMOTION:
+		szType = getPromotionInfo((PromotionTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_ROUTE:
+		szType = getRouteInfo((RouteTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_TERRAIN:
+		szType = getTerrainInfo((TerrainTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_TRAIT:
+		szType = getTraitInfo((TraitTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_UNIT:
+		szType = getUnitInfo((UnitTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_UNIT_CLASS:
+		szType = getUnitClassInfo((UnitClassTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_UNIT_COMBAT:
+		szType = getUnitCombatInfo((UnitCombatTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_UNIT_SPECIAL:
+		szType = getSpecialUnitInfo((SpecialUnitTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_YIELD:
+	case JIT_ARRAY_CARGO_YIELD:
+		szType = getYieldInfo((YieldTypes)iIndex).getType();
+		break;
+	default:
+		FAssertMsg(false, "missing info case");
+	}
+
+	return szType;
+}
+/// JIT array save - end - Nightinggale

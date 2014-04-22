@@ -1062,6 +1062,13 @@ protected:
 	FAStar* m_plotGroupFinder;
 	/// PlotGroup - end - Nightinggale
 
+	/// JIT array save - start - Nightinggale
+public:
+	int getArrayLength(JIT_ARRAY_TYPES eType);
+	CvWString getArrayType(JIT_ARRAY_TYPES eType, int iIndex);
+	/// JIT array save - end - Nightinggale
+
+
 	// DLL interface
 	CvDLLUtilityIFaceBase* m_pDLL;
 };

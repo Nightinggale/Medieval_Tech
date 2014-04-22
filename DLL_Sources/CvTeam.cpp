@@ -25,6 +25,7 @@
 // Public Functions...
 
 CvTeam::CvTeam()
+	: m_ba_FatherIgnore(JIT_ARRAY_FATHER)
 {
 	/// player bitmap - start - Nightinggale
 	m_bmAtWar = 0;
@@ -34,15 +35,6 @@ CvTeam::CvTeam()
 	m_bmDefensivePact = 0;
 	m_bmForcePeace = 0;
 	/// player bitmap - end - Nightinggale
-
-	m_abFatherIgnore = NULL;
-	///Tks Med
-	m_aiAccumilatedFatherPoints = NULL;
-	///TKe
-	m_aiFatherPoints = NULL;
-	m_aiUnitClassCount = NULL;
-	m_aiBuildingClassCount = NULL;
-	m_aiEuropeUnitsPurchased = NULL;
 
 	reset((TeamTypes)0, true);
 }
@@ -71,14 +63,6 @@ void CvTeam::init(TeamTypes eID)
 
 void CvTeam::uninit()
 {
-	SAFE_DELETE_ARRAY(m_abFatherIgnore);
-	///Tks Med
-	SAFE_DELETE_ARRAY(m_aiAccumilatedFatherPoints);
-	///TKe
-	SAFE_DELETE_ARRAY(m_aiFatherPoints);
-	SAFE_DELETE_ARRAY(m_aiUnitClassCount);
-	SAFE_DELETE_ARRAY(m_aiBuildingClassCount);
-	SAFE_DELETE_ARRAY(m_aiEuropeUnitsPurchased);
 }
 
 
@@ -86,8 +70,6 @@ void CvTeam::uninit()
 // Initializes data members that are serialized.
 void CvTeam::reset(TeamTypes eID, bool bConstructorCall)
 {
-	int iI;
-
 	//--------------------------------
 	// Uninit class
 	uninit();
@@ -118,39 +100,14 @@ void CvTeam::reset(TeamTypes eID, bool bConstructorCall)
 
 	if (!bConstructorCall)
 	{
-		FAssertMsg(m_abFatherIgnore==NULL, "about to leak memory, CvTeam::m_abFatherIgnore");
-		m_abFatherIgnore = new bool [GC.getNumFatherInfos()];
-		for (iI = 0; iI < GC.getNumFatherInfos(); iI++)
-		{
-			m_abFatherIgnore[iI] = false;
-		}
+		m_ba_FatherIgnore.resetContent();
 		///Tks Med
-		FAssertMsg(m_aiFatherPoints==NULL, "about to leak memory, CvTeam::m_aiFatherPoints");
-		FAssertMsg(m_aiAccumilatedFatherPoints==NULL, "about to leak memory, CvTeam::m_aiAccumilatedFatherPoints");
-		m_aiFatherPoints = new int[GC.getNumFatherPointInfos()];
-		m_aiAccumilatedFatherPoints = new int[GC.getNumFatherPointInfos()];
-		for (iI = 0; iI < GC.getNumFatherPointInfos(); iI++)
-		{
-			m_aiFatherPoints[iI] = 0;
-			m_aiAccumilatedFatherPoints[iI] = 0;
-		}
+		m_ja_iAccumilatedFatherPoints.resetContent();
         ///Tke
-		FAssertMsg(m_aiUnitClassCount==NULL, "about to leak memory, CvTeam::m_aiUnitClassCount");
-		FAssertMsg(m_aiEuropeUnitsPurchased==NULL, "about to leak memory, CvTeam::m_aiEuropeUnitsPurchased");
-		m_aiUnitClassCount = new int [GC.getNumUnitClassInfos()];
-		m_aiEuropeUnitsPurchased = new int [GC.getNumUnitClassInfos()];
-		for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
-		{
-			m_aiUnitClassCount[iI] = 0;
-			m_aiEuropeUnitsPurchased[iI] = 0;
-		}
-
-		FAssertMsg(m_aiBuildingClassCount==NULL, "about to leak memory, CvTeam::m_aiBuildingClassCount");
-		m_aiBuildingClassCount = new int [GC.getNumBuildingClassInfos()];
-		for (iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
-		{
-			m_aiBuildingClassCount[iI] = 0;
-		}
+		m_ja_iFatherPoints.resetContent();
+		m_ja_iUnitClassCount.resetContent();
+		m_ja_iEuropeUnitsPurchased.resetContent();
+		m_ja_iBuildingClassCount.resetContent();
 
 		m_aeRevealedBonuses.clear();
 
@@ -1703,8 +1660,7 @@ int CvTeam::getFatherPointCost(FatherTypes eFather, FatherPointTypes ePointType)
 
 int CvTeam::getFatherPoints(FatherPointTypes ePointType) const
 {
-	FAssert((ePointType >= 0) && (ePointType < GC.getNumFatherPointInfos()));
-	return m_aiFatherPoints[ePointType];
+	return m_ja_iFatherPoints.get(ePointType);
 }
 ///TKs Med
 void CvTeam::changeFatherPoints(FatherPointTypes ePointType, int iChange)
@@ -1738,16 +1694,15 @@ void CvTeam::changeFatherPoints(FatherPointTypes ePointType, int iChange)
 				changeAccumilatedFatherPoints(ePointType, iChange);
 			}
 			///Tke
-			m_aiFatherPoints[ePointType] += iChange;
-			FAssert(m_aiFatherPoints[ePointType] >= 0);
+			m_ja_iFatherPoints.add(iChange, ePointType);
+			FAssert(getFatherPoints(ePointType) >= 0);
 		}
 	}
-
 }
 
 int CvTeam::getAccumilatedFatherPoints(FatherPointTypes ePointType) const
 {
-	return m_aiAccumilatedFatherPoints[ePointType];
+	return m_ja_iAccumilatedFatherPoints.get(ePointType);
 }
 
 void CvTeam::changeAccumilatedFatherPoints(FatherPointTypes ePointType, int iChange)
@@ -1758,8 +1713,8 @@ void CvTeam::changeAccumilatedFatherPoints(FatherPointTypes ePointType, int iCha
 	{
 		if (hasColonialPlayer())
 		{
-			m_aiAccumilatedFatherPoints[ePointType] += iChange;
-			FAssert(m_aiAccumilatedFatherPoints[ePointType] >= 0);
+			m_ja_iAccumilatedFatherPoints.add(iChange, ePointType);
+			FAssert(getAccumilatedFatherPoints(ePointType) >= 0);
 		}
 	}
 }
@@ -1786,14 +1741,12 @@ int CvTeam::getBestFatherPointMultiplier() const
 
 bool CvTeam::isFatherIgnore(FatherTypes eFather) const
 {
-	FAssert((eFather >= 0) && (eFather < GC.getNumFatherInfos()));
-	return m_abFatherIgnore[eFather];
+	return m_ba_FatherIgnore.get(eFather);
 }
 
 void CvTeam::setFatherIgnore(FatherTypes eFather, bool bValue)
 {
-	FAssert((eFather >= 0) && (eFather < GC.getNumFatherInfos()));
-	m_abFatherIgnore[eFather] = bValue;
+	m_ba_FatherIgnore.set(bValue, eFather);
 }
 
 bool CvTeam::canConvinceFather(FatherTypes eFather) const
@@ -2498,46 +2451,34 @@ void CvTeam::setForcePeace(TeamTypes eIndex, bool bNewValue)
 
 int CvTeam::getUnitClassCount(UnitClassTypes eIndex) const
 {
-	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
-	FAssertMsg(eIndex < GC.getNumUnitClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiUnitClassCount[eIndex];
+	return m_ja_iUnitClassCount.get(eIndex);
 }
 
 void CvTeam::changeUnitClassCount(UnitClassTypes eIndex, int iChange)
 {
-	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
-	FAssertMsg(eIndex < GC.getNumUnitClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_aiUnitClassCount[eIndex] += iChange;
+	m_ja_iUnitClassCount.add(iChange, eIndex);
 	FAssert(getUnitClassCount(eIndex) >= 0);
 }
 
 int CvTeam::getBuildingClassCount(BuildingClassTypes eIndex) const
 {
-	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
-	FAssertMsg(eIndex < GC.getNumBuildingClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiBuildingClassCount[eIndex];
+	return m_ja_iBuildingClassCount.get(eIndex);
 }
 
 void CvTeam::changeBuildingClassCount(BuildingClassTypes eIndex, int iChange)
 {
-	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
-	FAssertMsg(eIndex < GC.getNumBuildingClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_aiBuildingClassCount[eIndex] += iChange;
+	m_ja_iBuildingClassCount.add(iChange, eIndex);
 	FAssert(getBuildingClassCount(eIndex) >= 0);
 }
 
 int CvTeam::getEuropeUnitsPurchased(UnitClassTypes eIndex) const
 {
-	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
-	FAssertMsg(eIndex < GC.getNumUnitClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiEuropeUnitsPurchased[eIndex];
+	return m_ja_iEuropeUnitsPurchased.get(eIndex);
 }
 
 void CvTeam::changeEuropeUnitsPurchased(UnitClassTypes eIndex, int iChange)
 {
-	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
-	FAssertMsg(eIndex < GC.getNumUnitClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_aiEuropeUnitsPurchased[eIndex] += iChange;
+	m_ja_iEuropeUnitsPurchased.add(iChange, eIndex);
 	FAssert(getEuropeUnitsPurchased(eIndex) >= 0);
 }
 
@@ -3004,32 +2945,22 @@ void CvTeam::read(FDataStreamBase* pStream)
 	pStream->Read((int*)&m_eID);
 
 	/// player bitmap - start - Nightinggale
-	if (uiFlag == 0)
-	{
-		loadIntoBitmap(pStream, m_bmHasMet, MAX_TEAMS);
-		loadIntoBitmap(pStream, m_bmAtWar, MAX_TEAMS);
-		loadIntoBitmap(pStream, m_bmPermanentWarPeace, MAX_TEAMS);
-		loadIntoBitmap(pStream, m_bmOpenBorders, MAX_TEAMS);
-		loadIntoBitmap(pStream, m_bmDefensivePact, MAX_TEAMS);
-		loadIntoBitmap(pStream, m_bmForcePeace, MAX_TEAMS);
-	} else {
-		pStream->Read(&m_bmHasMet);
-		pStream->Read(&m_bmAtWar);
-		pStream->Read(&m_bmPermanentWarPeace);
-		pStream->Read(&m_bmOpenBorders);
-		pStream->Read(&m_bmDefensivePact);
-		pStream->Read(&m_bmForcePeace);
-	}
+	pStream->Read(&m_bmHasMet);
+	pStream->Read(&m_bmAtWar);
+	pStream->Read(&m_bmPermanentWarPeace);
+	pStream->Read(&m_bmOpenBorders);
+	pStream->Read(&m_bmDefensivePact);
+	pStream->Read(&m_bmForcePeace);
 	/// player bitmap - end - Nightinggale
 
-	pStream->Read(GC.getNumFatherInfos(), m_abFatherIgnore);
+	m_ba_FatherIgnore.read(pStream);
 	///Tks Med
-	pStream->Read(GC.getNumFatherPointInfos(), m_aiAccumilatedFatherPoints);
+	m_ja_iAccumilatedFatherPoints.read(pStream);
 	///TKe
-	pStream->Read(GC.getNumFatherPointInfos(), m_aiFatherPoints);
-	pStream->Read(GC.getNumUnitClassInfos(), m_aiUnitClassCount);
-	pStream->Read(GC.getNumBuildingClassInfos(), m_aiBuildingClassCount);
-	pStream->Read(GC.getNumUnitClassInfos(), m_aiEuropeUnitsPurchased);
+	m_ja_iFatherPoints.read(pStream);
+	m_ja_iUnitClassCount.read(pStream);
+	m_ja_iBuildingClassCount.read(pStream);
+	m_ja_iEuropeUnitsPurchased.read(pStream);
 
 	int iSize;
 	m_aeRevealedBonuses.clear();
@@ -3037,14 +2968,14 @@ void CvTeam::read(FDataStreamBase* pStream)
 	for (int i = 0; i < iSize; ++i)
 	{
 		BonusTypes eBonus;
-		pStream->Read((int*)&eBonus);
+		pStream->Read(&eBonus);
 		m_aeRevealedBonuses.push_back(eBonus);
 	}
 }
 
 void CvTeam::write(FDataStreamBase* pStream)
 {
-	uint uiFlag = 1;
+	uint uiFlag = 0;
 	pStream->Write(uiFlag);		// flag for expansion
 	pStream->Write(m_iNumMembers);
 	pStream->Write(m_iAliveCount);
@@ -3066,14 +2997,14 @@ void CvTeam::write(FDataStreamBase* pStream)
 	pStream->Write(m_bmDefensivePact);
 	pStream->Write(m_bmForcePeace);
 	/// player bitmap - end - Nightinggale
-	pStream->Write(GC.getNumFatherInfos(), m_abFatherIgnore);
+	m_ba_FatherIgnore.write(pStream);
 	///Tks Med
-	pStream->Write(GC.getNumFatherPointInfos(), m_aiAccumilatedFatherPoints);
+	m_ja_iAccumilatedFatherPoints.write(pStream);
 	///Tke
-	pStream->Write(GC.getNumFatherPointInfos(), m_aiFatherPoints);
-	pStream->Write(GC.getNumUnitClassInfos(), m_aiUnitClassCount);
-	pStream->Write(GC.getNumBuildingClassInfos(), m_aiBuildingClassCount);
-	pStream->Write(GC.getNumUnitClassInfos(), m_aiEuropeUnitsPurchased);
+	m_ja_iFatherPoints.write(pStream);
+	m_ja_iUnitClassCount.write(pStream);
+	m_ja_iBuildingClassCount.write(pStream);
+	m_ja_iEuropeUnitsPurchased.write(pStream);
 	pStream->Write(m_aeRevealedBonuses.size());
 	for (std::vector<BonusTypes>::iterator it = m_aeRevealedBonuses.begin(); it != m_aeRevealedBonuses.end(); ++it)
 	{

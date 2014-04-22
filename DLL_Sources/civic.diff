@@ -1,0 +1,159 @@
+diff --git a/Assets/CvGameCoreDLL.dll b/Assets/CvGameCoreDLL.dll
+index 6f3dc1e..87f03f9 100644
+Binary files a/Assets/CvGameCoreDLL.dll and b/Assets/CvGameCoreDLL.dll differ
+diff --git a/DLL_Sources/CvPlayer.cpp b/DLL_Sources/CvPlayer.cpp
+index de65bd0..fb6925d 100644
+--- a/DLL_Sources/CvPlayer.cpp
++++ b/DLL_Sources/CvPlayer.cpp
+@@ -10946,6 +10946,8 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
+ 		}
+ 	}
+ 
++	processCivicNotSaved(eCivic, iChange);
++
+ 	 ///TKs Med TradeScreen
+ 	if ((EuropeTypes)kCivicInfo.getAllowsTradeScreen() != NO_EUROPE)
+ 	{
+@@ -11125,35 +11127,23 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
+     {
+         GET_TEAM(getTeam()).changeMapTradingCount(1);
+     }
+-	if (kCivicInfo.isWorkersBuildAfterMove())
+-    {
+-        changeWorkersBuildAfterMove(iChange);
+-    }
+-
++	
+     changeFreeTechs(kCivicInfo.getFreeTechs());
+ //    changeProlificInventorModifier(kCivicInfo.getProlificInventorRateChange());
+ 	changeDiplomacyAttitudeModifier(kCivicInfo.getDiplomacyAttitudeChange() * iChange);
+     changeGold(kCivicInfo.getGoldBonus());
+ 	changeMissionaryHide(kCivicInfo.getMissionariesNotCosumed() * iChange);
+ 	changeTradingPostHide(kCivicInfo.getTradingPostNotCosumed() * iChange);
+-	changeHuntingYieldPercent(kCivicInfo.getHuntingYieldPercent() * iChange);
++	
+ 	//changeNumDocksNextUnits(kCivicInfo.getIncreasedImmigrants() * iChange);
+     ///TKe
+ 	changeGreatGeneralRateModifier(kCivicInfo.getGreatGeneralRateModifier() * iChange);
+ 	changeDomesticGreatGeneralRateModifier(kCivicInfo.getDomesticGreatGeneralRateModifier() * iChange);
+ 	changeFreeExperience(kCivicInfo.getFreeExperience() * iChange);
+-	changeWorkerSpeedModifier(kCivicInfo.getWorkerSpeedModifier() * iChange);
+-	changeImprovementUpgradeRateModifier(kCivicInfo.getImprovementUpgradeRateModifier() * iChange);
+-	changeMilitaryProductionModifier(kCivicInfo.getMilitaryProductionModifier() * iChange);
+-	changeExpInBorderModifier(kCivicInfo.getExpInBorderModifier() * iChange);
+-	changeNativeCombatModifier(kCivicInfo.getNativeCombatModifier() * iChange);
+-	changeDominateNativeBordersCount(kCivicInfo.isDominateNativeBorders() ? iChange : 0);
++	changeNativeCombatModifier(kCivicInfo.getNativeCombatModifier() * iChange); // trait
+ 	changeRevolutionEuropeTradeCount(kCivicInfo.isRevolutionEuropeTrade() ? iChange : 0);
+-	setFatherPointMultiplier(getFatherPointMultiplier() + kCivicInfo.getFatherPointModifier() * iChange);
+-	for (int iFatherPoint = 0; iFatherPoint < GC.getNumFatherPointInfos(); ++iFatherPoint)
+-	{
+-		changeBonusFatherPoints((FatherPointTypes)iFatherPoint, kCivicInfo.getFartherPointChanges(iFatherPoint) * iChange);
+-	}
++	
++	
+ 	if (kCivicInfo.getImmigrationConversion() != NO_YIELD)
+ 	{
+ 		if (iChange > 0)
+@@ -11184,14 +11174,11 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
+ 		}
+ 	}
+ 
+-	for (int iProfession = 0; iProfession < GC.getNumProfessionInfos(); ++iProfession)
+-	{
+-		changeProfessionCombatChange((ProfessionTypes) iProfession, kCivicInfo.getProfessionCombatChange(iProfession) * iChange);
+-	}
++
+ 
+ 	for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
+ 	{
+-		changeYieldRateModifier(((YieldTypes)iI), (kCivicInfo.getYieldModifier(iI) * iChange));
++		changeYieldRateModifier(((YieldTypes)iI), (kCivicInfo.getYieldModifier(iI) * iChange)); // trait
+ 		changeCapitalYieldRateModifier(((YieldTypes)iI), (kCivicInfo.getCapitalYieldModifier(iI) * iChange));
+ 		changeGarrisonUnitBonus((YieldTypes)iI, kCivicInfo.getGarrisonUnitModifiers(iI) * iChange);///Tks Civics
+ 	}
+@@ -11206,14 +11193,6 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
+ 		changeSpecialBuildingNotRequiredCount(((SpecialBuildingTypes)iI), ((kCivicInfo.isSpecialBuildingNotRequired(iI)) ? iChange : 0));
+ 	}
+ 
+-	for (int iI = 0; iI < GC.getNumImprovementInfos(); iI++)
+-	{
+-		for (int iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
+-		{
+-			changeImprovementYieldChange(((ImprovementTypes)iI), ((YieldTypes)iJ), (kCivicInfo.getImprovementYieldChanges(iI, iJ) * iChange));
+-		}
+-	}
+-
+ 	//TKs Civics
+ 	if (kCivicInfo.getNumCivicCombatBonus() > 0)
+ 	{
+@@ -11356,7 +11335,56 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
+         }
+     }
+ }
++
++void CvPlayer::processCivicNotSaved(CivicTypes eCivic, int iChange)
++{
++	CvCivicInfo& kCivicInfo = GC.getCivicInfo(eCivic);
++
++	if (kCivicInfo.isWorkersBuildAfterMove())
++    {
++        changeWorkersBuildAfterMove(iChange);
++    }
++
++	changeHuntingYieldPercent(kCivicInfo.getHuntingYieldPercent() * iChange);
++	changeWorkerSpeedModifier(kCivicInfo.getWorkerSpeedModifier() * iChange);
++	changeImprovementUpgradeRateModifier(kCivicInfo.getImprovementUpgradeRateModifier() * iChange);
++	changeMilitaryProductionModifier(kCivicInfo.getMilitaryProductionModifier() * iChange);
++	changeExpInBorderModifier(kCivicInfo.getExpInBorderModifier() * iChange);
++	changeDominateNativeBordersCount(kCivicInfo.isDominateNativeBorders() ? iChange : 0);
++	setFatherPointMultiplier(getFatherPointMultiplier() + kCivicInfo.getFatherPointModifier() * iChange);
++
++	for (int iFatherPoint = 0; iFatherPoint < GC.getNumFatherPointInfos(); ++iFatherPoint)
++	{
++		changeBonusFatherPoints((FatherPointTypes)iFatherPoint, kCivicInfo.getFartherPointChanges(iFatherPoint) * iChange);
++	}
++
++	for (int iProfession = 0; iProfession < GC.getNumProfessionInfos(); ++iProfession)
++	{
++		changeProfessionCombatChange((ProfessionTypes) iProfession, kCivicInfo.getProfessionCombatChange(iProfession) * iChange);
++	}
++
++	for (int iI = 0; iI < GC.getNumImprovementInfos(); iI++)
++	{
++		for (int iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
++		{
++			changeImprovementYieldChange(((ImprovementTypes)iI), ((YieldTypes)iJ), (kCivicInfo.getImprovementYieldChanges(iI, iJ) * iChange));
++		}
++	}
++}
++
++void CvPlayer::postLoadCivicUpdate()
++{
++	for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); iCivic++)
++	{
++		CivicTypes eCivic = (CivicTypes)iCivic;
++		if (isCivic(eCivic))
++		{
++			processCivicNotSaved(eCivic, 1);
++		}
++	}
++}
+ ///TKe
++
+ void CvPlayer::showMissedMessages()
+ {
+ 	CvMessageQueue::iterator it = m_listGameMessages.begin();
+diff --git a/DLL_Sources/CvPlayer.h b/DLL_Sources/CvPlayer.h
+index 57e7044..e37359d 100644
+--- a/DLL_Sources/CvPlayer.h
++++ b/DLL_Sources/CvPlayer.h
+@@ -665,6 +665,8 @@ public:
+ 	int getCurrentResearchProgress(bool bGetTurns, CivicTypes eCivic = NO_CIVIC);
+ 	int getTurnstoCompleteResearch(bool bReturnNetResearch=false, CivicTypes eCivic = NO_CIVIC);
+ 	void processCivics(CivicTypes eCivic, int iChange);
++	void processCivicNotSaved(CivicTypes eCivic, int iChange);
++	void postLoadCivicUpdate();
+ 	int getIdea(bool Research, PlayerTypes ePlayer = NO_PLAYER) const;
+ 	void setResearchPartner(PlayerTypes ePartner);
+ 	PlayerTypes getResearchPartner() const;

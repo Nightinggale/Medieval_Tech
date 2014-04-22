@@ -1,0 +1,167 @@
+diff --git a/Assets/CvGameCoreDLL.dll b/Assets/CvGameCoreDLL.dll
+index 6f3dc1e..234c6d9 100644
+Binary files a/Assets/CvGameCoreDLL.dll and b/Assets/CvGameCoreDLL.dll differ
+diff --git a/DLL_Sources/CvTeam.cpp b/DLL_Sources/CvTeam.cpp
+index e0ccaa3..15258f5 100644
+--- a/DLL_Sources/CvTeam.cpp
++++ b/DLL_Sources/CvTeam.cpp
+@@ -25,6 +25,7 @@
+ // Public Functions...
+ 
+ CvTeam::CvTeam()
++	: m_ba_FatherIgnore(JIT_ARRAY_FATHER)
+ {
+ 	/// player bitmap - start - Nightinggale
+ 	m_bmAtWar = 0;
+@@ -35,12 +36,10 @@ CvTeam::CvTeam()
+ 	m_bmForcePeace = 0;
+ 	/// player bitmap - end - Nightinggale
+ 
+-	m_abFatherIgnore = NULL;
+ 	///Tks Med
+ 	m_aiAccumilatedFatherPoints = NULL;
+ 	///TKe
+ 	m_aiFatherPoints = NULL;
+-	m_aiUnitClassCount = NULL;
+ 	m_aiBuildingClassCount = NULL;
+ 	m_aiEuropeUnitsPurchased = NULL;
+ 
+@@ -71,12 +70,10 @@ void CvTeam::init(TeamTypes eID)
+ 
+ void CvTeam::uninit()
+ {
+-	SAFE_DELETE_ARRAY(m_abFatherIgnore);
+ 	///Tks Med
+ 	SAFE_DELETE_ARRAY(m_aiAccumilatedFatherPoints);
+ 	///TKe
+ 	SAFE_DELETE_ARRAY(m_aiFatherPoints);
+-	SAFE_DELETE_ARRAY(m_aiUnitClassCount);
+ 	SAFE_DELETE_ARRAY(m_aiBuildingClassCount);
+ 	SAFE_DELETE_ARRAY(m_aiEuropeUnitsPurchased);
+ }
+@@ -118,12 +115,7 @@ void CvTeam::reset(TeamTypes eID, bool bConstructorCall)
+ 
+ 	if (!bConstructorCall)
+ 	{
+-		FAssertMsg(m_abFatherIgnore==NULL, "about to leak memory, CvTeam::m_abFatherIgnore");
+-		m_abFatherIgnore = new bool [GC.getNumFatherInfos()];
+-		for (iI = 0; iI < GC.getNumFatherInfos(); iI++)
+-		{
+-			m_abFatherIgnore[iI] = false;
+-		}
++		m_ba_FatherIgnore.resetContent();
+ 		///Tks Med
+ 		FAssertMsg(m_aiFatherPoints==NULL, "about to leak memory, CvTeam::m_aiFatherPoints");
+ 		FAssertMsg(m_aiAccumilatedFatherPoints==NULL, "about to leak memory, CvTeam::m_aiAccumilatedFatherPoints");
+@@ -135,13 +127,14 @@ void CvTeam::reset(TeamTypes eID, bool bConstructorCall)
+ 			m_aiAccumilatedFatherPoints[iI] = 0;
+ 		}
+         ///Tke
+-		FAssertMsg(m_aiUnitClassCount==NULL, "about to leak memory, CvTeam::m_aiUnitClassCount");
++		m_ja_iUnitClassCount.resetContent();
++//		FAssertMsg(m_aiUnitClassCount==NULL, "about to leak memory, CvTeam::m_aiUnitClassCount");
+ 		FAssertMsg(m_aiEuropeUnitsPurchased==NULL, "about to leak memory, CvTeam::m_aiEuropeUnitsPurchased");
+-		m_aiUnitClassCount = new int [GC.getNumUnitClassInfos()];
++	//	m_aiUnitClassCount = new int [GC.getNumUnitClassInfos()];
+ 		m_aiEuropeUnitsPurchased = new int [GC.getNumUnitClassInfos()];
+ 		for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
+ 		{
+-			m_aiUnitClassCount[iI] = 0;
++		//	m_aiUnitClassCount[iI] = 0;
+ 			m_aiEuropeUnitsPurchased[iI] = 0;
+ 		}
+ 
+@@ -1786,14 +1779,12 @@ int CvTeam::getBestFatherPointMultiplier() const
+ 
+ bool CvTeam::isFatherIgnore(FatherTypes eFather) const
+ {
+-	FAssert((eFather >= 0) && (eFather < GC.getNumFatherInfos()));
+-	return m_abFatherIgnore[eFather];
++	return m_ba_FatherIgnore.get(eFather);
+ }
+ 
+ void CvTeam::setFatherIgnore(FatherTypes eFather, bool bValue)
+ {
+-	FAssert((eFather >= 0) && (eFather < GC.getNumFatherInfos()));
+-	m_abFatherIgnore[eFather] = bValue;
++	m_ba_FatherIgnore.set(bValue, eFather);
+ }
+ 
+ bool CvTeam::canConvinceFather(FatherTypes eFather) const
+@@ -2498,16 +2489,12 @@ void CvTeam::setForcePeace(TeamTypes eIndex, bool bNewValue)
+ 
+ int CvTeam::getUnitClassCount(UnitClassTypes eIndex) const
+ {
+-	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
+-	FAssertMsg(eIndex < GC.getNumUnitClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
+-	return m_aiUnitClassCount[eIndex];
++	return m_ja_iUnitClassCount.get(eIndex);
+ }
+ 
+ void CvTeam::changeUnitClassCount(UnitClassTypes eIndex, int iChange)
+ {
+-	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
+-	FAssertMsg(eIndex < GC.getNumUnitClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
+-	m_aiUnitClassCount[eIndex] += iChange;
++	m_ja_iUnitClassCount.add(iChange, eIndex);
+ 	FAssert(getUnitClassCount(eIndex) >= 0);
+ }
+ 
+@@ -3022,12 +3009,12 @@ void CvTeam::read(FDataStreamBase* pStream)
+ 	}
+ 	/// player bitmap - end - Nightinggale
+ 
+-	pStream->Read(GC.getNumFatherInfos(), m_abFatherIgnore);
++	m_ba_FatherIgnore.read(pStream);
+ 	///Tks Med
+ 	pStream->Read(GC.getNumFatherPointInfos(), m_aiAccumilatedFatherPoints);
+ 	///TKe
+ 	pStream->Read(GC.getNumFatherPointInfos(), m_aiFatherPoints);
+-	pStream->Read(GC.getNumUnitClassInfos(), m_aiUnitClassCount);
++	m_ja_iUnitClassCount.read(pStream);
+ 	pStream->Read(GC.getNumBuildingClassInfos(), m_aiBuildingClassCount);
+ 	pStream->Read(GC.getNumUnitClassInfos(), m_aiEuropeUnitsPurchased);
+ 
+@@ -3037,7 +3024,7 @@ void CvTeam::read(FDataStreamBase* pStream)
+ 	for (int i = 0; i < iSize; ++i)
+ 	{
+ 		BonusTypes eBonus;
+-		pStream->Read((int*)&eBonus);
++		pStream->Read(&eBonus);
+ 		m_aeRevealedBonuses.push_back(eBonus);
+ 	}
+ }
+@@ -3066,12 +3053,12 @@ void CvTeam::write(FDataStreamBase* pStream)
+ 	pStream->Write(m_bmDefensivePact);
+ 	pStream->Write(m_bmForcePeace);
+ 	/// player bitmap - end - Nightinggale
+-	pStream->Write(GC.getNumFatherInfos(), m_abFatherIgnore);
++	m_ba_FatherIgnore.write(pStream);
+ 	///Tks Med
+ 	pStream->Write(GC.getNumFatherPointInfos(), m_aiAccumilatedFatherPoints);
+ 	///Tke
+ 	pStream->Write(GC.getNumFatherPointInfos(), m_aiFatherPoints);
+-	pStream->Write(GC.getNumUnitClassInfos(), m_aiUnitClassCount);
++	m_ja_iUnitClassCount.write(pStream);
+ 	pStream->Write(GC.getNumBuildingClassInfos(), m_aiBuildingClassCount);
+ 	pStream->Write(GC.getNumUnitClassInfos(), m_aiEuropeUnitsPurchased);
+ 	pStream->Write(m_aeRevealedBonuses.size());
+diff --git a/DLL_Sources/CvTeam.h b/DLL_Sources/CvTeam.h
+index 5d19e15..f7d4fab 100644
+--- a/DLL_Sources/CvTeam.h
++++ b/DLL_Sources/CvTeam.h
+@@ -231,12 +231,12 @@ protected:
+ 	PlayerBitmap m_bmForcePeace;
+ 	/// player bitmap - end - Nightinggale
+ 
+-	bool* m_abFatherIgnore;
++	BoolArray m_ba_FatherIgnore;
+ 	///Tks Med
+ 	int* m_aiAccumilatedFatherPoints;
+ 	///Tke
+ 	int* m_aiFatherPoints;
+-	int* m_aiUnitClassCount;
++	UnitClassArray<int> m_ja_iUnitClassCount;
+ 	int* m_aiBuildingClassCount;
+ 	int* m_aiEuropeUnitsPurchased;
+ 

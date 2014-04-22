@@ -435,6 +435,7 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	m_iUpkeepModifier = 0;
 	m_iGoldIncome = 0;
 	m_iExpences = 0;
+	m_iDiplomacyAttitude = 0;
 	///Tks CivicsEnd
 	///Tks Med
 	m_iMissionaryHide = 0;
@@ -11049,9 +11050,9 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
 
     }
 
-    ///Frist To Research Bonuses must go before this
+    ///First To Research Bonuses must go before this
     GC.getGame().changeIdeasResearched(eCivic, 1);
-    ///Frist To Research Bonuses must go before this
+    ///First To Research Bonuses must go before this
 	if (kCivicInfo.getAllowsTrait() != NO_TRAIT)
     {
         processTrait((TraitTypes)kCivicInfo.getAllowsTrait(), 1);
@@ -11203,14 +11204,9 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
 
     changeFreeTechs(kCivicInfo.getFreeTechs());
 //    changeProlificInventorModifier(kCivicInfo.getProlificInventorRateChange());
-	changeDiplomacyAttitudeModifier(kCivicInfo.getDiplomacyAttitudeChange() * iChange);
     changeGold(kCivicInfo.getGoldBonus());
-	changeMissionaryHide(kCivicInfo.getMissionariesNotCosumed() * iChange);
-	changeTradingPostHide(kCivicInfo.getTradingPostNotCosumed() * iChange);
 	//changeNumDocksNextUnits(kCivicInfo.getIncreasedImmigrants() * iChange);
     ///TKe
-	changeFreeExperience(kCivicInfo.getFreeExperience() * iChange);
-	changeRevolutionEuropeTradeCount(kCivicInfo.isRevolutionEuropeTrade() ? iChange : 0);
 
 	if (kCivicInfo.getImmigrationConversion() != NO_YIELD)
 	{
@@ -11245,16 +11241,6 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
 	for (int iProfession = 0; iProfession < GC.getNumProfessionInfos(); ++iProfession)
 	{
 		changeProfessionCombatChange((ProfessionTypes) iProfession, kCivicInfo.getProfessionCombatChange(iProfession) * iChange);
-	}
-
-	for (int iI = 0; iI < GC.getNumHurryInfos(); iI++)
-	{
-		changeHurryCount(((HurryTypes)iI), ((kCivicInfo.isHurry(iI)) ? iChange : 0));
-	}
-
-	for (int iI = 0; iI < GC.getNumSpecialBuildingInfos(); iI++)
-	{
-		changeSpecialBuildingNotRequiredCount(((SpecialBuildingTypes)iI), ((kCivicInfo.isSpecialBuildingNotRequired(iI)) ? iChange : 0));
 	}
 
 	//TKs Civics
@@ -11417,6 +11403,21 @@ void CvPlayer::processCivicNotSaved(CivicTypes eCivic, int iChange)
 	changeExpInBorderModifier(kCivicInfo.getExpInBorderModifier() * iChange);
 	changeDominateNativeBordersCount(kCivicInfo.isDominateNativeBorders() ? iChange : 0);
 	setFatherPointMultiplier(getFatherPointMultiplier() + kCivicInfo.getFatherPointModifier() * iChange);
+	changeDiplomacyAttitudeModifier(kCivicInfo.getDiplomacyAttitudeChange() * iChange);
+	changeMissionaryHide(kCivicInfo.getMissionariesNotCosumed() * iChange);
+	changeTradingPostHide(kCivicInfo.getTradingPostNotCosumed() * iChange);
+	changeFreeExperience(kCivicInfo.getFreeExperience() * iChange);
+	changeRevolutionEuropeTradeCount(kCivicInfo.isRevolutionEuropeTrade() ? iChange : 0);
+
+	for (int iI = 0; iI < GC.getNumHurryInfos(); iI++)
+	{
+		changeHurryCount(((HurryTypes)iI), ((kCivicInfo.isHurry(iI)) ? iChange : 0));
+	}
+
+	for (int iI = 0; iI < GC.getNumSpecialBuildingInfos(); iI++)
+	{
+		changeSpecialBuildingNotRequiredCount(((SpecialBuildingTypes)iI), ((kCivicInfo.isSpecialBuildingNotRequired(iI)) ? iChange : 0));
+	}
 
 	for (int iFatherPoint = 0; iFatherPoint < GC.getNumFatherPointInfos(); ++iFatherPoint)
 	{
@@ -11509,10 +11510,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iGreatGeneralsThresholdModifier);
 	pStream->Read(&m_iImmigrationThresholdMultiplier);
 	pStream->Read(&m_iRevolutionEuropeUnitThresholdMultiplier);
-	
 	pStream->Read(&m_iKingNumUnitMultiplier);
-
-	pStream->Read(&m_iFreeExperience);
 	pStream->Read(&m_iHighestUnitLevel);
 	pStream->Read(&m_iFatherOverflowBells);
 	pStream->Read(&m_iCapitalCityID);
@@ -11598,8 +11596,6 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	m_ja_iProfessionCombatChange.read(pStream);
 	m_ja_iBuildingClassCount.read(pStream);
 	m_ja_iBuildingClassMaking.read(pStream);
-	m_ja_iHurryCount.read(pStream);
-	m_ja_iSpecialBuildingNotRequiredCount.read(pStream);
 	m_ja_iProfessionEquipmentModifier.read(pStream);
 	m_ja_iTraitCount.read(pStream);
 
@@ -11895,11 +11891,9 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	// Get the NetID from the initialization structure
 	setNetID(gDLL->getAssignedNetworkID(getID()));
 
-	pStream->Read(&m_iPopRushHurryCount);
 	pStream->Read(&m_iCrossesStored);
 	pStream->Read(&m_iBellsStored);
 	pStream->Read(&m_iTaxRate);
-	pStream->Read(&m_iRevolutionEuropeTradeCount);
 
 	///TKs Invention Core Mod v 1.0
 	//pStream->Read(&m_iPreviousFatherPoints);
@@ -11922,8 +11916,6 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iGoldIncome);
 	pStream->Read(&m_iExpences);
 	///Tks CivicsEnd
-	pStream->Read(&m_iMissionaryHide);
-	pStream->Read(&m_iTradingPostHide);
 	pStream->Read(&m_iGoldPlundered);
 	pStream->Read(&m_iMissionsActive);
 	pStream->Read(&m_iVillages);
@@ -11965,7 +11957,6 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(m_iImmigrationThresholdMultiplier);
 	pStream->Write(m_iRevolutionEuropeUnitThresholdMultiplier);
 	pStream->Write(m_iKingNumUnitMultiplier);
-	pStream->Write(m_iFreeExperience);
 	pStream->Write(m_iHighestUnitLevel);
 	pStream->Write(m_iFatherOverflowBells);
 	pStream->Write(m_iCapitalCityID);
@@ -12047,8 +12038,6 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	m_ja_iProfessionCombatChange.write(pStream);
 	m_ja_iBuildingClassCount.write(pStream);
 	m_ja_iBuildingClassMaking.write(pStream);
-	m_ja_iHurryCount.write(pStream);
-	m_ja_iSpecialBuildingNotRequiredCount.write(pStream);
 	m_ja_iProfessionEquipmentModifier.write(pStream);
 	m_ja_iTraitCount.write(pStream);
 
@@ -12296,11 +12285,9 @@ void CvPlayer::write(FDataStreamBase* pStream)
 		}
 	}
 
-	pStream->Write(m_iPopRushHurryCount);
 	pStream->Write(m_iCrossesStored);
 	pStream->Write(m_iBellsStored);
 	pStream->Write(m_iTaxRate);
-	pStream->Write(m_iRevolutionEuropeTradeCount);
 
 	 ///TKs Invention Core Mod v 1.0
     pStream->Write(m_iTemporyIdeasStored);
@@ -12323,8 +12310,6 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(m_iGoldIncome);
 	pStream->Write(m_iExpences);
 	///Tks CivicsEnd
-	pStream->Write(m_iMissionaryHide);
-	pStream->Write(m_iTradingPostHide);
 	pStream->Write(m_iGoldPlundered);
 	pStream->Write(m_iMissionsActive);
 	pStream->Write(m_iVillages);

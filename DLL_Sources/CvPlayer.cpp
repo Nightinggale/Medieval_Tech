@@ -2512,20 +2512,12 @@ void CvPlayer::doTurn()
 		changeRevolutionTimer(-1);
 	}
 	///Tks Med
-	if (getCensureType(CENSURE_EXCOMMUNICATION) > 0)
+	for (int iCensure = 0; iCensure < NUM_CENSURE_TYPES; ++iCensure)
 	{
-	    changeCensureType(CENSURE_EXCOMMUNICATION, -1);
-//	    CivicTypes eCivic = (CivicTypes)GC.getDefineINT("DEFAULT_CENSURETYPE_EXCOMMUNICATION");
-//        changeIdeasResearched(eCivic, 1);
-//        processCivics(eCivic, 1);
-	}
-	if (getCensureType(CENSURE_INTERDICT) > 0)
-	{
-	    changeCensureType(CENSURE_INTERDICT, -1);
-	}
-	if (getCensureType(CENSURE_ANATHEMA) > 0)
-	{
-	    changeCensureType(CENSURE_ANATHEMA, -1);
+		if (getCensureType((CensureType)iCensure) > 0)
+		{
+			changeCensureType((CensureType)iCensure, -1);
+		}
 	}
 	//doMedievalEvents();
 	///TKe
@@ -3277,11 +3269,21 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
             {
                 if (AI_getAttitude(ePlayer, false) <= ATTITUDE_ANNOYED)
                 {
-                    YieldTypes eYield = (YieldTypes) iData1;
-					if (eYield != NO_YIELD)
-					{
-						kPlayer.setYieldTradedTotal(eYield, 0);
-					}
+                    //YieldTypes eYield = (YieldTypes) iData1;
+					//if (eYield == NO_YIELD || eYield >= NUM_YIELD_TYPES)
+					//{
+					
+						YieldTypes eYield = kPlayer.getHighestTradedYield();
+						if (eYield != NO_YIELD)
+						{
+							kPlayer.setYieldTradedTotal(eYield, 0);
+						}
+						FAssert(eYield != NO_YIELD);
+					//}
+					//else
+					//{
+						//kPlayer.setYieldTradedTotal(eYield, 0);
+					//}
                     int iBaseCensure = 0;
                     if (AI_getAttitude(ePlayer, false) == ATTITUDE_ANNOYED)
                     {
@@ -18137,7 +18139,7 @@ void CvPlayer::changeProfessionEurope(int iUnitId, ProfessionTypes eProfession)
 					changeFatherPoints(ePointType, iGold * GC.getFatherPointInfo(ePointType).getEuropeTradeGoldPointPercent() / 100);
 				}
 				///TKs
-                CivicTypes ePlayerResearch = getCurrentResearch();
+               /* CivicTypes ePlayerResearch = getCurrentResearch();
                 if (ePlayerResearch != NO_CIVIC && iGold >= GC.getXMLval(XML_TRADE_STIMULATES_RESEARCH_MIN_VALUE))
                 {
                    int iExtraResearch = iGold * GC.getXMLval(XML_TRADE_STIMULATES_RESEARCH_PERCENT) / 100;
@@ -18146,7 +18148,7 @@ void CvPlayer::changeProfessionEurope(int iUnitId, ProfessionTypes eProfession)
                    char szOut[1024];
                    sprintf(szOut, "######################## %S traded with %S stimulating %d in research\n", getNameKey(), kEurope.getNameKey(), iExtraResearch);
                     gDLL->messageControlLog(szOut);
-                }
+                }*/
                 ///Tke
 
 			}

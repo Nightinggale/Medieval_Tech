@@ -1467,7 +1467,7 @@
 			<YieldsConsumed>
 				<YieldType>NONE</YieldType>
 			</YieldsConsumed>
-			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,3,8</Button>
+			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,1,9</Button>
 			<ProfessionSubTypes/>
 		</ProfessionInfo>
 		<ProfessionInfo>

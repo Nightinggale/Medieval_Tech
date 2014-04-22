@@ -9760,13 +9760,13 @@ void CvGameTextMgr::setEuropeYieldSoldHelp(CvWStringBuffer &szString, const CvPl
     szString.append(NEWLINE);
     szString.append(gDLL->getText("TXT_KEY_YIELD_NET_PROFIT", iGross));
 
-    CivicTypes ePlayerResearch = kPlayer.getCurrentResearch();
+   /* CivicTypes ePlayerResearch = kPlayer.getCurrentResearch();
     if (ePlayerResearch != NO_CIVIC && iTotalGross >= GC.getXMLval(XML_TRADE_STIMULATES_RESEARCH_MIN_VALUE))
     {
         iTotalGross = iTotalGross * GC.getXMLval(XML_TRADE_STIMULATES_RESEARCH_PERCENT) / 100;
         szString.append(NEWLINE);
         szString.append(gDLL->getText("TXT_KEY_YIELD_SOLD_RESEARCH_STIMULATED", iTotalGross));
-    }
+    }*/
 }
 
 void CvGameTextMgr::setEuropeYieldBoughtHelp(CvWStringBuffer &szString, const CvPlayer& kPlayer, YieldTypes eYield, int iAmount)

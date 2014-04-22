@@ -5843,6 +5843,17 @@ bool CvUnit::canSentry(const CvPlot* pPlot) const
 	{
 		return false;
 	}
+	//Tks Med
+	if (isOnlyDefensive())
+	{
+		return false;
+	}
+
+	if (isUnarmed())
+	{
+		return false;
+	}
+	//tke
 
 	return true;
 }
@@ -8906,6 +8917,18 @@ bool CvUnit::isFortifyable() const
 		return false;
 	}
 
+	//Tks Med
+	if (isOnlyDefensive())
+	{
+		return false;
+	}
+
+	if (isUnarmed())
+	{
+		return false;
+	}
+	//tke
+
 	return true;
 }
 
@@ -9016,6 +9039,10 @@ bool CvUnit::canTrainUnit() const
     {
         return false;
     }
+	if (isNative() || GET_PLAYER(getOwner()).isEurope())
+	{
+		return false;
+	}
     bool bIsCity = plot()->isCity(true, getTeam());
     if (bIsCity && !m_pUnitInfo->isMechUnit() && getTrainCounter() >= 0)
     {

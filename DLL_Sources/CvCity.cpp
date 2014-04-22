@@ -8923,6 +8923,8 @@ void CvCity::getVisibleBuildings(std::list<BuildingTypes>& kChosenVisible, int& 
 
 	// return
 	iChosenNumGenerics = iNumGenerics;
+	//tk test TODO remove this
+	//iChosenNumGenerics /= 10;
 	for(int i = 0; i < iNumUniques; i++)
 	{
 		kChosenVisible.push_back(kVisible[i]);
@@ -8966,9 +8968,16 @@ void CvCity::getCityBillboardSizeIconColors(NiColorA& kDotColor, NiColorA& kText
 	if ((getTeam() == GC.getGameINLINE().getActiveTeam()))
 	{
 		//TKs Med
-		if (getMaxCityPop() == getPopulation())
+		int iMaxPop = getMaxCityPop();
+		
+		if (iMaxPop == getPopulation())
 		{
 			NiColorA kMaxPop(1,.30f,.30f,1);
+			kTextColor = kMaxPop;
+		}
+		else if (iMaxPop < GC.getXMLval(XML_MAX_CITY_POPULATION_COMMUNE))
+		{
+			NiColorA kMaxPop(.50f,1,.10f,1);
 			kTextColor = kMaxPop;
 		}
 		else
@@ -11579,6 +11588,7 @@ bool CvCity::isCityType(MedCityTypes eCheckCityType) const
 void CvCity::setMaxCityPop(int iPop)
 {
     m_iMaxCityPop = iPop + m_iMaxCityPop;
+	setBillboardDirty(true);
 }
 
 int CvCity::getMaxCityPop() const

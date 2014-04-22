@@ -3427,11 +3427,7 @@
 			<YieldCosts>
 				<YieldCost>
 					<YieldType>YIELD_HAMMERS</YieldType>
-					<iCost>10</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_LUMBER</YieldType>
-					<iCost>50</iCost>
+					<iCost>20</iCost>
 				</YieldCost>
 			</YieldCosts>
 			<iHurryCostModifier>0</iHurryCostModifier>
@@ -3504,7 +3500,7 @@
 					<iCost>90</iCost>
 				</YieldCost>
 				<YieldCost>
-					<YieldType>YIELD_LUMBER</YieldType>
+					<YieldType>YIELD_TOOLS</YieldType>
 					<iCost>50</iCost>
 				</YieldCost>
 			</YieldCosts>
@@ -3587,7 +3583,7 @@
 					<iCost>270</iCost>
 				</YieldCost>
 				<YieldCost>
-					<YieldType>YIELD_LUMBER</YieldType>
+					<YieldType>YIELD_TOOLS</YieldType>
 					<iCost>100</iCost>
 				</YieldCost>
 			</YieldCosts>
@@ -5429,8 +5425,8 @@
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iProfessionOutput>2</iProfessionOutput>
-			<iMaxWorkers>2</iMaxWorkers>
+			<iProfessionOutput>0</iProfessionOutput>
+			<iMaxWorkers>0</iMaxWorkers>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>100</iConquestProb>
 			<iCitiesPrereq>0</iCitiesPrereq>
@@ -5452,7 +5448,20 @@
 			<SeaPlotYieldChanges/>
 			<RiverPlotYieldChanges/>
 			<YieldChanges/>
-			<YieldModifiers/>
+      <YieldModifiers>
+        <YieldModifier>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iModifier>25</iModifier>
+        </YieldModifier>
+        <YieldModifier>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iModifier>25</iModifier>
+        </YieldModifier>
+        <YieldModifier>
+          <YieldType>YIELD_HORSES</YieldType>
+          <iModifier>25</iModifier>
+        </YieldModifier>
+      </YieldModifiers>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -5736,8 +5745,8 @@
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iProfessionOutput>4</iProfessionOutput>
-			<iMaxWorkers>3</iMaxWorkers>
+			<iProfessionOutput>0</iProfessionOutput>
+			<iMaxWorkers>0</iMaxWorkers>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>100</iConquestProb>
 			<iCitiesPrereq>0</iCitiesPrereq>
@@ -5759,7 +5768,20 @@
 			<SeaPlotYieldChanges/>
 			<RiverPlotYieldChanges/>
 			<YieldChanges/>
-			<YieldModifiers/>
+      <YieldModifiers>
+        <YieldModifier>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iModifier>50</iModifier>
+        </YieldModifier>
+        <YieldModifier>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iModifier>50</iModifier>
+        </YieldModifier>
+        <YieldModifier>
+          <YieldType>YIELD_HORSES</YieldType>
+          <iModifier>50</iModifier>
+        </YieldModifier>
+      </YieldModifiers>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>

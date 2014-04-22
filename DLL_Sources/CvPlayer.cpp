@@ -5448,11 +5448,6 @@ void CvPlayer::processTrait(TraitTypes eTrait, int iChange)
 			changeTaxYieldModifierCount(eYield, iChange);
 		}
 
-		for (int iBuildingClass = 0; iBuildingClass < GC.getNumBuildingClassInfos(); ++iBuildingClass)
-		{
-			changeBuildingYieldChange((BuildingClassTypes) iBuildingClass, eYield, iChange * kTrait.getBuildingYieldChange(iBuildingClass, iYield));
-		}
-
 		updateExtraYieldThreshold(eYield);
 
 		if (kTrait.getCityExtraYield(iYield) != 0 || kTrait.getExtraYieldThreshold(iYield) != 0)
@@ -5509,8 +5504,40 @@ void CvPlayer::processTrait(TraitTypes eTrait, int iChange)
 	}
 
 	changeCityDefenseModifier(iChange * kTrait.getCityDefense());
+
+	/// trait effects not saved - start - Nightinggale
+	processTraitNotSaved(eTrait, iChange);
+	/// trait effects not saved - end - Nightinggale
 }
 
+/// trait effects not saved - start - Nightinggale
+void CvPlayer::processTraitNotSaved(TraitTypes eTrait, int iChange)
+{
+	CvTraitInfo& kTrait = GC.getTraitInfo(eTrait);
+
+	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	{
+		YieldTypes eYield = (YieldTypes) iYield;
+
+		for (int iBuildingClass = 0; iBuildingClass < GC.getNumBuildingClassInfos(); ++iBuildingClass)
+		{
+			changeBuildingYieldChange((BuildingClassTypes) iBuildingClass, eYield, iChange * kTrait.getBuildingYieldChange(iBuildingClass, iYield));
+		}
+	}
+}
+
+void CvPlayer::postLoadUpateTraits()
+{
+	for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); iTrait++)
+	{
+		TraitTypes eTrait = (TraitTypes) iTrait;
+		if (hasTrait(eTrait))
+		{
+			processTraitNotSaved(eTrait, 1);
+		}
+	}
+}
+/// trait effects not saved - end - Nightinggale
 
 void CvPlayer::processFather(FatherTypes eFather, int iChange)
 {
@@ -11609,11 +11636,6 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	}
 	/// JIT array save - end - Nightinggale
 
-	for (iI=0;iI<GC.getNumBuildingClassInfos();iI++)
-	{
-		pStream->Read(NUM_YIELD_TYPES, m_ppiBuildingYieldChange[iI]);
-	}
-
 	m_groupCycle.Read(pStream);
 	{
 		CvWString szBuffer;
@@ -11925,6 +11947,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 
 	if (this->getCivilizationType() != NO_CIVILIZATION)
 	{
+		postLoadUpateTraits(); /// trait effects not saved - Nightinggale
 		postLoadCivicUpdate(); /// non saved civic effects - Nightinggale
 		Update_cache_YieldEquipmentAmount(); // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 		this->updateInventionEffectCache(); // invention effect cache - Nightinggale	
@@ -12060,11 +12083,6 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	for (iI=0;iI<GC.getNumCivicOptionInfos();iI++)
 	{
 		pStream->Write(m_paeCivics[iI]);
-	}
-
-	for (iI=0;iI<GC.getNumBuildingClassInfos();iI++)
-	{
-		pStream->Write(NUM_YIELD_TYPES, m_ppiBuildingYieldChange[iI]);
 	}
 
 	m_groupCycle.Write(pStream);

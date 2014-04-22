@@ -147,6 +147,10 @@ public:
 	DllExport int getBuildingClassPrereqBuilding(BuildingTypes eBuilding, BuildingClassTypes ePrereqBuildingClass, int iExtra = 0) const;
 	void removeBuildingClass(BuildingClassTypes eBuildingClass);
 	void processTrait(TraitTypes eTrait, int iChange);
+	/// trait effects not saved - start - Nightinggale
+	void processTraitNotSaved(TraitTypes eTrait, int iChange);
+	void postLoadUpateTraits();
+	/// trait effects not saved - end - Nightinggale
 	void processFather(FatherTypes eFather, int iChange);
 	void processFatherOnce(FatherTypes eFather);
 	int getFatherPointMultiplier() const;

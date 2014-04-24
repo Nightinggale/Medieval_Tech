@@ -958,9 +958,9 @@ protected:
 	int* m_aiTradingPostCount;
 	YieldArray<int> m_ja_iUpkeepCount;
 	YieldArray<int> m_ja_iGarrisonUnitBonus;
-	EuropeArray<int>   m_ja_iTradeRouteStartingPlotX;
-	EuropeArray<int>   m_ja_iTradeRouteStartingPlotY;
-	EuropeArray<bool>  m_ja_bTradeRouteTypes;
+	EuropeArray<int> m_ja_iTradeRouteStartingPlotX;
+	EuropeArray<int> m_ja_iTradeRouteStartingPlotY;
+	BoolArray m_ba_TradeRouteTypes; // EuropeArray
 	///Tke
 
 	BoolArray m_ba_YieldEuropeTradable;

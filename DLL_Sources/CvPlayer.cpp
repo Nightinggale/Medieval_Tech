@@ -54,7 +54,7 @@ CvPlayer::CvPlayer()
 ///TK Civics
 , m_ja_iTradeRouteStartingPlotX(INVALID_PLOT_COORD)
 , m_ja_iTradeRouteStartingPlotY(INVALID_PLOT_COORD)
-, m_ja_bTradeRouteTypes(true)
+, m_ba_TradeRouteTypes(JIT_ARRAY_EUROPE, true)
 ///Tke
 , m_ba_YieldEuropeTradable(JIT_ARRAY_YIELD, true)
 {
@@ -292,7 +292,7 @@ void CvPlayer::uninit()
 	m_ja_iPreviousFatherPoints.resetContent();
 	m_ja_iTradeRouteStartingPlotX.resetContent();
 	m_ja_iTradeRouteStartingPlotY.resetContent();
-	m_ja_bTradeRouteTypes.resetContent();
+	m_ba_TradeRouteTypes.resetContent();
 	m_ja_iBonusFatherPoints.resetContent();
 	///TKe
 	m_ja_iImprovementCount.resetContent();
@@ -544,7 +544,7 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 		 ///Tke
 		m_ja_iTradeRouteStartingPlotX.resetContent();
 		m_ja_iTradeRouteStartingPlotY.resetContent();
-		m_ja_bTradeRouteTypes.resetContent();
+		m_ba_TradeRouteTypes.resetContent();
         ///TKe
 
 		m_ja_iImprovementCount.resetContent();
@@ -11573,7 +11573,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(NUM_CENSURE_TYPES, m_aiCensureTypes);
 	m_ja_iTradeRouteStartingPlotX.read(pStream);
 	m_ja_iTradeRouteStartingPlotY.read(pStream);
-	m_ja_bTradeRouteTypes.read(pStream);
+	m_ba_TradeRouteTypes.read(pStream);
 	///Tke
 	pStream->Read(MAX_PLAYERS, m_aiMissionaryPoints);
 	pStream->Read(MAX_PLAYERS, m_aiMissionaryThresholdMultiplier);
@@ -12016,7 +12016,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(NUM_CENSURE_TYPES, m_aiCensureTypes);
 	m_ja_iTradeRouteStartingPlotX.write(pStream);
 	m_ja_iTradeRouteStartingPlotY.write(pStream);
-	m_ja_bTradeRouteTypes.write(pStream);
+	m_ba_TradeRouteTypes.write(pStream);
 	///Tke
 	pStream->Write(MAX_PLAYERS, m_aiMissionaryPoints);
 	pStream->Write(MAX_PLAYERS, m_aiMissionaryThresholdMultiplier);
@@ -19649,13 +19649,13 @@ bool CvPlayer::getHasTradeRouteType(EuropeTypes eTradeRoute) const
     {
         return true;
     }
-	return m_ja_bTradeRouteTypes.get(eTradeRoute);
+	return m_ba_TradeRouteTypes.get(eTradeRoute);
 	//return 0;
 }
 
 void CvPlayer::setHasTradeRouteType(EuropeTypes eTradeRoute, bool bValue)
 {
-	m_ja_bTradeRouteTypes.set(bValue, eTradeRoute);
+	m_ba_TradeRouteTypes.set(bValue, eTradeRoute);
 }
 
 void CvPlayer::changeCensureType(CensureType eCensure, int iValue)

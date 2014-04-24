@@ -24,6 +24,8 @@ BOOST_STATIC_ASSERT(NUM_PROFESSION_INFO_BM <= 32);
 //------------------------------------------------------------------------------------------------------
 CvProfessionInfo::CvProfessionInfo() :
 	m_iUnitCombatType(NO_UNITCOMBAT),
+	m_ba_FreePromotions(JIT_ARRAY_PROMOTION),
+	m_ba_CombatGearTypes(JIT_ARRAY_UNIT_COMBAT),
 	/// info subclass - start - Nightinggale
 	m_bfA(0),
 	/// info subclass - end - Nightinggale
@@ -41,7 +43,6 @@ CvProfessionInfo::CvProfessionInfo() :
 	m_iMissionaryRate(0),
 	m_iPowerValue(0),
 	m_iAssetValue(0),
-	m_abFreePromotions(NULL),
 	///TKs Med Battle Mod
 	m_iRequiredBuilding(NO_BUILDINGCLASS),
 	iRequiredPromotion(NO_PROMOTION),
@@ -327,10 +328,10 @@ void CvProfessionInfo::read(FDataStreamBase* stream)
 	//m_abFreePromotions = new bool[GC.getNumPromotionInfos()];
 	//stream->Read(GC.getNumPromotionInfos(), m_abFreePromotions);
 	m_acYieldEquipments.read(stream);
-	m_abFreePromotions.read(stream);
+	m_ba_FreePromotions.read(stream);
 
 	///TKs Med BM
-	m_aiCombatGearTypes.read(stream); // CombatGearTypes - Nightinggale
+	m_ba_CombatGearTypes.read(stream); // CombatGearTypes - Nightinggale
 	///TKe
 
 	// MultipleYieldsProduced Start by Aymerick 22/01/2010
@@ -394,9 +395,9 @@ void CvProfessionInfo::write(FDataStreamBase* stream)
 
 	//stream->Write(GC.getNumPromotionInfos(), m_abFreePromotions);
 
-	m_abFreePromotions.write(stream);
+	m_ba_FreePromotions.write(stream);
 	///TKs Med BM
-	m_aiCombatGearTypes.write(stream); // CombatGearTypes - Nightinggale
+	m_ba_CombatGearTypes.write(stream); // CombatGearTypes - Nightinggale
 	///TKe
 
 	// MultipleYieldsProduced Start by Aymerick 22/01/2010
@@ -556,13 +557,13 @@ bool CvProfessionInfo::read(CvXMLLoadUtility* pXML)
 
 
 //	pXML->SetVariableListTagPair(&m_abFreePromotions, "FreePromotions", GC.getNumPromotionInfos(), false);
-	m_abFreePromotions.read(pXML, "FreePromotions");
+	m_ba_FreePromotions.read(pXML, "FreePromotions");
 	///TKs Med BM
 	// CombatGearTypes - start - Nightinggale
-	m_aiCombatGearTypes.read(pXML, "CombatGearTypes");
+	m_ba_CombatGearTypes.read(pXML, "CombatGearTypes");
 	if (this->getUnitCombatType() != NO_UNITCOMBAT)
 	{
-		m_aiCombatGearTypes.set(true, this->getUnitCombatType());
+		m_ba_CombatGearTypes.set(true, this->getUnitCombatType());
 	}
 	// CombatGearTypes - end - Nightinggale
 	///TKe
@@ -657,19 +658,19 @@ bool CvProfessionInfo::read(CvXMLLoadUtility* pXML)
 
 		if (iEnableGear == 1)
 		{
-			m_aiCombatGearTypes.read(pXML, "CombatGearTypes");
+			m_ba_CombatGearTypes.read(pXML, "CombatGearTypes");
 		}
 		else if (iEnableGear == 2)
 		{
-			UnitCombatArray<bool> aiCombatGearTypes;
-			aiCombatGearTypes.read(pXML, "CombatGearTypes");
-			if (aiCombatGearTypes.isAllocated())
+			BoolArray ba_CombatGearTypes(JIT_ARRAY_UNIT_COMBAT);
+			ba_CombatGearTypes.read(pXML, "CombatGearTypes");
+			if (ba_CombatGearTypes.isAllocated())
 			{
-				for (int i = 0; i < aiCombatGearTypes.length(); ++i)
+				for (int i = 0; i < ba_CombatGearTypes.length(); ++i)
 				{
-					if (!m_aiCombatGearTypes.get(i))
+					if (!m_ba_CombatGearTypes.get(i))
 					{
-						m_aiCombatGearTypes.set(aiCombatGearTypes.get(i), i);
+						m_ba_CombatGearTypes.set(ba_CombatGearTypes.get(i), i);
 					}
 				}
 			}
@@ -694,19 +695,19 @@ bool CvProfessionInfo::read(CvXMLLoadUtility* pXML)
 
 		if (iEnablePromotions == 1)
 		{
-			m_abFreePromotions.read(pXML, "FreePromotions");
+			m_ba_FreePromotions.read(pXML, "FreePromotions");
 		}
 		else if (iEnablePromotions == 2)
 		{
-			PromotionArray<bool> abFreePromotions;
-			abFreePromotions.read(pXML, "FreePromotions");
-			if (abFreePromotions.isAllocated())
+			BoolArray ba_FreePromotions(JIT_ARRAY_PROMOTION);
+			ba_FreePromotions.read(pXML, "FreePromotions");
+			if (ba_FreePromotions.isAllocated())
 			{
-				for (int i = 0; i < abFreePromotions.length(); ++i)
+				for (int i = 0; i < ba_FreePromotions.length(); ++i)
 				{
-					if (!m_abFreePromotions.get(i))
+					if (!m_ba_FreePromotions.get(i))
 					{
-						m_abFreePromotions.set(abFreePromotions.get(i), i);
+						m_ba_FreePromotions.set(ba_FreePromotions.get(i), i);
 					}
 				}
 			}

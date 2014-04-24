@@ -839,7 +839,7 @@ protected:
 	CvWString m_szName;
 	CvString m_szScriptData;
 
-	PromotionArray<bool> m_ja_bHasRealPromotion;
+	BoolArray m_ba_HasRealPromotion;
 	PromotionArray<unsigned char> m_ja_iFreePromotionCount;
 	TerrainArray<char> m_ja_iTerrainDoubleMoveCount;
 	FeatureArray<char> m_ja_iFeatureDoubleMoveCount;

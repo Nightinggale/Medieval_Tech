@@ -55,6 +55,7 @@ CvUnitTemporaryStrengthModifier::~CvUnitTemporaryStrengthModifier()
 
 
 CvUnit::CvUnit() :
+	m_ba_HasRealPromotion(JIT_ARRAY_PROMOTION),
 	m_eUnitType(NO_UNIT),
 	m_iID(-1)
 {
@@ -265,7 +266,7 @@ void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAIT
 
 void CvUnit::uninit()
 {
-	m_ja_bHasRealPromotion.resetContent();
+	m_ba_HasRealPromotion.resetContent();
 	m_ja_iFreePromotionCount.resetContent();
 }
 
@@ -391,7 +392,7 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 	if (!bConstructorCall)
 	{
 		FAssertMsg((0 < GC.getNumPromotionInfos()), "GC.getNumPromotionInfos() is not greater than zero but an array is being allocated in CvUnit::reset");
-		m_ja_bHasRealPromotion.resetContent();
+		m_ba_HasRealPromotion.resetContent();
 		m_ja_iFreePromotionCount.resetContent();
 
 		m_ja_iTerrainDoubleMoveCount.resetContent();
@@ -13124,7 +13125,7 @@ bool CvUnit::isHasPromotion(PromotionTypes eIndex) const
 
 bool CvUnit::isHasRealPromotion(PromotionTypes eIndex) const
 {
-	return m_ja_bHasRealPromotion.get(eIndex);
+	return m_ba_HasRealPromotion.get(eIndex);
 }
 
 void CvUnit::setHasRealPromotion(PromotionTypes eIndex, bool bValue)
@@ -13143,7 +13144,7 @@ void CvUnit::setHasRealPromotion(PromotionTypes eIndex, bool bValue)
 			processPromotion(eIndex, -1);
 		}
 
-		m_ja_bHasRealPromotion.set(bValue, eIndex);
+		m_ba_HasRealPromotion.set(bValue, eIndex);
 
 		if (isHasPromotion(eIndex))
 		{
@@ -13431,7 +13432,7 @@ void CvUnit::read(FDataStreamBase* pStream)
 	pStream->ReadString(m_szName);
 	pStream->ReadString(m_szScriptData);
 
-	m_ja_bHasRealPromotion.read(pStream);
+	m_ba_HasRealPromotion.read(pStream);
 	m_ja_iFreePromotionCount.read(pStream);
 
 	/// unit promotion effect cache - start - Nightinggale
@@ -13514,7 +13515,7 @@ void CvUnit::write(FDataStreamBase* pStream)
 	pStream->WriteString(m_szName);
 	pStream->WriteString(m_szScriptData);
 
-	m_ja_bHasRealPromotion.write(pStream);
+	m_ba_HasRealPromotion.write(pStream);
 	m_ja_iFreePromotionCount.write(pStream);
 }
 

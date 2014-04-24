@@ -29,12 +29,18 @@
 // Public Functions...
 
 CvCity::CvCity()
-	: ma_aiCustomHouseNeverSell(true)
+	: m_ba_CustomHouseNeverSell(JIT_ARRAY_YIELD, true)
 	, m_ja_iBuildingOriginalOwner(-1)
 	, m_ja_iBuildingOriginalTime(MIN_INT)
 	, m_ba_ConTrainSpecialist(JIT_ARRAY_UNIT)
 	, m_ba_HasRealBuilding(JIT_ARRAY_BUILDING)
 	, m_ba_HasFreeBuilding(JIT_ARRAY_BUILDING)
+	, m_ba_TradeImports(JIT_ARRAY_YIELD)
+ 	, m_ba_TradeExports(JIT_ARRAY_YIELD)
+	, m_ba_TradeMarket(JIT_ARRAY_YIELD)
+	, m_ba_OrderedStudentsRepeat(JIT_ARRAY_UNIT)
+	, m_ba_TradeImportsMaintain(JIT_ARRAY_YIELD)
+	, m_ba_TradeStopAutoImport(JIT_ARRAY_YIELD)
 {
     ///Tks Med
     m_aiEventTimers = new int[2];
@@ -447,19 +453,19 @@ void CvCity::uninit()
 	m_aNetworkCityIDs.clear();
 	//Tke
 	// traderoute just-in-time - start - Nightinggale
- 	ma_tradeImports.releaseMemory();
- 	ma_tradeExports.releaseMemory();
+ 	m_ba_TradeImports.releaseMemory();
+ 	m_ba_TradeExports.releaseMemory();
 	///Tks Med
-	ma_tradeMarket.releaseMemory();
+	m_ba_TradeMarket.releaseMemory();
 	///TKe
- 	ma_tradeThreshold.releaseMemory();
+ 	m_ja_iTradeThreshold.releaseMemory();
  	// traderoute just-in-time - end - Nightinggale
  	// transport feeder - start - Nightinggale
- 	ma_tradeImportsMaintain.releaseMemory();
+ 	m_ba_TradeImportsMaintain.releaseMemory();
  	// transport feeder - end - Nightinggale
 	// Teacher List - start - Nightinggale
-	ma_OrderedStudents.releaseMemory();
-	ma_OrderedStudentsRepeat.releaseMemory();
+	m_ja_iOrderedStudents.releaseMemory();
+	m_ba_OrderedStudentsRepeat.releaseMemory();
 	// Teacher List - end - Nightinggale
 }
 
@@ -601,8 +607,8 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 	}
 
 	// R&R, ray, finishing Custom House Screen
-	ma_aiCustomHouseSellThreshold.releaseMemory();
-	ma_aiCustomHouseNeverSell.releaseMemory();
+	m_ja_iCustomHouseSellThreshold.releaseMemory();
+	m_ba_CustomHouseNeverSell.releaseMemory();
 	// R&R, ray, finishing Custom House Screen END
 
 	if (!bConstructorCall)
@@ -8363,26 +8369,26 @@ void CvCity::read(FDataStreamBase* pStream)
 	}
 
 	// traderoute just-in-time - start - Nightinggale
- 	ma_tradeImports.read(pStream);
- 	ma_tradeExports.read(pStream);
+ 	m_ba_TradeImports.read(pStream);
+ 	m_ba_TradeExports.read(pStream);
 	///Tks Med
-	ma_tradeMarket.read(pStream);
+	m_ba_TradeMarket.read(pStream);
 	///Tke Med
- 	ma_tradeThreshold.read(pStream);
+ 	m_ja_iTradeThreshold.read(pStream);
  	// transport feeder - start - Nightinggale
- 	ma_tradeImportsMaintain.read(pStream);
-	ma_tradeStopAutoImport.read(pStream);
+ 	m_ba_TradeImportsMaintain.read(pStream);
+	m_ba_TradeStopAutoImport.read(pStream);
  	// transport feeder - end - Nightinggale
  	// traderoute just-in-time - end - Nightinggale
 
 	// R&R, ray, finishing Custom House Screen
-	ma_aiCustomHouseSellThreshold.read(pStream);
-	ma_aiCustomHouseNeverSell.read(pStream);
+	m_ja_iCustomHouseSellThreshold.read(pStream);
+	m_ba_CustomHouseNeverSell.read(pStream);
 	// R&R, ray, finishing Custom House Screen END
 
 	// Teacher List - start - Nightinggale
-	ma_OrderedStudents.read(pStream);
-	ma_OrderedStudentsRepeat.read(pStream);
+	m_ja_iOrderedStudents.read(pStream);
+	m_ba_OrderedStudentsRepeat.read(pStream);
 	// Teacher List - end - Nightinggale
 
 	m_orderQueue.Read(pStream);
@@ -8530,26 +8536,26 @@ void CvCity::write(FDataStreamBase* pStream)
 	}
 
 	// traderoute just-in-time - start - Nightinggale
-	ma_tradeImports.write(pStream);
-	ma_tradeExports.write(pStream);
+	m_ba_TradeImports.write(pStream);
+	m_ba_TradeExports.write(pStream);
 	///Tks Med
-	ma_tradeMarket.write(pStream);
+	m_ba_TradeMarket.write(pStream);
 	///Tke Med
-	ma_tradeThreshold.write(pStream);
+	m_ja_iTradeThreshold.write(pStream);
 	// traderoute just-in-time - end - Nightinggale
 	// transport feeder - start - Nightinggale
-	ma_tradeImportsMaintain.write(pStream);
-	ma_tradeStopAutoImport.write(pStream);
+	m_ba_TradeImportsMaintain.write(pStream);
+	m_ba_TradeStopAutoImport.write(pStream);
 	// transport feeder - end - Nightinggale
 
 	// R&R, ray, finishing Custom House Screen
-	ma_aiCustomHouseSellThreshold.write(pStream);
-	ma_aiCustomHouseNeverSell.write(pStream);
+	m_ja_iCustomHouseSellThreshold.write(pStream);
+	m_ba_CustomHouseNeverSell.write(pStream);
 	// R&R, ray, finishing Custom House Screen END
 
 	// Teacher List - start - Nightinggale
-	ma_OrderedStudents.write(pStream);
-	ma_OrderedStudentsRepeat.write(pStream);
+	m_ja_iOrderedStudents.write(pStream);
+	m_ba_OrderedStudentsRepeat.write(pStream);
 	// Teacher List - end - Nightinggale
 
 	m_orderQueue.Write(pStream);
@@ -10691,19 +10697,19 @@ int CvCity::getSpecialistTuition(UnitTypes eUnit) const
 bool CvCity::isExport(YieldTypes eYield) const
 {
 	// traderoute just-in-time - start - Nightinggale
-	return ma_tradeExports.get(eYield);
+	return m_ba_TradeExports.get(eYield);
 	// traderoute just-in-time - end - Nightinggale
 }
 
 void CvCity::addExport(YieldTypes eYield, bool bUpdateRoutes)
 {
 	// traderoute just-in-time - start - Nightinggale
-	if (ma_tradeExports.get(eYield))
+	if (m_ba_TradeExports.get(eYield))
 	{
 		return;
 	}
 
-	ma_tradeExports.set(true, eYield);
+	m_ba_TradeExports.set(true, eYield);
 	// traderoute just-in-time - end - Nightinggale
 
 	if (bUpdateRoutes)
@@ -10747,12 +10753,12 @@ void CvCity::addExport(YieldTypes eYield, bool bUpdateRoutes)
 void CvCity::removeExport(YieldTypes eYield, bool bUpdateRoutes)
 {
 	// traderoute just-in-time - start - Nightinggale
-	if (!ma_tradeExports.get(eYield))
+	if (!m_ba_TradeExports.get(eYield))
 	{
 		return;
 	}
 
-	ma_tradeExports.set(false, eYield);
+	m_ba_TradeExports.set(false, eYield);
 	// traderoute just-in-time - end - Nightinggale
 
 	if (bUpdateRoutes)
@@ -10831,19 +10837,19 @@ void CvCity::updateExports()
 bool CvCity::isImport(YieldTypes eYield) const
 {
 	// traderoute just-in-time - start - Nightinggale
- 	return ma_tradeImports.get(eYield);
+ 	return m_ba_TradeImports.get(eYield);
  	// traderoute just-in-time - end - Nightinggale
 }
 
 void CvCity::addImport(YieldTypes eYield, bool bUpdateRoutes)
 {
 	// traderoute just-in-time - start - Nightinggale
- 	if (ma_tradeImports.get(eYield))
+ 	if (m_ba_TradeImports.get(eYield))
   	{
   		return;
   	}
 
- 	ma_tradeImports.set(true, eYield);
+ 	m_ba_TradeImports.set(true, eYield);
  	// traderoute just-in-time - end - Nightinggale
 
 	if (bUpdateRoutes)
@@ -10882,12 +10888,12 @@ void CvCity::addImport(YieldTypes eYield, bool bUpdateRoutes)
 void CvCity::removeImport(YieldTypes eYield, bool bUpdateRoutes)
 {
 	// traderoute just-in-time - start - Nightinggale
-	if (!ma_tradeImports.get(eYield) || getImportsMaintain(eYield))
+	if (!m_ba_TradeImports.get(eYield) || getImportsMaintain(eYield))
 	{
 		return;
 	}
 
-	ma_tradeImports.set(false, eYield);
+	m_ba_TradeImports.set(false, eYield);
 	// traderoute just-in-time - end - Nightinggale
 
 	if (bUpdateRoutes)
@@ -10990,7 +10996,7 @@ void CvCity::setMaintainLevel(YieldTypes eYield, int iMaintainLevel)
 		// transport feeder - end - Nightinggale
 
 		// traderoute just-in-time - start - Nightinggale
-		ma_tradeThreshold.set(iMaintainLevel, eYield);
+		m_ja_iTradeThreshold.set(iMaintainLevel, eYield);
 		// traderoute just-in-time - end - Nightinggale
 
 		// transport feeder - begin - Nightinggale
@@ -11018,7 +11024,7 @@ void CvCity::setMaintainLevel(YieldTypes eYield, int iMaintainLevel)
 int CvCity::getMaintainLevel(YieldTypes eYield) const
 {
  	// traderoute just-in-time - start - Nightinggale
- 	return ma_tradeThreshold.get(eYield);
+ 	return m_ja_iTradeThreshold.get(eYield);
  	// traderoute just-in-time - end - Nightinggale
 }
 
@@ -11026,17 +11032,17 @@ int CvCity::getMaintainLevel(YieldTypes eYield) const
 
  bool CvCity::getImportsMaintain(YieldTypes eYield) const
 {
- 	return ma_tradeImportsMaintain.get(eYield);
+ 	return m_ba_TradeImportsMaintain.get(eYield);
 }
 
  void CvCity::setImportsMaintain(YieldTypes eYield, bool bSetting)
 {
- 	ma_tradeImportsMaintain.set(bSetting, eYield);
+ 	m_ba_TradeImportsMaintain.set(bSetting, eYield);
 
 	bool bImportStopped = isAutoImportStopped(eYield);
 	if (bImportStopped)
 	{
-		ma_tradeStopAutoImport.set(false, eYield);
+		m_ba_TradeStopAutoImport.set(false, eYield);
 	}
 	checkImportsMaintain(eYield, bImportStopped);
 
@@ -11054,7 +11060,7 @@ void CvCity::checkImportsMaintain(YieldTypes eYield, bool bUpdateScreen)
  	FAssert(eYield >= 0);
  	FAssert(eYield < NUM_YIELD_TYPES);
 
- 	if (!ma_tradeImportsMaintain.get(eYield))
+ 	if (!m_ba_TradeImportsMaintain.get(eYield))
 	{
 		FAssert(!isAutoImportStopped(eYield));
 		return;
@@ -11068,9 +11074,9 @@ void CvCity::checkImportsMaintain(YieldTypes eYield, bool bUpdateScreen)
 
 	if (!isAutoImportStopped(eYield) && iStoredLevel >= iMaintainLevel)
  	{
- 		ma_tradeStopAutoImport.set(true, eYield);
+ 		m_ba_TradeStopAutoImport.set(true, eYield);
 	} else if (isAutoImportStopped(eYield) && (iNeededLevel > iStoredLevel || (iStoredLevel <= (iMaintainLevel*3)/4))) {
-		ma_tradeStopAutoImport.set(false, eYield);
+		m_ba_TradeStopAutoImport.set(false, eYield);
 	} else if (!bUpdateScreen) {
 		// nothing changed. Do not continue to screen update code.
 		return;
@@ -11142,7 +11148,7 @@ void CvCity::setAutoThresholdCache(YieldTypes eYield)
 	}
 
 	// increase threshold to manually set threshold, if needed
-	ma_tradeAutoThreshold.keepMax(ma_tradeThreshold.get(eYield), eYield);
+	ma_tradeAutoThreshold.keepMax(m_ja_iTradeThreshold.get(eYield), eYield);
 
 	checkImportsMaintain(eYield);
 }
@@ -11751,18 +11757,18 @@ bool CvCity::isMarket(YieldTypes eYield) const
         return false;
     }
 	// traderoute just-in-time - start - Nightinggale
-	return ma_tradeMarket.get(eYield);
+	return m_ba_TradeMarket.get(eYield);
 	// traderoute just-in-time - end - Nightinggale
 }
 
 void CvCity::addMarket(YieldTypes eYield)
 {
 	// traderoute just-in-time - start - Nightinggale
-	if (ma_tradeMarket.get(eYield))
+	if (m_ba_TradeMarket.get(eYield))
 	{
 		return;
 	}
-	ma_tradeMarket.set(true, eYield);
+	m_ba_TradeMarket.set(true, eYield);
 	// traderoute just-in-time - end - Nightinggale
 
 	if (getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
@@ -11775,11 +11781,11 @@ void CvCity::addMarket(YieldTypes eYield)
 void CvCity::removeMarket(YieldTypes eYield)
 {
 	// traderoute just-in-time - start - Nightinggale
-	if (!ma_tradeMarket.get(eYield))
+	if (!m_ba_TradeMarket.get(eYield))
 	{
 		return;
 	}
-	ma_tradeMarket.set(false, eYield);
+	m_ba_TradeMarket.set(false, eYield);
 	// traderoute just-in-time - end - Nightinggale
 
 	if (getTeam() == GC.getGameINLINE().getActiveTeam())
@@ -11859,7 +11865,7 @@ void CvCity::UpdateBuildingAffectedCache()
 	m_cache_MaxYieldCapacity[NUM_YIELD_TYPES] = getMaxYieldCapacityUncached(NO_YIELD);
 	// cache getMaxYieldCapacity - end - Nightinggale
 
-	this->m_aiBuildingYieldDemands.resetContent(); // domestic yield demand - Nightinggale
+	this->m_ja_iBuildingYieldDemands.resetContent(); // domestic yield demand - Nightinggale
 
 	this->m_iMarketCap = GC.getXMLval(XML_NO_MARKED_SALES_CAP);
 
@@ -11890,7 +11896,7 @@ void CvCity::UpdateBuildingAffectedCache()
 				for (int iYield = 0; iYield < NUM_YIELD_TYPES; iYield++)
 				{
 					YieldTypes eYield = (YieldTypes) iYield;
-					m_aiBuildingYieldDemands.set(m_aiBuildingYieldDemands.get(eYield) + kBuilding.getYieldDemand(eYield), iYield);
+					m_ja_iBuildingYieldDemands.set(m_ja_iBuildingYieldDemands.get(eYield) + kBuilding.getYieldDemand(eYield), iYield);
 				}
 				this->m_iMarketCap += kBuilding.getMarketCap();
 				// domestic yield demand - end - Nightinggale
@@ -11912,7 +11918,7 @@ void CvCity::UpdateBuildingAffectedCache()
 	}
 
 	// release unneeded memory
-	m_aiBuildingYieldDemands.hasContent();
+	m_ja_iBuildingYieldDemands.hasContent();
 	m_ja_iFreePromotionCount.hasContent();
 }
 // building affected cache - end - Nightinggale
@@ -11922,8 +11928,8 @@ void CvCity::setOrderedStudents(UnitTypes eUnit, int iCount, bool bRepeat, bool 
 {
 	if (bClearAll)
 	{
-		ma_OrderedStudents.resetContent();
-		ma_OrderedStudentsRepeat.resetContent();
+		m_ja_iOrderedStudents.resetContent();
+		m_ba_OrderedStudentsRepeat.resetContent();
 	} else {
 		if (!(eUnit >= 0 && eUnit < GC.getNumUnitInfos() && iCount >= 0))
 		{
@@ -11932,9 +11938,15 @@ void CvCity::setOrderedStudents(UnitTypes eUnit, int iCount, bool bRepeat, bool 
 			FAssert(iCount < 0);
 			return;
 		}
+
+		if (iCount > 255)
+		{
+			FAssertMsg(iCount <= 255, "overflow");
+			iCount = 255;
+		}
 	
-		ma_OrderedStudents.set(iCount, eUnit);
-		ma_OrderedStudentsRepeat.set(bRepeat, eUnit);
+		m_ja_iOrderedStudents.set(iCount, eUnit);
+		m_ba_OrderedStudentsRepeat.set(bRepeat, eUnit);
 		if (bUpdateRepeat && iCount == 0)
 		{
 			checkOrderedStudentsForRepeats(eUnit);
@@ -11951,13 +11963,13 @@ void CvCity::checkOrderedStudentsForRepeats(UnitTypes eUnit)
 	FAssert(eUnit >= 0);
 	FAssert(eUnit < GC.getNumUnitInfos());
 
-	if (ma_OrderedStudentsRepeat.isAllocated() && ma_OrderedStudents.isEmpty(false))
+	if (m_ba_OrderedStudentsRepeat.isAllocated() && m_ja_iOrderedStudents.isEmpty(false))
 	{
-		for (int iUnit = 0; iUnit < ma_OrderedStudentsRepeat.length(); iUnit++)
+		for (int iUnit = 0; iUnit < m_ba_OrderedStudentsRepeat.length(); iUnit++)
 		{
-			if (ma_OrderedStudentsRepeat.get(iUnit))
+			if (m_ba_OrderedStudentsRepeat.get(iUnit))
 			{
-				ma_OrderedStudents.set(1, iUnit);
+				m_ja_iOrderedStudents.set(1, iUnit);
 			}
 		}
 		if (getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
@@ -11971,14 +11983,14 @@ int CvCity::getOrderedStudents(UnitTypes eUnit)
 {
 	FAssert(eUnit >= 0);
 	FAssert(eUnit < GC.getNumUnitInfos());
-	return ma_OrderedStudents.get(eUnit);
+	return m_ja_iOrderedStudents.get(eUnit);
 }
 
 bool CvCity::getOrderedStudentsRepeat(UnitTypes eUnit)
 {
 	FAssert(eUnit >= 0);
 	FAssert(eUnit < GC.getNumUnitInfos());
-	return ma_OrderedStudentsRepeat.get(eUnit);
+	return m_ba_OrderedStudentsRepeat.get(eUnit);
 }
 // Teacher List - end - Nightinggale
 
@@ -11990,7 +12002,7 @@ void CvCity::setCustomHouseSellThreshold(YieldTypes eYield, int iCustomHouseSell
 
 	if (iCustomHouseSellThreshold != getCustomHouseSellThreshold(eYield))
 	{
-		ma_aiCustomHouseSellThreshold.set(iCustomHouseSellThreshold, eYield);
+		m_ja_iCustomHouseSellThreshold.set(iCustomHouseSellThreshold, eYield);
 		if (getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
 		{
 			gDLL->getInterfaceIFace()->setDirty(SelectionButtons_DIRTY_BIT, true);
@@ -12000,14 +12012,14 @@ void CvCity::setCustomHouseSellThreshold(YieldTypes eYield, int iCustomHouseSell
 
 int CvCity::getCustomHouseSellThreshold(YieldTypes eYield) const
 {
-	return ma_aiCustomHouseSellThreshold.get(eYield);
+	return m_ja_iCustomHouseSellThreshold.get(eYield);
 }
 
 void CvCity::setCustomHouseNeverSell(YieldTypes eYield, bool bNeverSell)
 {
 	if (isCustomHouseNeverSell(eYield) != bNeverSell)
 	{
-		ma_aiCustomHouseNeverSell.set(bNeverSell, eYield);
+		m_ba_CustomHouseNeverSell.set(bNeverSell, eYield);
 
 		if (getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
 		{
@@ -12018,21 +12030,21 @@ void CvCity::setCustomHouseNeverSell(YieldTypes eYield, bool bNeverSell)
 
 bool CvCity::isCustomHouseNeverSell(YieldTypes eYield) const
 {
-	return ma_aiCustomHouseNeverSell.get(eYield);
+	return m_ba_CustomHouseNeverSell.get(eYield);
 }
 // R&R, ray, finishing Custom House Screen END
 
 // domestic yield demand - start - Nightinggale
 void CvCity::setUnitYieldDemand()
 {
-	m_aiUnitYieldDemands.resetContent();
+	m_ja_iUnitYieldDemands.resetContent();
 	
 	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
 	{
 		CvUnit* pLoopUnit = m_aPopulationUnits[i];
 		setUnitYieldDemand(pLoopUnit->getUnitType());
 	}
-	m_aiUnitYieldDemands.hasContent(); // try to release memory
+	m_ja_iUnitYieldDemands.hasContent(); // try to release memory
 }
 
 void CvCity::setUnitYieldDemand(UnitTypes eUnit, const bool bRemove)
@@ -12052,7 +12064,7 @@ void CvCity::setUnitYieldDemand(UnitTypes eUnit, const bool bRemove)
 				{
 					iDemand = -iDemand;
 				}
-				m_aiUnitYieldDemands.set(m_aiUnitYieldDemands.get(eYield) + iDemand, eYield);
+				m_ja_iUnitYieldDemands.set(m_ja_iUnitYieldDemands.get(eYield) + iDemand, eYield);
 			}
 		}
 	}

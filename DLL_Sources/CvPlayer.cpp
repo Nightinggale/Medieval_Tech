@@ -11409,6 +11409,8 @@ void CvPlayer::processCivicNotSaved(CivicTypes eCivic, int iChange)
 	changeFreeExperience(kCivicInfo.getFreeExperience() * iChange);
 	changeRevolutionEuropeTradeCount(kCivicInfo.isRevolutionEuropeTrade() ? iChange : 0);
 
+	m_iCityPlotFoodBonus += iChange * kCivicInfo.getCenterPlotFoodBonus();
+
 	for (int iI = 0; iI < GC.getNumHurryInfos(); iI++)
 	{
 		changeHurryCount(((HurryTypes)iI), ((kCivicInfo.isHurry(iI)) ? iChange : 0));
@@ -20021,9 +20023,6 @@ void CvPlayer::updateInventionEffectCache()
 		eLuxuryUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getXMLval(XML_DEFAULT_GROWTH_NOBLE_UNITCLASS));
 	}
 
-	// city plot food bonus
-	m_iCityPlotFoodBonus = 0;
-
 	for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
 	{
 		CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes) iCivic);
@@ -20040,8 +20039,6 @@ void CvPlayer::updateInventionEffectCache()
 
 			if (this->getIdeasResearched((CivicTypes) iCivic) > 0)
 			{
-				m_iCityPlotFoodBonus += kCivicInfo.getCenterPlotFoodBonus();
-
 				UnitClassTypes eNewGrowthClass = (UnitClassTypes)kCivicInfo.getNewDefaultUnitClass();
 				if (eNewGrowthClass != NO_UNITCLASS)
 				{

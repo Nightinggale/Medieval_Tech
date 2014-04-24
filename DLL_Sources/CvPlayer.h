@@ -147,6 +147,10 @@ public:
 	DllExport int getBuildingClassPrereqBuilding(BuildingTypes eBuilding, BuildingClassTypes ePrereqBuildingClass, int iExtra = 0) const;
 	void removeBuildingClass(BuildingClassTypes eBuildingClass);
 	void processTrait(TraitTypes eTrait, int iChange);
+	/// trait effects not saved - start - Nightinggale
+	void processTraitNotSaved(TraitTypes eTrait, int iChange);
+	void postLoadUpateTraits();
+	/// trait effects not saved - end - Nightinggale
 	void processFather(FatherTypes eFather, int iChange);
 	void processFatherOnce(FatherTypes eFather);
 	int getFatherPointMultiplier() const;
@@ -356,7 +360,7 @@ public:
 	DllExport int getBuildingYieldChange(BuildingClassTypes eBuildingClass, YieldTypes eYield) const;
 	void changeBuildingYieldChange(BuildingClassTypes eBuildingClass, YieldTypes eYield, int iChange);
 	int getTaxYieldModifierCount(YieldTypes eYield) const;
-	void changeTaxYieldModifierCount(YieldTypes eYield, int iChange) const;
+	void changeTaxYieldModifierCount(YieldTypes eYield, int iChange);
 
 	void updateGroupCycle(CvUnit* pUnit);
 	void removeGroupCycle(int iID);
@@ -666,6 +670,10 @@ public:
 	int getCurrentResearchProgress(bool bGetTurns, CivicTypes eCivic = NO_CIVIC);
 	int getTurnstoCompleteResearch(bool bReturnNetResearch=false, CivicTypes eCivic = NO_CIVIC);
 	void processCivics(CivicTypes eCivic, int iChange);
+	/// non saved civic effects - start - Nightinggale
+	void processCivicNotSaved(CivicTypes eCivic, int iChange);
+	void postLoadCivicUpdate();
+	/// non saved civic effects - end - Nightinggale
 	int getIdea(bool Research, PlayerTypes ePlayer = NO_PLAYER) const;
 	void setResearchPartner(PlayerTypes ePartner);
 	PlayerTypes getResearchPartner() const;
@@ -931,58 +939,58 @@ protected:
 	TeamTypes m_eTeamType;
 	YieldTypes m_eImmigrationConversion;
 
-	int* m_aiSeaPlotYield;
-	int* m_aiYieldRateModifier;
-	int* m_aiCapitalYieldRateModifier;
-	int* m_aiBuildingRequiredYieldModifier;
-	int* m_aiCityExtraYield;
-	int* m_aiExtraYieldThreshold;
-	int* m_aiYieldBuyPrice;
-	int* m_aiYieldTradedTotal;
-	int* m_aiYieldBoughtTotal;
-	int* m_aiTaxYieldModifierCount;
+	YieldArray<int> m_ja_iSeaPlotYield;
+	YieldArray<int> m_ja_iYieldRateModifier;
+	YieldArray<int> m_ja_iCapitalYieldRateModifier;
+	YieldArray<int> m_ja_iBuildingRequiredYieldModifier;
+	YieldArray<int> m_ja_iCityExtraYield;
+	YieldArray<int> m_ja_iExtraYieldThreshold;
+	YieldArray<int> m_ja_iYieldBuyPrice;
+	YieldArray<int> m_ja_iYieldTradedTotal;
+	YieldArray<int> m_ja_iYieldBoughtTotal;
+	YieldArray<int> m_ja_iTaxYieldModifierCount;
 	///TKs Invention Core Mod v 1.0
-	int* m_aiVictoryYieldCount;
+	YieldArray<int> m_ja_iVictoryYieldCount;
 	int* m_aiCensureTypes;
 	///TKs Med
 	///TK Civics
 	//int* m_paiHasCivicOptionCount;
 	int* m_aiTradingPostCount;
-	int* m_paiUpkeepCount;
-	int* m_paiGarrisonUnitBonus;
-	int* m_aiTradeRouteStartingPlotX;
-	int* m_aiTradeRouteStartingPlotY;
-	bool* m_abTradeRouteTypes;
+	YieldArray<int> m_ja_iUpkeepCount;
+	YieldArray<int> m_ja_iGarrisonUnitBonus;
+	EuropeArray<int>   m_ja_iTradeRouteStartingPlotX;
+	EuropeArray<int>   m_ja_iTradeRouteStartingPlotY;
+	EuropeArray<bool>  m_ja_bTradeRouteTypes;
 	///Tke
 
-	bool* m_abYieldEuropeTradable;
+	BoolArray m_ba_YieldEuropeTradable;
 	bool* m_abFeatAccomplished;
 	bool* m_abOptions;
 
 	CvString m_szScriptData;
     ///TKs Invention Core Mod v 1.0
-    int* m_aiIdeaProgress;
-    int* m_aiIdeasResearched;
-    int* m_aiPreviousFatherPoints;
-	int* m_aiBonusFatherPoints;
+    CivicArray<int> m_ja_iIdeaProgress;
+    CivicArray<int> m_ja_iIdeasResearched;
+    FatherArray<int> m_ja_iPreviousFatherPoints;
+	FatherArray<int> m_ja_iBonusFatherPoints;
     ///TKe
-	int* m_paiImprovementCount;
-	int* m_paiFreeBuildingCount;
-	int* m_paiUnitClassCount;
-	int* m_paiUnitClassMaking;
-	int* m_paiUnitClassImmigrated;
-	int* m_paiUnitMoveChange;
-	int* m_paiUnitStrengthModifier;
-	int* m_paiProfessionCombatChange;
-	int* m_paiProfessionMoveChange;
-	int* m_paiBuildingClassCount;
-	int* m_paiBuildingClassMaking;
-	int* m_paiHurryCount;
-	int* m_paiSpecialBuildingNotRequiredCount;
+	ImprovementArray<int> m_ja_iImprovementCount;
+	BuildingArray<int> m_ja_iFreeBuildingCount;
+	UnitClassArray<int> m_ja_iUnitClassCount;
+	UnitClassArray<int> m_ja_iUnitClassMaking;
+	UnitClassArray<int> m_ja_iUnitClassImmigrated;
+	UnitClassArray<int> m_ja_iUnitMoveChange;
+	UnitClassArray<int> m_ja_iUnitStrengthModifier;
+	ProfessionArray<int> m_ja_iProfessionCombatChange;
+	ProfessionArray<int> m_ja_iProfessionMoveChange;
+	BuildingClassArray<int> m_ja_iBuildingClassCount;
+	BuildingClassArray<int> m_ja_iBuildingClassMaking;
+	HurryArray<int> m_ja_iHurryCount;
+	BuildingSpecialArray<int> m_ja_iSpecialBuildingNotRequiredCount;
 	int* m_aiMissionaryPoints;
 	int* m_aiMissionaryThresholdMultiplier;
-	int* m_aiProfessionEquipmentModifier;
-	int* m_aiTraitCount;
+	ProfessionArray<int> m_ja_iProfessionEquipmentModifier;
+	TraitArray<int> m_ja_iTraitCount;
 
 	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
 	YieldArray<ProfessionYieldCost> *m_cache_YieldEquipmentAmount;

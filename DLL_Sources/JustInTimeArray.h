@@ -1,8 +1,7 @@
+#ifndef JUST_IN_TIME_ARRAY_H
+#define JUST_IN_TIME_ARRAY_H
 #pragma once
 // JustInTimeArray.h
-
-#include "CvDLLEntity.h"
-#include "CvGlobals.h"
 
 /*
  * Guide for just-in-time array usage
@@ -38,75 +37,42 @@
  *   Copy class YieldArray and change:
  *    2 * YieldArray (function and constructor) into a suitable name
 *     2 * NUM_YIELD_TYPES into whatever length you need.
- *
- *  The reason why the class function definitions are inside the declaration is to avoid compiler errors regarding templates.
  */
 
-
-enum JIT_ARRAY_TYPES
-{
-	JIT_ARRAY_YIELD,
-	JIT_ARRAY_UNIT,
-	JIT_ARRAY_UNIT_CLASS,
-	JIT_ARRAY_PROFESSION,
-	JIT_ARRAY_PROMOTION,
-	JIT_ARRAY_UNIT_COMBAT,
-	JIT_ARRAY_BONUS,
-	JIT_ARRAY_PLAYER,
-	JIT_ARRAY_EUROPE,
-	JIT_ARRAY_BUILDING,
-};
+class CvXMLLoadUtility;
 
 template<class T> class JustInTimeArray
 {
 private:
 	T* tArray;
 	const unsigned short m_iLength;
-	const unsigned short m_iType;
+	const unsigned char m_iType;
 	const T m_eDefault;
 
 public:
-	JustInTimeArray(JIT_ARRAY_TYPES eType, int iLength, T eDefault = 0)
-	: tArray(NULL)
-	, m_iType(eType)
-	, m_iLength(iLength)
-	, m_eDefault(eDefault)
-	{}
+	JustInTimeArray(JIT_ARRAY_TYPES eType, T eDefault = 0);
 
-	~JustInTimeArray()
-	{
-		SAFE_DELETE_ARRAY(tArray);
-	}
-
-	// use resetContent() if you want to write to the array
-	// this way memory will not be freed and reallocated (slow process)
-	inline void reset()
-	{
-		SAFE_DELETE_ARRAY(tArray);
-	}
+	~JustInTimeArray();
 
 	// reset content of an array if it is allocated
-	inline void resetContent()
-	{
-		if (isAllocated())
-		{
-			for (int iIterator = 0; iIterator < m_iLength; ++iIterator)
-			{
-				tArray[iIterator] = m_eDefault;
-			}
-		}
-	}
+	void resetContent();
 
+	void releaseMemory();
+
+	// non-allocated arrays contains only default values
+	// this is a really fast content check without even looking at array content
+	// note that it is possible to have allocated arrays with only default content
 	inline bool isAllocated() const
 	{
 		return tArray != NULL;
 	}
 	
-	inline int length()
+	inline int length() const
 	{
 		return m_iLength;
 	}
 
+	// get stored value
 	inline T get(int iIndex) const
 	{
 		FAssert(iIndex >= 0);
@@ -114,200 +80,182 @@ public:
 		return tArray ? tArray[iIndex] : m_eDefault;
 	}
 
-	inline void set(T value, int iIndex)
-	{
-		FAssert(iIndex >= 0);
-		FAssert(iIndex < m_iLength);
+	// assign argument to storage
+	void set(T value, int iIndex);
 
-		if (tArray == NULL)
-		{
-			if (value == m_eDefault)
-			{
-				// no need to allocate memory to assign a default (false) value
-				return;
-			}
-			tArray = new T[m_iLength];
-			resetContent();
-		}
-		tArray[iIndex] = value;
-	}
+	// add argument to stored value
+	void add(T value, int iIndex);
 
-	inline void add(T value, int iIndex)
-	{
-		this->set(value + this->get(iIndex), iIndex);
-	}
+	// replace value with argument if argument is higher than the already stored value
+	void keepMax(T value, int iIndex);
 
-	inline void keepMax(T value, int iIndex)
-	{
-		if (value > get(iIndex))
-		{
-			set(value, iIndex);
-		}
-	}
+	JIT_ARRAY_TYPES getType() const;
 
-	unsigned short getType() const
-	{
-		return m_iType;
-	}
-
-	bool hasContent(bool bRelease = true)
-	{
-		if (tArray == NULL)
-		{
-			return false;
-		}
-		for (int iIterator = 0; iIterator < m_iLength; ++iIterator)
-		{
-			if (tArray[iIterator])
-			{
-				return true;
-			}
-		}
-
-		if (bRelease)
-		{
-			// array is allocated but has no content
-			SAFE_DELETE_ARRAY(tArray);
-		}
-		return false;
-	};
+	bool hasContent(bool bRelease = true);
 	inline bool isEmpty(bool bRelease = true)
 	{
 		return !hasContent(bRelease);
 	}
 
-	void read(FDataStreamBase* pStream, bool bRead)
-	{
-		if (bRead)
-		{
-			if (tArray == NULL)
-			{
-				tArray = new T[m_iLength];
-			}
-			pStream->Read(m_iLength, tArray);
-		}
-	}
+	int getNumUsedElements() const;
 
-	void write(FDataStreamBase* pStream, bool bWrite)
-	{
-		if (bWrite)
-		{
-			if (tArray == NULL)
-			{
-				// requested writing an empty array.
-				for (int i = 0; i < m_iLength; i++)
-				{
-					pStream->Write(m_eDefault);
-				}
-			} else {
-				pStream->Write(m_iLength, tArray);
-			}
-		}
-	}
-
-	void read(CvXMLLoadUtility* pXML, const char* sTag)
-	{
-		// read the data into a temp int array and then set the permanent array with those values.
-		// this is a workaround for template issues
-		FAssert(this->m_iLength > 0);
-		int *iArray = new int[this->m_iLength];
-		pXML->SetVariableListTagPair(&iArray, sTag, this->m_iLength, 0);
-		for (int i = 0; i < this->m_iLength; i++)
-		{
-			this->set(iArray[i], i);
-		}
-		SAFE_DELETE_ARRAY(iArray);
-		this->hasContent(); // release array if possible
-	}
-};
-
-
-template<class T>
-class YieldArray: public JustInTimeArray<T>
-{
-public:
-	YieldArray() : JustInTimeArray<T>(JIT_ARRAY_YIELD, NUM_YIELD_TYPES){};
-	YieldArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_YIELD, NUM_YIELD_TYPES, eDefault){};
-};
-
-template<class T>
-class YieldCargoArray: public JustInTimeArray<T>
-{
-public:
-	// for presumably all intended purpose of type, this is the same type as yield
-	// the type is designed to help figuring out which info types should be used etc. We have length to tell lengths apart
-	YieldCargoArray() : JustInTimeArray<T>(JIT_ARRAY_YIELD, NUM_CARGO_YIELD_TYPES){};
-	YieldCargoArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_YIELD, NUM_CARGO_YIELD_TYPES, eDefault){};
-};
-
-template<class T>
-class UnitArray: public JustInTimeArray<T>
-{
-public:
-    UnitArray() : JustInTimeArray<T>(JIT_ARRAY_UNIT, GC.getNumUnitInfos()){};
-	UnitArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_UNIT, GC.getNumUnitInfos(), eDefault){};
-};
-
-template<class T>
-class UnitClassArray: public JustInTimeArray<T>
-{
-public:
-    UnitClassArray() : JustInTimeArray<T>(JIT_ARRAY_UNIT_CLASS, GC.getNumUnitClassInfos()){};
-	UnitClassArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_UNIT_CLASS, GC.getNumUnitClassInfos(), eDefault){};
-};
-
-template<class T>
-class ProfessionArray: public JustInTimeArray<T>
-{
-public:
-    ProfessionArray() : JustInTimeArray<T>(JIT_ARRAY_PROFESSION, GC.getNumProfessionInfos()){};
-	ProfessionArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_PROFESSION, GC.getNumProfessionInfos(), eDefault){};
-};
-
-template<class T>
-class PromotionArray: public JustInTimeArray<T>
-{
-public:
-    PromotionArray() : JustInTimeArray<T>(JIT_ARRAY_PROMOTION, GC.getNumPromotionInfos()){};
-	PromotionArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_PROMOTION, GC.getNumPromotionInfos(), eDefault){};
-};
-
-template<class T>
-class UnitCombatArray: public JustInTimeArray<T>
-{
-public:
-    UnitCombatArray() : JustInTimeArray<T>(JIT_ARRAY_UNIT_COMBAT, GC.getNumUnitCombatInfos()){};
-	UnitCombatArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_UNIT_COMBAT, GC.getNumUnitCombatInfos(), eDefault){};
+	// bEnable can be used like "uiFlag > x" to make oneline conditional loads
+	void read(FDataStreamBase* pStream, bool bEnable = true);
+	void write(FDataStreamBase* pStream);
+	void read(CvXMLLoadUtility* pXML, const char* sTag);
 };
 
 template<class T>
 class BonusArray: public JustInTimeArray<T>
 {
 public:
-    BonusArray() : JustInTimeArray<T>(JIT_ARRAY_BONUS, GC.getNumBonusInfos()){};
-	BonusArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_BONUS, GC.getNumBonusInfos(), eDefault){};
-};
-
-template<class T>
-class PlayerArray: public JustInTimeArray<T>
-{
-public:
-	PlayerArray() : JustInTimeArray<T>(JIT_ARRAY_PLAYER, MAX_PLAYERS){};
-	PlayerArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_PLAYER, MAX_PLAYERS, eDefault){};
-};
-
-template<class T>
-class EuropeArray: public JustInTimeArray<T>
-{
-public:
-	EuropeArray() : JustInTimeArray<T>(JIT_ARRAY_EUROPE, GC.getNumEuropeInfos()){};
-	EuropeArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_EUROPE, GC.getNumEuropeInfos(), eDefault){};
+	BonusArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_BONUS, eDefault){};
 };
 
 template<class T>
 class BuildingArray: public JustInTimeArray<T>
 {
 public:
-    BuildingArray() : JustInTimeArray<T>(JIT_ARRAY_BUILDING, GC.getNumBuildingInfos()){};
-	BuildingArray(T eDefault) : JustInTimeArray<T>(JIT_ARRAY_BUILDING, GC.getNumBuildingInfos(), eDefault){};
+	BuildingArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_BUILDING, eDefault){};
 };
+
+template<class T>
+class BuildingClassArray: public JustInTimeArray<T>
+{
+public:
+	BuildingClassArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_BUILDING_CLASS, eDefault){};
+};
+
+template<class T>
+class BuildingSpecialArray: public JustInTimeArray<T>
+{
+public:
+	BuildingSpecialArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_BUILDING_SPECIAL, eDefault){};
+};
+
+template<class T>
+class CivicArray: public JustInTimeArray<T>
+{
+public:
+	CivicArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_CIVIC, eDefault){};
+};
+
+template<class T>
+class CivicOptionArray: public JustInTimeArray<T>
+{
+public:
+	CivicOptionArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_CIVIC_OPTION, eDefault){};
+};
+
+template<class T>
+class EuropeArray: public JustInTimeArray<T>
+{
+public:
+	EuropeArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_EUROPE, eDefault){};
+};
+
+template<class T>
+class FatherArray: public JustInTimeArray<T>
+{
+public:
+	FatherArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_FATHER, eDefault){};
+};
+
+template<class T>
+class FatherPointArray: public JustInTimeArray<T>
+{
+public:
+	FatherPointArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_FATHER_POINT, eDefault){};
+};
+
+template<class T>
+class FeatureArray: public JustInTimeArray<T>
+{
+public:
+	FeatureArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_FEATURE, eDefault){};
+};
+
+template<class T>
+class HurryArray: public JustInTimeArray<T>
+{
+public:
+	HurryArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_HURRY, eDefault){};
+};
+
+template<class T>
+class ImprovementArray: public JustInTimeArray<T>
+{
+public:
+	ImprovementArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_IMPROVEMENT, eDefault){};
+};
+
+template<class T>
+class PlayerArray: public JustInTimeArray<T>
+{
+public:
+	PlayerArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_PLAYER, eDefault){};
+};
+
+template<class T>
+class ProfessionArray: public JustInTimeArray<T>
+{
+public:
+	ProfessionArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_PROFESSION, eDefault){};
+};
+
+template<class T>
+class PromotionArray: public JustInTimeArray<T>
+{
+public:
+	PromotionArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_PROMOTION, eDefault){};
+};
+
+template<class T>
+class TerrainArray: public JustInTimeArray<T>
+{
+public:
+	TerrainArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_TERRAIN, eDefault){};
+};
+
+template<class T>
+class TraitArray: public JustInTimeArray<T>
+{
+public:
+	TraitArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_TRAIT, eDefault){};
+};
+
+template<class T>
+class UnitArray: public JustInTimeArray<T>
+{
+public:
+	UnitArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_UNIT, eDefault){};
+};
+
+template<class T>
+class UnitClassArray: public JustInTimeArray<T>
+{
+public:
+	UnitClassArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_UNIT_CLASS, eDefault){};
+};
+
+template<class T>
+class UnitCombatArray: public JustInTimeArray<T>
+{
+public:
+	UnitCombatArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_UNIT_COMBAT, eDefault){};
+};
+
+template<class T>
+class YieldArray: public JustInTimeArray<T>
+{
+public:
+	YieldArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_YIELD, eDefault){};
+};
+
+template<class T>
+class YieldCargoArray: public JustInTimeArray<T>
+{
+public:
+	YieldCargoArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_CARGO_YIELD, eDefault){};
+};
+#endif

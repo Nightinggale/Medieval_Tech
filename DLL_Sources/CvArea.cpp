@@ -39,10 +39,6 @@ CvArea::CvArea()
 		m_aaiNumAIUnits[i] = new int[NUM_UNITAI_TYPES];
 	}
 
-	m_paiNumBonuses = NULL;
-	m_paiNumImprovements = NULL;
-
-
 	reset(0, false, true);
 }
 
@@ -93,8 +89,8 @@ void CvArea::init(int iID, bool bWater)
 
 void CvArea::uninit()
 {
-	SAFE_DELETE_ARRAY(m_paiNumBonuses);
-	SAFE_DELETE_ARRAY(m_paiNumImprovements);
+	m_ja_iNumBonuses.resetContent();
+	m_ja_iNumImprovements.resetContent();
 }
 
 
@@ -158,19 +154,8 @@ void CvArea::reset(int iID, bool bWater, bool bConstructorCall)
 
 	if (!bConstructorCall)
 	{
-		FAssertMsg((0 < GC.getNumBonusInfos()) && "GC.getNumBonusInfos() is not greater than zero but an array is being allocated in CvArea::reset", "GC.getNumBonusInfos() is not greater than zero but an array is being allocated in CvArea::reset");
-		m_paiNumBonuses = new int[GC.getNumBonusInfos()];
-		for (iI = 0; iI < GC.getNumBonusInfos(); iI++)
-		{
-			m_paiNumBonuses[iI] = 0;
-		}
-
-		FAssertMsg((0 < GC.getNumImprovementInfos()) && "GC.getNumImprovementInfos() is not greater than zero but an array is being allocated in CvArea::reset", "GC.getNumImprovementInfos() is not greater than zero but an array is being allocated in CvArea::reset");
-		m_paiNumImprovements = new int[GC.getNumImprovementInfos()];
-		for (iI = 0; iI < GC.getNumImprovementInfos(); iI++)
-		{
-			m_paiNumImprovements[iI] = 0;
-		}
+		m_ja_iNumBonuses.resetContent();
+		m_ja_iNumImprovements.resetContent();
 	}
 }
 
@@ -592,9 +577,7 @@ void CvArea::changeNumAIUnits(PlayerTypes eIndex1, UnitAITypes eIndex2, int iCha
 
 int CvArea::getNumBonuses(BonusTypes eBonus) const
 {
-	FAssertMsg(eBonus >= 0, "eBonus expected to be >= 0");
-	FAssertMsg(eBonus < GC.getNumBonusInfos(), "eBonus expected to be < GC.getNumBonusInfos");
-	return m_paiNumBonuses[eBonus];
+	return m_ja_iNumBonuses.get(eBonus);
 }
 
 
@@ -602,9 +585,9 @@ int CvArea::getNumTotalBonuses() const
 {
 	int iTotal = 0;
 
-	for (int iI = 0; iI < GC.getNumBonusInfos(); iI++)
+	for (int iI = 0; iI < m_ja_iNumBonuses.length(); iI++)
 	{
-		iTotal += m_paiNumBonuses[iI];
+		iTotal += m_ja_iNumBonuses.get(iI);
 	}
 
 	return iTotal;
@@ -613,26 +596,20 @@ int CvArea::getNumTotalBonuses() const
 
 void CvArea::changeNumBonuses(BonusTypes eBonus, int iChange)
 {
-	FAssertMsg(eBonus >= 0, "eBonus expected to be >= 0");
-	FAssertMsg(eBonus < GC.getNumBonusInfos(), "eBonus expected to be < GC.getNumBonusInfos");
-	m_paiNumBonuses[eBonus] = (m_paiNumBonuses[eBonus] + iChange);
+	m_ja_iNumBonuses.add(iChange, eBonus);
 	FAssert(getNumBonuses(eBonus) >= 0);
 }
 
 
 int CvArea::getNumImprovements(ImprovementTypes eImprovement) const
 {
-	FAssertMsg(eImprovement >= 0, "eImprovement expected to be >= 0");
-	FAssertMsg(eImprovement < GC.getNumImprovementInfos(), "eImprovement expected to be < GC.getNumImprovementInfos");
-	return m_paiNumImprovements[eImprovement];
+	return m_ja_iNumImprovements.get(eImprovement);
 }
 
 
 void CvArea::changeNumImprovements(ImprovementTypes eImprovement, int iChange)
 {
-	FAssertMsg(eImprovement >= 0, "eImprovement expected to be >= 0");
-	FAssertMsg(eImprovement < GC.getNumImprovementInfos(), "eImprovement expected to be < GC.getNumImprovementInfos");
-	m_paiNumImprovements[eImprovement] += iChange;
+	m_ja_iNumImprovements.add(iChange, eImprovement);
 	FAssert(getNumImprovements(eImprovement) >= 0);
 }
 
@@ -671,21 +648,26 @@ void CvArea::read(FDataStreamBase* pStream)
 		m_aTargetCities[iI].read(pStream);
 	}
 
+	/// JIT array save - start - Nightinggale
+	int iNumUnitAITypes = 0;
+	pStream->Read(&iNumUnitAITypes);
+	/// JIT array save - end - Nightinggale
+
 	for (iI = 0; iI < MAX_PLAYERS; iI++)
 	{
 		pStream->Read(NUM_YIELD_TYPES, m_aaiYieldRateModifier[iI]);
 	}
 	for (iI = 0; iI < MAX_PLAYERS; iI++)
 	{
-		pStream->Read(NUM_UNITAI_TYPES, m_aaiNumTrainAIUnits[iI]);
+		pStream->Read(iNumUnitAITypes, m_aaiNumTrainAIUnits[iI]);
 	}
 	for (iI = 0; iI < MAX_PLAYERS; iI++)
 	{
-		pStream->Read(NUM_UNITAI_TYPES, m_aaiNumAIUnits[iI]);
+		pStream->Read(iNumUnitAITypes, m_aaiNumAIUnits[iI]);
 	}
 
-	pStream->Read(GC.getNumBonusInfos(), m_paiNumBonuses);
-	pStream->Read(GC.getNumImprovementInfos(), m_paiNumImprovements);
+	m_ja_iNumBonuses.read(pStream);
+	m_ja_iNumImprovements.read(pStream);
 }
 
 
@@ -720,6 +702,10 @@ void CvArea::write(FDataStreamBase* pStream)
 		m_aTargetCities[iI].write(pStream);
 	}
 
+	/// JIT array save - start - Nightinggale
+	pStream->Write(NUM_UNITAI_TYPES);
+	/// JIT array save - end - Nightinggale
+
 	for (iI = 0; iI < MAX_PLAYERS; iI++)
 	{
 		pStream->Write(NUM_YIELD_TYPES, m_aaiYieldRateModifier[iI]);
@@ -732,8 +718,8 @@ void CvArea::write(FDataStreamBase* pStream)
 	{
 		pStream->Write(NUM_UNITAI_TYPES, m_aaiNumAIUnits[iI]);
 	}
-	pStream->Write(GC.getNumBonusInfos(), m_paiNumBonuses);
-	pStream->Write(GC.getNumImprovementInfos(), m_paiNumImprovements);
+	m_ja_iNumBonuses.write(pStream);
+	m_ja_iNumImprovements.write(pStream);
 }
 
 // Protected Functions...

@@ -1305,6 +1305,7 @@ enum DllExport CensureType
 ///TKe
 enum DllExport UnitAITypes
 {
+	// add to end for max savegame compatibility
 	NO_UNITAI = -1,
 
 	UNITAI_UNKNOWN,
@@ -1358,6 +1359,7 @@ enum DllExport ProbabilityTypes
 
 enum DllExport ActivityTypes
 {
+	// add to end for max savegame compatibility
 	NO_ACTIVITY = -1,
 
 	ACTIVITY_AWAKE,
@@ -1378,6 +1380,7 @@ enum DllExport ActivityTypes
 
 enum DllExport AutomateTypes
 {
+	// add to end for max savegame compatibility
 	NO_AUTOMATE = -1,
 
 	AUTOMATE_BUILD,
@@ -1446,6 +1449,7 @@ enum DllExport MissionTypes
 
 enum DllExport MissionAITypes
 {
+	// add to end for max savegame compatibility
 	NO_MISSIONAI = -1,
 
 	MISSIONAI_SHADOW,
@@ -1893,6 +1897,7 @@ enum DllExport FunctionTypes
 
 enum DllExport TradeableItems
 {
+	// add to end for max savegame compatibility
 	TRADE_ITEM_NONE = -1,
 
 	TRADE_GOLD,
@@ -2818,6 +2823,7 @@ enum DllExport UnitTravelStates
 
 enum DllExport UnitAIStates
 {
+	// add to end for max savegame compatibility
 	NO_UNITAI_STATE = -1,
 
 	UNITAI_STATE_DEFAULT,
@@ -3307,5 +3313,44 @@ enum DllExport XMLconstantTypes
 	NUM_XML_CONSTANTS,
 };
 // cache XML - end - Nightinggale
+
+/// JIT array save - start - Nightinggale
+enum JIT_ARRAY_TYPES
+{
+	// add to end for max savegame compatibility
+	JIT_ARRAY_BONUS = 0,
+	JIT_ARRAY_BUILD,
+	JIT_ARRAY_BUILDING,
+	JIT_ARRAY_BUILDING_CLASS,
+	JIT_ARRAY_BUILDING_SPECIAL,
+	JIT_ARRAY_CIVIC,
+	JIT_ARRAY_CIVIC_OPTION,
+	JIT_ARRAY_ERA,
+	JIT_ARRAY_EMPHASIZE,
+	JIT_ARRAY_EUROPE,
+	JIT_ARRAY_EVENT_TRIGGER,
+	JIT_ARRAY_FATHER,
+	JIT_ARRAY_FATHER_POINT,
+	JIT_ARRAY_FEATURE,
+	JIT_ARRAY_HANDICAP,
+	JIT_ARRAY_HURRY,
+	JIT_ARRAY_IMPROVEMENT,
+	JIT_ARRAY_LEADER_HEAD,
+	JIT_ARRAY_PLAYER,
+	JIT_ARRAY_PROFESSION,
+	JIT_ARRAY_PROMOTION,
+	JIT_ARRAY_ROUTE,
+	JIT_ARRAY_TERRAIN,
+	JIT_ARRAY_TRAIT,
+	JIT_ARRAY_UNIT,
+	JIT_ARRAY_UNIT_CLASS,
+	JIT_ARRAY_UNIT_COMBAT,
+	JIT_ARRAY_UNIT_SPECIAL,
+	JIT_ARRAY_YIELD,
+	JIT_ARRAY_CARGO_YIELD,
+
+	NUM_JIT_ARRAY_TYPES,
+};
+/// JIT array save - end - Nightinggale
 
 #endif	// CVENUMS_h

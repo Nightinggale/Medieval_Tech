@@ -15553,14 +15553,11 @@ void CvUnitAI::read(FDataStreamBase* pStream)
 
 	pStream->Read(&m_iBirthmark);
 	pStream->Read(&m_iMovePriority);
-	if (uiFlag > 0)
-	{
-		pStream->Read(&m_iLastAIChangeTurn);
-	}
+	pStream->Read(&m_iLastAIChangeTurn);
 	pStream->Read((int*)&m_eUnitAIType);
 	pStream->Read((int*)&m_eUnitAIState);
-	pStream->Read((int*)&m_eOldProfession);
-	pStream->Read((int*)&m_eIdealProfessionCache);
+	pStream->Read(&m_eOldProfession);
+	pStream->Read(&m_eIdealProfessionCache);
 	pStream->Read(&m_iAutomatedAbortTurn);
 }
 
@@ -15569,7 +15566,7 @@ void CvUnitAI::write(FDataStreamBase* pStream)
 {
 	CvUnit::write(pStream);
 
-	uint uiFlag=1;
+	uint uiFlag=0;
 	pStream->Write(uiFlag);		// flag for expansion
 
 	pStream->Write(m_iBirthmark);

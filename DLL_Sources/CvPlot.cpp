@@ -117,7 +117,7 @@ void CvPlot::uninit()
 
 	SAFE_DELETE_ARRAY(m_abRiverCrossing);
 	///Tks TradScreen
-	m_asTradeScreenDistance.reset();
+	m_asTradeScreenDistance.resetContent();
 	///TKe
 	//SAFE_DELETE_ARRAY(m_abRevealed);
 	/// player bitmap - start - Nightinggale
@@ -209,7 +209,7 @@ void CvPlot::reset(int iX, int iY, bool bConstructorCall)
 		m_aiYield[iI] = 0;
 	}
 	///Tks TradeScreen
-	m_asTradeScreenDistance.reset();
+	m_asTradeScreenDistance.resetContent();
 	///Tke
 	updateImpassable();
 }
@@ -7538,15 +7538,6 @@ ColorTypes CvPlot::plotMinimapColor()
 	return (ColorTypes)GC.getInfoTypeForString("COLOR_CLEAR");
 }
 
-
-// just-in-time yield arrays - start - Nightinggale
-// bitmap to tell which arrays are saved
-enum
-{
-	SAVE_BIT_TRADE_DISTANCE               = 1 << 0,
-};
-// just-in-time yield arrays - end - Nightinggale
-
 //
 // read object from a stream
 // used during load
@@ -7563,11 +7554,6 @@ void CvPlot::read(FDataStreamBase* pStream)
 
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
-	
-	// just-in-time yield arrays - start - Nightinggale
-	uint arrayBitmap = 0;
-	pStream->Read(&arrayBitmap);
-	// just-in-time yield arrays - end - Nightinggale
 
 	pStream->Read(&m_iX);
 	pStream->Read(&m_iY);
@@ -7586,7 +7572,7 @@ void CvPlot::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iCrumbs);
 	///TKs TradeScreen
 	pStream->Read(&m_iTradeScreenAccess);
-	m_asTradeScreenDistance.read(pStream, arrayBitmap & SAVE_BIT_TRADE_DISTANCE);
+	m_asTradeScreenDistance.read(pStream);
 	///Tke
 	pStream->Read(&bVal);
 	m_bStartingPlot = bVal;
@@ -7604,34 +7590,40 @@ void CvPlot::read(FDataStreamBase* pStream)
 	// m_bLayoutStateWorked not saved
 	// m_bImpassable not saved
 
+	int iBuffer;
+
 	pStream->Read(&m_eOwner);
 	pStream->Read(&m_ePlotType);
-	pStream->Read(&m_eTerrainType);
-	pStream->Read(&m_eFeatureType);
-	pStream->Read(&m_eBonusType);
-	pStream->Read(&m_eImprovementType);
-	pStream->Read(&m_eRouteType);
+	pStream->Read((TerrainTypes*)&iBuffer);
+	m_eTerrainType = iBuffer;
+	pStream->Read((FeatureTypes*)&iBuffer);
+	m_eFeatureType = iBuffer;
+	pStream->Read((BonusTypes*)&iBuffer);
+	m_eBonusType = iBuffer;
+	pStream->Read((ImprovementTypes*)&iBuffer);
+	m_eImprovementType = iBuffer;
+	pStream->Read((RouteTypes*)&iBuffer);
+	m_eRouteType = iBuffer;
 	pStream->Read(&m_eRiverNSDirection);
 	pStream->Read(&m_eRiverWEDirection);
-	pStream->Read(&m_eEurope);
+	pStream->Read((EuropeTypes*)&iBuffer);
+	m_eEurope = iBuffer;
 	updateImpassable();
 
 	m_plotCity.read(pStream);
 	m_workingCity.read(pStream);
 	m_workingCityOverride.read(pStream);
 
-	pStream->Read(NUM_YIELD_TYPES, m_aiYield);
+	// m_aiYield recalculated on load
+	//pStream->Read(NUM_YIELD_TYPES, m_aiYield);
 
 	/// PlotGroup - start - Nightinggale
 	SAFE_DELETE_ARRAY(m_aiPlotGroup);
-	if (uiFlag > 0)
+	pStream->Read(&cCount);
+	if (cCount > 0)
 	{
-		pStream->Read(&cCount);
-		if (cCount > 0)
-		{
-			m_aiPlotGroup = new int[cCount];
-			pStream->Read(cCount, m_aiPlotGroup);
-		}
+		m_aiPlotGroup = new int[cCount];
+		pStream->Read(cCount, m_aiPlotGroup);
 	}
 	/// PlotGroup - end - Nightinggale
 
@@ -7683,25 +7675,8 @@ void CvPlot::read(FDataStreamBase* pStream)
 		pStream->Read(cCount, m_abRiverCrossing);
 	}
 
-	/*
-	SAFE_DELETE_ARRAY(m_abRevealed);
-	pStream->Read(&cCount);
-	if (cCount > 0)
-	{
-		m_abRevealed = new bool[cCount];
-		pStream->Read(cCount, m_abRevealed);
-	}*/
 	/// player bitmap - start - Nightinggale
-	if (uiFlag >= 2)
-	{
-		pStream->Read(&m_bmRevealed);
-	} else {
-		pStream->Read(&cCount);
-		if (cCount > 0)
-		{
-			loadIntoBitmap(pStream, m_bmRevealed, cCount);
-		}
-	}
+	pStream->Read(&m_bmRevealed);
 	/// player bitmap - end - Nightinggale
 
 	SAFE_DELETE_ARRAY(m_aeRevealedImprovementType);
@@ -7795,16 +7770,8 @@ void CvPlot::write(FDataStreamBase* pStream)
 {
 	uint iI;
 
-	uint uiFlag=2;
+	uint uiFlag=0;
 	pStream->Write(uiFlag);		// flag for expansion
-
-	// just-in-time yield arrays - start - Nightinggale
-	uint arrayBitmap = 0;
-
-	arrayBitmap |= m_asTradeScreenDistance.hasContent()               ? SAVE_BIT_TRADE_DISTANCE : 0;
-
-	pStream->Write(arrayBitmap);
-	// just-in-time yield arrays - end - Nightinggale
 
 	pStream->Write(m_iX);
 	pStream->Write(m_iY);
@@ -7823,7 +7790,7 @@ void CvPlot::write(FDataStreamBase* pStream)
 	pStream->Write(m_iCrumbs);
 	///TKs TradeScreen
 	pStream->Write(m_iTradeScreenAccess);
-	m_asTradeScreenDistance.write(pStream, arrayBitmap & SAVE_BIT_TRADE_DISTANCE);
+	m_asTradeScreenDistance.write(pStream);
 	///Tke
 	pStream->Write(m_bStartingPlot);
 	pStream->Write(m_bHills);
@@ -7836,22 +7803,31 @@ void CvPlot::write(FDataStreamBase* pStream)
 	// m_bLayoutStateWorked not saved
 	// m_bImpassable not saved
 
+	int iBuffer;
+
 	pStream->Write(m_eOwner);
 	pStream->Write(m_ePlotType);
-	pStream->Write(m_eTerrainType);
-	pStream->Write(m_eFeatureType);
-	pStream->Write(m_eBonusType);
-	pStream->Write(m_eImprovementType);
-	pStream->Write(m_eRouteType);
+	iBuffer = m_eTerrainType;
+	pStream->Write(iBuffer);
+	iBuffer = m_eFeatureType;
+	pStream->Write(iBuffer);
+	iBuffer = m_eBonusType;
+	pStream->Write(iBuffer);
+	iBuffer = m_eImprovementType;
+	pStream->Write(iBuffer);
+	iBuffer = m_eRouteType;
+	pStream->Write(iBuffer);
 	pStream->Write(m_eRiverNSDirection);
 	pStream->Write(m_eRiverWEDirection);
-	pStream->Write(m_eEurope);
+	iBuffer = m_eEurope;
+	pStream->Write(iBuffer);
 
 	m_plotCity.write(pStream);
 	m_workingCity.write(pStream);
 	m_workingCityOverride.write(pStream);
 
-	pStream->Write(NUM_YIELD_TYPES, m_aiYield);
+	// m_aiYield recalculated on load
+	//pStream->Write(NUM_YIELD_TYPES, m_aiYield);
 
 	/// PlotGroup - start - Nightinggale
 	if (NULL == m_aiPlotGroup)

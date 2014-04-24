@@ -1,0 +1,20 @@
+self.PRODUCTION_COLUMN_SIZE = 59
+		self.MAX_YIELDS_IN_A_PAGE = (self.nTableWidth - self.MAX_YIELDS_IN_A_PAGE) // self.PRODUCTION_COLUMN_SIZE
+		
+		num_yields_pages = len(self.AllowedYields) // self.MAX_YIELDS_IN_A_PAGE
+		leftover = len(self.AllowedYields) % self.MAX_YIELDS_IN_A_PAGE
+		
+		if (leftover > 0):
+			num_yields_pages += 1
+		
+		self.MAX_YIELDS_IN_A_PAGE = len(self.AllowedYields) // num_yields_pages
+		
+		leftover = len(self.AllowedYields) % num_yields_pages
+		
+		if (leftover > 0):
+			self.MAX_YIELDS_IN_A_PAGE += 1
+		
+		self.WAREHOUSE_COLUMN_SIZE = (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH - self.iWareHouseW) / self.MAX_YIELDS_IN_A_PAGE
+		self.PRODUCTION_COLUMN_SIZE = (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / self.MAX_YIELDS_IN_A_PAGE
+		self.BUILDING_COLUMN_SIZE = (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / self.MAX_BUILDINGS_IN_A_PAGE
+		self.UNIT_COLUMN_SIZE = (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / self.MAX_UNITS_IN_A_PAGE

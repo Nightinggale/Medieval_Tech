@@ -402,10 +402,10 @@ protected:
 
 	int m_iAveragesCacheTurn;
 
-	int *m_aiAverageYieldMultiplier;
-	int* m_aiYieldValuesTimes100;
-	int* m_aiBestWorkedYieldPlots;
-	int* m_aiBestUnworkedYieldPlots;
+	YieldArray<int> m_ja_iAverageYieldMultiplier;
+	YieldArray<int> m_ja_iYieldValuesTimes100;
+	YieldArray<int> m_ja_iBestWorkedYieldPlots;
+	YieldArray<int> m_ja_iBestUnworkedYieldPlots;
 
 	int m_iUpgradeUnitsCacheTurn;
 	int m_iUpgradeUnitsCachedExpThreshold;
@@ -420,8 +420,8 @@ protected:
 	int* m_aiPeacetimeGrantValue;
 	int* m_aiGoldTradedTo;
 	int* m_aiAttitudeExtra;
-	int* m_aiUnitClassWeights;
-	int* m_aiUnitCombatWeights;
+	UnitClassArray<int> m_ja_iUnitClassWeights;
+	UnitCombatArray<int> m_ja_iUnitCombatWeights;
 	int* m_aiEmotions;
 	int* m_aiStrategyStartedTurn;
 	int* m_aiStrategyData;

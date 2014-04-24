@@ -8969,14 +8969,20 @@ void CvCity::getCityBillboardSizeIconColors(NiColorA& kDotColor, NiColorA& kText
 	{
 		//TKs Med
 		int iMaxPop = getMaxCityPop();
-		
-		if (iMaxPop == getPopulation())
+		//bool iMaxPopThreshold = iMaxPop < GC.getXMLval(XML_MAX_CITY_POPULATION_COMMUNE);
+		if (getPopulation() >= GC.getXMLval(XML_MAX_CITY_POPULATION_COMMUNE))
 		{
+			kTextColor = kBlack;
+		}
+		else if (iMaxPop == getPopulation())
+		{
+			//Turn Red if reached Maxed Population
 			NiColorA kMaxPop(1,.30f,.30f,1);
 			kTextColor = kMaxPop;
 		}
 		else if (iMaxPop < GC.getXMLval(XML_MAX_CITY_POPULATION_COMMUNE))
 		{
+			//Else turn Blue if still growing infrastructure 
 			NiColorA kMaxPop(.50f,1,.10f,1);
 			kTextColor = kMaxPop;
 		}

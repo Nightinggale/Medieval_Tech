@@ -2871,7 +2871,7 @@ void CvTeam::doRevolution()
 					else
 					{
 						pRevolutionUnit = kParent.initEuropeUnit(kTeamPlayer.getRevolutionEuropeUnit(i));
-						pRevolutionUnit->setProfession(kTeamPlayer.getRevolutionEuropeProfession(i));
+						pRevolutionUnit->setProfession(kTeamPlayer.getRevolutionEuropeProfession(i), true);
 					}
 					FAssert(pRevolutionUnit != NULL);
 				}
@@ -2920,7 +2920,8 @@ void CvTeam::doRevolution()
                     gDLL->getInterfaceIFace()->addPopup(pInfo, (PlayerTypes) iPlayer);
                 }
             }
-            if (!bHasConstitution)
+			//TKs Constitution Removed because of Civics Screen
+            /*if (!bHasConstitution)
             {
                 for (int iCivicOption = 0; iCivicOption < GC.getNumCivicOptionInfos(); ++iCivicOption)
                 {
@@ -2934,7 +2935,7 @@ void CvTeam::doRevolution()
                         kPlayer.AI_chooseCivic((CivicOptionTypes) iCivicOption);
                     }
                 }
-            }
+            }*/
 		}
 	}
 	///TKe

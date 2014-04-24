@@ -240,7 +240,12 @@
 			<DomainFreeExperiences/>
 			<DomainProductionModifiers/>
 			<PrereqBuildingClasses/>
-			<BuildingClassNeededs/>
+      <BuildingClassNeededs>
+        <BuildingClassNeeded>
+          <BuildingClassType>BUILDINGCLASS_MANOR_COURT</BuildingClassType>
+          <bNeededInCity>1</bNeededInCity>
+        </BuildingClassNeeded>
+      </BuildingClassNeededs>
 			<AutoSellsYields/>
 			<HotKey/>
 			<bAltDown>0</bAltDown>

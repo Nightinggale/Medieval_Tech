@@ -7967,6 +7967,28 @@
 						<ArtDefineTag>ART_DEF_PROFESSION_ANGLO_SPEARMAN</ArtDefineTag>
 					</UnitMeshGroup>
 				</UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_INFANTRY_ARMED</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_ANGLO_SPEARMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_INFANTRY_WELLARMED</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_ANGLO_SPEARMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
 				<UnitMeshGroups>
 					<ProfessionType>PROFESSION_INFANTRY2</ProfessionType>
 					<fMaxSpeed>1.75</fMaxSpeed>

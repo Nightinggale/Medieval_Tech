@@ -437,10 +437,23 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 			szString.append(szTempBuffer);
 		}
 		///TKs Med
-		if (pUnit->isCargo() && !bShort)
+		if (pUnit->isCargo() && (!bShort || bShift))
 		{
 		    szString.append(NEWLINE);
 		    setYieldPriceHelp(szString, pUnit->getOwnerINLINE(), pUnit->getYield());
+		}
+		if (pUnit->plot()->getPlotCity() != NULL)
+		{
+			CvCity* pCity = pUnit->plot()->getPlotCity();
+			if (pCity->getOwner() == pUnit->getOwner())
+			{
+				int iYieldStored = pCity->getYieldStored(pUnit->getYield());
+				if (iYieldStored > 0)
+				{
+					szString.append(NEWLINE);
+					szString.append(gDLL->getText("TXT_KEY_YIELD_STORED_HELP", iYieldStored));
+				}
+			}
 		}
 		///Tke
 	}
@@ -6142,8 +6155,16 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit, bool
 	UnitTypes eDefaultUnit = (UnitTypes)GC.getUnitClassInfo(eUnitClass).getDefaultUnitIndex();
 	if (ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).getUnitClassCount(eUnitClass) > 0)
 	{
-		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_NUMBER_UNICLASS_COUNT", GET_PLAYER(ePlayer).getUnitClassCount(eUnitClass)));
+		if (GC.getUnitInfo(eUnit).isMechUnit() || GC.getUnitInfo(eUnit).getDomainType() == DOMAIN_SEA)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_NUMBER_UNICLASS_COUNT_MECHS", GET_PLAYER(ePlayer).getUnitClassCount(eUnitClass)));
+		}
+		else
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_NUMBER_UNICLASS_COUNT", GET_PLAYER(ePlayer).getUnitClassCount(eUnitClass)));
+		}
 	}
     ///TKs Med Update 1.1g
 	if (bCivilopediaText && NO_UNIT != eDefaultUnit && eDefaultUnit != eUnit)

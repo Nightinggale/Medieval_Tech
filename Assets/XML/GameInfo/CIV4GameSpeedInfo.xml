@@ -95,7 +95,7 @@
 			<GameTurnInfos>
 				<GameTurnInfo>
 					<iMonthIncrement>12</iMonthIncrement>
-					<iTurnsPerIncrement>350</iTurnsPerIncrement>
+					<iTurnsPerIncrement>300</iTurnsPerIncrement>
 				</GameTurnInfo>
 			</GameTurnInfos>
       <iAnarchyPercent>100</iAnarchyPercent>

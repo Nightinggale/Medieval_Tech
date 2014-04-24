@@ -1132,7 +1132,7 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 		pyArgsCD.add(getCombatOdds(this, pDefender));
 		gDLL->getEventReporterIFace()->genericEvent("combatLogCalc", pyArgsCD.makeFunctionArgs());
 	}
-    ///TK Med FS
+    ///TK Med TODO this sets it up so that Units only gain XP and GG XP if level 1 when fighting Animals, should this only be in M:C?
     bool bGreatGeneralXP = true;
     if (m_pUnitInfo->isAnimal() || GC.getUnitInfo(pDefender->getUnitType()).isAnimal() || m_pUnitInfo->isHiddenNationality() || pDefender->getUnitInfo().isHiddenNationality())
     {
@@ -1153,6 +1153,8 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 	int iDefenderFirstStrikeChance = 0;
 	bool bAttackHasBeenHit = false;
 	bool bDefenderHasBeenHit = false;
+	//bEvade sets it up so that Defensive Units are not killed by Bandits/Animals/Marauders but are sent to towns wouded instead.
+	//TODO should this be turned on or off my XML values and or PlayerOptions/Difficulty? 
     bool bEvade = (pDefender->m_pUnitInfo->isFound() && (!pDefender->canAttack() || GC.getProfessionInfo(pDefender->getProfession()).isScout() || GC.getProfessionInfo(pDefender->getProfession()).getWorkRate() > 0));
 	while (true)
 	{
@@ -1171,6 +1173,7 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
                             changeExperience(GC.getXMLval(XML_EXPERIENCE_FROM_WITHDRAWL), pDefender->maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), bGreatGeneralXP);
                             break;
                         }
+						// TODO finish the Ransom Knight Code
                         if (GET_PLAYER(pDefender->getOwnerINLINE()).isOption(PLAYEROPTION_MODDER_4) || GET_PLAYER(getOwnerINLINE()).isOption(PLAYEROPTION_MODDER_4))
                         {
                             if (m_pUnitInfo->getKnightDubbingWeight() == -1 || isHasRealPromotion((PromotionTypes)GC.getXMLval(XML_DEFAULT_KNIGHT_PROMOTION)))

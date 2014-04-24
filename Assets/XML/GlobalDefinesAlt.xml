@@ -11,6 +11,10 @@
 		<iDefineIntVal>0</iDefineIntVal>
 	</Define>
   <Define>
+    <DefineName>REVOLUTION_TRADE</DefineName>
+    <iDefineIntVal>1</iDefineIntVal>
+  </Define>
+  <Define>
     <DefineName>SHOW_TECH_CATEGORIES</DefineName>
     <iDefineIntVal>0</iDefineIntVal>
   </Define>
@@ -84,7 +88,7 @@
 	</Define>
 	<Define>
 		<DefineName>TRADING_POINTS_MOD_PERCENT</DefineName>
-		<iDefineIntVal>75</iDefineIntVal>
+		<iDefineIntVal>100</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>DEAL_TRADE_RELATIONS_POINTS</DefineName>

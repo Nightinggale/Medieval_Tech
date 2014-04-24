@@ -11342,8 +11342,8 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
         }
     }
 
-
-	if (kCivicInfo.isStartConstitution() && !isInRevolution())
+	//TKs Constitution Removed because of Civics Screen
+	/*if (kCivicInfo.isStartConstitution() && !isInRevolution())
 	{
         for (int iCivicOption = 0; iCivicOption < GC.getNumCivicOptionInfos(); ++iCivicOption)
         {
@@ -11357,7 +11357,7 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
                 AI_chooseCivic((CivicOptionTypes) iCivicOption);
             }
         }
-	}
+	}*/
 	if (!GC.getGameINLINE().isIndustrialVictoryAll())
     {
         for (int iYield = 0; iYield < NUM_YIELD_TYPES; iYield++)
@@ -16274,6 +16274,12 @@ void CvPlayer::changeRevolutionEuropeTradeCount(int iChange)
 
 bool CvPlayer::canTradeWithEurope() const
 {
+	//TKs Always True in M:C
+	if (GC.getDefineINT("REVOLUTION_TRADE") > 0)
+	{
+		return true;
+	}
+
 	if (!isInRevolution())
 	{
 		return true;
@@ -16572,6 +16578,14 @@ void CvPlayer::applyMissionaryPoints(CvCity* pCity)
 	PlayerTypes ePlayer = pCity->getMissionaryPlayer();
 	if (ePlayer != NO_PLAYER)
 	{
+		//TKs Med for Anarchy Return with no value
+		for (int iCensure = 0; iCensure < NUM_CENSURE_TYPES; ++iCensure)
+		{
+			if (GET_PLAYER(ePlayer).getCensureType((CensureType)iCensure) > 0)
+			{
+				return;
+			}
+		}
 		int iModifier = 100 + getMissionaryRateModifier() + GET_PLAYER(ePlayer).getMissionaryRateModifier();
 		changeMissionaryPoints(ePlayer, pCity->getMissionaryRate() * iModifier / 100);
 		int iThreshold = missionaryThreshold(ePlayer);
@@ -18976,11 +18990,12 @@ void CvPlayer::doIdeas(bool Cheat)
                     }
                     else if (iMultTradingPerk > 1)
                     {
-                        if (isHuman())
+						//TKs Constitution Removed because of Civics Screen
+                        /*if (isHuman())
                         {
                             CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CIVIC_OPTION, -3);
                             gDLL->getInterfaceIFace()->addPopup(pInfo, getID(), false);
-                        }
+                        }*/
                     }
                 }
 

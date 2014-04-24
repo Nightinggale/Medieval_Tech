@@ -404,7 +404,9 @@
 			<iFoundCityType>CITYTYPE_OUTPOST</iFoundCityType>
 			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,7,5</Button>
 			<ProfessionSubTypes/>
-    <!--ArrayEnable 0: Use Parent; 1: Use Sub Profession; 2: Merge Sub with Parent  -->
+    <!--ArrayEnable Help 0: Use Parent; 1: Use Sub Profession; 2: Merge Sub with Parent  -->
+    <!--ArrayEnable Help For CombatGearTypes,  YieldEquipedNums, and FreePromotions  -->
+    <!--ArrayEnable Help Example <ArrayEnable>211</ArrayEnable> means CombatGearType Merge with Parent, YieldEquipedNums use Sub, FreePromotions use Sub-->
 		</ProfessionInfo>
 		<ProfessionInfo>
 			<Type>PROFESSION_KNIGHT_MAIL</Type>
@@ -972,7 +974,7 @@
 			<ProfessionSubTypes>
 				<ProfessionSubType>
 					<Type>PROFESSION_HEAVY_SKIRMISHER_PLATE</Type>
-					<Description>Heavy Skirmisher(Scale)</Description>
+					<Description>Heavy Skirmisher(Plate)</Description>
 					<iPower>125</iPower>
 					<ArrayEnable>011</ArrayEnable>
 					<CombatGearTypes/>
@@ -1159,6 +1161,52 @@
 						</FreePromotion>
 					</FreePromotions>
 				</ProfessionSubType>
+        <ProfessionSubType>
+          <Type>PROFESSION_INFANTRY_ARMED</Type>
+          <Description>Infantry(Armed)</Description>
+          <iPower>145</iPower>
+          <ArrayEnable>011</ArrayEnable>
+          <CombatGearTypes/>
+          <YieldEquipedNums>
+            <YieldEquipedNum>
+              <YieldType>YIELD_WEAPONS</YieldType>
+              <iYieldAmount>50</iYieldAmount>
+            </YieldEquipedNum>
+          </YieldEquipedNums>
+          <FreePromotions>
+            <FreePromotion>
+              <PromotionType>PROMOTION_FORMATION2</PromotionType>
+              <bFreePromotion>1</bFreePromotion>
+            </FreePromotion>
+          </FreePromotions>
+        </ProfessionSubType>
+        <ProfessionSubType>
+          <Type>PROFESSION_INFANTRY_WELLARMED</Type>
+          <Description>Infantry(Well Armed)</Description>
+          <iPower>150</iPower>
+          <ArrayEnable>011</ArrayEnable>
+          <CombatGearTypes/>
+          <YieldEquipedNums>
+            <YieldEquipedNum>
+              <YieldType>YIELD_WEAPONS</YieldType>
+              <iYieldAmount>50</iYieldAmount>
+            </YieldEquipedNum>
+            <YieldEquipedNum>
+              <YieldType>YIELD_LEATHER_ARMOR</YieldType>
+              <iYieldAmount>25</iYieldAmount>
+            </YieldEquipedNum>
+          </YieldEquipedNums>
+          <FreePromotions>
+            <FreePromotion>
+              <PromotionType>PROMOTION_FORMATION2</PromotionType>
+              <bFreePromotion>1</bFreePromotion>
+            </FreePromotion>
+            <FreePromotion>
+              <PromotionType>PROMOTION_ATTACK_LEATHER</PromotionType>
+              <bFreePromotion>1</bFreePromotion>
+            </FreePromotion>
+          </FreePromotions>
+        </ProfessionSubType>
 			</ProfessionSubTypes>
 		</ProfessionInfo>
 		<ProfessionInfo>
@@ -1270,7 +1318,7 @@
 			<CombatGearTypes>
 				<CombatGearType>
 					<GearType>UNITARMOR_PLATE</GearType>
-					<iAmount>1</iAmount>
+					<iAmount>0</iAmount>
 				</CombatGearType>
 			</CombatGearTypes>
 			<YieldEquipedNums>
@@ -1303,7 +1351,12 @@
 					<Description>Pikeman(Plate)</Description>
 					<iPower>125</iPower>
 					<ArrayEnable>011</ArrayEnable>
-					<CombatGearTypes/>
+          <CombatGearTypes>
+            <CombatGearType>
+              <GearType>UNITARMOR_PLATE</GearType>
+              <iAmount>1</iAmount>
+            </CombatGearType>
+          </CombatGearTypes>
 					<YieldEquipedNums>
 						<YieldEquipedNum>
 							<YieldType>YIELD_WEAPONS</YieldType>

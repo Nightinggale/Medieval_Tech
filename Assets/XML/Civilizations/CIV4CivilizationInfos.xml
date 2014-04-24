@@ -2135,35 +2135,35 @@
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
 			<FreeBuildingClasses/>
@@ -2193,6 +2193,10 @@
 					<Tech>MEDIEVAL_TECH_MACHINERY</Tech>
 					<bFree>1</bFree>
 				</FreeTech>
+        <FreeTech>
+          <Tech>MEDIEVAL_TECH_MAILARMOR</Tech>
+          <bFree>1</bFree>
+        </FreeTech>
 			</FreeTechs>
 		</CivilizationInfo>
 		<CivilizationInfo>
@@ -2305,35 +2309,35 @@
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
 			<FreeBuildingClasses/>
@@ -2363,6 +2367,10 @@
 					<Tech>MEDIEVAL_TECH_MACHINERY</Tech>
 					<bFree>1</bFree>
 				</FreeTech>
+        <FreeTech>
+          <Tech>MEDIEVAL_TECH_MAILARMOR</Tech>
+          <bFree>1</bFree>
+        </FreeTech>
 			</FreeTechs>
 		</CivilizationInfo>
 		<CivilizationInfo>
@@ -2479,35 +2487,35 @@
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
 			<FreeBuildingClasses/>
@@ -2537,6 +2545,10 @@
 					<Tech>MEDIEVAL_TECH_MACHINERY</Tech>
 					<bFree>1</bFree>
 				</FreeTech>
+        <FreeTech>
+          <Tech>MEDIEVAL_TECH_MAILARMOR</Tech>
+          <bFree>1</bFree>
+        </FreeTech>
 			</FreeTechs>
 		</CivilizationInfo>
 		<CivilizationInfo>
@@ -2653,35 +2665,35 @@
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
 			<FreeBuildingClasses/>
@@ -2711,6 +2723,10 @@
 					<Tech>MEDIEVAL_TECH_MACHINERY</Tech>
 					<bFree>1</bFree>
 				</FreeTech>
+        <FreeTech>
+          <Tech>MEDIEVAL_TECH_MAILARMOR</Tech>
+          <bFree>1</bFree>
+        </FreeTech>
 			</FreeTechs>
 		</CivilizationInfo>
 		<CivilizationInfo>
@@ -2827,35 +2843,35 @@
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
 			<FreeBuildingClasses/>
@@ -2885,6 +2901,10 @@
 					<Tech>MEDIEVAL_TECH_MACHINERY</Tech>
 					<bFree>1</bFree>
 				</FreeTech>
+        <FreeTech>
+          <Tech>MEDIEVAL_TECH_MAILARMOR</Tech>
+          <bFree>1</bFree>
+        </FreeTech>
 			</FreeTechs>
 		</CivilizationInfo>
 		<CivilizationInfo>
@@ -3001,35 +3021,35 @@
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
 			<FreeBuildingClasses/>
@@ -3059,6 +3079,10 @@
 					<Tech>MEDIEVAL_TECH_MACHINERY</Tech>
 					<bFree>1</bFree>
 				</FreeTech>
+        <FreeTech>
+          <Tech>MEDIEVAL_TECH_MAILARMOR</Tech>
+          <bFree>1</bFree>
+        </FreeTech>
 			</FreeTechs>
 		</CivilizationInfo>
 		<CivilizationInfo>
@@ -3175,35 +3199,35 @@
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
 			<FreeBuildingClasses/>
@@ -3233,6 +3257,10 @@
 					<Tech>MEDIEVAL_TECH_MACHINERY</Tech>
 					<bFree>1</bFree>
 				</FreeTech>
+        <FreeTech>
+          <Tech>MEDIEVAL_TECH_MAILARMOR</Tech>
+          <bFree>1</bFree>
+        </FreeTech>
 			</FreeTechs>
 		</CivilizationInfo>
 		<CivilizationInfo>
@@ -3349,35 +3377,35 @@
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
 			<FreeBuildingClasses/>
@@ -3407,6 +3435,10 @@
 					<Tech>MEDIEVAL_TECH_MACHINERY</Tech>
 					<bFree>1</bFree>
 				</FreeTech>
+        <FreeTech>
+          <Tech>MEDIEVAL_TECH_MAILARMOR</Tech>
+          <bFree>1</bFree>
+        </FreeTech>
 			</FreeTechs>
 		</CivilizationInfo>
 		<CivilizationInfo>
@@ -3523,35 +3555,35 @@
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
 			<FreeBuildingClasses/>
@@ -3581,6 +3613,10 @@
 					<Tech>MEDIEVAL_TECH_MACHINERY</Tech>
 					<bFree>1</bFree>
 				</FreeTech>
+        <FreeTech>
+          <Tech>MEDIEVAL_TECH_MAILARMOR</Tech>
+          <bFree>1</bFree>
+        </FreeTech>
 			</FreeTechs>
 		</CivilizationInfo>
 		<CivilizationInfo>
@@ -3697,35 +3733,35 @@
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
 			<FreeBuildingClasses/>
@@ -3755,6 +3791,10 @@
 					<Tech>MEDIEVAL_TECH_MACHINERY</Tech>
 					<bFree>1</bFree>
 				</FreeTech>
+        <FreeTech>
+          <Tech>MEDIEVAL_TECH_MAILARMOR</Tech>
+          <bFree>1</bFree>
+        </FreeTech>
 			</FreeTechs>
 		</CivilizationInfo>
     <!--Barbarian Civs-->

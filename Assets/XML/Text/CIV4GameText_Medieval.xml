@@ -192,10 +192,18 @@
   <TEXT>
     <Tag>TXT_KEY_NUMBER_UNICLASS_COUNT</Tag>
     <English>%d1 as [COLOR_HIGHLIGHT_TEXT]Subjects[COLOR_REVERT]</English>
-    <French>[ICON_BULLET]+%d1 Bonus to Diplomacy</French>
-    <German>[ICON_BULLET]+%d1 Bonus to Diplomacy</German>
-    <Italian>[ICON_BULLET]+%d1 Bonus to Diplomacy</Italian>
-    <Spanish>[ICON_BULLET]+%d1 Bonus to Diplomacy</Spanish>
+    <French></French>
+    <German></German>
+    <Italian></Italian>
+    <Spanish></Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_NUMBER_UNICLASS_COUNT_MECHS</Tag>
+    <English>%d1 in [COLOR_HIGHLIGHT_TEXT]Commision[COLOR_REVERT]</English>
+    <French></French>
+    <German></German>
+    <Italian></Italian>
+    <Spanish></Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_CIVIC_DIPLOMACY_NEGATIVE</Tag>
@@ -1273,13 +1281,21 @@
 		<Italian>[ICON_BULLET]Only Consumes %d1_food [ICON_FOOD]</Italian>
 		<Spanish>[ICON_BULLET]Only Consumes %d1_food [ICON_FOOD]</Spanish>
 	</TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_YIELD_STORED_HELP</Tag>
+    <English>%d1 Stored in Settlement</English>
+    <French>[ICON_BULLET]%d1 Stored in Settlement</French>
+    <German>[ICON_BULLET]%d1 Stored in Settlement</German>
+    <Italian>[ICON_BULLET]%d1 Stored in Settlement</Italian>
+    <Spanish>[ICON_BULLET]%d1 Stored in Settlement</Spanish>
+  </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NOBLE_GROWTH</Tag>
-		<English>The abundance of luxury food in %s1_city has resulted in a population increase among the nobility</English>
-		<French>L'abondance de nourriture dans %s1_city a permis &#224; la population de cro&#238;tre!</French>
-		<German>Das reichliche Nahrungsvorkommen in der Stadt %s1_city hat zu einem Bev&#246;lkerungsanstieg gef&#252;hrt</German>
-		<Italian>L'abbondanza di cibo a %s1_city ha causato un aumento della popolazione</Italian>
-		<Spanish>La abundancia de Alimentos en %s1_city ha comportado un aumento de poblaci&#243;n.</Spanish>
+		<English>The abundance of luxury food in %s1_city has resulted in a population increase among the elite</English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_NATIVE_COMBAT_MOD</Tag>

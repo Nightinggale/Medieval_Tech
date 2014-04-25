@@ -113,6 +113,7 @@
 	<!-- JAnimals Mod Start -->
 	<ElementType name="iAnimalPatrolWeight" content="textOnly" dt:type="int"/>
 	<ElementType name="iAnimalAttackWeight" content="textOnly" dt:type="int"/>
+  <ElementType name="iMaxUnitCountPercent" content="textOnly" dt:type="int"/>
 	<!-- JAnimals Mod End -->
 	<ElementType name="bGraphicalOnly" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bNoBadGoodies" content="textOnly" dt:type="boolean"/>
@@ -553,7 +554,8 @@
     <!-- JAnimals Mod Start -->
 		<element type="iAnimalPatrolWeight"/>
 		<element type="iAnimalAttackWeight"/>
-		<!-- JAnimals Mod End -->
+    <element type="iMaxUnitCountPercent" minOccurs="0"/>
+    <!-- JAnimals Mod End -->
 		<element type="ProfessionMeshGroups"/>
 		<element type="FormationType"/>
 		<element type="HotKey"/>

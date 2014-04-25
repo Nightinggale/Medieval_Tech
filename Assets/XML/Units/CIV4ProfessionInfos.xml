@@ -318,6 +318,49 @@
 			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,6,7</Button>
 			<ProfessionSubTypes/>
 		</ProfessionInfo>
+    <ProfessionInfo>
+      <Type>PROFESSION_NATIVE_PEDLER</Type>
+      <Description>Barbarian Peddler</Description>
+      <Civilopedia>???</Civilopedia>
+      <Strategy>???</Strategy>
+      <Help/>
+      <bNativesInvalid>0</bNativesInvalid>
+      <bEuropeInvalid>1</bEuropeInvalid>
+      <bColonialInvalid>1</bColonialInvalid>
+      <Combat>NONECOMBAT_PEDLER</Combat>
+      <DefaultUnitAI>UNITAI_TRADER</DefaultUnitAI>
+      <SpecialBuilding>NONE</SpecialBuilding>
+      <UpgradeProfession>PROFESSION_MERCHANT</UpgradeProfession>
+      <bWorkPlot>0</bWorkPlot>
+      <bCitizen>0</bCitizen>
+      <bWater>0</bWater>
+      <bScout>0</bScout>
+      <bCityDefender>0</bCityDefender>
+      <bCanFound>1</bCanFound>
+      <bUnarmed>0</bUnarmed>
+      <bNoDefensiveBonus>0</bNoDefensiveBonus>
+      <iCombatChange>2</iCombatChange>
+      <iMovesChange>0</iMovesChange>
+      <iWorkRate>0</iWorkRate>
+      <iMissionaryRate>0</iMissionaryRate>
+      <iPower>0</iPower>
+      <iAsset>0</iAsset>
+      <YieldEquipedNums/>
+      <FreePromotions>
+        <FreePromotion>
+          <PromotionType>PROMOTION_PEDLER</PromotionType>
+          <bFreePromotion>1</bFreePromotion>
+        </FreePromotion>
+      </FreePromotions>
+      <YieldsProduced>
+        <YieldType>NONE</YieldType>
+      </YieldsProduced>
+      <YieldsConsumed>
+        <YieldType>NONE</YieldType>
+      </YieldsConsumed>
+      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,6,7</Button>
+      <ProfessionSubTypes/>
+    </ProfessionInfo>
 		<ProfessionInfo>
 			<Type>PROFESSION_TAX_COLLECTOR</Type>
 			<Description>Tax Collector</Description>

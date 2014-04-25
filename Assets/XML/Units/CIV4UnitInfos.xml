@@ -1523,7 +1523,7 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 			<DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -2033,7 +2033,7 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 			<DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -3045,7 +3045,7 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 			<DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -3538,7 +3538,7 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 			<DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -4119,9 +4119,9 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_SCOUT</DefaultUnitAI>
 			<DefaultProfession>PROFESSION_HUNTSMAN</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
-			<bColonialInvalid>0</bColonialInvalid>
+			<bColonialInvalid>1</bColonialInvalid>
 			<Invisible>NONE</Invisible>
 			<SeeInvisible>NONE</SeeInvisible>
 			<Description>Master Huntsman</Description>
@@ -4632,7 +4632,7 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_SCOUT</DefaultUnitAI>
 			<DefaultProfession>PROFESSION_SCOUT</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -5124,7 +5124,7 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_SCOUT</DefaultUnitAI>
 			<DefaultProfession>PROFESSION_SCOUT</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -5616,7 +5616,7 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_SETTLER</DefaultUnitAI>
 			<DefaultProfession>PROFESSION_PIONEER</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -6112,7 +6112,7 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_SETTLER</DefaultUnitAI>
 			<DefaultProfession>PROFESSION_PIONEER</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -6608,7 +6608,7 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_MISSIONARY</DefaultUnitAI>
 			<DefaultProfession>PROFESSION_MISSIONARY</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -7109,7 +7109,7 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_MISSIONARY</DefaultUnitAI>
 			<DefaultProfession>PROFESSION_MISSIONARY</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -7610,7 +7610,7 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
 			<DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -8189,7 +8189,7 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
 			<DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -8703,7 +8703,7 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
 			<DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -9217,7 +9217,7 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
 			<DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -11700,7 +11700,7 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 			<DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -12193,7 +12193,7 @@
       <Domain>DOMAIN_LAND</Domain>
       <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
       <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
-      <bNativesInvalid>0</bNativesInvalid>
+      <bNativesInvalid>1</bNativesInvalid>
       <bEuropeInvalid>0</bEuropeInvalid>
       <bColonialInvalid>0</bColonialInvalid>
       <Invisible>NONE</Invisible>
@@ -15709,7 +15709,7 @@
       <Domain>DOMAIN_LAND</Domain>
       <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
       <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
-      <bNativesInvalid>0</bNativesInvalid>
+      <bNativesInvalid>1</bNativesInvalid>
       <bEuropeInvalid>0</bEuropeInvalid>
       <bColonialInvalid>0</bColonialInvalid>
       <Invisible>NONE</Invisible>
@@ -18674,7 +18674,7 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 			<DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -19670,7 +19670,7 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 			<DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -22645,7 +22645,7 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 			<DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -23143,7 +23143,7 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 			<DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -23645,7 +23645,7 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 			<DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -24149,7 +24149,7 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 			<DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -25147,7 +25147,7 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 			<DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -25662,7 +25662,7 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 			<DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -26692,7 +26692,7 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 			<DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -28183,7 +28183,7 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 			<DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -28681,7 +28681,7 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 			<DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -30178,7 +30178,7 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 			<DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -30677,7 +30677,7 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_COUNTER</DefaultUnitAI>
 			<DefaultProfession>PROFESSION_KNIGHT_PLATE</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -31361,7 +31361,7 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
 			<DefaultProfession>NONE</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -31661,7 +31661,7 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
 			<DefaultProfession>NONE</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -31959,6 +31959,17 @@
 						<ArtDefineTag>ART_DEF_UNIT_MAGYAR_WARRIOR</ArtDefineTag>
 					</UnitMeshGroup>
 				</UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_NATIVE_PEDLER</ProfessionType>
+          <fMaxSpeed>1.25</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>1</iMeleeWaveSize>
+          <iRangedWaveSize>1</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_MONGOLIAN_PEDLER</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
 				<UnitMeshGroups>
 					<ProfessionType>PROFESSION_NATIVE_ARCHER</ProfessionType>
 					<fMaxSpeed>1.25</fMaxSpeed>
@@ -32362,7 +32373,7 @@
 			<Domain>DOMAIN_SEA</Domain>
 			<DefaultUnitAI>UNITAI_TRANSPORT_SEA</DefaultUnitAI>
 			<DefaultProfession>NONE</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -32522,7 +32533,7 @@
 			<Domain>DOMAIN_SEA</Domain>
 			<DefaultUnitAI>UNITAI_PIRATE_SEA</DefaultUnitAI>
 			<DefaultProfession>NONE</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -32842,7 +32853,7 @@
 			<Domain>DOMAIN_SEA</Domain>
 			<DefaultUnitAI>UNITAI_TRANSPORT_SEA</DefaultUnitAI>
 			<DefaultProfession>NONE</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -32996,7 +33007,7 @@
 			<Domain>DOMAIN_SEA</Domain>
 			<DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
 			<DefaultProfession>NONE</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -33159,7 +33170,7 @@
 			<Domain>DOMAIN_SEA</Domain>
 			<DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
 			<DefaultProfession>NONE</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -33619,7 +33630,7 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_WAGON</DefaultUnitAI>
 			<DefaultProfession>NONE</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -33912,8 +33923,8 @@
 			<DefaultUnitAI>UNITAI_TREASURE</DefaultUnitAI>
 			<DefaultProfession>NONE</DefaultProfession>
 			<bNativesInvalid>0</bNativesInvalid>
-			<bEuropeInvalid>0</bEuropeInvalid>
-			<bColonialInvalid>0</bColonialInvalid>
+			<bEuropeInvalid>1</bEuropeInvalid>
+			<bColonialInvalid>1</bColonialInvalid>
 			<Invisible>NONE</Invisible>
 			<SeeInvisible>NONE</SeeInvisible>
 			<Description>Pilgrims</Description>
@@ -35157,7 +35168,7 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_UNKNOWN</DefaultUnitAI>
 			<DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
 			<bEuropeInvalid>0</bEuropeInvalid>
 			<bColonialInvalid>0</bColonialInvalid>
 			<Invisible>NONE</Invisible>
@@ -35628,9 +35639,9 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
 			<DefaultProfession>NONE</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
-			<bEuropeInvalid>0</bEuropeInvalid>
-			<bColonialInvalid>0</bColonialInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
+			<bEuropeInvalid>1</bEuropeInvalid>
+			<bColonialInvalid>1</bColonialInvalid>
 			<Invisible>NONE</Invisible>
 			<SeeInvisible>NONE</SeeInvisible>
 			<Description>TXT_KEY_UNIT_BEAR_BLACK</Description>
@@ -35788,9 +35799,9 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
 			<DefaultProfession>NONE</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
-			<bEuropeInvalid>0</bEuropeInvalid>
-			<bColonialInvalid>0</bColonialInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
+			<bEuropeInvalid>1</bEuropeInvalid>
+			<bColonialInvalid>1</bColonialInvalid>
 			<Invisible>NONE</Invisible>
 			<SeeInvisible>NONE</SeeInvisible>
 			<Description>Grizzly</Description>
@@ -35952,9 +35963,9 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
 			<DefaultProfession>NONE</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
-			<bEuropeInvalid>0</bEuropeInvalid>
-			<bColonialInvalid>0</bColonialInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
+			<bEuropeInvalid>1</bEuropeInvalid>
+			<bColonialInvalid>1</bColonialInvalid>
 			<Invisible>NONE</Invisible>
 			<SeeInvisible>NONE</SeeInvisible>
 			<Description>TXT_KEY_UNIT_BEAR_POLAR</Description>
@@ -36057,6 +36068,7 @@
 			<iTeachLevel>0</iTeachLevel>
 			<iAnimalPatrolWeight>10000</iAnimalPatrolWeight>
 			<iAnimalAttackWeight>100</iAnimalAttackWeight>
+      <iMaxUnitCountPercent>12</iMaxUnitCountPercent>
 			<ProfessionMeshGroups>
 				<UnitMeshGroups>
 					<ProfessionType>NONE</ProfessionType>
@@ -36102,9 +36114,9 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
 			<DefaultProfession>NONE</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
-			<bEuropeInvalid>0</bEuropeInvalid>
-			<bColonialInvalid>0</bColonialInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
+			<bEuropeInvalid>1</bEuropeInvalid>
+			<bColonialInvalid>1</bColonialInvalid>
 			<Invisible>NONE</Invisible>
 			<SeeInvisible>NONE</SeeInvisible>
 			<Description>TXT_KEY_UNIT_COUGAR</Description>
@@ -36252,9 +36264,9 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
 			<DefaultProfession>NONE</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
-			<bEuropeInvalid>0</bEuropeInvalid>
-			<bColonialInvalid>0</bColonialInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
+			<bEuropeInvalid>1</bEuropeInvalid>
+			<bColonialInvalid>1</bColonialInvalid>
 			<Invisible>NONE</Invisible>
 			<SeeInvisible>NONE</SeeInvisible>
 			<Description>Trader Guard</Description>
@@ -36393,9 +36405,9 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
 			<DefaultProfession>NONE</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
-			<bEuropeInvalid>0</bEuropeInvalid>
-			<bColonialInvalid>0</bColonialInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
+			<bEuropeInvalid>1</bEuropeInvalid>
+			<bColonialInvalid>1</bColonialInvalid>
 			<Invisible>NONE</Invisible>
 			<SeeInvisible>NONE</SeeInvisible>
 			<Description>TXT_KEY_UNIT_DOG</Description>
@@ -36534,9 +36546,9 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
 			<DefaultProfession>NONE</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
-			<bEuropeInvalid>0</bEuropeInvalid>
-			<bColonialInvalid>0</bColonialInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
+			<bEuropeInvalid>1</bEuropeInvalid>
+			<bColonialInvalid>1</bColonialInvalid>
 			<Invisible>NONE</Invisible>
 			<SeeInvisible>NONE</SeeInvisible>
 			<Description>TXT_KEY_UNIT_ELEPHANT</Description>
@@ -36675,9 +36687,9 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
 			<DefaultProfession>NONE</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
-			<bEuropeInvalid>0</bEuropeInvalid>
-			<bColonialInvalid>0</bColonialInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
+			<bEuropeInvalid>1</bEuropeInvalid>
+			<bColonialInvalid>1</bColonialInvalid>
 			<Invisible>NONE</Invisible>
 			<SeeInvisible>NONE</SeeInvisible>
 			<Description>TXT_KEY_UNIT_HYENA</Description>
@@ -36825,9 +36837,9 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
 			<DefaultProfession>NONE</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
-			<bEuropeInvalid>0</bEuropeInvalid>
-			<bColonialInvalid>0</bColonialInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
+			<bEuropeInvalid>1</bEuropeInvalid>
+			<bColonialInvalid>1</bColonialInvalid>
 			<Invisible>NONE</Invisible>
 			<SeeInvisible>NONE</SeeInvisible>
 			<Description>TXT_KEY_UNIT_LION</Description>
@@ -36975,9 +36987,9 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
 			<DefaultProfession>NONE</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
-			<bEuropeInvalid>0</bEuropeInvalid>
-			<bColonialInvalid>0</bColonialInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
+			<bEuropeInvalid>1</bEuropeInvalid>
+			<bColonialInvalid>1</bColonialInvalid>
 			<Invisible>NONE</Invisible>
 			<SeeInvisible>NONE</SeeInvisible>
 			<Description>TXT_KEY_UNIT_PANTHER</Description>
@@ -37116,9 +37128,9 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
 			<DefaultProfession>NONE</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
-			<bEuropeInvalid>0</bEuropeInvalid>
-			<bColonialInvalid>0</bColonialInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
+			<bEuropeInvalid>1</bEuropeInvalid>
+			<bColonialInvalid>1</bColonialInvalid>
 			<Invisible>NONE</Invisible>
 			<SeeInvisible>NONE</SeeInvisible>
 			<Description>TXT_KEY_UNIT_PIG</Description>
@@ -37257,9 +37269,9 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
 			<DefaultProfession>NONE</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
-			<bEuropeInvalid>0</bEuropeInvalid>
-			<bColonialInvalid>0</bColonialInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
+			<bEuropeInvalid>1</bEuropeInvalid>
+			<bColonialInvalid>1</bColonialInvalid>
 			<Invisible>NONE</Invisible>
 			<SeeInvisible>NONE</SeeInvisible>
 			<Description>Boar</Description>
@@ -37416,9 +37428,9 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
 			<DefaultProfession>NONE</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
-			<bEuropeInvalid>0</bEuropeInvalid>
-			<bColonialInvalid>0</bColonialInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
+			<bEuropeInvalid>1</bEuropeInvalid>
+			<bColonialInvalid>1</bColonialInvalid>
 			<Invisible>NONE</Invisible>
 			<SeeInvisible>NONE</SeeInvisible>
 			<Description>Buck</Description>
@@ -37575,9 +37587,9 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
 			<DefaultProfession>NONE</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
-			<bEuropeInvalid>0</bEuropeInvalid>
-			<bColonialInvalid>0</bColonialInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
+			<bEuropeInvalid>1</bEuropeInvalid>
+			<bColonialInvalid>1</bColonialInvalid>
 			<Invisible>NONE</Invisible>
 			<SeeInvisible>NONE</SeeInvisible>
 			<Description>TXT_KEY_UNIT_WOLF</Description>
@@ -37730,9 +37742,9 @@
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
 			<DefaultProfession>NONE</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
-			<bEuropeInvalid>0</bEuropeInvalid>
-			<bColonialInvalid>0</bColonialInvalid>
+			<bNativesInvalid>1</bNativesInvalid>
+			<bEuropeInvalid>1</bEuropeInvalid>
+			<bColonialInvalid>1</bColonialInvalid>
 			<Invisible>NONE</Invisible>
 			<SeeInvisible>NONE</SeeInvisible>
 			<Description>TXT_KEY_UNIT_DOG</Description>
@@ -37836,162 +37848,6 @@
 					<UnitMeshGroup>
 						<iRequired>1</iRequired>
 						<ArtDefineTag>ART_DEF_UNIT_DOG_PACK</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-			</ProfessionMeshGroups>
-			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
-			<HotKey/>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>0</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>0</iHotKeyPriority>
-			<FreePromotions/>
-			<LeaderPromotion>NONE</LeaderPromotion>
-			<iLeaderExperience>0</iLeaderExperience>
-			<ProfessionsNotAllowed/>
-			<KnightDubbingWeight>0</KnightDubbingWeight>
-			<iCasteAttribute>0</iCasteAttribute>
-			<bPreventFounding>0</bPreventFounding>
-			<bPreventTraveling>0</bPreventTraveling>
-			<EducationUnitClass>NONE</EducationUnitClass>
-			<RehibilitateUnitClass>NONE</RehibilitateUnitClass>
-			<LaborForceUnitClass>NONE</LaborForceUnitClass>
-			<iTradeBonus>0</iTradeBonus>
-			<ConvertsToYield>NONE</ConvertsToYield>
-			<ConvertsToBuildingClass>NONE</ConvertsToBuildingClass>
-			<ConvertsToGold>0</ConvertsToGold>
-		</UnitInfo>
-		<UnitInfo>
-			<Type>UNIT_LEAD_HUNTSMAN</Type>
-			<Class>UNITCLASS_LEAD_HUNTSMAN</Class>
-			<UniqueNames/>
-			<Special>NONE</Special>
-			<Capture>NONE</Capture>
-			<Combat>NONE</Combat>
-			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_SCOUT</DefaultUnitAI>
-			<DefaultProfession>NONE</DefaultProfession>
-			<bNativesInvalid>0</bNativesInvalid>
-			<bEuropeInvalid>0</bEuropeInvalid>
-			<bColonialInvalid>0</bColonialInvalid>
-			<Invisible>NONE</Invisible>
-			<SeeInvisible>NONE</SeeInvisible>
-			<Description>Lead Huntsman</Description>
-			<Civilopedia>TXT_KEY_UNIT_SCOUT_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_SCOUT_STRATEGY</Strategy>
-			<bGraphicalOnly>1</bGraphicalOnly>
-			<bNoBadGoodies>0</bNoBadGoodies>
-			<bOnlyDefensive>0</bOnlyDefensive>
-			<bNoCapture>0</bNoCapture>
-			<bQuickCombat>0</bQuickCombat>
-			<bRivalTerritory>0</bRivalTerritory>
-			<bMilitaryProduction>0</bMilitaryProduction>
-			<bFound>1</bFound>
-			<bInvisible>0</bInvisible>
-			<bNoDefensiveBonus>0</bNoDefensiveBonus>
-			<bCanMoveImpassable>0</bCanMoveImpassable>
-			<bCanMoveAllTerrain>0</bCanMoveAllTerrain>
-			<bFlatMovementCost>0</bFlatMovementCost>
-			<bIgnoreTerrainCost>0</bIgnoreTerrainCost>
-			<bMechanized>0</bMechanized>
-			<bLineOfSight>0</bLineOfSight>
-			<bHiddenNationality>0</bHiddenNationality>
-			<bAlwaysHostile>0</bAlwaysHostile>
-			<bTreasure>0</bTreasure>
-			<bAnimal>0</bAnimal>
-			<UnitClassUpgrades/>
-			<UnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_COLONIST</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_SCOUT</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-			</UnitAIs>
-			<NotUnitAIs/>
-			<Builds/>
-			<PrereqBuilding>NONE</PrereqBuilding>
-			<PrereqOrBuildings/>
-			<ProductionTraits/>
-			<iAIWeight>0</iAIWeight>
-			<YieldCosts/>
-			<iHurryCostModifier>0</iHurryCostModifier>
-			<iAdvancedStartCost>-1</iAdvancedStartCost>
-			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iEuropeCost>-1500</iEuropeCost>
-			<iEuropeCostIncrease>0</iEuropeCostIncrease>
-			<iImmigrationWeight>0</iImmigrationWeight>
-			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>1</iMoves>
-			<bCapturesCargo>0</bCapturesCargo>
-			<iWorkRate>0</iWorkRate>
-			<iWorkRateModifier>0</iWorkRateModifier>
-			<iMissionaryRateModifier>0</iMissionaryRateModifier>
-			<TerrainImpassables/>
-			<FeatureImpassables/>
-			<TerrainNatives/>
-			<FeatureNatives/>
-			<BonusNatives/>
-			<EvasionBuildings/>
-			<iCombat>0</iCombat>
-			<iXPValueAttack>4</iXPValueAttack>
-			<iXPValueDefense>2</iXPValueDefense>
-			<iWithdrawalProb>0</iWithdrawalProb>
-			<iCityAttack>0</iCityAttack>
-			<iCityDefense>0</iCityDefense>
-			<iHillsAttack>0</iHillsAttack>
-			<iHillsDefense>0</iHillsDefense>
-			<TerrainAttacks/>
-			<TerrainDefenses/>
-			<FeatureAttacks/>
-			<FeatureDefenses/>
-			<UnitClassAttackMods/>
-			<UnitClassDefenseMods/>
-			<UnitCombatMods/>
-			<DomainMods/>
-			<YieldModifiers/>
-			<YieldChanges/>
-			<BonusYieldChanges/>
-			<bLandYieldChanges>1</bLandYieldChanges>
-			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<YieldDemands/>
-			<iBombardRate>0</iBombardRate>
-			<SpecialCargo>NONE</SpecialCargo>
-			<DomainCargo>NONE</DomainCargo>
-			<iCargo>0</iCargo>
-			<iRequiredTransportSize>1</iRequiredTransportSize>
-			<iAsset>250</iAsset>
-			<iPower>0</iPower>
-			<iNativeLearnTime>-1</iNativeLearnTime>
-			<iStudentWeight>0</iStudentWeight>
-			<iTeacherWeight>3</iTeacherWeight>
-			<iTeachLevel>0</iTeachLevel>
-			<iAnimalPatrolWeight>-1</iAnimalPatrolWeight>
-			<iAnimalAttackWeight>-1</iAnimalAttackWeight>
-			<ProfessionMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>NONE</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>0</iMeleeWaveSize>
-					<iRangedWaveSize>4</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_HUNTSMAN</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_HUNTSMAN</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>0</iMeleeWaveSize>
-					<iRangedWaveSize>4</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_HUNTSMAN</ArtDefineTag>
 					</UnitMeshGroup>
 				</UnitMeshGroups>
 			</ProfessionMeshGroups>

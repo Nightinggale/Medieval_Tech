@@ -567,11 +567,6 @@
 			<DefaultUnit>UNIT_WOLF</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_LEAD_HUNTSMAN</Type>
-			<Description>TXT_KEY_UNIT_WOLF</Description>
-			<DefaultUnit>UNIT_LEAD_HUNTSMAN</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
 			<Type>UNITCLASS_TRADER_GUARD</Type>
 			<Description>TXT_KEY_UNIT_WOLF</Description>
 			<DefaultUnit>UNIT_TRADER_GUARD</DefaultUnit>

@@ -367,7 +367,7 @@
 			<iBuyPriceHigh>11</iBuyPriceHigh>
 			<iSellPriceDifference>1</iSellPriceDifference>
 			<iPriceChangeThreshold>100</iPriceChangeThreshold>
-			<iPriceCorrectionPercent>10</iPriceCorrectionPercent>
+			<iPriceCorrectionPercent>5</iPriceCorrectionPercent>
 			<iNativeBuyPrice>-1</iNativeBuyPrice>
 			<iNativeSellPrice>7</iNativeSellPrice>
 			<iNativeConsumptionPercent>25</iNativeConsumptionPercent>

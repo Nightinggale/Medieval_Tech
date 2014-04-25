@@ -887,10 +887,12 @@ void CvUnit::updateOwnerCache(int iChange)
 	{
 		pArea->changePower(getOwnerINLINE(), getPower() * iChange);
 	}
-	if (m_pUnitInfo->isFound())
+	//Tks Med
+	if (m_pUnitInfo->isFound() || isBarbarian())
 	{
 		GET_PLAYER(getOwnerINLINE()).changeTotalPopulation(iChange);
 	}
+	//TKe
 }
 
 
@@ -7726,9 +7728,12 @@ UnitTypes CvUnit::getCaptureUnitType(CivilizationTypes eCivilization) const
 	}
 
 	///TKs Med
-	if (!GET_PLAYER(GC.getGameINLINE().getActivePlayer()).canUseYield(YIELD_FROM_ANIMALS))
+	if (GC.getYieldInfo(YIELD_FROM_ANIMALS).getUnitClass() == m_pUnitInfo->getUnitCaptureClassType())
 	{
-		return NO_UNIT;
+		if (!GET_PLAYER(GC.getGameINLINE().getActivePlayer()).canUseYield(YIELD_FROM_ANIMALS))
+		{
+			return NO_UNIT;
+		}
 	}
 #if 0
 	// this section is replaced by a simple check to see if the player can use the yield in question

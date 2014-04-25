@@ -2288,6 +2288,7 @@ m_iFoodConsumed(2),
 // < JAnimals Mod Start >
 m_iAnimalPatrolWeight(0),
 m_iAnimalAttackWeight(0),
+m_iMaxUnitCountPercent(0),
 // < JAnimals Mod End >
 m_bNoBadGoodies(false),
 m_bOnlyDefensive(false),
@@ -2609,6 +2610,10 @@ int CvUnitInfo::getAnimalPatrolWeight() const
 int CvUnitInfo::getAnimalAttackWeight() const
 {
 	return m_iAnimalAttackWeight;
+}
+int CvUnitInfo::getMaxUnitCountPercent() const
+{
+	return m_iMaxUnitCountPercent;
 }
 // < JAnimals Mod End >
 bool CvUnitInfo::isNoBadGoodies() const
@@ -3460,6 +3465,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	// < JAnimals Mod Start >
 	pXML->GetChildXmlValByName(&m_iAnimalPatrolWeight, "iAnimalPatrolWeight", -1);
 	pXML->GetChildXmlValByName(&m_iAnimalAttackWeight, "iAnimalAttackWeight", -1);
+	pXML->GetChildXmlValByName(&m_iMaxUnitCountPercent, "iMaxUnitCountPercent", -1);
 	// < JAnimals Mod End >
 	pXML->GetChildXmlValByName(&m_bNoBadGoodies, "bNoBadGoodies");
 	pXML->GetChildXmlValByName(&m_bOnlyDefensive, "bOnlyDefensive");

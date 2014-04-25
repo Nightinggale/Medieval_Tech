@@ -5309,6 +5309,17 @@ void CvGame::createAnimalsLand()
 							    continue;
 							}
 							///TK Med
+							//CHanges here must be made in sea animals also. TODO add getMaxUnitCountPercent() to all Civs
+							if (GC.getUnitInfo(eLoopUnit).getMaxUnitCountPercent() > 0)
+							{
+								int iClassCount = GET_PLAYER(getBarbarianPlayer()).getUnitClassCount((UnitClassTypes)GC.getUnitInfo(eLoopUnit).getUnitClassType());
+								iClassCount = std::max(1, iClassCount * GET_PLAYER(getBarbarianPlayer()).getTotalPopulation() / 100);
+								if (GC.getUnitInfo(eLoopUnit).getMaxUnitCountPercent() >= iClassCount)
+								{
+									continue;
+								}
+							}
+
 							if (GC.getUnitInfo(eLoopUnit).getCasteAttribute() != 7)
 							{
                                 if (!GC.getUnitInfo(eLoopUnit).isAnimal())
@@ -5440,6 +5451,16 @@ void CvGame::createAnimalsSea()
 							    continue;
 							}
 							///TK Med
+							if (GC.getUnitInfo(eLoopUnit).getMaxUnitCountPercent() > 0)
+							{
+								int iClassCount = GET_PLAYER(getBarbarianPlayer()).getUnitClassCount((UnitClassTypes)GC.getUnitInfo(eLoopUnit).getUnitClassType());
+								iClassCount = std::max(1, iClassCount * GET_PLAYER(getBarbarianPlayer()).getTotalPopulation() / 100);
+								if (GC.getUnitInfo(eLoopUnit).getMaxUnitCountPercent() >= iClassCount)
+								{
+									continue;
+								}
+							}
+
                             if (GC.getUnitInfo(eLoopUnit).getCasteAttribute() != 7)
 							{
                                 if (!GC.getUnitInfo(eLoopUnit).isAnimal())

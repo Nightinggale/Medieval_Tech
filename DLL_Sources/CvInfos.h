@@ -640,6 +640,7 @@ public:
 	// < JAnimals Mod Start >
 	int getAnimalPatrolWeight() const;
 	int getAnimalAttackWeight() const;
+	int getMaxUnitCountPercent() const;
 	// < JAnimals Mod End >
 	DllExport bool isNoBadGoodies() const;
 	DllExport bool isOnlyDefensive() const;
@@ -770,6 +771,7 @@ protected:
 	// < JAnimals Mod Start >
 	int m_iAnimalPatrolWeight;
 	int m_iAnimalAttackWeight;
+	int m_iMaxUnitCountPercent;
 	// < JAnimals Mod End >
 	///TKs Invention Core Mod v 1.0 Professions Pedia
 	bool m_ibNativesInvalid;

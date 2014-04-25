@@ -158,6 +158,10 @@ class CvPediaProfession:
 					if Civilization.isNative():
 						if UnitInfo.isNativesInvalid():
 							continue
+						if UnitInfo.isHiddenNationality():
+							continue
+						if UnitInfo.getUnitCaptureClassType() != -1:
+							continue
 					elif Civilization.isEurope():
 						if UnitInfo.isEuropeInvalid():
 							continue

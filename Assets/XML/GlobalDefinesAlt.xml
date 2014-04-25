@@ -164,7 +164,7 @@
 	</Define>
 	<Define>
 		<DefineName>DEFAULT_NATIVE_TRADE_PROFESSION</DefineName>
-		<DefineTextVal>PROFESSION_PEDLER</DefineTextVal>
+		<DefineTextVal>PROFESSION_NATIVE_PEDLER</DefineTextVal>
 	</Define>
 	<Define>
 		<DefineName>BUILDINGCLASS_TRAVEL_TO_FAIR</DefineName>

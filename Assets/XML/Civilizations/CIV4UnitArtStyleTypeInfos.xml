@@ -270,13 +270,6 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_LEAD_HUNTSMAN</UnitType>
-					<ProfessionType>PROFESSION_HUNTSMAN</ProfessionType>
-					<UnitMeshGroup>
-						<ArtDefineTag>ART_DEF_UNIT_HUNTSMAN</ArtDefineTag>
-					</UnitMeshGroup>
-				</StyleUnit>
-				<StyleUnit>
 					<UnitType>UNIT_PIONEER</UnitType>
 					<ProfessionType>PROFESSION_PIONEER</ProfessionType>
 					<UnitMeshGroup>
@@ -2758,6 +2751,13 @@
 						<ArtDefineTag>ART_DEF_PROFESSION_BURGUNDY_WARRIOR</ArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
+        <StyleUnit>
+          <UnitType>NONE</UnitType>
+          <ProfessionType>PROFESSION_NATIVE_PEDLER</ProfessionType>
+          <UnitMeshGroup>
+            <ArtDefineTag>ART_DEF_PROFESSION_MONGOLIAN_PEDLER</ArtDefineTag>
+          </UnitMeshGroup>
+        </StyleUnit>
 				<StyleUnit>
 					<UnitType>NONE</UnitType>
 					<ProfessionType>PROFESSION_NATIVE_ARCHER</ProfessionType>
@@ -2805,6 +2805,13 @@
 						<ArtDefineTag>ART_DEF_PROFESSION_BURGUNDY_WARRIOR</ArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
+        <StyleUnit>
+          <UnitType>NONE</UnitType>
+          <ProfessionType>PROFESSION_NATIVE_PEDLER</ProfessionType>
+          <UnitMeshGroup>
+            <ArtDefineTag>ART_DEF_PROFESSION_MONGOLIAN_PEDLER</ArtDefineTag>
+          </UnitMeshGroup>
+        </StyleUnit>
 				<StyleUnit>
 					<UnitType>NONE</UnitType>
 					<ProfessionType>PROFESSION_NATIVE_ARCHER</ProfessionType>

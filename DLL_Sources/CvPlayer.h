@@ -1000,7 +1000,7 @@ protected:
 	// cache CvPlayer::getYieldEquipmentAmount - end - Nightinggale
 
 	std::vector<EventTriggerTypes> m_triggersFired;
-	CivicTypes* m_paeCivics;
+	CivicOptionArray<CivicTypes> m_ja_eCivics;
 	int** m_ppiImprovementYieldChange;
 	int** m_ppiBuildingYieldChange;
 	CLinkList<int> m_groupCycle;

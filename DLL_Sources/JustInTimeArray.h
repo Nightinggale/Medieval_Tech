@@ -50,7 +50,7 @@ private:
 	const T m_eDefault;
 
 public:
-	JustInTimeArray(JIT_ARRAY_TYPES eType, T eDefault = 0);
+	JustInTimeArray(JIT_ARRAY_TYPES eType, T eDefault = (T)0);
 
 	~JustInTimeArray();
 
@@ -109,153 +109,153 @@ template<class T>
 class BonusArray: public JustInTimeArray<T>
 {
 public:
-	BonusArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_BONUS, eDefault){};
+	BonusArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_BONUS, eDefault){};
 };
 
 template<class T>
 class BuildingArray: public JustInTimeArray<T>
 {
 public:
-	BuildingArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_BUILDING, eDefault){};
+	BuildingArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_BUILDING, eDefault){};
 };
 
 template<class T>
 class BuildingClassArray: public JustInTimeArray<T>
 {
 public:
-	BuildingClassArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_BUILDING_CLASS, eDefault){};
+	BuildingClassArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_BUILDING_CLASS, eDefault){};
 };
 
 template<class T>
 class BuildingSpecialArray: public JustInTimeArray<T>
 {
 public:
-	BuildingSpecialArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_BUILDING_SPECIAL, eDefault){};
+	BuildingSpecialArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_BUILDING_SPECIAL, eDefault){};
 };
 
 template<class T>
 class CivicArray: public JustInTimeArray<T>
 {
 public:
-	CivicArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_CIVIC, eDefault){};
+	CivicArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_CIVIC, eDefault){};
 };
 
 template<class T>
 class CivicOptionArray: public JustInTimeArray<T>
 {
 public:
-	CivicOptionArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_CIVIC_OPTION, eDefault){};
+	CivicOptionArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_CIVIC_OPTION, eDefault){};
 };
 
 template<class T>
 class EuropeArray: public JustInTimeArray<T>
 {
 public:
-	EuropeArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_EUROPE, eDefault){};
+	EuropeArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_EUROPE, eDefault){};
 };
 
 template<class T>
 class FatherArray: public JustInTimeArray<T>
 {
 public:
-	FatherArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_FATHER, eDefault){};
+	FatherArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_FATHER, eDefault){};
 };
 
 template<class T>
 class FatherPointArray: public JustInTimeArray<T>
 {
 public:
-	FatherPointArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_FATHER_POINT, eDefault){};
+	FatherPointArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_FATHER_POINT, eDefault){};
 };
 
 template<class T>
 class FeatureArray: public JustInTimeArray<T>
 {
 public:
-	FeatureArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_FEATURE, eDefault){};
+	FeatureArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_FEATURE, eDefault){};
 };
 
 template<class T>
 class HurryArray: public JustInTimeArray<T>
 {
 public:
-	HurryArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_HURRY, eDefault){};
+	HurryArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_HURRY, eDefault){};
 };
 
 template<class T>
 class ImprovementArray: public JustInTimeArray<T>
 {
 public:
-	ImprovementArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_IMPROVEMENT, eDefault){};
+	ImprovementArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_IMPROVEMENT, eDefault){};
 };
 
 template<class T>
 class PlayerArray: public JustInTimeArray<T>
 {
 public:
-	PlayerArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_PLAYER, eDefault){};
+	PlayerArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_PLAYER, eDefault){};
 };
 
 template<class T>
 class ProfessionArray: public JustInTimeArray<T>
 {
 public:
-	ProfessionArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_PROFESSION, eDefault){};
+	ProfessionArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_PROFESSION, eDefault){};
 };
 
 template<class T>
 class PromotionArray: public JustInTimeArray<T>
 {
 public:
-	PromotionArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_PROMOTION, eDefault){};
+	PromotionArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_PROMOTION, eDefault){};
 };
 
 template<class T>
 class TerrainArray: public JustInTimeArray<T>
 {
 public:
-	TerrainArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_TERRAIN, eDefault){};
+	TerrainArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_TERRAIN, eDefault){};
 };
 
 template<class T>
 class TraitArray: public JustInTimeArray<T>
 {
 public:
-	TraitArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_TRAIT, eDefault){};
+	TraitArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_TRAIT, eDefault){};
 };
 
 template<class T>
 class UnitArray: public JustInTimeArray<T>
 {
 public:
-	UnitArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_UNIT, eDefault){};
+	UnitArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_UNIT, eDefault){};
 };
 
 template<class T>
 class UnitClassArray: public JustInTimeArray<T>
 {
 public:
-	UnitClassArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_UNIT_CLASS, eDefault){};
+	UnitClassArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_UNIT_CLASS, eDefault){};
 };
 
 template<class T>
 class UnitCombatArray: public JustInTimeArray<T>
 {
 public:
-	UnitCombatArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_UNIT_COMBAT, eDefault){};
+	UnitCombatArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_UNIT_COMBAT, eDefault){};
 };
 
 template<class T>
 class YieldArray: public JustInTimeArray<T>
 {
 public:
-	YieldArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_YIELD, eDefault){};
+	YieldArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_YIELD, eDefault){};
 };
 
 template<class T>
 class YieldCargoArray: public JustInTimeArray<T>
 {
 public:
-	YieldCargoArray(T eDefault = 0) : JustInTimeArray<T>(JIT_ARRAY_CARGO_YIELD, eDefault){};
+	YieldCargoArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_CARGO_YIELD, eDefault){};
 };
 #endif

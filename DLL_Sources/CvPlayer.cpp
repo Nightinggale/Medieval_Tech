@@ -57,6 +57,7 @@ CvPlayer::CvPlayer()
 , m_ba_TradeRouteTypes(JIT_ARRAY_EUROPE, true)
 ///Tke
 , m_ba_YieldEuropeTradable(JIT_ARRAY_YIELD, true)
+, m_ja_eCivics(NO_CIVIC)
 {
 	m_aiMissionaryPoints = new int[MAX_PLAYERS];
 	m_aiMissionaryThresholdMultiplier = new int[MAX_PLAYERS];
@@ -311,7 +312,7 @@ void CvPlayer::uninit()
 	m_ja_iProfessionEquipmentModifier.resetContent();
 	m_ja_iTraitCount.resetContent();
 
-	SAFE_DELETE_ARRAY(m_paeCivics);
+	m_ja_eCivics.resetContent();
 
 	m_triggersFired.clear();
 
@@ -561,12 +562,7 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 		m_ja_iHurryCount.resetContent();
 		m_ja_iSpecialBuildingNotRequiredCount.resetContent();
 
-		FAssertMsg(m_paeCivics==NULL, "about to leak memory, CvPlayer::m_paeCivics");
-		m_paeCivics = new CivicTypes [GC.getNumCivicOptionInfos()];
-		for (iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
-		{
-			m_paeCivics[iI] = NO_CIVIC;
-		}
+		m_ja_eCivics.resetContent();
 
 		m_ja_iProfessionEquipmentModifier.resetContent();
 		m_ja_iTraitCount.resetContent();
@@ -8170,9 +8166,7 @@ void CvPlayer::changeSpecialBuildingNotRequiredCount(SpecialBuildingTypes eIndex
 
 CivicTypes CvPlayer::getCivic(CivicOptionTypes eIndex) const
 {
-	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
-	FAssertMsg(eIndex < GC.getNumCivicOptionInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paeCivics[eIndex];
+	return m_ja_eCivics.get(eIndex);
 }
 
 void CvPlayer::setCivic(CivicOptionTypes eIndex, CivicTypes eNewValue)
@@ -8185,7 +8179,7 @@ void CvPlayer::setCivic(CivicOptionTypes eIndex, CivicTypes eNewValue)
     {
 		// TODO this code should never be reached anymore, it it doesn't FAssert then remove it
 		FAssert(false);
-		m_paeCivics[eIndex] = NO_CIVIC;
+		m_ja_eCivics.set(NO_CIVIC, eIndex);
         return;
         //eOldCivic = NO_CIVIC;
         //bIdea = true;
@@ -8199,7 +8193,7 @@ void CvPlayer::setCivic(CivicOptionTypes eIndex, CivicTypes eNewValue)
 	{
 	    //if (!bIdea)
 	    //{
-        m_paeCivics[eIndex] = eNewValue;
+       m_ja_eCivics.set(eNewValue, eIndex);
 	   // }
 	   ///TK end Update
  ///TKe
@@ -11600,32 +11594,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	m_ja_iBuildingClassMaking.read(pStream);
 	m_ja_iProfessionEquipmentModifier.read(pStream);
 	m_ja_iTraitCount.read(pStream);
-
-	/// JIT array save - start - Nightinggale
-	//for (iI=0;iI<GC.getNumCivicOptionInfos();iI++)
-	//{
-	//	pStream->Read((int*)&m_paeCivics[iI]);
-	//}
-	{
-		// read the same number of civics as civic types at the time of load
-		// convert the index to the current index and then save the converted civic type
-		int iLength = 0;
-		pStream->Read(&iLength);
-		for (int iI=0; iI < iLength; iI++)
-		{
-			CivicTypes eCivic = NO_CIVIC;
-			pStream->Read(&eCivic);
-
-			int iIndex = GC.getGameINLINE().convertArrayInfo(JIT_ARRAY_CIVIC_OPTION, iI);
-			if (iIndex > -1 && iIndex < GC.getNumCivicOptionInfos())
-			{
-				// store converted civic in converted civic option index
-				m_paeCivics[iIndex] = eCivic;
-			}
-		}
-	}
-	/// JIT array save - end - Nightinggale
-
+	m_ja_eCivics.read(pStream);
 	m_groupCycle.Read(pStream);
 	{
 		CvWString szBuffer;
@@ -12043,15 +12012,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	m_ja_iBuildingClassMaking.write(pStream);
 	m_ja_iProfessionEquipmentModifier.write(pStream);
 	m_ja_iTraitCount.write(pStream);
-
-	/// JIT array save - start - Nightinggale
-	pStream->Write(GC.getNumCivicOptionInfos());
-	/// JIT array save - end - Nightinggale
-	for (int iI=0;iI<GC.getNumCivicOptionInfos();iI++)
-	{
-		pStream->Write(m_paeCivics[iI]);
-	}
-
+	m_ja_eCivics.write(pStream);
 	m_groupCycle.Write(pStream);
 	{
 		uint iSize = m_aszCityNames.size();
@@ -14945,19 +14906,16 @@ int CvPlayer::getSingleCivicUpkeep(CivicTypes eCivic, bool bIgnoreAnarchy) const
 
 int CvPlayer::getCivicUpkeep(CivicTypes* paeCivics, bool bIgnoreAnarchy) const
 {
-	int iTotalUpkeep;
-	int iI;
+	// redesigned function to use JIT
+	// the concept is unchanged
+	// Nightinggale
 
-	if (paeCivics == NULL)
+	int iTotalUpkeep = 0;
+
+	for (int iI = 0; iI < m_ja_eCivics.length(); iI++)
 	{
-		paeCivics = m_paeCivics;
-	}
-
-	iTotalUpkeep = 0;
-
-	for (iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
-	{
-		iTotalUpkeep += getSingleCivicUpkeep(paeCivics[iI], bIgnoreAnarchy);
+		CivicTypes eCivic = paeCivics != NULL ? paeCivics[iI] : m_ja_eCivics.get(iI);
+		iTotalUpkeep += getSingleCivicUpkeep(eCivic, bIgnoreAnarchy);
 	}
 
 	return iTotalUpkeep;

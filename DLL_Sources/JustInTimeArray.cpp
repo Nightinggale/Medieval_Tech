@@ -9,7 +9,7 @@
 #include "CvGameAI.h"
 
 template<class T>
-JustInTimeArray<T>::JustInTimeArray(JIT_ARRAY_TYPES eType, T eDefault = 0)
+JustInTimeArray<T>::JustInTimeArray(JIT_ARRAY_TYPES eType, T eDefault)
 : tArray(NULL)
 , m_iType(eType)
 , m_iLength(GC.getArrayLength(eType))
@@ -72,7 +72,7 @@ void JustInTimeArray<T>::set(T value, int iIndex)
 template<class T>
 void JustInTimeArray<T>::add(T value, int iIndex)
 {
-	this->set(value + this->get(iIndex), iIndex);
+	this->set((T)(value + get(iIndex)), iIndex);
 }
 
 template<class T>
@@ -144,7 +144,7 @@ void JustInTimeArray<T>::read(FDataStreamBase* pStream, bool bEnable)
 
 		for (int iIndex = 0; iIndex < iNumElements; iIndex++)
 		{
-			int iBuffer = 0;
+			T iBuffer = (T)0;
 			pStream->Read(&iBuffer);
 			int iNewIndex = eGame.convertArrayInfo(getType(), iIndex);
 			if (iNewIndex >= 0)
@@ -170,7 +170,7 @@ void JustInTimeArray<T>::write(FDataStreamBase* pStream)
 	{
 		for (int iIndex = 0; iIndex < iNumElements; iIndex++)
 		{
-			pStream->Write((int)get(iIndex));
+			pStream->Write(get(iIndex));
 		}
 	}
 }
@@ -185,7 +185,7 @@ void JustInTimeArray<T>::read(CvXMLLoadUtility* pXML, const char* sTag)
 	pXML->SetVariableListTagPair(&iArray, sTag, this->m_iLength, 0);
 	for (int i = 0; i < this->m_iLength; i++)
 	{
-		this->set(iArray[i], i);
+		this->set((T)iArray[i], i);
 	}
 	SAFE_DELETE_ARRAY(iArray);
 	this->hasContent(); // release array if possible
@@ -202,3 +202,9 @@ template class JustInTimeArray <int>;
 template class JustInTimeArray <char>;
 template class JustInTimeArray <unsigned char>;
 template class JustInTimeArray <short>;
+
+// array types
+// keep the amount of these to a minimum
+// they do not share the compiled code with int even though they do the same
+// this mean dublicated code in the DLL
+template class JustInTimeArray <CivicTypes>;

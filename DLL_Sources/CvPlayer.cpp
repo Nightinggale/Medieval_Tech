@@ -44,12 +44,12 @@ CvPlayer::CvPlayer()
 // invention effect cache - start - Nightinggale
 // set the default to release memory when everything is allowed instead of when nothing is allowed
 // presumably the case where nothing is allowed will never happen while allowing all say yields can happen in late game
-: m_ja_bAllowedYields(true)
-, m_ja_bAllowedBonus(true)
-, m_ja_bAllowedUnits(true)
-, m_ja_bAllowedUnitsImmigration(true)
-, m_ja_bAllowedBuildings(true)
-, m_ja_bAllowedProfessions(true)
+: m_ba_AllowedYields(JIT_ARRAY_YIELD, true)
+, m_ba_AllowedBonus(JIT_ARRAY_BONUS, true)
+, m_ba_AllowedUnits(JIT_ARRAY_UNIT, true)
+, m_ba_AllowedUnitsImmigration(JIT_ARRAY_UNIT, true)
+, m_ba_AllowedBuildings(JIT_ARRAY_BUILDING, true)
+, m_ba_AllowedProfessions(JIT_ARRAY_PROFESSION, true)
 // invention effect cache - end - Nightinggale
 ///TK Civics
 , m_ja_iTradeRouteStartingPlotX(INVALID_PLOT_COORD)
@@ -19903,7 +19903,7 @@ int CvPlayer::getUnitClassFoodCost(UnitTypes eUnit, bool bResetAll) const
 ///TKe
 
 // invention effect cache - start - Nightinggale
-void CvPlayer::updateInventionEffectCacheSingleArray(JustInTimeArray<bool>* pArray, int (CvCivicInfo::*fptr)(int) const)
+void CvPlayer::updateInventionEffectCacheSingleArray(BoolArray* pArray, int (CvCivicInfo::*fptr)(int) const)
 {
 	CvCivilizationInfo& kCivilizationInfo = GC.getCivilizationInfo(this->getCivilizationType());
 
@@ -19983,21 +19983,21 @@ void CvPlayer::updateInventionEffectCacheSingleArray(JustInTimeArray<bool>* pArr
 
 void CvPlayer::updateInventionEffectCache()
 {
-	updateInventionEffectCacheSingleArray(&m_ja_bAllowedYields, &CvCivicInfo::getAllowsYields);
-	updateInventionEffectCacheSingleArray(&m_ja_bAllowedBonus, &CvCivicInfo::getAllowsBonuses);
-	updateInventionEffectCacheSingleArray(&m_ja_bAllowedUnits, &CvCivicInfo::getAllowsUnitClasses);
-	updateInventionEffectCacheSingleArray(&m_ja_bAllowedUnitsImmigration, &CvCivicInfo::getAllowedUnitClassImmigration);
-	updateInventionEffectCacheSingleArray(&m_ja_bAllowedBuildings, &CvCivicInfo::getAllowsBuildingTypes);
-	updateInventionEffectCacheSingleArray(&m_ja_bAllowedProfessions, &CvCivicInfo::getAllowsProfessions);
+	updateInventionEffectCacheSingleArray(&m_ba_AllowedYields, &CvCivicInfo::getAllowsYields);
+	updateInventionEffectCacheSingleArray(&m_ba_AllowedBonus, &CvCivicInfo::getAllowsBonuses);
+	updateInventionEffectCacheSingleArray(&m_ba_AllowedUnits, &CvCivicInfo::getAllowsUnitClasses);
+	updateInventionEffectCacheSingleArray(&m_ba_AllowedUnitsImmigration, &CvCivicInfo::getAllowedUnitClassImmigration);
+	updateInventionEffectCacheSingleArray(&m_ba_AllowedBuildings, &CvCivicInfo::getAllowsBuildingTypes);
+	updateInventionEffectCacheSingleArray(&m_ba_AllowedProfessions, &CvCivicInfo::getAllowsProfessions);
 	
 	// natives are always allowed to have native yields even without their inventions.
 	if (isNative())
 	{
-		for (int iYield = 0; iYield < m_ja_bAllowedYields.length(); iYield++)
+		for (int iYield = 0; iYield < m_ba_AllowedYields.length(); iYield++)
 		{
 			if (YieldGroup_AI_Native_Product((YieldTypes)iYield))
 			{
-				m_ja_bAllowedYields.set(true, iYield);
+				m_ba_AllowedYields.set(true, iYield);
 			}
 		}
 	}
@@ -20080,11 +20080,11 @@ void CvPlayer::updateInventionEffectCache()
 void CvPlayer::updateImmigrantsOnDock()
 {
 	// disallow immigrants if the unit isn't allowed
-	for (int i = 0; i < m_ja_bAllowedUnits.length(); i++)
+	for (int i = 0; i < m_ba_AllowedUnits.length(); i++)
 	{
-		if (!m_ja_bAllowedUnits.get(i))
+		if (!m_ba_AllowedUnits.get(i))
 		{
-			m_ja_bAllowedUnitsImmigration.set(false, i);
+			m_ba_AllowedUnitsImmigration.set(false, i);
 		}
 	}
 

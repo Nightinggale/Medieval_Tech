@@ -194,8 +194,11 @@ void JustInTimeArray<T>::read(CvXMLLoadUtility* pXML, const char* sTag)
 
 // tell the compile which template types to compile for
 // has to be after all template functions (read: last in file)
+
+// IMPORTANT: do not make one with <bool>
+// BoolArray should always do the job better than JIT<bool>
+
 template class JustInTimeArray <int>;
-template class JustInTimeArray <bool>;
 template class JustInTimeArray <char>;
 template class JustInTimeArray <unsigned char>;
 template class JustInTimeArray <short>;

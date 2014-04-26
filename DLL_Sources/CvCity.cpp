@@ -420,17 +420,17 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 
 void CvCity::uninit()
 {
-	m_ja_iBuildingProduction.resetContent();
-	m_ja_iBuildingProductionTime.resetContent();
-	m_ja_iBuildingOriginalOwner.resetContent();
-	m_ja_iBuildingOriginalTime.resetContent();
-	m_ja_iUnitProduction.resetContent();
-	m_ja_iUnitProductionTime.resetContent();
-	m_ba_ConTrainSpecialist.resetContent();
-	m_ja_iUnitCombatFreeExperience.resetContent();
-	m_ja_iFreePromotionCount.resetContent();
-	m_ba_HasRealBuilding.resetContent();
-	m_ba_HasFreeBuilding.resetContent();
+	m_ja_iBuildingProduction.reset();
+	m_ja_iBuildingProductionTime.reset();
+	m_ja_iBuildingOriginalOwner.reset();
+	m_ja_iBuildingOriginalTime.reset();
+	m_ja_iUnitProduction.reset();
+	m_ja_iUnitProductionTime.reset();
+	m_ba_ConTrainSpecialist.reset();
+	m_ja_iUnitCombatFreeExperience.reset();
+	m_ja_iFreePromotionCount.reset();
+	m_ba_HasRealBuilding.reset();
+	m_ba_HasFreeBuilding.reset();
 
 	SAFE_DELETE_ARRAY(m_paiWorkingPlot);
 
@@ -453,19 +453,19 @@ void CvCity::uninit()
 	m_aNetworkCityIDs.clear();
 	//Tke
 	// traderoute just-in-time - start - Nightinggale
- 	m_ba_TradeImports.releaseMemory();
- 	m_ba_TradeExports.releaseMemory();
+ 	m_ba_TradeImports.reset();
+ 	m_ba_TradeExports.reset();
 	///Tks Med
-	m_ba_TradeMarket.releaseMemory();
+	m_ba_TradeMarket.reset();
 	///TKe
- 	m_ja_iTradeThreshold.releaseMemory();
+ 	m_ja_iTradeThreshold.reset();
  	// traderoute just-in-time - end - Nightinggale
  	// transport feeder - start - Nightinggale
- 	m_ba_TradeImportsMaintain.releaseMemory();
+ 	m_ba_TradeImportsMaintain.reset();
  	// transport feeder - end - Nightinggale
 	// Teacher List - start - Nightinggale
-	m_ja_iOrderedStudents.releaseMemory();
-	m_ba_OrderedStudentsRepeat.releaseMemory();
+	m_ja_iOrderedStudents.reset();
+	m_ba_OrderedStudentsRepeat.reset();
 	// Teacher List - end - Nightinggale
 }
 
@@ -577,23 +577,23 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 	{
 		FAssertMsg((0 < GC.getNumBuildingInfos()),  "GC.getNumBuildingInfos() is not greater than zero but an array is being allocated in CvCity::reset");
 		
-		m_ja_iBuildingProduction.resetContent();
-		m_ja_iBuildingProductionTime.resetContent();
-		m_ja_iBuildingOriginalOwner.resetContent();
-		m_ja_iBuildingOriginalTime.resetContent();
-		m_ba_HasRealBuilding.resetContent();
-		m_ba_HasFreeBuilding.resetContent();
+		m_ja_iBuildingProduction.reset();
+		m_ja_iBuildingProductionTime.reset();
+		m_ja_iBuildingOriginalOwner.reset();
+		m_ja_iBuildingOriginalTime.reset();
+		m_ba_HasRealBuilding.reset();
+		m_ba_HasFreeBuilding.reset();
 
 		FAssertMsg((0 < GC.getNumUnitInfos()),  "GC.getNumUnitInfos() is not greater than zero but an array is being allocated in CvCity::reset");
-		m_ja_iUnitProduction.resetContent();
-		m_ja_iUnitProductionTime.resetContent();
-		m_ba_ConTrainSpecialist.resetContent();
+		m_ja_iUnitProduction.reset();
+		m_ja_iUnitProductionTime.reset();
+		m_ba_ConTrainSpecialist.reset();
 
 		FAssertMsg((0 < GC.getNumUnitCombatInfos()),  "GC.getNumUnitCombatInfos() is not greater than zero but an array is being allocated in CvCity::reset");
-		m_ja_iUnitCombatFreeExperience.resetContent();
+		m_ja_iUnitCombatFreeExperience.reset();
 
 		FAssertMsg((0 < GC.getNumPromotionInfos()),  "GC.getNumPromotionInfos() is not greater than zero but an array is being allocated in CvCity::reset");
-		m_ja_iFreePromotionCount.resetContent();
+		m_ja_iFreePromotionCount.reset();
 
 		FAssertMsg((0 < NUM_CITY_PLOTS),  "NUM_CITY_PLOTS is not greater than zero but an array is being allocated in CvCity::reset");
 		m_paiWorkingPlot = new int[NUM_CITY_PLOTS];
@@ -607,8 +607,8 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 	}
 
 	// R&R, ray, finishing Custom House Screen
-	m_ja_iCustomHouseSellThreshold.releaseMemory();
-	m_ba_CustomHouseNeverSell.releaseMemory();
+	m_ja_iCustomHouseSellThreshold.reset();
+	m_ba_CustomHouseNeverSell.reset();
 	// R&R, ray, finishing Custom House Screen END
 
 	if (!bConstructorCall)
@@ -11865,7 +11865,7 @@ void CvCity::UpdateBuildingAffectedCache()
 	m_cache_MaxYieldCapacity[NUM_YIELD_TYPES] = getMaxYieldCapacityUncached(NO_YIELD);
 	// cache getMaxYieldCapacity - end - Nightinggale
 
-	this->m_ja_iBuildingYieldDemands.resetContent(); // domestic yield demand - Nightinggale
+	this->m_ja_iBuildingYieldDemands.reset(); // domestic yield demand - Nightinggale
 
 	this->m_iMarketCap = GC.getXMLval(XML_NO_MARKED_SALES_CAP);
 
@@ -11873,7 +11873,7 @@ void CvCity::UpdateBuildingAffectedCache()
 	this->m_iCenterPlotBonus = 0;
 	///Tke
 
-	m_ja_iFreePromotionCount.resetContent();
+	m_ja_iFreePromotionCount.reset();
 
 	{
 		int iMaxTeachLevel = 0; // EDU remake - Nightinggale
@@ -11928,8 +11928,8 @@ void CvCity::setOrderedStudents(UnitTypes eUnit, int iCount, bool bRepeat, bool 
 {
 	if (bClearAll)
 	{
-		m_ja_iOrderedStudents.resetContent();
-		m_ba_OrderedStudentsRepeat.resetContent();
+		m_ja_iOrderedStudents.reset();
+		m_ba_OrderedStudentsRepeat.reset();
 	} else {
 		if (!(eUnit >= 0 && eUnit < GC.getNumUnitInfos() && iCount >= 0))
 		{
@@ -11963,7 +11963,7 @@ void CvCity::checkOrderedStudentsForRepeats(UnitTypes eUnit)
 	FAssert(eUnit >= 0);
 	FAssert(eUnit < GC.getNumUnitInfos());
 
-	if (m_ba_OrderedStudentsRepeat.isAllocated() && m_ja_iOrderedStudents.isEmpty(false))
+	if (m_ba_OrderedStudentsRepeat.isAllocated() && m_ja_iOrderedStudents.isEmpty())
 	{
 		for (int iUnit = 0; iUnit < m_ba_OrderedStudentsRepeat.length(); iUnit++)
 		{
@@ -12037,7 +12037,7 @@ bool CvCity::isCustomHouseNeverSell(YieldTypes eYield) const
 // domestic yield demand - start - Nightinggale
 void CvCity::setUnitYieldDemand()
 {
-	m_ja_iUnitYieldDemands.resetContent();
+	m_ja_iUnitYieldDemands.reset();
 	
 	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
 	{

@@ -288,31 +288,31 @@ void CvPlayer::uninit()
 {
 	int iI;
     ///TKs Invention Core Mod v 1.0
-	m_ja_iIdeaProgress.resetContent();
-	m_ja_iIdeasResearched.resetContent();
-	m_ja_iPreviousFatherPoints.resetContent();
-	m_ja_iTradeRouteStartingPlotX.resetContent();
-	m_ja_iTradeRouteStartingPlotY.resetContent();
-	m_ba_TradeRouteTypes.resetContent();
-	m_ja_iBonusFatherPoints.resetContent();
+	m_ja_iIdeaProgress.reset();
+	m_ja_iIdeasResearched.reset();
+	m_ja_iPreviousFatherPoints.reset();
+	m_ja_iTradeRouteStartingPlotX.reset();
+	m_ja_iTradeRouteStartingPlotY.reset();
+	m_ba_TradeRouteTypes.reset();
+	m_ja_iBonusFatherPoints.reset();
 	///TKe
-	m_ja_iImprovementCount.resetContent();
-	m_ja_iFreeBuildingCount.resetContent();
-	m_ja_iUnitClassCount.resetContent();
-	m_ja_iUnitClassMaking.resetContent();
-	m_ja_iUnitClassImmigrated.resetContent();
-	m_ja_iUnitMoveChange.resetContent();
-	m_ja_iUnitStrengthModifier.resetContent();
-	m_ja_iProfessionCombatChange.resetContent();
-	m_ja_iProfessionMoveChange.resetContent();
-	m_ja_iBuildingClassCount.resetContent();
-	m_ja_iBuildingClassMaking.resetContent();
-	m_ja_iHurryCount.resetContent();
-	m_ja_iSpecialBuildingNotRequiredCount.resetContent();
-	m_ja_iProfessionEquipmentModifier.resetContent();
-	m_ja_iTraitCount.resetContent();
+	m_ja_iImprovementCount.reset();
+	m_ja_iFreeBuildingCount.reset();
+	m_ja_iUnitClassCount.reset();
+	m_ja_iUnitClassMaking.reset();
+	m_ja_iUnitClassImmigrated.reset();
+	m_ja_iUnitMoveChange.reset();
+	m_ja_iUnitStrengthModifier.reset();
+	m_ja_iProfessionCombatChange.reset();
+	m_ja_iProfessionMoveChange.reset();
+	m_ja_iBuildingClassCount.reset();
+	m_ja_iBuildingClassMaking.reset();
+	m_ja_iHurryCount.reset();
+	m_ja_iSpecialBuildingNotRequiredCount.reset();
+	m_ja_iProfessionEquipmentModifier.reset();
+	m_ja_iTraitCount.reset();
 
-	m_ja_eCivics.resetContent();
+	m_ja_eCivics.reset();
 
 	m_triggersFired.clear();
 
@@ -490,21 +490,21 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	///TKe
 	m_eImmigrationConversion = YIELD_CROSSES;
 
-	m_ja_iSeaPlotYield.resetContent();
-	m_ja_iYieldRateModifier.resetContent();
-	m_ja_iCapitalYieldRateModifier.resetContent();
-	m_ja_iBuildingRequiredYieldModifier.resetContent();
-	m_ja_iCityExtraYield.resetContent();
-	m_ja_iExtraYieldThreshold.resetContent();
-	m_ja_iYieldBuyPrice.resetContent();
-	m_ja_iYieldTradedTotal.resetContent();
-	m_ja_iYieldBoughtTotal.resetContent();
-	m_ja_iTaxYieldModifierCount.resetContent();
-	m_ja_iVictoryYieldCount.resetContent();
-	m_ja_iTaxYieldModifierCount.resetContent();
-	m_ja_iGarrisonUnitBonus.resetContent();
-	m_ja_iUpkeepCount.resetContent();
-	m_ba_YieldEuropeTradable.resetContent();
+	m_ja_iSeaPlotYield.reset();
+	m_ja_iYieldRateModifier.reset();
+	m_ja_iCapitalYieldRateModifier.reset();
+	m_ja_iBuildingRequiredYieldModifier.reset();
+	m_ja_iCityExtraYield.reset();
+	m_ja_iExtraYieldThreshold.reset();
+	m_ja_iYieldBuyPrice.reset();
+	m_ja_iYieldTradedTotal.reset();
+	m_ja_iYieldBoughtTotal.reset();
+	m_ja_iTaxYieldModifierCount.reset();
+	m_ja_iVictoryYieldCount.reset();
+	m_ja_iTaxYieldModifierCount.reset();
+	m_ja_iGarrisonUnitBonus.reset();
+	m_ja_iUpkeepCount.reset();
+	m_ba_YieldEuropeTradable.reset();
 	
     for (iI = 0; iI < NUM_CENSURE_TYPES; iI++)
 	{
@@ -537,35 +537,35 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	{
 		FAssertMsg(0 < GC.getNumImprovementInfos(), "GC.getNumImprovementInfos() is not greater than zero but it is used to allocate memory in CvPlayer::reset");
 		///TKs Invention Core Mod v 1.0
-		m_ja_iIdeaProgress.resetContent();
-		m_ja_iIdeasResearched.resetContent();
+		m_ja_iIdeaProgress.reset();
+		m_ja_iIdeasResearched.reset();
         ///Tks Med
-		m_ja_iPreviousFatherPoints.resetContent();
-		m_ja_iBonusFatherPoints.resetContent();
+		m_ja_iPreviousFatherPoints.reset();
+		m_ja_iBonusFatherPoints.reset();
 		 ///Tke
-		m_ja_iTradeRouteStartingPlotX.resetContent();
-		m_ja_iTradeRouteStartingPlotY.resetContent();
-		m_ba_TradeRouteTypes.resetContent();
+		m_ja_iTradeRouteStartingPlotX.reset();
+		m_ja_iTradeRouteStartingPlotY.reset();
+		m_ba_TradeRouteTypes.reset();
         ///TKe
 
-		m_ja_iImprovementCount.resetContent();
-		m_ja_iFreeBuildingCount.resetContent();
-		m_ja_iUnitClassCount.resetContent();
-		m_ja_iUnitClassMaking.resetContent();
-		m_ja_iUnitClassImmigrated.resetContent();
-		m_ja_iUnitMoveChange.resetContent();
-		m_ja_iUnitStrengthModifier.resetContent();
-		m_ja_iProfessionCombatChange.resetContent();
-		m_ja_iProfessionMoveChange.resetContent();
-		m_ja_iBuildingClassCount.resetContent();
-		m_ja_iBuildingClassMaking.resetContent();
-		m_ja_iHurryCount.resetContent();
-		m_ja_iSpecialBuildingNotRequiredCount.resetContent();
+		m_ja_iImprovementCount.reset();
+		m_ja_iFreeBuildingCount.reset();
+		m_ja_iUnitClassCount.reset();
+		m_ja_iUnitClassMaking.reset();
+		m_ja_iUnitClassImmigrated.reset();
+		m_ja_iUnitMoveChange.reset();
+		m_ja_iUnitStrengthModifier.reset();
+		m_ja_iProfessionCombatChange.reset();
+		m_ja_iProfessionMoveChange.reset();
+		m_ja_iBuildingClassCount.reset();
+		m_ja_iBuildingClassMaking.reset();
+		m_ja_iHurryCount.reset();
+		m_ja_iSpecialBuildingNotRequiredCount.reset();
 
-		m_ja_eCivics.resetContent();
+		m_ja_eCivics.reset();
 
-		m_ja_iProfessionEquipmentModifier.resetContent();
-		m_ja_iTraitCount.resetContent();
+		m_ja_iProfessionEquipmentModifier.reset();
+		m_ja_iTraitCount.reset();
 
 		FAssertMsg(m_ppiImprovementYieldChange==NULL, "about to leak memory, CvPlayer::m_ppiImprovementYieldChange");
 		m_ppiImprovementYieldChange = new int*[GC.getNumImprovementInfos()];
@@ -9488,9 +9488,9 @@ void CvPlayer::doCities()
 	{
 		int iMarketCap = 0;
 		int iSold = 0;
-		aiExcessYield.resetContent();
-		aiYieldDemand.resetContent();
-		aiYieldSold.resetContent();
+		aiExcessYield.reset();
+		aiYieldDemand.reset();
+		aiYieldSold.reset();
 
 		YieldTypes eYieldMax = NO_YIELD;
 		YieldTypes eYieldMin = NUM_CARGO_YIELD_TYPES;

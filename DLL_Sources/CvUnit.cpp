@@ -266,8 +266,8 @@ void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAIT
 
 void CvUnit::uninit()
 {
-	m_ba_HasRealPromotion.resetContent();
-	m_ja_iFreePromotionCount.resetContent();
+	m_ba_HasRealPromotion.reset();
+	m_ja_iFreePromotionCount.reset();
 }
 
 
@@ -392,18 +392,18 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 	if (!bConstructorCall)
 	{
 		FAssertMsg((0 < GC.getNumPromotionInfos()), "GC.getNumPromotionInfos() is not greater than zero but an array is being allocated in CvUnit::reset");
-		m_ba_HasRealPromotion.resetContent();
-		m_ja_iFreePromotionCount.resetContent();
+		m_ba_HasRealPromotion.reset();
+		m_ja_iFreePromotionCount.reset();
 
-		m_ja_iTerrainDoubleMoveCount.resetContent();
-		m_ja_iFeatureDoubleMoveCount.resetContent();
-		m_ja_iExtraTerrainAttackPercent.resetContent();
-		m_ja_iExtraTerrainDefensePercent.resetContent();
-		m_ja_iExtraFeatureAttackPercent.resetContent();
-		m_ja_iExtraFeatureDefensePercent.resetContent();
-		m_ja_iExtraUnitClassAttackModifier.resetContent();
-		m_ja_iExtraUnitClassDefenseModifier.resetContent();
-		m_ja_iExtraUnitCombatModifier.resetContent();
+		m_ja_iTerrainDoubleMoveCount.reset();
+		m_ja_iFeatureDoubleMoveCount.reset();
+		m_ja_iExtraTerrainAttackPercent.reset();
+		m_ja_iExtraTerrainDefensePercent.reset();
+		m_ja_iExtraFeatureAttackPercent.reset();
+		m_ja_iExtraFeatureDefensePercent.reset();
+		m_ja_iExtraUnitClassAttackModifier.reset();
+		m_ja_iExtraUnitClassDefenseModifier.reset();
+		m_ja_iExtraUnitCombatModifier.reset();
 
 		AI_reset();
 	}
@@ -15737,14 +15737,14 @@ void CvUnit::updatePromotionCache()
 
 void CvUnit::reclaimCacheMemory()
 {
-	m_ja_iTerrainDoubleMoveCount.resetContent();
-	m_ja_iFeatureDoubleMoveCount.resetContent();
-	m_ja_iExtraTerrainAttackPercent.resetContent();
-	m_ja_iExtraTerrainDefensePercent.resetContent();
-	m_ja_iExtraFeatureAttackPercent.resetContent();
-	m_ja_iExtraFeatureDefensePercent.resetContent();
-	m_ja_iExtraUnitClassAttackModifier.resetContent();
-	m_ja_iExtraUnitClassDefenseModifier.resetContent();
-	m_ja_iExtraUnitCombatModifier.resetContent();
+	m_ja_iTerrainDoubleMoveCount.reset();
+	m_ja_iFeatureDoubleMoveCount.reset();
+	m_ja_iExtraTerrainAttackPercent.reset();
+	m_ja_iExtraTerrainDefensePercent.reset();
+	m_ja_iExtraFeatureAttackPercent.reset();
+	m_ja_iExtraFeatureDefensePercent.reset();
+	m_ja_iExtraUnitClassAttackModifier.reset();
+	m_ja_iExtraUnitClassDefenseModifier.reset();
+	m_ja_iExtraUnitCombatModifier.reset();
 }
 /// unit promotion effect cache - end - Nightinggale

@@ -117,7 +117,7 @@ void CvPlot::uninit()
 
 	SAFE_DELETE_ARRAY(m_abRiverCrossing);
 	///Tks TradScreen
-	m_asTradeScreenDistance.resetContent();
+	m_asTradeScreenDistance.reset();
 	///TKe
 	//SAFE_DELETE_ARRAY(m_abRevealed);
 	/// player bitmap - start - Nightinggale
@@ -209,7 +209,7 @@ void CvPlot::reset(int iX, int iY, bool bConstructorCall)
 		m_aiYield[iI] = 0;
 	}
 	///Tks TradeScreen
-	m_asTradeScreenDistance.resetContent();
+	m_asTradeScreenDistance.reset();
 	///Tke
 	updateImpassable();
 }
@@ -9499,7 +9499,7 @@ void CvPlot::changeUnitCache(int i, const CvUnit* pUnit)
 
 void CvPlot::rebuildUnitCache()
 {
-	m_aiUnitCache.resetContent();
+	m_aiUnitCache.reset();
 
 	CLLNode<IDInfo>* pUnitNode;
 	CvUnit* pLoopUnit;

@@ -100,14 +100,14 @@ void CvTeam::reset(TeamTypes eID, bool bConstructorCall)
 
 	if (!bConstructorCall)
 	{
-		m_ba_FatherIgnore.resetContent();
+		m_ba_FatherIgnore.reset();
 		///Tks Med
-		m_ja_iAccumilatedFatherPoints.resetContent();
+		m_ja_iAccumilatedFatherPoints.reset();
         ///Tke
-		m_ja_iFatherPoints.resetContent();
-		m_ja_iUnitClassCount.resetContent();
-		m_ja_iEuropeUnitsPurchased.resetContent();
-		m_ja_iBuildingClassCount.resetContent();
+		m_ja_iFatherPoints.reset();
+		m_ja_iUnitClassCount.reset();
+		m_ja_iEuropeUnitsPurchased.reset();
+		m_ja_iBuildingClassCount.reset();
 
 		m_aeRevealedBonuses.clear();
 

@@ -54,10 +54,8 @@ public:
 
 	~JustInTimeArray();
 
-	// reset content of an array if it is allocated
-	void resetContent();
-
-	void releaseMemory();
+	// restore all data to default values
+	void reset();
 
 	// non-allocated arrays contains only default values
 	// this is a really fast content check without even looking at array content
@@ -91,10 +89,10 @@ public:
 
 	JIT_ARRAY_TYPES getType() const;
 
-	bool hasContent(bool bRelease = true);
-	inline bool isEmpty(bool bRelease = true)
+	bool hasContent();
+	inline bool isEmpty()
 	{
-		return !hasContent(bRelease);
+		return !hasContent();
 	}
 
 	int getNumUsedElements() const;

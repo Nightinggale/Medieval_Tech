@@ -24,9 +24,7 @@ public:
 	~BoolArray();
 
 	// reset content of an array if it is allocated
-	void resetContent();
-
-	void releaseMemory();
+	void reset();
 
 	// non-allocated arrays contains only default values
 	// this is a really fast content check without even looking at array content

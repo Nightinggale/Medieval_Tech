@@ -19966,10 +19966,12 @@ void CvPlayer::updateInventionEffectCache(CivicTypes eChangedCivic)
 	// 4: (optional) pointer to another CvCivicInfo function. See below for recalculation rules
 	//
 	// Conditions for recalculating an array
-	// eChangedCivic is different from NO_CIVIC (useful when adding a single civic)
+	// when eChangedCivic is different from NO_CIVIC (useful when adding a single civic)
 	// 3 OR 4 is different from 0
 	// 4 is assumed to return 0 if no function is given
 	// 4 is only used to determine if something should be recalculated
+	//
+	// when eChangedCivic is NO_CIVIC (default value), then all arrays will be fully recalculated
 
 	updateInventionEffectCacheSingleArray(eChangedCivic, &m_ba_AllowedYields, &CvCivicInfo::getAllowsYields);
 	updateInventionEffectCacheSingleArray(eChangedCivic, &m_ba_AllowedBonus, &CvCivicInfo::getAllowsBonuses);

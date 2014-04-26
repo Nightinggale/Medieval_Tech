@@ -1108,8 +1108,8 @@ protected:
 	BoolArray m_ba_AllowedUnitsImmigration;
 	BoolArray m_ba_AllowedYields;
 
-	void updateInventionEffectCacheSingleArray(BoolArray* pArray, int (CvCivicInfo::*fptr)(int) const);
-	void updateInventionEffectCache();
+	void updateInventionEffectCacheSingleArray(CivicTypes eChangedCivic, BoolArray* pArray, int (CvCivicInfo::*fptr)(int) const, int (CvCivicInfo::*fptrParent)(int) const = NULL);
+	void updateInventionEffectCache(CivicTypes eChangedCivic = NO_CIVIC);
 	void updateImmigrantsOnDock();//TKs Civics
 // invention effect cache - end - Nightinggale
 

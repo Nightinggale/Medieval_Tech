@@ -18981,7 +18981,7 @@ void CvPlayer::changeIdeasResearched(CivicTypes eIndex, int iChange, bool bUpdat
 		// invention effect cache - start - Nightinggale
 		if (bUpdateCache)
 		{
-			this->updateInventionEffectCache();
+			this->updateInventionEffectCache(eIndex);
 		}
 		// invention effect cache - end - Nightinggale
 	}
@@ -19861,8 +19861,18 @@ int CvPlayer::getUnitClassFoodCost(UnitTypes eUnit, bool bResetAll) const
 ///TKe
 
 // invention effect cache - start - Nightinggale
-void CvPlayer::updateInventionEffectCacheSingleArray(BoolArray* pArray, int (CvCivicInfo::*fptr)(int) const)
+void CvPlayer::updateInventionEffectCacheSingleArray(CivicTypes eChangedCivic, BoolArray* pArray, int (CvCivicInfo::*fptr)(int) const, int (CvCivicInfo::*fptrParent)(int) const)
 {
+	CvCivicInfo& kChangedCivicInfo = GC.getCivicInfo(eChangedCivic != NO_CIVIC ? eChangedCivic : (CivicTypes)0);
+	if (eChangedCivic != NO_CIVIC && (kChangedCivicInfo.*fptr)(IS_ARRAY_ALLOCATED) == 0)
+	{
+		if (fptrParent == NULL || (kChangedCivicInfo.*fptr)(IS_ARRAY_ALLOCATED) == 0)
+		{
+			// civic in question doesn't change anything
+			return;
+		}
+	}
+
 	CvCivilizationInfo& kCivilizationInfo = GC.getCivilizationInfo(this->getCivilizationType());
 
 	for (int iIndex = 0; iIndex < pArray->length(); iIndex++)
@@ -19909,6 +19919,14 @@ void CvPlayer::updateInventionEffectCacheSingleArray(BoolArray* pArray, int (CvC
 			break;
 		}
 
+		if (eChangedCivic != NO_CIVIC && (kChangedCivicInfo.*fptr)(iParent) == 0)
+		{
+			if (fptrParent == NULL || (kChangedCivicInfo.*fptr)(iParent) == 0)
+			{
+				// this index doesn't change anything
+				continue;
+			}
+		}
 
 		if (iIndex == iTest)
 		{
@@ -19939,14 +19957,26 @@ void CvPlayer::updateInventionEffectCacheSingleArray(BoolArray* pArray, int (CvC
 	pArray->hasContent(); // free memory if possible
 }
 
-void CvPlayer::updateInventionEffectCache()
+void CvPlayer::updateInventionEffectCache(CivicTypes eChangedCivic)
 {
-	updateInventionEffectCacheSingleArray(&m_ba_AllowedYields, &CvCivicInfo::getAllowsYields);
-	updateInventionEffectCacheSingleArray(&m_ba_AllowedBonus, &CvCivicInfo::getAllowsBonuses);
-	updateInventionEffectCacheSingleArray(&m_ba_AllowedUnits, &CvCivicInfo::getAllowsUnitClasses);
-	updateInventionEffectCacheSingleArray(&m_ba_AllowedUnitsImmigration, &CvCivicInfo::getAllowedUnitClassImmigration);
-	updateInventionEffectCacheSingleArray(&m_ba_AllowedBuildings, &CvCivicInfo::getAllowsBuildingTypes);
-	updateInventionEffectCacheSingleArray(&m_ba_AllowedProfessions, &CvCivicInfo::getAllowsProfessions);
+	// arguments for updateInventionEffectCacheSingleArray()
+	// 1: should always be eChangedCivic
+	// 2: pointer to JIT array to store result in
+	// 3: pointer to CvCivicInfo function to cache result from
+	// 4: (optional) pointer to another CvCivicInfo function. See below for recalculation rules
+	//
+	// Conditions for recalculating an array
+	// eChangedCivic is different from NO_CIVIC (useful when adding a single civic)
+	// 3 OR 4 is different from 0
+	// 4 is assumed to return 0 if no function is given
+	// 4 is only used to determine if something should be recalculated
+
+	updateInventionEffectCacheSingleArray(eChangedCivic, &m_ba_AllowedYields, &CvCivicInfo::getAllowsYields);
+	updateInventionEffectCacheSingleArray(eChangedCivic, &m_ba_AllowedBonus, &CvCivicInfo::getAllowsBonuses);
+	updateInventionEffectCacheSingleArray(eChangedCivic, &m_ba_AllowedUnits, &CvCivicInfo::getAllowsUnitClasses);
+	updateInventionEffectCacheSingleArray(eChangedCivic, &m_ba_AllowedUnitsImmigration, &CvCivicInfo::getAllowedUnitClassImmigration, &CvCivicInfo::getAllowsUnitClasses);
+	updateInventionEffectCacheSingleArray(eChangedCivic, &m_ba_AllowedBuildings, &CvCivicInfo::getAllowsBuildingTypes);
+	updateInventionEffectCacheSingleArray(eChangedCivic, &m_ba_AllowedProfessions, &CvCivicInfo::getAllowsProfessions);
 	
 	// natives are always allowed to have native yields even without their inventions.
 	if (isNative())

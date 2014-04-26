@@ -7,6 +7,9 @@
 
 #include "CvDefines.h"
 
+/// index to ask for to tell if the array only contain default values
+#define IS_ARRAY_ALLOCATED -768 
+
 enum DllExport GameStateTypes
 {
 	GAMESTATE_ON,

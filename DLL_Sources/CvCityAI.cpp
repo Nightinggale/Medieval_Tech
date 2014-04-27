@@ -62,7 +62,7 @@ void CvCityAI::AI_init()
 
 void CvCityAI::AI_uninit()
 {
-	m_ba_Emphasize.resetContent();
+	m_ba_Emphasize.reset();
 }
 
 
@@ -91,11 +91,11 @@ void CvCityAI::AI_reset()
 
 	m_routeToCity.reset();
 
-	m_ja_iYieldOutputWeight.resetContent();
-	m_ja_iNeededYield.resetContent();
-	m_ja_iTradeBalance.resetContent();
-	m_ja_iYieldAdvantage.resetContent();
-	m_ja_iEmphasizeYieldCount.resetContent();
+	m_ja_iYieldOutputWeight.reset();
+	m_ja_iNeededYield.reset();
+	m_ja_iTradeBalance.reset();
+	m_ja_iYieldAdvantage.reset();
+	m_ja_iEmphasizeYieldCount.reset();
 
 	for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
 	{
@@ -120,7 +120,7 @@ void CvCityAI::AI_reset()
 	m_iWorkersNeeded = 0;
 	m_iWorkersHave = 0;
 
-	m_ba_Emphasize.resetContent();
+	m_ba_Emphasize.reset();
 }
 
 
@@ -2183,7 +2183,7 @@ void CvCityAI::AI_doNative()
 
 void CvCityAI::AI_resetTradedYields()
 {
-	m_ja_iTradeBalance.resetContent();
+	m_ja_iTradeBalance.reset();
 }
 
 //This should only be called once per turn.
@@ -4083,7 +4083,7 @@ YieldTypes CvCityAI::AI_getDesiredYield() const
 void CvCityAI::AI_updateNeededYields()
 {
 	//This function has been updated to be invariant of the current workforce allocation.
-	m_ja_iNeededYield.resetContent();
+	m_ja_iNeededYield.reset();
 
 	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
 	{

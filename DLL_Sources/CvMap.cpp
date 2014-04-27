@@ -100,8 +100,8 @@ void CvMap::init(CvMapInitData* pInitInfo/*=NULL*/)
 
 void CvMap::uninit()
 {
-	m_ja_iNumBonus.resetContent();
-	m_ja_iNumBonusOnLand.resetContent();
+	m_ja_iNumBonus.reset();
+	m_ja_iNumBonusOnLand.reset();
 
 	SAFE_DELETE_ARRAY(m_pMapPlots);
 
@@ -172,8 +172,8 @@ void CvMap::reset(CvMapInitData* pInitInfo)
 		gDLL->getPythonIFace()->pythonGetWrapXY(&m_bWrapX, &m_bWrapY);
 	}
 
-	m_ja_iNumBonus.resetContent();
-	m_ja_iNumBonusOnLand.resetContent();
+	m_ja_iNumBonus.reset();
+	m_ja_iNumBonusOnLand.reset();
 
 	m_areas.removeAll();
 }

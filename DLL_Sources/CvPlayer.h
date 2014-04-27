@@ -958,9 +958,9 @@ protected:
 	int* m_aiTradingPostCount;
 	YieldArray<int> m_ja_iUpkeepCount;
 	YieldArray<int> m_ja_iGarrisonUnitBonus;
-	EuropeArray<int>   m_ja_iTradeRouteStartingPlotX;
-	EuropeArray<int>   m_ja_iTradeRouteStartingPlotY;
-	EuropeArray<bool>  m_ja_bTradeRouteTypes;
+	EuropeArray<int> m_ja_iTradeRouteStartingPlotX;
+	EuropeArray<int> m_ja_iTradeRouteStartingPlotY;
+	BoolArray m_ba_TradeRouteTypes; // EuropeArray
 	///Tke
 
 	BoolArray m_ba_YieldEuropeTradable;
@@ -1000,7 +1000,7 @@ protected:
 	// cache CvPlayer::getYieldEquipmentAmount - end - Nightinggale
 
 	std::vector<EventTriggerTypes> m_triggersFired;
-	CivicTypes* m_paeCivics;
+	CivicOptionArray<CivicTypes> m_ja_eCivics;
 	int** m_ppiImprovementYieldChange;
 	int** m_ppiBuildingYieldChange;
 	CLinkList<int> m_groupCycle;
@@ -1101,17 +1101,15 @@ public:
 	//int getCityPlotFoodBonus() const;
 
 protected:
-	YieldArray<bool> m_ja_bAllowedYields;
-	UnitArray<bool> m_ja_bAllowedUnits;
-	UnitArray<bool> m_ja_bAllowedUnitsImmigration;
-	BuildingArray<bool> m_ja_bAllowedBuildings;
-	ProfessionArray<bool> m_ja_bAllowedProfessions;
-	BonusArray<bool> m_ja_bAllowedBonus;
+	BoolArray m_ba_AllowedBonus;
+	BoolArray m_ba_AllowedBuildings;
+	BoolArray m_ba_AllowedProfessions;
+	BoolArray m_ba_AllowedUnits;
+	BoolArray m_ba_AllowedUnitsImmigration;
+	BoolArray m_ba_AllowedYields;
 
-	
-
-	void updateInventionEffectCacheSingleArray(JustInTimeArray<bool>* pArray, int (CvCivicInfo::*fptr)(int) const);
-	void updateInventionEffectCache();
+	void updateInventionEffectCacheSingleArray(CivicTypes eChangedCivic, BoolArray* pArray, int (CvCivicInfo::*fptr)(int) const, int (CvCivicInfo::*fptrParent)(int) const = NULL);
+	void updateInventionEffectCache(CivicTypes eChangedCivic = NO_CIVIC);
 	void updateImmigrantsOnDock();//TKs Civics
 // invention effect cache - end - Nightinggale
 
@@ -1167,35 +1165,35 @@ inline bool CvPlayer::hasContentsAnyYieldEquipmentAmountSecure(ProfessionTypes e
 inline bool CvPlayer::canUseYield(YieldTypes eYield) const
 {
 	FAssert(eYield < NUM_YIELD_TYPES);
-	return eYield >= 0 ? this->m_ja_bAllowedYields.get(eYield) : false;
+	return eYield >= 0 ? this->m_ba_AllowedYields.get(eYield) : false;
 }
 
 inline bool CvPlayer::canUseUnit(UnitTypes eUnit) const
 {
 	FAssert(eUnit < GC.getNumUnitInfos());
-	return eUnit >= 0 ? this->m_ja_bAllowedUnits.get(eUnit) : false;
+	return eUnit >= 0 ? this->m_ba_AllowedUnits.get(eUnit) : false;
 }
 
 inline bool CvPlayer::canUseUnitImmigration(UnitTypes eUnit) const
 {
 	FAssert(eUnit < GC.getNumUnitInfos());
-	return eUnit >= 0 ? this->m_ja_bAllowedUnitsImmigration.get(eUnit) : false;
+	return eUnit >= 0 ? this->m_ba_AllowedUnitsImmigration.get(eUnit) : false;
 }
 
 inline bool CvPlayer::canUseBuilding(BuildingTypes eBuilding) const
 {
-	return eBuilding >= 0 ? this->m_ja_bAllowedBuildings.get(eBuilding) : false;
+	return eBuilding >= 0 ? this->m_ba_AllowedBuildings.get(eBuilding) : false;
 }
 
 inline bool CvPlayer::canUseProfession(ProfessionTypes eProfession) const
 {
 	FAssert(eProfession < GC.getNumProfessionInfos());
-	return eProfession >= 0 ? this->m_ja_bAllowedProfessions.get(eProfession) : false;
+	return eProfession >= 0 ? this->m_ba_AllowedProfessions.get(eProfession) : false;
 }
 
 inline bool CvPlayer::canUseBonus(BonusTypes eBonus) const
 {
-	return eBonus >= 0 ? m_ja_bAllowedBonus.get(eBonus) : false;
+	return eBonus >= 0 ? m_ba_AllowedBonus.get(eBonus) : false;
 }
 
 inline int CvPlayer::getCityPlotFoodBonus() const

@@ -35,6 +35,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="MemoryManager.cpp" />
     <ClCompile Include="BoolArray.cpp" />
     <ClCompile Include="JustInTimeArray.cpp" />
     <ClCompile Include="CvInfoProfessions.cpp" />
@@ -144,6 +145,7 @@
     <None Include="interfaceDirtyBits.inl" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MemoryManager.h" />
     <ClInclude Include="BoolArray.h" />
     <ClInclude Include="CvInfoProfessions.h" />
     <ClInclude Include="CyPlotGroup.h" />

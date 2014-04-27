@@ -44,19 +44,20 @@ CvPlayer::CvPlayer()
 // invention effect cache - start - Nightinggale
 // set the default to release memory when everything is allowed instead of when nothing is allowed
 // presumably the case where nothing is allowed will never happen while allowing all say yields can happen in late game
-: m_ja_bAllowedYields(true)
-, m_ja_bAllowedBonus(true)
-, m_ja_bAllowedUnits(true)
-, m_ja_bAllowedUnitsImmigration(true)
-, m_ja_bAllowedBuildings(true)
-, m_ja_bAllowedProfessions(true)
+: m_ba_AllowedYields(JIT_ARRAY_YIELD, true)
+, m_ba_AllowedBonus(JIT_ARRAY_BONUS, true)
+, m_ba_AllowedUnits(JIT_ARRAY_UNIT, true)
+, m_ba_AllowedUnitsImmigration(JIT_ARRAY_UNIT, true)
+, m_ba_AllowedBuildings(JIT_ARRAY_BUILDING, true)
+, m_ba_AllowedProfessions(JIT_ARRAY_PROFESSION, true)
 // invention effect cache - end - Nightinggale
 ///TK Civics
 , m_ja_iTradeRouteStartingPlotX(INVALID_PLOT_COORD)
 , m_ja_iTradeRouteStartingPlotY(INVALID_PLOT_COORD)
-, m_ja_bTradeRouteTypes(true)
+, m_ba_TradeRouteTypes(JIT_ARRAY_EUROPE, true)
 ///Tke
 , m_ba_YieldEuropeTradable(JIT_ARRAY_YIELD, true)
+, m_ja_eCivics(NO_CIVIC)
 {
 	m_aiMissionaryPoints = new int[MAX_PLAYERS];
 	m_aiMissionaryThresholdMultiplier = new int[MAX_PLAYERS];
@@ -287,31 +288,31 @@ void CvPlayer::uninit()
 {
 	int iI;
     ///TKs Invention Core Mod v 1.0
-	m_ja_iIdeaProgress.resetContent();
-	m_ja_iIdeasResearched.resetContent();
-	m_ja_iPreviousFatherPoints.resetContent();
-	m_ja_iTradeRouteStartingPlotX.resetContent();
-	m_ja_iTradeRouteStartingPlotY.resetContent();
-	m_ja_bTradeRouteTypes.resetContent();
-	m_ja_iBonusFatherPoints.resetContent();
+	m_ja_iIdeaProgress.reset();
+	m_ja_iIdeasResearched.reset();
+	m_ja_iPreviousFatherPoints.reset();
+	m_ja_iTradeRouteStartingPlotX.reset();
+	m_ja_iTradeRouteStartingPlotY.reset();
+	m_ba_TradeRouteTypes.reset();
+	m_ja_iBonusFatherPoints.reset();
 	///TKe
-	m_ja_iImprovementCount.resetContent();
-	m_ja_iFreeBuildingCount.resetContent();
-	m_ja_iUnitClassCount.resetContent();
-	m_ja_iUnitClassMaking.resetContent();
-	m_ja_iUnitClassImmigrated.resetContent();
-	m_ja_iUnitMoveChange.resetContent();
-	m_ja_iUnitStrengthModifier.resetContent();
-	m_ja_iProfessionCombatChange.resetContent();
-	m_ja_iProfessionMoveChange.resetContent();
-	m_ja_iBuildingClassCount.resetContent();
-	m_ja_iBuildingClassMaking.resetContent();
-	m_ja_iHurryCount.resetContent();
-	m_ja_iSpecialBuildingNotRequiredCount.resetContent();
-	m_ja_iProfessionEquipmentModifier.resetContent();
-	m_ja_iTraitCount.resetContent();
+	m_ja_iImprovementCount.reset();
+	m_ja_iFreeBuildingCount.reset();
+	m_ja_iUnitClassCount.reset();
+	m_ja_iUnitClassMaking.reset();
+	m_ja_iUnitClassImmigrated.reset();
+	m_ja_iUnitMoveChange.reset();
+	m_ja_iUnitStrengthModifier.reset();
+	m_ja_iProfessionCombatChange.reset();
+	m_ja_iProfessionMoveChange.reset();
+	m_ja_iBuildingClassCount.reset();
+	m_ja_iBuildingClassMaking.reset();
+	m_ja_iHurryCount.reset();
+	m_ja_iSpecialBuildingNotRequiredCount.reset();
+	m_ja_iProfessionEquipmentModifier.reset();
+	m_ja_iTraitCount.reset();
 
-	SAFE_DELETE_ARRAY(m_paeCivics);
+	m_ja_eCivics.reset();
 
 	m_triggersFired.clear();
 
@@ -489,21 +490,21 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	///TKe
 	m_eImmigrationConversion = YIELD_CROSSES;
 
-	m_ja_iSeaPlotYield.resetContent();
-	m_ja_iYieldRateModifier.resetContent();
-	m_ja_iCapitalYieldRateModifier.resetContent();
-	m_ja_iBuildingRequiredYieldModifier.resetContent();
-	m_ja_iCityExtraYield.resetContent();
-	m_ja_iExtraYieldThreshold.resetContent();
-	m_ja_iYieldBuyPrice.resetContent();
-	m_ja_iYieldTradedTotal.resetContent();
-	m_ja_iYieldBoughtTotal.resetContent();
-	m_ja_iTaxYieldModifierCount.resetContent();
-	m_ja_iVictoryYieldCount.resetContent();
-	m_ja_iTaxYieldModifierCount.resetContent();
-	m_ja_iGarrisonUnitBonus.resetContent();
-	m_ja_iUpkeepCount.resetContent();
-	m_ba_YieldEuropeTradable.resetContent();
+	m_ja_iSeaPlotYield.reset();
+	m_ja_iYieldRateModifier.reset();
+	m_ja_iCapitalYieldRateModifier.reset();
+	m_ja_iBuildingRequiredYieldModifier.reset();
+	m_ja_iCityExtraYield.reset();
+	m_ja_iExtraYieldThreshold.reset();
+	m_ja_iYieldBuyPrice.reset();
+	m_ja_iYieldTradedTotal.reset();
+	m_ja_iYieldBoughtTotal.reset();
+	m_ja_iTaxYieldModifierCount.reset();
+	m_ja_iVictoryYieldCount.reset();
+	m_ja_iTaxYieldModifierCount.reset();
+	m_ja_iGarrisonUnitBonus.reset();
+	m_ja_iUpkeepCount.reset();
+	m_ba_YieldEuropeTradable.reset();
 	
     for (iI = 0; iI < NUM_CENSURE_TYPES; iI++)
 	{
@@ -536,40 +537,35 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	{
 		FAssertMsg(0 < GC.getNumImprovementInfos(), "GC.getNumImprovementInfos() is not greater than zero but it is used to allocate memory in CvPlayer::reset");
 		///TKs Invention Core Mod v 1.0
-		m_ja_iIdeaProgress.resetContent();
-		m_ja_iIdeasResearched.resetContent();
+		m_ja_iIdeaProgress.reset();
+		m_ja_iIdeasResearched.reset();
         ///Tks Med
-		m_ja_iPreviousFatherPoints.resetContent();
-		m_ja_iBonusFatherPoints.resetContent();
+		m_ja_iPreviousFatherPoints.reset();
+		m_ja_iBonusFatherPoints.reset();
 		 ///Tke
-		m_ja_iTradeRouteStartingPlotX.resetContent();
-		m_ja_iTradeRouteStartingPlotY.resetContent();
-		m_ja_bTradeRouteTypes.resetContent();
+		m_ja_iTradeRouteStartingPlotX.reset();
+		m_ja_iTradeRouteStartingPlotY.reset();
+		m_ba_TradeRouteTypes.reset();
         ///TKe
 
-		m_ja_iImprovementCount.resetContent();
-		m_ja_iFreeBuildingCount.resetContent();
-		m_ja_iUnitClassCount.resetContent();
-		m_ja_iUnitClassMaking.resetContent();
-		m_ja_iUnitClassImmigrated.resetContent();
-		m_ja_iUnitMoveChange.resetContent();
-		m_ja_iUnitStrengthModifier.resetContent();
-		m_ja_iProfessionCombatChange.resetContent();
-		m_ja_iProfessionMoveChange.resetContent();
-		m_ja_iBuildingClassCount.resetContent();
-		m_ja_iBuildingClassMaking.resetContent();
-		m_ja_iHurryCount.resetContent();
-		m_ja_iSpecialBuildingNotRequiredCount.resetContent();
+		m_ja_iImprovementCount.reset();
+		m_ja_iFreeBuildingCount.reset();
+		m_ja_iUnitClassCount.reset();
+		m_ja_iUnitClassMaking.reset();
+		m_ja_iUnitClassImmigrated.reset();
+		m_ja_iUnitMoveChange.reset();
+		m_ja_iUnitStrengthModifier.reset();
+		m_ja_iProfessionCombatChange.reset();
+		m_ja_iProfessionMoveChange.reset();
+		m_ja_iBuildingClassCount.reset();
+		m_ja_iBuildingClassMaking.reset();
+		m_ja_iHurryCount.reset();
+		m_ja_iSpecialBuildingNotRequiredCount.reset();
 
-		FAssertMsg(m_paeCivics==NULL, "about to leak memory, CvPlayer::m_paeCivics");
-		m_paeCivics = new CivicTypes [GC.getNumCivicOptionInfos()];
-		for (iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
-		{
-			m_paeCivics[iI] = NO_CIVIC;
-		}
+		m_ja_eCivics.reset();
 
-		m_ja_iProfessionEquipmentModifier.resetContent();
-		m_ja_iTraitCount.resetContent();
+		m_ja_iProfessionEquipmentModifier.reset();
+		m_ja_iTraitCount.reset();
 
 		FAssertMsg(m_ppiImprovementYieldChange==NULL, "about to leak memory, CvPlayer::m_ppiImprovementYieldChange");
 		m_ppiImprovementYieldChange = new int*[GC.getNumImprovementInfos()];
@@ -8170,9 +8166,7 @@ void CvPlayer::changeSpecialBuildingNotRequiredCount(SpecialBuildingTypes eIndex
 
 CivicTypes CvPlayer::getCivic(CivicOptionTypes eIndex) const
 {
-	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
-	FAssertMsg(eIndex < GC.getNumCivicOptionInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paeCivics[eIndex];
+	return m_ja_eCivics.get(eIndex);
 }
 
 void CvPlayer::setCivic(CivicOptionTypes eIndex, CivicTypes eNewValue)
@@ -8185,7 +8179,7 @@ void CvPlayer::setCivic(CivicOptionTypes eIndex, CivicTypes eNewValue)
     {
 		// TODO this code should never be reached anymore, it it doesn't FAssert then remove it
 		FAssert(false);
-		m_paeCivics[eIndex] = NO_CIVIC;
+		m_ja_eCivics.set(NO_CIVIC, eIndex);
         return;
         //eOldCivic = NO_CIVIC;
         //bIdea = true;
@@ -8199,7 +8193,7 @@ void CvPlayer::setCivic(CivicOptionTypes eIndex, CivicTypes eNewValue)
 	{
 	    //if (!bIdea)
 	    //{
-        m_paeCivics[eIndex] = eNewValue;
+       m_ja_eCivics.set(eNewValue, eIndex);
 	   // }
 	   ///TK end Update
  ///TKe
@@ -9494,9 +9488,9 @@ void CvPlayer::doCities()
 	{
 		int iMarketCap = 0;
 		int iSold = 0;
-		aiExcessYield.resetContent();
-		aiYieldDemand.resetContent();
-		aiYieldSold.resetContent();
+		aiExcessYield.reset();
+		aiYieldDemand.reset();
+		aiYieldSold.reset();
 
 		YieldTypes eYieldMax = NO_YIELD;
 		YieldTypes eYieldMin = NUM_CARGO_YIELD_TYPES;
@@ -11409,6 +11403,8 @@ void CvPlayer::processCivicNotSaved(CivicTypes eCivic, int iChange)
 	changeFreeExperience(kCivicInfo.getFreeExperience() * iChange);
 	changeRevolutionEuropeTradeCount(kCivicInfo.isRevolutionEuropeTrade() ? iChange : 0);
 
+	m_iCityPlotFoodBonus += iChange * kCivicInfo.getCenterPlotFoodBonus();
+
 	for (int iI = 0; iI < GC.getNumHurryInfos(); iI++)
 	{
 		changeHurryCount(((HurryTypes)iI), ((kCivicInfo.isHurry(iI)) ? iChange : 0));
@@ -11571,7 +11567,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(NUM_CENSURE_TYPES, m_aiCensureTypes);
 	m_ja_iTradeRouteStartingPlotX.read(pStream);
 	m_ja_iTradeRouteStartingPlotY.read(pStream);
-	m_ja_bTradeRouteTypes.read(pStream);
+	m_ba_TradeRouteTypes.read(pStream);
 	///Tke
 	pStream->Read(MAX_PLAYERS, m_aiMissionaryPoints);
 	pStream->Read(MAX_PLAYERS, m_aiMissionaryThresholdMultiplier);
@@ -11598,32 +11594,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	m_ja_iBuildingClassMaking.read(pStream);
 	m_ja_iProfessionEquipmentModifier.read(pStream);
 	m_ja_iTraitCount.read(pStream);
-
-	/// JIT array save - start - Nightinggale
-	//for (iI=0;iI<GC.getNumCivicOptionInfos();iI++)
-	//{
-	//	pStream->Read((int*)&m_paeCivics[iI]);
-	//}
-	{
-		// read the same number of civics as civic types at the time of load
-		// convert the index to the current index and then save the converted civic type
-		int iLength = 0;
-		pStream->Read(&iLength);
-		for (int iI=0; iI < iLength; iI++)
-		{
-			CivicTypes eCivic = NO_CIVIC;
-			pStream->Read(&eCivic);
-
-			int iIndex = GC.getGameINLINE().convertArrayInfo(JIT_ARRAY_CIVIC_OPTION, iI);
-			if (iIndex > -1 && iIndex < GC.getNumCivicOptionInfos())
-			{
-				// store converted civic in converted civic option index
-				m_paeCivics[iIndex] = eCivic;
-			}
-		}
-	}
-	/// JIT array save - end - Nightinggale
-
+	m_ja_eCivics.read(pStream);
 	m_groupCycle.Read(pStream);
 	{
 		CvWString szBuffer;
@@ -12014,7 +11985,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(NUM_CENSURE_TYPES, m_aiCensureTypes);
 	m_ja_iTradeRouteStartingPlotX.write(pStream);
 	m_ja_iTradeRouteStartingPlotY.write(pStream);
-	m_ja_bTradeRouteTypes.write(pStream);
+	m_ba_TradeRouteTypes.write(pStream);
 	///Tke
 	pStream->Write(MAX_PLAYERS, m_aiMissionaryPoints);
 	pStream->Write(MAX_PLAYERS, m_aiMissionaryThresholdMultiplier);
@@ -12041,15 +12012,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	m_ja_iBuildingClassMaking.write(pStream);
 	m_ja_iProfessionEquipmentModifier.write(pStream);
 	m_ja_iTraitCount.write(pStream);
-
-	/// JIT array save - start - Nightinggale
-	pStream->Write(GC.getNumCivicOptionInfos());
-	/// JIT array save - end - Nightinggale
-	for (int iI=0;iI<GC.getNumCivicOptionInfos();iI++)
-	{
-		pStream->Write(m_paeCivics[iI]);
-	}
-
+	m_ja_eCivics.write(pStream);
 	m_groupCycle.Write(pStream);
 	{
 		uint iSize = m_aszCityNames.size();
@@ -14943,19 +14906,16 @@ int CvPlayer::getSingleCivicUpkeep(CivicTypes eCivic, bool bIgnoreAnarchy) const
 
 int CvPlayer::getCivicUpkeep(CivicTypes* paeCivics, bool bIgnoreAnarchy) const
 {
-	int iTotalUpkeep;
-	int iI;
+	// redesigned function to use JIT
+	// the concept is unchanged
+	// Nightinggale
 
-	if (paeCivics == NULL)
+	int iTotalUpkeep = 0;
+
+	for (int iI = 0; iI < m_ja_eCivics.length(); iI++)
 	{
-		paeCivics = m_paeCivics;
-	}
-
-	iTotalUpkeep = 0;
-
-	for (iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
-	{
-		iTotalUpkeep += getSingleCivicUpkeep(paeCivics[iI], bIgnoreAnarchy);
+		CivicTypes eCivic = paeCivics != NULL ? paeCivics[iI] : m_ja_eCivics.get(iI);
+		iTotalUpkeep += getSingleCivicUpkeep(eCivic, bIgnoreAnarchy);
 	}
 
 	return iTotalUpkeep;
@@ -19021,7 +18981,7 @@ void CvPlayer::changeIdeasResearched(CivicTypes eIndex, int iChange, bool bUpdat
 		// invention effect cache - start - Nightinggale
 		if (bUpdateCache)
 		{
-			this->updateInventionEffectCache();
+			this->updateInventionEffectCache(eIndex);
 		}
 		// invention effect cache - end - Nightinggale
 	}
@@ -19647,13 +19607,13 @@ bool CvPlayer::getHasTradeRouteType(EuropeTypes eTradeRoute) const
     {
         return true;
     }
-	return m_ja_bTradeRouteTypes.get(eTradeRoute);
+	return m_ba_TradeRouteTypes.get(eTradeRoute);
 	//return 0;
 }
 
 void CvPlayer::setHasTradeRouteType(EuropeTypes eTradeRoute, bool bValue)
 {
-	m_ja_bTradeRouteTypes.set(bValue, eTradeRoute);
+	m_ba_TradeRouteTypes.set(bValue, eTradeRoute);
 }
 
 void CvPlayer::changeCensureType(CensureType eCensure, int iValue)
@@ -19901,8 +19861,18 @@ int CvPlayer::getUnitClassFoodCost(UnitTypes eUnit, bool bResetAll) const
 ///TKe
 
 // invention effect cache - start - Nightinggale
-void CvPlayer::updateInventionEffectCacheSingleArray(JustInTimeArray<bool>* pArray, int (CvCivicInfo::*fptr)(int) const)
+void CvPlayer::updateInventionEffectCacheSingleArray(CivicTypes eChangedCivic, BoolArray* pArray, int (CvCivicInfo::*fptr)(int) const, int (CvCivicInfo::*fptrParent)(int) const)
 {
+	CvCivicInfo& kChangedCivicInfo = GC.getCivicInfo(eChangedCivic != NO_CIVIC ? eChangedCivic : (CivicTypes)0);
+	if (eChangedCivic != NO_CIVIC && (kChangedCivicInfo.*fptr)(IS_ARRAY_ALLOCATED) == 0)
+	{
+		if (fptrParent == NULL || (kChangedCivicInfo.*fptr)(IS_ARRAY_ALLOCATED) == 0)
+		{
+			// civic in question doesn't change anything
+			return;
+		}
+	}
+
 	CvCivilizationInfo& kCivilizationInfo = GC.getCivilizationInfo(this->getCivilizationType());
 
 	for (int iIndex = 0; iIndex < pArray->length(); iIndex++)
@@ -19949,6 +19919,14 @@ void CvPlayer::updateInventionEffectCacheSingleArray(JustInTimeArray<bool>* pArr
 			break;
 		}
 
+		if (eChangedCivic != NO_CIVIC && (kChangedCivicInfo.*fptr)(iParent) == 0)
+		{
+			if (fptrParent == NULL || (kChangedCivicInfo.*fptr)(iParent) == 0)
+			{
+				// this index doesn't change anything
+				continue;
+			}
+		}
 
 		if (iIndex == iTest)
 		{
@@ -19979,23 +19957,37 @@ void CvPlayer::updateInventionEffectCacheSingleArray(JustInTimeArray<bool>* pArr
 	pArray->hasContent(); // free memory if possible
 }
 
-void CvPlayer::updateInventionEffectCache()
+void CvPlayer::updateInventionEffectCache(CivicTypes eChangedCivic)
 {
-	updateInventionEffectCacheSingleArray(&m_ja_bAllowedYields, &CvCivicInfo::getAllowsYields);
-	updateInventionEffectCacheSingleArray(&m_ja_bAllowedBonus, &CvCivicInfo::getAllowsBonuses);
-	updateInventionEffectCacheSingleArray(&m_ja_bAllowedUnits, &CvCivicInfo::getAllowsUnitClasses);
-	updateInventionEffectCacheSingleArray(&m_ja_bAllowedUnitsImmigration, &CvCivicInfo::getAllowedUnitClassImmigration);
-	updateInventionEffectCacheSingleArray(&m_ja_bAllowedBuildings, &CvCivicInfo::getAllowsBuildingTypes);
-	updateInventionEffectCacheSingleArray(&m_ja_bAllowedProfessions, &CvCivicInfo::getAllowsProfessions);
+	// arguments for updateInventionEffectCacheSingleArray()
+	// 1: should always be eChangedCivic
+	// 2: pointer to JIT array to store result in
+	// 3: pointer to CvCivicInfo function to cache result from
+	// 4: (optional) pointer to another CvCivicInfo function. See below for recalculation rules
+	//
+	// Conditions for recalculating an array
+	// when eChangedCivic is different from NO_CIVIC (useful when adding a single civic)
+	// 3 OR 4 is different from 0
+	// 4 is assumed to return 0 if no function is given
+	// 4 is only used to determine if something should be recalculated
+	//
+	// when eChangedCivic is NO_CIVIC (default value), then all arrays will be fully recalculated
+
+	updateInventionEffectCacheSingleArray(eChangedCivic, &m_ba_AllowedYields, &CvCivicInfo::getAllowsYields);
+	updateInventionEffectCacheSingleArray(eChangedCivic, &m_ba_AllowedBonus, &CvCivicInfo::getAllowsBonuses);
+	updateInventionEffectCacheSingleArray(eChangedCivic, &m_ba_AllowedUnits, &CvCivicInfo::getAllowsUnitClasses);
+	updateInventionEffectCacheSingleArray(eChangedCivic, &m_ba_AllowedUnitsImmigration, &CvCivicInfo::getAllowedUnitClassImmigration, &CvCivicInfo::getAllowsUnitClasses);
+	updateInventionEffectCacheSingleArray(eChangedCivic, &m_ba_AllowedBuildings, &CvCivicInfo::getAllowsBuildingTypes);
+	updateInventionEffectCacheSingleArray(eChangedCivic, &m_ba_AllowedProfessions, &CvCivicInfo::getAllowsProfessions);
 	
 	// natives are always allowed to have native yields even without their inventions.
 	if (isNative())
 	{
-		for (int iYield = 0; iYield < m_ja_bAllowedYields.length(); iYield++)
+		for (int iYield = 0; iYield < m_ba_AllowedYields.length(); iYield++)
 		{
 			if (YieldGroup_AI_Native_Product((YieldTypes)iYield))
 			{
-				m_ja_bAllowedYields.set(true, iYield);
+				m_ba_AllowedYields.set(true, iYield);
 			}
 		}
 	}
@@ -20021,9 +20013,6 @@ void CvPlayer::updateInventionEffectCache()
 		eLuxuryUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getXMLval(XML_DEFAULT_GROWTH_NOBLE_UNITCLASS));
 	}
 
-	// city plot food bonus
-	m_iCityPlotFoodBonus = 0;
-
 	for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
 	{
 		CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes) iCivic);
@@ -20040,8 +20029,6 @@ void CvPlayer::updateInventionEffectCache()
 
 			if (this->getIdeasResearched((CivicTypes) iCivic) > 0)
 			{
-				m_iCityPlotFoodBonus += kCivicInfo.getCenterPlotFoodBonus();
-
 				UnitClassTypes eNewGrowthClass = (UnitClassTypes)kCivicInfo.getNewDefaultUnitClass();
 				if (eNewGrowthClass != NO_UNITCLASS)
 				{
@@ -20083,11 +20070,11 @@ void CvPlayer::updateInventionEffectCache()
 void CvPlayer::updateImmigrantsOnDock()
 {
 	// disallow immigrants if the unit isn't allowed
-	for (int i = 0; i < m_ja_bAllowedUnits.length(); i++)
+	for (int i = 0; i < m_ba_AllowedUnits.length(); i++)
 	{
-		if (!m_ja_bAllowedUnits.get(i))
+		if (!m_ba_AllowedUnits.get(i))
 		{
-			m_ja_bAllowedUnitsImmigration.set(false, i);
+			m_ba_AllowedUnitsImmigration.set(false, i);
 		}
 	}
 

@@ -660,14 +660,14 @@ protected:
 	YieldTypes m_eSelectedArmor;
 	int* m_aiEventTimers;
 	PlayerBitmap m_bmTradePostBuilt;
-	YieldArray<int> m_ja_iConnectedTradeBonus;
-	YieldArray<int> m_ja_iConnectedMissionBonus;
+	YieldArray<short> m_ja_iConnectedTradeBonus;
+	YieldArray<short> m_ja_iConnectedMissionBonus;
 	///TKe
-	YieldArray<int> m_ja_iSeaPlotYield;
-	YieldArray<int> m_ja_iRiverPlotYield;
-	YieldArray<int> m_ja_iYieldRateModifier;
-	YieldArray<int> m_ja_iYieldStored;
-	YieldArray<int> m_ja_iYieldRushed;
+	YieldArray<short> m_ja_iSeaPlotYield;
+	YieldArray<short> m_ja_iRiverPlotYield;
+	YieldArray<short> m_ja_iYieldRateModifier;
+	YieldArray<short> m_ja_iYieldStored;
+	YieldArray<short> m_ja_iYieldRushed;
 	int* m_aiDomainFreeExperience;
 	int* m_aiDomainProductionModifier;
 	int* m_aiCulture;
@@ -698,12 +698,12 @@ protected:
 	std::vector<CvCity*> m_aNetworkCityIDs; //TKs Civics
 	std::vector<CvUnit*> m_aPopulationUnits;
 	// traderoute just-in-time - start - Nightinggale
- 	YieldArray<bool> ma_tradeImports;
- 	YieldArray<bool> ma_tradeExports;
+ 	BoolArray m_ba_TradeImports;
+ 	BoolArray m_ba_TradeExports;
 	///Tks
-	YieldArray<bool> ma_tradeMarket;
+	BoolArray m_ba_TradeMarket;
 	///Tke
- 	YieldArray<int> ma_tradeThreshold;
+ 	YieldArray<short> m_ja_iTradeThreshold;
  	// traderoute just-in-time - end - Nightinggale
 
 	// CACHE: cache frequently used values
@@ -772,8 +772,8 @@ protected:
 	void checkOrderedStudentsForRepeats(UnitTypes eUnit);
 	void setOrderedStudents(UnitTypes eUnit, int iCount, bool bRepeat, bool bUpdateRepeat = true, bool bClearAll = false);
 
-	UnitArray<int> ma_OrderedStudents;
-	UnitArray<bool> ma_OrderedStudentsRepeat;
+	UnitArray<unsigned char> m_ja_iOrderedStudents;
+	BoolArray m_ba_OrderedStudentsRepeat;
 	// Teacher List - end - Nightinggale
 
 	// domestic yield demand - start - Nightinggale
@@ -788,8 +788,8 @@ protected:
 	void setUnitYieldDemand();
 	void setUnitYieldDemand(UnitTypes eUnit, bool const bRemove = false);
 
-	YieldArray<int> m_aiBuildingYieldDemands; // nosave cache
-	YieldArray<int> m_aiUnitYieldDemands; // nosave cache
+	YieldArray<short> m_ja_iBuildingYieldDemands; // nosave cache
+	YieldArray<short> m_ja_iUnitYieldDemands; // nosave cache
 	int m_iMarketCap; // nosave cache
 	// domestic yield demand - end - Nightinggale
 
@@ -800,8 +800,8 @@ public:
 	void setCustomHouseNeverSell(YieldTypes eYield, bool bNeverSell);
 	bool isCustomHouseNeverSell(YieldTypes eYield) const;
 protected:
-	YieldArray<int> ma_aiCustomHouseSellThreshold;
-	YieldArray<bool> ma_aiCustomHouseNeverSell;
+	YieldArray<short> m_ja_iCustomHouseSellThreshold;
+	BoolArray m_ba_CustomHouseNeverSell;
 	// R&R, ray, finishing Custom House Screen END
 
 	// transport feeder - start - Nightinggale
@@ -817,10 +817,10 @@ public:
 	void setAutoThresholdCache();
 
 protected:
- 	YieldArray<bool> ma_tradeImportsMaintain;
-	YieldArray<bool> ma_tradeStopAutoImport;
-	YieldArray<int> ma_tradeAutoThreshold; // nosave - recalculate on load
-	YieldArray<int> ma_productionNeeded; // nosave - recalculate on load
+ 	BoolArray m_ba_TradeImportsMaintain;
+	BoolArray m_ba_TradeStopAutoImport;
+	YieldArray<short> ma_tradeAutoThreshold; // nosave - recalculate on load
+	YieldArray<short> ma_productionNeeded; // nosave - recalculate on load
 
 	// setImportsMaintain() is only allowed to be called by doTask() or it will cause desyncs
 	void setImportsMaintain(YieldTypes eYield, bool bSetting);
@@ -886,12 +886,12 @@ inline int CvCity::getTeachLevel() const
 // domestic yield demand - start - Nightinggale
 inline int CvCity::getBuildingYieldDemand(YieldTypes eYield) const
 {
-	return m_aiBuildingYieldDemands.get(eYield);
+	return m_ja_iBuildingYieldDemands.get(eYield);
 }
 
 inline int CvCity::getUnitYieldDemand(YieldTypes eYield) const
 {
-	return m_aiUnitYieldDemands.get(eYield);
+	return m_ja_iUnitYieldDemands.get(eYield);
 }
 
 inline int CvCity::getYieldDemand(YieldTypes eYield) const
@@ -908,7 +908,7 @@ inline int CvCity::getMarketCap() const
 // transport feeder - start - Nightinggale
 inline bool CvCity::isAutoImportStopped(YieldTypes eYield) const
 {
-	return ma_tradeStopAutoImport.get(eYield);
+	return m_ba_TradeStopAutoImport.get(eYield);
 }
 
 inline int CvCity::getAutoMaintainThreshold(YieldTypes eYield) const

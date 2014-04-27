@@ -7,9 +7,10 @@
 #include "CvXMLLoadUtility.h"
 #include "CvDLLXMLIFaceBase.h"
 #include "CvGameAI.h"
+#include "MemoryManager.h"
 
 template<class T>
-JustInTimeArray<T>::JustInTimeArray(JIT_ARRAY_TYPES eType, T eDefault = 0)
+JustInTimeArray<T>::JustInTimeArray(JIT_ARRAY_TYPES eType, T eDefault)
 : tArray(NULL)
 , m_iType(eType)
 , m_iLength(GC.getArrayLength(eType))
@@ -21,33 +22,13 @@ JustInTimeArray<T>::JustInTimeArray(JIT_ARRAY_TYPES eType, T eDefault = 0)
 template<class T>
 JustInTimeArray<T>::~JustInTimeArray()
 {
-	SAFE_DELETE_ARRAY(tArray);
+	reset();
 }
 
 template<class T>
-void JustInTimeArray<T>::resetContent()
+void JustInTimeArray<T>::reset()
 {
-	if (isAllocated())
-	{
-		for (int iIterator = 0; iIterator < m_iLength; ++iIterator)
-		{
-			tArray[iIterator] = m_eDefault;
-		}
-	}
-}
-
-template<class T>
-void JustInTimeArray<T>::releaseMemory()
-{
-	// TODO find best memory management
-	// releasing memory here will make the game use less memory
-	// however it also increases the risk of memory fragmentation
-	// we will need to figure out if agressive reclaiming of memory is a good idea
-#if 1
-	SAFE_DELETE_ARRAY(tArray);
-#else
-	resetContent();
-#endif
+	MMreleaseMemory(&tArray, m_iLength);
 }
 
 template<class T>
@@ -60,19 +41,28 @@ void JustInTimeArray<T>::set(T value, int iIndex)
 	{
 		if (value == m_eDefault)
 		{
-			// no need to allocate memory to assign a default (false) value
+			// no need to allocate memory to assign a default value
 			return;
 		}
-		tArray = new T[m_iLength];
-		resetContent();
+		MMallocateMemory(&tArray, m_iLength);
+		for (int iIterator = 0; iIterator < m_iLength; ++iIterator)
+		{
+			tArray[iIterator] = m_eDefault;
+		}
 	}
 	tArray[iIndex] = value;
+
+	if (value == m_eDefault)
+	{
+		// release memory if it only has default values left
+		hasContent();
+	}
 }
 
 template<class T>
 void JustInTimeArray<T>::add(T value, int iIndex)
 {
-	this->set(value + this->get(iIndex), iIndex);
+	this->set((T)(value + get(iIndex)), iIndex);
 }
 
 template<class T>
@@ -91,7 +81,7 @@ JIT_ARRAY_TYPES JustInTimeArray<T>::getType() const
 }
 
 template<class T>
-bool JustInTimeArray<T>::hasContent(bool bRelease)
+bool JustInTimeArray<T>::hasContent()
 {
 	if (tArray == NULL)
 	{
@@ -105,13 +95,9 @@ bool JustInTimeArray<T>::hasContent(bool bRelease)
 		}
 	}
 
-	if (bRelease)
-	{
-		// array is allocated but has no content
-		releaseMemory();
-	}
+	reset();
 	return false;
-};
+}
 
 template<class T>
 int JustInTimeArray<T>::getNumUsedElements() const
@@ -140,11 +126,11 @@ void JustInTimeArray<T>::read(FDataStreamBase* pStream, bool bEnable)
 		int iNumElements = 0;
 		pStream->Read(&iNumElements);
 
-		resetContent();
+		reset();
 
 		for (int iIndex = 0; iIndex < iNumElements; iIndex++)
 		{
-			int iBuffer = 0;
+			T iBuffer = (T)0;
 			pStream->Read(&iBuffer);
 			int iNewIndex = eGame.convertArrayInfo(getType(), iIndex);
 			if (iNewIndex >= 0)
@@ -164,13 +150,13 @@ void JustInTimeArray<T>::write(FDataStreamBase* pStream)
 
 	if (iNumElements == 0)
 	{
-		releaseMemory();
+		reset();
 	}
 	else
 	{
 		for (int iIndex = 0; iIndex < iNumElements; iIndex++)
 		{
-			pStream->Write((int)get(iIndex));
+			pStream->Write(get(iIndex));
 		}
 	}
 }
@@ -181,21 +167,31 @@ void JustInTimeArray<T>::read(CvXMLLoadUtility* pXML, const char* sTag)
 	// read the data into a temp int array and then set the permanent array with those values.
 	// this is a workaround for template issues
 	FAssert(this->m_iLength > 0);
-	int *iArray = new int[this->m_iLength];
+	int *iArray;
+	MMallocateMemory(&iArray, m_iLength);
 	pXML->SetVariableListTagPair(&iArray, sTag, this->m_iLength, 0);
 	for (int i = 0; i < this->m_iLength; i++)
 	{
-		this->set(iArray[i], i);
+		this->set((T)iArray[i], i);
 	}
-	SAFE_DELETE_ARRAY(iArray);
+	MMreleaseMemory(&iArray, m_iLength);
 	this->hasContent(); // release array if possible
 }
 
 
 // tell the compile which template types to compile for
 // has to be after all template functions (read: last in file)
+
+// IMPORTANT: do not make one with <bool>
+// BoolArray should always do the job better than JIT<bool>
+
 template class JustInTimeArray <int>;
-template class JustInTimeArray <bool>;
 template class JustInTimeArray <char>;
 template class JustInTimeArray <unsigned char>;
 template class JustInTimeArray <short>;
+
+// array types
+// keep the amount of these to a minimum
+// they do not share the compiled code with int even though they do the same
+// this mean dublicated code in the DLL
+template class JustInTimeArray <CivicTypes>;

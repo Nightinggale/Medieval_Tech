@@ -89,8 +89,8 @@ void CvArea::init(int iID, bool bWater)
 
 void CvArea::uninit()
 {
-	m_ja_iNumBonuses.resetContent();
-	m_ja_iNumImprovements.resetContent();
+	m_ja_iNumBonuses.reset();
+	m_ja_iNumImprovements.reset();
 }
 
 
@@ -150,12 +150,6 @@ void CvArea::reset(int iID, bool bWater, bool bConstructorCall)
 			m_aaiNumTrainAIUnits[iI][iJ] = 0;
 			m_aaiNumAIUnits[iI][iJ] = 0;
 		}
-	}
-
-	if (!bConstructorCall)
-	{
-		m_ja_iNumBonuses.resetContent();
-		m_ja_iNumImprovements.resetContent();
 	}
 }
 

@@ -159,9 +159,9 @@ protected:
 	//std::vector<YieldEquipment> m_aYieldEquipments;
 	YieldArray<ProfessionYieldCost> m_acYieldEquipments;
 	//bool* m_abFreePromotions;
-	PromotionArray<bool> m_abFreePromotions;
+	BoolArray m_ba_FreePromotions;
 	///TKs Med BM
-	UnitCombatArray<bool> m_aiCombatGearTypes; // CombatGearTypes - Nightinggale
+	BoolArray m_ba_CombatGearTypes; // CombatGearTypes - Nightinggale
 	int m_iRequiredBuilding;
 	int m_iUpgradeProfession;
 	int m_iLeadUnit;
@@ -181,12 +181,12 @@ protected:
 // CombatGearTypes - start - Nightinggale
 inline bool CvProfessionInfo::getCombatGearTypes(int i) const
 {
-	return m_aiCombatGearTypes.get(i);
+	return m_ba_CombatGearTypes.get(i);
 }
 
 inline bool CvProfessionInfo::hasCombatGearTypes() const
 {
-	return m_aiCombatGearTypes.isAllocated();
+	return m_ba_CombatGearTypes.isAllocated();
 }
 // CombatGearTypes - end - Nightinggale
 
@@ -271,6 +271,6 @@ inline ProfessionYieldCost CvProfessionInfo::getYieldEquipmentAmount(int iYield)
 
 inline bool CvProfessionInfo::isFreePromotion(int i) const
 {
-	return m_abFreePromotions.get(i);
+	return m_ba_FreePromotions.get(i);
 }
 #endif

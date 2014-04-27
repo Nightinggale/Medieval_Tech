@@ -4072,16 +4072,28 @@ int CvCivicInfo::getY_Location() const
 }
 int CvCivicInfo::getAllowsYields(int i) const
 {
+	if (i == IS_ARRAY_ALLOCATED)
+	{
+		return m_aiAllowsYields ? 1 : 0;
+	}
 	return m_aiAllowsYields ? m_aiAllowsYields[i] : 0;
 }
 
 int CvCivicInfo::getAllowsBuildingTypes(int i) const
 {
+	if (i == IS_ARRAY_ALLOCATED)
+	{
+		return m_aiAllowsBuildingTypes ? 1 : 0;
+	}
 	return m_aiAllowsBuildingTypes ? m_aiAllowsBuildingTypes[i] : 0;
 }
 
 int CvCivicInfo::getAllowsUnitClasses(int i) const
 {
+	if (i == IS_ARRAY_ALLOCATED)
+	{
+		return m_aiAllowsUnitClasses ? 1 : 0;
+	}
 	return m_aiAllowsUnitClasses ? m_aiAllowsUnitClasses[i] : 0;
 }
 ///tke
@@ -4209,17 +4221,29 @@ int* CvCivicInfo::getGarrisonUnitArray() const
 }
 int CvCivicInfo::getAllowsPromotions(int i) const
 {
+	if (i == IS_ARRAY_ALLOCATED)
+	{
+		return m_aiAllowsPromotions ? 1 : 0;
+	}
 	return m_aiAllowsPromotions ? m_aiAllowsPromotions[i] : 0;
 }
 
 int CvCivicInfo::getAllowsBonuses(int i) const
 {
+	if (i == IS_ARRAY_ALLOCATED)
+	{
+		return m_aiAllowsBonuses ? 1 : 0;
+	}
 	return m_aiAllowsBonuses ? m_aiAllowsBonuses[i] : 0;
 }
 
 //Tks Civics
 int CvCivicInfo::getAllowedUnitClassImmigration(int i) const
 {
+	if (i == IS_ARRAY_ALLOCATED)
+	{
+		return m_jaAllowedUnitClassImmigration.isAllocated() ? 1 : 0;
+	}
 	return m_jaAllowedUnitClassImmigration.get(i);
 }
 //tke
@@ -4427,6 +4451,10 @@ bool CvCivicInfo::isNoneTradeable() const
 
 int CvCivicInfo::getAllowsProfessions(int i) const
 {
+	if (i == IS_ARRAY_ALLOCATED)
+	{
+		return m_aiAllowsProfessions ? 1 : 0;
+	}
 	return m_aiAllowsProfessions ? m_aiAllowsProfessions[i] : 0;
 }
 

@@ -386,15 +386,15 @@ void CvGame::regenerateMap()
 
 void CvGame::uninit()
 {
-	m_ja_iUnitCreatedCount.resetContent();
-	m_ja_iUnitClassCreatedCount.resetContent();
-	m_ja_iBuildingClassCreatedCount.resetContent();
-	m_ja_eFatherTeam.resetContent();
-	m_ja_iFatherGameTurn.resetContent();
-	m_ba_SpecialUnitValid.resetContent();
-	m_ba_SpecialBuildingValid.resetContent();
+	m_ja_iUnitCreatedCount.reset();
+	m_ja_iUnitClassCreatedCount.reset();
+	m_ja_iBuildingClassCreatedCount.reset();
+	m_ja_eFatherTeam.reset();
+	m_ja_iFatherGameTurn.reset();
+	m_ba_SpecialUnitValid.reset();
+	m_ba_SpecialBuildingValid.reset();
 	 ///TKs Invention Core Mod v 1.0
-	m_ja_iIdeasResearched.resetContent();
+	m_ja_iIdeasResearched.reset();
 	///TKe
 
 	m_aszDestroyedCities.clear();
@@ -481,17 +481,17 @@ void CvGame::reset(HandicapTypes eHandicap, bool bConstructorCall)
 
 	if (!bConstructorCall)
 	{
-		m_ja_iUnitCreatedCount.resetContent();
-		m_ja_iUnitClassCreatedCount.resetContent();
-		m_ja_iBuildingClassCreatedCount.resetContent();
+		m_ja_iUnitCreatedCount.reset();
+		m_ja_iUnitClassCreatedCount.reset();
+		m_ja_iBuildingClassCreatedCount.reset();
 
 		FAssertMsg(0 < GC.getNumFatherInfos(), "GC.getNumFatherInfos() is not greater than zero in CvGame::reset");
-		m_ja_eFatherTeam.resetContent();
-		m_ja_iFatherGameTurn.resetContent();
-		m_ba_SpecialUnitValid.resetContent();
-		m_ba_SpecialBuildingValid.resetContent();
+		m_ja_eFatherTeam.reset();
+		m_ja_iFatherGameTurn.reset();
+		m_ba_SpecialUnitValid.reset();
+		m_ba_SpecialBuildingValid.reset();
 		///TKs Invention Core Mod v 1.0
-		m_ja_iIdeasResearched.resetContent();
+		m_ja_iIdeasResearched.reset();
         ///TKe
 	}
 

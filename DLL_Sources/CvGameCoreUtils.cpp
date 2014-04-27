@@ -1733,6 +1733,21 @@ void getPlayerAIStrategyString(CvWString& szString, StrategyTypes eStrategyAI)
 //
 void postLoadGameFixes(int iFixCount)
 {
+	// WARNING: new games call this function with iFixCount = -1
+
+	/// PlotGroup - start - Nightinggale
+	if (iFixCount < 0)
+	{
+		// assign plotgroups as it is assumed the game lacks them
+		// this should only be needed for new games
+		for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+		{
+			CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+			pLoopPlot->updatePlotGroup();
+		}
+	}
+	/// PlotGroup - end - Nightinggale
+
 	/// unit plot cache - start - Nightinggale
 	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
 	{

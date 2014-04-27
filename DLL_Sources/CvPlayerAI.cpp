@@ -160,8 +160,8 @@ void CvPlayerAI::AI_init()
 
 void CvPlayerAI::AI_uninit()
 {
-	m_ja_iUnitClassWeights.resetContent();
-	m_ja_iUnitCombatWeights.resetContent();
+	m_ja_iUnitClassWeights.reset();
+	m_ja_iUnitCombatWeights.reset();
 }
 
 
@@ -223,10 +223,10 @@ void CvPlayerAI::AI_reset()
 		}
 	}
 
-	m_ja_iAverageYieldMultiplier.resetContent();
-	m_ja_iBestWorkedYieldPlots.resetContent();
-	m_ja_iBestUnworkedYieldPlots.resetContent();
-	m_ja_iYieldValuesTimes100.resetContent();
+	m_ja_iAverageYieldMultiplier.reset();
+	m_ja_iBestWorkedYieldPlots.reset();
+	m_ja_iBestUnworkedYieldPlots.reset();
+	m_ja_iYieldValuesTimes100.reset();
 
 	m_iAveragesCacheTurn = -1;
 
@@ -240,8 +240,8 @@ void CvPlayerAI::AI_reset()
 
 	m_aiAICitySites.clear();
 
-	m_ja_iUnitClassWeights.resetContent();
-	m_ja_iUnitCombatWeights.resetContent();
+	m_ja_iUnitClassWeights.reset();
+	m_ja_iUnitCombatWeights.reset();
 
 	for (iI = 0; iI < MAX_PLAYERS; iI++)
 	{
@@ -14381,7 +14381,7 @@ void CvPlayerAI::AI_doEnemyUnitData()
 		}
 	}
 
-	m_ja_iUnitCombatWeights.resetContent();
+	m_ja_iUnitCombatWeights.reset();
 
 	for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
 	{
@@ -15089,8 +15089,8 @@ void CvPlayerAI::AI_updateBestYieldPlots()
 	int aiBestWorkedYield[NUM_YIELD_TYPES];
 	int aiBestUnworkedYield[NUM_YIELD_TYPES];
 
-	m_ja_iBestWorkedYieldPlots.resetContent();
-	m_ja_iBestUnworkedYieldPlots.resetContent();
+	m_ja_iBestWorkedYieldPlots.reset();
+	m_ja_iBestUnworkedYieldPlots.reset();
 
 	for (int i = 0; i < NUM_YIELD_TYPES; ++i)
 	{

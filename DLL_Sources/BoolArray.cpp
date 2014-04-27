@@ -8,6 +8,7 @@
 #include "CvXMLLoadUtility.h"
 #include "CvDLLXMLIFaceBase.h"
 #include "CvGameAI.h"
+#include "MemoryManager.h"
 
 #define BOOL_BLOCK ( iIndex >> 5 )
 #define BOOL_INDEX ( iIndex & 0x1F )
@@ -24,8 +25,14 @@ BoolArray::~BoolArray()
 	SAFE_DELETE_ARRAY(m_iArray);
 }
 
-void BoolArray::resetContent()
+void BoolArray::reset()
 {
+	int iLength = (m_iLength + 31) / 32;
+
+	MMreleaseMemory(&m_iArray, iLength);
+
+	return;
+
 	if (isAllocated())
 	{
 		int iValue = m_bDefault ? MAX_UNSIGNED_INT : 0;
@@ -36,18 +43,6 @@ void BoolArray::resetContent()
 	}
 }
 
-void BoolArray::releaseMemory()
-{
-	// TODO find best memory management
-	// releasing memory here will make the game use less memory
-	// however it also increases the risk of memory fragmentation
-	// we will need to figure out if aggressive reclaiming of memory is a good idea
-#if 1
-	SAFE_DELETE_ARRAY(m_iArray);
-#else
-	resetContent();
-#endif
-}
 
 bool BoolArray::get(int iIndex) const
 {
@@ -63,18 +58,17 @@ void BoolArray::set(bool bValue, int iIndex)
 
 	if (m_iArray == NULL)
 	{
-		if (bValue == m_bDefault)
+		if (!bValue == !m_bDefault)
 		{
-			// no need to allocate memory to assign a default (false) value
+			// no need to allocate memory to assign a default value
 			return;
 		}
-		int iLength = m_iLength / 32;
-		if (m_iLength % 32)
+		int iLength = (m_iLength + 31) / 32;
+		MMallocateMemory(&m_iArray, iLength);
+		for (int i = 0; i < iLength; i++)
 		{
-			iLength++;
+			m_iArray[i] = m_bDefault ? MAX_UNSIGNED_INT : 0;
 		}
-		m_iArray = new unsigned int[iLength];
-		resetContent();
 	}
 	
 	if (bValue)
@@ -86,6 +80,10 @@ void BoolArray::set(bool bValue, int iIndex)
 		m_iArray[BOOL_BLOCK] &= ~SETBIT(BOOL_INDEX);
 	}
 	
+	if (!bValue != !m_bDefault)
+	{
+		hasContent();
+	}
 }
 
 JIT_ARRAY_TYPES BoolArray::getType() const
@@ -99,19 +97,27 @@ bool BoolArray::hasContent(bool bRelease)
 	{
 		return false;
 	}
-	for (int iIterator = 0; iIterator < m_iLength; ++iIterator)
+
+	int iLength = (m_iLength + 31) / 32;
+	for (int i = 0; i < iLength; i++)
 	{
-		if (get(iIterator) == m_bDefault)
+		if (m_bDefault)
 		{
-			return true;
+			if (~m_iArray[i])
+			{
+				return true;
+			}
+		}
+		else
+		{
+			if (m_iArray[i])
+			{
+				return true;
+			}
 		}
 	}
 
-	if (bRelease)
-	{
-		// array is allocated but has no content
-		releaseMemory();
-	}
+	reset();
 	return false;
 };
 
@@ -140,7 +146,7 @@ void BoolArray::read(FDataStreamBase* pStream, bool bEnable)
 		int iNumElements = 0;
 		pStream->Read(&iNumElements);
 
-		resetContent();
+		reset();
 
 		unsigned int iBuffer;
 
@@ -167,7 +173,7 @@ void BoolArray::write(FDataStreamBase* pStream)
 
 	if (iNumElements == 0)
 	{
-		releaseMemory();
+		reset();
 	}
 	else
 	{
@@ -183,13 +189,14 @@ void BoolArray::read(CvXMLLoadUtility* pXML, const char* sTag)
 	// read the data into a temp int array and then set the permanent array with those values.
 	// this is a workaround for template issues
 	FAssert(this->m_iLength > 0);
-	int *iArray = new int[this->m_iLength];
+	int *iArray;
+	MMallocateMemory(&iArray, m_iLength);
 	pXML->SetVariableListTagPair(&iArray, sTag, this->m_iLength, 0);
 	for (int i = 0; i < this->m_iLength; i++)
 	{
 		this->set(iArray[i], i);
 	}
-	SAFE_DELETE_ARRAY(iArray);
+	MMreleaseMemory(&iArray, m_iLength);
 	this->hasContent(); // release array if possible
 }
 

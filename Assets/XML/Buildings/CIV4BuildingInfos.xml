@@ -1675,16 +1675,7 @@
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
 			</BuildingClassNeededs>
-      <YieldDemands>
-        <YieldDemand>
-          <YieldType>YIELD_GRAIN</YieldType>
-          <iYieldDemand>1000</iYieldDemand>
-        </YieldDemand>
-        <YieldDemand>
-          <YieldType>YIELD_FOOD</YieldType>
-          <iYieldDemand>1000</iYieldDemand>
-        </YieldDemand>
-      </YieldDemands>
+      <YieldDemands/>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
@@ -5424,8 +5415,16 @@
 				</YieldCost>
 				<YieldCost>
 					<YieldType>YIELD_HORSES</YieldType>
-					<iCost>50</iCost>
+					<iCost>25</iCost>
 				</YieldCost>
+        <YieldCost>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iCost>25</iCost>
+        </YieldCost>
+        <YieldCost>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iCost>25</iCost>
+        </YieldCost>
 			</YieldCosts>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -5743,7 +5742,7 @@
 					<iCost>90</iCost>
 				</YieldCost>
 				<YieldCost>
-					<YieldType>YIELD_HORSES</YieldType>
+					<YieldType>YIELD_TOOLS</YieldType>
 					<iCost>100</iCost>
 				</YieldCost>
 			</YieldCosts>
@@ -5798,6 +5797,20 @@
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
 			</BuildingClassNeededs>
+      <MaxYieldModifiers>
+        <MaxYieldModifier>
+          <YieldType>YIELD_HORSES</YieldType>
+          <iModifier>100</iModifier>
+        </MaxYieldModifier>
+        <MaxYieldModifier>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iModifier>100</iModifier>
+        </MaxYieldModifier>
+        <MaxYieldModifier>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iModifier>100</iModifier>
+        </MaxYieldModifier>
+      </MaxYieldModifiers>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>

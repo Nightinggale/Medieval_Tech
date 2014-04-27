@@ -161,7 +161,12 @@ void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAIT
 
 	GC.getGameINLINE().incrementUnitCreatedCount(getUnitType());
 	GC.getGameINLINE().incrementUnitClassCreatedCount((UnitClassTypes)(m_pUnitInfo->getUnitClassType()));
-
+	///TKs Med Needs to be before updateOwnerCache
+	if (GC.getGameINLINE().isBarbarianPlayer(getOwner()))
+    {
+        setBarbarian(true);
+    }
+	//Tke
 	updateOwnerCache(1);
 
 	for (iI = 0; iI < GC.getNumPromotionInfos(); iI++)
@@ -182,10 +187,6 @@ void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAIT
     if (m_pUnitInfo->getFreeBuildingClass() == NO_BUILDINGCLASS)
     {
         setAddedFreeBuilding(true);
-    }
-    if (GC.getGameINLINE().isBarbarianPlayer(getOwner()))
-    {
-        setBarbarian(true);
     }
 	///TKe
 
@@ -4788,8 +4789,8 @@ void CvUnit::crossOcean(UnitTravelStates eNewState, bool bAIForce, EuropeTypes e
 	else
 	{
 		setUnitTravelTimer(1);
-		doUnitTravelTimer();
-		finishMoves();
+		//doUnitTravelTimer();
+		//finishMoves();
 	}
 }
 ///TKe

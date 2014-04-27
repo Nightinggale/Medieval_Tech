@@ -2668,13 +2668,17 @@ void CvUnitAI::AI_defensiveBraveMove()
                                     if (pTraderCity != NULL)
                                     {
                                             //FAssert(false);
-                                            setProfession((ProfessionTypes)GC.getXMLval(XML_DEFAULT_NATIVE_TRADE_PROFESSION));
+											int iAmount = GC.getGame().getSorenRandNum(50, "AI native bear gifts") + 50;
                                             //int iAmount = GC.getGame().getSorenRandNum(pCity->getYieldStored((YieldTypes)iYield) + 1, "AI native bear gifts");
-                                            int iAmount = GC.getGame().getSorenRandNum(pCity->getYieldStored((YieldTypes)iYield) + 1, "AI native bear gifts");
+                                            iAmount = pCity->getYieldStored((YieldTypes)iYield) * iAmount / 100;
                                             iAmount = std::min(iAmount, 100);
-                                            loadYieldAmount((YieldTypes)iYield, iAmount, false);
-                                            AI_setUnitAIState(UNITAI_STATE_SELL_TO_NATIVES);
-                                            return;
+											if (iAmount > 20)
+											{
+												setProfession((ProfessionTypes)GC.getXMLval(XML_DEFAULT_NATIVE_TRADE_PROFESSION));
+												loadYieldAmount((YieldTypes)iYield, iAmount, false);
+												AI_setUnitAIState(UNITAI_STATE_SELL_TO_NATIVES);
+												return;
+											}
                                     }
                                 }
                             }

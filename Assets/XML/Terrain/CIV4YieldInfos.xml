@@ -350,11 +350,11 @@
 			<TradeScreenTypes>
 				<TradeScreenType>
 					<TradeScreen>TRADE_SCREEN_SPICE_ROUTE_MARKET</TradeScreen>
-					<iPricePercent>175</iPricePercent>
+					<iPricePercent>150</iPricePercent>
 				</TradeScreenType>
 				<TradeScreenType>
 					<TradeScreen>TRADE_SCREEN_SILK_ROAD_MARKET</TradeScreen>
-					<iPricePercent>150</iPricePercent>
+					<iPricePercent>175</iPricePercent>
 				</TradeScreenType>
 			</TradeScreenTypes>
 		</YieldInfo>
@@ -1390,7 +1390,7 @@
 		<YieldInfo>
 			<Type>YIELD_GOLD</Type>
 			<Description>Gold</Description>
-			<Civilopedia>TXT_KEY_YIELD_SILVER_PEDIA</Civilopedia>
+			<Civilopedia>????</Civilopedia>
 			<bCargo>0</bCargo>
 			<iBuyPriceLow>0</iBuyPriceLow>
 			<iBuyPriceHigh>0</iBuyPriceHigh>

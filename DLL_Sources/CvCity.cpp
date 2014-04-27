@@ -8723,8 +8723,8 @@ void CvCity::getCityBillboardSizeIconColors(NiColorA& kDotColor, NiColorA& kText
 		}
 		else if (iMaxPop < GC.getXMLval(XML_MAX_CITY_POPULATION_COMMUNE))
 		{
-			//Else turn Blue if still growing infrastructure 
-			NiColorA kMaxPop(.50f,1,.10f,1);
+			//Else turn White if still growing infrastructure 
+			NiColorA kMaxPop(.355f,.625f,.355f,1);
 			kTextColor = kMaxPop;
 		}
 		else

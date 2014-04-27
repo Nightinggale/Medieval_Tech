@@ -30793,6 +30793,17 @@
 						<ArtDefineTag>ART_DEF_UNIT_IMPERIAL_REGULAR</ArtDefineTag>
 					</UnitMeshGroup>
 				</UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_MISSLEMAN2</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_LONGBOWMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
 				<UnitMeshGroups>
 					<ProfessionType>PROFESSION_SCOUT</ProfessionType>
 					<fMaxSpeed>1.75</fMaxSpeed>
@@ -31021,6 +31032,17 @@
 						<ArtDefineTag>ART_DEF_UNIT_PAPAL_SPEARMAN</ArtDefineTag>
 					</UnitMeshGroup>
 				</UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_MISSLEMAN2</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_LONGBOWMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
 				<UnitMeshGroups>
 					<ProfessionType>PROFESSION_SCOUT</ProfessionType>
 					<fMaxSpeed>1.75</fMaxSpeed>
@@ -31249,6 +31271,17 @@
 						<ArtDefineTag>ART_DEF_UNIT_OTTOMAN_SWORDSMAN</ArtDefineTag>
 					</UnitMeshGroup>
 				</UnitMeshGroups>
+        <UnitMeshGroups>
+          <ProfessionType>PROFESSION_MISSLEMAN2</ProfessionType>
+          <fMaxSpeed>1.75</fMaxSpeed>
+          <fPadTime>1</fPadTime>
+          <iMeleeWaveSize>4</iMeleeWaveSize>
+          <iRangedWaveSize>0</iRangedWaveSize>
+          <UnitMeshGroup>
+            <iRequired>1</iRequired>
+            <ArtDefineTag>ART_DEF_PROFESSION_LONGBOWMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </UnitMeshGroups>
 				<UnitMeshGroups>
 					<ProfessionType>PROFESSION_SCOUT</ProfessionType>
 					<fMaxSpeed>1.75</fMaxSpeed>

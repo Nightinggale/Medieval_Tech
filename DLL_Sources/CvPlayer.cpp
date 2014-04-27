@@ -17920,7 +17920,7 @@ bool CvPlayer::checkPopulation() const
 	int iLoop;
 	for (CvUnit* pLoopUnit = firstUnit(&iLoop); NULL != pLoopUnit; pLoopUnit = nextUnit(&iLoop))
 	{
-		if (pLoopUnit->getUnitInfo().isFound())
+		if (pLoopUnit->getUnitInfo().isFound() || pLoopUnit->isBarbarian())
 		{
 			++iNumPopulation;
 		}

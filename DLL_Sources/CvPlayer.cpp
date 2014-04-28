@@ -58,6 +58,7 @@ CvPlayer::CvPlayer()
 ///Tke
 , m_ba_YieldEuropeTradable(JIT_ARRAY_YIELD, true)
 , m_ja_eCivics(NO_CIVIC)
+, m_ja_iHurryCount(1)
 {
 	m_aiMissionaryPoints = new int[MAX_PLAYERS];
 	m_aiMissionaryThresholdMultiplier = new int[MAX_PLAYERS];
@@ -560,6 +561,15 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 		m_ja_iBuildingClassCount.reset();
 		m_ja_iBuildingClassMaking.reset();
 		m_ja_iHurryCount.reset();
+
+		for (iI = 0; iI < m_ja_iHurryCount.length(); iI++)
+		{
+			if (!GC.getHurryInfo((HurryTypes) iI).isStarting())
+			{
+				m_ja_iHurryCount.set(0, iI);
+			}
+		}
+
 		m_ja_iSpecialBuildingNotRequiredCount.reset();
 
 		m_ja_eCivics.reset();

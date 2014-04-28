@@ -376,10 +376,6 @@
 					<YieldType>YIELD_SILVER</YieldType>
 					<iValue>1</iValue>
 				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_SALT</YieldType>
-					<iValue>3</iValue>
-				</YieldIntegerPair>
 			</YieldIncreases>
 			<RiverSideYieldChanges/>
 			<HillsYieldChanges/>
@@ -419,11 +415,7 @@
 			<YieldIncreases>
 				<YieldIntegerPair>
 					<YieldType>YIELD_STONE</YieldType>
-					<iValue>1</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_SALT</YieldType>
-					<iValue>1</iValue>
+					<iValue>4</iValue>
 				</YieldIntegerPair>
 			</YieldIncreases>
 			<RiverSideYieldChanges/>
@@ -909,16 +901,16 @@
 					<YieldType>YIELD_LUMBER</YieldType>
 					<iValue>1</iValue>
 				</YieldIntegerPair>
+        <YieldIntegerPair>
+          <YieldType>YIELD_STONE</YieldType>
+          <iValue>1</iValue>
+        </YieldIntegerPair>
 				<YieldIntegerPair>
 					<YieldType>YIELD_FUR</YieldType>
 					<iValue>1</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
 					<YieldType>YIELD_ORE</YieldType>
-					<iValue>1</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_SALT</YieldType>
 					<iValue>1</iValue>
 				</YieldIntegerPair>
 			</PrereqNatureYields>
@@ -936,7 +928,7 @@
 					<iValue>1</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
-					<YieldType>YIELD_SALT</YieldType>
+					<YieldType>YIELD_STONE</YieldType>
 					<iValue>1</iValue>
 				</YieldIntegerPair>
 			</YieldIncreases>
@@ -1017,8 +1009,8 @@
 					<iValue>2</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
-					<YieldType>YIELD_SALT</YieldType>
-					<iValue>4</iValue>
+					<YieldType>YIELD_STONE</YieldType>
+					<iValue>2</iValue>
 				</YieldIntegerPair>
 			</YieldIncreases>
 			<RiverSideYieldChanges/>

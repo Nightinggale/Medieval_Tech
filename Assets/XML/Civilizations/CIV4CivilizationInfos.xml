@@ -11,7 +11,7 @@
 			<Description>Anglo-Saxon</Description>
 			<ShortDescription>Anglo-Saxon</ShortDescription>
 			<Adjective>Anglo-Saxon</Adjective>
-			<Civilopedia>????</Civilopedia>
+			<Civilopedia>TXT_KEY_CHARL_CIV_ANGLOSAXON_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_WHITE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_ANGLO</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
@@ -30,44 +30,26 @@
 			<FavoredTerrain>NONE</FavoredTerrain>
 			<DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
 			<Cities>
-				<City>TXT_KEY_CITY_NAME_LONDON</City>
-				<City>TXT_KEY_CITY_NAME_YORK</City>
-				<City>TXT_KEY_CITY_NAME_NOTTHINGHAM</City>
-				<City>TXT_KEY_CITY_NAME_HASTINGS</City>
-				<City>TXT_KEY_CITY_NAME_CANTERBURY</City>
-				<City>TXT_KEY_CITY_NAME_COVENTRY</City>
-				<City>TXT_KEY_CITY_NAME_WARWICK</City>
-				<City>TXT_KEY_CITY_NAME_NEWCASTLE</City>
-				<City>TXT_KEY_CITY_NAME_OXFORD</City>
-				<City>TXT_KEY_CITY_NAME_LIVERPOOL</City>
-				<City>TXT_KEY_CITY_NAME_DOVER</City>
-				<City>TXT_KEY_CITY_NAME_BRIGHTON</City>
-				<City>TXT_KEY_CITY_NAME_NORWICH</City>
-				<City>TXT_KEY_CITY_NAME_LEEDS</City>
-				<City>TXT_KEY_CITY_NAME_READING</City>
-				<City>TXT_KEY_CITY_NAME_BIRMINGHAM</City>
-				<City>TXT_KEY_CITY_NAME_RICHMOND</City>
-				<City>TXT_KEY_CITY_NAME_EXETER</City>
-				<City>TXT_KEY_CITY_NAME_CAMBRIDGE</City>
-				<City>TXT_KEY_CITY_NAME_GLOUCESTER</City>
-				<City>TXT_KEY_CITY_NAME_MANCHESTER</City>
-				<City>TXT_KEY_CITY_NAME_BRISTOL</City>
-				<City>TXT_KEY_CITY_NAME_LEICESTER</City>
-				<City>TXT_KEY_CITY_NAME_CARLISLE</City>
-				<City>TXT_KEY_CITY_NAME_IPSWICH</City>
-				<City>TXT_KEY_CITY_NAME_PORTSMOUTH</City>
-				<City>TXT_KEY_CITY_NAME_BERWICK</City>
-				<City>TXT_KEY_CITY_NAME_BATH</City>
-				<City>TXT_KEY_CITY_NAME_MUMBLES</City>
-				<City>TXT_KEY_CITY_NAME_SOUTHAMPTON</City>
-				<City>TXT_KEY_CITY_NAME_SHEFFIELD</City>
-				<City>TXT_KEY_CITY_NAME_SALISBURY</City>
-				<City>TXT_KEY_CITY_NAME_COLCHESTER</City>
-				<City>TXT_KEY_CITY_NAME_PLYMOUTH</City>
-				<City>TXT_KEY_CITY_NAME_LANCASTER</City>
-				<City>TXT_KEY_CITY_NAME_BLACKPOOL</City>
-				<City>TXT_KEY_CITY_NAME_WINCHESTER</City>
-				<City>TXT_KEY_CITY_NAME_HULL</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_LONDON</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_HAMBURG</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_CANTERBURY</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_SUTTON_HOO</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_LICHFIELD</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_OUNDLE</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_YORK</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_EXETER</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_COLCHESTER</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_ELMHAM</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_NOTTINGHAM</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_BREMEN</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_LUNEBURG</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_OLDENBURG</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_OSNABRUCK</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_HANOVER</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_BRUNSWICK</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_MUNSTER</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_DORTMUND</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_GOTTINGEN</City>
 			</Cities>
 			<Buildings/>
 			<Units>
@@ -110,7 +92,7 @@
 					<FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_VETERAN</UnitClassType>
+					<UnitClassType>UNITCLASS_NOBLEMAN</UnitClassType>
 					<FreeUnitProfession>PROFESSION_INFANTRY1</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
@@ -156,7 +138,13 @@
 				</FreeYield>
 			</FreeYields>
 			<CapturedCityUnitClass>NONE</CapturedCityUnitClass>
-			<InitialCivics/>
+      <InitialCivics>
+        <CivicType>CIVIC_LOCALISM</CivicType>
+        <CivicType>CIVIC_APATHY</CivicType>
+        <CivicType>CIVIC_LOCAL_TRADE</CivicType>
+        <CivicType>CIVIC_ANARCHIST</CivicType>
+        <CivicType>CIVIC_TRIBALISM</CivicType>
+      </InitialCivics>
 			<Leaders>
 				<Leader>
 					<LeaderName>LEADER_OFFA</LeaderName>
@@ -332,7 +320,7 @@
 					<FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+					<UnitClassType>UNITCLASS_NOBLEMAN</UnitClassType>
 					<FreeUnitProfession>PROFESSION_INFANTRY1</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
@@ -394,7 +382,13 @@
 				</FreeYield>
 			</FreeYields>
 			<CapturedCityUnitClass>NONE</CapturedCityUnitClass>
-			<InitialCivics/>
+      <InitialCivics>
+        <CivicType>CIVIC_LOCALISM</CivicType>
+        <CivicType>CIVIC_APATHY</CivicType>
+        <CivicType>CIVIC_LOCAL_TRADE</CivicType>
+        <CivicType>CIVIC_ANARCHIST</CivicType>
+        <CivicType>CIVIC_TRIBALISM</CivicType>
+      </InitialCivics>
 			<Leaders>
 				<Leader>
 					<LeaderName>LEADER_SALADIN</LeaderName>
@@ -523,7 +517,7 @@
 					<FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_VETERAN</UnitClassType>
+					<UnitClassType>UNITCLASS_NOBLEMAN</UnitClassType>
 					<FreeUnitProfession>PROFESSION_INFANTRY1</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
@@ -585,7 +579,13 @@
 				</FreeYield>
 			</FreeYields>
 			<CapturedCityUnitClass>NONE</CapturedCityUnitClass>
-			<InitialCivics/>
+      <InitialCivics>
+        <CivicType>CIVIC_LOCALISM</CivicType>
+        <CivicType>CIVIC_APATHY</CivicType>
+        <CivicType>CIVIC_LOCAL_TRADE</CivicType>
+        <CivicType>CIVIC_ANARCHIST</CivicType>
+        <CivicType>CIVIC_TRIBALISM</CivicType>
+      </InitialCivics>
 			<Leaders>
 				<Leader>
 					<LeaderName>LEADER_CLOVIS</LeaderName>
@@ -761,7 +761,7 @@
 					<FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_VETERAN</UnitClassType>
+					<UnitClassType>UNITCLASS_NOBLEMAN</UnitClassType>
 					<FreeUnitProfession>PROFESSION_INFANTRY1</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
@@ -823,7 +823,13 @@
 				</FreeYield>
 			</FreeYields>
 			<CapturedCityUnitClass>NONE</CapturedCityUnitClass>
-			<InitialCivics/>
+      <InitialCivics>
+        <CivicType>CIVIC_LOCALISM</CivicType>
+        <CivicType>CIVIC_APATHY</CivicType>
+        <CivicType>CIVIC_LOCAL_TRADE</CivicType>
+        <CivicType>CIVIC_ANARCHIST</CivicType>
+        <CivicType>CIVIC_TRIBALISM</CivicType>
+      </InitialCivics>
 			<Leaders>
 				<Leader>
 					<LeaderName>LEADER_ALMANSUR</LeaderName>
@@ -952,7 +958,7 @@
 					<FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_VETERAN</UnitClassType>
+					<UnitClassType>UNITCLASS_NOBLEMAN</UnitClassType>
 					<FreeUnitProfession>PROFESSION_INFANTRY1</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
@@ -1014,7 +1020,13 @@
 				</FreeYield>
 			</FreeYields>
 			<CapturedCityUnitClass>NONE</CapturedCityUnitClass>
-			<InitialCivics/>
+      <InitialCivics>
+        <CivicType>CIVIC_LOCALISM</CivicType>
+        <CivicType>CIVIC_APATHY</CivicType>
+        <CivicType>CIVIC_LOCAL_TRADE</CivicType>
+        <CivicType>CIVIC_ANARCHIST</CivicType>
+        <CivicType>CIVIC_TRIBALISM</CivicType>
+      </InitialCivics>
 			<Leaders>
 				<Leader>
 					<LeaderName>LEADER_WILLIAM</LeaderName>
@@ -1210,7 +1222,13 @@
 				</FreeYield>
 			</FreeYields>
 			<CapturedCityUnitClass>NONE</CapturedCityUnitClass>
-			<InitialCivics/>
+      <InitialCivics>
+        <CivicType>CIVIC_LOCALISM</CivicType>
+        <CivicType>CIVIC_APATHY</CivicType>
+        <CivicType>CIVIC_LOCAL_TRADE</CivicType>
+        <CivicType>CIVIC_ANARCHIST</CivicType>
+        <CivicType>CIVIC_TRIBALISM</CivicType>
+      </InitialCivics>
 			<Leaders>
 				<Leader>
 					<LeaderName>LEADER_RAGNAR</LeaderName>
@@ -1341,7 +1359,7 @@
 					<FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+					<UnitClassType>UNITCLASS_NOBLEMAN</UnitClassType>
 					<FreeUnitProfession>PROFESSION_INFANTRY1</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
@@ -1403,7 +1421,13 @@
 				</FreeYield>
 			</FreeYields>
 			<CapturedCityUnitClass>NONE</CapturedCityUnitClass>
-			<InitialCivics/>
+      <InitialCivics>
+        <CivicType>CIVIC_LOCALISM</CivicType>
+        <CivicType>CIVIC_APATHY</CivicType>
+        <CivicType>CIVIC_LOCAL_TRADE</CivicType>
+        <CivicType>CIVIC_ANARCHIST</CivicType>
+        <CivicType>CIVIC_TRIBALISM</CivicType>
+      </InitialCivics>
 			<Leaders>
 				<Leader>
 					<LeaderName>LEADER_JUSTINIAN</LeaderName>
@@ -1532,7 +1556,7 @@
 					<FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+					<UnitClassType>UNITCLASS_NOBLEMAN</UnitClassType>
 					<FreeUnitProfession>PROFESSION_INFANTRY1</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
@@ -1594,7 +1618,13 @@
 				</FreeYield>
 			</FreeYields>
 			<CapturedCityUnitClass>NONE</CapturedCityUnitClass>
-			<InitialCivics/>
+      <InitialCivics>
+        <CivicType>CIVIC_LOCALISM</CivicType>
+        <CivicType>CIVIC_APATHY</CivicType>
+        <CivicType>CIVIC_LOCAL_TRADE</CivicType>
+        <CivicType>CIVIC_ANARCHIST</CivicType>
+        <CivicType>CIVIC_TRIBALISM</CivicType>
+      </InitialCivics>
 			<Leaders>
 				<Leader>
 					<LeaderName>LEADER_THEODORIC</LeaderName>
@@ -1718,7 +1748,7 @@
 					<FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_VETERAN</UnitClassType>
+					<UnitClassType>UNITCLASS_NOBLEMAN</UnitClassType>
 					<FreeUnitProfession>PROFESSION_INFANTRY1</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
@@ -1764,7 +1794,7 @@
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
-			<TeachUnitClasses/>
+      <TeachUnitClasses/>
 			<FreeYields>
 				<FreeYield>
 					<YieldType>YIELD_BELLS</YieldType>
@@ -1780,7 +1810,13 @@
 				</FreeYield>
 			</FreeYields>
 			<CapturedCityUnitClass>NONE</CapturedCityUnitClass>
-			<InitialCivics/>
+      <InitialCivics>
+        <CivicType>CIVIC_LOCALISM</CivicType>
+        <CivicType>CIVIC_APATHY</CivicType>
+        <CivicType>CIVIC_LOCAL_TRADE</CivicType>
+        <CivicType>CIVIC_ANARCHIST</CivicType>
+        <CivicType>CIVIC_TRIBALISM</CivicType>
+      </InitialCivics>
 			<Leaders>
 				<Leader>
 					<LeaderName>LEADER_RECCARED</LeaderName>
@@ -1962,7 +1998,13 @@
 				</FreeYield>
 			</FreeYields>
 			<CapturedCityUnitClass>NONE</CapturedCityUnitClass>
-			<InitialCivics/>
+      <InitialCivics>
+        <CivicType>CIVIC_LOCALISM</CivicType>
+        <CivicType>CIVIC_APATHY</CivicType>
+        <CivicType>CIVIC_LOCAL_TRADE</CivicType>
+        <CivicType>CIVIC_ANARCHIST</CivicType>
+        <CivicType>CIVIC_TRIBALISM</CivicType>
+      </InitialCivics>
 			<Leaders>
 				<Leader>
 					<LeaderName>LEADER_KUBLAI_KHAN</LeaderName>
@@ -2093,35 +2135,35 @@
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_MISSLEMAN2</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_MISSLEMAN2</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
 			<FreeBuildingClasses/>
@@ -2144,13 +2186,21 @@
 					<bFree>1</bFree>
 				</FreeTech>
 				<FreeTech>
-					<Tech>MEDIEVAL_TECH_FUEDALISM</Tech>
+					<Tech>MEDIEVAL_TECH_FEUDALISM</Tech>
 					<bFree>1</bFree>
 				</FreeTech>
 				<FreeTech>
 					<Tech>MEDIEVAL_TECH_MACHINERY</Tech>
 					<bFree>1</bFree>
 				</FreeTech>
+        <FreeTech>
+          <Tech>MEDIEVAL_TECH_MAILARMOR</Tech>
+          <bFree>1</bFree>
+        </FreeTech>
+        <FreeTech>
+          <Tech>MEDIEVAL_TECH_LONGBOW</Tech>
+          <bFree>1</bFree>
+        </FreeTech>
 			</FreeTechs>
 		</CivilizationInfo>
 		<CivilizationInfo>
@@ -2263,35 +2313,35 @@
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_MISSLEMAN2</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_MISSLEMAN2</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
 			<FreeBuildingClasses/>
@@ -2314,13 +2364,21 @@
 					<bFree>1</bFree>
 				</FreeTech>
 				<FreeTech>
-					<Tech>MEDIEVAL_TECH_FUEDALISM</Tech>
+					<Tech>MEDIEVAL_TECH_FEUDALISM</Tech>
 					<bFree>1</bFree>
 				</FreeTech>
 				<FreeTech>
 					<Tech>MEDIEVAL_TECH_MACHINERY</Tech>
 					<bFree>1</bFree>
 				</FreeTech>
+        <FreeTech>
+          <Tech>MEDIEVAL_TECH_MAILARMOR</Tech>
+          <bFree>1</bFree>
+        </FreeTech>
+        <FreeTech>
+          <Tech>MEDIEVAL_TECH_LONGBOW</Tech>
+          <bFree>1</bFree>
+        </FreeTech>
 			</FreeTechs>
 		</CivilizationInfo>
 		<CivilizationInfo>
@@ -2437,35 +2495,35 @@
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_MISSLEMAN2</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_MISSLEMAN2</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
 			<FreeBuildingClasses/>
@@ -2488,13 +2546,21 @@
 					<bFree>1</bFree>
 				</FreeTech>
 				<FreeTech>
-					<Tech>MEDIEVAL_TECH_FUEDALISM</Tech>
+					<Tech>MEDIEVAL_TECH_FEUDALISM</Tech>
 					<bFree>1</bFree>
 				</FreeTech>
 				<FreeTech>
 					<Tech>MEDIEVAL_TECH_MACHINERY</Tech>
 					<bFree>1</bFree>
 				</FreeTech>
+        <FreeTech>
+          <Tech>MEDIEVAL_TECH_MAILARMOR</Tech>
+          <bFree>1</bFree>
+        </FreeTech>
+        <FreeTech>
+          <Tech>MEDIEVAL_TECH_LONGBOW</Tech>
+          <bFree>1</bFree>
+        </FreeTech>
 			</FreeTechs>
 		</CivilizationInfo>
 		<CivilizationInfo>
@@ -2611,35 +2677,35 @@
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_MISSLEMAN2</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_MISSLEMAN2</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
 			<FreeBuildingClasses/>
@@ -2662,13 +2728,21 @@
 					<bFree>1</bFree>
 				</FreeTech>
 				<FreeTech>
-					<Tech>MEDIEVAL_TECH_FUEDALISM</Tech>
+					<Tech>MEDIEVAL_TECH_FEUDALISM</Tech>
 					<bFree>1</bFree>
 				</FreeTech>
 				<FreeTech>
 					<Tech>MEDIEVAL_TECH_MACHINERY</Tech>
 					<bFree>1</bFree>
 				</FreeTech>
+        <FreeTech>
+          <Tech>MEDIEVAL_TECH_MAILARMOR</Tech>
+          <bFree>1</bFree>
+        </FreeTech>
+        <FreeTech>
+          <Tech>MEDIEVAL_TECH_LONGBOW</Tech>
+          <bFree>1</bFree>
+        </FreeTech>
 			</FreeTechs>
 		</CivilizationInfo>
 		<CivilizationInfo>
@@ -2785,35 +2859,35 @@
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_MISSLEMAN2</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_MISSLEMAN2</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
 			<FreeBuildingClasses/>
@@ -2836,13 +2910,21 @@
 					<bFree>1</bFree>
 				</FreeTech>
 				<FreeTech>
-					<Tech>MEDIEVAL_TECH_FUEDALISM</Tech>
+					<Tech>MEDIEVAL_TECH_FEUDALISM</Tech>
 					<bFree>1</bFree>
 				</FreeTech>
 				<FreeTech>
 					<Tech>MEDIEVAL_TECH_MACHINERY</Tech>
 					<bFree>1</bFree>
 				</FreeTech>
+        <FreeTech>
+          <Tech>MEDIEVAL_TECH_MAILARMOR</Tech>
+          <bFree>1</bFree>
+        </FreeTech>
+        <FreeTech>
+          <Tech>MEDIEVAL_TECH_LONGBOW</Tech>
+          <bFree>1</bFree>
+        </FreeTech>
 			</FreeTechs>
 		</CivilizationInfo>
 		<CivilizationInfo>
@@ -2959,35 +3041,35 @@
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_MISSLEMAN2</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_MISSLEMAN2</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
 			<FreeBuildingClasses/>
@@ -3010,13 +3092,21 @@
 					<bFree>1</bFree>
 				</FreeTech>
 				<FreeTech>
-					<Tech>MEDIEVAL_TECH_FUEDALISM</Tech>
+					<Tech>MEDIEVAL_TECH_FEUDALISM</Tech>
 					<bFree>1</bFree>
 				</FreeTech>
 				<FreeTech>
 					<Tech>MEDIEVAL_TECH_MACHINERY</Tech>
 					<bFree>1</bFree>
 				</FreeTech>
+        <FreeTech>
+          <Tech>MEDIEVAL_TECH_MAILARMOR</Tech>
+          <bFree>1</bFree>
+        </FreeTech>
+        <FreeTech>
+          <Tech>MEDIEVAL_TECH_LONGBOW</Tech>
+          <bFree>1</bFree>
+        </FreeTech>
 			</FreeTechs>
 		</CivilizationInfo>
 		<CivilizationInfo>
@@ -3133,35 +3223,35 @@
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_MISSLEMAN2</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_MISSLEMAN2</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
 			<FreeBuildingClasses/>
@@ -3184,13 +3274,21 @@
 					<bFree>1</bFree>
 				</FreeTech>
 				<FreeTech>
-					<Tech>MEDIEVAL_TECH_FUEDALISM</Tech>
+					<Tech>MEDIEVAL_TECH_FEUDALISM</Tech>
 					<bFree>1</bFree>
 				</FreeTech>
 				<FreeTech>
 					<Tech>MEDIEVAL_TECH_MACHINERY</Tech>
 					<bFree>1</bFree>
 				</FreeTech>
+        <FreeTech>
+          <Tech>MEDIEVAL_TECH_MAILARMOR</Tech>
+          <bFree>1</bFree>
+        </FreeTech>
+        <FreeTech>
+          <Tech>MEDIEVAL_TECH_LONGBOW</Tech>
+          <bFree>1</bFree>
+        </FreeTech>
 			</FreeTechs>
 		</CivilizationInfo>
 		<CivilizationInfo>
@@ -3307,35 +3405,35 @@
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_MISSLEMAN2</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_MISSLEMAN2</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
 			<FreeBuildingClasses/>
@@ -3358,13 +3456,21 @@
 					<bFree>1</bFree>
 				</FreeTech>
 				<FreeTech>
-					<Tech>MEDIEVAL_TECH_FUEDALISM</Tech>
+					<Tech>MEDIEVAL_TECH_FEUDALISM</Tech>
 					<bFree>1</bFree>
 				</FreeTech>
 				<FreeTech>
 					<Tech>MEDIEVAL_TECH_MACHINERY</Tech>
 					<bFree>1</bFree>
 				</FreeTech>
+        <FreeTech>
+          <Tech>MEDIEVAL_TECH_MAILARMOR</Tech>
+          <bFree>1</bFree>
+        </FreeTech>
+        <FreeTech>
+          <Tech>MEDIEVAL_TECH_LONGBOW</Tech>
+          <bFree>1</bFree>
+        </FreeTech>
 			</FreeTechs>
 		</CivilizationInfo>
 		<CivilizationInfo>
@@ -3481,35 +3587,35 @@
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_MISSLEMAN2</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_MISSLEMAN2</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
 			<FreeBuildingClasses/>
@@ -3532,13 +3638,21 @@
 					<bFree>1</bFree>
 				</FreeTech>
 				<FreeTech>
-					<Tech>MEDIEVAL_TECH_FUEDALISM</Tech>
+					<Tech>MEDIEVAL_TECH_FEUDALISM</Tech>
 					<bFree>1</bFree>
 				</FreeTech>
 				<FreeTech>
 					<Tech>MEDIEVAL_TECH_MACHINERY</Tech>
 					<bFree>1</bFree>
 				</FreeTech>
+        <FreeTech>
+          <Tech>MEDIEVAL_TECH_MAILARMOR</Tech>
+          <bFree>1</bFree>
+        </FreeTech>
+        <FreeTech>
+          <Tech>MEDIEVAL_TECH_LONGBOW</Tech>
+          <bFree>1</bFree>
+        </FreeTech>
 			</FreeTechs>
 		</CivilizationInfo>
 		<CivilizationInfo>
@@ -3655,35 +3769,35 @@
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIKEMAN_PLATE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_MISSLEMAN2</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_REGULAR</UnitClassType>
-					<FreeUnitProfession>PROFESSION_INFANTRY3</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_MISSLEMAN2</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
 			<FreeBuildingClasses/>
@@ -3706,13 +3820,21 @@
 					<bFree>1</bFree>
 				</FreeTech>
 				<FreeTech>
-					<Tech>MEDIEVAL_TECH_FUEDALISM</Tech>
+					<Tech>MEDIEVAL_TECH_FEUDALISM</Tech>
 					<bFree>1</bFree>
 				</FreeTech>
 				<FreeTech>
 					<Tech>MEDIEVAL_TECH_MACHINERY</Tech>
 					<bFree>1</bFree>
 				</FreeTech>
+        <FreeTech>
+          <Tech>MEDIEVAL_TECH_MAILARMOR</Tech>
+          <bFree>1</bFree>
+        </FreeTech>
+        <FreeTech>
+          <Tech>MEDIEVAL_TECH_LONGBOW</Tech>
+          <bFree>1</bFree>
+        </FreeTech>
 			</FreeTechs>
 		</CivilizationInfo>
     <!--Barbarian Civs-->
@@ -3928,7 +4050,7 @@
 					<UnitType>UNIT_NATIVE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
+					<UnitClassType>UNITCLASS_SERF</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -4167,36 +4289,35 @@
 			<FavoredTerrain>NONE</FavoredTerrain>
 			<DefaultProfession>PROFESSION_BRAVE</DefaultProfession>
 			<Cities>
-				<City>TXT_KEY_CITY_NAME_TIMBUKTU</City>
-				<City>TXT_KEY_CITY_NAME_DJENNE</City>
-				<City>TXT_KEY_CITY_NAME_KUMBISALEH</City>
-				<City>TXT_KEY_CITY_NAME_GAO</City>
-				<City>TXT_KEY_CITY_NAME_WALATA</City>
-				<City>TXT_KEY_CITY_NAME_NIANI</City>
-				<City>TXT_KEY_CITY_NAME_AWDAGHOST</City>
-				<City>TXT_KEY_CITY_NAME_TADMEKKA</City>
-				<City>TXT_KEY_CITY_NAME_TEKEDDA</City>
-				<City>TXT_KEY_CITY_NAME_AWLIL</City>
-				<City>TXT_KEY_CITY_NAME_WADAN</City>
-				<City>TXT_KEY_CITY_NAME_AGADES</City>
-				<City>TXT_KEY_CITY_NAME_TEODENI</City>
-				<City>TXT_KEY_CITY_NAME_TAGHAZA</City>
-				<City>TXT_KEY_CITY_NAME_KATSINA</City>
-				<City>TXT_KEY_CITY_NAME_KANO</City>
-				<City>TXT_KEY_CITY_NAME_ZARIA</City>
-				<City>TXT_KEY_CITY_NAME_BILMA</City>
-				<City>TXT_KEY_CITY_NAME_NGAZARGUMU</City>
-				<City>TXT_KEY_CITY_NAME_KANGABA</City>
-				<City>TXT_KEY_CITY_NAME_DIA</City>
-				<City>TXT_KEY_CITY_NAME_TIRAQQA</City>
-				<City>TXT_KEY_CITY_NAME_AWKAR</City>
-				<City>TXT_KEY_CITY_NAME_KUKIYA</City>
-				<City>TXT_KEY_CITY_NAME_TAKRUR</City>
-				<City>TXT_KEY_CITY_NAME_ARAWAN</City>
-				<City>TXT_KEY_CITY_NAME_SYA</City>
-				<City>TXT_KEY_CITY_NAME_TAOUDENNI</City>
-				<City>TXT_KEY_CITY_NAME_BAMBOUK</City>
-				<City>TXT_KEY_CITY_NAME_KIRINA</City>
+				<City>Toumboctou</City>
+				<City>Jenne</City>
+				<City>Koumbi Saleh</City>
+				<City>Gao</City>
+				<City>Walatah</City>
+				<City>Niani</City>
+				<City>Aoudaghost</City>
+				<City>Tadmekka</City>
+				<City>Tekedah</City>
+				<City>Awlil</City>
+				<City>Ouadane</City>
+				<City>Agades</City>
+				<City>Taoudeni</City>
+				<City>Taghassa</City>
+				<City>Katsina</City>
+				<City>Kano</City>
+				<City>Zarya</City>
+				<City>Bilma</City>
+				<City>Ngazargumu</City>
+				<City>Kangaba</City>
+				<City>Fiyya</City>
+				<City>Tiraka</City>
+				<City>Awkar</City>
+				<City>Kukiya</City>
+				<City>Takrur</City>
+				<City>Arawan</City>
+				<City>Sia</City>
+				<City>Bambuk</City>
+				<City>Kirina</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -4366,7 +4487,7 @@
 					<UnitType>UNIT_NATIVE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
+					<UnitClassType>UNITCLASS_SERF</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -4604,7 +4725,7 @@
 			<FavoredTerrain>NONE</FavoredTerrain>
 			<DefaultProfession>PROFESSION_BRAVE</DefaultProfession>
 			<Cities>
-				<City>Buda</City>
+				<City>Budapest</City>
 				<City>Szeged</City>
 				<City>Kecskem</City>
 				<City>Pest</City>
@@ -4803,7 +4924,7 @@
 					<UnitType>UNIT_NATIVE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
+					<UnitClassType>UNITCLASS_SERF</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -5244,7 +5365,7 @@
 					<UnitType>UNIT_NATIVE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
+					<UnitClassType>UNITCLASS_SERF</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -5692,7 +5813,7 @@
 					<UnitType>UNIT_NATIVE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
+					<UnitClassType>UNITCLASS_SERF</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -5920,7 +6041,7 @@
 			<Description>Lombards</Description>
 			<ShortDescription>Lombards</ShortDescription>
 			<Adjective>Lombardian</Adjective>
-			<Civilopedia>????</Civilopedia>
+			<Civilopedia>TXT_KEY_CHARL_CIV_LOMBARDY_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_GRAY_WARM</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_LOMBARD</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_NATIVES_EAST</ArtStyleType>
@@ -5938,28 +6059,18 @@
 			<FavoredTerrain>NONE</FavoredTerrain>
 			<DefaultProfession>PROFESSION_BRAVE</DefaultProfession>
 			<Cities>
-				<City>TXT_KEY_CITY_NAME_ISANTI</City>
-				<City>TXT_KEY_CITY_NAME_IHANKTOWAN</City>
-				<City>TXT_KEY_CITY_NAME_TETON</City>
-				<City>TXT_KEY_CITY_NAME_MDEWAKANTONWAN</City>
-				<City>TXT_KEY_CITY_NAME_OGLALA</City>
-				<City>TXT_KEY_CITY_NAME_SISITOWAN</City>
-				<City>TXT_KEY_CITY_NAME_ITAZIPACOLA</City>
-				<City>TXT_KEY_CITY_NAME_WAHPEKUTE</City>
-				<City>TXT_KEY_CITY_NAME_WAHPETOWAN</City>
-				<City>TXT_KEY_CITY_NAME_ASSINIBOINE</City>
-				<City>TXT_KEY_CITY_NAME_STONEY</City>
-				<City>TXT_KEY_CITY_NAME_HUNKPAPA</City>
-				<City>TXT_KEY_CITY_NAME_SIHASAPA</City>
-				<City>TXT_KEY_CITY_NAME_MINNICONJOU</City>
-				<City>TXT_KEY_CITY_NAME_SICANGU</City>
-				<City>TXT_KEY_CITY_NAME_OOHENONPA</City>
-				<City>TXT_KEY_CITY_NAME_MAKA_SICA</City>
-				<City>TXT_KEY_CITY_NAME_PAHA_MATO</City>
-				<City>TXT_KEY_CITY_NAME_MAKATO_OSA_WATAPA</City>
-				<City>TXT_KEY_CITY_NAME_WAKPALA_SAPA</City>
-				<City>TXT_KEY_CITY_NAME_MATO_TIPI</City>
-				<City>TXT_KEY_CITY_NAME_PAHA_SAPA</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_MILAN</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_IVREA</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_VERONA</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_PAVIA</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_GENOA</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_LUCCA</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_PISA</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_ANCONA</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_SPOLETO</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_BRESCIA</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_MONZA</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_BERGAMO</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -6129,7 +6240,7 @@
 					<UnitType>UNIT_NATIVE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
+					<UnitClassType>UNITCLASS_SERF</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -6346,7 +6457,7 @@
 		</CivilizationInfo>
 		<CivilizationInfo>
 			<Type>CIVILIZATION_NORWEGIAN</Type>
-			<Description>Norwegian Vikings</Description>
+			<Description>Norwegians</Description>
 			<ShortDescription>Norsemen</ShortDescription>
 			<Adjective>Norse</Adjective>
 			<Civilopedia>????</Civilopedia>
@@ -6558,7 +6669,7 @@
 					<UnitType>UNIT_NATIVE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
+					<UnitClassType>UNITCLASS_SERF</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -6778,7 +6889,7 @@
 			<Description>Burgundy</Description>
 			<ShortDescription>Burgundy</ShortDescription>
 			<Adjective>Burgundian</Adjective>
-			<Civilopedia>????</Civilopedia>
+			<Civilopedia>TXT_KEY_CHARL_CIV_BURGUNDY_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_BLUE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_BURGUNDY</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_NATIVES_EAST</ArtStyleType>
@@ -6797,6 +6908,18 @@
 			<FavoredTerrain>NONE</FavoredTerrain>
 			<DefaultProfession>PROFESSION_BRAVE</DefaultProfession>
 			<Cities>
+        <City>TXT_KEY_CHARL_CITY_NAME_ORLEANS</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_WORMS</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_LYONS</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_MACON</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_VIENNE</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_ARLES</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_FRAXINETUM</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_AUTUN</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_AUXERRE</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_VALAIS</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_CLUNY</City>
+        <City>TXT_KEY_CHARL_CITY_NAME_VEZELAY</City>
 				<City>Autun</City>
 				<City>Beaune</City>
 				<City>Dijon</City>
@@ -6808,14 +6931,6 @@
 				<City>Nevers</City>
 				<City>Paray-le-Monial</City>
 				<City>Vezelay</City>
-				<City>TXT_KEY_CITY_NAME_KANATSIOHAREKE</City>
-				<City>TXT_KEY_CITY_NAME_SKAHNEHTATI</City>
-				<City>TXT_KEY_CITY_NAME_KANIENKE</City>
-				<City>TXT_KEY_CITY_NAME_ATERONTO</City>
-				<City>TXT_KEY_CITY_NAME_AKWESASNE</City>
-				<City>TXT_KEY_CITY_NAME_OSWEGO</City>
-				<City>TXT_KEY_CITY_NAME_ONEONTA</City>
-				<City>TXT_KEY_CITY_NAME_KNISTE_STOTA</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -6985,7 +7100,7 @@
 					<UnitType>UNIT_NATIVE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
+					<UnitClassType>UNITCLASS_SERF</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -7461,7 +7576,7 @@
 					<UnitType>UNIT_NATIVE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
+					<UnitClassType>UNITCLASS_SERF</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>

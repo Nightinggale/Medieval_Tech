@@ -245,10 +245,13 @@ public:
 	DllExport int getUpgradeDiscount() const;
 	DllExport int getExperiencePercent() const;
     ///TK FS
-    DllExport int getFirstStrikesChange() const;				// Exposed to Python
+	DllExport int getPlotWorkedBonus() const;
+	DllExport int getBuildingWorkedBonus() const;
+    DllExport int getFirstStrikesChange() const;
 	DllExport int getChanceFirstStrikesChange() const;
 	DllExport int getEscortUnitClass() const;
 	DllExport bool isImmuneToFirstStrikes() const;
+	DllExport bool isCivilian() const;
 	DllExport bool isNonePromotion() const;
 	DllExport bool isNoBadGoodies() const;
     ///TKe
@@ -306,11 +309,14 @@ protected:
 	int m_iPillageChange;
 	int m_iUpgradeDiscount;
 	int m_iExperiencePercent;
-	///TK FS
+	///TK
+	int m_iPlotWorkedBonus;
+	int m_iBuildingWorkedBonus;
 	int m_iFirstStrikesChange;
 	int m_iEscortUnitClass;
     int m_iChanceFirstStrikesChange;
     bool m_bImmuneToFirstStrikes;
+	bool m_bCivilian;
     bool bNonePromotion;
     bool bNoBadGoodies;
     ///TKe
@@ -594,7 +600,8 @@ public:
     DllExport bool isPreventFounding() const;
     DllExport bool isPreventTraveling() const;
     DllExport int getLostAtSeaPercent() const;
-    DllExport int getConvertsToYield() const;
+    DllExport int getFoodConsumed() const;
+	DllExport int getConvertsToYield() const;
     DllExport int getConvertsToBuildingClass() const;
     DllExport int getFreeBuildingClass() const;
     DllExport int getEducationUnitClass() const;
@@ -633,6 +640,7 @@ public:
 	// < JAnimals Mod Start >
 	int getAnimalPatrolWeight() const;
 	int getAnimalAttackWeight() const;
+	int getMaxUnitCountPercent() const;
 	// < JAnimals Mod End >
 	DllExport bool isNoBadGoodies() const;
 	DllExport bool isOnlyDefensive() const;
@@ -763,12 +771,14 @@ protected:
 	// < JAnimals Mod Start >
 	int m_iAnimalPatrolWeight;
 	int m_iAnimalAttackWeight;
+	int m_iMaxUnitCountPercent;
 	// < JAnimals Mod End >
 	///TKs Invention Core Mod v 1.0 Professions Pedia
 	bool m_ibNativesInvalid;
 	bool m_ibEuropeInvalid;
 	bool m_ibColonialInvalid;
 	int m_iLostAtSeaPercent;
+	int m_iFoodConsumed;
 	///Tks Med
 	bool m_bPreventFounding;
 	bool m_bPreventTraveling;
@@ -996,15 +1006,25 @@ public:
 	DllExport int getY_Location() const;
 
 	DllExport int getCostToResearch() const;
-
+	///Tks Civics
+	int getDiplomacyAttitudeChange() const;
+	int getAnarchyLength() const;
+	int getInitialCost() const;
+	int getMissionariesNotCosumed() const;
+	int getTradingPostNotCosumed() const;
+	int getHuntingYieldPercent() const;
+	int getPilgramYieldPercent() const;
+	//TKe Civics
     DllExport int getIncreaseCityPopulation() const;
     DllExport int getAllowsProfession() const;
 	DllExport int getAllowsTrait() const;
+	DllExport int getAllowsCivic() const;
 	DllExport int getAllowsTradeScreen() const;
 	DllExport int getConvertsResearchYield() const;
 	DllExport int getDisallowsTech() const;
 	DllExport int getFreeUnitFirstToResearch() const;
 	DllExport int getCheaperPopulationGrowth() const;
+	DllExport int getGlobalFoodCostMod() const;
 	DllExport int getCenterPlotFoodBonus() const;
 	DllExport int getIncreasedEnemyHealRate() const;
 	DllExport int getGoldBonusForFirstToResearch() const;
@@ -1019,6 +1039,10 @@ public:
 
 
     DllExport int getNewDefaultUnitClass() const;
+	///Tks Civics
+	int getNewLuxuryUnitClass() const;
+	///Tke Civics
+	DllExport int getNewConvertUnitClass() const;
 	DllExport bool isFreeUnitsAreNonePopulation() const;
 	DllExport bool isFreeUnitsNotAllCities() const;
 	DllExport bool isStartConstitution() const;
@@ -1026,6 +1050,8 @@ public:
 	DllExport bool isGoodyTech() const;
 	DllExport bool isNoArrowinTechScreen() const;
 	DllExport bool isNoneTradeable() const;
+	DllExport bool isWorkersBuildAfterMove() const;
+	DllExport bool isBuildingTreasuryBonus() const;
 
     DllExport int getRouteMovementMod(int i) const;
     DllExport int getAllowsRoute(int i) const;
@@ -1036,11 +1062,21 @@ public:
     DllExport int getAllowsYields(int i) const;
     DllExport int getAllowsPromotions(int i) const;
     DllExport int getAllowsBonuses(int i) const;
-
+	//Tks Civics
+	int getProhibitsCivicsSize() const;
+	CivicTypes getProhibitsCivics(int index) const;
+	int getNumCivicCombatBonus() const;
+	int getCivicCombat(int index) const;
+	int getCivicCombatBonus(int index) const;
+	int getAllowedUnitClassImmigration(int i) const;
+	int getUpkeepYields(int i) const;
+	int* getGarrisonUnitArray() const;
+	//tke
     DllExport int getAllowsBuildTypes(int i) const;
     DllExport int getFasterBuildTypes(int i) const;
     DllExport int getFasterBuildFeatureTypes(int i) const;
     DllExport int getAllowsBuildTypesTerrain(int i) const;
+	DllExport int getFartherPointChanges(int i) const;
     DllExport int getIndustrializationVictory(int i) const;
 	DllExport int getAllowsProfessions(int i) const;
 	DllExport int getRequiredFatherPoints(int i) const;
@@ -1048,6 +1084,7 @@ public:
 	DllExport int* getRequiredYieldsArray() const;
 	DllExport int getRequiredYieldsArraySize() const;
     DllExport int getMaxYieldModifiers(int i) const;
+	DllExport int getGarrisonUnitModifiers(int i) const;
 	///Tke
 	DllExport int getNativeAttitudeChange() const;
 	DllExport int getNativeCombatModifier() const;
@@ -1068,6 +1105,26 @@ public:
 	DllExport int getNumFreeUnitClasses() const;
 	DllExport int getFreeUnitClass(int i) const;
 	///TKs Med
+	DllExport int getNumCivicTreasuryBonus() const;
+	DllExport int getCivicTreasury(int index) const;
+	DllExport int getCivicTreasuryBonus(int index) const;
+
+	DllExport int getNumRandomGrowthUnits() const;
+	DllExport int getRandomGrowthUnits(int index) const;
+	DllExport int getRandomGrowthUnitsPercent(int index) const;
+	
+	DllExport int getNumUnitClassFoodCosts() const;
+	DllExport int getFoodCostsUnits(int index) const;
+	DllExport int getUnitClassFoodCosts(int index) const;
+
+	DllExport int getNumConnectedMissonYields() const;
+	DllExport int getConnectedMissonYields(int index) const;
+	DllExport int getConnectedMissonYieldsBonus(int index) const;
+
+	DllExport int getNumConnectedTradeYields() const;
+	DllExport int getConnectedTradeYields(int index) const;
+	DllExport int getConnectedTradeYieldsBonus(int index) const;
+
     DllExport const char* getCivicPortrait() const;
     ///TKe
 	DllExport void read(FDataStreamBase* stream);
@@ -1097,16 +1154,22 @@ protected:
 	int m_iCostToResearch;
 
 	int m_iAllowsTrait;
+	int m_iAllowsCivic;
 	int m_iAllowsTradeScreen;
 	int m_iConvertsResearchYield;
 	int m_iDisallowsTech;
 	int m_iFreeUnitFirstToResearch;
 	int m_iCheaperPopulationGrowth;
+	int m_iGlobalFoodCostMod;
 	int m_iCenterPlotFoodBonus;
 	int m_iIncreasedEnemyHealRate;
     int m_iGoldBonusForFirstToResearch;
     int m_iProlificInventorRateChange;
     int m_iNewDefaultUnitClass;
+	///Tks Civics
+	int m_iNewLuxuryUnitClass;
+	///Tke Civics
+	int m_iNewConvertUnitClass;
     int m_iFreeTechs;
     int m_iModdersCode1;
     int m_iKingTreasureTransportMod;
@@ -1116,15 +1179,28 @@ protected:
     int m_aiConvertsUnitsFrom;
     int m_iFreeHurriedImmigrants;
     int m_iGoldBonus;
+	///TKs CivicsScreen
+	int m_iDiplomacyAttitudeChange;
+	int m_iMissionariesNotCosumed;
+	int m_iTradingPostNotCosumed;
+	int m_iAnarchyLength;
+	int m_iInitialCost;
+	int m_iHuntingYieldPercent;
+	int m_iPilgramYieldPercent;
+	//TKe CivicsScreen
     int m_iIncreasedImmigrants;
 	bool m_bisTradeable;
+	bool m_bWorkersBuildAfterMove;
+	bool m_bBuildingTreasuryBonus;
 	bool m_bFreeUnitsAreNonePopulation;
     bool m_bFreeUnitsNotAllCities;
     bool m_bAllowsMapTrade;
     bool m_bGoodyTech;
     bool m_bNoArrowinTechScreen;
     bool m_bStartConstitution;
-
+	///TKs CivicsScreen
+	int* m_aiUpkeepYields;
+	//TKe CivicsScreen
     int* m_iRouteMovementMod;
     int* m_aiAllowsRoute;
     int* m_aiAllowsBuildingTypes;
@@ -1136,11 +1212,14 @@ protected:
     int* m_aiFasterBuildTypes;
     int* m_aiFasterBuildFeatureTypes;
     int* m_aiAllowsBuildTypesTerrain;
+	int* m_aiFartherPointChanges;
     int* m_aiIndustrializationVictory;
     int* m_aiAllowsProfessions;
     int* m_aiRequiredFatherPoints;
     int* m_aiRequiredYields;
     int* m_aiMaxYieldModifiers;
+	int* m_aiGarrisonUnitModifiers;
+
 	///TKe
 	int m_iDomesticGreatGeneralRateModifier;
 	int m_iFreeExperience;
@@ -1168,7 +1247,16 @@ protected:
 	bool* m_pabHurry;
 	bool* m_pabSpecialBuildingNotRequired;
 	std::vector<int*> m_aaiImprovementYieldChanges;
-
+	//Tks Civics
+	std::vector< std::pair<CivicTypes, int> > m_aiCivicCombatBonuses;
+	std::vector< std::pair<BuildingClassTypes, int> > m_aiCivicTreasuryBonuses;
+	std::vector< std::pair<UnitClassTypes, int> > m_aRandomGrowthUnits;
+	std::vector< std::pair<UnitClassTypes, int> > m_aUnitClassFoodCosts;
+	std::vector< std::pair<YieldTypes, int> > m_aConnectedTradeYields;
+	std::vector< std::pair<YieldTypes, int> > m_aConnectedMissonYields;
+	UnitClassArray<int> m_jaAllowedUnitClassImmigration;
+	///Tke
+	std::vector<CivicTypes> m_aProhibitsCivics;
 	std::vector<int> m_aFreeUnitClasses;
 };
 
@@ -1288,6 +1376,9 @@ public:
 	DllExport int getMaxYieldModifiers(int iYield) const;
 	DllExport int getImmigrationUnits(int iUnit) const;
 	DllExport int getAutoSellsYields(int iYield) const;
+	DllExport int getNumCivicTreasuryBonus() const;
+	DllExport int getCivicTreasury(int index) const;
+	DllExport int getCivicTreasuryBonus(int index) const;
 	///Tke
 	DllExport int getConquestProbability() const;
 	DllExport int getHealRateChange() const;
@@ -1427,6 +1518,8 @@ public:
 	int getYieldDemand(YieldTypes eYield) const;
 	int getMarketCap() const;
 protected:
+	//Tks Civics
+	std::vector< std::pair<CivicTypes, int> > m_aiCivicTreasuryBonuses;
 	YieldArray<int> m_aiYieldDemand;
 	int m_iMarketCap;
 	// domestic yield demand - end - Nightinggale
@@ -1963,6 +2056,8 @@ public:
 
 	DllExport GameTurnInfo& getGameTurnInfo(int iIndex) const;
 	///TKs Med
+	//Tks Civics
+	DllExport int getAnarchyPercent() const;
 	DllExport int getTradeRouteTripLength(int i) const;
 	///Tke
 	DllExport void allocateGameTurnInfos(const int iSize);
@@ -1979,6 +2074,8 @@ protected:
 	int m_iNumTurnIncrements;
 	CvString m_szGameSpeedName;
 	///TKs Med
+	//TK Civics
+	int m_iAnarchyPercent;
 	int* m_aiTradeRouteTripLength;
 	///TKe
 	GameTurnInfo* m_pGameTurnInfo;
@@ -2721,7 +2818,11 @@ public:
 	DllExport virtual ~CvLeaderHeadInfo();
 	DllExport int getAlarmType() const;
 	///Tks Med
+	int getNumCivicDiplomacyAttitudes() const;
+	int getCivicDiplomacyAttitudes(int index) const;
+	int getCivicDiplomacyAttitudesValue(int index) const;
 	DllExport int getEraTraits(int i) const;
+	bool isTradeScreenAllowed(int i) const;
 	DllExport int getVictoryType() const;
 	DllExport int getTravelCommandType() const;
 	DllExport int getEconomyType() const;
@@ -2764,6 +2865,10 @@ public:
 	DllExport int getOpenBordersAttitudeDivisor() const;
 	DllExport int getOpenBordersAttitudeChangeLimit() const;
 	DllExport int getDefensivePactAttitudeDivisor() const;
+	//Tks Civics Diplomacy
+	DllExport int getCivicDiplomacyDivisor() const;
+	DllExport int getCivicDiplomacyChangeLimit() const;
+	//tke
 	DllExport int getDefensivePactAttitudeChangeLimit() const;
 	DllExport int getShareWarAttitudeChange() const;
 	DllExport int getShareWarAttitudeDivisor() const;
@@ -2855,6 +2960,10 @@ protected:
 	int m_iOpenBordersRefuseAttitudeThreshold;
 	int m_iDefensivePactRefuseAttitudeThreshold;
 	int m_iPermanentAllianceRefuseAttitudeThreshold;
+	//Tks Civics Diplomacy
+	int m_iCivicDiplomacyDivisor;
+	int m_iCivicDiplomacyChangeLimit;
+	//Tke
 	CvString m_szArtDefineTag;
 	// Arrays
 	bool* m_abTraits;
@@ -2868,7 +2977,9 @@ protected:
 	int* m_aiDiploPeaceMusicScriptIds;
 	int* m_aiDiploWarMusicScriptIds;
 	 ///Tks Med
+	std::vector< std::pair<CivicTypes, int> > m_aiCivicDiplomacyAttitudes;
 	int* aiEraTraits;
+	bool* m_aiAllowedTradeScreens;
 	///TKe
 };
 
@@ -3050,6 +3161,8 @@ public:
 	DllExport int getRecruitPriceDiscount() const;
 	DllExport int getEuropeTravelTimeModifier() const;
 	DllExport int getImmigrationThresholdModifier() const;
+	///Tks CivicsScreen
+	DllExport int getMaxAnarchy() const;
 
 	///TKs Invention Core Mod v 1.0
 
@@ -3069,6 +3182,9 @@ public:
 	///TKs Med
 	DllExport int isFreePromotionUnitClass(int i) const;
 	DllExport int isFreePromotionUnitProfession(int i) const;
+	int getNumBonusTechCategories() const;
+	CivicTypes getBonusTechCategory(int index) const;
+	int getTechCategoryBonus(int index) const;
 	///TKe
 	DllExport int getYieldModifier(int iYield) const;
 	DllExport int getGoodyFactor(int iGoody) const;
@@ -3106,7 +3222,9 @@ protected:
 	int m_iRecruitPriceDiscount;
 	int m_iEuropeTravelTimeModifier;
 	int m_iImmigrationThresholdModifier;
-
+	///TKs CivicsScreen
+	int m_iMaxAnarchy;
+	//TKe CivicsScreen
 	///TKs Invention Core Mod v 1.0
 	bool m_bFreePromotionsAllowChange;
     bool m_bFreeBuildingAllowChange;
@@ -3134,6 +3252,7 @@ protected:
 	bool* m_abFreeBuildingClass;
 
 	std::vector<int*> m_aaiBuildingYieldChanges;
+	std::vector< std::pair<CivicTypes, int> > m_aBonusTechCategories;//TKs Invention Categories
 };
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -3733,6 +3852,8 @@ public:
 
 	DllExport bool isRevolution() const;
 	DllExport bool isNoGoodies() const;
+	//Tks Civics
+	DllExport int getAnarchyPercent() const;
 	// < JAnimals Mod Start >
 	bool isNoAILandAnimals() const;
 	bool isNoAISeaAnimals() const;
@@ -3766,6 +3887,8 @@ protected:
 	CvString m_szAudioUnitDefeatScript;
 	bool m_bRevolution;
 	bool m_bNoGoodies;
+	//TK Civics
+	int m_iAnarchyPercent;
 	// < JAnimals Mod Start >
 	bool m_bNoAILandAnimals;
 	bool m_bNoAISeaAnimals;

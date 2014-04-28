@@ -355,6 +355,13 @@
 	<ElementType name="HurryInfos" content="eltOnly">
 		<element type="HurryInfo" maxOccurs="*"/>
 	</ElementType>
+  <ElementType name="GlobalCivicEffectInfos" content="eltOnly">
+		<element type="GlobalCivicEffectInfo" maxOccurs="*"/>
+	</ElementType>
+  <ElementType name="GlobalCivicEffectInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="Description"/>
+	</ElementType>
 	<ElementType name="CivicOptionType" content="textOnly"/>
 	<ElementType name="CivicOptionDescription" content="textOnly"/>
 	<ElementType name="CivicOptionInfo" content="eltOnly">
@@ -476,9 +483,12 @@
 	<ElementType name="bFreeUnitsAreNonePopulation" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bFreeUnitsNotAllCities" content="textOnly" dt:type="boolean"/>
 	<ElementType name="AllowsTrait" content="textOnly"/>
+  <ElementType name="AllowsCivic" content="textOnly"/>
 	<ElementType name="AllowsTradeScreen" content="textOnly"/>
 	<ElementType name="ConvertsUnitsTo" content="textOnly"/>
 	<ElementType name="NewDefaultUnitClass" content="textOnly"/>
+	<ElementType name="NewLuxuryUnitClass" content="textOnly"/>
+  <ElementType name="NewConvertUnitClass" content="textOnly"/>
 	<ElementType name="ConvertsUnitsFrom" content="textOnly"/>
 	<ElementType name="DisallowsTech" content="textOnly"/>
 	<ElementType name="FreeUnitFirstToResearch" content="textOnly"/>
@@ -487,9 +497,16 @@
 		<element type="YieldType"/>
 		<element type="iChange"/>
 	</ElementType>
+  <ElementType name="UpkeepYield" content="eltOnly">
+    <element type="YieldType"/>
+    <element type="iChange"/>
+  </ElementType>
 	<ElementType name="AllowsYields" content="eltOnly">
 		<element type="AllowsYield" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
+  <ElementType name="UpkeepYields" content="eltOnly">
+    <element type="UpkeepYield" minOccurs="0" maxOccurs="*"/>
+  </ElementType>
 	<ElementType name="AllowsBuildingType" content="eltOnly">
 		<element type="BuildingType"/>
 		<element type="iChange"/>
@@ -505,6 +522,31 @@
 	<ElementType name="AllowsUnitClasses" content="eltOnly">
 		<element type="AllowsUnitClass" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
+	<ElementType name="AllowsUnitClassesImmigration" content="eltOnly">
+		<element type="AllowsUnitClass" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+  <ElementType name="UnitClassType" content="textOnly"/>
+  <ElementType name="iPercentChance" content="textOnly" dt:type="int"/>
+  <ElementType name="RandomGrowthClass" content="eltOnly">
+    <element type="UnitClassType"/>
+    <element type="iPercentChance"/>
+  </ElementType>
+  <ElementType name="RandomGrowthClasses" content="eltOnly">
+    <element type="RandomGrowthClass" minOccurs="0" maxOccurs="*"/>
+  </ElementType>
+  <ElementType name="UnitClassFoodCost" content="eltOnly">
+    <element type="UnitClassType"/>
+    <element type="iValue"/>
+  </ElementType>
+  <ElementType name="UnitClassFoodCosts" content="eltOnly">
+    <element type="UnitClassFoodCost" minOccurs="0" maxOccurs="*"/>
+  </ElementType>
+  <ElementType name="ConnectedTradeYields" content="eltOnly">
+    <element type="YieldChange" minOccurs="0" maxOccurs="*"/>
+  </ElementType>
+  <ElementType name="ConnectedMissonYields" content="eltOnly">
+    <element type="YieldChange" minOccurs="0" maxOccurs="*"/>
+  </ElementType>
 	<ElementType name="PromotionType" content="textOnly"/>
 	<ElementType name="AllowsPromotion" content="eltOnly">
 		<element type="PromotionType"/>
@@ -529,12 +571,20 @@
 		<element type="AllowsBonus" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="TerrainType" content="textOnly"/>
+  <ElementType name="FartherPointType" content="textOnly"/>
 	<ElementType name="AllowsTerrains" content="eltOnly">
 		<element type="TerrainType"/>
 		<element type="iChange"/>
 	</ElementType>
 	<ElementType name="AllowsBuildTypesTerrain" content="eltOnly">
 		<element type="AllowsTerrains" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+  <ElementType name="FartherPointChange" content="eltOnly">
+		<element type="FartherPointType"/>
+		<element type="iChange"/>
+	</ElementType>
+  <ElementType name="FartherPointChanges" content="eltOnly">
+		<element type="FartherPointChange" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="BuildType" content="textOnly"/>
 	<ElementType name="ModBuildType" content="eltOnly">
@@ -550,12 +600,25 @@
 	<ElementType name="FasterBuildFeatureTypes" content="eltOnly">
 		<element type="ModBuildType" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-	<ElementType name="MaxYieldModifier" content="eltOnly">
+	<ElementType name="MaxStorageModifier" content="eltOnly">
 		<element type="YieldType"/>
 		<element type="iChange"/>
 	</ElementType>
-	<ElementType name="MaxYieldModifiers" content="eltOnly">
-		<element type="MaxYieldModifier" minOccurs="0"/>
+  <ElementType name="GarrisonUnitModifier" content="eltOnly">
+		<element type="YieldType"/>
+		<element type="iChange"/>
+	</ElementType>
+  <ElementType name="ProhibitedCivic" content="eltOnly">
+		<element type="Civic" minOccurs="0"/>
+	</ElementType>
+  <ElementType name="ProhibitsCivics" content="eltOnly">
+		<element type="ProhibitedCivic" minOccurs="0"/>
+	</ElementType>
+	<ElementType name="MaxStorageModifiers" content="eltOnly">
+		<element type="MaxStorageModifier" minOccurs="0"/>
+	</ElementType>
+  <ElementType name="GarrisonUnitModifiers" content="eltOnly">
+		<element type="GarrisonUnitModifier" minOccurs="0"/>
 	</ElementType>
 	<ElementType name="RouteType" content="textOnly"/>
 	<ElementType name="RouteTypes" content="eltOnly">
@@ -568,9 +631,24 @@
 	<ElementType name="AllowsRoutes" content="eltOnly">
 		<element type="RouteTypes" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
+  <ElementType name="CivicTreasuryBonus" content="eltOnly">
+    <element type="BuildingClassType"/>
+    <element type="iValue"/>
+  </ElementType>
+  <ElementType name="CivicTreasuryBonuses" content="eltOnly">
+    <element type="CivicTreasuryBonus" minOccurs="0" maxOccurs="*"/>
+  </ElementType>
+  <ElementType name="CivicCombatBonus" content="eltOnly">
+    <element type="Civic"/>
+    <element type="iValue"/>
+  </ElementType>
+  <ElementType name="CivicCombatBonuses" content="eltOnly">
+    <element type="CivicCombatBonus" minOccurs="0" maxOccurs="*"/>
+  </ElementType>
 	<ElementType name="bStartConstitution" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bisNoneTradeable" content="textOnly" dt:type="boolean"/>
 	<ElementType name="iCheaperPopulationGrowth" content="textOnly" dt:type="int"/>
+  <ElementType name="iGlobalFoodCostMod" content="textOnly" dt:type="int"/>
 	<ElementType name="iIncreasedEnemyHealRate" content="textOnly" dt:type="int"/>
 	<ElementType name="iCenterPlotFoodBonus" content="textOnly" dt:type="int"/>
 	<ElementType name="iProlificInventorRateChange" content="textOnly" dt:type="int"/>
@@ -582,10 +660,19 @@
 	<ElementType name="iKingTreasureTransportMod" content="textOnly" dt:type="int"/>
 	<ElementType name="iFoundCityType" content="textOnly"/>
 	<ElementType name="iIncreaseCityPopulation" content="textOnly" dt:type="int"/>
-	<ElementType name="iFatherPointModifier" content="textOnly" dt:type="int"/>
-	<ElementType name="bRevolutionEuropeTrade" content="textOnly" dt:type="boolean"/>
+  <ElementType name="iMissionariesNotCosumed" content="textOnly" dt:type="int"/>
+  <ElementType name="iTradingPostNotCosumed" content="textOnly" dt:type="int"/>
+  <ElementType name="iHuntingYieldPercent" content="textOnly" dt:type="int"/>
+  <ElementType name="iPilgramYieldPercent" content="textOnly" dt:type="int"/>
+  <ElementType name="iFatherPointModifier" content="textOnly" dt:type="int"/>
+  <ElementType name="iAnarchyLength" content="textOnly" dt:type="int"/>
+  <ElementType name="iInitialCost" content="textOnly" dt:type="int"/>
+  <ElementType name="iDiplomacyAttitudeChange" content="textOnly" dt:type="int"/>
+  <ElementType name="bRevolutionEuropeTrade" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bAllowsMapTrade" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bNoGoodyTech" content="textOnly" dt:type="boolean"/>
+  <ElementType name="bWorkersBuildAfterMove" content="textOnly" dt:type="boolean"/>
+  <ElementType name="bBuildingTreasuryBonus" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bNoArrowinTechScreen" content="textOnly" dt:type="boolean"/>
 	<ElementType name="iNativeAttitudeChange" content="textOnly" dt:type="int"/>
 	<ElementType name="CivicInfo" content="eltOnly">
@@ -610,6 +697,7 @@
 		<element type="iFatherPointModifier"/>
 		<element type="bDominateNativeBorders"/>
 		<element type="bRevolutionEuropeTrade"/>
+    <element type="ProhibitsCivics" minOccurs="0"/>
 		<element type="YieldModifiers"/>
 		<element type="CapitalYieldModifiers"/>
 		<element type="Hurrys"/>
@@ -632,34 +720,53 @@
 		<element type="RequiredYields" minOccurs="0"/>
 		<element type="RequiredFatherPoints" minOccurs="0"/>
 		<element type="iCostToResearch" minOccurs="0"/>
+    <element type="UpkeepYields" minOccurs="0"/>
 		<element type="AllowsYields" minOccurs="0"/>
 		<element type="AllowsBuildingTypes" minOccurs="0"/>
 		<element type="AllowsUnitClasses" minOccurs="0"/>
+		<element type="AllowsUnitClassesImmigration" minOccurs="0"/>
 		<element type="AllowsPromotions" minOccurs="0"/>
 		<element type="AllowsProfessions" minOccurs="0"/>
 		<element type="AllowsBonuses" minOccurs="0"/>
 		<element type="AllowsTrait" minOccurs="0"/>
+    <element type="AllowsCivic" minOccurs="0"/>
 		<element type="AllowsTradeScreen" minOccurs="0"/>
 		<element type="AllowsBuildTypes" minOccurs="0"/>
 		<element type="AllowsBuildTypesTerrain" minOccurs="0"/>
+    <element type="FartherPointChanges" minOccurs="0"/>
 		<element type="FasterBuildTypes" minOccurs="0"/>
 		<element type="FasterBuildFeatureTypes" minOccurs="0"/>
 		<element type="ConvertsUnitsFrom" minOccurs="0"/>
 		<element type="ConvertsUnitsTo" minOccurs="0"/>
-		<element type="NewDefaultUnitClass" minOccurs="0"/>
+    <element type="UnitClassFoodCosts" minOccurs="0"/>
+    <element type="RandomGrowthClasses" minOccurs="0"/>
+    <element type="ConnectedMissonYields" minOccurs="0"/>
+    <element type="ConnectedTradeYields" minOccurs="0"/>
+    <element type="NewDefaultUnitClass" minOccurs="0"/>
+	  <element type="NewLuxuryUnitClass" minOccurs="0"/>
+    <element type="NewConvertUnitClass" minOccurs="0"/>
 		<element type="DisallowsTech" minOccurs="0"/>
 		<element type="ConvertsResearchYield" minOccurs="0"/>
 		<element type="RouteMovementMod" minOccurs="0"/>
 		<element type="AllowsRoutes" minOccurs="0"/>
 		<element type="FreeUnitFirstToResearch" minOccurs="0"/>
+    <element type="CivicTreasuryBonuses" minOccurs="0"/>
+    <element type="CivicCombatBonuses" minOccurs="0"/>
+    <element type="GarrisonUnitModifiers" minOccurs="0"/>
 		<element type="bStartConstitution" minOccurs="0"/>
 		<element type="bAllowsMapTrade" minOccurs="0"/>
 		<element type="bNoArrowinTechScreen" minOccurs="0"/>
 		<element type="bisNoneTradeable" minOccurs="0"/>
 		<element type="bNoGoodyTech" minOccurs="0"/>
-		<element type="iIncreasedEnemyHealRate" minOccurs="0"/>
+    <element type="bWorkersBuildAfterMove" minOccurs="0"/>
+    <element type="bBuildingTreasuryBonus" minOccurs="0"/>
+		<element type="iAnarchyLength" minOccurs="0"/>
+    <element type="iInitialCost" minOccurs="0"/>
+    <element type="iDiplomacyAttitudeChange" minOccurs="0"/>
+    <element type="iIncreasedEnemyHealRate" minOccurs="0"/>
 		<element type="iFreeHurriedImmigrants" minOccurs="0"/>
 		<element type="iCheaperPopulationGrowth" minOccurs="0"/>
+    <element type="iGlobalFoodCostMod" minOccurs="0"/>
 		<element type="iCenterPlotFoodBonus" minOccurs="0"/>
 		<element type="iProlificInventorRateChange" minOccurs="0"/>
 		<element type="iGoldBonusForFirstToResearch" minOccurs="0"/>
@@ -671,7 +778,11 @@
 		<element type="iFoundCityType" minOccurs="0"/>
 		<element type="iIncreaseCityPopulation" minOccurs="0"/>
 		<element type="IndustrializationVictory" minOccurs="0"/>
-		<element type="MaxYieldModifiers" minOccurs="0"/>
+    <element type="iMissionariesNotCosumed" minOccurs="0"/>
+    <element type="iTradingPostNotCosumed" minOccurs="0"/>
+    <element type="iPilgramYieldPercent" minOccurs="0"/>
+    <element type="iHuntingYieldPercent" minOccurs="0"/>
+		<element type="MaxStorageModifiers" minOccurs="0"/>
 	</ElementType>
 	<ElementType name="CivicInfos" content="eltOnly">
 		<element type="CivicInfo" maxOccurs="*"/>
@@ -679,6 +790,7 @@
 	<ElementType name="iGrowthPercent" content="textOnly" dt:type="int"/>
 	<ElementType name="iStoragePercent" content="textOnly" dt:type="int"/>
 	<ElementType name="iTrainPercent" content="textOnly" dt:type="int"/>
+  <ElementType name="iAnarchyPercent" content="textOnly" dt:type="int"/>
 	<ElementType name="iConstructPercent" content="textOnly" dt:type="int"/>
 	<ElementType name="iGreatGeneralPercent" content="textOnly" dt:type="int"/>
 	<ElementType name="iEventChancePerTurn" content="textOnly" dt:type="int"/>
@@ -704,6 +816,7 @@
 		<element type="iGreatGeneralPercent"/>
 		<element type="iRevolutionTurns"/>
 		<element type="GameTurnInfos"/>
+    <element type="iAnarchyPercent" minOccurs="0"/>
 		<element type="TradeRouteTripLengths" minOccurs="0"/>
 	</ElementType>
 	<ElementType name="GameSpeedInfos" content="eltOnly">
@@ -847,6 +960,7 @@
 		<!-- JAnimals Mod End -->
 		<element type="bNoGoodies"/>
 		<element type="bRevolution"/>
+    <element type="iAnarchyPercent" minOccurs="0"/>
 		<element type="iGameTurn"/>
 		<element type="iAdvancedStartPoints"/>
 		<element type="iStartingUnitMultiplier"/>
@@ -1074,6 +1188,9 @@
 	<ElementType name="Civ4CivicOptionInfos" content="eltOnly">
 		<element type="CivicOptionInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
+  <ElementType name="Civ4GlobalCivicEffectInfos" content="eltOnly">
+    <element type="GlobalCivicEffectInfos" minOccurs="0" maxOccurs="1"/>
+  </ElementType>
 	<ElementType name="Civ4CivicInfos" content="eltOnly">
 		<element type="CivicInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>

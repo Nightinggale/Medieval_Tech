@@ -787,6 +787,21 @@
 			<bCtrlDownAlt>0</bCtrlDownAlt>
 			<iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
 		</ControlInfo>
+    <ControlInfo>
+      <Type>CONTROL_CIVICS_SCREEN</Type>
+      <Description>Civics Screen</Description>
+      <Help/>
+      <HotKey>KB_D</HotKey>
+      <bAltDown>0</bAltDown>
+      <bShiftDown>0</bShiftDown>
+      <bCtrlDown>0</bCtrlDown>
+      <iHotKeyPriority>0</iHotKeyPriority>
+      <HotKeyAlt/>
+      <bAltDownAlt>0</bAltDownAlt>
+      <bShiftDownAlt>0</bShiftDownAlt>
+      <bCtrlDownAlt>0</bCtrlDownAlt>
+      <iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
+    </ControlInfo>
 		<ControlInfo>
 			<Type>CONTROL_TURN_LOG</Type>
 			<Description>TXT_KEY_EVENT_LOG</Description>

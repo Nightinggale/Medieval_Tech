@@ -159,6 +159,12 @@
 			<YieldsConsumed>
 				<YieldType>NONE</YieldType>
 			</YieldsConsumed>
+      <CaptureCargoTypes>
+        <CaptureCargoType>
+          <UnitClassType>UNITCLASS_GRAIN</UnitClassType>
+          <iChange>20</iChange>
+        </CaptureCargoType>
+      </CaptureCargoTypes>
 			<CivType>1</CivType>
 			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,7,5</Button>
 			<ProfessionSubTypes/>
@@ -312,6 +318,49 @@
 			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,6,7</Button>
 			<ProfessionSubTypes/>
 		</ProfessionInfo>
+    <ProfessionInfo>
+      <Type>PROFESSION_NATIVE_PEDLER</Type>
+      <Description>Barbarian Peddler</Description>
+      <Civilopedia>???</Civilopedia>
+      <Strategy>???</Strategy>
+      <Help/>
+      <bNativesInvalid>0</bNativesInvalid>
+      <bEuropeInvalid>1</bEuropeInvalid>
+      <bColonialInvalid>1</bColonialInvalid>
+      <Combat>NONECOMBAT_PEDLER</Combat>
+      <DefaultUnitAI>UNITAI_TRADER</DefaultUnitAI>
+      <SpecialBuilding>NONE</SpecialBuilding>
+      <UpgradeProfession>PROFESSION_MERCHANT</UpgradeProfession>
+      <bWorkPlot>0</bWorkPlot>
+      <bCitizen>0</bCitizen>
+      <bWater>0</bWater>
+      <bScout>0</bScout>
+      <bCityDefender>0</bCityDefender>
+      <bCanFound>1</bCanFound>
+      <bUnarmed>0</bUnarmed>
+      <bNoDefensiveBonus>0</bNoDefensiveBonus>
+      <iCombatChange>2</iCombatChange>
+      <iMovesChange>0</iMovesChange>
+      <iWorkRate>0</iWorkRate>
+      <iMissionaryRate>0</iMissionaryRate>
+      <iPower>0</iPower>
+      <iAsset>0</iAsset>
+      <YieldEquipedNums/>
+      <FreePromotions>
+        <FreePromotion>
+          <PromotionType>PROMOTION_PEDLER</PromotionType>
+          <bFreePromotion>1</bFreePromotion>
+        </FreePromotion>
+      </FreePromotions>
+      <YieldsProduced>
+        <YieldType>NONE</YieldType>
+      </YieldsProduced>
+      <YieldsConsumed>
+        <YieldType>NONE</YieldType>
+      </YieldsConsumed>
+      <Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,6,7</Button>
+      <ProfessionSubTypes/>
+    </ProfessionInfo>
 		<ProfessionInfo>
 			<Type>PROFESSION_TAX_COLLECTOR</Type>
 			<Description>Tax Collector</Description>
@@ -398,7 +447,9 @@
 			<iFoundCityType>CITYTYPE_OUTPOST</iFoundCityType>
 			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,7,5</Button>
 			<ProfessionSubTypes/>
-    <!--ArrayEnable 0: Use Parent; 1: Use Sub Profession; 2: Merge Sub with Parent  -->
+    <!--ArrayEnable Help 0: Use Parent; 1: Use Sub Profession; 2: Merge Sub with Parent  -->
+    <!--ArrayEnable Help For CombatGearTypes,  YieldEquipedNums, and FreePromotions  -->
+    <!--ArrayEnable Help Example <ArrayEnable>211</ArrayEnable> means CombatGearType Merge with Parent, YieldEquipedNums use Sub, FreePromotions use Sub-->
 		</ProfessionInfo>
 		<ProfessionInfo>
 			<Type>PROFESSION_KNIGHT_MAIL</Type>
@@ -966,7 +1017,7 @@
 			<ProfessionSubTypes>
 				<ProfessionSubType>
 					<Type>PROFESSION_HEAVY_SKIRMISHER_PLATE</Type>
-					<Description>Heavy Skirmisher(Scale)</Description>
+					<Description>Heavy Skirmisher(Plate)</Description>
 					<iPower>125</iPower>
 					<ArrayEnable>011</ArrayEnable>
 					<CombatGearTypes/>
@@ -1153,6 +1204,52 @@
 						</FreePromotion>
 					</FreePromotions>
 				</ProfessionSubType>
+        <ProfessionSubType>
+          <Type>PROFESSION_INFANTRY_ARMED</Type>
+          <Description>Infantry(Armed)</Description>
+          <iPower>145</iPower>
+          <ArrayEnable>011</ArrayEnable>
+          <CombatGearTypes/>
+          <YieldEquipedNums>
+            <YieldEquipedNum>
+              <YieldType>YIELD_WEAPONS</YieldType>
+              <iYieldAmount>50</iYieldAmount>
+            </YieldEquipedNum>
+          </YieldEquipedNums>
+          <FreePromotions>
+            <FreePromotion>
+              <PromotionType>PROMOTION_FORMATION2</PromotionType>
+              <bFreePromotion>1</bFreePromotion>
+            </FreePromotion>
+          </FreePromotions>
+        </ProfessionSubType>
+        <ProfessionSubType>
+          <Type>PROFESSION_INFANTRY_WELLARMED</Type>
+          <Description>Infantry(Well Armed)</Description>
+          <iPower>150</iPower>
+          <ArrayEnable>011</ArrayEnable>
+          <CombatGearTypes/>
+          <YieldEquipedNums>
+            <YieldEquipedNum>
+              <YieldType>YIELD_WEAPONS</YieldType>
+              <iYieldAmount>50</iYieldAmount>
+            </YieldEquipedNum>
+            <YieldEquipedNum>
+              <YieldType>YIELD_LEATHER_ARMOR</YieldType>
+              <iYieldAmount>25</iYieldAmount>
+            </YieldEquipedNum>
+          </YieldEquipedNums>
+          <FreePromotions>
+            <FreePromotion>
+              <PromotionType>PROMOTION_FORMATION2</PromotionType>
+              <bFreePromotion>1</bFreePromotion>
+            </FreePromotion>
+            <FreePromotion>
+              <PromotionType>PROMOTION_ATTACK_LEATHER</PromotionType>
+              <bFreePromotion>1</bFreePromotion>
+            </FreePromotion>
+          </FreePromotions>
+        </ProfessionSubType>
 			</ProfessionSubTypes>
 		</ProfessionInfo>
 		<ProfessionInfo>
@@ -1264,7 +1361,7 @@
 			<CombatGearTypes>
 				<CombatGearType>
 					<GearType>UNITARMOR_PLATE</GearType>
-					<iAmount>1</iAmount>
+					<iAmount>0</iAmount>
 				</CombatGearType>
 			</CombatGearTypes>
 			<YieldEquipedNums>
@@ -1297,7 +1394,12 @@
 					<Description>Pikeman(Plate)</Description>
 					<iPower>125</iPower>
 					<ArrayEnable>011</ArrayEnable>
-					<CombatGearTypes/>
+          <CombatGearTypes>
+            <CombatGearType>
+              <GearType>UNITARMOR_PLATE</GearType>
+              <iAmount>1</iAmount>
+            </CombatGearType>
+          </CombatGearTypes>
 					<YieldEquipedNums>
 						<YieldEquipedNum>
 							<YieldType>YIELD_WEAPONS</YieldType>
@@ -1461,7 +1563,7 @@
 			<YieldsConsumed>
 				<YieldType>NONE</YieldType>
 			</YieldsConsumed>
-			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,3,8</Button>
+			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,1,9</Button>
 			<ProfessionSubTypes/>
 		</ProfessionInfo>
 		<ProfessionInfo>

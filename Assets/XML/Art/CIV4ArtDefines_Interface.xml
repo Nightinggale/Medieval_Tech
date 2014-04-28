@@ -449,6 +449,10 @@
 			<Type>SCREEN_MAIN_ANATHEMA</Type>
 			<Path>Art/Interface/Game Hud/Top_buttons/Anathema.dds</Path>
 		</InterfaceArtInfo>
+    <InterfaceArtInfo>
+			<Type>SCREEN_MAIN_ANARCHY</Type>
+			<Path>Art/Interface/Game Hud/Top_buttons/AnarchyTopButton.dds</Path>
+		</InterfaceArtInfo>
 		<InterfaceArtInfo>
 			<Type>FATHER_BG</Type>
 			<Path>Art/Interface/Screens/Founding_Fathers/FF_BG.dds</Path>
@@ -683,6 +687,10 @@
 			<Type>INTERFACE_MOTHER_LAND</Type>
 			<Path>Art/Interface/Game Hud/Top_buttons/motherlandtopbut.dds</Path>
 		</InterfaceArtInfo>
+    <InterfaceArtInfo>
+      <Type>INTERFACE_CIVIC_SCREEN_TOP</Type>
+      <Path>Art/Interface/Game Hud/Top_buttons/CivicsScreenTopBut.dds</Path>
+    </InterfaceArtInfo>
 		<InterfaceArtInfo>
 			<Type>INTERFACE_SPICE_ROUTE</Type>
 			<Path>Art/Interface/Game Hud/Top_buttons/SpiceRouteTopBut.dds</Path>

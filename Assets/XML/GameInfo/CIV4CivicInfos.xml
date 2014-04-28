@@ -7,7 +7,7 @@
 	<!-- Civic Infos -->
 	<CivicInfos>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>NATIVE_TECH</Type>
 			<Description>Native</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -73,8 +73,10 @@
       <!--These next two are used to convert units after this tech is research-->
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
-      <!--This will be the new Default population unit for when a City does its Growth or you clear specialty and such-->
+      <!--This will be the new Default population unitclass for when a City does its normal food Growth -->
 			<NewDefaultUnitClass/>
+	  <!--This will be the new Default population unitclass for when a City does its luxury food Growth -->
+			<NewLuxuryUnitClass/>
       <!--If this tech is researched the DisallowsTech will be none researchable-->
 			<DisallowsTech/>
       <!--Modifies the cost to move along routes. Example: put 1 to increase movement along roads by 1-->
@@ -108,110 +110,42 @@
       <!--If a Yield is listed here it will be used to determine Industrial Victory. The code is only set up to use one Yield atm.-->
 			<IndustrializationVictory/>
 		</CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>NONE</CivicOptionType>
+      <Type>GLOBAL_EFFECT_ANARCHY</Type>
+      <Description>Anarchy</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,1,3</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+      <UpkeepYields/>
+      <iAnarchyLength>0</iAnarchyLength>
+      <iInitialCost>0</iInitialCost>
+    </CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
-			<Type>MEDIEVAL_TECH</Type>
-			<Description>Medieval Tech</Description>
-			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
-			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
-			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
-			<iAIWeight>0</iAIWeight>
-			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
-			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
-			<iFreeExperience>0</iFreeExperience>
-			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
-			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
-			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
-			<iExpInBorderModifier>0</iExpInBorderModifier>
-			<iNativeAttitudeChange>0</iNativeAttitudeChange>
-			<iNativeCombatModifier>0</iNativeCombatModifier>
-			<iFatherPointModifier>0</iFatherPointModifier>
-			<bDominateNativeBorders>0</bDominateNativeBorders>
-			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
-			<YieldModifiers/>
-			<CapitalYieldModifiers/>
-			<Hurrys/>
-			<SpecialBuildingNotRequireds/>
-			<ImprovementYieldChanges/>
-			<FreeUnitClasses/>
-      <!--Prevents the Free Units from being automaticly added as population-->
-			<bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
-      <!--Prevents units from being created in all the cities-->
-			<bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
-			<ProfessionCombatChanges/>
-			<ImmigrationConversion>NONE</ImmigrationConversion>
-      <!--A Category must be listed here for the Tech to be used in game-->
-			<InventionCategory/>
-      <!--X and Y location of the tech on the tech grid-->
-			<iX_Location>0</iX_Location>
-			<iY_Location>0</iY_Location>
-			<iX_Relative_Location>0</iX_Relative_Location>
-			<iY_Relative_Location>0</iY_Relative_Location>
-      <!--These 3 are the pre required techs. On the tech tree grid if all three are used RequiredInvention will be set as "Also Requires"-->
-      <!--and arrows will point at RequiredInvention2 and RequiredInventionOr. If RequiredInvention2 is not used arrows will point at RequiredInvention and RequiredInventionOr.-->
-      <!--If the Or tech is not used then RequiredInvention2 wil be set as the "Also Requires" if it is used.-->
-			<RequiredInvention/>
-			<RequiredInvention2/>
-			<RequiredInventionOr/>
-      <!--This unit must be assisting on the project in the City-->
-			<RequiredUnitType/>
-      <!--These are the required Yields that get consumed. If no Yield is used here do not put YIELD_IDEAS, leave as <RequiredYields/>-->
-			<RequiredYields/>
-      <!--Allows the Production of this Yield. If a yield is listed here it will not be able to be harvested, bought, or sold. Nor will buildings associated with this yield be usable-->
-			<AllowsYields/>
-      <!--The next four are self explained. Put 1 to allow or -1 to disallow-->
-			<AllowsBuildingTypes/>
-			<AllowsUnitClasses/>
-			<AllowsPromotions/>
-			<AllowsProfessions/>
-      <!--Place a Trait here to have it Processed along with this Tech. See CIV4TraitInfos for examples-->
-			<AllowsTrait/>
-      <!--This is "Improvements". Place Improvements here to allow or disallow-->
-			<AllowsBuildTypes/>
-      <!--Checks the below terrains for the Improvements above. Not fully tested yet-->
-			<AllowsBuildTypesTerrain/>
-      <!--These next two are used to convert units after this tech is research-->
-			<ConvertsUnitsFrom/>
-			<ConvertsUnitsTo/>
-      <!--This will be the new Default population unit for when a City does its Growth or you clear specialty and such-->
-			<NewDefaultUnitClass/>
-      <!--If this tech is researched the DisallowsTech will be none researchable-->
-			<DisallowsTech/>
-      <!--Modifies the cost to move along routes. Example: put 1 to increase movement along roads by 1-->
-			<RouteMovementMod/>
-      <!--This tech will allow you to have a Constitution before you start your revolution-->
-			<bStartConstitution>0</bStartConstitution>
-      <!--Allows map trading-->
-			<bAllowsMapTrade>0</bAllowsMapTrade>
-      <!--Arrows will not point to this Tech, currently not used in the code-->
-			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
-      <!--This tech will be none tradeable-->
-			<bisNoneTradeable>0</bisNoneTradeable>
-      <!--Increases heal rate in enemy territory by this amount-->
-			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
-      <!--The number of free Immigrants when this tech is researched-->
-			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
-      <!--Decreases the standard 200 threshold for food to do population growth-->
-			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
-      <!--Increases the Center plot food bonus-->
-			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
-      <!--Changes the rate you gain Prolific inventor experience-->
-			<iProlificInventorRateChange>0</iProlificInventorRateChange>
-      <!--First to discover earns this gold-->
-			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
-      <!--Gold bonus for discovering, don't need to be first-->
-			<iGoldBonus>0</iGoldBonus>
-      <!--The number of Free techs. If you have a free tech the next project you have selected to research on your next turn will be auto completed-->
-			<iFreeTechs>0</iFreeTechs>
-      <!--This modifies the percent that the king charges you to transport Treasure units-->
-			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
-      <!--If a Yield is listed here it will be used to determine Industrial Victory. The code is only set up to use one Yield atm.-->
-			<IndustrializationVictory/>
-		</CivicInfo>
-		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TRADE_TECH</Type>
-			<Description>Medieval Trade Tech</Description>
+			<Description>Trading Points</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
 			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
 			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
@@ -275,6 +209,7 @@
 			<ConvertsUnitsTo/>
       <!--This will be the new Default population unit for when a City does its Growth or you clear specialty and such-->
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
       <!--If this tech is researched the DisallowsTech will be none researchable-->
 			<DisallowsTech/>
       <!--Modifies the cost to move along routes. Example: put 1 to increase movement along roads by 1-->
@@ -309,7 +244,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_CENSURE</Type>
 			<Description>Censures</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -375,6 +310,7 @@
 			<ConvertsUnitsTo/>
       <!--This will be the new Default population unit for when a City does its Growth or you clear specialty and such-->
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
       <!--If this tech is researched the DisallowsTech will be none researchable-->
 			<DisallowsTech/>
       <!--Modifies the cost to move along routes. Example: put 1 to increase movement along roads by 1-->
@@ -408,8 +344,1313 @@
       <!--If a Yield is listed here it will be used to determine Industrial Victory. The code is only set up to use one Yield atm.-->
 			<IndustrializationVictory/>
 		</CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>NONE</CivicOptionType>
+      <Type>MEDIEVAL_TECH</Type>
+      <Description>Medieval Tech</Description>
+      <Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
+      <Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
+      <Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <!--Prevents the Free Units from being automaticly added as population-->
+      <bFreeUnitsAreNonePopulation>0</bFreeUnitsAreNonePopulation>
+      <!--Prevents units from being created in all the cities-->
+      <bFreeUnitsNotAllCities>0</bFreeUnitsNotAllCities>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+      <!--A Category must be listed here for the Tech to be used in game-->
+      <InventionCategory/>
+      <!--X and Y location of the tech on the tech grid-->
+			<iX_Location>0</iX_Location>
+			<iY_Location>0</iY_Location>
+			<iX_Relative_Location>0</iX_Relative_Location>
+			<iY_Relative_Location>0</iY_Relative_Location>
+      <!--These 3 are the pre required techs. On the tech tree grid if all three are used RequiredInvention will be set as "Also Requires"-->
+      <!--and arrows will point at RequiredInvention2 and RequiredInventionOr. If RequiredInvention2 is not used arrows will point at RequiredInvention and RequiredInventionOr.-->
+      <!--If the Or tech is not used then RequiredInvention2 wil be set as the "Also Requires" if it is used.-->
+      <RequiredInvention/>
+      <RequiredInvention2/>
+      <RequiredInventionOr/>
+      <!--This unit must be assisting on the project in the City-->
+      <RequiredUnitType/>
+      <!--These are the required Yields that get consumed. If no Yield is used here do not put YIELD_IDEAS, leave as <RequiredYields/>-->
+      <RequiredYields/>
+      <!--Allows the Production of this Yield. If a yield is listed here it will not be able to be harvested, bought, or sold. Nor will buildings associated with this yield be usable-->
+      <AllowsYields/>
+      <!--The next four are self explained. Put 1 to allow or -1 to disallow-->
+      <AllowsBuildingTypes/>
+      <AllowsUnitClasses/>
+      <AllowsPromotions/>
+      <AllowsProfessions/>
+      <!--Place a Trait here to have it Processed along with this Tech. See CIV4TraitInfos for examples-->
+      <AllowsTrait/>
+      <!--This is "Improvements". Place Improvements here to allow or disallow-->
+      <AllowsBuildTypes/>
+      <!--Checks the below terrains for the Improvements above. Not fully tested yet-->
+      <AllowsBuildTypesTerrain/>
+      <!--These next two are used to convert units after this tech is research-->
+      <ConvertsUnitsFrom/>
+      <ConvertsUnitsTo/>
+      <!--This will be the new Default population unit for when a City does its Growth or you clear specialty and such-->
+      <NewDefaultUnitClass/>
+      <NewLuxuryUnitClass/>
+      <!--If this tech is researched the DisallowsTech will be none researchable-->
+      <DisallowsTech/>
+      <!--Modifies the cost to move along routes. Example: put 1 to increase movement along roads by 1-->
+      <RouteMovementMod/>
+      <!--This tech will allow you to have a Constitution before you start your revolution-->
+      <bStartConstitution>0</bStartConstitution>
+      <!--Allows map trading-->
+      <bAllowsMapTrade>0</bAllowsMapTrade>
+      <!--Arrows will not point to this Tech, currently not used in the code-->
+      <bNoArrowinTechScreen>0</bNoArrowinTechScreen>
+      <!--This tech will be none tradeable-->
+      <bisNoneTradeable>0</bisNoneTradeable>
+      <!--Increases heal rate in enemy territory by this amount-->
+      <iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
+      <!--The number of free Immigrants when this tech is researched-->
+      <iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
+      <!--Decreases the standard 200 threshold for food to do population growth-->
+      <iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
+      <!--Increases the Center plot food bonus-->
+      <iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
+      <!--Changes the rate you gain Prolific inventor experience-->
+      <iProlificInventorRateChange>0</iProlificInventorRateChange>
+      <!--First to discover earns this gold-->
+      <iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
+      <!--Gold bonus for discovering, don't need to be first-->
+      <iGoldBonus>0</iGoldBonus>
+      <!--The number of Free techs. If you have a free tech the next project you have selected to research on your next turn will be auto completed-->
+      <iFreeTechs>0</iFreeTechs>
+      <!--This modifies the percent that the king charges you to transport Treasure units-->
+      <iKingTreasureTransportMod>0</iKingTreasureTransportMod>
+      <!--If a Yield is listed here it will be used to determine Industrial Victory. The code is only set up to use one Yield atm.-->
+      <IndustrializationVictory/>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
+      <Type>CIVIC_LOCALISM</Type>
+      <Description>Localism</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,5,1</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+      <UpkeepYields>
+        <UpkeepYield>
+          <YieldType>YIELD_GOLD</YieldType>
+          <iChange>0</iChange>
+        </UpkeepYield>
+      </UpkeepYields>
+      <iAnarchyLength>0</iAnarchyLength>
+      <iInitialCost>0</iInitialCost>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
+      <Type>CIVIC_MONARCHY</Type>
+      <Description>TXT_KEY_CIVIC_MONARCHY</Description>
+      <Civilopedia>TXT_KEY_CIVIC_MONARCHY_PEDIA</Civilopedia>
+      <Strategy>TXT_KEY_CIVIC_MONARCHY_STRATEGY</Strategy>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,1,4</Button>
+      <iAIWeight>100</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_MONARCHY</RequiredInvention>
+      <UpkeepYields>
+        <UpkeepYield>
+          <YieldType>YIELD_GOLD</YieldType>
+          <iChange>0</iChange>
+        </UpkeepYield>
+      </UpkeepYields>
+      <AllowsUnitClassesImmigration>
+        <AllowsUnitClass>
+          <AllowsUnit>UNITCLASS_ARAB_NOBLEMAN</AllowsUnit>
+          <iChange>1</iChange>
+        </AllowsUnitClass>
+      </AllowsUnitClassesImmigration>
+      <AllowsTrait>TRAIT_CIVIC_MONARCHY</AllowsTrait>
+      <NewLuxuryUnitClass>UNITCLASS_RECRUIT</NewLuxuryUnitClass>
+      <GarrisonUnitModifiers>
+        <GarrisonUnitModifier>
+          <YieldType>YIELD_BELLS</YieldType>
+          <iChange>3</iChange>
+        </GarrisonUnitModifier>
+      </GarrisonUnitModifiers>
+      <iAnarchyLength>2</iAnarchyLength>
+      <iInitialCost>500</iInitialCost>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
+      <Type>CIVIC_FEUDALISM</Type>
+      <Description>Feudalism</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,4,2</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_FEUDALISM</RequiredInvention>
+      <UpkeepYields>
+        <UpkeepYield>
+          <YieldType>YIELD_GOLD</YieldType>
+          <iChange>0</iChange>
+        </UpkeepYield>
+      </UpkeepYields>
+      <AllowsPromotions>
+        <AllowsPromotion>
+          <PromotionType>PROMOTION_KNIGHT</PromotionType>
+          <iChange>1</iChange>
+        </AllowsPromotion>
+      </AllowsPromotions>
+      <AllowsProfessions>
+        <AllowsProfession>
+          <ProfessionType>PROFESSION_KNIGHT_PLATE</ProfessionType>
+          <iChange>1</iChange>
+        </AllowsProfession>
+        <AllowsProfession>
+          <ProfessionType>PROFESSION_KNIGHT_MAIL</ProfessionType>
+          <iChange>1</iChange>
+        </AllowsProfession>
+      </AllowsProfessions>
+      <FartherPointChanges>
+        <FartherPointChange>
+          <FartherPointType>FATHER_POINT_MILITARY</FartherPointType>
+          <iChange>100</iChange>
+        </FartherPointChange>
+      </FartherPointChanges>
+      <NewLuxuryUnitClass>UNITCLASS_PAGE</NewLuxuryUnitClass>
+      <iAnarchyLength>2</iAnarchyLength>
+      <iInitialCost>3000</iInitialCost>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
+      <Type>CIVIC_THEOCRACY</Type>
+      <Description>Theocracy</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,4,4</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_THEOLOGY</RequiredInvention>
+      <UpkeepYields>
+        <UpkeepYield>
+          <YieldType>YIELD_GOLD</YieldType>
+          <iChange>0</iChange>
+        </UpkeepYield>
+      </UpkeepYields>
+      <FartherPointChanges>
+        <FartherPointChange>
+          <FartherPointType>FATHER_POINT_RELIGION</FartherPointType>
+          <iChange>100</iChange>
+        </FartherPointChange>
+      </FartherPointChanges>
+      <RandomGrowthClasses>
+        <RandomGrowthClass>
+          <UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
+          <iPercentChance>33</iPercentChance>
+        </RandomGrowthClass>
+      </RandomGrowthClasses>
+      <NewLuxuryUnitClass>UNITCLASS_ELDER</NewLuxuryUnitClass>
+      <iAnarchyLength>1</iAnarchyLength>
+      <iInitialCost>1000</iInitialCost>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
+      <Type>CIVIC_PARLIAMENT</Type>
+      <Description>Parliament</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,6,2</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <ProhibitsCivics>
+        <ProhibitedCivic>
+          <Civic>CIVIC_STATE_CONTROL</Civic>
+        </ProhibitedCivic>
+      </ProhibitsCivics>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_CLOCK</RequiredInvention>
+      <UpkeepYields>
+        <UpkeepYield>
+          <YieldType>YIELD_GOLD</YieldType>
+          <iChange>0</iChange>
+        </UpkeepYield>
+      </UpkeepYields>
+      <AllowsUnitClasses/>
+      <AllowsUnitClassesImmigration>
+        <AllowsUnitClass>
+          <AllowsUnit>UNITCLASS_ARISTOCRAT</AllowsUnit>
+          <iChange>1</iChange>
+        </AllowsUnitClass>
+      </AllowsUnitClassesImmigration>
+      <FartherPointChanges>
+        <FartherPointChange>
+          <FartherPointType>FATHER_POINT_POLITICAL</FartherPointType>
+          <iChange>100</iChange>
+        </FartherPointChange>
+      </FartherPointChanges>
+      <NewLuxuryUnitClass>UNITCLASS_ARISTOCRAT</NewLuxuryUnitClass>
+      <CivicCombatBonuses>
+        <CivicCombatBonus>
+          <Civic>CIVIC_STATE_CONTROL</Civic>
+          <iValue>25</iValue>
+        </CivicCombatBonus>
+      </CivicCombatBonuses>
+      <iAnarchyLength>1</iAnarchyLength>
+      <iInitialCost>2000</iInitialCost>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_PIETY</CivicOptionType>
+      <Type>CIVIC_APATHY</Type>
+      <Description>Apathy</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,5,3</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention/>
+      <UpkeepYields>
+        <UpkeepYield>
+          <YieldType>YIELD_GOLD</YieldType>
+          <iChange>0</iChange>
+        </UpkeepYield>
+      </UpkeepYields>
+      <iAnarchyLength>0</iAnarchyLength>
+      <iInitialCost>0</iInitialCost>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_PIETY</CivicOptionType>
+      <Type>CIVIC_RITUALISTIC</Type>
+      <Description>Ritualistic</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,2,1</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_CODE_OF_LAWS</RequiredInvention>
+      <UpkeepYields>
+        <UpkeepYield>
+          <YieldType>YIELD_GOLD</YieldType>
+          <iChange>0</iChange>
+        </UpkeepYield>
+      </UpkeepYields>
+      <ConnectedMissonYields>
+        <YieldChange>
+          <YieldType>YIELD_CROSSES</YieldType>
+          <iYieldChange>2</iYieldChange>
+        </YieldChange>
+      </ConnectedMissonYields>
+      <iAnarchyLength>1</iAnarchyLength>
+      <iInitialCost>100</iInitialCost>
+      <iMissionariesNotCosumed>-1</iMissionariesNotCosumed>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_PIETY</CivicOptionType>
+      <Type>CIVIC_DIVINE_REVELATION</Type>
+      <Description>Divine Revelation</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,3,1</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_STIRRUP</RequiredInvention>
+      <UpkeepYields>
+        <UpkeepYield>
+          <YieldType>YIELD_GOLD</YieldType>
+          <iChange>0</iChange>
+        </UpkeepYield>
+      </UpkeepYields>
+      <NewConvertUnitClass>UNITCLASS_CHRISTIAN_MISSIONARY</NewConvertUnitClass>
+      <CivicCombatBonuses>
+        <CivicCombatBonus>
+          <Civic>CIVIC_DIVINE_REVELATION</Civic>
+          <iValue>25</iValue>
+        </CivicCombatBonus>
+      </CivicCombatBonuses>
+      <iAnarchyLength>1</iAnarchyLength>
+      <iInitialCost>100</iInitialCost>
+      <iPilgramYieldPercent>50</iPilgramYieldPercent>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_PIETY</CivicOptionType>
+      <Type>CIVIC_PATRIARCH</Type>
+      <Description>Patriarch</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,8,2</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_ROADS</RequiredInvention>
+      <UpkeepYields>
+        <UpkeepYield>
+          <YieldType>YIELD_GOLD</YieldType>
+          <iChange>0</iChange>
+        </UpkeepYield>
+      </UpkeepYields>
+      <AllowsUnitClasses/>
+      <AllowsUnitClassesImmigration>
+        <AllowsUnitClass>
+          <AllowsUnit>UNITCLASS_VESTARCH</AllowsUnit>
+          <iChange>1</iChange>
+        </AllowsUnitClass>
+      </AllowsUnitClassesImmigration>
+      <NewLuxuryUnitClass>UNITCLASS_EUNUCH</NewLuxuryUnitClass>
+      <GarrisonUnitModifiers>
+        <GarrisonUnitModifier>
+          <YieldType>YIELD_CULTURE</YieldType>
+          <iChange>3</iChange>
+        </GarrisonUnitModifier>
+      </GarrisonUnitModifiers>
+      <iAnarchyLength>3</iAnarchyLength>
+      <iInitialCost>2000</iInitialCost>
+      <iDiplomacyAttitudeChange>2</iDiplomacyAttitudeChange>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_PIETY</CivicOptionType>
+      <Type>CIVIC_TOLERANCE</Type>
+      <Description>Religious Tolerance</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,4,3</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <ProhibitsCivics>
+        <ProhibitedCivic>
+          <Civic>CIVIC_RELIGIOUS_LAW</Civic>
+        </ProhibitedCivic>
+      </ProhibitsCivics>
+      <YieldModifiers>
+        <YieldModifier>
+          <YieldType>YIELD_IDEAS</YieldType>
+          <iYield>50</iYield>
+        </YieldModifier>
+        <YieldModifier>
+          <YieldType>YIELD_CULTURE</YieldType>
+          <iYield>-50</iYield>
+        </YieldModifier>
+      </YieldModifiers>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_FLYINGBUTRESS</RequiredInvention>
+      <UpkeepYields>
+        <UpkeepYield>
+          <YieldType>YIELD_GOLD</YieldType>
+          <iChange>0</iChange>
+        </UpkeepYield>
+      </UpkeepYields>
+      <FartherPointChanges>
+        <FartherPointChange>
+          <FartherPointType>FATHER_POINT_TRADE</FartherPointType>
+          <iChange>100</iChange>
+        </FartherPointChange>
+      </FartherPointChanges>
+      <iAnarchyLength>1</iAnarchyLength>
+      <iInitialCost>500</iInitialCost>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_COMMERCE</CivicOptionType>
+      <Type>CIVIC_LOCAL_TRADE</Type>
+      <Description>Minimum</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,4,1</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+      <UpkeepYields>
+        <UpkeepYield>
+          <YieldType>YIELD_GOLD</YieldType>
+          <iChange>0</iChange>
+        </UpkeepYield>
+      </UpkeepYields>
+      <iAnarchyLength>0</iAnarchyLength>
+      <iInitialCost>0</iInitialCost>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_COMMERCE</CivicOptionType>
+      <Type>CIVIC_MANORIAL</Type>
+      <Description>Manorial</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,7,2</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_MANORIALISM</RequiredInvention>
+      <UpkeepYields>
+        <UpkeepYield>
+          <YieldType>YIELD_GOLD</YieldType>
+          <iChange>0</iChange>
+        </UpkeepYield>
+      </UpkeepYields>
+      <AllowsUnitClasses/>
+      <AllowsUnitClassesImmigration/>
+      <AllowsPromotions/>
+      <iAnarchyLength>2</iAnarchyLength>
+      <iInitialCost>250</iInitialCost>
+      <iCenterPlotFoodBonus>1</iCenterPlotFoodBonus>
+      <iHuntingYieldPercent>100</iHuntingYieldPercent>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_COMMERCE</CivicOptionType>
+      <Type>CIVIC_MARKET_ECONOMY</Type>
+      <Description>Free Market</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,2,4</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>TRADING_CURRENCY</RequiredInvention>
+      <UpkeepYields>
+        <UpkeepYield>
+          <YieldType>YIELD_GOLD</YieldType>
+          <iChange>0</iChange>
+        </UpkeepYield>
+      </UpkeepYields>
+      <FartherPointChanges>
+        <FartherPointChange>
+          <FartherPointType>FATHER_POINT_EXPLORATION</FartherPointType>
+          <iChange>100</iChange>
+        </FartherPointChange>
+      </FartherPointChanges>
+      <RandomGrowthClasses/>
+      <ConnectedTradeYields>
+        <YieldChange>
+          <YieldType>YIELD_IDEAS</YieldType>
+          <iYieldChange>1</iYieldChange>
+        </YieldChange>
+      </ConnectedTradeYields>
+      <iAnarchyLength>1</iAnarchyLength>
+      <iInitialCost>250</iInitialCost>
+      <iTradingPostNotCosumed>5</iTradingPostNotCosumed>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_COMMERCE</CivicOptionType>
+      <Type>CIVIC_GUILDS</Type>
+      <Description>Guilds</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,6,1</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers>
+        <YieldModifier>
+          <YieldType>YIELD_IDEAS</YieldType>
+          <iYield>-50</iYield>
+        </YieldModifier>
+        <YieldModifier>
+          <YieldType>YIELD_HAMMERS</YieldType>
+          <iYield>50</iYield>
+        </YieldModifier>
+      </YieldModifiers>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>TRADING_GUILDS</RequiredInvention>
+      <UpkeepYields>
+        <UpkeepYield>
+          <YieldType>YIELD_GOLD</YieldType>
+          <iChange>0</iChange>
+        </UpkeepYield>
+      </UpkeepYields>
+      <AllowsTrait>INVENTION_TRAIT_GUILDS</AllowsTrait>
+      <NewDefaultUnitClass>UNITCLASS_BURGHER</NewDefaultUnitClass>
+      <iAnarchyLength>1</iAnarchyLength>
+      <iInitialCost>500</iInitialCost>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_COMMERCE</CivicOptionType>
+      <Type>CIVIC_STATE_CONTROL</Type>
+      <Description>State Control</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,1,1</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <ProhibitsCivics>
+        <ProhibitedCivic>
+          <Civic>CIVIC_PARLIAMENT</Civic>
+        </ProhibitedCivic>
+      </ProhibitsCivics>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_STONEWORK</RequiredInvention>
+      <UpkeepYields>
+        <UpkeepYield>
+          <YieldType>YIELD_GOLD</YieldType>
+          <iChange>0</iChange>
+        </UpkeepYield>
+      </UpkeepYields>
+      <ConnectedTradeYields>
+        <YieldChange>
+          <YieldType>YIELD_GOLD</YieldType>
+          <iYieldChange>3</iYieldChange>
+        </YieldChange>
+      </ConnectedTradeYields>
+      <CivicTreasuryBonuses>
+        <CivicTreasuryBonus>
+          <BuildingClassType>BUILDINGCLASS_MINT</BuildingClassType>
+          <iValue>1</iValue>
+        </CivicTreasuryBonus>
+        <CivicTreasuryBonus>
+          <BuildingClassType>BUILDINGCLASS_BANK</BuildingClassType>
+          <iValue>2</iValue>
+        </CivicTreasuryBonus>
+      </CivicTreasuryBonuses>
+      <bBuildingTreasuryBonus>1</bBuildingTreasuryBonus>
+      <iAnarchyLength>3</iAnarchyLength>
+      <iInitialCost>500</iInitialCost>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
+      <Type>CIVIC_ANARCHIST</Type>
+      <Description>Anarchist</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,1,3</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+      <UpkeepYields>
+        <UpkeepYield>
+          <YieldType>YIELD_GOLD</YieldType>
+          <iChange>0</iChange>
+        </UpkeepYield>
+      </UpkeepYields>
+      <iAnarchyLength>0</iAnarchyLength>
+      <iInitialCost>0</iInitialCost>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
+      <Type>CIVIC_SOVEREIGN</Type>
+      <Description>Sovereign Rule</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,3,2</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers>
+        <YieldModifier>
+          <YieldType>YIELD_HAMMERS</YieldType>
+          <iYield>100</iYield>
+        </YieldModifier>
+      </CapitalYieldModifiers>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_CONSTRUCTION</RequiredInvention>
+      <UpkeepYields>
+        <UpkeepYield>
+          <YieldType>YIELD_GOLD</YieldType>
+          <iChange>0</iChange>
+        </UpkeepYield>
+      </UpkeepYields>
+      <AllowsTrait>TRAIT_CIVIC_LOOTERS</AllowsTrait>
+      <iAnarchyLength>3</iAnarchyLength>
+      <iInitialCost>100</iInitialCost>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
+      <Type>CIVIC_RELIGIOUS_LAW</Type>
+      <Description>Ecclesiastical</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,3,3</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <ProhibitsCivics>
+        <ProhibitedCivic>
+          <Civic>CIVIC_TOLERANCE</Civic>
+        </ProhibitedCivic>
+      </ProhibitsCivics>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_ASTROLOGY</RequiredInvention>
+      <UpkeepYields>
+        <UpkeepYield>
+          <YieldType>YIELD_GOLD</YieldType>
+          <iChange>0</iChange>
+        </UpkeepYield>
+      </UpkeepYields>
+      <AllowsUnitClassesImmigration>
+        <AllowsUnitClass>
+          <AllowsUnit>UNITCLASS_CRIMINAL</AllowsUnit>
+          <iChange>-1</iChange>
+        </AllowsUnitClass>
+      </AllowsUnitClassesImmigration>
+      <GarrisonUnitModifiers>
+        <GarrisonUnitModifier>
+          <YieldType>YIELD_CROSSES</YieldType>
+          <iChange>3</iChange>
+        </GarrisonUnitModifier>
+      </GarrisonUnitModifiers>
+      <iAnarchyLength>2</iAnarchyLength>
+      <iInitialCost>250</iInitialCost>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
+      <Type>CIVIC_CHARTER_LAW</Type>
+      <Description>Charter Law</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,8,3</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>TRADING_COMMUNE</RequiredInvention>
+      <UpkeepYields>
+        <UpkeepYield>
+          <YieldType>YIELD_GOLD</YieldType>
+          <iChange>0</iChange>
+        </UpkeepYield>
+      </UpkeepYields>
+      <RandomGrowthClasses>
+        <RandomGrowthClass>
+          <UnitClassType>UNITCLASS_NOBLEMAN</UnitClassType>
+          <iPercentChance>33</iPercentChance>
+        </RandomGrowthClass>
+      </RandomGrowthClasses>
+      <iAnarchyLength>1</iAnarchyLength>
+      <iInitialCost>250</iInitialCost>
+      <iIncreasedImmigrants>1</iIncreasedImmigrants>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
+      <Type>CIVIC_CODEX</Type>
+      <Description>Codex</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,2,2</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers>
+        <YieldModifier>
+          <YieldType>YIELD_EDUCATION</YieldType>
+          <iYield>100</iYield>
+        </YieldModifier>
+      </YieldModifiers>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_BLOCKPRINTING</RequiredInvention>
+      <UpkeepYields>
+        <UpkeepYield>
+          <YieldType>YIELD_GOLD</YieldType>
+          <iChange>0</iChange>
+        </UpkeepYield>
+      </UpkeepYields>
+      <AllowsTrait>TRAIT_CIVIC_CODEX</AllowsTrait>
+      <RandomGrowthClasses>
+        <RandomGrowthClass>
+          <UnitClassType>UNITCLASS_DIGNITARY</UnitClassType>
+          <iPercentChance>33</iPercentChance>
+        </RandomGrowthClass>
+      </RandomGrowthClasses>
+      <iAnarchyLength>2</iAnarchyLength>
+      <iInitialCost>500</iInitialCost>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
+      <Type>CIVIC_TRIBALISM</Type>
+      <Description>Tribalism</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,1,2</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+      <UpkeepYields>
+        <UpkeepYield>
+          <YieldType>YIELD_GOLD</YieldType>
+          <iChange>0</iChange>
+        </UpkeepYield>
+      </UpkeepYields>
+      <iAnarchyLength>0</iAnarchyLength>
+      <iInitialCost>0</iInitialCost>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
+      <Type>CIVIC_SLAVERY</Type>
+      <Description>TXT_KEY_CIVIC_SLAVERY</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,7,3</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <ProhibitsCivics/>
+      <YieldModifiers>
+        <YieldModifier>
+          <YieldType>YIELD_BELLS</YieldType>
+          <iYield>-25</iYield>
+        </YieldModifier>
+      </YieldModifiers>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_METALCASTING</RequiredInvention>
+      <UpkeepYields>
+        <UpkeepYield>
+          <YieldType>YIELD_GOLD</YieldType>
+          <iChange>0</iChange>
+        </UpkeepYield>
+      </UpkeepYields>
+      <UnitClassFoodCosts>
+        <UnitClassFoodCost>
+          <UnitClassType>UNITCLASS_SLAVE</UnitClassType>
+          <iValue>-1</iValue>
+        </UnitClassFoodCost>
+        <UnitClassFoodCost>
+          <UnitClassType>UNITCLASS_SERF</UnitClassType>
+          <iValue>-1</iValue>
+        </UnitClassFoodCost>
+      </UnitClassFoodCosts>
+      <NewDefaultUnitClass>UNITCLASS_SLAVE_WARRIOR</NewDefaultUnitClass>
+      <iAnarchyLength>3</iAnarchyLength>
+      <iInitialCost>250</iInitialCost>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
+      <Type>CIVIC_SERFDOM</Type>
+      <Description>Serfdom</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,3,4</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>25</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_WHEELBARROW</RequiredInvention>
+      <UpkeepYields>
+        <UpkeepYield>
+          <YieldType>YIELD_GOLD</YieldType>
+          <iChange>0</iChange>
+        </UpkeepYield>
+      </UpkeepYields>
+      <UnitClassFoodCosts>
+        <UnitClassFoodCost>
+          <UnitClassType>UNITCLASS_SERF</UnitClassType>
+          <iValue>-1</iValue>
+        </UnitClassFoodCost>
+      </UnitClassFoodCosts>
+      <NewDefaultUnitClass>UNITCLASS_SERF</NewDefaultUnitClass>
+      <iAnarchyLength>3</iAnarchyLength>
+      <iInitialCost>250</iInitialCost>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
+      <Type>CIVIC_WAGE_LABOR</Type>
+      <Description>Wage Labor</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,2,3</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>0</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers>
+        <YieldModifier>
+          <YieldType>YIELD_BELLS</YieldType>
+          <iYield>100</iYield>
+        </YieldModifier>
+      </YieldModifiers>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_CALENDER</RequiredInvention>
+      <UpkeepYields>
+        <UpkeepYield>
+          <YieldType>YIELD_GOLD</YieldType>
+          <iChange>0</iChange>
+        </UpkeepYield>
+      </UpkeepYields>
+      <AllowsUnitClassesImmigration>
+        <AllowsUnitClass>
+          <AllowsUnit>UNITCLASS_COTTER</AllowsUnit>
+          <iChange>-1</iChange>
+        </AllowsUnitClass>
+      </AllowsUnitClassesImmigration>
+      <AllowsTrait>CIVIC_TRAIT_WAGE_LABOR</AllowsTrait>
+      <iAnarchyLength>1</iAnarchyLength>
+      <iInitialCost>500</iInitialCost>
+      <iGlobalFoodCostMod>1</iGlobalFoodCostMod>
+    </CivicInfo>
+    <CivicInfo>
+      <CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
+      <Type>CIVIC_BUREAUCRACY</Type>
+      <Description>Bureaucracy</Description>
+      <Civilopedia>????</Civilopedia>
+      <Strategy>????</Strategy>
+      <Button>,Art/Interface/Buttons/Civics/Civics_Atlas.dds,5,2</Button>
+      <iAIWeight>0</iAIWeight>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iFreeExperience>0</iFreeExperience>
+      <iWorkerSpeedModifier>0</iWorkerSpeedModifier>
+      <iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
+      <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+      <iExpInBorderModifier>0</iExpInBorderModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iFatherPointModifier>25</iFatherPointModifier>
+      <bDominateNativeBorders>0</bDominateNativeBorders>
+      <bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
+      <YieldModifiers/>
+      <CapitalYieldModifiers/>
+      <Hurrys/>
+      <SpecialBuildingNotRequireds/>
+      <ImprovementYieldChanges/>
+      <FreeUnitClasses/>
+      <ProfessionCombatChanges/>
+      <ImmigrationConversion>NONE</ImmigrationConversion>
+      <RequiredInvention>MEDIEVAL_TECH_CIVILSERVICE</RequiredInvention>
+      <UpkeepYields>
+        <UpkeepYield>
+          <YieldType>YIELD_GOLD</YieldType>
+          <iChange>0</iChange>
+        </UpkeepYield>
+      </UpkeepYields>
+      <NewDefaultUnitClass>UNITCLASS_PIONEER</NewDefaultUnitClass>
+      <bWorkersBuildAfterMove>1</bWorkersBuildAfterMove>
+      <iAnarchyLength>3</iAnarchyLength>
+      <iInitialCost>500</iInitialCost>
+    </CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_ASTROLOGY</Type>
 			<Description>Astrology</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -460,11 +1701,13 @@
 			<AllowsPromotions/>
 			<AllowsProfessions/>
 			<AllowsTrait/>
+      <AllowsCivic>CIVIC_RELIGIOUS_LAW</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<FreeUnitFirstToResearch>UNITCLASS_INVENTOR</FreeUnitFirstToResearch>
@@ -484,7 +1727,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_ASTROLOBE</Type>
 			<Description>Astrolobe</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -529,12 +1772,13 @@
 			<AllowsUnitClasses/>
 			<AllowsPromotions/>
 			<AllowsProfessions/>
-			<AllowsTrait>MEDIEVAL_TECH_ASTROLOBE</AllowsTrait>
+			<AllowsTrait>INVENTION_TRAIT_ASTROLOBE</AllowsTrait>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -553,7 +1797,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_ALCHEMY</Type>
 			<Description>Alchemy</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -623,6 +1867,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -641,7 +1886,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_ALPHABET</Type>
 			<Description>Alphabet</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -697,6 +1942,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -716,7 +1962,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_BLOCKPRINTING</Type>
 			<Description>Block Printing</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -772,11 +2018,13 @@
 			<AllowsPromotions/>
 			<AllowsProfessions/>
 			<AllowsTrait/>
+      <AllowsCivic>CIVIC_CODEX</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -795,7 +2043,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_CODE_OF_LAWS</Type>
 			<Description>Code of Laws</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -856,11 +2104,13 @@
 			</AllowsPromotions>
 			<AllowsProfessions/>
 			<AllowsTrait/>
+      <AllowsCivic>CIVIC_RITUALISTIC</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -880,7 +2130,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_MONASTICISM</Type>
 			<Description>Monasticism</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -946,6 +2196,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -965,7 +2216,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_JURYTRIAL</Type>
 			<Description>Jury Trial</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -1016,6 +2267,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -1029,13 +2281,12 @@
 			<iProlificInventorRateChange>0</iProlificInventorRateChange>
 			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
 			<iGoldBonus>0</iGoldBonus>
-			<iIncreasedImmigrants>1</iIncreasedImmigrants>
 			<iFreeTechs>0</iFreeTechs>
 			<iKingTreasureTransportMod>0</iKingTreasureTransportMod>
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_MATHEMATICS</Type>
 			<Description>Mathematics</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -1096,6 +2347,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -1115,7 +2367,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_WHEELBARROW</Type>
 			<Description>Wheelbarrow</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -1157,15 +2409,22 @@
 			<iCostToResearch>10</iCostToResearch>
 			<AllowsYields/>
 			<AllowsBuildingTypes/>
-			<AllowsUnitClasses/>
+      <AllowsUnitClasses>
+        <AllowsUnitClass>
+          <AllowsUnit>UNITCLASS_SERF</AllowsUnit>
+          <iChange>1</iChange>
+        </AllowsUnitClass>
+      </AllowsUnitClasses>
 			<AllowsPromotions/>
 			<AllowsProfessions/>
 			<AllowsTrait>INVENTION_WHEELBARROW</AllowsTrait>
+      <AllowsCivic>CIVIC_SERFDOM</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<AllowsRoutes>
@@ -1191,7 +2450,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_CALENDER</Type>
 			<Description>Calender</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -1242,11 +2501,13 @@
 			<AllowsPromotions/>
 			<AllowsProfessions/>
 			<AllowsTrait>INVENTION_MEDIEVAL_TECH_CALENDER</AllowsTrait>
+      <AllowsCivic>CIVIC_WAGE_LABOR</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -1266,7 +2527,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_PAPER</Type>
 			<Description>Paper</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -1317,6 +2578,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -1335,7 +2597,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_ROADS</Type>
 			<Description>Stone-Paved Roads</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -1396,11 +2658,13 @@
 			<AllowsPromotions/>
 			<AllowsProfessions/>
 			<AllowsTrait/>
+      <AllowsCivic>CIVIC_PATRIARCH</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<AllowsRoutes>
@@ -1425,7 +2689,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_MACHINERY</Type>
 			<Description>Medieval Mechinery</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -1492,6 +2756,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -1510,7 +2775,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_ENGINEERING</Type>
 			<Description>Medieval Engineering</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -1580,6 +2845,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -1598,7 +2864,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_PLATEARMOR</Type>
 			<Description>Blast Furnace</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -1662,12 +2928,10 @@
 					<ProfessionType>PROFESSION_INFANTRY3</ProfessionType>
 					<iChange>1</iChange>
 				</AllowsProfession>
-			</AllowsProfessions>
-			<AllowsProfessions>
-				<AllowsProfession>
-					<ProfessionType>PROFESSION_PIKEMAN_PLATE</ProfessionType>
-					<iChange>1</iChange>
-				</AllowsProfession>
+        <AllowsProfession>
+          <ProfessionType>PROFESSION_PIKEMAN_PLATE</ProfessionType>
+          <iChange>1</iChange>
+        </AllowsProfession>
 			</AllowsProfessions>
 			<AllowsTrait/>
 			<AllowsBuildTypes/>
@@ -1675,6 +2939,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -1693,7 +2958,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_STONEWORK</Type>
 			<Description>Great Stonework</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -1748,6 +3013,7 @@
 			<AllowsPromotions/>
 			<AllowsProfessions/>
 			<AllowsTrait/>
+      <AllowsCivic>CIVIC_STATE_CONTROL</AllowsCivic>
 			<AllowsBuildTypes>
 				<ModBuildType>
 					<BuildType>IMPROVEMENT_QUARRY</BuildType>
@@ -1758,6 +3024,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -1776,7 +3043,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_INVENTION_DIKES</Type>
 			<Description>Dikes</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -1838,6 +3105,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -1856,7 +3124,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_CROSSBOW</Type>
 			<Description>Mechanical Crank</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -1916,6 +3184,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -1934,7 +3203,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_SPINNINGWHEEL</Type>
 			<Description>Spinning Wheel</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -1994,6 +3263,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -2012,7 +3282,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_CLOCK</Type>
 			<Description>Mechanical Clock</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -2058,11 +3328,13 @@
 			<AllowsPromotions/>
 			<AllowsProfessions/>
 			<AllowsTrait>INVENTION_CLOCK</AllowsTrait>
+      <AllowsCivic>CIVIC_PARLIAMENT</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -2081,7 +3353,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_LONGBOW</Type>
 			<Description>Longbow</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -2149,6 +3421,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -2167,7 +3440,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_MINING</Type>
 			<Description>Medieval Mining</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -2237,6 +3510,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -2256,7 +3530,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_METALCASTING</Type>
 			<Description>Metal Casting</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -2321,11 +3595,13 @@
 				</AllowsProfession>
 			</AllowsProfessions>
 			<AllowsTrait/>
+      <AllowsCivic>CIVIC_SLAVERY</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -2345,7 +3621,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_WHEELEDPLOW</Type>
 			<Description>Moaldboard Plow</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -2407,6 +3683,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -2417,7 +3694,7 @@
 			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
 			<iFreeHurriedImmigrants>0</iFreeHurriedImmigrants>
 			<iCheaperPopulationGrowth>0</iCheaperPopulationGrowth>
-			<iCenterPlotFoodBonus>2</iCenterPlotFoodBonus>
+			<iCenterPlotFoodBonus>0</iCenterPlotFoodBonus>
 			<iProlificInventorRateChange>0</iProlificInventorRateChange>
 			<iGoldBonusForFirstToResearch>0</iGoldBonusForFirstToResearch>
 			<iGoldBonus>0</iGoldBonus>
@@ -2427,7 +3704,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_MOTTEANDBAILEY</Type>
 			<Description>Motte and Bailey</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -2478,6 +3755,7 @@
 			<AllowsPromotions/>
 			<AllowsProfessions/>
 			<AllowsTrait/>
+      <AllowsCivic/>
 			<AllowsBuildTypes>
 				<ModBuildType>
 					<BuildType>IMPROVEMENT_WATCH_TOWER</BuildType>
@@ -2492,6 +3770,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -2511,7 +3790,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_CONSTRUCTION</Type>
 			<Description>Medieval Construction</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -2566,11 +3845,13 @@
 			<AllowsPromotions/>
 			<AllowsProfessions/>
 			<AllowsTrait/>
+      <AllowsCivic>CIVIC_SOVEREIGN</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -2590,7 +3871,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_MAILARMOR</Type>
 			<Description>Mail Armor</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -2649,12 +3930,10 @@
 					<ProfessionType>PROFESSION_INFANTRY2</ProfessionType>
 					<iChange>1</iChange>
 				</AllowsProfession>
-			</AllowsProfessions>
-			<AllowsProfessions>
-				<AllowsProfession>
-					<ProfessionType>PROFESSION_HEAVY_INFANTRY_MAIL</ProfessionType>
-					<iChange>1</iChange>
-				</AllowsProfession>
+        <AllowsProfession>
+          <ProfessionType>PROFESSION_HEAVY_INFANTRY_MAIL</ProfessionType>
+          <iChange>1</iChange>
+        </AllowsProfession>
 			</AllowsProfessions>
 			<AllowsTrait/>
 			<AllowsBuildTypes/>
@@ -2662,6 +3941,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -2680,7 +3960,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_CHIVALRY</Type>
 			<Description>Chivalry</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -2719,7 +3999,7 @@
 			<iY_Location>11</iY_Location>
 			<iX_Relative_Location>0</iX_Relative_Location>
 			<iY_Relative_Location>0</iY_Relative_Location>
-			<RequiredInvention>MEDIEVAL_TECH_FUEDALISM</RequiredInvention>
+			<RequiredInvention>MEDIEVAL_TECH_FEUDALISM</RequiredInvention>
 			<RequiredInvention2>MEDIEVAL_TECH_DRAMA</RequiredInvention2>
 			<RequiredInventionOr/>
 			<RequiredUnitType/>
@@ -2741,6 +4021,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -2759,7 +4040,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_CROPROTATION</Type>
 			<Description>Crop Rotation</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -2832,6 +4113,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -2850,7 +4132,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_HORSESHOES</Type>
 			<Description>Horseshoes</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -2869,12 +4151,7 @@
 			<iFatherPointModifier>0</iFatherPointModifier>
 			<bDominateNativeBorders>0</bDominateNativeBorders>
 			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_HAMMERS</YieldType>
-					<iYield>25</iYield>
-				</YieldModifier>
-			</YieldModifiers>
+			<YieldModifiers/>
 			<CapitalYieldModifiers/>
 			<Hurrys/>
 			<SpecialBuildingNotRequireds/>
@@ -2911,6 +4188,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -2929,7 +4207,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_HORSEBREADING</Type>
 			<Description>Horse Breading</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -2990,6 +4268,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<FreeUnitFirstToResearch>UNITCLASS_RANCHER</FreeUnitFirstToResearch>
@@ -3010,7 +4289,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_HORSECOLLAR</Type>
 			<Description>Horse Collar</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -3061,6 +4340,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -3079,7 +4359,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_STIRRUP</Type>
 			<Description>Stirrup</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -3134,11 +4414,13 @@
 				</AllowsProfession>
 			</AllowsProfessions>
 			<AllowsTrait>INVENTION_STIRRUP</AllowsTrait>
+      <AllowsCivic>CIVIC_DIVINE_REVELATION</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -3157,7 +4439,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_IRONPLOW</Type>
 			<Description>Iron Plow</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -3229,6 +4511,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -3249,7 +4532,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_COTTON</Type>
 			<Description>Cotton</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -3310,6 +4593,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -3328,7 +4612,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_MANORIALISM</Type>
 			<Description>Manorialism</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -3368,45 +4652,24 @@
 			<RequiredUnitType/>
 			<RequiredYields/>
 			<iCostToResearch>6</iCostToResearch>
-			<AllowsYields>
-				<AllowsYield>
-					<YieldType>YIELD_GRAIN</YieldType>
-					<iChange>1</iChange>
-				</AllowsYield>
-			</AllowsYields>
+			<AllowsYields/>
 			<AllowsBuildingTypes>
 				<AllowsBuildingType>
 					<BuildingType>BUILDINGCLASS_MANOR</BuildingType>
 					<iChange>1</iChange>
 				</AllowsBuildingType>
 			</AllowsBuildingTypes>
-			<AllowsUnitClasses>
-				<AllowsUnitClass>
-					<AllowsUnit>UNITCLASS_BUTCHER</AllowsUnit>
-					<iChange>1</iChange>
-				</AllowsUnitClass>
-				<AllowsUnitClass>
-					<AllowsUnit>UNITCLASS_BAKER</AllowsUnit>
-					<iChange>1</iChange>
-				</AllowsUnitClass>
-				<AllowsUnitClass>
-					<AllowsUnit>UNITCLASS_NOBLEMAN</AllowsUnit>
-					<iChange>1</iChange>
-				</AllowsUnitClass>
-			</AllowsUnitClasses>
+			<AllowsUnitClasses/>
 			<AllowsPromotions/>
-			<AllowsProfessions>
-				<AllowsProfession>
-					<ProfessionType>PROFESSION_HUNTSMAN</ProfessionType>
-					<iChange>1</iChange>
-				</AllowsProfession>
-			</AllowsProfessions>
+			<AllowsProfessions/>
 			<AllowsTrait/>
+      <AllowsCivic>CIVIC_MANORIAL</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -3426,7 +4689,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_HUNTING</Type>
 			<Description>Medieval Hunting</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -3480,7 +4743,12 @@
 				</AllowsUnitClass>
 			</AllowsUnitClasses>
 			<AllowsPromotions/>
-			<AllowsProfessions/>
+      <AllowsProfessions>
+        <AllowsProfession>
+          <ProfessionType>PROFESSION_HUNTSMAN</ProfessionType>
+          <iChange>1</iChange>
+        </AllowsProfession>
+      </AllowsProfessions>
 			<AllowsTrait/>
 			<AllowsBuildTypes>
 				<ModBuildType>
@@ -3492,6 +4760,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<FreeUnitFirstToResearch>UNITCLASS_HUNTSMAN</FreeUnitFirstToResearch>
@@ -3512,7 +4781,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_MONARCHY</Type>
 			<Description>Monarchy</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -3572,11 +4841,13 @@
 				</AllowsProfession>
 			</AllowsProfessions>
 			<AllowsTrait/>
+      <AllowsCivic>CIVIC_MONARCHY</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -3596,9 +4867,9 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
-			<Type>MEDIEVAL_TECH_FUEDALISM</Type>
-			<Description>Fuedalism</Description>
+			<CivicOptionType>NONE</CivicOptionType>
+			<Type>MEDIEVAL_TECH_FEUDALISM</Type>
+			<Description>Feudalism</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
 			<Strategy>TXT_KEY_NEED_DESCRIPTION</Strategy>
 			<Button>Art/Buttons/Tech_Categorys/NativeCat.dds</Button>
@@ -3639,21 +4910,8 @@
 			<AllowsYields/>
 			<AllowsBuildingTypes/>
 			<AllowsUnitClasses/>
-			<AllowsPromotions>
-				<AllowsPromotion>
-					<PromotionType>PROMOTION_KNIGHT</PromotionType>
-					<iChange>1</iChange>
-				</AllowsPromotion>
-			</AllowsPromotions>
+			<AllowsPromotions/>
 			<AllowsProfessions>
-				<AllowsProfession>
-					<ProfessionType>PROFESSION_KNIGHT_PLATE</ProfessionType>
-					<iChange>1</iChange>
-				</AllowsProfession>
-				<AllowsProfession>
-					<ProfessionType>PROFESSION_KNIGHT_MAIL</ProfessionType>
-					<iChange>1</iChange>
-				</AllowsProfession>
 				<AllowsProfession>
 					<ProfessionType>PROFESSION_SKIRMISHER2</ProfessionType>
 					<iChange>1</iChange>
@@ -3664,11 +4922,13 @@
 				</AllowsProfession>
 			</AllowsProfessions>
 			<AllowsTrait/>
+      <AllowsCivic>CIVIC_FEUDALISM</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -3687,7 +4947,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_DIVINERIGHT</Type>
 			<Description>Divine Right</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -3738,6 +4998,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<ConvertsResearchYield>YIELD_BELLS</ConvertsResearchYield>
 			<RouteMovementMod/>
@@ -3757,7 +5018,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_CIVILSERVICE</Type>
 			<Description>Civil Service</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -3791,7 +5052,7 @@
 			<iY_Location>12</iY_Location>
 			<iX_Relative_Location>0</iX_Relative_Location>
 			<iY_Relative_Location>0</iY_Relative_Location>
-			<RequiredInvention>MEDIEVAL_TECH_FUEDALISM</RequiredInvention>
+			<RequiredInvention>MEDIEVAL_TECH_FEUDALISM</RequiredInvention>
 			<RequiredInvention2>MEDIEVAL_TECH_PAPER</RequiredInvention2>
 			<RequiredInventionOr/>
 			<RequiredUnitType/>
@@ -3808,11 +5069,13 @@
 			</AllowsPromotions>
 			<AllowsProfessions/>
 			<AllowsTrait>INVENTION_CIVILSERVICE</AllowsTrait>
+      <AllowsCivic>CIVIC_BUREAUCRACY</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -3831,7 +5094,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_LITERATURE</Type>
 			<Description>Literature</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -3892,6 +5155,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<FreeUnitFirstToResearch>UNITCLASS_DIGNITARY</FreeUnitFirstToResearch>
@@ -3911,7 +5175,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_THEOLOGY</Type>
 			<Description>Theology</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -3972,11 +5236,13 @@
 			<AllowsPromotions/>
 			<AllowsProfessions/>
 			<AllowsTrait/>
+      <AllowsCivic>CIVIC_THEOCRACY</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<FreeUnitFirstToResearch>UNITCLASS_PREACHER</FreeUnitFirstToResearch>
@@ -3996,7 +5262,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_DRAMA</Type>
 			<Description>Drama</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -4062,6 +5328,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<FreeUnitFirstToResearch>UNITCLASS_JESTER</FreeUnitFirstToResearch>
@@ -4081,7 +5348,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_FLYINGBUTRESS</Type>
 			<Description>Flying Butress</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -4132,11 +5399,13 @@
 			<AllowsPromotions/>
 			<AllowsProfessions/>
 			<AllowsTrait/>
+      <AllowsCivic>CIVIC_TOLERANCE</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<FreeUnitFirstToResearch/>
@@ -4156,7 +5425,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_RENAISSANCE</Type>
 			<Description>Renaissance</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -4207,6 +5476,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<ConvertsResearchYield>YIELD_CULTURE</ConvertsResearchYield>
 			<RouteMovementMod/>
@@ -4226,7 +5496,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_GLASSMAKING</Type>
 			<Description>Glass Making</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -4287,6 +5557,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<FreeUnitFirstToResearch>UNITCLASS_DISTILLER</FreeUnitFirstToResearch>
@@ -4306,7 +5577,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_COMPASS</Type>
 			<Description>Compass</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -4366,6 +5637,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -4384,7 +5656,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_LATLONG</Type>
 			<Description>Latitude and Longitude</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -4449,6 +5721,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -4467,7 +5740,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_RUDDER</Type>
 			<Description>Sternpost Rudder</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -4518,6 +5791,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -4536,7 +5810,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>MEDIEVAL_TECH_GREATGALLEY</Type>
 			<Description>Great Galley</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -4586,12 +5860,13 @@
 			<AllowsUnitClasses/>
 			<AllowsPromotions/>
 			<AllowsProfessions/>
-			<AllowsTrait>INVENTION_GREAT_GALLEY</AllowsTrait>
+			<AllowsTrait>INVENTION_TRAIT_GREAT_GALLEY</AllowsTrait>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<FreeUnitFirstToResearch>UNITCLASS_FRIGATE</FreeUnitFirstToResearch>
@@ -4611,349 +5886,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_SLAVERY</CivicOptionType>
-			<Type>CIVIC_FREEDOM</Type>
-			<Description>TXT_KEY_CIVIC_FREEDOM</Description>
-			<Civilopedia>TXT_KEY_CIVIC_FREEDOM_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_FREEDOM_STRATEGY</Strategy>
-			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,7,4</Button>
-			<iAIWeight>0</iAIWeight>
-			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
-			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
-			<iFreeExperience>0</iFreeExperience>
-			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
-			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
-			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
-			<iExpInBorderModifier>0</iExpInBorderModifier>
-			<iNativeAttitudeChange>0</iNativeAttitudeChange>
-			<iNativeCombatModifier>0</iNativeCombatModifier>
-			<iFatherPointModifier>0</iFatherPointModifier>
-			<bDominateNativeBorders>0</bDominateNativeBorders>
-			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
-			<YieldModifiers/>
-			<CapitalYieldModifiers/>
-			<Hurrys/>
-			<SpecialBuildingNotRequireds/>
-			<ImprovementYieldChanges/>
-			<FreeUnitClasses>
-				<FreeUnitClass>
-					<UnitClass>UNITCLASS_COLONIST</UnitClass>
-					<iNumFree>1</iNumFree>
-				</FreeUnitClass>
-			</FreeUnitClasses>
-			<ProfessionCombatChanges/>
-			<ImmigrationConversion>NONE</ImmigrationConversion>
-		</CivicInfo>
-		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_SLAVERY</CivicOptionType>
-			<Type>CIVIC_SLAVERY</Type>
-			<Description>TXT_KEY_CIVIC_SLAVERY</Description>
-			<Civilopedia>TXT_KEY_CIVIC_SLAVERY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_SLAVERY_STRATEGY</Strategy>
-			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,6,4</Button>
-			<iAIWeight>0</iAIWeight>
-			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
-			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
-			<iFreeExperience>0</iFreeExperience>
-			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
-			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
-			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
-			<iExpInBorderModifier>0</iExpInBorderModifier>
-			<iNativeAttitudeChange>0</iNativeAttitudeChange>
-			<iNativeCombatModifier>0</iNativeCombatModifier>
-			<iFatherPointModifier>0</iFatherPointModifier>
-			<bDominateNativeBorders>0</bDominateNativeBorders>
-			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_FOOD</YieldType>
-					<iYield>50</iYield>
-				</YieldModifier>
-				<YieldModifier>
-					<YieldType>YIELD_LUMBER</YieldType>
-					<iYield>50</iYield>
-				</YieldModifier>
-				<YieldModifier>
-					<YieldType>YIELD_SILVER</YieldType>
-					<iYield>50</iYield>
-				</YieldModifier>
-				<YieldModifier>
-					<YieldType>YIELD_COTTON</YieldType>
-					<iYield>50</iYield>
-				</YieldModifier>
-				<YieldModifier>
-					<YieldType>YIELD_FUR</YieldType>
-					<iYield>50</iYield>
-				</YieldModifier>
-				<YieldModifier>
-					<YieldType>YIELD_BARLEY</YieldType>
-					<iYield>50</iYield>
-				</YieldModifier>
-				<YieldModifier>
-					<YieldType>YIELD_GRAPES</YieldType>
-					<iYield>50</iYield>
-				</YieldModifier>
-				<YieldModifier>
-					<YieldType>YIELD_ORE</YieldType>
-					<iYield>50</iYield>
-				</YieldModifier>
-				<YieldModifier>
-					<YieldType>YIELD_HAMMERS</YieldType>
-					<iYield>50</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-			<CapitalYieldModifiers/>
-			<Hurrys/>
-			<SpecialBuildingNotRequireds/>
-			<ImprovementYieldChanges/>
-			<FreeUnitClasses/>
-			<ProfessionCombatChanges/>
-			<ImmigrationConversion>NONE</ImmigrationConversion>
-		</CivicInfo>
-		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_ELECTION</CivicOptionType>
-			<Type>CIVIC_MONARCHY</Type>
-			<Description>TXT_KEY_CIVIC_MONARCHY</Description>
-			<Civilopedia>TXT_KEY_CIVIC_MONARCHY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_MONARCHY_STRATEGY</Strategy>
-			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,8,4</Button>
-			<iAIWeight>100</iAIWeight>
-			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
-			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
-			<iFreeExperience>0</iFreeExperience>
-			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
-			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
-			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
-			<iExpInBorderModifier>1</iExpInBorderModifier>
-			<iNativeAttitudeChange>0</iNativeAttitudeChange>
-			<iNativeCombatModifier>0</iNativeCombatModifier>
-			<iFatherPointModifier>0</iFatherPointModifier>
-			<bDominateNativeBorders>0</bDominateNativeBorders>
-			<bRevolutionEuropeTrade>1</bRevolutionEuropeTrade>
-			<YieldModifiers/>
-			<CapitalYieldModifiers/>
-			<Hurrys/>
-			<SpecialBuildingNotRequireds/>
-			<ImprovementYieldChanges/>
-			<FreeUnitClasses/>
-			<ProfessionCombatChanges/>
-			<ImmigrationConversion>NONE</ImmigrationConversion>
-		</CivicInfo>
-		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_ELECTION</CivicOptionType>
-			<Type>CIVIC_ELECTIONS</Type>
-			<Description>TXT_KEY_CIVIC_ELECTIONS</Description>
-			<Civilopedia>TXT_KEY_CIVIC_ELECTIONS_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_ELECTIONS_STRATEGY</Strategy>
-			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,5,4</Button>
-			<iAIWeight>0</iAIWeight>
-			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
-			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
-			<iFreeExperience>0</iFreeExperience>
-			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
-			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
-			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
-			<iExpInBorderModifier>0</iExpInBorderModifier>
-			<iNativeAttitudeChange>0</iNativeAttitudeChange>
-			<iNativeCombatModifier>0</iNativeCombatModifier>
-			<iFatherPointModifier>100</iFatherPointModifier>
-			<bDominateNativeBorders>0</bDominateNativeBorders>
-			<bRevolutionEuropeTrade>1</bRevolutionEuropeTrade>
-			<YieldModifiers/>
-			<CapitalYieldModifiers/>
-			<Hurrys/>
-			<SpecialBuildingNotRequireds/>
-			<ImprovementYieldChanges/>
-			<FreeUnitClasses/>
-			<ProfessionCombatChanges/>
-			<ImmigrationConversion>NONE</ImmigrationConversion>
-		</CivicInfo>
-		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_NATIVES</CivicOptionType>
-			<Type>CIVIC_MANIFEST_DESTINY</Type>
-			<Description>TXT_KEY_CIVIC_MANIFEST_DESTINY</Description>
-			<Civilopedia>TXT_KEY_CIVIC_MANIFEST_DESTINY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_MANIFEST_DESTINY_STRATEGY</Strategy>
-			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,1,5</Button>
-			<iAIWeight>0</iAIWeight>
-			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
-			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
-			<iFreeExperience>0</iFreeExperience>
-			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
-			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
-			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
-			<iExpInBorderModifier>0</iExpInBorderModifier>
-			<iNativeAttitudeChange>0</iNativeAttitudeChange>
-			<iNativeCombatModifier>50</iNativeCombatModifier>
-			<iFatherPointModifier>0</iFatherPointModifier>
-			<bDominateNativeBorders>1</bDominateNativeBorders>
-			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
-			<YieldModifiers/>
-			<CapitalYieldModifiers/>
-			<Hurrys/>
-			<SpecialBuildingNotRequireds/>
-			<ImprovementYieldChanges/>
-			<FreeUnitClasses/>
-			<ProfessionCombatChanges/>
-			<ImmigrationConversion>NONE</ImmigrationConversion>
-		</CivicInfo>
-		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_NATIVES</CivicOptionType>
-			<Type>CIVIC_NATIVE_RIGHTS</Type>
-			<Description>TXT_KEY_CIVIC_NATIVE_RIGHTS</Description>
-			<Civilopedia>TXT_KEY_CIVIC_NATIVE_RIGHTS_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_NATIVE_RIGHTS_STRATEGY</Strategy>
-			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,3,5</Button>
-			<iAIWeight>0</iAIWeight>
-			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
-			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
-			<iFreeExperience>0</iFreeExperience>
-			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
-			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
-			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
-			<iExpInBorderModifier>0</iExpInBorderModifier>
-			<iNativeAttitudeChange>5</iNativeAttitudeChange>
-			<iNativeCombatModifier>0</iNativeCombatModifier>
-			<iFatherPointModifier>0</iFatherPointModifier>
-			<bDominateNativeBorders>0</bDominateNativeBorders>
-			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
-			<YieldModifiers/>
-			<CapitalYieldModifiers/>
-			<Hurrys/>
-			<SpecialBuildingNotRequireds/>
-			<ImprovementYieldChanges/>
-			<FreeUnitClasses/>
-			<ProfessionCombatChanges/>
-			<ImmigrationConversion>NONE</ImmigrationConversion>
-		</CivicInfo>
-		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_RELIGION</CivicOptionType>
-			<Type>CIVIC_SEPARATION_CHURCH_STATE</Type>
-			<Description>TXT_KEY_CIVIC_SEPARATION_CHURCH_STATE</Description>
-			<Civilopedia>TXT_KEY_CIVIC_SEPARATION_CHURCH_STATE_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_SEPARATION_CHURCH_STATE_STRATEGY</Strategy>
-			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,2,5</Button>
-			<iAIWeight>0</iAIWeight>
-			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
-			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
-			<iFreeExperience>0</iFreeExperience>
-			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
-			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
-			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
-			<iExpInBorderModifier>0</iExpInBorderModifier>
-			<iNativeAttitudeChange>0</iNativeAttitudeChange>
-			<iNativeCombatModifier>0</iNativeCombatModifier>
-			<iFatherPointModifier>0</iFatherPointModifier>
-			<bDominateNativeBorders>0</bDominateNativeBorders>
-			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
-			<YieldModifiers/>
-			<CapitalYieldModifiers/>
-			<Hurrys/>
-			<SpecialBuildingNotRequireds/>
-			<ImprovementYieldChanges/>
-			<FreeUnitClasses/>
-			<ProfessionCombatChanges/>
-			<ImmigrationConversion>YIELD_BELLS</ImmigrationConversion>
-		</CivicInfo>
-		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_RELIGION</CivicOptionType>
-			<Type>CIVIC_THEOCRACY</Type>
-			<Description>TXT_KEY_CIVIC_THEOCRACY</Description>
-			<Civilopedia>TXT_KEY_CIVIC_THEOCRACY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_THEOCRACY_STRATEGY</Strategy>
-			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,6,5</Button>
-			<iAIWeight>0</iAIWeight>
-			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
-			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
-			<iFreeExperience>0</iFreeExperience>
-			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
-			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
-			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
-			<iExpInBorderModifier>0</iExpInBorderModifier>
-			<iNativeAttitudeChange>0</iNativeAttitudeChange>
-			<iNativeCombatModifier>0</iNativeCombatModifier>
-			<iFatherPointModifier>0</iFatherPointModifier>
-			<bDominateNativeBorders>0</bDominateNativeBorders>
-			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
-			<YieldModifiers/>
-			<CapitalYieldModifiers/>
-			<Hurrys/>
-			<SpecialBuildingNotRequireds/>
-			<ImprovementYieldChanges/>
-			<FreeUnitClasses/>
-			<ProfessionCombatChanges/>
-			<ImmigrationConversion>YIELD_HAMMERS</ImmigrationConversion>
-		</CivicInfo>
-		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_SECURITY</CivicOptionType>
-			<Type>CIVIC_BEAR_ARMS</Type>
-			<Description>TXT_KEY_CIVIC_BEAR_ARMS</Description>
-			<Civilopedia>TXT_KEY_CIVIC_BEAR_ARMS_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_BEAR_ARMS_STRATEGY</Strategy>
-			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,4,5</Button>
-			<iAIWeight>0</iAIWeight>
-			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
-			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
-			<iFreeExperience>0</iFreeExperience>
-			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
-			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
-			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
-			<iExpInBorderModifier>0</iExpInBorderModifier>
-			<iNativeAttitudeChange>0</iNativeAttitudeChange>
-			<iNativeCombatModifier>0</iNativeCombatModifier>
-			<iFatherPointModifier>0</iFatherPointModifier>
-			<bDominateNativeBorders>0</bDominateNativeBorders>
-			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
-			<YieldModifiers/>
-			<CapitalYieldModifiers/>
-			<Hurrys/>
-			<SpecialBuildingNotRequireds/>
-			<ImprovementYieldChanges/>
-			<FreeUnitClasses/>
-			<ProfessionCombatChanges>
-				<ProfessionCombatChange>
-					<ProfessionType>PROFESSION_COLONIST</ProfessionType>
-					<iChange>1</iChange>
-				</ProfessionCombatChange>
-			</ProfessionCombatChanges>
-			<ImmigrationConversion>NONE</ImmigrationConversion>
-		</CivicInfo>
-		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_SECURITY</CivicOptionType>
-			<Type>CIVIC_CONTROLLED_ARMS</Type>
-			<Description>TXT_KEY_CIVIC_CONTROLLED_ARMS</Description>
-			<Civilopedia>TXT_KEY_CIVIC_CONTROLLED_ARMS_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_CONTROLLED_ARMS_STRATEGY</Strategy>
-			<Button>,Art/Interface/Buttons/Civilizations/Colonization_Civilizations_Leaders.dds,5,5</Button>
-			<iAIWeight>0</iAIWeight>
-			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
-			<iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
-			<iFreeExperience>0</iFreeExperience>
-			<iWorkerSpeedModifier>0</iWorkerSpeedModifier>
-			<iImprovementUpgradeRateModifier>0</iImprovementUpgradeRateModifier>
-			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
-			<iExpInBorderModifier>0</iExpInBorderModifier>
-			<iNativeAttitudeChange>0</iNativeAttitudeChange>
-			<iNativeCombatModifier>0</iNativeCombatModifier>
-			<iFatherPointModifier>0</iFatherPointModifier>
-			<bDominateNativeBorders>0</bDominateNativeBorders>
-			<bRevolutionEuropeTrade>0</bRevolutionEuropeTrade>
-			<YieldModifiers>
-				<YieldModifier>
-					<YieldType>YIELD_BELLS</YieldType>
-					<iYield>50</iYield>
-				</YieldModifier>
-			</YieldModifiers>
-			<CapitalYieldModifiers/>
-			<Hurrys/>
-			<SpecialBuildingNotRequireds/>
-			<ImprovementYieldChanges/>
-			<FreeUnitClasses/>
-			<ProfessionCombatChanges/>
-			<ImmigrationConversion>NONE</ImmigrationConversion>
-		</CivicInfo>
-		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>TRADING_TRADEPOST</Type>
 			<Description>Trading Post</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -5016,6 +5949,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -5037,7 +5971,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>TRADING_PERK1</Type>
 			<Description>Trading Perk I</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -5095,6 +6029,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech>TRADING_PERK2</DisallowsTech>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -5114,7 +6049,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>TRADING_PERK2</Type>
 			<Description>Trading Perk II</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -5172,6 +6107,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech>TRADING_PERK1</DisallowsTech>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -5191,7 +6127,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>TRADING_MARKET</Type>
 			<Description>Marketplace</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -5258,11 +6194,13 @@
 				</AllowsProfession>
 			</AllowsProfessions>
 			<AllowsTrait/>
+      <AllowsCivic/>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -5282,7 +6220,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>TRADING_TRADE_ROUTE_2</Type>
 			<Description>Spice Route</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -5341,6 +6279,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -5362,7 +6301,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>TRADING_CURRENCY</Type>
 			<Description>Currency</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -5424,11 +6363,13 @@
 			<AllowsPromotions/>
 			<AllowsProfessions/>
 			<AllowsTrait/>
+      <AllowsCivic>CIVIC_MARKET_ECONOMY</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -5448,7 +6389,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>TRADING_PERK3</Type>
 			<Description>Trading Perk III</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -5506,6 +6447,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech>TRADING_PERK4</DisallowsTech>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -5525,7 +6467,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>TRADING_PERK4</Type>
 			<Description>Trading Perk IV</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -5583,6 +6525,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech>TRADING_PERK3</DisallowsTech>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -5603,7 +6546,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>TRADING_TRADE_ROUTE_1</Type>
 			<Description>Great Silk Road</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -5662,6 +6605,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -5683,7 +6627,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>TRADING_FAIR</Type>
 			<Description>The Fair</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -5747,6 +6691,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -5767,7 +6712,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>TRADING_GUILDS</Type>
 			<Description>Guilds</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -5830,11 +6775,13 @@
 			<AllowsPromotions/>
 			<AllowsProfessions/>
 			<AllowsTrait/>
+      <AllowsCivic>CIVIC_GUILDS</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -5854,7 +6801,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>BANKING</Type>
 			<Description>Banking</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -5917,6 +6864,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -5935,7 +6883,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>TRADING_COMMUNE</Type>
 			<Description>Commune</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -5988,11 +6936,13 @@
 			<AllowsPromotions/>
 			<AllowsProfessions/>
 			<AllowsTrait>INVENTION_COMMUNE</AllowsTrait>
+      <AllowsCivic>CIVIC_CHARTER_LAW</AllowsCivic>
 			<AllowsBuildTypes/>
 			<AllowsBuildTypesTerrain/>
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -6012,7 +6962,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>TRADING_PERK5</Type>
 			<Description>Trading Perk V</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -6070,6 +7020,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech>TRADING_PERK6</DisallowsTech>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -6089,7 +7040,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>TRADING_PERK6</Type>
 			<Description>Trading Perk VI</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -6147,6 +7098,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech>TRADING_PERK5</DisallowsTech>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -6166,7 +7118,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>TRADING_LEAGUE</Type>
 			<Description>Trading League</Description>
 			<Civilopedia>TXT_KEY_NEED_DESCRIPTION</Civilopedia>
@@ -6224,6 +7176,7 @@
 			<ConvertsUnitsFrom/>
 			<ConvertsUnitsTo/>
 			<NewDefaultUnitClass/>
+			<NewLuxuryUnitClass/>
 			<DisallowsTech/>
 			<RouteMovementMod/>
 			<bStartConstitution>0</bStartConstitution>
@@ -6244,7 +7197,7 @@
 			<IndustrializationVictory/>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>CENSURE_EXCOMMUNICATION</Type>
 			<Description>Excommunication</Description>
 			<Civilopedia>????</Civilopedia>
@@ -6287,7 +7240,7 @@
 			<bNoGoodyTech>1</bNoGoodyTech>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>CENSURE_INTERDICT</Type>
 			<Description>Interdict</Description>
 			<Civilopedia>????</Civilopedia>
@@ -6356,7 +7309,7 @@
 			<bNoGoodyTech>1</bNoGoodyTech>
 		</CivicInfo>
 		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_INVENTIONS</CivicOptionType>
+			<CivicOptionType>NONE</CivicOptionType>
 			<Type>CENSURE_ANATHEMA</Type>
 			<Description>Anathema</Description>
 			<Civilopedia>????</Civilopedia>

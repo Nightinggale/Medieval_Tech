@@ -5,6 +5,7 @@
 #ifndef CIV4_UNIT_H
 #define CIV4_UNIT_H
 
+#include "CvGameCoreDLL.h"
 #include "CvDLLEntity.h"
 //#include "CvEnums.h"
 //#include "CvStructs.h"
@@ -572,11 +573,16 @@ public:
 	void setConvertToUnit(UnitTypes eConvertToUnit);
 	///Tks Med
 	EuropeTypes getUnitTradeMarket() const;
+	bool canGarrison() const;
 	void setUnitTradeMarket(EuropeTypes eMarket);
 	CvPlot* getTravelPlot() const;
 	void setTravelPlot();
 	bool doUnitPilgram();
 	CvPlot* findNearestValidMarauderPlot(CvCity* pSpawnCity, CvCity* pVictimCity, bool bNoCitySpawn, bool bMustBeSameArea);
+	int getPlotWorkedBonus() const;
+	void changePlotWorkedBonus(int iChange);
+	int getBuildingWorkedBonus() const;
+	void changeBuildingWorkedBonus(int iChange);
 	int getInvisibleTimer() const;
 	void setInvisibleTimer(int iNewValue);
 	void changeInvisibleTimer(int iChange);
@@ -760,6 +766,8 @@ protected:
 	int m_iExtraChanceFirstStrikes;
 	int m_iCombatBlockParrys;
 	int m_iEscortPromotion;
+	int m_iPlotWorkedBonus;
+	int m_iBuildingWorkedBonus;
 	int m_iInvisibleTimer;
 	bool m_bCrushingBlows;
 	bool m_bGlancingBlows;
@@ -831,21 +839,21 @@ protected:
 	CvWString m_szName;
 	CvString m_szScriptData;
 
-	bool* m_pabHasRealPromotion;
-	int* m_paiFreePromotionCount;
-	int* m_paiTerrainDoubleMoveCount;
+	BoolArray m_ba_HasRealPromotion;
+	PromotionArray<unsigned char> m_ja_iFreePromotionCount;
+	TerrainArray<char> m_ja_iTerrainDoubleMoveCount;
+	FeatureArray<char> m_ja_iFeatureDoubleMoveCount;
+	TerrainArray<short> m_ja_iExtraTerrainAttackPercent;
+	TerrainArray<short> m_ja_iExtraTerrainDefensePercent;
+	FeatureArray<short> m_ja_iExtraFeatureAttackPercent;
+	FeatureArray<short> m_ja_iExtraFeatureDefensePercent;
+	UnitClassArray<short> m_ja_iExtraUnitClassAttackModifier;
+	UnitClassArray<short> m_ja_iExtraUnitClassDefenseModifier;
+	UnitCombatArray<short> m_ja_iExtraUnitCombatModifier;
+
 	///TKs Med
 	EuropeTypes m_eUnitTradeMarket;
-	int* m_paiAltEquipmentTypes;
 	///TKe
-	int* m_paiFeatureDoubleMoveCount;
-	int* m_paiExtraTerrainAttackPercent;
-	int* m_paiExtraTerrainDefensePercent;
-	int* m_paiExtraFeatureAttackPercent;
-	int* m_paiExtraFeatureDefensePercent;
-	int* m_paiExtraUnitClassAttackModifier;
-	int* m_paiExtraUnitClassDefenseModifier;
-	int* m_paiExtraUnitCombatModifier;
 
 	bool canAdvance(const CvPlot* pPlot, int iThreshold) const;
 
@@ -861,7 +869,12 @@ protected:
 	void resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition& kBattle);
 
 	void doUnitTravelTimer();
-	void processPromotion(PromotionTypes ePromotion, int iChange);
+	/// unit promotion effect cache - start - Nightinggale
+	//void processPromotion(PromotionTypes ePromotion, int iChange);
+	void processPromotion(PromotionTypes ePromotion, int iChange, bool bLoading = false);
+	void updatePromotionCache(); // call ONLY when loading a savegame!!!
+	void reclaimCacheMemory();
+	/// unit promotion effect cache - end - Nightinggale
 	UnitCombatTypes getProfessionUnitCombatType(ProfessionTypes eProfession) const;
 	bool hasUnitCombatType(UnitCombatTypes eUnitCombat) const; // CombatGearTypes - Nightinggale
 	void processUnitCombatType(UnitCombatTypes eUnitCombat, int iChange);

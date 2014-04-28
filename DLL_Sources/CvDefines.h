@@ -56,7 +56,7 @@ typedef unsigned int PlayerBitmap;
 /// player bitmap - end - Nightinggale
 
 #define MAX_TEAMS													(MAX_PLAYERS)
-
+#define CIVICOPTION_INVENTIONS							(-1)///Tks Civics
 // Char Count limit for edit boxes
 #define PREFERRED_EDIT_CHAR_COUNT							(15)
 #define MAX_GAMENAME_CHAR_COUNT								(32)

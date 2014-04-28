@@ -1025,12 +1025,29 @@ void CvSelectionGroup::continueMission(int iSteps)
 		setActivityType(ACTIVITY_AWAKE);
 		return;
 	}
-
+	//bool bWorkersBuild = (getWorkersBuildAfterMove() > 0 && headMissionQueueNode()->m_data.eMissionType == MISSION_BUILD); ///TKs Civic Screen
+	//bool bWorkersBuild = (headMissionQueueNode()->m_data.eMissionType == MISSION_BUILD); ///TKs Civic Screen
+	bool bWorkersBuild = false;
+	if (isHuman() && GET_PLAYER(getOwnerINLINE()).getWorkersBuildAfterMove() > 0)
+	{
+		
+		MissionTypes eMission = headMissionQueueNode()->m_data.eMissionType;
+		CLLNode<IDInfo>* pUnitNode = headUnitNode();
+		while (pUnitNode != NULL)
+		{
+			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+			pUnitNode = nextUnitNode(pUnitNode);
+			if (pLoopUnit->workRate(true) > 0 && headMissionQueueNode()->m_data.eMissionType == MISSION_BUILD)
+			{
+				bWorkersBuild = true;
+			}
+		}
+	}
 	if (!bDone)
 	{
 		if (getNumUnits() > 0)
 		{
-			if (canAllMove())
+			if (canAllMove() || bWorkersBuild)
 			{
 				MissionTypes eMission = headMissionQueueNode()->m_data.eMissionType;
 				int iMissionData = headMissionQueueNode()->m_data.iData1;
@@ -1041,7 +1058,7 @@ void CvSelectionGroup::continueMission(int iSteps)
 					CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 					pUnitNode = nextUnitNode(pUnitNode);
 
-					if (pLoopUnit->canMove())
+					if (pLoopUnit->canMove() || bWorkersBuild)
 					{
 						switch (eMission)
 						{
@@ -2956,6 +2973,22 @@ bool CvSelectionGroup::readyToSelect(bool bAny)
 
 bool CvSelectionGroup::readyToMove(bool bAny)
 {
+	//Tks Civics
+	if (isHuman() && GET_PLAYER(getOwnerINLINE()).getWorkersBuildAfterMove() > 0)
+	{
+		bool bWorkersMove = false;
+		CLLNode<IDInfo>* pUnitNode = headUnitNode();
+		while (pUnitNode != NULL)
+		{
+			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+			pUnitNode = nextUnitNode(pUnitNode);
+			if (pLoopUnit->workRate(true) > 0 && headMissionQueueNode() == NULL)
+			{
+				return true;
+			}
+		}
+	}
+	//Tke 
 	return (((bAny) ? canAnyMove() : canAllMove()) && (headMissionQueueNode() == NULL) && (getActivityType() == ACTIVITY_AWAKE) && !isBusy() && !isCargoBusy());
 }
 

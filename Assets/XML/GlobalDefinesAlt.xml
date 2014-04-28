@@ -10,6 +10,18 @@
 		<DefineName>AUTORESEARCH_ALL</DefineName>
 		<iDefineIntVal>0</iDefineIntVal>
 	</Define>
+  <Define>
+    <DefineName>REVOLUTION_TRADE</DefineName>
+    <iDefineIntVal>1</iDefineIntVal>
+  </Define>
+  <Define>
+    <DefineName>SHOW_TECH_CATEGORIES</DefineName>
+    <iDefineIntVal>0</iDefineIntVal>
+  </Define>
+  <Define>
+    <DefineName>MIN_REVOLUTION_TURNS</DefineName>
+    <iDefineIntVal>5</iDefineIntVal>
+  </Define>
 	<Define>
 		<DefineName>DIPLAY_NEW_VIDEOS</DefineName>
 		<iDefineIntVal>0</iDefineIntVal>
@@ -76,7 +88,7 @@
 	</Define>
 	<Define>
 		<DefineName>TRADING_POINTS_MOD_PERCENT</DefineName>
-		<iDefineIntVal>75</iDefineIntVal>
+		<iDefineIntVal>100</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>DEAL_TRADE_RELATIONS_POINTS</DefineName>
@@ -106,6 +118,10 @@
 		<DefineName>TRADE_POINTS_FOR_ROUTE</DefineName>
 		<iDefineIntVal>40</iDefineIntVal>
 	</Define>
+  <Define>
+    <DefineName>DEFAULT_GLOBAL_EFFECT_ANARCHY</DefineName>
+    <DefineTextVal>GLOBAL_EFFECT_ANARCHY</DefineTextVal>
+  </Define>
 	<Define>
 		<DefineName>DEFAULT_CENSURETYPE_EXCOMMUNICATION</DefineName>
 		<DefineTextVal>CENSURE_EXCOMMUNICATION</DefineTextVal>
@@ -148,7 +164,7 @@
 	</Define>
 	<Define>
 		<DefineName>DEFAULT_NATIVE_TRADE_PROFESSION</DefineName>
-		<DefineTextVal>PROFESSION_PEDLER</DefineTextVal>
+		<DefineTextVal>PROFESSION_NATIVE_PEDLER</DefineTextVal>
 	</Define>
 	<Define>
 		<DefineName>BUILDINGCLASS_TRAVEL_TO_FAIR</DefineName>
@@ -288,7 +304,7 @@
 	</Define>
 	<Define>
 		<DefineName>DEFAULT_FUEDALISM_TECH</DefineName>
-		<DefineTextVal>MEDIEVAL_TECH_FUEDALISM</DefineTextVal>
+		<DefineTextVal>MEDIEVAL_TECH_FEUDALISM</DefineTextVal>
 	</Define>
 	<Define>
 		<DefineName>COLONIAL_FORCED_PEACE_TURNS</DefineName>
@@ -309,10 +325,6 @@
 	<Define>
 		<DefineName>STANDARD_CLIMATE</DefineName>
 		<DefineTextVal>CLIMATE_EUROPE</DefineTextVal>
-	</Define>
-	<Define>
-		<DefineName>FREE_PEASANT_CIVIC</DefineName>
-		<DefineTextVal>TRADING_GUILDS</DefineTextVal>
 	</Define>
 	<Define>
 		<DefineName>AI_MILITARY_PROFESSION_HACK</DefineName>
@@ -574,17 +586,22 @@
 		<DefineName>DEFAULT_NOBLEMAN_CLASS</DefineName>
 		<DefineTextVal>UNITCLASS_NOBLEMAN</DefineTextVal>
 	</Define>
+	<!-- Default unitclass to get from overflowing regular food -->
+	<!-- This can be overwritten by NewDefaultUnitClass in civics -->
+	<!-- Civs having this class set to NO_UNIT (like natives) will use DEFAULT_POPULATION_UNITCLASS instead -->
 	<Define>
-		<DefineName>DEFAULT_GRAIN_GROWTH_UNIT_CLASS</DefineName>
-		<DefineTextVal>UNITCLASS_INDENTURED_SERVANT</DefineTextVal>
+		<DefineName>DEFAULT_GROWTH_UNITCLASS</DefineName>
+		<DefineTextVal>UNITCLASS_COLONIST</DefineTextVal>
 	</Define>
+	<!-- Default unitclass to get from overflowing luxury food -->
+	<!-- This can be overwritten by NewLuxuryUnitClass in civics -->
 	<Define>
-		<DefineName>DEFAULT_NOBLE_GROWTH_UNIT_CLASS</DefineName>
-		<DefineTextVal>UNITCLASS_PAGE</DefineTextVal>
+		<DefineName>DEFAULT_GROWTH_NOBLE_UNITCLASS</DefineName>
+		<DefineTextVal>NONE</DefineTextVal>
 	</Define>
-  <!-- This is the New Default Unit -->
+	<!-- Clear speciality converts to units to DEFAULT_POPULATION_UNITCLASS -->
 	<Define>
-		<DefineName>DEFAULT_DAWN_POPULATION_UNIT</DefineName>
+		<DefineName>DEFAULT_POPULATION_UNITCLASS</DefineName>
 		<DefineTextVal>UNITCLASS_COLONIST</DefineTextVal>
 	</Define>
   <!--Having this tech makes the Natives give you gifts more frequently-->
@@ -601,10 +618,6 @@
 	<Define>
 		<DefineName>NATIVE_TECH</DefineName>
 		<DefineTextVal>NATIVE_TECH</DefineTextVal>
-	</Define>
-	<Define>
-		<DefineName>CIVICOPTION_INVENTIONS</DefineName>
-		<DefineTextVal>CIVICOPTION_INVENTIONS</DefineTextVal>
 	</Define>
 	<Define>
 		<DefineName>MEDIEVAL_TRADE_TECH</DefineName>

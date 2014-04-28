@@ -499,6 +499,12 @@ public:
 	DllExport std::vector<CvInfoBase*>& getCivicOptionInfo();
 	DllExport CvInfoBase& getCivicOptionInfo(CivicOptionTypes eCivicOptionNum);
 
+	//TKs
+	DllExport int getNumGlobalCivicEffectInfos();
+	DllExport std::vector<CvInfoBase*>& getGlobalCivicEffectInfos();
+	DllExport CvInfoBase& getGlobalCivicEffectInfos(GlobalCivicEffectTypes eGlobalCivicEffect);
+	//Tke
+
 	DllExport int getNumCivicInfos();
 	DllExport std::vector<CvCivicInfo*>& getCivicInfo();
 	DllExport CvCivicInfo& getCivicInfo(CivicTypes eCivicNum);
@@ -944,7 +950,9 @@ protected:
 	//Androrc UnitArtStyles
     std::vector<CvUnitArtStyleTypeInfo*> m_paUnitArtStyleTypeInfo;
 	//Androrc End
-
+	//tks
+	std::vector<CvInfoBase*> m_paGlobalCivicEffectInfos;
+	//tke
 	// Game Text
 	std::vector<CvGameText*> m_paGameTextXML;
 
@@ -1070,6 +1078,13 @@ public:
 protected:
 	FAStar* m_plotGroupFinder;
 	/// PlotGroup - end - Nightinggale
+
+	/// JIT array save - start - Nightinggale
+public:
+	int getArrayLength(JIT_ARRAY_TYPES eType);
+	CvWString getArrayType(JIT_ARRAY_TYPES eType, int iIndex);
+	/// JIT array save - end - Nightinggale
+
 
 	// DLL interface
 	CvDLLUtilityIFaceBase* m_pDLL;

@@ -69,6 +69,8 @@ DllExport CvPlayerAI& CvPlayerAI::getPlayerNonInl(PlayerTypes ePlayer)
 // Public Functions...
 
 CvPlayerAI::CvPlayerAI()
+	: m_ja_iBestWorkedYieldPlots(-1)
+	, m_ja_iBestUnworkedYieldPlots(-1)
 {
 	m_aiNumTrainAIUnits = new int[NUM_UNITAI_TYPES];
 	m_aiNumAIUnits = new int[NUM_UNITAI_TYPES];
@@ -93,17 +95,9 @@ CvPlayerAI::CvPlayerAI()
 		m_aaiMemoryCount[i] = new int[NUM_MEMORY_TYPES];
 	}
 
-	m_aiAverageYieldMultiplier = new int[NUM_YIELD_TYPES];
-
-	m_aiUnitClassWeights = NULL;
-	m_aiUnitCombatWeights = NULL;
 	m_aiEmotions = new int[NUM_EMOTION_TYPES];
 	m_aiStrategyStartedTurn = new int[NUM_STRATEGY_TYPES];
 	m_aiStrategyData = new int[NUM_STRATEGY_TYPES];
-
-	m_aiBestWorkedYieldPlots = new int[NUM_YIELD_TYPES];
-	m_aiBestUnworkedYieldPlots = new int[NUM_YIELD_TYPES];
-	m_aiYieldValuesTimes100 = new int[NUM_YIELD_TYPES];
 
 	m_aiCloseBordersAttitudeCache = new int[MAX_PLAYERS];
 	m_aiStolenPlotsAttitudeCache = new int[MAX_PLAYERS];
@@ -140,7 +134,6 @@ CvPlayerAI::~CvPlayerAI()
 	}
 	SAFE_DELETE_ARRAY(m_aaiMemoryCount);
 
-	SAFE_DELETE_ARRAY(m_aiAverageYieldMultiplier);
 	SAFE_DELETE_ARRAY(m_aiCloseBordersAttitudeCache);
 	SAFE_DELETE_ARRAY(m_aiStolenPlotsAttitudeCache);
 	///TKs Med
@@ -149,10 +142,6 @@ CvPlayerAI::~CvPlayerAI()
 	SAFE_DELETE_ARRAY(m_aiEmotions);
 	SAFE_DELETE_ARRAY(m_aiStrategyStartedTurn);
 	SAFE_DELETE_ARRAY(m_aiStrategyData);
-
-	SAFE_DELETE_ARRAY(m_aiBestWorkedYieldPlots);
-	SAFE_DELETE_ARRAY(m_aiBestUnworkedYieldPlots);
-	SAFE_DELETE_ARRAY(m_aiYieldValuesTimes100);
 }
 
 
@@ -171,8 +160,8 @@ void CvPlayerAI::AI_init()
 
 void CvPlayerAI::AI_uninit()
 {
-	SAFE_DELETE_ARRAY(m_aiUnitClassWeights);
-	SAFE_DELETE_ARRAY(m_aiUnitCombatWeights);
+	m_ja_iUnitClassWeights.reset();
+	m_ja_iUnitCombatWeights.reset();
 }
 
 
@@ -234,13 +223,11 @@ void CvPlayerAI::AI_reset()
 		}
 	}
 
-	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
-	{
-		m_aiAverageYieldMultiplier[iI] = 0;
-		m_aiBestWorkedYieldPlots[iI] = -1;
-		m_aiBestUnworkedYieldPlots[iI] = -1;
-		m_aiYieldValuesTimes100[iI] = 0;
-	}
+	m_ja_iAverageYieldMultiplier.reset();
+	m_ja_iBestWorkedYieldPlots.reset();
+	m_ja_iBestUnworkedYieldPlots.reset();
+	m_ja_iYieldValuesTimes100.reset();
+
 	m_iAveragesCacheTurn = -1;
 
 	m_iTurnLastProductionDirty = -1;
@@ -253,19 +240,8 @@ void CvPlayerAI::AI_reset()
 
 	m_aiAICitySites.clear();
 
-	FAssert(m_aiUnitClassWeights == NULL);
-	m_aiUnitClassWeights = new int[GC.getNumUnitClassInfos()];
-	for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
-	{
-		m_aiUnitClassWeights[iI] = 0;
-	}
-
-	FAssert(m_aiUnitCombatWeights == NULL);
-	m_aiUnitCombatWeights = new int[GC.getNumUnitCombatInfos()];
-	for (iI = 0; iI < GC.getNumUnitCombatInfos(); iI++)
-	{
-		m_aiUnitCombatWeights[iI] = 0;
-	}
+	m_ja_iUnitClassWeights.reset();
+	m_ja_iUnitCombatWeights.reset();
 
 	for (iI = 0; iI < MAX_PLAYERS; iI++)
 	{
@@ -322,7 +298,9 @@ void CvPlayerAI::AI_doTurnPre()
 	AI_doEmotions();
 
 	AI_doUnitAIWeights();
-
+	//Tks Civics
+	AI_doCivics();
+		//Tke
 	AI_doMilitary();
 
 	AI_doStrategy();
@@ -3131,6 +3109,10 @@ int CvPlayerAI::AI_getAttitudeVal(PlayerTypes ePlayer, bool bForced)
 	iAttitude += AI_getShareWarAttitude(ePlayer);
 	iAttitude += AI_getTradeAttitude(ePlayer);
 	iAttitude += AI_getRivalTradeAttitude(ePlayer);
+	//Tks Civics
+	iAttitude += AI_getCivicAttitude(ePlayer);
+	iAttitude += GET_PLAYER(ePlayer).getDiplomacyAttitudeModifier(getID());
+	//Tke
 
 	for (int iI = 0; iI < NUM_MEMORY_TYPES; iI++)
 	{
@@ -5681,12 +5663,21 @@ CivicTypes CvPlayerAI::AI_bestCivic(CivicOptionTypes eCivicOption)
 		{
 			if (canDoCivics((CivicTypes)iI))
 			{
+				//FAssert(iI != 15); //Testing Assert
 				iValue = AI_civicValue((CivicTypes)iI);
 
 				if (isCivic((CivicTypes)iI))
 				{
-					iValue *= 16;
-					iValue /= 15;
+					if (getMaxAnarchyTurns() > 0)
+					{
+						iValue *= 6;
+						iValue /= 5;
+					}
+					else
+					{
+						iValue *= 16;
+						iValue /= 15;
+					}
 				}
 
 				if (iValue > iBestValue)
@@ -5700,11 +5691,10 @@ CivicTypes CvPlayerAI::AI_bestCivic(CivicOptionTypes eCivicOption)
 
 	return eBestCivic;
 }
-///TKe
-
 int CvPlayerAI::AI_civicValue(CivicTypes eCivic)
 {
-	PROFILE_FUNC();
+	//Start Old Code
+	/*PROFILE_FUNC();
 
 	FAssertMsg(eCivic < GC.getNumCivicInfos(), "eCivic is expected to be within maximum bounds (invalid Index)");
 	FAssertMsg(eCivic >= 0, "eCivic is expected to be non-negative (invalid Index)");
@@ -5717,9 +5707,341 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic)
 
 	iValue *= 10 + GC.getGameINLINE().getSorenRandNum(90, "AI choose revolution civics");
 
-	return iValue;
-}
+	return iValue;*/
+	if (GC.getCivicInfo(eCivic).getRequiredInvention() == NO_CIVIC)
+	{
+		return 0;
+	}
+	///End Old Code
+	bool bWarPlan;
+	//int iConnectedForeignCities;
+	//int iTotalReligonCount;
+	//int iHighestReligionCount;
+	int iWarmongerPercent;
+	//int iHappiness;
+	int iValue;
+	int iTempValue;
+	int iI, iJ;
 
+	FAssertMsg(eCivic < GC.getNumCivicInfos(), "eCivic is expected to be within maximum bounds (invalid Index)");
+	FAssertMsg(eCivic >= 0, "eCivic is expected to be non-negative (invalid Index)");
+
+	CvCivicInfo& kCivic = GC.getCivicInfo(eCivic);
+	//Food Penalties
+	if (kCivic.getGlobalFoodCostMod() > 0)
+	{
+		if (getNumCities() < 7)
+		{
+			return 0;
+		}
+	}
+
+	bWarPlan = (GET_TEAM(getTeam()).getAnyWarPlanCount() > 0);
+
+	//iConnectedForeignCities = countPotentialForeignTradeCitiesConnected();
+	//iTotalReligonCount = countTotalHasReligion();
+	
+	iWarmongerPercent = 25000 / std::max(100, (100 + GC.getLeaderHeadInfo(getPersonalityType()).getMaxWarRand())); 
+
+	iValue = (getNumCities() * 6);
+
+	iValue += (GC.getCivicInfo(eCivic).getAIWeight() * getNumCities());
+
+	//iValue += (getCivicPercentAnger(eCivic) / 10);
+
+	iValue += -(GC.getCivicInfo(eCivic).getAnarchyLength() * getNumCities());
+
+	iValue += -(getSingleCivicUpkeep(eCivic, true));
+	if (kCivic.getMissionariesNotCosumed())
+	{
+		iValue += 20;
+	}
+	if (kCivic.getTradingPostNotCosumed())
+	{
+		iValue += 20;
+	}
+	//Need Number of Shrines and missionaries
+	//getPilgramYieldPercent()
+	// AI doesn't hunt!!!!
+	//getHuntingYieldPercent()
+	iValue += kCivic.getDiplomacyAttitudeChange() * 4;
+	iValue += kCivic.getCenterPlotFoodBonus() * getNumCities();
+
+	//iValue += ((kCivic.getGreatPeopleRateModifier() * getNumCities()) / 10);
+	
+	//iValue += -((kCivic.getDistanceMaintenanceModifier() * std::max(0, (getNumCities() - 3))) / 8);
+	//iValue += -((kCivic.getNumCitiesMaintenanceModifier() * std::max(0, (getNumCities() - 3))) / 8);
+	//FF points
+	for (iI = 0; iI < GC.getNumFatherCategoryInfos(); iI++)
+	{
+		iValue += kCivic.getFartherPointChanges(iI) * getNumCities();
+	}
+
+	//War Civics
+	int iCastleMod = getCastles() + 1;
+	iValue += ((kCivic.getGreatGeneralRateModifier() * iCastleMod) / 50);
+	iValue += ((kCivic.getDomesticGreatGeneralRateModifier() * iCastleMod) / 100);
+	iValue += (kCivic.getFreeExperience() * getNumCities() * (bWarPlan ? 8 : 5) * iWarmongerPercent) / 100; 
+	if (bWarPlan)
+	{
+		iValue += kCivic.getNumCivicCombatBonus() * 10;
+		iValue += ((kCivic.getExpInBorderModifier() * iCastleMod) / 200);
+	}
+	//Strategies
+	//AI_isStrategy(STRATEGY_CONCENTRATED_ATTACK);
+
+	//Father Point Civics
+
+	//Expansion Civics
+	iValue += ((kCivic.getWorkerSpeedModifier() * AI_getNumAIUnits(UNITAI_WORKER)) / 15);
+	iValue += ((kCivic.getImprovementUpgradeRateModifier() * getNumCities()) / 50);
+	iValue += (kCivic.getMilitaryProductionModifier() * getNumCities() * iWarmongerPercent) / (bWarPlan ? 300 : 500 ); 
+	if (kCivic.isWorkersBuildAfterMove())
+	{
+		iValue += 2 * AI_getNumAIUnits(UNITAI_WORKER);
+	}
+	//iValue += (kCivic.getBaseFreeUnits() / 2);
+	//iValue += (kCivic.getBaseFreeMilitaryUnits() / 3);
+	//iValue += ((kCivic.getFreeUnitsPopulationPercent() * getTotalPopulation()) / 200);
+	//iValue += ((kCivic.getFreeMilitaryUnitsPopulationPercent() * getTotalPopulation()) / 300);
+	//iValue += -(kCivic.getGoldPerUnit() * getNumUnits());
+	//iValue += -(kCivic.getGoldPerMilitaryUnit() * getNumMilitaryUnits() * iWarmongerPercent) / 200;
+
+	//iValue += (getWorldSizeMaxConscript(eCivic) * ((bWarPlan) ? (20 + getNumCities()) : ((8 + getNumCities()) / 2)));
+	//iValue += ((kCivic.isNoUnhealthyPopulation()) ? (getTotalPopulation() / 3) : 0);
+	
+	//iValue += ((kCivic.isBuildingOnlyHealthy()) ? (getNumCities() * 3) : 0);
+	//iValue += -((kCivic.getWarWearinessModifier() * getNumCities()) / ((bWarPlan) ? 10 : 50));
+	//iValue += (kCivic.getFreeSpecialist() * getNumCities() * 12);
+	//iValue += ((kCivic.getTradeRoutes() * std::max(0, iConnectedForeignCities - getNumCities() * 3) * 6) + (getNumCities() * 2)); 
+	//iValue += -((kCivic.isNoForeignTrade()) ? (iConnectedForeignCities * 3) : 0);
+	
+	/*if (kCivic.getCivicPercentAnger() != 0)
+	{
+		int iNumOtherCities = GC.getGameINLINE().getNumCities() - getNumCities();
+		iValue += (30 * getNumCities() * getCivicPercentAnger(eCivic, true)) / kCivic.getCivicPercentAnger();
+		
+		int iTargetGameTurn = 2 * getNumCities() * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
+		iTargetGameTurn /= GC.getGame().countCivPlayersEverAlive();
+		iTargetGameTurn += GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent() * 30;
+		
+		iTargetGameTurn /= 100;
+		iTargetGameTurn = std::max(10, iTargetGameTurn);
+		
+		int iElapsedTurns = GC.getGame().getElapsedGameTurns();
+
+		if (iElapsedTurns > iTargetGameTurn)
+		{
+			iValue += (std::min(iTargetGameTurn, iElapsedTurns - iTargetGameTurn) * (iNumOtherCities * kCivic.getCivicPercentAnger())) / (15 * iTargetGameTurn);
+		}
+	}*/
+
+	//if (kCivic.getExtraHealth() != 0)
+	//{
+		//iValue += (getNumCities() * 6 * AI_getHealthWeight(isCivic(eCivic) ? -kCivic.getExtraHealth() : kCivic.getExtraHealth(), 1)) / 100;
+	//}
+			
+	//iTempValue = kCivic.getHappyPerMilitaryUnit() * 3;
+	//if (iTempValue != 0)
+	//{
+		//iValue += (getNumCities() * 9 * AI_getHappinessWeight(isCivic(eCivic) ? -iTempValue : iTempValue, 1)) / 100;
+	//}
+		
+	//iTempValue = kCivic.getLargestCityHappiness();
+	//if (iTempValue != 0)
+	//{
+		//iValue += (12 * std::min(getNumCities(), GC.getWorldInfo(GC.getMapINLINE().getWorldSize()).getTargetNumCities()) * AI_getHappinessWeight(isCivic(eCivic) ? -iTempValue : iTempValue, 1)) / 100;
+	//}
+	
+	/*if (kCivic.getWarWearinessModifier() != 0)
+	{
+		int iAngerPercent = getWarWearinessPercentAnger();
+		int iPopulation = 3 + (getTotalPopulation() / std::max(1, getNumCities()));
+
+		int iTempValue = (-kCivic.getWarWearinessModifier() * iAngerPercent * iPopulation) / (GC.getPERCENT_ANGER_DIVISOR() * 100);
+		if (iTempValue != 0)
+		{
+			iValue += (11 * getNumCities() * AI_getHappinessWeight(isCivic(eCivic) ? -iTempValue : iTempValue, 1)) / 100;
+		}
+	}*/
+
+	//Native Civics
+
+	//Yield Civics
+	//int iNegativeYieldMod = 0;
+	/*for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
+	{
+		UnitTypes eLoopUnit = ((UnitTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iI)));
+
+		if (eLoopUnit != NO_UNIT)
+		{
+		}
+	}*/
+	if (kCivic.getNumUnitClassFoodCosts() > 0)
+	{
+		iValue += getAveragePopulation() * kCivic.getNumUnitClassFoodCosts();
+	}
+
+	if (kCivic.getNumRandomGrowthUnits() > 0)
+	{
+		iValue += getAveragePopulation() * kCivic.getNumRandomGrowthUnits();
+	}
+
+	int iTotalDefenders = AI_getNumAIUnits(UNITAI_DEFENSIVE);
+	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
+	{
+		iTempValue = 0;
+		//Check for Captial first
+		iTempValue = kCivic.getCapitalYieldModifier(iI);
+		CvCity* pCapital = getCapitalCity();
+		if (pCapital) 
+		{
+			iTempValue += ((iTempValue * 3) / 4);
+			iTempValue += ((kCivic.getCapitalYieldModifier(iI) * pCapital->getYieldRate((YieldTypes)iI)) / 80); 
+		}
+		else if (iTempValue != 0)
+		{
+			return 0;
+		}
+
+		/*if (kCivic.getYieldModifier(iI) < 0)
+		{
+
+		}*/
+		iTempValue += ((kCivic.getYieldModifier(iI) * getNumCities()) / 11);
+
+		for (iJ = 0; iJ < GC.getNumImprovementInfos(); iJ++)
+		{
+			//iTempValue += (AI_averageYieldMultiplier((YieldTypes)iI) * (kCivic.getImprovementYieldChanges(iJ, iI) * (getImprovementCount((ImprovementTypes)iJ) + getNumCities() * 2))) / 100;
+			iTempValue += (kCivic.getImprovementYieldChanges(iJ, iI) * (getImprovementCount((ImprovementTypes)iJ) + getNumCities() * 2)) / 100;
+		}
+		//Need AI for this effect
+		/*if (getNumCities() > 3)
+		{
+			iTempValue += (getConnectedTradeYieldsBonus(iI));
+		}*/
+		if (iTotalDefenders > 0)
+		{
+			if (bWarPlan)
+			{
+				iTempValue += kCivic.getGarrisonUnitModifiers(iI) * iTotalDefenders * 2;
+			}
+			else
+			{
+				iTempValue += kCivic.getGarrisonUnitModifiers(iI) * iTotalDefenders;
+			}
+		}
+
+		if (iI == YIELD_BELLS) 
+		{ 
+			if (AI_isStrategy(STRATEGY_FAST_BELLS))
+			{
+				iTempValue *= 6;
+			}
+			else
+			{
+				iTempValue *= 2; 
+			}
+		}
+		else if (iI == YIELD_IDEAS) 
+		{ 
+			iTempValue *= 2; 
+		}
+		else if (iI == YIELD_FOOD) 
+		{ 
+			iTempValue *= 3; 
+		} 
+		else if (iI == YIELD_HAMMERS) 
+		{ 
+			iTempValue *= 6; 
+		} 
+		else if (iI == YIELD_GOLD) 
+		{ 
+			if (AI_isStrategy(STRATEGY_CASH_FOCUS))
+			{
+				iTempValue *= 6;
+			}
+			else
+			{
+				iTempValue *= 2; 
+			}
+		} 
+
+		iValue += iTempValue;
+	}
+	//Building Civics
+	for (iJ = 0; iJ < kCivic.getNumCivicTreasuryBonus(); iJ++)
+	{
+
+		if (getBuildingClassCount((BuildingClassTypes)kCivic.getCivicTreasury(iJ)) >= 1)
+		{
+			iValue += getBuildingClassCount((BuildingClassTypes)iJ) * kCivic.getCivicTreasuryBonus(iJ);
+		}
+
+	}
+	/*for (iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
+	{
+		
+	}*/
+	
+	/*for (iI = 0; iI < GC.getNumFeatureInfos(); iI++)
+	{
+		iHappiness = kCivic.getFeatureHappinessChanges(iI);
+
+		if (iHappiness != 0)
+		{
+			iValue += (iHappiness * countCityFeatures((FeatureTypes)iI) * 5);
+		}
+	}*/
+
+	/*for (iI = 0; iI < GC.getNumHurryInfos(); iI++)
+	{
+		if (kCivic.isHurry(iI))
+		{
+			iTempValue = 0;
+
+			if (GC.getHurryInfo((HurryTypes)iI).getGoldPerProduction() > 0)
+			{
+				iTempValue += ((((AI_avoidScience()) ? 50 : 25) * getNumCities()) / GC.getHurryInfo((HurryTypes)iI).getGoldPerProduction());
+			}
+			iTempValue += (GC.getHurryInfo((HurryTypes)iI).getProductionPerPopulation() * getNumCities() * (bWarPlan ? 2 : 1)) / 5;
+			iValue += iTempValue;
+		}
+	}*/
+
+	//for (iI = 0; iI < GC.getNumSpecialBuildingInfos(); iI++)
+	//{
+	//	if (kCivic.isSpecialBuildingNotRequired(iI))
+	//	{
+	//		iValue += ((getNumCities() / 2) + 1); // XXX
+	//	}
+	//} 
+
+	//Personality Civics
+	for (iI = 0; iI < GC.getLeaderHeadInfo(getPersonalityType()).getNumCivicDiplomacyAttitudes(); iI++)
+	{
+		if (GC.getLeaderHeadInfo(getPersonalityType()).getCivicDiplomacyAttitudes(iI) == eCivic)
+		{
+			iValue *= GC.getLeaderHeadInfo(getPersonalityType()).getCivicDiplomacyAttitudesValue(iI);
+			break;
+		}
+	}
+	//if (GC.getLeaderHeadInfo(getPersonalityType()).getFavoriteCivic() == eCivic)
+	/*{
+		if (iHighestReligionCount > 0)
+		{
+			iValue *= 5; 
+			iValue /= 4; 
+			iValue += 6 * getNumCities();
+			iValue += 20; 
+		}
+	}*/
+
+	return iValue;
+
+
+}
+///TKe
 int CvPlayerAI::AI_getAttackOddsChange()
 {
 	return m_iAttackOddsChange;
@@ -5740,7 +6062,58 @@ void CvPlayerAI::AI_setExtraGoldTarget(int iNewValue)
 {
 	m_iExtraGoldTarget = iNewValue;
 }
+//TKs Civics
+void CvPlayerAI::AI_doCivics()
+{
+	if (isNative() || isEurope() || GC.getGameINLINE().isBarbarianPlayer(getID()))
+	{
+		return;
+	}
 
+	if (getNumCities() == 0)
+	{
+		return;
+	}
+
+	CivicTypes* paeBestCivic;
+	int iI;
+
+	FAssertMsg(!isHuman(), "isHuman did not return false as expected");
+	/*if (AI_getCivicTimer() > 0)
+	{
+		AI_changeCivicTimer(-1);
+		return;
+	}*/
+
+	if (!canChangeCivics(NULL))
+	{
+		return;
+	}
+
+	//FAssertMsg(AI_getCivicTimer() == 0, "AI Civic timer is expected to be 0");
+
+	paeBestCivic = new CivicTypes[GC.getNumCivicOptionInfos()];
+
+	for (iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
+	{
+		CivicTypes eBestCivc = AI_bestCivic((CivicOptionTypes)iI);
+		paeBestCivic[iI] = eBestCivc;
+
+		if (paeBestCivic[iI] == NO_CIVIC)
+		{
+			paeBestCivic[iI] = getCivic((CivicOptionTypes)iI);
+		}
+	}
+
+	// XXX AI skips revolution???
+	if (canChangeCivics(paeBestCivic))
+	{
+		changeCivics(paeBestCivic);
+		//AI_setCivicTimer((getMaxAnarchyTurns() == 0) ? (GC.getDefineINT("MIN_REVOLUTION_TURNS") * 2) : CIVIC_CHANGE_DELAY);
+	}
+
+	SAFE_DELETE_ARRAY(paeBestCivic);
+}
 void CvPlayerAI::AI_chooseCivic(CivicOptionTypes eCivicOption)
 {
 	int iBestValue = MIN_INT;
@@ -5767,7 +6140,7 @@ void CvPlayerAI::AI_chooseCivic(CivicOptionTypes eCivicOption)
 		setCivic(eCivicOption, eBestCivic);
 	}
 }
-
+//TKe
 bool CvPlayerAI::AI_chooseGoody(GoodyTypes eGoody)
 {
 	return true;
@@ -7322,15 +7695,6 @@ bool CvPlayerAI::AI_doDiploOpenBorders(PlayerTypes ePlayer)
 	return true;
 }
 
-///TKs Med
-//int CvPlayerAI::AI_getInsultedAttitude(PlayerTypes ePlayer)
-//{
-//	return m_aiInsultedAttitudeCache[ePlayer];
-//}
-//void CvPlayerAI::AI_changeInsultedAttitude(PlayerTypes ePlayer, int Change)
-//{
-//    m_aiInsultedAttitudeCache[ePlayer] += Change;
-//}
 ///TKs Invention Core Mod v 1.0
 bool CvPlayerAI::AI_doDiploCollaborateResearch(PlayerTypes ePlayer)
 {
@@ -8634,7 +8998,7 @@ int CvPlayerAI::AI_yieldValue(YieldTypes eYield, bool bProduce, int iAmount)
 	}
 	else
 	{
-		iValue += m_aiYieldValuesTimes100[eYield];
+		iValue += m_ja_iYieldValuesTimes100.get(eYield);
 	}
 
 	iValue *= AI_yieldWeight(eYield);
@@ -8883,13 +9247,13 @@ void CvPlayerAI::AI_updateYieldValues()
 				FAssert(false);
 		}
 #endif
-		m_aiYieldValuesTimes100[i] = 100 * iValue;
+		m_ja_iYieldValuesTimes100.set(100 * iValue, i);
 	}
-	int iCrossValue = m_aiYieldValuesTimes100[YIELD_FOOD] * getGrowthThreshold(1) / (50 + immigrationThreshold() * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent() / 100);
+	int iCrossValue = m_ja_iYieldValuesTimes100.get(YIELD_FOOD) * getGrowthThreshold(1) / (50 + immigrationThreshold() * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent() / 100);
 	iCrossValue /= 2;
 
 	//Crosses
-	m_aiYieldValuesTimes100[YIELD_CROSSES] = std::max(m_aiYieldValuesTimes100[YIELD_CROSSES], iCrossValue);
+	m_ja_iYieldValuesTimes100.keepMax(iCrossValue, YIELD_CROSSES);
 
 	//The function is quite simple. Iterate over every citizen which has input yield.
 	//Calculate the value of their output yield, and assign half of that to the input.
@@ -8921,10 +9285,10 @@ void CvPlayerAI::AI_updateYieldValues()
 							iInput = 1;
 						}
 						///TKe
-						int iProfit = (m_aiYieldValuesTimes100[kProfession.getYieldsProduced(0)] * iOutput);
+						int iProfit = (m_ja_iYieldValuesTimes100.get(kProfession.getYieldsProduced(0)) * iOutput);
 						// MultipleYieldsProduced End
 						int iInputValue = iProfit / (2 * iInput); //Assign 50% of the yield value to the input.
-						m_aiYieldValuesTimes100[kProfession.getYieldsConsumed(0, getID())] = std::max(iInputValue, m_aiYieldValuesTimes100[kProfession.getYieldsConsumed(0, getID())]);
+						m_ja_iYieldValuesTimes100.keepMax(iInputValue, kProfession.getYieldsConsumed(0, getID()));
 					}
 				}
 				ProfessionTypes eIdealProfesion = AI_idealProfessionForUnit(pLoopUnit->getUnitType());
@@ -8938,8 +9302,8 @@ void CvPlayerAI::AI_updateYieldValues()
 						YieldTypes eYieldProduced = (YieldTypes)kIdealPro.getYieldsProduced(0);
 						FAssert(kIdealPro.getYieldsProduced(0) != NO_YIELD);
 						// MultipleYieldsProduced End
-						int iInputValue = m_aiYieldValuesTimes100[eYieldProduced] / 2;
-						m_aiYieldValuesTimes100[eYieldConsumed] = std::max(iInputValue, m_aiYieldValuesTimes100[eYieldConsumed]);
+						int iInputValue = m_ja_iYieldValuesTimes100.get(eYieldProduced) / 2;
+						m_ja_iYieldValuesTimes100.keepMax(iInputValue, eYieldConsumed);
 					}
 				}
 			}
@@ -11010,6 +11374,11 @@ void CvPlayerAI::read(FDataStreamBase* pStream)
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
 
+	/// JIT array save - start - Nightinggale
+	int iSavedNumUnitAItypes = 0;
+	pStream->Read(&iSavedNumUnitAItypes);
+	/// JIT array save - end - Nightinggale
+	
 	if (uiFlag > 0)
 	{
 		uint iSize;
@@ -11028,30 +11397,30 @@ void CvPlayerAI::read(FDataStreamBase* pStream)
 
 	pStream->Read(&m_iAveragesCacheTurn);
 
-	pStream->Read((int*)&m_eNextBuyUnit);
+	pStream->Read(&m_eNextBuyUnit);
 	pStream->Read((int*)&m_eNextBuyUnitAI);
 	pStream->Read(&m_iNextBuyUnitValue);
-	pStream->Read((int*)&m_eNextBuyProfession);
-	pStream->Read((int*)&m_eNextBuyProfessionUnit);
+	pStream->Read(&m_eNextBuyProfession);
+	pStream->Read(&m_eNextBuyProfessionUnit);
 	pStream->Read((int*)&m_eNextBuyProfessionAI);
 	pStream->Read(&m_iNextBuyProfessionValue);
 
 	pStream->Read(&m_iTotalIncome);
 	pStream->Read(&m_iHurrySpending);
 
-	pStream->Read(NUM_YIELD_TYPES, m_aiAverageYieldMultiplier);
-	pStream->Read(NUM_YIELD_TYPES, m_aiBestWorkedYieldPlots);
-	pStream->Read(NUM_YIELD_TYPES, m_aiBestUnworkedYieldPlots);
-	pStream->Read(NUM_YIELD_TYPES, m_aiYieldValuesTimes100);
+	m_ja_iAverageYieldMultiplier.read(pStream);
+	m_ja_iBestWorkedYieldPlots.read(pStream);
+	m_ja_iBestUnworkedYieldPlots.read(pStream);
+	m_ja_iYieldValuesTimes100.read(pStream);
 
 	pStream->Read(&m_iUpgradeUnitsCacheTurn);
 	pStream->Read(&m_iUpgradeUnitsCachedExpThreshold);
 	pStream->Read(&m_iUpgradeUnitsCachedGold);
 
-	pStream->Read(NUM_UNITAI_TYPES, m_aiNumTrainAIUnits);
-	pStream->Read(NUM_UNITAI_TYPES, m_aiNumAIUnits);
-	pStream->Read(NUM_UNITAI_TYPES, m_aiNumRetiredAIUnits);
-	pStream->Read(NUM_UNITAI_TYPES, m_aiUnitAIStrategyWeights);
+	pStream->Read(iSavedNumUnitAItypes, m_aiNumTrainAIUnits);
+	pStream->Read(iSavedNumUnitAItypes, m_aiNumAIUnits);
+	pStream->Read(iSavedNumUnitAItypes, m_aiNumRetiredAIUnits);
+	pStream->Read(iSavedNumUnitAItypes, m_aiUnitAIStrategyWeights);
 	pStream->Read(MAX_PLAYERS, m_aiPeacetimeTradeValue);
 	pStream->Read(MAX_PLAYERS, m_aiPeacetimeGrantValue);
 	pStream->Read(MAX_PLAYERS, m_aiGoldTradedTo);
@@ -11095,8 +11464,8 @@ void CvPlayerAI::read(FDataStreamBase* pStream)
 		}
 	}
 
-	pStream->Read(GC.getNumUnitClassInfos(), m_aiUnitClassWeights);
-	pStream->Read(GC.getNumUnitCombatInfos(), m_aiUnitCombatWeights);
+	m_ja_iUnitClassWeights.read(pStream);
+	m_ja_iUnitCombatWeights.read(pStream);
 	pStream->Read(MAX_PLAYERS, m_aiCloseBordersAttitudeCache);
 	pStream->Read(MAX_PLAYERS, m_aiStolenPlotsAttitudeCache);
 	///TKs Med
@@ -11108,10 +11477,7 @@ void CvPlayerAI::read(FDataStreamBase* pStream)
 
 	/// post load function - start - Nightinggale
 	uint iFixCount = 0;
-	if (uiFlag >= 4)
-	{
-		pStream->Read(&iFixCount);
-	}
+	pStream->Read(&iFixCount);
 
 	if (m_eID == (MAX_PLAYERS - 1))
 	{
@@ -11138,6 +11504,10 @@ void CvPlayerAI::write(FDataStreamBase* pStream)
 	uint uiFlag=4;
 	pStream->Write(uiFlag);		// flag for expansion
 
+	/// JIT array save - start - Nightinggale
+	pStream->Write(NUM_UNITAI_TYPES);
+	/// JIT array save - end - Nightinggale
+
 	pStream->Write(m_distanceMap.size());
 	if (!m_distanceMap.empty())
 	{
@@ -11161,10 +11531,10 @@ void CvPlayerAI::write(FDataStreamBase* pStream)
 	pStream->Write(m_iTotalIncome);
 	pStream->Write(m_iHurrySpending);
 
-	pStream->Write(NUM_YIELD_TYPES, m_aiAverageYieldMultiplier);
-	pStream->Write(NUM_YIELD_TYPES, m_aiBestWorkedYieldPlots);
-	pStream->Write(NUM_YIELD_TYPES, m_aiBestUnworkedYieldPlots);
-	pStream->Write(NUM_YIELD_TYPES, m_aiYieldValuesTimes100);
+	m_ja_iAverageYieldMultiplier.write(pStream);
+	m_ja_iBestWorkedYieldPlots.write(pStream);
+	m_ja_iBestUnworkedYieldPlots.write(pStream);
+	m_ja_iYieldValuesTimes100.write(pStream);
 
 	pStream->Write(m_iUpgradeUnitsCacheTurn);
 	pStream->Write(m_iUpgradeUnitsCachedExpThreshold);
@@ -11210,8 +11580,8 @@ void CvPlayerAI::write(FDataStreamBase* pStream)
 		pStream->Write(m_unitPriorityHeap.size(), &m_unitPriorityHeap[0]);
 	}
 
-	pStream->Write(GC.getNumUnitClassInfos(), m_aiUnitClassWeights);
-	pStream->Write(GC.getNumUnitCombatInfos(), m_aiUnitCombatWeights);
+	m_ja_iUnitClassWeights.write(pStream);
+	m_ja_iUnitCombatWeights.write(pStream);
 	pStream->Write(MAX_PLAYERS, m_aiCloseBordersAttitudeCache);
 	pStream->Write(MAX_PLAYERS, m_aiStolenPlotsAttitudeCache);
 	///TKs MEd
@@ -13900,12 +14270,12 @@ int CvPlayerAI::AI_calculateTotalBombard(DomainTypes eDomain)
 
 int CvPlayerAI::AI_getUnitClassWeight(UnitClassTypes eUnitClass)
 {
-	return m_aiUnitClassWeights[eUnitClass] / 100;
+	return m_ja_iUnitClassWeights.get(eUnitClass) / 100;
 }
 
 int CvPlayerAI::AI_getUnitCombatWeight(UnitCombatTypes eUnitCombat)
 {
-	return m_aiUnitCombatWeights[eUnitCombat] / 100;
+	return m_ja_iUnitCombatWeights.get(eUnitCombat) / 100;
 }
 
 void CvPlayerAI::AI_doEnemyUnitData()
@@ -13968,7 +14338,7 @@ void CvPlayerAI::AI_doEnemyUnitData()
 						}
 					}
 
-					if (m_aiUnitClassWeights[pLoopUnit->getUnitClassType()] == 0)
+					if (m_ja_iUnitClassWeights.get(pLoopUnit->getUnitClassType()) == 0)
 					{
 						iUnitValue *= 4;
 					}
@@ -13991,10 +14361,12 @@ void CvPlayerAI::AI_doEnemyUnitData()
 	//Decay
 	for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
 	{
-		m_aiUnitClassWeights[iI] -= 100;
-		m_aiUnitClassWeights[iI] *= 3;
-		m_aiUnitClassWeights[iI] /= 4;
-		m_aiUnitClassWeights[iI] = std::max(0, m_aiUnitClassWeights[iI]);
+		int iWeight = m_ja_iUnitClassWeights.get(iI);
+		iWeight -= 100;
+		iWeight *= 3;
+		iWeight /= 4;
+		iWeight = std::max(0, iWeight);
+		m_ja_iUnitClassWeights.set(iWeight, iI);
 	}
 
 	for (iI = 0; iI < GC.getNumUnitInfos(); iI++)
@@ -14004,34 +14376,31 @@ void CvPlayerAI::AI_doEnemyUnitData()
 			UnitTypes eLoopUnit = (UnitTypes)iI;
 			aiUnitCounts[iI] = 0;
 			FAssert(aiDomainSums[GC.getUnitInfo(eLoopUnit).getDomainType()] > 0);
-			m_aiUnitClassWeights[GC.getUnitInfo(eLoopUnit).getUnitClassType()] += (5000 * aiUnitCounts[iI]) / std::max(1, aiDomainSums[GC.getUnitInfo(eLoopUnit).getDomainType()]);
+			int iAddedWeight = (5000 * aiUnitCounts[iI]) / std::max(1, aiDomainSums[GC.getUnitInfo(eLoopUnit).getDomainType()]);
+			m_ja_iUnitClassWeights.add(iAddedWeight, GC.getUnitInfo(eLoopUnit).getUnitClassType());
 		}
 	}
 
-	for (iI = 0; iI < GC.getNumUnitCombatInfos(); ++iI)
-	{
-		m_aiUnitCombatWeights[iI] = 0;
-	}
+	m_ja_iUnitCombatWeights.reset();
 
 	for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
 	{
-		if (m_aiUnitClassWeights[iI] > 0)
+		if (m_ja_iUnitClassWeights.get(iI) > 0)
 		{
 			UnitTypes eUnit = (UnitTypes)GC.getUnitClassInfo((UnitClassTypes)iI).getDefaultUnitIndex();
-			m_aiUnitCombatWeights[GC.getUnitInfo(eUnit).getUnitCombatType()] += m_aiUnitClassWeights[iI];
-
+			m_ja_iUnitCombatWeights.add(m_ja_iUnitClassWeights.get(iI), GC.getUnitInfo(eUnit).getUnitCombatType());
 		}
 	}
 
 	for (iI = 0; iI < GC.getNumUnitCombatInfos(); iI++)
 	{
-		if (m_aiUnitCombatWeights[iI] > 25)
+		if (m_ja_iUnitCombatWeights.get(iI) > 25)
 		{
-			m_aiUnitCombatWeights[iI] += 2500;
+			m_ja_iUnitCombatWeights.add(2500, iI);
 		}
-		else if (m_aiUnitCombatWeights[iI] > 0)
+		else if (m_ja_iUnitCombatWeights.get(iI) > 0)
 		{
-			m_aiUnitCombatWeights[iI] += 1000;
+			m_ja_iUnitCombatWeights.add(1000, iI);
 		}
 	}
 }
@@ -14047,7 +14416,7 @@ int CvPlayerAI::AI_calculateUnitAIViability(UnitAITypes eUnitAI, DomainTypes eDo
 		CvUnitInfo& kUnitInfo = GC.getUnitInfo((UnitTypes)iI);
 		if (kUnitInfo.getDomainType() == eDomain)
 		{
-			if (m_aiUnitClassWeights[iI] > 0)
+			if (m_ja_iUnitClassWeights.get(iI) > 0)
 			{
 				if (kUnitInfo.getUnitAIType(eUnitAI))
 				{
@@ -14720,11 +15089,11 @@ void CvPlayerAI::AI_updateBestYieldPlots()
 	int aiBestWorkedYield[NUM_YIELD_TYPES];
 	int aiBestUnworkedYield[NUM_YIELD_TYPES];
 
+	m_ja_iBestWorkedYieldPlots.reset();
+	m_ja_iBestUnworkedYieldPlots.reset();
+
 	for (int i = 0; i < NUM_YIELD_TYPES; ++i)
 	{
-		m_aiBestWorkedYieldPlots[i] = -1;
-		m_aiBestUnworkedYieldPlots[i] = -1;
-
 		aiBestWorkedYield[i] = 0;
 		aiBestUnworkedYield[i] = 0;
 	}
@@ -14745,7 +15114,7 @@ void CvPlayerAI::AI_updateBestYieldPlots()
 						if (iPlotYield > aiBestWorkedYield[iYield])
 						{
 							aiBestWorkedYield[iYield] = iPlotYield;
-							m_aiBestWorkedYieldPlots[iYield] = i;
+							m_ja_iBestWorkedYieldPlots.set(i, iYield);
 						}
 					}
 					else
@@ -14753,7 +15122,7 @@ void CvPlayerAI::AI_updateBestYieldPlots()
 						if (iPlotYield > aiBestUnworkedYield[iYield])
 						{
 							aiBestUnworkedYield[iYield] = iPlotYield;
-							m_aiBestUnworkedYieldPlots[iYield] = i;
+							m_ja_iBestUnworkedYieldPlots.set(i, iYield);
 						}
 					}
 				}
@@ -14764,20 +15133,14 @@ void CvPlayerAI::AI_updateBestYieldPlots()
 
 CvPlot* CvPlayerAI::AI_getBestWorkedYieldPlot(YieldTypes eYield)
 {
-	FAssertMsg(eYield > NO_YIELD, "Index out of bounds");
-	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
-
 	//Automatically returns NULL, if -1.
-	return GC.getMapINLINE().plotByIndexINLINE(m_aiBestWorkedYieldPlots[eYield]);
+	return GC.getMapINLINE().plotByIndexINLINE(m_ja_iBestWorkedYieldPlots.get(eYield));
 }
 
 CvPlot* CvPlayerAI::AI_getBestUnworkedYieldPlot(YieldTypes eYield)
 {
-	FAssertMsg(eYield > NO_YIELD, "Index out of bounds");
-	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
-
 	//Automatically returns NULL, if -1.
-	return GC.getMapINLINE().plotByIndexINLINE(m_aiBestUnworkedYieldPlots[eYield]);
+	return GC.getMapINLINE().plotByIndexINLINE(m_ja_iBestUnworkedYieldPlots.get(eYield));
 }
 
 int CvPlayerAI::AI_getBestPlotYield(YieldTypes eYield)
@@ -15075,5 +15438,33 @@ bool CvPlayerAI::AI_doDiploOfferVassalCity(PlayerTypes ePlayer)
 	}
 
 	return bOffered;
+}
+
+int CvPlayerAI::AI_getCivicAttitude(PlayerTypes ePlayer)
+{
+	
+	int iAttitudeChange = 0;
+	for (int iX=0; iX < GC.getLeaderHeadInfo(getPersonalityType()).getNumCivicDiplomacyAttitudes(); iX++)
+	{
+		if (GET_PLAYER(ePlayer).isCivic((CivicTypes)GC.getLeaderHeadInfo(getPersonalityType()).getCivicDiplomacyAttitudes(iX)))
+		{
+			iAttitudeChange += GC.getLeaderHeadInfo(getPersonalityType()).getCivicDiplomacyAttitudesValue(iX);
+			//iAttitudeChange /= std::max(1, GC.getLeaderHeadInfo(GET_PLAYER(ePlayer).getPersonalityType()).getCivicDiplomacyDivisor());
+		}
+	}
+	/*int iChangelimit = GC.getLeaderHeadInfo(getPersonalityType()).getCivicDiplomacyChangeLimit();
+	if (iChangelimit > 0)
+	{
+		return range(iAttitudeChange, -(abs(iChangelimit)), abs(iChangelimit));
+	}*/
+	//if (!atWar(getTeam(), GET_PLAYER(ePlayer).getTeam()))
+	//{
+		return iAttitudeChange;
+	//}
+	//else
+	//{
+		//return std::min(1, iAttitudeChange);
+	//}
+	
 }
 ///TKe

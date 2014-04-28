@@ -240,7 +240,12 @@
 			<DomainFreeExperiences/>
 			<DomainProductionModifiers/>
 			<PrereqBuildingClasses/>
-			<BuildingClassNeededs/>
+      <BuildingClassNeededs>
+        <BuildingClassNeeded>
+          <BuildingClassType>BUILDINGCLASS_MANOR_COURT</BuildingClassType>
+          <bNeededInCity>1</bNeededInCity>
+        </BuildingClassNeeded>
+      </BuildingClassNeededs>
 			<AutoSellsYields/>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
@@ -299,7 +304,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iOverflowSellPercent>50</iOverflowSellPercent>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<SeaPlotYieldChanges/>
 			<RiverPlotYieldChanges/>
@@ -312,49 +317,14 @@
 			<PrereqBuildingClasses/>
 			<BuildingClassNeededs/>
 			<iModdersCode1>MODER_CODE_TRADING_POST</iModdersCode1>
+      <YieldDemands/>
 			<iMarketCap>2</iMarketCap>
-			<AutoSellsYields>
-				<AutoSellsYield>
-					<YieldType>YIELD_CLOTH</YieldType>
-					<iValue>100</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_COATS</YieldType>
-					<iValue>100</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_WOOL</YieldType>
-					<iValue>100</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_COTTON</YieldType>
-					<iValue>100</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_CLOTH</YieldType>
-					<iValue>100</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_FUR</YieldType>
-					<iValue>100</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_BARLEY</YieldType>
-					<iValue>100</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_GRAPES</YieldType>
-					<iValue>100</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_SPICES</YieldType>
-					<iValue>100</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_TOOLS</YieldType>
-					<iValue>100</iValue>
-				</AutoSellsYield>
-			</AutoSellsYields>
+      <AutoSellsYields>
+        <AutoSellsYield>
+          <YieldType>YIELD_FOOD</YieldType>
+          <iValue>1</iValue>
+        </AutoSellsYield>
+      </AutoSellsYields>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
@@ -424,7 +394,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iOverflowSellPercent>60</iOverflowSellPercent>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<SeaPlotYieldChanges/>
 			<RiverPlotYieldChanges/>
@@ -456,65 +426,14 @@
 			</BuildingClassNeededs>
 			<iModdersCode1>MODER_CODE_TRADING_POST</iModdersCode1>
 			<iIncreasesCityPopulation>3</iIncreasesCityPopulation>
+      <YieldDemands/>
 			<iMarketCap>4</iMarketCap>
-			<AutoSellsYields>
-				<AutoSellsYield>
-					<YieldType>YIELD_LUMBER</YieldType>
-					<iValue>100</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_STONE</YieldType>
-					<iValue>100</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_ORE</YieldType>
-					<iValue>100</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_CLOTH</YieldType>
-					<iValue>100</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_COATS</YieldType>
-					<iValue>100</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_WOOL</YieldType>
-					<iValue>100</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_COTTON</YieldType>
-					<iValue>100</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_CLOTH</YieldType>
-					<iValue>100</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_SALT</YieldType>
-					<iValue>100</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_FUR</YieldType>
-					<iValue>100</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_BARLEY</YieldType>
-					<iValue>100</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_GRAPES</YieldType>
-					<iValue>100</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_SPICES</YieldType>
-					<iValue>100</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_TOOLS</YieldType>
-					<iValue>100</iValue>
-				</AutoSellsYield>
-			</AutoSellsYields>
+      <AutoSellsYields>
+        <AutoSellsYield>
+          <YieldType>YIELD_FOOD</YieldType>
+          <iValue>2</iValue>
+        </AutoSellsYield>
+      </AutoSellsYields>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
@@ -576,7 +495,7 @@
 			<iAsset>150</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iOverflowSellPercent>75</iOverflowSellPercent>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<SeaPlotYieldChanges/>
 			<RiverPlotYieldChanges/>
@@ -598,64 +517,13 @@
 				</BuildingClassNeeded>
 			</BuildingClassNeededs>
 			<iModdersCode1>MODER_CODE_TRADING_POST</iModdersCode1>
-			<AutoSellsYields>
-				<AutoSellsYield>
-					<YieldType>YIELD_LUMBER</YieldType>
-					<iValue>150</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_STONE</YieldType>
-					<iValue>150</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_ORE</YieldType>
-					<iValue>150</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_CLOTH</YieldType>
-					<iValue>150</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_COATS</YieldType>
-					<iValue>150</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_WOOL</YieldType>
-					<iValue>150</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_COTTON</YieldType>
-					<iValue>150</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_CLOTH</YieldType>
-					<iValue>150</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_SALT</YieldType>
-					<iValue>150</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_FUR</YieldType>
-					<iValue>150</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_BARLEY</YieldType>
-					<iValue>150</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_GRAPES</YieldType>
-					<iValue>150</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_SPICES</YieldType>
-					<iValue>150</iValue>
-				</AutoSellsYield>
-				<AutoSellsYield>
-					<YieldType>YIELD_TOOLS</YieldType>
-					<iValue>150</iValue>
-				</AutoSellsYield>
-			</AutoSellsYields>
+      <YieldDemands/>
+      <AutoSellsYields>
+        <AutoSellsYield>
+          <YieldType>YIELD_FOOD</YieldType>
+          <iValue>3</iValue>
+        </AutoSellsYield>
+      </AutoSellsYields>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
@@ -1123,6 +991,12 @@
 					<iValue>100</iValue>
 				</AutoSellsYield>
 			</AutoSellsYields>
+      <CivicTreasuryBonuses>
+        <CivicTreasuryBonus>
+          <CivicType>CIVIC_STATE_CONTROL</CivicType>
+          <iValue>1</iValue>
+        </CivicTreasuryBonus>
+      </CivicTreasuryBonuses>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
@@ -1293,6 +1167,12 @@
 					<iValue>100</iValue>
 				</AutoSellsYield>
 			</AutoSellsYields>
+      <CivicTreasuryBonuses>
+        <CivicTreasuryBonus>
+          <CivicType>CIVIC_STATE_CONTROL</CivicType>
+          <iValue>2</iValue>
+        </CivicTreasuryBonus>
+      </CivicTreasuryBonuses>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
@@ -1461,6 +1341,7 @@
 			<DomainProductionModifiers/>
 			<PrereqBuildingClasses/>
 			<BuildingClassNeededs/>
+      <YieldDemands/>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
@@ -1564,6 +1445,7 @@
 			<DomainProductionModifiers/>
 			<PrereqBuildingClasses/>
 			<BuildingClassNeededs/>
+      <YieldDemands/>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
@@ -1632,12 +1514,7 @@
 			<DomainProductionModifiers/>
 			<PrereqBuildingClasses/>
 			<BuildingClassNeededs/>
-			<YieldDemands>
-				<YieldDemand>
-					<YieldType>YIELD_TRADE_GOODS</YieldType>
-					<iYieldDemand>5</iYieldDemand>
-				</YieldDemand>
-			</YieldDemands>
+			<YieldDemands/>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
@@ -1707,16 +1584,7 @@
 			<DomainProductionModifiers/>
 			<PrereqBuildingClasses/>
 			<BuildingClassNeededs/>
-			<YieldDemands>
-				<YieldDemand>
-					<YieldType>YIELD_TRADE_GOODS</YieldType>
-					<iYieldDemand>6</iYieldDemand>
-				</YieldDemand>
-				<YieldDemand>
-					<YieldType>YIELD_GRAPES</YieldType>
-					<iYieldDemand>6</iYieldDemand>
-				</YieldDemand>
-			</YieldDemands>
+      <YieldDemands/>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
@@ -1807,6 +1675,7 @@
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
 			</BuildingClassNeededs>
+      <YieldDemands/>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
@@ -2258,7 +2127,7 @@
 			<bGraphicalOnly>0</bGraphicalOnly>
 			<bWorksWater>0</bWorksWater>
 			<bWater>0</bWater>
-			<bRiver>0</bRiver>
+			<bRiver>1</bRiver>
 			<bCapital>0</bCapital>
 			<bNeverCapture>0</bNeverCapture>
 			<bCenterInCity>0</bCenterInCity>
@@ -3500,7 +3369,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>200</iYieldStorage>
-			<iOverflowSellPercent>50</iOverflowSellPercent>
+			<iOverflowSellPercent>0</iOverflowSellPercent>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<SeaPlotYieldChanges/>
 			<RiverPlotYieldChanges/>
@@ -3554,11 +3423,7 @@
 			<YieldCosts>
 				<YieldCost>
 					<YieldType>YIELD_HAMMERS</YieldType>
-					<iCost>10</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_LUMBER</YieldType>
-					<iCost>50</iCost>
+					<iCost>20</iCost>
 				</YieldCost>
 			</YieldCosts>
 			<iHurryCostModifier>0</iHurryCostModifier>
@@ -3631,7 +3496,7 @@
 					<iCost>90</iCost>
 				</YieldCost>
 				<YieldCost>
-					<YieldType>YIELD_LUMBER</YieldType>
+					<YieldType>YIELD_TOOLS</YieldType>
 					<iCost>50</iCost>
 				</YieldCost>
 			</YieldCosts>
@@ -3714,7 +3579,7 @@
 					<iCost>270</iCost>
 				</YieldCost>
 				<YieldCost>
-					<YieldType>YIELD_LUMBER</YieldType>
+					<YieldType>YIELD_TOOLS</YieldType>
 					<iCost>100</iCost>
 				</YieldCost>
 			</YieldCosts>
@@ -5550,14 +5415,22 @@
 				</YieldCost>
 				<YieldCost>
 					<YieldType>YIELD_HORSES</YieldType>
-					<iCost>50</iCost>
+					<iCost>25</iCost>
 				</YieldCost>
+        <YieldCost>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iCost>25</iCost>
+        </YieldCost>
+        <YieldCost>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iCost>25</iCost>
+        </YieldCost>
 			</YieldCosts>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iProfessionOutput>2</iProfessionOutput>
-			<iMaxWorkers>2</iMaxWorkers>
+			<iProfessionOutput>0</iProfessionOutput>
+			<iMaxWorkers>0</iMaxWorkers>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>100</iConquestProb>
 			<iCitiesPrereq>0</iCitiesPrereq>
@@ -5579,7 +5452,20 @@
 			<SeaPlotYieldChanges/>
 			<RiverPlotYieldChanges/>
 			<YieldChanges/>
-			<YieldModifiers/>
+      <YieldModifiers>
+        <YieldModifier>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iModifier>25</iModifier>
+        </YieldModifier>
+        <YieldModifier>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iModifier>25</iModifier>
+        </YieldModifier>
+        <YieldModifier>
+          <YieldType>YIELD_HORSES</YieldType>
+          <iModifier>25</iModifier>
+        </YieldModifier>
+      </YieldModifiers>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -5856,15 +5742,15 @@
 					<iCost>90</iCost>
 				</YieldCost>
 				<YieldCost>
-					<YieldType>YIELD_HORSES</YieldType>
+					<YieldType>YIELD_TOOLS</YieldType>
 					<iCost>100</iCost>
 				</YieldCost>
 			</YieldCosts>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iProfessionOutput>4</iProfessionOutput>
-			<iMaxWorkers>3</iMaxWorkers>
+			<iProfessionOutput>0</iProfessionOutput>
+			<iMaxWorkers>0</iMaxWorkers>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>100</iConquestProb>
 			<iCitiesPrereq>0</iCitiesPrereq>
@@ -5886,7 +5772,20 @@
 			<SeaPlotYieldChanges/>
 			<RiverPlotYieldChanges/>
 			<YieldChanges/>
-			<YieldModifiers/>
+      <YieldModifiers>
+        <YieldModifier>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iModifier>50</iModifier>
+        </YieldModifier>
+        <YieldModifier>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iModifier>50</iModifier>
+        </YieldModifier>
+        <YieldModifier>
+          <YieldType>YIELD_HORSES</YieldType>
+          <iModifier>50</iModifier>
+        </YieldModifier>
+      </YieldModifiers>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -5898,6 +5797,20 @@
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
 			</BuildingClassNeededs>
+      <MaxYieldModifiers>
+        <MaxYieldModifier>
+          <YieldType>YIELD_HORSES</YieldType>
+          <iModifier>100</iModifier>
+        </MaxYieldModifier>
+        <MaxYieldModifier>
+          <YieldType>YIELD_CATTLE</YieldType>
+          <iModifier>100</iModifier>
+        </MaxYieldModifier>
+        <MaxYieldModifier>
+          <YieldType>YIELD_SHEEP</YieldType>
+          <iModifier>100</iModifier>
+        </MaxYieldModifier>
+      </MaxYieldModifiers>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>

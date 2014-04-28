@@ -150,6 +150,20 @@
 						<ArtDefineTag>ART_DEF_PROFESSION_ANGLO_SPEARMAN</ArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
+        <StyleUnit>
+          <UnitType>NONE</UnitType>
+          <ProfessionType>PROFESSION_INFANTRY_ARMED</ProfessionType>
+          <UnitMeshGroup>
+            <ArtDefineTag>ART_DEF_PROFESSION_ANGLO_SPEARMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </StyleUnit>
+        <StyleUnit>
+          <UnitType>NONE</UnitType>
+          <ProfessionType>PROFESSION_INFANTRY_WELLARMED</ProfessionType>
+          <UnitMeshGroup>
+            <ArtDefineTag>ART_DEF_PROFESSION_ANGLO_SPEARMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </StyleUnit>
 				<StyleUnit>
 					<UnitType>NONE</UnitType>
 					<ProfessionType>PROFESSION_INFANTRY2</ProfessionType>
@@ -253,13 +267,6 @@
 					<ProfessionType>PROFESSION_HUNTSMAN</ProfessionType>
 					<UnitMeshGroup>
 						<ArtDefineTag>ART_DEF_PROFESSION_HUNTSMAN_UNIT</ArtDefineTag>
-					</UnitMeshGroup>
-				</StyleUnit>
-				<StyleUnit>
-					<UnitType>UNIT_LEAD_HUNTSMAN</UnitType>
-					<ProfessionType>PROFESSION_HUNTSMAN</ProfessionType>
-					<UnitMeshGroup>
-						<ArtDefineTag>ART_DEF_UNIT_HUNTSMAN</ArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
@@ -526,6 +533,20 @@
 						<ArtDefineTag>ART_DEF_UNIT_DOG</ArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
+        <StyleUnit>
+          <UnitType>UNIT_DOG</UnitType>
+          <ProfessionType>PROFESSION_INFANTRY_ARMED</ProfessionType>
+          <UnitMeshGroup>
+            <ArtDefineTag>ART_DEF_UNIT_DOG</ArtDefineTag>
+          </UnitMeshGroup>
+        </StyleUnit>
+        <StyleUnit>
+          <UnitType>UNIT_DOG</UnitType>
+          <ProfessionType>PROFESSION_INFANTRY_WELLARMED</ProfessionType>
+          <UnitMeshGroup>
+            <ArtDefineTag>ART_DEF_UNIT_DOG</ArtDefineTag>
+          </UnitMeshGroup>
+        </StyleUnit>
 				<StyleUnit>
 					<UnitType>UNIT_DOG</UnitType>
 					<ProfessionType>PROFESSION_INFANTRY2</ProfessionType>
@@ -729,6 +750,20 @@
 						<ArtDefineTag>ART_DEF_PROFESSION_BYZANTINE_SPEARMAN</ArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
+        <StyleUnit>
+          <UnitType>NONE</UnitType>
+          <ProfessionType>PROFESSION_INFANTRY_ARMED</ProfessionType>
+          <UnitMeshGroup>
+            <ArtDefineTag>ART_DEF_PROFESSION_BYZANTINE_SPEARMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </StyleUnit>
+        <StyleUnit>
+          <UnitType>NONE</UnitType>
+          <ProfessionType>PROFESSION_INFANTRY_WELLARMED</ProfessionType>
+          <UnitMeshGroup>
+            <ArtDefineTag>ART_DEF_PROFESSION_BYZANTINE_SPEARMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </StyleUnit>
 				<StyleUnit>
 					<UnitType>NONE</UnitType>
 					<ProfessionType>PROFESSION_INFANTRY2</ProfessionType>
@@ -1066,6 +1101,20 @@
 						<ArtDefineTag>ART_DEF_UNIT_ARAB_GREAT_GENERAL</ArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
+        <StyleUnit>
+          <UnitType>UNIT_ARAB_GREAT_GENERAL</UnitType>
+          <ProfessionType>PROFESSION_INFANTRY_ARMED</ProfessionType>
+          <UnitMeshGroup>
+            <ArtDefineTag>ART_DEF_UNIT_ARAB_GREAT_GENERAL</ArtDefineTag>
+          </UnitMeshGroup>
+        </StyleUnit>
+        <StyleUnit>
+          <UnitType>UNIT_ARAB_GREAT_GENERAL</UnitType>
+          <ProfessionType>PROFESSION_INFANTRY_WELLARMED</ProfessionType>
+          <UnitMeshGroup>
+            <ArtDefineTag>ART_DEF_UNIT_ARAB_GREAT_GENERAL</ArtDefineTag>
+          </UnitMeshGroup>
+        </StyleUnit>
 				<StyleUnit>
 					<UnitType>UNIT_ARAB_GREAT_GENERAL</UnitType>
 					<ProfessionType>PROFESSION_INFANTRY2</ProfessionType>
@@ -1269,6 +1318,20 @@
 						<ArtDefineTag>ART_DEF_PROFESSION_ARAB_SPEARMAN</ArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
+        <StyleUnit>
+          <UnitType>NONE</UnitType>
+          <ProfessionType>PROFESSION_INFANTRY_ARMED</ProfessionType>
+          <UnitMeshGroup>
+            <ArtDefineTag>ART_DEF_PROFESSION_ARAB_SPEARMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </StyleUnit>
+        <StyleUnit>
+          <UnitType>NONE</UnitType>
+          <ProfessionType>PROFESSION_INFANTRY_WELLARMED</ProfessionType>
+          <UnitMeshGroup>
+            <ArtDefineTag>ART_DEF_PROFESSION_ARAB_SPEARMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </StyleUnit>
 				<StyleUnit>
 					<UnitType>NONE</UnitType>
 					<ProfessionType>PROFESSION_INFANTRY2</ProfessionType>
@@ -1606,6 +1669,20 @@
 						<ArtDefineTag>ART_DEF_UNIT_GREAT_GENERAL</ArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
+        <StyleUnit>
+          <UnitType>UNIT_GREAT_GENERAL</UnitType>
+          <ProfessionType>PROFESSION_INFANTRY_ARMED</ProfessionType>
+          <UnitMeshGroup>
+            <ArtDefineTag>ART_DEF_UNIT_GREAT_GENERAL</ArtDefineTag>
+          </UnitMeshGroup>
+        </StyleUnit>
+        <StyleUnit>
+          <UnitType>UNIT_GREAT_GENERAL</UnitType>
+          <ProfessionType>PROFESSION_INFANTRY_WELLARMED</ProfessionType>
+          <UnitMeshGroup>
+            <ArtDefineTag>ART_DEF_UNIT_GREAT_GENERAL</ArtDefineTag>
+          </UnitMeshGroup>
+        </StyleUnit>
 				<StyleUnit>
 					<UnitType>UNIT_GREAT_GENERAL</UnitType>
 					<ProfessionType>PROFESSION_INFANTRY2</ProfessionType>
@@ -1809,6 +1886,20 @@
 						<ArtDefineTag>ART_DEF_PROFESSION_ANGLO_SPEARMAN</ArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
+        <StyleUnit>
+          <UnitType>NONE</UnitType>
+          <ProfessionType>PROFESSION_INFANTRY_ARMED</ProfessionType>
+          <UnitMeshGroup>
+            <ArtDefineTag>ART_DEF_PROFESSION_ANGLO_SPEARMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </StyleUnit>
+        <StyleUnit>
+          <UnitType>NONE</UnitType>
+          <ProfessionType>PROFESSION_INFANTRY_WELLARMED</ProfessionType>
+          <UnitMeshGroup>
+            <ArtDefineTag>ART_DEF_PROFESSION_ANGLO_SPEARMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </StyleUnit>
 				<StyleUnit>
 					<UnitType>NONE</UnitType>
 					<ProfessionType>PROFESSION_INFANTRY2</ProfessionType>
@@ -2160,6 +2251,20 @@
 						<ArtDefineTag>ART_DEF_UNIT_ARAB_GREAT_GENERAL</ArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
+        <StyleUnit>
+          <UnitType>UNIT_ARAB_GREAT_GENERAL</UnitType>
+          <ProfessionType>PROFESSION_INFANTRY_ARMED</ProfessionType>
+          <UnitMeshGroup>
+            <ArtDefineTag>ART_DEF_UNIT_ARAB_GREAT_GENERAL</ArtDefineTag>
+          </UnitMeshGroup>
+        </StyleUnit>
+        <StyleUnit>
+          <UnitType>UNIT_ARAB_GREAT_GENERAL</UnitType>
+          <ProfessionType>PROFESSION_INFANTRY_WELLARMED</ProfessionType>
+          <UnitMeshGroup>
+            <ArtDefineTag>ART_DEF_UNIT_ARAB_GREAT_GENERAL</ArtDefineTag>
+          </UnitMeshGroup>
+        </StyleUnit>
 				<StyleUnit>
 					<UnitType>UNIT_ARAB_GREAT_GENERAL</UnitType>
 					<ProfessionType>PROFESSION_INFANTRY2</ProfessionType>
@@ -2377,6 +2482,20 @@
 						<ArtDefineTag>ART_DEF_PROFESSION_ANGLO_SPEARMAN</ArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
+        <StyleUnit>
+          <UnitType>NONE</UnitType>
+          <ProfessionType>PROFESSION_INFANTRY_ARMED</ProfessionType>
+          <UnitMeshGroup>
+            <ArtDefineTag>ART_DEF_PROFESSION_ANGLO_SPEARMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </StyleUnit>
+        <StyleUnit>
+          <UnitType>NONE</UnitType>
+          <ProfessionType>PROFESSION_INFANTRY_WELLARMED</ProfessionType>
+          <UnitMeshGroup>
+            <ArtDefineTag>ART_DEF_PROFESSION_ANGLO_SPEARMAN</ArtDefineTag>
+          </UnitMeshGroup>
+        </StyleUnit>
 				<StyleUnit>
 					<UnitType>NONE</UnitType>
 					<ProfessionType>PROFESSION_INFANTRY2</ProfessionType>
@@ -2632,6 +2751,13 @@
 						<ArtDefineTag>ART_DEF_PROFESSION_BURGUNDY_WARRIOR</ArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
+        <StyleUnit>
+          <UnitType>NONE</UnitType>
+          <ProfessionType>PROFESSION_NATIVE_PEDLER</ProfessionType>
+          <UnitMeshGroup>
+            <ArtDefineTag>ART_DEF_PROFESSION_MONGOLIAN_PEDLER</ArtDefineTag>
+          </UnitMeshGroup>
+        </StyleUnit>
 				<StyleUnit>
 					<UnitType>NONE</UnitType>
 					<ProfessionType>PROFESSION_NATIVE_ARCHER</ProfessionType>
@@ -2679,6 +2805,13 @@
 						<ArtDefineTag>ART_DEF_PROFESSION_BURGUNDY_WARRIOR</ArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
+        <StyleUnit>
+          <UnitType>NONE</UnitType>
+          <ProfessionType>PROFESSION_NATIVE_PEDLER</ProfessionType>
+          <UnitMeshGroup>
+            <ArtDefineTag>ART_DEF_PROFESSION_MONGOLIAN_PEDLER</ArtDefineTag>
+          </UnitMeshGroup>
+        </StyleUnit>
 				<StyleUnit>
 					<UnitType>NONE</UnitType>
 					<ProfessionType>PROFESSION_NATIVE_ARCHER</ProfessionType>

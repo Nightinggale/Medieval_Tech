@@ -246,7 +246,7 @@
 			<iMissionaryModifier>0</iMissionaryModifier>
 			<iRebelCombatModifier>0</iRebelCombatModifier>
 			<iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
-			<iMercantileFactor>-50</iMercantileFactor>
+			<iMercantileFactor>-25</iMercantileFactor>
 			<iTreasureModifier>0</iTreasureModifier>
 			<iChiefGoldModifier>0</iChiefGoldModifier>
 			<iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -291,7 +291,56 @@
 			<UnitStrengthModifiers/>
 			<FreeBuildingClasses/>
 			<GoodyFactors/>
+      <BonusTechCategories>
+        <BonusTechCategory>
+          <CivicType>MEDIEVAL_TRADE_TECH</CivicType>
+          <iFactor>25</iFactor>
+        </BonusTechCategory>
+      </BonusTechCategories>
 		</TraitInfo>
+    <TraitInfo>
+      <Type>INVENTION_TRAIT_GUILDS</Type>
+      <Description>TXT_KEY_TRAIT_DISCIPLINED</Description>
+      <ShortDescription>TXT_KEY_TRAIT_DISCIPLINED_SHORT</ShortDescription>
+      <iLevelExperienceModifier>0</iLevelExperienceModifier>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iNativeAngerModifier>0</iNativeAngerModifier>
+      <iLearnTimeModifier>0</iLearnTimeModifier>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iMissionaryModifier>0</iMissionaryModifier>
+      <iRebelCombatModifier>0</iRebelCombatModifier>
+      <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
+      <iMercantileFactor>-25</iMercantileFactor>
+      <iTreasureModifier>0</iTreasureModifier>
+      <iChiefGoldModifier>0</iChiefGoldModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iCityDefense>0</iCityDefense>
+      <iLandPriceDiscount>0</iLandPriceDiscount>
+      <iRecruitPriceDiscount>0</iRecruitPriceDiscount>
+      <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
+      <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
+      <CityExtraYields>
+        <CityExtraYield>
+          <YieldType>YIELD_CROSSES</YieldType>
+          <iYield>2</iYield>
+        </CityExtraYield>
+      </CityExtraYields>
+      <ExtraYieldThresholds/>
+      <ProfessionEquipmentModifiers/>
+      <FreePromotions/>
+      <FreePromotionUnitCombats/>
+      <YieldModifiers/>
+      <TaxYieldModifiers/>
+      <BuildingYieldChanges/>
+      <UnitMoveChanges/>
+      <ProfessionMoveChanges/>
+      <BuildingProductionModifiers/>
+      <BuildingRequiredYieldModifiers/>
+      <UnitStrengthModifiers/>
+      <FreeBuildingClasses/>
+      <GoodyFactors/>
+    </TraitInfo>
 		<TraitInfo>
 			<Type>TRAIT_DISCIPLINED</Type>
 			<Description>TXT_KEY_TRAIT_DISCIPLINED</Description>
@@ -317,26 +366,26 @@
 			<CityExtraYields/>
 			<ExtraYieldThresholds/>
 			<ProfessionEquipmentModifiers/>
-			<FreePromotions>
-				<FreePromotion>
-					<PromotionType>PROMOTION_VETERAN1</PromotionType>
-					<bFreePromotion>1</bFreePromotion>
-				</FreePromotion>
-			</FreePromotions>
-			<FreePromotionUnitCombats>
-				<FreePromotionUnitCombat>
-					<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
-				</FreePromotionUnitCombat>
-				<FreePromotionUnitCombat>
-					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
-					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
-				</FreePromotionUnitCombat>
-				<FreePromotionUnitCombat>
-					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
-					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
-				</FreePromotionUnitCombat>
-			</FreePromotionUnitCombats>
+      <FreePromotions>
+        <FreePromotion>
+          <PromotionType>PROMOTION_VETERAN1</PromotionType>
+          <bFreePromotion>1</bFreePromotion>
+        </FreePromotion>
+      </FreePromotions>
+      <FreePromotionUnitCombats>
+        <FreePromotionUnitCombat>
+          <UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+          <bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+        </FreePromotionUnitCombat>
+        <FreePromotionUnitCombat>
+          <UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+          <bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+        </FreePromotionUnitCombat>
+        <FreePromotionUnitCombat>
+          <UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+          <bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+        </FreePromotionUnitCombat>
+      </FreePromotionUnitCombats>
 			<YieldModifiers/>
 			<TaxYieldModifiers/>
 			<BuildingYieldChanges/>
@@ -4403,6 +4452,10 @@
 					<ProfessionType>PROFESSION_HUNTSMAN</ProfessionType>
 					<iModifier>-50</iModifier>
 				</ProfessionEquipmentModifier>
+        <ProfessionEquipmentModifier>
+          <ProfessionType>PROFESSION_CALVARY</ProfessionType>
+          <iModifier>-50</iModifier>
+        </ProfessionEquipmentModifier>
 			</ProfessionEquipmentModifiers>
 			<FreePromotions/>
 			<FreePromotionUnitCombats/>
@@ -4737,7 +4790,7 @@
 					<BuildingYields>
 						<YieldChange>
 							<YieldType>YIELD_IDEAS</YieldType>
-							<iYieldChange>1</iYieldChange>
+							<iYieldChange>2</iYieldChange>
 						</YieldChange>
 					</BuildingYields>
 				</BuildingYieldChange>
@@ -4751,19 +4804,10 @@
 					</BuildingYields>
 				</BuildingYieldChange>
 				<BuildingYieldChange>
-					<BuildingClassType>BUILDINGCLASS_CHURCH</BuildingClassType>
-					<BuildingYields>
-						<YieldChange>
-							<YieldType>YIELD_CROSSES</YieldType>
-							<iYieldChange>1</iYieldChange>
-						</YieldChange>
-					</BuildingYields>
-				</BuildingYieldChange>
-				<BuildingYieldChange>
 					<BuildingClassType>BUILDINGCLASS_CATHEDRAL</BuildingClassType>
 					<BuildingYields>
 						<YieldChange>
-							<YieldType>YIELD_CROSSES</YieldType>
+							<YieldType>YIELD_CULTURE</YieldType>
 							<iYieldChange>3</iYieldChange>
 						</YieldChange>
 					</BuildingYields>
@@ -4817,7 +4861,7 @@
 		</TraitInfo>
 		<TraitInfo>
 			<Type>INVENTION_STERNPOST_RUDDER</Type>
-			<Description>Astrolobe</Description>
+			<Description>Sternpost Rudder</Description>
 			<ShortDescription>TXT_KEY_TRAIT_TOLERANT_SHORT</ShortDescription>
 			<iLevelExperienceModifier>0</iLevelExperienceModifier>
 			<iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -4863,7 +4907,7 @@
 			<GoodyFactors/>
 		</TraitInfo>
 		<TraitInfo>
-			<Type>INVENTION_ASTROLOBE</Type>
+			<Type>INVENTION_TRAIT_ASTROLOBE</Type>
 			<Description>Astrolobe</Description>
 			<ShortDescription>TXT_KEY_TRAIT_TOLERANT_SHORT</ShortDescription>
 			<iLevelExperienceModifier>0</iLevelExperienceModifier>
@@ -4911,7 +4955,7 @@
 			<GoodyFactors/>
 		</TraitInfo>
 		<TraitInfo>
-			<Type>INVENTION_GREAT_GALLEY</Type>
+			<Type>INVENTION_TRAIT_GREAT_GALLEY</Type>
 			<Description>Great Galley</Description>
 			<ShortDescription>TXT_KEY_TRAIT_TOLERANT_SHORT</ShortDescription>
 			<iLevelExperienceModifier>0</iLevelExperienceModifier>
@@ -4953,6 +4997,49 @@
 			<FreeBuildingClasses/>
 			<GoodyFactors/>
 		</TraitInfo>
+    <TraitInfo>
+      <Type>CIVIC_TRAIT_WAGE_LABOR</Type>
+      <Description>Wage Labor</Description>
+      <ShortDescription>TXT_KEY_TRAIT_TOLERANT_SHORT</ShortDescription>
+      <iLevelExperienceModifier>0</iLevelExperienceModifier>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iNativeAngerModifier>0</iNativeAngerModifier>
+      <iLearnTimeModifier>0</iLearnTimeModifier>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iMissionaryModifier>0</iMissionaryModifier>
+      <iRebelCombatModifier>0</iRebelCombatModifier>
+      <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
+      <iMercantileFactor>0</iMercantileFactor>
+      <iTreasureModifier>0</iTreasureModifier>
+      <iChiefGoldModifier>0</iChiefGoldModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iCityDefense>0</iCityDefense>
+      <iLandPriceDiscount>0</iLandPriceDiscount>
+      <iRecruitPriceDiscount>-20</iRecruitPriceDiscount>
+      <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
+      <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
+      <CityExtraYields>
+        <CityExtraYield>
+          <YieldType>YIELD_HAMMERS</YieldType>
+          <iYield>2</iYield>
+        </CityExtraYield>
+      </CityExtraYields>
+      <ExtraYieldThresholds/>
+      <ProfessionEquipmentModifiers/>
+      <FreePromotions/>
+      <FreePromotionUnitCombats/>
+      <YieldModifiers/>
+      <TaxYieldModifiers/>
+      <BuildingYieldChanges/>
+      <UnitMoveChanges/>
+      <ProfessionMoveChanges/>
+      <BuildingProductionModifiers/>
+      <BuildingRequiredYieldModifiers/>
+      <UnitStrengthModifiers/>
+      <FreeBuildingClasses/>
+      <GoodyFactors/>
+    </TraitInfo>
 		<TraitInfo>
 			<Type>INVENTION_COMPASS</Type>
 			<Description>Compass</Description>
@@ -5493,5 +5580,148 @@
 			</FreeBuildingClasses>
 			<GoodyFactors/>
 		</TraitInfo>
+    <TraitInfo>
+      <Type>TRAIT_CIVIC_MONARCHY</Type>
+      <Description>???</Description>
+      <ShortDescription>???</ShortDescription>
+      <iLevelExperienceModifier>0</iLevelExperienceModifier>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iNativeAngerModifier>0</iNativeAngerModifier>
+      <iLearnTimeModifier>0</iLearnTimeModifier>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iMissionaryModifier>0</iMissionaryModifier>
+      <iRebelCombatModifier>0</iRebelCombatModifier>
+      <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
+      <iMercantileFactor>0</iMercantileFactor>
+      <iTreasureModifier>0</iTreasureModifier>
+      <iChiefGoldModifier>0</iChiefGoldModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iCityDefense>0</iCityDefense>
+      <iLandPriceDiscount>0</iLandPriceDiscount>
+      <iRecruitPriceDiscount>0</iRecruitPriceDiscount>
+      <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
+      <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
+      <CityExtraYields/>
+      <ExtraYieldThresholds/>
+      <ProfessionEquipmentModifiers/>
+      <FreePromotions/>
+      <FreePromotionUnitCombats/>
+      <YieldModifiers/>
+      <TaxYieldModifiers/>
+      <BuildingYieldChanges>
+        <BuildingYieldChange>
+          <BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+          <BuildingYields>
+            <YieldChange>
+              <YieldType>YIELD_CULTURE</YieldType>
+              <iYieldChange>3</iYieldChange>
+            </YieldChange>
+          </BuildingYields>
+        </BuildingYieldChange>
+      </BuildingYieldChanges>
+      <UnitMoveChanges/>
+      <ProfessionMoveChanges/>
+      <BuildingProductionModifiers/>
+      <BuildingRequiredYieldModifiers/>
+      <UnitStrengthModifiers/>
+      <FreeBuildingClasses/>
+      <GoodyFactors/>
+    </TraitInfo>
+    <TraitInfo>
+      <Type>TRAIT_CIVIC_LOOTERS</Type>
+      <Description>Looter</Description>
+      <ShortDescription>Looter</ShortDescription>
+      <iLevelExperienceModifier>0</iLevelExperienceModifier>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iNativeAngerModifier>0</iNativeAngerModifier>
+      <iLearnTimeModifier>0</iLearnTimeModifier>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iMissionaryModifier>0</iMissionaryModifier>
+      <iRebelCombatModifier>0</iRebelCombatModifier>
+      <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
+      <iMercantileFactor>0</iMercantileFactor>
+      <iTreasureModifier>100</iTreasureModifier>
+      <iChiefGoldModifier>0</iChiefGoldModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iCityDefense>0</iCityDefense>
+      <iLandPriceDiscount>0</iLandPriceDiscount>
+      <iRecruitPriceDiscount>0</iRecruitPriceDiscount>
+      <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
+      <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
+      <CityExtraYields/>
+      <ExtraYieldThresholds/>
+      <ProfessionEquipmentModifiers/>
+      <FreePromotions/>
+      <FreePromotionUnitCombats/>
+      <YieldModifiers/>
+      <TaxYieldModifiers/>
+      <BuildingYieldChanges/>
+      <UnitMoveChanges/>
+      <ProfessionMoveChanges/>
+      <BuildingProductionModifiers/>
+      <BuildingRequiredYieldModifiers/>
+      <UnitStrengthModifiers/>
+      <FreeBuildingClasses/>
+      <GoodyFactors/>
+    </TraitInfo>
+    <TraitInfo>
+      <Type>TRAIT_CIVIC_CODEX</Type>
+      <Description>???</Description>
+      <ShortDescription>???</ShortDescription>
+      <iLevelExperienceModifier>0</iLevelExperienceModifier>
+      <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+      <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+      <iNativeAngerModifier>0</iNativeAngerModifier>
+      <iLearnTimeModifier>0</iLearnTimeModifier>
+      <iNativeCombatModifier>0</iNativeCombatModifier>
+      <iMissionaryModifier>0</iMissionaryModifier>
+      <iRebelCombatModifier>0</iRebelCombatModifier>
+      <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
+      <iMercantileFactor>0</iMercantileFactor>
+      <iTreasureModifier>0</iTreasureModifier>
+      <iChiefGoldModifier>0</iChiefGoldModifier>
+      <iNativeAttitudeChange>0</iNativeAttitudeChange>
+      <iCityDefense>0</iCityDefense>
+      <iLandPriceDiscount>0</iLandPriceDiscount>
+      <iRecruitPriceDiscount>0</iRecruitPriceDiscount>
+      <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
+      <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
+      <CityExtraYields/>
+      <ExtraYieldThresholds/>
+      <ProfessionEquipmentModifiers/>
+      <FreePromotions/>
+      <FreePromotionUnitCombats/>
+      <YieldModifiers/>
+      <TaxYieldModifiers/>
+      <BuildingYieldChanges>
+        <BuildingYieldChange>
+          <BuildingClassType>BUILDINGCLASS_MANOR_COURT</BuildingClassType>
+          <BuildingYields>
+            <YieldChange>
+              <YieldType>YIELD_GOLD</YieldType>
+              <iYieldChange>3</iYieldChange>
+            </YieldChange>
+          </BuildingYields>
+        </BuildingYieldChange>
+        <BuildingYieldChange>
+          <BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
+          <BuildingYields>
+            <YieldChange>
+              <YieldType>YIELD_GOLD</YieldType>
+              <iYieldChange>6</iYieldChange>
+            </YieldChange>
+          </BuildingYields>
+        </BuildingYieldChange>
+      </BuildingYieldChanges>
+      <UnitMoveChanges/>
+      <ProfessionMoveChanges/>
+      <BuildingProductionModifiers/>
+      <BuildingRequiredYieldModifiers/>
+      <UnitStrengthModifiers/>
+      <FreeBuildingClasses/>
+      <GoodyFactors/>
+    </TraitInfo>
 	</TraitInfos>
 </Civ4TraitInfos>

@@ -156,6 +156,9 @@ void CvDLLWidgetData::parseHelp(CvWStringBuffer &szBuffer, CvWidgetDataStruct &w
     case WIDGET_MARKET:
 		parseSpecialBuildingHelp(widgetDataStruct, szBuffer);
 		break;
+	case WIDGET_GOLD_INCOME:
+		parseGoldIncomeHelp(widgetDataStruct, szBuffer);
+		break;
     ///TKe
      //TK Tax
 	case WIDGET_TAX_ADVISOR:
@@ -313,6 +316,15 @@ void CvDLLWidgetData::parseHelp(CvWStringBuffer &szBuffer, CvWidgetDataStruct &w
 		break;
 
 	case WIDGET_PEDIA_JUMP_TO_CIVIC:
+		parseCivicHelp(widgetDataStruct, szBuffer);
+		break;
+	case WIDGET_PEDIA_JUMP_TO_TECH:
+		parseCivicHelp(widgetDataStruct, szBuffer);
+		break;
+	case WIDGET_PEDIA_JUMP_TO_TRADE_TECH:
+		parseCivicHelp(widgetDataStruct, szBuffer);
+		break;
+	case WIDGET_PEDIA_JUMP_TO_CENSURES:
 		parseCivicHelp(widgetDataStruct, szBuffer);
 		break;
     ///TKs Invention Core Mod v 1.0
@@ -590,6 +602,15 @@ bool CvDLLWidgetData::executeAction( CvWidgetDataStruct &widgetDataStruct )
 		doPediaCivicJump(widgetDataStruct);
 		break;
 	///TKs Invention Core Mod v 1.0
+	case WIDGET_PEDIA_JUMP_TO_TECH:
+		doPediaTechJump(widgetDataStruct);
+		break;
+	case WIDGET_PEDIA_JUMP_TO_TRADE_TECH:
+		doPediaTradeTechJump(widgetDataStruct);
+		break;
+	case WIDGET_PEDIA_JUMP_TO_CENSURES:
+		doPediaCensureJump(widgetDataStruct);
+		break;
     case WIDGET_PEDIA_JUMP_TO_TECHNOLOGY:
 		doInventorsHouse(widgetDataStruct);
 		break;
@@ -652,6 +673,8 @@ bool CvDLLWidgetData::executeAction( CvWidgetDataStruct &widgetDataStruct )
 	case WIDGET_CLOSE_SCREEN:
 	case WIDGET_SCORE_BREAKDOWN:
 	case WIDGET_ASSIGN_CITIZEN_TO_PLOT:
+	///Tks Med
+	case WIDGET_GOLD_INCOME:
 		//	Nothing on clicked
 		break;
 	case WIDGET_CREATE_TRADE_ROUTE:
@@ -832,6 +855,19 @@ bool CvDLLWidgetData::executeDoubleClick(const CvWidgetDataStruct& widgetDataStr
 	case WIDGET_DOCK:
 		doDoubleClickDock(widgetDataStruct);
 		break;
+	///tks
+	case WIDGET_MOVE_CARGO_TO_TRANSPORT:
+		{
+			CvCity* pHeadSelectedCity = gDLL->getInterfaceIFace()->getHeadSelectedCity();
+			if (pHeadSelectedCity != NULL && pHeadSelectedCity->getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
+			{
+				CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CUSTOM_HOUSE, gDLL->getInterfaceIFace()->getHeadSelectedCity()->getID(), widgetDataStruct.m_iData1);
+				gDLL->getInterfaceIFace()->addPopup(pInfo, NO_PLAYER, true);
+			}
+		}
+		//doCustomHouse(widgetDataStruct);
+		break;
+		//tke
 
 	default:
 		bHandled = false;
@@ -855,6 +891,9 @@ bool CvDLLWidgetData::isLink(const CvWidgetDataStruct &widgetDataStruct) const
 	case WIDGET_PEDIA_JUMP_TO_CIVIC:
 	///TKs Invention Core Mod v 1.0
 	case WIDGET_PEDIA_JUMP_TO_TECHNOLOGY:
+	case WIDGET_PEDIA_JUMP_TO_TECH:
+	case WIDGET_PEDIA_JUMP_TO_TRADE_TECH:
+	case WIDGET_PEDIA_JUMP_TO_CENSURES:
 	///TKe
 	case WIDGET_PEDIA_JUMP_TO_CIV:
 	case WIDGET_PEDIA_JUMP_TO_LEADER:
@@ -1303,10 +1342,41 @@ void CvDLLWidgetData::doPediaImprovementJump(CvWidgetDataStruct &widgetDataStruc
 
 void CvDLLWidgetData::doPediaCivicJump(CvWidgetDataStruct &widgetDataStruct)
 {
+	//Tks Cheat
+	if ((gDLL->getChtLvl() > 0) && gDLL->shiftKey())
+	{
+		if (GET_PLAYER(GC.getGameINLINE().getActivePlayer()).isAnarchy())
+		{
+			GET_PLAYER(GC.getGameINLINE().getActivePlayer()).changeAnarchyTurns(GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getAnarchyTurns() * -1);
+			return;
+		}		
+	}
+	//Tke
 	CyArgsList argsList;
 	argsList.add(widgetDataStruct.m_iData1);
 	gDLL->getPythonIFace()->callFunction(PYScreensModule, "pediaJumpToCivic", argsList.makeFunctionArgs());
 }
+
+///TKs Civics
+void CvDLLWidgetData::doPediaTechJump(CvWidgetDataStruct &widgetDataStruct)
+{
+	CyArgsList argsList;
+	argsList.add(widgetDataStruct.m_iData1);
+	gDLL->getPythonIFace()->callFunction(PYScreensModule, "pediaJumpToTech", argsList.makeFunctionArgs());
+}
+void CvDLLWidgetData::doPediaTradeTechJump(CvWidgetDataStruct &widgetDataStruct)
+{
+	CyArgsList argsList;
+	argsList.add(widgetDataStruct.m_iData1);
+	gDLL->getPythonIFace()->callFunction(PYScreensModule, "pediaJumpToTradeTech", argsList.makeFunctionArgs());
+}
+void CvDLLWidgetData::doPediaCensureJump(CvWidgetDataStruct &widgetDataStruct)
+{
+	CyArgsList argsList;
+	argsList.add(widgetDataStruct.m_iData1);
+	gDLL->getPythonIFace()->callFunction(PYScreensModule, "pediaJumpToCencure", argsList.makeFunctionArgs());
+}
+//Tke
 
 void CvDLLWidgetData::doPediaCivilizationJump(CvWidgetDataStruct &widgetDataStruct)
 {
@@ -2254,7 +2324,7 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 				{
 					pSelectedUnit = ::getUnit(pSelectedUnitNode->m_data);
 
-					iNowWorkRate += pSelectedUnit->workRate(false);
+					iNowWorkRate += pSelectedUnit->workRate(GET_PLAYER(pSelectedUnit->getOwnerINLINE()).getWorkersBuildAfterMove() > 0);//Tks Civics
 					iThenWorkRate += pSelectedUnit->workRate(true);
 
 					pSelectedUnitNode = gDLL->getInterfaceIFace()->nextSelectionListNode(pSelectedUnitNode);
@@ -2661,11 +2731,28 @@ void CvDLLWidgetData::parseContactCivHelp(CvWidgetDataStruct &widgetDataStruct, 
 		szBuffer.append(CvWString::format(L"\n%d%c %d%c", player.getGold(), gDLL->getSymbolID(GOLD_CHAR), GET_TEAM(player.getTeam()).getRebelPercent(), gDLL->getSymbolID(POWER_CHAR)));
 		szBuffer.append(CvWString::format(L"\nCities = %d, Units = %d, Pop = %d, AIPop = %d", player.getNumCities(), player.getNumUnits(), player.getTotalPopulation(), player.AI_getPopulation()));
 		szBuffer.append(CvWString::format(L"\nIncome = %d, Hurry Spending = %d", player.AI_getTotalIncome(), player.AI_getHurrySpending()));
+		///CHeatMod COdes
+	/*if (gDLL->getChtLvl() > 0 && gDLL->shiftKey())
+	{
+		for (int iStrat = 0; iStrat < NUM_STRATEGY_TYPES; iStrat++)
+		{
+			if (GET_PLAYER((PlayerTypes)widgetDataStruct.m_iData1).AI_getStrategyDuration((StrategyTypes)iStrat) > 0)
+			{
+				CvWString szTempString;
+				getPlayerAIStrategyString(szTempString, (StrategyTypes)iStrat);
+				szBuffer.append(NEWLINE);
+				szBuffer.append(CvWString::format(SETCOLR L" %s: %d " ENDCOLR, GET_PLAYER((PlayerTypes)widgetDataStruct.m_iData1).getPlayerTextColorR(), GET_PLAYER((PlayerTypes)widgetDataStruct.m_iData1).getPlayerTextColorG(), GET_PLAYER((PlayerTypes)widgetDataStruct.m_iData1).getPlayerTextColorB(), GET_PLAYER((PlayerTypes)widgetDataStruct.m_iData1).getPlayerTextColorA(), szTempString.GetCString(), GET_PLAYER((PlayerTypes)widgetDataStruct.m_iData1).AI_getStrategyDuration((StrategyTypes)iStrat)));
+			}
+		}
+
+	}*/
 		for (int i = 0; i < NUM_STRATEGY_TYPES; ++i)
 		{
 			if (player.AI_isStrategy((StrategyTypes) i))
 			{
-				szBuffer.append(CvWString::format(L"\nStrategy %d, Duration %d", i, player.AI_getStrategyDuration((StrategyTypes) i)));
+				CvWString szTempString;
+				getPlayerAIStrategyString(szTempString, (StrategyTypes)i);
+				szBuffer.append(CvWString::format(L"\n%s, Duration %d", szTempString.GetCString(), player.AI_getStrategyDuration((StrategyTypes) i)));
 			}
 		}
 
@@ -2986,6 +3073,52 @@ void CvDLLWidgetData::parsePopulationHelp(CvWidgetDataStruct &widgetDataStruct, 
 		//szBuffer.assign(gDLL->getText("TXT_KEY_MISC_FOOD_THRESHOLD", pHeadSelectedCity->getFood(), pHeadSelectedCity->growthThreshold()));
 #ifdef USE_NOBLE_CLASS
 		szBuffer.assign(gDLL->getText("TXT_KEY_MISC_LUXURY_FOOD_THRESHOLD", pHeadSelectedCity->getFood(), pHeadSelectedCity->growthThreshold(), pHeadSelectedCity->getYieldStored(YIELD_GRAIN), GC.getXMLval(XML_BASE_CITY_LUXURY_FOOD_THRESHOLD_MOD), GC.getYieldInfo(YIELD_GRAIN).getChar()));
+		UnitTypes eUnit = GET_PLAYER(pHeadSelectedCity->getOwnerINLINE()).getDefaultPopUnit();
+		if (eUnit != NO_UNIT)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append((gDLL->getText("TXT_KEY_DEFAULT_POP_UNIT", GC.getUnitInfo(eUnit).getDescription())));
+		}
+		UnitTypes eLuxuryUnit = GET_PLAYER(pHeadSelectedCity->getOwnerINLINE()).getLuxuryPopUnit();
+		if (eLuxuryUnit != NO_UNIT)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append((gDLL->getText("TXT_KEY_DEFAULT_LUXURY_POP_UNIT", GC.getUnitInfo(eLuxuryUnit).getDescription())));
+		}
+		else
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append((gDLL->getText("TXT_KEY_NO_DEFAULT_LUXURY_POP_UNIT")));
+		}
+
+		///TKs Civics Screen
+			for (int iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
+			{
+				if (GET_PLAYER(pHeadSelectedCity->getOwnerINLINE()).getCivic((CivicOptionTypes)iI) != NO_CIVIC)
+				{
+					CvCivicInfo& kCivicInfo =  GC.getCivicInfo(GET_PLAYER(pHeadSelectedCity->getOwnerINLINE()).getCivic((CivicOptionTypes)iI));
+
+					if (kCivicInfo.getNumRandomGrowthUnits() > 0)
+					{
+						for (int iI = 0; iI < kCivicInfo.getNumRandomGrowthUnits(); iI++)
+						{
+							//int iLoopUnitClass = kCivicInfo.getRandomGrowthUnits(iI);
+							UnitTypes eRandomUnit = NO_UNIT;
+							eRandomUnit = (UnitTypes)GC.getCivilizationInfo(pHeadSelectedCity->getCivilizationType()).getCivilizationUnits((UnitTypes)kCivicInfo.getRandomGrowthUnits(iI));
+							if (NO_UNIT != eRandomUnit)
+							{
+								int iRandomPercent = kCivicInfo.getRandomGrowthUnitsPercent(iI);
+								szBuffer.append(NEWLINE);
+								szBuffer.append((gDLL->getText("TXT_KEY_RANDOM_POP_UNIT", GC.getUnitInfo(eRandomUnit).getDescription(), iRandomPercent)));
+							}
+						}
+					}
+		
+				}
+			}
+			
+
+
 #else
 		szBuffer.assign(gDLL->getText("TXT_KEY_MISC_FOOD_THRESHOLD", pHeadSelectedCity->getFood(), pHeadSelectedCity->growthThreshold()));
 #endif
@@ -3442,6 +3575,8 @@ void CvDLLWidgetData::parseDescriptionHelp(CvWidgetDataStruct &widgetDataStruct,
 		break;
 		///TKs Invention Core Mod v 1.0
     case CIVILOPEDIA_PAGE_TECHNOLOGY:
+	case CIVILOPEDIA_PAGE_TRADE_TECHS:
+	case CIVILOPEDIA_PAGE_CENSURES:
 		{
 			CivicTypes eCivic = (CivicTypes)widgetDataStruct.m_iData2;
 			if (NO_CIVIC != eCivic)
@@ -4129,6 +4264,43 @@ void CvDLLWidgetData::doMarket(const CvWidgetDataStruct& widgetDataStruct)
         //gDLL->getInterfaceIFace()->setDirty(CityScreen_DIRTY_BIT, true);
 		CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_MARKET, gDLL->getInterfaceIFace()->getHeadSelectedCity()->getID());
 		gDLL->getInterfaceIFace()->addPopup(pInfo, NO_PLAYER, true);
+	}
+}
+void CvDLLWidgetData::parseGoldIncomeHelp(CvWidgetDataStruct& widgetDataStruct, CvWStringBuffer& szBuffer)
+{
+	//PlayerTypes ePlayer = GC.getGameINLINE().getActivePlayer();
+	CvPlayer& kPlayer = GET_PLAYER(GC.getGameINLINE().getActivePlayer());
+	szBuffer.append(gDLL->getText("TXT_KEY_PLAYER_INCOME_GOLD", kPlayer.getGold()));
+	int iIncome = 0;
+	if (kPlayer.getGoldIncome() > 0)
+	{
+		iIncome = kPlayer.getGoldIncome() * kPlayer.getGold() / 100;
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_PLAYER_TURN_GOLD", kPlayer.getGoldIncome(), iIncome));
+	}
+	int iUpkeep = -kPlayer.getUpkeepCount(YIELD_GOLD);
+	if (iUpkeep != 0)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_PLAYER_UPKEEP_GOLD", iUpkeep));
+
+		int iTotal = iUpkeep + iIncome + kPlayer.getGold();
+		//szBuffer.append(NEWLINE);
+		
+		if (iTotal == 0)
+		{
+			//szBuffer.append(gDLL->getText("TXT_KEY_PLAYER_TOTAL_GOLD", iTotal));
+		}
+		else if (iTotal > 0)
+		{
+			szBuffer.append(L"\n====================\n");
+			szBuffer.append(gDLL->getText("TXT_KEY_PLAYER_TOTAL_GOLD", iTotal));
+		}
+		else
+		{
+			szBuffer.append(L"\n====================\n");
+			szBuffer.append(gDLL->getText("TXT_KEY_PLAYER_DEFICIT_GOLD", iUpkeep + iIncome));
+		}
 	}
 }
 void CvDLLWidgetData::parseInventorsHouseHelp(CvWidgetDataStruct& widgetDataStruct, CvWStringBuffer& szBuffer)

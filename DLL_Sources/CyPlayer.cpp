@@ -279,6 +279,46 @@ bool CyPlayer::isCivic(int /*CivicTypes*/ eCivic)
 }
 
 ///TKs Med
+//Tks Civics
+void CyPlayer::changeCivics(boost::python::list& /*CivicTypes**/ paeNewCivics, bool bForce)
+{
+	int* pCivics = NULL;
+	gDLL->getPythonIFace()->putSeqInArray(paeNewCivics.ptr() /*src*/, &pCivics /*dst*/);
+	if (m_pPlayer)
+		m_pPlayer->changeCivics((CivicTypes*)pCivics, bForce);
+	delete [] pCivics;
+}
+bool CyPlayer::canChangeCivics(int /*CivicTypes**/ paeNewCivics)
+{
+	return m_pPlayer ? m_pPlayer->canChangeCivics((CivicTypes*)paeNewCivics) : false;
+}
+int CyPlayer::getCivicAnarchyLength(boost::python::list& /*CivicTypes**/ paeNewCivics)
+{
+	int* pCivics = NULL;
+	gDLL->getPythonIFace()->putSeqInArray(paeNewCivics.ptr() /*src*/, &pCivics /*dst*/);
+
+	int iRet = m_pPlayer ? m_pPlayer->getCivicAnarchyLength((CivicTypes*)pCivics) : -1;
+	delete [] pCivics;
+	return iRet;
+}
+int CyPlayer::getCivicInitalCosts(boost::python::list& /*CivicTypes**/ paeNewCivics)
+{
+	int* pCivics = NULL;
+	gDLL->getPythonIFace()->putSeqInArray(paeNewCivics.ptr() /*src*/, &pCivics /*dst*/);
+
+	int iRet = m_pPlayer ? m_pPlayer->getCivicInitalCosts((CivicTypes*)pCivics) : -1;
+	delete [] pCivics;
+	return iRet;
+}
+int CyPlayer::getCivicUpkeep(boost::python::list& /*CivicTypes*/ paiCivics, bool bIgnoreAnarchy)
+{
+	int* pCivics = NULL;
+	gDLL->getPythonIFace()->putSeqInArray(paiCivics.ptr() /*src*/, &pCivics /*dst*/);
+	int iRet = m_pPlayer ? m_pPlayer->getCivicUpkeep((CivicTypes*)pCivics, bIgnoreAnarchy) : -1;
+	delete [] pCivics;
+	return iRet;
+}
+//tke Civics
 int CyPlayer::getMultiYieldRate(YieldTypes eIndex)
 {
 	return m_pPlayer ? m_pPlayer->getMultiYieldRate(eIndex) : -1;
@@ -306,6 +346,16 @@ int CyPlayer::getVictoryYieldCount(int /*YieldTypes*/ eYield)
 int CyPlayer::getNumDocksNextUnits() const
 {
    return m_pPlayer ? m_pPlayer->getNumDocksNextUnits() : -1;
+}
+
+int CyPlayer::getExpences() const
+{
+   return m_pPlayer ? m_pPlayer->getExpences() : 0;
+}
+
+int CyPlayer::getGoldIncome() const
+{
+   return m_pPlayer ? m_pPlayer->getGoldIncome() : 0;
 }
 
 int CyPlayer::prolificInventorThreshold() const
@@ -390,11 +440,16 @@ bool CyPlayer::getHasTradeRouteType(int /*EuropeTypes*/ eTradeRoute)
 {
 	return m_pPlayer ? m_pPlayer->getHasTradeRouteType((EuropeTypes)eTradeRoute) : false;
 }
-///TKe
-bool CyPlayer::canDoCivics(int /*CivicTypes*/ eCivic)
+int CyPlayer::getAnarchyTurns()
 {
-	return m_pPlayer ? m_pPlayer->canDoCivics((CivicTypes)eCivic) : false;
+	return m_pPlayer ? m_pPlayer->getAnarchyTurns() : 0;
 }
+
+bool CyPlayer::canDoCivics(int /*CivicTypes*/ eCivic, bool bProhitbitCheck)
+{
+	return m_pPlayer ? m_pPlayer->canDoCivics((CivicTypes)eCivic, bProhitbitCheck) : false;
+}
+///TKe
 int CyPlayer::greatGeneralThreshold()
 {
 	return m_pPlayer ? m_pPlayer->greatGeneralThreshold() : -1;

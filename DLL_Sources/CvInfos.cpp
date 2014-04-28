@@ -965,11 +965,14 @@ m_iCommandType(NO_COMMAND),
 m_iPillageChange(0),
 m_iUpgradeDiscount(0),
 m_iExperiencePercent(0),
-///TK Med FS
+///TK Med
+m_iPlotWorkedBonus(0),
+m_iBuildingWorkedBonus(0),
 m_iFirstStrikesChange(0),
 m_iEscortUnitClass(NO_UNITCLASS),
 m_iChanceFirstStrikesChange(0),
 m_bImmuneToFirstStrikes(false),
+m_bCivilian(false),
 bNoBadGoodies(false),
 bNonePromotion(false),
 ///TKe
@@ -1062,7 +1065,19 @@ int CvPromotionInfo::getBombardRateChange() const
 {
 	return m_iBombardRateChange;
 }
-///TK FS
+///TK
+int CvPromotionInfo::getPlotWorkedBonus() const
+{
+	return m_iPlotWorkedBonus;
+}
+int CvPromotionInfo::getBuildingWorkedBonus() const
+{
+	return m_iBuildingWorkedBonus;
+}
+bool CvPromotionInfo::isCivilian() const
+{
+	return m_bCivilian;
+}
 int CvPromotionInfo::getFirstStrikesChange() const
 {
 	return m_iFirstStrikesChange;
@@ -1408,10 +1423,13 @@ bool CvPromotionInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bLeader, "bLeader");
 	pXML->GetChildXmlValByName(&m_bBlitz, "bBlitz");
 	///TK FS
+	pXML->GetChildXmlValByName(&m_iPlotWorkedBonus, "iPlotWorkedBonus");
+	pXML->GetChildXmlValByName(&m_iBuildingWorkedBonus, "iBuildingWorkedBonus");
 	pXML->GetChildXmlValByName(&m_iFirstStrikesChange, "iFirstStrikesChange");
 	pXML->GetChildXmlValByName(szTextVal, "EscortUnitClass");
 	m_iEscortUnitClass = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(&m_bImmuneToFirstStrikes, "bImmuneToFirstStrikes");
+	pXML->GetChildXmlValByName(&m_bCivilian, "bCivilian");
 	pXML->GetChildXmlValByName(&bNonePromotion, "bNonePromotion");
 	pXML->GetChildXmlValByName(&bNoBadGoodies, "bNoBadGoodies");
 	///TKe
@@ -2265,10 +2283,12 @@ m_ibNativesInvalid(false),
 m_ibEuropeInvalid(false),
 m_ibColonialInvalid(false),
 m_iLostAtSeaPercent(0),
+m_iFoodConsumed(2),
 ///TKe
 // < JAnimals Mod Start >
 m_iAnimalPatrolWeight(0),
 m_iAnimalAttackWeight(0),
+m_iMaxUnitCountPercent(0),
 // < JAnimals Mod End >
 m_bNoBadGoodies(false),
 m_bOnlyDefensive(false),
@@ -2591,6 +2611,10 @@ int CvUnitInfo::getAnimalAttackWeight() const
 {
 	return m_iAnimalAttackWeight;
 }
+int CvUnitInfo::getMaxUnitCountPercent() const
+{
+	return m_iMaxUnitCountPercent;
+}
 // < JAnimals Mod End >
 bool CvUnitInfo::isNoBadGoodies() const
 {
@@ -2621,6 +2645,10 @@ bool CvUnitInfo::isColonialInvalid() const
 int CvUnitInfo::getLostAtSeaPercent() const
 {
 	return m_iLostAtSeaPercent;
+}
+int CvUnitInfo::getFoodConsumed() const
+{
+	return m_iFoodConsumed;
 }
 ///Tke
 
@@ -3437,6 +3465,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	// < JAnimals Mod Start >
 	pXML->GetChildXmlValByName(&m_iAnimalPatrolWeight, "iAnimalPatrolWeight", -1);
 	pXML->GetChildXmlValByName(&m_iAnimalAttackWeight, "iAnimalAttackWeight", -1);
+	pXML->GetChildXmlValByName(&m_iMaxUnitCountPercent, "iMaxUnitCountPercent", -1);
 	// < JAnimals Mod End >
 	pXML->GetChildXmlValByName(&m_bNoBadGoodies, "bNoBadGoodies");
 	pXML->GetChildXmlValByName(&m_bOnlyDefensive, "bOnlyDefensive");
@@ -3459,6 +3488,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_ibEuropeInvalid, "bEuropeInvalid");
 	pXML->GetChildXmlValByName(&m_ibColonialInvalid, "bColonialInvalid");
 	pXML->GetChildXmlValByName(&m_iLostAtSeaPercent, "LostAtSeaPercent");
+	pXML->GetChildXmlValByName(&m_iFoodConsumed, "iFoodConsumed", GC.getFOOD_CONSUMPTION_PER_POPULATION());
 	///Tks Med
 	pXML->GetChildXmlValByName(szTextVal, "ConvertsToYield");
 	m_iConvertsToYield = pXML->FindInInfoClass(szTextVal);
@@ -3827,11 +3857,13 @@ m_aiRequiredYields(NULL),
 
 m_iCostToResearch(0),
 m_iAllowsTrait(NO_TRAIT),
+m_iAllowsCivic(NO_CIVIC),
 m_iAllowsTradeScreen(NO_EUROPE),
 m_iConvertsResearchYield(NO_YIELD),
 m_iDisallowsTech(NO_CIVIC),
 m_iFreeUnitFirstToResearch(NO_UNITCLASS),
 m_iCheaperPopulationGrowth(0),
+m_iGlobalFoodCostMod(0),
 m_iIncreasedEnemyHealRate(0),
 m_iCenterPlotFoodBonus(0),
 m_iFreeHurriedImmigrants(0),
@@ -3844,10 +3876,23 @@ m_iModdersCode1(NO_MOD_CODE),
 m_iKingTreasureTransportMod(0),
 m_iFoundCityType(-1),
 m_iIncreaseCityPopulation(0),
+///TKs Civics
+m_iDiplomacyAttitudeChange(0),
+m_iMissionariesNotCosumed(0),
+m_iTradingPostNotCosumed(0),
+m_iAnarchyLength(0),
+m_iInitialCost(0),
+m_iHuntingYieldPercent(0),
+m_iPilgramYieldPercent(0),
+//TKe Civics
 
 m_aiConvertsUnitsFrom(NO_UNITCLASS),
 m_aiConvertsUnitsTo(NO_UNITCLASS),
 m_iNewDefaultUnitClass(NO_UNITCLASS),
+///Tks Civics
+m_iNewLuxuryUnitClass(NO_UNITCLASS),
+///Tke Civics
+m_iNewConvertUnitClass(NO_UNITCLASS),
 
 m_bFreeUnitsAreNonePopulation(false),
 m_bFreeUnitsNotAllCities(false),
@@ -3856,11 +3901,15 @@ m_bAllowsMapTrade(false),
 m_bGoodyTech(false),
 m_bNoArrowinTechScreen(false),
 m_bisTradeable(false),
-
+m_bWorkersBuildAfterMove(false),
+m_bBuildingTreasuryBonus(false),
 m_iRouteMovementMod(NULL),
 m_aiAllowsRoute(NULL),
 m_aiAllowsBuildingTypes(NULL),
 m_aiAllowsYields(NULL),
+//Tks Civics
+m_aiUpkeepYields(NULL),
+//tke
 m_aiAllowsPromotions(NULL),
 m_aiAllowsBonuses(NULL),
 m_aiAllowsUnitClasses(NULL),
@@ -3869,8 +3918,10 @@ m_aiAllowsBuildTypes(NULL),
 m_aiFasterBuildTypes(NULL),
 m_aiFasterBuildFeatureTypes(NULL),
 m_aiAllowsBuildTypesTerrain(NULL),
+m_aiFartherPointChanges(NULL),
 m_aiIndustrializationVictory(NULL),
 m_aiMaxYieldModifiers(NULL),
+m_aiGarrisonUnitModifiers(NULL),
 ///TKe
 m_iDomesticGreatGeneralRateModifier(0),
 m_iFreeExperience(0),
@@ -3904,6 +3955,9 @@ CvCivicInfo::~CvCivicInfo()
     SAFE_DELETE_ARRAY(m_aiRequiredFatherPoints);
     SAFE_DELETE_ARRAY(m_aiRequiredYields);
     SAFE_DELETE_ARRAY(m_aiAllowsYields);
+	//TKs Civics
+	SAFE_DELETE_ARRAY(m_aiUpkeepYields);
+	///tke
     SAFE_DELETE_ARRAY(m_iRouteMovementMod);
     SAFE_DELETE_ARRAY(m_aiAllowsRoute);
     SAFE_DELETE_ARRAY(m_aiAllowsBuildingTypes);
@@ -3915,9 +3969,11 @@ CvCivicInfo::~CvCivicInfo()
     SAFE_DELETE_ARRAY(m_aiFasterBuildTypes);
     SAFE_DELETE_ARRAY(m_aiFasterBuildFeatureTypes);
     SAFE_DELETE_ARRAY(m_aiAllowsBuildTypesTerrain);
+	SAFE_DELETE_ARRAY(m_aiFartherPointChanges);
     SAFE_DELETE_ARRAY(m_aiIndustrializationVictory);
     SAFE_DELETE_ARRAY(m_aiMaxYieldModifiers);
-    ///TKe
+	SAFE_DELETE_ARRAY(m_aiGarrisonUnitModifiers);
+	///TKe
 	SAFE_DELETE_ARRAY(m_aiYieldModifier);
 	SAFE_DELETE_ARRAY(m_aiCapitalYieldModifier);
 	SAFE_DELETE_ARRAY(m_aiProfessionCombatChange);
@@ -4014,24 +4070,109 @@ int CvCivicInfo::getY_Location() const
 {
 	return m_iY_Location;
 }
-
- ///tknre
 int CvCivicInfo::getAllowsYields(int i) const
 {
+	if (i == IS_ARRAY_ALLOCATED)
+	{
+		return m_aiAllowsYields ? 1 : 0;
+	}
 	return m_aiAllowsYields ? m_aiAllowsYields[i] : 0;
 }
 
 int CvCivicInfo::getAllowsBuildingTypes(int i) const
 {
+	if (i == IS_ARRAY_ALLOCATED)
+	{
+		return m_aiAllowsBuildingTypes ? 1 : 0;
+	}
 	return m_aiAllowsBuildingTypes ? m_aiAllowsBuildingTypes[i] : 0;
 }
 
-
 int CvCivicInfo::getAllowsUnitClasses(int i) const
 {
+	if (i == IS_ARRAY_ALLOCATED)
+	{
+		return m_aiAllowsUnitClasses ? 1 : 0;
+	}
 	return m_aiAllowsUnitClasses ? m_aiAllowsUnitClasses[i] : 0;
 }
+///tke
+//Tks Civics
+int CvCivicInfo::getProhibitsCivicsSize() const
+{
+	return m_aProhibitsCivics.size();
+}
+CivicTypes CvCivicInfo::getProhibitsCivics(int index) const
+{
+	return m_aProhibitsCivics[index];
+}
+int CvCivicInfo::getNumConnectedMissonYields() const
+{
+	return m_aConnectedMissonYields.size();
+}
+int CvCivicInfo::getConnectedMissonYields(int index) const
+{
+	FAssert(index < (int) m_aConnectedMissonYields.size());
+	FAssert(index > -1);
+	return m_aConnectedMissonYields[index].first;
+}
+int CvCivicInfo::getConnectedMissonYieldsBonus(int index) const
+{
+	FAssert(index < (int) m_aConnectedMissonYields.size());
+	FAssert(index > -1);
+	return m_aConnectedMissonYields[index].second;
+}
 
+int CvCivicInfo::getNumConnectedTradeYields() const
+{
+	return m_aConnectedTradeYields.size();
+}
+int CvCivicInfo::getConnectedTradeYields(int index) const
+{
+	FAssert(index < (int) m_aConnectedTradeYields.size());
+	FAssert(index > -1);
+	return m_aConnectedTradeYields[index].first;
+}
+int CvCivicInfo::getConnectedTradeYieldsBonus(int index) const
+{
+	FAssert(index < (int) m_aConnectedTradeYields.size());
+	FAssert(index > -1);
+	return m_aConnectedTradeYields[index].second;
+}
+
+int CvCivicInfo::getNumRandomGrowthUnits() const
+{
+	return m_aRandomGrowthUnits.size();
+}
+int CvCivicInfo::getRandomGrowthUnits(int index) const
+{
+	FAssert(index < (int) m_aRandomGrowthUnits.size());
+	FAssert(index > -1);
+	return m_aRandomGrowthUnits[index].first;
+}
+int CvCivicInfo::getRandomGrowthUnitsPercent(int index) const
+{
+	FAssert(index < (int) m_aRandomGrowthUnits.size());
+	FAssert(index > -1);
+	return m_aRandomGrowthUnits[index].second;
+}
+
+int CvCivicInfo::getNumUnitClassFoodCosts() const
+{
+	return m_aUnitClassFoodCosts.size();
+}
+int CvCivicInfo::getFoodCostsUnits(int index) const
+{
+	FAssert(index < (int) m_aUnitClassFoodCosts.size());
+	FAssert(index > -1);
+	return m_aUnitClassFoodCosts[index].first;
+}
+int CvCivicInfo::getUnitClassFoodCosts(int index) const
+{
+	FAssert(index < (int) m_aUnitClassFoodCosts.size());
+	FAssert(index > -1);
+	return m_aUnitClassFoodCosts[index].second;
+}
 
 int CvCivicInfo::getAllowsBuildTypes(int i) const
 {
@@ -4052,6 +4193,10 @@ int CvCivicInfo::getAllowsBuildTypesTerrain(int i) const
 {
 	return m_aiAllowsBuildTypesTerrain ? m_aiAllowsBuildTypesTerrain[i] : 0;
 }
+int CvCivicInfo::getFartherPointChanges(int i) const
+{
+	return m_aiFartherPointChanges ? m_aiFartherPointChanges[i] : 0;
+}
 
 int CvCivicInfo::getIndustrializationVictory(int i) const
 {
@@ -4064,17 +4209,44 @@ int CvCivicInfo::getMaxYieldModifiers(int i) const
 	FAssertMsg(i > -1, "Index out of bounds");
 	return m_aiMaxYieldModifiers ? m_aiMaxYieldModifiers[i] : -1;
 }
-
-
+int CvCivicInfo::getGarrisonUnitModifiers(int i) const
+{
+	FAssertMsg(i < NUM_YIELD_TYPES, "Index out of bounds");
+	FAssertMsg(i > -1, "Index out of bounds");
+	return m_aiGarrisonUnitModifiers ? m_aiGarrisonUnitModifiers[i] : -1;
+}
+int* CvCivicInfo::getGarrisonUnitArray() const
+{
+	return m_aiGarrisonUnitModifiers;
+}
 int CvCivicInfo::getAllowsPromotions(int i) const
 {
+	if (i == IS_ARRAY_ALLOCATED)
+	{
+		return m_aiAllowsPromotions ? 1 : 0;
+	}
 	return m_aiAllowsPromotions ? m_aiAllowsPromotions[i] : 0;
 }
 
 int CvCivicInfo::getAllowsBonuses(int i) const
 {
+	if (i == IS_ARRAY_ALLOCATED)
+	{
+		return m_aiAllowsBonuses ? 1 : 0;
+	}
 	return m_aiAllowsBonuses ? m_aiAllowsBonuses[i] : 0;
 }
+
+//Tks Civics
+int CvCivicInfo::getAllowedUnitClassImmigration(int i) const
+{
+	if (i == IS_ARRAY_ALLOCATED)
+	{
+		return m_jaAllowedUnitClassImmigration.isAllocated() ? 1 : 0;
+	}
+	return m_jaAllowedUnitClassImmigration.get(i);
+}
+//tke
 
 
 int CvCivicInfo::getCenterPlotFoodBonus() const
@@ -4144,10 +4316,46 @@ int CvCivicInfo::getIncreaseCityPopulation() const
 {
 	return m_iIncreaseCityPopulation;
 }
-
+///Tks CivicsScreen
+int CvCivicInfo::getDiplomacyAttitudeChange() const
+{
+	return m_iDiplomacyAttitudeChange;
+}
+int CvCivicInfo::getMissionariesNotCosumed() const
+{
+	return m_iMissionariesNotCosumed;
+}
+int CvCivicInfo::getTradingPostNotCosumed() const
+{
+	return m_iTradingPostNotCosumed;
+}
+int CvCivicInfo::getInitialCost() const
+{
+	return m_iInitialCost;
+}
+int CvCivicInfo::getAnarchyLength() const
+{
+	return m_iAnarchyLength;
+}
+int CvCivicInfo::getHuntingYieldPercent() const
+{
+	return m_iHuntingYieldPercent;
+}
+int CvCivicInfo::getPilgramYieldPercent() const
+{
+	return m_iPilgramYieldPercent;
+}
+int CvCivicInfo::getUpkeepYields(int i) const
+{
+	return m_aiUpkeepYields ? m_aiUpkeepYields[i] : 0;
+}
 int CvCivicInfo::getAllowsTrait() const
 {
 	return m_iAllowsTrait;
+}
+int CvCivicInfo::getAllowsCivic() const
+{
+	return m_iAllowsCivic;
 }
 /// TK Med TradeScreen
 int CvCivicInfo::getAllowsTradeScreen() const
@@ -4170,6 +4378,17 @@ int CvCivicInfo::getNewDefaultUnitClass() const
 	return m_iNewDefaultUnitClass;
 }
 
+///Tks Civics
+int CvCivicInfo::getNewLuxuryUnitClass() const
+{
+	return m_iNewLuxuryUnitClass;
+}
+///Tke Civics
+
+int CvCivicInfo::getNewConvertUnitClass() const
+{
+	return m_iNewConvertUnitClass;
+}
 int CvCivicInfo::getConvertsUnitsFrom() const
 {
 	return m_aiConvertsUnitsFrom;
@@ -4188,6 +4407,11 @@ int CvCivicInfo::getFreeUnitFirstToResearch() const
 int CvCivicInfo::getCheaperPopulationGrowth() const
 {
 	return m_iCheaperPopulationGrowth;
+}
+
+int CvCivicInfo::getGlobalFoodCostMod() const
+{
+	return m_iGlobalFoodCostMod;
 }
 
 bool CvCivicInfo::isFreeUnitsAreNonePopulation() const
@@ -4227,6 +4451,10 @@ bool CvCivicInfo::isNoneTradeable() const
 
 int CvCivicInfo::getAllowsProfessions(int i) const
 {
+	if (i == IS_ARRAY_ALLOCATED)
+	{
+		return m_aiAllowsProfessions ? 1 : 0;
+	}
 	return m_aiAllowsProfessions ? m_aiAllowsProfessions[i] : 0;
 }
 
@@ -4246,7 +4474,6 @@ int* CvCivicInfo::getRequiredYieldsArray() const
 
 int CvCivicInfo::getRequiredYieldsArraySize() const
 {
-	//return (int)m_aiRequiredYields.size();
 	return 0;
 }
 
@@ -4263,6 +4490,46 @@ int CvCivicInfo::getNativeCombatModifier() const
 int CvCivicInfo::getFatherPointModifier() const
 {
 	return m_iFatherPointModifier;
+}
+bool CvCivicInfo::isWorkersBuildAfterMove() const
+{
+	return m_bWorkersBuildAfterMove;
+}
+int CvCivicInfo::getNumCivicTreasuryBonus() const
+{
+	return m_aiCivicTreasuryBonuses.size();
+}
+int CvCivicInfo::getCivicTreasury(int index) const
+{
+	FAssert(index < (int) m_aiCivicTreasuryBonuses.size());
+	FAssert(index > -1);
+	return m_aiCivicTreasuryBonuses[index].first;
+}
+int CvCivicInfo::getCivicTreasuryBonus(int index) const
+{
+	FAssert(index < (int) m_aiCivicTreasuryBonuses.size());
+	FAssert(index > -1);
+	return m_aiCivicTreasuryBonuses[index].second;
+}
+int CvCivicInfo::getNumCivicCombatBonus() const
+{
+	return m_aiCivicCombatBonuses.size();
+}
+int CvCivicInfo::getCivicCombat(int index) const
+{
+	FAssert(index < (int) m_aiCivicCombatBonuses.size());
+	FAssert(index > -1);
+	return m_aiCivicCombatBonuses[index].first;
+}
+int CvCivicInfo::getCivicCombatBonus(int index) const
+{
+	FAssert(index < (int) m_aiCivicCombatBonuses.size());
+	//FAssert(index > -1);
+	return m_aiCivicCombatBonuses[index].second;
+}
+bool CvCivicInfo::isBuildingTreasuryBonus() const
+{
+	return m_bBuildingTreasuryBonus;
 }
 bool CvCivicInfo::isDominateNativeBorders() const
 {
@@ -4378,6 +4645,9 @@ void CvCivicInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iFoundCityType);
 	stream->Read(&m_iIncreaseCityPopulation);
 	stream->Read(&m_iNewDefaultUnitClass);
+	///Tks Civics
+	stream->Read(&m_iNewLuxuryUnitClass);
+	///Tke Civics
 	stream->Read(&m_aiConvertsUnitsTo);
 	stream->Read(&m_aiConvertsUnitsFrom);
 
@@ -4544,6 +4814,9 @@ void CvCivicInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iFoundCityType);
 	stream->Write(m_iIncreaseCityPopulation);
 	stream->Write(m_iNewDefaultUnitClass);
+	///Tks Civics
+	stream->Write(m_iNewLuxuryUnitClass);
+	///Tke Civics
 	stream->Write(m_aiConvertsUnitsTo);
 	stream->Write(m_aiConvertsUnitsFrom);
 
@@ -4632,6 +4905,9 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(szTextVal, "AllowsTrait");
 	m_iAllowsTrait = pXML->FindInInfoClass(szTextVal);
 
+    pXML->GetChildXmlValByName(szTextVal, "AllowsCivic");
+	m_iAllowsCivic = pXML->FindInInfoClass(szTextVal);
+
 	pXML->GetChildXmlValByName(szTextVal, "AllowsTradeScreen");
 	m_iAllowsTradeScreen = pXML->FindInInfoClass(szTextVal);
 
@@ -4644,6 +4920,14 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(szTextVal, "NewDefaultUnitClass");
 	m_iNewDefaultUnitClass = pXML->FindInInfoClass(szTextVal);
 
+	///Tks Civics
+	pXML->GetChildXmlValByName(szTextVal, "NewLuxuryUnitClass");
+	m_iNewLuxuryUnitClass = pXML->FindInInfoClass(szTextVal);
+	///Tke Civics
+	
+	pXML->GetChildXmlValByName(szTextVal, "NewConvertUnitClass");
+	m_iNewConvertUnitClass = pXML->FindInInfoClass(szTextVal);
+
 	pXML->GetChildXmlValByName(szTextVal, "ConvertsUnitsFrom");
 	m_aiConvertsUnitsFrom = pXML->FindInInfoClass(szTextVal);
 
@@ -4652,7 +4936,7 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 
     pXML->GetChildXmlValByName(szTextVal, "iModdersCode1");
 	m_iModdersCode1 = pXML->FindInInfoClass(szTextVal);
-
+	pXML->GetChildXmlValByName(&m_iGlobalFoodCostMod, "iGlobalFoodCostMod");
 	pXML->GetChildXmlValByName(&m_iCheaperPopulationGrowth, "iCheaperPopulationGrowth");
 	pXML->GetChildXmlValByName(&m_iCenterPlotFoodBonus, "iCenterPlotFoodBonus");
 	pXML->GetChildXmlValByName(&m_iIncreasedEnemyHealRate, "iIncreasedEnemyHealRate");
@@ -4662,9 +4946,15 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iGoldBonus, "iGoldBonus");
 	pXML->GetChildXmlValByName(&m_iIncreasedImmigrants, "iIncreasedImmigrants");
 	pXML->GetChildXmlValByName(&m_iFreeTechs, "iFreeTechs");
-
-
-
+	///Tks CivicsScreen
+	pXML->GetChildXmlValByName(&m_iDiplomacyAttitudeChange, "iDiplomacyAttitudeChange");
+	pXML->GetChildXmlValByName(&m_iMissionariesNotCosumed, "iMissionariesNotCosumed");
+	pXML->GetChildXmlValByName(&m_iTradingPostNotCosumed, "iTradingPostNotCosumed");
+	pXML->GetChildXmlValByName(&m_iAnarchyLength, "iAnarchyLength");
+	pXML->GetChildXmlValByName(&m_iInitialCost, "iInitialCost");
+	pXML->GetChildXmlValByName(&m_iHuntingYieldPercent, "iHuntingYieldPercent");
+	pXML->GetChildXmlValByName(&m_iPilgramYieldPercent, "iPilgramYieldPercent");
+	///Tke CivicsScreen
 	pXML->GetChildXmlValByName(&m_iKingTreasureTransportMod, "iKingTreasureTransportMod");
 	pXML->GetChildXmlValByName(&m_iIncreaseCityPopulation, "iIncreaseCityPopulation");
 
@@ -4675,7 +4965,11 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bGoodyTech, "bNoGoodyTech");
 	pXML->GetChildXmlValByName(&m_bNoArrowinTechScreen, "bNoArrowinTechScreen");
 	pXML->GetChildXmlValByName(&m_bisTradeable, "bisNoneTradeable");
-
+	pXML->GetChildXmlValByName(&m_bWorkersBuildAfterMove, "bWorkersBuildAfterMove");
+	pXML->GetChildXmlValByName(&m_bBuildingTreasuryBonus, "bBuildingTreasuryBonus");
+	//Tks Civics
+	pXML->SetVariableListTagPair(&m_aiUpkeepYields, "UpkeepYields", NUM_YIELD_TYPES, 0);
+	//tke
     pXML->SetVariableListTagPair(&m_aiAllowsYields, "AllowsYields", NUM_YIELD_TYPES, 0);
     pXML->SetVariableListTagPair(&m_iRouteMovementMod, "RouteMovementMod", GC.getNumRouteInfos(), 0);
     pXML->SetVariableListTagPair(&m_aiAllowsRoute, "AllowsRoutes", GC.getNumRouteInfos(), 0);
@@ -4688,11 +4982,150 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
     pXML->SetVariableListTagPair(&m_aiFasterBuildFeatureTypes, "FasterBuildFeatureTypes", GC.getNumFeatureInfos(), 0);
 
     pXML->SetVariableListTagPair(&m_aiIndustrializationVictory, "IndustrializationVictory", NUM_YIELD_TYPES, 0);
-    pXML->SetVariableListTagPair(&m_aiMaxYieldModifiers, "MaxYieldModifiers", NUM_YIELD_TYPES, 0);
+    pXML->SetVariableListTagPair(&m_aiMaxYieldModifiers, "MaxStorageModifiers", NUM_YIELD_TYPES, 0);
+	pXML->SetVariableListTagPair(&m_aiGarrisonUnitModifiers, "GarrisonUnitModifiers", NUM_YIELD_TYPES, 0);
     pXML->SetVariableListTagPair(&m_aiAllowsBuildTypesTerrain, "AllowsBuildTypesTerrain", GC.getNumTerrainInfos(), 0);
+	pXML->SetVariableListTagPair(&m_aiFartherPointChanges, "FartherPointChanges", GC.getNumFatherPointInfos(), 0);
     pXML->SetVariableListTagPair(&m_aiAllowsProfessions, "AllowsProfessions", GC.getNumProfessionInfos(), 0);
 
     pXML->SetVariableListTagPair(&m_aiRequiredYields, "RequiredYields", NUM_YIELD_TYPES, 0);
+	//Civic Arrays Start
+	m_jaAllowedUnitClassImmigration.read(pXML, "AllowsUnitClassesImmigration");
+	//Prohibited Civics
+	//CivicTypes iVal;
+	if(gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "ProhibitsCivics"))
+	{
+		if(gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "ProhibitedCivic"))
+		{
+			do
+			{
+				pXML->GetChildXmlValByName(szTextVal, "Civic");
+				int iCivic = pXML->FindInInfoClass(szTextVal);
+				m_aProhibitsCivics.push_back((CivicTypes)iCivic);
+			} while(gDLL->getXMLIFace()->LocateNextSiblingNodeByTagName(pXML->GetXML(), "ProhibitedCivic"));
+			gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+		}
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+
+
+	//CivicTreasuryBonuses
+	m_aiCivicTreasuryBonuses.clear();
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"CivicTreasuryBonuses"))
+	{
+		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"CivicTreasuryBonus"))
+		{
+			do
+			{
+				pXML->GetChildXmlValByName(szTextVal, "BuildingClassType");
+				int iBuildingClass = pXML->FindInInfoClass(szTextVal);
+				int iValue = 0;
+				pXML->GetChildXmlValByName(&iValue, "iValue");
+				m_aiCivicTreasuryBonuses.push_back(std::make_pair((BuildingClassTypes) iBuildingClass, iValue));
+			} while(gDLL->getXMLIFace()->NextSibling(pXML->GetXML()));
+			// set the current xml node to it's parent node
+			gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+		}
+		// set the current xml node to it's parent node
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+
+	m_aiCivicCombatBonuses.clear();
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"CivicCombatBonuses"))
+	{
+		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"CivicCombatBonus"))
+		{
+			do
+			{
+				pXML->GetChildXmlValByName(szTextVal, "Civic");
+				int iCivicType = pXML->FindInInfoClass(szTextVal);
+				int iValue = 0;
+				pXML->GetChildXmlValByName(&iValue, "iValue");
+				m_aiCivicCombatBonuses.push_back(std::make_pair((CivicTypes) iCivicType, iValue));
+			} while(gDLL->getXMLIFace()->NextSibling(pXML->GetXML()));
+			// set the current xml node to it's parent node
+			gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+		}
+		// set the current xml node to it's parent node
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+	//RandomGrowthUnits
+	m_aRandomGrowthUnits.clear();
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"RandomGrowthClasses"))
+	{
+		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"RandomGrowthClass"))
+		{
+			do
+			{
+				pXML->GetChildXmlValByName(szTextVal, "UnitClassType");
+				int iUnitClass = pXML->FindInInfoClass(szTextVal);
+				int iPercentChance = 0;
+				pXML->GetChildXmlValByName(&iPercentChance, "iPercentChance");
+				m_aRandomGrowthUnits.push_back(std::make_pair((UnitClassTypes) iUnitClass, iPercentChance));
+			} while(gDLL->getXMLIFace()->NextSibling(pXML->GetXML()));
+			// set the current xml node to it's parent node
+			gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+		}
+		// set the current xml node to it's parent node
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+	//UnitClassFoodCosts
+	m_aUnitClassFoodCosts.clear();
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"UnitClassFoodCosts"))
+	{
+		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"UnitClassFoodCost"))
+		{
+			do
+			{
+				pXML->GetChildXmlValByName(szTextVal, "UnitClassType");
+				int iUnitClass = pXML->FindInInfoClass(szTextVal);
+				int iPercentChance = 0;
+				pXML->GetChildXmlValByName(&iPercentChance, "iValue");
+				m_aUnitClassFoodCosts.push_back(std::make_pair((UnitClassTypes) iUnitClass, iPercentChance));
+			} while(gDLL->getXMLIFace()->NextSibling(pXML->GetXML()));
+			// set the current xml node to it's parent node
+			gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+		}
+		// set the current xml node to it's parent node
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+
+	m_aConnectedTradeYields.clear();
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"ConnectedTradeYields"))
+	{
+		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"YieldChange"))
+		{
+			do
+			{
+				pXML->GetChildXmlValByName(szTextVal, "YieldType");
+				int iYieldType = pXML->FindInInfoClass(szTextVal);
+				int iChange = 0;
+				pXML->GetChildXmlValByName(&iChange, "iYieldChange");
+				m_aConnectedTradeYields.push_back(std::make_pair((YieldTypes)iYieldType, iChange));
+			} while(gDLL->getXMLIFace()->NextSibling(pXML->GetXML()));
+			gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+		}
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+
+	m_aConnectedMissonYields.clear();
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"ConnectedMissonYields"))
+	{
+		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"YieldChange"))
+		{
+			do
+			{
+				pXML->GetChildXmlValByName(szTextVal, "YieldType");
+				int iYieldType = pXML->FindInInfoClass(szTextVal);
+				int iChange = 0;
+				pXML->GetChildXmlValByName(&iChange, "iYieldChange");
+				m_aConnectedMissonYields.push_back(std::make_pair((YieldTypes)iYieldType, iChange));
+			} while(gDLL->getXMLIFace()->NextSibling(pXML->GetXML()));
+			gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+		}
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+
 	///TKe
 	pXML->GetChildXmlValByName(&m_iNativeAttitudeChange, "iNativeAttitudeChange");
 	pXML->GetChildXmlValByName(&m_iNativeCombatModifier, "iNativeCombatModifier");
@@ -5282,10 +5715,27 @@ int CvBuildingInfo::getAutoSellsYields(int i) const
 {
 	return m_aiAutoSellsYields ? m_aiAutoSellsYields[i] : -1;
 }
+int CvBuildingInfo::getNumCivicTreasuryBonus() const
+{
+	return m_aiCivicTreasuryBonuses.size();
+}
+int CvBuildingInfo::getCivicTreasury(int index) const
+{
+	FAssert(index < (int) m_aiCivicTreasuryBonuses.size());
+	FAssert(index > -1);
+	return m_aiCivicTreasuryBonuses[index].first;
+}
+int CvBuildingInfo::getCivicTreasuryBonus(int index) const
+{
+	FAssert(index < (int) m_aiCivicTreasuryBonuses.size());
+	FAssert(index > -1);
+	return m_aiCivicTreasuryBonuses[index].second;
+}
 int CvBuildingInfo::getCenterPlotBonus() const
 {
 	return m_iCenterPlotBonus;
 }
+
 ///TKe
 int CvBuildingInfo::getNextSpecialBuilding() const
 {
@@ -5757,6 +6207,28 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPair(&m_aiProductionTraits, "ProductionTraits", GC.getNumTraitInfos(), 0);
 	pXML->GetChildXmlValByName(szTextVal, "FreePromotion");
 	m_iFreePromotion = pXML->FindInInfoClass(szTextVal);
+
+	m_aiCivicTreasuryBonuses.clear();
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"CivicTreasuryBonuses"))
+	{
+		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"CivicTreasuryBonus"))
+		{
+			do
+			{
+				pXML->GetChildXmlValByName(szTextVal, "CivicType");
+				int iCivicType = pXML->FindInInfoClass(szTextVal);
+				int iValue = 0;
+				pXML->GetChildXmlValByName(&iValue, "iValue");
+				m_aiCivicTreasuryBonuses.push_back(std::make_pair((CivicTypes) iCivicType, iValue));
+			} while(gDLL->getXMLIFace()->NextSibling(pXML->GetXML()));
+			// set the current xml node to it's parent node
+			gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+		}
+		// set the current xml node to it's parent node
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+
+
 	pXML->GetChildXmlValByName(&m_bWorksWater, "bWorksWater");
 	pXML->GetChildXmlValByName(&m_bWater, "bWater");
 	pXML->GetChildXmlValByName(&m_bRiver, "bRiver");
@@ -7493,6 +7965,9 @@ bool CvHandicapInfo::read(CvXMLLoadUtility* pXML)
 //
 //------------------------------------------------------------------------------------------------------
 CvGameSpeedInfo::CvGameSpeedInfo() :
+///TKs CivicsScreen
+m_iAnarchyPercent(0),
+//TKe CivicsScreen
 m_iGrowthPercent(0),
 m_iStoragePercent(0),
 m_iTrainPercent(0),
@@ -7521,10 +7996,17 @@ CvGameSpeedInfo::~CvGameSpeedInfo()
 	SAFE_DELETE_ARRAY(m_aiTradeRouteTripLength);
 	///TKe
 }
+///Tks CivicsScreen
+int CvGameSpeedInfo::getAnarchyPercent() const
+{
+	return m_iAnarchyPercent;
+}
+///TKe CivicsScreen
 int CvGameSpeedInfo::getGrowthPercent() const
 {
 	return m_iGrowthPercent;
 }
+
 int CvGameSpeedInfo::getStoragePercent() const
 {
 	return m_iStoragePercent;
@@ -7574,6 +8056,9 @@ bool CvGameSpeedInfo::read(CvXMLLoadUtility* pXML)
 		return false;
 	}
 	int j, iTempVal;
+	///Tks CivicsScreen
+	pXML->GetChildXmlValByName(&m_iAnarchyPercent, "iAnarchyPercent");
+	///Tke CivicsScreen
 	pXML->GetChildXmlValByName(&m_iGrowthPercent, "iGrowthPercent");
 	pXML->GetChildXmlValByName(&m_iStoragePercent, "iStoragePercent");
 	pXML->GetChildXmlValByName(&m_iTrainPercent, "iTrainPercent");
@@ -9718,6 +10203,8 @@ bool CvInterfaceModeInfo::read(CvXMLLoadUtility* pXML)
 CvLeaderHeadInfo::CvLeaderHeadInfo() :
 m_iAlarmType(NO_ALARM),
 ///Tks Med
+m_iCivicDiplomacyDivisor(1),
+m_iCivicDiplomacyChangeLimit(0),
 iVictoryType(0),
 iTravelCommandType(-1),
 iEconomyType(0),
@@ -9775,9 +10262,10 @@ m_aiNoWarAttitudeProb(NULL),
 m_aiUnitAIWeightModifier(NULL),
 m_aiImprovementWeightModifier(NULL),
 m_aiDiploPeaceMusicScriptIds(NULL),
-///Tks Med
 m_aiDiploWarMusicScriptIds(NULL),
-aiEraTraits(NULL)
+///Tks Med
+aiEraTraits(NULL),
+m_aiAllowedTradeScreens(NULL)
 ///Tke
 
 {
@@ -9803,6 +10291,7 @@ CvLeaderHeadInfo::~CvLeaderHeadInfo()
 	SAFE_DELETE_ARRAY(m_aiDiploWarMusicScriptIds);
 	///Tks Med
 	SAFE_DELETE_ARRAY(aiEraTraits);
+	SAFE_DELETE_ARRAY(m_aiAllowedTradeScreens);
 	///Tke
 }
 const char* CvLeaderHeadInfo::getButton() const
@@ -9833,6 +10322,10 @@ int CvLeaderHeadInfo::getEraTraits(int i) const
 	return aiEraTraits ? aiEraTraits[i] : -1;
 }
 
+bool CvLeaderHeadInfo::isTradeScreenAllowed(int i) const
+{
+	return m_aiAllowedTradeScreens ? m_aiAllowedTradeScreens[i] : true;
+}
 int CvLeaderHeadInfo::getVictoryType() const
 {
 	return iVictoryType;
@@ -9967,6 +10460,33 @@ int CvLeaderHeadInfo::getAtPeaceAttitudeChangeLimit() const
 {
 	return m_iAtPeaceAttitudeChangeLimit;
 }
+//Tks Civics Diplomacy
+int CvLeaderHeadInfo::getCivicDiplomacyDivisor() const
+{
+	return m_iCivicDiplomacyDivisor;
+}
+int CvLeaderHeadInfo::getCivicDiplomacyChangeLimit() const
+{
+	return m_iCivicDiplomacyChangeLimit;
+}
+int CvLeaderHeadInfo::getNumCivicDiplomacyAttitudes() const
+{
+	return m_aiCivicDiplomacyAttitudes.size();
+}
+int CvLeaderHeadInfo::getCivicDiplomacyAttitudes(int index) const
+{
+	FAssert(index < (int) m_aiCivicDiplomacyAttitudes.size());
+	FAssert(index > -1);
+	return m_aiCivicDiplomacyAttitudes[index].first;
+}
+int CvLeaderHeadInfo::getCivicDiplomacyAttitudesValue(int index) const
+{
+	FAssert(index < (int) m_aiCivicDiplomacyAttitudes.size());
+	FAssert(index > -1);
+	return m_aiCivicDiplomacyAttitudes[index].second;
+}
+
+//Tke
 int CvLeaderHeadInfo::getOpenBordersAttitudeDivisor() const
 {
 	return m_iOpenBordersAttitudeDivisor;
@@ -10338,6 +10858,10 @@ bool CvLeaderHeadInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iAtPeaceAttitudeDivisor, "iAtPeaceAttitudeDivisor");
 	pXML->GetChildXmlValByName(&m_iAtPeaceAttitudeChangeLimit, "iAtPeaceAttitudeChangeLimit");
 	pXML->GetChildXmlValByName(&m_iOpenBordersAttitudeDivisor, "iOpenBordersAttitudeDivisor");
+	///Tks Civics Diplomacy
+	pXML->GetChildXmlValByName(&m_iCivicDiplomacyDivisor, "iCivicDiplomacyDivisor");
+	pXML->GetChildXmlValByName(&m_iCivicDiplomacyChangeLimit, "iCivicDiplomacyChangeLimit");
+	//tke
 	pXML->GetChildXmlValByName(&m_iOpenBordersAttitudeChangeLimit, "iOpenBordersAttitudeChangeLimit");
 	pXML->GetChildXmlValByName(&m_iDefensivePactAttitudeDivisor, "iDefensivePactAttitudeDivisor");
 	pXML->GetChildXmlValByName(&m_iDefensivePactAttitudeChangeLimit, "iDefensivePactAttitudeChangeLimit");
@@ -10375,6 +10899,27 @@ bool CvLeaderHeadInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPairForAudioScripts(&m_aiDiploPeaceMusicScriptIds, "DiplomacyMusicPeace", GC.getNumEraInfos());
 	pXML->SetVariableListTagPairForAudioScripts(&m_aiDiploWarMusicScriptIds, "DiplomacyMusicWar", GC.getNumEraInfos());
 	///TKs Med
+	pXML->SetVariableListTagPair(&m_aiAllowedTradeScreens, "TradeScreensAllowed", GC.getNumEuropeInfos(), true);
+	m_aiCivicDiplomacyAttitudes.clear();
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"CivicDiplomacyAttitudes"))
+	{
+		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"CivicDiplomacy"))
+		{
+			do
+			{
+				pXML->GetChildXmlValByName(szTextVal, "CivicType");
+				int iCivic = pXML->FindInInfoClass(szTextVal);
+				int iChange = 0;
+				pXML->GetChildXmlValByName(&iChange, "iChange");
+				m_aiCivicDiplomacyAttitudes.push_back(std::make_pair((CivicTypes)iCivic, iChange));
+			} while(gDLL->getXMLIFace()->NextSibling(pXML->GetXML()));
+			gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+		}
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+
+
+
 	CvString* pszTraits = NULL;
 	FAssertMsg(NULL == aiEraTraits, "Memory leak");
 	aiEraTraits = new int[GC.getNumEraInfos()];
@@ -10384,6 +10929,16 @@ bool CvLeaderHeadInfo::read(CvXMLLoadUtility* pXML)
 		aiEraTraits[i] = pXML->FindInInfoClass(pszTraits[i]);
 	}
 	SAFE_DELETE_ARRAY(pszTraits);
+
+	/*CvString* pszEuropes = NULL;
+	FAssertMsg(NULL == aiAllowedTradeScreens, "Memory leak");
+	aiAllowedTradeScreens = new int[GC.getNumEuropeInfos()];
+	pXML->SetVariableListTagPair<CvString>(&pszEuropes, "TradeScreensAllowed", GC.getNumEuropeInfos(), "NONE");
+	for (int i = 0; i < GC.getNumEuropeInfos(); ++i)
+	{
+		aiAllowedTradeScreens[i] = pXML->FindInInfoClass(pszEuropes[i]);
+	}
+	SAFE_DELETE_ARRAY(pszEuropes);*/
 
 	//pXML->SetVariableListTagPair(&aiEraTraits, "EraTraits", GC.getNumEraInfos(), -1);
 	///Tke
@@ -10783,6 +11338,9 @@ CvTraitInfo::CvTraitInfo() :
 	m_iEuropeTravelTimeModifier(0),
 	m_iImmigrationThresholdModifier(0),
 	///TKs Invention Core Mod v 1.0
+	///TKs CivicsScreen
+	m_iMaxAnarchy(0),
+	//TKe CivicsScreen
 	m_bFreePromotionsAllowChange(false),
 	m_bFreeBuildingAllowChange(false),
 	///TKe
@@ -10840,6 +11398,24 @@ CvTraitInfo::~CvTraitInfo()
 		SAFE_DELETE_ARRAY(m_aaiBuildingYieldChanges[iBuildingClass]);
 	}
 }
+//TKs Tech Categories
+int CvTraitInfo::getNumBonusTechCategories() const
+{
+	return m_aBonusTechCategories.size();
+}
+CivicTypes CvTraitInfo::getBonusTechCategory(int index) const
+{
+	FAssert(index < (int) m_aBonusTechCategories.size());
+	FAssert(index > -1);
+	return m_aBonusTechCategories[index].first;
+}
+int CvTraitInfo::getTechCategoryBonus(int index) const
+{
+	FAssert(index < (int) m_aBonusTechCategories.size());
+	FAssert(index > -1);
+	return m_aBonusTechCategories[index].second;
+}
+//TKe
 int CvTraitInfo::getLevelExperienceModifier() const
 {
 	return m_iLevelExperienceModifier;
@@ -10916,6 +11492,11 @@ int CvTraitInfo::getEuropeTravelTimeModifier() const
 int CvTraitInfo::getImmigrationThresholdModifier() const
 {
 	return m_iImmigrationThresholdModifier;
+}
+///Tks CivicsScreen
+int CvTraitInfo::getMaxAnarchy() const
+{
+	return m_iMaxAnarchy;
 }
 ///TKs Invention Core Mod v 1.0
 bool CvTraitInfo::isFreePromotionsAllowChange() const
@@ -11233,7 +11814,9 @@ bool CvTraitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iRecruitPriceDiscount, "iRecruitPriceDiscount");
 	pXML->GetChildXmlValByName(&m_iEuropeTravelTimeModifier, "iEuropeTravelTimeModifier");
 	pXML->GetChildXmlValByName(&m_iImmigrationThresholdModifier, "iImmigrationThresholdModifier");
-
+	///Tks CivicsScreen
+	pXML->GetChildXmlValByName(&m_iMaxAnarchy, "iMaxAnarchy");
+	///Tke CivicsScreen
 ///TKs Invention Core Mod v 1.0
     pXML->GetChildXmlValByName(&m_bFreePromotionsAllowChange, "bFreePromotionsAllowChange");
     pXML->GetChildXmlValByName(&m_bFreeBuildingAllowChange, "bFreeBuildingAllowChange");
@@ -11290,8 +11873,27 @@ bool CvTraitInfo::read(CvXMLLoadUtility* pXML)
 	///TKs Med
 	pXML->SetVariableListTagPair(&m_abFreePromotionUnitClass, "FreePromotionUnitClasses", GC.getNumUnitClassInfos(), false);
 	pXML->SetVariableListTagPair(&m_abFreePromotionUnitProfession, "FreePromotionUnitProfessions", GC.getNumProfessionInfos(), false);
-	///TKs
 	pXML->SetVariableListTagPair(&m_abFreeBuildingClass, "FreeBuildingClasses", GC.getNumBuildingClassInfos(), false);
+	m_aBonusTechCategories.clear();
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"BonusTechCategories"))
+	{
+		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"BonusTechCategory"))
+		{
+			do
+			{
+				pXML->GetChildXmlValByName(szTextVal, "CivicType");
+				int iCivic = pXML->FindInInfoClass(szTextVal);
+				int iChange = 0;
+				pXML->GetChildXmlValByName(&iChange, "iFactor");
+				m_aBonusTechCategories.push_back(std::make_pair((CivicTypes)iCivic, iChange));
+			} while(gDLL->getXMLIFace()->NextSibling(pXML->GetXML()));
+			gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+		}
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+
+	///TKs
+	
 	return true;
 }
 
@@ -12554,6 +13156,9 @@ m_iGreatGeneralPercent(0),
 m_iEventChancePerTurn(0),
 m_iSoundtrackSpace(0),
 m_iNumSoundtracks(0),
+//Tks Civics
+m_iAnarchyPercent(0),
+//Tke Civics
 m_bRevolution(false),
 m_bNoGoodies(false),
 // < JAnimals Mod Start >
@@ -12658,6 +13263,12 @@ bool CvEraInfo::isNoGoodies() const
 {
 	return m_bNoGoodies;
 }
+///Tks CivicsScreen
+int CvEraInfo::getAnarchyPercent() const
+{
+	return m_iAnarchyPercent;
+}
+///TKe CivicsScreen
 // < JAnimals Mod Start >
 bool CvEraInfo::isNoAILandAnimals() const
 {
@@ -12687,6 +13298,9 @@ bool CvEraInfo::read(CvXMLLoadUtility* pXML)
 	{
 		return false;
 	}
+	///Tks CivicsScreen
+	pXML->GetChildXmlValByName(&m_iAnarchyPercent, "iAnarchyPercent");
+	///Tke CivicsScreen
 	pXML->GetChildXmlValByName(&m_bRevolution, "bRevolution");
 	pXML->GetChildXmlValByName(&m_bNoGoodies, "bNoGoodies");
 	pXML->GetChildXmlValByName(&m_iGameTurn, "iGameTurn");

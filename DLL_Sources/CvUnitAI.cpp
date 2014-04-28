@@ -2668,13 +2668,17 @@ void CvUnitAI::AI_defensiveBraveMove()
                                     if (pTraderCity != NULL)
                                     {
                                             //FAssert(false);
-                                            setProfession((ProfessionTypes)GC.getXMLval(XML_DEFAULT_NATIVE_TRADE_PROFESSION));
+											int iAmount = GC.getGame().getSorenRandNum(50, "AI native bear gifts") + 50;
                                             //int iAmount = GC.getGame().getSorenRandNum(pCity->getYieldStored((YieldTypes)iYield) + 1, "AI native bear gifts");
-                                            int iAmount = GC.getGame().getSorenRandNum(pCity->getYieldStored((YieldTypes)iYield) + 1, "AI native bear gifts");
+                                            iAmount = pCity->getYieldStored((YieldTypes)iYield) * iAmount / 100;
                                             iAmount = std::min(iAmount, 100);
-                                            loadYieldAmount((YieldTypes)iYield, iAmount, false);
-                                            AI_setUnitAIState(UNITAI_STATE_SELL_TO_NATIVES);
-                                            return;
+											if (iAmount > 20)
+											{
+												setProfession((ProfessionTypes)GC.getXMLval(XML_DEFAULT_NATIVE_TRADE_PROFESSION));
+												loadYieldAmount((YieldTypes)iYield, iAmount, false);
+												AI_setUnitAIState(UNITAI_STATE_SELL_TO_NATIVES);
+												return;
+											}
                                     }
                                 }
                             }
@@ -3236,10 +3240,11 @@ void CvUnitAI::AI_transportTraderMove()
 		return;
 	}
 
-	 CvCity* pCity = NULL;
+	CvCity* pCity = NULL;
     if (plot()->getPlotCity() != NULL)
     {
-        if (canBuildTradingPost(false))
+		pCity = plot()->getPlotCity();
+        if (!pCity->isHuman() && canBuildTradingPost(false))
 		{
 			buildTradingPost(false);
 		}
@@ -3248,15 +3253,17 @@ void CvUnitAI::AI_transportTraderMove()
         {
             return;
         }
+
         if (plot()->getOwner() == getOwner())
         {
-            pCity = plot()->getPlotCity();
+			pCity = plot()->getPlotCity();
             if (!isHuman())
             {
                 AI_upgradeProfession();
             }
         }
     }
+
     if (AI_getUnitAIState() == UNITAI_STATE_PURCHASED)
 	{
 	    if (!hasCargo())
@@ -5408,7 +5415,10 @@ bool CvUnitAI::AI_collectGoods()
 			{
 				if (kOwner.AI_isYieldForSale(eYield))
 				{
-					int iStored = pCity->getYieldStored(eYield) - pCity->getMaintainLevel(eYield);
+					// transport feeder - start - Nightinggale
+					// int iStored = pCity->getYieldStored(eYield) - pCity->getMaintainLevel(eYield);
+					int iStored = pCity->getYieldStored(eYield) - pCity->getAutoMaintainThreshold(eYield);
+					// transport feeder - end - Nightinggale
 					if (iStored > (GC.getGameINLINE().getCargoYieldCapacity() / 10))
 					{
 						int iYieldValue = iStored * kEuropePlayer.getYieldBuyPrice(eYield);
@@ -5416,10 +5426,10 @@ bool CvUnitAI::AI_collectGoods()
 						{
 							iBestYieldValue =iYieldValue;
 						eBestYield = eYield;
+						}
 					}
 				}
 			}
-		}
 		}
 
 		if (eBestYield == NO_YIELD)
@@ -15547,14 +15557,11 @@ void CvUnitAI::read(FDataStreamBase* pStream)
 
 	pStream->Read(&m_iBirthmark);
 	pStream->Read(&m_iMovePriority);
-	if (uiFlag > 0)
-	{
-		pStream->Read(&m_iLastAIChangeTurn);
-	}
+	pStream->Read(&m_iLastAIChangeTurn);
 	pStream->Read((int*)&m_eUnitAIType);
 	pStream->Read((int*)&m_eUnitAIState);
-	pStream->Read((int*)&m_eOldProfession);
-	pStream->Read((int*)&m_eIdealProfessionCache);
+	pStream->Read(&m_eOldProfession);
+	pStream->Read(&m_eIdealProfessionCache);
 	pStream->Read(&m_iAutomatedAbortTurn);
 }
 
@@ -15563,7 +15570,7 @@ void CvUnitAI::write(FDataStreamBase* pStream)
 {
 	CvUnit::write(pStream);
 
-	uint uiFlag=1;
+	uint uiFlag=0;
 	pStream->Write(uiFlag);		// flag for expansion
 
 	pStream->Write(m_iBirthmark);

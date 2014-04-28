@@ -6,30 +6,25 @@
 <!-- Civic Option -->
 <Civ4CivicOptionInfos xmlns="x-schema:CIV4GameInfoSchema.xml">
 	<CivicOptionInfos>
-		<!-- CIVICOPTION_INVENTIONS is hardcoded as being first in DLL for performance reasons -->
 		<CivicOptionInfo>
-			<Type>CIVICOPTION_INVENTIONS</Type>
-			<Description>TXT_KEY_CIVICOPTION_INVENTIONS</Description>
+			<Type>CIVICOPTION_GOVERNMENT</Type>
+			<Description>Administration</Description>
 		</CivicOptionInfo>
 		<CivicOptionInfo>
-			<Type>CIVICOPTION_SLAVERY</Type>
-			<Description>TXT_KEY_CIVICOPTION_SLAVERY</Description>
+			<Type>CIVICOPTION_PIETY</Type>
+			<Description>Piety</Description>
 		</CivicOptionInfo>
 		<CivicOptionInfo>
-			<Type>CIVICOPTION_ELECTION</Type>
-			<Description>TXT_KEY_CIVICOPTION_ELECTION</Description>
+			<Type>CIVICOPTION_COMMERCE</Type>
+			<Description>Commerce</Description>
 		</CivicOptionInfo>
 		<CivicOptionInfo>
-			<Type>CIVICOPTION_NATIVES</Type>
-			<Description>TXT_KEY_CIVICOPTION_NATIVES</Description>
+			<Type>CIVICOPTION_LEGAL</Type>
+			<Description>Legal</Description>
 		</CivicOptionInfo>
 		<CivicOptionInfo>
-			<Type>CIVICOPTION_RELIGION</Type>
-			<Description>Censures</Description>
-		</CivicOptionInfo>
-		<CivicOptionInfo>
-			<Type>CIVICOPTION_SECURITY</Type>
-			<Description>TXT_KEY_CIVICOPTION_SECURITY</Description>
+			<Type>CIVICOPTION_LABOR</Type>
+			<Description>Labor</Description>
 		</CivicOptionInfo>
 	</CivicOptionInfos>
 </Civ4CivicOptionInfos>

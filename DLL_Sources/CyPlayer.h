@@ -82,6 +82,13 @@ public:
 	int calculateTotalYield(int /*YieldTypes*/ eYield);
 	bool isCivic(int /*CivicTypes*/ eCivic);
 	///Tks Med
+	//Tks Civics
+	void changeCivics(boost::python::list& /*CivicTypes**/ paeNewCivics, bool bForce);
+	bool canChangeCivics(int /*CivicTypes**/ paeNewCivics);
+	int getCivicAnarchyLength(boost::python::list& /*CivicTypes**/ paeNewCivics);
+	int getCivicInitalCosts(boost::python::list& /*CivicTypes**/ paeNewCivics);
+	int getCivicUpkeep(boost::python::list&  /*CivicTypes*/ paiCivics, bool bIgnoreAnarchy);
+	///Tke Civics
 	int getMultiYieldRate(YieldTypes eIndex);
 	///TKs Invention Core Mod v 1.0
 	int getIdeasExperience() const;
@@ -92,6 +99,8 @@ public:
 	int getIdeasResearched(int /*CivicTypes*/ eCivic);
 	int getVictoryYieldCount(int /*YieldTypes*/ eYield);
 	int getNumDocksNextUnits() const;
+	int getExpences() const;
+	int getGoldIncome() const;
 	int getCurrentResearch() const;
 	int getCurrentTradeResearch() const;
 	int getCurrentResearchProgress(bool bGetTurns, int /*CivicTypes*/ eCivic);
@@ -107,8 +116,9 @@ public:
 	std::wstring getAttackForceKey();
 	std::wstring getDeclareKey();
 	bool getHasTradeRouteType(int /*EuropeTypes*/ eTradeRoute);
+	int getAnarchyTurns();
+	bool canDoCivics(int /*CivicTypes*/ eCivic, bool bProhitbitCheck);
 	///TKe
-	bool canDoCivics(int /*CivicTypes*/ eCivic);
 	int greatGeneralThreshold();
 	int immigrationThreshold();
 	int revolutionEuropeUnitThreshold();

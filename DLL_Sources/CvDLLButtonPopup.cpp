@@ -812,7 +812,7 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
                             }
                             else
                             {
-                                GET_PLAYER(GC.getGameINLINE().getActivePlayer()).changeIdeasResearched((CivicTypes)iCivic, 1);
+                               // GET_PLAYER(GC.getGameINLINE().getActivePlayer()).changeIdeasResearched((CivicTypes)iCivic, 1);
 
                                     CvWString szBuffer = gDLL->getText("TXT_KEY_MISC_PLAYER_COMPLETED_RESEARCH", GC.getCivicInfo((CivicTypes)iCivic).getTextKeyWide());
                                     gDLL->getInterfaceIFace()->addMessage(GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getID(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_UNIT_GREATPEOPLE", MESSAGE_TYPE_MAJOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"));
@@ -1214,7 +1214,8 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
                             {
                                 if (GC.getUnitInfo(ploopUnit->getUnitType()).getCasteAttribute() == 3)
                                 {
-                                    UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(ploopUnit->getCivilizationType()).getCivilizationUnits((UnitClassTypes)GC.getXMLval(XML_DEFAULT_NOBLEMAN_CLASS));
+                                    //UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(ploopUnit->getCivilizationType()).getCivilizationUnits((UnitClassTypes)GC.getXMLval(XML_DEFAULT_NOBLEMAN_CLASS));
+									UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(ploopUnit->getCivilizationType()).getCivilizationUnits((UnitClassTypes)GC.getUnitInfo(ploopUnit->getUnitType()).getEducationUnitClass());
                                     if (eUnit != NO_UNIT)
                                     {
                                         CvUnit* pLearnUnit = GET_PLAYER(ploopUnit->getOwnerINLINE()).initUnit(eUnit, NO_PROFESSION, ploopUnit->getX_INLINE(), ploopUnit->getY_INLINE(),ploopUnit-> AI_getUnitAIType());
@@ -1414,17 +1415,31 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 			CvCity* pCity = kPlayer.getCity(info.getData1());
 			if (pCity != NULL)
 			{
-				for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+				YieldTypes eClickedYield = (YieldTypes)info.getData2();
+				if (eClickedYield != NO_YIELD)
 				{
-					YieldTypes eYield = (YieldTypes) iYield;
-					if (GC.getYieldInfo((YieldTypes) iYield).isCargo())
+					int iYield = info.getData2();
+					bool bNeverSell = (pPopupReturn->getCheckboxBitfield(iYield) & 0x01);
+					int iLevel = pPopupReturn->getSpinnerWidgetValue(iYield);
+					if (bNeverSell != pCity->isCustomHouseNeverSell(eClickedYield) || iLevel != pCity->getCustomHouseSellThreshold(eClickedYield))
 					{
-						bool bNeverSell = (pPopupReturn->getCheckboxBitfield(iYield) & 0x01);
-						int iLevel = pPopupReturn->getSpinnerWidgetValue(iYield);
-						
-						if (bNeverSell != pCity->isCustomHouseNeverSell(eYield) || iLevel != pCity->getCustomHouseSellThreshold(eYield))
+						gDLL->sendDoTask(info.getData1(), TASK_CHANGE_CUSTOM_HOUSE_SETTINGS, iYield, iLevel, bNeverSell, false, false, false);
+					}
+				}
+				else
+				{
+					for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+					{
+						YieldTypes eYield = (YieldTypes) iYield;
+						if (GC.getYieldInfo((YieldTypes) iYield).isCargo())
 						{
-							gDLL->sendDoTask(info.getData1(), TASK_CHANGE_CUSTOM_HOUSE_SETTINGS, iYield, iLevel, bNeverSell, false, false, false);
+							bool bNeverSell = (pPopupReturn->getCheckboxBitfield(iYield) & 0x01);
+							int iLevel = pPopupReturn->getSpinnerWidgetValue(iYield);
+						
+							if (bNeverSell != pCity->isCustomHouseNeverSell(eYield) || iLevel != pCity->getCustomHouseSellThreshold(eYield))
+							{
+								gDLL->sendDoTask(info.getData1(), TASK_CHANGE_CUSTOM_HOUSE_SETTINGS, iYield, iLevel, bNeverSell, false, false, false);
+							}
 						}
 					}
 				}
@@ -3323,19 +3338,22 @@ bool CvDLLButtonPopup::launchPurchaseEuropeUnitPopup(CvPopup* pPopup, CvPopupInf
 		if (NO_UNIT != eUnit)
 		{
 			EuropeTypes eTradeScreen = (EuropeTypes)info.getData3();
-			FAssert(eTradeScreen != NO_EUROPE);
-			if (GC.getUnitInfo(eUnit).getDomainType() == DOMAIN_SEA)
+			//FAssert(eTradeScreen != NO_EUROPE);
+			if (eTradeScreen != NO_EUROPE)
 			{
-				bWaterUnitReady = false;
-				for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+				if (GC.getUnitInfo(eUnit).getDomainType() == DOMAIN_SEA)
 				{
-					CvPlot* pPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
-					if (pPlot->isRevealed(kPlayer.getTeam(), false))
+					bWaterUnitReady = false;
+					for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
 					{
-						if (pPlot->isTradeScreenAccessPlot(eTradeScreen))
+						CvPlot* pPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+						if (pPlot->isRevealed(kPlayer.getTeam(), false))
 						{
-							bWaterUnitReady = true;
-							break;
+							if (pPlot->isTradeScreenAccessPlot(eTradeScreen))
+							{
+								bWaterUnitReady = true;
+								break;
+							}
 						}
 					}
 				}
@@ -3428,13 +3446,12 @@ bool CvDLLButtonPopup::launchCivicOptionPopup(CvPopup* pPopup, CvPopupInfo &info
     FatherPointTypes eFatherPoint = (FatherPointTypes)GC.getXMLval(XML_FATHER_POINT_REAL_TRADE);
     if (info.getData1() == -3)
     {
-        CivicOptionTypes eCivicOption = CIVICOPTION_INVENTIONS;
         FatherPointTypes eFatherPoint = (FatherPointTypes)GC.getXMLval(XML_FATHER_POINT_REAL_TRADE);
         gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_CHOOSE_TRADING_PERK"));
         for (int iCivic = 0; iCivic < GC.getNumCivicInfos(); ++iCivic)
         {
             CvCivicInfo& kCivicInfo = GC.getCivicInfo((CivicTypes) iCivic);
-            if (kCivicInfo.getCivicOptionType() == eCivicOption)
+            if (kCivicInfo.getCivicOptionType() == CIVICOPTION_INVENTIONS)
             {
                 if (GC.getCivicInfo((CivicTypes)iCivic).getRequiredFatherPoints(eFatherPoint) > 0)
                 {
@@ -4307,25 +4324,44 @@ bool CvDLLButtonPopup::launchCustomHousePopup(CvPopup* pPopup, CvPopupInfo &info
 		return false;
 	}
 
+	YieldTypes eClickedYield = (YieldTypes)info.getData2();
+
 	// R&R, ray, finishing Custom House Screen
 	gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_CUSTOM_HOUSE_POPUP_TEXT", pCity->getNameKey()));
-
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	if (eClickedYield != NO_YIELD)
 	{
-		YieldTypes eYield = (YieldTypes) iYield;
 
-		if (YieldGroup_Cargo(eYield))
-		{
-			CvYieldInfo& kYield = GC.getYieldInfo(eYield);
+			CvYieldInfo& kYield = GC.getYieldInfo(eClickedYield);
+			int iYield = info.getData2();
 			// R&R, ray, finishing Custom House Screen
 			gDLL->getInterfaceIFace()->popupStartHLayout(pPopup, 0);
 			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"", kYield.getButton(), -1, WIDGET_HELP_YIELD, iYield);
 			gDLL->getInterfaceIFace()->popupCreateCheckBoxes(pPopup, 1, iYield, WIDGET_GENERAL, POPUP_LAYOUT_TOP);
 			gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 0, gDLL->getText("TXT_KEY_POPUP_NEVER_SELL"), iYield);
 			// R&R, ray, finishing Custom House Screen
-			gDLL->getInterfaceIFace()->popupSetCheckBoxState(pPopup, 0, pCity->isCustomHouseNeverSell(eYield), iYield);
-			gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, iYield, L"", pCity->getCustomHouseSellThreshold(eYield), 10, 999, 0);
+			gDLL->getInterfaceIFace()->popupSetCheckBoxState(pPopup, 0, pCity->isCustomHouseNeverSell(eClickedYield), iYield);
+			gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, iYield, L"", pCity->getCustomHouseSellThreshold(eClickedYield), 10, 999, 0);
 			gDLL->getInterfaceIFace()->popupEndLayout(pPopup);
+	}
+	else
+	{
+		for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+		{
+			YieldTypes eYield = (YieldTypes) iYield;
+
+			if (YieldGroup_Cargo(eYield))
+			{
+				CvYieldInfo& kYield = GC.getYieldInfo(eYield);
+				// R&R, ray, finishing Custom House Screen
+				gDLL->getInterfaceIFace()->popupStartHLayout(pPopup, 0);
+				gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"", kYield.getButton(), -1, WIDGET_HELP_YIELD, iYield);
+				gDLL->getInterfaceIFace()->popupCreateCheckBoxes(pPopup, 1, iYield, WIDGET_GENERAL, POPUP_LAYOUT_TOP);
+				gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 0, gDLL->getText("TXT_KEY_POPUP_NEVER_SELL"), iYield);
+				// R&R, ray, finishing Custom House Screen
+				gDLL->getInterfaceIFace()->popupSetCheckBoxState(pPopup, 0, pCity->isCustomHouseNeverSell(eYield), iYield);
+				gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, iYield, L"", pCity->getCustomHouseSellThreshold(eYield), 10, 999, 0);
+				gDLL->getInterfaceIFace()->popupEndLayout(pPopup);
+			}
 		}
 	}
 

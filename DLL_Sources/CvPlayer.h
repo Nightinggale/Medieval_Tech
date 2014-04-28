@@ -147,6 +147,10 @@ public:
 	DllExport int getBuildingClassPrereqBuilding(BuildingTypes eBuilding, BuildingClassTypes ePrereqBuildingClass, int iExtra = 0) const;
 	void removeBuildingClass(BuildingClassTypes eBuildingClass);
 	void processTrait(TraitTypes eTrait, int iChange);
+	/// trait effects not saved - start - Nightinggale
+	void processTraitNotSaved(TraitTypes eTrait, int iChange);
+	void postLoadUpateTraits();
+	/// trait effects not saved - end - Nightinggale
 	void processFather(FatherTypes eFather, int iChange);
 	void processFatherOnce(FatherTypes eFather);
 	int getFatherPointMultiplier() const;
@@ -159,7 +163,7 @@ public:
 	int calculateTotalYield(YieldTypes eYield) const;
 	void calculateTotalYields(int aiYields[]) const;
 	bool isCivic(CivicTypes eCivic) const;
-	bool canDoCivics(CivicTypes eCivic) const;
+	bool canDoCivics(CivicTypes eCivic, bool bProhitbitCheck = false) const;
 	DllExport int greatGeneralThreshold() const;
 	int immigrationThreshold() const;
 	int revolutionEuropeUnitThreshold() const;
@@ -356,7 +360,7 @@ public:
 	DllExport int getBuildingYieldChange(BuildingClassTypes eBuildingClass, YieldTypes eYield) const;
 	void changeBuildingYieldChange(BuildingClassTypes eBuildingClass, YieldTypes eYield, int iChange);
 	int getTaxYieldModifierCount(YieldTypes eYield) const;
-	void changeTaxYieldModifierCount(YieldTypes eYield, int iChange) const;
+	void changeTaxYieldModifierCount(YieldTypes eYield, int iChange);
 
 	void updateGroupCycle(CvUnit* pUnit);
 	void removeGroupCycle(int iID);
@@ -526,10 +530,60 @@ public:
 	void changeIdeaProgress(CivicTypes eCivic, int iChange);
 
 
-    UnitTypes getDefaultPopUnit() const;
-    void setDefaultPopUnit(UnitTypes eUnit);
+    
 	bool getTechsInitialized() const;
+	void setDefaultPopUnit(UnitTypes eUnit);
+	UnitTypes getDefaultPopUnit() const;
 	///TKs Med
+	///Tk Civics
+	void setLuxuryPopUnit(UnitTypes eUnit);
+	UnitTypes getLuxuryPopUnit() const;
+
+	UnitClassTypes getConvertedNativeUnitClass() const;
+    void setConvertedNativeUnitClass(UnitClassTypes eUnitClass);
+	void resetConnectedPlayerYieldBonus(CivicTypes eCivic = NO_CIVIC, int iChange = 1);
+	int getNumNetworkCities() const;
+	void addNetworkCities(CvCity* pCity);
+	void removeNetworkCities(CvCity* pCity);
+	int getAnarchyTurns() const;
+	bool isAnarchy() const;
+	void changeAnarchyTurns(int iChange);
+	int getMaxAnarchyTurns() const;
+	void updateMaxAnarchyTurns();
+	int getAnarchyModifier() const;
+	void changeAnarchyModifier(int iChange);
+	bool canChangeCivics(CivicTypes* paeNewCivics) const;
+	void changeCivics(CivicTypes* paeNewCivics, bool bForce = false);
+	int getRevolutionTimer() const;
+	void setRevolutionTimer(int iNewValue);
+	void changeRevolutionTimer(int iChange);
+	int getConversionTimer() const;
+	void setConversionTimer(int iNewValue);
+	void changeConversionTimer(int iChange);
+	int getCivicAnarchyLength(CivicTypes* paeNewCivics) const;
+	int getCivicInitalCosts(CivicTypes* paeNewCivics) const;
+	int getSingleCivicUpkeep(CivicTypes eCivic, bool bIgnoreAnarchy) const;
+	int getCivicUpkeep(CivicTypes* paeCivics, bool bIgnoreAnarchy) const;
+	int getUpkeepModifier() const;
+	void changeUpkeepModifier(int iChange);
+	int getGoldIncome() const;
+	void changeGoldIncome(int iChange);
+	void setGoldIncome(int iChange);
+	int getExpences() const;
+	void changeExpences(int iChange);
+	int getUpkeepCount(YieldTypes eIndex) const;
+	void changeUpkeepCount(YieldTypes eIndex, int iChange);
+	int getGarrisonUnitBonus(YieldTypes eIndex) const;
+	void changeGarrisonUnitBonus(YieldTypes eIndex, int iChange);
+	void changeTradingPostCount(PlayerTypes eIndex, int iChange);
+	int getTradingPostCount(PlayerTypes eIndex) const;
+	void changeDiplomacyAttitudeModifier(int iChange);
+	int getDiplomacyAttitudeModifier(PlayerTypes ePlayer) const;
+	/*int getHasCivicOptionCount(CivicOptionTypes eIndex) const;
+	bool isHasCivicOption(CivicOptionTypes eIndex) const;
+	void changeHasCivicOptionCount(CivicOptionTypes eIndex, int iChange);*/
+	int getUnitClassFoodCost(UnitTypes eUnit, bool bResetAll = false) const;
+	//Tk Civics End
 	DllExport CvCity* getTradeFairCity() const;
 	void setTradeFairCity(CvCity* pTradeFairCity);
 	bool canMakeVassalDemand(PlayerTypes eVassal);
@@ -565,13 +619,23 @@ public:
 	int getVillages() const;
 	int getMonasterys() const;
 	int getCastles() const;
-	int getNumDocksNextUnits() const;
+	int getCityPlotFoodBonus() const;
+	unsigned int getNumDocksNextUnits() const;
+	void changeNumDocksNextUnits(int iChange);
+	int getMissionaryHide() const;
+	void changeMissionaryHide(int iChange);
+	int getTradingPostHide() const;
+	void changeTradingPostHide(int iChange);
+	int getHuntingYieldPercent() const;
+	void changeWorkersBuildAfterMove(int iChange);
+	int getWorkersBuildAfterMove() const;
+	void changeHuntingYieldPercent(int iChange);
 	void changeGoldPlundered(int iChange);
 	void changeMissionsActive(int iChange);
 	void changeVillages(int iChange);
 	void changeMonasterys(int iChange);
 	void changeCastles(int iChange);
-	void changeNumDocksNextUnits(int iChange);
+	//void changeNumDocksNextUnits(int iChange);
 	MedCityTypes getAICityType();
 	void changeCityTypes(MedCityTypes CityType, int iChange);
 	int prolificInventorThreshold() const;
@@ -584,6 +648,8 @@ public:
     void createProlificInventor(UnitTypes eInvetorUnit, bool bIncrementExperience, int iX, int iY);
 	int getCostToResearch(CivicTypes eCivic);
 	int getPreviousFatherPoints(FatherPointTypes eIndex) const;
+	int getBonusFatherPoints(FatherPointTypes ePointType) const;
+	void changeBonusFatherPoints(FatherPointTypes ePointType, int iChange);
 	int getTemporyIdeasStored() const;
 	int getIdeasStored() const;
 	void setPreviousFatherPoints(FatherPointTypes eIndex, int iChange);
@@ -591,6 +657,7 @@ public:
 	void changeIdeasStored(int iChange);
 	void doSetupIdeas(bool Cheat=false);
 	void doIdeas(bool Cheat=false);
+	int getBonusTechModifier(int iExtra, bool doTrade = false) const;
 	CivicTypes getCurrentResearch() const;
 	CivicTypes getCurrentTradeResearch() const;
 	void setCurrentResearch(CivicTypes eCurrentResearch);
@@ -603,6 +670,10 @@ public:
 	int getCurrentResearchProgress(bool bGetTurns, CivicTypes eCivic = NO_CIVIC);
 	int getTurnstoCompleteResearch(bool bReturnNetResearch=false, CivicTypes eCivic = NO_CIVIC);
 	void processCivics(CivicTypes eCivic, int iChange);
+	/// non saved civic effects - start - Nightinggale
+	void processCivicNotSaved(CivicTypes eCivic, int iChange);
+	void postLoadCivicUpdate();
+	/// non saved civic effects - end - Nightinggale
 	int getIdea(bool Research, PlayerTypes ePlayer = NO_PLAYER) const;
 	void setResearchPartner(PlayerTypes ePartner);
 	PlayerTypes getResearchPartner() const;
@@ -683,7 +754,14 @@ public:
 	void hurry(HurryTypes eHurry, int iIndex);
 	int getHurryGold(HurryTypes eHurry, int iIndex) const;
 	const wchar* getHurryItemTextKey(HurryTypes eHurry, int iData) const;
-	///TKs Invention Core Mod v 1.0
+	///TKs Med
+	int getNumCivicCombatBonuses() const;
+	int getCivicCombatBonuses(int i) const;
+	CivicTypes getCivicCombatBonusCivic(int i) const;
+	void addCivicCombatBonuses(CivicTypes eCivic, int iBonus);
+	void clearCivicCombatBonuses();
+	int calculateCivicCombatBonuses(PlayerTypes ePlayer) const;
+
 	void doImmigrant(int iIndex, int iReason = 0);
 	///TKe
 
@@ -793,6 +871,17 @@ protected:
 	int m_iMissionaryRateModifier;
 	int m_iMissionarySuccessPercent;
     ///TKs Invention Core Mod v 1.0
+	///Tks CivicsStart
+	int m_iAnarchyTurns;
+	int m_iMaxAnarchyTurns;
+	int m_iAnarchyModifier;
+	int m_iRevolutionTimer;
+	int m_iConversionTimer;
+	int m_iUpkeepModifier;
+	int m_iGoldIncome;
+	int m_iExpences;
+	int m_iDiplomacyAttitude;
+	///Tks CivicsEnd
     int m_iTradeFairCityID;
     int m_iProlificInventorModifier;
 	int m_iProlificInventorThresholdModifier;
@@ -802,12 +891,21 @@ protected:
 	int m_iEventResetTimer;
 	int m_iCurrentFoundCityType;
 	int m_iGoldPlundered;
+	int m_iMissionaryHide;
+	int m_iTradingPostHide;
+	int m_iHuntingYieldPercent;
+	int m_iWorkersBuildAfterMove;
 	int m_iMissionsActive;
 	int m_iVillages;
 	int m_iMonasterys;
 	int m_iCastles;
+	int m_iCityPlotFoodBonus;
 	int m_iNumDocksNextUnits;
 	UnitTypes m_iDefaultPopUnit;
+	///Tks Civics
+	UnitTypes m_iLuxuryPopUnit;
+	///Tke Civics
+	UnitClassTypes m_iConvertedNativeUnit;
 	int m_iFreeTechs;
 	int m_bTechsInitialized;
 	int m_bAllResearchComplete;
@@ -841,52 +939,58 @@ protected:
 	TeamTypes m_eTeamType;
 	YieldTypes m_eImmigrationConversion;
 
-	int* m_aiSeaPlotYield;
-	int* m_aiYieldRateModifier;
-	int* m_aiCapitalYieldRateModifier;
-	int* m_aiBuildingRequiredYieldModifier;
-	int* m_aiCityExtraYield;
-	int* m_aiExtraYieldThreshold;
-	int* m_aiYieldBuyPrice;
-	int* m_aiYieldTradedTotal;
-	int* m_aiYieldBoughtTotal;
-	int* m_aiTaxYieldModifierCount;
+	YieldArray<int> m_ja_iSeaPlotYield;
+	YieldArray<int> m_ja_iYieldRateModifier;
+	YieldArray<int> m_ja_iCapitalYieldRateModifier;
+	YieldArray<int> m_ja_iBuildingRequiredYieldModifier;
+	YieldArray<int> m_ja_iCityExtraYield;
+	YieldArray<int> m_ja_iExtraYieldThreshold;
+	YieldArray<int> m_ja_iYieldBuyPrice;
+	YieldArray<int> m_ja_iYieldTradedTotal;
+	YieldArray<int> m_ja_iYieldBoughtTotal;
+	YieldArray<int> m_ja_iTaxYieldModifierCount;
 	///TKs Invention Core Mod v 1.0
-	int* m_aiVictoryYieldCount;
+	YieldArray<int> m_ja_iVictoryYieldCount;
 	int* m_aiCensureTypes;
 	///TKs Med
-	int* m_aiTradeRouteStartingPlotX;
-	int* m_aiTradeRouteStartingPlotY;
-	bool* m_abTradeRouteTypes;
+	///TK Civics
+	//int* m_paiHasCivicOptionCount;
+	int* m_aiTradingPostCount;
+	YieldArray<int> m_ja_iUpkeepCount;
+	YieldArray<int> m_ja_iGarrisonUnitBonus;
+	EuropeArray<int> m_ja_iTradeRouteStartingPlotX;
+	EuropeArray<int> m_ja_iTradeRouteStartingPlotY;
+	BoolArray m_ba_TradeRouteTypes; // EuropeArray
 	///Tke
 
-	bool* m_abYieldEuropeTradable;
+	BoolArray m_ba_YieldEuropeTradable;
 	bool* m_abFeatAccomplished;
 	bool* m_abOptions;
 
 	CvString m_szScriptData;
     ///TKs Invention Core Mod v 1.0
-    int* m_aiIdeaProgress;
-    int* m_aiIdeasResearched;
-    int* m_aiPreviousFatherPoints;
+    CivicArray<int> m_ja_iIdeaProgress;
+    CivicArray<int> m_ja_iIdeasResearched;
+    FatherArray<int> m_ja_iPreviousFatherPoints;
+	FatherArray<int> m_ja_iBonusFatherPoints;
     ///TKe
-	int* m_paiImprovementCount;
-	int* m_paiFreeBuildingCount;
-	int* m_paiUnitClassCount;
-	int* m_paiUnitClassMaking;
-	int* m_paiUnitClassImmigrated;
-	int* m_paiUnitMoveChange;
-	int* m_paiUnitStrengthModifier;
-	int* m_paiProfessionCombatChange;
-	int* m_paiProfessionMoveChange;
-	int* m_paiBuildingClassCount;
-	int* m_paiBuildingClassMaking;
-	int* m_paiHurryCount;
-	int* m_paiSpecialBuildingNotRequiredCount;
+	ImprovementArray<int> m_ja_iImprovementCount;
+	BuildingArray<int> m_ja_iFreeBuildingCount;
+	UnitClassArray<int> m_ja_iUnitClassCount;
+	UnitClassArray<int> m_ja_iUnitClassMaking;
+	UnitClassArray<int> m_ja_iUnitClassImmigrated;
+	UnitClassArray<int> m_ja_iUnitMoveChange;
+	UnitClassArray<int> m_ja_iUnitStrengthModifier;
+	ProfessionArray<int> m_ja_iProfessionCombatChange;
+	ProfessionArray<int> m_ja_iProfessionMoveChange;
+	BuildingClassArray<int> m_ja_iBuildingClassCount;
+	BuildingClassArray<int> m_ja_iBuildingClassMaking;
+	HurryArray<int> m_ja_iHurryCount;
+	BuildingSpecialArray<int> m_ja_iSpecialBuildingNotRequiredCount;
 	int* m_aiMissionaryPoints;
 	int* m_aiMissionaryThresholdMultiplier;
-	int* m_aiProfessionEquipmentModifier;
-	int* m_aiTraitCount;
+	ProfessionArray<int> m_ja_iProfessionEquipmentModifier;
+	TraitArray<int> m_ja_iTraitCount;
 
 	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
 	YieldArray<ProfessionYieldCost> *m_cache_YieldEquipmentAmount;
@@ -896,12 +1000,13 @@ protected:
 	// cache CvPlayer::getYieldEquipmentAmount - end - Nightinggale
 
 	std::vector<EventTriggerTypes> m_triggersFired;
-	CivicTypes* m_paeCivics;
+	CivicOptionArray<CivicTypes> m_ja_eCivics;
 	int** m_ppiImprovementYieldChange;
 	int** m_ppiBuildingYieldChange;
 	CLinkList<int> m_groupCycle;
 	std::vector<CvWString> m_aszCityNames;
 	FFreeListTrashArray<CvCityAI> m_cities;
+	std::vector<CvCity*> m_aNetworkCities; //TKs Civics
 	CvIdVector<CvTradeRoute> m_tradeRoutes;
 	CvIdVector<CvUnitAI> m_units;
 	std::vector<CvUnit*> m_aEuropeUnits;
@@ -911,7 +1016,7 @@ protected:
 	CvEventMap m_mapEventCountdown;
 	UnitCombatPromotionArray m_aFreeUnitCombatPromotions;
 	UnitClassPromotionArray m_aFreeUnitClassPromotions;
-
+	std::vector< std::pair<CivicTypes, int> > m_aCivicCombatBonuses;///Tks Civics
 	std::vector< std::pair<UnitTypes, ProfessionTypes> > m_aEuropeRevolutionUnits;
 	std::vector<UnitTypes> m_aDocksNextUnits;
 	CvMessageQueue m_listGameMessages;
@@ -989,21 +1094,23 @@ protected:
 public:
 	bool canUseYield(YieldTypes eYield) const;
 	bool canUseUnit(UnitTypes eUnit) const;
+	bool canUseUnitImmigration(UnitTypes eUnit) const;
 	bool canUseBuilding(BuildingTypes eBuilding) const;
 	bool canUseProfession(ProfessionTypes eProfession) const;
 	bool canUseBonus(BonusTypes eBonus) const;
-	int getCityPlotFoodBonus() const;
+	//int getCityPlotFoodBonus() const;
 
 protected:
-	YieldArray<bool> m_abBannedYields;
-	UnitArray<bool> m_abBannedUnits;
-	BuildingArray<bool> m_abBannedBuildings;
-	ProfessionArray<bool> m_abBannedProfessions;
-	BonusArray<bool> m_abBannedBonus;
+	BoolArray m_ba_AllowedBonus;
+	BoolArray m_ba_AllowedBuildings;
+	BoolArray m_ba_AllowedProfessions;
+	BoolArray m_ba_AllowedUnits;
+	BoolArray m_ba_AllowedUnitsImmigration;
+	BoolArray m_ba_AllowedYields;
 
-	int m_iCityPlotFoodBonus;
-
-	void updateInventionEffectCache();
+	void updateInventionEffectCacheSingleArray(CivicTypes eChangedCivic, BoolArray* pArray, int (CvCivicInfo::*fptr)(int) const, int (CvCivicInfo::*fptrParent)(int) const = NULL);
+	void updateInventionEffectCache(CivicTypes eChangedCivic = NO_CIVIC);
+	void updateImmigrantsOnDock();//TKs Civics
 // invention effect cache - end - Nightinggale
 
 // transport feeder - start - Nightinggale
@@ -1058,29 +1165,35 @@ inline bool CvPlayer::hasContentsAnyYieldEquipmentAmountSecure(ProfessionTypes e
 inline bool CvPlayer::canUseYield(YieldTypes eYield) const
 {
 	FAssert(eYield < NUM_YIELD_TYPES);
-	return eYield >= 0 ? !this->m_abBannedYields.get(eYield) : false;
+	return eYield >= 0 ? this->m_ba_AllowedYields.get(eYield) : false;
 }
 
 inline bool CvPlayer::canUseUnit(UnitTypes eUnit) const
 {
 	FAssert(eUnit < GC.getNumUnitInfos());
-	return eUnit >= 0 ? !this->m_abBannedUnits.get(eUnit) : false;
+	return eUnit >= 0 ? this->m_ba_AllowedUnits.get(eUnit) : false;
+}
+
+inline bool CvPlayer::canUseUnitImmigration(UnitTypes eUnit) const
+{
+	FAssert(eUnit < GC.getNumUnitInfos());
+	return eUnit >= 0 ? this->m_ba_AllowedUnitsImmigration.get(eUnit) : false;
 }
 
 inline bool CvPlayer::canUseBuilding(BuildingTypes eBuilding) const
 {
-	return eBuilding >= 0 ? !this->m_abBannedBuildings.get(eBuilding) : false;
+	return eBuilding >= 0 ? this->m_ba_AllowedBuildings.get(eBuilding) : false;
 }
 
 inline bool CvPlayer::canUseProfession(ProfessionTypes eProfession) const
 {
 	FAssert(eProfession < GC.getNumProfessionInfos());
-	return eProfession >= 0 ? !this->m_abBannedProfessions.get(eProfession) : false;
+	return eProfession >= 0 ? this->m_ba_AllowedProfessions.get(eProfession) : false;
 }
 
 inline bool CvPlayer::canUseBonus(BonusTypes eBonus) const
 {
-	return eBonus >= 0 ? !m_abBannedBonus.get(eBonus) : false;
+	return eBonus >= 0 ? m_ba_AllowedBonus.get(eBonus) : false;
 }
 
 inline int CvPlayer::getCityPlotFoodBonus() const

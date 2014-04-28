@@ -24,6 +24,7 @@
 					<iTurnsPerIncrement>900</iTurnsPerIncrement>
 				</GameTurnInfo>
 			</GameTurnInfos>
+      <iAnarchyPercent>200</iAnarchyPercent>
 			<TradeRouteTripLengths>
 				<TradeRouteTripLength>
 					<TradeScreen>TRADE_SCREEN_MOTHERLAND</TradeScreen>
@@ -60,6 +61,7 @@
 					<iTurnsPerIncrement>450</iTurnsPerIncrement>
 				</GameTurnInfo>
 			</GameTurnInfos>
+      <iAnarchyPercent>150</iAnarchyPercent>
 			<TradeRouteTripLengths>
 				<TradeRouteTripLength>
 					<TradeScreen>TRADE_SCREEN_MOTHERLAND</TradeScreen>
@@ -93,9 +95,10 @@
 			<GameTurnInfos>
 				<GameTurnInfo>
 					<iMonthIncrement>12</iMonthIncrement>
-					<iTurnsPerIncrement>350</iTurnsPerIncrement>
+					<iTurnsPerIncrement>300</iTurnsPerIncrement>
 				</GameTurnInfo>
 			</GameTurnInfos>
+      <iAnarchyPercent>100</iAnarchyPercent>
 			<TradeRouteTripLengths>
 				<TradeRouteTripLength>
 					<TradeScreen>TRADE_SCREEN_MOTHERLAND</TradeScreen>
@@ -132,6 +135,7 @@
 					<iTurnsPerIncrement>225</iTurnsPerIncrement>
 				</GameTurnInfo>
 			</GameTurnInfos>
+      <iAnarchyPercent>67</iAnarchyPercent>
 			<TradeRouteTripLengths>
 				<TradeRouteTripLength>
 					<TradeScreen>TRADE_SCREEN_MOTHERLAND</TradeScreen>

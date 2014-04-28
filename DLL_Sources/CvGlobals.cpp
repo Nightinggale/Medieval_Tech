@@ -22,6 +22,8 @@
 #include "CvInitCore.h"
 #include "CvXMLLoadUtility.h"
 
+#include "CvInfoProfessions.h"
+
 #define COPY(dst, src, typeName) \
 	{ \
 		int iNum = sizeof(src)/sizeof(typeName); \
@@ -1899,6 +1901,25 @@ CvInfoBase& CvGlobals::getCivicOptionInfo(CivicOptionTypes eCivicOptionNum)
 	return *(m_paCivicOptionInfo[eCivicOptionNum]);
 }
 
+//TKs
+int CvGlobals::getNumGlobalCivicEffectInfos()
+{
+	return (int)m_paGlobalCivicEffectInfos.size();
+}
+
+std::vector<CvInfoBase*>& CvGlobals::getGlobalCivicEffectInfos()	// For Moose - XML Load Util, CvInfos
+{
+	return m_paGlobalCivicEffectInfos;
+}
+
+CvInfoBase& CvGlobals::getGlobalCivicEffectInfos(GlobalCivicEffectTypes eGlobalCivicEffect)
+{
+	FAssert(eGlobalCivicEffect > -1);
+	FAssert(eGlobalCivicEffect < GC.getNumCivicOptionInfos());
+	return *(m_paGlobalCivicEffectInfos[eGlobalCivicEffect]);
+}
+//Tke
+
 int CvGlobals::getNumCivicInfos()
 {
 	return (int)m_paCivicInfo.size();
@@ -2517,17 +2538,14 @@ int CvGlobals::getXMLuncached(XMLconstantTypes eVal) const
 		case XML_DEFAULT_CENSURETYPE_INTERDICT_COUNT:
 			return this->getDefineINT("DEFAULT_CENSURETYPE_INTERDICT_COUNT");
 			break;
+		case XML_DEFAULT_GLOBAL_EFFECT_ANARCHY:
+			return this->getDefineINT("DEFAULT_GLOBAL_EFFECT_ANARCHY");
+			break;
 		case XML_DEFAULT_COMBAT_FOR_TRAINING:
 			return this->getDefineINT("DEFAULT_COMBAT_FOR_TRAINING");
 			break;
-		case XML_DEFAULT_DAWN_POPULATION_UNIT:
-			return this->getDefineINT("DEFAULT_DAWN_POPULATION_UNIT");
-			break;
 		case XML_DEFAULT_FUEDALISM_TECH:
 			return this->getDefineINT("DEFAULT_FUEDALISM_TECH");
-			break;
-		case XML_DEFAULT_GRAIN_GROWTH_UNIT_CLASS:
-			return this->getDefineINT("DEFAULT_GRAIN_GROWTH_UNIT_CLASS");
 			break;
 		case XML_DEFAULT_HUNTSMAN_PROFESSION:
 			return this->getDefineINT("DEFAULT_HUNTSMAN_PROFESSION");
@@ -2552,9 +2570,6 @@ int CvGlobals::getXMLuncached(XMLconstantTypes eVal) const
 			break;
 		case XML_DEFAULT_NOBLEMAN_CLASS:
 			return this->getDefineINT("DEFAULT_NOBLEMAN_CLASS");
-			break;
-		case XML_DEFAULT_NOBLE_GROWTH_UNIT_CLASS:
-			return this->getDefineINT("DEFAULT_NOBLE_GROWTH_UNIT_CLASS");
 			break;
 		case XML_DEFAULT_PILGRAM_CLASS:
 			return this->getDefineINT("DEFAULT_PILGRAM_CLASS");
@@ -2618,9 +2633,6 @@ int CvGlobals::getXMLuncached(XMLconstantTypes eVal) const
 			break;
 		case XML_FOUND_VILLAGE_NUMBER:
 			return this->getDefineINT("FOUND_VILLAGE_NUMBER");
-			break;
-		case XML_FREE_PEASANT_CIVIC:
-			return this->getDefineINT("FREE_PEASANT_CIVIC");
 			break;
 		case XML_HIRE_GUARD_COST:
 			return this->getDefineINT("HIRE_GUARD_COST");
@@ -2931,8 +2943,14 @@ int CvGlobals::getXMLuncached(XMLconstantTypes eVal) const
 		case XML_DEEP_WATER_TERRAIN:
 			return this->getDefineINT("DEEP_WATER_TERRAIN");
 			break;
-		case XML_DEFAULT_POPULATION_UNIT:
-			return this->getDefineINT("DEFAULT_POPULATION_UNIT");
+		case XML_DEFAULT_GROWTH_UNITCLASS:
+			return this->getDefineINT("DEFAULT_GROWTH_UNITCLASS");
+			break;
+		case XML_DEFAULT_GROWTH_NOBLE_UNITCLASS:
+			return this->getDefineINT("DEFAULT_GROWTH_NOBLE_UNITCLASS");
+			break;
+		case XML_DEFAULT_POPULATION_UNITCLASS:
+			return this->getDefineINT("DEFAULT_POPULATION_UNITCLASS");
 			break;
 		case XML_DIFFERENT_TEAM_FEATURE_PRODUCTION_PERCENT:
 			return this->getDefineINT("DIFFERENT_TEAM_FEATURE_PRODUCTION_PERCENT");
@@ -4191,6 +4209,7 @@ void CvGlobals::CheckEnumControlTypes() const
 	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_SILK_ROAD_SCREEN).getType(), "CONTROL_SILK_ROAD_SCREEN"), CvString::format("XML error. Found %s instead of CONTROL_SILK_ROAD_SCREEN at index %d", GC.getControlInfo(CONTROL_SILK_ROAD_SCREEN).getType(), CONTROL_SILK_ROAD_SCREEN).c_str());
 	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_TRADE_FAIR_SCREEN).getType(), "CONTROL_TRADE_FAIR_SCREEN"), CvString::format("XML error. Found %s instead of CONTROL_TRADE_FAIR_SCREEN at index %d", GC.getControlInfo(CONTROL_TRADE_FAIR_SCREEN).getType(), CONTROL_TRADE_FAIR_SCREEN).c_str());
 	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_IMMIGRATION_SCREEN).getType(), "CONTROL_IMMIGRATION_SCREEN"), CvString::format("XML error. Found %s instead of CONTROL_IMMIGRATION_SCREEN at index %d", GC.getControlInfo(CONTROL_IMMIGRATION_SCREEN).getType(), CONTROL_IMMIGRATION_SCREEN).c_str());
+	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_CIVICS_SCREEN).getType(), "CONTROL_CIVICS_SCREEN"), CvString::format("XML error. Found %s instead of CONTROL_CIVICS_SCREEN at index %d", GC.getControlInfo(CONTROL_CIVICS_SCREEN).getType(), CONTROL_CIVICS_SCREEN).c_str());
 	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_TURN_LOG).getType(), "CONTROL_TURN_LOG"), CvString::format("XML error. Found %s instead of CONTROL_TURN_LOG at index %d", GC.getControlInfo(CONTROL_TURN_LOG).getType(), CONTROL_TURN_LOG).c_str());
 	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_CHAT_ALL).getType(), "CONTROL_CHAT_ALL"), CvString::format("XML error. Found %s instead of CONTROL_CHAT_ALL at index %d", GC.getControlInfo(CONTROL_CHAT_ALL).getType(), CONTROL_CHAT_ALL).c_str());
 	FAssertMsg(!strcmp(GC.getControlInfo(CONTROL_CHAT_TEAM).getType(), "CONTROL_CHAT_TEAM"), CvString::format("XML error. Found %s instead of CONTROL_CHAT_TEAM at index %d", GC.getControlInfo(CONTROL_CHAT_TEAM).getType(), CONTROL_CHAT_TEAM).c_str());
@@ -4267,3 +4286,178 @@ void CvGlobals::reloadSpecialBuildings()
 	pXML.reloadSpecialBuildings();
 }
 /// special building placement xml - end - Nightinggale
+
+/// JIT array save - start - Nightinggale
+int CvGlobals::getArrayLength(JIT_ARRAY_TYPES eType)
+{
+	switch (eType)
+	{
+	case JIT_ARRAY_BONUS:
+		return getNumBonusInfos();
+	case JIT_ARRAY_BUILD:
+		return getNumBuildInfos();
+	case JIT_ARRAY_BUILDING:
+		return getNumBuildingInfos();
+	case JIT_ARRAY_BUILDING_CLASS:
+		return getNumBuildingClassInfos();
+	case JIT_ARRAY_BUILDING_SPECIAL:
+		return getNumSpecialBuildingInfos();
+	case JIT_ARRAY_CIVIC:
+		return getNumCivicInfos();
+	case JIT_ARRAY_CIVIC_OPTION:
+		return getNumCivicOptionInfos();
+	case JIT_ARRAY_ERA:
+		return getNumEraInfos();
+	case JIT_ARRAY_EMPHASIZE:
+		return getNumEmphasizeInfos();
+	case JIT_ARRAY_EUROPE:
+		return getNumEuropeInfos();
+	case JIT_ARRAY_EVENT_TRIGGER:
+		return getNumEventTriggerInfos();
+	case JIT_ARRAY_FATHER:
+		return getNumFatherInfos();
+	case JIT_ARRAY_FATHER_POINT:
+		return getNumFatherPointInfos();
+	case JIT_ARRAY_FEATURE:
+		return getNumFeatureInfos();
+	case JIT_ARRAY_HANDICAP:
+		return getNumHandicapInfos();
+	case JIT_ARRAY_HURRY:
+		return getNumHurryInfos();
+	case JIT_ARRAY_IMPROVEMENT:
+		return getNumImprovementInfos();
+	case JIT_ARRAY_LEADER_HEAD:
+		return getNumLeaderHeadInfos();
+	case JIT_ARRAY_PLAYER:
+		return MAX_PLAYERS;
+	case JIT_ARRAY_PROFESSION:
+		return getNumProfessionInfos();
+	case JIT_ARRAY_PROMOTION:
+		return getNumPromotionInfos();
+	case JIT_ARRAY_ROUTE:
+		return getNumRouteInfos();
+	case JIT_ARRAY_TERRAIN:
+		return getNumTerrainInfos();
+	case JIT_ARRAY_TRAIT:
+		return getNumTraitInfos();
+	case JIT_ARRAY_UNIT:
+		return getNumUnitInfos();
+	case JIT_ARRAY_UNIT_CLASS:
+		return getNumUnitClassInfos();
+	case JIT_ARRAY_UNIT_COMBAT:
+		return getNumUnitCombatInfos();
+	case JIT_ARRAY_UNIT_SPECIAL:
+		return getNumSpecialUnitInfos();
+	case JIT_ARRAY_YIELD:
+		return NUM_YIELD_TYPES;
+	case JIT_ARRAY_CARGO_YIELD:
+		return NUM_CARGO_YIELD_TYPES;
+	}
+	FAssertMsg(false, "missing length case");
+	return 0;
+}
+
+CvWString CvGlobals::getArrayType(JIT_ARRAY_TYPES eType, int iIndex)
+{
+	// not all JIT arrays relies on XML data
+	// return an empty string when data doesn't rely in CvBasicInfo
+
+	CvWString szType;
+	
+	switch (eType)
+	{
+	case JIT_ARRAY_BONUS:
+		szType = getBonusInfo((BonusTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_BUILD:
+		szType = getBuildInfo((BuildTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_BUILDING:
+		szType = getBuildingInfo((BuildingTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_BUILDING_CLASS:
+		szType = getBuildingClassInfo((BuildingClassTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_BUILDING_SPECIAL:
+		szType = getSpecialBuildingInfo((SpecialBuildingTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_CIVIC:
+		szType = getCivicInfo((CivicTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_CIVIC_OPTION:
+		szType = getCivicOptionInfo((CivicOptionTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_ERA:
+		szType = getEraInfo((EraTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_EMPHASIZE:
+		szType = getEmphasizeInfo((EmphasizeTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_EUROPE:
+		szType = getEuropeInfo((EuropeTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_EVENT_TRIGGER:
+		szType = getEventTriggerInfo((EventTriggerTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_FATHER:
+		szType = getFatherInfo((FatherTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_FATHER_POINT:
+		szType = getFatherPointInfo((FatherPointTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_FEATURE:
+		szType = getFeatureInfo((FeatureTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_HANDICAP:
+		szType = getHandicapInfo((HandicapTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_HURRY:
+		szType = getHurryInfo((HurryTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_IMPROVEMENT:
+		szType = getImprovementInfo((ImprovementTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_LEADER_HEAD:
+		szType = getLeaderHeadInfo((LeaderHeadTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_PLAYER:
+		break;
+	case JIT_ARRAY_PROFESSION:
+		szType = getProfessionInfo((ProfessionTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_PROMOTION:
+		szType = getPromotionInfo((PromotionTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_ROUTE:
+		szType = getRouteInfo((RouteTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_TERRAIN:
+		szType = getTerrainInfo((TerrainTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_TRAIT:
+		szType = getTraitInfo((TraitTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_UNIT:
+		szType = getUnitInfo((UnitTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_UNIT_CLASS:
+		szType = getUnitClassInfo((UnitClassTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_UNIT_COMBAT:
+		szType = getUnitCombatInfo((UnitCombatTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_UNIT_SPECIAL:
+		szType = getSpecialUnitInfo((SpecialUnitTypes)iIndex).getType();
+		break;
+	case JIT_ARRAY_YIELD:
+	case JIT_ARRAY_CARGO_YIELD:
+		szType = getYieldInfo((YieldTypes)iIndex).getType();
+		break;
+	default:
+		FAssertMsg(false, "missing info case");
+	}
+
+	return szType;
+}
+/// JIT array save - end - Nightinggale
+

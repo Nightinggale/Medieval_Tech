@@ -16,6 +16,7 @@ import CvSpiceRouteScreen
 import CvSilkRoadScreen
 import CvTradeFairScreen
 import CvImmigrationScreen
+import CvCivicsScreen
 #TKend
 import CvOptionsScreen
 import CvReplayScreen
@@ -127,6 +128,11 @@ immigrationScreen = CvImmigrationScreen.CvImmigrationScreen()
 def showImmigrationScreen(argsList):
 	if (-1 != CyGame().getActivePlayer()):
 		immigrationScreen.interfaceScreen()
+
+civicoptionsScreen = CvCivicsScreen.CvCivicsScreen()
+def showCivicOptionScreen(argsList):
+	if (-1 != CyGame().getActivePlayer()):
+		civicoptionsScreen.interfaceScreen()
 #TKe 
 
 domesticAdvisor = CvDomesticAdvisor.CvDomesticAdvisor()
@@ -225,8 +231,12 @@ def pediaJumpToImprovement(argsList):
 def pediaJumpToCivic(argsList):
 	pediaMainScreen.pediaJump(PEDIA_CIVIC, argsList[0], True)
 #TK Inventions
-#def pediaJumpToTechnology(argsList):
-	#pediaMainScreen.pediaJump(PEDIA_TECHNOLOGY, argsList[0], True)
+def pediaJumpToTech(argsList):
+	pediaMainScreen.pediaJump(PEDIA_TECHS, argsList[0], True)
+def pediaJumpToTradeTech(argsList):
+	pediaMainScreen.pediaJump(PEDIA_TRADE_TECHS, argsList[0], True)
+def pediaJumpToCencure(argsList):
+	pediaMainScreen.pediaJump(PEDIA_CENSURES, argsList[0], True)
 #TK
 
 def pediaJumpToCiv(argsList):
@@ -790,6 +800,11 @@ HandleInputMap = {  MAIN_INTERFACE : mainInterface,
 					PEDIA_FEATURE : pediaMainScreen,
 					PEDIA_FATHER : pediaMainScreen,
 					PEDIA_CIVIC : pediaMainScreen,
+					#Tks New Pedia 1
+					PEDIA_TECHS : pediaMainScreen,
+					PEDIA_TRADE_TECHS : pediaMainScreen,
+					PEDIA_CENSURES : pediaMainScreen,
+					#TKe
 					PEDIA_CIVILIZATION : pediaMainScreen,
 					PEDIA_LEADER : pediaMainScreen,
 					PEDIA_HISTORY : pediaMainScreen,
@@ -804,6 +819,7 @@ HandleInputMap = {  MAIN_INTERFACE : mainInterface,
 				SILK_ROAD_SCREEN: silkroadScreen,
 				TRADE_FAIR_SCREEN: tradefairScreen,
 				IMMIGRATION_SCREEN: immigrationScreen,
+				CIVIC_OPTIONS_SCREEN: civicoptionsScreen,
 				#TK Inventions
 				#PEDIA_TECHNOLOGY : pediaMainScreen,
 				#TK
@@ -825,6 +841,11 @@ HandleNavigationMap = {
 					PEDIA_FEATURE : pediaMainScreen,
 					PEDIA_FATHER : pediaMainScreen,
 					PEDIA_CIVIC : pediaMainScreen,
+					#Tks New Pedia 2
+					PEDIA_TECHS : pediaMainScreen,
+					PEDIA_TRADE_TECHS : pediaMainScreen,
+					PEDIA_CENSURES : pediaMainScreen,
+					#TKe
 					PEDIA_CIVILIZATION : pediaMainScreen,
 					PEDIA_LEADER : pediaMainScreen,
 					PEDIA_HISTORY : pediaMainScreen,

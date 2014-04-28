@@ -32,6 +32,8 @@ public:
 	std::wstring getTerrainHelp(int iTerrain, bool bCivilopediaText);
 	std::wstring getYieldsHelp(int iTerrain, bool bCivilopediaText);
 	std::wstring getFeatureHelp(int iFeature, bool bCivilopediaText);
+	//tks
+	std::wstring setRevolutionHelp(int iPlayer);
 	///TKs Invention Core Mod v 1.0
 	std::wstring parseCivicInfo(int /*CivicTypes*/ iCivicType, bool bCivilopediaText, bool bPlayerContext, bool bSkipName, bool bOnlyCost, int /*CivilizationTypes*/ eCivilization);
 	///TKe

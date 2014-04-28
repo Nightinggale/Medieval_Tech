@@ -10,6 +10,14 @@
 	<ElementType name="ArtDefineTag" content="textOnly"/>
 	<ElementType name="AlarmType" content="textOnly"/>
   <!--TK Start-->
+  <ElementType name="TradeScreen" content="textOnly"/>
+  <ElementType name="TradeScreens" content="eltOnly">
+    <element type="TradeScreen"/>
+    <element type="bValid"/>
+  </ElementType>
+  <ElementType name="TradeScreensAllowed" content="eltOnly">
+    <element type="TradeScreens" minOccurs="0" maxOccurs="*"/>
+  </ElementType>
 	<ElementType name="AttackForceKey" content="textOnly"/>
 	<ElementType name="iResearchMod" content="textOnly" dt:type="int"/>
 	<ElementType name="EraTrait" content="eltOnly">
@@ -57,6 +65,8 @@
 	<ElementType name="iShareWarAttitudeChange" content="textOnly" dt:type="int"/>
 	<ElementType name="iShareWarAttitudeDivisor" content="textOnly" dt:type="int"/>
 	<ElementType name="iShareWarAttitudeChangeLimit" content="textOnly" dt:type="int"/>
+  <ElementType name="iCivicDiplomacyDivisor" content="textOnly" dt:type="int"/>
+  <ElementType name="iCivicDiplomacyChangeLimit" content="textOnly" dt:type="int"/>
 	<ElementType name="DemandTributeAttitudeThreshold" content="textOnly"/>
 	<ElementType name="NoGiveHelpAttitudeThreshold" content="textOnly"/>
 	<ElementType name="MapRefuseAttitudeThreshold" content="textOnly"/>
@@ -67,6 +77,13 @@
 	<ElementType name="OpenBordersRefuseAttitudeThreshold" content="textOnly"/>
 	<ElementType name="DefensivePactRefuseAttitudeThreshold" content="textOnly"/>
 	<ElementType name="PermanentAllianceRefuseAttitudeThreshold" content="textOnly"/>
+  <ElementType name="CivicDiplomacy" content="eltOnly">
+		<element type="CivicType"/>
+		<element type="iChange"/>
+	</ElementType>
+	<ElementType name="CivicDiplomacyAttitudes" content="eltOnly">
+		<element type="CivicDiplomacy" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
 	<ElementType name="YieldModifier" content="eltOnly">
 		<element type="YieldType"/>
 		<element type="iYield"/>
@@ -174,6 +191,7 @@
 		<element type="iVictoryType" minOccurs="0"/>
 		<element type="iTravelCommandType" minOccurs="0"/>
 		<element type="iEconomyType" minOccurs="0"/>
+    <element type="TradeScreensAllowed" minOccurs="0"/>
 		<element type="EraTraits" minOccurs="0"/>
     <!--TK End-->
 		<element type="iBaseAttitude"/>
@@ -209,6 +227,9 @@
 		<element type="iShareWarAttitudeChange"/>
 		<element type="iShareWarAttitudeDivisor"/>
 		<element type="iShareWarAttitudeChangeLimit"/>
+    <element type="iCivicDiplomacyDivisor"/>
+    <element type="iCivicDiplomacyChangeLimit"/>
+    <element type="CivicDiplomacyAttitudes"/>
 		<element type="DemandTributeAttitudeThreshold"/>
 		<element type="NoGiveHelpAttitudeThreshold"/>
 		<element type="MapRefuseAttitudeThreshold"/>
@@ -383,6 +404,13 @@
 	<ElementType name="GoodyFactors" content="eltOnly">
 		<element type="GoodyFactor" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
+  <ElementType name="BonusTechCategory" content="eltOnly">
+		<element type="CivicType"/>
+		<element type="iFactor"/>
+	</ElementType>
+	<ElementType name="BonusTechCategories" content="eltOnly">
+		<element type="BonusTechCategory" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
 	<ElementType name="TraitInfo" content="eltOnly">
 		<element type="Type"/>
 		<element type="Description"/>
@@ -426,6 +454,7 @@
 		<element type="FreeBuildingClasses"/>
 		<element type="bFreeBuildingAllowChange" minOccurs="0"/>
 		<element type="GoodyFactors"/>
+    <element type="BonusTechCategories" minOccurs="0"/>
 	</ElementType>
 	<ElementType name="TraitInfos" content="eltOnly">
 		<element type="TraitInfo" maxOccurs="*"/>

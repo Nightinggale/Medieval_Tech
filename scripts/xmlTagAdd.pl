@@ -66,6 +66,7 @@ writeFile(@lines);
 @lines = (openFile('GameInfo/CIV4CivicInfos.xml'));
 updateFile ("iY_Location",             "<iX_Relative_Location>0</iX_Relative_Location>");
 updateFile ("iX_Relative_Location",    "<iY_Relative_Location>0</iY_Relative_Location>");
+updateFile ("NewDefaultUnitClass",     "<NewLuxuryUnitClass/>");
 writeFile(@lines);
 
 # end if setup.

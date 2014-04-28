@@ -389,6 +389,22 @@
 		<Italian></Italian>
 		<Spanish></Spanish>
 	</TEXT>
+  <TEXT>
+    <Tag>TXT_KEYCIVILIZATION_FAVORED_CIVICS</Tag>
+    <English>[COLOR_ALT_HIGHLIGHT_TEXT]Favored Civics:[COLOR_REVERT]</English>
+    <French></French>
+    <German></German>
+    <Italian></Italian>
+    <Spanish></Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEYCIVILIZATION_DISTAINED_CIVICS</Tag>
+    <English>[COLOR_ALT_HIGHLIGHT_TEXT]Disdained Civics:[COLOR_REVERT]</English>
+    <French></French>
+    <German></German>
+    <Italian></Italian>
+    <Spanish></Spanish>
+  </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_NATIVE_TECH2_DESCRIPTION</Tag>
 		<English>Native tech 2 description</English>
@@ -429,22 +445,46 @@
 		<Italian></Italian>
 		<Spanish></Spanish>
 	</TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_PEDIA_CATEGORY_TECHS</Tag>
+    <English>Inventions</English>
+    <French>Inventions</French>
+    <German>Inventions</German>
+    <Italian>Inventions</Italian>
+    <Spanish>Inventions</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_PEDIA_CATEGORY_TRADE_PERKS</Tag>
+    <English>Trade Perks</English>
+    <French>Trade Perks</French>
+    <German>Trade Perks</German>
+    <Italian>Trade Perks</Italian>
+    <Spanish>Trade Perks</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_PEDIA_CATEGORY_CENSURES</Tag>
+    <English>Censures</English>
+    <French>Censures</French>
+    <German>Censures</German>
+    <Italian>Censures</Italian>
+    <Spanish>Censures</Spanish>
+  </TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_PEDIA_CATEGORY_CIVIC</Tag>
-		<English>Inventions / Constitution</English>
+		<Tag>TXT_KEY_PEDIA_CATEGORY_DECRESS</Tag>
+		<English>Decress</English>
 		<French>
-			<Text>Constitution / Inventions</Text>
+			<Text>Decress</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
-		<German>Verfassung / Inventions</German>
+		<German>Decress</German>
 		<Italian>
-			<Text>Costituzione / Inventions</Text>
+			<Text>Decress</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Italian>
 		<Spanish>
-			<Text>Constituci&#243;n</Text>
+			<Text>Decress</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Spanish>
@@ -1041,6 +1081,22 @@
 		<Italian>[ICON_BULLET]Disallows [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT]</Italian>
 		<Spanish>[ICON_BULLET]Disallows [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT]</Spanish>
 	</TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_PREVENT_UNITCLASS_IMMIGRATION</Tag>
+    <English>[ICON_BULLET]Prevents [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT] in Immigration</English>
+    <French>[ICON_BULLET]Prevent [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT] in Immigration</French>
+    <German>[ICON_BULLET]Prevent [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT] in Immigration</German>
+    <Italian>[ICON_BULLET]Prevent [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT] in Immigration</Italian>
+    <Spanish>[ICON_BULLET]Prevent [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT] in Immigration</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_ALLOW_UNITCLASS_IMMIGRATION</Tag>
+    <English>[ICON_BULLET]Allows [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT] in Immigration</English>
+    <French>[ICON_BULLET]Allows [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT] in Immigration</French>
+    <German>[ICON_BULLET]Allows [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT] in Immigration</German>
+    <Italian>[ICON_BULLET]Allows [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT] in Immigration</Italian>
+    <Spanish>[ICON_BULLET]Allows [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT] in Immigration</Spanish>
+  </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INVENTION_ALLOWS_UNITCLASS</Tag>
 		<English>[ICON_BULLET]Allows [COLOR_HIGHLIGHT_TEXT]%s1_name[COLOR_REVERT]</English>
@@ -1107,7 +1163,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CENTER_PLOT_BONUS</Tag>
-		<English>[ICON_BULLET]Center Plot yield increase of [COLOR_HIGHLIGHT_TEXT]+%d1[COLOR_REVERT]</English>
+		<English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%D1[COLOR_REVERT] Center Plot Bonus</English>
 		<French>[ICON_BULLET]Increases production by [COLOR_HIGHLIGHT_TEXT]+%d1[COLOR_REVERT] for all center plot yields</French>
 		<German>[ICON_BULLET]Increases production by [COLOR_HIGHLIGHT_TEXT]+%d1[COLOR_REVERT] for all center plot yields</German>
 		<Italian>[ICON_BULLET]Increases production by [COLOR_HIGHLIGHT_TEXT]+%d1[COLOR_REVERT] for all center plot yields</Italian>
@@ -1121,6 +1177,14 @@
 		<Italian>[ICON_BULLET]%d1 Cheaper Population Growth</Italian>
 		<Spanish>[ICON_BULLET]%d1 Cheaper Population Growth</Spanish>
 	</TEXT>
+  <TEXT>
+		<Tag>TXT_KEY_CIVIC_GLOBAL_FOOD_COST</Tag>
+		<English>[ICON_BULLET]%D1[ICON_FOOD] cost for all Citizens</English>
+		<French>[ICON_BULLET]%d1[ICON_FOOD] cost</French>
+		<German>[ICON_BULLET]%d1[ICON_FOOD] cost</German>
+		<Italian>[ICON_BULLET]%d1[ICON_FOOD] cost</Italian>
+		<Spanish>[ICON_BULLET]%d1[ICON_FOOD] cost</Spanish>
+	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RESEARCH_GROWTH_INCREASE</Tag>
 		<English>[ICON_BULLET]+%d1 Max Population</English>
@@ -1131,7 +1195,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RESEARCH_CENTER_FOOD_PLOT</Tag>
-		<English>[ICON_BULLET]+%d1 Food to Settlement Plot</English>
+		<English>[ICON_BULLET]+%d1[ICON_FOOD] to Settlement Plot</English>
 		<French>[ICON_BULLET]+%d1 Food to Settlement Plot</French>
 		<German>[ICON_BULLET]+%d1 Food to Settlement Plot</German>
 		<Italian>[ICON_BULLET]+%d1 Food to Settlement Plot</Italian>

@@ -68,6 +68,7 @@ void CvXMLLoadUtility::loadXMLFiles()
 	loadXMLFile(XML_FILE_CIV4HandicapInfo);
 	loadXMLFile(XML_FILE_CIV4CursorInfo);
 	loadXMLFile(XML_FILE_CIV4CivicOptionInfos);
+	loadXMLFile(XML_FILE_CIV4GlobalCivicEffectInfos); //tks GlobalCivicEffectInfos
 	loadXMLFile(XML_FILE_CIV4HurryInfo);
 	loadXMLFile(XML_FILE_CIV4BuildingInfos);
 	loadXMLFile(XML_FILE_CIV4BonusInfos);
@@ -236,6 +237,11 @@ void CvXMLLoadUtility::loadXMLFile(XMLFileNames eFile)
 	{
 		LoadGlobalClassInfo(GC.getCivicOptionInfo(), "CIV4CivicOptionInfos", "GameInfo", "Civ4CivicOptionInfos/CivicOptionInfos/CivicOptionInfo", NULL);
 		FAssertMsg(GC.getNumCivicOptionInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
+	}
+	else if (eFile == XML_FILE_CIV4GlobalCivicEffectInfos)
+	{
+		LoadGlobalClassInfo(GC.getGlobalCivicEffectInfos(), "CIV4GlobalCivicEffectInfos", "GameInfo", "Civ4GlobalCivicEffectInfos/GlobalCivicEffectInfos/GlobalCivicEffectInfo", NULL);
+		FAssertMsg(GC.getNumGlobalCivicEffectInfos() == GC.XMLlength, CvString::format("XML read error. \"%s\" is used more than once", f_szXMLname)); // XML length check - Nightinggale
 	}
 	else if (eFile == XML_FILE_CIV4CivilizationInfos)
 	{
@@ -879,9 +885,17 @@ bool CvXMLLoadUtility::SetPostGlobalsGlobalDefines()
 		idx = FindInInfoClass(szVal);
 		GC.getDefinesVarSystem()->SetValue("CAPITAL_BUILDINGCLASS", idx);
 
-		SetGlobalDefine("DEFAULT_POPULATION_UNIT", szVal);
+		SetGlobalDefine("DEFAULT_GROWTH_NOBLE_UNITCLASS", szVal);
 		idx = FindInInfoClass(szVal);
-		GC.getDefinesVarSystem()->SetValue("DEFAULT_POPULATION_UNIT", idx);
+		GC.getDefinesVarSystem()->SetValue("DEFAULT_GROWTH_NOBLE_UNITCLASS", idx);
+
+		SetGlobalDefine("DEFAULT_GROWTH_UNITCLASS", szVal);
+		idx = FindInInfoClass(szVal);
+		GC.getDefinesVarSystem()->SetValue("DEFAULT_GROWTH_UNITCLASS", idx);
+
+		SetGlobalDefine("DEFAULT_POPULATION_UNITCLASS", szVal);
+		idx = FindInInfoClass(szVal);
+		GC.getDefinesVarSystem()->SetValue("DEFAULT_POPULATION_UNITCLASS", idx);
 
 		SetGlobalDefine("INITIAL_CITY_ROUTE_TYPE", szVal);
 		idx = FindInInfoClass(szVal);
@@ -934,9 +948,9 @@ bool CvXMLLoadUtility::SetPostGlobalsGlobalDefines()
 		GC.getDefinesVarSystem()->SetValue("TREASURE_UNITCLASS", idx);
 
 		///TKs Invention Core Mod v 1.0
-		SetGlobalDefine("CIVICOPTION_INVENTIONS", szVal);
+		/*SetGlobalDefine("CIVICOPTION_INVENTIONS", szVal);
 		idx = FindInInfoClass(szVal);
-		GC.getDefinesVarSystem()->SetValue("CIVICOPTION_INVENTIONS", idx);
+		GC.getDefinesVarSystem()->SetValue("CIVICOPTION_INVENTIONS", idx);*/
 
 		SetGlobalDefine("DEFAULT_NATIVE_TRADE_PROFESSION", szVal);
 		idx = FindInInfoClass(szVal);
@@ -958,21 +972,9 @@ bool CvXMLLoadUtility::SetPostGlobalsGlobalDefines()
 		idx = FindInInfoClass(szVal);
 		GC.getDefinesVarSystem()->SetValue("NATIVE_TECH", idx);
 
-		SetGlobalDefine("DEFAULT_DAWN_POPULATION_UNIT", szVal);
-		idx = FindInInfoClass(szVal);
-		GC.getDefinesVarSystem()->SetValue("DEFAULT_DAWN_POPULATION_UNIT", idx);
-
 		SetGlobalDefine("CONTACT_YIELD_GIFT_TECH", szVal);
 		idx = FindInInfoClass(szVal);
 		GC.getDefinesVarSystem()->SetValue("CONTACT_YIELD_GIFT_TECH", idx);
-
-		SetGlobalDefine("DEFAULT_GRAIN_GROWTH_UNIT_CLASS", szVal);
-		idx = FindInInfoClass(szVal);
-		GC.getDefinesVarSystem()->SetValue("DEFAULT_GRAIN_GROWTH_UNIT_CLASS", idx);
-
-		SetGlobalDefine("DEFAULT_NOBLE_GROWTH_UNIT_CLASS", szVal);
-		idx = FindInInfoClass(szVal);
-		GC.getDefinesVarSystem()->SetValue("DEFAULT_NOBLE_GROWTH_UNIT_CLASS", idx);
 
 		SetGlobalDefine("DEFAULT_KNIGHT_PROMOTION", szVal);
 		idx = FindInInfoClass(szVal);
@@ -1021,10 +1023,6 @@ bool CvXMLLoadUtility::SetPostGlobalsGlobalDefines()
 		SetGlobalDefine("DEFAULT_SPECIALBUILDING_COURTHOUSE", szVal);
 		idx = FindInInfoClass(szVal);
 		GC.getDefinesVarSystem()->SetValue("DEFAULT_SPECIALBUILDING_COURTHOUSE", idx);
-
-		SetGlobalDefine("FREE_PEASANT_CIVIC", szVal);
-		idx = FindInInfoClass(szVal);
-		GC.getDefinesVarSystem()->SetValue("FREE_PEASANT_CIVIC", idx);
 
 		SetGlobalDefine("JUNGLE_FEATURE", szVal);
 		idx = FindInInfoClass(szVal);
@@ -1089,6 +1087,10 @@ bool CvXMLLoadUtility::SetPostGlobalsGlobalDefines()
 		SetGlobalDefine("DEFAULT_CENSURETYPE_EXCOMMUNICATION", szVal);
 		idx = FindInInfoClass(szVal);
 		GC.getDefinesVarSystem()->SetValue("DEFAULT_CENSURETYPE_EXCOMMUNICATION", idx);
+
+		SetGlobalDefine("DEFAULT_GLOBAL_EFFECT_ANARCHY", szVal);
+		idx = FindInInfoClass(szVal);
+		GC.getDefinesVarSystem()->SetValue("DEFAULT_GLOBAL_EFFECT_ANARCHY", idx);
 
 		SetGlobalDefine("DEFAULT_CENSURETYPE_INTERDICT", szVal);
 		idx = FindInInfoClass(szVal);
@@ -2831,6 +2833,7 @@ DllExport bool CvXMLLoadUtility::LoadPlayerOptions()
 
 	// hardcode NONE to -1 when reading XML files
 	GC.setInfoTypeFromString("NONE", -1);
+	GC.setInfoTypeFromString("CIVICOPTION_INVENTIONS", -1); //Tk Civic Change
 
 	/// language selection - start - Nightinggale
 	loadXMLFile(XML_FILE_CIV4LanguageInfos);

@@ -14,6 +14,7 @@
 			<!-- JAnimals Mod End -->
 			<bNoGoodies>0</bNoGoodies>
 			<bRevolution>0</bRevolution>
+      <iAnarchyPercent>100</iAnarchyPercent>
 			<iGameTurn>-1</iGameTurn>
 			<iAdvancedStartPoints>600</iAdvancedStartPoints>
 			<iStartingUnitMultiplier>1</iStartingUnitMultiplier>
@@ -78,6 +79,7 @@
 			<!-- JAnimals Mod End -->
 			<bNoGoodies>0</bNoGoodies>
 			<bRevolution>0</bRevolution>
+      <iAnarchyPercent>100</iAnarchyPercent>
 			<iGameTurn>53</iGameTurn>
 			<iAdvancedStartPoints>600</iAdvancedStartPoints>
 			<iStartingUnitMultiplier>2</iStartingUnitMultiplier>
@@ -146,6 +148,7 @@
 			<!-- JAnimals Mod End -->
 			<bNoGoodies>0</bNoGoodies>
 			<bRevolution>0</bRevolution>
+      <iAnarchyPercent>100</iAnarchyPercent>
 			<iGameTurn>160</iGameTurn>
 			<iAdvancedStartPoints>600</iAdvancedStartPoints>
 			<iStartingUnitMultiplier>4</iStartingUnitMultiplier>
@@ -211,6 +214,7 @@
 			<!-- JAnimals Mod End -->
 			<bNoGoodies>0</bNoGoodies>
 			<bRevolution>1</bRevolution>
+      <iAnarchyPercent>100</iAnarchyPercent>
 			<iGameTurn>-1</iGameTurn>
 			<iAdvancedStartPoints>600</iAdvancedStartPoints>
 			<iStartingUnitMultiplier>8</iStartingUnitMultiplier>

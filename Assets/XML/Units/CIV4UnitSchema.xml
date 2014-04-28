@@ -109,9 +109,11 @@
 	<ElementType name="iStudentWeight" content="textOnly" dt:type="int"/>
 	<ElementType name="iTeacherWeight" content="textOnly" dt:type="int"/>
 	<ElementType name="iTeachLevel" content="textOnly" dt:type="int"/>
+  <ElementType name="iFoodConsumed" content="textOnly" dt:type="int"/>
 	<!-- JAnimals Mod Start -->
 	<ElementType name="iAnimalPatrolWeight" content="textOnly" dt:type="int"/>
 	<ElementType name="iAnimalAttackWeight" content="textOnly" dt:type="int"/>
+  <ElementType name="iMaxUnitCountPercent" content="textOnly" dt:type="int"/>
 	<!-- JAnimals Mod End -->
 	<ElementType name="bGraphicalOnly" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bNoBadGoodies" content="textOnly" dt:type="boolean"/>
@@ -490,6 +492,7 @@
 		<element type="PrereqBuilding"/>
 		<element type="PrereqOrBuildings"/>
 		<element type="ProductionTraits"/>
+    <element type="iFoodConsumed" minOccurs="0"/>
 		<element type="iAIWeight"/>
 		<element type="YieldCosts"/>
 		<element type="iHurryCostModifier"/>
@@ -548,10 +551,11 @@
 		<element type="iStudentWeight"/>
 		<element type="iTeacherWeight"/>
 		<element type="iTeachLevel"/>
-		<!-- JAnimals Mod Start -->
+    <!-- JAnimals Mod Start -->
 		<element type="iAnimalPatrolWeight"/>
 		<element type="iAnimalAttackWeight"/>
-		<!-- JAnimals Mod End -->
+    <element type="iMaxUnitCountPercent" minOccurs="0"/>
+    <!-- JAnimals Mod End -->
 		<element type="ProfessionMeshGroups"/>
 		<element type="FormationType"/>
 		<element type="HotKey"/>
@@ -688,6 +692,9 @@
 	<ElementType name="PromotionPrereqOr1" content="textOnly"/>
 	<ElementType name="PromotionPrereqOr2" content="textOnly"/>
 	<ElementType name="bLeader" content="textOnly" dt:type="boolean"/>
+  <ElementType name="iPlotWorkedBonus" content="textOnly" dt:type="int"/>
+  <ElementType name="iBuildingWorkedBonus" content="textOnly" dt:type="int"/>
+  <ElementType name="bCivilian" content="textOnly" dt:type="boolean"/>
 	<ElementType name="iFirstStrikesChange" content="textOnly" dt:type="int"/>
 	<ElementType name="iChanceFirstStrikesChange" content="textOnly" dt:type="int"/>
 	<ElementType name="bImmuneToFirstStrikes" content="textOnly" dt:type="boolean"/>
@@ -754,6 +761,9 @@
 		<element type="bEnemyRoute"/>
 		<element type="bAlwaysHeal"/>
 		<element type="bHillsDoubleMove"/>
+    <element type="bCivilian" minOccurs="0"/>
+    <element type="iPlotWorkedBonus" minOccurs="0"/>
+    <element type="iBuildingWorkedBonus" minOccurs="0"/>
 		<element type="iVisibilityChange"/>
 		<element type="iMovesChange"/>
 		<element type="iMoveDiscountChange"/>
@@ -817,6 +827,10 @@
 		<element type="YieldType"/>
 		<element type="iYieldAmount"/>
 	</ElementType>
+  <ElementType name="YieldTypes" content="eltOnly">
+    <element type="YieldType"/>
+    <element type="iYieldAmount"/>
+  </ElementType>
 	<ElementType name="YieldEquipedNums" content="eltOnly">
 		<element type="YieldEquipedNum" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
@@ -839,6 +853,13 @@
 	<ElementType name="YieldsConsumed" content="eltOnly">
 		<element type="YieldType" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
+  <ElementType name="CaptureCargoType" content="eltOnly">
+    <element type="UnitClassType"/>
+    <element type="iChange"/>
+  </ElementType>
+  <ElementType name="CaptureCargoTypes" content="eltOnly">
+    <element type="CaptureCargoType" minOccurs="0" maxOccurs="*"/>
+  </ElementType>
 <!-- MultipleYieldsConsumed End -->
 	<ElementType name="RequiredBuilding" content="textOnly"/>
 	<ElementType name="RequiredPromotion" content="textOnly"/>
@@ -900,8 +921,9 @@
 <!-- MultipleYieldsProduced End -->
 <!-- MultipleYieldsConsumed Start -->
 		<element type="YieldsConsumed"/>
-<!-- MultipleYieldsConsumed End -->
-		<element type="RequiredBuilding" minOccurs="0"/>
+    <!-- MultipleYieldsConsumed End -->
+    <element type="CaptureCargoTypes" minOccurs="0"/>
+    <element type="RequiredBuilding" minOccurs="0"/>
 		<element type="RequiredPromotion" minOccurs="0"/>
 		<element type="iFoundCityType" minOccurs="0"/>
 		<element type="CivType" minOccurs="0"/>

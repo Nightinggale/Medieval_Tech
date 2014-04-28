@@ -75,6 +75,13 @@ void CyPlayerPythonInterface1(python::class_<CyPlayer>& x)
 		.def("canBuild", &CyPlayer::canBuild, "bool (CyPlot* pPlot, int (BuildTypes) eBuild, bool bTestEra, bool bTestVisible)")
 		.def("calculateTotalYield", &CyPlayer::calculateTotalYield, "int (int /*YieldTypes*/ eYield) - Returns the total sum of all city yield")
 		.def("isCivic", &CyPlayer::isCivic, "bool (int (CivicTypes) eCivic)")
+		///TKs Civics
+		.def("changeCivics", &CyPlayer::changeCivics, "void (int (CivicTypes*) paeNewCivics, bool bForce)")
+		.def("canChangeCivics", &CyPlayer::canChangeCivics, "bool (int (CivicTypes*) paeNewCivics)")
+		.def("getCivicAnarchyLength", &CyPlayer::getCivicAnarchyLength, "int (int (CivicTypes*) paeNewCivics)")
+		.def("getCivicInitalCosts", &CyPlayer::getCivicInitalCosts, "int (int (CivicTypes*) paeNewCivics)")
+		.def("getCivicUpkeep", &CyPlayer::getCivicUpkeep, "int (int* /*CivicTypes*/ paiCivics, bool bIgnoreAnarchy)")
+		///Tke
 		///Tks Med
 		.def("getMultiYieldRate", &CyPlayer::getMultiYieldRate, "int (YieldTypes eIndex)")
 		///TKs Invention Core Mod v 1.0
@@ -84,6 +91,8 @@ void CyPlayerPythonInterface1(python::class_<CyPlayer>& x)
 		.def("getCostToResearch", &CyPlayer::getCostToResearch, "int (int (CivicTypes) eCivic)")
 		.def("getVictoryYieldCount", &CyPlayer::getVictoryYieldCount, "int (int (YieldTypes) eYield)")
 		.def("getNumDocksNextUnits", &CyPlayer::getNumDocksNextUnits, "int ()")
+		.def("getExpences", &CyPlayer::getExpences, "int ()")
+		.def("getGoldIncome", &CyPlayer::getGoldIncome, "int ()")
 		.def("getCurrentResearchProgress", &CyPlayer::getCurrentResearchProgress, "int (bool bGetTurns, int (CivicTypes) eCivic)")
 		.def("prolificInventorThreshold", &CyPlayer::prolificInventorThreshold, "int ()")
 		.def("getIdeasExperience", &CyPlayer::getIdeasExperience, "int ()")
@@ -105,8 +114,9 @@ void CyPlayerPythonInterface1(python::class_<CyPlayer>& x)
 
 		///TKe
 		//.def("getTradeDenial", &CyPlayer::getTradeDenial, "DenialTypes (int eWhoTo, TradeData item)")
-        ///TKe
-		.def("canDoCivics", &CyPlayer::canDoCivics, "bool (int (CivicTypes) eCivic)")
+        .def("getAnarchyTurns", &CyPlayer::getAnarchyTurns, "int ()")
+		.def("canDoCivics", &CyPlayer::canDoCivics, "bool (int (CivicTypes) eCivic, bool bProhitbitCheck)")
+		///TKe
 		.def("greatGeneralThreshold", &CyPlayer::greatGeneralThreshold, "int ()")
 		.def("immigrationThreshold", &CyPlayer::immigrationThreshold, "int ()")
 		.def("revolutionEuropeUnitThreshold", &CyPlayer::revolutionEuropeUnitThreshold, "int ()")

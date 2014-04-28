@@ -199,8 +199,9 @@ class CvTechnologyAdvisor:
 		LineReturn = 0
 		LocalBack = 0
 		bTest = False
+		
 		for iCivic in range(gc.getNumCivicInfos()):
-			if (gc.getCivicInfo(iCivic).getCivicOptionType() == 0 and iCivic == 1):
+			if (gc.getCivicInfo(iCivic).getCivicOptionType() == -1 and iCivic == 1):
 				if gc.getCivicInfo(iCivic).getInventionCategory() == -1:
 					LineReturn = 0
 					
@@ -208,7 +209,7 @@ class CvTechnologyAdvisor:
 					BonusRow += 1
 					LocalBack = self.BUTTON_SPACE
 					for iListCivic in range(gc.getNumCivicInfos()):
-						if (gc.getCivicInfo(iListCivic).getCivicOptionType() == 0):
+						if (gc.getCivicInfo(iListCivic).getCivicOptionType() == -1):
 							
 							iCategory = gc.getCivicInfo(iListCivic).getInventionCategory()
 							if iCategory == iCivic:
@@ -217,7 +218,7 @@ class CvTechnologyAdvisor:
 									
 									localx =  self.XUnknownCATEGORY
 			
-									if player.canDoCivics(iListCivic) or player.getIdeasResearched(iListCivic) > 0 or (gc.getDefineINT("TK_RESEARCH_IS_HIDDEN") > 0):
+									if (player.canDoCivics(iListCivic, False) or player.getIdeasResearched(iListCivic) > 0 or (gc.getDefineINT("TK_RESEARCH_IS_HIDDEN") > 0)):
 									#if player.canDoCivics(iListCivic) or player.getIdeasResearched(iListCivic) > 0:
 									#if (bTest == False):
 										iconModSize = (self.ICON_BUTTON_SIZE * 5) / 3
@@ -289,7 +290,6 @@ class CvTechnologyAdvisor:
 		BonusRow = 0
 		LineReturn = 0
 		ScrollPanel = "ScrollPanel"
-		
 		iResearch = player.getCurrentResearch()
 		
 		#Current Research Code
@@ -309,7 +309,6 @@ class CvTechnologyAdvisor:
 		
 			
 		#unLearned Techs
-		
 		bTest = False
 		DisAllowedTech = []
 		for iCivic in range(gc.getNumCivicInfos()):
@@ -320,15 +319,15 @@ class CvTechnologyAdvisor:
 				if (gc.getCivicInfo(iCivic).getDisallowsTech() != -1):
 					Disallow = gc.getCivicInfo(iCivic).getDisallowsTech()
 					DisAllowedTech[Disallow] = True
+		
 		for iCivic in range(gc.getNumCivicInfos()):
-			if (gc.getCivicInfo(iCivic).getCivicOptionType() == 0 and iCivic == 1):
+			if (gc.getCivicInfo(iCivic).getCivicOptionType() == -1 and iCivic >= 4):
 				if gc.getCivicInfo(iCivic).getInventionCategory() == -1:
 					
-
+				
 					
 					for iListCivic in range(gc.getNumCivicInfos()):
-						if (gc.getCivicInfo(iListCivic).getCivicOptionType() == 0):
-							
+						if (gc.getCivicInfo(iListCivic).getCivicOptionType() == -1):
 							iCategory = gc.getCivicInfo(iListCivic).getInventionCategory()
 							
 							if iCategory == iCivic:
@@ -347,7 +346,7 @@ class CvTechnologyAdvisor:
 									szFatherTitle = gc.getCivicInfo(iListCivic).getDescription()
 									ArtTechHolder = ArtFileMgr.getInterfaceArtInfo("INTERFACE_HOLDS_TECH").getPath()
 									TextColor = gc.getInfoTypeForString("COLOR_FONT_GOLD")
-									if (not player.canDoCivics(iListCivic)):
+									if (not player.canDoCivics(iListCivic, False)):
 										TextColor = gc.getInfoTypeForString("COLOR_FONT_CREAM")
 										ArtTechHolder = ArtFileMgr.getInterfaceArtInfo("INTERFACE_CATALOG_TECH").getPath()
 									#if (iCategory == gc.getDefineINT("MILITARY_TECH")):
@@ -397,7 +396,7 @@ class CvTechnologyAdvisor:
 										
 									else:
 										TurnstoComplete = ""
-										if (player.canDoCivics(iListCivic)):
+										if (player.canDoCivics(iListCivic, False)):
 											iTurns = player.getCurrentResearchProgress(True, iListCivic)
 											if iTurns > 0:
 												TurnstoComplete = " (" + str(iTurns) + ")"
@@ -421,7 +420,10 @@ class CvTechnologyAdvisor:
 									#screen.addDDSGFCAt("CategoryBox" + str(iListCivic), ScrollPanel, gc.getCivicInfo(iCivic).getButton(), localx + self.ICON_BUTTON_SIZE, localy +  int(self.ICON_BUTTON_SIZE * 1.5), self.ICON_BUTTON_SIZE - 5, self.ICON_BUTTON_SIZE - 5, WidgetTypes.WIDGET_GENERAL, self.AMENDMENT_BUTTON, iCivic, false)
 									screen.setTextAt("Title" + str(iListCivic), ScrollPanel, "<font=3>" + szFatherTitle + "</font>", CvUtil.FONT_LEFT_JUSTIFY, localx + (self.ICON_BUTTON_SIZE * 2 + (self.ICON_BUTTON_SIZE / 10)), localy +  int(self.ICON_BUTTON_SIZE * 0.7), -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_INVENTORS_HOUSE, self.CATEGORY + iDisplayClickTxt, iListCivic)
 									if (player.getIdeasResearched(iListCivic) <= 0):
-										screen.addDDSGFCAt("MaterialIcon" + str(iListCivic), ScrollPanel, ArtFileMgr.getInterfaceArtInfo("MATERIALS_NEEDED").getPath(), localx + self.ICON_BUTTON_SIZE, localy +  int(self.ICON_BUTTON_SIZE * 1.5), self.ICON_BUTTON_SIZE - 3, self.ICON_BUTTON_SIZE - 3, WidgetTypes.WIDGET_GENERAL, self.AMENDMENT_BUTTON + 3, -1, false)
+										if gc.getDefineINT("SHOW_TECH_CATEGORIES") == 0:
+											screen.addDDSGFCAt("MaterialIcon" + str(iListCivic), ScrollPanel, ArtFileMgr.getInterfaceArtInfo("MATERIALS_NEEDED").getPath(), localx + self.ICON_BUTTON_SIZE, localy +  int(self.ICON_BUTTON_SIZE * 1.5), self.ICON_BUTTON_SIZE - 3, self.ICON_BUTTON_SIZE - 3, WidgetTypes.WIDGET_GENERAL, self.AMENDMENT_BUTTON + 3, -1, false)
+										else:
+											screen.addDDSGFCAt("CategoryBox" + str(iListCivic), ScrollPanel, gc.getCivicInfo(iCivic).getButton(), localx + self.ICON_BUTTON_SIZE, localy +  int(self.ICON_BUTTON_SIZE * 1.5), self.ICON_BUTTON_SIZE - 5, self.ICON_BUTTON_SIZE - 5, WidgetTypes.WIDGET_GENERAL, self.AMENDMENT_BUTTON, iCivic, false)
 										szHelp = CyGameTextMgr().parseCivicInfo(iListCivic, False, False, True, True, player.getCivilizationType())
 										szHelp = localText.changeTextColor(szHelp, gc.getInfoTypeForString("COLOR_FONT_CREAM"))
 										screen.setTextAt("Cost" + str(iListCivic), ScrollPanel, "<font=2>" + szHelp + "</font>", CvUtil.FONT_LEFT_JUSTIFY, localx + self.ICON_BUTTON_SIZE * 2, localy +  int(self.ICON_BUTTON_SIZE * 1.9), -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_INVENTORS_HOUSE, self.CATEGORY + iDisplayClickTxt, iListCivic)
@@ -466,7 +468,7 @@ class CvTechnologyAdvisor:
 					return 0
 				#if player.getCurrentResearch() == inputClass.getData2():
 				#	return 0
-				if player.canDoCivics(inputClass.getData2()):
+				if player.canDoCivics(inputClass.getData2(), False):
 					screen = self.getScreen()
 					iListCivic = inputClass.getData2()
 					localx = 30 + ( (gc.getCivicInfo(iListCivic).getX_Location() - 1) * ( ( self.BOX_INCREMENT_X_SPACING + self.BOX_INCREMENT_WIDTH ) * self.PIXEL_INCREMENT ) )
@@ -633,7 +635,7 @@ class CvTechnologyAdvisor:
 			if player.getResearchPartner() != -1:
 				locked = localText.getText("TXT_KEY_CITY_CURRENT_RESEARCH_LOCKED", ())
 				return szColoredName + szHelp + "\n" + locked
-			elif player.canDoCivics(iData2):
+			elif player.canDoCivics(iData2, False):
 				return szColoredName + szHelp + localText.getText("TXT_KEY_CLICK_TO_RESEARCH_THIS", ())
 			
 			else:
@@ -666,9 +668,10 @@ class CvTechnologyAdvisor:
 	def getHeight(self, yDiff, nFactor):
 		return ( ( nFactor + ( ( abs( yDiff ) - 1 ) * 6 ) ) * self.PIXEL_INCREMENT )
 	def drawArrows (self):
-
+		
+		
 		screen = self.getScreen()
-
+		player = gc.getPlayer(gc.getGame().getActivePlayer())
 		iLoop = 0
 		self.nWidgetCount = 0
 		
@@ -702,13 +705,13 @@ class CvTechnologyAdvisor:
 
 					#szTechPrereqBorderID = "TechPrereqBorderID" + str((i * 1000) + j)
 					#screen.addDDSGFCAt( szTechPrereqBorderID, "TechList", ArtFileMgr.getInterfaceArtInfo("TECH_TREE_BUTTON_BORDER").getPath(), iX + fX + 4, iY + 22, 32, 32, WidgetTypes.WIDGET_HELP_TECH_PREPREQ, eTech, -1, False )
-			if (gc.getCivicInfo(i).getCivicOptionType() != 0):
+			
+			if gc.getCivicInfo(i).getInventionCategory() < 4:
 				continue
-				
-			if gc.getCivicInfo(i).getInventionCategory() == -1:
+			if (gc.getCivicInfo(i).getCivicOptionType() != -1):
 				continue
-			if gc.getCivicInfo(i).getInventionCategory() != 1:
-				continue
+			#if gc.getCivicInfo(i).getInventionCategory() == -1:
+				#continue
 			j = 0
 			#
 			for j in range(2):

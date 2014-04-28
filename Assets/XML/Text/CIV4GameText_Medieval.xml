@@ -6,13 +6,349 @@
 <!-- Game Text - New -->
 <Civ4GameText xmlns="http://www.firaxis.com">
 	<TEXT>
-		<Tag>TXT_KEY</Tag>
+		<Tag>TXT_KEY_BULLET_ONLY</Tag>
 		<English>[ICON_BULLET]</English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<French>[ICON_BULLET]</French>
+		<German>[ICON_BULLET]</German>
+		<Italian>[ICON_BULLET]</Italian>
+		<Spanish>[ICON_BULLET]</Spanish>
 	</TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_TRAIT_TECH_CATEGORY_BONUS</Tag>
+    <English>[ICON_BULLET]%D1_Bonus%% to [COLOR_HIGHLIGHT_TEXT]%s2_tech[COLOR_REVERT]</English>
+    <French>[ICON_BULLET]</French>
+    <German>[ICON_BULLET]</German>
+    <Italian>[ICON_BULLET]</Italian>
+    <Spanish>[ICON_BULLET]</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_DEFAULT_POP_UNIT</Tag>
+    <English>Growth Unit: [COLOR_UNIT_TEXT]%s1[COLOR_REVERT]</English>
+    <French></French>
+    <German></German>
+    <Italian></Italian>
+    <Spanish></Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_NO_DEFAULT_LUXURY_POP_UNIT</Tag>
+    <English>No Luxury Growth Unit</English>
+    <French></French>
+    <German></German>
+    <Italian></Italian>
+    <Spanish></Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_DEFAULT_LUXURY_POP_UNIT</Tag>
+    <English>Luxury Growth Unit: [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]</English>
+    <French></French>
+    <German></German>
+    <Italian></Italian>
+    <Spanish></Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_RANDOM_POP_UNIT</Tag>
+    <English>Random Growth Unit: [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT](%d2%)</English>
+    <French></French>
+    <German></German>
+    <Italian></Italian>
+    <Spanish></Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVICS_LACK_FUNDS</Tag>
+    <English>Lack Funds</English>
+    <French>Lack Funds</French>
+    <German>Lack Funds</German>
+    <Italian>Lack Funds</Italian>
+    <Spanish>Lack Funds</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_INTERFACE_ANARCHY</Tag>
+    <English>[COLOR_WARNING_TEXT]Anarchy[COLOR_REVERT]</English>
+    <French>[COLOR_WARNING_TEXT]Anarchy[COLOR_REVERT]</French>
+    <German>[COLOR_WARNING_TEXT]Anarchy[COLOR_REVERT]</German>
+    <Italian>[COLOR_WARNING_TEXT]Anarchy[COLOR_REVERT]</Italian>
+    <Spanish>[COLOR_WARNING_TEXT]Anarchy[COLOR_REVERT]</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_TECH_ALLOWS_CIVIC</Tag>
+    <English>[ICON_BULLET]Permits [COLOR_HIGHLIGHT_TEXT]%s1_Civic[COLOR_REVERT]</English>
+    <French>[ICON_BULLET]Permits [COLOR_HIGHLIGHT_TEXT]%s1_Civic[COLOR_REVERT]</French>
+    <German>[ICON_BULLET]Permits [COLOR_HIGHLIGHT_TEXT]%s1_Civic[COLOR_REVERT]</German>
+    <Italian>[ICON_BULLET]Permits [COLOR_HIGHLIGHT_TEXT]%s1_Civic[COLOR_REVERT]</Italian>
+    <Spanish>[ICON_BULLET]Permits [COLOR_HIGHLIGHT_TEXT]%s1_Civic[COLOR_REVERT]</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_NEW_MISSIONARY_CLASS</Tag>
+    <English>[ICON_BULLET]Missionary Converts are [COLOR_HIGHLIGHT_TEXT]%s1_unitclass[COLOR_REVERT]</English>
+    <French>[ICON_BULLET]Missionary Converts are [COLOR_HIGHLIGHT_TEXT]%s1_unitclass[COLOR_REVERT]</French>
+    <German>[ICON_BULLET]Missionary Converts are [COLOR_HIGHLIGHT_TEXT]%s1_unitclass[COLOR_REVERT]</German>
+    <Italian>[ICON_BULLET]Missionary Converts are [COLOR_HIGHLIGHT_TEXT]%s1_unitclass[COLOR_REVERT]</Italian>
+    <Spanish>[ICON_BULLET]Missionary Converts are [COLOR_HIGHLIGHT_TEXT]%s1_unitclass[COLOR_REVERT]</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_PROHIBITED_CIVIC_EFFECT</Tag>
+    <English>[ICON_BULLET]Prohibits: [COLOR_HIGHLIGHT_TEXT]%s1_civic[COLOR_REVERT]</English>
+    <French>[ICON_BULLET]Prohibits: [COLOR_HIGHLIGHT_TEXT]%s1_civic[COLOR_REVERT]</French>
+    <German>[ICON_BULLET]Prohibits: [COLOR_HIGHLIGHT_TEXT]%s1_civic[COLOR_REVERT]</German>
+    <Italian>[ICON_BULLET]Prohibits: [COLOR_HIGHLIGHT_TEXT]%s1_civic[COLOR_REVERT]</Italian>
+    <Spanish>[ICON_BULLET]Prohibits: [COLOR_HIGHLIGHT_TEXT]%s1_civic[COLOR_REVERT]</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_COMBAT_PLOT_MOD_VS_CIVIC</Tag>
+    <English>[ICON_BULLET]%D1_Bonus%% from Decrees</English>
+    <French>[ICON_BULLET]%D1_Bonus%% from Decrees</French>
+    <German>[ICON_BULLET]%D1_Bonus%% from Decrees</German>
+    <Italian>[ICON_BULLET]%D1_Bonus%% from Decrees</Italian>
+    <Spanish>[ICON_BULLET]%D1_Bonus%% from Decrees</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_INCREASED_IMMIGRANTS</Tag>
+    <English>[ICON_BULLET]+%d1_Bonus[ICON_ANGRYPOP] selectable Immigrant</English>
+    <French>[ICON_BULLET]+%d1_Bonus selectable Immigrant</French>
+    <German>[ICON_BULLET]+%d1_Bonus selectable Immigrant</German>
+    <Italian>[ICON_BULLET]+%d1_Bonus selectable Immigrant</Italian>
+    <Spanish>[ICON_BULLET]+%d1_Bonus selectable Immigrant</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_ATTITUDES_EFFECT_GOOD</Tag>
+    <English>%D1: "Your Diplomatic measures are encouraging."</English>
+    <French>%D1 : "Your Diplomatic measures are encouraging."</French>
+    <German>%D1: "Your Diplomatic measures are encouraging."</German>
+    <Italian>%D1: "Your Diplomatic measures are encouraging."</Italian>
+    <Spanish>%D1: "Your Diplomatic measures are encouraging."</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_ATTITUDES_EFFECT_BAD</Tag>
+    <English>%D1: "Your Diplomacy have be weighed in the balance and found lacking."</English>
+    <French>%D1 : "Your Diplomatic measures are in need of work!"</French>
+    <German>%D1: "Your Diplomatic measures are in need of work!"</German>
+    <Italian>%D1: "Your Diplomatic measures are in need of work!"</Italian>
+    <Spanish>%D1: "Your Diplomatic measures are in need of work!"</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_ATTITUDES_GOOD</Tag>
+    <English>%D1: "Our mutual ideals on Social Policies are encouraging."</English>
+    <French>%D1 : "Our mutual ideals on Social Policies are encouraging."</French>
+    <German>%D1: "Our mutual ideals on Social Policies are encouraging."</German>
+    <Italian>%D1: "Our mutual ideals on Social Policies are encouraging."</Italian>
+    <Spanish>%D1: "Our mutual ideals on Social Policies are encouraging."</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_ATTITUDES_BAD</Tag>
+    <English>%D1: "Your Social Policies are appalling to us."</English>
+    <French>%D1 : "Your Social Policies are appalling to us."</French>
+    <German>%D1: "Your Social Policies are appalling to us."</German>
+    <Italian>%D1: "Your Social Policies are appalling to us."</Italian>
+    <Spanish>%D1: "Your Social Policies are appalling to us."</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_UNIT_YIELD_DEMAND</Tag>
+    <English>Demands %s1_symbol_list</English>
+    <French>Demands %s1_symbol_list</French>
+    <German>Will %s1_symbol_list</German>
+    <Italian>Demands %s1_symbol_list</Italian>
+    <Spanish>Demands %s1_symbol_list</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_GARRISON_BONUS</Tag>
+    <English>[SPACE]from Garrison</English>
+    <French>[SPACE]from Garrisoned Units</French>
+    <German>[SPACE]from Garrisoned Units</German>
+    <Italian>[SPACE]from Garrisoned Units</Italian>
+    <Spanish>[SPACE]from Garrisoned Units</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_TREASURY_BUILDING</Tag>
+    <English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s1_civic[COLOR_REVERT] bonus: +%d2% of Treasury</English>
+    <French>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s1_civic[COLOR_REVERT] bonus: +%d2% of Treasury</French>
+    <German>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s1_civic[COLOR_REVERT] bonus: +%d2% of Treasury</German>
+    <Italian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s1_civic[COLOR_REVERT] bonus: +%d2% of Treasury</Italian>
+    <Spanish>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s1_civic[COLOR_REVERT] bonus: +%d2% of Treasury</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_BUILDING_TREASURY_BONUS</Tag>
+    <English>[ICON_BULLET]Allows [COLOR_HIGHLIGHT_TEXT]Building Treasury Bonus[COLOR_REVERT]</English>
+    <French>[ICON_BULLET]Allows Building Treasury Bonus</French>
+    <German>[ICON_BULLET]Allows Building Treasury Bonus</German>
+    <Italian>[ICON_BULLET]Allows Building Treasury Bonus</Italian>
+    <Spanish>[ICON_BULLET]Allows Building Treasury Bonus</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_DIPLOMACY_BONUS</Tag>
+    <English>[ICON_BULLET]+%d1 Bonus to Diplomacy</English>
+    <French>[ICON_BULLET]+%d1 Bonus to Diplomacy</French>
+    <German>[ICON_BULLET]+%d1 Bonus to Diplomacy</German>
+    <Italian>[ICON_BULLET]+%d1 Bonus to Diplomacy</Italian>
+    <Spanish>[ICON_BULLET]+%d1 Bonus to Diplomacy</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_NUMBER_UNICLASS_COUNT</Tag>
+    <English>%d1 as [COLOR_HIGHLIGHT_TEXT]Subjects[COLOR_REVERT]</English>
+    <French></French>
+    <German></German>
+    <Italian></Italian>
+    <Spanish></Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_NUMBER_UNICLASS_COUNT_MECHS</Tag>
+    <English>%d1 in [COLOR_HIGHLIGHT_TEXT]Commision[COLOR_REVERT]</English>
+    <French></French>
+    <German></German>
+    <Italian></Italian>
+    <Spanish></Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_DIPLOMACY_NEGATIVE</Tag>
+    <English>[ICON_BULLET][COLOR_WARNING_TEXT]+%d1[COLOR_REVERT] Penalty to Diplomacy</English>
+    <French>[ICON_BULLET][COLOR_WARNING_TEXT]+%d1[COLOR_REVERT] Penalty to Diplomacy</French>
+    <German>[ICON_BULLET][COLOR_WARNING_TEXT]+%d1[COLOR_REVERT] Penalty to Diplomacy</German>
+    <Italian>[ICON_BULLET][COLOR_WARNING_TEXT]+%d1[COLOR_REVERT] Penalty to Diplomacy</Italian>
+    <Spanish>[ICON_BULLET][COLOR_WARNING_TEXT]+%d1[COLOR_REVERT] Penalty to Diplomacy</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_HOLY_COMBAT_BONUS</Tag>
+    <English>[ICON_BULLET]+%d1_points% vs without [COLOR_HIGHLIGHT_TEXT]%s2_civic[COLOR_REVERT]</English>
+    <French>[ICON_BULLET]+%d1_points% [COLOR_HIGHLIGHT_TEXT]%s2_father[COLOR_REVERT]</French>
+    <German>[ICON_BULLET]+%d1_points% [COLOR_HIGHLIGHT_TEXT]%s2_father[COLOR_REVERT]</German>
+    <Italian>[ICON_BULLET]+%d1_points% [COLOR_HIGHLIGHT_TEXT]%s2_father[COLOR_REVERT]</Italian>
+    <Spanish>[ICON_BULLET]+%d1_points% [COLOR_HIGHLIGHT_TEXT]%s2_father[COLOR_REVERT]</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_COMBAT_BONUS</Tag>
+    <English>[ICON_BULLET]+%d1_points% vs [COLOR_HIGHLIGHT_TEXT]%s2_civic[COLOR_REVERT]</English>
+    <French>[ICON_BULLET]+%d1_points% vs [COLOR_HIGHLIGHT_TEXT]%s2_civic[COLOR_REVERT]</French>
+    <German>[ICON_BULLET]+%d1_points% vs [COLOR_HIGHLIGHT_TEXT]%s2_civic[COLOR_REVERT]</German>
+    <Italian>[ICON_BULLET]+%d1_points% vs [COLOR_HIGHLIGHT_TEXT]%s2_civic[COLOR_REVERT]</Italian>
+    <Spanish>[ICON_BULLET]+%d1_points% vs [COLOR_HIGHLIGHT_TEXT]%s2_civic[COLOR_REVERT]</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_WORKERS_BUILD</Tag>
+    <English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Workers[COLOR_REVERT] can Build after move</English>
+    <French>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Workers[COLOR_REVERT] can Build after move</French>
+    <German>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Workers[COLOR_REVERT] can Build after move</German>
+    <Italian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Workers[COLOR_REVERT] can Build after move</Italian>
+    <Spanish>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Workers[COLOR_REVERT] can Build after move</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_FATHER_BONUS</Tag>
+    <English>[ICON_BULLET]+%d1_points% [COLOR_HIGHLIGHT_TEXT]%s2_father[COLOR_REVERT]</English>
+    <French>[ICON_BULLET]+%d1_points% [COLOR_HIGHLIGHT_TEXT]%s2_father[COLOR_REVERT]</French>
+    <German>[ICON_BULLET]+%d1_points% [COLOR_HIGHLIGHT_TEXT]%s2_father[COLOR_REVERT]</German>
+    <Italian>[ICON_BULLET]+%d1_points% [COLOR_HIGHLIGHT_TEXT]%s2_father[COLOR_REVERT]</Italian>
+    <Spanish>[ICON_BULLET]+%d1_points% [COLOR_HIGHLIGHT_TEXT]%s2_father[COLOR_REVERT]</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_SCREEN_TITLE</Tag>
+    <English>Decrees</English>
+    <French>Decrees</French>
+    <German>Decrees</German>
+    <Italian>Decrees</Italian>
+    <Spanish>Decrees</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_PLAYER_INCOME_GOLD</Tag>
+    <English>[COLOR_HIGHLIGHT_TEXT]Treasury:[COLOR_REVERT] %d1</English>
+    <French>[COLOR_HIGHLIGHT_TEXT]Treasury:[COLOR_REVERT] %d1</French>
+    <German>[COLOR_HIGHLIGHT_TEXT]Treasury:[COLOR_REVERT] %d1</German>
+    <Italian>[COLOR_HIGHLIGHT_TEXT]Treasury:[COLOR_REVERT] %d1</Italian>
+    <Spanish>[COLOR_HIGHLIGHT_TEXT]Treasury:[COLOR_REVERT] %d1</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_PLAYER_UPKEEP_GOLD</Tag>
+    <English>[COLOR_WARNING_TEXT]Upkeep:[COLOR_REVERT] %d1</English>
+    <French>[COLOR_HIGHLIGHT_TEXT]Upkeep:[COLOR_REVERT] %d1</French>
+    <German>[COLOR_HIGHLIGHT_TEXT]Upkeep:[COLOR_REVERT] %d1</German>
+    <Italian>[COLOR_HIGHLIGHT_TEXT]Upkeep:[COLOR_REVERT] %d1</Italian>
+    <Spanish>[COLOR_HIGHLIGHT_TEXT]Upkeep:[COLOR_REVERT] %d1</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_PLAYER_TOTAL_GOLD</Tag>
+    <English>[COLOR_HIGHLIGHT_TEXT]End Turn Balance:[COLOR_REVERT] %d1</English>
+    <French>[COLOR_HIGHLIGHT_TEXT]Total:[COLOR_REVERT] %d1</French>
+    <German>[COLOR_HIGHLIGHT_TEXT]Total:[COLOR_REVERT] %d1</German>
+    <Italian>[COLOR_HIGHLIGHT_TEXT]Total:[COLOR_REVERT] %d1</Italian>
+    <Spanish>[COLOR_HIGHLIGHT_TEXT]Total:[COLOR_REVERT] %d1</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_PLAYER_DEFICIT_GOLD</Tag>
+    <English>[COLOR_WARNING_TEXT]End Turn Deficit:[COLOR_REVERT] %d1</English>
+    <French>[COLOR_WARNING_TEXT]Deficit:[COLOR_REVERT] %d1</French>
+    <German>[COLOR_WARNING_TEXT]Deficit:[COLOR_REVERT] %d1</German>
+    <Italian>[COLOR_WARNING_TEXT]Deficit:[COLOR_REVERT] %d1</Italian>
+    <Spanish>[COLOR_WARNING_TEXT]Deficit:[COLOR_REVERT] %d1</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_PLAYER_TURN_GOLD</Tag>
+    <English>+%d1% of [COLOR_HIGHLIGHT_TEXT]Treasury[COLOR_REVERT] per Turn(%d2[ICON_GOLD])</English>
+    <French>+%d1% of [COLOR_HIGHLIGHT_TEXT]Treasury[COLOR_REVERT] per Turn(%d2[ICON_GOLD])</French>
+    <German>+%d1% of [COLOR_HIGHLIGHT_TEXT]Treasury[COLOR_REVERT] per Turn(%d2[ICON_GOLD])</German>
+    <Italian>+%d1% of [COLOR_HIGHLIGHT_TEXT]Treasury[COLOR_REVERT] per Turn(%d2[ICON_GOLD])</Italian>
+    <Spanish>+%d1% of [COLOR_HIGHLIGHT_TEXT]Treasury[COLOR_REVERT] per Turn(%d2[ICON_GOLD])</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MISC_ANOTHER_REVOLUTION_RECENTLY</Tag>
+    <English>[SPACE]because of recent Resolution</English>
+    <French>[SPACE]&#224; cause d'une r&#233;solution</French>
+    <German>[SPACE]wegen k&#252;rzlicher Resolution</German>
+    <Italian>[SPACE]C'&#232; stata un'altra risoluzione recentemente</Italian>
+    <Spanish>[SPACE]debido a una reciente resoluci&#243;n</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MISC_WAIT_MORE_TURNS</Tag>
+    <English>Wait %d1_Num more [NUM1:Turn:Turns]</English>
+    <French>Attendre encore %d1_Num [NUM1:tour:tours]</French>
+    <German>Noch %d1_Num [NUM1:Runde:Runden] warten</German>
+    <Italian>Aspetta %d1_Num [NUM1:turno:turni]</Italian>
+    <Spanish>Esperar %d1_Num [NUM1:turno:turnos] m&#225;s</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MISC_CANNOT_CHANGE_CIVICS</Tag>
+    <English>Cannot change Decrees</English>
+    <French>La doctrine choisie ne peut &#234;tre instaur&#233;e</French>
+    <German>Kann keine Staatsformen &#228;ndern</German>
+    <Italian>Impossibile cambiare con le forme di governo selezionate</Italian>
+    <Spanish>No se puede cambiar de principios</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MISC_WHILE_IN_ANARCHY</Tag>
+    <English>[SPACE]While in Anarchy</English>
+    <French>[SPACE]pendant l'anarchie</French>
+    <German>[SPACE]W&#228;hrend einer Anarchiephase</German>
+    <Italian>[SPACE]Mentre si &#232; in anarchia</Italian>
+    <Spanish>[SPACE]mientras reina la anarqu&#237;a</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_ANARCHY_TURNS</Tag>
+    <English>%d1 [NUM1:Turn:Turns] for Resolution</English>
+    <French>%d1 [NUM1:tour:tours] pour la r&#233;solution</French>
+    <German>%d1 [NUM1:Runde:Runden] bis zur Resolution</German>
+    <Italian>%d1 [NUM1:turno:turni] per la risoluzione</Italian>
+    <Spanish>%d1 [NUM1:turno:turnos] para la resoluci&#243;n</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_SCREEN_BEGIN_RESOLUTION</Tag>
+    <English>Begin Resolution</English>
+    <French>Begin Resolution</French>
+    <German>Begin Resolution</German>
+    <Italian>Begin Resolution</Italian>
+    <Spanish>Begin Resolution</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_SCREEN_UPKEEP</Tag>
+    <English>Upkeep: %d1[ICON_GOLD] per turn</English>
+    <French>Entretien : %d1[ICON_GOLD] par tour</French>
+    <German>Unterhalt: %d1[ICON_GOLD] pro Runde</German>
+    <Italian>Mantenimento: %d1[ICON_GOLD] per turno</Italian>
+    <Spanish>Mantenimiento: %d1 [ICON_GOLD] por turno</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_SCREEN_INITIAL_COST</Tag>
+    <English>Initial Cost: %d1[ICON_GOLD]</English>
+    <French>Initial Cost: %d1[ICON_GOLD]</French>
+    <German>Initial Cost: %d1[ICON_GOLD]</German>
+    <Italian>Initial Cost: %d1[ICON_GOLD]</Italian>
+    <Spanish>Initial Cost: %d1[ICON_GOLD]</Spanish>
+  </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVICOPTION_INVENTIONS</Tag>
 		<English>Medieval Research</English>
@@ -60,10 +396,10 @@
 	<TEXT>
 		<Tag>TXT_KEY_ESTABLISH_TRADEPOST_MESSAGE</Tag>
 		<English>You have established a trading post in %s1_city</English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<French>You have established a trading post in %s1_city</French>
+		<German>You have established a trading post in %s1_city</German>
+		<Italian>You have established a trading post in %s1_city</Italian>
+		<Spanish>You have established a trading post in %s1_city</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DOMESTIC_ADVISOR_STATE_NATIVE</Tag>
@@ -121,6 +457,14 @@
 		<Italian>Disboscare una [LINK=FEATURE_FOREST]foresta[\LINK]</Italian>
 		<Spanish>Talar un [LINK=FEATURE_FOREST]bosque[\LINK]</Spanish>
 	</TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_INTERFACE_GOVERNOR_TOGGLE</Tag>
+    <English>Steward</English>
+    <French>Steward</French>
+    <German>Steward</German>
+    <Italian>Steward</Italian>
+    <Spanish>Steward</Spanish>
+  </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CLICK_MARKET_SELECT</Tag>
 		<English>[COLOR_UNIT_TEXT]Click to select goods to sale on market[COLOR_REVERT]</English>
@@ -339,7 +683,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_RECRUIT_DISCOUNT</Tag>
-		<English>[ICON_BULLET]%D1%% Cost of Summoning Units to your Realm</English>
+    <English>[ICON_BULLET]%D1%% Cost of Summoning Units</English>
 		<French>[ICON_BULLET]%D1%% Cost of Summoning Units to your Realm</French>
 		<German>[ICON_BULLET]%D1%% Cost of Summoning Units to your Realm</German>
 		<Italian>[ICON_BULLET]%D1%% Cost of Summoning Units to your Realm</Italian>
@@ -761,6 +1105,46 @@
 		<Italian>[TAB]Stimulating %d1 research</Italian>
 		<Spanish>[TAB]Stimulating %d1 research</Spanish>
 	</TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_CONNECTED_TRADE</Tag>
+    <English>[ICON_BULLET]+%d1%F2 Bonus per Settlement connected [COLOR_HIGHLIGHT_TEXT]Trading Post[COLOR_REVERT]</English>
+    <French>[ICON_BULLET]+%d1%F2 Bonus for connected Trading Post</French>
+    <German>[ICON_BULLET]+%d1%F2 Bonus for connected Trading Post</German>
+    <Italian>[ICON_BULLET]+%d1%F2 Bonus for connected Trading Post</Italian>
+    <Spanish>[ICON_BULLET]+%d1%F2 Bonus for connected Trading Post</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_CONNECTED_MISSION</Tag>
+    <English>[ICON_BULLET]+%d1%F2 Bonus per Settlement connected [COLOR_HIGHLIGHT_TEXT]Mission[COLOR_REVERT]</English>
+    <French>[ICON_BULLET]+%d1%F2 Bonus for connected Mission</French>
+    <German>[ICON_BULLET]+%d1%F2 Bonus for connected Mission</German>
+    <Italian>[ICON_BULLET]+%d1%F2 Bonus for connected Mission</Italian>
+    <Spanish>[ICON_BULLET]+%d1%F2 Bonus for connected Mission</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_UNIT_FOOD_CHANGE</Tag>
+    <English>[ICON_BULLET]%d1[ICON_FOOD] cost for %s2</English>
+    <French>[ICON_BULLET]%d1[ICON_FOOD] cost for %s2</French>
+    <German>[ICON_BULLET]%d1[ICON_FOOD] cost for %s2</German>
+    <Italian>[ICON_BULLET]%d1[ICON_FOOD] cost for %s2</Italian>
+    <Spanish>[ICON_BULLET]%d1[ICON_FOOD] cost for %s2</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_TRAIT_CITY_EXTRA_YIELD</Tag>
+    <English>[ICON_BULLET]%D1_num%F2_yield in each Settlement</English>
+    <French>[ICON_BULLET]%D1_num%F2_yield dans chaque colonie</French>
+    <German>[ICON_BULLET]%D1_num%F2_yield in jeder Kolonie</German>
+    <Italian>[ICON_BULLET]%D1_num%F2_yield in ogni colonia</Italian>
+    <Spanish>[ICON_BULLET]%D1_num%F2_yield en cada colonia</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_GROWTH_UNITS</Tag>
+    <English>[ICON_BULLET]%d1%% Chance [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT] on Settlement Growth</English>
+    <French>[ICON_BULLET]%d1%% Chance %s2 on Settlement Growth</French>
+    <German>[ICON_BULLET]%d1%% Chance %s2 on Settlement Growth</German>
+    <Italian>[ICON_BULLET]%d1%% Chance %s2 on Settlement Growth</Italian>
+    <Spanish>[ICON_BULLET]%d1%% Chance %s2 on Settlement Growth</Spanish>
+  </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PURCHASE_EUROPE</Tag>
 		<English>Summon Specialists and or Slaves to Your Realm</English>
@@ -825,6 +1209,22 @@
 		<Italian>[ICON_BULLET]Trade Points are converted to %F1_Yield</Italian>
 		<Spanish>[ICON_BULLET]Trade Points are converted to %F1_Yield</Spanish>
 	</TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CONNECTED_YIELD_BONUS</Tag>
+    <English>[ICON_BULLET]%d1%F2_Yield from Decrees</English>
+    <French>[ICON_BULLET]%d1%F2_Yield from Decrees</French>
+    <German>[ICON_BULLET]%d1%F2_Yield from Decrees</German>
+    <Italian>[ICON_BULLET]%d1%F2_Yield from Decrees</Italian>
+    <Spanish>[ICON_BULLET]%d1%F2_Yield from Decreesc</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_GARRISONED_BONUS</Tag>
+    <English>[ICON_BULLET]%d1F2_Yield from Garrisoned Units</English>
+    <French>[ICON_BULLET]%d1F2_Yield from Garrisoned Units</French>
+    <German>[ICON_BULLET]%d1F2_Yield from Garrisoned Units</German>
+    <Italian>[ICON_BULLET]%d1F2_Yield from Garrisoned Units</Italian>
+    <Spanish>[ICON_BULLET]%d1F2_Yield from Garrisoned Units</Spanish>
+  </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RESEARCH_CONVERTS_YIELD_HELP</Tag>
 		<English>[ICON_BULLET]%d1%F2_Yield from converted %F3_Yield</English>
@@ -873,13 +1273,21 @@
 		<Italian>[ICON_BULLET]Only Consumes %d1_food [ICON_FOOD]</Italian>
 		<Spanish>[ICON_BULLET]Only Consumes %d1_food [ICON_FOOD]</Spanish>
 	</TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_YIELD_STORED_HELP</Tag>
+    <English>%d1 Stored in Settlement</English>
+    <French>[ICON_BULLET]%d1 Stored in Settlement</French>
+    <German>[ICON_BULLET]%d1 Stored in Settlement</German>
+    <Italian>[ICON_BULLET]%d1 Stored in Settlement</Italian>
+    <Spanish>[ICON_BULLET]%d1 Stored in Settlement</Spanish>
+  </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NOBLE_GROWTH</Tag>
-		<English>The abundance of luxury food in %s1_city has resulted in a population increase among the nobility</English>
-		<French>L'abondance de nourriture dans %s1_city a permis &#224; la population de cro&#238;tre!</French>
-		<German>Das reichliche Nahrungsvorkommen in der Stadt %s1_city hat zu einem Bev&#246;lkerungsanstieg gef&#252;hrt</German>
-		<Italian>L'abbondanza di cibo a %s1_city ha causato un aumento della popolazione</Italian>
-		<Spanish>La abundancia de Alimentos en %s1_city ha comportado un aumento de poblaci&#243;n.</Spanish>
+		<English>The abundance of luxury food in %s1_city has resulted in a population increase among the elite</English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_NATIVE_COMBAT_MOD</Tag>
@@ -889,6 +1297,30 @@
 		<Italian>[ICON_BULLET]%D1_Change%% contro i Barbarians</Italian>
 		<Spanish>[ICON_BULLET]%D1_Change%% contra Barbarians</Spanish>
 	</TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MISC_REVOLUTION_HAS_BEGUN</Tag>
+    <English>The revolution has begun!!!</English>
+    <French>La r&#233;volution a &#233;clat&#233; !</French>
+    <German>Die Revolution hat begonnen!!!</German>
+    <Italian>La rivoluzione &#232; cominciata!</Italian>
+    <Spanish>Ha empezado la revoluci&#243;n.</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MISC_REVOLUTION_OVER</Tag>
+    <English>The anarchy is over! Your government is re-established.</English>
+    <French>L'anarchie a disparu ! Votre gouvernement a repris le contr&#244;le.</French>
+    <German>Die Anarchiephase ist vor&#252;ber! Eure Regierung wurde wieder eingesetzt.</German>
+    <Italian>L'anarchia &#232; terminata, &#232; stato ristabilito il governo.</Italian>
+    <Spanish>La anarqu&#237;a toca a su fin. Se ha restaurado vuestro gobierno.</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MISC_HELP_YIELD_DECRESS</Tag>
+    <English>[ICON_BULLET]%D1%%%F2 from Decrees</English>
+    <French>[ICON_BULLET]%D1%%%F2 (Decrees)</French>
+    <German>[ICON_BULLET]%D1%%%F2 Decrees</German>
+    <Italian>[ICON_BULLET]%D1%%%F2 Decrees</Italian>
+    <Spanish>[ICON_BULLET]%D1%% %F2 por Decrees</Spanish>
+  </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_HELP_YIELD_RESEARCH</Tag>
 		<English>[ICON_BULLET]%D1%%%F2 from %s3_research</English>
@@ -1050,14 +1482,6 @@
 		<Spanish>[ICON_BULLET]%D1_Bonus%% from Fealty</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_EDUCATION_CLASS</Tag>
-		<English>[ICON_BULLET]Educates to %s1_class</English>
-		<French>[ICON_BULLET]Educates to %s1_class</French>
-		<German>[ICON_BULLET]Educates to %s1_class</German>
-		<Italian>[ICON_BULLET]Educates to %s1_class</Italian>
-		<Spanish>[ICON_BULLET]Educates to %s1_class</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_FRIST_TO_RESEARCH_UNIT_CLASS</Tag>
 		<English>[ICON_BULLET]Summons a [COLOR_UNIT_TEXT]%s1_class[COLOR_REVERT] for first to Research</English>
 		<French>[ICON_BULLET]Summons a [COLOR_UNIT_TEXT]%s1_class[COLOR_REVERT] for first to Research</French>
@@ -1073,6 +1497,22 @@
 		<Italian>[ICON_BULLET]-%d1% to land purchases</Italian>
 		<Spanish>[ICON_BULLET]-%d1% to land purchases</Spanish>
 	</TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_UNIT_CONSUMED_FOOD</Tag>
+    <English>[ICON_BULLET]Consumes %d1[ICON_FOOD]</English>
+    <French>[ICON_BULLET]Consumes %d1[ICON_FOOD]</French>
+    <German>[ICON_BULLET]Consumes %d1[ICON_FOOD]</German>
+    <Italian>[ICON_BULLET]Consumes %d1[ICON_FOOD]</Italian>
+    <Spanish>[ICON_BULLET]Consumes %d1[ICON_FOOD]</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_UNIT_CONSUMED_NO_FOOD</Tag>
+    <English>[ICON_BULLET]Consumes no [ICON_FOOD]</English>
+    <French>[ICON_BULLET]Consumes no [ICON_FOOD]</French>
+    <German>[ICON_BULLET]Consumes no [ICON_FOOD]</German>
+    <Italian>[ICON_BULLET]Consumes no [ICON_FOOD]</Italian>
+    <Spanish>[ICON_BULLET]Consumes no [ICON_FOOD]</Spanish>
+  </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_REHIBILITATE_HELP</Tag>
 		<English>[ICON_BULLET]Units working here also help reform Outlaws working in this town</English>
@@ -1227,12 +1667,36 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_NOBLE_LABOR_PENALTY</Tag>
-		<English>[ICON_BULLET]-%d1% to field labor</English>
+		<English>[ICON_BULLET]-%d1% to Field labor</English>
 		<French>[ICON_BULLET]-%d1% to  plot labor</French>
 		<German>[ICON_BULLET]-%d1% to  plot labor</German>
 		<Italian>[ICON_BULLET]-%d1% to plot labor</Italian>
 		<Spanish>[ICON_BULLET]-%d1% to plot labor</Spanish>
 	</TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_FIELD_LABOR_BONUS</Tag>
+    <English>[ICON_BULLET]%D1_Change to Field labor</English>
+    <French>[ICON_BULLET]%d1 to  plot labor</French>
+    <German>[ICON_BULLET]%d1 to  plot labor</German>
+    <Italian>[ICON_BULLET]%d1 to plot labor</Italian>
+    <Spanish>[ICON_BULLET]%d1 to plot labor</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUILDING_LABOR_BONUS</Tag>
+    <English>[ICON_BULLET]%D1_Change to Building labor</English>
+    <French>[ICON_BULLET]%d1 to Building labor</French>
+    <German>[ICON_BULLET]%d1 to Building labor</German>
+    <Italian>[ICON_BULLET]%d1 to Building labor</Italian>
+    <Spanish>[ICON_BULLET]%d1 to Building labor</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_IS_CIVILIAN_PROMOTION</Tag>
+    <English>[ICON_BULLET][COLOR_ALT_HIGHLIGHT_TEXT]Civilian Promotion[COLOR_REVERT]</English>
+    <French>[ICON_BULLET]Civilian Promotion</French>
+    <German>[ICON_BULLET]Civilian Promotion</German>
+    <Italian>[ICON_BULLET]Civilian Promotion</Italian>
+    <Spanish>[ICON_BULLET]Civilian Promotion</Spanish>
+  </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_NO_LEARN_NATIVES</Tag>
 		<English>[ICON_BULLET]Can not learn from Barbarian villages</English>
@@ -1385,13 +1849,61 @@
 		<Italian>[COLOR_ALT_HIGHLIGHT_TEXT]Starts on Land[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_ALT_HIGHLIGHT_TEXT]Starts on Land[COLOR_REVERT]</Spanish>
 	</TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MISSIONS_NOTCONSUMED_COUNT</Tag>
+    <English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Missionaries[COLOR_REVERT] return after %d1_name turns</English>
+    <French>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Missionaries[COLOR_REVERT] return after %d1_name turns</French>
+    <German>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Missionaries[COLOR_REVERT] return after %d1_name turns</German>
+    <Italian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Missionaries[COLOR_REVERT] return after %d1_name turns</Italian>
+    <Spanish>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Missionaries[COLOR_REVERT] return after %d1_name turns</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MISSIONS_NOTCONSUMED_CONVERT</Tag>
+    <English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Missionaries[COLOR_REVERT] return after first convert</English>
+    <French>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Missionaries[COLOR_REVERT] return after first convert</French>
+    <German>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Missionaries[COLOR_REVERT] return after first convert</German>
+    <Italian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Missionaries[COLOR_REVERT] return after first convert</Italian>
+    <Spanish>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Missionaries[COLOR_REVERT] return after first convert</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_TRADERS_NOTCONSUMED</Tag>
+    <English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Traders[COLOR_REVERT] return after %d1_name turns</English>
+    <French>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Peddlers and Merchants[COLOR_REVERT] return after %d1_name turns</French>
+    <German>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Peddlers and Merchants[COLOR_REVERT] return after %d1_name turns</German>
+    <Italian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Peddlers and Merchants[COLOR_REVERT] return after %d1_name turns</Italian>
+    <Spanish>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Peddlers and Merchants[COLOR_REVERT] return after %d1_name turns</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_BONUS_HUNTING</Tag>
+    <English>[ICON_BULLET]+%d1% bonus to [COLOR_HIGHLIGHT_TEXT]Hunting[COLOR_REVERT] results</English>
+    <French>[ICON_BULLET]+%d1% to [COLOR_HIGHLIGHT_TEXT]Hunting[COLOR_REVERT] results</French>
+    <German>[ICON_BULLET]+%d1% to [COLOR_HIGHLIGHT_TEXT]Hunting[COLOR_REVERT] results</German>
+    <Italian>[ICON_BULLET]+%d1% to [COLOR_HIGHLIGHT_TEXT]Hunting[COLOR_REVERT] results</Italian>
+    <Spanish>[ICON_BULLET]+%d1% to [COLOR_HIGHLIGHT_TEXT]Hunting[COLOR_REVERT] results</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_CIVIC_BONUS_PILGRAM</Tag>
+    <English>[ICON_BULLET]+%d1% bonus to [COLOR_HIGHLIGHT_TEXT]Pilgrimages[COLOR_REVERT]</English>
+    <French>[ICON_BULLET]+%d1% bonus to [COLOR_HIGHLIGHT_TEXT]Pilgrimages[COLOR_REVERT]</French>
+    <German>[ICON_BULLET]+%d1% bonus to [COLOR_HIGHLIGHT_TEXT]Pilgrimages[COLOR_REVERT]</German>
+    <Italian>[ICON_BULLET]+%d1% bonus to [COLOR_HIGHLIGHT_TEXT]Pilgrimages[COLOR_REVERT]</Italian>
+    <Spanish>[ICON_BULLET]+%d1% bonus to [COLOR_HIGHLIGHT_TEXT]Pilgrimages[COLOR_REVERT]</Spanish>
+  </TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_ALLOWS_DEFAULT_UNIT</Tag>
-		<English>[ICON_BULLET]Your towns will produce [COLOR_HIGHLIGHT_TEXT]Peasants[COLOR_REVERT] instead of [COLOR_HIGHLIGHT_TEXT]Serfs[COLOR_REVERT]</English>
-		<French>[ICON_BULLET]Your towns will produce [COLOR_HIGHLIGHT_TEXT]Peasants[COLOR_REVERT] instead of [COLOR_HIGHLIGHT_TEXT]Serfs[COLOR_REVERT]</French>
-		<German>[ICON_BULLET]Your towns will produce [COLOR_HIGHLIGHT_TEXT]Peasants[COLOR_REVERT] instead of [COLOR_HIGHLIGHT_TEXT]Serfs[COLOR_REVERT]</German>
-		<Italian>[ICON_BULLET]Your towns will produce [COLOR_HIGHLIGHT_TEXT]Peasants[COLOR_REVERT] instead of [COLOR_HIGHLIGHT_TEXT]Serfs[COLOR_REVERT]</Italian>
-		<Spanish>[ICON_BULLET]Your towns will produce [COLOR_HIGHLIGHT_TEXT]Peasants[COLOR_REVERT] instead of [COLOR_HIGHLIGHT_TEXT]Serfs[COLOR_REVERT]</Spanish>
+		<Tag>TXT_KEY_ALLOWS_NEW_DEFAULT_UNIT</Tag>
+		<English>[ICON_BULLET]Your towns will produce [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] from [COLOR_HIGHLIGHT_TEXT]Food[COLOR_REVERT]</English>
+		<French>[ICON_BULLET]Your towns will produce [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] when overflowing with food</French>
+		<German>[ICON_BULLET]Your towns will produce [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] when overflowing with food</German>
+		<Italian>[ICON_BULLET]Your towns will produce [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] when overflowing with food</Italian>
+		<Spanish>[ICON_BULLET]Your towns will produce [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] when overflowing with food</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ALLOWS_LUXURY_UNIT</Tag>
+		<English>[ICON_BULLET]Your towns will produce [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] from [COLOR_HIGHLIGHT_TEXT]Luxury Food[COLOR_REVERT]</English>
+		<French>[ICON_BULLET]Your towns will produce [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] when overflowing with [COLOR_HIGHLIGHT_TEXT]Luxury Food[COLOR_REVERT]</French>
+		<German>[ICON_BULLET]Your towns will produce [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] when overflowing with luxury food</German>
+		<Italian>[ICON_BULLET]Your towns will produce [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] when overflowing with luxury food</Italian>
+		<Spanish>[ICON_BULLET]Your towns will produce [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] when overflowing with luxury food</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_REBEL_COMBAT_MOD</Tag>
@@ -1417,6 +1929,14 @@
 		<Italian>%d1</Italian>
 		<Spanish>%d1</Spanish>
 	</TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_TRADING_POST_GOODS_SOLD</Tag>
+    <English>, carried goods have been sold for %d1[ICON_GOLD]</English>
+    <French>, carried goods have been sold for %d1[ICON_GOLD]</French>
+    <German>, carried goods have been sold for %d1[ICON_GOLD]</German>
+    <Italian>, carried goods have been sold for %d1[ICON_GOLD]</Italian>
+    <Spanish>, carried goods have been sold for %d1[ICON_GOLD]</Spanish>
+  </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_LEATHER_ARMOR_TEXT</Tag>
 		<English>[ICON_BULLET]Leather Armor</English>
@@ -1553,6 +2073,14 @@
 		<Italian>[ICON_BULLET]%D1_Change% in Colder Cimates</Italian>
 		<Spanish>[ICON_BULLET]%D1_Change% in Colder Cimates</Spanish>
 	</TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_PROFESSION_CAPTURE_CARGO</Tag>
+    <English>[ICON_BULLET]Can Hunt for [COLOR_HIGHLIGHT_TEXT]%s1_UnitName[COLOR_REVERT]</English>
+    <French>[ICON_BULLET]can hunt %s1_UnitName</French>
+    <German>[ICON_BULLET]can hunt %s1_UnitName</German>
+    <Italian>[ICON_BULLET]can hunt %s1_UnitName</Italian>
+    <Spanish>[ICON_BULLET]can hunt %s1_UnitName</Spanish>
+  </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_NEW_EUROPE_ARMY_NEW</Tag>
 		<English>Your Sovereign is alarmed at your rebellious sentiment. He has added %d1 [NUM1:unit:units] to the Royal Military.</English>
@@ -1561,6 +2089,38 @@
 		<Italian>Your Sovereign is alarmed at your rebellious sentiment. He has added %d1 [NUM1:unit:units] to the Royal Military.</Italian>
 		<Spanish>Your Sovereign is alarmed at your rebellious sentiment. He has added %d1 [NUM1:unit:units] to the Royal Military.</Spanish>
 	</TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_GOODY_ANNOUNCE_HEALING</Tag>
+    <English>A barbarian tribe has healed your unit!</English>
+    <French>Une tribu indig&#232;ne a soign&#233; votre unit&#233; !</French>
+    <German>Ein Ureinwohnerstamm hat Eure Einheit geheilt!</German>
+    <Italian>Una trib&#249; di nativi ha curato l'unit&#224;!</Italian>
+    <Spanish>&#161;Una tribu nativa ha curado a vuestra unidad!</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_GOODY_ANNOUNCE_HOSTILE</Tag>
+    <English>You have offended the barbarians, who attack your unit in revenge!</English>
+    <French>Vous avez offens&#233; les indig&#232;nes qui attaquent votre unit&#233; en repr&#233;sailles !</French>
+    <German>Ihr habt die Ureinwohner beleidigt. Sie greifen Euch aus Rache an!</German>
+    <Italian>Hai offeso i nativi, che attaccano la tua unit&#224;!</Italian>
+    <Spanish>&#161;Hab&#233;is ofendido a los Nativos, que atacan a vuestra unidad como venganza!</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_GOODY_ANNOUNCE_BURIAL_GROUNDS</Tag>
+    <English>You have discovered what appears to be barbarian burial ground. Do you wish to search for treasure?</English>
+    <French>Vous avez d&#233;couvert ce qui semble &#234;tre un cimeti&#232;re indig&#232;ne. Voulez-vous explorer ce tr&#233;sor? </French>
+    <German>Ihr habt etwas entdeckt, das wie eine Ureinwohner-Grabst&#228;tte aussieht. Wollt Ihr nach Sch&#228;tzen suchen?</German>
+    <Italian>Hai scoperto quello che sembra un cimitero dei nativi. Vuoi cercare dei tesori?</Italian>
+    <Spanish>Hab&#233;is descubierto lo que parecen ser T&#250;mulos funerarios de los Nativos. &#191;Quer&#233;is buscar tesoros?</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_GOODY_ANNOUNCE_WAR</Tag>
+    <English>You have offended the barbarians, who declare war on you in revenge!</English>
+    <French>Vous avez offens&#233; les indig&#232;nes qui vous d&#233;clarent la guerre en repr&#233;sailles !</French>
+    <German>Ihr habt die Ureinwohner beleidigt. Sie erkl&#228;ren Euch aus Rache den Krieg!</German>
+    <Italian>Hai offeso i nativi, che ti dichiarano guerra!</Italian>
+    <Spanish>Hab&#233;is ofendido a los Nativos, que os declaran la guerra como represalia.</Spanish>
+  </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_NEW_POPE_ARMY_NEW</Tag>
 		<English>%s1 is alarmed at your rebellious sentiment against the Church. He has added %d2 [NUM2:unit:units] to the Holy Expeditionary Force.</English>

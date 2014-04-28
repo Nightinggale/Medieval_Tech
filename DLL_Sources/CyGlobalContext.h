@@ -158,6 +158,7 @@ public:
 	int getNumCivicInfos() const { return GC.getNumCivicInfos(); }
 	int getNumDiplomacyInfos() const { return GC.getNumDiplomacyInfos(); }
 	int getNumCivicOptionInfos() const { return GC.getNumCivicOptionInfos(); }
+	int getNumGlobalCivicEffectInfos() const { return GC.getNumGlobalCivicEffectInfos(); }//Tks
 	int getNumEmphasizeInfos() const { return GC.getNumEmphasizeInfos(); }
 	int getNumHurryInfos() const { return GC.getNumHurryInfos(); }
 	int getNumCultureLevelInfos() const { return GC.getNumCultureLevelInfos(); }

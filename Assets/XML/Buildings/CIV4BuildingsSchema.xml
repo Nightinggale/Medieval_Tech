@@ -79,6 +79,7 @@
 	<ElementType name="FreePromotion" content="textOnly"/>
 	<ElementType name="iYield" content="textOnly" dt:type="int"/>
 	<ElementType name="YieldType" content="textOnly"/>
+  <ElementType name="CivicType" content="textOnly"/>
 	<ElementType name="iModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iYieldChange" content="textOnly" dt:type="int"/>
 	<ElementType name="iProfessionOutput" content="textOnly" dt:type="int"/>
@@ -192,8 +193,15 @@
 		<element type="YieldType"/>
 		<element type="iValue"/>
 	</ElementType>
+  <ElementType name="CivicTreasuryBonus" content="eltOnly">
+		<element type="CivicType"/>
+		<element type="iValue"/>
+	</ElementType>
 	<ElementType name="AutoSellsYields" content="eltOnly">
 		<element type="AutoSellsYield" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+  <ElementType name="CivicTreasuryBonuses" content="eltOnly">
+		<element type="CivicTreasuryBonus" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="AutoSellYieldChange" content="textOnly"/>
 	<ElementType name="BuildingMakesInvalid" content="textOnly"/>
@@ -298,6 +306,7 @@
 		<element type="ImmigrationUnits" minOccurs="0"/>
 		<element type="AutoSellsYields" minOccurs="0"/>
 		<element type="AutoSellYieldChange" minOccurs="0"/>
+    <element type="CivicTreasuryBonuses" minOccurs="0"/>
 		<element type="HotKey"/>
 		<element type="bAltDown"/>
 		<element type="bShiftDown"/>

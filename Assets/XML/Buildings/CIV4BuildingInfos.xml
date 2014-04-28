@@ -5653,17 +5653,12 @@
 			<bNeverCapture>0</bNeverCapture>
 			<bCenterInCity>0</bCenterInCity>
 			<iAIWeight>0</iAIWeight>
-			<YieldCosts>
-				<YieldCost>
-					<YieldType>YIELD_STONE</YieldType>
-					<iCost>20</iCost>
-				</YieldCost>
-			</YieldCosts>
+			<YieldCosts/>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iProfessionOutput>2</iProfessionOutput>
-			<iMaxWorkers>2</iMaxWorkers>
+			<iProfessionOutput>0</iProfessionOutput>
+			<iMaxWorkers>0</iMaxWorkers>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>100</iConquestProb>
 			<iCitiesPrereq>0</iCitiesPrereq>

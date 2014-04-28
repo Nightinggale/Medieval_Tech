@@ -3243,8 +3243,8 @@ void CvUnitAI::AI_transportTraderMove()
 	CvCity* pCity = NULL;
     if (plot()->getPlotCity() != NULL)
     {
-		pCity = plot()->getPlotCity();
-        if (!pCity->isHuman() && canBuildTradingPost(false))
+		//pCity = plot()->getPlotCity();
+        if (!plot()->getPlotCity()->isHuman() && canBuildTradingPost(false))
 		{
 			buildTradingPost(false);
 		}

@@ -2603,7 +2603,7 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
                             iCost = 0;
                             break;
                         }
-                        if (!pLoopPlot->isWater() && pLoopPlot->isOwned() && !pLoopPlot->isCity())
+                        if (pLoopPlot->isOwned() && !pLoopPlot->isCity())
                         {
                             if (pLoopPlot->getRevealedOwner(GC.getGameINLINE().getActiveTeam(), true) != NO_PLAYER)
                             {
@@ -2618,6 +2618,11 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
                 }
                 if (iCost > 0)
                 {
+					CvUnit* pSelectedUnit = gDLL->getInterfaceIFace()->getHeadSelectedUnit();
+					if (pSelectedUnit != NULL)
+					{
+						iCost -= iCost * GC.getUnitInfo(pSelectedUnit->getUnitType()).getTradeBonus() / 100;
+					}
                     szString.append(gDLL->getText("TXT_KEY_PLOT_NATIVE_PURCHASE_COST", iCost));
                     szString.append(NEWLINE);
                 }

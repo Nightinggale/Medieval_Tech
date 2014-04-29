@@ -1340,9 +1340,6 @@ bool CvXMLLoadUtility::LoadGlobalText()
 {
 	/// language selection - start - Nightinggale
 	{
-		// make sure we have ISO code and not index
-		CvGameText::setCurrentLanguage(GAMETEXT.getCurrentLanguage());
-
 		// set language tag
 		int iLanguage = GAMETEXT.getCurrentLanguage();
 

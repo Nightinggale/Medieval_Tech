@@ -13712,7 +13712,6 @@ CvString LanguageInfo::getCode() const
 	
 int LanguageInfo::getCodeInt() const
 {
-	FAssert(m_iCode > 0);
 	return m_iCode;
 }
 
@@ -13742,6 +13741,33 @@ bool LanguageInfo::read(CvXMLLoadUtility* pXML)
 		m_iCode = m_iCode << 8;
 		m_iCode |= cChar;
 	}
+
+	// vanilla languages have to use vanilla numbers
+	// failure to do so will result in loss of text in other mods and vanilla
+	// because of this vanilla languages should be saved by vanilla index, not ISO code
+	// They aren't indexes to our language list though and we can reorder as we like
+	// Nightinggale
+	if (strcmp(m_szCode, "eng") == 0)
+	{
+		m_iCode = 0;
+	}
+	else if (strcmp(m_szCode, "fra") == 0)
+	{
+		m_iCode = 1;
+	}
+	else if (strcmp(m_szCode, "ger") == 0)
+	{
+		m_iCode = 2;
+	}
+	else if (strcmp(m_szCode, "ita") == 0)
+	{
+		m_iCode = 3;
+	}
+	else if (strcmp(m_szCode, "spa") == 0)
+	{
+		m_iCode = 4;
+	}
+
 	return true;
 }
 /// language selection - end - Nightinggale

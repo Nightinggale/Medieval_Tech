@@ -11407,7 +11407,8 @@ void CvPlayer::processCivicNotSaved(CivicTypes eCivic, int iChange)
 
 	for (int iI = 0; iI < GC.getNumHurryInfos(); iI++)
 	{
-		changeHurryCount(((HurryTypes)iI), ((kCivicInfo.isHurry(iI)) ? iChange : 0));
+		changeHurryCount(((HurryTypes)iI), ((kCivicInfo.isHurry(iI)) ? iChange : 1));
+		//m_ja_iHurryCount.add(1, iI);
 	}
 
 	for (int iI = 0; iI < GC.getNumSpecialBuildingInfos(); iI++)

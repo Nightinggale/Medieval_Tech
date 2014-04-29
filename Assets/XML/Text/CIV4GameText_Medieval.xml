@@ -1659,7 +1659,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITS_TRAINED_HELP_FORTIFIED_TEXT</Tag>
-		<English>Will be trained in %d1 turns.</English>
+		<English>[COLOR_HIGHLIGHT_TEXT]Will be trained in %d1 turns[COLOR_REVERT]</English>
 		<French>Will be trained in %d1 turns.</French>
 		<German>Will be trained in %d1 turns.</German>
 		<Italian>Will be trained in %d1 turns.</Italian>

@@ -88,7 +88,7 @@
       <!--Arrows will not point to this Tech, currently not used in the code-->
 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
       <!--This tech will be none tradeable-->
-			<bisNoneTradeable>0</bisNoneTradeable>
+			<bisNoneTradeable>1</bisNoneTradeable>
       <!--Increases heal rate in enemy territory by this amount-->
 			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
       <!--The number of free Immigrants when this tech is researched-->
@@ -221,7 +221,7 @@
       <!--Arrows will not point to this Tech, currently not used in the code-->
 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
       <!--This tech will be none tradeable-->
-			<bisNoneTradeable>0</bisNoneTradeable>
+			<bisNoneTradeable>1</bisNoneTradeable>
       <!--Increases heal rate in enemy territory by this amount-->
 			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
       <!--The number of free Immigrants when this tech is researched-->
@@ -322,7 +322,7 @@
       <!--Arrows will not point to this Tech, currently not used in the code-->
 			<bNoArrowinTechScreen>0</bNoArrowinTechScreen>
       <!--This tech will be none tradeable-->
-			<bisNoneTradeable>0</bisNoneTradeable>
+			<bisNoneTradeable>1</bisNoneTradeable>
       <!--Increases heal rate in enemy territory by this amount-->
 			<iIncreasedEnemyHealRate>0</iIncreasedEnemyHealRate>
       <!--The number of free Immigrants when this tech is researched-->
